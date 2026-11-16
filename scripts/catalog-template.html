@@ -530,29 +530,29 @@ function badgeCopy(key){
   return 'Active';
 }
 function clampPad(pad, small){
-  if(!pad) return small?'5px 11px':'9px 17px';
+  if(small) return '4.5px 11px';
+  if(!pad) return '8.5px 16px';
   const raw=String(pad).replace(/\s*!important\s*$/i,'').trim();
-  if(!small) return raw;
   const nums=raw.split(/\s+/).map(s=>{const n=parseFloat(s);return Number.isFinite(n)?(/rem|em$/.test(s)?n*16:n):null}).filter(n=>n!==null);
-  if(!nums.length) return '5px 11px';
-  const v=nums[0];
-  const h=nums.length>=2?nums[1]:nums[0];
-  const cv=Math.max(4,Math.min(8,Math.round(v*0.65)));
-  const ch=Math.max(8,Math.min(14,Math.round(h*0.65)));
-  return cv+'px '+ch+'px';
+  if(!nums.length) return '8.5px 16px';
+  const v=Math.max(6,Math.min(11,Math.round(nums[0])));
+  const rawH=nums.length>=2?nums[1]:nums[0]*2;
+  const h=Math.max(Math.round(v*1.85),Math.min(22,Math.round(rawH)));
+  return v+'px '+h+'px';
 }
-function thumbRadius(r, cap=12){
+function thumbRadius(r, cap=10, allowPill=false){
   if(!r) return '6px';
   const s=String(r).trim();
+  if(/%/.test(s)) return allowPill?'999px':cap+'px';
   const n=parseFloat(s);
   if(!Number.isFinite(n)) return '6px';
   const px=/rem|em$/.test(s)?n*16:n;
-  if(px>=100) return '999px';
+  if(px>=24) return allowPill?'999px':cap+'px';
   return Math.max(0,Math.min(cap,Math.round(px*0.85)))+'px';
 }
 function btnStyle(p,c,small,backdrop){
   const t=bodyType(p);
-  const fs=small?Math.min(Math.max(Math.round((pxOf(t)||14)*0.82),10),12):Math.min(Math.max(pxOf(t)||14,12),14.5);
+  const fs=small?11:Math.min(Math.max(pxOf(t)||14,12.5),14);
   const rawBg=cleanColor(c.backgroundColor);
   const bg=rawBg||(c.border?'transparent':p.brand);
   const surf=backdrop||p.canvas;
@@ -561,11 +561,13 @@ function btnStyle(p,c,small,backdrop){
   const onCanvas=!a||!b||a[3]<0.12||Math.abs(lum(over(bg,surf))-lum(b))<0.07;
   const rawFg=cleanColor(c.textColor);
   const border=cleanColor(c.border)||(onCanvas?'1px solid '+p.border:'none');
+  const rawRad=c.rounded||p.radius;
+  const rad=small?thumbRadius(rawRad,7,true):thumbRadius(rawRad,10,true);
   return [
     'background:'+safeCss(bg),
     'color:'+safeCss(readable(rawFg||ink(plate),plate)),
     'border:'+safeCss(border),
-    'border-radius:'+safeCss(small?thumbRadius(c.rounded||p.radius,999):c.rounded||p.radius),
+    'border-radius:'+safeCss(rad),
     'padding:'+safeCss(clampPad(c.padding,small)),
     'box-shadow:'+safeCss(cleanColor(c.shadow)||'none'),
     'font-family:'+fontStack(t.fontFamily),
@@ -651,20 +653,28 @@ function stageFor(p){
   const cardPlate=over(cardBg,p.canvas);
   const sameSurf=!parseColor(cardBg)||Math.abs(lum(cardPlate)-lum(parseColor(p.canvas)||[0,0,0,1]))<0.025;
   const cardBorder=cleanColor(cardTok&&cardTok.border)||('1px solid '+p.border);
-  const cardRad=thumbRadius((cardTok&&cardTok.rounded)||p.radius,12);
+  const cardRad=thumbRadius((cardTok&&cardTok.rounded)||p.radius,9,false);
   const cardShadow=cleanColor(cardTok&&cardTok.shadow)||'none';
   const titleInk=readable(cleanColor(cardTok&&cardTok.textColor)||p.text,cardPlate);
   const mutedInk=readable(p.muted,cardPlate);
-  const dSize=Math.round(Math.min(Math.max(pxOf(d)*0.48,13),16.5));
+  const dSize=Math.round(Math.min(Math.max(pxOf(d)*0.48,13),16));
   const bSize=Math.round(Math.min(Math.max(pxOf(t)*0.72,10),11.5));
 
   const rawBtns=pick(p,'button').filter(b=>cleanColor(b.backgroundColor)||cleanColor(b.textColor)||cleanColor(b.border));
-  const solidBtns=rawBtns.filter(b=>{const c=parseColor(cleanColor(b.backgroundColor));return c&&c[3]>0.2});
-  const ghostBtns=rawBtns.filter(b=>{const c=parseColor(cleanColor(b.backgroundColor));return !c||c[3]<=0.2});
+  const contrastBtns=rawBtns.filter(b=>{
+    const bg=cleanColor(b.backgroundColor);
+    const c=parseColor(bg);
+    return c&&c[3]>0.25&&Math.abs(lum(over(bg,cardBg))-lum(cardPlate))>0.08;
+  });
+  const ghostBtns=rawBtns.filter(b=>{
+    const bg=cleanColor(b.backgroundColor);
+    const c=parseColor(bg);
+    return !c||c[3]<=0.25||Math.abs(lum(over(bg,cardBg))-lum(cardPlate))<=0.08;
+  });
   const chosen=[];
-  if(solidBtns.length) chosen.push(solidBtns[0]);
+  if(contrastBtns.length) chosen.push(contrastBtns[0]);
   if(ghostBtns.length) chosen.push(ghostBtns[0]);
-  else if(solidBtns.length>1) chosen.push(solidBtns[1]);
+  else if(contrastBtns.length>1) chosen.push(contrastBtns[1]);
   else if(!chosen.length&&rawBtns.length) chosen.push(rawBtns[0]);
 
   const badges=pick(p,'badge');
