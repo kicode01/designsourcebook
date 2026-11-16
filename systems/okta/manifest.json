@@ -1,22 +1,23 @@
 {
   "name": "okta",
   "displayName": "Okta Odyssey Design System",
-  "description": "Okta Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.",
-  "style": "Okta Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.",
+  "description": "Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.",
+  "style": "Dark (#ff0000) canvas, Inter typography, #80c7ca brand accent, and 8px corner geometry",
   "category": "Okta",
   "org": "Okta",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "okta"
+    "okta",
+    "light"
   ],
   "homepage": "https://github.com/okta/odyssey",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/okta/odyssey — 11 token files, 51 colours harvested, 40 selected.",
   "source": {
-    "repo": "https://github.com/okta/odyssey"
+    "repo": "https://github.com/okta/odyssey",
+    "package": "@okta/odyssey-react-mui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 40,
-    "typography": 0,
-    "components": 0
+    "typography": 2,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 110,
+    "stars": 114,
+    "forks": 33,
+    "npmDownloads": 6892,
+    "score": 694,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

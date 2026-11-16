@@ -1,12 +1,12 @@
 {
-  "canvas": "#fff",
-  "surface": "#fff",
-  "text": "#0b0b0c",
-  "muted": "#0b0b0c",
+  "canvas": "#000",
+  "surface": "#000",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
   "brand": "#3578e5",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
   "radius": "0.4rem",
-  "ink": "#0b0b0c",
+  "ink": "#f7f7f8",
   "palette": [
     {
       "name": "ifm-color-primary",
@@ -376,47 +376,37 @@
   "type": [
     {
       "name": "ifm-h1-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "2rem",
       "px": 32
     },
     {
       "name": "ifm-h2-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "ifm-h3-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "ifm-pagination-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "1.2rem",
       "px": 19.2
     },
     {
       "name": "ifm-h4-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
-      "name": "ifm-font-family-base",
-      "fontFamily": "system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol",
-      "px": 16
-    },
-    {
       "name": "ifm-font-family-monospace",
-      "fontFamily": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
-      "px": 16
-    },
-    {
-      "name": "ifm-heading-font-family",
-      "fontFamily": "var(--ifm-font-family-base)",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
       "px": 16
     },
     {
@@ -426,13 +416,13 @@
     },
     {
       "name": "ifm-h5-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "ifm-h6-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "0.85rem",
       "px": 13.6
     }
@@ -446,57 +436,41 @@
     },
     {
       "key": "tabs",
-      "kind": "tabs",
+      "kind": "nav",
       "textColor": "#fff"
-    },
-    {
-      "key": "alert",
-      "kind": "alert",
-      "backgroundColor": "inherit",
-      "rounded": "0.4rem",
-      "padding": "1rem 1rem",
-      "border": "0px solid inherit",
-      "shadow": "0 1px 2px 0 #0000001a"
     },
     {
       "key": "badge",
       "kind": "badge",
-      "backgroundColor": "inherit",
       "textColor": "#fff",
       "rounded": "0.4rem",
       "border": "1px solid inherit"
     },
     {
-      "key": "button",
-      "kind": "button",
-      "backgroundColor": "inherit",
-      "border": "1px solid inherit"
-    },
-    {
       "key": "navbar",
-      "kind": "navbar",
+      "kind": "nav",
       "backgroundColor": "#242526",
       "shadow": "0 1px 2px 0 #0000001a"
     },
     {
       "key": "navbar-2",
-      "kind": "navbar",
+      "kind": "nav",
       "textColor": "#e3e3e3"
     },
     {
       "key": "navbar-3",
-      "kind": "navbar",
+      "kind": "nav",
       "textColor": "#e3e3e3"
     },
     {
       "key": "navbar-sidebar-4",
-      "kind": "navbar",
+      "kind": "nav",
       "backgroundColor": "#242526",
       "shadow": "0 5px 40px #0003"
     },
     {
       "key": "navbar-5",
-      "kind": "navbar",
+      "kind": "nav",
       "textColor": "#ebedf0",
       "rounded": "2rem",
       "padding": "0 .5rem 0 2.25rem",
@@ -504,18 +478,18 @@
     },
     {
       "key": "navbar-sidebar-6",
-      "kind": "navbar",
+      "kind": "nav",
       "backgroundColor": "#ffffff0d",
       "padding": ".6rem 1.5rem"
     },
     {
       "key": "table-of-contents",
-      "kind": "table",
+      "kind": "nav",
       "textColor": "#fff"
     },
     {
       "key": "alert-info",
-      "kind": "alert",
+      "kind": "card",
       "backgroundColor": "#ecf3fc",
       "textColor": "#051844"
     },
@@ -526,19 +500,19 @@
     },
     {
       "key": "alert-danger",
-      "kind": "alert",
+      "kind": "card",
       "backgroundColor": "#ffeff3",
       "textColor": "#56072c"
     },
     {
       "key": "alert-success",
-      "kind": "alert",
+      "kind": "card",
       "backgroundColor": "#e1faf6",
       "textColor": "#04585c"
     },
     {
       "key": "alert-warning",
-      "kind": "alert",
+      "kind": "card",
       "backgroundColor": "#f9ebd6",
       "textColor": "#312824"
     },
@@ -549,21 +523,37 @@
     },
     {
       "key": "alert-secondary",
-      "kind": "alert",
+      "kind": "card",
       "backgroundColor": "#f4f6f9",
       "textColor": "#191d2f"
     },
     {
       "key": "tabs-active",
-      "kind": "tabs",
+      "kind": "nav",
       "textColor": "#1f51d9"
     },
     {
       "key": "table-of-contents-active",
-      "kind": "table",
+      "kind": "nav",
       "textColor": "#1f51d9"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "0.4rem",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "0.4rem",
+      "padding": "9px 13px"
     }
   ],
-  "overview": "Adjust Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "Adjust Atlas — Deep indigo analytics surfaces, electric blue and violet data accents",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3578e5` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 9 type steps.\n- **Component Geometry**: Buttons (`0.4rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

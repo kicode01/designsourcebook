@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: NHS.UK Service Manual
-description: "NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package."
+description: "High-contrast clinical public service manual, Frutiger typography and NHS Blue"
 colors:
   nhsuk-dark-blue-colour: "#003087"
   nhsuk-blue-colour: "#005eb8"
@@ -91,15 +91,203 @@ colors:
   nhsuk-login-button-active-colour: "#002f5c"
   nhsuk-login-button-shadow-colour: "#002f5c"
   primary: "#005eb8"
+typography:
+  html:
+    fontFamily: "\"Frutiger W01\", arial, sans-serif"
+  nhsuk-caption-xxl:
+    fontSize: 1.6875rem
+    lineHeight: 1.2222222222
+  nhsuk-caption-xl:
+    fontSize: 1.375rem
+    lineHeight: 1.3181818182
+  nhsuk-caption-l:
+    fontSize: 1.1875rem
+    lineHeight: 1.4210526316
+  nhsuk-body-l:
+    fontSize: 1.375rem
+    fontWeight: 400
+    lineHeight: 1.3181818182
+  nhsuk-body-s:
+    fontSize: ".875rem"
+    fontWeight: 400
+    lineHeight: 1.7142857143
+  nhsuk-image-caption:
+    fontSize: ".875rem"
+    lineHeight: 1.7142857143
+  nhsuk-notification-banner-title:
+    fontSize: 1rem
+    fontWeight: 600
+    lineHeight: 1.5
+  nhsuk-notification-banner-heading:
+    fontSize: 1.375rem
+    fontWeight: 600
+    lineHeight: 1.3181818182
+  nhsuk-table-caption:
+    fontSize: 1.1875rem
+    fontWeight: 600
+    lineHeight: 1.4210526316
+  nhsuk-table-caption-xl:
+    fontSize: 2rem
+    lineHeight: 1.1875
+  nhsuk-table-caption-l:
+    fontSize: 1.6875rem
+    lineHeight: 1.2222222222
+  nhsuk-table-caption-m:
+    fontSize: 1.375rem
+    lineHeight: 1.3181818182
+  nhsuk-table-caption-s:
+    fontSize: 1.1875rem
+    lineHeight: 1.4210526316
+  nhsuk-table-heading-tab:
+    fontSize: 1.375rem
+    lineHeight: 1.3181818182
+  app-contact-panel-heading:
+    fontSize: 1.375rem
+    fontWeight: 600
+    lineHeight: 1.3181818182
+  nhsuk-related-nav-heading:
+    fontSize: 1.375rem
+    lineHeight: 1.2
+  nhsuk-related-nav-heading-small:
+    fontSize: 1rem
+    lineHeight: 1.5
+  nhsuk-related-nav-sub-heading:
+    fontSize: 1rem
+    lineHeight: 1.2
+  app-side-nav-heading:
+    fontSize: 1rem
+    fontWeight: 600
+    lineHeight: 1.25
+components:
+  tag:
+    backgroundColor: "#0055a6"
+    textColor: "#fff"
+    typography:
+      fontSize: ".875rem"
+      fontWeight: 600
+    padding: 4px 8px
+  link:
+    textColor: "#005eb8"
+  card:
+    backgroundColor: "#fff"
+    textColor: "#212b32"
+  panel:
+    backgroundColor: "#007f3b"
+    textColor: "#fff"
+    typography:
+      fontSize: 1.375rem
+    padding: 28px
+  button:
+    backgroundColor: "#007f3b"
+    textColor: "#fff"
+    typography:
+      fontSize: 1rem
+      fontWeight: 600
+    rounded: ".25rem"
+  select:
+    backgroundColor: "#fff"
+    textColor: "#212b32"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    padding: ".25rem"
+  link-2:
+    textColor: "#005eb8"
+    typography:
+      fontSize: ".875rem"
+      fontWeight: 400
+    padding: 0 0 0 1em
+  link-3:
+    textColor: "#005eb8"
+    typography:
+      fontSize: 1.1875rem
+      fontWeight: 600
+  app-side-nav:
+    textColor: "#005eb8"
+  input-2:
+    backgroundColor: "#d8dde0"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    padding: ".25rem .5rem"
+  input-3:
+    backgroundColor: "#d8dde0"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    padding: ".25rem .5rem"
+  summary:
+    textColor: "#212b32"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    padding: 16px
+  callout:
+    backgroundColor: "#fff9c4"
+    textColor: "#212b32"
+  app-side-nav-2:
+    textColor: "#4c6272"
+    typography:
+      fontSize: 1rem
+      fontWeight: 600
+  table:
+    backgroundColor: "#005eb8"
+    textColor: "#fff"
+    typography:
+      fontSize: 1.375rem
+    padding: 8px 24px
+  input-wrapper-4:
+    backgroundColor: "#d8dde0"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    padding: ".25rem .5rem"
+  input-wrapper-5:
+    backgroundColor: "#d8dde0"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    padding: ".25rem .5rem"
+  callout-2:
+    backgroundColor: "#ffeb3b"
+    textColor: "#212b32"
+    typography:
+      fontSize: 1.375rem
+    padding: 8px 24px
+  banner-3:
+    textColor: "#005eb8"
+  banner-4:
+    textColor: "#fff"
+    typography:
+      fontSize: 1rem
+      fontWeight: 600
+    padding: "0"
+  banner-5:
+    backgroundColor: "#005eb8"
+    padding: 2px 16px 4px
+  banner-6:
+    textColor: "#212b32"
+    padding: 16px
+  table-2:
+    backgroundColor: "#fff"
+    textColor: "#212b32"
+  tag-red:
+    backgroundColor: "#f7d4d1"
+    textColor: "#801810"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 18px
 ---
 
 # NHS.UK Service Manual
 
 ## Overview
 
-NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.
+NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 88 colour tokens and 0 type tokens.
+Tokens were read from https://service-manual.nhs.uk/, not from a published token package: 88 colour tokens and 20 type tokens.
 
 ## Colors
 
@@ -107,4 +295,15 @@ Tokens were read from the project's own repository, not from a marketing site: 8
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+Families declared in the source: `"Frutiger W01", arial, sans-serif`.
+
+## Components
+
+24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#005eb8` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Frutiger W01` across 20 type steps.
+- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

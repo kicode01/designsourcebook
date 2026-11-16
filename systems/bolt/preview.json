@@ -1,15 +1,587 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
+  "canvas": "rgb(255, 255, 255)",
+  "surface": "rgb(255, 255, 255)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#31355e",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "16px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Bolt Design System is published by Bolt, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "theme-bg",
+      "value": "#161b3c"
+    },
+    {
+      "name": "theme-primary",
+      "value": "#31355e"
+    },
+    {
+      "name": "theme-secondary",
+      "value": "#161f50"
+    },
+    {
+      "name": "theme-text-rgb",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "theme-text",
+      "value": "#262829"
+    },
+    {
+      "name": "base-color",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "highlight-color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "e-bolt-button-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bolt-color-indigo-light",
+      "value": "#3e67bb"
+    },
+    {
+      "name": "bds-form-border-color-primary-rgb",
+      "value": "rgb(62, 103, 187)"
+    },
+    {
+      "name": "bolt-color-info-dark",
+      "value": "#004880"
+    },
+    {
+      "name": "bolt-color-gray-xdark",
+      "value": "#2e2e33"
+    },
+    {
+      "name": "m-bolt-link",
+      "value": "#3e67bb"
+    },
+    {
+      "name": "bolt-color-gray-xlight",
+      "value": "#f6f6f9"
+    },
+    {
+      "name": "bolt-color-yellow-light",
+      "value": "#ffdf8e"
+    },
+    {
+      "name": "bolt-color-gray-light",
+      "value": "#e0e2eb"
+    },
+    {
+      "name": "bolt-color-success",
+      "value": "#357e38"
+    },
+    {
+      "name": "bolt-color-warning-light",
+      "value": "#faf4d1"
+    },
+    {
+      "name": "bds-form-border-color-hover",
+      "value": "#3e67bb"
+    },
+    {
+      "name": "swiper-theme-color",
+      "value": "#007aff"
+    },
+    {
+      "name": "bolt-color-yellow-dark",
+      "value": "#e7a832"
+    },
+    {
+      "name": "bolt-color-teal-light",
+      "value": "#86cac6"
+    },
+    {
+      "name": "bolt-color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "m-bolt-neutral",
+      "value": "#5c5d66"
+    },
+    {
+      "name": "bolt-color-error-light",
+      "value": "#fad5d1"
+    },
+    {
+      "name": "m-bolt-bg-highlight",
+      "value": "#fff"
+    },
+    {
+      "name": "bolt-color-teal-xlight",
+      "value": "#b7e4e6"
+    },
+    {
+      "name": "bolt-color-black",
+      "value": "#151619"
+    },
+    {
+      "name": "bolt-color-warning",
+      "value": "#e8cd30"
+    },
+    {
+      "name": "m-bolt-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "bolt-color-error-dark",
+      "value": "#9d2315"
+    },
+    {
+      "name": "bolt-color-x",
+      "value": "#0f1419"
+    },
+    {
+      "name": "m-bolt-bg",
+      "value": "#fff"
+    },
+    {
+      "name": "bolt-color-gen-ai",
+      "value": "#681fc3"
+    },
+    {
+      "name": "bolt-color-teal-dark",
+      "value": "#0a6266"
+    },
+    {
+      "name": "bolt-color-wine",
+      "value": "#661d34"
+    },
+    {
+      "name": "bolt-color-orange",
+      "value": "#f76923"
+    },
+    {
+      "name": "bolt-color-yellow",
+      "value": "#ffc836"
+    },
+    {
+      "name": "bolt-color-warning-dark",
+      "value": "#cfb317"
+    },
+    {
+      "name": "m-bolt-bg-lowlight",
+      "value": "#f6f6f9"
+    },
+    {
+      "name": "bolt-color-gray",
+      "value": "#8d8e99"
+    },
+    {
+      "name": "bolt-color-berry",
+      "value": "#ac1361"
+    },
+    {
+      "name": "bolt-color-indigo-xlight",
+      "value": "#abc2f2"
+    },
+    {
+      "name": "bolt-color-indigo-dark",
+      "value": "#081c45"
+    },
+    {
+      "name": "m-bolt-table-header",
+      "value": "#f6f6f9"
+    },
+    {
+      "name": "bolt-color-success-light",
+      "value": "#dbf0dc"
+    },
+    {
+      "name": "m-bolt-text-on-tertiary",
+      "value": "#001f5f"
+    },
+    {
+      "name": "m-bolt-text-on-secondary",
+      "value": "#001f5f"
+    },
+    {
+      "name": "bolt-color-indigo-xdark",
+      "value": "#091734"
+    },
+    {
+      "name": "bolt-color-sapphire",
+      "value": "#344a9b"
+    },
+    {
+      "name": "m-bolt-text-on-disabled",
+      "value": "#2e2e33"
+    },
+    {
+      "name": "bolt-color-orange-dark",
+      "value": "#b63800"
+    },
+    {
+      "name": "bds-form-border-color-secondary",
+      "value": "#8d8e99"
+    },
+    {
+      "name": "m-bolt-table-border",
+      "value": "#e0e2eb"
+    },
+    {
+      "name": "m-bolt-table-highlight",
+      "value": "#e0e2eb"
+    },
+    {
+      "name": "bolt-color-navy-xdark",
+      "value": "#091734"
+    },
+    {
+      "name": "bolt-color-teal",
+      "value": "#10a5ac"
+    },
+    {
+      "name": "bolt-color-info",
+      "value": "#0076d1"
+    },
+    {
+      "name": "bds-form-border-color-shadow-dark",
+      "value": "rgba(62,103,187,1)"
+    },
+    {
+      "name": "m-bolt-disabled",
+      "value": "#e0e2eb"
+    },
+    {
+      "name": "bolt-color-linkedin",
+      "value": "#0476b4"
+    },
+    {
+      "name": "bolt-color-pink",
+      "value": "#eb3987"
+    },
+    {
+      "name": "m-bolt-headline",
+      "value": "#001f5f"
+    },
+    {
+      "name": "bolt-color-success-bright",
+      "value": "#6dd400"
+    },
+    {
+      "name": "bolt-color-navy-xlight",
+      "value": "#d7e2f2"
+    },
+    {
+      "name": "bolt-color-bright-purple",
+      "value": "#828cff"
+    },
+    {
+      "name": "bolt-color-indigo",
+      "value": "#001f5f"
+    },
+    {
+      "name": "bolt-color-success-dark",
+      "value": "#256940"
+    },
+    {
+      "name": "bolt-color-facebook",
+      "value": "#3a579c"
+    },
+    {
+      "name": "bolt-color-info-light",
+      "value": "#d6edff"
+    },
+    {
+      "name": "bolt-color-navy-dark",
+      "value": "#081c45"
+    },
+    {
+      "name": "m-bolt-text",
+      "value": "#151619"
+    },
+    {
+      "name": "bolt-color-navy",
+      "value": "#001f5f"
+    },
+    {
+      "name": "bolt-color-error",
+      "value": "#b42818"
+    },
+    {
+      "name": "bolt-color-violet",
+      "value": "#5f67b9"
+    },
+    {
+      "name": "bolt-form-color-invalid",
+      "value": "#b42818"
+    },
+    {
+      "name": "bolt-color-orange-light",
+      "value": "#ff931e"
+    },
+    {
+      "name": "bolt-color-teal-xdark",
+      "value": "#005154"
+    },
+    {
+      "name": "m-bolt-primary",
+      "value": "#3e67bb"
+    },
+    {
+      "name": "bolt-color-gray-dark",
+      "value": "#5c5d66"
+    },
+    {
+      "name": "bolt-color-navy-light",
+      "value": "#3e67bb"
+    },
+    {
+      "name": "m-bolt-text-on-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "#31355e"
+    }
+  ],
+  "type": [
+    {
+      "name": "bolt-type-font-size-xlargedisplay-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "6rem",
+      "px": 96
+    },
+    {
+      "name": "bolt-type-font-size-largedisplay-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "4.8rem",
+      "px": 76.8
+    },
+    {
+      "name": "bolt-type-font-size-largedisplay",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "4.75rem",
+      "px": 76
+    },
+    {
+      "name": "bolt-type-font-size-display",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "bolt-type-font-size-display-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "bolt-type-font-size-xxxlarge",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "bolt-type-font-size-xxxlarge-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.2rem",
+      "px": 51.2
+    },
+    {
+      "name": "bolt-type-font-size-xxlarge",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "bolt-type-font-size-xxlarge-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.6rem",
+      "px": 41.6
+    },
+    {
+      "name": "bolt-type-font-size-xlarge-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "bolt-type-font-size-xlarge",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "bolt-type-font-size-large",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "bolt-type-font-size-large-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "bolt-type-font-size-medium-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4
+    },
+    {
+      "name": "bolt-type-font-size-medium",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.2rem",
+      "px": 19.2
+    },
+    {
+      "name": "bolt-type-font-size-regular-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.15rem",
+      "px": 18.4
+    },
+    {
+      "name": "bolt-type-font-size-small-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.13rem",
+      "px": 18.08
+    },
+    {
+      "name": "bolt-type-font-size-regular",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-size-xsmall-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-size",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-family-chakrapetch",
+      "fontFamily": "\"Chakra Petch\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-family-body",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-family-code",
+      "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-family-fallback",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-family-lora",
+      "fontFamily": "Lora, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-family-headline",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "bolt-type-font-size-tiny-lora",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.9rem",
+      "px": 14.4
+    },
+    {
+      "name": "bolt-type-font-size-small",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.9rem",
+      "px": 14.4
+    },
+    {
+      "name": "bolt-type-font-size-xsmall",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.8rem",
+      "px": 12.8
+    },
+    {
+      "name": "bolt-type-font-size-tiny",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.7rem",
+      "px": 11.2
+    }
+  ],
+  "components": [
+    {
+      "key": "selectedItemBubble",
+      "kind": "input",
+      "backgroundColor": "#e0e0e0",
+      "rounded": "16px",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#31355e",
+      "textColor": "#ffffff",
+      "rounded": "16px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "16px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#fad5d1",
+      "textColor": "#0b0b0c",
+      "rounded": "16px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "16px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#31355e",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#357e38",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "16px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Bolt Design System — Crisp light (rgb(255, 255, 255)) canvas, Chakra Petch typography, #31355e brand accent, and pill & expressive rounded surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#31355e` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Chakra Petch` across 30 type steps.\n- **Component Geometry**: Buttons (`16px`), cards (`16px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

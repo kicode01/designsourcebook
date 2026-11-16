@@ -313,59 +313,59 @@
       "value": "#000"
     },
     {
-      "name": "sgds-code-color",
-      "value": "#d63384"
-    },
-    {
-      "name": "sgds-table-striped-color",
+      "name": "sgds-body-color",
       "value": "#1d2939"
     },
     {
-      "name": "sgds-table-bg",
-      "value": "#000"
+      "name": "sgds-highlight-bg",
+      "value": "#fcf8e3"
     },
     {
-      "name": "sgds-btn-hover-color",
+      "name": "sgds-table-active-color",
+      "value": "#1d2939"
+    },
+    {
+      "name": "sgds-btn-color",
+      "value": "#1d2939"
+    },
+    {
+      "name": "sgds-btn-hover-bg",
+      "value": "#4c1fbb"
+    },
+    {
+      "name": "sgds-dropdown-color",
+      "value": "#1d2939"
+    },
+    {
+      "name": "sgds-card-bg",
       "value": "#fff"
     },
     {
-      "name": "sgds-btn-active-bg",
-      "value": "#471eb0"
+      "name": "sgds-accordion-btn-color",
+      "value": "#1d2939"
     },
     {
-      "name": "sgds-dropdown-header-color",
+      "name": "sgds-breadcrumb-divider-color",
       "value": "#344054"
     },
     {
-      "name": "sgds-accordion-bg",
+      "name": "sgds-pagination-bg",
       "value": "#fff"
     },
     {
-      "name": "sgds-accordion-active-color",
-      "value": "#5925dc"
+      "name": "sgds-pagination-active-color",
+      "value": "#fff"
     },
     {
-      "name": "sgds-pagination-color",
-      "value": "#0f71bb"
+      "name": "sgds-list-group-bg",
+      "value": "#fff"
     },
     {
-      "name": "sgds-pagination-hover-bg",
-      "value": "#e4e7ec"
+      "name": "sgds-list-group-action-hover-bg",
+      "value": "#f7f7f9"
     },
     {
-      "name": "sgds-list-group-color",
-      "value": "#000"
-    },
-    {
-      "name": "sgds-list-group-action-hover-color",
-      "value": "#1d2939"
-    },
-    {
-      "name": "sgds-list-group-action-active-bg",
-      "value": "#e4e7ec"
-    },
-    {
-      "name": "sgds-badge-color",
+      "name": "sgds-list-group-active-color",
       "value": "#fff"
     },
     {
@@ -376,108 +376,173 @@
   "type": [
     {
       "name": "badge-font-size-max",
-      "fontFamily": "system-ui",
-      "fontSize": "2rem !default",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "2rem",
       "px": 32
     },
     {
       "name": "legend-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1.5rem !default",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "sgds-navbar-brand-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "sgds-navbar-toggler-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
+      "name": "lead",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "display-4",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
       "name": "font-size-base",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem !default",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "sidenav-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem !default",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "toast-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem !default",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-sans-serif",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
       "px": 16
     },
     {
       "name": "sgds-body-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "sgds-dropdown-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "sgds-sidenav-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "sgds-toast-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "sgds-popover-header-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
-      "name": "sgds-body-font-family",
-      "fontFamily": "var(--sgds-font-sans-serif)",
+      "name": "sgds-font-sans-serif",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "px": 16
     },
     {
+      "name": "sgds-font-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "sgds-body-font-family",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "small-font-size",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
       "name": "sgds-btn-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "sgds-pagination-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
+      "name": "sgds-badge-font-size",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875em",
+      "px": 14
+    },
+    {
       "name": "sgds-tooltip-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "sgds-popover-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
+      "name": "figure-caption",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "sub-sup-font-size",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".75em",
+      "px": 12
+    },
+    {
       "name": "sgds-progress-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "fontSize": "0.75rem",
       "px": 12
     }
@@ -493,49 +558,91 @@
     },
     {
       "key": "link-info",
-      "kind": "link",
-      "textColor": "#0f71bb!important"
+      "kind": "nav",
+      "textColor": "#0f71bb"
     },
     {
       "key": "link-dark-2",
-      "kind": "link",
-      "textColor": "#000!important"
+      "kind": "nav",
+      "textColor": "#000"
     },
     {
       "key": "link-light-3",
-      "kind": "link",
-      "textColor": "#f7f7f9!important"
+      "kind": "nav",
+      "textColor": "#f7f7f9"
+    },
+    {
+      "key": "select",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#1d2939",
+      "rounded": ".3125rem",
+      "padding": ".4375rem 3rem .4375rem 1rem",
+      "border": "1px solid #98a2b3"
     },
     {
       "key": "link-danger-4",
-      "kind": "link",
-      "textColor": "#d7260f!important"
+      "kind": "nav",
+      "textColor": "#d7260f"
     },
     {
       "key": "link-primary-5",
-      "kind": "link",
-      "textColor": "#5925dc!important"
+      "kind": "nav",
+      "textColor": "#5925dc"
     },
     {
       "key": "link-success-6",
-      "kind": "link",
-      "textColor": "#0a8217!important"
+      "kind": "nav",
+      "textColor": "#0a8217"
     },
     {
-      "key": "alert-heading",
-      "kind": "alert",
-      "textColor": "inherit"
+      "key": "form-check-input-2",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "border": "1px solid rgba(0,0,0,.25)"
     },
     {
-      "key": "input-group-text",
+      "key": "input-group-text-3",
       "kind": "input",
       "backgroundColor": "#e4e7ec",
       "textColor": "#1d2939",
       "rounded": ".3125rem",
       "padding": ".4375rem 1rem",
       "border": "1px solid #98a2b3"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": ".3125rem",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#5925dc",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#0a8217",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
     }
   ],
-  "overview": "undefined",
-  "dos": ""
+  "overview": "Singapore Government Design System (SGDS) — open-source UI system for Singapore digital services.",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#5925dc` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Inter` across 29 type steps.\n- **Component Geometry**: Buttons (`.3125rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

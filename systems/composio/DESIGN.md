@@ -135,7 +135,32 @@ components:
     rounded: 4px
   button-phantom:
     backgroundColor: "rgba(255,255,255,0.2)"
-    textColor: "rgba(255,255,255,0.5)"
+    textColor: "#ffffff"
+  input-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#00ffff"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 16px
 ---
 
 # Design System: Composio

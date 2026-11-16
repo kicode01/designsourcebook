@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Korea Design System
-description: "Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux."
+description: "Crisp light (#ffffff) canvas, system-ui typography, #ecf2fe brand accent, and 8px corner geometry"
 colors:
   0: "#ffffff"
   20: "#b1cefb"
@@ -187,18 +187,46 @@ typography:
     fontSize: 1.5rem
   krds-mobile-font-size-navigation-depth-small:
     fontSize: 1.5rem
-  krds-font-family-base:
-    fontFamily: "var(--krds-typo-font-type)"
 components:
   btn-help-panel:
-    backgroundColor: "#ffffff!important"
+    backgroundColor: "#ffffff"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ecf2fe"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#d8eedd"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Korea Design System
 
 ## Overview
 
-Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.
+Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 47 type tokens.
 
@@ -213,3 +241,10 @@ Families declared in the source: `var(--krds-typo-font-type)`.
 ## Components
 
 1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ecf2fe` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 46 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

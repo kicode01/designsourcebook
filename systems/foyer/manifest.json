@@ -1,22 +1,22 @@
 {
   "name": "foyer",
   "displayName": "Foyer Design System",
-  "description": "Foyer Foyer Design System — read from the rendered page in a browser, not from published tokens.",
-  "style": "Foyer Foyer Design System — read from the rendered page in a browser, not from published tokens.",
+  "description": "Foyer Design System — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, DM sans typography, #0B42C8 brand accent, and 4px corner geometry",
   "category": "Foyer",
   "org": "Foyer",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "foyer"
+    "observed",
+    "foyer",
+    "light"
   ],
   "homepage": "https://design.foyer.lu/",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Computed styles read from https://design.foyer.lu/ in headless Chromium on 2026-11-16 (45 custom properties, 78 sampled elements, 2 files). A rendered snapshot is not a published token package — values can change without notice. Page title: Foyer Design System.",
+  "provenanceNote": "Computed styles read from https://design.foyer.lu/ in headless Chromium on 2026-11-16 (45 custom properties, 114 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Foyer Design System.",
   "source": {
-    "repo": null
+    "url": "https://design.foyer.lu/"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,17 +25,29 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 43,
-    "typography": 0,
-    "components": 0
+    "colors": 49,
+    "typography": 12,
+    "components": 26
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 186,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

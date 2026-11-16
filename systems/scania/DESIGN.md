@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Scania Digital Design System
-description: "Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel."
+description: "Crisp light (#fff) canvas, traton type text typography, #16417f brand accent, and 8px corner geometry"
 colors:
   50: "#D8DDE5"
   900: "#001533"
@@ -96,77 +96,35 @@ colors:
   primary: "#16417f"
 typography:
   01:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   02:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   03:
-    fontFamily: traton type display
+    fontFamily: "\"traton type display\""
   04:
-    fontFamily: traton type display
+    fontFamily: "\"traton type display\""
   05:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   06:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   item:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   title:
-    fontFamily: traton type display
+    fontFamily: "\"traton type display\""
   avatar:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   current:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   scania-font-family-default:
-    fontFamily: scania sans
+    fontFamily: "\"scania sans\""
   scania-font-family-display:
-    fontFamily: scania sans headline
+    fontFamily: "\"scania sans headline\""
   scania-font-family-semi-condensed:
-    fontFamily: scania sans semi condensed
+    fontFamily: "\"scania sans semi condensed\""
   traton-font-family-default:
-    fontFamily: traton type text
+    fontFamily: "\"traton type text\""
   traton-font-family-display:
-    fontFamily: traton type display
-  type-display-01-font-family:
-    fontFamily: "var(--scania-font-family-display)"
-  type-display-02-font-family:
-    fontFamily: "var(--scania-font-family-display)"
-  type-display-03-font-family:
-    fontFamily: "var(--scania-font-family-display)"
-  type-display-04-font-family:
-    fontFamily: "var(--scania-font-family-display)"
-  type-display-05-font-family:
-    fontFamily: "var(--scania-font-family-display)"
-  type-headline-01-font-family:
-    fontFamily: "var(--scania-font-family-display)"
-  type-headline-02-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-headline-03-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-headline-04-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-headline-05-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-headline-06-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-paragraph-01-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-paragraph-02-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-body-01-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-body-02-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-system-title-01-font-family:
-    fontFamily: "var(--scania-font-family-semi-condensed)"
-  type-system-title-02-font-family:
-    fontFamily: "var(--scania-font-family-default)"
-  type-system-label-01-font-family:
-    fontFamily: "var(--scania-font-family-semi-condensed)"
-  type-system-label-02-font-family:
-    fontFamily: "var(--scania-font-family-semi-condensed)"
-  type-system-body-01-font-family:
-    fontFamily: "var(--scania-font-family-semi-condensed)"
-  type-system-body-02-font-family:
-    fontFamily: "var(--scania-font-family-semi-condensed)"
+    fontFamily: "\"traton type display\""
   super-type-01-font-size:
     fontSize: 216px
   super-type-02-font-size:
@@ -218,68 +176,103 @@ typography:
   detail-07-font-size:
     fontSize: 10px
   super-type-01-font-family:
-    fontFamily: "Scania Sans Headline', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Headline\", arial, \"Helvetica Neue\""
   super-type-02-font-family:
-    fontFamily: "Scania Sans Headline', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Headline\", arial, \"Helvetica Neue\""
   super-type-03-font-family:
-    fontFamily: "Scania Sans Headline', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Headline\", arial, \"Helvetica Neue\""
   expressive-headline-01-font-family:
-    fontFamily: "Scania Sans Headline', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Headline\", arial, \"Helvetica Neue\""
   expressive-headline-02-font-family:
-    fontFamily: "Scania Sans Headline', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Headline\", arial, \"Helvetica Neue\""
   headline-01-font-family:
-    fontFamily: "Scania Sans Headline', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Headline\", arial, \"Helvetica Neue\""
   headline-02-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   headline-03-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   headline-04-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   headline-05-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   headline-06-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   headline-07-font-family:
-    fontFamily: "Scania Sans Semi Condensed', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Semi Condensed\", arial, \"Helvetica Neue\""
   paragraph-01-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   paragraph-02-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   body-01-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   body-02-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   body-link-01-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   body-link-02-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   detail-01-font-family:
-    fontFamily: "Scania Sans Semi Condensed', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Semi Condensed\", arial, \"Helvetica Neue\""
   detail-02-font-family:
-    fontFamily: "Scania Sans Semi Condensed', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Semi Condensed\", arial, \"Helvetica Neue\""
   detail-03-font-family:
-    fontFamily: "Scania Sans Semi Condensed', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Semi Condensed\", arial, \"Helvetica Neue\""
   detail-04-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   detail-05-font-family:
-    fontFamily: "Scania Sans Semi Condensed', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans Semi Condensed\", arial, \"Helvetica Neue\""
   detail-06-font-family:
-    fontFamily: "Scania Sans', arial, 'Helvetica Neue"
+    fontFamily: "\"Scania Sans\", arial, \"Helvetica Neue\""
   detail-07-font-family:
-    fontFamily: "Scania Sans Semi Condensed', arial, 'Helvetica Neue"
-  tds-header-title-font-family:
-    fontFamily: "var(--headline-01-font-family)"
-  header-title-font-size:
-    fontSize: "calc(var(--type-headline-06-font-size) * 1px)"
-  header-title-font-family:
-    fontFamily: "var(--type-headline-01-font-family)"
+    fontFamily: "\"Scania Sans Semi Condensed\", arial, \"Helvetica Neue\""
+components:
+  button-primary:
+    backgroundColor: "#16417f"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#8a0012"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#16417f"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#004c3b"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Scania Digital Design System
 
 ## Overview
 
-Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.
+Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 89 type tokens.
 
@@ -290,3 +283,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 Families declared in the source: `traton type text`, `traton type display`, `scania sans`, `scania sans headline`, `scania sans semi condensed`, `var(--scania-font-family-display)`, `var(--scania-font-family-default)`, `var(--scania-font-family-semi-condensed)`, `Scania Sans Headline', arial, 'Helvetica Neue`, `Scania Sans', arial, 'Helvetica Neue`, `Scania Sans Semi Condensed', arial, 'Helvetica Neue`, `var(--headline-01-font-family)`, `var(--type-headline-01-font-family)`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#16417f` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `traton type text` across 65 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -87,6 +87,36 @@ components:
   button-ghost-transparent:
     backgroundColor: "rgba(255, 255, 255, 0)"
     textColor: "#000000"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#1863dc"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Cohere

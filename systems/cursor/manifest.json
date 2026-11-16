@@ -6,7 +6,6 @@
   "category": "Developer Tools & Platforms",
   "theme": "light",
   "tags": [
-    "dark",
     "gradient",
     "developer-tools",
     "light"
@@ -24,15 +23,28 @@
   "tokens": {
     "colors": 24,
     "typography": 18,
-    "components": 5
+    "components": 10
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {},
+  "popularity": {
+    "rank": 182,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

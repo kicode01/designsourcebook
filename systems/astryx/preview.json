@@ -376,37 +376,37 @@
   "type": [
     {
       "name": "font-size-5xl",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "2.625rem",
       "px": 42
     },
     {
       "name": "font-size-4xl",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "2.1875rem",
       "px": 35
     },
     {
       "name": "font-size-3xl",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.8125rem",
       "px": 29
     },
     {
       "name": "font-size-2xl",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "font-size-xl",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "font-size-lg",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.0625rem",
       "px": 17
     },
@@ -427,42 +427,107 @@
     },
     {
       "name": "font-size-base",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "font-size-sm",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "font-size-xs",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "0.625rem",
       "px": 10
     },
     {
       "name": "font-size-2xs",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "0.5rem",
       "px": 8
     },
     {
       "name": "font-size-3xs",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "0.4375rem",
       "px": 7
     },
     {
       "name": "font-size-4xs",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "0.375rem",
       "px": 6
     }
   ],
-  "components": [],
-  "overview": "Meta Astryx — tokens read from https://github.com/meta/astryx.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0a7d55",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ffb3a5",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ff0000",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ff0000",
+      "textColor": "#000000",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0a7d55",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#91D143",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ff0000",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Astryx — Dark (#ff0000) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Dark (#ff0000) canvas paired with `#ff0000` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0a7d55` with `#f7f7f8` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Figtree` across 15 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

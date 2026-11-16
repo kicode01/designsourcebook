@@ -3,7 +3,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { listSystems, loadSystem, readDesign, search, buildIndex, ROOT } from "../lib/registry.mjs";
+import { listSystems, loadSystem, readDesign, readPreview, search, buildIndex, ROOT } from "../lib/registry.mjs";
 import { lint } from "../lib/lint.mjs";
 import { EMITTERS } from "../lib/emit.mjs";
 import { startMcpServer } from "../lib/mcp.mjs";
@@ -20,16 +20,29 @@ const yellow = paint("33");
 const red = paint("31");
 const cyan = paint("36");
 
+const VALUE_FLAGS = new Set(["tag", "limit", "framework", "dir", "format", "sort"]);
+
 function flag(name, fallback = undefined) {
   const i = argv.indexOf(`--${name}`);
   if (i === -1) return fallback;
+  if (!VALUE_FLAGS.has(name)) return true;
   const next = argv[i + 1];
   if (!next || next.startsWith("--")) return true;
   return next;
 }
 
 function positional() {
-  return argv.slice(1).filter((a, i, arr) => !a.startsWith("--") && !(i > 0 && arr[i - 1].startsWith("--")));
+  const out = [];
+  for (let i = 1; i < argv.length; i++) {
+    const a = argv[i];
+    if (a.startsWith("--")) {
+      const key = a.slice(2);
+      if (VALUE_FLAGS.has(key) && i + 1 < argv.length && !argv[i + 1].startsWith("--")) i++;
+      continue;
+    }
+    out.push(a);
+  }
+  return out;
 }
 
 function fail(msg) {
@@ -38,6 +51,7 @@ function fail(msg) {
 }
 
 function badge(s) {
+  if (s.provenance === "listed") return dim("listed");
   if (s.checks?.verified) return green("verified");
   if (s.checks?.errors) return red(`${s.checks.errors} errors`);
   return yellow(`${s.checks?.warnings ?? "?"} warnings`);
@@ -47,11 +61,15 @@ function badge(s) {
 
 function cmdList() {
   const tag = flag("tag");
+  const sort = flag("sort");
   const verifiedOnly = Boolean(flag("verified", false));
   let systems = listSystems();
 
   if (tag) systems = systems.filter((s) => (s.tags || []).some((t) => t.toLowerCase() === String(tag).toLowerCase()));
   if (verifiedOnly) systems = systems.filter((s) => s.checks?.verified);
+  if (sort === "popular" || sort === "stars") {
+    systems = systems.slice().sort((a, b) => (a.popularity?.rank || 999) - (b.popularity?.rank || 999));
+  }
 
   if (!systems.length) {
     console.log(dim("No systems matched."));
@@ -61,9 +79,34 @@ function cmdList() {
   const w = Math.max(...systems.map((s) => (s.displayName || s.name).length));
   for (const s of systems) {
     const name = (s.displayName || s.name).padEnd(w);
-    console.log(`${bold(name)}  ${dim((s.style || "").slice(0, 46).padEnd(46))}  ${badge(s)}`);
+    const stars = s.popularity?.stars ? yellow(`★ ${s.popularity.stars.toLocaleString()}`).padEnd(12) : dim("-".padEnd(12));
+    console.log(`${bold(name)}  ${stars}  ${dim((s.style || "").slice(0, 42).padEnd(42))}  ${badge(s)}`);
   }
-  console.log(dim(`\n${systems.length} systems. \`sourcebook info <name>\` for details.`));
+  console.log(dim(`\n${systems.length} systems. \`sourcebook info <name>\` or \`sourcebook rank\` for popularity.`));
+}
+
+function cmdRank() {
+  const limit = Number(flag("limit", 40));
+  const enterprise = Boolean(flag("enterprise", false));
+  let systems = listSystems().filter((s) =>
+    enterprise ? Boolean(s.popularity?.enterpriseRank) : Boolean(s.popularity?.isDesignSystemRepo)
+  );
+  if (enterprise) {
+    systems.sort((a, b) => (a.popularity?.enterpriseRank || 999) - (b.popularity?.enterpriseRank || 999));
+  } else {
+    systems.sort((a, b) => (b.popularity?.stars || 0) - (a.popularity?.stars || 0) || (b.popularity?.npmDownloads || 0) - (a.popularity?.npmDownloads || 0));
+  }
+  systems = systems.slice(0, limit);
+  const w = Math.max(16, ...systems.map((s) => (s.displayName || s.name).length));
+  for (const [i, s] of systems.entries()) {
+    const rk = `#${i + 1}`.padEnd(4);
+    const name = (s.displayName || s.name).padEnd(w);
+    const org = (s.org || s.slug).slice(0, 14).padEnd(14);
+    const stars = s.popularity?.stars ? `★ ${s.popularity.stars.toLocaleString()}`.padStart(10) : "       ★ -";
+    const fws = (s.popularity?.frameworks || []).join(", ").padEnd(24);
+    const repo = s.source?.repo || s.source?.package || "";
+    console.log(`${cyan(rk)} ${bold(name)}  ${dim(org)}  ${yellow(stars)}  ${dim(fws)}  ${dim(repo)}`);
+  }
 }
 
 function cmdSearch() {
@@ -98,12 +141,21 @@ function cmdInfo() {
   console.log(`${bold(s.displayName || s.name)}  ${dim(s.homepage || "")}`);
   console.log(`${s.style || ""}\n`);
   console.log(`${dim("license")}    ${s.license} ${dim(`(${s.provenance})`)}`);
+  if (s.source?.repo) console.log(`${dim("repo")}       ${s.source.repo}`);
+  if (s.source?.package) console.log(`${dim("package")}    ${s.source.package}`);
+  if (s.popularity?.stars || s.popularity?.npmDownloads) {
+    console.log(
+      `${dim("popular")}    #${s.popularity.rank} · ★ ${(s.popularity.stars || 0).toLocaleString()} stars · ${(s.popularity.npmDownloads || 0).toLocaleString()} npm/mo`
+    );
+  }
   console.log(`${dim("tags")}       ${(s.tags || []).join(", ")}`);
   console.log(`${dim("tokens")}     ${s.tokens?.colors || 0} colors · ${s.tokens?.typography || 0} type · ${s.tokens?.components || 0} components`);
   console.log(`${dim("checks")}     ${badge(s)}`);
-  if (!s.checks?.verified) {
-    for (const f of report.findings.filter((f) => f.severity === "warning")) {
-      console.log(`  ${yellow("·")} ${f.rule}: ${f.message}`);
+  if (s.provenance === "listed") {
+    console.log(`  ${dim("· inventory-only record (no machine-readable tokens)")}`);
+  } else if (!s.checks?.verified) {
+    for (const f of report.findings.filter((f) => f.severity !== "info")) {
+      console.log(`  ${f.severity === "error" ? red("✕") : yellow("·")} ${f.rule}: ${f.message}`);
     }
   }
   console.log(`\n${dim("install")}    npx sourcebook add ${s.slug} --framework tailwind-v4`);
@@ -113,7 +165,7 @@ function cmdInfo() {
 
 function cmdAdd() {
   const name = positional()[0];
-  if (!name) fail("Usage: sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg] [--dir <path>] [--force]");
+  if (!name) fail("Usage: sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg|prompt|json] [--dir <path>] [--force]");
 
   const s = resolve(name);
   if (!s) fail(`No system named "${name}". Try \`sourcebook search <intent>\`.`);
@@ -124,18 +176,20 @@ function cmdAdd() {
 
   const targetDir = path.resolve(String(flag("dir", process.cwd())));
   const md = readDesign(s.slug);
-  const tokens = EMITTERS.dtcg.run(md);
-  const theme = emitter.run(md);
+  const ctx = { preview: readPreview(s.slug), manifest: s };
+  const tokens = EMITTERS.dtcg.run(md, ctx);
+  const theme = emitter.run(md, ctx);
 
   if (flag("print")) {
     console.log(md);
     return;
   }
 
+  const outName = framework === "prompt" ? "design-prompt.md" : framework === "json" ? "design-bundle.json" : `design-theme.${emitter.ext}`;
   const files = [
     ["DESIGN.md", md],
     ["design-tokens.json", tokens],
-    [`design-theme.${emitter.ext}`, theme],
+    [outName, theme],
   ];
 
   fs.mkdirSync(targetDir, { recursive: true });
@@ -159,7 +213,8 @@ function cmdAdd() {
   console.log("");
   console.log(dim("The agent reads DESIGN.md for intent, design-tokens.json for exact values."));
   console.log(dim(`Next: keep AGENTS.md next to it, or run \`sourcebook mcp\` for live access.`));
-  if (!report.verified) console.log(yellow(`Note: ${report.counts.warnings} lint warning(s) on this entry.`));
+  if (s.provenance === "listed") console.log(yellow("Note: this is a listed inventory record with 0 tokens."));
+  else if (!report.verified) console.log(yellow(`Note: ${report.counts.warnings} lint warning(s) on this entry.`));
 }
 
 function cmdLint() {
@@ -202,7 +257,7 @@ function cmdLint() {
 
 function cmdExport() {
   const name = positional()[0];
-  if (!name) fail("Usage: sourcebook export <name> --format tailwind-v4|css-vars|dtcg");
+  if (!name) fail("Usage: sourcebook export <name> --format tailwind-v4|css-vars|dtcg|prompt|json");
   const s = resolve(name);
   if (!s) fail(`No system named "${name}".`);
 
@@ -210,7 +265,7 @@ function cmdExport() {
   const emitter = EMITTERS[framework];
   if (!emitter) fail(`Unknown format "${framework}". Options: ${Object.keys(EMITTERS).join(", ")}`);
 
-  process.stdout.write(emitter.run(readDesign(s.slug)));
+  process.stdout.write(emitter.run(readDesign(s.slug), { preview: readPreview(s.slug), manifest: s }));
 }
 
 function cmdIndex() {
@@ -223,10 +278,12 @@ function cmdIndex() {
 function resolve(name) {
   const systems = listSystems();
   const n = String(name).toLowerCase();
+  const sourced = systems.filter((s) => s.provenance !== "listed");
   return (
     systems.find((s) => s.slug === n) ||
     systems.find((s) => s.name === n) ||
     systems.find((s) => (s.displayName || "").toLowerCase() === n) ||
+    sourced.find((s) => s.slug.includes(n) || (s.displayName || "").toLowerCase().includes(n)) ||
     systems.find((s) => s.slug.includes(n) || (s.displayName || "").toLowerCase().includes(n)) ||
     null
   );
@@ -237,12 +294,13 @@ function help() {
 ${bold("sourcebook")} ${dim("— a verified, installable registry of design systems")}
 
 ${bold("Usage")}
-  sourcebook list [--tag <tag>] [--verified]
+  sourcebook list [--tag <tag>] [--verified] [--sort popular]
+  sourcebook rank [--limit n] [--enterprise]
   sourcebook search <intent...> [--limit n] [--verified]
   sourcebook info <name>
-  sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg] [--dir <path>] [--force] [--print]
+  sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg|prompt|json] [--dir <path>] [--force] [--print]
   sourcebook lint <name> | --all [--format json]
-  sourcebook export <name> --format tailwind-v4|css-vars|dtcg
+  sourcebook export <name> --format tailwind-v4|css-vars|dtcg|prompt|json
   sourcebook index
   sourcebook mcp
 
@@ -250,7 +308,7 @@ ${bold("Connect to an agent")}
   ${dim("file drop")}   sourcebook add linear-app --dir .
   ${dim("mcp")}         sourcebook mcp   ${dim("# stdio server, works with any MCP host")}
 
-${dim("Spec: google-labs-code/design.md  ·  Registry: 54 systems")}
+${dim(`Spec: google-labs-code/design.md  ·  Registry: ${listSystems().length} systems`)}
 `);
 }
 
@@ -258,6 +316,9 @@ switch (cmd) {
   case "list":
   case "ls":
     cmdList();
+    break;
+  case "rank":
+    cmdRank();
     break;
   case "search":
   case "s":

@@ -3,9 +3,9 @@
   "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#ffb421",
+  "brand": "#31bcf6",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "12px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -278,18 +278,104 @@
     },
     {
       "name": "primary",
-      "value": "#ffb421"
+      "value": "#31bcf6"
     }
   ],
-  "type": [],
+  "type": [
+    {
+      "name": "menu-info-block-title",
+      "fontFamily": "Jakarta, Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "body",
+      "fontFamily": "Jakarta, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "menu-title",
+      "fontFamily": "Jakarta, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 300
+    },
+    {
+      "name": "langselector-title",
+      "fontFamily": "Jakarta, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 300
+    }
+  ],
   "components": [
     {
-      "key": "cardquote-quote",
-      "kind": "cardquote",
-      "textColor": "var(--gunpowder710)",
-      "padding": "0"
+      "key": "banner",
+      "kind": "card",
+      "backgroundColor": "#30c7dc",
+      "textColor": "#0b0b0c",
+      "padding": "12px"
+    },
+    {
+      "key": "banner-info",
+      "kind": "card",
+      "backgroundColor": "#1c2a39"
+    },
+    {
+      "key": "link",
+      "kind": "nav",
+      "textColor": "#f5f7f8"
+    },
+    {
+      "key": "select",
+      "kind": "input",
+      "backgroundColor": "#3f4960",
+      "rounded": "12px"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#31bcf6",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#31bcf6",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
     }
   ],
-  "overview": "GoodBarber GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "GoodBarber Design System — Dark no-code studio interface, warm amber accents and slate workspace panels",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#31bcf6` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Jakarta` across 4 type steps.\n- **Component Geometry**: Buttons (`12px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

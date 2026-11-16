@@ -2,21 +2,22 @@
   "name": "mui",
   "displayName": "MUI Material UI",
   "description": "MUI: MUI Material UI — tokens read from https://github.com/mui/material-ui.",
-  "style": "MUI: MUI Material UI — tokens read from https://github.com/mui/material-ui.",
-  "category": "MUI:",
-  "org": "MUI:",
-  "theme": "light",
+  "style": "Dark (#121212) canvas, Roboto typography, #fff brand accent, and 8px corner geometry",
+  "category": "MUI",
+  "org": "MUI",
+  "theme": "dark",
   "tags": [
     "published",
-    "light",
-    "mui"
+    "mui",
+    "dark"
   ],
   "homepage": "https://github.com/mui/material-ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/mui/material-ui — 6 token files, 79 colours harvested, 60 selected.",
   "source": {
-    "repo": "https://github.com/mui/material-ui"
+    "repo": "https://github.com/mui/material-ui",
+    "package": "@mui/material"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 60,
-    "typography": 0,
-    "components": 0
+    "typography": 2,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 4,
+    "stars": 99344,
+    "forks": 32489,
+    "npmDownloads": 51799247,
+    "score": 457699,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 16
   }
 }

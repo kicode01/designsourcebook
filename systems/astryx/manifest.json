@@ -2,14 +2,14 @@
   "name": "astryx",
   "displayName": "Astryx",
   "description": "Meta Astryx — tokens read from https://github.com/meta/astryx.",
-  "style": "Meta Astryx — tokens read from https://github.com/meta/astryx.",
+  "style": "Dark (#ff0000) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry",
   "category": "Meta",
   "org": "Meta",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "meta"
+    "meta",
+    "light"
   ],
   "homepage": "https://github.com/meta/astryx",
   "license": "see repository",
@@ -27,7 +27,7 @@
   "tokens": {
     "colors": 91,
     "typography": 15,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 12,
+    "stars": 29413,
+    "forks": 2294,
+    "npmDownloads": 0,
+    "score": 29413,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

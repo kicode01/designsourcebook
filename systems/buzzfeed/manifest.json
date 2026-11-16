@@ -1,15 +1,15 @@
 {
   "name": "buzzfeed",
   "displayName": "BuzzFeed Solid",
-  "description": "BuzzFeed BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.",
-  "style": "BuzzFeed BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.",
+  "description": "BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.",
+  "style": "Crisp light (#fff) canvas, Proxima Nova typography, #f7ad19 brand accent, and 8px corner geometry",
   "category": "BuzzFeed",
   "org": "BuzzFeed",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "buzz-feed"
+    "buzz-feed",
+    "light"
   ],
   "homepage": "https://github.com/buzzfeed/solid",
   "license": "see repository",
@@ -26,8 +26,8 @@
   ],
   "tokens": {
     "colors": 48,
-    "typography": 1,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 108,
+    "stars": 137,
+    "forks": 28,
+    "npmDownloads": 0,
+    "score": 137,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

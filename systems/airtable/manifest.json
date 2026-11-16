@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 14,
     "typography": 10,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/Airtable/blocks",
+    "package": "@airtable/blocks"
+  },
+  "popularity": {
+    "rank": 93,
+    "stars": 273,
+    "forks": 86,
+    "npmDownloads": 286825,
+    "score": 8774,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

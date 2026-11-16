@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Ant Design
-description: "Ant Design — enterprise UI design language from Ant Group."
+description: "Enterprise React workbench, signature Daybreak Blue scale and dense controls"
 colors:
   primary-next-btn-hover-bg: "rgb(240,240,240)"
   solid-text-color: "#fff"
@@ -42,79 +42,132 @@ colors:
   default-border-color-disabled: "#d9d9d9"
   default-hover-border-color: "#4096ff"
   default-active-border-color: "#0958d9"
-  node-selected-bg: "#e6f4ff"
+  color-primary: "#1677ff"
+  color-success: "#52c41a"
+  color-warning: "#faad14"
+  color-error: "#ff4d4f"
+  color-info: "#1677ff"
+  background-color: "#fff"
+  color-white: "#fff"
   directory-node-selected-color: "#fff"
-  directory-node-selected-bg: "#1677ff"
   default-bg: "#f5f5f5"
-  ink-bar-color: "#1677ff"
   item-selected-color: "#1677ff"
-  item-hover-color: "#4096ff"
   item-active-color: "#0958d9"
-  header-bg: "#fafafa"
   header-sort-active-bg: "#f0f0f0"
-  header-sort-hover-bg: "#f0f0f0"
   body-sort-bg: "#fafafa"
-  row-hover-bg: "#fafafa"
   row-selected-bg: "#e6f4ff"
-  row-selected-hover-bg: "#bae0ff"
   footer-bg: "#fafafa"
-  header-split-color: "#f0f0f0"
   fixed-header-sort-active-bg: "#f0f0f0"
-  filter-dropdown-menu-bg: "#ffffff"
   filter-dropdown-bg: "#ffffff"
-  expand-icon-bg: "#ffffff"
   handle-bg: "#fff"
-  wait-icon-bg-color: "#ffffff"
   finish-icon-bg-color: "#ffffff"
-  track-bg: "#91caff"
   track-hover-bg: "#69b1ff"
-  handle-color: "#91caff"
   handle-active-color: "#1677ff"
-  option-selected-bg: "#e6f4ff"
   selector-bg: "#ffffff"
-  clear-bg: "#ffffff"
   item-selected-bg: "#ffffff"
-  star-color: "#fadb14"
   button-solid-checked-color: "#fff"
-  button-solid-checked-bg: "#1677ff"
   button-solid-checked-hover-bg: "#4096ff"
-  button-solid-checked-active-bg: "#0958d9"
   button-bg: "#ffffff"
-  button-checked-bg: "#ffffff"
   radio-color: "#1677ff"
-  radio-bg-color: "#ffffff"
   item-bg: "#ffffff"
-  item-active-color-hover: "#4096ff"
   item-input-bg: "#ffffff"
-  hover-bg: "#ffffff"
   active-bg: "#ffffff"
-  content-bg: "#ffffff"
   horizontal-item-hover-color: "#1677ff"
-  sub-menu-item-selected-color: "#1677ff"
   horizontal-item-selected-color: "#1677ff"
-  color-item-bg: "#ffffff"
-  primary: "rgb(240,240,240)"
+  color-item-bg-selected: "#e6f4ff"
+  dark-item-bg: "#001529"
+  dark-sub-menu-item-bg: "#000c17"
+  dark-item-selected-bg: "#1677ff"
+  color-bg-header: "#001529"
+  color-bg-trigger: "#002140"
+  sider-bg: "#001529"
+  trigger-color: "#fff"
+  light-trigger-bg: "#ffffff"
+  handle-hover-color: "#1677ff"
+  cell-active-with-range-bg: "#e6f4ff"
+  actions-bg: "#ffffff"
+  full-panel-bg: "#ffffff"
+  default-hover-bg: "#ffffff"
+  default-active-bg: "#ffffff"
+  blue: "#1677FF"
+  cyan: "#13C2C2"
+  magenta: "#EB2F96"
+  red: "#F5222D"
+  primary: "#1677ff"
 typography:
-  index-family:
-    fontFamily: inherit
-  select-input-family:
-    fontFamily: inherit
-  mixins-family:
-    fontFamily: inherit
+  circle-text-font-size:
+    fontSize: 1em
+  circle-icon-font-size:
+    fontSize: 1.1666666666666667em
+  font-family:
+    fontFamily: "-apple-system, BlinkMacSystemFont"
+  html:
+    fontFamily: sans-serif
+    lineHeight: 1.15
+  font-size:
+    fontSize: "90%"
+components:
+  button-primary:
+    backgroundColor: "#1677ff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ff4d4f"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#1677ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#52c41a"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Ant Design
 
 ## Overview
 
-Ant Design — enterprise UI design language from Ant Group.
+Ant Financial Ant Design — tokens imported from antd.
 
-Tokens were read from `antd@6.7.0`, not from a marketing site: 91 colour tokens and 3 type tokens.
+Tokens were read from `antd@6.7.1`, not from a marketing site: 91 colour tokens and 5 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-Families declared in the package: `inherit`.
+Families declared in the source: `-apple-system, BlinkMacSystemFont`, `sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1677ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 5 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

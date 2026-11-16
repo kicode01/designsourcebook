@@ -1,28 +1,104 @@
 {
-  "canvas": "#edf8eb",
-  "surface": "#edf8eb",
+  "canvas": "#fff",
+  "surface": "#262626",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#e95420",
+  "brand": "#0f95a1",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
     {
+      "name": "color-x-light",
+      "value": "#fff"
+    },
+    {
+      "name": "color-light",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "color-mid-x-light",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-mid-light",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "color-mid",
+      "value": "#999"
+    },
+    {
+      "name": "color-mid-dark",
+      "value": "#666"
+    },
+    {
+      "name": "color-dark",
+      "value": "#111"
+    },
+    {
+      "name": "color-x-dark",
+      "value": "#000"
+    },
+    {
+      "name": "color-negative",
+      "value": "#c7162b"
+    },
+    {
+      "name": "color-caution",
+      "value": "#cc7900"
+    },
+    {
+      "name": "color-positive",
+      "value": "#0e8420"
+    },
+    {
+      "name": "color-information",
+      "value": "#24598f"
+    },
+    {
+      "name": "color-paper",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "color-negative-dark",
+      "value": "#a11223"
+    },
+    {
+      "name": "color-positive-dark",
+      "value": "#008013"
+    },
+    {
+      "name": "color-link",
+      "value": "#06c"
+    },
+    {
+      "name": "color-link-visited",
+      "value": "#7d42b8"
+    },
+    {
+      "name": "color-focus",
+      "value": "#2e96ff"
+    },
+    {
+      "name": "color-link-dark",
+      "value": "#69c"
+    },
+    {
+      "name": "color-link-visited-dark",
+      "value": "#a679d2"
+    },
+    {
+      "name": "color-focus-dark",
+      "value": "#9cf"
+    },
+    {
+      "name": "color-focus-positive",
+      "value": "#003008"
+    },
+    {
       "name": "color-label-validated",
       "value": "#006b75"
-    },
-    {
-      "name": "color-code-background",
-      "value": "rgba($color-x-dark, 0.03)"
-    },
-    {
-      "name": "color-code-background-dark",
-      "value": "rgba($color-x-light, 0.15)"
-    },
-    {
-      "name": "color-code-heading-background",
-      "value": "rgba($color-x-dark, 0.08)"
     },
     {
       "name": "color-positive-background",
@@ -61,8 +137,92 @@
       "value": "#f3d8d6"
     },
     {
+      "name": "colors-light-theme-text-default",
+      "value": "#000"
+    },
+    {
+      "name": "colors-light-theme-background-default",
+      "value": "#fff"
+    },
+    {
+      "name": "colors-light-theme-background-alt",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "colors-light-theme-border-high-contrast",
+      "value": "#707070"
+    },
+    {
+      "name": "colors-dark-theme-text-default",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "colors-dark-theme-text-hover",
+      "value": "hsl(0, 0%, 76%)"
+    },
+    {
+      "name": "colors-dark-theme-background-default",
+      "value": "#262626"
+    },
+    {
+      "name": "colors-dark-theme-background-alt",
+      "value": "#202020"
+    },
+    {
+      "name": "colors-dark-theme-background-inputs",
+      "value": "#2f2f2f"
+    },
+    {
+      "name": "colors-dark-theme-background-active",
+      "value": "#373737"
+    },
+    {
+      "name": "colors-dark-theme-background-hover",
+      "value": "#313131"
+    },
+    {
+      "name": "colors-dark-theme-border-high-contrast",
+      "value": "#939393"
+    },
+    {
+      "name": "colors-paper-theme-background-inputs",
+      "value": "#eaeaea"
+    },
+    {
+      "name": "colors-paper-theme-background-active",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "colors-paper-theme-background-hover",
+      "value": "#e7e7e7"
+    },
+    {
       "name": "color-ubuntu",
       "value": "#e95420"
+    },
+    {
+      "name": "color-accent",
+      "value": "#0f95a1"
+    },
+    {
+      "name": "color-accent-dark",
+      "value": "#70bbc2"
+    },
+    {
+      "name": "default",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "positive",
+      "value": "#62a36c"
+    },
+    {
+      "name": "caution",
+      "value": "#c48831"
+    },
+    {
+      "name": "negative",
+      "value": "#d17b85"
     },
     {
       "name": "hover",
@@ -73,12 +233,104 @@
       "value": "#e0f4dc"
     },
     {
+      "name": "baseline-color",
+      "value": "#f00"
+    },
+    {
       "name": "primary",
-      "value": "#e95420"
+      "value": "#0f95a1"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "\"Ubuntu variable\", Ubuntu, -apple-system, \"Segoe UI\", Roboto, Oxygen, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "notification-title",
+      "fontFamily": "\"Ubuntu variable\", Ubuntu, -apple-system, \"Segoe UI\", Roboto, Oxygen, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-base-family",
+      "fontFamily": "\"Ubuntu variable\", Ubuntu, -apple-system, \"Segoe UI\", Roboto, Oxygen, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-monospace",
+      "fontFamily": "\"Ubuntu Mono variable\", \"Ubuntu Mono\", Consolas, Monaco, Courier, monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0f95a1",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#262626",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#c7162b",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#262626",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#262626",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0f95a1",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#0e8420",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#262626",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Canonical Vanilla — an extensible Sass CSS framework by the Ubuntu Web Team.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#262626` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0f95a1` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Ubuntu variable` across 4 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

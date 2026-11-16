@@ -4,11 +4,11 @@
   "description": "Stark monochrome, futuristic minimalism",
   "style": "Stark monochrome, futuristic minimalism",
   "category": "AI & Machine Learning",
-  "theme": "light",
+  "theme": "dark",
   "tags": [
     "minimal",
     "ai",
-    "light"
+    "dark"
   ],
   "homepage": "https://x.ai",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 15,
     "typography": 6,
-    "components": 4
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,20 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/xai-org/grok-1"
+  },
+  "popularity": {
+    "rank": 160,
+    "stars": 52237,
+    "forks": 8533,
+    "npmDownloads": 0,
+    "score": 52237,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

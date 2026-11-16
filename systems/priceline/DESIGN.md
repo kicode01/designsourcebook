@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Priceline Design System
-description: "Priceline Priceline Design System — tokens read from https://github.com/priceline/design-system."
+description: "Crisp light (#e8f2ff) canvas, Montserrat typography, #ffa0c4 brand accent, and 8px corner geometry"
 colors:
   black: "#000"
   white: "#fff"
@@ -83,13 +83,90 @@ colors:
   lightest: "#fff"
   heading: "#003c8a"
   primary: "#ffa0c4"
+typography:
+  font-size-6:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 40px
+    fontWeight: 700
+    lineHeight: 1.2
+  font-size-5:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 32px
+    fontWeight: 700
+    lineHeight: 1.25
+  font-size-4:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 1.3
+  font-size-3:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 1.4
+  font-size-2:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  font-size-1:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.4
+  font-size-0:
+    fontFamily: "Montserrat, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 12px
+    fontWeight: 500
+    lineHeight: 1.35
+components:
+  button-primary:
+    backgroundColor: "#ffa0c4"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#e8f2ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#e8f2ff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ffa0c4"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#e8f2ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Priceline Design System
 
 ## Overview
 
-Priceline Priceline Design System — tokens read from https://github.com/priceline/design-system.
+Priceline Design System — tokens read from https://github.com/priceline/design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 80 colour tokens and 0 type tokens.
 
@@ -100,3 +177,10 @@ Tokens were read from the project's own repository, not from a marketing site: 8
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#e8f2ff) canvas paired with `#e8f2ff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ffa0c4` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Montserrat` across 7 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

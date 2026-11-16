@@ -1,0 +1,55 @@
+{
+  "name": "boosted",
+  "displayName": "Orange Boosted",
+  "description": "Orange Boosted — tokens imported from boosted.",
+  "style": "accessible telecom UI, HelvNeueOrange typography and bold #ff7900 accents",
+  "category": "Orange",
+  "org": "Orange",
+  "theme": "light",
+  "tags": [
+    "published",
+    "orange",
+    "light"
+  ],
+  "homepage": "https://boosted.orange.com/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from boosted@5.3.8 (4 token files, 196 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "boosted",
+    "version": "5.3.8",
+    "repo": "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 46,
+    "components": 14
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 97,
+    "stars": 225,
+    "forks": 61,
+    "npmDownloads": 34297,
+    "score": 2067,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

@@ -1,22 +1,23 @@
 {
   "name": "bento",
   "displayName": "Bento DS",
-  "description": "Bento Bento DS — tokens read from https://github.com/buildo/bento-design-system.",
-  "style": "Bento Bento DS — tokens read from https://github.com/buildo/bento-design-system.",
+  "description": "Bento DS — tokens read from https://github.com/buildo/bento-design-system.",
+  "style": "Crisp light (#FFFFFF) canvas, DM Sans typography, #242424 brand accent, and 8px corner geometry",
   "category": "Bento",
   "org": "Bento",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "bento"
+    "bento",
+    "light"
   ],
   "homepage": "https://github.com/buildo/bento-design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/buildo/bento-design-system — 4 token files, 75 colours harvested, 66 selected.",
   "source": {
-    "repo": "https://github.com/buildo/bento-design-system"
+    "repo": "https://github.com/buildo/bento-design-system",
+    "package": "@buildo/bento-design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 67,
     "typography": 1,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 106,
+    "stars": 147,
+    "forks": 20,
+    "npmDownloads": 484,
+    "score": 233,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

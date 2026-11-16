@@ -373,8 +373,90 @@
       "value": "#3366FF"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen.",
-  "dos": ""
+  "type": [
+    {
+      "name": "mono",
+      "fontFamily": "\"SF Mono\", Monaco, Inconsolata, \"Fira Mono\", \"Droid Sans Mono\", \"Source Code Pro\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"SF UI Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"SF UI Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#3366FF",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#F5F6F7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#D14343",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#F5F6F7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#F5F6F7",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#3366FF",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#52BD95",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#F5F6F7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Evergreen — Crisp light (#F9F9FB) canvas, SF Mono typography, #3366FF brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#F9F9FB) canvas paired with `#F5F6F7` component surfaces and `#425A70` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3366FF` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `SF Mono` across 3 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

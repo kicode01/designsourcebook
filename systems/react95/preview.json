@@ -1,12 +1,12 @@
 {
-  "canvas": "rgb(0,62,1090)",
-  "surface": "rgb(211,214,217)",
-  "text": "#f7f7f8",
-  "muted": "#f7f7f8",
+  "canvas": "rgb(255,255,255)",
+  "surface": "rgb(255,255,255)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
   "brand": "rgb(65,187,241)",
   "border": "rgb(211,214,217)",
-  "radius": "8px",
-  "ink": "#f7f7f8",
+  "radius": "0px",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "value-derived",
@@ -141,8 +141,122 @@
       "value": "rgb(65,187,241)"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "window-title",
+      "fontFamily": "\"ms_sans_serif\", Tahoma, \"Segoe UI\", sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "dialog-heading",
+      "fontFamily": "\"ms_sans_serif\", Tahoma, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"ms_sans_serif\", Tahoma, \"Segoe UI\", sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "button-label",
+      "fontFamily": "\"ms_sans_serif\", Tahoma, \"Segoe UI\", sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "dos-mono",
+      "fontFamily": "\"Fixedsys\", \"Courier New\", Courier, monospace",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "status-bar",
+      "fontFamily": "\"ms_sans_serif\", Tahoma, \"Segoe UI\", sans-serif",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "rgb(65,187,241)",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "rgb(255,255,255)",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "rgb(255,255,255)",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgb(65,187,241)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "rgb(255,255,255)",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "React95 — a component library inspired by the Windows 95 interface.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (rgb(255,255,255)) canvas paired with `rgb(255,255,255)` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(65,187,241)` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `ms_sans_serif` across 6 type steps.\n- **Component Geometry**: Buttons (`0px`), cards (`0px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

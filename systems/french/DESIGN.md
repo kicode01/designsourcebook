@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: French Government Design System
-description: "French French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr."
+description: "Crisp light (#fff) canvas, Marianne typography, #ff732c brand accent, and 4px corner geometry"
 colors:
   info-75: "#171d2e"
   info-100: "#1d2437"
@@ -94,13 +94,175 @@ colors:
   beige-gris-galet-75: "#211d19"
   beige-gris-galet-925: "#eee4d9"
   primary: "#ff732c"
+typography:
+  h6:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+  h5:
+    fontSize: 1.25rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  h4:
+    fontSize: 1.375rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  h3:
+    fontSize: 1.5rem
+    fontWeight: 700
+    lineHeight: 2rem
+  h2:
+    fontSize: 1.75rem
+    fontWeight: 700
+    lineHeight: 2.25rem
+  h1:
+    fontSize: 2rem
+    fontWeight: 700
+    lineHeight: 2.5rem
+  fr-display-xs:
+    fontSize: 2.5rem
+    fontWeight: 700
+    lineHeight: 3rem
+  fr-display-sm:
+    fontSize: 3rem
+    fontWeight: 700
+    lineHeight: 3.5rem
+  fr-display-md:
+    fontSize: 3.5rem
+    fontWeight: 700
+    lineHeight: 4rem
+  fr-display-lg:
+    fontSize: 4rem
+    fontWeight: 700
+    lineHeight: 4.5rem
+  fr-display-xl:
+    fontSize: 4.5rem
+    fontWeight: 700
+    lineHeight: 5rem
+  fr-text-lead:
+    fontSize: 1.25rem
+    lineHeight: 2rem
+  body:
+    fontFamily: "Marianne, arial, sans-serif"
+    fontSize: 1rem
+    lineHeight: 1.5rem
+  fr-alert-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+  fr-btn-display:
+    fontSize: 1rem
+    lineHeight: 1.5rem
+  fr-callout-title:
+    fontSize: 1.375rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  fr-card-title:
+    fontSize: 1.25rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  fr-stepper-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+  fr-links-group-title:
+    fontSize: 1.375rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  fr-sidemenu-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  fr-summary-title:
+    fontSize: 0.75rem
+    fontWeight: 700
+    lineHeight: 1.25rem
+  fr-downloads-group-title:
+    fontSize: 1.375rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  fr-content-media-caption:
+    fontSize: 0.75rem
+    lineHeight: 1.25rem
+  fr-modal-title:
+    fontSize: 1.375rem
+    fontWeight: 700
+    lineHeight: 1.75rem
+  fr-share-title:
+    fontSize: 1rem
+    lineHeight: 1.5rem
+  fr-footer-partners-title:
+    fontSize: 0.875rem
+    fontWeight: 400
+    lineHeight: 1.5rem
+  fr-tile-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+  fr-consent-banner-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+  fr-consent-service-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+  fr-table-caption-desc:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5rem
+  fr-header-service-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.5rem
+components:
+  button-primary:
+    backgroundColor: "#ff732c"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#301717"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ff732c"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#142117"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 16px
 ---
 
 # French Government Design System
 
 ## Overview
 
-French French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.
+French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +273,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff732c` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Marianne` across 31 type steps.
+- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

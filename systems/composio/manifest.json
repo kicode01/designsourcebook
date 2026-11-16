@@ -6,8 +6,8 @@
   "category": "Infrastructure & Cloud",
   "theme": "dark",
   "tags": [
-    "dark",
-    "infrastructure"
+    "infrastructure",
+    "dark"
   ],
   "homepage": "https://composio.dev",
   "license": "proprietary",
@@ -22,15 +22,30 @@
   "tokens": {
     "colors": 19,
     "typography": 19,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/ComposioHQ/composio"
+  },
+  "popularity": {
+    "rank": 165,
+    "stars": 31108,
+    "forks": 4954,
+    "npmDownloads": 0,
+    "score": 31108,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

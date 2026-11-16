@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#ff0000",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -77,8 +77,146 @@
       "value": "#ff0000"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "Shadcn/ui Shadcn/ui — tokens read from https://github.com/shadcn-ui/ui.",
-  "dos": ""
+  "type": [
+    {
+      "name": "display-4xl",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.11
+    },
+    {
+      "name": "heading-3xl",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "heading-2xl",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "heading-xl",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "heading-lg",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.55
+    },
+    {
+      "name": "body",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "code-mono",
+      "fontFamily": "\"Geist Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "muted-sm",
+      "fontFamily": "Geist, Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#ff0000",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff0000",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Shadcn/ui — Crisp light (#ffffff) canvas, Geist typography, #ff0000 brand accent, and 6px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff0000` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Geist` across 9 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

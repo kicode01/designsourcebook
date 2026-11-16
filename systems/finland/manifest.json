@@ -1,22 +1,22 @@
 {
   "name": "finland",
   "displayName": "Finland Toolbox",
-  "description": "Finland Finland Toolbox — read from toolbox.finland.fi's live stylesheets, not a published token package.",
-  "style": "Finland Finland Toolbox — read from toolbox.finland.fi's live stylesheets, not a published token package.",
+  "description": "Finland Toolbox — read from toolbox.finland.fi's live stylesheets, not a published token package.",
+  "style": "Nordic civic design toolbox, deep navy blue on high-contrast white canvas",
   "category": "Finland",
   "org": "Finland",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "finland"
+    "observed",
+    "finland",
+    "light"
   ],
   "homepage": "https://toolbox.finland.fi/",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://toolbox.finland.fi/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://toolbox.finland.fi/"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,9 +25,9 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 25,
-    "typography": 6,
-    "components": 8
+    "colors": 28,
+    "typography": 21,
+    "components": 9
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 185,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

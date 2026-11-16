@@ -1,22 +1,23 @@
 {
   "name": "material",
   "displayName": "Material Minimal",
-  "description": "Material Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.",
-  "style": "Material Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.",
+  "description": "Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.",
+  "style": "Dark (#424242) canvas, system-ui typography, #fff brand accent, and 8px corner geometry",
   "category": "Material",
   "org": "Material",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "material"
+    "material",
+    "dark"
   ],
   "homepage": "https://github.com/mdbootstrap/mdb-ui-kit",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/mdbootstrap/mdb-ui-kit — 6 token files, 444 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/mdbootstrap/mdb-ui-kit"
+    "repo": "https://github.com/mdbootstrap/mdb-ui-kit",
+    "package": "mdb-ui-kit"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,31 @@
   ],
   "tokens": {
     "colors": 90,
-    "typography": 44,
-    "components": 22
+    "typography": 53,
+    "components": 23
   },
   "checks": {
     "errors": 0,
-    "warnings": 2,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 13,
+    "stars": 24235,
+    "forks": 3423,
+    "npmDownloads": 31172,
+    "score": 25955,
+    "frameworks": [
+      "css",
+      "react",
+      "vue",
+      "angular"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

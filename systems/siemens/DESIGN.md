@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Siemens iX
-description: "Siemens Siemens iX — tokens read from https://github.com/siemens/ix."
+description: "Dark (#2D2D45) canvas, Courier New typography, #00eaff brand accent, and 8px corner geometry"
 colors:
   si-ref-color-data-brand-300: "#00eaff"
   si-ref-color-data-brand-600: "#00bdda"
@@ -108,14 +108,11 @@ typography:
   font-size-xl:
     fontSize: 1.375rem
   si-ref-typography-font-family-mono:
-    fontFamily: "Courier New', monospace"
+    fontFamily: "\"Courier New\", monospace"
   si-ref-typography-font-family-sans:
     fontFamily: "Arial, helvetica, sans-serif"
   theme-font-family:
-    fontFamily: "SiemensSans Pro VF', 'SiemensSans Pro', helvetica,
-    arial, sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji"
+    fontFamily: "\"SiemensSans Pro VF\", \"SiemensSans Pro\", helvetica"
   ix-badge-tooltip-font-size:
     fontSize: 0.875rem
   ix-date-picker-dropdown-font-size:
@@ -124,13 +121,54 @@ typography:
     fontSize: 10px
   ix-upload-loader-font-size:
     fontSize: 0.937rem
+components:
+  button-primary:
+    backgroundColor: "#00eaff"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#FFFFFF"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ff2626"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#2D2D45"
+    textColor: "#FFFFFF"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#2D2D45"
+    textColor: "#FFFFFF"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#00eaff"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#376f1c"
+    textColor: "#FFFFFF"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#2D2D45"
+    textColor: "#FFFFFF"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Siemens iX
 
 ## Overview
 
-Siemens Siemens iX — tokens read from https://github.com/siemens/ix.
+Siemens iX — tokens read from https://github.com/siemens/ix.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 13 type tokens.
 
@@ -144,3 +182,10 @@ Families declared in the source: `Courier New', monospace`, `Arial, helvetica, s
     arial, sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
     'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#2D2D45) canvas paired with `#2D2D45` component surfaces and `#FFFFFF` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00eaff` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Courier New` across 13 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

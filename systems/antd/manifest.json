@@ -1,25 +1,24 @@
 {
   "name": "antd",
   "displayName": "Ant Design",
-  "description": "Ant Design — enterprise UI design language from Ant Group.",
-  "style": "Ant Design — enterprise UI design language from Ant Group.",
+  "description": "Ant Financial Ant Design — tokens imported from antd.",
+  "style": "Enterprise React workbench, signature Daybreak Blue scale and dense controls",
   "category": "Ant Financial",
   "org": "Ant Financial",
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "ant-financial",
-    "enterprise"
+    "light"
   ],
   "homepage": "https://ant.design",
   "license": "MIT",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from antd@6.7.0 (1 token files, 201 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from antd@6.7.1 (9 token files, 227 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "antd",
-    "version": "6.7.0",
-    "extra": []
+    "version": "6.7.1",
+    "repo": "https://github.com/ant-design/ant-design"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -29,8 +28,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 3,
-    "components": 0
+    "typography": 5,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -40,5 +39,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 3,
+    "stars": 100232,
+    "forks": 54632,
+    "npmDownloads": 19262875,
+    "score": 276024,
+    "frameworks": [
+      "react",
+      "vue",
+      "angular"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 15
   }
 }

@@ -123,6 +123,31 @@ components:
     backgroundColor: "#101010"
     textColor: "#f2f2f2"
     rounded: 8px
+  input-default:
+    backgroundColor: "#101010"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#101010"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#818cf8"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#008b00"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#101010"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: VoltAgent

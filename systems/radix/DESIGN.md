@@ -94,6 +94,56 @@ colors:
   teal-9: "#12a594"
   tomato-5: "#5e1c16"
   primary: "#ffc53d"
+typography:
+  default-font-family:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI (Custom)\", Roboto, \"Helvetica Neue\", \"Open Sans (Custom)\", system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\""
+  code-font-family:
+    fontFamily: "Menlo, \"Consolas (Custom)\", \"Bitstream Vera Sans Mono\", monospace, \"Apple Color Emoji\", \"Segoe UI Emoji\""
+  em-font-family:
+    fontFamily: "\"Times New Roman\", Times, serif"
+  quote-font-family:
+    fontFamily: "\"Times New Roman\", Times, serif"
+components:
+  button-primary:
+    backgroundColor: "#ffc53d"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#e93d82"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#111111"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#111111"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ffc53d"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#111111"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Radix
@@ -111,3 +161,10 @@ Tokens were read from `@radix-ui/colors@3.0.0`, not from a marketing site: 91 co
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#111111) canvas paired with `#111111` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ffc53d` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

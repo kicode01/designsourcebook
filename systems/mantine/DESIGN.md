@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Mantine
-description: "Mantine Mantine — tokens read from https://github.com/mantinedev/mantine."
+description: "Crisp light (#ffffff) canvas, -apple-system typography, #fd8c73 brand accent, and 8px corner geometry"
 colors:
   colors-active-border: "#fd8c73"
   colors-background: "#ffffff"
@@ -97,8 +97,6 @@ colors:
 typography:
   docs-font-size:
     fontSize: 16px
-  input-font-family:
-    fontFamily: "var(--mantine-font-family-monospace)"
   switch-label-font-size-xs:
     fontSize: 5px
   switch-label-font-size-sm:
@@ -109,47 +107,62 @@ typography:
     fontSize: 9px
   switch-label-font-size-xl:
     fontSize: 11px
-  mantine-font-size-xs:
-    fontSize: "calc(0.75rem * var(--mantine-scale))"
-  mantine-font-size-sm:
-    fontSize: "calc(0.875rem * var(--mantine-scale))"
-  mantine-font-size-md:
-    fontSize: "calc(1rem * var(--mantine-scale))"
-  mantine-font-size-lg:
-    fontSize: "calc(1.125rem * var(--mantine-scale))"
-  mantine-font-size-xl:
-    fontSize: "calc(1.25rem * var(--mantine-scale))"
-  mantine-h1-font-size:
-    fontSize: "calc(2.125rem * var(--mantine-scale))"
-  mantine-h2-font-size:
-    fontSize: "calc(1.625rem * var(--mantine-scale))"
-  mantine-h3-font-size:
-    fontSize: "calc(1.375rem * var(--mantine-scale))"
-  mantine-h4-font-size:
-    fontSize: "calc(1.125rem * var(--mantine-scale))"
-  mantine-h5-font-size:
-    fontSize: "calc(1rem * var(--mantine-scale))"
-  mantine-h6-font-size:
-    fontSize: "calc(0.875rem * var(--mantine-scale))"
   mantine-font-family:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
   mantine-font-family-monospace:
-    fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace"
+    fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
   mantine-font-family-headings:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
   mobile-month-view-font-size:
     fontSize: "clamp(6px, 3.5cqw, 22px)"
-  year-view-font-size:
-    fontSize: "calc(var(--mantine-font-size-xs) - 2px)"
+components:
+  button-primary:
+    backgroundColor: "#fd8c73"
+    textColor: "#0a3069"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#cf222e"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#fd8c73"
+    textColor: "#0a3069"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Mantine
 
 ## Overview
 
-Mantine Mantine — tokens read from https://github.com/mantinedev/mantine.
+Mantine — tokens read from https://github.com/mantinedev/mantine.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 23 type tokens.
 
@@ -161,3 +174,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 
 Families declared in the source: `var(--mantine-font-family-monospace)`, `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
     Apple Color Emoji, Segoe UI Emoji`, `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0a3069` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fd8c73` with `#0a3069` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 10 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

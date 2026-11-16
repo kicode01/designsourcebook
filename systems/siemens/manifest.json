@@ -1,22 +1,23 @@
 {
   "name": "siemens",
   "displayName": "Siemens iX",
-  "description": "Siemens Siemens iX — tokens read from https://github.com/siemens/ix.",
-  "style": "Siemens Siemens iX — tokens read from https://github.com/siemens/ix.",
+  "description": "Siemens iX — tokens read from https://github.com/siemens/ix.",
+  "style": "Dark (#2D2D45) canvas, Courier New typography, #00eaff brand accent, and 8px corner geometry",
   "category": "Siemens",
   "org": "Siemens",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "siemens"
+    "siemens",
+    "dark"
   ],
   "homepage": "https://github.com/siemens/ix",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/siemens/ix — 23 token files, 415 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/siemens/ix"
+    "repo": "https://github.com/siemens/ix",
+    "package": "@siemens/ix"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 91,
     "typography": 13,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,20 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 83,
+    "stars": 394,
+    "forks": 153,
+    "npmDownloads": 0,
+    "score": 394,
+    "frameworks": [
+      "web-components",
+      "react",
+      "angular",
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

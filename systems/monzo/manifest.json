@@ -1,22 +1,23 @@
 {
   "name": "monzo",
   "displayName": "Monzo Tone of Voice",
-  "description": "Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.",
-  "style": "Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.",
+  "description": "Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.",
+  "style": "Hot coral banking cards, MonzoSans typography on deep navy and mint-grey surfaces",
   "category": "Monzo",
   "org": "Monzo",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "monzo"
+    "observed",
+    "monzo",
+    "light"
   ],
   "homepage": "https://monzo.com/tone-of-voice/",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://monzo.com/tone-of-voice/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://monzo.com/tone-of-voice/",
+    "repo": "https://github.com/monzo/response"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,15 +28,27 @@
   "tokens": {
     "colors": 63,
     "typography": 18,
-    "components": 33
+    "components": 29
   },
   "checks": {
     "errors": 0,
-    "warnings": 2,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 197,
+    "stars": 1259,
+    "forks": 68,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

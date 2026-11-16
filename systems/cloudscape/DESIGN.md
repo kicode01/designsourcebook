@@ -94,6 +94,76 @@ colors:
   color-charts-palette-categorical-31: "#1f3191"
   color-charts-palette-categorical-44: "#59309d"
   primary: "#002b66"
+typography:
+  font-family-base:
+    fontFamily: "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif"
+  font-family-display:
+    fontFamily: "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif"
+  font-family-heading:
+    fontFamily: "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif"
+  font-family-monospace:
+    fontFamily: "Monaco, Menlo, Consolas, \"Courier Prime\", Courier, \"Courier New\", monospace"
+  font-size-body-m:
+    fontSize: 14px
+  font-size-body-s:
+    fontSize: 12px
+  font-size-display-l:
+    fontSize: 42px
+  font-size-display-xl:
+    fontSize: 64px
+  font-size-heading-l:
+    fontSize: 20px
+  font-size-heading-m:
+    fontSize: 18px
+  font-size-heading-s:
+    fontSize: 16px
+  font-size-heading-xl:
+    fontSize: 24px
+  font-size-heading-xs:
+    fontSize: 14px
+  font-size-tabs:
+    fontSize: 16px
+components:
+  button-primary:
+    backgroundColor: "#002b66"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#db0000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#002b66"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#00802f"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Cloudscape
@@ -102,12 +172,19 @@ colors:
 
 Amazon Cloudscape — the design system for AWS console experiences.
 
-Tokens were read from `@cloudscape-design/design-tokens@3.0.117`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@cloudscape-design/design-tokens@3.0.118`, not from a marketing site: 91 colour tokens and 14 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `"Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif`, `Monaco, Menlo, Consolas, "Courier Prime", Courier, "Courier New", monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002b66` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 14 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

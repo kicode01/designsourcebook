@@ -26,99 +26,99 @@ colors:
   primary: "#000000"
 typography:
   display-hero:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 56px
     fontWeight: 600
     lineHeight: 1.07
     letterSpacing: "-0.28px"
   section-heading:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 40px
     fontWeight: 600
     lineHeight: 1.1
   tile-heading:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.14
     letterSpacing: 0.196px
   card-title:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 21px
     fontWeight: 700
     lineHeight: 1.19
     letterSpacing: 0.231px
   sub-heading:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 21px
     fontWeight: 400
     lineHeight: 1.19
     letterSpacing: 0.231px
   nav-heading:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 34px
     fontWeight: 600
     lineHeight: 1.47
     letterSpacing: "-0.374px"
   sub-nav:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 24px
     fontWeight: 300
     lineHeight: 1.5
   body:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 17px
     fontWeight: 400
     lineHeight: 1.47
     letterSpacing: "-0.374px"
   body-emphasis:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 17px
     fontWeight: 600
     lineHeight: 1.24
     letterSpacing: "-0.374px"
   button-large:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 18px
     fontWeight: 300
     lineHeight: 1
   button:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 17px
     fontWeight: 400
     lineHeight: 2.41
   link:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
     letterSpacing: "-0.224px"
   caption:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.29
     letterSpacing: "-0.224px"
   caption-bold:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 14px
     fontWeight: 600
     lineHeight: 1.29
     letterSpacing: "-0.224px"
   micro:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
     letterSpacing: "-0.12px"
   micro-bold:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 12px
     fontWeight: 600
     lineHeight: 1.33
     letterSpacing: "-0.12px"
   nano:
-    fontFamily: SF Pro Display
+    fontFamily: "\"SF Pro Display\""
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.47
@@ -144,7 +144,32 @@ components:
     padding: 0px 14px
   button-media-control:
     backgroundColor: "rgba(210, 210, 215, 0.64)"
-    textColor: "rgba(0, 0, 0, 0.48)"
+    textColor: "#000000"
+  input-default:
+    backgroundColor: "#262628"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#262628"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#262628"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 10px 16px
 ---
 
 # Design System: Apple

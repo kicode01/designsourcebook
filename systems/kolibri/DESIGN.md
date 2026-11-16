@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: KoliBri
-description: "KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system."
+description: "Crisp light (#ffffff) canvas, system-ui typography, #f5f7ff brand accent, and 8px corner geometry"
 colors:
   primary-v-50: "#F5F7FF"
   primary-v-100: "#D9E1FD"
@@ -96,26 +96,67 @@ colors:
   primary: "#f5f7ff"
 typography:
   ui-input-label-font-size:
-    fontSize: "rem(15px) !default"
+    fontSize: 0.9375rem
   ui-input-text-font-size:
-    fontSize: "rem(16px) !default"
+    fontSize: 1rem
   ui-input-feedback-font-size:
-    fontSize: "rem(14px) !default"
+    fontSize: 0.875rem
   ui-button-font-size:
-    fontSize: "rem(14px) !default"
+    fontSize: 0.875rem
   ui-button-font-size-small:
-    fontSize: "rem(14px) !default"
+    fontSize: 0.875rem
   ui-button-font-size-large:
-    fontSize: "rem(16px) !default"
+    fontSize: 1rem
   ui-dropdown-item-font-size:
-    fontSize: "rem(15px) !default"
+    fontSize: 0.9375rem
+components:
+  button-primary:
+    backgroundColor: "#f5f7ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#d21e00"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#f5f7ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#00992e"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # KoliBri
 
 ## Overview
 
-KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.
+KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 7 type tokens.
 
@@ -126,3 +167,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f5f7ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 7 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

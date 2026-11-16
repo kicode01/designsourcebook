@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Buildit Gravity
-description: undefined
+description: "Buildit Gravity — UI pattern library and design tokens by Wipro Digital Buildit."
 colors:
   100: "#ffffff"
   neutral: "#000000"
@@ -75,21 +75,66 @@ colors:
   grav-co-grp-b-accent-success: "#000"
   grav-co-grp-b-accent-attention: "#000"
   grav-co-grp-b-accent-danger: "#cc1e42"
-  primary: "#000000"
+  primary: "#0060ff"
 typography:
   grav-font-size-smallest-viewport:
     fontSize: 1rem
   grav-font-size-largest-viewport:
     fontSize: 1.25rem
+  grav-font-family-primary:
+    fontFamily: "\"Helvetica Neue\""
+  grav-font-family-mono:
+    fontFamily: "\"Wipro Akkurat Mono TT\""
+components:
+  button-primary:
+    backgroundColor: "#0060ff"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#cc1e42"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0060ff"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Buildit Gravity
 
 ## Overview
 
-undefined
+Buildit Gravity — UI pattern library and design tokens by Wipro Digital Buildit.
 
-Tokens were read from `@buildit/gravity-ui-web@3.4.0`, not from a marketing site: 73 colour tokens and 2 type tokens.
+Tokens were read from `@buildit/gravity-ui-web@3.4.0`, not from a marketing site: 73 colour tokens and 4 type tokens.
 
 ## Colors
 
@@ -97,4 +142,11 @@ Tokens were read from `@buildit/gravity-ui-web@3.4.0`, not from a marketing site
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+Families declared in the source: `"Helvetica Neue"`, `"Wipro Akkurat Mono TT"`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0060ff` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Helvetica Neue` across 4 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

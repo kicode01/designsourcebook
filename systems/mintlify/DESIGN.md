@@ -153,6 +153,16 @@ components:
     textColor: "#0d0d0d"
     rounded: 9999px
     padding: 0px 12px
+  badge-brand:
+    backgroundColor: "#0d0d0d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # Design System: Mintlify
@@ -464,3 +474,10 @@ What distinguishes Mintlify from other documentation platforms is its atmospheri
 6. Geist Mono uppercase for technical labels, Inter for everything else
 7. Section padding is generous: 64px–96px on desktop, 48px on mobile
 8. No gray background sections — white throughout, separation through borders and whitespace
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0d0d0d` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 16 type steps.
+- **Component Geometry**: Buttons (`9999px`), cards (`9999px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

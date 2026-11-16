@@ -3,14 +3,14 @@
   "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#18171d",
+  "brand": "#fc6d26",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": ".25rem",
   "ink": "#0b0b0c",
   "palette": [
     {
-      "name": "0",
-      "value": "#fff"
+      "name": "10",
+      "value": "#f7f7f5"
     },
     {
       "name": "gl-border-color-default",
@@ -245,63 +245,67 @@
       "value": "#fc6d26"
     },
     {
-      "name": "neutral",
-      "value": "#3a383d"
+      "name": "focus",
+      "value": "#8a8888"
     },
     {
       "name": "primary",
-      "value": "#18171d"
+      "value": "#fc6d26"
     },
     {
       "name": "hex",
       "value": "#e8f2fd"
     },
     {
-      "name": "gl-color-data-green-200",
-      "value": "#b0d97b"
+      "name": "gl-color-data-green-100",
+      "value": "#c6ed94"
     },
     {
-      "name": "gl-color-data-aqua-500",
-      "value": "#0090b1"
+      "name": "gl-color-data-aqua-300",
+      "value": "#32c5d2"
     },
     {
-      "name": "gl-color-data-blue-800",
-      "value": "#374291"
+      "name": "gl-color-data-blue-500",
+      "value": "#617ae2"
     },
     {
-      "name": "gl-color-data-orange-50",
-      "value": "#fae8d1"
+      "name": "gl-color-data-magenta-700",
+      "value": "#9a2e5d"
     },
     {
-      "name": "gl-color-green-300",
-      "value": "#35b597"
+      "name": "gl-color-data-orange-900",
+      "value": "#5e2f05"
     },
     {
-      "name": "gl-color-orange-600",
-      "value": "#b34013"
+      "name": "gl-color-orange-50",
+      "value": "#fdf0d5"
     },
     {
-      "name": "gl-color-purple-900",
-      "value": "#362676"
+      "name": "gl-color-purple-200",
+      "value": "#c9beef"
     },
     {
-      "name": "gl-badge-muted-icon-color-hover",
-      "value": "#18171d"
+      "name": "gl-color-red-400",
+      "value": "#f15168"
     },
     {
-      "name": "gl-broadcast-banner-icon-color-lightred",
-      "value": "#fff"
+      "name": "gl-breadcrumb-separator-color",
+      "value": "#8a8888"
     },
     {
-      "name": "gl-chart-zoom-handle-color",
-      "value": "#c1bfbe"
+      "name": "gl-button-default-tertiary-foreground-color-active",
+      "value": "#ecebea"
     },
     {
-      "name": "gl-illustration-isometric-object-front-fill-color",
-      "value": "#a54623"
+      "name": "gl-dropdown-option-indicator-color-selected-hover",
+      "value": "#f7f7f5"
     },
     {
-      "name": "gl-nav-item-selected-foreground-color-default",
+      "name": "gl-illustration-isometric-object-highlight-fill-colo",
+      "value": "#423f4f"
+    },
+    {
+      "name": "gl-nav-item-selected-foreground-color-hover",
       "value": "#fff"
     },
     {
@@ -309,188 +313,244 @@
       "value": "#f7f7f5"
     },
     {
-      "name": "data-viz-green-400",
-      "value": "#4e7f0e"
+      "name": "data-viz-green-300",
+      "value": "#366800"
     },
     {
-      "name": "data-viz-aqua-700",
-      "value": "#32c5d2"
+      "name": "data-viz-aqua-500",
+      "value": "#0090b1"
     },
     {
-      "name": "data-viz-blue-950",
-      "value": "#e9ebff"
+      "name": "data-viz-blue-700",
+      "value": "#97acff"
     },
     {
-      "name": "data-viz-orange-200",
-      "value": "#6f3500"
+      "name": "data-viz-magenta-900",
+      "value": "#ffccdb"
     },
     {
-      "name": "blue-300",
-      "value": "#2566b5"
+      "name": "black",
+      "value": "#fff"
     },
     {
-      "name": "gray-500",
-      "value": "#8a8888"
-    },
-    {
-      "name": "green-800",
-      "value": "#bee6d0"
-    },
-    {
-      "name": "purple-50",
-      "value": "#291a5c"
-    },
-    {
-      "name": "red-300",
-      "value": "#c52042"
-    },
-    {
-      "name": "gl-action-strong-confirm-foreground-color-default",
+      "name": "gray-10",
       "value": "#18171d"
     },
     {
-      "name": "gl-heading-6-color",
+      "name": "green-100",
+      "value": "#075048"
+    },
+    {
+      "name": "orange-300",
+      "value": "#b34013"
+    },
+    {
+      "name": "purple-500",
+      "value": "#7862c8"
+    },
+    {
+      "name": "red-700",
+      "value": "#ffafb8"
+    },
+    {
+      "name": "gl-control-placeholder-color",
+      "value": "#8a8888"
+    },
+    {
+      "name": "gl-heading-scale-200-color",
       "value": "#fff"
     },
     {
-      "name": "gl-heading-scale-600-fixed-color",
+      "name": "gl-heading-scale-700-fixed-color",
       "value": "#fff"
     },
     {
-      "name": "01",
-      "value": "#d1d0d3"
-    },
-    {
-      "name": "heading",
-      "value": "#fff"
-    },
-    {
-      "name": "lightred",
-      "value": "#ad4a3b"
+      "name": "01p",
+      "value": "#fca326"
     }
   ],
   "type": [
     {
-      "name": "font-size-800-fixed",
-      "fontFamily": "system-ui",
+      "name": "display",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem)",
+      "px": 36,
+      "fontWeight": 600,
+      "lineHeight": 1.125
+    },
+    {
+      "name": "gl-font-size-800",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.75rem,0.8611111111rem + 1.8518518519vw,2.25rem)",
+      "px": 36
+    },
+    {
+      "name": "1",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem)",
+      "px": 30,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "gl-font-size-700",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.5rem,0.8333333333rem + 1.3888888889vw,1.875rem)",
+      "px": 30
+    },
+    {
+      "name": "gl-font-size-800-fixed",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.75rem",
       "px": 28
     },
     {
+      "name": "font-size-800-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "2",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem)",
+      "px": 25,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "gl-font-size-600",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.3125rem,0.8680555556rem + 0.9259259259vw,1.5625rem)",
+      "px": 25
+    },
+    {
       "name": "1-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.5rem",
       "px": 24,
       "fontWeight": 600,
       "lineHeight": 1.25
     },
     {
+      "name": "gl-font-size-700-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
       "name": "font-size-700-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "2-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.3125rem",
       "px": 21,
       "fontWeight": 600,
       "lineHeight": 1.25
     },
     {
-      "name": "font-size-600-fixed",
-      "fontFamily": "system-ui",
+      "name": "gl-font-size-600-fixed",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.3125rem",
       "px": 21
     },
     {
+      "name": "font-size-600-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "3",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "gl-font-size-500",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "clamp(1.125rem,0.9027777778rem + 0.462962963vw,1.25rem)",
+      "px": 20
+    },
+    {
       "name": "3-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.125rem",
       "px": 18,
       "fontWeight": 600,
       "lineHeight": 1.25
     },
     {
-      "name": "font-size-500-fixed",
-      "fontFamily": "system-ui",
+      "name": "gl-font-size-500-fixed",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
-      "name": "1",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.5rem, 0.8333333333rem + 1.3888888889vw, 1.875rem)",
-      "px": 16,
-      "fontWeight": 600,
-      "lineHeight": 1.25
-    },
-    {
-      "name": "2",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.3125rem, 0.8680555556rem + 0.9259259259vw, 1.5625rem)",
-      "px": 16,
-      "fontWeight": 600,
-      "lineHeight": 1.25
-    },
-    {
-      "name": "3",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.125rem, 0.9027777778rem + 0.462962963vw, 1.25rem)",
-      "px": 16,
-      "fontWeight": 600,
-      "lineHeight": 1.25
+      "name": "font-size-500-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
     },
     {
       "name": "4",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1rem",
       "px": 16,
       "fontWeight": 600,
       "lineHeight": 1.25
     },
     {
-      "name": "display",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.75rem, 0.8611111111rem + 1.8518518519vw, 2.25rem)",
+      "name": "4-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1rem",
       "px": 16,
       "fontWeight": 600,
-      "lineHeight": 1.125
+      "lineHeight": 1.25
+    },
+    {
+      "name": "gl-font-size-400",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "gl-font-size-400-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "1rem",
+      "px": 16
     },
     {
       "name": "font-family-regular",
-      "fontFamily": "GitLab Sans",
+      "fontFamily": "\"GitLab Sans\"",
       "px": 16
     },
     {
       "name": "font-family-monospace",
-      "fontFamily": "GitLab Mono",
+      "fontFamily": "\"GitLab Mono\"",
       "px": 16
     },
     {
-      "name": "4-fixed",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem",
-      "px": 16,
-      "fontWeight": 600,
-      "lineHeight": 1.25
-    },
-    {
       "name": "font-size-400",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "font-size-400-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "5",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.875rem",
       "px": 14,
       "fontWeight": 600,
@@ -498,27 +558,39 @@
     },
     {
       "name": "5-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.875rem",
       "px": 14,
       "fontWeight": 600,
       "lineHeight": 1.25
     },
     {
+      "name": "gl-font-size-300",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "gl-font-size-300-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
       "name": "font-size-300",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "font-size-300-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "6",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.8125rem",
       "px": 13,
       "fontWeight": 600,
@@ -526,44 +598,234 @@
     },
     {
       "name": "6-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.8125rem",
       "px": 13,
       "fontWeight": 600,
       "lineHeight": 1.25
     },
     {
+      "name": "gl-font-size-200",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "gl-font-size-200-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
       "name": "font-size-200",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.8125rem",
       "px": 13
     },
     {
       "name": "font-size-200-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.8125rem",
       "px": 13
     },
     {
+      "name": "gl-font-size-100",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "gl-font-size-100-fixed",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
       "name": "font-size-100",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "font-size-100-fixed",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
+      "name": "gl-font-size-xs",
+      "fontFamily": "\"GitLab Sans\"",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
       "name": "font-size-xs",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"GitLab Sans\"",
       "fontSize": "0.625rem",
       "px": 10
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#3a383d",
+      "rounded": ".25rem",
+      "padding": ".375rem .75rem",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": ".25rem",
+      "border": "1px solid #dcdbd9"
+    },
+    {
+      "key": "table",
+      "kind": "nav",
+      "backgroundColor": "transparent",
+      "textColor": "#3a383d"
+    },
+    {
+      "key": "btn-info-2",
+      "kind": "button",
+      "backgroundColor": "#1f73ca",
+      "textColor": "#fff",
+      "border": "1px solid #1f73ca"
+    },
+    {
+      "key": "btn-dark-3",
+      "kind": "button",
+      "backgroundColor": "#3a383d",
+      "textColor": "#fff",
+      "border": "1px solid #3a383d"
+    },
+    {
+      "key": "btn-link-4",
+      "kind": "button",
+      "textColor": "#007bff"
+    },
+    {
+      "key": "btn-light-5",
+      "kind": "button",
+      "backgroundColor": "#dcdbd9",
+      "textColor": "#28272d",
+      "border": "1px solid #dcdbd9"
+    },
+    {
+      "key": "table-info-2",
+      "kind": "nav",
+      "backgroundColor": "#c0d8f0"
+    },
+    {
+      "key": "table-dark-3",
+      "kind": "nav",
+      "backgroundColor": "#c8c7c9",
+      "textColor": "#0b0b0c"
+    },
+    {
+      "key": "btn-danger-6",
+      "kind": "button",
+      "backgroundColor": "#c52042",
+      "textColor": "#fff",
+      "border": "1px solid #c52042"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "#1f73ca",
+      "textColor": "#fff"
+    },
+    {
+      "key": "badge-dark-2",
+      "kind": "badge",
+      "backgroundColor": "#3a383d",
+      "textColor": "#fff"
+    },
+    {
+      "key": "alert-info",
+      "kind": "card",
+      "backgroundColor": "#d2e3f4",
+      "textColor": "#133e6d",
+      "border": "1px solid #c0d8f0"
+    },
+    {
+      "key": "alert-dark-2",
+      "kind": "card",
+      "backgroundColor": "#d8d7d8",
+      "textColor": "#211f24",
+      "border": "1px solid #c8c7c9"
+    },
+    {
+      "key": "table-light-4",
+      "kind": "nav",
+      "backgroundColor": "#f5f5f4"
+    },
+    {
+      "key": "card-header-2",
+      "kind": "nav",
+      "backgroundColor": "#f7f7f5",
+      "padding": ".75rem 1.25rem"
+    },
+    {
+      "key": "card-footer-3",
+      "kind": "card",
+      "backgroundColor": "#f7f7f5",
+      "padding": ".75rem 1.25rem"
+    },
+    {
+      "key": "badge-light-3",
+      "kind": "badge",
+      "backgroundColor": "#dcdbd9",
+      "textColor": "#28272d"
+    },
+    {
+      "key": "alert-light-3",
+      "kind": "card",
+      "backgroundColor": "#f8f8f7",
+      "textColor": "#0b0b0c",
+      "border": "1px solid #f5f5f4"
+    },
+    {
+      "key": "table-danger-5",
+      "kind": "nav",
+      "backgroundColor": "#efc1ca"
+    },
+    {
+      "key": "table-active-6",
+      "kind": "nav",
+      "backgroundColor": "rgba(5,4,8,.075)"
+    },
+    {
+      "key": "badge-danger-4",
+      "kind": "badge",
+      "backgroundColor": "#c52042",
+      "textColor": "#fff"
+    },
+    {
+      "key": "alert-danger-4",
+      "kind": "card",
+      "backgroundColor": "#f3d2d9",
+      "textColor": "#691326",
+      "border": "1px solid #efc1ca"
+    },
+    {
+      "key": "badge-primary-5",
+      "kind": "badge",
+      "backgroundColor": "#007bff",
+      "textColor": "#0b0b0c"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": ".25rem",
+      "padding": "9px 13px"
+    }
+  ],
   "overview": "GitLab Pajamas — design guidelines and UI components behind GitLab.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fc6d26` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `GitLab Sans` across 45 type steps.\n- **Component Geometry**: Buttons (`.25rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

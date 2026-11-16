@@ -2,21 +2,22 @@
   "name": "amplify-ui",
   "displayName": "Amplify UI",
   "description": "AWS Amplify UI — tokens read from https://github.com/aws-amplify/amplify-ui.",
-  "style": "AWS Amplify UI — tokens read from https://github.com/aws-amplify/amplify-ui.",
+  "style": "Dark (#0175C2) canvas, Inter typography, #232f3e brand accent, and 8px corner geometry",
   "category": "AWS",
   "org": "AWS",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "aws"
+    "aws",
+    "dark"
   ],
   "homepage": "https://github.com/aws-amplify/amplify-ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/aws-amplify/amplify-ui — 11 token files, 22 colours harvested, 22 selected.",
   "source": {
-    "repo": "https://github.com/aws-amplify/amplify-ui"
+    "repo": "https://github.com/aws-amplify/amplify-ui",
+    "package": "@aws-amplify/ui-react"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,31 @@
   ],
   "tokens": {
     "colors": 23,
-    "typography": 0,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 57,
+    "stars": 1144,
+    "forks": 351,
+    "npmDownloads": 1939478,
+    "score": 34805,
+    "frameworks": [
+      "react",
+      "vue",
+      "angular",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

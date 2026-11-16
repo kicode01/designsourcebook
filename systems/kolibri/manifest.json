@@ -1,22 +1,23 @@
 {
   "name": "kolibri",
   "displayName": "KoliBri",
-  "description": "KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.",
-  "style": "KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.",
+  "description": "KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.",
+  "style": "Crisp light (#ffffff) canvas, system-ui typography, #f5f7ff brand accent, and 8px corner geometry",
   "category": "KoliBri",
   "org": "KoliBri",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "koli-bri"
+    "koli-bri",
+    "light"
   ],
   "homepage": "https://github.com/learningequality/kolibri-design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/learningequality/kolibri-design-system — 6 token files, 480 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/learningequality/kolibri-design-system"
+    "repo": "https://github.com/learningequality/kolibri-design-system",
+    "package": "kolibri-design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 91,
     "typography": 7,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 121,
+    "stars": 53,
+    "forks": 122,
+    "npmDownloads": 3641,
+    "score": 420,
+    "frameworks": [
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

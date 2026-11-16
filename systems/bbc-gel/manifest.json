@@ -1,0 +1,55 @@
+{
+  "name": "bbc-gel",
+  "displayName": "BBC GEL",
+  "description": "BBC GEL — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, ReithSans typography, #ffb32b brand accent, and 8px corner geometry",
+  "category": "BBC",
+  "org": "BBC",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "bbc",
+    "light"
+  ],
+  "homepage": "https://www.bbc.co.uk/gel",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://www.bbc.co.uk/gel in headless Chromium on 2026-11-16 (2 custom properties, 96 sampled elements, 4 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: BBC GEL | Homepage.",
+  "source": {
+    "url": "https://www.bbc.co.uk/gel",
+    "repo": "https://github.com/bbc/gel"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 48,
+    "typography": 4,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 123,
+    "stars": 50,
+    "forks": 18,
+    "npmDownloads": 0,
+    "score": 50,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

@@ -82,6 +82,31 @@ components:
   button-text-underline:
     textColor: "#1f1f1f"
     padding: 8px 0px 0px
+  input-default:
+    backgroundColor: "#fffaeb"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fffaeb"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ff8a00"
+    textColor: "#1f1f1f"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fffaeb"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Mistral AI

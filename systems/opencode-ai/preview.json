@@ -97,7 +97,56 @@
       "value": "#007aff"
     }
   ],
-  "type": [],
+  "type": [
+    {
+      "name": "heading-1",
+      "fontFamily": "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "38px",
+      "px": 38,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-tight",
+      "fontFamily": "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1
+    },
+    {
+      "name": "caption",
+      "fontFamily": "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 2
+    }
+  ],
   "components": [
     {
       "key": "button-primary",
@@ -115,8 +164,48 @@
       "rounded": "6px",
       "padding": "20px",
       "border": "1px solid rgba(15, 0, 0, 0.12)"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#201d1d",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#007aff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#30d158",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#201d1d",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "OpenCode's website embodies a terminal-native, monospace-first aesthetic that reflects its identity as an open source AI coding agent. The entire visual system is built on a stark dark-on-light contrast using a near-black background (#201d1d) with warm off-white text (#fdfcfc). This isn't a generic dark theme -- it's a warm, slightly reddish-brown dark that feels like a sophisticated terminal emulator rather than a cold IDE. The warm undertone in both the darks and lights (notice the subtle red channel in #201d1d -- rgb(32, 29, 29)) creates a cohesive, lived-in quality.\n\nBerkeley Mono is the sole typeface, establishing an unapologetic monospace identity. Every element -- headings, body text, buttons, navigation -- shares this single font family, creating a unified \"everything is code\" philosophy. The heading at 38px bold with 1.50 line-height is generous and readable, while body text at…",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (#201d1d) canvas paired with `#201d1d` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#007aff` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Berkeley Mono` across 6 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -3,21 +3,173 @@
   "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#764eddff",
+  "brand": "#fff",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "0.375rem",
   "ink": "#0b0b0c",
   "palette": [
+    {
+      "name": "bs-primary",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-success",
+      "value": "#198754"
+    },
+    {
+      "name": "bs-warning",
+      "value": "#ffc107"
+    },
+    {
+      "name": "bs-primary-text-emphasis",
+      "value": "#052c65"
+    },
+    {
+      "name": "bs-success-text-emphasis",
+      "value": "#0a3622"
+    },
+    {
+      "name": "bs-warning-text-emphasis",
+      "value": "#664d03"
+    },
+    {
+      "name": "bs-light-text-emphasis",
+      "value": "#495057"
+    },
+    {
+      "name": "bs-primary-bg-subtle",
+      "value": "#cfe2ff"
+    },
+    {
+      "name": "bs-success-bg-subtle",
+      "value": "#d1e7dd"
+    },
+    {
+      "name": "bs-warning-bg-subtle",
+      "value": "#fff3cd"
+    },
+    {
+      "name": "bs-primary-border-subtle",
+      "value": "#9ec5fe"
+    },
+    {
+      "name": "bs-success-border-subtle",
+      "value": "#a3cfbb"
+    },
+    {
+      "name": "bs-warning-border-subtle",
+      "value": "#ffe69c"
+    },
+    {
+      "name": "bs-light-border-subtle",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "bs-secondary-color-rgb",
+      "value": "rgb(33, 37, 41)"
+    },
+    {
+      "name": "bs-secondary-bg-rgb",
+      "value": "rgb(233, 236, 239)"
+    },
+    {
+      "name": "bs-link-color-rgb",
+      "value": "rgb(13, 110, 253)"
+    },
+    {
+      "name": "bs-link-hover-color-rgb",
+      "value": "rgb(10, 88, 202)"
+    },
+    {
+      "name": "bs-form-valid-border-color",
+      "value": "#198754"
+    },
+    {
+      "name": "bs-table-border-color",
+      "value": "#a6b5cc"
+    },
+    {
+      "name": "bs-btn-hover-border-color",
+      "value": "#0a58ca"
+    },
+    {
+      "name": "bs-btn-disabled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-btn-disabled-border-color",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-dropdown-link-active-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-dropdown-link-hover-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-nav-pills-link-active-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-navbar-brand-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-pagination-active-border-color",
+      "value": "#0d6efd"
+    },
     {
       "name": "color-accent",
       "value": "#764eddff"
     },
     {
-      "name": "shortcut-background",
-      "value": "#fff"
+      "name": "color-accent-surface",
+      "value": "#f2f0f8ff"
     },
     {
-      "name": "color-background-primary",
+      "name": "top-nav-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "top-nav-item-active-background",
+      "value": "#f2f0f8"
+    },
+    {
+      "name": "color-neutral200",
+      "value": "#f2f4f5"
+    },
+    {
+      "name": "color-neutral400",
+      "value": "#dce0e4"
+    },
+    {
+      "name": "color-neutral600",
+      "value": "#6a707a"
+    },
+    {
+      "name": "color-neutral800",
+      "value": "#515964"
+    },
+    {
+      "name": "color-warning",
+      "value": "#CB4E13"
+    },
+    {
+      "name": "button-slack-background-hover",
+      "value": "#4d1352"
+    },
+    {
+      "name": "figma-component-props-table-variant-badge-background",
+      "value": "#EDF5FF"
+    },
+    {
+      "name": "figma-component-props-table-text-badge-background-co",
+      "value": "#FEF1F2"
+    },
+    {
+      "name": "shortcut-background",
       "value": "#fff"
     },
     {
@@ -25,156 +177,36 @@
       "value": "#e6e9eb"
     },
     {
-      "name": "color-ink-secondary",
-      "value": "#515964"
-    },
-    {
       "name": "callout-info-background",
       "value": "#f2f4f5"
-    },
-    {
-      "name": "bs-info-text-emphasis",
-      "value": "#055160"
-    },
-    {
-      "name": "callout-primary-background",
-      "value": "#f2f0f8ff"
-    },
-    {
-      "name": "button-slack-background-hover",
-      "value": "#5A1D5E"
-    },
-    {
-      "name": "color-neutral400",
-      "value": "#dce0e4"
-    },
-    {
-      "name": "color-neutral200",
-      "value": "#f2f4f5"
-    },
-    {
-      "name": "bs-primary-border-subtle",
-      "value": "#9ec5fe"
     },
     {
       "name": "color-background-alt",
       "value": "#f2f4f5"
     },
     {
-      "name": "bs-dark-text-emphasis",
-      "value": "#495057"
-    },
-    {
-      "name": "button-slack-border",
-      "value": "#e6e9eb"
-    },
-    {
       "name": "page-header-border-color",
       "value": "#e6e9eb"
-    },
-    {
-      "name": "bs-danger",
-      "value": "#dc3545"
-    },
-    {
-      "name": "top-nav-item-active-background",
-      "value": "#f2f0f8"
-    },
-    {
-      "name": "callout-primary-ink",
-      "value": "#764eddff"
     },
     {
       "name": "callout-success-ink-secondary",
       "value": "#00a454"
     },
     {
-      "name": "side-nav-border-color",
-      "value": "#e6e9eb"
-    },
-    {
       "name": "guidelines-image-background-color",
       "value": "#fff"
-    },
-    {
-      "name": "bs-success-bg-subtle",
-      "value": "#d1e7dd"
-    },
-    {
-      "name": "color-border-prominent",
-      "value": "#dce0e4"
-    },
-    {
-      "name": "top-nav-background",
-      "value": "#141618"
-    },
-    {
-      "name": "bs-secondary-bg-subtle",
-      "value": "#e2e3e5"
-    },
-    {
-      "name": "bs-light-text-emphasis",
-      "value": "#495057"
-    },
-    {
-      "name": "color-accent-alt",
-      "value": "#5939a8ff"
     },
     {
       "name": "callout-danger-background",
       "value": "#fff5f5"
     },
     {
-      "name": "color-neutral900",
-      "value": "#141618"
-    },
-    {
-      "name": "bs-info-border-subtle",
-      "value": "#9eeaf9"
-    },
-    {
       "name": "button-slack-border-hover",
       "value": "#5A1D5E"
     },
     {
-      "name": "page-background",
-      "value": "#fff"
-    },
-    {
-      "name": "bs-secondary-text-emphasis",
-      "value": "#2b2f32"
-    },
-    {
-      "name": "guidelines-caution-background",
-      "value": "#fff6f0"
-    },
-    {
-      "name": "bs-info",
-      "value": "#0dcaf0"
-    },
-    {
-      "name": "color-neutral300",
-      "value": "#e6e9eb"
-    },
-    {
-      "name": "bs-info-bg-subtle",
-      "value": "#cff4fc"
-    },
-    {
-      "name": "bs-light-border-subtle",
-      "value": "#e9ecef"
-    },
-    {
-      "name": "guidelines-background-hover",
-      "value": "#fff"
-    },
-    {
       "name": "color-background-secondary",
       "value": "#f9f9fa"
-    },
-    {
-      "name": "callout-danger-ink",
-      "value": "#9e2122"
     },
     {
       "name": "figma-component-ink-secondary",
@@ -185,151 +217,39 @@
       "value": "#fff"
     },
     {
-      "name": "callout-info-ink",
-      "value": "#141618"
-    },
-    {
-      "name": "bs-secondary",
-      "value": "#6c757d"
-    },
-    {
-      "name": "bs-danger-border-subtle",
-      "value": "#f1aeb5"
-    },
-    {
       "name": "callout-success-background",
       "value": "#ebfff0"
-    },
-    {
-      "name": "callout-warning-background",
-      "value": "#fff6f0"
     },
     {
       "name": "side-nav-background",
       "value": "#fff"
     },
     {
-      "name": "side-nav-button-search-background",
-      "value": "#f9f9fa"
-    },
-    {
       "name": "guidelines-do-border",
       "value": "#4ade80"
-    },
-    {
-      "name": "color-accent-ink",
-      "value": "#fff"
-    },
-    {
-      "name": "bs-secondary-border-subtle",
-      "value": "#c4c8cb"
     },
     {
       "name": "cta-button-background",
       "value": "#764eddff"
     },
     {
-      "name": "bs-form-invalid-border-color",
-      "value": "#dc3545"
-    },
-    {
-      "name": "guidelines-dont-background-alternative",
-      "value": "#d23031"
-    },
-    {
-      "name": "bs-link-color",
-      "value": "#0d6efd"
-    },
-    {
-      "name": "bs-form-valid-border-color",
-      "value": "#198754"
-    },
-    {
       "name": "callout-warning-ink-secondary",
       "value": "#e36b00"
-    },
-    {
-      "name": "bs-warning-bg-subtle",
-      "value": "#fff3cd"
-    },
-    {
-      "name": "bs-success",
-      "value": "#198754"
-    },
-    {
-      "name": "bs-danger-text-emphasis",
-      "value": "#58151c"
-    },
-    {
-      "name": "guidelines-dont-background",
-      "value": "#fff5f5"
     },
     {
       "name": "guidelines-caution-border",
       "value": "#fdba74"
     },
     {
-      "name": "bs-primary",
-      "value": "#0d6efd"
-    },
-    {
-      "name": "guidelines-caution-background-alternative",
-      "value": "#CB4E13"
-    },
-    {
-      "name": "color-neutral100",
-      "value": "#f9f9fa"
-    },
-    {
-      "name": "bs-link-hover-color",
-      "value": "#0a58ca"
-    },
-    {
-      "name": "color-neutral700",
-      "value": "#666e7a"
-    },
-    {
       "name": "shortcut-background-hover",
       "value": "#fff"
-    },
-    {
-      "name": "bs-primary-text-emphasis",
-      "value": "#052c65"
-    },
-    {
-      "name": "callout-danger-ink-secondary",
-      "value": "#d23031"
-    },
-    {
-      "name": "bs-primary-bg-subtle",
-      "value": "#cfe2ff"
     },
     {
       "name": "figma-component-border-color",
       "value": "#e6e9eb"
     },
     {
-      "name": "callout-warning-ink",
-      "value": "#ba4e00"
-    },
-    {
-      "name": "figma-component-props-table-boolean-badge-background",
-      "value": "#EBFEF6"
-    },
-    {
-      "name": "color-neutral500",
-      "value": "#9298a0"
-    },
-    {
       "name": "callout-primary-ink-secondary",
-      "value": "#764eddff"
-    },
-    {
-      "name": "bs-success-text-emphasis",
-      "value": "#0a3622"
-    },
-    {
-      "name": "side-nav-item-active-border-color",
       "value": "#764eddff"
     },
     {
@@ -337,131 +257,491 @@
       "value": "#008141"
     },
     {
-      "name": "guidelines-do-background",
-      "value": "#ebfff0"
-    },
-    {
-      "name": "bs-success-border-subtle",
-      "value": "#a3cfbb"
-    },
-    {
-      "name": "side-nav-item-active-background",
-      "value": "#f2f0f8ff"
-    },
-    {
       "name": "color-ink-primary",
       "value": "#141618"
     },
     {
-      "name": "bs-warning",
-      "value": "#ffc107"
+      "name": "color-border-structure",
+      "value": "#e6e9eb"
     },
     {
-      "name": "bs-border-color",
-      "value": "#dee2e6"
+      "name": "callout-info-ink-secondary",
+      "value": "#515964"
     },
     {
-      "name": "bs-warning-border-subtle",
-      "value": "#ffe69c"
+      "name": "page-navigation-hover-background",
+      "value": "#fff"
     },
     {
-      "name": "color-neutral600",
-      "value": "#6a707a"
+      "name": "bs-blue",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-orange",
+      "value": "#fd7e14"
+    },
+    {
+      "name": "bs-black",
+      "value": "#000"
+    },
+    {
+      "name": "bs-gray-200",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "bs-gray-700",
+      "value": "#495057"
+    },
+    {
+      "name": "bs-light-bg-subtle",
+      "value": "#fcfcfd"
+    },
+    {
+      "name": "bs-body-bg-rgb",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "bs-tertiary-bg-rgb",
+      "value": "rgb(248, 249, 250)"
+    },
+    {
+      "name": "bs-form-invalid-color",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-table-active-bg",
+      "value": "#bacbe6"
+    },
+    {
+      "name": "bs-btn-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-dropdown-header-color",
+      "value": "#6c757d"
+    },
+    {
+      "name": "bs-pagination-active-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-list-group-active-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "top-nav-item-active-ink",
+      "value": "#764edd"
+    },
+    {
+      "name": "color-red300",
+      "value": "#e46969"
+    },
+    {
+      "name": "color-green100",
+      "value": "#ebfff0"
+    },
+    {
+      "name": "color-orange100",
+      "value": "#fff6f0"
+    },
+    {
+      "name": "color-positive",
+      "value": "#118850"
+    },
+    {
+      "name": "figma-component-props-table-boolean-badge-color",
+      "value": "#05751F"
+    },
+    {
+      "name": "page-header-description-ink",
+      "value": "#515964"
+    },
+    {
+      "name": "guidelines-do-ink",
+      "value": "#008141"
+    },
+    {
+      "name": "checkered-square-color-light-a",
+      "value": "#f9f9fa"
+    },
+    {
+      "name": "page-navigation-ink",
+      "value": "#141618"
     },
     {
       "name": "primary",
-      "value": "#764eddff"
+      "value": "#fff"
     }
   ],
   "type": [
     {
+      "name": "display-1",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "5rem",
+      "px": 80
+    },
+    {
+      "name": "display-2",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "display-3",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "display-4",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
       "name": "page-title-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "48px",
       "px": 48
     },
     {
+      "name": "display-5",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "43px",
+      "px": 43
+    },
+    {
+      "name": "display-6",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "27px",
+      "px": 27
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "21px",
+      "px": 21
+    },
+    {
+      "name": "bs-navbar-brand-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "bs-navbar-toggler-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "lead",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "19px",
+      "px": 19
+    },
+    {
       "name": "page-description-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "18px",
       "px": 18
     },
     {
+      "name": "title",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
       "name": "bs-body-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bs-dropdown-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bs-popover-header-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "sub-title",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "guidelines-description-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "dm-font-family-title",
-      "fontFamily": "Atkinson Hyperlegible\", sans-serif",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "px": 16
     },
     {
       "name": "dm-font-family-body",
-      "fontFamily": "Atkinson Hyperlegible\", sans-serif",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "px": 16
     },
     {
       "name": "dm-font-family-mono",
-      "fontFamily": "Fira Code', 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace",
+      "fontFamily": "\"Fira Code\", \"Fira Mono\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
       "px": 16
     },
     {
       "name": "bs-body-font-family",
-      "fontFamily": "system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Noto Sans\",\"Liberation Sans\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
       "px": 16
     },
     {
+      "name": "bs-btn-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-pagination-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-toast-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-tooltip-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-popover-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "figure-caption",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
       "name": "side-nav-item-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "shortcut-title-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "0.875rem",
-      "px": 14
-    },
-    {
-      "name": "font-size-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "guidelines-badge-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
-      "name": "shortcut-description-font-size",
-      "fontFamily": "system-ui",
+      "name": "font-size-code",
+      "fontFamily": "\"Fira Code\", \"Fira Mono\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
+      "fontSize": "0.825em",
+      "px": 13.2
+    },
+    {
+      "name": "bs-badge-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "bs-progress-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "font-size-tiny",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "shortcut-description-font-size",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "side-nav-group-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
       "fontSize": "0.75rem",
       "px": 12
+    },
+    {
+      "name": "rn-heading-tag",
+      "fontFamily": "\"Atkinson Hyperlegible\", sans-serif",
+      "fontSize": ".68em",
+      "px": 10.88
     }
   ],
-  "components": [],
-  "overview": "Firefox Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.",
-  "dos": ""
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#212529",
+      "border": "solid"
+    },
+    {
+      "key": "link-info",
+      "kind": "nav",
+      "textColor": "RGBA(13,202,240,1)"
+    },
+    {
+      "key": "link-dark-2",
+      "kind": "nav",
+      "textColor": "RGBA(33,37,41,1)"
+    },
+    {
+      "key": "link-light-3",
+      "kind": "nav",
+      "textColor": "RGBA(248,249,250,1)"
+    },
+    {
+      "key": "select",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#212529",
+      "rounded": "0.375rem",
+      "padding": "0.375rem 2.25rem 0.375rem 0.75rem",
+      "border": "1px solid #dee2e6"
+    },
+    {
+      "key": "link-danger-4",
+      "kind": "nav",
+      "textColor": "RGBA(220,53,69,1)"
+    },
+    {
+      "key": "link-primary-5",
+      "kind": "nav",
+      "textColor": "RGBA(13,110,253,1)"
+    },
+    {
+      "key": "link-success-6",
+      "kind": "nav",
+      "textColor": "RGBA(25,135,84,1)"
+    },
+    {
+      "key": "input-group-text-2",
+      "kind": "input",
+      "backgroundColor": "#f8f9fa",
+      "textColor": "#212529",
+      "rounded": "0.375rem",
+      "padding": "0.375rem 0.75rem",
+      "border": "1px solid #dee2e6"
+    },
+    {
+      "key": "btn-secondary",
+      "kind": "button",
+      "backgroundColor": "#6c757d",
+      "border": "1px solid #6c757d"
+    },
+    {
+      "key": "banner-preview",
+      "kind": "card",
+      "backgroundColor": "#d0e2ff",
+      "textColor": "#0043ce",
+      "padding": "8px"
+    },
+    {
+      "key": "input-search-container-3",
+      "kind": "input",
+      "backgroundColor": "hsla(0,0%,100%,.96)"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "0.375rem",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#198754",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    }
+  ],
+  "overview": "Firefox Acorn Design System — Crisp light (#fff) canvas, Atkinson Hyperlegible typography, #fff brand accent, and 0.375rem corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Atkinson Hyperlegible` across 45 type steps.\n- **Component Geometry**: Buttons (`0.375rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

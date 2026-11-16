@@ -266,7 +266,47 @@
       "key": "button-phantom",
       "kind": "button",
       "backgroundColor": "rgba(255,255,255,0.2)",
-      "textColor": "rgba(255,255,255,0.5)"
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#00ffff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Composio's interface is a nocturnal command center — a dense, developer-focused darkness punctuated by electric cyan and deep cobalt signals. The entire experience is built on an almost-pure-black canvas (#0f0f0f) where content floats within barely-visible containment borders, creating the feeling of a high-tech control panel rather than a traditional marketing page. It's a site that whispers authority to developers who live in dark terminals.\n\nThe visual language leans heavily into the aesthetic of code editors and terminal windows. JetBrains Mono appears alongside the geometric precision of abcDiatype, reinforcing the message that this is a tool built *by* developers *for* developers. Decorative elements are restrained but impactful — subtle cyan-blue gradient glows emanate from cards and sections like bioluminescent organisms in deep water, while hard-offset shadows (4px 4px) on…",

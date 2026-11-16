@@ -1,15 +1,15 @@
 {
   "name": "foundation",
   "displayName": "Foundation",
-  "description": "undefined",
-  "style": "undefined",
+  "description": "Foundation — responsive front-end framework by ZURB.",
+  "style": "Foundation — responsive front-end framework by ZURB.",
   "category": "Foundation",
   "org": "Foundation",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "published",
-    "dark",
-    "foundation"
+    "foundation",
+    "light"
   ],
   "homepage": "https://get.foundation/sites",
   "license": "MIT",
@@ -17,7 +17,8 @@
   "provenanceNote": "Tokens imported from foundation-sites@6.9.0 (2 token files, 15 colours harvested, 15 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "foundation-sites",
-    "version": "6.9.0"
+    "version": "6.9.0",
+    "repo": "https://github.com/foundation/foundation-sites"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,8 +28,8 @@
   ],
   "tokens": {
     "colors": 15,
-    "typography": 6,
-    "components": 9
+    "typography": 14,
+    "components": 10
   },
   "checks": {
     "errors": 0,
@@ -38,5 +39,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 11,
+    "stars": 29816,
+    "forks": 5378,
+    "npmDownloads": 455010,
+    "score": 41668,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

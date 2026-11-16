@@ -1,6 +1,6 @@
 {
   "canvas": "#f4f8fb",
-  "surface": "#0b0c0c",
+  "surface": "#f4f8fb",
   "text": "#0b0c0c",
   "muted": "#0b0c0c",
   "brand": "#1d70b8",
@@ -8,6 +8,62 @@
   "radius": "0",
   "ink": "#0b0b0c",
   "palette": [
+    {
+      "name": "print-text",
+      "value": "#000000"
+    },
+    {
+      "name": "text",
+      "value": "#221133"
+    },
+    {
+      "name": "colour",
+      "value": "#a91c8e"
+    },
+    {
+      "name": "contrast-safe",
+      "value": "#d92f14"
+    },
+    {
+      "name": "primary",
+      "value": "#1d70b8"
+    },
+    {
+      "name": "tint-25",
+      "value": "#5694ca"
+    },
+    {
+      "name": "tint-50",
+      "value": "#8eb8dc"
+    },
+    {
+      "name": "tint-80",
+      "value": "#d2e2f1"
+    },
+    {
+      "name": "tint-95",
+      "value": "#f4f8fb"
+    },
+    {
+      "name": "shade-25",
+      "value": "#16548a"
+    },
+    {
+      "name": "shade-50",
+      "value": "#0f385c"
+    },
+    {
+      "name": "shade-10",
+      "value": "#1a65a6"
+    },
+    {
+      "name": "accent",
+      "value": "#00ffe0"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
     {
       "name": "brand-colour",
       "value": "#1d70b8"
@@ -89,21 +145,134 @@
       "value": "#0b0c0c"
     },
     {
-      "name": "primary",
-      "value": "#1d70b8"
+      "name": "surface-border-colour",
+      "value": "#8eb8dc"
     }
   ],
   "type": [
     {
-      "name": "root-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "16px !default",
+      "name": "panel-title",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "lineHeight": 1.09375
+    },
+    {
+      "name": "table-caption-xl",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "lineHeight": 1.09375
+    },
+    {
+      "name": "table-caption-l",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.6875rem",
+      "px": 27,
+      "lineHeight": 1.1111111111
+    },
+    {
+      "name": "caption-l",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.3125rem",
+      "px": 21,
+      "fontWeight": 400,
+      "lineHeight": 1.1904761905
+    },
+    {
+      "name": "error-summary-title",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.3125rem",
+      "px": 21,
+      "lineHeight": 1.1904761905
+    },
+    {
+      "name": "notification-banner-heading",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.3125rem",
+      "px": 21,
+      "lineHeight": 1.1904761905
+    },
+    {
+      "name": "table-caption-m",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.3125rem",
+      "px": 21,
+      "lineHeight": 1.1904761905
+    },
+    {
+      "name": "notification-banner-title",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.1875rem",
+      "px": 19,
+      "lineHeight": 1.3157894737
+    },
+    {
+      "name": "tabs-title",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "1.1875rem",
+      "px": 19,
+      "lineHeight": 1.3157894737
+    },
+    {
+      "name": "heading-xl",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
       "px": 16
     },
     {
-      "name": "context-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "$context-font-size * 1px",
+      "name": "heading-l",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "heading-m",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "heading-s",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "caption-xl",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "caption-m",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "body-s",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "feedback-title",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "summary-card-title",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-print",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "root-font-size",
+      "fontFamily": "\"GDS Transport\", arial, sans-serif",
+      "fontSize": "16px",
       "px": 16
     }
   ],
@@ -118,19 +287,19 @@
     },
     {
       "key": "label",
-      "kind": "label",
+      "kind": "badge",
       "textColor": "#000"
     },
     {
       "key": "panel",
-      "kind": "panel",
+      "kind": "card",
       "textColor": "#000",
       "padding": "35px",
       "border": "5px solid transparent"
     },
     {
       "key": "table",
-      "kind": "table",
+      "kind": "nav",
       "textColor": "#000"
     },
     {
@@ -152,14 +321,15 @@
       "border": "2px solid"
     },
     {
-      "key": "tabs",
-      "kind": "tabs",
+      "key": "summary-list",
+      "kind": "card",
       "textColor": "#000"
     },
     {
-      "key": "summary-list",
-      "kind": "summary",
-      "textColor": "#000"
+      "key": "banner",
+      "kind": "card",
+      "backgroundColor": "#f4f8fb",
+      "textColor": "#0b0c0c"
     },
     {
       "key": "input-2",
@@ -178,14 +348,47 @@
       "border": "2px solid"
     },
     {
-      "key": "summary-card-2",
-      "kind": "summary",
+      "key": "summary-2",
+      "kind": "card",
+      "textColor": "#000",
+      "padding": "15px",
+      "border": "5px solid"
+    },
+    {
+      "key": "file-upload-button-2",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "padding": "18px",
+      "border": "2px solid #cecece"
+    },
+    {
+      "key": "card",
+      "kind": "card",
       "textColor": "#000"
     },
     {
-      "key": "summary-card-3",
-      "kind": "summary",
+      "key": "banner-2",
+      "kind": "card",
+      "textColor": "#000"
+    },
+    {
+      "key": "file-upload-button-3",
+      "kind": "button",
+      "backgroundColor": "#1d70b8",
+      "textColor": "#fff",
+      "padding": "15px 10px"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
       "backgroundColor": "#f3f3f3",
+      "padding": "15px"
+    },
+    {
+      "key": "banner-3",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
       "padding": "15px"
     },
     {
@@ -231,25 +434,8 @@
       "backgroundColor": "#fff",
       "textColor": "#1d70b8",
       "shadow": "0 2px 0 #0f385c"
-    },
-    {
-      "key": "button-secondary",
-      "kind": "button",
-      "backgroundColor": "#f3f3f3",
-      "textColor": "#0b0c0c",
-      "shadow": "0 2px 0 #858686"
-    },
-    {
-      "key": "panel-confirmation",
-      "kind": "panel",
-      "backgroundColor": "#0f7a52"
-    },
-    {
-      "key": "panel-interruption",
-      "kind": "panel",
-      "backgroundColor": "#1d70b8"
     }
   ],
   "overview": "GOV.UK Design System — the UK government's public-service design system.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#f4f8fb) canvas paired with `#f4f8fb` component surfaces and `#0b0c0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1d70b8` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `GDS Transport` across 21 type steps.\n- **Component Geometry**: Buttons (`0px`), cards (`0px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -4,11 +4,11 @@
   "description": "Green-black energy, technical power aesthetic",
   "style": "Green-black energy, technical power aesthetic",
   "category": "Enterprise & Consumer",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "enterprise",
     "consumer",
-    "dark"
+    "light"
   ],
   "homepage": "https://nvidia.com",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 27,
     "typography": 18,
-    "components": 1
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {},
+  "popularity": {
+    "rank": 198,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

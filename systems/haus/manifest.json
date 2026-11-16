@@ -1,15 +1,15 @@
 {
   "name": "haus",
   "displayName": "haus",
-  "description": "haus haus — tokens read from https://github.com/hipuku/haus.",
-  "style": "haus haus — tokens read from https://github.com/hipuku/haus.",
+  "description": "haus — tokens read from https://github.com/hipuku/haus.",
+  "style": "Dark (rgb(0, 31, 63)) canvas, Inter typography, rgb(204, 0, 0) brand accent, and 8px corner geometry",
   "category": "haus",
   "org": "haus",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "haus"
+    "haus",
+    "dark"
   ],
   "homepage": "https://github.com/hipuku/haus",
   "license": "see repository",
@@ -26,16 +26,28 @@
   ],
   "tokens": {
     "colors": 22,
-    "typography": 0,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 138,
+    "stars": 1,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 1,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -5,7 +5,7 @@
   "muted": "#65675e",
   "brand": "#F7A501",
   "border": "color-mix(in srgb, #4d4f46 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -96,7 +96,7 @@
   "type": [
     {
       "name": "section-heading",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "36px",
       "px": 36,
       "fontWeight": 700,
@@ -105,7 +105,7 @@
     },
     {
       "name": "display-hero",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "30px",
       "px": 30,
       "fontWeight": 800,
@@ -114,7 +114,7 @@
     },
     {
       "name": "feature-heading",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 700,
@@ -123,7 +123,7 @@
     },
     {
       "name": "card-heading",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "21.4px",
       "px": 21.4,
       "fontWeight": 700,
@@ -132,7 +132,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 700,
@@ -141,7 +141,7 @@
     },
     {
       "name": "sub-heading-uppercase",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 700,
@@ -150,7 +150,7 @@
     },
     {
       "name": "body-emphasis",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "19.3px",
       "px": 19.3,
       "fontWeight": 600,
@@ -159,7 +159,7 @@
     },
     {
       "name": "label-uppercase",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 700,
@@ -168,7 +168,7 @@
     },
     {
       "name": "body-semi",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 600,
@@ -177,7 +177,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -186,7 +186,7 @@
     },
     {
       "name": "body-medium",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -195,7 +195,7 @@
     },
     {
       "name": "body-relaxed",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 400,
@@ -204,7 +204,7 @@
     },
     {
       "name": "nav-ui",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 600,
@@ -213,7 +213,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -222,7 +222,7 @@
     },
     {
       "name": "code",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 500,
@@ -231,7 +231,7 @@
     },
     {
       "name": "small-label",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 500,
@@ -240,7 +240,7 @@
     },
     {
       "name": "micro",
-      "fontFamily": "IBM Plex Sans Variable",
+      "fontFamily": "\"IBM Plex Sans Variable\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -248,7 +248,72 @@
       "letterSpacing": "0px"
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#F7A501",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#eeefe9",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#eeefe9",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#eeefe9",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#F7A501",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#eeefe9",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "PostHog's website feels like a startup's internal wiki that escaped into the wild — warm, irreverent, and deliberately anti-corporate. The background isn't the expected crisp white or dark void of developer tools; it's a warm, sage-tinted cream (#fdfdf8) that gives every surface a handmade, paper-like quality. Colors lean into earthy olive greens and muted sage rather than the conventional blues and purples of the SaaS world. It's as if someone designed a developer analytics platform inside a cozy garden shed.\n\nThe personality is the star: hand-drawn hedgehog illustrations, quirky action figures, and playful imagery replace the stock photography and abstract gradients typical of B2B SaaS. IBM Plex Sans Variable serves as the typographic foundation — a font with genuine technical credibility (created by IBM, widely used in developer contexts) deployed here with bold weights (700, 800) on…",
   "dos": "Do\n- Use the olive/sage color family (#4d4f46, #23251d, #bfc1b7) for text and borders — the warm green undertone is essential to the brand\n- Flash PostHog Orange (#F54E00) on hover states — it's the hidden brand signature\n- Use IBM Plex Sans at bold weights (700/800) for headings — the font carries technical credibility\n- Keep body text at generous line-heights (1.50–1.71) — the content-heavy site demands readability\n- Maintain the warm parchment background (#fdfdf8) — not pure white, never cold\n- Use 4px border-radius for most UI elements — keep corners subtle and functional\n- Include playful, hand-drawn illustration elements — the personality is the differentiator\n- Apply opacity-based hover states (0.7 opacity) on dark buttons rather than color shifts\n\nDon't\n- Use blue, purple, or typical tech-SaaS colors — PostHog's palette is deliberately olive/sage\n- Add heavy shadows — the system…"
 }

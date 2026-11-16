@@ -14,6 +14,7 @@ import { buildFrontMatter } from "../lib/fm.mjs";
 import { lint } from "../lib/lint.mjs";
 import { emitDtcg } from "../lib/emit.mjs";
 import { buildPreview, themeOfCanvas } from "../lib/preview.mjs";
+import { parseColor } from "../lib/color.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -121,8 +122,8 @@ function extractColors(sectionText) {
     if (!bullet) continue;
 
     const name = bullet[1].trim();
-    const values = bullet[2].match(COLOR_RE);
-    if (!values || !values.length) continue;
+    const values = (bullet[2].match(COLOR_RE) || []).filter((v) => parseColor(v));
+    if (!values.length) continue;
 
     let key = `${lastPrefix}-${dedupeName(lastPrefix, name)}`;
     while (used.has(key)) key = `${key}-2`;

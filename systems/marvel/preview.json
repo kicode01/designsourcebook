@@ -3,13 +3,398 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#ff9e7c",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "999px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Marvel Styleguide is published by Marvel, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "bg-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#3c4858"
+    },
+    {
+      "name": "body-text",
+      "value": "#8492a6"
+    },
+    {
+      "name": "link-bg",
+      "value": "#ff7849"
+    },
+    {
+      "name": "link-text",
+      "value": "#0000ee"
+    },
+    {
+      "name": "link-text-1",
+      "value": "#1fb6ff"
+    },
+    {
+      "name": "link-text-2",
+      "value": "#c0ccda"
+    },
+    {
+      "name": "css-surface-8",
+      "value": "#13ce66"
+    },
+    {
+      "name": "css-surface-9",
+      "value": "#ffc82c"
+    },
+    {
+      "name": "css-surface-10",
+      "value": "#ff49db"
+    },
+    {
+      "name": "css-surface-11",
+      "value": "#7e5bef"
+    },
+    {
+      "name": "css-surface-12",
+      "value": "#ff4949"
+    },
+    {
+      "name": "css-surface-13",
+      "value": "#009eeb"
+    },
+    {
+      "name": "css-surface-14",
+      "value": "#85d7ff"
+    },
+    {
+      "name": "css-surface-15",
+      "value": "#0f9f4f"
+    },
+    {
+      "name": "css-surface-16",
+      "value": "#29eb7f"
+    },
+    {
+      "name": "css-surface-17",
+      "value": "#f8b700"
+    },
+    {
+      "name": "css-surface-18",
+      "value": "#ffd55f"
+    },
+    {
+      "name": "css-surface-19",
+      "value": "#ff5216"
+    },
+    {
+      "name": "css-surface-20",
+      "value": "#ff9e7c"
+    },
+    {
+      "name": "css-surface-21",
+      "value": "#ff16d1"
+    },
+    {
+      "name": "css-surface-22",
+      "value": "#ff7ce5"
+    },
+    {
+      "name": "css-surface-23",
+      "value": "#592dea"
+    },
+    {
+      "name": "css-surface-24",
+      "value": "#a389f4"
+    },
+    {
+      "name": "css-surface-25",
+      "value": "#ff1616"
+    },
+    {
+      "name": "css-surface-26",
+      "value": "#ff7c7c"
+    },
+    {
+      "name": "css-surface-27",
+      "value": "#000000"
+    },
+    {
+      "name": "css-surface-28",
+      "value": "#1f2d3d"
+    },
+    {
+      "name": "css-surface-29",
+      "value": "#273444"
+    },
+    {
+      "name": "css-surface-30",
+      "value": "#f9fafc"
+    },
+    {
+      "name": "css-surface-31",
+      "value": "#e0e6ed"
+    },
+    {
+      "name": "css-surface-32",
+      "value": "#eff2f7"
+    },
+    {
+      "name": "css-surface-33",
+      "value": "#e5e9f2"
+    },
+    {
+      "name": "css-surface-34",
+      "value": "#d3dce6"
+    },
+    {
+      "name": "css-surface-35",
+      "value": "rgba(133, 215, 255, 0.98)"
+    },
+    {
+      "name": "css-surface-36",
+      "value": "rgba(133, 215, 255, 0.3)"
+    },
+    {
+      "name": "css-surface-37",
+      "value": "rgba(133, 215, 255, 0.15)"
+    },
+    {
+      "name": "css-surface-38",
+      "value": "rgba(133, 215, 255, 0.05)"
+    },
+    {
+      "name": "css-surface-39",
+      "value": "rgba(0, 0, 0, 0.98)"
+    },
+    {
+      "name": "css-surface-40",
+      "value": "rgba(0, 0, 0, 0.3)"
+    },
+    {
+      "name": "css-surface-41",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "css-surface-42",
+      "value": "rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "name": "css-surface-43",
+      "value": "rgba(31, 45, 61, 0.98)"
+    },
+    {
+      "name": "css-surface-44",
+      "value": "rgba(31, 45, 61, 0.3)"
+    },
+    {
+      "name": "css-surface-45",
+      "value": "rgba(31, 45, 61, 0.15)"
+    },
+    {
+      "name": "css-surface-46",
+      "value": "rgba(31, 45, 61, 0.05)"
+    },
+    {
+      "name": "css-surface-47",
+      "value": "rgba(255, 255, 255, 0.98)"
+    },
+    {
+      "name": "css-surface-48",
+      "value": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "name": "css-surface-49",
+      "value": "rgba(255, 255, 255, 0.15)"
+    },
+    {
+      "name": "css-surface-50",
+      "value": "rgba(255, 255, 255, 0.05)"
+    },
+    {
+      "name": "css-surface-51",
+      "value": "#55acee"
+    },
+    {
+      "name": "css-surface-52",
+      "value": "#3b5999"
+    },
+    {
+      "name": "css-surface-53",
+      "value": "#ea4c89"
+    },
+    {
+      "name": "css-surface-54",
+      "value": "#007ee5"
+    },
+    {
+      "name": "css-surface-55",
+      "value": "#dc4e41"
+    },
+    {
+      "name": "css-surface-56",
+      "value": "#3f729b"
+    },
+    {
+      "name": "css-surface-57",
+      "value": "#0077b5"
+    },
+    {
+      "name": "css-surface-58",
+      "value": "#ef4056"
+    },
+    {
+      "name": "css-color-59",
+      "value": "#657b83"
+    },
+    {
+      "name": "css-color-60",
+      "value": "#a9b6b6"
+    },
+    {
+      "name": "css-color-61",
+      "value": "#2aa198"
+    },
+    {
+      "name": "css-color-62",
+      "value": "#d33682"
+    },
+    {
+      "name": "css-color-63",
+      "value": "#073642"
+    },
+    {
+      "name": "css-color-64",
+      "value": "#cb4b16"
+    },
+    {
+      "name": "css-color-65",
+      "value": "#dc322f"
+    },
+    {
+      "name": "css-surface-66",
+      "value": "#eee8d5"
+    },
+    {
+      "name": "css-surface-67",
+      "value": "#ffff00"
+    },
+    {
+      "name": "primary",
+      "value": "#ff9e7c"
+    }
+  ],
+  "type": [
+    {
+      "name": "h2",
+      "fontFamily": "FaktProSoft, \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "fontSize": "38px",
+      "px": 38,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "body",
+      "fontFamily": "FaktProSoft, \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 300,
+      "lineHeight": 1.7
+    }
+  ],
+  "components": [
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "rgb(60, 72, 88)"
+    },
+    {
+      "key": "linkedin",
+      "kind": "nav",
+      "textColor": "rgb(0, 119, 181)"
+    },
+    {
+      "key": "inputGroup-context",
+      "kind": "input",
+      "backgroundColor": "rgb(249, 250, 252)",
+      "textColor": "#0b0b0c"
+    },
+    {
+      "key": "link-red",
+      "kind": "nav",
+      "textColor": "rgb(255, 73, 73)"
+    },
+    {
+      "key": "link-pink",
+      "kind": "nav",
+      "textColor": "rgb(255, 73, 219)"
+    },
+    {
+      "key": "link-dark",
+      "kind": "nav",
+      "textColor": "rgb(60, 72, 88)"
+    },
+    {
+      "key": "link-blue",
+      "kind": "nav",
+      "textColor": "rgb(31, 182, 255)"
+    },
+    {
+      "key": "link-green",
+      "kind": "nav",
+      "textColor": "rgb(19, 206, 102)"
+    },
+    {
+      "key": "link-light",
+      "kind": "nav",
+      "textColor": "rgb(132, 146, 166)"
+    },
+    {
+      "key": "button-flat",
+      "kind": "button",
+      "textColor": "rgb(255, 255, 255)"
+    },
+    {
+      "key": "button-ghost",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "rgb(60, 72, 88)",
+      "shadow": "rgb(224, 230, 237) 0px 0px 0px 1px inset"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "shadow": "rgb(224, 230, 237) 0px 0px 0px 1px inset"
+    },
+    {
+      "key": "button-outlined",
+      "kind": "button",
+      "textColor": "rgb(60, 72, 88)",
+      "shadow": "rgb(224, 230, 237) 0px 0px 0px 1px inset"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff9e7c",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    }
+  ],
+  "overview": "Marvel Styleguide — Crisp light (#ffffff) canvas, FaktProSoft typography, #ff9e7c brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff9e7c` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `FaktProSoft` across 2 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Backpack
-description: "Skyscanner Backpack — tokens read from https://github.com/skyscanner/backpack."
+description: "Dark (#131d2b) canvas, Larken typography, #024daf brand accent, and 8px corner geometry"
 colors:
   bpk-private-autosuggest-colour-border-default: "#ffffff"
   bpk-private-autosuggest-colour-text-close: "#ffffff"
@@ -94,6 +94,110 @@ colors:
   grey-30: "#c1c7cf"
   night-grey-25: "#243346"
   primary: "#024daf"
+typography:
+  font-size-xl:
+    fontSize: 1.5rem
+  font-family-larken:
+    fontFamily: "Larken, sans-serif"
+  font-size-xxxxxl:
+    fontSize: 4rem
+  font-size-xxxl:
+    fontSize: 2.5rem
+  font-size-sm:
+    fontSize: ".875rem"
+  font-size-xs:
+    fontSize: ".75rem"
+  font-size-lg:
+    fontSize: 1.25rem
+  font-size-root:
+    fontSize: "100%"
+  font-size6-xl:
+    fontSize: 4.75rem
+  font-family-base:
+    fontFamily: "\"Skyscanner Relative\", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif"
+  font-size7-xl:
+    fontSize: 6rem
+  font-size8-xl:
+    fontSize: 7.5rem
+  font-size-xxl:
+    fontSize: 2rem
+  font-size-xxxxl:
+    fontSize: 3rem
+  font-size-base:
+    fontSize: 1rem
+  bpk-font-size-xl:
+    fontSize: 1.5rem
+  bpk-font-family-larken:
+    fontFamily: "Larken, sans-serif"
+  bpk-font-size-xxxxxl:
+    fontSize: 4rem
+  bpk-font-size-xxxl:
+    fontSize: 2.5rem
+  bpk-font-size-sm:
+    fontSize: ".875rem"
+  bpk-font-size-xs:
+    fontSize: ".75rem"
+  bpk-font-size-lg:
+    fontSize: 1.25rem
+  bpk-font-size-root:
+    fontSize: "100%"
+  bpk-font-size-6-xl:
+    fontSize: 4.75rem
+  bpk-font-family-base:
+    fontFamily: "\"Skyscanner Relative\", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif"
+  bpk-font-size-7-xl:
+    fontSize: 6rem
+  bpk-font-size-8-xl:
+    fontSize: 7.5rem
+  bpk-font-size-xxl:
+    fontSize: 2rem
+  bpk-font-size-xxxxl:
+    fontSize: 3rem
+  bpk-font-size-base:
+    fontSize: 1rem
+  original-value:
+    fontFamily: "Larken, sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#024daf"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#e70866"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#131d2b"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#131d2b"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#024daf"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#62f1c6"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#131d2b"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Backpack
@@ -111,3 +215,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#131d2b) canvas paired with `#131d2b` component surfaces and `#ffffff` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#024daf` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Larken` across 31 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

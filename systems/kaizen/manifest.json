@@ -1,22 +1,23 @@
 {
   "name": "kaizen",
   "displayName": "Kaizen",
-  "description": "Kaizen Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
-  "style": "Kaizen Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
+  "description": "Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
+  "style": "Crisp light (#ffffff) canvas, Inter typography, #0168b3 brand accent, and 8px corner geometry",
   "category": "Kaizen",
   "org": "Kaizen",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "kaizen"
+    "kaizen",
+    "light"
   ],
   "homepage": "https://github.com/cultureamp/kaizen-design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/cultureamp/kaizen-design-system — 10 token files, 141 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/cultureamp/kaizen-design-system"
+    "repo": "https://github.com/cultureamp/kaizen-design-system",
+    "package": "@kaizen/design-tokens"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 59,
-    "components": 0
+    "typography": 57,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 103,
+    "stars": 177,
+    "forks": 23,
+    "npmDownloads": 109039,
+    "score": 4414,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

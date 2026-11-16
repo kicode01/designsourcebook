@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Adjust Atlas
-description: "Adjust Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package."
+description: "Deep indigo analytics surfaces, electric blue and violet data accents"
 colors:
   ifm-color-primary: "#3578e5"
   ifm-color-secondary: "#ebedf0"
@@ -109,12 +109,8 @@ typography:
     fontSize: 0.85rem
   ifm-pagination-font-size:
     fontSize: 1.2rem
-  ifm-font-family-base:
-    fontFamily: "system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol"
   ifm-font-family-monospace:
-    fontFamily: "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
-  ifm-heading-font-family:
-    fontFamily: "var(--ifm-font-family-base)"
+    fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
   toastify-font-family:
     fontFamily: sans-serif
 components:
@@ -124,21 +120,12 @@ components:
     textColor: "#fff"
     typography:
       fontWeight: 700
-  alert:
-    backgroundColor: inherit
-    rounded: 0.4rem
-    padding: 1rem 1rem
   badge:
-    backgroundColor: inherit
     textColor: "#fff"
     typography:
       fontSize: "75%"
       fontWeight: 700
     rounded: 0.4rem
-  button:
-    backgroundColor: inherit
-    typography:
-      fontWeight: 700
   navbar:
     backgroundColor: "#242526"
   navbar-2:
@@ -186,15 +173,25 @@ components:
     textColor: "#1f51d9"
   table-of-contents-active:
     textColor: "#1f51d9"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 0.4rem
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 0.4rem
+    padding: 9px 13px
 ---
 
 # Adjust Atlas
 
 ## Overview
 
-Adjust Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package.
+Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 11 type tokens.
+Tokens were read from https://atlas.adeven.com, not from a published token package: 91 colour tokens and 11 type tokens.
 
 ## Colors
 
@@ -207,3 +204,10 @@ Families declared in the source: `system-ui,-apple-system,Segoe UI,Roboto,Ubuntu
 ## Components
 
 21 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3578e5` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 9 type steps.
+- **Component Geometry**: Buttons (`0.4rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

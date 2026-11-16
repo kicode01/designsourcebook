@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 14,
     "typography": 12,
-    "components": 2
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,22 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/transferwise/neptune-web",
+    "package": "@transferwise/components"
+  },
+  "popularity": {
+    "rank": 154,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: eBay Skin
-description: "eBay eBay Skin — tokens read from https://github.com/eBay/evo-web."
+description: "Crisp light (#ffffff) canvas, Market Sans typography, #e20020 brand accent, and 8px corner geometry"
 colors:
   color-brand-depop-red: "#e20020"
   color-brand-tise-dark-purple: "#422136"
@@ -118,7 +118,7 @@ typography:
   font-size-64:
     fontSize: 4rem
   font-family-market-sans:
-    fontFamily: Market Sans
+    fontFamily: "\"Market Sans\""
   font-size-12:
     fontSize: 0.75rem
   font-size-14:
@@ -135,13 +135,54 @@ typography:
     fontSize: 2.25rem
   font-size-46:
     fontSize: 2.875rem
+components:
+  button-primary:
+    backgroundColor: "#e20020"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#570303"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#e20020"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # eBay Skin
 
 ## Overview
 
-eBay eBay Skin — tokens read from https://github.com/eBay/evo-web.
+eBay Skin — tokens read from https://github.com/eBay/evo-web.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 20 type tokens.
 
@@ -152,3 +193,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 Families declared in the source: `Market Sans`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#e20020` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Market Sans` across 20 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

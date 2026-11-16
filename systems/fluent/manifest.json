@@ -8,8 +8,8 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "microsoft"
+    "microsoft",
+    "light"
   ],
   "homepage": "",
   "license": "MIT",
@@ -17,7 +17,8 @@
   "provenanceNote": "Tokens imported from @fluentui/tokens@1.0.0-alpha.24 (2 token files, 32 colours harvested, 22 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@fluentui/tokens",
-    "version": "1.0.0-alpha.24"
+    "version": "1.0.0-alpha.24",
+    "repo": "https://github.com/microsoft/fluentui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,16 +28,29 @@
   ],
   "tokens": {
     "colors": 22,
-    "typography": 0,
-    "components": 0
+    "typography": 13,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 15,
+    "stars": 20408,
+    "forks": 2964,
+    "npmDownloads": 2312232,
+    "score": 58611,
+    "frameworks": [
+      "react",
+      "web-components"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 1
   }
 }

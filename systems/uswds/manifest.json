@@ -1,22 +1,24 @@
 {
   "name": "uswds",
   "displayName": "U.S. Web Design System",
-  "description": "U.S. Government U.S. Web Design System — tokens read from https://github.com/uswds/uswds.",
-  "style": "U.S. Government U.S. Web Design System — tokens read from https://github.com/uswds/uswds.",
+  "description": "U.S. Government U.S. Web Design System — tokens imported from @uswds/uswds.",
+  "style": "Accessible federal civic framework, Merriweather + Source Sans Pro Web typography",
   "category": "U.S. Government",
   "org": "U.S. Government",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "published",
-    "dark",
     "u-s-government",
-    "government"
+    "government",
+    "light"
   ],
-  "homepage": "https://github.com/uswds/uswds",
-  "license": "see repository",
+  "homepage": "https://github.com/uswds/uswds#readme",
+  "license": "SEE LICENSE IN LICENSE.md",
   "provenance": "published",
-  "provenanceNote": "Tokens read from the repository https://github.com/uswds/uswds — 7 token files, 27 colours harvested, 27 selected.",
+  "provenanceNote": "Tokens imported from @uswds/uswds@3.14.0 (7 token files, 27 colours harvested, 27 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
+    "package": "@uswds/uswds",
+    "version": "3.14.0",
     "repo": "https://github.com/uswds/uswds"
   },
   "spec": "design.md@alpha",
@@ -27,8 +29,8 @@
   ],
   "tokens": {
     "colors": 28,
-    "typography": 4,
-    "components": 0
+    "typography": 55,
+    "components": 27
   },
   "checks": {
     "errors": 0,
@@ -38,5 +40,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 34,
+    "stars": 7246,
+    "forks": 1126,
+    "npmDownloads": 0,
+    "score": 7246,
+    "frameworks": [
+      "css",
+      "web-components"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 26
   }
 }

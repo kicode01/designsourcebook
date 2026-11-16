@@ -1,0 +1,55 @@
+{
+  "name": "auth0",
+  "displayName": "Auth0 Cosmos",
+  "description": "Auth0 Cosmos — tokens imported from @auth0/cosmos.",
+  "style": "Developer identity platform, FaktPro typography and high-contrast indigo accents",
+  "category": "Auth0",
+  "org": "Auth0",
+  "theme": "light",
+  "tags": [
+    "published",
+    "auth0",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @auth0/cosmos@0.38.1 (4 token files, 168 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@auth0/cosmos",
+    "version": "0.38.1",
+    "repo": "https://github.com/auth0/cosmos"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 75,
+    "stars": 538,
+    "forks": 108,
+    "npmDownloads": 1036,
+    "score": 686,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

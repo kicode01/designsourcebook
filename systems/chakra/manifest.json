@@ -1,22 +1,23 @@
 {
   "name": "chakra",
   "displayName": "Chakra UI",
-  "description": "Chakra UI Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.",
-  "style": "Chakra UI Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.",
+  "description": "Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.",
+  "style": "Crisp light (#fff) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry",
   "category": "Chakra UI",
   "org": "Chakra UI",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "chakra-ui"
+    "chakra-ui",
+    "light"
   ],
   "homepage": "https://github.com/chakra-ui/chakra-ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/chakra-ui/chakra-ui — 7 token files, 124 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/chakra-ui/chakra-ui"
+    "repo": "https://github.com/chakra-ui/chakra-ui",
+    "package": "@chakra-ui/react"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,29 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 4,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 6,
+    "stars": 40727,
+    "forks": 3650,
+    "npmDownloads": 8041976,
+    "score": 134453,
+    "frameworks": [
+      "react",
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 17
   }
 }

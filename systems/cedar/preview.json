@@ -3,22 +3,26 @@
   "surface": "#454441",
   "text": "#f7f7f8",
   "muted": "#f7f7f8",
-  "brand": "#f7f5f3",
+  "brand": "#eae0cc",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
   "radius": "8px",
   "ink": "#f7f7f8",
   "palette": [
     {
-      "name": "cdr-color-background-surface-primary",
-      "value": "#f7f5f3"
+      "name": "cdr-color-background-primary",
+      "value": "#f4f2ed"
     },
     {
-      "name": "cdr-color-background-surface-secondary",
+      "name": "cdr-color-background-secondary",
       "value": "#dcd6cb"
     },
     {
-      "name": "cdr-color-border-surface-primary",
+      "name": "cdr-color-border-primary",
       "value": "#958e83"
+    },
+    {
+      "name": "cdr-color-border-secondary",
+      "value": "#726d64"
     },
     {
       "name": "cdr-button-with-background-background-color-active",
@@ -70,15 +74,168 @@
     },
     {
       "name": "default-value",
-      "value": "#edeae3"
+      "value": "#F9F8F6"
     },
     {
       "name": "primary",
-      "value": "#f7f5f3"
+      "value": "#eae0cc"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "cdr-heading-display-16-3-1",
+      "fontFamily": "Stuart, \"Stuart fallback\", Georgia, serif",
+      "fontSize": "8.6rem",
+      "px": 137.6,
+      "fontWeight": 400,
+      "lineHeight": "9.2rem"
+    },
+    {
+      "name": "cdr-title-16-3-1",
+      "fontFamily": "Stuart, \"Stuart fallback\", Georgia, serif",
+      "fontSize": "5.4rem",
+      "px": 86.4,
+      "fontWeight": 400,
+      "lineHeight": "6rem"
+    },
+    {
+      "name": "cdr-heading-serif-16-3-1",
+      "fontFamily": "Stuart, \"Stuart fallback\", Georgia, serif",
+      "fontSize": "5.4rem",
+      "px": 86.4,
+      "fontWeight": 500,
+      "lineHeight": "6.4rem"
+    },
+    {
+      "name": "cdr-subheading-sans-16-3-1",
+      "fontFamily": "Graphik, \"Graphik fallback\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 500,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "cdr-modal-title-16-3-1",
+      "fontFamily": "Stuart, \"Stuart fallback\", Georgia, serif",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 500,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "cdr-heading-sans-16-3-1",
+      "fontFamily": "Graphik, \"Graphik fallback\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 500,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "cdr-body-16-3-1",
+      "fontFamily": "Graphik, \"Graphik fallback\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.8rem",
+      "px": 28.8,
+      "fontWeight": 400,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "cdr-popover-title-16-3-1",
+      "fontFamily": "Stuart, \"Stuart fallback\", Georgia, serif",
+      "fontSize": "1.8rem",
+      "px": 28.8,
+      "fontWeight": 500,
+      "lineHeight": "2.4rem"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Graphik, \"Graphik fallback\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "cdr-caption-summary-16-3-1",
+      "fontFamily": "Graphik, \"Graphik fallback\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 400,
+      "lineHeight": "2.2rem"
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "fontSize": "10px",
+      "px": 10,
+      "lineHeight": 1.15
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#eae0cc",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#454441",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#454441",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#eae0cc",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#454441",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "REI Cedar — the co-op's open-source design system.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (#454441) canvas paired with `#454441` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#eae0cc` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `sans-serif` across 11 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

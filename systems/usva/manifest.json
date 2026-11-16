@@ -1,15 +1,15 @@
 {
   "name": "usva",
-  "displayName": "usva.",
-  "description": "usva. usva. — tokens read from https://github.com/matt-pasek/usva.",
-  "style": "usva. usva. — tokens read from https://github.com/matt-pasek/usva.",
-  "category": "usva.",
-  "org": "usva.",
+  "displayName": "usva",
+  "description": "usva. — tokens read from https://github.com/matt-pasek/usva.",
+  "style": "Dark (#000) canvas, Inter typography, #0a0613 brand accent, and 8px corner geometry",
+  "category": "usva",
+  "org": "usva",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "usva"
+    "usva",
+    "dark"
   ],
   "homepage": "https://github.com/matt-pasek/usva",
   "license": "see repository",
@@ -26,16 +26,28 @@
   ],
   "tokens": {
     "colors": 29,
-    "typography": 0,
-    "components": 0
+    "typography": 5,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 136,
+    "stars": 3,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 3,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

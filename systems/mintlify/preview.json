@@ -265,7 +265,7 @@
     },
     {
       "key": "button-transparent-nav",
-      "kind": "button",
+      "kind": "nav",
       "textColor": "#0d0d0d",
       "rounded": "8px",
       "padding": "5px 6px",
@@ -311,8 +311,24 @@
       "rounded": "9999px",
       "padding": "0px 12px",
       "border": "1px solid rgba(0,0,0,0.08)"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0d0d0d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
     }
   ],
   "overview": "Mintlify's website is a study in documentation-as-product design — a white, airy, information-rich surface that treats clarity as its highest aesthetic value. The page opens with a luminous white (#ffffff) background, near-black (#0d0d0d) text, and a signature green brand accent (#18E299) that signals freshness and intelligence without dominating the palette. The overall mood is calm, confident, and engineered for legibility — a design system that whispers \"we care about your developer experience\" in every pixel.\n\nThe Inter font family carries the entire typographic load. At display sizes (40–64px), it uses tight negative letter-spacing (-0.8px to -1.28px) and semibold weight (600), creating headlines that feel focused and compressed like well-written documentation headers. Body text at 16–18px with 150% line-height provides generous reading comfort. Geist Mono appears exclusively for…",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0d0d0d` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Inter` across 16 type steps.\n- **Component Geometry**: Buttons (`9999px`), cards (`9999px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

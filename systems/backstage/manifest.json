@@ -1,0 +1,55 @@
+{
+  "name": "backstage",
+  "displayName": "Spotify Backstage",
+  "description": "Spotify Backstage — tokens imported from @backstage/theme.",
+  "style": "Developer portal system, Spotify green highlights on neutral studio surfaces",
+  "category": "Spotify",
+  "org": "Spotify",
+  "theme": "light",
+  "tags": [
+    "published",
+    "spotify",
+    "light"
+  ],
+  "homepage": "https://backstage.io",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @backstage/theme@0.7.3 (1 token files, 56 colours harvested, 56 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@backstage/theme",
+    "version": "0.7.3",
+    "repo": "https://github.com/backstage/backstage"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 57,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 8,
+    "stars": 34863,
+    "forks": 7767,
+    "npmDownloads": 986184,
+    "score": 55548,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

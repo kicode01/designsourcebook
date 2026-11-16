@@ -1,25 +1,24 @@
 {
   "name": "lightning",
   "displayName": "Lightning",
-  "description": "Salesforce Lightning Design System — tokens for the Salesforce platform.",
-  "style": "Salesforce Lightning Design System — tokens for the Salesforce platform.",
+  "description": "Salesforce Lightning — tokens imported from @salesforce-ux/design-system.",
+  "style": "Enterprise CRM workspace, Salesforce cloud blue actions and dense data tables",
   "category": "Salesforce",
   "org": "Salesforce",
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "salesforce",
-    "platform"
+    "light"
   ],
   "homepage": "",
   "license": "BSD-3-Clause",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @salesforce-ux/design-system@2.264.3 (12 token files, 1307 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @salesforce-ux/design-system@2.264.3 (19 token files, 2591 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@salesforce-ux/design-system",
     "version": "2.264.3",
-    "extra": []
+    "repo": "https://github.com/salesforce-ux/design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -29,8 +28,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 2,
-    "components": 0
+    "typography": 120,
+    "components": 38
   },
   "checks": {
     "errors": 0,
@@ -40,5 +39,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 45,
+    "stars": 3700,
+    "forks": 848,
+    "npmDownloads": 222454,
+    "score": 10780,
+    "frameworks": [
+      "react",
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 9
   }
 }

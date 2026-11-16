@@ -181,6 +181,46 @@
       "backgroundColor": "rgba(148,151,169,0.08)",
       "textColor": "#101114",
       "rounded": "12px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#7132f5",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (#7132f5, #5741d8, #5b1ecf) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.\n\nKey Characteristics:\n- Kraken Purple (#7132f5) as primary brand with darker variants (#5741d8, #5b1ecf)\n- Kraken-Brand (display) + Kraken-Product (UI) dual font system\n- Near-black (#101114) text with cool blue-gray neutral scale\n- 12px radius buttons (rounded but not pill)\n- Subtle shadows (rgba(0,0,0,0.03) 0px 4px 24px) — whisper-level\n- Green accent (#149e61) for positive/success states",

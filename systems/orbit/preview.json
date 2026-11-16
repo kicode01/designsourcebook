@@ -5,7 +5,7 @@
   "muted": "#f7f7f8",
   "brand": "#0070C8",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#f7f7f8",
   "palette": [
     {
@@ -85,8 +85,104 @@
       "value": "#0070C8"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "heading-display-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "heading-title0-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "heading-title1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "heading-display-subtitle-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "heading-title2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0070C8",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#1B3249",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#1B3249",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0070C8",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#1B3249",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Kiwi.com Orbit — an open-source design system built for travel projects.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (#1B3249) canvas paired with `#1B3249` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0070C8` with `#f7f7f8` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `system-ui` across 5 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

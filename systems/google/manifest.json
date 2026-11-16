@@ -1,21 +1,23 @@
 {
   "name": "google",
   "displayName": "Google Material Design",
-  "description": "Google Google Material Design — tokens read from https://github.com/material-components/material-web.",
-  "style": "Google Google Material Design — tokens read from https://github.com/material-components/material-web.",
+  "description": "Google Material Design — tokens imported from @material/web.",
+  "style": "Material 3 expressive token system, Roboto Flex typography and tonal purple surfaces",
   "category": "Google",
   "org": "Google",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "google"
+    "google",
+    "light"
   ],
-  "homepage": "https://github.com/material-components/material-web",
-  "license": "see repository",
+  "homepage": "https://github.com/material-components/material-web#readme",
+  "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens read from the repository https://github.com/material-components/material-web — 4 token files, 279 colours harvested, 90 selected.",
+  "provenanceNote": "Tokens imported from @material/web@2.5.0 (5 token files, 765 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
+    "package": "@material/web",
+    "version": "2.5.0",
     "repo": "https://github.com/material-components/material-web"
   },
   "spec": "design.md@alpha",
@@ -26,8 +28,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 10,
-    "components": 0
+    "typography": 32,
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -37,5 +39,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 22,
+    "stars": 11445,
+    "forks": 1172,
+    "npmDownloads": 737652,
+    "score": 28227,
+    "frameworks": [
+      "web-components",
+      "angular",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 5
   }
 }

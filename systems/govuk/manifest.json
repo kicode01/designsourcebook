@@ -8,17 +8,18 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "gov-uk",
-    "government"
+    "government",
+    "light"
   ],
   "homepage": "https://frontend.design-system.service.gov.uk/",
   "license": "MIT",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from govuk-frontend@6.6.0 (1 token files, 20 colours harvested, 20 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from govuk-frontend@6.6.0 (4 token files, 35 colours harvested, 35 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "govuk-frontend",
-    "version": "6.6.0"
+    "version": "6.6.0",
+    "repo": "https://github.com/alphagov/govuk-frontend"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,9 +28,9 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 21,
-    "typography": 2,
-    "components": 22
+    "colors": 35,
+    "typography": 21,
+    "components": 24
   },
   "checks": {
     "errors": 0,
@@ -39,5 +40,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 54,
+    "stars": 1483,
+    "forks": 378,
+    "npmDownloads": 1065071,
+    "score": 23346,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 27
   }
 }

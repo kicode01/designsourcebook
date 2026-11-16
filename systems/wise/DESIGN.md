@@ -19,69 +19,69 @@ colors:
   primary: "#0e0f0c"
 typography:
   display-mega:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 126px
     fontWeight: 900
     lineHeight: 0.85
   display-hero:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 96px
     fontWeight: 900
     lineHeight: 0.85
   section-heading:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 64px
     fontWeight: 900
     lineHeight: 0.85
   sub-heading:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 40px
     fontWeight: 900
     lineHeight: 0.85
   alt-heading:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 78px
     fontWeight: 600
     lineHeight: 1.1
     letterSpacing: "-2.34px"
   card-title:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 26px
     fontWeight: 600
     lineHeight: 1.23
     letterSpacing: "-0.39px"
   feature-title:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 22px
     fontWeight: 600
     lineHeight: 1.25
     letterSpacing: "-0.396px"
   body:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.44
     letterSpacing: 0.18px
   body-semibold:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 18px
     fontWeight: 600
     lineHeight: 1.44
     letterSpacing: "-0.108px"
   button:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 18px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: "-0.108px"
   caption:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.084px"
   small:
-    fontFamily: Wise Sans
+    fontFamily: "\"Wise Sans\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1
@@ -94,9 +94,34 @@ components:
     padding: 5px 16px
   button-secondary-subtle-pill:
     backgroundColor: "rgba(22, 51, 0, 0.08)"
-    textColor: "#0e0f0c"
+    textColor: "#f7f7f8"
     rounded: 9999px
     padding: 8px 12px 8px 16px
+  input-default:
+    backgroundColor: "#0e0f0c"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#0e0f0c"
+    textColor: "#ffffff"
+    rounded: 16px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0e0f0c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#054d28"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#0e0f0c"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 10px 16px
 ---
 
 # Design System: Wise

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Appear Here Styleguide
-description: "Appear Here Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom."
+description: "Crisp light (#eee) canvas, system-ui typography, rgb(234, 155, 82) brand accent, and 8px corner geometry"
 colors:
   color-white: "rgb(255, 255, 255)"
   color-black: "rgb(25, 25, 25)"
@@ -44,13 +44,54 @@ typography:
     fontSize: 0.875rem
   fontsize-small-ii:
     fontSize: 0.6875rem
+components:
+  button-primary:
+    backgroundColor: "rgb(234, 155, 82)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#eee"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#eee"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "rgb(234, 155, 82)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#eee"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Appear Here Styleguide
 
 ## Overview
 
-Appear Here Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.
+Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.
 
 Tokens were read from the project's own repository, not from a marketing site: 24 colour tokens and 8 type tokens.
 
@@ -61,3 +102,10 @@ Tokens were read from the project's own repository, not from a marketing site: 2
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#eee) canvas paired with `#eee` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(234, 155, 82)` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 8 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

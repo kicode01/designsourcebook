@@ -3,176 +3,499 @@
   "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#25c2a0",
+  "brand": "#427cac",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
     {
-      "name": "playground-toolbar-bg",
-      "value": "#334eff"
+      "name": "sap-brand-color",
+      "value": "#427cac"
     },
     {
-      "name": "ifm-color-primary",
-      "value": "#25c2a0"
+      "name": "sap-success-border-color",
+      "value": "#38a238"
     },
     {
-      "name": "ifm-color-primary-dark",
-      "value": "#21af90"
+      "name": "sap-legend-background-color2",
+      "value": "#feeee5"
     },
     {
-      "name": "ifm-color-primary-darker",
-      "value": "#1fa588"
-    },
-    {
-      "name": "ifm-color-primary-darkest",
-      "value": "#1a8870"
-    },
-    {
-      "name": "ifm-color-primary-light",
-      "value": "#29d5b0"
-    },
-    {
-      "name": "ifm-color-primary-lighter",
-      "value": "#32d8b4"
-    },
-    {
-      "name": "ifm-color-primary-lightest",
-      "value": "#4fddbf"
-    },
-    {
-      "name": "ifm-hero-background-color",
+      "name": "sap-content-contrast-focus-color",
       "value": "#fff"
     },
     {
-      "name": "playground-code-background",
-      "value": "#ffffff"
+      "name": "sap-shell-selected-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-default-color",
-      "value": "#1b1032"
+      "name": "sap-shell-category-5-background",
+      "value": "#b64600"
     },
     {
-      "name": "playground-code-cursor-color",
-      "value": "#1b1032"
+      "name": "sap-shell-category-13-background",
+      "value": "#d61818"
     },
     {
-      "name": "playground-code-gutter-background",
-      "value": "#ffffff"
+      "name": "sap-assistant-answer-background",
+      "value": "#e6e6e6"
     },
     {
-      "name": "playground-code-linenumber-color",
-      "value": "#ced0d6"
+      "name": "sap-avatar-6-border-color",
+      "value": "#0092d1"
     },
     {
-      "name": "playground-code-atom-color",
-      "value": "#e45649"
+      "name": "sap-button-hover-text-color",
+      "value": "#346187"
     },
     {
-      "name": "playground-code-attribute-color",
-      "value": "#a626a4"
+      "name": "sap-button-reject-selected-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-builtin-color",
-      "value": "#c18401"
+      "name": "sap-button-selected-hover-background",
+      "value": "#427bac"
     },
     {
-      "name": "playground-code-comment-color",
-      "value": "#a0a1a7"
+      "name": "sap-button-negative-active-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-def-color",
-      "value": "#4078f2"
+      "name": "sap-button-information-hover-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-keyword-color",
-      "value": "#a626a4"
+      "name": "sap-button-handle-border-color",
+      "value": "#ababab"
     },
     {
-      "name": "playground-code-meta-color",
-      "value": "#c18401"
+      "name": "sap-button-handle-positive-background",
+      "value": "#f7f7f7"
     },
     {
-      "name": "playground-code-number-color",
-      "value": "#c18401"
+      "name": "sap-field-success-color",
+      "value": "#38a238"
     },
     {
-      "name": "playground-code-operator-color",
-      "value": "#0184bc"
+      "name": "sap-list-hover-selection-background",
+      "value": "#dde9f2"
     },
     {
-      "name": "playground-code-qualifier-color",
-      "value": "#986801"
+      "name": "sap-progress-critical-background",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-string-color",
-      "value": "#50a14f"
+      "name": "sap-scroll-bar-border-color",
+      "value": "#b2b2b2"
     },
     {
-      "name": "playground-code-string-2-color",
-      "value": "#e45649"
+      "name": "sap-block-layer-background",
+      "value": "#000"
     },
     {
-      "name": "playground-code-tag-color",
-      "value": "#e45649"
+      "name": "sap-tile-text-color",
+      "value": "#666"
     },
     {
-      "name": "playground-code-type-color",
-      "value": "#986801"
+      "name": "sap-indication-color-2-active-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-variable-color",
-      "value": "#e45649"
+      "name": "sap-indication-color-4-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-code-variable-2-color",
-      "value": "#1b1032"
+      "name": "sap-indication-color-5b-border-color",
+      "value": "#d9ebff"
     },
     {
-      "name": "playground-code-variable-3-color",
-      "value": "#986801"
+      "name": "sap-indication-color-7-selected-border-color",
+      "value": "#925ace"
     },
     {
-      "name": "playground-code-callee-color",
-      "value": "#0184bc"
+      "name": "sap-indication-color-9-active-background",
+      "value": "#0d141b"
     },
     {
-      "name": "playground-code-property-color",
-      "value": "#a626a4"
+      "name": "sap-legend-working-background",
+      "value": "#f7f7f7"
     },
     {
-      "name": "playground-highlight-color",
-      "value": "#5d36ff"
+      "name": "sap-chart-sequence-2-minus1-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-tab-bar-background",
-      "value": "rgb(15, 17, 26)"
+      "name": "sap-chart-sequence-4-minus5-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-tab-bar-foreground-color",
-      "value": "rgb(137, 221, 255)"
+      "name": "sap-chart-sequence-7-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-preview-toolbar-background",
-      "value": "rgb(15, 17, 26)"
+      "name": "sap-chart-sequence-9-minus3-text-color",
+      "value": "#fff"
     },
     {
-      "name": "playground-preview-toolbar-foreground-color",
-      "value": "rgb(143, 147, 162)"
+      "name": "sap-chart-sequence-12-plus2-text-color",
+      "value": "#000"
+    },
+    {
+      "name": "sap-chart-sequence-critical-minus1-text-color",
+      "value": "#000"
+    },
+    {
+      "name": "sap-chart-sequence-neutral-minus1",
+      "value": "#6a757b"
+    },
+    {
+      "name": "sap-contrast-sap-success-color",
+      "value": "#abe2ab"
+    },
+    {
+      "name": "sap-contrast-sap-link-visited-color",
+      "value": "#7ed0ff"
+    },
+    {
+      "name": "sap-contrast-sap-shell-category-1-border-color",
+      "value": "#00a4eb"
+    },
+    {
+      "name": "sap-contrast-sap-shell-category-9-border-color",
+      "value": "#c1c8d3"
+    },
+    {
+      "name": "sap-contrast-sap-assistant-hover-text-color",
+      "value": "#fafafa"
+    },
+    {
+      "name": "sap-contrast-sap-button-active-background",
+      "value": "#91c8f6"
+    },
+    {
+      "name": "sap-contrast-sap-button-accept-hover-text-color",
+      "value": "#abe2ab"
+    },
+    {
+      "name": "sap-contrast-sap-button-attention-active-border-colo",
+      "value": "#f9b24b"
+    },
+    {
+      "name": "sap-contrast-sap-button-success-text-color",
+      "value": "#2f3c48"
+    },
+    {
+      "name": "sap-contrast-sap-button-neutral-active-text-color",
+      "value": "#2f3c48"
+    },
+    {
+      "name": "sap-contrast-sap-button-handle-negative-border-color",
+      "value": "#ff8888"
+    },
+    {
+      "name": "sap-contrast-sap-field-focus-border-color",
+      "value": "#7891a7"
+    },
+    {
+      "name": "sap-contrast-sap-list-active-text-color",
+      "value": "#2f3c48"
+    },
+    {
+      "name": "sap-contrast-sap-progress-text-color",
+      "value": "#fafafa"
+    },
+    {
+      "name": "sap-contrast-sap-progress-value-positive-text-color",
+      "value": "#fafafa"
+    },
+    {
+      "name": "sap-contrast-sap-object-header-title-text-color",
+      "value": "#fafafa"
+    },
+    {
+      "name": "sap-contrast-sap-tile-title-text-color",
+      "value": "#fafafa"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-2b-text-color",
+      "value": "#ff8c8c"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-4b-border-color",
+      "value": "#1b4a04"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-7-border-color",
+      "value": "#b995e0"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-9-hover-background",
+      "value": "#fff"
+    },
+    {
+      "name": "sap-contrast-sap-legend-background-color5",
+      "value": "#400c35"
+    },
+    {
+      "name": "sap-contrast-sap-chart-sequence-1-text-color",
+      "value": "#07090a"
+    },
+    {
+      "name": "sap-contrast-sap-chart-sequence-6-plus1-text-color",
+      "value": "#07090a"
+    },
+    {
+      "name": "sap-contrast-sap-chart-sequence-12-plus3-text-color",
+      "value": "#07090a"
+    },
+    {
+      "name": "sap-highlight-color",
+      "value": "#427cac"
+    },
+    {
+      "name": "sap-legend-color5",
+      "value": "#da3fb9"
+    },
+    {
+      "name": "sap-content-icon-color",
+      "value": "#346187"
+    },
+    {
+      "name": "sap-content-drag-and-drop-active-color",
+      "value": "#0070b1"
+    },
+    {
+      "name": "sap-content-illustrative-color15",
+      "value": "#c35500"
+    },
+    {
+      "name": "sap-content-illustrative-color31",
+      "value": "#ffab92"
+    },
+    {
+      "name": "sap-tab-icon-color",
+      "value": "#427cac"
+    },
+    {
+      "name": "sap-indication-color-2",
+      "value": "#bb0000"
+    },
+    {
+      "name": "sap-indication-color-10",
+      "value": "#45484a"
+    },
+    {
+      "name": "sap-chart-ordered-color-4",
+      "value": "#ed4a7b"
+    },
+    {
+      "name": "sap-chart-sequence-1-minus1",
+      "value": "#3170af"
+    },
+    {
+      "name": "sap-chart-sequence-3-plus1",
+      "value": "#39a783"
+    },
+    {
+      "name": "sap-chart-sequence-5-plus3",
+      "value": "#d3bdeb"
+    },
+    {
+      "name": "sap-chart-sequence-6-minus4",
+      "value": "#064147"
+    },
+    {
+      "name": "sap-chart-sequence-8-minus2",
+      "value": "#921473"
+    },
+    {
+      "name": "sap-chart-sequence-10",
+      "value": "#ed5f5f"
+    },
+    {
+      "name": "sap-chart-sequence-12-plus2",
+      "value": "#ead8c7"
+    },
+    {
+      "name": "sap-chart-sequence-bad-minus5",
+      "value": "#380304"
+    },
+    {
+      "name": "sap-chart-sequence-good-minus3",
+      "value": "#20532e"
+    },
+    {
+      "name": "sap-contrast-sap-content-contrast-icon-color",
+      "value": "#2f3c48"
+    },
+    {
+      "name": "sap-contrast-sap-content-illustrative-color5",
+      "value": "#727f87"
+    },
+    {
+      "name": "sap-contrast-sap-shell-navigation-selected-color",
+      "value": "#fff"
+    },
+    {
+      "name": "sap-contrast-sap-button-handle-positive-hover-backgr",
+      "value": "#4f657a"
+    },
+    {
+      "name": "sap-contrast-sap-tab-negative-icon-color",
+      "value": "#f88"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-2b",
+      "value": "#7d0000"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-5b-hover-backgroun",
+      "value": "#0251ad"
+    },
+    {
+      "name": "sap-contrast-sap-indication-color-9",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "sap-contrast-sap-legend-color6",
+      "value": "#00a4eb"
+    },
+    {
+      "name": "sap-contrast-sap-chart-line-color-1",
+      "value": "#354451"
+    },
+    {
+      "name": "sap-contrast-sap-chart-sequence-1-minus2",
+      "value": "#1866b4"
     },
     {
       "name": "primary",
-      "value": "#25c2a0"
+      "value": "#427cac"
     }
   ],
   "type": [
     {
-      "name": "ifm-font-family-base",
-      "fontFamily": "Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif",
+      "name": "sap-object-header-title-font-size",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "sap-object-header-title-snapped-font-size",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "sap-group-title-font-size",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "sap-font-family",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
       "px": 16
+    },
+    {
+      "name": "sap-content-monospace-font-family",
+      "fontFamily": "72Mono, 72Monofull, \"lucida console\", monospace",
+      "px": 16
+    },
+    {
+      "name": "sap-content-monospace-bold-font-family",
+      "fontFamily": "72Mono-Bold, 72Mono-Boldfull, \"lucida console\", monospace",
+      "px": 16
+    },
+    {
+      "name": "sap-button-font-family",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "sap-object-header-title-font-family",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "sap-font-size",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "sap-progress-font-size",
+      "fontFamily": "72full, Arial, Helvetica, sans-serif",
+      "fontSize": ".75rem",
+      "px": 12
     }
   ],
-  "components": [],
-  "overview": "SAP SAP Fiori — tokens read from https://github.com/SAP/ui5-webcomponents.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#427cac",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ff8888",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#427cac",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#38a238",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "SAP Fiori — Enterprise ERP Horizon theme, SAP 72 typography and semantic business status colors",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#427cac` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `72full` across 10 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

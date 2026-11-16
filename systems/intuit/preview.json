@@ -1,145 +1,13 @@
 {
-  "canvas": "#FFF",
-  "surface": "#FFF",
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#999999",
+  "brand": "#FF0000",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "3px",
   "ink": "#0b0b0c",
   "palette": [
-    {
-      "name": "wp-preset-color-black",
-      "value": "#000000"
-    },
-    {
-      "name": "wp-preset-color-cyan-bluish-gray",
-      "value": "#abb8c3"
-    },
-    {
-      "name": "wp-preset-color-white",
-      "value": "#FFF"
-    },
-    {
-      "name": "wp-preset-color-pale-pink",
-      "value": "#f78da7"
-    },
-    {
-      "name": "wp-preset-color-vivid-red",
-      "value": "#cf2e2e"
-    },
-    {
-      "name": "wp-preset-color-luminous-vivid-orange",
-      "value": "#ff6900"
-    },
-    {
-      "name": "wp-preset-color-luminous-vivid-amber",
-      "value": "#fcb900"
-    },
-    {
-      "name": "wp-preset-color-light-green-cyan",
-      "value": "#7bdcb5"
-    },
-    {
-      "name": "wp-preset-color-vivid-green-cyan",
-      "value": "#00d084"
-    },
-    {
-      "name": "wp-preset-color-pale-cyan-blue",
-      "value": "#8ed1fc"
-    },
-    {
-      "name": "wp-preset-color-vivid-cyan-blue",
-      "value": "#0693e3"
-    },
-    {
-      "name": "wp-preset-color-vivid-purple",
-      "value": "#9b51e0"
-    },
-    {
-      "name": "wp-preset-color-accent",
-      "value": "#999999"
-    },
-    {
-      "name": "wp-preset-color-dark-gray",
-      "value": "#111"
-    },
-    {
-      "name": "wp-preset-color-light-gray",
-      "value": "#767676"
-    },
-    {
-      "name": "swiper-theme-color",
-      "value": "#000"
-    },
-    {
-      "name": "lightbox-ui-color-hover",
-      "value": "#fff"
-    },
-    {
-      "name": "n-tabs-color-accent-fallback",
-      "value": "#61ce70"
-    },
-    {
-      "name": "n-tabs-color-secondary-fallback",
-      "value": "#54595f"
-    },
-    {
-      "name": "n-tabs-border-color",
-      "value": "#d5d8dc"
-    },
-    {
-      "name": "n-tabs-title-color-hover",
-      "value": "#fff"
-    },
-    {
-      "name": "n-tabs-title-color-active",
-      "value": "#fff"
-    },
-    {
-      "name": "n-tabs-title-background-color",
-      "value": "#f1f2f3"
-    },
-    {
-      "name": "n-tabs-icon-color-active",
-      "value": "#fff"
-    },
-    {
-      "name": "n-accordion-border-color",
-      "value": "#d5d8dc"
-    },
-    {
-      "name": "n-accordion-title-normal-color",
-      "value": "#1f2124"
-    },
-    {
-      "name": "n-accordion-title-hover-color",
-      "value": "#1f2124"
-    },
-    {
-      "name": "n-accordion-title-active-color",
-      "value": "#1f2124"
-    },
-    {
-      "name": "divider-color",
-      "value": "#0c0d0e"
-    },
-    {
-      "name": "e-social-icon-icon-color",
-      "value": "#fff"
-    },
-    {
-      "name": "e-rating-icon-color",
-      "value": "#ccd6df"
-    },
-    {
-      "name": "e-rating-icon-marked-color",
-      "value": "#f0ad4e"
-    },
-    {
-      "name": "swiper-preloader-color",
-      "value": "#fff"
-    },
     {
       "name": "e-global-color-primary",
       "value": "#FF0000"
@@ -157,40 +25,68 @@
       "value": "#FF0000"
     },
     {
-      "name": "e-flip-box-view-framed-stacked-icon-color",
-      "value": "#fff"
+      "name": "the7-accent-bg-color",
+      "value": "#999999"
     },
     {
-      "name": "e-testimonial-icon-color",
-      "value": "#a4c639"
+      "name": "the7-accent-color",
+      "value": "#999999"
     },
     {
-      "name": "scrolling-track-default-progress-color",
+      "name": "the7-btn-border-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-btn-border-hover-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-links-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-microwidget-button-2-border-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-microwidget-button-2-hover-border-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-microwidget-button-border-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-microwidget-button-hover-border-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-mw-search-border-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-secondary-text-color",
+      "value": "#999999"
+    },
+    {
+      "name": "n-tabs-color-accent-fallback",
       "value": "#61ce70"
     },
     {
-      "name": "scrolling-track-default-color",
-      "value": "#eee"
+      "name": "n-tabs-color-secondary-fallback",
+      "value": "#54595f"
     },
     {
-      "name": "n-menu-title-color-normal",
-      "value": "#1f2124"
+      "name": "n-tabs-border-color",
+      "value": "#d5d8dc"
     },
     {
-      "name": "n-menu-title-color-active",
-      "value": "#58d0f5"
+      "name": "n-tabs-title-background-color",
+      "value": "#f1f2f3"
     },
     {
-      "name": "n-menu-title-hover-color-fallback",
-      "value": "#1f2124"
-    },
-    {
-      "name": "n-menu-title-color-hover",
-      "value": "#1f2124"
-    },
-    {
-      "name": "n-menu-toggle-icon-color",
-      "value": "#1f2124"
+      "name": "n-accordion-border-color",
+      "value": "#d5d8dc"
     },
     {
       "name": "n-menu-dropdown-content-box-border-color",
@@ -209,74 +105,558 @@
       "value": "#0c0d0e"
     },
     {
-      "name": "primary",
+      "name": "wp-preset-color-accent",
       "value": "#999999"
+    },
+    {
+      "name": "the7-links-hover-color",
+      "value": "#0077C5"
+    },
+    {
+      "name": "the7-base-color",
+      "value": "#666666"
+    },
+    {
+      "name": "the7-body-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-breadcrumbs-bg-color",
+      "value": "#594492"
+    },
+    {
+      "name": "the7-btn-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-btn-hover-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-close-menu-caption-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-close-mobile-menu-caption-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-float-menu-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-floating-menu-color-active",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-floating-menu-color",
+      "value": "#666666"
+    },
+    {
+      "name": "the7-footer-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-header-transparent-bg-color",
+      "value": "#eeee22"
+    },
+    {
+      "name": "the7-mega-menu-desc-color",
+      "value": "#333333"
+    },
+    {
+      "name": "the7-mega-menu-widget-color",
+      "value": "#333333"
+    },
+    {
+      "name": "the7-megamenu-title-active-color",
+      "value": "#8224e3"
+    },
+    {
+      "name": "the7-menu-active-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-menu-color",
+      "value": "#666666"
+    },
+    {
+      "name": "the7-menu-hover-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-message-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-microwidget-button-2-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-microwidget-button-2-hover-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-microwidget-button-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-microwidget-button-hover-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-microwidgets-in-top-line-icon-color",
+      "value": "#888888"
+    },
+    {
+      "name": "the7-mobile-header-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-mobile-menu-active-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-mobile-menu-color",
+      "value": "#666666"
+    },
+    {
+      "name": "the7-mobile-menu-microwidgets-color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "the7-mobile-microwidgets-color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "the7-mobile-toggle-menu-color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "the7-mw-search-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-navigation-bg-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-navigation-line-decoration-color",
+      "value": "#dd9933"
+    },
+    {
+      "name": "the7-page-title-breadcrumbs-color",
+      "value": "#999999"
+    },
+    {
+      "name": "the7-product-counter-bg",
+      "value": "#1b1b18"
+    },
+    {
+      "name": "the7-soc-ico-hover-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-sub-cart-color",
+      "value": "#1b1b18"
+    },
+    {
+      "name": "the7-submenu-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-submenu-hover-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-toggle-menu-caption-color-hover",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-toggle-menu-close-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-toggle-menu-color",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-toggle-mobile-menu-caption-color-hover",
+      "value": "#000000"
+    },
+    {
+      "name": "the7-toggle-mobile-menu-close-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-toggle-mobile-menu-close-hover-color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "the7-top-bar-icon-color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "the7-top-color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "the7-top-icons-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "the7-wc-steps-bg",
+      "value": "#f8f8f9"
+    },
+    {
+      "name": "the7-widget-footer-color",
+      "value": "#666666"
+    },
+    {
+      "name": "the7-widget-sidebar-bg-color",
+      "value": "#f7f7f8"
+    },
+    {
+      "name": "the7-widget-sidebar-header-color",
+      "value": "#000000"
+    },
+    {
+      "name": "lightbox-ui-color-hover",
+      "value": "#fff"
+    },
+    {
+      "name": "n-tabs-title-color-active",
+      "value": "#fff"
+    },
+    {
+      "name": "n-accordion-title-normal-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-accordion-title-active-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "e-social-icon-icon-color",
+      "value": "#fff"
+    },
+    {
+      "name": "e-rating-icon-marked-color",
+      "value": "#f0ad4e"
+    },
+    {
+      "name": "e-flip-box-view-framed-stacked-icon-color",
+      "value": "#fff"
+    },
+    {
+      "name": "scrolling-track-default-progress-color",
+      "value": "#61ce70"
+    },
+    {
+      "name": "n-menu-title-color-normal",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-menu-title-hover-color-fallback",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-menu-toggle-icon-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "wp-preset-color-cyan-bluish-gray",
+      "value": "#abb8c3"
+    },
+    {
+      "name": "primary",
+      "value": "#FF0000"
     }
   ],
   "type": [
     {
+      "name": "elementor-heading-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "110px",
+      "px": 110,
+      "lineHeight": "1.3em"
+    },
+    {
+      "name": "the7-h1-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "50px",
+      "px": 50
+    },
+    {
+      "name": "the7-h1-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "50px",
+      "px": 50
+    },
+    {
       "name": "wp-preset-font-size-x-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "42px",
       "px": 42
     },
     {
       "name": "e-global-typography-2d6a0b4-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "41px",
       "px": 41
     },
     {
+      "name": "the7-h2-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "the7-h2-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "h1",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "40px",
+      "px": 40,
+      "lineHeight": "44px"
+    },
+    {
       "name": "wp-preset-font-size-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "36px",
       "px": 36
     },
     {
+      "name": "elementor-slide-heading",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "35px",
+      "px": 35,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
       "name": "e-global-typography-a5a658e-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "26px",
       "px": 26
     },
     {
-      "name": "wp-preset-font-size-medium",
-      "fontFamily": "system-ui",
-      "fontSize": "20px",
-      "px": 20
+      "name": "the7-h3-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "26px",
+      "px": 26
     },
     {
-      "name": "n-accordion-title-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "20px",
-      "px": 20
+      "name": "the7-h3-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "h2",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "the7-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "the7-title-responsive-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "elementor-price-table-heading",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "ele-entry-title",
+      "fontFamily": "AvenirForIntuit, Sans-serif",
+      "fontSize": "23px",
+      "px": 23,
+      "fontWeight": 500
+    },
+    {
+      "name": "elementor-cta-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "23px",
+      "px": 23
+    },
+    {
+      "name": "the7-h4-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "the7-h4-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "the7-menu-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "the7-mobile-menu-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "the7-woo-title-font-size-desktop",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "21px",
+      "px": 21
+    },
+    {
+      "name": "the7-woo-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "21px",
+      "px": 21
+    },
+    {
+      "name": "elementor-flip-box-layer-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "21px",
+      "px": 21
     },
     {
       "name": "e-global-typography-primary-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "20px",
       "px": 20
     },
     {
       "name": "the7-btn-xl-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "the7-additional-logo-elements-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "the7-additional-menu-elements-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "the7-microwidgets-in-top-line-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "n-accordion-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "wp-preset-font-size-medium",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "the7-form-md-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "elementor-counter-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "19px",
+      "px": 19,
+      "fontWeight": 400,
+      "lineHeight": 2.5
+    },
+    {
+      "name": "the7-btn-lg-font-size",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "18px",
       "px": 18
     },
     {
-      "name": "n-tabs-title-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem",
+      "name": "the7-h5-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "the7-h5-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "the7-product-microwidget-content-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "the7-product-microwidget-content-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "elementor-post-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "elementor-portfolio-item-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "lineHeight": 1
+    },
+    {
+      "name": "elementor-toc-header-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "wc-block-grid-product-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "1em",
       "px": 16
     },
     {
-      "name": "e-rating-icon-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "16px",
+      "name": "wc-block-stock-filter-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "1em",
       "px": 16
     },
     {
-      "name": "the7-btn-lg-font-size",
-      "fontFamily": "system-ui",
+      "name": "the7-btn-l-font-size",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "16px",
       "px": 16
     },
@@ -296,132 +676,629 @@
       "px": 16
     },
     {
-      "name": "the7-base-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_1-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-h1-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_1-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-h2-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_2-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-h3-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_3-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-h4-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_4-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-h5-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_5-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-h6-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_6-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-widget-title-font-family",
-      "fontFamily": "var( --e-global-typography-el_title_5-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
-      "name": "the7-widget-content-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
-      "px": 16
-    },
-    {
       "name": "the7-btn-s-font-family",
-      "fontFamily": "Inter\", Sans-serif",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
       "name": "the7-btn-m-font-family",
-      "fontFamily": "Inter\", Sans-serif",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
       "name": "the7-btn-l-font-family",
-      "fontFamily": "Inter\", Sans-serif",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
       "name": "the7-btn-lg-font-family",
-      "fontFamily": "Inter\", Sans-serif",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
       "name": "the7-btn-xl-font-family",
-      "fontFamily": "Inter\", Sans-serif",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
-      "name": "the7-form-xs-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "name": "the7-h1-font-family",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
-      "name": "the7-form-sm-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "name": "the7-h2-font-family",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
-      "name": "the7-form-md-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "name": "the7-h3-font-family",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
-      "name": "the7-form-lg-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "name": "the7-h4-font-family",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
-      "name": "the7-form-xl-font-family",
-      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "name": "the7-h5-font-family",
+      "fontFamily": "Inter, Sans-serif",
       "px": 16
     },
     {
-      "name": "n-menu-title-font-size",
-      "fontFamily": "system-ui",
+      "name": "the7-h6-font-family",
+      "fontFamily": "Inter, Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-close-menu-caption-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-close-mobile-menu-caption-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-h6-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-h6-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-mega-menu-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-menu-caption-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-menu-caption-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-sub-menu-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-mw-search-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-submenu-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-text-big-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-widget-title-font-size-desktop",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-widget-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-woo-content-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-woo-content-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-additional-logo-elements-font-family",
+      "fontFamily": "Arial, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-additional-menu-elements-font-family",
+      "fontFamily": "Arial, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-base-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-breadcrumbs-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-close-menu-caption-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-close-mobile-menu-caption-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-filter-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mega-menu-desc-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mega-menu-title-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-menu-caption-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-menu-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-microwidget-button-2-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-microwidget-button-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-microwidgets-in-top-line-font-family",
+      "fontFamily": "Arial, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-menu-caption-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-menu-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-menu-microwidgets-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-microwidgets-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mobile-sub-menu-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-mw-search-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-page-title-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-product-microwidget-content-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-sub-subtitle-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-submenu-font-family",
+      "fontFamily": "Nunito, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-subtitle-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-top-bar-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-widget-content-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-widget-title-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-woo-content-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-woo-title-font-family",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h3",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "1em",
+      "px": 16,
+      "lineHeight": "1.2em"
+    },
+    {
+      "name": "n-tabs-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
-      "name": "the7-btn-l-font-size",
-      "fontFamily": "system-ui",
+      "name": "e-rating-icon-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "elementor-slideshow-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "n-menu-title-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "e-tab-mobile-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "38px"
+    },
+    {
+      "name": "e-tabs-title",
+      "fontFamily": "Roboto, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "html",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "the7-form-md-font-family",
+      "fontFamily": "Inter, Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-lg-font-family",
+      "fontFamily": "Inter, Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-sm-font-family",
+      "fontFamily": "Inter, Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-xs-font-family",
+      "fontFamily": "Inter, Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-xl-font-family",
+      "fontFamily": "Inter, Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-base-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "the7-filter-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "the7-widget-content-font-size-desktop",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "the7-widget-content-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "the7-btn-m-font-size",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "14px",
       "px": 14
     },
     {
-      "name": "wp-preset-font-size-small",
-      "fontFamily": "system-ui",
+      "name": "the7-breadcrumbs-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "the7-microwidget-button-2-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "the7-microwidget-button-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "the7-mobile-menu-microwidgets-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "the7-mobile-microwidgets-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "the7-top-bar-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "e-section-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": "36px"
+    },
+    {
+      "name": "e-tab-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": "55px"
+    },
+    {
+      "name": "e-tab-title-text",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "the7-text-small-font-size",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "13px",
       "px": 13
     },
     {
-      "name": "the7-btn-m-font-size",
-      "fontFamily": "system-ui",
+      "name": "elementor-price-table-subheading",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400
+    },
+    {
+      "name": "pswp-caption-center",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "wp-preset-font-size-small",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "13px",
       "px": 13
+    },
+    {
+      "name": "elementor-testimonial-title",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "12.5px",
+      "px": 12.5,
+      "fontWeight": 400
     },
     {
       "name": "the7-btn-s-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "AvenirForIntuit",
       "fontSize": "12px",
       "px": 12
+    },
+    {
+      "name": "the7-sub-subtitle-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "the7-subtitle-font-size",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "menu-subtitle",
+      "fontFamily": "\"Nunito Sans\", Helvetica, Arial, Verdana, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "post-navigation-prev-title",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": ".7em",
+      "px": 11.2
+    },
+    {
+      "name": "the7-mega-menu-desc-font-size",
+      "fontFamily": "AvenirForIntuit",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "subtitle-text",
+      "fontFamily": "Arial, sans-serif",
+      "fontSize": "10px",
+      "px": 10,
+      "lineHeight": "12px"
     }
   ],
-  "components": [],
-  "overview": "Intuit Intuit Harmony — read from designsystem.quickbooks.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "components": [
+    {
+      "key": "elementor-price-table",
+      "kind": "nav",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "elementor-widget-woocommerce-purchase-summary",
+      "kind": "card",
+      "textColor": "#69727d"
+    },
+    {
+      "key": "nav-menu-dropdown",
+      "kind": "nav",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "rgb(105, 114, 125)",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "3px",
+      "padding": "12px 24px"
+    },
+    {
+      "key": "wp-block-button-2",
+      "kind": "button",
+      "backgroundColor": "rgb(50, 55, 60)",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "9999px"
+    },
+    {
+      "key": "wc-block-components-notice-banner",
+      "kind": "card",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(47, 47, 47)",
+      "rounded": "4px",
+      "padding": "16px",
+      "border": "1px solid"
+    },
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "padding": "0px 0px 0px 0px"
+    },
+    {
+      "key": "dt-wc-btn",
+      "kind": "button",
+      "backgroundColor": "#999999",
+      "shadow": "0px 0px 10px 0px rgba(0,0,0,0)"
+    },
+    {
+      "key": "wc-block-filter-submit-button-2",
+      "kind": "button",
+      "backgroundColor": "#999999"
+    },
+    {
+      "key": "woocommerce-widget-layered-nav-dropdown-2",
+      "kind": "nav",
+      "backgroundColor": "#999999",
+      "shadow": "0px 0px 10px 0px rgba(0,0,0,0)"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "3px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#FF0000",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    }
+  ],
+  "overview": "Intuit Harmony — Crisp light (#ffffff) canvas, -apple-system typography, #FF0000 brand accent, and 3px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF0000` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 144 type steps.\n- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

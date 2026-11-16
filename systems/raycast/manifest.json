@@ -6,9 +6,9 @@
   "category": "Developer Tools & Platforms",
   "theme": "dark",
   "tags": [
-    "dark",
     "gradient",
-    "developer-tools"
+    "developer-tools",
+    "dark"
   ],
   "homepage": "https://raycast.com",
   "license": "proprietary",
@@ -22,16 +22,32 @@
   ],
   "tokens": {
     "colors": 27,
-    "typography": 0,
-    "components": 0
+    "typography": 11,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/raycast/extensions",
+    "package": "@raycast/api"
+  },
+  "popularity": {
+    "rank": 32,
+    "stars": 7843,
+    "forks": 7585,
+    "npmDownloads": 0,
+    "score": 7843,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -4,11 +4,11 @@
   "description": "Clean blue identity, trust-focused, institutional feel",
   "style": "Clean blue identity, trust-focused, institutional feel",
   "category": "Fintech & Crypto",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "enterprise",
     "fintech",
-    "dark"
+    "light"
   ],
   "homepage": "https://coinbase.com",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 10,
     "typography": 13,
-    "components": 1
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/coinbase/cds",
+    "package": "@coinbase/cds-web"
+  },
+  "popularity": {
+    "rank": 77,
+    "stars": 510,
+    "forks": 116,
+    "npmDownloads": 22219,
+    "score": 1858,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

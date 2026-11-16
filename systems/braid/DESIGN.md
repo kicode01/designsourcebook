@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Braid Design System
-description: "Braid Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system."
+description: "Crisp light (#fff) canvas, SeekSans typography, #3b72da brand accent, and 8px corner geometry"
 colors:
   background-body: "#fff"
   brand-accent: "#3b72da"
@@ -94,13 +94,59 @@ colors:
   purple-100: "#F9EBFD"
   light-mode-fill: "#000"
   primary: "#3b72da"
+typography:
+  font-family:
+    fontFamily: "SeekSans, \"SeekSans Fallback\", Arial, Tahoma, sans-serif"
+  font-size:
+    fontSize: "100%"
+components:
+  button-primary:
+    backgroundColor: "#3b72da"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#222"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#B91E1E"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#222"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#222"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#3b72da"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#1E771D"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#222"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Braid Design System
 
 ## Overview
 
-Braid Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system.
+Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +157,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#222` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3b72da` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `SeekSans` across 2 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -1,0 +1,701 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0d6efd",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "6px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "bs-primary",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-secondary",
+      "value": "#6c757d"
+    },
+    {
+      "name": "bs-success",
+      "value": "#198754"
+    },
+    {
+      "name": "bs-info",
+      "value": "#0dcaf0"
+    },
+    {
+      "name": "bs-warning",
+      "value": "#ffc107"
+    },
+    {
+      "name": "bs-danger",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-primary-text-emphasis",
+      "value": "#052c65"
+    },
+    {
+      "name": "bs-secondary-text-emphasis",
+      "value": "#2b2f32"
+    },
+    {
+      "name": "bs-success-text-emphasis",
+      "value": "#0a3622"
+    },
+    {
+      "name": "bs-info-text-emphasis",
+      "value": "#055160"
+    },
+    {
+      "name": "bs-warning-text-emphasis",
+      "value": "#664d03"
+    },
+    {
+      "name": "bs-danger-text-emphasis",
+      "value": "#58151c"
+    },
+    {
+      "name": "bs-light-text-emphasis",
+      "value": "#495057"
+    },
+    {
+      "name": "bs-dark-text-emphasis",
+      "value": "#495057"
+    },
+    {
+      "name": "bs-primary-bg-subtle",
+      "value": "#cfe2ff"
+    },
+    {
+      "name": "bs-secondary-bg-subtle",
+      "value": "#e2e3e5"
+    },
+    {
+      "name": "bs-success-bg-subtle",
+      "value": "#d1e7dd"
+    },
+    {
+      "name": "bs-info-bg-subtle",
+      "value": "#cff4fc"
+    },
+    {
+      "name": "bs-warning-bg-subtle",
+      "value": "#fff3cd"
+    },
+    {
+      "name": "bs-danger-bg-subtle",
+      "value": "#f8d7da"
+    },
+    {
+      "name": "bs-primary-border-subtle",
+      "value": "#9ec5fe"
+    },
+    {
+      "name": "bs-secondary-border-subtle",
+      "value": "#c4c8cb"
+    },
+    {
+      "name": "bs-success-border-subtle",
+      "value": "#a3cfbb"
+    },
+    {
+      "name": "bs-info-border-subtle",
+      "value": "#9eeaf9"
+    },
+    {
+      "name": "bs-warning-border-subtle",
+      "value": "#ffe69c"
+    },
+    {
+      "name": "bs-danger-border-subtle",
+      "value": "#f1aeb5"
+    },
+    {
+      "name": "bs-light-border-subtle",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "bs-dark-border-subtle",
+      "value": "#adb5bd"
+    },
+    {
+      "name": "bs-secondary-color-rgb",
+      "value": "rgb(33, 37, 41)"
+    },
+    {
+      "name": "bs-secondary-bg",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "bs-secondary-bg-rgb",
+      "value": "rgb(233, 236, 239)"
+    },
+    {
+      "name": "bs-link-color",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-link-color-rgb",
+      "value": "rgb(13, 110, 253)"
+    },
+    {
+      "name": "bs-link-hover-color",
+      "value": "#0a58ca"
+    },
+    {
+      "name": "bs-link-hover-color-rgb",
+      "value": "rgb(10, 88, 202)"
+    },
+    {
+      "name": "bs-border-color",
+      "value": "#dee2e6"
+    },
+    {
+      "name": "bs-form-valid-border-color",
+      "value": "#198754"
+    },
+    {
+      "name": "bs-form-invalid-border-color",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-table-border-color",
+      "value": "#a6b5cc"
+    },
+    {
+      "name": "bs-btn-border-color",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-btn-hover-border-color",
+      "value": "#0a58ca"
+    },
+    {
+      "name": "bs-btn-active-border-color",
+      "value": "#0a53be"
+    },
+    {
+      "name": "bs-btn-disabled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-btn-disabled-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-btn-disabled-border-color",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-dropdown-link-active-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-dropdown-link-active-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-dropdown-link-color",
+      "value": "#dee2e6"
+    },
+    {
+      "name": "bs-dropdown-link-hover-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-dropdown-link-disabled-color",
+      "value": "#adb5bd"
+    },
+    {
+      "name": "bs-nav-pills-link-active-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-nav-pills-link-active-bg",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-navbar-brand-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-navbar-brand-hover-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-pagination-active-border-color",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-list-group-active-border-color",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "gray-200",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "gray-400",
+      "value": "#ced4da"
+    },
+    {
+      "name": "gray-600",
+      "value": "#6c757d"
+    },
+    {
+      "name": "gray-800",
+      "value": "#343a40"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "indigo",
+      "value": "#6610f2"
+    },
+    {
+      "name": "pink",
+      "value": "#d63384"
+    },
+    {
+      "name": "orange",
+      "value": "#fd7e14"
+    },
+    {
+      "name": "green",
+      "value": "#198754"
+    },
+    {
+      "name": "cyan",
+      "value": "#0dcaf0"
+    },
+    {
+      "name": "bs-blue",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-purple",
+      "value": "#6f42c1"
+    },
+    {
+      "name": "bs-red",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-yellow",
+      "value": "#ffc107"
+    },
+    {
+      "name": "bs-teal",
+      "value": "#20c997"
+    },
+    {
+      "name": "bs-black",
+      "value": "#000"
+    },
+    {
+      "name": "bs-gray",
+      "value": "#6c757d"
+    },
+    {
+      "name": "bs-gray-100",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "bs-gray-300",
+      "value": "#dee2e6"
+    },
+    {
+      "name": "bs-gray-500",
+      "value": "#adb5bd"
+    },
+    {
+      "name": "bs-gray-700",
+      "value": "#495057"
+    },
+    {
+      "name": "bs-gray-900",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-dark",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-dark-bg-subtle",
+      "value": "#ced4da"
+    },
+    {
+      "name": "bs-body-color-rgb",
+      "value": "rgb(33, 37, 41)"
+    },
+    {
+      "name": "bs-body-bg-rgb",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "bs-emphasis-color-rgb",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "bs-tertiary-bg",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "bs-code-color",
+      "value": "#d63384"
+    },
+    {
+      "name": "bs-highlight-bg",
+      "value": "#fff3cd"
+    },
+    {
+      "name": "bs-form-invalid-color",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-table-bg",
+      "value": "#cfe2ff"
+    },
+    {
+      "name": "bs-table-striped-color",
+      "value": "#000"
+    },
+    {
+      "name": "primary",
+      "value": "#0d6efd"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-1",
+      "fontFamily": "null",
+      "fontSize": "5rem",
+      "px": 80
+    },
+    {
+      "name": "display-2",
+      "fontFamily": "null",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "display-3",
+      "fontFamily": "null",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "display-4",
+      "fontFamily": "null",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "display-5",
+      "fontFamily": "null",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "h1",
+      "fontFamily": "null",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "display-6",
+      "fontFamily": "null",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "h2",
+      "fontFamily": "null",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h3",
+      "fontFamily": "null",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "legend-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "h4",
+      "fontFamily": "null",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "h5",
+      "fontFamily": "null",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "bs-navbar-brand-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "bs-navbar-toggler-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "lead",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "font-family-sans-serif",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "headings-font-family",
+      "fontFamily": "null",
+      "px": 16
+    },
+    {
+      "name": "display-font-family",
+      "fontFamily": "null",
+      "px": 16
+    },
+    {
+      "name": "input-btn-font-family",
+      "fontFamily": "null",
+      "px": 16
+    },
+    {
+      "name": "bs-body-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bs-font-sans-serif",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "bs-font-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "bs-body-font-family",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "h6",
+      "fontFamily": "null",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bs-dropdown-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bs-popover-header-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "small-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "toast-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-btn-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-pagination-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-toast-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-tooltip-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "bs-popover-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "figure-caption",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.875em",
+      "px": 14
+    },
+    {
+      "name": "sub-sup-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".75em",
+      "px": 12
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".75em",
+      "px": 12
+    },
+    {
+      "name": "bs-badge-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "bs-progress-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "link-info",
+      "kind": "nav",
+      "textColor": "RGBA(13, 202, 240, 1)"
+    },
+    {
+      "key": "link-dark-2",
+      "kind": "nav",
+      "textColor": "RGBA(33, 37, 41, 1)"
+    },
+    {
+      "key": "link-light-3",
+      "kind": "nav",
+      "textColor": "RGBA(248, 249, 250, 1)"
+    },
+    {
+      "key": "link-danger-4",
+      "kind": "nav",
+      "textColor": "RGBA(220, 53, 69, 1)"
+    },
+    {
+      "key": "link-primary-5",
+      "kind": "nav",
+      "textColor": "RGBA(13, 110, 253, 1)"
+    },
+    {
+      "key": "link-success-6",
+      "kind": "nav",
+      "textColor": "RGBA(25, 135, 84, 1)"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc3545",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#198754",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    }
+  ],
+  "overview": "Bootstrap — Foundational responsive web toolkit, semantic six-color utility palette",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0d6efd` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `system-ui` across 40 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

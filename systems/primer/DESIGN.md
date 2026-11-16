@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Primer
-description: "GitHub Primer — the design system behind GitHub."
+description: "Developer code-hosting interface, Mona Sans variable type and semantic GitHub scales"
 colors:
   button-primary-bg-color-active: "#3685f3"
   fg-color-accent: "#74b9ff"
@@ -93,21 +93,80 @@ colors:
   base-display-color-indigo-4: "#514ed4"
   base-display-color-olive-9: "#e2d04b"
   base-display-color-plum-4: "#9518d8"
-  primary: "#3685f3"
+  primary: "#74b9ff"
+typography:
+  font-stack-monospace:
+    fontFamily: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
+  font-stack-sans-serif:
+    fontFamily: "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\""
+  font-stack-sans-serif-display:
+    fontFamily: "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\""
+  font-stack-system:
+    fontFamily: "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\""
+  org-primer-data:
+    fontSize: 16px
+components:
+  button-primary:
+    backgroundColor: "#74b9ff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#f48b25"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#74b9ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#194fb1"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Primer
 
 ## Overview
 
-GitHub Primer — the design system behind GitHub.
+GitHub Primer — tokens imported from @primer/primitives.
 
-Tokens were read from `@primer/primitives@11.10.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@primer/primitives@11.10.0`, not from a marketing site: 91 colour tokens and 5 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace`, `"Mona Sans VF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Backtick Fix", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#74b9ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `ui-monospace` across 5 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#ff7d00",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -104,60 +104,313 @@
   "type": [
     {
       "name": "font-size-display-3",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "56px",
       "px": 56
     },
     {
       "name": "font-size-display-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "48px",
       "px": 48
     },
     {
       "name": "font-size-display-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "36px",
       "px": 36
     },
     {
+      "name": "h1",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
       "name": "font-size-title-3",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "24px",
       "px": 24
     },
     {
       "name": "font-size-title-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "20px",
       "px": 20
     },
     {
+      "name": "arco-page-header-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600
+    },
+    {
+      "name": "arco-popconfirm-title-icon",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
       "name": "font-size-title-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "16px",
       "px": 16
     },
     {
+      "name": "arco-alert-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "arco-calendar-month-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "arco-card-meta-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "arco-descriptions-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5715
+    },
+    {
+      "name": "arco-drawer-header-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "arco-image-caption-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "arco-modal-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "arco-notification-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "arco-popover-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "arco-steps-item-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": "28px"
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "arco-anchor-link-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.5715
+    },
+    {
+      "name": "arco-panel-date-timepicker-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "40px"
+    },
+    {
+      "name": "arco-image-caption-description",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "arco-page-header-sub-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "arco-popconfirm-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "arco-result-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.5715
+    },
+    {
+      "name": "arco-result-subtitle",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.5715
+    },
+    {
+      "name": "arco-statistic-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "arco-tabs-header-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.5715
+    },
+    {
+      "name": "arco-tree-node-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
       "name": "font-size-body-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "13px",
       "px": 13
     },
     {
       "name": "font-size-body-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "12px",
       "px": 12
     },
     {
       "name": "font-size-caption",
-      "fontFamily": "system-ui",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
       "fontSize": "12px",
       "px": 12
+    },
+    {
+      "name": "arco-dropdown-menu-group-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "arco-select-group-title",
+      "fontFamily": "NunitoSans-Bold, \"Nunito Sans\"",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": "20px"
     }
   ],
-  "components": [],
-  "overview": "ByteDance ByteDance Arco Design — tokens read from https://github.com/arco-design/arco-design.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#ff7d00",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#FFF",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#FFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff7d00",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#FFF",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "ByteDance Arco Design — Crisp light (#FFF) canvas, NunitoSans-Bold typography, #ff7d00 brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#FFF) canvas paired with `#FFF` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff7d00` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `NunitoSans-Bold` across 37 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

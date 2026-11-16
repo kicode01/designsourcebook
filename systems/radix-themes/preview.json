@@ -3,7 +3,7 @@
   "surface": "#1a211e",
   "text": "#f7f7f8",
   "muted": "#f7f7f8",
-  "brand": "#f7f7f8",
+  "brand": "rgba(255, 255, 255, 0.7)",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
   "radius": "8px",
   "ink": "#f7f7f8",
@@ -163,95 +163,100 @@
     {
       "name": "yellow-surface",
       "value": "#fefbe4cc"
+    },
+    {
+      "name": "primary",
+      "value": "rgba(255, 255, 255, 0.7)"
     }
   ],
   "type": [
     {
-      "name": "font-size-1",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(12px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-2",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(14px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-3",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(16px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-4",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(18px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-5",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(20px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-6",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(24px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-7",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(28px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-8",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(35px * var(--scaling))",
-      "px": 16
-    },
-    {
-      "name": "font-size-9",
-      "fontFamily": "system-ui",
-      "fontSize": "calc(60px * var(--scaling))",
-      "px": 16
-    },
-    {
       "name": "default-font-family",
-      "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI (Custom)', Roboto, 'Helvetica Neue', 'Open Sans (Custom)', system-ui,\r\n    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji",
-      "px": 16
-    },
-    {
-      "name": "heading-font-family",
-      "fontFamily": "var(--default-font-family)",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI (Custom)\", Roboto, \"Helvetica Neue\", \"Open Sans (Custom)\", system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "px": 16
     },
     {
       "name": "code-font-family",
-      "fontFamily": "Menlo', 'Consolas (Custom)', 'Bitstream Vera Sans Mono', monospace, 'Apple Color Emoji', 'Segoe UI Emoji",
-      "px": 16
-    },
-    {
-      "name": "strong-font-family",
-      "fontFamily": "var(--default-font-family)",
+      "fontFamily": "Menlo, \"Consolas (Custom)\", \"Bitstream Vera Sans Mono\", monospace, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "px": 16
     },
     {
       "name": "em-font-family",
-      "fontFamily": "Times New Roman', 'Times', serif",
+      "fontFamily": "\"Times New Roman\", Times, serif",
       "px": 16
     },
     {
       "name": "quote-font-family",
-      "fontFamily": "Times New Roman', 'Times', serif",
+      "fontFamily": "\"Times New Roman\", Times, serif",
       "px": 16
     }
   ],
-  "components": [],
-  "overview": "WorkOS Radix Themes — tokens read from https://github.com/radix-ui/themes.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0.7)",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#1a211e",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#1a211e",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgba(255, 255, 255, 0.7)",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#1a211e",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Radix Themes — Dark (#1a211e) canvas, -apple-system typography, rgba(255, 255, 255, 0.7) brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Dark (#1a211e) canvas paired with `#1a211e` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(255, 255, 255, 0.7)` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

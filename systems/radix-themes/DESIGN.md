@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Radix Themes
-description: "WorkOS Radix Themes — tokens read from https://github.com/radix-ui/themes."
+description: "Dark (#1a211e) canvas, -apple-system typography, rgba(255, 255, 255, 0.7) brand accent, and 8px corner geometry"
 colors:
   color-panel-translucent: "rgba(255, 255, 255, 0.7)"
   color-surface: "rgba(255, 255, 255, 0.85)"
@@ -42,38 +42,57 @@ colors:
   violet-surface: "#f9f6ffcc"
   yellow-contrast: "#21201c"
   yellow-surface: "#fefbe4cc"
+  primary: "rgba(255, 255, 255, 0.7)"
 typography:
-  font-size-1:
-    fontSize: "calc(12px * var(--scaling))"
-  font-size-2:
-    fontSize: "calc(14px * var(--scaling))"
-  font-size-3:
-    fontSize: "calc(16px * var(--scaling))"
-  font-size-4:
-    fontSize: "calc(18px * var(--scaling))"
-  font-size-5:
-    fontSize: "calc(20px * var(--scaling))"
-  font-size-6:
-    fontSize: "calc(24px * var(--scaling))"
-  font-size-7:
-    fontSize: "calc(28px * var(--scaling))"
-  font-size-8:
-    fontSize: "calc(35px * var(--scaling))"
-  font-size-9:
-    fontSize: "calc(60px * var(--scaling))"
   default-font-family:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI (Custom)', Roboto, 'Helvetica Neue', 'Open Sans (Custom)', system-ui,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji"
-  heading-font-family:
-    fontFamily: "var(--default-font-family)"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI (Custom)\", Roboto, \"Helvetica Neue\", \"Open Sans (Custom)\", system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\""
   code-font-family:
-    fontFamily: "Menlo', 'Consolas (Custom)', 'Bitstream Vera Sans Mono', monospace, 'Apple Color Emoji', 'Segoe UI Emoji"
-  strong-font-family:
-    fontFamily: "var(--default-font-family)"
+    fontFamily: "Menlo, \"Consolas (Custom)\", \"Bitstream Vera Sans Mono\", monospace, \"Apple Color Emoji\", \"Segoe UI Emoji\""
   em-font-family:
-    fontFamily: "Times New Roman', 'Times', serif"
+    fontFamily: "\"Times New Roman\", Times, serif"
   quote-font-family:
-    fontFamily: "Times New Roman', 'Times', serif"
+    fontFamily: "\"Times New Roman\", Times, serif"
+components:
+  button-primary:
+    backgroundColor: "rgba(255, 255, 255, 0.7)"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#1a211e"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#1a211e"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "rgba(255, 255, 255, 0.7)"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#1a211e"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Radix Themes
@@ -82,7 +101,7 @@ typography:
 
 WorkOS Radix Themes — tokens read from https://github.com/radix-ui/themes.
 
-Tokens were read from the project's own repository, not from a marketing site: 39 colour tokens and 15 type tokens.
+Tokens were read from the project's own repository, not from a marketing site: 39 colour tokens and 4 type tokens.
 
 ## Colors
 
@@ -90,5 +109,11 @@ Tokens were read from the project's own repository, not from a marketing site: 3
 
 ## Typography
 
-Families declared in the source: `-apple-system, BlinkMacSystemFont, 'Segoe UI (Custom)', Roboto, 'Helvetica Neue', 'Open Sans (Custom)', system-ui,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji`, `var(--default-font-family)`, `Menlo', 'Consolas (Custom)', 'Bitstream Vera Sans Mono', monospace, 'Apple Color Emoji', 'Segoe UI Emoji`, `Times New Roman', 'Times', serif`.
+Families declared in the source: `-apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto, "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`, `Menlo, "Consolas (Custom)", "Bitstream Vera Sans Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji"`, `"Times New Roman", Times, serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#1a211e) canvas paired with `#1a211e` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(255, 255, 255, 0.7)` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

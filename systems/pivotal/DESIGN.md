@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Pivotal
-description: "Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui."
+description: "Crisp light (#ffffff) canvas, Source Sans Pro typography, #fff brand accent, and 8px corner geometry"
 colors:
   black: "#000000"
   dark-gray: "#253640"
@@ -87,52 +87,130 @@ colors:
   primary: "#fff"
 typography:
   font-size-base:
-    fontSize: "16px !default"
+    fontSize: 16px
+    fontFamily: null
   font-size-extra-large:
     fontSize: 20px
+    fontFamily: null
   font-size-large:
     fontSize: 18px
+    fontFamily: null
   font-size-medium:
     fontSize: 16px
+    fontFamily: null
   font-size-small:
     fontSize: 14px
+    fontFamily: null
   font-size-extra-small:
     fontSize: 12px
+    fontFamily: null
   font-size-h1:
     fontSize: 32px
+    fontFamily: null
   font-size-h2:
     fontSize: 24px
+    fontFamily: null
   font-size-h3:
     fontSize: 20px
+    fontFamily: null
   font-size-h4:
     fontSize: 18px
+    fontFamily: null
   font-size-h5:
     fontSize: 16px
+    fontFamily: null
   font-size-h6:
     fontSize: 13px
+    fontFamily: null
   font-size-title:
     fontSize: 42px
+    fontFamily: null
   btn-font-size:
     fontSize: 14px
+    fontFamily: null
   btn-lg-font-size:
     fontSize: 16px
+    fontFamily: null
   btn-sm-font-size:
     fontSize: 12px
+    fontFamily: null
   nav-tabs-title-font-size:
     fontSize: 16px
+    fontFamily: null
   health-indicator-font-size:
     fontSize: 10px
+    fontFamily: null
   health-indicator-large-font-size:
     fontSize: 14px
+    fontFamily: null
   carousel-control-font-size:
-    fontSize: "20px !default"
+    fontSize: 20px
+    fontFamily: null
+  body:
+    fontSize: 16px
+    lineHeight: 24px
+  title:
+    fontSize: 42px
+  font-family-sans-serif:
+    fontFamily: "\"Source Sans Pro\", SourceSansPro, sans-serif"
+  font-family-serif:
+    fontFamily: "Georgia, \"Times New Roman\", Times, serif"
+  font-family-monospace:
+    fontFamily: "\"Source Code Pro\", SourceCodePro, monospace"
+  pui-collapse-panel-title:
+    fontSize: 18px
+  h1:
+    fontSize: 2em
+  html:
+    fontSize: 10px
+components:
+  button-primary:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Pivotal
 
 ## Overview
 
-Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.
+Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.
 
 Tokens were read from the project's own repository, not from a marketing site: 82 colour tokens and 20 type tokens.
 
@@ -143,3 +221,10 @@ Tokens were read from the project's own repository, not from a marketing site: 8
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Source Sans Pro` across 28 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

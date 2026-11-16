@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Persona Design System
-description: "Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system."
+description: "Dark (#408bdd) canvas, system-ui typography, #0060df brand accent, and 8px corner geometry"
 colors:
   border-color: "#BFBFBF"
   text-primary-color: "#15141a"
@@ -92,8 +92,6 @@ colors:
   color-blue900: "#0a0167"
   primary: "#0060df"
 typography:
-  vp-font-family-base:
-    fontFamily: "theme(fontFamily.sans)"
   pspdfkit-font-size-1:
     fontSize: 1rem
   pspdfkit-font-size-2:
@@ -106,13 +104,54 @@ typography:
     fontSize: 1.25rem
   pspdfkit-font-size-6:
     fontSize: 1.5rem
+components:
+  button-primary:
+    backgroundColor: "#0060df"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ffb6ac"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#408bdd"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#408bdd"
+    textColor: "#15141a"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0060df"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#15141a"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#408bdd"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Persona Design System
 
 ## Overview
 
-Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system.
+Persona Design System — tokens read from https://github.com/privy-open-source/design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 88 colour tokens and 7 type tokens.
 
@@ -123,3 +162,10 @@ Tokens were read from the project's own repository, not from a marketing site: 8
 ## Typography
 
 Families declared in the source: `theme(fontFamily.sans)`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#408bdd) canvas paired with `#408bdd` component surfaces and `#15141a` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0060df` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 6 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

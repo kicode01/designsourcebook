@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Arena
-description: "Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena."
+description: "Crisp light (#f0eee6) canvas, Spline Sans typography, #b52a20 brand accent, and 8px corner geometry"
 colors:
   hex: "#141010"
   color-base-100: "#141010"
@@ -92,10 +92,72 @@ colors:
   content: "#191919"
   color-extra: "#fff"
 typography:
-  default-font-family:
-    fontFamily: "var(--font-body)"
-  expect:
-    fontFamily: "Spline Sans Mono\", ui-monospace, monospace"
+  display-lg:
+    fontFamily: "\"Spline Sans\", Inter, system-ui, sans-serif"
+    fontSize: 36px
+    fontWeight: 700
+    lineHeight: 1.2
+  heading-md:
+    fontFamily: "\"Spline Sans\", Inter, system-ui, sans-serif"
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.3
+  body:
+    fontFamily: "\"Spline Sans\", Inter, system-ui, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  body-sm:
+    fontFamily: "\"Spline Sans\", Inter, system-ui, sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.42
+  code:
+    fontFamily: "\"Spline Sans Mono\", ui-monospace, monospace"
+    fontSize: 13px
+    fontWeight: 500
+    lineHeight: 1.45
+components:
+  button-primary:
+    backgroundColor: "#b52a20"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#2e2c26"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#e85151"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#2e2c26"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#2e2c26"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#b52a20"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#38a169"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#2e2c26"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Arena
@@ -113,3 +175,10 @@ Tokens were read from the project's own repository, not from a marketing site: 8
 ## Typography
 
 Families declared in the source: `var(--font-body)`, `Spline Sans Mono", ui-monospace, monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#f0eee6) canvas paired with `#2e2c26` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#b52a20` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Spline Sans` across 5 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

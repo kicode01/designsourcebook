@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Evergreen
-description: "Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen."
+description: "Crisp light (#F9F9FB) canvas, SF Mono typography, #3366FF brand accent, and 8px corner geometry"
 colors:
   neutral-lightest: "#F9F9FB"
   neutral-light: "#E4E7EB"
@@ -94,13 +94,61 @@ colors:
   yellow-light: "#fbe6a2"
   colors-orange700: "#996A13"
   primary: "#3366FF"
+typography:
+  mono:
+    fontFamily: "\"SF Mono\", Monaco, Inconsolata, \"Fira Mono\", \"Droid Sans Mono\", \"Source Code Pro\", monospace"
+  font-size:
+    fontSize: 16px
+  font-family:
+    fontFamily: "\"SF UI Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+components:
+  button-primary:
+    backgroundColor: "#3366FF"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#F5F6F7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#D14343"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#F5F6F7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#F5F6F7"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#3366FF"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#52BD95"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#F5F6F7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Evergreen
 
 ## Overview
 
-Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen.
+Evergreen — tokens read from https://github.com/segmentio/evergreen.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +159,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#F9F9FB) canvas paired with `#F5F6F7` component surfaces and `#425A70` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3366FF` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `SF Mono` across 3 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

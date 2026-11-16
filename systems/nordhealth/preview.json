@@ -1,257 +1,13 @@
 {
-  "canvas": "rgb(255, 255, 255)",
-  "surface": "rgb(255, 255, 255)",
+  "canvas": "#fcfcfc",
+  "surface": "#fcfcfc",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "rgb(53, 89, 199)",
+  "brand": "#3559c7",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "5px",
   "ink": "#0b0b0c",
   "palette": [
-    {
-      "name": "n-color-accent",
-      "value": "rgb(53, 89, 199)"
-    },
-    {
-      "name": "n-color-accent-secondary",
-      "value": "rgb(53, 89, 199)"
-    },
-    {
-      "name": "n-color-text",
-      "value": "rgb(12, 26, 61)"
-    },
-    {
-      "name": "n-color-text-link",
-      "value": "rgb(53, 89, 199)"
-    },
-    {
-      "name": "n-color-text-weak",
-      "value": "rgb(54, 67, 74)"
-    },
-    {
-      "name": "n-color-text-weaker",
-      "value": "rgb(102, 118, 128)"
-    },
-    {
-      "name": "n-color-text-weakest",
-      "value": "rgb(178, 186, 191)"
-    },
-    {
-      "name": "n-color-text-on-accent",
-      "value": "rgb(255, 255, 255)"
-    },
-    {
-      "name": "n-color-text-error",
-      "value": "rgb(210, 64, 35)"
-    },
-    {
-      "name": "n-color-text-danger",
-      "value": "rgb(178, 48, 21)"
-    },
-    {
-      "name": "n-color-text-success",
-      "value": "rgb(17, 118, 39)"
-    },
-    {
-      "name": "n-color-text-neutral",
-      "value": "rgb(85, 89, 93)"
-    },
-    {
-      "name": "n-color-text-neutral-strong",
-      "value": "rgb(17, 24, 28)"
-    },
-    {
-      "name": "n-color-text-warning",
-      "value": "rgb(148, 105, 0)"
-    },
-    {
-      "name": "n-color-text-warning-strong",
-      "value": "rgb(51, 40, 16)"
-    },
-    {
-      "name": "n-color-text-highlight",
-      "value": "rgb(121, 58, 175)"
-    },
-    {
-      "name": "n-color-text-info",
-      "value": "rgb(52, 81, 178)"
-    },
-    {
-      "name": "n-color-text-progress",
-      "value": "rgb(1, 109, 131)"
-    },
-    {
-      "name": "n-color-nav-surface",
-      "value": "rgb(255, 255, 255)"
-    },
-    {
-      "name": "n-color-nav-heading",
-      "value": "rgb(143, 161, 170)"
-    },
-    {
-      "name": "n-color-nav-hover",
-      "value": "rgb(240, 241, 243)"
-    },
-    {
-      "name": "n-color-nav-selected",
-      "value": "rgb(233, 234, 237)"
-    },
-    {
-      "name": "n-color-border",
-      "value": "rgb(216, 222, 228)"
-    },
-    {
-      "name": "n-color-border-strong",
-      "value": "rgb(188, 197, 204)"
-    },
-    {
-      "name": "n-color-border-neutral",
-      "value": "rgb(215, 220, 224)"
-    },
-    {
-      "name": "n-color-border-warning",
-      "value": "rgb(248, 216, 124)"
-    },
-    {
-      "name": "n-color-border-highlight",
-      "value": "rgb(227, 204, 244)"
-    },
-    {
-      "name": "n-color-border-danger",
-      "value": "rgb(250, 199, 190)"
-    },
-    {
-      "name": "n-color-border-success",
-      "value": "rgb(183, 223, 186)"
-    },
-    {
-      "name": "n-color-border-info",
-      "value": "rgb(198, 212, 249)"
-    },
-    {
-      "name": "n-color-border-progress",
-      "value": "rgb(176, 229, 238)"
-    },
-    {
-      "name": "n-color-surface",
-      "value": "rgb(255, 255, 255)"
-    },
-    {
-      "name": "n-color-background",
-      "value": "rgb(250, 251, 251)"
-    },
-    {
-      "name": "n-color-surface-raised",
-      "value": "rgb(250, 251, 251)"
-    },
-    {
-      "name": "n-color-surface-lowered",
-      "value": "rgb(230, 232, 235)"
-    },
-    {
-      "name": "n-color-surface-canvas",
-      "value": "rgb(252, 252, 252)"
-    },
-    {
-      "name": "n-color-surface-background",
-      "value": "rgb(247, 247, 248)"
-    },
-    {
-      "name": "n-color-status-neutral",
-      "value": "rgb(255, 255, 255)"
-    },
-    {
-      "name": "n-color-status-warning",
-      "value": "rgb(246, 205, 90)"
-    },
-    {
-      "name": "n-color-status-highlight",
-      "value": "rgb(142, 78, 198)"
-    },
-    {
-      "name": "n-color-status-danger",
-      "value": "rgb(210, 64, 35)"
-    },
-    {
-      "name": "n-color-status-success",
-      "value": "rgb(29, 134, 51)"
-    },
-    {
-      "name": "n-color-status-info",
-      "value": "rgb(62, 99, 221)"
-    },
-    {
-      "name": "n-color-status-progress",
-      "value": "rgb(0, 127, 153)"
-    },
-    {
-      "name": "n-color-status-notification",
-      "value": "rgb(231, 84, 54)"
-    },
-    {
-      "name": "n-color-status-neutral-weak",
-      "value": "rgb(241, 243, 245)"
-    },
-    {
-      "name": "n-color-status-warning-weak",
-      "value": "rgb(255, 250, 225)"
-    },
-    {
-      "name": "n-color-status-highlight-weak",
-      "value": "rgb(249, 241, 254)"
-    },
-    {
-      "name": "n-color-status-danger-weak",
-      "value": "rgb(255, 240, 238)"
-    },
-    {
-      "name": "n-color-status-success-weak",
-      "value": "rgb(235, 249, 235)"
-    },
-    {
-      "name": "n-color-status-info-weak",
-      "value": "rgb(240, 244, 255)"
-    },
-    {
-      "name": "n-color-status-progress-weak",
-      "value": "rgb(231, 249, 251)"
-    },
-    {
-      "name": "n-color-button",
-      "value": "rgb(255, 255, 255)"
-    },
-    {
-      "name": "n-color-button-hover",
-      "value": "rgb(246, 248, 248)"
-    },
-    {
-      "name": "n-color-border-hover",
-      "value": "rgb(102, 118, 128)"
-    },
-    {
-      "name": "n-color-icon",
-      "value": "rgb(102, 118, 128)"
-    },
-    {
-      "name": "n-color-icon-hover",
-      "value": "rgb(12, 26, 61)"
-    },
-    {
-      "name": "n-color-active",
-      "value": "rgb(246, 248, 248)"
-    },
-    {
-      "name": "n-color-header",
-      "value": "rgb(246, 248, 248)"
-    },
-    {
-      "name": "tw-ring-offset-color",
-      "value": "#fff"
-    },
-    {
-      "name": "n-avatar-color",
-      "value": "#310d77"
-    },
     {
       "name": "n-nav-item-background-active",
       "value": "#0ea5e9"
@@ -265,96 +21,490 @@
       "value": "#e0f2fe"
     },
     {
-      "name": "n-nav-item-color-active",
+      "name": "n-color-accent",
+      "value": "#3559c7"
+    },
+    {
+      "name": "n-color-accent-secondary",
+      "value": "#3559c7"
+    },
+    {
+      "name": "n-color-text",
+      "value": "#0c1a3d"
+    },
+    {
+      "name": "n-color-text-link",
+      "value": "#3559c7"
+    },
+    {
+      "name": "n-color-text-weak",
+      "value": "#36434a"
+    },
+    {
+      "name": "n-color-text-weaker",
+      "value": "#667680"
+    },
+    {
+      "name": "n-color-text-weakest",
+      "value": "#b2babf"
+    },
+    {
+      "name": "n-color-text-on-accent",
       "value": "#fff"
     },
     {
-      "name": "n-nav-item-color-hover",
-      "value": "#0c4a6e"
+      "name": "n-color-text-error",
+      "value": "#d24023"
+    },
+    {
+      "name": "n-color-text-danger",
+      "value": "#b23015"
+    },
+    {
+      "name": "n-color-text-success",
+      "value": "#117627"
+    },
+    {
+      "name": "n-color-text-neutral",
+      "value": "#55595d"
+    },
+    {
+      "name": "n-color-text-neutral-strong",
+      "value": "#11181c"
+    },
+    {
+      "name": "n-color-text-warning",
+      "value": "#946900"
+    },
+    {
+      "name": "n-color-text-warning-strong",
+      "value": "#332810"
+    },
+    {
+      "name": "n-color-text-highlight",
+      "value": "#793aaf"
+    },
+    {
+      "name": "n-color-text-info",
+      "value": "#3451b2"
+    },
+    {
+      "name": "n-color-text-progress",
+      "value": "#016d83"
+    },
+    {
+      "name": "n-color-nav-surface",
+      "value": "#fff"
+    },
+    {
+      "name": "n-color-border",
+      "value": "#d8dee4"
+    },
+    {
+      "name": "n-color-border-strong",
+      "value": "#bcc5cc"
+    },
+    {
+      "name": "n-color-border-neutral",
+      "value": "#d7dce0"
+    },
+    {
+      "name": "n-color-border-warning",
+      "value": "#f8d87c"
+    },
+    {
+      "name": "n-color-border-highlight",
+      "value": "#e3ccf4"
+    },
+    {
+      "name": "n-color-border-danger",
+      "value": "#fac7be"
+    },
+    {
+      "name": "n-color-border-success",
+      "value": "#b7dfba"
+    },
+    {
+      "name": "n-color-border-info",
+      "value": "#c6d4f9"
+    },
+    {
+      "name": "n-color-border-progress",
+      "value": "#b0e5ee"
+    },
+    {
+      "name": "n-color-surface",
+      "value": "#fff"
+    },
+    {
+      "name": "n-color-background",
+      "value": "#fafbfb"
+    },
+    {
+      "name": "n-color-surface-raised",
+      "value": "#fafbfb"
+    },
+    {
+      "name": "n-color-surface-lowered",
+      "value": "#e6e8eb"
+    },
+    {
+      "name": "n-color-surface-canvas",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "n-color-surface-background",
+      "value": "#f7f7f8"
+    },
+    {
+      "name": "n-color-status-neutral",
+      "value": "#fff"
+    },
+    {
+      "name": "n-color-status-warning",
+      "value": "#f6cd5a"
+    },
+    {
+      "name": "n-color-status-danger",
+      "value": "#d24023"
+    },
+    {
+      "name": "n-color-status-success",
+      "value": "#1d8633"
+    },
+    {
+      "name": "n-color-status-info",
+      "value": "#3e63dd"
+    },
+    {
+      "name": "n-color-status-neutral-weak",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "n-color-status-warning-weak",
+      "value": "#fffae1"
+    },
+    {
+      "name": "n-color-status-danger-weak",
+      "value": "#fff0ee"
+    },
+    {
+      "name": "n-color-status-success-weak",
+      "value": "#ebf9eb"
+    },
+    {
+      "name": "n-color-status-info-weak",
+      "value": "#f0f4ff"
+    },
+    {
+      "name": "n-color-border-hover",
+      "value": "#667680"
+    },
+    {
+      "name": "n-background-color-status-danger",
+      "value": "rgb(210, 64, 35)"
+    },
+    {
+      "name": "n-background-color-status-warning",
+      "value": "rgb(246, 205, 90)"
+    },
+    {
+      "name": "n-border-color-info",
+      "value": "rgb(198, 212, 249)"
+    },
+    {
+      "name": "n-background-color-default",
+      "value": "rgb(250, 251, 251)"
+    },
+    {
+      "name": "n-text-color-info",
+      "value": "rgb(52, 81, 178)"
+    },
+    {
+      "name": "n-background-color-status-success-weak",
+      "value": "rgb(235, 249, 235)"
+    },
+    {
+      "name": "n-background-color-status-progress-weak",
+      "value": "rgb(231, 249, 251)"
+    },
+    {
+      "name": "n-background-color-status-info-weak",
+      "value": "rgb(240, 244, 255)"
+    },
+    {
+      "name": "n-background-color-status-neutral",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-text-color-highlight",
+      "value": "rgb(121, 58, 175)"
+    },
+    {
+      "name": "n-color-nav-surface-bright",
+      "value": "rgb(53, 89, 199)"
+    },
+    {
+      "name": "n-border-color-danger",
+      "value": "rgb(250, 199, 190)"
+    },
+    {
+      "name": "n-text-color-default",
+      "value": "rgb(12, 26, 61)"
+    },
+    {
+      "name": "n-text-color-progress",
+      "value": "rgb(1, 109, 131)"
+    },
+    {
+      "name": "n-color-nav-link",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-border-color-warning",
+      "value": "rgb(248, 216, 124)"
+    },
+    {
+      "name": "n-border-color-strong",
+      "value": "rgb(188, 197, 204)"
+    },
+    {
+      "name": "n-text-color-error",
+      "value": "rgb(210, 64, 35)"
+    },
+    {
+      "name": "n-background-color-nav-surface",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-text-color-on-accent",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-background-color-status-neutral-weak",
+      "value": "rgb(241, 243, 245)"
+    },
+    {
+      "name": "n-background-color-surface-raised",
+      "value": "rgb(250, 251, 251)"
+    },
+    {
+      "name": "n-border-color-hover",
+      "value": "rgb(102, 118, 128)"
+    },
+    {
+      "name": "n-background-color-status-highlight",
+      "value": "rgb(142, 78, 198)"
+    },
+    {
+      "name": "n-background-color-status-highlight-weak",
+      "value": "rgb(249, 241, 254)"
+    },
+    {
+      "name": "n-border-color-default",
+      "value": "rgb(216, 222, 228)"
+    },
+    {
+      "name": "n-background-color-surface",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-text-color-success",
+      "value": "rgb(17, 118, 39)"
+    },
+    {
+      "name": "n-text-color-danger",
+      "value": "rgb(178, 48, 21)"
+    },
+    {
+      "name": "n-color-accent-dark",
+      "value": "rgb(53, 89, 199)"
+    },
+    {
+      "name": "n-border-color-highlight",
+      "value": "rgb(227, 204, 244)"
+    },
+    {
+      "name": "n-text-color-weak",
+      "value": "rgb(54, 67, 74)"
+    },
+    {
+      "name": "n-text-color-weakest",
+      "value": "rgb(178, 186, 191)"
+    },
+    {
+      "name": "n-text-color-weaker",
+      "value": "rgb(102, 118, 128)"
+    },
+    {
+      "name": "n-border-color-success",
+      "value": "rgb(183, 223, 186)"
+    },
+    {
+      "name": "n-text-color-warning",
+      "value": "rgb(148, 105, 0)"
+    },
+    {
+      "name": "n-background-color-status-info",
+      "value": "rgb(62, 99, 221)"
+    },
+    {
+      "name": "n-background-color-surface-lowered",
+      "value": "rgb(230, 232, 235)"
+    },
+    {
+      "name": "n-text-color-link",
+      "value": "rgb(53, 89, 199)"
+    },
+    {
+      "name": "n-background-color-status-progress",
+      "value": "rgb(0, 127, 153)"
+    },
+    {
+      "name": "n-background-color-status-success",
+      "value": "rgb(29, 134, 51)"
+    },
+    {
+      "name": "n-background-color-status-warning-weak",
+      "value": "rgb(255, 250, 225)"
     },
     {
       "name": "primary",
-      "value": "rgb(53, 89, 199)"
+      "value": "#3559c7"
     }
   ],
   "type": [
     {
       "name": "n-font-size-xxxl",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": "2.25rem",
       "px": 36
     },
     {
       "name": "n-kbd-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Mono\", monospace, monospace",
       "fontSize": "2rem",
       "px": 32
     },
     {
       "name": "n-font-size-xxl",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "n-font-size-xl",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
-      "name": "n-button-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "16px",
-      "px": 16
-    },
-    {
       "name": "n-font-size-l",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "n-font-family",
-      "fontFamily": "Nordhealth Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "px": 16
     },
     {
       "name": "n-font-family-code",
-      "fontFamily": "Nordhealth Mono',monospace,monospace",
+      "fontFamily": "\"Nordhealth Mono\", monospace, monospace",
       "px": 16
     },
     {
       "name": "n-font-family-custom",
-      "fontFamily": "Nord Custom\", -apple-system, system-ui, sans-serif",
+      "fontFamily": "\"Nord Custom\", -apple-system, system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "n-button-font-size",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "16px",
       "px": 16
     },
     {
       "name": "n-font-size-m",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": ".875rem",
       "px": 14
     },
     {
       "name": "n-font-size-s",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": ".75rem",
       "px": 12
     },
     {
       "name": "n-font-size-xs",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": ".6875rem",
       "px": 11
     },
     {
       "name": "n-font-size-xxs",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Nordhealth Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
       "fontSize": ".625rem",
       "px": 10
     }
   ],
-  "components": [],
-  "overview": "Nordhealth Nordhealth — read from nordhealth.design's live stylesheets, not a published token package.",
-  "dos": ""
+  "components": [
+    {
+      "key": "panel",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": "5px",
+      "border": "1px solid #d8dee4"
+    },
+    {
+      "key": "label",
+      "kind": "badge",
+      "textColor": "rgb(12, 26, 61)"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(12, 26, 61)",
+      "rounded": "3px",
+      "border": "1px solid rgb(188, 197, 204)"
+    },
+    {
+      "key": "n-color-button",
+      "kind": "button",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    {
+      "key": "n-color-text-link",
+      "kind": "nav",
+      "textColor": "rgb(53, 89, 199)"
+    },
+    {
+      "key": "n-color-nav-heading",
+      "kind": "nav",
+      "textColor": "rgb(143, 161, 170)"
+    },
+    {
+      "key": "n-color-nav-surface-2",
+      "kind": "nav",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    {
+      "key": "n-color-nav-selected-3",
+      "kind": "input",
+      "backgroundColor": "rgb(233, 234, 237)"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "5px",
+      "padding": "10px 18px"
+    }
+  ],
+  "overview": "Nordhealth — Crisp light (#fcfcfc) canvas, Nordhealth Sans typography, #3559c7 brand accent, and 5px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fcfcfc) canvas paired with `#fcfcfc` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3559c7` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Nordhealth Sans` across 13 type steps.\n- **Component Geometry**: Buttons (`5px`), cards (`9px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

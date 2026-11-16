@@ -1,22 +1,23 @@
 {
   "name": "priceline",
   "displayName": "Priceline Design System",
-  "description": "Priceline Priceline Design System — tokens read from https://github.com/priceline/design-system.",
-  "style": "Priceline Priceline Design System — tokens read from https://github.com/priceline/design-system.",
+  "description": "Priceline Design System — tokens read from https://github.com/priceline/design-system.",
+  "style": "Crisp light (#e8f2ff) canvas, Montserrat typography, #ffa0c4 brand accent, and 8px corner geometry",
   "category": "Priceline",
   "org": "Priceline",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "priceline"
+    "priceline",
+    "light"
   ],
   "homepage": "https://github.com/priceline/design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/priceline/design-system — 3 token files, 79 colours harvested, 79 selected.",
   "source": {
-    "repo": "https://github.com/priceline/design-system"
+    "repo": "https://github.com/priceline/design-system",
+    "package": "pcln-design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 80,
-    "typography": 0,
-    "components": 0
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 64,
+    "stars": 727,
+    "forks": 121,
+    "npmDownloads": 0,
+    "score": 727,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

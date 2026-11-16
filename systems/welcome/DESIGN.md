@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Welcome UI
-description: "Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui."
+description: "Crisp light (#ffffff) canvas, Work Sans typography, #ffe166 brand accent, and 8px corner geometry"
 colors:
   accordion-subtitle-color-text-default: "#212121"
   alert-color-text-success-body: "#142603"
@@ -144,16 +144,57 @@ typography:
   font-size-xs:
     fontSize: 0.75rem
   font-family-body:
-    fontFamily: "Work Sans', sans-serif"
+    fontFamily: "\"Work Sans\", sans-serif"
   font-family-title:
-    fontFamily: "welcome-font', sans-serif"
+    fontFamily: "welcome-font, sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#ffe166"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#e1003a"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ffe166"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#142603"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Welcome UI
 
 ## Overview
 
-Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.
+Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 26 type tokens.
 
@@ -164,3 +205,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 Families declared in the source: `Work Sans', sans-serif`, `welcome-font', sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ffe166` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Work Sans` across 26 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

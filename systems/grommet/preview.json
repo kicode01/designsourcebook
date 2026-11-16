@@ -1,128 +1,32 @@
 {
   "canvas": "#111111",
   "surface": "#000000",
-  "text": "#BBBBBB",
-  "muted": "#BBBBBB",
-  "brand": "#4D4CDB",
-  "border": "#666666",
+  "text": "#f8f8f8",
+  "muted": "#FFFFFF",
+  "brand": "#7D4CDB",
+  "border": "color-mix(in srgb, #f8f8f8 14%, transparent)",
   "radius": "8px",
   "ink": "#f7f7f8",
   "palette": [
     {
-      "name": "color",
-      "value": "#FF0000"
+      "name": "brand-color",
+      "value": "#7D4CDB"
     },
     {
-      "name": "brand",
-      "value": "#4D4CDB"
+      "name": "text-dark",
+      "value": "#f8f8f8"
     },
     {
-      "name": "accent-1",
-      "value": "#6FFFB0"
-    },
-    {
-      "name": "accent-2",
-      "value": "#7FFFB0"
-    },
-    {
-      "name": "accent-3",
-      "value": "#8FFFB0"
-    },
-    {
-      "name": "accent-4",
-      "value": "#9FFFB0"
-    },
-    {
-      "name": "neutral-1",
-      "value": "#10873D"
-    },
-    {
-      "name": "neutral-2",
-      "value": "#20873D"
-    },
-    {
-      "name": "neutral-3",
-      "value": "#30873D"
-    },
-    {
-      "name": "neutral-4",
-      "value": "#40873D"
-    },
-    {
-      "name": "focus",
-      "value": "#000"
-    },
-    {
-      "name": "blue",
-      "value": "#00C8FF"
-    },
-    {
-      "name": "green",
-      "value": "#17EBA0"
-    },
-    {
-      "name": "teal",
-      "value": "#82FFF2"
-    },
-    {
-      "name": "purple",
-      "value": "#694b75"
-    },
-    {
-      "name": "red",
-      "value": "#914049"
-    },
-    {
-      "name": "orange",
-      "value": "#FFBC44"
-    },
-    {
-      "name": "yellow",
-      "value": "#faf6d4"
-    },
-    {
-      "name": "active",
-      "value": "#eecc33"
-    },
-    {
-      "name": "toggle-bg",
-      "value": "#757575"
-    },
-    {
-      "name": "stroke",
-      "value": "#000"
-    },
-    {
-      "name": "custom",
-      "value": "#a35200"
-    },
-    {
-      "name": "border",
-      "value": "#e0e0e0"
-    },
-    {
-      "name": "text",
+      "name": "text-light",
       "value": "#444444"
     },
     {
-      "name": "text-strong",
-      "value": "#000000"
+      "name": "icon-dark",
+      "value": "#f8f8f8"
     },
     {
-      "name": "text-weak",
-      "value": "#BBBBBB"
-    },
-    {
-      "name": "border-strong",
+      "name": "icon-light",
       "value": "#666666"
-    },
-    {
-      "name": "border-weak",
-      "value": "#BBBBBB"
-    },
-    {
-      "name": "brand-color",
-      "value": "#7D4CDB"
     },
     {
       "name": "critical",
@@ -165,12 +69,108 @@
       "value": "#111111"
     },
     {
+      "name": "control-dark",
+      "value": "#FFCA58"
+    },
+    {
+      "name": "control-light",
+      "value": "#403216"
+    },
+    {
+      "name": "drop-background",
+      "value": "#333333"
+    },
+    {
+      "name": "brand",
+      "value": "#FD6FFF"
+    },
+    {
+      "name": "focus",
+      "value": "#FFCA58"
+    },
+    {
+      "name": "background-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-dark",
+      "value": "#000000"
+    },
+    {
+      "name": "colors-background",
+      "value": "#160F1D"
+    },
+    {
+      "name": "colors-background-back",
+      "value": "#000000"
+    },
+    {
+      "name": "colors-background-front",
+      "value": "#160F1D"
+    },
+    {
+      "name": "colors-text-strong",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-text",
+      "value": "#E4E1E6"
+    },
+    {
+      "name": "colors-text-weak",
+      "value": "#76717A"
+    },
+    {
+      "name": "colors-grey",
+      "value": "#AFACB2"
+    },
+    {
+      "name": "colors-lime",
+      "value": "#C6FC60"
+    },
+    {
+      "name": "colors-pink",
+      "value": "#D856A7"
+    },
+    {
+      "name": "colors-purple",
+      "value": "#7C7EF4"
+    },
+    {
+      "name": "colors-teal",
+      "value": "#73DAFB"
+    },
+    {
+      "name": "colors-yellow",
+      "value": "#EDD063"
+    },
+    {
+      "name": "colors-dark-purple",
+      "value": "#291E40"
+    },
+    {
+      "name": "colors-focus",
+      "value": "#233670"
+    },
+    {
       "name": "background-back",
       "value": "#000000"
     },
     {
       "name": "background-front",
       "value": "#160F1D"
+    },
+    {
+      "name": "text-strong",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text",
+      "value": "#E4E1E6"
+    },
+    {
+      "name": "text-weak",
+      "value": "#76717A"
     },
     {
       "name": "grey",
@@ -185,6 +185,18 @@
       "value": "#D856A7"
     },
     {
+      "name": "purple",
+      "value": "#7C7EF4"
+    },
+    {
+      "name": "teal",
+      "value": "#73DAFB"
+    },
+    {
+      "name": "yellow",
+      "value": "#EDD063"
+    },
+    {
       "name": "dark-purple",
       "value": "#291E40"
     },
@@ -193,51 +205,91 @@
       "value": "#ffffff"
     },
     {
+      "name": "stroke",
+      "value": "#000000"
+    },
+    {
       "name": "fill",
       "value": "#000"
     },
     {
-      "name": "hex-value",
-      "value": "#DCD0FF"
-    },
-    {
       "name": "primary",
-      "value": "#4D4CDB"
+      "value": "#7D4CDB"
     }
   ],
   "type": [
     {
-      "name": "custom-stories-family",
-      "fontFamily": "monospace",
-      "px": 16
-    },
-    {
-      "name": "custom-edge-control-stories-family",
-      "fontFamily": "Comic Sans MS",
-      "px": 16
-    },
-    {
-      "name": "all-components-stories-family",
-      "fontFamily": "monospace",
-      "px": 16
-    },
-    {
-      "name": "basic-stories-family",
-      "fontFamily": "monospace",
-      "px": 16
-    },
-    {
-      "name": "step-stories-family",
-      "fontFamily": "monospace",
-      "px": 16
-    },
-    {
-      "name": "vertical-stories-family",
-      "fontFamily": "monospace",
+      "name": "font-family",
+      "fontFamily": "\"JetBrains Mono\"",
       "px": 16
     }
   ],
-  "components": [],
-  "overview": "HPE Grommet — components and design resources for application UIs.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#7D4CDB",
+      "textColor": "#f8f8f8",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#B30000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#7D4CDB",
+      "textColor": "#f8f8f8",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Grommet — Accessible enterprise React framework, signature HPE purple and teal brand accents",
+  "dos": "- **Surface & Theme Polarity**: Dark (#111111) canvas paired with `#000000` component surfaces and `#f8f8f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#7D4CDB` with `#f8f8f8` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `JetBrains Mono` across 1 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -127,6 +127,36 @@ components:
     textColor: "#000000"
     rounded: 2px
     padding: 11px 13px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#76b900"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 10px 16px
 ---
 
 # Design System: NVIDIA
@@ -421,3 +451,10 @@ What distinguishes NVIDIA's design from other dark-background tech sites is the 
 6. Link hover is always `#3860be` (blue) regardless of the link's default color
 7. Line-height 1.25 for headings, 1.50-1.67 for body text -- maintain this contrast for visual hierarchy
 8. Navigation uses uppercase 14px bold -- this hardware-label typography is part of the brand voice
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#76b900` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `NVIDIA-EMEA` across 18 type steps.
+- **Component Geometry**: Buttons (`2px`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

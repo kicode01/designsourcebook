@@ -6,6 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { normKey, normOrg, listSystems } from "../lib/registry.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -13,15 +14,14 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
 
 const coverage = read("data/coverage.json");
 const awesome = read("data/sources/awesome.json").systems;
-const have = new Set(fs.readdirSync(path.join(ROOT, "systems")));
-const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "");
+const have = new Set(listSystems().filter((s) => s.provenance !== "listed").map((s) => s.slug));
 const blocked = new Set((read("data/blocked.json").blocked || []).map((b) => b.slug));
 
 const missing = (coverage.union.entries || []).filter((e) => !e.covered);
 
 const awesomeByOrg = new Map();
 for (const a of awesome) {
-  for (const key of [norm(a.org), ...(a.aliases || []).map(norm)]) {
+  for (const key of [normOrg(a.org), ...(a.aliases || []).map(normOrg)]) {
     if (!awesomeByOrg.has(key)) awesomeByOrg.set(key, a);
   }
 }
@@ -32,10 +32,11 @@ const seenRepo = new Set();
 const seenSite = new Set();
 
 for (const e of missing) {
-  const a = awesomeByOrg.get(norm(e.org));
-  const slug = norm(e.org);
+  const a = awesomeByOrg.get(normOrg(e.org));
+  const slug = normKey(e.org);
   if (!slug || have.has(slug) || blocked.has(slug)) continue;
 
+  const siteUrl = a?.homepage || (a?.repoHost === "web" ? a.repo : "");
   if (e.repo && !seenRepo.has(slug)) {
     seenRepo.add(slug);
     repos.push({
@@ -44,10 +45,10 @@ for (const e of missing) {
       org: e.org,
       name: [...new Set(e.systems.map((s) => s.name))][0] || e.org,
     });
-  } else if (a?.homepage && !seenSite.has(slug)) {
+  } else if (siteUrl && !seenSite.has(slug)) {
     seenSite.add(slug);
     sites.push({
-      url: a.homepage,
+      url: siteUrl,
       slug,
       org: e.org,
       name: [...new Set(e.systems.map((s) => s.name))][0] || e.org,

@@ -1,15 +1,15 @@
 {
   "name": "bloom",
   "displayName": "Appear Here Styleguide",
-  "description": "Appear Here Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.",
-  "style": "Appear Here Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.",
+  "description": "Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.",
+  "style": "Crisp light (#eee) canvas, system-ui typography, rgb(234, 155, 82) brand accent, and 8px corner geometry",
   "category": "Appear Here",
   "org": "Appear Here",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "appear-here"
+    "appear-here",
+    "light"
   ],
   "homepage": "https://github.com/appearhere/bloom",
   "license": "see repository",
@@ -27,7 +27,7 @@
   "tokens": {
     "colors": 24,
     "typography": 8,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 122,
+    "stars": 53,
+    "forks": 8,
+    "npmDownloads": 0,
+    "score": 53,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

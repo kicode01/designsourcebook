@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#ff8e75",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "100px",
+  "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -352,8 +352,23 @@
   "type": [
     {
       "name": "font-size-base",
-      "fontFamily": "system-ui",
+      "fontFamily": "Garnett, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
       "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "Garnett, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-serif",
+      "fontFamily": "Arizona, Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "\"Apercu Mono\", \"SF Mono\", Monaco, Consolas, monospace",
       "px": 16
     }
   ],
@@ -367,12 +382,33 @@
       "border": "1px solid #eaeaea"
     },
     {
+      "key": "link",
+      "kind": "nav",
+      "textColor": "#c1b1ff",
+      "rounded": "0",
+      "padding": "8px 32px"
+    },
+    {
       "key": "btn-dark",
       "kind": "button",
       "backgroundColor": "#1f2023",
       "textColor": "#ffffff",
       "rounded": "40px",
       "padding": "0 14px 0 16px",
+      "border": "none"
+    },
+    {
+      "key": "label",
+      "kind": "badge",
+      "textColor": "#1f2023"
+    },
+    {
+      "key": "btn-2",
+      "kind": "button",
+      "backgroundColor": "#472ba0",
+      "textColor": "#c1b1ff",
+      "rounded": "4px",
+      "padding": "6px 12px",
       "border": "none"
     },
     {
@@ -397,6 +433,23 @@
       "border": "1px solid rgba(255, 117, 87, 0.5)"
     },
     {
+      "key": "btn-3",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "4px 16px",
+      "border": "none"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "#fafafa",
+      "rounded": "8px",
+      "padding": "16px",
+      "border": "1px solid #eaeaea"
+    },
+    {
       "key": "tag-peach-4",
       "kind": "badge",
       "backgroundColor": "rgba(255, 178, 122, 0.1)",
@@ -411,6 +464,15 @@
       "border": "1px solid rgba(59, 169, 116, 0.5)"
     },
     {
+      "key": "btn-4",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 16px",
+      "border": "none"
+    },
+    {
       "key": "tag-purple-6",
       "kind": "badge",
       "backgroundColor": "rgba(120, 86, 255, 0.1)",
@@ -418,47 +480,77 @@
       "border": "1px solid rgba(120, 86, 255, 0.5)"
     },
     {
-      "key": "btn-tertiary-2",
+      "key": "btn-5",
+      "kind": "button",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#1f2023",
+      "rounded": "4px",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "label-2",
+      "kind": "badge",
+      "textColor": "#1f2023"
+    },
+    {
+      "key": "btn-tertiary-6",
       "kind": "button",
       "textColor": "#1f2023",
       "padding": "2px 0",
       "border": "none"
     },
     {
-      "key": "btn-lg-primary-3",
-      "kind": "button",
-      "backgroundColor": "#1f2023",
-      "textColor": "#ffffff",
-      "rounded": "100px",
-      "padding": "8px 8px 8px 16px",
-      "border": "none"
+      "key": "label-3",
+      "kind": "badge",
+      "textColor": "#a2a2a2"
     },
     {
-      "key": "btn-sm-primary-4",
-      "kind": "button",
-      "backgroundColor": "#1f2023",
-      "textColor": "#ffffff",
-      "rounded": "40px",
-      "padding": "6px 8px 6px 12px",
-      "border": "none"
+      "key": "label-4",
+      "kind": "badge",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "padding": "16px 16px"
     },
     {
-      "key": "btn-tertiary-lg-5",
-      "kind": "button",
-      "textColor": "#1f2023",
-      "rounded": "100px",
-      "padding": "0",
-      "border": "none"
+      "key": "card-3",
+      "kind": "card",
+      "backgroundColor": "#fafafa",
+      "rounded": "8px",
+      "padding": "24px",
+      "border": "1px solid #eaeaea"
     },
     {
-      "key": "btn-tertiary-sm-6",
-      "kind": "button",
-      "textColor": "#1f2023",
-      "rounded": "100px",
-      "padding": "0",
-      "border": "none"
+      "key": "label-5",
+      "kind": "badge",
+      "textColor": "#1f2023"
+    },
+    {
+      "key": "label-6",
+      "kind": "badge",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "card-4",
+      "kind": "card",
+      "backgroundColor": "#fafafa",
+      "rounded": "8px",
+      "padding": "16px",
+      "border": "1px solid #eaeaea"
+    },
+    {
+      "key": "table-header",
+      "kind": "nav",
+      "backgroundColor": "#f4f4f4"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
     }
   ],
-  "overview": "Mixpanel Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "Mixpanel Design System — Product analytics interface, Garnett display type and purple/indigo data accents",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8e75` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Garnett` across 4 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

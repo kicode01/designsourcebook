@@ -1,22 +1,23 @@
 {
   "name": "shoelace",
   "displayName": "Shoelace",
-  "description": "Shoelace Shoelace — tokens read from https://github.com/shoelace-style/shoelace.",
-  "style": "Shoelace Shoelace — tokens read from https://github.com/shoelace-style/shoelace.",
+  "description": "Shoelace — tokens read from https://github.com/shoelace-style/shoelace.",
+  "style": "Crisp light (hsl(0, 0%, 100%)) canvas, SFMono-Regular typography, hsl(217.8 95.8% 57.4%) brand accent, and 6px corner geometry",
   "category": "Shoelace",
   "org": "Shoelace",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "shoelace"
+    "shoelace",
+    "light"
   ],
   "homepage": "https://github.com/shoelace-style/shoelace",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/shoelace-style/shoelace — 2 token files, 203 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/shoelace-style/shoelace"
+    "repo": "https://github.com/shoelace-style/shoelace",
+    "package": "@shoelace-style/shoelace"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 11,
-    "components": 0
+    "typography": 14,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 19,
+    "stars": 13819,
+    "forks": 907,
+    "npmDownloads": 0,
+    "score": 13819,
+    "frameworks": [
+      "web-components",
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 33
   }
 }

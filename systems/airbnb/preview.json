@@ -5,7 +5,7 @@
   "muted": "#3f3f3f",
   "brand": "#ff385c",
   "border": "color-mix(in srgb, #222222 14%, transparent)",
-  "radius": "8px",
+  "radius": "12px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -84,7 +84,7 @@
   "type": [
     {
       "name": "section-heading",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "28px",
       "px": 28,
       "fontWeight": 700,
@@ -92,7 +92,7 @@
     },
     {
       "name": "card-heading",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "22px",
       "px": 22,
       "fontWeight": 600,
@@ -101,7 +101,7 @@
     },
     {
       "name": "card-heading-medium",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "22px",
       "px": 22,
       "fontWeight": 500,
@@ -110,7 +110,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "21px",
       "px": 21,
       "fontWeight": 700,
@@ -118,7 +118,7 @@
     },
     {
       "name": "feature-title",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 600,
@@ -127,7 +127,7 @@
     },
     {
       "name": "ui-medium",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -135,7 +135,7 @@
     },
     {
       "name": "ui-semibold",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 600,
@@ -143,7 +143,7 @@
     },
     {
       "name": "button",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -151,7 +151,7 @@
     },
     {
       "name": "body-link",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -159,7 +159,7 @@
     },
     {
       "name": "body-medium",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 500,
@@ -167,7 +167,7 @@
     },
     {
       "name": "caption-salt",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 600,
@@ -175,7 +175,7 @@
     },
     {
       "name": "small",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 400,
@@ -183,7 +183,7 @@
     },
     {
       "name": "tag",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -191,7 +191,7 @@
     },
     {
       "name": "badge",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "11px",
       "px": 11,
       "fontWeight": 600,
@@ -199,7 +199,7 @@
     },
     {
       "name": "micro-uppercase",
-      "fontFamily": "Airbnb Cereal VF",
+      "fontFamily": "\"Airbnb Cereal VF\"",
       "fontSize": "8px",
       "px": 8,
       "fontWeight": 700,
@@ -218,9 +218,49 @@
     },
     {
       "key": "button-circular-nav",
-      "kind": "button",
+      "kind": "nav",
       "backgroundColor": "#f2f2f2",
       "textColor": "#222222"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#222222",
+      "rounded": "12px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff385c",
+      "textColor": "#222222",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
     }
   ],
   "overview": "Airbnb's website is a warm, photography-forward marketplace that feels like flipping through a travel magazine where every page invites you to book. The design operates on a foundation of pure white (#ffffff) with the iconic Rausch Red (#ff385c) — named after Airbnb's first street address — serving as the singular brand accent. The result is a clean, airy canvas where listing photography, category icons, and the red CTA button are the only sources of color.\n\nThe typography uses Airbnb Cereal VF — a custom variable font that's warm and approachable, with rounded terminals that echo the brand's \"belong anywhere\" philosophy. The font operates in a tight weight range: 500 (medium) for most UI, 600 (semibold) for emphasis, and 700 (bold) for primary headings. Slight negative letter-spacing (-0.18px to -0.44px) on headings creates a cozy, intimate reading experience rather than the compressed…",

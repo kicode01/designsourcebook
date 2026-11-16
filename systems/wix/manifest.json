@@ -1,22 +1,24 @@
 {
   "name": "wix",
   "displayName": "Wix Style",
-  "description": "Wix Wix Style — read from the rendered page in a browser, not from published tokens.",
-  "style": "Wix Wix Style — read from the rendered page in a browser, not from published tokens.",
+  "description": "Wix Style — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#fff) canvas, Arial typography, rgb(26,106,255) brand accent, and pill & expressive rounded surfaces",
   "category": "Wix",
   "org": "Wix",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "wix"
+    "observed",
+    "wix",
+    "light"
   ],
   "homepage": "https://www.wix.com/",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Computed styles read from https://www.wix.com/ in headless Chromium on 2026-11-16 (165 custom properties, 185 sampled elements, 2 files). A rendered snapshot is not a published token package — values can change without notice. Page title: Wix.com - The platform trusted by millions of businesses.",
+  "provenanceNote": "Computed styles read from https://www.wix.com/ in headless Chromium on 2026-11-16 (166 custom properties, 129 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Wix.com - The platform trusted by millions of businesses.",
   "source": {
-    "repo": null
+    "url": "https://www.wix.com/",
+    "repo": "https://github.com/wix/wix-style-react",
+    "package": "wix-style-react"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,17 +27,29 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 62,
-    "typography": 0,
-    "components": 0
+    "colors": 61,
+    "typography": 1,
+    "components": 11
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 155,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

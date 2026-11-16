@@ -1,13 +1,17 @@
 {
-  "canvas": "rgb(255,255,255)",
-  "surface": "rgb(255,255,255)",
+  "canvas": "#fff",
+  "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
   "brand": "rgb(26,106,255)",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "999px",
   "ink": "#0b0b0c",
   "palette": [
+    {
+      "name": "right-side-background",
+      "value": "#fff"
+    },
     {
       "name": "wst-color-custom-17",
       "value": "rgb(255,191,161)"
@@ -109,12 +113,12 @@
       "value": "rgb(194,194,194)"
     },
     {
-      "name": "wst-color-fill-base-shade-3",
-      "value": "rgb(110,110,110)"
-    },
-    {
       "name": "wst-color-custom-4",
       "value": "rgb(9,75,204)"
+    },
+    {
+      "name": "wst-color-fill-base-shade-3",
+      "value": "rgb(110,110,110)"
     },
     {
       "name": "wst-color-fill-accent-3",
@@ -129,12 +133,12 @@
       "value": "rgb(149,185,255)"
     },
     {
-      "name": "wst-color-custom-18",
-      "value": "rgb(250,133,79)"
-    },
-    {
       "name": "wst-color-fill-base-shade-1",
       "value": "rgb(240,240,240)"
+    },
+    {
+      "name": "wst-color-custom-18",
+      "value": "rgb(250,133,79)"
     },
     {
       "name": "wst-color-custom-6",
@@ -185,12 +189,12 @@
       "value": "rgb(159, 234, 255)"
     },
     {
-      "name": "wst-button-color-border-primary",
-      "value": "rgb(26,106,255)"
-    },
-    {
       "name": "wst-color-disabled",
       "value": "rgb(194,194,194)"
+    },
+    {
+      "name": "wst-button-color-border-primary",
+      "value": "rgb(26,106,255)"
     },
     {
       "name": "wst-button-color-fill-primary",
@@ -233,11 +237,11 @@
       "value": "rgb(0,0,0)"
     },
     {
-      "name": "wst-button-color-text-primary-disabled",
+      "name": "wst-button-color-text-primary-hover",
       "value": "rgb(255,255,255)"
     },
     {
-      "name": "wst-button-color-text-primary-hover",
+      "name": "wst-button-color-text-primary-disabled",
       "value": "rgb(255,255,255)"
     },
     {
@@ -245,20 +249,98 @@
       "value": "rgb(220,232,255)"
     },
     {
-      "name": "bg",
-      "value": "rgb(255, 255, 255)"
-    },
-    {
-      "name": "fg",
-      "value": "rgb(22, 106, 234)"
-    },
-    {
       "name": "primary",
       "value": "rgb(26,106,255)"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "Wix Wix Style — read from the rendered page in a browser, not from published tokens.",
-  "dos": ""
+  "type": [
+    {
+      "name": "body",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#166aea",
+      "rounded": "24px",
+      "padding": "0px 24px"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#000000",
+      "padding": "0px 12px"
+    },
+    {
+      "key": "button-3",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#fff",
+      "rounded": "50px",
+      "padding": "0px 10px 0px 34px"
+    },
+    {
+      "key": "button-4",
+      "kind": "button",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "3px 194.4px 3px 52px",
+      "border": "1px solid rgba(78, 135, 180, 0)",
+      "shadow": "rgba(133, 154, 255, 0.4) 0px 30px 250px 20px, rgba(139, 142, 238, 0.16) 0px 16px 50px 0px"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#000000"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "textColor": "#000000",
+      "rounded": "8.64px"
+    },
+    {
+      "key": "card-3",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgb(26,106,255)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "24px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Wix Style — Crisp light (#fff) canvas, Arial typography, rgb(26,106,255) brand accent, and pill & expressive rounded surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(26,106,255)` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Arial` across 1 type steps.\n- **Component Geometry**: Buttons (`999px`), cards (`24px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

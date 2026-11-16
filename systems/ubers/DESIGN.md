@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: "Uber's Base Web"
-description: "Uber's Uber's Base Web — tokens read from https://github.com/uber-web/baseui."
+description: "Dark (#292929) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry"
 colors:
   primary: "#EFF4FE"
   primary50: "#F6F6F6"
@@ -93,13 +93,108 @@ colors:
   teal700-dark: "#72C1CD"
   blue300-dark: "#2D4775"
   blue900-dark: "#D1DFF6"
+typography:
+  display-hero:
+    fontFamily: UberMove
+    fontSize: 52px
+    fontWeight: 700
+    lineHeight: 1.23
+  section-heading:
+    fontFamily: UberMove
+    fontSize: 36px
+    fontWeight: 700
+    lineHeight: 1.22
+  card-title:
+    fontFamily: UberMove
+    fontSize: 32px
+    fontWeight: 700
+    lineHeight: 1.25
+  sub-heading:
+    fontFamily: UberMove
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 1.33
+  small-heading:
+    fontFamily: UberMove
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 1.4
+  nav-ui-large:
+    fontFamily: UberMove
+    fontSize: 18px
+    fontWeight: 500
+    lineHeight: 1.33
+  body-button:
+    fontFamily: UberMove
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.25
+  caption:
+    fontFamily: UberMove
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.14
+  micro:
+    fontFamily: UberMove
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.67
+  primary-font-family:
+    fontFamily: "UberMoveText, system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  secondary-font-family:
+    fontFamily: "UberMove, UberMoveText, system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  mono-font-family:
+    fontFamily: "UberMoveMono, \"Lucida Console\", Monaco, monospace"
+  font-size:
+    fontSize: 10px
+components:
+  button-primary:
+    backgroundColor: "#EFF4FE"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#FFEFED"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#292929"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#292929"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#EFF4FE"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#048848"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#292929"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Uber's Base Web
 
 ## Overview
 
-Uber's Uber's Base Web — tokens read from https://github.com/uber-web/baseui.
+Uber's Base Web — tokens read from https://github.com/uber-web/baseui.
 
 Tokens were read from the project's own repository, not from a marketing site: 90 colour tokens and 0 type tokens.
 
@@ -110,3 +205,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#292929) canvas paired with `#292929` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#EFF4FE` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `UberMove` across 13 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

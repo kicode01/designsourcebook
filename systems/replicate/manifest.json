@@ -6,9 +6,9 @@
   "category": "AI & Machine Learning",
   "theme": "light",
   "tags": [
-    "light",
     "developer",
-    "ai"
+    "ai",
+    "light"
   ],
   "homepage": "https://replicate.com",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 13,
     "typography": 12,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,20 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/replicate/replicate-javascript"
+  },
+  "popularity": {
+    "rank": 171,
+    "stars": 597,
+    "forks": 242,
+    "npmDownloads": 0,
+    "score": 597,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

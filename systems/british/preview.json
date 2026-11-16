@@ -1,13 +1,69 @@
 {
-  "canvas": "hsl(0, 0%, 100%)",
-  "surface": "hsl(0, 0%, 100%)",
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "hsl(224, 54%, 20%)",
+  "brand": "hsl(224, 100%, 60%)",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
+    {
+      "name": "sl-color-accent-low",
+      "value": "hsl(224, 54%, 20%)"
+    },
+    {
+      "name": "sl-color-accent",
+      "value": "hsl(224, 100%, 60%)"
+    },
+    {
+      "name": "sl-color-accent-high",
+      "value": "hsl(224, 100%, 85%)"
+    },
+    {
+      "name": "pagefind-ui-primary",
+      "value": "#393939"
+    },
+    {
+      "name": "pagefind-ui-text",
+      "value": "#393939"
+    },
+    {
+      "name": "pagefind-ui-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "pagefind-ui-border",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "astro-code-token-link",
+      "value": "hsl(234, 80%, 30%)"
+    },
+    {
+      "name": "sl-color-text-invert",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "sl-color-text-accent",
+      "value": "hsl(327, 60%, 54%)"
+    },
+    {
+      "name": "sl-color-text",
+      "value": "hsl(228, 75%, 23%)"
+    },
+    {
+      "name": "astro-code-color-background",
+      "value": "hsl(202, 21%, 88%)"
+    },
+    {
+      "name": "astro-code-color-text",
+      "value": "hsl(202, 40%, 5%)"
+    },
+    {
+      "name": "sl-color-bg-accent",
+      "value": "hsl(17, 74%, 43%)"
+    },
     {
       "name": "sl-color-white",
       "value": "hsl(0, 0%, 100%)"
@@ -41,18 +97,6 @@
       "value": "hsl(224, 10%, 10%)"
     },
     {
-      "name": "sl-color-accent-low",
-      "value": "hsl(224, 54%, 20%)"
-    },
-    {
-      "name": "sl-color-accent",
-      "value": "hsl(224, 100%, 60%)"
-    },
-    {
-      "name": "sl-color-accent-high",
-      "value": "hsl(224, 100%, 85%)"
-    },
-    {
       "name": "sl-color-gray-7",
       "value": "hsl(224, 19%, 97%)"
     },
@@ -69,39 +113,377 @@
       "value": "hsl(290, 3%, 40%)"
     },
     {
-      "name": "pagefind-ui-primary",
-      "value": "#393939"
-    },
-    {
-      "name": "pagefind-ui-text",
-      "value": "#393939"
-    },
-    {
-      "name": "pagefind-ui-background",
-      "value": "#ffffff"
-    },
-    {
-      "name": "pagefind-ui-border",
-      "value": "#eeeeee"
-    },
-    {
       "name": "pagefind-ui-tag",
       "value": "#eeeeee"
     },
     {
+      "name": "sl-color-orange",
+      "value": "hsl(41, 90%, 60%)"
+    },
+    {
+      "name": "ns-color-base-800",
+      "value": "hsl(202, 40%, 16%)"
+    },
+    {
+      "name": "ns-color-magenta",
+      "value": "hsl(327, 52%, 41%)"
+    },
+    {
+      "name": "ns-color-base-100",
+      "value": "hsl(202, 22%, 96%)"
+    },
+    {
+      "name": "sl-color-green",
+      "value": "hsl(101, 90%, 46%)"
+    },
+    {
+      "name": "ns-color-orange-low",
+      "value": "hsl(17, 74%, 97%)"
+    },
+    {
+      "name": "sl-color-hairline-shade",
+      "value": "hsl(202, 21%, 88%)"
+    },
+    {
+      "name": "ns-color-purple",
+      "value": "hsl(273, 43%, 35%)"
+    },
+    {
+      "name": "ns-color-pink-mid",
+      "value": "hsl(327, 43%, 90%)"
+    },
+    {
+      "name": "ns-color-purple-mid",
+      "value": "hsl(273, 43%, 90%)"
+    },
+    {
+      "name": "ns-color-orange-high",
+      "value": "hsl(17, 74%, 23%)"
+    },
+    {
+      "name": "ns-color-teal",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "sl-color-orange-high",
+      "value": "hsl(41, 80%, 25%)"
+    },
+    {
+      "name": "astro-code-token-keyword",
+      "value": "hsl(281, 90%, 30%)"
+    },
+    {
+      "name": "sl-color-heading",
+      "value": "hsl(228, 75%, 23%)"
+    },
+    {
+      "name": "sl-color-bg-inline-code",
+      "value": "hsl(17, 88%, 90%)"
+    },
+    {
+      "name": "sl-color-purple-low",
+      "value": "hsl(281, 80%, 90%)"
+    },
+    {
+      "name": "ns-color-masthead-experience",
+      "value": "hsl(226, 57%, 29%)"
+    },
+    {
+      "name": "sl-color-hairline",
+      "value": "hsl(202, 21%, 88%)"
+    },
+    {
+      "name": "sl-color-red",
+      "value": "hsl(339, 90%, 60%)"
+    },
+    {
+      "name": "sl-color-red-low",
+      "value": "hsl(339, 80%, 90%)"
+    },
+    {
+      "name": "ns-color-purple-high",
+      "value": "hsl(273, 43%, 23%)"
+    },
+    {
+      "name": "sl-color-green-low",
+      "value": "hsl(101, 85%, 90%)"
+    },
+    {
+      "name": "ns-color-green-high",
+      "value": "hsl(151, 43%, 23%)"
+    },
+    {
+      "name": "astro-code-token-function",
+      "value": "hsl(339, 80%, 30%)"
+    },
+    {
+      "name": "sl-color-orange-low",
+      "value": "hsl(41, 90%, 88%)"
+    },
+    {
+      "name": "sl-color-bg-config",
+      "value": "hsl(202, 22%, 96%)"
+    },
+    {
+      "name": "sl-color-bg-sidebar",
+      "value": "hsl(202, 22%, 96%)"
+    },
+    {
+      "name": "astro-code-token-comment",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "ns-color-pink-low",
+      "value": "hsl(327, 43%, 97%)"
+    },
+    {
+      "name": "sl-color-purple",
+      "value": "hsl(281, 90%, 60%)"
+    },
+    {
+      "name": "ns-color-base-700",
+      "value": "hsl(202, 40%, 23%)"
+    },
+    {
+      "name": "sl-color-bg",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "ns-color-green-mid",
+      "value": "hsl(151, 43%, 90%)"
+    },
+    {
+      "name": "ns-color-base-200",
+      "value": "hsl(202, 21%, 88%)"
+    },
+    {
+      "name": "ns-color-black",
+      "value": "hsl(202, 40%, 5%)"
+    },
+    {
+      "name": "ns-color-blue",
+      "value": "hsl(226, 57%, 29%)"
+    },
+    {
+      "name": "ns-color-masthead-patterns",
+      "value": "hsl(273, 43%, 35%)"
+    },
+    {
+      "name": "sl-color-red-high",
+      "value": "hsl(339, 80%, 30%)"
+    },
+    {
+      "name": "ns-color-masthead-form",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "ns-color-masthead-components",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "ns-color-orange",
+      "value": "hsl(17, 74%, 43%)"
+    },
+    {
+      "name": "ns-color-red-low",
+      "value": "hsl(348, 99%, 97%)"
+    },
+    {
+      "name": "ns-color-navy",
+      "value": "hsl(228, 75%, 23%)"
+    },
+    {
+      "name": "astro-code-token-constant",
+      "value": "hsl(234, 80%, 30%)"
+    },
+    {
+      "name": "sl-color-blue-high",
+      "value": "hsl(234, 80%, 30%)"
+    },
+    {
+      "name": "ns-color-masthead-deprecated",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "ns-color-green-low",
+      "value": "hsl(151, 43%, 97%)"
+    },
+    {
+      "name": "ns-color-indigo",
+      "value": "hsl(223, 43%, 35%)"
+    },
+    {
+      "name": "ns-color-masthead-page-types",
+      "value": "hsl(327, 52%, 41%)"
+    },
+    {
+      "name": "astro-code-token-punctuation",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "sl-color-bg-nav",
+      "value": "hsl(202, 22%, 96%)"
+    },
+    {
+      "name": "sl-color-green-high",
+      "value": "hsl(101, 80%, 22%)"
+    },
+    {
+      "name": "ns-color-base-900",
+      "value": "hsl(202, 40%, 9%)"
+    },
+    {
+      "name": "astro-code-token-string-expression",
+      "value": "hsl(101, 80%, 22%)"
+    },
+    {
+      "name": "ns-color-base-600",
+      "value": "hsl(202, 40%, 32%)"
+    },
+    {
+      "name": "sl-color-hairline-light",
+      "value": "hsl(202, 21%, 88%)"
+    },
+    {
+      "name": "ns-color-red",
+      "value": "hsl(348, 99%, 39%)"
+    },
+    {
+      "name": "ns-color-indigo-low",
+      "value": "hsl(223, 43%, 97%)"
+    },
+    {
+      "name": "ns-color-red-mid",
+      "value": "hsl(348, 99%, 90%)"
+    },
+    {
+      "name": "ns-color-indigo-high",
+      "value": "hsl(223, 43%, 23%)"
+    },
+    {
+      "name": "ns-color-green",
+      "value": "hsl(151, 43%, 35%)"
+    },
+    {
+      "name": "ns-color-base-300",
+      "value": "hsl(202, 19%, 66%)"
+    },
+    {
       "name": "primary",
-      "value": "hsl(224, 54%, 20%)"
+      "value": "hsl(224, 100%, 60%)"
     }
   ],
-  "type": [],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.17
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body",
+      "fontFamily": "menlo, monospace",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "header",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    }
+  ],
   "components": [
     {
-      "key": "tablist-wrapper",
-      "kind": "tablist",
-      "backgroundColor": "hsl(202, 21%, 88%)",
-      "border": "1px solid hsl(17, 74%, 43%)"
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#315a72",
+      "rounded": "100px",
+      "padding": "0px 16px 0px 12px",
+      "border": "1px solid rgb(152, 173, 185)"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#315a72",
+      "rounded": "8px"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#234152",
+      "padding": "10px 24px 10px 18px"
+    },
+    {
+      "key": "input-2",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#080e12",
+      "rounded": "8px",
+      "padding": "0px 56px 0px 43.2px",
+      "border": "1px solid rgb(152, 173, 185)"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#0f2067"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "#f3f5f7",
+      "textColor": "#0f2067",
+      "rounded": "8px",
+      "shadow": "rgb(218, 226, 231) 0px 0px 0px 1px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "hsl(224, 100%, 60%)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
     }
   ],
-  "overview": "British British Gas Nucleus — read from britishgas.design's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "British Gas Nucleus — Crisp light (#ffffff) canvas, Roboto typography, hsl(224, 100%, 60%) brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(224, 100%, 60%)` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Roboto` across 5 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

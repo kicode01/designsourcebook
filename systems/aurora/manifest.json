@@ -2,22 +2,22 @@
   "name": "aurora",
   "displayName": "Aurora",
   "description": "Government of Canada Aurora — tokens read from https://github.com/gctools-outilsgc/design-system.",
-  "style": "Government of Canada Aurora — tokens read from https://github.com/gctools-outilsgc/design-system.",
+  "style": "Crisp light (#fff) canvas, -apple-system typography, #002D42 brand accent, and 8px corner geometry",
   "category": "Government of Canada",
   "org": "Government of Canada",
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "government-of-canada",
-    "government"
+    "government",
+    "light"
   ],
   "homepage": "https://github.com/gctools-outilsgc/design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/gctools-outilsgc/design-system — 1 token files, 21 colours harvested, 21 selected.",
   "source": {
-    "repo": "https://github.com/gctools-outilsgc/design-system"
+    "repo": "https://github.com/gctools-outilsgc/aurora-design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -28,7 +28,7 @@
   "tokens": {
     "colors": 21,
     "typography": 2,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -38,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 111,
+    "stars": 96,
+    "forks": 9,
+    "npmDownloads": 0,
+    "score": 96,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

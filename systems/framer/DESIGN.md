@@ -20,107 +20,148 @@ colors:
   primary: "#a6a6a6"
 typography:
   display-hero:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 110px
     fontWeight: 500
     lineHeight: 0.85
     letterSpacing: "-5.5px"
   section-display:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 85px
     fontWeight: 500
     lineHeight: 0.95
     letterSpacing: "-4.25px"
   section-heading:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 62px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: "-3.1px"
   feature-heading:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 32px
     fontWeight: 500
     lineHeight: 1.13
     letterSpacing: "-1px"
   accent-display:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 61.5px
     fontWeight: 100
     lineHeight: 1
     letterSpacing: "-3.1px"
   card-title:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "-0.01px"
   feature-title:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 22px
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: "-0.8px"
   sub-heading:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 20px
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.8px"
   body-large:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "-0.01px"
   body:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "-0.01px"
   nav-ui:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "-0.15px"
   body-readable:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.6
   caption:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.4
   label:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 13px
     fontWeight: 500
     lineHeight: 1.6
   small-caption:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
   micro-code:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 10.4px
     fontWeight: 400
     lineHeight: 1.6
   badge:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 9px
     fontWeight: 600
     lineHeight: 1.11
   micro-uppercase:
-    fontFamily: GT Walsheim Framer Medium
+    fontFamily: "\"GT Walsheim Framer Medium\""
     fontSize: 7px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.21px
+components:
+  button-primary:
+    backgroundColor: "#a6a6a6"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#a6a6a6"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Framer

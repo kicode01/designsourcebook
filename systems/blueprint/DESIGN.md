@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Blueprint
-description: "Blueprint Blueprint — tokens read from https://github.com/palantir/blueprint."
+description: "Crisp light (#ffffff) canvas, monospace typography, #FF9980 brand accent, and 3px corner geometry"
 colors:
   1: "#1c2127"
   2: "#252a31"
@@ -94,13 +94,73 @@ colors:
   vermilion5: "#FF9980"
   violet1: "#5C255C"
   primary: "#FF9980"
+typography:
+  pt-font-family-monospace:
+    fontFamily: monospace
+  pt-font-family:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif"
+  body:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.28581
+  bp6-heading:
+    fontSize: 14px
+  bp6-entity-title-subtitle:
+    fontSize: 12px
+  h6:
+    fontSize: 18px
+  bp6-navbar-heading:
+    fontSize: 16px
+  switch-indicator-text-font-size:
+    fontSize: 0.7em
+components:
+  button-primary:
+    backgroundColor: "#FF9980"
+    textColor: "#0b0b0c"
+    rounded: 3px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 3px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 3px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 3px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 7px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#FF9980"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 3px
+    padding: 10px 16px
 ---
 
 # Blueprint
 
 ## Overview
 
-Blueprint Blueprint — tokens read from https://github.com/palantir/blueprint.
+Blueprint — tokens read from https://github.com/palantir/blueprint.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +171,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF9980` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `monospace` across 8 type steps.
+- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

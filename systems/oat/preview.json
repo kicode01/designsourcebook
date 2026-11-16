@@ -1,0 +1,176 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#008032",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "warning-foreground",
+      "value": "#09090b"
+    },
+    {
+      "name": "bg-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#262626"
+    },
+    {
+      "name": "main-bg",
+      "value": "#fafafa"
+    },
+    {
+      "name": "main-border",
+      "value": "#e4e4e7"
+    },
+    {
+      "name": "footer-text",
+      "value": "#71717a"
+    },
+    {
+      "name": "link-bg",
+      "value": "#f4f4f5"
+    },
+    {
+      "name": "button-border",
+      "value": "rgba(255, 255, 255, 0.12)"
+    },
+    {
+      "name": "input-text",
+      "value": "#000000"
+    },
+    {
+      "name": "badge-text",
+      "value": "#a65b00"
+    },
+    {
+      "name": "badge-text-1",
+      "value": "#008032"
+    },
+    {
+      "name": "badge-text-2",
+      "value": "#d32f2f"
+    },
+    {
+      "name": "primary",
+      "value": "#008032"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "system-ui, sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "h2",
+      "fontFamily": "system-ui, sans-serif",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "h3",
+      "fontFamily": "system-ui, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "header",
+      "fontFamily": "system-ui, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body",
+      "fontFamily": "system-ui, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav",
+      "fontFamily": "system-ui, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "1rem",
+      "border": "1px solid light-dark(#e4e4e7, #303036)",
+      "shadow": "0 1px 2px rgb(0 0 0 / .06)"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#008032",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Oat UI — Crisp light (#ffffff) canvas, system-ui typography, #008032 brand accent, and pill & expressive rounded surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#008032` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `system-ui` across 6 type steps.\n- **Component Geometry**: Buttons (`9999px`), cards (`9999px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

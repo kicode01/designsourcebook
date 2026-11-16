@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: AutoGuru Overdrive
-description: "AutoGuru AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive."
+description: "Crisp light (#e1edfe) canvas, AvertaStandard typography, #01c68c brand accent, and 8px corner geometry"
 colors:
   background-subtle: "#e1edfe"
   white: "#ffffff"
@@ -36,13 +36,61 @@ colors:
   reverse: "#212338"
   emphasis-inactive: "#eef0f2"
   danger: "#d42b26"
+typography:
+  font-size:
+    fontSize: 18px
+  font-family:
+    fontFamily: "AvertaStandard, system-ui, sans-serif"
+  font-family-mono:
+    fontFamily: "\"Courier New\", Courier, monospace"
+components:
+  button-primary:
+    backgroundColor: "#01c68c"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#d42b26"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#01c68c"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # AutoGuru Overdrive
 
 ## Overview
 
-AutoGuru AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.
+AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.
 
 Tokens were read from the project's own repository, not from a marketing site: 33 colour tokens and 0 type tokens.
 
@@ -53,3 +101,10 @@ Tokens were read from the project's own repository, not from a marketing site: 3
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#e1edfe) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#01c68c` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `AvertaStandard` across 3 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

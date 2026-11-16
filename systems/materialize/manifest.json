@@ -1,22 +1,23 @@
 {
   "name": "materialize",
   "displayName": "Materialize CSS",
-  "description": "Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.",
-  "style": "Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.",
+  "description": "Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.",
+  "style": "Crisp light (#FFFFFF) canvas, -apple-system typography, #FF8A80 brand accent, and 4px corner geometry",
   "category": "Materialize",
   "org": "Materialize",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "materialize"
+    "materialize",
+    "light"
   ],
   "homepage": "https://github.com/Dogfalo/materialize",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/Dogfalo/materialize — 3 token files, 47 colours harvested, 46 selected.",
   "source": {
-    "repo": "https://github.com/Dogfalo/materialize"
+    "repo": "https://github.com/Dogfalo/materialize",
+    "package": "materialize-css"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 47,
-    "typography": 18,
-    "components": 9
+    "typography": 52,
+    "components": 10
   },
   "checks": {
     "errors": 0,
-    "warnings": 4,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 7,
+    "stars": 38769,
+    "forks": 4574,
+    "npmDownloads": 178926,
+    "score": 44821,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

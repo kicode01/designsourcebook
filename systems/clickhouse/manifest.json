@@ -22,7 +22,7 @@
   "tokens": {
     "colors": 16,
     "typography": 12,
-    "components": 4
+    "components": 9
   },
   "checks": {
     "errors": 0,
@@ -32,5 +32,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/ClickHouse/click-ui",
+    "package": "@clickhouse/click-ui"
+  },
+  "popularity": {
+    "rank": 107,
+    "stars": 143,
+    "forks": 39,
+    "npmDownloads": 71059,
+    "score": 3256,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

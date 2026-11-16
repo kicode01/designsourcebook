@@ -6,7 +6,6 @@
   "category": "Developer Tools & Platforms",
   "theme": "light",
   "tags": [
-    "dark",
     "developer",
     "developer-tools",
     "light"
@@ -24,7 +23,7 @@
   "tokens": {
     "colors": 23,
     "typography": 10,
-    "components": 2
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -34,5 +33,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/expo/expo",
+    "package": "expo"
+  },
+  "popularity": {
+    "rank": 159,
+    "stars": 53587,
+    "forks": 15142,
+    "npmDownloads": 62845824,
+    "score": 465456,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

@@ -1,23 +1,24 @@
 {
   "name": "french",
   "displayName": "French Government Design System",
-  "description": "French French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.",
-  "style": "French French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.",
-  "category": "French",
-  "org": "French",
+  "description": "French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.",
+  "style": "Crisp light (#fff) canvas, Marianne typography, #ff732c brand accent, and 4px corner geometry",
+  "category": "French Government",
+  "org": "French Government",
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "french",
-    "government"
+    "government",
+    "light"
   ],
   "homepage": "https://github.com/GouvernementFR/dsfr",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/GouvernementFR/dsfr — 2 token files, 272 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/GouvernementFR/dsfr"
+    "repo": "https://github.com/GouvernementFR/dsfr",
+    "package": "@gouvfr/dsfr"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,16 +28,30 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 31,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 82,
+    "stars": 400,
+    "forks": 231,
+    "npmDownloads": 144298,
+    "score": 5584,
+    "frameworks": [
+      "css",
+      "react",
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 29
   }
 }

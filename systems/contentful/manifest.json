@@ -1,22 +1,23 @@
 {
   "name": "contentful",
   "displayName": "Contentful Forma 36",
-  "description": "Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.",
-  "style": "Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.",
+  "description": "Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.",
+  "style": "Crisp light (#ffffff) canvas, Geist Sans typography, #64d2ff brand accent, and 6px corner geometry",
   "category": "Contentful",
   "org": "Contentful",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "contentful"
+    "contentful",
+    "light"
   ],
   "homepage": "https://github.com/contentful/forma-36",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/contentful/forma-36 — 14 token files, 122 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/contentful/forma-36"
+    "repo": "https://github.com/contentful/forma-36",
+    "package": "@contentful/f36-components"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 1,
-    "components": 0
+    "typography": 20,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 86,
+    "stars": 361,
+    "forks": 81,
+    "npmDownloads": 1339137,
+    "score": 26143,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

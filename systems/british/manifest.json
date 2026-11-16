@@ -1,22 +1,22 @@
 {
   "name": "british",
   "displayName": "British Gas Nucleus",
-  "description": "British British Gas Nucleus — read from britishgas.design's live stylesheets, not a published token package.",
-  "style": "British British Gas Nucleus — read from britishgas.design's live stylesheets, not a published token package.",
-  "category": "British",
-  "org": "British",
+  "description": "British Gas Nucleus — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, Roboto typography, hsl(224, 100%, 60%) brand accent, and 8px corner geometry",
+  "category": "British Gas",
+  "org": "British Gas",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "british"
+    "observed",
+    "british-gas",
+    "light"
   ],
   "homepage": "https://britishgas.design/",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Colours read from https://britishgas.design/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "provenanceNote": "Computed styles read from https://britishgas.design/ in headless Chromium on 2026-11-16 (187 custom properties, 61 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: The British Gas Design System | Nucleus Docs.",
   "source": {
-    "repo": null
+    "url": "https://britishgas.design/"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,17 +25,29 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 21,
-    "typography": 0,
-    "components": 1
+    "colors": 91,
+    "typography": 5,
+    "components": 9
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 178,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

@@ -14,6 +14,8 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
+import { normOrg as norm } from "../lib/registry.mjs";
+
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 
@@ -122,7 +124,6 @@ const systems = fs
   .filter((d) => d.isDirectory())
   .map((d) => JSON.parse(fs.readFileSync(path.join(ROOT, "systems", d.name, "manifest.json"), "utf8")));
 
-const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "");
 const ownedNames = new Set();
 for (const s of systems) {
   ownedNames.add(norm(s.name));

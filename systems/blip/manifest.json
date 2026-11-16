@@ -1,22 +1,23 @@
 {
   "name": "blip",
   "displayName": "BLiP",
-  "description": "BLiP BLiP — tokens read from https://github.com/takenet/blip-ds.",
-  "style": "BLiP BLiP — tokens read from https://github.com/takenet/blip-ds.",
+  "description": "BLiP — tokens read from https://github.com/takenet/blip-ds.",
+  "style": "Crisp light (#ffffff) canvas, Nunito Sans typography, #00c6d7 brand accent, and 8px corner geometry",
   "category": "BLiP",
   "org": "BLiP",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "bli-p"
+    "bli-p",
+    "light"
   ],
   "homepage": "https://github.com/takenet/blip-ds",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/takenet/blip-ds — 7 token files, 226 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/takenet/blip-ds"
+    "repo": "https://github.com/takenet/blip-ds",
+    "package": "blip-ds"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,29 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 8,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 126,
+    "stars": 45,
+    "forks": 21,
+    "npmDownloads": 10064,
+    "score": 807,
+    "frameworks": [
+      "web-components",
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

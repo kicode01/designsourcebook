@@ -1,22 +1,23 @@
 {
   "name": "semi",
   "displayName": "Semi Design",
-  "description": "Semi Semi Design — tokens read from https://github.com/DouyinFE/semi-design.",
-  "style": "Semi Semi Design — tokens read from https://github.com/DouyinFE/semi-design.",
+  "description": "Semi Design — tokens read from https://github.com/DouyinFE/semi-design.",
+  "style": "Crisp light (#fff) canvas, Inter typography, rgba(119, 182, 249, 1) brand accent, and 6px corner geometry",
   "category": "Semi",
   "org": "Semi",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "semi"
+    "semi",
+    "light"
   ],
   "homepage": "https://github.com/DouyinFE/semi-design",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/DouyinFE/semi-design — 17 token files, 126 colours harvested, 56 selected.",
   "source": {
-    "repo": "https://github.com/DouyinFE/semi-design"
+    "repo": "https://github.com/DouyinFE/semi-design",
+    "package": "@douyinfe/semi-ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 57,
-    "typography": 46,
-    "components": 1
+    "typography": 47,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 23,
+    "stars": 10491,
+    "forks": 859,
+    "npmDownloads": 0,
+    "score": 10491,
+    "frameworks": [
+      "react",
+      "vue",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 31
   }
 }

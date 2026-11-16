@@ -8,18 +8,18 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "ca-technologies",
-    "open-source"
+    "open-source",
+    "light"
   ],
   "homepage": "http://mineral-ui.com",
   "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from mineral-ui@0.58.0 (4 token files, 113 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from mineral-ui@0.58.0 (4 token files, 200 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "mineral-ui",
     "version": "0.58.0",
-    "extra": []
+    "repo": "https://github.com/mineral-ui/mineral-ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -29,8 +29,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 1,
-    "components": 0
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -40,5 +40,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 72,
+    "stars": 556,
+    "forks": 46,
+    "npmDownloads": 2754,
+    "score": 856,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

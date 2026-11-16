@@ -1,12 +1,12 @@
 {
-  "canvas": "#1c1c1c",
-  "surface": "#1c1c1c",
-  "text": "#f7f7f8",
-  "muted": "#f7f7f8",
+  "canvas": "#fcfbf8",
+  "surface": "#fcfbf8",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
   "brand": "#f7f4ed",
   "border": "#eceae4",
   "radius": "6px",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "primary-cream",
@@ -76,7 +76,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "60px",
       "px": 60,
       "fontWeight": 600,
@@ -85,7 +85,7 @@
     },
     {
       "name": "display-alt",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "60px",
       "px": 60,
       "fontWeight": 480,
@@ -93,7 +93,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "48px",
       "px": 48,
       "fontWeight": 600,
@@ -102,7 +102,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "36px",
       "px": 36,
       "fontWeight": 600,
@@ -111,7 +111,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 400,
@@ -119,7 +119,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -127,7 +127,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -135,7 +135,7 @@
     },
     {
       "name": "button",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -143,7 +143,7 @@
     },
     {
       "name": "link",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -151,7 +151,7 @@
     },
     {
       "name": "button-small",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -159,7 +159,7 @@
     },
     {
       "name": "link-small",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -167,7 +167,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "Camera Plain Variable",
+      "fontFamily": "\"Camera Plain Variable\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -206,6 +206,46 @@
       "backgroundColor": "#f7f4ed",
       "textColor": "#1c1c1c",
       "rounded": "9999px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#1c1c1c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#1c1c1c",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#f7f4ed",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#1c1c1c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (#f7f4ed) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (#1c1c1c) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability.\n\nThe custom Camera Plain Variable typeface is the system's secret weapon. Unlike geometric sans-serifs that signal \"tech company,\" Camera Plain has a humanist warmth — slightly rounded terminals, organic curves, and a comfortable reading rhythm. At display sizes (48px–60px), weight 600 with aggressive negative letter-spacing (-0.9px to -1.5px) compresses headlines into confident, editorial statements.…",

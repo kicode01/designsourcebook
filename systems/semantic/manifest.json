@@ -1,0 +1,56 @@
+{
+  "name": "semantic",
+  "displayName": "Fomantic / Semantic UI",
+  "description": "Semantic Fomantic / Semantic UI — read from fomantic-ui.com's live stylesheets, not a published token package.",
+  "style": "Human-friendly HTML UI vocabulary, Lato typography and named semantic color states",
+  "category": "Semantic",
+  "org": "Semantic",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "semantic",
+    "light"
+  ],
+  "homepage": "https://fomantic-ui.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://fomantic-ui.com/ and its 1 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "url": "https://fomantic-ui.com/",
+    "repo": "https://github.com/fomantic/Fomantic-UI",
+    "package": "fomantic-ui-css"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 13,
+    "typography": 11,
+    "components": 7
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 43,
+    "stars": 3772,
+    "forks": 343,
+    "npmDownloads": 0,
+    "score": 3772,
+    "frameworks": [
+      "css",
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

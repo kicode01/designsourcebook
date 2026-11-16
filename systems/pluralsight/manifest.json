@@ -8,17 +8,17 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "pluralsight"
+    "pluralsight",
+    "light"
   ],
   "homepage": "https://design.pluralsight.com/",
   "license": "Apache 2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @pluralsight/design-tokens@0.7.1 (2 token files, 110 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @pluralsight/design-tokens@0.7.1 (2 token files, 110 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@pluralsight/design-tokens",
     "version": "0.7.1",
-    "extra": []
+    "repo": "https://github.com/pluralsight/pando"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -28,16 +28,29 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 10,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 146,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 1603,
+    "score": 203,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

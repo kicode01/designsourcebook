@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Workday Canvas
-description: "Workday Workday Canvas — tokens read from https://github.com/Workday/canvas-kit."
+description: "Crisp light (#ffffff) canvas, Roboto typography, #00f brand accent, and 8px corner geometry"
 colors:
   tokens: "#fbf5ff"
   contrast: "#FFFFFF"
@@ -72,13 +72,101 @@ colors:
   border-right-color: "rgb(51,51,51)"
   border-bottom-color: "#ffffff"
   border-left-color: "#ffa126"
+typography:
+  cnvs-base-font-size:
+    fontSize: 1rem
+  cnvs-base-font-size-25:
+    fontSize: 0.625rem
+  cnvs-base-font-size-50:
+    fontSize: 0.75rem
+  cnvs-base-font-size-75:
+    fontSize: 0.875rem
+  cnvs-base-font-size-100:
+    fontSize: 1rem
+  cnvs-base-font-size-125:
+    fontSize: 1.125rem
+  cnvs-base-font-size-150:
+    fontSize: 1.25rem
+  cnvs-base-font-size-200:
+    fontSize: 1.5rem
+  cnvs-base-font-size-250:
+    fontSize: 1.75rem
+  cnvs-base-font-size-300:
+    fontSize: 2rem
+  cnvs-base-font-size-400:
+    fontSize: 2.5rem
+  cnvs-base-font-size-500:
+    fontSize: 3rem
+  cnvs-base-font-size-600:
+    fontSize: 3.5rem
+  cnvs-base-font-size-750:
+    fontSize: 4.5rem
+  cnvs-base-font-size-900:
+    fontSize: 5.5rem
+  cnvs-base-font-size-1050:
+    fontSize: 6.5rem
+  cnvs-base-font-family-50:
+    fontFamily: Roboto
+  cnvs-base-font-family-100:
+    fontFamily: "\"Roboto Mono\""
+  cnvs-base-font-family-200:
+    fontFamily: "\"Noto Sans\""
+  cnvs-base-font-family-0:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Sana Serif\", Inter, system-ui, sans-serif, Avenir, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  cnvs-sys-font-family-default:
+    fontFamily: "\"Sana Sans VF\", Roboto, -apple-system, BlinkMacSystemFont, \"Sana Serif\", Inter, system-ui, sans-serif, Avenir, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  cnvs-sys-font-family-mono:
+    fontFamily: "\"IBM Plex Mono\", \"Roboto Mono\", monospace"
+  cnvs-sys-font-family-fallback:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Sana Serif\", Inter, system-ui, sans-serif, Avenir, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+components:
+  button-primary:
+    backgroundColor: "#00f"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#00f"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Workday Canvas
 
 ## Overview
 
-Workday Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.
+Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.
 
 Tokens were read from the project's own repository, not from a marketing site: 69 colour tokens and 0 type tokens.
 
@@ -89,3 +177,10 @@ Tokens were read from the project's own repository, not from a marketing site: 6
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00f` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Roboto` across 23 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

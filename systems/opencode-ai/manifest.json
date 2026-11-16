@@ -6,8 +6,8 @@
   "category": "AI & Machine Learning",
   "theme": "dark",
   "tags": [
-    "dark",
-    "ai"
+    "ai",
+    "dark"
   ],
   "homepage": "https://opencode.ai",
   "license": "proprietary",
@@ -21,16 +21,32 @@
   ],
   "tokens": {
     "colors": 22,
-    "typography": 0,
-    "components": 2
+    "typography": 6,
+    "components": 7
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/anomalyco/opencode"
+  },
+  "popularity": {
+    "rank": 156,
+    "stars": 227240,
+    "forks": 30785,
+    "npmDownloads": 0,
+    "score": 227240,
+    "frameworks": [
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

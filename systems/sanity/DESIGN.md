@@ -28,100 +28,100 @@ colors:
   primary: "#0b0b0b"
 typography:
   display-hero:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 112px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "-4.48px"
   hero-secondary:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 72px
     fontWeight: 400
     lineHeight: 1.05
     letterSpacing: "-2.88px"
   section-heading:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 48px
     fontWeight: 400
     lineHeight: 1.08
     letterSpacing: "-1.68px"
   heading-large:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 38px
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: "-1.14px"
   heading-medium:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 32px
     fontWeight: 425
     lineHeight: 1.24
     letterSpacing: "-0.32px"
   heading-small:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 24px
     fontWeight: 425
     lineHeight: 1.24
     letterSpacing: "-0.24px"
   subheading:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 20px
     fontWeight: 425
     lineHeight: 1.13
     letterSpacing: "-0.2px"
   body-large:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.18px"
   body:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   body-small:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.15px"
   caption:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "-0.13px"
   small-caption:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.12px"
   micro-label:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 11px
     fontWeight: 500
     lineHeight: 1
   code-body:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1.5
   code-caption:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.3
   code-micro:
-    fontFamily: IBM Plex Mono
+    fontFamily: "\"IBM Plex Mono\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.3
 components:
   button-primary-cta:
     backgroundColor: "#f36458"
-    textColor: "#ffffff"
+    textColor: "#000000"
     padding: 8px 16px
   button-secondary:
     backgroundColor: "#0b0b0b"

@@ -5,7 +5,7 @@
   "muted": "#f7f7f8",
   "brand": "#CFE1FD",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#f7f7f8",
   "palette": [
     {
@@ -376,49 +376,49 @@
   "type": [
     {
       "name": "typography-font-size-font-size36",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "48px",
       "px": 48
     },
     {
       "name": "typography-font-size-font-size32",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "36px",
       "px": 36
     },
     {
       "name": "typography-font-size-legacy-font-size29",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "35px",
       "px": 35
     },
     {
       "name": "typography-font-size-font-size28",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "32px",
       "px": 32
     },
     {
       "name": "typography-font-size-legacy-font-size11",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "29px",
       "px": 29
     },
     {
       "name": "typography-font-size-font-size24",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "28px",
       "px": 28
     },
     {
       "name": "typography-font-size-font-size20",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "24px",
       "px": 24
     },
     {
       "name": "typography-font-size-font-size16",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "20px",
       "px": 20
     },
@@ -433,30 +433,90 @@
       "px": 16
     },
     {
-      "name": "unsafe-typography-family",
-      "fontFamily": "var(--ds-dynamic-font-family, \\",
-      "px": 16
-    },
-    {
       "name": "typography-font-size-font-size14",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "typography-font-size-font-size12",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "typography-font-size-font-size-code",
-      "fontFamily": "system-ui",
+      "fontFamily": "FontFamilyWebSansRefreshed",
       "fontSize": "11px",
       "px": 11
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#CFE1FD",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#F87168",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#1F1F21",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#1F1F21",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#CFE1FD",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#DCFFF1",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#1F1F21",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Atlassian Design System — tokens behind Jira and Confluence.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (#1F1F21) canvas paired with `#1F1F21` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#CFE1FD` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `FontFamilyWebSansRefreshed` across 13 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

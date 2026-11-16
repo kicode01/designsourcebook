@@ -26,107 +26,148 @@ colors:
   primary: "#F7A501"
 typography:
   display-hero:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 30px
     fontWeight: 800
     lineHeight: 1.2
     letterSpacing: "-0.75px"
   section-heading:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 36px
     fontWeight: 700
     lineHeight: 1.5
     letterSpacing: 0px
   feature-heading:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 24px
     fontWeight: 700
     lineHeight: 1.33
     letterSpacing: 0px
   card-heading:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 21.4px
     fontWeight: 700
     lineHeight: 1.4
     letterSpacing: "-0.54px"
   sub-heading:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 20px
     fontWeight: 700
     lineHeight: 1.4
     letterSpacing: "-0.5px"
   sub-heading-uppercase:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 20px
     fontWeight: 700
     lineHeight: 1.4
     letterSpacing: 0px
   body-emphasis:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 19.3px
     fontWeight: 600
     lineHeight: 1.56
     letterSpacing: "-0.48px"
   label-uppercase:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 18px
     fontWeight: 700
     lineHeight: 1.5
     letterSpacing: 0px
   body-semi:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 18px
     fontWeight: 600
     lineHeight: 1.56
     letterSpacing: 0px
   body:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: 0px
   body-medium:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1.5
     letterSpacing: 0px
   body-relaxed:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1.71
     letterSpacing: 0px
   nav-ui:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 15px
     fontWeight: 600
     lineHeight: 1.5
     letterSpacing: 0px
   caption:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
     letterSpacing: 0px
   small-label:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 13px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0px
   micro:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
     letterSpacing: 0px
   code:
-    fontFamily: IBM Plex Sans Variable
+    fontFamily: "\"IBM Plex Sans Variable\""
     fontSize: 14px
     fontWeight: 500
     lineHeight: 1.43
     letterSpacing: 0px
+components:
+  button-primary:
+    backgroundColor: "#F7A501"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#eeefe9"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#eeefe9"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#eeefe9"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#F7A501"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#eeefe9"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: PostHog

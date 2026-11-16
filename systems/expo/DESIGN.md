@@ -88,6 +88,31 @@ components:
   button-dark-primary:
     backgroundColor: "#000000"
     textColor: "#ffffff"
+  input-default:
+    backgroundColor: "#f0f0f3"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#f0f0f3"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0d74ce"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#f0f0f3"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: Expo

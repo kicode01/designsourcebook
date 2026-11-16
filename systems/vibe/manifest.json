@@ -1,22 +1,23 @@
 {
   "name": "vibe",
   "displayName": "Vibe",
-  "description": "Vibe Vibe — tokens read from https://github.com/mondaycom/vibe.",
-  "style": "Vibe Vibe — tokens read from https://github.com/mondaycom/vibe.",
+  "description": "Vibe — tokens read from https://github.com/mondaycom/vibe.",
+  "style": "Crisp light (#ffffff) canvas, Figtree typography, #0073ea brand accent, and 8px corner geometry",
   "category": "Vibe",
   "org": "Vibe",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "vibe"
+    "vibe",
+    "light"
   ],
   "homepage": "https://github.com/mondaycom/vibe",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/mondaycom/vibe — 7 token files, 310 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/mondaycom/vibe"
+    "repo": "https://github.com/mondaycom/vibe",
+    "package": "@vibe/core"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 17,
-    "components": 0
+    "typography": 16,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 65,
+    "stars": 695,
+    "forks": 366,
+    "npmDownloads": 0,
+    "score": 695,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 42
   }
 }

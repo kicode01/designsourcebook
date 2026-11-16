@@ -208,190 +208,104 @@
   "type": [
     {
       "name": "rs-font-size-headline-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "5rem",
       "px": 80
     },
     {
       "name": "rs-font-size-headline-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "4rem",
       "px": 64
     },
     {
       "name": "rs-font-size-headline-3",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "3rem",
       "px": 48
     },
     {
       "name": "rs-font-size-featured-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "2rem",
       "px": 32
     },
     {
       "name": "rs-font-size-featured-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.75rem",
       "px": 28
     },
     {
       "name": "rs-font-size-featured-3",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "rs-font-size-featured-4",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.375rem",
       "px": 22
     },
     {
       "name": "rs-font-size-featured-5",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "rs-font-size-featured-6",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
       "name": "rs-font-family-headline",
-      "fontFamily": "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "px": 16
     },
     {
       "name": "rs-font-family-title",
-      "fontFamily": "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "px": 16
     },
     {
       "name": "rs-font-family-body",
-      "fontFamily": "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "px": 16
     },
     {
       "name": "rs-font-family-monospace",
-      "fontFamily": "Geist Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-headline-1",
-      "fontFamily": "var(--rs-font-family-headline)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-headline-2",
-      "fontFamily": "var(--rs-font-family-headline)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-headline-3",
-      "fontFamily": "var(--rs-font-family-headline)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-featured-1",
-      "fontFamily": "var(--rs-font-family-title)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-featured-2",
-      "fontFamily": "var(--rs-font-family-title)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-featured-3",
-      "fontFamily": "var(--rs-font-family-title)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-featured-4",
-      "fontFamily": "var(--rs-font-family-title)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-featured-5",
-      "fontFamily": "var(--rs-font-family-title)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-featured-6",
-      "fontFamily": "var(--rs-font-family-title)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-body-1",
-      "fontFamily": "var(--rs-font-family-body)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-body-2",
-      "fontFamily": "var(--rs-font-family-body)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-caption-1",
-      "fontFamily": "var(--rs-font-family-body)",
-      "px": 16
-    },
-    {
-      "name": "rs-font-family-caption-2",
-      "fontFamily": "var(--rs-font-family-body)",
-      "px": 16
-    },
-    {
-      "name": "default-font-family",
-      "fontFamily": "var(--font-sans)",
-      "px": 16
-    },
-    {
-      "name": "default-mono-font-family",
-      "fontFamily": "var(--font-mono)",
+      "fontFamily": "\"Geist Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
       "px": 16
     },
     {
       "name": "rs-font-size-body-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": ".8125rem",
       "px": 13
     },
     {
       "name": "rs-font-size-body-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": ".6875rem",
       "px": 11
     },
     {
       "name": "rs-font-size-caption-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": ".6875rem",
       "px": 11
     },
     {
       "name": "rs-font-size-caption-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif",
       "fontSize": ".625rem",
       "px": 10
     }
   ],
   "components": [
-    {
-      "key": "Tabs-module",
-      "kind": "tabs",
-      "textColor": "inherit"
-    },
-    {
-      "key": "Select-module",
-      "kind": "input",
-      "backgroundColor": "0 0",
-      "border": "0"
-    },
     {
       "key": "Button-module",
       "kind": "button",
@@ -399,12 +313,54 @@
       "rounded": "inherit"
     },
     {
-      "key": "TextArea-module",
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "inherit",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
       "kind": "input",
-      "backgroundColor": "0 0",
-      "border": "0"
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "inherit",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1860fa",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#238649",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "inherit",
+      "padding": "10px 16px"
     }
   ],
-  "overview": "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "Reshaped — Modern cross-platform product kit, Inter typography and balanced neutral/indigo tokens",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1860fa` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Inter` across 17 type steps.\n- **Component Geometry**: Buttons (`inherit`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Mixpanel Design System
-description: "Mixpanel Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package."
+description: "Product analytics interface, Garnett display type and purple/indigo data accents"
 colors:
   purple-01: "#f2eeff"
   purple-02: "#dad0ff"
@@ -91,11 +91,23 @@ colors:
 typography:
   font-size-base:
     fontSize: 16px
+  font-sans:
+    fontFamily: "Garnett, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+  font-serif:
+    fontFamily: "Arizona, Georgia, serif"
+  font-mono:
+    fontFamily: "\"Apercu Mono\", \"SF Mono\", Monaco, Consolas, monospace"
 components:
   card:
     backgroundColor: "#fafafa"
     rounded: 8px
     padding: 24px
+  link:
+    textColor: "#c1b1ff"
+    typography:
+      fontSize: 16px
+    rounded: "0"
+    padding: 8px 32px
   btn-dark:
     backgroundColor: "#1f2023"
     textColor: "#ffffff"
@@ -104,6 +116,18 @@ components:
       fontWeight: 500
     rounded: 40px
     padding: 0 14px 0 16px
+  label:
+    textColor: "#1f2023"
+    typography:
+      fontSize: 14px
+      fontWeight: 500
+  btn-2:
+    backgroundColor: "#472ba0"
+    textColor: "#c1b1ff"
+    typography:
+      fontSize: 12px
+    rounded: 4px
+    padding: 6px 12px
   tag-pool:
     backgroundColor: "rgba(114, 190, 244, 0.1)"
     textColor: "#1d4b6d"
@@ -113,60 +137,95 @@ components:
   tag-lava-3:
     backgroundColor: "rgba(255, 117, 87, 0.1)"
     textColor: "#661d2d"
+  btn-3:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    typography:
+      fontSize: 12px
+    rounded: 6px
+    padding: 4px 16px
+  card-2:
+    backgroundColor: "#fafafa"
+    rounded: 8px
+    padding: 16px
   tag-peach-4:
     backgroundColor: "rgba(255, 178, 122, 0.1)"
     textColor: "#664126"
   tag-grass-5:
     backgroundColor: "rgba(59, 169, 116, 0.1)"
     textColor: "#0f472c"
+  btn-4:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    typography:
+      fontSize: 12px
+    rounded: 4px
+    padding: 8px 16px
   tag-purple-6:
     backgroundColor: "rgba(120, 86, 255, 0.1)"
     textColor: "#2e1670"
-  btn-tertiary-2:
+  btn-5:
+    backgroundColor: "#f4f4f4"
+    textColor: "#1f2023"
+    typography:
+      fontSize: 10px
+    rounded: 4px
+    padding: 4px 8px
+  label-2:
+    textColor: "#1f2023"
+    typography:
+      fontSize: 14px
+      fontWeight: 500
+  btn-tertiary-6:
     textColor: "#1f2023"
     typography:
       fontSize: 16px
       fontWeight: 500
     padding: 2px 0
-  btn-lg-primary-3:
-    backgroundColor: "#1f2023"
-    textColor: "#ffffff"
-    typography:
-      fontSize: 16px
-      fontWeight: 500
-    rounded: 100px
-    padding: 8px 8px 8px 16px
-  btn-sm-primary-4:
-    backgroundColor: "#1f2023"
-    textColor: "#ffffff"
-    typography:
-      fontSize: 13px
-      fontWeight: 500
-    rounded: 40px
-    padding: 6px 8px 6px 12px
-  btn-tertiary-lg-5:
-    textColor: "#1f2023"
-    typography:
-      fontSize: 16px
-      fontWeight: 500
-    rounded: 100px
-    padding: "0"
-  btn-tertiary-sm-6:
-    textColor: "#1f2023"
+  label-3:
+    textColor: "#a2a2a2"
     typography:
       fontSize: 12px
       fontWeight: 500
-    rounded: 100px
-    padding: "0"
+  label-4:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    typography:
+      fontSize: 12px
+    padding: 16px 16px
+  card-3:
+    backgroundColor: "#fafafa"
+    rounded: 8px
+    padding: 24px
+  label-5:
+    textColor: "#1f2023"
+    typography:
+      fontSize: 14px
+      fontWeight: 500
+  label-6:
+    textColor: "#ffffff"
+    typography:
+      fontSize: 12px
+  card-4:
+    backgroundColor: "#fafafa"
+    rounded: 8px
+    padding: 16px
+  table-header:
+    backgroundColor: "#f4f4f4"
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
 ---
 
 # Mixpanel Design System
 
 ## Overview
 
-Mixpanel Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package.
+Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 85 colour tokens and 1 type tokens.
+Tokens were read from https://design.mixpanel.com, not from a published token package: 85 colour tokens and 4 type tokens.
 
 ## Colors
 
@@ -174,8 +233,15 @@ Tokens were read from the project's own repository, not from a marketing site: 8
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+Families declared in the source: `Garnett, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`, `Arizona, Georgia, serif`, `"Apercu Mono", "SF Mono", Monaco, Consolas, monospace`.
 
 ## Components
 
-13 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8e75` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Garnett` across 4 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

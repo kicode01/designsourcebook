@@ -2,21 +2,22 @@
   "name": "astro-uxds",
   "displayName": "Astro UXDS",
   "description": "Rocket Communications Astro UXDS — tokens read from https://github.com/RocketCommunicationsInc/astro.",
-  "style": "Rocket Communications Astro UXDS — tokens read from https://github.com/RocketCommunicationsInc/astro.",
+  "style": "Dark (#172635) canvas, Roboto typography, #2dccff brand accent, and 8px corner geometry",
   "category": "Rocket Communications",
   "org": "Rocket Communications",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "rocket-communications"
+    "rocket-communications",
+    "dark"
   ],
   "homepage": "https://github.com/RocketCommunicationsInc/astro",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/RocketCommunicationsInc/astro — 1 token files, 15 colours harvested, 15 selected.",
   "source": {
-    "repo": "https://github.com/RocketCommunicationsInc/astro"
+    "repo": "https://github.com/RocketCommunicationsInc/astro",
+    "package": "@astrouxds/astro-web-components"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 16,
-    "typography": 4,
-    "components": 0
+    "typography": 106,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 105,
+    "stars": 158,
+    "forks": 35,
+    "npmDownloads": 43108,
+    "score": 2330,
+    "frameworks": [
+      "web-components",
+      "react",
+      "angular"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

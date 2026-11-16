@@ -99,8 +99,6 @@ typography:
     fontFamily: FontFamilyWebSansRefreshed
   atlassian-typography-family:
     fontFamily: FontFamilyWebSansRefreshed
-  unsafe-typography-family:
-    fontFamily: "var(--ds-dynamic-font-family, \\"
   typography-font-size-font-size12:
     fontSize: 14px
   typography-font-size-font-size14:
@@ -123,6 +121,47 @@ typography:
     fontSize: 29px
   typography-font-size-legacy-font-size29:
     fontSize: 35px
+components:
+  button-primary:
+    backgroundColor: "#CFE1FD"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#F87168"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#1F1F21"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#1F1F21"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#CFE1FD"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#DCFFF1"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#1F1F21"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Atlassian Design System
@@ -140,3 +179,10 @@ Tokens were read from `@atlaskit/tokens@20.12.0`, not from a marketing site: 91 
 ## Typography
 
 Families declared in the package: `FontFamilyWebSansRefreshed`, `var(--ds-dynamic-font-family, \`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#1F1F21) canvas paired with `#1F1F21` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#CFE1FD` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `FontFamilyWebSansRefreshed` across 13 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

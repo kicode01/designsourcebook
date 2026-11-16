@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#005eb8",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": ".25rem",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -361,8 +361,324 @@
       "value": "#005eb8"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.",
-  "dos": ""
+  "type": [
+    {
+      "name": "nhsuk-table-caption-xl",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "lineHeight": 1.1875
+    },
+    {
+      "name": "nhsuk-caption-xxl",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.6875rem",
+      "px": 27,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "nhsuk-table-caption-l",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.6875rem",
+      "px": 27,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "nhsuk-caption-xl",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "lineHeight": 1.3181818182
+    },
+    {
+      "name": "nhsuk-body-l",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.3181818182
+    },
+    {
+      "name": "nhsuk-notification-banner-heading",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.3181818182
+    },
+    {
+      "name": "nhsuk-table-caption-m",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "lineHeight": 1.3181818182
+    },
+    {
+      "name": "nhsuk-table-heading-tab",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "lineHeight": 1.3181818182
+    },
+    {
+      "name": "app-contact-panel-heading",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.3181818182
+    },
+    {
+      "name": "nhsuk-related-nav-heading",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "nhsuk-caption-l",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.1875rem",
+      "px": 19,
+      "lineHeight": 1.4210526316
+    },
+    {
+      "name": "nhsuk-table-caption",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.1875rem",
+      "px": 19,
+      "fontWeight": 600,
+      "lineHeight": 1.4210526316
+    },
+    {
+      "name": "nhsuk-table-caption-s",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1.1875rem",
+      "px": 19,
+      "lineHeight": 1.4210526316
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "nhsuk-notification-banner-title",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nhsuk-related-nav-heading-small",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nhsuk-related-nav-sub-heading",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "app-side-nav-heading",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "nhsuk-body-s",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": ".875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.7142857143
+    },
+    {
+      "name": "nhsuk-image-caption",
+      "fontFamily": "\"Frutiger W01\", arial, sans-serif",
+      "fontSize": ".875rem",
+      "px": 14,
+      "lineHeight": 1.7142857143
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#0055a6",
+      "textColor": "#fff",
+      "padding": "4px 8px",
+      "border": "1px solid #0055a6"
+    },
+    {
+      "key": "link",
+      "kind": "nav",
+      "textColor": "#005eb8"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#212b32",
+      "border": "1px solid #d8dde0"
+    },
+    {
+      "key": "panel",
+      "kind": "card",
+      "backgroundColor": "#007f3b",
+      "textColor": "#fff",
+      "padding": "28px",
+      "border": "4px solid transparent"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#007f3b",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "border": "2px solid transparent",
+      "shadow": "0 4px #00401e"
+    },
+    {
+      "key": "select",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#212b32",
+      "padding": ".25rem",
+      "border": "2px solid #4c6272"
+    },
+    {
+      "key": "link-2",
+      "kind": "nav",
+      "textColor": "#005eb8",
+      "padding": "0 0 0 1em",
+      "border": "0"
+    },
+    {
+      "key": "link-3",
+      "kind": "nav",
+      "textColor": "#005eb8",
+      "border": "0"
+    },
+    {
+      "key": "app-side-nav",
+      "kind": "nav",
+      "textColor": "#005eb8"
+    },
+    {
+      "key": "input-2",
+      "kind": "input",
+      "backgroundColor": "#d8dde0",
+      "padding": ".25rem .5rem",
+      "border": "2px solid #4c6272"
+    },
+    {
+      "key": "input-3",
+      "kind": "input",
+      "backgroundColor": "#d8dde0",
+      "padding": ".25rem .5rem",
+      "border": "2px solid #4c6272"
+    },
+    {
+      "key": "summary",
+      "kind": "card",
+      "textColor": "#212b32",
+      "padding": "16px",
+      "border": "4px solid #d5281b"
+    },
+    {
+      "key": "callout",
+      "kind": "card",
+      "backgroundColor": "#fff9c4",
+      "textColor": "#212b32",
+      "border": "1px solid #ffeb3b"
+    },
+    {
+      "key": "app-side-nav-2",
+      "kind": "nav",
+      "textColor": "#4c6272"
+    },
+    {
+      "key": "table",
+      "kind": "nav",
+      "backgroundColor": "#005eb8",
+      "textColor": "#fff",
+      "padding": "8px 24px"
+    },
+    {
+      "key": "input-wrapper-4",
+      "kind": "input",
+      "backgroundColor": "#d8dde0",
+      "padding": ".25rem .5rem",
+      "border": "2px solid #4c6272"
+    },
+    {
+      "key": "input-wrapper-5",
+      "kind": "input",
+      "backgroundColor": "#d8dde0",
+      "padding": ".25rem .5rem",
+      "border": "2px solid #4c6272"
+    },
+    {
+      "key": "callout-2",
+      "kind": "card",
+      "backgroundColor": "#ffeb3b",
+      "textColor": "#212b32",
+      "padding": "8px 24px"
+    },
+    {
+      "key": "banner-3",
+      "kind": "card",
+      "textColor": "#005eb8"
+    },
+    {
+      "key": "banner-4",
+      "kind": "card",
+      "textColor": "#fff",
+      "padding": "0"
+    },
+    {
+      "key": "banner-5",
+      "kind": "card",
+      "backgroundColor": "#005eb8",
+      "padding": "2px 16px 4px"
+    },
+    {
+      "key": "banner-6",
+      "kind": "card",
+      "textColor": "#212b32",
+      "padding": "16px"
+    },
+    {
+      "key": "table-2",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#212b32",
+      "border": "1px solid #d8dde0"
+    },
+    {
+      "key": "tag-red",
+      "kind": "badge",
+      "backgroundColor": "#f7d4d1",
+      "textColor": "#801810",
+      "border": "1px solid #801810"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    }
+  ],
+  "overview": "NHS.UK Service Manual — High-contrast clinical public service manual, Frutiger typography and NHS Blue",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#005eb8` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Frutiger W01` across 20 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

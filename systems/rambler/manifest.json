@@ -1,15 +1,15 @@
 {
   "name": "rambler",
   "displayName": "Rambler",
-  "description": "Rambler Rambler — tokens read from https://github.com/rambler-digital-solutions/rambler-ui.",
-  "style": "Rambler Rambler — tokens read from https://github.com/rambler-digital-solutions/rambler-ui.",
+  "description": "Rambler — tokens read from https://github.com/rambler-digital-solutions/rambler-ui.",
+  "style": "Crisp light (#ffffff) canvas, Inter typography, #315efb brand accent, and 8px corner geometry",
   "category": "Rambler",
   "org": "Rambler",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "rambler"
+    "rambler",
+    "light"
   ],
   "homepage": "https://github.com/rambler-digital-solutions/rambler-ui",
   "license": "see repository",
@@ -26,16 +26,28 @@
   ],
   "tokens": {
     "colors": 41,
-    "typography": 0,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 100,
+    "stars": 191,
+    "forks": 12,
+    "npmDownloads": 0,
+    "score": 191,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

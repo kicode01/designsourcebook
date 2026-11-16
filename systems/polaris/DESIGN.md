@@ -84,16 +84,132 @@ colors:
   color-input-border-hover: "rgba(97, 97, 97, 1)"
   color-nav-bg-surface-hover: "rgba(241, 241, 241, 1)"
   color-nav-bg-surface-selected: "rgba(250, 250, 250, 1)"
-  color-video-thumbnail-play-button-text-on-bg-fill: "rgba(255, 255, 255, 1)"
-  color-bg: "rgba(241, 241, 241, 1)"
-  color-bg-fill-selected: "rgba(204, 204, 204, 1)"
-  color-bg-fill-caution-hover: "rgba(234, 211, 0, 1)"
-  color-bg-fill-critical-selected: "rgba(142, 11, 33, 1)"
-  color-bg-fill-inverse: "rgba(48, 48, 48, 1)"
-  color-icon-active: "rgba(26, 26, 26, 1)"
-  color-icon-emphasis-active: "rgba(0, 46, 106, 1)"
-  color-avatar-four-bg-fill: "rgba(81, 192, 255, 1)"
-  primary: "rgba(235, 235, 235, 1)"
+  deo-thumbnail-play-button-text-on-bg-fill: "rgba(255, 255, 255, 1)"
+  color-bg: "#fff"
+  color-bg-fill-active: "rgba(247, 247, 247, 1)"
+  color-bg-fill-caution: "rgba(255, 230, 0, 1)"
+  color-bg-fill-critical-active: "rgba(142, 11, 33, 1)"
+  color-bg-fill-magic: "rgba(128, 81, 255, 1)"
+  color-icon-hover: "rgba(48, 48, 48, 1)"
+  color-icon-emphasis-hover: "rgba(0, 66, 153, 1)"
+  color-avatar-five-bg-fill: "rgba(253, 75, 146, 1)"
+  primary: "rgba(229, 165, 0, 1)"
+typography:
+  font-family-sans:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  font-family-mono:
+    fontFamily: "ui-monospace, SFMono-Regular, \"SF Mono\", Consolas, \"Liberation Mono\", Menlo, monospace"
+  font-size-275:
+    fontSize: 0.6875rem
+  font-size-300:
+    fontSize: 0.75rem
+  font-size-325:
+    fontSize: 0.8125rem
+  font-size-350:
+    fontSize: 0.875rem
+  font-size-400:
+    fontSize: 1rem
+  font-size-450:
+    fontSize: 1.125rem
+  font-size-500:
+    fontSize: 1.25rem
+  font-size-550:
+    fontSize: 1.375rem
+  font-size-600:
+    fontSize: 1.5rem
+  font-size-750:
+    fontSize: 1.875rem
+  font-size-800:
+    fontSize: 2rem
+  font-size-900:
+    fontSize: 2.25rem
+  font-size-1000:
+    fontSize: 2.5rem
+  text-heading-3xl-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-3xl-font-size:
+    fontSize: 2.25rem
+  text-heading-2xl-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-2xl-font-size:
+    fontSize: 1.875rem
+  text-heading-xl-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-xl-font-size:
+    fontSize: 1.5rem
+  text-heading-lg-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-lg-font-size:
+    fontSize: 1.25rem
+  text-heading-md-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-md-font-size:
+    fontSize: 0.875rem
+  text-heading-sm-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-sm-font-size:
+    fontSize: 0.8125rem
+  text-heading-xs-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-heading-xs-font-size:
+    fontSize: 0.75rem
+  text-body-lg-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-body-lg-font-size:
+    fontSize: 0.875rem
+  text-body-md-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-body-md-font-size:
+    fontSize: 0.8125rem
+  text-body-sm-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-body-sm-font-size:
+    fontSize: 0.75rem
+  text-body-xs-font-family:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"San Francisco\", \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif"
+  text-body-xs-font-size:
+    fontSize: 0.6875rem
+components:
+  button-primary:
+    backgroundColor: "rgba(229, 165, 0, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "rgba(255, 255, 255, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "rgba(255, 255, 255, 1)"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "rgba(229, 165, 0, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "rgba(146, 252, 172, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "rgba(255, 255, 255, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Polaris
@@ -102,12 +218,19 @@ colors:
 
 Shopify Polaris — the design system for the Shopify admin.
 
-Tokens were read from `@shopify/polaris-tokens@9.4.2`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@shopify/polaris-tokens@9.4.2`, not from a marketing site: 91 colour tokens and 37 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `Inter, -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif`, `ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (rgba(255, 255, 255, 1)) canvas paired with `rgba(255, 255, 255, 1)` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(229, 165, 0, 1)` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 37 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

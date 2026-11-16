@@ -1,22 +1,22 @@
 {
   "name": "vue",
   "displayName": "Vue Design System",
-  "description": "Vue Vue Design System — tokens read from https://github.com/viljamis/vue-design-system.",
-  "style": "Vue Vue Design System — tokens read from https://github.com/viljamis/vue-design-system.",
+  "description": "Vue Design System — tokens read from https://github.com/viljamis/vue-design-system.",
+  "style": "Crisp light (rgb(255, 255, 255)) canvas, Fira Sans typography, rgb(230, 164, 0) brand accent, and 8px corner geometry",
   "category": "Vue",
   "org": "Vue",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "vue"
+    "vue",
+    "light"
   ],
   "homepage": "https://github.com/viljamis/vue-design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/viljamis/vue-design-system — 3 token files, 25 colours harvested, 24 selected.",
   "source": {
-    "repo": "https://github.com/viljamis/vue-design-system"
+    "repo": "https://github.com/arielsalminen/vue-design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +26,28 @@
   ],
   "tokens": {
     "colors": 25,
-    "typography": 0,
-    "components": 0
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 49,
+    "stars": 2195,
+    "forks": 211,
+    "npmDownloads": 0,
+    "score": 2195,
+    "frameworks": [
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

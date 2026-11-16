@@ -3,13 +3,465 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#fa9f47",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Heroki Design is published by Heroku, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "canvas-text",
+      "value": "#000000"
+    },
+    {
+      "name": "h2-text",
+      "value": "#475366"
+    },
+    {
+      "name": "h2-text-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "body-text",
+      "value": "rgba(255, 255, 255, 0.8)"
+    },
+    {
+      "name": "body-text-2",
+      "value": "#79589f"
+    },
+    {
+      "name": "link-text",
+      "value": "#0000ee"
+    },
+    {
+      "name": "link-text-3",
+      "value": "#62738d"
+    },
+    {
+      "name": "link-text-4",
+      "value": "#006deb"
+    },
+    {
+      "name": "link-border",
+      "value": "rgba(255, 255, 255, 0.5)"
+    },
+    {
+      "name": "link-border-5",
+      "value": "#a997bf"
+    },
+    {
+      "name": "css-surface-13",
+      "value": "#f7f8fb"
+    },
+    {
+      "name": "css-border-14",
+      "value": "#cfd7e6"
+    },
+    {
+      "name": "css-surface-15",
+      "value": "#f6faff"
+    },
+    {
+      "name": "css-border-16",
+      "value": "#8ebdf1"
+    },
+    {
+      "name": "css-surface-18",
+      "value": "#f8fcf9"
+    },
+    {
+      "name": "css-border-19",
+      "value": "#86cf95"
+    },
+    {
+      "name": "css-surface-20",
+      "value": "#fffaf6"
+    },
+    {
+      "name": "css-border-21",
+      "value": "#fa9f47"
+    },
+    {
+      "name": "css-surface-23",
+      "value": "#fdf6f6"
+    },
+    {
+      "name": "css-border-24",
+      "value": "#de7575"
+    },
+    {
+      "name": "css-surface-25",
+      "value": "#eef1f6"
+    },
+    {
+      "name": "css-surface-27",
+      "value": "#4f3074"
+    },
+    {
+      "name": "css-surface-28",
+      "value": "#a70404"
+    },
+    {
+      "name": "css-surface-29",
+      "value": "rgba(121,88,159,0.1)"
+    },
+    {
+      "name": "css-surface-30",
+      "value": "rgba(222,10,10,0.1)"
+    },
+    {
+      "name": "css-surface-31",
+      "value": "rgba(199,76,0,0.1)"
+    },
+    {
+      "name": "css-surface-32",
+      "value": "rgba(0,109,235,0.1)"
+    },
+    {
+      "name": "css-surface-33",
+      "value": "rgba(0,135,0,0.1)"
+    },
+    {
+      "name": "css-surface-34",
+      "value": "#f7f3fb"
+    },
+    {
+      "name": "css-border-36",
+      "value": "#e3e7ef"
+    },
+    {
+      "name": "css-surface-37",
+      "value": "rgba(87,114,154,0.05)"
+    },
+    {
+      "name": "css-surface-38",
+      "value": "#fbfbfd"
+    },
+    {
+      "name": "css-surface-39",
+      "value": "#034ca2"
+    },
+    {
+      "name": "css-surface-40",
+      "value": "#066515"
+    },
+    {
+      "name": "css-surface-41",
+      "value": "#832d03"
+    },
+    {
+      "name": "css-surface-42",
+      "value": "#ffb700"
+    },
+    {
+      "name": "css-surface-43",
+      "value": "#fbf1a9"
+    },
+    {
+      "name": "css-surface-44",
+      "value": "#d5008f"
+    },
+    {
+      "name": "css-surface-45",
+      "value": "#ff41b4"
+    },
+    {
+      "name": "css-surface-46",
+      "value": "#ff80cc"
+    },
+    {
+      "name": "css-surface-47",
+      "value": "#ffa3d7"
+    },
+    {
+      "name": "css-surface-48",
+      "value": "#001b44"
+    },
+    {
+      "name": "css-surface-49",
+      "value": "#f6fffe"
+    },
+    {
+      "name": "css-surface-50",
+      "value": "#e8fdf5"
+    },
+    {
+      "name": "css-surface-51",
+      "value": "#fffceb"
+    },
+    {
+      "name": "css-surface-52",
+      "value": "#ffdfdf"
+    },
+    {
+      "name": "css-surface-53",
+      "value": "rgba(0,0,0,0.9)"
+    },
+    {
+      "name": "css-surface-54",
+      "value": "rgba(0,0,0,0.8)"
+    },
+    {
+      "name": "css-surface-55",
+      "value": "rgba(0,0,0,0.7)"
+    },
+    {
+      "name": "css-surface-56",
+      "value": "rgba(0,0,0,0.6)"
+    },
+    {
+      "name": "css-surface-57",
+      "value": "rgba(0,0,0,0.5)"
+    },
+    {
+      "name": "css-surface-58",
+      "value": "rgba(0,0,0,0.4)"
+    },
+    {
+      "name": "css-surface-59",
+      "value": "rgba(0,0,0,0.3)"
+    },
+    {
+      "name": "css-surface-60",
+      "value": "rgba(0,0,0,0.2)"
+    },
+    {
+      "name": "css-surface-61",
+      "value": "rgba(0,0,0,0.1)"
+    },
+    {
+      "name": "css-surface-62",
+      "value": "rgba(0,0,0,0.05)"
+    },
+    {
+      "name": "css-surface-63",
+      "value": "rgba(0,0,0,0.025)"
+    },
+    {
+      "name": "css-surface-64",
+      "value": "rgba(89,105,129,0.9)"
+    },
+    {
+      "name": "css-surface-65",
+      "value": "rgba(89,105,129,0.8)"
+    },
+    {
+      "name": "css-surface-66",
+      "value": "rgba(89,105,129,0.7)"
+    },
+    {
+      "name": "css-surface-67",
+      "value": "rgba(89,105,129,0.6)"
+    },
+    {
+      "name": "css-surface-68",
+      "value": "rgba(89,105,129,0.5)"
+    },
+    {
+      "name": "css-surface-69",
+      "value": "rgba(89,105,129,0.4)"
+    },
+    {
+      "name": "css-surface-70",
+      "value": "rgba(89,105,129,0.3)"
+    },
+    {
+      "name": "css-surface-71",
+      "value": "rgba(89,105,129,0.2)"
+    },
+    {
+      "name": "css-surface-72",
+      "value": "rgba(89,105,129,0.1)"
+    },
+    {
+      "name": "css-surface-73",
+      "value": "rgba(89,105,129,0.05)"
+    },
+    {
+      "name": "css-surface-74",
+      "value": "rgba(89,105,129,0.025)"
+    },
+    {
+      "name": "css-surface-75",
+      "value": "rgba(87,114,154,0.9)"
+    },
+    {
+      "name": "css-surface-76",
+      "value": "rgba(87,114,154,0.8)"
+    },
+    {
+      "name": "css-surface-77",
+      "value": "rgba(87,114,154,0.7)"
+    },
+    {
+      "name": "css-surface-78",
+      "value": "rgba(87,114,154,0.6)"
+    },
+    {
+      "name": "css-surface-79",
+      "value": "rgba(87,114,154,0.5)"
+    },
+    {
+      "name": "css-surface-80",
+      "value": "rgba(87,114,154,0.4)"
+    },
+    {
+      "name": "css-surface-81",
+      "value": "rgba(87,114,154,0.3)"
+    },
+    {
+      "name": "css-surface-82",
+      "value": "rgba(87,114,154,0.2)"
+    },
+    {
+      "name": "css-surface-83",
+      "value": "rgba(87,114,154,0.1)"
+    },
+    {
+      "name": "css-surface-84",
+      "value": "rgba(87,114,154,0.025)"
+    },
+    {
+      "name": "css-surface-85",
+      "value": "rgba(255,255,255,0.9)"
+    },
+    {
+      "name": "css-surface-86",
+      "value": "rgba(255,255,255,0.8)"
+    },
+    {
+      "name": "css-surface-87",
+      "value": "rgba(255,255,255,0.7)"
+    },
+    {
+      "name": "css-surface-88",
+      "value": "rgba(255,255,255,0.6)"
+    },
+    {
+      "name": "css-surface-89",
+      "value": "rgba(255,255,255,0.5)"
+    },
+    {
+      "name": "css-surface-90",
+      "value": "rgba(255,255,255,0.4)"
+    },
+    {
+      "name": "css-surface-92",
+      "value": "#fa7c88"
+    },
+    {
+      "name": "nav-bg",
+      "value": "rgba(255, 255, 255, 0.9)"
+    },
+    {
+      "name": "css-color-12",
+      "value": "#c74c00"
+    },
+    {
+      "name": "css-color-17",
+      "value": "#008700"
+    },
+    {
+      "name": "css-color-22",
+      "value": "#de0a0a"
+    },
+    {
+      "name": "css-color-26",
+      "value": "#56667d"
+    },
+    {
+      "name": "primary",
+      "value": "#fa9f47"
+    }
+  ],
+  "type": [
+    {
+      "name": "h2",
+      "fontFamily": "salesforce-sans, \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body",
+      "fontFamily": "salesforce-sans, \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 300,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav",
+      "fontFamily": "salesforce-sans, -apple-system, BlinkMacSystemFont, \"avenir next\", avenir, helvetica, \"helvetica neue\", ubuntu, roboto, noto, \"segoe ui\", arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1
+    }
+  ],
+  "components": [
+    {
+      "key": "navy",
+      "kind": "nav",
+      "textColor": "#001b44"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#fa9f47",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#fa9f47",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    }
+  ],
+  "overview": "Heroku Purple3 — Crisp light (#ffffff) canvas, salesforce-sans typography, #fa9f47 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fa9f47` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `salesforce-sans` across 3 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

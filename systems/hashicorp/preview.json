@@ -120,7 +120,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "82px",
       "px": 82,
       "fontWeight": 600,
@@ -128,7 +128,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "52px",
       "px": 52,
       "fontWeight": 600,
@@ -136,7 +136,7 @@
     },
     {
       "name": "feature-heading",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "42px",
       "px": 42,
       "fontWeight": 700,
@@ -145,7 +145,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "34px",
       "px": 34,
       "fontWeight": 600,
@@ -153,7 +153,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "26px",
       "px": 26,
       "fontWeight": 700,
@@ -161,7 +161,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 400,
@@ -169,7 +169,7 @@
     },
     {
       "name": "small-title",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "19px",
       "px": 19,
       "fontWeight": 700,
@@ -177,7 +177,7 @@
     },
     {
       "name": "body-emphasis",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "17px",
       "px": 17,
       "fontWeight": 600,
@@ -185,7 +185,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -193,7 +193,7 @@
     },
     {
       "name": "nav-link",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 500,
@@ -201,7 +201,7 @@
     },
     {
       "name": "small-body",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -209,7 +209,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 400,
@@ -217,7 +217,7 @@
     },
     {
       "name": "uppercase-label",
-      "fontFamily": "HashiCorp Sans",
+      "fontFamily": "\"HashiCorp Sans\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 600,
@@ -258,6 +258,38 @@
       "backgroundColor": "#0d0e12",
       "rounded": "3px",
       "border": "1px solid rgb(97, 104, 117)"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "9px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "5px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "HashiCorp's website is enterprise infrastructure made tangible — a design system that must communicate the complexity of cloud infrastructure management while remaining approachable. The visual language splits between two modes: a clean white light-mode for informational sections and a dramatic dark-mode (#15181e, #0d0e12) for hero areas and product showcases, creating a day/night duality that mirrors the \"build in light, deploy in dark\" developer workflow.\n\nThe typography is anchored by a custom brand font (HashiCorp Sans, loaded as __hashicorpSans_96f0ca) that carries substantial weight — literally. Headings use 600–700 weights with tight line-heights (1.17–1.19), creating dense, authoritative text blocks that communicate enterprise confidence. The hero headline at 82px weight 600 with OpenType \"kern\" enabled is not decorative — it's infrastructure-grade typography.\n\nWhat…",

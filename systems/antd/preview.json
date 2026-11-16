@@ -3,9 +3,9 @@
   "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "rgb(240,240,240)",
+  "brand": "#1677ff",
   "border": "#f0f0f0",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -165,47 +165,51 @@
       "value": "#0958d9"
     },
     {
-      "name": "node-selected-bg",
-      "value": "#e6f4ff"
+      "name": "color-primary",
+      "value": "#1677ff"
+    },
+    {
+      "name": "color-success",
+      "value": "#52c41a"
+    },
+    {
+      "name": "color-warning",
+      "value": "#faad14"
+    },
+    {
+      "name": "color-error",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "color-info",
+      "value": "#1677ff"
+    },
+    {
+      "name": "background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "color-white",
+      "value": "#fff"
     },
     {
       "name": "directory-node-selected-color",
       "value": "#fff"
     },
     {
-      "name": "directory-node-selected-bg",
-      "value": "#1677ff"
-    },
-    {
       "name": "default-bg",
       "value": "#f5f5f5"
-    },
-    {
-      "name": "ink-bar-color",
-      "value": "#1677ff"
     },
     {
       "name": "item-selected-color",
       "value": "#1677ff"
     },
     {
-      "name": "item-hover-color",
-      "value": "#4096ff"
-    },
-    {
       "name": "item-active-color",
       "value": "#0958d9"
     },
     {
-      "name": "header-bg",
-      "value": "#fafafa"
-    },
-    {
       "name": "header-sort-active-bg",
-      "value": "#f0f0f0"
-    },
-    {
-      "name": "header-sort-hover-bg",
       "value": "#f0f0f0"
     },
     {
@@ -213,39 +217,19 @@
       "value": "#fafafa"
     },
     {
-      "name": "row-hover-bg",
-      "value": "#fafafa"
-    },
-    {
       "name": "row-selected-bg",
       "value": "#e6f4ff"
-    },
-    {
-      "name": "row-selected-hover-bg",
-      "value": "#bae0ff"
     },
     {
       "name": "footer-bg",
       "value": "#fafafa"
     },
     {
-      "name": "header-split-color",
-      "value": "#f0f0f0"
-    },
-    {
       "name": "fixed-header-sort-active-bg",
       "value": "#f0f0f0"
     },
     {
-      "name": "filter-dropdown-menu-bg",
-      "value": "#ffffff"
-    },
-    {
       "name": "filter-dropdown-bg",
-      "value": "#ffffff"
-    },
-    {
-      "name": "expand-icon-bg",
       "value": "#ffffff"
     },
     {
@@ -253,39 +237,19 @@
       "value": "#fff"
     },
     {
-      "name": "wait-icon-bg-color",
-      "value": "#ffffff"
-    },
-    {
       "name": "finish-icon-bg-color",
       "value": "#ffffff"
-    },
-    {
-      "name": "track-bg",
-      "value": "#91caff"
     },
     {
       "name": "track-hover-bg",
       "value": "#69b1ff"
     },
     {
-      "name": "handle-color",
-      "value": "#91caff"
-    },
-    {
       "name": "handle-active-color",
       "value": "#1677ff"
     },
     {
-      "name": "option-selected-bg",
-      "value": "#e6f4ff"
-    },
-    {
       "name": "selector-bg",
-      "value": "#ffffff"
-    },
-    {
-      "name": "clear-bg",
       "value": "#ffffff"
     },
     {
@@ -293,31 +257,15 @@
       "value": "#ffffff"
     },
     {
-      "name": "star-color",
-      "value": "#fadb14"
-    },
-    {
       "name": "button-solid-checked-color",
       "value": "#fff"
-    },
-    {
-      "name": "button-solid-checked-bg",
-      "value": "#1677ff"
     },
     {
       "name": "button-solid-checked-hover-bg",
       "value": "#4096ff"
     },
     {
-      "name": "button-solid-checked-active-bg",
-      "value": "#0958d9"
-    },
-    {
       "name": "button-bg",
-      "value": "#ffffff"
-    },
-    {
-      "name": "button-checked-bg",
       "value": "#ffffff"
     },
     {
@@ -325,23 +273,11 @@
       "value": "#1677ff"
     },
     {
-      "name": "radio-bg-color",
-      "value": "#ffffff"
-    },
-    {
       "name": "item-bg",
       "value": "#ffffff"
     },
     {
-      "name": "item-active-color-hover",
-      "value": "#4096ff"
-    },
-    {
       "name": "item-input-bg",
-      "value": "#ffffff"
-    },
-    {
-      "name": "hover-bg",
       "value": "#ffffff"
     },
     {
@@ -349,15 +285,7 @@
       "value": "#ffffff"
     },
     {
-      "name": "content-bg",
-      "value": "#ffffff"
-    },
-    {
       "name": "horizontal-item-hover-color",
-      "value": "#1677ff"
-    },
-    {
-      "name": "sub-menu-item-selected-color",
       "value": "#1677ff"
     },
     {
@@ -365,32 +293,183 @@
       "value": "#1677ff"
     },
     {
-      "name": "color-item-bg",
+      "name": "color-item-bg-selected",
+      "value": "#e6f4ff"
+    },
+    {
+      "name": "dark-item-bg",
+      "value": "#001529"
+    },
+    {
+      "name": "dark-sub-menu-item-bg",
+      "value": "#000c17"
+    },
+    {
+      "name": "dark-item-selected-bg",
+      "value": "#1677ff"
+    },
+    {
+      "name": "color-bg-header",
+      "value": "#001529"
+    },
+    {
+      "name": "color-bg-trigger",
+      "value": "#002140"
+    },
+    {
+      "name": "sider-bg",
+      "value": "#001529"
+    },
+    {
+      "name": "trigger-color",
+      "value": "#fff"
+    },
+    {
+      "name": "light-trigger-bg",
       "value": "#ffffff"
     },
     {
+      "name": "handle-hover-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "cell-active-with-range-bg",
+      "value": "#e6f4ff"
+    },
+    {
+      "name": "actions-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "full-panel-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "default-hover-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "default-active-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "blue",
+      "value": "#1677FF"
+    },
+    {
+      "name": "cyan",
+      "value": "#13C2C2"
+    },
+    {
+      "name": "magenta",
+      "value": "#EB2F96"
+    },
+    {
+      "name": "red",
+      "value": "#F5222D"
+    },
+    {
       "name": "primary",
-      "value": "rgb(240,240,240)"
+      "value": "#1677ff"
     }
   ],
   "type": [
     {
-      "name": "index-family",
-      "fontFamily": "inherit",
+      "name": "circle-icon-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont",
+      "fontSize": "1.1666666666666667em",
+      "px": 18.666666666666668
+    },
+    {
+      "name": "circle-text-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont",
+      "fontSize": "1em",
       "px": 16
     },
     {
-      "name": "select-input-family",
-      "fontFamily": "inherit",
+      "name": "font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont",
       "px": 16
     },
     {
-      "name": "mixins-family",
-      "fontFamily": "inherit",
-      "px": 16
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16,
+      "lineHeight": 1.15
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont",
+      "fontSize": "90%",
+      "px": 14.4
     }
   ],
-  "components": [],
-  "overview": "Ant Design — enterprise UI design language from Ant Group.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#1677ff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ff4d4f",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1677ff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#52c41a",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Ant Design — Enterprise React workbench, signature Daybreak Blue scale and dense controls",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1677ff` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 5 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

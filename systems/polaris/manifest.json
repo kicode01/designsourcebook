@@ -8,18 +8,18 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "shopify",
-    "admin"
+    "admin",
+    "light"
   ],
   "homepage": "https://polaris.shopify.com",
   "license": "SEE LICENSE IN LICENSE.md",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @shopify/polaris-tokens@9.4.2 (1 token files, 224 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @shopify/polaris-tokens@9.4.2 (3 token files, 228 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@shopify/polaris-tokens",
     "version": "9.4.2",
-    "extra": []
+    "repo": "https://github.com/Shopify/polaris"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -29,16 +29,29 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 37,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 36,
+    "stars": 6147,
+    "forks": 1247,
+    "npmDownloads": 1483185,
+    "score": 33897,
+    "frameworks": [
+      "react",
+      "web-components"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 6
   }
 }

@@ -5,20 +5,20 @@
   "style": "React95 — a component library inspired by the Windows 95 interface.",
   "category": "React95",
   "org": "React95",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "published",
-    "dark",
-    "react95"
+    "react95",
+    "light"
   ],
   "homepage": "https://react95.io",
   "license": "MIT",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from react95@4.0.0 (4 token files, 32 colours harvested, 33 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from react95@4.0.0 (4 token files, 32 colours harvested, 32 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "react95",
     "version": "4.0.0",
-    "extra": []
+    "repo": "https://github.com/react95-io/React95"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -28,16 +28,28 @@
   ],
   "tokens": {
     "colors": 33,
-    "typography": 0,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 33,
+    "stars": 7295,
+    "forks": 214,
+    "npmDownloads": 0,
+    "score": 7295,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,12 +1,12 @@
 {
-  "canvas": "#262c36",
-  "surface": "#194fb1",
-  "text": "#f7f7f8",
-  "muted": "#f7f7f8",
-  "brand": "#3685f3",
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#74b9ff",
   "border": "#e09b13",
-  "radius": "8px",
-  "ink": "#f7f7f8",
+  "radius": "6px",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "button-primary-bg-color-active",
@@ -370,11 +370,103 @@
     },
     {
       "name": "primary",
-      "value": "#3685f3"
+      "value": "#74b9ff"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "GitHub Primer — the design system behind GitHub.",
-  "dos": ""
+  "type": [
+    {
+      "name": "font-stack-monospace",
+      "fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-stack-sans-serif",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-sans-serif-display",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-system",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "org-primer-data",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "16px",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#74b9ff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#f48b25",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#74b9ff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#194fb1",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Primer — Developer code-hosting interface, Mona Sans variable type and semantic GitHub scales",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#74b9ff` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `ui-monospace` across 5 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -1,22 +1,24 @@
 {
   "name": "reshaped",
   "displayName": "Reshaped",
-  "description": "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
-  "style": "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
+  "description": "Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
+  "style": "Modern cross-platform product kit, Inter typography and balanced neutral/indigo tokens",
   "category": "Reshaped",
   "org": "Reshaped",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "reshaped"
+    "observed",
+    "reshaped",
+    "light"
   ],
   "homepage": "https://reshaped.so",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://reshaped.so and its 3 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://reshaped.so",
+    "repo": "https://github.com/reshaped-ui/reshaped",
+    "package": "reshaped"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +28,8 @@
   ],
   "tokens": {
     "colors": 49,
-    "typography": 32,
-    "components": 4
+    "typography": 17,
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -37,5 +39,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 48,
+    "stars": 2255,
+    "forks": 161,
+    "npmDownloads": 0,
+    "score": 2255,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

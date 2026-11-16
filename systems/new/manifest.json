@@ -1,15 +1,15 @@
 {
   "name": "new",
   "displayName": "New York State Design System",
-  "description": "New New York State Design System — tokens read from https://github.com/ITS-HCD/nysds.",
-  "style": "New New York State Design System — tokens read from https://github.com/ITS-HCD/nysds.",
-  "category": "New",
-  "org": "New",
+  "description": "New York State Design System — tokens read from https://github.com/ITS-HCD/nysds.",
+  "style": "Crisp light (#ffffff) canvas, Public Sans typography, #f6f6f6 brand accent, and 8px corner geometry",
+  "category": "NYS",
+  "org": "NYS",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "new"
+    "new",
+    "light"
   ],
   "homepage": "https://github.com/ITS-HCD/nysds",
   "license": "see repository",
@@ -25,17 +25,29 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 15,
-    "typography": 0,
-    "components": 0
+    "colors": 16,
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 2,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 116,
+    "stars": 56,
+    "forks": 6,
+    "npmDownloads": 0,
+    "score": 56,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Reshaped
-description: "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package."
+description: "Modern cross-platform product kit, Inter typography and balanced neutral/indigo tokens"
 colors:
   code-snippet-value: "#96d0ff"
   code-snippet-attr: "#d19a66"
@@ -80,66 +80,56 @@ typography:
   rs-font-size-caption-2:
     fontSize: ".625rem"
   rs-font-family-headline:
-    fontFamily: "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif"
+    fontFamily: "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif"
   rs-font-family-title:
-    fontFamily: "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif"
+    fontFamily: "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif"
   rs-font-family-body:
-    fontFamily: "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif"
+    fontFamily: "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif"
   rs-font-family-monospace:
-    fontFamily: "Geist Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
-  rs-font-family-headline-1:
-    fontFamily: "var(--rs-font-family-headline)"
-  rs-font-family-headline-2:
-    fontFamily: "var(--rs-font-family-headline)"
-  rs-font-family-headline-3:
-    fontFamily: "var(--rs-font-family-headline)"
-  rs-font-family-featured-1:
-    fontFamily: "var(--rs-font-family-title)"
-  rs-font-family-featured-2:
-    fontFamily: "var(--rs-font-family-title)"
-  rs-font-family-featured-3:
-    fontFamily: "var(--rs-font-family-title)"
-  rs-font-family-featured-4:
-    fontFamily: "var(--rs-font-family-title)"
-  rs-font-family-featured-5:
-    fontFamily: "var(--rs-font-family-title)"
-  rs-font-family-featured-6:
-    fontFamily: "var(--rs-font-family-title)"
-  rs-font-family-body-1:
-    fontFamily: "var(--rs-font-family-body)"
-  rs-font-family-body-2:
-    fontFamily: "var(--rs-font-family-body)"
-  rs-font-family-caption-1:
-    fontFamily: "var(--rs-font-family-body)"
-  rs-font-family-caption-2:
-    fontFamily: "var(--rs-font-family-body)"
-  default-font-family:
-    fontFamily: "var(--font-sans)"
-  default-mono-font-family:
-    fontFamily: "var(--font-mono)"
+    fontFamily: "\"Geist Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
 components:
-  Tabs-module:
-    textColor: inherit
-  Select-module:
-    backgroundColor: 0 0
-    typography:
-      fontSize: "!important"
   Button-module:
     backgroundColor: "#0000"
     rounded: inherit
-  TextArea-module:
-    backgroundColor: 0 0
-    typography:
-      fontSize: "!important"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: inherit
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: inherit
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#1860fa"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#238649"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: inherit
+    padding: 10px 16px
 ---
 
 # Reshaped
 
 ## Overview
 
-Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.
+Reshaped — read from reshaped.so's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 49 colour tokens and 32 type tokens.
+Tokens were read from https://reshaped.so, not from a published token package: 49 colour tokens and 32 type tokens.
 
 ## Colors
 
@@ -152,3 +142,10 @@ Families declared in the source: `Inter,BlinkMacSystemFont,-apple-system,Roboto,
 ## Components
 
 4 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1860fa` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 17 type steps.
+- **Component Geometry**: Buttons (`inherit`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

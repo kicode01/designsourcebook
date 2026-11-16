@@ -22,15 +22,32 @@
   "tokens": {
     "colors": 18,
     "typography": 16,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 2,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/mongodb/leafygreen-ui",
+    "package": "@leafygreen-ui/tokens"
+  },
+  "popularity": {
+    "rank": 91,
+    "stars": 275,
+    "forks": 85,
+    "npmDownloads": 469788,
+    "score": 12402,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

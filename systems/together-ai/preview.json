@@ -1,6 +1,6 @@
 {
   "canvas": "#ffffff",
-  "surface": "#010120",
+  "surface": "#ffffff",
   "text": "#000000",
   "muted": "#000000",
   "brand": "#bdbbff",
@@ -68,7 +68,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "64px",
       "px": 64,
       "fontWeight": 400,
@@ -77,7 +77,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "40px",
       "px": 40,
       "fontWeight": 500,
@@ -86,7 +86,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "28px",
       "px": 28,
       "fontWeight": 500,
@@ -95,7 +95,7 @@
     },
     {
       "name": "feature-title",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "22px",
       "px": 22,
       "fontWeight": 500,
@@ -104,7 +104,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -113,7 +113,7 @@
     },
     {
       "name": "body-button",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -122,7 +122,7 @@
     },
     {
       "name": "mono-label",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -131,7 +131,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -139,7 +139,7 @@
     },
     {
       "name": "mono-small",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "11px",
       "px": 11,
       "fontWeight": 500,
@@ -148,7 +148,7 @@
     },
     {
       "name": "mono-micro",
-      "fontFamily": "The Future",
+      "fontFamily": "\"The Future\"",
       "fontSize": "10px",
       "px": 10,
       "fontWeight": 400,
@@ -161,7 +161,7 @@
       "key": "button-glass-on-dark",
       "kind": "button",
       "backgroundColor": "rgba(255, 255, 255, 0.12)",
-      "textColor": "#ffffff",
+      "textColor": "#000000",
       "rounded": "4px"
     },
     {
@@ -169,6 +169,46 @@
       "kind": "button",
       "backgroundColor": "#010120",
       "rounded": "4px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#bdbbff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Together AI's interface is a pastel-gradient dreamscape built for enterprise AI infrastructure — a design that somehow makes GPU clusters and model inference feel light, airy, and optimistic. The hero section blooms with soft pink-blue-lavender gradients and abstract, painterly illustrations that evoke clouds and flight, establishing a visual metaphor for the \"AI-Native Cloud\" proposition. Against this softness, the typography cuts through with precision: \"The Future\" display font at 64px with aggressive negative tracking (-1.92px) creates dense, authoritative headline blocks.\n\nThe design straddles two worlds: a bright, white-canvas light side where pastel gradients and stats cards create an approachable platform overview, and a dark navy universe (#010120 — not gray-black but a deep midnight blue) where research papers and technical content live. This dual-world approach elegantly…",

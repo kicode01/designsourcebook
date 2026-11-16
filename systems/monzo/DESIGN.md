@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Monzo Tone of Voice
-description: "Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package."
+description: "Hot coral banking cards, MonzoSans typography on deep navy and mint-grey surfaces"
 colors:
   color-brand: "#ff4f40"
   color-black: "#000"
@@ -100,121 +100,112 @@ typography:
   font-size-step-6:
     fontSize: "clamp(2.986rem,2.6276rem + 1.7918vw,3.8147rem)"
   font-family-display:
-    fontFamily: "MonzoSansDisplay\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif"
+    fontFamily: "MonzoSansDisplay, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
   font-family-content:
-    fontFamily: "MonzoSansText\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif"
+    fontFamily: "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
 components:
-  Card_dark:
+  button-primary-coral:
+    backgroundColor: "#ff4f40"
+    textColor: "#091723"
+    rounded: 30px
+    padding: 8px 16px
+  button-secondary-navy:
+    backgroundColor: transparent
+    textColor: "#091723"
+    rounded: 30px
+    padding: 8px 16px
+  card-dark:
     backgroundColor: "#091723"
     textColor: "#fff"
-  Button_usa:
+  button-usa:
     backgroundColor: "#091723"
     textColor: "#fff"
-  Card_light:
+  card-light:
     backgroundColor: "#f2f8f3"
     textColor: "#091723"
-  Button_button:
-    backgroundColor: "#112231!important"
+  button-button:
+    backgroundColor: "#112231"
     rounded: 30px
-  Button_business:
+  button-business:
     backgroundColor: "#218fb7"
-    textColor: "#fff"
-  Card_cardWrapper:
-    textColor: initial
-  TabbedCarousel_tab:
+    textColor: "#091723"
+  tabbed-carousel-tab:
     backgroundColor: "#e3ebe4"
     textColor: "#091723"
     typography:
       fontWeight: 600
     rounded: 64px
     padding: 8px 16px
-  ButtonV2_primaryBtn:
-    backgroundColor: "#091723!important"
-    textColor: "#fff!important"
-  Card_Card:
-    textColor: inherit
-  ButtonV2_secondaryBtn:
-    backgroundColor: "transparent!important"
-    textColor: "#091723!important"
-  Banner_Banner:
-    textColor: inherit
-  Card_Card-2:
-    textColor: inherit
-  TabbedCarousel_description:
+  button-v2-primary-btn:
+    backgroundColor: "#091723"
+    textColor: "#fff"
+  button-v2-secondary-btn:
+    backgroundColor: transparent
+    textColor: "#091723"
+  tabbed-carousel-description:
     textColor: "rgba(9,23,35,.6)"
-    typography:
-      fontSize: "clamp(1.2rem,1.1784rem + 0.1081vw,1.25rem)"
-  Navigation_navigationCurtain:
+  navigation-navigation-curtain:
     backgroundColor: "rgba(0,0,0,.3)"
-  NavigationLinks_navigationLink:
-    backgroundColor: unset
+  navigation-links-navigation-link:
     textColor: "rgba(9,23,35,.6)"
     typography:
-      fontSize: "clamp(1.2rem,1.1784rem + 0.1081vw,1.25rem)"
       fontWeight: 600
     rounded: 8px
     padding: 11px 12px
-  NavigationHeader_navigationHeader:
+  navigation-header-navigation-header:
     textColor: "rgba(9,23,35,.6)"
     typography:
-      fontSize: "clamp(1.2rem,1.1784rem + 0.1081vw,1.25rem)"
       fontWeight: 600
-  LinkedPageCard_LinkedPageCard:
-    textColor: inherit
-  NavigationContent_navigationContent:
+  navigation-content-navigation-content:
     backgroundColor: "#fff"
     rounded: 0 0 16px 0
     padding: 64px 16px 150px
-  NavigationLinks_navigationLinksTitle:
+  navigation-links-navigation-links-title:
     textColor: "rgba(9,23,35,.6)"
     typography:
-      fontSize: "clamp(1.2rem,1.1784rem + 0.1081vw,1.25rem)"
       fontWeight: 600
-  NavigationLandmark_navigationLandmark:
+  navigation-landmark-navigation-landmark:
     backgroundColor: "#fff"
     textColor: "rgba(9,23,35,.6)"
     rounded: 16px
     padding: 16px 0
-  NavigationLandmark_navigationLandmarkLink:
+  navigation-landmark-navigation-landmark-link:
     backgroundColor: "#f2f8f3"
     textColor: "#091723"
     rounded: 8px
     padding: 16px
-  TabbedContent_TabbedContent:
-    textColor: "var(--_panel-color-secondary)"
-  NavigationTopLevelItems_navigationSubViewport:
+  navigation-top-level-items-navigation-sub-viewport:
     backgroundColor: "#fff"
-  NavigationSectionSelector_navigationSectionSelector:
+  navigation-section-selector-navigation-section-selector:
     backgroundColor: "#f2f8f3"
     rounded: 64px
     padding: 4px
-  Callout_dark:
+  callout-dark:
     backgroundColor: "#091723"
     textColor: "#fff"
-  Callout_light:
+  callout-light:
     backgroundColor: "#f2f8f3"
-    textColor: "#fff"
-  TableItems_tableItems:
+    textColor: "#091723"
+  table-items-table-items:
     backgroundColor: "#f2f8f3"
-  TableItems_tableItems-2:
+  table-items-table-items-2:
     backgroundColor: "#f2f8f3"
-  NavigationPills_wrapper:
+  navigation-pills-wrapper:
     backgroundColor: "rgba(59,76,84,.1)"
     rounded: 1.875rem
-  NavigationPillsItem_pill:
+  navigation-pills-item-pill:
     backgroundColor: transparent
     textColor: "#000"
     typography:
-      fontSize: 1.0625pxrem
       fontWeight: 400
     rounded: 1.875rem
     padding: 0 1rem
-  CardCarousel_cardCarousel:
+  card-carousel-card-carousel:
     backgroundColor: "#fff"
-  NavigationPills_activeIndicator:
+  navigation-pills-active-indicator:
     backgroundColor: "#ff4f40"
     rounded: 1.875rem
-  NavigationButtons_carouselButton:
+  navigation-buttons-carousel-button:
     backgroundColor: "#091723"
     rounded: "100%"
 ---
@@ -223,9 +214,9 @@ components:
 
 ## Overview
 
-Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.
+Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 63 colour tokens and 18 type tokens.
+Tokens were read from https://monzo.com/tone-of-voice/, not from a published token package: 63 colour tokens and 18 type tokens.
 
 ## Colors
 
@@ -238,3 +229,10 @@ Families declared in the source: `MonzoSansDisplay",-apple-system,BlinkMacSystem
 ## Components
 
 33 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#f2f8f3` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff4f40` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `MonzoSansDisplay` across 18 type steps.
+- **Component Geometry**: Buttons (`16px`), cards (`16px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

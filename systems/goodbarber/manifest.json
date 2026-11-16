@@ -1,22 +1,22 @@
 {
   "name": "goodbarber",
   "displayName": "GoodBarber Design System",
-  "description": "GoodBarber GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.",
-  "style": "GoodBarber GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.",
+  "description": "GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.",
+  "style": "Dark no-code studio interface, warm amber accents and slate workspace panels",
   "category": "GoodBarber",
   "org": "GoodBarber",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "good-barber"
+    "observed",
+    "good-barber",
+    "light"
   ],
   "homepage": "https://www.goodbarber.com/uxdesign/",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://www.goodbarber.com/uxdesign/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://www.goodbarber.com/uxdesign/"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +26,28 @@
   ],
   "tokens": {
     "colors": 68,
-    "typography": 0,
-    "components": 1
+    "typography": 4,
+    "components": 9
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 187,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

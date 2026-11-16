@@ -1,22 +1,22 @@
 {
   "name": "mesh",
   "displayName": "Mesh Design System",
-  "description": "Mesh Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package.",
-  "style": "Mesh Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package.",
+  "description": "Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package.",
+  "style": "Australian healthcare & enterprise kit, Buenos Aires typography and teal surfaces",
   "category": "Mesh",
   "org": "Mesh",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "mesh"
+    "observed",
+    "mesh",
+    "light"
   ],
   "homepage": "https://www.meshdesignsystem.com/",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://www.meshdesignsystem.com/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://www.meshdesignsystem.com/"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +26,8 @@
   ],
   "tokens": {
     "colors": 75,
-    "typography": 13,
-    "components": 0
+    "typography": 30,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 194,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

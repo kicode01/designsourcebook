@@ -36,6 +36,62 @@ components:
     textColor: "#201d1d"
     rounded: 6px
     padding: 20px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 18px
+  card-surface:
+    backgroundColor: "#201d1d"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#007aff"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#30d158"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#201d1d"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 16px
+typography:
+  heading-1:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 38px
+    fontWeight: 700
+    lineHeight: 1.5
+  heading-2:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.5
+  body:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  body-medium:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.5
+  body-tight:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1
+  caption:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 2
 ---
 
 # Design System: OpenCode
@@ -300,3 +356,10 @@ The color system is deliberately minimal. The primary palette consists of just t
 6. Three-stage interaction: default → hover (darkened) → active (deeply darkened) for all semantic colors.
 7. Borders use `rgba(15, 0, 0, 0.12)` -- a warm transparent dark, not neutral gray. This ties borders to the warm palette.
 8. Spacing follows an 8px grid: 8, 16, 24, 32, 40, 48, 64, 80, 96px. Use 4px for fine adjustments only.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#201d1d) canvas paired with `#201d1d` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#007aff` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Berkeley Mono` across 6 type steps.
+- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

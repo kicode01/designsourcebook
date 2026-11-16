@@ -1,22 +1,23 @@
 {
   "name": "porsche",
   "displayName": "Porsche Design System",
-  "description": "Porsche Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
-  "style": "Porsche Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
+  "description": "Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
+  "style": "Crisp light (#fff) canvas, Porsche Next typography, #1A44EA brand accent, and 2px corner geometry",
   "category": "Porsche",
   "org": "Porsche",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "porsche"
+    "porsche",
+    "light"
   ],
   "homepage": "https://github.com/porsche-design-system/porsche-design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/porsche-design-system/porsche-design-system — 8 token files, 22 colours harvested, 17 selected.",
   "source": {
-    "repo": "https://github.com/porsche-design-system/porsche-design-system"
+    "repo": "https://github.com/porsche-design-system/porsche-design-system",
+    "package": "@porsche-design-system/components-js"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 18,
-    "typography": 3,
-    "components": 0
+    "typography": 16,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,20 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 66,
+    "stars": 683,
+    "forks": 65,
+    "npmDownloads": 176640,
+    "score": 6680,
+    "frameworks": [
+      "web-components",
+      "react",
+      "angular",
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

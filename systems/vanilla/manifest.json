@@ -8,16 +8,17 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "ubuntu"
+    "ubuntu",
+    "light"
   ],
   "homepage": "https://vanillaframework.io/",
   "license": "LGPL-3.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from vanilla-framework@4.61.0 (1 token files, 16 colours harvested, 16 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from vanilla-framework@4.61.0 (3 token files, 61 colours harvested, 57 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "vanilla-framework",
-    "version": "4.61.0"
+    "version": "4.61.0",
+    "repo": "https://github.com/canonical/vanilla-framework"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,17 +27,30 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 17,
-    "typography": 0,
-    "components": 0
+    "colors": 58,
+    "typography": 4,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 60,
+    "stars": 993,
+    "forks": 225,
+    "npmDownloads": 0,
+    "score": 993,
+    "frameworks": [
+      "css",
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 36
   }
 }

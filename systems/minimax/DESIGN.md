@@ -32,72 +32,72 @@ colors:
   primary: "#1456f0"
 typography:
   display-hero:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 80px
     fontWeight: 500
     lineHeight: 1.1
   section-heading:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 31px
     fontWeight: 600
     lineHeight: 1.5
   section-heading-alt:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 32px
     fontWeight: 600
     lineHeight: 0.88
   card-title:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 28px
     fontWeight: 500
     lineHeight: 1.71
   sub-heading:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 24px
     fontWeight: 500
     lineHeight: 1.5
   feature-label:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 18px
     fontWeight: 500
     lineHeight: 1.5
   body-large:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 20px
     fontWeight: 500
     lineHeight: 1.5
   body:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   body-bold:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 16px
     fontWeight: 700
     lineHeight: 1.5
   nav-link:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
   button-small:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 13px
     fontWeight: 600
     lineHeight: 1.5
   caption:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.7
   small-label:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 12px
     fontWeight: 500
     lineHeight: 1.25
   micro:
-    fontFamily: DM Sans
+    fontFamily: "\"DM Sans\""
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.5
@@ -120,6 +120,21 @@ components:
     textColor: "#333333"
     rounded: 8px
     padding: 11px 20px
+  input-default:
+    backgroundColor: "#f0f0f0"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#f0f0f0"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  nav-bar:
+    backgroundColor: "#f0f0f0"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: MiniMax

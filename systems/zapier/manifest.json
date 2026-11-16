@@ -23,15 +23,30 @@
   "tokens": {
     "colors": 18,
     "typography": 21,
-    "components": 6
+    "components": 10
   },
   "checks": {
     "errors": 0,
-    "warnings": 2,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/zapier/zapier-platform"
+  },
+  "popularity": {
+    "rank": 172,
+    "stars": 570,
+    "forks": 235,
+    "npmDownloads": 0,
+    "score": 570,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

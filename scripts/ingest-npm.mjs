@@ -11,20 +11,25 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { collectTokens, selectColors, buildSystem, writeSystem, recordFailure } from "../lib/ingest.mjs";
+import { collectTokens, selectColors, buildSystem, writeSystem, recordFailure, formatTitle } from "../lib/ingest.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 
-const NPM = process.platform === "win32" ? "npm.cmd" : "npm";
-
 function unpack(pkg, dest) {
   fs.mkdirSync(dest, { recursive: true });
-  const out = execFileSync(NPM, ["pack", pkg, "--pack-destination", dest.replace(/\\/g, "/"), "--silent"], {
-    encoding: "utf8",
-    shell: process.platform === "win32",
-    stdio: ["ignore", "pipe", "pipe"],
-  }).trim();
+  const args = ["pack", pkg, "--pack-destination", dest.replace(/\\/g, "/"), "--silent"];
+  const out = (
+    process.platform === "win32"
+      ? execFileSync("cmd.exe", ["/c", "npm.cmd", ...args], {
+          encoding: "utf8",
+          stdio: ["ignore", "pipe", "pipe"],
+        })
+      : execFileSync("npm", args, {
+          encoding: "utf8",
+          stdio: ["ignore", "pipe", "pipe"],
+        })
+  ).trim();
   const tgz = path.join(dest, out.split(/\r?\n/).pop());
   // Extract from inside dest using a bare filename: GNU tar reads "C:/x" as
   // host:path and tries to open an rsh connection to host "C".
@@ -48,7 +53,8 @@ function main() {
   const slug = arg("slug", pkg.replace(/^@[^/]+\//, "").replace(/[^a-z0-9]+/gi, "-").toLowerCase());
   const org = arg("org", "");
   const name = arg("name", slug);
-  const note = arg("note", `${org ? org + " " : ""}${name} — tokens imported from ${pkg}.`);
+  const rawNote = arg("note", "");
+  const note = rawNote && rawNote !== "undefined" ? rawNote : `${formatTitle(org, name)} — tokens imported from ${pkg}.`;
   const extras = (arg("extra", "") || "").split(",").map((s) => s.trim()).filter(Boolean);
 
   let colors = {};

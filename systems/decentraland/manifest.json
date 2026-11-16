@@ -1,15 +1,15 @@
 {
   "name": "decentraland",
   "displayName": "Decentraland UI",
-  "description": "Decentraland Decentraland UI — tokens read from https://github.com/decentraland/ui.",
-  "style": "Decentraland Decentraland UI — tokens read from https://github.com/decentraland/ui.",
+  "description": "Decentraland UI — tokens read from https://github.com/decentraland/ui.",
+  "style": "Crisp light (#ffffff) canvas, system-ui typography, #ff2d55 brand accent, and 8px corner geometry",
   "category": "Decentraland",
   "org": "Decentraland",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "decentraland"
+    "decentraland",
+    "light"
   ],
   "homepage": "https://github.com/decentraland/ui",
   "license": "see repository",
@@ -27,7 +27,7 @@
   "tokens": {
     "colors": 53,
     "typography": 1,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 99,
+    "stars": 215,
+    "forks": 93,
+    "npmDownloads": 0,
+    "score": 215,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

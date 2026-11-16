@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Tencent TDesign
-description: undefined
+description: "Tencent TDesign — enterprise design system across Tencent products."
 colors:
   fill: "#D54941"
   color: "#0052D9"
@@ -107,94 +107,99 @@ typography:
   td-font-size-display-large:
     fontSize: 64px
   td-font-family:
-    fontFamily: "PingFang SC, Microsoft YaHei, Arial Regular"
+    fontFamily: "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\""
   td-font-family-medium:
-    fontFamily: "PingFang SC, Microsoft YaHei, Arial Medium"
+    fontFamily: "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Medium\""
 components:
   tag:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     rounded: 3px
     padding: "0"
   card:
-    backgroundColor: "#242424"
-    textColor: "rgba(255, 255, 255, 0.9)"
+    backgroundColor: "#fff"
+    textColor: "rgba(0, 0, 0, 0.9)"
     rounded: 6px
     padding: "0"
   tabs:
-    backgroundColor: "#242424"
-    textColor: "rgba(255, 255, 255, 0.9)"
+    backgroundColor: "#fff"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   alert:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     rounded: 6px
     padding: "0"
   input:
-    backgroundColor: transparent
-    textColor: "rgba(255, 255, 255, 0.9)"
+    backgroundColor: "#fff"
+    textColor: "rgba(0, 0, 0, 0.9)"
     rounded: 3px
     padding: "0"
   badge-2:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   table:
-    backgroundColor: "#242424"
-    textColor: "rgba(255, 255, 255, 0.9)"
+    backgroundColor: "#fff"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   button:
     backgroundColor: transparent
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     typography:
-      fontSize: "14px / 22px PingFang SC, Microsoft YaHei, Arial Regular"
+      fontSize: 14px
     rounded: 3px
     padding: "0"
   textarea-2:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   tag-input-3:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   tabs-2:
-    backgroundColor: "#2c2c2c"
-    textColor: "rgba(255, 255, 255, 0.55)"
+    backgroundColor: "#f3f3f3"
+    textColor: "rgba(0, 0, 0, 0.6)"
   tabs-3:
-    backgroundColor: "#4582e6"
+    backgroundColor: "#0052d9"
     rounded: 2px
   card-2:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
   input-3:
-    textColor: "rgba(255, 255, 255, 0.35)"
+    textColor: "rgba(0, 0, 0, 0.4)"
   alert-2:
-    textColor: "rgba(255, 255, 255, 0.55)"
+    textColor: "rgba(0, 0, 0, 0.6)"
   alert-3:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     typography:
       fontWeight: bold
   input-4:
     backgroundColor: transparent
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   input-5:
-    textColor: "rgba(255, 255, 255, 0.35)"
+    textColor: "rgba(0, 0, 0, 0.4)"
   select-input-6:
-    textColor: "rgba(255, 255, 255, 0.9)"
+    textColor: "rgba(0, 0, 0, 0.9)"
     padding: "0"
   table-2:
-    textColor: "rgba(255, 255, 255, 0.22)"
+    textColor: "rgba(0, 0, 0, 0.26)"
   card-3:
-    textColor: "#4582e6"
+    textColor: "#0052d9"
   card-4:
-    textColor: "rgba(255, 255, 255, 0.55)"
+    textColor: "rgba(0, 0, 0, 0.6)"
   tabs-4:
-    textColor: "rgba(255, 255, 255, 0.55)"
+    textColor: "rgba(0, 0, 0, 0.6)"
   alert-4:
-    textColor: "#4582e6"
+    textColor: "#0052d9"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
 ---
 
 # Tencent TDesign
 
 ## Overview
 
-undefined
+Tencent TDesign — enterprise design system across Tencent products.
 
 Tokens were read from `tdesign-react@1.18.6`, not from a marketing site: 68 colour tokens and 19 type tokens.
 
@@ -204,8 +209,15 @@ Tokens were read from `tdesign-react@1.18.6`, not from a marketing site: 68 colo
 
 ## Typography
 
-Families declared in the source: `PingFang SC, Microsoft YaHei, Arial Regular`, `PingFang SC, Microsoft YaHei, Arial Medium`.
+Families declared in the source: `"PingFang SC", "Microsoft YaHei", "Arial Regular"`, `"PingFang SC", "Microsoft YaHei", "Arial Medium"`.
 
 ## Components
 
 24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f2f3ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `PingFang SC` across 19 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -120,7 +120,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "80px",
       "px": 80,
       "fontWeight": 500,
@@ -128,7 +128,7 @@
     },
     {
       "name": "section-heading-alt",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "32px",
       "px": 32,
       "fontWeight": 600,
@@ -136,7 +136,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "31px",
       "px": 31,
       "fontWeight": 600,
@@ -144,7 +144,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "28px",
       "px": 28,
       "fontWeight": 500,
@@ -152,7 +152,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 500,
@@ -160,7 +160,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 500,
@@ -168,7 +168,7 @@
     },
     {
       "name": "feature-label",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 500,
@@ -176,7 +176,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -184,7 +184,7 @@
     },
     {
       "name": "body-bold",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 700,
@@ -192,7 +192,7 @@
     },
     {
       "name": "nav-link",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -200,7 +200,7 @@
     },
     {
       "name": "button-small",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 600,
@@ -208,7 +208,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 400,
@@ -216,7 +216,7 @@
     },
     {
       "name": "small-label",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 500,
@@ -224,7 +224,7 @@
     },
     {
       "name": "micro",
-      "fontFamily": "DM Sans",
+      "fontFamily": "\"DM Sans\"",
       "fontSize": "10px",
       "px": 10,
       "fontWeight": 400,
@@ -242,7 +242,7 @@
     },
     {
       "key": "button-pill-nav",
-      "kind": "button",
+      "kind": "badge",
       "backgroundColor": "rgba(0, 0, 0, 0.05)",
       "textColor": "#18181b",
       "rounded": "9999px"
@@ -261,6 +261,30 @@
       "textColor": "#333333",
       "rounded": "8px",
       "padding": "11px 20px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "MiniMax's website is a clean, product-showcase platform for a Chinese AI technology company that bridges consumer-friendly appeal with technical credibility. The design language is predominantly white-space-driven with a light, airy feel — pure white backgrounds (#ffffff) dominate, letting colorful product cards and AI model illustrations serve as the visual anchors. The overall aesthetic sits at the intersection of Apple's product marketing clarity and a playful, rounded design language that makes AI technology feel approachable.\n\nThe typography system is notably multi-font: DM Sans serves as the primary UI workhorse, Outfit handles display headings with geometric elegance, Poppins appears for mid-tier headings, and Roboto handles data-heavy contexts. This variety reflects a brand in rapid growth — each font serves a distinct communicative purpose rather than competing for attention.…",

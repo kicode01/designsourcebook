@@ -1,22 +1,23 @@
 {
   "name": "ubers",
   "displayName": "Uber's Base Web",
-  "description": "Uber's Uber's Base Web — tokens read from https://github.com/uber-web/baseui.",
-  "style": "Uber's Uber's Base Web — tokens read from https://github.com/uber-web/baseui.",
-  "category": "Uber's",
-  "org": "Uber's",
+  "description": "Uber's Base Web — tokens read from https://github.com/uber-web/baseui.",
+  "style": "Dark (#292929) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry",
+  "category": "Uber",
+  "org": "Uber",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "uber-s"
+    "uber-s",
+    "dark"
   ],
   "homepage": "https://github.com/uber-web/baseui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/uber-web/baseui — 7 token files, 333 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/uber-web/baseui"
+    "repo": "https://github.com/uber/baseweb",
+    "package": "baseui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 90,
-    "typography": 0,
-    "components": 0
+    "typography": 13,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 29,
+    "stars": 9028,
+    "forks": 882,
+    "npmDownloads": 0,
+    "score": 9028,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 7
   }
 }

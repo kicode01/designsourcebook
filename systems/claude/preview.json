@@ -1,6 +1,6 @@
 {
-  "canvas": "#f5f4ed",
-  "surface": "#faf9f5",
+  "canvas": "#ffffff",
+  "surface": "#30302e",
   "text": "#4d4c48",
   "muted": "#5e5d59",
   "brand": "#b53333",
@@ -104,7 +104,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "64px",
       "px": 64,
       "fontWeight": 500,
@@ -112,7 +112,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "52px",
       "px": 52,
       "fontWeight": 500,
@@ -120,7 +120,7 @@
     },
     {
       "name": "sub-heading-large",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "36.8px",
       "px": 36.8,
       "fontWeight": 500,
@@ -128,7 +128,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "32px",
       "px": 32,
       "fontWeight": 500,
@@ -136,7 +136,7 @@
     },
     {
       "name": "sub-heading-small",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "25.6px",
       "px": 25.6,
       "fontWeight": 500,
@@ -144,7 +144,7 @@
     },
     {
       "name": "feature-title",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "20.8px",
       "px": 20.8,
       "fontWeight": 500,
@@ -152,7 +152,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 400,
@@ -160,7 +160,7 @@
     },
     {
       "name": "body-serif",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "17px",
       "px": 17,
       "fontWeight": 400,
@@ -168,7 +168,7 @@
     },
     {
       "name": "body-nav",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "17px",
       "px": 17,
       "fontWeight": 400,
@@ -176,7 +176,7 @@
     },
     {
       "name": "body-standard",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -184,7 +184,7 @@
     },
     {
       "name": "body-small",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 400,
@@ -192,7 +192,7 @@
     },
     {
       "name": "code",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 400,
@@ -201,7 +201,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -209,7 +209,7 @@
     },
     {
       "name": "label",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -218,7 +218,7 @@
     },
     {
       "name": "overline",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "10px",
       "px": 10,
       "fontWeight": 400,
@@ -227,7 +227,7 @@
     },
     {
       "name": "micro",
-      "fontFamily": "Anthropic Serif",
+      "fontFamily": "\"Anthropic Serif\"",
       "fontSize": "9.6px",
       "px": 9.6,
       "fontWeight": 400,
@@ -265,7 +265,7 @@
       "key": "button-brand-terracotta",
       "kind": "button",
       "backgroundColor": "#c96442",
-      "textColor": "#faf9f5",
+      "textColor": "#000000",
       "rounded": "12px",
       "shadow": "ring-based (#c96442 0px 0px 0px 0px, #c96442 0px 0px 0px 1px)"
     },
@@ -277,6 +277,46 @@
       "rounded": "12px",
       "padding": "9.6px 16.8px",
       "border": "thin solid Dark Surface (1px solid #30302e)"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#30302e",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#30302e",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#b53333",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#30302e",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Claude's interface is a literary salon reimagined as a product page — warm, unhurried, and quietly intellectual. The entire experience is built on a parchment-toned canvas (#f5f4ed) that deliberately evokes the feeling of high-quality paper rather than a digital surface. Where most AI product pages lean into cold, futuristic aesthetics, Claude's design radiates human warmth, as if the AI itself has good taste in interior design.\n\nThe signature move is the custom Anthropic Serif typeface — a medium-weight serif with generous proportions that gives every headline the gravitas of a book title. Combined with organic, hand-drawn-feeling illustrations in terracotta (#c96442), black, and muted green, the visual language says \"thoughtful companion\" rather than \"powerful tool.\" The serif headlines breathe at tight-but-comfortable line-heights (1.10–1.30), creating a cadence that feels more like…",

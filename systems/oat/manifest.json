@@ -1,0 +1,54 @@
+{
+  "name": "oat",
+  "displayName": "Oat UI",
+  "description": "Oat UI — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, system-ui typography, #008032 brand accent, and pill & expressive rounded surfaces",
+  "category": "Oat",
+  "org": "Oat",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "oat",
+    "light"
+  ],
+  "homepage": "https://oat.ink/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://oat.ink/ in headless Chromium on 2026-11-16 (67 custom properties, 114 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Oat - Ultra-lightweight, semantic, zero-dependency HTML UI component library.",
+  "source": {
+    "url": "https://oat.ink/",
+    "repo": "https://github.com/oat-ink/oat"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 13,
+    "typography": 6,
+    "components": 7
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 152,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

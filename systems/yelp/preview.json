@@ -1,15 +1,498 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
+  "canvas": "rgb(255, 255, 255)",
+  "surface": "rgb(255, 255, 255)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "rgb(147, 0, 0)",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Yelp Styleguide is published by Yelp, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "ref-color-foreign-linkedin",
+      "value": "rgb(40, 103, 178)"
+    },
+    {
+      "name": "sem-color-bg-foreign-apple-disabled",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "sem-color-bg-foreign-facebook-disabled",
+      "value": "rgb(8, 102, 255)"
+    },
+    {
+      "name": "sem-color-bg-foreign-github-disabled",
+      "value": "rgb(106, 115, 125)"
+    },
+    {
+      "name": "sem-color-bg-foreign-line-disabled",
+      "value": "rgb(6, 199, 85)"
+    },
+    {
+      "name": "sem-color-bg-foreign-linkedin-disabled",
+      "value": "rgb(40, 103, 178)"
+    },
+    {
+      "name": "sem-color-bg-foreign-linkedin-hovered",
+      "value": "rgb(40, 103, 178)"
+    },
+    {
+      "name": "sem-color-bg-foreign-rss-disabled",
+      "value": "rgb(201, 64, 14)"
+    },
+    {
+      "name": "sem-color-bg-foreign-twitter-disabled",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "sem-color-border-on-dim-default",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-bg-brand-primary-strong-default",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-bg-brand-primary-subtle-default",
+      "value": "rgb(255, 219, 218)"
+    },
+    {
+      "name": "sem-color-bg-brand-primary-subtle-hovered",
+      "value": "rgb(255, 236, 236)"
+    },
+    {
+      "name": "sem-color-bg-brand-secondary-strong-default",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-bg-brand-secondary-subtle-default",
+      "value": "rgb(182, 237, 247)"
+    },
+    {
+      "name": "sem-color-bg-brand-secondary-subtle-hovered",
+      "value": "rgb(217, 246, 253)"
+    },
+    {
+      "name": "sem-color-bg-info-strong",
+      "value": "rgb(0, 73, 124)"
+    },
+    {
+      "name": "sem-color-bg-info-subtle",
+      "value": "rgb(193, 232, 255)"
+    },
+    {
+      "name": "sem-color-border-attention",
+      "value": "rgb(134, 35, 0)"
+    },
+    {
+      "name": "sem-color-border-brand-primary",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-border-brand-secondary",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-border-critical",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-border-default",
+      "value": "rgb(137, 138, 139)"
+    },
+    {
+      "name": "sem-color-border-disabled",
+      "value": "rgb(200, 201, 202)"
+    },
+    {
+      "name": "sem-color-border-focused",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-border-info",
+      "value": "rgb(0, 73, 124)"
+    },
+    {
+      "name": "sem-color-border-negative",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-border-on-dim-disabled",
+      "value": "rgb(92, 93, 97)"
+    },
+    {
+      "name": "sem-color-border-on-dim-hovered",
+      "value": "rgb(200, 201, 202)"
+    },
+    {
+      "name": "sem-color-border-ongoing",
+      "value": "rgb(0, 73, 124)"
+    },
+    {
+      "name": "sem-color-border-positive",
+      "value": "rgb(0, 82, 52)"
+    },
+    {
+      "name": "sem-color-border-promo",
+      "value": "rgb(30, 81, 0)"
+    },
+    {
+      "name": "sem-color-border-subtle",
+      "value": "rgb(200, 201, 202)"
+    },
+    {
+      "name": "sem-color-border-upgrade",
+      "value": "rgb(90, 51, 135)"
+    },
+    {
+      "name": "sem-color-icon-brand-primary",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-icon-brand-secondary",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-icon-disabled",
+      "value": "rgb(137, 138, 139)"
+    },
+    {
+      "name": "sem-color-icon-info",
+      "value": "rgb(0, 73, 124)"
+    },
+    {
+      "name": "sem-color-icon-link-default",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-icon-on-dim-disabled",
+      "value": "rgb(137, 138, 139)"
+    },
+    {
+      "name": "sem-color-link-default",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-link-subtle",
+      "value": "rgb(69, 71, 74)"
+    },
+    {
+      "name": "sem-color-text-attention",
+      "value": "rgb(134, 35, 0)"
+    },
+    {
+      "name": "sem-color-text-brand-primary",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-text-brand-secondary",
+      "value": "rgb(0, 78, 93)"
+    },
+    {
+      "name": "sem-color-text-critical",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-text-disabled",
+      "value": "rgb(137, 138, 139)"
+    },
+    {
+      "name": "sem-color-text-info",
+      "value": "rgb(0, 73, 124)"
+    },
+    {
+      "name": "sem-color-text-negative",
+      "value": "rgb(147, 0, 0)"
+    },
+    {
+      "name": "sem-color-text-on-dim-disabled",
+      "value": "rgb(137, 138, 139)"
+    },
+    {
+      "name": "sem-color-text-ongoing",
+      "value": "rgb(0, 73, 124)"
+    },
+    {
+      "name": "sem-color-text-positive",
+      "value": "rgb(0, 82, 52)"
+    },
+    {
+      "name": "sem-color-text-prestige",
+      "value": "rgb(113, 55, 19)"
+    },
+    {
+      "name": "sem-color-text-prime",
+      "value": "rgb(69, 71, 74)"
+    },
+    {
+      "name": "sem-color-text-promo",
+      "value": "rgb(30, 81, 0)"
+    },
+    {
+      "name": "sem-color-text-subtle",
+      "value": "rgb(69, 71, 74)"
+    },
+    {
+      "name": "sem-color-text-upgrade",
+      "value": "rgb(90, 51, 135)"
+    },
+    {
+      "name": "sem-color-bg-disabled",
+      "value": "rgb(227, 227, 227)"
+    },
+    {
+      "name": "sem-color-surface-default",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-text-on-dim-default",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-text-on-dim-subtle",
+      "value": "rgb(200, 201, 202)"
+    },
+    {
+      "name": "sem-color-bg-brand-secondary-strong-hovered",
+      "value": "rgb(4, 101, 120)"
+    },
+    {
+      "name": "sem-color-text-on-dim-promo",
+      "value": "rgb(96, 212, 72)"
+    },
+    {
+      "name": "sem-color-surface-on-dim-sticky",
+      "value": "rgb(23, 23, 23)"
+    },
+    {
+      "name": "sem-color-link-on-stronger",
+      "value": "rgb(66, 203, 239)"
+    },
+    {
+      "name": "sem-color-surface-offset",
+      "value": "rgb(247, 247, 247)"
+    },
+    {
+      "name": "sem-color-bg-foreign-linkedin-default",
+      "value": "rgb(40, 103, 178)"
+    },
+    {
+      "name": "sem-color-border-hollow-brand-primary",
+      "value": "rgb(215, 22, 22)"
+    },
+    {
+      "name": "sem-color-text-on-hollow-brand-primary",
+      "value": "rgb(215, 22, 22)"
+    },
+    {
+      "name": "sem-color-surface-raised",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-text-on-stronger",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-link-heading",
+      "value": "rgb(45, 46, 47)"
+    },
+    {
+      "name": "sem-color-link-on-dim-heading",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-text-on-dim-ongoing",
+      "value": "rgb(130, 193, 255)"
+    },
+    {
+      "name": "sem-color-bg-brand-primary-strong-hovered",
+      "value": "rgb(181, 28, 28)"
+    },
+    {
+      "name": "sem-color-text-on-dim-critical",
+      "value": "rgb(255, 163, 160)"
+    },
+    {
+      "name": "sem-color-border-hovered",
+      "value": "rgb(107, 109, 111)"
+    },
+    {
+      "name": "sem-color-border-stack",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-text-on-dim-negative",
+      "value": "rgb(255, 163, 160)"
+    },
+    {
+      "name": "sem-color-text-on-dim-brand-primary",
+      "value": "rgb(255, 163, 160)"
+    },
+    {
+      "name": "sem-color-border-stronger",
+      "value": "rgb(45, 46, 47)"
+    },
+    {
+      "name": "sem-color-border-clear",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "sem-color-icon-on-dim-link-default",
+      "value": "rgb(66, 203, 239)"
+    },
+    {
+      "name": "sem-color-icon-link-on-stronger",
+      "value": "rgb(66, 203, 239)"
+    },
+    {
+      "name": "sem-color-border-on-dim-focused",
+      "value": "rgb(66, 203, 239)"
+    },
+    {
+      "name": "sem-color-surface-backdrop",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "sem-color-text-on-dim-brand-secondary",
+      "value": "rgb(66, 203, 239)"
+    },
+    {
+      "name": "sem-color-text-default",
+      "value": "rgb(45, 46, 47)"
+    },
+    {
+      "name": "sem-color-surface-stage",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "sem-color-surface-sticky",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(147, 0, 0)"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Poppins, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 700,
+      "lineHeight": 1.17
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Poppins, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 700,
+      "lineHeight": 1.29
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Poppins, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body",
+      "fontFamily": "Poppins, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "header",
+      "fontFamily": "\"Times New Roman\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1
+    }
+  ],
+  "components": [
+    {
+      "key": "textarea",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#2d2e2f",
+      "rounded": "4px",
+      "padding": "13px 16px",
+      "border": "0",
+      "shadow": "inset 0 0 0 1px #c8c9ca"
+    },
+    {
+      "key": "select-wrapper-2",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#2d2e2f",
+      "rounded": "4px",
+      "padding": "13px 16px",
+      "border": "0",
+      "shadow": "inset 0 0 0 1px #c8c9ca"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "rgb(147, 0, 0)",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "rgb(147, 0, 0)",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgb(147, 0, 0)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "rgb(0, 82, 52)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Yelp Styleguide — Crisp light (rgb(255, 255, 255)) canvas, Times New Roman typography, rgb(147, 0, 0) brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(147, 0, 0)` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Times New Roman` across 5 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

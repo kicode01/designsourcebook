@@ -82,6 +82,31 @@ components:
     backgroundColor: "rgba(0, 0, 0, 0.08)"
   button-glass-light:
     backgroundColor: "rgba(255, 255, 255, 0.16)"
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 50px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 50px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 50px
+    padding: 10px 16px
 ---
 
 # Design System: Figma

@@ -284,113 +284,113 @@
   "type": [
     {
       "name": "td-font-size-display-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "64px",
       "px": 64
     },
     {
       "name": "td-font-size-display-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "48px",
       "px": 48
     },
     {
       "name": "td-font-size-headline-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "36px",
       "px": 36
     },
     {
       "name": "td-font-size-headline-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "28px",
       "px": 28
     },
     {
       "name": "td-font-size-headline-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "24px",
       "px": 24
     },
     {
       "name": "td-font-size-title-extra-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "20px",
       "px": 20
     },
     {
       "name": "td-font-size-title-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "18px",
       "px": 18
     },
     {
       "name": "td-font-size-link-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "td-font-size-body-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "td-font-size-title-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "td-font-family",
-      "fontFamily": "PingFang SC, Microsoft YaHei, Arial Regular",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "px": 16
     },
     {
       "name": "td-font-family-medium",
-      "fontFamily": "PingFang SC, Microsoft YaHei, Arial Medium",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Medium\"",
       "px": 16
     },
     {
       "name": "td-font-size-link-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "td-font-size-mark-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "td-font-size-body-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "td-font-size-title-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "td-font-size-link-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "12px",
       "px": 12
     },
     {
       "name": "td-font-size-mark-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "12px",
       "px": 12
     },
     {
       "name": "td-font-size-body-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\"",
       "fontSize": "12px",
       "px": 12
     }
@@ -399,7 +399,7 @@
     {
       "key": "tag",
       "kind": "badge",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "rounded": "3px",
       "padding": "0",
       "border": "1px solid transparent"
@@ -407,52 +407,52 @@
     {
       "key": "card",
       "kind": "card",
-      "backgroundColor": "#242424",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "backgroundColor": "#fff",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "rounded": "6px",
       "padding": "0"
     },
     {
       "key": "tabs",
-      "kind": "tabs",
-      "backgroundColor": "#242424",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0"
     },
     {
       "key": "alert",
-      "kind": "alert",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "kind": "card",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "rounded": "6px",
       "padding": "0"
     },
     {
       "key": "input",
       "kind": "input",
-      "backgroundColor": "transparent",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "backgroundColor": "#fff",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "rounded": "3px",
       "padding": "0",
-      "border": "1px solid #5e5e5e"
+      "border": "1px solid #ddd"
     },
     {
       "key": "badge-2",
       "kind": "badge",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0"
     },
     {
       "key": "table",
-      "kind": "table",
-      "backgroundColor": "#242424",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0"
     },
     {
       "key": "button",
       "kind": "button",
       "backgroundColor": "transparent",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "rounded": "3px",
       "padding": "0",
       "border": "1px solid transparent"
@@ -460,92 +460,100 @@
     {
       "key": "textarea-2",
       "kind": "input",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0"
     },
     {
       "key": "tag-input-3",
-      "kind": "badge",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "kind": "input",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0"
     },
     {
       "key": "tabs-2",
-      "kind": "tabs",
-      "backgroundColor": "#2c2c2c",
-      "textColor": "rgba(255, 255, 255, 0.55)"
+      "kind": "nav",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "rgba(0, 0, 0, 0.6)"
     },
     {
       "key": "tabs-3",
-      "kind": "tabs",
-      "backgroundColor": "#4582e6",
+      "kind": "nav",
+      "backgroundColor": "#0052d9",
       "rounded": "2px"
     },
     {
       "key": "card-2",
       "kind": "card",
-      "textColor": "rgba(255, 255, 255, 0.9)"
+      "textColor": "rgba(0, 0, 0, 0.9)"
     },
     {
       "key": "input-3",
       "kind": "input",
-      "textColor": "rgba(255, 255, 255, 0.35)"
+      "textColor": "rgba(0, 0, 0, 0.4)"
     },
     {
       "key": "alert-2",
-      "kind": "alert",
-      "textColor": "rgba(255, 255, 255, 0.55)"
+      "kind": "card",
+      "textColor": "rgba(0, 0, 0, 0.6)"
     },
     {
       "key": "alert-3",
-      "kind": "alert",
-      "textColor": "rgba(255, 255, 255, 0.9)"
+      "kind": "card",
+      "textColor": "rgba(0, 0, 0, 0.9)"
     },
     {
       "key": "input-4",
       "kind": "input",
       "backgroundColor": "transparent",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0",
       "border": "none"
     },
     {
       "key": "input-5",
       "kind": "input",
-      "textColor": "rgba(255, 255, 255, 0.35)"
+      "textColor": "rgba(0, 0, 0, 0.4)"
     },
     {
       "key": "select-input-6",
       "kind": "input",
-      "textColor": "rgba(255, 255, 255, 0.9)",
+      "textColor": "rgba(0, 0, 0, 0.9)",
       "padding": "0"
     },
     {
       "key": "table-2",
-      "kind": "table",
-      "textColor": "rgba(255, 255, 255, 0.22)"
+      "kind": "nav",
+      "textColor": "rgba(0, 0, 0, 0.26)"
     },
     {
       "key": "card-3",
       "kind": "card",
-      "textColor": "#4582e6"
+      "textColor": "#0052d9"
     },
     {
       "key": "card-4",
       "kind": "card",
-      "textColor": "rgba(255, 255, 255, 0.55)"
+      "textColor": "rgba(0, 0, 0, 0.6)"
     },
     {
       "key": "tabs-4",
-      "kind": "tabs",
-      "textColor": "rgba(255, 255, 255, 0.55)"
+      "kind": "nav",
+      "textColor": "rgba(0, 0, 0, 0.6)"
     },
     {
       "key": "alert-4",
-      "kind": "alert",
-      "textColor": "#4582e6"
+      "kind": "card",
+      "textColor": "#0052d9"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
     }
   ],
-  "overview": "undefined",
-  "dos": ""
+  "overview": "Tencent TDesign — enterprise design system across Tencent products.",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f2f3ff` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `PingFang SC` across 19 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

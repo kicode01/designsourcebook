@@ -1,22 +1,22 @@
 {
   "name": "basis",
   "displayName": "Basis Design System",
-  "description": "Basis Basis Design System — tokens read from https://github.com/moroshko/basis.",
-  "style": "Basis Basis Design System — tokens read from https://github.com/moroshko/basis.",
+  "description": "Basis Design System — tokens read from https://github.com/moroshko/basis.",
+  "style": "Dark (#21a637) canvas, Rubik typography, #4693fa brand accent, and 8px corner geometry",
   "category": "Basis",
   "org": "Basis",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "basis"
+    "basis",
+    "light"
   ],
   "homepage": "https://github.com/moroshko/basis",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/moroshko/basis — 6 token files, 23 colours harvested, 22 selected.",
   "source": {
-    "repo": "https://github.com/moroshko/basis"
+    "repo": "https://github.com/LatitudeFinancialOSS/basis"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +26,28 @@
   ],
   "tokens": {
     "colors": 23,
-    "typography": 0,
-    "components": 0
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 115,
+    "stars": 61,
+    "forks": 8,
+    "npmDownloads": 0,
+    "score": 61,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

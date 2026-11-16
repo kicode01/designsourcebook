@@ -13,7 +13,7 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { collectTokens, buildSystem, writeSystem, recordFailure } from "../lib/ingest.mjs";
+import { collectTokens, buildSystem, writeSystem, recordFailure, formatTitle } from "../lib/ingest.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -38,17 +38,23 @@ function clone(url, dest) {
 }
 
 function main() {
-  const url = process.argv[2];
+  let url = process.argv[2];
   if (!url || url.startsWith("--")) {
     console.error("Usage: node scripts/ingest-repo.mjs <git-url> --slug <slug> --org <org> --name <name> [--subdir p]");
     process.exit(1);
   }
 
+  let subdir = arg("subdir", "");
+  const treeMatch = /^(https:\/\/github\.com\/[^/]+\/[^/]+)\/tree\/[^/]+\/(.+?)\/?$/.exec(url);
+  if (treeMatch) {
+    url = treeMatch[1];
+    if (!subdir) subdir = treeMatch[2];
+  }
+
   const slug = arg("slug", path.basename(url, ".git").replace(/[^a-z0-9]+/gi, "-").toLowerCase());
   const org = arg("org", "");
   const name = arg("name", slug);
-  const subdir = arg("subdir", "");
-  const note = arg("note", `${org ? org + " " : ""}${name} — tokens read from ${url}.`);
+  const note = arg("note", `${formatTitle(org, name)} — tokens read from ${url}.`);
 
   const work = path.join(os.tmpdir(), "sourcebook-repo", slug);
   let root;
@@ -67,7 +73,9 @@ function main() {
   if (subdir) {
     const sub = path.join(root, subdir);
     if (!fs.existsSync(sub)) {
-      console.error(`subdir not found: ${subdir}`);
+      const why = `subdir not found: ${subdir}`;
+      console.error(why);
+      recordFailure(ROOT, { slug, name, org, source: url, reason: why, kind: "repo" });
       process.exit(1);
     }
     root = sub;

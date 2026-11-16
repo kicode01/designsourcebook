@@ -55,6 +55,36 @@ components:
     textColor: "#f0f0fa"
     rounded: 32px
     padding: 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 32px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 32px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 32px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 32px
+    padding: 10px 16px
 ---
 
 # Design System: SpaceX

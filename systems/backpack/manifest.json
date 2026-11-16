@@ -2,21 +2,22 @@
   "name": "backpack",
   "displayName": "Backpack",
   "description": "Skyscanner Backpack — tokens read from https://github.com/skyscanner/backpack.",
-  "style": "Skyscanner Backpack — tokens read from https://github.com/skyscanner/backpack.",
+  "style": "Dark (#131d2b) canvas, Larken typography, #024daf brand accent, and 8px corner geometry",
   "category": "Skyscanner",
   "org": "Skyscanner",
-  "theme": "light",
+  "theme": "dark",
   "tags": [
     "published",
-    "light",
-    "skyscanner"
+    "skyscanner",
+    "dark"
   ],
   "homepage": "https://github.com/skyscanner/backpack",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/skyscanner/backpack — 7 token files, 256 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/skyscanner/backpack"
+    "repo": "https://github.com/Skyscanner/backpack",
+    "package": "@skyscanner/bpk-foundations-web"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,29 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 31,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 73,
+    "stars": 544,
+    "forks": 210,
+    "npmDownloads": 4417,
+    "score": 965,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 13
   }
 }

@@ -68,7 +68,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "80px",
       "px": 80,
       "fontWeight": 400,
@@ -77,7 +77,7 @@
     },
     {
       "name": "section-display",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "56px",
       "px": 56,
       "fontWeight": 400,
@@ -86,7 +86,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "48px",
       "px": 48,
       "fontWeight": 400,
@@ -95,7 +95,7 @@
     },
     {
       "name": "card-display",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "42px",
       "px": 42,
       "fontWeight": 400,
@@ -104,7 +104,7 @@
     },
     {
       "name": "feature-heading",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "40px",
       "px": 40,
       "fontWeight": 400,
@@ -113,7 +113,7 @@
     },
     {
       "name": "sub-heading-large",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "36px",
       "px": 36,
       "fontWeight": 400,
@@ -122,7 +122,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "32px",
       "px": 32,
       "fontWeight": 400,
@@ -131,7 +131,7 @@
     },
     {
       "name": "body-heading",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 400,
@@ -140,7 +140,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "22px",
       "px": 22,
       "fontWeight": 500,
@@ -149,7 +149,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 400,
@@ -158,7 +158,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -167,7 +167,7 @@
     },
     {
       "name": "nav-ui",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -176,7 +176,7 @@
     },
     {
       "name": "button-text",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -185,7 +185,7 @@
     },
     {
       "name": "code-ui",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -194,7 +194,7 @@
     },
     {
       "name": "code-body",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -203,7 +203,7 @@
     },
     {
       "name": "ui-supplement",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -212,7 +212,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -221,7 +221,7 @@
     },
     {
       "name": "small-label",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -230,7 +230,7 @@
     },
     {
       "name": "micro",
-      "fontFamily": "Matter Regular",
+      "fontFamily": "\"Matter Regular\"",
       "fontSize": "11px",
       "px": 11,
       "fontWeight": 400,
@@ -238,7 +238,72 @@
       "letterSpacing": "0px"
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#868584",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#353534",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#353534",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#868584",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#353534",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Warp's website feels like sitting at a campfire in a deep forest — warm, dark, and alive with quiet confidence. Unlike the cold, blue-tinted blacks favored by most developer tools, Warp wraps everything in a warm near-black that feels like charred wood or dark earth. The text isn't pure white either — it's Warm Parchment (#faf9f6), a barely-perceptible cream that softens every headline and makes the dark canvas feel inviting rather than austere.\n\nThe typography is the secret weapon: Matter, a geometric sans-serif with distinctive character, deployed at Regular weight across virtually all text. The font choice is unusual for a developer tool — Matter has a softness and humanity that signals \"this terminal is for everyone, not just greybeards.\" Combined with tight line-heights and controlled negative letter-spacing on headlines, the effect is refined and approachable simultaneously.…",
   "dos": "Do\n- Use warm off-white (#faf9f6) for text instead of pure white — the cream undertone is essential\n- Keep buttons restrained and muted — dark fill (#353534) with muted text (#afaeac), no bright CTAs\n- Apply Matter Regular (weight 400) for nearly everything — even headlines. Reserve Medium (500) for emphasis only\n- Use uppercase labels with wide letter-spacing (1.4px–2.4px) for categorization\n- Interleave nature photography with product screenshots — this is core to the brand identity\n- Maintain the almost monochromatic warm gray palette — no bold accent colors\n- Use semi-transparent borders (rgba(226, 226, 226, 0.35)) for card containment instead of shadows\n- Keep negative letter-spacing on headlines (-0.4px to -2.4px) for Matter's compressed display treatment\n\nDon't\n- Use pure white (#ffffff) for text — it's always warm parchment (#faf9f6)\n- Add bold accent colors (blue, red, green) —…"
 }

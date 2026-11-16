@@ -12,35 +12,76 @@ colors:
   primary: "#ffffff"
 typography:
   display-hero:
-    fontFamily: BMWTypeNextLatin Light
+    fontFamily: "\"BMWTypeNextLatin Light\""
     fontSize: 60px
     fontWeight: 300
     lineHeight: 1.3
   section-heading:
-    fontFamily: BMWTypeNextLatin Light
+    fontFamily: "\"BMWTypeNextLatin Light\""
     fontSize: 32px
     fontWeight: 400
     lineHeight: 1.3
   nav-emphasis:
-    fontFamily: BMWTypeNextLatin Light
+    fontFamily: "\"BMWTypeNextLatin Light\""
     fontSize: 18px
     fontWeight: 900
     lineHeight: 1.3
   body:
-    fontFamily: BMWTypeNextLatin Light
+    fontFamily: "\"BMWTypeNextLatin Light\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.15
   button-bold:
-    fontFamily: BMWTypeNextLatin Light
+    fontFamily: "\"BMWTypeNextLatin Light\""
     fontSize: 16px
     fontWeight: 700
     lineHeight: 1.2
   button:
-    fontFamily: BMWTypeNextLatin Light
+    fontFamily: "\"BMWTypeNextLatin Light\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.15
+components:
+  button-primary:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: BMW

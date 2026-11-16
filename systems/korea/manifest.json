@@ -1,15 +1,15 @@
 {
   "name": "korea",
   "displayName": "Korea Design System",
-  "description": "Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.",
-  "style": "Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.",
+  "description": "Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.",
+  "style": "Crisp light (#ffffff) canvas, system-ui typography, #ecf2fe brand accent, and 8px corner geometry",
   "category": "Korea",
   "org": "Korea",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "korea"
+    "korea",
+    "light"
   ],
   "homepage": "https://github.com/KRDS-uiux/krds-uiux",
   "license": "see repository",
@@ -26,8 +26,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 47,
-    "components": 1
+    "typography": 46,
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 89,
+    "stars": 290,
+    "forks": 35,
+    "npmDownloads": 0,
+    "score": 290,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

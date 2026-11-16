@@ -157,7 +157,7 @@ components:
     padding: 8px 16px
   button-neutral-ghost:
     backgroundColor: "rgba(255,255,255,0)"
-    textColor: "rgba(16,16,16,0.3)"
+    textColor: "#0b0b0c"
     rounded: 4px
     padding: 8px 16px
   badge-neutral-pill:
@@ -167,9 +167,24 @@ components:
     padding: 0px 6px
   badge-success:
     backgroundColor: "rgba(21,190,83,0.2)"
-    textColor: "#108c3d"
+    textColor: "#0b0b0c"
     rounded: 4px
     padding: 1px 6px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: Stripe

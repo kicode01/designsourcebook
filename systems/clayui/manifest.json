@@ -1,0 +1,56 @@
+{
+  "name": "clayui",
+  "displayName": "Liferay Lexicon (Clay)",
+  "description": "Liferay Lexicon (Clay) — tokens imported from @clayui/css.",
+  "style": "Enterprise portal components, Liferay blue actions and structured table/panel surfaces",
+  "category": "Liferay",
+  "org": "Liferay",
+  "theme": "light",
+  "tags": [
+    "published",
+    "liferay",
+    "light"
+  ],
+  "homepage": "http://clayui.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @clayui/css@3.167.0 (6 token files, 149 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@clayui/css",
+    "version": "3.167.0",
+    "repo": "https://github.com/liferay/clay"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 170,
+    "components": 27
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 95,
+    "stars": 246,
+    "forks": 533,
+    "npmDownloads": 25644,
+    "score": 1740,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

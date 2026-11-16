@@ -1,22 +1,23 @@
 {
   "name": "dhis2",
   "displayName": "DHIS2 UI",
-  "description": "DHIS2 DHIS2 UI — tokens read from https://github.com/dhis2/ui.",
-  "style": "DHIS2 DHIS2 UI — tokens read from https://github.com/dhis2/ui.",
+  "description": "DHIS2 UI — tokens read from https://github.com/dhis2/ui.",
+  "style": "Dark (#276696) canvas, Roboto typography, #FF4785 brand accent, and 8px corner geometry",
   "category": "DHIS2",
   "org": "DHIS2",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "dhis2"
+    "dhis2",
+    "dark"
   ],
   "homepage": "https://github.com/dhis2/ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/dhis2/ui — 5 token files, 66 colours harvested, 65 selected.",
   "source": {
-    "repo": "https://github.com/dhis2/ui"
+    "repo": "https://github.com/dhis2/ui",
+    "package": "@dhis2/ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 66,
-    "typography": 0,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 119,
+    "stars": 54,
+    "forks": 35,
+    "npmDownloads": 15130,
+    "score": 1076,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

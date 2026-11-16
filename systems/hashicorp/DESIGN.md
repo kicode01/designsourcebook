@@ -32,38 +32,38 @@ colors:
   primary: "#000000"
 typography:
   display-hero:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 82px
     fontWeight: 600
     lineHeight: 1.17
   section-heading:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 52px
     fontWeight: 600
     lineHeight: 1.19
   feature-heading:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 42px
     fontWeight: 700
     lineHeight: 1.19
     letterSpacing: "-0.42px"
   sub-heading:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 34px
     fontWeight: 600
     lineHeight: 1.18
   card-title:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 26px
     fontWeight: 700
     lineHeight: 1.19
   small-title:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 19px
     fontWeight: 700
     lineHeight: 1.21
   body-emphasis:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 17px
     fontWeight: 600
     lineHeight: 1.18
@@ -93,7 +93,7 @@ typography:
     fontWeight: 400
     lineHeight: 1.23
   uppercase-label:
-    fontFamily: HashiCorp Sans
+    fontFamily: "\"HashiCorp Sans\""
     fontSize: 13px
     fontWeight: 600
     lineHeight: 1.69
@@ -116,6 +116,26 @@ components:
   input-checkbox:
     backgroundColor: "#0d0e12"
     rounded: 3px
+  card-surface:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 9px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 5px
+    padding: 10px 16px
 ---
 
 # Design System: HashiCorp

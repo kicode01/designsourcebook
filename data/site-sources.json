@@ -1,4 +1,35 @@
 {
-  "note": "All missing organisations with a curated homepage.",
-  "sources": []
+  "note": "Docs-only organisations whose homepage URL is curated in data/sources/awesome.json. Read with scripts/ingest-site.mjs.",
+  "sources": [
+    {
+      "url": "https://www.coop.co.uk/experience-library/",
+      "slug": "coop",
+      "org": "Co-op",
+      "name": "Co-op Experience Library"
+    },
+    {
+      "url": "https://www.futurelearn.com/pattern-library",
+      "slug": "futurelearn",
+      "org": "FutureLearn",
+      "name": "FutureLearn Pattern Library"
+    },
+    {
+      "url": "https://atlantis.getjobber.com",
+      "slug": "jobber",
+      "org": "Jobber",
+      "name": "Jobber"
+    },
+    {
+      "url": "https://www.nationbuilder.design/",
+      "slug": "nationbuilder",
+      "org": "NationBuilder",
+      "name": "NationBuilder Radius"
+    },
+    {
+      "url": "https://brand.nordnet.se/",
+      "slug": "nordnet",
+      "org": "Nordnet",
+      "name": "Nordnet"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: BLiP
-description: "BLiP BLiP — tokens read from https://github.com/takenet/blip-ds."
+description: "Crisp light (#ffffff) canvas, Nunito Sans typography, #00c6d7 brand accent, and 8px corner geometry"
 colors:
   color-primary-light: "#b3d4ff"
   color-primary-main: "#3f7de8"
@@ -94,13 +94,77 @@ colors:
   color-info: "#80e3eb"
   color-focus: "#c226fb"
   primary: "#00c6d7"
+typography:
+  font-family:
+    fontFamily: "\"Nunito Sans\", Carbona, Tahoma, Helvetica, Arial, sans-serif"
+  h1:
+    fontSize: 32px
+    fontWeight: 600
+  h2:
+    fontSize: 28px
+    fontWeight: 600
+  h3:
+    fontSize: 24px
+    fontWeight: 600
+  h4:
+    fontSize: 20px
+    fontWeight: 600
+  h5:
+    fontSize: 16px
+    fontWeight: 600
+  h6:
+    fontSize: 12px
+    fontWeight: 600
+  font-size:
+    fontSize: 54px
+components:
+  button-primary:
+    backgroundColor: "#00c6d7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#da7a7a"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#00c6d7"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "rgba(1, 86, 47, 1)"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # BLiP
 
 ## Overview
 
-BLiP BLiP — tokens read from https://github.com/takenet/blip-ds.
+BLiP — tokens read from https://github.com/takenet/blip-ds.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +175,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00c6d7` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Nunito Sans` across 8 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

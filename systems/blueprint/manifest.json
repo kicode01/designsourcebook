@@ -1,22 +1,23 @@
 {
   "name": "blueprint",
   "displayName": "Blueprint",
-  "description": "Blueprint Blueprint — tokens read from https://github.com/palantir/blueprint.",
-  "style": "Blueprint Blueprint — tokens read from https://github.com/palantir/blueprint.",
+  "description": "Blueprint — tokens read from https://github.com/palantir/blueprint.",
+  "style": "Crisp light (#ffffff) canvas, monospace typography, #FF9980 brand accent, and 3px corner geometry",
   "category": "Blueprint",
-  "org": "Blueprint",
+  "org": "Palantir",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "blueprint"
+    "blueprint",
+    "light"
   ],
   "homepage": "https://github.com/palantir/blueprint",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/palantir/blueprint — 7 token files, 113 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/palantir/blueprint"
+    "repo": "https://github.com/palantir/blueprint",
+    "package": "@blueprintjs/core"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,29 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 8,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 14,
+    "stars": 22214,
+    "forks": 2376,
+    "npmDownloads": 1452068,
+    "score": 49543,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 2
   }
 }

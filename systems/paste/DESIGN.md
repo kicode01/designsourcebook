@@ -93,7 +93,111 @@ colors:
   palette-gray-110: "#0D131C"
   palette-purple-60: "#6d2ed1"
   palette-purple-50: "#8c5bd8"
-  primary: "rgb(31, 48, 76)"
+  primary: "rgb(106, 221, 178)"
+typography:
+  font-size-110:
+    fontSize: 3rem
+  font-size-100:
+    fontSize: 2.5rem
+  font-size-90:
+    fontSize: 2rem
+  font-size-80:
+    fontSize: 1.75rem
+  font-size-70:
+    fontSize: 1.5rem
+  font-size-60:
+    fontSize: 1.25rem
+  font-size-50:
+    fontSize: 1.125rem
+  font-size-40:
+    fontSize: 1rem
+  font-size-30:
+    fontSize: 0.875rem
+  font-size-20:
+    fontSize: 0.75rem
+  font-size-10:
+    fontSize: 0.625rem
+  font-size-display-30:
+    fontSize: 4rem
+  font-size-display-20:
+    fontSize: 3rem
+  font-size-display-10:
+    fontSize: 2rem
+  font-size-base:
+    fontSize: "100%"
+  font-family-text:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+  font-family-code:
+    fontFamily: "TwilioSansMono, Courier, monospace"
+  font-family-text-japanese:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", \"メイリオ\", Meiryo, Osaka, \"MS PGothic\", sans-serif"
+  font-family-text-korean:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif"
+  font-family-text-chinese-traditional:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif"
+  font-family-text-chinese-simplified:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Microsoft YaHei New\", \"微软雅黑\", \"Microsoft Yahei\", \"Microsoft JhengHei\", \"宋体\", SimSun, sans-serif"
+  font-family-display:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+  font-family-10:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+  font-family-20:
+    fontFamily: "TwilioSansMono, Courier, monospace"
+  font-family-30:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", \"メイリオ\", Meiryo, Osaka, \"MS PGothic\", sans-serif"
+  font-family-40:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif"
+  font-family-50:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif"
+  font-family-60:
+    fontFamily: "\"Inter var experimental\", \"Inter var\", \"Microsoft YaHei New\", \"微软雅黑\", \"Microsoft Yahei\", \"Microsoft JhengHei\", \"宋体\", SimSun, sans-serif"
+  original-value:
+    fontSize: "100%"
+  font-family-70:
+    fontFamily: "TwilioSansText, \"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+  font-family-80:
+    fontFamily: "TwilioSansDisplay, \"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+components:
+  button-primary:
+    backgroundColor: "rgb(106, 221, 178)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "rgb(219, 19, 42)"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "rgb(106, 221, 178)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "rgb(20, 176, 83)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Paste
@@ -102,12 +206,19 @@ colors:
 
 Twilio Paste — the design system for Twilio's console.
 
-Tokens were read from `@twilio-paste/design-tokens@10.15.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@twilio-paste/design-tokens@10.15.0`, not from a marketing site: 91 colour tokens and 31 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `"Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`, `TwilioSansMono, Courier, monospace`, `"Inter var experimental", "Inter var", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS PGothic", sans-serif`, `"Inter var experimental", "Inter var", "Microsoft JhengHei", "微軟正黑體", "Microsoft JhengHei UI", "Microsoft YaHei", "微軟雅黑", "宋体", SimSun, sans-serif`, `"Inter var experimental", "Inter var", "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Microsoft JhengHei", "宋体", SimSun, sans-serif`, `TwilioSansText, "Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`, `TwilioSansDisplay, "Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(106, 221, 178)` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter var experimental` across 31 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

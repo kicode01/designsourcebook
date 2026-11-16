@@ -8,8 +8,8 @@
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "atlassian"
+    "atlassian",
+    "dark"
   ],
   "homepage": "https://atlassian.design/components/tokens",
   "license": "Apache-2.0",
@@ -18,7 +18,8 @@
   "source": {
     "package": "@atlaskit/tokens",
     "version": "20.12.0",
-    "extra": []
+    "extra": [],
+    "repo": "https://bitbucket.org/atlassian/atlassian-frontend-mirror"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -28,8 +29,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 14,
-    "components": 0
+    "typography": 13,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -39,5 +40,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 139,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 8826399,
+    "score": 100222,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 10
   }
 }

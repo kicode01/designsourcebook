@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Flowbite Design System
-description: "Flowbite Flowbite Design System — tokens read from https://github.com/themesberg/flowbite."
+description: "Crisp light (#fff) canvas, Inter typography, #79b8ff brand accent, and 8px corner geometry"
 colors:
   color-shiki-fg-brand: "#79b8ff"
   color-shiki-fg-brand-subtle: "#9ecbff"
@@ -94,13 +94,61 @@ colors:
   purple-400: "#AC94FA"
   purple-500: "#9061F9"
   primary: "#79b8ff"
+typography:
+  font-sans:
+    fontFamily: "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif"
+  font-body:
+    fontFamily: "Inter, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif"
+  font-mono:
+    fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+components:
+  button-primary:
+    backgroundColor: "#79b8ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#F05252"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#79b8ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#057A55"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Flowbite Design System
 
 ## Overview
 
-Flowbite Flowbite Design System — tokens read from https://github.com/themesberg/flowbite.
+Flowbite Design System — tokens read from https://github.com/themesberg/flowbite.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +159,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#79b8ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 3 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

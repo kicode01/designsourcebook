@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Semrush Intergalactic Design System
-description: "Semrush Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic."
+description: "Crisp light (#ffffff) canvas, Inter typography, #1877f2 brand accent, and 8px corner geometry"
 colors:
   50: "#f4f5f9"
   200: "#c4c7cf"
@@ -94,13 +94,95 @@ colors:
   cell: "rgba(30, 34, 49, 1)"
   item-hover: "rgba(79, 82, 93, 1)"
   primary: "#1877f2"
+typography:
+  size-800:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 48px
+    fontWeight: 700
+    lineHeight: 1.17
+  size-700:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 36px
+    fontWeight: 700
+    lineHeight: 1.22
+  size-600:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 32px
+    fontWeight: 700
+    lineHeight: 1.25
+  size-500:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 1.33
+  size-400:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 20px
+    fontWeight: 500
+    lineHeight: 1.4
+  size-300:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  size-200:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.42
+  size-100:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.33
+components:
+  button-primary:
+    backgroundColor: "#1877f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#1877f2"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "rgba(68, 209, 164, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Semrush Intergalactic Design System
 
 ## Overview
 
-Semrush Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic.
+Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +193,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1877f2` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 8 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

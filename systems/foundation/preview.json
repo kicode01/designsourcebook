@@ -1,12 +1,12 @@
 {
-  "canvas": "#0a0a0a",
-  "surface": "#0a0a0a",
-  "text": "#f7f7f8",
-  "muted": "#f7f7f8",
+  "canvas": "#fefefe",
+  "surface": "#fefefe",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
   "brand": "#1779ba",
-  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "0",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "primary-color",
@@ -29,26 +29,6 @@
       "value": "#cc4b37"
     },
     {
-      "name": "primary",
-      "value": "#1779ba"
-    },
-    {
-      "name": "secondary",
-      "value": "#767676"
-    },
-    {
-      "name": "success",
-      "value": "#3adb76"
-    },
-    {
-      "name": "warning",
-      "value": "#ffae00"
-    },
-    {
-      "name": "alert",
-      "value": "#cc4b37"
-    },
-    {
       "name": "light-gray",
       "value": "#e6e6e6"
     },
@@ -67,42 +47,110 @@
     {
       "name": "white",
       "value": "#fefefe"
+    },
+    {
+      "name": "primary",
+      "value": "#1779ba"
+    },
+    {
+      "name": "secondary",
+      "value": "#767676"
+    },
+    {
+      "name": "success",
+      "value": "#3adb76"
+    },
+    {
+      "name": "warning",
+      "value": "#ffae00"
+    },
+    {
+      "name": "alert",
+      "value": "#cc4b37"
     }
   ],
   "type": [
     {
       "name": "stat-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "2.5rem !default",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "2.5rem",
       "px": 40
     },
     {
+      "name": "h1",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "lead",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "125%",
+      "px": 20,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "global-font-size",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "body-font-family",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
       "name": "dropdown-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
-      "name": "font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem,\n  $switch-height: 2rem,\n  $paddle-offset: 0.25rem\n) {\n\n  $switch-width: $switch-height * 2",
+      "name": "font-family-monospace",
+      "fontFamily": "Consolas, \"Liberation Mono\", Courier, monospace",
       "px": 16
     },
     {
       "name": "font-size-temp",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "label-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
       "fontSize": "0.8rem",
       "px": 12.8
     },
     {
+      "name": "small-font-size",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "80%",
+      "px": 12.8
+    },
+    {
+      "name": "accordion-title",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "lineHeight": 1
+    },
+    {
       "name": "badge-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif",
       "fontSize": "0.6rem",
       "px": 9.6
     }
@@ -117,14 +165,8 @@
       "border": "1px solid #e6e6e6"
     },
     {
-      "key": "tabs",
-      "kind": "tabs",
-      "backgroundColor": "#fefefe",
-      "border": "1px solid #e6e6e6"
-    },
-    {
       "key": "label",
-      "kind": "label",
+      "kind": "badge",
       "backgroundColor": "#1779ba",
       "textColor": "#fefefe",
       "rounded": "0",
@@ -149,12 +191,17 @@
     },
     {
       "key": "callout",
-      "kind": "alert",
+      "kind": "card",
       "backgroundColor": "rgb(254.85, 254.85, 254.85)",
       "textColor": "#0a0a0a",
       "rounded": "0",
       "padding": "1rem",
       "border": "1px solid rgba(10, 10, 10, 0.25)"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#8a8a8a"
     },
     {
       "key": "card-divider-2",
@@ -163,11 +210,9 @@
       "padding": "1rem"
     },
     {
-      "key": "tabs-content-2",
-      "kind": "tabs",
-      "backgroundColor": "#fefefe",
-      "textColor": "#0a0a0a",
-      "border": "1px solid #e6e6e6"
+      "key": "is-invalid-label-2",
+      "kind": "badge",
+      "textColor": "#cc4b37"
     },
     {
       "key": "input-group-label",
@@ -176,8 +221,16 @@
       "textColor": "#0a0a0a",
       "padding": "0 1rem",
       "border": "1px solid #cacaca"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#0a0a0a",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 16px"
     }
   ],
-  "overview": "undefined",
-  "dos": ""
+  "overview": "Foundation — responsive front-end framework by ZURB.",
+  "dos": "- **Surface & Theme Polarity**: Dark (#0a0a0a) canvas paired with `#0a0a0a` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1779ba` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Helvetica Neue` across 14 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

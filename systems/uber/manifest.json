@@ -4,12 +4,12 @@
   "description": "Bold black and white, tight type, urban energy",
   "style": "Bold black and white, tight type, urban energy",
   "category": "Enterprise & Consumer",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "bold",
     "enterprise",
     "consumer",
-    "dark"
+    "light"
   ],
   "homepage": "https://uber.com",
   "license": "proprietary",
@@ -24,7 +24,7 @@
   "tokens": {
     "colors": 15,
     "typography": 9,
-    "components": 4
+    "components": 9
   },
   "checks": {
     "errors": 0,
@@ -34,5 +34,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/uber/baseweb",
+    "package": "baseui"
+  },
+  "popularity": {
+    "rank": 28,
+    "stars": 9028,
+    "forks": 882,
+    "npmDownloads": 0,
+    "score": 9028,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

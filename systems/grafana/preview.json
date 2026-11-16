@@ -5,7 +5,7 @@
   "muted": "#f7f7f8",
   "brand": "rgba(247, 149, 32, 1)",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#f7f7f8",
   "palette": [
     {
@@ -69,8 +69,90 @@
       "value": "rgba(247, 149, 32, 1)"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "undefined",
-  "dos": ""
+  "type": [
+    {
+      "name": "font-sans",
+      "fontFamily": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "\"Roboto Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "80%",
+      "px": 12.8
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "rgba(247, 149, 32, 1)",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#00008b",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#00008b",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgba(247, 149, 32, 1)",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#00008b",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Grafana Saga — Dark observability dashboard, Inter + Roboto Mono telemetry and high-contrast alerts",
+  "dos": "- **Surface & Theme Polarity**: Dark (#00008b) canvas paired with `#00008b` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(247, 149, 32, 1)` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Inter` across 3 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

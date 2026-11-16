@@ -376,103 +376,163 @@
   "type": [
     {
       "name": "sb-h1-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "40px",
       "px": 40
     },
     {
       "name": "font-size-60",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "30px",
       "px": 30
     },
     {
       "name": "sb-h2-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "28px",
       "px": 28
     },
     {
       "name": "font-size-50",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "24px",
       "px": 24
     },
     {
       "name": "font-size-40",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "18px",
       "px": 18
     },
     {
       "name": "sb-h3-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "18px",
       "px": 18
     },
     {
       "name": "font-size-30",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "font-family",
-      "fontFamily": "Figtree, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "px": 16
     },
     {
       "name": "title-font-family",
-      "fontFamily": "Poppins, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "h1-font-family",
-      "fontFamily": "var(--title-font-family)",
+      "fontFamily": "Poppins, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "px": 16
     },
     {
       "name": "sb-text-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "sb-font-family",
-      "fontFamily": "Figtree', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "px": 16
     },
     {
       "name": "sb-title-font-family",
-      "fontFamily": "Poppins', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif",
+      "fontFamily": "Poppins, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "px": 16
     },
     {
       "name": "font-size-10",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "font-size-20",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "sb-small-text-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "font-size-avatar-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif",
       "fontSize": "12px",
       "px": 12
     }
   ],
-  "components": [],
-  "overview": "Vibe Vibe — tokens read from https://github.com/mondaycom/vibe.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0073ea",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#d83a52",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0073ea",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#00854d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Vibe — Crisp light (#ffffff) canvas, Figtree typography, #0073ea brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0073ea` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Figtree` across 16 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

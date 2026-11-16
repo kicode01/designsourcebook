@@ -4,13 +4,12 @@
   "description": "Vibrant green on dark, bold type, album-art-driven",
   "style": "Vibrant green on dark, bold type, album-art-driven",
   "category": "Enterprise & Consumer",
-  "theme": "light",
+  "theme": "dark",
   "tags": [
-    "dark",
     "bold",
     "enterprise",
     "consumer",
-    "light"
+    "dark"
   ],
   "homepage": "https://spotify.com",
   "license": "proprietary",
@@ -25,7 +24,7 @@
   "tokens": {
     "colors": 22,
     "typography": 14,
-    "components": 5
+    "components": 10
   },
   "checks": {
     "errors": 0,
@@ -35,5 +34,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/backstage/backstage",
+    "package": "@backstage/core-components"
+  },
+  "popularity": {
+    "rank": 9,
+    "stars": 34863,
+    "forks": 7767,
+    "npmDownloads": 0,
+    "score": 34863,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,0 +1,185 @@
+{
+  "canvas": "#f6f9fc",
+  "surface": "#f6f9fc",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff8300",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "tree-node-background-hover",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "sb-sidebar-bottom-card-background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "bg-canvas",
+      "value": "#f6f9fc"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#0e1218"
+    },
+    {
+      "name": "main-bg",
+      "value": "#ecf2fc"
+    },
+    {
+      "name": "main-text",
+      "value": "#5c6570"
+    },
+    {
+      "name": "link-text",
+      "value": "#2e3338"
+    },
+    {
+      "name": "css-border-7",
+      "value": "rgba(38, 74, 115, 0.15)"
+    },
+    {
+      "name": "css-surface-8",
+      "value": "rgba(125, 82, 255, 0.15)"
+    },
+    {
+      "name": "css-surface-9",
+      "value": "#eef4f9"
+    },
+    {
+      "name": "css-color-10",
+      "value": "#7d52ff"
+    },
+    {
+      "name": "css-surface-11",
+      "value": "rgba(125, 82, 255, 0.14)"
+    },
+    {
+      "name": "css-surface-12",
+      "value": "#dbecff"
+    },
+    {
+      "name": "css-surface-13",
+      "value": "#a1a7b0"
+    },
+    {
+      "name": "css-border-14",
+      "value": "#646464"
+    },
+    {
+      "name": "css-color-15",
+      "value": "#ff8300"
+    },
+    {
+      "name": "css-color-16",
+      "value": "#2a0481"
+    },
+    {
+      "name": "css-surface-17",
+      "value": "rgba(125, 82, 255, 0.07)"
+    },
+    {
+      "name": "css-color-18",
+      "value": "#571fff"
+    },
+    {
+      "name": "primary",
+      "value": "#ff8300"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "dana, tahoma, Arial, Helvetica, sans-serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400
+    },
+    {
+      "name": "h2",
+      "fontFamily": "dana, tahoma, Arial, Helvetica, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400
+    },
+    {
+      "name": "header",
+      "fontFamily": "dana, tahoma, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "nav",
+      "fontFamily": "dana, tahoma, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "button",
+      "fontFamily": "dana, tahoma, Arial, Helvetica, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 1
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "textColor": "#5c6570",
+      "rounded": "4px",
+      "padding": "0px 9px"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#0e1218",
+      "rounded": "4px",
+      "padding": "5px 6px 4px 8px"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#0e1218"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#f6f9fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff8300",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#f6f9fc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "JB Design System — Crisp light (#f6f9fc) canvas, dana typography, #ff8300 brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#f6f9fc) canvas paired with `#f6f9fc` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8300` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `dana` across 5 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

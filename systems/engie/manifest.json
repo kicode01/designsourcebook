@@ -1,22 +1,24 @@
 {
   "name": "engie",
   "displayName": "ENGIE Fluid Design System",
-  "description": "ENGIE ENGIE Fluid Design System — read from www.engie.design's live stylesheets, not a published token package.",
-  "style": "ENGIE ENGIE Fluid Design System — read from www.engie.design's live stylesheets, not a published token package.",
+  "description": "ENGIE Fluid Design System — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#fff) canvas, Lato typography, #3c8dd6 brand accent, and sharp 0px geometry",
   "category": "ENGIE",
   "org": "ENGIE",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "engie"
+    "observed",
+    "engie",
+    "light"
   ],
   "homepage": "https://www.engie.design",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Colours read from https://www.engie.design and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "provenanceNote": "Computed styles read from https://www.engie.design in headless Chromium on 2026-11-16 (1651 custom properties, 60 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: ENGIE Design · Discover our vision of design at ENGIE by using the Service desig.",
   "source": {
-    "repo": null
+    "url": "https://www.engie.design",
+    "repo": "https://github.com/engie-group/fluid-design-system",
+    "package": "@engie-group/fluid-design-tokens"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +28,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 6,
-    "components": 0
+    "typography": 64,
+    "components": 16
   },
   "checks": {
     "errors": 0,
@@ -37,5 +39,20 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 144,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 11496,
+    "score": 839,
+    "frameworks": [
+      "react",
+      "angular",
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

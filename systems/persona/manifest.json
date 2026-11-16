@@ -1,16 +1,16 @@
 {
   "name": "persona",
   "displayName": "Persona Design System",
-  "description": "Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system.",
-  "style": "Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system.",
+  "description": "Persona Design System — tokens read from https://github.com/privy-open-source/design-system.",
+  "style": "Dark (#408bdd) canvas, system-ui typography, #0060df brand accent, and 8px corner geometry",
   "category": "Persona",
   "org": "Persona",
   "theme": "light",
   "tags": [
     "published",
-    "light",
     "persona",
-    "open-source"
+    "open-source",
+    "light"
   ],
   "homepage": "https://github.com/privy-open-source/design-system",
   "license": "see repository",
@@ -27,8 +27,8 @@
   ],
   "tokens": {
     "colors": 88,
-    "typography": 7,
-    "components": 0
+    "typography": 6,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -38,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 114,
+    "stars": 68,
+    "forks": 23,
+    "npmDownloads": 0,
+    "score": 68,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -15,7 +15,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { collectTokens, buildSystem, writeSystem, recordFailure } from "../lib/ingest.mjs";
+import { collectTokens, buildSystem, writeSystem, recordFailure, formatTitle } from "../lib/ingest.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -60,7 +60,8 @@ async function main() {
     const why = `could not fetch the page: ${err.message}`;
     console.error(why);
     recordFailure(ROOT, { slug, name, org, source: url, reason: why, kind: "site" });
-    process.exit(1);
+    process.exitCode = 1;
+    return;
   }
 
   const work = path.join(os.tmpdir(), "sourcebook-site", slug);
@@ -76,11 +77,10 @@ async function main() {
     wrote++;
   }
 
-  const hrefs = [...html.matchAll(/<link[^>]+href=["']([^"']+)["']/gi)]
-    .map((m) => m[1])
-    .filter((h) => /\.css(\?|#|$)/i.test(h))
-    .map((h) => resolve(url, h))
-    .filter(Boolean);
+  const hrefs = [...html.matchAll(/<link[^>]+href=["']([^"']+)["'][^>]*>/gi)]
+    .filter((m) => /\.css(\?|#|$)/i.test(m[1]) || /rel=["']?stylesheet["']?/i.test(m[0]))
+    .map((m) => resolve(url, m[1]))
+    .filter((u) => u && !/fonts\.googleapis\.com|fonts\.gstatic\.com|use\.typekit\.net/i.test(u));
 
   const seen = new Set();
   for (const href of hrefs) {
@@ -101,7 +101,8 @@ async function main() {
     const why = "no stylesheets found on the page";
     console.error(why);
     recordFailure(ROOT, { slug, name, org, source: url, reason: why, kind: "site" });
-    process.exit(2);
+    process.exitCode = 2;
+    return;
   }
 
   const { colors, types, components, harvested, usedFiles } = collectTokens(work);
@@ -110,7 +111,8 @@ async function main() {
     const why = `no colour values in ${wrote} stylesheets`;
     console.error(why);
     recordFailure(ROOT, { slug, name, org, source: url, reason: why, kind: "site" });
-    process.exit(2);
+    process.exitCode = 2;
+    return;
   }
 
   const host = new URL(url).hostname;
@@ -129,7 +131,7 @@ async function main() {
     slug,
     name,
     org,
-    note: `${org ? org + " " : ""}${name} — read from ${host}'s live stylesheets, not a published token package.`,
+    note: `${formatTitle(org, name)} — read from ${host}'s live stylesheets, not a published token package.`,
     colors,
     types,
     components,
@@ -143,7 +145,8 @@ async function main() {
     const why = `only ${built.preview.palette.length} colour tokens extracted — below the 12 needed to represent a system`;
     console.error(why);
     recordFailure(ROOT, { slug, name, org, source: url, reason: why, kind: "site" });
-    process.exit(3);
+    process.exitCode = 3;
+    return;
   }
 
   writeSystem(ROOT, slug, built);

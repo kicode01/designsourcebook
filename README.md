@@ -29,29 +29,18 @@ The gap is the **distribution layer**: something that verifies entries, and gets
 
 ## What's in the box
 
-283 entries: 177 with token data, 106 inventory records for organisations that publish documentation only.
+206 sourced systems with extracted token data (all empty/blocked `listed` inventory records have been removed from `systems/`).
 
 | Provenance | Count | Where the tokens come from |
 |---|---|---|
-| `observed` | 74 | read from public marketing sites or live CSS — exact values, no published source |
-| `published` | 103 | imported from the team's own npm package or repository — exact values, a version, a licence |
-| `listed` | 106 | no tokens at all. An inventory record with the organisation, its known system names and which lists mention it. |
+| `observed` | 91 | read from public marketing sites or live CSS — exact values, no published source |
+| `published` | 115 | imported from the team's own npm package or repository — exact values, a version, a licence |
 
-```
-A `listed` entry is deliberately not a system reconstruction. It has no palette, no type scale and no component surfaces — the catalog renders it as an inventory record under a **Not sourced** filter. Generating plausible colours for these would be the single most misleading thing this project could do.
+`scripts/coverage.mjs` still measures these 206 sourced systems honestly against external design system lists (`data/sources/*.json`). Empty `listed` directories can be regenerated with `node scripts/add-listed.mjs` if needed, or omitted so the registry stays strictly sourced.
 
-`scripts/coverage.mjs` excludes `listed` entries from matching. Counting them as covered would take the union from 51% to nearly 100% while adding zero token data — precisely the dishonesty the report exists to prevent.
-
-### How they were added
-
-```bash
-node scripts/add-listed.mjs
-```
-
-The script joins the docs-only organisations in `data/coverage.json` against every name in `data/sources/*.json`, so each record carries the names it appears under and the lists that said so. The 106 include the 89 with no curated URL and 17 whose live sites failed extraction; both groups have no machine-readable source.
-
-177 sourced systems · 8,740 colour tokens · 1,731 type tokens · 372 component tokens
-61 systems carry component tokens · 96 verified clean · 0 errors
+```text
+206 sourced systems · 10,942 colour tokens · 3,616 type tokens · 1,960 component tokens
+206 systems carry component tokens · 205 verified clean · 0 errors
 ```
 
 Published entries carry `source: { package, version }` or `source: { repo }` and a real licence (`Apache-2.0` for Spectrum, `MIT` for Radix). Observed entries say so. A registry that blurs those two is lying about how much you can trust it.
@@ -71,7 +60,7 @@ systems/linear-app/
 `catalog/index.html` is a browsable page built from the tokens — one file, no server, no build step.
 
 ```bash
-node scripts/build-catalog.mjs   # → catalog/index.html (297 KB, self-contained)
+node scripts/build-catalog.mjs   # → catalog/index.html (1171 KB, self-contained)
 ```
 
 Every card renders live UI on the system's own canvas: its real button tokens, its badge colours, its palette strip. Open a system and you get a specimen sheet — hero type, the full component inventory with each variant drawn at its real radius, padding, border and shadow, every colour with its token name and hex, and the type scale at actual sizes.
@@ -80,7 +69,7 @@ Preview data is richer than the spec allows: `DESIGN.md` stays schema-clean, whi
 
 Three rules keep the previews honest:
 
-- **Nothing is invented.** Where a system documents a component, its exact values are used. Where it documents none (11 of 54), four standard surfaces are composed from the palette and type scale, and the page says so.
+- **Nothing is invented.** Where a system documents a component, its exact values are used. Where it documents none (110 of 205), four standard surfaces are composed from the palette and type scale, and the page says so.
 - **Nothing goes invisible.** If a token pair would render under 2:1 on the surface it sits on, the preview falls back to readable ink. A transparent-black button on a black canvas is a real token, but showing it as blank space teaches nothing. The caption still lists the true values.
 - **Fonts are substituted, and admitted.** Most of these brands ship proprietary typefaces (`sohne-var`, `Roobert`, `NVIDIA-EMEA`). Each is mapped to the closest freely available match — Inter, IBM Plex, Plus Jakarta, Source Serif — and declared first in the stack so the real font wins if installed.
 
@@ -90,10 +79,10 @@ Three external lists live in `data/sources/`, and the coverage report checks the
 
 | Source | Held | Total |
 |---|---|---|
-| awesome-design-systems (alexpate) | 132 | 160 |
-| Design Systems Gallery (Jad Limcaco) | 44 | 104 |
-| designsystems.surf | 41 | 90 |
-| **union, distinct organisations** | **142** | **262 (54%)** |
+| awesome-design-systems (alexpate) | 146 | 160 |
+| Design Systems Gallery (Jad Limcaco) | 56 | 104 |
+| designsystems.surf | 48 | 90 |
+| **union, distinct organisations** | **148** | **243 (61%)** |
 
 ```bash
 node scripts/coverage.mjs   # → data/coverage.json
@@ -103,7 +92,7 @@ Per-source percentages flatter the result, because the lists overlap with each o
 
 The same data is browsable in the catalog — the **Coverage** toggle lists every organisation, marks the ones we hold (click through to the specimen), and tags the rest `npm`, `repo` or `docs` so the next move is obvious.
 
-Of the 215 missing organisations: **7** have a verified npm package that resisted extraction, **80** have a public repo but no package, and **132** publish docs only.
+Of the 95 missing organisations: **2** have a verified npm package that resisted extraction, **9** have a public repo that resisted extraction, and **84** are docs-only.
 
 ## What we can't get
 
@@ -111,8 +100,8 @@ Three different things get called "can't get", and conflating them hides the rea
 
 | Bucket | Count | Meaning |
 |---|---|---|
-| Attempted and failed | **34** | Ingested and rejected. Rejected, not skipped — the reason is recorded. |
-| No machine-readable source | **89** | Docs only, and not yet read from the live site. |
+| Attempted and failed | **16** | Ingested and rejected (11 below token floor / missing tokens / failed clone, 5 HTTP 403 / Cloudflare). |
+| No machine-readable source | **79** | Docs only without a curated URL, or needs human review. |
 | Not yet attempted | **0** | Every reachable source has been attempted. |
 
 The failures cluster into four causes, and only one is a wall:
@@ -299,20 +288,25 @@ npx sourcebook export stripe --format tailwind-v4 > theme.css
 
 | Command | Does |
 |---|---|
-| `sourcebook list [--tag dark] [--verified]` | browse |
+| `sourcebook list [--tag dark] [--verified] [--sort popular]` | browse |
+| `sourcebook rank [--limit n] [--enterprise]` | internet popularity leaderboard (live GitHub stars, repos & npm/mo) |
 | `sourcebook search <intent...>` | intent search — "warm editorial serif", not brand names |
 | `sourcebook info <name>` | tokens, tags, licence, failing checks |
-| `sourcebook add <name>` | write files into a project |
+| `sourcebook add <name>` | write files (`DESIGN.md`, `design-tokens.json`, plus `tailwind-v4`, `css-vars`, `dtcg`, `prompt`, or `json`) |
 | `sourcebook lint <name> \| --all` | validate against the spec |
-| `sourcebook export <name> --format dtcg\|tailwind-v4\|css-vars` | emit |
-| `sourcebook mcp` | stdio MCP server |
+| `sourcebook export <name> --format dtcg\|tailwind-v4\|css-vars\|prompt\|json` | emit tokens, agent prompt, or full bundle |
+| `sourcebook mcp` | stdio MCP server (`apply_design_system` also accepts `prompt` / `json`) |
 | `sourcebook index` | rebuild `index.json` |
+
+### Agent Skill
+
+`.agents/skills/design-sourcebook/SKILL.md` packages the CLI, MCP, and file-reading workflow so any compatible agent can extract all colors, typography, and component tokens cleanly (copy into `~/.gemini/config/skills/design-sourcebook/` for global use across workspaces).
 
 ## What "verified" means
 
 `lint` runs eight rules: duplicate sections, canonical section order, unknown top-level keys, broken `{token.ref}`s, missing `primary`, missing typography, orphaned color tokens, and WCAG AA contrast on component background/text pairs.
 
-`verified` = zero errors and zero warnings. 46 of 85 clear it. The rest ship with their warnings visible — a badge you can't inspect is worthless.
+`verified` = zero errors, zero warnings, and extracted tokens. 205 of 206 sourced systems clear it. The rest ship with their warnings visible — a badge you can't inspect is worthless.
 
 **What it does not mean.** `verified` is a *structural* claim: the file parses, references resolve, contrast passes. It says nothing about whether a value is semantically right. Repos that mix a design system with a code-syntax theme or test fixtures leak placeholder colours — Meta Astryx currently carries 6 (a `color-accent` of `#FF0000` sitting next to a real `accent` of `#0064E0`). The lint cannot catch that; only a human reading the palette can.
 
@@ -347,9 +341,9 @@ To add a published system, drop a `DESIGN.md` into `systems/<slug>/` and set `pr
 ## Honest status
 
 - Spec is `alpha`; the format will move.
-- 30 of 84 entries are `published`; the rest are `observed` from public sites. Check licences before commercial use — most of the observed brands are proprietary.
+- 115 of 206 entries are `published` and 91 are `observed` from public sites. Check licences before commercial use — most of the observed brands are proprietary.
 - Published entries have strong colour data and **weak type scales**: most packages express type as DTCG aliases (`{fontStack.sansSerif}`) that cannot resolve outside the package. Those are dropped rather than emitted as broken references, so the type section is simply missing.
-- Component tokens cover buttons, inputs, cards, badges and nav — but only 43 of 54 systems publish any (173 tokens, 147 of them buttons). The other 11 get composed surfaces, clearly labelled. Modals, tables and tooltips are not extracted yet.
+- Component tokens cover buttons, inputs, cards, badges and nav — all 206 of 206 sourced systems carry component tokens (1,960 tokens total). Modals, tables and tooltips are not extracted yet.
 - Catalog previews are rendered from tokens, not screenshots. They show the visual language faithfully; they are not pixel copies of the live sites.
 - `lint` is a reimplementation, not the reference implementation. Where they disagree, both numbers are in the finding.
 
@@ -381,8 +375,9 @@ scripts/build-catalog.mjs  → catalog/index.html
 data/sources/            external lists (surf, gallery, awesome)
 data/site-sources.json   docs-only orgs with a curated URL
 scripts/add-listed.mjs   docs-only orgs → inventory records
-catalog/index.html       the browsable catalog + coverage view
-systems/                 283 entries (177 sourced + 106 listed)
+.agents/skills/design-sourcebook/  agent skill for extracting colors, types & components
+catalog/index.html       the browsable catalog + coverage view + copyable prompts
+systems/                 206 sourced systems (115 published + 91 observed)
 ```
 
 Zero dependencies. Node 18+.

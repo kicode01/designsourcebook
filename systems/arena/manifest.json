@@ -2,14 +2,14 @@
   "name": "arena",
   "displayName": "Arena",
   "description": "Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena.",
-  "style": "Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena.",
+  "style": "Crisp light (#f0eee6) canvas, Spline Sans typography, #b52a20 brand accent, and 8px corner geometry",
   "category": "Dravensoft",
   "org": "Dravensoft",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "published",
-    "dark",
-    "dravensoft"
+    "dravensoft",
+    "light"
   ],
   "homepage": "https://github.com/dravensoft-dev/arena",
   "license": "see repository",
@@ -26,8 +26,8 @@
   ],
   "tokens": {
     "colors": 88,
-    "typography": 2,
-    "components": 0
+    "typography": 5,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 137,
+    "stars": 2,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 2,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,15 +1,15 @@
 {
   "name": "grafana",
-  "displayName": "Grafana UI",
-  "description": "undefined",
-  "style": "undefined",
+  "displayName": "Grafana Saga",
+  "description": "Grafana Saga — tokens imported from @grafana/ui.",
+  "style": "Dark observability dashboard, Inter + Roboto Mono telemetry and high-contrast alerts",
   "category": "Grafana",
   "org": "Grafana",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "grafana"
+    "grafana",
+    "dark"
   ],
   "homepage": "",
   "license": "Apache-2.0",
@@ -17,7 +17,8 @@
   "provenanceNote": "Tokens imported from @grafana/ui@13.3.1 (10 token files, 19 colours harvested, 14 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@grafana/ui",
-    "version": "13.3.1"
+    "version": "13.3.1",
+    "repo": "https://github.com/grafana/grafana"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,16 +28,28 @@
   ],
   "tokens": {
     "colors": 15,
-    "typography": 0,
-    "components": 0
+    "typography": 3,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 5,
+    "stars": 77942,
+    "forks": 14987,
+    "npmDownloads": 510203,
+    "score": 90812,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

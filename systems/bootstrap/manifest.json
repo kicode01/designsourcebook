@@ -1,0 +1,57 @@
+{
+  "name": "bootstrap",
+  "displayName": "Bootstrap",
+  "description": "Bootstrap — tokens imported from bootstrap.",
+  "style": "Foundational responsive web toolkit, semantic six-color utility palette",
+  "category": "Bootstrap",
+  "org": "Bootstrap",
+  "theme": "light",
+  "tags": [
+    "published",
+    "bootstrap",
+    "light"
+  ],
+  "homepage": "https://getbootstrap.com/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from bootstrap@5.3.9 (3 token files, 157 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "bootstrap",
+    "version": "5.3.9",
+    "repo": "https://github.com/twbs/bootstrap"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 40,
+    "components": 13
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 1,
+    "stars": 175069,
+    "forks": 79440,
+    "npmDownloads": 29426284,
+    "score": 413570,
+    "frameworks": [
+      "css",
+      "react",
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

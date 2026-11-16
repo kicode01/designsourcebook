@@ -23,86 +23,86 @@ colors:
   primary: "#001e2b"
 typography:
   display-hero:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 96px
     fontWeight: 400
     lineHeight: 1.2
   display-secondary:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 64px
     fontWeight: 400
     lineHeight: 1
   section-heading:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 36px
     fontWeight: 500
     lineHeight: 1.33
   sub-heading:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 24px
     fontWeight: 500
     lineHeight: 1.33
   body-large:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.6
   body:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.33
   body-light:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 16px
     fontWeight: 300
     lineHeight: 1.5
   nav-ui:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.16px
   body-bold:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 15px
     fontWeight: 700
     lineHeight: 1.5
   button:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 13.5px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.135px
   caption:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.71
   small:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 11px
     fontWeight: 600
     lineHeight: 1.82
     letterSpacing: 0.2px
   code-heading:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 40px
     fontWeight: 400
     lineHeight: 1.6
   code-body:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   code-label:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.14
     letterSpacing: 1px
   code-micro:
-    fontFamily: MongoDB Value Serif
+    fontFamily: "\"MongoDB Value Serif\""
     fontSize: 9px
     fontWeight: 600
     lineHeight: 2.67
@@ -110,15 +110,40 @@ typography:
 components:
   button-primary-green:
     backgroundColor: "#00684a"
-    textColor: "#000000"
+    textColor: "#ffffff"
     rounded: 100px
   button-dark-teal:
     backgroundColor: "#1c2d38"
-    textColor: "#5c6c75"
+    textColor: "#ffffff"
     rounded: 100px
   button-outlined:
     textColor: "#001e2b"
     rounded: 4px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 100px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 100px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#001e2b"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 100px
+    padding: 10px 16px
 ---
 
 # Design System: MongoDB

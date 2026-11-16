@@ -22,7 +22,7 @@
   "tokens": {
     "colors": 27,
     "typography": 18,
-    "components": 4
+    "components": 9
   },
   "checks": {
     "errors": 0,
@@ -32,5 +32,22 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/vercel/geist-font",
+    "package": "geist"
+  },
+  "popularity": {
+    "rank": 44,
+    "stars": 3766,
+    "forks": 118,
+    "npmDownloads": 0,
+    "score": 3766,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

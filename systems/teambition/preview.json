@@ -3,13 +3,173 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "brand": "#1B9AEE",
+  "border": "#87D2FF",
+  "radius": "4px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Teambition Clarity Design is published by Teambition, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "primary-brand",
+      "value": "#1B9AEE"
+    },
+    {
+      "name": "highlight-brand",
+      "value": "#F2FBFF"
+    },
+    {
+      "name": "bright-brand",
+      "value": "#CCECFF"
+    },
+    {
+      "name": "border-brand",
+      "value": "#87D2FF"
+    },
+    {
+      "name": "hover-brand",
+      "value": "#0171C2"
+    },
+    {
+      "name": "click-brand",
+      "value": "#004F8A"
+    },
+    {
+      "name": "heavy-brand",
+      "value": "#002E52"
+    },
+    {
+      "name": "bg-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#262626"
+    },
+    {
+      "name": "nav-text",
+      "value": "#595959"
+    },
+    {
+      "name": "nav-text-1",
+      "value": "#383838"
+    },
+    {
+      "name": "footer-text",
+      "value": "rgba(36, 100, 147, 0.4)"
+    },
+    {
+      "name": "body-text",
+      "value": "#a6a6a6"
+    },
+    {
+      "name": "link-text",
+      "value": "#8c8c8c"
+    },
+    {
+      "name": "link-text-2",
+      "value": "#61a6d8"
+    },
+    {
+      "name": "primary",
+      "value": "#1B9AEE"
+    }
+  ],
+  "type": [
+    {
+      "name": "header",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"PingFang SC\", \"Noto Sans\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", \"微软雅黑\", sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "nav",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"PingFang SC\", \"Noto Sans\", \"Noto Sans CJK SC\", \"Microsoft YaHei\", \"微软雅黑\", sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    }
+  ],
+  "components": [
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#262626",
+      "rounded": "4px",
+      "padding": "0px 8px"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#262626"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "40px 48px 48px",
+      "shadow": "rgba(0, 0, 0, 0.06) 0px 2px 8px 0px"
+    },
+    {
+      "key": "card-3",
+      "kind": "card",
+      "textColor": "#a6a6a6"
+    },
+    {
+      "key": "card-4",
+      "kind": "card",
+      "textColor": "#1b9aee"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#1B9AEE",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1B9AEE",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Teambition Clarity Design — Crisp light (#ffffff) canvas, -apple-system typography, #1B9AEE brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1B9AEE` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 2 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

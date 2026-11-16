@@ -64,7 +64,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "48px",
       "px": 48,
       "fontWeight": 500,
@@ -72,7 +72,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "36px",
       "px": 36,
       "fontWeight": 500,
@@ -80,7 +80,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "30px",
       "px": 30,
       "fontWeight": 400,
@@ -88,7 +88,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 400,
@@ -96,7 +96,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -104,7 +104,7 @@
     },
     {
       "name": "body-link",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -112,7 +112,7 @@
     },
     {
       "name": "code-body",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -120,7 +120,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -128,7 +128,7 @@
     },
     {
       "name": "code-caption",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -136,7 +136,7 @@
     },
     {
       "name": "small",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -144,7 +144,7 @@
     },
     {
       "name": "code-small",
-      "fontFamily": "SF Pro Rounded",
+      "fontFamily": "\"SF Pro Rounded\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -176,6 +176,46 @@
       "backgroundColor": "#000000",
       "textColor": "#ffffff",
       "rounded": "9999px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#3b82f6",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "9999px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Ollama's interface is radical minimalism taken to its logical conclusion — a pure-white void where content floats without decoration, shadow, or color. The design philosophy mirrors the product itself: strip away everything unnecessary until only the essential tool remains. This is the digital equivalent of a Dieter Rams object — every pixel earns its place, and the absence of design IS the design.\n\nThe entire page exists in pure grayscale. There is zero chromatic color in the interface — no brand blue, no accent green, no semantic red. The only colors that exist are shades between pure black (#000000) and pure white (#ffffff), creating a monochrome environment that lets the user's mental model of \"open models\" remain uncolored by brand opinion. The Ollama llama mascot, rendered in simple black line art, is the only illustration — and even it's monochrome.\n\nWhat makes Ollama distinctive…",

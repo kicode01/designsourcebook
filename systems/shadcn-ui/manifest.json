@@ -1,22 +1,23 @@
 {
   "name": "shadcn-ui",
   "displayName": "Shadcn/ui",
-  "description": "Shadcn/ui Shadcn/ui — tokens read from https://github.com/shadcn-ui/ui.",
-  "style": "Shadcn/ui Shadcn/ui — tokens read from https://github.com/shadcn-ui/ui.",
+  "description": "Shadcn/ui — tokens read from https://github.com/shadcn-ui/ui.",
+  "style": "Crisp light (#ffffff) canvas, Geist typography, #ff0000 brand accent, and 6px corner geometry",
   "category": "Shadcn/ui",
   "org": "Shadcn/ui",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "shadcn-ui"
+    "shadcn-ui",
+    "light"
   ],
   "homepage": "https://github.com/shadcn-ui/ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/shadcn-ui/ui — 5 token files, 17 colours harvested, 17 selected.",
   "source": {
-    "repo": "https://github.com/shadcn-ui/ui"
+    "repo": "https://github.com/shadcn-ui/ui",
+    "package": "shadcn"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,31 @@
   ],
   "tokens": {
     "colors": 17,
-    "typography": 0,
-    "components": 0
+    "typography": 9,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 2,
+    "stars": 128317,
+    "forks": 11400,
+    "npmDownloads": 0,
+    "score": 128317,
+    "frameworks": [
+      "react",
+      "vue",
+      "svelte",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

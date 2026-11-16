@@ -1,22 +1,23 @@
 {
   "name": "vtex",
   "displayName": "VTEX Styleguide",
-  "description": "VTEX VTEX Styleguide — tokens read from https://github.com/vtex/styleguide.",
-  "style": "VTEX VTEX Styleguide — tokens read from https://github.com/vtex/styleguide.",
+  "description": "VTEX Styleguide — tokens read from https://github.com/vtex/styleguide.",
+  "style": "Crisp light (#FFFFFF) canvas, system-ui typography, #00BBD4 brand accent, and 8px corner geometry",
   "category": "VTEX",
   "org": "VTEX",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "vtex"
+    "vtex",
+    "light"
   ],
   "homepage": "https://github.com/vtex/styleguide",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/vtex/styleguide — 9 token files, 32 colours harvested, 28 selected.",
   "source": {
-    "repo": "https://github.com/vtex/styleguide"
+    "repo": "https://github.com/vtex/styleguide",
+    "package": "vtex-tachyons"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 29,
     "typography": 2,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 104,
+    "stars": 174,
+    "forks": 38,
+    "npmDownloads": 0,
+    "score": 174,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

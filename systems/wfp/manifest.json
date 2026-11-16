@@ -1,0 +1,56 @@
+{
+  "name": "wfp",
+  "displayName": "WFP UI Kit",
+  "description": "World Food Programme WFP UI Kit — tokens imported from @wfp/ui.",
+  "style": "Humanitarian agency UI kit, Open Sans typography and UN/WFP sky-blue actions",
+  "category": "World Food Programme",
+  "org": "World Food Programme",
+  "theme": "light",
+  "tags": [
+    "published",
+    "world-food-programme",
+    "light"
+  ],
+  "homepage": "",
+  "license": "Apache-2",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @wfp/ui@1.22.5 (9 token files, 162 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@wfp/ui",
+    "version": "1.22.5",
+    "repo": "https://github.com/wfp/designsystem"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 29,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 96,
+    "stars": 234,
+    "forks": 99,
+    "npmDownloads": 0,
+    "score": 234,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

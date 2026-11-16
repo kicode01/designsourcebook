@@ -1,22 +1,23 @@
 {
   "name": "evergreen",
   "displayName": "Evergreen",
-  "description": "Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen.",
-  "style": "Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen.",
+  "description": "Evergreen — tokens read from https://github.com/segmentio/evergreen.",
+  "style": "Crisp light (#F9F9FB) canvas, SF Mono typography, #3366FF brand accent, and 8px corner geometry",
   "category": "Evergreen",
   "org": "Evergreen",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "evergreen"
+    "evergreen",
+    "light"
   ],
   "homepage": "https://github.com/segmentio/evergreen",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/segmentio/evergreen — 8 token files, 346 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/segmentio/evergreen"
+    "repo": "https://github.com/segmentio/evergreen",
+    "package": "evergreen-ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 3,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 21,
+    "stars": 12426,
+    "forks": 801,
+    "npmDownloads": 54012,
+    "score": 14981,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 23
   }
 }

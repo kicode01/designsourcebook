@@ -1,12 +1,12 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
-  "text": "#0b0b0c",
-  "muted": "#0b0b0c",
+  "canvas": "#150f23",
+  "surface": "#150f23",
+  "text": "#ffffff",
+  "muted": "#e5e7eb",
   "brand": "#1f1633",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "border": "color-mix(in srgb, #ffffff 14%, transparent)",
   "radius": "8px",
-  "ink": "#0b0b0c",
+  "ink": "#f7f7f8",
   "palette": [
     {
       "name": "brand-deep-purple",
@@ -96,7 +96,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "88px",
       "px": 88,
       "fontWeight": 700,
@@ -104,7 +104,7 @@
     },
     {
       "name": "display-secondary",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "60px",
       "px": 60,
       "fontWeight": 500,
@@ -112,7 +112,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "30px",
       "px": 30,
       "fontWeight": 400,
@@ -120,7 +120,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "27px",
       "px": 27,
       "fontWeight": 500,
@@ -128,7 +128,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 500,
@@ -136,7 +136,7 @@
     },
     {
       "name": "feature-title",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 600,
@@ -144,7 +144,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -152,7 +152,7 @@
     },
     {
       "name": "body-emphasis",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -160,7 +160,7 @@
     },
     {
       "name": "code",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -168,7 +168,7 @@
     },
     {
       "name": "nav-label",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 500,
@@ -176,7 +176,7 @@
     },
     {
       "name": "uppercase-label",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 500,
@@ -184,7 +184,7 @@
     },
     {
       "name": "button-text",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 500,
@@ -193,7 +193,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 500,
@@ -202,7 +202,7 @@
     },
     {
       "name": "small-caption",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 600,
@@ -210,7 +210,7 @@
     },
     {
       "name": "micro-label",
-      "fontFamily": "Dammit Sans",
+      "fontFamily": "\"Dammit Sans\"",
       "fontSize": "10px",
       "px": 10,
       "fontWeight": 600,
@@ -261,6 +261,38 @@
       "rounded": "6px",
       "padding": "8px 12px",
       "border": "1px solid #cfcfdb"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#150f23",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1f1633",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#150f23",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Sentry's website is a dark-mode-first developer tool interface that speaks the language of code editors and terminal windows. The entire aesthetic is rooted in deep purple-black backgrounds (#1f1633, #150f23) that evoke the late-night debugging sessions Sentry was built for. Against this inky canvas, a carefully curated set of purples, pinks, and a distinctive lime-green accent (#c2ef4e) create a visual system that feels simultaneously technical and vibrant.\n\nThe typography pairing is deliberate: \"Dammit Sans\" appears at hero scale (88px, weight 700) as a display font with personality and attitude that matches Sentry's irreverent brand voice (\"Code breaks. Fix it faster.\"), while Rubik serves as the workhorse UI font across all functional text — headings, body, buttons, captions, and navigation. Monaco provides the monospace layer for code snippets and technical content, completing the…",

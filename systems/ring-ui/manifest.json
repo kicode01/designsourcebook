@@ -1,0 +1,56 @@
+{
+  "name": "ring-ui",
+  "displayName": "Ring UI",
+  "description": "JetBrains Ring UI — tokens imported from @jetbrains/ring-ui.",
+  "style": "IDE-grade web component library, JetBrains blue highlights and crisp dense controls",
+  "category": "JetBrains",
+  "org": "JetBrains",
+  "theme": "light",
+  "tags": [
+    "published",
+    "jet-brains",
+    "light"
+  ],
+  "homepage": "https://github.com/JetBrains/ring-ui#readme",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @jetbrains/ring-ui@7.0.133 (5 token files, 59 colours harvested, 54 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@jetbrains/ring-ui",
+    "version": "7.0.133",
+    "repo": "https://github.com/JetBrains/ring-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 55,
+    "typography": 7,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 42,
+    "stars": 3793,
+    "forks": 210,
+    "npmDownloads": 0,
+    "score": 3793,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 12
+  }
+}

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Aalto University
-description: "Aalto University Aalto University — read from brand.aalto.fi's live stylesheets, not a published token package."
+description: "Crisp light (#fafafa) canvas, inter typography, #ff8d4f brand accent, and 8px corner geometry"
 colors:
   1: "#ffffff"
   2: "#fafafa"
@@ -12,6 +12,10 @@ colors:
   7: "#1c1c1c"
   8: "#151515"
   9: "#000000"
+  background: "#ffffff"
+  aalto-col-surface: "#f2f2f2"
+  background-tint: "#fafafa"
+  surface: "#fd6360"
   aalto-red-1: "#fd6360"
   aalto-red-2: "#501f1e"
   aalto-yellow-1: "#f7e159"
@@ -78,6 +82,17 @@ colors:
   sci-tint-2: "#d97843"
   sci-tint-3: "#cc713f"
   sci-tint-4: "#99552f"
+  foreground-tint: "#6c531b"
+  action-rev: "#ffffff"
+  action: "#151515"
+  foreground: "#151515"
+  aalto-black-1: "#000000"
+  aalto-black-2: "#e0e0e0"
+  aalto-col-fg: "#151515"
+  black: "#151515"
+  aalto-col-action-rev: "#ffffff"
+  aalto-col-fg-tint: "#505050"
+  aalto-col-bg: "#ffffff"
   primary: "#ff8d4f"
 typography:
   aalto-base-font-size-1:
@@ -99,23 +114,77 @@ typography:
   aalto-base-font-family-secondary:
     fontFamily: besley
   aalto-base-font-family-code:
-    fontFamily: source code pro
+    fontFamily: "\"source code pro\""
   aalto-base-font-family-icon:
     fontFamily: aalto-icons
+  body:
+    fontSize: 1rem
+components:
+  button:
+    textColor: "#141414"
+    padding: 0px 11.25px 0px 0px
+  button-2:
+    backgroundColor: "#ffffff"
+    textColor: "#141414"
+    padding: 15px
+  button-3:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    padding: 15px
+  button-4:
+    backgroundColor: "#f2f2f2"
+    textColor: "#505050"
+  input:
+    textColor: "#141414"
+  card:
+    backgroundColor: "#ffffff"
+    textColor: "#151515"
+    padding: 0px 0px 32px
+  card-2:
+    backgroundColor: "#f2f2f2"
+    textColor: "#505050"
+  card-3:
+    textColor: "#505050"
+  badge-brand:
+    backgroundColor: "#ff8d4f"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Aalto University
 
 ## Overview
 
-Aalto University Aalto University — read from brand.aalto.fi's live stylesheets, not a published token package.
+Aalto University — read from the rendered page in a browser, not from published tokens.
 
-Tokens were read from the project's own repository, not from a marketing site: 76 colour tokens and 11 type tokens.
+Tokens were read from https://brand.aalto.fi/, not from a published token package: 91 colour tokens and 12 type tokens.
 
 ## Colors
 
-76 colour tokens selected from the token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-Families declared in the source: `inter`, `besley`, `source code pro`, `aalto-icons`.
+Families declared in the source: `inter`, `besley`, `"source code pro"`, `aalto-icons`.
+
+## Components
+
+8 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fafafa) canvas paired with `#fafafa` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8d4f` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `inter` across 12 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

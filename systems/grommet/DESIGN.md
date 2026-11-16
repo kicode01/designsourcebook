@@ -1,37 +1,13 @@
 ---
 version: alpha
 name: Grommet
-description: "HPE Grommet — components and design resources for application UIs."
+description: "Accessible enterprise React framework, signature HPE purple and teal brand accents"
 colors:
-  color: "#FF0000"
-  brand: "#4D4CDB"
-  accent-1: "#6FFFB0"
-  accent-2: "#7FFFB0"
-  accent-3: "#8FFFB0"
-  accent-4: "#9FFFB0"
-  neutral-1: "#10873D"
-  neutral-2: "#20873D"
-  neutral-3: "#30873D"
-  neutral-4: "#40873D"
-  focus: "#000"
-  blue: "#00C8FF"
-  green: "#17EBA0"
-  teal: "#82FFF2"
-  purple: "#694b75"
-  red: "#914049"
-  orange: "#FFBC44"
-  yellow: "#faf6d4"
-  active: "#eecc33"
-  toggle-bg: "#757575"
-  stroke: "#000"
-  custom: "#a35200"
-  border: "#e0e0e0"
-  text: "#444444"
-  text-strong: "#000000"
-  text-weak: "#BBBBBB"
-  border-strong: "#666666"
-  border-weak: "#BBBBBB"
   brand-color: "#7D4CDB"
+  text-dark: "#f8f8f8"
+  text-light: "#444444"
+  icon-dark: "#f8f8f8"
+  icon-light: "#666666"
   critical: "#EB0000"
   error: "#B30000"
   warning: "#C27B00"
@@ -42,43 +18,108 @@ colors:
   placeholder: "#AAAAAA"
   white: "#FFFFFF"
   background-color: "#111111"
+  control-dark: "#FFCA58"
+  control-light: "#403216"
+  drop-background: "#333333"
+  brand: "#FD6FFF"
+  focus: "#FFCA58"
+  background-light: "#ffffff"
+  background-dark: "#000000"
+  colors-background: "#160F1D"
+  colors-background-back: "#000000"
+  colors-background-front: "#160F1D"
+  colors-text-strong: "#FFFFFF"
+  colors-text: "#E4E1E6"
+  colors-text-weak: "#76717A"
+  colors-grey: "#AFACB2"
+  colors-lime: "#C6FC60"
+  colors-pink: "#D856A7"
+  colors-purple: "#7C7EF4"
+  colors-teal: "#73DAFB"
+  colors-yellow: "#EDD063"
+  colors-dark-purple: "#291E40"
+  colors-focus: "#233670"
   background-back: "#000000"
   background-front: "#160F1D"
+  text-strong: "#FFFFFF"
+  text: "#E4E1E6"
+  text-weak: "#76717A"
   grey: "#AFACB2"
   lime: "#C6FC60"
   pink: "#D856A7"
+  purple: "#7C7EF4"
+  teal: "#73DAFB"
+  yellow: "#EDD063"
   dark-purple: "#291E40"
   gradient-mask-color: "#ffffff"
+  stroke: "#000000"
   fill: "#000"
-  hex-value: "#DCD0FF"
-  primary: "#4D4CDB"
+  primary: "#7D4CDB"
 typography:
-  custom-stories-family:
-    fontFamily: monospace
-  custom-edge-control-stories-family:
-    fontFamily: Comic Sans MS
-  all-components-stories-family:
-    fontFamily: monospace
-  basic-stories-family:
-    fontFamily: monospace
-  step-stories-family:
-    fontFamily: monospace
-  vertical-stories-family:
-    fontFamily: monospace
+  font-family:
+    fontFamily: "\"JetBrains Mono\""
+components:
+  button-primary:
+    backgroundColor: "#7D4CDB"
+    textColor: "#f8f8f8"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#B30000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#7D4CDB"
+    textColor: "#f8f8f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Grommet
 
 ## Overview
 
-HPE Grommet — components and design resources for application UIs.
+Hewlett Packard Grommet — tokens imported from grommet.
 
-Tokens were read from `grommet@2.58.0`, not from a marketing site: 49 colour tokens and 6 type tokens.
+Tokens were read from `grommet@2.58.0`, not from a marketing site: 52 colour tokens and 1 type tokens.
 
 ## Colors
 
-49 colour tokens selected from the package's token files, weighted toward semantic roles.
+52 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-Families declared in the package: `monospace`, `Comic Sans MS`.
+Families declared in the source: `"JetBrains Mono"`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#111111) canvas paired with `#000000` component surfaces and `#f8f8f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#7D4CDB` with `#f8f8f8` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `JetBrains Mono` across 1 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

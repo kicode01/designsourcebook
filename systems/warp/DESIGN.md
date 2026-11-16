@@ -19,119 +19,160 @@ colors:
   primary: "#868584"
 typography:
   display-hero:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 80px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "-2.4px"
   section-display:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 56px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "-0.56px"
   section-heading:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 48px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "-0.48px"
   feature-heading:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 40px
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: "-0.4px"
   sub-heading-large:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 36px
     fontWeight: 400
     lineHeight: 1.15
     letterSpacing: "-0.72px"
   card-display:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 42px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0px
   sub-heading:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 32px
     fontWeight: 400
     lineHeight: 1.19
     letterSpacing: 0px
   body-heading:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "-0.72px"
   card-title:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 22px
     fontWeight: 500
     lineHeight: 1.14
     letterSpacing: 0px
   body-large:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: "-0.2px"
   body:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "-0.18px"
   nav-ui:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: 0px
   button-text:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1.2
     letterSpacing: 0px
   caption:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 1.4px
   small-label:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.35
     letterSpacing: 2.4px
   micro:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 11px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: 0px
   code-ui:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0px
   code-body:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "-0.2px"
   ui-supplement:
-    fontFamily: Matter Regular
+    fontFamily: "\"Matter Regular\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: "-0.2px"
+components:
+  button-primary:
+    backgroundColor: "#868584"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#353534"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#353534"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#868584"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#353534"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Warp

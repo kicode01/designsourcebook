@@ -21,8 +21,8 @@ for (const s of sources) {
       "--slug", s.slug,
       "--org", s.org,
       "--name", s.name,
-      "--note", s.note,
     ];
+    if (s.note) args.push("--note", s.note);
     if (s.extra && s.extra.length) args.push("--extra", s.extra.join(","));
 
     const out = execFileSync(process.execPath, args, {

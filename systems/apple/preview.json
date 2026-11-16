@@ -5,7 +5,7 @@
   "muted": "#ffffff",
   "brand": "#000000",
   "border": "color-mix(in srgb, #ffffff 14%, transparent)",
-  "radius": "8px",
+  "radius": "12px",
   "ink": "#f7f7f8",
   "palette": [
     {
@@ -96,7 +96,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "56px",
       "px": 56,
       "fontWeight": 600,
@@ -105,7 +105,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "40px",
       "px": 40,
       "fontWeight": 600,
@@ -113,7 +113,7 @@
     },
     {
       "name": "nav-heading",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "34px",
       "px": 34,
       "fontWeight": 600,
@@ -122,7 +122,7 @@
     },
     {
       "name": "tile-heading",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "28px",
       "px": 28,
       "fontWeight": 400,
@@ -131,7 +131,7 @@
     },
     {
       "name": "sub-nav",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 300,
@@ -139,7 +139,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "21px",
       "px": 21,
       "fontWeight": 700,
@@ -148,7 +148,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "21px",
       "px": 21,
       "fontWeight": 400,
@@ -157,7 +157,7 @@
     },
     {
       "name": "button-large",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 300,
@@ -165,7 +165,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "17px",
       "px": 17,
       "fontWeight": 400,
@@ -174,7 +174,7 @@
     },
     {
       "name": "body-emphasis",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "17px",
       "px": 17,
       "fontWeight": 600,
@@ -183,7 +183,7 @@
     },
     {
       "name": "button",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "17px",
       "px": 17,
       "fontWeight": 400,
@@ -191,7 +191,7 @@
     },
     {
       "name": "link",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -200,7 +200,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -209,7 +209,7 @@
     },
     {
       "name": "caption-bold",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 600,
@@ -218,7 +218,7 @@
     },
     {
       "name": "micro",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -227,7 +227,7 @@
     },
     {
       "name": "micro-bold",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 600,
@@ -236,7 +236,7 @@
     },
     {
       "name": "nano",
-      "fontFamily": "SF Pro Display",
+      "fontFamily": "\"SF Pro Display\"",
       "fontSize": "10px",
       "px": 10,
       "fontWeight": 400,
@@ -282,7 +282,47 @@
       "key": "button-media-control",
       "kind": "button",
       "backgroundColor": "rgba(210, 210, 215, 0.64)",
-      "textColor": "rgba(0, 0, 0, 0.48)"
+      "textColor": "#000000"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#262628",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#262628",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#262628",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Apple's website is a masterclass in controlled drama — vast expanses of pure black and near-white serve as cinematic backdrops for products that are photographed as if they were sculptures in a gallery. The design philosophy is reductive to its core: every pixel exists in service of the product, and the interface itself retreats until it becomes invisible. This is not minimalism as aesthetic preference; it is minimalism as reverence for the object.\n\nThe typography anchors everything. San Francisco (SF Pro Display for large sizes, SF Pro Text for body) is Apple's proprietary typeface, engineered with optical sizing that automatically adjusts letterforms depending on point size. At display sizes (56px), weight 600 with a tight line-height of 1.07 and subtle negative letter-spacing (-0.28px) creates headlines that feel machined rather than typeset — precise, confident, and unapologetically…",

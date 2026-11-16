@@ -17,6 +17,7 @@ import { buildFrontMatter } from "../lib/fm.mjs";
 import { buildPreview } from "../lib/preview.mjs";
 import { lint } from "../lib/lint.mjs";
 import { emitDtcg } from "../lib/emit.mjs";
+import { normOrg, normKey } from "../lib/registry.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -25,7 +26,6 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
 const coverage = read("data/coverage.json");
 const docsOnly = (coverage.union.entries || []).filter((e) => !e.covered && !e.npm && !e.repo);
 
-const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "");
 const have = new Set(fs.readdirSync(path.join(ROOT, "systems")));
 const sourcesDir = path.join(ROOT, "data/sources");
 const sourceFiles = fs.readdirSync(sourcesDir).filter((f) => f.endsWith(".json"));
@@ -34,7 +34,7 @@ let added = 0;
 let skipped = 0;
 
 for (const e of docsOnly) {
-  let slug = norm(e.org);
+  let slug = normKey(e.org);
   if (!slug) {
     skipped++;
     continue;
@@ -47,18 +47,24 @@ for (const e of docsOnly) {
   // Pull every name this org is listed under, and which lists said so.
   const names = new Set(e.systems.map((s) => s.name));
   const lists = new Set(e.systems.map((s) => s.sourceId || s.source));
+  let homepage = "";
   for (const f of sourceFiles) {
     const data = JSON.parse(fs.readFileSync(path.join(sourcesDir, f), "utf8"));
     const id = path.basename(f, ".json");
     for (const entry of data.systems || []) {
-      const keys = [entry.org, entry.name, ...(entry.aliases || [])].filter(Boolean).map(norm);
-      if (!keys.includes(norm(e.org))) continue;
+      const keys = [entry.org, entry.name, ...(entry.aliases || [])].filter(Boolean).map(normOrg);
+      if (!keys.includes(normOrg(e.org))) continue;
       if (entry.name) names.add(entry.name);
+      if (entry.homepage && !homepage) homepage = entry.homepage;
       lists.add(id);
     }
   }
 
-  const displayName = [...names].sort((a, b) => a.length - b.length)[0] || e.org;
+  const specificNames = [...names].filter((n) => !/^design system(\s+2\.0)?$/i.test(n));
+  const rawShort = [...names].sort((a, b) => a.length - b.length)[0] || "Design System";
+  const displayName =
+    specificNames.sort((a, b) => a.length - b.length)[0] ||
+    (rawShort.toLowerCase().startsWith(e.org.toLowerCase()) ? rawShort : `${e.org} ${rawShort}`);
   const listNames = [...lists].sort();
   const note = `${displayName} is published by ${e.org}, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.`;
 
@@ -91,8 +97,8 @@ for (const e of docsOnly) {
     category: e.org,
     org: e.org,
     theme: "unknown",
-    tags: ["listed", "docs-only", norm(e.org)],
-    homepage: "",
+    tags: ["listed", "docs-only", normKey(e.org)],
+    homepage,
     license: "unknown",
     provenance: "listed",
     provenanceNote: `Appears in ${listNames.join(", ")}. No machine-readable tokens found.`,

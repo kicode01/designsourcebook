@@ -373,8 +373,154 @@
       "value": "#002b66"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "font-size-display-xl",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "64px",
+      "px": 64
+    },
+    {
+      "name": "font-size-display-l",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "42px",
+      "px": 42
+    },
+    {
+      "name": "font-size-heading-xl",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size-heading-l",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size-heading-m",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-family-base",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-heading",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "Monaco, Menlo, Consolas, \"Courier Prime\", Courier, \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size-heading-s",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-tabs",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-body-m",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-heading-xs",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-body-s",
+      "fontFamily": "\"Open Sans\", \"Helvetica Neue\", Roboto, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#002b66",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#db0000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#002b66",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#00802f",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Amazon Cloudscape — the design system for AWS console experiences.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002b66` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 14 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

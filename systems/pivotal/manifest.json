@@ -1,22 +1,23 @@
 {
   "name": "pivotal",
   "displayName": "Pivotal",
-  "description": "Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.",
-  "style": "Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.",
+  "description": "Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.",
+  "style": "Crisp light (#ffffff) canvas, Source Sans Pro typography, #fff brand accent, and 8px corner geometry",
   "category": "Pivotal",
   "org": "Pivotal",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "pivotal"
+    "pivotal",
+    "light"
   ],
   "homepage": "https://github.com/pivotal-cf/pivotal-ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/pivotal-cf/pivotal-ui — 3 token files, 98 colours harvested, 81 selected.",
   "source": {
-    "repo": "https://github.com/pivotal-cf/pivotal-ui"
+    "repo": "https://github.com/pivotal-cf/pivotal-ui",
+    "package": "pivotal-ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 82,
-    "typography": 20,
-    "components": 0
+    "typography": 28,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 69,
+    "stars": 638,
+    "forks": 88,
+    "npmDownloads": 2041,
+    "score": 880,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

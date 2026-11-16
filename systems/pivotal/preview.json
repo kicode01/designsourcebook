@@ -340,126 +340,237 @@
   "type": [
     {
       "name": "font-size-title",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "42px",
+      "px": 42
+    },
+    {
+      "name": "title",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "42px",
       "px": 42
     },
     {
       "name": "font-size-h1",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "32px",
       "px": 32
     },
     {
+      "name": "h1",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
       "name": "font-size-h2",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "24px",
       "px": 24
     },
     {
       "name": "font-size-extra-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "20px",
       "px": 20
     },
     {
       "name": "font-size-h3",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "20px",
       "px": 20
     },
     {
       "name": "carousel-control-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "20px !default",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "20px",
       "px": 20
     },
     {
       "name": "font-size-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "18px",
       "px": 18
     },
     {
       "name": "font-size-h4",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "pui-collapse-panel-title",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "18px",
       "px": 18
     },
     {
       "name": "font-size-base",
-      "fontFamily": "system-ui",
-      "fontSize": "16px !default",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "16px",
       "px": 16
     },
     {
       "name": "font-size-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "font-size-h5",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "btn-lg-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
       "name": "nav-tabs-title-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
+      "name": "body",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "font-family-sans-serif",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-serif",
+      "fontFamily": "Georgia, \"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "\"Source Code Pro\", SourceCodePro, monospace",
+      "px": 16
+    },
+    {
       "name": "font-size-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "btn-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "health-indicator-large-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "14px",
       "px": 14
     },
     {
       "name": "font-size-h6",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "13px",
       "px": 13
     },
     {
       "name": "font-size-extra-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "12px",
       "px": 12
     },
     {
       "name": "btn-sm-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "12px",
       "px": 12
     },
     {
       "name": "health-indicator-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Source Sans Pro\", SourceSansPro, sans-serif",
       "fontSize": "10px",
       "px": 10
     }
   ],
-  "components": [],
-  "overview": "Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Pivotal — Crisp light (#ffffff) canvas, Source Sans Pro typography, #fff brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Source Sans Pro` across 28 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

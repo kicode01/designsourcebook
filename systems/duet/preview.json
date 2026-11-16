@@ -1,15 +1,380 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
-  "text": "#0b0b0c",
-  "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "canvas": "#0077b3",
+  "surface": "#0077b3",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#f7b228",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
   "radius": "8px",
-  "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Duet is published by Duet, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "bg-canvas",
+      "value": "#0077b3"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#082a4d"
+    },
+    {
+      "name": "header-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "nav-bg",
+      "value": "#f5f8fa"
+    },
+    {
+      "name": "footer-text",
+      "value": "#4d5f6c"
+    },
+    {
+      "name": "footer-border",
+      "value": "#d4dfe5"
+    },
+    {
+      "name": "body-text",
+      "value": "#62798a"
+    },
+    {
+      "name": "link-text",
+      "value": "#637484"
+    },
+    {
+      "name": "button-bg",
+      "value": "rgba(0, 0, 0, 0.3)"
+    },
+    {
+      "name": "button-text",
+      "value": "#000000"
+    },
+    {
+      "name": "css-surface-11",
+      "value": "#e61740"
+    },
+    {
+      "name": "css-stroke-12",
+      "value": "#172a3b"
+    },
+    {
+      "name": "css-color-13",
+      "value": "#004b81"
+    },
+    {
+      "name": "css-color-14",
+      "value": "#8c001e"
+    },
+    {
+      "name": "css-surface-15",
+      "value": "#c6e1ee"
+    },
+    {
+      "name": "css-surface-16",
+      "value": "#f1cab2"
+    },
+    {
+      "name": "css-color-17",
+      "value": "#5e788b"
+    },
+    {
+      "name": "css-border-18",
+      "value": "#d4dde2"
+    },
+    {
+      "name": "css-surface-19",
+      "value": "rgba(8, 42, 77, 0.8)"
+    },
+    {
+      "name": "css-surface-20",
+      "value": "rgba(23, 42, 59, 0.8)"
+    },
+    {
+      "name": "css-surface-21",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "css-surface-22",
+      "value": "rgba(101, 119, 135, 0.15)"
+    },
+    {
+      "name": "css-color-23",
+      "value": "#7891a4"
+    },
+    {
+      "name": "css-surface-24",
+      "value": "#e4f1f7"
+    },
+    {
+      "name": "css-surface-25",
+      "value": "#fbebe1"
+    },
+    {
+      "name": "css-surface-26",
+      "value": "rgba(8, 42, 77, 0.05)"
+    },
+    {
+      "name": "css-surface-27",
+      "value": "rgba(23, 42, 59, 0.05)"
+    },
+    {
+      "name": "css-surface-28",
+      "value": "rgba(0, 0, 0, 0.03)"
+    },
+    {
+      "name": "css-surface-29",
+      "value": "#308369"
+    },
+    {
+      "name": "css-color-30",
+      "value": "#7f96a5"
+    },
+    {
+      "name": "css-surface-31",
+      "value": "#f0f7fa"
+    },
+    {
+      "name": "css-border-32",
+      "value": "#edeef0"
+    },
+    {
+      "name": "css-color-33",
+      "value": "#7a01c4"
+    },
+    {
+      "name": "css-color-34",
+      "value": "#a9457c"
+    },
+    {
+      "name": "css-color-35",
+      "value": "#364a81"
+    },
+    {
+      "name": "css-color-36",
+      "value": "#171c3a"
+    },
+    {
+      "name": "css-color-37",
+      "value": "#5f7a8f"
+    },
+    {
+      "name": "css-surface-38",
+      "value": "#ebf1f5"
+    },
+    {
+      "name": "css-surface-39",
+      "value": "#bdc6cc"
+    },
+    {
+      "name": "css-surface-40",
+      "value": "#c3c3c3"
+    },
+    {
+      "name": "css-surface-41",
+      "value": "#b5c6d0"
+    },
+    {
+      "name": "css-surface-42",
+      "value": "#b2c2cd"
+    },
+    {
+      "name": "css-surface-43",
+      "value": "rgba(43, 40, 38, 0.1)"
+    },
+    {
+      "name": "css-color-44",
+      "value": "rgba(255, 255, 255, 0.8)"
+    },
+    {
+      "name": "css-surface-45",
+      "value": "rgba(255, 255, 255, 0.9)"
+    },
+    {
+      "name": "css-surface-46",
+      "value": "#f5f9f8"
+    },
+    {
+      "name": "css-surface-47",
+      "value": "#fdf4f6"
+    },
+    {
+      "name": "css-border-48",
+      "value": "#d61c52"
+    },
+    {
+      "name": "css-surface-49",
+      "value": "rgba(214, 28, 82, 0.05)"
+    },
+    {
+      "name": "css-surface-50",
+      "value": "rgba(48, 131, 105, 0.05)"
+    },
+    {
+      "name": "css-border-51",
+      "value": "#d1d1d1"
+    },
+    {
+      "name": "css-color-52",
+      "value": "#a6b8c5"
+    },
+    {
+      "name": "css-surface-53",
+      "value": "#f3f4f5"
+    },
+    {
+      "name": "css-surface-54",
+      "value": "#fffbf4"
+    },
+    {
+      "name": "css-border-55",
+      "value": "#f7b228"
+    },
+    {
+      "name": "css-surface-56",
+      "value": "#e8eaeb"
+    },
+    {
+      "name": "css-surface-57",
+      "value": "#fef3df"
+    },
+    {
+      "name": "css-surface-58",
+      "value": "#fbe8ee"
+    },
+    {
+      "name": "css-surface-59",
+      "value": "#eaf3f0"
+    },
+    {
+      "name": "css-color-60",
+      "value": "#00294d"
+    },
+    {
+      "name": "primary",
+      "value": "#f7b228"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "58px",
+      "px": 58,
+      "fontWeight": 800,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "h2",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 800,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "h3",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "header",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 800,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-toggle",
+      "kind": "nav",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "20rem"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#f7b228",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#0077b3",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#0077b3",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#f7b228",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    }
+  ],
+  "overview": "Duet — Dark (#0077b3) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Dark (#0077b3) canvas paired with `#0077b3` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f7b228` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `localtapiola-sans` across 7 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

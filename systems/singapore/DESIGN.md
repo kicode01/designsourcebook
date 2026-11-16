@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Singapore Government Design System
-description: undefined
+description: "Singapore Government Design System (SGDS) — open-source UI system for Singapore digital services."
 colors:
   sgds-primary: "#5925dc"
   sgds-secondary: "#1f69ff"
@@ -79,32 +79,42 @@ colors:
   sgds-gray-500: "#667085"
   sgds-gray-800: "#000"
   sgds-dark: "#000"
-  sgds-code-color: "#d63384"
-  sgds-table-striped-color: "#1d2939"
-  sgds-table-bg: "#000"
-  sgds-btn-hover-color: "#fff"
-  sgds-btn-active-bg: "#471eb0"
-  sgds-dropdown-header-color: "#344054"
-  sgds-accordion-bg: "#fff"
-  sgds-accordion-active-color: "#5925dc"
-  sgds-pagination-color: "#0f71bb"
-  sgds-pagination-hover-bg: "#e4e7ec"
-  sgds-list-group-color: "#000"
-  sgds-list-group-action-hover-color: "#1d2939"
-  sgds-list-group-action-active-bg: "#e4e7ec"
-  sgds-badge-color: "#fff"
+  sgds-body-color: "#1d2939"
+  sgds-highlight-bg: "#fcf8e3"
+  sgds-table-active-color: "#1d2939"
+  sgds-btn-color: "#1d2939"
+  sgds-btn-hover-bg: "#4c1fbb"
+  sgds-dropdown-color: "#1d2939"
+  sgds-card-bg: "#fff"
+  sgds-accordion-btn-color: "#1d2939"
+  sgds-breadcrumb-divider-color: "#344054"
+  sgds-pagination-bg: "#fff"
+  sgds-pagination-active-color: "#fff"
+  sgds-list-group-bg: "#fff"
+  sgds-list-group-action-hover-bg: "#f7f7f9"
+  sgds-list-group-active-color: "#fff"
   primary: "#5925dc"
 typography:
   font-size-base:
-    fontSize: "1rem !default"
+    fontSize: 1rem
+  small-font-size:
+    fontSize: ".875em"
+  sub-sup-font-size:
+    fontSize: ".75em"
   legend-font-size:
-    fontSize: "1.5rem !default"
+    fontSize: 1.5rem
   sidenav-fontsize:
-    fontSize: "1rem !default"
+    fontSize: 1rem
   toast-font-size:
-    fontSize: "1rem !default"
+    fontSize: 1rem
+  badge-font-size:
+    fontSize: ".875em"
   badge-font-size-max:
-    fontSize: "2rem !default"
+    fontSize: 2rem
+  font-family-sans-serif:
+    fontFamily: "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  font-family-monospace:
+    fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
   sgds-body-font-size:
     fontSize: 1rem
   sgds-btn-font-size:
@@ -117,6 +127,8 @@ typography:
     fontSize: 1.25rem
   sgds-pagination-font-size:
     fontSize: 0.875rem
+  sgds-badge-font-size:
+    fontSize: 0.875em
   sgds-progress-font-size:
     fontSize: 0.75rem
   sgds-sidenav-font-size:
@@ -129,28 +141,49 @@ typography:
     fontSize: 0.875rem
   sgds-popover-header-font-size:
     fontSize: 1rem
+  sgds-font-sans-serif:
+    fontFamily: "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  sgds-font-monospace:
+    fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
   sgds-body-font-family:
-    fontFamily: "var(--sgds-font-sans-serif)"
+    fontFamily: "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  lead:
+    fontSize: 1.25rem
+    fontWeight: 300
+  display-4:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.2
+  figure-caption:
+    fontSize: ".875em"
 components:
   btn-close:
     textColor: "#98a2b3"
     rounded: ".3125rem"
     padding: ".25em"
   link-info:
-    textColor: "#0f71bb!important"
+    textColor: "#0f71bb"
   link-dark-2:
-    textColor: "#000!important"
+    textColor: "#000"
   link-light-3:
-    textColor: "#f7f7f9!important"
+    textColor: "#f7f7f9"
+  select:
+    backgroundColor: "#fff"
+    textColor: "#1d2939"
+    typography:
+      fontSize: 1rem
+      fontWeight: 400
+    rounded: ".3125rem"
+    padding: ".4375rem 3rem .4375rem 1rem"
   link-danger-4:
-    textColor: "#d7260f!important"
+    textColor: "#d7260f"
   link-primary-5:
-    textColor: "#5925dc!important"
+    textColor: "#5925dc"
   link-success-6:
-    textColor: "#0a8217!important"
-  alert-heading:
-    textColor: inherit
-  input-group-text:
+    textColor: "#0a8217"
+  form-check-input-2:
+    backgroundColor: "#fff"
+  input-group-text-3:
     backgroundColor: "#e4e7ec"
     textColor: "#1d2939"
     typography:
@@ -158,15 +191,35 @@ components:
       fontWeight: 400
     rounded: ".3125rem"
     padding: ".4375rem 1rem"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: ".3125rem"
+    padding: 10px 18px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#5925dc"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#0a8217"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # Singapore Government Design System
 
 ## Overview
 
-undefined
+Singapore Government Design System (SGDS) — open-source UI system for Singapore digital services.
 
-Tokens were read from `@govtechsg/sgds@2.3.6`, not from a marketing site: 91 colour tokens and 18 type tokens.
+Tokens were read from `@govtechsg/sgds@2.3.6`, not from a marketing site: 91 colour tokens and 29 type tokens.
 
 ## Colors
 
@@ -174,8 +227,15 @@ Tokens were read from `@govtechsg/sgds@2.3.6`, not from a marketing site: 91 col
 
 ## Typography
 
-Families declared in the source: `var(--sgds-font-sans-serif)`.
+Families declared in the source: `Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`, `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`.
 
 ## Components
 
-9 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+10 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#5925dc` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 29 type steps.
+- **Component Geometry**: Buttons (`.3125rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

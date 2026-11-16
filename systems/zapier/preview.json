@@ -259,7 +259,7 @@
       "key": "button-primary-orange",
       "kind": "button",
       "backgroundColor": "#ff4f00",
-      "textColor": "#fffefb",
+      "textColor": "#0b0b0c",
       "rounded": "4px",
       "padding": "8px 16px",
       "border": "1px solid #ff4f00"
@@ -295,15 +295,47 @@
       "key": "button-overlay-semi-transparent",
       "kind": "button",
       "backgroundColor": "rgba(45, 45, 46, 0.5)",
-      "textColor": "#fffefb",
+      "textColor": "#0b0b0c",
       "rounded": "20px"
     },
     {
       "key": "button-tab-navigation",
-      "kind": "button",
+      "kind": "nav",
       "textColor": "#201515",
       "padding": "12px 16px",
       "shadow": "rgb(255, 79, 0) 0px -4px 0px 0px inset"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fffefb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fffefb",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff4f00",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
     }
   ],
   "overview": "Zapier's website radiates warm, approachable professionalism. It rejects the cold monochrome minimalism of developer tools in favor of a cream-tinted canvas (#fffefb) that feels like unbleached paper -- the digital equivalent of a well-organized notebook. The near-black (#201515) text has a faint reddish-brown warmth, creating an atmosphere more human than mechanical. This is automation designed to feel effortless, not technical.\n\nThe typographic system is a deliberate interplay of two distinct personalities. Degular Display -- a geometric, wide-set display face -- handles hero-scale headlines at 56-80px with medium weight (500) and extraordinarily tight line-heights (0.90), creating headlines that compress vertically like stacked blocks. Inter serves as the workhorse for everything else, from section headings to body text and navigation, with fallbacks to Helvetica and Arial. GT…",

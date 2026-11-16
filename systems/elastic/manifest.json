@@ -1,22 +1,23 @@
 {
   "name": "elastic",
   "displayName": "Elastic UI",
-  "description": "Elastic Elastic UI — tokens read from https://github.com/elastic/eui.",
-  "style": "Elastic Elastic UI — tokens read from https://github.com/elastic/eui.",
+  "description": "Elastic UI — tokens read from https://github.com/elastic/eui.",
+  "style": "Dark (#000) canvas, Helvetica Neue typography, #EE72A6 brand accent, and 6px corner geometry",
   "category": "Elastic",
   "org": "Elastic",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "elastic"
+    "elastic",
+    "dark"
   ],
   "homepage": "https://github.com/elastic/eui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/elastic/eui — 12 token files, 423 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/elastic/eui"
+    "repo": "https://github.com/elastic/eui",
+    "package": "@elastic/eui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 7,
-    "components": 0
+    "typography": 9,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 35,
+    "stars": 6387,
+    "forks": 929,
+    "npmDownloads": 949126,
+    "score": 26509,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 22
   }
 }

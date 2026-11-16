@@ -100,6 +100,31 @@ components:
     textColor: "#ffffff"
     rounded: 4px
     padding: 0px 32px
+  input-default:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#f4f692"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: ClickHouse

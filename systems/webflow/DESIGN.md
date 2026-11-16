@@ -21,6 +21,98 @@ colors:
   neutral-border-gray: "#d8d8d8"
   neutral-border-hover: "#898989"
   primary: "#080808"
+typography:
+  display-xl:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 88px
+    fontWeight: 600
+    lineHeight: 1.04
+  display-large:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 56px
+    fontWeight: 600
+    lineHeight: 1.04
+  h2-section:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 35.2px
+    fontWeight: 600
+    lineHeight: 1.2
+  h3-sub:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-large:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 19.2px
+    fontWeight: 400
+    lineHeight: 1.6
+  body:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.6
+  ui-medium:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 15px
+    fontWeight: 500
+    lineHeight: 1.3
+  caption:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 14.4px
+    fontWeight: 400
+    lineHeight: 1.5
+  small:
+    fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
+    fontSize: 12.8px
+    fontWeight: 400
+    lineHeight: 1.5
+  label-mono:
+    fontFamily: "Inconsolata, monospace"
+    fontSize: 12px
+    fontWeight: 500
+    lineHeight: 1.3
+components:
+  button-primary:
+    backgroundColor: "#080808"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#080808"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#080808"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#080808"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#080808"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Webflow

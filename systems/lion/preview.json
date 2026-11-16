@@ -1,0 +1,602 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#FFC107",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background",
+      "value": "#b22222"
+    },
+    {
+      "name": "primary-text-inverse-color",
+      "value": "#2c3e50"
+    },
+    {
+      "name": "blog-accent",
+      "value": "#FFC107"
+    },
+    {
+      "name": "primary-color",
+      "value": "#222"
+    },
+    {
+      "name": "primary-color-lighter",
+      "value": "#333"
+    },
+    {
+      "name": "primary-color-darker",
+      "value": "#000"
+    },
+    {
+      "name": "accent-yellow",
+      "value": "#FFC107"
+    },
+    {
+      "name": "accent-chip-surface",
+      "value": "#111111"
+    },
+    {
+      "name": "heading-gradient-from",
+      "value": "#111111"
+    },
+    {
+      "name": "hero-gradient-to",
+      "value": "#777777"
+    },
+    {
+      "name": "dandelion-300",
+      "value": "#ffe366"
+    },
+    {
+      "name": "dandelion-900",
+      "value": "#332a00"
+    },
+    {
+      "name": "blue-500",
+      "value": "#002eff"
+    },
+    {
+      "name": "green-700",
+      "value": "#8bcc00"
+    },
+    {
+      "name": "gray-100",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "gray-700",
+      "value": "#4d4d4d"
+    },
+    {
+      "name": "contrast-color-light",
+      "value": "#fff"
+    },
+    {
+      "name": "gray-0",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "gray-3",
+      "value": "#dee2e6"
+    },
+    {
+      "name": "gray-6",
+      "value": "#868e96"
+    },
+    {
+      "name": "gray-9",
+      "value": "#212529"
+    },
+    {
+      "name": "gray-12",
+      "value": "#030507"
+    },
+    {
+      "name": "stone-2",
+      "value": "#ebedef"
+    },
+    {
+      "name": "stone-5",
+      "value": "#b1b6b9"
+    },
+    {
+      "name": "stone-8",
+      "value": "#666968"
+    },
+    {
+      "name": "stone-11",
+      "value": "#252521"
+    },
+    {
+      "name": "red-1",
+      "value": "#ffe3e3"
+    },
+    {
+      "name": "red-4",
+      "value": "#ff8787"
+    },
+    {
+      "name": "red-7",
+      "value": "#f03e3e"
+    },
+    {
+      "name": "red-10",
+      "value": "#b02525"
+    },
+    {
+      "name": "pink-0",
+      "value": "#fff0f6"
+    },
+    {
+      "name": "pink-3",
+      "value": "#faa2c1"
+    },
+    {
+      "name": "pink-6",
+      "value": "#e64980"
+    },
+    {
+      "name": "pink-9",
+      "value": "#a61e4d"
+    },
+    {
+      "name": "pink-12",
+      "value": "#59102a"
+    },
+    {
+      "name": "purple-2",
+      "value": "#eebefa"
+    },
+    {
+      "name": "purple-5",
+      "value": "#cc5de8"
+    },
+    {
+      "name": "purple-8",
+      "value": "#9c36b5"
+    },
+    {
+      "name": "purple-11",
+      "value": "#5a1e69"
+    },
+    {
+      "name": "violet-1",
+      "value": "#e5dbff"
+    },
+    {
+      "name": "violet-4",
+      "value": "#9775fa"
+    },
+    {
+      "name": "violet-7",
+      "value": "#7048e8"
+    },
+    {
+      "name": "violet-10",
+      "value": "#5235ab"
+    },
+    {
+      "name": "indigo-0",
+      "value": "#edf2ff"
+    },
+    {
+      "name": "indigo-3",
+      "value": "#91a7ff"
+    },
+    {
+      "name": "indigo-6",
+      "value": "#4c6ef5"
+    },
+    {
+      "name": "indigo-9",
+      "value": "#364fc7"
+    },
+    {
+      "name": "indigo-12",
+      "value": "#21307a"
+    },
+    {
+      "name": "blue-2",
+      "value": "#a5d8ff"
+    },
+    {
+      "name": "blue-5",
+      "value": "#339af0"
+    },
+    {
+      "name": "blue-8",
+      "value": "#1971c2"
+    },
+    {
+      "name": "blue-11",
+      "value": "#114678"
+    },
+    {
+      "name": "cyan-1",
+      "value": "#c5f6fa"
+    },
+    {
+      "name": "cyan-4",
+      "value": "#3bc9db"
+    },
+    {
+      "name": "cyan-7",
+      "value": "#1098ad"
+    },
+    {
+      "name": "cyan-10",
+      "value": "#095c6b"
+    },
+    {
+      "name": "teal-0",
+      "value": "#e6fcf5"
+    },
+    {
+      "name": "teal-3",
+      "value": "#63e6be"
+    },
+    {
+      "name": "teal-6",
+      "value": "#12b886"
+    },
+    {
+      "name": "teal-9",
+      "value": "#087f5b"
+    },
+    {
+      "name": "teal-12",
+      "value": "#033325"
+    },
+    {
+      "name": "green-2",
+      "value": "#b2f2bb"
+    },
+    {
+      "name": "green-5",
+      "value": "#51cf66"
+    },
+    {
+      "name": "green-8",
+      "value": "#2f9e44"
+    },
+    {
+      "name": "green-11",
+      "value": "#1b5727"
+    },
+    {
+      "name": "lime-1",
+      "value": "#e9fac8"
+    },
+    {
+      "name": "lime-4",
+      "value": "#a9e34b"
+    },
+    {
+      "name": "lime-7",
+      "value": "#74b816"
+    },
+    {
+      "name": "lime-10",
+      "value": "#4c7a0b"
+    },
+    {
+      "name": "yellow-0",
+      "value": "#fff9db"
+    },
+    {
+      "name": "yellow-3",
+      "value": "#ffe066"
+    },
+    {
+      "name": "yellow-6",
+      "value": "#fab005"
+    },
+    {
+      "name": "yellow-9",
+      "value": "#e67700"
+    },
+    {
+      "name": "yellow-12",
+      "value": "#663500"
+    },
+    {
+      "name": "orange-2",
+      "value": "#ffd8a8"
+    },
+    {
+      "name": "orange-5",
+      "value": "#ff922b"
+    },
+    {
+      "name": "orange-8",
+      "value": "#e8590c"
+    },
+    {
+      "name": "orange-11",
+      "value": "#99330b"
+    },
+    {
+      "name": "choco-1",
+      "value": "#fce1bc"
+    },
+    {
+      "name": "choco-4",
+      "value": "#e99b62"
+    },
+    {
+      "name": "choco-7",
+      "value": "#bd5f1b"
+    },
+    {
+      "name": "choco-10",
+      "value": "#703a13"
+    },
+    {
+      "name": "brown-0",
+      "value": "#faf4eb"
+    },
+    {
+      "name": "brown-3",
+      "value": "#d3b79e"
+    },
+    {
+      "name": "brown-6",
+      "value": "#a87c56"
+    },
+    {
+      "name": "primary",
+      "value": "#FFC107"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "page-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "64px",
+      "px": 64
+    },
+    {
+      "name": "font-size-8",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "font-size-fluid-3",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "clamp(2rem, 9vw, 3.5rem)",
+      "px": 56
+    },
+    {
+      "name": "font-size-7",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-6",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-size-fluid-2",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "clamp(1.5rem, 6vw, 2.5rem)",
+      "px": 40
+    },
+    {
+      "name": "font-size-5",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "post-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-4",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-fluid-1",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "clamp(1rem, 4vw, 1.5rem)",
+      "px": 24
+    },
+    {
+      "name": "lead",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "font-size-3",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "hero-subtitle",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "page-subtitle",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.1rem",
+      "px": 17.6
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.1rem",
+      "px": 17.6,
+      "fontWeight": 500
+    },
+    {
+      "name": "font-size-2",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.1rem",
+      "px": 17.6
+    },
+    {
+      "name": "primary-font-family",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "secondary-font-family",
+      "fontFamily": "Montserrat, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "monospace-font-family",
+      "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "markdown-body",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-1",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-fluid-0",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "clamp(0.75rem, 2vw, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-0",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size-00",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.5rem",
+      "px": 8
+    }
+  ],
+  "components": [
+    {
+      "key": "btn-primary",
+      "kind": "button",
+      "backgroundColor": "#FFC107"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#FFC107",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#8bcc00",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "ING Lion — Crisp light (#fff) canvas, Open Sans typography, #FFC107 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FFC107` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 31 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

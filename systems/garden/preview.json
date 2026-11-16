@@ -1,88 +1,510 @@
 {
-  "canvas": "#fff",
-  "surface": "#fff",
-  "text": "#0b0b0c",
-  "muted": "#0b0b0c",
-  "brand": "#f79a3e",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "canvas": "#070d0d",
+  "surface": "#070d0d",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#2694d6",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
   "radius": "8px",
-  "ink": "#0b0b0c",
+  "ink": "#f7f7f8",
   "palette": [
     {
-      "name": "black",
-      "value": "#000"
-    },
-    {
-      "name": "white",
-      "value": "#fff"
-    },
-    {
-      "name": "support",
+      "name": "product-support",
       "value": "#00a656"
     },
     {
-      "name": "explore",
-      "value": "#30aabc"
-    },
-    {
-      "name": "gather",
+      "name": "product-gather",
       "value": "#f6c8be"
     },
     {
-      "name": "guide",
-      "value": "#eb4962"
-    },
-    {
-      "name": "chat",
+      "name": "product-chat",
       "value": "#f79a3e"
     },
     {
-      "name": "talk",
-      "value": "#efc93d"
-    },
-    {
-      "name": "sell",
+      "name": "product-sell",
       "value": "#c38f00"
     },
     {
-      "name": "message",
-      "value": "#37b8af"
+      "name": "grey-200",
+      "value": "#e8eaec"
     },
     {
-      "name": "connect",
-      "value": "#ff6224"
+      "name": "grey-400",
+      "value": "#b0b8be"
     },
     {
-      "name": "m400",
-      "value": "#cf62a8"
+      "name": "grey-600",
+      "value": "#848f99"
     },
     {
-      "name": "m600",
-      "value": "#a8458c"
+      "name": "grey-800",
+      "value": "#39434b"
     },
     {
-      "name": "disabled",
-      "value": "rgba(white, 100)"
+      "name": "grey-1000",
+      "value": "#1c2227"
     },
     {
-      "name": "small",
-      "value": "rgba(neutralHue.1200, 1100)"
+      "name": "grey-1200",
+      "value": "#0a0d0e"
     },
     {
-      "name": "medium",
-      "value": "rgba(neutralHue.1200, 800)"
+      "name": "blue-200",
+      "value": "#ddecf8"
     },
     {
-      "name": "large",
-      "value": "rgba(neutralHue.1200, 1000)"
+      "name": "blue-400",
+      "value": "#93bcdc"
+    },
+    {
+      "name": "blue-600",
+      "value": "#2694d6"
+    },
+    {
+      "name": "blue-800",
+      "value": "#13456d"
+    },
+    {
+      "name": "blue-1000",
+      "value": "#0a2338"
+    },
+    {
+      "name": "blue-1200",
+      "value": "#040d15"
+    },
+    {
+      "name": "red-200",
+      "value": "#fee3e5"
+    },
+    {
+      "name": "red-400",
+      "value": "#f2a1a8"
+    },
+    {
+      "name": "red-600",
+      "value": "#eb5c69"
+    },
+    {
+      "name": "red-800",
+      "value": "#7e1d25"
+    },
+    {
+      "name": "red-1000",
+      "value": "#3d1418"
+    },
+    {
+      "name": "red-1200",
+      "value": "#100b0c"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#ffe6cb"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#fca347"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#d67305"
+    },
+    {
+      "name": "yellow-800",
+      "value": "#673515"
+    },
+    {
+      "name": "yellow-1000",
+      "value": "#2d1e15"
+    },
+    {
+      "name": "yellow-1200",
+      "value": "#0e0c0b"
+    },
+    {
+      "name": "green-200",
+      "value": "#daeee6"
+    },
+    {
+      "name": "green-400",
+      "value": "#94c1b0"
+    },
+    {
+      "name": "green-600",
+      "value": "#26a178"
+    },
+    {
+      "name": "green-800",
+      "value": "#104b35"
+    },
+    {
+      "name": "green-1000",
+      "value": "#0c261c"
+    },
+    {
+      "name": "green-1200",
+      "value": "#080d0c"
+    },
+    {
+      "name": "kale-200",
+      "value": "#daeded"
+    },
+    {
+      "name": "kale-400",
+      "value": "#97bfbf"
+    },
+    {
+      "name": "kale-600",
+      "value": "#4a9999"
+    },
+    {
+      "name": "kale-800",
+      "value": "#16494f"
+    },
+    {
+      "name": "kale-1000",
+      "value": "#03252a"
+    },
+    {
+      "name": "kale-1200",
+      "value": "#060e0e"
+    },
+    {
+      "name": "fuschia-200",
+      "value": "#f7e6f1"
+    },
+    {
+      "name": "fuschia-400",
+      "value": "#e3a4cc"
+    },
+    {
+      "name": "fuschia-600",
+      "value": "#d16aac"
+    },
+    {
+      "name": "fuschia-800",
+      "value": "#78116c"
+    },
+    {
+      "name": "fuschia-1000",
+      "value": "#3f0939"
+    },
+    {
+      "name": "fuschia-1200",
+      "value": "#1b0418"
+    },
+    {
+      "name": "pink-200",
+      "value": "#f7e5e8"
+    },
+    {
+      "name": "pink-400",
+      "value": "#e5a6b4"
+    },
+    {
+      "name": "pink-600",
+      "value": "#d96b81"
+    },
+    {
+      "name": "pink-800",
+      "value": "#75263d"
+    },
+    {
+      "name": "pink-1000",
+      "value": "#3c141f"
+    },
+    {
+      "name": "pink-1200",
+      "value": "#17080c"
+    },
+    {
+      "name": "crimson-200",
+      "value": "#f7e7e4"
+    },
+    {
+      "name": "crimson-400",
+      "value": "#e2aaa0"
+    },
+    {
+      "name": "crimson-600",
+      "value": "#cf7464"
+    },
+    {
+      "name": "crimson-800",
+      "value": "#811b12"
+    },
+    {
+      "name": "crimson-1000",
+      "value": "#440e09"
+    },
+    {
+      "name": "crimson-1200",
+      "value": "#1c0604"
+    },
+    {
+      "name": "orange-200",
+      "value": "#fae7d8"
+    },
+    {
+      "name": "orange-400",
+      "value": "#eda875"
+    },
+    {
+      "name": "orange-600",
+      "value": "#d57428"
+    },
+    {
+      "name": "orange-800",
+      "value": "#693317"
+    },
+    {
+      "name": "orange-1000",
+      "value": "#361a0c"
+    },
+    {
+      "name": "orange-1200",
+      "value": "#150a04"
+    },
+    {
+      "name": "lemon-200",
+      "value": "#ffea97"
+    },
+    {
+      "name": "lemon-400",
+      "value": "#efab00"
+    },
+    {
+      "name": "lemon-600",
+      "value": "#b68500"
+    },
+    {
+      "name": "lemon-800",
+      "value": "#563e00"
+    },
+    {
+      "name": "lemon-1000",
+      "value": "#2b2000"
+    },
+    {
+      "name": "lemon-1200",
+      "value": "#110c00"
+    },
+    {
+      "name": "lime-200",
+      "value": "#d1f3c7"
+    },
+    {
+      "name": "lime-400",
+      "value": "#4fd12b"
+    },
+    {
+      "name": "lime-600",
+      "value": "#509f2d"
+    },
+    {
+      "name": "lime-800",
+      "value": "#2c491b"
+    },
+    {
+      "name": "lime-1000",
+      "value": "#16250e"
+    },
+    {
+      "name": "lime-1200",
+      "value": "#090e05"
+    },
+    {
+      "name": "mint-200",
+      "value": "#9affce"
+    },
+    {
+      "name": "mint-400",
+      "value": "#00d26d"
+    },
+    {
+      "name": "mint-600",
+      "value": "#16a260"
+    },
+    {
+      "name": "mint-800",
+      "value": "#1b4b33"
+    },
+    {
+      "name": "mint-1000",
+      "value": "#0e261a"
+    },
+    {
+      "name": "mint-1200",
+      "value": "#050e0a"
+    },
+    {
+      "name": "teal-200",
+      "value": "#88fdf1"
+    },
+    {
+      "name": "teal-400",
+      "value": "#03cdb8"
+    },
+    {
+      "name": "teal-600",
+      "value": "#2a9d8f"
+    },
+    {
+      "name": "teal-800",
+      "value": "#254846"
+    },
+    {
+      "name": "teal-1000",
+      "value": "#122423"
+    },
+    {
+      "name": "teal-1200",
+      "value": "#070d0d"
+    },
+    {
+      "name": "azure-200",
+      "value": "#d9ecfc"
+    },
+    {
+      "name": "azure-400",
+      "value": "#82bcf4"
     },
     {
       "name": "primary",
-      "value": "#f79a3e"
+      "value": "#2694d6"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "font-size-xxxl",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "font-size-xxl",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 600,
+      "lineHeight": 1.23
+    },
+    {
+      "name": "font-size-xl",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.27
+    },
+    {
+      "name": "font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "font-size-md",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.45
+    },
+    {
+      "name": "font-size-sm",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "font-size-xs",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#2694d6",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#eb5c69",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#070d0d",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#070d0d",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#2694d6",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#26a178",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#070d0d",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Zendesk Garden — the design system behind Zendesk products.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (#070d0d) canvas paired with `#070d0d` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#2694d6` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 8 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

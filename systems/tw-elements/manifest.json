@@ -1,0 +1,56 @@
+{
+  "name": "tw-elements",
+  "displayName": "Tailwind Elements",
+  "description": "MDBootstrap Tailwind Elements — tokens imported from tw-elements.",
+  "style": "Tailwind-based component kit, Roboto typography and Material-inspired indigo accents",
+  "category": "MDBootstrap",
+  "org": "MDBootstrap",
+  "theme": "light",
+  "tags": [
+    "published",
+    "mdbootstrap",
+    "light"
+  ],
+  "homepage": "https://tw-elements.com/",
+  "license": "SEE LICENSE IN <License.txt>",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from tw-elements@2.0.0 (4 token files, 88 colours harvested, 86 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "tw-elements",
+    "version": "2.0.0",
+    "repo": "https://github.com/mdbootstrap/TW-Elements"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 87,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 20,
+    "stars": 13194,
+    "forks": 1564,
+    "npmDownloads": 0,
+    "score": 13194,
+    "frameworks": [
+      "css",
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

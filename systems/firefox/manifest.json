@@ -1,22 +1,23 @@
 {
   "name": "firefox",
   "displayName": "Firefox Acorn Design System",
-  "description": "Firefox Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.",
-  "style": "Firefox Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.",
+  "description": "Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#fff) canvas, Atkinson Hyperlegible typography, #fff brand accent, and 0.375rem corner geometry",
   "category": "Firefox",
   "org": "Firefox",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "firefox"
+    "observed",
+    "firefox",
+    "light"
   ],
   "homepage": "https://acorn.firefox.com/",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Computed styles read from https://acorn.firefox.com/ in headless Chromium on 2026-11-16 (376 custom properties, 42 sampled elements, 2 files). A rendered snapshot is not a published token package — values can change without notice. Page title: Acorn - Acorn Design System.",
+  "provenanceNote": "Computed styles read from https://acorn.firefox.com/ in headless Chromium on 2026-11-16 (373 custom properties, 67 sampled elements, 5 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Acorn - Acorn Design System.",
   "source": {
-    "repo": null
+    "url": "https://acorn.firefox.com/",
+    "repo": "https://github.com/mozilla/acorn-icons"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 15,
-    "components": 0
+    "typography": 45,
+    "components": 15
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 148,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

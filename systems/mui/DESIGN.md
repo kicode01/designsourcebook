@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: MUI Material UI
-description: "MUI: MUI Material UI — tokens read from https://github.com/mui/material-ui."
+description: "Dark (#121212) canvas, Roboto typography, #fff brand accent, and 8px corner geometry"
 colors:
   primary: "#fff"
   color: "#fff"
@@ -63,6 +63,52 @@ colors:
   paper: "#121212"
   main: "#ed6c02"
   background: "#e5e5e5"
+typography:
+  default-font-family:
+    fontFamily: "Roboto, Helvetica, Arial, sans-serif"
+  font-size:
+    fontSize: 20px
+components:
+  button-primary:
+    backgroundColor: "#fff"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#fff"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # MUI Material UI
@@ -80,3 +126,10 @@ Tokens were read from the project's own repository, not from a marketing site: 6
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#121212) canvas paired with `#121212` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Roboto` across 2 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

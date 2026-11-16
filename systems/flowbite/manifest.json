@@ -1,22 +1,23 @@
 {
   "name": "flowbite",
   "displayName": "Flowbite Design System",
-  "description": "Flowbite Flowbite Design System — tokens read from https://github.com/themesberg/flowbite.",
-  "style": "Flowbite Flowbite Design System — tokens read from https://github.com/themesberg/flowbite.",
+  "description": "Flowbite Design System — tokens read from https://github.com/themesberg/flowbite.",
+  "style": "Crisp light (#fff) canvas, Inter typography, #79b8ff brand accent, and 8px corner geometry",
   "category": "Flowbite",
   "org": "Flowbite",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "flowbite"
+    "flowbite",
+    "light"
   ],
   "homepage": "https://github.com/themesberg/flowbite",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/themesberg/flowbite — 3 token files, 113 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/themesberg/flowbite"
+    "repo": "https://github.com/themesberg/flowbite",
+    "package": "flowbite"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,32 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 3,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 27,
+    "stars": 9384,
+    "forks": 866,
+    "npmDownloads": 2952352,
+    "score": 54937,
+    "frameworks": [
+      "css",
+      "react",
+      "vue",
+      "svelte",
+      "angular"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 34
   }
 }

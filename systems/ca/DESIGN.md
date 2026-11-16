@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: CA Technologies Mineral UI
-description: "CA CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui."
+description: "Crisp light (#ffffff) canvas, system-ui typography, #f0f5fc brand accent, and 8px corner geometry"
 colors:
   brand-10: "#f0f5fc"
   brand-90: "#103570"
@@ -115,13 +115,54 @@ typography:
     fontSize: 0.875rem
   mnrl-h6-font-size:
     fontSize: 0.875rem
+components:
+  button-primary:
+    backgroundColor: "#f0f5fc"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#f55353"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#f0f5fc"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#20693d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # CA Technologies Mineral UI
 
 ## Overview
 
-CA CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.
+CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 10 type tokens.
 
@@ -132,3 +173,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f0f5fc` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 10 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

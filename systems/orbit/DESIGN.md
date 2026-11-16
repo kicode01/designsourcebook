@@ -22,6 +22,58 @@ colors:
   tab-bundle-medium-background-hover: "rgba(59, 30, 176, 0.08)"
   tab-bundle-medium-background-active: "rgba(59, 30, 176, 0.12)"
   primary: "#0070C8"
+typography:
+  heading-display-font-size:
+    fontSize: 40px
+  heading-display-subtitle-font-size:
+    fontSize: 22px
+  heading-title0-font-size:
+    fontSize: 28px
+  heading-title1-font-size:
+    fontSize: 24px
+  heading-title2-font-size:
+    fontSize: 20px
+components:
+  button-primary:
+    backgroundColor: "#0070C8"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#1B3249"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#1B3249"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0070C8"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#1B3249"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Orbit
@@ -30,12 +82,19 @@ colors:
 
 Kiwi.com Orbit — an open-source design system built for travel projects.
 
-Tokens were read from `@kiwicom/orbit-design-tokens@11.0.0`, not from a marketing site: 19 colour tokens and 0 type tokens.
+Tokens were read from `@kiwicom/orbit-design-tokens@11.0.0`, not from a marketing site: 19 colour tokens and 5 type tokens.
 
 ## Colors
 
-19 colour tokens selected from the package's token files, weighted toward semantic roles.
+19 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#1B3249) canvas paired with `#1B3249` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0070C8` with `#f7f7f8` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 5 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

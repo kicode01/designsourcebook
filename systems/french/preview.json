@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#ff732c",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -373,8 +373,317 @@
       "value": "#ff732c"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "French French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.",
-  "dos": ""
+  "type": [
+    {
+      "name": "fr-display-xl",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72,
+      "fontWeight": 700,
+      "lineHeight": "5rem"
+    },
+    {
+      "name": "fr-display-lg",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "4rem",
+      "px": 64,
+      "fontWeight": 700,
+      "lineHeight": "4.5rem"
+    },
+    {
+      "name": "fr-display-md",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56,
+      "fontWeight": 700,
+      "lineHeight": "4rem"
+    },
+    {
+      "name": "fr-display-sm",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48,
+      "fontWeight": 700,
+      "lineHeight": "3.5rem"
+    },
+    {
+      "name": "fr-display-xs",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "h1",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 700,
+      "lineHeight": "2.5rem"
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "fontWeight": 700,
+      "lineHeight": "2.25rem"
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "fr-callout-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "fr-links-group-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "fr-downloads-group-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "fr-modal-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "fr-text-lead",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "fr-card-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "h6",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-alert-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-stepper-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-sidemenu-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "fr-tile-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-consent-banner-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-consent-service-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-header-service-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-btn-display",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-share-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-table-caption-desc",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-footer-partners-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "fr-summary-title",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "fr-content-media-caption",
+      "fontFamily": "Marianne, arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "lineHeight": "1.25rem"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#ff732c",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#301717",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ff732c",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#142117",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "French Government Design System — Crisp light (#fff) canvas, Marianne typography, #ff732c brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff732c` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Marianne` across 31 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

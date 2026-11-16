@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#FF9980",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "3px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -373,8 +373,122 @@
       "value": "#FF9980"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "Blueprint Blueprint — tokens read from https://github.com/palantir/blueprint.",
-  "dos": ""
+  "type": [
+    {
+      "name": "h6",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "pt-font-family-monospace",
+      "fontFamily": "monospace",
+      "px": 16
+    },
+    {
+      "name": "pt-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "bp6-navbar-heading",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.28581
+    },
+    {
+      "name": "bp6-heading",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "bp6-entity-title-subtitle",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "switch-indicator-text-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", blueprint-icons-16, sans-serif",
+      "fontSize": "0.7em",
+      "px": 11.2
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#FF9980",
+      "textColor": "#0b0b0c",
+      "rounded": "3px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "3px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "3px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "3px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "7px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#FF9980",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "3px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Blueprint — Crisp light (#ffffff) canvas, monospace typography, #FF9980 brand accent, and 3px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF9980` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `monospace` across 8 type steps.\n- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

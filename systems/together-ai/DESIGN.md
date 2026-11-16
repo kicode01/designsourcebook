@@ -19,60 +19,60 @@ colors:
   primary: "#bdbbff"
 typography:
   display-hero:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 64px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: "-1.92px"
   section-heading:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 40px
     fontWeight: 500
     lineHeight: 1.2
     letterSpacing: "-0.8px"
   sub-heading:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 28px
     fontWeight: 500
     lineHeight: 1.15
     letterSpacing: "-0.42px"
   feature-title:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 22px
     fontWeight: 500
     lineHeight: 1.15
     letterSpacing: "-0.22px"
   body-large:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: "-0.18px"
   body-button:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.25
     letterSpacing: "-0.16px"
   caption:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.4
   mono-label:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.08px
   mono-small:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 11px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.08px
   mono-micro:
-    fontFamily: The Future
+    fontFamily: "\"The Future\""
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.4
@@ -80,11 +80,36 @@ typography:
 components:
   button-glass-on-dark:
     backgroundColor: "rgba(255, 255, 255, 0.12)"
-    textColor: "#ffffff"
+    textColor: "#000000"
     rounded: 4px
   button-dark-solid:
     backgroundColor: "#010120"
     rounded: 4px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#bdbbff"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 10px 16px
 ---
 
 # Design System: Together AI

@@ -27,11 +27,27 @@
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/sanity-io/ui",
+    "package": "@sanity/ui"
+  },
+  "popularity": {
+    "rank": 102,
+    "stars": 178,
+    "forks": 24,
+    "npmDownloads": 0,
+    "score": 178,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

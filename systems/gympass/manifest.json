@@ -1,22 +1,23 @@
 {
   "name": "gympass",
   "displayName": "Gympass Yoga",
-  "description": "Gympass Gympass Yoga — tokens read from https://github.com/gympass/yoga.",
-  "style": "Gympass Gympass Yoga — tokens read from https://github.com/gympass/yoga.",
+  "description": "Gympass Yoga — tokens read from https://github.com/gympass/yoga.",
+  "style": "Crisp light (#FFFFFF) canvas, Rubik typography, #231B22 brand accent, and 8px corner geometry",
   "category": "Gympass",
   "org": "Gympass",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "gympass"
+    "gympass",
+    "light"
   ],
   "homepage": "https://github.com/gympass/yoga",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/gympass/yoga — 5 token files, 42 colours harvested, 42 selected.",
   "source": {
-    "repo": "https://github.com/gympass/yoga"
+    "repo": "https://github.com/gympass/yoga",
+    "package": "@gympass/yoga"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 42,
-    "typography": 0,
-    "components": 0
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 94,
+    "stars": 247,
+    "forks": 47,
+    "npmDownloads": 2855,
+    "score": 555,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

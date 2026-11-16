@@ -28,85 +28,85 @@ colors:
   primary: "#b53333"
 typography:
   display-hero:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 64px
     fontWeight: 500
     lineHeight: 1.1
   section-heading:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 52px
     fontWeight: 500
     lineHeight: 1.2
   sub-heading-large:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 36.8px
     fontWeight: 500
     lineHeight: 1.3
   sub-heading:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 32px
     fontWeight: 500
     lineHeight: 1.1
   sub-heading-small:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 25.6px
     fontWeight: 500
     lineHeight: 1.2
   feature-title:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 20.8px
     fontWeight: 500
     lineHeight: 1.2
   body-serif:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 17px
     fontWeight: 400
     lineHeight: 1.6
   body-large:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.6
   body-nav:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 17px
     fontWeight: 400
     lineHeight: 1
   body-standard:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.25
   body-small:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1
   caption:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
   label:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.25
     letterSpacing: 0.12px
   overline:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: 0.5px
   micro:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 9.6px
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: 0.096px
   code:
-    fontFamily: Anthropic Serif
+    fontFamily: "\"Anthropic Serif\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1.6
@@ -128,13 +128,38 @@ components:
     padding: 0px 12px 0px 8px
   button-brand-terracotta:
     backgroundColor: "#c96442"
-    textColor: "#faf9f5"
+    textColor: "#000000"
     rounded: 12px
   button-dark-primary:
     backgroundColor: "#141413"
     textColor: "#b0aea5"
     rounded: 12px
     padding: 9.6px 16.8px
+  input-default:
+    backgroundColor: "#30302e"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#30302e"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#b53333"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#30302e"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 10px 16px
 ---
 
 # Design System: Claude (Anthropic)

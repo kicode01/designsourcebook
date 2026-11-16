@@ -1,22 +1,23 @@
 {
   "name": "welcome",
   "displayName": "Welcome UI",
-  "description": "Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.",
-  "style": "Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.",
+  "description": "Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.",
+  "style": "Crisp light (#ffffff) canvas, Work Sans typography, #ffe166 brand accent, and 8px corner geometry",
   "category": "Welcome",
   "org": "Welcome",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "welcome"
+    "welcome",
+    "light"
   ],
   "homepage": "https://github.com/WTTJ/welcome-ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/WTTJ/welcome-ui — 2 token files, 1252 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/WTTJ/welcome-ui"
+    "repo": "https://github.com/WTTJ/welcome-ui",
+    "package": "welcome-ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 91,
     "typography": 26,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 68,
+    "stars": 681,
+    "forks": 54,
+    "npmDownloads": 0,
+    "score": 681,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

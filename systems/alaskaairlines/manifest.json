@@ -2,21 +2,23 @@
   "name": "alaskaairlines",
   "displayName": "Auro",
   "description": "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.",
-  "style": "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.",
+  "style": "Pacific navy and sky-blue aviation system, clean Auro web components",
   "category": "Alaska Airlines",
   "org": "Alaska Airlines",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "alaska-airlines"
+    "observed",
+    "alaska-airlines",
+    "light"
   ],
   "homepage": "https://auro.alaskaair.com/",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://auro.alaskaair.com/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://auro.alaskaair.com/",
+    "repo": "https://github.com/AlaskaAirlines/auro",
+    "package": "@aurodesignsystem/design-tokens"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +29,7 @@
   "tokens": {
     "colors": 91,
     "typography": 33,
-    "components": 1
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -37,5 +39,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 132,
+    "stars": 16,
+    "forks": 4,
+    "npmDownloads": 82471,
+    "score": 3481,
+    "frameworks": [
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

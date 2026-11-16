@@ -1,0 +1,55 @@
+{
+  "name": "jb",
+  "displayName": "JB Design System",
+  "description": "JB Design System — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#f6f9fc) canvas, dana typography, #ff8300 brand accent, and 4px corner geometry",
+  "category": "JB",
+  "org": "JB",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "jb",
+    "light"
+  ],
+  "homepage": "https://javadbat.github.io/design-system",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://javadbat.github.io/design-system in headless Chromium on 2026-11-16 (0 custom properties, 48 sampled elements, 1 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Getting Started / Introduction - Docs ⋅ Storybook.",
+  "source": {
+    "url": "https://javadbat.github.io/design-system",
+    "repo": "https://github.com/javadbat/design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 20,
+    "typography": 5,
+    "components": 7
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 134,
+    "stars": 9,
+    "forks": 3,
+    "npmDownloads": 0,
+    "score": 9,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

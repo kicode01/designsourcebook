@@ -1,227 +1,223 @@
 {
-  "canvas": "#393939",
-  "surface": "#e8e8e8",
-  "text": "#f4f4f4",
-  "muted": "#8d8d8d",
-  "brand": "#0f62fe",
-  "border": "#8d8d8d",
-  "radius": "8px",
-  "ink": "#f7f7f8",
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#161616",
+  "muted": "#161616",
+  "brand": "#002d9c",
+  "border": "#c6c6c6",
+  "radius": "0px",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "ai-aura-hover-background",
       "value": "#edf5ff"
     },
     {
-      "name": "ai-popover-caret-bottom-background-actions",
-      "value": "#e9effa"
+      "name": "ai-skeleton-background",
+      "value": "#d0e2ff"
     },
     {
-      "name": "background-inverse",
-      "value": "#393939"
-    },
-    {
-      "name": "border-strong01",
-      "value": "#8d8d8d"
-    },
-    {
-      "name": "border-subtle02",
+      "name": "border-disabled",
       "value": "#c6c6c6"
     },
     {
-      "name": "border-tile01",
-      "value": "#a8a8a8"
+      "name": "border-subtle00",
+      "value": "#c6c6c6"
+    },
+    {
+      "name": "border-subtle-selected03",
+      "value": "#c6c6c6"
     },
     {
       "name": "chat-bubble-user-text",
       "value": "#161616"
     },
     {
-      "name": "chat-prompt-background",
-      "value": "#ffffff"
+      "name": "chat-prompt-border-start",
+      "value": "#f4f4f4"
     },
     {
-      "name": "focus-inset",
-      "value": "#ffffff"
+      "name": "icon-on-color-disabled",
+      "value": "#8d8d8d"
     },
     {
-      "name": "layer-accent01",
-      "value": "#e0e0e0"
-    },
-    {
-      "name": "layer-accent-active03",
+      "name": "layer-accent-active01",
       "value": "#a8a8a8"
     },
     {
-      "name": "layer-background02",
-      "value": "#ffffff"
+      "name": "layer-background01",
+      "value": "#f4f4f4"
     },
     {
       "name": "link-inverse-hover",
       "value": "#a6c8ff"
     },
     {
-      "name": "link-visited",
-      "value": "#8a3ffc"
+      "name": "skeleton-background",
+      "value": "#e8e8e8"
     },
     {
-      "name": "support-info-inverse",
-      "value": "#4589ff"
+      "name": "support-success-inverse",
+      "value": "#42be65"
     },
     {
-      "name": "syntax-link",
-      "value": "#0f62fe"
+      "name": "text-inverse",
+      "value": "#ffffff"
     },
     {
-      "name": "text-on-color-disabled",
+      "name": "active-primary",
+      "value": "#002d9c"
+    },
+    {
+      "name": "disabled-03",
       "value": "#8d8d8d"
     },
     {
-      "name": "ai-border-strong-3",
-      "value": "#4589ff"
+      "name": "inverse-link",
+      "value": "#78a9ff"
+    },
+    {
+      "name": "text-04",
+      "value": "#ffffff"
+    },
+    {
+      "name": "border-strong-03",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "border-subtle-selected-02",
+      "value": "#c6c6c6"
+    },
+    {
+      "name": "layer-accent-02",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "layer-accent-hover-02",
+      "value": "#d1d1d1"
+    },
+    {
+      "name": "ai-border-end-3",
+      "value": "#78a9ff"
     },
     {
       "name": "ai-skeleton-element-background-3",
       "value": "#4589ff"
     },
     {
-      "name": "border-disabled-7",
-      "value": "#c6c6c6"
+      "name": "border-interactive-7",
+      "value": "#0f62fe"
     },
     {
-      "name": "border-strong03-3",
-      "value": "#8d8d8d"
+      "name": "border-subtle01-3",
+      "value": "#e0e0e0"
     },
     {
-      "name": "border-subtle-selected01-3",
-      "value": "#c6c6c6"
-    },
-    {
-      "name": "border-tile03-3",
+      "name": "border-tile01-3",
       "value": "#a8a8a8"
     },
     {
-      "name": "chat-button-text-selected-3",
-      "value": "#525252"
+      "name": "chat-button-text-hover-3",
+      "value": "#0043ce"
     },
     {
       "name": "chat-prompt-text-3",
       "value": "#161616"
     },
     {
-      "name": "icon-on-color-disabled-7",
-      "value": "#8d8d8d"
+      "name": "icon-primary-7",
+      "value": "#161616"
     },
     {
-      "name": "layer-accent03-3",
-      "value": "#e0e0e0"
+      "name": "layer-accent-active02-3",
+      "value": "#a8a8a8"
     },
     {
-      "name": "layer-accent-hover02-3",
-      "value": "#d1d1d1"
+      "name": "layer-background02-3",
+      "value": "#ffffff"
     },
     {
-      "name": "layer-selected-disabled-7",
-      "value": "#8d8d8d"
-    },
-    {
-      "name": "link-primary-7",
-      "value": "#0f62fe"
+      "name": "link-inverse-visited-3",
+      "value": "#be95ff"
     },
     {
       "name": "support-error-7",
       "value": "#da1e28"
     },
     {
-      "name": "support-success-inverse-7",
-      "value": "#42be65"
+      "name": "support-warning-7",
+      "value": "#f1c21b"
     },
     {
-      "name": "text-helper-7",
-      "value": "#6f6f6f"
+      "name": "text-on-color-7",
+      "value": "#ffffff"
     },
     {
-      "name": "text-secondary-7",
-      "value": "#525252"
+      "name": "ai-border-strong-2",
+      "value": "#78a9ff"
     },
     {
-      "name": "ai-popover-caret-bottom-background-2",
-      "value": "#202d45"
-    },
-    {
-      "name": "background-inverse-hover-6",
-      "value": "#e8e8e8"
+      "name": "background-inverse-6",
+      "value": "#f4f4f4"
     },
     {
       "name": "border-strong03-2",
       "value": "#c6c6c6"
     },
     {
-      "name": "border-subtle-selected01-2",
-      "value": "#8d8d8d"
-    },
-    {
-      "name": "border-tile03-2",
+      "name": "border-subtle-selected02-2",
       "value": "#a8a8a8"
     },
     {
-      "name": "chat-button-text-selected-2",
-      "value": "#c6c6c6"
+      "name": "chat-bubble-border-2",
+      "value": "#525252"
     },
     {
-      "name": "chat-prompt-text-2",
-      "value": "#f4f4f4"
+      "name": "chat-prompt-background-2",
+      "value": "#161616"
     },
     {
-      "name": "icon-primary-6",
-      "value": "#f4f4f4"
+      "name": "focus-inverse-6",
+      "value": "#0f62fe"
     },
     {
       "name": "layer-accent-active01-2",
       "value": "#8d8d8d"
     },
     {
-      "name": "layer-accent-hover03-2",
-      "value": "#7a7a7a"
+      "name": "layer-background01-2",
+      "value": "#262626"
     },
     {
-      "name": "link-inverse-6",
-      "value": "#0f62fe"
+      "name": "link-inverse-hover-2",
+      "value": "#0043ce"
     },
     {
-      "name": "link-primary-hover-6",
-      "value": "#a6c8ff"
+      "name": "skeleton-background-6",
+      "value": "#333333"
     },
     {
-      "name": "support-error-inverse-6",
-      "value": "#da1e28"
-    },
-    {
-      "name": "support-warning-6",
-      "value": "#f1c21b"
+      "name": "support-success-inverse-6",
+      "value": "#24a148"
     },
     {
       "name": "text-inverse-6",
       "value": "#161616"
     },
     {
-      "name": "ai-border-end-1",
-      "value": "#4589ff"
+      "name": "ai-border-strong-1",
+      "value": "#78a9ff"
     },
     {
-      "name": "background-5",
-      "value": "#161616"
-    },
-    {
-      "name": "border-inverse-5",
+      "name": "background-inverse-5",
       "value": "#f4f4f4"
     },
     {
-      "name": "border-subtle01-1",
-      "value": "#525252"
+      "name": "border-strong03-1",
+      "value": "#a8a8a8"
     },
     {
-      "name": "border-subtle-selected03-1",
+      "name": "border-subtle-selected02-1",
       "value": "#8d8d8d"
     },
     {
@@ -229,152 +225,175 @@
       "value": "#525252"
     },
     {
-      "name": "chat-header-text-1",
-      "value": "#f4f4f4"
+      "name": "chat-prompt-background-1",
+      "value": "#161616"
     },
     {
-      "name": "focus-5",
-      "value": "#ffffff"
+      "name": "focus-inverse-5",
+      "value": "#0f62fe"
     },
     {
-      "name": "layer-accent01-1",
-      "value": "#393939"
+      "name": "layer-accent-active01-1",
+      "value": "#6f6f6f"
     },
     {
-      "name": "layer-accent-active03-1",
-      "value": "#393939"
-    },
-    {
-      "name": "layer-background02-1",
-      "value": "#262626"
+      "name": "layer-background01-1",
+      "value": "#161616"
     },
     {
       "name": "link-inverse-hover-1",
       "value": "#0043ce"
     },
     {
-      "name": "link-visited-5",
-      "value": "#be95ff"
+      "name": "skeleton-background-5",
+      "value": "#292929"
     },
     {
-      "name": "support-info-inverse-5",
-      "value": "#0043ce"
+      "name": "support-success-inverse-5",
+      "value": "#24a148"
     },
     {
-      "name": "syntax-link-1",
-      "value": "#4589ff"
+      "name": "text-inverse-5",
+      "value": "#161616"
     },
     {
-      "name": "text-primary-5",
-      "value": "#f4f4f4"
-    },
-    {
-      "name": "hover-secondary-2",
-      "value": "#4c4c4c"
+      "name": "hover-primary-2",
+      "value": "#0353e9"
     },
     {
       "name": "hex",
       "value": "#b81921"
     },
     {
-      "name": "layer-selected-hover01",
-      "value": "#d1d1d1"
+      "name": "field-hover03",
+      "value": "#e8e8e8"
     },
     {
-      "name": "syntax-definition-operator",
-      "value": "#00539a"
-    },
-    {
-      "name": "syntax-name",
-      "value": "#0f62fe"
-    },
-    {
-      "name": "ai-popover-caret-bottom-3",
-      "value": "#78a9ff"
-    },
-    {
-      "name": "layer-selected-hover02-3",
-      "value": "#d1d1d1"
-    },
-    {
-      "name": "syntax-deleted-3",
-      "value": "#ffd7d9"
-    },
-    {
-      "name": "syntax-namespace-3",
-      "value": "#007d79"
-    },
-    {
-      "name": "ai-popover-caret-center-2",
-      "value": "#4870b5"
-    },
-    {
-      "name": "layer-selected-hover03-2",
-      "value": "#636363"
-    },
-    {
-      "name": "syntax-deref-operator-2",
-      "value": "#e0e0e0"
-    },
-    {
-      "name": "syntax-null-2",
-      "value": "#f4f4f4"
-    },
-    {
-      "name": "chat-avatar-agent-1",
+      "name": "skeleton-element",
       "value": "#c6c6c6"
     },
     {
-      "name": "layer-selected-inverse-5",
+      "name": "inverse-01",
+      "value": "#ffffff"
+    },
+    {
+      "name": "field-03",
       "value": "#f4f4f4"
     },
     {
-      "name": "syntax-doc-comment-1",
-      "value": "#42be65"
+      "name": "layer01-3",
+      "value": "#ffffff"
     },
     {
-      "name": "syntax-number-1",
-      "value": "#6fdc8c"
+      "name": "chat-avatar-bot-2",
+      "value": "#8d8d8d"
     },
     {
-      "name": "inverse-hover-ui-3",
-      "value": "#4c4c4c"
+      "name": "layer-hover01-2",
+      "value": "#474747"
     },
     {
-      "name": "yellow20",
-      "value": "#fddc69"
+      "name": "field02-5",
+      "value": "#393939"
     },
     {
-      "name": "orange40-hover",
-      "value": "#fa6800"
-    },
-    {
-      "name": "magenta60",
-      "value": "#d02670"
-    },
-    {
-      "name": "purple80-hover",
-      "value": "#5b24ad"
-    },
-    {
-      "name": "cyan100",
-      "value": "#061727"
-    },
-    {
-      "name": "green20",
-      "value": "#a7f0ba"
-    },
-    {
-      "name": "cool-gray40-hover",
-      "value": "#9199a1"
+      "name": "layer-selected-hover01-1",
+      "value": "#474747"
     },
     {
       "name": "primary",
-      "value": "#0f62fe"
+      "value": "#002d9c"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "IBM Carbon — IBM's open-source enterprise design system.",
-  "dos": ""
+  "type": [
+    {
+      "name": "mono",
+      "fontFamily": "\"IBM Plex Mono\", Menlo, \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "sans",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, -apple-system, BlinkMacSystemFont, \".SFNSText-Regular\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "serif",
+      "fontFamily": "\"IBM Plex Serif\", Georgia, Times, serif",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, -apple-system, BlinkMacSystemFont, \".SFNSText-Regular\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#002d9c",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#da1e28",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#002d9c",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#42be65",
+      "textColor": "#161616",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Carbon — Industrial enterprise system, IBM Plex typography and 10-step gray/blue scales",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#161616` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002d9c` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `IBM Plex Mono` across 4 type steps.\n- **Component Geometry**: Buttons (`0px`), cards (`0px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

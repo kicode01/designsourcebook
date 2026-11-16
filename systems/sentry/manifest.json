@@ -4,12 +4,11 @@
   "description": "Dark dashboard, data-dense, pink-purple accent",
   "style": "Dark dashboard, data-dense, pink-purple accent",
   "category": "Developer Tools & Platforms",
-  "theme": "light",
+  "theme": "dark",
   "tags": [
-    "dark",
     "dashboard",
     "developer-tools",
-    "light"
+    "dark"
   ],
   "homepage": "https://sentry.io",
   "license": "proprietary",
@@ -24,15 +23,30 @@
   "tokens": {
     "colors": 21,
     "typography": 15,
-    "components": 5
+    "components": 9
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/getsentry/sentry"
+  },
+  "popularity": {
+    "rank": 162,
+    "stars": 45787,
+    "forks": 4980,
+    "npmDownloads": 0,
+    "score": 45787,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

@@ -3,13 +3,584 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#fcebe6",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "3px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Design System is published by CMS, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "color-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-inverse",
+      "value": "#00395e"
+    },
+    {
+      "name": "color-border",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "color-border-dark",
+      "value": "#0f1e38"
+    },
+    {
+      "name": "color-border-inverse",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-error-lightest",
+      "value": "#fef5f7"
+    },
+    {
+      "name": "color-error-lighter",
+      "value": "#f7bbc5"
+    },
+    {
+      "name": "color-error-light",
+      "value": "#eb6077"
+    },
+    {
+      "name": "color-error",
+      "value": "#e31c3d"
+    },
+    {
+      "name": "color-error-dark",
+      "value": "#cc1937"
+    },
+    {
+      "name": "color-error-darker",
+      "value": "#9f142b"
+    },
+    {
+      "name": "color-error-darkest",
+      "value": "#720e1f"
+    },
+    {
+      "name": "color-focus-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-focus-dark",
+      "value": "#bd13b8"
+    },
+    {
+      "name": "color-primary-lightest",
+      "value": "#e6f1f8"
+    },
+    {
+      "name": "color-primary-lighter",
+      "value": "#b3d4eb"
+    },
+    {
+      "name": "color-primary-light",
+      "value": "#4d9cd0"
+    },
+    {
+      "name": "color-primary",
+      "value": "#0071bc"
+    },
+    {
+      "name": "color-primary-dark",
+      "value": "#0066a9"
+    },
+    {
+      "name": "color-primary-darker",
+      "value": "#004f84"
+    },
+    {
+      "name": "color-primary-darkest",
+      "value": "#00395e"
+    },
+    {
+      "name": "color-secondary-lightest",
+      "value": "#e7f3e7"
+    },
+    {
+      "name": "color-secondary-lighter",
+      "value": "#b8dcb7"
+    },
+    {
+      "name": "color-secondary-light",
+      "value": "#59ac56"
+    },
+    {
+      "name": "color-secondary",
+      "value": "#12890e"
+    },
+    {
+      "name": "color-secondary-dark",
+      "value": "#107b0d"
+    },
+    {
+      "name": "color-secondary-darker",
+      "value": "#0d600a"
+    },
+    {
+      "name": "color-secondary-darkest",
+      "value": "#094507"
+    },
+    {
+      "name": "color-accent-primary-lightest",
+      "value": "#fcebe6"
+    },
+    {
+      "name": "color-accent-primary-lighter",
+      "value": "#f5c3b3"
+    },
+    {
+      "name": "color-accent-primary-light",
+      "value": "#e7724f"
+    },
+    {
+      "name": "color-accent-primary",
+      "value": "#dd3603"
+    },
+    {
+      "name": "color-accent-primary-dark",
+      "value": "#c73103"
+    },
+    {
+      "name": "color-accent-primary-darker",
+      "value": "#9b2602"
+    },
+    {
+      "name": "color-accent-primary-darkest",
+      "value": "#6f1b02"
+    },
+    {
+      "name": "color-info-lightest",
+      "value": "#e6f9fd"
+    },
+    {
+      "name": "color-info-lighter",
+      "value": "#b3ecf8"
+    },
+    {
+      "name": "color-info-light",
+      "value": "#4ed2ee"
+    },
+    {
+      "name": "color-info",
+      "value": "#02bfe7"
+    },
+    {
+      "name": "color-info-dark",
+      "value": "#02acd0"
+    },
+    {
+      "name": "color-info-darker",
+      "value": "#0186a2"
+    },
+    {
+      "name": "color-info-darkest",
+      "value": "#016074"
+    },
+    {
+      "name": "color-success-lightest",
+      "value": "#f6faf5"
+    },
+    {
+      "name": "color-success-lighter",
+      "value": "#b8dcb7"
+    },
+    {
+      "name": "color-success-light",
+      "value": "#59ac56"
+    },
+    {
+      "name": "color-success",
+      "value": "#12890e"
+    },
+    {
+      "name": "color-success-dark",
+      "value": "#107b0d"
+    },
+    {
+      "name": "color-success-darker",
+      "value": "#0d600a"
+    },
+    {
+      "name": "color-success-darkest",
+      "value": "#094507"
+    },
+    {
+      "name": "disabled",
+      "value": "#5a5a5a"
+    },
+    {
+      "name": "error",
+      "value": "#e31c3d"
+    },
+    {
+      "name": "focus",
+      "value": "#004f84"
+    },
+    {
+      "name": "error-inverse",
+      "value": "#ffffff"
+    },
+    {
+      "name": "success",
+      "value": "#ffffff"
+    },
+    {
+      "name": "rdp-accent-color",
+      "value": "#0071bc"
+    },
+    {
+      "name": "info",
+      "value": "#0071bc"
+    },
+    {
+      "name": "rdp-background-color",
+      "value": "#e6f1f8"
+    },
+    {
+      "name": "color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-black",
+      "value": "#000000"
+    },
+    {
+      "name": "color-base",
+      "value": "#262626"
+    },
+    {
+      "name": "color-base-inverse",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-gray-lightest",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "color-gray-lighter",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "color-gray-light",
+      "value": "#a6a6a6"
+    },
+    {
+      "name": "color-gray",
+      "value": "#808080"
+    },
+    {
+      "name": "color-gray-dark",
+      "value": "#5a5a5a"
+    },
+    {
+      "name": "color-gray-darker",
+      "value": "#404040"
+    },
+    {
+      "name": "color-gray-darkest",
+      "value": "#262626"
+    },
+    {
+      "name": "color-muted",
+      "value": "#5a5a5a"
+    },
+    {
+      "name": "color-muted-inverse",
+      "value": "#e9ecf1"
+    },
+    {
+      "name": "color-warn-lightest",
+      "value": "#fef9e9"
+    },
+    {
+      "name": "color-warn-lighter",
+      "value": "#fdedbc"
+    },
+    {
+      "name": "color-warn-light",
+      "value": "#fad662"
+    },
+    {
+      "name": "color-warn",
+      "value": "#f8c41f"
+    },
+    {
+      "name": "color-warn-dark",
+      "value": "#dfb01c"
+    },
+    {
+      "name": "color-warn-darker",
+      "value": "#ae8916"
+    },
+    {
+      "name": "color-warn-darkest",
+      "value": "#7c6210"
+    },
+    {
+      "name": "color-visited",
+      "value": "#4c2c92"
+    },
+    {
+      "name": "alert",
+      "value": "#ffffff"
+    },
+    {
+      "name": "hover",
+      "value": "#e6f1f8"
+    },
+    {
+      "name": "unchecked",
+      "value": "#ffffff"
+    },
+    {
+      "name": "inverse",
+      "value": "#f7bbc5"
+    },
+    {
+      "name": "selected",
+      "value": "#0071bc"
+    },
+    {
+      "name": "mobile",
+      "value": "#0071bc"
+    },
+    {
+      "name": "current",
+      "value": "#0071bc"
+    },
+    {
+      "name": "warn",
+      "value": "#262626"
+    },
+    {
+      "name": "completed",
+      "value": "#262626"
+    },
+    {
+      "name": "visited",
+      "value": "#e9ecf1"
+    },
+    {
+      "name": "hover-inverse",
+      "value": "#ffffff"
+    },
+    {
+      "name": "default",
+      "value": "#5a5a5a"
+    },
+    {
+      "name": "primary",
+      "value": "#fcebe6"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-5xl",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-size-4xl",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-5xl-tablet",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-3xl",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "font-size-4xl-mobile",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "font-size-5xl-mobile",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "font-size-3xl-mobile",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "font-size-2xl-mobile",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-2xl",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-xl",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "font-size-lg",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-md",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-heading",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-body",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-button",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-link",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-pagination",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-sm",
+      "fontFamily": "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "textColor": "#000000"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#0071bc"
+    },
+    {
+      "key": "button-3",
+      "kind": "button",
+      "backgroundColor": "#12890e",
+      "textColor": "#ffffff",
+      "rounded": "3px",
+      "padding": "8px 24px",
+      "border": "1px solid rgb(18, 137, 14)"
+    },
+    {
+      "key": "button-4",
+      "kind": "button",
+      "textColor": "#ffffff",
+      "rounded": "3px",
+      "padding": "8px 8px 8px 0px",
+      "border": "1px solid rgba(0, 0, 0, 0)"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#262626",
+      "rounded": "3px",
+      "padding": "8px",
+      "border": "2px solid rgb(38, 38, 38)"
+    },
+    {
+      "key": "input-2",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "2px",
+      "border": "1px solid rgb(118, 118, 118)"
+    },
+    {
+      "key": "alert",
+      "kind": "card",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#262626"
+    },
+    {
+      "key": "alert-2",
+      "kind": "card",
+      "textColor": "#262626",
+      "padding": "8px 32px"
+    },
+    {
+      "key": "alert-3",
+      "kind": "card",
+      "textColor": "#0071bc"
+    },
+    {
+      "key": "alert-4",
+      "kind": "card",
+      "textColor": "#000000"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#fcebe6",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#b8dcb7",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "3px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "U.S. CMS.gov Design System — Crisp light (#ffffff) canvas, Open Sans typography, #fcebe6 brand accent, and 3px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fcebe6` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 20 type steps.\n- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

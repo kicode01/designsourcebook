@@ -10,6 +10,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
+import { listSystems } from "../lib/registry.mjs";
 
 const run = promisify(execFile);
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -31,7 +32,7 @@ if (!cfg) {
 }
 
 const { sources } = JSON.parse(fs.readFileSync(path.join(ROOT, cfg.file), "utf8"));
-const have = new Set(fs.readdirSync(path.join(ROOT, "systems")));
+const have = new Set(listSystems().filter((s) => s.provenance !== "listed").map((s) => s.slug));
 const todo = sources.filter((s) => !have.has(s.slug));
 
 console.log(`${kind}: ${todo.length} pending, ${workers} workers\n`);

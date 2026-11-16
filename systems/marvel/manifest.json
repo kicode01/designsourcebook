@@ -1,43 +1,53 @@
 {
   "name": "marvel",
   "displayName": "Marvel Styleguide",
-  "description": "Marvel Styleguide is published by Marvel, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "style": "Documentation only",
+  "description": "Marvel Styleguide — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, FaktProSoft typography, #ff9e7c brand accent, and 8px corner geometry",
   "category": "Marvel",
   "org": "Marvel",
-  "theme": "unknown",
+  "theme": "light",
   "tags": [
-    "listed",
-    "docs-only",
-    "marvel"
+    "observed",
+    "marvel",
+    "light"
   ],
-  "homepage": "",
-  "license": "unknown",
-  "provenance": "listed",
-  "provenanceNote": "Appears in awesome, gallery. No machine-readable tokens found.",
+  "homepage": "https://marvelapp.com/styleguide",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://marvelapp.com/styleguide in headless Chromium on 2026-11-16 (0 custom properties, 44 sampled elements, 0 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Styleguide — Marvel.",
   "source": {
-    "lists": [
-      "awesome",
-      "gallery"
-    ]
+    "url": "https://marvelapp.com/styleguide"
   },
   "spec": "design.md@alpha",
-  "frameworks": [],
-  "listedNames": [
-    "Marvel Styleguide"
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
   ],
   "tokens": {
-    "colors": 0,
-    "typography": 0,
-    "components": 0
+    "colors": 68,
+    "typography": 2,
+    "components": 16
   },
   "checks": {
     "errors": 0,
     "warnings": 0,
-    "verified": false
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 193,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

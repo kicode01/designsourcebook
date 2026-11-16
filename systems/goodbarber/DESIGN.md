@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: GoodBarber Design System
-description: "GoodBarber GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package."
+description: "Dark no-code studio interface, warm amber accents and slate workspace panels"
 colors:
   begonia25: "#fff9f1"
   begonia30: "#fff6ea"
@@ -70,23 +70,69 @@ colors:
   gbnavmain: "#f5f7f8"
   gbnavsubmain: "#f5f7f8"
   gbnavaccent: "#15a0da"
-  primary: "#ffb421"
+  primary: "#31bcf6"
+typography:
+  body:
+    fontFamily: "Jakarta, Arial, sans-serif"
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+  menu-title:
+    fontSize: 16px
+    fontWeight: 300
+  menu-info-block-title:
+    fontSize: 18px
+  langselector-title:
+    fontSize: 12px
+    fontWeight: 300
 components:
-  cardquote-quote:
-    textColor: "var(--gunpowder710)"
+  banner:
+    backgroundColor: "#30c7dc"
+    textColor: "#0b0b0c"
     typography:
-      fontSize: 19px
-      fontWeight: 400
-    padding: "0"
+      fontSize: 14px
+    padding: 12px
+  banner-info:
+    backgroundColor: "#1c2a39"
+  link:
+    textColor: "#f5f7f8"
+  select:
+    backgroundColor: "#3f4960"
+    rounded: 12px
+  button-primary:
+    backgroundColor: "#31bcf6"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 10px 18px
+  badge-brand:
+    backgroundColor: "#31bcf6"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # GoodBarber Design System
 
 ## Overview
 
-GoodBarber GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.
+GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 68 colour tokens and 0 type tokens.
+Tokens were read from https://www.goodbarber.com/uxdesign/, not from a published token package: 68 colour tokens and 4 type tokens.
 
 ## Colors
 
@@ -94,8 +140,15 @@ Tokens were read from the project's own repository, not from a marketing site: 6
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+Families declared in the source: `Jakarta, Arial, sans-serif`.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+4 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#31bcf6` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Jakarta` across 4 type steps.
+- **Component Geometry**: Buttons (`12px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

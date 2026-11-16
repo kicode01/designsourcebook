@@ -1,22 +1,23 @@
 {
   "name": "overdrive",
   "displayName": "AutoGuru Overdrive",
-  "description": "AutoGuru AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.",
-  "style": "AutoGuru AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.",
+  "description": "AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.",
+  "style": "Crisp light (#e1edfe) canvas, AvertaStandard typography, #01c68c brand accent, and 8px corner geometry",
   "category": "AutoGuru",
   "org": "AutoGuru",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "auto-guru"
+    "auto-guru",
+    "light"
   ],
   "homepage": "https://github.com/autoguru-au/overdrive",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/autoguru-au/overdrive — 11 token files, 35 colours harvested, 33 selected.",
   "source": {
-    "repo": "https://github.com/autoguru-au/overdrive"
+    "repo": "https://github.com/autoguru-au/overdrive",
+    "package": "@autoguru/overdrive"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 33,
-    "typography": 0,
-    "components": 0
+    "typography": 3,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 124,
+    "stars": 49,
+    "forks": 3,
+    "npmDownloads": 2467,
+    "score": 326,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

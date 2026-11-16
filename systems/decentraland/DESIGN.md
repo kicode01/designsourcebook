@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Decentraland UI
-description: "Decentraland Decentraland UI — tokens read from https://github.com/decentraland/ui."
+description: "Crisp light (#ffffff) canvas, system-ui typography, #ff2d55 brand accent, and 8px corner geometry"
 colors:
   background: "#18141a"
   danger: "#ffa900"
@@ -58,15 +58,55 @@ colors:
   non-active-bar-color: "#4f1414"
 typography:
   font-family:
-    fontFamily: "system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif"
+    fontFamily: "system-ui, BlinkMacSystemFont, \"Segoe UI\", Roboto"
+components:
+  button-primary:
+    backgroundColor: "#ff2d55"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ffa900"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ff2d55"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Decentraland UI
 
 ## Overview
 
-Decentraland Decentraland UI — tokens read from https://github.com/decentraland/ui.
+Decentraland UI — tokens read from https://github.com/decentraland/ui.
 
 Tokens were read from the project's own repository, not from a marketing site: 53 colour tokens and 1 type tokens.
 
@@ -78,3 +118,10 @@ Tokens were read from the project's own repository, not from a marketing site: 5
 
 Families declared in the source: `system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#676370` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff2d55` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 1 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

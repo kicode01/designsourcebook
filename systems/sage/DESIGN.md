@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Sage by Kajabi
-description: "Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib."
+description: "Crisp light (#fff) canvas, Noto Sans Hebrew typography, #3e92ee brand accent, and 8px corner geometry"
 colors:
   label-primary-icon-background-accent: "#3e92ee"
   label-danger-background-accent: "#f3988c"
@@ -95,29 +95,58 @@ colors:
   color-combos-published-default-foreground: "#085c37"
   primary: "#3e92ee"
 typography:
-  sage-font-sizes:
-    fontSize: "(
-  xs: rem(12px),
-  sm: rem(12px),
-  md: rem(14px),
-  lg: rem(16px),
-  xl: rem(18px),
-  2xl: rem(20px),
-  3xl: rem(22px),
-  4xl: rem(26px),
-  5xl: rem(28px)
-)"
   sage-font-family:
-    fontFamily: "Noto Sans Hebrew\", \"Arial Hebrew\", \"Rubik\", \"Frank Ruehl\", \"tahoma\", system-ui, sans-serif"
+    fontFamily: "\"Noto Sans Hebrew\", \"Arial Hebrew\", Rubik, \"Frank Ruehl\", tahoma, system-ui, sans-serif"
   sage-font-family-heading:
-    fontFamily: "Noto Sans Hebrew\", \"Arial Hebrew\", \"Rubik\", \"Frank Ruehl\", \"tahoma\", system-ui, sans-serif"
+    fontFamily: "\"Noto Sans Hebrew\", \"Arial Hebrew\", Rubik, \"Frank Ruehl\", tahoma, system-ui, sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#3e92ee"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#f3988c"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#3e92ee"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Sage by Kajabi
 
 ## Overview
 
-Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.
+Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 3 type tokens.
 
@@ -128,3 +157,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 Families declared in the source: `Noto Sans Hebrew", "Arial Hebrew", "Rubik", "Frank Ruehl", "tahoma", system-ui, sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3e92ee` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Noto Sans Hebrew` across 2 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -1,22 +1,23 @@
 {
   "name": "pharos",
   "displayName": "Pharos: JSTOR's Design System",
-  "description": "Pharos: Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.",
-  "style": "Pharos: Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.",
-  "category": "Pharos:",
-  "org": "Pharos:",
+  "description": "Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.",
+  "style": "Crisp light (hsl(0, 0%, 100%)) canvas, GT America typography, hsl(37.1, 95.5%, 56.5%) brand accent, and 8px corner geometry",
+  "category": "JSTOR",
+  "org": "JSTOR",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "pharos"
+    "pharos",
+    "light"
   ],
   "homepage": "https://github.com/ithaka/pharos",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/ithaka/pharos — 6 token files, 34 colours harvested, 33 selected.",
   "source": {
-    "repo": "https://github.com/ithaka/pharos"
+    "repo": "https://github.com/ithaka/pharos",
+    "package": "@ithaka/pharos"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 34,
     "typography": 3,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 109,
+    "stars": 134,
+    "forks": 23,
+    "npmDownloads": 598,
+    "score": 234,
+    "frameworks": [
+      "web-components",
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

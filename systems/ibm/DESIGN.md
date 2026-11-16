@@ -29,81 +29,81 @@ colors:
   primary: "#0f62fe"
 typography:
   display-01:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 60px
     fontWeight: 300
     lineHeight: 1.17
   display-02:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 48px
     fontWeight: 300
     lineHeight: 1.17
   heading-01:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 42px
     fontWeight: 300
     lineHeight: 1.19
   heading-02:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 32px
     fontWeight: 400
     lineHeight: 1.25
   heading-03:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.33
   heading-04:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 20px
     fontWeight: 600
     lineHeight: 1.4
   heading-05:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.4
   body-long-01:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   body-long-02:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 16px
     fontWeight: 600
     lineHeight: 1.5
   body-short-01:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.29
     letterSpacing: 0.16px
   body-short-02:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 14px
     fontWeight: 600
     lineHeight: 1.29
     letterSpacing: 0.16px
   caption-01:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
     letterSpacing: 0.32px
   code-01:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
     letterSpacing: 0.16px
   code-02:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   mono-display:
-    fontFamily: IBM Plex Sans
+    fontFamily: "\"IBM Plex Sans\""
     fontSize: 42px
     fontWeight: 400
     lineHeight: 1.19
@@ -124,6 +124,26 @@ components:
     textColor: "#ffffff"
   distinctive-tile:
     backgroundColor: "#f4f4f4"
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 9px 13px
+  badge-brand:
+    backgroundColor: "#0f62fe"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 16px
 ---
 
 # Design System: IBM

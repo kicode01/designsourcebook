@@ -22,15 +22,31 @@
   "tokens": {
     "colors": 23,
     "typography": 6,
-    "components": 4
+    "components": 9
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/pinterest/gestalt",
+    "package": "gestalt"
+  },
+  "popularity": {
+    "rank": 39,
+    "stars": 4384,
+    "forks": 388,
+    "npmDownloads": 49723,
+    "score": 6791,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

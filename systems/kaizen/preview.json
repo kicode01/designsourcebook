@@ -376,341 +376,394 @@
   "type": [
     {
       "name": "typography-data-large-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-large-font-size, 5.25rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-data-large-units-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-large-units-font-size, 2.625rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-data-medium-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-medium-font-size, 3rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-data-medium-units-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-medium-units-font-size, 1.5rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-data-small-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-small-font-size, 1.5rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-data-small-units-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-small-units-font-size, 1.125rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-display-0-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-display-0-font-size, 4.5rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-1-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-1-font-size, 2.125rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-2-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-2-font-size, 1.75rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-3-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-3-font-size, 1.375rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-4-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-4-font-size, 1.125rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-5-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-5-font-size, 1rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-6-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-6-font-size, 0.875rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-intro-lede-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(\r\n  --typography-paragraph-intro-lede-font-size,\r\n  1.25rem\r\n)",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-body-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-paragraph-body-font-size, 1rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-small-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-paragraph-small-font-size, 0.875rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-extra-small-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(\r\n  --typography-paragraph-extra-small-font-size,\r\n  0.75rem\r\n)",
-      "px": 16
-    },
-    {
-      "name": "typography-button-primary-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-button-primary-font-size, 1.125rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-button-secondary-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-button-secondary-font-size, 1rem)",
-      "px": 16
-    },
-    {
-      "name": "typography-data-large-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-data-large-units-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-data-medium-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-data-medium-units-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-data-small-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-data-small-units-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-display-0-font-family",
-      "fontFamily": "Tiempos Headline\", Georgia, serif",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-1-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-2-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-3-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-4-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-5-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-heading-6-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-intro-lede-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-body-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-small-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-paragraph-extra-small-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-button-primary-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "typography-button-secondary-font-family",
-      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
-      "px": 16
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "5.25rem",
+      "px": 84
     },
     {
       "name": "data-large",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-large-font-size, 5.25rem)",
-      "px": 16
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "5.25rem",
+      "px": 84
     },
     {
-      "name": "data-large-units",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-large-units-font-size, 2.625rem)",
-      "px": 16
-    },
-    {
-      "name": "data-medium",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-medium-font-size, 3rem)",
-      "px": 16
-    },
-    {
-      "name": "data-medium-units",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-medium-units-font-size, 1.5rem)",
-      "px": 16
-    },
-    {
-      "name": "data-small",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-small-font-size, 1.5rem)",
-      "px": 16
-    },
-    {
-      "name": "data-small-units",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-data-small-units-font-size, 1.125rem)",
-      "px": 16
+      "name": "typography-display-0-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "4.5rem",
+      "px": 72
     },
     {
       "name": "display0",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-display-0-font-size, 4.5rem)",
-      "px": 16
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "typography-data-medium-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "data-medium",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "typography-data-large-units-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.625rem",
+      "px": 42
+    },
+    {
+      "name": "data-large-units",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.625rem",
+      "px": 42
+    },
+    {
+      "name": "typography-heading-1-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "2.125rem",
+      "px": 34
     },
     {
       "name": "heading1",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-1-font-size, 2.125rem)",
-      "px": 16
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "typography-heading-2-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1.75rem",
+      "px": 28
     },
     {
       "name": "heading2",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-2-font-size, 1.75rem)",
-      "px": 16
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "typography-data-medium-units-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typography-data-small-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "data-medium-units",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "data-small",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typography-heading-3-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1.375rem",
+      "px": 22
     },
     {
       "name": "heading3",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-3-font-size, 1.375rem)",
-      "px": 16
-    },
-    {
-      "name": "heading4",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-4-font-size, 1.125rem)",
-      "px": 16
-    },
-    {
-      "name": "heading5",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-5-font-size, 1rem)",
-      "px": 16
-    },
-    {
-      "name": "heading6",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-heading-6-font-size, 0.875rem)",
-      "px": 16
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1.375rem",
+      "px": 22
     },
     {
       "name": "paragraph-intro-lede",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-paragraph-intro-lede-font-size, 1.25rem)",
-      "px": 16
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
     },
     {
-      "name": "paragraph-body",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-paragraph-body-font-size, 1rem)",
-      "px": 16
+      "name": "typography-data-small-units-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
     },
     {
-      "name": "paragraph-small",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-paragraph-small-font-size, 0.875rem)",
-      "px": 16
+      "name": "typography-heading-4-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1.125rem",
+      "px": 18
     },
     {
-      "name": "paragraph-extra-small",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-paragraph-extra-small-font-size, 0.75rem)",
-      "px": 16
+      "name": "typography-button-primary-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "data-small-units",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "heading4",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1.125rem",
+      "px": 18
     },
     {
       "name": "button-primary",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-button-primary-font-size, 1.125rem)",
-      "px": 16
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
     },
     {
-      "name": "button-secondary",
-      "fontFamily": "system-ui",
-      "fontSize": "var(--typography-button-secondary-font-size, 1rem)",
-      "px": 16
-    },
-    {
-      "name": "icon-font-size",
-      "fontFamily": "system-ui",
+      "name": "typography-heading-5-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
+      "name": "typography-paragraph-body-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-button-secondary-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-data-large-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-large-units-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-medium-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-medium-units-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-small-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-small-units-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-display-0-font-family",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-1-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-2-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-3-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-4-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-5-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-6-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-intro-lede-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-body-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-small-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-extra-small-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-primary-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-secondary-font-family",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "heading5",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "paragraph-body",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "button-secondary",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "icon-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-6-font-size",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "typography-paragraph-small-font-size",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "heading6",
+      "fontFamily": "\"Tiempos Headline\", Georgia, serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "paragraph-small",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "paragraph-extra-small",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
       "name": "button-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Inter, \"Noto Sans\", Helvetica, Arial, sans-serif",
       "fontSize": "0.75rem",
       "px": 12
     }
   ],
-  "components": [],
-  "overview": "Kaizen Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0168b3",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#c03d4a",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0168b3",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#378a72",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Kaizen — Crisp light (#ffffff) canvas, Inter typography, #0168b3 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0168b3` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Inter` across 57 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

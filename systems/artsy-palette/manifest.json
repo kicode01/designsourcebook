@@ -1,22 +1,23 @@
 {
   "name": "artsy-palette",
   "displayName": "Artsy Palette",
-  "description": "Artsy Artsy Palette — tokens read from https://github.com/artsy/palette.",
-  "style": "Artsy Artsy Palette — tokens read from https://github.com/artsy/palette.",
+  "description": "Artsy Palette — tokens read from https://github.com/artsy/palette.",
+  "style": "Crisp light (#FFFFFF) canvas, ll-unica77 typography, #1023D7 brand accent, and 8px corner geometry",
   "category": "Artsy",
   "org": "Artsy",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "artsy"
+    "artsy",
+    "light"
   ],
   "homepage": "https://github.com/artsy/palette",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/artsy/palette — 2 token files, 28 colours harvested, 27 selected.",
   "source": {
-    "repo": "https://github.com/artsy/palette"
+    "repo": "https://github.com/artsy/palette",
+    "package": "@artsy/palette"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 28,
-    "typography": 0,
-    "components": 0
+    "typography": 2,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 98,
+    "stars": 223,
+    "forks": 45,
+    "npmDownloads": 40903,
+    "score": 2315,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

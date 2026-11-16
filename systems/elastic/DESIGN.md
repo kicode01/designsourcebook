@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Elastic UI
-description: "Elastic Elastic UI — tokens read from https://github.com/elastic/eui."
+description: "Dark (#000) canvas, Helvetica Neue typography, #EE72A6 brand accent, and 6px corner geometry"
 colors:
   danger: "#000"
   eui-table-actions-border-color: "#2B394F"
@@ -108,14 +108,60 @@ typography:
   l:
     fontSize: 30px
   datepicker-font-size:
-    fontSize: "0.8rem !default"
+    fontSize: 0.8rem
+    fontFamily: null
+  font-size:
+    fontSize: 1rem
+  datepicker-font-family:
+    fontFamily: "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#EE72A6"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#FFC9C2"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#000"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#000"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#EE72A6"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#24C292"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Elastic UI
 
 ## Overview
 
-Elastic Elastic UI — tokens read from https://github.com/elastic/eui.
+Elastic UI — tokens read from https://github.com/elastic/eui.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 7 type tokens.
 
@@ -126,3 +172,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#000) canvas paired with `#000` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#EE72A6` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Helvetica Neue` across 9 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: PatternFly
-description: "Red Hat PatternFly — open-source design system for enterprise UIs."
+description: "Open-source enterprise IT console, Red Hat Display/Text and structured status tokens"
 colors:
   v6-chart-global-danger-color-100: "#b1380b"
   t-global-background-color-300: "#e0e0e0"
@@ -93,21 +93,168 @@ colors:
   v6-c-button-m-unread-hover-color: "#ffffff"
   v6-c-label-m-custom-color: "#ffffff"
   v6-c-label-m-purple-m-outline-m-clickable-hover-bord: "#876fd4"
-  primary: "#004d99"
+  primary: "#0066cc"
+typography:
+  t-global-font-family-300:
+    fontFamily: "\"Red Hat Mono\", RedHatMono, \"Courier New\", Courier, monospace"
+  t-global-font-family-body-legacy:
+    fontFamily: "redhattext, helvetica, arial, sans-serif"
+  t-global-font-family-heading-legacy:
+    fontFamily: "redhatdisplay, helvetica, arial, sans-serif"
+  t-global-font-family-mono:
+    fontFamily: "\"Red Hat Mono\", RedHatMono, \"Courier New\", Courier, monospace"
+  t-global-font-family-mono-legacy:
+    fontFamily: "redhatmono, liberationmono, consolas, sfmono-regular, menlo, monaco, \"courier new\", monospace"
+  v6-c-alert-font-size:
+    fontSize: 0.875rem
+  v6-c-back-to-top-c-button-font-size:
+    fontSize: 0.75rem
+  v6-c-badge-font-size:
+    fontSize: 0.75rem
+  v6-c-banner-font-size:
+    fontSize: 0.875rem
+  v6-c-button-font-size:
+    fontSize: 0.875rem
+  v6-c-button-m-display-lg-font-size:
+    fontSize: 0.875rem
+  v6-c-button-m-link-m-display-lg-font-size:
+    fontSize: 0.875rem
+  v6-c-calendar-month-font-size:
+    fontSize: 0.875rem
+  v6-c-content-font-size:
+    fontSize: 1rem
+  v6-c-content-h1-font-size:
+    fontSize: 1.5rem
+  v6-c-content-h2-font-size:
+    fontSize: 1.25rem
+  v6-c-content-h3-font-size:
+    fontSize: 1.125rem
+  v6-c-content-h4-font-size:
+    fontSize: 1rem
+  v6-c-content-h5-font-size:
+    fontSize: 1rem
+  v6-c-content-h6-font-size:
+    fontSize: 1rem
+  v6-c-content-m-editorial-font-size:
+    fontSize: 1rem
+  v6-c-content-m-editorial-small-font-size:
+    fontSize: 0.875rem
+  v6-c-content-small-font-size:
+    fontSize: 0.875rem
+  v6-c-data-list-font-size:
+    fontSize: 0.75rem
+  v6-c-data-list-m-compact-font-size:
+    fontSize: 0.75rem
+  v6-c-empty-state-body-font-size:
+    fontSize: 1rem
+  v6-c-form-control-font-size:
+    fontSize: 0.875rem
+  v6-c-helper-text-font-size:
+    fontSize: 0.75rem
+  v6-c-label-font-size:
+    fontSize: 0.75rem
+  v6-c-label-m-compact-font-size:
+    fontSize: 0.75rem
+  v6-c-menu-toggle-font-size:
+    fontSize: 0.875rem
+  v6-c-nav-font-size:
+    fontSize: 0.875rem
+  v6-c-popover-font-size:
+    fontSize: 0.75rem
+  v6-c-switch-font-size:
+    fontSize: 0.875rem
+  v6-c-table-cell-font-size:
+    fontSize: 0.875rem
+  v6-c-timestamp-font-size:
+    fontSize: 0.75rem
+  v6-c-title-m-2xl-font-size:
+    fontSize: 1.5rem
+  v6-c-title-m-3xl-font-size:
+    fontSize: 1.75rem
+  v6-c-title-m-4xl-font-size:
+    fontSize: 2.25rem
+  v6-c-title-m-h1-font-size:
+    fontSize: 1.5rem
+  v6-c-title-m-h2-font-size:
+    fontSize: 1.25rem
+  v6-c-title-m-h3-font-size:
+    fontSize: 1.125rem
+  v6-c-title-m-h4-font-size:
+    fontSize: 1rem
+  v6-c-title-m-h5-font-size:
+    fontSize: 1rem
+  v6-c-title-m-h6-font-size:
+    fontSize: 1rem
+  v6-c-title-m-lg-font-size:
+    fontSize: 1.125rem
+  v6-c-title-m-md-font-size:
+    fontSize: 1rem
+  v6-c-title-m-xl-font-size:
+    fontSize: 1.25rem
+  v6-c-toolbar-font-size:
+    fontSize: 0.875rem
+components:
+  button-primary:
+    backgroundColor: "#0066cc"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#b1380b"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0066cc"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#3d7019"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 16px
 ---
 
 # PatternFly
 
 ## Overview
 
-Red Hat PatternFly — open-source design system for enterprise UIs.
+Red Hat PatternFly — tokens imported from @patternfly/react-tokens.
 
-Tokens were read from `@patternfly/react-tokens@6.7.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@patternfly/react-tokens@6.7.0`, not from a marketing site: 91 colour tokens and 49 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `"Red Hat Mono", RedHatMono, "Courier New", Courier, monospace`, `redhattext, helvetica, arial, sans-serif`, `redhatdisplay, helvetica, arial, sans-serif`, `redhatmono, liberationmono, consolas, sfmono-regular, menlo, monaco, "courier new", monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0066cc` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Red Hat Mono` across 49 type steps.
+- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

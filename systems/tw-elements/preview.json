@@ -1,0 +1,436 @@
+{
+  "canvas": "#fcfcfd",
+  "surface": "#4f4f4f",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#d9e4f3",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "tw-ring-offset-color",
+      "value": "#fff"
+    },
+    {
+      "name": "default-value",
+      "value": "#3B71CA"
+    },
+    {
+      "name": "gradient-color",
+      "value": "#fbfbfb"
+    },
+    {
+      "name": "primary-default",
+      "value": "#3B71CA"
+    },
+    {
+      "name": "primary-50",
+      "value": "#F1F5FB"
+    },
+    {
+      "name": "primary-100",
+      "value": "#E3EBF7"
+    },
+    {
+      "name": "primary-200",
+      "value": "#C7D7F0"
+    },
+    {
+      "name": "primary-300",
+      "value": "#ABC2E8"
+    },
+    {
+      "name": "primary-400",
+      "value": "#8FAEE0"
+    },
+    {
+      "name": "primary-500",
+      "value": "#6590D5"
+    },
+    {
+      "name": "primary-600",
+      "value": "#3061AF"
+    },
+    {
+      "name": "primary-700",
+      "value": "#285192"
+    },
+    {
+      "name": "primary-800",
+      "value": "#204075"
+    },
+    {
+      "name": "primary-900",
+      "value": "#183058"
+    },
+    {
+      "name": "primary-accent-100",
+      "value": "#d9e4f3"
+    },
+    {
+      "name": "primary-accent-200",
+      "value": "#cedbee"
+    },
+    {
+      "name": "primary-accent-300",
+      "value": "#386bc0"
+    },
+    {
+      "name": "secondary-default",
+      "value": "#9FA6B2"
+    },
+    {
+      "name": "secondary-50",
+      "value": "#F8F9F9"
+    },
+    {
+      "name": "secondary-100",
+      "value": "#F1F2F4"
+    },
+    {
+      "name": "secondary-200",
+      "value": "#E4E6E9"
+    },
+    {
+      "name": "secondary-300",
+      "value": "#D6D9DE"
+    },
+    {
+      "name": "secondary-400",
+      "value": "#C8CCD3"
+    },
+    {
+      "name": "secondary-500",
+      "value": "#B3B9C2"
+    },
+    {
+      "name": "secondary-600",
+      "value": "#848D9C"
+    },
+    {
+      "name": "secondary-700",
+      "value": "#6B7585"
+    },
+    {
+      "name": "secondary-800",
+      "value": "#565D6B"
+    },
+    {
+      "name": "secondary-900",
+      "value": "#404650"
+    },
+    {
+      "name": "secondary-accent-300",
+      "value": "#979ea9"
+    },
+    {
+      "name": "success-default",
+      "value": "#14A44D"
+    },
+    {
+      "name": "success-50",
+      "value": "#EAFCF2"
+    },
+    {
+      "name": "success-100",
+      "value": "#D6FAE4"
+    },
+    {
+      "name": "success-200",
+      "value": "#ACF5C9"
+    },
+    {
+      "name": "success-300",
+      "value": "#83F0AE"
+    },
+    {
+      "name": "success-400",
+      "value": "#59EA93"
+    },
+    {
+      "name": "success-500",
+      "value": "#1CE26B"
+    },
+    {
+      "name": "success-600",
+      "value": "#118C42"
+    },
+    {
+      "name": "success-700",
+      "value": "#0E7537"
+    },
+    {
+      "name": "success-800",
+      "value": "#0C5D2C"
+    },
+    {
+      "name": "success-900",
+      "value": "#094621"
+    },
+    {
+      "name": "success-accent-300",
+      "value": "#139c49"
+    },
+    {
+      "name": "danger-default",
+      "value": "#DC4C64"
+    },
+    {
+      "name": "danger-50",
+      "value": "#FCF2F4"
+    },
+    {
+      "name": "danger-100",
+      "value": "#FAE5E9"
+    },
+    {
+      "name": "danger-200",
+      "value": "#F5CCD3"
+    },
+    {
+      "name": "danger-300",
+      "value": "#F0B2BD"
+    },
+    {
+      "name": "danger-400",
+      "value": "#EB99A6"
+    },
+    {
+      "name": "danger-500",
+      "value": "#E37285"
+    },
+    {
+      "name": "danger-600",
+      "value": "#D42A46"
+    },
+    {
+      "name": "danger-700",
+      "value": "#B0233A"
+    },
+    {
+      "name": "danger-800",
+      "value": "#8D1C2F"
+    },
+    {
+      "name": "danger-900",
+      "value": "#6A1523"
+    },
+    {
+      "name": "danger-accent-300",
+      "value": "#d1485f"
+    },
+    {
+      "name": "warning-default",
+      "value": "#E4A11B"
+    },
+    {
+      "name": "warning-50",
+      "value": "#FDF8EF"
+    },
+    {
+      "name": "warning-100",
+      "value": "#FBF2DE"
+    },
+    {
+      "name": "warning-200",
+      "value": "#F7E4BE"
+    },
+    {
+      "name": "warning-300",
+      "value": "#F4D79D"
+    },
+    {
+      "name": "warning-400",
+      "value": "#F0C97D"
+    },
+    {
+      "name": "warning-500",
+      "value": "#EAB54C"
+    },
+    {
+      "name": "warning-600",
+      "value": "#C48A17"
+    },
+    {
+      "name": "warning-700",
+      "value": "#A37313"
+    },
+    {
+      "name": "warning-800",
+      "value": "#825C0F"
+    },
+    {
+      "name": "warning-900",
+      "value": "#62450B"
+    },
+    {
+      "name": "warning-accent-300",
+      "value": "#d9991a"
+    },
+    {
+      "name": "info-default",
+      "value": "#54B4D3"
+    },
+    {
+      "name": "info-50",
+      "value": "#F3FAFC"
+    },
+    {
+      "name": "info-100",
+      "value": "#E7F4F9"
+    },
+    {
+      "name": "info-200",
+      "value": "#CEE9F2"
+    },
+    {
+      "name": "info-300",
+      "value": "#B6DFEC"
+    },
+    {
+      "name": "info-400",
+      "value": "#9ED4E6"
+    },
+    {
+      "name": "info-500",
+      "value": "#79C4DC"
+    },
+    {
+      "name": "info-600",
+      "value": "#34A4CA"
+    },
+    {
+      "name": "info-700",
+      "value": "#2B89A8"
+    },
+    {
+      "name": "info-800",
+      "value": "#236D86"
+    },
+    {
+      "name": "info-900",
+      "value": "#1A5265"
+    },
+    {
+      "name": "info-accent-300",
+      "value": "#50abc8"
+    },
+    {
+      "name": "surface-default",
+      "value": "#4f4f4f"
+    },
+    {
+      "name": "surface-dark",
+      "value": "#424242"
+    },
+    {
+      "name": "body-default",
+      "value": "#fff"
+    },
+    {
+      "name": "body-dark",
+      "value": "#303030"
+    },
+    {
+      "name": "background-color",
+      "value": "#fcfcfd"
+    },
+    {
+      "name": "accent-100",
+      "value": "#d9e4f3"
+    },
+    {
+      "name": "accent-200",
+      "value": "#cedbee"
+    },
+    {
+      "name": "accent-300",
+      "value": "#386bc0"
+    },
+    {
+      "name": "flag",
+      "value": "rgb(1, 2, 3)"
+    },
+    {
+      "name": "primary",
+      "value": "#d9e4f3"
+    }
+  ],
+  "type": [
+    {
+      "name": "html",
+      "fontFamily": "Roboto, sans-serif",
+      "px": 16,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#d9e4f3",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#DC4C64",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#d9e4f3",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#14A44D",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Tailwind Elements — Tailwind-based component kit, Roboto typography and Material-inspired indigo accents",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fcfcfd) canvas paired with `#4f4f4f` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#d9e4f3` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Roboto` across 1 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

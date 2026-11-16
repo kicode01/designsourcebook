@@ -1,440 +1,686 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
+  "canvas": "#fff",
+  "surface": "#fff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#7f5700",
+  "brand": "#4f378b",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "999px",
   "ink": "#0b0b0c",
   "palette": [
     {
-      "name": "md-sys-color-background",
-      "value": "#fff8f3"
-    },
-    {
-      "name": "md-sys-color-on-background",
-      "value": "#201b12"
-    },
-    {
-      "name": "md-sys-color-surface",
-      "value": "#fff8f3"
-    },
-    {
-      "name": "md-sys-color-surface-dim",
-      "value": "#e4d8cb"
-    },
-    {
-      "name": "md-sys-color-surface-bright",
-      "value": "#fff8f3"
-    },
-    {
-      "name": "md-sys-color-surface-container-lowest",
-      "value": "#ffffff"
-    },
-    {
-      "name": "md-sys-color-surface-container-low",
-      "value": "#fef2e4"
-    },
-    {
-      "name": "md-sys-color-surface-container",
-      "value": "#f8ecde"
-    },
-    {
-      "name": "md-sys-color-surface-container-high",
-      "value": "#f3e6d8"
-    },
-    {
-      "name": "md-sys-color-surface-container-highest",
-      "value": "#ede1d3"
-    },
-    {
-      "name": "md-sys-color-on-surface",
-      "value": "#201b12"
-    },
-    {
-      "name": "md-sys-color-surface-variant",
-      "value": "#f2e0c9"
-    },
-    {
-      "name": "md-sys-color-on-surface-variant",
-      "value": "#504534"
-    },
-    {
-      "name": "md-sys-color-inverse-surface",
-      "value": "#362f26"
-    },
-    {
-      "name": "md-sys-color-inverse-on-surface",
-      "value": "#fbefe1"
-    },
-    {
-      "name": "md-sys-color-surface-tint",
-      "value": "#7f5700"
-    },
-    {
-      "name": "md-sys-color-primary",
-      "value": "#7f5700"
-    },
-    {
-      "name": "md-sys-color-on-primary",
-      "value": "#ffffff"
-    },
-    {
-      "name": "md-sys-color-primary-container",
-      "value": "#f7b337"
-    },
-    {
-      "name": "md-sys-color-on-primary-container",
-      "value": "#442d00"
-    },
-    {
-      "name": "md-sys-color-inverse-primary",
-      "value": "#ffba3e"
-    },
-    {
-      "name": "md-sys-color-secondary",
-      "value": "#765a2b"
-    },
-    {
-      "name": "md-sys-color-on-secondary",
-      "value": "#ffffff"
-    },
-    {
-      "name": "md-sys-color-secondary-container",
-      "value": "#ffdca9"
-    },
-    {
-      "name": "md-sys-color-on-secondary-container",
-      "value": "#5c4316"
-    },
-    {
-      "name": "md-sys-color-error",
-      "value": "#ba1a1a"
-    },
-    {
-      "name": "md-sys-color-on-error",
-      "value": "#ffffff"
-    },
-    {
-      "name": "md-sys-color-error-container",
-      "value": "#ffdad6"
-    },
-    {
-      "name": "md-sys-color-on-error-container",
-      "value": "#410002"
-    },
-    {
-      "name": "error0",
+      "name": "md-ref-palette-error0",
       "value": "#000"
     },
     {
-      "name": "error10",
-      "value": "#410e0b"
+      "name": "md-ref-palette-error30",
+      "value": "#8c1d18"
     },
     {
-      "name": "error100",
+      "name": "md-ref-palette-error70",
+      "value": "#ec928e"
+    },
+    {
+      "name": "md-ref-palette-error98",
+      "value": "#fff8f7"
+    },
+    {
+      "name": "md-ref-palette-neutral-variant100",
       "value": "#fff"
+    },
+    {
+      "name": "md-ref-palette-neutral-variant50",
+      "value": "#79747e"
+    },
+    {
+      "name": "md-ref-palette-neutral-variant90",
+      "value": "#e7e0ec"
+    },
+    {
+      "name": "md-ref-palette-neutral0",
+      "value": "#000"
+    },
+    {
+      "name": "md-ref-palette-neutral17",
+      "value": "#2b2930"
+    },
+    {
+      "name": "md-ref-palette-neutral30",
+      "value": "#48464c"
+    },
+    {
+      "name": "md-ref-palette-neutral6",
+      "value": "#141218"
+    },
+    {
+      "name": "md-ref-palette-neutral87",
+      "value": "#ded8e1"
+    },
+    {
+      "name": "md-ref-palette-neutral95",
+      "value": "#f5eff7"
+    },
+    {
+      "name": "md-ref-palette-primary0",
+      "value": "#000"
+    },
+    {
+      "name": "md-ref-palette-primary30",
+      "value": "#4f378b"
+    },
+    {
+      "name": "md-ref-palette-primary70",
+      "value": "#b69df8"
+    },
+    {
+      "name": "md-ref-palette-primary98",
+      "value": "#fef7ff"
+    },
+    {
+      "name": "md-ref-palette-secondary100",
+      "value": "#fff"
+    },
+    {
+      "name": "md-ref-palette-secondary50",
+      "value": "#7a7289"
+    },
+    {
+      "name": "md-ref-palette-secondary90",
+      "value": "#e8def8"
+    },
+    {
+      "name": "md-sys-color-primary",
+      "value": "#6750a4"
+    },
+    {
+      "name": "md-sys-color-primary-fixed",
+      "value": "#eaddff"
+    },
+    {
+      "name": "md-sys-color-secondary",
+      "value": "#625b71"
+    },
+    {
+      "name": "md-sys-color-secondary-fixed",
+      "value": "#e8def8"
+    },
+    {
+      "name": "md-sys-color-error",
+      "value": "#b3261e"
+    },
+    {
+      "name": "md-sys-color-surface",
+      "value": "#fef7ff"
+    },
+    {
+      "name": "md-sys-color-surface-container-low",
+      "value": "#f7f2fa"
+    },
+    {
+      "name": "md-sys-color-on-surface",
+      "value": "#1d1b20"
+    },
+    {
+      "name": "md-sys-color-inverse-primary",
+      "value": "#d0bcff"
+    },
+    {
+      "name": "error20-resolved",
+      "value": "#601410"
+    },
+    {
+      "name": "error60-resolved",
+      "value": "#e46962"
+    },
+    {
+      "name": "error95-resolved",
+      "value": "#fceeee"
+    },
+    {
+      "name": "neutral-variant10-resolved",
+      "value": "#1d1a22"
+    },
+    {
+      "name": "neutral-variant40-resolved",
+      "value": "#605d66"
+    },
+    {
+      "name": "neutral-variant80-resolved",
+      "value": "#cac4d0"
+    },
+    {
+      "name": "neutral-variant99-resolved",
+      "value": "#fffbfe"
+    },
+    {
+      "name": "neutral12-resolved",
+      "value": "#211f26"
+    },
+    {
+      "name": "neutral24-resolved",
+      "value": "#3b383e"
+    },
+    {
+      "name": "neutral50-resolved",
+      "value": "#79767d"
+    },
+    {
+      "name": "neutral80-resolved",
+      "value": "#cac5cd"
+    },
+    {
+      "name": "neutral94-resolved",
+      "value": "#f3edf7"
+    },
+    {
+      "name": "neutral99-resolved",
+      "value": "#fffbff"
+    },
+    {
+      "name": "primary20-resolved",
+      "value": "#381e72"
+    },
+    {
+      "name": "primary60-resolved",
+      "value": "#9a82db"
+    },
+    {
+      "name": "primary95-resolved",
+      "value": "#f6edff"
+    },
+    {
+      "name": "secondary10-resolved",
+      "value": "#1d192b"
+    },
+    {
+      "name": "secondary40-resolved",
+      "value": "#625b71"
+    },
+    {
+      "name": "secondary80-resolved",
+      "value": "#ccc2dc"
+    },
+    {
+      "name": "secondary99-resolved",
+      "value": "#fffbfe"
     },
     {
       "name": "error20",
       "value": "#601410"
     },
     {
-      "name": "error30",
-      "value": "#8c1d18"
-    },
-    {
-      "name": "error40",
-      "value": "#b3261e"
-    },
-    {
-      "name": "error50",
-      "value": "#dc362e"
-    },
-    {
       "name": "error60",
       "value": "#e46962"
-    },
-    {
-      "name": "error70",
-      "value": "#ec928e"
-    },
-    {
-      "name": "error80",
-      "value": "#f2b8b5"
-    },
-    {
-      "name": "error90",
-      "value": "#f9dedc"
     },
     {
       "name": "error95",
       "value": "#fceeee"
     },
     {
-      "name": "error98",
-      "value": "#fff8f7"
-    },
-    {
-      "name": "error99",
-      "value": "#fffbf9"
-    },
-    {
-      "name": "neutral-variant0",
-      "value": "#000"
-    },
-    {
       "name": "neutral-variant10",
       "value": "#1d1a22"
-    },
-    {
-      "name": "neutral-variant100",
-      "value": "#fff"
-    },
-    {
-      "name": "neutral-variant20",
-      "value": "#322f37"
-    },
-    {
-      "name": "neutral-variant30",
-      "value": "#49454f"
     },
     {
       "name": "neutral-variant40",
       "value": "#605d66"
     },
     {
-      "name": "neutral-variant50",
-      "value": "#79747e"
-    },
-    {
-      "name": "neutral-variant60",
-      "value": "#938f99"
-    },
-    {
-      "name": "neutral-variant70",
-      "value": "#aea9b4"
-    },
-    {
       "name": "neutral-variant80",
       "value": "#cac4d0"
-    },
-    {
-      "name": "neutral-variant90",
-      "value": "#e7e0ec"
-    },
-    {
-      "name": "neutral-variant95",
-      "value": "#f5eefa"
-    },
-    {
-      "name": "neutral-variant98",
-      "value": "#fdf7ff"
     },
     {
       "name": "neutral-variant99",
       "value": "#fffbfe"
     },
     {
-      "name": "neutral0",
-      "value": "#000"
-    },
-    {
-      "name": "neutral10",
-      "value": "#1d1b20"
-    },
-    {
-      "name": "neutral100",
-      "value": "#fff"
-    },
-    {
       "name": "neutral12",
       "value": "#211f26"
-    },
-    {
-      "name": "neutral17",
-      "value": "#2b2930"
-    },
-    {
-      "name": "neutral20",
-      "value": "#322f35"
-    },
-    {
-      "name": "neutral22",
-      "value": "#36343b"
     },
     {
       "name": "neutral24",
       "value": "#3b383e"
     },
     {
-      "name": "neutral30",
-      "value": "#48464c"
-    },
-    {
-      "name": "neutral4",
-      "value": "#0f0d13"
-    },
-    {
-      "name": "neutral40",
-      "value": "#605d64"
-    },
-    {
       "name": "neutral50",
       "value": "#79767d"
-    },
-    {
-      "name": "neutral6",
-      "value": "#141218"
-    },
-    {
-      "name": "neutral60",
-      "value": "#938f96"
-    },
-    {
-      "name": "neutral70",
-      "value": "#aea9b1"
     },
     {
       "name": "neutral80",
       "value": "#cac5cd"
     },
     {
-      "name": "neutral87",
-      "value": "#ded8e1"
-    },
-    {
-      "name": "neutral90",
-      "value": "#e6e0e9"
-    },
-    {
-      "name": "neutral92",
-      "value": "#ece6f0"
-    },
-    {
       "name": "neutral94",
       "value": "#f3edf7"
-    },
-    {
-      "name": "neutral95",
-      "value": "#f5eff7"
-    },
-    {
-      "name": "neutral96",
-      "value": "#f7f2fa"
-    },
-    {
-      "name": "neutral98",
-      "value": "#fef7ff"
     },
     {
       "name": "neutral99",
       "value": "#fffbff"
     },
     {
-      "name": "primary0",
-      "value": "#000"
-    },
-    {
-      "name": "primary10",
-      "value": "#21005d"
-    },
-    {
-      "name": "primary100",
-      "value": "#fff"
-    },
-    {
       "name": "primary20",
       "value": "#381e72"
-    },
-    {
-      "name": "primary30",
-      "value": "#4f378b"
-    },
-    {
-      "name": "primary40",
-      "value": "#6750a4"
-    },
-    {
-      "name": "primary50",
-      "value": "#7f67be"
     },
     {
       "name": "primary60",
       "value": "#9a82db"
     },
     {
-      "name": "primary70",
-      "value": "#b69df8"
+      "name": "primary95",
+      "value": "#f6edff"
+    },
+    {
+      "name": "secondary10",
+      "value": "#1d192b"
+    },
+    {
+      "name": "secondary40",
+      "value": "#625b71"
+    },
+    {
+      "name": "secondary80",
+      "value": "#ccc2dc"
+    },
+    {
+      "name": "secondary99",
+      "value": "#fffbfe"
+    },
+    {
+      "name": "md-ref-palette-black",
+      "value": "#000"
+    },
+    {
+      "name": "md-ref-palette-blue80",
+      "value": "#a1c9ff"
+    },
+    {
+      "name": "md-ref-palette-green50",
+      "value": "#128937"
+    },
+    {
+      "name": "md-ref-palette-grey20",
+      "value": "#303030"
+    },
+    {
+      "name": "md-ref-palette-pink0",
+      "value": "#000"
+    },
+    {
+      "name": "md-ref-palette-purple90",
+      "value": "#eedcfe"
+    },
+    {
+      "name": "md-ref-palette-tertiary60",
+      "value": "#b58392"
+    },
+    {
+      "name": "md-sys-color-tertiary-container",
+      "value": "#ffd8e4"
+    },
+    {
+      "name": "blue-variant90-resolved",
+      "value": "#bde9ff"
+    },
+    {
+      "name": "cyan60-resolved",
+      "value": "#009ebb"
+    },
+    {
+      "name": "grey-variant30-resolved",
+      "value": "#444746"
+    },
+    {
+      "name": "orange10-resolved",
+      "value": "#321200"
+    },
+    {
+      "name": "pink95-resolved",
+      "value": "#ffecf6"
+    },
+    {
+      "name": "red70-resolved",
+      "value": "#ff8983"
+    },
+    {
+      "name": "yellow20-resolved",
+      "value": "#4d2600"
+    },
+    {
+      "name": "blue-variant95",
+      "value": "#e0f4ff"
+    },
+    {
+      "name": "cyan70",
+      "value": "#00bbdf"
+    },
+    {
+      "name": "grey-variant40",
+      "value": "#5c5f5e"
+    },
+    {
+      "name": "orange100",
+      "value": "#fff"
+    },
+    {
+      "name": "pink98",
+      "value": "#fff7fc"
+    },
+    {
+      "name": "red80",
+      "value": "#ffb3ae"
     },
     {
       "name": "primary",
-      "value": "#7f5700"
+      "value": "#4f378b"
     }
   ],
   "type": [
     {
-      "name": "catalog-display-xl-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "55px",
-      "px": 55
+      "name": "md-sys-typescale-display-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": "4rem"
     },
     {
-      "name": "catalog-display-m-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "45px",
-      "px": 45
+      "name": "md-sys-typescale-emphasized-display-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 500,
+      "lineHeight": "4rem"
     },
     {
-      "name": "catalog-headline-s-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "24px",
-      "px": 24
+      "name": "md-sys-typescale-display-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": "3.25rem"
     },
     {
-      "name": "catalog-title-l-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "16px",
+      "name": "md-sys-typescale-emphasized-display-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 500,
+      "lineHeight": "3.25rem"
+    },
+    {
+      "name": "md-sys-typescale-display-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": "2.75rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-display-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 500,
+      "lineHeight": "2.75rem"
+    },
+    {
+      "name": "md-sys-typescale-headline-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": "2.5rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-headline-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 500,
+      "lineHeight": "2.5rem"
+    },
+    {
+      "name": "md-sys-typescale-headline-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "fontWeight": 400,
+      "lineHeight": "2.25rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-headline-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "fontWeight": 500,
+      "lineHeight": "2.25rem"
+    },
+    {
+      "name": "md-sys-typescale-headline-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-headline-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "md-sys-typescale-title-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-title-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 500,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "md-ref-typeface-brand",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
       "px": 16
     },
     {
-      "name": "catalog-title-m-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "16px",
+      "name": "md-ref-typeface-plain",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
       "px": 16
     },
     {
-      "name": "playground-code-font-family",
-      "fontFamily": "Google Sans Mono', Menlo, Monaco,\r\n    'Courier New', monospace",
-      "px": 16
+      "name": "md-sys-typescale-body-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "1.5rem"
     },
     {
-      "name": "catalog-title-s-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "14px",
-      "px": 14
+      "name": "md-sys-typescale-emphasized-body-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": "1.5rem"
     },
     {
-      "name": "catalog-body-l-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "14px",
-      "px": 14
+      "name": "md-sys-typescale-title-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": "1.5rem"
     },
     {
-      "name": "catalog-body-m-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "12px",
-      "px": 12
+      "name": "md-sys-typescale-emphasized-title-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
     },
     {
-      "name": "catalog-label-s-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "11px",
-      "px": 11
+      "name": "md-sys-typescale-label-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-label-lg",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "md-sys-typescale-body-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-body-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "md-sys-typescale-title-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-title-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "md-sys-typescale-label-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": "1rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-label-md",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": "1rem"
+    },
+    {
+      "name": "md-sys-typescale-body-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": "1rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-body-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": "1rem"
+    },
+    {
+      "name": "md-sys-typescale-label-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.6875rem",
+      "px": 11,
+      "fontWeight": 500,
+      "lineHeight": "1rem"
+    },
+    {
+      "name": "md-sys-typescale-emphasized-label-sm",
+      "fontFamily": "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif",
+      "fontSize": "0.6875rem",
+      "px": 11,
+      "fontWeight": 700,
+      "lineHeight": "1rem"
     }
   ],
-  "components": [],
-  "overview": "Google Google Material Design — tokens read from https://github.com/material-components/material-web.",
-  "dos": ""
+  "components": [
+    {
+      "key": "md3-segmented-button",
+      "kind": "button",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "border": "none"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "20px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "20px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#4f378b",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "20px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Google Material Design — Material 3 expressive token system, Roboto Flex typography and tonal purple surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#4f378b` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Roboto Flex` across 32 type steps.\n- **Component Geometry**: Buttons (`999px`), cards (`20px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

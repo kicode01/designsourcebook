@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#ff4f40",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "1.875rem",
+  "radius": "30px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -264,316 +264,294 @@
   "type": [
     {
       "name": "type-font-size-step-6",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "61.04px",
       "px": 61.04
     },
     {
+      "name": "font-size-step-6",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2.986rem,2.6276rem + 1.7918vw,3.8147rem)",
+      "px": 61.0352
+    },
+    {
       "name": "type-font-size-step-5",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "48.83px",
       "px": 48.83
     },
     {
+      "name": "font-size-step-5",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2.4883rem,2.2447rem + 1.2182vw,3.0518rem)",
+      "px": 48.8288
+    },
+    {
+      "name": "font-size-step-4",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2.0736rem,1.9145rem + 0.7953vw,2.4414rem)",
+      "px": 39.0624
+    },
+    {
       "name": "type-font-size-step-4",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "39.06px",
       "px": 39.06
     },
     {
       "name": "type-font-size-step-3",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "31.25px",
       "px": 31.25
     },
     {
+      "name": "font-size-step-3",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.728rem,1.6306rem + 0.4868vw,1.9531rem)",
+      "px": 31.2496
+    },
+    {
       "name": "type-font-size-step-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "25px",
       "px": 25
     },
     {
+      "name": "font-size-step-2",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.44rem,1.387rem + 0.2649vw,1.5625rem)",
+      "px": 25
+    },
+    {
       "name": "type-font-size-step-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "20px",
       "px": 20
     },
     {
+      "name": "font-size-step-1",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.2rem,1.1784rem + 0.1081vw,1.25rem)",
+      "px": 20
+    },
+    {
       "name": "type-font-size-step-0",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
-      "name": "font-size-step-2",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.44rem,1.387rem + 0.2649vw,1.5625rem)",
-      "px": 16
-    },
-    {
-      "name": "font-size-step-1",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.2rem,1.1784rem + 0.1081vw,1.25rem)",
-      "px": 16
-    },
-    {
       "name": "font-size-step-0",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "clamp(1rem,1rem + 0vw,1rem)",
       "px": 16
     },
     {
-      "name": "font-size-step-3",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.728rem,1.6306rem + 0.4868vw,1.9531rem)",
-      "px": 16
-    },
-    {
-      "name": "font-size-step-4",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2.0736rem,1.9145rem + 0.7953vw,2.4414rem)",
-      "px": 16
-    },
-    {
-      "name": "font-size-step-5",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2.4883rem,2.2447rem + 1.2182vw,3.0518rem)",
-      "px": 16
-    },
-    {
-      "name": "font-size-step-6",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2.986rem,2.6276rem + 1.7918vw,3.8147rem)",
-      "px": 16
-    },
-    {
       "name": "font-family-display",
-      "fontFamily": "MonzoSansDisplay\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif",
+      "fontFamily": "MonzoSansDisplay, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "px": 16
     },
     {
       "name": "font-family-content",
-      "fontFamily": "MonzoSansText\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "px": 16
     },
     {
       "name": "type-font-size-step-minus-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "12.8px",
       "px": 12.8
     },
     {
       "name": "type-font-size-step-minus-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "10.24px",
       "px": 10.24
     }
   ],
   "components": [
     {
-      "key": "Card_dark",
-      "kind": "card_dark",
+      "key": "button-primary-coral",
+      "kind": "button",
+      "backgroundColor": "#ff4f40",
+      "textColor": "#091723",
+      "rounded": "30px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "button-secondary-navy",
+      "kind": "nav",
+      "backgroundColor": "transparent",
+      "textColor": "#091723",
+      "rounded": "30px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "card-dark",
+      "kind": "card",
       "backgroundColor": "#091723",
       "textColor": "#fff"
     },
     {
-      "key": "Button_usa",
-      "kind": "button_usa",
+      "key": "button-usa",
+      "kind": "button",
       "backgroundColor": "#091723",
       "textColor": "#fff"
     },
     {
-      "key": "Card_light",
-      "kind": "card_light",
+      "key": "card-light",
+      "kind": "card",
       "backgroundColor": "#f2f8f3",
       "textColor": "#091723"
     },
     {
-      "key": "Button_button",
-      "kind": "button_button",
-      "backgroundColor": "#112231!important",
+      "key": "button-button",
+      "kind": "button",
+      "backgroundColor": "#112231",
       "rounded": "30px"
     },
     {
-      "key": "Button_business",
-      "kind": "button_business",
+      "key": "button-business",
+      "kind": "button",
       "backgroundColor": "#218fb7",
-      "textColor": "#fff"
+      "textColor": "#091723"
     },
     {
-      "key": "Card_cardWrapper",
-      "kind": "card_cardwrapper",
-      "textColor": "initial"
-    },
-    {
-      "key": "TabbedCarousel_tab",
-      "kind": "tabbedcarousel_tab",
+      "key": "tabbed-carousel-tab",
+      "kind": "nav",
       "backgroundColor": "#e3ebe4",
       "textColor": "#091723",
       "rounded": "64px",
-      "padding": "8px 16px",
-      "border": "none"
+      "padding": "8px 16px"
     },
     {
-      "key": "ButtonV2_primaryBtn",
-      "kind": "buttonv2_primarybtn",
-      "backgroundColor": "#091723!important",
-      "textColor": "#fff!important",
-      "border": "1px solid #091723!important"
+      "key": "button-v2-primary-btn",
+      "kind": "button",
+      "backgroundColor": "#091723",
+      "textColor": "#fff"
     },
     {
-      "key": "Card_Card",
-      "kind": "card_card",
-      "textColor": "inherit"
+      "key": "button-v2-secondary-btn",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#091723"
     },
     {
-      "key": "ButtonV2_secondaryBtn",
-      "kind": "buttonv2_secondarybtn",
-      "backgroundColor": "transparent!important",
-      "textColor": "#091723!important",
-      "border": "1px solid #091723!important"
-    },
-    {
-      "key": "Banner_Banner",
-      "kind": "banner_banner",
-      "textColor": "inherit"
-    },
-    {
-      "key": "Card_Card-2",
-      "kind": "card_card",
-      "textColor": "inherit"
-    },
-    {
-      "key": "TabbedCarousel_description",
-      "kind": "tabbedcarousel_description",
+      "key": "tabbed-carousel-description",
+      "kind": "nav",
       "textColor": "rgba(9,23,35,.6)"
     },
     {
-      "key": "Navigation_navigationCurtain",
-      "kind": "navigation_navigationcurtain",
+      "key": "navigation-navigation-curtain",
+      "kind": "nav",
       "backgroundColor": "rgba(0,0,0,.3)"
     },
     {
-      "key": "NavigationLinks_navigationLink",
-      "kind": "navigationlinks_navigationlink",
-      "backgroundColor": "unset",
+      "key": "navigation-links-navigation-link",
+      "kind": "nav",
       "textColor": "rgba(9,23,35,.6)",
       "rounded": "8px",
-      "padding": "11px 12px",
-      "border": "unset"
+      "padding": "11px 12px"
     },
     {
-      "key": "NavigationHeader_navigationHeader",
-      "kind": "navigationheader_navigationheader",
+      "key": "navigation-header-navigation-header",
+      "kind": "nav",
       "textColor": "rgba(9,23,35,.6)"
     },
     {
-      "key": "LinkedPageCard_LinkedPageCard",
-      "kind": "linkedpagecard_linkedpagecard",
-      "textColor": "inherit"
-    },
-    {
-      "key": "NavigationContent_navigationContent",
-      "kind": "navigationcontent_navigationcontent",
+      "key": "navigation-content-navigation-content",
+      "kind": "nav",
       "backgroundColor": "#fff",
       "rounded": "0 0 16px 0",
       "padding": "64px 16px 150px"
     },
     {
-      "key": "NavigationLinks_navigationLinksTitle",
-      "kind": "navigationlinks_navigationlinkstitle",
+      "key": "navigation-links-navigation-links-title",
+      "kind": "nav",
       "textColor": "rgba(9,23,35,.6)"
     },
     {
-      "key": "NavigationLandmark_navigationLandmark",
-      "kind": "navigationlandmark_navigationlandmark",
+      "key": "navigation-landmark-navigation-landmark",
+      "kind": "nav",
       "backgroundColor": "#fff",
       "textColor": "rgba(9,23,35,.6)",
       "rounded": "16px",
       "padding": "16px 0"
     },
     {
-      "key": "NavigationLandmark_navigationLandmarkLink",
-      "kind": "navigationlandmark_navigationlandmarklink",
+      "key": "navigation-landmark-navigation-landmark-link",
+      "kind": "nav",
       "backgroundColor": "#f2f8f3",
       "textColor": "#091723",
       "rounded": "8px",
       "padding": "16px"
     },
     {
-      "key": "TabbedContent_TabbedContent",
-      "kind": "tabbedcontent_tabbedcontent",
-      "textColor": "var(--_panel-color-secondary)"
-    },
-    {
-      "key": "NavigationTopLevelItems_navigationSubViewport",
-      "kind": "navigationtoplevelitems_navigationsubviewport",
+      "key": "navigation-top-level-items-navigation-sub-viewport",
+      "kind": "nav",
       "backgroundColor": "#fff"
     },
     {
-      "key": "NavigationSectionSelector_navigationSectionSelector",
-      "kind": "navigationsectionselector_navigationsectionselector",
+      "key": "navigation-section-selector-navigation-section-selector",
+      "kind": "input",
       "backgroundColor": "#f2f8f3",
       "rounded": "64px",
       "padding": "4px"
     },
     {
-      "key": "Callout_dark",
-      "kind": "callout_dark",
+      "key": "callout-dark",
+      "kind": "card",
       "backgroundColor": "#091723",
       "textColor": "#fff"
     },
     {
-      "key": "Callout_light",
-      "kind": "callout_light",
+      "key": "callout-light",
+      "kind": "card",
       "backgroundColor": "#f2f8f3",
-      "textColor": "#fff"
+      "textColor": "#091723"
     },
     {
-      "key": "TableItems_tableItems",
-      "kind": "tableitems_tableitems",
+      "key": "table-items-table-items",
+      "kind": "nav",
       "backgroundColor": "#f2f8f3"
     },
     {
-      "key": "TableItems_tableItems-2",
-      "kind": "tableitems_tableitems",
+      "key": "table-items-table-items-2",
+      "kind": "nav",
       "backgroundColor": "#f2f8f3"
     },
     {
-      "key": "NavigationPills_wrapper",
-      "kind": "navigationpills_wrapper",
+      "key": "navigation-pills-wrapper",
+      "kind": "badge",
       "backgroundColor": "rgba(59,76,84,.1)",
-      "rounded": "1.875rem",
-      "border": ".25rem solid transparent"
+      "rounded": "1.875rem"
     },
     {
-      "key": "NavigationPillsItem_pill",
-      "kind": "navigationpillsitem_pill",
+      "key": "navigation-pills-item-pill",
+      "kind": "badge",
       "backgroundColor": "transparent",
       "textColor": "#000",
       "rounded": "1.875rem",
-      "padding": "0 1rem",
-      "border": "2px solid transparent"
+      "padding": "0 1rem"
     },
     {
-      "key": "CardCarousel_cardCarousel",
-      "kind": "cardcarousel_cardcarousel",
+      "key": "card-carousel-card-carousel",
+      "kind": "card",
       "backgroundColor": "#fff"
     },
     {
-      "key": "NavigationPills_activeIndicator",
-      "kind": "navigationpills_activeindicator",
+      "key": "navigation-pills-active-indicator",
+      "kind": "badge",
       "backgroundColor": "#ff4f40",
       "rounded": "1.875rem"
     },
     {
-      "key": "NavigationButtons_carouselButton",
-      "kind": "navigationbuttons_carouselbutton",
+      "key": "navigation-buttons-carousel-button",
+      "kind": "nav",
       "backgroundColor": "#091723",
-      "rounded": "100%",
-      "border": "0"
+      "rounded": "100%"
     }
   ],
-  "overview": "Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "Monzo Tone of Voice — Hot coral banking cards, MonzoSans typography on deep navy and mint-grey surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#f2f8f3` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff4f40` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `MonzoSansDisplay` across 18 type steps.\n- **Component Geometry**: Buttons (`16px`), cards (`16px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

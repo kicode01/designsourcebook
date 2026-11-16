@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Okta Odyssey Design System
-description: "Okta Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey."
+description: "Dark (#ff0000) canvas, Inter typography, #80c7ca brand accent, and 8px corner geometry"
 colors:
   50: "#0f1217"
   100: "#2b2e34"
@@ -43,13 +43,59 @@ colors:
   background-hex: "#000000"
   foreground-hex: "#ffffff"
   as-formatted-string: "rgb(10, 20, 30)"
+typography:
+  font-sans:
+    fontFamily: Inter
+  font-mono:
+    fontFamily: Roboto Mono
+components:
+  button-primary:
+    backgroundColor: "#80c7ca"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#993525"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#80c7ca"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#336845"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Okta Odyssey Design System
 
 ## Overview
 
-Okta Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.
+Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.
 
 Tokens were read from the project's own repository, not from a marketing site: 40 colour tokens and 0 type tokens.
 
@@ -60,3 +106,10 @@ Tokens were read from the project's own repository, not from a marketing site: 4
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#ff0000) canvas paired with `#000000` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#80c7ca` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 2 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

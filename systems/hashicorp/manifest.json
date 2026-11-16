@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 27,
     "typography": 13,
-    "components": 4
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/hashicorp/design-system",
+    "package": "@hashicorp/design-system-tokens"
+  },
+  "popularity": {
+    "rank": 76,
+    "stars": 519,
+    "forks": 56,
+    "npmDownloads": 122146,
+    "score": 5117,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

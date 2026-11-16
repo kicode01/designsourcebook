@@ -3,6 +3,21 @@ version: alpha
 name: Seeds
 description: "Sprout Social Seeds — the colour foundation of the Sprout brand."
 colors:
+  0: "#ebf9eb"
+  50: "#CCF1EA"
+  100: "#d7f4d7"
+  200: "#c2f2bd"
+  300: "#98e58e"
+  350: "#EC9AF1"
+  400: "#75dd66"
+  500: "#59cb59"
+  600: "#2bb656"
+  700: "#0ca750"
+  800: "#008b46"
+  900: "#006b40"
+  950: "#1D2525"
+  1000: "#08422f"
+  1100: "#002b20"
   color-neutral-0: "#ffffff"
   color-neutral-100: "#f3f4f4"
   color-neutral-200: "#dee1e1"
@@ -78,22 +93,84 @@ colors:
   color-purple-800: "#813ae4"
   color-purple-900: "#6726c2"
   color-purple-1000: "#411486"
-  color-purple-1100: "#231743"
-  color-magenta-0: "#fef0ff"
-  color-magenta-100: "#f9e3fc"
-  color-magenta-200: "#f4c4f7"
-  color-magenta-300: "#edadf2"
-  color-magenta-350: "#ec9af1"
-  color-magenta-400: "#f282f5"
-  color-magenta-500: "#db61db"
-  color-magenta-600: "#c44eb9"
-  color-magenta-700: "#ac44a8"
-  color-magenta-800: "#8f3896"
-  color-magenta-900: "#6c2277"
-  color-magenta-1000: "#451551"
-  color-magenta-1100: "#29192d"
-  color-pink-0: "#ffe9f3"
   primary: "#3876e3"
+typography:
+  heading-2xl:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 36px
+    fontWeight: 700
+    lineHeight: 1.22
+  heading-xl:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 1.25
+  heading-lg:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 22px
+    fontWeight: 600
+    lineHeight: 1.3
+  heading-md:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.4
+  body-base:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  body-sm:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.42
+  caption-xs:
+    fontFamily: "\"Proxima Nova\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    fontSize: 12px
+    fontWeight: 500
+    lineHeight: 1.33
+components:
+  button-primary:
+    backgroundColor: "#3876e3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#3876e3"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#2bb656"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Seeds
@@ -106,8 +183,15 @@ Tokens were read from `@sproutsocial/seeds-color@2.5.0`, not from a marketing si
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3876e3` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Proxima Nova` across 7 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

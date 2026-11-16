@@ -3,7 +3,7 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#000000",
+  "brand": "#0060ff",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
@@ -298,24 +298,99 @@
     },
     {
       "name": "primary",
-      "value": "#000000"
+      "value": "#0060ff"
     }
   ],
   "type": [
     {
       "name": "grav-font-size-largest-viewport",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Helvetica Neue\"",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "grav-font-size-smallest-viewport",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Helvetica Neue\"",
       "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "grav-font-family-primary",
+      "fontFamily": "\"Helvetica Neue\"",
+      "px": 16
+    },
+    {
+      "name": "grav-font-family-mono",
+      "fontFamily": "\"Wipro Akkurat Mono TT\"",
       "px": 16
     }
   ],
-  "components": [],
-  "overview": "undefined",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#0060ff",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#cc1e42",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0060ff",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Buildit Gravity — UI pattern library and design tokens by Wipro Digital Buildit.",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0060ff` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Helvetica Neue` across 4 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -23,15 +23,31 @@
   "tokens": {
     "colors": 30,
     "typography": 20,
-    "components": 6
+    "components": 9
   },
   "checks": {
     "errors": 0,
-    "warnings": 2,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/stripe/react-stripe-js",
+    "package": "@stripe/react-stripe-js"
+  },
+  "popularity": {
+    "rank": 50,
+    "stars": 2046,
+    "forks": 346,
+    "npmDownloads": 0,
+    "score": 2046,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,28 +1,24 @@
 {
   "name": "carbon",
   "displayName": "Carbon",
-  "description": "IBM Carbon — IBM's open-source enterprise design system.",
-  "style": "IBM Carbon — IBM's open-source enterprise design system.",
+  "description": "IBM Carbon — tokens imported from @carbon/themes.",
+  "style": "Industrial enterprise system, IBM Plex typography and 10-step gray/blue scales",
   "category": "IBM",
   "org": "IBM",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "published",
-    "dark",
     "ibm",
-    "enterprise",
-    "open-source"
+    "light"
   ],
   "homepage": "",
   "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @carbon/themes@11.85.0 + @carbon/colors (4 token files, 1219 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @carbon/themes@11.85.0 + @carbon/type (7 token files, 1086 colours harvested, 73 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@carbon/themes",
     "version": "11.85.0",
-    "extra": [
-      "@carbon/colors"
-    ]
+    "repo": "https://github.com/carbon-design-system/carbon"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -31,17 +27,34 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 91,
-    "typography": 0,
-    "components": 0
+    "colors": 74,
+    "typography": 4,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 25,
+    "stars": 9628,
+    "forks": 2305,
+    "npmDownloads": 689982,
+    "score": 25622,
+    "frameworks": [
+      "react",
+      "web-components",
+      "angular",
+      "vue",
+      "css",
+      "svelte"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 8
   }
 }

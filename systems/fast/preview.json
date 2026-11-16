@@ -1,0 +1,597 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3578e5",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0.4rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "ifm-color-primary",
+      "value": "#3578e5"
+    },
+    {
+      "name": "ifm-color-success",
+      "value": "#00a400"
+    },
+    {
+      "name": "ifm-color-warning",
+      "value": "#ffba00"
+    },
+    {
+      "name": "ifm-color-primary-dark",
+      "value": "#306cce"
+    },
+    {
+      "name": "ifm-color-primary-darkest",
+      "value": "#2554a0"
+    },
+    {
+      "name": "ifm-color-primary-lighter",
+      "value": "#72a1ed"
+    },
+    {
+      "name": "ifm-color-primary-contrast-background",
+      "value": "#ebf2fc"
+    },
+    {
+      "name": "ifm-color-secondary-dark",
+      "value": "#d4d5d8"
+    },
+    {
+      "name": "ifm-color-secondary-darkest",
+      "value": "#a4a6a8"
+    },
+    {
+      "name": "ifm-color-secondary-lighter",
+      "value": "#f1f2f5"
+    },
+    {
+      "name": "ifm-color-secondary-contrast-background",
+      "value": "#fdfdfe"
+    },
+    {
+      "name": "ifm-color-success-dark",
+      "value": "#009400"
+    },
+    {
+      "name": "ifm-color-success-darkest",
+      "value": "#007300"
+    },
+    {
+      "name": "ifm-color-success-lighter",
+      "value": "#4dbf4d"
+    },
+    {
+      "name": "ifm-color-success-contrast-background",
+      "value": "#e6f6e6"
+    },
+    {
+      "name": "ifm-color-info-dark",
+      "value": "#4cb3d4"
+    },
+    {
+      "name": "ifm-color-info-darkest",
+      "value": "#3b8ba5"
+    },
+    {
+      "name": "ifm-color-info-lighter",
+      "value": "#87d8f2"
+    },
+    {
+      "name": "ifm-color-info-contrast-background",
+      "value": "#eef9fd"
+    },
+    {
+      "name": "ifm-color-warning-dark",
+      "value": "#e6a700"
+    },
+    {
+      "name": "ifm-color-warning-darkest",
+      "value": "#b38200"
+    },
+    {
+      "name": "ifm-color-warning-lighter",
+      "value": "#ffcf4d"
+    },
+    {
+      "name": "ifm-color-warning-contrast-background",
+      "value": "#fff8e6"
+    },
+    {
+      "name": "ifm-color-danger-dark",
+      "value": "#e13238"
+    },
+    {
+      "name": "ifm-color-danger-darkest",
+      "value": "#af272b"
+    },
+    {
+      "name": "ifm-color-danger-lighter",
+      "value": "#fb7478"
+    },
+    {
+      "name": "ifm-color-danger-contrast-background",
+      "value": "#ffebec"
+    },
+    {
+      "name": "ifm-color-content-secondary",
+      "value": "#525860"
+    },
+    {
+      "name": "ifm-scrollbar-track-background-color",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "ifm-link-color",
+      "value": "#ff5ac4"
+    },
+    {
+      "name": "ifm-navbar-background-color",
+      "value": "#242526"
+    },
+    {
+      "name": "ifm-scrollbar-thumb-background-color",
+      "value": "#686868"
+    },
+    {
+      "name": "ifm-navbar-link-hover-color",
+      "value": "#fc4579"
+    },
+    {
+      "name": "foreground-on-accent-rest",
+      "value": "#fff"
+    },
+    {
+      "name": "foreground-on-accent-active",
+      "value": "#fff"
+    },
+    {
+      "name": "foreground-on-accent-rest-large",
+      "value": "#000"
+    },
+    {
+      "name": "foreground-on-accent-active-large",
+      "value": "#fff"
+    },
+    {
+      "name": "neutral-layer-card-container",
+      "value": "#101010"
+    },
+    {
+      "name": "neutral-layer-1",
+      "value": "#181818"
+    },
+    {
+      "name": "neutral-layer-3",
+      "value": "#000"
+    },
+    {
+      "name": "accent-fill-rest",
+      "value": "#c01754"
+    },
+    {
+      "name": "accent-fill-active",
+      "value": "#a01346"
+    },
+    {
+      "name": "accent-foreground-rest",
+      "value": "#e1477e"
+    },
+    {
+      "name": "accent-foreground-active",
+      "value": "#df3874"
+    },
+    {
+      "name": "neutral-fill-rest",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "neutral-fill-active",
+      "value": "#262626"
+    },
+    {
+      "name": "neutral-fill-input-rest",
+      "value": "#181818"
+    },
+    {
+      "name": "neutral-fill-input-active",
+      "value": "#181818"
+    },
+    {
+      "name": "neutral-fill-stealth-rest",
+      "value": "#181818"
+    },
+    {
+      "name": "neutral-fill-stealth-active",
+      "value": "#212121"
+    },
+    {
+      "name": "neutral-fill-strong-rest",
+      "value": "#838383"
+    },
+    {
+      "name": "neutral-fill-strong-active",
+      "value": "#767676"
+    },
+    {
+      "name": "neutral-fill-layer-rest",
+      "value": "#212121"
+    },
+    {
+      "name": "focus-stroke-inner",
+      "value": "#350617"
+    },
+    {
+      "name": "neutral-foreground-rest",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "neutral-stroke-active",
+      "value": "#424242"
+    },
+    {
+      "name": "neutral-stroke-divider-rest",
+      "value": "#2e2e2e"
+    },
+    {
+      "name": "neutral-stroke-hover",
+      "value": "#808080"
+    },
+    {
+      "name": "ifm-blockquote-border-color",
+      "value": "#606770"
+    },
+    {
+      "name": "ifm-dropdown-background-color",
+      "value": "#242526"
+    },
+    {
+      "name": "ifm-font-color-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "ifm-card-background-color",
+      "value": "#242526"
+    },
+    {
+      "name": "ifm-footer-link-hover-color",
+      "value": "#fb356d"
+    },
+    {
+      "name": "ifm-dropdown-link-color",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "ifm-footer-link-color",
+      "value": "#dadde1"
+    },
+    {
+      "name": "ifm-color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "ifm-color-black",
+      "value": "#000"
+    },
+    {
+      "name": "ifm-color-gray-100",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "ifm-color-gray-200",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "ifm-color-gray-300",
+      "value": "#dadde1"
+    },
+    {
+      "name": "ifm-color-gray-400",
+      "value": "#ccd0d5"
+    },
+    {
+      "name": "ifm-color-gray-500",
+      "value": "#bec3c9"
+    },
+    {
+      "name": "ifm-color-gray-600",
+      "value": "#8d949e"
+    },
+    {
+      "name": "ifm-color-gray-700",
+      "value": "#606770"
+    },
+    {
+      "name": "ifm-color-gray-800",
+      "value": "#444950"
+    },
+    {
+      "name": "ifm-color-gray-900",
+      "value": "#1c1e21"
+    },
+    {
+      "name": "ifm-color-content",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "ifm-breadcrumb-color-active",
+      "value": "#fb4b7d"
+    },
+    {
+      "name": "ifm-menu-color-active",
+      "value": "#fc4579"
+    },
+    {
+      "name": "fill-color",
+      "value": "#181818"
+    },
+    {
+      "name": "clear-button-hover",
+      "value": "#404040"
+    },
+    {
+      "name": "clear-button-active",
+      "value": "#3b3b3b"
+    },
+    {
+      "name": "tree-item-expand-collapse-hover",
+      "value": "#333"
+    },
+    {
+      "name": "tree-item-expand-collapse-selected-hover",
+      "value": "#383838"
+    },
+    {
+      "name": "docusaurus-highlighted-code-line-bg",
+      "value": "#484d5b"
+    },
+    {
+      "name": "ifm-blockquote-color",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "ifm-color-emphasis-400",
+      "value": "#8d949e"
+    },
+    {
+      "name": "ifm-alert-color",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "ifm-font-color-base",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "ifm-color-emphasis-900",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "primary",
+      "value": "#3578e5"
+    }
+  ],
+  "type": [
+    {
+      "name": "type-ramp-plus-6-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "60px",
+      "px": 60
+    },
+    {
+      "name": "type-ramp-plus-5-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "46px",
+      "px": 46
+    },
+    {
+      "name": "type-ramp-plus-4-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "34px",
+      "px": 34
+    },
+    {
+      "name": "ifm-h1-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h1",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "2em",
+      "px": 32,
+      "fontWeight": 600
+    },
+    {
+      "name": "type-ramp-plus-3-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "ifm-h2-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "h2",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1.5em",
+      "px": 24,
+      "fontWeight": 600
+    },
+    {
+      "name": "ifm-h3-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "type-ramp-plus-2-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "h3",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1.25em",
+      "px": 20,
+      "fontWeight": 600
+    },
+    {
+      "name": "ifm-font-size-base",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "ifm-h4-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "type-ramp-plus-1-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "ifm-font-family-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "markdown-body",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h4",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1em",
+      "px": 16,
+      "fontWeight": 600
+    },
+    {
+      "name": "ifm-blockquote-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "ifm-code-font-size",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "fontSize": "95%",
+      "px": 15.2
+    },
+    {
+      "name": "ifm-h5-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "type-ramp-base-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "h5",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".875em",
+      "px": 14,
+      "fontWeight": 600
+    },
+    {
+      "name": "ifm-h6-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "0.85rem",
+      "px": 13.6
+    },
+    {
+      "name": "h6",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".85em",
+      "px": 13.6,
+      "fontWeight": 600
+    },
+    {
+      "name": "type-ramp-minus-1-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "type-ramp-minus-2-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "badge",
+      "kind": "badge",
+      "textColor": "#fff",
+      "rounded": "0.4rem",
+      "border": "1px solid inherit"
+    },
+    {
+      "key": "nav",
+      "kind": "nav",
+      "textColor": "#3578e5"
+    },
+    {
+      "key": "nav-2",
+      "kind": "nav",
+      "textColor": "#525860"
+    },
+    {
+      "key": "section-showcase-item-link",
+      "kind": "nav",
+      "textColor": "#fff",
+      "rounded": "3px"
+    },
+    {
+      "key": "button-link",
+      "kind": "button",
+      "textColor": "#3578e5"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "0.4rem",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "0.4rem",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "18px 20px"
+    }
+  ],
+  "overview": "Microsoft FAST — Crisp light (#fff) canvas, SFMono-Regular typography, #3578e5 brand accent, and 0.4rem corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3578e5` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 26 type steps.\n- **Component Geometry**: Buttons (`0.4rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

@@ -21,65 +21,65 @@ colors:
   primary: "#f7f4ed"
 typography:
   display-hero:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 60px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: "-1.5px"
   display-alt:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 60px
     fontWeight: 480
     lineHeight: 1
   section-heading:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 48px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: "-1.2px"
   sub-heading:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 36px
     fontWeight: 600
     lineHeight: 1.1
     letterSpacing: "-0.9px"
   card-title:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.25
   body-large:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.38
   body:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   button:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   button-small:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
   link:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   link-small:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
   caption:
-    fontFamily: Camera Plain Variable
+    fontFamily: "\"Camera Plain Variable\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
@@ -102,6 +102,31 @@ components:
     backgroundColor: "#f7f4ed"
     textColor: "#1c1c1c"
     rounded: 9999px
+  input-default:
+    backgroundColor: "#1c1c1c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#1c1c1c"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#f7f4ed"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#1c1c1c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: Lovable

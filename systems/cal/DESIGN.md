@@ -16,99 +16,139 @@ colors:
   text-midnight: "#111111"
   text-mid-gray: "#898989"
   text-pure-black: "#000000"
-  text-border-gray: "rgba(34, 42, 53, 0.08–0.10)"
   primary: "#0099ff"
 typography:
   display-hero:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 64px
     fontWeight: 600
     lineHeight: 1.1
     letterSpacing: 0px
   section-heading:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 48px
     fontWeight: 600
     lineHeight: 1.1
     letterSpacing: 0px
   feature-heading:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 24px
     fontWeight: 600
     lineHeight: 1.3
     letterSpacing: 0px
   sub-heading:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 20px
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: 0.2px
   sub-heading-alt:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 20px
     fontWeight: 600
     lineHeight: 1.5
     letterSpacing: 0px
   card-title:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 16px
     fontWeight: 600
     lineHeight: 1.1
     letterSpacing: 0px
   caption-label:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 12px
     fontWeight: 600
     lineHeight: 1.5
     letterSpacing: 0px
   body-light:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 18px
     fontWeight: 300
     lineHeight: 1.3
     letterSpacing: "-0.2px"
   body-light-standard:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 16px
     fontWeight: 300
     lineHeight: 1.5
     letterSpacing: "-0.2px"
   caption-light:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 14px
     fontWeight: 300
     lineHeight: 1.4
     letterSpacing: "-0.28px"
   ui-label:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 16px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0px
   caption-inter:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 14px
     fontWeight: 500
     lineHeight: 1.14
     letterSpacing: 0px
   micro:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 12px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0px
   code:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 14px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0px
   body-matter:
-    fontFamily: Cal Sans
+    fontFamily: "\"Cal Sans\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.14
     letterSpacing: 0px
+components:
+  button-primary:
+    backgroundColor: "#0099ff"
+    textColor: "#242424"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0099ff"
+    textColor: "#242424"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Cal.com

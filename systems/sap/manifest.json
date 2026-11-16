@@ -1,22 +1,24 @@
 {
   "name": "sap",
   "displayName": "SAP Fiori",
-  "description": "SAP SAP Fiori — tokens read from https://github.com/SAP/ui5-webcomponents.",
-  "style": "SAP SAP Fiori — tokens read from https://github.com/SAP/ui5-webcomponents.",
+  "description": "SAP Fiori — tokens imported from @sap-theming/theming-base-content.",
+  "style": "Enterprise ERP Horizon theme, SAP 72 typography and semantic business status colors",
   "category": "SAP",
   "org": "SAP",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "sap"
+    "sap",
+    "light"
   ],
-  "homepage": "https://github.com/SAP/ui5-webcomponents",
-  "license": "see repository",
+  "homepage": "",
+  "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens read from the repository https://github.com/SAP/ui5-webcomponents — 2 token files, 41 colours harvested, 38 selected.",
+  "provenanceNote": "Tokens imported from @sap-theming/theming-base-content@11.36.5 (2 token files, 1954 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
-    "repo": "https://github.com/SAP/ui5-webcomponents"
+    "package": "@sap-theming/theming-base-content",
+    "version": "11.36.5",
+    "repo": "https://github.com/SAP/theming-base-content"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,9 +27,9 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 39,
-    "typography": 1,
-    "components": 0
+    "colors": 91,
+    "typography": 10,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +39,20 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 113,
+    "stars": 69,
+    "forks": 17,
+    "npmDownloads": 0,
+    "score": 69,
+    "frameworks": [
+      "web-components",
+      "react",
+      "angular",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

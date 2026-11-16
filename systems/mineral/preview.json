@@ -1,23 +1,167 @@
 {
-  "canvas": "#fad4d4",
-  "surface": "#faf0f0",
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#de1b1b",
+  "brand": "#accbfc",
   "border": "#de1b1b",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
     {
-      "name": "background-color-danger-active",
+      "name": "danger-background-color-danger-active",
       "value": "#fad4d4"
     },
     {
-      "name": "background-color-danger-focus",
+      "name": "danger-background-color-danger-hover",
       "value": "#faf0f0"
     },
     {
-      "name": "background-color-danger-hover",
+      "name": "danger-background-color-danger-primary-active",
+      "value": "#b80d0d"
+    },
+    {
+      "name": "danger-background-color-danger-primary-hover",
+      "value": "#f55353"
+    },
+    {
+      "name": "danger-border-color-danger-active",
+      "value": "#b80d0d"
+    },
+    {
+      "name": "danger-border-color-danger-hover",
+      "value": "#f55353"
+    },
+    {
+      "name": "danger-color-danger-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "danger-color-danger-focus",
+      "value": "#de1b1b"
+    },
+    {
+      "name": "danger-icon-color-danger",
+      "value": "#de1b1b"
+    },
+    {
+      "name": "danger-well-border-color-danger",
+      "value": "#fa8e8e"
+    },
+    {
+      "name": "gray-background-color-disabled",
+      "value": "#ebeff5"
+    },
+    {
+      "name": "gray-border-color",
+      "value": "#c8d1e0"
+    },
+    {
+      "name": "gray-input-background-color-disabled",
+      "value": "#ebeff5"
+    },
+    {
+      "name": "gray-panel-border-color",
+      "value": "#ebeff5"
+    },
+    {
+      "name": "gray-well-background-color",
+      "value": "#ebeff5"
+    },
+    {
+      "name": "success-background-color-success-focus",
+      "value": "#e1faeb"
+    },
+    {
+      "name": "success-background-color-success-primary",
+      "value": "#2a854e"
+    },
+    {
+      "name": "success-background-color-success-primary-focus",
+      "value": "#2a854e"
+    },
+    {
+      "name": "success-border-color-success",
+      "value": "#2a854e"
+    },
+    {
+      "name": "success-border-color-success-focus",
+      "value": "#20693d"
+    },
+    {
+      "name": "success-color-success",
+      "value": "#2a854e"
+    },
+    {
+      "name": "success-color-success-active",
+      "value": "#20693d"
+    },
+    {
+      "name": "success-color-success-hover",
+      "value": "#3ba164"
+    },
+    {
+      "name": "success-well-background-color-success",
+      "value": "#abedc5"
+    },
+    {
+      "name": "warning-background-color-warning-active",
+      "value": "#fad8af"
+    },
+    {
+      "name": "warning-background-color-warning-hover",
+      "value": "#fcf2e6"
+    },
+    {
+      "name": "warning-background-color-warning-primary-active",
+      "value": "#8a4d03"
+    },
+    {
+      "name": "warning-background-color-warning-primary-hover",
+      "value": "#cf7911"
+    },
+    {
+      "name": "warning-border-color-warning-active",
+      "value": "#8a4d03"
+    },
+    {
+      "name": "warning-border-color-warning-hover",
+      "value": "#cf7911"
+    },
+    {
+      "name": "warning-color-warning-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "warning-color-warning-focus",
+      "value": "#ad5f00"
+    },
+    {
+      "name": "warning-icon-color-warning",
+      "value": "#ad5f00"
+    },
+    {
+      "name": "warning-well-border-color-warning",
+      "value": "#e89c3f"
+    },
+    {
+      "name": "white-background-color-focus",
+      "value": "#ffffff"
+    },
+    {
+      "name": "white-color-danger-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "white-color-warning-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "white-panel-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-color-danger-focus",
       "value": "#faf0f0"
     },
     {
@@ -25,71 +169,35 @@
       "value": "#de1b1b"
     },
     {
-      "name": "background-color-danger-primary-active",
-      "value": "#b80d0d"
-    },
-    {
       "name": "background-color-danger-primary-focus",
       "value": "#de1b1b"
-    },
-    {
-      "name": "background-color-danger-primary-hover",
-      "value": "#f55353"
     },
     {
       "name": "border-color-danger",
       "value": "#de1b1b"
     },
     {
-      "name": "border-color-danger-active",
-      "value": "#b80d0d"
-    },
-    {
       "name": "border-color-danger-focus",
       "value": "#b80d0d"
-    },
-    {
-      "name": "border-color-danger-hover",
-      "value": "#f55353"
     },
     {
       "name": "color-danger",
       "value": "#de1b1b"
     },
     {
-      "name": "color-danger-primary",
-      "value": "#ffffff"
-    },
-    {
       "name": "color-danger-active",
       "value": "#b80d0d"
-    },
-    {
-      "name": "color-danger-focus",
-      "value": "#de1b1b"
     },
     {
       "name": "color-danger-hover",
       "value": "#f55353"
     },
     {
-      "name": "icon-color-danger",
-      "value": "#de1b1b"
-    },
-    {
       "name": "well-background-color-danger",
       "value": "#fad4d4"
     },
     {
-      "name": "well-border-color-danger",
-      "value": "#fa8e8e"
-    },
-    {
       "name": "background-color-active",
-      "value": "#ebeff5"
-    },
-    {
-      "name": "background-color-disabled",
       "value": "#ebeff5"
     },
     {
@@ -97,71 +205,35 @@
       "value": "#f5f7fa"
     },
     {
-      "name": "border-color",
-      "value": "#c8d1e0"
-    },
-    {
       "name": "color-disabled",
       "value": "#afbacc"
-    },
-    {
-      "name": "input-background-color-disabled",
-      "value": "#ebeff5"
     },
     {
       "name": "panel-background-color-inverted",
       "value": "#434a54"
     },
     {
-      "name": "panel-border-color",
-      "value": "#ebeff5"
-    },
-    {
       "name": "panel-border-color-inverted",
       "value": "#434a54"
-    },
-    {
-      "name": "well-background-color",
-      "value": "#ebeff5"
     },
     {
       "name": "background-color-success-active",
       "value": "#abedc5"
     },
     {
-      "name": "background-color-success-focus",
-      "value": "#e1faeb"
-    },
-    {
       "name": "background-color-success-hover",
       "value": "#e1faeb"
-    },
-    {
-      "name": "background-color-success-primary",
-      "value": "#2a854e"
     },
     {
       "name": "background-color-success-primary-active",
       "value": "#20693d"
     },
     {
-      "name": "background-color-success-primary-focus",
-      "value": "#2a854e"
-    },
-    {
       "name": "background-color-success-primary-hover",
       "value": "#3ba164"
     },
     {
-      "name": "border-color-success",
-      "value": "#2a854e"
-    },
-    {
       "name": "border-color-success-active",
-      "value": "#20693d"
-    },
-    {
-      "name": "border-color-success-focus",
       "value": "#20693d"
     },
     {
@@ -169,143 +241,71 @@
       "value": "#3ba164"
     },
     {
-      "name": "color-success",
-      "value": "#2a854e"
-    },
-    {
       "name": "color-success-primary",
       "value": "#ffffff"
-    },
-    {
-      "name": "color-success-active",
-      "value": "#20693d"
     },
     {
       "name": "color-success-focus",
       "value": "#2a854e"
     },
     {
-      "name": "color-success-hover",
-      "value": "#3ba164"
-    },
-    {
       "name": "icon-color-success",
       "value": "#2a854e"
-    },
-    {
-      "name": "well-background-color-success",
-      "value": "#abedc5"
     },
     {
       "name": "well-border-color-success",
       "value": "#57c282"
     },
     {
-      "name": "background-color-brand-selected",
-      "value": "#f0f5fc"
-    },
-    {
       "name": "background-color-brand-selected-active",
       "value": "#accbfc"
-    },
-    {
-      "name": "background-color-brand-selected-hover",
-      "value": "#cfe0fc"
     },
     {
       "name": "background-color-brand-primary",
       "value": "#3272d9"
     },
     {
-      "name": "background-color-brand-primary-active",
-      "value": "#1d5bbf"
-    },
-    {
       "name": "background-color-brand-primary-focus",
       "value": "#3272d9"
-    },
-    {
-      "name": "background-color-brand-primary-hover",
-      "value": "#5691f0"
     },
     {
       "name": "border-color-brand",
       "value": "#3272d9"
     },
     {
-      "name": "border-color-brand-active",
-      "value": "#1d5bbf"
-    },
-    {
       "name": "border-color-brand-focus",
       "value": "#1d5bbf"
-    },
-    {
-      "name": "border-color-brand-hover",
-      "value": "#5691f0"
     },
     {
       "name": "color-brand",
       "value": "#3272d9"
     },
     {
-      "name": "color-brand-primary",
-      "value": "#ffffff"
-    },
-    {
       "name": "color-brand-active",
       "value": "#1d5bbf"
-    },
-    {
-      "name": "color-brand-focus",
-      "value": "#3272d9"
     },
     {
       "name": "color-brand-hover",
       "value": "#5691f0"
     },
     {
-      "name": "icon-color-brand",
-      "value": "#3272d9"
-    },
-    {
       "name": "background-color-warning-active",
       "value": "#fad8af"
-    },
-    {
-      "name": "background-color-warning-focus",
-      "value": "#fcf2e6"
     },
     {
       "name": "background-color-warning-hover",
       "value": "#fcf2e6"
     },
     {
-      "name": "background-color-warning-primary",
-      "value": "#ad5f00"
-    },
-    {
       "name": "background-color-warning-primary-active",
       "value": "#8a4d03"
-    },
-    {
-      "name": "background-color-warning-primary-focus",
-      "value": "#ad5f00"
     },
     {
       "name": "background-color-warning-primary-hover",
       "value": "#cf7911"
     },
     {
-      "name": "border-color-warning",
-      "value": "#ad5f00"
-    },
-    {
       "name": "border-color-warning-active",
-      "value": "#8a4d03"
-    },
-    {
-      "name": "border-color-warning-focus",
       "value": "#8a4d03"
     },
     {
@@ -313,47 +313,23 @@
       "value": "#cf7911"
     },
     {
-      "name": "color-warning",
-      "value": "#ad5f00"
-    },
-    {
       "name": "color-warning-primary",
       "value": "#ffffff"
-    },
-    {
-      "name": "color-warning-active",
-      "value": "#8a4d03"
     },
     {
       "name": "color-warning-focus",
       "value": "#ad5f00"
     },
     {
-      "name": "color-warning-hover",
-      "value": "#cf7911"
-    },
-    {
       "name": "icon-color-warning",
       "value": "#ad5f00"
-    },
-    {
-      "name": "well-background-color-warning",
-      "value": "#fad8af"
     },
     {
       "name": "well-border-color-warning",
       "value": "#e89c3f"
     },
     {
-      "name": "background-color",
-      "value": "#ffffff"
-    },
-    {
       "name": "background-color-focus",
-      "value": "#ffffff"
-    },
-    {
-      "name": "input-background-color",
       "value": "#ffffff"
     },
     {
@@ -361,26 +337,166 @@
       "value": "#ffffff"
     },
     {
+      "name": "gray-color",
+      "value": "#333840"
+    },
+    {
+      "name": "gray-h2-color",
+      "value": "#58606e"
+    },
+    {
+      "name": "gray-h6-color",
+      "value": "#58606e"
+    },
+    {
       "name": "color",
       "value": "#333840"
+    },
+    {
+      "name": "h2-color",
+      "value": "#58606e"
+    },
+    {
+      "name": "h6-color",
+      "value": "#58606e"
     },
     {
       "name": "color-theme-10",
       "value": "#f0f5fc"
     },
     {
+      "name": "color-theme-50",
+      "value": "#5691f0"
+    },
+    {
       "name": "primary",
-      "value": "#de1b1b"
+      "value": "#accbfc"
     }
   ],
   "type": [
     {
-      "name": "styled-family",
-      "fontFamily": "inherit",
-      "px": 16
+      "name": "h1-display",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "h2-heading",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 600,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "h3-heading",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "h4-subheading",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "mono",
+      "fontFamily": "SFMono-Regular, Consolas, monospace",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.45
+    },
+    {
+      "name": "caption",
+      "fontFamily": "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#accbfc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#fad4d4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#accbfc",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#2a854e",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Mineral UI — an open-source design system for modern software experiences.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#accbfc` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 7 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

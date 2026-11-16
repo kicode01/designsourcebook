@@ -26,80 +26,80 @@ colors:
   primary: "#1f1633"
 typography:
   display-hero:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 88px
     fontWeight: 700
     lineHeight: 1.2
   display-secondary:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 60px
     fontWeight: 500
     lineHeight: 1.1
   section-heading:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 30px
     fontWeight: 400
     lineHeight: 1.2
   sub-heading:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 27px
     fontWeight: 500
     lineHeight: 1.25
   card-title:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 24px
     fontWeight: 500
     lineHeight: 1.25
   feature-title:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 20px
     fontWeight: 600
     lineHeight: 1.25
   body:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   body-emphasis:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1.5
   nav-label:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 15px
     fontWeight: 500
     lineHeight: 1.4
   uppercase-label:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 15px
     fontWeight: 500
     lineHeight: 1.25
   button-text:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 14px
     fontWeight: 500
     lineHeight: 1.14
     letterSpacing: 0.2px
   caption:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 14px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.2px
   small-caption:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 12px
     fontWeight: 600
     lineHeight: 2
   micro-label:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 10px
     fontWeight: 600
     lineHeight: 1.8
     letterSpacing: 0.25px
   code:
-    fontFamily: Dammit Sans
+    fontFamily: "\"Dammit Sans\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
@@ -128,6 +128,26 @@ components:
     textColor: "#1f1633"
     rounded: 6px
     padding: 8px 12px
+  card-surface:
+    backgroundColor: "#150f23"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#1f1633"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#150f23"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: Sentry

@@ -1,79 +1,75 @@
 {
-  "canvas": "#FFFFFF",
-  "surface": "#FFFFFF",
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#FFFFFF",
+  "brand": "#0B42C8",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#0b0b0c",
   "palette": [
     {
-      "name": "colors-blocks-content-text-styleguide-secondary-body",
-      "value": "#67768E"
-    },
-    {
-      "name": "colors-blocks-status-tags-background-positive",
-      "value": "#00856E"
-    },
-    {
-      "name": "colors-sidebar-background-active",
-      "value": "#F8F9FC"
-    },
-    {
-      "name": "colors-sidebar-text-icon",
-      "value": "#67768E"
-    },
-    {
-      "name": "colors-blocks-status-tags-background-warning",
-      "value": "#F2CA2C"
-    },
-    {
-      "name": "colors-blocks-content-text-small-heading",
-      "value": "#20439D"
-    },
-    {
-      "name": "colors-footer-text-links",
-      "value": "#0B42C8"
-    },
-    {
-      "name": "colors-styleguide-reversed-accent",
-      "value": "#FFFFFF"
-    },
-    {
-      "name": "colors-blocks-tabs-border-active",
-      "value": "#0B42C8"
-    },
-    {
-      "name": "colors-blocks-table-border-main",
-      "value": "#B1BCD3"
-    },
-    {
-      "name": "colors-blocks-status-tags-background-negative",
-      "value": "#D04348"
-    },
-    {
-      "name": "colors-blocks-upload-text-label",
-      "value": "#1A1D23"
-    },
-    {
-      "name": "colors-blocks-status-tags-background-greyscale",
-      "value": "#67768E"
-    },
-    {
-      "name": "colors-nav-text-main",
-      "value": "#1A1D23"
-    },
-    {
-      "name": "colors-sidebar-border-main",
-      "value": "#E1E6EF"
+      "name": "colors-blocks-upload-background-annotation",
+      "value": "#173682"
     },
     {
       "name": "colors-blocks-table-background-alternate-row",
       "value": "#F8F9FC"
     },
     {
+      "name": "colors-blocks-table-background-header",
+      "value": "#E1E6EF"
+    },
+    {
+      "name": "colors-blocks-table-border-main",
+      "value": "#B1BCD3"
+    },
+    {
+      "name": "colors-blocks-upload-text-label",
+      "value": "#1A1D23"
+    },
+    {
+      "name": "colors-footer-text-main",
+      "value": "#1A1D23"
+    },
+    {
       "name": "colors-nav-text-active",
+      "value": "#1A1D23"
+    },
+    {
+      "name": "colors-nav-text-main",
+      "value": "#1A1D23"
+    },
+    {
+      "name": "colors-nav-border-main",
+      "value": "#E1E6EF"
+    },
+    {
+      "name": "colors-sidebar-background-active",
+      "value": "#F8F9FC"
+    },
+    {
+      "name": "colors-sidebar-background-hover",
+      "value": "#E1E6EF"
+    },
+    {
+      "name": "colors-sidebar-border-main",
+      "value": "#E1E6EF"
+    },
+    {
+      "name": "colors-sidebar-text-secondary",
+      "value": "#67768E"
+    },
+    {
+      "name": "colors-sidebar-text-icon",
+      "value": "#67768E"
+    },
+    {
+      "name": "colors-sidebar-text-active",
+      "value": "#1A1D23"
+    },
+    {
+      "name": "colors-sidebar-text-primary",
       "value": "#1A1D23"
     },
     {
@@ -81,108 +77,396 @@
       "value": "#1A1D23"
     },
     {
+      "name": "colors-blocks-tabs-text-main",
+      "value": "#1A1D23"
+    },
+    {
       "name": "colors-blocks-content-text-styleguide-page-intro",
       "value": "#67768E"
     },
     {
-      "name": "colors-blocks-content-text-link",
-      "value": "#0B42C8"
-    },
-    {
-      "name": "colors-sidebar-background-hover",
-      "value": "#E1E6EF"
-    },
-    {
-      "name": "colors-blocks-content-text-large-heading",
-      "value": "#20439D"
-    },
-    {
-      "name": "colors-blocks-tabs-text-main",
-      "value": "#1A1D23"
+      "name": "colors-blocks-content-text-styleguide-secondary-body",
+      "value": "#67768E"
     },
     {
       "name": "colors-blocks-content-text-styleguide-body",
       "value": "#1A1D23"
     },
     {
-      "name": "colors-blocks-status-tags-text-greyscale",
-      "value": "#FFFFFF"
-    },
-    {
-      "name": "colors-nav-border-active",
-      "value": "#0B42C8"
-    },
-    {
-      "name": "colors-blocks-status-tags-text-negative",
-      "value": "#FFFFFF"
-    },
-    {
-      "name": "colors-styleguide-background-accent",
-      "value": "#0B42C8"
-    },
-    {
-      "name": "colors-sidebar-text-primary",
-      "value": "#1A1D23"
-    },
-    {
-      "name": "colors-blocks-status-tags-text-positive",
-      "value": "#FFFFFF"
-    },
-    {
-      "name": "colors-blocks-upload-background-annotation",
-      "value": "#173682"
-    },
-    {
-      "name": "colors-nav-border-main",
-      "value": "#E1E6EF"
-    },
-    {
-      "name": "colors-blocks-status-tags-text-neutral",
-      "value": "#FFFFFF"
-    },
-    {
-      "name": "colors-blocks-status-tags-text-warning",
-      "value": "#FFFFFF"
-    },
-    {
       "name": "colors-blocks-content-text-smaller-heading",
       "value": "#1A1D23"
     },
     {
-      "name": "colors-blocks-status-tags-background-neutral",
-      "value": "#0B42C8"
+      "name": "colors-blocks-content-text-small-heading",
+      "value": "#20439D"
     },
     {
-      "name": "colors-sidebar-text-active",
-      "value": "#1A1D23"
+      "name": "colors-blocks-content-text-large-heading",
+      "value": "#20439D"
     },
     {
       "name": "colors-blocks-content-text-styleguide-title",
       "value": "#1A1D23"
     },
     {
-      "name": "colors-sidebar-text-secondary",
+      "name": "colors-blocks-status-tags-background-greyscale",
       "value": "#67768E"
     },
     {
-      "name": "colors-blocks-table-background-header",
-      "value": "#E1E6EF"
+      "name": "colors-blocks-status-tags-background-negative",
+      "value": "#D04348"
     },
     {
-      "name": "colors-footer-text-main",
-      "value": "#1A1D23"
+      "name": "colors-blocks-status-tags-background-positive",
+      "value": "#00856E"
     },
     {
-      "name": "fg",
-      "value": "rgb(26, 29, 35)"
+      "name": "colors-blocks-status-tags-background-neutral",
+      "value": "#0B42C8"
+    },
+    {
+      "name": "colors-blocks-status-tags-background-warning",
+      "value": "#F2CA2C"
+    },
+    {
+      "name": "colors-footer-text-links",
+      "value": "#0B42C8"
+    },
+    {
+      "name": "colors-nav-border-active",
+      "value": "#0B42C8"
+    },
+    {
+      "name": "colors-blocks-tabs-border-active",
+      "value": "#0B42C8"
+    },
+    {
+      "name": "colors-blocks-content-text-link",
+      "value": "#0B42C8"
+    },
+    {
+      "name": "colors-styleguide-background-accent",
+      "value": "#0B42C8"
+    },
+    {
+      "name": "colors-blocks-status-tags-text-warning",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-blocks-status-tags-text-neutral",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-blocks-status-tags-text-positive",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-blocks-status-tags-text-negative",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-blocks-status-tags-text-greyscale",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-styleguide-reversed-accent",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-ui-element-background-main",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-ui-element-background-action",
+      "value": "#2265c9"
+    },
+    {
+      "name": "colors-ui-element-background-active",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "colors-ui-element-background-hover",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "colors-ui-element-border",
+      "value": "#dedede"
+    },
+    {
+      "name": "colors-ui-element-text",
+      "value": "#212121"
+    },
+    {
+      "name": "colors-ui-element-text-secondary",
+      "value": "#605f60"
     },
     {
       "name": "primary",
-      "value": "#FFFFFF"
+      "value": "#0B42C8"
     }
   ],
-  "type": [],
-  "components": [],
-  "overview": "Foyer Foyer Design System — read from the rendered page in a browser, not from published tokens.",
-  "dos": ""
+  "type": [
+    {
+      "name": "landing-title",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72,
+      "fontWeight": 300
+    },
+    {
+      "name": "landing-subtitle",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48,
+      "fontWeight": 300
+    },
+    {
+      "name": "type-landing-heading",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40,
+      "fontWeight": 800,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "landing-bottom-cta-title",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 400
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "big-title",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 250
+    },
+    {
+      "name": "type-heading-large",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.3rem",
+      "px": 20.8,
+      "fontWeight": 700
+    },
+    {
+      "name": "typography-heading-small",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "title-text",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "type-heading-xsmall",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": ".75rem",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": "1rem"
+    }
+  ],
+  "components": [
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#262626",
+      "rounded": "4px",
+      "border": "1px solid #757575"
+    },
+    {
+      "key": "input-2",
+      "kind": "input",
+      "textColor": "#6f8291",
+      "rounded": "4px",
+      "border": "1px solid #e2e4e7"
+    },
+    {
+      "key": "input-3",
+      "kind": "input",
+      "textColor": "#262626",
+      "rounded": "4px",
+      "border": "1px solid #757575"
+    },
+    {
+      "key": "link-text",
+      "kind": "nav",
+      "textColor": "#3497ff"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "rounded": "5px",
+      "border": "1px solid #c9c8c9"
+    },
+    {
+      "key": "link-2",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "border": "1px solid rgba(0,0,0,.15)",
+      "shadow": "0 0 10px 0 rgba(0,0,0,.1)"
+    },
+    {
+      "key": "input-error-4",
+      "kind": "input",
+      "textColor": "#ff5252"
+    },
+    {
+      "key": "input-5",
+      "kind": "input",
+      "textColor": "#262626",
+      "rounded": "4px",
+      "padding": "5px",
+      "border": "1px solid #757575"
+    },
+    {
+      "key": "link-3",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "border": "1px solid rgba(0,0,0,.15)",
+      "shadow": "0 0 10px 0 rgba(0,0,0,.1)"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "rounded": "5px",
+      "border": "1px solid #c9c8c9"
+    },
+    {
+      "key": "label",
+      "kind": "badge",
+      "backgroundColor": "#ed4179",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#f6f6f6",
+      "border": "1px solid #d3d3d3"
+    },
+    {
+      "key": "button-3",
+      "kind": "button",
+      "backgroundColor": "#ed4179",
+      "textColor": "#0b0b0c",
+      "rounded": "100px",
+      "padding": "12px 25px"
+    },
+    {
+      "key": "blue-grey-link-4",
+      "kind": "nav",
+      "textColor": "#6f8291"
+    },
+    {
+      "key": "link-5",
+      "kind": "nav",
+      "textColor": "#6f8291"
+    },
+    {
+      "key": "link-background-6",
+      "kind": "nav",
+      "backgroundColor": "#3497ff"
+    },
+    {
+      "key": "tab-placeholder",
+      "kind": "nav",
+      "backgroundColor": "rgba(246,62,124,.05)",
+      "rounded": "3px",
+      "border": "1px dashed rgba(246,62,124,.5)"
+    },
+    {
+      "key": "osx-blue-button-4",
+      "kind": "button",
+      "backgroundColor": "#ed4179",
+      "textColor": "#0b0b0c",
+      "rounded": "5px",
+      "border": "1px solid #fff"
+    },
+    {
+      "key": "button-5",
+      "kind": "button",
+      "backgroundColor": "#ed4179",
+      "textColor": "#0b0b0c",
+      "rounded": "100px",
+      "padding": "12px 25px",
+      "border": "1px solid #b1b7bc"
+    },
+    {
+      "key": "button-6",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "5px",
+      "padding": "7px 15px",
+      "border": "1px solid #b8b8b8"
+    },
+    {
+      "key": "banner-background",
+      "kind": "card",
+      "backgroundColor": "#e20b0b"
+    },
+    {
+      "key": "tab-overlay-2",
+      "kind": "nav",
+      "backgroundColor": "rgba(246,62,124,.05)",
+      "rounded": "3px",
+      "border": "1px dashed #f63e7c"
+    },
+    {
+      "key": "callout-block-background-1-2",
+      "kind": "card",
+      "backgroundColor": "#fffcc3"
+    },
+    {
+      "key": "callout-block-background-2-3",
+      "kind": "card",
+      "backgroundColor": "#e2f1ff"
+    },
+    {
+      "key": "nav-foreground",
+      "kind": "nav",
+      "textColor": "#212121"
+    },
+    {
+      "key": "tab-view-name",
+      "kind": "nav",
+      "textColor": "#605f60"
+    }
+  ],
+  "overview": "Foyer Design System — Crisp light (#ffffff) canvas, DM sans typography, #0B42C8 brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0B42C8` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `DM sans` across 12 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -84,7 +84,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "96px",
       "px": 96,
       "fontWeight": 400,
@@ -92,7 +92,7 @@
     },
     {
       "name": "display-secondary",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "64px",
       "px": 64,
       "fontWeight": 400,
@@ -100,7 +100,7 @@
     },
     {
       "name": "code-heading",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "40px",
       "px": 40,
       "fontWeight": 400,
@@ -108,7 +108,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "36px",
       "px": 36,
       "fontWeight": 500,
@@ -116,7 +116,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 500,
@@ -124,7 +124,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 400,
@@ -132,7 +132,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -140,7 +140,7 @@
     },
     {
       "name": "body-light",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 300,
@@ -148,7 +148,7 @@
     },
     {
       "name": "nav-ui",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 500,
@@ -157,7 +157,7 @@
     },
     {
       "name": "code-body",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -165,7 +165,7 @@
     },
     {
       "name": "body-bold",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 700,
@@ -173,7 +173,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -181,7 +181,7 @@
     },
     {
       "name": "code-label",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -190,7 +190,7 @@
     },
     {
       "name": "button",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "13.5px",
       "px": 13.5,
       "fontWeight": 500,
@@ -199,7 +199,7 @@
     },
     {
       "name": "small",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "11px",
       "px": 11,
       "fontWeight": 600,
@@ -208,7 +208,7 @@
     },
     {
       "name": "code-micro",
-      "fontFamily": "MongoDB Value Serif",
+      "fontFamily": "\"MongoDB Value Serif\"",
       "fontSize": "9px",
       "px": 9,
       "fontWeight": 600,
@@ -221,7 +221,7 @@
       "key": "button-primary-green",
       "kind": "button",
       "backgroundColor": "#00684a",
-      "textColor": "#000000",
+      "textColor": "#ffffff",
       "rounded": "100px",
       "border": "1px solid #00684a",
       "shadow": "rgba(0,0,0,0.06) 0px 1px 6px"
@@ -230,7 +230,7 @@
       "key": "button-dark-teal",
       "kind": "button",
       "backgroundColor": "#1c2d38",
-      "textColor": "#5c6c75",
+      "textColor": "#ffffff",
       "rounded": "100px",
       "border": "1px solid #3d4f58"
     },
@@ -240,6 +240,46 @@
       "textColor": "#001e2b",
       "rounded": "4px",
       "border": "1px solid #b8c4c2"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "100px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "100px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#001e2b",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "100px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "MongoDB's website is a deep-forest-meets-terminal experience — a design system rooted in the darkest teal-black (#001e2b) that evokes both the density of a database and the depth of a forest canopy. Against this near-black canvas, a striking neon green (#00ed64) pulses as the brand accent — bright enough to feel electric, organic enough to feel alive. This isn't the cold neon of cyberpunk; it's the bioluminescent green of something growing in the dark.\n\nThe typography system is architecturally ambitious: MongoDB Value Serif for massive hero headlines (96px) creates an editorial, authoritative presence — serif type at database-company scale is a bold choice that says \"we're not just another tech company.\" Euclid Circular A handles the heavy lifting of body and UI text with an unusually wide weight range (300–700), while Source Code Pro serves as the code and label font with distinctive…",

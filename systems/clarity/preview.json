@@ -1,21 +1,13 @@
 {
-  "canvas": "hsl(0deg 0% 100% / 60%)",
-  "surface": "hsl(0deg 0% 100% / 60%)",
-  "text": "#0b0b0c",
-  "muted": "#0b0b0c",
+  "canvas": "hsl(0deg 0% 0%)",
+  "surface": "hsl(0deg 0% 0%)",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
   "brand": "hsl(198deg 100% 48%)",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "0",
-  "ink": "#0b0b0c",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
   "palette": [
-    {
-      "name": "alias-object-overlay-backdrop-background",
-      "value": "hsl(0deg 0% 0% / 60%)"
-    },
-    {
-      "name": "alias-object-container-backdrop-background",
-      "value": "hsl(0deg 0% 100% / 60%)"
-    },
     {
       "name": "global-color-black",
       "value": "hsl(0deg 0% 0%)"
@@ -369,6 +361,14 @@
       "value": "hsl(238deg 23% 56%)"
     },
     {
+      "name": "global-color-slate-700",
+      "value": "hsl(238deg 28% 38%)"
+    },
+    {
+      "name": "global-color-slate-900",
+      "value": "hsl(238deg 28% 22%)"
+    },
+    {
       "name": "primary",
       "value": "hsl(198deg 100% 48%)"
     }
@@ -376,72 +376,72 @@
   "type": [
     {
       "name": "typography-h0-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "2rem",
       "px": 32
     },
     {
       "name": "typography-h0-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "2rem",
       "px": 32
     },
     {
       "name": "typography-h1-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.6rem",
       "px": 25.6
     },
     {
       "name": "typography-h1-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.6rem",
       "px": 25.6
     },
     {
       "name": "typography-h2-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.4rem",
       "px": 22.4
     },
     {
       "name": "typography-h2-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.4rem",
       "px": 22.4
     },
     {
       "name": "typography-p0-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.2rem",
       "px": 19.2
     },
     {
       "name": "typography-p0-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.2rem",
       "px": 19.2
     },
     {
       "name": "typography-h3-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.1rem",
       "px": 17.6
     },
     {
       "name": "typography-h3-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "1.1rem",
       "px": 17.6
     },
     {
       "name": "alias-typography-font-family",
-      "fontFamily": "Metropolis', 'Avenir Next', sans-serif",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "px": 16
     },
     {
       "name": "alias-typography-header-font-family",
-      "fontFamily": "Metropolis', 'Avenir Next', sans-serif",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "px": 16
     },
     {
@@ -451,288 +451,208 @@
     },
     {
       "name": "clr-metropolis-font-family",
-      "fontFamily": "Metropolis, 'Avenir Next', 'Helvetica Neue', Arial, sans-serif",
-      "px": 16
-    },
-    {
-      "name": "clr-h1-font-family",
-      "fontFamily": "var(--clr-display-font)",
-      "px": 16
-    },
-    {
-      "name": "clr-h2-font-family",
-      "fontFamily": "var(--clr-display-font)",
-      "px": 16
-    },
-    {
-      "name": "clr-h3-font-family",
-      "fontFamily": "var(--clr-display-font)",
-      "px": 16
-    },
-    {
-      "name": "clr-h4-font-family",
-      "fontFamily": "var(--clr-display-font)",
-      "px": 16
-    },
-    {
-      "name": "clr-h5-font-family",
-      "fontFamily": "var(--clr-display-font)",
-      "px": 16
-    },
-    {
-      "name": "clr-h6-font-family",
-      "fontFamily": "var(--clr-display-font)",
+      "fontFamily": "Metropolis, \"Avenir Next\", \"Helvetica Neue\", Arial, sans-serif",
       "px": 16
     },
     {
       "name": "typography-h4-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.9rem",
       "px": 14.4
     },
     {
       "name": "typography-h4-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.9rem",
       "px": 14.4
     },
     {
       "name": "typography-h5-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.8rem",
       "px": 12.8
     },
     {
       "name": "typography-h5-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.8rem",
       "px": 12.8
     },
     {
       "name": "typography-h6-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.7rem",
       "px": 11.2
     },
     {
       "name": "typography-h6-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.7rem",
       "px": 11.2
     },
     {
       "name": "typography-p1-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.7rem",
       "px": 11.2
     },
     {
       "name": "typography-p1-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.7rem",
       "px": 11.2
     },
     {
       "name": "typography-p2-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.65rem",
       "px": 10.4
     },
     {
       "name": "typography-p2-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.65rem",
       "px": 10.4
     },
     {
       "name": "typography-p3-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.65rem",
       "px": 10.4
     },
     {
       "name": "typography-p3-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.65rem",
       "px": 10.4
     },
     {
       "name": "typography-p4-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.6rem",
       "px": 9.6
     },
     {
       "name": "typography-p4-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.6rem",
       "px": 9.6
     },
     {
       "name": "typography-p5-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.6rem",
       "px": 9.6
     },
     {
       "name": "typography-p5-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.6rem",
       "px": 9.6
     },
     {
       "name": "typography-p6-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.55rem",
       "px": 8.8
     },
     {
       "name": "typography-p6-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.55rem",
       "px": 8.8
     },
     {
       "name": "typography-p7-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.55rem",
       "px": 8.8
     },
     {
       "name": "typography-p7-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.55rem",
       "px": 8.8
     },
     {
       "name": "typography-p8-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.5rem",
       "px": 8
     },
     {
       "name": "typography-p8-font-size-static",
-      "fontFamily": "system-ui",
+      "fontFamily": "Metropolis, \"Avenir Next\", sans-serif",
       "fontSize": "0.5rem",
       "px": 8
     }
   ],
   "components": [
     {
-      "key": "btn",
+      "key": "button-primary",
       "kind": "button",
-      "backgroundColor": "hsl(0deg 0% 0% / 0%)",
-      "textColor": "hsl(198deg 100% 34%)",
-      "border": "1px solid hsl(198deg 100% 34%)"
+      "backgroundColor": "hsl(198deg 100% 48%)",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
     },
     {
-      "key": "card",
-      "kind": "card",
-      "backgroundColor": "hsl(0deg 0% 100%)"
-    },
-    {
-      "key": "alert",
-      "kind": "alert",
-      "backgroundColor": "hsl(198deg 100% 95%)",
-      "textColor": "hsl(0deg 0% 0%)"
-    },
-    {
-      "key": "badge",
-      "kind": "badge",
-      "backgroundColor": "hsl(198deg 14% 36%)",
-      "textColor": "hsl(0deg 0% 0%)"
-    },
-    {
-      "key": "label",
-      "kind": "label",
-      "textColor": "hsl(198deg 100% 27%)"
-    },
-    {
-      "key": "table",
-      "kind": "table",
-      "backgroundColor": "hsl(0deg 0% 100%)",
-      "textColor": "hsl(198deg 28% 18%)"
-    },
-    {
-      "key": "nav-link",
-      "kind": "nav",
-      "textColor": "hsl(198deg 100% 27%)"
-    },
-    {
-      "key": "card-text-2",
-      "kind": "card",
-      "textColor": "hsl(198deg 28% 18%)"
-    },
-    {
-      "key": "input",
-      "kind": "input",
-      "textColor": "hsl(198deg 28% 18%)",
-      "rounded": "0",
-      "padding": "0",
-      "border": "none"
-    },
-    {
-      "key": "card-title-3",
-      "kind": "card",
-      "textColor": "hsl(198deg 28% 18%)"
-    },
-    {
-      "key": "card-header-4",
-      "kind": "card",
-      "textColor": "hsl(198deg 28% 18%)"
-    },
-    {
-      "key": "alerts-pager",
-      "kind": "alerts",
-      "textColor": "hsl(0deg 0% 0%)"
-    },
-    {
-      "key": "alert-action-2",
-      "kind": "alert",
-      "textColor": "hsl(198deg 100% 27%)"
-    },
-    {
-      "key": "textarea-2",
-      "kind": "input",
-      "backgroundColor": "hsl(0deg 0% 100%)",
-      "textColor": "hsl(198deg 28% 18%)"
-    },
-    {
-      "key": "alert-app-level-3",
-      "kind": "alert",
-      "backgroundColor": "hsl(198deg 100% 34%)",
-      "textColor": "hsl(0deg 0% 100%)",
-      "rounded": "0",
-      "border": "none"
-    },
-    {
-      "key": "input-group-3",
-      "kind": "input",
-      "textColor": "hsl(198deg 28% 18%)"
-    },
-    {
-      "key": "card-header-toggle-5",
-      "kind": "card",
+      "key": "button-secondary",
+      "kind": "button",
       "backgroundColor": "transparent",
-      "textColor": "inherit",
-      "padding": "0",
-      "border": "0"
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
     },
     {
-      "key": "alerts-pager-button-2",
-      "kind": "alerts",
-      "textColor": "hsl(0deg 0% 0%)",
-      "rounded": "0",
-      "padding": "0",
-      "border": "none"
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "hsl(9deg 100% 65%)",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
     },
     {
-      "key": "nav-close-2",
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "hsl(0deg 0% 0%)",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "hsl(0deg 0% 0%)",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "hsl(198deg 100% 48%)",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "hsl(93deg 80% 37%)",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "0 0",
-      "border": "0"
+      "backgroundColor": "hsl(0deg 0% 0%)",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "VMware Clarity — UX guidelines, HTML/CSS framework and Angular components.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (hsl(0deg 0% 0%)) canvas paired with `hsl(0deg 0% 0%)` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(198deg 100% 48%)` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Metropolis` across 36 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

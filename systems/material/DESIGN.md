@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Material Minimal
-description: "Material Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit."
+description: "Dark (#424242) canvas, system-ui typography, #fff brand accent, and 8px corner geometry"
 colors:
   surface-bg-dark: "#424242"
   red-accent-100: "#ff8a80"
@@ -95,122 +95,172 @@ colors:
   mdb-btn-active-color: "#fff"
 typography:
   font-size-base:
-    fontSize: "1rem !default"
-  display-font-sizes:
-    fontSize: "(
-  1: 5rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem,
-) !default"
+    fontSize: 1rem
+    fontFamily: null
   legend-font-size:
-    fontSize: "1.5rem !default"
+    fontSize: 1.5rem
+    fontFamily: null
   toast-font-size:
-    fontSize: "0.875rem !default"
+    fontSize: 0.875rem
+    fontFamily: null
   table-font-size:
-    fontSize: "0.9rem !default"
+    fontSize: 0.9rem
+    fontFamily: null
   btn-font-size:
-    fontSize: "0.75rem !default"
+    fontSize: 0.75rem
+    fontFamily: null
   btn-font-size-lg:
-    fontSize: "0.875rem !default"
+    fontSize: 0.875rem
+    fontFamily: null
   btn-font-size-sm:
-    fontSize: "0.75rem !default"
+    fontSize: 0.75rem
+    fontFamily: null
   btn-outline-font-size-lg:
-    fontSize: "0.875rem !default"
+    fontSize: 0.875rem
+    fontFamily: null
   btn-outline-font-size-sm:
-    fontSize: "0.75rem !default"
+    fontSize: 0.75rem
+    fontFamily: null
   input-font-size-lg:
-    fontSize: "1rem !default"
+    fontSize: 1rem
+    fontFamily: null
   input-font-size-sm:
-    fontSize: "0.775rem !default"
+    fontSize: 0.775rem
+    fontFamily: null
   form-label-font-size-sm:
-    fontSize: "0.775rem !default"
+    fontSize: 0.775rem
+    fontFamily: null
   form-file-sm-font-size:
-    fontSize: "0.775rem !default"
+    fontSize: 0.775rem
+    fontFamily: null
   form-file-lg-font-size:
-    fontSize: "1rem !default"
+    fontSize: 1rem
+    fontFamily: null
   input-group-lg-font-size:
-    fontSize: "1rem !default"
+    fontSize: 1rem
+    fontFamily: null
   input-group-sm-font-size:
-    fontSize: "0.775rem !default"
+    fontSize: 0.775rem
+    fontFamily: null
   nav-tabs-link-font-size:
-    fontSize: "12px !default"
+    fontSize: 12px
+    fontFamily: null
   dropdown-font-size:
-    fontSize: "0.875rem !default"
+    fontSize: 0.875rem
+    fontFamily: null
   pagination-font-size:
-    fontSize: "0.9rem !default"
+    fontSize: 0.9rem
+    fontFamily: null
   tooltip-font-size:
-    fontSize: "14px !default"
+    fontSize: 14px
+    fontFamily: null
   badge-notification-font-size:
-    fontSize: "0.6rem !default"
+    fontSize: 0.6rem
+    fontFamily: null
   range-thumb-value-font-size:
-    fontSize: "12px !default"
+    fontSize: 12px
+    fontFamily: null
   carousel-control-icon-font-size:
-    fontSize: "1.7rem !default"
+    fontSize: 1.7rem
+    fontFamily: null
   scrollspy-menu-sidebar-font-size:
-    fontSize: "0.8rem !default"
+    fontSize: 0.8rem
+    fontFamily: null
   mdb-body-font-size:
     fontSize: 1rem
+    fontFamily: null
   mdb-btn-font-size:
     fontSize: 0.75rem
+    fontFamily: null
   mdb-dropdown-font-size:
     fontSize: 0.875rem
+    fontFamily: null
   mdb-navbar-brand-font-size:
     fontSize: 1.25rem
+    fontFamily: null
   mdb-navbar-toggler-font-size:
     fontSize: 1.25rem
+    fontFamily: null
   mdb-pagination-font-size:
     fontSize: 0.875rem
+    fontFamily: null
   mdb-progress-font-size:
     fontSize: 0.75rem
+    fontFamily: null
   mdb-toast-font-size:
     fontSize: 0.875rem
+    fontFamily: null
   mdb-tooltip-font-size:
     fontSize: 14px
+    fontFamily: null
   mdb-popover-font-size:
     fontSize: 0.875rem
+    fontFamily: null
   mdb-popover-header-font-size:
     fontSize: 1rem
+    fontFamily: null
   mdb-table-font-size:
     fontSize: 0.9rem
+    fontFamily: null
   mdb-nav-tabs-link-font-size:
     fontSize: 12px
+    fontFamily: null
   mdb-nav-pills-link-font-size:
     fontSize: 12px
+    fontFamily: null
   mdb-badge-font-size:
     fontSize: 0.6rem
+    fontFamily: null
   mdb-scrollspy-menu-sidebar-font-size:
     fontSize: 0.8rem
+    fontFamily: null
   mdb-range-thumb-value-font-size:
     fontSize: 12px
+    fontFamily: null
   mdb-carousel-control-icon-font-size:
     fontSize: 1.7rem
+    fontFamily: null
+  small-font-size:
+    fontSize: 0.875em
+  sub-sup-font-size:
+    fontSize: 0.75em
+  badge-font-size:
+    fontSize: 0.75em
+  font-family-sans-serif:
+    fontFamily: "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  font-family-monospace:
+    fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+  font-family-roboto:
+    fontFamily: "Roboto, sans-serif"
+  mdb-font-sans-serif:
+    fontFamily: "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  mdb-font-monospace:
+    fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
   mdb-body-font-family:
-    fontFamily: "var(--mdb-font-roboto)"
+    fontFamily: "Roboto, sans-serif"
+  lead:
+    fontSize: 1.25rem
+    fontWeight: 300
+  figure-caption:
+    fontSize: 0.875em
 components:
   card:
     textColor: "#4f4f4f"
-  btn-close:
-    backgroundColor: "rgba(0,0,0,0)  center/1em auto no-repeat"
-    rounded: ".25rem"
-    padding: ".25em .25em"
   link-info:
-    textColor: "RGBA(84, 180, 211, 1) !important"
+    textColor: "RGBA(84, 180, 211, 1)"
   link-dark-2:
-    textColor: "RGBA(51, 45, 45, 1) !important"
+    textColor: "RGBA(51, 45, 45, 1)"
   alert-info:
     backgroundColor: "#e5f4f8"
-    textColor: "#3b7e94"
+    textColor: "#000000"
   alert-dark-2:
     backgroundColor: "#262626"
     textColor: "#eeeeee"
   link-light-3:
-    textColor: "RGBA(251, 251, 251, 1) !important"
+    textColor: "RGBA(251, 251, 251, 1)"
   badge-info:
     backgroundColor: "#e5f4f8"
-    textColor: "#3b7e94"
+    textColor: "#000000"
   badge-dark-2:
     backgroundColor: "#262626"
     textColor: "#eeeeee"
@@ -218,7 +268,7 @@ components:
     backgroundColor: "#f5f5f5"
     textColor: "#616161"
   link-danger-4:
-    textColor: "RGBA(220, 76, 100, 1) !important"
+    textColor: "RGBA(220, 76, 100, 1)"
   badge-light-3:
     backgroundColor: "#f5f5f5"
     textColor: "#616161"
@@ -226,14 +276,12 @@ components:
     backgroundColor: "#fae4e8"
     textColor: "#b03d50"
   link-primary-5:
-    textColor: "RGBA(59, 113, 202, 1) !important"
+    textColor: "RGBA(59, 113, 202, 1)"
   link-success-6:
-    textColor: "RGBA(20, 164, 77, 1) !important"
+    textColor: "RGBA(20, 164, 77, 1)"
   badge-danger-4:
     backgroundColor: "#fae4e8"
     textColor: "#b03d50"
-  alert-heading-5:
-    textColor: inherit
   alert-primary-6:
     backgroundColor: "#e2eaf7"
     textColor: "#2f5aa2"
@@ -253,13 +301,28 @@ components:
       fontWeight: 400
     rounded: 0.25rem
     padding: ".375rem .75rem"
+  button-primary:
+    backgroundColor: "#fff"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#6d6d6d"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#f44336"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
 ---
 
 # Material Minimal
 
 ## Overview
 
-Material Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.
+Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.
 
 Tokens were read from the project's own repository, not from a marketing site: 90 colour tokens and 44 type tokens.
 
@@ -274,3 +337,10 @@ Families declared in the source: `var(--mdb-font-roboto)`.
 ## Components
 
 22 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#424242) canvas paired with `#6d6d6d` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 53 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

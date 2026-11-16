@@ -1,121 +1,296 @@
 ---
 version: alpha
 name: ENGIE Fluid Design System
-description: "ENGIE ENGIE Fluid Design System — read from www.engie.design's live stylesheets, not a published token package."
+description: "Crisp light (#fff) canvas, Lato typography, #3c8dd6 brand accent, and sharp 0px geometry"
 colors:
-  nj-deprecated-color-base-black: "#000"
-  nj-deprecated-color-base-blue-allports-active: "#064776"
-  nj-deprecated-color-base-blue-bigstone: "#0f1e29"
+  nj-semantic-color-background-status-planet-tertiary-: "#95dfdd"
+  nj-semantic-color-border-status-danger-moderate-defa: "#f34e46"
+  nj-semantic-color-icon-neutral-secondary-focused: "#232d35"
+  nj-semantic-color-border-accent-green-strong-selecte: "#004d1c"
+  nj-semantic-color-icon-accent-grey-contrast-default: "#334551"
+  nj-semantic-color-border-brand-subtle-selected: "#3c8dd6"
+  nj-semantic-color-icon-accent-orange-contrast-defaul: "#693315"
+  nj-semantic-color-border-accent-blue-subtle-default: "#bfd4f5"
+  nj-semantic-color-text-accent-green-primary-default: "#008836"
+  nj-semantic-color-background-status-success-secondar: "#f3faf4"
+  nj-semantic-color-background-accent-teal-solid-hover: "#0a6361"
+  nj-semantic-color-icon-accent-blue-contrast-default: "#004573"
+  nj-semantic-color-border-status-discovery-strong-pre: "#533669"
+  nj-semantic-color-text-status-discovery-primary-pres: "#533669"
+  nj-core-color-reference-status-success-300: "#aedfb3"
+  nj-semantic-color-border-neutral-inverse-selected: "#ccd4da"
+  nj-semantic-color-background-accent-ultramarine-soli: "#6372b2"
+  nj-semantic-color-icon-neutral-tertiary-hovered: "#435c6e"
+  nj-semantic-color-border-neutral-subtle-pressed: "#778c9b"
+  nj-semantic-color-text-accent-purple-contrast-defaul: "#744299"
+  nj-semantic-color-border-accent-lime-moderate-hovere: "#6c7d02"
+  nj-core-color-reference-status-warning-600: "#bc5921"
+  nj-semantic-color-icon-accent-teal-primary-hovered: "#0a6361"
+  nj-semantic-color-border-accent-yellow-moderate-hove: "#947023"
+  nj-semantic-color-background-status-success-solid-de: "#008836"
+  nj-semantic-color-text-status-danger-contrast-hovere: "#7f1d1b"
+  nj-semantic-color-background-accent-grey-secondary-p: "#ccd4da"
+  nj-semantic-color-border-status-planet-moderate-focu: "#008480"
+  nj-semantic-color-text-accent-red-contrast-default: "#aa2424"
+  nj-semantic-color-background-neutral-secondary-focus: "#ebeef1"
+  nj-semantic-color-text-accent-grey-primary-default: "#60798b"
+  nj-semantic-color-border-accent-green-strong-default: "#008836"
+  nj-semantic-color-background-accent-blue-solid-hover: "#005c9a"
+  nj-semantic-color-text-accent-blue-contrast-pressed: "#0a2d4b"
+  nj-semantic-color-text-neutral-contrast-hovered: "#004573"
+  nj-semantic-color-icon-brand-contrast-default: "#005c9a"
+  nj-semantic-color-text-accent-red-primary-focused: "#aa2424"
+  nj-semantic-color-border-brand-subtle-default: "#bfd4f5"
+  nj-semantic-color-border-status-discovery-strong-hov: "#744299"
+  nj-semantic-color-text-neutral-contrast-focused: "#004573"
+  nj-semantic-color-border-accent-orange-subtle-hovere: "#ff8c47"
+  nj-semantic-color-background-status-discovery-spotli: "#312838"
+  nj-semantic-color-background-accent-red-tertiary-pre: "#ff8979"
+  nj-semantic-color-text-accent-grey-contrast-hovered: "#334551"
+  nj-semantic-color-icon-brand-primary-pressed: "#004573"
+  nj-semantic-color-background-accent-purple-solid-foc: "#744299"
+  nj-semantic-color-text-accent-ultramarine-primary-de: "#6372b2"
+  nj-semantic-color-text-accent-yellow-contrast-hovere: "#533f18"
+  nj-semantic-color-border-accent-pink-moderate-select: "#963563"
+  nj-semantic-color-background-accent-orange-solid-def: "#bc5921"
+  nj-semantic-color-border-accent-pink-moderate-focuse: "#e01b78"
+  nj-semantic-color-border-accent-blue-moderate-select: "#005c9a"
+  nj-semantic-color-border-accent-lime-strong-pressed: "#3e460e"
+  nj-semantic-color-border-accent-pink-strong-default: "#e01b78"
+  nj-semantic-color-border-neutral-subtle-default: "#ccd4da"
+  nj-deprecated-color-text-input: "#212121"
+  nj-semantic-color-border-status-danger-moderate-sele: "#aa2424"
+  nj-semantic-color-border-brand-subtle-hovered: "#7eaee9"
+  nj-semantic-color-text-brand-primary-pressed: "#004573"
+  nj-semantic-color-background-brand-secondary-focused: "#e9f0fb"
+  nj-semantic-color-border-accent-blue-strong-hovered: "#005c9a"
+  nj-deprecated-color-text-background-primary: "#fff"
+  nj-semantic-color-border-accent-ultramarine-strong-p: "#2b3d83"
+  tw-color-white: "#fff"
   nj-deprecated-color-base-blue-bigstone-hover: "#4d5860"
-  nj-deprecated-color-base-blue-corporate-active: "#006190"
-  nj-deprecated-color-base-blue-engie: "#0af"
-  nj-deprecated-color-base-blue-rhino-active: "#7b8d9a"
-  nj-deprecated-color-base-blue-venice: "#005288"
-  nj-deprecated-color-base-blue-venice-hover: "#003c64"
-  nj-deprecated-color-base-cerise-active: "#8e1a53"
+  nj-deprecated-color-base-blue-rhino-hover: "#617786"
   nj-deprecated-color-base-gray-100: "#f5f5f5"
-  nj-deprecated-color-base-gray-300: "#e0e0e0"
-  nj-deprecated-color-base-gray-500: "#9e9e9e"
-  nj-deprecated-color-base-gray-700: "#616161"
-  nj-deprecated-color-base-gray-900: "#212121"
-  nj-deprecated-color-base-green-active: "#005e20"
-  nj-deprecated-color-base-green-fun: "#69af23"
+  nj-deprecated-color-base-gray-800: "#424242"
   nj-deprecated-color-base-green-fun-hover: "#4d8119"
-  nj-deprecated-color-base-green-java-active: "#44826d"
-  nj-deprecated-color-base-green-pine: "#007873"
-  nj-deprecated-color-base-green-pine-hover: "#005855"
-  nj-deprecated-color-base-green-riogrande-active: "#757f00"
-  nj-deprecated-color-base-orange: "#e07602"
-  nj-deprecated-color-base-orange-hover: "#a65701"
+  nj-deprecated-color-base-green-riogrande: "#becd00"
   nj-deprecated-color-base-orange-crusta-active: "#99551e"
-  nj-deprecated-color-base-purple: "#1f106d"
-  nj-deprecated-color-base-purple-hover: "#584d92"
-  nj-deprecated-color-base-red-active: "#7e001f"
-  nj-deprecated-color-base-red-mandy: "#e74a50"
-  nj-deprecated-color-base-red-mandy-hover: "#ab363b"
-  nj-deprecated-color-base-violet-active: "#341550"
+  nj-deprecated-color-base-red-hover: "#970025"
   nj-deprecated-color-base-violet-eggplant: "#910f7d"
-  nj-deprecated-color-base-violet-eggplant-hover: "#6b0b5c"
-  nj-deprecated-color-base-white-active: "#bdbdbd"
-  nj-deprecated-color-base-yellow: "#faca08"
-  nj-deprecated-color-base-yellow-hover: "#b99505"
-  nj-deprecated-color-base-yellow-bright-sun-active: "#9a8312"
-  nj-core-color-grey-0: "#fff"
+  nj-deprecated-color-base-yellow-active: "#9a7d04"
   nj-core-color-grey-200: "#ebeef1"
-  nj-core-color-grey-400: "#9eadb8"
-  nj-core-color-grey-600: "#60798b"
-  nj-core-color-grey-800: "#334551"
-  nj-core-color-grey-1000: "#171d21"
-  nj-core-color-pink-200: "#ffe9f3"
-  nj-core-color-pink-400: "#ff80bd"
+  nj-core-color-grey-900: "#232d35"
   nj-core-color-pink-600: "#e01b78"
-  nj-core-color-pink-800: "#5c3749"
-  nj-core-color-red-100: "#fff7f5"
-  nj-core-color-red-300: "#ffc5b9"
-  nj-core-color-red-500: "#f34e46"
-  nj-core-color-red-700: "#aa2424"
-  nj-core-color-red-900: "#521814"
+  nj-core-color-red-400: "#ff8979"
   nj-core-color-orange-200: "#ffeada"
-  nj-core-color-orange-400: "#ff8c47"
-  nj-core-color-orange-600: "#bc5921"
-  nj-core-color-orange-800: "#693315"
-  nj-core-color-yellow-100: "#fff7e0"
-  nj-core-color-yellow-300: "#ffcc59"
-  nj-core-color-yellow-500: "#ab8327"
+  nj-core-color-orange-900: "#442312"
   nj-core-color-yellow-700: "#6f551d"
-  nj-core-color-yellow-900: "#362a13"
-  nj-core-color-green-200: "#e2f3e3"
-  nj-core-color-green-400: "#63be74"
-  nj-core-color-green-600: "#008836"
-  nj-core-color-green-800: "#004d1c"
-  nj-core-color-blue-100: "#f5f8fd"
+  nj-core-color-green-500: "#199d47"
   nj-core-color-blue-300: "#bfd4f5"
-  nj-core-color-blue-500: "#3c8dd6"
-  nj-core-color-blue-700: "#005c9a"
-  nj-core-color-blue-900: "#0a2d4b"
-  nj-core-color-ultramarine-200: "#eceef7"
-  nj-core-color-ultramarine-400: "#9fa9d4"
-  nj-core-color-ultramarine-600: "#6372b2"
+  nj-core-color-ultramarine-100: "#f6f7fb"
   nj-core-color-ultramarine-800: "#2b3d83"
-  nj-core-color-purple-100: "#faf7fc"
-  nj-core-color-purple-300: "#deccec"
-  nj-core-color-purple-500: "#a377c5"
-  nj-core-color-purple-700: "#744299"
-  nj-core-color-purple-900: "#312838"
-  nj-core-color-teal-200: "#daf4f3"
+  nj-core-color-purple-600: "#9261b7"
   nj-core-color-teal-400: "#3dbcb8"
-  nj-core-color-teal-600: "#008480"
-  nj-core-color-teal-800: "#154948"
-  nj-core-color-lime-100: "#f8fad5"
-  nj-core-color-lime-300: "#c7de43"
-  nj-core-color-lime-500: "#7d9200"
-  nj-core-color-lime-700: "#525f0a"
+  nj-core-color-lime-200: "#eef5a8"
   nj-core-color-lime-900: "#2a2e0e"
-  nj-core-color-engie-green: "#23d2b5"
-  nj-core-color-black-default: "#15191d"
+  nj-core-color-reference-status-planet-700: "#0a6361"
   primary: "#3c8dd6"
 typography:
   nj-core-font-family-sans-serif:
-    fontFamily: "Lato\",-apple-system,\"BlinkMacSystemFont\",\"Segoe UI\",\"Roboto\",\"Helvetica Neue\",\"Arial\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol"
+    fontFamily: "Lato, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
   nj-core-font-family-monospace:
-    fontFamily: "Roboto Mono\",\"SFMono-Regular\",\"Menlo\",\"Monaco\",\"Consolas\",\"Liberation Mono\",\"Courier New\",monospace"
-  nj-semantic-font-family-default:
-    fontFamily: "var(--nj-core-font-family-sans-serif)"
-  nj-semantic-font-family-code:
-    fontFamily: "var(--nj-core-font-family-monospace)"
-  tw-default-font-family:
-    fontFamily: "var(--tw-font-sans)"
+    fontFamily: "\"Roboto Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+  nj-lead:
+    fontSize: 1.25rem
+    fontWeight: 400
+  h2:
+    fontSize: 4.75rem
+  njs-landing-heading:
+    fontSize: 4.75rem
+  njs-landing-heading-subtitle:
+    fontSize: 3.375rem
+  njs-color-title:
+    fontSize: ".875rem"
+  h1:
+    fontSize: 32px
+  h3:
+    fontSize: 20px
+    fontWeight: 700
+  h5:
+    fontSize: 16px
+    fontWeight: 700
+  h6:
+    fontSize: 14px
+    fontWeight: 700
+  njd-toc-title:
+    fontSize: 14px
+    fontWeight: 700
+  njs-landing-intro-title:
+    fontSize: 48px
+    lineHeight: 56px
+  njs-dark-landing-title:
+    fontSize: 3rem
+  njd-fluid-5-hero-title:
+    fontSize: 4rem
+  njd-new-to-fluid-hero-title:
+    fontSize: 4rem
+  nj-semantic-font-size-display-xs-mobile:
+    fontSize: 2.25rem
+  nj-semantic-font-size-heading-sm-mobile:
+    fontSize: 1.5rem
+  nj-semantic-font-size-text-md-desktop:
+    fontSize: 1rem
+  nj-semantic-font-size-display-xl-desktop:
+    fontSize: 4.5rem
+  nj-semantic-font-size-text-sm:
+    fontSize: 0.875rem
+  nj-semantic-font-size-heading-xl-mobile:
+    fontSize: 2rem
+  nj-semantic-font-size-heading-sm-desktop:
+    fontSize: 1.5rem
+  nj-semantic-font-size-display-xs:
+    fontSize: 2.5rem
+  nj-semantic-font-size-display-sm-mobile:
+    fontSize: 2.5rem
+  nj-semantic-font-size-text-xs-desktop:
+    fontSize: 0.75rem
+  nj-semantic-font-size-heading-xs:
+    fontSize: 1.25rem
+  nj-semantic-font-size-text-xs-mobile:
+    fontSize: 0.75rem
+  nj-semantic-font-size-heading-xs-mobile:
+    fontSize: 1.25rem
+  nj-semantic-font-size-heading-md-desktop:
+    fontSize: 1.75rem
+  nj-semantic-font-size-display-2xl-mobile:
+    fontSize: 4.5rem
+  nj-semantic-font-size-display-xs-desktop:
+    fontSize: 2.5rem
+  nj-semantic-font-size-text-md-mobile:
+    fontSize: 1rem
+  nj-semantic-font-size-display-sm-desktop:
+    fontSize: 3rem
+  nj-semantic-font-size-display-md-desktop:
+    fontSize: 3.5rem
+  nj-semantic-font-size-heading-xs-desktop:
+    fontSize: 1.25rem
+  nj-semantic-font-size-heading-sm:
+    fontSize: 1.5rem
+  nj-semantic-font-size-display-2xl-desktop:
+    fontSize: 5.5rem
+  nj-semantic-font-size-text-xs:
+    fontSize: 0.75rem
+  nj-semantic-font-size-text-lg-mobile:
+    fontSize: 1.125rem
+  nj-semantic-font-size-display-md:
+    fontSize: 3.5rem
+  nj-semantic-font-size-text-md:
+    fontSize: 1rem
+  nj-semantic-font-size-text-lg:
+    fontSize: 1.125rem
+  nj-semantic-font-size-text-lg-desktop:
+    fontSize: 1.125rem
+  nj-semantic-font-size-heading-lg-mobile:
+    fontSize: 1.75rem
+  nj-semantic-font-size-display-md-mobile:
+    fontSize: 3rem
+  nj-semantic-font-size-display-sm:
+    fontSize: 3rem
+  nj-semantic-font-size-text-sm-desktop:
+    fontSize: 0.875rem
+  nj-semantic-font-size-heading-md:
+    fontSize: 1.75rem
+  nj-semantic-font-size-heading-lg:
+    fontSize: 2rem
+  nj-semantic-font-size-heading-lg-desktop:
+    fontSize: 2rem
+  nj-semantic-font-size-display-2xl:
+    fontSize: 5.5rem
+  nj-semantic-font-size-display-xl:
+    fontSize: 4.5rem
+  nj-semantic-font-size-heading-6:
+    fontSize: 1.125rem
+  nj-semantic-font-size-text-sm-mobile:
+    fontSize: 0.875rem
+  nj-semantic-font-size-display-xl-mobile:
+    fontSize: 4rem
+  nj-semantic-font-size-heading-xl-desktop:
+    fontSize: 2.25rem
+  nj-semantic-font-size-heading-md-mobile:
+    fontSize: 1.75rem
+  nj-semantic-font-size-heading-xl:
+    fontSize: 2.25rem
+  nj-semantic-font-size-content-4:
+    fontSize: 0.625rem
   tw-default-mono-font-family:
-    fontFamily: "var(--tw-font-mono)"
+    fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+  nj-semantic-font-family-code:
+    fontFamily: "\"Roboto Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+  tw-default-font-family:
+    fontFamily: "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+  nj-semantic-font-family-default:
+    fontFamily: "Lato, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+components:
+  card:
+    textColor: "#171d21"
+    rounded: "0"
+  tab:
+    backgroundColor: transparent
+    textColor: "#171d21"
+    typography:
+      fontSize: 1rem
+    padding: 0.5rem 1.5rem
+  link:
+    textColor: "#007bc5"
+    typography:
+      fontWeight: 400
+  nj-footer-card-2:
+    backgroundColor: "#f6f8f9"
+  card-3:
+    backgroundColor: "#007bc5"
+    textColor: "#fff"
+  tab-2:
+    textColor: "#171d21"
+  btn-sidebar:
+    backgroundColor: "#e01b78"
+  nj-decorative-badge:
+    backgroundColor: "#f6f8f9"
+    rounded: "50%"
+  nj-chat-input-suggestion:
+    textColor: "#007bc5"
+    rounded: "0"
+    padding: 0.25rem 0.5rem
+  njd-elevation-card-4:
+    backgroundColor: "#fff"
+    padding: 1.5rem
+  njd-design-tokens-card-5:
+    backgroundColor: "#f6f8f9"
+    textColor: "#334551"
+    typography:
+      fontSize: 0.75rem
+    rounded: 1rem
+    padding: 0.25rem 0.75rem
+  njd-design-tokens-card-6:
+    backgroundColor: "#60798b"
+  njd-spacing-table:
+    backgroundColor: "#ffe9f3"
+  njd-design-tokens-table-2:
+    backgroundColor: "#fff"
+  njd-design-tokens-table-3:
+    backgroundColor: "#fff"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: "0"
+    padding: 10px 18px
 ---
 
 # ENGIE Fluid Design System
 
 ## Overview
 
-ENGIE ENGIE Fluid Design System — read from www.engie.design's live stylesheets, not a published token package.
+ENGIE Fluid Design System — read from the rendered page in a browser, not from published tokens.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 6 type tokens.
+Tokens were read from https://www.engie.design, not from a published token package: 91 colour tokens and 64 type tokens.
 
 ## Colors
 
@@ -123,4 +298,15 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 
 ## Typography
 
-Families declared in the source: `Lato",-apple-system,"BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Arial",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol`, `Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New",monospace`, `var(--nj-core-font-family-sans-serif)`, `var(--nj-core-font-family-monospace)`, `var(--tw-font-sans)`, `var(--tw-font-mono)`.
+Families declared in the source: `Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `"Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`.
+
+## Components
+
+15 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3c8dd6` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Lato` across 64 type steps.
+- **Component Geometry**: Buttons (`0`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -44,7 +44,7 @@ typography:
     fontWeight: 400
     lineHeight: 0.83
   feature-title:
-    fontFamily: basier-square / rb-freigeist-neue
+    fontFamily: "\"basier-square / rb-freigeist-neue\""
     fontSize: 18px
     fontWeight: 600
     lineHeight: 1.56
@@ -90,6 +90,31 @@ components:
   button-transparent-glass:
     backgroundColor: "rgba(255, 255, 255, 0.1)"
     textColor: "#202020"
+  input-default:
+    backgroundColor: "#fcfcfc"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fcfcfc"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#2b9a66"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fcfcfc"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Replicate

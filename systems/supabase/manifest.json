@@ -6,9 +6,9 @@
   "category": "Developer Tools & Platforms",
   "theme": "dark",
   "tags": [
-    "dark",
     "developer",
-    "developer-tools"
+    "developer-tools",
+    "dark"
   ],
   "homepage": "https://supabase.com",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 19,
     "typography": 10,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,22 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/supabase/supabase",
+    "package": "@supabase/ui"
+  },
+  "popularity": {
+    "rank": 158,
+    "stars": 115036,
+    "forks": 15118,
+    "npmDownloads": 0,
+    "score": 115036,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

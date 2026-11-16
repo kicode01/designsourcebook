@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T12:04:23.128Z",
+  "updated": "2026-11-16T14:33:02.170Z",
   "blocked": [
     {
       "slug": "at",
@@ -8,33 +8,6 @@
       "source": "https://github.com/at-ui/at-ui",
       "kind": "repo",
       "reason": "no colour tokens found in the repository",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "at-uikit",
-      "name": "AT UIKIT",
-      "org": "AT UIKIT",
-      "source": "https://github.com/at-ui/at-ui",
-      "kind": "repo",
-      "reason": "no colour tokens found in the repository",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "bbc-gel",
-      "name": "BBC GEL",
-      "org": "BBC",
-      "source": "https://www.bbc.co.uk/gel",
-      "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "bolt",
-      "name": "Bolt Design System",
-      "org": "Bolt",
-      "source": "https://boltdesignsystem.com/",
-      "kind": "browser",
-      "reason": "only 2 colour tokens from the rendered page — below the 12 needed",
       "at": "2026-11-16"
     },
     {
@@ -61,7 +34,7 @@
       "org": "Co-op",
       "source": "https://www.coop.co.uk/experience-library/",
       "kind": "browser",
-      "reason": "no colour values in computed styles (0 custom properties, 0 elements)",
+      "reason": "HTTP 403 — site blocked automated access (no content)",
       "at": "2026-11-16"
     },
     {
@@ -74,48 +47,12 @@
       "at": "2026-11-16"
     },
     {
-      "slug": "duet",
-      "name": "Duet",
-      "org": "Duet",
-      "source": "https://www.duetds.com",
-      "kind": "browser",
-      "reason": "only 2 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "enel",
-      "name": "Enel",
-      "org": "Enel",
-      "source": "https://dsyui.enelx.com/",
-      "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
       "slug": "futurelearn",
       "name": "FutureLearn Pattern Library",
       "org": "FutureLearn",
       "source": "https://www.futurelearn.com/pattern-library",
       "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "globalexperiencelanguage",
-      "name": "BBC GEL (Global Experience Language)",
-      "org": "Global Experience Language",
-      "source": "https://www.bbc.co.uk/gel",
-      "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "heroku",
-      "name": "Heroku Purple3",
-      "org": "Heroku",
-      "source": "https://design.herokai.com/",
-      "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
+      "reason": "HTTP 403 — site blocked automated access (Just a moment...)",
       "at": "2026-11-16"
     },
     {
@@ -125,15 +62,6 @@
       "source": "@heroui/theme",
       "kind": "npm",
       "reason": "only 9 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "jb",
-      "name": "JB Design System",
-      "org": "JB",
-      "source": "https://javadbat.github.io/design-system",
-      "kind": "repo",
-      "reason": "clone failed: fatal: repository 'https://javadbat.github.io/design-system/' not found",
       "at": "2026-11-16"
     },
     {
@@ -151,13 +79,13 @@
       "org": "Jobber",
       "source": "https://atlantis.getjobber.com",
       "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
+      "reason": "HTTP 403 — site blocked automated access (Just a moment...)",
       "at": "2026-11-16"
     },
     {
-      "slug": "just",
+      "slug": "justeattakeaway",
       "name": "Just Eat Takeaway.com PIE Design System",
-      "org": "Just",
+      "org": "Just Eat Takeaway",
       "source": "https://github.com/justeattakeaway/pie",
       "kind": "repo",
       "reason": "only 1 colour tokens extracted — below the 12 needed to represent a system",
@@ -170,42 +98,6 @@
       "source": "https://github.com/skbkontur/retail-ui/",
       "kind": "repo",
       "reason": "clone failed: clone failed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "mailchimp",
-      "name": "Mailchimp Content Styleguide",
-      "org": "Mailchimp",
-      "source": "https://styleguide.mailchimp.com/",
-      "kind": "browser",
-      "reason": "only 2 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "mailru",
-      "name": "Mail.ru Group Paradigm",
-      "org": "Mail.ru",
-      "source": "https://design.mail.ru/",
-      "kind": "browser",
-      "reason": "only 2 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "marvel",
-      "name": "Marvel Styleguide",
-      "org": "Marvel",
-      "source": "https://marvelapp.com/styleguide",
-      "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "morningstar",
-      "name": "Morningstar Design System",
-      "org": "Morningstar",
-      "source": "http://designsystem.morningstar.com/",
-      "kind": "browser",
-      "reason": "only 2 colour tokens from the rendered page — below the 12 needed",
       "at": "2026-11-16"
     },
     {
@@ -223,7 +115,7 @@
       "org": "NationBuilder",
       "source": "https://www.nationbuilder.design/",
       "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
+      "reason": "HTTP 403 — site blocked automated access (Just a moment...)",
       "at": "2026-11-16"
     },
     {
@@ -232,52 +124,7 @@
       "org": "Nordnet",
       "source": "https://brand.nordnet.se/",
       "kind": "browser",
-      "reason": "no colour values in computed styles (0 custom properties, 0 elements)",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "ontario",
-      "name": "Ontario Design System",
-      "org": "Ontario",
-      "source": "https://designsystem.ontario.ca/docs/documentation/release-notes.html#latest",
-      "kind": "repo",
-      "reason": "clone failed: fatal: https://designsystem.ontario.ca/docs/documentation/release-notes.html#latest/info/refs not valid: could not determine hash algorithm; is this a git repository?",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "red",
-      "name": "Red Hat PatternFly",
-      "org": "Red",
-      "source": "https://github.com/patternfly/patternfly-react",
-      "kind": "repo",
-      "reason": "only 4 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "shadcnui",
-      "name": "Shadcn/ui",
-      "org": "Shadcn/ui",
-      "source": "https://github.com/shadcn-ui",
-      "kind": "repo",
-      "reason": "clone failed: fatal: repository 'https://github.com/shadcn-ui/' not found",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "teambition",
-      "name": "Teambition Clarity Design",
-      "org": "Teambition",
-      "source": "https://design.teambition.com/",
-      "kind": "browser",
-      "reason": "only 10 colour tokens from the rendered page — below the 12 needed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "telefnica",
-      "name": "Telefónica Mística",
-      "org": "Telefónica",
-      "source": "https://github.com/Telefonica/mistica",
-      "kind": "repo",
-      "reason": "no colour tokens found in the repository",
+      "reason": "HTTP 403 — site blocked automated access (no content)",
       "at": "2026-11-16"
     },
     {
@@ -296,15 +143,6 @@
       "source": "@wonderflow/react-components",
       "kind": "npm",
       "reason": "only 3 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "yelp",
-      "name": "Yelp Styleguide",
-      "org": "Yelp",
-      "source": "https://www.yelp.com/styleguide",
-      "kind": "browser",
-      "reason": "only 3 colour tokens from the rendered page — below the 12 needed",
       "at": "2026-11-16"
     }
   ]

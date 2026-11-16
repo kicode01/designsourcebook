@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Semi Design
-description: "Semi Semi Design — tokens read from https://github.com/DouyinFE/semi-design."
+description: "Crisp light (#fff) canvas, Inter typography, rgba(119, 182, 249, 1) brand accent, and 6px corner geometry"
 colors:
   semi-color-data-0: "rgba(87, 105, 255, 1)"
   semi-color-data-1: "rgba(142, 212, 231, 1)"
@@ -65,20 +65,28 @@ typography:
     fontSize: 14px
   font-size-small:
     fontSize: 12px
+    fontFamily: null
   font-size-regular:
     fontSize: 14px
+    fontFamily: null
   font-size-header-6:
     fontSize: 16px
+    fontFamily: null
   font-size-header-5:
     fontSize: 18px
+    fontFamily: null
   font-size-header-4:
     fontSize: 20px
+    fontFamily: null
   font-size-header-3:
     fontSize: 24px
+    fontFamily: null
   font-size-header-2:
     fontSize: 28px
+    fontFamily: null
   font-size-header-1:
     fontSize: 32px
+    fontFamily: null
   font-ai-chat-dialogue-references-font-size:
     fontSize: 12px
   font-ai-chat-input-attachment-content-delete-font-si:
@@ -153,6 +161,8 @@ typography:
     fontSize: 12px
   font-table-normal-font-size:
     fontSize: 14px
+  font-family-regular:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Segoe UI\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
 components:
   panel-header:
     backgroundColor: "#fafafa"
@@ -161,13 +171,48 @@ components:
       fontSize: 14px
       fontWeight: 600
     padding: 12px 16px
+  button-primary:
+    backgroundColor: "rgba(119, 182, 249, 1)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "rgba(119, 182, 249, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # Semi Design
 
 ## Overview
 
-Semi Semi Design — tokens read from https://github.com/DouyinFE/semi-design.
+Semi Design — tokens read from https://github.com/DouyinFE/semi-design.
 
 Tokens were read from the project's own repository, not from a marketing site: 57 colour tokens and 46 type tokens.
 
@@ -182,3 +227,10 @@ No resolvable type tokens were extracted. The type scale is omitted rather than 
 ## Components
 
 1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(119, 182, 249, 1)` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 47 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

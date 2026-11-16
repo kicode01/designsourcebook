@@ -3,13 +3,217 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#0077cf",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "24px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Design System is published by Morningstar, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "canvas-text",
+      "value": "#000000"
+    },
+    {
+      "name": "header-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "nav-bg",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "h2-text",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "link-bg",
+      "value": "#272520"
+    },
+    {
+      "name": "link-text",
+      "value": "#f7f5f2"
+    },
+    {
+      "name": "link-text-1",
+      "value": "#5e5e5e"
+    },
+    {
+      "name": "link-bg-2",
+      "value": "#0077cf"
+    },
+    {
+      "name": "link-border",
+      "value": "#808080"
+    },
+    {
+      "name": "card-border",
+      "value": "#cccccc"
+    },
+    {
+      "name": "alert-text",
+      "value": "#f8fbff"
+    },
+    {
+      "name": "alert-border",
+      "value": "#dbd8d4"
+    },
+    {
+      "name": "alert-bg",
+      "value": "#4560db"
+    },
+    {
+      "name": "primary",
+      "value": "#0077cf"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "MorningstarIntrinsic, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "45px",
+      "px": 45,
+      "fontWeight": 300,
+      "lineHeight": 1.11
+    },
+    {
+      "name": "h2",
+      "fontFamily": "MorningstarIntrinsic, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 500,
+      "lineHeight": 1.13
+    },
+    {
+      "name": "h3",
+      "fontFamily": "MorningstarIntrinsic, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "23px",
+      "px": 23,
+      "fontWeight": 500,
+      "lineHeight": 1.17
+    },
+    {
+      "name": "body",
+      "fontFamily": "MorningstarIntrinsic, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 300,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "header",
+      "fontFamily": "\"Times New Roman\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "nav",
+      "fontFamily": "\"Times New Roman\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "textColor": "#000000"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#5e5e5e",
+      "padding": "1px 6px"
+    },
+    {
+      "key": "button-3",
+      "kind": "button",
+      "backgroundColor": "#0077cf",
+      "textColor": "#ffffff",
+      "rounded": "24px",
+      "padding": "8px 24px"
+    },
+    {
+      "key": "button-4",
+      "kind": "button",
+      "textColor": "#5e5e5e",
+      "rounded": "24px",
+      "padding": "4px 16px",
+      "border": "1px solid rgb(128, 128, 128)"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "16px",
+      "border": "1px solid rgb(204, 204, 204)"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "textColor": "#1e1e1e",
+      "border": "2px solid rgba(0, 0, 0, 0)"
+    },
+    {
+      "key": "card-3",
+      "kind": "card",
+      "textColor": "#000000"
+    },
+    {
+      "key": "alert",
+      "kind": "card",
+      "textColor": "#f8fbff",
+      "border": "1px solid rgb(219, 216, 212)"
+    },
+    {
+      "key": "alert-2",
+      "kind": "card",
+      "backgroundColor": "#4560db",
+      "textColor": "#f8fbff",
+      "padding": "10px 10px 10px 16px"
+    },
+    {
+      "key": "alert-3",
+      "kind": "card",
+      "backgroundColor": "#272520",
+      "textColor": "#f7f5f2",
+      "padding": "10px 16px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "24px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0077cf",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "24px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Morningstar Design System — Crisp light (#ffffff) canvas, Times New Roman typography, #0077cf brand accent, and pill & expressive rounded surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0077cf` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Times New Roman` across 6 type steps.\n- **Component Geometry**: Buttons (`999px`), cards (`24px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

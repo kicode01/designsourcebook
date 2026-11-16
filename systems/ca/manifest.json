@@ -1,22 +1,23 @@
 {
   "name": "ca",
   "displayName": "CA Technologies Mineral UI",
-  "description": "CA CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.",
-  "style": "CA CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.",
+  "description": "CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.",
+  "style": "Crisp light (#ffffff) canvas, system-ui typography, #f0f5fc brand accent, and 8px corner geometry",
   "category": "CA",
   "org": "CA",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "published",
-    "dark",
-    "ca"
+    "ca",
+    "light"
   ],
   "homepage": "https://github.com/mineral-ui/mineral-ui",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/mineral-ui/mineral-ui — 11 token files, 1053 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/mineral-ui/mineral-ui"
+    "repo": "https://github.com/mineral-ui/mineral-ui",
+    "package": "mineral-ui"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 91,
     "typography": 10,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 71,
+    "stars": 556,
+    "forks": 46,
+    "npmDownloads": 2754,
+    "score": 856,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

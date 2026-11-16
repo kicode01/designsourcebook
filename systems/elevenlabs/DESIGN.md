@@ -121,6 +121,31 @@ components:
     textColor: "#000000"
     rounded: 30px
     padding: 12px 20px 12px 14px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 9999px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 9999px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 9999px
+    padding: 10px 16px
 ---
 
 # Design System: ElevenLabs

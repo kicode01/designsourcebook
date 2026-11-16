@@ -1,44 +1,53 @@
 {
   "name": "mailchimp",
-  "displayName": "MailChimp Pattern Library",
-  "description": "MailChimp Pattern Library is published by Mailchimp, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "style": "Documentation only",
+  "displayName": "Mailchimp Content Styleguide",
+  "description": "Mailchimp Content Styleguide — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, Verdana typography, #33c3f0 brand accent, and 4px corner geometry",
   "category": "Mailchimp",
   "org": "Mailchimp",
-  "theme": "unknown",
+  "theme": "light",
   "tags": [
-    "listed",
-    "docs-only",
-    "mailchimp"
+    "observed",
+    "mailchimp",
+    "light"
   ],
-  "homepage": "",
-  "license": "unknown",
-  "provenance": "listed",
-  "provenanceNote": "Appears in awesome, gallery. No machine-readable tokens found.",
+  "homepage": "https://styleguide.mailchimp.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://styleguide.mailchimp.com/ in headless Chromium on 2026-11-16 (0 custom properties, 108 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Welcome to the Mailchimp Content Style Guide | Mailchimp Content Style Guide.",
   "source": {
-    "lists": [
-      "awesome",
-      "gallery"
-    ]
+    "url": "https://styleguide.mailchimp.com/"
   },
   "spec": "design.md@alpha",
-  "frameworks": [],
-  "listedNames": [
-    "MailChimp Pattern Library",
-    "Mailchimp Content Styleguide"
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
   ],
   "tokens": {
-    "colors": 0,
-    "typography": 0,
-    "components": 0
+    "colors": 65,
+    "typography": 3,
+    "components": 9
   },
   "checks": {
     "errors": 0,
     "warnings": 0,
-    "verified": false
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 192,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

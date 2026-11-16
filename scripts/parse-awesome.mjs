@@ -51,6 +51,40 @@ const repoHost = (url) => {
 const SUFFIX =
   /\s*[\(\-–]\s*(design system|design language|style ?guide|pattern library|ui kit|ui framework|design guidelines|ui)\s*\)?$/i;
 
+const MULTI_WORD_ORGS = [
+  [/^red hat\b/i, "Red Hat"],
+  [/^hewlett packard\b/i, "Hewlett Packard"],
+  [/^city of boston\b/i, "City of Boston"],
+  [/^french government\b/i, "French Government"],
+  [/^new york state\b/i, "NYS"],
+  [/^west midlands network\b/i, "West Midlands Network"],
+  [/^british gas\b/i, "British Gas"],
+  [/^just eat takeaway(?:\.com)?\b/i, "Just Eat Takeaway"],
+  [/^u\.s\. web\b/i, "U.S. Web"],
+  [/^u\.s\. cms\.gov\b/i, "CMS"],
+  [/^bbc gel\b/i, "BBC"],
+  [/^alaska airlines\b/i, "Alaska Airlines"],
+  [/^appear here\b/i, "Appear Here"],
+  [/^bolt design system\b/i, "Pega Digital"],
+  [/^duet$/i, "LocalTapiola"],
+];
+
+function extractOrg(name, paren, stripped) {
+  for (const [re, org] of MULTI_WORD_ORGS) {
+    if (re.test(name) || re.test(stripped)) return org;
+  }
+  if (/:\s*/.test(name)) {
+    const [left] = name.split(/:\s*/);
+    if (/^pharos$/i.test(left.trim())) return "JSTOR";
+    return left.trim();
+  }
+  if (paren && !/^global experience language$/i.test(paren[1].trim())) {
+    return paren[1].trim();
+  }
+  const firstWord = stripped.split(/\s+/)[0].replace(/[:.]$/, "").replace(/'s$/i, "");
+  return firstWord || stripped;
+}
+
 const systems = [];
 const seen = new Set();
 
@@ -72,12 +106,12 @@ for (const cells of rows) {
   const paren = /\(([^)]+)\)/.exec(name);
   const bare = name.replace(/\s*\([^)]*\)\s*$/, "").trim();
   const stripped = bare.replace(SUFFIX, "").trim();
-  const firstWord = stripped.split(/\s+/)[0];
+  const org = extractOrg(name, paren, stripped);
 
   const aliases = [...new Set([name, bare, stripped, paren ? paren[1].trim() : null].filter(Boolean))];
 
   systems.push({
-    org: paren ? paren[1].trim() : firstWord,
+    org,
     name,
     aliases,
     homepage: entry.url,

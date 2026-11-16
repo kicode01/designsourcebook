@@ -68,7 +68,7 @@
   "type": [
     {
       "name": "display-mega",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "126px",
       "px": 126,
       "fontWeight": 900,
@@ -76,7 +76,7 @@
     },
     {
       "name": "display-hero",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "96px",
       "px": 96,
       "fontWeight": 900,
@@ -84,7 +84,7 @@
     },
     {
       "name": "alt-heading",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "78px",
       "px": 78,
       "fontWeight": 600,
@@ -93,7 +93,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "64px",
       "px": 64,
       "fontWeight": 900,
@@ -101,7 +101,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "40px",
       "px": 40,
       "fontWeight": 900,
@@ -109,7 +109,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "26px",
       "px": 26,
       "fontWeight": 600,
@@ -118,7 +118,7 @@
     },
     {
       "name": "feature-title",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "22px",
       "px": 22,
       "fontWeight": 600,
@@ -127,7 +127,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -136,7 +136,7 @@
     },
     {
       "name": "body-semibold",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 600,
@@ -145,7 +145,7 @@
     },
     {
       "name": "button",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 600,
@@ -154,7 +154,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -163,7 +163,7 @@
     },
     {
       "name": "small",
-      "fontFamily": "Wise Sans",
+      "fontFamily": "\"Wise Sans\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -184,9 +184,49 @@
       "key": "button-secondary-subtle-pill",
       "kind": "button",
       "backgroundColor": "rgba(22, 51, 0, 0.08)",
-      "textColor": "#0e0f0c",
+      "textColor": "#f7f7f8",
       "rounded": "9999px",
       "padding": "8px 12px 8px 16px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#0e0f0c",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#0e0f0c",
+      "textColor": "#ffffff",
+      "rounded": "16px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0e0f0c",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#054d28",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#0e0f0c",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Wise's website is a bold, confident fintech platform that communicates \"money without borders\" through massive typography and a distinctive lime-green accent. The design operates on a warm off-white canvas with near-black text (#0e0f0c) and a signature Wise Green (#9fe870) — a fresh, lime-bright color that feels alive and optimistic, unlike the corporate blues of traditional banking.\n\nThe typography uses Wise Sans — a proprietary font used at extreme weight 900 (black) for display headings with a remarkably tight line-height of 0.85 and OpenType \"calt\" (contextual alternates). At 126px, the text is so dense it feels like a protest sign — bold, urgent, and impossible to ignore. Inter serves as the body font with weight 600 as the default for emphasis, creating a consistently confident voice.\n\nWhat distinguishes Wise is its green-on-white-on-black material palette. Lime Green (#9fe870)…",

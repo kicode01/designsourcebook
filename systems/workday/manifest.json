@@ -1,22 +1,23 @@
 {
   "name": "workday",
   "displayName": "Workday Canvas",
-  "description": "Workday Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.",
-  "style": "Workday Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.",
+  "description": "Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.",
+  "style": "Crisp light (#ffffff) canvas, Roboto typography, #00f brand accent, and 8px corner geometry",
   "category": "Workday",
   "org": "Workday",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "workday"
+    "workday",
+    "light"
   ],
   "homepage": "https://github.com/Workday/canvas-kit",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/Workday/canvas-kit — 8 token files, 70 colours harvested, 69 selected.",
   "source": {
-    "repo": "https://github.com/Workday/canvas-kit"
+    "repo": "https://github.com/Workday/canvas-kit",
+    "package": "@workday/canvas-kit-react"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,29 @@
   ],
   "tokens": {
     "colors": 69,
-    "typography": 0,
-    "components": 0
+    "typography": 23,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 85,
+    "stars": 369,
+    "forks": 274,
+    "npmDownloads": 0,
+    "score": 369,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 40
   }
 }

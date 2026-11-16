@@ -5,7 +5,7 @@
   "muted": "#f7f7f8",
   "brand": "#3ecf8e",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
-  "radius": "9999px",
+  "radius": "6px",
   "ink": "#f7f7f8",
   "palette": [
     {
@@ -196,6 +196,46 @@
       "rounded": "6px",
       "padding": "8px",
       "border": "1px solid transparent"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#0f0f0f",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#0f0f0f",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#3ecf8e",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#0f0f0f",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Supabase's website is a dark-mode-native developer platform that channels the aesthetic of a premium code editor — deep black backgrounds (#0f0f0f, #171717) with emerald green accents (#3ecf8e, #00c573) that reference the brand's open-source, PostgreSQL-green identity. The design system feels like it was born in a terminal window and evolved into a sophisticated marketing surface without losing its developer soul.\n\nThe typography is built on \"Circular\" — a geometric sans-serif with rounded terminals that softens the technical edge. At 72px with a 1.00 line-height, the hero text is compressed to its absolute minimum vertical space, creating dense, impactful statements that waste nothing. The monospace companion (Source Code Pro) appears sparingly for uppercase technical labels with 1.2px letter-spacing, creating the \"developer console\" markers that connect the marketing site to the…",

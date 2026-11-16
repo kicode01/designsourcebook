@@ -6,9 +6,9 @@
   "category": "AI & Machine Learning",
   "theme": "dark",
   "tags": [
-    "dark",
     "developer",
-    "ai"
+    "ai",
+    "dark"
   ],
   "homepage": "https://voltagent.dev",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 26,
     "typography": 15,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/VoltAgent/voltagent",
+    "package": "@voltagent/core"
+  },
+  "popularity": {
+    "rank": 166,
+    "stars": 10983,
+    "forks": 1207,
+    "npmDownloads": 0,
+    "score": 10983,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

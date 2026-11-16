@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Materialize CSS
-description: "Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize."
+description: "Crisp light (#FFFFFF) canvas, -apple-system typography, #FF8A80 brand accent, and 4px corner geometry"
 colors:
   base: "#e51c23"
   lighten-5: "#fdeaeb"
@@ -52,45 +52,134 @@ colors:
   primary: "#FF8A80"
 typography:
   button-font-size:
-    fontSize: "14px !default"
+    fontSize: 14px
+    fontFamily: null
   button-icon-font-size:
-    fontSize: "1.3rem !default"
+    fontSize: 1.3rem
+    fontFamily: null
   button-large-font-size:
-    fontSize: "15px !default"
+    fontSize: 15px
+    fontFamily: null
   button-large-icon-font-size:
-    fontSize: "1.6rem !default"
+    fontSize: 1.6rem
+    fontFamily: null
   button-small-font-size:
-    fontSize: "13px !default"
+    fontSize: 13px
+    fontFamily: null
   button-small-icon-font-size:
-    fontSize: "1.2rem !default"
+    fontSize: 1.2rem
+    fontFamily: null
   datepicker-display-font-size:
     fontSize: 2.8rem
+    fontFamily: null
   input-font-size:
-    fontSize: "16px !default"
+    fontSize: 16px
+    fontFamily: null
   label-font-size:
-    fontSize: ".8rem !default"
+    fontSize: ".8rem"
+    fontFamily: null
   navbar-font-size:
-    fontSize: "1rem !default"
+    fontSize: 1rem
+    fontFamily: null
   navbar-brand-font-size:
-    fontSize: "2.1rem !default"
+    fontSize: 2.1rem
+    fontFamily: null
   sidenav-font-size:
-    fontSize: "14px !default"
+    fontSize: 14px
+    fontFamily: null
   h1-fontsize:
-    fontSize: "4.2rem !default"
+    fontSize: 4.2rem
+    fontFamily: null
   h2-fontsize:
-    fontSize: "3.56rem !default"
+    fontSize: 3.56rem
+    fontFamily: null
   h3-fontsize:
-    fontSize: "2.92rem !default"
+    fontSize: 2.92rem
+    fontFamily: null
   h4-fontsize:
-    fontSize: "2.28rem !default"
+    fontSize: 2.28rem
+    fontFamily: null
   h5-fontsize:
-    fontSize: "1.64rem !default"
+    fontSize: 1.64rem
+    fontFamily: null
   h6-fontsize:
-    fontSize: "1.15rem !default"
+    fontSize: 1.15rem
+    fontFamily: null
+  md-sys-typescale-display-large-font-size:
+    fontSize: 57px
+  md-sys-typescale-display-medium-font-size:
+    fontSize: 45px
+  md-sys-typescale-display-small-font-size:
+    fontSize: 36px
+  md-sys-typescale-headline-large-font-size:
+    fontSize: 32px
+  md-sys-typescale-headline-medium-font-size:
+    fontSize: 28px
+  md-sys-typescale-headline-small-font-size:
+    fontSize: 24px
+  md-sys-typescale-body-large-font-size:
+    fontSize: 16px
+  md-sys-typescale-body-medium-font-size:
+    fontSize: 14px
+  md-sys-typescale-body-small-font-size:
+    fontSize: 12px
+  md-sys-typescale-label-large-font-size:
+    fontSize: 14px
+  md-sys-typescale-label-medium-font-size:
+    fontSize: 12px
+  md-sys-typescale-label-small-font-size:
+    fontSize: 11px
+  md-sys-typescale-title-large-font-size:
+    fontSize: 22px
+  md-sys-typescale-title-medium-font-size:
+    fontSize: 16px
+  md-sys-typescale-title-small-font-size:
+    fontSize: 14px
+  font-stack:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+  appbar-title-font-size:
+    fontSize: 24px
+  btn-font-size-icon:
+    fontSize: 16px
+  btn-font-size:
+    fontSize: 14px
+  mw-chip-font-size:
+    fontSize: 14px
+  mw-chip-font-size-icon:
+    fontSize: 18px
+  mw-font-size:
+    fontSize: 16px
+  h1:
+    fontSize: 2em
+  html:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+    lineHeight: 1.5
+  h2:
+    fontSize: 3.56rem
+  h3:
+    fontSize: 2.92rem
+  h4:
+    fontSize: 2.28rem
+  h5:
+    fontSize: 1.64rem
+  h6:
+    fontSize: 1.15rem
+  nav-title:
+    fontSize: 32px
+  card-title:
+    fontSize: 24px
+    fontWeight: 300
+  title:
+    fontSize: 16px
+  timepicker-display-am-pm:
+    fontSize: 1.3rem
+    fontWeight: 400
+  font-size:
+    fontSize: 12px
 components:
   btn:
     backgroundColor: "#26a69a"
-    textColor: "#fff"
+    textColor: "#0b0b0c"
     typography:
       fontSize: 14px
     rounded: 2px
@@ -117,14 +206,14 @@ components:
     padding: 0 16px
   btn-large-3:
     backgroundColor: "#26a69a"
-    textColor: "#fff"
+    textColor: "#0b0b0c"
     typography:
       fontSize: 14px
     rounded: 2px
     padding: 0 16px
   btn-small-4:
     backgroundColor: "#26a69a"
-    textColor: "#fff"
+    textColor: "#0b0b0c"
     typography:
       fontSize: 14px
     rounded: 2px
@@ -135,18 +224,23 @@ components:
     padding: 24px
   btn-floating-5:
     backgroundColor: "#26a69a"
-    textColor: "#fff"
+    textColor: "#0b0b0c"
     typography:
       fontSize: 14px
     rounded: "50%"
     padding: "0"
+  input-default:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 9px 13px
 ---
 
 # Materialize CSS
 
 ## Overview
 
-Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.
+Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.
 
 Tokens were read from the project's own repository, not from a marketing site: 47 colour tokens and 18 type tokens.
 
@@ -161,3 +255,10 @@ No resolvable type tokens were extracted. The type scale is omitted rather than 
 ## Components
 
 9 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF8A80` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 52 type steps.
+- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -1,0 +1,1615 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0b5fff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0.5rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#0b5fff"
+    },
+    {
+      "name": "secondary",
+      "value": "#6b6c7e"
+    },
+    {
+      "name": "info",
+      "value": "#2e5aac"
+    },
+    {
+      "name": "success",
+      "value": "#287d3c"
+    },
+    {
+      "name": "warning",
+      "value": "#b95000"
+    },
+    {
+      "name": "danger",
+      "value": "#da1414"
+    },
+    {
+      "name": "c-empty-state-primary",
+      "value": "#0b5fff"
+    },
+    {
+      "name": "c-empty-state-primary-d1",
+      "value": "#0053f0"
+    },
+    {
+      "name": "c-empty-state-primary-d2",
+      "value": "#004ad7"
+    },
+    {
+      "name": "c-empty-state-primary-l0",
+      "value": "#5791ff"
+    },
+    {
+      "name": "c-empty-state-primary-l1",
+      "value": "#80acff"
+    },
+    {
+      "name": "c-empty-state-primary-l2",
+      "value": "#b3cdff"
+    },
+    {
+      "name": "c-empty-state-primary-l3",
+      "value": "#f0f5ff"
+    },
+    {
+      "name": "table-disabled-color",
+      "value": "#acacac"
+    },
+    {
+      "name": "table-accent-bg",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "table-list-accent-bg",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "table-list-disabled-color",
+      "value": "#acacac"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "gray-100",
+      "value": "#f7f8f9"
+    },
+    {
+      "name": "gray-200",
+      "value": "#f1f2f5"
+    },
+    {
+      "name": "gray-300",
+      "value": "#e7e7ed"
+    },
+    {
+      "name": "gray-400",
+      "value": "#cdced9"
+    },
+    {
+      "name": "gray-500",
+      "value": "#a7a9bc"
+    },
+    {
+      "name": "gray-600",
+      "value": "#6b6c7e"
+    },
+    {
+      "name": "gray-700",
+      "value": "#495057"
+    },
+    {
+      "name": "gray-800",
+      "value": "#393a4a"
+    },
+    {
+      "name": "gray-900",
+      "value": "#272833"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "blue-d1",
+      "value": "#006be6"
+    },
+    {
+      "name": "blue-d2",
+      "value": "#005fcc"
+    },
+    {
+      "name": "blue-d3",
+      "value": "#0053b3"
+    },
+    {
+      "name": "blue-d4",
+      "value": "#004799"
+    },
+    {
+      "name": "blue-l1",
+      "value": "#338fff"
+    },
+    {
+      "name": "blue-l2",
+      "value": "#66abff"
+    },
+    {
+      "name": "blue-l3",
+      "value": "#97c5ff"
+    },
+    {
+      "name": "blue-l4",
+      "value": "#cce3ff"
+    },
+    {
+      "name": "blue-l5",
+      "value": "#e5f1ff"
+    },
+    {
+      "name": "indigo-d1",
+      "value": "#3347ff"
+    },
+    {
+      "name": "indigo-d2",
+      "value": "#1a30ff"
+    },
+    {
+      "name": "indigo-d3",
+      "value": "#001aff"
+    },
+    {
+      "name": "indigo-d4",
+      "value": "#0017e5"
+    },
+    {
+      "name": "indigo-l1",
+      "value": "#808cff"
+    },
+    {
+      "name": "indigo-l2",
+      "value": "#99a3ff"
+    },
+    {
+      "name": "indigo-l3",
+      "value": "#b2baff"
+    },
+    {
+      "name": "indigo-l4",
+      "value": "#ccd1ff"
+    },
+    {
+      "name": "indigo-l5",
+      "value": "#e5e8ff"
+    },
+    {
+      "name": "purple-d1",
+      "value": "#9f1aff"
+    },
+    {
+      "name": "purple-d2",
+      "value": "#9500ff"
+    },
+    {
+      "name": "purple-d3",
+      "value": "#8600e6"
+    },
+    {
+      "name": "purple-d4",
+      "value": "#7700cc"
+    },
+    {
+      "name": "purple-l1",
+      "value": "#bf66ff"
+    },
+    {
+      "name": "purple-l2",
+      "value": "#ca80ff"
+    },
+    {
+      "name": "purple-l3",
+      "value": "#d499ff"
+    },
+    {
+      "name": "purple-l4",
+      "value": "#dfb3ff"
+    },
+    {
+      "name": "purple-l5",
+      "value": "#f2e5ff"
+    },
+    {
+      "name": "pink-d1",
+      "value": "#cc0074"
+    },
+    {
+      "name": "pink-d2",
+      "value": "#b30065"
+    },
+    {
+      "name": "pink-d3",
+      "value": "#990057"
+    },
+    {
+      "name": "pink-d4",
+      "value": "#800048"
+    },
+    {
+      "name": "pink-l1",
+      "value": "#ff4db2"
+    },
+    {
+      "name": "pink-l2",
+      "value": "#ff80c8"
+    },
+    {
+      "name": "pink-l3",
+      "value": "#ff99d3"
+    },
+    {
+      "name": "pink-l4",
+      "value": "#ffb3de"
+    },
+    {
+      "name": "pink-l5",
+      "value": "#ffe5f4"
+    },
+    {
+      "name": "red-d1",
+      "value": "#cc0000"
+    },
+    {
+      "name": "red-d2",
+      "value": "#b30000"
+    },
+    {
+      "name": "red-d3",
+      "value": "#990000"
+    },
+    {
+      "name": "red-d4",
+      "value": "#800000"
+    },
+    {
+      "name": "red-l1",
+      "value": "#ff4d4d"
+    },
+    {
+      "name": "red-l2",
+      "value": "#ff6666"
+    },
+    {
+      "name": "red-l3",
+      "value": "#ff8080"
+    },
+    {
+      "name": "red-l4",
+      "value": "#ff9999"
+    },
+    {
+      "name": "red-l5",
+      "value": "#ffe5e5"
+    },
+    {
+      "name": "orange-d1",
+      "value": "#b34400"
+    },
+    {
+      "name": "orange-d2",
+      "value": "#993b00"
+    },
+    {
+      "name": "orange-d3",
+      "value": "#803100"
+    },
+    {
+      "name": "orange-d4",
+      "value": "#662700"
+    },
+    {
+      "name": "orange-l1",
+      "value": "#ff6200"
+    },
+    {
+      "name": "orange-l2",
+      "value": "#ff8133"
+    },
+    {
+      "name": "orange-l3",
+      "value": "#ffa166"
+    },
+    {
+      "name": "orange-l4",
+      "value": "#ffc099"
+    },
+    {
+      "name": "orange-l5",
+      "value": "#fff0e5"
+    },
+    {
+      "name": "yellow-d1",
+      "value": "#e6a800"
+    },
+    {
+      "name": "yellow-d2",
+      "value": "#cc9600"
+    },
+    {
+      "name": "yellow-d3",
+      "value": "#b38900"
+    },
+    {
+      "name": "yellow-d4",
+      "value": "#997000"
+    },
+    {
+      "name": "yellow-l1",
+      "value": "#ffc933"
+    },
+    {
+      "name": "yellow-l2",
+      "value": "#ffd666"
+    },
+    {
+      "name": "yellow-l3",
+      "value": "#ffe499"
+    },
+    {
+      "name": "yellow-l4",
+      "value": "#fff1cc"
+    }
+  ],
+  "type": [
+    {
+      "name": "lexicon-icon-xl-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "8rem",
+      "px": 128
+    },
+    {
+      "name": "display-1",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "6rem",
+      "px": 96,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-2",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "5.5rem",
+      "px": 88,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-3",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "4.5rem",
+      "px": 72,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-4",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "3.5rem",
+      "px": 56,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "loading-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "cadmin-loading-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "lexicon-icon-lg-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h1-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "cadmin-h1-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "sheet-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "h2-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "cadmin-h2-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "alert-indicator-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "modal-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "sheet-title-font-size-mobile",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "cadmin-modal-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "cadmin-navbar-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "cadmin-sheet-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "cadmin-sheet-title-font-size-mobile",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "navbar-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "c-empty-state-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "navbar-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600
+    },
+    {
+      "name": "sheet-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "rfs-base-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "h3-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.1875rem",
+      "px": 19
+    },
+    {
+      "name": "cadmin-h3-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "19px",
+      "px": 19
+    },
+    {
+      "name": "pagination-font-size-lg",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "cadmin-font-size-lg",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "cadmin-pagination-font-size-lg",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "modal-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "custom-control-description-small-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "dropdown-action-toggle-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "input-font-size-mobile",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "h4-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "panel-title-small-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "quick-action-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "order-arrow-active-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "loading-icon-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-alert-close-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-alert-indicator-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-custom-control-description-small-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "cadmin-dropdown-action-toggle-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-input-font-size-mobile",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-font-size-base",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-h4-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-order-arrow-active-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "cadmin-loading-icon-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-panel-title-small-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "cadmin-quick-action-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "cadmin-sticker-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "custom-control-description-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "component-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "figure-caption-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "cadmin-figure-caption-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "figure-caption",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "alert-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "alert-close-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "breadcrumb-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "dropdown-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "dropdown-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "input-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "form-feedback-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "h5-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "code-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "87.5%",
+      "px": 14
+    },
+    {
+      "name": "list-group-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "multi-step-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "multi-step-indicator-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "multi-step-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "navbar-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "nav-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "nav-tabs-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "pagination-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "panel-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "panel-header-collapse-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "panel-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "popover-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "progress-group-addon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "sheet-subtitle-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "sticker-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "table-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "tooltip-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "form-text-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "cadmin-alert-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-breadcrumb-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-dropdown-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-dropdown-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-dropdown-caption-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-input-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-form-text-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-form-feedback-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-h5-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-code-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "87.5%",
+      "px": 14
+    },
+    {
+      "name": "cadmin-list-group-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-modal-title-indicator-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-multi-step-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-multi-step-indicator-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-multi-step-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-navbar-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-nav-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-nav-tabs-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-pagination-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-panel-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-panel-title-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-popover-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-progress-group-addon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-sheet-subtitle-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-sidebar-list-group-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-table-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cadmin-tooltip-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "dropdown-caption-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "modal-title-indicator-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "sidebar-list-group-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "toast-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "lead",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "card-subtitle",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400
+    },
+    {
+      "name": "dropdown-caption",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "list-group-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.45
+    },
+    {
+      "name": "modal-title-indicator",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "multi-step-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600
+    },
+    {
+      "name": "panel-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600
+    },
+    {
+      "name": "sheet-subtitle",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "sheet-tertiary-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "table-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "table-list-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.45
+    },
+    {
+      "name": "h6-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "btn-section-font-size-lg",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "cadmin-btn-section-font-size-lg",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "cadmin-h6-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "small-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "80%",
+      "px": 12.8
+    },
+    {
+      "name": "cadmin-small-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "80%",
+      "px": 12.8
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "75%",
+      "px": 12
+    },
+    {
+      "name": "dropdown-subheader-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "form-group-sm-input-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "75%",
+      "px": 12
+    },
+    {
+      "name": "pagination-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "sheet-subtitle-collapse-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "table-divider-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "toggle-switch-bar-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "cadmin-card-section-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-dropdown-subheader-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-form-group-sm-input-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-label-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-pagination-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-panel-header-collapse-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-sheet-subtitle-collapse-icon-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-table-divider-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-toggle-switch-text-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "cadmin-reference-mark-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "card-section-header-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "toggle-switch-text-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "reference-mark-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "component-subtitle",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400
+    },
+    {
+      "name": "list-group-header-title",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "btn-section-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.6875rem",
+      "px": 11
+    },
+    {
+      "name": "cadmin-btn-section-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "toggle-switch-bar-font-size-mobile",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "cadmin-badge-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "cadmin-toggle-switch-bar-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "cadmin-toggle-switch-bar-font-size-mobile",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "progress-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.5625rem",
+      "px": 9
+    },
+    {
+      "name": "btn-section-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.5625rem",
+      "px": 9
+    },
+    {
+      "name": "cadmin-btn-section-font-size-sm",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "cadmin-progress-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "lexicon-icon-sm-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.5rem",
+      "px": 8
+    },
+    {
+      "name": "input-label-reference-mark-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "6px",
+      "px": 6
+    },
+    {
+      "name": "cadmin-input-label-reference-mark-font-size",
+      "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "6px",
+      "px": 6
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#1c1c24",
+      "rounded": "0.5rem",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": "1rem",
+      "border": "1px solid #cdced9"
+    },
+    {
+      "key": "panel",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": "0.5rem",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "table",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#1c1c24"
+    },
+    {
+      "key": "btn-ai-2",
+      "kind": "button",
+      "backgroundColor": "#aa33ff",
+      "textColor": "#fff",
+      "border": "1px solid #aa33ff"
+    },
+    {
+      "key": "btn-info-3",
+      "kind": "button",
+      "backgroundColor": "#2e5aac",
+      "textColor": "#fff",
+      "border": "1px solid #2e5aac"
+    },
+    {
+      "key": "btn-dark-4",
+      "kind": "button",
+      "backgroundColor": "#272833",
+      "textColor": "#fff",
+      "border": "1px solid #272833"
+    },
+    {
+      "key": "link",
+      "kind": "nav",
+      "textColor": "#0b5fff",
+      "rounded": "1px"
+    },
+    {
+      "key": "btn-beta-5",
+      "kind": "button",
+      "backgroundColor": "rgba(41, 79, 152, 0.04)",
+      "textColor": "#294f98",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "btn-light-6",
+      "kind": "button",
+      "backgroundColor": "#f1f2f5",
+      "textColor": "#272833",
+      "border": "1px solid #f1f2f5"
+    },
+    {
+      "key": "link-2",
+      "kind": "nav",
+      "textColor": "#6b6c7e"
+    },
+    {
+      "key": "link-3",
+      "kind": "nav",
+      "backgroundColor": "transparent",
+      "textColor": "#6b6c7e",
+      "rounded": "4px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "alert-info",
+      "kind": "card",
+      "backgroundColor": "#eef2fa",
+      "textColor": "#2e5aac",
+      "border": "1px solid #89a7e0"
+    },
+    {
+      "key": "alert-dark-2",
+      "kind": "card",
+      "backgroundColor": "#393a4a",
+      "textColor": "#f1f2f5",
+      "border": "1px solid #30313f"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "#2e5aac",
+      "textColor": "#fff"
+    },
+    {
+      "key": "badge-dark-2",
+      "kind": "badge",
+      "backgroundColor": "#272833",
+      "textColor": "#fff"
+    },
+    {
+      "key": "badge-beta-3",
+      "kind": "badge",
+      "backgroundColor": "rgba(41, 79, 152, 0.04)",
+      "textColor": "#294f98",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "label-info",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#294f98",
+      "border": "1px solid #89a7e0"
+    },
+    {
+      "key": "label-dark-2",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#272833",
+      "border": "1px solid #272833"
+    },
+    {
+      "key": "card-title-2",
+      "kind": "card",
+      "textColor": "#272833"
+    },
+    {
+      "key": "table-dark-2",
+      "kind": "nav",
+      "backgroundColor": "#393a4a",
+      "textColor": "#fff"
+    },
+    {
+      "key": "link-4",
+      "kind": "nav",
+      "textColor": "#272833",
+      "rounded": "1px"
+    },
+    {
+      "key": "table-list-3",
+      "kind": "nav",
+      "textColor": "#1c1c24",
+      "rounded": "0.5rem",
+      "border": "1px solid #cdced9"
+    },
+    {
+      "key": "alert-light-3",
+      "kind": "card",
+      "backgroundColor": "white",
+      "textColor": "#272833",
+      "border": "1px solid #f7f8f9"
+    },
+    {
+      "key": "badge-light-4",
+      "kind": "badge",
+      "backgroundColor": "#f8f9fa",
+      "textColor": "#212529"
+    },
+    {
+      "key": "label-light-3",
+      "kind": "badge",
+      "backgroundColor": "#343a40",
+      "textColor": "#f8f9fa",
+      "border": "1px solid #f8f9fa"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "0.5rem",
+      "padding": "9px 13px"
+    }
+  ],
+  "overview": "Liferay Lexicon (Clay) — Enterprise portal components, Liferay blue actions and structured table/panel surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0b5fff` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `system-ui` across 170 type steps.\n- **Component Geometry**: Buttons (`0.5rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

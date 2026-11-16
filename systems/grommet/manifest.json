@@ -1,24 +1,24 @@
 {
   "name": "grommet",
   "displayName": "Grommet",
-  "description": "HPE Grommet — components and design resources for application UIs.",
-  "style": "HPE Grommet — components and design resources for application UIs.",
+  "description": "Hewlett Packard Grommet — tokens imported from grommet.",
+  "style": "Accessible enterprise React framework, signature HPE purple and teal brand accents",
   "category": "Hewlett Packard",
   "org": "Hewlett Packard",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "hewlett-packard"
+    "hewlett-packard",
+    "dark"
   ],
   "homepage": "http://grommet.io",
   "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from grommet@2.58.0 (15 token files, 52 colours harvested, 49 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from grommet@2.58.0 (7 token files, 59 colours harvested, 51 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "grommet",
     "version": "2.58.0",
-    "extra": []
+    "repo": "https://github.com/grommet/grommet"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,9 +27,9 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 49,
-    "typography": 6,
-    "components": 0
+    "colors": 52,
+    "typography": 1,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -39,5 +39,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 31,
+    "stars": 8353,
+    "forks": 1043,
+    "npmDownloads": 190654,
+    "score": 14688,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 24
   }
 }

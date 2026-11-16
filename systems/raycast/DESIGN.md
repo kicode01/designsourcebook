@@ -30,6 +30,103 @@ colors:
   brand-warning-yellow: "hsl(43, 100%, 60%)"
   brand-info-blue: "hsl(202, 100%, 67%)"
   primary: "hsl(202, 100%, 67%)"
+typography:
+  display-hero:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 64px
+    fontWeight: 600
+    lineHeight: 1.1
+  section-display:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 56px
+    fontWeight: 400
+    lineHeight: 1.17
+  section-heading:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 24px
+    fontWeight: 500
+    lineHeight: 1.3
+  card-heading:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 22px
+    fontWeight: 400
+    lineHeight: 1.15
+  sub-heading:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 20px
+    fontWeight: 500
+    lineHeight: 1.6
+  body-large:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.15
+  body:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.6
+  body-tight:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.15
+  caption:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 1.14
+  small:
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 12px
+    fontWeight: 600
+    lineHeight: 1.33
+  code:
+    fontFamily: "GeistMono, ui-monospace, SFMono-Regular, Roboto Mono, Menlo, monospace"
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 1.6
+components:
+  button-primary:
+    backgroundColor: "hsl(202, 100%, 67%)"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#101111"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "hsl(0, 100%, 69%)"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#101111"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#101111"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "hsl(202, 100%, 67%)"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "hsl(151, 59%, 59%)"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#101111"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Raycast

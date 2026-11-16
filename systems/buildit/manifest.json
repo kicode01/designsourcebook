@@ -1,15 +1,15 @@
 {
   "name": "buildit",
   "displayName": "Buildit Gravity",
-  "description": "undefined",
-  "style": "undefined",
+  "description": "Buildit Gravity — UI pattern library and design tokens by Wipro Digital Buildit.",
+  "style": "Buildit Gravity — UI pattern library and design tokens by Wipro Digital Buildit.",
   "category": "Buildit",
   "org": "Buildit",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "buildit"
+    "buildit",
+    "light"
   ],
   "homepage": "https://github.com/buildit/gravity-ui-web/tree/develop/packages/gravity-ui-web#readme",
   "license": "MIT",
@@ -17,7 +17,8 @@
   "provenanceNote": "Tokens imported from @buildit/gravity-ui-web@3.4.0 (5 token files, 72 colours harvested, 72 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@buildit/gravity-ui-web",
-    "version": "3.4.0"
+    "version": "3.4.0",
+    "repo": "https://github.com/buildit/gravity-ui-web"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,8 +28,8 @@
   ],
   "tokens": {
     "colors": 73,
-    "typography": 2,
-    "components": 0
+    "typography": 4,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -38,5 +39,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 131,
+    "stars": 20,
+    "forks": 6,
+    "npmDownloads": 136,
+    "score": 54,
+    "frameworks": [
+      "css",
+      "web-components"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

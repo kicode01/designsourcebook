@@ -1,118 +1,498 @@
 ---
 version: alpha
 name: Lightning
-description: "Salesforce Lightning Design System — tokens for the Salesforce platform."
+description: "Enterprise CRM workspace, Salesforce cloud blue actions and dense data tables"
 colors:
-  color-neutral-base-100: "rgb(255, 255, 255)"
-  color-neutral-base-60: "rgb(147, 147, 147)"
-  color-neutral-base-10: "rgb(24, 24, 24)"
-  color-brand-base-65: "rgb(87, 163, 253)"
-  color-brand-base-15: "rgb(3, 35, 77)"
-  color-error-base-60: "rgb(254, 92, 76)"
-  color-warning-base-100: "rgb(255, 255, 255)"
-  color-warning-base-40: "rgb(130, 81, 1)"
-  color-success-base-80: "rgb(145, 219, 139)"
-  color-success-base-20: "rgb(28, 51, 38)"
-  color-border-brand-1: "rgb(120, 176, 253)"
   color-neutral-base100: "rgb(255, 255, 255)"
-  color-neutral-base60: "rgb(147, 147, 147)"
-  color-neutral-base10: "rgb(24, 24, 24)"
-  color-brand-base65: "rgb(87, 163, 253)"
-  color-brand-base15: "rgb(3, 35, 77)"
-  color-error-base60: "rgb(254, 92, 76)"
-  color-warning-base100: "rgb(255, 255, 255)"
-  color-warning-base40: "rgb(130, 81, 1)"
-  color-success-base80: "rgb(145, 219, 139)"
-  color-success-base20: "rgb(28, 51, 38)"
-  color-border-brand1: "rgb(120, 176, 253)"
-  palette-neutral-100: "#ffffff"
-  palette-neutral-20: "#2e2e2e"
-  color-palette-neutral-30: "rgb(68, 68, 68)"
-  color-palette-neutral-80: "rgb(201, 201, 201)"
-  color-palette-neutral20: "rgb(46, 46, 46)"
-  color-palette-neutral70: "rgb(174, 174, 174)"
-  color-background-light: "rgb(255, 255, 255)"
-  color-background-success-dark: "rgb(46, 132, 74)"
-  color-brand-dark: "rgb(1, 118, 211)"
-  color-background-offline: "rgb(68, 68, 68)"
-  color-background-success-darker: "rgb(25, 78, 49)"
-  color-background-highlight: "rgb(250, 255, 189)"
-  color-border: "rgb(229, 229, 229)"
-  color-border-separator: "rgb(243, 243, 243)"
-  color-border-customer: "rgb(254, 147, 57)"
+  color-brand-base100: "rgb(255, 255, 255)"
+  color-error-base100: "rgb(255, 255, 255)"
+  color-warning-base70: "rgb(254, 147, 57)"
+  color-success-base40: "rgb(57, 101, 71)"
+  link-color-active: "rgb(3, 45, 96)"
+  g-color-neutral-base-10: "#181818"
+  g-color-brand-base-10: "#001639"
+  g-color-warning-base-80: "#ffba90"
+  g-color-success-base-50: "#2e844a"
+  g-link-color-focus: "#014486"
+  color-neutral-base-15: "rgb(36, 36, 36)"
+  color-brand-base-15: "rgb(3, 35, 77)"
+  color-warning-base-90: "rgb(254, 223, 208)"
+  color-success-base-60: "rgb(59, 167, 85)"
+  palette-neutral-90: "#e5e5e5"
+  color-palette-neutral15: "rgb(36, 36, 36)"
+  g-color-palette-neutral-15: "#242424"
+  color-palette-neutral-15: "rgb(36, 36, 36)"
+  palette-neutral80: "rgb(201, 201, 201)"
+  color-background-error-dark: "rgb(186, 5, 23)"
+  color-background-destructive: "rgb(186, 5, 23)"
+  color-background-destructive-active: "rgb(142, 3, 15)"
+  color-border-success: "rgb(145, 219, 139)"
   color-border-error-alt: "rgb(254, 143, 125)"
-  brand-background-primary: "rgb(238, 244, 255)"
-  brand-dark: "rgb(1, 118, 211)"
-  brand-disabled: "rgb(201, 199, 197)"
-  brand-contrast: "rgb(26, 27, 30)"
-  color-text-action-label: "rgb(68, 68, 68)"
-  color-text-link-disabled: "rgb(3, 45, 96)"
-  color-text-placeholder-inverse: "rgb(243, 243, 243)"
-  color-text-customer: "rgb(254, 147, 57)"
-  color-text-inverse-weak: "rgb(174, 174, 174)"
-  color-background-anchor: "rgb(243, 243, 243)"
-  color-background-shade: "rgb(243, 243, 243)"
-  color-background-secondary: "rgb(255, 255, 255)"
+  brand-accessible: "rgb(1, 118, 211)"
+  brand-primary-active: "rgb(1, 118, 211)"
+  color-text-link-hover: "rgb(1, 68, 134)"
+  color-text-inverse: "rgb(255, 255, 255)"
+  color-background-temp-modal: "rgb(147, 147, 147)"
   color-text-tertiary: "rgb(147, 147, 147)"
-  color-text-icon-utility: "rgb(174, 174, 174)"
-  popover-walkthrough-color-background: "rgb(0, 22, 57)"
-  color-background-input-checkbox-disabled: "rgb(201, 201, 201)"
-  color-background-scrollbar: "rgb(243, 243, 243)"
-  popover-walkthrough-header-color-background: "rgb(3, 45, 96)"
-  color-border-button-focus-inverse: "rgb(243, 243, 243)"
-  color-text-icon-inverse: "rgb(255, 255, 255)"
-  color-text-button-default-disabled: "rgb(201, 201, 201)"
-  color-text-icon-inverse-hover: "rgb(255, 255, 255)"
-  action-info: "rgb(16, 124, 173)"
+  progress-color-border-shade: "rgb(243, 243, 243)"
+  color-background-toast: "rgb(116, 116, 116)"
+  color-border-link-focus-inverse: "rgb(243, 243, 243)"
+  color-text-button-inverse: "rgb(243, 243, 243)"
+  brand: "rgb(88, 103, 232)"
+  avatar-group-color-background-lightest: "rgb(255, 255, 255)"
+  color-background-button-brand-hover: "rgb(1, 68, 134)"
+  carousel-indicator-color-background-focus: "rgb(1, 68, 134)"
+  color-background-docked-panel: "rgb(255, 255, 255)"
+  color-background-context-bar-brand-accent: "rgb(13, 157, 218)"
+  color-background-path-incomplete: "rgb(243, 243, 243)"
+  color-border-path-current: "rgb(1, 68, 134)"
+  notification-color-background-inverse: "rgb(116, 116, 116)"
+  welcome-mat-text-color-info: "rgb(3, 45, 96)"
+  color-background-chrome-desktop: "rgb(255, 255, 255)"
+  color-background-toggle-active: "rgb(1, 68, 134)"
+  color-text-primary: "rgb(3, 45, 96)"
+  color-background-reminder-hover: "rgb(255, 255, 255)"
+  color-border-input-active: "rgb(27, 150, 255)"
+  r-color-brand-5: "#000310"
+  r-color-brand-80: "#aacbff"
+  r-color-info-55: "#848484"
+  r-color-success-35: "#1e5c39"
+  r-color-error-10: "#300c01"
+  r-color-error-85: "#feccc3"
+  r-color-warning-60: "#dd7a01"
+  g-color-surface-2: "#f3f3f3"
+  g-color-on-surface-inverse-2: "#aeaeae"
+  g-color-neutral-base-0: "#000"
   palette-pink-50: "#e3066a"
-  palette-yellow-10: "#281202"
-  palette-indigo-15: "#1f0974"
-  palette-purple-90: "#ece1f9"
-  palette-green-60: "#3ba755"
-  palette-blue-30: "#014486"
-  color-palette-cloud-blue-95: "rgb(234, 245, 254)"
-  color-palette-indigo-50: "rgb(88, 103, 232)"
-  color-palette-pink-95: "rgb(254, 240, 243)"
-  color-palette-teal-50: "rgb(11, 130, 124)"
-  color-palette-yellow-95: "rgb(251, 243, 224)"
-  color-palette-green50: "rgb(46, 132, 74)"
-  color-palette-indigo95: "rgb(241, 243, 251)"
-  color-palette-purple50: "rgb(144, 80, 233)"
-  color-palette-teal95: "rgb(222, 249, 243)"
-  color-gray-2: "rgb(250, 250, 249)"
-  palette-cool-gray-7: "#ABADB0"
-  malibu: "#5EB4FF"
-  valencia: "#D4504C"
-  action-canvas: "rgb(16, 124, 173)"
-  action-freeze-user: "rgb(16, 124, 173)"
-  action-email: "rgb(16, 124, 173)"
-  action-new-custom52: "rgb(255, 83, 138)"
-  action-new-custom1: "rgb(255, 83, 138)"
-  action-new-custom24: "rgb(255, 83, 138)"
-  action-new-custom17: "rgb(59, 167, 85)"
-  custom-71: "rgb(227, 110, 227)"
-  custom-31: "rgb(235, 104, 127)"
-  custom-67: "rgb(248, 125, 118)"
-  primary: "rgb(238, 244, 255)"
+  palette-red-60: "#fe5c4c"
+  palette-violet-20: "#481A54"
+  color-palette-cloud-blue50: "rgb(16, 124, 173)"
+  color-palette-pink30: "rgb(138, 3, 62)"
+  color-palette-yellow15: "rgb(46, 34, 4)"
+  g-color-palette-hot-orange-95: "#fef1ed"
+  g-color-palette-red-80: "#feb8ab"
+  color-palette-cloud-blue-65: "rgb(8, 171, 237)"
+  color-palette-pink-50: "rgb(227, 6, 106)"
+  color-palette-yellow-30: "rgb(111, 52, 0)"
+  palette-indigo80: "rgb(190, 199, 246)"
+  palette-red15: "rgb(74, 12, 4)"
+  color-gray-5: "rgb(221, 219, 218)"
+  action-manage-perm-sets: "rgb(16, 124, 173)"
+  action-new-custom64: "rgb(88, 103, 232)"
+  action-new-custom25: "rgb(255, 83, 138)"
+  custom-72: "rgb(141, 155, 251)"
+  custom-35: "rgb(233, 99, 126)"
+  store-group: "rgb(27, 150, 255)"
+  qualifications: "rgb(57, 101, 71)"
+  tax-policy: "rgb(57, 101, 71)"
+  thanks: "rgb(255, 83, 138)"
+  rate-adjustment: "rgb(182, 5, 84)"
+  process: "rgb(16, 124, 173)"
+  ad-event-effect: "rgb(182, 5, 84)"
+  custom-component-task: "rgb(88, 103, 232)"
+  events: "rgb(27, 150, 255)"
+  market: "rgb(57, 101, 71)"
+  collection: "rgb(255, 93, 45)"
+  primary: "rgb(3, 35, 77)"
 typography:
-  theme-one-salesforce-common-family:
-    fontFamily: "-apple-system, BlinkMacSystemFont, "
-  primitive-common-family:
-    fontFamily: "-apple-system, BlinkMacSystemFont, "
+  font-family:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  font-family-monospace:
+    fontFamily: "Consolas, Menlo, Monaco, Courier, monospace"
+  font-size-base:
+    fontSize: 1rem
+  g-font-size-base:
+    fontSize: 1rem
+  g-font-family:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  g-font-family-monospace:
+    fontFamily: "Consolas, Menlo, Monaco, Courier, monospace"
+  type:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  props:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  original-value:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  comment:
+    fontFamily: "\"Monospace font stack for your application.\""
+  font-family-heading:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  font-size1:
+    fontSize: 0.625rem
+  font-size2:
+    fontSize: 0.75rem
+  font-size3:
+    fontSize: 0.8125rem
+  var-font-size10:
+    fontSize: 2rem
+  font-size4:
+    fontSize: 0.875rem
+  var-font-size11:
+    fontSize: 2.625rem
+  font-size5:
+    fontSize: 1rem
+  font-size6:
+    fontSize: 1.125rem
+  font-size7:
+    fontSize: 1.25rem
+  font-size8:
+    fontSize: 1.5rem
+  var-font-size1:
+    fontSize: 0.625rem
+  font-size9:
+    fontSize: 1.75rem
+  var-font-size2:
+    fontSize: 0.75rem
+  var-font-size3:
+    fontSize: 0.8125rem
+  font-size10:
+    fontSize: 2rem
+  var-font-size4:
+    fontSize: 0.875rem
+  font-size11:
+    fontSize: 2.625rem
+  var-font-size5:
+    fontSize: 1rem
+  var-font-size6:
+    fontSize: 1.125rem
+  var-font-size7:
+    fontSize: 1.25rem
+  var-font-size8:
+    fontSize: 1.5rem
+  var-font-size9:
+    fontSize: 1.75rem
+  form-label-font-size:
+    fontSize: 0.75rem
+  input-static-font-size:
+    fontSize: 0.8125rem
+  font-size-1:
+    fontSize: 0.625rem
+  font-size-2:
+    fontSize: 0.75rem
+  font-size-3:
+    fontSize: 0.8125rem
+  var-font-size-10:
+    fontSize: 2rem
+  font-size-4:
+    fontSize: 0.875rem
+  var-font-size-11:
+    fontSize: 2.625rem
+  font-size-5:
+    fontSize: 1rem
+  font-size-6:
+    fontSize: 1.125rem
+  font-size-7:
+    fontSize: 1.25rem
+  font-size-8:
+    fontSize: 1.5rem
+  var-font-size-1:
+    fontSize: 0.625rem
+  font-size-9:
+    fontSize: 1.75rem
+  var-font-size-2:
+    fontSize: 0.75rem
+  var-font-size-3:
+    fontSize: 0.8125rem
+  font-size-10:
+    fontSize: 2rem
+  var-font-size-4:
+    fontSize: 0.875rem
+  font-size-11:
+    fontSize: 2.625rem
+  var-font-size-5:
+    fontSize: 0.875rem
+  var-font-size-6:
+    fontSize: 1rem
+  var-font-size-7:
+    fontSize: 1.25rem
+  var-font-size-8:
+    fontSize: 1.25rem
+  var-font-size-9:
+    fontSize: 1.75rem
+  color-picker-input-custom-hex-font-size:
+    fontSize: 0.75rem
+  page-header-title-font-size:
+    fontSize: 1.125rem
+  welcome-mat-font-size-info-title:
+    fontSize: 2.625rem
+  font-size-small:
+    fontSize: 0.875rem
+  font-size-medium:
+    fontSize: 1rem
+  font-size-medium-a:
+    fontSize: 1.125rem
+  font-size-large:
+    fontSize: 1.25rem
+  font-size-x-large:
+    fontSize: 1.5rem
+  font-size-xx-large:
+    fontSize: 2rem
+  font-size-x-medium:
+    fontSize: 0.875rem
+  font-family-body:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  font-size-x-small:
+    fontSize: 0.625rem
+  font-size-heading-medium:
+    fontSize: 1.125rem
+  font-size-text-small:
+    fontSize: 0.8125rem
+  font-size-x-large-a:
+    fontSize: 1.57rem
+  font-size-heading-x-large:
+    fontSize: 1.75rem
+  font-size-text-xx-small:
+    fontSize: 0.625rem
+  font-size-heading-large:
+    fontSize: 1.5rem
+  font-size-text-x-large:
+    fontSize: 1.25rem
+  font-size-heading-xx-small:
+    fontSize: 0.625rem
+  font-size-heading-x-small:
+    fontSize: 0.75rem
+  font-size-text-large:
+    fontSize: 1.125rem
+  font-size-text-medium:
+    fontSize: 1rem
+  font-size-text-x-small:
+    fontSize: 0.75rem
+  font-size-heading-small:
+    fontSize: 0.875rem
+  font-family-text:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  html:
+    fontFamily: sans-serif
+  h1:
+    fontSize: 2em
+  body:
+    fontSize: 0.8125rem
+  h6:
+    fontSize: 1em
+  accordion-summary-heading:
+    fontSize: 1rem
+    lineHeight: 1.25
+  carousel-content-title:
+    fontSize: 1rem
+    fontWeight: 600
+  card-header-title:
+    fontSize: 1rem
+    fontWeight: 700
+    lineHeight: 1.25
+  page-header-title:
+    fontSize: 1.125rem
+    fontWeight: 700
+    lineHeight: 1.25
+  popover-prompt-heading:
+    fontSize: 1rem
+    fontWeight: 700
+    lineHeight: 1.25
+  tooltip-body:
+    fontSize: 0.75rem
+  popover-body:
+    fontSize: 0.75rem
+  h2:
+    fontSize: 1.125rem
+    fontWeight: 400
+    lineHeight: 1.25
+  h3:
+    fontSize: 1rem
+    fontWeight: 600
+    lineHeight: 1.25
+  h4:
+    fontSize: 0.875rem
+    fontWeight: 600
+    lineHeight: 1.25
+  h5:
+    fontSize: 0.8125rem
+    fontWeight: 700
+    lineHeight: 1.25
+  expression-title:
+    fontSize: 1.125rem
+  modal-title:
+    fontSize: 1.25rem
+    lineHeight: 1.25
+  coordinates-title:
+    fontSize: 1rem
+    fontWeight: 700
+  path-coach-title:
+    fontSize: 0.875rem
+    fontWeight: 700
+    lineHeight: 1.125
+  tabs-mobile-title:
+    fontSize: 1rem
+  nav-vertical-title:
+    fontSize: 1rem
+    fontWeight: 700
+  mobile-lookup-listbox-option-heading:
+    fontSize: 1rem
+    fontWeight: 700
+  section-title:
+    fontSize: 1rem
+  section-title-divider:
+    fontSize: 0.75rem
+    lineHeight: 1.25
+  welcome-mat-info-title:
+    fontSize: 2.625rem
+    fontWeight: 700
+    lineHeight: 1.25
+  text-body-regular:
+    fontSize: 0.8125rem
+  text-body-small:
+    fontSize: 0.75rem
+  text-heading-large:
+    fontSize: 1.75rem
+    lineHeight: 1.25
+  text-heading-medium:
+    fontSize: 1.25rem
+    lineHeight: 1.25
+  text-heading-small:
+    fontSize: 1rem
+    lineHeight: 1.25
+  text-heading-label:
+    fontSize: 0.75rem
+    fontWeight: 400
+    lineHeight: 1.25
+  text-heading-label-normal:
+    fontSize: 0.75rem
+    lineHeight: 1.25
+  text-title:
+    fontSize: 0.75rem
+    lineHeight: 1.25
+  text-title-caps:
+    fontSize: 0.75rem
+    fontWeight: 400
+    lineHeight: 1.25
+  text-title-bold:
+    fontSize: 0.875rem
+    fontWeight: 700
+  s-pageheader-title-font-size:
+    fontSize: 1.125rem
+  g-font-family-base:
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+components:
+  panel:
+    backgroundColor: "rgb(255, 255, 255)"
+    rounded: 0.25rem
+  table:
+    backgroundColor: "rgb(255, 255, 255)"
+  link:
+    textColor: "rgb(11, 92, 171)"
+  input:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "rgb(1, 118, 211)"
+    rounded: 0.25rem
+    padding: 0 1rem
+  panel-2:
+    backgroundColor: "rgb(255, 255, 255)"
+    rounded: 0.25rem 0.25rem 0 0
+  button:
+    textColor: "rgb(1, 68, 134)"
+    rounded: 0.25rem
+  input-focus-2:
+    backgroundColor: "rgb(255, 255, 255)"
+  badge:
+    backgroundColor: "rgb(186, 5, 23)"
+    textColor: "rgb(255, 255, 255)"
+    typography:
+      fontSize: 0.625rem
+    rounded: 15rem
+    padding: 0 0.125rem
+  nav-vertical:
+    textColor: "rgb(24, 24, 24)"
+    rounded: "0"
+    padding: 0.5rem 1.5rem 0.5rem 2rem
+  panel-3:
+    backgroundColor: "rgb(255, 255, 255)"
+    rounded: 0.25rem 0.25rem 0 0
+    padding: 0.5rem 0.75rem
+  nav-vertical-2:
+    textColor: "rgb(11, 92, 171)"
+  nav-vertical-3:
+    textColor: "rgb(116, 116, 116)"
+  button-icon:
+    textColor: "rgb(116, 116, 116)"
+  button-icon-bare:
+    textColor: "rgb(116, 116, 116)"
+  button-icon-more:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "rgb(116, 116, 116)"
+    padding: 0 0.5rem
+  button-icon-error:
+    textColor: "rgb(116, 116, 116)"
+  button-icon-border:
+    textColor: "rgb(116, 116, 116)"
+  table-header-fixed-container:
+    backgroundColor: "rgb(243, 243, 243)"
+  icon-standard-link-2:
+    backgroundColor: "rgb(27, 150, 255)"
+  icon-standard-table:
+    backgroundColor: "rgb(255, 93, 45)"
+  icon-action-web-link-3:
+    backgroundColor: "rgb(27, 150, 255)"
+    rounded: "50%"
+    padding: 0.5rem
+  icon-action-share-link-4:
+    backgroundColor: "rgb(88, 103, 232)"
+    rounded: "50%"
+    padding: 0.5rem
+  icon-standard-textarea-2:
+    backgroundColor: "rgb(147, 147, 147)"
+  icon-standard-scan-card:
+    backgroundColor: "rgb(255, 93, 45)"
+  icon-standard-date-input-3:
+    backgroundColor: "rgb(147, 147, 147)"
+  icon-standard-table-code-2:
+    backgroundColor: "rgb(255, 93, 45)"
+  icon-standard-panel-detail:
+    backgroundColor: "rgb(8, 73, 104)"
+  icon-standard-number-input-4:
+    backgroundColor: "rgb(147, 147, 147)"
+  icon-standard-radio-button-2:
+    backgroundColor: "rgb(147, 147, 147)"
+  icon-standard-work-summary:
+    backgroundColor: "rgb(182, 5, 84)"
+  icon-standard-usage-summary-2:
+    backgroundColor: "rgb(6, 165, 154)"
+  icon-standard-currency-input-5:
+    backgroundColor: "rgb(147, 147, 147)"
+  icon-standard-hierarchy-table-3:
+    backgroundColor: "rgb(255, 93, 45)"
+  icon-standard-ai-slack-summary-3:
+    backgroundColor: "rgb(255, 93, 45)"
+  icon-standard-javascript-button-3:
+    backgroundColor: "rgb(255, 93, 45)"
+  icon-standard-ai-accelerator-card-2:
+    backgroundColor: "rgb(16, 124, 173)"
+  icon-standard-multi-select-checkbox-6:
+    backgroundColor: "rgb(147, 147, 147)"
+  input-focus:
+    backgroundColor: "rgb(255, 255, 255)"
 ---
 
 # Lightning
 
 ## Overview
 
-Salesforce Lightning Design System — tokens for the Salesforce platform.
+Salesforce Lightning — tokens imported from @salesforce-ux/design-system.
 
-Tokens were read from `@salesforce-ux/design-system@2.264.3`, not from a marketing site: 91 colour tokens and 2 type tokens.
+Tokens were read from `@salesforce-ux/design-system@2.264.3`, not from a marketing site: 91 colour tokens and 120 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-Families declared in the package: `-apple-system, BlinkMacSystemFont, `.
+Families declared in the source: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `Consolas, Menlo, Monaco, Courier, monospace`, `"Monospace font stack for your application."`, `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `sans-serif`.
+
+## Components
+
+38 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(3, 35, 77)` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `system-ui` across 120 type steps.
+- **Component Geometry**: Buttons (`0.25rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

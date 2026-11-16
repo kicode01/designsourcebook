@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Strapi Design System
-description: "Strapi Strapi Design System — tokens read from https://github.com/strapi/design-system."
+description: "Crisp light (#ffffff) canvas, -apple-system typography, #7b79ff brand accent, and 8px corner geometry"
 colors:
   color-alternative100: "#181826"
   color-alternative200: "#4a4a6a"
@@ -94,13 +94,90 @@ colors:
   warning600: "#f29d41"
   warning700: "#fae7b9"
   primary: "#7b79ff"
+typography:
+  alpha:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 32px
+    fontWeight: 600
+    lineHeight: 1.25
+  beta:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.33
+  delta:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.33
+  epsilon:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.5
+  omega:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.43
+  pi:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.33
+  sigma:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ubuntu, \"Helvetica Neue\", sans-serif"
+    fontSize: 11px
+    fontWeight: 700
+    lineHeight: 1.45
+components:
+  button-primary:
+    backgroundColor: "#7b79ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#181826"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#7b79ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#181826"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Strapi Design System
 
 ## Overview
 
-Strapi Strapi Design System — tokens read from https://github.com/strapi/design-system.
+Strapi Design System — tokens read from https://github.com/strapi/design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +188,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#7b79ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 7 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

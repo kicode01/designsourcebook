@@ -1,0 +1,54 @@
+{
+  "name": "lion",
+  "displayName": "ING Lion",
+  "description": "ING Lion — tokens read from https://github.com/ing-bank/lion.",
+  "style": "Crisp light (#fff) canvas, Open Sans typography, #FFC107 brand accent, and 8px corner geometry",
+  "category": "ING",
+  "org": "ING",
+  "theme": "light",
+  "tags": [
+    "published",
+    "ing",
+    "light"
+  ],
+  "homepage": "https://github.com/ing-bank/lion",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/ing-bank/lion — 7 token files, 293 colours harvested, 85 selected.",
+  "source": {
+    "repo": "https://github.com/ing-bank/lion",
+    "package": "@lion/ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 86,
+    "typography": 31,
+    "components": 7
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 52,
+    "stars": 1975,
+    "forks": 356,
+    "npmDownloads": 38009,
+    "score": 3959,
+    "frameworks": [
+      "web-components"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

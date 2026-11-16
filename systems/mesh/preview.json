@@ -312,84 +312,235 @@
   "type": [
     {
       "name": "theme-typography-heading2xl-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
       "fontSize": "3.75rem",
       "px": 60
     },
     {
       "name": "theme-typography-heading-xl-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
       "fontSize": "2.25rem",
       "px": 36
     },
     {
+      "name": "h1",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
       "name": "theme-typography-heading-lg-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "theme-typography-heading-md-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "theme-typography-copy-large-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
       "name": "button-typography-large-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
       "name": "theme-typography-copy-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "theme-typography-heading-sm-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "theme-typography-heading-xs-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "button-typography-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "button-typography-small-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "form-control-typography-label-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
+      "name": "theme-font-family-copy",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-heading2xl-font-family",
+      "fontFamily": "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif",
+      "px": 16
+    },
+    {
+      "name": "theme-font-family-heading",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-copy-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-copy-small-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-copy-large-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "button-typography-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "button-typography-small-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "button-typography-large-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "form-control-typography-label-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-heading-xl-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-heading-lg-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-heading-md-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-heading-sm-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-typography-heading-xs-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "form-control-typography-help-font-family",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
       "name": "theme-typography-copy-small-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     }
   ],
-  "components": [],
-  "overview": "Mesh Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#144a38",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#7a0c0c",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#144a38",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#144a38",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Mesh Design System — Australian healthcare & enterprise kit, Buenos Aires typography and teal surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#144a38` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Buenos Aires` across 30 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

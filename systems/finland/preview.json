@@ -13,6 +13,10 @@
       "value": "#7a00df"
     },
     {
+      "name": "wp-block-synced-color-rgb",
+      "value": "rgb(122, 0, 223)"
+    },
+    {
       "name": "wp-editor-canvas-background",
       "value": "#ddd"
     },
@@ -21,12 +25,20 @@
       "value": "#007cba"
     },
     {
+      "name": "wp-admin-theme-color-rgb",
+      "value": "rgb(0, 124, 186)"
+    },
+    {
       "name": "wp-admin-theme-color-darker-10",
       "value": "#006ba1"
     },
     {
       "name": "wp-admin-theme-color-darker-20",
       "value": "#005a87"
+    },
+    {
+      "name": "wp-admin-theme-color-darker-20-rgb",
+      "value": "rgb(0, 90, 135)"
     },
     {
       "name": "wp-preset-color-black",
@@ -112,37 +124,132 @@
   "type": [
     {
       "name": "wp-preset-font-size-huge",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "42px",
       "px": 42
     },
     {
       "name": "wp-preset-font-size-x-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "42px",
       "px": 42
     },
     {
+      "name": "hero-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
       "name": "wp-preset-font-size-large",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "36px",
       "px": 36
     },
     {
+      "name": "h1",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "whats-new-container-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "material-data-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "filters-popular-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
       "name": "wp-preset-font-size-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "20px",
       "px": 20
     },
     {
+      "name": "theme-calendar-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "14pt",
+      "px": 19
+    },
+    {
+      "name": "teaser-header-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.375
+    },
+    {
       "name": "wp-preset-font-size-normal",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "16px",
       "px": 16
     },
     {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": 1.225
+    },
+    {
+      "name": "hero-image-caption",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "view-toggler-title",
+      "fontFamily": "Finlandica, \"Segoe UI\", sans-serif",
+      "fontSize": ".875rem",
+      "px": 14,
+      "fontWeight": 700
+    },
+    {
+      "name": "wp-caption",
+      "fontFamily": "sans-serif",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
       "name": "wp-preset-font-size-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "sans-serif",
       "fontSize": "13px",
       "px": 13
     }
@@ -151,61 +258,76 @@
     {
       "key": "button",
       "kind": "button",
-      "backgroundColor": "0 0",
-      "textColor": "inherit",
+      "backgroundColor": "#002ea2",
+      "textColor": "#fff",
       "rounded": "0",
       "padding": "0",
       "border": "0"
     },
     {
-      "key": "selectr-tag",
-      "kind": "selectr",
-      "backgroundColor": "0 0",
-      "textColor": "inherit",
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#002ea2",
+      "textColor": "#fff",
       "rounded": "0",
       "padding": "0",
       "border": "0"
     },
     {
-      "key": "selectr-notice-2",
-      "kind": "selectr",
+      "key": "new-post-tag-2",
+      "kind": "badge",
+      "backgroundColor": "#002ea2",
+      "textColor": "#fff",
+      "rounded": "50%"
+    },
+    {
+      "key": "notice",
+      "kind": "card",
       "backgroundColor": "#fff",
       "padding": "8px 16px"
     },
     {
-      "key": "selectr-selected-3",
-      "kind": "selectr",
-      "backgroundColor": "0 0",
-      "padding": ".75rem 0"
-    },
-    {
-      "key": "selectr-placeholder-4",
-      "kind": "selectr",
-      "textColor": "#6e717b"
-    },
-    {
-      "key": "selectr-options-container-5",
-      "kind": "selectr",
-      "backgroundColor": "#fff",
-      "shadow": "0 2px 8px 0 rgba(0,0,0,.2)"
-    },
-    {
-      "key": "button-radio",
+      "key": "load-more-button-2",
       "kind": "button",
-      "backgroundColor": "0 0",
-      "textColor": "inherit",
+      "backgroundColor": "#002ea2",
+      "textColor": "#fff",
       "rounded": "0",
       "padding": "0",
       "border": "0"
     },
     {
-      "key": "button-radio__amount",
+      "key": "button-radio",
+      "kind": "button",
+      "backgroundColor": "#002ea2",
+      "textColor": "#fff",
+      "rounded": "0",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "button-radio-amount",
       "kind": "button",
       "backgroundColor": "#002ea2",
       "textColor": "#fff",
       "padding": ".125rem .25rem"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "0",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "0",
+      "padding": "10px 16px"
     }
   ],
-  "overview": "Finland Finland Toolbox — read from toolbox.finland.fi's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "Finland Toolbox — Nordic civic design toolbox, deep navy blue on high-contrast white canvas",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002EA2` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `sans-serif` across 21 type steps.\n- **Component Geometry**: Buttons (`0`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#1A44EA",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "2px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -83,25 +83,166 @@
   ],
   "type": [
     {
-      "name": "pds-font-size-display-small",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.8rem, 2.41vw + 1.32rem, 4.21rem)",
-      "px": 16
+      "name": "pds-font-size-display-large",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(2.28rem, 5.2vw + 1.24rem, 7.48rem)",
+      "px": 119.68
     },
     {
       "name": "pds-font-size-display-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
       "fontSize": "clamp(2.03rem, 3.58vw + 1.31rem, 5.61rem)",
+      "px": 89.76
+    },
+    {
+      "name": "pds-font-size-display-small",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.8rem, 2.41vw + 1.32rem, 4.21rem)",
+      "px": 67.36
+    },
+    {
+      "name": "pds-font-size-heading-xx-large",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.6rem, 1.56vw + 1.29rem, 3.16rem)",
+      "px": 50.56
+    },
+    {
+      "name": "pds-font-size-text-x-large",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.42rem, 0.94vw + 1.23rem, 2.37rem)",
+      "px": 37.92
+    },
+    {
+      "name": "pds-font-size-heading-x-large",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.42rem, 0.94vw + 1.23rem, 2.37rem)",
+      "px": 37.92
+    },
+    {
+      "name": "pds-font-size-text-large",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.27rem, 0.51vw + 1.16rem, 1.78rem)",
+      "px": 28.48
+    },
+    {
+      "name": "pds-font-size-heading-large",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.27rem, 0.51vw + 1.16rem, 1.78rem)",
+      "px": 28.48
+    },
+    {
+      "name": "pds-font-size-text-medium",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.13rem, 0.21vw + 1.08rem, 1.33rem)",
+      "px": 21.28
+    },
+    {
+      "name": "pds-font-size-heading-medium",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "clamp(1.13rem, 0.21vw + 1.08rem, 1.33rem)",
+      "px": 21.28
+    },
+    {
+      "name": "pds-font-size-text-small",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "1rem",
       "px": 16
     },
     {
-      "name": "pds-font-size-display-large",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2.28rem, 5.2vw + 1.24rem, 7.48rem)",
+      "name": "pds-font-size-heading-small",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "1rem",
       "px": 16
+    },
+    {
+      "name": "pds-font-family",
+      "fontFamily": "\"Porsche Next\", \"Arial Narrow\", Arial, \"Heiti SC\", SimHei, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "pds-font-size-text-x-small",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "pds-font-size-text-xx-small",
+      "fontFamily": "\"Porsche Next\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", \"Noto Sans KR\", \"Arial Narrow\", Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
     }
   ],
-  "components": [],
-  "overview": "Porsche Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#1A44EA",
+      "textColor": "#ffffff",
+      "rounded": "2px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "2px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1A44EA",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Porsche Design System — Crisp light (#fff) canvas, Porsche Next typography, #1A44EA brand accent, and 2px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1A44EA` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Porsche Next` across 16 type steps.\n- **Component Geometry**: Buttons (`2px`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Contentful Forma 36
-description: "Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36."
+description: "Crisp light (#ffffff) canvas, Geist Sans typography, #64d2ff brand accent, and 6px corner geometry"
 colors:
   dataviz-semantic-warning: "#CC4500"
   sp-colors-accent: "#64d2ff"
@@ -97,13 +97,92 @@ colors:
 typography:
   sp-font-size:
     fontSize: 15px
+  font-size4-xl:
+    fontSize: 3rem
+  font-size3-xl:
+    fontSize: 2.25rem
+  font-size2-xl:
+    fontSize: 1.5rem
+  font-size-xl:
+    fontSize: 1.25rem
+  font-size-xl-high:
+    fontSize: 1.125rem
+  font-size-l:
+    fontSize: 1rem
+  font-size-lhigh:
+    fontSize: 0.875rem
+  font-size-m:
+    fontSize: 0.875rem
+  font-size-mhigh:
+    fontSize: 0.75rem
+  font-size-s:
+    fontSize: 0.75rem
+  font-size-shigh:
+    fontSize: 0.625rem
+  font-stack-primary:
+    fontFamily: "\"Geist Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  font-stack-monospace:
+    fontFamily: "\"Geist Mono\", SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace"
+  font-size-4xl:
+    fontSize: 3rem
+  font-size-3xl:
+    fontSize: 2.25rem
+  font-size-2xl:
+    fontSize: 1.5rem
+  font-size-l-high:
+    fontSize: 0.875rem
+  font-size-m-high:
+    fontSize: 0.75rem
+  font-size-s-high:
+    fontSize: 0.625rem
+components:
+  button-primary:
+    backgroundColor: "#64d2ff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ffcdca"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#64d2ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#006D23"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Contentful Forma 36
 
 ## Overview
 
-Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.
+Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 1 type tokens.
 
@@ -114,3 +193,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#64d2ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Geist Sans` across 20 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

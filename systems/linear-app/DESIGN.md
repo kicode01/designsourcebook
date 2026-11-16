@@ -33,152 +33,152 @@ colors:
   primary: "#5e6ad2"
 typography:
   display-xl:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 72px
     fontWeight: 510
     lineHeight: 1
     letterSpacing: "-1.584px"
   display-large:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 64px
     fontWeight: 510
     lineHeight: 1
     letterSpacing: "-1.408px"
   display:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 48px
     fontWeight: 510
     lineHeight: 1
     letterSpacing: "-1.056px"
   heading-1:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 32px
     fontWeight: 400
     lineHeight: 1.13
     letterSpacing: "-0.704px"
   heading-2:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.33
     letterSpacing: "-0.288px"
   heading-3:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 20px
     fontWeight: 590
     lineHeight: 1.33
     letterSpacing: "-0.24px"
   body-large:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: "-0.165px"
   body-emphasis:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 17px
     fontWeight: 590
     lineHeight: 1.6
   body:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   body-medium:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 16px
     fontWeight: 510
     lineHeight: 1.5
   body-semibold:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 16px
     fontWeight: 590
     lineHeight: 1.5
   small:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 15px
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: "-0.165px"
   small-medium:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 15px
     fontWeight: 510
     lineHeight: 1.6
     letterSpacing: "-0.165px"
   small-semibold:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 15px
     fontWeight: 590
     lineHeight: 1.6
     letterSpacing: "-0.165px"
   small-light:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 15px
     fontWeight: 300
     lineHeight: 1.47
     letterSpacing: "-0.165px"
   caption-large:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 14px
     fontWeight: 510
     lineHeight: 1.5
     letterSpacing: "-0.182px"
   caption:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.13px"
   label:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
   micro:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 11px
     fontWeight: 510
     lineHeight: 1.4
   tiny:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.15px"
   link-large:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   link-medium:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 15px
     fontWeight: 510
     lineHeight: 2.67
   link-small:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 14px
     fontWeight: 510
     lineHeight: 1.5
   link-caption:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "-0.13px"
   mono-body:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
   mono-caption:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.5
   mono-label:
-    fontFamily: Inter Variable
+    fontFamily: "\"Inter Variable\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
@@ -232,6 +232,16 @@ components:
     textColor: "#f7f8f8"
     rounded: 2px
     padding: 0px 8px 0px 2px
+  card-surface:
+    backgroundColor: "#0f1011"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 18px 20px
+  nav-bar:
+    backgroundColor: "#0f1011"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Design System: Linear

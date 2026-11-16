@@ -200,111 +200,316 @@
   "type": [
     {
       "name": "h1-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "4.2rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "4.2rem",
       "px": 67.2
     },
     {
+      "name": "md-sys-typescale-display-large-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "57px",
+      "px": 57
+    },
+    {
       "name": "h2-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "3.56rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.56rem",
+      "px": 56.96
+    },
+    {
+      "name": "h2",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.56rem",
       "px": 56.96
     },
     {
       "name": "h3-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "2.92rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.92rem",
       "px": 46.72
     },
     {
+      "name": "h3",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.92rem",
+      "px": 46.72
+    },
+    {
+      "name": "md-sys-typescale-display-medium-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "45px",
+      "px": 45
+    },
+    {
       "name": "datepicker-display-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
       "fontSize": "2.8rem",
       "px": 44.8
     },
     {
       "name": "h4-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "2.28rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.28rem",
       "px": 36.48
     },
     {
+      "name": "h4",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.28rem",
+      "px": 36.48
+    },
+    {
+      "name": "md-sys-typescale-display-small-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
       "name": "navbar-brand-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "2.1rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.1rem",
       "px": 33.6
     },
     {
+      "name": "md-sys-typescale-headline-large-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "h1",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "nav-title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "md-sys-typescale-headline-medium-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
       "name": "h5-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "1.64rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.64rem",
+      "px": 26.24
+    },
+    {
+      "name": "h5",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.64rem",
       "px": 26.24
     },
     {
       "name": "button-large-icon-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1.6rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.6rem",
       "px": 25.6
     },
     {
+      "name": "md-sys-typescale-headline-small-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "appbar-title-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 300
+    },
+    {
+      "name": "md-sys-typescale-title-large-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
       "name": "button-icon-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1.3rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.3rem",
       "px": 20.8
     },
     {
+      "name": "timepicker-display-am-pm",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.3rem",
+      "px": 20.8,
+      "fontWeight": 400
+    },
+    {
       "name": "button-small-icon-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1.2rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.2rem",
       "px": 19.2
     },
     {
       "name": "h6-fontsize",
-      "fontFamily": "system-ui",
-      "fontSize": "1.15rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.15rem",
       "px": 18.4
     },
     {
+      "name": "h6",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.15rem",
+      "px": 18.4
+    },
+    {
+      "name": "mw-chip-font-size-icon",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
       "name": "input-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "16px !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
       "px": 16
     },
     {
       "name": "navbar-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "1rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "md-sys-typescale-body-large-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "md-sys-typescale-title-medium-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-stack",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "btn-font-size-icon",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "mw-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
       "px": 16
     },
     {
       "name": "button-large-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "15px !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "15px",
       "px": 15
     },
     {
       "name": "button-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "14px !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
       "px": 14
     },
     {
       "name": "sidenav-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "14px !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "md-sys-typescale-body-medium-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "md-sys-typescale-label-large-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "md-sys-typescale-title-small-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "btn-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "mw-chip-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
       "px": 14
     },
     {
       "name": "button-small-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "13px !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "13px",
       "px": 13
     },
     {
       "name": "label-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": ".8rem !default",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": ".8rem",
       "px": 12.8
+    },
+    {
+      "name": "md-sys-typescale-body-small-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "md-sys-typescale-label-medium-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "md-sys-typescale-label-small-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "11px",
+      "px": 11
     }
   ],
   "components": [
@@ -312,7 +517,7 @@
       "key": "btn",
       "kind": "button",
       "backgroundColor": "#26a69a",
-      "textColor": "#fff",
+      "textColor": "#0b0b0c",
       "rounded": "2px",
       "padding": "0 16px",
       "border": "none",
@@ -327,7 +532,7 @@
     },
     {
       "key": "tabs",
-      "kind": "tabs",
+      "kind": "nav",
       "backgroundColor": "#fff"
     },
     {
@@ -351,7 +556,7 @@
       "key": "btn-large-3",
       "kind": "button",
       "backgroundColor": "#26a69a",
-      "textColor": "#fff",
+      "textColor": "#0b0b0c",
       "rounded": "2px",
       "padding": "0 16px",
       "border": "none",
@@ -361,7 +566,7 @@
       "key": "btn-small-4",
       "kind": "button",
       "backgroundColor": "#26a69a",
-      "textColor": "#fff",
+      "textColor": "#0b0b0c",
       "rounded": "2px",
       "padding": "0 16px",
       "border": "none",
@@ -379,12 +584,20 @@
       "key": "btn-floating-5",
       "kind": "button",
       "backgroundColor": "#26a69a",
-      "textColor": "#fff",
+      "textColor": "#0b0b0c",
       "rounded": "50%",
       "padding": "0",
       "shadow": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "9px 13px"
     }
   ],
-  "overview": "Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.",
-  "dos": ""
+  "overview": "Materialize CSS — Crisp light (#FFFFFF) canvas, -apple-system typography, #FF8A80 brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF8A80` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 52 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

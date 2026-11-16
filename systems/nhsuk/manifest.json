@@ -1,22 +1,24 @@
 {
   "name": "nhsuk",
   "displayName": "NHS.UK Service Manual",
-  "description": "NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.",
-  "style": "NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.",
+  "description": "NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.",
+  "style": "High-contrast clinical public service manual, Frutiger typography and NHS Blue",
   "category": "NHS.UK",
   "org": "NHS.UK",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "nhs-uk"
+    "observed",
+    "nhs-uk",
+    "light"
   ],
   "homepage": "https://service-manual.nhs.uk/",
   "license": "all rights reserved",
   "provenance": "observed",
   "provenanceNote": "Colours read from https://service-manual.nhs.uk/ and its 1 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
   "source": {
-    "repo": null
+    "url": "https://service-manual.nhs.uk/",
+    "repo": "https://github.com/nhsdigital/nhsuk-frontend",
+    "package": "nhsuk-frontend"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +28,28 @@
   ],
   "tokens": {
     "colors": 88,
-    "typography": 0,
-    "components": 0
+    "typography": 20,
+    "components": 25
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 141,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 141148,
+    "score": 5102,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 28
   }
 }

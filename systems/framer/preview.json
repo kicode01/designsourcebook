@@ -72,7 +72,7 @@
   "type": [
     {
       "name": "display-hero",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "110px",
       "px": 110,
       "fontWeight": 500,
@@ -81,7 +81,7 @@
     },
     {
       "name": "section-display",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "85px",
       "px": 85,
       "fontWeight": 500,
@@ -90,7 +90,7 @@
     },
     {
       "name": "section-heading",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "62px",
       "px": 62,
       "fontWeight": 500,
@@ -99,7 +99,7 @@
     },
     {
       "name": "accent-display",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "61.5px",
       "px": 61.5,
       "fontWeight": 100,
@@ -108,7 +108,7 @@
     },
     {
       "name": "feature-heading",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "32px",
       "px": 32,
       "fontWeight": 500,
@@ -117,7 +117,7 @@
     },
     {
       "name": "card-title",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 400,
@@ -126,7 +126,7 @@
     },
     {
       "name": "feature-title",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "22px",
       "px": 22,
       "fontWeight": 700,
@@ -135,7 +135,7 @@
     },
     {
       "name": "sub-heading",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 600,
@@ -144,7 +144,7 @@
     },
     {
       "name": "body-large",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "18px",
       "px": 18,
       "fontWeight": 400,
@@ -153,7 +153,7 @@
     },
     {
       "name": "body",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 400,
@@ -162,7 +162,7 @@
     },
     {
       "name": "nav-ui",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "15px",
       "px": 15,
       "fontWeight": 400,
@@ -171,7 +171,7 @@
     },
     {
       "name": "body-readable",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -179,7 +179,7 @@
     },
     {
       "name": "caption",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -187,7 +187,7 @@
     },
     {
       "name": "label",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "13px",
       "px": 13,
       "fontWeight": 500,
@@ -195,7 +195,7 @@
     },
     {
       "name": "small-caption",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -203,7 +203,7 @@
     },
     {
       "name": "micro-code",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "10.4px",
       "px": 10.4,
       "fontWeight": 400,
@@ -211,7 +211,7 @@
     },
     {
       "name": "badge",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "9px",
       "px": 9,
       "fontWeight": 600,
@@ -219,7 +219,7 @@
     },
     {
       "name": "micro-uppercase",
-      "fontFamily": "GT Walsheim Framer Medium",
+      "fontFamily": "\"GT Walsheim Framer Medium\"",
       "fontSize": "7px",
       "px": 7,
       "fontWeight": 400,
@@ -227,7 +227,72 @@
       "letterSpacing": "0.21px"
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#a6a6a6",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#a6a6a6",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Framer's website is a cinematic, tool-obsessed dark canvas that radiates the confidence of a design tool built by designers who worship craft. The entire experience is drenched in pure black — not a warm charcoal or a cozy dark gray, but an absolute void (#000000) that makes every element, every screenshot, every typographic flourish feel like it's floating in deep space. This is a website that treats its own product UI as the hero art, embedding full-fidelity screenshots and interactive demos directly into the narrative flow.\n\nThe typography is the signature move: GT Walsheim with aggressively tight letter-spacing (as extreme as -5.5px on 110px display text) creates headlines that feel compressed, kinetic, almost spring-loaded — like words under pressure that might expand at any moment. The transition to Inter for body text is seamless, with extensive OpenType feature usage (cv01,…",
   "dos": "Do\n- Use pure black (#000000) as the primary background — not dark gray, not charcoal\n- Apply extreme negative letter-spacing on GT Walsheim display text (-3px to -5.5px)\n- Keep all buttons pill-shaped (40px+ radius) — never use squared or slightly-rounded buttons\n- Use Framer Blue (#0099ff) exclusively for interactive accents — links, borders, focus states\n- Deploy rgba(255, 255, 255, 0.1) for frosted glass surfaces on dark backgrounds\n- Maintain GT Walsheim at weight 500 only — the medium weight IS the brand\n- Use extensive OpenType features on Inter text (cv01, cv05, cv09, cv11, ss03, ss07)\n- Let product screenshots be the visual centerpiece — the tool markets itself\n- Apply blue ring shadows (rgba(0, 153, 255, 0.15) 0px 0px 0px 1px) for card containment\n\nDon't\n- Use warm dark backgrounds (no #1a1a1a, #2d2d2d, or brownish blacks)\n- Apply bold (700+) weight to GT Walsheim display text…"
 }

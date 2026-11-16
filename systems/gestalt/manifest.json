@@ -1,0 +1,55 @@
+{
+  "name": "gestalt",
+  "displayName": "Pinterest Gestalt",
+  "description": "Pinterest Gestalt — tokens imported from gestalt-design-tokens.",
+  "style": "Visual discovery system, Pinterest red actions and rounded tactile pill controls",
+  "category": "Pinterest",
+  "org": "Pinterest",
+  "theme": "light",
+  "tags": [
+    "published",
+    "pinterest",
+    "light"
+  ],
+  "homepage": "https://gestalt.pinterest.systems/",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from gestalt-design-tokens@177.0.12 + gestalt (25 token files, 1653 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "gestalt-design-tokens",
+    "version": "177.0.12",
+    "repo": "https://github.com/pinterest/gestalt"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 15,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 38,
+    "stars": 4384,
+    "forks": 388,
+    "npmDownloads": 49723,
+    "score": 6791,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 3
+  }
+}

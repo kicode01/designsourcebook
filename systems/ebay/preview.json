@@ -376,125 +376,190 @@
   "type": [
     {
       "name": "font-size-64",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "4rem",
       "px": 64
     },
     {
       "name": "font-size-giant-3",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "2.875rem",
       "px": 46
     },
     {
       "name": "font-size-46",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "2.875rem",
       "px": 46
     },
     {
       "name": "font-size-giant-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "2.25rem",
       "px": 36
     },
     {
       "name": "font-size-36",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "2.25rem",
       "px": 36
     },
     {
       "name": "font-size-giant-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.875rem",
       "px": 30
     },
     {
       "name": "font-size-30",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.875rem",
       "px": 30
     },
     {
       "name": "font-size-large-2",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "font-size-24",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "font-size-large-1",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "font-size-20",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.25rem",
       "px": 20
     },
     {
       "name": "font-size-18",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
       "name": "font-size-medium",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "font-family-market-sans",
-      "fontFamily": "Market Sans",
+      "fontFamily": "\"Market Sans\"",
       "px": 16
     },
     {
       "name": "font-size-16",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "font-size-body",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "font-size-14",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "font-size-small",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "font-size-12",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "font-size-smallest",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"Market Sans\"",
       "fontSize": "0.625rem",
       "px": 10
     }
   ],
-  "components": [],
-  "overview": "eBay eBay Skin — tokens read from https://github.com/eBay/evo-web.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#e20020",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#570303",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#e20020",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "eBay Skin — Crisp light (#ffffff) canvas, Market Sans typography, #e20020 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#e20020` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Market Sans` across 20 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Vibe
-description: "Vibe Vibe — tokens read from https://github.com/mondaycom/vibe."
+description: "Crisp light (#ffffff) canvas, Figtree typography, #0073ea brand accent, and 8px corner geometry"
 colors:
   primary-color: "#0073ea"
   primary-hover-color: "#0060b9"
@@ -110,11 +110,9 @@ typography:
   font-size-60:
     fontSize: 30px
   font-family:
-    fontFamily: "Figtree, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif"
+    fontFamily: "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif"
   title-font-family:
-    fontFamily: "Poppins, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif"
-  h1-font-family:
-    fontFamily: "var(--title-font-family)"
+    fontFamily: "Poppins, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif"
   sb-h1-font-size:
     fontSize: 40px
   sb-h2-font-size:
@@ -126,16 +124,57 @@ typography:
   sb-small-text-font-size:
     fontSize: 14px
   sb-font-family:
-    fontFamily: "Figtree', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif"
+    fontFamily: "Figtree, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif"
   sb-title-font-family:
-    fontFamily: "Poppins', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif"
+    fontFamily: "Poppins, Roboto, \"Noto Sans Hebrew\", \"Noto Kufi Arabic\", \"Noto Sans JP\", sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#0073ea"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#d83a52"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0073ea"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#00854d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Vibe
 
 ## Overview
 
-Vibe Vibe — tokens read from https://github.com/mondaycom/vibe.
+Vibe — tokens read from https://github.com/mondaycom/vibe.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 17 type tokens.
 
@@ -146,3 +185,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 Families declared in the source: `Figtree, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif`, `Poppins, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif`, `var(--title-font-family)`, `Figtree', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif`, `Poppins', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0073ea` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Figtree` across 16 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

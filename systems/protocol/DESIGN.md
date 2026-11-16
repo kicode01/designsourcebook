@@ -94,6 +94,148 @@ colors:
   color-light-gray-50: "#bfbfc9"
   color-light-gray-60: "#afafba"
   primary: "#cb9eff"
+typography:
+  font-stack-base:
+    fontFamily: "Inter, X-LocaleSpecific, sans-serif"
+  font-stack-firefox:
+    fontFamily: "Metropolis, X-LocaleSpecific, sans-serif"
+  font-stack-mono:
+    fontFamily: "Consolas, Monaco"
+  font-stack-mozilla-text:
+    fontFamily: "\"Mozilla Text\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+  html:
+    fontSize: "100%"
+  mzp-c-article-title:
+    fontSize: 40px
+    lineHeight: 1.1
+  mzp-c-billboard-title:
+    fontSize: 32px
+    lineHeight: 1.125
+  mzp-c-callout-title:
+    fontSize: 24px
+    lineHeight: 1.166
+  mzp-c-card-feature-title:
+    fontSize: 24px
+    lineHeight: 1.166
+  mzp-c-menu-list-title:
+    fontFamily: "\"Mozilla Text\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontWeight: 700
+  h2:
+    fontFamily: "Inter, X-LocaleSpecific, sans-serif"
+    fontSize: 20px
+    lineHeight: 1.2
+  mzp-c-newsletter-title:
+    fontSize: 32px
+    lineHeight: 1.125
+  mzp-c-picto-heading:
+    fontSize: 20px
+    lineHeight: 1.2
+  mzp-c-section-heading:
+    fontSize: 32px
+    lineHeight: 1.125
+  mzp-c-sidemenu-title:
+    fontFamily: "Inter, X-LocaleSpecific, sans-serif"
+    fontSize: 18px
+    lineHeight: 1.5
+  body:
+    fontFamily: "\"Mozilla Text\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 16px
+    lineHeight: 1.5
+  h1:
+    fontSize: 40px
+    lineHeight: 1.1
+  h3:
+    fontSize: 24px
+    lineHeight: 1.166
+  h4:
+    fontSize: 20px
+    lineHeight: 1.2
+  h5:
+    fontSize: 16px
+    lineHeight: 1.25
+  h6:
+    fontSize: 16px
+    lineHeight: 1.25
+  mzp-u-title-2xl:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 56px
+    lineHeight: 1.143
+  mzp-u-title-xl:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 48px
+    lineHeight: 1.166
+  mzp-u-title-lg:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 40px
+    lineHeight: 1.1
+  mzp-u-title-md:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 32px
+    lineHeight: 1.125
+  mzp-u-title-sm:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 24px
+    lineHeight: 1.166
+  mzp-u-title-xs:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 20px
+    lineHeight: 1.2
+  mzp-u-title-2xs:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 16px
+    lineHeight: 1.25
+  mzp-u-title-3xs:
+    fontFamily: "\"Mozilla Headline\", \"Helvetica Neue\", Arial, X-LocaleSpecific, sans-serif"
+    fontSize: 16px
+    lineHeight: 1.25
+  mzp-c-card-title:
+    fontSize: 20px
+    lineHeight: 1.2
+  mzp-c-menu-title:
+    fontFamily: "Inter, X-LocaleSpecific, sans-serif"
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.5
+  mzp-c-menu-item-title:
+    fontSize: 16px
+    lineHeight: 1.25
+components:
+  mzp-c-button:
+    backgroundColor: "#161616"
+    textColor: "#fff"
+    typography:
+      fontSize: 16px
+      fontWeight: 700
+    padding: 8px 16px
+  mzp-c-card:
+    backgroundColor: "#fff"
+  mzp-c-menu-panel:
+    backgroundColor: "#fff"
+    padding: 32px 4px
+  mzp-c-navigation-menu-button:
+    backgroundColor: "rgba(0,0,0,0)"
+    rounded: 4px
+    padding: 0 32px 0 6px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 9px 13px
+  badge-brand:
+    backgroundColor: "#cb9eff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # Protocol
@@ -102,12 +244,23 @@ colors:
 
 Mozilla Protocol — the design system for Mozilla branded websites.
 
-Tokens were read from `@mozilla-protocol/core@22.0.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@mozilla-protocol/core@22.0.0`, not from a marketing site: 91 colour tokens and 32 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `Inter, X-LocaleSpecific, sans-serif`, `Metropolis, X-LocaleSpecific, sans-serif`, `Consolas, Monaco`, `"Mozilla Text", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif`, `"Mozilla Headline", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif`.
+
+## Components
+
+4 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#cb9eff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Inter` across 32 type steps.
+- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

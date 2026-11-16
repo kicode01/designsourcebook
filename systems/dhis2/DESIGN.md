@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: DHIS2 UI
-description: "DHIS2 DHIS2 UI — tokens read from https://github.com/dhis2/ui."
+description: "Dark (#276696) canvas, Roboto typography, #FF4785 brand accent, and 8px corner geometry"
 colors:
   blue900: "#093371"
   blue800: "#0d47a1"
@@ -69,13 +69,85 @@ colors:
   background-color: "#276696"
   color-primary: "#FF4785"
   primary: "#FF4785"
+typography:
+  heading-2xl:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif"
+    fontSize: 28px
+    fontWeight: 500
+    lineHeight: 1.25
+  heading-xl:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif"
+    fontSize: 24px
+    fontWeight: 500
+    lineHeight: 1.3
+  heading-lg:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif"
+    fontSize: 20px
+    fontWeight: 500
+    lineHeight: 1.4
+  body-md:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.43
+  body-sm:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif"
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 1.38
+  caption-xs:
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Arial, sans-serif"
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.33
+components:
+  button-primary:
+    backgroundColor: "#FF4785"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#276696"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#276696"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#FF4785"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#10b981"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#276696"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # DHIS2 UI
 
 ## Overview
 
-DHIS2 DHIS2 UI — tokens read from https://github.com/dhis2/ui.
+DHIS2 UI — tokens read from https://github.com/dhis2/ui.
 
 Tokens were read from the project's own repository, not from a marketing site: 66 colour tokens and 0 type tokens.
 
@@ -86,3 +158,10 @@ Tokens were read from the project's own repository, not from a marketing site: 6
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#276696) canvas paired with `#276696` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF4785` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Roboto` across 6 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

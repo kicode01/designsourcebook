@@ -1,0 +1,191 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#5468ff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "40px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "docsearch-primary-color",
+      "value": "#5468ff"
+    },
+    {
+      "name": "docsearch-text-color",
+      "value": "#1c1e21"
+    },
+    {
+      "name": "docsearch-muted-color",
+      "value": "#969faf"
+    },
+    {
+      "name": "docsearch-container-background",
+      "value": "rgba(101,108,133,.8)"
+    },
+    {
+      "name": "docsearch-logo-color",
+      "value": "#5468ff"
+    },
+    {
+      "name": "docsearch-modal-background",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "docsearch-searchbox-background",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "docsearch-searchbox-focus-background",
+      "value": "#fff"
+    },
+    {
+      "name": "docsearch-hit-color",
+      "value": "#444950"
+    },
+    {
+      "name": "docsearch-hit-active-color",
+      "value": "#fff"
+    },
+    {
+      "name": "docsearch-hit-background",
+      "value": "#fff"
+    },
+    {
+      "name": "docsearch-footer-background",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "#5468ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Lato",
+      "fontSize": "3em",
+      "px": 48,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Lato",
+      "fontSize": "1.75em",
+      "px": 28,
+      "lineHeight": 1
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Lato",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "doc-search-title",
+      "fontFamily": "Lato",
+      "fontSize": "1.2em",
+      "px": 19.2
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Lato",
+      "fontSize": "1.07142857rem",
+      "px": 17.14285712
+    },
+    {
+      "name": "title",
+      "fontFamily": "Lato",
+      "fontSize": "1em",
+      "px": 16,
+      "lineHeight": 1
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Lato",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "Lato",
+      "px": 16
+    },
+    {
+      "name": "doc-search-hit-title",
+      "fontFamily": "Lato",
+      "fontSize": ".9em",
+      "px": 14.4
+    },
+    {
+      "name": "html",
+      "fontFamily": "Lato",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "body",
+      "fontFamily": "Lato",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": "1.4285em"
+    }
+  ],
+  "components": [
+    {
+      "key": "emoji-category-button",
+      "kind": "button",
+      "textColor": "rgba(0,0,0,.6)",
+      "padding": ".5em"
+    },
+    {
+      "key": "Link",
+      "kind": "nav",
+      "textColor": "#5468ff",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "Input",
+      "kind": "input",
+      "backgroundColor": "transparent",
+      "textColor": "#1c1e21",
+      "padding": "0 0 0 8px",
+      "border": "0"
+    },
+    {
+      "key": "Label",
+      "kind": "badge",
+      "textColor": "#969faf"
+    },
+    {
+      "key": "Button",
+      "kind": "button",
+      "backgroundColor": "#ebedf0",
+      "textColor": "#0b0b0c",
+      "rounded": "40px",
+      "padding": "0 8px",
+      "border": "0"
+    },
+    {
+      "key": "Button-Key-2",
+      "kind": "button",
+      "textColor": "#969faf",
+      "rounded": "3px",
+      "padding": "0 0 2px",
+      "border": "0",
+      "shadow": "inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,.4)"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "40px",
+      "padding": "18px 20px"
+    }
+  ],
+  "overview": "Fomantic / Semantic UI — Human-friendly HTML UI vocabulary, Lato typography and named semantic color states",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#5468ff` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Lato` across 11 type steps.\n- **Component Geometry**: Buttons (`40px`), cards (`40px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

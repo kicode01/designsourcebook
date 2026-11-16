@@ -1,23 +1,26 @@
 {
   "name": "singapore",
   "displayName": "Singapore Government Design System",
-  "description": "undefined",
-  "style": "undefined",
+  "description": "Singapore Government Design System (SGDS) — open-source UI system for Singapore digital services.",
+  "style": "Singapore Government Design System (SGDS) — open-source UI system for Singapore digital services.",
   "category": "Singapore",
   "org": "Singapore",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "singapore"
+    "singapore",
+    "government",
+    "open-source",
+    "light"
   ],
   "homepage": "",
   "license": "MIT",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @govtechsg/sgds@2.3.6 (2 token files, 208 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @govtechsg/sgds@2.3.6 (2 token files, 210 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@govtechsg/sgds",
-    "version": "2.3.6"
+    "version": "2.3.6",
+    "repo": "https://github.com/GovTechSG/sgds"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,8 +30,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 18,
-    "components": 9
+    "typography": 29,
+    "components": 14
   },
   "checks": {
     "errors": 0,
@@ -38,5 +41,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 125,
+    "stars": 46,
+    "forks": 8,
+    "npmDownloads": 0,
+    "score": 46,
+    "frameworks": [
+      "web-components",
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

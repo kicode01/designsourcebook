@@ -1,0 +1,316 @@
+{
+  "canvas": "#F8F8F8",
+  "surface": "#7C3699",
+  "text": "#000000",
+  "muted": "#6E6E6E",
+  "brand": "#1F5493",
+  "border": "color-mix(in srgb, #000000 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background-default",
+      "value": "#F8F8F8"
+    },
+    {
+      "name": "background-paper",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "status-ok",
+      "value": "#1DB954"
+    },
+    {
+      "name": "status-warning",
+      "value": "#FF9800"
+    },
+    {
+      "name": "status-error",
+      "value": "#E22134"
+    },
+    {
+      "name": "status-running",
+      "value": "#1F5493"
+    },
+    {
+      "name": "status-pending",
+      "value": "#FFED51"
+    },
+    {
+      "name": "status-aborted",
+      "value": "#757575"
+    },
+    {
+      "name": "background-color-default",
+      "value": "#7C3699"
+    },
+    {
+      "name": "primary-main",
+      "value": "#1F5493"
+    },
+    {
+      "name": "banner-info",
+      "value": "#2E77D0"
+    },
+    {
+      "name": "banner-error",
+      "value": "#E22134"
+    },
+    {
+      "name": "banner-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "banner-link",
+      "value": "#000000"
+    },
+    {
+      "name": "banner-close-button-color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "banner-warning",
+      "value": "#FF9800"
+    },
+    {
+      "name": "nav-item-hover-background",
+      "value": "#404040"
+    },
+    {
+      "name": "submenu-background",
+      "value": "#404040"
+    },
+    {
+      "name": "pin-sidebar-button-icon",
+      "value": "#181818"
+    },
+    {
+      "name": "pin-sidebar-button-background",
+      "value": "#BDBDBD"
+    },
+    {
+      "name": "tabbar-indicator",
+      "value": "#9BF0E1"
+    },
+    {
+      "name": "primary-dark",
+      "value": "#82BAFD"
+    },
+    {
+      "name": "secondary-main",
+      "value": "#FF88B2"
+    },
+    {
+      "name": "paper",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ok",
+      "value": "#1DB954"
+    },
+    {
+      "name": "warning",
+      "value": "#FF9800"
+    },
+    {
+      "name": "error",
+      "value": "#E22134"
+    },
+    {
+      "name": "running",
+      "value": "#1F5493"
+    },
+    {
+      "name": "pending",
+      "value": "#FFED51"
+    },
+    {
+      "name": "aborted",
+      "value": "#757575"
+    },
+    {
+      "name": "font-color",
+      "value": "#FEFEFE"
+    },
+    {
+      "name": "slack-channel-text",
+      "value": "#ddd"
+    },
+    {
+      "name": "main",
+      "value": "#1F5493"
+    },
+    {
+      "name": "info",
+      "value": "#2E77D0"
+    },
+    {
+      "name": "text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "link",
+      "value": "#000000"
+    },
+    {
+      "name": "close-button-color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "border",
+      "value": "#E6E6E6"
+    },
+    {
+      "name": "text-contrast",
+      "value": "#000000"
+    },
+    {
+      "name": "text-very-subtle",
+      "value": "#DDD"
+    },
+    {
+      "name": "text-subtle",
+      "value": "#6E6E6E"
+    },
+    {
+      "name": "highlight",
+      "value": "#FFFBCC"
+    },
+    {
+      "name": "error-background",
+      "value": "#FFEBEE"
+    },
+    {
+      "name": "warning-background",
+      "value": "#F59B23"
+    },
+    {
+      "name": "info-background",
+      "value": "#ebf5ff"
+    },
+    {
+      "name": "error-text",
+      "value": "#CA001B"
+    },
+    {
+      "name": "info-text",
+      "value": "#004e8a"
+    },
+    {
+      "name": "warning-text",
+      "value": "#000000"
+    },
+    {
+      "name": "link-hover",
+      "value": "#2196F3"
+    },
+    {
+      "name": "gold",
+      "value": "#FFD600"
+    },
+    {
+      "name": "background",
+      "value": "#171717"
+    },
+    {
+      "name": "indicator",
+      "value": "#9BF0E1"
+    },
+    {
+      "name": "color",
+      "value": "#b5b5b5"
+    },
+    {
+      "name": "selected-color",
+      "value": "#FFF"
+    },
+    {
+      "name": "hover-background",
+      "value": "#404040"
+    },
+    {
+      "name": "icon",
+      "value": "#181818"
+    },
+    {
+      "name": "primary",
+      "value": "#1F5493"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#1F5493",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#7C3699",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#E22134",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#7C3699",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#7C3699",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1F5493",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#7C3699",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Spotify Backstage — Developer portal system, Spotify green highlights on neutral studio surfaces",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#F8F8F8) canvas paired with `#7C3699` component surfaces and `#000000` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1F5493` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `system-ui` across 1 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

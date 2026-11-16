@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Chakra UI
-description: "Chakra UI Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui."
+description: "Crisp light (#fff) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry"
 colors:
   brand-50: "#e6f2ff"
   brand-100: "#e6f2ff"
@@ -94,13 +94,64 @@ colors:
   cyan-500: "#06b6d4"
   cyan-600: "#0891b2"
   primary: "#e6f2ff"
+typography:
+  heading:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  body:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+  mono:
+    fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+  font-size:
+    fontSize: 0.25em
+    fontFamily: null
+components:
+  button-primary:
+    backgroundColor: "#e6f2ff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ef4444"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#e6f2ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#16a34a"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 16px
 ---
 
 # Chakra UI
 
 ## Overview
 
-Chakra UI Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.
+Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.
 
 Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
 
@@ -111,3 +162,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#e6f2ff` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.
+- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

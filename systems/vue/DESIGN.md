@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Vue Design System
-description: "Vue Vue Design System — tokens read from https://github.com/viljamis/vue-design-system."
+description: "Crisp light (rgb(255, 255, 255)) canvas, Fira Sans typography, rgb(230, 164, 0) brand accent, and 8px corner geometry"
 colors:
   color-ucla-gold: "rgb(255, 186, 10)"
   color-ucla-gold-darker: "rgb(179, 128, 0)"
@@ -28,13 +28,90 @@ colors:
   fallback: "#000"
   background: "#ffffff"
   primary: "rgb(230, 164, 0)"
+typography:
+  heading-xxl:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 48px
+    fontWeight: 700
+    lineHeight: 1.15
+  heading-xl:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 36px
+    fontWeight: 600
+    lineHeight: 1.22
+  heading-lg:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.33
+  heading-md:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 1.4
+  body:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  body-sm:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.42
+  caption:
+    fontFamily: "\"Fira Sans\", \"Source Sans 3\", -apple-system, BlinkMacSystemFont, sans-serif"
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.35
+components:
+  button-primary:
+    backgroundColor: "rgb(230, 164, 0)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "rgb(230, 164, 0)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Vue Design System
 
 ## Overview
 
-Vue Vue Design System — tokens read from https://github.com/viljamis/vue-design-system.
+Vue Design System — tokens read from https://github.com/viljamis/vue-design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 25 colour tokens and 0 type tokens.
 
@@ -45,3 +122,10 @@ Tokens were read from the project's own repository, not from a marketing site: 2
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(230, 164, 0)` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Fira Sans` across 7 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

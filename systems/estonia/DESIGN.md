@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Estonia Country Design Guidelines
-description: "Estonia Estonia Country Design Guidelines — read from brand.estonia.ee's live stylesheets, not a published token package."
+description: "Nordic national digital identity, Aino headline typography and cobalt blue surfaces"
 colors:
   white-a-white: "#fff"
   brand-navy: "#002d72"
@@ -73,15 +73,58 @@ typography:
     fontSize: 3.5rem
   font-sizes-heading-max:
     fontSize: 4.5rem
+  ainobodyfont-f81f1637-module-8-q-ig-class-name:
+    fontFamily: "ainoBodyFont, \"ainoBodyFont Fallback\""
+components:
+  button-primary:
+    backgroundColor: "#002d72"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#002d72"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#157934"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Estonia Country Design Guidelines
 
 ## Overview
 
-Estonia Estonia Country Design Guidelines — read from brand.estonia.ee's live stylesheets, not a published token package.
+Estonia Country Design Guidelines — read from brand.estonia.ee's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 41 colour tokens and 14 type tokens.
+Tokens were read from https://brand.estonia.ee, not from a published token package: 41 colour tokens and 15 type tokens.
 
 ## Colors
 
@@ -89,4 +132,11 @@ Tokens were read from the project's own repository, not from a marketing site: 4
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+Families declared in the source: `ainoBodyFont, "ainoBodyFont Fallback"`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#f1f5f9) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002d72` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `ainoBodyFont` across 15 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

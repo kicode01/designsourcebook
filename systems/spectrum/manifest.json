@@ -8,17 +8,17 @@
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "adobe"
+    "adobe",
+    "light"
   ],
   "homepage": "https://github.com/adobe/spectrum-design-data/tree/main/packages/tokens#readme",
   "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @adobe/spectrum-tokens@15.7.0 (3 token files, 835 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @adobe/spectrum-tokens@15.7.0 (3 token files, 835 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@adobe/spectrum-tokens",
     "version": "15.7.0",
-    "extra": []
+    "repo": "https://github.com/adobe/react-spectrum"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -28,16 +28,30 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 94,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 18,
+    "stars": 16043,
+    "forks": 1648,
+    "npmDownloads": 0,
+    "score": 16043,
+    "frameworks": [
+      "react",
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 4
   }
 }

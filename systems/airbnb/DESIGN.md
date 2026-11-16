@@ -23,80 +23,80 @@ colors:
   primary: "#ff385c"
 typography:
   section-heading:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 28px
     fontWeight: 700
     lineHeight: 1.43
   card-heading:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 22px
     fontWeight: 600
     lineHeight: 1.18
     letterSpacing: "-0.44px"
   card-heading-medium:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 22px
     fontWeight: 500
     lineHeight: 1.18
     letterSpacing: "-0.44px"
   sub-heading:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 21px
     fontWeight: 700
     lineHeight: 1.43
   feature-title:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 20px
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.18px"
   ui-medium:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1.25
   ui-semibold:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 16px
     fontWeight: 600
     lineHeight: 1.25
   button:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 16px
     fontWeight: 500
     lineHeight: 1.25
   body-link:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
   body-medium:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 14px
     fontWeight: 500
     lineHeight: 1.29
   caption-salt:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 14px
     fontWeight: 600
     lineHeight: 1.43
   small:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 13px
     fontWeight: 400
     lineHeight: 1.23
   tag:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
   badge:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 11px
     fontWeight: 600
     lineHeight: 1.18
   micro-uppercase:
-    fontFamily: Airbnb Cereal VF
+    fontFamily: "\"Airbnb Cereal VF\""
     fontSize: 8px
     fontWeight: 700
     lineHeight: 1.25
@@ -110,6 +110,31 @@ components:
   button-circular-nav:
     backgroundColor: "#f2f2f2"
     textColor: "#222222"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#222222"
+    rounded: 12px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ff385c"
+    textColor: "#222222"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # Design System: Airbnb

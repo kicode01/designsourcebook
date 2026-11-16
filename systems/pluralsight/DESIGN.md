@@ -94,6 +94,74 @@ colors:
   ps-text-inverse-light: "#FFFFFF"
   ps-info-border-light: "#00A3FF"
   primary: "#D69900"
+typography:
+  html:
+    fontFamily: "\"PS Commons\", \"Gotham SSm A\", \"Gotham SSm B\", Arial, sans-serif"
+    fontSize: 1em
+    fontWeight: 500
+    lineHeight: 1.5
+  h1:
+    fontSize: 2.5rem
+    lineHeight: 1.1
+  h2:
+    fontSize: 2rem
+  h3:
+    fontSize: 1.5rem
+  h4:
+    fontSize: 1.125rem
+  h5:
+    fontSize: 1rem
+    lineHeight: 1.5
+  h6:
+    fontSize: 0.875rem
+    lineHeight: 1.5
+  display-l:
+    fontSize: 5.5rem
+  display-m:
+    fontSize: 4.5rem
+  display-s:
+    fontSize: 3.5rem
+components:
+  button-primary:
+    backgroundColor: "#D69900"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#B9004B"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#D69900"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#02BB71"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Pluralsight Design System
@@ -102,12 +170,19 @@ colors:
 
 Pluralsight Design System — a cohesive design language for Pluralsight products.
 
-Tokens were read from `@pluralsight/design-tokens@0.7.1`, not from a marketing site: 91 colour tokens and 0 type tokens.
+Tokens were read from `@pluralsight/design-tokens@0.7.1`, not from a marketing site: 91 colour tokens and 10 type tokens.
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+91 colour tokens selected from the token files, weighted toward semantic roles.
 
 ## Typography
 
-No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.
+Families declared in the source: `"PS Commons", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#D69900` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `PS Commons` across 10 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

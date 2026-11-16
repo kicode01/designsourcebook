@@ -1,22 +1,22 @@
 {
   "name": "untitled",
   "displayName": "Untitled UI",
-  "description": "Untitled Untitled UI — tokens read from https://github.com/untitleduico/react/.",
-  "style": "Untitled Untitled UI — tokens read from https://github.com/untitleduico/react/.",
+  "description": "Untitled UI — tokens read from https://github.com/untitleduico/react/.",
+  "style": "Crisp light (rgb(255 255 255)) canvas, Inter typography, rgb(249 245 255) brand accent, and 8px corner geometry",
   "category": "Untitled",
   "org": "Untitled",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "untitled"
+    "untitled",
+    "light"
   ],
   "homepage": "https://github.com/untitleduico/react/",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/untitleduico/react/ — 1 token files, 14 colours harvested, 14 selected.",
   "source": {
-    "repo": "https://github.com/untitleduico/react/"
+    "repo": "https://github.com/untitleduico/react"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +26,29 @@
   ],
   "tokens": {
     "colors": 15,
-    "typography": 0,
-    "components": 0
+    "typography": 11,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 51,
+    "stars": 2011,
+    "forks": 190,
+    "npmDownloads": 0,
+    "score": 2011,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

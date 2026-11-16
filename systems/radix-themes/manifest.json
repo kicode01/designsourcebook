@@ -2,21 +2,22 @@
   "name": "radix-themes",
   "displayName": "Radix Themes",
   "description": "WorkOS Radix Themes — tokens read from https://github.com/radix-ui/themes.",
-  "style": "WorkOS Radix Themes — tokens read from https://github.com/radix-ui/themes.",
+  "style": "Dark (#1a211e) canvas, -apple-system typography, rgba(255, 255, 255, 0.7) brand accent, and 8px corner geometry",
   "category": "WorkOS",
   "org": "WorkOS",
   "theme": "dark",
   "tags": [
     "published",
-    "dark",
-    "work-os"
+    "work-os",
+    "dark"
   ],
   "homepage": "https://github.com/radix-ui/themes",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/radix-ui/themes — 32 token files, 39 colours harvested, 39 selected.",
   "source": {
-    "repo": "https://github.com/radix-ui/themes"
+    "repo": "https://github.com/radix-ui/themes",
+    "package": "@radix-ui/themes"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,17 +26,30 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 39,
-    "typography": 15,
-    "components": 0
+    "colors": 40,
+    "typography": 4,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 30,
+    "stars": 8853,
+    "forks": 348,
+    "npmDownloads": 0,
+    "score": 8853,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

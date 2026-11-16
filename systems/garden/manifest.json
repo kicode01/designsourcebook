@@ -5,19 +5,20 @@
   "style": "Zendesk Garden — the design system behind Zendesk products.",
   "category": "Zendesk",
   "org": "Zendesk",
-  "theme": "light",
+  "theme": "dark",
   "tags": [
     "published",
-    "light",
-    "zendesk"
+    "zendesk",
+    "dark"
   ],
   "homepage": "https://garden.zendesk.com/",
   "license": "Apache-2.0",
   "provenance": "published",
-  "provenanceNote": "Tokens imported from @zendeskgarden/react-theming@9.16.1 (3 token files, 17 colours harvested, 17 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "provenanceNote": "Tokens imported from @zendeskgarden/react-theming@9.16.1 (3 token files, 256 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
   "source": {
     "package": "@zendeskgarden/react-theming",
-    "version": "9.16.1"
+    "version": "9.16.1",
+    "repo": "https://github.com/zendeskgarden/react-components"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,17 +27,30 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 18,
-    "typography": 0,
-    "components": 0
+    "colors": 91,
+    "typography": 8,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 58,
+    "stars": 1110,
+    "forks": 102,
+    "npmDownloads": 304714,
+    "score": 9990,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

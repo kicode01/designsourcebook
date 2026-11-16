@@ -1,22 +1,23 @@
 {
   "name": "ebay",
   "displayName": "eBay Skin",
-  "description": "eBay eBay Skin — tokens read from https://github.com/eBay/evo-web.",
-  "style": "eBay eBay Skin — tokens read from https://github.com/eBay/evo-web.",
+  "description": "eBay Skin — tokens read from https://github.com/eBay/evo-web.",
+  "style": "Crisp light (#ffffff) canvas, Market Sans typography, #e20020 brand accent, and 8px corner geometry",
   "category": "eBay",
   "org": "eBay",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "e-bay"
+    "e-bay",
+    "light"
   ],
   "homepage": "https://github.com/eBay/evo-web",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/eBay/evo-web — 6 token files, 312 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/eBay/evo-web"
+    "repo": "https://github.com/eBay/evo-web",
+    "package": "@ebay/skin"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -27,7 +28,7 @@
   "tokens": {
     "colors": 91,
     "typography": 20,
-    "components": 0
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 117,
+    "stars": 55,
+    "forks": 58,
+    "npmDownloads": 10505,
+    "score": 841,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

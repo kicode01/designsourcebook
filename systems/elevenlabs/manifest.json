@@ -6,7 +6,6 @@
   "category": "AI & Machine Learning",
   "theme": "light",
   "tags": [
-    "dark",
     "cinematic",
     "ai",
     "light"
@@ -24,7 +23,7 @@
   "tokens": {
     "colors": 20,
     "typography": 15,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -34,5 +33,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/elevenlabs/ui"
+  },
+  "popularity": {
+    "rank": 47,
+    "stars": 2458,
+    "forks": 186,
+    "npmDownloads": 0,
+    "score": 2458,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

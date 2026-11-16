@@ -1,0 +1,56 @@
+{
+  "name": "moon",
+  "displayName": "Moon Design System",
+  "description": "Moon Design System — tokens imported from @heathmont/moon-themes.",
+  "style": "Crypto & gaming product system, Averta Std typography and Piccolo purple accents",
+  "category": "Moon",
+  "org": "Moon",
+  "theme": "light",
+  "tags": [
+    "published",
+    "moon",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @heathmont/moon-themes@10.7.5 + @heathmont/moon-core-tw (5 token files, 59 colours harvested, 57 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@heathmont/moon-themes",
+    "version": "10.7.5",
+    "repo": "https://github.com/coingaming/moon-design"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 58,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 92,
+    "stars": 274,
+    "forks": 26,
+    "npmDownloads": 1167,
+    "score": 436,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

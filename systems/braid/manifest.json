@@ -1,22 +1,23 @@
 {
   "name": "braid",
   "displayName": "Braid Design System",
-  "description": "Braid Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system.",
-  "style": "Braid Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system.",
+  "description": "Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system.",
+  "style": "Crisp light (#fff) canvas, SeekSans typography, #3b72da brand accent, and 8px corner geometry",
   "category": "Braid",
   "org": "Braid",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "braid"
+    "braid",
+    "light"
   ],
   "homepage": "https://github.com/seek-oss/braid-design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/seek-oss/braid-design-system — 6 token files, 170 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/seek-oss/braid-design-system"
+    "repo": "https://github.com/seek-oss/braid-design-system",
+    "package": "braid-design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 2,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 53,
+    "stars": 1574,
+    "forks": 98,
+    "npmDownloads": 39436,
+    "score": 3611,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 41
   }
 }

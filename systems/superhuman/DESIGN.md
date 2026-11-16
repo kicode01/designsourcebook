@@ -15,113 +15,154 @@ colors:
   primary: "#714cb6"
 typography:
   display-hero:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 64px
     fontWeight: 540
     lineHeight: 0.96
     letterSpacing: 0px
   section-display:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 48px
     fontWeight: 460
     lineHeight: 0.96
     letterSpacing: "-1.32px"
   section-heading:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 48px
     fontWeight: 460
     lineHeight: 0.96
     letterSpacing: 0px
   feature-title:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 28px
     fontWeight: 540
     lineHeight: 1.14
     letterSpacing: "-0.63px"
   sub-heading-large:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 26px
     fontWeight: 460
     lineHeight: 1.3
     letterSpacing: 0px
   card-heading:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 22px
     fontWeight: 460
     lineHeight: 0.76
     letterSpacing: "-0.315px"
   body-heading:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 20px
     fontWeight: 460
     lineHeight: 1.2
     letterSpacing: 0px
   body-heading-alt:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 20px
     fontWeight: 460
     lineHeight: 1.1
     letterSpacing: "-0.55px"
   body-heading-relaxed:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 20px
     fontWeight: 460
     lineHeight: 1.25
     letterSpacing: "-0.4px"
   emphasis-body:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 18px
     fontWeight: 540
     lineHeight: 1.5
     letterSpacing: "-0.135px"
   body:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 16px
     fontWeight: 460
     lineHeight: 1.5
     letterSpacing: 0px
   button-ui-bold:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 16px
     fontWeight: 700
     lineHeight: 1
     letterSpacing: 0px
   button-ui-semi:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 16px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0px
   nav-link:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 16px
     fontWeight: 460
     lineHeight: 1.2
     letterSpacing: 0px
   caption:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 14px
     fontWeight: 500
     lineHeight: 1.2
     letterSpacing: "-0.315px"
   caption-semi:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 14px
     fontWeight: 600
     lineHeight: 1.29
     letterSpacing: 0px
   caption-body:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 14px
     fontWeight: 460
     lineHeight: 1.5
     letterSpacing: 0px
   micro-label:
-    fontFamily: Super Sans VF
+    fontFamily: "\"Super Sans VF\""
     fontSize: 12px
     fontWeight: 700
     lineHeight: 1.5
     letterSpacing: 0px
+components:
+  button-primary:
+    backgroundColor: "#714cb6"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: "#e9e5dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#e9e5dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#e9e5dd"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#714cb6"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#e9e5dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Superhuman

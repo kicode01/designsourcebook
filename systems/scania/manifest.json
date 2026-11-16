@@ -1,22 +1,23 @@
 {
   "name": "scania",
   "displayName": "Scania Digital Design System",
-  "description": "Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.",
-  "style": "Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.",
+  "description": "Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.",
+  "style": "Crisp light (#fff) canvas, traton type text typography, #16417f brand accent, and 8px corner geometry",
   "category": "Scania",
   "org": "Scania",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "scania"
+    "scania",
+    "light"
   ],
   "homepage": "https://github.com/scania-digital-design-system/tegel",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/scania-digital-design-system/tegel — 10 token files, 416 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/scania-digital-design-system/tegel"
+    "repo": "https://github.com/scania-digital-design-system/tegel",
+    "package": "@scania/tegel"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 89,
-    "components": 0
+    "typography": 65,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 127,
+    "stars": 40,
+    "forks": 28,
+    "npmDownloads": 0,
+    "score": 40,
+    "frameworks": [
+      "web-components",
+      "react",
+      "angular"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

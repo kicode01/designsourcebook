@@ -3,13 +3,453 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#9bbdfc",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Enel is published by Enel, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "color-neutral-lightest",
+      "value": "#f7f8fb"
+    },
+    {
+      "name": "color-neutral-lighter",
+      "value": "#eff2f7"
+    },
+    {
+      "name": "color-neutral-light",
+      "value": "#c2cddd"
+    },
+    {
+      "name": "color-neutral-base",
+      "value": "#667790"
+    },
+    {
+      "name": "color-neutral-dark",
+      "value": "#272c34"
+    },
+    {
+      "name": "color-neutral-darkest",
+      "value": "#1c1e20"
+    },
+    {
+      "name": "color-neutral-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-neutral-black",
+      "value": "#131416"
+    },
+    {
+      "name": "color-error-lightest",
+      "value": "#ffe9e8"
+    },
+    {
+      "name": "color-error-lighter",
+      "value": "#ffcccf"
+    },
+    {
+      "name": "color-error-light",
+      "value": "#ff7e85"
+    },
+    {
+      "name": "color-error-base",
+      "value": "#ed0529"
+    },
+    {
+      "name": "color-error-dark",
+      "value": "#8c0318"
+    },
+    {
+      "name": "color-error-darkest",
+      "value": "#290200"
+    },
+    {
+      "name": "color-info-lightest",
+      "value": "#f4f8ff"
+    },
+    {
+      "name": "color-info-lighter",
+      "value": "#cbdaf6"
+    },
+    {
+      "name": "color-info-light",
+      "value": "#7ea4e9"
+    },
+    {
+      "name": "color-info-base",
+      "value": "#1f6cf9"
+    },
+    {
+      "name": "color-info-dark",
+      "value": "#043b9f"
+    },
+    {
+      "name": "color-info-darkest",
+      "value": "#001333"
+    },
+    {
+      "name": "color-success-lightest",
+      "value": "#f5fff6"
+    },
+    {
+      "name": "color-success-lighter",
+      "value": "#b2e6cd"
+    },
+    {
+      "name": "color-success-light",
+      "value": "#61b78d"
+    },
+    {
+      "name": "color-success-base",
+      "value": "#00855d"
+    },
+    {
+      "name": "color-success-dark",
+      "value": "#004d35"
+    },
+    {
+      "name": "color-success-darkest",
+      "value": "#001a03"
+    },
+    {
+      "name": "color-secondary-lightest",
+      "value": "#f9bed2"
+    },
+    {
+      "name": "color-secondary-lighter",
+      "value": "#f06292"
+    },
+    {
+      "name": "color-secondary-light",
+      "value": "#f06292"
+    },
+    {
+      "name": "color-secondary-base",
+      "value": "#d3135a"
+    },
+    {
+      "name": "color-secondary-dark",
+      "value": "#c2185b"
+    },
+    {
+      "name": "color-secondary-darker",
+      "value": "#880e4f"
+    },
+    {
+      "name": "color-primary-lightest",
+      "value": "#9bbdfc"
+    },
+    {
+      "name": "color-primary-lighter",
+      "value": "#387cfa"
+    },
+    {
+      "name": "color-primary-light",
+      "value": "#0152e8"
+    },
+    {
+      "name": "color-primary-base",
+      "value": "#0047cc"
+    },
+    {
+      "name": "color-primary-dark",
+      "value": "#003eb3"
+    },
+    {
+      "name": "color-primary-darker",
+      "value": "#002466"
+    },
+    {
+      "name": "tree-node-background-hover",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "yellow-sunglow-lightest",
+      "value": "#FFEB85"
+    },
+    {
+      "name": "yellow-sunglow-lighter",
+      "value": "#FFDA24"
+    },
+    {
+      "name": "yellow-sunglow-light",
+      "value": "#AF9200"
+    },
+    {
+      "name": "yellow-sunglow-base",
+      "value": "#9D870B"
+    },
+    {
+      "name": "violet-red-lightest",
+      "value": "#F2CAE5"
+    },
+    {
+      "name": "violet-red-lighter",
+      "value": "#F084BA"
+    },
+    {
+      "name": "violet-red-light",
+      "value": "#EA4E9D"
+    },
+    {
+      "name": "violet-red-base",
+      "value": "#CD1873"
+    },
+    {
+      "name": "turquoise-medium-lightest",
+      "value": "#AFE9E3"
+    },
+    {
+      "name": "turquoise-medium-lighter",
+      "value": "#8FE0D8"
+    },
+    {
+      "name": "turquoise-medium-light",
+      "value": "#53A199"
+    },
+    {
+      "name": "turquoise-medium-base",
+      "value": "#35998F"
+    },
+    {
+      "name": "sumire-violet-light-3",
+      "value": "#d6cde2"
+    },
+    {
+      "name": "sumire-violet-light-2",
+      "value": "#bbadcf"
+    },
+    {
+      "name": "sumire-violet-light-1",
+      "value": "#a08cbc"
+    },
+    {
+      "name": "sumire-violet-base",
+      "value": "#785ba0"
+    },
+    {
+      "name": "red-debian-lightest",
+      "value": "#F5D1FF"
+    },
+    {
+      "name": "red-debian-lighter",
+      "value": "#F0B8FF"
+    },
+    {
+      "name": "red-debian-light",
+      "value": "#DB57FF"
+    },
+    {
+      "name": "red-debian-base",
+      "value": "#A800D6"
+    },
+    {
+      "name": "pigment-red-lightest",
+      "value": "#F8C9CE"
+    },
+    {
+      "name": "pigment-red-lighter",
+      "value": "#ED6878"
+    },
+    {
+      "name": "pigment-red-light",
+      "value": "#E8384F"
+    },
+    {
+      "name": "pigment-red-base",
+      "value": "#D21931"
+    },
+    {
+      "name": "myrtle-green-lightest",
+      "value": "#05FFb8"
+    },
+    {
+      "name": "myrtle-green-lighter",
+      "value": "#00E0A1"
+    },
+    {
+      "name": "myrtle-green-light",
+      "value": "#00A879"
+    },
+    {
+      "name": "myrtle-green-base",
+      "value": "#1B7D61"
+    },
+    {
+      "name": "indigo-violet-lighter",
+      "value": "#8CAEDE"
+    },
+    {
+      "name": "indigo-violet-light",
+      "value": "#4178BC"
+    },
+    {
+      "name": "indigo-violet-base",
+      "value": "#3868A3"
+    },
+    {
+      "name": "green-dollar-bill-lightest",
+      "value": "#E2E269"
+    },
+    {
+      "name": "green-dollar-bill-lighter",
+      "value": "#D3D327"
+    },
+    {
+      "name": "green-dollar-bill-light",
+      "value": "#829D15"
+    },
+    {
+      "name": "green-dollar-bill-base",
+      "value": "#61750F"
+    },
+    {
+      "name": "crayola-blue-lightest",
+      "value": "#D7E5FE"
+    },
+    {
+      "name": "crayola-blue-lighter",
+      "value": "#9CBDFC"
+    },
+    {
+      "name": "crayola-blue-light",
+      "value": "#5E92F5"
+    },
+    {
+      "name": "crayola-blue-base",
+      "value": "#1F6CF9"
+    },
+    {
+      "name": "business-broadband",
+      "value": "#C5C5C6"
+    },
+    {
+      "name": "business-home",
+      "value": "#FF006E"
+    },
+    {
+      "name": "business-industry",
+      "value": "#FD6600"
+    },
+    {
+      "name": "business-innovability",
+      "value": "#FEF367"
+    },
+    {
+      "name": "business-mobility",
+      "value": "#EF2AC1"
+    },
+    {
+      "name": "business-finance",
+      "value": "#2CFEF9"
+    },
+    {
+      "name": "business-city",
+      "value": "#5738FF"
+    },
+    {
+      "name": "brown-tan-lightest",
+      "value": "#FFC7A8"
+    },
+    {
+      "name": "brown-tan-lighter",
+      "value": "#FF9861"
+    },
+    {
+      "name": "brown-tan-light",
+      "value": "#F56B16"
+    },
+    {
+      "name": "brown-tan-base",
+      "value": "#F55600"
+    },
+    {
+      "name": "color-alert-lightest",
+      "value": "#fffdf7"
+    },
+    {
+      "name": "primary",
+      "value": "#9bbdfc"
+    }
+  ],
+  "type": [
+    {
+      "name": "nav",
+      "fontFamily": "Roobert, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "button",
+      "fontFamily": "Roobert, Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 1
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "textColor": "#73828c",
+      "rounded": "4px",
+      "padding": "0px 7px"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "textColor": "#5c6870",
+      "rounded": "4px",
+      "padding": "0px 8px"
+    },
+    {
+      "key": "button-3",
+      "kind": "button",
+      "textColor": "#2e3438",
+      "rounded": "4px",
+      "padding": "5px 6px 4px 8px"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#2e3438"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#9bbdfc",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#b2e6cd",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Enel — Crisp light (#ffffff) canvas, Roobert typography, #9bbdfc brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#9bbdfc` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Roobert` across 2 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

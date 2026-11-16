@@ -140,12 +140,37 @@ components:
     backgroundColor: "#e1e0db"
   button-ghost:
     backgroundColor: "rgba(38, 37, 30, 0.06)"
-    textColor: "rgba(38, 37, 30, 0.55)"
+    textColor: "#0b0b0c"
     padding: 6px 12px
   button-light-surface:
     backgroundColor: "#f7f7f4"
     textColor: "#26251e"
     padding: 0px 8px 1px 12px
+  input-default:
+    backgroundColor: "#f2f1ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#f2f1ed"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#f54e00"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#1f8a65"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#f2f1ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Design System: Cursor
@@ -440,3 +465,10 @@ The border system is particularly distinctive -- Cursor uses `oklab()` color spa
 6. Hover states use `#cf2d56` text color -- the warm crimson shift is a signature interaction
 7. Shadows use large blur values (28px, 70px) for diffused atmospheric depth
 8. The sub-8px spacing scale (1.5, 2, 2.5, 3, 4, 5, 6px) is critical for icon/text micro-alignment
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#f7f7f4) canvas paired with `#f2f1ed` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f54e00` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `CursorGothic` across 18 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -1,22 +1,23 @@
 {
   "name": "mantine",
   "displayName": "Mantine",
-  "description": "Mantine Mantine — tokens read from https://github.com/mantinedev/mantine.",
-  "style": "Mantine Mantine — tokens read from https://github.com/mantinedev/mantine.",
+  "description": "Mantine — tokens read from https://github.com/mantinedev/mantine.",
+  "style": "Crisp light (#ffffff) canvas, -apple-system typography, #fd8c73 brand accent, and 8px corner geometry",
   "category": "Mantine",
   "org": "Mantine",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "mantine"
+    "mantine",
+    "light"
   ],
   "homepage": "https://github.com/mantinedev/mantine",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/mantinedev/mantine — 18 token files, 504 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/mantinedev/mantine"
+    "repo": "https://github.com/mantinedev/mantine",
+    "package": "@mantine/core"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 23,
-    "components": 0
+    "typography": 10,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 10,
+    "stars": 31949,
+    "forks": 2423,
+    "npmDownloads": 13854945,
+    "score": 170610,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 18
   }
 }

@@ -1,12 +1,12 @@
 {
-  "canvas": "#1e1919",
-  "surface": "#f3ede5",
-  "text": "#f7f7f8",
-  "muted": "#f7f7f8",
+  "canvas": "#f0eee6",
+  "surface": "#2e2c26",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
   "brand": "#b52a20",
-  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "hex",
@@ -363,17 +363,112 @@
   ],
   "type": [
     {
-      "name": "default-font-family",
-      "fontFamily": "var(--font-body)",
-      "px": 16
+      "name": "display-lg",
+      "fontFamily": "\"Spline Sans\", Inter, system-ui, sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.2
     },
     {
-      "name": "expect",
-      "fontFamily": "Spline Sans Mono\", ui-monospace, monospace",
-      "px": 16
+      "name": "heading-md",
+      "fontFamily": "\"Spline Sans\", Inter, system-ui, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Spline Sans\", Inter, system-ui, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "\"Spline Sans\", Inter, system-ui, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "code",
+      "fontFamily": "\"Spline Sans Mono\", ui-monospace, monospace",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.45
     }
   ],
-  "components": [],
-  "overview": "Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#b52a20",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#2e2c26",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#e85151",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#2e2c26",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#2e2c26",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#b52a20",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#38a169",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#2e2c26",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Arena — Crisp light (#f0eee6) canvas, Spline Sans typography, #b52a20 brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#f0eee6) canvas paired with `#2e2c26` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#b52a20` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Spline Sans` across 5 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

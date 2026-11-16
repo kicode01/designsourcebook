@@ -81,8 +81,154 @@
       "value": "#080808"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "88px",
+      "px": 88,
+      "fontWeight": 600,
+      "lineHeight": 1.04
+    },
+    {
+      "name": "display-large",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 600,
+      "lineHeight": 1.04
+    },
+    {
+      "name": "h2-section",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "35.2px",
+      "px": 35.2,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "h3-sub",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "19.2px",
+      "px": 19.2,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "ui-medium",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "caption",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "14.4px",
+      "px": 14.4,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "small",
+      "fontFamily": "\"WF Visual Sans Variable\", Arial, sans-serif",
+      "fontSize": "12.8px",
+      "px": 12.8,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "label-mono",
+      "fontFamily": "Inconsolata, monospace",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.3
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#080808",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#080808",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#080808",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#080808",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#080808",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Webflow's website is a visually rich, tool-forward platform that communicates \"design without code\" through clean white surfaces, the signature Webflow Blue (#146ef5), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.\n\nKey Characteristics:\n- White canvas with near-black (#080808) text\n- Webflow Blue (#146ef5) as primary brand + interactive color\n- WF Visual Sans Variable — custom variable font with weight 500–600\n- Rich secondary palette: purple #7a3dff, pink #ed52cb, green #00d722, orange #ff6b00, yellow #ffae13, red #ee1d36\n- Conservative 4px–8px border-radius — sharp, not rounded\n- Multi-layer shadow stacks (5-layer cascading shadows)\n- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)\n-…",
   "dos": "- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.\n- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs."
 }

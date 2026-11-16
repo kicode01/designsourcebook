@@ -1,22 +1,23 @@
 {
   "name": "strapi",
   "displayName": "Strapi Design System",
-  "description": "Strapi Strapi Design System — tokens read from https://github.com/strapi/design-system.",
-  "style": "Strapi Strapi Design System — tokens read from https://github.com/strapi/design-system.",
+  "description": "Strapi Design System — tokens read from https://github.com/strapi/design-system.",
+  "style": "Crisp light (#ffffff) canvas, -apple-system typography, #7b79ff brand accent, and 8px corner geometry",
   "category": "Strapi",
   "org": "Strapi",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "strapi"
+    "strapi",
+    "light"
   ],
   "homepage": "https://github.com/strapi/design-system",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/strapi/design-system — 1 token files, 90 colours harvested, 90 selected.",
   "source": {
-    "repo": "https://github.com/strapi/design-system"
+    "repo": "https://github.com/strapi/design-system",
+    "package": "@strapi/design-system"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,16 +27,28 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 0,
-    "components": 0
+    "typography": 7,
+    "components": 8
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 74,
+    "stars": 540,
+    "forks": 208,
+    "npmDownloads": 0,
+    "score": 540,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

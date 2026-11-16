@@ -25,65 +25,65 @@ colors:
   primary: "#494fdf"
 typography:
   display-mega:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 136px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: "-2.72px"
   display-hero:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 80px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: "-0.8px"
   section-heading:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 48px
     fontWeight: 500
     lineHeight: 1.21
     letterSpacing: "-0.48px"
   sub-heading:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 40px
     fontWeight: 500
     lineHeight: 1.2
     letterSpacing: "-0.4px"
   card-title:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 32px
     fontWeight: 500
     lineHeight: 1.19
     letterSpacing: "-0.32px"
   feature-title:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.33
   nav-ui:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 20px
     fontWeight: 500
     lineHeight: 1.4
   body-large:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.56
     letterSpacing: "-0.09px"
   body:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: 0.24px
   body-semibold:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 16px
     fontWeight: 600
     lineHeight: 1.5
     letterSpacing: 0.16px
   body-bold-link:
-    fontFamily: Aeonik Pro
+    fontFamily: "\"Aeonik Pro\""
     fontSize: 16px
     fontWeight: 700
     lineHeight: 1.5
@@ -105,9 +105,34 @@ components:
     padding: 14px 32px
   button-ghost-on-dark:
     backgroundColor: "rgba(244, 244, 244, 0.1)"
-    textColor: "#f4f4f4"
+    textColor: "#0b0b0c"
     rounded: 9999px
     padding: 14px 32px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 14px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 14px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#494fdf"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 14px
+    padding: 10px 16px
 ---
 
 # Design System: Revolut

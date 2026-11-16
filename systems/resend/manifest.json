@@ -6,10 +6,10 @@
   "category": "Developer Tools & Platforms",
   "theme": "dark",
   "tags": [
-    "dark",
     "minimal",
     "developer",
-    "developer-tools"
+    "developer-tools",
+    "dark"
   ],
   "homepage": "https://resend.com",
   "license": "proprietary",
@@ -24,7 +24,7 @@
   "tokens": {
     "colors": 30,
     "typography": 20,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -34,5 +34,21 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/resend/react-email",
+    "package": "@react-email/components"
+  },
+  "popularity": {
+    "rank": 16,
+    "stars": 19941,
+    "forks": 1117,
+    "npmDownloads": 0,
+    "score": 19941,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

@@ -1,22 +1,24 @@
 {
   "name": "nordhealth",
   "displayName": "Nordhealth",
-  "description": "Nordhealth Nordhealth — read from nordhealth.design's live stylesheets, not a published token package.",
-  "style": "Nordhealth Nordhealth — read from nordhealth.design's live stylesheets, not a published token package.",
+  "description": "Nordhealth — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#fcfcfc) canvas, Nordhealth Sans typography, #3559c7 brand accent, and 5px corner geometry",
   "category": "Nordhealth",
   "org": "Nordhealth",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "nordhealth"
+    "observed",
+    "nordhealth",
+    "light"
   ],
   "homepage": "https://nordhealth.design/",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Colours read from https://nordhealth.design/ and its 4 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "provenanceNote": "Computed styles read from https://nordhealth.design/ in headless Chromium on 2026-11-16 (256 custom properties, 30 sampled elements, 9 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Nord Design System.",
   "source": {
-    "repo": null
+    "url": "https://nordhealth.design/",
+    "repo": "https://github.com/nordhealth/nord-iot",
+    "package": "@nordhealth/tokens"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,9 +27,9 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 67,
+    "colors": 91,
     "typography": 13,
-    "components": 0
+    "components": 9
   },
   "checks": {
     "errors": 0,
@@ -37,5 +39,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 142,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 25410,
+    "score": 1485,
+    "frameworks": [
+      "web-components",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

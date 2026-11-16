@@ -133,7 +133,7 @@ typography:
 components:
   button-primary-orange:
     backgroundColor: "#ff4f00"
-    textColor: "#fffefb"
+    textColor: "#0b0b0c"
     rounded: 4px
     padding: 8px 16px
   button-primary-dark:
@@ -153,11 +153,31 @@ components:
     padding: 0px 16px
   button-overlay-semi-transparent:
     backgroundColor: "rgba(45, 45, 46, 0.5)"
-    textColor: "#fffefb"
+    textColor: "#0b0b0c"
     rounded: 20px
   button-tab-navigation:
     textColor: "#201515"
     padding: 12px 16px
+  input-default:
+    backgroundColor: "#fffefb"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fffefb"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#ff4f00"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
 ---
 
 # Design System: Zapier

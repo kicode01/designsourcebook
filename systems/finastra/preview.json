@@ -3,13 +3,441 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#694ed6",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "Finastra Design System is published by Finastra, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "fds-primary",
+      "value": "#694ed6"
+    },
+    {
+      "name": "fds-secondary",
+      "value": "#c137a2"
+    },
+    {
+      "name": "fds-background",
+      "value": "#fafafa"
+    },
+    {
+      "name": "fds-surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-surface-hover",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-surface-selected",
+      "value": "rgba(105, 78, 214, 0.08)"
+    },
+    {
+      "name": "fds-surface-selected-secondary",
+      "value": "rgba(193, 55, 162, 0.08)"
+    },
+    {
+      "name": "fds-surface-disabled",
+      "value": "rgba(0, 0, 0, 0.12)"
+    },
+    {
+      "name": "fds-surface-success",
+      "value": "rgba(0, 135, 68, 0.03)"
+    },
+    {
+      "name": "fds-surface-error",
+      "value": "rgba(214, 0, 64, 0.03)"
+    },
+    {
+      "name": "fds-surface-info",
+      "value": "rgba(105, 78, 214, 0.03)"
+    },
+    {
+      "name": "fds-surface-warning",
+      "value": "rgba(255, 96, 10, 0.02)"
+    },
+    {
+      "name": "fds-outline",
+      "value": "rgba(0, 0, 0, 0.12)"
+    },
+    {
+      "name": "fds-outline-success",
+      "value": "rgba(0, 135, 68, 0.5)"
+    },
+    {
+      "name": "fds-outline-error",
+      "value": "rgba(214, 0, 64, 0.5)"
+    },
+    {
+      "name": "fds-outline-info",
+      "value": "rgba(105, 78, 214, 0.4)"
+    },
+    {
+      "name": "fds-outline-warning",
+      "value": "rgba(255, 96, 10, 0.3)"
+    },
+    {
+      "name": "fds-success",
+      "value": "#008744"
+    },
+    {
+      "name": "fds-error",
+      "value": "#d60040"
+    },
+    {
+      "name": "fds-warning",
+      "value": "#ff600a"
+    },
+    {
+      "name": "fds-info",
+      "value": "#694ed6"
+    },
+    {
+      "name": "fds-on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-on-secondary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-on-background",
+      "value": "rgba(0, 0, 0, 0.75)"
+    },
+    {
+      "name": "fds-on-surface",
+      "value": "#000000"
+    },
+    {
+      "name": "fds-on-surface-medium",
+      "value": "rgba(0, 0, 0, 0.54)"
+    },
+    {
+      "name": "fds-on-surface-disabled",
+      "value": "rgba(0, 0, 0, 0.29)"
+    },
+    {
+      "name": "fds-on-error",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-on-success",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-on-gradient",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fds-on-light",
+      "value": "#000000"
+    },
+    {
+      "name": "fds-on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#694ed6"
+    }
+  ],
+  "type": [
+    {
+      "name": "fds-headline-1-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "3.1875rem",
+      "px": 51
+    },
+    {
+      "name": "fds-headline-2-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "2.5625rem",
+      "px": 41
+    },
+    {
+      "name": "fds-headline-3-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "fds-headline-4-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "fds-headline-5-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "fds-subtitle-1-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "fds-body-1-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "fds-button-1-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "fds-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "mdc-typography-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "mdc-typography-headline-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-1-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-2-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-3-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-4-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-5-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-headline-6-font-family",
+      "fontFamily": "Spartan",
+      "px": 16
+    },
+    {
+      "name": "fds-subtitle-1-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-subtitle-2-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-subtitle-3-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-subtitle-4-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-body-1-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-body-2-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-body-3-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-body-4-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-button-1-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-button-2-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-button-3-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-caption-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-overline-font-family",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "fds-subtitle-2-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "fds-body-2-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "fds-button-2-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "fds-headline-6-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "fds-subtitle-3-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "fds-body-3-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "fds-button-3-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "fds-caption-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "fds-subtitle-4-font-size",
+      "fontFamily": "Spartan",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "fds-body-4-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "fds-overline-font-size",
+      "fontFamily": "Roboto",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#694ed6",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "rgba(214, 0, 64, 0.5)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#694ed6",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "rgba(0, 135, 68, 0.5)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Finastra Design System — Financial services UI kit, deep violet and magenta fintech gradients",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#694ed6` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Roboto` across 42 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

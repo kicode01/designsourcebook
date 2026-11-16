@@ -4,11 +4,11 @@
   "description": "Organic shapes, soft gradients, art-directed layout",
   "style": "Organic shapes, soft gradients, art-directed layout",
   "category": "Design & Productivity",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "gradient",
     "productivity",
-    "dark"
+    "light"
   ],
   "homepage": "https://clay.com",
   "license": "proprietary",
@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 31,
     "typography": 18,
-    "components": 3
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -33,5 +33,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {},
+  "popularity": {
+    "rank": 181,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

@@ -206,6 +206,46 @@
       "rounded": "4px",
       "padding": "0px 32px",
       "border": "1px solid #4f5100"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#141414",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#141414",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#f4f692",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#141414",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "ClickHouse's interface is a high-performance cockpit rendered in acid yellow-green on obsidian black — a design that screams \"speed\" before you read a single word. The entire experience lives in darkness: pure black backgrounds (#000000) with dark charcoal cards (#414141 borders) creating a terminal-grade aesthetic where the only chromatic interruption is the signature neon yellow-green (#faff69) that slashes across CTAs, borders, and highlighted moments like a highlighter pen on a dark console.\n\nThe typography is aggressively heavy — Inter at weight 900 (Black) for the hero headline at 96px creates text blocks that feel like they have physical mass. This \"database for AI\" site communicates raw power through visual weight: thick type, high-contrast neon accents, and performance stats displayed as oversized numbers. There's nothing subtle about ClickHouse's design, and that's entirely…",

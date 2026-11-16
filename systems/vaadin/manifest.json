@@ -1,0 +1,57 @@
+{
+  "name": "vaadin",
+  "displayName": "Vaadin Lumo",
+  "description": "Vaadin Lumo — tokens imported from @vaadin/vaadin-lumo-styles.",
+  "style": "Enterprise Java/Web Component Lumo theme, clean blue accents and fluid spacing",
+  "category": "Vaadin",
+  "org": "Vaadin",
+  "theme": "light",
+  "tags": [
+    "published",
+    "vaadin",
+    "light"
+  ],
+  "homepage": "https://vaadin.com/components",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @vaadin/vaadin-lumo-styles@25.3.6 (3 token files, 58 colours harvested, 31 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@vaadin/vaadin-lumo-styles",
+    "version": "25.3.6",
+    "repo": "https://github.com/vaadin/web-components"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 32,
+    "typography": 10,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 70,
+    "stars": 585,
+    "forks": 105,
+    "npmDownloads": 0,
+    "score": 585,
+    "frameworks": [
+      "web-components",
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 35
+  }
+}

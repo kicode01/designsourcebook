@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "rgb(59, 99, 251)",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -373,8 +373,604 @@
       "value": "rgb(59, 99, 251)"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "line-height-font-size-1500",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "102px",
+      "px": 102
+    },
+    {
+      "name": "line-height-font-size-1400",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "90px",
+      "px": 90
+    },
+    {
+      "name": "font-size-1500",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "88px",
+      "px": 88
+    },
+    {
+      "name": "line-height-font-size-1300",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "80px",
+      "px": 80
+    },
+    {
+      "name": "font-size-1400",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "79px",
+      "px": 79
+    },
+    {
+      "name": "line-height-font-size-1200",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "72px",
+      "px": 72
+    },
+    {
+      "name": "font-size-1300",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "70px",
+      "px": 70
+    },
+    {
+      "name": "line-height-font-size-1100",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "64px",
+      "px": 64
+    },
+    {
+      "name": "font-size-1200",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "62px",
+      "px": 62
+    },
+    {
+      "name": "line-height-font-size-1000",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "56px",
+      "px": 56
+    },
+    {
+      "name": "font-size-1100",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "55px",
+      "px": 55
+    },
+    {
+      "name": "line-height-font-size-900",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "50px",
+      "px": 50
+    },
+    {
+      "name": "font-size-1000",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "49px",
+      "px": 49
+    },
+    {
+      "name": "font-size-900",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "44px",
+      "px": 44
+    },
+    {
+      "name": "line-height-font-size-800",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "44px",
+      "px": 44
+    },
+    {
+      "name": "line-height-font-size-700",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "font-size-800",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "39px",
+      "px": 39
+    },
+    {
+      "name": "line-height-font-size-600",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
+      "name": "font-size-700",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "34px",
+      "px": 34
+    },
+    {
+      "name": "line-height-font-size-500",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "font-size-600",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "31px",
+      "px": 31
+    },
+    {
+      "name": "line-height-font-size-400",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "font-size-500",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "27px",
+      "px": 27
+    },
+    {
+      "name": "line-height-font-size-300",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "font-size-400",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "line-height-font-size-200",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "alert-dialog-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "illustrated-message-large-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "standard-dialog-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "font-size-300",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "line-height-font-size-100",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "drop-zone-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "illustrated-message-large-cjk-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "illustrated-message-medium-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "line-height-font-size-75",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size-200",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "19px",
+      "px": 19
+    },
+    {
+      "name": "drop-zone-cjk-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "illustrated-message-medium-cjk-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-size-100",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "alert-dialog-description-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body-cjk-font-family",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "px": 16
+    },
+    {
+      "name": "body-sans-serif-font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "body-serif-font-family",
+      "fontFamily": "\"Adobe Clean Serif\"",
+      "px": 16
+    },
+    {
+      "name": "coach-mark-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "coach-mark-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "code-cjk-font-family",
+      "fontFamily": "\"Source Code Pro\"",
+      "px": 16
+    },
+    {
+      "name": "code-font-family",
+      "fontFamily": "\"Source Code Pro\"",
+      "px": 16
+    },
+    {
+      "name": "contextual-help-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "detail-cjk-font-family",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "px": 16
+    },
+    {
+      "name": "detail-sans-serif-font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "detail-serif-font-family",
+      "fontFamily": "\"Adobe Clean Serif\"",
+      "px": 16
+    },
+    {
+      "name": "heading-cjk-font-family",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "px": 16
+    },
+    {
+      "name": "heading-sans-serif-font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "heading-serif-font-family",
+      "fontFamily": "\"Adobe Clean Serif\"",
+      "px": 16
+    },
+    {
+      "name": "illustrated-message-small-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "standard-dialog-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "title-cjk-font-family",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "px": 16
+    },
+    {
+      "name": "title-sans-serif-font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "title-serif-font-family",
+      "fontFamily": "\"Adobe Clean Serif\"",
+      "px": 16
+    },
+    {
+      "name": "cjk-font-family",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "px": 16
+    },
+    {
+      "name": "component-l-bold",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-l-medium",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-l-regular",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-m-bold",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-m-medium",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-m-regular",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-s-bold",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-s-medium",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-s-regular",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-xl-bold",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-xl-medium",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-xl-regular",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-xs-bold",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-xs-medium",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "component-xs-regular",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "default-font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "line-height-font-size-50",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "sans-serif-font-family",
+      "fontFamily": "\"Adobe Clean Spectrum VF\"",
+      "px": 16
+    },
+    {
+      "name": "serif-font-family",
+      "fontFamily": "\"Adobe Clean Serif\"",
+      "px": 16
+    },
+    {
+      "name": "font-size-75",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "action-bar-counter-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "coach-mark-pagination-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "contextual-help-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "drop-zone-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "illustrated-message-large-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "illustrated-message-medium-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "illustrated-message-small-cjk-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "standard-panel-title-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "line-height-font-size-25",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "font-size-50",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "illustrated-message-small-body-font-size",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-25",
+      "fontFamily": "\"Adobe Clean Han\"",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "rgb(59, 99, 251)",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "rgb(183, 40, 24)",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgb(59, 99, 251)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "rgb(3, 110, 69)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Adobe Spectrum — the cross-product design language behind Creative Cloud.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(59, 99, 251)` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Adobe Clean Han` across 94 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

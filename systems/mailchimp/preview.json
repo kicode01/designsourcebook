@@ -3,13 +3,371 @@
   "surface": "#ffffff",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#0b0b0c",
+  "brand": "#33c3f0",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "4px",
   "ink": "#0b0b0c",
-  "palette": [],
-  "type": [],
-  "components": [],
-  "overview": "MailChimp Pattern Library is published by Mailchimp, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "dos": ""
+  "palette": [
+    {
+      "name": "bg-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#231f20"
+    },
+    {
+      "name": "main-bg",
+      "value": "#eff3f7"
+    },
+    {
+      "name": "h2-text",
+      "value": "#3e81ed"
+    },
+    {
+      "name": "h2-text-1",
+      "value": "#000000"
+    },
+    {
+      "name": "h3-text",
+      "value": "#939598"
+    },
+    {
+      "name": "button-bg",
+      "value": "#241c15"
+    },
+    {
+      "name": "button-text",
+      "value": "#555555"
+    },
+    {
+      "name": "button-text-2",
+      "value": "#3860be"
+    },
+    {
+      "name": "button-border",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "input-border",
+      "value": "#707070"
+    },
+    {
+      "name": "css-color-12",
+      "value": "#2c9ab7"
+    },
+    {
+      "name": "css-surface-13",
+      "value": "#fff4d5"
+    },
+    {
+      "name": "css-color-14",
+      "value": "#aa8d3b"
+    },
+    {
+      "name": "css-surface-15",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "css-color-16",
+      "value": "#3a3a3a"
+    },
+    {
+      "name": "css-border-17",
+      "value": "#dcdcdc"
+    },
+    {
+      "name": "css-surface-18",
+      "value": "#d0ebe5"
+    },
+    {
+      "name": "css-border-19",
+      "value": "#72c1b0"
+    },
+    {
+      "name": "css-color-20",
+      "value": "#4d8277"
+    },
+    {
+      "name": "css-border-21",
+      "value": "#fed156"
+    },
+    {
+      "name": "css-surface-22",
+      "value": "#f7c9c0"
+    },
+    {
+      "name": "css-border-23",
+      "value": "#e85c41"
+    },
+    {
+      "name": "css-color-24",
+      "value": "#9b3f2e"
+    },
+    {
+      "name": "css-border-25",
+      "value": "#373737"
+    },
+    {
+      "name": "css-border-26",
+      "value": "#8a8a8a"
+    },
+    {
+      "name": "css-surface-27",
+      "value": "#b7b7b7"
+    },
+    {
+      "name": "css-border-28",
+      "value": "#5d5c5d"
+    },
+    {
+      "name": "css-surface-29",
+      "value": "#db3a1b"
+    },
+    {
+      "name": "css-border-30",
+      "value": "#ee836e"
+    },
+    {
+      "name": "css-color-31",
+      "value": "rgba(255,255,255,0.8)"
+    },
+    {
+      "name": "css-color-32",
+      "value": "#52bad5"
+    },
+    {
+      "name": "css-surface-33",
+      "value": "#d8f0f6"
+    },
+    {
+      "name": "css-surface-34",
+      "value": "#f5b7ab"
+    },
+    {
+      "name": "css-surface-35",
+      "value": "#ffe8aa"
+    },
+    {
+      "name": "css-surface-36",
+      "value": "#fede88"
+    },
+    {
+      "name": "css-surface-37",
+      "value": "#febe12"
+    },
+    {
+      "name": "css-surface-38",
+      "value": "#c5e5de"
+    },
+    {
+      "name": "css-surface-39",
+      "value": "#95d1c4"
+    },
+    {
+      "name": "css-surface-40",
+      "value": "#449a88"
+    },
+    {
+      "name": "css-surface-41",
+      "value": "#b1e0ec"
+    },
+    {
+      "name": "css-surface-42",
+      "value": "#6dc5dc"
+    },
+    {
+      "name": "css-surface-43",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "css-surface-44",
+      "value": "#060808"
+    },
+    {
+      "name": "css-surface-45",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "css-color-46",
+      "value": "#d8d9da"
+    },
+    {
+      "name": "css-color-47",
+      "value": "#474747"
+    },
+    {
+      "name": "css-surface-48",
+      "value": "rgba(255,255,255,0.95)"
+    },
+    {
+      "name": "css-surface-49",
+      "value": "#e8f6f9"
+    },
+    {
+      "name": "css-surface-50",
+      "value": "rgba(249,237,50,0.4)"
+    },
+    {
+      "name": "css-surface-51",
+      "value": "#f9ed32"
+    },
+    {
+      "name": "css-color-52",
+      "value": "#1f96db"
+    },
+    {
+      "name": "css-color-53",
+      "value": "#565656"
+    },
+    {
+      "name": "css-surface-54",
+      "value": "#468254"
+    },
+    {
+      "name": "css-surface-55",
+      "value": "#2c6415"
+    },
+    {
+      "name": "css-surface-56",
+      "value": "rgba(0,0,0,.5)"
+    },
+    {
+      "name": "css-surface-57",
+      "value": "#f9fffa"
+    },
+    {
+      "name": "css-fill-58",
+      "value": "#32ae88"
+    },
+    {
+      "name": "css-color-59",
+      "value": "#4d4d4d"
+    },
+    {
+      "name": "css-surface-60",
+      "value": "#68b631"
+    },
+    {
+      "name": "css-color-61",
+      "value": "#333333"
+    },
+    {
+      "name": "css-border-62",
+      "value": "#888888"
+    },
+    {
+      "name": "css-surface-63",
+      "value": "#33c3f0"
+    },
+    {
+      "name": "css-surface-64",
+      "value": "#1eaedb"
+    },
+    {
+      "name": "primary",
+      "value": "#33c3f0"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "\"Helvetica Neue\", Arial, Helvetica, sans-serif",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "header",
+      "fontFamily": "Verdana, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "nav",
+      "fontFamily": "Verdana, Arial, Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.35
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "0.5625em 1.5em",
+      "border": "0px"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "18px",
+      "border": "1px solid rgb(220, 220, 220)"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "1.3em",
+      "padding": "0.5em 1em"
+    },
+    {
+      "key": "select",
+      "kind": "input",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px"
+    },
+    {
+      "key": "btn-mini-2",
+      "kind": "button",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "0.5625em 1.5em",
+      "border": "0px"
+    },
+    {
+      "key": "btn-small-3",
+      "kind": "button",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "0.5625em 1.5em",
+      "border": "0px"
+    },
+    {
+      "key": "select-mini-2",
+      "kind": "input",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px"
+    },
+    {
+      "key": "select-small-3",
+      "kind": "input",
+      "backgroundColor": "rgb(183, 183, 183)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Mailchimp Content Styleguide — Crisp light (#ffffff) canvas, Verdana typography, #33c3f0 brand accent, and 4px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#33c3f0` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Verdana` across 3 type steps.\n- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

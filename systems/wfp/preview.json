@@ -1,0 +1,636 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#001f2f",
+  "muted": "#5a6872",
+  "brand": "#007dbc",
+  "border": "color-mix(in srgb, #001f2f 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-dark-text-01",
+      "value": "#031c2d"
+    },
+    {
+      "name": "accent-02",
+      "value": "#f7b825"
+    },
+    {
+      "name": "brand-01",
+      "value": "#007dbc"
+    },
+    {
+      "name": "hover-primary",
+      "value": "#005e8d"
+    },
+    {
+      "name": "accent-01",
+      "value": "#f7b825"
+    },
+    {
+      "name": "text-01",
+      "value": "#001f2f"
+    },
+    {
+      "name": "text-02",
+      "value": "#5a6872"
+    },
+    {
+      "name": "text-03",
+      "value": "#dfe6eb"
+    },
+    {
+      "name": "field-border-01",
+      "value": "#77a0b6"
+    },
+    {
+      "name": "focus-01",
+      "value": "#bfdfee"
+    },
+    {
+      "name": "disabled-01",
+      "value": "#f9fbfc"
+    },
+    {
+      "name": "disabled-02",
+      "value": "#dfe6eb"
+    },
+    {
+      "name": "sequential-secondary-01",
+      "value": "#367a96"
+    },
+    {
+      "name": "sequential-secondary-02",
+      "value": "#319298"
+    },
+    {
+      "name": "sequential-secondary-03",
+      "value": "#33aa96"
+    },
+    {
+      "name": "sequential-secondary-04",
+      "value": "#41c196"
+    },
+    {
+      "name": "sequential-secondary-05",
+      "value": "#5fd79a"
+    },
+    {
+      "name": "sequential-secondary-06",
+      "value": "#89eaa8"
+    },
+    {
+      "name": "sequential-secondary-07",
+      "value": "#bdf9c4"
+    },
+    {
+      "name": "disabled",
+      "value": "#f9fbfc"
+    },
+    {
+      "name": "sdg-03",
+      "value": "#4c9f38"
+    },
+    {
+      "name": "sdg-04",
+      "value": "#c5192d"
+    },
+    {
+      "name": "sdg-05",
+      "value": "#ff3a21"
+    },
+    {
+      "name": "sdg-11",
+      "value": "#fd9d24"
+    },
+    {
+      "name": "sdg-12",
+      "value": "#bf8b2e"
+    },
+    {
+      "name": "sdg-14",
+      "value": "#0a97d9"
+    },
+    {
+      "name": "sdg-15",
+      "value": "#56c02b"
+    },
+    {
+      "name": "sdg-16",
+      "value": "#00689d"
+    },
+    {
+      "name": "main-hex",
+      "value": "#007DBC"
+    },
+    {
+      "name": "female-hex",
+      "value": "#3f7e44"
+    },
+    {
+      "name": "male-hex",
+      "value": "#26bde2"
+    },
+    {
+      "name": "national-hex",
+      "value": "#3C5979"
+    },
+    {
+      "name": "international-hex",
+      "value": "#fcc30b"
+    },
+    {
+      "name": "navy-hex",
+      "value": "#19486a"
+    },
+    {
+      "name": "aqua-hex",
+      "value": "#26bde2"
+    },
+    {
+      "name": "lime-hex",
+      "value": "#97d700"
+    },
+    {
+      "name": "yellow-hex",
+      "value": "#fcc30b"
+    },
+    {
+      "name": "ochre-hex",
+      "value": "#dda63a"
+    },
+    {
+      "name": "orange-hex",
+      "value": "#fd6925"
+    },
+    {
+      "name": "red-hex",
+      "value": "#c5192d"
+    },
+    {
+      "name": "magenta-hex",
+      "value": "#dd1367"
+    },
+    {
+      "name": "hex",
+      "value": "#007DBC"
+    },
+    {
+      "name": "color-main",
+      "value": "#007dbc"
+    },
+    {
+      "name": "color-gray-1",
+      "value": "#dfe3e6"
+    },
+    {
+      "name": "color-gray-2",
+      "value": "#f0f3f6"
+    },
+    {
+      "name": "color-gray-3",
+      "value": "#f5f7fa"
+    },
+    {
+      "name": "color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-navy",
+      "value": "#19486a"
+    },
+    {
+      "name": "color-aqua",
+      "value": "#26bde2"
+    },
+    {
+      "name": "color-dark-green",
+      "value": "#336d37"
+    },
+    {
+      "name": "color-lime",
+      "value": "#8ad220"
+    },
+    {
+      "name": "color-yellow",
+      "value": "#f7b825"
+    },
+    {
+      "name": "color-ochre",
+      "value": "#d29536"
+    },
+    {
+      "name": "color-orange",
+      "value": "#fd6925"
+    },
+    {
+      "name": "color-red",
+      "value": "#c5192d"
+    },
+    {
+      "name": "color-dark-red",
+      "value": "#8d0b33"
+    },
+    {
+      "name": "color-magenta",
+      "value": "#dd1367"
+    },
+    {
+      "name": "color-female",
+      "value": "#3f7e44"
+    },
+    {
+      "name": "color-male",
+      "value": "#26bde2"
+    },
+    {
+      "name": "color-national",
+      "value": "#3c5979"
+    },
+    {
+      "name": "color-international",
+      "value": "#fcc30b"
+    },
+    {
+      "name": "color-navy-gray-2",
+      "value": "#20343e"
+    },
+    {
+      "name": "color-navy-gray-3",
+      "value": "#2d3f49"
+    },
+    {
+      "name": "color-navy-gray-4",
+      "value": "#394b54"
+    },
+    {
+      "name": "color-navy-gray-5",
+      "value": "#42535c"
+    },
+    {
+      "name": "color-navy-gray-6",
+      "value": "#5a6872"
+    },
+    {
+      "name": "color-navy-gray-7",
+      "value": "#818d94"
+    },
+    {
+      "name": "color-navy-gray-8",
+      "value": "#dfe6eb"
+    },
+    {
+      "name": "color-navy-gray-9",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "color-navy-gray-10",
+      "value": "#f9fbfc"
+    },
+    {
+      "name": "color-blue-1",
+      "value": "#002153"
+    },
+    {
+      "name": "color-blue-2",
+      "value": "#003f76"
+    },
+    {
+      "name": "color-blue-3",
+      "value": "#005f9b"
+    },
+    {
+      "name": "color-blue-4",
+      "value": "#0780c0"
+    },
+    {
+      "name": "color-blue-5",
+      "value": "#4aa1e2"
+    },
+    {
+      "name": "color-blue-6",
+      "value": "#73c3fe"
+    },
+    {
+      "name": "color-blue-7",
+      "value": "#9deaff"
+    },
+    {
+      "name": "color-green-1",
+      "value": "#367a96"
+    },
+    {
+      "name": "color-green-2",
+      "value": "#319298"
+    },
+    {
+      "name": "color-green-3",
+      "value": "#33aa96"
+    },
+    {
+      "name": "color-green-4",
+      "value": "#41c196"
+    },
+    {
+      "name": "color-green-5",
+      "value": "#5fd79a"
+    },
+    {
+      "name": "color-green-6",
+      "value": "#89eaa8"
+    },
+    {
+      "name": "color-green-7",
+      "value": "#bdf9c4"
+    },
+    {
+      "name": "color-dark-blue",
+      "value": "#1a4262"
+    },
+    {
+      "name": "color-main-blue",
+      "value": "#007dbc"
+    },
+    {
+      "name": "color-light-blue",
+      "value": "#36b5c5"
+    },
+    {
+      "name": "color-cyan",
+      "value": "#73c5d0"
+    },
+    {
+      "name": "color-dark-green-1",
+      "value": "#008868"
+    },
+    {
+      "name": "color-main-green",
+      "value": "#00b485"
+    },
+    {
+      "name": "primary",
+      "value": "#007dbc"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64,
+      "fontWeight": 700
+    },
+    {
+      "name": "wfp-story-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "3.375rem",
+      "px": 54,
+      "fontWeight": 300
+    },
+    {
+      "name": "wfp-story-content-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 300
+    },
+    {
+      "name": "wfp-photo-card-info-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "wfp-modal-header-heading",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "wfp-secondary-navigation-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "fontWeight": 400
+    },
+    {
+      "name": "wfp-form-group-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600
+    },
+    {
+      "name": "calendar-month-caption",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "wfp-list-element-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 600
+    },
+    {
+      "name": "wfp-sub-navigation-group-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "day-picker-keyboard-shortcuts-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "wfp-item-title-wrapper",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "wfp-item-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "wfp-module-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600
+    },
+    {
+      "name": "wfp-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600
+    },
+    {
+      "name": "wfp-sub-navigation-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600
+    },
+    {
+      "name": "base-font-size",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "wfp-story-sub-heading",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.9em",
+      "px": 14.4
+    },
+    {
+      "name": "button-font-size",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "wfp-photo-card-info-subtitle",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "wfp-photo-cardnew-info-subtitle",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "wfp-toast-notification-title",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.29
+    },
+    {
+      "name": "wfp-toast-notification-subtitle",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.29
+    },
+    {
+      "name": "wfp-story-subtitle",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "wfp-type-caption",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "wfp-story-caption",
+      "fontFamily": "\"Open Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#007dbc",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#dc2626",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#007dbc",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "WFP UI Kit — Humanitarian agency UI kit, Open Sans typography and UN/WFP sky-blue actions",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#001f2f` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#007dbc` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 29 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+}

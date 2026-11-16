@@ -1,42 +1,53 @@
 {
   "name": "teambition",
   "displayName": "Teambition Clarity Design",
-  "description": "Teambition Clarity Design is published by Teambition, but no npm package or public repository was found in the curated source lists. No tokens are claimed here.",
-  "style": "Documentation only",
+  "description": "Teambition Clarity Design — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, -apple-system typography, #1B9AEE brand accent, and 4px corner geometry",
   "category": "Teambition",
   "org": "Teambition",
-  "theme": "unknown",
+  "theme": "light",
   "tags": [
-    "listed",
-    "docs-only",
-    "teambition"
+    "observed",
+    "teambition",
+    "light"
   ],
-  "homepage": "",
-  "license": "unknown",
-  "provenance": "listed",
-  "provenanceNote": "Appears in awesome. No machine-readable tokens found.",
+  "homepage": "https://design.teambition.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://design.teambition.com/ in headless Chromium on 2026-11-16 (7 custom properties, 81 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Clarity Design · 协作产品 UI 设计语言.",
   "source": {
-    "lists": [
-      "awesome"
-    ]
+    "url": "https://design.teambition.com/"
   },
   "spec": "design.md@alpha",
-  "frameworks": [],
-  "listedNames": [
-    "Teambition Clarity Design"
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
   ],
   "tokens": {
-    "colors": 0,
-    "typography": 0,
-    "components": 0
+    "colors": 16,
+    "typography": 2,
+    "components": 11
   },
   "checks": {
     "errors": 0,
     "warnings": 0,
-    "verified": false
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 204,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Astryx
-description: "Meta Astryx — tokens read from https://github.com/meta/astryx."
+description: "Dark (#ff0000) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry"
 colors:
   default-accent-seed: "#0064E0"
   accent: "#0064E0"
@@ -125,6 +125,47 @@ typography:
     fontSize: 2.1875rem
   font-size-5xl:
     fontSize: 2.625rem
+components:
+  button-primary:
+    backgroundColor: "#0a7d55"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ffb3a5"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ff0000"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ff0000"
+    textColor: "#000000"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#0a7d55"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#91D143"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ff0000"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Astryx
@@ -142,3 +183,10 @@ Tokens were read from the project's own repository, not from a marketing site: 9
 ## Typography
 
 Families declared in the source: `Figtree, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`, `ui-monospace, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Dark (#ff0000) canvas paired with `#ff0000` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0a7d55` with `#f7f7f8` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Figtree` across 15 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

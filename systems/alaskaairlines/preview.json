@@ -375,146 +375,140 @@
   ],
   "type": [
     {
+      "name": "wcss-display-2xl-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(3.5rem,6vw,5.375rem)",
+      "px": 86
+    },
+    {
+      "name": "wcss-display-xl-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(3rem,5.3333333333vw,4.5rem)",
+      "px": 72
+    },
+    {
+      "name": "wcss-display-lg-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2.75rem,4.6666666667vw,4rem)",
+      "px": 64
+    },
+    {
+      "name": "wcss-display-md-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2.5rem,4vw,3.5rem)",
+      "px": 56
+    },
+    {
+      "name": "wcss-display-sm-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2rem,3.6666666667vw,3rem)",
+      "px": 48
+    },
+    {
+      "name": "wcss-heading-xl-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2rem,3vw,2.5rem)",
+      "px": 40
+    },
+    {
+      "name": "wcss-display-xs-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.75rem,3vw,2.375rem)",
+      "px": 38
+    },
+    {
+      "name": "wcss-accent-2xl-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(2rem,3.1666666667vw,2.375rem)",
+      "px": 38
+    },
+    {
+      "name": "wcss-heading-lg-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.75rem,2.6666666667vw,2.25rem)",
+      "px": 36
+    },
+    {
+      "name": "wcss-accent-xl-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.625rem,2.3333333333vw,2rem)",
+      "px": 32
+    },
+    {
+      "name": "wcss-heading-md-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.625rem,2.3333333333vw,1.75rem)",
+      "px": 28
+    },
+    {
+      "name": "wcss-accent-lg-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.5rem,2.1666666667vw,1.75rem)",
+      "px": 28
+    },
+    {
+      "name": "wcss-heading-sm-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.375rem,2vw,1.5rem)",
+      "px": 24
+    },
+    {
+      "name": "wcss-accent-md-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.375rem,1.8333333333vw,1.5rem)",
+      "px": 24
+    },
+    {
+      "name": "wcss-heading-xs-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.25rem,1.6666666667vw,1.25rem)",
+      "px": 20
+    },
+    {
+      "name": "wcss-accent-sm-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.125rem,1.5vw,1.25rem)",
+      "px": 20
+    },
+    {
       "name": "wcss-body-lg-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
       "name": "wcss-body-lg-emphasized-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "1.125rem",
       "px": 18
     },
     {
+      "name": "wcss-heading-2xs-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(1.125rem,1.5vw,1.125rem)",
+      "px": 18
+    },
+    {
       "name": "wcss-body-default-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
       "name": "wcss-body-default-emphasized-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "1rem",
       "px": 16
     },
     {
-      "name": "wcss-display-2xl-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(3.5rem,6vw,5.375rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-display-xl-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(3rem,5.3333333333vw,4.5rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-display-lg-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2.75rem,4.6666666667vw,4rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-display-md-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2.5rem,4vw,3.5rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-display-sm-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2rem,3.6666666667vw,3rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-display-xs-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.75rem,3vw,2.375rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-heading-xl-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2rem,3vw,2.5rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-heading-lg-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.75rem,2.6666666667vw,2.25rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-heading-md-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.625rem,2.3333333333vw,1.75rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-heading-sm-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.375rem,2vw,1.5rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-heading-xs-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.25rem,1.6666666667vw,1.25rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-heading-2xs-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.125rem,1.5vw,1.125rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-accent-2xl-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(2rem,3.1666666667vw,2.375rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-accent-xl-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.625rem,2.3333333333vw,2rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-accent-lg-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.5rem,2.1666666667vw,1.75rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-accent-md-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.375rem,1.8333333333vw,1.5rem)",
-      "px": 16
-    },
-    {
-      "name": "wcss-accent-sm-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(1.125rem,1.5vw,1.25rem)",
-      "px": 16
-    },
-    {
       "name": "wcss-accent-xs-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "clamp(1rem,1.3333333333vw,1rem)",
       "px": 16
     },
     {
-      "name": "wcss-accent-2xs-font-size",
-      "fontFamily": "system-ui",
-      "fontSize": "clamp(0.875rem,1.1666666667vw,0.875rem)",
-      "px": 16
-    },
-    {
       "name": "auro-font-family-default",
-      "fontFamily": "AS Circular\", Helvetica Neue, Arial, sans-serif",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "px": 16
     },
     {
@@ -524,7 +518,7 @@
     },
     {
       "name": "font-family-default",
-      "fontFamily": "AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "px": 16
     },
     {
@@ -534,37 +528,43 @@
     },
     {
       "name": "wcss-body-sm-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
       "name": "wcss-body-sm-emphasized-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "0.875rem",
       "px": 14
     },
     {
+      "name": "wcss-accent-2xs-font-size",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "clamp(0.875rem,1.1666666667vw,0.875rem)",
+      "px": 14
+    },
+    {
       "name": "wcss-body-xs-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "wcss-body-xs-emphasized-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "0.75rem",
       "px": 12
     },
     {
       "name": "wcss-body-2xs-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "0.625rem",
       "px": 10
     },
     {
       "name": "wcss-body-2xs-emphasized-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
       "fontSize": "0.625rem",
       "px": 10
     }
@@ -575,8 +575,56 @@
       "kind": "badge",
       "backgroundColor": "#555",
       "textColor": "#ffffff"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#00274a",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#df0b37",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 16px"
     }
   ],
-  "overview": "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.",
-  "dos": ""
+  "overview": "Auro — Pacific navy and sky-blue aviation system, clean Auro web components",
+  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00274a` with `#ffffff` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `AS Circular` across 33 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

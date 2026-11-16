@@ -1,12 +1,12 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
-  "text": "#0b0b0c",
-  "muted": "#0b0b0c",
+  "canvas": "#121212",
+  "surface": "#121212",
+  "text": "#ffffff",
+  "muted": "#b3b3b3",
   "brand": "#1ed760",
   "border": "#252525",
   "radius": "9999px",
-  "ink": "#0b0b0c",
+  "ink": "#f7f7f8",
   "palette": [
     {
       "name": "brand-spotify-green",
@@ -242,6 +242,46 @@
       "backgroundColor": "#1f1f1f",
       "textColor": "#ffffff",
       "padding": "12px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#121212",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#121212",
+      "textColor": "#ffffff",
+      "rounded": "16px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#1ed760",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#121212",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "Spotify's web interface is a dark, immersive music player that wraps listeners in a near-black cocoon (#121212, #181818, #1f1f1f) where album art and content become the primary source of color. The design philosophy is \"content-first darkness\" — the UI recedes into shadow so that music, podcasts, and playlists can glow. Every surface is a shade of charcoal, creating a theater-like environment where the only true color comes from the iconic Spotify Green (#1ed760) and the album artwork itself.\n\nThe typography uses SpotifyMixUI and SpotifyMixUITitle — proprietary fonts from the CircularSp family (Circular by Lineto, customized for Spotify) with an extensive fallback stack that includes Arabic, Hebrew, Cyrillic, Greek, Devanagari, and CJK fonts, reflecting Spotify's global reach. The type system is compact and functional: 700 (bold) for emphasis and navigation, 600 (semibold) for secondary…",

@@ -1,22 +1,23 @@
 {
   "name": "bytedance",
   "displayName": "ByteDance Arco Design",
-  "description": "ByteDance ByteDance Arco Design — tokens read from https://github.com/arco-design/arco-design.",
-  "style": "ByteDance ByteDance Arco Design — tokens read from https://github.com/arco-design/arco-design.",
+  "description": "ByteDance Arco Design — tokens read from https://github.com/arco-design/arco-design.",
+  "style": "Crisp light (#FFF) canvas, NunitoSans-Bold typography, #ff7d00 brand accent, and 4px corner geometry",
   "category": "ByteDance",
   "org": "ByteDance",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "byte-dance"
+    "byte-dance",
+    "light"
   ],
   "homepage": "https://github.com/arco-design/arco-design",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/arco-design/arco-design — 6 token files, 24 colours harvested, 22 selected.",
   "source": {
-    "repo": "https://github.com/arco-design/arco-design"
+    "repo": "https://github.com/arco-design/arco-design",
+    "package": "@arco-design/web-react"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 23,
-    "typography": 9,
-    "components": 0
+    "typography": 37,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 37,
+    "stars": 5767,
+    "forks": 724,
+    "npmDownloads": 425145,
+    "score": 17053,
+    "frameworks": [
+      "react",
+      "vue"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": 30
   }
 }

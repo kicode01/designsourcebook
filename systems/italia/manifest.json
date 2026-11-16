@@ -1,22 +1,23 @@
 {
   "name": "italia",
   "displayName": "Italia Design System",
-  "description": "Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.",
-  "style": "Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.",
+  "description": "Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.",
+  "style": "Crisp light (#fff) canvas, Titillium Web typography, #06c brand accent, and 8px corner geometry",
   "category": "Italia",
   "org": "Italia",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "italia"
+    "italia",
+    "light"
   ],
   "homepage": "https://github.com/italia/design-web-toolkit",
   "license": "see repository",
   "provenance": "published",
   "provenanceNote": "Tokens read from the repository https://github.com/italia/design-web-toolkit — 14 token files, 68 colours harvested, 68 selected.",
   "source": {
-    "repo": "https://github.com/italia/design-web-toolkit"
+    "repo": "https://github.com/italia/bootstrap-italia",
+    "package": "bootstrap-italia"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -26,8 +27,8 @@
   ],
   "tokens": {
     "colors": 69,
-    "typography": 6,
-    "components": 0
+    "typography": 13,
+    "components": 7
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,19 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 87,
+    "stars": 361,
+    "forks": 176,
+    "npmDownloads": 73692,
+    "score": 3557,
+    "frameworks": [
+      "css",
+      "react",
+      "angular"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

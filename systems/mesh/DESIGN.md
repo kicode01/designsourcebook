@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Mesh Design System
-description: "Mesh Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package."
+description: "Australian healthcare & enterprise kit, Buenos Aires typography and teal surfaces"
 colors:
   common-color-white: "#ffffff"
   common-color-black: "#000000"
@@ -79,6 +79,8 @@ colors:
   button-color-tertiary-border-disabled: "#9e9e9e"
   primary: "#144a38"
 typography:
+  h1:
+    fontSize: 2em
   theme-typography-heading2xl-font-size:
     fontSize: 3.75rem
   theme-typography-copy-font-size:
@@ -105,15 +107,88 @@ typography:
     fontSize: 1.125rem
   form-control-typography-label-font-size:
     fontSize: 1rem
+  theme-font-family-copy:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-heading2xl-font-family:
+    fontFamily: "\"Crimson Pro\", \"Iowan Old Style\", \"Sitka Display\", \"Palatino Linotype\", Charter, Palatino, serif"
+  theme-font-family-heading:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-copy-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-copy-small-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-copy-large-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  button-typography-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  button-typography-small-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  button-typography-large-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  form-control-typography-label-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-heading-xl-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-heading-lg-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-heading-md-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-heading-sm-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  theme-typography-heading-xs-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+  form-control-typography-help-font-family:
+    fontFamily: "\"Buenos Aires\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#144a38"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#7a0c0c"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#144a38"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#144a38"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Mesh Design System
 
 ## Overview
 
-Mesh Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package.
+Mesh Design System — read from www.meshdesignsystem.com's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 75 colour tokens and 13 type tokens.
+Tokens were read from https://www.meshdesignsystem.com/, not from a published token package: 75 colour tokens and 30 type tokens.
 
 ## Colors
 
@@ -121,4 +196,11 @@ Tokens were read from the project's own repository, not from a marketing site: 7
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+Families declared in the source: `"Buenos Aires", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif`, `"Crimson Pro", "Iowan Old Style", "Sitka Display", "Palatino Linotype", Charter, Palatino, serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#144a38` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Buenos Aires` across 30 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

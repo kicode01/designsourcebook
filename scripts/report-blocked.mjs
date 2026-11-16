@@ -11,6 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { normOrg } from "../lib/registry.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -25,14 +26,14 @@ const blocked = readJson("data/blocked.json", { blocked: [] }).blocked || [];
 const coverage = readJson("data/coverage.json", { union: { entries: [] } });
 const entries = coverage.union?.entries || [];
 
-const blockedOrgs = new Set(blocked.map((b) => b.org.toLowerCase()));
+const blockedOrgs = new Set(blocked.map((b) => normOrg(b.org || b.slug)));
 
 const missing = entries.filter((e) => !e.covered);
 
 // 2. docs only — no package, no repo
-const docsOnly = missing.filter((e) => !e.npm && !e.repo && !blockedOrgs.has(e.org.toLowerCase()));
+const docsOnly = missing.filter((e) => !e.npm && !e.repo && !blockedOrgs.has(normOrg(e.org)));
 // 3. reachable but not attempted
-const notAttempted = missing.filter((e) => (e.npm || e.repo) && !blockedOrgs.has(e.org.toLowerCase()));
+const notAttempted = missing.filter((e) => (e.npm || e.repo) && !blockedOrgs.has(normOrg(e.org)));
 
 const pad = (s, n) => String(s).padEnd(n);
 const lines = [];

@@ -28,36 +28,36 @@ colors:
   primary: "#e60023"
 typography:
   display-hero:
-    fontFamily: Pin Sans
+    fontFamily: "\"Pin Sans\""
     fontSize: 70px
     fontWeight: 600
   section-heading:
-    fontFamily: Pin Sans
+    fontFamily: "\"Pin Sans\""
     fontSize: 28px
     fontWeight: 700
     letterSpacing: "-1.2px"
   body:
-    fontFamily: Pin Sans
+    fontFamily: "\"Pin Sans\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.4
   caption-bold:
-    fontFamily: Pin Sans
+    fontFamily: "\"Pin Sans\""
     fontSize: 14px
     fontWeight: 700
   caption:
-    fontFamily: Pin Sans
+    fontFamily: "\"Pin Sans\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.5
   button:
-    fontFamily: Pin Sans
+    fontFamily: "\"Pin Sans\""
     fontSize: 12px
     fontWeight: 400
 components:
   button-primary-red:
     backgroundColor: "#e60023"
-    textColor: "#000000"
+    textColor: "#ffffff"
     rounded: 16px
     padding: 6px 14px
   button-secondary-sand:
@@ -70,6 +70,31 @@ components:
     textColor: "#211922"
   button-ghost-transparent:
     textColor: "#000000"
+  input-default:
+    backgroundColor: "#0b2819"
+    textColor: "#ffffff"
+    rounded: 24px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#0b2819"
+    textColor: "#ffffff"
+    rounded: 24px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#e60023"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#103c25"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#0b2819"
+    textColor: "#ffffff"
+    rounded: 24px
+    padding: 10px 16px
 ---
 
 # Design System: Pinterest

@@ -23,7 +23,7 @@
   "tokens": {
     "colors": 24,
     "typography": 15,
-    "components": 6
+    "components": 10
   },
   "checks": {
     "errors": 0,
@@ -35,5 +35,26 @@
     "tokens": "tokens.json"
   },
   "supersededBy": "carbon",
-  "supersededNote": "IBM Carbon is also ingested from @carbon/themes with published provenance. This observed entry is kept for its prose and type scale."
+  "supersededNote": "IBM Carbon is also ingested from @carbon/themes with published provenance. This observed entry is kept for its prose and type scale.",
+  "source": {
+    "repo": "https://github.com/carbon-design-system/carbon",
+    "package": "@carbon/react"
+  },
+  "popularity": {
+    "rank": 26,
+    "stars": 9628,
+    "forks": 2305,
+    "npmDownloads": 689982,
+    "score": 25622,
+    "frameworks": [
+      "react",
+      "web-components",
+      "angular",
+      "vue",
+      "css",
+      "svelte"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
 }

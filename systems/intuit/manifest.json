@@ -1,22 +1,23 @@
 {
   "name": "intuit",
   "displayName": "Intuit Harmony",
-  "description": "Intuit Intuit Harmony — read from designsystem.quickbooks.com's live stylesheets, not a published token package.",
-  "style": "Intuit Intuit Harmony — read from designsystem.quickbooks.com's live stylesheets, not a published token package.",
+  "description": "Intuit Harmony — read from the rendered page in a browser, not from published tokens.",
+  "style": "Crisp light (#ffffff) canvas, -apple-system typography, #FF0000 brand accent, and 3px corner geometry",
   "category": "Intuit",
   "org": "Intuit",
   "theme": "light",
   "tags": [
-    "published",
-    "light",
-    "intuit"
+    "observed",
+    "intuit",
+    "light"
   ],
   "homepage": "https://designsystem.quickbooks.com/",
   "license": "all rights reserved",
   "provenance": "observed",
-  "provenanceNote": "Colours read from https://designsystem.quickbooks.com/ and its 5 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "provenanceNote": "Computed styles read from https://designsystem.quickbooks.com/ in headless Chromium on 2026-11-16 (1059 custom properties, 106 sampled elements, 16 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Home - Intuit Design Hub.",
   "source": {
-    "repo": null
+    "url": "https://designsystem.quickbooks.com/",
+    "repo": "https://github.com/intuit/design-systems-cli"
   },
   "spec": "design.md@alpha",
   "frameworks": [
@@ -25,9 +26,9 @@
     "dtcg"
   ],
   "tokens": {
-    "colors": 51,
-    "typography": 38,
-    "components": 0
+    "colors": 91,
+    "typography": 144,
+    "components": 13
   },
   "checks": {
     "errors": 0,
@@ -37,5 +38,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 81,
+    "stars": 424,
+    "forks": 89,
+    "npmDownloads": 0,
+    "score": 424,
+    "frameworks": [
+      "react",
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }

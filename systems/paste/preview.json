@@ -3,9 +3,9 @@
   "surface": "rgb(255, 255, 255)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "rgb(31, 48, 76)",
+  "brand": "rgb(106, 221, 178)",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -370,11 +370,248 @@
     },
     {
       "name": "primary",
-      "value": "rgb(31, 48, 76)"
+      "value": "rgb(106, 221, 178)"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "font-size-display-30",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "font-size-110",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-display-20",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-100",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-size-90",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-size-display-10",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-size-80",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "font-size-70",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-60",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-50",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-40",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "font-family-text",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-code",
+      "fontFamily": "TwilioSansMono, Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-text-japanese",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", \"メイリオ\", Meiryo, Osaka, \"MS PGothic\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-text-korean",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-text-chinese-traditional",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-text-chinese-simplified",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Microsoft YaHei New\", \"微软雅黑\", \"Microsoft Yahei\", \"Microsoft JhengHei\", \"宋体\", SimSun, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-10",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-20",
+      "fontFamily": "TwilioSansMono, Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-30",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Hiragino Sans\", \"ヒラギノ角ゴ ProN W3\", \"Hiragino Kaku Gothic ProN\", \"メイリオ\", Meiryo, Osaka, \"MS PGothic\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-40",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-50",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Microsoft JhengHei\", \"微軟正黑體\", \"Microsoft JhengHei UI\", \"Microsoft YaHei\", \"微軟雅黑\", \"宋体\", SimSun, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-60",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", \"Microsoft YaHei New\", \"微软雅黑\", \"Microsoft Yahei\", \"Microsoft JhengHei\", \"宋体\", SimSun, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "original-value",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "font-family-70",
+      "fontFamily": "TwilioSansText, \"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-80",
+      "fontFamily": "TwilioSansDisplay, \"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-30",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-20",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size-10",
+      "fontFamily": "\"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "rgb(106, 221, 178)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "rgb(219, 19, 42)",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "rgb(106, 221, 178)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "rgb(20, 176, 83)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "Twilio Paste — the design system for Twilio's console.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(106, 221, 178)` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Inter var experimental` across 31 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

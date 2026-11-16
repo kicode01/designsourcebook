@@ -5,7 +5,7 @@
   "muted": "#f7f7f8",
   "brand": "#ffc53d",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
-  "radius": "8px",
+  "radius": "6px",
   "ink": "#f7f7f8",
   "palette": [
     {
@@ -373,8 +373,94 @@
       "value": "#ffc53d"
     }
   ],
-  "type": [],
-  "components": [],
+  "type": [
+    {
+      "name": "default-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI (Custom)\", Roboto, \"Helvetica Neue\", \"Open Sans (Custom)\", system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "code-font-family",
+      "fontFamily": "Menlo, \"Consolas (Custom)\", \"Bitstream Vera Sans Mono\", monospace, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "em-font-family",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "quote-font-family",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#ffc53d",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#e93d82",
+      "textColor": "#000000",
+      "rounded": "6px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#111111",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#111111",
+      "textColor": "#ffffff",
+      "rounded": "10px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#ffc53d",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#111111",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "10px 16px"
+    }
+  ],
   "overview": "WorkOS Radix — open-source colour system and unstyled component primitives.",
-  "dos": ""
+  "dos": "- **Surface & Theme Polarity**: Dark (#111111) canvas paired with `#111111` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ffc53d` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

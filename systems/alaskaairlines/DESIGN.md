@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Auro
-description: "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package."
+description: "Pacific navy and sky-blue aviation system, clean Auro web components"
 colors:
   advanced-color-accents-accent1: "#b2d583"
   advanced-color-accents-accent4-bold: "#fb7f24"
@@ -154,11 +154,11 @@ typography:
   wcss-accent-2xs-font-size:
     fontSize: "clamp(0.875rem,1.1666666667vw,0.875rem)"
   auro-font-family-default:
-    fontFamily: "AS Circular\", Helvetica Neue, Arial, sans-serif"
+    fontFamily: "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif"
   auro-font-family-mono:
     fontFamily: "Menlo, Monaco, Consolas, \"Courier New\", monospace"
   font-family-default:
-    fontFamily: "AS Circular\", \"Helvetica Neue\", Arial, sans-serif"
+    fontFamily: "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif"
   font-family-mono:
     fontFamily: "Menlo, Monaco, Consolas, \"Courier New\", monospace"
 components:
@@ -167,6 +167,36 @@ components:
     textColor: "#ffffff"
     typography:
       fontSize: ".75rem"
+  button-primary:
+    backgroundColor: "#00274a"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#df0b37"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Auro
@@ -175,7 +205,7 @@ components:
 
 Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 33 type tokens.
+Tokens were read from https://auro.alaskaair.com/, not from a published token package: 91 colour tokens and 33 type tokens.
 
 ## Colors
 
@@ -188,3 +218,10 @@ Families declared in the source: `AS Circular", Helvetica Neue, Arial, sans-seri
 ## Components
 
 1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00274a` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `AS Circular` across 33 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

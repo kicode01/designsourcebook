@@ -18,57 +18,57 @@ colors:
   primary: "#3b82f6"
 typography:
   display-hero:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 48px
     fontWeight: 500
     lineHeight: 1
   section-heading:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 36px
     fontWeight: 500
     lineHeight: 1.11
   sub-heading:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 30px
     fontWeight: 400
     lineHeight: 1.2
   card-title:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.33
   body-large:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.56
   body-link:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   caption:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
   small:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
   code-body:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   code-caption:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
   code-small:
-    fontFamily: SF Pro Rounded
+    fontFamily: "\"SF Pro Rounded\""
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.63
@@ -87,6 +87,31 @@ components:
     backgroundColor: "#000000"
     textColor: "#ffffff"
     rounded: 9999px
+  input-default:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 9999px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 9999px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#3b82f6"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 9999px
+    padding: 10px 16px
 ---
 
 # Design System: Ollama

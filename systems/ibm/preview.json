@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#0f62fe",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "8px",
+  "radius": "0px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -108,7 +108,7 @@
   "type": [
     {
       "name": "display-01",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "60px",
       "px": 60,
       "fontWeight": 300,
@@ -116,7 +116,7 @@
     },
     {
       "name": "display-02",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "48px",
       "px": 48,
       "fontWeight": 300,
@@ -124,7 +124,7 @@
     },
     {
       "name": "heading-01",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "42px",
       "px": 42,
       "fontWeight": 300,
@@ -132,7 +132,7 @@
     },
     {
       "name": "mono-display",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "42px",
       "px": 42,
       "fontWeight": 400,
@@ -140,7 +140,7 @@
     },
     {
       "name": "heading-02",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "32px",
       "px": 32,
       "fontWeight": 400,
@@ -148,7 +148,7 @@
     },
     {
       "name": "heading-03",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "24px",
       "px": 24,
       "fontWeight": 400,
@@ -156,7 +156,7 @@
     },
     {
       "name": "heading-04",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 600,
@@ -164,7 +164,7 @@
     },
     {
       "name": "heading-05",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "20px",
       "px": 20,
       "fontWeight": 400,
@@ -172,7 +172,7 @@
     },
     {
       "name": "body-long-01",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -180,7 +180,7 @@
     },
     {
       "name": "body-long-02",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 600,
@@ -188,7 +188,7 @@
     },
     {
       "name": "code-02",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "16px",
       "px": 16,
       "fontWeight": 400,
@@ -196,7 +196,7 @@
     },
     {
       "name": "body-short-01",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -205,7 +205,7 @@
     },
     {
       "name": "body-short-02",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 600,
@@ -214,7 +214,7 @@
     },
     {
       "name": "code-01",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "14px",
       "px": 14,
       "fontWeight": 400,
@@ -223,7 +223,7 @@
     },
     {
       "name": "caption-01",
-      "fontFamily": "IBM Plex Sans",
+      "fontFamily": "\"IBM Plex Sans\"",
       "fontSize": "12px",
       "px": 12,
       "fontWeight": 400,
@@ -266,8 +266,40 @@
     },
     {
       "key": "distinctive-tile",
-      "kind": "distinctive",
+      "kind": "card",
       "backgroundColor": "#f4f4f4"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#0f62fe",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#15803d",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 16px"
     }
   ],
   "overview": "IBM's website is the digital embodiment of enterprise authority built on the Carbon Design System — a design language so methodically structured it reads like an engineering specification rendered as a webpage. The page operates on a stark duality: a bright white (#ffffff) canvas with near-black (#161616) text, punctuated by a single, unwavering accent — IBM Blue 60 (#0f62fe). This isn't playful tech-startup minimalism; it's corporate precision distilled into pixels. Every element exists within Carbon's rigid 2x grid, every color maps to a semantic token, every spacing value snaps to the 8px base unit.\n\nThe IBM Plex type family is the system's backbone. IBM Plex Sans at light weight (300) for display headlines creates an unexpectedly airy, almost delicate quality at large sizes — a deliberate counterpoint to IBM's corporate gravity. At body sizes, regular weight (400) with 0.16px…",

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Bento DS
-description: "Bento Bento DS — tokens read from https://github.com/buildo/bento-design-system."
+description: "Crisp light (#FFFFFF) canvas, DM Sans typography, #242424 brand accent, and 8px corner geometry"
 colors:
   white: "#FFFFFF"
   black: "#000000"
@@ -72,14 +72,55 @@ colors:
   primary: "#242424"
 typography:
   ifm-font-family-base:
-    fontFamily: "DM Sans\", sans-serif"
+    fontFamily: "\"DM Sans\", sans-serif"
+components:
+  button-primary:
+    backgroundColor: "#242424"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#FFD4D8"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#242424"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#17BF33"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Bento DS
 
 ## Overview
 
-Bento Bento DS — tokens read from https://github.com/buildo/bento-design-system.
+Bento DS — tokens read from https://github.com/buildo/bento-design-system.
 
 Tokens were read from the project's own repository, not from a marketing site: 67 colour tokens and 1 type tokens.
 
@@ -90,3 +131,10 @@ Tokens were read from the project's own repository, not from a marketing site: 6
 ## Typography
 
 Families declared in the source: `DM Sans", sans-serif`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#000000` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#242424` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `DM Sans` across 1 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

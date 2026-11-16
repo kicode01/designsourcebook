@@ -1,0 +1,58 @@
+{
+  "name": "vitamin",
+  "displayName": "Decathlon Vitamin",
+  "description": "Decathlon Vitamin — tokens imported from @vtmn/css-design-tokens.",
+  "style": "Sports retail design system, Roboto typography and Decathlon cobalt/teal accents",
+  "category": "Decathlon",
+  "org": "Decathlon",
+  "theme": "light",
+  "tags": [
+    "published",
+    "decathlon",
+    "light"
+  ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @vtmn/css-design-tokens@1.1.3 + @vtmn/css (1 token files, 41 colours harvested, 41 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@vtmn/css-design-tokens",
+    "version": "1.1.3",
+    "repo": "https://github.com/Decathlon/vitamin-web"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 42,
+    "typography": 15,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 90,
+    "stars": 290,
+    "forks": 76,
+    "npmDownloads": 0,
+    "score": 290,
+    "frameworks": [
+      "css",
+      "react",
+      "vue",
+      "svelte"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
+  }
+}

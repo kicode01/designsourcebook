@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Italia Design System
-description: "Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit."
+description: "Crisp light (#fff) canvas, Titillium Web typography, #06c brand accent, and 8px corner geometry"
 colors:
   color-primary: "#06c"
   color-black: "#000"
@@ -74,41 +74,80 @@ colors:
   primary: "#06c"
 typography:
   pac-font-family-sans:
-    fontFamily: "Titillium Web, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-  it-base-font-size:
-    fontSize: "calc(1rem * var(--it-Base-font-size-ratio))"
-  it-base-font-family:
-    fontFamily: "-apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    HelveticaNeue-Light,
-    Helvetica Neue Light,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    Lucida Grande,
-    sans-serif"
-  metadata:
-    fontFamily: ita
+    fontFamily: "\"Titillium Web\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+  html:
+    fontSize: "100%"
+  document-title:
+    fontSize: 2.5em
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 2em
+  h3:
+    fontSize: 1.6em
+  tree-title:
+    fontFamily: "\"Titillium Web\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    fontSize: 1.2em
+    fontWeight: 700
+  error-page-title:
+    fontSize: 11.2em
+    fontWeight: 400
+  error-page-subtitle:
+    fontSize: 3.3em
   spid-font-family:
-    fontFamily: Titillium Web
+    fontFamily: "\"Titillium Web\""
+  print-font-size:
+    fontSize: "60%"
   print-font-family:
     fontFamily: "Georgia, \"Times New Roman\", Times, serif"
+  body:
+    fontFamily: sans-serif
+    fontSize: 1em
+    lineHeight: 1.5
+  h1:
+    fontSize: 1.5em
+components:
+  label-block:
+    backgroundColor: white
+  button-primary:
+    backgroundColor: "#06c"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#ffcbcb"
+    textColor: "#333"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Italia Design System
 
 ## Overview
 
-Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.
+Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.
 
-Tokens were read from the project's own repository, not from a marketing site: 69 colour tokens and 6 type tokens.
+Tokens were read from the project's own repository, not from a marketing site: 69 colour tokens and 13 type tokens.
 
 ## Colors
 
@@ -116,19 +155,15 @@ Tokens were read from the project's own repository, not from a marketing site: 6
 
 ## Typography
 
-Families declared in the source: `Titillium Web, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif`, `-apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    HelveticaNeue-Light,
-    Helvetica Neue Light,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    Lucida Grande,
-    sans-serif`, `ita`, `Titillium Web`, `Georgia, "Times New Roman", Times, serif`.
+Families declared in the source: `"Titillium Web", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`, `"Titillium Web"`, `Georgia, "Times New Roman", Times, serif`, `sans-serif`.
+
+## Components
+
+1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#333` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#06c` with `#ffffff` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Titillium Web` across 13 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

@@ -4,12 +4,12 @@
   "description": "Playful gradients, friendly dev aesthetic",
   "style": "Playful gradients, friendly dev aesthetic",
   "category": "Developer Tools & Platforms",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "gradient",
     "playful",
     "developer-tools",
-    "dark"
+    "light"
   ],
   "homepage": "https://lovable.dev",
   "license": "proprietary",
@@ -24,7 +24,7 @@
   "tokens": {
     "colors": 16,
     "typography": 12,
-    "components": 4
+    "components": 9
   },
   "checks": {
     "errors": 0,
@@ -34,5 +34,18 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {},
+  "popularity": {
+    "rank": 191,
+    "stars": 0,
+    "forks": 0,
+    "npmDownloads": 0,
+    "score": 0,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

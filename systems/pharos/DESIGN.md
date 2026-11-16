@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: "Pharos: JSTOR's Design System"
-description: "Pharos: Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos."
+description: "Crisp light (hsl(0, 0%, 100%)) canvas, GT America typography, hsl(37.1, 95.5%, 56.5%) brand accent, and 8px corner geometry"
 colors:
   10: "hsl(60, 2%, 10%)"
   15: "hsl(219, 82%, 15%)"
@@ -38,19 +38,60 @@ colors:
   border-bottom-color: "#9c9c9c"
   primary: "hsl(37.1, 95.5%, 56.5%)"
 typography:
-  font-family-main-heading:
-    fontFamily: "var(--pharos-font-family-serif)"
-  font-family-body:
-    fontFamily: "var(--pharos-font-family-body)"
+  font-family-sans-serif:
+    fontFamily: "\"GT America\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+  font-family-serif:
+    fontFamily: "\"Ivar Headline\", Georgia, serif"
   font-family-code:
     fontFamily: "consolas, monospace"
+components:
+  button-primary:
+    backgroundColor: "hsl(37.1, 95.5%, 56.5%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "hsl(0, 0%, 100%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "hsl(0, 0%, 100%)"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "hsl(37.1, 95.5%, 56.5%)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "hsl(0, 0%, 100%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Pharos: JSTOR's Design System
 
 ## Overview
 
-Pharos: Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.
+Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.
 
 Tokens were read from the project's own repository, not from a marketing site: 34 colour tokens and 3 type tokens.
 
@@ -61,3 +102,10 @@ Tokens were read from the project's own repository, not from a marketing site: 3
 ## Typography
 
 Families declared in the source: `var(--pharos-font-family-serif)`, `var(--pharos-font-family-body)`, `consolas, monospace`.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (hsl(0, 0%, 100%)) canvas paired with `hsl(0, 0%, 100%)` component surfaces and `#0b0b0c` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(37.1, 95.5%, 56.5%)` with `#0b0b0c` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `GT America` across 3 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

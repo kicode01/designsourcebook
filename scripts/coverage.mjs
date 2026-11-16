@@ -10,6 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { normKey, normOrg } from "../lib/registry.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -41,33 +42,25 @@ const PUBLISHED = {
   "Stack Overflow Stacks": "@stackoverflow/stacks",
   "Twilio Paste": "@twilio-paste/design-tokens",
   "Ubuntu Vanilla": "vanilla-framework",
-  "U.S. Government U.S. Web Design System": "uswds",
+  "U.S. Government U.S. Web Design System": "@uswds/uswds",
   "VMware Clarity Design System": "@clr/ui",
   "Wonderflow Wanda Design System": "@wonderflow/react-components",
   "WorkOS Radix": "@radix-ui/colors",
   "Zendesk Zendesk Garden": "@zendeskgarden/react-theming",
+  "Tencent TDesign": "tdesign-react",
+  "Singapore Government Design System": "@govtechsg/sgds",
+  "Telefónica Mística": "@telefonica/mistica",
+  "Foundation Foundation": "foundation-sites",
+  "Grafana Grafana UI": "@grafana/ui",
+  "Buildit Buildit Gravity": "@buildit/gravity-ui-web",
 };
 
-// Same company, different spelling across lists.
-const ORG_ALIASES = {
-  usgovernment: "usweb",
-  antfinancial: "antgroup",
-  alibaba: "antgroup",
-  hewlettpackard: "hp",
-  aws: "amazon",
-  amazonweb: "amazon",
-};
-
-const norm = (s) =>
-  String(s)
-    .toLowerCase()
-    .replace(/\./g, "")
-    .replace(/[^a-z0-9]+/g, "");
-
-const normOrg = (s) => {
-  const n = norm(s);
-  return ORG_ALIASES[n] || n;
-};
+function isClonableRepo(entry) {
+  if (!entry.repo || entry.repoHost === "web") return false;
+  // GitHub/GitLab/Bitbucket org profile URLs (e.g. github.com/shadcn-ui) are not repos.
+  if (/^https?:\/\/(?:www\.)?(github\.com|gitlab\.com|bitbucket\.org)\/[^/]+\/?$/i.test(entry.repo)) return false;
+  return true;
+}
 
 const systems = fs
   .readdirSync(path.join(ROOT, "systems"), { withFileTypes: true })
@@ -77,9 +70,14 @@ const systems = fs
   // exact dishonesty this report exists to prevent.
   .filter((s) => s.provenance !== "listed");
 
-const bySlug = new Map(systems.map((s) => [norm(s.name), s]));
-const byDisplay = new Map(systems.map((s) => [norm(s.displayName || ""), s]));
-const byOrg = new Map(systems.filter((s) => s.org).map((s) => [normOrg(s.org), s]));
+const bySlug = new Map(systems.map((s) => [normKey(s.name), s]));
+const byDisplay = new Map(systems.map((s) => [normKey(s.displayName || ""), s]));
+const byOrg = new Map();
+for (const s of systems) {
+  if (!s.org) continue;
+  const k = normOrg(s.org);
+  if (!byOrg.has(k)) byOrg.set(k, s);
+}
 
 function lookup(key) {
   if (!key) return null;
@@ -121,7 +119,7 @@ for (const file of files) {
     });
     if (hit) u.covered = hit.slug || hit.name;
     if (pkg) u.npm = pkg;
-    if (e.repo) u.repo = e.repo;
+    if (isClonableRepo(e)) u.repo = e.repo;
   }
 
   const covered = rows.filter((r) => r.covered);

@@ -22,15 +22,30 @@
   "tokens": {
     "colors": 14,
     "typography": 10,
-    "components": 2
+    "components": 7
   },
   "checks": {
     "errors": 0,
-    "warnings": 1,
-    "verified": false
+    "warnings": 0,
+    "verified": true
   },
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "source": {
+    "repo": "https://github.com/togethercomputer/together-typescript"
+  },
+  "popularity": {
+    "rank": 173,
+    "stars": 73,
+    "forks": 11,
+    "npmDownloads": 0,
+    "score": 73,
+    "frameworks": [
+      "react"
+    ],
+    "isDesignSystemRepo": false,
+    "enterpriseRank": null
   }
 }

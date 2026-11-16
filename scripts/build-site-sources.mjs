@@ -7,6 +7,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { normKey, normOrg, listSystems } from "../lib/registry.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -15,25 +16,23 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
 
 const awesome = read("data/sources/awesome.json").systems;
 const coverage = read("data/coverage.json");
-const have = new Set(fs.readdirSync(path.join(ROOT, "systems")));
-
-const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "");
+const have = new Set(listSystems().filter((s) => s.provenance !== "listed").map((s) => s.slug));
 
 // Orgs that are still missing and have no npm package and no repo.
 const docsOnly = (coverage.union.entries || []).filter((e) => !e.covered && !e.npm && !e.repo);
 const docsByKey = new Map();
-for (const e of docsOnly) docsByKey.set(norm(e.org), e);
+for (const e of docsOnly) docsByKey.set(normOrg(e.org), e);
 
 const out = [];
 const seen = new Set();
 
 for (const a of awesome) {
   if (!a.homepage) continue;
-  const candidates = [norm(a.org), ...(a.aliases || []).map(norm)];
+  const candidates = [normOrg(a.org), ...(a.aliases || []).map(normOrg)];
   const hit = candidates.map((c) => docsByKey.get(c)).find(Boolean);
   if (!hit) continue;
 
-  const slug = norm(hit.org);
+  const slug = normKey(hit.org);
   if (seen.has(slug) || have.has(slug)) continue;
   seen.add(slug);
 

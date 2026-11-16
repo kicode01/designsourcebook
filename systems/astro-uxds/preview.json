@@ -75,31 +75,686 @@
   ],
   "type": [
     {
+      "name": "font-size6xl",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-display1-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "rux-display-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60,
+      "fontWeight": 300
+    },
+    {
+      "name": "display-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-size5xl",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-display2-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "rux-display-2",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48,
+      "fontWeight": 400
+    },
+    {
+      "name": "display-2",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size4xl",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "font-heading1-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "font-heading1-bold-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "rux-heading-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34,
+      "fontWeight": 400
+    },
+    {
+      "name": "rux-heading-1-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34,
+      "fontWeight": 700
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "heading-1-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "font-size3xl",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "font-monospace1-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "monospace-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
       "name": "font-heading-1-bold-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "font-heading-1-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
       "name": "font-monospace-1-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
       "fontSize": "1.5rem",
       "px": 24
     },
     {
+      "name": "font-size2xl",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-heading2-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "rux-heading-2",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 400
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-xl",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-heading3-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-heading4-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "rux-heading-3",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 500
+    },
+    {
+      "name": "rux-heading-4",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "heading-4",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-lg",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-heading5-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-heading6-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "rux-heading-5",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 400
+    },
+    {
+      "name": "rux-heading-6",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 300
+    },
+    {
+      "name": "heading-5",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "heading-6",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
       "name": "font-heading-6-font-size",
-      "fontFamily": "system-ui",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
       "fontSize": "1rem",
       "px": 16
+    },
+    {
+      "name": "font-family-sans",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-heading1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading1-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading2-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading3-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading4-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading5-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading6-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body1-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-body1-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body1-bold-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-body2-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body2-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body3-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body3-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-monospace1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-display1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-display2-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-control-body1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-control-body1-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-control-body1-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-control-body1-bold-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "rux-body-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "rux-body-1-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "rux-control-body-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "rux-control-body-1-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "font-control-body-1-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-control-body-1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-display-2-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-display-1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-monospace-1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-3-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-3-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-2-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-2-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-1-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-6-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-5-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-4-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-3-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-2-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-1-bold-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-1-font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "sans",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "body-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "body-1-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "control-body-1",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "control-body-1-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-sm",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-body2-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-body2-bold-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "rux-body-2",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400
+    },
+    {
+      "name": "rux-body-2-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 700
+    },
+    {
+      "name": "body-2",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "body-2-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-xs",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-body3-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-body3-bold-font-size",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "rux-body-3",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400
+    },
+    {
+      "name": "rux-body-3-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 700
+    },
+    {
+      "name": "body-3",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "body-3-bold",
+      "fontFamily": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
     }
   ],
-  "components": [],
-  "overview": "Rocket Communications Astro UXDS — tokens read from https://github.com/RocketCommunicationsInc/astro.",
-  "dos": ""
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#2dccff",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#ef4444",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 18px"
+    },
+    {
+      "key": "input-default",
+      "kind": "input",
+      "backgroundColor": "#172635",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "9px 13px"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#172635",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "18px 20px"
+    },
+    {
+      "key": "badge-brand",
+      "kind": "badge",
+      "backgroundColor": "#2dccff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#172635",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "10px 16px"
+    }
+  ],
+  "overview": "Astro UXDS — Dark (#172635) canvas, Roboto typography, #2dccff brand accent, and 8px corner geometry",
+  "dos": "- **Surface & Theme Polarity**: Dark (#172635) canvas paired with `#172635` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#2dccff` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Roboto` across 106 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
 }

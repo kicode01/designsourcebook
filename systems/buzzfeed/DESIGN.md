@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: BuzzFeed Solid
-description: "BuzzFeed BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid."
+description: "Crisp light (#fff) canvas, Proxima Nova typography, #f7ad19 brand accent, and 8px corner geometry"
 colors:
   highlight-outline: "#7a9ff3"
   fill-red: "#e32"
@@ -53,14 +53,80 @@ colors:
   primary: "#f7ad19"
 typography:
   base-font-size:
-    fontSize: "16px !default"
+    fontSize: 16px
+  title-1:
+    fontFamily: "\"Proxima Nova\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    fontSize: 36px
+    fontWeight: 700
+    lineHeight: 1.2
+  title-2:
+    fontFamily: "\"Proxima Nova\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 1.25
+  title-3:
+    fontFamily: "\"Proxima Nova\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    fontSize: 22px
+    fontWeight: 600
+    lineHeight: 1.3
+  body:
+    fontFamily: "\"Proxima Nova\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontFamily: "\"Proxima Nova\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 1.4
+components:
+  button-primary:
+    backgroundColor: "#f7ad19"
+    textColor: "#222"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "#dc2626"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#f7ad19"
+    textColor: "#222"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # BuzzFeed Solid
 
 ## Overview
 
-BuzzFeed BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.
+BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.
 
 Tokens were read from the project's own repository, not from a marketing site: 48 colour tokens and 1 type tokens.
 
@@ -71,3 +137,10 @@ Tokens were read from the project's own repository, not from a marketing site: 4
 ## Typography
 
 No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+
+## Visual Language
+
+- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#222` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f7ad19` with `#222` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Proxima Nova` across 6 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

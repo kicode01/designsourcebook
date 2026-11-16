@@ -3,8 +3,6 @@ version: alpha
 name: Clarity Design System
 description: "VMware Clarity — UX guidelines, HTML/CSS framework and Angular components."
 colors:
-  alias-object-overlay-backdrop-background: "hsl(0deg 0% 0% / 60%)"
-  alias-object-container-backdrop-background: "hsl(0deg 0% 100% / 60%)"
   global-color-black: "hsl(0deg 0% 0%)"
   global-color-green-50: "hsl(93deg 80% 94%)"
   global-color-green-200: "hsl(93deg 80% 70%)"
@@ -93,12 +91,14 @@ colors:
   global-color-slate-100: "hsl(238deg 20% 91%)"
   global-color-slate-300: "hsl(238deg 20% 73%)"
   global-color-slate-500: "hsl(238deg 23% 56%)"
+  global-color-slate-700: "hsl(238deg 28% 38%)"
+  global-color-slate-900: "hsl(238deg 28% 22%)"
   primary: "hsl(198deg 100% 48%)"
 typography:
   alias-typography-font-family:
-    fontFamily: "Metropolis', 'Avenir Next', sans-serif"
+    fontFamily: "Metropolis, \"Avenir Next\", sans-serif"
   alias-typography-header-font-family:
-    fontFamily: "Metropolis', 'Avenir Next', sans-serif"
+    fontFamily: "Metropolis, \"Avenir Next\", sans-serif"
   alias-typography-monospace-font-family:
     fontFamily: "ui-monospace, Consolas, Menlo, Monaco, monospace"
   typography-h0-font-size:
@@ -166,89 +166,48 @@ typography:
   typography-p8-font-size-static:
     fontSize: 0.5rem
   clr-metropolis-font-family:
-    fontFamily: "Metropolis, 'Avenir Next', 'Helvetica Neue', Arial, sans-serif"
-  clr-h1-font-family:
-    fontFamily: "var(--clr-display-font)"
-  clr-h2-font-family:
-    fontFamily: "var(--clr-display-font)"
-  clr-h3-font-family:
-    fontFamily: "var(--clr-display-font)"
-  clr-h4-font-family:
-    fontFamily: "var(--clr-display-font)"
-  clr-h5-font-family:
-    fontFamily: "var(--clr-display-font)"
-  clr-h6-font-family:
-    fontFamily: "var(--clr-display-font)"
+    fontFamily: "Metropolis, \"Avenir Next\", \"Helvetica Neue\", Arial, sans-serif"
 components:
-  btn:
-    backgroundColor: "hsl(0deg 0% 0% / 0%)"
-    textColor: "hsl(198deg 100% 34%)"
-    typography:
-      fontWeight: 600
-  card:
-    backgroundColor: "hsl(0deg 0% 100%)"
-  alert:
-    backgroundColor: "hsl(198deg 100% 95%)"
-    textColor: "hsl(0deg 0% 0%)"
-    typography:
-      fontWeight: 400
-  badge:
-    backgroundColor: "hsl(198deg 14% 36%)"
-    textColor: "hsl(0deg 0% 0%)"
-    typography:
-      fontWeight: 500
-  label:
-    textColor: "hsl(198deg 100% 27%)"
-    typography:
-      fontWeight: 400
-  table:
-    backgroundColor: "hsl(0deg 0% 100%)"
-    textColor: "hsl(198deg 28% 18%)"
-  nav-link:
-    textColor: "hsl(198deg 100% 27%)"
-  card-text-2:
-    textColor: "hsl(198deg 28% 18%)"
-    typography:
-      fontWeight: 400
-  input:
-    textColor: "hsl(198deg 28% 18%)"
-    typography:
-      fontWeight: 400
-    rounded: "0"
-    padding: "0"
-  card-title-3:
-    textColor: "hsl(198deg 28% 18%)"
-    typography:
-      fontWeight: 500
-  card-header-4:
-    textColor: "hsl(198deg 28% 18%)"
-    typography:
-      fontWeight: 500
-  alerts-pager:
-    textColor: "hsl(0deg 0% 0%)"
-  alert-action-2:
-    textColor: "hsl(198deg 100% 27%)"
-  textarea-2:
-    backgroundColor: "hsl(0deg 0% 100%)"
-    textColor: "hsl(198deg 28% 18%)"
-    typography:
-      fontWeight: 400
-  alert-app-level-3:
-    backgroundColor: "hsl(198deg 100% 34%)"
-    textColor: "hsl(0deg 0% 100%)"
-    rounded: "0"
-  input-group-3:
-    textColor: "hsl(198deg 28% 18%)"
-  card-header-toggle-5:
+  button-primary:
+    backgroundColor: "hsl(198deg 100% 48%)"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  button-secondary:
     backgroundColor: transparent
-    textColor: inherit
-    padding: "0"
-  alerts-pager-button-2:
-    textColor: "hsl(0deg 0% 0%)"
-    rounded: "0"
-    padding: "0"
-  nav-close-2:
-    backgroundColor: 0 0
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 18px
+  button-danger:
+    backgroundColor: "hsl(9deg 100% 65%)"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "hsl(0deg 0% 0%)"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "hsl(0deg 0% 0%)"
+    textColor: "#ffffff"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "hsl(198deg 100% 48%)"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "hsl(93deg 80% 37%)"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "hsl(0deg 0% 0%)"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # Clarity Design System
@@ -257,7 +216,7 @@ components:
 
 VMware Clarity — UX guidelines, HTML/CSS framework and Angular components.
 
-Tokens were read from `@clr/ui@18.5.1`, not from a marketing site: 91 colour tokens and 42 type tokens.
+Tokens were read from `@clr/ui@18.5.1`, not from a marketing site: 91 colour tokens and 36 type tokens.
 
 ## Colors
 
@@ -265,8 +224,11 @@ Tokens were read from `@clr/ui@18.5.1`, not from a marketing site: 91 colour tok
 
 ## Typography
 
-Families declared in the source: `Metropolis', 'Avenir Next', sans-serif`, `ui-monospace, Consolas, Menlo, Monaco, monospace`, `Metropolis, 'Avenir Next', 'Helvetica Neue', Arial, sans-serif`, `var(--clr-display-font)`.
+Families declared in the source: `Metropolis, "Avenir Next", sans-serif`, `ui-monospace, Consolas, Menlo, Monaco, monospace`, `Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif`.
 
-## Components
+## Visual Language
 
-19 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **Surface & Theme Polarity**: Dark (hsl(0deg 0% 0%)) canvas paired with `hsl(0deg 0% 0%)` component surfaces and `#f7f7f8` primary ink.
+- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(198deg 100% 48%)` with `#000000` label contrast.
+- **Typographic Voice**: Headings and UI controls set in `Metropolis` across 36 type steps.
+- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.

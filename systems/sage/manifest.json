@@ -1,15 +1,15 @@
 {
   "name": "sage",
   "displayName": "Sage by Kajabi",
-  "description": "Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.",
-  "style": "Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.",
+  "description": "Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.",
+  "style": "Crisp light (#fff) canvas, Noto Sans Hebrew typography, #3e92ee brand accent, and 8px corner geometry",
   "category": "Sage",
   "org": "Sage",
   "theme": "light",
   "tags": [
     "published",
-    "light",
-    "sage"
+    "sage",
+    "light"
   ],
   "homepage": "https://github.com/Kajabi/sage-lib",
   "license": "see repository",
@@ -26,8 +26,8 @@
   ],
   "tokens": {
     "colors": 91,
-    "typography": 3,
-    "components": 0
+    "typography": 2,
+    "components": 8
   },
   "checks": {
     "errors": 0,
@@ -37,5 +37,17 @@
   "files": {
     "design": "DESIGN.md",
     "tokens": "tokens.json"
+  },
+  "popularity": {
+    "rank": 129,
+    "stars": 26,
+    "forks": 3,
+    "npmDownloads": 0,
+    "score": 26,
+    "frameworks": [
+      "css"
+    ],
+    "isDesignSystemRepo": true,
+    "enterpriseRank": null
   }
 }
