@@ -1,0 +1,41 @@
+{
+  "name": "backpack",
+  "displayName": "Backpack",
+  "description": "Skyscanner Backpack — tokens read from https://github.com/skyscanner/backpack.",
+  "style": "Skyscanner Backpack — tokens read from https://github.com/skyscanner/backpack.",
+  "category": "Skyscanner",
+  "org": "Skyscanner",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "skyscanner"
+  ],
+  "homepage": "https://github.com/skyscanner/backpack",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/skyscanner/backpack — 7 token files, 256 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/skyscanner/backpack"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

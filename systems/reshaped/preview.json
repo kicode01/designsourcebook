@@ -1,0 +1,410 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1860fa",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "inherit",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "code-snippet-value",
+      "value": "#96d0ff"
+    },
+    {
+      "name": "code-snippet-attr",
+      "value": "#d19a66"
+    },
+    {
+      "name": "rs-color-brand",
+      "value": "#1860fa"
+    },
+    {
+      "name": "rs-color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-black",
+      "value": "#000"
+    },
+    {
+      "name": "rs-color-on-background-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-on-background-critical",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-on-background-warning",
+      "value": "#000"
+    },
+    {
+      "name": "rs-color-on-background-positive",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-on-brand",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-background-primary",
+      "value": "#1860fa"
+    },
+    {
+      "name": "rs-color-background-primary-faded",
+      "value": "#f5f9ff"
+    },
+    {
+      "name": "rs-color-background-primary-highlighted",
+      "value": "#014ce7"
+    },
+    {
+      "name": "rs-color-border-primary",
+      "value": "#0752ec"
+    },
+    {
+      "name": "rs-color-border-primary-faded",
+      "value": "#e4ecf9"
+    },
+    {
+      "name": "rs-color-foreground-primary",
+      "value": "#0c55ef"
+    },
+    {
+      "name": "rs-color-background-critical",
+      "value": "#dc3246"
+    },
+    {
+      "name": "rs-color-background-critical-faded",
+      "value": "#fff6f6"
+    },
+    {
+      "name": "rs-color-background-critical-highlighted",
+      "value": "#c71335"
+    },
+    {
+      "name": "rs-color-border-critical",
+      "value": "#ce1f3b"
+    },
+    {
+      "name": "rs-color-border-critical-faded",
+      "value": "#f8e6e5"
+    },
+    {
+      "name": "rs-color-foreground-critical",
+      "value": "#c30a32"
+    },
+    {
+      "name": "rs-color-background-warning",
+      "value": "#ffb400"
+    },
+    {
+      "name": "rs-color-background-warning-faded",
+      "value": "#fff7ea"
+    },
+    {
+      "name": "rs-color-background-warning-highlighted",
+      "value": "#e09c00"
+    },
+    {
+      "name": "rs-color-border-warning",
+      "value": "#eea900"
+    },
+    {
+      "name": "rs-color-border-warning-faded",
+      "value": "#fae9ce"
+    },
+    {
+      "name": "rs-color-foreground-warning",
+      "value": "#8a6000"
+    },
+    {
+      "name": "rs-color-background-positive",
+      "value": "#238649"
+    },
+    {
+      "name": "rs-color-background-positive-faded",
+      "value": "#effdf2"
+    },
+    {
+      "name": "rs-color-background-positive-highlighted",
+      "value": "#02763a"
+    },
+    {
+      "name": "rs-color-border-positive",
+      "value": "#0e7a3e"
+    },
+    {
+      "name": "rs-color-border-positive-faded",
+      "value": "#e2efe5"
+    },
+    {
+      "name": "rs-color-foreground-positive",
+      "value": "#147d41"
+    },
+    {
+      "name": "rs-color-background-neutral",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "rs-color-background-neutral-highlighted",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "rs-color-foreground-neutral",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "rs-color-foreground-neutral-faded",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "rs-color-background-disabled",
+      "value": "#eee"
+    },
+    {
+      "name": "rs-color-background-disabled-faded",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "rs-color-foreground-disabled",
+      "value": "#8f8f8f"
+    },
+    {
+      "name": "rs-color-background-elevation-base",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-background-elevation-raised",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-background-elevation-overlay",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-background-page",
+      "value": "#fff"
+    },
+    {
+      "name": "rs-color-background-page-faded",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "rs-color-on-background-neutral",
+      "value": "#000"
+    },
+    {
+      "name": "tw-ring-offset-color",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "#1860fa"
+    }
+  ],
+  "type": [
+    {
+      "name": "rs-font-size-headline-1",
+      "fontFamily": "system-ui",
+      "fontSize": "5rem",
+      "px": 80
+    },
+    {
+      "name": "rs-font-size-headline-2",
+      "fontFamily": "system-ui",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "rs-font-size-headline-3",
+      "fontFamily": "system-ui",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "rs-font-size-featured-1",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "rs-font-size-featured-2",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "rs-font-size-featured-3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "rs-font-size-featured-4",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "rs-font-size-featured-5",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "rs-font-size-featured-6",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "rs-font-family-headline",
+      "fontFamily": "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-title",
+      "fontFamily": "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-body",
+      "fontFamily": "Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-monospace",
+      "fontFamily": "Geist Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-headline-1",
+      "fontFamily": "var(--rs-font-family-headline)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-headline-2",
+      "fontFamily": "var(--rs-font-family-headline)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-headline-3",
+      "fontFamily": "var(--rs-font-family-headline)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-featured-1",
+      "fontFamily": "var(--rs-font-family-title)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-featured-2",
+      "fontFamily": "var(--rs-font-family-title)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-featured-3",
+      "fontFamily": "var(--rs-font-family-title)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-featured-4",
+      "fontFamily": "var(--rs-font-family-title)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-featured-5",
+      "fontFamily": "var(--rs-font-family-title)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-featured-6",
+      "fontFamily": "var(--rs-font-family-title)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-body-1",
+      "fontFamily": "var(--rs-font-family-body)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-body-2",
+      "fontFamily": "var(--rs-font-family-body)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-caption-1",
+      "fontFamily": "var(--rs-font-family-body)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-family-caption-2",
+      "fontFamily": "var(--rs-font-family-body)",
+      "px": 16
+    },
+    {
+      "name": "default-font-family",
+      "fontFamily": "var(--font-sans)",
+      "px": 16
+    },
+    {
+      "name": "default-mono-font-family",
+      "fontFamily": "var(--font-mono)",
+      "px": 16
+    },
+    {
+      "name": "rs-font-size-body-1",
+      "fontFamily": "system-ui",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "rs-font-size-body-2",
+      "fontFamily": "system-ui",
+      "fontSize": ".6875rem",
+      "px": 11
+    },
+    {
+      "name": "rs-font-size-caption-1",
+      "fontFamily": "system-ui",
+      "fontSize": ".6875rem",
+      "px": 11
+    },
+    {
+      "name": "rs-font-size-caption-2",
+      "fontFamily": "system-ui",
+      "fontSize": ".625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "Tabs-module",
+      "kind": "tabs",
+      "textColor": "inherit"
+    },
+    {
+      "key": "Select-module",
+      "kind": "input",
+      "backgroundColor": "0 0",
+      "border": "0"
+    },
+    {
+      "key": "Button-module",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "rounded": "inherit"
+    },
+    {
+      "key": "TextArea-module",
+      "kind": "input",
+      "backgroundColor": "0 0",
+      "border": "0"
+    }
+  ],
+  "overview": "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
+  "dos": ""
+}

@@ -1,0 +1,37 @@
+{
+  "name": "sanity",
+  "displayName": "Sanity",
+  "description": "Red accent, content-first editorial layout",
+  "style": "Red accent, content-first editorial layout",
+  "category": "Infrastructure & Cloud",
+  "theme": "dark",
+  "tags": [
+    "editorial",
+    "infrastructure",
+    "dark"
+  ],
+  "homepage": "https://sanity.io",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 23,
+    "typography": 16,
+    "components": 13
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

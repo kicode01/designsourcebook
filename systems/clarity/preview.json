@@ -1,0 +1,738 @@
+{
+  "canvas": "hsl(0deg 0% 100% / 60%)",
+  "surface": "hsl(0deg 0% 100% / 60%)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "hsl(198deg 100% 48%)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "alias-object-overlay-backdrop-background",
+      "value": "hsl(0deg 0% 0% / 60%)"
+    },
+    {
+      "name": "alias-object-container-backdrop-background",
+      "value": "hsl(0deg 0% 100% / 60%)"
+    },
+    {
+      "name": "global-color-black",
+      "value": "hsl(0deg 0% 0%)"
+    },
+    {
+      "name": "global-color-green-50",
+      "value": "hsl(93deg 80% 94%)"
+    },
+    {
+      "name": "global-color-green-200",
+      "value": "hsl(93deg 80% 70%)"
+    },
+    {
+      "name": "global-color-green-400",
+      "value": "hsl(93deg 80% 48%)"
+    },
+    {
+      "name": "global-color-green-600",
+      "value": "hsl(93deg 80% 37%)"
+    },
+    {
+      "name": "global-color-green-800",
+      "value": "hsl(93deg 80% 23%)"
+    },
+    {
+      "name": "global-color-green-1000",
+      "value": "hsl(93deg 80% 12%)"
+    },
+    {
+      "name": "global-color-blue-50",
+      "value": "hsl(198deg 100% 95%)"
+    },
+    {
+      "name": "global-color-blue-100",
+      "value": "hsl(198deg 100% 87%)"
+    },
+    {
+      "name": "global-color-blue-300",
+      "value": "hsl(198deg 100% 70%)"
+    },
+    {
+      "name": "global-color-blue-500",
+      "value": "hsl(198deg 100% 48%)"
+    },
+    {
+      "name": "global-color-blue-700",
+      "value": "hsl(198deg 100% 34%)"
+    },
+    {
+      "name": "global-color-blue-900",
+      "value": "hsl(198deg 100% 21%)"
+    },
+    {
+      "name": "global-color-violet-50",
+      "value": "hsl(282deg 100% 97%)"
+    },
+    {
+      "name": "global-color-violet-200",
+      "value": "hsl(282deg 73% 83%)"
+    },
+    {
+      "name": "global-color-violet-400",
+      "value": "hsl(282deg 60% 65%)"
+    },
+    {
+      "name": "global-color-violet-600",
+      "value": "hsl(282deg 60% 49%)"
+    },
+    {
+      "name": "global-color-violet-800",
+      "value": "hsl(282deg 100% 26%)"
+    },
+    {
+      "name": "global-color-violet-1000",
+      "value": "hsl(282deg 100% 14%)"
+    },
+    {
+      "name": "global-color-red-100",
+      "value": "hsl(9deg 100% 94%)"
+    },
+    {
+      "name": "global-color-red-300",
+      "value": "hsl(9deg 100% 79%)"
+    },
+    {
+      "name": "global-color-red-500",
+      "value": "hsl(9deg 100% 65%)"
+    },
+    {
+      "name": "global-color-red-700",
+      "value": "hsl(9deg 100% 44%)"
+    },
+    {
+      "name": "global-color-red-900",
+      "value": "hsl(9deg 100% 28%)"
+    },
+    {
+      "name": "global-color-ochre-50",
+      "value": "hsl(41deg 100% 96%)"
+    },
+    {
+      "name": "global-color-ochre-200",
+      "value": "hsl(41deg 100% 86%)"
+    },
+    {
+      "name": "global-color-ochre-400",
+      "value": "hsl(41deg 100% 70%)"
+    },
+    {
+      "name": "global-color-ochre-600",
+      "value": "hsl(39deg 100% 50%)"
+    },
+    {
+      "name": "global-color-ochre-800",
+      "value": "hsl(37deg 100% 32%)"
+    },
+    {
+      "name": "global-color-ochre-1000",
+      "value": "hsl(35deg 100% 19%)"
+    },
+    {
+      "name": "global-color-lavender-100",
+      "value": "hsl(238deg 58% 88%)"
+    },
+    {
+      "name": "global-color-lavender-300",
+      "value": "hsl(238deg 52% 70%)"
+    },
+    {
+      "name": "global-color-lavender-500",
+      "value": "hsl(238deg 59% 58%)"
+    },
+    {
+      "name": "global-color-lavender-700",
+      "value": "hsl(238deg 69% 45%)"
+    },
+    {
+      "name": "global-color-lavender-900",
+      "value": "hsl(238deg 100% 22%)"
+    },
+    {
+      "name": "global-color-azure-50",
+      "value": "hsl(211deg 100% 95%)"
+    },
+    {
+      "name": "global-color-azure-200",
+      "value": "hsl(211deg 100% 81%)"
+    },
+    {
+      "name": "global-color-azure-400",
+      "value": "hsl(211deg 100% 62%)"
+    },
+    {
+      "name": "global-color-azure-600",
+      "value": "hsl(211deg 100% 46%)"
+    },
+    {
+      "name": "global-color-azure-800",
+      "value": "hsl(211deg 100% 26%)"
+    },
+    {
+      "name": "global-color-azure-1000",
+      "value": "hsl(211deg 100% 14%)"
+    },
+    {
+      "name": "global-color-aqua-100",
+      "value": "hsl(184deg 100% 86%)"
+    },
+    {
+      "name": "global-color-aqua-300",
+      "value": "hsl(184deg 100% 62%)"
+    },
+    {
+      "name": "global-color-aqua-500",
+      "value": "hsl(184deg 100% 43%)"
+    },
+    {
+      "name": "global-color-aqua-700",
+      "value": "hsl(184deg 100% 25%)"
+    },
+    {
+      "name": "global-color-aqua-900",
+      "value": "hsl(184deg 100% 13%)"
+    },
+    {
+      "name": "global-color-jade-50",
+      "value": "hsl(160deg 83% 95%)"
+    },
+    {
+      "name": "global-color-jade-200",
+      "value": "hsl(160deg 78% 78%)"
+    },
+    {
+      "name": "global-color-jade-400",
+      "value": "hsl(160deg 69% 53%)"
+    },
+    {
+      "name": "global-color-jade-600",
+      "value": "hsl(160deg 69% 36%)"
+    },
+    {
+      "name": "global-color-jade-800",
+      "value": "hsl(160deg 100% 21%)"
+    },
+    {
+      "name": "global-color-jade-1000",
+      "value": "hsl(160deg 69% 14%)"
+    },
+    {
+      "name": "global-color-yellow-100",
+      "value": "hsl(50deg 100% 84%)"
+    },
+    {
+      "name": "global-color-yellow-300",
+      "value": "hsl(50deg 100% 57%)"
+    },
+    {
+      "name": "global-color-yellow-500",
+      "value": "hsl(44deg 100% 47%)"
+    },
+    {
+      "name": "global-color-yellow-700",
+      "value": "hsl(40deg 100% 37%)"
+    },
+    {
+      "name": "global-color-yellow-900",
+      "value": "hsl(40deg 100% 18%)"
+    },
+    {
+      "name": "global-color-lime-50",
+      "value": "hsl(66deg 100% 94%)"
+    },
+    {
+      "name": "global-color-lime-200",
+      "value": "hsl(66deg 85% 70%)"
+    },
+    {
+      "name": "global-color-lime-400",
+      "value": "hsl(66deg 80% 48%)"
+    },
+    {
+      "name": "global-color-lime-600",
+      "value": "hsl(66deg 90% 36%)"
+    },
+    {
+      "name": "global-color-lime-800",
+      "value": "hsl(66deg 100% 22%)"
+    },
+    {
+      "name": "global-color-lime-1000",
+      "value": "hsl(66deg 100% 7%)"
+    },
+    {
+      "name": "global-color-tangerine-100",
+      "value": "hsl(25deg 100% 88%)"
+    },
+    {
+      "name": "global-color-tangerine-300",
+      "value": "hsl(25deg 100% 72%)"
+    },
+    {
+      "name": "global-color-tangerine-500",
+      "value": "hsl(25deg 100% 48%)"
+    },
+    {
+      "name": "global-color-tangerine-700",
+      "value": "hsl(25deg 100% 34%)"
+    },
+    {
+      "name": "global-color-tangerine-900",
+      "value": "hsl(25deg 100% 19%)"
+    },
+    {
+      "name": "global-color-magenta-50",
+      "value": "hsl(345deg 100% 95%)"
+    },
+    {
+      "name": "global-color-magenta-200",
+      "value": "hsl(345deg 100% 79%)"
+    },
+    {
+      "name": "global-color-magenta-400",
+      "value": "hsl(345deg 100% 61%)"
+    },
+    {
+      "name": "global-color-magenta-600",
+      "value": "hsl(345deg 83% 40%)"
+    },
+    {
+      "name": "global-color-magenta-800",
+      "value": "hsl(345deg 100% 24%)"
+    },
+    {
+      "name": "global-color-magenta-1000",
+      "value": "hsl(345deg 100% 15%)"
+    },
+    {
+      "name": "global-color-pink-100",
+      "value": "hsl(324deg 95% 91%)"
+    },
+    {
+      "name": "global-color-pink-300",
+      "value": "hsl(324deg 78% 70%)"
+    },
+    {
+      "name": "global-color-pink-500",
+      "value": "hsl(324deg 64% 51%)"
+    },
+    {
+      "name": "global-color-pink-700",
+      "value": "hsl(324deg 100% 30%)"
+    },
+    {
+      "name": "global-color-pink-900",
+      "value": "hsl(324deg 100% 18%)"
+    },
+    {
+      "name": "global-color-warm-gray-50",
+      "value": "hsl(282deg 3% 97%)"
+    },
+    {
+      "name": "global-color-warm-gray-200",
+      "value": "hsl(282deg 3% 84%)"
+    },
+    {
+      "name": "global-color-warm-gray-400",
+      "value": "hsl(282deg 3% 63%)"
+    },
+    {
+      "name": "global-color-warm-gray-600",
+      "value": "hsl(282deg 3% 43%)"
+    },
+    {
+      "name": "global-color-warm-gray-800",
+      "value": "hsl(282deg 3% 28%)"
+    },
+    {
+      "name": "global-color-warm-gray-1000",
+      "value": "hsl(282deg 3% 14%)"
+    },
+    {
+      "name": "global-color-slate-100",
+      "value": "hsl(238deg 20% 91%)"
+    },
+    {
+      "name": "global-color-slate-300",
+      "value": "hsl(238deg 20% 73%)"
+    },
+    {
+      "name": "global-color-slate-500",
+      "value": "hsl(238deg 23% 56%)"
+    },
+    {
+      "name": "primary",
+      "value": "hsl(198deg 100% 48%)"
+    }
+  ],
+  "type": [
+    {
+      "name": "typography-h0-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "typography-h0-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "typography-h1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "typography-h1-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "typography-h2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4rem",
+      "px": 22.4
+    },
+    {
+      "name": "typography-h2-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4rem",
+      "px": 22.4
+    },
+    {
+      "name": "typography-p0-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.2rem",
+      "px": 19.2
+    },
+    {
+      "name": "typography-p0-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "1.2rem",
+      "px": 19.2
+    },
+    {
+      "name": "typography-h3-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.1rem",
+      "px": 17.6
+    },
+    {
+      "name": "typography-h3-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "1.1rem",
+      "px": 17.6
+    },
+    {
+      "name": "alias-typography-font-family",
+      "fontFamily": "Metropolis', 'Avenir Next', sans-serif",
+      "px": 16
+    },
+    {
+      "name": "alias-typography-header-font-family",
+      "fontFamily": "Metropolis', 'Avenir Next', sans-serif",
+      "px": 16
+    },
+    {
+      "name": "alias-typography-monospace-font-family",
+      "fontFamily": "ui-monospace, Consolas, Menlo, Monaco, monospace",
+      "px": 16
+    },
+    {
+      "name": "clr-metropolis-font-family",
+      "fontFamily": "Metropolis, 'Avenir Next', 'Helvetica Neue', Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "clr-h1-font-family",
+      "fontFamily": "var(--clr-display-font)",
+      "px": 16
+    },
+    {
+      "name": "clr-h2-font-family",
+      "fontFamily": "var(--clr-display-font)",
+      "px": 16
+    },
+    {
+      "name": "clr-h3-font-family",
+      "fontFamily": "var(--clr-display-font)",
+      "px": 16
+    },
+    {
+      "name": "clr-h4-font-family",
+      "fontFamily": "var(--clr-display-font)",
+      "px": 16
+    },
+    {
+      "name": "clr-h5-font-family",
+      "fontFamily": "var(--clr-display-font)",
+      "px": 16
+    },
+    {
+      "name": "clr-h6-font-family",
+      "fontFamily": "var(--clr-display-font)",
+      "px": 16
+    },
+    {
+      "name": "typography-h4-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9rem",
+      "px": 14.4
+    },
+    {
+      "name": "typography-h4-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9rem",
+      "px": 14.4
+    },
+    {
+      "name": "typography-h5-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8rem",
+      "px": 12.8
+    },
+    {
+      "name": "typography-h5-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8rem",
+      "px": 12.8
+    },
+    {
+      "name": "typography-h6-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.7rem",
+      "px": 11.2
+    },
+    {
+      "name": "typography-h6-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.7rem",
+      "px": 11.2
+    },
+    {
+      "name": "typography-p1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.7rem",
+      "px": 11.2
+    },
+    {
+      "name": "typography-p1-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.7rem",
+      "px": 11.2
+    },
+    {
+      "name": "typography-p2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.65rem",
+      "px": 10.4
+    },
+    {
+      "name": "typography-p2-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.65rem",
+      "px": 10.4
+    },
+    {
+      "name": "typography-p3-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.65rem",
+      "px": 10.4
+    },
+    {
+      "name": "typography-p3-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.65rem",
+      "px": 10.4
+    },
+    {
+      "name": "typography-p4-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem",
+      "px": 9.6
+    },
+    {
+      "name": "typography-p4-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem",
+      "px": 9.6
+    },
+    {
+      "name": "typography-p5-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem",
+      "px": 9.6
+    },
+    {
+      "name": "typography-p5-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem",
+      "px": 9.6
+    },
+    {
+      "name": "typography-p6-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.55rem",
+      "px": 8.8
+    },
+    {
+      "name": "typography-p6-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.55rem",
+      "px": 8.8
+    },
+    {
+      "name": "typography-p7-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.55rem",
+      "px": 8.8
+    },
+    {
+      "name": "typography-p7-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.55rem",
+      "px": 8.8
+    },
+    {
+      "name": "typography-p8-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.5rem",
+      "px": 8
+    },
+    {
+      "name": "typography-p8-font-size-static",
+      "fontFamily": "system-ui",
+      "fontSize": "0.5rem",
+      "px": 8
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "hsl(0deg 0% 0% / 0%)",
+      "textColor": "hsl(198deg 100% 34%)",
+      "border": "1px solid hsl(198deg 100% 34%)"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "hsl(0deg 0% 100%)"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "backgroundColor": "hsl(198deg 100% 95%)",
+      "textColor": "hsl(0deg 0% 0%)"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "hsl(198deg 14% 36%)",
+      "textColor": "hsl(0deg 0% 0%)"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "hsl(198deg 100% 27%)"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "hsl(0deg 0% 100%)",
+      "textColor": "hsl(198deg 28% 18%)"
+    },
+    {
+      "key": "nav-link",
+      "kind": "nav",
+      "textColor": "hsl(198deg 100% 27%)"
+    },
+    {
+      "key": "card-text-2",
+      "kind": "card",
+      "textColor": "hsl(198deg 28% 18%)"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "hsl(198deg 28% 18%)",
+      "rounded": "0",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "card-title-3",
+      "kind": "card",
+      "textColor": "hsl(198deg 28% 18%)"
+    },
+    {
+      "key": "card-header-4",
+      "kind": "card",
+      "textColor": "hsl(198deg 28% 18%)"
+    },
+    {
+      "key": "alerts-pager",
+      "kind": "alerts",
+      "textColor": "hsl(0deg 0% 0%)"
+    },
+    {
+      "key": "alert-action-2",
+      "kind": "alert",
+      "textColor": "hsl(198deg 100% 27%)"
+    },
+    {
+      "key": "textarea-2",
+      "kind": "input",
+      "backgroundColor": "hsl(0deg 0% 100%)",
+      "textColor": "hsl(198deg 28% 18%)"
+    },
+    {
+      "key": "alert-app-level-3",
+      "kind": "alert",
+      "backgroundColor": "hsl(198deg 100% 34%)",
+      "textColor": "hsl(0deg 0% 100%)",
+      "rounded": "0",
+      "border": "none"
+    },
+    {
+      "key": "input-group-3",
+      "kind": "input",
+      "textColor": "hsl(198deg 28% 18%)"
+    },
+    {
+      "key": "card-header-toggle-5",
+      "kind": "card",
+      "backgroundColor": "transparent",
+      "textColor": "inherit",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "alerts-pager-button-2",
+      "kind": "alerts",
+      "textColor": "hsl(0deg 0% 0%)",
+      "rounded": "0",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "nav-close-2",
+      "kind": "nav",
+      "backgroundColor": "0 0",
+      "border": "0"
+    }
+  ],
+  "overview": "VMware Clarity — UX guidelines, HTML/CSS framework and Angular components.",
+  "dos": ""
+}

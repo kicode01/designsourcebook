@@ -1,0 +1,41 @@
+{
+  "name": "mixpanel",
+  "displayName": "Mixpanel Design System",
+  "description": "Mixpanel Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package.",
+  "style": "Mixpanel Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package.",
+  "category": "Mixpanel",
+  "org": "Mixpanel",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "mixpanel"
+  ],
+  "homepage": "https://design.mixpanel.com",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://design.mixpanel.com and its 1 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 85,
+    "typography": 1,
+    "components": 13
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

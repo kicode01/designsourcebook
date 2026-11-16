@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Primer
+description: "GitHub Primer — the design system behind GitHub."
+colors:
+  button-primary-bg-color-active: "#3685f3"
+  fg-color-accent: "#74b9ff"
+  bg-color-disabled: "#262c36"
+  bg-color-success-emphasis: "#194fb1"
+  border-color-attention-emphasis: "#e09b13"
+  border-color-danger-muted: "#f48b25"
+  border-color-done-muted: "#bf8fff"
+  border-color-severe-emphasis: "#e7811d"
+  border-color-sponsors-muted: "#f87cbd"
+  border-color-translucent: "#9198a1"
+  button-danger-fg-color-rest: "#ffb757"
+  button-keybinding-hint-danger-border-color-hover: "#ffffff"
+  control-border-color-selected: "#f0f6fc"
+  control-checked-border-color-rest: "#91cbff"
+  display-blue-border-color-emphasis: "#4da0ff"
+  display-brown-border-color-muted: "#342a1d"
+  display-cyan-border-color-emphasis: "#07ace4"
+  display-gray-border-color-muted: "#2a2b2d"
+  display-indigo-border-color-emphasis: "#9899ec"
+  display-lemon-border-color-muted: "#372901"
+  display-olive-border-color-emphasis: "#a2a626"
+  display-orange-border-color-muted: "#43200a"
+  display-pink-border-color-emphasis: "#e57bb2"
+  display-plum-border-color-muted: "#40125e"
+  display-red-border-color-emphasis: "#f27d83"
+  display-teal-border-color-muted: "#073036"
+  fg-color-danger: "#ffb757"
+  fg-color-success: "#addcff"
+  prettylights-syntax-carriage-return-text: "#f0f6fc"
+  prettylights-syntax-markup-deleted-text: "#ffe1b4"
+  progress-bar-bg-color-neutral: "#656c76"
+  button-danger-fg-color-hover: "#ffffff"
+  control-checked-fg-color-disabled: "#010409"
+  border-color-neutral-emphasis: "#59636e"
+  button-counter-danger-fg-color-rest: "#953800"
+  border-color-draft-emphasis: "#b7bdc8"
+  border-color-upsell-muted: "#bf8fff"
+  button-danger-border-color-active: "#ffb757"
+  button-default-bg-color-disabled: "#262c36"
+  button-default-border-color-rest: "#b7bdc8"
+  button-invisible-fg-color-disabled: "#656c76"
+  button-outline-border-color-active: "#b7bdc8"
+  button-primary-border-color-hover: "#91cbff"
+  button-keybinding-hint-danger-bg-color-rest: "#262c36"
+  button-keybinding-hint-danger-fg-color-active: "#ffffff"
+  button-keybinding-hint-danger-fg-color-rest: "#b7bdc8"
+  button-keybinding-hint-default-fg-color-disabled: "#656c76"
+  button-keybinding-hint-primary-fg-color-rest: "#ffffff"
+  color-prettylights-syntax-markup-changed-text: "#ffe1b4"
+  color-prettylights-syntax-markup-inserted-text: "#caeaff"
+  contribution-default-border-color-3: "#ffffff"
+  control-border-color-danger: "#e7811d"
+  control-border-color-success: "#409eff"
+  control-checked-border-color-disabled: "#656c76"
+  control-fg-color-disabled: "#656c76"
+  control-knob-border-color-checked: "#194fb1"
+  control-track-bg-color-disabled: "#656c76"
+  control-track-fg-color-disabled: "#ffffff"
+  prettylights-syntax-invalid-illegal-text: "#ffb757"
+  progress-bar-bg-color-success: "#194fb1"
+  base-color-neutral-10: "#b7bdc8"
+  base-color-neutral-2: "#151b23"
+  base-color-neutral-5: "#2a313c"
+  base-color-neutral-8: "#656c76"
+  ansi-cyan: "#39c5cf"
+  button-outline-bg-color-active: "#2672f3"
+  control-transparent-bg-color-hover: "#2f3742"
+  data-teal-color-emphasis: "#106c70"
+  display-brown-fg-color: "#cdbb98"
+  display-cyan-scale-8: "#45cbf7"
+  display-indigo-scale-4: "#514ed4"
+  display-olive-scale-0: "#171e0b"
+  display-pine-scale-9: "#3eea97"
+  display-purple-scale-5: "#975bf1"
+  display-yellow-scale-1: "#3d2401"
+  label-coral-bg-color-rest: "#351008"
+  label-lime-bg-color-hover: "#1f3116"
+  label-purple-bg-color-active: "#481a9e"
+  prettylights-syntax-markup-deleted-bg: "#a74c00"
+  control-fg-color-rest: "#25292e"
+  button-keybinding-hint-invisible-bg-color-rest: "#262c36"
+  color-prettylights-syntax-constant: "#91cbff"
+  diff-blob-hunk-line-fg-color: "#b7bdc8"
+  base-color-coral-6: "#f75133"
+  base-color-purple-1: "#e6ccff"
+  base-display-color-auburn-5: "#a86f6b"
+  base-display-color-coral-9: "#ffc0a3"
+  base-display-color-indigo-4: "#514ed4"
+  base-display-color-olive-9: "#e2d04b"
+  base-display-color-plum-4: "#9518d8"
+  primary: "#3685f3"
+---
+
+# Primer
+
+## Overview
+
+GitHub Primer — the design system behind GitHub.
+
+Tokens were read from `@primer/primitives@11.10.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

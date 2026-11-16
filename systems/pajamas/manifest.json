@@ -1,0 +1,43 @@
+{
+  "name": "pajamas",
+  "displayName": "Pajamas",
+  "description": "GitLab Pajamas — design guidelines and UI components behind GitLab.",
+  "style": "GitLab Pajamas — design guidelines and UI components behind GitLab.",
+  "category": "Gitlab",
+  "org": "Gitlab",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "gitlab"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @gitlab/ui@140.1.1 (6 token files, 1107 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@gitlab/ui",
+    "version": "140.1.1",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 28,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

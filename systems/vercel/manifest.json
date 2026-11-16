@@ -1,0 +1,36 @@
+{
+  "name": "vercel",
+  "displayName": "Vercel",
+  "description": "Black and white precision, Geist font",
+  "style": "Black and white precision, Geist font",
+  "category": "Developer Tools & Platforms",
+  "theme": "light",
+  "tags": [
+    "developer-tools",
+    "light"
+  ],
+  "homepage": "https://vercel.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 27,
+    "typography": 18,
+    "components": 4
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

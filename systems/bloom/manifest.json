@@ -1,0 +1,41 @@
+{
+  "name": "bloom",
+  "displayName": "Appear Here Styleguide",
+  "description": "Appear Here Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.",
+  "style": "Appear Here Appear Here Styleguide — tokens read from https://github.com/appearhere/bloom.",
+  "category": "Appear Here",
+  "org": "Appear Here",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "appear-here"
+  ],
+  "homepage": "https://github.com/appearhere/bloom",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/appearhere/bloom — 2 token files, 28 colours harvested, 23 selected.",
+  "source": {
+    "repo": "https://github.com/appearhere/bloom"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 24,
+    "typography": 8,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

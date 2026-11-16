@@ -1,0 +1,47 @@
+{
+  "name": "carbon",
+  "displayName": "Carbon",
+  "description": "IBM Carbon — IBM's open-source enterprise design system.",
+  "style": "IBM Carbon — IBM's open-source enterprise design system.",
+  "category": "IBM",
+  "org": "IBM",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "ibm",
+    "enterprise",
+    "open-source"
+  ],
+  "homepage": "",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @carbon/themes@11.85.0 + @carbon/colors (4 token files, 1219 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@carbon/themes",
+    "version": "11.85.0",
+    "extra": [
+      "@carbon/colors"
+    ]
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ffffff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-light-gray",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "primary-warm-stone",
+      "value": "#f5f2ef"
+    },
+    {
+      "name": "primary-black",
+      "value": "#000000"
+    },
+    {
+      "name": "neutral-dark-gray",
+      "value": "#4e4e4e"
+    },
+    {
+      "name": "neutral-warm-gray",
+      "value": "#777169"
+    },
+    {
+      "name": "neutral-near-white",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "interactive-grid-cyan",
+      "value": "#7fffff"
+    },
+    {
+      "name": "interactive-ring-blue",
+      "value": "rgb(147 197 253 / 0.5)"
+    },
+    {
+      "name": "interactive-border-light",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "interactive-border-subtle",
+      "value": "rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "name": "shadows-inset-border",
+      "value": "rgba(0,0,0,0.075)"
+    },
+    {
+      "name": "shadows-inset-dark",
+      "value": "rgba(0,0,0,0.1)"
+    },
+    {
+      "name": "shadows-outline-ring",
+      "value": "rgba(0,0,0,0.06)"
+    },
+    {
+      "name": "shadows-soft-elevation",
+      "value": "rgba(0,0,0,0.04)"
+    },
+    {
+      "name": "shadows-card-shadow",
+      "value": "rgba(0,0,0,0.4)"
+    },
+    {
+      "name": "shadows-warm-shadow",
+      "value": "rgba(78,50,23,0.04)"
+    },
+    {
+      "name": "shadows-edge-shadow",
+      "value": "rgba(0,0,0,0.08)"
+    },
+    {
+      "name": "shadows-inset-ring",
+      "value": "rgba(0,0,0,0.1)"
+    },
+    {
+      "name": "primary",
+      "value": "#ffffff"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Waldenburg",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 300,
+      "lineHeight": 1.08,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Waldenburg",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 300,
+      "lineHeight": 1.17
+    },
+    {
+      "name": "card-heading",
+      "fontFamily": "Waldenburg",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 300,
+      "lineHeight": 1.13
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Waldenburg",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "body",
+      "fontFamily": "Waldenburg",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.44,
+      "letterSpacing": "0.18px"
+    },
+    {
+      "name": "body-standard",
+      "fontFamily": "Waldenburg",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.16px"
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Waldenburg",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.16px"
+    },
+    {
+      "name": "nav-ui",
+      "fontFamily": "Waldenburg",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.33,
+      "letterSpacing": "0.15px"
+    },
+    {
+      "name": "button",
+      "fontFamily": "Waldenburg",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.47
+    },
+    {
+      "name": "button-uppercase",
+      "fontFamily": "Waldenburg",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": "0.7px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Waldenburg",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": "0.14px"
+    },
+    {
+      "name": "small",
+      "fontFamily": "Waldenburg",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.38
+    },
+    {
+      "name": "code",
+      "fontFamily": "Waldenburg",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.85
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Waldenburg",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "tiny",
+      "fontFamily": "Waldenburg",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-black-pill",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "padding": "0px 14px"
+    },
+    {
+      "key": "button-white-pill",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "9999px",
+      "shadow": "rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px"
+    },
+    {
+      "key": "button-warm-stone-pill",
+      "kind": "button",
+      "backgroundColor": "rgba(245, 242, 239, 0.8)",
+      "textColor": "#000000",
+      "rounded": "30px",
+      "padding": "12px 20px 12px 14px",
+      "shadow": "rgba(78, 50, 23, 0.04) 0px 6px 16px"
+    }
+  ],
+  "overview": "ElevenLabs' website is a study in restrained elegance — a near-white canvas (#ffffff, #f5f5f5) where typography and subtle shadows do all the heavy lifting. The design feels like a premium audio product brochure: clean, spacious, and confident enough to let the content speak (literally, given ElevenLabs makes voice AI). There's an almost Apple-like quality to the whitespace strategy, but warmer — the occasional warm stone tint (#f5f2ef, #777169) prevents the purity from feeling clinical.\n\nThe typography system is built on a fascinating duality: Waldenburg at weight 300 (light) for display headings creates ethereal, whisper-thin titles that feel like sound waves rendered in type — delicate, precise, and surprisingly impactful at large sizes. This light-weight display approach is the design's signature — where most sites use bold headings to grab attention, ElevenLabs uses lightness to…",
+  "dos": "Do\n- Use Waldenburg weight 300 for all display headings — the lightness IS the brand\n- Apply multi-layer shadows (inset + outline + elevation) at sub-0.1 opacity\n- Use warm stone tints (#f5f2ef, rgba(245,242,239,0.8)) for featured elements\n- Apply positive letter-spacing (+0.14px to +0.18px) on Inter body text\n- Use 9999px radius for primary buttons — pill shape is standard\n- Use warm-tinted shadows (rgba(78,50,23,0.04)) on featured CTAs\n- Keep the page predominantly white with subtle gray section differentiation\n- Use WaldenburgFH bold uppercase ONLY for specific CTA button labels\n\nDon't\n- Don't use bold (700) Waldenburg for headings — weight 300 is non-negotiable\n- Don't use heavy shadows (>0.1 opacity) — the ethereal quality requires whisper-level depth\n- Don't use cool gray borders — the system is warm-tinted throughout\n- Don't skip the inset shadow component — half-pixel inset…"
+}

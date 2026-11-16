@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Paste
+description: "Twilio Paste — the design system for Twilio's console."
+colors:
+  color-background-user: "rgb(34, 9, 74)"
+  color-background-subaccount: "rgb(18, 28, 45)"
+  color-background-primary-weaker: "rgb(31, 48, 76)"
+  color-background-body-elevation: "rgb(24, 37, 60)"
+  color-background-warning-weakest: "rgb(64, 19, 15)"
+  color-background-new: "rgb(56, 14, 120)"
+  color-background-new-weakest: "rgb(18, 28, 45)"
+  color-background-primary: "rgb(2, 99, 224)"
+  color-background-success: "rgb(20, 176, 83)"
+  color-background-row-striped: "rgb(18, 28, 45)"
+  color-background-destructive-strongest: "rgb(254, 236, 236)"
+  color-background-brand: "rgb(18, 28, 45)"
+  color-background-available: "rgb(20, 176, 83)"
+  color-background-error-strongest: "rgb(254, 236, 236)"
+  color-background-decorative-30-weakest: "rgb(5, 41, 18)"
+  color-background-decorative-20-weakest: "rgb(3, 11, 93)"
+  color-background-decorative-10-weakest: "rgb(18, 28, 45)"
+  color-background-brand-30: "rgb(106, 221, 178)"
+  color-background-inverse-strong-elevation: "rgb(37, 57, 91)"
+  color-background-strongest: "rgb(225, 227, 234)"
+  color-background-weaker: "rgb(18, 28, 45)"
+  color-background-unavailable: "rgb(219, 19, 42)"
+  color-background-inverse-strongest: "rgb(255, 255, 255)"
+  color-background-brand-stronger: "rgb(18, 28, 45)"
+  color-border-decorative-40-weaker: "rgb(88, 23, 189)"
+  color-border-neutral-weaker: "rgb(0, 20, 137)"
+  color-border-primary-stronger: "rgb(204, 228, 255)"
+  color-border-primary-weaker: "rgb(31, 48, 76)"
+  color-border-destructive: "rgb(219, 19, 42)"
+  color-border-primary-weakest: "rgb(18, 28, 45)"
+  color-border-destructive-strongest: "rgb(254, 236, 236)"
+  color-border-warning-weaker: "rgb(84, 25, 20)"
+  color-border-neutral: "rgb(2, 99, 224)"
+  color-border-error-strongest: "rgb(254, 236, 236)"
+  color-border-neutral-weak: "rgb(4, 60, 181)"
+  color-border-inverse-stronger: "rgb(244, 244, 246)"
+  color-border-primary-strong: "rgb(153, 205, 255)"
+  color-border-primary-weak: "rgb(57, 71, 98)"
+  color-border-inverse-strongest: "rgb(255, 255, 255)"
+  color-border-decorative-10-weaker: "rgb(31, 48, 76)"
+  color-brand-highlight: "rgb(242, 47, 70)"
+  color-text-link-stronger: "rgb(235, 244, 255)"
+  color-text-subaccount: "rgb(255, 233, 128)"
+  color-text-link-destructive: "rgb(236, 91, 91)"
+  color-text-warning: "rgb(255, 179, 122)"
+  color-text-icon-notification: "rgb(236, 91, 91)"
+  color-text-inverse-weak: "rgb(202, 205, 216)"
+  color-text-icon-brand-inverse: "rgb(255, 255, 255)"
+  color-text-success: "rgb(162, 246, 195)"
+  color-text-weak: "rgb(136, 145, 170)"
+  color-text-link: "rgb(0, 140, 255)"
+  color-text-brand: "rgb(18, 28, 45)"
+  color-text-icon-inverse: "rgb(225, 227, 234)"
+  color-text-error-weak: "rgb(236, 91, 91)"
+  color-text-brand-inverse: "rgb(255, 255, 255)"
+  color-text-link-weak: "rgb(57, 71, 98)"
+  color-text: "rgb(244, 244, 246)"
+  color-text-brand-highlight: "rgb(242, 47, 70)"
+  color-text-primary-strong: "rgb(153, 205, 255)"
+  color-text-inverse: "rgb(255, 255, 255)"
+  color-text-warning-strong: "rgb(250, 194, 160)"
+  color-text-link-destructive-strong: "rgb(246, 177, 177)"
+  ink-accent: "#17243B"
+  color-gray-0: "rgb(255, 255, 255)"
+  color-gray-70: "rgb(75, 86, 113)"
+  color-gray-30: "rgb(202, 205, 216)"
+  color-data-visualization-1: "rgb(2, 99, 224)"
+  color-data-visualization-5: "rgb(14, 124, 58)"
+  color-data-visualization-9: "rgb(140, 91, 216)"
+  saffron: "#F2BE5A"
+  black: "#000000"
+  palette-yellow-60: "#e8b407"
+  palette-gray-100-transparent-100: "rgba(18, 28, 45, 1)"
+  palette-purple-05: "#faf7fd"
+  palette-red-90: "#4a0b0b"
+  palette-yellow-10: "#fffbea"
+  palette-orange-60: "#f47c22"
+  palette-orange-40: "#ffb37a"
+  palette-red-30: "#f6b1b1"
+  palette-orange-10: "#fef5ee"
+  palette-gray-90: "#1f304c"
+  palette-gray-60: "#606b85"
+  palette-gray-50: "#8891aa"
+  palette-gray-95: "#18253C"
+  palette-green-100: "#052912"
+  palette-purple-90: "#22094a"
+  palette-blue-90: "#030b5d"
+  palette-gray-110: "#0D131C"
+  palette-purple-60: "#6d2ed1"
+  palette-purple-50: "#8c5bd8"
+  primary: "rgb(31, 48, 76)"
+---
+
+# Paste
+
+## Overview
+
+Twilio Paste — the design system for Twilio's console.
+
+Tokens were read from `@twilio-paste/design-tokens@10.15.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

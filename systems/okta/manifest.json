@@ -1,0 +1,41 @@
+{
+  "name": "okta",
+  "displayName": "Okta Odyssey Design System",
+  "description": "Okta Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.",
+  "style": "Okta Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.",
+  "category": "Okta",
+  "org": "Okta",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "okta"
+  ],
+  "homepage": "https://github.com/okta/odyssey",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/okta/odyssey — 11 token files, 51 colours harvested, 40 selected.",
+  "source": {
+    "repo": "https://github.com/okta/odyssey"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 40,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

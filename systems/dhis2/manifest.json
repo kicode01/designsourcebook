@@ -1,0 +1,41 @@
+{
+  "name": "dhis2",
+  "displayName": "DHIS2 UI",
+  "description": "DHIS2 DHIS2 UI — tokens read from https://github.com/dhis2/ui.",
+  "style": "DHIS2 DHIS2 UI — tokens read from https://github.com/dhis2/ui.",
+  "category": "DHIS2",
+  "org": "DHIS2",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "dhis2"
+  ],
+  "homepage": "https://github.com/dhis2/ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/dhis2/ui — 5 token files, 66 colours harvested, 65 selected.",
+  "source": {
+    "repo": "https://github.com/dhis2/ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 66,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

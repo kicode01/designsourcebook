@@ -1,0 +1,396 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "rgb(240,240,240)",
+  "border": "#f0f0f0",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-next-btn-hover-bg",
+      "value": "rgb(240,240,240)"
+    },
+    {
+      "name": "solid-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "border-color",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "finish-icon-border-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "handle-color-disabled",
+      "value": "#bfbfbf"
+    },
+    {
+      "name": "dot-border-color",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "dot-active-border-color",
+      "value": "#91caff"
+    },
+    {
+      "name": "hover-border-color",
+      "value": "#4096ff"
+    },
+    {
+      "name": "active-border-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "item-link-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-item-text-hover-horizontal",
+      "value": "#1677ff"
+    },
+    {
+      "name": "color-item-text-selected",
+      "value": "#1677ff"
+    },
+    {
+      "name": "color-item-text-selected-horizontal",
+      "value": "#1677ff"
+    },
+    {
+      "name": "color-danger-item-text",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "danger-item-color",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "color-danger-item-text-hover",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "danger-item-hover-color",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "color-danger-item-text-selected",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "danger-item-selected-color",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "color-danger-item-bg-active",
+      "value": "#fff2f0"
+    },
+    {
+      "name": "danger-item-active-bg",
+      "value": "#fff2f0"
+    },
+    {
+      "name": "color-danger-item-bg-selected",
+      "value": "#fff2f0"
+    },
+    {
+      "name": "danger-item-selected-bg",
+      "value": "#fff2f0"
+    },
+    {
+      "name": "dark-danger-item-color",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "dark-danger-item-selected-bg",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "dark-danger-item-hover-color",
+      "value": "#ff7875"
+    },
+    {
+      "name": "dark-danger-item-selected-color",
+      "value": "#fff"
+    },
+    {
+      "name": "dark-danger-item-active-bg",
+      "value": "#ff4d4f"
+    },
+    {
+      "name": "handle-border-color",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "cell-range-border-color",
+      "value": "#82b4f9"
+    },
+    {
+      "name": "primary-color",
+      "value": "#fff"
+    },
+    {
+      "name": "danger-color",
+      "value": "#fff"
+    },
+    {
+      "name": "border-color-disabled",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "default-ghost-border-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "group-border-color",
+      "value": "#4096ff"
+    },
+    {
+      "name": "default-border-color",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "default-border-color-disabled",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "default-hover-border-color",
+      "value": "#4096ff"
+    },
+    {
+      "name": "default-active-border-color",
+      "value": "#0958d9"
+    },
+    {
+      "name": "node-selected-bg",
+      "value": "#e6f4ff"
+    },
+    {
+      "name": "directory-node-selected-color",
+      "value": "#fff"
+    },
+    {
+      "name": "directory-node-selected-bg",
+      "value": "#1677ff"
+    },
+    {
+      "name": "default-bg",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "ink-bar-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "item-selected-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "item-hover-color",
+      "value": "#4096ff"
+    },
+    {
+      "name": "item-active-color",
+      "value": "#0958d9"
+    },
+    {
+      "name": "header-bg",
+      "value": "#fafafa"
+    },
+    {
+      "name": "header-sort-active-bg",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "header-sort-hover-bg",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "body-sort-bg",
+      "value": "#fafafa"
+    },
+    {
+      "name": "row-hover-bg",
+      "value": "#fafafa"
+    },
+    {
+      "name": "row-selected-bg",
+      "value": "#e6f4ff"
+    },
+    {
+      "name": "row-selected-hover-bg",
+      "value": "#bae0ff"
+    },
+    {
+      "name": "footer-bg",
+      "value": "#fafafa"
+    },
+    {
+      "name": "header-split-color",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "fixed-header-sort-active-bg",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "filter-dropdown-menu-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "filter-dropdown-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "expand-icon-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "handle-bg",
+      "value": "#fff"
+    },
+    {
+      "name": "wait-icon-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "finish-icon-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "track-bg",
+      "value": "#91caff"
+    },
+    {
+      "name": "track-hover-bg",
+      "value": "#69b1ff"
+    },
+    {
+      "name": "handle-color",
+      "value": "#91caff"
+    },
+    {
+      "name": "handle-active-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "option-selected-bg",
+      "value": "#e6f4ff"
+    },
+    {
+      "name": "selector-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "clear-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "item-selected-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "star-color",
+      "value": "#fadb14"
+    },
+    {
+      "name": "button-solid-checked-color",
+      "value": "#fff"
+    },
+    {
+      "name": "button-solid-checked-bg",
+      "value": "#1677ff"
+    },
+    {
+      "name": "button-solid-checked-hover-bg",
+      "value": "#4096ff"
+    },
+    {
+      "name": "button-solid-checked-active-bg",
+      "value": "#0958d9"
+    },
+    {
+      "name": "button-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "button-checked-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "radio-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "radio-bg-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "item-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "item-active-color-hover",
+      "value": "#4096ff"
+    },
+    {
+      "name": "item-input-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "hover-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "active-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "content-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "horizontal-item-hover-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "sub-menu-item-selected-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "horizontal-item-selected-color",
+      "value": "#1677ff"
+    },
+    {
+      "name": "color-item-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(240,240,240)"
+    }
+  ],
+  "type": [
+    {
+      "name": "index-family",
+      "fontFamily": "inherit",
+      "px": 16
+    },
+    {
+      "name": "select-input-family",
+      "fontFamily": "inherit",
+      "px": 16
+    },
+    {
+      "name": "mixins-family",
+      "fontFamily": "inherit",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "Ant Design — enterprise UI design language from Ant Group.",
+  "dos": ""
+}

@@ -1,0 +1,194 @@
+{
+  "canvas": "#0e0f0c",
+  "surface": "#0e0f0c",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#0e0f0c",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "brand-near-black",
+      "value": "#0e0f0c"
+    },
+    {
+      "name": "brand-wise-green",
+      "value": "#9fe870"
+    },
+    {
+      "name": "brand-dark-green",
+      "value": "#163300"
+    },
+    {
+      "name": "brand-light-mint",
+      "value": "#e2f6d5"
+    },
+    {
+      "name": "brand-pastel-green",
+      "value": "#cdffad"
+    },
+    {
+      "name": "status-positive-green",
+      "value": "#054d28"
+    },
+    {
+      "name": "status-danger-red",
+      "value": "#d03238"
+    },
+    {
+      "name": "status-warning-yellow",
+      "value": "#ffd11a"
+    },
+    {
+      "name": "status-background-cyan",
+      "value": "rgba(56,200,255,0.10)"
+    },
+    {
+      "name": "status-bright-orange",
+      "value": "#ffc091"
+    },
+    {
+      "name": "neutral-warm-dark",
+      "value": "#454745"
+    },
+    {
+      "name": "neutral-gray",
+      "value": "#868685"
+    },
+    {
+      "name": "neutral-light-surface",
+      "value": "#e8ebe6"
+    },
+    {
+      "name": "primary",
+      "value": "#0e0f0c"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-mega",
+      "fontFamily": "Wise Sans",
+      "fontSize": "126px",
+      "px": 126,
+      "fontWeight": 900,
+      "lineHeight": 0.85
+    },
+    {
+      "name": "display-hero",
+      "fontFamily": "Wise Sans",
+      "fontSize": "96px",
+      "px": 96,
+      "fontWeight": 900,
+      "lineHeight": 0.85
+    },
+    {
+      "name": "alt-heading",
+      "fontFamily": "Wise Sans",
+      "fontSize": "78px",
+      "px": 78,
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-2.34px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Wise Sans",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 900,
+      "lineHeight": 0.85
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Wise Sans",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 900,
+      "lineHeight": 0.85
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Wise Sans",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 600,
+      "lineHeight": 1.23,
+      "letterSpacing": "-0.39px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Wise Sans",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.396px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Wise Sans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.44,
+      "letterSpacing": "0.18px"
+    },
+    {
+      "name": "body-semibold",
+      "fontFamily": "Wise Sans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.44,
+      "letterSpacing": "-0.108px"
+    },
+    {
+      "name": "button",
+      "fontFamily": "Wise Sans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": "-0.108px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Wise Sans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.084px"
+    },
+    {
+      "name": "small",
+      "fontFamily": "Wise Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.084px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-green-pill",
+      "kind": "button",
+      "backgroundColor": "#9fe870",
+      "textColor": "#163300",
+      "rounded": "9999px",
+      "padding": "5px 16px"
+    },
+    {
+      "key": "button-secondary-subtle-pill",
+      "kind": "button",
+      "backgroundColor": "rgba(22, 51, 0, 0.08)",
+      "textColor": "#0e0f0c",
+      "rounded": "9999px",
+      "padding": "8px 12px 8px 16px"
+    }
+  ],
+  "overview": "Wise's website is a bold, confident fintech platform that communicates \"money without borders\" through massive typography and a distinctive lime-green accent. The design operates on a warm off-white canvas with near-black text (#0e0f0c) and a signature Wise Green (#9fe870) — a fresh, lime-bright color that feels alive and optimistic, unlike the corporate blues of traditional banking.\n\nThe typography uses Wise Sans — a proprietary font used at extreme weight 900 (black) for display headings with a remarkably tight line-height of 0.85 and OpenType \"calt\" (contextual alternates). At 126px, the text is so dense it feels like a protest sign — bold, urgent, and impossible to ignore. Inter serves as the body font with weight 600 as the default for emphasis, creating a consistently confident voice.\n\nWhat distinguishes Wise is its green-on-white-on-black material palette. Lime Green (#9fe870)…",
+  "dos": "Do\n- Use Wise Sans weight 900 for display — the extreme boldness IS the brand\n- Apply line-height 0.85 on Wise Sans display — ultra-tight is intentional\n- Use Lime Green (#9fe870) for primary CTAs with Dark Green (#163300) text\n- Apply scale(1.05) hover and scale(0.95) active on buttons\n- Enable \"calt\" on all text\n- Use Inter weight 600 as the body default\n\nDon't\n- Don't use light font weights for Wise Sans — only 900\n- Don't relax the 0.85 line-height on display — the density is the identity\n- Don't use the Wise Green as background for large surfaces — it's for buttons and accents\n- Don't skip the scale animation on buttons\n- Don't use traditional shadows — ring shadows only"
+}

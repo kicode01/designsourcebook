@@ -1,0 +1,43 @@
+{
+  "name": "atlassian",
+  "displayName": "Atlassian Design System",
+  "description": "Atlassian Design System — tokens behind Jira and Confluence.",
+  "style": "Atlassian Design System — tokens behind Jira and Confluence.",
+  "category": "Atlassian",
+  "org": "Atlassian",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "atlassian"
+  ],
+  "homepage": "https://atlassian.design/components/tokens",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @atlaskit/tokens@20.12.0 (11 token files, 1521 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@atlaskit/tokens",
+    "version": "20.12.0",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 14,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

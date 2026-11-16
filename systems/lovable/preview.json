@@ -1,0 +1,213 @@
+{
+  "canvas": "#1c1c1c",
+  "surface": "#1c1c1c",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#f7f4ed",
+  "border": "#eceae4",
+  "radius": "6px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-cream",
+      "value": "#f7f4ed"
+    },
+    {
+      "name": "primary-charcoal",
+      "value": "#1c1c1c"
+    },
+    {
+      "name": "primary-off-white",
+      "value": "#fcfbf8"
+    },
+    {
+      "name": "neutral-charcoal-100",
+      "value": "#1c1c1c"
+    },
+    {
+      "name": "neutral-charcoal-83",
+      "value": "rgba(28,28,28,0.83)"
+    },
+    {
+      "name": "neutral-charcoal-82",
+      "value": "rgba(28,28,28,0.82)"
+    },
+    {
+      "name": "neutral-muted-gray",
+      "value": "#5f5f5d"
+    },
+    {
+      "name": "neutral-charcoal-40",
+      "value": "rgba(28,28,28,0.4)"
+    },
+    {
+      "name": "neutral-charcoal-4",
+      "value": "rgba(28,28,28,0.04)"
+    },
+    {
+      "name": "neutral-charcoal-3",
+      "value": "rgba(28,28,28,0.03)"
+    },
+    {
+      "name": "border-light-cream",
+      "value": "#eceae4"
+    },
+    {
+      "name": "border-cream-surface",
+      "value": "#f7f4ed"
+    },
+    {
+      "name": "interactive-ring-blue",
+      "value": "#3b82f6"
+    },
+    {
+      "name": "interactive-focus-shadow",
+      "value": "rgba(0,0,0,0.1)"
+    },
+    {
+      "name": "inset-button",
+      "value": "rgba(255,255,255,0.2)"
+    },
+    {
+      "name": "primary",
+      "value": "#f7f4ed"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": "-1.5px"
+    },
+    {
+      "name": "display-alt",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 480,
+      "lineHeight": 1
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.9px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.38
+    },
+    {
+      "name": "body",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "link",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button-small",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "link-small",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Camera Plain Variable",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-dark",
+      "kind": "button",
+      "backgroundColor": "#1c1c1c",
+      "textColor": "#fcfbf8",
+      "rounded": "6px",
+      "padding": "8px 16px",
+      "shadow": "rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px 0px 0px 0px, rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px"
+    },
+    {
+      "key": "button-ghost-outline",
+      "kind": "button",
+      "textColor": "#1c1c1c",
+      "rounded": "6px",
+      "padding": "8px 16px",
+      "border": "1px solid rgba(28,28,28,0.4)"
+    },
+    {
+      "key": "button-cream-surface",
+      "kind": "button",
+      "backgroundColor": "#f7f4ed",
+      "textColor": "#1c1c1c",
+      "rounded": "6px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "button-pill-icon",
+      "kind": "button",
+      "backgroundColor": "#f7f4ed",
+      "textColor": "#1c1c1c",
+      "rounded": "9999px"
+    }
+  ],
+  "overview": "Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (#f7f4ed) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake — it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (#1c1c1c) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability.\n\nThe custom Camera Plain Variable typeface is the system's secret weapon. Unlike geometric sans-serifs that signal \"tech company,\" Camera Plain has a humanist warmth — slightly rounded terminals, organic curves, and a comfortable reading rhythm. At display sizes (48px–60px), weight 600 with aggressive negative letter-spacing (-0.9px to -1.5px) compresses headlines into confident, editorial statements.…",
+  "dos": "Do\n- Use the warm cream background (#f7f4ed) as the page foundation — it's the brand's signature warmth\n- Use Camera Plain Variable at display sizes with negative letter-spacing (-0.9px to -1.5px)\n- Derive all grays from #1c1c1c at varying opacity levels for tonal unity\n- Use the inset shadow technique on dark buttons for tactile depth\n- Use #eceae4 borders instead of shadows for card containment\n- Keep the weight system narrow: 400 for body/UI, 600 for headings\n- Use full-pill radius (9999px) only for action pills and icon buttons\n- Apply opacity 0.8 on active states for responsive tactile feedback\n\nDon't\n- Don't use pure white (#ffffff) as a page background — the cream is intentional\n- Don't use heavy box-shadows for cards — borders are the containment mechanism\n- Don't introduce saturated accent colors — the palette is intentionally warm-neutral\n- Don't use weight 700 (bold) — 600 is…"
+}

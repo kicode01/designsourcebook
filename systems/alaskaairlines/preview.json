@@ -1,0 +1,582 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00274a",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "advanced-color-accents-accent1",
+      "value": "#b2d583"
+    },
+    {
+      "name": "advanced-color-accents-accent4-bold",
+      "value": "#fb7f24"
+    },
+    {
+      "name": "advanced-color-boolean-isfalse-border-inverse",
+      "value": "#fff"
+    },
+    {
+      "name": "advanced-color-button-ghost-text-inverse-disabled",
+      "value": "#7e8894"
+    },
+    {
+      "name": "advanced-color-button-primary-border-hover",
+      "value": "#00274a"
+    },
+    {
+      "name": "advanced-color-button-secondary-border-disabled",
+      "value": "#cfe0ef"
+    },
+    {
+      "name": "advanced-color-expanded-widget-background",
+      "value": "#00274a"
+    },
+    {
+      "name": "advanced-color-hyperlink-text-hover",
+      "value": "#01426a"
+    },
+    {
+      "name": "advanced-color-shared-background",
+      "value": "#fff"
+    },
+    {
+      "name": "basic-color-border-brand",
+      "value": "#00274a"
+    },
+    {
+      "name": "basic-color-brand-secondary-muted",
+      "value": "#ebfafd"
+    },
+    {
+      "name": "basic-color-status-info",
+      "value": "#007db1"
+    },
+    {
+      "name": "basic-color-surface-accent2-muted",
+      "value": "#eaf3dd"
+    },
+    {
+      "name": "basic-color-texticon-inverse",
+      "value": "#fff"
+    },
+    {
+      "name": "auro-color-alert-error-on-light",
+      "value": "#df0b37"
+    },
+    {
+      "name": "auro-color-background-darker",
+      "value": "#01426a"
+    },
+    {
+      "name": "auro-color-border-primary-default",
+      "value": "#626b79"
+    },
+    {
+      "name": "auro-color-border-disabled-default",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "auro-color-brand-midnight-400",
+      "value": "#01426a"
+    },
+    {
+      "name": "auro-color-brand-breeze-400",
+      "value": "#099dc5"
+    },
+    {
+      "name": "auro-color-brand-alpine-400",
+      "value": "#631db8"
+    },
+    {
+      "name": "auro-color-brand-canyon-400",
+      "value": "#de3e09"
+    },
+    {
+      "name": "auro-color-brand-neutral-400",
+      "value": "#9fabbb"
+    },
+    {
+      "name": "auro-color-brand-gold-200",
+      "value": "#7f682e"
+    },
+    {
+      "name": "auro-color-icon-accent-on-dark",
+      "value": "#00cff0"
+    },
+    {
+      "name": "auro-color-text-link-default",
+      "value": "#0074c8"
+    },
+    {
+      "name": "auro-color-text-emphasis-on-light",
+      "value": "#01426a"
+    },
+    {
+      "name": "color-background-primary-100-inverse",
+      "value": "#0e2b4f"
+    },
+    {
+      "name": "color-background-error-inverse",
+      "value": "#74110e"
+    },
+    {
+      "name": "color-background-emphasis-inverse",
+      "value": "#225296"
+    },
+    {
+      "name": "color-base-neutral-100",
+      "value": "#f7f8fa"
+    },
+    {
+      "name": "color-base-success-100",
+      "value": "#eef8f5"
+    },
+    {
+      "name": "color-state-error-100",
+      "value": "#ff999b"
+    },
+    {
+      "name": "color-border-tertiary-inverse",
+      "value": "#676767"
+    },
+    {
+      "name": "color-border-success-inverse",
+      "value": "#8eceb9"
+    },
+    {
+      "name": "color-border-ui-active-inverse",
+      "value": "#6ad5ef"
+    },
+    {
+      "name": "color-brand-neutral-200",
+      "value": "#e4e8ec"
+    },
+    {
+      "name": "color-brand-gray-200",
+      "value": "#dddddd"
+    },
+    {
+      "name": "color-brand-red-200",
+      "value": "#fae2da"
+    },
+    {
+      "name": "color-brand-yellow-200",
+      "value": "#ffe87e"
+    },
+    {
+      "name": "color-brand-lime-200",
+      "value": "#d8efb4"
+    },
+    {
+      "name": "color-brand-green-200",
+      "value": "#d4ece4"
+    },
+    {
+      "name": "color-brand-turquoise-200",
+      "value": "#dfe9ea"
+    },
+    {
+      "name": "color-brand-cyan-200",
+      "value": "#a8e9f7"
+    },
+    {
+      "name": "color-brand-blue-200",
+      "value": "#c9e0f7"
+    },
+    {
+      "name": "color-brand-navy-200",
+      "value": "#cfe0ef"
+    },
+    {
+      "name": "color-brand-purple-200",
+      "value": "#ede3fd"
+    },
+    {
+      "name": "color-brand-pink-200",
+      "value": "#fde0e6"
+    },
+    {
+      "name": "color-brand-midnight-200",
+      "value": "#569ed7"
+    },
+    {
+      "name": "color-brand-breeze-200",
+      "value": "#5de3f7"
+    },
+    {
+      "name": "color-brand-alpine-200",
+      "value": "#9e73ea"
+    },
+    {
+      "name": "color-brand-canyon-200",
+      "value": "#f99574"
+    },
+    {
+      "name": "color-brand-sapphire",
+      "value": "#015daa"
+    },
+    {
+      "name": "color-container-primary-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-container-ui-primary-default-default",
+      "value": "#2c67b5"
+    },
+    {
+      "name": "color-container-ui-secondary-disabled-default",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "color-icon-error-default",
+      "value": "#cc1816"
+    },
+    {
+      "name": "color-icon-ui-primary-active-default",
+      "value": "#225296"
+    },
+    {
+      "name": "color-icon-ui-secondary-disabled-default",
+      "value": "#adadad"
+    },
+    {
+      "name": "color-icon-brand-pink-default",
+      "value": "#bf475f"
+    },
+    {
+      "name": "color-icon-brand-navy-default",
+      "value": "#265688"
+    },
+    {
+      "name": "color-text-primary-default",
+      "value": "#2a2a2a"
+    },
+    {
+      "name": "color-text-accent-default",
+      "value": "#647845"
+    },
+    {
+      "name": "color-text-ui-default-default",
+      "value": "#2c67b5"
+    },
+    {
+      "name": "color-utility-neutral-default",
+      "value": "#7e8894"
+    },
+    {
+      "name": "advanced-color-avatar-gradient-bottom",
+      "value": "#cfe0ef"
+    },
+    {
+      "name": "advanced-color-footer-pattern",
+      "value": "#fff"
+    },
+    {
+      "name": "advanced-color-switch-thumb-inverse-on",
+      "value": "#00274a"
+    },
+    {
+      "name": "basic-color-fare-economy-basic-subtle",
+      "value": "#f5f7f7"
+    },
+    {
+      "name": "basic-color-fare-first-business-gradient-front",
+      "value": "#005154"
+    },
+    {
+      "name": "basic-color-tier-program-loyaltytier-gold",
+      "value": "#fbdc7a"
+    },
+    {
+      "name": "auro-color-alert-notification-on-light",
+      "value": "#0074c8"
+    },
+    {
+      "name": "auro-color-base-gray-400",
+      "value": "#767676"
+    },
+    {
+      "name": "auro-color-tier-alaska-mvpgold-default",
+      "value": "#7f682e"
+    },
+    {
+      "name": "auro-color-ui-hover-on-dark",
+      "value": "#5de3f7"
+    },
+    {
+      "name": "basic-color-tier-program-loyaltytier-nickel-muted",
+      "value": "#e5e4e7"
+    },
+    {
+      "name": "color-base-blue-700",
+      "value": "#2c67b5"
+    },
+    {
+      "name": "color-base-cyan-800",
+      "value": "#275b72"
+    },
+    {
+      "name": "color-base-gray-900",
+      "value": "#3d3d3d"
+    },
+    {
+      "name": "color-base-green-1000",
+      "value": "#1f4436"
+    },
+    {
+      "name": "color-base-navy-100",
+      "value": "#f2f7fb"
+    },
+    {
+      "name": "color-base-pink-200",
+      "value": "#fde0e6"
+    },
+    {
+      "name": "color-base-purple-300",
+      "value": "#ddc9fb"
+    },
+    {
+      "name": "color-base-red-400",
+      "value": "#f0a68d"
+    },
+    {
+      "name": "color-base-turquoise-500",
+      "value": "#7ba5a6"
+    },
+    {
+      "name": "color-base-yellow-600",
+      "value": "#96873e"
+    },
+    {
+      "name": "color-icon-emphasis-default",
+      "value": "#2a2a2a"
+    },
+    {
+      "name": "color-tier-alaska-mvpgold100k-inverse",
+      "value": "#c5c1bf"
+    },
+    {
+      "name": "color-tier-oneworld-emerald",
+      "value": "#139142"
+    },
+    {
+      "name": "color-utility-cyan-default",
+      "value": "#6ad5ef"
+    },
+    {
+      "name": "primary",
+      "value": "#00274a"
+    }
+  ],
+  "type": [
+    {
+      "name": "wcss-body-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "wcss-body-lg-emphasized-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "wcss-body-default-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "wcss-body-default-emphasized-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "wcss-display-2xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(3.5rem,6vw,5.375rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-display-xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(3rem,5.3333333333vw,4.5rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-display-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2.75rem,4.6666666667vw,4rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-display-md-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2.5rem,4vw,3.5rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-display-sm-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2rem,3.6666666667vw,3rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-display-xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.75rem,3vw,2.375rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-heading-xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2rem,3vw,2.5rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-heading-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.75rem,2.6666666667vw,2.25rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-heading-md-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.625rem,2.3333333333vw,1.75rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-heading-sm-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.375rem,2vw,1.5rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-heading-xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.25rem,1.6666666667vw,1.25rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-heading-2xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.125rem,1.5vw,1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-2xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2rem,3.1666666667vw,2.375rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.625rem,2.3333333333vw,2rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.5rem,2.1666666667vw,1.75rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-md-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.375rem,1.8333333333vw,1.5rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-sm-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.125rem,1.5vw,1.25rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1rem,1.3333333333vw,1rem)",
+      "px": 16
+    },
+    {
+      "name": "wcss-accent-2xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(0.875rem,1.1666666667vw,0.875rem)",
+      "px": 16
+    },
+    {
+      "name": "auro-font-family-default",
+      "fontFamily": "AS Circular\", Helvetica Neue, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "auro-font-family-mono",
+      "fontFamily": "Menlo, Monaco, Consolas, \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-default",
+      "fontFamily": "AS Circular\", \"Helvetica Neue\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-mono",
+      "fontFamily": "Menlo, Monaco, Consolas, \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "wcss-body-sm-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "wcss-body-sm-emphasized-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "wcss-body-xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "wcss-body-xs-emphasized-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "wcss-body-2xs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "wcss-body-2xs-emphasized-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "#555",
+      "textColor": "#ffffff"
+    }
+  ],
+  "overview": "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.",
+  "dos": ""
+}

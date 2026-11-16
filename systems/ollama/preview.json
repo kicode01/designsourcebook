@@ -1,0 +1,183 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fafafa",
+  "text": "#737373",
+  "muted": "#525252",
+  "brand": "#3b82f6",
+  "border": "color-mix(in srgb, #737373 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-near-black",
+      "value": "#262626"
+    },
+    {
+      "name": "primary-darkest-surface",
+      "value": "#090909"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-snow",
+      "value": "#fafafa"
+    },
+    {
+      "name": "bg-light-gray",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "text-stone",
+      "value": "#737373"
+    },
+    {
+      "name": "text-mid-gray",
+      "value": "#525252"
+    },
+    {
+      "name": "text-silver",
+      "value": "#a3a3a3"
+    },
+    {
+      "name": "text-button-text-dark",
+      "value": "#404040"
+    },
+    {
+      "name": "brand-ring-blue",
+      "value": "#3b82f6"
+    },
+    {
+      "name": "brand-border-light",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "primary",
+      "value": "#3b82f6"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 500,
+      "lineHeight": 1
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 500,
+      "lineHeight": 1.11
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.56
+    },
+    {
+      "name": "body-link",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "code-caption",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "small",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "code-small",
+      "fontFamily": "SF Pro Rounded",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.63
+    }
+  ],
+  "components": [
+    {
+      "key": "button-gray-pill",
+      "kind": "button",
+      "backgroundColor": "#e5e5e5",
+      "textColor": "#262626",
+      "rounded": "9999px",
+      "padding": "10px 24px",
+      "border": "thin solid Light Gray (1px solid #e5e5e5)"
+    },
+    {
+      "key": "button-white-pill",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#404040",
+      "rounded": "9999px",
+      "padding": "10px 24px",
+      "border": "thin solid Border Light (1px solid #d4d4d4)"
+    },
+    {
+      "key": "button-black-pill",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "9999px"
+    }
+  ],
+  "overview": "Ollama's interface is radical minimalism taken to its logical conclusion — a pure-white void where content floats without decoration, shadow, or color. The design philosophy mirrors the product itself: strip away everything unnecessary until only the essential tool remains. This is the digital equivalent of a Dieter Rams object — every pixel earns its place, and the absence of design IS the design.\n\nThe entire page exists in pure grayscale. There is zero chromatic color in the interface — no brand blue, no accent green, no semantic red. The only colors that exist are shades between pure black (#000000) and pure white (#ffffff), creating a monochrome environment that lets the user's mental model of \"open models\" remain uncolored by brand opinion. The Ollama llama mascot, rendered in simple black line art, is the only illustration — and even it's monochrome.\n\nWhat makes Ollama distinctive…",
+  "dos": "Do\n- Use pure white (#ffffff) as the page background — never off-white or cream\n- Use pill-shaped (9999px) radius on all interactive elements — buttons, tabs, inputs, tags\n- Use 12px radius on all non-interactive containers — code blocks, cards, panels\n- Keep the palette strictly grayscale — no chromatic colors except the blue focus ring\n- Use SF Pro Rounded at weight 500 for display headings — the rounded terminals are the brand expression\n- Maintain zero shadows — depth comes from borders and background shifts only\n- Keep content density low — each section should present one clear idea\n- Use monospace for terminal commands and code — it's primary content, not decoration\n- Keep all buttons at 10px 24px padding with pill shape — consistency is absolute\n\nDon't\n- Don't introduce any chromatic color — no brand blue, no accent green, no warm tones\n- Don't use border-radius between 12px and…"
+}

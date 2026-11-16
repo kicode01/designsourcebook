@@ -1,0 +1,113 @@
+---
+version: alpha
+name: PatternFly
+description: "Red Hat PatternFly — open-source design system for enterprise UIs."
+colors:
+  v6-chart-global-danger-color-100: "#b1380b"
+  t-global-background-color-300: "#e0e0e0"
+  t-global-background-color-highlight-100: "#ffcc17"
+  t-global-border-color-300: "#8c8c8c"
+  t-global-border-color-brand-subtle-clicked: "#0066cc"
+  t-global-border-color-hover: "#004d99"
+  t-global-border-color-nonstatus-green-hover: "#204d00"
+  t-global-border-color-nonstatus-red-clicked: "#5f0000"
+  t-global-border-color-status-custom-clicked: "#004d4d"
+  t-global-border-color-status-success-default: "#3d7019"
+  t-global-color-brand-500: "#032142"
+  t-global-color-brand-hover: "#003366"
+  t-global-color-disabled-300: "#707070"
+  t-global-color-status-info-clicked: "#21134d"
+  t-global-color-status-success-default: "#204d00"
+  t-global-color-status-warning-hover: "#54330b"
+  t-global-icon-color-disabled: "#a3a3a3"
+  t-global-icon-color-on-disabled: "#707070"
+  t-global-icon-color-status-on-info-clicked: "#ffffff"
+  t-global-icon-color-status-success-default: "#3d7317"
+  t-global-text-color-500: "#731f00"
+  t-global-text-color-link-350: "#3d2785"
+  t-global-text-color-nonstatus-on-green-clicked: "#151515"
+  t-global-text-color-nonstatus-on-purple-default: "#151515"
+  t-global-text-color-nonstatus-on-yellow-hover: "#151515"
+  t-global-text-color-on-disabled: "#707070"
+  t-global-text-color-status-danger-hover: "#731f00"
+  t-global-text-color-status-on-info-clicked: "#ffffff"
+  t-global-text-color-status-success-default: "#204d00"
+  t-global-text-color-status-warning-hover: "#54330b"
+  v6-chart-echarts-bar-item-style-bar-border-color: "#1f1f1f"
+  v6-chart-echarts-pie-item-style-border-color: "#1f1f1f"
+  v6-c-about-modal-box-background-color: "#ffffff"
+  v6-c-avatar-m-blue-background-color: "#b9dafc"
+  v6-c-avatar-m-orange-border-color: "#f8ae54"
+  v6-c-badge-background-color: "#c7c7c7"
+  v6-c-banner-link-disabled-color: "#a3a3a3"
+  v6-c-banner-m-orange-background-color: "#fccb8f"
+  v6-c-button-hover-background-color: "#731f00"
+  v6-c-button-m-control-hover-border-color: "#4394e5"
+  v6-c-button-m-display-lg-m-primary-hover-background-: "#004d99"
+  v6-c-button-m-display-lg-m-tertiary-hover-border-col: "#e0e0e0"
+  v6-c-button-m-link-m-inline-hover-color: "#004d99"
+  v6-c-button-m-primary-m-clicked-background-color: "#004d99"
+  v6-c-button-m-secondary-m-clicked-color: "#151515"
+  v6-c-button-m-unread-background-color: "#0066cc"
+  v6-c-card-background-color: "#c7c7c7"
+  v6-c-card-m-selectable-m-disabled-background-color: "#c7c7c7"
+  v6-c-draggable-m-dragging-after-border-color: "#b1380b"
+  v6-c-file-upload-m-drag-hover-border-color: "#0066cc"
+  v6-c-form-control-m-success-after-border-color: "#3d7317"
+  v6-c-label-m-blue-background-color: "#b9dafc"
+  v6-c-label-m-danger-m-clickable-hover-background-col: "#731f00"
+  v6-c-label-m-info-color: "#ffffff"
+  v6-c-label-m-orange-m-outline-border-color: "#f8ae54"
+  v6-c-label-m-success-background-color: "#3d7317"
+  v6-c-label-m-warning-background-color: "#ffcc17"
+  v6-c-masthead-border-color: "#e0e0e0"
+  v6-c-menu-toggle-m-primary-color: "#ffffff"
+  v6-c-menu-toggle-m-secondary-hover-color: "#004d99"
+  v6-c-menu-toggle-m-success-border-color: "#3d7317"
+  v6-c-pagination-m-sticky-stuck-background-color: "#ffffff"
+  v6-c-table-m-sticky-footer-background-color: "#ffffff"
+  v6-c-text-input-group-color: "#707070"
+  v6-chart-theme-blue-color-scale-100: "#0066cc"
+  v6-chart-theme-multi-color-ordered-color-scale-1300: "#004d4d"
+  v6-chart-theme-multi-color-ordered-color-scale-800: "#9ad8d8"
+  v6-chart-theme-multi-color-unordered-color-scale-270: "#147878"
+  v6-chart-theme-orange-color-scale-500: "#9e4a06"
+  t-chart-theme-colorscales-blue-colorscale-400: "#4394e5"
+  t-chart-theme-colorscales-purple-colorscale-100: "#5e40be"
+  v6-chart-echarts-global-label-color: "#1f1f1f"
+  t-global-color-favorite-400: "#54330b"
+  t-global-color-nonstatus-gray-default: "#f2f2f2"
+  t-global-color-nonstatus-orange-200: "#f8ae54"
+  t-global-color-nonstatus-red-500: "#5f0000"
+  t-global-color-nonstatus-yellow-hover: "#ffcc17"
+  t-global-color-status-unread-attention-default: "#b1380b"
+  t-global-icon-color-nonstatus-on-green-clicked: "#1f1f1f"
+  t-global-icon-color-nonstatus-on-yellow-default: "#1f1f1f"
+  t-global-icon-color-status-unread-on-default-default: "#ffffff"
+  v6-chart-bullet-qualitative-range-color-scale-100: "#f2f2f2"
+  v6-chart-color-green-200: "#87bb62"
+  v6-chart-color-teal-100: "#9ad8d8"
+  v6-chart-echarts-timeline-control-style-color: "#1f1f1f"
+  v6-c-avatar-m-gray-color: "#1f1f1f"
+  v6-c-banner-m-teal-color: "#151515"
+  v6-c-button-m-unread-hover-color: "#ffffff"
+  v6-c-label-m-custom-color: "#ffffff"
+  v6-c-label-m-purple-m-outline-m-clickable-hover-bord: "#876fd4"
+  primary: "#004d99"
+---
+
+# PatternFly
+
+## Overview
+
+Red Hat PatternFly — open-source design system for enterprise UIs.
+
+Tokens were read from `@patternfly/react-tokens@6.7.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

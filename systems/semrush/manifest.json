@@ -1,0 +1,41 @@
+{
+  "name": "semrush",
+  "displayName": "Semrush Intergalactic Design System",
+  "description": "Semrush Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic.",
+  "style": "Semrush Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic.",
+  "category": "Semrush",
+  "org": "Semrush",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "semrush"
+  ],
+  "homepage": "https://github.com/semrush/intergalactic",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/semrush/intergalactic — 5 token files, 186 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/semrush/intergalactic"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

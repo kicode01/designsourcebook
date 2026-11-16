@@ -1,0 +1,41 @@
+{
+  "name": "shoelace",
+  "displayName": "Shoelace",
+  "description": "Shoelace Shoelace — tokens read from https://github.com/shoelace-style/shoelace.",
+  "style": "Shoelace Shoelace — tokens read from https://github.com/shoelace-style/shoelace.",
+  "category": "Shoelace",
+  "org": "Shoelace",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "shoelace"
+  ],
+  "homepage": "https://github.com/shoelace-style/shoelace",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/shoelace-style/shoelace — 2 token files, 203 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/shoelace-style/shoelace"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 11,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

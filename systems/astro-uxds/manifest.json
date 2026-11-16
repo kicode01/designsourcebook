@@ -1,0 +1,41 @@
+{
+  "name": "astro-uxds",
+  "displayName": "Astro UXDS",
+  "description": "Rocket Communications Astro UXDS — tokens read from https://github.com/RocketCommunicationsInc/astro.",
+  "style": "Rocket Communications Astro UXDS — tokens read from https://github.com/RocketCommunicationsInc/astro.",
+  "category": "Rocket Communications",
+  "org": "Rocket Communications",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "rocket-communications"
+  ],
+  "homepage": "https://github.com/RocketCommunicationsInc/astro",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/RocketCommunicationsInc/astro — 1 token files, 15 colours harvested, 15 selected.",
+  "source": {
+    "repo": "https://github.com/RocketCommunicationsInc/astro"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 16,
+    "typography": 4,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "wix",
+  "displayName": "Wix Style",
+  "description": "Wix Wix Style — read from the rendered page in a browser, not from published tokens.",
+  "style": "Wix Wix Style — read from the rendered page in a browser, not from published tokens.",
+  "category": "Wix",
+  "org": "Wix",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "wix"
+  ],
+  "homepage": "https://www.wix.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://www.wix.com/ in headless Chromium on 2026-11-16 (165 custom properties, 185 sampled elements, 2 files). A rendered snapshot is not a published token package — values can change without notice. Page title: Wix.com - The platform trusted by millions of businesses.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 62,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

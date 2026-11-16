@@ -1,0 +1,42 @@
+{
+  "name": "grafana",
+  "displayName": "Grafana UI",
+  "description": "undefined",
+  "style": "undefined",
+  "category": "Grafana",
+  "org": "Grafana",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "grafana"
+  ],
+  "homepage": "",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @grafana/ui@13.3.1 (10 token files, 19 colours harvested, 14 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@grafana/ui",
+    "version": "13.3.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 15,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

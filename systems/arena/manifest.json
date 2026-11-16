@@ -1,0 +1,41 @@
+{
+  "name": "arena",
+  "displayName": "Arena",
+  "description": "Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena.",
+  "style": "Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena.",
+  "category": "Dravensoft",
+  "org": "Dravensoft",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "dravensoft"
+  ],
+  "homepage": "https://github.com/dravensoft-dev/arena",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/dravensoft-dev/arena — 16 token files, 89 colours harvested, 88 selected.",
+  "source": {
+    "repo": "https://github.com/dravensoft-dev/arena"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 88,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

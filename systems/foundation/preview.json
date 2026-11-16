@@ -1,0 +1,183 @@
+{
+  "canvas": "#0a0a0a",
+  "surface": "#0a0a0a",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#1779ba",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "0",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-color",
+      "value": "#1779ba"
+    },
+    {
+      "name": "secondary-color",
+      "value": "#767676"
+    },
+    {
+      "name": "success-color",
+      "value": "#3adb76"
+    },
+    {
+      "name": "warning-color",
+      "value": "#ffae00"
+    },
+    {
+      "name": "alert-color",
+      "value": "#cc4b37"
+    },
+    {
+      "name": "primary",
+      "value": "#1779ba"
+    },
+    {
+      "name": "secondary",
+      "value": "#767676"
+    },
+    {
+      "name": "success",
+      "value": "#3adb76"
+    },
+    {
+      "name": "warning",
+      "value": "#ffae00"
+    },
+    {
+      "name": "alert",
+      "value": "#cc4b37"
+    },
+    {
+      "name": "light-gray",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "medium-gray",
+      "value": "#cacaca"
+    },
+    {
+      "name": "dark-gray",
+      "value": "#8a8a8a"
+    },
+    {
+      "name": "black",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "white",
+      "value": "#fefefe"
+    }
+  ],
+  "type": [
+    {
+      "name": "stat-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.5rem !default",
+      "px": 40
+    },
+    {
+      "name": "dropdown-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem,\n  $switch-height: 2rem,\n  $paddle-offset: 0.25rem\n) {\n\n  $switch-width: $switch-height * 2",
+      "px": 16
+    },
+    {
+      "name": "font-size-temp",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8rem",
+      "px": 12.8
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem",
+      "px": 9.6
+    }
+  ],
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fefefe",
+      "textColor": "#0a0a0a",
+      "rounded": "0",
+      "border": "1px solid #e6e6e6"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "backgroundColor": "#fefefe",
+      "border": "1px solid #e6e6e6"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "backgroundColor": "#1779ba",
+      "textColor": "#fefefe",
+      "rounded": "0",
+      "padding": "0.33333rem 0.5rem"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "#1779ba",
+      "textColor": "#fefefe",
+      "rounded": "50%",
+      "padding": "0.3em"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#1779ba",
+      "textColor": "#fefefe",
+      "rounded": "0",
+      "padding": "0.85em 1em",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "callout",
+      "kind": "alert",
+      "backgroundColor": "rgb(254.85, 254.85, 254.85)",
+      "textColor": "#0a0a0a",
+      "rounded": "0",
+      "padding": "1rem",
+      "border": "1px solid rgba(10, 10, 10, 0.25)"
+    },
+    {
+      "key": "card-divider-2",
+      "kind": "card",
+      "backgroundColor": "#e6e6e6",
+      "padding": "1rem"
+    },
+    {
+      "key": "tabs-content-2",
+      "kind": "tabs",
+      "backgroundColor": "#fefefe",
+      "textColor": "#0a0a0a",
+      "border": "1px solid #e6e6e6"
+    },
+    {
+      "key": "input-group-label",
+      "kind": "input",
+      "backgroundColor": "#e6e6e6",
+      "textColor": "#0a0a0a",
+      "padding": "0 1rem",
+      "border": "1px solid #cacaca"
+    }
+  ],
+  "overview": "undefined",
+  "dos": ""
+}

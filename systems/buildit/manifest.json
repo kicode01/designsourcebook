@@ -1,0 +1,42 @@
+{
+  "name": "buildit",
+  "displayName": "Buildit Gravity",
+  "description": "undefined",
+  "style": "undefined",
+  "category": "Buildit",
+  "org": "Buildit",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "buildit"
+  ],
+  "homepage": "https://github.com/buildit/gravity-ui-web/tree/develop/packages/gravity-ui-web#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @buildit/gravity-ui-web@3.4.0 (5 token files, 72 colours harvested, 72 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@buildit/gravity-ui-web",
+    "version": "3.4.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 73,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

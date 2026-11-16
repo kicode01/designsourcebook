@@ -1,0 +1,41 @@
+{
+  "name": "workday",
+  "displayName": "Workday Canvas",
+  "description": "Workday Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.",
+  "style": "Workday Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.",
+  "category": "Workday",
+  "org": "Workday",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "workday"
+  ],
+  "homepage": "https://github.com/Workday/canvas-kit",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/Workday/canvas-kit — 8 token files, 70 colours harvested, 69 selected.",
+  "source": {
+    "repo": "https://github.com/Workday/canvas-kit"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 69,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

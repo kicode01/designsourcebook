@@ -1,0 +1,43 @@
+{
+  "name": "primer",
+  "displayName": "Primer",
+  "description": "GitHub Primer — the design system behind GitHub.",
+  "style": "GitHub Primer — the design system behind GitHub.",
+  "category": "GitHub",
+  "org": "GitHub",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "git-hub"
+  ],
+  "homepage": "https://github.com/primer/primitives#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @primer/primitives@11.10.0 (6 token files, 1209 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@primer/primitives",
+    "version": "11.10.0",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

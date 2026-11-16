@@ -1,0 +1,271 @@
+{
+  "canvas": "#050507",
+  "surface": "#101010",
+  "text": "#f2f2f2",
+  "muted": "#ffffff",
+  "brand": "#818cf8",
+  "border": "color-mix(in srgb, #f2f2f2 14%, transparent)",
+  "radius": "6px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-emerald-signal-green",
+      "value": "#00d992"
+    },
+    {
+      "name": "primary-voltagent-mint",
+      "value": "#2fd6a1"
+    },
+    {
+      "name": "primary-tailwind-emerald",
+      "value": "#10b981"
+    },
+    {
+      "name": "brand-soft-purple",
+      "value": "#818cf8"
+    },
+    {
+      "name": "brand-cobalt-primary",
+      "value": "#306cce"
+    },
+    {
+      "name": "brand-deep-cobalt",
+      "value": "#2554a0"
+    },
+    {
+      "name": "brand-ring-blue",
+      "value": "#3b82f6"
+    },
+    {
+      "name": "bg-abyss-black",
+      "value": "#050507"
+    },
+    {
+      "name": "bg-carbon-surface",
+      "value": "#101010"
+    },
+    {
+      "name": "bg-warm-charcoal-border",
+      "value": "#3d3a39"
+    },
+    {
+      "name": "text-snow-white",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "text-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-warm-parchment",
+      "value": "#b8b3b0"
+    },
+    {
+      "name": "text-steel-slate",
+      "value": "#8b949e"
+    },
+    {
+      "name": "text-fog-gray",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "text-mist-gray",
+      "value": "#dcdcdc"
+    },
+    {
+      "name": "text-near-white",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "brand-success-emerald",
+      "value": "#008b00"
+    },
+    {
+      "name": "brand-success-light",
+      "value": "#80d280"
+    },
+    {
+      "name": "brand-warning-amber",
+      "value": "#ffba00"
+    },
+    {
+      "name": "brand-warning-pale",
+      "value": "#ffdd80"
+    },
+    {
+      "name": "brand-danger-coral",
+      "value": "#fb565b"
+    },
+    {
+      "name": "brand-danger-rose",
+      "value": "#fd9c9f"
+    },
+    {
+      "name": "brand-info-teal",
+      "value": "#4cb3d4"
+    },
+    {
+      "name": "brand-dashed-border-slate",
+      "value": "#4f5d75"
+    },
+    {
+      "name": "primary",
+      "value": "#818cf8"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Inter",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.65px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Inter",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.11,
+      "letterSpacing": "-0.9px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Inter",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.6px"
+    },
+    {
+      "name": "sub-heading-light",
+      "fontFamily": "Inter",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 300,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.6px"
+    },
+    {
+      "name": "overline",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.5px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "overline-small",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.56,
+      "letterSpacing": "0.45px"
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "Inter",
+      "fontSize": "14.45px",
+      "px": 14.45,
+      "fontWeight": 500,
+      "lineHeight": 1.65
+    },
+    {
+      "name": "caption-label",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "tag-overline-tiny",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.43,
+      "letterSpacing": "2.52px"
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.23
+    },
+    {
+      "name": "code-button",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 700,
+      "lineHeight": 1.65
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "code-small",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    }
+  ],
+  "components": [
+    {
+      "key": "button-ghost-outline",
+      "kind": "button",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "border": "thin solid Warm Charcoal (1px solid #3d3a39)"
+    },
+    {
+      "key": "button-primary-green-cta",
+      "kind": "button",
+      "backgroundColor": "#101010",
+      "textColor": "#2fd6a1",
+      "border": "none visible"
+    },
+    {
+      "key": "button-tertiary-emphasized-container",
+      "kind": "button",
+      "backgroundColor": "#101010",
+      "textColor": "#f2f2f2",
+      "rounded": "8px",
+      "border": "thick solid Warm Charcoal (3px solid #3d3a39)"
+    }
+  ],
+  "overview": "VoltAgent's interface is a deep-space command terminal for the AI age — a developer-facing darkness built on near-pure-black surfaces (#050507) where the only interruption is the electric pulse of emerald green energy. The entire experience evokes the feeling of staring into a high-powered IDE at 2am: dark, focused, and alive with purpose. This is not a friendly SaaS landing page — it's an engineering platform that announces itself through code snippets, architectural diagrams, and raw technical confidence.\n\nThe green accent (#00d992) is used with surgical precision — it glows from headlines, borders, and interactive elements like a circuit board carrying a signal. Against the carbon-black canvas, this green reads as \"power on\" — a deliberate visual metaphor for an AI agent engineering platform. The supporting palette is built entirely from warm-neutral grays (#3d3a39, #8b949e, #b8b3b0)…",
+  "dos": "Do\n- Use Abyss Black (#050507) as the landing page background and Carbon Surface (#101010) for all contained elements — the two-shade dark system is essential\n- Reserve Emerald Signal Green (#00d992) exclusively for high-signal moments: active borders, glow effects, and the most important interactive accents\n- Use VoltAgent Mint (#2fd6a1) for button text on dark surfaces — it's more readable than pure Signal Green\n- Keep heading line-heights compressed (1.0–1.11) with negative letter-spacing for dense, authoritative text blocks\n- Use the warm gray palette (#3d3a39, #8b949e, #b8b3b0) for borders and secondary text — warmth prevents the dark theme from feeling sterile\n- Present code snippets as primary content — they're hero elements, not supporting illustrations\n- Use border weight (1px → 2px → 3px) and color shifts (#3d3a39 → #00d992) to communicate depth and importance, rather than…"
+}

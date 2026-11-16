@@ -1,0 +1,38 @@
+{
+  "name": "minimax",
+  "displayName": "Minimax",
+  "description": "Bold dark interface with neon accents",
+  "style": "Bold dark interface with neon accents",
+  "category": "AI & Machine Learning",
+  "theme": "light",
+  "tags": [
+    "dark",
+    "bold",
+    "ai",
+    "light"
+  ],
+  "homepage": "https://minimax.io",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 27,
+    "typography": 14,
+    "components": 4
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

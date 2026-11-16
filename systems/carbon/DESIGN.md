@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Carbon
+description: "IBM Carbon — IBM's open-source enterprise design system."
+colors:
+  ai-aura-hover-background: "#edf5ff"
+  ai-popover-caret-bottom-background-actions: "#e9effa"
+  background-inverse: "#393939"
+  border-strong01: "#8d8d8d"
+  border-subtle02: "#c6c6c6"
+  border-tile01: "#a8a8a8"
+  chat-bubble-user-text: "#161616"
+  chat-prompt-background: "#ffffff"
+  focus-inset: "#ffffff"
+  layer-accent01: "#e0e0e0"
+  layer-accent-active03: "#a8a8a8"
+  layer-background02: "#ffffff"
+  link-inverse-hover: "#a6c8ff"
+  link-visited: "#8a3ffc"
+  support-info-inverse: "#4589ff"
+  syntax-link: "#0f62fe"
+  text-on-color-disabled: "#8d8d8d"
+  ai-border-strong-3: "#4589ff"
+  ai-skeleton-element-background-3: "#4589ff"
+  border-disabled-7: "#c6c6c6"
+  border-strong03-3: "#8d8d8d"
+  border-subtle-selected01-3: "#c6c6c6"
+  border-tile03-3: "#a8a8a8"
+  chat-button-text-selected-3: "#525252"
+  chat-prompt-text-3: "#161616"
+  icon-on-color-disabled-7: "#8d8d8d"
+  layer-accent03-3: "#e0e0e0"
+  layer-accent-hover02-3: "#d1d1d1"
+  layer-selected-disabled-7: "#8d8d8d"
+  link-primary-7: "#0f62fe"
+  support-error-7: "#da1e28"
+  support-success-inverse-7: "#42be65"
+  text-helper-7: "#6f6f6f"
+  text-secondary-7: "#525252"
+  ai-popover-caret-bottom-background-2: "#202d45"
+  background-inverse-hover-6: "#e8e8e8"
+  border-strong03-2: "#c6c6c6"
+  border-subtle-selected01-2: "#8d8d8d"
+  border-tile03-2: "#a8a8a8"
+  chat-button-text-selected-2: "#c6c6c6"
+  chat-prompt-text-2: "#f4f4f4"
+  icon-primary-6: "#f4f4f4"
+  layer-accent-active01-2: "#8d8d8d"
+  layer-accent-hover03-2: "#7a7a7a"
+  link-inverse-6: "#0f62fe"
+  link-primary-hover-6: "#a6c8ff"
+  support-error-inverse-6: "#da1e28"
+  support-warning-6: "#f1c21b"
+  text-inverse-6: "#161616"
+  ai-border-end-1: "#4589ff"
+  background-5: "#161616"
+  border-inverse-5: "#f4f4f4"
+  border-subtle01-1: "#525252"
+  border-subtle-selected03-1: "#8d8d8d"
+  chat-bubble-border-1: "#525252"
+  chat-header-text-1: "#f4f4f4"
+  focus-5: "#ffffff"
+  layer-accent01-1: "#393939"
+  layer-accent-active03-1: "#393939"
+  layer-background02-1: "#262626"
+  link-inverse-hover-1: "#0043ce"
+  link-visited-5: "#be95ff"
+  support-info-inverse-5: "#0043ce"
+  syntax-link-1: "#4589ff"
+  text-primary-5: "#f4f4f4"
+  hover-secondary-2: "#4c4c4c"
+  hex: "#b81921"
+  layer-selected-hover01: "#d1d1d1"
+  syntax-definition-operator: "#00539a"
+  syntax-name: "#0f62fe"
+  ai-popover-caret-bottom-3: "#78a9ff"
+  layer-selected-hover02-3: "#d1d1d1"
+  syntax-deleted-3: "#ffd7d9"
+  syntax-namespace-3: "#007d79"
+  ai-popover-caret-center-2: "#4870b5"
+  layer-selected-hover03-2: "#636363"
+  syntax-deref-operator-2: "#e0e0e0"
+  syntax-null-2: "#f4f4f4"
+  chat-avatar-agent-1: "#c6c6c6"
+  layer-selected-inverse-5: "#f4f4f4"
+  syntax-doc-comment-1: "#42be65"
+  syntax-number-1: "#6fdc8c"
+  inverse-hover-ui-3: "#4c4c4c"
+  yellow20: "#fddc69"
+  orange40-hover: "#fa6800"
+  magenta60: "#d02670"
+  purple80-hover: "#5b24ad"
+  cyan100: "#061727"
+  green20: "#a7f0ba"
+  cool-gray40-hover: "#9199a1"
+  primary: "#0f62fe"
+---
+
+# Carbon
+
+## Overview
+
+IBM Carbon — IBM's open-source enterprise design system.
+
+Tokens were read from `@carbon/themes@11.85.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

@@ -1,0 +1,41 @@
+{
+  "name": "kaizen",
+  "displayName": "Kaizen",
+  "description": "Kaizen Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
+  "style": "Kaizen Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
+  "category": "Kaizen",
+  "org": "Kaizen",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "kaizen"
+  ],
+  "homepage": "https://github.com/cultureamp/kaizen-design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/cultureamp/kaizen-design-system — 10 token files, 141 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/cultureamp/kaizen-design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 59,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

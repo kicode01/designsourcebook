@@ -1,0 +1,318 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0d0d0d",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-near-black",
+      "value": "#0d0d0d"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-brand-green",
+      "value": "#18E299"
+    },
+    {
+      "name": "secondary-brand-green-light",
+      "value": "#d4fae8"
+    },
+    {
+      "name": "secondary-brand-green-deep",
+      "value": "#0fa76e"
+    },
+    {
+      "name": "secondary-warm-amber",
+      "value": "#c37d0d"
+    },
+    {
+      "name": "secondary-soft-blue",
+      "value": "#3772cf"
+    },
+    {
+      "name": "secondary-error-red",
+      "value": "#d45656"
+    },
+    {
+      "name": "neutral-gray-900",
+      "value": "#0d0d0d"
+    },
+    {
+      "name": "neutral-gray-700",
+      "value": "#333333"
+    },
+    {
+      "name": "neutral-gray-500",
+      "value": "#666666"
+    },
+    {
+      "name": "neutral-gray-400",
+      "value": "#888888"
+    },
+    {
+      "name": "neutral-gray-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "neutral-gray-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "neutral-gray-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "interactive-link-default",
+      "value": "#0d0d0d"
+    },
+    {
+      "name": "interactive-link-hover",
+      "value": "#18E299"
+    },
+    {
+      "name": "interactive-focus-ring",
+      "value": "#18E299"
+    },
+    {
+      "name": "overlay-card-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "overlay-border-subtle",
+      "value": "rgba(0,0,0,0.05)"
+    },
+    {
+      "name": "overlay-border-medium",
+      "value": "rgba(0,0,0,0.08)"
+    },
+    {
+      "name": "shadows-card-shadow",
+      "value": "rgba(0,0,0,0.03)"
+    },
+    {
+      "name": "shadows-button-shadow",
+      "value": "rgba(0,0,0,0.06)"
+    },
+    {
+      "name": "primary",
+      "value": "#0d0d0d"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Inter",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 600,
+      "lineHeight": 1.15,
+      "letterSpacing": "-1.28px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Inter",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.8px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Inter",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.24px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.2px"
+    },
+    {
+      "name": "card-title-light",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.2px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "Inter",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "link",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "label-uppercase",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.65px"
+    },
+    {
+      "name": "small",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.26px"
+    },
+    {
+      "name": "mono-code",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.6px"
+    },
+    {
+      "name": "mono-badge",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.6px"
+    },
+    {
+      "name": "mono-micro",
+      "fontFamily": "Inter",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-brand",
+      "kind": "button",
+      "backgroundColor": "#0d0d0d",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "padding": "8px 24px",
+      "shadow": "rgba(0,0,0,0.06) 0px 1px 2px"
+    },
+    {
+      "key": "button-secondary-ghost",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0d0d0d",
+      "rounded": "9999px",
+      "padding": "4.5px 12px",
+      "border": "1px solid rgba(0,0,0,0.08)"
+    },
+    {
+      "key": "button-transparent-nav",
+      "kind": "button",
+      "textColor": "#0d0d0d",
+      "rounded": "8px",
+      "padding": "5px 6px",
+      "border": "none or 1px solid rgba(0,0,0,0.05)"
+    },
+    {
+      "key": "button-brand-accent",
+      "kind": "button",
+      "backgroundColor": "#18E299",
+      "textColor": "#0d0d0d",
+      "rounded": "9999px",
+      "padding": "8px 24px"
+    },
+    {
+      "key": "card-standard",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "rounded": "16px",
+      "padding": "24px",
+      "border": "1px solid rgba(0,0,0,0.05)",
+      "shadow": "rgba(0,0,0,0.03) 0px 2px 4px"
+    },
+    {
+      "key": "card-featured",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "rounded": "24px",
+      "padding": "32px",
+      "border": "1px solid rgba(0,0,0,0.05)"
+    },
+    {
+      "key": "card-logo-trust",
+      "kind": "card",
+      "backgroundColor": "#fafafa",
+      "rounded": "16px",
+      "border": "1px solid rgba(0,0,0,0.05)"
+    },
+    {
+      "key": "input-email",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0d0d0d",
+      "rounded": "9999px",
+      "padding": "0px 12px",
+      "border": "1px solid rgba(0,0,0,0.08)"
+    }
+  ],
+  "overview": "Mintlify's website is a study in documentation-as-product design — a white, airy, information-rich surface that treats clarity as its highest aesthetic value. The page opens with a luminous white (#ffffff) background, near-black (#0d0d0d) text, and a signature green brand accent (#18E299) that signals freshness and intelligence without dominating the palette. The overall mood is calm, confident, and engineered for legibility — a design system that whispers \"we care about your developer experience\" in every pixel.\n\nThe Inter font family carries the entire typographic load. At display sizes (40–64px), it uses tight negative letter-spacing (-0.8px to -1.28px) and semibold weight (600), creating headlines that feel focused and compressed like well-written documentation headers. Body text at 16–18px with 150% line-height provides generous reading comfort. Geist Mono appears exclusively for…",
+  "dos": ""
+}

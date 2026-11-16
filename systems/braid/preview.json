@@ -1,0 +1,380 @@
+{
+  "canvas": "#fff",
+  "surface": "#222",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3b72da",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background-body",
+      "value": "#fff"
+    },
+    {
+      "name": "brand-accent",
+      "value": "#3b72da"
+    },
+    {
+      "name": "brand-accent-light",
+      "value": "#bdd4ff"
+    },
+    {
+      "name": "brand-accent-soft",
+      "value": "#f0f4fc"
+    },
+    {
+      "name": "form-accent",
+      "value": "#767676"
+    },
+    {
+      "name": "critical-light-background",
+      "value": "#fbe9eb"
+    },
+    {
+      "name": "info",
+      "value": "#2c88f7"
+    },
+    {
+      "name": "link",
+      "value": "#4c77bb"
+    },
+    {
+      "name": "secondary",
+      "value": "#777"
+    },
+    {
+      "name": "neutral",
+      "value": "#333"
+    },
+    {
+      "name": "color-neutral-light",
+      "value": "#777"
+    },
+    {
+      "name": "background-surface-dark",
+      "value": "#222"
+    },
+    {
+      "name": "neutral-light",
+      "value": "#777"
+    },
+    {
+      "name": "surface-dark",
+      "value": "#222"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "critical",
+      "value": "#ef3e4a"
+    },
+    {
+      "name": "promote",
+      "value": "#855be5"
+    },
+    {
+      "name": "black",
+      "value": "#303030"
+    },
+    {
+      "name": "field",
+      "value": "#333"
+    },
+    {
+      "name": "grey-800",
+      "value": "#1C2330"
+    },
+    {
+      "name": "grey-600",
+      "value": "#414C63"
+    },
+    {
+      "name": "grey-400",
+      "value": "#838FA5"
+    },
+    {
+      "name": "grey-200",
+      "value": "#D2D7DF"
+    },
+    {
+      "name": "grey-75",
+      "value": "#F3F5F7"
+    },
+    {
+      "name": "seek-pink-900",
+      "value": "#520018"
+    },
+    {
+      "name": "seek-pink-700",
+      "value": "#A00043"
+    },
+    {
+      "name": "seek-pink-500",
+      "value": "#E60278"
+    },
+    {
+      "name": "seek-pink-300",
+      "value": "#F470BD"
+    },
+    {
+      "name": "seek-pink-100",
+      "value": "#FCD9EF"
+    },
+    {
+      "name": "seek-blue-900",
+      "value": "#00061B"
+    },
+    {
+      "name": "seek-blue-700",
+      "value": "#051A49"
+    },
+    {
+      "name": "seek-blue-500",
+      "value": "#0D3880"
+    },
+    {
+      "name": "seek-blue-300",
+      "value": "#7795C2"
+    },
+    {
+      "name": "seek-blue-100",
+      "value": "#DCE5F2"
+    },
+    {
+      "name": "seek-blue-light-900",
+      "value": "#081C60"
+    },
+    {
+      "name": "seek-blue-light-700",
+      "value": "#1E47A9"
+    },
+    {
+      "name": "seek-blue-light-500",
+      "value": "#4B84E7"
+    },
+    {
+      "name": "seek-blue-light-300",
+      "value": "#99BFF7"
+    },
+    {
+      "name": "seek-blue-light-100",
+      "value": "#E5F0FD"
+    },
+    {
+      "name": "red-900",
+      "value": "#750606"
+    },
+    {
+      "name": "red-700",
+      "value": "#B91E1E"
+    },
+    {
+      "name": "red-500",
+      "value": "#F94344"
+    },
+    {
+      "name": "red-300",
+      "value": "#FB999A"
+    },
+    {
+      "name": "red-100",
+      "value": "#FFE3E2"
+    },
+    {
+      "name": "orange-900",
+      "value": "#751704"
+    },
+    {
+      "name": "orange-700",
+      "value": "#BB4116"
+    },
+    {
+      "name": "orange-500",
+      "value": "#FD7532"
+    },
+    {
+      "name": "orange-300",
+      "value": "#FEBB90"
+    },
+    {
+      "name": "orange-100",
+      "value": "#FEEEE1"
+    },
+    {
+      "name": "yellow-900",
+      "value": "#723D02"
+    },
+    {
+      "name": "yellow-700",
+      "value": "#B9800D"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#FDC221"
+    },
+    {
+      "name": "yellow-300",
+      "value": "#FEE384"
+    },
+    {
+      "name": "yellow-100",
+      "value": "#FEF8DE"
+    },
+    {
+      "name": "green-900",
+      "value": "#073408"
+    },
+    {
+      "name": "green-700",
+      "value": "#1E771D"
+    },
+    {
+      "name": "green-500",
+      "value": "#3EB73D"
+    },
+    {
+      "name": "green-300",
+      "value": "#98DE97"
+    },
+    {
+      "name": "green-100",
+      "value": "#E3F7E3"
+    },
+    {
+      "name": "mint-900",
+      "value": "#043820"
+    },
+    {
+      "name": "mint-700",
+      "value": "#12784F"
+    },
+    {
+      "name": "mint-500",
+      "value": "#28B888"
+    },
+    {
+      "name": "mint-300",
+      "value": "#8BDEC5"
+    },
+    {
+      "name": "mint-100",
+      "value": "#E2F7F1"
+    },
+    {
+      "name": "cyan-900",
+      "value": "#053842"
+    },
+    {
+      "name": "cyan-700",
+      "value": "#137D8B"
+    },
+    {
+      "name": "cyan-500",
+      "value": "#28BFCE"
+    },
+    {
+      "name": "cyan-300",
+      "value": "#88E2E9"
+    },
+    {
+      "name": "cyan-100",
+      "value": "#E1F8FA"
+    },
+    {
+      "name": "blue-900",
+      "value": "#072254"
+    },
+    {
+      "name": "blue-700",
+      "value": "#1D559D"
+    },
+    {
+      "name": "blue-500",
+      "value": "#3E8FE0"
+    },
+    {
+      "name": "blue-300",
+      "value": "#98C9F1"
+    },
+    {
+      "name": "blue-100",
+      "value": "#E3F2FB"
+    },
+    {
+      "name": "indigo-900",
+      "value": "#08105F"
+    },
+    {
+      "name": "indigo-700",
+      "value": "#2433A7"
+    },
+    {
+      "name": "indigo-500",
+      "value": "#4964E9"
+    },
+    {
+      "name": "indigo-300",
+      "value": "#9FB0F5"
+    },
+    {
+      "name": "indigo-100",
+      "value": "#E6EAFC"
+    },
+    {
+      "name": "violet-900",
+      "value": "#120C64"
+    },
+    {
+      "name": "violet-700",
+      "value": "#392BA7"
+    },
+    {
+      "name": "violet-500",
+      "value": "#6E56E6"
+    },
+    {
+      "name": "violet-300",
+      "value": "#B5A7F4"
+    },
+    {
+      "name": "violet-100",
+      "value": "#ECE9FC"
+    },
+    {
+      "name": "purple-900",
+      "value": "#3E0F65"
+    },
+    {
+      "name": "purple-700",
+      "value": "#7F35A9"
+    },
+    {
+      "name": "purple-500",
+      "value": "#BE68E8"
+    },
+    {
+      "name": "purple-300",
+      "value": "#E1B2F5"
+    },
+    {
+      "name": "purple-100",
+      "value": "#F9EBFD"
+    },
+    {
+      "name": "light-mode-fill",
+      "value": "#000"
+    },
+    {
+      "name": "primary",
+      "value": "#3b72da"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Braid Braid Design System — tokens read from https://github.com/seek-oss/braid-design-system.",
+  "dos": ""
+}

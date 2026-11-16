@@ -1,0 +1,455 @@
+{
+  "canvas": "#010102",
+  "surface": "#0f1011",
+  "text": "#f7f8f8",
+  "muted": "#d0d6e0",
+  "brand": "#5e6ad2",
+  "border": "#23252a",
+  "radius": "6px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "bg-marketing-black",
+      "value": "#010102"
+    },
+    {
+      "name": "bg-panel-dark",
+      "value": "#0f1011"
+    },
+    {
+      "name": "bg-level-3-surface",
+      "value": "#191a1b"
+    },
+    {
+      "name": "bg-secondary-surface",
+      "value": "#28282c"
+    },
+    {
+      "name": "text-primary",
+      "value": "#f7f8f8"
+    },
+    {
+      "name": "text-secondary",
+      "value": "#d0d6e0"
+    },
+    {
+      "name": "text-tertiary",
+      "value": "#8a8f98"
+    },
+    {
+      "name": "text-quaternary",
+      "value": "#62666d"
+    },
+    {
+      "name": "brand-indigo",
+      "value": "#5e6ad2"
+    },
+    {
+      "name": "brand-accent-violet",
+      "value": "#7170ff"
+    },
+    {
+      "name": "brand-accent-hover",
+      "value": "#828fff"
+    },
+    {
+      "name": "brand-security-lavender",
+      "value": "#7a7fad"
+    },
+    {
+      "name": "status-green",
+      "value": "#27a644"
+    },
+    {
+      "name": "status-emerald",
+      "value": "#10b981"
+    },
+    {
+      "name": "border-primary",
+      "value": "#23252a"
+    },
+    {
+      "name": "border-secondary",
+      "value": "#34343a"
+    },
+    {
+      "name": "border-tertiary",
+      "value": "#3e3e44"
+    },
+    {
+      "name": "border-subtle",
+      "value": "rgba(255,255,255,0.05)"
+    },
+    {
+      "name": "border-standard",
+      "value": "rgba(255,255,255,0.08)"
+    },
+    {
+      "name": "border-line-tint",
+      "value": "#141516"
+    },
+    {
+      "name": "border-line-tertiary",
+      "value": "#18191a"
+    },
+    {
+      "name": "light-background",
+      "value": "#f7f8f8"
+    },
+    {
+      "name": "light-surface",
+      "value": "#f3f4f5"
+    },
+    {
+      "name": "light-border",
+      "value": "#d0d6e0"
+    },
+    {
+      "name": "light-border-alt",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "light-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "overlay-primary",
+      "value": "rgba(0,0,0,0.85)"
+    },
+    {
+      "name": "primary",
+      "value": "#5e6ad2"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "Inter Variable",
+      "fontSize": "72px",
+      "px": 72,
+      "fontWeight": 510,
+      "lineHeight": 1,
+      "letterSpacing": "-1.584px"
+    },
+    {
+      "name": "display-large",
+      "fontFamily": "Inter Variable",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 510,
+      "lineHeight": 1,
+      "letterSpacing": "-1.408px"
+    },
+    {
+      "name": "display",
+      "fontFamily": "Inter Variable",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 510,
+      "lineHeight": 1,
+      "letterSpacing": "-1.056px"
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "Inter Variable",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.13,
+      "letterSpacing": "-0.704px"
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "Inter Variable",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.288px"
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "Inter Variable",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 590,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.24px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Inter Variable",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.6,
+      "letterSpacing": "-0.165px"
+    },
+    {
+      "name": "body-emphasis",
+      "fontFamily": "Inter Variable",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 590,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "body",
+      "fontFamily": "Inter Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Inter Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 510,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-semibold",
+      "fontFamily": "Inter Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 590,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "link-large",
+      "fontFamily": "Inter Variable",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "small",
+      "fontFamily": "Inter Variable",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 400,
+      "lineHeight": 1.6,
+      "letterSpacing": "-0.165px"
+    },
+    {
+      "name": "small-medium",
+      "fontFamily": "Inter Variable",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 510,
+      "lineHeight": 1.6,
+      "letterSpacing": "-0.165px"
+    },
+    {
+      "name": "small-semibold",
+      "fontFamily": "Inter Variable",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 590,
+      "lineHeight": 1.6,
+      "letterSpacing": "-0.165px"
+    },
+    {
+      "name": "small-light",
+      "fontFamily": "Inter Variable",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 300,
+      "lineHeight": 1.47,
+      "letterSpacing": "-0.165px"
+    },
+    {
+      "name": "link-medium",
+      "fontFamily": "Inter Variable",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 510,
+      "lineHeight": 2.67
+    },
+    {
+      "name": "caption-large",
+      "fontFamily": "Inter Variable",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 510,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.182px"
+    },
+    {
+      "name": "link-small",
+      "fontFamily": "Inter Variable",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 510,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "mono-body",
+      "fontFamily": "Inter Variable",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Inter Variable",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.13px"
+    },
+    {
+      "name": "link-caption",
+      "fontFamily": "Inter Variable",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.13px"
+    },
+    {
+      "name": "mono-caption",
+      "fontFamily": "Inter Variable",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "label",
+      "fontFamily": "Inter Variable",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "mono-label",
+      "fontFamily": "Inter Variable",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Inter Variable",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 510,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "tiny",
+      "fontFamily": "Inter Variable",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.15px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-ghost",
+      "kind": "button",
+      "backgroundColor": "rgba(255,255,255,0.02)",
+      "textColor": "#e2e4e7",
+      "rounded": "6px",
+      "border": "1px solid rgb(36, 40, 44)",
+      "shadow": "rgba(0,0,0,0.1) 0px 4px 12px"
+    },
+    {
+      "key": "button-subtle",
+      "kind": "button",
+      "backgroundColor": "rgba(255,255,255,0.04)",
+      "textColor": "#d0d6e0",
+      "rounded": "6px",
+      "padding": "0px 6px"
+    },
+    {
+      "key": "button-primary-brand",
+      "kind": "button",
+      "backgroundColor": "#5e6ad2",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "button-icon",
+      "kind": "button",
+      "backgroundColor": "rgba(255,255,255,0.03)",
+      "textColor": "#f7f8f8",
+      "border": "1px solid rgba(255,255,255,0.08)"
+    },
+    {
+      "key": "button-pill",
+      "kind": "button",
+      "textColor": "#d0d6e0",
+      "rounded": "9999px",
+      "padding": "0px 10px 0px 5px",
+      "border": "1px solid rgb(35, 37, 42)"
+    },
+    {
+      "key": "button-small-toolbar",
+      "kind": "button",
+      "backgroundColor": "rgba(255,255,255,0.05)",
+      "textColor": "#62666d",
+      "rounded": "2px",
+      "border": "1px solid rgba(255,255,255,0.05)",
+      "shadow": "rgba(0,0,0,0.03) 0px 1.2px 0px 0px"
+    },
+    {
+      "key": "input-text-area",
+      "kind": "input",
+      "backgroundColor": "rgba(255,255,255,0.02)",
+      "textColor": "#d0d6e0",
+      "rounded": "6px",
+      "padding": "12px 14px",
+      "border": "1px solid rgba(255,255,255,0.08)"
+    },
+    {
+      "key": "input-search",
+      "kind": "input",
+      "textColor": "#f7f8f8",
+      "padding": "1px 32px"
+    },
+    {
+      "key": "input-button-style",
+      "kind": "input",
+      "textColor": "#8a8f98",
+      "rounded": "5px",
+      "padding": "1px 6px"
+    },
+    {
+      "key": "badge-success-pill",
+      "kind": "badge",
+      "backgroundColor": "#10b981",
+      "textColor": "#f7f8f8"
+    },
+    {
+      "key": "badge-neutral-pill",
+      "kind": "badge",
+      "textColor": "#d0d6e0",
+      "rounded": "9999px",
+      "padding": "0px 10px 0px 5px",
+      "border": "1px solid rgb(35, 37, 42)"
+    },
+    {
+      "key": "badge-subtle",
+      "kind": "badge",
+      "backgroundColor": "rgba(255,255,255,0.05)",
+      "textColor": "#f7f8f8",
+      "rounded": "2px",
+      "padding": "0px 8px 0px 2px",
+      "border": "1px solid rgba(255,255,255,0.05)"
+    }
+  ],
+  "overview": "Linear's website is a masterclass in dark-mode-first product design — a near-black canvas (#08090a) where content emerges from darkness like starlight. The overall impression is one of extreme precision engineering: every element exists in a carefully calibrated hierarchy of luminance, from barely-visible borders (rgba(255,255,255,0.05)) to soft, luminous text (#f7f8f8). This is not a dark theme applied to a light design — it is darkness as the native medium, where information density is managed through subtle gradations of white opacity rather than color variation.\n\nThe typography system is built entirely on Inter Variable with OpenType features \"cv01\" and \"ss03\" enabled globally, giving the typeface a cleaner, more geometric character. Inter is used at a remarkable range of weights — from 300 (light body) through 510 (medium, Linear's signature weight) to 590 (semibold emphasis). The…",
+  "dos": "Do\n- Use Inter Variable with \"cv01\", \"ss03\" on ALL text — these features are fundamental to Linear's typeface identity\n- Use weight 510 as your default emphasis weight — it's Linear's signature between-weight\n- Apply aggressive negative letter-spacing at display sizes (-1.584px at 72px, -1.056px at 48px)\n- Build on near-black backgrounds: #08090a for marketing, #0f1011 for panels, #191a1b for elevated surfaces\n- Use semi-transparent white borders (rgba(255,255,255,0.05) to rgba(255,255,255,0.08)) instead of solid dark borders\n- Keep button backgrounds nearly transparent: rgba(255,255,255,0.02) to rgba(255,255,255,0.05)\n- Reserve brand indigo (#5e6ad2 / #7170ff) for primary CTAs and interactive accents only\n- Use #f7f8f8 for primary text — not pure #ffffff, which would be too harsh\n- Apply the luminance stacking model: deeper = darker bg, elevated = slightly lighter bg\n\nDon't\n- Don't use…"
+}

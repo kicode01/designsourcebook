@@ -1,0 +1,41 @@
+{
+  "name": "pharos",
+  "displayName": "Pharos: JSTOR's Design System",
+  "description": "Pharos: Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.",
+  "style": "Pharos: Pharos: JSTOR's Design System — tokens read from https://github.com/ithaka/pharos.",
+  "category": "Pharos:",
+  "org": "Pharos:",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "pharos"
+  ],
+  "homepage": "https://github.com/ithaka/pharos",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/ithaka/pharos — 6 token files, 34 colours harvested, 33 selected.",
+  "source": {
+    "repo": "https://github.com/ithaka/pharos"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 34,
+    "typography": 3,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

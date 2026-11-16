@@ -1,0 +1,387 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#64d2ff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "dataviz-semantic-warning",
+      "value": "#CC4500"
+    },
+    {
+      "name": "sp-colors-accent",
+      "value": "#64d2ff"
+    },
+    {
+      "name": "sp-colors-bg-error",
+      "value": "#ffcdca"
+    },
+    {
+      "name": "sp-colors-fg-error",
+      "value": "#811e18"
+    },
+    {
+      "name": "dataviz-semantic-positive",
+      "value": "#006D23"
+    },
+    {
+      "name": "dataviz-semantic-negative",
+      "value": "#BD002A"
+    },
+    {
+      "name": "color-black",
+      "value": "#0C141C"
+    },
+    {
+      "name": "color-dataviz-categorical-1-default",
+      "value": "#4269D0"
+    },
+    {
+      "name": "color-dataviz-categorical-2-default",
+      "value": "#A463F2"
+    },
+    {
+      "name": "color-dataviz-categorical-3-default",
+      "value": "#EFB118"
+    },
+    {
+      "name": "color-dataviz-categorical-4-default",
+      "value": "#6CC5B0"
+    },
+    {
+      "name": "color-dataviz-categorical-5-default",
+      "value": "#FF8AB7"
+    },
+    {
+      "name": "color-dataviz-categorical-6-default",
+      "value": "#9C6B4E"
+    },
+    {
+      "name": "color-dataviz-categorical-7-default",
+      "value": "#FF725C"
+    },
+    {
+      "name": "color-dataviz-categorical-8-default",
+      "value": "#004080"
+    },
+    {
+      "name": "color-dataviz-categorical-9-default",
+      "value": "#ADDC30"
+    },
+    {
+      "name": "color-dataviz-categorical-10-default",
+      "value": "#D6B4FC"
+    },
+    {
+      "name": "color-dataviz-seq-blue-100",
+      "value": "#b5cbff"
+    },
+    {
+      "name": "color-dataviz-seq-blue-300",
+      "value": "#7c98fe"
+    },
+    {
+      "name": "color-dataviz-seq-blue-500",
+      "value": "#456cd3"
+    },
+    {
+      "name": "color-dataviz-seq-blue-700",
+      "value": "#0742a2"
+    },
+    {
+      "name": "color-dataviz-seq-blue-900",
+      "value": "#00186b"
+    },
+    {
+      "name": "color-dataviz-seq-purple-100",
+      "value": "#ffc9ff"
+    },
+    {
+      "name": "color-dataviz-seq-purple-300",
+      "value": "#d48ffd"
+    },
+    {
+      "name": "color-dataviz-seq-purple-500",
+      "value": "#9d5ceb"
+    },
+    {
+      "name": "color-dataviz-seq-purple-700",
+      "value": "#6c30ba"
+    },
+    {
+      "name": "color-dataviz-seq-purple-900",
+      "value": "#370089"
+    },
+    {
+      "name": "color-dataviz-seq-teal-100",
+      "value": "#a0fae4"
+    },
+    {
+      "name": "color-dataviz-seq-teal-300",
+      "value": "#6dc6b1"
+    },
+    {
+      "name": "color-dataviz-seq-teal-500",
+      "value": "#389480"
+    },
+    {
+      "name": "color-dataviz-seq-teal-700",
+      "value": "#026352"
+    },
+    {
+      "name": "color-dataviz-seq-teal-900",
+      "value": "#003527"
+    },
+    {
+      "name": "color-dataviz-seq-pink-100",
+      "value": "#ffbeeb"
+    },
+    {
+      "name": "color-dataviz-seq-pink-300",
+      "value": "#f37fad"
+    },
+    {
+      "name": "color-dataviz-seq-pink-500",
+      "value": "#c35381"
+    },
+    {
+      "name": "color-dataviz-seq-pink-700",
+      "value": "#932558"
+    },
+    {
+      "name": "color-dataviz-seq-pink-900",
+      "value": "#5d002c"
+    },
+    {
+      "name": "color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "blue-100",
+      "value": "#E8F5FF"
+    },
+    {
+      "name": "blue-200",
+      "value": "#CEECFF"
+    },
+    {
+      "name": "blue-300",
+      "value": "#98CBFF"
+    },
+    {
+      "name": "blue-400",
+      "value": "#40A0FF"
+    },
+    {
+      "name": "blue-500",
+      "value": "#036FE3"
+    },
+    {
+      "name": "blue-600",
+      "value": "#0059C8"
+    },
+    {
+      "name": "blue-700",
+      "value": "#0041AB"
+    },
+    {
+      "name": "blue-800",
+      "value": "#003298"
+    },
+    {
+      "name": "blue-900",
+      "value": "#002A8E"
+    },
+    {
+      "name": "gray-100",
+      "value": "#F7F9FA"
+    },
+    {
+      "name": "gray-200",
+      "value": "#E7EBEE"
+    },
+    {
+      "name": "gray-300",
+      "value": "#CFD9E0"
+    },
+    {
+      "name": "gray-400",
+      "value": "#AEC1CC"
+    },
+    {
+      "name": "gray-500",
+      "value": "#67728A"
+    },
+    {
+      "name": "gray-600",
+      "value": "#5A657C"
+    },
+    {
+      "name": "gray-700",
+      "value": "#414D63"
+    },
+    {
+      "name": "gray-800",
+      "value": "#1B273A"
+    },
+    {
+      "name": "gray-900",
+      "value": "#111B2B"
+    },
+    {
+      "name": "green-100",
+      "value": "#EAF9E8"
+    },
+    {
+      "name": "green-200",
+      "value": "#CDF3C6"
+    },
+    {
+      "name": "green-300",
+      "value": "#9ED696"
+    },
+    {
+      "name": "green-400",
+      "value": "#5DB057"
+    },
+    {
+      "name": "green-500",
+      "value": "#008539"
+    },
+    {
+      "name": "green-600",
+      "value": "#006D23"
+    },
+    {
+      "name": "green-700",
+      "value": "#00550C"
+    },
+    {
+      "name": "green-800",
+      "value": "#004700"
+    },
+    {
+      "name": "green-900",
+      "value": "#003F00"
+    },
+    {
+      "name": "orange-100",
+      "value": "#FFF2E4"
+    },
+    {
+      "name": "orange-200",
+      "value": "#FDE5C0"
+    },
+    {
+      "name": "orange-300",
+      "value": "#FDB882"
+    },
+    {
+      "name": "orange-400",
+      "value": "#F07F23"
+    },
+    {
+      "name": "orange-500",
+      "value": "#CC4500"
+    },
+    {
+      "name": "orange-600",
+      "value": "#B12D00"
+    },
+    {
+      "name": "orange-700",
+      "value": "#892300"
+    },
+    {
+      "name": "orange-800",
+      "value": "#731A00"
+    },
+    {
+      "name": "orange-900",
+      "value": "#631C00"
+    },
+    {
+      "name": "purple-100",
+      "value": "#F7F2FF"
+    },
+    {
+      "name": "purple-200",
+      "value": "#EDE3FF"
+    },
+    {
+      "name": "purple-300",
+      "value": "#D1BBFF"
+    },
+    {
+      "name": "purple-400",
+      "value": "#AE89FF"
+    },
+    {
+      "name": "purple-500",
+      "value": "#8553E7"
+    },
+    {
+      "name": "purple-600",
+      "value": "#6C3ECF"
+    },
+    {
+      "name": "purple-700",
+      "value": "#5127B5"
+    },
+    {
+      "name": "purple-800",
+      "value": "#3E16A4"
+    },
+    {
+      "name": "purple-900",
+      "value": "#340E9C"
+    },
+    {
+      "name": "red-100",
+      "value": "#FFF2F2"
+    },
+    {
+      "name": "red-200",
+      "value": "#FFE0E0"
+    },
+    {
+      "name": "red-300",
+      "value": "#FFB1B2"
+    },
+    {
+      "name": "red-400",
+      "value": "#FF707D"
+    },
+    {
+      "name": "red-500",
+      "value": "#DA294A"
+    },
+    {
+      "name": "red-600",
+      "value": "#BD002A"
+    },
+    {
+      "name": "red-700",
+      "value": "#990017"
+    },
+    {
+      "name": "primary",
+      "value": "#64d2ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "sp-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15
+    }
+  ],
+  "components": [],
+  "overview": "Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.",
+  "dos": ""
+}

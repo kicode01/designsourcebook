@@ -1,0 +1,368 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#005eb8",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "nhsuk-dark-blue-colour",
+      "value": "#003087"
+    },
+    {
+      "name": "nhsuk-blue-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-pale-blue-colour",
+      "value": "#ccdff1"
+    },
+    {
+      "name": "nhsuk-black-colour",
+      "value": "#212b32"
+    },
+    {
+      "name": "nhsuk-grey-1-colour",
+      "value": "#4c6272"
+    },
+    {
+      "name": "nhsuk-grey-2-colour",
+      "value": "#768692"
+    },
+    {
+      "name": "nhsuk-grey-3-colour",
+      "value": "#aeb7bd"
+    },
+    {
+      "name": "nhsuk-grey-4-colour",
+      "value": "#d8dde0"
+    },
+    {
+      "name": "nhsuk-grey-5-colour",
+      "value": "#f0f4f5"
+    },
+    {
+      "name": "nhsuk-white-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-dark-green-colour",
+      "value": "#004c23"
+    },
+    {
+      "name": "nhsuk-green-colour",
+      "value": "#007f3b"
+    },
+    {
+      "name": "nhsuk-pale-green-colour",
+      "value": "#cce5d8"
+    },
+    {
+      "name": "nhsuk-pale-aqua-green-colour",
+      "value": "#bae6e3"
+    },
+    {
+      "name": "nhsuk-aqua-green-colour",
+      "value": "#00a499"
+    },
+    {
+      "name": "nhsuk-dark-aqua-green-colour",
+      "value": "#004a45"
+    },
+    {
+      "name": "nhsuk-dark-purple-colour",
+      "value": "#330072"
+    },
+    {
+      "name": "nhsuk-purple-colour",
+      "value": "#5c338e"
+    },
+    {
+      "name": "nhsuk-pale-purple-colour",
+      "value": "#ded6e8"
+    },
+    {
+      "name": "nhsuk-dark-pink-colour",
+      "value": "#6e234b"
+    },
+    {
+      "name": "nhsuk-pink-colour",
+      "value": "#ae2573"
+    },
+    {
+      "name": "nhsuk-pale-pink-colour",
+      "value": "#efd3e3"
+    },
+    {
+      "name": "nhsuk-dark-red-colour",
+      "value": "#801810"
+    },
+    {
+      "name": "nhsuk-red-colour",
+      "value": "#d5281b"
+    },
+    {
+      "name": "nhsuk-pale-red-colour",
+      "value": "#f7d4d1"
+    },
+    {
+      "name": "nhsuk-dark-orange-colour",
+      "value": "#5f3800"
+    },
+    {
+      "name": "nhsuk-orange-colour",
+      "value": "#ed8b00"
+    },
+    {
+      "name": "nhsuk-pale-orange-colour",
+      "value": "#fbe8cc"
+    },
+    {
+      "name": "nhsuk-dark-warm-yellow-colour",
+      "value": "#664a0b"
+    },
+    {
+      "name": "nhsuk-warm-yellow-colour",
+      "value": "#ffb81c"
+    },
+    {
+      "name": "nhsuk-pale-warm-yellow-colour",
+      "value": "#fff1d2"
+    },
+    {
+      "name": "nhsuk-dark-yellow-colour",
+      "value": "#595215"
+    },
+    {
+      "name": "nhsuk-yellow-colour",
+      "value": "#ffeb3b"
+    },
+    {
+      "name": "nhsuk-pale-yellow-colour",
+      "value": "#fff9c4"
+    },
+    {
+      "name": "nhsuk-brand-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-text-colour",
+      "value": "#212b32"
+    },
+    {
+      "name": "nhsuk-reverse-text-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-template-background-colour",
+      "value": "#d8dde0"
+    },
+    {
+      "name": "nhsuk-body-background-colour",
+      "value": "#f0f4f5"
+    },
+    {
+      "name": "nhsuk-card-background-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-print-text-colour",
+      "value": "#000"
+    },
+    {
+      "name": "nhsuk-secondary-text-colour",
+      "value": "#4c6272"
+    },
+    {
+      "name": "nhsuk-reverse-secondary-text-colour",
+      "value": "#c7dcef"
+    },
+    {
+      "name": "nhsuk-focus-colour",
+      "value": "#ffeb3b"
+    },
+    {
+      "name": "nhsuk-focus-text-colour",
+      "value": "#212b32"
+    },
+    {
+      "name": "nhsuk-error-colour",
+      "value": "#d5281b"
+    },
+    {
+      "name": "nhsuk-error-text-colour",
+      "value": "#d5281b"
+    },
+    {
+      "name": "nhsuk-success-colour",
+      "value": "#007f3b"
+    },
+    {
+      "name": "nhsuk-success-text-colour",
+      "value": "#007f3b"
+    },
+    {
+      "name": "nhsuk-border-colour",
+      "value": "#d8dde0"
+    },
+    {
+      "name": "nhsuk-border-hover-colour",
+      "value": "#aeb7bd"
+    },
+    {
+      "name": "nhsuk-reverse-border-colour",
+      "value": "#337ec6"
+    },
+    {
+      "name": "nhsuk-input-border-colour",
+      "value": "#4c6272"
+    },
+    {
+      "name": "nhsuk-hover-colour",
+      "value": "#aeb7bd"
+    },
+    {
+      "name": "nhsuk-reverse-hover-colour",
+      "value": "#004b93"
+    },
+    {
+      "name": "nhsuk-target-hover-colour",
+      "value": "#e0e4e6"
+    },
+    {
+      "name": "nhsuk-reverse-target-hover-colour",
+      "value": "#0055a6"
+    },
+    {
+      "name": "nhsuk-input-background-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-code-colour",
+      "value": "#d5281b"
+    },
+    {
+      "name": "nhsuk-link-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-link-visited-colour",
+      "value": "#330072"
+    },
+    {
+      "name": "nhsuk-link-hover-colour",
+      "value": "#6e234b"
+    },
+    {
+      "name": "nhsuk-link-active-colour",
+      "value": "#002f5c"
+    },
+    {
+      "name": "nhsuk-button-colour",
+      "value": "#007f3b"
+    },
+    {
+      "name": "nhsuk-button-text-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-button-hover-colour",
+      "value": "#00662f"
+    },
+    {
+      "name": "nhsuk-button-active-colour",
+      "value": "#00401e"
+    },
+    {
+      "name": "nhsuk-button-shadow-colour",
+      "value": "#00401e"
+    },
+    {
+      "name": "nhsuk-secondary-button-solid-background-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-secondary-button-border-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-secondary-button-text-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-secondary-button-hover-colour",
+      "value": "#d9e7f4"
+    },
+    {
+      "name": "nhsuk-secondary-button-active-colour",
+      "value": "#c7dcef"
+    },
+    {
+      "name": "nhsuk-secondary-button-shadow-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-reverse-button-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "nhsuk-reverse-button-text-colour",
+      "value": "#212b32"
+    },
+    {
+      "name": "nhsuk-reverse-button-hover-colour",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "nhsuk-reverse-button-active-colour",
+      "value": "#b3b3b3"
+    },
+    {
+      "name": "nhsuk-reverse-button-shadow-colour",
+      "value": "#b3b3b3"
+    },
+    {
+      "name": "nhsuk-warning-button-colour",
+      "value": "#d5281b"
+    },
+    {
+      "name": "nhsuk-warning-button-hover-colour",
+      "value": "#aa2016"
+    },
+    {
+      "name": "nhsuk-warning-button-active-colour",
+      "value": "#6b140e"
+    },
+    {
+      "name": "nhsuk-warning-button-shadow-colour",
+      "value": "#6b140e"
+    },
+    {
+      "name": "nhsuk-login-button-colour",
+      "value": "#005eb8"
+    },
+    {
+      "name": "nhsuk-login-button-hover-colour",
+      "value": "#004b93"
+    },
+    {
+      "name": "nhsuk-login-button-active-colour",
+      "value": "#002f5c"
+    },
+    {
+      "name": "nhsuk-login-button-shadow-colour",
+      "value": "#002f5c"
+    },
+    {
+      "name": "primary",
+      "value": "#005eb8"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.",
+  "dos": ""
+}

@@ -1,0 +1,36 @@
+{
+  "name": "cal",
+  "displayName": "Cal.com",
+  "description": "Clean neutral UI, developer-oriented simplicity",
+  "style": "Clean neutral UI, developer-oriented simplicity",
+  "category": "Design & Productivity",
+  "theme": "light",
+  "tags": [
+    "productivity",
+    "light"
+  ],
+  "homepage": "https://cal.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 15,
+    "typography": 15,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

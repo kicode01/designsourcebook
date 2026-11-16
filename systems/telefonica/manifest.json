@@ -1,0 +1,42 @@
+{
+  "name": "telefonica",
+  "displayName": "Telefónica Mística",
+  "description": "undefined",
+  "style": "undefined",
+  "category": "Telefónica",
+  "org": "Telefónica",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "telef-nica"
+  ],
+  "homepage": "https://github.com/Telefonica/mistica-web",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @telefonica/mistica@16.44.1 (21 token files, 660 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@telefonica/mistica",
+    "version": "16.44.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 23,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

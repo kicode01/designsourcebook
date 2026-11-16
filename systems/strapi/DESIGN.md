@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Strapi Design System
+description: "Strapi Strapi Design System — tokens read from https://github.com/strapi/design-system."
+colors:
+  color-alternative100: "#181826"
+  color-alternative200: "#4a4a6a"
+  color-alternative500: "#ac73e6"
+  color-alternative600: "#ac73e6"
+  color-alternative700: "#e0c1f4"
+  color-button-neutral0: "#ffffff"
+  color-button-primary500: "#7b79ff"
+  color-button-primary600: "#4945ff"
+  color-danger100: "#181826"
+  color-danger200: "#4a4a6a"
+  color-danger500: "#ee5e52"
+  color-danger600: "#ee5e52"
+  color-danger700: "#ee5e52"
+  color-neutral0: "#212134"
+  color-neutral100: "#181826"
+  color-neutral1000: "#ffffff"
+  color-neutral150: "#32324d"
+  color-neutral200: "#4a4a6a"
+  color-neutral300: "#666687"
+  color-neutral400: "#a5a5ba"
+  color-neutral500: "#c0c0cf"
+  color-neutral600: "#a5a5ba"
+  color-neutral700: "#eaeaef"
+  color-neutral800: "#ffffff"
+  color-neutral900: "#ffffff"
+  color-primary100: "#181826"
+  color-primary200: "#4a4a6a"
+  color-primary500: "#4945ff"
+  color-primary600: "#7b79ff"
+  color-primary700: "#7b79ff"
+  color-secondary100: "#181826"
+  color-secondary200: "#4a4a6a"
+  color-secondary500: "#66b7f1"
+  color-secondary600: "#66b7f1"
+  color-secondary700: "#b8e1ff"
+  color-success100: "#181826"
+  color-success200: "#4a4a6a"
+  color-success500: "#5cb176"
+  color-success600: "#5cb176"
+  color-success700: "#c6f0c2"
+  color-warning100: "#181826"
+  color-warning200: "#4a4a6a"
+  color-warning500: "#f29d41"
+  color-warning600: "#f29d41"
+  color-warning700: "#fae7b9"
+  alternative100: "#181826"
+  alternative200: "#4a4a6a"
+  alternative500: "#ac73e6"
+  alternative600: "#ac73e6"
+  alternative700: "#e0c1f4"
+  button-neutral0: "#ffffff"
+  button-primary500: "#7b79ff"
+  button-primary600: "#4945ff"
+  danger100: "#181826"
+  danger200: "#4a4a6a"
+  danger500: "#ee5e52"
+  danger600: "#ee5e52"
+  danger700: "#ee5e52"
+  neutral0: "#212134"
+  neutral100: "#181826"
+  neutral1000: "#ffffff"
+  neutral150: "#32324d"
+  neutral200: "#4a4a6a"
+  neutral300: "#666687"
+  neutral400: "#a5a5ba"
+  neutral500: "#c0c0cf"
+  neutral600: "#a5a5ba"
+  neutral700: "#eaeaef"
+  neutral800: "#ffffff"
+  neutral900: "#ffffff"
+  primary100: "#181826"
+  primary200: "#4a4a6a"
+  primary500: "#4945ff"
+  primary600: "#7b79ff"
+  primary700: "#7b79ff"
+  secondary100: "#181826"
+  secondary200: "#4a4a6a"
+  secondary500: "#66b7f1"
+  secondary600: "#66b7f1"
+  secondary700: "#b8e1ff"
+  success100: "#181826"
+  success200: "#4a4a6a"
+  success500: "#5cb176"
+  success600: "#5cb176"
+  success700: "#c6f0c2"
+  warning100: "#181826"
+  warning200: "#4a4a6a"
+  warning500: "#f29d41"
+  warning600: "#f29d41"
+  warning700: "#fae7b9"
+  primary: "#7b79ff"
+---
+
+# Strapi Design System
+
+## Overview
+
+Strapi Strapi Design System — tokens read from https://github.com/strapi/design-system.
+
+Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted. The type scale is omitted rather than invented.

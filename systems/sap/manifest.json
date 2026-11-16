@@ -1,0 +1,41 @@
+{
+  "name": "sap",
+  "displayName": "SAP Fiori",
+  "description": "SAP SAP Fiori — tokens read from https://github.com/SAP/ui5-webcomponents.",
+  "style": "SAP SAP Fiori — tokens read from https://github.com/SAP/ui5-webcomponents.",
+  "category": "SAP",
+  "org": "SAP",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "sap"
+  ],
+  "homepage": "https://github.com/SAP/ui5-webcomponents",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/SAP/ui5-webcomponents — 2 token files, 41 colours harvested, 38 selected.",
+  "source": {
+    "repo": "https://github.com/SAP/ui5-webcomponents"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 39,
+    "typography": 1,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

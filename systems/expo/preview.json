@@ -1,0 +1,207 @@
+{
+  "canvas": "#f0f0f3",
+  "surface": "#ffffff",
+  "text": "#60646c",
+  "muted": "#555860",
+  "brand": "#0d74ce",
+  "border": "color-mix(in srgb, #60646c 14%, transparent)",
+  "radius": "6px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-expo-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-near-black",
+      "value": "#1c2024"
+    },
+    {
+      "name": "brand-link-cobalt",
+      "value": "#0d74ce"
+    },
+    {
+      "name": "brand-legal-blue",
+      "value": "#476cff"
+    },
+    {
+      "name": "brand-widget-sky",
+      "value": "#47c2ff"
+    },
+    {
+      "name": "brand-preview-purple",
+      "value": "#8145b5"
+    },
+    {
+      "name": "bg-cloud-gray",
+      "value": "#f0f0f3"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-widget-dark",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "bg-banner-dark",
+      "value": "#171717"
+    },
+    {
+      "name": "text-slate-gray",
+      "value": "#60646c"
+    },
+    {
+      "name": "text-mid-slate",
+      "value": "#555860"
+    },
+    {
+      "name": "text-silver",
+      "value": "#b0b4ba"
+    },
+    {
+      "name": "text-pewter",
+      "value": "#999999"
+    },
+    {
+      "name": "text-light-silver",
+      "value": "#cccccc"
+    },
+    {
+      "name": "text-dark-slate",
+      "value": "#363a3f"
+    },
+    {
+      "name": "text-charcoal",
+      "value": "#333333"
+    },
+    {
+      "name": "brand-warning-amber",
+      "value": "#ab6400"
+    },
+    {
+      "name": "brand-destructive-rose",
+      "value": "#eb8e90"
+    },
+    {
+      "name": "brand-border-lavender",
+      "value": "#e0e1e6"
+    },
+    {
+      "name": "brand-input-border",
+      "value": "#d9d9e0"
+    },
+    {
+      "name": "brand-dark-focus-ring",
+      "value": "#2547d0"
+    },
+    {
+      "name": "primary",
+      "value": "#0d74ce"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Inter",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1.6px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Inter",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 600,
+      "lineHeight": 1.1,
+      "letterSpacing": "-2px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.25px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "caption-label",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "code-caption",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "tag-small",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1
+    },
+    {
+      "name": "code-small",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#1c2024",
+      "rounded": "6px",
+      "border": "thin solid Input Border (1px solid #d9d9e0)"
+    },
+    {
+      "key": "button-dark-primary",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff"
+    }
+  ],
+  "overview": "Expo's interface is a luminous, confidence-radiating developer platform built on the premise that tools for building apps should feel as polished as the apps themselves. The entire experience lives on a bright, airy canvas — a cool-tinted off-white (#f0f0f3) that gives the page a subtle technological coolness without the starkness of pure white. This is a site that breathes: enormous vertical spacing between sections creates a gallery-like pace where each feature gets its own \"room.\"\n\nThe design language is decisively monochromatic — pure black (#000000) headlines against the lightest possible backgrounds, with a spectrum of cool blue-grays (#60646c, #b0b4ba, #555860) handling all secondary communication. Color is almost entirely absent from the interface itself; when it appears, it's reserved for product screenshots, app icons, and the React universe illustration — making the actual…",
+  "dos": "Do\n- Use Cloud Gray (#f0f0f3) as the page background and Pure White (#ffffff) for elevated cards — the two-tone light system is essential\n- Keep display headlines at extreme negative letter-spacing (-1.6px to -3px at 64px) for the signature compressed look\n- Use pill-shaped (9999px) radius for primary CTA buttons — the organic shape is core to the identity\n- Reserve black (#000000) for headlines and primary CTAs — it carries maximum authority on the light canvas\n- Use Slate Gray (#60646c) for secondary text — it's the precise balance between readable and receded\n- Maintain enormous vertical spacing between sections (96px+) — the gallery pacing defines the premium feel\n- Use product screenshots as the primary visual content — the interface stays monochrome, the products bring color\n- Apply Inter at the full weight range (400–900) — weight contrast IS the hierarchy\n\nDon't\n- Don't…"
+}

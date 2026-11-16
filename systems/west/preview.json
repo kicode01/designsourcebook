@@ -1,0 +1,105 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3c1053",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary",
+      "value": "#3c1053"
+    },
+    {
+      "name": "secondary",
+      "value": "#9d5baf"
+    },
+    {
+      "name": "bus",
+      "value": "#ea0029"
+    },
+    {
+      "name": "metro",
+      "value": "#0075c9"
+    },
+    {
+      "name": "railway",
+      "value": "#e07709"
+    },
+    {
+      "name": "sus-travel",
+      "value": "#658d1b"
+    },
+    {
+      "name": "roads",
+      "value": "#df1683"
+    },
+    {
+      "name": "text",
+      "value": "#080607"
+    },
+    {
+      "name": "cta",
+      "value": "#1d7bbf"
+    },
+    {
+      "name": "error",
+      "value": "#d4351c"
+    },
+    {
+      "name": "warning",
+      "value": "#b75e00"
+    },
+    {
+      "name": "success",
+      "value": "#00703c"
+    },
+    {
+      "name": "information",
+      "value": "#84329b"
+    },
+    {
+      "name": "disable",
+      "value": "#676869"
+    },
+    {
+      "name": "planned-disruption",
+      "value": "#ffdd00"
+    },
+    {
+      "name": "border",
+      "value": "#979797"
+    },
+    {
+      "name": "dark-grey",
+      "value": "#2b2b2b"
+    }
+  ],
+  "type": [
+    {
+      "name": "height-and-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem * $multiplier",
+      "px": 16
+    },
+    {
+      "name": "base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "West West Midlands Network Design System — tokens read from https://github.com/wmcadigital/wmn-design-system.",
+  "dos": ""
+}

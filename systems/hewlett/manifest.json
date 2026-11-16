@@ -1,0 +1,41 @@
+{
+  "name": "hewlett",
+  "displayName": "Hewlett Packard grommet",
+  "description": "Hewlett Hewlett Packard grommet — tokens read from https://github.com/grommet/grommet.",
+  "style": "Hewlett Hewlett Packard grommet — tokens read from https://github.com/grommet/grommet.",
+  "category": "Hewlett",
+  "org": "Hewlett",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "hewlett"
+  ],
+  "homepage": "https://github.com/grommet/grommet",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/grommet/grommet — 6 token files, 65 colours harvested, 56 selected.",
+  "source": {
+    "repo": "https://github.com/grommet/grommet"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 57,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

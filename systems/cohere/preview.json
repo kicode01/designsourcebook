@@ -1,0 +1,178 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#93939f",
+  "brand": "#1863dc",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-cohere-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-near-black",
+      "value": "#212121"
+    },
+    {
+      "name": "primary-deep-dark",
+      "value": "#17171c"
+    },
+    {
+      "name": "brand-interaction-blue",
+      "value": "#1863dc"
+    },
+    {
+      "name": "brand-ring-blue",
+      "value": "#4c6ee6"
+    },
+    {
+      "name": "brand-focus-purple",
+      "value": "#9b60aa"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-snow",
+      "value": "#fafafa"
+    },
+    {
+      "name": "bg-lightest-gray",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "text-muted-slate",
+      "value": "#93939f"
+    },
+    {
+      "name": "text-border-cool",
+      "value": "#d9d9dd"
+    },
+    {
+      "name": "text-border-light",
+      "value": "#e5e7eb"
+    },
+    {
+      "name": "primary",
+      "value": "#1863dc"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "CohereText",
+      "fontSize": "72px",
+      "px": 72,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.44px"
+    },
+    {
+      "name": "display-secondary",
+      "fontFamily": "CohereText",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "CohereText",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.48px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "CohereText",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "CohereText",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "CohereText",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "CohereText",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button-medium",
+      "fontFamily": "CohereText",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.71
+    },
+    {
+      "name": "caption",
+      "fontFamily": "CohereText",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "uppercase-label",
+      "fontFamily": "CohereText",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.28px"
+    },
+    {
+      "name": "small",
+      "fontFamily": "CohereText",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "code-micro",
+      "fontFamily": "CohereText",
+      "fontSize": "8px",
+      "px": 8,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.16px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-ghost-transparent",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0)",
+      "textColor": "#000000"
+    }
+  ],
+  "overview": "Cohere's interface is a polished enterprise command deck — confident, clean, and designed to make AI feel like serious infrastructure rather than a consumer toy. The experience lives on a bright white canvas where content is organized into generously rounded cards (22px radius) that create an organic, cloud-like containment language. This is a site that speaks to CTOs and enterprise architects: professional without being cold, sophisticated without being intimidating.\n\nThe design language bridges two worlds with a dual-typeface system: CohereText, a custom display serif with tight tracking, gives headlines the gravitas of a technology manifesto, while Unica77 Cohere Web handles all body and UI text with geometric Swiss precision. This serif/sans pairing creates a \"confident authority meets engineering clarity\" personality that perfectly reflects an enterprise AI platform.\n\nColor is used…",
+  "dos": "Do\n- Use 22px border-radius on all primary cards and containers — it's the visual signature\n- Use CohereText for display headings (72px, 60px) with negative letter-spacing\n- Use Unica77 for all body and UI text at weight 400\n- Keep the palette black-and-white with cool gray borders\n- Use Interaction Blue (#1863dc) only for hover/focus interactive states\n- Use deep purple sections for dramatic visual breaks and product showcases\n- Apply uppercase + letter-spacing on CohereMono for section labels\n- Maintain enterprise-appropriate photography with diverse subjects\n\nDon't\n- Don't use border-radius other than 22px on primary cards — the signature radius matters\n- Don't introduce warm colors — the palette is strictly cool-toned\n- Don't use heavy shadows — depth comes from color contrast and borders\n- Don't use bold (700+) weight on body text — 400–500 is the range\n- Don't skip the serif/sans…"
+}

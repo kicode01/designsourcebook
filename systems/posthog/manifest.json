@@ -1,0 +1,38 @@
+{
+  "name": "posthog",
+  "displayName": "PostHog",
+  "description": "Playful hedgehog branding, developer-friendly dark UI",
+  "style": "Playful hedgehog branding, developer-friendly dark UI",
+  "category": "Developer Tools & Platforms",
+  "theme": "light",
+  "tags": [
+    "dark",
+    "playful",
+    "developer-tools",
+    "light"
+  ],
+  "homepage": "https://posthog.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 21,
+    "typography": 17,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

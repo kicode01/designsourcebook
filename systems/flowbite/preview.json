@@ -1,0 +1,380 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#79b8ff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-shiki-fg-brand",
+      "value": "#79b8ff"
+    },
+    {
+      "name": "color-shiki-fg-brand-subtle",
+      "value": "#9ecbff"
+    },
+    {
+      "name": "background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "shiki-background",
+      "value": "#24292e"
+    },
+    {
+      "name": "gray-50",
+      "value": "#F9FAFB"
+    },
+    {
+      "name": "gray-100",
+      "value": "#F3F4F6"
+    },
+    {
+      "name": "gray-200",
+      "value": "#E5E7EB"
+    },
+    {
+      "name": "gray-300",
+      "value": "#D1D5DB"
+    },
+    {
+      "name": "gray-400",
+      "value": "#9CA3AF"
+    },
+    {
+      "name": "gray-500",
+      "value": "#6B7280"
+    },
+    {
+      "name": "gray-600",
+      "value": "#4B5563"
+    },
+    {
+      "name": "gray-700",
+      "value": "#374151"
+    },
+    {
+      "name": "gray-800",
+      "value": "#1F2937"
+    },
+    {
+      "name": "gray-900",
+      "value": "#111827"
+    },
+    {
+      "name": "red-50",
+      "value": "#FDF2F2"
+    },
+    {
+      "name": "red-100",
+      "value": "#FDE8E8"
+    },
+    {
+      "name": "red-200",
+      "value": "#FBD5D5"
+    },
+    {
+      "name": "red-300",
+      "value": "#F8B4B4"
+    },
+    {
+      "name": "red-400",
+      "value": "#F98080"
+    },
+    {
+      "name": "red-500",
+      "value": "#F05252"
+    },
+    {
+      "name": "red-600",
+      "value": "#E02424"
+    },
+    {
+      "name": "red-700",
+      "value": "#C81E1E"
+    },
+    {
+      "name": "red-800",
+      "value": "#9B1C1C"
+    },
+    {
+      "name": "red-900",
+      "value": "#771D1D"
+    },
+    {
+      "name": "orange-50",
+      "value": "#FFF8F1"
+    },
+    {
+      "name": "orange-100",
+      "value": "#FEECDC"
+    },
+    {
+      "name": "orange-200",
+      "value": "#FCD9BD"
+    },
+    {
+      "name": "orange-300",
+      "value": "#FDBA8C"
+    },
+    {
+      "name": "orange-400",
+      "value": "#FF8A4C"
+    },
+    {
+      "name": "orange-500",
+      "value": "#FF5A1F"
+    },
+    {
+      "name": "orange-600",
+      "value": "#D03801"
+    },
+    {
+      "name": "orange-700",
+      "value": "#B43403"
+    },
+    {
+      "name": "orange-800",
+      "value": "#8A2C0D"
+    },
+    {
+      "name": "orange-900",
+      "value": "#771D1D"
+    },
+    {
+      "name": "yellow-50",
+      "value": "#FDFDEA"
+    },
+    {
+      "name": "yellow-100",
+      "value": "#FDF6B2"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#FCE96A"
+    },
+    {
+      "name": "yellow-300",
+      "value": "#FACA15"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#E3A008"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#C27803"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#9F580A"
+    },
+    {
+      "name": "yellow-700",
+      "value": "#8E4B10"
+    },
+    {
+      "name": "yellow-800",
+      "value": "#723B13"
+    },
+    {
+      "name": "yellow-900",
+      "value": "#633112"
+    },
+    {
+      "name": "green-50",
+      "value": "#F3FAF7"
+    },
+    {
+      "name": "green-100",
+      "value": "#DEF7EC"
+    },
+    {
+      "name": "green-200",
+      "value": "#BCF0DA"
+    },
+    {
+      "name": "green-300",
+      "value": "#84E1BC"
+    },
+    {
+      "name": "green-400",
+      "value": "#31C48D"
+    },
+    {
+      "name": "green-500",
+      "value": "#0E9F6E"
+    },
+    {
+      "name": "green-600",
+      "value": "#057A55"
+    },
+    {
+      "name": "green-700",
+      "value": "#046C4E"
+    },
+    {
+      "name": "green-800",
+      "value": "#03543F"
+    },
+    {
+      "name": "green-900",
+      "value": "#014737"
+    },
+    {
+      "name": "teal-50",
+      "value": "#EDFAFA"
+    },
+    {
+      "name": "teal-100",
+      "value": "#D5F5F6"
+    },
+    {
+      "name": "teal-200",
+      "value": "#AFECEF"
+    },
+    {
+      "name": "teal-300",
+      "value": "#7EDCE2"
+    },
+    {
+      "name": "teal-400",
+      "value": "#16BDCA"
+    },
+    {
+      "name": "teal-500",
+      "value": "#0694A2"
+    },
+    {
+      "name": "teal-600",
+      "value": "#047481"
+    },
+    {
+      "name": "teal-700",
+      "value": "#036672"
+    },
+    {
+      "name": "teal-800",
+      "value": "#05505C"
+    },
+    {
+      "name": "teal-900",
+      "value": "#014451"
+    },
+    {
+      "name": "blue-50",
+      "value": "#EBF5FF"
+    },
+    {
+      "name": "blue-100",
+      "value": "#E1EFFE"
+    },
+    {
+      "name": "blue-200",
+      "value": "#C3DDFD"
+    },
+    {
+      "name": "blue-300",
+      "value": "#A4CAFE"
+    },
+    {
+      "name": "blue-400",
+      "value": "#76A9FA"
+    },
+    {
+      "name": "blue-500",
+      "value": "#3F83F8"
+    },
+    {
+      "name": "blue-600",
+      "value": "#1C64F2"
+    },
+    {
+      "name": "blue-700",
+      "value": "#1A56DB"
+    },
+    {
+      "name": "blue-800",
+      "value": "#1E429F"
+    },
+    {
+      "name": "blue-900",
+      "value": "#233876"
+    },
+    {
+      "name": "indigo-50",
+      "value": "#F0F5FF"
+    },
+    {
+      "name": "indigo-100",
+      "value": "#E5EDFF"
+    },
+    {
+      "name": "indigo-200",
+      "value": "#CDDBFE"
+    },
+    {
+      "name": "indigo-300",
+      "value": "#B4C6FC"
+    },
+    {
+      "name": "indigo-400",
+      "value": "#8DA2FB"
+    },
+    {
+      "name": "indigo-500",
+      "value": "#6875F5"
+    },
+    {
+      "name": "indigo-600",
+      "value": "#5850EC"
+    },
+    {
+      "name": "indigo-700",
+      "value": "#5145CD"
+    },
+    {
+      "name": "indigo-800",
+      "value": "#42389D"
+    },
+    {
+      "name": "indigo-900",
+      "value": "#362F78"
+    },
+    {
+      "name": "purple-50",
+      "value": "#F6F5FF"
+    },
+    {
+      "name": "purple-100",
+      "value": "#EDEBFE"
+    },
+    {
+      "name": "purple-200",
+      "value": "#DCD7FE"
+    },
+    {
+      "name": "purple-300",
+      "value": "#CABFFD"
+    },
+    {
+      "name": "purple-400",
+      "value": "#AC94FA"
+    },
+    {
+      "name": "purple-500",
+      "value": "#9061F9"
+    },
+    {
+      "name": "primary",
+      "value": "#79b8ff"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Flowbite Flowbite Design System — tokens read from https://github.com/themesberg/flowbite.",
+  "dos": ""
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ibm",
+  "displayName": "IBM",
+  "description": "Carbon design system, structured blue palette",
+  "style": "Carbon design system, structured blue palette",
+  "category": "Enterprise & Consumer",
+  "theme": "light",
+  "tags": [
+    "enterprise",
+    "consumer",
+    "light"
+  ],
+  "homepage": "https://ibm.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 24,
+    "typography": 15,
+    "components": 6
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  },
+  "supersededBy": "carbon",
+  "supersededNote": "IBM Carbon is also ingested from @carbon/themes with published provenance. This observed entry is kept for its prose and type scale."
+}

@@ -1,0 +1,43 @@
+{
+  "name": "govuk",
+  "displayName": "GOV.UK Design System",
+  "description": "GOV.UK Design System — the UK government's public-service design system.",
+  "style": "GOV.UK Design System — the UK government's public-service design system.",
+  "category": "GOV.UK",
+  "org": "GOV.UK",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "gov-uk",
+    "government"
+  ],
+  "homepage": "https://frontend.design-system.service.gov.uk/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from govuk-frontend@6.6.0 (1 token files, 20 colours harvested, 20 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "govuk-frontend",
+    "version": "6.6.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 21,
+    "typography": 2,
+    "components": 22
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

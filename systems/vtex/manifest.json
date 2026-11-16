@@ -1,0 +1,41 @@
+{
+  "name": "vtex",
+  "displayName": "VTEX Styleguide",
+  "description": "VTEX VTEX Styleguide — tokens read from https://github.com/vtex/styleguide.",
+  "style": "VTEX VTEX Styleguide — tokens read from https://github.com/vtex/styleguide.",
+  "category": "VTEX",
+  "org": "VTEX",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "vtex"
+  ],
+  "homepage": "https://github.com/vtex/styleguide",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/vtex/styleguide — 9 token files, 32 colours harvested, 28 selected.",
+  "source": {
+    "repo": "https://github.com/vtex/styleguide"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 29,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

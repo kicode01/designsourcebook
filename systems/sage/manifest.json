@@ -1,0 +1,41 @@
+{
+  "name": "sage",
+  "displayName": "Sage by Kajabi",
+  "description": "Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.",
+  "style": "Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.",
+  "category": "Sage",
+  "org": "Sage",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "sage"
+  ],
+  "homepage": "https://github.com/Kajabi/sage-lib",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/Kajabi/sage-lib — 6 token files, 405 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/Kajabi/sage-lib"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 3,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

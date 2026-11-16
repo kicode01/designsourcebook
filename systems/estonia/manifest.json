@@ -1,0 +1,41 @@
+{
+  "name": "estonia",
+  "displayName": "Estonia Country Design Guidelines",
+  "description": "Estonia Estonia Country Design Guidelines — read from brand.estonia.ee's live stylesheets, not a published token package.",
+  "style": "Estonia Estonia Country Design Guidelines — read from brand.estonia.ee's live stylesheets, not a published token package.",
+  "category": "Estonia",
+  "org": "Estonia",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "estonia"
+  ],
+  "homepage": "https://brand.estonia.ee",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://brand.estonia.ee and its 1 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 41,
+    "typography": 14,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

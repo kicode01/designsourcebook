@@ -1,0 +1,410 @@
+{
+  "canvas": "#408bdd",
+  "surface": "#408bdd",
+  "text": "#15141a",
+  "muted": "#15141a",
+  "brand": "#0060df",
+  "border": "#BFBFBF",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "border-color",
+      "value": "#BFBFBF"
+    },
+    {
+      "name": "text-primary-color",
+      "value": "#15141a"
+    },
+    {
+      "name": "text-secondary-color",
+      "value": "#5b5b66"
+    },
+    {
+      "name": "link-fg-color",
+      "value": "#0060df"
+    },
+    {
+      "name": "link-hover-fg-color",
+      "value": "#0250bb"
+    },
+    {
+      "name": "textarea-border-color",
+      "value": "#8f8f9d"
+    },
+    {
+      "name": "radio-border-color",
+      "value": "#8f8f9d"
+    },
+    {
+      "name": "radio-checked-border-color",
+      "value": "#0060df"
+    },
+    {
+      "name": "button-primary-bg-color",
+      "value": "#0060df"
+    },
+    {
+      "name": "button-primary-fg-color",
+      "value": "#fbfbfe"
+    },
+    {
+      "name": "button-primary-active-bg-color",
+      "value": "#054096"
+    },
+    {
+      "name": "button-primary-hover-bg-color",
+      "value": "#0250bb"
+    },
+    {
+      "name": "dialog-border-color",
+      "value": "#1c1b22"
+    },
+    {
+      "name": "textarea-bg-color",
+      "value": "#42414d"
+    },
+    {
+      "name": "input-text-bg-color",
+      "value": "#42414d"
+    },
+    {
+      "name": "color-accent-primary",
+      "value": "#0060df"
+    },
+    {
+      "name": "color-accent-primary-hover",
+      "value": "#0250bb"
+    },
+    {
+      "name": "color-accent-primary-active",
+      "value": "#054096"
+    },
+    {
+      "name": "border-color-interactive",
+      "value": "#8f8f9d"
+    },
+    {
+      "name": "clear-signature-button-bg-focus",
+      "value": "#f0f0f4"
+    },
+    {
+      "name": "primary-color",
+      "value": "#fbfbfe"
+    },
+    {
+      "name": "secondary-color",
+      "value": "#cfcfd8"
+    },
+    {
+      "name": "alt-text-done-color",
+      "value": "#2ac3a2"
+    },
+    {
+      "name": "alt-text-warning-color",
+      "value": "#0090ed"
+    },
+    {
+      "name": "alt-text-tooltip-bg",
+      "value": "#f0f0f4"
+    },
+    {
+      "name": "alt-text-tooltip-fg",
+      "value": "#15141a"
+    },
+    {
+      "name": "alt-text-tooltip-border",
+      "value": "#8f8f9d"
+    },
+    {
+      "name": "no-alt-text-badge-border-color",
+      "value": "#f0f0f4"
+    },
+    {
+      "name": "no-alt-text-badge-bg-color",
+      "value": "#cfcfd8"
+    },
+    {
+      "name": "no-alt-text-badge-fg-color",
+      "value": "#5b5b66"
+    },
+    {
+      "name": "swatch-border-color",
+      "value": "#cfcfd8"
+    },
+    {
+      "name": "focus-ring-color",
+      "value": "#0060df"
+    },
+    {
+      "name": "pspdfkit-signatures-sidebar-icon-warning-fill",
+      "value": "#ffb864"
+    },
+    {
+      "name": "pspdfkit-signatures-sidebar-icon-error-fill",
+      "value": "#ffb6ac"
+    },
+    {
+      "name": "pspdfkit-electronic-signatures-modal-background",
+      "value": "#22252b"
+    },
+    {
+      "name": "background-color",
+      "value": "#408bdd"
+    },
+    {
+      "name": "code-bg-color",
+      "value": "#0b2138"
+    },
+    {
+      "name": "gray-0",
+      "value": "#FBFCFD"
+    },
+    {
+      "name": "gray-20",
+      "value": "#CBD1D8"
+    },
+    {
+      "name": "gray-40",
+      "value": "#939EAE"
+    },
+    {
+      "name": "gray-60",
+      "value": "#5B6778"
+    },
+    {
+      "name": "gray-80",
+      "value": "#383F4A"
+    },
+    {
+      "name": "gray-100",
+      "value": "#191C21"
+    },
+    {
+      "name": "blue-20",
+      "value": "#75C0FF"
+    },
+    {
+      "name": "blue-60",
+      "value": "#0061B3"
+    },
+    {
+      "name": "blue-100",
+      "value": "#001526"
+    },
+    {
+      "name": "green-20",
+      "value": "#91E1A5"
+    },
+    {
+      "name": "green-60",
+      "value": "#248C3E"
+    },
+    {
+      "name": "green-100",
+      "value": "#081E0D"
+    },
+    {
+      "name": "lightblue-20",
+      "value": "#75E6FF"
+    },
+    {
+      "name": "lightblue-60",
+      "value": "#0093B3"
+    },
+    {
+      "name": "lightblue-100",
+      "value": "#001F26"
+    },
+    {
+      "name": "orange-20",
+      "value": "#FFCA75"
+    },
+    {
+      "name": "orange-60",
+      "value": "#B36F00"
+    },
+    {
+      "name": "orange-100",
+      "value": "#261800"
+    },
+    {
+      "name": "red-20",
+      "value": "#F08E8D"
+    },
+    {
+      "name": "red-60",
+      "value": "#9F201F"
+    },
+    {
+      "name": "red-100",
+      "value": "#220707"
+    },
+    {
+      "name": "gold-20",
+      "value": "#FFD675"
+    },
+    {
+      "name": "gold-60",
+      "value": "#B37E00"
+    },
+    {
+      "name": "gold-100",
+      "value": "#261B00"
+    },
+    {
+      "name": "yellow-20",
+      "value": "#FFE975"
+    },
+    {
+      "name": "yellow-60",
+      "value": "#B39700"
+    },
+    {
+      "name": "yellow-100",
+      "value": "#262000"
+    },
+    {
+      "name": "lime-20",
+      "value": "#CDFF75"
+    },
+    {
+      "name": "lime-60",
+      "value": "#72B300"
+    },
+    {
+      "name": "lime-100",
+      "value": "#182600"
+    },
+    {
+      "name": "teal-20",
+      "value": "#75E1D0"
+    },
+    {
+      "name": "teal-60",
+      "value": "#008C77"
+    },
+    {
+      "name": "teal-100",
+      "value": "#001E19"
+    },
+    {
+      "name": "purple-20",
+      "value": "#BA75FF"
+    },
+    {
+      "name": "purple-60",
+      "value": "#5A00B3"
+    },
+    {
+      "name": "purple-100",
+      "value": "#130026"
+    },
+    {
+      "name": "violet-20",
+      "value": "#C975FF"
+    },
+    {
+      "name": "violet-60",
+      "value": "#6D00B3"
+    },
+    {
+      "name": "violet-100",
+      "value": "#170026"
+    },
+    {
+      "name": "pink-20",
+      "value": "#F895FF"
+    },
+    {
+      "name": "pink-60",
+      "value": "#AA29B3"
+    },
+    {
+      "name": "pink-100",
+      "value": "#240926"
+    },
+    {
+      "name": "color",
+      "value": "#0065d1"
+    },
+    {
+      "name": "separator-color",
+      "value": "#f0f0f4"
+    },
+    {
+      "name": "message-bar-fg-color",
+      "value": "#15141a"
+    },
+    {
+      "name": "button-signature-active-bg",
+      "value": "#cfcfd8"
+    },
+    {
+      "name": "tab-top-line-hover-color",
+      "value": "#8f8f9d"
+    },
+    {
+      "name": "outline-around-color",
+      "value": "#f0f0f4"
+    },
+    {
+      "name": "divider-color",
+      "value": "#d7d7db"
+    },
+    {
+      "name": "color-blue900",
+      "value": "#0a0167"
+    },
+    {
+      "name": "primary",
+      "value": "#0060df"
+    }
+  ],
+  "type": [
+    {
+      "name": "pspdfkit-font-size-6",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "pspdfkit-font-size-5",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "pspdfkit-font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "vp-font-family-base",
+      "fontFamily": "theme(fontFamily.sans)",
+      "px": 16
+    },
+    {
+      "name": "pspdfkit-font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "pspdfkit-font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "pspdfkit-font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [],
+  "overview": "Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system.",
+  "dos": ""
+}

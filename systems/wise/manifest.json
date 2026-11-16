@@ -1,0 +1,37 @@
+{
+  "name": "wise",
+  "displayName": "Wise",
+  "description": "Bright green accent, friendly and clear",
+  "style": "Bright green accent, friendly and clear",
+  "category": "Fintech & Crypto",
+  "theme": "dark",
+  "tags": [
+    "playful",
+    "fintech",
+    "dark"
+  ],
+  "homepage": "https://wise.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 14,
+    "typography": 12,
+    "components": 2
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

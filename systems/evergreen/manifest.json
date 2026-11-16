@@ -1,0 +1,41 @@
+{
+  "name": "evergreen",
+  "displayName": "Evergreen",
+  "description": "Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen.",
+  "style": "Evergreen Evergreen — tokens read from https://github.com/segmentio/evergreen.",
+  "category": "Evergreen",
+  "org": "Evergreen",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "evergreen"
+  ],
+  "homepage": "https://github.com/segmentio/evergreen",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/segmentio/evergreen — 8 token files, 346 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/segmentio/evergreen"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

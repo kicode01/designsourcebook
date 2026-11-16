@@ -1,0 +1,37 @@
+{
+  "name": "intercom",
+  "displayName": "Intercom",
+  "description": "Friendly blue palette, conversational UI patterns",
+  "style": "Friendly blue palette, conversational UI patterns",
+  "category": "Design & Productivity",
+  "theme": "light",
+  "tags": [
+    "playful",
+    "productivity",
+    "light"
+  ],
+  "homepage": "https://intercom.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 19,
+    "typography": 13,
+    "components": 3
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

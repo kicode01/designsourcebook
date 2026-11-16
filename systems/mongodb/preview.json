@@ -1,0 +1,247 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#001e2b",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "100px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-forest-black",
+      "value": "#001e2b"
+    },
+    {
+      "name": "brand-mongodb-green",
+      "value": "#00ed64"
+    },
+    {
+      "name": "brand-dark-green",
+      "value": "#00684a"
+    },
+    {
+      "name": "interactive-action-blue",
+      "value": "#006cfa"
+    },
+    {
+      "name": "interactive-hover-blue",
+      "value": "#3860be"
+    },
+    {
+      "name": "interactive-teal-active",
+      "value": "#1eaedb"
+    },
+    {
+      "name": "neutral-deep-teal",
+      "value": "#1c2d38"
+    },
+    {
+      "name": "neutral-teal-gray",
+      "value": "#3d4f58"
+    },
+    {
+      "name": "neutral-dark-slate",
+      "value": "#21313c"
+    },
+    {
+      "name": "neutral-cool-gray",
+      "value": "#5c6c75"
+    },
+    {
+      "name": "neutral-silver-teal",
+      "value": "#b8c4c2"
+    },
+    {
+      "name": "neutral-light-input",
+      "value": "#e8edeb"
+    },
+    {
+      "name": "neutral-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "neutral-black",
+      "value": "#000000"
+    },
+    {
+      "name": "shadows-forest-shadow",
+      "value": "rgba(0, 30, 43, 0.12)"
+    },
+    {
+      "name": "shadows-standard-shadow",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "shadows-subtle-shadow",
+      "value": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "name": "primary",
+      "value": "#001e2b"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "96px",
+      "px": 96,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-secondary",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "code-heading",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 500,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "body",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body-light",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 300,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav-ui",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.16px"
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-bold",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.71
+    },
+    {
+      "name": "code-label",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.14,
+      "letterSpacing": "1px"
+    },
+    {
+      "name": "button",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "13.5px",
+      "px": 13.5,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.135px"
+    },
+    {
+      "name": "small",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 600,
+      "lineHeight": 1.82,
+      "letterSpacing": "0.2px"
+    },
+    {
+      "name": "code-micro",
+      "fontFamily": "MongoDB Value Serif",
+      "fontSize": "9px",
+      "px": 9,
+      "fontWeight": 600,
+      "lineHeight": 2.67,
+      "letterSpacing": "2.5px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-green",
+      "kind": "button",
+      "backgroundColor": "#00684a",
+      "textColor": "#000000",
+      "rounded": "100px",
+      "border": "1px solid #00684a",
+      "shadow": "rgba(0,0,0,0.06) 0px 1px 6px"
+    },
+    {
+      "key": "button-dark-teal",
+      "kind": "button",
+      "backgroundColor": "#1c2d38",
+      "textColor": "#5c6c75",
+      "rounded": "100px",
+      "border": "1px solid #3d4f58"
+    },
+    {
+      "key": "button-outlined",
+      "kind": "button",
+      "textColor": "#001e2b",
+      "rounded": "4px",
+      "border": "1px solid #b8c4c2"
+    }
+  ],
+  "overview": "MongoDB's website is a deep-forest-meets-terminal experience — a design system rooted in the darkest teal-black (#001e2b) that evokes both the density of a database and the depth of a forest canopy. Against this near-black canvas, a striking neon green (#00ed64) pulses as the brand accent — bright enough to feel electric, organic enough to feel alive. This isn't the cold neon of cyberpunk; it's the bioluminescent green of something growing in the dark.\n\nThe typography system is architecturally ambitious: MongoDB Value Serif for massive hero headlines (96px) creates an editorial, authoritative presence — serif type at database-company scale is a bold choice that says \"we're not just another tech company.\" Euclid Circular A handles the heavy lifting of body and UI text with an unusually wide weight range (300–700), while Source Code Pro serves as the code and label font with distinctive…",
+  "dos": "Do\n- Use #001e2b (forest-black) for dark sections — not pure black\n- Apply MongoDB Green (#00ed64) sparingly for maximum electric impact\n- Use MongoDB Value Serif ONLY for hero/display headings — Euclid Circular A for everything else\n- Apply Source Code Pro uppercase with wide tracking (1px–3px) for technical labels\n- Use teal-tinted shadows (rgba(0,30,43,0.12)) for primary card elevation\n- Maintain the dark/light section duality — dramatic contrast between modes\n- Use weight 300 for body text — the light weight is the readable voice\n- Apply pill radius (100px) to primary action buttons\n\nDon't\n- Don't use pure black (#000000) for dark backgrounds — always use teal-black (#001e2b)\n- Don't use MongoDB Green (#00ed64) on backgrounds — it's an accent for text, underlines, and small highlights\n- Don't use standard gray shadows — always use teal-tinted (rgba(0,30,43,...))\n- Don't apply serif…"
+}

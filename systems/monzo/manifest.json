@@ -1,0 +1,41 @@
+{
+  "name": "monzo",
+  "displayName": "Monzo Tone of Voice",
+  "description": "Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.",
+  "style": "Monzo Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.",
+  "category": "Monzo",
+  "org": "Monzo",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "monzo"
+  ],
+  "homepage": "https://monzo.com/tone-of-voice/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://monzo.com/tone-of-voice/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 63,
+    "typography": 18,
+    "components": 33
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 2,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

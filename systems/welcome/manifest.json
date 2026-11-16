@@ -1,0 +1,41 @@
+{
+  "name": "welcome",
+  "displayName": "Welcome UI",
+  "description": "Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.",
+  "style": "Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.",
+  "category": "Welcome",
+  "org": "Welcome",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "welcome"
+  ],
+  "homepage": "https://github.com/WTTJ/welcome-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/WTTJ/welcome-ui — 2 token files, 1252 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/WTTJ/welcome-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 26,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

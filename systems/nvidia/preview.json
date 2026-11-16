@@ -1,0 +1,279 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#76b900",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "2px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-nvidia-green",
+      "value": "#76b900"
+    },
+    {
+      "name": "brand-true-black",
+      "value": "#000000"
+    },
+    {
+      "name": "brand-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "brand-nvidia-green-light",
+      "value": "#bff230"
+    },
+    {
+      "name": "brand-orange-400",
+      "value": "#df6500"
+    },
+    {
+      "name": "brand-yellow-300",
+      "value": "#ef9100"
+    },
+    {
+      "name": "brand-yellow-050",
+      "value": "#feeeb2"
+    },
+    {
+      "name": "status-red-500",
+      "value": "#e52020"
+    },
+    {
+      "name": "status-red-800",
+      "value": "#650b0b"
+    },
+    {
+      "name": "status-green-500",
+      "value": "#3f8500"
+    },
+    {
+      "name": "status-blue-700",
+      "value": "#0046a4"
+    },
+    {
+      "name": "decorative-purple-800",
+      "value": "#4d1368"
+    },
+    {
+      "name": "decorative-purple-100",
+      "value": "#f9d4ff"
+    },
+    {
+      "name": "decorative-fuchsia-700",
+      "value": "#8c1c55"
+    },
+    {
+      "name": "neutral-gray-300",
+      "value": "#a7a7a7"
+    },
+    {
+      "name": "neutral-gray-400",
+      "value": "#898989"
+    },
+    {
+      "name": "neutral-gray-500",
+      "value": "#757575"
+    },
+    {
+      "name": "neutral-gray-border",
+      "value": "#5e5e5e"
+    },
+    {
+      "name": "neutral-near-black",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "interactive-link-default-dark-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "interactive-link-default-light-bg",
+      "value": "#000000"
+    },
+    {
+      "name": "interactive-link-hover",
+      "value": "#3860be"
+    },
+    {
+      "name": "interactive-button-hover",
+      "value": "#1eaedb"
+    },
+    {
+      "name": "interactive-button-active",
+      "value": "#007fff"
+    },
+    {
+      "name": "interactive-focus-ring",
+      "value": "#000000"
+    },
+    {
+      "name": "shadows-card-shadow",
+      "value": "rgba(0, 0, 0, 0.3)"
+    },
+    {
+      "name": "primary",
+      "value": "#76b900"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.75
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.67
+    },
+    {
+      "name": "button-large",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-bold",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body-small",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 400,
+      "lineHeight": 1.67
+    },
+    {
+      "name": "body-small-bold",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button-compact",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "14.4px",
+      "px": 14.4,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "0.144px"
+    },
+    {
+      "name": "link",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "link-uppercase",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "caption",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption-small",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "micro",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "micro-label",
+      "fontFamily": "NVIDIA-EMEA",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "textColor": "#000000",
+      "rounded": "2px",
+      "padding": "11px 13px",
+      "border": "2px solid #76b900"
+    }
+  ],
+  "overview": "NVIDIA's website is a high-contrast, technology-forward experience that communicates raw computational power through design restraint. The page is built on a stark black (#000000) and white (#ffffff) foundation, punctuated by NVIDIA's signature green (#76b900) -- a color so specific it functions as a brand fingerprint. This is not the lush green of nature; it's the electric, lime-shifted green of GPU-rendered light, a color that sits between chartreuse and kelly green and immediately signals \"NVIDIA\" to anyone in technology.\n\nThe custom NVIDIA-EMEA font family (with Arial and Helvetica fallbacks) creates a clean, industrial typographic voice. Headings at 36px bold with tight 1.25 line-height create dense, authoritative blocks of text. The font lacks the geometric playfulness of Silicon Valley sans-serifs -- it's European, pragmatic, and engineering-focused. Body text runs at 15-16px,…",
+  "dos": ""
+}

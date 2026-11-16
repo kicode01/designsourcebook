@@ -1,0 +1,230 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#111111",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-off-black",
+      "value": "#111111"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-warm-cream",
+      "value": "#faf9f6"
+    },
+    {
+      "name": "primary-fin-orange",
+      "value": "#ff5600"
+    },
+    {
+      "name": "primary-report-orange",
+      "value": "#fe4c02"
+    },
+    {
+      "name": "report-blue",
+      "value": "#65b5ff"
+    },
+    {
+      "name": "report-green",
+      "value": "#0bdf50"
+    },
+    {
+      "name": "report-red",
+      "value": "#c41c1c"
+    },
+    {
+      "name": "report-pink",
+      "value": "#ff2067"
+    },
+    {
+      "name": "report-lime",
+      "value": "#b3e01c"
+    },
+    {
+      "name": "report-green-2",
+      "value": "#00da00"
+    },
+    {
+      "name": "report-deep-blue",
+      "value": "#0007cb"
+    },
+    {
+      "name": "neutral-black-80",
+      "value": "#313130"
+    },
+    {
+      "name": "neutral-black-60",
+      "value": "#626260"
+    },
+    {
+      "name": "neutral-black-50",
+      "value": "#7b7b78"
+    },
+    {
+      "name": "neutral-content-tertiary",
+      "value": "#9c9fa5"
+    },
+    {
+      "name": "neutral-oat-border",
+      "value": "#dedbd6"
+    },
+    {
+      "name": "neutral-warm-sand",
+      "value": "#d3cec6"
+    },
+    {
+      "name": "primary",
+      "value": "#111111"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Saans",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-2.4px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Saans",
+      "fontSize": "54px",
+      "px": 54,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.6px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Saans",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Saans",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Saans",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.48px"
+    },
+    {
+      "name": "body-emphasis",
+      "fontFamily": "Saans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 0.95,
+      "letterSpacing": "-0.2px"
+    },
+    {
+      "name": "nav-ui",
+      "fontFamily": "Saans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "body",
+      "fontFamily": "Saans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "Saans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button-bold",
+      "fontFamily": "Saans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.16px"
+    },
+    {
+      "name": "serif-body",
+      "fontFamily": "Saans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 300,
+      "lineHeight": 1.4,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "body-light",
+      "fontFamily": "Saans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 300,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "mono-label",
+      "fontFamily": "Saans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "0.6px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-dark",
+      "kind": "button",
+      "backgroundColor": "#111111",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "0px 14px"
+    },
+    {
+      "key": "button-outlined",
+      "kind": "button",
+      "textColor": "#111111",
+      "rounded": "4px",
+      "border": "1px solid #111111"
+    },
+    {
+      "key": "button-warm-card",
+      "kind": "button",
+      "backgroundColor": "#faf9f6",
+      "textColor": "#111111",
+      "padding": "16px",
+      "border": "1px solid oklab(... / 0.1)"
+    }
+  ],
+  "overview": "Intercom's website is a warm, confident customer service platform that communicates \"AI-first helpdesk\" through a clean, editorial design language. The page operates on a warm off-white canvas (#faf9f6) with off-black (#111111) text, creating an intimate, magazine-like reading experience. The signature Fin Orange (#ff5600) — named after Intercom's AI agent — serves as the singular vibrant accent against the warm neutral palette.\n\nThe typography uses Saans — a custom geometric sans-serif with aggressive negative letter-spacing (-2.4px at 80px, -0.48px at 24px) and a consistent 1.00 line-height across all heading sizes. This creates ultra-compressed, billboard-like headlines that feel engineered and precise. Serrif provides the serif companion for editorial moments, and SaansMono handles code and uppercase technical labels. MediumLL and LLMedium appear for specific UI contexts, creating a…",
+  "dos": "Do\n- Use Saans with 1.00 line-height and negative tracking on all headings\n- Apply 4px radius on buttons — sharp geometry is the identity\n- Use Fin Orange (#ff5600) for AI/brand accent only\n- Apply scale(1.1) hover on buttons\n- Use warm neutrals (#faf9f6, #dedbd6)\n\nDon't\n- Don't round buttons beyond 4px\n- Don't use Fin Orange decoratively\n- Don't use cool gray borders — always warm oat tones\n- Don't skip the negative tracking on headings"
+}

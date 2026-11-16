@@ -1,0 +1,88 @@
+{
+  "canvas": "#080808",
+  "surface": "#080808",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#080808",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-near-black",
+      "value": "#080808"
+    },
+    {
+      "name": "primary-webflow-blue",
+      "value": "#146ef5"
+    },
+    {
+      "name": "primary-blue-400",
+      "value": "#3b89ff"
+    },
+    {
+      "name": "primary-blue-300",
+      "value": "#006acc"
+    },
+    {
+      "name": "primary-button-hover-blue",
+      "value": "#0055d4"
+    },
+    {
+      "name": "secondary-purple",
+      "value": "#7a3dff"
+    },
+    {
+      "name": "secondary-pink",
+      "value": "#ed52cb"
+    },
+    {
+      "name": "secondary-green",
+      "value": "#00d722"
+    },
+    {
+      "name": "secondary-orange",
+      "value": "#ff6b00"
+    },
+    {
+      "name": "secondary-yellow",
+      "value": "#ffae13"
+    },
+    {
+      "name": "secondary-red",
+      "value": "#ee1d36"
+    },
+    {
+      "name": "neutral-gray-800",
+      "value": "#222222"
+    },
+    {
+      "name": "neutral-gray-700",
+      "value": "#363636"
+    },
+    {
+      "name": "neutral-gray-300",
+      "value": "#ababab"
+    },
+    {
+      "name": "neutral-mid-gray",
+      "value": "#5a5a5a"
+    },
+    {
+      "name": "neutral-border-gray",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "neutral-border-hover",
+      "value": "#898989"
+    },
+    {
+      "name": "primary",
+      "value": "#080808"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Webflow's website is a visually rich, tool-forward platform that communicates \"design without code\" through clean white surfaces, the signature Webflow Blue (#146ef5), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.\n\nKey Characteristics:\n- White canvas with near-black (#080808) text\n- Webflow Blue (#146ef5) as primary brand + interactive color\n- WF Visual Sans Variable — custom variable font with weight 500–600\n- Rich secondary palette: purple #7a3dff, pink #ed52cb, green #00d722, orange #ff6b00, yellow #ffae13, red #ee1d36\n- Conservative 4px–8px border-radius — sharp, not rounded\n- Multi-layer shadow stacks (5-layer cascading shadows)\n- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)\n-…",
+  "dos": "- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.\n- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs."
+}

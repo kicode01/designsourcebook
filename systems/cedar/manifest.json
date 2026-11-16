@@ -1,0 +1,44 @@
+{
+  "name": "cedar",
+  "displayName": "Cedar",
+  "description": "REI Cedar — the co-op's open-source design system.",
+  "style": "REI Cedar — the co-op's open-source design system.",
+  "category": "REI",
+  "org": "REI",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "rei",
+    "open-source"
+  ],
+  "homepage": "https://rei.github.io/rei-cedar/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @rei/cedar@17.1.0 (3 token files, 16 colours harvested, 17 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@rei/cedar",
+    "version": "17.1.0",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 17,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

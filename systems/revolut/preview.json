@@ -1,0 +1,228 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#494fdf",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-revolut-dark",
+      "value": "#191c1f"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-light-surface",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "brand-revolut-blue",
+      "value": "#494fdf"
+    },
+    {
+      "name": "brand-action-blue",
+      "value": "#4f55f1"
+    },
+    {
+      "name": "brand-blue-text",
+      "value": "#376cd5"
+    },
+    {
+      "name": "status-danger-red",
+      "value": "#e23b4a"
+    },
+    {
+      "name": "status-deep-pink",
+      "value": "#e61e49"
+    },
+    {
+      "name": "status-warning-orange",
+      "value": "#ec7e00"
+    },
+    {
+      "name": "status-yellow",
+      "value": "#b09000"
+    },
+    {
+      "name": "status-teal",
+      "value": "#00a87e"
+    },
+    {
+      "name": "status-light-green",
+      "value": "#428619"
+    },
+    {
+      "name": "status-green-text",
+      "value": "#006400"
+    },
+    {
+      "name": "status-light-blue",
+      "value": "#007bc2"
+    },
+    {
+      "name": "status-brown",
+      "value": "#936d62"
+    },
+    {
+      "name": "status-red-text",
+      "value": "#8b0000"
+    },
+    {
+      "name": "neutral-mid-slate",
+      "value": "#505a63"
+    },
+    {
+      "name": "neutral-cool-gray",
+      "value": "#8d969e"
+    },
+    {
+      "name": "neutral-gray-tone",
+      "value": "#c9c9cd"
+    },
+    {
+      "name": "primary",
+      "value": "#494fdf"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-mega",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "136px",
+      "px": 136,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "-2.72px"
+    },
+    {
+      "name": "display-hero",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "-0.8px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 500,
+      "lineHeight": 1.21,
+      "letterSpacing": "-0.48px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.4px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 500,
+      "lineHeight": 1.19,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "nav-ui",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.56,
+      "letterSpacing": "-0.09px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.24px"
+    },
+    {
+      "name": "body-semibold",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.16px"
+    },
+    {
+      "name": "body-bold-link",
+      "fontFamily": "Aeonik Pro",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.24px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-dark-pill",
+      "kind": "button",
+      "backgroundColor": "#191c1f",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "padding": "14px 32px"
+    },
+    {
+      "key": "button-secondary-light-pill",
+      "kind": "button",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#000000",
+      "rounded": "9999px",
+      "padding": "14px 34px"
+    },
+    {
+      "key": "button-outlined-pill",
+      "kind": "button",
+      "textColor": "#191c1f",
+      "rounded": "9999px",
+      "padding": "14px 32px",
+      "border": "2px solid #191c1f"
+    },
+    {
+      "key": "button-ghost-on-dark",
+      "kind": "button",
+      "backgroundColor": "rgba(244, 244, 244, 0.1)",
+      "textColor": "#f4f4f4",
+      "rounded": "9999px",
+      "padding": "14px 32px",
+      "border": "2px solid #f4f4f4"
+    }
+  ],
+  "overview": "Revolut's website is fintech confidence distilled into pixels — a design system that communicates \"your money is in capable hands\" through massive typography, generous whitespace, and a disciplined neutral palette. The visual language is built on Aeonik Pro, a geometric grotesque that creates billboard-scale headlines at 136px with weight 500 and aggressive negative tracking (-2.72px). This isn't subtle branding; it's fintech at stadium scale.\n\nThe color system is built on a comprehensive --rui-* (Revolut UI) token architecture with semantic naming for every state: danger (#e23b4a), warning (#ec7e00), teal (#00a87e), blue (#494fdf), deep-pink (#e61e49), and more. But the marketing surface itself is remarkably restrained — near-black (#191c1f) and pure white (#ffffff) dominate, with the colorful semantic tokens reserved for the product interface, not the marketing page.\n\nWhat…",
+  "dos": "Do\n- Use Aeonik Pro weight 500 for all display headings\n- Apply 9999px radius to all buttons — pill shape is universal\n- Use generous button padding (14px 32px)\n- Keep the palette to near-black + white for marketing surfaces\n- Apply positive letter-spacing on Inter body text\n\nDon't\n- Don't use shadows — Revolut is flat by design\n- Don't use bold (700) for Aeonik Pro headings — 500 is the weight\n- Don't use small buttons — the generous padding is intentional\n- Don't apply semantic colors to marketing surfaces — they're for the product"
+}

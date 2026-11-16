@@ -1,0 +1,42 @@
+{
+  "name": "aurora",
+  "displayName": "Aurora",
+  "description": "Government of Canada Aurora — tokens read from https://github.com/gctools-outilsgc/design-system.",
+  "style": "Government of Canada Aurora — tokens read from https://github.com/gctools-outilsgc/design-system.",
+  "category": "Government of Canada",
+  "org": "Government of Canada",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "government-of-canada",
+    "government"
+  ],
+  "homepage": "https://github.com/gctools-outilsgc/design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/gctools-outilsgc/design-system — 1 token files, 21 colours harvested, 21 selected.",
+  "source": {
+    "repo": "https://github.com/gctools-outilsgc/design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 21,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

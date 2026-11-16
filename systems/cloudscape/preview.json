@@ -1,0 +1,380 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#002b66",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-charts-status-info",
+      "value": "#3184c2"
+    },
+    {
+      "name": "color-charts-threshold-neutral",
+      "value": "#656871"
+    },
+    {
+      "name": "color-background-notification-severity-high",
+      "value": "#ce3311"
+    },
+    {
+      "name": "color-background-notification-severity-neutral",
+      "value": "#656871"
+    },
+    {
+      "name": "color-text-notification-severity-medium",
+      "value": "#0f141a"
+    },
+    {
+      "name": "color-text-badge-severity-critical",
+      "value": "#f9f9fa"
+    },
+    {
+      "name": "color-text-badge-severity-low",
+      "value": "#0f141a"
+    },
+    {
+      "name": "color-background-button-link-active",
+      "value": "#d1f1ff"
+    },
+    {
+      "name": "color-background-button-normal-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-toggle-button-normal-pressed",
+      "value": "#d1f1ff"
+    },
+    {
+      "name": "color-background-button-primary-active",
+      "value": "#002b66"
+    },
+    {
+      "name": "color-background-button-primary-hover",
+      "value": "#002b66"
+    },
+    {
+      "name": "color-background-container-content",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-control-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-dropdown-item-filter-match",
+      "value": "#f0fbff"
+    },
+    {
+      "name": "color-background-home-header",
+      "value": "#0f141a"
+    },
+    {
+      "name": "color-background-item-selected",
+      "value": "#f0fbff"
+    },
+    {
+      "name": "color-background-layout-panel-content",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-layout-toggle-default",
+      "value": "#424650"
+    },
+    {
+      "name": "color-background-layout-toggle-selected-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-background-notification-green",
+      "value": "#00802f"
+    },
+    {
+      "name": "color-background-notification-yellow",
+      "value": "#ffe347"
+    },
+    {
+      "name": "color-background-flashbar-info",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-background-progress-bar-value-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-background-segment-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-segment-wrapper",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-slider-handle-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-background-status-error",
+      "value": "#fff5f5"
+    },
+    {
+      "name": "color-background-status-success",
+      "value": "#effff1"
+    },
+    {
+      "name": "color-background-toggle-checked-disabled",
+      "value": "#b8e7ff"
+    },
+    {
+      "name": "color-text-avatar",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-text-chat-bubble-incoming",
+      "value": "#0f141a"
+    },
+    {
+      "name": "color-border-toggle-button-normal-pressed",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-border-button-normal-disabled",
+      "value": "#b4b4bb"
+    },
+    {
+      "name": "color-text-button-icon-disabled",
+      "value": "#8c8c94"
+    },
+    {
+      "name": "color-border-button-primary-disabled",
+      "value": "#ebebf0"
+    },
+    {
+      "name": "color-text-side-navigation-item-active",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-border-divider-default",
+      "value": "#c6c6cd"
+    },
+    {
+      "name": "color-border-dropdown-item-hover",
+      "value": "#8c8c94"
+    },
+    {
+      "name": "color-border-item-focused",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-border-layout-side-navigation",
+      "value": "#c6c6cd"
+    },
+    {
+      "name": "color-border-segment-default",
+      "value": "#424650"
+    },
+    {
+      "name": "color-border-segment-hover",
+      "value": "#424650"
+    },
+    {
+      "name": "color-border-status-info",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-border-dialog",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-text-body-default",
+      "value": "#0f141a"
+    },
+    {
+      "name": "color-text-breadcrumb-icon",
+      "value": "#8c8c94"
+    },
+    {
+      "name": "color-text-button-inline-icon-hover",
+      "value": "#002b66"
+    },
+    {
+      "name": "color-text-button-normal-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-text-button-link-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-text-button-primary-active",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-text-calendar-date-selected",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-text-dropdown-item-disabled",
+      "value": "#b4b4bb"
+    },
+    {
+      "name": "color-text-dropdown-item-secondary",
+      "value": "#656871"
+    },
+    {
+      "name": "color-text-expandable-section-hover",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-text-form-secondary",
+      "value": "#656871"
+    },
+    {
+      "name": "color-text-heading-default",
+      "value": "#0f141a"
+    },
+    {
+      "name": "color-text-home-header-secondary",
+      "value": "#c6c6cd"
+    },
+    {
+      "name": "color-text-input-placeholder",
+      "value": "#656871"
+    },
+    {
+      "name": "color-text-interactive-disabled",
+      "value": "#b4b4bb"
+    },
+    {
+      "name": "color-text-interactive-inverted-default",
+      "value": "#dedee3"
+    },
+    {
+      "name": "color-text-layout-toggle",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-text-layout-toggle-selected",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-text-link-secondary-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-text-link-info-hover",
+      "value": "#002b66"
+    },
+    {
+      "name": "color-text-segment-active",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-text-status-error",
+      "value": "#db0000"
+    },
+    {
+      "name": "color-text-status-success",
+      "value": "#00802f"
+    },
+    {
+      "name": "color-dropzone-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-dropzone-text-hover",
+      "value": "#424650"
+    },
+    {
+      "name": "color-background-action-card-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-border-action-card-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-border-action-card-disabled",
+      "value": "#b4b4bb"
+    },
+    {
+      "name": "color-text-action-card-icon-default",
+      "value": "#006ce0"
+    },
+    {
+      "name": "color-text-action-card-icon-disabled",
+      "value": "#b4b4bb"
+    },
+    {
+      "name": "color-background-badge-red",
+      "value": "#db0000"
+    },
+    {
+      "name": "color-text-badge-grey",
+      "value": "#f9f9fa"
+    },
+    {
+      "name": "color-text-badge-red",
+      "value": "#f9f9fa"
+    },
+    {
+      "name": "color-charts-red-300",
+      "value": "#ea7158"
+    },
+    {
+      "name": "color-charts-orange-600",
+      "value": "#a84401"
+    },
+    {
+      "name": "color-charts-yellow-900",
+      "value": "#5d4503"
+    },
+    {
+      "name": "color-charts-green-1200",
+      "value": "#0d4000"
+    },
+    {
+      "name": "color-charts-blue-1-500",
+      "value": "#0273bb"
+    },
+    {
+      "name": "color-charts-blue-2-800",
+      "value": "#2c46b1"
+    },
+    {
+      "name": "color-charts-purple-1100",
+      "value": "#4a238b"
+    },
+    {
+      "name": "color-charts-status-high",
+      "value": "#ba2e0f"
+    },
+    {
+      "name": "color-charts-palette-categorical-5",
+      "value": "#e07941"
+    },
+    {
+      "name": "color-charts-palette-categorical-18",
+      "value": "#003e38"
+    },
+    {
+      "name": "color-charts-palette-categorical-31",
+      "value": "#1f3191"
+    },
+    {
+      "name": "color-charts-palette-categorical-44",
+      "value": "#59309d"
+    },
+    {
+      "name": "primary",
+      "value": "#002b66"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Amazon Cloudscape — the design system for AWS console experiences.",
+  "dos": ""
+}

@@ -1,0 +1,38 @@
+{
+  "name": "expo",
+  "displayName": "Expo",
+  "description": "Dark theme, tight letter-spacing, code-centric",
+  "style": "Dark theme, tight letter-spacing, code-centric",
+  "category": "Developer Tools & Platforms",
+  "theme": "light",
+  "tags": [
+    "dark",
+    "developer",
+    "developer-tools",
+    "light"
+  ],
+  "homepage": "https://expo.dev",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 23,
+    "typography": 10,
+    "components": 2
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

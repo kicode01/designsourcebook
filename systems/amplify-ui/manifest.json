@@ -1,0 +1,41 @@
+{
+  "name": "amplify-ui",
+  "displayName": "Amplify UI",
+  "description": "AWS Amplify UI — tokens read from https://github.com/aws-amplify/amplify-ui.",
+  "style": "AWS Amplify UI — tokens read from https://github.com/aws-amplify/amplify-ui.",
+  "category": "AWS",
+  "org": "AWS",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "aws"
+  ],
+  "homepage": "https://github.com/aws-amplify/amplify-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/aws-amplify/amplify-ui — 11 token files, 22 colours harvested, 22 selected.",
+  "source": {
+    "repo": "https://github.com/aws-amplify/amplify-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 23,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

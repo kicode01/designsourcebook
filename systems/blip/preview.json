@@ -1,0 +1,380 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00c6d7",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-primary-light",
+      "value": "#b3d4ff"
+    },
+    {
+      "name": "color-primary-main",
+      "value": "#3f7de8"
+    },
+    {
+      "name": "color-primary-dark",
+      "value": "#125ad5"
+    },
+    {
+      "name": "color-primary-night",
+      "value": "#0747a6"
+    },
+    {
+      "name": "color-primary-purples-pixie",
+      "value": "#cc99ff"
+    },
+    {
+      "name": "color-primary-purples-bell",
+      "value": "#c226fb"
+    },
+    {
+      "name": "color-primary-purples-witch",
+      "value": "#9933cc"
+    },
+    {
+      "name": "color-primary-purples-acai",
+      "value": "#4f0e87"
+    },
+    {
+      "name": "color-primary-greens-mint",
+      "value": "#90e6bc"
+    },
+    {
+      "name": "color-primary-greens-true",
+      "value": "#21cc79"
+    },
+    {
+      "name": "color-primary-greens-aligator",
+      "value": "#008767"
+    },
+    {
+      "name": "color-primary-greens-forest",
+      "value": "#0a6045"
+    },
+    {
+      "name": "color-primary-pinks-yogurt",
+      "value": "#fdacc5"
+    },
+    {
+      "name": "color-primary-pinks-watermelon",
+      "value": "#fb5a8b"
+    },
+    {
+      "name": "color-primary-pinks-barbie",
+      "value": "#aa398d"
+    },
+    {
+      "name": "color-primary-pinks-blush",
+      "value": "#821a67"
+    },
+    {
+      "name": "color-primary-oranges-sunset",
+      "value": "#ffb186"
+    },
+    {
+      "name": "color-primary-oranges-carrot",
+      "value": "#ff6e1d"
+    },
+    {
+      "name": "color-primary-oranges-doritos",
+      "value": "#c64026"
+    },
+    {
+      "name": "color-primary-oranges-clay",
+      "value": "#8e3925"
+    },
+    {
+      "name": "color-primary-yellows-corn",
+      "value": "#fff6a8"
+    },
+    {
+      "name": "color-primary-yellows-sun",
+      "value": "#ffec03"
+    },
+    {
+      "name": "color-primary-yellows-guarana",
+      "value": "#b2b229"
+    },
+    {
+      "name": "color-primary-yellows-moss",
+      "value": "#757010"
+    },
+    {
+      "name": "color-disabled-bg",
+      "value": "#e8f2ff"
+    },
+    {
+      "name": "color-disabled-text",
+      "value": "#637798"
+    },
+    {
+      "name": "color-disabled-delete",
+      "value": "#fccccc"
+    },
+    {
+      "name": "color-disabled-error",
+      "value": "#da7a7a"
+    },
+    {
+      "name": "color-disabled-wrong",
+      "value": "#ba5a5a"
+    },
+    {
+      "name": "color-neutral-dark-eclipse",
+      "value": "#0a0f1a"
+    },
+    {
+      "name": "color-neutral-dark-onix",
+      "value": "#1a2437"
+    },
+    {
+      "name": "color-neutral-dark-suit",
+      "value": "#212a3c"
+    },
+    {
+      "name": "color-neutral-dark-ico",
+      "value": "#192438"
+    },
+    {
+      "name": "color-neutral-dark-city",
+      "value": "#202c44"
+    },
+    {
+      "name": "color-neutral-dark-skate",
+      "value": "#233049"
+    },
+    {
+      "name": "color-neutral-dark-desk",
+      "value": "#3a4a65"
+    },
+    {
+      "name": "color-neutral-dark-rooftop",
+      "value": "#505f79"
+    },
+    {
+      "name": "color-neutral-medium-elephant",
+      "value": "#6e7b91"
+    },
+    {
+      "name": "color-neutral-medium-cloud",
+      "value": "#8ca0b3"
+    },
+    {
+      "name": "color-neutral-medium-silver",
+      "value": "#b9cbd3"
+    },
+    {
+      "name": "color-neutral-medium-wave",
+      "value": "#d2dfe6"
+    },
+    {
+      "name": "color-neutral-light-box",
+      "value": "#e7edf4"
+    },
+    {
+      "name": "color-neutral-light-whisper",
+      "value": "#f3f6fa"
+    },
+    {
+      "name": "color-neutral-light-breeze",
+      "value": "#f8fbfb"
+    },
+    {
+      "name": "color-neutral-light-snow",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-illustration-blue-brand",
+      "value": "#00c6d7"
+    },
+    {
+      "name": "color-dark-brand",
+      "value": "rgba(0, 150, 250, 1)"
+    },
+    {
+      "name": "color-dark-primary",
+      "value": "rgba(73, 139, 255, 1)"
+    },
+    {
+      "name": "color-dark-secondary",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "name": "color-dark-surface-0",
+      "value": "rgba(66, 66, 66, 1)"
+    },
+    {
+      "name": "color-dark-surface-1",
+      "value": "rgba(57, 57, 57, 1)"
+    },
+    {
+      "name": "color-dark-surface-2",
+      "value": "rgba(31, 31, 31, 1)"
+    },
+    {
+      "name": "color-dark-surface-3",
+      "value": "rgba(20, 20, 20, 1)"
+    },
+    {
+      "name": "color-dark-surface-4",
+      "value": "rgba(10, 10, 10, 1)"
+    },
+    {
+      "name": "color-dark-surface-positive",
+      "value": "rgba(1, 86, 47, 1)"
+    },
+    {
+      "name": "color-dark-surface-negative",
+      "value": "rgba(87, 0, 0, 1)"
+    },
+    {
+      "name": "color-dark-surface-primary",
+      "value": "rgba(12, 80, 197, 1)"
+    },
+    {
+      "name": "color-dark-info",
+      "value": "rgba(0, 79, 86, 1)"
+    },
+    {
+      "name": "color-dark-focus",
+      "value": "rgba(194, 38, 251, 1)"
+    },
+    {
+      "name": "color-dark-success",
+      "value": "rgba(53, 94, 75, 1)"
+    },
+    {
+      "name": "color-dark-warning",
+      "value": "rgba(96, 89, 59, 1)"
+    },
+    {
+      "name": "color-dark-error",
+      "value": "rgba(123, 61, 61, 1)"
+    },
+    {
+      "name": "color-light-brand",
+      "value": "rgba(0, 150, 250, 1)"
+    },
+    {
+      "name": "color-light-primary",
+      "value": "rgba(30, 107, 241, 1)"
+    },
+    {
+      "name": "color-light-secondary",
+      "value": "rgba(41, 41, 41, 1)"
+    },
+    {
+      "name": "color-light-surface-0",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "name": "color-light-surface-1",
+      "value": "rgba(246, 246, 246, 1)"
+    },
+    {
+      "name": "color-light-surface-2",
+      "value": "rgba(237, 237, 237, 1)"
+    },
+    {
+      "name": "color-light-surface-3",
+      "value": "rgba(227, 227, 227, 1)"
+    },
+    {
+      "name": "color-light-surface-4",
+      "value": "rgba(20, 20, 20, 1)"
+    },
+    {
+      "name": "color-light-surface-positive",
+      "value": "rgba(1, 114, 62, 1)"
+    },
+    {
+      "name": "color-light-surface-negative",
+      "value": "rgba(138, 0, 0, 1)"
+    },
+    {
+      "name": "color-light-surface-primary",
+      "value": "rgba(30, 107, 241, 1)"
+    },
+    {
+      "name": "color-light-info",
+      "value": "rgba(128, 227, 235, 1)"
+    },
+    {
+      "name": "color-light-focus",
+      "value": "rgba(194, 38, 251, 1)"
+    },
+    {
+      "name": "color-light-success",
+      "value": "rgba(132, 235, 188, 1)"
+    },
+    {
+      "name": "color-light-warning",
+      "value": "rgba(253, 233, 155, 1)"
+    },
+    {
+      "name": "color-light-error",
+      "value": "rgba(250, 190, 190, 1)"
+    },
+    {
+      "name": "color-secondary-undo",
+      "value": "#485c73"
+    },
+    {
+      "name": "color-secondary-redo",
+      "value": "#485c73"
+    },
+    {
+      "name": "color-brand",
+      "value": "#0096fa"
+    },
+    {
+      "name": "color-primary",
+      "value": "#1e6bf1"
+    },
+    {
+      "name": "color-secondary",
+      "value": "#292929"
+    },
+    {
+      "name": "color-surface-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-surface-2",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-surface-3",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "color-surface-4",
+      "value": "#141414"
+    },
+    {
+      "name": "color-border-1",
+      "value": "#616161"
+    },
+    {
+      "name": "color-info",
+      "value": "#80e3eb"
+    },
+    {
+      "name": "color-focus",
+      "value": "#c226fb"
+    },
+    {
+      "name": "primary",
+      "value": "#00c6d7"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "BLiP BLiP — tokens read from https://github.com/takenet/blip-ds.",
+  "dos": ""
+}

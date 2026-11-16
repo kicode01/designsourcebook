@@ -1,0 +1,41 @@
+{
+  "name": "scania",
+  "displayName": "Scania Digital Design System",
+  "description": "Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.",
+  "style": "Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.",
+  "category": "Scania",
+  "org": "Scania",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "scania"
+  ],
+  "homepage": "https://github.com/scania-digital-design-system/tegel",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/scania-digital-design-system/tegel — 10 token files, 416 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/scania-digital-design-system/tegel"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 89,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

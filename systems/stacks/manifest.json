@@ -1,0 +1,43 @@
+{
+  "name": "stacks",
+  "displayName": "Stacks",
+  "description": "Stack Overflow Stacks — consistent experiences across Stack Overflow.",
+  "style": "Stack Overflow Stacks — consistent experiences across Stack Overflow.",
+  "category": "Stack Overflow",
+  "org": "Stack Overflow",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "stack-overflow"
+  ],
+  "homepage": "",
+  "license": "see package",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @stackoverflow/stacks@3.0.2 (1 token files, 104 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@stackoverflow/stacks",
+    "version": "3.0.2",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

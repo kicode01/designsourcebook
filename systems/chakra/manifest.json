@@ -1,0 +1,41 @@
+{
+  "name": "chakra",
+  "displayName": "Chakra UI",
+  "description": "Chakra UI Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.",
+  "style": "Chakra UI Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.",
+  "category": "Chakra UI",
+  "org": "Chakra UI",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "chakra-ui"
+  ],
+  "homepage": "https://github.com/chakra-ui/chakra-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/chakra-ui/chakra-ui — 7 token files, 124 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/chakra-ui/chakra-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

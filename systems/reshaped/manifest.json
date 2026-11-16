@@ -1,0 +1,41 @@
+{
+  "name": "reshaped",
+  "displayName": "Reshaped",
+  "description": "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
+  "style": "Reshaped Reshaped — read from reshaped.so's live stylesheets, not a published token package.",
+  "category": "Reshaped",
+  "org": "Reshaped",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "reshaped"
+  ],
+  "homepage": "https://reshaped.so",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://reshaped.so and its 3 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 49,
+    "typography": 32,
+    "components": 4
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

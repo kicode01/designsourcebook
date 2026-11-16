@@ -1,0 +1,255 @@
+{
+  "canvas": "#f4f8fb",
+  "surface": "#0b0c0c",
+  "text": "#0b0c0c",
+  "muted": "#0b0c0c",
+  "brand": "#1d70b8",
+  "border": "#cecece",
+  "radius": "0",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-colour",
+      "value": "#1d70b8"
+    },
+    {
+      "name": "text-colour",
+      "value": "#0b0c0c"
+    },
+    {
+      "name": "inverse-text-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "template-background-colour",
+      "value": "#f4f8fb"
+    },
+    {
+      "name": "body-background-colour",
+      "value": "#fff"
+    },
+    {
+      "name": "print-text-colour",
+      "value": "#000"
+    },
+    {
+      "name": "secondary-text-colour",
+      "value": "#484949"
+    },
+    {
+      "name": "focus-colour",
+      "value": "#fd0"
+    },
+    {
+      "name": "focus-text-colour",
+      "value": "#0b0c0c"
+    },
+    {
+      "name": "error-colour",
+      "value": "#ca3535"
+    },
+    {
+      "name": "success-colour",
+      "value": "#0f7a52"
+    },
+    {
+      "name": "border-colour",
+      "value": "#cecece"
+    },
+    {
+      "name": "input-border-colour",
+      "value": "#0b0c0c"
+    },
+    {
+      "name": "hover-colour",
+      "value": "#cecece"
+    },
+    {
+      "name": "link-colour",
+      "value": "#1a65a6"
+    },
+    {
+      "name": "link-visited-colour",
+      "value": "#54319f"
+    },
+    {
+      "name": "link-hover-colour",
+      "value": "#0f385c"
+    },
+    {
+      "name": "link-active-colour",
+      "value": "#0b0c0c"
+    },
+    {
+      "name": "surface-background-colour",
+      "value": "#f4f8fb"
+    },
+    {
+      "name": "surface-text-colour",
+      "value": "#0b0c0c"
+    },
+    {
+      "name": "primary",
+      "value": "#1d70b8"
+    }
+  ],
+  "type": [
+    {
+      "name": "root-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px !default",
+      "px": 16
+    },
+    {
+      "name": "context-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "$context-font-size * 1px",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#d2e2f1",
+      "textColor": "#0f385c",
+      "rounded": "1px",
+      "padding": "2px 8px 3px"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#000"
+    },
+    {
+      "key": "panel",
+      "kind": "panel",
+      "textColor": "#000",
+      "padding": "35px",
+      "border": "5px solid transparent"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "#000"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#0f7a52",
+      "textColor": "#fff",
+      "rounded": "0",
+      "padding": "8px 10px 7px",
+      "border": "2px solid transparent",
+      "shadow": "0 2px 0 #083d29"
+    },
+    {
+      "key": "select",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "padding": "5px",
+      "border": "2px solid"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "textColor": "#000"
+    },
+    {
+      "key": "summary-list",
+      "kind": "summary",
+      "textColor": "#000"
+    },
+    {
+      "key": "input-2",
+      "kind": "input",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "#000",
+      "padding": "5px",
+      "border": "2px solid"
+    },
+    {
+      "key": "input-3",
+      "kind": "input",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "#000",
+      "padding": "5px",
+      "border": "2px solid"
+    },
+    {
+      "key": "summary-card-2",
+      "kind": "summary",
+      "textColor": "#000"
+    },
+    {
+      "key": "summary-card-3",
+      "kind": "summary",
+      "backgroundColor": "#f3f3f3",
+      "padding": "15px"
+    },
+    {
+      "key": "tag-red",
+      "kind": "badge",
+      "backgroundColor": "#f4d7d7",
+      "textColor": "#651b1b"
+    },
+    {
+      "key": "tag-teal",
+      "kind": "badge",
+      "backgroundColor": "#d0e6e7",
+      "textColor": "#0b4144"
+    },
+    {
+      "key": "tag-grey",
+      "kind": "badge",
+      "backgroundColor": "#cecece",
+      "textColor": "#0b0c0c"
+    },
+    {
+      "key": "tag-pink",
+      "kind": "badge",
+      "backgroundColor": "#f4d7e5",
+      "textColor": "#651b3e"
+    },
+    {
+      "key": "tag-green",
+      "kind": "badge",
+      "backgroundColor": "#cfe4dc",
+      "textColor": "#083d29"
+    },
+    {
+      "key": "button-warning",
+      "kind": "button",
+      "backgroundColor": "#ca3535",
+      "textColor": "#fff",
+      "shadow": "0 2px 0 #651b1b"
+    },
+    {
+      "key": "button-inverse",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#1d70b8",
+      "shadow": "0 2px 0 #0f385c"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "#0b0c0c",
+      "shadow": "0 2px 0 #858686"
+    },
+    {
+      "key": "panel-confirmation",
+      "kind": "panel",
+      "backgroundColor": "#0f7a52"
+    },
+    {
+      "key": "panel-interruption",
+      "kind": "panel",
+      "backgroundColor": "#1d70b8"
+    }
+  ],
+  "overview": "GOV.UK Design System — the UK government's public-service design system.",
+  "dos": ""
+}

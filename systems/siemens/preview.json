@@ -1,0 +1,456 @@
+{
+  "canvas": "#2D2D45",
+  "surface": "#2D2D45",
+  "text": "#FFFFFF",
+  "muted": "#FFFFFF",
+  "brand": "#00eaff",
+  "border": "#66667E",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "si-ref-color-data-brand-300",
+      "value": "#00eaff"
+    },
+    {
+      "name": "si-ref-color-data-brand-600",
+      "value": "#00bdda"
+    },
+    {
+      "name": "si-ref-color-data-brand-800",
+      "value": "#0096b4"
+    },
+    {
+      "name": "si-ref-color-main-brand-500",
+      "value": "#00c9e4"
+    },
+    {
+      "name": "si-ref-color-main-brand-600",
+      "value": "#00bdda"
+    },
+    {
+      "name": "si-ref-color-main-brand-700",
+      "value": "#0096b4"
+    },
+    {
+      "name": "si-ref-color-main-brand-800",
+      "value": "#1c6075"
+    },
+    {
+      "name": "si-ref-color-main-brand-900",
+      "value": "#004f69"
+    },
+    {
+      "name": "si-ref-color-main-brand-black",
+      "value": "#000000"
+    },
+    {
+      "name": "si-ref-color-main-brand-focus-light",
+      "value": "#008ff5"
+    },
+    {
+      "name": "si-ref-color-main-brand-focus",
+      "value": "#199fff"
+    },
+    {
+      "name": "si-ref-color-main-brand-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "subtext-style-color",
+      "value": "#B3B3BE"
+    },
+    {
+      "name": "label-text-border-color",
+      "value": "#000028"
+    },
+    {
+      "name": "item-style-bar-border-color",
+      "value": "#66667E"
+    },
+    {
+      "name": "item-style-border-color",
+      "value": "#66667E"
+    },
+    {
+      "name": "item-style-border-color0",
+      "value": "#D72339"
+    },
+    {
+      "name": "icon-style-border-color",
+      "value": "#B3B3BE"
+    },
+    {
+      "name": "text-style-color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "control-style-border-color",
+      "value": "#00CCCC"
+    },
+    {
+      "name": "checkpoint-style-border-color",
+      "value": "#000028"
+    },
+    {
+      "name": "text-border-color",
+      "value": "#000028"
+    },
+    {
+      "name": "bar-border-color",
+      "value": "#66667E"
+    },
+    {
+      "name": "border-color",
+      "value": "#66667E"
+    },
+    {
+      "name": "border-color0",
+      "value": "#D72339"
+    },
+    {
+      "name": "background-color",
+      "value": "#2D2D45"
+    },
+    {
+      "name": "name-text-style-color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ix-chip-container-outline-color-focus",
+      "value": "#199fff"
+    },
+    {
+      "name": "siemens-brand-dark",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "siemens-brand-light",
+      "value": "#000028"
+    },
+    {
+      "name": "background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "si-ref-color-data-avocado-100",
+      "value": "#f3f9e0"
+    },
+    {
+      "name": "si-ref-color-data-avocado-500",
+      "value": "#637d17"
+    },
+    {
+      "name": "si-ref-color-data-blue-100",
+      "value": "#ccf2f8"
+    },
+    {
+      "name": "si-ref-color-data-blue-500",
+      "value": "#00bedc"
+    },
+    {
+      "name": "si-ref-color-data-deep-blue-100",
+      "value": "#e5e8e9"
+    },
+    {
+      "name": "si-ref-color-data-deep-blue-500",
+      "value": "#72848c"
+    },
+    {
+      "name": "si-ref-color-data-green-100",
+      "value": "#ccf7de"
+    },
+    {
+      "name": "si-ref-color-data-green-500",
+      "value": "#00a327"
+    },
+    {
+      "name": "si-ref-color-data-interactive-coral-100",
+      "value": "#ccf5f5"
+    },
+    {
+      "name": "si-ref-color-data-interactive-coral-500",
+      "value": "#00a3ab"
+    },
+    {
+      "name": "si-ref-color-data-orange-100",
+      "value": "#ffd9b2"
+    },
+    {
+      "name": "si-ref-color-data-orange-500",
+      "value": "#e97400"
+    },
+    {
+      "name": "si-ref-color-data-orchid-100",
+      "value": "#edd6f2"
+    },
+    {
+      "name": "si-ref-color-data-orchid-500",
+      "value": "#a733bc"
+    },
+    {
+      "name": "si-ref-color-data-plum-100",
+      "value": "#ffbeda"
+    },
+    {
+      "name": "si-ref-color-data-plum-500",
+      "value": "#c04774"
+    },
+    {
+      "name": "si-ref-color-data-purple-100",
+      "value": "#d2cbff"
+    },
+    {
+      "name": "si-ref-color-data-purple-500",
+      "value": "#805cff"
+    },
+    {
+      "name": "si-ref-color-data-red-100",
+      "value": "#fccccc"
+    },
+    {
+      "name": "si-ref-color-data-red-500",
+      "value": "#ff2626"
+    },
+    {
+      "name": "si-ref-color-data-royal-blue-100",
+      "value": "#b2e0ff"
+    },
+    {
+      "name": "si-ref-color-data-royal-blue-500",
+      "value": "#3664c6"
+    },
+    {
+      "name": "si-ref-color-data-sand-100",
+      "value": "#efefec"
+    },
+    {
+      "name": "si-ref-color-data-sand-500",
+      "value": "#aaaa96"
+    },
+    {
+      "name": "si-ref-color-data-turquoise-100",
+      "value": "#85e9d2"
+    },
+    {
+      "name": "si-ref-color-data-turquoise-500",
+      "value": "#00af8e"
+    },
+    {
+      "name": "si-ref-color-data-yellow-100",
+      "value": "#fff4d6"
+    },
+    {
+      "name": "si-ref-color-data-yellow-500",
+      "value": "#f1b81a"
+    },
+    {
+      "name": "si-ref-color-main-blue-100",
+      "value": "#d2e0f7"
+    },
+    {
+      "name": "si-ref-color-main-blue-400",
+      "value": "#548bea"
+    },
+    {
+      "name": "si-ref-color-main-blue-700",
+      "value": "#2050a2"
+    },
+    {
+      "name": "si-ref-color-main-bold-turquoise-100",
+      "value": "#d1fbff"
+    },
+    {
+      "name": "si-ref-color-main-bold-turquoise-400",
+      "value": "#00eaff"
+    },
+    {
+      "name": "si-ref-color-main-bold-turquoise-700",
+      "value": "#006f8e"
+    },
+    {
+      "name": "si-ref-color-main-cool-gray-100",
+      "value": "#e5e8e9"
+    },
+    {
+      "name": "si-ref-color-main-cool-gray-400",
+      "value": "#919ca1"
+    },
+    {
+      "name": "si-ref-color-main-cool-gray-600",
+      "value": "#5b6a71"
+    },
+    {
+      "name": "si-ref-color-main-cool-gray-750",
+      "value": "#273940"
+    },
+    {
+      "name": "si-ref-color-main-cool-gray-850",
+      "value": "#0e1b20"
+    },
+    {
+      "name": "si-ref-color-main-green-100",
+      "value": "#d1f2c1"
+    },
+    {
+      "name": "si-ref-color-main-green-400",
+      "value": "#7ad34d"
+    },
+    {
+      "name": "si-ref-color-main-green-700",
+      "value": "#376f1c"
+    },
+    {
+      "name": "si-ref-color-main-interactive-turquoise-100",
+      "value": "#e0f2f4"
+    },
+    {
+      "name": "si-ref-color-main-interactive-turquoise-400",
+      "value": "#8cc8d1"
+    },
+    {
+      "name": "si-ref-color-main-interactive-turquoise-700",
+      "value": "#006a87"
+    },
+    {
+      "name": "si-ref-color-main-orange-100",
+      "value": "#fee5cc"
+    },
+    {
+      "name": "si-ref-color-main-orange-400",
+      "value": "#ff8000"
+    },
+    {
+      "name": "si-ref-color-main-orange-700",
+      "value": "#9a4d00"
+    },
+    {
+      "name": "si-ref-color-main-red-100",
+      "value": "#fccccc"
+    },
+    {
+      "name": "si-ref-color-main-red-400",
+      "value": "#eb5353"
+    },
+    {
+      "name": "si-ref-color-main-red-700",
+      "value": "#a70808"
+    },
+    {
+      "name": "si-ref-color-main-warm-gray-100",
+      "value": "#fafafa"
+    },
+    {
+      "name": "si-ref-color-main-warm-gray-400",
+      "value": "#e8ebed"
+    },
+    {
+      "name": "si-ref-color-main-warm-gray-700",
+      "value": "#adb0b3"
+    },
+    {
+      "name": "si-ref-color-main-yellow-100",
+      "value": "#ffedba"
+    },
+    {
+      "name": "si-ref-color-main-yellow-400",
+      "value": "#ffbf0f"
+    },
+    {
+      "name": "si-ref-color-main-yellow-700",
+      "value": "#906900"
+    },
+    {
+      "name": "line-style-color",
+      "value": "#9999A9"
+    },
+    {
+      "name": "label-color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "primary",
+      "value": "#00eaff"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-xl",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "font-size-l",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "si-ref-typography-font-family-mono",
+      "fontFamily": "Courier New', monospace",
+      "px": 16
+    },
+    {
+      "name": "si-ref-typography-font-family-sans",
+      "fontFamily": "Arial, helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-font-family",
+      "fontFamily": "SiemensSans Pro VF', 'SiemensSans Pro', helvetica,\n    arial, sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,\n    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,\n    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji",
+      "px": 16
+    },
+    {
+      "name": "ix-upload-loader-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.937rem",
+      "px": 14.992
+    },
+    {
+      "name": "font-size-default",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "ix-badge-tooltip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "ix-date-picker-dropdown-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-s",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size-caption",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size-xs",
+      "fontFamily": "system-ui",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "ix-date-picker-week-number-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [],
+  "overview": "Siemens Siemens iX — tokens read from https://github.com/siemens/ix.",
+  "dos": ""
+}

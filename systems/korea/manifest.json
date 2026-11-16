@@ -1,0 +1,41 @@
+{
+  "name": "korea",
+  "displayName": "Korea Design System",
+  "description": "Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.",
+  "style": "Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.",
+  "category": "Korea",
+  "org": "Korea",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "korea"
+  ],
+  "homepage": "https://github.com/KRDS-uiux/krds-uiux",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/KRDS-uiux/krds-uiux — 3 token files, 253 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/KRDS-uiux/krds-uiux"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 47,
+    "components": 1
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

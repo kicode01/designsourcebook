@@ -1,0 +1,274 @@
+{
+  "canvas": "#0f0f0f",
+  "surface": "#000000",
+  "text": "#ffffff",
+  "muted": "#ffffff",
+  "brand": "#00ffff",
+  "border": "color-mix(in srgb, #ffffff 14%, transparent)",
+  "radius": "4px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-composio-cobalt",
+      "value": "#0007cd"
+    },
+    {
+      "name": "brand-electric-cyan",
+      "value": "#00ffff"
+    },
+    {
+      "name": "brand-signal-blue",
+      "value": "#0089ff"
+    },
+    {
+      "name": "brand-ocean-blue",
+      "value": "#0096ff"
+    },
+    {
+      "name": "bg-void-black",
+      "value": "#0f0f0f"
+    },
+    {
+      "name": "bg-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "bg-charcoal",
+      "value": "#2c2c2c"
+    },
+    {
+      "name": "text-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-muted-smoke",
+      "value": "#444444"
+    },
+    {
+      "name": "text-ghost-white",
+      "value": "rgba(255,255,255,0.6)"
+    },
+    {
+      "name": "text-whisper-white",
+      "value": "rgba(255,255,255,0.5)"
+    },
+    {
+      "name": "text-phantom-white",
+      "value": "rgba(255,255,255,0.2)"
+    },
+    {
+      "name": "brand-border-mist-12",
+      "value": "rgba(255,255,255,0.12)"
+    },
+    {
+      "name": "brand-border-mist-10",
+      "value": "rgba(255,255,255,0.10)"
+    },
+    {
+      "name": "brand-border-mist-08",
+      "value": "rgba(255,255,255,0.08)"
+    },
+    {
+      "name": "brand-border-mist-06",
+      "value": "rgba(255,255,255,0.06)"
+    },
+    {
+      "name": "brand-border-mist-04",
+      "value": "rgba(255,255,255,0.04)"
+    },
+    {
+      "name": "brand-light-border",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "primary",
+      "value": "#00ffff"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "abcDiatype",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": 0.87
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "abcDiatype",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "sub-heading-large",
+      "fontFamily": "abcDiatype",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "abcDiatype",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "abcDiatype",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "feature-label",
+      "fontFamily": "abcDiatype",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "abcDiatype",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "abcDiatype",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "abcDiatype",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "body-small",
+      "fontFamily": "abcDiatype",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 400,
+      "lineHeight": 1.63
+    },
+    {
+      "name": "caption",
+      "fontFamily": "abcDiatype",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.63
+    },
+    {
+      "name": "code-small",
+      "fontFamily": "abcDiatype",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.28px"
+    },
+    {
+      "name": "code-overline",
+      "fontFamily": "abcDiatype",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": "0.7px"
+    },
+    {
+      "name": "label",
+      "fontFamily": "abcDiatype",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "tag-overline",
+      "fontFamily": "abcDiatype",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.3px"
+    },
+    {
+      "name": "micro",
+      "fontFamily": "abcDiatype",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "0.3px"
+    },
+    {
+      "name": "code-caption",
+      "fontFamily": "abcDiatype",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.28px"
+    },
+    {
+      "name": "code-micro",
+      "fontFamily": "abcDiatype",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 400,
+      "lineHeight": 1.33,
+      "letterSpacing": "0.55px"
+    },
+    {
+      "name": "code-nano",
+      "fontFamily": "abcDiatype",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 400,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.5px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-cta",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "rounded": "4px",
+      "border": "none"
+    },
+    {
+      "key": "button-cyan-accent-cta",
+      "kind": "button",
+      "backgroundColor": "rgba(0,255,255,0.12)",
+      "rounded": "4px",
+      "border": "thin solid Ocean Blue (1px solid rgb(0,150,255))"
+    },
+    {
+      "key": "button-phantom",
+      "kind": "button",
+      "backgroundColor": "rgba(255,255,255,0.2)",
+      "textColor": "rgba(255,255,255,0.5)"
+    }
+  ],
+  "overview": "Composio's interface is a nocturnal command center — a dense, developer-focused darkness punctuated by electric cyan and deep cobalt signals. The entire experience is built on an almost-pure-black canvas (#0f0f0f) where content floats within barely-visible containment borders, creating the feeling of a high-tech control panel rather than a traditional marketing page. It's a site that whispers authority to developers who live in dark terminals.\n\nThe visual language leans heavily into the aesthetic of code editors and terminal windows. JetBrains Mono appears alongside the geometric precision of abcDiatype, reinforcing the message that this is a tool built *by* developers *for* developers. Decorative elements are restrained but impactful — subtle cyan-blue gradient glows emanate from cards and sections like bioluminescent organisms in deep water, while hard-offset shadows (4px 4px) on…",
+  "dos": "Do\n- Use Void Black (#0f0f0f) as the primary page background — never pure white for main surfaces\n- Keep heading line-heights ultra-tight (0.87-1.0) for compressed, authoritative text blocks\n- Use white-opacity borders (4-12%) for containment — they're more important than shadows here\n- Reserve Electric Cyan (#00ffff) for high-signal moments only — CTAs, glows, interactive accents\n- Pair abcDiatype with JetBrains Mono to reinforce the developer-tool identity\n- Use the hard-offset shadow (4px 4px) intentionally on select elements for brutalist personality\n- Keep button text dark (oklch(0.145 0 0)) even on the darkest backgrounds — buttons carry their own surface\n- Layer opacity-based borders to create subtle depth without shadows\n- Use uppercase + letter-spacing only for tiny overline labels (12px or smaller)\n\nDon't\n- Don't use bright backgrounds or light surfaces as primary containers\n-…"
+}

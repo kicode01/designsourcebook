@@ -1,0 +1,535 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ffe166",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "accordion-subtitle-color-text-default",
+      "value": "#212121"
+    },
+    {
+      "name": "alert-color-text-success-body",
+      "value": "#142603"
+    },
+    {
+      "name": "avatar-color-background-initials-orange",
+      "value": "#ff9868"
+    },
+    {
+      "name": "badge-color-text-blue",
+      "value": "#ffffff"
+    },
+    {
+      "name": "button-color-background-primary-danger-hover",
+      "value": "#e1003a"
+    },
+    {
+      "name": "button-color-background-secondary-danger-pressed",
+      "value": "#fbdedc"
+    },
+    {
+      "name": "button-color-border-secondary-main-pressed",
+      "value": "#dedede"
+    },
+    {
+      "name": "button-color-icon-primary-neutral-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "button-color-icon-tertiary-danger-disabled",
+      "value": "#989898"
+    },
+    {
+      "name": "button-color-text-primary-main-default",
+      "value": "#000000"
+    },
+    {
+      "name": "button-color-text-secondary-main-disabled",
+      "value": "#989898"
+    },
+    {
+      "name": "calendar-color-background-hover",
+      "value": "#fbf9f7"
+    },
+    {
+      "name": "checkbox-color-background-checked-hover",
+      "value": "#ffe166"
+    },
+    {
+      "name": "color-background-accent-green-minimal",
+      "value": "#e7fbd3"
+    },
+    {
+      "name": "color-background-accent-pink-strong",
+      "value": "#d17ba8"
+    },
+    {
+      "name": "color-background-accent-violet-strongest",
+      "value": "#5a4890"
+    },
+    {
+      "name": "color-background-information-primary",
+      "value": "#55c3e9"
+    },
+    {
+      "name": "color-background-success-secondary",
+      "value": "#cfebb0"
+    },
+    {
+      "name": "color-border-brand-secondary",
+      "value": "#ffe166"
+    },
+    {
+      "name": "color-border-information-strongest",
+      "value": "#025a79"
+    },
+    {
+      "name": "color-border-success-strongest",
+      "value": "#5a8034"
+    },
+    {
+      "name": "color-icon-accent-blue-primary",
+      "value": "#00202b"
+    },
+    {
+      "name": "color-icon-accent-orange-tertiary",
+      "value": "#9f4217"
+    },
+    {
+      "name": "color-icon-accent-violet-subtle",
+      "value": "#8068c6"
+    },
+    {
+      "name": "color-icon-information-primary",
+      "value": "#00202b"
+    },
+    {
+      "name": "color-icon-success-secondary",
+      "value": "#2a4210"
+    },
+    {
+      "name": "color-neutral-20",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "color-text-accent-green-subtle",
+      "value": "#5a8034"
+    },
+    {
+      "name": "color-text-accent-teal-tertiary",
+      "value": "#00544a"
+    },
+    {
+      "name": "color-text-information-minimal",
+      "value": "#27a5d0"
+    },
+    {
+      "name": "color-text-success-secondary",
+      "value": "#2a4210"
+    },
+    {
+      "name": "drawer-color-text-description",
+      "value": "#212121"
+    },
+    {
+      "name": "floating-action-bar-color-border",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "hint-color-text-success",
+      "value": "#40611f"
+    },
+    {
+      "name": "input-password-color-background-default",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "link-color-icon-primary-default",
+      "value": "#000000"
+    },
+    {
+      "name": "link-color-text-secondary-disabled",
+      "value": "#585858"
+    },
+    {
+      "name": "modal-color-text-title",
+      "value": "#000000"
+    },
+    {
+      "name": "pagination-color-text-checked-pressed",
+      "value": "#604d00"
+    },
+    {
+      "name": "radio-color-border-unchecked-hover",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "stamp-color-background-warm",
+      "value": "#f6f3ef"
+    },
+    {
+      "name": "stepper-step-color-text-unchecked-hover",
+      "value": "#000000"
+    },
+    {
+      "name": "sticky-note-icon-color-background-blue",
+      "value": "#55c3e9"
+    },
+    {
+      "name": "swiper-color-border-pressed",
+      "value": "#dedede"
+    },
+    {
+      "name": "tab-color-border-unchecked-default",
+      "value": "#f6f3ef"
+    },
+    {
+      "name": "table-cell-color-border-default",
+      "value": "#dedede"
+    },
+    {
+      "name": "tag-color-background-blue-hover",
+      "value": "#55c3e9"
+    },
+    {
+      "name": "tag-color-background-dash-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "tag-color-background-orange-ai-disabled",
+      "value": "#ffded0"
+    },
+    {
+      "name": "tag-color-background-pink-dark-hover",
+      "value": "#d17ba8"
+    },
+    {
+      "name": "tag-color-background-red-light-default",
+      "value": "#fbdedc"
+    },
+    {
+      "name": "tag-color-background-violet-ai-disabled",
+      "value": "#efefff"
+    },
+    {
+      "name": "tag-color-background-warm-dark-hover",
+      "value": "#d2cbc3"
+    },
+    {
+      "name": "tag-color-icon-brand-ai-disabled",
+      "value": "#b69200"
+    },
+    {
+      "name": "tag-color-icon-orange-ai-disabled",
+      "value": "#c45927"
+    },
+    {
+      "name": "tag-color-icon-violet-ai-disabled",
+      "value": "#8068c6"
+    },
+    {
+      "name": "tag-color-text-dash-hover",
+      "value": "#000000"
+    },
+    {
+      "name": "tag-color-text-teal-hover",
+      "value": "#001b18"
+    },
+    {
+      "name": "toast-icon-color-icon-error",
+      "value": "#a80029"
+    },
+    {
+      "name": "toggle-track-color-border-focused",
+      "value": "#ffe166"
+    },
+    {
+      "name": "window-header-action-color-border-close-default",
+      "value": "#f6f3ef"
+    },
+    {
+      "name": "wysiwyg-color-select-background-selected",
+      "value": "#ffe166"
+    },
+    {
+      "name": "hex",
+      "value": "#FFCD00"
+    },
+    {
+      "name": "button-color-icon-tertiary-main-hover",
+      "value": "#212121"
+    },
+    {
+      "name": "checkbox-color-icon-default",
+      "value": "#000000"
+    },
+    {
+      "name": "color-beige-80",
+      "value": "#33302d"
+    },
+    {
+      "name": "color-blue-70",
+      "value": "#025a79"
+    },
+    {
+      "name": "color-green-60",
+      "value": "#5a8034"
+    },
+    {
+      "name": "color-orange-20",
+      "value": "#ffd495"
+    },
+    {
+      "name": "color-pink-10",
+      "value": "#ffeaf5"
+    },
+    {
+      "name": "color-pink-90",
+      "value": "#3b142a"
+    },
+    {
+      "name": "color-red-80",
+      "value": "#75001a"
+    },
+    {
+      "name": "color-red-orange-70",
+      "value": "#9f4217"
+    },
+    {
+      "name": "color-teal-60",
+      "value": "#0a7b6d"
+    },
+    {
+      "name": "color-violet-50",
+      "value": "#9587e8"
+    },
+    {
+      "name": "color-yellow-40",
+      "value": "#ffcd00"
+    },
+    {
+      "name": "dropdown-menu-item-color-icon-hover",
+      "value": "#423500"
+    },
+    {
+      "name": "pagination-color-icon-checked-default",
+      "value": "#000000"
+    },
+    {
+      "name": "slider-color-thumb-fill-hover",
+      "value": "#fff1b2"
+    },
+    {
+      "name": "stamp-color-icon-warm",
+      "value": "#1e1c1a"
+    },
+    {
+      "name": "sticky-note-icon-color-icon-orange",
+      "value": "#451701"
+    },
+    {
+      "name": "tag-color-icon-blue-ai-default",
+      "value": "#057aa3"
+    },
+    {
+      "name": "tag-color-icon-dash-default",
+      "value": "#000000"
+    },
+    {
+      "name": "tag-color-icon-green-light-default",
+      "value": "#5a8034"
+    },
+    {
+      "name": "tag-color-icon-orange-light-default",
+      "value": "#c45927"
+    },
+    {
+      "name": "tag-color-icon-pink-light-default",
+      "value": "#b06089"
+    },
+    {
+      "name": "tag-color-icon-red-light-default",
+      "value": "#a80029"
+    },
+    {
+      "name": "tag-color-icon-teal-light-default",
+      "value": "#0a7b6d"
+    },
+    {
+      "name": "tag-color-icon-violet-light-default",
+      "value": "#8068c6"
+    },
+    {
+      "name": "tag-color-icon-warm-light-default",
+      "value": "#a7a096"
+    },
+    {
+      "name": "primary",
+      "value": "#ffe166"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-128",
+      "fontFamily": "system-ui",
+      "fontSize": "8rem",
+      "px": 128
+    },
+    {
+      "name": "font-size-72",
+      "fontFamily": "system-ui",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "font-size-7xl",
+      "fontFamily": "system-ui",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "font-size-60",
+      "fontFamily": "system-ui",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-size-6xl",
+      "fontFamily": "system-ui",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-size-48",
+      "fontFamily": "system-ui",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-5xl",
+      "fontFamily": "system-ui",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-36",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "font-size-4xl",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "font-size-32",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-size-3xl",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-size-24",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-2xl",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-xxl",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-20",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-xl",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-18",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-16",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-md",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-body",
+      "fontFamily": "Work Sans', sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-title",
+      "fontFamily": "welcome-font', sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-14",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-12",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size-xs",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [],
+  "overview": "Welcome Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.",
+  "dos": ""
+}

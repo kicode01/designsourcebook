@@ -1,0 +1,376 @@
+{
+  "canvas": "#292929",
+  "surface": "#292929",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#EFF4FE",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#EFF4FE"
+    },
+    {
+      "name": "primary50",
+      "value": "#F6F6F6"
+    },
+    {
+      "name": "primary100",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "primary200",
+      "value": "#E2E2E2"
+    },
+    {
+      "name": "primary300",
+      "value": "#CBCBCB"
+    },
+    {
+      "name": "primary400",
+      "value": "#AFAFAF"
+    },
+    {
+      "name": "primary500",
+      "value": "#6B6B6B"
+    },
+    {
+      "name": "primary600",
+      "value": "#545454"
+    },
+    {
+      "name": "primary700",
+      "value": "#333333"
+    },
+    {
+      "name": "accent50",
+      "value": "#EFF3FE"
+    },
+    {
+      "name": "accent100",
+      "value": "#D4E2FC"
+    },
+    {
+      "name": "accent200",
+      "value": "#A0BFF8"
+    },
+    {
+      "name": "accent300",
+      "value": "#5B91F5"
+    },
+    {
+      "name": "accent400",
+      "value": "#276EF1"
+    },
+    {
+      "name": "accent500",
+      "value": "#1E54B7"
+    },
+    {
+      "name": "accent600",
+      "value": "#174291"
+    },
+    {
+      "name": "accent700",
+      "value": "#102C60"
+    },
+    {
+      "name": "warning50",
+      "value": "#FFFAF0"
+    },
+    {
+      "name": "warning100",
+      "value": "#FFF2D9"
+    },
+    {
+      "name": "warning200",
+      "value": "#FFE3AC"
+    },
+    {
+      "name": "warning300",
+      "value": "#FFCF70"
+    },
+    {
+      "name": "warning400",
+      "value": "#FFC043"
+    },
+    {
+      "name": "warning500",
+      "value": "#BC8B2C"
+    },
+    {
+      "name": "warning600",
+      "value": "#996F00"
+    },
+    {
+      "name": "warning700",
+      "value": "#674D1B"
+    },
+    {
+      "name": "brand-default50",
+      "value": "#EFF4FE"
+    },
+    {
+      "name": "brand-default100",
+      "value": "#DEE9FE"
+    },
+    {
+      "name": "brand-default200",
+      "value": "#CDDEFF"
+    },
+    {
+      "name": "brand-default300",
+      "value": "#A9C9FF"
+    },
+    {
+      "name": "brand-default400",
+      "value": "#6DAAFB"
+    },
+    {
+      "name": "brand-default500",
+      "value": "#068BEE"
+    },
+    {
+      "name": "brand-default600",
+      "value": "#276EF1"
+    },
+    {
+      "name": "brand-default700",
+      "value": "#175BCC"
+    },
+    {
+      "name": "brand-default800",
+      "value": "#1948A3"
+    },
+    {
+      "name": "brand-default900",
+      "value": "#002661"
+    },
+    {
+      "name": "brand-default50-dark",
+      "value": "#09152C"
+    },
+    {
+      "name": "brand-default100-dark",
+      "value": "#182946"
+    },
+    {
+      "name": "brand-default200-dark",
+      "value": "#22375C"
+    },
+    {
+      "name": "brand-default300-dark",
+      "value": "#2D4775"
+    },
+    {
+      "name": "brand-default400-dark",
+      "value": "#335BA3"
+    },
+    {
+      "name": "brand-default500-dark",
+      "value": "#3F6EC5"
+    },
+    {
+      "name": "brand-default600-dark",
+      "value": "#5E8BDB"
+    },
+    {
+      "name": "brand-default700-dark",
+      "value": "#93B4EE"
+    },
+    {
+      "name": "brand-default800-dark",
+      "value": "#B3CCF6"
+    },
+    {
+      "name": "brand-default900-dark",
+      "value": "#D1DFF6"
+    },
+    {
+      "name": "plain-background-color",
+      "value": "#292929"
+    },
+    {
+      "name": "background-color",
+      "value": "#292929"
+    },
+    {
+      "name": "negative50",
+      "value": "#FFEFED"
+    },
+    {
+      "name": "negative600",
+      "value": "#870F00"
+    },
+    {
+      "name": "positive400",
+      "value": "#048848"
+    },
+    {
+      "name": "mono100",
+      "value": "#CBCBCB"
+    },
+    {
+      "name": "mono700",
+      "value": "#1F1F1F"
+    },
+    {
+      "name": "gray200",
+      "value": "#DDDDDD"
+    },
+    {
+      "name": "gray800",
+      "value": "#4B4B4B"
+    },
+    {
+      "name": "platinum400",
+      "value": "#8EA3AD"
+    },
+    {
+      "name": "red100",
+      "value": "#FFE1DE"
+    },
+    {
+      "name": "red700",
+      "value": "#BB032A"
+    },
+    {
+      "name": "orange300",
+      "value": "#FFB48C"
+    },
+    {
+      "name": "orange900",
+      "value": "#461A00"
+    },
+    {
+      "name": "amber500",
+      "value": "#C46E00"
+    },
+    {
+      "name": "yellow100",
+      "value": "#FBE5B6"
+    },
+    {
+      "name": "yellow700",
+      "value": "#845201"
+    },
+    {
+      "name": "lime300",
+      "value": "#A6D467"
+    },
+    {
+      "name": "lime900",
+      "value": "#1B2D00"
+    },
+    {
+      "name": "green500",
+      "value": "#009A51"
+    },
+    {
+      "name": "teal100",
+      "value": "#CDEEF3"
+    },
+    {
+      "name": "teal700",
+      "value": "#016974"
+    },
+    {
+      "name": "blue300",
+      "value": "#A9C9FF"
+    },
+    {
+      "name": "blue900",
+      "value": "#002661"
+    },
+    {
+      "name": "cobalt500",
+      "value": "#0A1899"
+    },
+    {
+      "name": "purple300",
+      "value": "#DDB9FF"
+    },
+    {
+      "name": "purple900",
+      "value": "#3A1659"
+    },
+    {
+      "name": "magenta500",
+      "value": "#E142BC"
+    },
+    {
+      "name": "brown100",
+      "value": "#EBE0DB"
+    },
+    {
+      "name": "brown700",
+      "value": "#3D281E"
+    },
+    {
+      "name": "gray500-dark",
+      "value": "#717171"
+    },
+    {
+      "name": "red100-dark",
+      "value": "#4A1216"
+    },
+    {
+      "name": "red700-dark",
+      "value": "#EA9B98"
+    },
+    {
+      "name": "orange300-dark",
+      "value": "#6D3715"
+    },
+    {
+      "name": "orange900-dark",
+      "value": "#F8D6C5"
+    },
+    {
+      "name": "amber500-dark",
+      "value": "#956724"
+    },
+    {
+      "name": "yellow100-dark",
+      "value": "#39240A"
+    },
+    {
+      "name": "yellow700-dark",
+      "value": "#D7AC57"
+    },
+    {
+      "name": "lime300-dark",
+      "value": "#39501F"
+    },
+    {
+      "name": "lime900-dark",
+      "value": "#D6E3CB"
+    },
+    {
+      "name": "green500-dark",
+      "value": "#3D8351"
+    },
+    {
+      "name": "teal100-dark",
+      "value": "#0C2E34"
+    },
+    {
+      "name": "teal700-dark",
+      "value": "#72C1CD"
+    },
+    {
+      "name": "blue300-dark",
+      "value": "#2D4775"
+    },
+    {
+      "name": "blue900-dark",
+      "value": "#D1DFF6"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Uber's Uber's Base Web — tokens read from https://github.com/uber-web/baseui.",
+  "dos": ""
+}

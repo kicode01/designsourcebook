@@ -1,0 +1,41 @@
+{
+  "name": "google",
+  "displayName": "Google Material Design",
+  "description": "Google Google Material Design — tokens read from https://github.com/material-components/material-web.",
+  "style": "Google Google Material Design — tokens read from https://github.com/material-components/material-web.",
+  "category": "Google",
+  "org": "Google",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "google"
+  ],
+  "homepage": "https://github.com/material-components/material-web",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/material-components/material-web — 4 token files, 279 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/material-components/material-web"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 10,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

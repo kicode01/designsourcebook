@@ -1,0 +1,41 @@
+{
+  "name": "materialize",
+  "displayName": "Materialize CSS",
+  "description": "Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.",
+  "style": "Materialize Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.",
+  "category": "Materialize",
+  "org": "Materialize",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "materialize"
+  ],
+  "homepage": "https://github.com/Dogfalo/materialize",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/Dogfalo/materialize — 3 token files, 47 colours harvested, 46 selected.",
+  "source": {
+    "repo": "https://github.com/Dogfalo/materialize"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 47,
+    "typography": 18,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 4,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

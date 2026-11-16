@@ -1,0 +1,38 @@
+{
+  "name": "kraken",
+  "displayName": "Kraken",
+  "description": "Purple-accented dark UI, data-dense dashboards",
+  "style": "Purple-accented dark UI, data-dense dashboards",
+  "category": "Fintech & Crypto",
+  "theme": "light",
+  "tags": [
+    "dark",
+    "dashboard",
+    "fintech",
+    "light"
+  ],
+  "homepage": "https://kraken.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 12,
+    "typography": 10,
+    "components": 5
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

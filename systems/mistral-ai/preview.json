@@ -1,0 +1,191 @@
+{
+  "canvas": "#fffaeb",
+  "surface": "#fff0c2",
+  "text": "#1f1f1f",
+  "muted": "hsl(0, 0%, 24%)",
+  "brand": "#ff8a00",
+  "border": "color-mix(in srgb, #1f1f1f 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-mistral-orange",
+      "value": "#fa520f"
+    },
+    {
+      "name": "primary-mistral-flame",
+      "value": "#fb6424"
+    },
+    {
+      "name": "primary-block-orange",
+      "value": "#ff8105"
+    },
+    {
+      "name": "brand-sunshine-900",
+      "value": "#ff8a00"
+    },
+    {
+      "name": "brand-sunshine-700",
+      "value": "#ffa110"
+    },
+    {
+      "name": "brand-sunshine-500",
+      "value": "#ffb83e"
+    },
+    {
+      "name": "brand-sunshine-300",
+      "value": "#ffd06a"
+    },
+    {
+      "name": "brand-block-gold",
+      "value": "#ffe295"
+    },
+    {
+      "name": "brand-bright-yellow",
+      "value": "#ffd900"
+    },
+    {
+      "name": "bg-warm-ivory",
+      "value": "#fffaeb"
+    },
+    {
+      "name": "bg-cream",
+      "value": "#fff0c2"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-mistral-black",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "bg-accent-orange",
+      "value": "hsl(17, 96%, 52%)"
+    },
+    {
+      "name": "text-mistral-black",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "text-black-tint",
+      "value": "hsl(0, 0%, 24%)"
+    },
+    {
+      "name": "text-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "brand-input-border",
+      "value": "hsl(240, 5.9%, 90%)"
+    },
+    {
+      "name": "primary",
+      "value": "#ff8a00"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Arial",
+      "fontSize": "82px",
+      "px": 82,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-2.05px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Arial",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 400,
+      "lineHeight": 0.95
+    },
+    {
+      "name": "sub-heading-large",
+      "fontFamily": "Arial",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 0.95
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Arial",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.15
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Arial",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Arial",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button-uppercase",
+      "fontFamily": "Arial",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption-link",
+      "fontFamily": "Arial",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    }
+  ],
+  "components": [
+    {
+      "key": "button-cream-surface",
+      "kind": "button",
+      "backgroundColor": "#fff0c2",
+      "textColor": "#1f1f1f"
+    },
+    {
+      "key": "button-dark-solid",
+      "kind": "button",
+      "backgroundColor": "#1f1f1f",
+      "textColor": "#ffffff",
+      "padding": "12px"
+    },
+    {
+      "key": "button-ghost-transparent",
+      "kind": "button",
+      "textColor": "#1f1f1f"
+    },
+    {
+      "key": "button-text-underline",
+      "kind": "button",
+      "textColor": "#1f1f1f",
+      "padding": "8px 0px 0px"
+    }
+  ],
+  "overview": "Mistral AI's interface is a sun-drenched landscape rendered in code — a warm, bold, unapologetically European design that trades the typical blue-screen AI aesthetic for golden amber, burnt orange, and the feeling of late-afternoon light in southern France. Every surface glows with warmth: backgrounds fade from pale cream to deep amber, shadows carry golden undertones (rgba(127, 99, 21, ...)), and the brand's signature orange (#fa520f) burns through the page like a signal fire.\n\nThe design language is maximalist in its warmth but minimalist in its structure. Huge display headlines (82px) crash into the viewport with aggressive negative tracking (-2.05px), creating text blocks that feel like billboards or protest posters — declarations rather than descriptions. The typography uses Arial (likely a custom font with Arial as fallback) at extreme sizes, creating a raw, unadorned voice that…",
+  "dos": "Do\n- Use the warm color spectrum exclusively: ivory, cream, amber, gold, orange\n- Keep display typography at 82px+ with -2.05px letter-spacing for hero sections\n- Use the Mistral block gradient (yellow → amber → orange) for brand moments\n- Apply warm golden shadows (amber-tinted rgba) for elevated elements\n- Use Mistral Black (#1f1f1f) for text — never pure #000000\n- Keep font weight at 400 throughout — let size and color carry hierarchy\n- Use sharp, architectural corners — near-zero border-radius\n- Apply uppercase on button labels and section markers for European formality\n- Use warm landscape photography with golden color grading\n\nDon't\n- Don't introduce cool colors (blue, green, purple) — the palette is exclusively warm\n- Don't use bold (700+) weight — 400 is the only weight\n- Don't round corners — the sharp geometry is intentional\n- Don't use cool-toned shadows — shadows must carry…"
+}

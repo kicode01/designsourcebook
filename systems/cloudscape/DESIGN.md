@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Cloudscape
+description: "Amazon Cloudscape — the design system for AWS console experiences."
+colors:
+  color-charts-status-info: "#3184c2"
+  color-charts-threshold-neutral: "#656871"
+  color-background-notification-severity-high: "#ce3311"
+  color-background-notification-severity-neutral: "#656871"
+  color-text-notification-severity-medium: "#0f141a"
+  color-text-badge-severity-critical: "#f9f9fa"
+  color-text-badge-severity-low: "#0f141a"
+  color-background-button-link-active: "#d1f1ff"
+  color-background-button-normal-default: "#ffffff"
+  color-background-toggle-button-normal-pressed: "#d1f1ff"
+  color-background-button-primary-active: "#002b66"
+  color-background-button-primary-hover: "#002b66"
+  color-background-container-content: "#ffffff"
+  color-background-control-default: "#ffffff"
+  color-background-dropdown-item-filter-match: "#f0fbff"
+  color-background-home-header: "#0f141a"
+  color-background-item-selected: "#f0fbff"
+  color-background-layout-panel-content: "#ffffff"
+  color-background-layout-toggle-default: "#424650"
+  color-background-layout-toggle-selected-default: "#006ce0"
+  color-background-notification-green: "#00802f"
+  color-background-notification-yellow: "#ffe347"
+  color-background-flashbar-info: "#006ce0"
+  color-background-progress-bar-value-default: "#006ce0"
+  color-background-segment-default: "#ffffff"
+  color-background-segment-wrapper: "#ffffff"
+  color-background-slider-handle-default: "#006ce0"
+  color-background-status-error: "#fff5f5"
+  color-background-status-success: "#effff1"
+  color-background-toggle-checked-disabled: "#b8e7ff"
+  color-text-avatar: "#ffffff"
+  color-text-chat-bubble-incoming: "#0f141a"
+  color-border-toggle-button-normal-pressed: "#006ce0"
+  color-border-button-normal-disabled: "#b4b4bb"
+  color-text-button-icon-disabled: "#8c8c94"
+  color-border-button-primary-disabled: "#ebebf0"
+  color-text-side-navigation-item-active: "#006ce0"
+  color-border-divider-default: "#c6c6cd"
+  color-border-dropdown-item-hover: "#8c8c94"
+  color-border-item-focused: "#006ce0"
+  color-border-layout-side-navigation: "#c6c6cd"
+  color-border-segment-default: "#424650"
+  color-border-segment-hover: "#424650"
+  color-border-status-info: "#006ce0"
+  color-border-dialog: "#006ce0"
+  color-text-body-default: "#0f141a"
+  color-text-breadcrumb-icon: "#8c8c94"
+  color-text-button-inline-icon-hover: "#002b66"
+  color-text-button-normal-default: "#006ce0"
+  color-text-button-link-default: "#006ce0"
+  color-text-button-primary-active: "#ffffff"
+  color-text-calendar-date-selected: "#ffffff"
+  color-text-dropdown-item-disabled: "#b4b4bb"
+  color-text-dropdown-item-secondary: "#656871"
+  color-text-expandable-section-hover: "#006ce0"
+  color-text-form-secondary: "#656871"
+  color-text-heading-default: "#0f141a"
+  color-text-home-header-secondary: "#c6c6cd"
+  color-text-input-placeholder: "#656871"
+  color-text-interactive-disabled: "#b4b4bb"
+  color-text-interactive-inverted-default: "#dedee3"
+  color-text-layout-toggle: "#ffffff"
+  color-text-layout-toggle-selected: "#ffffff"
+  color-text-link-secondary-default: "#006ce0"
+  color-text-link-info-hover: "#002b66"
+  color-text-segment-active: "#ffffff"
+  color-text-status-error: "#db0000"
+  color-text-status-success: "#00802f"
+  color-dropzone-background-default: "#ffffff"
+  color-dropzone-text-hover: "#424650"
+  color-background-action-card-default: "#ffffff"
+  color-border-action-card-default: "#006ce0"
+  color-border-action-card-disabled: "#b4b4bb"
+  color-text-action-card-icon-default: "#006ce0"
+  color-text-action-card-icon-disabled: "#b4b4bb"
+  color-background-badge-red: "#db0000"
+  color-text-badge-grey: "#f9f9fa"
+  color-text-badge-red: "#f9f9fa"
+  color-charts-red-300: "#ea7158"
+  color-charts-orange-600: "#a84401"
+  color-charts-yellow-900: "#5d4503"
+  color-charts-green-1200: "#0d4000"
+  color-charts-blue-1-500: "#0273bb"
+  color-charts-blue-2-800: "#2c46b1"
+  color-charts-purple-1100: "#4a238b"
+  color-charts-status-high: "#ba2e0f"
+  color-charts-palette-categorical-5: "#e07941"
+  color-charts-palette-categorical-18: "#003e38"
+  color-charts-palette-categorical-31: "#1f3191"
+  color-charts-palette-categorical-44: "#59309d"
+  primary: "#002b66"
+---
+
+# Cloudscape
+
+## Overview
+
+Amazon Cloudscape — the design system for AWS console experiences.
+
+Tokens were read from `@cloudscape-design/design-tokens@3.0.117`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

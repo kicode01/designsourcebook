@@ -1,0 +1,360 @@
+{
+  "canvas": "rgb(255, 255, 255)",
+  "surface": "rgb(255, 255, 255)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "rgb(53, 89, 199)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "n-color-accent",
+      "value": "rgb(53, 89, 199)"
+    },
+    {
+      "name": "n-color-accent-secondary",
+      "value": "rgb(53, 89, 199)"
+    },
+    {
+      "name": "n-color-text",
+      "value": "rgb(12, 26, 61)"
+    },
+    {
+      "name": "n-color-text-link",
+      "value": "rgb(53, 89, 199)"
+    },
+    {
+      "name": "n-color-text-weak",
+      "value": "rgb(54, 67, 74)"
+    },
+    {
+      "name": "n-color-text-weaker",
+      "value": "rgb(102, 118, 128)"
+    },
+    {
+      "name": "n-color-text-weakest",
+      "value": "rgb(178, 186, 191)"
+    },
+    {
+      "name": "n-color-text-on-accent",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-color-text-error",
+      "value": "rgb(210, 64, 35)"
+    },
+    {
+      "name": "n-color-text-danger",
+      "value": "rgb(178, 48, 21)"
+    },
+    {
+      "name": "n-color-text-success",
+      "value": "rgb(17, 118, 39)"
+    },
+    {
+      "name": "n-color-text-neutral",
+      "value": "rgb(85, 89, 93)"
+    },
+    {
+      "name": "n-color-text-neutral-strong",
+      "value": "rgb(17, 24, 28)"
+    },
+    {
+      "name": "n-color-text-warning",
+      "value": "rgb(148, 105, 0)"
+    },
+    {
+      "name": "n-color-text-warning-strong",
+      "value": "rgb(51, 40, 16)"
+    },
+    {
+      "name": "n-color-text-highlight",
+      "value": "rgb(121, 58, 175)"
+    },
+    {
+      "name": "n-color-text-info",
+      "value": "rgb(52, 81, 178)"
+    },
+    {
+      "name": "n-color-text-progress",
+      "value": "rgb(1, 109, 131)"
+    },
+    {
+      "name": "n-color-nav-surface",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-color-nav-heading",
+      "value": "rgb(143, 161, 170)"
+    },
+    {
+      "name": "n-color-nav-hover",
+      "value": "rgb(240, 241, 243)"
+    },
+    {
+      "name": "n-color-nav-selected",
+      "value": "rgb(233, 234, 237)"
+    },
+    {
+      "name": "n-color-border",
+      "value": "rgb(216, 222, 228)"
+    },
+    {
+      "name": "n-color-border-strong",
+      "value": "rgb(188, 197, 204)"
+    },
+    {
+      "name": "n-color-border-neutral",
+      "value": "rgb(215, 220, 224)"
+    },
+    {
+      "name": "n-color-border-warning",
+      "value": "rgb(248, 216, 124)"
+    },
+    {
+      "name": "n-color-border-highlight",
+      "value": "rgb(227, 204, 244)"
+    },
+    {
+      "name": "n-color-border-danger",
+      "value": "rgb(250, 199, 190)"
+    },
+    {
+      "name": "n-color-border-success",
+      "value": "rgb(183, 223, 186)"
+    },
+    {
+      "name": "n-color-border-info",
+      "value": "rgb(198, 212, 249)"
+    },
+    {
+      "name": "n-color-border-progress",
+      "value": "rgb(176, 229, 238)"
+    },
+    {
+      "name": "n-color-surface",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-color-background",
+      "value": "rgb(250, 251, 251)"
+    },
+    {
+      "name": "n-color-surface-raised",
+      "value": "rgb(250, 251, 251)"
+    },
+    {
+      "name": "n-color-surface-lowered",
+      "value": "rgb(230, 232, 235)"
+    },
+    {
+      "name": "n-color-surface-canvas",
+      "value": "rgb(252, 252, 252)"
+    },
+    {
+      "name": "n-color-surface-background",
+      "value": "rgb(247, 247, 248)"
+    },
+    {
+      "name": "n-color-status-neutral",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-color-status-warning",
+      "value": "rgb(246, 205, 90)"
+    },
+    {
+      "name": "n-color-status-highlight",
+      "value": "rgb(142, 78, 198)"
+    },
+    {
+      "name": "n-color-status-danger",
+      "value": "rgb(210, 64, 35)"
+    },
+    {
+      "name": "n-color-status-success",
+      "value": "rgb(29, 134, 51)"
+    },
+    {
+      "name": "n-color-status-info",
+      "value": "rgb(62, 99, 221)"
+    },
+    {
+      "name": "n-color-status-progress",
+      "value": "rgb(0, 127, 153)"
+    },
+    {
+      "name": "n-color-status-notification",
+      "value": "rgb(231, 84, 54)"
+    },
+    {
+      "name": "n-color-status-neutral-weak",
+      "value": "rgb(241, 243, 245)"
+    },
+    {
+      "name": "n-color-status-warning-weak",
+      "value": "rgb(255, 250, 225)"
+    },
+    {
+      "name": "n-color-status-highlight-weak",
+      "value": "rgb(249, 241, 254)"
+    },
+    {
+      "name": "n-color-status-danger-weak",
+      "value": "rgb(255, 240, 238)"
+    },
+    {
+      "name": "n-color-status-success-weak",
+      "value": "rgb(235, 249, 235)"
+    },
+    {
+      "name": "n-color-status-info-weak",
+      "value": "rgb(240, 244, 255)"
+    },
+    {
+      "name": "n-color-status-progress-weak",
+      "value": "rgb(231, 249, 251)"
+    },
+    {
+      "name": "n-color-button",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "n-color-button-hover",
+      "value": "rgb(246, 248, 248)"
+    },
+    {
+      "name": "n-color-border-hover",
+      "value": "rgb(102, 118, 128)"
+    },
+    {
+      "name": "n-color-icon",
+      "value": "rgb(102, 118, 128)"
+    },
+    {
+      "name": "n-color-icon-hover",
+      "value": "rgb(12, 26, 61)"
+    },
+    {
+      "name": "n-color-active",
+      "value": "rgb(246, 248, 248)"
+    },
+    {
+      "name": "n-color-header",
+      "value": "rgb(246, 248, 248)"
+    },
+    {
+      "name": "tw-ring-offset-color",
+      "value": "#fff"
+    },
+    {
+      "name": "n-avatar-color",
+      "value": "#310d77"
+    },
+    {
+      "name": "n-nav-item-background-active",
+      "value": "#0ea5e9"
+    },
+    {
+      "name": "n-nav-item-background-expanded",
+      "value": "#e0f2fe"
+    },
+    {
+      "name": "n-nav-item-background-hover",
+      "value": "#e0f2fe"
+    },
+    {
+      "name": "n-nav-item-color-active",
+      "value": "#fff"
+    },
+    {
+      "name": "n-nav-item-color-hover",
+      "value": "#0c4a6e"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(53, 89, 199)"
+    }
+  ],
+  "type": [
+    {
+      "name": "n-font-size-xxxl",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "n-kbd-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "n-font-size-xxl",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "n-font-size-xl",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "n-button-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "n-font-size-l",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "n-font-family",
+      "fontFamily": "Nordhealth Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji",
+      "px": 16
+    },
+    {
+      "name": "n-font-family-code",
+      "fontFamily": "Nordhealth Mono',monospace,monospace",
+      "px": 16
+    },
+    {
+      "name": "n-font-family-custom",
+      "fontFamily": "Nord Custom\", -apple-system, system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "n-font-size-m",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "n-font-size-s",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "n-font-size-xs",
+      "fontFamily": "system-ui",
+      "fontSize": ".6875rem",
+      "px": 11
+    },
+    {
+      "name": "n-font-size-xxs",
+      "fontFamily": "system-ui",
+      "fontSize": ".625rem",
+      "px": 10
+    }
+  ],
+  "components": [],
+  "overview": "Nordhealth Nordhealth — read from nordhealth.design's live stylesheets, not a published token package.",
+  "dos": ""
+}

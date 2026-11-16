@@ -1,0 +1,41 @@
+{
+  "name": "buzzvil",
+  "displayName": "Buzzvil Design System",
+  "description": "Buzzvil Buzzvil Design System — read from design.buzzvil.com's live stylesheets, not a published token package.",
+  "style": "Buzzvil Buzzvil Design System — read from design.buzzvil.com's live stylesheets, not a published token package.",
+  "category": "Buzzvil",
+  "org": "Buzzvil",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "buzzvil"
+  ],
+  "homepage": "https://design.buzzvil.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://design.buzzvil.com/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 14,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 2,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

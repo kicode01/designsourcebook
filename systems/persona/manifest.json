@@ -1,0 +1,42 @@
+{
+  "name": "persona",
+  "displayName": "Persona Design System",
+  "description": "Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system.",
+  "style": "Persona Persona Design System — tokens read from https://github.com/privy-open-source/design-system.",
+  "category": "Persona",
+  "org": "Persona",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "persona",
+    "open-source"
+  ],
+  "homepage": "https://github.com/privy-open-source/design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/privy-open-source/design-system — 10 token files, 314 colours harvested, 87 selected.",
+  "source": {
+    "repo": "https://github.com/privy-open-source/design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 88,
+    "typography": 7,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

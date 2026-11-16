@@ -1,0 +1,325 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff5900",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "9999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-void-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-near-white",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "brand-orange-4",
+      "value": "#ff5900"
+    },
+    {
+      "name": "brand-orange-10",
+      "value": "#ff801f"
+    },
+    {
+      "name": "brand-orange-11",
+      "value": "#ffa057"
+    },
+    {
+      "name": "brand-green-3",
+      "value": "#22ff99"
+    },
+    {
+      "name": "brand-green-4",
+      "value": "#11ff99"
+    },
+    {
+      "name": "brand-blue-4",
+      "value": "#0075ff"
+    },
+    {
+      "name": "brand-blue-5",
+      "value": "#0081fd"
+    },
+    {
+      "name": "brand-blue-10",
+      "value": "#3b9eff"
+    },
+    {
+      "name": "brand-yellow-9",
+      "value": "#ffc53d"
+    },
+    {
+      "name": "brand-red-5",
+      "value": "#ff2047"
+    },
+    {
+      "name": "neutral-silver",
+      "value": "#a1a4a5"
+    },
+    {
+      "name": "neutral-dark-gray",
+      "value": "#464a4d"
+    },
+    {
+      "name": "neutral-mid-gray",
+      "value": "#5c5c5c"
+    },
+    {
+      "name": "neutral-medium-gray",
+      "value": "#494949"
+    },
+    {
+      "name": "neutral-light-gray",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "neutral-border-gray",
+      "value": "#eaeaea"
+    },
+    {
+      "name": "neutral-edge-gray",
+      "value": "#ececec"
+    },
+    {
+      "name": "neutral-mist-gray",
+      "value": "#dedfdf"
+    },
+    {
+      "name": "neutral-soft-gray",
+      "value": "#e5e6e6"
+    },
+    {
+      "name": "overlay-frost-primary",
+      "value": "#fcfdff"
+    },
+    {
+      "name": "overlay-white-hover",
+      "value": "rgba(255, 255, 255, 0.28)"
+    },
+    {
+      "name": "borders-frost-border",
+      "value": "rgba(214, 235, 253, 0.19)"
+    },
+    {
+      "name": "borders-frost-border-alt",
+      "value": "rgba(217, 237, 254, 0.145)"
+    },
+    {
+      "name": "borders-ring-shadow",
+      "value": "rgba(176, 199, 217, 0.145)"
+    },
+    {
+      "name": "borders-focus-ring",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "borders-subtle-shadow",
+      "value": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "name": "primary",
+      "value": "#ff5900"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Helvetica",
+      "fontSize": "96px",
+      "px": 96,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "display-hero-mobile",
+      "fontFamily": "Helvetica",
+      "fontSize": "76.8px",
+      "px": 76.8,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.768px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Helvetica",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-2.8px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Helvetica",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "heading-helvetica",
+      "fontFamily": "Helvetica",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Helvetica",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Helvetica",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "sub-heading-compact",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.8px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-semibold",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "Helvetica",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.43,
+      "letterSpacing": "0.35px"
+    },
+    {
+      "name": "button-link",
+      "fontFamily": "Helvetica",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Helvetica",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "helvetica-caption",
+      "fontFamily": "Helvetica",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "code-small",
+      "fontFamily": "Helvetica",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "small",
+      "fontFamily": "Helvetica",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "small-uppercase",
+      "fontFamily": "Helvetica",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "small-capitalize",
+      "fontFamily": "Helvetica",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "code-tiny",
+      "fontFamily": "Helvetica",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-transparent-pill",
+      "kind": "button",
+      "textColor": "#f0f0f0",
+      "rounded": "9999px",
+      "padding": "5px 12px",
+      "border": "1px solid rgba(214, 235, 253, 0.19)"
+    },
+    {
+      "key": "button-white-solid-pill",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "9999px",
+      "padding": "5px 12px"
+    },
+    {
+      "key": "button-ghost",
+      "kind": "button",
+      "textColor": "#f0f0f0",
+      "rounded": "4px"
+    }
+  ],
+  "overview": "Resend's website is a dark, cinematic canvas that treats email infrastructure like a luxury product. The entire page is draped in pure black (#000000) with text that glows in near-white (#f0f0f0), creating a theater-like experience where content performs on a void stage. This isn't the typical developer-tool darkness — it's the controlled darkness of a photography gallery, where every element is lit with intention and nothing competes for attention.\n\nThe typography system is the star of the show. Three carefully chosen typefaces create a hierarchy that feels both editorial and technical: Domaine Display (a Klim Type Foundry serif) appears at massive 96px for hero headlines with barely-there line-height (1.00) and negative tracking (-0.96px), creating display text that feels like a magazine cover. ABC Favorit (by Dinamo) handles section headings with an even more aggressive…",
+  "dos": "Do\n- Use pure black (#000000) as the page background — the void is the canvas\n- Apply frost borders (rgba(214, 235, 253, 0.19)) for all structural lines — they're the blue-tinted signature\n- Use Domaine Display ONLY for hero headings (96px), ABC Favorit for section headings, Inter for everything else\n- Enable OpenType \"ss01\", \"ss04\", \"ss11\" on Domaine and ABC Favorit text\n- Apply pill radius (9999px) to primary CTAs and tags\n- Use the multi-color accent scale (orange/green/blue/yellow/red) with opacity variants for context-specific highlighting\n- Keep shadows at ring level (0px 0px 0px 1px) — on black, traditional shadows don't work\n- Use +0.35px letter-spacing on ABC Favorit nav links — the only positive tracking\n\nDon't\n- Don't lighten the background above #000000 — the pure black void is non-negotiable\n- Don't use neutral gray borders — all borders must have the frost blue tint\n-…"
+}

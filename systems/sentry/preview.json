@@ -1,0 +1,268 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1f1633",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-deep-purple",
+      "value": "#1f1633"
+    },
+    {
+      "name": "brand-darker-purple",
+      "value": "#150f23"
+    },
+    {
+      "name": "brand-border-purple",
+      "value": "#362d59"
+    },
+    {
+      "name": "brand-sentry-purple",
+      "value": "#6a5fc1"
+    },
+    {
+      "name": "brand-muted-purple",
+      "value": "#79628c"
+    },
+    {
+      "name": "brand-deep-violet",
+      "value": "#422082"
+    },
+    {
+      "name": "brand-lime-green",
+      "value": "#c2ef4e"
+    },
+    {
+      "name": "brand-coral",
+      "value": "#ffb287"
+    },
+    {
+      "name": "brand-pink",
+      "value": "#fa7faa"
+    },
+    {
+      "name": "text-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-light-gray",
+      "value": "#e5e7eb"
+    },
+    {
+      "name": "text-code-yellow",
+      "value": "#dcdcaa"
+    },
+    {
+      "name": "overlay-glass-white",
+      "value": "rgba(255, 255, 255, 0.18)"
+    },
+    {
+      "name": "overlay-glass-dark",
+      "value": "rgba(54, 22, 107, 0.14)"
+    },
+    {
+      "name": "overlay-input-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "overlay-input-border",
+      "value": "#cfcfdb"
+    },
+    {
+      "name": "shadows-ambient-glow",
+      "value": "rgba(22, 15, 36, 0.9)"
+    },
+    {
+      "name": "shadows-button-hover",
+      "value": "rgba(0, 0, 0, 0.18)"
+    },
+    {
+      "name": "shadows-card-shadow",
+      "value": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "name": "shadows-inset-button",
+      "value": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "name": "primary",
+      "value": "#1f1633"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "88px",
+      "px": 88,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-secondary",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 500,
+      "lineHeight": 1.1
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "27px",
+      "px": 27,
+      "fontWeight": 500,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-emphasis",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "code",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nav-label",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "uppercase-label",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "button-text",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.14,
+      "letterSpacing": "0.2px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.2px"
+    },
+    {
+      "name": "small-caption",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 2
+    },
+    {
+      "name": "micro-label",
+      "fontFamily": "Dammit Sans",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 600,
+      "lineHeight": 1.8,
+      "letterSpacing": "0.25px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-muted-purple",
+      "kind": "button",
+      "backgroundColor": "#79628c",
+      "textColor": "#ffffff",
+      "rounded": "13px",
+      "border": "1px solid #584674",
+      "shadow": "rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset"
+    },
+    {
+      "key": "button-glass-white",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0.18)",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "8px",
+      "shadow": "rgba(0, 0, 0, 0.08) 0px 2px 8px"
+    },
+    {
+      "key": "button-white-solid",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#1f1633",
+      "rounded": "8px",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "button-deep-violet",
+      "kind": "button",
+      "backgroundColor": "#422082",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "input-text",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "textColor": "#1f1633",
+      "rounded": "6px",
+      "padding": "8px 12px",
+      "border": "1px solid #cfcfdb"
+    }
+  ],
+  "overview": "Sentry's website is a dark-mode-first developer tool interface that speaks the language of code editors and terminal windows. The entire aesthetic is rooted in deep purple-black backgrounds (#1f1633, #150f23) that evoke the late-night debugging sessions Sentry was built for. Against this inky canvas, a carefully curated set of purples, pinks, and a distinctive lime-green accent (#c2ef4e) create a visual system that feels simultaneously technical and vibrant.\n\nThe typography pairing is deliberate: \"Dammit Sans\" appears at hero scale (88px, weight 700) as a display font with personality and attitude that matches Sentry's irreverent brand voice (\"Code breaks. Fix it faster.\"), while Rubik serves as the workhorse UI font across all functional text — headings, body, buttons, captions, and navigation. Monaco provides the monospace layer for code snippets and technical content, completing the…",
+  "dos": "Do\n- Use deep purple backgrounds (#1f1633, #150f23) — never pure black (#000000)\n- Apply inset shadows on primary buttons for the tactile pressed effect\n- Use Dammit Sans ONLY for hero/display headings — Rubik for everything else\n- Apply text-transform: uppercase with letter-spacing: 0.2px on buttons and labels\n- Use the lime-green accent (#c2ef4e) sparingly for maximum impact\n- Employ frosted glass effects (blur(18px) saturate(180%)) for layered surfaces\n- Maintain the warm purple shadow tones — shadows should feel purple-tinted, not neutral gray\n- Use Rubik's 4-tier weight system: 400 (body), 500 (nav/emphasis), 600 (titles), 700 (CTAs)\n\nDon't\n- Don't use pure black (#000000) for backgrounds — always use the warm purple-blacks\n- Don't apply Dammit Sans to body text or UI elements — it's display-only\n- Don't use standard gray (#666, #999) for borders — use purple-tinted grays (#362d59,…"
+}

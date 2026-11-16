@@ -1,0 +1,42 @@
+{
+  "name": "vanilla",
+  "displayName": "Vanilla",
+  "description": "Canonical Vanilla — an extensible Sass CSS framework by the Ubuntu Web Team.",
+  "style": "Canonical Vanilla — an extensible Sass CSS framework by the Ubuntu Web Team.",
+  "category": "Ubuntu",
+  "org": "Ubuntu",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "ubuntu"
+  ],
+  "homepage": "https://vanillaframework.io/",
+  "license": "LGPL-3.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from vanilla-framework@4.61.0 (1 token files, 16 colours harvested, 16 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "vanilla-framework",
+    "version": "4.61.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 17,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

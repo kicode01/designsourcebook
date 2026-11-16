@@ -1,0 +1,43 @@
+{
+  "name": "pluralsight",
+  "displayName": "Pluralsight Design System",
+  "description": "Pluralsight Design System — a cohesive design language for Pluralsight products.",
+  "style": "Pluralsight Design System — a cohesive design language for Pluralsight products.",
+  "category": "Pluralsight",
+  "org": "Pluralsight",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "pluralsight"
+  ],
+  "homepage": "https://design.pluralsight.com/",
+  "license": "Apache 2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @pluralsight/design-tokens@0.7.1 (2 token files, 110 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@pluralsight/design-tokens",
+    "version": "0.7.1",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

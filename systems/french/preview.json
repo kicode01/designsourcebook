@@ -1,0 +1,380 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff732c",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "info-75",
+      "value": "#171d2e"
+    },
+    {
+      "name": "info-100",
+      "value": "#1d2437"
+    },
+    {
+      "name": "info-125",
+      "value": "#222a3f"
+    },
+    {
+      "name": "info-200",
+      "value": "#273961"
+    },
+    {
+      "name": "info-425",
+      "value": "#0063cb"
+    },
+    {
+      "name": "info-625",
+      "value": "#518fff"
+    },
+    {
+      "name": "info-850",
+      "value": "#bccdff"
+    },
+    {
+      "name": "info-925",
+      "value": "#dde5ff"
+    },
+    {
+      "name": "info-950",
+      "value": "#e8edff"
+    },
+    {
+      "name": "info-975",
+      "value": "#f4f6ff"
+    },
+    {
+      "name": "info-main-525",
+      "value": "#0078f3"
+    },
+    {
+      "name": "success-75",
+      "value": "#142117"
+    },
+    {
+      "name": "success-100",
+      "value": "#19271d"
+    },
+    {
+      "name": "success-125",
+      "value": "#1e2e22"
+    },
+    {
+      "name": "success-200",
+      "value": "#204129"
+    },
+    {
+      "name": "success-425",
+      "value": "#18753c"
+    },
+    {
+      "name": "success-625",
+      "value": "#27a658"
+    },
+    {
+      "name": "success-850",
+      "value": "#3bea7e"
+    },
+    {
+      "name": "success-925",
+      "value": "#88fdaa"
+    },
+    {
+      "name": "success-950",
+      "value": "#b8fec9"
+    },
+    {
+      "name": "success-975",
+      "value": "#dffee6"
+    },
+    {
+      "name": "success-main-525",
+      "value": "#1f8d49"
+    },
+    {
+      "name": "warning-75",
+      "value": "#2d1814"
+    },
+    {
+      "name": "warning-100",
+      "value": "#361e19"
+    },
+    {
+      "name": "warning-125",
+      "value": "#3e231e"
+    },
+    {
+      "name": "warning-200",
+      "value": "#5d2c20"
+    },
+    {
+      "name": "warning-425",
+      "value": "#b34000"
+    },
+    {
+      "name": "warning-625",
+      "value": "#fc5d00"
+    },
+    {
+      "name": "warning-850",
+      "value": "#ffbeb4"
+    },
+    {
+      "name": "warning-925",
+      "value": "#ffded9"
+    },
+    {
+      "name": "warning-950",
+      "value": "#ffe9e6"
+    },
+    {
+      "name": "warning-975",
+      "value": "#fff4f3"
+    },
+    {
+      "name": "warning-main-525",
+      "value": "#d64d00"
+    },
+    {
+      "name": "error-75",
+      "value": "#301717"
+    },
+    {
+      "name": "error-100",
+      "value": "#391c1c"
+    },
+    {
+      "name": "error-125",
+      "value": "#412121"
+    },
+    {
+      "name": "error-200",
+      "value": "#642626"
+    },
+    {
+      "name": "error-425",
+      "value": "#ce0500"
+    },
+    {
+      "name": "error-625",
+      "value": "#ff5655"
+    },
+    {
+      "name": "error-850",
+      "value": "#ffbdbd"
+    },
+    {
+      "name": "error-925",
+      "value": "#fdd"
+    },
+    {
+      "name": "error-950",
+      "value": "#ffe9e9"
+    },
+    {
+      "name": "error-975",
+      "value": "#fff4f4"
+    },
+    {
+      "name": "error-main-525",
+      "value": "#f60700"
+    },
+    {
+      "name": "focus",
+      "value": "#0a76f6"
+    },
+    {
+      "name": "grey-0",
+      "value": "#000"
+    },
+    {
+      "name": "grey-150",
+      "value": "#2f2f2f"
+    },
+    {
+      "name": "grey-850",
+      "value": "#cecece"
+    },
+    {
+      "name": "grey-1000",
+      "value": "#fff"
+    },
+    {
+      "name": "blue-france-200",
+      "value": "#313178"
+    },
+    {
+      "name": "blue-france-975",
+      "value": "#f5f5fe"
+    },
+    {
+      "name": "red-marianne-125",
+      "value": "#3b2424"
+    },
+    {
+      "name": "red-marianne-925",
+      "value": "#fddede"
+    },
+    {
+      "name": "green-tilleul-verveine-100",
+      "value": "#272419"
+    },
+    {
+      "name": "green-tilleul-verveine-950",
+      "value": "#fceeac"
+    },
+    {
+      "name": "green-bourgeon-75",
+      "value": "#182014"
+    },
+    {
+      "name": "green-bourgeon-925",
+      "value": "#a9fb68"
+    },
+    {
+      "name": "green-bourgeon-main-640",
+      "value": "#68a532"
+    },
+    {
+      "name": "green-emeraude-850",
+      "value": "#6fe49d"
+    },
+    {
+      "name": "green-emeraude-moon-753",
+      "value": "#34cb6a"
+    },
+    {
+      "name": "green-menthe-200",
+      "value": "#223f3a"
+    },
+    {
+      "name": "green-menthe-sun-373",
+      "value": "#37635f"
+    },
+    {
+      "name": "green-archipel-125",
+      "value": "#1f2c2e"
+    },
+    {
+      "name": "green-archipel-975",
+      "value": "#e5fbfd"
+    },
+    {
+      "name": "blue-ecume-100",
+      "value": "#1d2437"
+    },
+    {
+      "name": "blue-ecume-950",
+      "value": "#e9edfe"
+    },
+    {
+      "name": "blue-cumulus-75",
+      "value": "#171e2b"
+    },
+    {
+      "name": "blue-cumulus-925",
+      "value": "#dae6fd"
+    },
+    {
+      "name": "blue-cumulus-main-526",
+      "value": "#417dc4"
+    },
+    {
+      "name": "purple-glycine-850",
+      "value": "#fbb8f6"
+    },
+    {
+      "name": "purple-glycine-moon-630",
+      "value": "#ce70cc"
+    },
+    {
+      "name": "pink-macaron-200",
+      "value": "#52312a"
+    },
+    {
+      "name": "pink-macaron-sun-406",
+      "value": "#8d533e"
+    },
+    {
+      "name": "pink-tuile-125",
+      "value": "#372624"
+    },
+    {
+      "name": "pink-tuile-975",
+      "value": "#fef4f3"
+    },
+    {
+      "name": "yellow-tournesol-100",
+      "value": "#292416"
+    },
+    {
+      "name": "yellow-tournesol-950",
+      "value": "#feecc2"
+    },
+    {
+      "name": "yellow-moutarde-75",
+      "value": "#231d14"
+    },
+    {
+      "name": "yellow-moutarde-925",
+      "value": "#fde2b5"
+    },
+    {
+      "name": "yellow-moutarde-main-679",
+      "value": "#c3992a"
+    },
+    {
+      "name": "orange-terre-battue-850",
+      "value": "#fcc0b0"
+    },
+    {
+      "name": "orange-terre-battue-moon-672",
+      "value": "#ff732c"
+    },
+    {
+      "name": "brown-cafe-creme-200",
+      "value": "#423925"
+    },
+    {
+      "name": "brown-cafe-creme-sun-383",
+      "value": "#685c48"
+    },
+    {
+      "name": "brown-caramel-125",
+      "value": "#332821"
+    },
+    {
+      "name": "brown-caramel-975",
+      "value": "#fbf5f2"
+    },
+    {
+      "name": "brown-opera-100",
+      "value": "#2b221c"
+    },
+    {
+      "name": "brown-opera-950",
+      "value": "#f7ece4"
+    },
+    {
+      "name": "beige-gris-galet-75",
+      "value": "#211d19"
+    },
+    {
+      "name": "beige-gris-galet-925",
+      "value": "#eee4d9"
+    },
+    {
+      "name": "primary",
+      "value": "#ff732c"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "French French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.",
+  "dos": ""
+}

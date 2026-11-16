@@ -1,0 +1,41 @@
+{
+  "name": "ray",
+  "displayName": "Ray by WeWork",
+  "description": "Ray Ray by WeWork — tokens read from https://github.com/wework/ray.",
+  "style": "Ray Ray by WeWork — tokens read from https://github.com/wework/ray.",
+  "category": "Ray",
+  "org": "Ray",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "ray"
+  ],
+  "homepage": "https://github.com/wework/ray",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/wework/ray — 8 token files, 36 colours harvested, 35 selected.",
+  "source": {
+    "repo": "https://github.com/wework/ray"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 36,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#010120",
+  "text": "#000000",
+  "muted": "#000000",
+  "brand": "#bdbbff",
+  "border": "color-mix(in srgb, #000000 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-brand-magenta",
+      "value": "#ef2cc1"
+    },
+    {
+      "name": "primary-brand-orange",
+      "value": "#fc4c02"
+    },
+    {
+      "name": "primary-dark-blue",
+      "value": "#010120"
+    },
+    {
+      "name": "brand-soft-lavender",
+      "value": "#bdbbff"
+    },
+    {
+      "name": "brand-black-40",
+      "value": "#00000066"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-dark-blue",
+      "value": "#010120"
+    },
+    {
+      "name": "bg-glass-light",
+      "value": "rgba(255, 255, 255, 0.12)"
+    },
+    {
+      "name": "bg-glass-dark",
+      "value": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "name": "text-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "text-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-black-8",
+      "value": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "name": "text-white-12",
+      "value": "rgba(255, 255, 255, 0.12)"
+    },
+    {
+      "name": "primary",
+      "value": "#bdbbff"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "The Future",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.92px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "The Future",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.8px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "The Future",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 500,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.42px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "The Future",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 500,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.22px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "The Future",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.18px"
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "The Future",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "mono-label",
+      "fontFamily": "The Future",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.08px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "The Future",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "mono-small",
+      "fontFamily": "The Future",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.08px"
+    },
+    {
+      "name": "mono-micro",
+      "fontFamily": "The Future",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.05px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-glass-on-dark",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0.12)",
+      "textColor": "#ffffff",
+      "rounded": "4px"
+    },
+    {
+      "key": "button-dark-solid",
+      "kind": "button",
+      "backgroundColor": "#010120",
+      "rounded": "4px"
+    }
+  ],
+  "overview": "Together AI's interface is a pastel-gradient dreamscape built for enterprise AI infrastructure — a design that somehow makes GPU clusters and model inference feel light, airy, and optimistic. The hero section blooms with soft pink-blue-lavender gradients and abstract, painterly illustrations that evoke clouds and flight, establishing a visual metaphor for the \"AI-Native Cloud\" proposition. Against this softness, the typography cuts through with precision: \"The Future\" display font at 64px with aggressive negative tracking (-1.92px) creates dense, authoritative headline blocks.\n\nThe design straddles two worlds: a bright, white-canvas light side where pastel gradients and stats cards create an approachable platform overview, and a dark navy universe (#010120 — not gray-black but a deep midnight blue) where research papers and technical content live. This dual-world approach elegantly…",
+  "dos": "Do\n- Use pastel gradients (pink/blue/lavender) for hero illustrations and decorative backgrounds\n- Use Dark Blue (#010120) for dark sections — never generic gray-black\n- Apply negative letter-spacing on all \"The Future\" text (scaled by size)\n- Use PP Neue Montreal Mono in uppercase for section labels and technical markers\n- Keep border-radius sharp (4px) for badges and interactive elements\n- Use the dark-blue-tinted shadow for elevation\n- Maintain the light/dark section duality — business (light) vs research (dark)\n- Show enterprise stats prominently with large display numbers\n\nDon't\n- Don't use Brand Magenta (#ef2cc1) or Brand Orange (#fc4c02) as UI colors — they're for illustrations only\n- Don't use pill-shaped or generously rounded corners — the geometry is sharp\n- Don't use generic gray-black for dark sections — always Dark Blue (#010120)\n- Don't use positive letter-spacing on \"The…"
+}

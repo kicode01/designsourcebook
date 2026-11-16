@@ -1,0 +1,256 @@
+{
+  "canvas": "#fff",
+  "surface": "#121212",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#fff"
+    },
+    {
+      "name": "color",
+      "value": "#fff"
+    },
+    {
+      "name": "background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "color-prettylights-syntax-comment",
+      "value": "#b2b2b2"
+    },
+    {
+      "name": "color-prettylights-syntax-constant",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-constant-other-reference-l",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "color-prettylights-syntax-entity",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "color-prettylights-syntax-entity-name",
+      "value": "#e6db74"
+    },
+    {
+      "name": "color-prettylights-syntax-entity-tag",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-prettylights-syntax-keyword",
+      "value": "#66d9ef"
+    },
+    {
+      "name": "color-prettylights-syntax-string",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "color-prettylights-syntax-string-regexp",
+      "value": "#fd971f"
+    },
+    {
+      "name": "color-prettylights-syntax-variable",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-storage-modifier-import",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-brackethighlighter-angle",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-brackethighlighter-unmatch",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-prettylights-syntax-sublimelinter-gutter-mark",
+      "value": "#b2b2b2"
+    },
+    {
+      "name": "color-prettylights-syntax-invalid-illegal-bg",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-prettylights-syntax-invalid-illegal-text",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-carriage-return-bg",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-prettylights-syntax-carriage-return-text",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-heading",
+      "value": "#66d9ef"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-bold",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-italic",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-list",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-changed-text",
+      "value": "#e6db74"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-deleted-text",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-inserted-text",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-ignored-text",
+      "value": "#b2b2b2"
+    },
+    {
+      "name": "color-prettylights-syntax-meta-diff-range",
+      "value": "#b78eff"
+    },
+    {
+      "name": "color-docs-infra-syntax-number",
+      "value": "#b78eff"
+    },
+    {
+      "name": "color-docs-infra-syntax-boolean",
+      "value": "#b78eff"
+    },
+    {
+      "name": "color-docs-infra-syntax-nullish",
+      "value": "#b2b2b2"
+    },
+    {
+      "name": "color-docs-infra-syntax-attr-key",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "color-docs-infra-syntax-attr-value",
+      "value": "#e6db74"
+    },
+    {
+      "name": "color-docs-infra-syntax-attr-value-quote",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-docs-infra-syntax-attr-equals",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-docs-infra-syntax-data-attr",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "color-docs-infra-syntax-css-property",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-docs-infra-syntax-css-value",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "color-docs-infra-syntax-this",
+      "value": "#66d9ef"
+    },
+    {
+      "name": "color-docs-infra-syntax-builtin-type",
+      "value": "#66d9ef"
+    },
+    {
+      "name": "color-docs-infra-syntax-jsx",
+      "value": "#e6db74"
+    },
+    {
+      "name": "color-docs-infra-syntax-jsx-variable",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-docs-infra-syntax-html-tag",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-docs-infra-syntax-jsx-tag",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-docs-infra-syntax-property-string",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-docs-infra-syntax-object-property",
+      "value": "#fc929e"
+    },
+    {
+      "name": "color-docs-infra-syntax-punctuation",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "a100",
+      "value": "#ffe57f"
+    },
+    {
+      "name": "a200",
+      "value": "#ffd740"
+    },
+    {
+      "name": "a400",
+      "value": "#ffc400"
+    },
+    {
+      "name": "a700",
+      "value": "#ffab00"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "background-paper",
+      "value": "#121212"
+    },
+    {
+      "name": "background-default",
+      "value": "#121212"
+    },
+    {
+      "name": "paper",
+      "value": "#121212"
+    },
+    {
+      "name": "main",
+      "value": "#ed6c02"
+    },
+    {
+      "name": "background",
+      "value": "#e5e5e5"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "MUI: MUI Material UI — tokens read from https://github.com/mui/material-ui.",
+  "dos": ""
+}

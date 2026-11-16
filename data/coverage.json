@@ -1,0 +1,4595 @@
+{
+  "generated": "2026-11-16T12:55:41.622Z",
+  "registry": {
+    "systems": 177
+  },
+  "sources": [
+    {
+      "id": "awesome",
+      "name": "awesome-design-systems (alexpate)",
+      "total": 160,
+      "covered": 132,
+      "missing": 28,
+      "missingEntries": [
+        {
+          "org": "AT",
+          "name": "AT UIKIT",
+          "npm": null
+        },
+        {
+          "org": "Global Experience Language",
+          "name": "BBC GEL (Global Experience Language)",
+          "npm": null
+        },
+        {
+          "org": "Bridge Design System",
+          "name": "Bold (Bridge Design System)",
+          "npm": null
+        },
+        {
+          "org": "Bolt",
+          "name": "Bolt Design System",
+          "npm": null
+        },
+        {
+          "org": "Co-op",
+          "name": "Co-op Experience Library",
+          "npm": null
+        },
+        {
+          "org": "daisyUI",
+          "name": "daisyUI",
+          "npm": null
+        },
+        {
+          "org": "Duet",
+          "name": "Duet",
+          "npm": null
+        },
+        {
+          "org": "Enel",
+          "name": "Enel",
+          "npm": null
+        },
+        {
+          "org": "FutureLearn",
+          "name": "FutureLearn Pattern Library",
+          "npm": null
+        },
+        {
+          "org": "Heroku",
+          "name": "Heroku Purple3",
+          "npm": null
+        },
+        {
+          "org": "HeroUI",
+          "name": "HeroUI",
+          "npm": null
+        },
+        {
+          "org": "JB",
+          "name": "JB Design System",
+          "npm": null
+        },
+        {
+          "org": "JetBrains",
+          "name": "JetBrains Ring UI",
+          "npm": null
+        },
+        {
+          "org": "Jobber",
+          "name": "Jobber",
+          "npm": null
+        },
+        {
+          "org": "Just",
+          "name": "Just Eat Takeaway.com PIE Design System",
+          "npm": null
+        },
+        {
+          "org": "Kontur",
+          "name": "Kontur",
+          "npm": null
+        },
+        {
+          "org": "Mail.ru",
+          "name": "Mail.ru Group Paradigm",
+          "npm": null
+        },
+        {
+          "org": "Mailchimp",
+          "name": "Mailchimp Content Styleguide",
+          "npm": null
+        },
+        {
+          "org": "Marvel",
+          "name": "Marvel Styleguide",
+          "npm": null
+        },
+        {
+          "org": "Morningstar",
+          "name": "Morningstar Design System",
+          "npm": null
+        },
+        {
+          "org": "NASA",
+          "name": "NASA Web Design System",
+          "npm": null
+        },
+        {
+          "org": "NationBuilder",
+          "name": "NationBuilder Radius",
+          "npm": null
+        },
+        {
+          "org": "Nordnet",
+          "name": "Nordnet",
+          "npm": null
+        },
+        {
+          "org": "Ontario",
+          "name": "Ontario Design System",
+          "npm": null
+        },
+        {
+          "org": "Red",
+          "name": "Red Hat PatternFly",
+          "npm": null
+        },
+        {
+          "org": "Teambition",
+          "name": "Teambition Clarity Design",
+          "npm": null
+        },
+        {
+          "org": "Uiverse",
+          "name": "Uiverse",
+          "npm": null
+        },
+        {
+          "org": "Yelp",
+          "name": "Yelp Styleguide",
+          "npm": null
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "name": "Design Systems Gallery (Jad Limcaco)",
+      "total": 104,
+      "covered": 44,
+      "missing": 60,
+      "missingEntries": [
+        {
+          "org": "Wonderflow",
+          "name": "Wanda Design System",
+          "npm": "@wonderflow/react-components"
+        },
+        {
+          "org": "Italian Public Administration",
+          "name": "Designers Italia",
+          "npm": null
+        },
+        {
+          "org": "Heartbeat",
+          "name": ".pulse",
+          "npm": null
+        },
+        {
+          "org": "AXA",
+          "name": "AXA Digital Guidelines",
+          "npm": null
+        },
+        {
+          "org": "ServiceTitan",
+          "name": "Anvil",
+          "npm": null
+        },
+        {
+          "org": "Alfa-Bank",
+          "name": "Arui-Feather",
+          "npm": null
+        },
+        {
+          "org": "GO-JEK",
+          "name": "Asphalt",
+          "npm": null
+        },
+        {
+          "org": "Audi",
+          "name": "Audi UI",
+          "npm": null
+        },
+        {
+          "org": "Australian Government",
+          "name": "Australian Government Design System",
+          "npm": null
+        },
+        {
+          "org": "Dynatrace",
+          "name": "Barista",
+          "npm": null
+        },
+        {
+          "org": "Biings",
+          "name": "Biings Design System",
+          "npm": null
+        },
+        {
+          "org": "CBRE Build",
+          "name": "Blocks Design System",
+          "npm": null
+        },
+        {
+          "org": "Pega Digital",
+          "name": "Bolt Design System",
+          "npm": null
+        },
+        {
+          "org": "Hubspot",
+          "name": "Canvas Design System",
+          "npm": "@hubspot/canvas"
+        },
+        {
+          "org": "Code for America",
+          "name": "Code for America Style Guide",
+          "npm": null
+        },
+        {
+          "org": "Discovery Education",
+          "name": "Comet",
+          "npm": null
+        },
+        {
+          "org": "Beeline",
+          "name": "Design System 2.0",
+          "npm": null
+        },
+        {
+          "org": "Mutual of Omaha",
+          "name": "Digital Design Guide",
+          "npm": null
+        },
+        {
+          "org": "State of New South Wales",
+          "name": "Digital NSW",
+          "npm": null
+        },
+        {
+          "org": "LocalTapiola",
+          "name": "Duet",
+          "npm": null
+        },
+        {
+          "org": "E-Trade",
+          "name": "E-Trade Design Language",
+          "npm": null
+        },
+        {
+          "org": "Elementary",
+          "name": "Elementary Human Interface Guidelines",
+          "npm": null
+        },
+        {
+          "org": "MYOB",
+          "name": "Feelix",
+          "npm": null
+        },
+        {
+          "org": "Finastra",
+          "name": "Finastra Design System",
+          "npm": null
+        },
+        {
+          "org": "Bloomberg BNA",
+          "name": "Fishtank",
+          "npm": null
+        },
+        {
+          "org": "FutureLearn",
+          "name": "FutureLearn Pattern Library",
+          "npm": null
+        },
+        {
+          "org": "Westpac",
+          "name": "GEL",
+          "npm": null
+        },
+        {
+          "org": "BBC",
+          "name": "Global Experience Language",
+          "npm": null
+        },
+        {
+          "org": "Help Scout",
+          "name": "Help Scout Style Guide",
+          "npm": null
+        },
+        {
+          "org": "Heroku",
+          "name": "Heroki Design",
+          "npm": null
+        },
+        {
+          "org": "Infor",
+          "name": "Infor Design System",
+          "npm": null
+        },
+        {
+          "org": "Instructure",
+          "name": "Instructure UI",
+          "npm": null
+        },
+        {
+          "org": "Flexport",
+          "name": "Latitude",
+          "npm": null
+        },
+        {
+          "org": "Liferay",
+          "name": "Lexicon",
+          "npm": null
+        },
+        {
+          "org": "Merck",
+          "name": "Liquid",
+          "npm": null
+        },
+        {
+          "org": "Sainsbury's",
+          "name": "Luna",
+          "npm": null
+        },
+        {
+          "org": "MailChimp",
+          "name": "MailChimp Pattern Library",
+          "npm": null
+        },
+        {
+          "org": "Mapbox",
+          "name": "Mapbox Base",
+          "npm": null
+        },
+        {
+          "org": "Marvel",
+          "name": "Marvel Styleguide",
+          "npm": null
+        },
+        {
+          "org": "Morningstar",
+          "name": "Morningstar Design System",
+          "npm": null
+        },
+        {
+          "org": "Trello",
+          "name": "Nachos",
+          "npm": null
+        },
+        {
+          "org": "OPower",
+          "name": "OPattern",
+          "npm": null
+        },
+        {
+          "org": "Pegasystems",
+          "name": "Pega Cosmos",
+          "npm": null
+        },
+        {
+          "org": "General Electric",
+          "name": "Predix Design System",
+          "npm": null
+        },
+        {
+          "org": "Catho",
+          "name": "Quantum",
+          "npm": null
+        },
+        {
+          "org": "QuickBooks",
+          "name": "QuickBooks Design System",
+          "npm": null
+        },
+        {
+          "org": "ConsenSys",
+          "name": "Rimble",
+          "npm": null
+        },
+        {
+          "org": "Indiana University",
+          "name": "Rivet",
+          "npm": null
+        },
+        {
+          "org": "Lonely Planet",
+          "name": "Rizzo",
+          "npm": null
+        },
+        {
+          "org": "Seek",
+          "name": "Seek Style Guide",
+          "npm": null
+        },
+        {
+          "org": "SendGrid",
+          "name": "SendGrid Style Guide",
+          "npm": null
+        },
+        {
+          "org": "ServiceNow",
+          "name": "ServiceNow Design System",
+          "npm": null
+        },
+        {
+          "org": "Benevity",
+          "name": "Skyline",
+          "npm": null
+        },
+        {
+          "org": "Bulb",
+          "name": "Solar Design System",
+          "npm": null
+        },
+        {
+          "org": "Meetup",
+          "name": "Swarm Design System",
+          "npm": null
+        },
+        {
+          "org": "Thumbtack",
+          "name": "Thumbprint",
+          "npm": null
+        },
+        {
+          "org": "Hudl",
+          "name": "Uniform",
+          "npm": null
+        },
+        {
+          "org": "Wonderbly",
+          "name": "Wonderbly Design System",
+          "npm": null
+        },
+        {
+          "org": "Biteable",
+          "name": "X (Biteable Design System)",
+          "npm": null
+        },
+        {
+          "org": "Yelp",
+          "name": "Yelp Styleguide",
+          "npm": null
+        }
+      ]
+    },
+    {
+      "id": "surf",
+      "name": "designsystems.surf",
+      "total": 90,
+      "covered": 41,
+      "missing": 49,
+      "missingEntries": [
+        {
+          "org": "Arbetsformedlingen",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Audi",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Australian Gov",
+          "name": "Agriculture",
+          "npm": null
+        },
+        {
+          "org": "Aviva",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "BBC",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Biings",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Brainly",
+          "name": "Pencil",
+          "npm": null
+        },
+        {
+          "org": "Carrefour",
+          "name": "Marcel",
+          "npm": null
+        },
+        {
+          "org": "Cash App",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "CMS",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Datadog",
+          "name": "Druids",
+          "npm": null
+        },
+        {
+          "org": "Dell",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Denmark",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Docplanner",
+          "name": "Watson",
+          "npm": null
+        },
+        {
+          "org": "Elisa",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Esri",
+          "name": "Calcite",
+          "npm": null
+        },
+        {
+          "org": "General Electric",
+          "name": "Edison",
+          "npm": null
+        },
+        {
+          "org": "Helsinki",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Ideagen",
+          "name": "Helix",
+          "npm": null
+        },
+        {
+          "org": "INPS",
+          "name": "Sirio",
+          "npm": null
+        },
+        {
+          "org": "Lemon Squeezy",
+          "name": "Wedges",
+          "npm": null
+        },
+        {
+          "org": "Line",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "LocalTapiola",
+          "name": "Duet",
+          "npm": null
+        },
+        {
+          "org": "Maersk",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Michelin",
+          "name": "Motion",
+          "npm": null
+        },
+        {
+          "org": "Morningstar",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Motorway",
+          "name": "Highway Code",
+          "npm": null
+        },
+        {
+          "org": "NS",
+          "name": "Tractie",
+          "npm": null
+        },
+        {
+          "org": "NSW",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "NYS",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Ontario",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Orange",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Power",
+          "name": "Playbook",
+          "npm": null
+        },
+        {
+          "org": "Razorpay",
+          "name": "Blade",
+          "npm": null
+        },
+        {
+          "org": "Samsung",
+          "name": "One UI",
+          "npm": null
+        },
+        {
+          "org": "ServiceNow",
+          "name": "Horizon",
+          "npm": null
+        },
+        {
+          "org": "Sigma",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Skoda",
+          "name": "Flow",
+          "npm": null
+        },
+        {
+          "org": "SumUp",
+          "name": "Circuit",
+          "npm": null
+        },
+        {
+          "org": "Sunrise",
+          "name": "Solar",
+          "npm": null
+        },
+        {
+          "org": "Tailwind",
+          "name": "Framework",
+          "npm": null
+        },
+        {
+          "org": "Teamleader",
+          "name": "Ahoy",
+          "npm": null
+        },
+        {
+          "org": "Thumbtack",
+          "name": "Thumbprint",
+          "npm": null
+        },
+        {
+          "org": "UAE",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Visa",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "VTS",
+          "name": "Terra",
+          "npm": null
+        },
+        {
+          "org": "Washington Post",
+          "name": "Design System",
+          "npm": null
+        },
+        {
+          "org": "Wikimedia",
+          "name": "Codex",
+          "npm": null
+        },
+        {
+          "org": "Wonderflow",
+          "name": "Wanda",
+          "npm": null
+        }
+      ]
+    }
+  ],
+  "union": {
+    "organisations": 262,
+    "covered": 142,
+    "missing": 120,
+    "reachableViaNpm": 2,
+    "reachableViaRepo": 12,
+    "entries": [
+      {
+        "org": "Aalto",
+        "covered": "aalto",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Aalto University",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Adobe",
+        "covered": "spectrum",
+        "npm": "@adobe/spectrum-tokens",
+        "repo": "https://github.com/adobe/react-spectrum",
+        "systems": [
+          {
+            "name": "Adobe Spectrum",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Spectrum",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Spectrum",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Adjust",
+        "covered": "adjust",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Adjust Atlas",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Alaska",
+        "covered": "alaskaairlines",
+        "npm": null,
+        "repo": "https://github.com/AlaskaAirlines",
+        "systems": [
+          {
+            "name": "Alaska Airlines",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Alibaba",
+        "covered": "antd",
+        "npm": "antd",
+        "repo": "https://github.com/ant-design/ant-design/",
+        "systems": [
+          {
+            "name": "Alibaba Ant Design",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Ant Design",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Ant Design",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Amplify",
+        "covered": "amplify-ui",
+        "npm": null,
+        "repo": "https://github.com/aws-amplify/amplify-ui/",
+        "systems": [
+          {
+            "name": "Amplify UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Appear",
+        "covered": "bloom",
+        "npm": null,
+        "repo": "https://github.com/appearhere/bloom",
+        "systems": [
+          {
+            "name": "Appear Here Styleguide",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Apple",
+        "covered": "apple",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Apple Developer Design Guidelines",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Human Interface Guidelines",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "HIG",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Arena",
+        "covered": "arena",
+        "npm": null,
+        "repo": "https://github.com/dravensoft-dev/arena",
+        "systems": [
+          {
+            "name": "Arena by Dravensoft",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Artsy",
+        "covered": "artsy-palette",
+        "npm": null,
+        "repo": "https://github.com/artsy/palette",
+        "systems": [
+          {
+            "name": "Artsy Palette",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Astro",
+        "covered": "astro-uxds",
+        "npm": null,
+        "repo": "https://github.com/RocketCommunicationsInc/astro",
+        "systems": [
+          {
+            "name": "Astro UXDS",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "AT",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/at-ui/at-ui",
+        "systems": [
+          {
+            "name": "AT UIKIT",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Atlassian",
+        "covered": "atlassian",
+        "npm": "@atlaskit/tokens",
+        "repo": "https://bitbucket.org/atlassian/atlassian-frontend-mirror/",
+        "systems": [
+          {
+            "name": "Atlassian Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Atlassian Design Language",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Government of Canada",
+        "covered": "aurora",
+        "npm": null,
+        "repo": "https://github.com/gctools-outilsgc/design-system",
+        "systems": [
+          {
+            "name": "Aurora (Government of Canada)",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "AutoGuru",
+        "covered": "overdrive",
+        "npm": null,
+        "repo": "https://github.com/autoguru-au/overdrive",
+        "systems": [
+          {
+            "name": "AutoGuru Overdrive",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "AWS",
+        "covered": "cloudscape",
+        "npm": "@cloudscape-design/design-tokens",
+        "repo": "https://github.com/cloudscape-design/components",
+        "systems": [
+          {
+            "name": "AWS Cloudscape Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Cloudscape",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Skyscanner",
+        "covered": "backpack",
+        "npm": null,
+        "repo": "https://github.com/skyscanner/backpack",
+        "systems": [
+          {
+            "name": "Backpack (Skyscanner)",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Backpack",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Basis",
+        "covered": "basis",
+        "npm": null,
+        "repo": "https://github.com/moroshko/basis",
+        "systems": [
+          {
+            "name": "Basis Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Global Experience Language",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "BBC GEL (Global Experience Language)",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Bento",
+        "covered": "bento",
+        "npm": null,
+        "repo": "https://github.com/buildo/bento-design-system",
+        "systems": [
+          {
+            "name": "Bento DS",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "BLiP",
+        "covered": "blip",
+        "npm": null,
+        "repo": "https://github.com/takenet/blip-ds",
+        "systems": [
+          {
+            "name": "BLiP",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Blueprint",
+        "covered": "blueprint",
+        "npm": null,
+        "repo": "https://github.com/palantir/blueprint",
+        "systems": [
+          {
+            "name": "Blueprint",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Bridge Design System",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/laboratoriobridge/bold",
+        "systems": [
+          {
+            "name": "Bold (Bridge Design System)",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Bolt",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Bolt Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Braid",
+        "covered": "braid",
+        "npm": null,
+        "repo": "https://github.com/seek-oss/braid-design-system",
+        "systems": [
+          {
+            "name": "Braid Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "British",
+        "covered": "british",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "British Gas Nucleus",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Buildit",
+        "covered": "buildit",
+        "npm": null,
+        "repo": "https://github.com/buildit/gravity-ui-web",
+        "systems": [
+          {
+            "name": "Buildit Gravity",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "BuzzFeed",
+        "covered": "buzzfeed",
+        "npm": null,
+        "repo": "https://github.com/buzzfeed/solid",
+        "systems": [
+          {
+            "name": "BuzzFeed Solid",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Solid Style Guide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Buzzvil",
+        "covered": "buzzvil",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Buzzvil Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "ByteDance",
+        "covered": "bytedance",
+        "npm": null,
+        "repo": "https://github.com/arco-design/arco-design",
+        "systems": [
+          {
+            "name": "ByteDance Arco Design",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "CA",
+        "covered": "ca",
+        "npm": null,
+        "repo": "https://github.com/mineral-ui/mineral-ui",
+        "systems": [
+          {
+            "name": "CA Technologies Mineral UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Cedar",
+        "covered": "cedar",
+        "npm": null,
+        "repo": "https://github.com/rei/rei-cedar",
+        "systems": [
+          {
+            "name": "Cedar",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Chakra",
+        "covered": "chakra",
+        "npm": null,
+        "repo": "https://github.com/chakra-ui/chakra-ui",
+        "systems": [
+          {
+            "name": "Chakra UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "City",
+        "covered": "city",
+        "npm": null,
+        "repo": "https://github.com/CityOfBoston/digital",
+        "systems": [
+          {
+            "name": "City of Boston Fleet",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Cloudflare",
+        "covered": "cloudflare",
+        "npm": null,
+        "repo": "https://github.com/cloudflare/kumo",
+        "systems": [
+          {
+            "name": "Cloudflare Kumo",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Co-op",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Co-op Experience Library",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Coinbase",
+        "covered": "coinbase",
+        "npm": null,
+        "repo": "https://github.com/coinbase/cds",
+        "systems": [
+          {
+            "name": "Coinbase Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Contentful",
+        "covered": "contentful",
+        "npm": null,
+        "repo": "https://github.com/contentful/forma-36",
+        "systems": [
+          {
+            "name": "Contentful Forma 36",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "daisyUI",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/saadeghi/daisyui",
+        "systems": [
+          {
+            "name": "daisyUI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Decentraland",
+        "covered": "decentraland",
+        "npm": null,
+        "repo": "https://github.com/decentraland/ui",
+        "systems": [
+          {
+            "name": "Decentraland UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "DHIS2",
+        "covered": "dhis2",
+        "npm": null,
+        "repo": "https://github.com/dhis2/ui",
+        "systems": [
+          {
+            "name": "DHIS2 UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Duet",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Duet",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "eBay",
+        "covered": "ebay",
+        "npm": null,
+        "repo": "https://github.com/eBay/evo-web",
+        "systems": [
+          {
+            "name": "eBay Skin",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Evo",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Elastic",
+        "covered": "elastic",
+        "npm": null,
+        "repo": "https://github.com/elastic/eui",
+        "systems": [
+          {
+            "name": "Elastic UI Framework",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Elastic UI",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "ENGIE",
+        "covered": "engie",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "ENGIE Fluid Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Enel",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Enel",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Estonia",
+        "covered": "estonia",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Estonia Country Design Guidelines",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Evergreen",
+        "covered": "evergreen",
+        "npm": null,
+        "repo": "https://github.com/segmentio/evergreen",
+        "systems": [
+          {
+            "name": "Evergreen",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Finland",
+        "covered": "finland",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Finland Toolbox",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Firefox",
+        "covered": "firefox",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Firefox Acorn Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Photon Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Flowbite",
+        "covered": "flowbite",
+        "npm": null,
+        "repo": "https://github.com/themesberg/flowbite",
+        "systems": [
+          {
+            "name": "Flowbite Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Fluent",
+        "covered": "fluent",
+        "npm": null,
+        "repo": "https://github.com/microsoft/fluentui",
+        "systems": [
+          {
+            "name": "Fluent UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Foundation",
+        "covered": "foundation",
+        "npm": null,
+        "repo": "https://github.com/foundation/foundation-sites",
+        "systems": [
+          {
+            "name": "Foundation",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Foyer",
+        "covered": "foyer",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Foyer Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "French",
+        "covered": "french",
+        "npm": null,
+        "repo": "https://github.com/GouvernementFR/dsfr",
+        "systems": [
+          {
+            "name": "French Government Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "FutureLearn",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "FutureLearn Pattern Library",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "FutureLearn Pattern Library",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "GitHub",
+        "covered": "primer",
+        "npm": "@primer/primitives",
+        "repo": "https://github.com/primer/",
+        "systems": [
+          {
+            "name": "GitHub Primer",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Primer",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Primer",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "GitLab",
+        "covered": "pajamas",
+        "npm": "@gitlab/ui",
+        "repo": "https://gitlab.com/gitlab-org/design.gitlab.com",
+        "systems": [
+          {
+            "name": "GitLab Design System - Pajamas",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Pajamas",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Pajamas",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "GoodBarber",
+        "covered": "goodbarber",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "GoodBarber Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Google",
+        "covered": "google",
+        "npm": null,
+        "repo": "https://github.com/material-components/material-web",
+        "systems": [
+          {
+            "name": "Google Material Design",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Material Design",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Material Design",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "GOV.UK",
+        "covered": "govuk",
+        "npm": "govuk-frontend",
+        "repo": "https://github.com/alphagov/govuk-design-system",
+        "systems": [
+          {
+            "name": "GOV.UK Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "GOV.UK Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Grafana",
+        "covered": "grafana",
+        "npm": null,
+        "repo": "https://github.com/grafana/grafana/tree/main/packages/grafana-ui",
+        "systems": [
+          {
+            "name": "Grafana UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Gympass",
+        "covered": "gympass",
+        "npm": null,
+        "repo": "https://github.com/gympass/yoga",
+        "systems": [
+          {
+            "name": "Gympass Yoga",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Yoga",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "HashiCorp",
+        "covered": "hashicorp",
+        "npm": null,
+        "repo": "https://github.com/hashicorp/design-system",
+        "systems": [
+          {
+            "name": "HashiCorp Helios",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "haus",
+        "covered": "haus",
+        "npm": null,
+        "repo": "https://github.com/hipuku/haus",
+        "systems": [
+          {
+            "name": "haus",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Heroku",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Heroku Purple3",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Heroki Design",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "HeroUI",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/heroui-inc/heroui",
+        "systems": [
+          {
+            "name": "HeroUI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Hewlett",
+        "covered": "hewlett",
+        "npm": null,
+        "repo": "https://github.com/grommet/grommet",
+        "systems": [
+          {
+            "name": "Hewlett Packard grommet",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "IBM",
+        "covered": "carbon",
+        "npm": "@carbon/themes",
+        "repo": "https://github.com/ibm/carbon-components",
+        "systems": [
+          {
+            "name": "IBM Carbon",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "IBM Design Language",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "IBM Northstar",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Carbon Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "IBM Design Language",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Carbon",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Intuit",
+        "covered": "intuit",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Intuit Harmony",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Italia",
+        "covered": "italia",
+        "npm": null,
+        "repo": "https://github.com/italia",
+        "systems": [
+          {
+            "name": "Italia Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "JB",
+        "covered": null,
+        "npm": null,
+        "repo": "https://javadbat.github.io/design-system",
+        "systems": [
+          {
+            "name": "JB Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "JetBrains",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/JetBrains/ring-ui",
+        "systems": [
+          {
+            "name": "JetBrains Ring UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Jobber",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Jobber",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Just",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/justeattakeaway/pie",
+        "systems": [
+          {
+            "name": "Just Eat Takeaway.com PIE Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Kaizen",
+        "covered": "kaizen",
+        "npm": null,
+        "repo": "https://github.com/cultureamp/kaizen-design-system",
+        "systems": [
+          {
+            "name": "Kaizen",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "KoliBri",
+        "covered": "kolibri",
+        "npm": null,
+        "repo": "https://github.com/learningequality/kolibri-design-system",
+        "systems": [
+          {
+            "name": "KoliBri",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Kolibri Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Kontur",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/skbkontur/retail-ui/",
+        "systems": [
+          {
+            "name": "Kontur",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Korea",
+        "covered": "korea",
+        "npm": null,
+        "repo": "https://github.com/KRDS-uiux/krds-uiux",
+        "systems": [
+          {
+            "name": "Korea Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Mail.ru",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Mail.ru Group Paradigm",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Mailchimp",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Mailchimp Content Styleguide",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "MailChimp Pattern Library",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Mantine",
+        "covered": "mantine",
+        "npm": null,
+        "repo": "https://github.com/mantinedev/mantine",
+        "systems": [
+          {
+            "name": "Mantine",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Marvel",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Marvel Styleguide",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Marvel Styleguide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Material",
+        "covered": "material",
+        "npm": null,
+        "repo": "https://github.com/mdbootstrap/mdb-ui-kit",
+        "systems": [
+          {
+            "name": "Material Minimal",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Materialize",
+        "covered": "materialize",
+        "npm": null,
+        "repo": "https://github.com/Dogfalo/materialize",
+        "systems": [
+          {
+            "name": "Materialize CSS",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Mesh",
+        "covered": "mesh",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Mesh Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Meta",
+        "covered": "astryx",
+        "npm": null,
+        "repo": "https://github.com/facebook/astryx",
+        "systems": [
+          {
+            "name": "Meta Astryx",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Astryx",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Microsoft",
+        "covered": "fluent",
+        "npm": "@fluentui/tokens",
+        "repo": "https://github.com/microsoft/fluentui",
+        "systems": [
+          {
+            "name": "Microsoft Fluent",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Office UI Fabric",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Fluent 2",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Mixpanel",
+        "covered": "mixpanel",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Mixpanel Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Mixpanel Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "MongoDB",
+        "covered": "mongodb",
+        "npm": null,
+        "repo": "https://github.com/mongodb/leafygreen-ui",
+        "systems": [
+          {
+            "name": "MongoDB Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "MongoDB Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "LeafyGreen",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Monzo",
+        "covered": "monzo",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Monzo Tone of Voice",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Morningstar",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Morningstar Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Morningstar Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Mozilla",
+        "covered": "protocol",
+        "npm": "@mozilla-protocol/core",
+        "repo": "https://github.com/mozilla/protocol",
+        "systems": [
+          {
+            "name": "Mozilla Protocol",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Protocol",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Protocol",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "MUI:",
+        "covered": "mui",
+        "npm": null,
+        "repo": "https://github.com/mui/material-ui",
+        "systems": [
+          {
+            "name": "MUI: Base UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "MUI: Material UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "NASA",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/nasa/nasawds",
+        "systems": [
+          {
+            "name": "NASA Web Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "NationBuilder",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "NationBuilder Radius",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "NHS.UK",
+        "covered": "nhsuk",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "NHS.UK Service Manual",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Nordhealth",
+        "covered": "nordhealth",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Nordhealth",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "New",
+        "covered": "new",
+        "npm": null,
+        "repo": "https://github.com/ITS-HCD/nysds",
+        "systems": [
+          {
+            "name": "New York State Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Nordnet",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Nordnet",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "NVIDIA",
+        "covered": "nvidia",
+        "npm": null,
+        "repo": "https://github.com/NVIDIA/elements",
+        "systems": [
+          {
+            "name": "NVIDIA Elements Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Okta",
+        "covered": "okta",
+        "npm": null,
+        "repo": "https://github.com/okta/odyssey",
+        "systems": [
+          {
+            "name": "Okta Odyssey Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Ontario",
+        "covered": null,
+        "npm": null,
+        "repo": "https://designsystem.ontario.ca/docs/documentation/release-notes.html#latest",
+        "systems": [
+          {
+            "name": "Ontario Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Oracle",
+        "covered": "oracle",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Oracle Redwood",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Alta",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Persona",
+        "covered": "persona",
+        "npm": null,
+        "repo": "https://github.com/privy-open-source/design-system",
+        "systems": [
+          {
+            "name": "Persona Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Pharos:",
+        "covered": "pharos",
+        "npm": null,
+        "repo": "https://github.com/ithaka/pharos",
+        "systems": [
+          {
+            "name": "Pharos: JSTOR's Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Pinterest",
+        "covered": "pinterest",
+        "npm": null,
+        "repo": "https://github.com/pinterest/gestalt",
+        "systems": [
+          {
+            "name": "Pinterest Gestalt",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Pivotal",
+        "covered": "pivotal",
+        "npm": null,
+        "repo": "https://github.com/pivotal-cf/pivotal-ui",
+        "systems": [
+          {
+            "name": "Pivotal",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Pluralsight",
+        "covered": "pluralsight",
+        "npm": "@pluralsight/design-tokens",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Pluralsight Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Pluralsight Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Porsche",
+        "covered": "porsche",
+        "npm": null,
+        "repo": "https://github.com/porsche-design-system/porsche-design-system",
+        "systems": [
+          {
+            "name": "Porsche Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Priceline",
+        "covered": "priceline",
+        "npm": null,
+        "repo": "https://github.com/priceline/design-system",
+        "systems": [
+          {
+            "name": "Priceline Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Priceline One",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Pusher",
+        "covered": "pusher",
+        "npm": null,
+        "repo": "https://github.com/pusher/chameleon",
+        "systems": [
+          {
+            "name": "Pusher Chameleon",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Radix",
+        "covered": "radix",
+        "npm": null,
+        "repo": "https://github.com/radix-ui",
+        "systems": [
+          {
+            "name": "Radix",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Rambler",
+        "covered": "rambler",
+        "npm": null,
+        "repo": "https://github.com/rambler-digital-solutions/rambler-ui",
+        "systems": [
+          {
+            "name": "Rambler",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Ratio",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Red",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/patternfly/patternfly-react",
+        "systems": [
+          {
+            "name": "Red Hat PatternFly",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Reshaped",
+        "covered": "reshaped",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Reshaped",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Salesforce",
+        "covered": "lightning",
+        "npm": "@salesforce-ux/design-system",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Salesforce Lightning Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Lightning Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Lightning",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Sage",
+        "covered": "sage",
+        "npm": null,
+        "repo": "https://github.com/Kajabi/sage-lib",
+        "systems": [
+          {
+            "name": "Sage by Kajabi",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "SAP",
+        "covered": "sap",
+        "npm": null,
+        "repo": "https://github.com/SAP/ui5-webcomponents",
+        "systems": [
+          {
+            "name": "SAP Fiori",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "SAP Fundamental",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "SAP OpenUI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "SAP UI5 Web Components",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Fiori",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Fiori Fundamentals",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Fiori",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Scania",
+        "covered": "scania",
+        "npm": null,
+        "repo": "https://github.com/scania-digital-design-system/tegel",
+        "systems": [
+          {
+            "name": "Scania Digital Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Seeds",
+        "covered": "seeds",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Seeds",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Semi",
+        "covered": "semi",
+        "npm": null,
+        "repo": "https://github.com/DouyinFE/semi-design",
+        "systems": [
+          {
+            "name": "Semi Design",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Semrush",
+        "covered": "semrush",
+        "npm": null,
+        "repo": "https://github.com/semrush/intergalactic",
+        "systems": [
+          {
+            "name": "Semrush Intergalactic Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Shoelace",
+        "covered": "shoelace",
+        "npm": null,
+        "repo": "https://github.com/shoelace-style/shoelace",
+        "systems": [
+          {
+            "name": "Shoelace",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Shopify",
+        "covered": "polaris",
+        "npm": "@shopify/polaris-tokens",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Shopify Polaris",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Polaris",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Polaris",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Shadcn/ui",
+        "covered": "shadcn-ui",
+        "npm": null,
+        "repo": "https://github.com/shadcn-ui",
+        "systems": [
+          {
+            "name": "Shadcn/ui",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Siemens",
+        "covered": "siemens",
+        "npm": null,
+        "repo": "https://github.com/siemens/ix",
+        "systems": [
+          {
+            "name": "Siemens iX",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Singapore",
+        "covered": "singapore",
+        "npm": null,
+        "repo": "https://github.com/govtechsg/sgds",
+        "systems": [
+          {
+            "name": "Singapore Government Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Stacks",
+        "covered": "stacks",
+        "npm": null,
+        "repo": "https://github.com/StackExchange/Stacks",
+        "systems": [
+          {
+            "name": "Stacks – Stack Overflow",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Strapi",
+        "covered": "strapi",
+        "npm": null,
+        "repo": "https://github.com/strapi/design-system",
+        "systems": [
+          {
+            "name": "Strapi Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Teambition",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Teambition Clarity Design",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Telefónica",
+        "covered": "telefonica",
+        "npm": null,
+        "repo": "https://github.com/Telefonica/mistica",
+        "systems": [
+          {
+            "name": "Telefónica Mística",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Tencent",
+        "covered": "tencent",
+        "npm": null,
+        "repo": "https://github.com/Tencent/tdesign-react",
+        "systems": [
+          {
+            "name": "Tencent TDesign",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Twilio",
+        "covered": "paste",
+        "npm": "@twilio-paste/design-tokens",
+        "repo": "https://github.com/twilio-labs/paste",
+        "systems": [
+          {
+            "name": "Twilio Paste",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Paste",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Uber's",
+        "covered": "ubers",
+        "npm": null,
+        "repo": "https://github.com/uber-web/baseui",
+        "systems": [
+          {
+            "name": "Uber's Base Web",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Ubuntu",
+        "covered": "vanilla",
+        "npm": "vanilla-framework",
+        "repo": "https://github.com/canonical-web-and-design/vanilla-framework",
+        "systems": [
+          {
+            "name": "Ubuntu Vanilla framework",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Vanilla",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Uiverse",
+        "covered": null,
+        "npm": null,
+        "repo": "https://github.com/uiverse-io/galaxy",
+        "systems": [
+          {
+            "name": "Uiverse",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Untitled",
+        "covered": "untitled",
+        "npm": null,
+        "repo": "https://github.com/untitleduico/react/",
+        "systems": [
+          {
+            "name": "Untitled UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "usva.",
+        "covered": "usva",
+        "npm": null,
+        "repo": "https://github.com/matt-pasek/usva",
+        "systems": [
+          {
+            "name": "usva.",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "U.S.",
+        "covered": "us",
+        "npm": null,
+        "repo": "https://github.com/uswds/uswds",
+        "systems": [
+          {
+            "name": "U.S. Web Design Standards",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "U.S. CMS.gov Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Vibe",
+        "covered": "vibe",
+        "npm": null,
+        "repo": "https://github.com/mondaycom/vibe",
+        "systems": [
+          {
+            "name": "Vibe",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "VMware",
+        "covered": "clarity",
+        "npm": "@clr/ui",
+        "repo": "https://github.com/vmware-clarity/ng-clarity",
+        "systems": [
+          {
+            "name": "VMware Clarity Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Clarity Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "VTEX",
+        "covered": "vtex",
+        "npm": null,
+        "repo": "https://github.com/vtex/styleguide",
+        "systems": [
+          {
+            "name": "VTEX Styleguide",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "VTEX Styleguide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Vue",
+        "covered": "vue",
+        "npm": null,
+        "repo": "https://github.com/viljamis/vue-design-system",
+        "systems": [
+          {
+            "name": "Vue Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Ray",
+        "covered": "ray",
+        "npm": null,
+        "repo": "https://github.com/wework/ray",
+        "systems": [
+          {
+            "name": "Ray by WeWork",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Welcome",
+        "covered": "welcome",
+        "npm": null,
+        "repo": "https://github.com/WTTJ/welcome-ui",
+        "systems": [
+          {
+            "name": "Welcome UI",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "West",
+        "covered": "west",
+        "npm": null,
+        "repo": "https://github.com/wmcadigital/wmn-design-system",
+        "systems": [
+          {
+            "name": "West Midlands Network Design System",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Wix",
+        "covered": "wix",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Wix Style React",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          }
+        ]
+      },
+      {
+        "org": "Vercel",
+        "covered": "vercel",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Vercel",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Vercel",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Geist",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Workday",
+        "covered": "workday",
+        "npm": null,
+        "repo": "https://github.com/Workday/canvas-kit",
+        "systems": [
+          {
+            "name": "Workday Canvas",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Workday Canvas",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Canvas",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Yelp",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Yelp Styleguide",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Yelp Styleguide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Zendesk",
+        "covered": "garden",
+        "npm": "@zendeskgarden/react-theming",
+        "repo": "https://github.com/zendeskgarden",
+        "systems": [
+          {
+            "name": "Zendesk Garden",
+            "source": "awesome-design-systems (alexpate)",
+            "sourceId": "awesome"
+          },
+          {
+            "name": "Zendesk Garden",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Garden",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Wonderflow",
+        "covered": null,
+        "npm": "@wonderflow/react-components",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Wanda Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Wanda",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Italian Public Administration",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Designers Italia",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Heartbeat",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": ".pulse",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "AXA",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "AXA Digital Guidelines",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "ServiceTitan",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Anvil",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Alfa-Bank",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Arui-Feather",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "GO-JEK",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Asphalt",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Audi",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Audi UI",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Australian Government",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Australian Government Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Dynatrace",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Barista",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Uber",
+        "covered": "uber",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Base Web",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Base",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Biings",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Biings Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "CBRE Build",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Blocks Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Pega Digital",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Bolt Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Hubspot",
+        "covered": null,
+        "npm": "@hubspot/canvas",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Canvas Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "REI",
+        "covered": "cedar",
+        "npm": "@rei/cedar",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Cedar",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Cedar",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Code for America",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Code for America Style Guide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Discovery Education",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Comet",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Beeline",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System 2.0",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Mutual of Omaha",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Digital Design Guide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "State of New South Wales",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Digital NSW",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "LocalTapiola",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Duet",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Duet",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "E-Trade",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "E-Trade Design Language",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Elementary",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Elementary Human Interface Guidelines",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Segment",
+        "covered": "evergreen",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Evergreen",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Evergreen",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "MYOB",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Feelix",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Finastra",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Finastra Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Bloomberg BNA",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Fishtank",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Westpac",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "GEL",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "BBC",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Global Experience Language",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Hewlett Packard",
+        "covered": "grommet",
+        "npm": "grommet",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Grommet",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Help Scout",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Help Scout Style Guide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Infor",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Infor Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Instructure",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Instructure UI",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Flexport",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Latitude",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Liferay",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Lexicon",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Merck",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Liquid",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Sainsbury's",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Luna",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Mapbox",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Mapbox Base",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "CA Technologies",
+        "covered": "mineral",
+        "npm": "mineral-ui",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Mineral UI",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Trello",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Nachos",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "OPower",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "OPattern",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Kiwi.com",
+        "covered": "orbit",
+        "npm": "@kiwicom/orbit-design-tokens",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Orbit",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Orbit",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Red Hat",
+        "covered": "patternfly",
+        "npm": "@patternfly/react-tokens",
+        "repo": null,
+        "systems": [
+          {
+            "name": "PatternFly",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "PatternFly",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Pegasystems",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Pega Cosmos",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "General Electric",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Predix Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Edison",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Catho",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Quantum",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "QuickBooks",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "QuickBooks Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "React95",
+        "covered": "react95",
+        "npm": "react95",
+        "repo": null,
+        "systems": [
+          {
+            "name": "React95",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "ConsenSys",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Rimble",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Indiana University",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Rivet",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Lonely Planet",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Rizzo",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Sprout Social",
+        "covered": "seeds",
+        "npm": "@sproutsocial/seeds-color",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Seeds",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Seeds",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Seek",
+        "covered": "braid",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Seek Style Guide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Braid",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "SendGrid",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "SendGrid Style Guide",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "ServiceNow",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "ServiceNow Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Horizon",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Benevity",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Skyline",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Bulb",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Solar Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Stack Overflow",
+        "covered": "stacks",
+        "npm": "@stackoverflow/stacks",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Stacks",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Meetup",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Swarm Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Thumbtack",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Thumbprint",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Thumbprint",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "U.S. Government",
+        "covered": "uswds",
+        "npm": "uswds",
+        "repo": null,
+        "systems": [
+          {
+            "name": "U.S. Web Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          },
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Hudl",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Uniform",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Wonderbly",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Wonderbly Design System",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Biteable",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "X (Biteable Design System)",
+            "source": "Design Systems Gallery (Jad Limcaco)",
+            "sourceId": "gallery"
+          }
+        ]
+      },
+      {
+        "org": "Aalto University",
+        "covered": "aalto",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Alaska Airlines",
+        "covered": "alaskaairlines",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Auro",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Arbetsformedlingen",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Australian Gov",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Agriculture",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Aviva",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Brainly",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Pencil",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Carrefour",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Marcel",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Cash App",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "CMS",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Datadog",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Druids",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Dell",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Denmark",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Docplanner",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Watson",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Elisa",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Esri",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Calcite",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Helsinki",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Ideagen",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Helix",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "INPS",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Sirio",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Kajabi",
+        "covered": "sage",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Sage",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Lemon Squeezy",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Wedges",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Line",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Maersk",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Michelin",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Motion",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Monday.com",
+        "covered": "vibe",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Vibe",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Motorway",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Highway Code",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "NS",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Tractie",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "NSW",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "NYS",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Orange",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Palantir",
+        "covered": "blueprint",
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Blueprint",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Power",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Playbook",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Razorpay",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Blade",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Samsung",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "One UI",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Sigma",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Skoda",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Flow",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "SumUp",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Circuit",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Sunrise",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Solar",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Tailwind",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Framework",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Teamleader",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Ahoy",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "UAE",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Visa",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "VTS",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Terra",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Washington Post",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Design System",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "Wikimedia",
+        "covered": null,
+        "npm": null,
+        "repo": null,
+        "systems": [
+          {
+            "name": "Codex",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      },
+      {
+        "org": "WorkOS",
+        "covered": "radix-themes",
+        "npm": "@radix-ui/colors",
+        "repo": null,
+        "systems": [
+          {
+            "name": "Radix",
+            "source": "designsystems.surf",
+            "sourceId": "surf"
+          }
+        ]
+      }
+    ]
+  }
+}

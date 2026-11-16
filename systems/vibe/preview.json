@@ -1,0 +1,478 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0073ea",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-color",
+      "value": "#0073ea"
+    },
+    {
+      "name": "primary-hover-color",
+      "value": "#0060b9"
+    },
+    {
+      "name": "primary-selected-color",
+      "value": "#cce5ff"
+    },
+    {
+      "name": "primary-selected-hover-color",
+      "value": "#aed4fc"
+    },
+    {
+      "name": "primary-highlighted-color",
+      "value": "#f0f7ff"
+    },
+    {
+      "name": "primary-surface-color",
+      "value": "#eceff8"
+    },
+    {
+      "name": "primary-text-color",
+      "value": "#323338"
+    },
+    {
+      "name": "secondary-text-color",
+      "value": "#676879"
+    },
+    {
+      "name": "text-color-on-inverted",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-color-on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "inverted-color-background",
+      "value": "#323338"
+    },
+    {
+      "name": "primary-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "secondary-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "allgrey-background-color",
+      "value": "#f6f7fb"
+    },
+    {
+      "name": "ui-border-color",
+      "value": "#c3c6d4"
+    },
+    {
+      "name": "ui-background-color",
+      "value": "#e7e9ef"
+    },
+    {
+      "name": "ui-background-hover-color",
+      "value": "#d8d9e0"
+    },
+    {
+      "name": "layout-border-color",
+      "value": "#d0d4e4"
+    },
+    {
+      "name": "disabled-background-color",
+      "value": "#ecedf5"
+    },
+    {
+      "name": "link-color",
+      "value": "#1f76c2"
+    },
+    {
+      "name": "brand-color",
+      "value": "#0073ea"
+    },
+    {
+      "name": "brand-hover-color",
+      "value": "#0060b9"
+    },
+    {
+      "name": "brand-selected-color",
+      "value": "#cce5ff"
+    },
+    {
+      "name": "brand-selected-hover-color",
+      "value": "#aed4fc"
+    },
+    {
+      "name": "warning-color",
+      "value": "#ffcb00"
+    },
+    {
+      "name": "warning-color-hover",
+      "value": "#eaaa15"
+    },
+    {
+      "name": "warning-color-selected",
+      "value": "#fceba1"
+    },
+    {
+      "name": "warning-color-selected-hover",
+      "value": "#f2d973"
+    },
+    {
+      "name": "grey-background-color",
+      "value": "#f6f7fb"
+    },
+    {
+      "name": "text-color-on-brand",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-surface",
+      "value": "#292f4c"
+    },
+    {
+      "name": "primary-on-secondary-color",
+      "value": "#0073ea"
+    },
+    {
+      "name": "primary-hover-on-secondary-color",
+      "value": "#0060b9"
+    },
+    {
+      "name": "primary-selected-on-secondary-color",
+      "value": "#cce5ff"
+    },
+    {
+      "name": "primary-text-on-secondary-color",
+      "value": "#323338"
+    },
+    {
+      "name": "primary-background-hover-on-secondary-color",
+      "value": "#dcdfec"
+    },
+    {
+      "name": "secondary-text-on-secondary-color",
+      "value": "#676879"
+    },
+    {
+      "name": "link-on-secondary-color",
+      "value": "#1f76c2"
+    },
+    {
+      "name": "modal-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dark-background-color",
+      "value": "#f6f7fb"
+    },
+    {
+      "name": "dark-background-on-secondary-color",
+      "value": "#f6f7fb"
+    },
+    {
+      "name": "dialog-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "label-background-color",
+      "value": "#cce5ff"
+    },
+    {
+      "name": "label-background-on-secondary-color",
+      "value": "#cce5ff"
+    },
+    {
+      "name": "icon-on-secondary-color",
+      "value": "#676879"
+    },
+    {
+      "name": "placeholder-on-secondary-color",
+      "value": "#676879"
+    },
+    {
+      "name": "ui-border-on-secondary-color",
+      "value": "#c3c6d4"
+    },
+    {
+      "name": "layout-border-on-secondary-color",
+      "value": "#d0d4e4"
+    },
+    {
+      "name": "disabled-background-on-secondary-color",
+      "value": "#ecedf5"
+    },
+    {
+      "name": "color-success",
+      "value": "#00854d"
+    },
+    {
+      "name": "color-error",
+      "value": "#d83a52"
+    },
+    {
+      "name": "color-success-hover",
+      "value": "#007038"
+    },
+    {
+      "name": "color-success-highlight",
+      "value": "#bbdbc9"
+    },
+    {
+      "name": "color-error-hover",
+      "value": "#b63546"
+    },
+    {
+      "name": "color-error-highlight",
+      "value": "#f4c3cb"
+    },
+    {
+      "name": "color-link-color",
+      "value": "#1f76c2"
+    },
+    {
+      "name": "color-blue-links",
+      "value": "#007eb5"
+    },
+    {
+      "name": "color-board-views-blue-secondary",
+      "value": "#363a52"
+    },
+    {
+      "name": "color-border-light-gray",
+      "value": "#f5f6f8"
+    },
+    {
+      "name": "color-brand-blue",
+      "value": "#00a9ff"
+    },
+    {
+      "name": "color-brand-charcoal",
+      "value": "#2b2c5c"
+    },
+    {
+      "name": "color-brand-gold",
+      "value": "#ffcc00"
+    },
+    {
+      "name": "color-brand-green",
+      "value": "#11dd80"
+    },
+    {
+      "name": "color-brand-iris",
+      "value": "#595ad4"
+    },
+    {
+      "name": "color-brand-light-blue",
+      "value": "#00cff4"
+    },
+    {
+      "name": "color-brand-malachite",
+      "value": "#00cd6f"
+    },
+    {
+      "name": "color-brand-purple",
+      "value": "#a358d0"
+    },
+    {
+      "name": "color-brand-red",
+      "value": "#f74875"
+    },
+    {
+      "name": "color-pulse-text-color",
+      "value": "#333333"
+    },
+    {
+      "name": "primary-selected-color-rgb",
+      "value": "#9f4077"
+    },
+    {
+      "name": "primary-background-color-rgb",
+      "value": "#282a36"
+    },
+    {
+      "name": "secondary-background-color-rgb",
+      "value": "#30324e"
+    },
+    {
+      "name": "sb-link-color",
+      "value": "#1f76c2"
+    },
+    {
+      "name": "sb-primary-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "sb-primary-text-color",
+      "value": "#323338"
+    },
+    {
+      "name": "sb-ui-border-color",
+      "value": "#c3c6d4"
+    },
+    {
+      "name": "sb-dark-background-on-secondary-color",
+      "value": "#f6f7fb"
+    },
+    {
+      "name": "sb-text-color-on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "sb-layout-border-color",
+      "value": "#d0d4e4"
+    },
+    {
+      "name": "sb-secondary-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "sb-primary-hover-color",
+      "value": "#0060b9"
+    },
+    {
+      "name": "sb-secondary-text-color",
+      "value": "#676879"
+    },
+    {
+      "name": "sb-primary-color",
+      "value": "#0073ea"
+    },
+    {
+      "name": "sb-primary-selected-color",
+      "value": "#cce5ff"
+    },
+    {
+      "name": "sb-warning-color-selected",
+      "value": "#fceba1"
+    },
+    {
+      "name": "sb-text-color-fixed-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "sb-text-color-fixed-dark",
+      "value": "#323338"
+    },
+    {
+      "name": "sb-inverted-color-background",
+      "value": "#323338"
+    },
+    {
+      "name": "sb-disabled-background-color",
+      "value": "#ecedf5"
+    },
+    {
+      "name": "sb-dark-background-color",
+      "value": "#f6f7fb"
+    },
+    {
+      "name": "primary",
+      "value": "#0073ea"
+    }
+  ],
+  "type": [
+    {
+      "name": "sb-h1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "font-size-60",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "sb-h2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "font-size-50",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size-40",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "sb-h3-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-size-30",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Figtree, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "title-font-family",
+      "fontFamily": "Poppins, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h1-font-family",
+      "fontFamily": "var(--title-font-family)",
+      "px": 16
+    },
+    {
+      "name": "sb-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "sb-font-family",
+      "fontFamily": "Figtree', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif",
+      "px": 16
+    },
+    {
+      "name": "sb-title-font-family",
+      "fontFamily": "Poppins', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-10",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-20",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "sb-small-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-avatar-small",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [],
+  "overview": "Vibe Vibe — tokens read from https://github.com/mondaycom/vibe.",
+  "dos": ""
+}

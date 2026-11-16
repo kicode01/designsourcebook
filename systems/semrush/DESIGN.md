@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Semrush Intergalactic Design System
+description: "Semrush Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic."
+colors:
+  50: "#f4f5f9"
+  200: "#c4c7cf"
+  400: "#8a8e9b"
+  600: "#484a54"
+  800: "#191b23"
+  linkedin: "#1a7ab2"
+  neutral: "rgba(30, 34, 49, 1)"
+  neutral-hover: "rgba(54, 56, 67, 1)"
+  neutral-active: "rgba(54, 56, 67, 1)"
+  info: "rgba(52, 68, 90, 1)"
+  info-hover: "rgba(23, 55, 83, 1)"
+  success: "rgba(68, 209, 164, 1)"
+  linked-in: "#0A66C2"
+  warning: "rgba(160, 13, 42, 1)"
+  violet-text: "rgba(244, 245, 249, 1)"
+  neutral-hover-active: "#565861"
+  info-hover-active: "#0358A1"
+  success-hover-active: "#037E68"
+  warning-hover-active: "#CC5024"
+  brand-facebook-value: "#1877f2"
+  brand-google-blue-value: "#1a0dab"
+  brand-google-green-value: "#016723"
+  brand-google-my-business-value: "#1a73e8"
+  brand-instagram-value: "#e4405f"
+  brand-linked-in-value: "#0a66c2"
+  brand-pinterest-value: "#bd081c"
+  brand-twitter-value: "#1d9bf0"
+  brand-youtube-value: "#ff0000"
+  tag-additional-text-value: "#6a6c6a"
+  tag-primary-blue-hover-active-value: "#dcd8ff"
+  tag-primary-blue-normal-value: "#e7e5ff"
+  tag-primary-blue-text-value: "#5c53d9"
+  tag-primary-gray-hover-active-value: "#e2e3e2"
+  tag-primary-gray-normal-value: "#ecedec"
+  tag-primary-gray-text-value: "#6a6c6a"
+  tag-primary-green-hover-active-value: "#b3eedd"
+  tag-primary-green-normal-value: "#ccf4e8"
+  tag-primary-green-text-value: "#00845f"
+  tag-primary-orange-hover-active-value: "#ffceb3"
+  tag-primary-orange-normal-value: "#ffdecc"
+  tag-primary-orange-text-value: "#b83c00"
+  tag-primary-red-hover-active-value: "#ffbdbf"
+  tag-primary-red-normal-value: "#ffd3d4"
+  tag-primary-red-text-value: "#c7161b"
+  tag-primary-violet-hover-active-value: "#ecc5ff"
+  tag-primary-violet-normal-value: "#f2d8ff"
+  tag-primary-violet-text-value: "#8029ec"
+  tag-primary-text-invert-value: "#ffffff"
+  tag-primary-yellow-hover-active-value: "#fcd8b3"
+  tag-primary-yellow-normal-value: "#fde5cc"
+  tag-primary-yellow-text-value: "#a35400"
+  tag-secondary-text-value: "#6a6c6a"
+  tag-secondary-bg-hover-active-value: "#f4f5f5"
+  tag-secondary-bg-normal-value: "#ffffff"
+  intergalactic-bg-tertiary-neutral: "rgba(54, 56, 67, 1)"
+  intergalactic-brand-tertiary: "#ffffff"
+  light-blue: "#008ff8"
+  cyan: "#2bb3ff"
+  dark-green: "#007c65"
+  light-orange: "#ff8c43"
+  dark-orange: "#c33909"
+  dark-red: "#d1002f"
+  dark-violet: "#8649e1"
+  asphalt: "#6c6e79"
+  mist: "#a9abb6"
+  stone: "#a9abb6"
+  gray20: "#191b23"
+  gray40: "#484a54"
+  gray70: "#a9abb6"
+  gray94: "#e0e1e9"
+  mystic: "#f4f5f9"
+  blue50: "#e9f7ff"
+  blue400: "#008ff8"
+  green50: "#dbfee8"
+  green200: "#59ddaa"
+  green600: "#055345"
+  red100: "#ffd7df"
+  red300: "#ff8786"
+  orange50: "#fff3d9"
+  orange200: "#ffb26e"
+  iceberg-blue: "#6fafd4"
+  granitic: "#2f3439"
+  sky: "#e1f2ff"
+  marble: "#f1f6f8"
+  white: "#ffffff"
+  critical: "rgba(255, 155, 148, 1)"
+  invert: "rgba(30, 34, 49, 1)"
+  invert-active: "rgba(43, 46, 57, 1)"
+  cell: "rgba(30, 34, 49, 1)"
+  item-hover: "rgba(79, 82, 93, 1)"
+  primary: "#1877f2"
+---
+
+# Semrush Intergalactic Design System
+
+## Overview
+
+Semrush Semrush Intergalactic Design System — tokens read from https://github.com/semrush/intergalactic.
+
+Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted. The type scale is omitted rather than invented.

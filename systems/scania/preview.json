@@ -1,0 +1,852 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#16417f",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "50",
+      "value": "#D8DDE5"
+    },
+    {
+      "name": "900",
+      "value": "#001533"
+    },
+    {
+      "name": "warning",
+      "value": "#f1c21b"
+    },
+    {
+      "name": "component-cookie-color-text-primary-inverse",
+      "value": "#fff"
+    },
+    {
+      "name": "scania-neutral-solid-1000",
+      "value": "rgba(0, 0, 0, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-958",
+      "value": "rgba(14, 16, 19, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-928",
+      "value": "rgba(21, 24, 29, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-900",
+      "value": "rgba(28, 34, 43, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-868",
+      "value": "rgba(36, 44, 55, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-846",
+      "value": "rgba(45, 54, 67, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-800",
+      "value": "rgba(58, 69, 84, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-700",
+      "value": "rgba(83, 95, 112, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-600",
+      "value": "rgba(117, 131, 152, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-500",
+      "value": "rgba(147, 161, 183, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-400",
+      "value": "rgba(181, 189, 204, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-300",
+      "value": "rgba(206, 210, 220, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-200",
+      "value": "rgba(222, 224, 230, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-100",
+      "value": "rgba(235, 236, 238, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-50",
+      "value": "rgba(243, 244, 247, 1)"
+    },
+    {
+      "name": "scania-neutral-solid-00",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "name": "traton-base-neutral-white",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "name": "traton-base-neutral-black",
+      "value": "rgba(0, 0, 0, 1)"
+    },
+    {
+      "name": "spinner-background",
+      "value": "rgba(0, 72, 82, 1)"
+    },
+    {
+      "name": "grey-958",
+      "value": "#0b0c0f"
+    },
+    {
+      "name": "grey-850",
+      "value": "#1c222b"
+    },
+    {
+      "name": "grey-700",
+      "value": "#3a4554"
+    },
+    {
+      "name": "grey-400",
+      "value": "#6e829f"
+    },
+    {
+      "name": "grey-200",
+      "value": "#d1d7e0"
+    },
+    {
+      "name": "grey-00",
+      "value": "#ffffff"
+    },
+    {
+      "name": "blue-600",
+      "value": "#16417f"
+    },
+    {
+      "name": "blue-200",
+      "value": "#87afe8"
+    },
+    {
+      "name": "red-800",
+      "value": "#480008"
+    },
+    {
+      "name": "red-400",
+      "value": "#d1001b"
+    },
+    {
+      "name": "red-50",
+      "value": "#ffdfe3"
+    },
+    {
+      "name": "green-600",
+      "value": "#004c3b"
+    },
+    {
+      "name": "green-200",
+      "value": "#65bda5"
+    },
+    {
+      "name": "yellow-800",
+      "value": "#4d260a"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#eaad06"
+    },
+    {
+      "name": "yellow-50",
+      "value": "#f9eec3"
+    },
+    {
+      "name": "positive",
+      "value": "#1dab8b"
+    },
+    {
+      "name": "scania-color-blue-100",
+      "value": "#bacde8"
+    },
+    {
+      "name": "scania-color-blue-500",
+      "value": "#2058a8"
+    },
+    {
+      "name": "scania-color-blue-900",
+      "value": "#001533"
+    },
+    {
+      "name": "scania-color-green-300",
+      "value": "#009e7e"
+    },
+    {
+      "name": "scania-color-green-700",
+      "value": "#0a382e"
+    },
+    {
+      "name": "scania-color-grey-100",
+      "value": "#edeff3"
+    },
+    {
+      "name": "scania-color-grey-300",
+      "value": "#93a2b7"
+    },
+    {
+      "name": "scania-color-grey-600",
+      "value": "#4e5e75"
+    },
+    {
+      "name": "scania-color-grey-800",
+      "value": "#242c37"
+    },
+    {
+      "name": "scania-color-grey-1000",
+      "value": "#000"
+    },
+    {
+      "name": "scania-color-red-200",
+      "value": "#fc8a88"
+    },
+    {
+      "name": "scania-color-red-600",
+      "value": "#8a0012"
+    },
+    {
+      "name": "scania-color-yellow-50",
+      "value": "#f9eec3"
+    },
+    {
+      "name": "scania-color-yellow-400",
+      "value": "#eaad06"
+    },
+    {
+      "name": "scania-color-yellow-800",
+      "value": "#4d260a"
+    },
+    {
+      "name": "traton-color-base-white-warm",
+      "value": "#fcfbf7"
+    },
+    {
+      "name": "traton-color-blue-200",
+      "value": "#b3dce1"
+    },
+    {
+      "name": "traton-color-blue-600",
+      "value": "#008294"
+    },
+    {
+      "name": "traton-color-blue-900",
+      "value": "#002429"
+    },
+    {
+      "name": "traton-color-green-100",
+      "value": "#adebb1"
+    },
+    {
+      "name": "traton-color-green-400",
+      "value": "#38943c"
+    },
+    {
+      "name": "traton-color-green-800",
+      "value": "#1d441f"
+    },
+    {
+      "name": "traton-color-green-1000",
+      "value": "#080c08"
+    },
+    {
+      "name": "traton-color-grey-200",
+      "value": "#d6d4c9"
+    },
+    {
+      "name": "traton-color-grey-600",
+      "value": "#73716c"
+    },
+    {
+      "name": "traton-color-grey-900",
+      "value": "#252423"
+    },
+    {
+      "name": "traton-color-red-100",
+      "value": "#f7baba"
+    },
+    {
+      "name": "traton-color-red-400",
+      "value": "#bc302f"
+    },
+    {
+      "name": "traton-color-red-800",
+      "value": "#551b1b"
+    },
+    {
+      "name": "traton-color-red-1000",
+      "value": "#140808"
+    },
+    {
+      "name": "traton-color-yellow-200",
+      "value": "#ffd04a"
+    },
+    {
+      "name": "traton-color-yellow-600",
+      "value": "#997308"
+    },
+    {
+      "name": "traton-color-yellow-900",
+      "value": "#302403"
+    },
+    {
+      "name": "scania-blue-800",
+      "value": "rgba(4, 30, 66, 1)"
+    },
+    {
+      "name": "scania-blue-400",
+      "value": "rgba(43, 112, 211, 1)"
+    },
+    {
+      "name": "scania-blue-50",
+      "value": "rgba(216, 221, 229, 1)"
+    },
+    {
+      "name": "scania-extended-red-600",
+      "value": "rgba(138, 0, 25, 1)"
+    },
+    {
+      "name": "scania-extended-red-200",
+      "value": "rgba(255, 141, 139, 1)"
+    },
+    {
+      "name": "scania-extended-green-800",
+      "value": "rgba(0, 37, 27, 1)"
+    },
+    {
+      "name": "scania-extended-green-400",
+      "value": "rgba(0, 129, 102, 1)"
+    },
+    {
+      "name": "scania-extended-green-50",
+      "value": "rgba(209, 224, 217, 1)"
+    },
+    {
+      "name": "scania-extended-yellow-600",
+      "value": "rgba(82, 64, 0, 1)"
+    },
+    {
+      "name": "scania-extended-yellow-200",
+      "value": "rgba(211, 169, 0, 1)"
+    },
+    {
+      "name": "traton-blue-950",
+      "value": "rgba(0, 29, 33, 1)"
+    },
+    {
+      "name": "traton-blue-700",
+      "value": "rgba(0, 99, 113, 1)"
+    },
+    {
+      "name": "traton-blue-300",
+      "value": "rgba(140, 202, 210, 1)"
+    },
+    {
+      "name": "traton-blue-50",
+      "value": "rgba(248, 252, 252, 1)"
+    },
+    {
+      "name": "traton-yellow-850",
+      "value": "rgba(67, 50, 4, 1)"
+    },
+    {
+      "name": "traton-yellow-500",
+      "value": "rgba(191, 144, 10, 1)"
+    },
+    {
+      "name": "traton-yellow-150",
+      "value": "rgba(255, 220, 122, 1)"
+    },
+    {
+      "name": "primary",
+      "value": "#16417f"
+    }
+  ],
+  "type": [
+    {
+      "name": "super-type-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "216px",
+      "px": 216
+    },
+    {
+      "name": "super-type-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "156px",
+      "px": 156
+    },
+    {
+      "name": "super-type-03-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "112px",
+      "px": 112
+    },
+    {
+      "name": "expressive-headline-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "80px",
+      "px": 80
+    },
+    {
+      "name": "expressive-headline-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "56px",
+      "px": 56
+    },
+    {
+      "name": "headline-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "headline-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "headline-03-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "paragraph-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "headline-04-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "paragraph-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "01",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "02",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "03",
+      "fontFamily": "traton type display",
+      "px": 16
+    },
+    {
+      "name": "04",
+      "fontFamily": "traton type display",
+      "px": 16
+    },
+    {
+      "name": "05",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "06",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "item",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "title",
+      "fontFamily": "traton type display",
+      "px": 16
+    },
+    {
+      "name": "avatar",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "current",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "scania-font-family-default",
+      "fontFamily": "scania sans",
+      "px": 16
+    },
+    {
+      "name": "scania-font-family-display",
+      "fontFamily": "scania sans headline",
+      "px": 16
+    },
+    {
+      "name": "scania-font-family-semi-condensed",
+      "fontFamily": "scania sans semi condensed",
+      "px": 16
+    },
+    {
+      "name": "traton-font-family-default",
+      "fontFamily": "traton type text",
+      "px": 16
+    },
+    {
+      "name": "traton-font-family-display",
+      "fontFamily": "traton type display",
+      "px": 16
+    },
+    {
+      "name": "type-display-01-font-family",
+      "fontFamily": "var(--scania-font-family-display)",
+      "px": 16
+    },
+    {
+      "name": "type-display-02-font-family",
+      "fontFamily": "var(--scania-font-family-display)",
+      "px": 16
+    },
+    {
+      "name": "type-display-03-font-family",
+      "fontFamily": "var(--scania-font-family-display)",
+      "px": 16
+    },
+    {
+      "name": "type-display-04-font-family",
+      "fontFamily": "var(--scania-font-family-display)",
+      "px": 16
+    },
+    {
+      "name": "type-display-05-font-family",
+      "fontFamily": "var(--scania-font-family-display)",
+      "px": 16
+    },
+    {
+      "name": "type-headline-01-font-family",
+      "fontFamily": "var(--scania-font-family-display)",
+      "px": 16
+    },
+    {
+      "name": "type-headline-02-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-headline-03-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-headline-04-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-headline-05-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-headline-06-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-paragraph-01-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-paragraph-02-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-body-01-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-body-02-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-system-title-01-font-family",
+      "fontFamily": "var(--scania-font-family-semi-condensed)",
+      "px": 16
+    },
+    {
+      "name": "type-system-title-02-font-family",
+      "fontFamily": "var(--scania-font-family-default)",
+      "px": 16
+    },
+    {
+      "name": "type-system-label-01-font-family",
+      "fontFamily": "var(--scania-font-family-semi-condensed)",
+      "px": 16
+    },
+    {
+      "name": "type-system-label-02-font-family",
+      "fontFamily": "var(--scania-font-family-semi-condensed)",
+      "px": 16
+    },
+    {
+      "name": "type-system-body-01-font-family",
+      "fontFamily": "var(--scania-font-family-semi-condensed)",
+      "px": 16
+    },
+    {
+      "name": "type-system-body-02-font-family",
+      "fontFamily": "var(--scania-font-family-semi-condensed)",
+      "px": 16
+    },
+    {
+      "name": "headline-05-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body-link-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "detail-01-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "super-type-01-font-family",
+      "fontFamily": "Scania Sans Headline', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "super-type-02-font-family",
+      "fontFamily": "Scania Sans Headline', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "super-type-03-font-family",
+      "fontFamily": "Scania Sans Headline', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "expressive-headline-01-font-family",
+      "fontFamily": "Scania Sans Headline', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "expressive-headline-02-font-family",
+      "fontFamily": "Scania Sans Headline', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-01-font-family",
+      "fontFamily": "Scania Sans Headline', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-02-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-03-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-04-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-05-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-06-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "headline-07-font-family",
+      "fontFamily": "Scania Sans Semi Condensed', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "paragraph-01-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "paragraph-02-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "body-01-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "body-02-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "body-link-01-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "body-link-02-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-01-font-family",
+      "fontFamily": "Scania Sans Semi Condensed', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-02-font-family",
+      "fontFamily": "Scania Sans Semi Condensed', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-03-font-family",
+      "fontFamily": "Scania Sans Semi Condensed', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-04-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-05-font-family",
+      "fontFamily": "Scania Sans Semi Condensed', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-06-font-family",
+      "fontFamily": "Scania Sans', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "detail-07-font-family",
+      "fontFamily": "Scania Sans Semi Condensed', arial, 'Helvetica Neue",
+      "px": 16
+    },
+    {
+      "name": "tds-header-title-font-family",
+      "fontFamily": "var(--headline-01-font-family)",
+      "px": 16
+    },
+    {
+      "name": "header-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(var(--type-headline-06-font-size) * 1px)",
+      "px": 16
+    },
+    {
+      "name": "header-title-font-family",
+      "fontFamily": "var(--type-headline-01-font-family)",
+      "px": 16
+    },
+    {
+      "name": "headline-06-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "headline-07-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "body-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "body-link-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "detail-02-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "detail-03-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "detail-04-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "detail-05-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "detail-06-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "detail-07-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [],
+  "overview": "Scania Scania Digital Design System — tokens read from https://github.com/scania-digital-design-system/tegel.",
+  "dos": ""
+}

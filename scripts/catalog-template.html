@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design Sourcebook — design systems you can see</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Geist:wght@300..700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300..700&family=Plus+Jakarta+Sans:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#08080a; --panel:#101013; --panel2:#16161a; --line:#26262c; --line2:#33333b;
+    --ink:#f2f2f5; --dim:#9a9aa3; --dim2:#6d6d78; --accent:#9b8cff; --ok:#5ec98a; --warn:#e0b458;
+    --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+  header.top{position:sticky;top:0;z-index:20;background:rgba(8,8,10,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .bar{max-width:1320px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:18px}
+  .brand{display:flex;align-items:baseline;gap:9px;white-space:nowrap}
+  .brand b{font-size:15px;font-weight:600;letter-spacing:-.01em}
+  .brand span{font-size:12px;color:var(--dim2)}
+  .search{flex:1;position:relative;max-width:420px}
+  .search input{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px 9px 34px;color:var(--ink);font-size:13px;outline:none}
+  .search input:focus{border-color:var(--line2);background:#1a1a1f}
+  .search input::placeholder{color:var(--dim2)}
+  .search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.45}
+  .chips{display:flex;gap:6px;margin-left:auto}
+  .chip{padding:6px 11px;border-radius:7px;font-size:12px;color:var(--dim);border:1px solid transparent;transition:.12s}
+  .chip:hover{color:var(--ink);background:var(--panel2)}
+  .chip[aria-pressed="true"]{background:var(--panel2);border-color:var(--line2);color:var(--ink)}
+  .chip.toggle{border:1px solid var(--line2);margin-left:8px;color:var(--dim)}
+  .chip.toggle[aria-pressed="true"]{background:var(--panel2);color:var(--ink)}
+
+  .cov-sum{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:22px}
+  .cov-sum div{font-size:12px;color:var(--dim2)}
+  .cov-sum b{display:block;font-size:20px;font-weight:550;color:var(--ink);letter-spacing:-.02em;margin-bottom:2px}
+  .cov-list{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .cov-row{display:grid;grid-template-columns:190px 1fr 150px 58px;gap:14px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-size:12.5px}
+  .cov-row:last-child{border-bottom:0}
+  .cov-row.have{background:rgba(94,201,138,.04)}
+  .cov-row.have:hover{background:rgba(94,201,138,.09);cursor:pointer}
+  .cov-org{color:var(--ink);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cov-sys{color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cov-src{color:var(--dim2);font-size:11px;font-family:var(--mono)}
+  .cov-tag{font-size:10px;font-family:var(--mono);padding:2px 6px;border-radius:4px;border:1px solid var(--line2);color:var(--dim2);text-align:center}
+  .cov-tag.in{color:var(--ok);border-color:rgba(94,201,138,.35)}
+  .cov-tag.npm{color:var(--accent);border-color:rgba(155,140,255,.35)}
+  .cov-tag.repo{color:#5ec9c0;border-color:rgba(94,201,192,.35)}
+  .cov-h{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin:26px 0 10px}
+
+  .card.listed .stage{border-bottom:1px dashed var(--line2)}
+  .card.listed h2{color:var(--dim)}
+  .listed-panel{border:1px dashed var(--line2);border-radius:14px;padding:38px;background:var(--panel)}
+  .listed-panel .eyebrow{font:11px var(--mono);letter-spacing:.1em;color:var(--dim2);margin-bottom:14px}
+  .listed-panel h1{font-size:34px;font-weight:560;letter-spacing:-.03em;margin:0 0 12px;color:var(--ink)}
+  .listed-panel>p{font-size:13.5px;color:var(--dim);line-height:1.7;max-width:64ch}
+  .listed-grid{display:flex;gap:48px;margin:28px 0}
+  .listed-grid b{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin-bottom:8px}
+  .listed-grid ul{margin:0;padding-left:18px;font-size:13px;color:var(--ink);line-height:1.9}
+  .listed-note{border-top:1px solid var(--line);padding-top:18px;font-size:12px!important;color:var(--dim2)!important}
+
+  main{max-width:1320px;margin:0 auto;padding:26px 24px 80px}
+  .meta{display:flex;align-items:baseline;gap:10px;margin-bottom:18px}
+  .meta h1{font-size:13px;font-weight:500;margin:0;color:var(--dim)}
+  .meta em{font-style:normal;color:var(--dim2);font-size:12px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(318px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:border-color .14s,transform .14s;display:flex;flex-direction:column}
+  .card:hover{border-color:var(--line2);transform:translateY(-2px)}
+  .stage{height:148px;padding:18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;overflow:hidden;position:relative}
+  .strip{display:flex;height:7px}
+  .strip i{flex:1}
+  .card-body{padding:13px 15px 15px}
+  .card-top{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+  .card-top h2{font-size:14px;font-weight:550;margin:0;letter-spacing:-.005em}
+  .dot{width:6px;height:6px;border-radius:50%;flex:none}
+  .vtag{margin-left:auto;font-size:10px;letter-spacing:.04em;text-transform:uppercase;padding:3px 6px;border-radius:4px;border:1px solid var(--line2);color:var(--dim)}
+  .vtag.ok{color:var(--ok);border-color:rgba(94,201,138,.3)}
+  .vtag.warn{color:var(--warn);border-color:rgba(224,180,88,.3)}
+  .card-desc{font-size:12px;color:var(--dim);line-height:1.5;margin:0 0 10px;min-height:36px}
+  .card-foot{display:flex;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--dim2);font-family:var(--mono)}
+  .card-foot b{color:var(--dim);font-weight:400}
+
+  .detail{display:none}
+  .detail.on{display:block}
+  .back{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--dim);margin-bottom:16px;padding:6px 10px 6px 6px;border-radius:7px}
+  .back:hover{background:var(--panel2);color:var(--ink)}
+  .hero{border-radius:16px;padding:38px 40px;position:relative;overflow:hidden;border:1px solid var(--line)}
+  .hero h1{margin:0 0 12px;letter-spacing:-.02em}
+  .hero p{margin:0 0 22px;max-width:56ch;line-height:1.55}
+  .hero-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .sec{margin-top:36px}
+  .sec-h{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:1px solid var(--line);padding-bottom:9px}
+  .sec-h h2{font-size:12px;font-weight:550;letter-spacing:.06em;text-transform:uppercase;margin:0;color:var(--dim)}
+  .sec-h em{font-style:normal;font-size:11px;color:var(--dim2);margin-left:auto}
+
+  .comp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+  .comp{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden;display:flex;flex-direction:column}
+  .comp-stage{padding:20px 16px;display:flex;align-items:center;justify-content:center;min-height:82px;flex:1}
+  .comp-info{padding:9px 12px 11px;border-top:1px solid var(--line);font-size:11px;font-family:var(--mono);color:var(--dim2);line-height:1.7;margin-top:auto}
+  .comp-info b{display:block;color:var(--ink);font-family:var(--sans);font-size:12px;font-weight:500;margin-bottom:4px}
+  .comp-info span{color:var(--dim)}
+
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:9px}
+  .sw{border:1px solid var(--line);border-radius:9px;overflow:hidden;cursor:pointer;background:var(--panel)}
+  .sw i{display:block;height:46px}
+  .sw div{padding:7px 9px;font-size:10.5px;font-family:var(--mono);line-height:1.5}
+  .sw div b{display:block;color:var(--dim);font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sw div span{color:var(--dim2)}
+
+  .type-row{display:flex;align-items:baseline;gap:16px;padding:11px 0;border-bottom:1px solid var(--line)}
+  .type-row:last-child{border-bottom:0}
+  .sheet{border-radius:12px;border:1px solid var(--line);padding:4px 20px}
+  .sheet .type-row{border-bottom-color:color-mix(in srgb,currentColor 14%,transparent)}
+  .sheet .type-spec{color:inherit;opacity:.55}
+  .type-spec{flex:none;width:150px;font-size:10.5px;font-family:var(--mono);color:var(--dim2);line-height:1.6}
+  .type-spec b{display:block;color:var(--dim);font-weight:400}
+  .sheet .type-spec b{color:inherit;opacity:.8}
+  .type-demo{flex:1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .derived-note{font-size:12px;color:var(--dim);line-height:1.6;margin:0 0 14px;max-width:70ch}
+
+  .notes p{font-size:13px;line-height:1.72;color:var(--dim);margin:0 0 14px;white-space:pre-wrap}
+  .cmd{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-family:var(--mono);font-size:12px;color:var(--ink)}
+  .cmd code{flex:1;overflow-x:auto;white-space:nowrap}
+  .copy{font-size:11px;color:var(--dim);border:1px solid var(--line2);border-radius:6px;padding:4px 9px;white-space:nowrap}
+  .copy:hover{color:var(--ink);background:var(--panel2)}
+  .kinds{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+  .kind{font-size:11px;font-family:var(--mono);padding:4px 9px;border-radius:6px;background:var(--panel2);border:1px solid var(--line);color:var(--dim)}
+  .kind b{color:var(--ink);font-weight:500}
+
+  footer{max-width:1320px;margin:0 auto;padding:0 24px 60px;font-size:11.5px;color:var(--dim2);line-height:1.7}
+  .empty{padding:60px 0;text-align:center;color:var(--dim2);font-size:13px}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,14px);background:var(--panel2);border:1px solid var(--line2);color:var(--ink);font-size:12px;padding:9px 15px;border-radius:8px;opacity:0;pointer-events:none;transition:.18s}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+  @media (max-width:720px){
+    .bar{flex-wrap:wrap;gap:10px;padding:12px 16px}
+    .search{order:3;max-width:none;flex-basis:100%}
+    .chips{margin-left:0}
+    main{padding:18px 16px 60px}
+    .hero{padding:26px 22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="bar">
+    <div class="brand"><b>Design Sourcebook</b><span>54 systems, rendered</span></div>
+    <div class="search">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search intent, name, or tag — dark dashboard, fintech…" autocomplete="off">
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="dark" aria-pressed="false">Dark</button>
+      <button class="chip" data-f="light" aria-pressed="false">Light</button>
+      <button class="chip" data-f="verified" aria-pressed="false">Verified</button>
+      <button class="chip" data-f="listed" aria-pressed="false">Not sourced</button>
+    </div>
+    <button class="chip toggle" id="viewBtn" aria-pressed="false">Coverage</button>
+  </div>
+</header>
+
+<main>
+  <div id="index">
+    <div class="meta"><h1>Catalog</h1><em id="count"></em></div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none">Nothing matched. Try a different word.</div>
+  </div>
+  <div id="coverage" style="display:none"></div>
+  <div class="detail" id="detail"></div>
+</main>
+
+<footer>
+  Previews are rendered live from each system's own tokens — colours, type scale, radii and component values — not screenshots.
+  Where a system documents a component, its real background, text colour, border and shadow are used; undisplayed surfaces such as inputs and cards are composed from the same palette.
+  Typefaces are substituted with the closest freely available match when the original is proprietary.
+</footer>
+
+<div class="toast" id="toast">Copied</div>
+
+<script>
+const DATA = /*__DATA__*/ [];
+const COVERAGE = /*__COVERAGE__*/ {};
+
+/* ---------- colour ---------- */
+function parseColor(s){
+  if(typeof s!=='string') return null;
+  s=s.trim().toLowerCase();
+  if(s.startsWith('#')){
+    const h=s.slice(1);
+    if(h.length===3) return [0,1,2].map(i=>parseInt(h[i]+h[i],16)).concat(1);
+    if(h.length===6) return [h.slice(0,2),h.slice(2,4),h.slice(4,6)].map(x=>parseInt(x,16)).concat(1);
+    if(h.length===8) return [h.slice(0,2),h.slice(2,4),h.slice(4,6)].map(x=>parseInt(x,16)).concat(parseInt(h.slice(6,8),16)/255);
+    return null;
+  }
+  const m=/^rgba?\(([^)]+)\)$/.exec(s);
+  if(m){
+    const p=m[1].split(/[,\s\/]+/).filter(Boolean).map(parseFloat);
+    return [p[0],p[1],p[2],p[3]===undefined?1:p[3]];
+  }
+  return null;
+}
+function lum(c){
+  if(!c) return 0;
+  const [r,g,b]=c.slice(0,3).map(v=>{const x=v/255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4)});
+  return .2126*r+.7152*g+.0722*b;
+}
+function ink(bg){
+  const c=Array.isArray(bg)?bg:parseColor(bg);
+  return !c||lum(c)<.36?'#f7f7f8':'#0b0b0c';
+}
+function alpha(c,a){
+  const p=parseColor(c);
+  if(!p) return c;
+  return 'rgba('+p.slice(0,3).map(Math.round).join(',')+','+a+')';
+}
+/* A specimen must never be invisible. If a token pair would render at under
+   2:1 on the plate it sits on, fall back to the readable ink — the caption
+   below still shows the real token value, so nothing is hidden. */
+function readable(fg,bg){
+  const f=Array.isArray(fg)?fg:parseColor(fg);
+  const b=Array.isArray(bg)?bg:parseColor(bg);
+  if(!f||!b) return fg;
+  return ratio(f,b)<2?ink(b):fg;
+}
+function soft(bg,amount){ return 'color-mix(in srgb, '+bg+' '+amount+'%, transparent)'; }
+function ratio(a,b){ const la=lum(a),lb=lum(b); const hi=Math.max(la,lb),lo=Math.min(la,lb); return (hi+.05)/(lo+.05); }
+function over(fg,bg){
+  const f=parseColor(fg), b=parseColor(bg);
+  if(!f) return b||[255,255,255,1];
+  if(!b) return f;
+  const a=f[3];
+  return [f[0]*a+b[0]*(1-a),f[1]*a+b[1]*(1-a),f[2]*a+b[2]*(1-a),1];
+}
+/* A translucent-white button is designed for a dark surface. On a light canvas
+   it would render as white-on-white and look broken, so show it on the surface
+   it was actually built for. */
+function stageBg(p,c){
+  // No backgroundColor means the component is transparent — it sits on the canvas.
+  const bg=over(c.backgroundColor||p.canvas,p.canvas);
+  const fg=parseColor(c.textColor||ink(c.backgroundColor||p.canvas));
+  if(fg&&ratio(fg,bg)<1.6){
+    const alt=parseColor(p.text);
+    if(alt) return 'rgb('+alt.slice(0,3).map(Math.round).join(',')+')';
+  }
+  return p.canvas;
+}
+
+/* ---------- type ---------- */
+function fontStack(f){
+  const full=String(f||'system-ui');
+  const s=full.toLowerCase();
+  // Only the first family goes in the stack. Declared values often look like
+  // `Figtree, -apple-system, "Segoe UI", ...` — and a double quote inside a
+  // style="..." attribute terminates the attribute, silently killing every
+  // declaration after it. Single quotes, first family only.
+  const first=full.split(',')[0].trim().replace(/["']/g,'') || 'system-ui';
+  const own="'"+first+"',";
+  if(/inter/.test(s)) return "'Inter',system-ui,sans-serif";
+  let fb;
+  if(/serif/.test(s)&&!/sans/.test(s)) fb="'Source Serif 4',Georgia,serif";
+  else if(/mono|berkeley|plex mono|code|consolas|menlo/.test(s)) fb="'JetBrains Mono',ui-monospace,monospace";
+  else if(/walsheim|roobert|circular|jakarta|rounded|gothic|cereal/.test(s)) fb="'Plus Jakarta Sans','Inter',sans-serif";
+  else if(/plex/.test(s)) fb="'IBM Plex Sans','Inter',sans-serif";
+  else if(/geist/.test(s)) fb="'Geist','Inter',sans-serif";
+  else if(/figtree/.test(s)) fb="'Figtree','Inter',sans-serif";
+  else if(/sf pro|helvetica|apple/.test(s)) fb="-apple-system,'Helvetica Neue','Inter',sans-serif";
+  else fb="'Inter',system-ui,sans-serif";
+  return own+fb;
+}
+/* Size in px, computed from the token's own unit. Trusting a stored px field
+   means a rem-based system sorts its type scale wrong until every entry is
+   re-ingested. */
+function pxOf(t){
+  if(!t) return 16;
+  const raw=String(t.fontSize||'');
+  const n=parseFloat(raw);
+  if(Number.isFinite(n)) return /rem|em$/.test(raw)? n*16 : n;
+  // Fallback objects carry `px` directly; without this a system with no type
+  // tokens renders every heading at body size.
+  if(Number.isFinite(t.px)) return t.px;
+  return 16;
+}
+function bodyType(p){
+  const sized=p.type.filter(t=>t.fontSize);
+  return sized.find(t=>t.name==='body') || sized.find(t=>/body/.test(t.name))
+    || sized.find(t=>pxOf(t)>=14&&pxOf(t)<=16) || sized[0] || {px:14,fontFamily:'system-ui',fontWeight:400};
+}
+function displayType(p){
+  const sized=p.type.filter(t=>t.fontSize);
+  return sized.find(t=>/display-xl|display-large|display$/.test(t.name))
+    || sized.find(t=>/display|heading|^h1/.test(t.name))
+    || sized[0] || {px:38,fontWeight:600,fontFamily:'system-ui',lineHeight:1.15};
+}
+
+/* ---------- component rendering ---------- */
+function labelOf(key){
+  const parts=String(key).split('-');
+  parts.shift();
+  const w=parts.map(x=>x.charAt(0).toUpperCase()+x.slice(1));
+  return w.join(' ')||key;
+}
+/* A preview should show what a button looks like as UI, not repeat its variant
+   name — the token name is already printed under every specimen. */
+function buttonCopy(key){
+  const k=String(key||'').toLowerCase();
+  if(/danger|destruct|error|delete/.test(k)) return 'Delete';
+  if(/success|confirm/.test(k)) return 'Confirm';
+  if(/icon|more/.test(k)) return '\u22ef';
+  if(/pill|chip|tag/.test(k)) return 'New';
+  if(/search/.test(k)) return 'Search';
+  if(/primary|brand|solid|filled|cta|default|standard|base|regular/.test(k)) return 'Continue';
+  if(/ghost|subtle|outline|secondary|neutral|transparent|tertiary|quiet/.test(k)) return 'Cancel';
+  if(/nav|circular|menu/.test(k)) return 'Menu';
+  return 'Button';
+}
+function badgeCopy(key){
+  const k=String(key||'').toLowerCase();
+  if(/success|positive|live/.test(k)) return 'Success';
+  if(/error|danger|critical|fail/.test(k)) return 'Error';
+  if(/warn/.test(k)) return 'Warning';
+  if(/neutral|muted/.test(k)) return 'Neutral';
+  if(/subtle|ghost/.test(k)) return 'Subtle';
+  if(/info|blue/.test(k)) return 'Info';
+  return 'Active';
+}
+function btnStyle(p,c,small){
+  const t=bodyType(p);
+  const fs=Math.min(Math.max(pxOf(t)||14,12),small?13:15);
+  const bg=c.backgroundColor||p.brand;
+  const plate=over(bg,p.canvas);
+  const a=parseColor(bg),b=parseColor(p.canvas);
+  const onCanvas=a&&b&&Math.abs(lum(a)-lum(b))<0.07;
+  return [
+    'background:'+bg,
+    'color:'+readable(c.textColor||ink(bg),plate),
+    'border:'+(c.border||(onCanvas?'1px solid '+p.border:'none')),
+    'border-radius:'+(c.rounded||p.radius),
+    'padding:'+(c.padding||(small?'7px 13px':'10px 18px')),
+    'box-shadow:'+(c.shadow||'none'),
+    'font-family:'+fontStack(t.fontFamily),
+    'font-size:'+fs+'px',
+    'font-weight:'+(t.fontWeight||500),
+    'line-height:1.25',
+    'letter-spacing:'+(t.letterSpacing||'normal'),
+    'white-space:nowrap','cursor:default','display:inline-flex','align-items:center','gap:6px'
+  ].join(';');
+}
+const ALT_COPY=['Learn more','Cancel','Details','View plans','Get started','Try it free'];
+
+function renderButton(p,c,small,used){
+  let copy=buttonCopy(c.key);
+  if(used){
+    if(used.has(copy)) copy=ALT_COPY.find(x=>!used.has(x))||copy;
+    used.add(copy);
+  }
+  return '<span style="'+btnStyle(p,c,small)+'">'+copy+'</span>';
+}
+function renderInput(p,c){
+  const t=bodyType(p);
+  const bg=c&&c.backgroundColor?c.backgroundColor:p.surface;
+  const plate=over(bg,p.canvas);
+  const st=[
+    'display:flex','align-items:center','gap:8px',
+    'background:'+bg,
+    'border:'+(c&&c.border?c.border:'1px solid '+p.border),
+    'border-radius:'+(c&&c.rounded?c.rounded:p.radius),
+    'padding:'+(c&&c.padding?c.padding:'9px 12px'),
+    'min-width:150px',
+    'font-family:'+fontStack(t.fontFamily),
+    'font-size:'+(Math.min(Math.max(pxOf(t)||14,12),14))+'px'
+  ].join(';');
+  const fg=readable(c&&c.textColor?c.textColor:p.muted,plate);
+  return '<span style="'+st+'"><span style="color:'+fg+';opacity:.85">Email address</span></span>';
+}
+function renderBadge(p,c){
+  const t=bodyType(p);
+  const has=c&&c.backgroundColor;
+  const bg=has?c.backgroundColor:alpha(p.text,0.10);
+  const fg=has?(c.textColor||ink(c.backgroundColor)):p.text;
+  const shown=readable(fg,over(bg,p.canvas));
+  return '<span style="display:inline-flex;align-items:center;gap:5px;background:'+bg+';color:'+shown+
+    ';border-radius:'+(c&&c.rounded?c.rounded:'999px')+';padding:'+(c&&c.padding?c.padding:'4px 10px')+
+    ';font-family:'+fontStack(t.fontFamily)+';font-size:11px;font-weight:500;white-space:nowrap">'+
+    '<span style="width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.8"></span>'+
+    badgeCopy(c&&c.key)+'</span>';
+}
+function renderCardBox(p){
+  const t=bodyType(p);
+  const plate=over(p.surface,p.canvas);
+  const title=readable(p.text,plate);
+  const sub=readable(p.muted,plate);
+  return '<span style="display:block;background:'+p.surface+';border:1px solid '+p.border+';border-radius:'+
+    (parseFloat(p.radius)>12?'12px':p.radius)+';padding:13px 14px;min-width:150px;font-family:'+fontStack(t.fontFamily)+'">'+
+    '<span style="display:block;color:'+title+';font-size:12px;font-weight:550;margin-bottom:5px">Card title</span>'+
+    '<span style="display:block;color:'+sub+';font-size:10.5px;line-height:1.5">Secondary line of supporting copy.</span></span>';
+}
+function renderNav(p){
+  const t=bodyType(p);
+  return '<span style="display:flex;align-items:center;gap:12px;padding:8px 13px;background:'+p.surface+
+    ';border:1px solid '+p.border+';border-radius:'+(parseFloat(p.radius)>10?'10px':p.radius)+
+    ';font-family:'+fontStack(t.fontFamily)+';font-size:11px;color:'+p.muted+'">'+
+    '<span style="width:7px;height:7px;border-radius:2px;background:'+p.brand+'"></span>'+
+    '<span style="color:'+p.text+'">Home</span><span>Docs</span><span>Pricing</span></span>';
+}
+
+/* A panel is not a button. Kinds we cannot draw properly are shown as the
+   surface they are — real background, border, radius, padding — labelled with
+   the kind, rather than faked into a button shape. */
+function renderSurface(p,c){
+  const t=bodyType(p);
+  // A component with no background-color is transparent — it shows the page.
+  const bg=c.backgroundColor||p.canvas;
+  const fg=readable(c.textColor||p.text, over(bg,p.canvas));
+  const label=(c.kind||'surface');
+  return '<span style="display:inline-flex;align-items:center;justify-content:center;background:'+bg+';color:'+fg+
+    ';border:'+(c.border||'1px solid '+p.border)+';border-radius:'+(c.rounded||p.radius)+
+    ';padding:'+(c.padding||'10px 14px')+';box-shadow:'+(c.shadow||'none')+
+    ';font-family:'+fontStack(t.fontFamily)+';font-size:11px;font-weight:500;text-transform:capitalize;min-width:84px">'+
+    label+'</span>';
+}
+
+function pick(p,kind){ return p.components.filter(c=>c.kind===kind); }
+
+/* the few pieces shown on a catalog card */
+function stageFor(p){
+  const btns=pick(p,'button');
+  const badges=pick(p,'badge');
+  const used=new Set();
+  const out=[];
+  if(btns.length){
+    btns.slice(0,2).forEach(c=>out.push(renderButton(p,c,true,used)));
+    out.push(badges.length?renderBadge(p,badges[0]):renderBadge(p));
+  }else{
+    out.push(renderButton(p,{key:'button-primary',backgroundColor:p.brand},true,used));
+    out.push(renderInput(p));
+    out.push(renderBadge(p));
+  }
+  return out.join('');
+}
+
+/* The card strip should show the system's range, not its first ten tokens —
+   which on brand-first palettes is ten shades of the same accent. */
+function stripColors(p,max){
+  const seen=new Set();
+  const out=[];
+  const push=v=>{ if(v&&!seen.has(v)&&out.length<max){ seen.add(v); out.push(v); } };
+  [p.canvas,p.brand,p.text,p.surface,p.muted].forEach(push);
+  const rest=p.palette.map(c=>c.value).filter(v=>!seen.has(v));
+  const need=Math.max(0,max-out.length);
+  if(need&&rest.length){
+    const step=Math.max(1,Math.floor(rest.length/need));
+    for(let i=0;i<rest.length&&out.length<max;i+=step) push(rest[i]);
+    for(let i=0;i<rest.length&&out.length<max;i++) push(rest[i]);
+  }
+  return out;
+}
+
+/* keep a long description from being cut mid-word */
+function sentence(s,n){
+  if(!s) return 'A specimen rendered from this system\u2019s own tokens.';
+  const first=String(s).split('\n')[0].trim();
+  if(first.length<=n) return first;
+  const cut=first.slice(0,n);
+  const m=cut.match(/^[\s\S]*[.!?](?=\s)/);
+  const out=m?m[0]:cut.replace(/\s+\S*$/,'');
+  return /[.!?\u2026]$/.test(out.trim())?out.trim():out.trim()+'\u2026';
+}
+
+/* the full specimen on the detail page */
+function heroFor(p){
+  const t=bodyType(p);
+  const d=displayType(p)||t;
+  const btns=pick(p,'button').slice(0,3);
+  const badges=pick(p,'badge');
+  const row=[];
+  const used=new Set();
+  if(btns.length) btns.forEach(c=>row.push(renderButton(p,c,false,used)));
+  else row.push(renderButton(p,{key:'button-primary',backgroundColor:p.brand},false,used));
+  badges.slice(0,2).forEach(c=>row.push(renderBadge(p,c)));
+  if(!badges.length) row.push(renderBadge(p));
+
+  return '<div class="hero" style="background:'+p.canvas+';color:'+readable(p.text,p.canvas)+';border-color:'+p.border+'">'+
+    '<h1 style="font-family:'+fontStack(d.fontFamily)+';font-size:'+Math.min(pxOf(d),46)+'px;font-weight:'+(d.fontWeight||600)+
+      ';line-height:'+(d.lineHeight||1.1)+';letter-spacing:'+(d.letterSpacing||'normal')+'">Design with intent.</h1>'+
+    '<p style="font-family:'+fontStack(t.fontFamily)+';font-size:'+Math.min(pxOf(t),17)+'px;color:'+readable(p.muted,p.canvas)+
+      ';line-height:'+(t.lineHeight||1.6)+'">'+sentence(p.overview,200)+'</p>'+
+    '<div class="hero-row">'+row.join('')+'</div>'+
+    '<div class="hero-row" style="margin-top:14px">'+renderInput(p,pick(p,'input')[0])+(p.components.length?(pick(p,'card')[0]?renderSurface(p,pick(p,'card')[0]):''):renderCardBox(p))+'</div>'+
+  '</div>';
+}
+
+/* ---------- index ---------- */
+const state={q:'',filter:'all',view:'systems'};
+const grid=document.getElementById('grid');
+const detail=document.getElementById('detail');
+const index=document.getElementById('index');
+document.querySelector('.brand span').textContent=DATA.length+' systems, rendered';
+
+function matches(d){
+  if(state.filter==='verified' && !d.verified) return false;
+  if(state.filter==='listed' && d.provenance!=='listed') return false;
+  if(state.filter!=='listed' && d.provenance==='listed' && state.filter!=='all') return false;
+  if(state.filter==='dark' && d.theme!=='dark') return false;
+  if(state.filter==='light' && d.theme!=='light') return false;
+  if(!state.q) return true;
+  const q=state.q.toLowerCase();
+  return (d.name+' '+d.style+' '+(d.tags||[]).join(' ')+' '+d.category).toLowerCase().includes(q);
+}
+
+function card(d){
+  if(d.provenance==='listed'){
+    return '<article class="card listed" data-slug="'+d.slug+'">'+
+      '<div class="stage" style="background:var(--panel2);display:flex;align-items:center;justify-content:center">'+
+        '<span style="font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim2)">not sourced</span></div>'+
+      '<div class="card-body"><div class="card-top"><h2>'+d.name+'</h2>'+
+        '<span class="vtag warn">listed</span></div>'+
+        '<p class="card-desc">'+d.org+'</p>'+
+        '<div class="card-foot">'+d.listedNames.slice(0,2).join(' \u00b7 ')+'</div>'+
+        '<div class="card-foot" style="margin-top:5px;opacity:.7">no machine-readable tokens</div>'+
+      '</div></article>';
+  }
+  const strip=stripColors(d,10);
+  const kinds={};
+  d.components.forEach(c=>{kinds[c.kind]=(kinds[c.kind]||0)+1});
+  const kindTxt=Object.entries(kinds).map(([k,n])=>k+' \u00d7'+n).join(' \u00b7 ')||'no component tokens';
+  return '<article class="card" data-slug="'+d.slug+'">'+
+    '<div class="stage" style="background:'+d.canvas+'">'+stageFor(d)+'</div>'+
+    '<div class="strip">'+strip.map(v=>'<i style="background:'+v+'"></i>').join('')+'</div>'+
+    '<div class="card-body">'+
+      '<div class="card-top"><span class="dot" style="background:'+d.brand+'"></span><h2>'+d.name+'</h2>'+
+      '<span class="vtag '+(d.verified?'ok':'warn')+'">'+(d.verified?'verified':d.warnings+' warn')+'</span></div>'+
+      '<p class="card-desc">'+d.style+'</p>'+
+      '<div class="card-foot"><b>'+d.components.length+'</b> components \u00b7 <b>'+d.palette.length+'</b> colors \u00b7 <b>'+d.type.length+'</b> type</div>'+
+      '<div class="card-foot" style="margin-top:5px;opacity:.75">'+kindTxt+'</div>'+
+    '</div></article>';
+}
+
+function renderIndex(){
+  const list=DATA.filter(matches);
+  grid.innerHTML=list.map(card).join('');
+  document.getElementById('count').textContent=list.length+' of '+DATA.length+' shown';
+  document.getElementById('empty').style.display=list.length?'none':'block';
+  grid.querySelectorAll('.card').forEach(el=>{
+    el.addEventListener('click',()=>{location.hash='#/'+el.dataset.slug});
+  });
+}
+
+/* ---------- detail ---------- */
+function detailHtml(d){
+  const hasComps=d.components.length>0;
+  const kinds={};
+  d.components.forEach(c=>{kinds[c.kind]=(kinds[c.kind]||0)+1});
+  const kindChips=Object.entries(kinds).map(([k,n])=>'<span class="kind"><b>'+n+'</b> '+k+'</span>').join('')
+    || '<span class="kind">no component tokens published</span>';
+
+  const propList=c=>[c.backgroundColor&&'bg '+c.backgroundColor,c.textColor&&'text '+c.textColor,
+      c.rounded&&'r '+c.rounded,c.padding&&'pad '+c.padding,c.border&&c.border!=='none'&&'border',c.shadow&&'shadow']
+      .filter(Boolean).join('<br>')||'inherits palette';
+
+  function renderFor(c){
+    if(c.kind==='input') return renderInput(d,c);
+    if(c.kind==='badge') return renderBadge(d,c);
+    if(c.kind==='button') return renderButton(d,c,false);
+    return renderSurface(d,c);
+  }
+
+  // Systems that publish no component tokens still need to be legible as a
+  // visual system, so compose the four standard surfaces from palette + type.
+  const items=hasComps
+    ? d.components.map(c=>({demo:renderFor(c),bg:stageBg(d,c),name:labelOf(c.key),sub:c.key,props:propList(c)}))
+    : [
+        {demo:renderButton(d,{key:'button-primary',backgroundColor:d.brand},false),bg:d.canvas,name:'Button',sub:'derived',props:'brand fill + body type'},
+        {demo:renderInput(d),bg:d.canvas,name:'Input',sub:'derived',props:'surface + border + radius'},
+        {demo:renderBadge(d),bg:d.canvas,name:'Badge',sub:'derived',props:'text tint + radius'},
+        {demo:renderCardBox(d),bg:d.canvas,name:'Card',sub:'derived',props:'surface + border + radius'}
+      ];
+
+  const comps=items.map(it=>
+    '<div class="comp"><div class="comp-stage" style="background:'+it.bg+'">'+it.demo+'</div>'+
+    '<div class="comp-info"><b>'+it.name+'</b><span>'+it.sub+'</span><br>'+it.props+'</div></div>'
+  ).join('');
+
+  const swatches=d.palette.map(c=>
+    '<div class="sw" data-copy="'+c.value+'"><i style="background:'+c.value+'"></i>'+
+    '<div><b>'+c.name+'</b><span>'+c.value+'</span></div></div>').join('');
+
+  const types=d.type.map(t=>{
+    const size=Math.min(pxOf(t),34);
+    return '<div class="type-row"><div class="type-spec"><b>'+t.name+'</b>'+
+      (t.fontSize?pxOf(t)+'px ':'')+(t.fontWeight||'')+(t.lineHeight?' / '+t.lineHeight:'')+'</div>'+
+      '<div class="type-demo" style="font-family:'+fontStack(t.fontFamily)+';font-size:'+size+'px;font-weight:'+
+      (t.fontWeight||400)+';letter-spacing:'+(t.letterSpacing||'normal')+';line-height:1.2">The quick brown fox</div></div>';
+  }).join('');
+
+  const notes=[d.overview&&'<p>'+d.overview+'</p>',d.dos&&'<p>'+d.dos+'</p>'].filter(Boolean).join('');
+
+  return '<a class="back" href="#">\u2190 All systems</a>'+
+    '<div class="meta" style="margin-bottom:14px"><h1 style="color:var(--ink);font-size:20px;font-weight:600;letter-spacing:-.015em">'+d.name+'</h1>'+
+      '<em>'+d.category+' \u00b7 '+d.theme+' \u00b7 '+d.license+'</em></div>'+
+    heroFor(d)+
+    '<div class="sec"><div class="sec-h"><h2>What it offers</h2><em>'+
+      (hasComps? d.components.length+' component tokens across '+Object.keys(kinds).length+' kinds'
+               : 'no component tokens \u00b7 surfaces composed from tokens')+
+      '</em></div>'+
+      '<div class="kinds">'+kindChips+'</div>'+
+      (hasComps?'':'<p class="derived-note">This system provides '+
+        (d.type.length? 'colours and type but no component tokens' : 'colours but no component tokens and no type scale')+
+        '. The four surfaces below are composed from its palette, radii and type \u2014 they show the visual language, not a published component spec.</p>')+
+      '<div class="comp-grid">'+comps+'</div></div>'+
+    '<div class="sec"><div class="sec-h"><h2>Colour</h2><em>'+d.palette.length+' tokens \u00b7 click to copy</em></div>'+
+      '<div class="swatches">'+swatches+'</div></div>'+
+    (d.type.length
+      ? '<div class="sec"><div class="sec-h"><h2>Type scale</h2><em>'+d.type.length+' steps</em></div>'+
+        '<div class="sheet" style="background:'+d.canvas+';color:'+readable(d.text,d.canvas)+'">'+types+'</div></div>'
+      : '')+
+    (notes?'<div class="sec notes"><div class="sec-h"><h2>Notes</h2><em>from the source</em></div>'+notes+'</div>':'')+
+    '<div class="sec"><div class="sec-h"><h2>Install</h2></div>'+
+      '<div class="cmd"><code>node bin/sourcebook.mjs add '+d.slug+'</code>'+
+      '<button class="copy" data-copy="node bin/sourcebook.mjs add '+d.slug+'">copy</button></div></div>';
+}
+
+/* ---------- listed (documentation-only) entries ---------- */
+function listedHtml(d){
+  const names=d.listedNames.length
+    ? d.listedNames.map(n=>'<li>'+n+'</li>').join('') : '<li>'+d.name+'</li>';
+  return '<div class="meta"><h1>Not sourced</h1><em>'+d.org+'</em></div>'+
+    '<div class="listed-panel">'+
+      '<div class="eyebrow">INVENTORY RECORD</div>'+
+      '<h1>'+d.name+'</h1>'+
+      '<p>'+d.overview+'</p>'+
+      '<div class="listed-grid">'+
+        '<div><b>Known as</b><ul>'+names+'</ul></div>'+
+        '<div><b>Listed in</b><ul>'+d.lists.map(l=>'<li>'+l+'</li>').join('')+'</ul></div>'+
+      '</div>'+
+      '<p class="listed-note">No colour, type or component tokens are shown because none were recovered. The surfaces are deliberately absent \u2014 a generated palette would misrepresent this system.</p>'+
+    '</div>';
+}
+
+function renderDetail(slug){
+  const d=DATA.find(x=>x.slug===slug);
+  if(!d){ location.hash=''; return; }
+  index.style.display='none';
+  detail.classList.add('on');
+  detail.innerHTML=d.provenance==='listed' ? listedHtml(d) : detailHtml(d);
+  window.scrollTo(0,0);
+  detail.querySelectorAll('[data-copy]').forEach(el=>{
+    el.addEventListener('click',()=>copy(el.dataset.copy));
+  });
+}
+
+function copy(text){
+  navigator.clipboard.writeText(text).then(()=>toast('Copied '+text.slice(0,32)),()=>toast('Copy failed'));
+}
+let toastT;
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('on');
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on'),1400);
+}
+
+/* ---------- coverage ---------- */
+const coverageEl=document.getElementById('coverage');
+
+function renderCoverage(){
+  const entries=(COVERAGE.union&&COVERAGE.union.entries)||[];
+  const q=state.q.toLowerCase();
+  const list=entries.filter(e=>!q||(e.org+' '+e.systems.map(s=>s.name).join(' ')).toLowerCase().includes(q));
+  const have=list.filter(e=>e.covered);
+  const miss=list.filter(e=>!e.covered);
+  const reach=miss.filter(e=>e.npm);
+
+  const row=e=>{
+    const names=[...new Set(e.systems.map(s=>s.name))].join(' \u00b7 ');
+    const srcs=[...new Set(e.systems.map(s=>s.sourceId||s.source))].join(', ');
+    const tag=e.covered
+      ?'<span class="cov-tag in">have</span>'
+      :(e.npm?'<span class="cov-tag npm">npm</span>'
+      :(e.repo?'<span class="cov-tag repo">repo</span>':'<span class="cov-tag">docs</span>'));
+    return '<div class="cov-row'+(e.covered?' have':'')+'"'+(e.covered?' data-slug="'+e.covered+'"':'')+'>'+
+      '<span class="cov-org">'+e.org+'</span>'+
+      '<span class="cov-sys">'+names+'</span>'+
+      '<span class="cov-src">'+srcs+'</span>'+tag+'</div>';
+  };
+
+  const total=entries.length;
+  const haveAll=entries.filter(e=>e.covered).length;
+  const reachAll=entries.filter(e=>!e.covered&&e.npm).length;
+  const repoAll=entries.filter(e=>!e.covered&&!e.npm&&e.repo).length;
+  const srcLine=(COVERAGE.sources||[]).map(s=>s.name.split(' (')[0]+' '+s.covered+'/'+s.total).join('  \u00b7  ');
+
+  coverageEl.innerHTML=
+    '<div class="meta"><h1>Coverage</h1><em>'+srcLine+'</em></div>'+
+    '<div class="cov-sum">'+
+      '<div><b>'+haveAll+'/'+total+'</b>organisations</div>'+
+      '<div><b>'+(total-haveAll)+'</b>missing</div>'+
+      '<div><b>'+reachAll+'</b>via npm</div>'+
+      '<div><b>'+repoAll+'</b>via repo</div>'+
+    '</div>'+
+    (have.length?'<div class="cov-h">In the registry \u2014 '+have.length+'</div><div class="cov-list">'+have.map(row).join('')+'</div>':'')+
+    (miss.length?'<div class="cov-h">Missing \u2014 '+miss.length+'</div><div class="cov-list">'+miss.map(row).join('')+'</div>':'');
+
+  coverageEl.querySelectorAll('[data-slug]').forEach(el=>{
+    el.addEventListener('click',()=>{location.hash='#/'+el.dataset.slug});
+  });
+}
+
+/* ---------- wiring ---------- */
+function showView(){
+  const cov=state.view==='coverage';
+  index.style.display=cov?'none':'';
+  coverageEl.style.display=cov?'':'none';
+  detail.classList.remove('on');
+  const btn=document.getElementById('viewBtn');
+  btn.setAttribute('aria-pressed',String(cov));
+  if(cov) renderCoverage(); else renderIndex();
+}
+
+document.getElementById('viewBtn').addEventListener('click',()=>{
+  state.view=state.view==='coverage'?'systems':'coverage';
+  location.hash='';
+  showView();
+});
+document.getElementById('q').addEventListener('input',e=>{
+  state.q=e.target.value; location.hash=''; showView();
+});
+document.getElementById('chips').addEventListener('click',e=>{
+  const b=e.target.closest('.chip'); if(!b||!b.dataset.f) return;
+  state.filter=b.dataset.f;
+  document.querySelectorAll('.chip[data-f]').forEach(c=>c.setAttribute('aria-pressed',String(c===b)));
+  if(state.view==='systems') renderIndex();
+});
+function route(){
+  const slug=location.hash.replace(/^#\/?/,'');
+  if(slug){ renderDetail(slug); return; }
+  showView();
+}
+window.addEventListener('hashchange',route);
+route();
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "name": "siemens",
+  "displayName": "Siemens iX",
+  "description": "Siemens Siemens iX — tokens read from https://github.com/siemens/ix.",
+  "style": "Siemens Siemens iX — tokens read from https://github.com/siemens/ix.",
+  "category": "Siemens",
+  "org": "Siemens",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "siemens"
+  ],
+  "homepage": "https://github.com/siemens/ix",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/siemens/ix — 23 token files, 415 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/siemens/ix"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 13,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

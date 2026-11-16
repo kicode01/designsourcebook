@@ -1,0 +1,28 @@
+{
+  "name": "designsourcebook",
+  "version": "0.1.0",
+  "description": "Design Sourcebook — a verified, installable registry of design systems for coding agents",
+  "type": "module",
+  "bin": {
+    "sourcebook": "./bin/sourcebook.mjs"
+  },
+  "scripts": {
+    "import": "node scripts/import.mjs",
+    "ingest": "node scripts/ingest-batch.mjs",
+    "coverage": "node scripts/coverage.mjs",
+    "catalog": "node scripts/build-catalog.mjs",
+    "lint": "node bin/sourcebook.mjs lint --all",
+    "mcp": "node bin/sourcebook.mjs mcp",
+    "discover": "node scripts/discover-github.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "systems",
+    "index.json"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

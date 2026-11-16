@@ -1,0 +1,668 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ecf2fe",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "20",
+      "value": "#b1cefb"
+    },
+    {
+      "name": "50",
+      "value": "#256ef4"
+    },
+    {
+      "name": "80",
+      "value": "#052561"
+    },
+    {
+      "name": "100",
+      "value": "#000000"
+    },
+    {
+      "name": "krds-color-light-primary-5",
+      "value": "#ecf2fe"
+    },
+    {
+      "name": "krds-color-light-primary-20",
+      "value": "#b1cefb"
+    },
+    {
+      "name": "krds-color-light-primary-40",
+      "value": "#4c87f6"
+    },
+    {
+      "name": "krds-color-light-primary-60",
+      "value": "#0b50d0"
+    },
+    {
+      "name": "krds-color-light-primary-80",
+      "value": "#052561"
+    },
+    {
+      "name": "krds-color-light-primary-95",
+      "value": "#020f27"
+    },
+    {
+      "name": "krds-color-light-secondary-10",
+      "value": "#d6e0eb"
+    },
+    {
+      "name": "krds-color-light-secondary-30",
+      "value": "#90b0d5"
+    },
+    {
+      "name": "krds-color-light-secondary-50",
+      "value": "#346fb2"
+    },
+    {
+      "name": "krds-color-light-secondary-70",
+      "value": "#063a74"
+    },
+    {
+      "name": "krds-color-light-secondary-90",
+      "value": "#031f3f"
+    },
+    {
+      "name": "krds-color-light-danger-5",
+      "value": "#fdefec"
+    },
+    {
+      "name": "krds-color-light-danger-20",
+      "value": "#f7afa1"
+    },
+    {
+      "name": "krds-color-light-danger-40",
+      "value": "#f05f42"
+    },
+    {
+      "name": "krds-color-light-danger-60",
+      "value": "#bd2c0f"
+    },
+    {
+      "name": "krds-color-light-danger-80",
+      "value": "#5c180a"
+    },
+    {
+      "name": "krds-color-light-danger-95",
+      "value": "#260903"
+    },
+    {
+      "name": "krds-color-light-information-10",
+      "value": "#d3ebfd"
+    },
+    {
+      "name": "krds-color-light-information-30",
+      "value": "#5fb5f7"
+    },
+    {
+      "name": "krds-color-light-information-50",
+      "value": "#0b78cb"
+    },
+    {
+      "name": "krds-color-light-information-70",
+      "value": "#085691"
+    },
+    {
+      "name": "krds-color-light-information-90",
+      "value": "#03253f"
+    },
+    {
+      "name": "krds-color-light-warning-5",
+      "value": "#fff3db"
+    },
+    {
+      "name": "krds-color-light-warning-20",
+      "value": "#ffc95c"
+    },
+    {
+      "name": "krds-color-light-warning-40",
+      "value": "#c78500"
+    },
+    {
+      "name": "krds-color-light-warning-60",
+      "value": "#8a5c00"
+    },
+    {
+      "name": "krds-color-light-warning-80",
+      "value": "#422c00"
+    },
+    {
+      "name": "krds-color-light-warning-95",
+      "value": "#241800"
+    },
+    {
+      "name": "krds-color-light-success-10",
+      "value": "#d8eedd"
+    },
+    {
+      "name": "krds-color-light-success-30",
+      "value": "#7ec88e"
+    },
+    {
+      "name": "krds-color-light-success-50",
+      "value": "#228738"
+    },
+    {
+      "name": "krds-color-light-success-70",
+      "value": "#285d33"
+    },
+    {
+      "name": "krds-color-light-success-90",
+      "value": "#122b18"
+    },
+    {
+      "name": "krds-color-high-contrast-primary-5",
+      "value": "#ecf2fe"
+    },
+    {
+      "name": "krds-color-high-contrast-primary-20",
+      "value": "#b1cefb"
+    },
+    {
+      "name": "krds-color-high-contrast-primary-40",
+      "value": "#4c87f6"
+    },
+    {
+      "name": "krds-color-high-contrast-primary-60",
+      "value": "#0b50d0"
+    },
+    {
+      "name": "krds-color-high-contrast-primary-80",
+      "value": "#052561"
+    },
+    {
+      "name": "krds-color-high-contrast-primary-95",
+      "value": "#020f27"
+    },
+    {
+      "name": "krds-color-high-contrast-secondary-10",
+      "value": "#d5ebf1"
+    },
+    {
+      "name": "krds-color-high-contrast-secondary-30",
+      "value": "#75c0d1"
+    },
+    {
+      "name": "krds-color-high-contrast-secondary-50",
+      "value": "#268097"
+    },
+    {
+      "name": "krds-color-high-contrast-secondary-70",
+      "value": "#17505e"
+    },
+    {
+      "name": "krds-color-high-contrast-secondary-90",
+      "value": "#0e3139"
+    },
+    {
+      "name": "krds-color-high-contrast-danger-5",
+      "value": "#fdefec"
+    },
+    {
+      "name": "krds-color-high-contrast-danger-20",
+      "value": "#f7afa1"
+    },
+    {
+      "name": "krds-color-high-contrast-danger-40",
+      "value": "#f05f42"
+    },
+    {
+      "name": "krds-color-high-contrast-danger-60",
+      "value": "#bd2c0f"
+    },
+    {
+      "name": "krds-color-high-contrast-danger-80",
+      "value": "#5c180a"
+    },
+    {
+      "name": "krds-color-high-contrast-danger-95",
+      "value": "#260903"
+    },
+    {
+      "name": "krds-color-high-contrast-warning-10",
+      "value": "#ffe0a3"
+    },
+    {
+      "name": "krds-color-high-contrast-warning-30",
+      "value": "#ffb114"
+    },
+    {
+      "name": "krds-color-high-contrast-warning-50",
+      "value": "#9e6a00"
+    },
+    {
+      "name": "krds-color-high-contrast-warning-70",
+      "value": "#614100"
+    },
+    {
+      "name": "krds-color-high-contrast-warning-90",
+      "value": "#2e1f00"
+    },
+    {
+      "name": "krds-color-high-contrast-success-5",
+      "value": "#eaf6ec"
+    },
+    {
+      "name": "krds-color-high-contrast-success-20",
+      "value": "#a9dab4"
+    },
+    {
+      "name": "krds-color-high-contrast-success-40",
+      "value": "#3fa654"
+    },
+    {
+      "name": "krds-color-high-contrast-success-60",
+      "value": "#267337"
+    },
+    {
+      "name": "krds-color-high-contrast-success-80",
+      "value": "#1f4727"
+    },
+    {
+      "name": "krds-color-high-contrast-success-95",
+      "value": "#0e2012"
+    },
+    {
+      "name": "krds-color-high-contrast-information-10",
+      "value": "#d3ebfd"
+    },
+    {
+      "name": "krds-color-high-contrast-information-30",
+      "value": "#5fb5f7"
+    },
+    {
+      "name": "krds-color-high-contrast-information-50",
+      "value": "#0b78cb"
+    },
+    {
+      "name": "krds-color-high-contrast-information-70",
+      "value": "#085691"
+    },
+    {
+      "name": "krds-color-high-contrast-information-90",
+      "value": "#03253f"
+    },
+    {
+      "name": "krds-light-color-link-visited",
+      "value": "#5917b8"
+    },
+    {
+      "name": "krds-color-light-gray-10",
+      "value": "#e6e8ea"
+    },
+    {
+      "name": "krds-color-light-gray-40",
+      "value": "#8a949e"
+    },
+    {
+      "name": "krds-color-light-gray-70",
+      "value": "#464c53"
+    },
+    {
+      "name": "krds-color-light-gray-95",
+      "value": "#131416"
+    },
+    {
+      "name": "krds-color-light-alpha-white100",
+      "value": "#ffffff"
+    },
+    {
+      "name": "krds-color-light-point-20",
+      "value": "#ebadb2"
+    },
+    {
+      "name": "krds-color-light-point-50",
+      "value": "#d63d4a"
+    },
+    {
+      "name": "krds-color-light-point-80",
+      "value": "#521419"
+    },
+    {
+      "name": "krds-color-light-graphic-10",
+      "value": "#e5ecf9"
+    },
+    {
+      "name": "krds-color-light-graphic-70",
+      "value": "#39506c"
+    },
+    {
+      "name": "krds-color-high-contrast-gray-5",
+      "value": "#f4f5f6"
+    },
+    {
+      "name": "krds-color-high-contrast-gray-30",
+      "value": "#b1b8be"
+    },
+    {
+      "name": "krds-color-high-contrast-gray-60",
+      "value": "#58616a"
+    },
+    {
+      "name": "krds-color-high-contrast-gray-90",
+      "value": "#1e2124"
+    },
+    {
+      "name": "krds-color-high-contrast-point-5",
+      "value": "#fbeff0"
+    },
+    {
+      "name": "krds-color-high-contrast-point-30",
+      "value": "#e0858c"
+    },
+    {
+      "name": "krds-color-high-contrast-point-60",
+      "value": "#ab2b36"
+    },
+    {
+      "name": "krds-color-high-contrast-point-90",
+      "value": "#310c0f"
+    },
+    {
+      "name": "primary",
+      "value": "#ecf2fe"
+    }
+  ],
+  "type": [
+    {
+      "name": "krds-pc-font-size-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "6rem",
+      "px": 96
+    },
+    {
+      "name": "krds-pc-font-size-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "4.4rem",
+      "px": 70.4
+    },
+    {
+      "name": "krds-mobile-font-size-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "4.4rem",
+      "px": 70.4
+    },
+    {
+      "name": "krds-pc-font-size-heading-xlarge",
+      "fontFamily": "system-ui",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "krds-pc-font-size-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "3.6rem",
+      "px": 57.6
+    },
+    {
+      "name": "krds-pc-font-size-heading-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.2rem",
+      "px": 51.2
+    },
+    {
+      "name": "krds-mobile-font-size-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "3.2rem",
+      "px": 51.2
+    },
+    {
+      "name": "krds-mobile-font-size-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8rem",
+      "px": 44.8
+    },
+    {
+      "name": "krds-mobile-font-size-heading-xlarge",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8rem",
+      "px": 44.8
+    },
+    {
+      "name": "krds-pc-font-size-heading-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.4rem",
+      "px": 38.4
+    },
+    {
+      "name": "krds-pc-font-size-navigation-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.4rem",
+      "px": 38.4
+    },
+    {
+      "name": "krds-mobile-font-size-heading-large",
+      "fontFamily": "system-ui",
+      "fontSize": "2.4rem",
+      "px": 38.4
+    },
+    {
+      "name": "krds-mobile-font-size-heading-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.2rem",
+      "px": 35.2
+    },
+    {
+      "name": "krds-mobile-font-size-navigation-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.2rem",
+      "px": 35.2
+    },
+    {
+      "name": "krds-pc-font-size-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-pc-font-size-label-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-pc-font-size-heading-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-pc-font-size-navigation-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-mobile-font-size-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-mobile-font-size-label-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-mobile-font-size-heading-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-mobile-font-size-navigation-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.9rem",
+      "px": 30.4
+    },
+    {
+      "name": "krds-pc-font-size-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-pc-font-size-label-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-pc-font-size-heading-xsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-pc-font-size-navigation-depth-medium-bold",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-pc-font-size-navigation-depth-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-mobile-font-size-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-mobile-font-size-label-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-mobile-font-size-heading-xsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-mobile-font-size-navigation-depth-medium-bold",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-mobile-font-size-navigation-depth-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "krds-pc-font-size-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-pc-font-size-label-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-pc-font-size-heading-xxsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-pc-font-size-navigation-depth-small-bold",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-pc-font-size-navigation-depth-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-mobile-font-size-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-mobile-font-size-label-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-mobile-font-size-heading-xxsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-mobile-font-size-navigation-depth-small-bold",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-mobile-font-size-navigation-depth-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "krds-pc-font-size-body-xsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3rem",
+      "px": 20.8
+    },
+    {
+      "name": "krds-pc-font-size-label-xsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3rem",
+      "px": 20.8
+    },
+    {
+      "name": "krds-mobile-font-size-body-xsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3rem",
+      "px": 20.8
+    },
+    {
+      "name": "krds-mobile-font-size-label-xsmall",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3rem",
+      "px": 20.8
+    },
+    {
+      "name": "krds-font-family-base",
+      "fontFamily": "var(--krds-typo-font-type)",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "btn-help-panel",
+      "kind": "button",
+      "backgroundColor": "#ffffff!important"
+    }
+  ],
+  "overview": "Korea Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.",
+  "dos": ""
+}

@@ -1,0 +1,41 @@
+{
+  "name": "porsche",
+  "displayName": "Porsche Design System",
+  "description": "Porsche Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
+  "style": "Porsche Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
+  "category": "Porsche",
+  "org": "Porsche",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "porsche"
+  ],
+  "homepage": "https://github.com/porsche-design-system/porsche-design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/porsche-design-system/porsche-design-system — 8 token files, 22 colours harvested, 17 selected.",
+  "source": {
+    "repo": "https://github.com/porsche-design-system/porsche-design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 18,
+    "typography": 3,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

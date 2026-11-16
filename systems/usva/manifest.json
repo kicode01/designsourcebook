@@ -1,0 +1,41 @@
+{
+  "name": "usva",
+  "displayName": "usva.",
+  "description": "usva. usva. — tokens read from https://github.com/matt-pasek/usva.",
+  "style": "usva. usva. — tokens read from https://github.com/matt-pasek/usva.",
+  "category": "usva.",
+  "org": "usva.",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "usva"
+  ],
+  "homepage": "https://github.com/matt-pasek/usva",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/matt-pasek/usva — 5 token files, 30 colours harvested, 28 selected.",
+  "source": {
+    "repo": "https://github.com/matt-pasek/usva"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 29,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

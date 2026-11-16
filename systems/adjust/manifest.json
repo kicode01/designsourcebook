@@ -1,0 +1,41 @@
+{
+  "name": "adjust",
+  "displayName": "Adjust Atlas",
+  "description": "Adjust Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package.",
+  "style": "Adjust Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package.",
+  "category": "Adjust",
+  "org": "Adjust",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "adjust"
+  ],
+  "homepage": "https://atlas.adeven.com",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://atlas.adeven.com and its 1 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 11,
+    "components": 21
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

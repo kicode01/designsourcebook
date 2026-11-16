@@ -1,0 +1,440 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#7f5700",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "md-sys-color-background",
+      "value": "#fff8f3"
+    },
+    {
+      "name": "md-sys-color-on-background",
+      "value": "#201b12"
+    },
+    {
+      "name": "md-sys-color-surface",
+      "value": "#fff8f3"
+    },
+    {
+      "name": "md-sys-color-surface-dim",
+      "value": "#e4d8cb"
+    },
+    {
+      "name": "md-sys-color-surface-bright",
+      "value": "#fff8f3"
+    },
+    {
+      "name": "md-sys-color-surface-container-lowest",
+      "value": "#ffffff"
+    },
+    {
+      "name": "md-sys-color-surface-container-low",
+      "value": "#fef2e4"
+    },
+    {
+      "name": "md-sys-color-surface-container",
+      "value": "#f8ecde"
+    },
+    {
+      "name": "md-sys-color-surface-container-high",
+      "value": "#f3e6d8"
+    },
+    {
+      "name": "md-sys-color-surface-container-highest",
+      "value": "#ede1d3"
+    },
+    {
+      "name": "md-sys-color-on-surface",
+      "value": "#201b12"
+    },
+    {
+      "name": "md-sys-color-surface-variant",
+      "value": "#f2e0c9"
+    },
+    {
+      "name": "md-sys-color-on-surface-variant",
+      "value": "#504534"
+    },
+    {
+      "name": "md-sys-color-inverse-surface",
+      "value": "#362f26"
+    },
+    {
+      "name": "md-sys-color-inverse-on-surface",
+      "value": "#fbefe1"
+    },
+    {
+      "name": "md-sys-color-surface-tint",
+      "value": "#7f5700"
+    },
+    {
+      "name": "md-sys-color-primary",
+      "value": "#7f5700"
+    },
+    {
+      "name": "md-sys-color-on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "md-sys-color-primary-container",
+      "value": "#f7b337"
+    },
+    {
+      "name": "md-sys-color-on-primary-container",
+      "value": "#442d00"
+    },
+    {
+      "name": "md-sys-color-inverse-primary",
+      "value": "#ffba3e"
+    },
+    {
+      "name": "md-sys-color-secondary",
+      "value": "#765a2b"
+    },
+    {
+      "name": "md-sys-color-on-secondary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "md-sys-color-secondary-container",
+      "value": "#ffdca9"
+    },
+    {
+      "name": "md-sys-color-on-secondary-container",
+      "value": "#5c4316"
+    },
+    {
+      "name": "md-sys-color-error",
+      "value": "#ba1a1a"
+    },
+    {
+      "name": "md-sys-color-on-error",
+      "value": "#ffffff"
+    },
+    {
+      "name": "md-sys-color-error-container",
+      "value": "#ffdad6"
+    },
+    {
+      "name": "md-sys-color-on-error-container",
+      "value": "#410002"
+    },
+    {
+      "name": "error0",
+      "value": "#000"
+    },
+    {
+      "name": "error10",
+      "value": "#410e0b"
+    },
+    {
+      "name": "error100",
+      "value": "#fff"
+    },
+    {
+      "name": "error20",
+      "value": "#601410"
+    },
+    {
+      "name": "error30",
+      "value": "#8c1d18"
+    },
+    {
+      "name": "error40",
+      "value": "#b3261e"
+    },
+    {
+      "name": "error50",
+      "value": "#dc362e"
+    },
+    {
+      "name": "error60",
+      "value": "#e46962"
+    },
+    {
+      "name": "error70",
+      "value": "#ec928e"
+    },
+    {
+      "name": "error80",
+      "value": "#f2b8b5"
+    },
+    {
+      "name": "error90",
+      "value": "#f9dedc"
+    },
+    {
+      "name": "error95",
+      "value": "#fceeee"
+    },
+    {
+      "name": "error98",
+      "value": "#fff8f7"
+    },
+    {
+      "name": "error99",
+      "value": "#fffbf9"
+    },
+    {
+      "name": "neutral-variant0",
+      "value": "#000"
+    },
+    {
+      "name": "neutral-variant10",
+      "value": "#1d1a22"
+    },
+    {
+      "name": "neutral-variant100",
+      "value": "#fff"
+    },
+    {
+      "name": "neutral-variant20",
+      "value": "#322f37"
+    },
+    {
+      "name": "neutral-variant30",
+      "value": "#49454f"
+    },
+    {
+      "name": "neutral-variant40",
+      "value": "#605d66"
+    },
+    {
+      "name": "neutral-variant50",
+      "value": "#79747e"
+    },
+    {
+      "name": "neutral-variant60",
+      "value": "#938f99"
+    },
+    {
+      "name": "neutral-variant70",
+      "value": "#aea9b4"
+    },
+    {
+      "name": "neutral-variant80",
+      "value": "#cac4d0"
+    },
+    {
+      "name": "neutral-variant90",
+      "value": "#e7e0ec"
+    },
+    {
+      "name": "neutral-variant95",
+      "value": "#f5eefa"
+    },
+    {
+      "name": "neutral-variant98",
+      "value": "#fdf7ff"
+    },
+    {
+      "name": "neutral-variant99",
+      "value": "#fffbfe"
+    },
+    {
+      "name": "neutral0",
+      "value": "#000"
+    },
+    {
+      "name": "neutral10",
+      "value": "#1d1b20"
+    },
+    {
+      "name": "neutral100",
+      "value": "#fff"
+    },
+    {
+      "name": "neutral12",
+      "value": "#211f26"
+    },
+    {
+      "name": "neutral17",
+      "value": "#2b2930"
+    },
+    {
+      "name": "neutral20",
+      "value": "#322f35"
+    },
+    {
+      "name": "neutral22",
+      "value": "#36343b"
+    },
+    {
+      "name": "neutral24",
+      "value": "#3b383e"
+    },
+    {
+      "name": "neutral30",
+      "value": "#48464c"
+    },
+    {
+      "name": "neutral4",
+      "value": "#0f0d13"
+    },
+    {
+      "name": "neutral40",
+      "value": "#605d64"
+    },
+    {
+      "name": "neutral50",
+      "value": "#79767d"
+    },
+    {
+      "name": "neutral6",
+      "value": "#141218"
+    },
+    {
+      "name": "neutral60",
+      "value": "#938f96"
+    },
+    {
+      "name": "neutral70",
+      "value": "#aea9b1"
+    },
+    {
+      "name": "neutral80",
+      "value": "#cac5cd"
+    },
+    {
+      "name": "neutral87",
+      "value": "#ded8e1"
+    },
+    {
+      "name": "neutral90",
+      "value": "#e6e0e9"
+    },
+    {
+      "name": "neutral92",
+      "value": "#ece6f0"
+    },
+    {
+      "name": "neutral94",
+      "value": "#f3edf7"
+    },
+    {
+      "name": "neutral95",
+      "value": "#f5eff7"
+    },
+    {
+      "name": "neutral96",
+      "value": "#f7f2fa"
+    },
+    {
+      "name": "neutral98",
+      "value": "#fef7ff"
+    },
+    {
+      "name": "neutral99",
+      "value": "#fffbff"
+    },
+    {
+      "name": "primary0",
+      "value": "#000"
+    },
+    {
+      "name": "primary10",
+      "value": "#21005d"
+    },
+    {
+      "name": "primary100",
+      "value": "#fff"
+    },
+    {
+      "name": "primary20",
+      "value": "#381e72"
+    },
+    {
+      "name": "primary30",
+      "value": "#4f378b"
+    },
+    {
+      "name": "primary40",
+      "value": "#6750a4"
+    },
+    {
+      "name": "primary50",
+      "value": "#7f67be"
+    },
+    {
+      "name": "primary60",
+      "value": "#9a82db"
+    },
+    {
+      "name": "primary70",
+      "value": "#b69df8"
+    },
+    {
+      "name": "primary",
+      "value": "#7f5700"
+    }
+  ],
+  "type": [
+    {
+      "name": "catalog-display-xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "55px",
+      "px": 55
+    },
+    {
+      "name": "catalog-display-m-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "45px",
+      "px": 45
+    },
+    {
+      "name": "catalog-headline-s-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "catalog-title-l-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "catalog-title-m-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "playground-code-font-family",
+      "fontFamily": "Google Sans Mono', Menlo, Monaco,\r\n    'Courier New', monospace",
+      "px": 16
+    },
+    {
+      "name": "catalog-title-s-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "catalog-body-l-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "catalog-body-m-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "catalog-label-s-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    }
+  ],
+  "components": [],
+  "overview": "Google Google Material Design — tokens read from https://github.com/material-components/material-web.",
+  "dos": ""
+}

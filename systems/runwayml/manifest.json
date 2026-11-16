@@ -1,0 +1,38 @@
+{
+  "name": "runwayml",
+  "displayName": "RunwayML",
+  "description": "Cinematic dark UI, media-rich layout",
+  "style": "Cinematic dark UI, media-rich layout",
+  "category": "AI & Machine Learning",
+  "theme": "light",
+  "tags": [
+    "dark",
+    "cinematic",
+    "ai",
+    "light"
+  ],
+  "homepage": "https://runwayml.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 18,
+    "typography": 9,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

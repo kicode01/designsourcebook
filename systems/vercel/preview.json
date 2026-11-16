@@ -1,0 +1,307 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff5b4f",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "6px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-vercel-black",
+      "value": "#171717"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-true-black",
+      "value": "#000000"
+    },
+    {
+      "name": "brand-ship-red",
+      "value": "#ff5b4f"
+    },
+    {
+      "name": "brand-preview-pink",
+      "value": "#de1d8d"
+    },
+    {
+      "name": "brand-develop-blue",
+      "value": "#0a72ef"
+    },
+    {
+      "name": "console-blue",
+      "value": "#0070f3"
+    },
+    {
+      "name": "console-purple",
+      "value": "#7928ca"
+    },
+    {
+      "name": "console-pink",
+      "value": "#eb367f"
+    },
+    {
+      "name": "interactive-link-blue",
+      "value": "#0072f5"
+    },
+    {
+      "name": "interactive-focus-blue",
+      "value": "hsla(212, 100%, 48%, 1)"
+    },
+    {
+      "name": "interactive-ring-blue",
+      "value": "rgba(147, 197, 253, 0.5)"
+    },
+    {
+      "name": "neutral-gray-900",
+      "value": "#171717"
+    },
+    {
+      "name": "neutral-gray-600",
+      "value": "#4d4d4d"
+    },
+    {
+      "name": "neutral-gray-500",
+      "value": "#666666"
+    },
+    {
+      "name": "neutral-gray-400",
+      "value": "#808080"
+    },
+    {
+      "name": "neutral-gray-100",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "neutral-gray-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "overlay-backdrop",
+      "value": "hsla(0, 0%, 98%, 1)"
+    },
+    {
+      "name": "overlay-selection-text",
+      "value": "hsla(0, 0%, 95%, 1)"
+    },
+    {
+      "name": "overlay-badge-blue-bg",
+      "value": "#ebf5ff"
+    },
+    {
+      "name": "overlay-badge-blue-text",
+      "value": "#0068d6"
+    },
+    {
+      "name": "shadows-border-shadow",
+      "value": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "name": "shadows-subtle-elevation",
+      "value": "rgba(0, 0, 0, 0.04)"
+    },
+    {
+      "name": "shadows-card-stack",
+      "value": "rgba(0,0,0,0.08)"
+    },
+    {
+      "name": "shadows-ring-border",
+      "value": "rgb(235, 235, 235)"
+    },
+    {
+      "name": "primary",
+      "value": "#ff5b4f"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Geist",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": "-2.4px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Geist",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-2.4px"
+    },
+    {
+      "name": "sub-heading-large",
+      "fontFamily": "Geist",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "letterSpacing": "-1.28px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Geist",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-1.28px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Geist",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "card-title-light",
+      "fontFamily": "Geist",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 500,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "Geist",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.8
+    },
+    {
+      "name": "body",
+      "fontFamily": "Geist",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.56
+    },
+    {
+      "name": "body-small",
+      "fontFamily": "Geist",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Geist",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-semibold",
+      "fontFamily": "Geist",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "mono-body",
+      "fontFamily": "Geist",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button-link",
+      "fontFamily": "Geist",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "button-small",
+      "fontFamily": "Geist",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "mono-caption",
+      "fontFamily": "Geist",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.54
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Geist",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "mono-small",
+      "fontFamily": "Geist",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1
+    },
+    {
+      "name": "micro-badge",
+      "fontFamily": "Geist",
+      "fontSize": "7px",
+      "px": 7,
+      "fontWeight": 700,
+      "lineHeight": 1
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-white",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#171717",
+      "rounded": "6px",
+      "shadow": "rgb(235, 235, 235) 0px 0px 0px 1px"
+    },
+    {
+      "key": "button-primary-dark",
+      "kind": "button",
+      "backgroundColor": "#171717",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "button-pill-button-badge",
+      "kind": "button",
+      "backgroundColor": "#ebf5ff",
+      "textColor": "#0068d6",
+      "rounded": "9999px",
+      "padding": "0px 10px"
+    },
+    {
+      "key": "button-large-pill",
+      "kind": "button",
+      "backgroundColor": "#171717",
+      "rounded": "64px"
+    }
+  ],
+  "overview": "Vercel's website is the visual thesis of developer infrastructure made invisible — a design system so restrained it borders on philosophical. The page is overwhelmingly white (#ffffff) with near-black (#171717) text, creating a gallery-like emptiness where every element earns its pixel. This isn't minimalism as decoration; it's minimalism as engineering principle. The Geist design system treats the interface like a compiler treats code — every unnecessary token is stripped away until only structure remains.\n\nThe custom Geist font family is the crown jewel. Geist Sans uses aggressive negative letter-spacing (-2.4px to -2.88px at display sizes), creating headlines that feel compressed, urgent, and engineered — like code that's been minified for production. At body sizes, the tracking relaxes but the geometric precision persists. Geist Mono completes the system as the monospace companion…",
+  "dos": "Do\n- Use Geist Sans with aggressive negative letter-spacing at display sizes (-2.4px to -2.88px at 48px)\n- Use shadow-as-border (0px 0px 0px 1px rgba(0,0,0,0.08)) instead of traditional CSS borders\n- Enable \"liga\" on all Geist text — ligatures are structural, not optional\n- Use the three-weight system: 400 (body), 500 (UI), 600 (headings)\n- Apply workflow accent colors (Red/Pink/Blue) only in their workflow context\n- Use multi-layer shadow stacks for cards (border + elevation + ambient + inner highlight)\n- Keep the color palette achromatic — grays from #171717 to #ffffff are the system\n- Use #171717 instead of #000000 for primary text — the micro-warmth matters\n\nDon't\n- Don't use positive letter-spacing on Geist Sans — it's always negative or zero\n- Don't use weight 700 (bold) on body text — 600 is the maximum, used only for headings\n- Don't use traditional CSS border on cards — use the…"
+}

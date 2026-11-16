@@ -1,0 +1,44 @@
+{
+  "name": "cloudscape",
+  "displayName": "Cloudscape",
+  "description": "Amazon Cloudscape — the design system for AWS console experiences.",
+  "style": "Amazon Cloudscape — the design system for AWS console experiences.",
+  "category": "Amazon",
+  "org": "Amazon",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "amazon",
+    "platform"
+  ],
+  "homepage": "https://cloudscape.design",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @cloudscape-design/design-tokens@3.0.117 (1 token files, 393 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@cloudscape-design/design-tokens",
+    "version": "3.0.117",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

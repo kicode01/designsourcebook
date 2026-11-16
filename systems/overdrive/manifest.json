@@ -1,0 +1,41 @@
+{
+  "name": "overdrive",
+  "displayName": "AutoGuru Overdrive",
+  "description": "AutoGuru AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.",
+  "style": "AutoGuru AutoGuru Overdrive — tokens read from https://github.com/autoguru-au/overdrive.",
+  "category": "AutoGuru",
+  "org": "AutoGuru",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "auto-guru"
+  ],
+  "homepage": "https://github.com/autoguru-au/overdrive",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/autoguru-au/overdrive — 11 token files, 35 colours harvested, 33 selected.",
+  "source": {
+    "repo": "https://github.com/autoguru-au/overdrive"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 33,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

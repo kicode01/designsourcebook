@@ -1,0 +1,290 @@
+{
+  "canvas": "#272729",
+  "surface": "#262628",
+  "text": "#ffffff",
+  "muted": "#ffffff",
+  "brand": "#000000",
+  "border": "color-mix(in srgb, #ffffff 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-light-gray",
+      "value": "#f5f5f7"
+    },
+    {
+      "name": "primary-near-black",
+      "value": "#1d1d1f"
+    },
+    {
+      "name": "interactive-apple-blue",
+      "value": "#0071e3"
+    },
+    {
+      "name": "interactive-link-blue",
+      "value": "#0066cc"
+    },
+    {
+      "name": "interactive-bright-blue",
+      "value": "#2997ff"
+    },
+    {
+      "name": "text-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-near-black",
+      "value": "#1d1d1f"
+    },
+    {
+      "name": "text-black-80",
+      "value": "rgba(0, 0, 0, 0.8)"
+    },
+    {
+      "name": "text-black-48",
+      "value": "rgba(0, 0, 0, 0.48)"
+    },
+    {
+      "name": "surface-dark-surface-1",
+      "value": "#272729"
+    },
+    {
+      "name": "surface-dark-surface-2",
+      "value": "#262628"
+    },
+    {
+      "name": "surface-dark-surface-3",
+      "value": "#28282a"
+    },
+    {
+      "name": "surface-dark-surface-4",
+      "value": "#2a2a2d"
+    },
+    {
+      "name": "surface-dark-surface-5",
+      "value": "#242426"
+    },
+    {
+      "name": "button-active",
+      "value": "#ededf2"
+    },
+    {
+      "name": "button-default-light",
+      "value": "#fafafc"
+    },
+    {
+      "name": "button-overlay",
+      "value": "rgba(210, 210, 215, 0.64)"
+    },
+    {
+      "name": "button-white-32",
+      "value": "rgba(255, 255, 255, 0.32)"
+    },
+    {
+      "name": "shadows-card-shadow",
+      "value": "rgba(0, 0, 0, 0.22)"
+    },
+    {
+      "name": "primary",
+      "value": "#000000"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 600,
+      "lineHeight": 1.07,
+      "letterSpacing": "-0.28px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 600,
+      "lineHeight": 1.1
+    },
+    {
+      "name": "nav-heading",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "34px",
+      "px": 34,
+      "fontWeight": 600,
+      "lineHeight": 1.47,
+      "letterSpacing": "-0.374px"
+    },
+    {
+      "name": "tile-heading",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 400,
+      "lineHeight": 1.14,
+      "letterSpacing": "0.196px"
+    },
+    {
+      "name": "sub-nav",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 300,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "21px",
+      "px": 21,
+      "fontWeight": 700,
+      "lineHeight": 1.19,
+      "letterSpacing": "0.231px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "21px",
+      "px": 21,
+      "fontWeight": 400,
+      "lineHeight": 1.19,
+      "letterSpacing": "0.231px"
+    },
+    {
+      "name": "button-large",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 300,
+      "lineHeight": 1
+    },
+    {
+      "name": "body",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 400,
+      "lineHeight": 1.47,
+      "letterSpacing": "-0.374px"
+    },
+    {
+      "name": "body-emphasis",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 600,
+      "lineHeight": 1.24,
+      "letterSpacing": "-0.374px"
+    },
+    {
+      "name": "button",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 400,
+      "lineHeight": 2.41
+    },
+    {
+      "name": "link",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": "-0.224px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.29,
+      "letterSpacing": "-0.224px"
+    },
+    {
+      "name": "caption-bold",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.29,
+      "letterSpacing": "-0.224px"
+    },
+    {
+      "name": "micro",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.12px"
+    },
+    {
+      "name": "micro-bold",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.12px"
+    },
+    {
+      "name": "nano",
+      "fontFamily": "SF Pro Display",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 400,
+      "lineHeight": 1.47,
+      "letterSpacing": "-0.08px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-blue",
+      "kind": "button",
+      "backgroundColor": "#0071e3",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "8px 15px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "button-primary-dark",
+      "kind": "button",
+      "backgroundColor": "#1d1d1f",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "8px 15px"
+    },
+    {
+      "key": "button-pill-link",
+      "kind": "button",
+      "textColor": "#0066cc",
+      "rounded": "980px",
+      "border": "1px solid #0066cc"
+    },
+    {
+      "key": "button-filter-search",
+      "kind": "button",
+      "backgroundColor": "#fafafc",
+      "textColor": "rgba(0, 0, 0, 0.8)",
+      "rounded": "11px",
+      "padding": "0px 14px",
+      "border": "3px solid rgba(0, 0, 0, 0.04)"
+    },
+    {
+      "key": "button-media-control",
+      "kind": "button",
+      "backgroundColor": "rgba(210, 210, 215, 0.64)",
+      "textColor": "rgba(0, 0, 0, 0.48)"
+    }
+  ],
+  "overview": "Apple's website is a masterclass in controlled drama — vast expanses of pure black and near-white serve as cinematic backdrops for products that are photographed as if they were sculptures in a gallery. The design philosophy is reductive to its core: every pixel exists in service of the product, and the interface itself retreats until it becomes invisible. This is not minimalism as aesthetic preference; it is minimalism as reverence for the object.\n\nThe typography anchors everything. San Francisco (SF Pro Display for large sizes, SF Pro Text for body) is Apple's proprietary typeface, engineered with optical sizing that automatically adjusts letterforms depending on point size. At display sizes (56px), weight 600 with a tight line-height of 1.07 and subtle negative letter-spacing (-0.28px) creates headlines that feel machined rather than typeset — precise, confident, and unapologetically…",
+  "dos": "Do\n- Use SF Pro Display at 20px+ and SF Pro Text below 20px — respect the optical sizing boundary\n- Apply negative letter-spacing at all text sizes (not just headlines) — Apple tracks tight universally\n- Use Apple Blue (#0071e3) ONLY for interactive elements — it must be the singular accent\n- Alternate between black and light gray (#f5f5f7) section backgrounds for cinematic rhythm\n- Use 980px pill radius for CTA links — the signature Apple link shape\n- Keep product imagery on solid-color fields with no competing visual elements\n- Use the translucent dark glass (rgba(0,0,0,0.8) + blur) for sticky navigation\n- Compress headline line-heights to 1.07-1.14 — Apple headlines are famously tight\n\nDon't\n- Don't introduce additional accent colors — the entire chromatic budget is spent on blue\n- Don't use heavy shadows or multiple shadow layers — Apple's shadow system is one soft diffused shadow…"
+}

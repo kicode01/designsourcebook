@@ -1,0 +1,41 @@
+{
+  "name": "firefox",
+  "displayName": "Firefox Acorn Design System",
+  "description": "Firefox Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.",
+  "style": "Firefox Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.",
+  "category": "Firefox",
+  "org": "Firefox",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "firefox"
+  ],
+  "homepage": "https://acorn.firefox.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://acorn.firefox.com/ in headless Chromium on 2026-11-16 (376 custom properties, 42 sampled elements, 2 files). A rendered snapshot is not a published token package — values can change without notice. Page title: Acorn - Acorn Design System.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 15,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

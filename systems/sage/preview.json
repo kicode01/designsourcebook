@@ -1,0 +1,397 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3e92ee",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "label-primary-icon-background-accent",
+      "value": "#3e92ee"
+    },
+    {
+      "name": "label-danger-background-accent",
+      "value": "#f3988c"
+    },
+    {
+      "name": "sd-sage-color-base-primary-100-hex",
+      "value": "#dbe9fe"
+    },
+    {
+      "name": "sd-sage-color-base-primary-300-hex",
+      "value": "#2463eb"
+    },
+    {
+      "name": "sd-sage-color-base-primary-500-hex",
+      "value": "#172554"
+    },
+    {
+      "name": "sd-sage-color-combos-draft-default-background",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "sd-sage-color-combos-draft-default-icon-background-a",
+      "value": "#6c6a69"
+    },
+    {
+      "name": "sd-sage-color-combos-draft-subtle-background",
+      "value": "#828180"
+    },
+    {
+      "name": "sd-sage-color-combos-published-default-background",
+      "value": "#d3f8df"
+    },
+    {
+      "name": "sd-sage-color-combos-published-subtle-background",
+      "value": "#079250"
+    },
+    {
+      "name": "sd-sage-color-combos-info-default-foreground",
+      "value": "#1c4ed8"
+    },
+    {
+      "name": "sd-sage-color-combos-info-default-background",
+      "value": "#dbe9fe"
+    },
+    {
+      "name": "sd-sage-color-combos-info-default-icon-background-ac",
+      "value": "#2463eb"
+    },
+    {
+      "name": "sd-sage-color-combos-info-subtle-foreground-accent",
+      "value": "#2463eb"
+    },
+    {
+      "name": "sd-sage-color-combos-info-bold-foreground",
+      "value": "#dbe9fe"
+    },
+    {
+      "name": "sd-sage-color-combos-locked-default-background",
+      "value": "#e0e4ff"
+    },
+    {
+      "name": "sd-sage-color-combos-locked-default-icon-background-",
+      "value": "#533be5"
+    },
+    {
+      "name": "sd-sage-color-combos-locked-subtle-background",
+      "value": "#a3acfd"
+    },
+    {
+      "name": "sd-sage-color-combos-warning-default-foreground",
+      "value": "#db7303"
+    },
+    {
+      "name": "sd-sage-color-combos-warning-default-background",
+      "value": "#fff3c6"
+    },
+    {
+      "name": "sd-sage-color-combos-warning-default-icon-background",
+      "value": "#db7303"
+    },
+    {
+      "name": "sd-sage-color-combos-warning-subtle-foreground-accen",
+      "value": "#fdbb21"
+    },
+    {
+      "name": "sd-sage-color-combos-warning-bold-foreground",
+      "value": "#fff"
+    },
+    {
+      "name": "sd-sage-color-combos-danger-default-foreground",
+      "value": "#991b1b"
+    },
+    {
+      "name": "sd-sage-color-combos-danger-default-background",
+      "value": "#fee2e1"
+    },
+    {
+      "name": "sd-sage-color-combos-danger-default-icon-background-",
+      "value": "#ef4444"
+    },
+    {
+      "name": "sd-sage-color-combos-danger-subtle-foreground-accent",
+      "value": "#fda5a5"
+    },
+    {
+      "name": "sd-sage-color-combos-danger-bold-foreground",
+      "value": "#fee2e1"
+    },
+    {
+      "name": "sd-sage-color-combos-primary-default-foreground",
+      "value": "#fff"
+    },
+    {
+      "name": "sd-sage-color-combos-primary-default-background",
+      "value": "#93c5fd"
+    },
+    {
+      "name": "sd-sage-color-combos-primary-subtle-foreground-accen",
+      "value": "#fff"
+    },
+    {
+      "name": "sd-sage-color-combos-primary-bold-foreground",
+      "value": "#fff"
+    },
+    {
+      "name": "sd-sage-color-core-primary",
+      "value": "#2463eb"
+    },
+    {
+      "name": "sd-sage-color-custom-label-warning-background-accent",
+      "value": "#f9df8b"
+    },
+    {
+      "name": "sd-sage-color-custom-label-danger-icon-background-ac",
+      "value": "#da665e"
+    },
+    {
+      "name": "color-base-primary-200-hex",
+      "value": "#93c5fd"
+    },
+    {
+      "name": "color-base-primary-400-hex",
+      "value": "#1c4ed8"
+    },
+    {
+      "name": "color-combos-draft-default-foreground-accent",
+      "value": "#1a1a19"
+    },
+    {
+      "name": "color-combos-draft-default-background-accent",
+      "value": "#d2d1d1"
+    },
+    {
+      "name": "color-combos-draft-subtle-foreground-accent",
+      "value": "#828180"
+    },
+    {
+      "name": "color-combos-draft-bold-background",
+      "value": "#343332"
+    },
+    {
+      "name": "color-combos-published-default-background",
+      "value": "#d3f8df"
+    },
+    {
+      "name": "color-combos-published-default-icon-background-accen",
+      "value": "#079250"
+    },
+    {
+      "name": "color-combos-published-subtle-background",
+      "value": "#079250"
+    },
+    {
+      "name": "color-combos-info-default-foreground",
+      "value": "#1c4ed8"
+    },
+    {
+      "name": "color-combos-info-default-background",
+      "value": "#dbe9fe"
+    },
+    {
+      "name": "color-combos-info-default-icon-background-accent",
+      "value": "#2463eb"
+    },
+    {
+      "name": "color-combos-info-subtle-foreground-accent",
+      "value": "#2463eb"
+    },
+    {
+      "name": "color-combos-info-bold-foreground",
+      "value": "#dbe9fe"
+    },
+    {
+      "name": "color-combos-locked-default-foreground-accent",
+      "value": "#221b4b"
+    },
+    {
+      "name": "color-combos-locked-default-background-accent",
+      "value": "#a3acfd"
+    },
+    {
+      "name": "color-combos-locked-subtle-foreground-accent",
+      "value": "#533be5"
+    },
+    {
+      "name": "color-combos-locked-bold-background",
+      "value": "#533be5"
+    },
+    {
+      "name": "color-combos-warning-default-foreground-accent",
+      "value": "#451902"
+    },
+    {
+      "name": "color-combos-warning-default-background-accent",
+      "value": "#fed04b"
+    },
+    {
+      "name": "color-combos-warning-subtle-foreground",
+      "value": "#db7303"
+    },
+    {
+      "name": "color-combos-warning-subtle-background",
+      "value": "#fdbb21"
+    },
+    {
+      "name": "color-combos-warning-bold-background",
+      "value": "#fdbb21"
+    },
+    {
+      "name": "color-combos-danger-default-foreground-accent",
+      "value": "#572627"
+    },
+    {
+      "name": "color-combos-danger-default-background-accent",
+      "value": "#fda5a5"
+    },
+    {
+      "name": "color-combos-danger-subtle-foreground",
+      "value": "#991b1b"
+    },
+    {
+      "name": "color-combos-danger-subtle-background",
+      "value": "#fda5a5"
+    },
+    {
+      "name": "color-combos-danger-bold-background",
+      "value": "#fda5a5"
+    },
+    {
+      "name": "color-combos-primary-default-foreground-accent",
+      "value": "#fff"
+    },
+    {
+      "name": "color-combos-primary-subtle-foreground",
+      "value": "#fff"
+    },
+    {
+      "name": "color-combos-primary-subtle-background",
+      "value": "#93c5fd"
+    },
+    {
+      "name": "color-combos-primary-bold-background",
+      "value": "#93c5fd"
+    },
+    {
+      "name": "color-custom-label-primary-icon-background-accent",
+      "value": "#3e92ee"
+    },
+    {
+      "name": "color-custom-label-danger-background-accent",
+      "value": "#f3988c"
+    },
+    {
+      "name": "billboard-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "hex",
+      "value": "#eff6ff"
+    },
+    {
+      "name": "sd-sage-color-base-green-100-hex",
+      "value": "#edfcf2"
+    },
+    {
+      "name": "sd-sage-color-base-mercury-150-hex",
+      "value": "#ffe3d4"
+    },
+    {
+      "name": "sd-sage-color-base-sage-300-hex",
+      "value": "#079250"
+    },
+    {
+      "name": "sd-sage-color-base-yellow-950-hex",
+      "value": "#451902"
+    },
+    {
+      "name": "sd-sage-color-base-red-050-hex",
+      "value": "#fffafa"
+    },
+    {
+      "name": "sd-sage-color-base-purple-700-hex",
+      "value": "#4f37cb"
+    },
+    {
+      "name": "sd-sage-color-base-grey-300-hex",
+      "value": "#d2d1d1"
+    },
+    {
+      "name": "sd-sage-color-base-white-500-hex",
+      "value": "#fff"
+    },
+    {
+      "name": "sd-sage-color-combos-published-subtle-foreground-acc",
+      "value": "#079250"
+    },
+    {
+      "name": "sd-sage-color-core-purple",
+      "value": "#533be5"
+    },
+    {
+      "name": "color-base-blue-800-hex",
+      "value": "#1d40ae"
+    },
+    {
+      "name": "color-base-green-900-hex",
+      "value": "#094c2f"
+    },
+    {
+      "name": "color-base-mercury-950-hex",
+      "value": "#450506"
+    },
+    {
+      "name": "color-base-yellow-600-hex",
+      "value": "#db7303"
+    },
+    {
+      "name": "color-base-red-700-hex",
+      "value": "#b91c1b"
+    },
+    {
+      "name": "color-base-purple-300-hex",
+      "value": "#a3acfd"
+    },
+    {
+      "name": "color-base-charcoal-500-hex",
+      "value": "#1a1a19"
+    },
+    {
+      "name": "color-base-white-100-hex",
+      "value": "#fff"
+    },
+    {
+      "name": "color-combos-published-default-foreground",
+      "value": "#085c37"
+    },
+    {
+      "name": "primary",
+      "value": "#3e92ee"
+    }
+  ],
+  "type": [
+    {
+      "name": "sage-font-sizes",
+      "fontFamily": "system-ui",
+      "fontSize": "(\r\n  xs: rem(12px),\r\n  sm: rem(12px),\r\n  md: rem(14px),\r\n  lg: rem(16px),\r\n  xl: rem(18px),\r\n  2xl: rem(20px),\r\n  3xl: rem(22px),\r\n  4xl: rem(26px),\r\n  5xl: rem(28px)\r\n)",
+      "px": 16
+    },
+    {
+      "name": "sage-font-family",
+      "fontFamily": "Noto Sans Hebrew\", \"Arial Hebrew\", \"Rubik\", \"Frank Ruehl\", \"tahoma\", system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "sage-font-family-heading",
+      "fontFamily": "Noto Sans Hebrew\", \"Arial Hebrew\", \"Rubik\", \"Frank Ruehl\", \"tahoma\", system-ui, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "Sage Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.",
+  "dos": ""
+}

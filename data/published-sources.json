@@ -1,0 +1,265 @@
+{
+  "note": "Design systems whose tokens ship as an npm package. Ingest with: node scripts/ingest-batch.mjs",
+  "sources": [
+    {
+      "pkg": "@adobe/spectrum-tokens",
+      "slug": "spectrum",
+      "org": "Adobe",
+      "name": "Spectrum",
+      "note": "Adobe Spectrum — the cross-product design language behind Creative Cloud."
+    },
+    {
+      "pkg": "@cloudscape-design/design-tokens",
+      "slug": "cloudscape",
+      "org": "Amazon",
+      "name": "Cloudscape",
+      "note": "Amazon Cloudscape — the design system for AWS console experiences."
+    },
+    {
+      "pkg": "@atlaskit/tokens",
+      "slug": "atlassian",
+      "org": "Atlassian",
+      "name": "Atlassian Design System",
+      "note": "Atlassian Design System — tokens behind Jira and Confluence."
+    },
+    {
+      "pkg": "@primer/primitives",
+      "slug": "primer",
+      "org": "GitHub",
+      "name": "Primer",
+      "note": "GitHub Primer — the design system behind GitHub."
+    },
+    {
+      "pkg": "@carbon/themes",
+      "slug": "carbon",
+      "org": "IBM",
+      "name": "Carbon",
+      "note": "IBM Carbon — IBM's open-source enterprise design system.",
+      "extra": [
+        "@carbon/colors"
+      ]
+    },
+    {
+      "pkg": "@fluentui/tokens",
+      "slug": "fluent",
+      "org": "Microsoft",
+      "name": "Fluent 2",
+      "note": "Microsoft Fluent 2 — the design language across Windows and Microsoft 365."
+    },
+    {
+      "pkg": "@patternfly/react-tokens",
+      "slug": "patternfly",
+      "org": "Red Hat",
+      "name": "PatternFly",
+      "note": "Red Hat PatternFly — open-source design system for enterprise UIs."
+    },
+    {
+      "pkg": "@rei/cedar",
+      "slug": "cedar",
+      "org": "REI",
+      "name": "Cedar",
+      "note": "REI Cedar — the co-op's open-source design system."
+    },
+    {
+      "pkg": "@salesforce-ux/design-system",
+      "slug": "lightning",
+      "org": "Salesforce",
+      "name": "Lightning",
+      "note": "Salesforce Lightning Design System — tokens for the Salesforce platform."
+    },
+    {
+      "pkg": "@shopify/polaris-tokens",
+      "slug": "polaris",
+      "org": "Shopify",
+      "name": "Polaris",
+      "note": "Shopify Polaris — the design system for the Shopify admin."
+    },
+    {
+      "pkg": "@twilio-paste/design-tokens",
+      "slug": "paste",
+      "org": "Twilio",
+      "name": "Paste",
+      "note": "Twilio Paste — the design system for Twilio's console."
+    },
+    {
+      "pkg": "@zendeskgarden/react-theming",
+      "slug": "garden",
+      "org": "Zendesk",
+      "name": "Garden",
+      "note": "Zendesk Garden — the design system behind Zendesk products."
+    },
+    {
+      "pkg": "govuk-frontend",
+      "slug": "govuk",
+      "org": "GOV.UK",
+      "name": "GOV.UK Design System",
+      "note": "GOV.UK Design System — the UK government's public-service design system."
+    },
+    {
+      "pkg": "uswds",
+      "slug": "uswds",
+      "org": "U.S. Web",
+      "name": "U.S. Web Design System",
+      "note": "U.S. Web Design System — the design system for US federal services."
+    },
+    {
+      "pkg": "@radix-ui/colors",
+      "slug": "radix",
+      "org": "WorkOS",
+      "name": "Radix",
+      "note": "WorkOS Radix — open-source colour system and unstyled component primitives."
+    },
+    {
+      "pkg": "@wonderflow/react-components",
+      "slug": "wanda",
+      "org": "Wonderflow",
+      "name": "Wanda Design System",
+      "note": "Wonderflow Wanda — an open-source design system for digital products."
+    },
+    {
+      "pkg": "antd",
+      "slug": "antd",
+      "org": "Ant Financial",
+      "name": "Ant Design",
+      "note": "Ant Design — enterprise UI design language from Ant Group."
+    },
+    {
+      "pkg": "@hubspot/canvas",
+      "slug": "canvas",
+      "org": "Hubspot",
+      "name": "Canvas Design System",
+      "note": "Hubspot Canvas — the building blocks of Hubspot's product design."
+    },
+    {
+      "pkg": "@clr/ui",
+      "slug": "clarity",
+      "org": "VMware",
+      "name": "Clarity Design System",
+      "note": "VMware Clarity — UX guidelines, HTML/CSS framework and Angular components."
+    },
+    {
+      "pkg": "grommet",
+      "slug": "grommet",
+      "org": "Hewlett Packard",
+      "name": "Grommet",
+      "note": "HPE Grommet — components and design resources for application UIs."
+    },
+    {
+      "pkg": "mineral-ui",
+      "slug": "mineral",
+      "org": "CA Technologies",
+      "name": "Mineral UI",
+      "note": "Mineral UI — an open-source design system for modern software experiences."
+    },
+    {
+      "pkg": "@kiwicom/orbit-design-tokens",
+      "slug": "orbit",
+      "org": "Kiwi.com",
+      "name": "Orbit",
+      "note": "Kiwi.com Orbit — an open-source design system built for travel projects."
+    },
+    {
+      "pkg": "@gitlab/ui",
+      "slug": "pajamas",
+      "org": "Gitlab",
+      "name": "Pajamas",
+      "note": "GitLab Pajamas — design guidelines and UI components behind GitLab."
+    },
+    {
+      "pkg": "@pluralsight/design-tokens",
+      "slug": "pluralsight",
+      "org": "Pluralsight",
+      "name": "Pluralsight Design System",
+      "note": "Pluralsight Design System — a cohesive design language for Pluralsight products."
+    },
+    {
+      "pkg": "@mozilla-protocol/core",
+      "slug": "protocol",
+      "org": "Mozilla",
+      "name": "Protocol",
+      "note": "Mozilla Protocol — the design system for Mozilla branded websites."
+    },
+    {
+      "pkg": "react95",
+      "slug": "react95",
+      "org": "React95",
+      "name": "React95",
+      "note": "React95 — a component library inspired by the Windows 95 interface."
+    },
+    {
+      "pkg": "@sproutsocial/seeds-color",
+      "slug": "seeds",
+      "org": "Sprout Social",
+      "name": "Seeds",
+      "note": "Sprout Social Seeds — the colour foundation of the Sprout brand."
+    },
+    {
+      "pkg": "@stackoverflow/stacks",
+      "slug": "stacks",
+      "org": "Stack Overflow",
+      "name": "Stacks",
+      "note": "Stack Overflow Stacks — consistent experiences across Stack Overflow."
+    },
+    {
+      "pkg": "vanilla-framework",
+      "slug": "vanilla",
+      "org": "Ubuntu",
+      "name": "Vanilla",
+      "note": "Canonical Vanilla — an extensible Sass CSS framework by the Ubuntu Web Team."
+    },
+    {
+      "pkg": "daisyui",
+      "slug": "daisyui",
+      "org": "daisyUI",
+      "name": "daisyUI"
+    },
+    {
+      "pkg": "@heroui/theme",
+      "slug": "heroui",
+      "org": "HeroUI",
+      "name": "HeroUI"
+    },
+    {
+      "pkg": "@jetbrains/ring-ui",
+      "slug": "jetbrains",
+      "org": "JetBrains",
+      "name": "JetBrains Ring UI"
+    },
+    {
+      "pkg": "tdesign-react",
+      "slug": "tencent",
+      "org": "Tencent",
+      "name": "Tencent TDesign"
+    },
+    {
+      "pkg": "@govtechsg/sgds",
+      "slug": "singapore",
+      "org": "Singapore",
+      "name": "Singapore Government Design System"
+    },
+    {
+      "pkg": "@telefonica/mistica",
+      "slug": "telefonica",
+      "org": "Telefónica",
+      "name": "Telefónica Mística"
+    },
+    {
+      "pkg": "foundation-sites",
+      "slug": "foundation",
+      "org": "Foundation",
+      "name": "Foundation"
+    },
+    {
+      "pkg": "@grafana/ui",
+      "slug": "grafana",
+      "org": "Grafana",
+      "name": "Grafana UI"
+    },
+    {
+      "pkg": "@buildit/gravity-ui-web",
+      "slug": "buildit",
+      "org": "Buildit",
+      "name": "Buildit Gravity"
+    }
+  ]
+}

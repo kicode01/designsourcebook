@@ -1,0 +1,515 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0a3069",
+  "muted": "#0a3069",
+  "brand": "#fd8c73",
+  "border": "color-mix(in srgb, #0a3069 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "colors-active-border",
+      "value": "#fd8c73"
+    },
+    {
+      "name": "colors-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-border",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "colors-focus-foreground",
+      "value": "#1f2328"
+    },
+    {
+      "name": "colors-hover-background",
+      "value": "#1a7f37"
+    },
+    {
+      "name": "colors-secondary-background",
+      "value": "#ebecf0"
+    },
+    {
+      "name": "colors-secondary-foreground",
+      "value": "#24292f"
+    },
+    {
+      "name": "colors-secondary-hover-background",
+      "value": "#f3f4f6"
+    },
+    {
+      "name": "colors-error-foreground",
+      "value": "#cf222e"
+    },
+    {
+      "name": "colors-info-foreground",
+      "value": "#57606a"
+    },
+    {
+      "name": "colors-warning-foreground",
+      "value": "#7d4e00"
+    },
+    {
+      "name": "colors-error",
+      "value": "#a40e26"
+    },
+    {
+      "name": "colors-list-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-find-match-background",
+      "value": "#bf8700"
+    },
+    {
+      "name": "colors-tabs-background",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "colors-tabs-border",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "colors-focus-border",
+      "value": "#0969da"
+    },
+    {
+      "name": "colors-focus-background",
+      "value": "#ddf4ff"
+    },
+    {
+      "name": "colors-inactive-focus-background",
+      "value": "#ddf4ff"
+    },
+    {
+      "name": "colors-debugging-background",
+      "value": "#cf222e"
+    },
+    {
+      "name": "colors-no-folder-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-remote-background",
+      "value": "#eaeef2"
+    },
+    {
+      "name": "colors-text-foreground",
+      "value": "#0a3069"
+    },
+    {
+      "name": "colors-active-border-top",
+      "value": "#fd8c73"
+    },
+    {
+      "name": "colors-inactive-background",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "colors-unfocused-active-border",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-unfocused-active-border-top",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "colors-button-background",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "colors-button-hover-background",
+      "value": "#f3f4f6"
+    },
+    {
+      "name": "settings-background",
+      "value": "#cf222e"
+    },
+    {
+      "name": "colors-last-pinned-border",
+      "value": "#505050"
+    },
+    {
+      "name": "active-border",
+      "value": "#fd8c73"
+    },
+    {
+      "name": "background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "border",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "focus-foreground",
+      "value": "#1f2328"
+    },
+    {
+      "name": "hover-background",
+      "value": "#1a7f37"
+    },
+    {
+      "name": "secondary-background",
+      "value": "#ebecf0"
+    },
+    {
+      "name": "secondary-foreground",
+      "value": "#24292f"
+    },
+    {
+      "name": "secondary-hover-background",
+      "value": "#f3f4f6"
+    },
+    {
+      "name": "error-foreground",
+      "value": "#cf222e"
+    },
+    {
+      "name": "info-foreground",
+      "value": "#57606a"
+    },
+    {
+      "name": "warning-foreground",
+      "value": "#7d4e00"
+    },
+    {
+      "name": "error",
+      "value": "#a40e26"
+    },
+    {
+      "name": "list-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "find-match-background",
+      "value": "#bf8700"
+    },
+    {
+      "name": "tabs-background",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "tabs-border",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "focus-border",
+      "value": "#0969da"
+    },
+    {
+      "name": "focus-background",
+      "value": "#ddf4ff"
+    },
+    {
+      "name": "inactive-focus-background",
+      "value": "#ddf4ff"
+    },
+    {
+      "name": "debugging-background",
+      "value": "#cf222e"
+    },
+    {
+      "name": "no-folder-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "remote-background",
+      "value": "#eaeef2"
+    },
+    {
+      "name": "text-foreground",
+      "value": "#0a3069"
+    },
+    {
+      "name": "active-border-top",
+      "value": "#fd8c73"
+    },
+    {
+      "name": "inactive-background",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "unfocused-active-border",
+      "value": "#ffffff"
+    },
+    {
+      "name": "unfocused-active-border-top",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "button-background",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "button-hover-background",
+      "value": "#f3f4f6"
+    },
+    {
+      "name": "last-pinned-border",
+      "value": "#505050"
+    },
+    {
+      "name": "mantine-color-text",
+      "value": "#000"
+    },
+    {
+      "name": "value",
+      "value": "#fff"
+    },
+    {
+      "name": "colors-breakpoint-foreground",
+      "value": "#cf222e"
+    },
+    {
+      "name": "colors-foreground6",
+      "value": "#8250df"
+    },
+    {
+      "name": "colors-highlight-foreground",
+      "value": "#0969da"
+    },
+    {
+      "name": "colors-enumerator-foreground",
+      "value": "#953800"
+    },
+    {
+      "name": "colors-namespace-foreground",
+      "value": "#a40e26"
+    },
+    {
+      "name": "colors-unit-foreground",
+      "value": "#0550ae"
+    },
+    {
+      "name": "colors-ansi-cyan",
+      "value": "#1b7c83"
+    },
+    {
+      "name": "source-foreground",
+      "value": "#9a6700"
+    },
+    {
+      "name": "param-foreground",
+      "value": "#656d76"
+    },
+    {
+      "name": "hover-foreground",
+      "value": "#1f2328"
+    },
+    {
+      "name": "enumerator-member-foreground",
+      "value": "#0550ae"
+    },
+    {
+      "name": "null-foreground",
+      "value": "#0550ae"
+    },
+    {
+      "name": "variable-foreground",
+      "value": "#953800"
+    },
+    {
+      "name": "ansi-green",
+      "value": "#116329"
+    },
+    {
+      "name": "mantine-color-dark-1",
+      "value": "#b8b8b8"
+    },
+    {
+      "name": "mantine-color-gray-3",
+      "value": "#dee2e6"
+    },
+    {
+      "name": "mantine-color-red-5",
+      "value": "#ff6b6b"
+    },
+    {
+      "name": "mantine-color-pink-7",
+      "value": "#d6336c"
+    },
+    {
+      "name": "mantine-color-grape-9",
+      "value": "#862e9c"
+    },
+    {
+      "name": "mantine-color-indigo-1",
+      "value": "#dbe4ff"
+    },
+    {
+      "name": "mantine-color-blue-3",
+      "value": "#74c0fc"
+    },
+    {
+      "name": "mantine-color-cyan-5",
+      "value": "#22b8cf"
+    },
+    {
+      "name": "mantine-color-teal-7",
+      "value": "#0ca678"
+    },
+    {
+      "name": "mantine-color-green-9",
+      "value": "#2b8a3e"
+    },
+    {
+      "name": "mantine-color-yellow-1",
+      "value": "#fff3bf"
+    },
+    {
+      "name": "mantine-color-orange-3",
+      "value": "#ffc078"
+    },
+    {
+      "name": "mantine-color-red-light-hover",
+      "value": "rgba(141, 29, 29, 1)"
+    },
+    {
+      "name": "primary",
+      "value": "#fd8c73"
+    }
+  ],
+  "type": [
+    {
+      "name": "docs-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "input-font-family",
+      "fontFamily": "var(--mantine-font-family-monospace)",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-size-xs",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(0.75rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(0.875rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-size-md",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1.125rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-size-xl",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1.25rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-h1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(2.125rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-h2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1.625rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-h3-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1.375rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-h4-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1.125rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-h5-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-h6-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(0.875rem * var(--mantine-scale))",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-family-monospace",
+      "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+      "px": 16
+    },
+    {
+      "name": "mantine-font-family-headings",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,\n    Apple Color Emoji, Segoe UI Emoji",
+      "px": 16
+    },
+    {
+      "name": "mobile-month-view-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(6px, 3.5cqw, 22px)",
+      "px": 16
+    },
+    {
+      "name": "year-view-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(var(--mantine-font-size-xs) - 2px)",
+      "px": 16
+    },
+    {
+      "name": "switch-label-font-size-xl",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "switch-label-font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "switch-label-font-size-md",
+      "fontFamily": "system-ui",
+      "fontSize": "7px",
+      "px": 7
+    },
+    {
+      "name": "switch-label-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "6px",
+      "px": 6
+    },
+    {
+      "name": "switch-label-font-size-xs",
+      "fontFamily": "system-ui",
+      "fontSize": "5px",
+      "px": 5
+    }
+  ],
+  "components": [],
+  "overview": "Mantine Mantine — tokens read from https://github.com/mantinedev/mantine.",
+  "dos": ""
+}

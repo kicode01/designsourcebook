@@ -1,0 +1,41 @@
+{
+  "name": "kolibri",
+  "displayName": "KoliBri",
+  "description": "KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.",
+  "style": "KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.",
+  "category": "KoliBri",
+  "org": "KoliBri",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "koli-bri"
+  ],
+  "homepage": "https://github.com/learningequality/kolibri-design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/learningequality/kolibri-design-system — 6 token files, 480 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/learningequality/kolibri-design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 7,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

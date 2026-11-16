@@ -1,0 +1,462 @@
+{
+  "canvas": "#1F1F21",
+  "surface": "#1F1F21",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#CFE1FD",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "color-text-disabled",
+      "value": "#1F1F21"
+    },
+    {
+      "name": "color-background-accent-lime-bolder-hovered",
+      "value": "#BDE97C"
+    },
+    {
+      "name": "color-background-accent-orange-subtlest-hovered",
+      "value": "#7A3B00"
+    },
+    {
+      "name": "color-background-accent-yellow-subtler-hovered",
+      "value": "#7F5F01"
+    },
+    {
+      "name": "color-background-accent-green-subtle-hovered",
+      "value": "#164B35"
+    },
+    {
+      "name": "color-background-accent-teal-bolder-hovered",
+      "value": "#B1E4F7"
+    },
+    {
+      "name": "color-background-accent-purple-subtlest-hovered",
+      "value": "#673286"
+    },
+    {
+      "name": "color-background-accent-magenta-subtler-hovered",
+      "value": "#943D73"
+    },
+    {
+      "name": "color-background-accent-gray-subtle-hovered",
+      "value": "#242528"
+    },
+    {
+      "name": "color-background-neutral-bold-default",
+      "value": "#BFC1C4"
+    },
+    {
+      "name": "color-background-brand-boldest-default",
+      "value": "#CFE1FD"
+    },
+    {
+      "name": "color-background-warning-default-pressed",
+      "value": "#693200"
+    },
+    {
+      "name": "color-background-success-bold-default",
+      "value": "#DCFFF1"
+    },
+    {
+      "name": "color-background-information-default-pressed",
+      "value": "#123263"
+    },
+    {
+      "name": "color-border-accent-yellow-subtle",
+      "value": "#7EE2B8"
+    },
+    {
+      "name": "color-border-focused",
+      "value": "#A9ABAF"
+    },
+    {
+      "name": "color-border-bold",
+      "value": "#E2E3E4"
+    },
+    {
+      "name": "color-text-accent-blue-bolder",
+      "value": "#EED7FC"
+    },
+    {
+      "name": "color-text-code-operators",
+      "value": "#B3DF72"
+    },
+    {
+      "name": "color-text-information-bolder",
+      "value": "#BFC1C4"
+    },
+    {
+      "name": "color-icon-warning-inverse",
+      "value": "#7EE2B8"
+    },
+    {
+      "name": "color-chart-warning-bold-default",
+      "value": "#FCE4A6"
+    },
+    {
+      "name": "color-rovo-border-blue",
+      "value": "#BF63F3"
+    },
+    {
+      "name": "color-palette-neutral100",
+      "value": "#F0F1F2"
+    },
+    {
+      "name": "color-palette-dark-neutral250",
+      "value": "#303134"
+    },
+    {
+      "name": "dark-future-color-background-disabled",
+      "value": "#B3DF72"
+    },
+    {
+      "name": "dark-increased-contrast-color-background-code-gutter",
+      "value": "#242528"
+    },
+    {
+      "name": "dark-increased-contrast-color-background-brand-bold-",
+      "value": "#E9F2FE"
+    },
+    {
+      "name": "dark-increased-contrast-color-background-success-sub",
+      "value": "#37471F"
+    },
+    {
+      "name": "dark-increased-contrast-color-border-accent-yellow-s",
+      "value": "#7F5F01"
+    },
+    {
+      "name": "dark-increased-contrast-color-border-focused",
+      "value": "#8FB8F6"
+    },
+    {
+      "name": "dark-increased-contrast-color-border-bold",
+      "value": "#A9ABAF"
+    },
+    {
+      "name": "dark-increased-contrast-color-text-accent-blue-bolde",
+      "value": "#E9F2FE"
+    },
+    {
+      "name": "dark-increased-contrast-color-text-code-operators",
+      "value": "#CECFD2"
+    },
+    {
+      "name": "dark-increased-contrast-color-text-information",
+      "value": "#CFE1FD"
+    },
+    {
+      "name": "dark-increased-contrast-color-icon-danger",
+      "value": "#F87168"
+    },
+    {
+      "name": "dark-increased-contrast-color-chart-danger-bold",
+      "value": "#FFB8B2"
+    },
+    {
+      "name": "dark-increased-contrast-color-rovo-border-saffron",
+      "value": "#FCA700"
+    },
+    {
+      "name": "dark-color-background-accent-lime-subtlest",
+      "value": "#28311B"
+    },
+    {
+      "name": "dark-color-background-accent-red-subtler",
+      "value": "#5D1F1A"
+    },
+    {
+      "name": "dark-color-background-accent-orange-subtle",
+      "value": "#9E4C00"
+    },
+    {
+      "name": "dark-color-background-accent-yellow-bolder",
+      "value": "#DDB30E"
+    },
+    {
+      "name": "dark-color-background-accent-teal-subtlest",
+      "value": "#1E3137"
+    },
+    {
+      "name": "dark-color-background-accent-blue-subtler",
+      "value": "#123263"
+    },
+    {
+      "name": "dark-color-background-accent-purple-subtle",
+      "value": "#803FA5"
+    },
+    {
+      "name": "dark-color-background-accent-magenta-bolder",
+      "value": "#E774BB"
+    },
+    {
+      "name": "dark-color-background-code-added-highlight",
+      "value": "#1C3329"
+    },
+    {
+      "name": "dark-color-background-selected-pressed",
+      "value": "#1558BC"
+    },
+    {
+      "name": "dark-color-background-danger-pressed",
+      "value": "#872821"
+    },
+    {
+      "name": "dark-color-background-warning-bold",
+      "value": "#FBC828"
+    },
+    {
+      "name": "dark-color-background-discovery-pressed",
+      "value": "#673286"
+    },
+    {
+      "name": "dark-color-background-information-bold",
+      "value": "#669DF1"
+    },
+    {
+      "name": "dark-color-border-accent-blue",
+      "value": "#4688EC"
+    },
+    {
+      "name": "dark-color-border-danger",
+      "value": "#F15B50"
+    },
+    {
+      "name": "dark-color-text-accent-red-bolder",
+      "value": "#FFD5D2"
+    },
+    {
+      "name": "dark-color-text-accent-gray",
+      "value": "#A9ABAF"
+    },
+    {
+      "name": "dark-color-text-brand",
+      "value": "#669DF1"
+    },
+    {
+      "name": "dark-color-icon-accent-red",
+      "value": "#E2483D"
+    },
+    {
+      "name": "dark-color-link",
+      "value": "#669DF1"
+    },
+    {
+      "name": "dark-color-chart-warning-bold-hovered",
+      "value": "#FCE4A6"
+    },
+    {
+      "name": "dark-color-rovo-border-purple",
+      "value": "#BF63F3"
+    },
+    {
+      "name": "color-icon-default",
+      "value": "#B3DF72"
+    },
+    {
+      "name": "color-chart-categorical-6-default",
+      "value": "#EED7FC"
+    },
+    {
+      "name": "color-chart-red-boldest-default",
+      "value": "#FFD5D2"
+    },
+    {
+      "name": "color-chart-green-bolder-default",
+      "value": "#DCFFF1"
+    },
+    {
+      "name": "color-chart-purple-bold-default",
+      "value": "#EED7FC"
+    },
+    {
+      "name": "color-chart-gray-boldest-default",
+      "value": "#CECFD2"
+    },
+    {
+      "name": "color-palette-r400",
+      "value": "#BF2600"
+    },
+    {
+      "name": "color-palette-g500",
+      "value": "#E6FCFF"
+    },
+    {
+      "name": "color-palette-p75",
+      "value": "#998DD9"
+    },
+    {
+      "name": "color-palette-n100",
+      "value": "#6B778C"
+    },
+    {
+      "name": "color-palette-dn70",
+      "value": "#455166"
+    },
+    {
+      "name": "color-palette-lime600",
+      "value": "#5B7F24"
+    },
+    {
+      "name": "color-palette-orange200",
+      "value": "#FBC828"
+    },
+    {
+      "name": "color-palette-yellow800",
+      "value": "#533F04"
+    },
+    {
+      "name": "color-palette-teal400",
+      "value": "#42B2D7"
+    },
+    {
+      "name": "color-palette-blue1000",
+      "value": "#F8EEFE"
+    },
+    {
+      "name": "color-palette-magenta600",
+      "value": "#AE4787"
+    },
+    {
+      "name": "color-palette-green250",
+      "value": "#7EE2B8"
+    },
+    {
+      "name": "dark-increased-contrast-color-icon-discovery",
+      "value": "#C97CF4"
+    },
+    {
+      "name": "dark-increased-contrast-color-chart-categorical-7-ho",
+      "value": "#6CC3E0"
+    },
+    {
+      "name": "dark-increased-contrast-color-chart-orange-bold-hove",
+      "value": "#FCE4A6"
+    },
+    {
+      "name": "dark-increased-contrast-color-chart-green-boldest-ho",
+      "value": "#BAF3DB"
+    },
+    {
+      "name": "dark-increased-contrast-color-chart-purple-bolder-ho",
+      "value": "#F8EEFE"
+    },
+    {
+      "name": "dark-increased-contrast-color-chart-discovery-hovere",
+      "value": "#C97CF4"
+    },
+    {
+      "name": "dark-color-chart-categorical-2-hovered",
+      "value": "#B3DF72"
+    },
+    {
+      "name": "dark-color-chart-lime-bolder-hovered",
+      "value": "#B3DF72"
+    },
+    {
+      "name": "dark-color-chart-yellow-bold-hovered",
+      "value": "#DDB30E"
+    },
+    {
+      "name": "dark-color-chart-teal-boldest-hovered",
+      "value": "#C6EDFB"
+    },
+    {
+      "name": "dark-color-chart-magenta-bolder-hovered",
+      "value": "#E774BB"
+    },
+    {
+      "name": "primary",
+      "value": "#CFE1FD"
+    }
+  ],
+  "type": [
+    {
+      "name": "typography-font-size-font-size36",
+      "fontFamily": "system-ui",
+      "fontSize": "48px",
+      "px": 48
+    },
+    {
+      "name": "typography-font-size-font-size32",
+      "fontFamily": "system-ui",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
+      "name": "typography-font-size-legacy-font-size29",
+      "fontFamily": "system-ui",
+      "fontSize": "35px",
+      "px": 35
+    },
+    {
+      "name": "typography-font-size-font-size28",
+      "fontFamily": "system-ui",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "typography-font-size-legacy-font-size11",
+      "fontFamily": "system-ui",
+      "fontSize": "29px",
+      "px": 29
+    },
+    {
+      "name": "typography-font-size-font-size24",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "typography-font-size-font-size20",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "typography-font-size-font-size16",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "atlassian-typography-finesse-family",
+      "fontFamily": "FontFamilyWebSansRefreshed",
+      "px": 16
+    },
+    {
+      "name": "atlassian-typography-family",
+      "fontFamily": "FontFamilyWebSansRefreshed",
+      "px": 16
+    },
+    {
+      "name": "unsafe-typography-family",
+      "fontFamily": "var(--ds-dynamic-font-family, \\",
+      "px": 16
+    },
+    {
+      "name": "typography-font-size-font-size14",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "typography-font-size-font-size12",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "typography-font-size-font-size-code",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    }
+  ],
+  "components": [],
+  "overview": "Atlassian Design System — tokens behind Jira and Confluence.",
+  "dos": ""
+}

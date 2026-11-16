@@ -1,0 +1,423 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#f5f7ff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-v-50",
+      "value": "#F5F7FF"
+    },
+    {
+      "name": "primary-v-100",
+      "value": "#D9E1FD"
+    },
+    {
+      "name": "primary-v-200",
+      "value": "#B4C3FB"
+    },
+    {
+      "name": "primary-v-300",
+      "value": "#8EA4F9"
+    },
+    {
+      "name": "primary-v-400",
+      "value": "#6986F7"
+    },
+    {
+      "name": "primary-v-500",
+      "value": "#4368F5"
+    },
+    {
+      "name": "primary-v-600",
+      "value": "#2547F3"
+    },
+    {
+      "name": "secondary-v-50",
+      "value": "#FFFDF2"
+    },
+    {
+      "name": "secondary-v-100",
+      "value": "#FFF5CC"
+    },
+    {
+      "name": "secondary-v-200",
+      "value": "#FFEA99"
+    },
+    {
+      "name": "secondary-v-300",
+      "value": "#FFE066"
+    },
+    {
+      "name": "secondary-v-400",
+      "value": "#FFD533"
+    },
+    {
+      "name": "secondary-v-500",
+      "value": "#FFCB00"
+    },
+    {
+      "name": "secondary-v-600",
+      "value": "#E5B700"
+    },
+    {
+      "name": "brand-primary-v50",
+      "value": "#f5f7ff"
+    },
+    {
+      "name": "brand-primary-v100",
+      "value": "#d9e1fd"
+    },
+    {
+      "name": "brand-primary-v200",
+      "value": "#b4c3fb"
+    },
+    {
+      "name": "brand-primary-v300",
+      "value": "#8ea4f9"
+    },
+    {
+      "name": "brand-primary-v400",
+      "value": "#6986f7"
+    },
+    {
+      "name": "brand-primary-v500",
+      "value": "#4368f5"
+    },
+    {
+      "name": "brand-primary-v600",
+      "value": "#2547f3"
+    },
+    {
+      "name": "brand-secondary-v50",
+      "value": "#fffdf2"
+    },
+    {
+      "name": "brand-secondary-v100",
+      "value": "#fff5cc"
+    },
+    {
+      "name": "brand-secondary-v200",
+      "value": "#ffea99"
+    },
+    {
+      "name": "brand-secondary-v300",
+      "value": "#ffe066"
+    },
+    {
+      "name": "brand-secondary-v400",
+      "value": "#ffd533"
+    },
+    {
+      "name": "brand-secondary-v500",
+      "value": "#ffcb00"
+    },
+    {
+      "name": "brand-secondary-v600",
+      "value": "#e5b700"
+    },
+    {
+      "name": "tokens-primary",
+      "value": "#4368f5"
+    },
+    {
+      "name": "tokens-primary-dark",
+      "value": "#2547f3"
+    },
+    {
+      "name": "tokens-secondary",
+      "value": "#ffcb00"
+    },
+    {
+      "name": "tokens-secondary-dark",
+      "value": "#e5b700"
+    },
+    {
+      "name": "tokens-link",
+      "value": "#4368f5"
+    },
+    {
+      "name": "tokens-focus-outline",
+      "value": "#33acf5"
+    },
+    {
+      "name": "tokens-text",
+      "value": "#000000"
+    },
+    {
+      "name": "tokens-text-disabled",
+      "value": "#cccccc"
+    },
+    {
+      "name": "tokens-text-inverted",
+      "value": "#ffffff"
+    },
+    {
+      "name": "tokens-surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "tokens-error",
+      "value": "#d21e00"
+    },
+    {
+      "name": "tokens-success",
+      "value": "#00992e"
+    },
+    {
+      "name": "tokens-warning",
+      "value": "#ffcb00"
+    },
+    {
+      "name": "secondary-text-color",
+      "value": "#666666"
+    },
+    {
+      "name": "md-red",
+      "value": "#f44336"
+    },
+    {
+      "name": "md-red-600",
+      "value": "#e53935"
+    },
+    {
+      "name": "md-pink-200",
+      "value": "#f48fb1"
+    },
+    {
+      "name": "md-pink-900",
+      "value": "#880e4f"
+    },
+    {
+      "name": "md-purple-500",
+      "value": "#9c27b0"
+    },
+    {
+      "name": "md-deep-purple-100",
+      "value": "#d1c4e9"
+    },
+    {
+      "name": "md-deep-purple-800",
+      "value": "#4527a0"
+    },
+    {
+      "name": "md-indigo-400",
+      "value": "#5c6bc0"
+    },
+    {
+      "name": "md-blue-50",
+      "value": "#e3f2fd"
+    },
+    {
+      "name": "md-blue-700",
+      "value": "#1976d2"
+    },
+    {
+      "name": "md-light-blue-300",
+      "value": "#4fc3f7"
+    },
+    {
+      "name": "md-cyan",
+      "value": "#00bcd4"
+    },
+    {
+      "name": "md-cyan-600",
+      "value": "#00acc1"
+    },
+    {
+      "name": "md-teal-200",
+      "value": "#80cbc4"
+    },
+    {
+      "name": "md-teal-900",
+      "value": "#004d40"
+    },
+    {
+      "name": "md-green-500",
+      "value": "#4caf50"
+    },
+    {
+      "name": "md-light-green-100",
+      "value": "#dcedc8"
+    },
+    {
+      "name": "md-light-green-800",
+      "value": "#558b2f"
+    },
+    {
+      "name": "md-lime-400",
+      "value": "#d4e157"
+    },
+    {
+      "name": "md-yellow-50",
+      "value": "#fffde7"
+    },
+    {
+      "name": "md-yellow-700",
+      "value": "#fbc02d"
+    },
+    {
+      "name": "md-amber-300",
+      "value": "#ffd54f"
+    },
+    {
+      "name": "md-orange",
+      "value": "#ff9800"
+    },
+    {
+      "name": "md-orange-600",
+      "value": "#fb8c00"
+    },
+    {
+      "name": "md-deep-orange-200",
+      "value": "#ffab91"
+    },
+    {
+      "name": "md-deep-orange-900",
+      "value": "#bf360c"
+    },
+    {
+      "name": "md-brown-500",
+      "value": "#795548"
+    },
+    {
+      "name": "md-grey-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "md-grey-800",
+      "value": "#424242"
+    },
+    {
+      "name": "md-blue-grey-400",
+      "value": "#78909c"
+    },
+    {
+      "name": "md-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "v-600",
+      "value": "#2547F3"
+    },
+    {
+      "name": "red-v-500",
+      "value": "#FF4324"
+    },
+    {
+      "name": "pink-v-500",
+      "value": "#FF7F8D"
+    },
+    {
+      "name": "blue-v-500",
+      "value": "#4368F5"
+    },
+    {
+      "name": "lightblue-v-500",
+      "value": "#0097F2"
+    },
+    {
+      "name": "darkgreen-v-500",
+      "value": "#005633"
+    },
+    {
+      "name": "green-v-500",
+      "value": "#00C73C"
+    },
+    {
+      "name": "orange-v-500",
+      "value": "#FF7600"
+    },
+    {
+      "name": "yellow-v-500",
+      "value": "#FFCB00"
+    },
+    {
+      "name": "grey-v-700",
+      "value": "#666666"
+    },
+    {
+      "name": "palette-red-v50",
+      "value": "#ffece9"
+    },
+    {
+      "name": "palette-pink-v50",
+      "value": "#fff2f3"
+    },
+    {
+      "name": "palette-blue-v50",
+      "value": "#f5f7ff"
+    },
+    {
+      "name": "palette-lightblue-v50",
+      "value": "#e5f5fd"
+    },
+    {
+      "name": "palette-darkgreen-v50",
+      "value": "#e5eeeb"
+    },
+    {
+      "name": "palette-green-v50",
+      "value": "#e5f9eb"
+    },
+    {
+      "name": "palette-orange-v50",
+      "value": "#fff1e5"
+    },
+    {
+      "name": "primary",
+      "value": "#f5f7ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "ui-input-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(15px) !default",
+      "px": 16
+    },
+    {
+      "name": "ui-input-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(16px) !default",
+      "px": 16
+    },
+    {
+      "name": "ui-input-feedback-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(14px) !default",
+      "px": 16
+    },
+    {
+      "name": "ui-button-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(14px) !default",
+      "px": 16
+    },
+    {
+      "name": "ui-button-font-size-small",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(14px) !default",
+      "px": 16
+    },
+    {
+      "name": "ui-button-font-size-large",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(16px) !default",
+      "px": 16
+    },
+    {
+      "name": "ui-dropdown-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "rem(15px) !default",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "KoliBri KoliBri — tokens read from https://github.com/learningequality/kolibri-design-system.",
+  "dos": ""
+}

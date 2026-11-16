@@ -1,0 +1,122 @@
+{
+  "canvas": "#201d1d",
+  "surface": "#201d1d",
+  "text": "#f7f7f8",
+  "muted": "#6e6e73",
+  "brand": "#007aff",
+  "border": "#9a9898",
+  "radius": "4px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-opencode-dark",
+      "value": "#201d1d"
+    },
+    {
+      "name": "primary-opencode-light",
+      "value": "#fdfcfc"
+    },
+    {
+      "name": "primary-mid-gray",
+      "value": "#9a9898"
+    },
+    {
+      "name": "secondary-dark-surface",
+      "value": "#302c2c"
+    },
+    {
+      "name": "secondary-border-gray",
+      "value": "#646262"
+    },
+    {
+      "name": "secondary-light-surface",
+      "value": "#f1eeee"
+    },
+    {
+      "name": "brand-accent-blue",
+      "value": "#007aff"
+    },
+    {
+      "name": "brand-accent-blue-hover",
+      "value": "#0056b3"
+    },
+    {
+      "name": "brand-accent-blue-active",
+      "value": "#004085"
+    },
+    {
+      "name": "status-danger-red",
+      "value": "#ff3b30"
+    },
+    {
+      "name": "status-danger-hover",
+      "value": "#d70015"
+    },
+    {
+      "name": "status-danger-active",
+      "value": "#a50011"
+    },
+    {
+      "name": "status-success-green",
+      "value": "#30d158"
+    },
+    {
+      "name": "status-warning-orange",
+      "value": "#ff9f0a"
+    },
+    {
+      "name": "status-warning-hover",
+      "value": "#cc7f08"
+    },
+    {
+      "name": "status-warning-active",
+      "value": "#995f06"
+    },
+    {
+      "name": "text-muted",
+      "value": "#6e6e73"
+    },
+    {
+      "name": "text-secondary",
+      "value": "#424245"
+    },
+    {
+      "name": "border-warm",
+      "value": "rgba(15, 0, 0, 0.12)"
+    },
+    {
+      "name": "border-tab",
+      "value": "#9a9898"
+    },
+    {
+      "name": "border-outline",
+      "value": "#646262"
+    },
+    {
+      "name": "primary",
+      "value": "#007aff"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#201d1d",
+      "textColor": "#fdfcfc",
+      "rounded": "4px",
+      "padding": "4px 20px"
+    },
+    {
+      "key": "input-email",
+      "kind": "input",
+      "backgroundColor": "#f8f7f7",
+      "textColor": "#201d1d",
+      "rounded": "6px",
+      "padding": "20px",
+      "border": "1px solid rgba(15, 0, 0, 0.12)"
+    }
+  ],
+  "overview": "OpenCode's website embodies a terminal-native, monospace-first aesthetic that reflects its identity as an open source AI coding agent. The entire visual system is built on a stark dark-on-light contrast using a near-black background (#201d1d) with warm off-white text (#fdfcfc). This isn't a generic dark theme -- it's a warm, slightly reddish-brown dark that feels like a sophisticated terminal emulator rather than a cold IDE. The warm undertone in both the darks and lights (notice the subtle red channel in #201d1d -- rgb(32, 29, 29)) creates a cohesive, lived-in quality.\n\nBerkeley Mono is the sole typeface, establishing an unapologetic monospace identity. Every element -- headings, body text, buttons, navigation -- shares this single font family, creating a unified \"everything is code\" philosophy. The heading at 38px bold with 1.50 line-height is generous and readable, while body text at…",
+  "dos": ""
+}

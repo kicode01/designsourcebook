@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Seeds
+description: "Sprout Social Seeds — the colour foundation of the Sprout brand."
+colors:
+  color-neutral-0: "#ffffff"
+  color-neutral-100: "#f3f4f4"
+  color-neutral-200: "#dee1e1"
+  color-neutral-300: "#c8cccc"
+  color-neutral-400: "#b0b6b7"
+  color-neutral-500: "#929a9b"
+  color-neutral-600: "#6e797a"
+  color-neutral-700: "#515e5f"
+  color-neutral-800: "#364141"
+  color-neutral-900: "#273333"
+  color-neutral-950: "#1d2525"
+  color-neutral-1000: "#162020"
+  color-neutral-1100: "#040404"
+  hex: "#ebf9eb"
+  rgb: "rgb(235, 249, 235)"
+  color-green-0: "#ebf9eb"
+  color-green-100: "#d7f4d7"
+  color-green-200: "#c2f2bd"
+  color-green-300: "#98e58e"
+  color-green-400: "#75dd66"
+  color-green-500: "#59cb59"
+  color-green-600: "#2bb656"
+  color-green-700: "#0ca750"
+  color-green-800: "#008b46"
+  color-green-900: "#006b40"
+  color-green-1000: "#08422f"
+  color-green-1100: "#002b20"
+  color-teal-0: "#e5f9f5"
+  color-teal-50: "#ccf1ea"
+  color-teal-100: "#cdf7ef"
+  color-teal-200: "#b3f2e6"
+  color-teal-300: "#7dead5"
+  color-teal-400: "#24e0c5"
+  color-teal-500: "#08c4b2"
+  color-teal-600: "#00a99c"
+  color-teal-700: "#0b968f"
+  color-teal-800: "#067c7c"
+  color-teal-900: "#026661"
+  color-teal-1000: "#083f3f"
+  color-teal-1100: "#002528"
+  color-aqua-0: "#d9fcfb"
+  color-aqua-100: "#c5f9f9"
+  color-aqua-200: "#a5f2f2"
+  color-aqua-300: "#76e5e2"
+  color-aqua-400: "#33d6e2"
+  color-aqua-500: "#17b8ce"
+  color-aqua-600: "#0797ae"
+  color-aqua-700: "#0b8599"
+  color-aqua-800: "#0f6e84"
+  color-aqua-900: "#035e73"
+  color-aqua-1000: "#083d4f"
+  color-aqua-1100: "#002838"
+  color-blue-0: "#e9f4ff"
+  color-blue-100: "#deebfe"
+  color-blue-200: "#c7dbf9"
+  color-blue-300: "#a1c2f8"
+  color-blue-400: "#679eff"
+  color-blue-500: "#3876e3"
+  color-blue-600: "#2b68d3"
+  color-blue-700: "#205bc3"
+  color-blue-800: "#1150aa"
+  color-blue-900: "#0c3f89"
+  color-blue-1000: "#0a2960"
+  color-blue-1100: "#001738"
+  color-purple-0: "#fff8ff"
+  color-purple-100: "#fff2ff"
+  color-purple-200: "#efdbff"
+  color-purple-300: "#dfcbff"
+  color-purple-400: "#d5a9ff"
+  color-purple-500: "#b984ff"
+  color-purple-600: "#ae63ff"
+  color-purple-700: "#9747ff"
+  color-purple-800: "#813ae4"
+  color-purple-900: "#6726c2"
+  color-purple-1000: "#411486"
+  color-purple-1100: "#231743"
+  color-magenta-0: "#fef0ff"
+  color-magenta-100: "#f9e3fc"
+  color-magenta-200: "#f4c4f7"
+  color-magenta-300: "#edadf2"
+  color-magenta-350: "#ec9af1"
+  color-magenta-400: "#f282f5"
+  color-magenta-500: "#db61db"
+  color-magenta-600: "#c44eb9"
+  color-magenta-700: "#ac44a8"
+  color-magenta-800: "#8f3896"
+  color-magenta-900: "#6c2277"
+  color-magenta-1000: "#451551"
+  color-magenta-1100: "#29192d"
+  color-pink-0: "#ffe9f3"
+  primary: "#3876e3"
+---
+
+# Seeds
+
+## Overview
+
+Sprout Social Seeds — the colour foundation of the Sprout brand.
+
+Tokens were read from `@sproutsocial/seeds-color@2.5.0`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

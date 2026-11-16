@@ -1,0 +1,183 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#211922",
+  "muted": "#000000",
+  "brand": "#e60023",
+  "border": "#e5e5e0",
+  "radius": "16px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-pinterest-red",
+      "value": "#e60023"
+    },
+    {
+      "name": "brand-green-700",
+      "value": "#103c25"
+    },
+    {
+      "name": "brand-green-700-hover",
+      "value": "#0b2819"
+    },
+    {
+      "name": "text-plum-black",
+      "value": "#211922"
+    },
+    {
+      "name": "text-black",
+      "value": "#000000"
+    },
+    {
+      "name": "text-olive-gray",
+      "value": "#62625b"
+    },
+    {
+      "name": "text-warm-silver",
+      "value": "#91918c"
+    },
+    {
+      "name": "text-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "interactive-focus-blue",
+      "value": "#435ee5"
+    },
+    {
+      "name": "interactive-performance-purple",
+      "value": "#6845ab"
+    },
+    {
+      "name": "interactive-recommendation-purple",
+      "value": "#7e238b"
+    },
+    {
+      "name": "interactive-link-blue",
+      "value": "#2b48d4"
+    },
+    {
+      "name": "interactive-facebook-blue",
+      "value": "#0866ff"
+    },
+    {
+      "name": "interactive-pressed-blue",
+      "value": "#617bff"
+    },
+    {
+      "name": "border-sand-gray",
+      "value": "#e5e5e0"
+    },
+    {
+      "name": "border-warm-light",
+      "value": "#e0e0d9"
+    },
+    {
+      "name": "border-warm-wash",
+      "value": "hsla(60, 20%, 98%, 0.5)"
+    },
+    {
+      "name": "border-fog",
+      "value": "#f6f6f3"
+    },
+    {
+      "name": "border-disabled",
+      "value": "#c8c8c1"
+    },
+    {
+      "name": "border-hover-gray",
+      "value": "#bcbcb3"
+    },
+    {
+      "name": "border-dark-surface",
+      "value": "#33332e"
+    },
+    {
+      "name": "status-error-red",
+      "value": "#9e0a0a"
+    },
+    {
+      "name": "primary",
+      "value": "#e60023"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Pin Sans",
+      "fontSize": "70px",
+      "px": 70,
+      "fontWeight": 600
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Pin Sans",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 700,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Pin Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "caption-bold",
+      "fontFamily": "Pin Sans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Pin Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "Pin Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-red",
+      "kind": "button",
+      "backgroundColor": "#e60023",
+      "textColor": "#000000",
+      "rounded": "16px",
+      "padding": "6px 14px",
+      "border": "2px solid rgba(255, 255, 255, 0)"
+    },
+    {
+      "key": "button-secondary-sand",
+      "kind": "button",
+      "backgroundColor": "#e5e5e0",
+      "textColor": "#000000",
+      "rounded": "16px",
+      "padding": "6px 14px"
+    },
+    {
+      "key": "button-circular-action",
+      "kind": "button",
+      "backgroundColor": "#e0e0d9",
+      "textColor": "#211922"
+    },
+    {
+      "key": "button-ghost-transparent",
+      "kind": "button",
+      "textColor": "#000000"
+    }
+  ],
+  "overview": "Pinterest's website is a warm, inspiration-driven canvas that treats visual discovery like a lifestyle magazine. The design operates on a soft, slightly warm white background with Pinterest Red (#e60023) as the singular, bold brand accent. Unlike the cool blues of most tech platforms, Pinterest's neutral scale has a distinctly warm undertone — grays lean toward olive/sand (#91918c, #62625b, #e5e5e0) rather than cool steel, creating a cozy, craft-like atmosphere that invites browsing.\n\nThe typography uses Pin Sans — a custom proprietary font with a broad fallback stack including Japanese fonts, reflecting Pinterest's global reach. At display scale (70px, weight 600), Pin Sans creates large, inviting headlines. At smaller sizes, the system is compact: buttons at 12px, captions at 12–14px. The CSS variable naming system (--comp-*, --sema-*, --base-*) reveals a sophisticated three-tier…",
+  "dos": "Do\n- Use warm neutrals (#e5e5e0, #e0e0d9, #91918c) — the warm olive/sand tone is the identity\n- Apply Pinterest Red (#e60023) only for primary CTAs — it's bold and singular\n- Use Pin Sans exclusively — one font for everything\n- Apply generous border-radius: 16px for buttons/inputs, 20px+ for cards\n- Keep the masonry grid dense — content density is the value\n- Use warm badge backgrounds (hsla(60,20%,98%,.5)) for subtle warm washes\n- Use #211922 (plum black) for primary text — it's warmer than pure black\n\nDon't\n- Don't use cool gray neutrals — always warm/olive-toned\n- Don't use pure black (#000000) as primary text — use plum black (#211922)\n- Don't use pill-shaped buttons — 16px radius is rounded but not pill\n- Don't add heavy shadows — Pinterest is flat by design, depth from content\n- Don't use small border-radius (<12px) on cards — the generous rounding is core\n- Don't introduce…"
+}

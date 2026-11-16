@@ -1,0 +1,41 @@
+{
+  "name": "elastic",
+  "displayName": "Elastic UI",
+  "description": "Elastic Elastic UI — tokens read from https://github.com/elastic/eui.",
+  "style": "Elastic Elastic UI — tokens read from https://github.com/elastic/eui.",
+  "category": "Elastic",
+  "org": "Elastic",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "elastic"
+  ],
+  "homepage": "https://github.com/elastic/eui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/elastic/eui — 12 token files, 423 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/elastic/eui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 7,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

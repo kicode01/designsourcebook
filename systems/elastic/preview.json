@@ -1,0 +1,423 @@
+{
+  "canvas": "#000",
+  "surface": "#000",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#EE72A6",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "danger",
+      "value": "#000"
+    },
+    {
+      "name": "eui-table-actions-border-color",
+      "value": "#2B394F"
+    },
+    {
+      "name": "eui-button-color-disabled",
+      "value": "#1D2A3E"
+    },
+    {
+      "name": "eui-button-color-ghost-disabled",
+      "value": "#1D2A3E"
+    },
+    {
+      "name": "accent",
+      "value": "#EE72A6"
+    },
+    {
+      "name": "neutral",
+      "value": "#63C8E3"
+    },
+    {
+      "name": "text",
+      "value": "#8E9FBC"
+    },
+    {
+      "name": "eui-form-background-disabled-color",
+      "value": "#1D2A3E"
+    },
+    {
+      "name": "eui-form-border-opaque-color",
+      "value": "#5054af"
+    },
+    {
+      "name": "eui-form-border-disabled-color",
+      "value": "#485975"
+    },
+    {
+      "name": "eui-form-custom-control-border-color",
+      "value": "#485975"
+    },
+    {
+      "name": "eui-form-control-placeholder-text",
+      "value": "#8E9FBC"
+    },
+    {
+      "name": "eui-header-background-color",
+      "value": "#111C2C"
+    },
+    {
+      "name": "eui-header-border-color",
+      "value": "#2B394F"
+    },
+    {
+      "name": "eui-focus-background-color",
+      "value": "#243147"
+    },
+    {
+      "name": "eui-color-vis0-behind-text",
+      "value": "#16C5C0"
+    },
+    {
+      "name": "eui-color-vis2-behind-text",
+      "value": "#61A2FF"
+    },
+    {
+      "name": "eui-color-vis4-behind-text",
+      "value": "#EE72A6"
+    },
+    {
+      "name": "eui-color-vis6-behind-text",
+      "value": "#F6726A"
+    },
+    {
+      "name": "eui-color-vis8-behind-text",
+      "value": "#EAAE01"
+    },
+    {
+      "name": "eui-color-vis-text0",
+      "value": "#16C5C0"
+    },
+    {
+      "name": "eui-color-vis-text2",
+      "value": "#61A2FF"
+    },
+    {
+      "name": "eui-color-vis-text4",
+      "value": "#EE72A6"
+    },
+    {
+      "name": "eui-color-vis-text6",
+      "value": "#F6726A"
+    },
+    {
+      "name": "eui-color-vis-text8",
+      "value": "#EAAE01"
+    },
+    {
+      "name": "eui-color-vis-success0",
+      "value": "#24C292"
+    },
+    {
+      "name": "eui-color-vis-warning0",
+      "value": "#FCD883"
+    },
+    {
+      "name": "eui-color-vis-danger1",
+      "value": "#FFC9C2"
+    },
+    {
+      "name": "eui-color-severity-neutral",
+      "value": "#B5E5F2"
+    },
+    {
+      "name": "eui-color-severity-warning",
+      "value": "#FCD883"
+    },
+    {
+      "name": "eui-color-primary",
+      "value": "#61A2FF"
+    },
+    {
+      "name": "eui-color-accent-secondary",
+      "value": "#16C5C0"
+    },
+    {
+      "name": "eui-color-warning",
+      "value": "#FACB3D"
+    },
+    {
+      "name": "eui-page-background-color",
+      "value": "#07101F"
+    },
+    {
+      "name": "eui-text-subdued-color",
+      "value": "#98A8C3"
+    },
+    {
+      "name": "eui-color-primary-text",
+      "value": "#61A2FF"
+    },
+    {
+      "name": "eui-color-accent-text",
+      "value": "#EE72A6"
+    },
+    {
+      "name": "eui-color-danger-text",
+      "value": "#F6726A"
+    },
+    {
+      "name": "eui-link-color",
+      "value": "#61A2FF"
+    },
+    {
+      "name": "eui-color-text-accent",
+      "value": "#EE72A6"
+    },
+    {
+      "name": "eui-color-text-neutral",
+      "value": "#37B8DC"
+    },
+    {
+      "name": "eui-color-text-warning",
+      "value": "#FCD883"
+    },
+    {
+      "name": "eui-color-text-danger",
+      "value": "#F6726A"
+    },
+    {
+      "name": "eui-color-text-paragraph",
+      "value": "#B4C1D5"
+    },
+    {
+      "name": "eui-color-text-subdued",
+      "value": "#98A8C3"
+    },
+    {
+      "name": "eui-color-text-inverse",
+      "value": "#07101F"
+    },
+    {
+      "name": "eui-color-text-ink",
+      "value": "#07101F"
+    },
+    {
+      "name": "eui-color-background-base-accent",
+      "value": "#351725"
+    },
+    {
+      "name": "eui-color-background-base-neutral",
+      "value": "#002938"
+    },
+    {
+      "name": "eui-color-background-base-warning",
+      "value": "#2C2721"
+    },
+    {
+      "name": "eui-color-background-base-danger",
+      "value": "#351721"
+    },
+    {
+      "name": "eui-color-background-base-recessed",
+      "value": "#07101F"
+    },
+    {
+      "name": "eui-color-background-base-plain",
+      "value": "#111C2C"
+    },
+    {
+      "name": "eui-color-background-base-highlighted",
+      "value": "#172336"
+    },
+    {
+      "name": "eui-color-background-base-forms-control-disabled",
+      "value": "#2B394F"
+    },
+    {
+      "name": "eui-color-background-base-interactive-select",
+      "value": "#0D2F5E"
+    },
+    {
+      "name": "eui-color-background-light-primary",
+      "value": "#0D2F5E"
+    },
+    {
+      "name": "eui-color-background-light-accent-secondary",
+      "value": "#023436"
+    },
+    {
+      "name": "eui-color-background-light-success",
+      "value": "#0D362B"
+    },
+    {
+      "name": "eui-color-background-light-risk",
+      "value": "#4A221C"
+    },
+    {
+      "name": "eui-color-background-light-assistance",
+      "value": "#3E2C63"
+    },
+    {
+      "name": "eui-color-background-filled-primary",
+      "value": "#61A2FF"
+    },
+    {
+      "name": "eui-color-background-filled-accent-secondary",
+      "value": "#16C5C0"
+    },
+    {
+      "name": "eui-color-background-filled-success",
+      "value": "#24C292"
+    },
+    {
+      "name": "eui-color-background-filled-risk",
+      "value": "#FF995E"
+    },
+    {
+      "name": "eui-color-background-filled-assistance",
+      "value": "#C5A5FA"
+    },
+    {
+      "name": "eui-color-border-base-primary",
+      "value": "#123778"
+    },
+    {
+      "name": "eui-color-border-base-accent-secondary",
+      "value": "#044949"
+    },
+    {
+      "name": "eui-color-border-base-success",
+      "value": "#094837"
+    },
+    {
+      "name": "eui-color-border-base-risk",
+      "value": "#5E281A"
+    },
+    {
+      "name": "eui-color-border-base-assistance",
+      "value": "#3E2C63"
+    },
+    {
+      "name": "eui-color-border-base-subdued",
+      "value": "#2B394F"
+    },
+    {
+      "name": "eui-color-border-base-disabled",
+      "value": "#485975"
+    },
+    {
+      "name": "eui-color-border-interactive-forms-hover-plain",
+      "value": "#5A6D8C"
+    },
+    {
+      "name": "eui-color-border-interactive-forms-hover-danger",
+      "value": "#EE4C48"
+    },
+    {
+      "name": "eui-color-border-strong-accent",
+      "value": "#EE72A6"
+    },
+    {
+      "name": "eui-color-border-strong-neutral",
+      "value": "#37B8DC"
+    },
+    {
+      "name": "eui-color-border-strong-warning",
+      "value": "#FACB3D"
+    },
+    {
+      "name": "eui-color-border-strong-danger",
+      "value": "#F6726A"
+    },
+    {
+      "name": "eui-color-border-strong-text",
+      "value": "#8E9FBC"
+    },
+    {
+      "name": "secondary",
+      "value": "#000000"
+    },
+    {
+      "name": "eui-color-vis-base0",
+      "value": "#F6F9FC"
+    },
+    {
+      "name": "blue-grey100",
+      "value": "#485975"
+    },
+    {
+      "name": "blue140",
+      "value": "#0A2342"
+    },
+    {
+      "name": "teal90",
+      "value": "#008B87"
+    },
+    {
+      "name": "green40",
+      "value": "#88E3C3"
+    },
+    {
+      "name": "yellow130",
+      "value": "#3D3014"
+    },
+    {
+      "name": "red80",
+      "value": "#DA3737"
+    },
+    {
+      "name": "color",
+      "value": "#dd4040"
+    },
+    {
+      "name": "eui-color-vis-grey3",
+      "value": "#1D2A3E"
+    },
+    {
+      "name": "primary",
+      "value": "#EE72A6"
+    }
+  ],
+  "type": [
+    {
+      "name": "l",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "m",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "s",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "xs",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "xxs",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "datepicker-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8rem !default",
+      "px": 12.8
+    },
+    {
+      "name": "xxxs",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [],
+  "overview": "Elastic Elastic UI — tokens read from https://github.com/elastic/eui.",
+  "dos": ""
+}

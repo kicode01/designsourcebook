@@ -1,0 +1,41 @@
+{
+  "name": "ebay",
+  "displayName": "eBay Skin",
+  "description": "eBay eBay Skin — tokens read from https://github.com/eBay/evo-web.",
+  "style": "eBay eBay Skin — tokens read from https://github.com/eBay/evo-web.",
+  "category": "eBay",
+  "org": "eBay",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "e-bay"
+  ],
+  "homepage": "https://github.com/eBay/evo-web",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/eBay/evo-web — 6 token files, 312 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/eBay/evo-web"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 20,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

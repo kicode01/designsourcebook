@@ -1,0 +1,183 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#4b4b4b",
+  "muted": "#4b4b4b",
+  "brand": "#000000",
+  "border": "color-mix(in srgb, #4b4b4b 14%, transparent)",
+  "radius": "999px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-uber-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "interactive-hover-gray",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "interactive-hover-light",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "interactive-chip-gray",
+      "value": "#efefef"
+    },
+    {
+      "name": "text-body-gray",
+      "value": "#4b4b4b"
+    },
+    {
+      "name": "text-muted-gray",
+      "value": "#afafaf"
+    },
+    {
+      "name": "borders-border-black",
+      "value": "#000000"
+    },
+    {
+      "name": "shadows-shadow-light",
+      "value": "rgba(0, 0, 0, 0.12)"
+    },
+    {
+      "name": "shadows-shadow-medium",
+      "value": "rgba(0, 0, 0, 0.16)"
+    },
+    {
+      "name": "shadows-button-press",
+      "value": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "name": "link-default-link-blue",
+      "value": "#0000ee"
+    },
+    {
+      "name": "link-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "link-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary",
+      "value": "#000000"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "UberMove",
+      "fontSize": "52px",
+      "px": 52,
+      "fontWeight": 700,
+      "lineHeight": 1.23
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "UberMove",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "UberMove",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 700,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "UberMove",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "small-heading",
+      "fontFamily": "UberMove",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "nav-ui-large",
+      "fontFamily": "UberMove",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 500,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "UberMove",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "caption",
+      "fontFamily": "UberMove",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.14
+    },
+    {
+      "name": "micro",
+      "fontFamily": "UberMove",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.67
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-black",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "10px 12px"
+    },
+    {
+      "key": "button-secondary-white",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "10px 12px"
+    },
+    {
+      "key": "button-chip-filter",
+      "kind": "button",
+      "backgroundColor": "#efefef",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "14px 16px"
+    },
+    {
+      "key": "button-floating-action",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "14px",
+      "shadow": "rgba(0,0,0,0.16) 0px 2px 8px 0px"
+    }
+  ],
+  "overview": "Uber's design language is a masterclass in confident minimalism -- a black-and-white universe where every pixel serves a purpose and nothing decorates without earning its place. The entire experience is built on a stark duality: jet black (#000000) and pure white (#ffffff), with virtually no mid-tone grays diluting the message. This isn't the sterile minimalism of a startup that hasn't finished designing -- it's the deliberate restraint of a brand so established it can afford to whisper.\n\nThe signature typeface, UberMove, is a proprietary geometric sans-serif with a distinctly square, engineered quality. Headlines in UberMove Bold at 52px carry the weight of a billboard -- authoritative, direct, unapologetic. The companion face UberMoveText handles body copy and buttons with a slightly softer, more readable character at medium weight (500). Together, they create a typographic system…",
+  "dos": "Do\n- Use true black (#000000) and pure white (#ffffff) as the primary palette -- the stark contrast IS Uber\n- Use 999px border-radius for all buttons, chips, and pill-shaped navigation elements\n- Keep all headings in UberMove Bold (700) for billboard-level impact\n- Use whisper-soft shadows (0.12-0.16 opacity) for card elevation -- barely visible\n- Maintain the compact, information-dense layout style -- Uber prioritizes efficiency over airiness\n- Use warm, human-centric illustrations to soften the monochrome interface\n- Apply 8px radius for content cards and 12px for featured containers\n- Use UberMoveText at weight 500 for navigation and prominent UI text\n- Pair black primary buttons with white secondary buttons for dual-action layouts\n\nDon't\n- Don't introduce color into the UI chrome -- Uber's interface is strictly black, white, and gray\n- Don't use rounded corners less than 999px on…"
+}

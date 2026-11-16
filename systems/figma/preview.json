@@ -1,0 +1,155 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#000000",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "50px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-glass-black",
+      "value": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "name": "bg-glass-white",
+      "value": "rgba(255, 255, 255, 0.16)"
+    },
+    {
+      "name": "primary",
+      "value": "#000000"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "figmaSans",
+      "fontSize": "86px",
+      "px": 86,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.72px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "figmaSans",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "figmaSans",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 540,
+      "lineHeight": 1.35,
+      "letterSpacing": "-0.26px"
+    },
+    {
+      "name": "sub-heading-light",
+      "fontFamily": "figmaSans",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 340,
+      "lineHeight": 1.35,
+      "letterSpacing": "-0.26px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "figmaSans",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.45
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "figmaSans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 330,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.1px"
+    },
+    {
+      "name": "body-light",
+      "fontFamily": "figmaSans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 320,
+      "lineHeight": 1.45,
+      "letterSpacing": "-0.26px"
+    },
+    {
+      "name": "mono-label",
+      "fontFamily": "figmaSans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "0.54px"
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "figmaSans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 330,
+      "lineHeight": 1.4,
+      "letterSpacing": "-0.14px"
+    },
+    {
+      "name": "mono-small",
+      "fontFamily": "figmaSans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "0.6px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-black-solid",
+      "kind": "button",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "button-white-pill",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "50px",
+      "padding": "8px 18px 10px"
+    },
+    {
+      "key": "button-glass-dark",
+      "kind": "button",
+      "backgroundColor": "rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "button-glass-light",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0.16)"
+    }
+  ],
+  "overview": "Figma's interface is the design tool that designed itself — a masterclass in typographic sophistication where a custom variable font (figmaSans) modulates between razor-thin (weight 320) and bold (weight 700) with stops at unusual intermediates (330, 340, 450, 480, 540) that most type systems never explore. This granular weight control gives every text element a precisely calibrated visual weight, creating hierarchy through micro-differences rather than the blunt instrument of \"regular vs bold.\"\n\nThe page presents a fascinating duality: the interface chrome is strictly black-and-white (literally only #000000 and #ffffff detected as colors), while the hero section and product showcases explode with vibrant multi-color gradients — electric greens, bright yellows, deep purples, hot pinks. This separation means the design system itself is colorless, treating the product's colorful output as…",
+  "dos": "Do\n- Use figmaSans with precise variable weights (320–540) — the granular weight control IS the design\n- Keep the interface strictly black-and-white — color comes from product content only\n- Use pill (50px) and circular (50%) geometry for all interactive elements\n- Apply dashed 2px focus outlines — the signature accessibility pattern\n- Enable \"kern\" feature on all text\n- Use figmaMono in uppercase with positive letter-spacing for labels\n- Apply negative letter-spacing throughout (-0.1px to -1.72px)\n\nDon't\n- Don't add interface colors — the monochrome palette is absolute\n- Don't use standard font weights (400, 500, 600, 700) — use the variable font's unique stops (320, 330, 340, 450, 480, 540)\n- Don't use sharp corners on buttons — pill and circular geometry only\n- Don't use solid focus outlines — dashed is the signature\n- Don't increase body font weight above 450 — the light-weight…"
+}

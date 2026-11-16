@@ -1,0 +1,38 @@
+{
+  "name": "elevenlabs",
+  "displayName": "ElevenLabs",
+  "description": "Dark cinematic UI, audio-waveform aesthetics",
+  "style": "Dark cinematic UI, audio-waveform aesthetics",
+  "category": "AI & Machine Learning",
+  "theme": "light",
+  "tags": [
+    "dark",
+    "cinematic",
+    "ai",
+    "light"
+  ],
+  "homepage": "https://elevenlabs.io",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 20,
+    "typography": 15,
+    "components": 3
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

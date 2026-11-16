@@ -1,0 +1,427 @@
+{
+  "canvas": "#FFF",
+  "surface": "#FFF",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#999999",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "wp-preset-color-black",
+      "value": "#000000"
+    },
+    {
+      "name": "wp-preset-color-cyan-bluish-gray",
+      "value": "#abb8c3"
+    },
+    {
+      "name": "wp-preset-color-white",
+      "value": "#FFF"
+    },
+    {
+      "name": "wp-preset-color-pale-pink",
+      "value": "#f78da7"
+    },
+    {
+      "name": "wp-preset-color-vivid-red",
+      "value": "#cf2e2e"
+    },
+    {
+      "name": "wp-preset-color-luminous-vivid-orange",
+      "value": "#ff6900"
+    },
+    {
+      "name": "wp-preset-color-luminous-vivid-amber",
+      "value": "#fcb900"
+    },
+    {
+      "name": "wp-preset-color-light-green-cyan",
+      "value": "#7bdcb5"
+    },
+    {
+      "name": "wp-preset-color-vivid-green-cyan",
+      "value": "#00d084"
+    },
+    {
+      "name": "wp-preset-color-pale-cyan-blue",
+      "value": "#8ed1fc"
+    },
+    {
+      "name": "wp-preset-color-vivid-cyan-blue",
+      "value": "#0693e3"
+    },
+    {
+      "name": "wp-preset-color-vivid-purple",
+      "value": "#9b51e0"
+    },
+    {
+      "name": "wp-preset-color-accent",
+      "value": "#999999"
+    },
+    {
+      "name": "wp-preset-color-dark-gray",
+      "value": "#111"
+    },
+    {
+      "name": "wp-preset-color-light-gray",
+      "value": "#767676"
+    },
+    {
+      "name": "swiper-theme-color",
+      "value": "#000"
+    },
+    {
+      "name": "lightbox-ui-color-hover",
+      "value": "#fff"
+    },
+    {
+      "name": "n-tabs-color-accent-fallback",
+      "value": "#61ce70"
+    },
+    {
+      "name": "n-tabs-color-secondary-fallback",
+      "value": "#54595f"
+    },
+    {
+      "name": "n-tabs-border-color",
+      "value": "#d5d8dc"
+    },
+    {
+      "name": "n-tabs-title-color-hover",
+      "value": "#fff"
+    },
+    {
+      "name": "n-tabs-title-color-active",
+      "value": "#fff"
+    },
+    {
+      "name": "n-tabs-title-background-color",
+      "value": "#f1f2f3"
+    },
+    {
+      "name": "n-tabs-icon-color-active",
+      "value": "#fff"
+    },
+    {
+      "name": "n-accordion-border-color",
+      "value": "#d5d8dc"
+    },
+    {
+      "name": "n-accordion-title-normal-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-accordion-title-hover-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-accordion-title-active-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "divider-color",
+      "value": "#0c0d0e"
+    },
+    {
+      "name": "e-social-icon-icon-color",
+      "value": "#fff"
+    },
+    {
+      "name": "e-rating-icon-color",
+      "value": "#ccd6df"
+    },
+    {
+      "name": "e-rating-icon-marked-color",
+      "value": "#f0ad4e"
+    },
+    {
+      "name": "swiper-preloader-color",
+      "value": "#fff"
+    },
+    {
+      "name": "e-global-color-primary",
+      "value": "#FF0000"
+    },
+    {
+      "name": "e-global-color-secondary",
+      "value": "#FF0000"
+    },
+    {
+      "name": "e-global-color-text",
+      "value": "#FF0000"
+    },
+    {
+      "name": "e-global-color-accent",
+      "value": "#FF0000"
+    },
+    {
+      "name": "e-flip-box-view-framed-stacked-icon-color",
+      "value": "#fff"
+    },
+    {
+      "name": "e-testimonial-icon-color",
+      "value": "#a4c639"
+    },
+    {
+      "name": "scrolling-track-default-progress-color",
+      "value": "#61ce70"
+    },
+    {
+      "name": "scrolling-track-default-color",
+      "value": "#eee"
+    },
+    {
+      "name": "n-menu-title-color-normal",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-menu-title-color-active",
+      "value": "#58d0f5"
+    },
+    {
+      "name": "n-menu-title-hover-color-fallback",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-menu-title-color-hover",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-menu-toggle-icon-color",
+      "value": "#1f2124"
+    },
+    {
+      "name": "n-menu-dropdown-content-box-border-color",
+      "value": "#fff"
+    },
+    {
+      "name": "e-filter-normal-text-color",
+      "value": "#69727d"
+    },
+    {
+      "name": "e-filter-active-text-color",
+      "value": "#0c0d0e"
+    },
+    {
+      "name": "e-filter-hover-text-color",
+      "value": "#0c0d0e"
+    },
+    {
+      "name": "primary",
+      "value": "#999999"
+    }
+  ],
+  "type": [
+    {
+      "name": "wp-preset-font-size-x-large",
+      "fontFamily": "system-ui",
+      "fontSize": "42px",
+      "px": 42
+    },
+    {
+      "name": "e-global-typography-2d6a0b4-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "41px",
+      "px": 41
+    },
+    {
+      "name": "wp-preset-font-size-large",
+      "fontFamily": "system-ui",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
+      "name": "e-global-typography-a5a658e-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "wp-preset-font-size-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "n-accordion-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "e-global-typography-primary-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "the7-btn-xl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "n-tabs-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "e-rating-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "e-global-typography-primary-font-family",
+      "fontFamily": "AvenirForIntuit",
+      "px": 16
+    },
+    {
+      "name": "e-global-typography-2d6a0b4-font-family",
+      "fontFamily": "AvenirForIntuit",
+      "px": 16
+    },
+    {
+      "name": "e-global-typography-a5a658e-font-family",
+      "fontFamily": "AvenirForIntuit",
+      "px": 16
+    },
+    {
+      "name": "the7-base-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_1-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-h1-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_1-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-h2-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-h3-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_3-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-h4-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_4-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-h5-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_5-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-h6-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_6-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-widget-title-font-family",
+      "fontFamily": "var( --e-global-typography-el_title_5-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-widget-content-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-s-font-family",
+      "fontFamily": "Inter\", Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-m-font-family",
+      "fontFamily": "Inter\", Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-l-font-family",
+      "fontFamily": "Inter\", Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-lg-font-family",
+      "fontFamily": "Inter\", Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-xl-font-family",
+      "fontFamily": "Inter\", Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-xs-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-sm-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-md-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-lg-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "the7-form-xl-font-family",
+      "fontFamily": "var( --e-global-typography-el_content_2-font-family ), Sans-serif",
+      "px": 16
+    },
+    {
+      "name": "n-menu-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "the7-btn-l-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "wp-preset-font-size-small",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "the7-btn-m-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "the7-btn-s-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [],
+  "overview": "Intuit Intuit Harmony — read from designsystem.quickbooks.com's live stylesheets, not a published token package.",
+  "dos": ""
+}

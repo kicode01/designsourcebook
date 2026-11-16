@@ -1,0 +1,113 @@
+---
+version: alpha
+name: Pluralsight Design System
+description: "Pluralsight Design System — a cohesive design language for Pluralsight products."
+colors:
+  ps-action-background: "#3C28B1"
+  ps-action-background-hover: "#30208D"
+  ps-action-background-active: "#24186A"
+  ps-action-background-weak: "#E5E8EB"
+  ps-action-background-weak-hover: "#F4F5F6"
+  ps-action-background-weak-active: "#D1DFEF"
+  ps-action-border: "#0969DA"
+  ps-action-border-focus: "#3895FF"
+  ps-action-text: "#F4F7FA"
+  ps-action-text-weak: "#24186A"
+  ps-action-text-medium: "#3C28B1"
+  ps-action-text-inverse: "#1A2737"
+  ps-danger-background: "#B9004B"
+  ps-danger-background-hover: "#8B0038"
+  ps-danger-background-active: "#5C0026"
+  ps-danger-border: "#FF4591"
+  ps-danger-surface: "#FFD0E3"
+  ps-danger-text: "#5C0026"
+  ps-danger-text-weak: "#B9004B"
+  ps-danger-text-medium: "#E7005E"
+  ps-danger-text-inverse: "#F4F7FA"
+  ps-background: "#D9E4F2"
+  ps-background-hover: "#DAE3EE"
+  ps-background-active: "#D1DFEF"
+  ps-border: "#C2D1E2"
+  ps-border-weak: "#DAE3EE"
+  ps-border-strong: "#89A4C7"
+  ps-surface: "#FFFFFF"
+  ps-surface-weak: "#f4f7fa"
+  ps-surface-medium: "#e8ecf2"
+  ps-surface-strong: "#e5e8eb"
+  ps-surface-inverse: "#1A2737"
+  ps-text: "#3E5674"
+  ps-text-weak: "#546F92"
+  ps-text-medium: "#4E6583"
+  ps-text-strong: "#1A2737"
+  ps-text-inverse: "#FFFFFF"
+  ps-info-border: "#00A3FF"
+  ps-info-surface: "#AAE0FF"
+  ps-info-text: "#003655"
+  ps-info-text-weak: "#005180"
+  ps-info-text-medium: "#0088D5"
+  ps-success-border: "#02BB71"
+  ps-success-surface: "#A1FED9"
+  ps-success-text: "#002517"
+  ps-success-text-weak: "#017044"
+  ps-success-text-medium: "#01955B"
+  ps-warning-border: "#FFBA0D"
+  ps-warning-surface: "#FFEDC0"
+  ps-warning-text: "#352600"
+  ps-warning-text-weak: "#A17300"
+  ps-warning-text-medium: "#D69900"
+  ps-action-background-light: "#3C28B1"
+  ps-action-background-hover-light: "#30208D"
+  ps-action-background-active-light: "#24186A"
+  ps-action-background-weak-light: "#E5E8EB"
+  ps-action-background-weak-hover-light: "#F4F5F6"
+  ps-action-background-weak-active-light: "#D1DFEF"
+  ps-action-border-light: "#0969DA"
+  ps-action-border-focus-light: "#3895FF"
+  ps-action-text-light: "#F4F7FA"
+  ps-action-text-weak-light: "#24186A"
+  ps-action-text-medium-light: "#3C28B1"
+  ps-action-text-inverse-light: "#1A2737"
+  ps-danger-background-light: "#B9004B"
+  ps-danger-background-hover-light: "#8B0038"
+  ps-danger-background-active-light: "#5C0026"
+  ps-danger-border-light: "#FF4591"
+  ps-danger-surface-light: "#FFD0E3"
+  ps-danger-text-light: "#5C0026"
+  ps-danger-text-weak-light: "#B9004B"
+  ps-danger-text-medium-light: "#E7005E"
+  ps-danger-text-inverse-light: "#F4F7FA"
+  ps-background-light: "#D9E4F2"
+  ps-background-hover-light: "#DAE3EE"
+  ps-background-active-light: "#D1DFEF"
+  ps-border-light: "#C2D1E2"
+  ps-border-weak-light: "#DAE3EE"
+  ps-border-strong-light: "#89A4C7"
+  ps-surface-light: "#FFFFFF"
+  ps-surface-weak-light: "#f4f7fa"
+  ps-surface-medium-light: "#e8ecf2"
+  ps-surface-strong-light: "#e5e8eb"
+  ps-surface-inverse-light: "#1A2737"
+  ps-text-light: "#3E5674"
+  ps-text-weak-light: "#546F92"
+  ps-text-medium-light: "#4E6583"
+  ps-text-strong-light: "#1A2737"
+  ps-text-inverse-light: "#FFFFFF"
+  ps-info-border-light: "#00A3FF"
+  primary: "#D69900"
+---
+
+# Pluralsight Design System
+
+## Overview
+
+Pluralsight Design System — a cohesive design language for Pluralsight products.
+
+Tokens were read from `@pluralsight/design-tokens@0.7.1`, not from a marketing site: 91 colour tokens and 0 type tokens.
+
+## Colors
+
+91 colour tokens selected from the package's token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted from this package. The type scale is omitted rather than invented.

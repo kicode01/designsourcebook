@@ -1,0 +1,167 @@
+{
+  "canvas": "#fefefe",
+  "surface": "#e9ecf2",
+  "text": "#404040",
+  "muted": "#3f3f3f",
+  "brand": "#000000",
+  "border": "color-mix(in srgb, #404040 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-runway-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-deep-black",
+      "value": "#030303"
+    },
+    {
+      "name": "primary-dark-surface",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-near-white",
+      "value": "#fefefe"
+    },
+    {
+      "name": "bg-cool-cloud",
+      "value": "#e9ecf2"
+    },
+    {
+      "name": "bg-border-dark",
+      "value": "#27272a"
+    },
+    {
+      "name": "text-charcoal",
+      "value": "#404040"
+    },
+    {
+      "name": "text-near-charcoal",
+      "value": "#3f3f3f"
+    },
+    {
+      "name": "text-cool-slate",
+      "value": "#767d88"
+    },
+    {
+      "name": "text-mid-slate",
+      "value": "#7d848e"
+    },
+    {
+      "name": "text-muted-gray",
+      "value": "#a7a7a7"
+    },
+    {
+      "name": "text-cool-silver",
+      "value": "#c9ccd1"
+    },
+    {
+      "name": "text-light-silver",
+      "value": "#d0d4d4"
+    },
+    {
+      "name": "text-tailwind-gray",
+      "value": "#6b7280"
+    },
+    {
+      "name": "text-dark-link",
+      "value": "#0c0c0c"
+    },
+    {
+      "name": "text-footer-gray",
+      "value": "#999999"
+    },
+    {
+      "name": "primary",
+      "value": "#000000"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "abcNormal",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "abcNormal",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "abcNormal",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.9px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "abcNormal",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "abcNormal",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "abcNormal",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "caption-label",
+      "fontFamily": "abcNormal",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.35px"
+    },
+    {
+      "name": "small",
+      "fontFamily": "abcNormal",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "micro-tag",
+      "fontFamily": "abcNormal",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 450,
+      "lineHeight": 1.3
+    }
+  ],
+  "components": [],
+  "overview": "Runway's interface is a cinematic reel brought to life as a website — a dark, editorial, film-production-grade design where full-bleed photography and video ARE the primary UI elements. This is not a typical tech product page; it's a visual manifesto for AI-powered creativity. Every section feels like a frame from a film: dramatic lighting, sweeping landscapes, and intimate human moments captured in high-quality imagery that dominates the viewport.\n\nThe design language is built on a single typeface — abcNormal — a clean, geometric sans-serif that handles everything from 48px display headlines to 11px uppercase labels. This single-font commitment creates an extreme typographic uniformity that lets the visual content speak louder than the text. Headlines use tight line-heights (1.0) with negative letter-spacing (-0.9px to -1.2px), creating compressed text blocks that feel like film titles…",
+  "dos": "Do\n- Use full-bleed cinematic photography as the primary visual element\n- Use abcNormal for all text — maintain the single-typeface commitment\n- Keep display line-heights at 1.0 with negative letter-spacing for film-title density\n- Use the cool-gray neutral palette (#767d88, #7d848e) for secondary text\n- Maintain zero shadows — depth comes from photography and section backgrounds\n- Use uppercase with letter-spacing for navigational labels (14px, 0.35px spacing)\n- Apply small border-radius (4–8px) — the design is NOT pill-shaped\n- Let visual content (photos, videos) dominate — the UI should be invisible\n- Use weight 450 for micro labels — the precision matters\n\nDon't\n- Don't add decorative colors to the interface — the only color comes from photography\n- Don't use heavy borders or shadows — the interface must be nearly invisible\n- Don't use pill-shaped radius — Runway's geometry is…"
+}

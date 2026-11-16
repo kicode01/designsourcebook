@@ -1,0 +1,36 @@
+{
+  "name": "webflow",
+  "displayName": "Webflow",
+  "description": "Blue-accented, polished marketing site aesthetic",
+  "style": "Blue-accented, polished marketing site aesthetic",
+  "category": "Design & Productivity",
+  "theme": "dark",
+  "tags": [
+    "productivity",
+    "dark"
+  ],
+  "homepage": "https://webflow.com",
+  "license": "proprietary",
+  "provenance": "observed",
+  "provenanceNote": "Tokens were read from the public site's rendered styles, not from a published design token package. Verify before commercial use.",
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 18,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

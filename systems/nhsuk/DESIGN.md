@@ -1,0 +1,110 @@
+---
+version: alpha
+name: NHS.UK Service Manual
+description: "NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package."
+colors:
+  nhsuk-dark-blue-colour: "#003087"
+  nhsuk-blue-colour: "#005eb8"
+  nhsuk-pale-blue-colour: "#ccdff1"
+  nhsuk-black-colour: "#212b32"
+  nhsuk-grey-1-colour: "#4c6272"
+  nhsuk-grey-2-colour: "#768692"
+  nhsuk-grey-3-colour: "#aeb7bd"
+  nhsuk-grey-4-colour: "#d8dde0"
+  nhsuk-grey-5-colour: "#f0f4f5"
+  nhsuk-white-colour: "#fff"
+  nhsuk-dark-green-colour: "#004c23"
+  nhsuk-green-colour: "#007f3b"
+  nhsuk-pale-green-colour: "#cce5d8"
+  nhsuk-pale-aqua-green-colour: "#bae6e3"
+  nhsuk-aqua-green-colour: "#00a499"
+  nhsuk-dark-aqua-green-colour: "#004a45"
+  nhsuk-dark-purple-colour: "#330072"
+  nhsuk-purple-colour: "#5c338e"
+  nhsuk-pale-purple-colour: "#ded6e8"
+  nhsuk-dark-pink-colour: "#6e234b"
+  nhsuk-pink-colour: "#ae2573"
+  nhsuk-pale-pink-colour: "#efd3e3"
+  nhsuk-dark-red-colour: "#801810"
+  nhsuk-red-colour: "#d5281b"
+  nhsuk-pale-red-colour: "#f7d4d1"
+  nhsuk-dark-orange-colour: "#5f3800"
+  nhsuk-orange-colour: "#ed8b00"
+  nhsuk-pale-orange-colour: "#fbe8cc"
+  nhsuk-dark-warm-yellow-colour: "#664a0b"
+  nhsuk-warm-yellow-colour: "#ffb81c"
+  nhsuk-pale-warm-yellow-colour: "#fff1d2"
+  nhsuk-dark-yellow-colour: "#595215"
+  nhsuk-yellow-colour: "#ffeb3b"
+  nhsuk-pale-yellow-colour: "#fff9c4"
+  nhsuk-brand-colour: "#005eb8"
+  nhsuk-text-colour: "#212b32"
+  nhsuk-reverse-text-colour: "#fff"
+  nhsuk-template-background-colour: "#d8dde0"
+  nhsuk-body-background-colour: "#f0f4f5"
+  nhsuk-card-background-colour: "#fff"
+  nhsuk-print-text-colour: "#000"
+  nhsuk-secondary-text-colour: "#4c6272"
+  nhsuk-reverse-secondary-text-colour: "#c7dcef"
+  nhsuk-focus-colour: "#ffeb3b"
+  nhsuk-focus-text-colour: "#212b32"
+  nhsuk-error-colour: "#d5281b"
+  nhsuk-error-text-colour: "#d5281b"
+  nhsuk-success-colour: "#007f3b"
+  nhsuk-success-text-colour: "#007f3b"
+  nhsuk-border-colour: "#d8dde0"
+  nhsuk-border-hover-colour: "#aeb7bd"
+  nhsuk-reverse-border-colour: "#337ec6"
+  nhsuk-input-border-colour: "#4c6272"
+  nhsuk-hover-colour: "#aeb7bd"
+  nhsuk-reverse-hover-colour: "#004b93"
+  nhsuk-target-hover-colour: "#e0e4e6"
+  nhsuk-reverse-target-hover-colour: "#0055a6"
+  nhsuk-input-background-colour: "#fff"
+  nhsuk-code-colour: "#d5281b"
+  nhsuk-link-colour: "#005eb8"
+  nhsuk-link-visited-colour: "#330072"
+  nhsuk-link-hover-colour: "#6e234b"
+  nhsuk-link-active-colour: "#002f5c"
+  nhsuk-button-colour: "#007f3b"
+  nhsuk-button-text-colour: "#fff"
+  nhsuk-button-hover-colour: "#00662f"
+  nhsuk-button-active-colour: "#00401e"
+  nhsuk-button-shadow-colour: "#00401e"
+  nhsuk-secondary-button-solid-background-colour: "#fff"
+  nhsuk-secondary-button-border-colour: "#005eb8"
+  nhsuk-secondary-button-text-colour: "#005eb8"
+  nhsuk-secondary-button-hover-colour: "#d9e7f4"
+  nhsuk-secondary-button-active-colour: "#c7dcef"
+  nhsuk-secondary-button-shadow-colour: "#005eb8"
+  nhsuk-reverse-button-colour: "#fff"
+  nhsuk-reverse-button-text-colour: "#212b32"
+  nhsuk-reverse-button-hover-colour: "#d9d9d9"
+  nhsuk-reverse-button-active-colour: "#b3b3b3"
+  nhsuk-reverse-button-shadow-colour: "#b3b3b3"
+  nhsuk-warning-button-colour: "#d5281b"
+  nhsuk-warning-button-hover-colour: "#aa2016"
+  nhsuk-warning-button-active-colour: "#6b140e"
+  nhsuk-warning-button-shadow-colour: "#6b140e"
+  nhsuk-login-button-colour: "#005eb8"
+  nhsuk-login-button-hover-colour: "#004b93"
+  nhsuk-login-button-active-colour: "#002f5c"
+  nhsuk-login-button-shadow-colour: "#002f5c"
+  primary: "#005eb8"
+---
+
+# NHS.UK Service Manual
+
+## Overview
+
+NHS.UK NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.
+
+Tokens were read from the project's own repository, not from a marketing site: 88 colour tokens and 0 type tokens.
+
+## Colors
+
+88 colour tokens selected from the token files, weighted toward semantic roles.
+
+## Typography
+
+No resolvable type tokens were extracted. The type scale is omitted rather than invented.

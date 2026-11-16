@@ -1,0 +1,43 @@
+{
+  "name": "spectrum",
+  "displayName": "Spectrum",
+  "description": "Adobe Spectrum — the cross-product design language behind Creative Cloud.",
+  "style": "Adobe Spectrum — the cross-product design language behind Creative Cloud.",
+  "category": "Adobe",
+  "org": "Adobe",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "adobe"
+  ],
+  "homepage": "https://github.com/adobe/spectrum-design-data/tree/main/packages/tokens#readme",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @adobe/spectrum-tokens@15.7.0 (3 token files, 835 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@adobe/spectrum-tokens",
+    "version": "15.7.0",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

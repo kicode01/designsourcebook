@@ -1,0 +1,257 @@
+{
+  "canvas": "#1a211e",
+  "surface": "#1a211e",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#f7f7f8",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "color-panel-translucent",
+      "value": "rgba(255, 255, 255, 0.7)"
+    },
+    {
+      "name": "color-surface",
+      "value": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "name": "color-transparent",
+      "value": "rgb(0 0 0 / 0)"
+    },
+    {
+      "name": "amber-contrast",
+      "value": "#21201c"
+    },
+    {
+      "name": "amber-surface",
+      "value": "#fefae4cc"
+    },
+    {
+      "name": "blue-surface",
+      "value": "#f1f9ffcc"
+    },
+    {
+      "name": "bronze-surface",
+      "value": "#fdf5f3cc"
+    },
+    {
+      "name": "brown-surface",
+      "value": "#fbf8f4cc"
+    },
+    {
+      "name": "crimson-surface",
+      "value": "#fef5f8cc"
+    },
+    {
+      "name": "cyan-surface",
+      "value": "#eff9facc"
+    },
+    {
+      "name": "gold-surface",
+      "value": "#f9f8efcc"
+    },
+    {
+      "name": "grass-surface",
+      "value": "#f3faf3cc"
+    },
+    {
+      "name": "gray-surface",
+      "value": "#ffffffcc"
+    },
+    {
+      "name": "green-surface",
+      "value": "#f1faf4cc"
+    },
+    {
+      "name": "indigo-surface",
+      "value": "#f5f8ffcc"
+    },
+    {
+      "name": "iris-surface",
+      "value": "#f6f6ffcc"
+    },
+    {
+      "name": "jade-surface",
+      "value": "#f1faf5cc"
+    },
+    {
+      "name": "lime-contrast",
+      "value": "#1d211c"
+    },
+    {
+      "name": "lime-surface",
+      "value": "#f6f9f0cc"
+    },
+    {
+      "name": "mauve-surface",
+      "value": "#ffffffcc"
+    },
+    {
+      "name": "mint-contrast",
+      "value": "#1a211e"
+    },
+    {
+      "name": "mint-surface",
+      "value": "#effaf8cc"
+    },
+    {
+      "name": "olive-surface",
+      "value": "#ffffffcc"
+    },
+    {
+      "name": "orange-surface",
+      "value": "#fff5e9cc"
+    },
+    {
+      "name": "pink-surface",
+      "value": "#fef5facc"
+    },
+    {
+      "name": "plum-surface",
+      "value": "#fdf5fdcc"
+    },
+    {
+      "name": "purple-surface",
+      "value": "#faf5fecc"
+    },
+    {
+      "name": "red-surface",
+      "value": "#fff5f5cc"
+    },
+    {
+      "name": "ruby-surface",
+      "value": "#fff5f6cc"
+    },
+    {
+      "name": "sage-surface",
+      "value": "#ffffffcc"
+    },
+    {
+      "name": "sand-surface",
+      "value": "#ffffffcc"
+    },
+    {
+      "name": "sky-contrast",
+      "value": "#1c2024"
+    },
+    {
+      "name": "sky-surface",
+      "value": "#eef9fdcc"
+    },
+    {
+      "name": "slate-surface",
+      "value": "#ffffffcc"
+    },
+    {
+      "name": "teal-surface",
+      "value": "#f0faf8cc"
+    },
+    {
+      "name": "tomato-surface",
+      "value": "#fff6f5cc"
+    },
+    {
+      "name": "violet-surface",
+      "value": "#f9f6ffcc"
+    },
+    {
+      "name": "yellow-contrast",
+      "value": "#21201c"
+    },
+    {
+      "name": "yellow-surface",
+      "value": "#fefbe4cc"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(12px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(14px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(16px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(18px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-5",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(20px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-6",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(24px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-7",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(28px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-8",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(35px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "font-size-9",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(60px * var(--scaling))",
+      "px": 16
+    },
+    {
+      "name": "default-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI (Custom)', Roboto, 'Helvetica Neue', 'Open Sans (Custom)', system-ui,\r\n    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji",
+      "px": 16
+    },
+    {
+      "name": "heading-font-family",
+      "fontFamily": "var(--default-font-family)",
+      "px": 16
+    },
+    {
+      "name": "code-font-family",
+      "fontFamily": "Menlo', 'Consolas (Custom)', 'Bitstream Vera Sans Mono', monospace, 'Apple Color Emoji', 'Segoe UI Emoji",
+      "px": 16
+    },
+    {
+      "name": "strong-font-family",
+      "fontFamily": "var(--default-font-family)",
+      "px": 16
+    },
+    {
+      "name": "em-font-family",
+      "fontFamily": "Times New Roman', 'Times', serif",
+      "px": 16
+    },
+    {
+      "name": "quote-font-family",
+      "fontFamily": "Times New Roman', 'Times', serif",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "WorkOS Radix Themes — tokens read from https://github.com/radix-ui/themes.",
+  "dos": ""
+}

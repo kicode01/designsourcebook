@@ -1,0 +1,45 @@
+{
+  "name": "patternfly",
+  "displayName": "PatternFly",
+  "description": "Red Hat PatternFly — open-source design system for enterprise UIs.",
+  "style": "Red Hat PatternFly — open-source design system for enterprise UIs.",
+  "category": "Red Hat",
+  "org": "Red Hat",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "red-hat",
+    "enterprise",
+    "open-source"
+  ],
+  "homepage": "https://github.com/patternfly/patternfly-react#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @patternfly/react-tokens@6.7.0 (1201 token files, 1201 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@patternfly/react-tokens",
+    "version": "6.7.0",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

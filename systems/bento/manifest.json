@@ -1,0 +1,41 @@
+{
+  "name": "bento",
+  "displayName": "Bento DS",
+  "description": "Bento Bento DS — tokens read from https://github.com/buildo/bento-design-system.",
+  "style": "Bento Bento DS — tokens read from https://github.com/buildo/bento-design-system.",
+  "category": "Bento",
+  "org": "Bento",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "bento"
+  ],
+  "homepage": "https://github.com/buildo/bento-design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/buildo/bento-design-system — 4 token files, 75 colours harvested, 66 selected.",
+  "source": {
+    "repo": "https://github.com/buildo/bento-design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 67,
+    "typography": 1,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

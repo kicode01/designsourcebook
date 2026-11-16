@@ -1,0 +1,44 @@
+{
+  "name": "lightning",
+  "displayName": "Lightning",
+  "description": "Salesforce Lightning Design System — tokens for the Salesforce platform.",
+  "style": "Salesforce Lightning Design System — tokens for the Salesforce platform.",
+  "category": "Salesforce",
+  "org": "Salesforce",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "salesforce",
+    "platform"
+  ],
+  "homepage": "",
+  "license": "BSD-3-Clause",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @salesforce-ux/design-system@2.264.3 (12 token files, 1307 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@salesforce-ux/design-system",
+    "version": "2.264.3",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

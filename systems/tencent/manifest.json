@@ -1,0 +1,42 @@
+{
+  "name": "tencent",
+  "displayName": "Tencent TDesign",
+  "description": "undefined",
+  "style": "undefined",
+  "category": "Tencent",
+  "org": "Tencent",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "tencent"
+  ],
+  "homepage": "https://github.com/Tencent/tdesign-react/tree/develop#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from tdesign-react@1.18.6 (8 token files, 85 colours harvested, 67 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "tdesign-react",
+    "version": "1.18.6"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 68,
+    "typography": 19,
+    "components": 24
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 3,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

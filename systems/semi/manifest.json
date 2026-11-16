@@ -1,0 +1,41 @@
+{
+  "name": "semi",
+  "displayName": "Semi Design",
+  "description": "Semi Semi Design — tokens read from https://github.com/DouyinFE/semi-design.",
+  "style": "Semi Semi Design — tokens read from https://github.com/DouyinFE/semi-design.",
+  "category": "Semi",
+  "org": "Semi",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "semi"
+  ],
+  "homepage": "https://github.com/DouyinFE/semi-design",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/DouyinFE/semi-design — 17 token files, 126 colours harvested, 56 selected.",
+  "source": {
+    "repo": "https://github.com/DouyinFE/semi-design"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 57,
+    "typography": 46,
+    "components": 1
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

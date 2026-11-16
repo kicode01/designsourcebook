@@ -1,0 +1,41 @@
+{
+  "name": "buzzfeed",
+  "displayName": "BuzzFeed Solid",
+  "description": "BuzzFeed BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.",
+  "style": "BuzzFeed BuzzFeed Solid — tokens read from https://github.com/buzzfeed/solid.",
+  "category": "BuzzFeed",
+  "org": "BuzzFeed",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "buzz-feed"
+  ],
+  "homepage": "https://github.com/buzzfeed/solid",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/buzzfeed/solid — 1 token files, 47 colours harvested, 47 selected.",
+  "source": {
+    "repo": "https://github.com/buzzfeed/solid"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 48,
+    "typography": 1,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,716 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0168b3",
+  "border": "#e1e2ea",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "border-solid-border-color",
+      "value": "#e1e2ea"
+    },
+    {
+      "name": "solid-border-color",
+      "value": "#e1e2ea"
+    },
+    {
+      "name": "border-color",
+      "value": "#e1e2ea"
+    },
+    {
+      "name": "ca-palette-positive-text",
+      "value": "#378a72"
+    },
+    {
+      "name": "ca-palette-negative-text",
+      "value": "#c03d4a"
+    },
+    {
+      "name": "ca-border-between-rows-color",
+      "value": "#ececec"
+    },
+    {
+      "name": "purple-100",
+      "value": "#f0f1f4"
+    },
+    {
+      "name": "color-purple-100",
+      "value": "#f4edf8"
+    },
+    {
+      "name": "color-purple-200",
+      "value": "#dfc9ea"
+    },
+    {
+      "name": "color-purple-300",
+      "value": "#c9a5dd"
+    },
+    {
+      "name": "color-purple-400",
+      "value": "#ae67b1"
+    },
+    {
+      "name": "color-purple-500",
+      "value": "#844587"
+    },
+    {
+      "name": "color-purple-600",
+      "value": "#5f3361"
+    },
+    {
+      "name": "color-purple-700",
+      "value": "#4a234d"
+    },
+    {
+      "name": "color-purple-800",
+      "value": "#2f2438"
+    },
+    {
+      "name": "color-blue-100",
+      "value": "#e6f6ff"
+    },
+    {
+      "name": "color-blue-200",
+      "value": "#bde2f5"
+    },
+    {
+      "name": "color-blue-300",
+      "value": "#73c0e8"
+    },
+    {
+      "name": "color-blue-400",
+      "value": "#008bd6"
+    },
+    {
+      "name": "color-blue-500",
+      "value": "#0168b3"
+    },
+    {
+      "name": "color-blue-600",
+      "value": "#004970"
+    },
+    {
+      "name": "color-blue-700",
+      "value": "#003157"
+    },
+    {
+      "name": "color-green-100",
+      "value": "#e8f8f4"
+    },
+    {
+      "name": "color-green-200",
+      "value": "#c4ede2"
+    },
+    {
+      "name": "color-green-300",
+      "value": "#8fdbc7"
+    },
+    {
+      "name": "color-green-400",
+      "value": "#5dcaad"
+    },
+    {
+      "name": "color-green-500",
+      "value": "#3f9a86"
+    },
+    {
+      "name": "color-green-600",
+      "value": "#2c7d67"
+    },
+    {
+      "name": "color-green-700",
+      "value": "#22594a"
+    },
+    {
+      "name": "color-yellow-100",
+      "value": "#fff9e4"
+    },
+    {
+      "name": "color-yellow-200",
+      "value": "#ffeeb3"
+    },
+    {
+      "name": "color-yellow-300",
+      "value": "#ffe36e"
+    },
+    {
+      "name": "color-yellow-400",
+      "value": "#ffca4d"
+    },
+    {
+      "name": "color-yellow-500",
+      "value": "#ffb600"
+    },
+    {
+      "name": "color-yellow-600",
+      "value": "#c68600"
+    },
+    {
+      "name": "color-yellow-700",
+      "value": "#876400"
+    },
+    {
+      "name": "color-red-100",
+      "value": "#fdeaee"
+    },
+    {
+      "name": "color-red-200",
+      "value": "#f9c2cb"
+    },
+    {
+      "name": "color-red-300",
+      "value": "#f597a8"
+    },
+    {
+      "name": "color-red-400",
+      "value": "#e0707d"
+    },
+    {
+      "name": "color-red-500",
+      "value": "#c93b55"
+    },
+    {
+      "name": "color-red-600",
+      "value": "#a82433"
+    },
+    {
+      "name": "color-red-700",
+      "value": "#6c1e20"
+    },
+    {
+      "name": "color-orange-100",
+      "value": "#fff0e8"
+    },
+    {
+      "name": "color-orange-200",
+      "value": "#ffd1b9"
+    },
+    {
+      "name": "color-orange-300",
+      "value": "#ffb08a"
+    },
+    {
+      "name": "color-orange-400",
+      "value": "#ff9461"
+    },
+    {
+      "name": "color-orange-500",
+      "value": "#e96c2f"
+    },
+    {
+      "name": "color-orange-600",
+      "value": "#b74302"
+    },
+    {
+      "name": "color-orange-700",
+      "value": "#903c00"
+    },
+    {
+      "name": "color-gray-100",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-gray-200",
+      "value": "#f4f4f5"
+    },
+    {
+      "name": "color-gray-300",
+      "value": "#eaeaec"
+    },
+    {
+      "name": "color-gray-400",
+      "value": "#cdcdd0"
+    },
+    {
+      "name": "color-gray-500",
+      "value": "#878792"
+    },
+    {
+      "name": "color-gray-600",
+      "value": "#524e56"
+    },
+    {
+      "name": "color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-black",
+      "value": "#000000"
+    },
+    {
+      "name": "data-viz-favorable",
+      "value": "#7dd5bd"
+    },
+    {
+      "name": "data-viz-unfavorable",
+      "value": "#e68d97"
+    },
+    {
+      "name": "whatever-100",
+      "value": "#ff0022"
+    },
+    {
+      "name": "color-whatever-100",
+      "value": "#ff0022"
+    },
+    {
+      "name": "purple-200",
+      "value": "#dfc9ea"
+    },
+    {
+      "name": "purple-300",
+      "value": "#c9a5dd"
+    },
+    {
+      "name": "purple-400",
+      "value": "#ae67b1"
+    },
+    {
+      "name": "purple-500",
+      "value": "#844587"
+    },
+    {
+      "name": "purple-600",
+      "value": "#5f3361"
+    },
+    {
+      "name": "purple-700",
+      "value": "#4a234d"
+    },
+    {
+      "name": "purple-800",
+      "value": "#2f2438"
+    },
+    {
+      "name": "blue-100",
+      "value": "#e6f6ff"
+    },
+    {
+      "name": "blue-200",
+      "value": "#bde2f5"
+    },
+    {
+      "name": "blue-300",
+      "value": "#73c0e8"
+    },
+    {
+      "name": "blue-400",
+      "value": "#008bd6"
+    },
+    {
+      "name": "blue-500",
+      "value": "#0168b3"
+    },
+    {
+      "name": "blue-600",
+      "value": "#004970"
+    },
+    {
+      "name": "blue-700",
+      "value": "#003157"
+    },
+    {
+      "name": "green-100",
+      "value": "#e8f8f4"
+    },
+    {
+      "name": "green-200",
+      "value": "#c4ede2"
+    },
+    {
+      "name": "green-300",
+      "value": "#8fdbc7"
+    },
+    {
+      "name": "green-400",
+      "value": "#5dcaad"
+    },
+    {
+      "name": "green-500",
+      "value": "#3f9a86"
+    },
+    {
+      "name": "green-600",
+      "value": "#2c7d67"
+    },
+    {
+      "name": "green-700",
+      "value": "#22594a"
+    },
+    {
+      "name": "yellow-100",
+      "value": "#fff9e4"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#ffeeb3"
+    },
+    {
+      "name": "yellow-300",
+      "value": "#ffe36e"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#ffca4d"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#ffb600"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#c68600"
+    },
+    {
+      "name": "yellow-700",
+      "value": "#876400"
+    },
+    {
+      "name": "primary",
+      "value": "#0168b3"
+    }
+  ],
+  "type": [
+    {
+      "name": "typography-data-large-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-large-font-size, 5.25rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-data-large-units-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-large-units-font-size, 2.625rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-data-medium-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-medium-font-size, 3rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-data-medium-units-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-medium-units-font-size, 1.5rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-data-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-small-font-size, 1.5rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-data-small-units-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-small-units-font-size, 1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-display-0-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-display-0-font-size, 4.5rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-1-font-size, 2.125rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-2-font-size, 1.75rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-3-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-3-font-size, 1.375rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-4-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-4-font-size, 1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-5-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-5-font-size, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-6-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-6-font-size, 0.875rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-intro-lede-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(\r\n  --typography-paragraph-intro-lede-font-size,\r\n  1.25rem\r\n)",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-body-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-paragraph-body-font-size, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-paragraph-small-font-size, 0.875rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-extra-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(\r\n  --typography-paragraph-extra-small-font-size,\r\n  0.75rem\r\n)",
+      "px": 16
+    },
+    {
+      "name": "typography-button-primary-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-button-primary-font-size, 1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-button-secondary-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-button-secondary-font-size, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "typography-data-large-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-large-units-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-medium-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-medium-units-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-small-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-data-small-units-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-display-0-font-family",
+      "fontFamily": "Tiempos Headline\", Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-1-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-2-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-3-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-4-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-5-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-6-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-intro-lede-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-body-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-small-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-paragraph-extra-small-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-primary-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-secondary-font-family",
+      "fontFamily": "Inter\", \"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "data-large",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-large-font-size, 5.25rem)",
+      "px": 16
+    },
+    {
+      "name": "data-large-units",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-large-units-font-size, 2.625rem)",
+      "px": 16
+    },
+    {
+      "name": "data-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-medium-font-size, 3rem)",
+      "px": 16
+    },
+    {
+      "name": "data-medium-units",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-medium-units-font-size, 1.5rem)",
+      "px": 16
+    },
+    {
+      "name": "data-small",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-small-font-size, 1.5rem)",
+      "px": 16
+    },
+    {
+      "name": "data-small-units",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-data-small-units-font-size, 1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "display0",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-display-0-font-size, 4.5rem)",
+      "px": 16
+    },
+    {
+      "name": "heading1",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-1-font-size, 2.125rem)",
+      "px": 16
+    },
+    {
+      "name": "heading2",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-2-font-size, 1.75rem)",
+      "px": 16
+    },
+    {
+      "name": "heading3",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-3-font-size, 1.375rem)",
+      "px": 16
+    },
+    {
+      "name": "heading4",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-4-font-size, 1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "heading5",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-5-font-size, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "heading6",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-heading-6-font-size, 0.875rem)",
+      "px": 16
+    },
+    {
+      "name": "paragraph-intro-lede",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-paragraph-intro-lede-font-size, 1.25rem)",
+      "px": 16
+    },
+    {
+      "name": "paragraph-body",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-paragraph-body-font-size, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "paragraph-small",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-paragraph-small-font-size, 0.875rem)",
+      "px": 16
+    },
+    {
+      "name": "paragraph-extra-small",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-paragraph-extra-small-font-size, 0.75rem)",
+      "px": 16
+    },
+    {
+      "name": "button-primary",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-button-primary-font-size, 1.125rem)",
+      "px": 16
+    },
+    {
+      "name": "button-secondary",
+      "fontFamily": "system-ui",
+      "fontSize": "var(--typography-button-secondary-font-size, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "button-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [],
+  "overview": "Kaizen Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.",
+  "dos": ""
+}

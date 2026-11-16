@@ -1,0 +1,41 @@
+{
+  "name": "mantine",
+  "displayName": "Mantine",
+  "description": "Mantine Mantine — tokens read from https://github.com/mantinedev/mantine.",
+  "style": "Mantine Mantine — tokens read from https://github.com/mantinedev/mantine.",
+  "category": "Mantine",
+  "org": "Mantine",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "mantine"
+  ],
+  "homepage": "https://github.com/mantinedev/mantine",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/mantinedev/mantine — 18 token files, 504 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/mantinedev/mantine"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 23,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

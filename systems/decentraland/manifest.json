@@ -1,0 +1,41 @@
+{
+  "name": "decentraland",
+  "displayName": "Decentraland UI",
+  "description": "Decentraland Decentraland UI — tokens read from https://github.com/decentraland/ui.",
+  "style": "Decentraland Decentraland UI — tokens read from https://github.com/decentraland/ui.",
+  "category": "Decentraland",
+  "org": "Decentraland",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "decentraland"
+  ],
+  "homepage": "https://github.com/decentraland/ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/decentraland/ui — 3 token files, 60 colours harvested, 53 selected.",
+  "source": {
+    "repo": "https://github.com/decentraland/ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 53,
+    "typography": 1,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

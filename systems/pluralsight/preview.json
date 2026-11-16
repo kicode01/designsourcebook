@@ -1,0 +1,380 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#FFFFFF",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#D69900",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "ps-action-background",
+      "value": "#3C28B1"
+    },
+    {
+      "name": "ps-action-background-hover",
+      "value": "#30208D"
+    },
+    {
+      "name": "ps-action-background-active",
+      "value": "#24186A"
+    },
+    {
+      "name": "ps-action-background-weak",
+      "value": "#E5E8EB"
+    },
+    {
+      "name": "ps-action-background-weak-hover",
+      "value": "#F4F5F6"
+    },
+    {
+      "name": "ps-action-background-weak-active",
+      "value": "#D1DFEF"
+    },
+    {
+      "name": "ps-action-border",
+      "value": "#0969DA"
+    },
+    {
+      "name": "ps-action-border-focus",
+      "value": "#3895FF"
+    },
+    {
+      "name": "ps-action-text",
+      "value": "#F4F7FA"
+    },
+    {
+      "name": "ps-action-text-weak",
+      "value": "#24186A"
+    },
+    {
+      "name": "ps-action-text-medium",
+      "value": "#3C28B1"
+    },
+    {
+      "name": "ps-action-text-inverse",
+      "value": "#1A2737"
+    },
+    {
+      "name": "ps-danger-background",
+      "value": "#B9004B"
+    },
+    {
+      "name": "ps-danger-background-hover",
+      "value": "#8B0038"
+    },
+    {
+      "name": "ps-danger-background-active",
+      "value": "#5C0026"
+    },
+    {
+      "name": "ps-danger-border",
+      "value": "#FF4591"
+    },
+    {
+      "name": "ps-danger-surface",
+      "value": "#FFD0E3"
+    },
+    {
+      "name": "ps-danger-text",
+      "value": "#5C0026"
+    },
+    {
+      "name": "ps-danger-text-weak",
+      "value": "#B9004B"
+    },
+    {
+      "name": "ps-danger-text-medium",
+      "value": "#E7005E"
+    },
+    {
+      "name": "ps-danger-text-inverse",
+      "value": "#F4F7FA"
+    },
+    {
+      "name": "ps-background",
+      "value": "#D9E4F2"
+    },
+    {
+      "name": "ps-background-hover",
+      "value": "#DAE3EE"
+    },
+    {
+      "name": "ps-background-active",
+      "value": "#D1DFEF"
+    },
+    {
+      "name": "ps-border",
+      "value": "#C2D1E2"
+    },
+    {
+      "name": "ps-border-weak",
+      "value": "#DAE3EE"
+    },
+    {
+      "name": "ps-border-strong",
+      "value": "#89A4C7"
+    },
+    {
+      "name": "ps-surface",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ps-surface-weak",
+      "value": "#f4f7fa"
+    },
+    {
+      "name": "ps-surface-medium",
+      "value": "#e8ecf2"
+    },
+    {
+      "name": "ps-surface-strong",
+      "value": "#e5e8eb"
+    },
+    {
+      "name": "ps-surface-inverse",
+      "value": "#1A2737"
+    },
+    {
+      "name": "ps-text",
+      "value": "#3E5674"
+    },
+    {
+      "name": "ps-text-weak",
+      "value": "#546F92"
+    },
+    {
+      "name": "ps-text-medium",
+      "value": "#4E6583"
+    },
+    {
+      "name": "ps-text-strong",
+      "value": "#1A2737"
+    },
+    {
+      "name": "ps-text-inverse",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ps-info-border",
+      "value": "#00A3FF"
+    },
+    {
+      "name": "ps-info-surface",
+      "value": "#AAE0FF"
+    },
+    {
+      "name": "ps-info-text",
+      "value": "#003655"
+    },
+    {
+      "name": "ps-info-text-weak",
+      "value": "#005180"
+    },
+    {
+      "name": "ps-info-text-medium",
+      "value": "#0088D5"
+    },
+    {
+      "name": "ps-success-border",
+      "value": "#02BB71"
+    },
+    {
+      "name": "ps-success-surface",
+      "value": "#A1FED9"
+    },
+    {
+      "name": "ps-success-text",
+      "value": "#002517"
+    },
+    {
+      "name": "ps-success-text-weak",
+      "value": "#017044"
+    },
+    {
+      "name": "ps-success-text-medium",
+      "value": "#01955B"
+    },
+    {
+      "name": "ps-warning-border",
+      "value": "#FFBA0D"
+    },
+    {
+      "name": "ps-warning-surface",
+      "value": "#FFEDC0"
+    },
+    {
+      "name": "ps-warning-text",
+      "value": "#352600"
+    },
+    {
+      "name": "ps-warning-text-weak",
+      "value": "#A17300"
+    },
+    {
+      "name": "ps-warning-text-medium",
+      "value": "#D69900"
+    },
+    {
+      "name": "ps-action-background-light",
+      "value": "#3C28B1"
+    },
+    {
+      "name": "ps-action-background-hover-light",
+      "value": "#30208D"
+    },
+    {
+      "name": "ps-action-background-active-light",
+      "value": "#24186A"
+    },
+    {
+      "name": "ps-action-background-weak-light",
+      "value": "#E5E8EB"
+    },
+    {
+      "name": "ps-action-background-weak-hover-light",
+      "value": "#F4F5F6"
+    },
+    {
+      "name": "ps-action-background-weak-active-light",
+      "value": "#D1DFEF"
+    },
+    {
+      "name": "ps-action-border-light",
+      "value": "#0969DA"
+    },
+    {
+      "name": "ps-action-border-focus-light",
+      "value": "#3895FF"
+    },
+    {
+      "name": "ps-action-text-light",
+      "value": "#F4F7FA"
+    },
+    {
+      "name": "ps-action-text-weak-light",
+      "value": "#24186A"
+    },
+    {
+      "name": "ps-action-text-medium-light",
+      "value": "#3C28B1"
+    },
+    {
+      "name": "ps-action-text-inverse-light",
+      "value": "#1A2737"
+    },
+    {
+      "name": "ps-danger-background-light",
+      "value": "#B9004B"
+    },
+    {
+      "name": "ps-danger-background-hover-light",
+      "value": "#8B0038"
+    },
+    {
+      "name": "ps-danger-background-active-light",
+      "value": "#5C0026"
+    },
+    {
+      "name": "ps-danger-border-light",
+      "value": "#FF4591"
+    },
+    {
+      "name": "ps-danger-surface-light",
+      "value": "#FFD0E3"
+    },
+    {
+      "name": "ps-danger-text-light",
+      "value": "#5C0026"
+    },
+    {
+      "name": "ps-danger-text-weak-light",
+      "value": "#B9004B"
+    },
+    {
+      "name": "ps-danger-text-medium-light",
+      "value": "#E7005E"
+    },
+    {
+      "name": "ps-danger-text-inverse-light",
+      "value": "#F4F7FA"
+    },
+    {
+      "name": "ps-background-light",
+      "value": "#D9E4F2"
+    },
+    {
+      "name": "ps-background-hover-light",
+      "value": "#DAE3EE"
+    },
+    {
+      "name": "ps-background-active-light",
+      "value": "#D1DFEF"
+    },
+    {
+      "name": "ps-border-light",
+      "value": "#C2D1E2"
+    },
+    {
+      "name": "ps-border-weak-light",
+      "value": "#DAE3EE"
+    },
+    {
+      "name": "ps-border-strong-light",
+      "value": "#89A4C7"
+    },
+    {
+      "name": "ps-surface-light",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ps-surface-weak-light",
+      "value": "#f4f7fa"
+    },
+    {
+      "name": "ps-surface-medium-light",
+      "value": "#e8ecf2"
+    },
+    {
+      "name": "ps-surface-strong-light",
+      "value": "#e5e8eb"
+    },
+    {
+      "name": "ps-surface-inverse-light",
+      "value": "#1A2737"
+    },
+    {
+      "name": "ps-text-light",
+      "value": "#3E5674"
+    },
+    {
+      "name": "ps-text-weak-light",
+      "value": "#546F92"
+    },
+    {
+      "name": "ps-text-medium-light",
+      "value": "#4E6583"
+    },
+    {
+      "name": "ps-text-strong-light",
+      "value": "#1A2737"
+    },
+    {
+      "name": "ps-text-inverse-light",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ps-info-border-light",
+      "value": "#00A3FF"
+    },
+    {
+      "name": "primary",
+      "value": "#D69900"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Pluralsight Design System — a cohesive design language for Pluralsight products.",
+  "dos": ""
+}

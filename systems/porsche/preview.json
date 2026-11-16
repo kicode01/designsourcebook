@@ -1,0 +1,107 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1A44EA",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-focus-dark",
+      "value": "#1A44EA"
+    },
+    {
+      "name": "color-focus-light",
+      "value": "#1A44EA"
+    },
+    {
+      "name": "color-canvas-light",
+      "value": "#fff"
+    },
+    {
+      "name": "pds-theme-light-state-hover",
+      "value": "hsla(236, 6.4%, 51%, 0.148)"
+    },
+    {
+      "name": "pds-theme-light-state-active",
+      "value": "hsla(236, 6.4%, 51%, 0.148)"
+    },
+    {
+      "name": "pds-theme-light-state-focus",
+      "value": "#1a44ea"
+    },
+    {
+      "name": "pds-theme-light-state-disabled",
+      "value": "hsla(233,6.6%,23.9%,0.412)"
+    },
+    {
+      "name": "pds-theme-dark-state-hover",
+      "value": "hsla(240, 2.2%, 44.1%, 0.228)"
+    },
+    {
+      "name": "pds-theme-dark-state-active",
+      "value": "hsla(240, 2.2%, 44.1%, 0.228)"
+    },
+    {
+      "name": "pds-theme-dark-state-focus",
+      "value": "#1a44ea"
+    },
+    {
+      "name": "pds-theme-dark-state-disabled",
+      "value": "hsla(240,1.5%,61.8%,0.302)"
+    },
+    {
+      "name": "background-light",
+      "value": "rgba(255,255,255,.01)"
+    },
+    {
+      "name": "background-dark",
+      "value": "rgba(0,0,0,.01)"
+    },
+    {
+      "name": "color",
+      "value": "#fff"
+    },
+    {
+      "name": "theme-color-light",
+      "value": "#FFF"
+    },
+    {
+      "name": "theme-color-dark",
+      "value": "#0E1418"
+    },
+    {
+      "name": "background",
+      "value": "rgba(0, 0, 255, 0.1)"
+    },
+    {
+      "name": "primary",
+      "value": "#1A44EA"
+    }
+  ],
+  "type": [
+    {
+      "name": "pds-font-size-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(1.8rem, 2.41vw + 1.32rem, 4.21rem)",
+      "px": 16
+    },
+    {
+      "name": "pds-font-size-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2.03rem, 3.58vw + 1.31rem, 5.61rem)",
+      "px": 16
+    },
+    {
+      "name": "pds-font-size-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "clamp(2.28rem, 5.2vw + 1.24rem, 7.48rem)",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "Porsche Porsche Design System — tokens read from https://github.com/porsche-design-system/porsche-design-system.",
+  "dos": ""
+}

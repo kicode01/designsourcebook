@@ -1,0 +1,41 @@
+{
+  "name": "new",
+  "displayName": "New York State Design System",
+  "description": "New New York State Design System — tokens read from https://github.com/ITS-HCD/nysds.",
+  "style": "New New York State Design System — tokens read from https://github.com/ITS-HCD/nysds.",
+  "category": "New",
+  "org": "New",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "new"
+  ],
+  "homepage": "https://github.com/ITS-HCD/nysds",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/ITS-HCD/nysds — 1 token files, 15 colours harvested, 15 selected.",
+  "source": {
+    "repo": "https://github.com/ITS-HCD/nysds"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 15,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 2,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

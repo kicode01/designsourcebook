@@ -1,0 +1,771 @@
+{
+  "canvas": "#424242",
+  "surface": "#6d6d6d",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#fff",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": ".25rem",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "surface-bg-dark",
+      "value": "#424242"
+    },
+    {
+      "name": "red-accent-100",
+      "value": "#ff8a80"
+    },
+    {
+      "name": "red-accent-400",
+      "value": "#ff1744"
+    },
+    {
+      "name": "pink-accent-100",
+      "value": "#ff80ab"
+    },
+    {
+      "name": "pink-accent-400",
+      "value": "#f50057"
+    },
+    {
+      "name": "purple-accent-100",
+      "value": "#ea80fc"
+    },
+    {
+      "name": "purple-accent-400",
+      "value": "#d500f9"
+    },
+    {
+      "name": "deep-purple-accent-100",
+      "value": "#b388ff"
+    },
+    {
+      "name": "deep-purple-accent-400",
+      "value": "#651fff"
+    },
+    {
+      "name": "indigo-accent-100",
+      "value": "#8c9eff"
+    },
+    {
+      "name": "indigo-accent-400",
+      "value": "#3d5afe"
+    },
+    {
+      "name": "blue-accent-100",
+      "value": "#82b1ff"
+    },
+    {
+      "name": "blue-accent-400",
+      "value": "#2979ff"
+    },
+    {
+      "name": "light-blue-accent-100",
+      "value": "#80d8ff"
+    },
+    {
+      "name": "light-blue-accent-400",
+      "value": "#00b0ff"
+    },
+    {
+      "name": "cyan-accent-100",
+      "value": "#84ffff"
+    },
+    {
+      "name": "cyan-accent-400",
+      "value": "#00e5ff"
+    },
+    {
+      "name": "teal-accent-100",
+      "value": "#a7ffeb"
+    },
+    {
+      "name": "teal-accent-400",
+      "value": "#1de9b6"
+    },
+    {
+      "name": "green-accent-100",
+      "value": "#b9f6ca"
+    },
+    {
+      "name": "green-accent-400",
+      "value": "#00e676"
+    },
+    {
+      "name": "light-green-accent-100",
+      "value": "#ccff90"
+    },
+    {
+      "name": "light-green-accent-400",
+      "value": "#76ff03"
+    },
+    {
+      "name": "lime-accent-100",
+      "value": "#f4ff81"
+    },
+    {
+      "name": "lime-accent-400",
+      "value": "#c6ff00"
+    },
+    {
+      "name": "yellow-accent-100",
+      "value": "#ffff8d"
+    },
+    {
+      "name": "yellow-accent-400",
+      "value": "#ffea00"
+    },
+    {
+      "name": "amber-accent-100",
+      "value": "#ffe57f"
+    },
+    {
+      "name": "amber-accent-400",
+      "value": "#ffc400"
+    },
+    {
+      "name": "orange-accent-100",
+      "value": "#ffd180"
+    },
+    {
+      "name": "orange-accent-400",
+      "value": "#ff9100"
+    },
+    {
+      "name": "deep-orange-accent-100",
+      "value": "#ff9e80"
+    },
+    {
+      "name": "deep-orange-accent-400",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "primary",
+      "value": "#fff"
+    },
+    {
+      "name": "success",
+      "value": "#14a44d"
+    },
+    {
+      "name": "warning",
+      "value": "#e4a11b"
+    },
+    {
+      "name": "surface-inverted-bg",
+      "value": "#6d6d6d"
+    },
+    {
+      "name": "form-file-label-border-color",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "form-file-button-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "mdb-primary",
+      "value": "#3b71ca"
+    },
+    {
+      "name": "mdb-success",
+      "value": "#14a44d"
+    },
+    {
+      "name": "mdb-warning",
+      "value": "#e4a11b"
+    },
+    {
+      "name": "mdb-primary-text-emphasis",
+      "value": "#2f5aa2"
+    },
+    {
+      "name": "mdb-success-text-emphasis",
+      "value": "#0c622e"
+    },
+    {
+      "name": "mdb-warning-text-emphasis",
+      "value": "#896110"
+    },
+    {
+      "name": "mdb-light-text-emphasis",
+      "value": "#616161"
+    },
+    {
+      "name": "mdb-primary-bg-subtle",
+      "value": "#e2eaf7"
+    },
+    {
+      "name": "mdb-success-bg-subtle",
+      "value": "#dcf1e4"
+    },
+    {
+      "name": "mdb-warning-bg-subtle",
+      "value": "#fbf1dd"
+    },
+    {
+      "name": "mdb-primary-border-subtle",
+      "value": "#b1c6ea"
+    },
+    {
+      "name": "mdb-success-border-subtle",
+      "value": "#a1dbb8"
+    },
+    {
+      "name": "mdb-warning-border-subtle",
+      "value": "#f4d9a4"
+    },
+    {
+      "name": "mdb-light-border-subtle",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "mdb-secondary-bg",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "mdb-link-hover-color",
+      "value": "#386bc0"
+    },
+    {
+      "name": "mdb-form-valid-border-color",
+      "value": "#14a44d"
+    },
+    {
+      "name": "mdb-table-border-color",
+      "value": "#adb6c3"
+    },
+    {
+      "name": "mdb-btn-hover-border-color",
+      "value": "#2f5aa2"
+    },
+    {
+      "name": "mdb-btn-disabled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "mdb-btn-disabled-border-color",
+      "value": "#3b71ca"
+    },
+    {
+      "name": "mdb-dropdown-link-active-bg",
+      "value": "#3b71ca"
+    },
+    {
+      "name": "mdb-dropdown-link-hover-color",
+      "value": "#fff"
+    },
+    {
+      "name": "mdb-nav-tabs-link-active-color",
+      "value": "#3b71ca"
+    },
+    {
+      "name": "mdb-navbar-brand-color",
+      "value": "#fff"
+    },
+    {
+      "name": "mdb-pagination-active-border-color",
+      "value": "#3b71ca"
+    },
+    {
+      "name": "mdb-surface-color",
+      "value": "#4f4f4f"
+    },
+    {
+      "name": "mdb-surface-inverted-color",
+      "value": "#fff"
+    },
+    {
+      "name": "mdb-form-control-border-color",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "mdb-datepicker-cell-in-range-background-color",
+      "value": "#b1c6ea"
+    },
+    {
+      "name": "mdb-btn-focus-color",
+      "value": "#fff"
+    },
+    {
+      "name": "mdb-btn-outline-focus-border-color",
+      "value": "#2f5aa2"
+    },
+    {
+      "name": "mdb-scrollspy-menu-sidebar-active-border-color",
+      "value": "#3b71ca"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "red",
+      "value": "#dc3545"
+    },
+    {
+      "name": "red-500",
+      "value": "#f44336"
+    },
+    {
+      "name": "purple-50",
+      "value": "#f3e5f5"
+    },
+    {
+      "name": "deep-purple-500",
+      "value": "#673ab7"
+    },
+    {
+      "name": "blue-50",
+      "value": "#e3f2fd"
+    },
+    {
+      "name": "light-blue-500",
+      "value": "#03a9f4"
+    },
+    {
+      "name": "teal-50",
+      "value": "#e0f2f1"
+    },
+    {
+      "name": "green-500",
+      "value": "#4caf50"
+    },
+    {
+      "name": "lime-50",
+      "value": "#f9fbe7"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#ffeb3b"
+    },
+    {
+      "name": "orange-50",
+      "value": "#fff3e0"
+    },
+    {
+      "name": "deep-orange-500",
+      "value": "#ff5722"
+    },
+    {
+      "name": "blue-gray-50",
+      "value": "#eceff1"
+    },
+    {
+      "name": "mdb-purple",
+      "value": "#9c27b0"
+    },
+    {
+      "name": "mdb-gray-300",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "mdb-code-color",
+      "value": "#e91e63"
+    },
+    {
+      "name": "mdb-btn-active-color",
+      "value": "#fff"
+    }
+  ],
+  "type": [
+    {
+      "name": "carousel-control-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem !default",
+      "px": 27.2
+    },
+    {
+      "name": "mdb-carousel-control-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.7rem",
+      "px": 27.2
+    },
+    {
+      "name": "legend-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem !default",
+      "px": 24
+    },
+    {
+      "name": "mdb-navbar-brand-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mdb-navbar-toggler-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem !default",
+      "px": 16
+    },
+    {
+      "name": "display-font-sizes",
+      "fontFamily": "system-ui",
+      "fontSize": "(\r\n  1: 5rem,\r\n  2: 4.5rem,\r\n  3: 4rem,\r\n  4: 3.5rem,\r\n  5: 3rem,\r\n  6: 2.5rem,\r\n) !default",
+      "px": 16
+    },
+    {
+      "name": "input-font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem !default",
+      "px": 16
+    },
+    {
+      "name": "form-file-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem !default",
+      "px": 16
+    },
+    {
+      "name": "input-group-lg-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem !default",
+      "px": 16
+    },
+    {
+      "name": "mdb-body-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mdb-popover-header-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mdb-body-font-family",
+      "fontFamily": "var(--mdb-font-roboto)",
+      "px": 16
+    },
+    {
+      "name": "table-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9rem !default",
+      "px": 14.4
+    },
+    {
+      "name": "pagination-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9rem !default",
+      "px": 14.4
+    },
+    {
+      "name": "mdb-table-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9rem",
+      "px": 14.4
+    },
+    {
+      "name": "toast-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem !default",
+      "px": 14
+    },
+    {
+      "name": "btn-font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem !default",
+      "px": 14
+    },
+    {
+      "name": "btn-outline-font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem !default",
+      "px": 14
+    },
+    {
+      "name": "dropdown-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem !default",
+      "px": 14
+    },
+    {
+      "name": "tooltip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px !default",
+      "px": 14
+    },
+    {
+      "name": "mdb-dropdown-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mdb-pagination-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mdb-toast-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mdb-tooltip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "mdb-popover-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "scrollspy-menu-sidebar-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8rem !default",
+      "px": 12.8
+    },
+    {
+      "name": "mdb-scrollspy-menu-sidebar-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8rem",
+      "px": 12.8
+    },
+    {
+      "name": "input-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "0.775rem !default",
+      "px": 12.4
+    },
+    {
+      "name": "form-label-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "0.775rem !default",
+      "px": 12.4
+    },
+    {
+      "name": "form-file-sm-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.775rem !default",
+      "px": 12.4
+    },
+    {
+      "name": "input-group-sm-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.775rem !default",
+      "px": 12.4
+    },
+    {
+      "name": "btn-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem !default",
+      "px": 12
+    },
+    {
+      "name": "btn-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem !default",
+      "px": 12
+    },
+    {
+      "name": "btn-outline-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem !default",
+      "px": 12
+    },
+    {
+      "name": "nav-tabs-link-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px !default",
+      "px": 12
+    },
+    {
+      "name": "range-thumb-value-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px !default",
+      "px": 12
+    },
+    {
+      "name": "mdb-btn-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mdb-progress-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mdb-nav-tabs-link-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "mdb-nav-pills-link-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "mdb-range-thumb-value-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "badge-notification-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem !default",
+      "px": 9.6
+    },
+    {
+      "name": "mdb-badge-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6rem",
+      "px": 9.6
+    }
+  ],
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#4f4f4f",
+      "border": "solid"
+    },
+    {
+      "key": "btn-close",
+      "kind": "button",
+      "backgroundColor": "rgba(0,0,0,0)  center/1em auto no-repeat",
+      "rounded": ".25rem",
+      "padding": ".25em .25em",
+      "border": "0"
+    },
+    {
+      "key": "link-info",
+      "kind": "link",
+      "textColor": "RGBA(84, 180, 211, 1) !important"
+    },
+    {
+      "key": "link-dark-2",
+      "kind": "link",
+      "textColor": "RGBA(51, 45, 45, 1) !important"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#e5f4f8",
+      "textColor": "#3b7e94"
+    },
+    {
+      "key": "alert-dark-2",
+      "kind": "alert",
+      "backgroundColor": "#262626",
+      "textColor": "#eeeeee"
+    },
+    {
+      "key": "link-light-3",
+      "kind": "link",
+      "textColor": "RGBA(251, 251, 251, 1) !important"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "#e5f4f8",
+      "textColor": "#3b7e94"
+    },
+    {
+      "key": "badge-dark-2",
+      "kind": "badge",
+      "backgroundColor": "#262626",
+      "textColor": "#eeeeee"
+    },
+    {
+      "key": "alert-light-3",
+      "kind": "alert",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#616161"
+    },
+    {
+      "key": "link-danger-4",
+      "kind": "link",
+      "textColor": "RGBA(220, 76, 100, 1) !important"
+    },
+    {
+      "key": "badge-light-3",
+      "kind": "badge",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#616161"
+    },
+    {
+      "key": "alert-danger-4",
+      "kind": "alert",
+      "backgroundColor": "#fae4e8",
+      "textColor": "#b03d50"
+    },
+    {
+      "key": "link-primary-5",
+      "kind": "link",
+      "textColor": "RGBA(59, 113, 202, 1) !important"
+    },
+    {
+      "key": "link-success-6",
+      "kind": "link",
+      "textColor": "RGBA(20, 164, 77, 1) !important"
+    },
+    {
+      "key": "badge-danger-4",
+      "kind": "badge",
+      "backgroundColor": "#fae4e8",
+      "textColor": "#b03d50"
+    },
+    {
+      "key": "alert-heading-5",
+      "kind": "alert",
+      "textColor": "inherit"
+    },
+    {
+      "key": "alert-primary-6",
+      "kind": "alert",
+      "backgroundColor": "#e2eaf7",
+      "textColor": "#2f5aa2"
+    },
+    {
+      "key": "badge-primary-5",
+      "kind": "badge",
+      "backgroundColor": "#e2eaf7",
+      "textColor": "#2f5aa2"
+    },
+    {
+      "key": "badge-success-6",
+      "kind": "badge",
+      "backgroundColor": "#dcf1e4",
+      "textColor": "#0c622e"
+    },
+    {
+      "key": "navbar-toggler",
+      "kind": "navbar",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "border": "1px solid"
+    },
+    {
+      "key": "input-group-text",
+      "kind": "input",
+      "backgroundColor": "#fbfbfb",
+      "textColor": "#4f4f4f",
+      "rounded": "0.25rem",
+      "padding": ".375rem .75rem",
+      "border": "1px solid #e0e0e0"
+    }
+  ],
+  "overview": "Material Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.",
+  "dos": ""
+}

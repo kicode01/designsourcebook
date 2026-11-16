@@ -1,0 +1,189 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fcfcfc",
+  "text": "#646464",
+  "muted": "#4e4e4e",
+  "brand": "#2b9a66",
+  "border": "color-mix(in srgb, #646464 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-replicate-dark",
+      "value": "#202020"
+    },
+    {
+      "name": "primary-replicate-red",
+      "value": "#ea2804"
+    },
+    {
+      "name": "primary-secondary-red",
+      "value": "#dd4425"
+    },
+    {
+      "name": "brand-status-green",
+      "value": "#2b9a66"
+    },
+    {
+      "name": "brand-github-dark",
+      "value": "#24292e"
+    },
+    {
+      "name": "bg-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-near-white",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "text-medium-gray",
+      "value": "#646464"
+    },
+    {
+      "name": "text-warm-gray",
+      "value": "#4e4e4e"
+    },
+    {
+      "name": "text-mid-silver",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "text-light-silver",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "text-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary",
+      "value": "#2b9a66"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-mega",
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "128px",
+      "px": 128,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "display-hero",
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "72px",
+      "px": 72,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "-1.8px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "sub-heading-sans",
+      "fontFamily": "basier-square",
+      "fontSize": "38.4px",
+      "px": 38.4,
+      "fontWeight": 400,
+      "lineHeight": 0.83
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "rb-freigeist-neue",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "basier-square",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "basier-square / rb-freigeist-neue",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.56
+    },
+    {
+      "name": "body-button",
+      "fontFamily": "basier-square",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "caption",
+      "fontFamily": "basier-square",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": "-0.35px"
+    },
+    {
+      "name": "code",
+      "fontFamily": "jetbrains-mono",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "small-tag",
+      "fontFamily": "basier-square",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "code-small",
+      "fontFamily": "jetbrains-mono",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "button-dark-solid",
+      "kind": "button",
+      "backgroundColor": "#202020",
+      "textColor": "#fcfcfc",
+      "padding": "0px 4px"
+    },
+    {
+      "key": "button-white-outlined",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#202020",
+      "border": "1px solid #202020"
+    },
+    {
+      "key": "button-transparent-glass",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0.1)",
+      "textColor": "#202020",
+      "border": "transparent"
+    }
+  ],
+  "overview": "Replicate's interface is a developer playground crackling with creative energy — a bold, high-contrast design that feels more like a music festival poster than a typical API platform. The hero section explodes with a vibrant orange-red-magenta gradient that immediately signals \"this is where AI models come alive,\" while the body of the page grounds itself in a clean white canvas where code snippets and model galleries take center stage.\n\nThe design personality is defined by two extreme choices: massive display typography (up to 128px) using the custom rb-freigeist-neue face, and exclusively pill-shaped geometry (9999px radius on everything). The display font is thick, bold, and confident — its heavy weight at enormous sizes creates text that feels like it's shouting with joy rather than whispering authority. Combined with basier-square for body text (a clean geometric sans) and…",
+  "dos": "Do\n- Use pill-shaped (9999px) radius on EVERYTHING — buttons, images, badges, containers\n- Use rb-freigeist-neue at weight 700 for display text — go big (72px+) or go home\n- Use the orange-red brand gradient for hero sections\n- Use Replicate Dark (#202020) as the primary dark — not pure black\n- Apply dotted underline decoration on text links (#bbbbbb)\n- Use Status Green (#2b9a66) for operational/success badges\n- Keep body text in basier-square at 400–600 weight\n- Use JetBrains Mono for all code content\n- Create a \"manifesto\" section with 128px type for emotional impact\n\nDon't\n- Don't use any border-radius other than 9999px — the pill system is absolute\n- Don't use the brand red (#ea2804) as a surface/background color — it's for gradients and accent borders\n- Don't reduce display text below 48px on desktop — the heavy display font needs size to breathe\n- Don't use light/thin font weights…"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "alaskaairlines",
+  "displayName": "Auro",
+  "description": "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.",
+  "style": "Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.",
+  "category": "Alaska Airlines",
+  "org": "Alaska Airlines",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "alaska-airlines"
+  ],
+  "homepage": "https://auro.alaskaair.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://auro.alaskaair.com/ and its 2 stylesheets on 2026-11-16. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "repo": null
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 33,
+    "components": 1
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

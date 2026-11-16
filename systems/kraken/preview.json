@@ -1,0 +1,188 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#7132f5",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "12px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-kraken-purple",
+      "value": "#7132f5"
+    },
+    {
+      "name": "primary-purple-dark",
+      "value": "#5741d8"
+    },
+    {
+      "name": "primary-purple-deep",
+      "value": "#5b1ecf"
+    },
+    {
+      "name": "primary-purple-subtle",
+      "value": "rgba(133,91,251,0.16)"
+    },
+    {
+      "name": "primary-near-black",
+      "value": "#101114"
+    },
+    {
+      "name": "neutral-cool-gray",
+      "value": "#686b82"
+    },
+    {
+      "name": "neutral-silver-blue",
+      "value": "#9497a9"
+    },
+    {
+      "name": "neutral-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "neutral-border-gray",
+      "value": "#dedee5"
+    },
+    {
+      "name": "status-green",
+      "value": "#149e61"
+    },
+    {
+      "name": "status-green-dark",
+      "value": "#026b3f"
+    },
+    {
+      "name": "primary",
+      "value": "#7132f5"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 700,
+      "lineHeight": 1.17,
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.22,
+      "letterSpacing": "-0.5px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 700,
+      "lineHeight": 1.29,
+      "letterSpacing": "-0.5px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "body",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.38
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.38
+    },
+    {
+      "name": "button",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.38
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "small",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Kraken-Brand",
+      "fontSize": "7px",
+      "px": 7,
+      "fontWeight": 500,
+      "lineHeight": 1
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-purple",
+      "kind": "button",
+      "backgroundColor": "#7132f5",
+      "textColor": "#ffffff",
+      "rounded": "12px",
+      "padding": "13px 16px"
+    },
+    {
+      "key": "button-purple-outlined",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#5741d8",
+      "rounded": "12px",
+      "border": "1px solid #5741d8"
+    },
+    {
+      "key": "button-purple-subtle",
+      "kind": "button",
+      "backgroundColor": "rgba(133,91,251,0.16)",
+      "textColor": "#7132f5",
+      "rounded": "12px",
+      "padding": "8px"
+    },
+    {
+      "key": "button-white",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#101114",
+      "rounded": "10px",
+      "shadow": "rgba(0,0,0,0.03) 0px 4px 24px"
+    },
+    {
+      "key": "button-secondary-gray",
+      "kind": "button",
+      "backgroundColor": "rgba(148,151,169,0.08)",
+      "textColor": "#101114",
+      "rounded": "12px"
+    }
+  ],
+  "overview": "Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (#7132f5, #5741d8, #5b1ecf) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.\n\nKey Characteristics:\n- Kraken Purple (#7132f5) as primary brand with darker variants (#5741d8, #5b1ecf)\n- Kraken-Brand (display) + Kraken-Product (UI) dual font system\n- Near-black (#101114) text with cool blue-gray neutral scale\n- 12px radius buttons (rounded but not pill)\n- Subtle shadows (rgba(0,0,0,0.03) 0px 4px 24px) — whisper-level\n- Green accent (#149e61) for positive/success states",
+  "dos": "Do\n- Use Kraken Purple (#7132f5) for CTAs and links\n- Apply 12px radius on all buttons\n- Use Kraken-Brand for headings, Kraken-Product for body\n\nDon't\n- Don't use pill buttons — 12px is the max radius for buttons\n- Don't use other purples outside the defined scale"
+}

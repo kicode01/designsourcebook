@@ -1,0 +1,41 @@
+{
+  "name": "pivotal",
+  "displayName": "Pivotal",
+  "description": "Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.",
+  "style": "Pivotal Pivotal — tokens read from https://github.com/pivotal-cf/pivotal-ui.",
+  "category": "Pivotal",
+  "org": "Pivotal",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "pivotal"
+  ],
+  "homepage": "https://github.com/pivotal-cf/pivotal-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/pivotal-cf/pivotal-ui — 3 token files, 98 colours harvested, 81 selected.",
+  "source": {
+    "repo": "https://github.com/pivotal-cf/pivotal-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 82,
+    "typography": 20,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

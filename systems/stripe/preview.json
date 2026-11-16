@@ -1,0 +1,355 @@
+{
+  "canvas": "#e5edf5",
+  "surface": "#b9b9f9",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1c1e54",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-stripe-purple",
+      "value": "#533afd"
+    },
+    {
+      "name": "primary-deep-navy",
+      "value": "#061b31"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "brand-dark",
+      "value": "#1c1e54"
+    },
+    {
+      "name": "brand-dark-navy",
+      "value": "#0d253d"
+    },
+    {
+      "name": "brand-ruby",
+      "value": "#ea2261"
+    },
+    {
+      "name": "brand-magenta",
+      "value": "#f96bee"
+    },
+    {
+      "name": "brand-magenta-light",
+      "value": "#ffd7ef"
+    },
+    {
+      "name": "interactive-primary-purple",
+      "value": "#533afd"
+    },
+    {
+      "name": "interactive-purple-hover",
+      "value": "#4434d4"
+    },
+    {
+      "name": "interactive-purple-deep",
+      "value": "#2e2b8c"
+    },
+    {
+      "name": "interactive-purple-light",
+      "value": "#b9b9f9"
+    },
+    {
+      "name": "interactive-purple-mid",
+      "value": "#665efd"
+    },
+    {
+      "name": "neutral-heading",
+      "value": "#061b31"
+    },
+    {
+      "name": "neutral-label",
+      "value": "#273951"
+    },
+    {
+      "name": "neutral-body",
+      "value": "#64748d"
+    },
+    {
+      "name": "neutral-success-green",
+      "value": "#15be53"
+    },
+    {
+      "name": "neutral-success-text",
+      "value": "#108c3d"
+    },
+    {
+      "name": "neutral-lemon",
+      "value": "#9b6829"
+    },
+    {
+      "name": "surface-border-default",
+      "value": "#e5edf5"
+    },
+    {
+      "name": "surface-border-purple",
+      "value": "#b9b9f9"
+    },
+    {
+      "name": "surface-border-soft-purple",
+      "value": "#d6d9fc"
+    },
+    {
+      "name": "surface-border-magenta",
+      "value": "#ffd7ef"
+    },
+    {
+      "name": "surface-border-dashed",
+      "value": "#362baa"
+    },
+    {
+      "name": "shadow-blue",
+      "value": "rgba(50,50,93,0.25)"
+    },
+    {
+      "name": "shadow-dark-blue",
+      "value": "rgba(3,3,39,0.25)"
+    },
+    {
+      "name": "shadow-black",
+      "value": "rgba(0,0,0,0.1)"
+    },
+    {
+      "name": "shadow-ambient",
+      "value": "rgba(23,23,23,0.08)"
+    },
+    {
+      "name": "shadow-soft",
+      "value": "rgba(23,23,23,0.06)"
+    },
+    {
+      "name": "primary",
+      "value": "#1c1e54"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "sohne-var",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 300,
+      "lineHeight": 1.03,
+      "letterSpacing": "-1.4px"
+    },
+    {
+      "name": "display-large",
+      "fontFamily": "sohne-var",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 300,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "sohne-var",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 300,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.64px"
+    },
+    {
+      "name": "sub-heading-large",
+      "fontFamily": "sohne-var",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 300,
+      "lineHeight": 1.12,
+      "letterSpacing": "-0.26px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "sohne-var",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 300,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.22px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "sohne-var",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 300,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "body",
+      "fontFamily": "sohne-var",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 300,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "button",
+      "fontFamily": "sohne-var",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "button-small",
+      "fontFamily": "sohne-var",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "link",
+      "fontFamily": "sohne-var",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "caption",
+      "fontFamily": "sohne-var",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400
+    },
+    {
+      "name": "caption-small",
+      "fontFamily": "sohne-var",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 300,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "caption-tabular",
+      "fontFamily": "sohne-var",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 300,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.36px"
+    },
+    {
+      "name": "code-body",
+      "fontFamily": "sohne-var",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 2
+    },
+    {
+      "name": "code-bold",
+      "fontFamily": "sohne-var",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 2
+    },
+    {
+      "name": "code-label",
+      "fontFamily": "sohne-var",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 2
+    },
+    {
+      "name": "micro",
+      "fontFamily": "sohne-var",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 300,
+      "lineHeight": 1.15,
+      "letterSpacing": "0.1px"
+    },
+    {
+      "name": "micro-tabular",
+      "fontFamily": "sohne-var",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 300,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.3px"
+    },
+    {
+      "name": "code-micro",
+      "fontFamily": "sohne-var",
+      "fontSize": "9px",
+      "px": 9,
+      "fontWeight": 500,
+      "lineHeight": 1
+    },
+    {
+      "name": "nano",
+      "fontFamily": "sohne-var",
+      "fontSize": "8px",
+      "px": 8,
+      "fontWeight": 300,
+      "lineHeight": 1.07
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-purple",
+      "kind": "button",
+      "backgroundColor": "#533afd",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "button-ghost-outlined",
+      "kind": "button",
+      "textColor": "#533afd",
+      "rounded": "4px",
+      "padding": "8px 16px",
+      "border": "1px solid #b9b9f9"
+    },
+    {
+      "key": "button-transparent-info",
+      "kind": "button",
+      "textColor": "#2874ad",
+      "rounded": "4px",
+      "padding": "8px 16px",
+      "border": "1px solid rgba(43,145,223,0.2)"
+    },
+    {
+      "key": "button-neutral-ghost",
+      "kind": "button",
+      "backgroundColor": "rgba(255,255,255,0)",
+      "textColor": "rgba(16,16,16,0.3)",
+      "rounded": "4px",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "badge-neutral-pill",
+      "kind": "badge",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "0px 6px",
+      "border": "1px solid #f6f9fc"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "rgba(21,190,83,0.2)",
+      "textColor": "#108c3d",
+      "rounded": "4px",
+      "padding": "1px 6px",
+      "border": "1px solid rgba(21,190,83,0.4)"
+    }
+  ],
+  "overview": "Stripe's website is the gold standard of fintech design -- a system that manages to feel simultaneously technical and luxurious, precise and warm. The page opens on a clean white canvas (#ffffff) with deep navy headings (#061b31) and a signature purple (#533afd) that functions as both brand anchor and interactive accent. This isn't the cold, clinical purple of enterprise software; it's a rich, saturated violet that reads as confident and premium. The overall impression is of a financial institution redesigned by a world-class type foundry.\n\nThe custom sohne-var variable font is the defining element of Stripe's visual identity. Every text element enables the OpenType \"ss01\" stylistic set, which modifies character shapes for a distinctly geometric, modern feel. At display sizes (48px-56px), sohne-var runs at weight 300 -- an extraordinarily light weight for headlines that creates an…",
+  "dos": "Do\n- Use sohne-var with \"ss01\" on every text element -- the stylistic set IS the brand\n- Use weight 300 for all headlines and body text -- lightness is the signature\n- Apply blue-tinted shadows (rgba(50,50,93,0.25)) for all elevated elements\n- Use #061b31 (deep navy) for headings instead of #000000 -- the warmth matters\n- Keep border-radius between 4px-8px -- conservative rounding is intentional\n- Use \"tnum\" for any tabular/financial number display\n- Layer shadows: blue-tinted far + neutral close for depth parallax\n- Use #533afd purple as the primary interactive/CTA color\n\nDon't\n- Don't use weight 600-700 for sohne-var headlines -- weight 300 is the brand voice\n- Don't use large border-radius (12px+, pill shapes) on cards or buttons -- Stripe is conservative\n- Don't use neutral gray shadows -- always tint with blue (rgba(50,50,93,...))\n- Don't skip \"ss01\" on any sohne-var text -- the…"
+}

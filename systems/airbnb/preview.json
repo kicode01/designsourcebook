@@ -1,0 +1,228 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#222222",
+  "muted": "#3f3f3f",
+  "brand": "#ff385c",
+  "border": "color-mix(in srgb, #222222 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-rausch-red",
+      "value": "#ff385c"
+    },
+    {
+      "name": "brand-deep-rausch",
+      "value": "#e00b41"
+    },
+    {
+      "name": "brand-error-red",
+      "value": "#c13515"
+    },
+    {
+      "name": "brand-error-dark",
+      "value": "#b32505"
+    },
+    {
+      "name": "premium-luxe-purple",
+      "value": "#460479"
+    },
+    {
+      "name": "premium-plus-magenta",
+      "value": "#92174d"
+    },
+    {
+      "name": "text-near-black",
+      "value": "#222222"
+    },
+    {
+      "name": "text-focused-gray",
+      "value": "#3f3f3f"
+    },
+    {
+      "name": "text-secondary-gray",
+      "value": "#6a6a6a"
+    },
+    {
+      "name": "text-disabled",
+      "value": "rgba(0,0,0,0.24)"
+    },
+    {
+      "name": "text-link-disabled",
+      "value": "#929292"
+    },
+    {
+      "name": "interactive-legal-blue",
+      "value": "#428bff"
+    },
+    {
+      "name": "interactive-border-gray",
+      "value": "#c1c1c1"
+    },
+    {
+      "name": "interactive-light-surface",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "surface-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-card-shadow",
+      "value": "rgba(0,0,0,0.02)"
+    },
+    {
+      "name": "surface-hover-shadow",
+      "value": "rgba(0,0,0,0.08)"
+    },
+    {
+      "name": "primary",
+      "value": "#ff385c"
+    }
+  ],
+  "type": [
+    {
+      "name": "section-heading",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 700,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "card-heading",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 600,
+      "lineHeight": 1.18,
+      "letterSpacing": "-0.44px"
+    },
+    {
+      "name": "card-heading-medium",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 500,
+      "lineHeight": 1.18,
+      "letterSpacing": "-0.44px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "21px",
+      "px": 21,
+      "fontWeight": 700,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.18px"
+    },
+    {
+      "name": "ui-medium",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "ui-semibold",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "button",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body-link",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "body-medium",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.29
+    },
+    {
+      "name": "caption-salt",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.43
+    },
+    {
+      "name": "small",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.23
+    },
+    {
+      "name": "tag",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "badge",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 600,
+      "lineHeight": 1.18
+    },
+    {
+      "name": "micro-uppercase",
+      "fontFamily": "Airbnb Cereal VF",
+      "fontSize": "8px",
+      "px": 8,
+      "fontWeight": 700,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.32px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-dark",
+      "kind": "button",
+      "backgroundColor": "#222222",
+      "textColor": "#ffffff",
+      "rounded": "8px",
+      "padding": "0px 24px"
+    },
+    {
+      "key": "button-circular-nav",
+      "kind": "button",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#222222"
+    }
+  ],
+  "overview": "Airbnb's website is a warm, photography-forward marketplace that feels like flipping through a travel magazine where every page invites you to book. The design operates on a foundation of pure white (#ffffff) with the iconic Rausch Red (#ff385c) — named after Airbnb's first street address — serving as the singular brand accent. The result is a clean, airy canvas where listing photography, category icons, and the red CTA button are the only sources of color.\n\nThe typography uses Airbnb Cereal VF — a custom variable font that's warm and approachable, with rounded terminals that echo the brand's \"belong anywhere\" philosophy. The font operates in a tight weight range: 500 (medium) for most UI, 600 (semibold) for emphasis, and 700 (bold) for primary headings. Slight negative letter-spacing (-0.18px to -0.44px) on headings creates a cozy, intimate reading experience rather than the compressed…",
+  "dos": "Do\n- Use #222222 (warm near-black) for text — never pure #000000\n- Apply Rausch Red (#ff385c) only for primary CTAs and brand moments — it's the singular accent\n- Use Airbnb Cereal VF at weight 500–700 — the warm weight range is intentional\n- Apply the three-layer card shadow for all elevated surfaces\n- Use generous border-radius: 8px for buttons, 20px for cards, 50% for controls\n- Use photography as the primary visual content — listings are image-first\n- Apply negative letter-spacing (-0.18px to -0.44px) on headings for intimacy\n- Use circular (50%) buttons for carousel/navigation controls\n\nDon't\n- Don't use pure black (#000000) for text — always #222222 (warm)\n- Don't apply Rausch Red to backgrounds or large surfaces — it's an accent only\n- Don't use thin font weights (300, 400) for headings — 500 minimum\n- Don't use heavy shadows (>0.1 opacity as primary layer) — keep them warm and…"
+}

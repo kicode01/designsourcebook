@@ -1,0 +1,41 @@
+{
+  "name": "west",
+  "displayName": "West Midlands Network Design System",
+  "description": "West West Midlands Network Design System — tokens read from https://github.com/wmcadigital/wmn-design-system.",
+  "style": "West West Midlands Network Design System — tokens read from https://github.com/wmcadigital/wmn-design-system.",
+  "category": "West",
+  "org": "West",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "west"
+  ],
+  "homepage": "https://github.com/wmcadigital/wmn-design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/wmcadigital/wmn-design-system — 3 token files, 19 colours harvested, 19 selected.",
+  "source": {
+    "repo": "https://github.com/wmcadigital/wmn-design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 19,
+    "typography": 2,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

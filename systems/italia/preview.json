@@ -1,0 +1,324 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#333",
+  "muted": "#5a6772",
+  "brand": "#06c",
+  "border": "#ff8c00",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-primary",
+      "value": "#06c"
+    },
+    {
+      "name": "color-black",
+      "value": "#000"
+    },
+    {
+      "name": "color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "color-grey-10",
+      "value": "#f5f5f0"
+    },
+    {
+      "name": "color-grey-15",
+      "value": "#f6f9fc"
+    },
+    {
+      "name": "color-grey-20",
+      "value": "#eee"
+    },
+    {
+      "name": "color-grey-30",
+      "value": "#ddd"
+    },
+    {
+      "name": "color-grey-40",
+      "value": "#a5abb0"
+    },
+    {
+      "name": "color-grey-50",
+      "value": "#5a6772"
+    },
+    {
+      "name": "color-grey-60",
+      "value": "#444e57"
+    },
+    {
+      "name": "color-grey-80",
+      "value": "#30373d"
+    },
+    {
+      "name": "color-grey-90",
+      "value": "#1c2024"
+    },
+    {
+      "name": "color-teal-30",
+      "value": "#00c5ca"
+    },
+    {
+      "name": "color-teal-50",
+      "value": "#65dcdf"
+    },
+    {
+      "name": "color-teal-70",
+      "value": "#004a4d"
+    },
+    {
+      "name": "color-focus",
+      "value": "#ff8c00"
+    },
+    {
+      "name": "it-base-text-color",
+      "value": "#1c2024"
+    },
+    {
+      "name": "it-base-focus-color",
+      "value": "#ff8c00"
+    },
+    {
+      "name": "alert-error-bg",
+      "value": "#ffcbcb"
+    },
+    {
+      "name": "alert-error-color",
+      "value": "#1e1212"
+    },
+    {
+      "name": "alert-error-border",
+      "value": "#b50000"
+    },
+    {
+      "name": "alert-warning-bg",
+      "value": "#ffef9f"
+    },
+    {
+      "name": "alert-warning-color",
+      "value": "#4f4310"
+    },
+    {
+      "name": "alert-warning-border",
+      "value": "#1e1212"
+    },
+    {
+      "name": "alert-success-bg",
+      "value": "#dff0d8"
+    },
+    {
+      "name": "alert-success-color",
+      "value": "#274d28"
+    },
+    {
+      "name": "alert-success-border",
+      "value": "#d6e9c6"
+    },
+    {
+      "name": "alert-info-bg",
+      "value": "#c6f3f5"
+    },
+    {
+      "name": "alert-info-color",
+      "value": "#004446"
+    },
+    {
+      "name": "alert-info-border",
+      "value": "#1e1212"
+    },
+    {
+      "name": "button-default-bg",
+      "value": "#65dde0"
+    },
+    {
+      "name": "button-default-color",
+      "value": "#004a4d"
+    },
+    {
+      "name": "button-default-border",
+      "value": "#50d8dc"
+    },
+    {
+      "name": "button-danger-bg",
+      "value": "#b50000"
+    },
+    {
+      "name": "button-danger-color",
+      "value": "#fff"
+    },
+    {
+      "name": "button-danger-border",
+      "value": "#f00"
+    },
+    {
+      "name": "button-info-bg",
+      "value": "#fff"
+    },
+    {
+      "name": "button-info-color",
+      "value": "#003e54"
+    },
+    {
+      "name": "button-info-border",
+      "value": "#ccc"
+    },
+    {
+      "name": "callout-color-must",
+      "value": "#f4e6f5"
+    },
+    {
+      "name": "callout-color-should",
+      "value": "#d1e7ff"
+    },
+    {
+      "name": "callout-color-could",
+      "value": "#ebf5ef"
+    },
+    {
+      "name": "callout-color-example",
+      "value": "#e6e5e3"
+    },
+    {
+      "name": "callout-border-top-color",
+      "value": "#aaa"
+    },
+    {
+      "name": "form-input-border-color",
+      "value": "#ccc"
+    },
+    {
+      "name": "form-state-invalid-border-color",
+      "value": "#b50000"
+    },
+    {
+      "name": "form-state-invalid-label-color",
+      "value": "#1c2024"
+    },
+    {
+      "name": "form-state-invalid-message-color",
+      "value": "#1c2024"
+    },
+    {
+      "name": "form-state-warning-border-color",
+      "value": "#e5ce23"
+    },
+    {
+      "name": "form-state-warning-label-color",
+      "value": "#1c2024"
+    },
+    {
+      "name": "form-state-warning-message-color",
+      "value": "#1c2024"
+    },
+    {
+      "name": "form-label-checked-background",
+      "value": "#c6f3f5"
+    },
+    {
+      "name": "linklist-border-color",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "table-border-color",
+      "value": "#d6dce3"
+    },
+    {
+      "name": "table-hover-color",
+      "value": "#e5f1fa"
+    },
+    {
+      "name": "table-stripe-color",
+      "value": "#f6f7f9"
+    },
+    {
+      "name": "tooltip-border-color",
+      "value": "#b4efef"
+    },
+    {
+      "name": "prose-color-text-primary",
+      "value": "#1c2024"
+    },
+    {
+      "name": "prose-color-text-secondary",
+      "value": "#5a6772"
+    },
+    {
+      "name": "prose-color-text-highlighted",
+      "value": "#b2ebed"
+    },
+    {
+      "name": "prose-color-link",
+      "value": "#06c"
+    },
+    {
+      "name": "prose-color-link-hover",
+      "value": "#036"
+    },
+    {
+      "name": "prose-color-link-visited",
+      "value": "#06c"
+    },
+    {
+      "name": "spid-background",
+      "value": "#06c"
+    },
+    {
+      "name": "border-focus-color",
+      "value": "#ff8c00"
+    },
+    {
+      "name": "border-soft-focus-color",
+      "value": "#00c5ca"
+    },
+    {
+      "name": "text-color-text-primary",
+      "value": "#333"
+    },
+    {
+      "name": "text-color-text-secondary",
+      "value": "#5a6772"
+    },
+    {
+      "name": "primary",
+      "value": "#06c"
+    }
+  ],
+  "type": [
+    {
+      "name": "pac-font-family-sans",
+      "fontFamily": "Titillium Web, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "it-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "calc(1rem * var(--it-Base-font-size-ratio))",
+      "px": 16
+    },
+    {
+      "name": "it-base-font-family",
+      "fontFamily": "-apple-system,\r\n    BlinkMacSystemFont,\r\n    Segoe UI,\r\n    Roboto,\r\n    Oxygen,\r\n    Ubuntu,\r\n    Cantarell,\r\n    Fira Sans,\r\n    Droid Sans,\r\n    HelveticaNeue-Light,\r\n    Helvetica Neue Light,\r\n    Helvetica Neue,\r\n    Helvetica,\r\n    Arial,\r\n    Lucida Grande,\r\n    sans-serif",
+      "px": 16
+    },
+    {
+      "name": "metadata",
+      "fontFamily": "ita",
+      "px": 16
+    },
+    {
+      "name": "spid-font-family",
+      "fontFamily": "Titillium Web",
+      "px": 16
+    },
+    {
+      "name": "print-font-family",
+      "fontFamily": "Georgia, \"Times New Roman\", Times, serif",
+      "px": 16
+    }
+  ],
+  "components": [],
+  "overview": "Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.",
+  "dos": ""
+}

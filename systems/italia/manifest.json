@@ -1,0 +1,41 @@
+{
+  "name": "italia",
+  "displayName": "Italia Design System",
+  "description": "Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.",
+  "style": "Italia Italia Design System — tokens read from https://github.com/italia/design-web-toolkit.",
+  "category": "Italia",
+  "org": "Italia",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "italia"
+  ],
+  "homepage": "https://github.com/italia/design-web-toolkit",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/italia/design-web-toolkit — 14 token files, 68 colours harvested, 68 selected.",
+  "source": {
+    "repo": "https://github.com/italia/design-web-toolkit"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 69,
+    "typography": 6,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

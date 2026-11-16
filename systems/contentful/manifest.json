@@ -1,0 +1,41 @@
+{
+  "name": "contentful",
+  "displayName": "Contentful Forma 36",
+  "description": "Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.",
+  "style": "Contentful Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.",
+  "category": "Contentful",
+  "org": "Contentful",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "contentful"
+  ],
+  "homepage": "https://github.com/contentful/forma-36",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/contentful/forma-36 — 14 token files, 122 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/contentful/forma-36"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 1,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

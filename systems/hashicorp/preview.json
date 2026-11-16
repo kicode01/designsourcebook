@@ -1,0 +1,265 @@
+{
+  "canvas": "#000000",
+  "surface": "#000000",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#000000",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "5px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "brand-black",
+      "value": "#000000"
+    },
+    {
+      "name": "brand-dark-charcoal",
+      "value": "#15181e"
+    },
+    {
+      "name": "brand-near-black",
+      "value": "#0d0e12"
+    },
+    {
+      "name": "neutral-light-gray",
+      "value": "#f1f2f3"
+    },
+    {
+      "name": "neutral-mid-gray",
+      "value": "#d5d7db"
+    },
+    {
+      "name": "neutral-cool-gray",
+      "value": "#b2b6bd"
+    },
+    {
+      "name": "neutral-dark-gray",
+      "value": "#656a76"
+    },
+    {
+      "name": "neutral-charcoal",
+      "value": "#3b3d45"
+    },
+    {
+      "name": "neutral-near-white",
+      "value": "#efeff1"
+    },
+    {
+      "name": "brand-terraform-purple",
+      "value": "#7b42bc"
+    },
+    {
+      "name": "brand-vault-yellow",
+      "value": "#ffcf25"
+    },
+    {
+      "name": "brand-waypoint-teal",
+      "value": "#14c6cb"
+    },
+    {
+      "name": "brand-waypoint-teal-hover",
+      "value": "#12b6bb"
+    },
+    {
+      "name": "brand-vagrant-blue",
+      "value": "#1868f2"
+    },
+    {
+      "name": "brand-purple-accent",
+      "value": "#911ced"
+    },
+    {
+      "name": "brand-visited-purple",
+      "value": "#a737ff"
+    },
+    {
+      "name": "status-action-blue",
+      "value": "#1060ff"
+    },
+    {
+      "name": "status-link-blue",
+      "value": "#2264d6"
+    },
+    {
+      "name": "status-bright-blue",
+      "value": "#2b89ff"
+    },
+    {
+      "name": "status-amber",
+      "value": "#bb5a00"
+    },
+    {
+      "name": "status-amber-light",
+      "value": "#fbeabf"
+    },
+    {
+      "name": "status-vault-faint-yellow",
+      "value": "#fff9cf"
+    },
+    {
+      "name": "status-orange",
+      "value": "#a9722e"
+    },
+    {
+      "name": "status-red",
+      "value": "#731e25"
+    },
+    {
+      "name": "status-navy",
+      "value": "#101a59"
+    },
+    {
+      "name": "shadows-micro-shadow",
+      "value": "rgba(97, 104, 117, 0.05)"
+    },
+    {
+      "name": "primary",
+      "value": "#000000"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "82px",
+      "px": 82,
+      "fontWeight": 600,
+      "lineHeight": 1.17
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "52px",
+      "px": 52,
+      "fontWeight": 600,
+      "lineHeight": 1.19
+    },
+    {
+      "name": "feature-heading",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "42px",
+      "px": 42,
+      "fontWeight": 700,
+      "lineHeight": 1.19,
+      "letterSpacing": "-0.42px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "34px",
+      "px": 34,
+      "fontWeight": 600,
+      "lineHeight": 1.18
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 700,
+      "lineHeight": 1.19
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "small-title",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "19px",
+      "px": 19,
+      "fontWeight": 700,
+      "lineHeight": 1.21
+    },
+    {
+      "name": "body-emphasis",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 600,
+      "lineHeight": 1.18
+    },
+    {
+      "name": "body",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.63
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 500,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "small-body",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.29
+    },
+    {
+      "name": "caption",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.23
+    },
+    {
+      "name": "uppercase-label",
+      "fontFamily": "HashiCorp Sans",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 600,
+      "lineHeight": 1.69,
+      "letterSpacing": "1.3px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-dark",
+      "kind": "button",
+      "backgroundColor": "#15181e",
+      "textColor": "#d5d7db",
+      "rounded": "5px",
+      "border": "1px solid rgba(178, 182, 189, 0.4)",
+      "shadow": "rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px"
+    },
+    {
+      "key": "button-secondary-white",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#3b3d45",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "input-text",
+      "kind": "input",
+      "backgroundColor": "#0d0e12",
+      "textColor": "#efeff1",
+      "rounded": "5px",
+      "padding": "11px",
+      "border": "1px solid rgb(97, 104, 117)"
+    },
+    {
+      "key": "input-checkbox",
+      "kind": "input",
+      "backgroundColor": "#0d0e12",
+      "rounded": "3px",
+      "border": "1px solid rgb(97, 104, 117)"
+    }
+  ],
+  "overview": "HashiCorp's website is enterprise infrastructure made tangible — a design system that must communicate the complexity of cloud infrastructure management while remaining approachable. The visual language splits between two modes: a clean white light-mode for informational sections and a dramatic dark-mode (#15181e, #0d0e12) for hero areas and product showcases, creating a day/night duality that mirrors the \"build in light, deploy in dark\" developer workflow.\n\nThe typography is anchored by a custom brand font (HashiCorp Sans, loaded as __hashicorpSans_96f0ca) that carries substantial weight — literally. Headings use 600–700 weights with tight line-heights (1.17–1.19), creating dense, authoritative text blocks that communicate enterprise confidence. The hero headline at 82px weight 600 with OpenType \"kern\" enabled is not decorative — it's infrastructure-grade typography.\n\nWhat…",
+  "dos": "Do\n- Use HashiCorp Sans for headings and brand text, system-ui for body and UI text\n- Enable \"kern\" on all HashiCorp Sans text\n- Use product brand colors ONLY for their respective products (Terraform = purple, Vault = yellow, etc.)\n- Apply uppercase labels at 13px weight 600 with 1.3px letter-spacing for section markers\n- Keep shadows at the \"whisper\" level (0.05 opacity dual-layer)\n- Use the --mds-color-* token system for consistent color application\n- Maintain the tight-heading / relaxed-body rhythm (1.17–1.21 vs 1.50–1.69 line-heights)\n- Use 3px solid focus outlines for accessibility\n\nDon't\n- Don't use product brand colors outside their product context (no Terraform purple on Vault content)\n- Don't increase shadow opacity above 0.1 — the whisper level is intentional\n- Don't use pill-shaped buttons (>8px radius) — the sharp, minimal radius is structural\n- Don't skip the \"kern\" feature…"
+}

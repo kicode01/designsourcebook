@@ -1,0 +1,380 @@
+{
+  "canvas": "rgb(255, 255, 255)",
+  "surface": "rgb(255, 255, 255)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "rgb(59, 99, 251)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "transparent-neutral-1000",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "card-background-well-color",
+      "value": "rgb(233, 233, 233)"
+    },
+    {
+      "name": "accent-background-color-key-focus",
+      "value": "rgb(39, 77, 234)"
+    },
+    {
+      "name": "accent-content-color-key-focus",
+      "value": "rgb(39, 77, 234)"
+    },
+    {
+      "name": "background-elevated-color",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "blue-background-color-default",
+      "value": "rgb(59, 99, 251)"
+    },
+    {
+      "name": "celery-background-color-default",
+      "value": "rgb(93, 180, 31)"
+    },
+    {
+      "name": "cinnamon-background-color-default",
+      "value": "rgb(170, 94, 56)"
+    },
+    {
+      "name": "disabled-background-color",
+      "value": "rgb(233, 233, 233)"
+    },
+    {
+      "name": "fuchsia-background-color-default",
+      "value": "rgb(181, 57, 200)"
+    },
+    {
+      "name": "green-background-color-default",
+      "value": "rgb(5, 131, 78)"
+    },
+    {
+      "name": "informative-background-color-default",
+      "value": "rgb(59, 99, 251)"
+    },
+    {
+      "name": "informative-visual-color",
+      "value": "rgb(75, 117, 255)"
+    },
+    {
+      "name": "negative-background-color-down",
+      "value": "rgb(183, 40, 24)"
+    },
+    {
+      "name": "negative-border-color-down",
+      "value": "rgb(156, 33, 19)"
+    },
+    {
+      "name": "negative-border-color-key-focus",
+      "value": "rgb(183, 40, 24)"
+    },
+    {
+      "name": "neutral-background-color-hover",
+      "value": "rgb(19, 19, 19)"
+    },
+    {
+      "name": "neutral-background-color-selected-hover",
+      "value": "rgb(19, 19, 19)"
+    },
+    {
+      "name": "neutral-content-color-focus",
+      "value": "rgb(19, 19, 19)"
+    },
+    {
+      "name": "neutral-content-color-selected-default",
+      "value": "rgb(41, 41, 41)"
+    },
+    {
+      "name": "neutral-subdued-background-color-down",
+      "value": "rgb(41, 41, 41)"
+    },
+    {
+      "name": "neutral-subdued-content-color-down",
+      "value": "rgb(41, 41, 41)"
+    },
+    {
+      "name": "neutral-subtle-background-color-default",
+      "value": "rgb(233, 233, 233)"
+    },
+    {
+      "name": "orange-subtle-background-color-default",
+      "value": "rgb(255, 236, 207)"
+    },
+    {
+      "name": "positive-background-color-down",
+      "value": "rgb(3, 110, 69)"
+    },
+    {
+      "name": "purple-subtle-background-color-default",
+      "value": "rgb(244, 235, 252)"
+    },
+    {
+      "name": "seafoam-subtle-background-color-default",
+      "value": "rgb(211, 246, 234)"
+    },
+    {
+      "name": "static-black-focus-indicator-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "turquoise-background-color-default",
+      "value": "rgb(8, 126, 137)"
+    },
+    {
+      "name": "color-area-border-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "color-slider-border-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "icon-color-blue-primary-default",
+      "value": "rgb(59, 99, 251)"
+    },
+    {
+      "name": "icon-color-brown-primary-default",
+      "value": "rgb(154, 123, 77)"
+    },
+    {
+      "name": "icon-color-celery-primary-default",
+      "value": "rgb(82, 161, 25)"
+    },
+    {
+      "name": "icon-color-chartreuse-primary-default",
+      "value": "rgb(143, 172, 0)"
+    },
+    {
+      "name": "icon-color-cinnamon-primary-default",
+      "value": "rgb(184, 109, 70)"
+    },
+    {
+      "name": "icon-color-cyan-primary-default",
+      "value": "rgb(18, 134, 205)"
+    },
+    {
+      "name": "icon-color-emphasized-background",
+      "value": "rgb(19, 19, 19)"
+    },
+    {
+      "name": "icon-color-fuchsia-primary-hover",
+      "value": "rgb(156, 40, 175)"
+    },
+    {
+      "name": "icon-color-green-primary-hover",
+      "value": "rgb(5, 131, 78)"
+    },
+    {
+      "name": "icon-color-indigo-primary-hover",
+      "value": "rgb(99, 56, 238)"
+    },
+    {
+      "name": "icon-color-magenta-primary-down",
+      "value": "rgb(163, 5, 62)"
+    },
+    {
+      "name": "icon-color-orange-primary-down",
+      "value": "rgb(194, 78, 0)"
+    },
+    {
+      "name": "icon-color-pink-primary-down",
+      "value": "rgb(176, 31, 123)"
+    },
+    {
+      "name": "icon-color-primary-hover",
+      "value": "rgb(19, 19, 19)"
+    },
+    {
+      "name": "icon-color-purple-primary-hover",
+      "value": "rgb(134, 40, 217)"
+    },
+    {
+      "name": "icon-color-red-primary-hover",
+      "value": "rgb(183, 40, 24)"
+    },
+    {
+      "name": "icon-color-seafoam-primary-hover",
+      "value": "rgb(7, 129, 109)"
+    },
+    {
+      "name": "icon-color-silver-primary-hover",
+      "value": "rgb(128, 128, 128)"
+    },
+    {
+      "name": "icon-color-turquoise-primary-hover",
+      "value": "rgb(10, 141, 153)"
+    },
+    {
+      "name": "icon-color-yellow-primary-hover",
+      "value": "rgb(230, 175, 0)"
+    },
+    {
+      "name": "menu-item-background-color-hover",
+      "value": "rgb(233, 233, 233)"
+    },
+    {
+      "name": "accent-color-1000",
+      "value": "rgb(39, 77, 234)"
+    },
+    {
+      "name": "accent-color-1400",
+      "value": "rgb(12, 31, 105)"
+    },
+    {
+      "name": "accent-color-300",
+      "value": "rgb(203, 226, 254)"
+    },
+    {
+      "name": "accent-color-700",
+      "value": "rgb(93, 137, 255)"
+    },
+    {
+      "name": "icon-color-informative",
+      "value": "rgb(75, 117, 255)"
+    },
+    {
+      "name": "informative-color-1100",
+      "value": "rgb(29, 62, 207)"
+    },
+    {
+      "name": "informative-color-1500",
+      "value": "rgb(14, 24, 67)"
+    },
+    {
+      "name": "informative-color-400",
+      "value": "rgb(172, 207, 253)"
+    },
+    {
+      "name": "informative-color-800",
+      "value": "rgb(75, 117, 255)"
+    },
+    {
+      "name": "negative-subdued-background-color-down",
+      "value": "rgb(255, 214, 209)"
+    },
+    {
+      "name": "notice-subtle-background-color-default",
+      "value": "rgb(255, 236, 207)"
+    },
+    {
+      "name": "stack-item-background-color-key-focus",
+      "value": "rgb(233, 233, 233)"
+    },
+    {
+      "name": "stack-item-selected-background-color-hover",
+      "value": "rgb(225, 225, 225)"
+    },
+    {
+      "name": "swatch-disabled-icon-border-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "tree-view-row-background-hover",
+      "value": "rgb(233, 233, 233)"
+    },
+    {
+      "name": "black",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "brown-1100",
+      "value": "rgb(103, 76, 35)"
+    },
+    {
+      "name": "celery-1400",
+      "value": "rgb(19, 46, 0)"
+    },
+    {
+      "name": "chartreuse-200",
+      "value": "rgb(234, 246, 173)"
+    },
+    {
+      "name": "cinnamon-500",
+      "value": "rgb(229, 170, 136)"
+    },
+    {
+      "name": "cyan-800",
+      "value": "rgb(18, 134, 205)"
+    },
+    {
+      "name": "gray-1000",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "green-1600",
+      "value": "rgb(0, 15, 12)"
+    },
+    {
+      "name": "indigo-400",
+      "value": "rgb(192, 201, 255)"
+    },
+    {
+      "name": "magenta-700",
+      "value": "rgb(255, 72, 133)"
+    },
+    {
+      "name": "pink-100",
+      "value": "rgb(255, 246, 252)"
+    },
+    {
+      "name": "purple-1200",
+      "value": "rgb(93, 0, 177)"
+    },
+    {
+      "name": "red-1500",
+      "value": "rgb(59, 11, 4)"
+    },
+    {
+      "name": "seafoam-300",
+      "value": "rgb(169, 237, 216)"
+    },
+    {
+      "name": "silver-600",
+      "value": "rgb(160, 160, 160)"
+    },
+    {
+      "name": "static-green-800",
+      "value": "rgb(7, 147, 85)"
+    },
+    {
+      "name": "static-red-600",
+      "value": "rgb(255, 118, 101)"
+    },
+    {
+      "name": "turquoise-300",
+      "value": "rgb(169, 236, 237)"
+    },
+    {
+      "name": "yellow-500",
+      "value": "rgb(230, 175, 0)"
+    },
+    {
+      "name": "green-visual-color",
+      "value": "rgb(11, 164, 93)"
+    },
+    {
+      "name": "yellow-visual-color",
+      "value": "rgb(210, 149, 0)"
+    },
+    {
+      "name": "negative-color-400",
+      "value": "rgb(255, 188, 180)"
+    },
+    {
+      "name": "notice-color-700",
+      "value": "rgb(232, 106, 0)"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(59, 99, 251)"
+    }
+  ],
+  "type": [],
+  "components": [],
+  "overview": "Adobe Spectrum — the cross-product design language behind Creative Cloud.",
+  "dos": ""
+}

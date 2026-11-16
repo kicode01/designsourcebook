@@ -1,0 +1,164 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1c1c1e",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-near-black",
+      "value": "#1c1c1e"
+    },
+    {
+      "name": "primary-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-blue-450",
+      "value": "#5b76fe"
+    },
+    {
+      "name": "primary-actionable-pressed",
+      "value": "#2a41b6"
+    },
+    {
+      "name": "light-pink",
+      "value": "#fde0f0"
+    },
+    {
+      "name": "light-red",
+      "value": "#fbd4d4"
+    },
+    {
+      "name": "light-dark-red",
+      "value": "#e3c5c5"
+    },
+    {
+      "name": "status-success",
+      "value": "#00b473"
+    },
+    {
+      "name": "neutral-slate",
+      "value": "#555a6a"
+    },
+    {
+      "name": "neutral-input-placeholder",
+      "value": "#a5a8b5"
+    },
+    {
+      "name": "neutral-border",
+      "value": "#c7cad5"
+    },
+    {
+      "name": "neutral-ring",
+      "value": "rgb(224,226,232)"
+    },
+    {
+      "name": "primary",
+      "value": "#1c1c1e"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 400,
+      "lineHeight": 1.15,
+      "letterSpacing": "-1.68px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 1.15,
+      "letterSpacing": "-1.44px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.72px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.35,
+      "letterSpacing": "-0.44px"
+    },
+    {
+      "name": "feature",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "body",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.45
+    },
+    {
+      "name": "button",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "17.5px",
+      "px": 17.5,
+      "fontWeight": 700,
+      "lineHeight": 1.29,
+      "letterSpacing": "0.175px"
+    },
+    {
+      "name": "body-standard",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.71
+    },
+    {
+      "name": "small",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.36px"
+    },
+    {
+      "name": "micro-uppercase",
+      "fontFamily": "Roobert PRO Medium",
+      "fontSize": "10.5px",
+      "px": 10.5,
+      "fontWeight": 400,
+      "lineHeight": 0.9
+    }
+  ],
+  "components": [],
+  "overview": "Miro's website is a clean, collaborative-tool-forward platform that communicates \"visual thinking\" through generous whitespace, pastel accent colors, and a confident geometric font. The design uses a predominantly white canvas with near-black text (#1c1c1e) and a distinctive pastel color palette — coral, rose, teal, orange, yellow, moss — each representing different collaboration contexts.\n\nThe typography uses Roobert PRO Medium as the primary display font with OpenType character variants (\"blwf\", \"cv03\", \"cv04\", \"cv09\", \"cv11\") and negative letter-spacing (-1.68px at 56px). Noto Sans handles body text with its own stylistic set (\"liga\" 0, \"ss01\", \"ss04\", \"ss05\"). The design is built with Framer, giving it smooth animations and modern component patterns.\n\nKey Characteristics:\n- White canvas with near-black (#1c1c1e) text\n- Roobert PRO Medium with multiple OpenType character variants\n-…",
+  "dos": "Do\n- Use pastel light/dark pairs for feature sections\n- Apply Roobert PRO with OpenType character variants\n- Use Blue 450 (#5b76fe) for interactive elements\nDon't\n- Don't use heavy shadows\n- Don't mix more than 2 pastel accents per section"
+}

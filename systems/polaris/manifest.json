@@ -1,0 +1,44 @@
+{
+  "name": "polaris",
+  "displayName": "Polaris",
+  "description": "Shopify Polaris — the design system for the Shopify admin.",
+  "style": "Shopify Polaris — the design system for the Shopify admin.",
+  "category": "Shopify",
+  "org": "Shopify",
+  "theme": "light",
+  "tags": [
+    "published",
+    "light",
+    "shopify",
+    "admin"
+  ],
+  "homepage": "https://polaris.shopify.com",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @shopify/polaris-tokens@9.4.2 (1 token files, 224 colours harvested, 91 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@shopify/polaris-tokens",
+    "version": "9.4.2",
+    "extra": []
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

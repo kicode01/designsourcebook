@@ -1,0 +1,515 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#e5f6fd",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "mistica-blau-blau-blue-primary20",
+      "value": "#e5f6fd"
+    },
+    {
+      "name": "mistica-blau-blau-blue-primary",
+      "value": "#00b6f1"
+    },
+    {
+      "name": "mistica-blau-blau-blue-secondary",
+      "value": "#0072bc"
+    },
+    {
+      "name": "mistica-blau-blau-blue-primary30",
+      "value": "#b3e9fb"
+    },
+    {
+      "name": "mistica-blau-blau-blue-secondary60",
+      "value": "#005a99"
+    },
+    {
+      "name": "mistica-blau-blau-blue-secondary10",
+      "value": "#e5f1f9"
+    },
+    {
+      "name": "mistica-blau-blau-blue-secondary20",
+      "value": "#b2d4ec"
+    },
+    {
+      "name": "mistica-blau-blau-blue-secondary30",
+      "value": "#80b7df"
+    },
+    {
+      "name": "mistica-o2-o2-blue-primary",
+      "value": "#0019a5"
+    },
+    {
+      "name": "mistica-o2-o2-blue-primary70",
+      "value": "#000066"
+    },
+    {
+      "name": "mistica-o2-o2-blue-primary10",
+      "value": "#e5e8f6"
+    },
+    {
+      "name": "mistica-o2-o2-blue-primary30",
+      "value": "#808cd2"
+    },
+    {
+      "name": "mistica-o2-o2-blue-primary15",
+      "value": "#ccd1ed"
+    },
+    {
+      "name": "mistica-o2-dark-mode-o2-blue-primary",
+      "value": "#0020d6"
+    },
+    {
+      "name": "mistica-o2-dark-mode-o2-blue-primary-dark",
+      "value": "#000099"
+    },
+    {
+      "name": "mistica-tu-primary",
+      "value": "#2b3447"
+    },
+    {
+      "name": "mistica-tu-primary80",
+      "value": "#161a24"
+    },
+    {
+      "name": "mistica-tu-primary65",
+      "value": "#202735"
+    },
+    {
+      "name": "mistica-tu-primary45",
+      "value": "#555d6c"
+    },
+    {
+      "name": "mistica-tu-primary15",
+      "value": "#d5d6da"
+    },
+    {
+      "name": "blau-blue-primary",
+      "value": "#00B6F1"
+    },
+    {
+      "name": "blau-blue-primary10",
+      "value": "#F7FDFF"
+    },
+    {
+      "name": "blau-blue-primary20",
+      "value": "#E5F6FD"
+    },
+    {
+      "name": "blau-blue-primary30",
+      "value": "#B3E9FB"
+    },
+    {
+      "name": "blau-blue-secondary",
+      "value": "#0072BC"
+    },
+    {
+      "name": "blau-blue-secondary10",
+      "value": "#E5F1F9"
+    },
+    {
+      "name": "blau-blue-secondary20",
+      "value": "#B2D4EC"
+    },
+    {
+      "name": "blau-blue-secondary30",
+      "value": "#80B7DF"
+    },
+    {
+      "name": "blau-blue-secondary60",
+      "value": "#005A99"
+    },
+    {
+      "name": "o2-blue-primary",
+      "value": "#0019A5"
+    },
+    {
+      "name": "o2-blue-primary70",
+      "value": "#000066"
+    },
+    {
+      "name": "o2-blue-primary90",
+      "value": "#000033"
+    },
+    {
+      "name": "o2-blue-primary30",
+      "value": "#808CD2"
+    },
+    {
+      "name": "o2-blue-primary15",
+      "value": "#CCD1ED"
+    },
+    {
+      "name": "o2-blue-primary10",
+      "value": "#E5E8F6"
+    },
+    {
+      "name": "dark-mode-o2-blue-primary",
+      "value": "#0020D6"
+    },
+    {
+      "name": "dark-mode-o2-blue-primary-dark",
+      "value": "#000099"
+    },
+    {
+      "name": "primary",
+      "value": "#e5f6fd"
+    },
+    {
+      "name": "primary10",
+      "value": "#EAEBED"
+    },
+    {
+      "name": "primary15",
+      "value": "#D5D6DA"
+    },
+    {
+      "name": "primary45",
+      "value": "#555D6C"
+    },
+    {
+      "name": "primary65",
+      "value": "#202735"
+    },
+    {
+      "name": "primary80",
+      "value": "#161A24"
+    },
+    {
+      "name": "mistica-blau-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mistica-blau-blau-green70",
+      "value": "#1d7f00"
+    },
+    {
+      "name": "mistica-blau-blau-yellow40",
+      "value": "#ffc364"
+    },
+    {
+      "name": "mistica-esimflag-tomato65",
+      "value": "#b61515"
+    },
+    {
+      "name": "mistica-esimflag-peach10",
+      "value": "#fff4d5"
+    },
+    {
+      "name": "mistica-esimflag-dark-mode-grey6",
+      "value": "#14213d"
+    },
+    {
+      "name": "mistica-movistar-new-red",
+      "value": "#c10000"
+    },
+    {
+      "name": "mistica-movistar-new-yellow200",
+      "value": "#fff3d1"
+    },
+    {
+      "name": "mistica-movistar-new-yellow",
+      "value": "#edb800"
+    },
+    {
+      "name": "mistica-movistar-pepper55",
+      "value": "#d73241"
+    },
+    {
+      "name": "mistica-movistar-egg55",
+      "value": "#d97d0d"
+    },
+    {
+      "name": "mistica-movistar-movistar-blue40",
+      "value": "#4dbaf7"
+    },
+    {
+      "name": "mistica-o2-new-o2-red10",
+      "value": "#ffeeee"
+    },
+    {
+      "name": "mistica-o2-new-o2-orange60",
+      "value": "#f06c00"
+    },
+    {
+      "name": "mistica-o2-new-beyond-blue40",
+      "value": "#4d84ff"
+    },
+    {
+      "name": "mistica-o2-grey5",
+      "value": "#707070"
+    },
+    {
+      "name": "mistica-o2-grey4",
+      "value": "#999999"
+    },
+    {
+      "name": "mistica-telefonica-grey1",
+      "value": "#f7f7ff"
+    },
+    {
+      "name": "mistica-telefonica-turquoise10",
+      "value": "#ebffff"
+    },
+    {
+      "name": "mistica-telefonica-coral",
+      "value": "#d6786b"
+    },
+    {
+      "name": "mistica-tu-blue",
+      "value": "#4343ff"
+    },
+    {
+      "name": "mistica-tu-red40",
+      "value": "#db8275"
+    },
+    {
+      "name": "mistica-tu-orange55",
+      "value": "#d5c77d"
+    },
+    {
+      "name": "mistica-vivo-new-vivo-purple-light50",
+      "value": "#b280cc"
+    },
+    {
+      "name": "mistica-vivo-new-dark-mode-grey",
+      "value": "#242424"
+    },
+    {
+      "name": "mistica-vivo-grey5",
+      "value": "#666666"
+    },
+    {
+      "name": "mistica-vivo-vivo-green-dark",
+      "value": "#225c3d"
+    },
+    {
+      "name": "blau-purple",
+      "value": "#7814B3"
+    },
+    {
+      "name": "blau-red",
+      "value": "#D12937"
+    },
+    {
+      "name": "dark-mode-black",
+      "value": "#191919"
+    },
+    {
+      "name": "grass",
+      "value": "#99D52A"
+    },
+    {
+      "name": "teal",
+      "value": "#2FDDEA"
+    },
+    {
+      "name": "movistar-black",
+      "value": "#262423"
+    },
+    {
+      "name": "salmon100",
+      "value": "#FEEEE6"
+    },
+    {
+      "name": "emerald-high",
+      "value": "#036D30"
+    },
+    {
+      "name": "grey500",
+      "value": "#807D7B"
+    },
+    {
+      "name": "movistar-blue-hc65",
+      "value": "#055398"
+    },
+    {
+      "name": "pepper60",
+      "value": "#CC2C3B"
+    },
+    {
+      "name": "dark-mode-grey2",
+      "value": "#EAEBEE"
+    },
+    {
+      "name": "dark-blue",
+      "value": "#00008C"
+    },
+    {
+      "name": "o2-orange75",
+      "value": "#996336"
+    },
+    {
+      "name": "grey30",
+      "value": "#D9D9DD"
+    },
+    {
+      "name": "telefonica-blue10",
+      "value": "#E5F0FF"
+    },
+    {
+      "name": "coral",
+      "value": "#d6786b"
+    },
+    {
+      "name": "turquoise10",
+      "value": "#ebffff"
+    },
+    {
+      "name": "orange70",
+      "value": "#958946"
+    },
+    {
+      "name": "vivo-purple-light20",
+      "value": "#E0CCEB"
+    }
+  ],
+  "type": [
+    {
+      "name": "mistica-font-size-10",
+      "fontFamily": "system-ui",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "mistica-font-size-9",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "mistica-font-size-8",
+      "fontFamily": "system-ui",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "mistica-font-size-7",
+      "fontFamily": "system-ui",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "mistica-font-size-6",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mistica-font-size-title4",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mistica-font-size-5",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "mistica-font-size-title3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "mistica-font-size-card-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "mistica-font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mistica-font-size-loading-screen-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mistica-font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "mistica-font-size-tabs-label",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "mistica-font-size-title2",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "mistica-font-size-input-value",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "mistica-font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mistica-font-size-chip-label",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mistica-font-size-stepper-step-label",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mistica-font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mistica-font-size-title1",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mistica-font-size-input-label",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mistica-font-size-input-helper-text",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "button-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    }
+  ],
+  "components": [],
+  "overview": "undefined",
+  "dos": ""
+}

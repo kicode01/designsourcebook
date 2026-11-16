@@ -1,0 +1,170 @@
+{
+  "canvas": "#282b31",
+  "surface": "#282b31",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#0052ff",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "56px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-coinbase-blue",
+      "value": "#0052ff"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-near-black",
+      "value": "#0a0b0d"
+    },
+    {
+      "name": "primary-cool-gray-surface",
+      "value": "#eef0f3"
+    },
+    {
+      "name": "interactive-hover-blue",
+      "value": "#578bfa"
+    },
+    {
+      "name": "interactive-link-blue",
+      "value": "#0667d0"
+    },
+    {
+      "name": "interactive-muted-blue",
+      "value": "#5b616e"
+    },
+    {
+      "name": "surface-dark-card",
+      "value": "#282b31"
+    },
+    {
+      "name": "surface-light",
+      "value": "rgba(247,247,247,0.88)"
+    },
+    {
+      "name": "primary",
+      "value": "#0052ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "display-secondary",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "display-third",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "52px",
+      "px": 52,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.11
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.13
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.33
+    },
+    {
+      "name": "body",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.56
+    },
+    {
+      "name": "body-bold",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body-semibold",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "body-small",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "button",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.16px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "small",
+      "fontFamily": "CoinbaseDisplay",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 600,
+      "lineHeight": 1.23
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary-pill",
+      "kind": "button",
+      "backgroundColor": "#eef0f3",
+      "rounded": "56px",
+      "border": "1px solid matching background"
+    }
+  ],
+  "overview": "Coinbase's website is a clean, trustworthy crypto platform that communicates financial reliability through a blue-and-white binary palette. The design uses Coinbase Blue (#0052ff) — a deep, saturated blue — as the singular brand accent against white and near-black surfaces. The proprietary font family includes CoinbaseDisplay for hero headlines, CoinbaseSans for UI text, CoinbaseText for body reading, and CoinbaseIcons for iconography — a comprehensive four-font system.\n\nThe button system uses a distinctive 56px radius for pill-shaped CTAs with hover transitions to a lighter blue (#578bfa). The design alternates between white content sections and dark (#0a0b0d, #282b31) feature sections, creating a professional, financial-grade interface.\n\nKey Characteristics:\n- Coinbase Blue (#0052ff) as singular brand accent\n- Four-font proprietary family: Display, Sans, Text, Icons\n- 56px radius pill…",
+  "dos": "Do\n- Use Coinbase Blue (#0052ff) for primary interactive elements\n- Apply 56px radius for all CTA buttons\n- Use CoinbaseDisplay for hero headings only\n- Alternate dark (#0a0b0d) and white sections\n\nDon't\n- Don't use the blue decoratively — it's functional only\n- Don't use sharp corners on CTAs — 56px minimum"
+}

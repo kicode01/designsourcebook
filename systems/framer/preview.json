@@ -1,0 +1,233 @@
+{
+  "canvas": "#000000",
+  "surface": "#000000",
+  "text": "#ffffff",
+  "muted": "#a6a6a6",
+  "brand": "#a6a6a6",
+  "border": "color-mix(in srgb, #ffffff 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary-pure-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary-framer-blue",
+      "value": "#0099ff"
+    },
+    {
+      "name": "brand-muted-silver",
+      "value": "#a6a6a6"
+    },
+    {
+      "name": "brand-near-black",
+      "value": "#090909"
+    },
+    {
+      "name": "bg-void-black",
+      "value": "#000000"
+    },
+    {
+      "name": "bg-frosted-white",
+      "value": "rgba(255, 255, 255, 0.1)"
+    },
+    {
+      "name": "bg-subtle-white",
+      "value": "rgba(255, 255, 255, 0.5)"
+    },
+    {
+      "name": "text-pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-muted-silver",
+      "value": "#a6a6a6"
+    },
+    {
+      "name": "text-ghost-white",
+      "value": "rgba(255, 255, 255, 0.6)"
+    },
+    {
+      "name": "brand-framer-blue",
+      "value": "#0099ff"
+    },
+    {
+      "name": "brand-blue-glow",
+      "value": "rgba(0, 153, 255, 0.15)"
+    },
+    {
+      "name": "brand-default-link-blue",
+      "value": "#0000ee"
+    },
+    {
+      "name": "primary",
+      "value": "#a6a6a6"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "110px",
+      "px": 110,
+      "fontWeight": 500,
+      "lineHeight": 0.85,
+      "letterSpacing": "-5.5px"
+    },
+    {
+      "name": "section-display",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "85px",
+      "px": 85,
+      "fontWeight": 500,
+      "lineHeight": 0.95,
+      "letterSpacing": "-4.25px"
+    },
+    {
+      "name": "section-heading",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "62px",
+      "px": 62,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "-3.1px"
+    },
+    {
+      "name": "accent-display",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "61.5px",
+      "px": 61.5,
+      "fontWeight": 100,
+      "lineHeight": 1,
+      "letterSpacing": "-3.1px"
+    },
+    {
+      "name": "feature-heading",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 500,
+      "lineHeight": 1.13,
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.01px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.8px"
+    },
+    {
+      "name": "sub-heading",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.8px"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.01px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.01px"
+    },
+    {
+      "name": "nav-ui",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.15px"
+    },
+    {
+      "name": "body-readable",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "caption",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "label",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "small-caption",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "micro-code",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "10.4px",
+      "px": 10.4,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "badge",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "9px",
+      "px": 9,
+      "fontWeight": 600,
+      "lineHeight": 1.11
+    },
+    {
+      "name": "micro-uppercase",
+      "fontFamily": "GT Walsheim Framer Medium",
+      "fontSize": "7px",
+      "px": 7,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "0.21px"
+    }
+  ],
+  "components": [],
+  "overview": "Framer's website is a cinematic, tool-obsessed dark canvas that radiates the confidence of a design tool built by designers who worship craft. The entire experience is drenched in pure black — not a warm charcoal or a cozy dark gray, but an absolute void (#000000) that makes every element, every screenshot, every typographic flourish feel like it's floating in deep space. This is a website that treats its own product UI as the hero art, embedding full-fidelity screenshots and interactive demos directly into the narrative flow.\n\nThe typography is the signature move: GT Walsheim with aggressively tight letter-spacing (as extreme as -5.5px on 110px display text) creates headlines that feel compressed, kinetic, almost spring-loaded — like words under pressure that might expand at any moment. The transition to Inter for body text is seamless, with extensive OpenType feature usage (cv01,…",
+  "dos": "Do\n- Use pure black (#000000) as the primary background — not dark gray, not charcoal\n- Apply extreme negative letter-spacing on GT Walsheim display text (-3px to -5.5px)\n- Keep all buttons pill-shaped (40px+ radius) — never use squared or slightly-rounded buttons\n- Use Framer Blue (#0099ff) exclusively for interactive accents — links, borders, focus states\n- Deploy rgba(255, 255, 255, 0.1) for frosted glass surfaces on dark backgrounds\n- Maintain GT Walsheim at weight 500 only — the medium weight IS the brand\n- Use extensive OpenType features on Inter text (cv01, cv05, cv09, cv11, ss03, ss07)\n- Let product screenshots be the visual centerpiece — the tool markets itself\n- Apply blue ring shadows (rgba(0, 153, 255, 0.15) 0px 0px 0px 1px) for card containment\n\nDon't\n- Use warm dark backgrounds (no #1a1a1a, #2d2d2d, or brownish blacks)\n- Apply bold (700+) weight to GT Walsheim display text…"
+}

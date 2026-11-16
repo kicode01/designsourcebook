@@ -1,0 +1,41 @@
+{
+  "name": "ca",
+  "displayName": "CA Technologies Mineral UI",
+  "description": "CA CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.",
+  "style": "CA CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.",
+  "category": "CA",
+  "org": "CA",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "dark",
+    "ca"
+  ],
+  "homepage": "https://github.com/mineral-ui/mineral-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/mineral-ui/mineral-ui — 11 token files, 1053 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/mineral-ui/mineral-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 10,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

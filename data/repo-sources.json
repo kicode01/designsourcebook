@@ -1,0 +1,461 @@
+{
+  "note": "All missing organisations with a curated public repo.",
+  "sources": [
+    {
+      "repo": "https://github.com/at-ui/at-ui",
+      "slug": "at",
+      "org": "AT",
+      "name": "AT UIKIT"
+    },
+    {
+      "repo": "https://github.com/buildo/bento-design-system",
+      "slug": "bento",
+      "org": "Bento",
+      "name": "Bento DS"
+    },
+    {
+      "repo": "https://github.com/takenet/blip-ds",
+      "slug": "blip",
+      "org": "BLiP",
+      "name": "BLiP"
+    },
+    {
+      "repo": "https://github.com/palantir/blueprint",
+      "slug": "blueprint",
+      "org": "Blueprint",
+      "name": "Blueprint"
+    },
+    {
+      "repo": "https://github.com/laboratoriobridge/bold",
+      "slug": "bridgedesignsystem",
+      "org": "Bridge Design System",
+      "name": "Bold (Bridge Design System)"
+    },
+    {
+      "repo": "https://github.com/seek-oss/braid-design-system",
+      "slug": "braid",
+      "org": "Braid",
+      "name": "Braid Design System"
+    },
+    {
+      "repo": "https://github.com/buildit/gravity-ui-web",
+      "slug": "buildit",
+      "org": "Buildit",
+      "name": "Buildit Gravity"
+    },
+    {
+      "repo": "https://github.com/buzzfeed/solid",
+      "slug": "buzzfeed",
+      "org": "BuzzFeed",
+      "name": "BuzzFeed Solid"
+    },
+    {
+      "repo": "https://github.com/arco-design/arco-design",
+      "slug": "bytedance",
+      "org": "ByteDance",
+      "name": "ByteDance Arco Design"
+    },
+    {
+      "repo": "https://github.com/mineral-ui/mineral-ui",
+      "slug": "ca",
+      "org": "CA",
+      "name": "CA Technologies Mineral UI"
+    },
+    {
+      "repo": "https://github.com/CityOfBoston/digital",
+      "slug": "city",
+      "org": "City",
+      "name": "City of Boston Fleet"
+    },
+    {
+      "repo": "https://github.com/cloudflare/kumo",
+      "slug": "cloudflare",
+      "org": "Cloudflare",
+      "name": "Cloudflare Kumo"
+    },
+    {
+      "repo": "https://github.com/contentful/forma-36",
+      "slug": "contentful",
+      "org": "Contentful",
+      "name": "Contentful Forma 36"
+    },
+    {
+      "repo": "https://github.com/saadeghi/daisyui",
+      "slug": "daisyui",
+      "org": "daisyUI",
+      "name": "daisyUI"
+    },
+    {
+      "repo": "https://github.com/decentraland/ui",
+      "slug": "decentraland",
+      "org": "Decentraland",
+      "name": "Decentraland UI"
+    },
+    {
+      "repo": "https://github.com/dhis2/ui",
+      "slug": "dhis2",
+      "org": "DHIS2",
+      "name": "DHIS2 UI"
+    },
+    {
+      "repo": "https://github.com/eBay/evo-web",
+      "slug": "ebay",
+      "org": "eBay",
+      "name": "eBay Skin"
+    },
+    {
+      "repo": "https://github.com/segmentio/evergreen",
+      "slug": "evergreen",
+      "org": "Evergreen",
+      "name": "Evergreen"
+    },
+    {
+      "repo": "https://github.com/themesberg/flowbite",
+      "slug": "flowbite",
+      "org": "Flowbite",
+      "name": "Flowbite Design System"
+    },
+    {
+      "repo": "https://github.com/foundation/foundation-sites",
+      "slug": "foundation",
+      "org": "Foundation",
+      "name": "Foundation"
+    },
+    {
+      "repo": "https://github.com/GouvernementFR/dsfr",
+      "slug": "french",
+      "org": "French",
+      "name": "French Government Design System"
+    },
+    {
+      "repo": "https://github.com/material-components/material-web",
+      "slug": "google",
+      "org": "Google",
+      "name": "Google Material Design"
+    },
+    {
+      "repo": "https://github.com/grafana/grafana/tree/main/packages/grafana-ui",
+      "slug": "grafana",
+      "org": "Grafana",
+      "name": "Grafana UI"
+    },
+    {
+      "repo": "https://github.com/gympass/yoga",
+      "slug": "gympass",
+      "org": "Gympass",
+      "name": "Gympass Yoga"
+    },
+    {
+      "repo": "https://github.com/hipuku/haus",
+      "slug": "haus",
+      "org": "haus",
+      "name": "haus"
+    },
+    {
+      "repo": "https://github.com/heroui-inc/heroui",
+      "slug": "heroui",
+      "org": "HeroUI",
+      "name": "HeroUI"
+    },
+    {
+      "repo": "https://github.com/grommet/grommet",
+      "slug": "hewlett",
+      "org": "Hewlett",
+      "name": "Hewlett Packard grommet"
+    },
+    {
+      "repo": "https://github.com/italia/design-web-toolkit",
+      "slug": "italia",
+      "org": "Italia",
+      "name": "Italia Design System"
+    },
+    {
+      "repo": "https://javadbat.github.io/design-system",
+      "slug": "jb",
+      "org": "JB",
+      "name": "JB Design System"
+    },
+    {
+      "repo": "https://github.com/JetBrains/ring-ui",
+      "slug": "jetbrains",
+      "org": "JetBrains",
+      "name": "JetBrains Ring UI"
+    },
+    {
+      "repo": "https://github.com/justeattakeaway/pie",
+      "slug": "just",
+      "org": "Just",
+      "name": "Just Eat Takeaway.com PIE Design System"
+    },
+    {
+      "repo": "https://github.com/cultureamp/kaizen-design-system",
+      "slug": "kaizen",
+      "org": "Kaizen",
+      "name": "Kaizen"
+    },
+    {
+      "repo": "https://github.com/learningequality/kolibri-design-system",
+      "slug": "kolibri",
+      "org": "KoliBri",
+      "name": "KoliBri"
+    },
+    {
+      "repo": "https://github.com/skbkontur/retail-ui/",
+      "slug": "kontur",
+      "org": "Kontur",
+      "name": "Kontur"
+    },
+    {
+      "repo": "https://github.com/KRDS-uiux/krds-uiux",
+      "slug": "korea",
+      "org": "Korea",
+      "name": "Korea Design System"
+    },
+    {
+      "repo": "https://github.com/mantinedev/mantine",
+      "slug": "mantine",
+      "org": "Mantine",
+      "name": "Mantine"
+    },
+    {
+      "repo": "https://github.com/mdbootstrap/mdb-ui-kit",
+      "slug": "material",
+      "org": "Material",
+      "name": "Material Minimal"
+    },
+    {
+      "repo": "https://github.com/Dogfalo/materialize",
+      "slug": "materialize",
+      "org": "Materialize",
+      "name": "Materialize CSS"
+    },
+    {
+      "repo": "https://github.com/mui/material-ui",
+      "slug": "mui",
+      "org": "MUI:",
+      "name": "MUI: Base UI"
+    },
+    {
+      "repo": "https://github.com/nasa/nasawds",
+      "slug": "nasa",
+      "org": "NASA",
+      "name": "NASA Web Design System"
+    },
+    {
+      "repo": "https://github.com/ITS-HCD/nysds",
+      "slug": "new",
+      "org": "New",
+      "name": "New York State Design System"
+    },
+    {
+      "repo": "https://github.com/okta/odyssey",
+      "slug": "okta",
+      "org": "Okta",
+      "name": "Okta Odyssey Design System"
+    },
+    {
+      "repo": "https://designsystem.ontario.ca/docs/documentation/release-notes.html#latest",
+      "slug": "ontario",
+      "org": "Ontario",
+      "name": "Ontario Design System"
+    },
+    {
+      "repo": "https://github.com/privy-open-source/design-system",
+      "slug": "persona",
+      "org": "Persona",
+      "name": "Persona Design System"
+    },
+    {
+      "repo": "https://github.com/ithaka/pharos",
+      "slug": "pharos",
+      "org": "Pharos:",
+      "name": "Pharos: JSTOR's Design System"
+    },
+    {
+      "repo": "https://github.com/pivotal-cf/pivotal-ui",
+      "slug": "pivotal",
+      "org": "Pivotal",
+      "name": "Pivotal"
+    },
+    {
+      "repo": "https://github.com/porsche-design-system/porsche-design-system",
+      "slug": "porsche",
+      "org": "Porsche",
+      "name": "Porsche Design System"
+    },
+    {
+      "repo": "https://github.com/priceline/design-system",
+      "slug": "priceline",
+      "org": "Priceline",
+      "name": "Priceline Design System"
+    },
+    {
+      "repo": "https://github.com/pusher/chameleon",
+      "slug": "pusher",
+      "org": "Pusher",
+      "name": "Pusher Chameleon"
+    },
+    {
+      "repo": "https://github.com/rambler-digital-solutions/rambler-ui",
+      "slug": "rambler",
+      "org": "Rambler",
+      "name": "Rambler"
+    },
+    {
+      "repo": "https://github.com/patternfly/patternfly-react",
+      "slug": "red",
+      "org": "Red",
+      "name": "Red Hat PatternFly"
+    },
+    {
+      "repo": "https://github.com/Kajabi/sage-lib",
+      "slug": "sage",
+      "org": "Sage",
+      "name": "Sage by Kajabi"
+    },
+    {
+      "repo": "https://github.com/SAP/ui5-webcomponents",
+      "slug": "sap",
+      "org": "SAP",
+      "name": "SAP Fiori"
+    },
+    {
+      "repo": "https://github.com/scania-digital-design-system/tegel",
+      "slug": "scania",
+      "org": "Scania",
+      "name": "Scania Digital Design System"
+    },
+    {
+      "repo": "https://github.com/DouyinFE/semi-design",
+      "slug": "semi",
+      "org": "Semi",
+      "name": "Semi Design"
+    },
+    {
+      "repo": "https://github.com/semrush/intergalactic",
+      "slug": "semrush",
+      "org": "Semrush",
+      "name": "Semrush Intergalactic Design System"
+    },
+    {
+      "repo": "https://github.com/shoelace-style/shoelace",
+      "slug": "shoelace",
+      "org": "Shoelace",
+      "name": "Shoelace"
+    },
+    {
+      "repo": "https://github.com/shadcn-ui",
+      "slug": "shadcnui",
+      "org": "Shadcn/ui",
+      "name": "Shadcn/ui"
+    },
+    {
+      "repo": "https://github.com/siemens/ix",
+      "slug": "siemens",
+      "org": "Siemens",
+      "name": "Siemens iX"
+    },
+    {
+      "repo": "https://github.com/govtechsg/sgds",
+      "slug": "singapore",
+      "org": "Singapore",
+      "name": "Singapore Government Design System"
+    },
+    {
+      "repo": "https://github.com/strapi/design-system",
+      "slug": "strapi",
+      "org": "Strapi",
+      "name": "Strapi Design System"
+    },
+    {
+      "repo": "https://github.com/Telefonica/mistica",
+      "slug": "telefnica",
+      "org": "Telefónica",
+      "name": "Telefónica Mística"
+    },
+    {
+      "repo": "https://github.com/Tencent/tdesign-react",
+      "slug": "tencent",
+      "org": "Tencent",
+      "name": "Tencent TDesign"
+    },
+    {
+      "repo": "https://github.com/uber-web/baseui",
+      "slug": "ubers",
+      "org": "Uber's",
+      "name": "Uber's Base Web"
+    },
+    {
+      "repo": "https://github.com/uiverse-io/galaxy",
+      "slug": "uiverse",
+      "org": "Uiverse",
+      "name": "Uiverse"
+    },
+    {
+      "repo": "https://github.com/untitleduico/react/",
+      "slug": "untitled",
+      "org": "Untitled",
+      "name": "Untitled UI"
+    },
+    {
+      "repo": "https://github.com/matt-pasek/usva",
+      "slug": "usva",
+      "org": "usva.",
+      "name": "usva."
+    },
+    {
+      "repo": "https://github.com/uswds/uswds",
+      "slug": "us",
+      "org": "U.S.",
+      "name": "U.S. Web Design Standards"
+    },
+    {
+      "repo": "https://github.com/mondaycom/vibe",
+      "slug": "vibe",
+      "org": "Vibe",
+      "name": "Vibe"
+    },
+    {
+      "repo": "https://github.com/vtex/styleguide",
+      "slug": "vtex",
+      "org": "VTEX",
+      "name": "VTEX Styleguide"
+    },
+    {
+      "repo": "https://github.com/viljamis/vue-design-system",
+      "slug": "vue",
+      "org": "Vue",
+      "name": "Vue Design System"
+    },
+    {
+      "repo": "https://github.com/wework/ray",
+      "slug": "ray",
+      "org": "Ray",
+      "name": "Ray by WeWork"
+    },
+    {
+      "repo": "https://github.com/WTTJ/welcome-ui",
+      "slug": "welcome",
+      "org": "Welcome",
+      "name": "Welcome UI"
+    },
+    {
+      "repo": "https://github.com/wmcadigital/wmn-design-system",
+      "slug": "west",
+      "org": "West",
+      "name": "West Midlands Network Design System"
+    },
+    {
+      "repo": "https://github.com/Workday/canvas-kit",
+      "slug": "workday",
+      "org": "Workday",
+      "name": "Workday Canvas"
+    },
+    {
+      "repo": "https://github.com/shadcn-ui/ui",
+      "slug": "shadcn-ui",
+      "org": "Shadcn/ui",
+      "name": "Shadcn/ui"
+    }
+  ]
+}
