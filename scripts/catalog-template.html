@@ -209,7 +209,11 @@
   .sheet .type-spec b{color:inherit;opacity:.85}
   .type-demo{flex:1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 
-  .notes p{font-size:13px;line-height:1.7;color:var(--dim);margin:0 0 12px;white-space:pre-wrap}
+  .notes p{font-size:13px;line-height:1.7;color:var(--dim);margin:0 0 12px}
+  .notes h4{font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin:16px 0 8px}
+  .notes ul{margin:0 0 14px;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.65;color:var(--dim)}
+  .notes strong{color:var(--ink);font-weight:560}
+  .notes code{font-family:var(--mono);font-size:11.5px;padding:1.5px 5px;border-radius:4px;background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid var(--line);color:var(--ink)}
   .cmd{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:10px 14px;font-family:var(--mono);font-size:12px;color:var(--ink)}
   .cmd code{flex:1;overflow-x:auto;white-space:nowrap}
   .cmd-stack{display:flex;flex-direction:column;gap:9px}
@@ -1061,7 +1065,34 @@ function detailHtml(d){
       safeCss(t.fontWeight||400)+';letter-spacing:'+safeCss(t.letterSpacing||'normal')+';line-height:1.2">The quick brown fox jumps over the lazy dog</div></div>';
   }).join('');
 
-  const notes=[d.overview&&'<p>'+esc(d.overview)+'</p>',d.dos&&'<p>'+esc(d.dos)+'</p>'].filter(Boolean).join('');
+  function inlineMd(s){
+    return esc(s)
+      .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+      .replace(/`([^`]+)`/g,'<code>$1</code>');
+  }
+  function renderMd(raw){
+    if(!raw) return '';
+    const lines=String(raw).split(/\r?\n/);
+    const out=[];
+    let inList=false;
+    for(const ln of lines){
+      const t=ln.trim();
+      if(!t){ if(inList){ out.push('</ul>'); inList=false; } continue; }
+      if(/^#{2,4}\s+/.test(t)){
+        if(inList){ out.push('</ul>'); inList=false; }
+        out.push('<h4>'+inlineMd(t.replace(/^#{2,4}\s+/,''))+'</h4>');
+      }else if(/^[-*]\s+/.test(t)){
+        if(!inList){ out.push('<ul>'); inList=true; }
+        out.push('<li>'+inlineMd(t.replace(/^[-*]\s+/,''))+'</li>');
+      }else{
+        if(inList){ out.push('</ul>'); inList=false; }
+        out.push('<p>'+inlineMd(t)+'</p>');
+      }
+    }
+    if(inList) out.push('</ul>');
+    return out.join('');
+  }
+  const notes=[renderMd(d.overview),renderMd(d.dos)].filter(Boolean).join('');
   const backLabel=state.view==='ranking'?'Ranking':state.view==='coverage'?'Coverage':'Catalog';
 
   return '<div class="detail-bar">'+
