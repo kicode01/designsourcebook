@@ -234,7 +234,7 @@
 <div class="top-loader" id="topLoader"></div>
 <header class="top">
   <div class="bar">
-    <div class="brand" id="brandHome" title="Return to Design Sourcebook"><b>Design Sourcebook</b><span>Design systems, rendered</span></div>
+    <div class="brand" id="brandHome" title="Return to Design Sourcebook"><b>Design Sourcebook</b></div>
     <div class="search">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Search intent, name, or tag — dark dashboard, fintech…" autocomplete="off">
@@ -765,7 +765,6 @@ const grid=document.getElementById('grid');
 const pagerEl=document.getElementById('pager');
 const detail=document.getElementById('detail');
 const index=document.getElementById('index');
-document.querySelector('.brand span').textContent=DATA.length+' systems, rendered';
 const listedChip=document.querySelector('.chip[data-f="listed"]');
 if(listedChip && !DATA.some(d=>d.provenance==='listed')) listedChip.style.display='none';
 
