@@ -91,11 +91,11 @@ for (const slug of dirs) {
   const colors = data.colors || {};
   const typography = data.typography || {};
   const vlMatch = /## (?:Visual Language|Do's and Don'ts|Guidelines)\s+([\s\S]*?)(?=\n## |\s*$)/i.exec(md);
-  const cleanOverview =
-    old.overview && !/tokens read from|read from the rendered page|tokens imported from|read from .* live stylesheets/i.test(old.overview)
-      ? old.overview
-      : `${manifest.displayName || slug} — ${manifest.style || data.description || "Verified design system tokens."}`;
-  const cleanDos = old.dos || (vlMatch ? vlMatch[1].trim() : "");
+  const isGeneratedOverview = !old.overview || /tokens read from|read from the rendered page|tokens imported from|read from .* live stylesheets|canvas, .* typography, .* brand accent/i.test(old.overview);
+  const cleanOverview = !isGeneratedOverview
+    ? old.overview
+    : `${manifest.displayName || slug} — ${manifest.style || data.description || "Verified design system tokens."}`;
+  const cleanDos = (vlMatch ? vlMatch[1].trim() : "") || old.dos || "";
   const next = buildPreview({
     colors,
     typography,
