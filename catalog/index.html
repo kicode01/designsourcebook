@@ -769,64 +769,35 @@ document.querySelector('.brand span').textContent=DATA.length+' systems, rendere
 const listedChip=document.querySelector('.chip[data-f="listed"]');
 if(listedChip && !DATA.some(d=>d.provenance==='listed')) listedChip.style.display='none';
 
-function buildPagerHtml(total,page,pageSize,loadedPages){
-  if(total<=24 && pageSize>=24) return '';
-  const effSize=pageSize||total;
+function buildPagerHtml(total,page,pageSize){
+  const effSize=pageSize||24;
   const totalPages=Math.max(1,Math.ceil(total/effSize));
+  if(totalPages<=1) return '';
   const curPage=Math.min(Math.max(1,page),totalPages);
-  const startIdx=(curPage-1)*effSize;
-  const endIdx=Math.min(total,(curPage-1+loadedPages)*effSize);
-  const rem=Math.max(0,total-endIdx);
-  const nextBatch=Math.min(effSize,rem);
-
   const pages=[];
-  const activeEndPage=Math.min(totalPages,curPage+loadedPages-1);
-  const pushPage=p=>pages.push('<button type="button" class="pager-btn" data-pg="'+p+'"'+(p>=curPage&&p<=activeEndPage?' aria-current="page"':'')+'>'+p+'</button>');
+  const pushPage=p=>pages.push('<button type="button" class="pager-btn" data-pg="'+p+'"'+(p===curPage?' aria-current="page"':'')+'>'+p+'</button>');
   if(totalPages<=9){
     for(let p=1;p<=totalPages;p++) pushPage(p);
   }else{
     pushPage(1);
     if(curPage>3) pages.push('<span class="pager-dots">\u2026</span>');
     const pStart=Math.max(2,curPage-1);
-    const pEnd=Math.min(totalPages-1,activeEndPage+1);
+    const pEnd=Math.min(totalPages-1,curPage+1);
     for(let p=pStart;p<=pEnd;p++) pushPage(p);
-    if(activeEndPage<totalPages-2) pages.push('<span class="pager-dots">\u2026</span>');
+    if(curPage<totalPages-2) pages.push('<span class="pager-dots">\u2026</span>');
     pushPage(totalPages);
   }
-
   return '<div class="pager">'+
-    (rem>0?'<button type="button" class="pager-load" data-pg-more>Load '+nextBatch+' more <span style="opacity:.65;font-weight:400">('+(startIdx+1)+'\u2013'+endIdx+' of '+total+' shown)</span></button>':'')+
-    '<div class="pager-bar">'+
-      '<span class="pager-info">Showing '+(startIdx+1)+'\u2013'+endIdx+' of '+total+' systems (Page '+curPage+(loadedPages>1?'\u2013'+activeEndPage:'')+' of '+totalPages+')</span>'+
-      (totalPages>1
-        ? '<div class="pager-pages">'+
-            '<button type="button" class="pager-btn" data-pg="'+(curPage-1)+'"'+(curPage<=1?' disabled':'')+'>\u2190 Prev</button>'+
-            pages.join('')+
-            '<button type="button" class="pager-btn" data-pg="'+(activeEndPage+1)+'"'+(activeEndPage>=totalPages?' disabled':'')+'>Next \u2192</button>'+
-          '</div>'
-        : '')+
-      '<div class="pager-sizes"><span>Per page:</span>'+
-        [24,48,0].map(sz=>'<button type="button" class="pager-btn" data-pg-size="'+sz+'"'+(pageSize===sz?' aria-current="page"':'')+'>'+(sz||'All')+'</button>').join('')+
-      '</div>'+
+    '<div class="pager-pages">'+
+      '<button type="button" class="pager-btn" data-pg="'+(curPage-1)+'"'+(curPage<=1?' disabled':'')+'>\u2190 Prev</button>'+
+      pages.join('')+
+      '<button type="button" class="pager-btn" data-pg="'+(curPage+1)+'"'+(curPage>=totalPages?' disabled':'')+'>Next \u2192</button>'+
     '</div>'+
   '</div>';
 }
 
 function bindPager(container,isRanking){
   if(!container) return;
-  const moreBtn=container.querySelector('[data-pg-more]');
-  if(moreBtn){
-    moreBtn.addEventListener('click',()=>{
-      moreBtn.disabled=true;
-      moreBtn.innerHTML='<span class="spin"></span>Loading more systems\u2026';
-      startLoader();
-      setTimeout(()=>{
-        if(isRanking){ state.rkLoadedPages++; renderRanking(); }
-        else{ state.loadedPages++; renderIndex(); }
-        stopLoader();
-      },70);
-    });
-  }
   container.querySelectorAll('[data-pg]').forEach(btn=>{
     btn.addEventListener('click',()=>{
       const p=Number(btn.dataset.pg);
@@ -837,19 +808,6 @@ function bindPager(container,isRanking){
         transitionRanking();
       }else{
         state.page=p; state.loadedPages=1;
-        transitionIndex();
-      }
-    });
-  });
-  container.querySelectorAll('[data-pg-size]').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const sz=Number(btn.dataset.pgSize);
-      window.scrollTo({top:0,behavior:'smooth'});
-      if(isRanking){
-        state.rkPageSize=sz; state.rkPage=1; state.rkLoadedPages=1;
-        transitionRanking();
-      }else{
-        state.pageSize=sz; state.page=1; state.loadedPages=1;
         transitionIndex();
       }
     });
