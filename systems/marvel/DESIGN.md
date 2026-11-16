@@ -112,11 +112,12 @@ components:
     backgroundColor: transparent
     textColor: "rgb(60, 72, 88)"
   input-default:
-    backgroundColor: "rgb(255, 255, 255)"
+    backgroundColor: "#f9fafc"
+    textColor: "#0b0b0c"
   button-outlined:
     textColor: "rgb(60, 72, 88)"
   card-surface:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f9fafc"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px

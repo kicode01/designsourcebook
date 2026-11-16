@@ -159,12 +159,12 @@ components:
     textColor: "#201515"
     padding: 12px 16px
   input-default:
-    backgroundColor: "#fffefb"
+    backgroundColor: "#fffdf9"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fffefb"
+    backgroundColor: "#fffdf9"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px

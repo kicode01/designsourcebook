@@ -230,7 +230,7 @@ components:
     rounded: "50%"
     padding: "0"
   input-default:
-    backgroundColor: "#FFFFFF"
+    backgroundColor: "#fdeaeb"
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 9px 13px

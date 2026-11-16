@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Heroku Purple3
-description: "Crisp light (#ffffff) canvas, salesforce-sans typography, #fa9f47 brand accent, and 8px corner geometry"
+description: "Crisp light (#f6fffe) canvas, salesforce-sans typography, #fa9f47 brand accent, and 8px corner geometry"
 colors:
   canvas-text: "#000000"
   h2-text: "#475366"
@@ -129,12 +129,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f7f8fb"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f7f8fb"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px

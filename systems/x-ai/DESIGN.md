@@ -53,7 +53,7 @@ typography:
 components:
   button-primary:
     backgroundColor: "#ffffff"
-    textColor: "#1f2228"
+    textColor: "#0b0b0c"
     rounded: 0px
     padding: 12px 24px
   button-ghost-outlined:
@@ -67,18 +67,18 @@ components:
     rounded: 0px
     padding: 4px 8px
   input-default:
-    backgroundColor: "#ffffff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
     rounded: 4px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ffffff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
     rounded: 8px
     padding: 18px 20px
   nav-bar:
-    backgroundColor: "#ffffff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
     rounded: 4px
     padding: 10px 16px
 ---

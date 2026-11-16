@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Elastic UI
-description: "Dark (#000) canvas, Helvetica Neue typography, #EE72A6 brand accent, and 6px corner geometry"
+description: "Crisp light (#F6F9FC) canvas, Helvetica Neue typography, #EE72A6 brand accent, and 6px corner geometry"
 colors:
   danger: "#000"
   eui-table-actions-border-color: "#2B394F"
@@ -117,12 +117,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#EE72A6"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 18px
   button-danger:
@@ -131,13 +131,13 @@ components:
     rounded: 6px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#000"
-    textColor: "#ffffff"
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
     rounded: 6px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#000"
-    textColor: "#ffffff"
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
     rounded: 10px
     padding: 18px 20px
   badge-brand:
@@ -151,8 +151,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#000"
-    textColor: "#ffffff"
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
 ---

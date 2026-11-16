@@ -183,12 +183,12 @@ components:
     rounded: 0.4rem
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
+    backgroundColor: "#f1f2f5"
     textColor: "#0b0b0c"
     rounded: 0.4rem
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fff"
+    backgroundColor: "#f1f2f5"
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 18px 20px

@@ -1,10 +1,10 @@
 {
   "canvas": "#fff",
-  "surface": "#fff",
+  "surface": "rgb(255, 255, 255)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
   "brand": "#0d6efd",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "border": "#c4c8cb",
   "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
@@ -666,7 +666,7 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#fff",
+      "backgroundColor": "rgb(255, 255, 255)",
       "textColor": "#0b0b0c",
       "rounded": "6px",
       "padding": "9px 13px"
@@ -674,7 +674,7 @@
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#fff",
+      "backgroundColor": "rgb(255, 255, 255)",
       "textColor": "#0b0b0c",
       "rounded": "10px",
       "padding": "18px 20px"

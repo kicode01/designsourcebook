@@ -124,7 +124,7 @@ typography:
 components:
   button-primary:
     backgroundColor: "#a6a6a6"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:

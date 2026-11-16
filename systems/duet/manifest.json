@@ -2,14 +2,14 @@
   "name": "duet",
   "displayName": "Duet",
   "description": "LocalTapiola Duet — read from the rendered page in a browser, not from published tokens.",
-  "style": "Dark (#0077b3) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry",
+  "style": "Crisp light (#fffbf4) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry",
   "category": "LocalTapiola",
   "org": "LocalTapiola",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "observed",
     "local-tapiola",
-    "dark"
+    "light"
   ],
   "homepage": "https://www.duetds.com",
   "license": "all rights reserved",
@@ -33,8 +33,8 @@
   },
   "checks": {
     "errors": 0,
-    "warnings": 0,
-    "verified": true
+    "warnings": 1,
+    "verified": false
   },
   "files": {
     "design": "DESIGN.md",

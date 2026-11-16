@@ -563,7 +563,7 @@ components:
     backgroundColor: "#343a40"
     textColor: "#f8f9fa"
   input-default:
-    backgroundColor: "#fff"
+    backgroundColor: "#f0f5ff"
     textColor: "#0b0b0c"
     rounded: 0.5rem
     padding: 9px 13px

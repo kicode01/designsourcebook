@@ -239,7 +239,7 @@ components:
     rounded: "0"
     padding: 10px 18px
   card-surface:
-    backgroundColor: "#fff"
+    backgroundColor: "#eee"
     textColor: "#0b0b0c"
     rounded: 10px
     padding: 18px 20px

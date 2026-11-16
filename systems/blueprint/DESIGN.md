@@ -130,12 +130,12 @@ components:
     rounded: 3px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#EDEFF2"
     textColor: "#0b0b0c"
     rounded: 3px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#EDEFF2"
     textColor: "#0b0b0c"
     rounded: 7px
     padding: 18px 20px
@@ -150,7 +150,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#EDEFF2"
     textColor: "#0b0b0c"
     rounded: 3px
     padding: 10px 16px

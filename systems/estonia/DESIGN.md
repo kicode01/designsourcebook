@@ -82,7 +82,7 @@ components:
     rounded: 8px
     padding: 10px 18px
   button-secondary:
-    backgroundColor: "#fff"
+    backgroundColor: transparent
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px

@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Duet
-description: "Dark (#0077b3) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry"
+description: "Crisp light (#fffbf4) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry"
 colors:
   bg-canvas: "#0077b3"
   canvas-text: "#082a4d"
@@ -109,12 +109,12 @@ components:
     rounded: 20rem
   button-primary:
     backgroundColor: "#f7b228"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -123,13 +123,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#0077b3"
-    textColor: "#ffffff"
+    backgroundColor: "#f5f6f7"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#0077b3"
-    textColor: "#ffffff"
+    backgroundColor: "#f5f6f7"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   badge-brand:

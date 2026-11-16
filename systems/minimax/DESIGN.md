@@ -122,17 +122,17 @@ components:
     padding: 11px 20px
   input-default:
     backgroundColor: "#f0f0f0"
-    textColor: "#0b0b0c"
+    textColor: "#222222"
     rounded: 8px
     padding: 9px 13px
   card-surface:
     backgroundColor: "#f0f0f0"
-    textColor: "#0b0b0c"
+    textColor: "#222222"
     rounded: 12px
     padding: 18px 20px
   nav-bar:
     backgroundColor: "#f0f0f0"
-    textColor: "#0b0b0c"
+    textColor: "#222222"
     rounded: 8px
     padding: 10px 16px
 ---

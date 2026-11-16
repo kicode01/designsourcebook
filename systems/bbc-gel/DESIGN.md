@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: BBC GEL
-description: "Crisp light (#ffffff) canvas, ReithSans typography, #ffb32b brand accent, and 8px corner geometry"
+description: "Crisp light (#e6e8ea) canvas, ReithSans typography, #ffb32b brand accent, and 8px corner geometry"
 colors:
   canvas-text: "#000000"
   header-text: "#3a3c3e"
@@ -88,17 +88,17 @@ components:
     textColor: "#3a3c3e"
     padding: 4px
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#e6e8ea"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#e6e8ea"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#e6e8ea"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

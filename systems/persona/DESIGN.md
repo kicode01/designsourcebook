@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Persona Design System
-description: "Dark (#408bdd) canvas, system-ui typography, #0060df brand accent, and 8px corner geometry"
+description: "Crisp light (#FBFCFD) canvas, system-ui typography, #0060df brand accent, and 8px corner geometry"
 colors:
   border-color: "#BFBFBF"
   text-primary-color: "#15141a"
@@ -121,12 +121,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#408bdd"
+    backgroundColor: "#fbfbfe"
     textColor: "#15141a"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#408bdd"
+    backgroundColor: "#fbfbfe"
     textColor: "#15141a"
     rounded: 12px
     padding: 18px 20px
@@ -141,7 +141,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#408bdd"
+    backgroundColor: "#fbfbfe"
     textColor: "#15141a"
     rounded: 8px
     padding: 10px 16px

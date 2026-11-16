@@ -133,7 +133,7 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#eff3f7"
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px

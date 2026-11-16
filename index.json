@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T17:42:29.046Z",
+  "generatedAt": "2026-11-16T18:00:46.735Z",
   "count": 206,
   "systems": [
     {
@@ -168,11 +168,11 @@
       "name": "amplify-ui",
       "displayName": "Amplify UI",
       "org": "AWS",
-      "style": "Dark (#0175C2) canvas, Inter typography, #232f3e brand accent, and 8px corner geometry",
+      "style": "Crisp light (#FFFFFF) canvas, Inter typography, #232f3e brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "aws",
-        "dark"
+        "light"
       ],
       "license": "see repository",
       "homepage": "https://github.com/aws-amplify/amplify-ui",
@@ -243,7 +243,7 @@
         "premium",
         "enterprise",
         "consumer",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://apple.com",
@@ -369,7 +369,7 @@
       "name": "astryx",
       "displayName": "Astryx",
       "org": "Meta",
-      "style": "Dark (#ff0000) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "meta",
@@ -405,7 +405,7 @@
       "tags": [
         "published",
         "atlassian",
-        "dark"
+        "light"
       ],
       "license": "Apache-2.0",
       "homepage": "https://atlassian.design/components/tokens",
@@ -564,7 +564,7 @@
       "name": "basis",
       "displayName": "Basis Design System",
       "org": "Basis",
-      "style": "Dark (#21a637) canvas, Rubik typography, #4693fa brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, Rubik typography, #4693fa brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "basis",
@@ -596,7 +596,7 @@
       "name": "bbc-gel",
       "displayName": "BBC GEL",
       "org": "BBC",
-      "style": "Crisp light (#ffffff) canvas, ReithSans typography, #ffb32b brand accent, and 8px corner geometry",
+      "style": "Crisp light (#e6e8ea) canvas, ReithSans typography, #ffb32b brand accent, and 8px corner geometry",
       "tags": [
         "observed",
         "bbc",
@@ -694,7 +694,7 @@
       "name": "bloom",
       "displayName": "Appear Here Styleguide",
       "org": "Appear Here",
-      "style": "Crisp light (#eee) canvas, system-ui typography, rgb(234, 155, 82) brand accent, and 8px corner geometry",
+      "style": "Crisp light (rgb(255, 255, 255)) canvas, system-ui typography, rgb(234, 155, 82) brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "appear-here",
@@ -924,7 +924,7 @@
       "name": "british",
       "displayName": "British Gas Nucleus",
       "org": "British Gas",
-      "style": "Crisp light (#ffffff) canvas, Roboto typography, hsl(224, 100%, 60%) brand accent, and 8px corner geometry",
+      "style": "Crisp light (hsl(0, 0%, 100%)) canvas, Roboto typography, hsl(224, 100%, 60%) brand accent, and 8px corner geometry",
       "tags": [
         "observed",
         "british-gas",
@@ -1086,7 +1086,7 @@
       "name": "ca",
       "displayName": "CA Technologies Mineral UI",
       "org": "CA",
-      "style": "Crisp light (#ffffff) canvas, system-ui typography, #f0f5fc brand accent, and 8px corner geometry",
+      "style": "Crisp light (#f0f5fc) canvas, system-ui typography, #f0f5fc brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "ca",
@@ -1192,7 +1192,7 @@
         "published",
         "rei",
         "open-source",
-        "dark"
+        "light"
       ],
       "license": "MIT",
       "homepage": "https://rei.github.io/rei-cedar/",
@@ -1221,7 +1221,7 @@
       "name": "chakra",
       "displayName": "Chakra UI",
       "org": "Chakra UI",
-      "style": "Crisp light (#fff) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry",
+      "style": "Crisp light (#fafafa) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry",
       "tags": [
         "published",
         "chakra-ui",
@@ -1290,7 +1290,7 @@
       "tags": [
         "published",
         "vmware",
-        "dark"
+        "light"
       ],
       "license": "MIT",
       "homepage": "https://clarity.design",
@@ -1742,11 +1742,11 @@
       "name": "dhis2",
       "displayName": "DHIS2 UI",
       "org": "DHIS2",
-      "style": "Dark (#276696) canvas, Roboto typography, #FF4785 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, Roboto typography, #FF4785 brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "dhis2",
-        "dark"
+        "light"
       ],
       "license": "see repository",
       "homepage": "https://github.com/dhis2/ui",
@@ -1774,11 +1774,11 @@
       "name": "duet",
       "displayName": "Duet",
       "org": "LocalTapiola",
-      "style": "Dark (#0077b3) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#fffbf4) canvas, localtapiola-sans typography, #f7b228 brand accent, and 8px corner geometry",
       "tags": [
         "observed",
         "local-tapiola",
-        "dark"
+        "light"
       ],
       "license": "all rights reserved",
       "homepage": "https://www.duetds.com",
@@ -1799,8 +1799,8 @@
       },
       "checks": {
         "errors": 0,
-        "warnings": 0,
-        "verified": true
+        "warnings": 1,
+        "verified": false
       }
     },
     {
@@ -1840,11 +1840,11 @@
       "name": "elastic",
       "displayName": "Elastic UI",
       "org": "Elastic",
-      "style": "Dark (#000) canvas, Helvetica Neue typography, #EE72A6 brand accent, and 6px corner geometry",
+      "style": "Crisp light (#F6F9FC) canvas, Helvetica Neue typography, #EE72A6 brand accent, and 6px corner geometry",
       "tags": [
         "published",
         "elastic",
-        "dark"
+        "light"
       ],
       "license": "see repository",
       "homepage": "https://github.com/elastic/eui",
@@ -2234,7 +2234,7 @@
       "name": "flowbite",
       "displayName": "Flowbite Design System",
       "org": "Flowbite",
-      "style": "Crisp light (#fff) canvas, Inter typography, #79b8ff brand accent, and 8px corner geometry",
+      "style": "Crisp light (#F9FAFB) canvas, Inter typography, #79b8ff brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "flowbite",
@@ -2439,7 +2439,7 @@
       "tags": [
         "published",
         "zendesk",
-        "dark"
+        "light"
       ],
       "license": "Apache-2.0",
       "homepage": "https://garden.zendesk.com/",
@@ -2635,7 +2635,7 @@
       "tags": [
         "published",
         "hewlett-packard",
-        "dark"
+        "light"
       ],
       "license": "Apache-2.0",
       "homepage": "http://grommet.io",
@@ -2699,7 +2699,7 @@
       "tags": [
         "enterprise",
         "infrastructure",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://hashicorp.com",
@@ -2731,7 +2731,7 @@
       "tags": [
         "published",
         "haus",
-        "dark"
+        "light"
       ],
       "license": "see repository",
       "homepage": "https://github.com/hipuku/haus",
@@ -2759,7 +2759,7 @@
       "name": "heroku",
       "displayName": "Heroku Purple3",
       "org": "Heroku",
-      "style": "Crisp light (#ffffff) canvas, salesforce-sans typography, #fa9f47 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#f6fffe) canvas, salesforce-sans typography, #fa9f47 brand accent, and 8px corner geometry",
       "tags": [
         "observed",
         "heroku",
@@ -3154,7 +3154,7 @@
       "name": "lion",
       "displayName": "ING Lion",
       "org": "ING",
-      "style": "Crisp light (#fff) canvas, Open Sans typography, #FFC107 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#f8f9fa) canvas, Open Sans typography, #FFC107 brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "ing",
@@ -3937,7 +3937,7 @@
       "tags": [
         "enterprise",
         "consumer",
-        "light"
+        "dark"
       ],
       "license": "proprietary",
       "homepage": "https://nvidia.com",
@@ -3997,7 +3997,7 @@
       "name": "okta",
       "displayName": "Okta Odyssey Design System",
       "org": "Okta",
-      "style": "Dark (#ff0000) canvas, Inter typography, #80c7ca brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, Inter typography, #80c7ca brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "okta",
@@ -4097,7 +4097,7 @@
       "style": "Developer-centric dark theme",
       "tags": [
         "ai",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://opencode.ai",
@@ -4163,7 +4163,7 @@
         "published",
         "kiwi-com",
         "open-source",
-        "dark"
+        "light"
       ],
       "license": "MIT",
       "homepage": null,
@@ -4192,7 +4192,7 @@
       "name": "overdrive",
       "displayName": "AutoGuru Overdrive",
       "org": "AutoGuru",
-      "style": "Crisp light (#e1edfe) canvas, AvertaStandard typography, #01c68c brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, AvertaStandard typography, #01c68c brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "auto-guru",
@@ -4324,7 +4324,7 @@
       "name": "persona",
       "displayName": "Persona Design System",
       "org": "Persona",
-      "style": "Dark (#408bdd) canvas, system-ui typography, #0060df brand accent, and 8px corner geometry",
+      "style": "Crisp light (#FBFCFD) canvas, system-ui typography, #0060df brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "persona",
@@ -4393,7 +4393,7 @@
       "style": "Red accent, masonry grid, image-first",
       "tags": [
         "productivity",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://pinterest.com",
@@ -4589,7 +4589,7 @@
       "name": "priceline",
       "displayName": "Priceline Design System",
       "org": "Priceline",
-      "style": "Crisp light (#e8f2ff) canvas, Montserrat typography, #ffa0c4 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#fff) canvas, Montserrat typography, #ffa0c4 brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "priceline",
@@ -4625,7 +4625,7 @@
       "tags": [
         "published",
         "git-hub",
-        "light"
+        "dark"
       ],
       "license": "MIT",
       "homepage": "https://github.com/primer/primitives#readme",
@@ -4686,7 +4686,7 @@
       "name": "pusher",
       "displayName": "Pusher Chameleon",
       "org": "Pusher",
-      "style": "Crisp light (#f7f7f7) canvas, Inter typography, #549eff brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, Inter typography, #549eff brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "pusher",
@@ -4787,7 +4787,7 @@
       "name": "rambler",
       "displayName": "Rambler",
       "org": "Rambler",
-      "style": "Crisp light (#ffffff) canvas, Inter typography, #315efb brand accent, and 8px corner geometry",
+      "style": "Crisp light (#f5f7f8) canvas, Inter typography, #315efb brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "rambler",
@@ -4819,7 +4819,7 @@
       "name": "ray",
       "displayName": "Ray by WeWork",
       "org": "Ray",
-      "style": "Crisp light (#fff) canvas, system-ui typography, #ccccff brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, system-ui typography, #ccccff brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "ray",
@@ -5201,15 +5201,15 @@
       },
       "checks": {
         "errors": 0,
-        "warnings": 0,
-        "verified": true
+        "warnings": 1,
+        "verified": false
       }
     },
     {
       "name": "scania",
       "displayName": "Scania Digital Design System",
       "org": "Scania",
-      "style": "Crisp light (#fff) canvas, traton type text typography, #16417f brand accent, and 8px corner geometry",
+      "style": "Crisp light (rgba(255, 255, 255, 1)) canvas, traton type text typography, #16417f brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "scania",
@@ -5309,11 +5309,11 @@
       "name": "semi",
       "displayName": "Semi Design",
       "org": "Semi",
-      "style": "Crisp light (#fff) canvas, Inter typography, rgba(119, 182, 249, 1) brand accent, and 6px corner geometry",
+      "style": "Dark (rgba(22, 22, 26, 1)) canvas, Inter typography, rgba(119, 182, 249, 1) brand accent, and 6px corner geometry",
       "tags": [
         "published",
         "semi",
-        "light"
+        "dark"
       ],
       "license": "see repository",
       "homepage": "https://github.com/DouyinFE/semi-design",
@@ -5379,7 +5379,7 @@
       "tags": [
         "dashboard",
         "developer-tools",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://sentry.io",
@@ -5399,8 +5399,8 @@
       },
       "checks": {
         "errors": 0,
-        "warnings": 0,
-        "verified": true
+        "warnings": 1,
+        "verified": false
       }
     },
     {
@@ -5475,11 +5475,11 @@
       "name": "siemens",
       "displayName": "Siemens iX",
       "org": "Siemens",
-      "style": "Dark (#2D2D45) canvas, Courier New typography, #00eaff brand accent, and 8px corner geometry",
+      "style": "Crisp light (#ffffff) canvas, Courier New typography, #00eaff brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "siemens",
-        "dark"
+        "light"
       ],
       "license": "see repository",
       "homepage": "https://github.com/siemens/ix",
@@ -5550,7 +5550,7 @@
       "tags": [
         "enterprise",
         "consumer",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://spacex.com",
@@ -5570,8 +5570,8 @@
       },
       "checks": {
         "errors": 0,
-        "warnings": 0,
-        "verified": true
+        "warnings": 1,
+        "verified": false
       }
     },
     {
@@ -5941,7 +5941,7 @@
       "tags": [
         "published",
         "mdbootstrap",
-        "light"
+        "dark"
       ],
       "license": "SEE LICENSE IN <License.txt>",
       "homepage": "https://tw-elements.com/",
@@ -6003,11 +6003,11 @@
       "name": "ubers",
       "displayName": "Uber's Base Web",
       "org": "Uber",
-      "style": "Dark (#292929) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry",
+      "style": "Crisp light (#F6F6F6) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "uber-s",
-        "dark"
+        "light"
       ],
       "license": "see repository",
       "homepage": "https://github.com/uber-web/baseui",
@@ -6401,7 +6401,7 @@
       "style": "Dark IDE-like interface, block-based command UI",
       "tags": [
         "developer-tools",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://warp.dev",
@@ -6460,7 +6460,7 @@
       "name": "welcome",
       "displayName": "Welcome UI",
       "org": "Welcome",
-      "style": "Crisp light (#ffffff) canvas, Work Sans typography, #ffe166 brand accent, and 8px corner geometry",
+      "style": "Crisp light (#f6f3ef) canvas, Work Sans typography, #ffe166 brand accent, and 8px corner geometry",
       "tags": [
         "published",
         "welcome",
@@ -6561,7 +6561,7 @@
       "tags": [
         "playful",
         "fintech",
-        "dark"
+        "light"
       ],
       "license": "proprietary",
       "homepage": "https://wise.com",
@@ -6582,8 +6582,8 @@
       },
       "checks": {
         "errors": 0,
-        "warnings": 0,
-        "verified": true
+        "warnings": 1,
+        "verified": false
       }
     },
     {

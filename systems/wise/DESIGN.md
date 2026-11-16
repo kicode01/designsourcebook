@@ -98,13 +98,13 @@ components:
     rounded: 9999px
     padding: 8px 12px 8px 16px
   input-default:
-    backgroundColor: "#0e0f0c"
-    textColor: "#ffffff"
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
     rounded: 10px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#0e0f0c"
-    textColor: "#ffffff"
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
     rounded: 16px
     padding: 18px 20px
   badge-brand:
@@ -118,8 +118,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#0e0f0c"
-    textColor: "#ffffff"
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 10px 16px
 ---

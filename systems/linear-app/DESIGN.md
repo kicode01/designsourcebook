@@ -234,12 +234,12 @@ components:
     padding: 0px 8px 0px 2px
   card-surface:
     backgroundColor: "#0f1011"
-    textColor: "#ffffff"
+    textColor: "#f7f8f8"
     rounded: 10px
     padding: 18px 20px
   nav-bar:
     backgroundColor: "#0f1011"
-    textColor: "#ffffff"
+    textColor: "#f7f8f8"
     rounded: 6px
     padding: 10px 16px
 ---

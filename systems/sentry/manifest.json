@@ -4,11 +4,11 @@
   "description": "Dark dashboard, data-dense, pink-purple accent",
   "style": "Dark dashboard, data-dense, pink-purple accent",
   "category": "Developer Tools & Platforms",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "dashboard",
     "developer-tools",
-    "dark"
+    "light"
   ],
   "homepage": "https://sentry.io",
   "license": "proprietary",
@@ -27,8 +27,8 @@
   },
   "checks": {
     "errors": 0,
-    "warnings": 0,
-    "verified": true
+    "warnings": 1,
+    "verified": false
   },
   "files": {
     "design": "DESIGN.md",

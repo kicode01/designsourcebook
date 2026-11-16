@@ -175,12 +175,12 @@ components:
     textColor: "#1f51d9"
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#f7f7f8"
     rounded: 0.4rem
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#242526"
+    textColor: "#f7f7f8"
     rounded: 0.4rem
     padding: 9px 13px
 ---

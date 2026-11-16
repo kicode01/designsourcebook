@@ -3,6 +3,9 @@ version: alpha
 name: Pinterest
 description: "Red accent, masonry grid, image-first"
 colors:
+  bg-canvas: "#ffffff"
+  bg-surface: "#f6f6f3"
+  text-primary: "#211922"
   brand-pinterest-red: "#e60023"
   brand-green-700: "#103c25"
   brand-green-700-hover: "#0b2819"
@@ -71,13 +74,13 @@ components:
   button-ghost-transparent:
     textColor: "#000000"
   input-default:
-    backgroundColor: "#0b2819"
-    textColor: "#ffffff"
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
     rounded: 24px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#0b2819"
-    textColor: "#ffffff"
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
     rounded: 24px
     padding: 18px 20px
   badge-brand:
@@ -91,8 +94,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#0b2819"
-    textColor: "#ffffff"
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
     rounded: 24px
     padding: 10px 16px
 ---

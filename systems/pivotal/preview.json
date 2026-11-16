@@ -1,10 +1,10 @@
 {
   "canvas": "#ffffff",
-  "surface": "#ffffff",
+  "surface": "rgba(255, 255, 255, 1)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
   "brand": "#fff",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "border": "#e5e5e5",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
@@ -533,7 +533,7 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "rgba(255, 255, 255, 1)",
       "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "9px 13px"
@@ -541,7 +541,7 @@
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "rgba(255, 255, 255, 1)",
       "textColor": "#0b0b0c",
       "rounded": "12px",
       "padding": "18px 20px"
@@ -565,7 +565,7 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "rgba(255, 255, 255, 1)",
       "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 16px"

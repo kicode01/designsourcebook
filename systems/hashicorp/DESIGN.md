@@ -117,8 +117,8 @@ components:
     backgroundColor: "#0d0e12"
     rounded: 3px
   card-surface:
-    backgroundColor: "#000000"
-    textColor: "#ffffff"
+    backgroundColor: "#efeff1"
+    textColor: "#0b0b0c"
     rounded: 9px
     padding: 18px 20px
   badge-brand:
@@ -132,8 +132,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#000000"
-    textColor: "#ffffff"
+    backgroundColor: "#efeff1"
+    textColor: "#0b0b0c"
     rounded: 5px
     padding: 10px 16px
 ---

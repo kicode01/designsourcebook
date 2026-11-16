@@ -108,7 +108,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#fff"
+    backgroundColor: "rgb(240,240,240)"
     textColor: "#0b0b0c"
     rounded: 24px
     padding: 10px 16px

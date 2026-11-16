@@ -1,12 +1,12 @@
 {
-  "canvas": "#2D2D45",
-  "surface": "#2D2D45",
-  "text": "#FFFFFF",
-  "muted": "#FFFFFF",
+  "canvas": "#ffffff",
+  "surface": "#e0f2f4",
+  "text": "#000028",
+  "muted": "#000028",
   "brand": "#00eaff",
-  "border": "#66667E",
+  "border": "#B3B3BE",
   "radius": "8px",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "si-ref-color-data-brand-300",
@@ -455,7 +455,7 @@
       "key": "button-primary",
       "kind": "button",
       "backgroundColor": "#00eaff",
-      "textColor": "#000000",
+      "textColor": "#000028",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -463,7 +463,7 @@
       "key": "button-secondary",
       "kind": "button",
       "backgroundColor": "transparent",
-      "textColor": "#FFFFFF",
+      "textColor": "#000028",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -478,16 +478,16 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#2D2D45",
-      "textColor": "#FFFFFF",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
       "rounded": "8px",
       "padding": "9px 13px"
     },
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#2D2D45",
-      "textColor": "#FFFFFF",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
       "rounded": "12px",
       "padding": "18px 20px"
     },
@@ -510,8 +510,8 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#2D2D45",
-      "textColor": "#FFFFFF",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
       "rounded": "8px",
       "padding": "10px 16px"
     }

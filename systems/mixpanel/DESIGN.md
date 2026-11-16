@@ -213,7 +213,7 @@ components:
   table-header:
     backgroundColor: "#f4f4f4"
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#fafafa"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px

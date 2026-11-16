@@ -95,8 +95,8 @@ components:
     textColor: "#0a0a0a"
     padding: 0 1rem
   nav-bar:
-    backgroundColor: "#0a0a0a"
-    textColor: "#ffffff"
+    backgroundColor: "#fefefe"
+    textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
 ---

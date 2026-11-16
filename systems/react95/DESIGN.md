@@ -84,12 +84,12 @@ components:
     rounded: 0px
     padding: 10px 18px
   input-default:
-    backgroundColor: "rgb(255,255,255)"
+    backgroundColor: "rgb(238,244,252)"
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "rgb(255,255,255)"
+    backgroundColor: "rgb(238,244,252)"
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 18px 20px
@@ -104,7 +104,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "rgb(255,255,255)"
+    backgroundColor: "rgb(238,244,252)"
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 10px 16px

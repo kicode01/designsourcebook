@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Amplify UI
-description: "Dark (#0175C2) canvas, Inter typography, #232f3e brand accent, and 8px corner geometry"
+description: "Crisp light (#FFFFFF) canvas, Inter typography, #232f3e brand accent, and 8px corner geometry"
 colors:
   synthwave-theme: "#fbc6ef"
   terminal: "#C7EFCA"
@@ -60,12 +60,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#232f3e"
-    textColor: "#f7f7f8"
+    textColor: "#ffffff"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -74,13 +74,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#0175C2"
-    textColor: "#ffffff"
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#0175C2"
-    textColor: "#ffffff"
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -94,8 +94,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#0175C2"
-    textColor: "#ffffff"
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
 ---

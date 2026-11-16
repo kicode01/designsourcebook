@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Semi Design
-description: "Crisp light (#fff) canvas, Inter typography, rgba(119, 182, 249, 1) brand accent, and 6px corner geometry"
+description: "Dark (rgba(22, 22, 26, 1)) canvas, Inter typography, rgba(119, 182, 249, 1) brand accent, and 6px corner geometry"
 colors:
   semi-color-data-0: "rgba(87, 105, 255, 1)"
   semi-color-data-1: "rgba(142, 212, 231, 1)"
@@ -178,7 +178,7 @@ components:
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#0b0b0c"
+    textColor: "#f7f7f8"
     rounded: 6px
     padding: 10px 18px
   button-danger:
@@ -187,13 +187,13 @@ components:
     rounded: 6px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
-    textColor: "#0b0b0c"
+    backgroundColor: "rgba(35, 36, 41, 1)"
+    textColor: "#f7f7f8"
     rounded: 6px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fff"
-    textColor: "#0b0b0c"
+    backgroundColor: "rgba(35, 36, 41, 1)"
+    textColor: "#f7f7f8"
     rounded: 10px
     padding: 18px 20px
   badge-brand:

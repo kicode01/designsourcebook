@@ -59,12 +59,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#f6821f"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -74,12 +74,12 @@ components:
     padding: 10px 18px
   input-default:
     backgroundColor: "#5b697c"
-    textColor: "#ffffff"
+    textColor: "#f7f7f8"
     rounded: 8px
     padding: 9px 13px
   card-surface:
     backgroundColor: "#5b697c"
-    textColor: "#ffffff"
+    textColor: "#f7f7f8"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -94,7 +94,7 @@ components:
     padding: 4px 10px
   nav-bar:
     backgroundColor: "#5b697c"
-    textColor: "#ffffff"
+    textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 16px
 ---

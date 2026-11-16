@@ -188,12 +188,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f7f7ff"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f7f7ff"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
@@ -208,7 +208,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f7f7ff"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

@@ -205,12 +205,12 @@ components:
     rounded: 6px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
+    backgroundColor: "rgb(255, 255, 255)"
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fff"
+    backgroundColor: "rgb(255, 255, 255)"
     textColor: "#0b0b0c"
     rounded: 10px
     padding: 18px 20px

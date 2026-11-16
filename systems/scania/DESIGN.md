@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Scania Digital Design System
-description: "Crisp light (#fff) canvas, traton type text typography, #16417f brand accent, and 8px corner geometry"
+description: "Crisp light (rgba(255, 255, 255, 1)) canvas, traton type text typography, #16417f brand accent, and 8px corner geometry"
 colors:
   50: "#D8DDE5"
   900: "#001533"
@@ -242,12 +242,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
+    backgroundColor: "rgba(243, 244, 247, 1)"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fff"
+    backgroundColor: "rgba(243, 244, 247, 1)"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
@@ -262,7 +262,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#fff"
+    backgroundColor: "rgba(243, 244, 247, 1)"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

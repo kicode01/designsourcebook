@@ -1,10 +1,10 @@
 {
-  "canvas": "#ffffff",
-  "surface": "#ffffff",
+  "canvas": "hsl(0, 0%, 100%)",
+  "surface": "hsl(224, 20%, 94%)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
   "brand": "hsl(224, 100%, 60%)",
-  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "border": "#eeeeee",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
@@ -478,7 +478,7 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "hsl(224, 20%, 94%)",
       "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 16px"

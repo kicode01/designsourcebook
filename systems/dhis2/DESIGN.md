@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: DHIS2 UI
-description: "Dark (#276696) canvas, Roboto typography, #FF4785 brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Roboto typography, #FF4785 brand accent, and 8px corner geometry"
 colors:
   blue900: "#093371"
   blue800: "#0d47a1"
@@ -103,12 +103,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#FF4785"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -117,13 +117,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#276696"
-    textColor: "#ffffff"
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#276696"
-    textColor: "#ffffff"
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -137,8 +137,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#276696"
-    textColor: "#ffffff"
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
 ---

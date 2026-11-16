@@ -4,7 +4,7 @@
   "text": "#4d4f46",
   "muted": "#65675e",
   "brand": "#F7A501",
-  "border": "color-mix(in srgb, #4d4f46 14%, transparent)",
+  "border": "#b6b7af",
   "radius": "6px",
   "ink": "#0b0b0c",
   "palette": [
@@ -253,15 +253,15 @@
       "key": "button-primary",
       "kind": "button",
       "backgroundColor": "#F7A501",
-      "textColor": "#000000",
+      "textColor": "#0b0b0c",
       "rounded": "6px",
       "padding": "10px 18px"
     },
     {
       "key": "button-secondary",
       "kind": "button",
-      "backgroundColor": "#eeefe9",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "transparent",
+      "textColor": "#4d4f46",
       "rounded": "6px",
       "padding": "10px 18px"
     },
@@ -277,7 +277,7 @@
       "key": "input-default",
       "kind": "input",
       "backgroundColor": "#eeefe9",
-      "textColor": "#0b0b0c",
+      "textColor": "#4d4f46",
       "rounded": "6px",
       "padding": "9px 13px"
     },
@@ -285,7 +285,7 @@
       "key": "card-surface",
       "kind": "card",
       "backgroundColor": "#eeefe9",
-      "textColor": "#0b0b0c",
+      "textColor": "#4d4f46",
       "rounded": "10px",
       "padding": "18px 20px"
     },
@@ -309,7 +309,7 @@
       "key": "nav-bar",
       "kind": "nav",
       "backgroundColor": "#eeefe9",
-      "textColor": "#0b0b0c",
+      "textColor": "#4d4f46",
       "rounded": "6px",
       "padding": "10px 16px"
     }

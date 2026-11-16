@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Siemens iX
-description: "Dark (#2D2D45) canvas, Courier New typography, #00eaff brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Courier New typography, #00eaff brand accent, and 8px corner geometry"
 colors:
   si-ref-color-data-brand-300: "#00eaff"
   si-ref-color-data-brand-600: "#00bdda"
@@ -124,12 +124,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#00eaff"
-    textColor: "#000000"
+    textColor: "#000028"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#FFFFFF"
+    textColor: "#000028"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -138,13 +138,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#2D2D45"
-    textColor: "#FFFFFF"
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#2D2D45"
-    textColor: "#FFFFFF"
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -158,8 +158,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#2D2D45"
-    textColor: "#FFFFFF"
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
     rounded: 8px
     padding: 10px 16px
 ---

@@ -3,6 +3,9 @@ version: alpha
 name: Grafana Saga
 description: "Dark observability dashboard, Inter + Roboto Mono telemetry and high-contrast alerts"
 colors:
+  bg-canvas: "#111217"
+  bg-surface: "#181b1f"
+  text-primary: "#ccccdc"
   a04338: "#5a372a"
   color: "#f59433"
   webkit-tap-highlight-color: "rgba(0, 0, 0, 0)"
@@ -28,12 +31,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "rgba(247, 149, 32, 1)"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#ccccdc"
     rounded: 4px
     padding: 10px 18px
   button-danger:
@@ -42,13 +45,13 @@ components:
     rounded: 4px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#00008b"
-    textColor: "#ffffff"
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
     rounded: 4px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#00008b"
-    textColor: "#ffffff"
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
     rounded: 8px
     padding: 18px 20px
   badge-brand:
@@ -62,8 +65,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#00008b"
-    textColor: "#ffffff"
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
     rounded: 4px
     padding: 10px 16px
 ---

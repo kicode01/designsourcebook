@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Welcome UI
-description: "Crisp light (#ffffff) canvas, Work Sans typography, #ffe166 brand accent, and 8px corner geometry"
+description: "Crisp light (#f6f3ef) canvas, Work Sans typography, #ffe166 brand accent, and 8px corner geometry"
 colors:
   accordion-subtitle-color-text-default: "#212121"
   alert-color-text-success-body: "#142603"
@@ -164,12 +164,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f3f3f3"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f3f3f3"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
@@ -184,7 +184,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f3f3f3"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

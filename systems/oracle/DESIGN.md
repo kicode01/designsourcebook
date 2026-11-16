@@ -287,7 +287,7 @@ components:
     rounded: ".25rem"
     padding: 10px 18px
   input-default:
-    backgroundColor: "rgb(255,255,255)"
+    backgroundColor: "rgb(241,239,237)"
     textColor: "#0b0b0c"
     rounded: ".25rem"
     padding: 9px 13px

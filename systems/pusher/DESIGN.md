@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Pusher Chameleon
-description: "Crisp light (#f7f7f7) canvas, Inter typography, #549eff brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Inter typography, #549eff brand accent, and 8px corner geometry"
 colors:
   primary: "#549eff"
   secondary: "#977fda"
@@ -75,12 +75,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#f7f7f7"
+    backgroundColor: "#f4f8fb"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#f7f7f7"
+    backgroundColor: "#f4f8fb"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
@@ -95,7 +95,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#f7f7f7"
+    backgroundColor: "#f4f8fb"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

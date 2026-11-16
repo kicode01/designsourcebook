@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: "Uber's Base Web"
-description: "Dark (#292929) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry"
+description: "Crisp light (#F6F6F6) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry"
 colors:
   primary: "#EFF4FE"
   primary50: "#F6F6F6"
@@ -150,12 +150,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#EFF4FE"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#ffffff"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -164,13 +164,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#292929"
-    textColor: "#ffffff"
+    backgroundColor: "#EFF4FE"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#292929"
-    textColor: "#ffffff"
+    backgroundColor: "#EFF4FE"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -184,8 +184,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#292929"
-    textColor: "#ffffff"
+    backgroundColor: "#EFF4FE"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
 ---

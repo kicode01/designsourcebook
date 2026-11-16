@@ -644,11 +644,19 @@ function renderSurface(p,c){
 
 function pick(p,kind){ return p.components.filter(c=>c.kind===kind); }
 
+function rgbChroma(p){
+  return p ? Math.max(p[0],p[1],p[2])-Math.min(p[0],p[1],p[2]) : 999;
+}
 function stageFor(p){
   const d=displayType(p), t=bodyType(p);
   const canvasLum=lum(parseColor(p.canvas)||[255,255,255,1]);
-  const cards=pick(p,'card');
-  const cardTok=cards.find(c=>{const bg=cleanColor(c.backgroundColor);if(!bg)return false;const pl=over(bg,p.canvas);return (lum(pl)>=0.36)===(canvasLum>=0.36);})||cards[0];
+  const cards=pick(p,'card').filter(c=>!/alert|banner|callout-dark|notice/i.test(c.key));
+  const cardTok=cards.find(c=>{
+    const bg=cleanColor(c.backgroundColor);
+    if(!bg) return false;
+    const pl=over(bg,p.canvas);
+    return (lum(pl)>=0.36)===(canvasLum>=0.36) && rgbChroma(pl)<=32;
+  })||null;
   const cardBg=cleanColor(cardTok&&cardTok.backgroundColor)||p.surface||p.canvas;
   const cardPlate=over(cardBg,p.canvas);
   const sameSurf=!parseColor(cardBg)||Math.abs(lum(cardPlate)-lum(parseColor(p.canvas)||[0,0,0,1]))<0.025;

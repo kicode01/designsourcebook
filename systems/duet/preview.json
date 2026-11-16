@@ -1,12 +1,12 @@
 {
-  "canvas": "#0077b3",
-  "surface": "#0077b3",
-  "text": "#f7f7f8",
-  "muted": "#f7f7f8",
+  "canvas": "#fffbf4",
+  "surface": "#f5f6f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
   "brand": "#f7b228",
-  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "border": "#d4dfe5",
   "radius": "8px",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "bg-canvas",
@@ -322,7 +322,7 @@
       "key": "button-primary",
       "kind": "button",
       "backgroundColor": "#f7b228",
-      "textColor": "#000000",
+      "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -330,7 +330,7 @@
       "key": "button-secondary",
       "kind": "button",
       "backgroundColor": "transparent",
-      "textColor": "#ffffff",
+      "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -345,16 +345,16 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#0077b3",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f5f6f7",
+      "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "9px 13px"
     },
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#0077b3",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f5f6f7",
+      "textColor": "#0b0b0c",
       "rounded": "12px",
       "padding": "18px 20px"
     },

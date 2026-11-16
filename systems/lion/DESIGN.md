@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: ING Lion
-description: "Crisp light (#fff) canvas, Open Sans typography, #FFC107 brand accent, and 8px corner geometry"
+description: "Crisp light (#f8f9fa) canvas, Open Sans typography, #FFC107 brand accent, and 8px corner geometry"
 colors:
   background: "#b22222"
   primary-text-inverse-color: "#2c3e50"
@@ -166,12 +166,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
+    backgroundColor: "#faf4eb"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fff"
+    backgroundColor: "#faf4eb"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
@@ -186,7 +186,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#fff"
+    backgroundColor: "#faf4eb"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

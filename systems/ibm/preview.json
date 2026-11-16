@@ -1,6 +1,6 @@
 {
   "canvas": "#ffffff",
-  "surface": "#ffffff",
+  "surface": "#f4f4f4",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
   "brand": "#0f62fe",
@@ -242,8 +242,8 @@
     {
       "key": "button-secondary",
       "kind": "button",
-      "backgroundColor": "#393939",
-      "textColor": "#ffffff"
+      "backgroundColor": "transparent",
+      "textColor": "#0b0b0c"
     },
     {
       "key": "button-tertiary",
@@ -272,7 +272,7 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "#f4f4f4",
       "textColor": "#0b0b0c",
       "rounded": "0px",
       "padding": "9px 13px"
@@ -296,7 +296,7 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "#f4f4f4",
       "textColor": "#0b0b0c",
       "rounded": "0px",
       "padding": "10px 16px"

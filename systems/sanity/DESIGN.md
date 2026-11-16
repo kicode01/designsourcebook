@@ -124,8 +124,8 @@ components:
     textColor: "#000000"
     padding: 8px 16px
   button-secondary:
-    backgroundColor: "#0b0b0b"
-    textColor: "#b9b9b9"
+    backgroundColor: transparent
+    textColor: "#ffffff"
     padding: 8px 12px
   button-outlined:
     backgroundColor: "#ffffff"

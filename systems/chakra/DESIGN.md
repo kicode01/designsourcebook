@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Chakra UI
-description: "Crisp light (#fff) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry"
+description: "Crisp light (#fafafa) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry"
 colors:
   brand-50: "#e6f2ff"
   brand-100: "#e6f2ff"
@@ -121,12 +121,12 @@ components:
     rounded: 6px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#fff"
+    backgroundColor: "#f4f4f5"
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#fff"
+    backgroundColor: "#f4f4f5"
     textColor: "#0b0b0c"
     rounded: 10px
     padding: 18px 20px
@@ -141,7 +141,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#fff"
+    backgroundColor: "#f4f4f5"
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px

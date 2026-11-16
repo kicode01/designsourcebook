@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: AutoGuru Overdrive
-description: "Crisp light (#e1edfe) canvas, AvertaStandard typography, #01c68c brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, AvertaStandard typography, #01c68c brand accent, and 8px corner geometry"
 colors:
   background-subtle: "#e1edfe"
   white: "#ffffff"
@@ -50,7 +50,7 @@ components:
     rounded: 8px
     padding: 10px 18px
   button-secondary:
-    backgroundColor: "#ffffff"
+    backgroundColor: transparent
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px

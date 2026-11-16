@@ -303,12 +303,12 @@ components:
     padding: ".375rem .75rem"
   button-primary:
     backgroundColor: "#fff"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
-    backgroundColor: "#6d6d6d"
-    textColor: "#ffffff"
+    backgroundColor: transparent
+    textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 18px
   button-danger:

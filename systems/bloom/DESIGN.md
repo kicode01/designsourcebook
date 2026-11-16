@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Appear Here Styleguide
-description: "Crisp light (#eee) canvas, system-ui typography, rgb(234, 155, 82) brand accent, and 8px corner geometry"
+description: "Crisp light (rgb(255, 255, 255)) canvas, system-ui typography, rgb(234, 155, 82) brand accent, and 8px corner geometry"
 colors:
   color-white: "rgb(255, 255, 255)"
   color-black: "rgb(25, 25, 25)"
@@ -61,12 +61,12 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#eee"
+    backgroundColor: "rgb(245, 245, 245)"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#eee"
+    backgroundColor: "rgb(245, 245, 245)"
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
@@ -81,7 +81,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#eee"
+    backgroundColor: "rgb(245, 245, 245)"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

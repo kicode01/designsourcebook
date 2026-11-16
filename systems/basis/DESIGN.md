@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Basis Design System
-description: "Dark (#21a637) canvas, Rubik typography, #4693fa brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Rubik typography, #4693fa brand accent, and 8px corner geometry"
 colors:
   background-color: "#21a637"
   black: "#000000"
@@ -65,12 +65,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#4693fa"
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -79,13 +79,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#21a637"
-    textColor: "#000000"
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#21a637"
-    textColor: "#000000"
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -99,8 +99,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#21a637"
-    textColor: "#000000"
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
 ---

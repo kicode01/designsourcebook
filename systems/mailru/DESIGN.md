@@ -76,12 +76,12 @@ components:
   badge:
     textColor: "#000000"
   input-default:
-    backgroundColor: "#e7e7e9"
+    backgroundColor: "#f2f2f2"
     textColor: "#0b0b0c"
     rounded: 16px
     padding: 9px 13px
   nav-bar:
-    backgroundColor: "#e7e7e9"
+    backgroundColor: "#f2f2f2"
     textColor: "#0b0b0c"
     rounded: 16px
     padding: 10px 16px

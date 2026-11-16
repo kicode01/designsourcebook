@@ -1,13 +1,25 @@
 {
-  "canvas": "#0b2819",
-  "surface": "#0b2819",
-  "text": "#91918c",
-  "muted": "#ffffff",
+  "canvas": "#ffffff",
+  "surface": "#f6f6f3",
+  "text": "#211922",
+  "muted": "#000000",
   "brand": "#e60023",
   "border": "#e5e5e0",
   "radius": "24px",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
+    {
+      "name": "bg-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "bg-surface",
+      "value": "#f6f6f3"
+    },
+    {
+      "name": "text-primary",
+      "value": "#211922"
+    },
     {
       "name": "brand-pinterest-red",
       "value": "#e60023"
@@ -180,16 +192,16 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#0b2819",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f6f6f3",
+      "textColor": "#211922",
       "rounded": "24px",
       "padding": "9px 13px"
     },
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#0b2819",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f6f6f3",
+      "textColor": "#211922",
       "rounded": "24px",
       "padding": "18px 20px"
     },
@@ -212,8 +224,8 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#0b2819",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f6f6f3",
+      "textColor": "#211922",
       "rounded": "24px",
       "padding": "10px 16px"
     }

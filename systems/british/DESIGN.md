@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: British Gas Nucleus
-description: "Crisp light (#ffffff) canvas, Roboto typography, hsl(224, 100%, 60%) brand accent, and 8px corner geometry"
+description: "Crisp light (hsl(0, 0%, 100%)) canvas, Roboto typography, hsl(224, 100%, 60%) brand accent, and 8px corner geometry"
 colors:
   sl-color-accent-low: "hsl(224, 54%, 20%)"
   sl-color-accent: "hsl(224, 100%, 60%)"
@@ -152,7 +152,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "hsl(224, 20%, 94%)"
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px

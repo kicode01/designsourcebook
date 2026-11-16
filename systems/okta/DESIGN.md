@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Okta Odyssey Design System
-description: "Dark (#ff0000) canvas, Inter typography, #80c7ca brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Inter typography, #80c7ca brand accent, and 8px corner geometry"
 colors:
   50: "#0f1217"
   100: "#2b2e34"
@@ -13,6 +13,9 @@ colors:
   700: "#c0c4cc"
   800: "#d7dbe3"
   900: "#eaeff7"
+  bg-canvas: "#ffffff"
+  bg-surface: "#f0f1f2"
+  text-primary: "#0f1217"
   lighter: "#212947"
   primary: "#80c7ca"
   main: "#536adf"
@@ -39,8 +42,6 @@ colors:
   design-tokens-override-palette-neutral-surface: "#fafafa"
   palette-neutral-surface: "#f0f1f2"
   font-color: "#FFFFFF"
-  background-contrast-color: "#ff0000"
-  background-hex: "#000000"
   foreground-hex: "#ffffff"
   as-formatted-string: "rgb(10, 20, 30)"
 typography:
@@ -51,12 +52,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#80c7ca"
-    textColor: "#000000"
+    textColor: "#0f1217"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
-    backgroundColor: "#000000"
-    textColor: "#ffffff"
+    backgroundColor: transparent
+    textColor: "#0f1217"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -65,13 +66,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#000000"
-    textColor: "#ffffff"
+    backgroundColor: "#f0f1f2"
+    textColor: "#0f1217"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#000000"
-    textColor: "#ffffff"
+    backgroundColor: "#f0f1f2"
+    textColor: "#0f1217"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -85,8 +86,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#000000"
-    textColor: "#ffffff"
+    backgroundColor: "#f0f1f2"
+    textColor: "#0f1217"
     rounded: 8px
     padding: 10px 16px
 ---

@@ -1,10 +1,10 @@
 {
   "canvas": "#131d2b",
-  "surface": "#131d2b",
+  "surface": "#010913",
   "text": "#ffffff",
   "muted": "#ffffff",
   "brand": "#024daf",
-  "border": "#ffffff",
+  "border": "color-mix(in srgb, #ffffff 14%, transparent)",
   "radius": "8px",
   "ink": "#f7f7f8",
   "palette": [
@@ -584,7 +584,7 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#131d2b",
+      "backgroundColor": "#010913",
       "textColor": "#ffffff",
       "rounded": "8px",
       "padding": "9px 13px"
@@ -592,7 +592,7 @@
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#131d2b",
+      "backgroundColor": "#010913",
       "textColor": "#ffffff",
       "rounded": "12px",
       "padding": "18px 20px"
@@ -616,7 +616,7 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#131d2b",
+      "backgroundColor": "#010913",
       "textColor": "#ffffff",
       "rounded": "8px",
       "padding": "10px 16px"

@@ -1,12 +1,12 @@
 {
-  "canvas": "#272729",
-  "surface": "#262628",
-  "text": "#ffffff",
-  "muted": "#ffffff",
+  "canvas": "#f5f5f7",
+  "surface": "#f5f5f7",
+  "text": "#1d1d1f",
+  "muted": "#1d1d1f",
   "brand": "#000000",
-  "border": "color-mix(in srgb, #ffffff 14%, transparent)",
+  "border": "color-mix(in srgb, #1d1d1f 14%, transparent)",
   "radius": "12px",
-  "ink": "#f7f7f8",
+  "ink": "#0b0b0c",
   "palette": [
     {
       "name": "primary-pure-black",
@@ -287,16 +287,16 @@
     {
       "key": "input-default",
       "kind": "input",
-      "backgroundColor": "#262628",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
       "rounded": "12px",
       "padding": "9px 13px"
     },
     {
       "key": "card-surface",
       "kind": "card",
-      "backgroundColor": "#262628",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
       "rounded": "12px",
       "padding": "18px 20px"
     },
@@ -319,8 +319,8 @@
     {
       "key": "nav-bar",
       "kind": "nav",
-      "backgroundColor": "#262628",
-      "textColor": "#ffffff",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
       "rounded": "12px",
       "padding": "10px 16px"
     }

@@ -454,7 +454,7 @@ components:
   woocommerce-widget-layered-nav-dropdown-2:
     backgroundColor: "#999999"
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f1f2f3"
     textColor: "#0b0b0c"
     rounded: 3px
     padding: 9px 13px

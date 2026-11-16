@@ -112,8 +112,8 @@ components:
     backgroundColor: "#0f62fe"
     textColor: "#ffffff"
   button-secondary:
-    backgroundColor: "#393939"
-    textColor: "#ffffff"
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
   button-tertiary:
     textColor: "#0f62fe"
   button-ghost:
@@ -125,7 +125,7 @@ components:
   distinctive-tile:
     backgroundColor: "#f4f4f4"
   input-default:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f4f4f4"
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 9px 13px
@@ -140,7 +140,7 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#ffffff"
+    backgroundColor: "#f4f4f4"
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 10px 16px

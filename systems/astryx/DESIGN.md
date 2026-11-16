@@ -1,8 +1,10 @@
 ---
 version: alpha
 name: Astryx
-description: "Dark (#ff0000) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Figtree typography, #0a7d55 brand accent, and 8px corner geometry"
 colors:
+  bg-canvas: "#ffffff"
+  bg-surface: "#f3f4f6"
   default-accent-seed: "#0064E0"
   accent: "#0064E0"
   neutral: "#c1c6d5"
@@ -44,7 +46,6 @@ colors:
   color-background-inverted: "#0a1317"
   color-background-error-inverted: "#aa071e"
   brand: "#0a7d55"
-  background-colour: "#ff0000"
   brand-accent: "#ff0000"
   brand-x: "#0a7"
   my-accent: "#0000ff"
@@ -128,12 +129,12 @@ typography:
 components:
   button-primary:
     backgroundColor: "#0a7d55"
-    textColor: "#f7f7f8"
+    textColor: "#ffffff"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
-    textColor: "#000000"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-danger:
@@ -142,13 +143,13 @@ components:
     rounded: 8px
     padding: 10px 18px
   input-default:
-    backgroundColor: "#ff0000"
-    textColor: "#000000"
+    backgroundColor: "#f3f4f6"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
   card-surface:
-    backgroundColor: "#ff0000"
-    textColor: "#000000"
+    backgroundColor: "#f3f4f6"
+    textColor: "#0b0b0c"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -162,8 +163,8 @@ components:
     rounded: 999px
     padding: 4px 10px
   nav-bar:
-    backgroundColor: "#ff0000"
-    textColor: "#000000"
+    backgroundColor: "#f3f4f6"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
 ---

@@ -4,11 +4,11 @@
   "description": "Stark black and white, full-bleed imagery, futuristic",
   "style": "Stark black and white, full-bleed imagery, futuristic",
   "category": "Enterprise & Consumer",
-  "theme": "dark",
+  "theme": "light",
   "tags": [
     "enterprise",
     "consumer",
-    "dark"
+    "light"
   ],
   "homepage": "https://spacex.com",
   "license": "proprietary",
@@ -27,8 +27,8 @@
   },
   "checks": {
     "errors": 0,
-    "warnings": 0,
-    "verified": true
+    "warnings": 1,
+    "verified": false
   },
   "files": {
     "design": "DESIGN.md",

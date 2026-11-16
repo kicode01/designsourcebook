@@ -4,7 +4,7 @@
   "text": "#f9f9f9",
   "muted": "#cecece",
   "brand": "hsl(202, 100%, 67%)",
-  "border": "color-mix(in srgb, #f9f9f9 14%, transparent)",
+  "border": "hsl(195, 5%, 15%)",
   "radius": "8px",
   "ink": "#f7f7f8",
   "palette": [
@@ -212,15 +212,15 @@
       "key": "button-primary",
       "kind": "button",
       "backgroundColor": "hsl(202, 100%, 67%)",
-      "textColor": "#000000",
+      "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 18px"
     },
     {
       "key": "button-secondary",
       "kind": "button",
-      "backgroundColor": "#101111",
-      "textColor": "#ffffff",
+      "backgroundColor": "transparent",
+      "textColor": "#f9f9f9",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -236,7 +236,7 @@
       "key": "input-default",
       "kind": "input",
       "backgroundColor": "#101111",
-      "textColor": "#ffffff",
+      "textColor": "#f9f9f9",
       "rounded": "8px",
       "padding": "9px 13px"
     },
@@ -244,7 +244,7 @@
       "key": "card-surface",
       "kind": "card",
       "backgroundColor": "#101111",
-      "textColor": "#ffffff",
+      "textColor": "#f9f9f9",
       "rounded": "12px",
       "padding": "18px 20px"
     },
@@ -268,7 +268,7 @@
       "key": "nav-bar",
       "kind": "nav",
       "backgroundColor": "#101111",
-      "textColor": "#ffffff",
+      "textColor": "#f9f9f9",
       "rounded": "8px",
       "padding": "10px 16px"
     }

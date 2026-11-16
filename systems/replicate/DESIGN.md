@@ -92,12 +92,12 @@ components:
     textColor: "#202020"
   input-default:
     backgroundColor: "#fcfcfc"
-    textColor: "#0b0b0c"
+    textColor: "#646464"
     rounded: 8px
     padding: 9px 13px
   card-surface:
     backgroundColor: "#fcfcfc"
-    textColor: "#0b0b0c"
+    textColor: "#646464"
     rounded: 12px
     padding: 18px 20px
   badge-brand:
@@ -112,7 +112,7 @@ components:
     padding: 4px 10px
   nav-bar:
     backgroundColor: "#fcfcfc"
-    textColor: "#0b0b0c"
+    textColor: "#646464"
     rounded: 8px
     padding: 10px 16px
 ---
