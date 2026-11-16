@@ -86,7 +86,15 @@ const html = template.replace("/*__DATA__*/ []", json).replace("/*__COVERAGE__*/
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 const dest = path.join(OUT_DIR, "index.html");
-fs.writeFileSync(dest, html, "utf8");
+for (let i = 0; i < 8; i++) {
+  try {
+    fs.writeFileSync(dest, html, "utf8");
+    break;
+  } catch (err) {
+    if (i === 7) throw err;
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
+  }
+}
 
 const kb = (fs.statSync(dest).size / 1024).toFixed(0);
 const withComps = systems.filter((s) => s.components.length > 0).length;
