@@ -111,9 +111,10 @@ export function MarkPickerDialog({
   const [packId, setPackId] = useState('all');
   const [q, setQ] = useState('');
   const [brandLogos, setBrandLogos] = useState<{ id: string; brand: string; svg: string }[]>([]);
+  const [brandTotal, setBrandTotal] = useState<number | null>(null);
   const [logosLoading, setLogosLoading] = useState(false);
 
-  const glyphs = useMemo(() => {
+  const { glyphs, totalGlyphs } = useMemo(() => {
     const out: { pack: string; name: string; svg: string }[] = [];
     const nq = q.trim().toLowerCase();
     for (const [pid, pk] of Object.entries(iconPacks)) {
@@ -123,8 +124,22 @@ export function MarkPickerDialog({
         out.push({ pack: pid, name: g.name, svg: glyphToSvg(g, pk.grid || 24, '#fafafa') });
       }
     }
-    return out.slice(0, 72);
+    return { glyphs: out.slice(0, 120), totalGlyphs: out.length };
   }, [iconPacks, packId, q]);
+
+  useEffect(() => {
+    if (!open || brandTotal !== null) return;
+    let cancelled = false;
+    fetch('/api/logos?stats=1')
+      .then((r) => r.json())
+      .then((d) => {
+        if (!cancelled && d.ok && typeof d.total === 'number') {
+          setBrandTotal(d.total);
+        }
+      })
+      .catch(() => { /* ignore */ });
+    return () => { cancelled = true; };
+  }, [open, brandTotal]);
 
   useEffect(() => {
     if (!open || sourceTab !== 'logos') return;
@@ -137,6 +152,7 @@ export function MarkPickerDialog({
       .then((d) => {
         if (!cancelled && d.ok && Array.isArray(d.items)) {
           setBrandLogos(d.items);
+          if (typeof d.total === 'number' && !q.trim()) setBrandTotal(d.total);
         }
       })
       .catch(() => { /* ignore */ })
@@ -185,7 +201,7 @@ export function MarkPickerDialog({
             UI Icon Packs ({Object.keys(iconPacks).length})
           </button>
           <button type="button" aria-pressed={sourceTab === 'logos'} onClick={() => setSourceTab('logos')}>
-            Brand Logos (1,432)
+            Brand Logos{brandTotal !== null ? ` (${brandTotal.toLocaleString()})` : ''}
           </button>
         </div>
 
@@ -193,7 +209,13 @@ export function MarkPickerDialog({
           <label className="ldb-search" style={{ flex: 1 }}>
             <Icon name="search" size={13} />
             <input
-              placeholder={sourceTab === 'packs' ? 'Filter verified UI glyphs…' : 'Search 1,432 company logos…'}
+              placeholder={
+                sourceTab === 'packs'
+                  ? 'Filter verified UI glyphs…'
+                  : brandTotal !== null
+                    ? `Search ${brandTotal.toLocaleString()} brand logos…`
+                    : 'Search brand logos…'
+              }
               value={q}
               onChange={(e) => setQ(e.target.value)}
             />
@@ -240,7 +262,7 @@ export function MarkPickerDialog({
             ))
           ) : logosLoading && brandLogos.length === 0 ? (
             <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: 24, fontSize: 12, color: 'var(--studio-muted)' }}>
-              Querying 1,432 logos…
+              Querying brand logos…
             </div>
           ) : (
             brandLogos.map((logo) => (
@@ -259,7 +281,7 @@ export function MarkPickerDialog({
                 }}
               >
                 <span
-                  style={{ width: 28, height: 28, display: 'grid', placeItems: 'center', overflow: 'hidden', color: 'var(--studio-ink)' }}
+                  style={{ width: 30, height: 30, display: 'grid', placeItems: 'center', overflow: 'hidden', background: '#ffffff', borderRadius: 6, padding: 3 }}
                   dangerouslySetInnerHTML={{
                     __html: logo.svg
                       .replace(/\swidth="[^"]*"/i, ' width="24"')
@@ -269,6 +291,11 @@ export function MarkPickerDialog({
                 <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>{logo.brand}</span>
               </button>
             ))
+          )}
+          {sourceTab === 'packs' && totalGlyphs > glyphs.length && (
+            <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '8px 4px', fontSize: 11, color: 'var(--studio-muted)' }}>
+              Showing first {glyphs.length} of {totalGlyphs.toLocaleString()} glyphs — filter by pack or keyword.
+            </div>
           )}
         </div>
       </div>

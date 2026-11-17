@@ -509,7 +509,7 @@
 </main>
 
 <footer>
-  Specimens are rendered live from verified system tokens, 1,432 indexed brand marks, and 57 official SVG icon packages — educational &amp; engineering reference.
+  Specimens are rendered live from verified system tokens, <span id="footerMarkCount">indexed brand marks</span>, and <span id="footerPackCount">official SVG icon packages</span> — educational &amp; engineering reference.
 </footer>
 
 <div class="toast" id="toast">Copied</div>
@@ -2872,7 +2872,7 @@ function buildLogoDbShell(){
     '<div class="cov-sum" id="ldbStats"></div>'+
     '<div class="rk-controls">'+
       '<div class="seg" role="tablist" aria-label="Logo Database Collection">'+
-        '<button type="button" class="chip" data-ldb-tab="logos" aria-pressed="true">Brand Marks (1,432)</button>'+
+        '<button type="button" class="chip" data-ldb-tab="logos" aria-pressed="true">'+(logoState.stats?.total ? 'Brand Marks ('+Number(logoState.stats.total).toLocaleString()+')' : 'Brand Marks')+'</button>'+
         '<button type="button" class="chip" data-ldb-tab="icons" aria-pressed="false">UI Icon Packs ('+packCount+')</button>'+
       '</div>'+
       '<select class="ldb-select" id="ldbMarkType" aria-label="Filter by mark type"><option value="">All Mark Types</option></select>'+
@@ -2977,25 +2977,29 @@ function syncLogoControls(){
 
 function renderLogoStats(){
   const statsEl=document.getElementById('ldbStats');
-  if(!statsEl) return;
   const s=logoState.stats;
-  const packCount=Object.keys(ICON_PACKS).length||57;
+  const packCount=Object.keys(ICON_PACKS).length;
+  const footerPk=document.getElementById('footerPackCount');
+  if(footerPk && packCount) footerPk.textContent=packCount+' official SVG icon packages';
+  const footerMk=document.getElementById('footerMarkCount');
+  if(footerMk && s?.total) footerMk.textContent=Number(s.total).toLocaleString()+' indexed brand marks';
+  if(!statsEl) return;
   if(!s){
     statsEl.innerHTML=
-      '<div><b>1,432</b>indexed SVG marks</div>'+
-      '<div><b>141</b>exemplary studies</div>'+
-      '<div><b>75</b>median anchors</div>'+
+      '<div><b>\u2014</b>indexed SVG marks</div>'+
+      '<div><b>\u2014</b>exemplary studies</div>'+
+      '<div><b>\u2014</b>median anchors</div>'+
       '<div><b>'+packCount+'</b>verified UI icon packs</div>';
     return;
   }
   statsEl.innerHTML=
-    '<div><b>'+Number(s.total||1432).toLocaleString()+'</b>indexed SVG marks</div>'+
-    '<div><b>'+Number(s.exemplaryCount||0)+'</b>exemplary studies</div>'+
+    '<div><b>'+Number(s.total||0).toLocaleString()+'</b>indexed SVG marks</div>'+
+    '<div><b>'+Number(s.exemplaryCount||0).toLocaleString()+'</b>exemplary studies</div>'+
     '<div><b>'+Number(s.medianAnchors||0)+'</b>median anchor points</div>'+
     '<div><b>'+Number(s.twoOrFewerColorsPct||0)+'%</b>use 1\u20132 solid colors</div>';
 
   const brandTabBtn=logosEl.querySelector('[data-ldb-tab="logos"]');
-  if(brandTabBtn) brandTabBtn.textContent='Brand Marks ('+Number(s.total||1432).toLocaleString()+')';
+  if(brandTabBtn) brandTabBtn.textContent='Brand Marks ('+Number(s.total||0).toLocaleString()+')';
 
   const fillSelect=(id,label,arr,cur)=>{
     const el=document.getElementById(id);
@@ -3697,10 +3701,11 @@ async function hydrateFromDb(){
     if(j.iconPacks) ICON_PACKS=j.iconPacks;
     if(j.coverage) COVERAGE=j.coverage;
     DB_META={ live:true, syncedAt:j.syncedAt||null };
+    renderLogoStats();
     const slug=location.hash.replace(/^#\/?/,'');
     if(!slug && state.view!=='logos') showView(true);
     else if(slug.startsWith('logos/pack/')) renderLogoDetail(slug.slice(6),true);
-    else if(state.view==='logos' && slug==='logos'){ renderLogoStats(); if(logoState.subTab==='icons') renderIconPackGrid(); }
+    else if(state.view==='logos' && slug==='logos'){ if(logoState.subTab==='icons') renderIconPackGrid(); }
   }catch(_){}
 }
 function route(){
@@ -3722,6 +3727,8 @@ function route(){
 }
 window.addEventListener('hashchange',route);
 route();
+renderLogoStats();
+loadLogoStats();
 hydrateFromDb();
 </script>
 </body>

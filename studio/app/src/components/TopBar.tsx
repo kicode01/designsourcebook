@@ -84,7 +84,7 @@ export function TopBar({
           className="product-switcher"
           href="../#/logos"
           style={{ fontSize: 11.5, padding: '4px 10px' }}
-          title="Open 1,432 Logos & 57 Icon Packs Database in Catalog"
+          title="Open Brand Logos & Icon Packs Database in Catalog"
         >
           <span>Logos</span>
           <Icon name="arrowUpRight" size={12} />
