@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: ElevenLabs
-description: "Dark cinematic UI, audio-waveform aesthetics"
+description: "Crisp white (#ffffff) canvas, warm stone surfaces, stark black-pill CTAs"
 colors:
   primary-pure-white: "#ffffff"
   primary-light-gray: "#f5f5f5"
@@ -22,7 +22,7 @@ colors:
   shadows-warm-shadow: "rgba(78,50,23,0.04)"
   shadows-edge-shadow: "rgba(0,0,0,0.08)"
   shadows-inset-ring: "rgba(0,0,0,0.1)"
-  primary: "#ffffff"
+  primary: "#000000"
 typography:
   display-hero:
     fontFamily: Waldenburg
@@ -106,6 +106,13 @@ typography:
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.6
+rounded:
+  button: 9999px
+  input: 9999px
+  card: 9999px
+  badge: 999px
+  nav: 9999px
+  default: 8px
 components:
   button-primary-black-pill:
     backgroundColor: "#000000"

@@ -77,6 +77,13 @@ typography:
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0.05px
+rounded:
+  button: 4px
+  input: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button-glass-on-dark:
     backgroundColor: "rgba(255, 255, 255, 0.12)"

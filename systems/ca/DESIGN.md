@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: CA Technologies Mineral UI
-description: "Crisp light (#f0f5fc) canvas, system-ui typography, #f0f5fc brand accent, and 8px corner geometry"
+description: "Crisp light (#3272d9) canvas, system-ui typography, #3272d9 brand accent, and 8px corner geometry"
 colors:
   brand-10: "#f0f5fc"
   brand-90: "#103570"
@@ -93,7 +93,7 @@ colors:
   palette-mnrl-purple-20: "#ead9fa"
   palette-mnrl-sky-10: "#e8f4fa"
   palette-mnrl-slate-100: "#1d2830"
-  primary: "#f0f5fc"
+  primary: "#3272d9"
 typography:
   mnrl-font-size-base:
     fontSize: 1rem
@@ -115,10 +115,17 @@ typography:
     fontSize: 0.875rem
   mnrl-h6-font-size:
     fontSize: 0.875rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
-    backgroundColor: "#f0f5fc"
-    textColor: "#0b0b0c"
+    backgroundColor: "#3272d9"
+    textColor: "#ffffff"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
@@ -142,8 +149,8 @@ components:
     rounded: 12px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#f0f5fc"
-    textColor: "#0b0b0c"
+    backgroundColor: "#3272d9"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -162,21 +169,68 @@ components:
 
 ## Overview
 
-CA Technologies Mineral UI — tokens read from https://github.com/mineral-ui/mineral-ui.
+**CA Technologies Mineral UI** is a light-first design system anchored on `#ebeff5` canvas surfaces with `#0b0b0c` primary ink (17.0:1 contrast) and `#3272d9` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 10 type tokens.
+Typography centers cleanly on `System UI` (34px display down to 16px body), unified by `8px` base corner radius and stepped `#ebeff5` -> `#e8f4fa` surface layering.
+
+Maintained by **CA**. Source: published token package (https://github.com/mineral-ui/mineral-ui), repo https://github.com/mineral-ui/mineral-ui, package `mineral-ui`, frameworks: react. Inventory: **91** colors, **10** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ebeff5` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#e8f4fa` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (17.0:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3272d9` (4.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.3:1 contrast).
+- **Structural Border (`border`)**: `#c8d1e0` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `brand-90` (`#103570`), `success-background-color-success-focus` (`#e1faeb`), `background-color-brand-primary` (`#3272d9`), `color-brand` (`#3272d9`), `mnrl-background-color-brand-primary-hover` (`#5691f0`), `mnrl-border-color-brand-active` (`#1d5bbf`).
+- **Neutral Ramp**: `brand-10` (`#f0f5fc`), `gray-border-color` (`#c8d1e0`), `white-color-danger-primary` (`#ffffff`), `background-color-active` (`#ebeff5`), `panel-border-color-inverted` (`#434a54`), `background-color-warning-hover` (`#fcf2e6`).
+- **Semantic States**: success: `success-border-color-success-focus` (`#20693d`) · danger: `danger-background-color-danger-primary-hover` (`#f55353`) · warning: `warning-background-color-warning-primary-hover` (`#cf7911`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `system-ui` (top step `mnrl-h1-font-size`: 2.125rem, weight 600).
+- **Body & UI Controls**: `system-ui` (`mnrl-font-size-base`: 1rem, weight 400).
+- **Scale Steps (10)**: `mnrl-h1-font-size` (2.125rem), `mnrl-h2-font-size` (1.75rem), `mnrl-h3-font-size` (1.375rem), `mnrl-h4-font-size` (1.125rem), `mnrl-font-size-base` (1rem), `mnrl-font-size-prose` (1rem), `mnrl-font-size-ui` (0.875rem), `mnrl-h5-font-size` (0.875rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f0f5fc` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 10 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#e8f4fa` cards; separate sibling sections using `#c8d1e0` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ebeff5` -> `#e8f4fa`) and `1px solid #c8d1e0` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3272d9` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#3272d9`, ink `#ffffff`, (4.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#f55353`, ink `#0b0b0c`, (5.9:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#ebeff5`, ink `#0b0b0c`, (17.0:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#ebeff5`, ink `#0b0b0c`, (17.0:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#3272d9`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#20693d`, ink `#ffffff`, (6.7:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ebeff5`, ink `#0b0b0c`, (17.0:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ebeff5` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#3272d9` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#e8f4fa` surface shifts and `#c8d1e0` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

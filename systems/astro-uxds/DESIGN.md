@@ -288,6 +288,13 @@ typography:
   control-body-1-bold:
     fontSize: 1rem
     fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#2dccff"
@@ -335,21 +342,69 @@ components:
 
 ## Overview
 
-Rocket Communications Astro UXDS — tokens read from https://github.com/RocketCommunicationsInc/astro.
+**Astro UXDS** is a dark-first design system anchored on `#172635` canvas surfaces with `#f7f7f8` primary ink (14.4:1 contrast) and `#2dccff` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 16 colour tokens and 4 type tokens.
+Typography centers cleanly on `Roboto` (60px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Rocket Communications**. Source: published token package (https://github.com/RocketCommunicationsInc/astro), repo https://github.com/RocketCommunicationsInc/astro, package `@astrouxds/astro-web-components`, frameworks: web-components, react, angular. Inventory: **16** colors, **106** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-16 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#172635` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#172635` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (14.4:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#2dccff` (8.2:1 vs canvas; pair with `#0b0b0c` foreground ink for 10.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #f7f7f8 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `indeterminate-nub-color` (`#4dacff`), `standby-fill` (`#2dccff`), `standby-border` (`#2dccff`), `serious-fill` (`#ffb302`), `serious-border` (`#ffb302`), `normal-fill` (`#56f000`).
+- **Neutral Ramp**: `off-fill` (`#a4abb6`), `off-border` (`#a4abb6`).
+- **Semantic States**: danger: `critical-fill` (`#ff3838`) · warning: `caution-fill` (`#fce83a`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (top step `font-size6xl`: 3.75rem, weight 600).
+- **Body & UI Controls**: `Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (`font-size-base`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (`font-monospace1-font-size`: 1.75rem).
+- **Scale Steps (106)**: `font-size6xl` (3.75rem), `font-display1-font-size` (3.75rem), `rux-display-1` (3.75rem, w300), `display-1` (3.75rem), `font-size5xl` (3rem), `font-display2-font-size` (3rem), `rux-display-2` (3rem, w400), `display-2` (3rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#172635) canvas paired with `#172635` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#2dccff` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto` across 106 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#172635` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#172635` -> `#172635`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#2dccff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#2dccff`, ink `#0b0b0c`, (10.5:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#f7f7f8`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ef4444`, ink `#000000`, (5.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#172635`, ink `#f7f7f8`, (14.4:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#172635`, ink `#f7f7f8`, (14.4:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#2dccff`, ink `#000000`, (11.2:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#172635`, ink `#f7f7f8`, (14.4:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#172635` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `#2dccff` with `#0b0b0c` text (10.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#172635` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

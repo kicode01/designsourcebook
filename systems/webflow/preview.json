@@ -3,7 +3,7 @@
   "surface": "#222222",
   "text": "#f7f7f8",
   "muted": "#f7f7f8",
-  "brand": "#080808",
+  "brand": "#146ef5",
   "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
   "radius": "8px",
   "ink": "#f7f7f8",
@@ -78,7 +78,7 @@
     },
     {
       "name": "primary",
-      "value": "#080808"
+      "value": "#146ef5"
     }
   ],
   "type": [
@@ -167,8 +167,8 @@
     {
       "key": "button-primary",
       "kind": "button",
-      "backgroundColor": "#080808",
-      "textColor": "#f7f7f8",
+      "backgroundColor": "#146ef5",
+      "textColor": "#ffffff",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -207,8 +207,8 @@
     {
       "key": "badge-brand",
       "kind": "badge",
-      "backgroundColor": "#080808",
-      "textColor": "#f7f7f8",
+      "backgroundColor": "#146ef5",
+      "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
     },
@@ -229,6 +229,6 @@
       "padding": "10px 16px"
     }
   ],
-  "overview": "Webflow's website is a visually rich, tool-forward platform that communicates \"design without code\" through clean white surfaces, the signature Webflow Blue (#146ef5), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.\n\nKey Characteristics:\n- White canvas with near-black (#080808) text\n- Webflow Blue (#146ef5) as primary brand + interactive color\n- WF Visual Sans Variable — custom variable font with weight 500–600\n- Rich secondary palette: purple #7a3dff, pink #ed52cb, green #00d722, orange #ff6b00, yellow #ffae13, red #ee1d36\n- Conservative 4px–8px border-radius — sharp, not rounded\n- Multi-layer shadow stacks (5-layer cascading shadows)\n- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)\n-…",
+  "overview": "Webflow's website is a visually rich, tool-forward platform that communicates \"design without code\" through clean white surfaces, the signature Webflow Blue (`#146ef5`), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.\n\n**Key Characteristics:**\n- White canvas with near-black (`#080808`) text\n- Webflow Blue (`#146ef5`) as primary brand + interactive color\n- WF Visual Sans Variable — custom variable font with weight 500–600\n- Rich secondary palette: purple `#7a3dff`, pink `#ed52cb`, green `#00d722`, orange `#ff6b00`, yellow `#ffae13`, red `#ee1d36`\n- Conservative 4px–8px border-radius — sharp, not rounded\n- Multi-layer shadow stacks (5-layer cascading shadows)\n- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)\n- translate(6px) hover animation on buttons\n\n### Layout & Spacing\n- Spacing: fractional scale (1px, 2.4px, 3.2px, 4px, 5.6px, 6px, 7.2px, 8px, 9.6px, 12px, 16px, 24px)\n- Radius: 2px, 4px, 8px, 50% — conservative, sharp\n- Breakpoints: 479px, 768px, 992px",
   "dos": "- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.\n- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs."
 }

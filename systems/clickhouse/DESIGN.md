@@ -81,6 +81,13 @@ typography:
     fontSize: 11.2px
     fontWeight: 500
     lineHeight: 1.79
+rounded:
+  button: 4px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 4px
 components:
   button-neon-primary:
     backgroundColor: "#faff69"

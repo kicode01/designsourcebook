@@ -163,6 +163,12 @@ typography:
     fontSize: 14px
   font-family-regular:
     fontFamily: "Inter, -apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Segoe UI\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  default: 6px
 components:
   panel-header:
     backgroundColor: "#fafafa"
@@ -212,25 +218,68 @@ components:
 
 ## Overview
 
-Semi Design — tokens read from https://github.com/DouyinFE/semi-design.
+**Semi Design** is a dark-first design system anchored on `rgba(22, 22, 26, 1)` canvas surfaces with `#f7f7f8` primary ink (16.9:1 contrast) and `rgba(119, 182, 249, 1)` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 57 colour tokens and 46 type tokens.
+Typography centers cleanly on `Inter` (36px display down to 16px body), unified by `6px` base corner radius and stepped `rgba(22, 22, 26, 1)` -> `rgba(35, 36, 41, 1)` surface layering.
+
+Maintained by **Semi**. Source: published token package (https://github.com/DouyinFE/semi-design), repo https://github.com/DouyinFE/semi-design, package `@douyinfe/semi-ui`, frameworks: react, vue, css. Inventory: **57** colors, **47** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-57 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgba(22, 22, 26, 1)` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `rgba(35, 36, 41, 1)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (16.9:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgba(119, 182, 249, 1)` (8.5:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.2:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #f7f7f8 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `semi-color-data-0` (`rgba(87, 105, 255, 1)`), `semi-color-data-1` (`rgba(142, 212, 231, 1)`), `semi-color-data-2` (`rgba(245, 135, 0, 1)`), `semi-color-data-3` (`rgba(220, 183, 252, 1)`), `semi-color-data-4` (`rgba(74, 156, 247, 1)`), `semi-color-data-5` (`rgba(243, 204, 53, 1)`).
+- **Neutral Ramp**: `semi-color-white` (`rgba(228, 231, 245, 1)`), `semi-color-nav-bg` (`rgba(35, 36, 41, 1)`), `semi-color-bg-0` (`rgba(22, 22, 26, 1)`), `semi-color-bg-1` (`rgba(35, 36, 41, 1)`), `semi-color-bg-2` (`rgba(53, 54, 60, 1)`), `semi-color-bg-3` (`rgba(67, 68, 74, 1)`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif` (top step `font-feedback-emoji-font-size`: 36px, weight 600).
+- **Body & UI Controls**: `Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif` (`font-family-regular`: 16px, weight 400).
+- **Monospace / Technical Labels**: `Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif` (`font-sidebar-file-menu-bar-codeblock-font-size`: 12px).
+- **Scale Steps (47)**: `font-feedback-emoji-font-size` (36px), `font-size-header-1` (32px), `font-sidebar-mcp-item-sign-icon-font-size` (32px), `font-chat-input-bottom-clear-button-icon-font-size` (30px), `font-size-header-2` (28px), `font-calendar-day-all-day-font-size` (26px), `font-size-header-3` (24px), `font-calendar-month-day-font-size` (24px).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `12px 16px`, `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `rgba(35, 36, 41, 1)` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgba(22, 22, 26, 1)` -> `rgba(35, 36, 41, 1)`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgba(119, 182, 249, 1)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`panel-header` (nav)**: bg `#fafafa`, ink `#1c1f23`, (15.8:1), padding `12px 16px`.
+- **`button-primary` (button)**: bg `rgba(119, 182, 249, 1)`, ink `#0b0b0c`, (9.2:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#f7f7f8`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `rgba(119, 182, 249, 1)`, ink `#0b0b0c`, (9.2:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(119, 182, 249, 1)` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 47 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `rgba(22, 22, 26, 1)` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `rgba(119, 182, 249, 1)` with `#0b0b0c` text (9.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `rgba(35, 36, 41, 1)` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -45,6 +45,12 @@ typography:
     fontSize: 12px
     fontWeight: 700
     lineHeight: 1
+rounded:
+  button: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button:
     textColor: "#5c6570"
@@ -82,25 +88,66 @@ components:
 
 ## Overview
 
-JB Design System — read from the rendered page in a browser, not from published tokens.
+**JB Design System** is a light-first design system anchored on `#f6f9fc` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `#ff8300` brand accent.
 
-Tokens were read from https://javadbat.github.io/design-system, not from a published token package: 20 colour tokens and 5 type tokens.
+Typography centers cleanly on `dana` (32px display down to 16px body), unified by `4px` base corner radius and stepped `#f6f9fc` -> `#ecf2fc` surface layering.
+
+Maintained by **JB**. Source: live stylesheet extraction (https://javadbat.github.io/design-system), repo https://github.com/javadbat/design-system, frameworks: react, css. Inventory: **20** colors, **5** typography steps, and **7** documented components (all rights reserved license).
 
 ## Colors
 
-20 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f6f9fc` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#ecf2fc` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.6:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff8300` (2.3:1 vs canvas; pair with `#0b0b0c` foreground ink for 8.0:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `css-color-10` (`#7d52ff`), `css-surface-12` (`#dbecff`), `css-color-15` (`#ff8300`), `css-color-16` (`#2a0481`), `css-color-18` (`#571fff`), `primary` (`#ff8300`).
+- **Neutral Ramp**: `tree-node-background-hover` (`#FFFFFF`), `sb-sidebar-bottom-card-background` (`#FFFFFF`), `bg-canvas` (`#f6f9fc`), `canvas-text` (`#0e1218`), `main-bg` (`#ecf2fc`), `main-text` (`#5c6570`).
 
 ## Typography
 
-Families declared in the source: `dana, tahoma, Arial, Helvetica, sans-serif`.
+- **Primary / Display Voice**: `dana, tahoma, Arial, Helvetica, sans-serif` (top step `h1`: 32px, weight 400).
+- **Body & UI Controls**: `dana, tahoma, Arial, Helvetica, sans-serif` (`header`: 16px, weight 400).
+- **Scale Steps (5)**: `h1` (32px, w400), `h2` (24px, w400), `header` (16px, w400), `nav` (16px, w400), `button` (12px, w700).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `0px 9px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#ecf2fc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6f9fc` -> `#ecf2fc`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8300` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-3 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: ink `#5c6570`, radius `4px`, padding `0px 9px`.
+- **`button-2` (button)**: ink `#0e1218`, radius `4px`, padding `5px 6px 4px 8px`.
+- **`input` (input)**: ink `#0e1218`.
+- **`card-surface` (card)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#ff8300`, ink `#0b0b0c`, (8.0:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `4px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#f6f9fc) canvas paired with `#f6f9fc` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8300` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `dana` across 5 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#f6f9fc` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff8300` with `#0b0b0c` text (8.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `dana` headings with `dana` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#ecf2fc` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

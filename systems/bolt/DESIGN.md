@@ -147,6 +147,12 @@ typography:
     fontFamily: "Lora, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif"
   bolt-type-font-family-headline:
     fontFamily: "\"Open Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif"
+rounded:
+  button: 16px
+  card: 16px
+  badge: 999px
+  nav: 16px
+  default: 16px
 components:
   selectedItemBubble:
     backgroundColor: "#e0e0e0"
@@ -193,25 +199,69 @@ components:
 
 ## Overview
 
-Bolt Design System — read from the rendered page in a browser, not from published tokens.
+**Bolt Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#31355e` brand accent.
 
-Tokens were read from https://boltdesignsystem.com/, not from a published token package: 83 colour tokens and 30 type tokens.
+Typography centers cleanly on `Open Sans` (96px display down to 18px body), unified by `16px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Pega Digital**. Source: live stylesheet extraction (https://boltdesignsystem.com/), repo https://github.com/boltdesignsystem/bolt, frameworks: web-components, css. Inventory: **83** colors, **30** typography steps, and **8** documented components (all rights reserved license).
 
 ## Colors
 
-83 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#31355e` (11.7:1 vs canvas; pair with `#f7f7f8` foreground ink for 10.9:1 contrast).
+- **Structural Border (`border`)**: `#e0e2eb` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `theme-bg` (`#161b3c`), `theme-primary` (`#31355e`), `theme-secondary` (`#161f50`), `bolt-color-indigo-light` (`#3e67bb`), `bds-form-border-color-primary-rgb` (`rgb(62, 103, 187)`), `bds-form-border-color-hover` (`#3e67bb`).
+- **Neutral Ramp**: `theme-text-rgb` (`rgb(255, 255, 255)`), `theme-text` (`#262829`), `base-color` (`#ebebeb`), `highlight-color` (`#f5f5f5`), `e-bolt-button-text-color` (`#fff`), `bolt-color-gray-xdark` (`#2e2e33`).
+- **Semantic States**: success: `bolt-color-success` (`#357e38`) · danger: `bolt-color-error-light` (`#fad5d1`) · warning: `bolt-color-yellow-light` (`#ffdf8e`) · info: `bolt-color-info-dark` (`#004880`).
 
 ## Typography
 
-Families declared in the source: `"Chakra Petch", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`, `"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`, `SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace`, `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`, `Lora, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`.
+- **Primary / Display Voice**: `"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif` (top step `bolt-type-font-size-xlargedisplay-lora`: 6rem, weight 600).
+- **Body & UI Controls**: `"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif` (`bolt-type-font-size-regular-lora`: 1.15rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace` (`bolt-type-font-family-code`: 16px).
+- **Scale Steps (30)**: `bolt-type-font-size-xlargedisplay-lora` (6rem), `bolt-type-font-size-largedisplay-lora` (4.8rem), `bolt-type-font-size-largedisplay` (4.75rem), `bolt-type-font-size-display` (4rem), `bolt-type-font-size-display-lora` (4rem), `bolt-type-font-size-xxxlarge` (3.5rem), `bolt-type-font-size-xxxlarge-lora` (3.2rem), `bolt-type-font-size-xxlarge` (2.75rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `4px 8px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#e0e2eb` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid #e0e2eb` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#31355e` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `16px` (Buttons `16px` · Inputs `16px` · Cards `16px` · Badges `999px` · Navigation `16px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `16px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`selectedItemBubble` (input)**: bg `#e0e0e0`, radius `16px`, padding `4px 8px`.
+- **`button-primary` (button)**: bg `#31355e`, ink `#ffffff`, (11.7:1), radius `16px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `16px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#fad5d1`, ink `#0b0b0c`, (14.5:1), radius `16px`, padding `10px 18px`.
+- **`card-surface` (card)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `16px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#31355e`, ink `#ffffff`, (11.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#357e38`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `16px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#31355e` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Chakra Petch` across 30 type steps.
-- **Component Geometry**: Buttons (`16px`), cards (`16px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#31355e` with `#f7f7f8` text (10.9:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.
+- Apply `16px` base geometry across inputs and buttons (16px on outer containers).
+- Separate containers via `#fff` surface shifts and `#e0e2eb` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `16px` baseline.
+- Do not truncate or drop border contrast on `selectedItemBubble` fields and secondary buttons.

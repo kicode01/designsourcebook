@@ -104,6 +104,13 @@ typography:
     fontSize: 1.25rem
   pspdfkit-font-size-6:
     fontSize: 1.5rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#0060df"
@@ -151,21 +158,68 @@ components:
 
 ## Overview
 
-Persona Design System — tokens read from https://github.com/privy-open-source/design-system.
+**Persona Design System** is a light-first design system anchored on `#FBFCFD` canvas surfaces with `#15141a` primary ink (17.8:1 contrast) and `#0060df` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 88 colour tokens and 7 type tokens.
+Typography centers cleanly on `System UI` (24px display down to 16px body), unified by `8px` base corner radius and stepped `#FBFCFD` -> `#fbfbfe` surface layering.
+
+Maintained by **Persona**. Source: published token package (https://github.com/privy-open-source/design-system), repo https://github.com/privy-open-source/design-system, frameworks: css. Inventory: **88** colors, **6** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-88 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#FBFCFD` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fbfbfe` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#15141a` — body copy and primary headings (17.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#5b5b66` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0060df` (5.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.2:1 contrast).
+- **Structural Border (`border`)**: `#BFBFBF` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `radio-checked-border-color` (`#0060df`), `button-primary-bg-color` (`#0060df`), `button-primary-active-bg-color` (`#054096`), `button-primary-hover-bg-color` (`#0250bb`), `color-accent-primary` (`#0060df`), `color-accent-primary-hover` (`#0250bb`).
+- **Neutral Ramp**: `border-color` (`#BFBFBF`), `text-primary-color` (`#15141a`), `text-secondary-color` (`#5b5b66`), `textarea-border-color` (`#8f8f9d`), `radio-border-color` (`#8f8f9d`), `button-primary-fg-color` (`#fbfbfe`).
+- **Semantic States**: success: `green-20` (`#91E1A5`) · danger: `pspdfkit-signatures-sidebar-icon-error-fill` (`#ffb6ac`) · warning: `alt-text-warning-color` (`#0090ed`) · info: `link-fg-color` (`#0060df`).
 
 ## Typography
 
-Families declared in the source: `theme(fontFamily.sans)`.
+- **Primary / Display Voice**: `system-ui` (top step `pspdfkit-font-size-6`: 1.5rem, weight 600).
+- **Body & UI Controls**: `system-ui` (`pspdfkit-font-size-1`: 1rem, weight 400).
+- **Scale Steps (6)**: `pspdfkit-font-size-6` (1.5rem), `pspdfkit-font-size-5` (1.25rem), `pspdfkit-font-size-4` (1.125rem), `pspdfkit-font-size-1` (1rem), `pspdfkit-font-size-3` (0.875rem), `pspdfkit-font-size-2` (0.75rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#408bdd) canvas paired with `#408bdd` component surfaces and `#15141a` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0060df` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 6 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fbfbfe` cards; separate sibling sections using `#BFBFBF` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FBFCFD` -> `#fbfbfe`) and `1px solid #BFBFBF` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0060df` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#0060df`, ink `#ffffff`, (5.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#15141a`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ffb6ac`, ink `#15141a`, (10.9:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0060df`, ink `#ffffff`, (5.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#10b981`, ink `#15141a`, (7.2:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#FBFCFD` (light) with `#15141a` primary text and `#5b5b66` secondary labels.
+- Use `#0060df` with `#f7f7f8` text (5.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#fbfbfe` surface shifts and `#BFBFBF` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

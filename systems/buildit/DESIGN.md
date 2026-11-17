@@ -85,6 +85,13 @@ typography:
     fontFamily: "\"Helvetica Neue\""
   grav-font-family-mono:
     fontFamily: "\"Wipro Akkurat Mono TT\""
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#0060ff"
@@ -132,21 +139,69 @@ components:
 
 ## Overview
 
-Buildit Gravity — UI pattern library and design tokens by Wipro Digital Buildit.
+**Buildit Gravity** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0060ff` brand accent.
 
-Tokens were read from `@buildit/gravity-ui-web@3.4.0`, not from a marketing site: 73 colour tokens and 4 type tokens.
+Typography centers cleanly on `Helvetica Neue` (20px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f2f7ff` surface layering.
+
+Maintained by **Buildit**. Source: published token package (https://github.com/buildit/gravity-ui-web/tree/develop/packages/gravity-ui-web#readme), repo https://github.com/buildit/gravity-ui-web, package `@buildit/gravity-ui-web`, frameworks: css, web-components. Inventory: **73** colors, **4** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-73 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f2f7ff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0060ff` (5.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.8:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `control-alt` (`#b433e2`), `control-emphasis` (`#ff3f00`), `control-active` (`#ff663b`), `shade-80` (`#001333`), `shade-60` (`#002666`), `shade-40` (`#003a99`).
+- **Neutral Ramp**: `100` (`#ffffff`), `neutral` (`#000000`), `neutral-alt` (`#000000`), `accent` (`#000000`), `accent-success` (`#000000`), `accent-attention` (`#000000`).
+- **Semantic States**: success: `apple-green` (`#6cc24a`) · danger: `ruby-red` (`#ef3340`) · warning: `sunny-yellow` (`#f3d54e`).
 
 ## Typography
 
-Families declared in the source: `"Helvetica Neue"`, `"Wipro Akkurat Mono TT"`.
+- **Primary / Display Voice**: `"Helvetica Neue"` (top step `grav-font-size-largest-viewport`: 1.25rem, weight 600).
+- **Body & UI Controls**: `"Helvetica Neue"` (`grav-font-size-smallest-viewport`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `"Wipro Akkurat Mono TT"` (`grav-font-family-mono`: 16px).
+- **Scale Steps (4)**: `grav-font-size-largest-viewport` (1.25rem), `grav-font-size-smallest-viewport` (1rem), `grav-font-family-primary` (16px), `grav-font-family-mono` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0060ff` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Helvetica Neue` across 4 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f2f7ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f2f7ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0060ff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#0060ff`, ink `#ffffff`, (5.1:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#cc1e42`, ink `#ffffff`, (5.5:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f2f7ff`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f2f7ff`, ink `#0b0b0c`, (18.3:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0060ff`, ink `#ffffff`, (5.1:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f2f7ff`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0060ff` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Helvetica Neue` headings with `Helvetica Neue` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f2f7ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

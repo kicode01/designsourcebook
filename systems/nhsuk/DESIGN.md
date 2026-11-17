@@ -158,6 +158,9 @@ typography:
     fontSize: 1rem
     fontWeight: 600
     lineHeight: 1.25
+rounded:
+  button: ".25rem"
+  default: ".25rem"
 components:
   tag:
     backgroundColor: "#0055a6"
@@ -285,25 +288,68 @@ components:
 
 ## Overview
 
-NHS.UK Service Manual — read from service-manual.nhs.uk's live stylesheets, not a published token package.
+**NHS.UK Service Manual** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#005eb8` brand accent.
 
-Tokens were read from https://service-manual.nhs.uk/, not from a published token package: 88 colour tokens and 20 type tokens.
+Typography centers cleanly on `Frutiger W01` (32px display down to 14px body), unified by `.25rem` base corner radius and subtle shadow elevation.
+
+Maintained by **NHS.UK**. Source: live stylesheet extraction (https://service-manual.nhs.uk/), repo https://github.com/nhsdigital/nhsuk-frontend, package `nhsuk-frontend`, frameworks: css. Inventory: **88** colors, **20** typography steps, and **25** documented components (all rights reserved license).
 
 ## Colors
 
-88 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f0f4f5` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#005eb8` (6.4:1 vs canvas; pair with `#f7f7f8` foreground ink for 6.0:1 contrast).
+- **Structural Border (`border`)**: `#d8dde0` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `nhsuk-dark-blue-colour` (`#003087`), `nhsuk-blue-colour` (`#005eb8`), `nhsuk-pale-blue-colour` (`#ccdff1`), `nhsuk-grey-1-colour` (`#4c6272`), `nhsuk-grey-2-colour` (`#768692`), `nhsuk-pale-green-colour` (`#cce5d8`).
+- **Neutral Ramp**: `nhsuk-black-colour` (`#212b32`), `nhsuk-grey-3-colour` (`#aeb7bd`), `nhsuk-grey-4-colour` (`#d8dde0`), `nhsuk-grey-5-colour` (`#f0f4f5`), `nhsuk-white-colour` (`#fff`), `nhsuk-pale-purple-colour` (`#ded6e8`).
+- **Semantic States**: success: `nhsuk-dark-green-colour` (`#004c23`) · danger: `nhsuk-dark-red-colour` (`#801810`) · warning: `nhsuk-dark-orange-colour` (`#5f3800`) · info: `nhsuk-link-colour` (`#005eb8`).
 
 ## Typography
 
-Families declared in the source: `"Frutiger W01", arial, sans-serif`.
+- **Primary / Display Voice**: `"Frutiger W01", arial, sans-serif` (top step `nhsuk-table-caption-xl`: 2rem, weight 600, line-height 1.1875).
+- **Body & UI Controls**: `"Frutiger W01", arial, sans-serif` (`nhsuk-body-s`: .875rem, weight 400, line-height 1.7142857143).
+- **Scale Steps (20)**: `nhsuk-table-caption-xl` (2rem), `nhsuk-caption-xxl` (1.6875rem), `nhsuk-table-caption-l` (1.6875rem), `nhsuk-caption-xl` (1.375rem), `nhsuk-body-l` (1.375rem, w400), `nhsuk-notification-banner-heading` (1.375rem, w600), `nhsuk-table-caption-m` (1.375rem), `nhsuk-table-heading-tab` (1.375rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `4px 8px`, `28px`, `.25rem`, `0 0 0 1em`, `.25rem .5rem`.
+- **Hierarchy**: Group controls cleanly within `#f0f4f5` cards; separate sibling sections using `#d8dde0` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 4px #00401e`) paired with `#d8dde0` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#005eb8` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `.25rem` (Buttons `.25rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `.25rem` container.
 
 ## Components
 
-24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`tag` (badge)**: bg `#0055a6`, ink `#fff`, (7.4:1), padding `4px 8px`, border `1px solid #0055a6`.
+- **`link` (nav)**: ink `#005eb8`.
+- **`card` (card)**: bg `#fff`, ink `#212b32`, (14.4:1), border `1px solid #d8dde0`.
+- **`panel` (card)**: bg `#007f3b`, ink `#fff`, (5.1:1), padding `28px`, border `4px solid transparent`.
+- **`button` (button)**: bg `#007f3b`, ink `#fff`, (5.1:1), radius `.25rem`, border `2px solid transparent`.
+- **`select` (input)**: bg `#fff`, ink `#212b32`, (14.4:1), padding `.25rem`, border `2px solid #4c6272`.
+- **`link-2` (nav)**: ink `#005eb8`, padding `0 0 0 1em`, border `0`.
+- **`link-3` (nav)**: ink `#005eb8`, border `0`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#005eb8` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Frutiger W01` across 20 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#005eb8` with `#f7f7f8` text (6.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Frutiger W01` headings with `Frutiger W01` body copy using documented weights and scale steps.
+- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).
+- Separate containers via `#f0f4f5` surface shifts and `#d8dde0` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.
+- Do not truncate or drop border contrast on `select` fields and secondary buttons.

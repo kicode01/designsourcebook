@@ -114,6 +114,13 @@ typography:
     fontSize: 1rem
   datepicker-font-family:
     fontFamily: "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "#EE72A6"
@@ -161,21 +168,68 @@ components:
 
 ## Overview
 
-Elastic UI — tokens read from https://github.com/elastic/eui.
+**Elastic UI** is a light-first design system anchored on `#F6F9FC` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `#EE72A6` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 7 type tokens.
+Typography centers cleanly on `Helvetica Neue` (30px display down to 16px body), unified by `6px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Elastic**. Source: published token package (https://github.com/elastic/eui), repo https://github.com/elastic/eui, package `@elastic/eui`, frameworks: react, css. Inventory: **91** colors, **9** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#F6F9FC` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#F6F9FC` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.6:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#EE72A6` (2.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 2.6:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `eui-table-actions-border-color` (`#2B394F`), `eui-button-color-disabled` (`#1D2A3E`), `eui-button-color-ghost-disabled` (`#1D2A3E`), `accent` (`#EE72A6`), `neutral` (`#63C8E3`), `text` (`#8E9FBC`).
+- **Neutral Ramp**: `danger` (`#000`), `eui-page-background-color` (`#07101F`), `eui-color-text-inverse` (`#07101F`), `eui-color-text-ink` (`#07101F`), `eui-color-background-base-warning` (`#2C2721`), `eui-color-background-base-recessed` (`#07101F`).
+- **Semantic States**: success: `eui-color-vis-success0` (`#24C292`) · danger: `eui-color-vis-danger1` (`#FFC9C2`) · warning: `eui-color-vis-warning0` (`#FCD883`) · info: `eui-link-color` (`#61A2FF`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `"Helvetica Neue", Helvetica, Arial, sans-serif` (top step `l`: 30px, weight 600).
+- **Body & UI Controls**: `"Helvetica Neue", Helvetica, Arial, sans-serif` (`xs`: 16px, weight 400).
+- **Scale Steps (9)**: `l` (30px), `m` (24px), `s` (20px), `xs` (16px), `font-size` (1rem), `datepicker-font-family` (16px), `xxs` (14px), `datepicker-font-size` (0.8rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#000) canvas paired with `#000` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#EE72A6` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Helvetica Neue` across 9 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#F6F9FC` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F6F9FC` -> `#F6F9FC`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#EE72A6` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#EE72A6`, ink `#0b0b0c`, (7.1:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#FFC9C2`, ink `#000000`, (14.4:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#EE72A6`, ink `#000000`, (7.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#24C292`, ink `#000000`, (9.2:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#F6F9FC` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#EE72A6` with `#f7f7f8` text (2.6:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Helvetica Neue` headings with `Helvetica Neue` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#F6F9FC` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

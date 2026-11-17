@@ -94,6 +94,13 @@ typography:
   html:
     fontFamily: "Roboto, sans-serif"
     lineHeight: 1.5
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#d9e4f3"
@@ -141,21 +148,67 @@ components:
 
 ## Overview
 
-MDBootstrap Tailwind Elements — tokens imported from tw-elements.
+**Tailwind Elements** is a dark-first design system anchored on `#4f4f4f` canvas surfaces with `#f7f7f8` primary ink (7.7:1 contrast) and `#d9e4f3` brand accent.
 
-Tokens were read from `tw-elements@2.0.0`, not from a marketing site: 87 colour tokens and 1 type tokens.
+Typography centers cleanly on `Roboto` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#4f4f4f` -> `#404650` surface layering.
+
+Maintained by **MDBootstrap**. Source: published token package (https://tw-elements.com/), repo https://github.com/mdbootstrap/TW-Elements, package `tw-elements`, frameworks: css, react. Inventory: **87** colors, **1** typography steps, and **8** documented components (SEE LICENSE IN <License.txt> license).
 
 ## Colors
 
-87 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#4f4f4f` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#404650` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (7.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#d9e4f3` (6.4:1 vs canvas; pair with `#0b0b0c` foreground ink for 15.3:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #f7f7f8 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `default-value` (`#3B71CA`), `primary-default` (`#3B71CA`), `primary-200` (`#C7D7F0`), `primary-300` (`#ABC2E8`), `primary-400` (`#8FAEE0`), `primary-500` (`#6590D5`).
+- **Neutral Ramp**: `tw-ring-offset-color` (`#fff`), `gradient-color` (`#fbfbfb`), `primary-50` (`#F1F5FB`), `primary-100` (`#E3EBF7`), `secondary-default` (`#9FA6B2`), `secondary-50` (`#F8F9F9`).
+- **Semantic States**: success: `success-default` (`#14A44D`) · danger: `danger-default` (`#DC4C64`) · warning: `warning-default` (`#E4A11B`) · info: `info-default` (`#54B4D3`).
 
 ## Typography
 
-Families declared in the source: `Roboto, sans-serif`.
+- **Primary / Display Voice**: `Roboto, sans-serif` (top step `html`: 16px, weight 600, line-height 1.5).
+- **Body & UI Controls**: `Roboto, sans-serif` (`html`: 16px, weight 400, line-height 1.5).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#fcfcfd) canvas paired with `#4f4f4f` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#d9e4f3` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto` across 1 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#404650` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#4f4f4f` -> `#404650`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#d9e4f3` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#d9e4f3`, ink `#0b0b0c`, (15.3:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#f7f7f8`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#DC4C64`, ink `#0b0b0c`, (4.9:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#d9e4f3`, ink `#0b0b0c`, (15.3:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#14A44D`, ink `#0b0b0c`, (6.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#4f4f4f` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `#d9e4f3` with `#0b0b0c` text (15.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#404650` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

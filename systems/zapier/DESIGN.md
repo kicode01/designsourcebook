@@ -130,6 +130,12 @@ typography:
     fontSize: 13px
     fontWeight: 500
     lineHeight: 1
+rounded:
+  button: 4px
+  input: 8px
+  card: 12px
+  badge: 999px
+  default: 8px
 components:
   button-primary-orange:
     backgroundColor: "#ff4f00"

@@ -99,6 +99,13 @@ typography:
     fontFamily: "\"Noto Sans Hebrew\", \"Arial Hebrew\", Rubik, \"Frank Ruehl\", tahoma, system-ui, sans-serif"
   sage-font-family-heading:
     fontFamily: "\"Noto Sans Hebrew\", \"Arial Hebrew\", Rubik, \"Frank Ruehl\", tahoma, system-ui, sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#3e92ee"
@@ -146,21 +153,67 @@ components:
 
 ## Overview
 
-Sage by Kajabi — tokens read from https://github.com/Kajabi/sage-lib.
+**Sage by Kajabi** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3e92ee` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 3 type tokens.
+Typography centers cleanly on `Noto Sans Hebrew` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f0f0f0` surface layering.
+
+Maintained by **Sage**. Source: published token package (https://github.com/Kajabi/sage-lib), repo https://github.com/Kajabi/sage-lib, frameworks: css. Inventory: **91** colors, **2** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f0f0f0` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3e92ee` (3.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.0:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `label-primary-icon-background-accent` (`#3e92ee`), `sd-sage-color-base-primary-100-hex` (`#dbe9fe`), `sd-sage-color-base-primary-300-hex` (`#2463eb`), `sd-sage-color-base-primary-500-hex` (`#172554`), `sd-sage-color-combos-published-default-background` (`#d3f8df`), `sd-sage-color-combos-published-subtle-background` (`#079250`).
+- **Neutral Ramp**: `sd-sage-color-combos-draft-default-background` (`#f0f0f0`), `sd-sage-color-combos-draft-default-icon-background-a` (`#6c6a69`), `sd-sage-color-combos-draft-subtle-background` (`#828180`), `sd-sage-color-combos-warning-bold-foreground` (`#fff`), `sd-sage-color-combos-primary-default-foreground` (`#fff`), `sd-sage-color-combos-primary-subtle-foreground-accen` (`#fff`).
+- **Semantic States**: success: `color-base-green-900-hex` (`#094c2f`) · danger: `label-danger-background-accent` (`#f3988c`) · warning: `sd-sage-color-combos-warning-default-foreground` (`#db7303`) · info: `sd-sage-color-combos-info-default-foreground` (`#1c4ed8`).
 
 ## Typography
 
-Families declared in the source: `Noto Sans Hebrew", "Arial Hebrew", "Rubik", "Frank Ruehl", "tahoma", system-ui, sans-serif`.
+- **Primary / Display Voice**: `"Noto Sans Hebrew", "Arial Hebrew", Rubik, "Frank Ruehl", tahoma, system-ui, sans-serif` (top step `sage-font-family`: 16px, weight 600).
+- **Body & UI Controls**: `"Noto Sans Hebrew", "Arial Hebrew", Rubik, "Frank Ruehl", tahoma, system-ui, sans-serif` (`sage-font-family`: 16px, weight 400).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3e92ee` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Noto Sans Hebrew` across 2 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f0f0f0` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f0f0f0`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3e92ee` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#3e92ee`, ink `#0b0b0c`, (6.1:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#f3988c`, ink `#0b0b0c`, (9.1:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f0f0f0`, ink `#0b0b0c`, (17.3:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f0f0f0`, ink `#0b0b0c`, (17.3:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#3e92ee`, ink `#0b0b0c`, (6.1:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f0f0f0`, ink `#0b0b0c`, (17.3:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#3e92ee` with `#f7f7f8` text (3.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Noto Sans Hebrew` headings with `Noto Sans Hebrew` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f0f0f0` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

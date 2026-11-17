@@ -72,6 +72,11 @@ typography:
     fontSize: 10px
     fontWeight: 400
     lineHeight: 2
+rounded:
+  input: 8px
+  card: 12px
+  nav: 8px
+  default: 8px
 components:
   button:
     textColor: "#0000ee"
@@ -108,25 +113,68 @@ components:
 
 ## Overview
 
-BBC GEL — read from the rendered page in a browser, not from published tokens.
+**BBC GEL** is a light-first design system anchored on `#e6e8ea` canvas surfaces with `#0b0b0c` primary ink (16.0:1 contrast) and `#ffb32b` brand accent.
 
-Tokens were read from https://www.bbc.co.uk/gel, not from a published token package: 48 colour tokens and 4 type tokens.
+Typography centers cleanly on `ReithSans` (20px display down to 10px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **BBC**. Source: live stylesheet extraction (https://www.bbc.co.uk/gel), repo https://github.com/bbc/gel, frameworks: react, css. Inventory: **48** colors, **4** typography steps, and **8** documented components (all rights reserved license).
 
 ## Colors
 
-48 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#e6e8ea` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#e6e8ea` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (16.0:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ffb32b` (1.5:1 vs canvas; pair with `#0b0b0c` foreground ink for 11.0:1 contrast).
+- **Structural Border (`border`)**: `#c8c8c8` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `css-surface-12` (`#eb0000`), `css-surface-13` (`#ffd230`), `css-surface-14` (`#149edc`), `css-surface-15` (`#ff4c98`), `css-surface-16` (`#fa6400`), `css-surface-17` (`#963ce1`).
+- **Neutral Ramp**: `canvas-text` (`#000000`), `header-text` (`#3a3c3e`), `nav-bg` (`#ffffff`), `footer-text` (`#f8f8f8`), `h2-text` (`#383838`), `h2-border` (`#c8c8c8`).
+- **Semantic States**: info: `link-text` (`#0000ee`).
 
 ## Typography
 
-Families declared in the source: `ReithSans, Arial, Helvetica, freesans, sans-serif`.
+- **Primary / Display Voice**: `ReithSans, Arial, Helvetica, freesans, sans-serif` (top step `h1`: 20px, weight 700, line-height 1).
+- **Body & UI Controls**: `ReithSans, Arial, Helvetica, freesans, sans-serif` (`h2`: 10px, weight 400, line-height 2).
+- **Scale Steps (4)**: `h1` (20px, w700), `header` (10px, w400), `nav` (10px, w400), `h2` (10px, w400).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `12px`, `4px`, `9px 13px`, `18px 20px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#e6e8ea` cards; separate sibling sections using `#c8c8c8` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#e6e8ea` -> `#e6e8ea`) and `1px solid #c8c8c8` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ffb32b` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Inputs `8px` · Cards `12px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-5 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: ink `#0000ee`.
+- **`button-2` (button)**: ink `#000000`.
+- **`button-3` (button)**: bg `#f6f6f6`, ink `#000000`, (19.4:1), padding `12px`.
+- **`button-4` (button)**: ink `#f6f6f6`.
+- **`badge` (badge)**: bg `#f6f6f6`, ink `#3a3c3e`, (10.2:1), padding `4px`.
+- **`input-default` (input)**: bg `#e6e8ea`, ink `#0b0b0c`, (16.0:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#e6e8ea`, ink `#0b0b0c`, (16.0:1), radius `12px`, padding `18px 20px`.
+- **`nav-bar` (nav)**: bg `#e6e8ea`, ink `#0b0b0c`, (16.0:1), radius `8px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ffb32b` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `ReithSans` across 4 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#e6e8ea` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ffb32b` with `#0b0b0c` text (11.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `ReithSans` headings with `ReithSans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#e6e8ea` surface shifts and `#c8c8c8` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

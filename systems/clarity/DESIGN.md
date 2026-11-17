@@ -167,6 +167,13 @@ typography:
     fontSize: 0.5rem
   clr-metropolis-font-family:
     fontFamily: "Metropolis, \"Avenir Next\", \"Helvetica Neue\", Arial, sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "hsl(198deg 100% 48%)"
@@ -214,21 +221,69 @@ components:
 
 ## Overview
 
-VMware Clarity — UX guidelines, HTML/CSS framework and Angular components.
+**Clarity Design System** is a light-first design system anchored on `hsl(282deg 3% 97%)` canvas surfaces with `#0b0b0c` primary ink (18.4:1 contrast) and `hsl(198deg 100% 48%)` brand accent.
 
-Tokens were read from `@clr/ui@18.5.1`, not from a marketing site: 91 colour tokens and 36 type tokens.
+Typography centers cleanly on `Metropolis` (32px display down to 16px body), unified by `8px` base corner radius and stepped `hsl(282deg 3% 97%)` -> `hsl(41deg 100% 96%)` surface layering.
+
+Maintained by **VMware**. Source: published token package (https://clarity.design), repo https://github.com/vmware-clarity/ng-clarity, package `@clr/ui`, frameworks: angular, web-components, css. Inventory: **91** colors, **36** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `hsl(282deg 3% 97%)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `hsl(41deg 100% 96%)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.4:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `hsl(198deg 100% 48%)` (2.4:1 vs canvas; pair with `#0b0b0c` foreground ink for 7.6:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `global-color-green-50` (`hsl(93deg 80% 94%)`), `global-color-blue-50` (`hsl(198deg 100% 95%)`), `global-color-blue-100` (`hsl(198deg 100% 87%)`), `global-color-blue-300` (`hsl(198deg 100% 70%)`), `global-color-blue-500` (`hsl(198deg 100% 48%)`), `global-color-blue-700` (`hsl(198deg 100% 34%)`).
+- **Neutral Ramp**: `global-color-black` (`hsl(0deg 0% 0%)`), `global-color-violet-50` (`hsl(282deg 100% 97%)`), `global-color-ochre-50` (`hsl(41deg 100% 96%)`), `global-color-jade-50` (`hsl(160deg 83% 95%)`), `global-color-warm-gray-50` (`hsl(282deg 3% 97%)`), `global-color-warm-gray-200` (`hsl(282deg 3% 84%)`).
+- **Semantic States**: success: `global-color-green-200` (`hsl(93deg 80% 70%)`) · danger: `global-color-red-100` (`hsl(9deg 100% 94%)`) · warning: `global-color-yellow-100` (`hsl(50deg 100% 84%)`).
 
 ## Typography
 
-Families declared in the source: `Metropolis, "Avenir Next", sans-serif`, `ui-monospace, Consolas, Menlo, Monaco, monospace`, `Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif`.
+- **Primary / Display Voice**: `Metropolis, "Avenir Next", sans-serif` (top step `typography-h0-font-size`: 2rem, weight 600).
+- **Body & UI Controls**: `Metropolis, "Avenir Next", sans-serif` (`alias-typography-font-family`: 16px, weight 400).
+- **Monospace / Technical Labels**: `ui-monospace, Consolas, Menlo, Monaco, monospace` (`alias-typography-monospace-font-family`: 16px).
+- **Scale Steps (36)**: `typography-h0-font-size` (2rem), `typography-h0-font-size-static` (2rem), `typography-h1-font-size` (1.6rem), `typography-h1-font-size-static` (1.6rem), `typography-h2-font-size` (1.4rem), `typography-h2-font-size-static` (1.4rem), `typography-p0-font-size` (1.2rem), `typography-p0-font-size-static` (1.2rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (hsl(0deg 0% 0%)) canvas paired with `hsl(0deg 0% 0%)` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(198deg 100% 48%)` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Metropolis` across 36 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `hsl(41deg 100% 96%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`hsl(282deg 3% 97%)` -> `hsl(41deg 100% 96%)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `hsl(198deg 100% 48%)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `hsl(198deg 100% 48%)`, ink `#0b0b0c`, (7.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `hsl(9deg 100% 65%)`, ink `#000000`, (7.3:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `hsl(198deg 100% 48%)`, ink `#000000`, (8.1:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `hsl(93deg 80% 37%)`, ink `#000000`, (7.2:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `hsl(282deg 3% 97%)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `hsl(198deg 100% 48%)` with `#0b0b0c` text (7.6:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Metropolis` headings with `Metropolis` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `hsl(41deg 100% 96%)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -123,6 +123,13 @@ typography:
     fontSize: 14px
   font-size-tabs:
     fontSize: 16px
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#002b66"
@@ -170,21 +177,69 @@ components:
 
 ## Overview
 
-Amazon Cloudscape — the design system for AWS console experiences.
+**Cloudscape** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#002b66` brand accent.
 
-Tokens were read from `@cloudscape-design/design-tokens@3.0.118`, not from a marketing site: 91 colour tokens and 14 type tokens.
+Typography centers cleanly on `Open Sans` (64px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Amazon**. Source: published token package (https://cloudscape.design), repo https://github.com/cloudscape-design/components, package `@cloudscape-design/design-tokens`, frameworks: react, css. Inventory: **91** colors, **14** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#ffffff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#002b66` (13.7:1 vs canvas; pair with `#f7f7f8` foreground ink for 12.8:1 contrast).
+- **Structural Border (`border`)**: `#ebebf0` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-background-notification-severity-high` (`#ce3311`), `color-background-toggle-button-normal-pressed` (`#d1f1ff`), `color-background-button-primary-active` (`#002b66`), `color-background-button-primary-hover` (`#002b66`), `color-background-layout-toggle-selected-default` (`#006ce0`), `color-background-progress-bar-value-default` (`#006ce0`).
+- **Neutral Ramp**: `color-charts-threshold-neutral` (`#656871`), `color-background-notification-severity-neutral` (`#656871`), `color-text-notification-severity-medium` (`#0f141a`), `color-text-badge-severity-critical` (`#f9f9fa`), `color-text-badge-severity-low` (`#0f141a`), `color-background-button-normal-default` (`#ffffff`).
+- **Semantic States**: success: `color-background-notification-green` (`#00802f`) · danger: `color-text-status-error` (`#db0000`) · warning: `color-background-notification-yellow` (`#ffe347`) · info: `color-charts-status-info` (`#3184c2`).
 
 ## Typography
 
-Families declared in the source: `"Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif`, `Monaco, Menlo, Consolas, "Courier Prime", Courier, "Courier New", monospace`.
+- **Primary / Display Voice**: `"Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif` (top step `font-size-display-xl`: 64px, weight 600).
+- **Body & UI Controls**: `"Open Sans", "Helvetica Neue", Roboto, Arial, sans-serif` (`font-family-base`: 16px, weight 400).
+- **Monospace / Technical Labels**: `Monaco, Menlo, Consolas, "Courier Prime", Courier, "Courier New", monospace` (`font-family-monospace`: 16px).
+- **Scale Steps (14)**: `font-size-display-xl` (64px), `font-size-display-l` (42px), `font-size-heading-xl` (24px), `font-size-heading-l` (20px), `font-size-heading-m` (18px), `font-family-base` (16px), `font-family-display` (16px), `font-family-heading` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002b66` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 14 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#ebebf0` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid #ebebf0` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#002b66` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#002b66`, ink `#ffffff`, (13.7:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#db0000`, ink `#ffffff`, (5.2:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#002b66`, ink `#ffffff`, (13.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#00802f`, ink `#ffffff`, (5.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#002b66` with `#f7f7f8` text (12.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#ffffff` surface shifts and `#ebebf0` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

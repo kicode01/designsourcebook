@@ -75,6 +75,13 @@ typography:
     fontWeight: 400
     lineHeight: 1.33
     letterSpacing: 1.2px
+rounded:
+  button: 9999px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary-pill:
     backgroundColor: "#0f0f0f"

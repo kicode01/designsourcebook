@@ -135,6 +135,13 @@ typography:
     fontSize: 0.75rem
   font-size-s-high:
     fontSize: 0.625rem
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "#64d2ff"
@@ -182,21 +189,69 @@ components:
 
 ## Overview
 
-Contentful Forma 36 — tokens read from https://github.com/contentful/forma-36.
+**Contentful Forma 36** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#64d2ff` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 1 type tokens.
+Typography centers cleanly on `Geist Sans` (48px display down to 16px body), unified by `6px` base corner radius and stepped `#ffffff` -> `#F7F9FA` surface layering.
+
+Maintained by **Contentful**. Source: published token package (https://github.com/contentful/forma-36), repo https://github.com/contentful/forma-36, package `@contentful/f36-components`, frameworks: react, css. Inventory: **91** colors, **20** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#F7F9FA` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#64d2ff` (1.7:1 vs canvas; pair with `#0b0b0c` foreground ink for 11.4:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `sp-colors-accent` (`#64d2ff`), `color-dataviz-categorical-1-default` (`#4269D0`), `color-dataviz-categorical-2-default` (`#A463F2`), `color-dataviz-categorical-3-default` (`#EFB118`), `color-dataviz-categorical-4-default` (`#6CC5B0`), `color-dataviz-categorical-5-default` (`#FF8AB7`).
+- **Neutral Ramp**: `color-black` (`#0C141C`), `color-white` (`#ffffff`), `blue-100` (`#E8F5FF`), `gray-100` (`#F7F9FA`), `gray-200` (`#E7EBEE`), `gray-300` (`#CFD9E0`).
+- **Semantic States**: success: `dataviz-semantic-positive` (`#006D23`) · danger: `sp-colors-bg-error` (`#ffcdca`) · warning: `dataviz-semantic-warning` (`#CC4500`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `"Geist Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `font-size4-xl`: 3rem, weight 600).
+- **Body & UI Controls**: `"Geist Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`font-size-l`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `"Geist Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace` (`font-stack-monospace`: 16px).
+- **Scale Steps (20)**: `font-size4-xl` (3rem), `font-size-4xl` (3rem), `font-size3-xl` (2.25rem), `font-size-3xl` (2.25rem), `font-size2-xl` (1.5rem), `font-size-2xl` (1.5rem), `font-size-xl` (1.25rem), `font-size-xl-high` (1.125rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#64d2ff` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Geist Sans` across 20 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#F7F9FA` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#F7F9FA`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#64d2ff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#64d2ff`, ink `#0b0b0c`, (11.4:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ffcdca`, ink `#0b0b0c`, (13.9:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#64d2ff`, ink `#0b0b0c`, (11.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#006D23`, ink `#ffffff`, (6.5:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#64d2ff` with `#0b0b0c` text (11.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Geist Sans` headings with `Geist Sans` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#F7F9FA` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

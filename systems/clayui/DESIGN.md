@@ -471,6 +471,11 @@ typography:
     lineHeight: 1.45
   rfs-base-font-size:
     fontSize: 1.25rem
+rounded:
+  button: 0.5rem
+  card: 1rem
+  input: 0.5rem
+  default: 0.5rem
 components:
   btn:
     backgroundColor: transparent
@@ -573,25 +578,69 @@ components:
 
 ## Overview
 
-Liferay Lexicon (Clay) — tokens imported from @clayui/css.
+**Liferay Lexicon (Clay)** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0b5fff` brand accent.
 
-Tokens were read from `@clayui/css@3.167.0`, not from a marketing site: 90 colour tokens and 170 type tokens.
+Typography centers cleanly on `System UI` (128px display down to 20px body), unified by `0.5rem` base corner radius and stepped `#fff` -> `#f0f5ff` surface layering.
+
+Maintained by **Liferay**. Source: published token package (http://clayui.com), repo https://github.com/liferay/clay, package `@clayui/css`, frameworks: react, css. Inventory: **90** colors, **170** typography steps, and **27** documented components (MIT license).
 
 ## Colors
 
-90 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f0f5ff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0b5fff` (5.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.8:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `primary` (`#0b5fff`), `c-empty-state-primary` (`#0b5fff`), `c-empty-state-primary-d1` (`#0053f0`), `c-empty-state-primary-d2` (`#004ad7`), `c-empty-state-primary-l0` (`#5791ff`), `c-empty-state-primary-l1` (`#80acff`).
+- **Neutral Ramp**: `secondary` (`#6b6c7e`), `c-empty-state-primary-l3` (`#f0f5ff`), `table-disabled-color` (`#acacac`), `table-accent-bg` (`#f2f2f2`), `table-list-accent-bg` (`#f2f2f2`), `table-list-disabled-color` (`#acacac`).
+- **Semantic States**: success: `success` (`#287d3c`) · danger: `danger` (`#da1414`) · warning: `warning` (`#b95000`) · info: `info` (`#2e5aac`).
 
 ## Typography
 
-Families declared in the source: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`.
+- **Primary / Display Voice**: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `lexicon-icon-xl-font-size`: 8rem, weight 600).
+- **Body & UI Controls**: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`rfs-base-font-size`: 1.25rem, weight 400).
+- **Monospace / Technical Labels**: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`code-font-size`: 87.5%).
+- **Scale Steps (170)**: `lexicon-icon-xl-font-size` (8rem), `display-1` (6rem, w300), `display-2` (5.5rem, w300), `display-3` (4.5rem, w300), `display-4` (3.5rem, w300), `loading-icon-font-size` (2.5rem), `cadmin-loading-icon-font-size` (40px), `lexicon-icon-lg-font-size` (2rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `9px 13px`.
+- **Hierarchy**: Group controls cleanly within `#f0f5ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f0f5ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0b5fff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0.5rem` (Buttons `0.5rem` · Inputs `0.5rem` · Cards `1rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `1rem` container.
 
 ## Components
 
-26 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`btn` (button)**: bg `transparent`, ink `#1c1c24`, radius `0.5rem`, border `1px solid transparent`.
+- **`card` (card)**: bg `#fff`, radius `1rem`, border `1px solid #cdced9`.
+- **`panel` (card)**: bg `#fff`, radius `0.5rem`, border `1px solid transparent`.
+- **`table` (nav)**: bg `#fff`, ink `#1c1c24`, (16.9:1).
+- **`btn-ai-2` (button)**: bg `#aa33ff`, ink `#fff`, (4.5:1), border `1px solid #aa33ff`.
+- **`btn-info-3` (button)**: bg `#2e5aac`, ink `#fff`, (6.6:1), border `1px solid #2e5aac`.
+- **`btn-dark-4` (button)**: bg `#272833`, ink `#fff`, (14.6:1), border `1px solid #272833`.
+- **`link` (nav)**: ink `#0b5fff`, radius `1px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0b5fff` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 170 type steps.
-- **Component Geometry**: Buttons (`0.5rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0b5fff` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `0.5rem` base geometry across inputs and buttons (1rem on outer containers).
+- Separate containers via `#f0f5ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `0.5rem` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

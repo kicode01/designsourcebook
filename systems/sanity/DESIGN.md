@@ -25,7 +25,7 @@ colors:
   border-subtle: "#212121"
   border-medium: "#353535"
   border-light: "#ffffff"
-  primary: "#0b0b0b"
+  primary: "#f36458"
 typography:
   display-hero:
     fontFamily: "\"IBM Plex Mono\""
@@ -118,6 +118,8 @@ typography:
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.3
+rounded:
+  default: 8px
 components:
   button-primary-cta:
     backgroundColor: "#f36458"

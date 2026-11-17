@@ -117,6 +117,13 @@ typography:
     fontWeight: 600
   font-size:
     fontSize: 54px
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#00c6d7"
@@ -164,21 +171,68 @@ components:
 
 ## Overview
 
-BLiP — tokens read from https://github.com/takenet/blip-ds.
+**BLiP** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00c6d7` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+Typography centers cleanly on `Nunito Sans` (54px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `rgba(255, 255, 255, 1)` surface layering.
+
+Source: published token package (https://github.com/takenet/blip-ds), repo https://github.com/takenet/blip-ds, package `blip-ds`, frameworks: web-components, react. Inventory: **91** colors, **8** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgba(255, 255, 255, 1)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#00c6d7` (2.1:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.4:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-primary-light` (`#b3d4ff`), `color-primary-main` (`#3f7de8`), `color-primary-dark` (`#125ad5`), `color-primary-night` (`#0747a6`), `color-primary-purples-pixie` (`#cc99ff`), `color-primary-purples-bell` (`#c226fb`).
+- **Neutral Ramp**: `color-disabled-bg` (`#e8f2ff`), `color-neutral-dark-eclipse` (`#0a0f1a`), `color-neutral-medium-wave` (`#d2dfe6`), `color-neutral-light-box` (`#e7edf4`), `color-neutral-light-whisper` (`#f3f6fa`), `color-neutral-light-breeze` (`#f8fbfb`).
+- **Semantic States**: success: `color-primary-greens-mint` (`#90e6bc`) · danger: `color-disabled-error` (`#da7a7a`) · warning: `color-primary-oranges-sunset` (`#ffb186`) · info: `color-dark-info` (`rgba(0, 79, 86, 1)`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `"Nunito Sans", Carbona, Tahoma, Helvetica, Arial, sans-serif` (top step `font-size`: 54px, weight 600).
+- **Body & UI Controls**: `"Nunito Sans", Carbona, Tahoma, Helvetica, Arial, sans-serif` (`font-family`: 16px, weight 400).
+- **Scale Steps (8)**: `font-size` (54px), `h1` (32px, w600), `h2` (28px, w600), `h3` (24px, w600), `h4` (20px, w600), `font-family` (16px), `h5` (16px, w600), `h6` (12px, w600).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00c6d7` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Nunito Sans` across 8 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `rgba(255, 255, 255, 1)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `rgba(255, 255, 255, 1)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00c6d7` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#00c6d7`, ink `#0b0b0c`, (9.4:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#da7a7a`, ink `#0b0b0c`, (6.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgba(255, 255, 255, 1)`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `rgba(255, 255, 255, 1)`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#00c6d7`, ink `#0b0b0c`, (9.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgba(1, 86, 47, 1)`, ink `#ffffff`, (8.8:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `rgba(255, 255, 255, 1)`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#00c6d7` with `#0b0b0c` text (9.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Nunito Sans` headings with `Nunito Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `rgba(255, 255, 255, 1)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

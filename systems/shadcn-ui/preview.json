@@ -3,7 +3,7 @@
   "surface": "rgb(255,255,255)",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#ff0000",
+  "brand": "#18181b",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "6px",
   "ink": "#0b0b0c",
@@ -62,11 +62,11 @@
     },
     {
       "name": "primary",
-      "value": "#ff0000"
+      "value": "#18181b"
     },
     {
       "name": "colors-brand",
-      "value": "#ff0000"
+      "value": "#18181b"
     },
     {
       "name": "colors-primary",
@@ -74,7 +74,7 @@
     },
     {
       "name": "brand",
-      "value": "#ff0000"
+      "value": "#18181b"
     }
   ],
   "type": [
@@ -155,8 +155,8 @@
     {
       "key": "button-primary",
       "kind": "button",
-      "backgroundColor": "#ff0000",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#18181b",
+      "textColor": "#fafafa",
       "rounded": "6px",
       "padding": "10px 18px"
     },
@@ -195,8 +195,8 @@
     {
       "key": "badge-brand",
       "kind": "badge",
-      "backgroundColor": "#ff0000",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#18181b",
+      "textColor": "#fafafa",
       "rounded": "999px",
       "padding": "4px 10px"
     },
@@ -217,6 +217,6 @@
       "padding": "10px 16px"
     }
   ],
-  "overview": "Shadcn/ui — Crisp light (#ffffff) canvas, Geist typography, #ff0000 brand accent, and 6px corner geometry",
-  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff0000` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Geist` across 9 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+  "overview": "**Shadcn/ui** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#18181b` brand accent.\n\nTypography centers cleanly on `Geist` (36px display down to 14px body), unified by `6px` base corner radius and stepped `#ffffff` -> `rgb(255,255,255)` surface layering.\n\nSource: published token package (https://github.com/shadcn-ui/ui), repo https://github.com/shadcn-ui/ui, package `shadcn`, frameworks: react, vue, svelte, css. Inventory: **17** colors, **9** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `rgb(255,255,255)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `rgb(255,255,255)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#18181b` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#18181b` with `#f7f7f8` text (16.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Geist` headings with `Geist` body copy using documented weights and scale steps.\n- Apply `6px` base geometry across inputs and buttons (10px on outer containers).\n- Separate containers via `rgb(255,255,255)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `6px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

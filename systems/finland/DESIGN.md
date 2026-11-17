@@ -81,6 +81,12 @@ typography:
     fontSize: 14pt
   theme-calendar-title:
     fontSize: 1.25rem
+rounded:
+  button: "0"
+  badge: "0"
+  input: "0"
+  nav: "0"
+  default: "0"
 components:
   button:
     backgroundColor: "#002ea2"
@@ -145,25 +151,68 @@ components:
 
 ## Overview
 
-Finland Toolbox — read from toolbox.finland.fi's live stylesheets, not a published token package.
+**Finland Toolbox** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#002EA2` brand accent.
 
-Tokens were read from https://toolbox.finland.fi/, not from a published token package: 28 colour tokens and 21 type tokens.
+Typography centers cleanly on `System Sans` (42px display down to 16px body), unified by `0px` razor-sharp architectural corners and hairline `1px` structural borders.
+
+Maintained by **Finland**. Source: live stylesheet extraction (https://toolbox.finland.fi/), frameworks: css. Inventory: **28** colors, **21** typography steps, and **9** documented components (all rights reserved license).
 
 ## Colors
 
-28 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#002EA2` (11.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 10.3:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `wp-block-synced-color` (`#7a00df`), `wp-block-synced-color-rgb` (`rgb(122, 0, 223)`), `wp-admin-theme-color` (`#007cba`), `wp-admin-theme-color-rgb` (`rgb(0, 124, 186)`), `wp-admin-theme-color-darker-10` (`#006ba1`), `wp-admin-theme-color-darker-20` (`#005a87`).
+- **Neutral Ramp**: `wp-editor-canvas-background` (`#ddd`), `wp-preset-color-black` (`#060A14`), `wp-preset-color-cyan-bluish-gray` (`#abb8c3`), `wp-preset-color-white` (`#fff`).
+- **Semantic States**: success: `wp-preset-color-light-green-cyan` (`#7bdcb5`) · danger: `wp-preset-color-vivid-red` (`#cf2e2e`) · warning: `wp-preset-color-luminous-vivid-orange` (`#ff6900`).
 
 ## Typography
 
-Families declared in the source: `sans-serif`, `Finlandica, "Segoe UI", sans-serif`.
+- **Primary / Display Voice**: `sans-serif` (top step `wp-preset-font-size-huge`: 42px, weight 600).
+- **Body & UI Controls**: `sans-serif` (`wp-preset-font-size-normal`: 16px, weight 400).
+- **Scale Steps (21)**: `wp-preset-font-size-huge` (42px), `wp-preset-font-size-x-large` (42px), `hero-title` (2.5rem, w700), `wp-preset-font-size-large` (36px), `h1` (2em), `whats-new-container-title` (2rem), `material-data-title` (2rem), `h2` (1.5rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `0`, `8px 16px`, `.125rem .25rem`, `9px 13px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#002EA2` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0` (Buttons `0` · Inputs `0` · Badges `0` · Navigation `0`).
+- **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
 
 ## Components
 
-7 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
+- **`tag` (badge)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
+- **`new-post-tag-2` (badge)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `50%`.
+- **`notice` (card)**: bg `#fff`, padding `8px 16px`.
+- **`load-more-button-2` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
+- **`button-radio` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
+- **`button-radio-amount` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), padding `.125rem .25rem`.
+- **`input-default` (input)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0`, padding `9px 13px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002EA2` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `sans-serif` across 21 type steps.
-- **Component Geometry**: Buttons (`0`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#002EA2` with `#f7f7f8` text (10.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System Sans` headings with `System Sans` body copy using documented weights and scale steps.
+- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.
+- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -103,6 +103,11 @@ typography:
     fontFamily: "MonzoSansDisplay, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
   font-family-content:
     fontFamily: "MonzoSansText, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+rounded:
+  button: 30px
+  nav: 8px
+  badge: 1.875rem
+  default: 30px
 components:
   button-primary-coral:
     backgroundColor: "#ff4f40"
@@ -214,25 +219,68 @@ components:
 
 ## Overview
 
-Monzo Tone of Voice — read from monzo.com's live stylesheets, not a published token package.
+**Monzo Tone of Voice** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff4f40` brand accent.
 
-Tokens were read from https://monzo.com/tone-of-voice/, not from a published token package: 63 colour tokens and 18 type tokens.
+Typography centers cleanly on `MonzoSansText` (61px display down to 16px body), unified by `30px` base corner radius and stepped `#fff` -> `#f2f8f3` surface layering.
+
+Maintained by **Monzo**. Source: live stylesheet extraction (https://monzo.com/tone-of-voice/), repo https://github.com/monzo/response, frameworks: css. Inventory: **63** colors, **18** typography steps, and **29** documented components (all rights reserved license).
 
 ## Colors
 
-63 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f2f8f3` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff4f40` (3.3:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.0:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-brand` (`#ff4f40`), `color-navy-600` (`#3b4c54`), `color-navy-800` (`#112231`), `color-navy-900` (`#091723`), `color-blue-200` (`#bbf6e2`), `color-blue-300` (`#8ce6d1`).
+- **Neutral Ramp**: `color-black` (`#000`), `color-white` (`#fff`), `color-navy-700` (`#2c3a43`), `color-grey-100` (`#f2f8f3`), `color-grey-200` (`#e3ebe4`), `color-grey-300` (`#c9d0c6`).
+- **Semantic States**: success: `color-green-300` (`#30db5b`) · danger: `color-red-450` (`#ff6961`) · warning: `avatar-color-orange-70` (`#ff945a`) · info: `link-default` (`#091723`).
 
 ## Typography
 
-Families declared in the source: `MonzoSansDisplay",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif`, `MonzoSansText",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif`.
+- **Primary / Display Voice**: `MonzoSansText, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif` (top step `type-font-size-step-6`: 61.04px, weight 600).
+- **Body & UI Controls**: `MonzoSansText, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif` (`type-font-size-step-0`: 16px, weight 400).
+- **Scale Steps (18)**: `type-font-size-step-6` (61.04px), `font-size-step-6` (clamp(2.986rem,2.6276rem + 1.7918vw,3.8147rem)), `type-font-size-step-5` (48.83px), `font-size-step-5` (clamp(2.4883rem,2.2447rem + 1.2182vw,3.0518rem)), `font-size-step-4` (clamp(2.0736rem,1.9145rem + 0.7953vw,2.4414rem)), `type-font-size-step-4` (39.06px), `type-font-size-step-3` (31.25px), `font-size-step-3` (clamp(1.728rem,1.6306rem + 0.4868vw,1.9531rem)).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `8px 16px`, `11px 12px`, `64px 16px 150px`, `16px 0`, `16px`.
+- **Hierarchy**: Group controls cleanly within `#f2f8f3` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f2f8f3`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff4f40` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `30px` (Buttons `30px` · Inputs `64px` · Badges `1.875rem` · Navigation `30px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `30px` container.
 
 ## Components
 
-33 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button-primary-coral` (button)**: bg `#ff4f40`, ink `#091723`, (5.6:1), radius `30px`, padding `8px 16px`.
+- **`button-secondary-navy` (nav)**: bg `transparent`, ink `#091723`, radius `30px`, padding `8px 16px`.
+- **`card-dark` (card)**: bg `#091723`, ink `#fff`, (18.1:1).
+- **`button-usa` (button)**: bg `#091723`, ink `#fff`, (18.1:1).
+- **`card-light` (card)**: bg `#f2f8f3`, ink `#091723`, (16.8:1).
+- **`button-button` (button)**: bg `#112231`, radius `30px`.
+- **`button-business` (button)**: bg `#218fb7`, ink `#091723`, (4.9:1).
+- **`tabbed-carousel-tab` (nav)**: bg `#e3ebe4`, ink `#091723`, (14.9:1), radius `64px`, padding `8px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#f2f8f3` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff4f40` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `MonzoSansDisplay` across 18 type steps.
-- **Component Geometry**: Buttons (`16px`), cards (`16px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff4f40` with `#f7f7f8` text (3.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `MonzoSansText` headings with `MonzoSansText` body copy using documented weights and scale steps.
+- Apply `30px` base geometry across inputs and buttons (30px on outer containers).
+- Separate containers via `#f2f8f3` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `30px` baseline.
+- Do not truncate or drop border contrast on `navigation-section-selector-navigation-section-selector` fields and secondary buttons.

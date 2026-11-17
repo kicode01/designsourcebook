@@ -161,6 +161,12 @@ typography:
     fontFamily: "\"AS Circular\", \"Helvetica Neue\", Arial, sans-serif"
   font-family-mono:
     fontFamily: "Menlo, Monaco, Consolas, \"Courier New\", monospace"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  nav: 8px
+  default: 8px
 components:
   badge:
     backgroundColor: "#555"
@@ -203,25 +209,68 @@ components:
 
 ## Overview
 
-Alaska Airlines Auro — read from auro.alaskaair.com's live stylesheets, not a published token package.
+**Auro** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00274a` brand accent.
 
-Tokens were read from https://auro.alaskaair.com/, not from a published token package: 91 colour tokens and 33 type tokens.
+Typography centers cleanly on `AS Circular` (86px display down to 18px body), unified by `8px` base corner radius and stepped `#fff` -> `#eaf3dd` surface layering.
+
+Maintained by **Alaska Airlines**. Source: live stylesheet extraction (https://auro.alaskaair.com/), repo https://github.com/AlaskaAirlines/auro, package `@aurodesignsystem/design-tokens`, frameworks: web-components, css. Inventory: **91** colors, **33** typography steps, and **7** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#eaf3dd` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#00274a` (15.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 14.1:1 contrast).
+- **Structural Border (`border`)**: `#dbdbdb` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `advanced-color-accents-accent1` (`#b2d583`), `advanced-color-accents-accent4-bold` (`#fb7f24`), `advanced-color-button-primary-border-hover` (`#00274a`), `advanced-color-button-secondary-border-disabled` (`#cfe0ef`), `advanced-color-expanded-widget-background` (`#00274a`), `basic-color-border-brand` (`#00274a`).
+- **Neutral Ramp**: `advanced-color-boolean-isfalse-border-inverse` (`#fff`), `advanced-color-button-ghost-text-inverse-disabled` (`#7e8894`), `advanced-color-shared-background` (`#fff`), `basic-color-brand-secondary-muted` (`#ebfafd`), `basic-color-surface-accent2-muted` (`#eaf3dd`), `basic-color-texticon-inverse` (`#fff`).
+- **Semantic States**: success: `color-border-success-inverse` (`#8eceb9`) · danger: `auro-color-alert-error-on-light` (`#df0b37`) · warning: `color-brand-yellow-200` (`#ffe87e`) · info: `advanced-color-hyperlink-text-hover` (`#01426a`).
 
 ## Typography
 
-Families declared in the source: `AS Circular", Helvetica Neue, Arial, sans-serif`, `Menlo, Monaco, Consolas, "Courier New", monospace`, `AS Circular", "Helvetica Neue", Arial, sans-serif`.
+- **Primary / Display Voice**: `"AS Circular", "Helvetica Neue", Arial, sans-serif` (top step `wcss-display-2xl-font-size`: clamp(3.5rem,6vw,5.375rem), weight 600).
+- **Body & UI Controls**: `"AS Circular", "Helvetica Neue", Arial, sans-serif` (`wcss-body-lg-font-size`: 1.125rem, weight 400).
+- **Monospace / Technical Labels**: `Menlo, Monaco, Consolas, "Courier New", monospace` (`auro-font-family-mono`: 16px).
+- **Scale Steps (33)**: `wcss-display-2xl-font-size` (clamp(3.5rem,6vw,5.375rem)), `wcss-display-xl-font-size` (clamp(3rem,5.3333333333vw,4.5rem)), `wcss-display-lg-font-size` (clamp(2.75rem,4.6666666667vw,4rem)), `wcss-display-md-font-size` (clamp(2.5rem,4vw,3.5rem)), `wcss-display-sm-font-size` (clamp(2rem,3.6666666667vw,3rem)), `wcss-heading-xl-font-size` (clamp(2rem,3vw,2.5rem)), `wcss-display-xs-font-size` (clamp(1.75rem,3vw,2.375rem)), `wcss-accent-2xl-font-size` (clamp(2rem,3.1666666667vw,2.375rem)).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#eaf3dd` cards; separate sibling sections using `#dbdbdb` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#eaf3dd`) and `1px solid #dbdbdb` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00274a` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`badge` (badge)**: bg `#555`, ink `#ffffff`, (7.5:1).
+- **`button-primary` (button)**: bg `#00274a`, ink `#ffffff`, (15.1:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#df0b37`, ink `#ffffff`, (5.0:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `12px`, padding `18px 20px`.
+- **`nav-bar` (nav)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00274a` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `AS Circular` across 33 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#00274a` with `#f7f7f8` text (14.1:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `AS Circular` headings with `AS Circular` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#eaf3dd` surface shifts and `#dbdbdb` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

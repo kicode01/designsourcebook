@@ -91,6 +91,10 @@ typography:
     fontFamily: sans-serif
   root-font-size:
     fontSize: 16px
+rounded:
+  badge: 1px
+  button: "0"
+  default: "0"
 components:
   tag:
     backgroundColor: "#d2e2f1"
@@ -210,25 +214,68 @@ components:
 
 ## Overview
 
-GOV.UK Design System — the UK government's public-service design system.
+**GOV.UK Design System** is a light-first design system anchored on `#f4f8fb` canvas surfaces with `#0b0c0c` primary ink (18.3:1 contrast) and `#1d70b8` brand accent.
 
-Tokens were read from `govuk-frontend@6.6.0`, not from a marketing site: 35 colour tokens and 21 type tokens.
+Typography centers cleanly on `GDS Transport` (32px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.
+
+Maintained by **GOV.UK**. Source: published token package (https://frontend.design-system.service.gov.uk/), repo https://github.com/alphagov/govuk-frontend, package `govuk-frontend`, frameworks: css. Inventory: **35** colors, **21** typography steps, and **24** documented components (MIT license).
 
 ## Colors
 
-35 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f4f8fb` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0c0c` — body copy and primary headings (18.3:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0c0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#1d70b8` (4.8:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.8:1 contrast).
+- **Structural Border (`border`)**: `#cecece` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `text` (`#221133`), `colour` (`#a91c8e`), `contrast-safe` (`#d92f14`), `primary` (`#1d70b8`), `tint-25` (`#5694ca`), `tint-50` (`#8eb8dc`).
+- **Neutral Ramp**: `print-text` (`#000000`), `tint-95` (`#f4f8fb`), `white` (`#ffffff`), `text-colour` (`#0b0c0c`), `inverse-text-colour` (`#fff`), `template-background-colour` (`#f4f8fb`).
+- **Semantic States**: success: `success-colour` (`#0f7a52`) · danger: `error-colour` (`#ca3535`) · info: `link-colour` (`#1a65a6`).
 
 ## Typography
 
-Families declared in the source: `"GDS Transport", arial, sans-serif`, `sans-serif`.
+- **Primary / Display Voice**: `"GDS Transport", arial, sans-serif` (top step `panel-title`: 2rem, weight 600, line-height 1.09375).
+- **Body & UI Controls**: `"GDS Transport", arial, sans-serif` (`body-s`: 16px, weight 400).
+- **Scale Steps (21)**: `panel-title` (2rem), `table-caption-xl` (2rem), `table-caption-l` (1.6875rem), `caption-l` (1.3125rem, w400), `error-summary-title` (1.3125rem), `notification-banner-heading` (1.3125rem), `table-caption-m` (1.3125rem), `notification-banner-title` (1.1875rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 24 component tokens with documented paddings: `2px 8px 3px`, `35px`, `8px 10px 7px`, `5px`, `15px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#cecece` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 2px 0 #083d29`, `0 2px 0 #651b1b`) paired with `#cecece` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1d70b8` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0` (Buttons `0` · Badges `1px`).
+- **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
 
 ## Components
 
-24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`tag` (badge)**: bg `#d2e2f1`, ink `#0f385c`, (9.1:1), radius `1px`, padding `2px 8px 3px`.
+- **`label` (badge)**: ink `#000`.
+- **`panel` (card)**: ink `#000`, padding `35px`, border `5px solid transparent`.
+- **`table` (nav)**: ink `#000`.
+- **`button` (button)**: bg `#0f7a52`, ink `#fff`, (5.3:1), radius `0`, padding `8px 10px 7px`, border `2px solid transparent`.
+- **`select` (input)**: bg `#fff`, ink `#000`, (21.0:1), padding `5px`, border `2px solid`.
+- **`summary-list` (card)**: ink `#000`.
+- **`banner` (card)**: bg `#f4f8fb`, ink `#0b0c0c`, (18.3:1).
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#f4f8fb) canvas paired with `#f4f8fb` component surfaces and `#0b0c0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1d70b8` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `GDS Transport` across 21 type steps.
-- **Component Geometry**: Buttons (`0px`), cards (`0px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#f4f8fb` (light) with `#0b0c0c` primary text and `#0b0c0c` secondary labels.
+- Use `#1d70b8` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `GDS Transport` headings with `GDS Transport` body copy using documented weights and scale steps.
+- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.
+- Separate containers via `#fff` surface shifts and `#cecece` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
+- Do not truncate or drop border contrast on `select` fields and secondary buttons.

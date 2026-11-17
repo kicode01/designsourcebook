@@ -283,6 +283,13 @@ typography:
     fontFamily: "\"Adobe Clean Spectrum VF\""
   serif-font-family:
     fontFamily: "\"Adobe Clean Serif\""
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "rgb(59, 99, 251)"
@@ -330,21 +337,69 @@ components:
 
 ## Overview
 
-Adobe Spectrum — the cross-product design language behind Creative Cloud.
+**Spectrum** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(59, 99, 251)` brand accent.
 
-Tokens were read from `@adobe/spectrum-tokens@15.7.0`, not from a marketing site: 91 colour tokens and 94 type tokens.
+Typography centers cleanly on `Adobe Clean Han` (102px display down to 16px body), unified by `6px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Adobe**. Source: published token package (https://github.com/adobe/spectrum-design-data/tree/main/packages/tokens#readme), repo https://github.com/adobe/react-spectrum, package `@adobe/spectrum-tokens`, frameworks: react, web-components, css. Inventory: **91** colors, **94** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgb(255, 255, 255)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(255, 255, 255)` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgb(59, 99, 251)` (4.8:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `accent-background-color-key-focus` (`rgb(39, 77, 234)`), `accent-content-color-key-focus` (`rgb(39, 77, 234)`), `blue-background-color-default` (`rgb(59, 99, 251)`), `celery-background-color-default` (`rgb(93, 180, 31)`), `cinnamon-background-color-default` (`rgb(170, 94, 56)`), `fuchsia-background-color-default` (`rgb(181, 57, 200)`).
+- **Neutral Ramp**: `transparent-neutral-1000` (`rgb(0, 0, 0)`), `card-background-well-color` (`rgb(233, 233, 233)`), `background-elevated-color` (`rgb(255, 255, 255)`), `disabled-background-color` (`rgb(233, 233, 233)`), `neutral-background-color-hover` (`rgb(19, 19, 19)`), `neutral-background-color-selected-hover` (`rgb(19, 19, 19)`).
+- **Semantic States**: success: `green-background-color-default` (`rgb(5, 131, 78)`) · danger: `negative-background-color-down` (`rgb(183, 40, 24)`) · warning: `orange-subtle-background-color-default` (`rgb(255, 236, 207)`) · info: `informative-background-color-default` (`rgb(59, 99, 251)`).
 
 ## Typography
 
-Families declared in the source: `"Adobe Clean Han"`, `"Adobe Clean Spectrum VF"`, `"Adobe Clean Serif"`, `"Source Code Pro"`.
+- **Primary / Display Voice**: `"Adobe Clean Han"` (top step `line-height-font-size-1500`: 102px, weight 600).
+- **Body & UI Controls**: `"Adobe Clean Han"` (`body-cjk-font-family`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"Source Code Pro"` (`code-cjk-font-family`: 16px).
+- **Scale Steps (94)**: `line-height-font-size-1500` (102px), `line-height-font-size-1400` (90px), `font-size-1500` (88px), `line-height-font-size-1300` (80px), `font-size-1400` (79px), `line-height-font-size-1200` (72px), `font-size-1300` (70px), `line-height-font-size-1100` (64px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(59, 99, 251)` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Adobe Clean Han` across 94 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255, 255, 255)` -> `rgb(255, 255, 255)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(59, 99, 251)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `rgb(59, 99, 251)`, ink `#ffffff`, (4.8:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `rgb(183, 40, 24)`, ink `#ffffff`, (6.3:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `rgb(59, 99, 251)`, ink `#ffffff`, (4.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgb(3, 110, 69)`, ink `#ffffff`, (6.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `rgb(59, 99, 251)` with `#f7f7f8` text (4.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Adobe Clean Han` headings with `Adobe Clean Han` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `rgb(255, 255, 255)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

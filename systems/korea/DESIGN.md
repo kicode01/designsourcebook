@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Korea Design System
-description: "Crisp light (#ffffff) canvas, system-ui typography, #ecf2fe brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, system-ui typography, #256ef4 brand accent, and 8px corner geometry"
 colors:
   0: "#ffffff"
   20: "#b1cefb"
@@ -93,7 +93,7 @@ colors:
   krds-color-high-contrast-point-30: "#e0858c"
   krds-color-high-contrast-point-60: "#ab2b36"
   krds-color-high-contrast-point-90: "#310c0f"
-  primary: "#ecf2fe"
+  primary: "#256ef4"
 typography:
   krds-pc-font-size-display-large:
     fontSize: 6rem
@@ -187,6 +187,13 @@ typography:
     fontSize: 1.5rem
   krds-mobile-font-size-navigation-depth-small:
     fontSize: 1.5rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   btn-help-panel:
     backgroundColor: "#ffffff"
@@ -206,8 +213,8 @@ components:
     rounded: 12px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#ecf2fe"
-    textColor: "#0b0b0c"
+    backgroundColor: "#256ef4"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -226,25 +233,67 @@ components:
 
 ## Overview
 
-Korea Design System — tokens read from https://github.com/KRDS-uiux/krds-uiux.
+**Korea Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#256ef4` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 47 type tokens.
+Typography centers cleanly on `System UI` (96px display down to 21px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#ecf2fe` surface layering.
+
+Maintained by **Korea**. Source: published token package (https://github.com/KRDS-uiux/krds-uiux), repo https://github.com/KRDS-uiux/krds-uiux, frameworks: css. Inventory: **91** colors, **46** typography steps, and **7** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#ecf2fe` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#256ef4` (4.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.2:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `20` (`#b1cefb`), `50` (`#256ef4`), `80` (`#052561`), `krds-color-light-primary-20` (`#b1cefb`), `krds-color-light-primary-40` (`#4c87f6`), `krds-color-light-primary-60` (`#0b50d0`).
+- **Neutral Ramp**: `0` (`#ffffff`), `100` (`#000000`), `krds-color-light-primary-5` (`#ecf2fe`), `krds-color-light-secondary-10` (`#d6e0eb`), `krds-color-light-danger-5` (`#fdefec`), `krds-color-light-success-10` (`#d8eedd`).
+- **Semantic States**: success: `krds-color-light-success-30` (`#7ec88e`) · danger: `krds-color-light-danger-20` (`#f7afa1`) · warning: `krds-color-light-warning-5` (`#fff3db`) · info: `krds-color-light-information-10` (`#d3ebfd`).
 
 ## Typography
 
-Families declared in the source: `var(--krds-typo-font-type)`.
+- **Primary / Display Voice**: `system-ui` (top step `krds-pc-font-size-display-large`: 6rem, weight 600).
+- **Body & UI Controls**: `system-ui` (`krds-mobile-font-size-label-xsmall`: 1.3rem, weight 400).
+- **Scale Steps (46)**: `krds-pc-font-size-display-large` (6rem), `krds-pc-font-size-display-medium` (4.4rem), `krds-mobile-font-size-display-large` (4.4rem), `krds-pc-font-size-heading-xlarge` (4rem), `krds-pc-font-size-display-small` (3.6rem), `krds-pc-font-size-heading-large` (3.2rem), `krds-mobile-font-size-display-medium` (3.2rem), `krds-mobile-font-size-display-small` (2.8rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#ecf2fe` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ecf2fe`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#256ef4` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`btn-help-panel` (button)**: bg `#ffffff`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#256ef4`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#d8eedd`, ink `#0b0b0c`, (16.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ecf2fe` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 46 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#256ef4` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#ecf2fe` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

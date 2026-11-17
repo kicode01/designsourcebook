@@ -113,6 +113,13 @@ typography:
     fontSize: 16px
   switch-indicator-text-font-size:
     fontSize: 0.7em
+rounded:
+  button: 3px
+  input: 3px
+  card: 7px
+  badge: 999px
+  nav: 3px
+  default: 3px
 components:
   button-primary:
     backgroundColor: "#FF9980"
@@ -160,21 +167,69 @@ components:
 
 ## Overview
 
-Blueprint — tokens read from https://github.com/palantir/blueprint.
+**Blueprint** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#FF9980` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+Typography centers cleanly on `System UI` (18px display down to 14px body), unified by `3px` base corner radius and stepped `#ffffff` -> `#EDEFF2` surface layering.
+
+Maintained by **Palantir**. Source: published token package (https://github.com/palantir/blueprint), repo https://github.com/palantir/blueprint, package `@blueprintjs/core`, frameworks: react, css. Inventory: **91** colors, **8** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#EDEFF2` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#FF9980` (2.1:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `6` (`#99c4ff`), `hex` (`#f7d1bf`), `gray1` (`#5F6B7C`), `gray2` (`#738091`), `gray3` (`#8F99A8`), `blue1` (`#184A90`).
+- **Neutral Ramp**: `1` (`#1c2127`), `2` (`#252a31`), `3` (`#2f343c`), `4` (`#383e47`), `5` (`#404854`), `black` (`#111418`).
+- **Semantic States**: success: `green1` (`#165A36`) · danger: `red1` (`#8E292C`) · warning: `orange1` (`#77450D`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", blueprint-icons-16, sans-serif` (top step `h6`: 18px, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", blueprint-icons-16, sans-serif` (`body`: 14px, weight 400, line-height 1.28581).
+- **Monospace / Technical Labels**: `monospace` (`pt-font-family-monospace`: 16px).
+- **Scale Steps (8)**: `h6` (18px), `pt-font-family-monospace` (16px), `pt-font-family` (16px), `bp6-navbar-heading` (16px), `body` (14px, w400), `bp6-heading` (14px), `bp6-entity-title-subtitle` (12px), `switch-indicator-text-font-size` (0.7em).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF9980` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `monospace` across 8 type steps.
-- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#EDEFF2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#EDEFF2`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF9980` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `3px` (Buttons `3px` · Inputs `3px` · Cards `7px` · Badges `999px` · Navigation `3px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `7px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#FF9980`, ink `#0b0b0c`, (9.5:1), radius `3px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `3px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `3px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `3px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `7px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#FF9980`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `3px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#FF9980` with `#0b0b0c` text (9.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `3px` base geometry across inputs and buttons (7px on outer containers).
+- Separate containers via `#EDEFF2` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `3px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

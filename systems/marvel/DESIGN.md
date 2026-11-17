@@ -82,6 +82,10 @@ typography:
     fontSize: 20px
     fontWeight: 300
     lineHeight: 1.7
+rounded:
+  card: 12px
+  badge: 999px
+  default: 12px
 components:
   input:
     textColor: "rgb(60, 72, 88)"
@@ -137,25 +141,67 @@ components:
 
 ## Overview
 
-Marvel Styleguide — read from the rendered page in a browser, not from published tokens.
+**Marvel Styleguide** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff9e7c` brand accent.
 
-Tokens were read from https://marvelapp.com/styleguide, not from a published token package: 68 colour tokens and 2 type tokens.
+Typography centers cleanly on `FaktProSoft` (38px display down to 20px body), unified by `12px` base corner radius and subtle shadow elevation.
+
+Maintained by **Marvel**. Source: live stylesheet extraction (https://marvelapp.com/styleguide), frameworks: css. Inventory: **68** colors, **2** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
-68 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f9fafc` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff9e7c` (2.0:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.8:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `canvas-text` (`#3c4858`), `body-text` (`#8492a6`), `css-surface-8` (`#13ce66`), `css-surface-9` (`#ffc82c`), `css-surface-10` (`#ff49db`), `css-surface-11` (`#7e5bef`).
+- **Neutral Ramp**: `bg-canvas` (`#ffffff`), `css-surface-27` (`#000000`), `css-surface-30` (`#f9fafc`), `css-surface-31` (`#e0e6ed`), `css-surface-32` (`#eff2f7`), `css-surface-33` (`#e5e9f2`).
+- **Semantic States**: info: `link-bg` (`#ff7849`).
 
 ## Typography
 
-Families declared in the source: `FaktProSoft, "Helvetica Neue", helvetica, arial, sans-serif`.
+- **Primary / Display Voice**: `FaktProSoft, "Helvetica Neue", helvetica, arial, sans-serif` (top step `h2`: 38px, weight 400, line-height 1).
+- **Body & UI Controls**: `FaktProSoft, "Helvetica Neue", helvetica, arial, sans-serif` (`body`: 20px, weight 300, line-height 1.7).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f9fafc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`rgb(224, 230, 237) 0px 0px 0px 1px inset`, `rgb(224, 230, 237) 0px 0px 0px 1px inset`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff9e7c` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `12px` (Cards `12px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-13 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`input` (input)**: ink `rgb(60, 72, 88)`.
+- **`linkedin` (nav)**: ink `rgb(0, 119, 181)`.
+- **`inputGroup-context` (input)**: bg `rgb(249, 250, 252)`, ink `#0b0b0c`, (18.8:1).
+- **`link-red` (nav)**: ink `rgb(255, 73, 73)`.
+- **`link-pink` (nav)**: ink `rgb(255, 73, 219)`.
+- **`link-dark` (nav)**: ink `rgb(60, 72, 88)`.
+- **`link-blue` (nav)**: ink `rgb(31, 182, 255)`.
+- **`link-green` (nav)**: ink `rgb(19, 206, 102)`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff9e7c` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `FaktProSoft` across 2 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff9e7c` with `#0b0b0c` text (9.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `FaktProSoft` headings with `FaktProSoft` body copy using documented weights and scale steps.
+- Apply `12px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f9fafc` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `12px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

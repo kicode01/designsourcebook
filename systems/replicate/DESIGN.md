@@ -79,6 +79,12 @@ typography:
     fontSize: 11px
     fontWeight: 400
     lineHeight: 1.5
+rounded:
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-dark-solid:
     backgroundColor: "#202020"

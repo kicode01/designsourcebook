@@ -73,6 +73,13 @@ colors:
 typography:
   ifm-font-family-base:
     fontFamily: "\"DM Sans\", sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#242424"
@@ -120,21 +127,67 @@ components:
 
 ## Overview
 
-Bento DS — tokens read from https://github.com/buildo/bento-design-system.
+**Bento DS** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#000000` primary ink (21.0:1 contrast) and `#242424` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 67 colour tokens and 1 type tokens.
+Typography centers cleanly on `DM Sans` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#F6F8FB` surface layering.
+
+Maintained by **Bento**. Source: published token package (https://github.com/buildo/bento-design-system), repo https://github.com/buildo/bento-design-system, package `@buildo/bento-design-system`, frameworks: react. Inventory: **67** colors, **1** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-67 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#FFFFFF` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#F6F8FB` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#000000` — body copy and primary headings (21.0:1 on canvas).
+- **Muted Ink (`muted`)**: `#000000` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#242424` (15.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 14.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #000000 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `bento-violet10` (`#B3BEFF`), `bento-violet20` (`#7F77FF`), `bento-violet40` (`#5C17E5`), `neutral30` (`#B6C2D3`), `neutral40` (`#9AA8BC`), `neutral50` (`#728197`).
+- **Neutral Ramp**: `white` (`#FFFFFF`), `black` (`#000000`), `neutral01` (`#F6F8FB`), `neutral05` (`#ECEFF4`), `neutral10` (`#DEE4ED`), `neutral20` (`#CBD4E1`).
+- **Semantic States**: success: `positive05` (`#E1FCDE`) · danger: `negative05` (`#FFD4D8`) · warning: `warning05` (`#FFF2D2`) · info: `informative05` (`#E0EDFF`).
 
 ## Typography
 
-Families declared in the source: `DM Sans", sans-serif`.
+- **Primary / Display Voice**: `"DM Sans", sans-serif` (top step `ifm-font-family-base`: 16px, weight 600).
+- **Body & UI Controls**: `"DM Sans", sans-serif` (`ifm-font-family-base`: 16px, weight 400).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#000000` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#242424` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `DM Sans` across 1 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#F6F8FB` cards; separate sibling sections using `color-mix(in srgb, #000000 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#F6F8FB`) and `1px solid color-mix(in srgb, #000000 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#242424` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#242424`, ink `#ffffff`, (15.5:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#000000`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#FFD4D8`, ink `#000000`, (15.7:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#242424`, ink `#ffffff`, (15.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#17BF33`, ink `#000000`, (8.5:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#FFFFFF` (light) with `#000000` primary text and `#000000` secondary labels.
+- Use `#242424` with `#f7f7f8` text (14.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `DM Sans` headings with `DM Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#F6F8FB` surface shifts and `color-mix(in srgb, #000000 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

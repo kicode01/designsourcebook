@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Firefox Acorn Design System
-description: "Crisp light (#fff) canvas, Atkinson Hyperlegible typography, #fff brand accent, and 0.375rem corner geometry"
+description: "Crisp light (#764edd) canvas, Atkinson Hyperlegible typography, #764edd brand accent, and 0.375rem corner geometry"
 colors:
   bs-primary: "#0d6efd"
   bs-success: "#198754"
@@ -93,7 +93,7 @@ colors:
   guidelines-do-ink: "#008141"
   checkered-square-color-light-a: "#f9f9fa"
   page-navigation-ink: "#141618"
-  primary: "#fff"
+  primary: "#764edd"
 typography:
   bs-body-font-size:
     fontSize: 1rem
@@ -190,6 +190,11 @@ typography:
     fontFamily: "\"Fira Code\", \"Fira Mono\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace"
   bs-body-font-family:
     fontFamily: "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+rounded:
+  input: 0.375rem
+  button: 0.375rem
+  badge: 999px
+  default: 0.375rem
 components:
   card:
     textColor: "#212529"
@@ -235,8 +240,8 @@ components:
     rounded: 0.375rem
     padding: 10px 18px
   badge-brand:
-    backgroundColor: "#fff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#764edd"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -250,25 +255,69 @@ components:
 
 ## Overview
 
-Firefox Acorn Design System — read from the rendered page in a browser, not from published tokens.
+**Firefox Acorn Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#764edd` brand accent.
 
-Tokens were read from https://acorn.firefox.com/, not from a published token package: 91 colour tokens and 45 type tokens.
+Typography centers cleanly on `Atkinson Hyperlegible` (80px display down to 16px body), unified by `0.375rem` base corner radius and stepped `#fff` -> `#f2f4f5` surface layering.
+
+Maintained by **Firefox**. Source: live stylesheet extraction (https://acorn.firefox.com/), repo https://github.com/mozilla/acorn-icons, frameworks: web-components, css. Inventory: **91** colors, **45** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f2f4f5` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#764edd` (5.4:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.0:1 contrast).
+- **Structural Border (`border`)**: `#e9ecef` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `bs-primary` (`#0d6efd`), `bs-primary-text-emphasis` (`#052c65`), `bs-primary-bg-subtle` (`#cfe2ff`), `bs-primary-border-subtle` (`#9ec5fe`), `bs-table-border-color` (`#a6b5cc`), `bs-btn-hover-border-color` (`#0a58ca`).
+- **Neutral Ramp**: `bs-light-text-emphasis` (`#495057`), `bs-success-bg-subtle` (`#d1e7dd`), `bs-light-border-subtle` (`#e9ecef`), `bs-secondary-color-rgb` (`rgb(33, 37, 41)`), `bs-secondary-bg-rgb` (`rgb(233, 236, 239)`), `bs-btn-disabled-color` (`#fff`).
+- **Semantic States**: success: `bs-success` (`#198754`) · danger: `color-red300` (`#e46969`) · warning: `bs-warning` (`#ffc107`) · info: `bs-link-color-rgb` (`rgb(13, 110, 253)`).
 
 ## Typography
 
-Families declared in the source: `"Atkinson Hyperlegible", sans-serif`, `"Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace`, `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`.
+- **Primary / Display Voice**: `"Atkinson Hyperlegible", sans-serif` (top step `display-1`: 5rem, weight 600).
+- **Body & UI Controls**: `"Atkinson Hyperlegible", sans-serif` (`bs-body-font-size`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `"Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace` (`dm-font-family-mono`: 16px).
+- **Scale Steps (45)**: `display-1` (5rem), `display-2` (4.5rem), `display-3` (4rem), `display-4` (3.5rem), `page-title-font-size` (48px), `display-5` (3rem), `h1` (43px), `display-6` (2.5rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `0.375rem 2.25rem 0.375rem 0.75rem`, `0.375rem 0.75rem`, `8px`, `10px 18px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f2f4f5` cards; separate sibling sections using `#e9ecef` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f2f4f5`) and `1px solid #e9ecef` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#764edd` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0.375rem` (Inputs `0.375rem` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `0.375rem` container.
 
 ## Components
 
-12 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`card` (card)**: ink `#212529`, border `solid`.
+- **`link-info` (nav)**: ink `RGBA(13,202,240,1)`.
+- **`link-dark-2` (nav)**: ink `RGBA(33,37,41,1)`.
+- **`link-light-3` (nav)**: ink `RGBA(248,249,250,1)`.
+- **`select` (input)**: bg `#fff`, ink `#212529`, (15.4:1), radius `0.375rem`, padding `0.375rem 2.25rem 0.375rem 0.75rem`, border `1px solid #dee2e6`.
+- **`link-danger-4` (nav)**: ink `RGBA(220,53,69,1)`.
+- **`link-primary-5` (nav)**: ink `RGBA(13,110,253,1)`.
+- **`link-success-6` (nav)**: ink `RGBA(25,135,84,1)`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Atkinson Hyperlegible` across 45 type steps.
-- **Component Geometry**: Buttons (`0.375rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#764edd` with `#f7f7f8` text (5.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Atkinson Hyperlegible` headings with `Atkinson Hyperlegible` body copy using documented weights and scale steps.
+- Apply `0.375rem` base geometry across inputs and buttons (0.375rem on outer containers).
+- Separate containers via `#f2f4f5` surface shifts and `#e9ecef` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `0.375rem` baseline.
+- Do not truncate or drop border contrast on `select` fields and secondary buttons.

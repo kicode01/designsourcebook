@@ -124,6 +124,13 @@ typography:
     fontSize: 12px
   font-family-code:
     fontFamily: "SFMono-Medium, \"SF Mono\", \"Segoe UI Mono\", \"Roboto Mono\", \"Ubuntu Mono\", Menlo, Consolas, Courier, monospace"
+rounded:
+  button: 16px
+  input: 16px
+  card: 16px
+  badge: 999px
+  nav: 16px
+  default: 16px
 components:
   button-primary:
     backgroundColor: "#bd001c"
@@ -171,21 +178,69 @@ components:
 
 ## Overview
 
-Pinterest Gestalt — tokens imported from gestalt-design-tokens.
+**Pinterest Gestalt** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#bd001c` brand accent.
 
-Tokens were read from `gestalt-design-tokens@177.0.12`, not from a marketing site: 90 colour tokens and 14 type tokens.
+Typography centers cleanly on `System UI` (36px display down to 20px body), unified by `16px` base corner radius and stepped `#FFFFFF` -> `#f9f9f9` surface layering.
+
+Maintained by **Pinterest**. Source: published token package (https://gestalt.pinterest.systems/), repo https://github.com/pinterest/gestalt, package `gestalt-design-tokens`, frameworks: react. Inventory: **90** colors, **15** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-90 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#FFFFFF` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f9f9f9` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#bd001c` (6.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 6.2:1 contrast).
+- **Structural Border (`border`)**: `#e8e7e1` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `900` (`#660000`), `primary` (`#bd001c`), `sema-color-border-focus-outer-inverse` (`#215d82`), `color-background-badge-recommendation-default` (`#6d4270`), `color-background-searchguide-active-03` (`#ca5816`), `color-border-pulsar-hover` (`#dce9fa`).
+- **Neutral Ramp**: `0` (`#FFFFFF`), `200` (`#969292`), `sema-color-background-selected` (`#e8e7e1`), `sema-color-icon-disabled` (`#4c4c4a`), `sema-color-hover-background-neutral-default` (`#b2b0ae`), `sema-color-hover-text-dark` (`#242423`).
+- **Semantic States**: success: `sema-color-background-success-default` (`#a8bb63`) · danger: `sema-color-hover-border-error` (`#f87777`) · warning: `sema-color-text-warning` (`#fde7c9`) · info: `sema-color-pressed-text-info` (`#8ecfe6`).
 
 ## Typography
 
-Families declared in the source: `"SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Consolas, Courier, monospace`, `SFMono-Medium, "SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Consolas, Courier, monospace`.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif` (top step `base-font-size-36`: 36px, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif` (`base-font-size-20`: 20px, weight 400).
+- **Monospace / Technical Labels**: `"SF Mono", "Segoe UI Mono", "Roboto Mono", "Ubuntu Mono", Menlo, Consolas, Courier, monospace` (`base-font-family-code`: 16px).
+- **Scale Steps (15)**: `base-font-size-36` (36px), `font-size-600` (36px), `base-font-size-28` (28px), `font-size-500` (28px), `base-font-size-20` (20px), `font-size-400` (20px), `font-family-default-latin` (16px), `base-font-size-16` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#bd001c` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 15 type steps.
-- **Component Geometry**: Buttons (`16px`), cards (`16px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#e8e7e1` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#f9f9f9`) and `1px solid #e8e7e1` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#bd001c` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `16px` (Buttons `16px` · Inputs `16px` · Cards `16px` · Badges `999px` · Navigation `16px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `16px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#bd001c`, ink `#ffffff`, (6.6:1), radius `16px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `16px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#f87777`, ink `#0b0b0c`, (7.4:1), radius `16px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `16px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `16px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#bd001c`, ink `#ffffff`, (6.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#a8bb63`, ink `#0b0b0c`, (9.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `16px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#bd001c` with `#f7f7f8` text (6.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `16px` base geometry across inputs and buttons (16px on outer containers).
+- Separate containers via `#f9f9f9` surface shifts and `#e8e7e1` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `16px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

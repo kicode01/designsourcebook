@@ -156,6 +156,12 @@ typography:
     lineHeight: 1.2
   figure-caption:
     fontSize: ".875em"
+rounded:
+  button: ".3125rem"
+  input: ".3125rem"
+  card: 6px
+  badge: 999px
+  default: ".3125rem"
 components:
   btn-close:
     textColor: "#98a2b3"
@@ -217,25 +223,69 @@ components:
 
 ## Overview
 
-Singapore Government Design System (SGDS) — open-source UI system for Singapore digital services.
+**Singapore Government Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#5925dc` brand accent.
 
-Tokens were read from `@govtechsg/sgds@2.3.6`, not from a marketing site: 91 colour tokens and 29 type tokens.
+Typography centers cleanly on `Inter` (32px display down to 16px body), unified by `.3125rem` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Singapore**. Source: published token package, repo https://github.com/GovTechSG/sgds, package `@govtechsg/sgds`, frameworks: web-components, react, css. Inventory: **91** colors, **29** typography steps, and **14** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#5925dc` (7.7:1 vs canvas; pair with `#f7f7f8` foreground ink for 7.2:1 contrast).
+- **Structural Border (`border`)**: `#98a2b3` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `sgds-primary` (`#5925dc`), `sgds-secondary` (`#1f69ff`), `sgds-border-color` (`#98a2b3`), `sgds-table-border-color` (`#98a2b3`), `sgds-btn-border-color` (`#5925dc`), `sgds-btn-hover-border-color` (`#471eb0`).
+- **Neutral Ramp**: `sgds-btn-disabled-color` (`#fff`), `sgds-dropdown-link-color` (`#000`), `sgds-dropdown-link-hover-color` (`#000`), `sgds-dropdown-link-hover-bg` (`#e4e7ec`), `sgds-dropdown-link-active-color` (`#fff`), `sgds-nav-tabs-link-active-bg` (`#fff`).
+- **Semantic States**: success: `sgds-success` (`#0a8217`) · danger: `sgds-danger` (`#d7260f`) · warning: `sgds-warning` (`#f79009`) · info: `sgds-info` (`#0f71bb`).
 
 ## Typography
 
-Families declared in the source: `Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`, `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`.
+- **Primary / Display Voice**: `Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (top step `badge-font-size-max`: 2rem, weight 600).
+- **Body & UI Controls**: `Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (`font-size-base`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`font-family-monospace`: 16px).
+- **Scale Steps (29)**: `badge-font-size-max` (2rem), `legend-font-size` (1.5rem), `sgds-navbar-brand-font-size` (1.25rem), `sgds-navbar-toggler-font-size` (1.25rem), `lead` (1.25rem, w300), `display-4` (1.125rem, w700), `font-size-base` (1rem), `sidenav-fontsize` (1rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `.25em`, `.4375rem 3rem .4375rem 1rem`, `.4375rem 1rem`, `10px 18px`, `18px 20px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#98a2b3` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid #98a2b3` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#5925dc` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `.3125rem` (Buttons `.3125rem` · Inputs `.3125rem` · Cards `6px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
 
 ## Components
 
-10 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`btn-close` (button)**: ink `#98a2b3`, radius `.3125rem`, padding `.25em`, border `0`.
+- **`link-info` (nav)**: ink `#0f71bb`.
+- **`link-dark-2` (nav)**: ink `#000`.
+- **`link-light-3` (nav)**: ink `#f7f7f9`.
+- **`select` (input)**: bg `#fff`, ink `#1d2939`, (14.7:1), radius `.3125rem`, padding `.4375rem 3rem .4375rem 1rem`, border `1px solid #98a2b3`.
+- **`link-danger-4` (nav)**: ink `#d7260f`.
+- **`link-primary-5` (nav)**: ink `#5925dc`.
+- **`link-success-6` (nav)**: ink `#0a8217`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#5925dc` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 29 type steps.
-- **Component Geometry**: Buttons (`.3125rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#5925dc` with `#f7f7f8` text (7.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `.3125rem` base geometry across inputs and buttons (6px on outer containers).
+- Separate containers via `#fff` surface shifts and `#98a2b3` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `.3125rem` baseline.
+- Do not truncate or drop border contrast on `select` fields and secondary buttons.

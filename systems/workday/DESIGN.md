@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Workday Canvas
-description: "Crisp light (#ffffff) canvas, Roboto typography, #00f brand accent, and 8px corner geometry"
+description: "Crisp light (#ffffff) canvas, Roboto typography, #0875e1 brand accent, and 8px corner geometry"
 colors:
   tokens: "#fbf5ff"
   contrast: "#FFFFFF"
@@ -61,8 +61,8 @@ colors:
   french-vanilla400: "#bdbdbd"
   french-vanilla200: "#ebebeb"
   french-vanilla100: "#ffffff"
-  focus-primary: "#00f"
-  primary: "#00f"
+  focus-primary: "#0875e1"
+  primary: "#0875e1"
   background-color: "#ffffff"
   color: "#333333"
   primary-lightest: "#fff"
@@ -119,9 +119,16 @@ typography:
     fontFamily: "\"IBM Plex Mono\", \"Roboto Mono\", monospace"
   cnvs-sys-font-family-fallback:
     fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, \"Sana Serif\", Inter, system-ui, sans-serif, Avenir, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
-    backgroundColor: "#00f"
+    backgroundColor: "#0875e1"
     textColor: "#ffffff"
     rounded: 8px
     padding: 10px 18px
@@ -146,7 +153,7 @@ components:
     rounded: 12px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#00f"
+    backgroundColor: "#0875e1"
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
@@ -166,21 +173,69 @@ components:
 
 ## Overview
 
-Workday Canvas — tokens read from https://github.com/Workday/canvas-kit.
+**Workday Canvas** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0875e1` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 69 colour tokens and 0 type tokens.
+Typography centers cleanly on `Roboto` (104px display down to 20px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fbf5ff` surface layering.
+
+Maintained by **Workday**. Source: published token package (https://github.com/Workday/canvas-kit), repo https://github.com/Workday/canvas-kit, package `@workday/canvas-kit-react`, frameworks: react, css. Inventory: **69** colors, **23** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-69 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fbf5ff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0875e1` (4.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.2:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `blueberry600` (`#004387`), `grape-soda600` (`#7c3882`), `pomegranate600` (`#99003a`), `cinnamon600` (`#a31b12`), `cantaloupe600` (`#c06c00`), `sour-lemon600` (`#bd9100`).
+- **Neutral Ramp**: `tokens` (`#fbf5ff`), `contrast` (`#FFFFFF`), `grape-soda100` (`#feebff`), `pomegranate100` (`#ffebf3`), `cinnamon100` (`#ffefee`), `green-apple100` (`#ebfff0`).
+- **Semantic States**: success: `green-apple600` (`#217a37`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Roboto` (top step `cnvs-base-font-size-1050`: 6.5rem, weight 600).
+- **Body & UI Controls**: `Roboto` (`cnvs-base-font-size-150`: 1.25rem, weight 400).
+- **Monospace / Technical Labels**: `"Roboto Mono"` (`cnvs-base-font-family-100`: 16px).
+- **Scale Steps (23)**: `cnvs-base-font-size-1050` (6.5rem), `cnvs-base-font-size-900` (5.5rem), `cnvs-base-font-size-750` (4.5rem), `cnvs-base-font-size-600` (3.5rem), `cnvs-base-font-size-500` (3rem), `cnvs-base-font-size-400` (2.5rem), `cnvs-base-font-size-300` (2rem), `cnvs-base-font-size-250` (1.75rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00f` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto` across 23 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fbf5ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#fbf5ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0875e1` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#0875e1`, ink `#ffffff`, (4.5:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0875e1`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0875e1` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#fbf5ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

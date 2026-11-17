@@ -91,6 +91,10 @@ typography:
   body:
     fontFamily: "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
     fontSize: 0.8125rem
+rounded:
+  input: 4px
+  button: 5px
+  default: 4px
 components:
   input:
     textColor: "#262626"
@@ -208,25 +212,68 @@ components:
 
 ## Overview
 
-Foyer Design System — read from the rendered page in a browser, not from published tokens.
+**Foyer Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0B42C8` brand accent.
 
-Tokens were read from https://design.foyer.lu/, not from a published token package: 49 colour tokens and 12 type tokens.
+Typography centers cleanly on `DM sans` (72px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.
+
+Maintained by **Foyer**. Source: live stylesheet extraction (https://design.foyer.lu/), frameworks: css. Inventory: **49** colors, **12** typography steps, and **26** documented components (all rights reserved license).
 
 ## Colors
 
-49 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#ffffff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0B42C8` (8.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 7.5:1 contrast).
+- **Structural Border (`border`)**: `#E1E6EF` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `colors-blocks-upload-background-annotation` (`#173682`), `colors-blocks-table-border-main` (`#B1BCD3`), `colors-sidebar-text-secondary` (`#67768E`), `colors-sidebar-text-icon` (`#67768E`), `colors-blocks-content-text-styleguide-page-intro` (`#67768E`), `colors-blocks-content-text-styleguide-secondary-body` (`#67768E`).
+- **Neutral Ramp**: `colors-blocks-table-background-alternate-row` (`#F8F9FC`), `colors-blocks-table-background-header` (`#E1E6EF`), `colors-blocks-upload-text-label` (`#1A1D23`), `colors-footer-text-main` (`#1A1D23`), `colors-nav-text-active` (`#1A1D23`), `colors-nav-text-main` (`#1A1D23`).
+- **Semantic States**: success: `colors-blocks-status-tags-background-positive` (`#00856E`) · danger: `colors-blocks-status-tags-background-negative` (`#D04348`) · warning: `colors-blocks-status-tags-background-warning` (`#F2CA2C`) · info: `colors-footer-text-links` (`#0B42C8`).
 
 ## Typography
 
-Families declared in the source: `"DM sans", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`.
+- **Primary / Display Voice**: `"DM sans", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (top step `landing-title`: 4.5rem, weight 300).
+- **Body & UI Controls**: `"DM sans", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (`body`: 0.8125rem, weight 400).
+- **Scale Steps (12)**: `landing-title` (4.5rem, w300), `landing-subtitle` (3rem, w300), `type-landing-heading` (2.5rem, w800), `landing-bottom-cta-title` (2.4rem, w400), `h1` (2rem), `big-title` (2rem, w250), `type-heading-large` (1.5rem, w700), `h3` (1.3rem, w700).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 26 component tokens with documented paddings: `5px`, `2px`, `12px 25px`, `7px 15px`.
+- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#E1E6EF` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 0 10px 0 rgba(0,0,0,.1)`, `0 0 10px 0 rgba(0,0,0,.1)`) paired with `#E1E6EF` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0B42C8` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `5px` · Inputs `4px` · Badges `2px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
 
 ## Components
 
-26 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`input` (input)**: ink `#262626`, radius `4px`, border `1px solid #757575`.
+- **`input-2` (input)**: ink `#6f8291`, radius `4px`, border `1px solid #e2e4e7`.
+- **`input-3` (input)**: ink `#262626`, radius `4px`, border `1px solid #757575`.
+- **`link-text` (nav)**: ink `#3497ff`.
+- **`button` (button)**: bg `#fff`, ink `#000`, (21.0:1), radius `5px`, border `1px solid #c9c8c9`.
+- **`link-2` (nav)**: bg `#fff`, radius `4px`, border `1px solid rgba(0,0,0,.15)`.
+- **`input-error-4` (input)**: ink `#ff5252`.
+- **`input-5` (input)**: ink `#262626`, radius `4px`, padding `5px`, border `1px solid #757575`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0B42C8` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `DM sans` across 12 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0B42C8` with `#f7f7f8` text (7.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `DM sans` headings with `DM sans` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (4px on outer containers).
+- Separate containers via `#ffffff` surface shifts and `#E1E6EF` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

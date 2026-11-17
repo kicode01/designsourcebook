@@ -219,7 +219,7 @@
 
   .notes p{font-size:13px;line-height:1.7;color:var(--dim);margin:0 0 12px}
   .notes h4{font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin:16px 0 8px}
-  .notes ul{margin:0 0 14px;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.65;color:var(--dim)}
+  .notes ul,.notes ol{margin:0 0 14px;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.65;color:var(--dim)}
   .notes strong{color:var(--ink);font-weight:560}
   .notes code{font-family:var(--mono);font-size:11.5px;padding:1.5px 5px;border-radius:4px;background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid var(--line);color:var(--ink)}
   .cmd{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:10px 14px;font-family:var(--mono);font-size:12px;color:var(--ink)}
@@ -412,7 +412,7 @@ function readable(fg,bg){
 function soft(bg,amount){ return 'color-mix(in srgb, '+bg+' '+amount+'%, transparent)'; }
 function ratio(a,b){ const la=lum(a),lb=lum(b); const hi=Math.max(la,lb),lo=Math.min(la,lb); return (hi+.05)/(lo+.05); }
 function over(fg,bg){
-  const f=parseColor(fg), b=parseColor(bg);
+  const f=Array.isArray(fg)?fg:parseColor(fg), b=Array.isArray(bg)?bg:parseColor(bg);
   if(!f) return b||[255,255,255,1];
   if(!b) return f;
   const a=f[3];
@@ -719,7 +719,7 @@ function stageFor(p){
   const tileBg=sameBrand?readable(p.text,cardPlate):brandFill;
   const tilePlate=over(tileBg,cardBg);
   const tileInk=readable(ink(tilePlate),tilePlate);
-  const tileBorder=(rgbChroma(tilePlate)<35&&Math.abs(lum(tilePlate)-lum(cardPlate))<0.14)?('1px solid '+p.border):'none';
+  const tileBorder=((rgbChroma(tilePlate)<35&&Math.abs(lum(tilePlate)-lum(cardPlate))<0.14)||(lum(tilePlate)>0.72&&lum(cardPlate)>=0.36))?('1px solid '+p.border):'none';
 
   const dispName=cleanFontLabel(d.fontFamily);
   const bodyName=cleanFontLabel(t.fontFamily);
@@ -1014,23 +1014,64 @@ function renderIndex(){
   });
 }
 
+function contrastNote(fgRaw,bgRaw,canvasRaw){
+  const fg=parseColor(fgRaw),bg=parseColor(bgRaw),cv=parseColor(canvasRaw)||[255,255,255,1];
+  if(!fg||!bg) return '';
+  const bgFlat=over(bgRaw,canvasRaw);
+  const fgFlat=over(fgRaw,bgFlat);
+  return ratio(fgFlat,bgFlat).toFixed(1)+':1';
+}
+function systemContextFor(d){
+  const brandInk=readable(ink(d.brand),d.brand);
+  const shadows=(d.components||[]).map(c=>c.shadow).filter(s=>s&&s!=='none');
+  const paddings=[...new Set((d.components||[]).map(c=>c.padding).filter(Boolean))].slice(0,6);
+  const disp=displayType(d), body=bodyType(d);
+  return {
+    onBrandInk: brandInk,
+    textContrast: contrastNote(d.text,d.canvas,d.canvas),
+    brandContrast: contrastNote(brandInk,d.brand,d.canvas),
+    elevation: shadows.length
+      ? 'shadow-layered ('+shadows[0]+') with hairline borders'
+      : 'flat surface separation ('+d.canvas+' -> '+d.surface+') + 1px border ('+d.border+')',
+    paddings,
+    displayFont: disp.fontFamily||cleanFontLabel(disp.fontFamily),
+    bodyFont: body.fontFamily||cleanFontLabel(body.fontFamily)
+  };
+}
 function agentJsonFor(d){
+  const ctx=systemContextFor(d);
   return {
     slug: d.slug,
     name: d.name,
     org: d.org || undefined,
+    category: d.category || undefined,
     theme: d.theme,
     provenance: d.provenance,
     license: d.license,
+    homepage: d.homepage || undefined,
+    repo: d.repo || undefined,
+    package: d.package || undefined,
+    frameworks: d.frameworks && d.frameworks.length ? d.frameworks : undefined,
+    stars: d.stars || undefined,
+    npmDownloads: d.npmDownloads || undefined,
+    summary: d.style || undefined,
     surfaces: {
       canvas: d.canvas,
       surface: d.surface,
       text: d.text,
       muted: d.muted,
       brand: d.brand,
+      onBrandInk: ctx.onBrandInk,
+      textCanvasContrast: ctx.textContrast || undefined,
+      brandInkContrast: ctx.brandContrast || undefined,
       border: d.border,
       radius: d.radius
     },
+    elevation: ctx.elevation,
+    typographySummary: { displayFont: ctx.displayFont, bodyFont: ctx.bodyFont },
+    rounded: d.rounded || undefined,
+    spacing: d.spacing || undefined,
+    paddings: ctx.paddings,
     colors: Object.fromEntries((d.palette||[]).map(c=>[c.name,c.value])),
     typography: Object.fromEntries((d.type||[]).map(t=>[t.name,{
       fontFamily: t.fontFamily,
@@ -1045,36 +1086,67 @@ function agentJsonFor(d){
   };
 }
 function agentPromptFor(d){
+  const ctx=systemContextFor(d);
+  const fws=(d.frameworks||[]).join(', ');
+  const radii=Object.entries(d.rounded||{});
+  const spacing=Object.entries(d.spacing||{});
   const lines=[
-    'Build UI following the **'+d.name+'** design system (`'+d.slug+'`) using ONLY the verified tokens below.',
+    'Apply the **'+d.name+'** design system (`'+d.slug+'`) verbatim using ONLY the verified tokens and architectural guidelines below.',
     '',
-    '## Identity & Surfaces',
-    '- Theme: '+d.theme+' ('+d.provenance+', '+d.license+' license)',
-    '- Canvas: `'+d.canvas+'` \u00b7 Surface: `'+d.surface+'` \u00b7 Text: `'+d.text+'` \u00b7 Muted: `'+d.muted+'` \u00b7 Brand: `'+d.brand+'` \u00b7 Border: `'+d.border+'` \u00b7 Radius: `'+d.radius+'`',
+    '## Identity & Architecture Summary',
+    d.org?'- Organization: '+d.org+(d.category&&d.category!==d.org?' \u00b7 Category: '+d.category:''):null,
+    '- Theme Polarity: '+d.theme+' ('+d.provenance+', '+d.license+' license)',
+    d.homepage?'- Homepage: '+d.homepage:null,
+    d.repo?'- Repository: '+d.repo:null,
+    d.package?'- Package: `'+d.package+'`'+(fws?' \u00b7 Frameworks: '+fws:''):(fws?'- Frameworks: '+fws:null),
+    d.style?'- Summary: '+d.style:null,
+    '',
+    '## Surfaces, Contrast & Elevation',
+    '- Canvas (`canvas`): `'+d.canvas+'`',
+    '- Surface (`surface`): `'+d.surface+'`',
+    '- Primary Ink (`text`): `'+d.text+'`'+(ctx.textContrast?' ('+ctx.textContrast+' contrast on canvas)':''),
+    '- Muted Ink (`muted`): `'+d.muted+'`',
+    '- Brand Accent (`brand`): `'+d.brand+'` (recommended label ink: `'+ctx.onBrandInk+'`'+(ctx.brandContrast?', '+ctx.brandContrast:'')+')',
+    '- Structural Border (`border`): `'+d.border+'`',
+    '- Base Corner Radius (`radius`): `'+d.radius+'`',
+    '- Elevation Model: '+ctx.elevation,
     '',
     '## Colors ('+(d.palette||[]).length+')',
     ...(d.palette||[]).map(c=>'- `'+c.name+'`: `'+c.value+'`')
-  ];
+  ].filter(v=>v!==null);
   if((d.type||[]).length){
-    lines.push('','## Typography ('+d.type.length+')');
+    lines.push('','## Typography ('+d.type.length+')','- Display Voice: `'+ctx.displayFont+'` \u00b7 Body Voice: `'+ctx.bodyFont+'`');
     d.type.forEach(t=>{
-      const spec=[t.fontFamily&&'font: '+t.fontFamily,t.fontSize&&'size: '+t.fontSize,t.fontWeight&&'weight: '+t.fontWeight,t.lineHeight&&'line-height: '+t.lineHeight,t.letterSpacing&&'tracking: '+t.letterSpacing].filter(Boolean).join(' \u00b7 ');
+      const spec=[t.fontFamily&&'font: '+t.fontFamily,t.fontSize&&'size: '+t.fontSize,t.fontWeight!==undefined&&'weight: '+t.fontWeight,t.lineHeight!==undefined&&'line-height: '+t.lineHeight,t.letterSpacing!==undefined&&'tracking: '+t.letterSpacing].filter(Boolean).join(' \u00b7 ');
       lines.push('- `'+t.name+'`: '+spec);
     });
+  }
+  if(radii.length||spacing.length||ctx.paddings.length){
+    lines.push('','## Geometry & Spacing');
+    radii.forEach(([k,v])=>lines.push('- radius.`'+k+'`: `'+v+'`'));
+    spacing.forEach(([k,v])=>lines.push('- spacing.`'+k+'`: `'+v+'`'));
+    if(!spacing.length&&ctx.paddings.length) lines.push('- Component paddings observed: '+ctx.paddings.map(p=>'`'+p+'`').join(', '));
   }
   if((d.components||[]).length){
     lines.push('','## Components ('+d.components.length+')');
     d.components.forEach(c=>{
-      const spec=[c.backgroundColor&&'bg='+c.backgroundColor,c.textColor&&'text='+c.textColor,c.border&&c.border!=='none'&&'border='+c.border,c.rounded&&'radius='+c.rounded,c.padding&&'padding='+c.padding,c.shadow&&'shadow='+c.shadow].filter(Boolean).join(', ');
+      const cr=c.backgroundColor&&c.textColor&&c.backgroundColor!=='transparent'?contrastNote(c.textColor,c.backgroundColor,d.canvas):'';
+      const spec=[c.backgroundColor&&'bg='+c.backgroundColor,c.textColor&&'text='+c.textColor,cr&&'contrast='+cr,c.border&&c.border!=='none'&&'border='+c.border,c.rounded&&'radius='+c.rounded,c.padding&&'padding='+c.padding,c.shadow&&'shadow='+c.shadow].filter(Boolean).join(', ');
       lines.push('- `'+c.key+'`: '+(spec||'inherits palette'));
     });
   }
   if(d.overview||d.dos){
-    lines.push('','## Guidelines');
+    lines.push('','## Visual Language & Guidelines');
     if(d.overview) lines.push(d.overview);
     if(d.dos) lines.push(d.dos);
   }
-  lines.push('','## Implementation Rules','- Use these exact colors, typography steps, and component styles without inventing off-system tokens.','- Maintain >= 4.5:1 contrast for body and button labels on their resolved backgrounds.');
+  lines.push(
+    '','## Agent Implementation Contract',
+    '- Preserve `'+d.canvas+'` ('+d.theme+') base polarity and `'+d.text+'` / `'+d.muted+'` text hierarchy across all views.',
+    '- Reserve `'+d.brand+'` (with `'+ctx.onBrandInk+'` text) for primary CTAs, active controls, and keyboard focus states.',
+    '- Enforce `'+d.radius+'` baseline corner geometry (and exact per-component radii listed above) instead of arbitrary rounding.',
+    '- Use ONLY documented colors, fonts, shadows, and paddings from this specification; keep every text/control pair >= 4.5:1 WCAG AA contrast.'
+  );
   return lines.join('\n');
 }
 
@@ -1158,7 +1230,7 @@ function detailHtml(d){
     return '<div class="type-row"><div class="type-spec"><b>'+esc(t.name)+'</b>'+
       (t.fontSize?pxOf(t)+'px ':'')+esc(t.fontWeight||'')+(t.lineHeight?' / '+esc(t.lineHeight):'')+'</div>'+
       '<div class="type-demo" style="font-family:'+fontStack(t.fontFamily)+';font-size:'+size+'px;font-weight:'+
-      safeCss(t.fontWeight||400)+';letter-spacing:'+safeCss(t.letterSpacing||'normal')+';line-height:1.2">The quick brown fox jumps over the lazy dog</div></div>';
+      safeCss(t.fontWeight||400)+';letter-spacing:'+safeCss(scaledTracking(t))+';line-height:1.2">The quick brown fox jumps over the lazy dog</div></div>';
   }).join('');
 
   function inlineMd(s){
@@ -1170,22 +1242,26 @@ function detailHtml(d){
     if(!raw) return '';
     const lines=String(raw).split(/\r?\n/);
     const out=[];
-    let inList=false;
+    let listTag=null;
+    const closeList=()=>{ if(listTag){ out.push('</'+listTag+'>'); listTag=null; } };
     for(const ln of lines){
       const t=ln.trim();
-      if(!t){ if(inList){ out.push('</ul>'); inList=false; } continue; }
+      if(!t){ closeList(); continue; }
       if(/^#{2,4}\s+/.test(t)){
-        if(inList){ out.push('</ul>'); inList=false; }
+        closeList();
         out.push('<h4>'+inlineMd(t.replace(/^#{2,4}\s+/,''))+'</h4>');
       }else if(/^[-*]\s+/.test(t)){
-        if(!inList){ out.push('<ul>'); inList=true; }
+        if(listTag!=='ul'){ closeList(); out.push('<ul>'); listTag='ul'; }
         out.push('<li>'+inlineMd(t.replace(/^[-*]\s+/,''))+'</li>');
+      }else if(/^\d+\.\s+/.test(t)){
+        if(listTag!=='ol'){ closeList(); out.push('<ol>'); listTag='ol'; }
+        out.push('<li>'+inlineMd(t.replace(/^\d+\.\s+/,''))+'</li>');
       }else{
-        if(inList){ out.push('</ul>'); inList=false; }
+        closeList();
         out.push('<p>'+inlineMd(t)+'</p>');
       }
     }
-    if(inList) out.push('</ul>');
+    closeList();
     return out.join('');
   }
   const notes=[renderMd(d.overview),renderMd(d.dos)].filter(Boolean).join('');
@@ -1217,10 +1293,12 @@ function detailHtml(d){
         '<div class="sheet" style="background:'+safeCss(d.canvas)+';color:'+safeCss(readable(d.text,d.canvas))+'">'+types+'</div></div>'
       : '')+
     (notes?'<div class="sec notes"><div class="sec-h"><h2>Visual Language &amp; Guidelines</h2><em>architecture &amp; usage</em></div>'+notes+'</div>':'')+
-    '<div class="sec"><div class="sec-h"><h2>CLI &amp; Agent Prompt</h2><em>install or copy full specification</em></div>'+
+    '<div class="sec"><div class="sec-h"><h2>CLI &amp; Agent Prompt</h2><em>install, inspect, or copy complete system specification</em></div>'+
       '<div class="cmd-stack">'+
-        '<div class="cmd"><code>node bin/sourcebook.mjs add '+esc(d.slug)+' --framework prompt</code>'+
-        '<button class="pill-btn" data-copy="node bin/sourcebook.mjs add '+esc(d.slug)+' --framework prompt">'+ICONS.copy+'Copy CLI</button></div>'+
+        '<div class="cmd"><code>npx sourcebook add '+esc(d.slug)+' --framework prompt --print</code>'+
+        '<button class="pill-btn" data-copy="npx sourcebook add '+esc(d.slug)+' --framework prompt --print">'+ICONS.copy+'Copy CLI</button></div>'+
+        '<div class="cmd"><code>npx sourcebook info '+esc(d.slug)+'</code>'+
+        '<button class="pill-btn" data-copy="npx sourcebook info '+esc(d.slug)+'">'+ICONS.copy+'Copy Info</button></div>'+
         '<details class="prompt-box"><summary>Inspect full agent prompt ('+d.palette.length+' colors \u00b7 '+d.type.length+' type \u00b7 '+d.components.length+' components)</summary>'+
           '<pre>'+esc(agentPromptFor(d))+'</pre>'+
         '</details>'+

@@ -99,6 +99,13 @@ typography:
     fontFamily: "FaktPro, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
   font-code:
     fontFamily: "\"Roboto Mono\", monospace"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#44C7F4"
@@ -146,21 +153,68 @@ components:
 
 ## Overview
 
-Auth0 Cosmos — tokens imported from @auth0/cosmos.
+**Auth0 Cosmos** is a light-first design system anchored on `#f9f9f9` canvas surfaces with `#212121` primary ink (15.3:1 contrast) and `#44C7F4` brand accent.
 
-Tokens were read from `@auth0/cosmos@0.38.1`, not from a marketing site: 91 colour tokens and 1 type tokens.
+Typography centers cleanly on `FaktPro` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Auth0**. Source: published token package, repo https://github.com/auth0/cosmos, package `@auth0/cosmos`, frameworks: react. Inventory: **91** colors, **2** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f9f9f9` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f9f9f9` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#212121` — body copy and primary headings (15.3:1 on canvas).
+- **Muted Ink (`muted`)**: `#757575` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#44C7F4` (1.9:1 vs canvas; pair with `#0b0b0c` foreground ink for 10.0:1 contrast).
+- **Structural Border (`border`)**: `#CCCCCC` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `input-border-focus` (`#0a84ae`), `primary-background` (`#44C7F4`), `primary-background-hover` (`#13B7ED`), `primary-background-focus` (`#13B7ED`), `primary-background-active` (`#11A7D9`), `primary-border` (`#44C7F4`).
+- **Neutral Ramp**: `text-default` (`#212121`), `text-inputs` (`#555`), `text-secondary` (`#757575`), `text-subtle` (`#BDBDBD`), `form-background` (`#f9f9f9`), `input-background` (`#FFF`).
+- **Semantic States**: success: `success-background` (`#4CD964`) · danger: `text-error` (`#FF0000`) · warning: `warning-background` (`#FFF6CB`) · info: `link-default` (`#0a84ae`).
 
 ## Typography
 
-Families declared in the source: `"Roboto Mono"`.
+- **Primary / Display Voice**: `FaktPro, "Helvetica Neue", Helvetica, Arial, sans-serif` (top step `font-sans`: 16px, weight 600).
+- **Body & UI Controls**: `FaktPro, "Helvetica Neue", Helvetica, Arial, sans-serif` (`font-sans`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"Roboto Mono", monospace` (`font-code`: 16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#FFF) canvas paired with `#FFF` component surfaces and `#212121` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#44C7F4` with `#212121` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `FaktPro` across 2 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#CCCCCC` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f9f9f9` -> `#f9f9f9`) and `1px solid #CCCCCC` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#44C7F4` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#44C7F4`, ink `#212121`, (8.2:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#212121`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#FF0000`, ink `#000000`, (5.3:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#44C7F4`, ink `#212121`, (8.2:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#4CD964`, ink `#212121`, (8.8:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#f9f9f9` (light) with `#212121` primary text and `#757575` secondary labels.
+- Use `#44C7F4` with `#0b0b0c` text (10.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `FaktPro` headings with `FaktPro` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f9f9f9` surface shifts and `#CCCCCC` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

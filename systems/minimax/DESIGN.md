@@ -101,6 +101,12 @@ typography:
     fontSize: 10px
     fontWeight: 400
     lineHeight: 1.5
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  nav: 8px
+  default: 8px
 components:
   button-pill-primary-dark:
     backgroundColor: "#181e25"

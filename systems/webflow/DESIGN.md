@@ -20,7 +20,7 @@ colors:
   neutral-mid-gray: "#5a5a5a"
   neutral-border-gray: "#d8d8d8"
   neutral-border-hover: "#898989"
-  primary: "#080808"
+  primary: "#146ef5"
 typography:
   display-xl:
     fontFamily: "\"WF Visual Sans Variable\", Arial, sans-serif"
@@ -72,10 +72,17 @@ typography:
     fontSize: 12px
     fontWeight: 500
     lineHeight: 1.3
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
-    backgroundColor: "#080808"
-    textColor: "#f7f7f8"
+    backgroundColor: "#146ef5"
+    textColor: "#ffffff"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
@@ -99,8 +106,8 @@ components:
     rounded: 12px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#080808"
-    textColor: "#f7f7f8"
+    backgroundColor: "#146ef5"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:

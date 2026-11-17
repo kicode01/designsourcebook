@@ -121,6 +121,11 @@ typography:
     fontFamily: "\"Nord Custom\", -apple-system, system-ui, sans-serif"
   n-button-font-size:
     fontSize: 16px
+rounded:
+  card: 5px
+  input: 3px
+  button: 5px
+  default: 5px
 components:
   panel:
     backgroundColor: "#fff"
@@ -158,25 +163,69 @@ components:
 
 ## Overview
 
-Nordhealth — read from the rendered page in a browser, not from published tokens.
+**Nordhealth** is a light-first design system anchored on `#fcfcfc` canvas surfaces with `#0b0b0c` primary ink (19.2:1 contrast) and `#3559c7` brand accent.
 
-Tokens were read from https://nordhealth.design/, not from a published token package: 91 colour tokens and 13 type tokens.
+Typography centers cleanly on `Nordhealth Sans` (36px display down to 16px body), unified by `5px` base corner radius and stepped `#fcfcfc` -> `#fff` surface layering.
+
+Source: live stylesheet extraction (https://nordhealth.design/), repo https://github.com/nordhealth/nord-iot, package `@nordhealth/tokens`, frameworks: web-components, css. Inventory: **91** colors, **13** typography steps, and **9** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fcfcfc` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.2:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3559c7` (6.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.8:1 contrast).
+- **Structural Border (`border`)**: `#d7dce0` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `n-nav-item-background-active` (`#0ea5e9`), `n-nav-item-background-expanded` (`#e0f2fe`), `n-nav-item-background-hover` (`#e0f2fe`), `n-color-accent` (`#3559c7`), `n-color-accent-secondary` (`#3559c7`), `n-color-text` (`#0c1a3d`).
+- **Neutral Ramp**: `n-color-text-weak` (`#36434a`), `n-color-text-weakest` (`#b2babf`), `n-color-text-on-accent` (`#fff`), `n-color-text-neutral` (`#55595d`), `n-color-text-neutral-strong` (`#11181c`), `n-color-nav-surface` (`#fff`).
+- **Semantic States**: success: `n-color-text-success` (`#117627`) · danger: `n-color-text-error` (`#d24023`) · warning: `n-color-text-warning` (`#946900`) · info: `n-color-text-link` (`#3559c7`).
 
 ## Typography
 
-Families declared in the source: `"Nordhealth Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`, `"Nordhealth Mono", monospace, monospace`, `"Nord Custom", -apple-system, system-ui, sans-serif`.
+- **Primary / Display Voice**: `"Nordhealth Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"` (top step `n-font-size-xxxl`: 2.25rem, weight 600).
+- **Body & UI Controls**: `"Nordhealth Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"` (`n-font-size-l`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `"Nordhealth Mono", monospace, monospace` (`n-kbd-font-size`: 2rem).
+- **Scale Steps (13)**: `n-font-size-xxxl` (2.25rem), `n-kbd-font-size` (2rem), `n-font-size-xxl` (1.5rem), `n-font-size-xl` (1.25rem), `n-font-size-l` (1rem), `n-font-family` (16px), `n-font-family-code` (16px), `n-font-family-custom` (16px).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `10px 18px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#d7dce0` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fcfcfc` -> `#fff`) and `1px solid #d7dce0` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3559c7` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `5px` (Inputs `3px` · Cards `5px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `5px` container.
 
 ## Components
 
-8 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`panel` (card)**: bg `#fff`, radius `5px`, border `1px solid #d8dee4`.
+- **`label` (badge)**: ink `rgb(12, 26, 61)`.
+- **`input` (input)**: bg `rgb(255, 255, 255)`, ink `rgb(12, 26, 61)`, (17.1:1), radius `3px`, border `1px solid rgb(188, 197, 204)`.
+- **`n-color-button` (button)**: bg `rgb(255, 255, 255)`.
+- **`n-color-text-link` (nav)**: ink `rgb(53, 89, 199)`.
+- **`n-color-nav-heading` (nav)**: ink `rgb(143, 161, 170)`.
+- **`n-color-nav-surface-2` (nav)**: bg `rgb(255, 255, 255)`.
+- **`n-color-nav-selected-3` (input)**: bg `rgb(233, 234, 237)`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fcfcfc) canvas paired with `#fcfcfc` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3559c7` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Nordhealth Sans` across 13 type steps.
-- **Component Geometry**: Buttons (`5px`), cards (`9px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fcfcfc` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#3559c7` with `#f7f7f8` text (5.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Nordhealth Sans` headings with `Nordhealth Sans` body copy using documented weights and scale steps.
+- Apply `5px` base geometry across inputs and buttons (5px on outer containers).
+- Separate containers via `#fff` surface shifts and `#d7dce0` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `5px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

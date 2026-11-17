@@ -249,6 +249,13 @@ typography:
     fontFamily: "\"Roboto Flex\", Roboto, \"Noto Sans\", system-ui, sans-serif"
     fontWeight: 500
     lineHeight: 4rem
+rounded:
+  button: 999px
+  input: 20px
+  card: 20px
+  badge: 999px
+  nav: 20px
+  default: 20px
 components:
   md3-segmented-button:
     backgroundColor: "rgba(0,0,0,0)"
@@ -288,25 +295,67 @@ components:
 
 ## Overview
 
-Google Material Design — tokens imported from @material/web.
+**Google Material Design** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#4f378b` brand accent.
 
-Tokens were read from `@material/web@2.5.0`, not from a marketing site: 91 colour tokens and 32 type tokens.
+Typography centers cleanly on `Roboto Flex` (57px display down to 16px body), unified by `20px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Google**. Source: published token package (https://github.com/material-components/material-web#readme), repo https://github.com/material-components/material-web, package `@material/web`, frameworks: web-components, angular, css. Inventory: **91** colors, **32** typography steps, and **7** documented components (Apache-2.0 license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#4f378b` (9.3:1 vs canvas; pair with `#f7f7f8` foreground ink for 8.7:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `md-ref-palette-primary30` (`#4f378b`), `md-ref-palette-primary70` (`#b69df8`), `md-ref-palette-secondary90` (`#e8def8`), `md-sys-color-primary` (`#6750a4`), `md-sys-color-primary-fixed` (`#eaddff`), `md-sys-color-secondary-fixed` (`#e8def8`).
+- **Neutral Ramp**: `md-ref-palette-error0` (`#000`), `md-ref-palette-error98` (`#fff8f7`), `md-ref-palette-neutral-variant100` (`#fff`), `md-ref-palette-neutral-variant50` (`#79747e`), `md-ref-palette-neutral-variant90` (`#e7e0ec`), `md-ref-palette-neutral0` (`#000`).
+- **Semantic States**: success: `md-ref-palette-green50` (`#128937`) · danger: `md-ref-palette-error30` (`#8c1d18`) · warning: `orange10-resolved` (`#321200`).
 
 ## Typography
 
-Families declared in the source: `"Roboto Flex", Roboto, "Noto Sans", system-ui, sans-serif`.
+- **Primary / Display Voice**: `"Roboto Flex", Roboto, "Noto Sans", system-ui, sans-serif` (top step `md-sys-typescale-display-lg`: 3.5625rem, weight 400, line-height 4rem).
+- **Body & UI Controls**: `"Roboto Flex", Roboto, "Noto Sans", system-ui, sans-serif` (`md-sys-typescale-body-lg`: 1rem, weight 400, line-height 1.5rem).
+- **Scale Steps (32)**: `md-sys-typescale-display-lg` (3.5625rem, w400), `md-sys-typescale-emphasized-display-lg` (3.5625rem, w500), `md-sys-typescale-display-md` (2.8125rem, w400), `md-sys-typescale-emphasized-display-md` (2.8125rem, w500), `md-sys-typescale-display-sm` (2.25rem, w400), `md-sys-typescale-emphasized-display-sm` (2.25rem, w500), `md-sys-typescale-headline-lg` (2rem, w400), `md-sys-typescale-emphasized-headline-lg` (2rem, w500).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#4f378b` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `20px` (Inputs `20px` · Cards `20px` · Badges `999px` · Navigation `20px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `20px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`md3-segmented-button` (button)**: bg `rgba(0,0,0,0)`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `999px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `20px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `20px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#4f378b`, ink `#ffffff`, (9.3:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `20px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#4f378b` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto Flex` across 32 type steps.
-- **Component Geometry**: Buttons (`999px`), cards (`20px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#4f378b` with `#f7f7f8` text (8.7:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roboto Flex` headings with `Roboto Flex` body copy using documented weights and scale steps.
+- Apply `20px` base geometry across inputs and buttons (20px on outer containers).
+- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `20px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

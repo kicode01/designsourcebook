@@ -106,6 +106,13 @@ typography:
     lineHeight: 1.15
   font-size:
     fontSize: "90%"
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "#1677ff"
@@ -153,21 +160,68 @@ components:
 
 ## Overview
 
-Ant Financial Ant Design — tokens imported from antd.
+**Ant Design** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#1677ff` brand accent.
 
-Tokens were read from `antd@6.7.1`, not from a marketing site: 91 colour tokens and 5 type tokens.
+Typography centers cleanly on `System UI` (19px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `#f5f5f5` surface layering.
+
+Maintained by **Ant Financial**. Source: published token package (https://ant.design), repo https://github.com/ant-design/ant-design, package `antd`, frameworks: react, vue, angular. Inventory: **91** colors, **5** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f5f5f5` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#1677ff` (4.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.8:1 contrast).
+- **Structural Border (`border`)**: `#d9d9d9` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `finish-icon-border-color` (`#1677ff`), `dot-active-border-color` (`#91caff`), `hover-border-color` (`#4096ff`), `active-border-color` (`#1677ff`), `color-item-text-hover-horizontal` (`#1677ff`), `color-item-text-selected` (`#1677ff`).
+- **Neutral Ramp**: `primary-next-btn-hover-bg` (`rgb(240,240,240)`), `solid-text-color` (`#fff`), `border-color` (`#f0f0f0`), `handle-color-disabled` (`#bfbfbf`), `dot-border-color` (`#f0f0f0`), `item-link-bg` (`#ffffff`).
+- **Semantic States**: success: `color-success` (`#52c41a`) · danger: `color-danger-item-text` (`#ff4d4f`) · warning: `color-warning` (`#faad14`) · info: `color-info` (`#1677ff`).
 
 ## Typography
 
-Families declared in the source: `-apple-system, BlinkMacSystemFont`, `sans-serif`.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont` (top step `circle-icon-font-size`: 1.1666666666666667em, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont` (`circle-text-font-size`: 1em, weight 400).
+- **Scale Steps (5)**: `circle-icon-font-size` (1.1666666666666667em), `circle-text-font-size` (1em), `font-family` (16px), `html` (16px), `font-size` (90%).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1677ff` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 5 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#d9d9d9` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f5f5`) and `1px solid #d9d9d9` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1677ff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#1677ff`, ink `#0b0b0c`, (4.8:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ff4d4f`, ink `#0b0b0c`, (6.0:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#1677ff`, ink `#0b0b0c`, (4.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#52c41a`, ink `#0b0b0c`, (8.7:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#1677ff` with `#f7f7f8` text (3.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#f5f5f5` surface shifts and `#d9d9d9` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

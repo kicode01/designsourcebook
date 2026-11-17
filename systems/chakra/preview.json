@@ -3,7 +3,7 @@
   "surface": "#f4f4f5",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#e6f2ff",
+  "brand": "#0c5d56",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "6px",
   "ink": "#0b0b0c",
@@ -370,7 +370,7 @@
     },
     {
       "name": "primary",
-      "value": "#e6f2ff"
+      "value": "#0c5d56"
     }
   ],
   "type": [
@@ -400,8 +400,8 @@
     {
       "key": "button-primary",
       "kind": "button",
-      "backgroundColor": "#e6f2ff",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#0c5d56",
+      "textColor": "#ffffff",
       "rounded": "6px",
       "padding": "10px 18px"
     },
@@ -440,8 +440,8 @@
     {
       "key": "badge-brand",
       "kind": "badge",
-      "backgroundColor": "#e6f2ff",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#0c5d56",
+      "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
     },
@@ -462,6 +462,6 @@
       "padding": "10px 16px"
     }
   ],
-  "overview": "Chakra UI — Crisp light (#fafafa) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry",
-  "dos": "- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#e6f2ff` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.\n- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+  "overview": "**Chakra UI** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#0d9488` brand accent.\n\nTypography centers cleanly on `System UI` (16px display down to 16px body), unified by `6px` base corner radius and stepped `#fafafa` -> `#f4f4f5` surface layering.\n\nSource: published token package (https://github.com/chakra-ui/chakra-ui), repo https://github.com/chakra-ui/chakra-ui, package `@chakra-ui/react`, frameworks: react, vue. Inventory: **91** colors, **4** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#f4f4f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#f4f4f5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d9488` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0d9488` with `#f7f7f8` text (3.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `6px` base geometry across inputs and buttons (10px on outer containers).\n- Separate containers via `#f4f4f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `6px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

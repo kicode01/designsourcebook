@@ -86,6 +86,13 @@ typography:
     fontFamily: "\"IBM Plex Serif\", Georgia, Times, serif"
   html:
     fontSize: "100%"
+rounded:
+  button: 0px
+  input: 0px
+  card: 0px
+  badge: 999px
+  nav: 0px
+  default: 0px
 components:
   button-primary:
     backgroundColor: "#002d9c"
@@ -133,21 +140,69 @@ components:
 
 ## Overview
 
-IBM Carbon — tokens imported from @carbon/themes.
+**Carbon** is a light-first design system anchored on `#ffffff` canvas surfaces with `#161616` primary ink (18.1:1 contrast) and `#002d9c` brand accent.
 
-Tokens were read from `@carbon/themes@11.85.0`, not from a marketing site: 74 colour tokens and 4 type tokens.
+Typography centers cleanly on `IBM Plex Mono` (16px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#ffffff` -> `#f4f4f4` surface layering.
+
+Maintained by **IBM**. Source: published token package, repo https://github.com/carbon-design-system/carbon, package `@carbon/themes`, frameworks: react, web-components, angular, vue, css, svelte. Inventory: **74** colors, **4** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-74 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f4f4f4` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#161616` — body copy and primary headings (18.1:1 on canvas).
+- **Muted Ink (`muted`)**: `#161616` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#002d9c` (11.3:1 vs canvas; pair with `#f7f7f8` foreground ink for 10.6:1 contrast).
+- **Structural Border (`border`)**: `#c6c6c6` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `ai-skeleton-background` (`#d0e2ff`), `active-primary` (`#002d9c`), `ai-border-end-3` (`#78a9ff`), `ai-skeleton-element-background-3` (`#4589ff`), `border-interactive-7` (`#0f62fe`), `chat-button-text-hover-3` (`#0043ce`).
+- **Neutral Ramp**: `ai-aura-hover-background` (`#edf5ff`), `border-disabled` (`#c6c6c6`), `border-subtle00` (`#c6c6c6`), `border-subtle-selected03` (`#c6c6c6`), `chat-bubble-user-text` (`#161616`), `chat-prompt-border-start` (`#f4f4f4`).
+- **Semantic States**: success: `support-success-inverse` (`#42be65`) · danger: `support-error-7` (`#da1e28`) · warning: `support-warning-7` (`#f1c21b`) · info: `link-inverse-hover` (`#a6c8ff`).
 
 ## Typography
 
-Families declared in the source: `"IBM Plex Mono", Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace`, `"IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", sans-serif`, `"IBM Plex Serif", Georgia, Times, serif`.
+- **Primary / Display Voice**: `"IBM Plex Mono", Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace` (top step `mono`: 16px, weight 600).
+- **Body & UI Controls**: `"IBM Plex Mono", Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace` (`mono`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"IBM Plex Mono", Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace` (`mono`: 16px).
+- **Scale Steps (4)**: `mono` (16px), `sans` (16px), `serif` (16px), `html` (100%).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#161616` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#002d9c` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `IBM Plex Mono` across 4 type steps.
-- **Component Geometry**: Buttons (`0px`), cards (`0px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f4f4f4` cards; separate sibling sections using `#c6c6c6` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f4f4f4`) and `1px solid #c6c6c6` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#002d9c` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0px` (Buttons `0px` · Inputs `0px` · Cards `0px` · Badges `999px` · Navigation `0px`).
+- **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+
+## Components
+
+- **`button-primary` (button)**: bg `#002d9c`, ink `#ffffff`, (11.3:1), radius `0px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#161616`, radius `0px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#da1e28`, ink `#ffffff`, (5.0:1), radius `0px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#002d9c`, ink `#ffffff`, (11.3:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#42be65`, ink `#161616`, (7.6:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#161616` primary text and `#161616` secondary labels.
+- Use `#002d9c` with `#f7f7f8` text (10.6:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `IBM Plex Mono` headings with `IBM Plex Mono` body copy using documented weights and scale steps.
+- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.
+- Separate containers via `#f4f4f4` surface shifts and `#c6c6c6` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

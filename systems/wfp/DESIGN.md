@@ -171,6 +171,13 @@ typography:
   h1:
     fontSize: 4rem
     fontWeight: 700
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#007dbc"
@@ -218,21 +225,68 @@ components:
 
 ## Overview
 
-World Food Programme WFP UI Kit — tokens imported from @wfp/ui.
+**WFP UI Kit** is a light-first design system anchored on `#ffffff` canvas surfaces with `#001f2f` primary ink (17.0:1 contrast) and `#007dbc` brand accent.
 
-Tokens were read from `@wfp/ui@1.22.5`, not from a marketing site: 91 colour tokens and 29 type tokens.
+Typography centers cleanly on `Open Sans` (64px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f0f3f6` surface layering.
+
+Maintained by **World Food Programme**. Source: published token package, repo https://github.com/wfp/designsystem, package `@wfp/ui`, frameworks: react, css. Inventory: **91** colors, **29** typography steps, and **8** documented components (Apache-2 license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f0f3f6` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#001f2f` — body copy and primary headings (17.0:1 on canvas).
+- **Muted Ink (`muted`)**: `#5a6872` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#007dbc` (4.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.2:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #001f2f 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-dark-text-01` (`#031c2d`), `accent-02` (`#f7b825`), `brand-01` (`#007dbc`), `hover-primary` (`#005e8d`), `accent-01` (`#f7b825`), `text-01` (`#001f2f`).
+- **Neutral Ramp**: `text-02` (`#5a6872`), `text-03` (`#dfe6eb`), `disabled-01` (`#f9fbfc`), `disabled-02` (`#dfe6eb`), `disabled` (`#f9fbfc`), `color-gray-1` (`#dfe3e6`).
+- **Semantic States**: success: `color-dark-green` (`#336d37`) · danger: `red-hex` (`#c5192d`) · warning: `yellow-hex` (`#fcc30b`).
 
 ## Typography
 
-Families declared in the source: `"Open Sans", sans-serif`.
+- **Primary / Display Voice**: `"Open Sans", sans-serif` (top step `h1`: 4rem, weight 700).
+- **Body & UI Controls**: `"Open Sans", sans-serif` (`base-font-size`: 16px, weight 400).
+- **Scale Steps (29)**: `h1` (4rem, w700), `wfp-story-title` (3.375rem, w300), `wfp-story-content-title` (2.25rem, w300), `wfp-photo-card-info-title` (1.75rem), `wfp-modal-header-heading` (1.75rem), `wfp-secondary-navigation-title` (1.75rem, w400), `wfp-form-group-title` (1.25rem, w600), `calendar-month-caption` (18px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#001f2f` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#007dbc` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 29 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f0f3f6` cards; separate sibling sections using `color-mix(in srgb, #001f2f 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f0f3f6`) and `1px solid color-mix(in srgb, #001f2f 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#007dbc` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#007dbc`, ink `#ffffff`, (4.5:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#001f2f`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#007dbc`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#001f2f` primary text and `#5a6872` secondary labels.
+- Use `#007dbc` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f0f3f6` surface shifts and `color-mix(in srgb, #001f2f 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -118,6 +118,13 @@ typography:
     fontSize: 17px
     fontWeight: 400
     lineHeight: 1.5
+rounded:
+  button: 100px
+  input: 8px
+  card: 8px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button:
     backgroundColor: "#ffffff"
@@ -162,25 +169,69 @@ components:
 
 ## Overview
 
-British Gas Nucleus — read from the rendered page in a browser, not from published tokens.
+**British Gas Nucleus** is a light-first design system anchored on `hsl(0, 0%, 100%)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `hsl(224, 100%, 60%)` brand accent.
 
-Tokens were read from https://britishgas.design/, not from a published token package: 91 colour tokens and 5 type tokens.
+Display headlines pair `Roboto` with `menlo` body copy (36px display down to 17px body), unified by `8px` base corner radius and subtle shadow elevation.
+
+Maintained by **British Gas**. Source: live stylesheet extraction (https://britishgas.design/), frameworks: css. Inventory: **91** colors, **5** typography steps, and **9** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `hsl(0, 0%, 100%)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `hsl(224, 20%, 94%)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `hsl(224, 100%, 60%)` (4.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.3:1 contrast).
+- **Structural Border (`border`)**: `#eeeeee` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `sl-color-accent-low` (`hsl(224, 54%, 20%)`), `sl-color-accent` (`hsl(224, 100%, 60%)`), `sl-color-accent-high` (`hsl(224, 100%, 85%)`), `sl-color-text-accent` (`hsl(327, 60%, 54%)`), `sl-color-text` (`hsl(228, 75%, 23%)`), `sl-color-bg-accent` (`hsl(17, 74%, 43%)`).
+- **Neutral Ramp**: `pagefind-ui-primary` (`#393939`), `pagefind-ui-text` (`#393939`), `pagefind-ui-background` (`#ffffff`), `pagefind-ui-border` (`#eeeeee`), `sl-color-text-invert` (`hsl(0, 0%, 100%)`), `astro-code-color-background` (`hsl(202, 21%, 88%)`).
+- **Semantic States**: success: `sl-color-green` (`hsl(101, 90%, 46%)`) · danger: `sl-color-red` (`hsl(339, 90%, 60%)`) · warning: `sl-color-orange` (`hsl(41, 90%, 60%)`) · info: `astro-code-token-link` (`hsl(234, 80%, 30%)`).
 
 ## Typography
 
-Families declared in the source: `Roboto, sans-serif`, `menlo, monospace`.
+- **Primary / Display Voice**: `Roboto, sans-serif` (top step `h1`: 36px, weight 400, line-height 1.17).
+- **Body & UI Controls**: `menlo, monospace` (`body`: 17px, weight 400, line-height 1.5).
+- **Monospace / Technical Labels**: `menlo, monospace` (`body`: 17px).
+- **Scale Steps (5)**: `h1` (36px, w400), `h2` (36px, w400), `h3` (18px, w500), `body` (17px, w400), `header` (16px, w400).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `0px 16px 0px 12px`, `10px 24px 10px 18px`, `0px 56px 0px 43.2px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `hsl(224, 20%, 94%)` cards; separate sibling sections using `#eeeeee` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`rgb(218, 226, 231) 0px 0px 0px 1px`) paired with `#eeeeee` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `hsl(224, 100%, 60%)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `100px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-6 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: bg `#ffffff`, ink `#315a72`, (7.4:1), radius `100px`, padding `0px 16px 0px 12px`, border `1px solid rgb(152, 173, 185)`.
+- **`button-2` (button)**: ink `#315a72`, radius `8px`.
+- **`input` (input)**: ink `#234152`, padding `10px 24px 10px 18px`.
+- **`input-2` (input)**: bg `#ffffff`, ink `#080e12`, (19.4:1), radius `8px`, padding `0px 56px 0px 43.2px`, border `1px solid rgb(152, 173, 185)`.
+- **`card` (card)**: ink `#0f2067`.
+- **`card-2` (card)**: bg `#f3f5f7`, ink `#0f2067`, (13.5:1), radius `8px`.
+- **`badge-brand` (badge)**: bg `hsl(224, 100%, 60%)`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(224, 100%, 60%)` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto` across 5 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `hsl(0, 0%, 100%)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `hsl(224, 100%, 60%)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roboto` headings with `menlo` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `hsl(224, 20%, 94%)` surface shifts and `#eeeeee` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

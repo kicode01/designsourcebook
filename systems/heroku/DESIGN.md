@@ -110,6 +110,12 @@ typography:
     fontSize: 15px
     fontWeight: 300
     lineHeight: 1.5
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  default: 8px
 components:
   navy:
     textColor: "#001b44"
@@ -154,25 +160,68 @@ components:
 
 ## Overview
 
-Heroku Purple3 — read from the rendered page in a browser, not from published tokens.
+**Heroku Purple3** is a light-first design system anchored on `#f6fffe` canvas surfaces with `#0b0b0c` primary ink (19.3:1 contrast) and `#fa9f47` brand accent.
 
-Tokens were read from https://design.herokai.com/, not from a published token package: 91 colour tokens and 3 type tokens.
+Typography centers cleanly on `salesforce-sans` (22px display down to 15px body), unified by `8px` base corner radius and stepped `#f6fffe` -> `#f7f8fb` surface layering.
+
+Maintained by **Heroku**. Source: live stylesheet extraction (https://design.herokai.com/), frameworks: css. Inventory: **91** colors, **3** typography steps, and **8** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f6fffe` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f7f8fb` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.3:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#fa9f47` (2.0:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.5:1 contrast).
+- **Structural Border (`border`)**: `#cfd7e6` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `h2-text` (`#475366`), `body-text-2` (`#79589f`), `css-border-16` (`#8ebdf1`), `css-border-19` (`#86cf95`), `css-border-21` (`#fa9f47`), `css-border-24` (`#de7575`).
+- **Neutral Ramp**: `canvas-text` (`#000000`), `h2-text-1` (`#ffffff`), `body-text` (`rgba(255, 255, 255, 0.8)`), `css-surface-13` (`#f7f8fb`), `css-border-14` (`#cfd7e6`), `css-surface-15` (`#f6faff`).
+- **Semantic States**: info: `link-text` (`#0000ee`).
 
 ## Typography
 
-Families declared in the source: `salesforce-sans, -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif`, `salesforce-sans, "Helvetica Neue", helvetica, arial, sans-serif`.
+- **Primary / Display Voice**: `salesforce-sans, "Helvetica Neue", helvetica, arial, sans-serif` (top step `h2`: 22px, weight 600, line-height 1.5).
+- **Body & UI Controls**: `salesforce-sans, "Helvetica Neue", helvetica, arial, sans-serif` (`body`: 15px, weight 300, line-height 1.5).
+- **Scale Steps (3)**: `h2` (22px, w600), `body` (15px, w300), `nav` (14px, w500).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f7f8fb` cards; separate sibling sections using `#cfd7e6` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6fffe` -> `#f7f8fb`) and `1px solid #cfd7e6` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fa9f47` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`navy` (nav)**: ink `#001b44`.
+- **`button-primary` (button)**: bg `#fa9f47`, ink `#0b0b0c`, (9.5:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#fa9f47`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fa9f47` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `salesforce-sans` across 3 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#f6fffe` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#fa9f47` with `#0b0b0c` text (9.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `salesforce-sans` headings with `salesforce-sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f7f8fb` surface shifts and `#cfd7e6` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

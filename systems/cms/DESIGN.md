@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: U.S. CMS.gov Design System
-description: "Crisp light (#ffffff) canvas, Open Sans typography, #fcebe6 brand accent, and 3px corner geometry"
+description: "Crisp light (#ffffff) canvas, Open Sans typography, #00395e brand accent, and 3px corner geometry"
 colors:
   color-background: "#ffffff"
   color-background-inverse: "#00395e"
@@ -93,7 +93,7 @@ colors:
   visited: "#e9ecf1"
   hover-inverse: "#ffffff"
   default: "#5a5a5a"
-  primary: "#fcebe6"
+  primary: "#00395e"
 typography:
   font-size-base:
     fontSize: 1rem
@@ -135,9 +135,16 @@ typography:
     fontFamily: "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif"
   font-family:
     fontFamily: "\"Open Sans\", Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif"
+rounded:
+  button: 3px
+  input: 3px
+  badge: 999px
+  nav: 3px
+  default: 3px
 components:
   button:
-    textColor: "#000000"
+    textColor: "#ffffff"
+    backgroundColor: "#00395e"
   button-2:
     textColor: "#0071bc"
   button-3:
@@ -169,8 +176,8 @@ components:
   alert-4:
     textColor: "#000000"
   badge-brand:
-    backgroundColor: "#fcebe6"
-    textColor: "#0b0b0c"
+    backgroundColor: "#00395e"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -189,25 +196,68 @@ components:
 
 ## Overview
 
-CMS U.S. CMS.gov Design System — read from the rendered page in a browser, not from published tokens.
+**U.S. CMS.gov Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00395e` brand accent.
 
-Tokens were read from https://design.cms.gov/, not from a published token package: 91 colour tokens and 20 type tokens.
+Typography centers cleanly on `Open Sans` (60px display down to 16px body), unified by `3px` base corner radius and stepped `#ffffff` -> `#e7f3e7` surface layering.
+
+Maintained by **CMS**. Source: live stylesheet extraction (https://design.cms.gov/), repo https://github.com/CMSgov/design-system, package `@cmsgov/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **20** typography steps, and **13** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#e7f3e7` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#00395e` (12.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 11.2:1 contrast).
+- **Structural Border (`border`)**: `#d9d9d9` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-background-inverse` (`#00395e`), `color-border-dark` (`#0f1e38`), `color-focus-dark` (`#bd13b8`), `color-primary-lighter` (`#b3d4eb`), `color-primary-light` (`#4d9cd0`), `color-primary` (`#0071bc`).
+- **Neutral Ramp**: `color-background` (`#ffffff`), `color-border` (`#d9d9d9`), `color-border-inverse` (`#ffffff`), `color-error-lightest` (`#fef5f7`), `color-focus-light` (`#ffffff`), `color-primary-lightest` (`#e6f1f8`).
+- **Semantic States**: success: `color-success-lighter` (`#b8dcb7`) · danger: `color-error-lighter` (`#f7bbc5`) · warning: `color-warn-lighter` (`#fdedbc`) · info: `color-info-lighter` (`#b3ecf8`).
 
 ## Typography
 
-Families declared in the source: `"Open Sans", Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif`.
+- **Primary / Display Voice**: `"Open Sans", Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif` (top step `font-size-5xl`: 3.75rem, weight 600).
+- **Body & UI Controls**: `"Open Sans", Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif` (`font-size-base`: 1rem, weight 400).
+- **Scale Steps (20)**: `font-size-5xl` (3.75rem), `font-size-4xl` (3rem), `font-size-5xl-tablet` (3rem), `font-size-3xl` (2.25rem), `font-size-4xl-mobile` (2.25rem), `font-size-5xl-mobile` (2.25rem), `font-size-3xl-mobile` (1.875rem), `font-size-2xl-mobile` (1.5rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `8px 24px`, `8px 8px 8px 0px`, `8px`, `8px 32px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#e7f3e7` cards; separate sibling sections using `#d9d9d9` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#e7f3e7`) and `1px solid #d9d9d9` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00395e` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `3px` (Inputs `3px` · Badges `999px` · Navigation `3px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `3px` container.
 
 ## Components
 
-10 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: bg `#00395e`, ink `#ffffff`, (12.0:1).
+- **`button-2` (button)**: ink `#0071bc`.
+- **`button-3` (button)**: bg `#12890e`, ink `#ffffff`, (4.6:1), radius `3px`, padding `8px 24px`, border `1px solid rgb(18, 137, 14)`.
+- **`button-4` (button)**: ink `#ffffff`, radius `3px`, padding `8px 8px 8px 0px`, border `1px solid rgba(0, 0, 0, 0)`.
+- **`input` (input)**: bg `#ffffff`, ink `#262626`, (15.1:1), radius `3px`, padding `8px`, border `2px solid rgb(38, 38, 38)`.
+- **`input-2` (input)**: bg `#ffffff`, ink `#000000`, (21.0:1), radius `2px`, border `1px solid rgb(118, 118, 118)`.
+- **`alert` (card)**: bg `#f2f2f2`, ink `#262626`, (13.5:1).
+- **`alert-2` (card)**: ink `#262626`, padding `8px 32px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fcebe6` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 20 type steps.
-- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#00395e` with `#f7f7f8` text (11.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.
+- Apply `3px` base geometry across inputs and buttons (3px on outer containers).
+- Separate containers via `#e7f3e7` surface shifts and `#d9d9d9` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `3px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

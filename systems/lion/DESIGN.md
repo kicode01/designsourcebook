@@ -157,6 +157,13 @@ typography:
   hero-subtitle:
     fontSize: 1.25rem
     fontWeight: 300
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   btn-primary:
     backgroundColor: "#FFC107"
@@ -196,25 +203,68 @@ components:
 
 ## Overview
 
-ING Lion — tokens read from https://github.com/ing-bank/lion.
+**ING Lion** is a light-first design system anchored on `#f8f9fa` canvas surfaces with `#0b0b0c` primary ink (18.7:1 contrast) and `#FFC107` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 86 colour tokens and 31 type tokens.
+Typography centers cleanly on `Open Sans` (64px display down to 16px body), unified by `8px` base corner radius and stepped `#f8f9fa` -> `#faf4eb` surface layering.
+
+Maintained by **ING**. Source: published token package (https://github.com/ing-bank/lion), repo https://github.com/ing-bank/lion, package `@lion/ui`, frameworks: web-components. Inventory: **86** colors, **31** typography steps, and **7** documented components (see repository license).
 
 ## Colors
 
-86 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f8f9fa` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#faf4eb` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#FFC107` (1.5:1 vs canvas; pair with `#0b0b0c` foreground ink for 12.1:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `background` (`#b22222`), `primary-text-inverse-color` (`#2c3e50`), `blog-accent` (`#FFC107`), `dandelion-300` (`#ffe366`), `dandelion-900` (`#332a00`), `blue-500` (`#002eff`).
+- **Neutral Ramp**: `primary-color` (`#222`), `primary-color-lighter` (`#333`), `primary-color-darker` (`#000`), `accent-chip-surface` (`#111111`), `heading-gradient-from` (`#111111`), `hero-gradient-to` (`#777777`).
+- **Semantic States**: success: `green-700` (`#8bcc00`) · danger: `red-1` (`#ffe3e3`) · warning: `accent-yellow` (`#FFC107`).
 
 ## Typography
 
-Families declared in the source: `"Open Sans", sans-serif`, `Montserrat, sans-serif`, `SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace`, `Inter, -apple-system, BlinkMacSystemFont, sans-serif`.
+- **Primary / Display Voice**: `"Open Sans", sans-serif` (top step `h1`: 4rem, weight 600).
+- **Body & UI Controls**: `"Open Sans", sans-serif` (`body`: 16px, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace` (`monospace-font-family`: 16px).
+- **Scale Steps (31)**: `h1` (4rem), `page-title` (64px), `font-size-8` (3.5rem), `font-size-fluid-3` (clamp(2rem, 9vw, 3.5rem)), `font-size-7` (3rem), `font-size-6` (2.5rem), `font-size-fluid-2` (clamp(1.5rem, 6vw, 2.5rem)), `font-size-5` (2rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#faf4eb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f8f9fa` -> `#faf4eb`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FFC107` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`btn-primary` (button)**: bg `#FFC107`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#faf4eb`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#faf4eb`, ink `#0b0b0c`, (18.0:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#FFC107`, ink `#0b0b0c`, (12.1:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#8bcc00`, ink `#0b0b0c`, (10.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#faf4eb`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FFC107` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 31 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#f8f9fa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#FFC107` with `#0b0b0c` text (12.1:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#faf4eb` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

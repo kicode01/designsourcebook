@@ -28,41 +28,6 @@ colors:
   death-feedback-email-background: "#E3F0FB"
   color: "#000"
   primary: "#fcb61a"
-components:
-  btn-link-styled:
-    backgroundColor: transparent
-    textColor: "#0b0b0c"
-    padding: "0"
-  button-secondary:
-    backgroundColor: transparent
-    textColor: "#0b0b0c"
-    rounded: 8px
-    padding: 10px 18px
-  input-default:
-    backgroundColor: "#f3f3f3"
-    textColor: "#0b0b0c"
-    rounded: 8px
-    padding: 9px 13px
-  card-surface:
-    backgroundColor: "#f3f3f3"
-    textColor: "#0b0b0c"
-    rounded: 12px
-    padding: 18px 20px
-  badge-brand:
-    backgroundColor: "#fcb61a"
-    textColor: "#0b0b0c"
-    rounded: 999px
-    padding: 4px 10px
-  badge-success:
-    backgroundColor: "#15803d"
-    textColor: "#ffffff"
-    rounded: 999px
-    padding: 4px 10px
-  nav-bar:
-    backgroundColor: "#f3f3f3"
-    textColor: "#0b0b0c"
-    rounded: 8px
-    padding: 10px 16px
 typography:
   display-hero:
     fontFamily: "Montserrat, \"Helvetica Neue\", Arial, sans-serif"
@@ -99,31 +64,115 @@ typography:
     fontSize: 12px
     fontWeight: 500
     lineHeight: 1.35
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
+components:
+  btn-link-styled:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    padding: "0"
+  button-secondary:
+    backgroundColor: transparent
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 18px
+  input-default:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 9px 13px
+  card-surface:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 18px 20px
+  badge-brand:
+    backgroundColor: "#fcb61a"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 4px 10px
+  badge-success:
+    backgroundColor: "#15803d"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 4px 10px
+  nav-bar:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 16px
 ---
 
 # City of Boston Fleet
 
 ## Overview
 
-City of Boston Fleet — tokens read from https://github.com/CityOfBoston/digital.
+**City of Boston Fleet** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fcb61a` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 25 colour tokens and 0 type tokens.
+Typography centers cleanly on `Montserrat` (44px display down to 18px body), unified by `8px` base corner radius and stepped `#fff` -> `#f3f3f3` surface layering.
+
+Maintained by **City of Boston**. Source: published token package (https://github.com/CityOfBoston/digital), repo https://github.com/CityOfBoston/digital, frameworks: css. Inventory: **25** colors, **7** typography steps, and **7** documented components (see repository license).
 
 ## Colors
 
-25 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f3f3f3` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#fcb61a` (1.8:1 vs canvas; pair with `#0b0b0c` foreground ink for 11.1:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `charles-blue` (`#091f2f`), `purple` (`#681da8`), `optimistic-blue-light` (`#288be4`), `optimistic-blue-dark` (`#1871bd`), `optimistic-blue` (`#288be4`), `primary` (`#fcb61a`).
+- **Neutral Ramp**: `white` (`#fff`), `black` (`#000`), `gray-000` (`#f3f3f3`), `gray-100` (`#e0e0e0`), `gray-200` (`#C8C8C8`), `gray-300` (`#828282`).
+- **Semantic States**: success: `green` (`#62A744`) · danger: `freedom-red-light` (`#fb4d42`) · warning: `yellow` (`#fcb61a`) · info: `death-feedback-link-color` (`#145B99`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Montserrat, "Helvetica Neue", Arial, sans-serif` (top step `display-hero`: 44px, weight 700, line-height 1.15).
+- **Body & UI Controls**: `Montserrat, "Helvetica Neue", Arial, sans-serif` (`body-editorial`: 18px, weight 400, line-height 1.6).
+- **Scale Steps (7)**: `display-hero` (44px, w700), `section-heading` (32px, w700), `sub-heading` (24px, w600), `body-editorial` (18px, w400), `body` (16px, w400), `ui-label` (14px, w600), `caption` (12px, w500).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `0`, `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f3f3f3` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f3f3f3`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fcb61a` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`btn-link-styled` (button)**: bg `transparent`, ink `#0b0b0c`, padding `0`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#fcb61a`, ink `#0b0b0c`, (11.1:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fcb61a` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Montserrat` across 7 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#fcb61a` with `#0b0b0c` text (11.1:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Montserrat` headings with `Montserrat` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f3f3f3` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

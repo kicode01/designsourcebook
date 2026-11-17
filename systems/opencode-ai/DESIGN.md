@@ -25,6 +25,44 @@ colors:
   border-tab: "#9a9898"
   border-outline: "#646262"
   primary: "#007aff"
+typography:
+  heading-1:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 38px
+    fontWeight: 700
+    lineHeight: 1.5
+  heading-2:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.5
+  body:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  body-medium:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.5
+  body-tight:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1
+  caption:
+    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 2
+rounded:
+  button: 4px
+  input: 6px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button-primary:
     backgroundColor: "#201d1d"
@@ -61,37 +99,6 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
-typography:
-  heading-1:
-    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: 38px
-    fontWeight: 700
-    lineHeight: 1.5
-  heading-2:
-    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: 16px
-    fontWeight: 700
-    lineHeight: 1.5
-  body:
-    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: 16px
-    fontWeight: 400
-    lineHeight: 1.5
-  body-medium:
-    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: 16px
-    fontWeight: 500
-    lineHeight: 1.5
-  body-tight:
-    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: 16px
-    fontWeight: 500
-    lineHeight: 1
-  caption:
-    fontFamily: "\"Berkeley Mono\", \"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: 14px
-    fontWeight: 400
-    lineHeight: 2
 ---
 
 # Design System: OpenCode

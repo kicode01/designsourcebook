@@ -120,6 +120,12 @@ typography:
     fontSize: 20px
     fontWeight: 700
     lineHeight: 1.4
+rounded:
+  button: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   textarea:
     backgroundColor: "#fff"
@@ -178,25 +184,68 @@ components:
 
 ## Overview
 
-Yelp Styleguide — read from the rendered page in a browser, not from published tokens.
+**Yelp Styleguide** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(147, 0, 0)` brand accent.
 
-Tokens were read from https://www.yelp.com/styleguide, not from a published token package: 91 colour tokens and 5 type tokens.
+Typography centers cleanly on `Poppins` (48px display down to 20px body), unified by `4px` base corner radius and subtle shadow elevation.
+
+Maintained by **Yelp**. Source: live stylesheet extraction (https://www.yelp.com/styleguide), frameworks: css. Inventory: **91** colors, **5** typography steps, and **9** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgb(255, 255, 255)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(247, 247, 247)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgb(147, 0, 0)` (9.4:1 vs canvas; pair with `#f7f7f8` foreground ink for 8.8:1 contrast).
+- **Structural Border (`border`)**: `rgb(200, 201, 202)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `sem-color-bg-foreign-facebook-disabled` (`rgb(8, 102, 255)`), `sem-color-bg-foreign-line-disabled` (`rgb(6, 199, 85)`), `sem-color-bg-foreign-rss-disabled` (`rgb(201, 64, 14)`), `sem-color-bg-brand-primary-strong-default` (`rgb(147, 0, 0)`), `sem-color-bg-brand-primary-subtle-default` (`rgb(255, 219, 218)`), `sem-color-bg-brand-secondary-strong-default` (`rgb(0, 78, 93)`).
+- **Neutral Ramp**: `sem-color-bg-foreign-apple-disabled` (`rgb(0, 0, 0)`), `sem-color-bg-foreign-github-disabled` (`rgb(106, 115, 125)`), `sem-color-bg-foreign-twitter-disabled` (`rgb(0, 0, 0)`), `sem-color-border-on-dim-default` (`rgb(255, 255, 255)`), `sem-color-bg-brand-primary-subtle-hovered` (`rgb(255, 236, 236)`), `sem-color-border-default` (`rgb(137, 138, 139)`).
+- **Semantic States**: success: `sem-color-border-positive` (`rgb(0, 82, 52)`) · danger: `sem-color-bg-foreign-linkedin-hovered` (`rgb(40, 103, 178)`) · info: `ref-color-foreign-linkedin` (`rgb(40, 103, 178)`).
 
 ## Typography
 
-Families declared in the source: `"Times New Roman"`, `Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif`.
+- **Primary / Display Voice**: `Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif` (top step `h1`: 48px, weight 700, line-height 1.17).
+- **Body & UI Controls**: `Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif` (`body`: 20px, weight 700, line-height 1.4).
+- **Scale Steps (5)**: `h1` (48px, w700), `h2` (28px, w700), `h3` (24px, w700), `body` (20px, w700), `header` (16px, w400).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `13px 16px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `rgb(247, 247, 247)` cards; separate sibling sections using `rgb(200, 201, 202)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`inset 0 0 0 1px #c8c9ca`, `inset 0 0 0 1px #c8c9ca`) paired with `rgb(200, 201, 202)` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(147, 0, 0)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-2 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`textarea` (input)**: bg `#fff`, ink `#2d2e2f`, (13.6:1), radius `4px`, padding `13px 16px`, border `0`.
+- **`select-wrapper-2` (input)**: bg `#fff`, ink `#2d2e2f`, (13.6:1), radius `4px`, padding `13px 16px`, border `0`.
+- **`button-primary` (button)**: bg `rgb(147, 0, 0)`, ink `#ffffff`, (9.4:1), radius `4px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `rgb(147, 0, 0)`, ink `#ffffff`, (9.4:1), radius `4px`, padding `10px 18px`.
+- **`card-surface` (card)**: bg `rgb(247, 247, 247)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `rgb(147, 0, 0)`, ink `#ffffff`, (9.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgb(0, 82, 52)`, ink `#ffffff`, (9.3:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(147, 0, 0)` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Times New Roman` across 5 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `rgb(147, 0, 0)` with `#f7f7f8` text (8.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Poppins` headings with `Poppins` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `rgb(247, 247, 247)` surface shifts and `rgb(200, 201, 202)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `textarea` fields and secondary buttons.

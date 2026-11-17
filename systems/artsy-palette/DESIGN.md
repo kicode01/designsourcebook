@@ -36,6 +36,13 @@ typography:
     fontFamily: "ll-unica77, \"Helvetica Neue\", Helvetica, Arial, sans-serif"
   font-size:
     fontSize: 50px
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#1023D7"
@@ -83,21 +90,67 @@ components:
 
 ## Overview
 
-Artsy Palette — tokens read from https://github.com/artsy/palette.
+**Artsy Palette** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#1023D7` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 28 colour tokens and 0 type tokens.
+Typography centers cleanly on `ll-unica77` (50px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#F7F7F7` surface layering.
+
+Maintained by **Artsy**. Source: published token package (https://github.com/artsy/palette), repo https://github.com/artsy/palette, package `@artsy/palette`, frameworks: react. Inventory: **28** colors, **2** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-28 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#FFFFFF` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#F7F7F7` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#1023D7` (9.4:1 vs canvas; pair with `#f7f7f8` foreground ink for 8.7:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `blue200` (`#050e3e`), `blue150` (`#0A1C7B`), `blue100` (`#1023D7`), `brand` (`#1023D7`), `blue15` (`#cacdec`), `primary` (`#1023D7`).
+- **Neutral Ramp**: `mono100` (`#000000`), `mono60` (`#707070`), `mono30` (`#C2C2C2`), `mono15` (`#D8D8D8`), `mono10` (`#E7E7E7`), `mono5` (`#F7F7F7`).
+- **Semantic States**: success: `green150` (`#003728`) · danger: `red150` (`#510B0B`) · warning: `yellow150` (`#A47A0F`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `ll-unica77, "Helvetica Neue", Helvetica, Arial, sans-serif` (top step `font-size`: 50px, weight 600).
+- **Body & UI Controls**: `ll-unica77, "Helvetica Neue", Helvetica, Arial, sans-serif` (`sans`: 16px, weight 400).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1023D7` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `ll-unica77` across 2 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#F7F7F7` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#F7F7F7`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1023D7` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#1023D7`, ink `#ffffff`, (9.4:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#F7F7F7`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#F7F7F7`, ink `#0b0b0c`, (18.4:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#1023D7`, ink `#ffffff`, (9.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#F7F7F7`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#1023D7` with `#f7f7f8` text (8.7:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `ll-unica77` headings with `ll-unica77` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#F7F7F7` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

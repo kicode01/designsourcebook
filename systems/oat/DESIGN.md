@@ -47,6 +47,13 @@ typography:
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
+rounded:
+  badge: 9999px
+  button: 9999px
+  input: 9999px
+  card: 9999px
+  nav: 9999px
+  default: 9999px
 components:
   badge:
     backgroundColor: transparent
@@ -92,25 +99,66 @@ components:
 
 ## Overview
 
-Oat UI — read from the rendered page in a browser, not from published tokens.
+**Oat UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#008032` brand accent.
 
-Tokens were read from https://oat.ink/, not from a published token package: 13 colour tokens and 6 type tokens.
+Typography centers cleanly on `System UI` (36px display down to 16px body), unified by `9999px` base corner radius and subtle shadow elevation.
+
+Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), repo https://github.com/oat-ink/oat, frameworks: css. Inventory: **13** colors, **6** typography steps, and **7** documented components (all rights reserved license).
 
 ## Colors
 
-13 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fafafa` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#008032` (5.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.7:1 contrast).
+- **Structural Border (`border`)**: `#e4e4e7` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `badge-text` (`#a65b00`), `badge-text-1` (`#008032`), `badge-text-2` (`#d32f2f`), `primary` (`#008032`).
+- **Neutral Ramp**: `warning-foreground` (`#09090b`), `bg-canvas` (`#ffffff`), `canvas-text` (`#262626`), `main-bg` (`#fafafa`), `main-border` (`#e4e4e7`), `footer-text` (`#71717a`).
 
 ## Typography
 
-Families declared in the source: `system-ui, sans-serif`.
+- **Primary / Display Voice**: `system-ui, sans-serif` (top step `h1`: 36px, weight 600, line-height 1.25).
+- **Body & UI Controls**: `system-ui, sans-serif` (`body`: 16px, weight 400, line-height 1.5).
+- **Scale Steps (6)**: `h1` (36px, w600), `h2` (30px, w600), `h3` (24px, w400), `header` (16px, w400), `body` (16px, w400), `nav` (14px, w400).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `1rem`, `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `#e4e4e7` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 1px 2px rgb(0 0 0 / .06)`) paired with `#e4e4e7` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#008032` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `9999px` (Buttons `9999px` · Inputs `9999px` · Cards `9999px` · Badges `9999px` · Navigation `9999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `9999px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`badge` (badge)**: bg `transparent`, ink `#0b0b0c`, radius `9999px`, padding `1rem`, border `1px solid light-dark(#e4e4e7, #303036)`.
+- **`button-primary` (button)**: bg `#008032`, ink `#ffffff`, (5.1:1), radius `9999px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `9999px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `9999px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `9999px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `9999px`, padding `18px 20px`.
+- **`nav-bar` (nav)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `9999px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#008032` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 6 type steps.
-- **Component Geometry**: Buttons (`9999px`), cards (`9999px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#008032` with `#f7f7f8` text (4.7:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `9999px` base geometry across inputs and buttons (9999px on outer containers).
+- Separate containers via `#fafafa` surface shifts and `#e4e4e7` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `9999px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

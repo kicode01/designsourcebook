@@ -100,6 +100,13 @@ typography:
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.33
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#FF4785"
@@ -147,21 +154,68 @@ components:
 
 ## Overview
 
-DHIS2 UI — tokens read from https://github.com/dhis2/ui.
+**DHIS2 UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#FF4785` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 66 colour tokens and 0 type tokens.
+Typography centers cleanly on `Roboto` (28px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f5fbff` surface layering.
+
+Maintained by **DHIS2**. Source: published token package (https://github.com/dhis2/ui), repo https://github.com/dhis2/ui, package `@dhis2/ui`, frameworks: react. Inventory: **66** colors, **6** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-66 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f5fbff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#FF4785` (3.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.0:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `blue900` (`#093371`), `blue800` (`#0d47a1`), `blue700` (`#1565c0`), `blue600` (`#147cd7`), `blue500` (`#2196f3`), `blue400` (`#42a5f5`).
+- **Neutral Ramp**: `blue050` (`#f5fbff`), `teal100` (`#e0f2f1`), `teal050` (`#f1f9f9`), `red050` (`#fff5f6`), `green100` (`#e8f5e9`), `green050` (`#f4fbf4`).
+- **Semantic States**: success: `green900` (`#103713`) · danger: `red900` (`#330202`) · warning: `yellow900` (`#6f3205`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif` (top step `heading-2xl`: 28px, weight 500, line-height 1.25).
+- **Body & UI Controls**: `Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif` (`body-md`: 14px, weight 400, line-height 1.43).
+- **Scale Steps (6)**: `heading-2xl` (28px, w500), `heading-xl` (24px, w500), `heading-lg` (20px, w500), `body-md` (14px, w400), `body-sm` (13px, w400), `caption-xs` (12px, w400).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#276696) canvas paired with `#276696` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF4785` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto` across 6 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f5fbff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f5fbff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF4785` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#FF4785`, ink `#0b0b0c`, (6.1:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ef4444`, ink `#000000`, (5.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#FF4785`, ink `#000000`, (6.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#FF4785` with `#f7f7f8` text (3.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f5fbff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -209,6 +209,13 @@ typography:
     fontSize: 0.75rem
   icon-font-size:
     fontSize: 1rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#0168b3"
@@ -256,21 +263,68 @@ components:
 
 ## Overview
 
-Kaizen — tokens read from https://github.com/cultureamp/kaizen-design-system.
+**Kaizen** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0168b3` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 59 type tokens.
+Typography centers cleanly on `Inter` (84px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f9f9f9` surface layering.
+
+Source: published token package (https://github.com/cultureamp/kaizen-design-system), repo https://github.com/cultureamp/kaizen-design-system, package `@kaizen/design-tokens`, frameworks: react. Inventory: **91** colors, **57** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f9f9f9` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0168b3` (5.8:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.4:1 contrast).
+- **Structural Border (`border`)**: `#e1e2ea` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-purple-200` (`#dfc9ea`), `color-purple-300` (`#c9a5dd`), `color-purple-400` (`#ae67b1`), `color-purple-500` (`#844587`), `color-purple-600` (`#5f3361`), `color-purple-700` (`#4a234d`).
+- **Neutral Ramp**: `border-solid-border-color` (`#e1e2ea`), `solid-border-color` (`#e1e2ea`), `border-color` (`#e1e2ea`), `ca-border-between-rows-color` (`#ececec`), `purple-100` (`#f0f1f4`), `color-purple-100` (`#f4edf8`).
+- **Semantic States**: success: `ca-palette-positive-text` (`#378a72`) · danger: `ca-palette-negative-text` (`#c03d4a`) · warning: `color-yellow-100` (`#fff9e4`).
 
 ## Typography
 
-Families declared in the source: `Inter", "Noto Sans", Helvetica, Arial, sans-serif`, `Tiempos Headline", Georgia, serif`.
+- **Primary / Display Voice**: `Inter, "Noto Sans", Helvetica, Arial, sans-serif` (top step `typography-data-large-font-size`: 5.25rem, weight 600).
+- **Body & UI Controls**: `Inter, "Noto Sans", Helvetica, Arial, sans-serif` (`typography-paragraph-body-font-size`: 1rem, weight 400).
+- **Scale Steps (57)**: `typography-data-large-font-size` (5.25rem), `data-large` (5.25rem), `typography-display-0-font-size` (4.5rem), `display0` (4.5rem), `typography-data-medium-font-size` (3rem), `data-medium` (3rem), `typography-data-large-units-font-size` (2.625rem), `data-large-units` (2.625rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0168b3` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 57 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#e1e2ea` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f9f9f9`) and `1px solid #e1e2ea` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0168b3` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#0168b3`, ink `#ffffff`, (5.8:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#c03d4a`, ink `#ffffff`, (5.2:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0168b3`, ink `#ffffff`, (5.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#378a72`, ink `#0b0b0c`, (4.7:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0168b3` with `#f7f7f8` text (5.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f9f9f9` surface shifts and `#e1e2ea` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

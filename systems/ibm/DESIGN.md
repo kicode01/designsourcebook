@@ -107,23 +107,35 @@ typography:
     fontSize: 42px
     fontWeight: 400
     lineHeight: 1.19
+rounded:
+  button: 0px
+  input: 0px
+  badge: 999px
+  nav: 0px
+  default: 0px
 components:
   button-primary:
     backgroundColor: "#0f62fe"
     textColor: "#ffffff"
+    rounded: 0px
   button-secondary:
     backgroundColor: transparent
     textColor: "#0b0b0c"
+    rounded: 0px
   button-tertiary:
     textColor: "#0f62fe"
+    rounded: 0px
   button-ghost:
     textColor: "#0f62fe"
     padding: 14px 16px
+    rounded: 0px
   button-danger:
     backgroundColor: "#da1e28"
     textColor: "#ffffff"
+    rounded: 0px
   distinctive-tile:
     backgroundColor: "#f4f4f4"
+    rounded: 0px
   input-default:
     backgroundColor: "#f4f4f4"
     textColor: "#0b0b0c"

@@ -156,6 +156,12 @@ typography:
     fontWeight: 600
   ifm-blockquote-font-size:
     fontSize: "100%"
+rounded:
+  badge: 0.4rem
+  button: 0.4rem
+  input: 0.4rem
+  card: 6px
+  default: 0.4rem
 components:
   badge:
     textColor: "#fff"
@@ -198,25 +204,69 @@ components:
 
 ## Overview
 
-Microsoft FAST — read from the rendered page in a browser, not from published tokens.
+**Microsoft FAST** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3578e5` brand accent.
 
-Tokens were read from https://fast.design/, not from a published token package: 91 colour tokens and 26 type tokens.
+Typography centers cleanly on `System UI` (60px display down to 16px body), unified by `0.4rem` base corner radius and stepped `#fff` -> `#f1f2f5` surface layering.
+
+Maintained by **Microsoft**. Source: live stylesheet extraction (https://fast.design/), repo https://github.com/microsoft/fast, package `@microsoft/fast-element`, frameworks: web-components, css. Inventory: **91** colors, **26** typography steps, and **8** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f1f2f5` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3578e5` (4.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.9:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `ifm-color-primary` (`#3578e5`), `ifm-color-primary-dark` (`#306cce`), `ifm-color-primary-darkest` (`#2554a0`), `ifm-color-primary-lighter` (`#72a1ed`), `ifm-color-warning-contrast-background` (`#fff8e6`), `accent-fill-rest` (`#c01754`).
+- **Neutral Ramp**: `ifm-color-primary-contrast-background` (`#ebf2fc`), `ifm-color-secondary-dark` (`#d4d5d8`), `ifm-color-secondary-darkest` (`#a4a6a8`), `ifm-color-secondary-lighter` (`#f1f2f5`), `ifm-color-secondary-contrast-background` (`#fdfdfe`), `ifm-color-success-contrast-background` (`#e6f6e6`).
+- **Semantic States**: success: `ifm-color-success` (`#00a400`) · danger: `ifm-color-danger-dark` (`#e13238`) · warning: `ifm-color-warning` (`#ffba00`) · info: `ifm-color-info-dark` (`#4cb3d4`).
 
 ## Typography
 
-Families declared in the source: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"` (top step `type-ramp-plus-6-font-size`: 60px, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"` (`ifm-font-size-base`: 100%, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`ifm-font-family-monospace`: 16px).
+- **Scale Steps (26)**: `type-ramp-plus-6-font-size` (60px), `type-ramp-plus-5-font-size` (46px), `type-ramp-plus-4-font-size` (34px), `ifm-h1-font-size` (2rem), `h1` (2em, w600), `type-ramp-plus-3-font-size` (28px), `ifm-h2-font-size` (1.5rem), `h2` (1.5em, w600).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`.
+- **Hierarchy**: Group controls cleanly within `#f1f2f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f1f2f5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3578e5` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0.4rem` (Inputs `0.4rem` · Cards `6px` · Badges `0.4rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
 
 ## Components
 
-5 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`badge` (badge)**: ink `#fff`, radius `0.4rem`, border `1px solid inherit`.
+- **`nav` (nav)**: ink `#3578e5`.
+- **`nav-2` (nav)**: ink `#525860`.
+- **`section-showcase-item-link` (nav)**: ink `#fff`, radius `3px`.
+- **`button-link` (button)**: ink `#3578e5`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `0.4rem`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `0.4rem`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `18px 20px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3578e5` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 26 type steps.
-- **Component Geometry**: Buttons (`0.4rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#3578e5` with `#f7f7f8` text (3.9:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `0.4rem` base geometry across inputs and buttons (6px on outer containers).
+- Separate containers via `#f1f2f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `0.4rem` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

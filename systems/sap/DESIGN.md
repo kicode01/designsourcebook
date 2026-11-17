@@ -115,6 +115,13 @@ typography:
     fontSize: 1.25rem
   sap-object-header-title-snapped-font-size:
     fontSize: 1.25rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#427cac"
@@ -162,21 +169,69 @@ components:
 
 ## Overview
 
-SAP Fiori — tokens imported from @sap-theming/theming-base-content.
+**SAP Fiori** is a light-first design system anchored on `#f7f7f7` canvas surfaces with `#0b0b0c` primary ink (18.4:1 contrast) and `#427cac` brand accent.
 
-Tokens were read from `@sap-theming/theming-base-content@11.36.5`, not from a marketing site: 91 colour tokens and 10 type tokens.
+Typography centers cleanly on `72full` (20px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **SAP**. Source: published token package, repo https://github.com/SAP/theming-base-content, package `@sap-theming/theming-base-content`, frameworks: web-components, react, angular, css. Inventory: **91** colors, **10** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f7f7f7` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f7f7f7` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.4:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#427cac` (4.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.2:1 contrast).
+- **Structural Border (`border`)**: `#ababab` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `sap-brand-color` (`#427cac`), `sap-legend-background-color2` (`#feeee5`), `sap-shell-category-5-background` (`#b64600`), `sap-shell-category-13-background` (`#d61818`), `sap-avatar-6-border-color` (`#0092d1`), `sap-button-hover-text-color` (`#346187`).
+- **Neutral Ramp**: `sap-content-contrast-focus-color` (`#fff`), `sap-shell-selected-text-color` (`#fff`), `sap-assistant-answer-background` (`#e6e6e6`), `sap-button-reject-selected-text-color` (`#fff`), `sap-button-negative-active-text-color` (`#fff`), `sap-button-information-hover-text-color` (`#fff`).
+- **Semantic States**: success: `sap-success-border-color` (`#38a238`) · danger: `sap-contrast-sap-button-handle-negative-border-color` (`#ff8888`) · info: `sap-contrast-sap-link-visited-color` (`#7ed0ff`).
 
 ## Typography
 
-Families declared in the source: `72full, Arial, Helvetica, sans-serif`, `72Mono, 72Monofull, "lucida console", monospace`, `72Mono-Bold, 72Mono-Boldfull, "lucida console", monospace`.
+- **Primary / Display Voice**: `72full, Arial, Helvetica, sans-serif` (top step `sap-object-header-title-font-size`: 1.25rem, weight 600).
+- **Body & UI Controls**: `72full, Arial, Helvetica, sans-serif` (`sap-font-family`: 16px, weight 400).
+- **Monospace / Technical Labels**: `72Mono, 72Monofull, "lucida console", monospace` (`sap-content-monospace-font-family`: 16px).
+- **Scale Steps (10)**: `sap-object-header-title-font-size` (1.25rem), `sap-object-header-title-snapped-font-size` (1.25rem), `sap-group-title-font-size` (1.125rem), `sap-font-family` (16px), `sap-content-monospace-font-family` (16px), `sap-content-monospace-bold-font-family` (16px), `sap-button-font-family` (16px), `sap-object-header-title-font-family` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#427cac` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `72full` across 10 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f7f7f7` cards; separate sibling sections using `#ababab` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f7f7f7` -> `#f7f7f7`) and `1px solid #ababab` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#427cac` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#427cac`, ink `#ffffff`, (4.5:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ff8888`, ink `#0b0b0c`, (8.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f7f7f7`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f7f7f7`, ink `#0b0b0c`, (18.4:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#427cac`, ink `#000000`, (4.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#38a238`, ink `#0b0b0c`, (6.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f7f7f7`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#f7f7f7` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#427cac` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `72full` headings with `72full` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f7f7f7` surface shifts and `#ababab` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

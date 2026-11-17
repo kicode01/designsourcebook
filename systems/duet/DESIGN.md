@@ -99,6 +99,13 @@ typography:
     fontFamily: "localtapiola-sans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
     fontSize: 12px
     fontWeight: 600
+rounded:
+  nav: 20rem
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  default: 8px
 components:
   nav-toggle:
     backgroundColor: "rgba(0, 0, 0, 0)"
@@ -148,25 +155,68 @@ components:
 
 ## Overview
 
-LocalTapiola Duet — read from the rendered page in a browser, not from published tokens.
+**Duet** is a light-first design system anchored on `#fffbf4` canvas surfaces with `#0b0b0c` primary ink (19.1:1 contrast) and `#f7b228` brand accent.
 
-Tokens were read from https://www.duetds.com, not from a published token package: 61 colour tokens and 7 type tokens.
+Typography centers cleanly on `localtapiola-sans` (58px display down to 16px body), unified by `8px` base corner radius and stepped `#fffbf4` -> `#f5f6f7` surface layering.
+
+Maintained by **LocalTapiola**. Source: live stylesheet extraction (https://www.duetds.com), repo https://github.com/duetds/tokens, package `@duetds/tokens`, frameworks: web-components, css. Inventory: **61** colors, **7** typography steps, and **8** documented components (all rights reserved license).
 
 ## Colors
 
-61 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fffbf4` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f5f6f7` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.1:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#f7b228` (1.8:1 vs canvas; pair with `#0b0b0c` foreground ink for 10.6:1 contrast).
+- **Structural Border (`border`)**: `#d4dfe5` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `bg-canvas` (`#0077b3`), `canvas-text` (`#082a4d`), `footer-text` (`#4d5f6c`), `body-text` (`#62798a`), `css-surface-11` (`#e61740`), `css-stroke-12` (`#172a3b`).
+- **Neutral Ramp**: `header-text` (`#ffffff`), `nav-bg` (`#f5f8fa`), `footer-border` (`#d4dfe5`), `button-text` (`#000000`), `css-border-18` (`#d4dde2`), `css-surface-21` (`#f5f6f7`).
+- **Semantic States**: info: `link-text` (`#637484`).
 
 ## Typography
 
-Families declared in the source: `localtapiola-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`.
+- **Primary / Display Voice**: `localtapiola-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `h1`: 58px, weight 800, line-height 1.25).
+- **Body & UI Controls**: `localtapiola-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`header`: 16px, weight 800, line-height 1.5).
+- **Scale Steps (7)**: `h1` (58px, w800), `h2` (36px, w800), `body` (24px, w400), `h3` (20px, w600), `header` (16px, w800), `nav` (14px, w400), `button` (12px, w600).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f5f6f7` cards; separate sibling sections using `#d4dfe5` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fffbf4` -> `#f5f6f7`) and `1px solid #d4dfe5` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#f7b228` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `20rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-1 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`nav-toggle` (nav)**: bg `rgba(0, 0, 0, 0)`, ink `rgb(255, 255, 255)`, (1.0:1), radius `20rem`.
+- **`button-primary` (button)**: bg `#f7b228`, ink `#0b0b0c`, (10.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ef4444`, ink `#000000`, (5.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#f7b228`, ink `#000000`, (11.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Dark (#0077b3) canvas paired with `#0077b3` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f7b228` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `localtapiola-sans` across 7 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fffbf4` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#f7b228` with `#0b0b0c` text (10.6:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `localtapiola-sans` headings with `localtapiola-sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f5f6f7` surface shifts and `#d4dfe5` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

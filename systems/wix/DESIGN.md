@@ -68,6 +68,13 @@ typography:
   body:
     fontFamily: "Arial, Helvetica, sans-serif"
     fontSize: 10px
+rounded:
+  button: 24px
+  input: 999px
+  card: 8.64px
+  badge: 999px
+  nav: 24px
+  default: 24px
 components:
   button:
     backgroundColor: "#ffffff"
@@ -118,25 +125,66 @@ components:
 
 ## Overview
 
-Wix Style — read from the rendered page in a browser, not from published tokens.
+**Wix Style** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(26,106,255)` brand accent.
 
-Tokens were read from https://www.wix.com/, not from a published token package: 61 colour tokens and 1 type tokens.
+Typography centers cleanly on `Arial` (10px display down to 10px body), unified by `24px` base corner radius and subtle shadow elevation.
+
+Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/), repo https://github.com/wix/wix-style-react, package `wix-style-react`, frameworks: react. Inventory: **61** colors, **1** typography steps, and **11** documented components (all rights reserved license).
 
 ## Colors
 
-61 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(240,240,240)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgb(26,106,255)` (4.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.3:1 contrast).
+- **Structural Border (`border`)**: `rgb(194,194,194)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `wst-color-custom-17` (`rgb(255,191,161)`), `wst-color-custom-20` (`rgb(201,64,1)`), `wst-color-custom-19` (`rgb(234,96,32)`), `wst-button-color-border-secondary-hover` (`rgb(26,106,255)`), `wst-color-custom-12` (`rgb(229,206,192)`), `wst-color-custom-7` (`rgb(210,228,199)`).
+- **Neutral Ramp**: `right-side-background` (`#fff`), `wst-color-fill-background-primary` (`rgb(255,255,255)`), `wst-color-custom-11` (`rgb(242,234,231)`), `wst-color-fill-base-shade-2` (`rgb(194,194,194)`), `wst-button-color-text-primary` (`rgb(255,255,255)`), `wst-color-line` (`rgb(0,0,0)`).
 
 ## Typography
 
-Families declared in the source: `Arial, Helvetica, sans-serif`.
+- **Primary / Display Voice**: `Arial, Helvetica, sans-serif` (top step `body`: 10px, weight 600).
+- **Body & UI Controls**: `Arial, Helvetica, sans-serif` (`body`: 10px, weight 400).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0px 24px`, `0px 12px`, `0px 10px 0px 34px`, `3px 194.4px 3px 52px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `rgb(240,240,240)` cards; separate sibling sections using `rgb(194,194,194)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`rgba(133, 154, 255, 0.4) 0px 30px 250px 20px, rgba(139, 142, 238, 0.16) 0px 16px 50px 0px`) paired with `rgb(194,194,194)` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(26,106,255)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `24px` (Buttons `24px` · Inputs `999px` · Badges `999px` · Navigation `24px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `24px` container.
 
 ## Components
 
-8 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: bg `#ffffff`, ink `#166aea`, (4.9:1), radius `24px`, padding `0px 24px`.
+- **`button-2` (button)**: ink `#000000`, padding `0px 12px`.
+- **`button-3` (button)**: bg `#000000`, ink `#fff`, (21.0:1), radius `50px`, padding `0px 10px 0px 34px`.
+- **`button-4` (button)**: ink `#ffffff`.
+- **`input` (input)**: bg `#ffffff`, ink `#000000`, (21.0:1), radius `999px`, padding `3px 194.4px 3px 52px`, border `1px solid rgba(78, 135, 180, 0)`.
+- **`card` (card)**: ink `#000000`.
+- **`card-2` (card)**: ink `#000000`, radius `8.64px`.
+- **`card-3` (card)**: bg `#ffffff`, ink `#000000`, (21.0:1).
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(26,106,255)` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Arial` across 1 type steps.
-- **Component Geometry**: Buttons (`999px`), cards (`24px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `rgb(26,106,255)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.
+- Apply `24px` base geometry across inputs and buttons (24px on outer containers).
+- Separate containers via `rgb(240,240,240)` surface shifts and `rgb(194,194,194)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `24px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

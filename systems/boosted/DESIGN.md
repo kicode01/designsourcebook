@@ -197,6 +197,11 @@ typography:
     lineHeight: 1.1
   figure-caption:
     fontSize: 0.875rem
+rounded:
+  button: "0"
+  card: 10px
+  badge: 999px
+  default: "0"
 components:
   link-info:
     textColor: "RGBA(65, 112, 216, 1)"
@@ -259,25 +264,69 @@ components:
 
 ## Overview
 
-Orange Boosted — tokens imported from boosted.
+**Orange Boosted** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#ff7900` brand accent.
 
-Tokens were read from `boosted@5.3.8`, not from a marketing site: 91 colour tokens and 46 type tokens.
+Typography centers cleanly on `HelvNeueOrange` (60px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#fafafa` -> `#eee` surface layering.
+
+Maintained by **Orange**. Source: published token package (https://boosted.orange.com/), repo https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap, package `boosted`, frameworks: css. Inventory: **91** colors, **46** typography steps, and **14** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fafafa` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#eee` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff7900` (2.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 2.5:1 contrast).
+- **Structural Border (`border`)**: `#ccc` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `bs-primary` (`#f16e00`), `bs-primary-text-emphasis` (`#f16e00`), `bs-primary-bg-subtle` (`#f16e00`), `bs-primary-border-subtle` (`#f16e00`), `bs-table-border-color` (`#95765c`), `bs-btn-border-color` (`#ff7900`).
+- **Neutral Ramp**: `bs-secondary` (`#000`), `bs-secondary-text-emphasis` (`#000`), `bs-light-text-emphasis` (`#ccc`), `bs-dark-text-emphasis` (`#000`), `bs-secondary-bg-subtle` (`#000`), `bs-secondary-border-subtle` (`#000`).
+- **Semantic States**: success: `form-switch-unchecked-invalid-border-color` (`#31c3eb`) · danger: `bs-danger` (`#cd3c14`) · warning: `bs-warning` (`#fc0`) · info: `bs-info` (`#4170d8`).
 
 ## Typography
 
-Families declared in the source: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `HelvNeueOrange, "Helvetica Neue", Helvetica, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`.
+- **Primary / Display Voice**: `HelvNeueOrange, "Helvetica Neue", Helvetica, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (top step `bs-title-bar-font-size`: 3.75rem, weight 600).
+- **Body & UI Controls**: `HelvNeueOrange, "Helvetica Neue", Helvetica, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (`font-size-base`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`font-family-monospace`: 16px).
+- **Scale Steps (46)**: `bs-title-bar-font-size` (3.75rem), `display-2` (2.5rem), `navbar-brand-font-size` (2.1875rem), `display-1` (1.875rem), `navbar-brand-font-size-two-lined` (1.8125rem), `display-3` (1.5rem), `navbar-brand-font-size-xs` (1.3125rem), `navbar-toggler-font-size` (1.25rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `0.5rem 0.625rem`, `10px 18px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#eee` cards; separate sibling sections using `#ccc` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#eee`) and `1px solid #ccc` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff7900` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0` (Buttons `0` · Inputs `0` · Cards `10px` · Badges `999px`).
+- **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
 
 ## Components
 
-8 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`link-info` (nav)**: ink `RGBA(65, 112, 216, 1)`.
+- **`link-dark-2` (nav)**: ink `RGBA(0, 0, 0, 1)`.
+- **`link-light-3` (nav)**: ink `RGBA(204, 204, 204, 1)`.
+- **`select` (input)**: bg `#fff`, ink `#000`, (21.0:1), radius `0`, border `0.125rem solid #ccc`.
+- **`link-danger-4` (nav)**: ink `RGBA(205, 60, 20, 1)`.
+- **`link-primary-5` (nav)**: ink `RGBA(241, 110, 0, 1)`.
+- **`link-success-6` (nav)**: ink `RGBA(34, 135, 34, 1)`.
+- **`input-group-text-2` (input)**: ink `#000`, padding `0.5rem 0.625rem`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff7900` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 46 type steps.
-- **Component Geometry**: Buttons (`0`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff7900` with `#f7f7f8` text (2.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `HelvNeueOrange` headings with `HelvNeueOrange` body copy using documented weights and scale steps.
+- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.
+- Separate containers via `#eee` surface shifts and `#ccc` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
+- Do not truncate or drop border contrast on `select` fields and secondary buttons.

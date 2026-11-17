@@ -136,6 +136,13 @@ typography:
     fontFamily: Roobert
     fontSize: 9.6px
     fontWeight: 600
+rounded:
+  button: 4px
+  input: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button-primary:
     backgroundColor: "rgba(239, 241, 243, 0)"

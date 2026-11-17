@@ -18,7 +18,7 @@ colors:
   interactive-ring-blue: "#3b82f6"
   interactive-focus-shadow: "rgba(0,0,0,0.1)"
   inset-button: "rgba(255,255,255,0.2)"
-  primary: "#f7f4ed"
+  primary: "#1c1c1c"
 typography:
   display-hero:
     fontFamily: "\"Camera Plain Variable\""
@@ -83,6 +83,13 @@ typography:
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary-dark:
     backgroundColor: "#1c1c1c"
@@ -113,8 +120,8 @@ components:
     rounded: 10px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#f7f4ed"
-    textColor: "#000000"
+    backgroundColor: "#1c1c1c"
+    textColor: "#fcfbf8"
     rounded: 999px
     padding: 4px 10px
   badge-success:

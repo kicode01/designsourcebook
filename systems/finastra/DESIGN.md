@@ -121,6 +121,13 @@ typography:
     fontFamily: Roboto
   fds-overline-font-family:
     fontFamily: Roboto
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#694ed6"
@@ -168,21 +175,68 @@ components:
 
 ## Overview
 
-Finastra Design System — tokens imported from @finastra/fds-theme.
+**Finastra Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#694ed6` brand accent.
 
-Tokens were read from `@finastra/fds-theme@1.8.1`, not from a marketing site: 33 colour tokens and 42 type tokens.
+Display headlines pair `Spartan` with `Roboto` body copy (51px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Finastra**. Source: published token package, repo https://github.com/Finastra/finastra-design-system, package `@finastra/fds-theme`, frameworks: web-components, angular, css. Inventory: **33** colors, **42** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-33 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#ffffff` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#694ed6` (5.7:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.4:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `fds-primary` (`#694ed6`), `fds-secondary` (`#c137a2`), `primary` (`#694ed6`).
+- **Neutral Ramp**: `fds-background` (`#fafafa`), `fds-surface` (`#ffffff`), `fds-surface-hover` (`#ffffff`), `fds-on-primary` (`#ffffff`), `fds-on-secondary` (`#ffffff`), `fds-on-background` (`rgba(0, 0, 0, 0.75)`).
+- **Semantic States**: success: `fds-success` (`#008744`) · danger: `fds-error` (`#d60040`) · warning: `fds-warning` (`#ff600a`) · info: `fds-info` (`#694ed6`).
 
 ## Typography
 
-Families declared in the source: `Roboto`, `Spartan`.
+- **Primary / Display Voice**: `Spartan` (top step `fds-headline-1-font-size`: 3.1875rem, weight 600).
+- **Body & UI Controls**: `Roboto` (`fds-body-1-font-size`: 1rem, weight 400).
+- **Scale Steps (42)**: `fds-headline-1-font-size` (3.1875rem), `fds-headline-2-font-size` (2.5625rem), `fds-headline-3-font-size` (1.75rem), `fds-headline-4-font-size` (1.3125rem), `fds-headline-5-font-size` (1rem), `fds-subtitle-1-font-size` (1rem), `fds-body-1-font-size` (1rem), `fds-button-1-font-size` (1rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#694ed6` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roboto` across 42 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#694ed6` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#694ed6`, ink `#ffffff`, (5.7:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `rgba(214, 0, 64, 0.5)`, ink `#0b0b0c`, (7.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#694ed6`, ink `#ffffff`, (5.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgba(0, 135, 68, 0.5)`, ink `#0b0b0c`, (9.6:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#694ed6` with `#f7f7f8` text (5.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Spartan` headings with `Roboto` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

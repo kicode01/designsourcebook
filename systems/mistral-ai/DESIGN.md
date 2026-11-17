@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Mistral AI
-description: "French-engineered minimalism, purple-toned"
+description: "Warm ivory amber canvas, burnt orange (#fa520f) signal accent, bold geometric hierarchy"
 colors:
   primary-mistral-orange: "#fa520f"
   primary-mistral-flame: "#fb6424"
@@ -69,6 +69,12 @@ typography:
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.43
+rounded:
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-cream-surface:
     backgroundColor: "#fff0c2"

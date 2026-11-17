@@ -171,6 +171,13 @@ typography:
     fontSize: 1px
   font-family:
     fontFamily: "\"Lucida Grande\", Arial, sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#0066ff"
@@ -218,21 +225,68 @@ components:
 
 ## Overview
 
-Telefónica Mística — cross-brand design system for Telefónica digital products.
+**Telefónica Mística** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0066ff` brand accent.
 
-Tokens were read from `@telefonica/mistica@18.0.0`, not from a marketing site: 91 colour tokens and 38 type tokens.
+Typography centers cleanly on `System UI` (64px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f7f7ff` surface layering.
+
+Maintained by **Telefónica**. Source: published token package (https://github.com/Telefonica/mistica-web), repo https://github.com/Telefonica/mistica-web, package `@telefonica/mistica`, frameworks: react, css. Inventory: **91** colors, **38** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f7f7ff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0066ff` (4.8:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `mistica-blau-blau-blue-primary` (`#00b6f1`), `mistica-blau-blau-blue-secondary` (`#0072bc`), `mistica-blau-blau-blue-primary30` (`#b3e9fb`), `mistica-blau-blau-blue-secondary60` (`#005a99`), `mistica-blau-blau-blue-secondary20` (`#b2d4ec`), `mistica-blau-blau-blue-secondary30` (`#80b7df`).
+- **Neutral Ramp**: `mistica-blau-blau-blue-primary20` (`#e5f6fd`), `mistica-blau-blau-blue-secondary10` (`#e5f1f9`), `mistica-cyber-brand10` (`#f7f7ff`), `mistica-vivo-evolution-vivo-neutral0` (`#ffffff`), `mistica-vivo-evolution-vivo-neutral25` (`#f1eff6`), `mistica-vivo-evolution-vivo-neutral150` (`#e3deeb`).
+- **Semantic States**: success: `vivo-green950` (`#143824`) · danger: `blau-red` (`#D12937`) · warning: `mistica-telefonica-yellow` (`#e4c35c`).
 
 ## Typography
 
-Families declared in the source: `-apple-system, Roboto, Helvetica, Arial, sans-serif`, `"Lucida Grande", Arial, sans-serif`.
+- **Primary / Display Voice**: `-apple-system, Roboto, Helvetica, Arial, sans-serif` (top step `mistica-font-size-10`: 4rem, weight 600).
+- **Body & UI Controls**: `-apple-system, Roboto, Helvetica, Arial, sans-serif` (`mistica-font-size-card-pretitle-default`: 1rem, weight 400).
+- **Scale Steps (38)**: `mistica-font-size-10` (4rem), `mistica-font-size-9` (3.5rem), `mistica-font-size-8` (3rem), `mistica-font-size-7` (2.5rem), `mistica-font-size-6` (2rem), `mistica-font-size-title4` (2rem), `mistica-font-size-feedback-screen-title` (2rem), `mistica-font-size-5` (1.75rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0066ff` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 38 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f7f7ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f7f7ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0066ff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#0066ff`, ink `#ffffff`, (4.8:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f7f7ff`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f7f7ff`, ink `#0b0b0c`, (18.5:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0066ff`, ink `#ffffff`, (4.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f7f7ff`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0066ff` with `#f7f7f8` text (4.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f7f7ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

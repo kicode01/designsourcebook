@@ -3,7 +3,7 @@
   "surface": "#e7f3e7",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#fcebe6",
+  "brand": "#00395e",
   "border": "#d9d9d9",
   "radius": "3px",
   "ink": "#0b0b0c",
@@ -370,7 +370,7 @@
     },
     {
       "name": "primary",
-      "value": "#fcebe6"
+      "value": "#00395e"
     }
   ],
   "type": [
@@ -493,7 +493,8 @@
     {
       "key": "button",
       "kind": "button",
-      "textColor": "#000000"
+      "backgroundColor": "#00395e",
+      "textColor": "#ffffff"
     },
     {
       "key": "button-2",
@@ -559,8 +560,8 @@
     {
       "key": "badge-brand",
       "kind": "badge",
-      "backgroundColor": "#fcebe6",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#00395e",
+      "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
     },
@@ -581,6 +582,6 @@
       "padding": "10px 16px"
     }
   ],
-  "overview": "U.S. CMS.gov Design System — Crisp light (#ffffff) canvas, Open Sans typography, #fcebe6 brand accent, and 3px corner geometry",
-  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fcebe6` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `Open Sans` across 20 type steps.\n- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+  "overview": "**U.S. CMS.gov Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00395e` brand accent.\n\nTypography centers cleanly on `Open Sans` (60px display down to 16px body), unified by `3px` base corner radius and stepped `#ffffff` -> `#e7f3e7` surface layering.\n\nMaintained by **CMS**. Source: live stylesheet extraction (https://design.cms.gov/), repo https://github.com/CMSgov/design-system, package `@cmsgov/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **20** typography steps, and **13** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `8px 24px`, `8px 8px 8px 0px`, `8px`, `8px 32px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `#e7f3e7` cards; separate sibling sections using `#d9d9d9` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#e7f3e7`) and `1px solid #d9d9d9` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00395e` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#00395e` with `#f7f7f8` text (11.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `3px` base geometry across inputs and buttons (3px on outer containers).\n- Separate containers via `#e7f3e7` surface shifts and `#d9d9d9` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `3px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

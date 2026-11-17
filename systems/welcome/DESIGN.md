@@ -147,6 +147,13 @@ typography:
     fontFamily: "\"Work Sans\", sans-serif"
   font-family-title:
     fontFamily: "welcome-font, sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#ffe166"
@@ -194,21 +201,68 @@ components:
 
 ## Overview
 
-Welcome UI — tokens read from https://github.com/WTTJ/welcome-ui.
+**Welcome UI** is a light-first design system anchored on `#f6f3ef` canvas surfaces with `#0b0b0c` primary ink (17.8:1 contrast) and `button-color-text-primary-main-default` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 26 type tokens.
+Typography centers cleanly on `Work Sans` (128px display down to 16px body), unified by `8px` base corner radius and stepped `#f6f3ef` -> `#f3f3f3` surface layering.
+
+Maintained by **Welcome**. Source: published token package (https://github.com/WTTJ/welcome-ui), repo https://github.com/WTTJ/welcome-ui, package `welcome-ui`, frameworks: react. Inventory: **91** colors, **26** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f6f3ef` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f3f3f3` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (17.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `button-color-text-primary-main-default` (distinct vs canvas; pair with `#f7f7f8` foreground ink for verified contrast).
+- **Structural Border (`border`)**: `#dedede` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `checkbox-color-background-checked-hover` (`#ffe166`), `color-background-accent-pink-strong` (`#d17ba8`), `color-background-accent-violet-strongest` (`#5a4890`), `color-border-brand-secondary` (`#ffe166`), `color-icon-accent-blue-primary` (`#00202b`), `color-icon-accent-violet-subtle` (`#8068c6`).
+- **Neutral Ramp**: `accordion-subtitle-color-text-default` (`#212121`), `badge-color-text-blue` (`#ffffff`), `button-color-border-secondary-main-pressed` (`#dedede`), `button-color-icon-primary-neutral-default` (`#ffffff`), `button-color-icon-tertiary-danger-disabled` (`#989898`), `button-color-text-primary-main-default` (`#000000`).
+- **Semantic States**: success: `alert-color-text-success-body` (`#142603`) · danger: `button-color-background-primary-danger-hover` (`#e1003a`) · warning: `avatar-color-background-initials-orange` (`#ff9868`) · info: `color-background-information-primary` (`#55c3e9`).
 
 ## Typography
 
-Families declared in the source: `Work Sans', sans-serif`, `welcome-font', sans-serif`.
+- **Primary / Display Voice**: `"Work Sans", sans-serif` (top step `font-size-128`: 8rem, weight 600).
+- **Body & UI Controls**: `"Work Sans", sans-serif` (`font-family-body`: 16px, weight 400).
+- **Scale Steps (26)**: `font-size-128` (8rem), `font-size-72` (4.5rem), `font-size-7xl` (4.5rem), `font-size-60` (3.75rem), `font-size-6xl` (3.75rem), `font-size-48` (3rem), `font-size-5xl` (3rem), `font-size-36` (2.25rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ffe166` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Work Sans` across 26 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f3f3f3` cards; separate sibling sections using `#dedede` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6f3ef` -> `#f3f3f3`) and `1px solid #dedede` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `button-color-text-primary-main-default` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#ffe166`, ink `#0b0b0c`, (15.2:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#e1003a`, ink `#ffffff`, (4.9:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#ffe166`, ink `#0b0b0c`, (15.2:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#142603`, ink `#ffffff`, (16.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#f6f3ef` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `button-color-text-primary-main-default` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.
+- Pair `Work Sans` headings with `Work Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f3f3f3` surface shifts and `#dedede` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

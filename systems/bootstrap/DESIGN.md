@@ -176,6 +176,12 @@ typography:
     fontSize: 2.5rem
   figure-caption:
     fontSize: 0.875em
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  default: 6px
 components:
   link-info:
     textColor: "RGBA(13, 202, 240, 1)"
@@ -230,25 +236,69 @@ components:
 
 ## Overview
 
-Bootstrap — tokens imported from bootstrap.
+**Bootstrap** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0d6efd` brand accent.
 
-Tokens were read from `bootstrap@5.3.9`, not from a marketing site: 91 colour tokens and 40 type tokens.
+Display headlines pair `null` with `System UI` body copy (80px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `rgb(255, 255, 255)` surface layering.
+
+Source: published token package (https://getbootstrap.com/), repo https://github.com/twbs/bootstrap, package `bootstrap`, frameworks: css, react, vue. Inventory: **91** colors, **40** typography steps, and **13** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(255, 255, 255)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0d6efd` (4.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.2:1 contrast).
+- **Structural Border (`border`)**: `#c4c8cb` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `bs-primary` (`#0d6efd`), `bs-primary-text-emphasis` (`#052c65`), `bs-primary-bg-subtle` (`#cfe2ff`), `bs-primary-border-subtle` (`#9ec5fe`), `bs-table-border-color` (`#a6b5cc`), `bs-btn-border-color` (`#0d6efd`).
+- **Neutral Ramp**: `bs-secondary` (`#6c757d`), `bs-secondary-text-emphasis` (`#2b2f32`), `bs-light-text-emphasis` (`#495057`), `bs-dark-text-emphasis` (`#495057`), `bs-secondary-bg-subtle` (`#e2e3e5`), `bs-success-bg-subtle` (`#d1e7dd`).
+- **Semantic States**: success: `bs-success` (`#198754`) · danger: `bs-danger` (`#dc3545`) · warning: `bs-warning` (`#ffc107`) · info: `bs-info` (`#0dcaf0`).
 
 ## Typography
 
-Families declared in the source: `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`, `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `null`.
+- **Primary / Display Voice**: `null` (top step `display-1`: 5rem, weight 600).
+- **Body & UI Controls**: `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (`font-size-base`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`font-family-monospace`: 16px).
+- **Scale Steps (40)**: `display-1` (5rem), `display-2` (4.5rem), `display-3` (4rem), `display-4` (3.5rem), `display-5` (3rem), `h1` (2.5rem), `display-6` (2.5rem), `h2` (2rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `#c4c8cb` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `rgb(255, 255, 255)`) and `1px solid #c4c8cb` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d6efd` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
 
 ## Components
 
-6 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`link-info` (nav)**: ink `RGBA(13, 202, 240, 1)`.
+- **`link-dark-2` (nav)**: ink `RGBA(33, 37, 41, 1)`.
+- **`link-light-3` (nav)**: ink `RGBA(248, 249, 250, 1)`.
+- **`link-danger-4` (nav)**: ink `RGBA(220, 53, 69, 1)`.
+- **`link-primary-5` (nav)**: ink `RGBA(13, 110, 253, 1)`.
+- **`link-success-6` (nav)**: ink `RGBA(25, 135, 84, 1)`.
+- **`button-primary` (button)**: bg `#0d6efd`, ink `#ffffff`, (4.5:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0d6efd` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 40 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0d6efd` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `null` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `rgb(255, 255, 255)` surface shifts and `#c4c8cb` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -370,6 +370,13 @@ typography:
     fontSize: 1.125rem
   g-font-family-base:
     fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+rounded:
+  card: 0.25rem
+  input: 0.25rem
+  button: 0.25rem
+  badge: 15rem
+  nav: "0"
+  default: 0.25rem
 components:
   panel:
     backgroundColor: "rgb(255, 255, 255)"
@@ -474,25 +481,69 @@ components:
 
 ## Overview
 
-Salesforce Lightning — tokens imported from @salesforce-ux/design-system.
+**Lightning** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(3, 35, 77)` brand accent.
 
-Tokens were read from `@salesforce-ux/design-system@2.264.3`, not from a marketing site: 91 colour tokens and 120 type tokens.
+Typography centers cleanly on `System UI` (42px display down to 16px body), unified by `0.25rem` base corner radius and subtle shadow elevation.
+
+Maintained by **Salesforce**. Source: published token package, repo https://github.com/salesforce-ux/design-system, package `@salesforce-ux/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **120** typography steps, and **38** documented components (BSD-3-Clause license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgb(255, 255, 255)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(255, 255, 255)` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgb(3, 35, 77)` (15.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 14.5:1 contrast).
+- **Structural Border (`border`)**: `rgb(243, 243, 243)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `g-color-brand-base-10` (`#001639`), `color-brand-base-15` (`rgb(3, 35, 77)`), `brand-accessible` (`rgb(1, 118, 211)`), `brand-primary-active` (`rgb(1, 118, 211)`), `brand` (`rgb(88, 103, 232)`), `color-background-button-brand-hover` (`rgb(1, 68, 134)`).
+- **Neutral Ramp**: `color-neutral-base100` (`rgb(255, 255, 255)`), `color-brand-base100` (`rgb(255, 255, 255)`), `color-error-base100` (`rgb(255, 255, 255)`), `g-color-neutral-base-10` (`#181818`), `color-neutral-base-15` (`rgb(36, 36, 36)`), `palette-neutral-90` (`#e5e5e5`).
+- **Semantic States**: success: `color-success-base40` (`rgb(57, 101, 71)`) · danger: `color-background-error-dark` (`rgb(186, 5, 23)`) · warning: `color-warning-base70` (`rgb(254, 147, 57)`) · info: `link-color-active` (`rgb(3, 45, 96)`).
 
 ## Typography
 
-Families declared in the source: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `Consolas, Menlo, Monaco, Courier, monospace`, `"Monospace font stack for your application."`, `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `sans-serif`.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `var-font-size11`: 2.625rem, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`font-size-base`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `Consolas, Menlo, Monaco, Courier, monospace` (`expression-title`: 1.125rem).
+- **Scale Steps (120)**: `var-font-size11` (2.625rem), `font-size11` (2.625rem), `var-font-size-11` (2.625rem), `font-size-11` (2.625rem), `welcome-mat-font-size-info-title` (2.625rem), `welcome-mat-info-title` (2.625rem, w700), `var-font-size10` (2rem), `font-size10` (2rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 38 component tokens with documented paddings: `0 1rem`, `0 0.125rem`, `0.5rem 1.5rem 0.5rem 2rem`, `0.5rem 0.75rem`, `0 0.5rem`.
+- **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `rgb(243, 243, 243)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 0 3px #0176d3`, `inset 0 0 0 rgb(27, 150, 255)`) paired with `rgb(243, 243, 243)` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(3, 35, 77)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0.25rem` (Buttons `0.25rem` · Inputs `0.25rem` · Cards `0.25rem` · Badges `15rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `0.25rem` container.
 
 ## Components
 
-38 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`panel` (card)**: bg `rgb(255, 255, 255)`, radius `0.25rem`.
+- **`table` (nav)**: bg `rgb(255, 255, 255)`.
+- **`link` (nav)**: ink `rgb(11, 92, 171)`.
+- **`input` (input)**: bg `rgb(255, 255, 255)`, ink `rgb(1, 118, 211)`, (4.6:1), radius `0.25rem`, padding `0 1rem`, border `1px solid rgb(201, 201, 201)`.
+- **`panel-2` (card)**: bg `rgb(255, 255, 255)`, radius `0.25rem 0.25rem 0 0`, border `1px solid rgb(229, 229, 229)`.
+- **`button` (button)**: ink `rgb(1, 68, 134)`, radius `0.25rem`, border `1px solid rgb(201, 201, 201)`.
+- **`input-focus-2` (input)**: bg `rgb(255, 255, 255)`, border `1px solid rgb(27, 150, 255)`.
+- **`badge` (badge)**: bg `rgb(186, 5, 23)`, ink `rgb(255, 255, 255)`, (6.7:1), radius `15rem`, padding `0 0.125rem`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(3, 35, 77)` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 120 type steps.
-- **Component Geometry**: Buttons (`0.25rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `rgb(3, 35, 77)` with `#f7f7f8` text (14.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `0.25rem` base geometry across inputs and buttons (0.25rem on outer containers).
+- Separate containers via `rgb(255, 255, 255)` surface shifts and `rgb(243, 243, 243)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `0.25rem` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

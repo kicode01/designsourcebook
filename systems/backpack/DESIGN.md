@@ -157,6 +157,13 @@ typography:
     fontSize: 1rem
   original-value:
     fontFamily: "Larken, sans-serif"
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#024daf"
@@ -204,21 +211,68 @@ components:
 
 ## Overview
 
-Skyscanner Backpack — tokens read from https://github.com/skyscanner/backpack.
+**Backpack** is a dark-first design system anchored on `#131d2b` canvas surfaces with `#ffffff` primary ink (17.0:1 contrast) and `#024daf` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+Typography centers cleanly on `Skyscanner Relative` (120px display down to 16px body), unified by `8px` base corner radius and stepped `#131d2b` -> `#010913` surface layering.
+
+Maintained by **Skyscanner**. Source: published token package (https://github.com/skyscanner/backpack), repo https://github.com/Skyscanner/backpack, package `@skyscanner/bpk-foundations-web`, frameworks: react, css. Inventory: **91** colors, **31** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#131d2b` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#010913` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#ffffff` — body copy and primary headings (17.0:1 on canvas).
+- **Muted Ink (`muted`)**: `#ffffff` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#024daf` (2.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 7.3:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #ffffff 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `bpk-private-button-colour-bg-primary` (`#024daf`), `bpk-private-button-colour-bg-primary-pressed` (`#054184`), `bpk-private-button-colour-bg-primary-on-light` (`#05203c`), `bpk-private-button-colour-bg-primary-on-light-presse` (`#154679`), `bpk-private-button-colour-bg-secondary` (`#243346`), `bpk-private-button-colour-bg-secondary-on-contrast` (`#243346`).
+- **Neutral Ramp**: `bpk-private-autosuggest-colour-border-default` (`#ffffff`), `bpk-private-autosuggest-colour-text-close` (`#ffffff`), `bpk-private-button-colour-bg-disabled` (`#0b121d`), `bpk-private-button-colour-bg-primary-on-dark` (`#ffffff`), `bpk-private-button-colour-bg-primary-on-dark-pressed` (`#c1c7cf`), `bpk-private-button-colour-bg-secondary-pressed` (`#010913`).
+- **Semantic States**: success: `bpk-status-success-spot` (`#62f1c6`) · danger: `bpk-private-button-colour-text-destructive` (`#e70866`) · warning: `bpk-status-warning-spot` (`#feeb87`) · info: `bpk-text-deprecated-link` (`#84e9ff`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `"Skyscanner Relative", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif` (top step `font-size8-xl`: 7.5rem, weight 600).
+- **Body & UI Controls**: `"Skyscanner Relative", -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif` (`font-family-base`: 16px, weight 400).
+- **Scale Steps (31)**: `font-size8-xl` (7.5rem), `bpk-font-size-8-xl` (7.5rem), `font-size7-xl` (6rem), `bpk-font-size-7-xl` (6rem), `font-size6-xl` (4.75rem), `bpk-font-size-6-xl` (4.75rem), `font-size-xxxxxl` (4rem), `bpk-font-size-xxxxxl` (4rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#131d2b) canvas paired with `#131d2b` component surfaces and `#ffffff` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#024daf` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Larken` across 31 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#010913` cards; separate sibling sections using `color-mix(in srgb, #ffffff 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#131d2b` -> `#010913`) and `1px solid color-mix(in srgb, #ffffff 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#024daf` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#024daf`, ink `#ffffff`, (7.8:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#ffffff`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#e70866`, ink `#ffffff`, (4.5:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#010913`, ink `#ffffff`, (20.0:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#010913`, ink `#ffffff`, (20.0:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#024daf`, ink `#ffffff`, (7.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#62f1c6`, ink `#000000`, (14.9:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#010913`, ink `#ffffff`, (20.0:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#131d2b` (dark) with `#ffffff` primary text and `#ffffff` secondary labels.
+- Use `#024daf` with `#f7f7f8` text (7.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Skyscanner Relative` headings with `Skyscanner Relative` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#010913` surface shifts and `color-mix(in srgb, #ffffff 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

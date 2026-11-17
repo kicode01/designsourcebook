@@ -63,6 +63,13 @@ colors:
 typography:
   font-size:
     fontSize: 0.875rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#1F5493"
@@ -110,21 +117,67 @@ components:
 
 ## Overview
 
-Spotify Backstage — tokens imported from @backstage/theme.
+**Spotify Backstage** is a light-first design system anchored on `#F8F8F8` canvas surfaces with `#000000` primary ink (19.8:1 contrast) and `#1F5493` brand accent.
 
-Tokens were read from `@backstage/theme@0.7.3`, not from a marketing site: 57 colour tokens and 1 type tokens.
+Typography centers cleanly on `System UI` (14px display down to 14px body), unified by `8px` base corner radius and stepped `#F8F8F8` -> `#FFFFFF` surface layering.
+
+Maintained by **Spotify**. Source: published token package (https://backstage.io), repo https://github.com/backstage/backstage, package `@backstage/theme`, frameworks: react. Inventory: **57** colors, **1** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-57 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#F8F8F8` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#FFFFFF` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#000000` — body copy and primary headings (19.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#6E6E6E` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#1F5493` (7.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 7.1:1 contrast).
+- **Structural Border (`border`)**: `#E6E6E6` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `status-ok` (`#1DB954`), `status-running` (`#1F5493`), `status-pending` (`#FFED51`), `background-color-default` (`#7C3699`), `primary-main` (`#1F5493`), `tabbar-indicator` (`#9BF0E1`).
+- **Neutral Ramp**: `background-default` (`#F8F8F8`), `background-paper` (`#FFFFFF`), `status-aborted` (`#757575`), `banner-text` (`#FFFFFF`), `banner-link` (`#000000`), `banner-close-button-color` (`#FFFFFF`).
+- **Semantic States**: danger: `status-error` (`#E22134`) · warning: `status-warning` (`#FF9800`) · info: `banner-info` (`#2E77D0`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `system-ui` (top step `font-size`: 0.875rem, weight 600).
+- **Body & UI Controls**: `system-ui` (`font-size`: 0.875rem, weight 400).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#F8F8F8) canvas paired with `#7C3699` component surfaces and `#000000` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1F5493` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 1 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `#E6E6E6` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F8F8F8` -> `#FFFFFF`) and `1px solid #E6E6E6` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1F5493` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#1F5493`, ink `#ffffff`, (7.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#000000`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#E22134`, ink `#ffffff`, (4.7:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#1F5493`, ink `#ffffff`, (7.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#F8F8F8` (light) with `#000000` primary text and `#6E6E6E` secondary labels.
+- Use `#1F5493` with `#f7f7f8` text (7.1:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#FFFFFF` surface shifts and `#E6E6E6` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -97,6 +97,11 @@ typography:
     fontFamily: "Arizona, Georgia, serif"
   font-mono:
     fontFamily: "\"Apercu Mono\", \"SF Mono\", Monaco, Consolas, monospace"
+rounded:
+  card: 8px
+  button: 40px
+  input: 8px
+  default: 8px
 components:
   card:
     backgroundColor: "#fafafa"
@@ -223,25 +228,68 @@ components:
 
 ## Overview
 
-Mixpanel Design System — read from design.mixpanel.com's live stylesheets, not a published token package.
+**Mixpanel Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff8e75` brand accent.
 
-Tokens were read from https://design.mixpanel.com, not from a published token package: 85 colour tokens and 4 type tokens.
+Typography centers cleanly on `Garnett` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fafafa` surface layering.
+
+Maintained by **Mixpanel**. Source: live stylesheet extraction (https://design.mixpanel.com), frameworks: css. Inventory: **85** colors, **4** typography steps, and **25** documented components (all rights reserved license).
 
 ## Colors
 
-85 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fafafa` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff8e75` (2.2:1 vs canvas; pair with `#0b0b0c` foreground ink for 8.8:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `purple-02` (`#dad0ff`), `purple-03` (`#c1b1ff`), `purple-04` (`#a993ff`), `purple-05` (`#9074ff`), `purple-06` (`#7856ff`), `purple-07` (`#5f41cf`).
+- **Neutral Ramp**: `purple-01` (`#f2eeff`), `gray-01` (`#fafafa`), `gray-02` (`#f4f4f4`), `gray-03` (`#eaeaea`), `gray-04` (`#dfdfdf`), `gray-05` (`#d5d5d5`).
 
 ## Typography
 
-Families declared in the source: `Garnett, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`, `Arizona, Georgia, serif`, `"Apercu Mono", "SF Mono", Monaco, Consolas, monospace`.
+- **Primary / Display Voice**: `Garnett, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif` (top step `font-size-base`: 16px, weight 600).
+- **Body & UI Controls**: `Garnett, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif` (`font-size-base`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"Apercu Mono", "SF Mono", Monaco, Consolas, monospace` (`font-mono`: 16px).
+- **Scale Steps (4)**: `font-size-base` (16px), `font-sans` (16px), `font-serif` (16px), `font-mono` (16px).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `24px`, `8px 32px`, `0 14px 0 16px`, `6px 12px`, `4px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#fafafa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8e75` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `40px` · Inputs `8px` · Cards `8px` · Navigation `0`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`card` (card)**: bg `#fafafa`, radius `8px`, padding `24px`, border `1px solid #eaeaea`.
+- **`link` (nav)**: ink `#c1b1ff`, radius `0`, padding `8px 32px`.
+- **`btn-dark` (button)**: bg `#1f2023`, ink `#ffffff`, (16.3:1), radius `40px`, padding `0 14px 0 16px`.
+- **`label` (badge)**: ink `#1f2023`.
+- **`btn-2` (button)**: bg `#472ba0`, ink `#c1b1ff`, (5.2:1), radius `4px`, padding `6px 12px`.
+- **`tag-pool` (badge)**: bg `rgba(114, 190, 244, 0.1)`, ink `#1d4b6d`, (8.6:1), border `1px solid rgba(114, 190, 244, 0.5)`.
+- **`tag-mint-2` (badge)**: bg `rgba(127, 225, 216, 0.1)`, ink `#205f56`, (7.1:1), border `1px solid rgba(127, 225, 216, 0.5)`.
+- **`tag-lava-3` (badge)**: bg `rgba(255, 117, 87, 0.1)`, ink `#661d2d`, (10.7:1), border `1px solid rgba(255, 117, 87, 0.5)`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8e75` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Garnett` across 4 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff8e75` with `#0b0b0c` text (8.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Garnett` headings with `Garnett` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#fafafa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -119,6 +119,10 @@ typography:
     fontFamily: aalto-icons
   body:
     fontSize: 1rem
+rounded:
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button:
     textColor: "#141414"
@@ -166,25 +170,69 @@ components:
 
 ## Overview
 
-Aalto University — read from the rendered page in a browser, not from published tokens.
+**Aalto University** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#ff8d4f` brand accent.
 
-Tokens were read from https://brand.aalto.fi/, not from a published token package: 91 colour tokens and 12 type tokens.
+Typography centers cleanly on `inter` (64px display down to 20px body), unified by `8px` base corner radius and stepped `#fafafa` -> `#f2f2f2` surface layering.
+
+Source: live stylesheet extraction (https://brand.aalto.fi/), frameworks: css. Inventory: **91** colors, **11** typography steps, and **11** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fafafa` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f2f2f2` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff8d4f` (2.2:1 vs canvas; pair with `#0b0b0c` foreground ink for 8.6:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `surface` (`#fd6360`), `aalto-blue-1` (`#46a5ff`), `aalto-blue-2` (`#183856`), `eng-1` (`#dc6ade`), `eng-2` (`#472247`), `elec-1` (`#a987ff`).
+- **Neutral Ramp**: `1` (`#ffffff`), `2` (`#fafafa`), `3` (`#f2f2f2`), `4` (`#e0e0e0`), `5` (`#505050`), `6` (`#212121`).
+- **Semantic States**: danger: `aalto-red-1` (`#fd6360`) · warning: `aalto-yellow-1` (`#f7e159`).
 
 ## Typography
 
-Families declared in the source: `inter`, `besley`, `"source code pro"`, `aalto-icons`.
+- **Primary / Display Voice**: `inter` (top step `aalto-base-font-size-7`: 4rem, weight 600).
+- **Body & UI Controls**: `inter` (`aalto-base-font-size-4`: 1.25rem, weight 400).
+- **Monospace / Technical Labels**: `"source code pro"` (`aalto-base-font-family-code`: 16px).
+- **Scale Steps (11)**: `aalto-base-font-size-7` (4rem), `aalto-base-font-size-6` (2rem), `aalto-base-font-size-5` (1.5rem), `aalto-base-font-size-4` (1.25rem), `aalto-base-font-size-3` (1.125rem), `aalto-base-font-size-2` (1rem), `aalto-base-font-family-primary` (16px), `aalto-base-font-family-secondary` (16px).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0px 11.25px 0px 0px`, `15px`, `0px 0px 32px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#f2f2f2`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8d4f` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-8 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: ink `#141414`, padding `0px 11.25px 0px 0px`, border `1px solid rgba(0, 0, 0, 0)`.
+- **`button-2` (button)**: bg `#ffffff`, ink `#141414`, (18.4:1), padding `15px`, border `1px solid rgb(21, 21, 21)`.
+- **`button-3` (button)**: bg `#000000`, ink `#ffffff`, (21.0:1), padding `15px`, border `1px solid rgb(21, 21, 21)`.
+- **`button-4` (button)**: bg `#f2f2f2`, ink `#505050`, (7.2:1).
+- **`input` (input)**: ink `#141414`.
+- **`card` (card)**: bg `#ffffff`, ink `#151515`, (18.3:1), padding `0px 0px 32px`.
+- **`card-2` (card)**: bg `#f2f2f2`, ink `#505050`, (7.2:1).
+- **`card-3` (card)**: ink `#505050`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fafafa) canvas paired with `#fafafa` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8d4f` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `inter` across 12 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff8d4f` with `#0b0b0c` text (8.6:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `inter` headings with `inter` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#f2f2f2` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

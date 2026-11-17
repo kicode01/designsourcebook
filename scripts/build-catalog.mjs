@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { splitFrontMatter } from "../lib/fm.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -24,6 +25,8 @@ const systems = fs
 
     const m = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
     const p = JSON.parse(fs.readFileSync(previewPath, "utf8"));
+    const designPath = path.join(dir, "DESIGN.md");
+    const fm = fs.existsSync(designPath) ? splitFrontMatter(fs.readFileSync(designPath, "utf8")).data : {};
 
     return {
       slug: m.name,
@@ -37,6 +40,7 @@ const systems = fs
       theme: m.theme || "dark",
       tags: m.tags || [],
       license: m.license || "unknown",
+      homepage: m.homepage || m.source?.url || null,
       repo: m.source?.repo || null,
       package: m.source?.package || null,
       stars: m.popularity?.stars || 0,
@@ -56,6 +60,8 @@ const systems = fs
       brand: p.brand,
       border: p.border,
       radius: p.radius,
+      rounded: fm.rounded || undefined,
+      spacing: fm.spacing || undefined,
       palette: p.palette,
       type: p.type,
       components: p.components,

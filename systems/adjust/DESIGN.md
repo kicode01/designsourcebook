@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Adjust Atlas
-description: "Deep indigo analytics surfaces, electric blue and violet data accents"
+description: "Dark Infima (#242526) developer surfaces, electric blue (#3578e5) accents, technical slate cards"
 colors:
   ifm-color-primary: "#3578e5"
   ifm-color-secondary: "#ebedf0"
@@ -113,6 +113,12 @@ typography:
     fontFamily: "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
   toastify-font-family:
     fontFamily: sans-serif
+rounded:
+  badge: 0.4rem
+  nav: 2rem
+  button: 0.4rem
+  input: 0.4rem
+  default: 0.4rem
 components:
   card:
     backgroundColor: "#242526"
@@ -189,25 +195,69 @@ components:
 
 ## Overview
 
-Adjust Atlas — read from atlas.adeven.com's live stylesheets, not a published token package.
+**Adjust Atlas** is a dark-first design system anchored on `#000` canvas surfaces with `#f7f7f8` primary ink (19.6:1 contrast) and `#3578e5` brand accent.
 
-Tokens were read from https://atlas.adeven.com, not from a published token package: 91 colour tokens and 11 type tokens.
+Typography centers cleanly on `System Sans` (32px display down to 16px body), unified by `0.4rem` base corner radius and subtle shadow elevation.
+
+Maintained by **Adjust**. Source: live stylesheet extraction (https://atlas.adeven.com), frameworks: css. Inventory: **91** colors, **9** typography steps, and **21** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#000` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#242526` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (19.6:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3578e5` (5.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.9:1 contrast).
+- **Structural Border (`border`)**: `#484d5b` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `ifm-color-primary` (`#3578e5`), `ifm-color-primary-dark` (`#306cce`), `ifm-color-primary-darker` (`#2d66c3`), `ifm-color-primary-darkest` (`#2554a0`), `ifm-color-primary-light` (`#538ce9`), `ifm-color-primary-lighter` (`#72a1ed`).
+- **Neutral Ramp**: `ifm-color-secondary` (`#ebedf0`), `ifm-color-primary-contrast-background` (`#ebf2fc`), `ifm-color-secondary-dark` (`#d4d5d8`), `ifm-color-secondary-darker` (`#c8c9cc`), `ifm-color-secondary-darkest` (`#a4a6a8`), `ifm-color-secondary-light` (`#eef0f2`).
+- **Semantic States**: success: `ifm-color-success` (`#00a400`) · danger: `ifm-color-danger` (`#fa383e`) · warning: `ifm-color-warning` (`#ffba00`) · info: `ifm-color-info` (`#54c7ec`).
 
 ## Typography
 
-Families declared in the source: `system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol`, `SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace`, `var(--ifm-font-family-base)`, `sans-serif`.
+- **Primary / Display Voice**: `sans-serif` (top step `ifm-h1-font-size`: 2rem, weight 600).
+- **Body & UI Controls**: `sans-serif` (`ifm-h4-font-size`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`ifm-font-family-monospace`: 16px).
+- **Scale Steps (9)**: `ifm-h1-font-size` (2rem), `ifm-h2-font-size` (1.5rem), `ifm-h3-font-size` (1.25rem), `ifm-pagination-font-size` (1.2rem), `ifm-h4-font-size` (1rem), `ifm-font-family-monospace` (16px), `toastify-font-family` (16px), `ifm-h5-font-size` (0.875rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0 .5rem 0 2.25rem`, `.6rem 1.5rem`, `10px 18px`, `9px 13px`.
+- **Hierarchy**: Group controls cleanly within `#242526` cards; separate sibling sections using `#484d5b` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 1px 2px 0 #0000001a`, `0 1px 2px 0 #0000001a`) paired with `#484d5b` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3578e5` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0.4rem` (Inputs `0.4rem` · Badges `0.4rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `0.4rem` container.
 
 ## Components
 
-21 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`card` (card)**: bg `#242526`.
+- **`tabs` (nav)**: ink `#fff`.
+- **`badge` (badge)**: ink `#fff`, radius `0.4rem`, border `1px solid inherit`.
+- **`navbar` (nav)**: bg `#242526`.
+- **`navbar-2` (nav)**: ink `#e3e3e3`.
+- **`navbar-3` (nav)**: ink `#e3e3e3`.
+- **`navbar-sidebar-4` (nav)**: bg `#242526`.
+- **`navbar-5` (nav)**: ink `#ebedf0`, radius `2rem`, padding `0 .5rem 0 2.25rem`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3578e5` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 9 type steps.
-- **Component Geometry**: Buttons (`0.4rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#000` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `#3578e5` with `#f7f7f8` text (3.9:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System Sans` headings with `System Sans` body copy using documented weights and scale steps.
+- Apply `0.4rem` base geometry across inputs and buttons (0.4rem on outer containers).
+- Separate containers via `#242526` surface shifts and `#484d5b` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `0.4rem` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

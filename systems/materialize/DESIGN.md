@@ -176,6 +176,12 @@ typography:
     fontWeight: 400
   font-size:
     fontSize: 12px
+rounded:
+  button: 2px
+  card: 2px
+  badge: 16px
+  input: 4px
+  default: 2px
 components:
   btn:
     backgroundColor: "#26a69a"
@@ -240,25 +246,67 @@ components:
 
 ## Overview
 
-Materialize CSS — tokens read from https://github.com/Dogfalo/materialize.
+**Materialize CSS** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#FF8A80` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 47 colour tokens and 18 type tokens.
+Typography centers cleanly on `System UI` (67px display down to 16px body), unified by `2px` base corner radius and subtle shadow elevation.
+
+Maintained by **Materialize**. Source: published token package (https://github.com/Dogfalo/materialize), repo https://github.com/Dogfalo/materialize, package `materialize-css`, frameworks: css. Inventory: **47** colors, **52** typography steps, and **10** documented components (see repository license).
 
 ## Colors
 
-47 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#FFFFFF` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fdeaeb` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#FF8A80` (2.3:1 vs canvas; pair with `#0b0b0c` foreground ink for 8.6:1 contrast).
+- **Structural Border (`border`)**: `#ddd` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `base` (`#e51c23`), `lighten-4` (`#f8c1c3`), `lighten-3` (`#f3989b`), `lighten-2` (`#ee6e73`), `lighten-1` (`#ea454b`), `darken-1` (`#d0181e`).
+- **Neutral Ramp**: `lighten-5` (`#fdeaeb`), `black` (`#000000`), `white` (`#FFFFFF`), `datepicker-calendar-header-color` (`#999`), `button-disabled-background` (`#DFDFDF`), `button-disabled-color` (`#9F9F9F`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (top step `h1-fontsize`: 4.2rem, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (`md-sys-typescale-body-large-font-size`: 16px, weight 400).
+- **Scale Steps (52)**: `h1-fontsize` (4.2rem), `md-sys-typescale-display-large-font-size` (57px), `h2-fontsize` (3.56rem), `h2` (3.56rem), `h3-fontsize` (2.92rem), `h3` (2.92rem), `md-sys-typescale-display-medium-font-size` (45px), `datepicker-display-font-size` (2.8rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0 16px`, `0 12px`, `24px`, `0`, `9px 13px`.
+- **Hierarchy**: Group controls cleanly within `#fdeaeb` cards; separate sibling sections using `#ddd` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)`, `0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)`) paired with `#ddd` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF8A80` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `2px` (Buttons `2px` · Inputs `4px` · Cards `2px` · Badges `16px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `2px` container.
 
 ## Components
 
-9 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`btn` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `2px`, padding `0 16px`.
+- **`card` (card)**: bg `#fff`, radius `2px`.
+- **`tabs` (nav)**: bg `#fff`.
+- **`chip` (badge)**: bg `#e4e4e4`, ink `rgba(0, 0, 0, 0.6)`, (5.3:1), radius `16px`, padding `0 12px`.
+- **`btn-flat-2` (button)**: bg `transparent`, ink `#343434`, radius `2px`, padding `0 16px`.
+- **`btn-large-3` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `2px`, padding `0 16px`.
+- **`btn-small-4` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `2px`, padding `0 16px`.
+- **`card-panel-2` (card)**: bg `#fff`, radius `2px`, padding `24px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#FFFFFF) canvas paired with `#FFFFFF` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF8A80` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 52 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#FF8A80` with `#0b0b0c` text (8.6:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `2px` base geometry across inputs and buttons (2px on outer containers).
+- Separate containers via `#fdeaeb` surface shifts and `#ddd` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `2px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

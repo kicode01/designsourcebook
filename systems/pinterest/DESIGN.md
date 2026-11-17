@@ -57,6 +57,13 @@ typography:
     fontFamily: "\"Pin Sans\""
     fontSize: 12px
     fontWeight: 400
+rounded:
+  button: 16px
+  input: 24px
+  card: 24px
+  badge: 999px
+  nav: 24px
+  default: 24px
 components:
   button-primary-red:
     backgroundColor: "#e60023"

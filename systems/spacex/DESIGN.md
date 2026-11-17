@@ -49,6 +49,13 @@ typography:
     fontWeight: 400
     lineHeight: 0.94
     letterSpacing: 1px
+rounded:
+  button: 32px
+  input: 32px
+  card: 32px
+  badge: 999px
+  nav: 32px
+  default: 32px
 components:
   button-ghost:
     backgroundColor: "rgba(240, 240, 250, 0.1)"

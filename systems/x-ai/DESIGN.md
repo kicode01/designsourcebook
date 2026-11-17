@@ -50,6 +50,13 @@ typography:
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.5
+rounded:
+  button: 0px
+  badge: 0px
+  input: 0px
+  card: 0px
+  nav: 0px
+  default: 0px
 components:
   button-primary:
     backgroundColor: "#ffffff"
@@ -62,6 +69,7 @@ components:
     padding: 12px 24px
   button-text-link:
     textColor: "#ffffff"
+    rounded: 0px
   badge-monospace-tag:
     textColor: "#ffffff"
     rounded: 0px
@@ -69,17 +77,17 @@ components:
   input-default:
     backgroundColor: "#1f2228"
     textColor: "#f7f7f8"
-    rounded: 4px
+    rounded: 0px
     padding: 9px 13px
   card-surface:
     backgroundColor: "#1f2228"
     textColor: "#f7f7f8"
-    rounded: 8px
+    rounded: 0px
     padding: 18px 20px
   nav-bar:
     backgroundColor: "#1f2228"
     textColor: "#f7f7f8"
-    rounded: 4px
+    rounded: 0px
     padding: 10px 16px
 ---
 

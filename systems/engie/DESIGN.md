@@ -229,6 +229,12 @@ typography:
     fontFamily: "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
   nj-semantic-font-family-default:
     fontFamily: "Lato, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+rounded:
+  card: "0"
+  badge: "50%"
+  input: "0"
+  button: "0"
+  default: "0"
 components:
   card:
     textColor: "#171d21"
@@ -288,25 +294,69 @@ components:
 
 ## Overview
 
-ENGIE Fluid Design System — read from the rendered page in a browser, not from published tokens.
+**ENGIE Fluid Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3c8dd6` brand accent.
 
-Tokens were read from https://www.engie.design, not from a published token package: 91 colour tokens and 64 type tokens.
+Display headlines pair `Lato` with `System Mono` body copy (88px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.
+
+Maintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.design), repo https://github.com/engie-group/fluid-design-system, package `@engie-group/fluid-design-tokens`, frameworks: react, angular, web-components, css. Inventory: **91** colors, **64** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f5f5f5` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3c8dd6` (3.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.3:1 contrast).
+- **Structural Border (`border`)**: `#ccd4da` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `nj-semantic-color-background-status-planet-tertiary-` (`#95dfdd`), `nj-semantic-color-icon-accent-grey-contrast-default` (`#334551`), `nj-semantic-color-border-brand-subtle-selected` (`#3c8dd6`), `nj-semantic-color-border-accent-blue-subtle-default` (`#bfd4f5`), `nj-semantic-color-background-accent-teal-solid-hover` (`#0a6361`), `nj-semantic-color-icon-accent-blue-contrast-default` (`#004573`).
+- **Neutral Ramp**: `nj-semantic-color-icon-neutral-secondary-focused` (`#232d35`), `nj-semantic-color-background-status-success-secondar` (`#f3faf4`), `nj-semantic-color-border-neutral-inverse-selected` (`#ccd4da`), `nj-semantic-color-background-accent-grey-secondary-p` (`#ccd4da`), `nj-semantic-color-background-neutral-secondary-focus` (`#ebeef1`), `nj-semantic-color-background-status-discovery-spotli` (`#312838`).
+- **Semantic States**: success: `nj-semantic-color-border-accent-green-strong-selecte` (`#004d1c`) · danger: `nj-semantic-color-border-status-danger-moderate-defa` (`#f34e46`) · warning: `nj-semantic-color-icon-accent-orange-contrast-defaul` (`#693315`).
 
 ## Typography
 
-Families declared in the source: `Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `"Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`, `ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`.
+- **Primary / Display Voice**: `Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `nj-semantic-font-size-display-2xl-desktop`: 5.5rem, weight 600).
+- **Body & UI Controls**: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`tw-default-mono-font-family`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`nj-core-font-family-monospace`: 16px).
+- **Scale Steps (64)**: `nj-semantic-font-size-display-2xl-desktop` (5.5rem), `nj-semantic-font-size-display-2xl` (5.5rem), `h2` (4.75rem), `njs-landing-heading` (4.75rem), `nj-semantic-font-size-display-xl-desktop` (4.5rem), `nj-semantic-font-size-display-2xl-mobile` (4.5rem), `nj-semantic-font-size-display-xl` (4.5rem), `njd-fluid-5-hero-title` (4rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0.5rem 1.5rem`, `0.25rem 0.5rem`, `1.5rem`, `0.25rem 0.75rem`, `10px 18px`.
+- **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#ccd4da` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 0 0 1px #ccd4da`) paired with `#ccd4da` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3c8dd6` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0` (Inputs `0` · Cards `0` · Badges `50%`).
+- **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
 
 ## Components
 
-15 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`card` (card)**: ink `#171d21`, radius `0`, border `solid  #ccd4da`.
+- **`tab` (nav)**: bg `transparent`, ink `#171d21`, padding `0.5rem 1.5rem`.
+- **`link` (nav)**: ink `#007bc5`.
+- **`nj-footer-card-2` (card)**: bg `#f6f8f9`.
+- **`card-3` (card)**: bg `#007bc5`, ink `#fff`, (4.5:1).
+- **`tab-2` (nav)**: ink `#171d21`.
+- **`btn-sidebar` (button)**: bg `#e01b78`.
+- **`nj-decorative-badge` (badge)**: bg `#f6f8f9`, radius `50%`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3c8dd6` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Lato` across 64 type steps.
-- **Component Geometry**: Buttons (`0`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#3c8dd6` with `#f7f7f8` text (3.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Lato` headings with `System Mono` body copy using documented weights and scale steps.
+- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.
+- Separate containers via `#f5f5f5` surface shifts and `#ccd4da` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
+- Do not truncate or drop border contrast on `nj-chat-input-suggestion` fields and secondary buttons.

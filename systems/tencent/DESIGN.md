@@ -70,7 +70,7 @@ colors:
   td-text-color-anti: "#fff"
   td-scroll-track-color: "#fff"
   stroke: "#000"
-  primary: "#f2f3ff"
+  primary: "#0052d9"
 typography:
   td-font-size-link-small:
     fontSize: 12px
@@ -110,6 +110,12 @@ typography:
     fontFamily: "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Regular\""
   td-font-family-medium:
     fontFamily: "\"PingFang SC\", \"Microsoft YaHei\", \"Arial Medium\""
+rounded:
+  badge: 3px
+  card: 6px
+  input: 3px
+  button: 3px
+  default: 6px
 components:
   tag:
     textColor: "rgba(0, 0, 0, 0.9)"
@@ -199,25 +205,68 @@ components:
 
 ## Overview
 
-Tencent TDesign — enterprise design system across Tencent products.
+**Tencent TDesign** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0052d9` brand accent.
 
-Tokens were read from `tdesign-react@1.18.6`, not from a marketing site: 68 colour tokens and 19 type tokens.
+Typography centers cleanly on `PingFang SC` (64px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `#FFFFFF` surface layering.
+
+Maintained by **Tencent**. Source: published token package (https://github.com/Tencent/tdesign-react/tree/develop#readme), repo https://github.com/Tencent/tdesign-react, package `tdesign-react`, frameworks: react, vue, web-components. Inventory: **68** colors, **19** typography steps, and **25** documented components (MIT license).
 
 ## Colors
 
-68 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#FFFFFF` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0052d9` (6.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 6.1:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `fill` (`#D54941`), `color` (`#0052D9`), `default-color` (`#001F97`), `td-brand-color-2` (`#d9e1ff`), `td-brand-color-3` (`#b5c7ff`), `td-brand-color-4` (`#8eabff`).
+- **Neutral Ramp**: `style-color` (`#fff`), `default-background-color` (`#FFFFFF`), `default-front-color` (`#000000`), `td-brand-color-1` (`#f2f3ff`), `td-warning-color-1` (`#fff1e9`), `td-error-color-1` (`#fff0ed`).
+- **Semantic States**: success: `td-success-color-2` (`#c6f3d7`) · danger: `td-error-color-2` (`#ffd8d2`) · warning: `td-warning-color-2` (`#ffd9c2`).
 
 ## Typography
 
-Families declared in the source: `"PingFang SC", "Microsoft YaHei", "Arial Regular"`, `"PingFang SC", "Microsoft YaHei", "Arial Medium"`.
+- **Primary / Display Voice**: `"PingFang SC", "Microsoft YaHei", "Arial Regular"` (top step `td-font-size-display-large`: 64px, weight 600).
+- **Body & UI Controls**: `"PingFang SC", "Microsoft YaHei", "Arial Regular"` (`td-font-size-body-large`: 16px, weight 400).
+- **Scale Steps (19)**: `td-font-size-display-large` (64px), `td-font-size-display-medium` (48px), `td-font-size-headline-large` (36px), `td-font-size-headline-medium` (28px), `td-font-size-headline-small` (24px), `td-font-size-title-extra-large` (20px), `td-font-size-title-large` (18px), `td-font-size-link-large` (16px).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `0`, `10px 18px`.
+- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#FFFFFF`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0052d9` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `3px` · Inputs `3px` · Cards `6px` · Badges `3px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
 
 ## Components
 
-24 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`tag` (badge)**: ink `rgba(0, 0, 0, 0.9)`, radius `3px`, padding `0`, border `1px solid transparent`.
+- **`card` (card)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), radius `6px`, padding `0`.
+- **`tabs` (nav)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), padding `0`.
+- **`alert` (card)**: ink `rgba(0, 0, 0, 0.9)`, radius `6px`, padding `0`.
+- **`input` (input)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), radius `3px`, padding `0`, border `1px solid #ddd`.
+- **`badge-2` (badge)**: ink `rgba(0, 0, 0, 0.9)`, padding `0`.
+- **`table` (nav)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), padding `0`.
+- **`button` (button)**: bg `transparent`, ink `rgba(0, 0, 0, 0.9)`, radius `3px`, padding `0`, border `1px solid transparent`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#f2f3ff` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `PingFang SC` across 19 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0052d9` with `#f7f7f8` text (6.1:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `PingFang SC` headings with `PingFang SC` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (6px on outer containers).
+- Separate containers via `#FFFFFF` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

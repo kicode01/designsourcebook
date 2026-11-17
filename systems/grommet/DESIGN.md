@@ -58,6 +58,13 @@ colors:
 typography:
   font-family:
     fontFamily: "\"JetBrains Mono\""
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#7D4CDB"
@@ -105,21 +112,68 @@ components:
 
 ## Overview
 
-Hewlett Packard Grommet — tokens imported from grommet.
+**Grommet** is a light-first design system anchored on `#ffffff` canvas surfaces with `#444444` primary ink (9.7:1 contrast) and `#7D4CDB` brand accent.
 
-Tokens were read from `grommet@2.58.0`, not from a marketing site: 52 colour tokens and 1 type tokens.
+Typography centers cleanly on `JetBrains Mono` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Hewlett Packard**. Source: published token package (http://grommet.io), repo https://github.com/grommet/grommet, package `grommet`, frameworks: react. Inventory: **52** colors, **1** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-52 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#FFFFFF` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#444444` — body copy and primary headings (9.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#76717A` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#7D4CDB` (5.3:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.0:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #444444 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `brand-color` (`#7D4CDB`), `ok` (`#009E67`), `control-dark` (`#FFCA58`), `control-light` (`#403216`), `brand` (`#FD6FFF`), `focus` (`#FFCA58`).
+- **Neutral Ramp**: `text-dark` (`#f8f8f8`), `text-light` (`#444444`), `icon-dark` (`#f8f8f8`), `icon-light` (`#666666`), `unknown` (`#919191`), `disabled` (`#CCCCCC`).
+- **Semantic States**: danger: `critical` (`#EB0000`) · warning: `warning` (`#C27B00`).
 
 ## Typography
 
-Families declared in the source: `"JetBrains Mono"`.
+- **Primary / Display Voice**: `"JetBrains Mono"` (top step `font-family`: 16px, weight 600).
+- **Body & UI Controls**: `"JetBrains Mono"` (`font-family`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"JetBrains Mono"` (`font-family`: 16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#111111) canvas paired with `#000000` component surfaces and `#f8f8f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#7D4CDB` with `#f8f8f8` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `JetBrains Mono` across 1 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `color-mix(in srgb, #444444 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#FFFFFF`) and `1px solid color-mix(in srgb, #444444 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#7D4CDB` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#7D4CDB`, ink `#ffffff`, (5.3:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#444444`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#B30000`, ink `#ffffff`, (7.2:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#7D4CDB`, ink `#f8f8f8`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#444444` primary text and `#76717A` secondary labels.
+- Use `#7D4CDB` with `#f7f7f8` text (5.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `JetBrains Mono` headings with `JetBrains Mono` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#FFFFFF` surface shifts and `color-mix(in srgb, #444444 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

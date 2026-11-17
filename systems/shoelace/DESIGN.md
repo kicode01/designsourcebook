@@ -132,6 +132,13 @@ typography:
     fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
   sl-tooltip-font-family:
     fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "hsl(217.8 95.8% 57.4%)"
@@ -179,21 +186,69 @@ components:
 
 ## Overview
 
-Shoelace — tokens read from https://github.com/shoelace-style/shoelace.
+**Shoelace** is a light-first design system anchored on `hsl(0, 0%, 100%)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `hsl(217.8 95.8% 57.4%)` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 11 type tokens.
+Typography centers cleanly on `System UI` (72px display down to 16px body), unified by `6px` base corner radius and stepped `hsl(0, 0%, 100%)` -> `hsl(0 0% 95%)` surface layering.
+
+Source: published token package (https://github.com/shoelace-style/shoelace), repo https://github.com/shoelace-style/shoelace, package `@shoelace-style/shoelace`, frameworks: web-components, react. Inventory: **91** colors, **14** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `hsl(0, 0%, 100%)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `hsl(0 0% 95%)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `hsl(217.8 95.8% 57.4%)` (4.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.8:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `sl-color-lime-100` (`hsl(87.6 56.8% 23.3%)`), `sl-color-lime-300` (`hsl(86.1 72% 29.4%)`), `sl-color-lime-500` (`hsl(84.3 74.2% 42.1%)`), `sl-color-lime-700` (`hsl(82 89.9% 64%)`), `sl-color-lime-900` (`hsl(77.9 100% 85.8%)`), `sl-color-emerald-100` (`hsl(163.5 72.6% 20.1%)`).
+- **Neutral Ramp**: `sl-color-neutral-0` (`hsl(240, 5.9%, 11%)`), `sl-color-neutral-1000` (`hsl(0, 0%, 100%)`), `sl-color-gray-50` (`hsl(240 5.1% 15%)`), `sl-color-gray-200` (`hsl(240 4.6% 22%)`), `sl-color-gray-400` (`hsl(240 5% 35.5%)`), `sl-color-gray-600` (`hsl(240 5.3% 58%)`).
+- **Semantic States**: success: `sl-color-green-50` (`hsl(144.3 53.6% 16%)`) · danger: `sl-color-red-100` (`hsl(0.6 60% 33.9%)`) · warning: `sl-color-orange-50` (`hsl(15 64.2% 23.3%)`).
 
 ## Typography
 
-Families declared in the source: `var(--sl-font-sans)`.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `sl-font-size-4x-large`: 4.5rem, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`sl-font-size-medium`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace` (`sl-font-mono`: 16px).
+- **Scale Steps (14)**: `sl-font-size-4x-large` (4.5rem), `sl-font-size-3x-large` (3rem), `sl-font-size-2x-large` (2.25rem), `sl-font-size-x-large` (1.5rem), `sl-font-size-large` (1.25rem), `sl-font-size-medium` (1rem), `sl-font-mono` (16px), `sl-font-sans` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (hsl(0, 0%, 100%)) canvas paired with `hsl(0, 0%, 100%)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `hsl(217.8 95.8% 57.4%)` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `SFMono-Regular` across 14 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `hsl(0 0% 95%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`hsl(0, 0%, 100%)` -> `hsl(0 0% 95%)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `hsl(217.8 95.8% 57.4%)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `hsl(217.8 95.8% 57.4%)`, ink `#0b0b0c`, (4.8:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `hsl(0.7 89.6% 57.2%)`, ink `#0b0b0c`, (5.0:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `hsl(217.8 95.8% 57.4%)`, ink `#0b0b0c`, (4.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `hsl(141.6 72.4% 55.2%)`, ink `#0b0b0c`, (11.2:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `hsl(0, 0%, 100%)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `hsl(217.8 95.8% 57.4%)` with `#f7f7f8` text (3.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `hsl(0 0% 95%)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

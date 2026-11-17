@@ -93,7 +93,7 @@ colors:
   dark-color-chart-yellow-bold-hovered: "#DDB30E"
   dark-color-chart-teal-boldest-hovered: "#C6EDFB"
   dark-color-chart-magenta-bolder-hovered: "#E774BB"
-  primary: "#CFE1FD"
+  primary: "#1558BC"
 typography:
   atlassian-typography-finesse-family:
     fontFamily: FontFamilyWebSansRefreshed
@@ -121,10 +121,17 @@ typography:
     fontSize: 29px
   typography-font-size-legacy-font-size29:
     fontSize: 35px
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
-    backgroundColor: "#CFE1FD"
-    textColor: "#0b0b0c"
+    backgroundColor: "#1558BC"
+    textColor: "#ffffff"
     rounded: 6px
     padding: 10px 18px
   button-secondary:
@@ -148,8 +155,8 @@ components:
     rounded: 10px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#CFE1FD"
-    textColor: "#000000"
+    backgroundColor: "#1558BC"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -168,21 +175,69 @@ components:
 
 ## Overview
 
-Atlassian Design System — tokens behind Jira and Confluence.
+**Atlassian Design System** is a light-first design system anchored on `#F0F1F2` canvas surfaces with `#0b0b0c` primary ink (17.4:1 contrast) and `#1558BC` brand accent.
 
-Tokens were read from `@atlaskit/tokens@20.12.0`, not from a marketing site: 91 colour tokens and 14 type tokens.
+Typography centers cleanly on `FontFamilyWebSansRefreshed` (48px display down to 16px body), unified by `6px` base corner radius and stepped `#F0F1F2` -> `#F8EEFE` surface layering.
+
+Maintained by **Atlassian**. Source: published token package (https://atlassian.design/components/tokens), repo https://bitbucket.org/atlassian/atlassian-frontend-mirror, package `@atlaskit/tokens`, frameworks: react, css. Inventory: **91** colors, **13** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-91 colour tokens selected from the package's token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#F0F1F2` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#F8EEFE` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (17.4:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#1558BC` (5.9:1 vs canvas; pair with `#f7f7f8` foreground ink for 6.2:1 contrast).
+- **Structural Border (`border`)**: `#E2E3E4` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-background-brand-boldest-default` (`#CFE1FD`), `color-text-accent-blue-bolder` (`#EED7FC`), `color-text-code-operators` (`#B3DF72`), `color-rovo-border-blue` (`#BF63F3`), `dark-future-color-background-disabled` (`#B3DF72`), `dark-increased-contrast-color-border-focused` (`#8FB8F6`).
+- **Neutral Ramp**: `color-text-disabled` (`#1F1F21`), `color-background-accent-gray-subtle-hovered` (`#242528`), `color-background-neutral-bold-default` (`#BFC1C4`), `color-border-focused` (`#A9ABAF`), `color-border-bold` (`#E2E3E4`), `color-text-information-bolder` (`#BFC1C4`).
+- **Semantic States**: success: `color-background-accent-green-subtle-hovered` (`#164B35`) · danger: `color-background-accent-lime-bolder-hovered` (`#BDE97C`) · warning: `color-background-warning-default-pressed` (`#693200`) · info: `color-background-information-default-pressed` (`#123263`).
 
 ## Typography
 
-Families declared in the package: `FontFamilyWebSansRefreshed`, `var(--ds-dynamic-font-family, \`.
+- **Primary / Display Voice**: `FontFamilyWebSansRefreshed` (top step `typography-font-size-font-size36`: 48px, weight 600).
+- **Body & UI Controls**: `FontFamilyWebSansRefreshed` (`atlassian-typography-finesse-family`: 16px, weight 400).
+- **Monospace / Technical Labels**: `FontFamilyWebSansRefreshed` (`typography-font-size-font-size-code`: 11px).
+- **Scale Steps (13)**: `typography-font-size-font-size36` (48px), `typography-font-size-font-size32` (36px), `typography-font-size-legacy-font-size29` (35px), `typography-font-size-font-size28` (32px), `typography-font-size-legacy-font-size11` (29px), `typography-font-size-font-size24` (28px), `typography-font-size-font-size20` (24px), `typography-font-size-font-size16` (20px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#1F1F21) canvas paired with `#1F1F21` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#CFE1FD` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `FontFamilyWebSansRefreshed` across 13 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#F8EEFE` cards; separate sibling sections using `#E2E3E4` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F0F1F2` -> `#F8EEFE`) and `1px solid #E2E3E4` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1558BC` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#1558BC`, ink `#ffffff`, (6.7:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#F87168`, ink `#000000`, (7.6:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#1558BC`, ink `#ffffff`, (6.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#DCFFF1`, ink `#000000`, (19.6:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#F0F1F2` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#1558BC` with `#f7f7f8` text (6.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `FontFamilyWebSansRefreshed` headings with `FontFamilyWebSansRefreshed` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#F8EEFE` surface shifts and `#E2E3E4` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

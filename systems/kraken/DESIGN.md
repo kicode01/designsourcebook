@@ -69,6 +69,13 @@ typography:
     fontSize: 7px
     fontWeight: 500
     lineHeight: 1
+rounded:
+  button: 12px
+  input: 12px
+  card: 12px
+  badge: 999px
+  nav: 12px
+  default: 12px
 components:
   button-primary-purple:
     backgroundColor: "#7132f5"

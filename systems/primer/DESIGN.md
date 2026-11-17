@@ -105,6 +105,13 @@ typography:
     fontFamily: "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\""
   org-primer-data:
     fontSize: 16px
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "#74b9ff"
@@ -152,21 +159,69 @@ components:
 
 ## Overview
 
-GitHub Primer — tokens imported from @primer/primitives.
+**Primer** is a dark-first design system anchored on `#151b23` canvas surfaces with `#f7f7f8` primary ink (16.2:1 contrast) and `#74b9ff` brand accent.
 
-Tokens were read from `@primer/primitives@11.10.0`, not from a marketing site: 91 colour tokens and 5 type tokens.
+Typography centers cleanly on `System Mono` (16px display down to 16px body), unified by `6px` base corner radius and stepped `#151b23` -> `#2a313c` surface layering.
+
+Maintained by **GitHub**. Source: published token package (https://github.com/primer/primitives#readme), repo https://github.com/primer/react, package `@primer/primitives`, frameworks: react, css. Inventory: **91** colors, **5** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#151b23` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#2a313c` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (16.2:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#74b9ff` (8.3:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.5:1 contrast).
+- **Structural Border (`border`)**: `#342a1d` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `button-primary-bg-color-active` (`#3685f3`), `fg-color-accent` (`#74b9ff`), `border-color-attention-emphasis` (`#e09b13`), `border-color-done-muted` (`#bf8fff`), `border-color-severe-emphasis` (`#e7811d`), `border-color-sponsors-muted` (`#f87cbd`).
+- **Neutral Ramp**: `bg-color-disabled` (`#262c36`), `border-color-translucent` (`#9198a1`), `button-keybinding-hint-danger-border-color-hover` (`#ffffff`), `control-border-color-selected` (`#f0f6fc`), `display-brown-border-color-muted` (`#342a1d`), `display-gray-border-color-muted` (`#2a2b2d`).
+- **Semantic States**: success: `bg-color-success-emphasis` (`#194fb1`) · danger: `border-color-danger-muted` (`#f48b25`) · warning: `display-orange-border-color-muted` (`#43200a`).
 
 ## Typography
 
-Families declared in the source: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace`, `"Mona Sans VF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Backtick Fix", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`.
+- **Primary / Display Voice**: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace` (top step `font-stack-monospace`: 16px, weight 600).
+- **Body & UI Controls**: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace` (`font-stack-monospace`: 16px, weight 400).
+- **Monospace / Technical Labels**: `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace` (`font-stack-monospace`: 16px).
+- **Scale Steps (5)**: `font-stack-monospace` (16px), `font-stack-sans-serif` (16px), `font-stack-sans-serif-display` (16px), `font-stack-system` (16px), `org-primer-data` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#74b9ff` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `ui-monospace` across 5 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#2a313c` cards; separate sibling sections using `#342a1d` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#151b23` -> `#2a313c`) and `1px solid #342a1d` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#74b9ff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#74b9ff`, ink `#0b0b0c`, (9.5:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#f7f7f8`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#f48b25`, ink `#0b0b0c`, (8.0:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#74b9ff`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#194fb1`, ink `#ffffff`, (7.5:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#151b23` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `#74b9ff` with `#0b0b0c` text (9.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System Mono` headings with `System Mono` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#2a313c` surface shifts and `#342a1d` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

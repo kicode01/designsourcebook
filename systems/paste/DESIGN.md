@@ -157,6 +157,13 @@ typography:
     fontFamily: "TwilioSansText, \"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
   font-family-80:
     fontFamily: "TwilioSansDisplay, \"Inter var experimental\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
     backgroundColor: "rgb(106, 221, 178)"
@@ -204,21 +211,69 @@ components:
 
 ## Overview
 
-Twilio Paste — the design system for Twilio's console.
+**Paste** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(106, 221, 178)` brand accent.
 
-Tokens were read from `@twilio-paste/design-tokens@10.15.0`, not from a marketing site: 91 colour tokens and 31 type tokens.
+Typography centers cleanly on `Inter var experimental` (64px display down to 16px body), unified by `6px` base corner radius and hairline `1px` structural borders.
+
+Maintained by **Twilio**. Source: published token package, repo https://github.com/twilio-labs/paste, package `@twilio-paste/design-tokens`, frameworks: react, css. Inventory: **91** colors, **31** typography steps, and **8** documented components (MIT license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgb(255, 255, 255)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(255, 255, 255)` — elevated cards, popovers, and panels (separated via `1px` border lines).
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgb(106, 221, 178)` (1.7:1 vs canvas; pair with `#0b0b0c` foreground ink for 11.8:1 contrast).
+- **Structural Border (`border`)**: `rgb(244, 244, 246)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-background-user` (`rgb(34, 9, 74)`), `color-background-subaccount` (`rgb(18, 28, 45)`), `color-background-primary-weaker` (`rgb(31, 48, 76)`), `color-background-body-elevation` (`rgb(24, 37, 60)`), `color-background-new` (`rgb(56, 14, 120)`), `color-background-new-weakest` (`rgb(18, 28, 45)`).
+- **Neutral Ramp**: `color-background-destructive-strongest` (`rgb(254, 236, 236)`), `color-background-error-strongest` (`rgb(254, 236, 236)`), `color-background-strongest` (`rgb(225, 227, 234)`), `color-background-inverse-strongest` (`rgb(255, 255, 255)`), `color-border-destructive-strongest` (`rgb(254, 236, 236)`), `color-border-error-strongest` (`rgb(254, 236, 236)`).
+- **Semantic States**: success: `color-background-success` (`rgb(20, 176, 83)`) · danger: `color-border-destructive` (`rgb(219, 19, 42)`) · warning: `color-background-warning-weakest` (`rgb(64, 19, 15)`) · info: `color-text-link` (`rgb(0, 140, 255)`).
 
 ## Typography
 
-Families declared in the source: `"Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`, `TwilioSansMono, Courier, monospace`, `"Inter var experimental", "Inter var", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS PGothic", sans-serif`, `"Inter var experimental", "Inter var", "Microsoft JhengHei", "微軟正黑體", "Microsoft JhengHei UI", "Microsoft YaHei", "微軟雅黑", "宋体", SimSun, sans-serif`, `"Inter var experimental", "Inter var", "Microsoft YaHei New", "微软雅黑", "Microsoft Yahei", "Microsoft JhengHei", "宋体", SimSun, sans-serif`, `TwilioSansText, "Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`, `TwilioSansDisplay, "Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif`.
+- **Primary / Display Voice**: `"Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (top step `font-size-display-30`: 4rem, weight 600).
+- **Body & UI Controls**: `"Inter var experimental", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (`font-size-base`: 100%, weight 400).
+- **Monospace / Technical Labels**: `TwilioSansMono, Courier, monospace` (`font-family-code`: 16px).
+- **Scale Steps (31)**: `font-size-display-30` (4rem), `font-size-110` (3rem), `font-size-display-20` (3rem), `font-size-100` (2.5rem), `font-size-90` (2rem), `font-size-display-10` (2rem), `font-size-80` (1.75rem), `font-size-70` (1.5rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(106, 221, 178)` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter var experimental` across 31 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `rgb(244, 244, 246)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255, 255, 255)` -> `rgb(255, 255, 255)`) and `1px solid rgb(244, 244, 246)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(106, 221, 178)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `rgb(106, 221, 178)`, ink `#0b0b0c`, (11.8:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `rgb(219, 19, 42)`, ink `#ffffff`, (5.1:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `rgb(106, 221, 178)`, ink `#0b0b0c`, (11.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgb(20, 176, 83)`, ink `#0b0b0c`, (6.9:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `rgb(106, 221, 178)` with `#0b0b0c` text (11.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter var experimental` headings with `Inter var experimental` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `rgb(255, 255, 255)` surface shifts and `rgb(244, 244, 246)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

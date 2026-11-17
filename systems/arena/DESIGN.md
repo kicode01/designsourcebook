@@ -117,6 +117,13 @@ typography:
     fontSize: 13px
     fontWeight: 500
     lineHeight: 1.45
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#b52a20"
@@ -164,21 +171,69 @@ components:
 
 ## Overview
 
-Dravensoft Arena — tokens read from https://github.com/dravensoft-dev/arena.
+**Arena** is a light-first design system anchored on `#f0eee6` canvas surfaces with `#0b0b0c` primary ink (16.9:1 contrast) and `#b52a20` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 88 colour tokens and 2 type tokens.
+Typography centers cleanly on `Spline Sans` (36px display down to 16px body), unified by `8px` base corner radius and stepped `#f0eee6` -> `#ffffff` surface layering.
+
+Maintained by **Dravensoft**. Source: published token package (https://github.com/dravensoft-dev/arena), repo https://github.com/dravensoft-dev/arena, frameworks: css. Inventory: **88** colors, **5** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-88 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#f0eee6` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#ffffff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (16.9:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#b52a20` (5.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 5.9:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-primary` (`#b52a20`), `color-primary-fill` (`#b52a20`), `color-secondary` (`#c5a059`), `color-cat-1` (`#3c7b0a`), `color-cat-2` (`#3b63be`), `color-cat-3` (`#0a924b`).
+- **Neutral Ramp**: `hex` (`#141010`), `color-base-100` (`#141010`), `color-base-200` (`#1d1715`), `color-base-300` (`#241c19`), `color-base-content` (`#f3ede5`), `color-primary-content` (`#ffffff`).
+- **Semantic States**: success: `color-success` (`#38a169`) · danger: `color-error` (`#e85151`) · warning: `color-warning` (`#ecc94b`) · info: `color-info` (`#3182ce`).
 
 ## Typography
 
-Families declared in the source: `var(--font-body)`, `Spline Sans Mono", ui-monospace, monospace`.
+- **Primary / Display Voice**: `"Spline Sans", Inter, system-ui, sans-serif` (top step `display-lg`: 36px, weight 700, line-height 1.2).
+- **Body & UI Controls**: `"Spline Sans", Inter, system-ui, sans-serif` (`body`: 16px, weight 400, line-height 1.5).
+- **Monospace / Technical Labels**: `"Spline Sans Mono", ui-monospace, monospace` (`code`: 13px).
+- **Scale Steps (5)**: `display-lg` (36px, w700), `heading-md` (24px, w600), `body` (16px, w400), `body-sm` (14px, w400), `code` (13px, w500).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#f0eee6) canvas paired with `#2e2c26` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#b52a20` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Spline Sans` across 5 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f0eee6` -> `#ffffff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#b52a20` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#b52a20`, ink `#ffffff`, (6.3:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#e85151`, ink `#0b0b0c`, (5.4:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#b52a20`, ink `#ffffff`, (6.3:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#38a169`, ink `#0b0b0c`, (6.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#f0eee6` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#b52a20` with `#f7f7f8` text (5.9:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Spline Sans` headings with `Spline Sans` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

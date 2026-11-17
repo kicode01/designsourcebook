@@ -198,6 +198,13 @@ typography:
     fontFamily: "\"Source Sans Pro Web\", \"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif"
   theme-banner-font-family:
     fontFamily: "system-ui, sans-serif"
+rounded:
+  badge: 2px
+  input: "0"
+  button: 0.25rem
+  nav: "0"
+  card: 0.5rem
+  default: "0"
 components:
   nav:
     backgroundColor: white
@@ -333,25 +340,69 @@ components:
 
 ## Overview
 
-U.S. Government U.S. Web Design System — tokens imported from @uswds/uswds.
+**U.S. Web Design System** is a light-first design system anchored on `#fbfcfd` canvas surfaces with `#0b0b0c` primary ink (19.2:1 contrast) and `#ff8d7b` brand accent.
 
-Tokens were read from `@uswds/uswds@3.14.0`, not from a marketing site: 28 colour tokens and 54 type tokens.
+Typography centers cleanly on `Source Sans Pro Web` (51px display down to 18px body), unified by `0px` razor-sharp architectural corners and stepped `#fbfcfd` -> `#f7f9fa` surface layering.
+
+Maintained by **U.S. Government**. Source: published token package (https://github.com/uswds/uswds#readme), repo https://github.com/uswds/uswds, package `@uswds/uswds`, frameworks: css, web-components. Inventory: **28** colors, **55** typography steps, and **27** documented components (SEE LICENSE IN LICENSE.md license).
 
 ## Colors
 
-28 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fbfcfd` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f7f9fa` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.2:1 on canvas).
+- **Muted Ink (`muted`)**: `#e52207` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff8d7b` (2.2:1 vs canvas; pair with `#0b0b0c` foreground ink for 8.8:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `20` (`#adcfdc`), `30` (`#82b4c9`), `40` (`#6499af`), `50` (`#3a7d95`), `60` (`#2e6276`), `70` (`#224a58`).
+- **Neutral Ramp**: `1` (`#fbfcfd`), `2` (`#f7f9fa`), `3` (`#f5f6f7`), `4` (`#f1f3f6`), `5` (`#e7f2f5`), `10` (`#dae9ee`).
+- **Semantic States**: danger: `red-10v` (`#fde0db`).
 
 ## Typography
 
-Families declared in the source: `Georgia, Cambria, "Times New Roman", Times, serif`, `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`, `"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif`, `"Bitstream Vera Sans Mono", Consolas, Courier, monospace`, `"Helvetica Neue", Helvetica, Arial, sans`, `"get-font-stack("serif")"`, `"get-typeface-token("serif")"`, `"Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif`, `"Merriweather Web", Georgia, Cambria, "Times New Roman", Times, serif`, `system-ui, sans-serif`.
+- **Primary / Display Voice**: `"Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif` (top step `font-body-3xl`: 3.19rem, weight 600).
+- **Body & UI Controls**: `"Source Sans Pro Web", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif` (`font-body-md`: 1.13rem, weight 400).
+- **Monospace / Technical Labels**: `"Bitstream Vera Sans Mono", Consolas, Courier, monospace` (`font-stack-monospace`: 16px).
+- **Scale Steps (55)**: `font-body-3xl` (3.19rem), `font-heading-3xl` (2.93rem), `font-body-2xl` (2.66rem), `font-heading-2xl` (2.44rem), `font-body-xl` (2.13rem), `h1` (2em), `h2` (1.95rem, w700), `hero-heading` (1.95rem, w700).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `1rem`, `1px 0.5rem`, `0.5rem`, `0.75rem 1.25rem`, `0`.
+- **Hierarchy**: Group controls cleanly within `#f7f9fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fbfcfd` -> `#f7f9fa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8d7b` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `0` (Buttons `0.25rem` · Inputs `0` · Badges `2px`).
+- **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
 
 ## Components
 
-27 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`nav` (nav)**: bg `white`, padding `1rem`.
+- **`tag` (badge)**: bg `#565c65`, ink `white`, (6.7:1), radius `2px`, padding `1px 0.5rem`.
+- **`link` (nav)**: ink `#005ea2`.
+- **`input` (input)**: ink `#1b1b1b`, radius `0`, padding `0.5rem`, border `1px solid #565c65`.
+- **`alert` (card)**: bg `#f0f0f0`, ink `#1b1b1b`, (15.1:1).
+- **`table` (nav)**: ink `#1b1b1b`.
+- **`select-2` (input)**: bg `white`, ink `#1b1b1b`, (17.2:1), radius `0`, padding `0.5rem`, border `1px solid #565c65`.
+- **`banner-2` (card)**: bg `#f0f0f0`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Dark (#000000) canvas paired with `#000000` component surfaces and `#e52207` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff8d7b` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Source Sans Pro Web` across 55 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fbfcfd` (light) with `#0b0b0c` primary text and `#e52207` secondary labels.
+- Use `#ff8d7b` with `#0b0b0c` text (8.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Source Sans Pro Web` headings with `Source Sans Pro Web` body copy using documented weights and scale steps.
+- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.
+- Separate containers via `#f7f9fa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

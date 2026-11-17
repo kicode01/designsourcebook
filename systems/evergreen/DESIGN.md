@@ -101,6 +101,13 @@ typography:
     fontSize: 16px
   font-family:
     fontFamily: "\"SF UI Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#3366FF"
@@ -148,21 +155,69 @@ components:
 
 ## Overview
 
-Evergreen — tokens read from https://github.com/segmentio/evergreen.
+**Evergreen** is a light-first design system anchored on `#F9F9FB` canvas surfaces with `#425A70` primary ink (6.8:1 contrast) and `#3366FF` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+Typography centers cleanly on `SF Mono` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#F9F9FB` -> `#F5F6F7` surface layering.
+
+Source: published token package (https://github.com/segmentio/evergreen), repo https://github.com/segmentio/evergreen, package `evergreen-ui`, frameworks: react. Inventory: **91** colors, **3** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#F9F9FB` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#F5F6F7` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#425A70` — body copy and primary headings (6.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#00783e` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#3366FF` (4.5:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.4:1 contrast).
+- **Structural Border (`border`)**: `#E4E7EB` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `neutral-base` (`#425A70`), `neutral-dark` (`#234361`), `neutral-n7` (`#7B8B9A`), `neutral-n8` (`#66788A`), `neutral-n9` (`#425A70`), `neutral-n10` (`#234361`).
+- **Neutral Ramp**: `neutral-lightest` (`#F9F9FB`), `neutral-light` (`#E4E7EB`), `neutral-n1` (`#F9F9FB`), `neutral-n2` (`#F5F6F7`), `neutral-n3` (`#EDF0F2`), `neutral-n4` (`#E4E7EB`).
+- **Semantic States**: success: `green-background-color` (`#d4eee2`) · danger: `danger-border` (`#D14343`) · warning: `orange-background-color` (`#fae3cd`) · info: `info-border` (`#3366FF`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `"SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace` (top step `mono`: 16px, weight 600).
+- **Body & UI Controls**: `"SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace` (`mono`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace` (`mono`: 16px).
+- **Scale Steps (3)**: `mono` (16px), `font-size` (16px), `font-family` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#F9F9FB) canvas paired with `#F5F6F7` component surfaces and `#425A70` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#3366FF` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `SF Mono` across 3 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#F5F6F7` cards; separate sibling sections using `#E4E7EB` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F9F9FB` -> `#F5F6F7`) and `1px solid #E4E7EB` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3366FF` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#3366FF`, ink `#ffffff`, (4.7:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#425A70`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#D14343`, ink `#ffffff`, (4.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#3366FF`, ink `#ffffff`, (4.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#52BD95`, ink `#000000`, (9.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#F9F9FB` (light) with `#425A70` primary text and `#00783e` secondary labels.
+- Use `#3366FF` with `#f7f7f8` text (4.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `SF Mono` headings with `SF Mono` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#F5F6F7` surface shifts and `#E4E7EB` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

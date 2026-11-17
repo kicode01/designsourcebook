@@ -121,6 +121,13 @@ typography:
     fontSize: 10px
   ix-upload-loader-font-size:
     fontSize: 0.937rem
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#00eaff"
@@ -168,24 +175,69 @@ components:
 
 ## Overview
 
-Siemens iX — tokens read from https://github.com/siemens/ix.
+**Siemens iX** is a light-first design system anchored on `#ffffff` canvas surfaces with `#000028` primary ink (20.4:1 contrast) and `#00eaff` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 13 type tokens.
+Typography centers cleanly on `Arial` (22px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#e0f2f4` surface layering.
+
+Maintained by **Siemens**. Source: published token package (https://github.com/siemens/ix), repo https://github.com/siemens/ix, package `@siemens/ix`, frameworks: web-components, react, angular, vue. Inventory: **91** colors, **13** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#e0f2f4` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#000028` — body copy and primary headings (20.4:1 on canvas).
+- **Muted Ink (`muted`)**: `#000028` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#00eaff` (1.5:1 vs canvas; pair with `#0b0b0c` foreground ink for 13.3:1 contrast).
+- **Structural Border (`border`)**: `#B3B3BE` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `si-ref-color-data-brand-300` (`#00eaff`), `si-ref-color-data-brand-600` (`#00bdda`), `si-ref-color-data-brand-800` (`#0096b4`), `si-ref-color-main-brand-500` (`#00c9e4`), `si-ref-color-main-brand-600` (`#00bdda`), `si-ref-color-main-brand-700` (`#0096b4`).
+- **Neutral Ramp**: `si-ref-color-main-brand-black` (`#000000`), `si-ref-color-main-brand-white` (`#ffffff`), `subtext-style-color` (`#B3B3BE`), `item-style-bar-border-color` (`#66667E`), `item-style-border-color` (`#66667E`), `icon-style-border-color` (`#B3B3BE`).
+- **Semantic States**: success: `si-ref-color-data-green-100` (`#ccf7de`) · danger: `si-ref-color-data-red-100` (`#fccccc`) · warning: `si-ref-color-data-orange-100` (`#ffd9b2`).
 
 ## Typography
 
-Families declared in the source: `Courier New', monospace`, `Arial, helvetica, sans-serif`, `SiemensSans Pro VF', 'SiemensSans Pro', helvetica,
-    arial, sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji`.
+- **Primary / Display Voice**: `Arial, helvetica, sans-serif` (top step `font-size-xl`: 1.375rem, weight 600).
+- **Body & UI Controls**: `Arial, helvetica, sans-serif` (`font-size-default`: 0.875rem, weight 400).
+- **Monospace / Technical Labels**: `"Courier New", monospace` (`si-ref-typography-font-family-mono`: 16px).
+- **Scale Steps (13)**: `font-size-xl` (1.375rem), `font-size-l` (1rem), `si-ref-typography-font-family-mono` (16px), `si-ref-typography-font-family-sans` (16px), `theme-font-family` (16px), `ix-upload-loader-font-size` (0.937rem), `font-size-default` (0.875rem), `ix-badge-tooltip-font-size` (0.875rem).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#2D2D45) canvas paired with `#2D2D45` component surfaces and `#FFFFFF` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#00eaff` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Courier New` across 13 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#e0f2f4` cards; separate sibling sections using `#B3B3BE` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#e0f2f4`) and `1px solid #B3B3BE` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00eaff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#00eaff`, ink `#000028`, (13.8:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#000028`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ff2626`, ink `#000000`, (5.6:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#00eaff`, ink `#000000`, (14.2:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#376f1c`, ink `#FFFFFF`, (6.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#000028` primary text and `#000028` secondary labels.
+- Use `#00eaff` with `#0b0b0c` text (13.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#e0f2f4` surface shifts and `#B3B3BE` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

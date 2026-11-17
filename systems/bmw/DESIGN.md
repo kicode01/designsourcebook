@@ -9,7 +9,7 @@ colors:
   neutral-near-black: "#262626"
   neutral-meta-gray: "#757575"
   neutral-silver: "#bbbbbb"
-  primary: "#ffffff"
+  primary: "#1c69d4"
 typography:
   display-hero:
     fontFamily: "\"BMWTypeNextLatin Light\""
@@ -41,35 +41,42 @@ typography:
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.15
+rounded:
+  button: 0px
+  input: 0px
+  card: 0px
+  badge: 999px
+  nav: 0px
+  default: 0px
 components:
   button-primary:
-    backgroundColor: "#ffffff"
-    textColor: "#0b0b0c"
-    rounded: 8px
+    backgroundColor: "#1c69d4"
+    textColor: "#ffffff"
+    rounded: 0px
     padding: 10px 18px
   button-secondary:
     backgroundColor: transparent
     textColor: "#0b0b0c"
-    rounded: 8px
+    rounded: 0px
     padding: 10px 18px
   button-danger:
     backgroundColor: "#dc2626"
     textColor: "#ffffff"
-    rounded: 8px
+    rounded: 0px
     padding: 10px 18px
   input-default:
     backgroundColor: "#ffffff"
     textColor: "#0b0b0c"
-    rounded: 8px
+    rounded: 0px
     padding: 9px 13px
   card-surface:
     backgroundColor: "#ffffff"
     textColor: "#0b0b0c"
-    rounded: 12px
+    rounded: 0px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#ffffff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#1c69d4"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -80,7 +87,7 @@ components:
   nav-bar:
     backgroundColor: "#ffffff"
     textColor: "#0b0b0c"
-    rounded: 8px
+    rounded: 0px
     padding: 10px 16px
 ---
 

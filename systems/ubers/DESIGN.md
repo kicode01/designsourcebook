@@ -1,9 +1,9 @@
 ---
 version: alpha
 name: "Uber's Base Web"
-description: "Crisp light (#F6F6F6) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry"
+description: "Crisp light (#F6F6F6) canvas, UberMove typography, #276EF1 brand accent, and 8px corner geometry"
 colors:
-  primary: "#EFF4FE"
+  primary: "#276EF1"
   primary50: "#F6F6F6"
   primary100: "#EEEEEE"
   primary200: "#E2E2E2"
@@ -147,10 +147,17 @@ typography:
     fontFamily: "UberMoveMono, \"Lucida Console\", Monaco, monospace"
   font-size:
     fontSize: 10px
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
-    backgroundColor: "#EFF4FE"
-    textColor: "#0b0b0c"
+    backgroundColor: "#276EF1"
+    textColor: "#ffffff"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
@@ -174,8 +181,8 @@ components:
     rounded: 12px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#EFF4FE"
-    textColor: "#000000"
+    backgroundColor: "#276EF1"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -194,21 +201,69 @@ components:
 
 ## Overview
 
-Uber's Base Web — tokens read from https://github.com/uber-web/baseui.
+**Uber's Base Web** is a light-first design system anchored on `#F6F6F6` canvas surfaces with `#0b0b0c` primary ink (18.2:1 contrast) and `#276EF1` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 90 colour tokens and 0 type tokens.
+Typography centers cleanly on `UberMove` (52px display down to 16px body), unified by `8px` base corner radius and stepped `#F6F6F6` -> `#EEEEEE` surface layering.
+
+Maintained by **Uber**. Source: published token package (https://github.com/uber-web/baseui), repo https://github.com/uber/baseweb, package `baseui`, frameworks: react. Inventory: **90** colors, **13** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-90 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#F6F6F6` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#EEEEEE` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.2:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#276EF1` (4.2:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.3:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `primary` (`#276EF1`), `accent100` (`#D4E2FC`), `accent200` (`#A0BFF8`), `accent300` (`#5B91F5`), `accent400` (`#276EF1`), `accent500` (`#1E54B7`).
+- **Neutral Ramp**: `primary50` (`#F6F6F6`), `primary100` (`#EEEEEE`), `primary200` (`#E2E2E2`), `primary300` (`#CBCBCB`), `primary400` (`#AFAFAF`), `primary500` (`#6B6B6B`).
+- **Semantic States**: success: `positive400` (`#048848`) · danger: `negative600` (`#870F00`) · warning: `warning100` (`#FFF2D9`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `UberMove` (top step `display-hero`: 52px, weight 700, line-height 1.23).
+- **Body & UI Controls**: `UberMove` (`body-button`: 16px, weight 400, line-height 1.25).
+- **Monospace / Technical Labels**: `UberMoveMono, "Lucida Console", Monaco, monospace` (`mono-font-family`: 16px).
+- **Scale Steps (13)**: `display-hero` (52px, w700), `section-heading` (36px, w700), `card-title` (32px, w700), `sub-heading` (24px, w700), `small-heading` (20px, w700), `nav-ui-large` (18px, w500), `body-button` (16px, w400), `primary-font-family` (16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#292929) canvas paired with `#292929` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#EFF4FE` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `UberMove` across 13 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#EEEEEE` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F6F6F6` -> `#EEEEEE`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#276EF1` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#276EF1`, ink `#ffffff`, (4.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#FFEFED`, ink `#000000`, (18.8:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#EFF4FE`, ink `#0b0b0c`, (17.8:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#EFF4FE`, ink `#0b0b0c`, (17.8:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#276EF1`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#048848`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#EFF4FE`, ink `#0b0b0c`, (17.8:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#F6F6F6` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#276EF1` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `UberMove` headings with `UberMove` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#EEEEEE` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

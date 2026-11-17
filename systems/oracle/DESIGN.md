@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Oracle Redwood
-description: "Crisp light (rgb(255,255,255)) canvas, -apple-system typography, rgb(246, 250, 252) brand accent, and .25rem corner geometry"
+description: "Crisp light (rgb(255,255,255)) canvas, -apple-system typography, rgb(34, 126, 158) brand accent, and .25rem corner geometry"
 colors:
   oj-c-experimental-do-not-use-palette-brand-10: "rgb(246, 250, 252)"
   oj-c-experimental-do-not-use-palette-brand-40: "rgb(208, 229, 238)"
@@ -93,7 +93,7 @@ colors:
   oj-sp-rw-theme-global-header-menu-icon: "rgb(49,45,42)"
   oj-private-gantt-task-attribute-bg-color: "rgb(251, 194, 106)"
   oj-private-gantt-task-summary-bg-color: "rgba(58,54,50)"
-  primary: "rgb(246, 250, 252)"
+  primary: "rgb(34, 126, 158)"
 typography:
   oj-c-experimental-do-not-use-font-size:
     fontSize: 1em
@@ -272,6 +272,11 @@ typography:
     fontSize: 1.25rem
   oj-html-font-family:
     fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+rounded:
+  button: ".25rem"
+  input: ".25rem"
+  badge: 999px
+  default: ".25rem"
 components:
   skip-to-content-link:
     backgroundColor: "#fff"
@@ -292,8 +297,8 @@ components:
     rounded: ".25rem"
     padding: 9px 13px
   badge-brand:
-    backgroundColor: "rgb(246, 250, 252)"
-    textColor: "#0b0b0c"
+    backgroundColor: "rgb(34, 126, 158)"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -307,25 +312,67 @@ components:
 
 ## Overview
 
-Oracle Redwood — read from the rendered page in a browser, not from published tokens.
+**Oracle Redwood** is a light-first design system anchored on `rgb(255,255,255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(34, 126, 158)` brand accent.
 
-Tokens were read from https://redwood.oracle.com, not from a published token package: 91 colour tokens and 81 type tokens.
+Display headlines pair `Georgia` with `System UI` body copy (56px display down to 20px body), unified by `.25rem` base corner radius and stepped `rgb(255,255,255)` -> `rgb(241,239,237)` surface layering.
+
+Maintained by **Oracle**. Source: live stylesheet extraction (https://redwood.oracle.com), frameworks: css. Inventory: **91** colors, **81** typography steps, and **7** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgb(255,255,255)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(241,239,237)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgb(34, 126, 158)` (4.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.3:1 contrast).
+- **Structural Border (`border`)**: `rgb(228,225,221)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `oj-c-experimental-do-not-use-palette-brand-40` (`rgb(208, 229, 238)`), `oj-c-experimental-do-not-use-palette-brand-70` (`rgb(121, 177, 198)`), `oj-c-experimental-do-not-use-palette-brand-100` (`rgb(34, 126, 158)`), `oj-c-experimental-do-not-use-palette-brand-130` (`rgb(2, 94, 126)`), `oj-c-experimental-do-not-use-palette-brand-160` (`rgb(6, 60, 78)`), `oj-c-experimental-do-not-use-palette-brand-190` (`rgb(2, 24, 31)`).
+- **Neutral Ramp**: `oj-c-experimental-do-not-use-palette-brand-10` (`rgb(246, 250, 252)`), `oj-c-base-button-variants-solid-base-background-colo` (`rgb(233, 231, 231)`), `oj-private-buttonset-solid-chrome-internal-border-co` (`rgb(123,117,112)`), `oj-c-experimental-do-not-use-page-background-neutral` (`rgb(241,239,237)`), `oj-dvt-item-border-color-selected` (`rgb(22,21,19)`), `oj-button-solid-chrome-text-color-active` (`rgb(22,21,19)`).
+- **Semantic States**: success: `oj-core-success-2` (`rgb(73,118,32)`) · danger: `oj-c-experimental-do-not-use-surface-danger-strong` (`rgb(179,49,31)`) · warning: `oj-core-warning-2` (`rgb(156,89,11)`) · info: `oj-core-info-1` (`rgb(0,104,140)`).
 
 ## Typography
 
-Families declared in the source: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif`, `Georgia, Times, "Times New Roman", serif`, `"Bradley Hand", "Oracle Sans", serif`.
+- **Primary / Display Voice**: `Georgia, Times, "Times New Roman", serif` (top step `oj-sp-guided-process-page-title`: 3.5rem, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif` (`oj-typography-body-xl-font-size`: 1.25rem, weight 400).
+- **Scale Steps (81)**: `oj-sp-guided-process-page-title` (3.5rem), `oj-sp-input-signature-type-font-size` (2.75rem), `oj-sp-typography-display-lg` (2.5rem, w400), `oj-sp-waterfall-detail-header-title` (2.5rem), `oj-typography-heading-2xl-font-size` (2.5rem), `oj-typography-heading-xl-font-size` (2.25rem), `oj-typography-subheading-2xl-font-size` (2.25rem), `oj-avatar-initials-font-size` (2rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `2px 5px`, `10px 18px`, `9px 13px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `rgb(241,239,237)` cards; separate sibling sections using `rgb(228,225,221)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255,255,255)` -> `rgb(241,239,237)`) and `1px solid rgb(228,225,221)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(34, 126, 158)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `.25rem` (Buttons `.25rem` · Inputs `.25rem` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `.25rem` container.
 
 ## Components
 
-3 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`skip-to-content-link` (nav)**: bg `#fff`, padding `2px 5px`, border `1px solid #000`.
+- **`oj-sp-card-common-volume-button-container` (button)**: bg `#fff`, radius `.25rem`.
+- **`oj-sp-expanded-hover-card-footer-small-screen-2` (card)**: bg `#12110f`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `.25rem`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgb(241,239,237)`, ink `#0b0b0c`, (17.2:1), radius `.25rem`, padding `9px 13px`.
+- **`badge-brand` (badge)**: bg `rgb(34, 126, 158)`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgb(73,118,32)`, ink `#ffffff`, (5.4:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255,255,255)) canvas paired with `rgb(255,255,255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgb(246, 250, 252)` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 81 type steps.
-- **Component Geometry**: Buttons (`.25rem`), cards (`6px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `rgb(255,255,255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `rgb(34, 126, 158)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Georgia` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).
+- Separate containers via `rgb(241,239,237)` surface shifts and `rgb(228,225,221)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

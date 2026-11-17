@@ -243,6 +243,10 @@ typography:
     fontWeight: 300
   figure-caption:
     fontSize: 0.875em
+rounded:
+  input: 0.25rem
+  button: 8px
+  default: 8px
 components:
   card:
     textColor: "#4f4f4f"
@@ -322,25 +326,69 @@ components:
 
 ## Overview
 
-Material Minimal — tokens read from https://github.com/mdbootstrap/mdb-ui-kit.
+**Material Minimal** is a dark-first design system anchored on `#424242` canvas surfaces with `#f7f7f8` primary ink (9.4:1 contrast) and `#fff` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 90 colour tokens and 44 type tokens.
+Typography centers cleanly on `System UI` (27px display down to 16px body), unified by `8px` base corner radius and stepped `#424242` -> `#4f4f4f` surface layering.
+
+Maintained by **Material**. Source: published token package (https://github.com/mdbootstrap/mdb-ui-kit), repo https://github.com/mdbootstrap/mdb-ui-kit, package `mdb-ui-kit`, frameworks: css, react, vue, angular. Inventory: **90** colors, **53** typography steps, and **23** documented components (see repository license).
 
 ## Colors
 
-90 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#424242` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#4f4f4f` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (9.4:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#fff` (10.0:1 vs canvas; pair with `#0b0b0c` foreground ink for 19.7:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #f7f7f8 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `pink-accent-100` (`#ff80ab`), `pink-accent-400` (`#f50057`), `purple-accent-100` (`#ea80fc`), `purple-accent-400` (`#d500f9`), `deep-purple-accent-100` (`#b388ff`), `deep-purple-accent-400` (`#651fff`).
+- **Neutral Ramp**: `surface-bg-dark` (`#424242`), `primary` (`#fff`), `surface-inverted-bg` (`#6d6d6d`), `form-file-label-border-color` (`#bdbdbd`), `form-file-button-background-color` (`#fff`), `mdb-light-text-emphasis` (`#616161`).
+- **Semantic States**: success: `green-accent-100` (`#b9f6ca`) · danger: `red-accent-100` (`#ff8a80`) · warning: `yellow-accent-100` (`#ffff8d`) · info: `mdb-link-hover-color` (`#386bc0`).
 
 ## Typography
 
-Families declared in the source: `var(--mdb-font-roboto)`.
+- **Primary / Display Voice**: `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (top step `carousel-control-icon-font-size`: 1.7rem, weight 600).
+- **Body & UI Controls**: `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` (`font-size-base`: 1rem, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`font-family-monospace`: 16px).
+- **Scale Steps (53)**: `carousel-control-icon-font-size` (1.7rem), `mdb-carousel-control-icon-font-size` (1.7rem), `legend-font-size` (1.5rem), `mdb-navbar-brand-font-size` (1.25rem), `mdb-navbar-toggler-font-size` (1.25rem), `lead` (1.25rem, w300), `font-size-base` (1rem), `input-font-size-lg` (1rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 23 component tokens with documented paddings: `.375rem .75rem`, `10px 18px`.
+- **Hierarchy**: Group controls cleanly within `#4f4f4f` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#424242` -> `#4f4f4f`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fff` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `0.25rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-22 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`card` (card)**: ink `#4f4f4f`, border `solid`.
+- **`link-info` (nav)**: ink `RGBA(84, 180, 211, 1)`.
+- **`link-dark-2` (nav)**: ink `RGBA(51, 45, 45, 1)`.
+- **`alert-info` (card)**: bg `#e5f4f8`, ink `#000000`, (18.6:1).
+- **`alert-dark-2` (card)**: bg `#262626`, ink `#eeeeee`, (13.0:1).
+- **`link-light-3` (nav)**: ink `RGBA(251, 251, 251, 1)`.
+- **`badge-info` (badge)**: bg `#e5f4f8`, ink `#000000`, (18.6:1).
+- **`badge-dark-2` (badge)**: bg `#262626`, ink `#eeeeee`, (13.0:1).
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Dark (#424242) canvas paired with `#6d6d6d` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#fff` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 53 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#424242` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `#fff` with `#0b0b0c` text (19.7:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#4f4f4f` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-group-text` fields and secondary buttons.

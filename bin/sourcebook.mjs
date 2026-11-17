@@ -131,18 +131,25 @@ function cmdSearch() {
 
 function cmdInfo() {
   const name = positional()[0];
-  if (!name) fail("Usage: sourcebook info <name>");
+  if (!name) fail("Usage: sourcebook info <name> [--prompt]");
   const s = resolve(name);
   if (!s) fail(`No system named "${name}". Try \`sourcebook list\`.`);
 
   const md = readDesign(s.slug);
-  const report = lint(md, { name: s.slug });
+  const preview = readPreview(s.slug);
+  if (flag("prompt", false)) {
+    process.stdout.write(EMITTERS.prompt.run(md, { preview, manifest: s }));
+    return;
+  }
 
+  const report = lint(md, { name: s.slug });
   console.log(`${bold(s.displayName || s.name)}  ${dim(s.homepage || "")}`);
   console.log(`${s.style || ""}\n`);
+  if (s.org && s.org !== (s.displayName || s.name)) console.log(`${dim("org")}        ${s.org}`);
   console.log(`${dim("license")}    ${s.license} ${dim(`(${s.provenance})`)}`);
   if (s.source?.repo) console.log(`${dim("repo")}       ${s.source.repo}`);
   if (s.source?.package) console.log(`${dim("package")}    ${s.source.package}`);
+  if (s.popularity?.frameworks?.length) console.log(`${dim("frameworks")} ${s.popularity.frameworks.join(", ")}`);
   if (s.popularity?.stars || s.popularity?.npmDownloads) {
     console.log(
       `${dim("popular")}    #${s.popularity.rank} · ★ ${(s.popularity.stars || 0).toLocaleString()} stars · ${(s.popularity.npmDownloads || 0).toLocaleString()} npm/mo`
@@ -150,7 +157,27 @@ function cmdInfo() {
   }
   console.log(`${dim("tags")}       ${(s.tags || []).join(", ")}`);
   console.log(`${dim("tokens")}     ${s.tokens?.colors || 0} colors · ${s.tokens?.typography || 0} type · ${s.tokens?.components || 0} components`);
-  console.log(`${dim("checks")}     ${badge(s)}`);
+  if (preview) {
+    console.log(
+      `${dim("surfaces")}   ${s.theme || "light"} · canvas ${preview.canvas} · surface ${preview.surface} · text ${preview.text} · brand ${preview.brand} · radius ${preview.radius}`
+    );
+    const fams = [...new Set((preview.type || []).map((t) => String(t.fontFamily || "").split(",")[0].replace(/['"]/g, "").trim()).filter(Boolean))].slice(0, 3);
+    if (fams.length) console.log(`${dim("fonts")}      ${fams.join(" · ")}`);
+    const comps = (preview.components || []).slice(0, 5).map((c) => `${c.key}(${c.backgroundColor || c.border || c.textColor || c.kind}${c.rounded ? `, ${c.rounded}` : ""})`);
+    if (comps.length) console.log(`${dim("components")} ${comps.join(" · ")}`);
+    if (preview.overview) {
+      const ovLine = preview.overview.split(/\n+/)[0].replace(/\*\*([^*]+)\*\*/g, "$1").replace(/`([^`]+)`/g, "$1");
+      console.log(`\n${bold("Visual Language")}\n  ${ovLine}`);
+    }
+    if (preview.dos) {
+      const ruleLines = preview.dos.split(/\n/).filter((l) => /^-\s+/.test(l.trim())).slice(0, 6);
+      if (ruleLines.length) {
+        console.log(`\n${bold("Guidelines")}`);
+        for (const rl of ruleLines) console.log(`  ${rl.replace(/\*\*([^*]+)\*\*/g, "$1").replace(/`([^`]+)`/g, "$1")}`);
+      }
+    }
+  }
+  console.log(`\n${dim("checks")}     ${badge(s)}`);
   if (s.provenance === "listed") {
     console.log(`  ${dim("· inventory-only record (no machine-readable tokens)")}`);
   } else if (!s.checks?.verified) {
@@ -158,18 +185,20 @@ function cmdInfo() {
       console.log(`  ${f.severity === "error" ? red("✕") : yellow("·")} ${f.rule}: ${f.message}`);
     }
   }
-  console.log(`\n${dim("install")}    npx sourcebook add ${s.slug} --framework tailwind-v4`);
+  console.log(`\n${dim("prompt")}     npx sourcebook add ${s.slug} --framework prompt --print`);
+  console.log(`${dim("install")}    npx sourcebook add ${s.slug} --framework tailwind-v4`);
   console.log(`${dim("mcp")}        sourcebook://systems/${s.slug}`);
-  console.log(`\n${dim("file")}       ${path.relative(process.cwd(), path.join(s.dir, "DESIGN.md"))}`);
+  console.log(`${dim("file")}       ${path.relative(process.cwd(), path.join(s.dir, "DESIGN.md"))}`);
 }
 
 function cmdAdd() {
   const name = positional()[0];
-  if (!name) fail("Usage: sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg|prompt|json] [--dir <path>] [--force]");
+  if (!name) fail("Usage: sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg|prompt|json] [--dir <path>] [--force] [--print]");
 
   const s = resolve(name);
   if (!s) fail(`No system named "${name}". Try \`sourcebook search <intent>\`.`);
 
+  const hasExplicitFramework = argv.includes("--framework");
   const framework = String(flag("framework", "tailwind-v4"));
   const emitter = EMITTERS[framework];
   if (!emitter) fail(`Unknown framework "${framework}". Options: ${Object.keys(EMITTERS).join(", ")}`);
@@ -181,7 +210,7 @@ function cmdAdd() {
   const theme = emitter.run(md, ctx);
 
   if (flag("print")) {
-    console.log(md);
+    process.stdout.write(hasExplicitFramework ? theme : md);
     return;
   }
 
@@ -297,7 +326,7 @@ ${bold("Usage")}
   sourcebook list [--tag <tag>] [--verified] [--sort popular]
   sourcebook rank [--limit n] [--enterprise]
   sourcebook search <intent...> [--limit n] [--verified]
-  sourcebook info <name>
+  sourcebook info <name> [--prompt]
   sourcebook add <name> [--framework tailwind-v4|css-vars|dtcg|prompt|json] [--dir <path>] [--force] [--print]
   sourcebook lint <name> | --all [--format json]
   sourcebook export <name> --format tailwind-v4|css-vars|dtcg|prompt|json

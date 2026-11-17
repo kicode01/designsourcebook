@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Chakra UI
-description: "Crisp light (#fafafa) canvas, -apple-system typography, #e6f2ff brand accent, and 6px corner geometry"
+description: "Crisp light (#fafafa) canvas, -apple-system typography, #0c5d56 brand accent, and 6px corner geometry"
 colors:
   brand-50: "#e6f2ff"
   brand-100: "#e6f2ff"
@@ -93,7 +93,7 @@ colors:
   cyan-400: "#22d3ee"
   cyan-500: "#06b6d4"
   cyan-600: "#0891b2"
-  primary: "#e6f2ff"
+  primary: "#0c5d56"
 typography:
   heading:
     fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
@@ -104,10 +104,17 @@ typography:
   font-size:
     fontSize: 0.25em
     fontFamily: null
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary:
-    backgroundColor: "#e6f2ff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#0c5d56"
+    textColor: "#ffffff"
     rounded: 6px
     padding: 10px 18px
   button-secondary:
@@ -131,8 +138,8 @@ components:
     rounded: 10px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#e6f2ff"
-    textColor: "#0b0b0c"
+    backgroundColor: "#0c5d56"
+    textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -151,21 +158,69 @@ components:
 
 ## Overview
 
-Chakra UI — tokens read from https://github.com/chakra-ui/chakra-ui.
+**Chakra UI** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#0d9488` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+Typography centers cleanly on `System UI` (16px display down to 16px body), unified by `6px` base corner radius and stepped `#fafafa` -> `#f4f4f5` surface layering.
+
+Source: published token package (https://github.com/chakra-ui/chakra-ui), repo https://github.com/chakra-ui/chakra-ui, package `@chakra-ui/react`, frameworks: react, vue. Inventory: **91** colors, **4** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fafafa` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f4f4f5` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0d9488` (3.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `brand-50` (`#e6f2ff`), `brand-100` (`#e6f2ff`), `brand-200` (`#bfdeff`), `brand-300` (`#99caff`), `brand-950` (`#001a33`), `teal-100` (`#ccfbf1`).
+- **Neutral Ramp**: `brand-500` (`#fff`), `gray-50` (`#fafafa`), `gray-100` (`#f4f4f5`), `gray-200` (`#e4e4e7`), `gray-300` (`#d4d4d8`), `gray-400` (`#a1a1aa`).
+- **Semantic States**: success: `green-100` (`#dcfce7`) · danger: `red-100` (`#fee2e2`) · warning: `orange-100` (`#ffedd5`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (top step `heading`: 16px, weight 600).
+- **Body & UI Controls**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"` (`body`: 16px, weight 400).
+- **Monospace / Technical Labels**: `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`mono`: 16px).
+- **Scale Steps (4)**: `heading` (16px), `body` (16px), `mono` (16px), `font-size` (0.25em).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#e6f2ff` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 4 type steps.
-- **Component Geometry**: Buttons (`6px`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f4f4f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#f4f4f5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d9488` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#0d9488`, ink `#ffffff`, (3.7:1), radius `6px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ef4444`, ink `#0b0b0c`, (5.2:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0d9488`, ink `#ffffff`, (3.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#16a34a`, ink `#0b0b0c`, (6.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0d9488` with `#f7f7f8` text (3.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#f4f4f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

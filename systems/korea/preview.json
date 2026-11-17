@@ -3,7 +3,7 @@
   "surface": "#ecf2fe",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#ecf2fe",
+  "brand": "#256ef4",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
@@ -370,7 +370,7 @@
     },
     {
       "name": "primary",
-      "value": "#ecf2fe"
+      "value": "#256ef4"
     }
   ],
   "type": [
@@ -684,8 +684,8 @@
     {
       "key": "badge-brand",
       "kind": "badge",
-      "backgroundColor": "#ecf2fe",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#256ef4",
+      "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
     },
@@ -706,6 +706,6 @@
       "padding": "10px 16px"
     }
   ],
-  "overview": "Korea Design System — Crisp light (#ffffff) canvas, system-ui typography, #ecf2fe brand accent, and 8px corner geometry",
-  "dos": "- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ecf2fe` with `#0b0b0c` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `system-ui` across 46 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+  "overview": "**Korea Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#256ef4` brand accent.\n\nTypography centers cleanly on `System UI` (96px display down to 21px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#ecf2fe` surface layering.\n\nMaintained by **Korea**. Source: published token package (https://github.com/KRDS-uiux/krds-uiux), repo https://github.com/KRDS-uiux/krds-uiux, frameworks: css. Inventory: **91** colors, **46** typography steps, and **7** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#ecf2fe` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ecf2fe`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#256ef4` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#256ef4` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#ecf2fe` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

@@ -28,6 +28,13 @@ typography:
     fontFamily: "\"Roboto Mono\", monospace"
   font-size:
     fontSize: "80%"
+rounded:
+  button: 4px
+  input: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button-primary:
     backgroundColor: "rgba(247, 149, 32, 1)"
@@ -75,21 +82,69 @@ components:
 
 ## Overview
 
-Grafana Saga — tokens imported from @grafana/ui.
+**Grafana Saga** is a dark-first design system anchored on `#111217` canvas surfaces with `#ccccdc` primary ink (11.8:1 contrast) and `rgba(247, 149, 32, 1)` brand accent.
 
-Tokens were read from `@grafana/ui@13.3.1`, not from a marketing site: 15 colour tokens and 2 type tokens.
+Typography centers cleanly on `Inter` (16px display down to 16px body), unified by `4px` base corner radius and stepped `#111217` -> `#181b1f` surface layering.
+
+Maintained by **Grafana**. Source: published token package, repo https://github.com/grafana/grafana, package `@grafana/ui`, frameworks: react. Inventory: **18** colors, **3** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-15 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#111217` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#181b1f` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#ccccdc` — body copy and primary headings (11.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#ccccdc` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `rgba(247, 149, 32, 1)` (8.3:1 vs canvas; pair with `#0b0b0c` foreground ink for 8.7:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #ccccdc 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `a04338` (`#5a372a`), `color` (`#f59433`), `eec97d` (`#855a00`), `fd48cb` (`#ff20ed`), `23a0db` (`#00008b`), `default-annotation-color` (`rgba(0, 211, 255, 1)`).
+- **Neutral Ramp**: `bg-canvas` (`#111217`), `bg-surface` (`#181b1f`), `text-primary` (`#ccccdc`), `no-data-color` (`rgba(150, 150, 150, 1)`), `2e2f35` (`#bab4ca`).
+- **Semantic States**: danger: `alerting-color` (`rgba(237, 46, 24, 1)`).
 
 ## Typography
 
-Families declared in the source: `"Roboto Mono"`.
+- **Primary / Display Voice**: `Inter, "Helvetica Neue", Arial, sans-serif` (top step `font-sans`: 16px, weight 600).
+- **Body & UI Controls**: `Inter, "Helvetica Neue", Arial, sans-serif` (`font-sans`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"Roboto Mono", monospace` (`font-mono`: 16px).
+- **Scale Steps (3)**: `font-sans` (16px), `font-mono` (16px), `font-size` (80%).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#00008b) canvas paired with `#00008b` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `rgba(247, 149, 32, 1)` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 3 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#181b1f` cards; separate sibling sections using `color-mix(in srgb, #ccccdc 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#111217` -> `#181b1f`) and `1px solid color-mix(in srgb, #ccccdc 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgba(247, 149, 32, 1)` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `rgba(247, 149, 32, 1)`, ink `#0b0b0c`, (8.7:1), radius `4px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#ccccdc`, radius `4px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#ef4444`, ink `#000000`, (5.6:1), radius `4px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `4px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `8px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `rgba(247, 149, 32, 1)`, ink `#000000`, (9.3:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `4px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#111217` (dark) with `#ccccdc` primary text and `#ccccdc` secondary labels.
+- Use `rgba(247, 149, 32, 1)` with `#0b0b0c` text (8.7:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#181b1f` surface shifts and `color-mix(in srgb, #ccccdc 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

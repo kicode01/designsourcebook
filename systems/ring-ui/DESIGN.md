@@ -73,6 +73,13 @@ typography:
     fontSize: 26px
   title:
     fontSize: 21px
+rounded:
+  button: 4px
+  input: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button-primary:
     backgroundColor: "#07c3f2"
@@ -120,21 +127,69 @@ components:
 
 ## Overview
 
-JetBrains Ring UI — tokens imported from @jetbrains/ring-ui.
+**Ring UI** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#07c3f2` brand accent.
 
-Tokens were read from `@jetbrains/ring-ui@7.0.133`, not from a marketing site: 55 colour tokens and 7 type tokens.
+Typography centers cleanly on `System UI` (26px display down to 16px body), unified by `4px` base corner radius and stepped `rgb(255, 255, 255)` -> `rgb(247, 248, 250)` surface layering.
+
+Maintained by **JetBrains**. Source: published token package (https://github.com/JetBrains/ring-ui#readme), repo https://github.com/JetBrains/ring-ui, package `@jetbrains/ring-ui`, frameworks: react, css. Inventory: **55** colors, **7** typography steps, and **8** documented components (Apache-2.0 license).
 
 ## Colors
 
-55 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `rgb(255, 255, 255)` — base application backdrop (light theme).
+- **Surface (`surface`)**: `rgb(247, 248, 250)` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#07c3f2` (2.1:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.5:1 contrast).
+- **Structural Border (`border`)**: `rgb(235, 236, 240)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `ring-border-hover-components` (`rgb(160, 189, 248)`), `ring-border-accent-components` (`rgb(112, 156, 245)`), `ring-highlight-border-components` (`rgb(254, 210, 119)`), `ring-highlight-border-hover-components` (`rgb(253, 189, 61)`), `ring-purple-border-components` (`rgb(191, 161, 248)`), `ring-purple-border-hover-components` (`rgb(161, 119, 244)`).
+- **Neutral Ramp**: `ring-borders-components` (`rgb(211, 213, 219)`), `ring-border-disabled-components` (`rgb(235, 236, 240)`), `ring-border-selected-disabled-components` (`rgb(201, 204, 214)`), `ring-text-components` (`rgb(39, 40, 46)`), `ring-white-text-components` (`rgb(255, 255, 255)`), `ring-content-background-components` (`rgb(255, 255, 255)`).
+- **Semantic States**: success: `ring-border-hover-success-components` (`rgb(197, 229, 204)`) · danger: `ring-border-hover-error-components` (`rgb(250, 212, 216)`) · warning: `ring-warning-border-components` (`rgb(254, 210, 119)`) · info: `ring-link-components` (`rgb(49, 95, 189)`).
 
 ## Typography
 
-Families declared in the source: `system-ui, Arial, sans-serif`, `Menlo, "Bitstream Vera Sans Mono", "Ubuntu Mono", Consolas, "Courier New", Courier, monospace`.
+- **Primary / Display Voice**: `system-ui, Arial, sans-serif` (top step `font-size`: 26px, weight 600).
+- **Body & UI Controls**: `system-ui, Arial, sans-serif` (`ring-font-size-larger`: 16px, weight 400).
+- **Monospace / Technical Labels**: `Menlo, "Bitstream Vera Sans Mono", "Ubuntu Mono", Consolas, "Courier New", Courier, monospace` (`ring-font-family-monospace`: 16px).
+- **Scale Steps (7)**: `font-size` (26px), `title` (21px), `ring-font-size-larger` (16px), `ring-font-family` (16px), `ring-font-family-monospace` (16px), `ring-font-size` (14px), `ring-font-size-smaller` (12px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (rgb(255, 255, 255)) canvas paired with `rgb(255, 255, 255)` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#07c3f2` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `system-ui` across 7 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `rgb(247, 248, 250)` cards; separate sibling sections using `rgb(235, 236, 240)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255, 255, 255)` -> `rgb(247, 248, 250)`) and `1px solid rgb(235, 236, 240)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#07c3f2` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#07c3f2`, ink `#0b0b0c`, (9.5:1), radius `4px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `rgb(250, 212, 216)`, ink `#0b0b0c`, (14.5:1), radius `4px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#07c3f2`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `rgb(197, 229, 204)`, ink `#0b0b0c`, (14.5:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#07c3f2` with `#0b0b0c` text (9.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `rgb(247, 248, 250)` surface shifts and `rgb(235, 236, 240)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -104,6 +104,12 @@ typography:
     fontSize: 12px
     fontWeight: 700
     lineHeight: 1
+rounded:
+  button: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button:
     textColor: "#73828c"
@@ -145,25 +151,67 @@ components:
 
 ## Overview
 
-Enel — read from the rendered page in a browser, not from published tokens.
+**Enel** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#9bbdfc` brand accent.
 
-Tokens were read from https://dsyui.enelx.com/, not from a published token package: 91 colour tokens and 2 type tokens.
+Typography centers cleanly on `Roobert` (16px display down to 16px body), unified by `4px` base corner radius and stepped `#ffffff` -> `#f7f8fb` surface layering.
+
+Source: live stylesheet extraction (https://dsyui.enelx.com/), frameworks: css. Inventory: **91** colors, **2** typography steps, and **8** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f7f8fb` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#9bbdfc` (1.9:1 vs canvas; pair with `#0b0b0c` foreground ink for 10.4:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `color-neutral-light` (`#c2cddd`), `color-neutral-base` (`#667790`), `color-secondary-lightest` (`#f9bed2`), `color-secondary-lighter` (`#f06292`), `color-secondary-light` (`#f06292`), `color-secondary-base` (`#d3135a`).
+- **Neutral Ramp**: `color-neutral-lightest` (`#f7f8fb`), `color-neutral-lighter` (`#eff2f7`), `color-neutral-dark` (`#272c34`), `color-neutral-darkest` (`#1c1e20`), `color-neutral-white` (`#ffffff`), `color-neutral-black` (`#131416`).
+- **Semantic States**: success: `color-success-lighter` (`#b2e6cd`) · danger: `color-error-lighter` (`#ffcccf`) · warning: `yellow-sunglow-lightest` (`#FFEB85`) · info: `color-info-lighter` (`#cbdaf6`).
 
 ## Typography
 
-Families declared in the source: `Roobert, Helvetica, Arial, sans-serif`.
+- **Primary / Display Voice**: `Roobert, Helvetica, Arial, sans-serif` (top step `nav`: 16px, weight 400).
+- **Body & UI Controls**: `Roobert, Helvetica, Arial, sans-serif` (`nav`: 16px, weight 400).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `0px 7px`, `0px 8px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f7f8fb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f7f8fb`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#9bbdfc` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
 
 ## Components
 
-4 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`button` (button)**: ink `#73828c`, radius `4px`, padding `0px 7px`.
+- **`button-2` (button)**: ink `#5c6870`, radius `4px`, padding `0px 8px`.
+- **`button-3` (button)**: ink `#2e3438`, radius `4px`, padding `5px 6px 4px 8px`.
+- **`input` (input)**: ink `#2e3438`.
+- **`card-surface` (card)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#9bbdfc`, ink `#0b0b0c`, (10.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#b2e6cd`, ink `#0b0b0c`, (14.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#9bbdfc` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Roobert` across 2 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#9bbdfc` with `#0b0b0c` text (10.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Roobert` headings with `Roobert` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#f7f8fb` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

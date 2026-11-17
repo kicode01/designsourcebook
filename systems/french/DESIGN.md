@@ -215,6 +215,13 @@ typography:
     fontSize: 1.125rem
     fontWeight: 700
     lineHeight: 1.5rem
+rounded:
+  button: 4px
+  input: 4px
+  card: 8px
+  badge: 999px
+  nav: 4px
+  default: 4px
 components:
   button-primary:
     backgroundColor: "#ff732c"
@@ -262,21 +269,68 @@ components:
 
 ## Overview
 
-French Government Design System — tokens read from https://github.com/GouvernementFR/dsfr.
+**French Government Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff732c` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 91 colour tokens and 0 type tokens.
+Typography centers cleanly on `Marianne` (72px display down to 16px body), unified by `4px` base corner radius and stepped `#fff` -> `#fbf5f2` surface layering.
+
+Maintained by **French Government**. Source: published token package (https://github.com/GouvernementFR/dsfr), repo https://github.com/GouvernementFR/dsfr, package `@gouvfr/dsfr`, frameworks: css, react, vue. Inventory: **91** colors, **31** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fbf5f2` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#ff732c` (2.7:1 vs canvas; pair with `#f7f7f8` foreground ink for 2.5:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `warning-75` (`#2d1814`), `warning-950` (`#ffe9e6`), `error-75` (`#301717`), `focus` (`#0a76f6`), `blue-france-200` (`#313178`), `blue-ecume-100` (`#1d2437`).
+- **Neutral Ramp**: `info-75` (`#171d2e`), `info-950` (`#e8edff`), `info-975` (`#f4f6ff`), `success-75` (`#142117`), `success-100` (`#19271d`), `success-125` (`#1e2e22`).
+- **Semantic States**: success: `success-200` (`#204129`) · danger: `error-100` (`#391c1c`) · warning: `warning-100` (`#361e19`) · info: `info-100` (`#1d2437`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Marianne, arial, sans-serif` (top step `fr-display-xl`: 4.5rem, weight 700, line-height 5rem).
+- **Body & UI Controls**: `Marianne, arial, sans-serif` (`body`: 1rem, weight 400, line-height 1.5rem).
+- **Scale Steps (31)**: `fr-display-xl` (4.5rem, w700), `fr-display-lg` (4rem, w700), `fr-display-md` (3.5rem, w700), `fr-display-sm` (3rem, w700), `fr-display-xs` (2.5rem, w700), `h1` (2rem, w700), `h2` (1.75rem, w700), `h3` (1.5rem, w700).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#ff732c` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Marianne` across 31 type steps.
-- **Component Geometry**: Buttons (`4px`), cards (`8px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#fbf5f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fbf5f2`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff732c` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#ff732c`, ink `#0b0b0c`, (7.3:1), radius `4px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#301717`, ink `#ffffff`, (16.7:1), radius `4px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `4px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#ff732c`, ink `#0b0b0c`, (7.3:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#142117`, ink `#ffffff`, (16.7:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `4px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#ff732c` with `#f7f7f8` text (2.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Marianne` headings with `Marianne` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (8px on outer containers).
+- Separate containers via `#fbf5f2` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

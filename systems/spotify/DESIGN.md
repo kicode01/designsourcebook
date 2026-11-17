@@ -89,6 +89,13 @@ typography:
     fontFamily: SpotifyMixUITitle
     fontSize: 10px
     fontWeight: 400
+rounded:
+  button: 9999px
+  input: 10px
+  card: 16px
+  badge: 999px
+  nav: 12px
+  default: 10px
 components:
   button-dark-pill:
     backgroundColor: "#1f1f1f"

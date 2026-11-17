@@ -87,6 +87,13 @@ typography:
     fontFamily: "Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif"
   rs-font-family-monospace:
     fontFamily: "\"Geist Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+rounded:
+  button: inherit
+  input: inherit
+  card: 10px
+  badge: 999px
+  nav: inherit
+  default: inherit
 components:
   Button-module:
     backgroundColor: "#0000"
@@ -127,25 +134,68 @@ components:
 
 ## Overview
 
-Reshaped — read from reshaped.so's live stylesheets, not a published token package.
+**Reshaped** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#1860fa` brand accent.
 
-Tokens were read from https://reshaped.so, not from a published token package: 49 colour tokens and 32 type tokens.
+Typography centers cleanly on `Inter` (80px display down to 16px body), unified by `inherit` base corner radius and stepped `#fff` -> `#f8f8f8` surface layering.
+
+Source: live stylesheet extraction (https://reshaped.so), repo https://github.com/reshaped-ui/reshaped, package `reshaped`, frameworks: react, css. Inventory: **49** colors, **17** typography steps, and **7** documented components (all rights reserved license).
 
 ## Colors
 
-49 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f8f8f8` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#1860fa` (5.1:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.8:1 contrast).
+- **Structural Border (`border`)**: `#e4ecf9` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `code-snippet-value` (`#96d0ff`), `code-snippet-attr` (`#d19a66`), `rs-color-brand` (`#1860fa`), `rs-color-background-primary` (`#1860fa`), `rs-color-background-primary-highlighted` (`#014ce7`), `rs-color-border-primary` (`#0752ec`).
+- **Neutral Ramp**: `rs-color-white` (`#fff`), `rs-color-black` (`#000`), `rs-color-on-background-primary` (`#fff`), `rs-color-on-background-critical` (`#fff`), `rs-color-on-background-warning` (`#000`), `rs-color-on-background-positive` (`#fff`).
+- **Semantic States**: success: `rs-color-background-positive` (`#238649`) · danger: `rs-color-background-critical` (`#dc3246`) · warning: `rs-color-background-warning` (`#ffb400`).
 
 ## Typography
 
-Families declared in the source: `Inter,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif`, `Geist Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace`, `var(--rs-font-family-headline)`, `var(--rs-font-family-title)`, `var(--rs-font-family-body)`, `var(--font-sans)`, `var(--font-mono)`.
+- **Primary / Display Voice**: `Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif` (top step `rs-font-size-headline-1`: 5rem, weight 600).
+- **Body & UI Controls**: `Inter, BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial, sans-serif` (`rs-font-family-body`: 16px, weight 400).
+- **Monospace / Technical Labels**: `"Geist Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` (`rs-font-family-monospace`: 16px).
+- **Scale Steps (17)**: `rs-font-size-headline-1` (5rem), `rs-font-size-headline-2` (4rem), `rs-font-size-headline-3` (3rem), `rs-font-size-featured-1` (2rem), `rs-font-size-featured-2` (1.75rem), `rs-font-size-featured-3` (1.5rem), `rs-font-size-featured-4` (1.375rem), `rs-font-size-featured-5` (1.25rem).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f8f8f8` cards; separate sibling sections using `#e4ecf9` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f8f8f8`) and `1px solid #e4ecf9` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1860fa` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `inherit` (Buttons `inherit` · Inputs `inherit` · Cards `10px` · Badges `999px` · Navigation `inherit`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
 
 ## Components
 
-4 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`Button-module` (button)**: bg `#0000`, radius `inherit`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `inherit`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `inherit`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#1860fa`, ink `#ffffff`, (5.1:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#238649`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `inherit`, padding `10px 16px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#1860fa` with `#ffffff` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 17 type steps.
-- **Component Geometry**: Buttons (`inherit`), cards (`10px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#1860fa` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `inherit` base geometry across inputs and buttons (10px on outer containers).
+- Separate containers via `#f8f8f8` surface shifts and `#e4ecf9` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `inherit` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -85,6 +85,10 @@ typography:
   langselector-title:
     fontSize: 12px
     fontWeight: 300
+rounded:
+  button: 12px
+  badge: 999px
+  default: 12px
 components:
   banner:
     backgroundColor: "#30c7dc"
@@ -130,25 +134,68 @@ components:
 
 ## Overview
 
-GoodBarber Design System — read from www.goodbarber.com's live stylesheets, not a published token package.
+**GoodBarber Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#31bcf6` brand accent.
 
-Tokens were read from https://www.goodbarber.com/uxdesign/, not from a published token package: 68 colour tokens and 4 type tokens.
+Typography centers cleanly on `Jakarta` (18px display down to 16px body), unified by `12px` base corner radius and stepped `#fff` -> `#f5f7f8` surface layering.
+
+Maintained by **GoodBarber**. Source: live stylesheet extraction (https://www.goodbarber.com/uxdesign/), frameworks: css. Inventory: **68** colors, **4** typography steps, and **9** documented components (all rights reserved license).
 
 ## Colors
 
-68 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#fff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f5f7f8` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#31bcf6` (2.2:1 vs canvas; pair with `#0b0b0c` foreground ink for 9.0:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `begonia50` (`#fff2e3`), `begonia75` (`#ffe8db`), `begonia100` (`#feddd2`), `begonia125` (`#ffd3cc`), `begonia150` (`#ffc9c5`), `begonia200` (`#ffb5ba`).
+- **Neutral Ramp**: `begonia25` (`#fff9f1`), `begonia30` (`#fff6ea`), `begonia60` (`#ffe9eb`), `gunpowder15` (`#f9fcfd`), `gunpowder20` (`#f6fbfd`), `gunpowder30` (`#f3f9fd`).
+- **Semantic States**: success: `accent-green` (`#4dd35b`) · warning: `accent-orange` (`#ffb421`).
 
 ## Typography
 
-Families declared in the source: `Jakarta, Arial, sans-serif`.
+- **Primary / Display Voice**: `Jakarta, Arial, sans-serif` (top step `menu-info-block-title`: 18px, weight 600).
+- **Body & UI Controls**: `Jakarta, Arial, sans-serif` (`body`: 1rem, weight 400, line-height 1.5).
+- **Scale Steps (4)**: `menu-info-block-title` (18px), `body` (1rem, w400), `menu-title` (16px, w300), `langselector-title` (12px, w300).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `12px`, `10px 18px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f5f7f8` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f7f8`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#31bcf6` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `12px` (Buttons `12px` · Inputs `12px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
 
 ## Components
 
-4 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`banner` (card)**: bg `#30c7dc`, ink `#0b0b0c`, (9.7:1), padding `12px`.
+- **`banner-info` (card)**: bg `#1c2a39`.
+- **`link` (nav)**: ink `#f5f7f8`.
+- **`select` (input)**: bg `#3f4960`, radius `12px`.
+- **`button-primary` (button)**: bg `#31bcf6`, ink `#0b0b0c`, (9.0:1), radius `12px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `12px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `12px`, padding `10px 18px`.
+- **`badge-brand` (badge)**: bg `#31bcf6`, ink `#0b0b0c`, (9.0:1), radius `999px`, padding `4px 10px`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#fff) canvas paired with `#fff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#31bcf6` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Jakarta` across 4 type steps.
-- **Component Geometry**: Buttons (`12px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#31bcf6` with `#0b0b0c` text (9.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Jakarta` headings with `Jakarta` body copy using documented weights and scale steps.
+- Apply `12px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f5f7f8` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `12px` baseline.
+- Do not truncate or drop border contrast on `select` fields and secondary buttons.

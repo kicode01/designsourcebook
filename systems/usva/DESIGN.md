@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: usva.
-description: "Dark (#000) canvas, Inter typography, #0a0613 brand accent, and 8px corner geometry"
+description: "Dark (#000) canvas, Inter typography, #8b5cf6 brand accent, and 8px corner geometry"
 colors:
   usva-bg: "#0a0613"
   usva-sunken: "#0c0719"
@@ -31,7 +31,7 @@ colors:
   default-value: "#a78bfa"
   bg: "#000"
   kajo: "#a78bfa"
-  primary: "#0a0613"
+  primary: "#8b5cf6"
 typography:
   display-lg:
     fontFamily: "Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
@@ -58,10 +58,17 @@ typography:
     fontSize: 12px
     fontWeight: 500
     lineHeight: 1.35
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
-    backgroundColor: "#0a0613"
-    textColor: "#f7f7f8"
+    backgroundColor: "#8b5cf6"
+    textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 18px
   button-secondary:
@@ -85,8 +92,8 @@ components:
     rounded: 12px
     padding: 18px 20px
   badge-brand:
-    backgroundColor: "#0a0613"
-    textColor: "#f7f7f8"
+    backgroundColor: "#8b5cf6"
+    textColor: "#0b0b0c"
     rounded: 999px
     padding: 4px 10px
   badge-success:
@@ -101,25 +108,72 @@ components:
     padding: 10px 16px
 ---
 
-# usva.
+# usva
 
 ## Overview
 
-usva. — tokens read from https://github.com/matt-pasek/usva.
+**usva** is a dark-first design system anchored on `#000` canvas surfaces with `#f7f7f8` primary ink (19.6:1 contrast) and `#8b5cf6` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 29 colour tokens and 0 type tokens.
+Typography centers cleanly on `Inter` (36px display down to 15px body), unified by `8px` base corner radius and stepped `#000` -> `#100b1f` surface layering.
+
+Source: published token package (https://github.com/matt-pasek/usva), repo https://github.com/matt-pasek/usva, frameworks: css. Inventory: **29** colors, **5** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-29 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#000` — base application backdrop (dark theme).
+- **Surface (`surface`)**: `#100b1f` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#f7f7f8` — body copy and primary headings (19.6:1 on canvas).
+- **Muted Ink (`muted`)**: `#f7f7f8` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#8b5cf6` (5.0:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.0:1 contrast).
+- **Structural Border (`border`)**: `#221c30` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `usva-muted` (`#8b85a8`), `usva-faint` (`#4c4663`), `usva-accent` (`#a78bfa`), `usva-accent-2` (`#8b5cf6`), `usva-accent-alt` (`#52c989`), `usva-accent-tint` (`#2e254b`).
+- **Neutral Ramp**: `usva-bg` (`#0a0613`), `usva-sunken` (`#0c0719`), `usva-surface` (`#100b1f`), `usva-surface-2` (`#181328`), `usva-overlay` (`#0c0718`), `usva-ink` (`#e6e3f2`).
+- **Semantic States**: success: `usva-success` (`#52c989`) · danger: `usva-danger` (`#e0556b`) · warning: `usva-warning` (`#e0b341`) · info: `usva-info` (`#6ea8fe`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif` (top step `display-lg`: 36px, weight 600, line-height 1.2).
+- **Body & UI Controls**: `Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif` (`body`: 15px, weight 400, line-height 1.55).
+- **Scale Steps (5)**: `display-lg` (36px, w600), `heading-md` (24px, w600), `heading-sm` (18px, w500), `body` (15px, w400), `caption` (12px, w500).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#000) canvas paired with `#000` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#0a0613` with `#f7f7f8` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 5 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#100b1f` cards; separate sibling sections using `#221c30` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#000` -> `#100b1f`) and `1px solid #221c30` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#8b5cf6` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#8b5cf6`, ink `#0b0b0c`, (4.6:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#f7f7f8`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#e0556b`, ink `#000000`, (5.7:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#8b5cf6`, ink `#0b0b0c`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#52c989`, ink `#000000`, (10.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#000` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.
+- Use `#8b5cf6` with `#f7f7f8` text (4.0:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#100b1f` surface shifts and `#221c30` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

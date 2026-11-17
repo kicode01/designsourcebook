@@ -1,16 +1,16 @@
 {
   "canvas": "#F6F6F6",
-  "surface": "#EFF4FE",
+  "surface": "#EEEEEE",
   "text": "#0b0b0c",
   "muted": "#0b0b0c",
-  "brand": "#EFF4FE",
+  "brand": "#276EF1",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
   "radius": "8px",
   "ink": "#0b0b0c",
   "palette": [
     {
       "name": "primary",
-      "value": "#EFF4FE"
+      "value": "#276EF1"
     },
     {
       "name": "primary50",
@@ -468,8 +468,8 @@
     {
       "key": "button-primary",
       "kind": "button",
-      "backgroundColor": "#EFF4FE",
-      "textColor": "#0b0b0c",
+      "backgroundColor": "#276EF1",
+      "textColor": "#ffffff",
       "rounded": "8px",
       "padding": "10px 18px"
     },
@@ -508,8 +508,8 @@
     {
       "key": "badge-brand",
       "kind": "badge",
-      "backgroundColor": "#EFF4FE",
-      "textColor": "#000000",
+      "backgroundColor": "#276EF1",
+      "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
     },
@@ -530,6 +530,6 @@
       "padding": "10px 16px"
     }
   ],
-  "overview": "Uber's Base Web — Crisp light (#F6F6F6) canvas, UberMove typography, #EFF4FE brand accent, and 8px corner geometry",
-  "dos": "- **Surface & Theme Polarity**: Dark (#292929) canvas paired with `#292929` component surfaces and `#f7f7f8` primary ink.\n- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#EFF4FE` with `#000000` label contrast.\n- **Typographic Voice**: Headings and UI controls set in `UberMove` across 13 type steps.\n- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast."
+  "overview": "**Uber's Base Web** is a light-first design system anchored on `#F6F6F6` canvas surfaces with `#0b0b0c` primary ink (18.2:1 contrast) and `#276EF1` brand accent.\n\nTypography centers cleanly on `UberMove` (52px display down to 16px body), unified by `8px` base corner radius and stepped `#F6F6F6` -> `#EEEEEE` surface layering.\n\nMaintained by **Uber**. Source: published token package (https://github.com/uber-web/baseui), repo https://github.com/uber/baseweb, package `baseui`, frameworks: react. Inventory: **90** colors, **13** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#EEEEEE` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F6F6F6` -> `#EEEEEE`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#276EF1` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#F6F6F6` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#276EF1` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `UberMove` headings with `UberMove` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#EEEEEE` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

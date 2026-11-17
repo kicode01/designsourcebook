@@ -49,6 +49,13 @@ typography:
     fontFamily: Inter
   font-mono:
     fontFamily: Roboto Mono
+rounded:
+  button: 8px
+  input: 8px
+  card: 12px
+  badge: 999px
+  nav: 8px
+  default: 8px
 components:
   button-primary:
     backgroundColor: "#80c7ca"
@@ -96,21 +103,68 @@ components:
 
 ## Overview
 
-Okta Odyssey Design System — tokens read from https://github.com/okta/odyssey.
+**Okta Odyssey Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0f1217` primary ink (18.8:1 contrast) and `#80c7ca` brand accent.
 
-Tokens were read from the project's own repository, not from a marketing site: 40 colour tokens and 0 type tokens.
+Typography centers cleanly on `Inter` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f0f1f2` surface layering.
+
+Maintained by **Okta**. Source: published token package (https://github.com/okta/odyssey), repo https://github.com/okta/odyssey, package `@okta/odyssey-react-mui`, frameworks: react. Inventory: **41** colors, **2** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
-40 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f0f1f2` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0f1217` — body copy and primary headings (18.8:1 on canvas).
+- **Muted Ink (`muted`)**: `#0f1217` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#80c7ca` (1.9:1 vs canvas; pair with `#0b0b0c` foreground ink for 10.2:1 contrast).
+- **Structural Border (`border`)**: `color-mix(in srgb, #0f1217 14%, transparent)` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `lighter` (`#212947`), `primary` (`#80c7ca`), `main` (`#536adf`), `darker` (`#556ce1`), `text` (`#a2b7fe`), `heading` (`#d7e0fe`).
+- **Neutral Ramp**: `50` (`#0f1217`), `100` (`#2b2e34`), `200` (`#44484e`), `300` (`#656970`), `400` (`#7d8088`), `500` (`#8f929a`).
+- **Semantic States**: success: `success` (`#336845`) · danger: `danger` (`#993525`) · warning: `warning` (`#735529`).
 
 ## Typography
 
-No resolvable type tokens were extracted. The type scale is omitted rather than invented.
+- **Primary / Display Voice**: `Inter` (top step `font-sans`: 16px, weight 600).
+- **Body & UI Controls**: `Inter` (`font-sans`: 16px, weight 400).
+- **Monospace / Technical Labels**: `Roboto Mono` (`font-mono`: 16px).
 
-## Visual Language
+## Layout
 
-- **Surface & Theme Polarity**: Dark (#ff0000) canvas paired with `#000000` component surfaces and `#f7f7f8` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#80c7ca` with `#000000` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `Inter` across 2 type steps.
-- **Component Geometry**: Buttons (`8px`), cards (`12px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Hierarchy**: Group controls cleanly within `#f0f1f2` cards; separate sibling sections using `color-mix(in srgb, #0f1217 14%, transparent)` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f0f1f2`) and `1px solid color-mix(in srgb, #0f1217 14%, transparent)` hairlines instead of heavy drop shadows.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#80c7ca` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+
+## Components
+
+- **`button-primary` (button)**: bg `#80c7ca`, ink `#0f1217`, (9.8:1), radius `8px`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0f1217`, radius `8px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#993525`, ink `#ffffff`, (7.3:1), radius `8px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `#f0f1f2`, ink `#0f1217`, (16.6:1), radius `8px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `#f0f1f2`, ink `#0f1217`, (16.6:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#80c7ca`, ink `#000000`, (10.9:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#336845`, ink `#ffffff`, (6.5:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f0f1f2`, ink `#0f1217`, (16.6:1), radius `8px`, padding `10px 16px`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0f1217` primary text and `#0f1217` secondary labels.
+- Use `#80c7ca` with `#0b0b0c` text (10.2:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
+- Apply `8px` base geometry across inputs and buttons (12px on outer containers).
+- Separate containers via `#f0f1f2` surface shifts and `color-mix(in srgb, #0f1217 14%, transparent)` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `8px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

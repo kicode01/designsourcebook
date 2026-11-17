@@ -3,10 +3,6 @@ version: alpha
 name: Intuit Harmony
 description: "Crisp light (#ffffff) canvas, -apple-system typography, #FF0000 brand accent, and 3px corner geometry"
 colors:
-  e-global-color-primary: "#FF0000"
-  e-global-color-secondary: "#FF0000"
-  e-global-color-text: "#FF0000"
-  e-global-color-accent: "#FF0000"
   the7-accent-bg-color: "#999999"
   the7-accent-color: "#999999"
   the7-btn-border-color: "#999999"
@@ -93,7 +89,8 @@ colors:
   n-menu-title-hover-color-fallback: "#1f2124"
   n-menu-toggle-icon-color: "#1f2124"
   wp-preset-color-cyan-bluish-gray: "#abb8c3"
-  primary: "#FF0000"
+  primary: "#0077C5"
+  intuit-super-blue: "#0077C5"
 typography:
   wc-block-grid-product-title:
     fontFamily: "-apple-system, blinkmacsystemfont, \"Helvetica Neue\", helvetica, sans-serif"
@@ -409,6 +406,11 @@ typography:
     fontFamily: "Inter, Sans-serif"
   the7-form-xl-font-family:
     fontFamily: "Inter, Sans-serif"
+rounded:
+  button: 3px
+  input: 3px
+  badge: 999px
+  default: 3px
 components:
   elementor-price-table:
     backgroundColor: "#000"
@@ -474,25 +476,68 @@ components:
 
 ## Overview
 
-Intuit Harmony — read from the rendered page in a browser, not from published tokens.
+**Intuit Harmony** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0077C5` brand accent.
 
-Tokens were read from https://designsystem.quickbooks.com/, not from a published token package: 91 colour tokens and 144 type tokens.
+Display headlines pair `System UI` with `Roboto` body copy (110px display down to 16px body), unified by `3px` base corner radius and subtle shadow elevation.
+
+Maintained by **Intuit**. Source: live stylesheet extraction (https://designsystem.quickbooks.com/), repo https://github.com/intuit/design-systems-cli, frameworks: react, css. Inventory: **88** colors, **144** typography steps, and **13** documented components (all rights reserved license).
 
 ## Colors
 
-91 colour tokens selected from the token files, weighted toward semantic roles.
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#f1f2f3` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#0077C5` (4.7:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.4:1 contrast).
+- **Structural Border (`border`)**: `#d5d8dc` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `n-tabs-color-accent-fallback` (`#61ce70`), `the7-breadcrumbs-bg-color` (`#594492`), `the7-header-transparent-bg-color` (`#eeee22`), `the7-megamenu-title-active-color` (`#8224e3`), `the7-navigation-line-decoration-color` (`#dd9933`), `e-rating-icon-marked-color` (`#f0ad4e`).
+- **Neutral Ramp**: `the7-accent-bg-color` (`#999999`), `the7-accent-color` (`#999999`), `the7-btn-border-color` (`#999999`), `the7-btn-border-hover-color` (`#999999`), `the7-links-color` (`#999999`), `the7-microwidget-button-2-border-color` (`#999999`).
+- **Semantic States**: info: `the7-links-hover-color` (`#0077C5`).
 
 ## Typography
 
-Families declared in the source: `-apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, sans-serif`, `AvenirForIntuit`, `Inter, Sans-serif`, `Arial, Helvetica, Arial, Verdana, sans-serif`, `Roboto, Helvetica, Arial, Verdana, sans-serif`, `"Nunito Sans", Helvetica, Arial, Verdana, sans-serif`, `Nunito, Helvetica, Arial, Verdana, sans-serif`, `AvenirForIntuit, Sans-serif`, `Roboto, Arial, Helvetica, sans-serif`, `Arial, sans-serif`.
+- **Primary / Display Voice**: `-apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, sans-serif` (top step `elementor-heading-title`: 110px, weight 600, line-height 1.3em).
+- **Body & UI Controls**: `Roboto, Helvetica, Arial, Verdana, sans-serif` (`the7-base-font-family`: 16px, weight 400).
+- **Scale Steps (144)**: `elementor-heading-title` (110px), `the7-h1-font-size-desktop` (50px), `the7-h1-font-size` (50px), `wp-preset-font-size-x-large` (42px), `e-global-typography-2d6a0b4-font-size` (41px), `the7-h2-font-size-desktop` (40px), `the7-h2-font-size` (40px), `h1` (40px).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `12px 24px`, `16px`, `0px 0px 0px 0px`, `9px 13px`, `4px 10px`.
+- **Hierarchy**: Group controls cleanly within `#f1f2f3` cards; separate sibling sections using `#d5d8dc` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0px 0px 10px 0px rgba(0,0,0,0)`, `0px 0px 10px 0px rgba(0,0,0,0)`) paired with `#d5d8dc` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0077C5` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `3px` (Buttons `3px` · Inputs `3px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `3px` container.
 
 ## Components
 
-10 components recovered by reading the compiled stylesheet — real background, radius, padding, border and type values, not values invented to fill a gap. The system does not publish component tokens, so these come from its own CSS rules.
+- **`elementor-price-table` (nav)**: bg `#000`.
+- **`elementor-widget-woocommerce-purchase-summary` (card)**: ink `#69727d`.
+- **`nav-menu-dropdown` (nav)**: bg `#fff`.
+- **`button` (button)**: bg `rgb(105, 114, 125)`, ink `rgb(255, 255, 255)`, (4.9:1), radius `3px`, padding `12px 24px`.
+- **`wp-block-button-2` (button)**: bg `rgb(50, 55, 60)`, ink `rgb(255, 255, 255)`, (12.0:1), radius `9999px`.
+- **`wc-block-components-notice-banner` (card)**: bg `rgb(255, 255, 255)`, ink `rgb(47, 47, 47)`, (13.4:1), radius `4px`, padding `16px`, border `1px solid`.
+- **`nav` (nav)**: bg `#ffffff`, padding `0px 0px 0px 0px`.
+- **`dt-wc-btn` (button)**: bg `#999999`.
 
-## Visual Language
+## Do's and Don'ts
 
-- **Surface & Theme Polarity**: Crisp light (#ffffff) canvas paired with `#ffffff` component surfaces and `#0b0b0c` primary ink.
-- **Brand & Interactive Accent**: Primary actions and focus states anchor on `#FF0000` with `#0b0b0c` label contrast.
-- **Typographic Voice**: Headings and UI controls set in `-apple-system` across 144 type steps.
-- **Component Geometry**: Buttons (`3px`), cards (`7px`), inputs, badges, and navigation bars share consistent spacing and border contrast.
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#0077C5` with `#f7f7f8` text (4.4:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `System UI` headings with `Roboto` body copy using documented weights and scale steps.
+- Apply `3px` base geometry across inputs and buttons (3px on outer containers).
+- Separate containers via `#f1f2f3` surface shifts and `#d5d8dc` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `3px` baseline.
+- Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

@@ -111,6 +111,13 @@ typography:
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: "-0.32px"
+rounded:
+  button: 8px
+  input: 12px
+  card: 12px
+  badge: 999px
+  nav: 12px
+  default: 12px
 components:
   button-warm-sand:
     backgroundColor: "#e8e6dc"

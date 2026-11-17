@@ -128,6 +128,13 @@ typography:
     fontSize: 7px
     fontWeight: 700
     lineHeight: 1
+rounded:
+  button: 6px
+  input: 6px
+  card: 10px
+  badge: 999px
+  nav: 6px
+  default: 6px
 components:
   button-primary-white:
     backgroundColor: "#ffffff"
