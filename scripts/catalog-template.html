@@ -292,63 +292,34 @@
   .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,10px);background:#18181c;color:#fafafa;border:1px solid rgba(255,255,255,.12);font-family:var(--sans);font-size:12px;font-weight:500;padding:8px 14px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .16s,transform .16s;z-index:70;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis}
   .toast svg{width:13px;height:13px;flex:none;color:#10b981}
   .toast.on{opacity:1;transform:translate(-50%,0)}
-  /* ---------- logo database & construction anatomy ---------- */
-  .ldb-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
-  .ldb-search-local{position:relative;flex:1;min-width:220px;max-width:360px}
-  .ldb-search-local svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:13px;height:13px;color:var(--dim2);pointer-events:none}
-  .ldb-search-local input{width:100%;height:32px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:0 12px 0 32px;color:var(--ink);font-family:var(--sans);font-size:12px;outline:none;transition:border-color var(--t-ui)}
-  .ldb-search-local input:focus{border-color:var(--line2)}
-  .ldb-search-local input::placeholder{color:var(--dim2)}
-  .ldb-select{height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:12px;outline:none;cursor:pointer;transition:border-color var(--t-ui)}
-  .ldb-select:hover,.ldb-select:focus{border-color:var(--line2)}
-  .ldb-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:18px;align-items:start}
-  @media (max-width:1080px){.ldb-layout{grid-template-columns:1fr}}
-  .ldb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(174px,1fr));gap:10px}
-  .ldb-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:11px;display:flex;flex-direction:column;gap:8px;text-align:left;cursor:pointer;transition:border-color var(--t-ui),transform .18s var(--ease-out),box-shadow .18s var(--ease-out);min-width:0}
-  .ldb-card:hover{border-color:var(--line2);transform:translateY(-1.5px)}
-  .ldb-card[aria-current="true"]{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
-  .ldb-stage{height:90px;border-radius:8px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden;border:1px solid rgba(0,0,0,.06)}
-  .ldb-stage.is-dark{background:#15151a;color:#fafafa;border-color:var(--line)}
+  /* ---------- logo database & construction anatomy (aligned with catalog cards & system detail) ---------- */
+  .ldb-select{height:30px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3.5%,transparent);color:var(--ink);font-family:var(--sans);font-size:12px;outline:none;cursor:pointer;transition:border-color var(--t-ui),background-color var(--t-ui)}
+  .ldb-select:hover,.ldb-select:focus{border-color:var(--line2);background:color-mix(in srgb,var(--ink) 6%,transparent)}
+  .ldb-select option{background:var(--panel);color:var(--ink)}
+  .ldb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(264px,1fr));gap:14px}
+  .ldb-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;box-shadow:inset 0 1px 0 rgba(255,255,255,.035);content-visibility:auto;contain-intrinsic-size:0 248px;transition:border-color var(--t-ui),transform .22s var(--ease-out),box-shadow .22s var(--ease-out),background-color var(--t-theme),border-radius var(--t-theme)}
+  .ldb-card:hover{border-color:var(--line2);transform:translateY(-1.5px);box-shadow:0 8px 24px -8px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06)}
+  .ldb-card:active{transform:translateY(0) scale(.994)}
+  .ldb-stage{height:132px;padding:20px 24px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+  .ldb-stage.is-dark{background:#121216;color:#fafafa}
   .ldb-stage svg{max-width:100%;max-height:100%;width:auto;height:auto;display:block;flex:none}
-  .ldb-card-head{display:flex;align-items:center;justify-content:space-between;gap:6px;min-width:0}
-  .ldb-card-head strong{font-size:12.5px;font-weight:560;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .ldb-badge{font-size:9.5px;font-family:var(--mono);padding:2px 6px;border-radius:999px;border:1px solid var(--line);color:var(--dim);white-space:nowrap;flex:none}
-  .ldb-badge.is-star{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 38%,transparent);background:color-mix(in srgb,var(--warn) 10%,transparent)}
-  .ldb-note{font-size:11px;color:var(--dim);line-height:1.42;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:31px}
-  .ldb-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:6px;border-top:1px solid var(--line);font-size:10px;font-family:var(--mono);color:var(--dim2);white-space:nowrap;overflow:hidden}
-  .ldb-foot span:first-child{flex:none}
-  .ldb-foot span:last-child{overflow:hidden;text-overflow:ellipsis;min-width:0;text-align:right}
+  .ldb-stage.is-pack svg{width:46px;height:46px}
 
-  .ldb-inspector{position:sticky;top:70px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;display:flex;flex-direction:column}
-  .ldb-insp-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:12px}
-  .ldb-insp-head b{font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .ldb-insp-body{padding:14px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 140px);overflow-y:auto}
-  .ldb-xray{position:relative;height:218px;border-radius:10px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;padding:22px;overflow:hidden;border:1px solid var(--line)}
-  .ldb-xray.is-dark{background:#0b0b0e;color:#fafafa}
+  .ldb-hero-stage{position:relative;height:310px;padding:28px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:background-color var(--t-theme)}
+  .ldb-hero-stage.is-dark{background:#0c0c0f;color:#fafafa}
+  .ldb-hero-canvas{position:relative;width:min(100%,460px);height:100%;display:grid;place-items:center}
   .ldb-xray-mark{width:100%;height:100%;display:grid;place-items:center}
   .ldb-xray-mark svg{width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;display:block}
-  .ldb-xray-overlay{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);pointer-events:none;overflow:visible}
-  .ldb-scales{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-  .ldb-scale-cell{background:color-mix(in srgb,var(--ink) 3%,transparent);border:1px solid var(--line);border-radius:8px;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}
-  .ldb-scale-stage{height:52px;width:100%;display:grid;place-items:center}
-  .ldb-scale-box{display:grid;place-items:center;border-radius:4px;overflow:hidden;background:#ffffff;padding:2px}
-  .ldb-xray.is-dark ~ .ldb-scales .ldb-scale-box,.ldb-scale-box.is-dark{background:#18181c}
-  .ldb-scale-cell span{font-size:10px;font-family:var(--mono);color:var(--dim2)}
-  .ldb-sec-title{font-size:10px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--dim2);margin-bottom:6px}
-  .ldb-kv{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--line);font-size:11.5px;gap:8px}
-  .ldb-kv:last-child{border-bottom:0}
-  .ldb-kv span{color:var(--dim)}
-  .ldb-kv b{color:var(--ink);font-family:var(--mono);font-size:11px;font-weight:500;text-align:right}
-  .ldb-findings{display:flex;flex-direction:column;gap:5px}
-  .ldb-finding{font-size:11px;line-height:1.42;padding:6px 8px;border-radius:7px;border:1px solid var(--line);color:var(--dim);background:color-mix(in srgb,var(--ink) 2.5%,transparent)}
+  .ldb-xray-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+  .ldb-hero-tools{position:absolute;top:14px;right:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2;padding:3px;border-radius:999px;background:rgba(9,9,11,.78);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12)}
+  .ldb-hero-tools .chip{color:#d4d4d8;padding:4px 10px;font-size:11.5px}
+  .ldb-hero-tools .chip:hover{color:#fafafa}
+  .ldb-hero-tools .chip[aria-pressed="true"]{background:#fafafa;color:#09090b}
+  .ldb-finding{font-size:12px;line-height:1.5;padding:9px 12px;border-radius:var(--card-radius);border:1px solid var(--line);color:var(--dim);background:var(--panel)}
   .ldb-finding.is-pass{border-color:color-mix(in srgb,var(--ok) 35%,transparent);color:var(--ok)}
   .ldb-finding.is-warn{border-color:color-mix(in srgb,var(--warn) 35%,transparent);color:var(--warn)}
   .ldb-finding.is-fail{border-color:rgba(244,63,94,.4);color:#fb7185}
-  .ldb-swatches{display:flex;flex-wrap:wrap;gap:6px}
-  .ldb-swatch-btn{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);font-size:10.5px;font-family:var(--mono);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui)}
-  .ldb-swatch-btn:hover{border-color:var(--line2);color:var(--ink)}
-  .ldb-swatch-btn i{width:10px;height:10px;border-radius:3px;border:1px solid var(--line2);display:inline-block}
-  .ldb-actions{display:grid;gap:7px}
+  .ldb-scale-stage{padding:18px 14px;min-height:92px;display:flex;align-items:center;justify-content:center}
 
   @media (max-width:1120px){
     .bar{flex-wrap:wrap;gap:10px;padding:10px 16px}
@@ -1968,6 +1939,7 @@ async function renderDetail(slug,immediate){
   const apply=()=>{
     applySystemTheme(d);
     index.style.display='none';
+    logosEl.style.display='none';
     rankingEl.style.display='none';
     coverageEl.style.display='none';
     detail.classList.add('on');
@@ -2160,6 +2132,8 @@ function renderCoverage(){
 /* ---------- logo database & construction anatomy ---------- */
 const logosEl=document.getElementById('logosView');
 const CLEAN_ANGLES=[0,15,30,45,60,75,90,105,120,135,150,165,180];
+const logoQueryCache=new Map();
+const logoByIdCache=new Map();
 const logoState={
   subTab:'logos',
   q:'',
@@ -2169,13 +2143,13 @@ const logoState={
   onlyExemplary:false,
   packFilter:'all',
   page:1,
-  limit:36,
+  limit:24,
+  iconPage:1,
+  iconLimit:48,
   total:0,
   items:[],
   stats:null,
   loading:false,
-  selected:null,
-  selectedPackItem:null,
   xrayDark:false,
   showGrid:false,
   showAnchors:false,
@@ -2183,6 +2157,13 @@ const logoState={
   fetchToken:0,
   debounceT:null
 };
+
+function isLightOnlySvg(svgText,colors){
+  const list=(colors&&colors.length?colors:[]);
+  if(list.length && list.every(c=>/^#?(?:fff|ffffff|fafafa|f4f4f5|f8f8f8|e4e4e7)$/i.test(String(c).trim()))) return true;
+  const fills=[...String(svgText||'').matchAll(/(?:fill|stroke)=["']([^"']+)["']/gi)].map(m=>m[1].trim()).filter(v=>!/^(?:none|transparent)$/i.test(v));
+  return fills.length>0 && fills.every(c=>/^#?(?:fff|ffffff|fafafa|f4f4f5)$/i.test(c));
+}
 
 function scopeSvgIds(svgText,prefix){
   let out=String(svgText||'');
@@ -2546,30 +2527,24 @@ function parseLogoAnatomy(svgText){
 function buildLogoDbShell(){
   if(logoState.shellBuilt) return;
   logoState.shellBuilt=true;
-  const searchIco='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
   const packCount=Object.keys(ICON_PACKS).length||57;
   logosEl.innerHTML=
-    '<div class="meta"><h1>Logo Database &amp; Construction Anatomy</h1><em id="ldbMetaRight">1,432 brand marks \u00b7 '+packCount+' UI icon packs \u00b7 Neon Postgres</em></div>'+
+    '<div class="meta"><h1>Logo Database</h1><em id="ldbMetaRight">1,432 brand marks \u00b7 '+packCount+' UI icon packs \u00b7 Neon Postgres</em></div>'+
     '<div class="cov-sum" id="ldbStats"></div>'+
     '<div class="rk-controls">'+
       '<div class="seg" role="tablist" aria-label="Logo Database Collection">'+
         '<button type="button" class="chip" data-ldb-tab="logos" aria-pressed="true">Brand Marks (1,432)</button>'+
         '<button type="button" class="chip" data-ldb-tab="icons" aria-pressed="false">UI Icon Packs ('+packCount+')</button>'+
       '</div>'+
-      '<div class="ldb-search-local">'+searchIco+'<input id="ldbSearch" type="search" placeholder="Search brands, geometry, subject, or icon glyphs\u2026" autocomplete="off"></div>'+
       '<select class="ldb-select" id="ldbMarkType" aria-label="Filter by mark type"><option value="">All Mark Types</option></select>'+
       '<select class="ldb-select" id="ldbTechnique" aria-label="Filter by technique"><option value="">All Techniques</option></select>'+
       '<select class="ldb-select" id="ldbIndustry" aria-label="Filter by industry"><option value="">All Industries</option></select>'+
       '<select class="ldb-select" id="ldbPack" style="display:none" aria-label="Filter by icon pack"><option value="all">All Icon Packs ('+packCount+')</option></select>'+
       '<button type="button" class="chip" id="ldbExBtn" aria-pressed="false">'+ICONS.star+' Exemplary Only</button>'+
+      '<button type="button" class="pill-btn" id="ldbResetBtn" style="display:none;margin-left:auto">Reset Filters</button>'+
     '</div>'+
-    '<div class="ldb-layout">'+
-      '<div>'+
-        '<div class="ldb-grid" id="ldbGrid"></div>'+
-        '<div id="ldbPager"></div>'+
-      '</div>'+
-      '<aside class="ldb-inspector" id="ldbInspector" aria-label="SVG Construction Anatomy Inspector"></aside>'+
-    '</div>';
+    '<div class="ldb-grid" id="ldbGrid"></div>'+
+    '<div id="ldbPager"></div>';
 
   const packSel=document.getElementById('ldbPack');
   Object.entries(ICON_PACKS).sort((a,b)=>a[0].localeCompare(b[0])).forEach(([id,pk])=>{
@@ -2590,26 +2565,20 @@ function buildLogoDbShell(){
     });
   });
 
-  const ldbSearch=document.getElementById('ldbSearch');
-  ldbSearch.addEventListener('input',e=>{
-    logoState.q=e.target.value;
-    logoState.page=1;
-    const topQ=document.getElementById('q');
-    if(topQ && topQ.value!==logoState.q) topQ.value=logoState.q;
-    scheduleLogosRefresh();
-  });
-
   ['ldbMarkType','ldbTechnique','ldbIndustry'].forEach((id,i)=>{
     const keys=['markType','technique','industry'];
     document.getElementById(id).addEventListener('change',e=>{
       logoState[keys[i]]=e.target.value;
       logoState.page=1;
+      syncLogoControls();
       fetchLogos();
     });
   });
 
   packSel.addEventListener('change',e=>{
     logoState.packFilter=e.target.value;
+    logoState.iconPage=1;
+    syncLogoControls();
     renderIconPackGrid();
   });
 
@@ -2620,13 +2589,24 @@ function buildLogoDbShell(){
     fetchLogos();
   });
 
+  document.getElementById('ldbResetBtn').addEventListener('click',()=>{
+    logoState.q=''; logoState.industry=''; logoState.markType=''; logoState.technique='';
+    logoState.onlyExemplary=false; logoState.packFilter='all'; logoState.page=1; logoState.iconPage=1;
+    state.q='';
+    const topQ=document.getElementById('q');
+    if(topQ) topQ.value='';
+    syncLogoControls();
+    if(logoState.subTab==='logos') fetchLogos();
+    else renderIconPackGrid();
+  });
+
   renderLogoStats();
 }
 
 function scheduleLogosRefresh(){
   if(logoState.subTab==='icons'){ renderIconPackGrid(); return; }
   clearTimeout(logoState.debounceT);
-  logoState.debounceT=setTimeout(()=>fetchLogos(),160);
+  logoState.debounceT=setTimeout(()=>fetchLogos(),150);
 }
 
 function syncLogoControls(){
@@ -2639,8 +2619,9 @@ function syncLogoControls(){
   document.getElementById('ldbExBtn').style.display=isLogos?'':'none';
   document.getElementById('ldbExBtn').setAttribute('aria-pressed',String(logoState.onlyExemplary));
   document.getElementById('ldbPack').style.display=isLogos?'none':'';
-  const s=document.getElementById('ldbSearch');
-  if(s && s.value!==logoState.q) s.value=logoState.q;
+  const hasAny=Boolean(logoState.q.trim()||(isLogos?(logoState.markType||logoState.technique||logoState.industry||logoState.onlyExemplary):(logoState.packFilter!=='all')));
+  const rst=document.getElementById('ldbResetBtn');
+  if(rst) rst.style.display=hasAny?'':'none';
 }
 
 function renderLogoStats(){
@@ -2685,32 +2666,7 @@ async function loadLogoStats(){
   }catch(_){}
 }
 
-async function selectLogoById(logoId){
-  if(!logoId) return;
-  const hit=logoState.items.find(x=>x.id===logoId);
-  if(hit){ logoState.selected=hit; logoState.selectedPackItem=null; renderLogoInspector(); syncCardCurrent(); return; }
-  if(!location.protocol.startsWith('http')) return;
-  try{
-    const res=await fetch('/api/logos?id='+encodeURIComponent(logoId));
-    if(!res.ok) return;
-    const j=await res.json();
-    if(j && j.ok && j.logo){
-      logoState.selected=j.logo;
-      logoState.selectedPackItem=null;
-      renderLogoInspector();
-      syncCardCurrent();
-    }
-  }catch(_){}
-}
-
-function syncCardCurrent(){
-  const curId=logoState.selectedPackItem?logoState.selectedPackItem.id:(logoState.selected?logoState.selected.id:'');
-  logosEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(el=>{
-    el.setAttribute('aria-current',String(el.dataset.logoId===curId));
-  });
-}
-
-async function fetchLogos(targetLogoId){
+async function fetchLogos(){
   buildLogoDbShell();
   syncLogoControls();
   const gridEl=document.getElementById('ldbGrid');
@@ -2718,38 +2674,47 @@ async function fetchLogos(targetLogoId){
   if(!location.protocol.startsWith('http')){
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Brand Marks require HTTP/Postgres (/api/logos). Switch to <b>UI Icon Packs ('+(Object.keys(ICON_PACKS).length||57)+')</b> above for offline vector browsing.</div>';
     pagerBox.innerHTML='';
-    renderLogoInspector();
     return;
   }
+  const params=new URLSearchParams({page:String(logoState.page),limit:String(logoState.limit)});
+  if(logoState.q.trim()) params.set('q',logoState.q.trim());
+  if(logoState.industry) params.set('industry',logoState.industry);
+  if(logoState.markType) params.set('mark_type',logoState.markType);
+  if(logoState.technique) params.set('technique',logoState.technique);
+  if(logoState.onlyExemplary) params.set('exemplary','1');
+  const qs=params.toString();
+
+  if(logoQueryCache.has(qs)){
+    const cached=logoQueryCache.get(qs);
+    logoState.items=cached.items;
+    logoState.total=cached.total;
+    renderBrandLogoGrid();
+    return;
+  }
+
   const tok=++logoState.fetchToken;
   logoState.loading=true;
   if(!logoState.items.length) gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Loading logos from Neon Postgres\u2026</div>';
+  startLoader();
   try{
-    const params=new URLSearchParams({page:String(logoState.page),limit:String(logoState.limit)});
-    if(logoState.q.trim()) params.set('q',logoState.q.trim());
-    if(logoState.industry) params.set('industry',logoState.industry);
-    if(logoState.markType) params.set('mark_type',logoState.markType);
-    if(logoState.technique) params.set('technique',logoState.technique);
-    if(logoState.onlyExemplary) params.set('exemplary','1');
-    const res=await fetch('/api/logos?'+params.toString());
+    const res=await fetch('/api/logos?'+qs);
     if(!res.ok) throw new Error('HTTP '+res.status);
     const d=await res.json();
     if(tok!==logoState.fetchToken) return;
     if(d && d.ok){
-      logoState.items=d.items||[];
-      logoState.total=Number(d.total||0);
-      if(targetLogoId){
-        await selectLogoById(targetLogoId);
-      }else if(!logoState.selected && !logoState.selectedPackItem && logoState.items.length){
-        logoState.selected=logoState.items[0];
-      }
+      const items=d.items||[];
+      const total=Number(d.total||0);
+      logoState.items=items;
+      logoState.total=total;
+      logoQueryCache.set(qs,{items,total});
+      items.forEach(item=>logoByIdCache.set(item.id,item));
       renderBrandLogoGrid();
-      renderLogoInspector();
     }
   }catch(_){
     if(tok===logoState.fetchToken) gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Could not reach /api/logos. Try refreshing or switch to UI Icon Packs.</div>';
   }finally{
     if(tok===logoState.fetchToken) logoState.loading=false;
+    stopLoader();
   }
 }
 
@@ -2758,33 +2723,39 @@ function renderBrandLogoGrid(){
   const pagerBox=document.getElementById('ldbPager');
   if(!gridEl) return;
   const items=logoState.items;
+  const metaRight=document.getElementById('ldbMetaRight');
+  if(metaRight){
+    const start=(logoState.page-1)*logoState.limit+1;
+    const end=Math.min(logoState.total,start+items.length-1);
+    metaRight.textContent=items.length?(start+'\u2013'+end+' of '+logoState.total+' marks \u00b7 Neon Postgres'):'0 matched marks';
+  }
   if(!items.length){
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No logos matched those filters.</div>';
     pagerBox.innerHTML='';
     return;
   }
-  const curId=logoState.selected?logoState.selected.id:'';
   gridEl.innerHTML=items.map((logo,idx)=>{
     const scoped=ensureSvgBox(scopeSvgIds(logo.svg,'ldb'+idx),false);
-    const badge=logo.exemplary?'<span class="ldb-badge is-star">\u2605 Study</span>':'<span class="ldb-badge">'+esc(logo.markType||'mark')+'</span>';
-    return '<button type="button" class="ldb-card" data-logo-id="'+esc(logo.id)+'" aria-current="'+String(logo.id===curId)+'">'+
-      '<div class="ldb-stage">'+scoped+'</div>'+
-      '<div class="ldb-card-head"><strong>'+esc(logo.brand)+'</strong>'+badge+'</div>'+
-      '<p class="ldb-note">'+esc(logo.note||logo.subject||((logo.markType||'mark')+' \u00b7 '+(logo.industry||'')))+'</p>'+
-      '<div class="ldb-foot"><span>'+Number(logo.anchors||0)+' anchors</span><span>'+Number(logo.nColors||1)+'c \u00b7 '+esc((logo.techniques&&logo.techniques[0])||'flat')+'</span></div>'+
-    '</button>';
+    const darkStage=isLightOnlySvg(logo.svg,logo.colors);
+    const stripCols=(logo.colors&&logo.colors.length?logo.colors:['#71717a']).slice(0,5).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('');
+    const tag=logo.exemplary
+      ? '<span class="vtag" style="color:var(--warn)">'+ICONS.star+' Study</span>'
+      : '<span class="vtag">'+esc(logo.markType||'mark')+'</span>';
+    return '<div class="ldb-card" data-logo-id="'+esc(logo.id)+'" role="button" tabindex="0">'+
+      '<div class="ldb-stage'+(darkStage?' is-dark':'')+'">'+scoped+'</div>'+
+      '<div class="strip">'+stripCols+'</div>'+
+      '<div class="card-body">'+
+        '<div class="card-top"><h2>'+esc(logo.brand)+'</h2>'+tag+'</div>'+
+        '<p class="card-desc">'+esc(logo.note||logo.subject||((logo.markType||'mark')+' \u00b7 '+(logo.industry||'')))+'</p>'+
+        '<div class="card-foot"><span><b>'+Number(logo.anchors||0)+'</b> anchors</span><span class="card-meta-right">'+Number(logo.nColors||1)+'c \u00b7 '+esc((logo.techniques&&logo.techniques[0])||'vector')+'</span></div>'+
+      '</div>'+
+    '</div>';
   }).join('');
 
-  gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const item=logoState.items.find(x=>x.id===btn.dataset.logoId);
-      if(!item) return;
-      logoState.selected=item;
-      logoState.selectedPackItem=null;
-      syncCardCurrent();
-      renderLogoInspector();
-      try{ history.replaceState(null,'','#/logos/'+encodeURIComponent(item.id)); }catch(_){}
-    });
+  gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(card=>{
+    const open=()=>{ location.hash='#/logos/'+encodeURIComponent(card.dataset.logoId); };
+    card.addEventListener('click',open);
+    card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
   });
 
   pagerBox.innerHTML=buildPagerHtml(logoState.total,logoState.page,logoState.limit);
@@ -2793,8 +2764,7 @@ function renderBrandLogoGrid(){
       const p=Number(btn.dataset.pg);
       if(!Number.isFinite(p)||p<1||p===logoState.page) return;
       logoState.page=p;
-      window.scrollTo(0,0);
-      fetchLogos();
+      runViewTransition('page',()=>{ window.scrollTo(0,0); fetchLogos(); },gridEl);
     });
   });
 }
@@ -2811,101 +2781,96 @@ function renderIconPackGrid(){
     if(pf!=='all' && packId!==pf) return;
     (pk.glyphs||[]).forEach(g=>{
       if(q && !g.name.toLowerCase().includes(q) && !packId.toLowerCase().includes(q)) return;
-      const svg256=buildSysSvg(pk,g,256,'#fafafa',true).replace(/currentColor/gi,'#fafafa');
-      entries.push({
-        id:packId+'::'+g.name,
-        packId,
-        glyphName:g.name,
-        grid:pk.grid||24,
-        brand:packId+' / '+g.name,
-        markType:'icon glyph',
-        industry:'ui icon pack',
-        note:'Official '+(pk.grid||24)+'\u00d7'+(pk.grid||24)+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.',
-        colors:['#fafafa'],
-        techniques:[pk.style||'vector',((pk.grid||24)+'px grid')],
-        geometry:['grid-modular'],
-        svg:svg256,
-        thumb:buildSysSvg(pk,g,44,'#fafafa',false)
-      });
+      entries.push({packId,pk,g});
     });
   });
-  const slice=entries.slice(0,180);
-  if(!logoState.selectedPackItem && !logoState.selected && slice.length){
-    logoState.selectedPackItem=slice[0];
+
+  const total=entries.length;
+  const totalPages=Math.max(1,Math.ceil(total/logoState.iconLimit));
+  if(logoState.iconPage>totalPages) logoState.iconPage=1;
+  const startIdx=(logoState.iconPage-1)*logoState.iconLimit;
+  const slice=entries.slice(startIdx,startIdx+logoState.iconLimit);
+  const metaRight=document.getElementById('ldbMetaRight');
+  if(metaRight){
+    metaRight.textContent=total?((startIdx+1)+'\u2013'+(startIdx+slice.length)+' of '+total+' verified UI glyphs'):'0 matched glyphs';
   }
-  const curId=logoState.selectedPackItem?logoState.selectedPackItem.id:'';
+
   if(!slice.length){
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No UI glyphs matched your query.</div>';
     pagerBox.innerHTML='';
     return;
   }
-  gridEl.innerHTML=slice.map(item=>
-    '<button type="button" class="ldb-card" data-logo-id="'+esc(item.id)+'" aria-current="'+String(item.id===curId)+'">'+
-      '<div class="ldb-stage is-dark">'+item.thumb+'</div>'+
-      '<div class="ldb-card-head"><strong>'+esc(item.glyphName)+'</strong><span class="ldb-badge">'+esc(item.packId)+'</span></div>'+
-      '<p class="ldb-note">'+esc(item.note)+'</p>'+
-      '<div class="ldb-foot"><span>'+item.grid+'px grid</span><span>official svg</span></div>'+
-    '</button>'
-  ).join('');
+  gridEl.innerHTML=slice.map(({packId,pk,g})=>{
+    const gridPx=pk.grid||24;
+    const thumb=buildSysSvg(pk,g,44,'#fafafa',false);
+    const note='Official '+gridPx+'\u00d7'+gridPx+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.';
+    return '<div class="ldb-card" data-pack="'+esc(packId)+'" data-glyph="'+esc(g.name)+'" role="button" tabindex="0">'+
+      '<div class="ldb-stage is-dark is-pack">'+thumb+'</div>'+
+      '<div class="strip"><i style="background:#fafafa"></i><i style="background:#71717a"></i></div>'+
+      '<div class="card-body">'+
+        '<div class="card-top"><h2>'+esc(g.name)+'</h2><span class="vtag">'+esc(packId)+'</span></div>'+
+        '<p class="card-desc">'+esc(note)+'</p>'+
+        '<div class="card-foot"><span><b>'+gridPx+'px</b> grid</span><span class="card-meta-right">official svg</span></div>'+
+      '</div>'+
+    '</div>';
+  }).join('');
 
-  gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach((btn,idx)=>{
+  gridEl.querySelectorAll('.ldb-card[data-pack]').forEach(card=>{
+    const open=()=>{ location.hash='#/logos/pack/'+encodeURIComponent(card.dataset.pack)+'/'+encodeURIComponent(card.dataset.glyph); };
+    card.addEventListener('click',open);
+    card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
+  });
+
+  pagerBox.innerHTML=buildPagerHtml(total,logoState.iconPage,logoState.iconLimit);
+  pagerBox.querySelectorAll('[data-pg]').forEach(btn=>{
     btn.addEventListener('click',()=>{
-      logoState.selectedPackItem=slice[idx];
-      logoState.selected=null;
-      syncCardCurrent();
-      renderLogoInspector();
+      const p=Number(btn.dataset.pg);
+      if(!Number.isFinite(p)||p<1||p===logoState.iconPage) return;
+      logoState.iconPage=p;
+      runViewTransition('page',()=>{ window.scrollTo(0,0); renderIconPackGrid(); },gridEl);
     });
   });
-  pagerBox.innerHTML='';
-  renderLogoInspector();
 }
 
-function renderLogoInspector(){
-  const box=document.getElementById('ldbInspector');
-  if(!box) return;
-  const item=logoState.selectedPackItem||logoState.selected;
-  if(!item){
-    box.innerHTML='<div class="ldb-insp-head"><b>Construction Anatomy</b></div><div class="ldb-insp-body"><p style="font-size:12px;color:var(--dim);margin:0">Select any brand mark or UI glyph to inspect its vectors, Bezier handles, alignment angles, and Craft Audit score.</p></div>';
-    return;
+function applyLogoHeaderSlabs(item){
+  const r=document.documentElement;
+  const cols=(item.colors||[]).filter(Boolean);
+  if(cols.length){
+    r.style.setProperty('--ds-c1',cols[0]);
+    r.style.setProperty('--ds-c2',cols[1]||cols[0]);
+    r.style.setProperty('--ds-c3',cols[2]||cols[1]||cols[0]);
+    r.classList.add('sys-active');
+  }else{
+    r.classList.remove('sys-active');
   }
-  const anatomy=parseLogoAnatomy(item.svg);
-  const vb=anatomy.viewBox;
-  const ib=anatomy.inkBox||vb;
-  const vbStr=vb.join(' ');
-  const pxU=Math.max(vb[2]/260,vb[3]/170);
-  const swGrid=pxU*1.0;
-  const swHandle=pxU*1.15;
-  const rAnc=pxU*3.1;
-  const rCtrl=pxU*2.3;
-  const swAnc=pxU*1.2;
-  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'insp'),true);
-  const isPack=Boolean(item.packId);
-  const darkBox=isPack||logoState.xrayDark;
+}
 
+function buildLogoXrayOverlayMarkup(anatomy,showGrid,showAnchors){
+  if(!showGrid && !showAnchors) return '';
+  const vb=anatomy.viewBox, ib=anatomy.inkBox||vb;
+  const pxU=Math.max(vb[2]/400,vb[3]/250);
+  const swGrid=pxU*1.0, swHandle=pxU*1.15, rAnc=pxU*3.1, rCtrl=pxU*2.3, swAnc=pxU*1.2;
   const iw=Math.max(1e-3,ib[2]-ib[0]), ih=Math.max(1e-3,ib[3]-ib[1]);
   const icx=(ib[0]+ib[2])/2, icy=(ib[1]+ib[3])/2;
   const pad=Math.max(iw,ih)*0.12;
   const gx0=ib[0]-pad, gy0=ib[1]-pad, gx1=ib[2]+pad, gy1=ib[3]+pad;
+  let out='';
 
-  const buildLogoGridOverlay=()=>{
+  if(showGrid){
     const dash=pxU*3.5+' '+pxU*3.5;
-    let out='<g fill="none">';
-    // 1. Tight ink frame caplines with architectural corner ticks
-    out+='<g stroke="rgba(14,165,233,0.42)" stroke-width="'+swGrid+'">';
+    out+='<g fill="none">';
+    out+='<g stroke="rgba(14,165,233,0.45)" stroke-width="'+swGrid+'">';
     out+='<line x1="'+gx0+'" y1="'+ib[1]+'" x2="'+gx1+'" y2="'+ib[1]+'"/>';
     out+='<line x1="'+gx0+'" y1="'+ib[3]+'" x2="'+gx1+'" y2="'+ib[3]+'"/>';
     out+='<line x1="'+ib[0]+'" y1="'+gy0+'" x2="'+ib[0]+'" y2="'+gy1+'"/>';
     out+='<line x1="'+ib[2]+'" y1="'+gy0+'" x2="'+ib[2]+'" y2="'+gy1+'"/>';
     out+='</g>';
-    // 2. Optical center axes through ink center
-    out+='<g stroke="rgba(14,165,233,0.58)" stroke-width="'+swGrid+'" stroke-dasharray="'+dash+'">';
+    out+='<g stroke="rgba(14,165,233,0.62)" stroke-width="'+swGrid+'" stroke-dasharray="'+dash+'">';
     out+='<line x1="'+icx+'" y1="'+gy0+'" x2="'+icx+'" y2="'+gy1+'"/>';
     out+='<line x1="'+gx0+'" y1="'+icy+'" x2="'+gx1+'" y2="'+icy+'"/>';
     out+='</g>';
-    // 3. Key interior X/Y stem alignments derived from actual anchors
     const clusterCoords=(vals,minVal,maxVal,midVal,span)=>{
-      const tol=span*0.025, edgeTol=span*0.04;
-      const groups=[];
+      const tol=span*0.025, edgeTol=span*0.04, groups=[];
       vals.forEach(v=>{
         if(Math.abs(v-minVal)<edgeTol||Math.abs(v-maxVal)<edgeTol||Math.abs(v-midVal)<edgeTol) return;
         const g=groups.find(x=>Math.abs(x.mean-v)<tol);
@@ -2916,17 +2881,16 @@ function renderLogoInspector(){
     const alignX=clusterCoords(anatomy.anchors.map(a=>a.x),ib[0],ib[2],icx,iw);
     const alignY=clusterCoords(anatomy.anchors.map(a=>a.y),ib[1],ib[3],icy,ih);
     if(alignX.length||alignY.length){
-      out+='<g stroke="rgba(56,189,248,0.34)" stroke-width="'+(pxU*0.85)+'" stroke-dasharray="'+dash+'">';
+      out+='<g stroke="rgba(56,189,248,0.36)" stroke-width="'+(pxU*0.85)+'" stroke-dasharray="'+dash+'">';
       alignX.forEach(x=>{ out+='<line x1="'+x+'" y1="'+gy0+'" x2="'+x+'" y2="'+gy1+'"/>'; });
       alignY.forEach(y=>{ out+='<line x1="'+gx0+'" y1="'+y+'" x2="'+gx1+'" y2="'+y+'"/>'; });
       out+='</g>';
     }
-    // 4. Extended dominant structural diagonal angles (e.g. 30/45/60 deg bevels)
     const clipRay=(x1,y1,x2,y2)=>{
       const dx=x2-x1, dy=y2-y1, len=Math.hypot(dx,dy);
       if(len<1e-6) return null;
       const ux=dx/len, uy=dy/len, ext=Math.hypot(gx1-gx0,gy1-gy0);
-      let ax=x1-ux*ext, ay=y1-uy*ext, bx=x2+ux*ext, by=y2+uy*ext;
+      const ax=x1-ux*ext, ay=y1-uy*ext, bx=x2+ux*ext, by=y2+uy*ext;
       const ddx=bx-ax, ddy=by-ay;
       let t0=0, t1=1;
       for(const [p,q] of [[-ddx,ax-gx0],[ddx,gx1-ax],[-ddy,ay-gy0],[ddy,gy1-ay]]){
@@ -2937,8 +2901,7 @@ function renderLogoInspector(){
     };
     const nonOrtho=anatomy.segments.filter(s=>s.len>=Math.max(iw,ih)*0.12 && s.angle>2 && Math.abs(s.angle-90)>2 && s.angle<178);
     nonOrtho.sort((a,b)=>b.len-a.len);
-    const seenRays=[];
-    const uniqueRays=[];
+    const seenRays=[], uniqueRays=[];
     for(const s of nonOrtho){
       const rad=(s.angle*Math.PI)/180, nx=-Math.sin(rad), ny=Math.cos(rad);
       const off=s.x1*nx+s.y1*ny;
@@ -2949,13 +2912,11 @@ function renderLogoInspector(){
       if(uniqueRays.length>=6) break;
     }
     if(uniqueRays.length){
-      out+='<g stroke="rgba(245,158,11,0.56)" stroke-width="'+(pxU*0.95)+'" stroke-dasharray="'+dash+'">';
+      out+='<g stroke="rgba(245,158,11,0.58)" stroke-width="'+(pxU*0.95)+'" stroke-dasharray="'+dash+'">';
       uniqueRays.forEach(([x1,y1,x2,y2])=>{ out+='<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>'; });
       out+='</g>';
     }
-    // 5. Detected compass circles & arc centers
-    const uCircles=[];
-    const minSpan=Math.min(vb[2],vb[3])||256;
+    const uCircles=[], minSpan=Math.min(vb[2],vb[3])||256;
     for(const c of [...anatomy.circles].sort((a,b)=>b.r-a.r)){
       if(c.r<Math.min(iw,ih)*0.04) continue;
       if(uCircles.some(u=>Math.hypot(u.cx-c.cx,u.cy-c.cy)<minSpan*0.02 && Math.abs(u.r-c.r)<minSpan*0.02)) continue;
@@ -2963,8 +2924,8 @@ function renderLogoInspector(){
       if(uCircles.length>=6) break;
     }
     if(uCircles.length){
-      out+='<g stroke="rgba(16,185,129,0.68)" stroke-width="'+(pxU*1.05)+'">';
       const arm=pxU*4;
+      out+='<g stroke="rgba(16,185,129,0.7)" stroke-width="'+(pxU*1.05)+'">';
       uCircles.forEach(c=>{
         out+='<circle cx="'+c.cx+'" cy="'+c.cy+'" r="'+c.r+'" stroke-dasharray="'+dash+'"/>';
         out+='<line x1="'+(c.cx-arm)+'" y1="'+c.cy+'" x2="'+(c.cx+arm)+'" y2="'+c.cy+'"/>';
@@ -2973,24 +2934,30 @@ function renderLogoInspector(){
       out+='</g>';
     }
     out+='</g>';
-    return out;
-  };
+  }
 
-  const gridOverlay=logoState.showGrid?buildLogoGridOverlay():'';
+  if(showAnchors){
+    out+='<g>';
+    out+=anatomy.handles.slice(0,140).map(h=>
+      '<line x1="'+h.anchor.x+'" y1="'+h.anchor.y+'" x2="'+h.control.x+'" y2="'+h.control.y+'" stroke="#f43f5e" stroke-width="'+swHandle+'"/>'+
+      '<circle cx="'+h.control.x+'" cy="'+h.control.y+'" r="'+rCtrl+'" fill="#ffffff" stroke="#f43f5e" stroke-width="'+(pxU*1.1)+'"/>'
+    ).join('');
+    out+=anatomy.anchors.slice(0,180).map(pt=>
+      pt.smooth
+        ? '<circle cx="'+pt.x+'" cy="'+pt.y+'" r="'+rAnc+'" fill="#0ea5e9" stroke="#ffffff" stroke-width="'+swAnc+'"/>'
+        : '<rect x="'+(pt.x-rAnc)+'" y="'+(pt.y-rAnc)+'" width="'+(rAnc*2)+'" height="'+(rAnc*2)+'" fill="#38bdf8" stroke="#ffffff" stroke-width="'+swAnc+'"/>'
+    ).join('');
+    out+='</g>';
+  }
+  return out;
+}
 
-  const anchorOverlay=logoState.showAnchors
-    ? '<g>'+
-        anatomy.handles.slice(0,140).map(h=>
-          '<line x1="'+h.anchor.x+'" y1="'+h.anchor.y+'" x2="'+h.control.x+'" y2="'+h.control.y+'" stroke="#f43f5e" stroke-width="'+swHandle+'"/>'+
-          '<circle cx="'+h.control.x+'" cy="'+h.control.y+'" r="'+rCtrl+'" fill="#ffffff" stroke="#f43f5e" stroke-width="'+(pxU*1.1)+'"/>'
-        ).join('')+
-        anatomy.anchors.slice(0,180).map(pt=>
-          pt.smooth
-            ? '<circle cx="'+pt.x+'" cy="'+pt.y+'" r="'+rAnc+'" fill="#0ea5e9" stroke="#ffffff" stroke-width="'+swAnc+'"/>'
-            : '<rect x="'+(pt.x-rAnc)+'" y="'+(pt.y-rAnc)+'" width="'+(rAnc*2)+'" height="'+(rAnc*2)+'" fill="#38bdf8" stroke="#ffffff" stroke-width="'+swAnc+'"/>'
-        ).join('')+
-      '</g>'
-    : '';
+function buildLogoDetailHtml(item,anatomy){
+  const isPack=Boolean(item.packId);
+  const darkBox=isPack||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
+  const vbStr=anatomy.viewBox.join(' ');
+  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'insp'),true);
+  const overlaySvg=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
 
   const studioLogofxUrl=isPack
     ? './studio/#/logofx?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
@@ -2999,64 +2966,181 @@ function renderLogoInspector(){
     ? './studio/#/brand?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
     : './studio/#/brand?logo='+encodeURIComponent(item.id);
 
-  const scales=[16,28,48].map((sz,i)=>
-    '<div class="ldb-scale-cell"><div class="ldb-scale-stage"><div class="ldb-scale-box'+(darkBox?' is-dark':'')+'">'+
-      ensureSvgBox(scopeSvgIds(item.svg,'sc'+i),false,sz)+
-    '</div></div><span>'+sz+'px</span></div>'
+  const palCols=(item.colors&&item.colors.length?item.colors:anatomy.colors);
+  const dotsHtml=palCols.slice(0,6).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('');
+  const anglesStr=anatomy.anglesDeg.length
+    ? [...new Set(anatomy.anglesDeg.map(a=>Math.round(a)))].slice(0,6).map(a=>a+'\u00b0').join(' \u00b7 ')
+    : 'Pure curves';
+
+  const scales=[16,24,32,48].map((sz,i)=>
+    '<div class="comp">'+
+      '<div class="comp-stage" style="gap:20px;background:#0c0c0f">'+
+        '<div style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center">'+ensureSvgBox(scopeSvgIds(item.svg,'scd'+i),false,sz)+'</div>'+
+        '<div style="width:'+(sz+12)+'px;height:'+(sz+12)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:6px">'+ensureSvgBox(scopeSvgIds(item.svg,'scl'+i),false,sz)+'</div>'+
+      '</div>'+
+      '<div class="comp-info"><b>'+sz+' \u00d7 '+sz+' px</b><span>Dark ground \u00b7 Light app badge</span></div>'+
+    '</div>'
   ).join('');
 
-  const swatches=(item.colors||anatomy.colors||[]).slice(0,8).map(c=>
-    '<button type="button" class="ldb-swatch-btn" data-copy-hex="'+esc(c)+'"><i style="background:'+safeCss(c)+'"></i><span>'+esc(c)+'</span></button>'
+  const swatches=(palCols.length?palCols:['#fafafa']).map(c=>
+    '<div class="sw" data-copy="'+esc(c)+'"><i style="background:'+safeCss(c)+'"></i><div><b>'+esc(c)+'</b><span>vector color</span></div></div>'
   ).join('');
 
-  const tags=[...(item.techniques||[]),...(item.geometry||[])].filter(Boolean).slice(0,8).map(t=>
-    '<span class="ldb-badge">'+esc(t)+'</span>'
+  const chips=[...(item.techniques||[]),...(item.geometry||[])].filter(Boolean).map(t=>
+    '<span class="kind"><b>tag</b> '+esc(t)+'</span>'
   ).join('');
 
   const findingsHtml=anatomy.findings.map(f=>
     '<div class="ldb-finding is-'+esc(f.level)+'">'+esc(f.message)+'</div>'
   ).join('');
 
-  box.innerHTML=
-    '<div class="ldb-insp-head">'+
-      '<b>'+esc(item.brand)+'</b>'+
-      '<button type="button" class="pill-btn" id="ldbGroundBtn" style="padding:3px 9px;font-size:11px">'+(darkBox?'Dark':'Light')+'</button>'+
+  const jsonMeta=JSON.stringify({
+    id:item.id, brand:item.brand, markType:item.markType, industry:item.industry,
+    viewBox:anatomy.viewBox, shapes:anatomy.shapes, anchors:anatomy.anchors.length,
+    anglesDeg:anatomy.anglesDeg, colors:palCols, score:anatomy.score, note:item.note
+  },null,2);
+
+  return '<div class="detail-bar">'+
+      '<div class="detail-nav">'+
+        '<a class="pill-btn" href="#/logos" data-logo-back>'+ICONS.back+'Logos</a>'+
+        '<span style="font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.02em;margin-left:4px">'+esc(item.brand)+'</span>'+
+        '<span class="meta-pill">'+esc(item.markType||'mark')+'</span>'+
+        '<span class="meta-pill">'+esc(item.industry||'general')+'</span>'+
+        (item.exemplary?'<span class="meta-pill" style="color:var(--warn)">'+ICONS.star+' Study</span>':'')+
+      '</div>'+
+      '<div class="detail-actions">'+
+        '<a href="'+studioLogofxUrl+'" class="pill-btn primary">Open in LogoFX'+ICONS.ext+'</a>'+
+        '<a href="'+studioBrandUrl+'" class="pill-btn">Use in Brand Maker'+ICONS.ext+'</a>'+
+        '<button type="button" class="pill-btn" id="ldbDetailCopySvg">'+ICONS.copy+'Copy SVG</button>'+
+        '<button type="button" class="pill-btn" id="ldbDetailCopyJson">'+ICONS.copy+'JSON</button>'+
+      '</div>'+
     '</div>'+
-    '<div class="ldb-insp-body">'+
-      '<div>'+
-        '<div class="ldb-xray'+(darkBox?' is-dark':'')+'">'+
-          '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
-          '<svg class="ldb-xray-overlay" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+gridOverlay+anchorOverlay+'</svg>'+
-        '</div>'+
-        '<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">'+
+    '<div class="hero-wrap">'+
+      '<div class="ldb-hero-stage'+(darkBox?' is-dark':'')+'" id="ldbHeroStage">'+
+        '<div class="ldb-hero-tools">'+
           '<button type="button" class="chip" id="ldbGridBtn" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+
           '<button type="button" class="chip" id="ldbAncBtn" aria-pressed="'+String(logoState.showAnchors)+'">Anchors ('+anatomy.anchors.length+')</button>'+
+          '<button type="button" class="chip" id="ldbGroundBtn" aria-pressed="'+String(darkBox)+'">'+(darkBox?'Dark Ground':'Light Ground')+'</button>'+
+        '</div>'+
+        '<div class="ldb-hero-canvas">'+
+          '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
+          '<svg class="ldb-xray-overlay" id="ldbHeroOverlay" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+overlaySvg+'</svg>'+
         '</div>'+
       '</div>'+
-      '<div><div class="ldb-sec-title">Favicon Survivability</div><div class="ldb-scales">'+scales+'</div></div>'+
-      '<div>'+
-        '<div class="ldb-sec-title">Construction Spec</div>'+
-        '<div class="ldb-kv"><span>Mark Type</span><b>'+esc(item.markType||'mark')+'</b></div>'+
-        '<div class="ldb-kv"><span>Industry</span><b>'+esc(item.industry||'general')+'</b></div>'+
-        '<div class="ldb-kv"><span>Primitives</span><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b></div>'+
-        '<div class="ldb-kv"><span>ViewBox</span><b>'+esc(vbStr)+'</b></div>'+
-        '<div class="ldb-kv"><span>Craft Audit</span><b>'+anatomy.score+'/100</b></div>'+
+      '<div class="spec-bar">'+
+        '<div class="spec-cell"><small>Geometry</small><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b><span>ViewBox '+esc(vbStr)+'</span></div>'+
+        '<div class="spec-cell"><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' detected circle(s)</span></div>'+
+        '<div class="spec-cell"><small>Palette</small><div class="spec-dots">'+dotsHtml+'</div><span>'+palCols.length+' token(s)</span></div>'+
+        '<div class="spec-cell"><small>Craft Audit</small><b>'+anatomy.score+' / 100</b><span>'+esc((anatomy.findings[0]&&anatomy.findings[0].level)||'pass')+'</span></div>'+
       '</div>'+
-      '<div><div class="ldb-sec-title">Craft Audit Findings</div><div class="ldb-findings">'+findingsHtml+'</div></div>'+
-      (item.note?'<div><div class="ldb-sec-title">Construction Note</div><p style="font-size:11.5px;color:var(--dim);line-height:1.5;margin:0">'+esc(item.note)+'</p></div>':'')+
-      (tags||swatches?'<div><div class="ldb-sec-title">Techniques &amp; Colours</div>'+(tags?'<div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px">'+tags+'</div>':'')+(swatches?'<div class="ldb-swatches">'+swatches+'</div>':'')+'</div>':'')+
-      '<div class="ldb-actions">'+
-        '<a class="pill-btn primary" style="justify-content:center" href="'+studioLogofxUrl+'">Open in LogoFX'+ICONS.ext+'</a>'+
-        '<a class="pill-btn" style="justify-content:center" href="'+studioBrandUrl+'">Use in Brand Maker'+ICONS.ext+'</a>'+
-        '<button type="button" class="pill-btn" style="justify-content:center" id="ldbCopySvgBtn">'+ICONS.copy+'Copy Clean SVG</button>'+
-      '</div>'+
-    '</div>';
+    '</div>'+
+    '<div class="sec"><div class="sec-h"><h2>Micro-Scale Survivability</h2><em>16px to 48px specimens on dark &amp; light badges</em></div>'+
+      '<div class="comp-grid">'+scales+'</div></div>'+
+    '<div class="sec"><div class="sec-h"><h2>Construction Anatomy &amp; Audit</h2><em>vector analysis &amp; construction rationale</em></div>'+
+      (item.note?'<div class="notes" style="margin-bottom:12px"><p>'+esc(item.note)+'</p></div>':'')+
+      (chips?'<div class="kinds">'+chips+'</div>':'')+
+      '<div class="cmd-stack">'+findingsHtml+'</div></div>'+
+    '<div class="sec"><div class="sec-h"><h2>Colour Palette</h2><em>'+palCols.length+' colour token(s) \u00b7 click any swatch to copy</em></div>'+
+      '<div class="swatches">'+swatches+'</div></div>'+
+    '<div class="sec"><div class="sec-h"><h2>Vector Source &amp; Spec</h2><em>clean SVG markup &amp; geometry metadata</em></div>'+
+      '<div class="cmd-stack">'+
+        '<details class="prompt-box"><summary>Inspect SVG markup ('+item.svg.length+' bytes)</summary><pre>'+esc(item.svg)+'</pre></details>'+
+        '<details class="prompt-box"><summary>Inspect Geometry JSON ('+anatomy.anchors.length+' anchors)</summary><pre>'+esc(jsonMeta)+'</pre></details>'+
+      '</div></div>';
+}
 
-  document.getElementById('ldbGroundBtn').addEventListener('click',()=>{ logoState.xrayDark=!darkBox; renderLogoInspector(); });
-  document.getElementById('ldbGridBtn').addEventListener('click',()=>{ logoState.showGrid=!logoState.showGrid; renderLogoInspector(); });
-  document.getElementById('ldbAncBtn').addEventListener('click',()=>{ logoState.showAnchors=!logoState.showAnchors; renderLogoInspector(); });
-  document.getElementById('ldbCopySvgBtn').addEventListener('click',()=>copy(item.svg));
-  box.querySelectorAll('[data-copy-hex]').forEach(el=>el.addEventListener('click',()=>copy(el.dataset.copyHex)));
+function bindLogoDetailInteractions(item,anatomy){
+  const backBtn=detail.querySelector('[data-logo-back]');
+  if(backBtn) backBtn.addEventListener('click',e=>{ e.preventDefault(); location.hash='#/logos'; });
+  detail.querySelectorAll('[data-copy]').forEach(el=>el.addEventListener('click',()=>copy(el.dataset.copy)));
+  const svgBtn=document.getElementById('ldbDetailCopySvg');
+  if(svgBtn) svgBtn.addEventListener('click',()=>copy(item.svg));
+  const jsonBtn=document.getElementById('ldbDetailCopyJson');
+  if(jsonBtn) jsonBtn.addEventListener('click',()=>{
+    copy(JSON.stringify({id:item.id,brand:item.brand,markType:item.markType,industry:item.industry,anchors:anatomy.anchors.length,score:anatomy.score,colors:item.colors,note:item.note},null,2));
+  });
+
+  let stageDark=Boolean(item.packId)||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
+  const refreshXray=()=>{
+    const stage=document.getElementById('ldbHeroStage');
+    const overlay=document.getElementById('ldbHeroOverlay');
+    const gBtn=document.getElementById('ldbGridBtn');
+    const aBtn=document.getElementById('ldbAncBtn');
+    const tBtn=document.getElementById('ldbGroundBtn');
+    if(stage) stage.classList.toggle('is-dark',stageDark);
+    if(tBtn){ tBtn.setAttribute('aria-pressed',String(stageDark)); tBtn.textContent=stageDark?'Dark Ground':'Light Ground'; }
+    if(gBtn) gBtn.setAttribute('aria-pressed',String(logoState.showGrid));
+    if(aBtn) aBtn.setAttribute('aria-pressed',String(logoState.showAnchors));
+    if(overlay) overlay.innerHTML=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
+  };
+
+  document.getElementById('ldbGridBtn')?.addEventListener('click',()=>{ logoState.showGrid=!logoState.showGrid; refreshXray(); });
+  document.getElementById('ldbAncBtn')?.addEventListener('click',()=>{ logoState.showAnchors=!logoState.showAnchors; refreshXray(); });
+  document.getElementById('ldbGroundBtn')?.addEventListener('click',()=>{ stageDark=!stageDark; logoState.xrayDark=stageDark; refreshXray(); });
+}
+
+async function renderLogoDetail(logoRoute,immediate){
+  const tok=++navToken;
+  let item=null;
+  if(logoRoute.startsWith('pack/')){
+    const parts=logoRoute.slice(5).split('/');
+    const packId=decodeURIComponent(parts[0]||'');
+    const glyphName=decodeURIComponent(parts.slice(1).join('/')||'');
+    const pk=ICON_PACKS[packId];
+    const g=(pk&&pk.glyphs||[]).find(x=>x.name===glyphName);
+    if(g){
+      item={
+        id:packId+'::'+glyphName,
+        packId,
+        glyphName,
+        brand:packId+' / '+glyphName,
+        markType:'icon glyph',
+        industry:'ui icon pack',
+        colors:['#fafafa'],
+        techniques:[pk.style||'vector',((pk.grid||24)+'px grid')],
+        geometry:['grid-modular'],
+        note:'Official '+(pk.grid||24)+'\u00d7'+(pk.grid||24)+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.',
+        svg:buildSysSvg(pk,g,256,'#fafafa',true).replace(/currentColor/gi,'#fafafa')
+      };
+    }
+  }else{
+    const logoId=decodeURIComponent(logoRoute);
+    item=logoByIdCache.get(logoId)||null;
+    if(!item && location.protocol.startsWith('http')){
+      startLoader();
+      try{
+        const res=await fetch('/api/logos?id='+encodeURIComponent(logoId));
+        if(res.ok){
+          const j=await res.json();
+          if(j&&j.ok&&j.logo){ item=j.logo; logoByIdCache.set(item.id,item); }
+        }
+      }catch(_){}finally{ stopLoader(); }
+    }
+  }
+  if(tok!==navToken) return;
+  if(!item){ location.hash='#/logos'; return; }
+
+  const anatomy=parseLogoAnatomy(item.svg);
+  const apply=()=>{
+    resetSystemTheme();
+    state.view='logos';
+    syncTopSearchPlaceholder();
+    document.getElementById('catBtn').setAttribute('aria-pressed','false');
+    document.getElementById('logosBtn').setAttribute('aria-pressed','true');
+    document.getElementById('rankBtn').setAttribute('aria-pressed','false');
+    document.getElementById('viewBtn').setAttribute('aria-pressed','false');
+    index.style.display='none';
+    logosEl.style.display='none';
+    rankingEl.style.display='none';
+    coverageEl.style.display='none';
+    applyLogoHeaderSlabs(item);
+    detail.innerHTML=buildLogoDetailHtml(item,anatomy);
+    detail.classList.add('on');
+    bindLogoDetailInteractions(item,anatomy);
+    if(!immediate) window.scrollTo(0,0);
+  };
+  if(immediate){ apply(); return; }
+  await runViewTransition('chameleon',apply,detail);
 }
 
 /* ---------- wiring ---------- */
@@ -3065,11 +3149,11 @@ function syncTopSearchPlaceholder(){
   const qEl=document.getElementById('q');
   const chipsEl=document.getElementById('chips');
   const isLogos=state.view==='logos';
-  if(qEl) qEl.placeholder=isLogos?'Search 1,432 logos, geometry, or 57 UI packs\u2026':'Search systems, intent, or repo\u2026';
+  if(qEl) qEl.placeholder=isLogos?'Search logos, geometry, or packs\u2026':'Search systems, intent, or repo\u2026';
   if(chipsEl) chipsEl.style.display=isLogos?'none':'';
 }
 
-function showView(immediate,logoId){
+function showView(immediate){
   ++navToken;
   clearTimeout(loaderT);
   const loaderEl=document.getElementById('topLoader');
@@ -3097,7 +3181,7 @@ function showView(immediate,logoId){
       buildLogoDbShell();
       syncLogoControls();
       loadLogoStats();
-      if(logoState.subTab==='logos') fetchLogos(logoId||null);
+      if(logoState.subTab==='logos') fetchLogos();
       else renderIconPackGrid();
     }
     else renderIndex();
@@ -3111,7 +3195,7 @@ function showView(immediate,logoId){
 
 function navigateTab(nextView){
   if(nextView==='logos'){
-    if(location.hash.startsWith('#/logos')){
+    if(location.hash==='#/logos'){
       if(window.scrollY>40) window.scrollTo({top:0,behavior:'smooth'});
       return;
     }
@@ -3137,7 +3221,8 @@ document.getElementById('viewBtn').addEventListener('click',()=>navigateTab('cov
 document.getElementById('q').addEventListener('input',e=>{
   state.q=e.target.value; state.page=1; state.rkPage=1;
   if(state.view==='logos' || location.hash.startsWith('#/logos')){
-    logoState.q=e.target.value; logoState.page=1;
+    logoState.q=e.target.value; logoState.page=1; logoState.iconPage=1;
+    if(location.hash!=='#/logos'){ location.hash='#/logos'; return; }
     syncLogoControls();
     scheduleLogosRefresh();
     return;
@@ -3181,17 +3266,21 @@ async function hydrateFromDb(){
     DB_META={ live:true, syncedAt:j.syncedAt||null };
     const slug=location.hash.replace(/^#\/?/,'');
     if(!slug && state.view!=='logos') showView(true);
-    else if(state.view==='logos'){ renderLogoStats(); if(logoState.subTab==='icons') renderIconPackGrid(); }
+    else if(slug.startsWith('logos/pack/')) renderLogoDetail(slug.slice(6),true);
+    else if(state.view==='logos' && slug==='logos'){ renderLogoStats(); if(logoState.subTab==='icons') renderIconPackGrid(); }
   }catch(_){}
 }
 function route(){
   const immediate=initialLoad;
   initialLoad=false;
   const slug=location.hash.replace(/^#\/?/,'');
-  if(slug==='logos'||slug.startsWith('logos/')){
+  if(slug==='logos'){
     state.view='logos';
-    const logoId=slug.startsWith('logos/')?decodeURIComponent(slug.slice(6)):null;
-    showView(immediate,logoId);
+    showView(immediate);
+    return;
+  }
+  if(slug.startsWith('logos/')){
+    renderLogoDetail(slug.slice(6),immediate);
     return;
   }
   if(slug){ renderDetail(slug,immediate); return; }
