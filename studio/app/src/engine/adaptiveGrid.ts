@@ -542,7 +542,7 @@ function extractRawFeatures(svgText: string): RawExtractedFeatures {
       };
 
       const flushCurveCircleFit = () => {
-        if (curveRun.length >= 6) {
+        if (curveRun.length >= 8) {
           const midIdx = Math.floor(curveRun.length / 2);
           const fit = fitCircleThreePts(curveRun[0], curveRun[midIdx], curveRun[curveRun.length - 1]);
           if (fit && fit.r > 1 && fit.r < Math.max(vb[2], vb[3]) * 2.5) {
@@ -551,12 +551,14 @@ function extractRawFeatures(svgText: string): RawExtractedFeatures {
               const err = Math.abs(Math.hypot(curveRun[k][0] - fit.cx, curveRun[k][1] - fit.cy) - fit.r);
               if (err > maxErr) maxErr = err;
             }
-            if (maxErr <= fit.r * 0.038) {
+            if (maxErr <= fit.r * 0.025) {
               const a0 = Math.atan2(curveRun[0][1] - fit.cy, curveRun[0][0] - fit.cx);
               const a1 = Math.atan2(curveRun[midIdx][1] - fit.cy, curveRun[midIdx][0] - fit.cx);
               const a2 = Math.atan2(curveRun[curveRun.length - 1][1] - fit.cy, curveRun[curveRun.length - 1][0] - fit.cx);
-              const sweep = Math.abs(a1 - a0) + Math.abs(a2 - a1);
-              if (sweep >= 0.48 && Math.hypot(curveRun[0][0] - curveRun[midIdx][0], curveRun[0][1] - curveRun[midIdx][1]) > fit.r * 0.25) {
+              const d1 = Math.atan2(Math.sin(a1 - a0), Math.cos(a1 - a0));
+              const d2 = Math.atan2(Math.sin(a2 - a1), Math.cos(a2 - a1));
+              const sweep = Math.abs(d1) + Math.abs(d2);
+              if (sweep >= 0.85 && Math.hypot(curveRun[0][0] - curveRun[midIdx][0], curveRun[0][1] - curveRun[midIdx][1]) > fit.r * 0.4) {
                 circles.push({ cx: fit.cx, cy: fit.cy, r: fit.r, weight: fit.r * Math.min(6.28, sweep + 1) });
               }
             }
@@ -1082,15 +1084,24 @@ export function analyzeMarkForGrid(svgText: string): MarkGridAnalysis {
   const sheetCircles: { cx: number; cy: number; r: number; weight: number }[] = [];
   const rawCircleMapped = raw.circles
     .map((c) => {
-      const [cx, cy] = toSheet(c.cx, c.cy);
-      const r = c.r * scale;
+      let [cx, cy] = toSheet(c.cx, c.cy);
+      let r = c.r * scale;
+      // Snap near-centered / frame-tangent circles cleanly to exact sheet frame coordinates
+      const frameCx = (sx0 + sx1) / 2;
+      const frameCy = (sy0 + sy1) / 2;
+      const frameRx = (sx1 - sx0) / 2;
+      const frameRy = (sy1 - sy0) / 2;
+      if (Math.abs(cx - frameCx) < 2.2) cx = frameCx;
+      if (Math.abs(cy - frameCy) < 2.2) cy = frameCy;
+      if (Math.abs(r - frameRx) < 2.2) r = frameRx;
+      else if (Math.abs(r - frameRy) < 2.2) r = frameRy;
       return { cx, cy, r, weight: c.weight * scale };
     })
     .filter((c) => c.r >= 5 && c.r <= 122 && c.cx > -40 && c.cx < SHEET + 40 && c.cy > -40 && c.cy < SHEET + 40)
     .sort((a, b) => b.weight - a.weight);
   for (const c of rawCircleMapped) {
     const dup = sheetCircles.find(
-      (o) => Math.hypot(o.cx - c.cx, o.cy - c.cy) < 5 && Math.abs(o.r - c.r) < 5,
+      (o) => Math.hypot(o.cx - c.cx, o.cy - c.cy) < 12 && Math.abs(o.r - c.r) < 10,
     );
     if (dup) dup.weight += c.weight;
     else sheetCircles.push({ ...c });

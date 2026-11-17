@@ -1015,7 +1015,8 @@ export function arrangePlanarGrid(
     }
   }
 
-  // Line-Circle
+  // Line-Circle (with near-tangent snapping to prevent micro-secant sliver faces)
+  const TANGENT_EPS = 0.45;
   for (let i = 0; i < lines.length; i++) {
     const l = lines[i];
     const dx = l.x2 - l.x1;
@@ -1026,12 +1027,29 @@ export function arrangePlanarGrid(
       const c = circles[k];
       const fx = l.x1 - c.cx;
       const fy = l.y1 - c.cy;
+      // Closest point on infinite line to circle center
+      const tClosest = -(fx * dx + fy * dy) / len2;
+      const cxLine = l.x1 + tClosest * dx;
+      const cyLine = l.y1 + tClosest * dy;
+      const distToCenter = Math.hypot(cxLine - c.cx, cyLine - c.cy);
+
+      if (Math.abs(distToCenter - c.r) <= TANGENT_EPS) {
+        if (tClosest >= -1e-4 && tClosest <= 1 + 1e-4) {
+          const ct = Math.min(1, Math.max(0, tClosest));
+          const px = l.x1 + ct * dx;
+          const py = l.y1 + ct * dy;
+          linePts[i].push({ x: px, y: py });
+          circPts[k].push({ x: px, y: py });
+        }
+        continue;
+      }
+
       const B = 2 * (fx * dx + fy * dy);
       const C = fx * fx + fy * fy - c.r * c.r;
       const disc = B * B - 4 * len2 * C;
-      if (disc < -1e-4) continue;
-      const sq = Math.sqrt(Math.max(0, disc));
-      for (const sgn of sq < 1e-4 ? [0] : [-1, 1]) {
+      if (disc < 0) continue;
+      const sq = Math.sqrt(disc);
+      for (const sgn of [-1, 1]) {
         const t = (-B + sgn * sq) / (2 * len2);
         if (t >= -1e-4 && t <= 1 + 1e-4) {
           const ct = Math.min(1, Math.max(0, t));
@@ -1152,9 +1170,15 @@ export function arrangePlanarGrid(
     } else {
       const a1 = Math.atan2(uy - cy, ux - cx);
       const a2 = Math.atan2(vy - cy, vx - cx);
-      // id1 follows increasing theta (sweep=1 in y-down), id2 decreasing theta (sweep=0)
-      out1 = normAngle(a1 + Math.PI / 2);
-      out2 = normAngle(a2 - Math.PI / 2);
+      let da = a2 - a1;
+      while (da <= 0) da += Math.PI * 2;
+      // Sample 25% into the unsplit arc so cyclic vertex ordering is immune to vertex snap & tangent ties
+      const q1x = cx + r * Math.cos(a1 + da * 0.25);
+      const q1y = cy + r * Math.sin(a1 + da * 0.25);
+      const q2x = cx + r * Math.cos(a1 + da * 0.75);
+      const q2y = cy + r * Math.sin(a1 + da * 0.75);
+      out1 = normAngle(Math.atan2(q1y - uy, q1x - ux));
+      out2 = normAngle(Math.atan2(q2y - vy, q2x - vx));
       bend1 = 1 / r;
       bend2 = -1 / r;
     }
