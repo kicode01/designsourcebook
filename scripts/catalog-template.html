@@ -340,9 +340,11 @@
 <div class="toast" id="toast">Copied</div>
 
 <script>
-const DATA = /*__DATA__*/ [];
-const COVERAGE = /*__COVERAGE__*/ {};
-const ICON_PACKS = /*__ICON_PACKS__*/ {};
+let DATA = /*__DATA__*/ [];
+let COVERAGE = /*__COVERAGE__*/ {};
+let ICON_PACKS = /*__ICON_PACKS__*/ {};
+let DB_META = { live: false, syncedAt: null };
+const FULL_CACHE = {};
 
 /* ---------- precision svg icons (zero emojis) ---------- */
 const ICONS={
@@ -1788,13 +1790,41 @@ function bindDetailEvents(d){
     el.addEventListener('click',()=>toast('Triggered '+el.dataset.pgBtn));
   });
   const cpPrompt=detail.querySelector('[data-copy-prompt]');
-  if(cpPrompt) cpPrompt.addEventListener('click',()=>copy(agentPromptFor(d)));
+  if(cpPrompt) cpPrompt.addEventListener('click',()=>{
+    const full=FULL_CACHE[d.slug];
+    copy((full&&full.designMd)?(agentPromptFor(d)+'\n\n---\n\n'+full.designMd):agentPromptFor(d));
+  });
   const cpJson=detail.querySelector('[data-copy-json]');
-  if(cpJson) cpJson.addEventListener('click',()=>copy(JSON.stringify(agentJsonFor(d),null,2)));
+  if(cpJson) cpJson.addEventListener('click',()=>{
+    const full=FULL_CACHE[d.slug];
+    const base=agentJsonFor(d);
+    if(full&&full.tokens) base.fullTokens=full.tokens;
+    copy(JSON.stringify(base,null,2));
+  });
+}
+async function hydrateSystemDetail(slug){
+  if(FULL_CACHE[slug]||!location.protocol.startsWith('http')) return;
+  try{
+    const res=await fetch('/api/systems/'+encodeURIComponent(slug));
+    if(!res.ok) return;
+    const j=await res.json();
+    if(j&&j.ok&&j.system){
+      FULL_CACHE[slug]=j.system;
+      const curSlug=location.hash.replace(/^#\/?/,'');
+      if(curSlug===slug){
+        const liveD=DATA.find(x=>x.slug===slug);
+        if(liveD){
+          if(Number.isFinite(j.system.stars)) liveD.stars=j.system.stars;
+          if(Number.isFinite(j.system.npmDownloads)) liveD.npmDownloads=j.system.npmDownloads;
+        }
+      }
+    }
+  }catch(_){}
 }
 async function renderDetail(slug,immediate){
   const d=DATA.find(x=>x.slug===slug);
   if(!d){ location.hash=''; return; }
+  hydrateSystemDetail(slug);
   const tok=++navToken;
   const fontWait=ensureFontsFor([d]);
   let barOn=false;
@@ -1833,10 +1863,27 @@ function toast(msg){
 /* ---------- ranking ---------- */
 const rankingEl=document.getElementById('ranking');
 
+function repoKeyOf(url){
+  if(!url) return null;
+  const m=/^https?:\/\/github\.com\/([^/]+)\/([^/#?]+)/i.exec(String(url).trim());
+  return m?(m[1]+'/'+m[2].replace(/\.git$/i,'')).toLowerCase():String(url).toLowerCase();
+}
+function dedupeByRepoList(rows){
+  const seen=new Set();
+  return rows.filter(d=>{
+    const rk=repoKeyOf(d.repo);
+    if(!rk) return true;
+    if(seen.has(rk)) return false;
+    seen.add(rk);
+    return true;
+  });
+}
 function renderRanking(){
   const q=state.q.toLowerCase();
   const mode=state.rkMode||'ds';
-  let list=DATA.filter(d=>{
+  const sorted=DATA.slice().sort((a,b)=>(b.stars||0)-(a.stars||0)||(b.npmDownloads||0)-(a.npmDownloads||0)||(a.name||'').localeCompare(b.name||''));
+  const uniqueRepoSystems=dedupeByRepoList(sorted);
+  let list=uniqueRepoSystems.filter(d=>{
     if(q && !(d.name+' '+d.org+' '+(d.repo||'')+' '+(d.package||'')+' '+d.style).toLowerCase().includes(q)) return false;
     if(mode==='enterprise') return Boolean(d.enterpriseRank);
     if(mode==='ds') return Boolean(d.isDesignSystemRepo);
@@ -1879,14 +1926,22 @@ function renderRanking(){
     '</div>';
   }).join('');
 
-  const withRepos=DATA.filter(d=>d.repo).length;
-  const totalStars=DATA.reduce((a,d)=>a+(d.stars||0),0);
-  const totalNpm=DATA.reduce((a,d)=>a+(d.npmDownloads||0),0);
+  const withRepos=uniqueRepoSystems.filter(d=>d.repo).length;
+  const totalStars=uniqueRepoSystems.reduce((a,d)=>a+(d.stars||0),0);
+  const seenPkgs=new Set();
+  const totalNpm=DATA.reduce((a,d)=>{
+    if(!d.package||!d.npmDownloads||seenPkgs.has(d.package)) return a;
+    seenPkgs.add(d.package);
+    return a+d.npmDownloads;
+  },0);
+  const syncLabel=DB_META.live
+    ? ('Neon Postgres'+(DB_META.syncedAt?' \u00b7 synced '+String(DB_META.syncedAt).slice(0,10):''))
+    : 'Unique upstream repos';
 
   rankingEl.innerHTML=
-    '<div class="meta"><h1>Popularity Leaderboard</h1><em>'+(startIdx+1)+'\u2013'+endIdx+' of '+total+' systems</em></div>'+
+    '<div class="meta"><h1>Popularity Leaderboard</h1><em>'+(total?((startIdx+1)+'\u2013'+endIdx+' of '+total):'0')+' systems \u00b7 '+esc(syncLabel)+'</em></div>'+
     '<div class="cov-sum">'+
-      '<div><b>'+withRepos+'</b>linked repositories</div>'+
+      '<div><b>'+withRepos+'</b>unique repositories</div>'+
       '<div><b>'+fmtNum(totalStars)+'</b>GitHub stars</div>'+
       '<div><b>'+fmtNum(totalNpm)+'</b>monthly npm downloads</div>'+
       '<div><b>'+total+'</b>ranked in view</div>'+
@@ -2044,6 +2099,21 @@ document.getElementById('chips').addEventListener('click',e=>{
   if(hasHash){ location.hash=''; return; }
   showView(false);
 });
+async function hydrateFromDb(){
+  if(!location.protocol.startsWith('http')) return;
+  try{
+    const res=await fetch('/api/catalog');
+    if(!res.ok) return;
+    const j=await res.json();
+    if(!j||!j.dbBacked||!Array.isArray(j.systems)||!j.systems.length) return;
+    DATA=j.systems;
+    if(j.iconPacks) ICON_PACKS=j.iconPacks;
+    if(j.coverage) COVERAGE=j.coverage;
+    DB_META={ live:true, syncedAt:j.syncedAt||null };
+    const slug=location.hash.replace(/^#\/?/,'');
+    if(!slug) showView(true);
+  }catch(_){}
+}
 function route(){
   const immediate=initialLoad;
   initialLoad=false;
@@ -2053,6 +2123,7 @@ function route(){
 }
 window.addEventListener('hashchange',route);
 route();
+hydrateFromDb();
 </script>
 </body>
 </html>

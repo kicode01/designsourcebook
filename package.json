@@ -15,7 +15,9 @@
     "sync": "node scripts/sync-sources.mjs",
     "lint": "node bin/sourcebook.mjs lint --all",
     "mcp": "node bin/sourcebook.mjs mcp",
-    "discover": "node scripts/discover-github.mjs"
+    "discover": "node scripts/discover-github.mjs",
+    "db:seed": "node scripts/db-seed.mjs",
+    "db:sync": "node scripts/db-seed.mjs --sync"
   },
   "files": [
     "bin",
@@ -26,5 +28,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.1"
   }
 }

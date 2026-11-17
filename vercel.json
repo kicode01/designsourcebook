@@ -1,5 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "fluid": true,
   "buildCommand": "node scripts/build-catalog.mjs",
-  "outputDirectory": "catalog"
+  "outputDirectory": "catalog",
+  "crons": [
+    {
+      "path": "/api/sync-popularity",
+      "schedule": "0 4 * * *"
+    }
+  ]
 }
