@@ -60,11 +60,31 @@ function hasMarkQueryInHash(): boolean {
 }
 
 function adaptMonochromeForCanvas(svgHtml: string): string {
-  // Turn pure-white monochrome strokes/fills into currentColor so trace & preview adapt to both themes
-  const hexes = [...svgHtml.matchAll(/#[0-9a-fA-F]{3,8}\b/g)].map((m) => m[0].toLowerCase());
-  const onlyWhiteOrEmpty =
-    hexes.length === 0 || hexes.every((c) => c === '#fff' || c === '#ffffff' || c === '#fafafa');
-  return onlyWhiteOrEmpty ? svgHtml.replace(/#(?:ffffff|fff|fafafa)\b/gi, 'currentColor') : svgHtml;
+  // Turn monochrome (white, black, dark charcoal, or implicit-black) marks into currentColor so previews & trace adapt cleanly to both themes
+  const rawCols = [...svgHtml.matchAll(/(?:#([0-9a-fA-F]{3,8})\b|\b(?:black|white)\b)/gi)];
+  const isMonoGrayOrNone = rawCols.every((m) => {
+    const tok = m[0].toLowerCase();
+    if (tok === 'black' || tok === 'white') return true;
+    const hex = m[1];
+    if (hex.length === 3 || hex.length === 4) {
+      return hex[0] === hex[1] && hex[1] === hex[2];
+    }
+    if (hex.length >= 6) {
+      const r = parseInt(hex.slice(0, 2), 16);
+      const g = parseInt(hex.slice(2, 4), 16);
+      const b = parseInt(hex.slice(4, 6), 16);
+      return Math.max(r, g, b) - Math.min(r, g, b) <= 18;
+    }
+    return false;
+  });
+  if (!isMonoGrayOrNone) return svgHtml;
+  let out = svgHtml
+    .replace(/#[0-9a-fA-F]{3,8}\b/gi, 'currentColor')
+    .replace(/\b(?:fill|stroke)="black"/gi, (s) => s.replace(/black/i, 'currentColor'));
+  if (!/\bfill="/i.test(out)) {
+    out = out.replace(/<svg\b([^>]*)>/i, '<svg$1 fill="currentColor">');
+  }
+  return out;
 }
 
 const MOTIFS: { id: Motif; label: string }[] = [

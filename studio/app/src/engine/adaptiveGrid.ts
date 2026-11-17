@@ -1315,7 +1315,7 @@ export function buildAdaptiveContourMesh(
   const minStep =
     density === 'low' ? 15 : density === 'med' ? 7.5 : 3.75; // exact divisors of 30 (240/8)
   const maxLeaves =
-    density === 'low' ? 220 : density === 'med' ? 520 : density === 'high' ? 840 : 1280;
+    density === 'low' ? 240 : density === 'med' ? 640 : density === 'high' ? 980 : 1450;
   const hiCov = density === 'ultra' ? 0.985 : 0.965;
   const loCov = density === 'ultra' ? 0.015 : 0.035;
 
@@ -1356,23 +1356,58 @@ export function buildAdaptiveContourMesh(
       continue;
     }
 
-    // At leaf level along boundary: test 45° diagonal split to eliminate rectangular stairsteps
-    const hs = s / 2;
-    const cNW = querySatRectCov(sat, x, y, x + hs, y + hs);
-    const cNE = querySatRectCov(sat, x + hs, y, x + s, y + hs);
-    const cSW = querySatRectCov(sat, x, y + hs, x + hs, y + s);
-    const cSE = querySatRectCov(sat, x + hs, y + hs, x + s, y + s);
+    // Compare actual pixel error across Whole Square vs Horizontal/Vertical Halves vs ±45° Triangles
+    // so horizontal/vertical tangents remain flat (zero sawtooth spikes) and true slopes get 45° bevels.
+    const x0 = Math.max(0, Math.floor(x));
+    const x1 = Math.min(SHEET, Math.ceil(x + s));
+    const y0 = Math.max(0, Math.floor(y));
+    const y1 = Math.min(SHEET, Math.ceil(y + s));
+    let tot1 = 0; let tot0 = 0;
+    let top1 = 0; let top0 = 0; let bot1 = 0; let bot0 = 0;
+    let left1 = 0; let left0 = 0; let right1 = 0; let right0 = 0;
+    let ne1 = 0; let ne0 = 0; let sw1 = 0; let sw0 = 0;
+    let nw1 = 0; let nw0 = 0; let se1 = 0; let se0 = 0;
 
-    // Split perpendicular to strongest contrast corner pair
-    const dMain = Math.abs(cNE - cSW); // split (x,y)->(x+s,y+s) separates NE vs SW
-    const dAnti = Math.abs(cNW - cSE); // split (x+s,y)->(x,y+s) separates NW vs SE
-    if (Math.max(dMain, dAnti) >= 0.2) {
-      if (dMain >= dAnti) {
-        leaves.push({ pts: [[x, y], [x + s, y], [x + s, y + s]], diag: true });
-        leaves.push({ pts: [[x, y], [x + s, y + s], [x, y + s]], diag: true });
+    for (let py = y0; py < y1; py++) {
+      const v = (py + 0.5 - y) / s;
+      const rowOff = py * SHEET;
+      for (let px = x0; px < x1; px++) {
+        const u = (px + 0.5 - x) / s;
+        const on = pixels[rowOff + px] >= 90;
+        if (on) tot1++; else tot0++;
+        if (v < 0.5) { if (on) top1++; else top0++; } else { if (on) bot1++; else bot0++; }
+        if (u < 0.5) { if (on) left1++; else left0++; } else { if (on) right1++; else right0++; }
+        if (u >= v) { if (on) ne1++; else ne0++; } else { if (on) sw1++; else sw0++; }
+        if (u + v <= 1) { if (on) nw1++; else nw0++; } else { if (on) se1++; else se0++; }
+      }
+    }
+
+    const errSq = Math.min(tot1, tot0);
+    const errH = Math.min(top1, top0) + Math.min(bot1, bot0);
+    const errV = Math.min(left1, left0) + Math.min(right1, right0);
+    const errD1 = Math.min(ne1, ne0) + Math.min(sw1, sw0);
+    const errD2 = Math.min(nw1, nw0) + Math.min(se1, se0);
+
+    const bestOrtho = Math.min(errH, errV);
+    const bestDiag = Math.min(errD1, errD2);
+    const bestAll = Math.min(bestOrtho, bestDiag);
+    const hs = s / 2;
+
+    if (errSq > 0 && bestAll < errSq * 0.72) {
+      if (bestDiag < bestOrtho) {
+        if (errD1 <= errD2) {
+          leaves.push({ pts: [[x, y], [x + s, y], [x + s, y + s]], diag: true });
+          leaves.push({ pts: [[x, y], [x + s, y + s], [x, y + s]], diag: true });
+        } else {
+          leaves.push({ pts: [[x, y], [x + s, y], [x, y + s]], diag: true });
+          leaves.push({ pts: [[x + s, y], [x + s, y + s], [x, y + s]], diag: true });
+        }
+      } else if (errH <= errV) {
+        leaves.push({ pts: [[x, y], [x + s, y], [x + s, y + hs], [x, y + hs]], diag: false });
+        leaves.push({ pts: [[x, y + hs], [x + s, y + hs], [x + s, y + s], [x, y + s]], diag: false });
       } else {
-        leaves.push({ pts: [[x, y], [x + s, y], [x, y + s]], diag: true });
-        leaves.push({ pts: [[x + s, y], [x + s, y + s], [x, y + s]], diag: true });
+        leaves.push({ pts: [[x, y], [x + hs, y], [x + hs, y + s], [x, y + s]], diag: false });
+        leaves.push({ pts: [[x + hs, y], [x + s, y], [x + s, y + s], [x + hs, y + s]], diag: false });
       }
     } else {
       leaves.push({ pts: [[x, y], [x + s, y], [x + s, y + s], [x, y + s]], diag: false });
