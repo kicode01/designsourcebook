@@ -99,20 +99,129 @@ export interface CompiledSystem {
   }[];
 }
 
-export const FONT_OPTIONS = [
-  { label: 'Geist', stack: "'Geist', 'Inter', system-ui, sans-serif" },
-  { label: 'Inter', stack: "'Inter', system-ui, sans-serif" },
-  { label: 'IBM Plex Sans', stack: "'IBM Plex Sans', system-ui, sans-serif" },
-  { label: 'Plus Jakarta Sans', stack: "'Plus Jakarta Sans', system-ui, sans-serif" },
-  { label: 'Source Serif 4', stack: "'Source Serif 4', Georgia, serif" },
-  { label: 'System Sans', stack: "system-ui, -apple-system, 'Segoe UI', sans-serif" },
+export interface AlloFontPreset {
+  id: string;
+  label: string;
+  meta: string;
+  stack: string;
+  variation: string;
+  features: string;
+  ligatures?: 'normal' | 'no-contextual';
+}
+
+export const ALLO_STACK = "'Allo', system-ui, sans-serif";
+
+export const FONT_OPTIONS: AlloFontPreset[] = [
+  {
+    id: 'allo-precision',
+    label: 'Allo Precision',
+    meta: 'ROND 28',
+    stack: ALLO_STACK,
+    variation: '"ROND" 28',
+    features: '"calt" 1, "liga" 1, "case" 1',
+  },
+  {
+    id: 'allo-balanced',
+    label: 'Allo Balanced',
+    meta: 'ROND 45',
+    stack: ALLO_STACK,
+    variation: '"ROND" 45',
+    features: '"calt" 1, "liga" 1',
+  },
+  {
+    id: 'allo-friendly',
+    label: 'Allo Friendly',
+    meta: 'ROND 50',
+    stack: ALLO_STACK,
+    variation: '"ROND" 50',
+    features: '"calt" 1, "liga" 1',
+  },
+  {
+    id: 'allo-sharp',
+    label: 'Allo Sharp',
+    meta: 'ROND 0',
+    stack: ALLO_STACK,
+    variation: '"ROND" 0',
+    features: '"calt" 1, "liga" 1',
+  },
+  {
+    id: 'allo-round',
+    label: 'Allo Round',
+    meta: 'ROND 85',
+    stack: ALLO_STACK,
+    variation: '"ROND" 85',
+    features: '"calt" 1, "liga" 1, "ss03" 1',
+  },
+  {
+    id: 'allo-ss01',
+    label: 'Allo Single-Story a',
+    meta: 'ss01',
+    stack: ALLO_STACK,
+    variation: '"ROND" 45',
+    features: '"ss01" 1, "calt" 1, "liga" 1',
+  },
 ];
 
-export const MONO_OPTIONS = [
-  { label: 'JetBrains Mono', stack: "'JetBrains Mono', ui-monospace, monospace" },
-  { label: 'IBM Plex Mono', stack: "'IBM Plex Mono', ui-monospace, monospace" },
-  { label: 'System Mono', stack: "ui-monospace, SFMono-Regular, Menlo, monospace" },
+export const MONO_OPTIONS: AlloFontPreset[] = [
+  {
+    id: 'allo-code',
+    label: 'Allo Code',
+    meta: 'ss02',
+    stack: ALLO_STACK,
+    variation: '"ROND" 22',
+    features: '"tnum" 1, "ss02" 1',
+    ligatures: 'no-contextual',
+  },
+  {
+    id: 'allo-tabular',
+    label: 'Allo Tabular',
+    meta: 'tnum',
+    stack: ALLO_STACK,
+    variation: '"ROND" 36',
+    features: '"tnum" 1, "case" 1',
+    ligatures: 'no-contextual',
+  },
+  {
+    id: 'allo-dotted',
+    label: 'Allo Dotted Zero',
+    meta: 'cv05',
+    stack: ALLO_STACK,
+    variation: '"ROND" 22',
+    features: '"tnum" 1, "cv01" 1, "cv03" 1, "cv04" 1, "cv05" 1',
+    ligatures: 'no-contextual',
+  },
 ];
+
+export function resolveFontOption(value: string | undefined, role: 'display' | 'body' | 'mono'): AlloFontPreset {
+  const pool = role === 'mono' ? MONO_OPTIONS : FONT_OPTIONS;
+  const match = pool.find((o) => o.id === value);
+  if (match) return match;
+  if (role === 'display') return FONT_OPTIONS[0];
+  if (role === 'body') return FONT_OPTIONS[1];
+  return MONO_OPTIONS[0];
+}
+
+export function fontStyleFor(
+  value: string | undefined,
+  role: 'display' | 'body' | 'mono',
+): {
+  fontFamily: string;
+  fontOpticalSizing: 'auto';
+  fontVariationSettings: string;
+  fontFeatureSettings: string;
+  fontVariantLigatures?: 'normal' | 'no-contextual';
+  fontVariantNumeric?: 'tabular-nums';
+} {
+  const opt = resolveFontOption(value, role);
+  return {
+    fontFamily: opt.stack,
+    fontOpticalSizing: 'auto',
+    fontVariationSettings: opt.variation,
+    fontFeatureSettings: opt.features,
+    ...(opt.ligatures ? { fontVariantLigatures: opt.ligatures } : {}),
+    ...(role === 'mono' ? { fontVariantNumeric: 'tabular-nums' } : {}),
+  };
+}
 
 export const TYPE_RATIOS = [
   { label: 'Minor Second (1.067)', value: 1.067 },
@@ -497,9 +606,21 @@ export function seedSystemFromCatalog(raw: Record<string, unknown>): Partial<Des
   const third = pal.find((p) => p.value && normalizeHex(p.value) !== brand && normalizeHex(p.value) !== normalizeHex(second || ''))?.value;
   const derived = harmonyPair(brand, 'split');
   const radiusNum = parseFloat(String(raw.radius || '8'));
-  const typeArr = Array.isArray(raw.type) ? (raw.type as { fontFamily?: string }[]) : [];
-  const firstFont = typeArr[0]?.fontFamily ? String(typeArr[0].fontFamily).split(',')[0].replace(/['"]/g, '').trim() : 'Inter';
-  const fontMatch = FONT_OPTIONS.find((f) => f.label.toLowerCase().includes(firstFont.toLowerCase()))?.stack || `'${firstFont}', 'Inter', system-ui, sans-serif`;
+  const styleText = String(raw.style || '').toLowerCase();
+  const displayPreset =
+    Number.isFinite(radiusNum) && radiusNum <= 2
+      ? 'allo-sharp'
+      : Number.isFinite(radiusNum) && radiusNum >= 14
+        ? 'allo-round'
+        : /playful|friendly|warm|pill|soft/.test(styleText)
+          ? 'allo-friendly'
+          : 'allo-precision';
+  const bodyPreset =
+    Number.isFinite(radiusNum) && radiusNum <= 2
+      ? 'allo-precision'
+      : Number.isFinite(radiusNum) && radiusNum >= 14
+        ? 'allo-friendly'
+        : 'allo-balanced';
 
   return {
     name: String(raw.name || 'Custom System'),
@@ -510,14 +631,18 @@ export function seedSystemFromCatalog(raw: Record<string, unknown>): Partial<Des
     primaryHex: brand,
     secondaryHex: second ? normalizeHex(second) : derived.secondary,
     accentHex: third ? normalizeHex(third) : derived.accent,
-    displayFont: fontMatch,
-    bodyFont: fontMatch,
+    displayFont: displayPreset,
+    bodyFont: bodyPreset,
+    monoFont: 'allo-code',
     baseRadiusPx: Number.isFinite(radiusNum) ? clamp(Math.round(radiusNum), 0, 24) : 8,
   };
 }
 
 export function exportDesignSystem(doc: DesignSystemDoc, compiled: CompiledSystem, format: 'css' | 'tailwind' | 'dtcg' | 'designmd'): string {
   const { semantic, ramps, typeScale, spacingScale, radii } = compiled;
+  const displayOpt = resolveFontOption(doc.displayFont, 'display');
+  const bodyOpt = resolveFontOption(doc.bodyFont, 'body');
+  const monoOpt = resolveFontOption(doc.monoFont, 'mono');
   if (format === 'css') {
     const lines = [
       `/* ${doc.name} — Design Sourcebook Deterministic Tokens */`,
@@ -532,9 +657,12 @@ export function exportDesignSystem(doc: DesignSystemDoc, compiled: CompiledSyste
       `  --ds-brand-fg: ${semantic.brandFg};`,
       `  --ds-secondary: ${semantic.secondary};`,
       `  --ds-accent: ${semantic.accent};`,
-      `  --ds-font-display: ${doc.displayFont};`,
-      `  --ds-font-body: ${doc.bodyFont};`,
-      `  --ds-font-mono: ${doc.monoFont};`,
+      `  --ds-font-display: ${displayOpt.stack};`,
+      `  --ds-font-body: ${bodyOpt.stack};`,
+      `  --ds-font-mono: ${monoOpt.stack};`,
+      `  --ds-font-display-settings: ${displayOpt.variation};`,
+      `  --ds-font-body-settings: ${bodyOpt.variation};`,
+      `  --ds-font-mono-settings: ${monoOpt.variation};`,
       `  --ds-radius-sm: ${radii.sm};`,
       `  --ds-radius-md: ${radii.md};`,
       `  --ds-radius-lg: ${radii.lg};`,
@@ -558,9 +686,9 @@ export function exportDesignSystem(doc: DesignSystemDoc, compiled: CompiledSyste
     lines.push(`  --color-surface: ${semantic.surface};`);
     lines.push(`  --color-ink: ${semantic.ink};`);
     lines.push(`  --color-muted: ${semantic.muted};`);
-    lines.push(`  --font-display: ${doc.displayFont};`);
-    lines.push(`  --font-sans: ${doc.bodyFont};`);
-    lines.push(`  --font-mono: ${doc.monoFont};`);
+    lines.push(`  --font-display: ${displayOpt.stack};`);
+    lines.push(`  --font-sans: ${bodyOpt.stack};`);
+    lines.push(`  --font-mono: ${monoOpt.stack};`);
     lines.push(`  --radius-sm: ${radii.sm};`);
     lines.push(`  --radius-md: ${radii.md};`);
     lines.push(`  --radius-lg: ${radii.lg};`);
@@ -604,9 +732,9 @@ export function exportDesignSystem(doc: DesignSystemDoc, compiled: CompiledSyste
     `- Primary Brand: \`${semantic.brand}\` (on-brand text: \`${semantic.brandFg}\`)`,
     ``,
     `## Typography (Ratio ${doc.typeRatio})`,
-    `- Display: \`${doc.displayFont}\``,
-    `- Body: \`${doc.bodyFont}\``,
-    `- Mono: \`${doc.monoFont}\``,
+    `- Display: \`${displayOpt.stack}\` (${displayOpt.label} · ${displayOpt.variation})`,
+    `- Body: \`${bodyOpt.stack}\` (${bodyOpt.label} · ${bodyOpt.variation})`,
+    `- Mono: \`${monoOpt.stack}\` (${monoOpt.label} · ${monoOpt.variation})`,
     ...typeScale.map((t) => `- \`${t.token}\`: \`${t.px}px\` (\`${t.clampCss}\`) · weight ${t.weight} · lh ${t.lineHeight}`),
     ``,
     `## Geometry & Spacing`,

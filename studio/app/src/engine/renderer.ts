@@ -181,6 +181,7 @@ export class StudioRenderer {
   private logoCanvas: HTMLCanvasElement;
   private hasLogo = false;
   private size = 1024;
+  private disposed = false;
 
   constructor(canvas: HTMLCanvasElement) {
     const gl = canvas.getContext('webgl2', {
@@ -200,6 +201,13 @@ export class StudioRenderer {
     this.logoCanvas.width = LOGO_SIZE;
     this.logoCanvas.height = LOGO_SIZE;
     this.atlasTex = this.buildAtlas();
+    if (typeof document !== 'undefined' && document.fonts?.ready) {
+      void document.fonts.ready.then(() => {
+        if (this.disposed) return;
+        if (this.atlasTex) this.gl.deleteTexture(this.atlasTex);
+        this.atlasTex = this.buildAtlas();
+      });
+    }
     (window as unknown as { __renderer?: StudioRenderer }).__renderer = this;
     this.postProgram = createProgram(gl, VERT, POST_FRAG);
   }
@@ -213,7 +221,7 @@ export class StudioRenderer {
     c.height = cell;
     const ctx = c.getContext('2d')!;
     ctx.fillStyle = '#fff';
-    ctx.font = `600 ${Math.round(cell * 0.86)}px ui-monospace, "SF Mono", Menlo, monospace`;
+    ctx.font = `600 ${Math.round(cell * 0.86)}px "Allo", system-ui, sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     chars.forEach((ch, i) => ctx.fillText(ch, i * cell + cell / 2, cell / 2 + 2));
@@ -789,6 +797,7 @@ export class StudioRenderer {
   }
 
   dispose(): void {
+    this.disposed = true;
     const gl = this.gl;
     this.programs.forEach((p) => gl.deleteProgram(p.program));
     this.programs.clear();

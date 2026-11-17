@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
 import { DsSelect } from '../components/DsSelect';
-import { FONT_OPTIONS, exportDesignSystem, wcagContrast } from '../engine/dsEngine';
+import { FONT_OPTIONS, exportDesignSystem, fontStyleFor, resolveFontOption, wcagContrast } from '../engine/dsEngine';
 import { useProject } from '../state/project';
 
 type TileKind =
@@ -118,13 +118,15 @@ function TileBody({
   photo: string | null;
   markSvg: string;
 }) {
-  const fontName = FONT_OPTIONS.find((f) => f.stack === brand.displayFont)?.label || brand.displayFont.split(',')[0].replace(/['"]/g, '');
+  const fontPreset = resolveFontOption(brand.displayFont, 'display');
+  const fontName = fontPreset.label;
+  const displayStyle = fontStyleFor(brand.displayFont, 'display');
   const contrastRatio = wcagContrast(brand.ink, brand.background);
 
   switch (kind) {
     case 'wordmark':
       return (
-        <div className="bx-wordmark" style={{ fontFamily: brand.displayFont }}>
+        <div className="bx-wordmark" style={displayStyle}>
           <span style={{ color: brand.ink }}>{brand.name}</span>
           <small style={{ color: brand.ink, opacity: 0.6 }}>{brand.tagline}</small>
         </div>
@@ -166,7 +168,7 @@ function TileBody({
       );
     case 'type':
       return (
-        <div className="bx-type" style={{ color: brand.ink, fontFamily: brand.displayFont }}>
+        <div className="bx-type" style={{ color: brand.ink, ...displayStyle }}>
           <span className="bx-type-a">Aa</span>
           <small>{fontName} · {contrastRatio}:1 contrast</small>
         </div>
@@ -309,7 +311,7 @@ function TileBody({
           }}
         >
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 9.5, color: brand.accent }}>OPEN GRAPH 1200×630</span>
-          <strong style={{ color: brand.ink, fontFamily: brand.displayFont, fontSize: 14 }}>{brand.name}</strong>
+          <strong style={{ color: brand.ink, ...displayStyle, fontSize: 14 }}>{brand.name}</strong>
           <small style={{ color: brand.ink, opacity: 0.65, fontSize: 11 }}>{brand.tagline}</small>
         </div>
       );
@@ -477,6 +479,9 @@ export function BrandX() {
   }, [photo]);
 
   const exportPng = async () => {
+    if (typeof document !== 'undefined' && document.fonts?.ready) {
+      await document.fonts.ready;
+    }
     const px = 1500;
     const canvas = document.createElement('canvas');
     canvas.width = px;
@@ -551,10 +556,10 @@ export function BrandX() {
 
       if (tile.kind === 'wordmark') {
         ctx.fillStyle = brand.ink;
-        ctx.font = `600 ${Math.round(w * 0.12)}px Inter, sans-serif`;
+        ctx.font = `600 ${Math.round(w * 0.12)}px "Allo", system-ui, sans-serif`;
         ctx.fillText(brand.name, cx, cy - w * 0.03);
         ctx.globalAlpha = 0.58;
-        ctx.font = `400 ${Math.round(w * 0.048)}px Inter, sans-serif`;
+        ctx.font = `400 ${Math.round(w * 0.048)}px "Allo", system-ui, sans-serif`;
         ctx.fillText(brand.tagline, cx, cy + w * 0.06);
       } else if (tile.kind === 'mark' && markImg) {
         const ms = Math.min(w, h) * 0.42;
@@ -569,11 +574,11 @@ export function BrandX() {
         });
       } else if (tile.kind === 'type') {
         ctx.fillStyle = brand.ink;
-        ctx.font = `600 ${Math.round(w * 0.28)}px Inter, sans-serif`;
+        ctx.font = `600 ${Math.round(w * 0.28)}px "Allo", system-ui, sans-serif`;
         ctx.fillText('Aa', cx, cy - h * 0.05);
         ctx.globalAlpha = 0.58;
-        ctx.font = `400 ${Math.round(w * 0.045)}px Inter, sans-serif`;
-        ctx.fillText(brand.displayFont.split(',')[0].replace(/['"]/g, ''), cx, cy + h * 0.18);
+        ctx.font = `400 ${Math.round(w * 0.045)}px "Allo", system-ui, sans-serif`;
+        ctx.fillText(resolveFontOption(brand.displayFont, 'display').label, cx, cy + h * 0.18);
       } else if (tile.kind === 'pattern') {
         ctx.fillStyle = brand.accent;
         const step = w * 0.055;
@@ -597,17 +602,17 @@ export function BrandX() {
         ctx.arc(cx, cy - h * 0.08, w * 0.09, 0, Math.PI * 2);
         ctx.fill();
         ctx.fillStyle = wcagContrast('#09090b', brand.accent) > 4.5 ? '#09090b' : '#ffffff';
-        ctx.font = `700 ${Math.round(w * 0.1)}px Inter, sans-serif`;
+        ctx.font = `700 ${Math.round(w * 0.1)}px "Allo", system-ui, sans-serif`;
         ctx.fillText(brand.name.charAt(0).toUpperCase(), cx, cy - h * 0.08);
         ctx.fillStyle = brand.ink;
-        ctx.font = `600 ${Math.round(w * 0.07)}px Inter, sans-serif`;
+        ctx.font = `600 ${Math.round(w * 0.07)}px "Allo", system-ui, sans-serif`;
         ctx.fillText(brand.handle, cx, cy + h * 0.14);
       } else if (tile.kind === 'ogcard') {
         ctx.fillStyle = brand.accent;
-        ctx.font = `600 ${Math.round(w * 0.04)}px monospace`;
+        ctx.font = `600 ${Math.round(w * 0.04)}px "Allo", system-ui, sans-serif`;
         ctx.fillText('OPEN GRAPH 1200×630', cx, cy - h * 0.12);
         ctx.fillStyle = brand.ink;
-        ctx.font = `700 ${Math.round(w * 0.1)}px Inter, sans-serif`;
+        ctx.font = `700 ${Math.round(w * 0.1)}px "Allo", system-ui, sans-serif`;
         ctx.fillText(brand.name, cx, cy + h * 0.02);
       } else if (tile.kind === 'ui') {
         ctx.fillStyle = brand.accent;
@@ -615,7 +620,7 @@ export function BrandX() {
         ctx.roundRect(cx - w * 0.25, cy - 22, w * 0.5, 44, brand.radiusPx);
         ctx.fill();
         ctx.fillStyle = wcagContrast('#09090b', brand.accent) > 4.5 ? '#09090b' : '#ffffff';
-        ctx.font = `600 ${Math.round(w * 0.05)}px Inter, sans-serif`;
+        ctx.font = `600 ${Math.round(w * 0.05)}px "Allo", system-ui, sans-serif`;
         ctx.fillText('Primary CTA', cx, cy);
       } else if (tile.kind === 'photo' && photoImg) {
         // Real aspect-fill cover crop of uploaded photography (fixes broken blank grey box!)
@@ -899,9 +904,9 @@ export function BrandX() {
                   <DsSelect
                     fullWidth
                     ariaLabel="Brand display font"
-                    value={doc.brand.displayFont}
+                    value={resolveFontOption(doc.brand.displayFont, 'display').id}
                     onChange={(displayFont) => patchBrand({ displayFont })}
-                    options={FONT_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                    options={FONT_OPTIONS.map((f) => ({ value: f.id, label: f.label, meta: f.meta }))}
                   />
                 </div>
                 <div className="page-field">

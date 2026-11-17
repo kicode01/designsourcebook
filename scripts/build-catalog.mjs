@@ -115,6 +115,51 @@ if (fs.existsSync(webBrandDir)) {
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT_DIR, file));
   }
 }
+const alloPkgDir = path.join(ROOT, "node_modules/allo-font");
+const alloWebfontsSrc = path.join(alloPkgDir, "fonts/webfonts");
+const fontsOut = path.join(OUT_DIR, "fonts");
+const webfontsOut = path.join(fontsOut, "webfonts");
+if (fs.existsSync(alloWebfontsSrc)) {
+  fs.mkdirSync(webfontsOut, { recursive: true });
+  for (const file of [
+    "AlloVariable.woff2",
+    "Allo-ThinOblique.woff2",
+    "Allo-ExtraLightOblique.woff2",
+    "Allo-LightOblique.woff2",
+    "Allo-Oblique.woff2",
+    "Allo-MediumOblique.woff2",
+    "Allo-SemiBoldOblique.woff2",
+    "Allo-BoldOblique.woff2",
+    "Allo-ExtraBoldOblique.woff2",
+    "Allo-BlackOblique.woff2",
+  ]) {
+    const src = path.join(alloWebfontsSrc, file);
+    if (fs.existsSync(src)) fs.copyFileSync(src, path.join(webfontsOut, file));
+  }
+  const oflSrc = path.join(alloPkgDir, "OFL.txt");
+  if (fs.existsSync(oflSrc)) fs.copyFileSync(oflSrc, path.join(fontsOut, "OFL.txt"));
+}
+
+function buildAlloFontCss() {
+  const dir = fs.existsSync(alloWebfontsSrc) ? alloWebfontsSrc : webfontsOut;
+  const faces = [
+    { file: "AlloVariable.woff2", weight: "100 900", style: "normal" },
+    { file: "Allo-Oblique.woff2", weight: "100 500", style: "italic" },
+    { file: "Allo-BoldOblique.woff2", weight: "600 900", style: "italic" },
+  ];
+  return faces
+    .map(({ file, weight, style }) => {
+      const fp = path.join(dir, file);
+      const src = fs.existsSync(fp)
+        ? `url('data:font/woff2;base64,${fs.readFileSync(fp).toString("base64")}') format('woff2')`
+        : `url('./fonts/webfonts/${file}') format('woff2')`;
+      return `@font-face{font-family:'Allo';src:${src};font-weight:${weight};font-style:${style};font-display:swap}`;
+    })
+    .join("\n  ");
+}
+
+const htmlWithFonts = html.replace("/*__ALLO_FONT_CSS__*/", buildAlloFontCss());
+
 const studioDist = path.join(ROOT, "studio/app/dist");
 if (fs.existsSync(studioDist)) {
   const studioOut = path.join(OUT_DIR, "studio");
@@ -124,7 +169,7 @@ if (fs.existsSync(studioDist)) {
 const dest = path.join(OUT_DIR, "index.html");
 for (let i = 0; i < 8; i++) {
   try {
-    fs.writeFileSync(dest, html, "utf8");
+    fs.writeFileSync(dest, htmlWithFonts, "utf8");
     break;
   } catch (err) {
     if (i === 7) throw err;

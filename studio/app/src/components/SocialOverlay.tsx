@@ -74,11 +74,11 @@ export function paintSocialOverlay(
   ctx.arc(avatarX, avatarY, avatarR, 0, Math.PI * 2);
   ctx.fill();
 
-  ctx.font = `600 ${Math.round(header * 0.24)}px Inter, system-ui, sans-serif`;
+  ctx.font = `600 ${Math.round(header * 0.24)}px "Allo", system-ui, sans-serif`;
   ctx.fillStyle = textColor;
   ctx.fillText(platform === 'youtube' ? 'Design Sourcebook' : 'Design Sourcebook Studio', avatarX + avatarR * 1.6, avatarY - header * 0.08);
   ctx.fillStyle = muted;
-  ctx.font = `500 ${Math.round(header * 0.18)}px Inter, system-ui, sans-serif`;
+  ctx.font = `500 ${Math.round(header * 0.18)}px "Allo", system-ui, sans-serif`;
   ctx.fillText(handle, avatarX + avatarR * 1.6, avatarY + header * 0.16);
 
   ctx.strokeStyle = muted;
@@ -91,12 +91,12 @@ export function paintSocialOverlay(
 
   const fy = card.y + card.h - footer * 0.55;
   ctx.fillStyle = textColor;
-  ctx.font = `600 ${Math.round(footer * 0.24)}px Inter, system-ui, sans-serif`;
+  ctx.font = `600 ${Math.round(footer * 0.24)}px "Allo", system-ui, sans-serif`;
   const likes = platform === 'youtube' ? '12.4K' : platform === 'instagram' ? '4,281' : '1,204';
   ctx.fillText('Like', card.x + card.w * 0.07, fy);
   ctx.fillText('Share', card.x + card.w * 0.18, fy);
   ctx.fillStyle = muted;
-  ctx.font = `500 ${Math.round(footer * 0.2)}px Inter, system-ui, sans-serif`;
+  ctx.font = `500 ${Math.round(footer * 0.2)}px "Allo", system-ui, sans-serif`;
   ctx.fillText(`${likes} saves`, card.x + card.w * 0.32, fy);
 
   if (platform === 'youtube') {
@@ -107,7 +107,7 @@ export function paintSocialOverlay(
     roundRect(ctx, card.x + card.w * 0.77, fy - bh / 2, bw, bh, bh * 0.28);
     ctx.fill();
     ctx.fillStyle = '#fff';
-    ctx.font = `700 ${Math.round(bh * 0.42)}px Inter, system-ui, sans-serif`;
+    ctx.font = `700 ${Math.round(bh * 0.42)}px "Allo", system-ui, sans-serif`;
     ctx.fillText('Subscribe', card.x + card.w * 0.785, fy);
   }
 }
@@ -116,15 +116,23 @@ export function SocialOverlay({ effectId, params, size, dark }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const canvas = ref.current;
-    if (!canvas) return;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    canvas.width = size * dpr;
-    canvas.height = size * dpr;
-    const ctx = canvas.getContext('2d')!;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.clearRect(0, 0, size, size);
-    paintSocialOverlay(ctx, effectId, params, size, dark);
+    let alive = true;
+    const draw = () => {
+      const canvas = ref.current;
+      if (!canvas || !alive) return;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = size * dpr;
+      canvas.height = size * dpr;
+      const ctx = canvas.getContext('2d')!;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, size, size);
+      paintSocialOverlay(ctx, effectId, params, size, dark);
+    };
+    draw();
+    if (typeof document !== 'undefined' && document.fonts?.status !== 'loaded') {
+      void document.fonts.ready.then(draw);
+    }
+    return () => { alive = false; };
   }, [effectId, params, size, dark]);
 
   if (!SOCIAL_IDS.includes(effectId)) return null;

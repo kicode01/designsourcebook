@@ -46,9 +46,14 @@
   --ok: #10b981;
   --warn: #f59e0b;
   --err: #ef4444;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-code: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace;
+  --font-sans: 'Allo', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: 'Allo', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: 'Allo', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-code: 'Allo', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --allo-body-rond: 'ROND' 45;
+  --allo-display-rond: 'ROND' 28;
+  --allo-mono-rond: 'ROND' 36;
+  --allo-code-rond: 'ROND' 22;
 }
 
 .logo-studio[data-theme='dark'],
@@ -150,6 +155,9 @@ html, body, #root {
 
 body {
   font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-variation-settings: var(--allo-body-rond);
+  font-feature-settings: 'calt' 1, 'liga' 1;
   background: var(--studio-gutter);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
@@ -158,6 +166,9 @@ body {
 
 button {
   font: inherit;
+  font-variation-settings: inherit;
+  font-feature-settings: inherit;
+  font-optical-sizing: inherit;
   color: inherit;
   background: none;
   border: none;
@@ -167,6 +178,38 @@ button {
 
 button:disabled { cursor: not-allowed; opacity: 0.4; }
 
-input, select, textarea { font: inherit; color: inherit; }
+input, select, textarea {
+  font: inherit;
+  font-variation-settings: inherit;
+  font-feature-settings: inherit;
+  font-optical-sizing: inherit;
+  color: inherit;
+}
+
+/* Design Sourcebook Custom Allo Profile across Studio voices */
+h1, h2, .ds-brand-link, .ds-title-block h1, .shell-body h1, .modal h2, .studio-empty strong, .bx-wordmark span, .bx-type-a {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-variation-settings: var(--allo-display-rond);
+  font-feature-settings: 'calt' 1, 'liga' 1, 'case' 1;
+}
+
+.ds-brand-badge, .ds-stat-box strong, .ds-ramp-chip, .ldb-badge, .ldb-meta-foot,
+.craft-scale-item, .ds-select-meta, .ds-select-opt-cnt, .param-value, .zoom-value,
+.grid-thumb-score, .page-panel-count, .studio-section-title, .page-section-title,
+.bx-tile-label {
+  font-family: var(--font-mono);
+  font-variation-settings: var(--allo-mono-rond);
+  font-feature-settings: 'tnum' 1, 'case' 1;
+  font-variant-numeric: tabular-nums;
+}
+
+code, pre, kbd, .ds-code-pre, .page-code-pre {
+  font-family: var(--font-code);
+  font-variation-settings: var(--allo-code-rond);
+  font-feature-settings: 'tnum' 1, 'ss02' 1;
+  font-variant-numeric: tabular-nums;
+  font-variant-ligatures: no-contextual;
+}
 
 ::selection { background: var(--studio-accent); color: var(--studio-accent-fg); }

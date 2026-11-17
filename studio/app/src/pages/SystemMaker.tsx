@@ -8,7 +8,9 @@ import {
   TYPE_RATIOS,
   applyCvdSimulation,
   exportDesignSystem,
+  fontStyleFor,
   harmonyPair,
+  resolveFontOption,
   solveReadableOnBg,
   type CvdMode,
   type ElevationStyle,
@@ -171,7 +173,7 @@ export function SystemMaker() {
                 style={{
                   background: cvdHex(semantic.canvas),
                   color: cvdHex(semantic.ink),
-                  fontFamily: designSystem.bodyFont,
+                  ...fontStyleFor(designSystem.bodyFont, 'body'),
                   borderColor: semantic.border,
                   ['--sb-accent' as string]: cvdHex(semantic.accent),
                 }}
@@ -204,10 +206,10 @@ export function SystemMaker() {
                         __html: activeMark.svg.replace(/fill="#?[0-9a-fA-F]+"/g, `fill="${cvdHex(semantic.brandFg)}"`),
                       }}
                     />
-                    <strong style={{ fontFamily: designSystem.displayFont, fontSize: 15 }}>{designSystem.name}</strong>
+                    <strong style={{ ...fontStyleFor(designSystem.displayFont, 'display'), fontSize: 15 }}>{designSystem.name}</strong>
                     <span
                       style={{
-                        fontFamily: designSystem.monoFont,
+                        ...fontStyleFor(designSystem.monoFont, 'mono'),
                         fontSize: 10.5,
                         padding: '2px 8px',
                         borderRadius: radii.pill,
@@ -276,7 +278,7 @@ export function SystemMaker() {
                     </span>
                     <h2
                       style={{
-                        fontFamily: designSystem.displayFont,
+                        ...fontStyleFor(designSystem.displayFont, 'display'),
                         fontSize: typeScale[2].px,
                         lineHeight: typeScale[2].lineHeight,
                         letterSpacing: `${typeScale[2].trackingEm}em`,
@@ -300,7 +302,7 @@ export function SystemMaker() {
                         gap: 10,
                       }}
                     >
-                      <span style={{ fontFamily: designSystem.monoFont, fontSize: 11.5 }}>
+                      <span style={{ ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11.5 }}>
                         Ratio {designSystem.typeRatio} · Base {designSystem.baseSpacePx}px
                       </span>
                       <span
@@ -387,7 +389,7 @@ export function SystemMaker() {
             {viewTab === 'components' && (
               <div
                 className="ds-preview-frame"
-                style={{ background: cvdHex(semantic.canvas), color: cvdHex(semantic.ink), fontFamily: designSystem.bodyFont }}
+                style={{ background: cvdHex(semantic.canvas), color: cvdHex(semantic.ink), ...fontStyleFor(designSystem.bodyFont, 'body') }}
               >
                 <div style={{ display: 'grid', gap: 18 }}>
                   <div>
@@ -406,11 +408,14 @@ export function SystemMaker() {
                           borderBottom: `1px solid ${semantic.border}`,
                         }}
                       >
-                        <code style={{ fontFamily: designSystem.monoFont, fontSize: 11, color: cvdHex(semantic.brand) }}>{t.token}</code>
-                        <span style={{ fontFamily: designSystem.monoFont, fontSize: 11, color: cvdHex(semantic.muted) }}>{t.px}px</span>
+                        <code style={{ ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11, color: cvdHex(semantic.brand) }}>{t.token}</code>
+                        <span style={{ ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11, color: cvdHex(semantic.muted) }}>{t.px}px</span>
                         <span
                           style={{
-                            fontFamily: t.token === 'display' || t.token.startsWith('h') ? designSystem.displayFont : designSystem.bodyFont,
+                            ...fontStyleFor(
+                              t.token === 'display' || t.token.startsWith('h') ? designSystem.displayFont : designSystem.bodyFont,
+                              t.token === 'display' || t.token.startsWith('h') ? 'display' : 'body',
+                            ),
                             fontSize: Math.min(t.px, 44),
                             fontWeight: t.weight,
                             lineHeight: t.lineHeight,
@@ -433,10 +438,10 @@ export function SystemMaker() {
                     <div style={{ display: 'grid', gap: 6 }}>
                       {spacingScale.map((s) => (
                         <div key={s.token} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                          <code style={{ width: 64, fontFamily: designSystem.monoFont, fontSize: 11, color: cvdHex(semantic.muted) }}>
+                          <code style={{ width: 64, ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11, color: cvdHex(semantic.muted) }}>
                             space-{s.token}
                           </code>
-                          <span style={{ width: 46, fontFamily: designSystem.monoFont, fontSize: 11 }}>{s.px}px</span>
+                          <span style={{ width: 46, ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11 }}>{s.px}px</span>
                           <div style={{ height: 10, width: Math.max(4, s.px * 3), borderRadius: radii.sm, background: cvdHex(semantic.brand) }} />
                         </div>
                       ))}
@@ -697,9 +702,9 @@ export function SystemMaker() {
                 <DsSelect
                   variant="row"
                   ariaLabel="Display font"
-                  value={designSystem.displayFont}
+                  value={resolveFontOption(designSystem.displayFont, 'display').id}
                   onChange={(displayFont) => setDesignSystem({ displayFont })}
-                  options={FONT_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                  options={FONT_OPTIONS.map((f) => ({ value: f.id, label: f.label, meta: f.meta }))}
                 />
               </div>
               <div className="param-row">
@@ -707,9 +712,9 @@ export function SystemMaker() {
                 <DsSelect
                   variant="row"
                   ariaLabel="Body font"
-                  value={designSystem.bodyFont}
+                  value={resolveFontOption(designSystem.bodyFont, 'body').id}
                   onChange={(bodyFont) => setDesignSystem({ bodyFont })}
-                  options={FONT_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                  options={FONT_OPTIONS.map((f) => ({ value: f.id, label: f.label, meta: f.meta }))}
                 />
               </div>
               <div className="param-row">
@@ -717,9 +722,9 @@ export function SystemMaker() {
                 <DsSelect
                   variant="row"
                   ariaLabel="Mono font"
-                  value={designSystem.monoFont}
+                  value={resolveFontOption(designSystem.monoFont, 'mono').id}
                   onChange={(monoFont) => setDesignSystem({ monoFont })}
-                  options={MONO_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                  options={MONO_OPTIONS.map((f) => ({ value: f.id, label: f.label, meta: f.meta }))}
                 />
               </div>
               <div className="param-row">

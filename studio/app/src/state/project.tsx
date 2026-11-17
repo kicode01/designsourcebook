@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import {
   compileDesignSystem,
+  resolveFontOption,
   seedSystemFromCatalog,
   type CompiledSystem,
   type DesignSystemDoc,
@@ -103,9 +104,9 @@ const DEFAULT_SYSTEM: DesignSystemDoc = {
   accentHex: '#10b981',
   neutralTemp: -0.15,
   harmony: 'split',
-  displayFont: "'Inter', system-ui, sans-serif",
-  bodyFont: "'Inter', system-ui, sans-serif",
-  monoFont: "'JetBrains Mono', ui-monospace, monospace",
+  displayFont: 'allo-precision',
+  bodyFont: 'allo-balanced',
+  monoFont: 'allo-code',
   baseFontPx: 16,
   typeRatio: 1.25,
   baseSpacePx: 8,
@@ -162,7 +163,13 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed.designSystem?.primaryHex) return { ...DEFAULT_SYSTEM, ...parsed.designSystem };
+        if (parsed.designSystem?.primaryHex) {
+          const merged = { ...DEFAULT_SYSTEM, ...parsed.designSystem };
+          merged.displayFont = resolveFontOption(merged.displayFont, 'display').id;
+          merged.bodyFont = resolveFontOption(merged.bodyFont, 'body').id;
+          merged.monoFont = resolveFontOption(merged.monoFont, 'mono').id;
+          return merged;
+        }
       }
     } catch { /* ignore */ }
     return DEFAULT_SYSTEM;

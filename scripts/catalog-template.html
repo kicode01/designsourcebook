@@ -9,20 +9,22 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#09090B">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
 <style>
+  /*__ALLO_FONT_CSS__*/
   :root{
     --bg:#09090b; --panel:#101013; --panel2:#17171c;
     --line:rgba(255,255,255,.075); --line2:rgba(255,255,255,.15);
     --ink:#fafafa; --dim:#a1a1aa; --dim2:#71717a;
     --accent:#fafafa; --accent-fg:#09090b;
     --ok:#10b981; --warn:#f59e0b;
-    --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-    --display:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-    --mono:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-    --code:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,monospace;
+    --sans:'Allo',system-ui,-apple-system,sans-serif;
+    --display:'Allo',system-ui,-apple-system,sans-serif;
+    --mono:'Allo',system-ui,-apple-system,sans-serif;
+    --code:'Allo',system-ui,-apple-system,sans-serif;
+    --allo-body-rond:"ROND" 45;
+    --allo-display-rond:"ROND" 28;
+    --allo-mono-rond:"ROND" 36;
+    --allo-code-rond:"ROND" 22;
     --sys-radius:999px; --card-radius:12px;
     --header-bg:rgba(9,9,11,.84);
     --ease-out:cubic-bezier(.22,1,.36,1);
@@ -46,9 +48,11 @@
     html{scrollbar-color:color-mix(in srgb,color-mix(in srgb,var(--sb-accent,var(--ink)) 48%,var(--ink)) 30%,transparent) var(--bg)}
   }
   *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;transition:background-color var(--t-theme),color var(--t-theme)}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-optical-sizing:auto;font-variation-settings:var(--allo-body-rond);font-feature-settings:"calt" 1,"liga" 1;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;transition:background-color var(--t-theme),color var(--t-theme)}
   a{color:inherit;text-decoration:none}
   button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+  input,select,textarea,option{font:inherit;color:inherit}
+  button,input,select,textarea,option{font-variation-settings:inherit;font-feature-settings:inherit;font-optical-sizing:inherit}
 
   /* ---------- top progress loader & transitions ---------- */
   .top-loader{position:fixed;top:0;left:0;right:0;height:2px;z-index:60;pointer-events:none;opacity:0;transition:opacity .15s}
@@ -98,7 +102,7 @@
   .search input:focus{border-color:color-mix(in srgb,var(--ink) 24%,transparent);background:color-mix(in srgb,var(--ink) 6.5%,transparent)}
   .search input::placeholder{color:var(--dim2)}
   .search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--dim2);pointer-events:none}
-  .search kbd{position:absolute;right:9px;top:50%;transform:translateY(-50%);font:10px var(--mono);color:var(--dim2);background:color-mix(in srgb,var(--ink) 5%,transparent);border:1px solid var(--line);border-radius:4px;padding:1px 5px;pointer-events:none;transition:border-color var(--t-theme),color var(--t-theme),background-color var(--t-theme)}
+  .search kbd{position:absolute;right:9px;top:50%;transform:translateY(-50%);font-family:var(--code);font-size:10px;line-height:1.2;color:var(--dim2);background:color-mix(in srgb,var(--ink) 5%,transparent);border:1px solid var(--line);border-radius:4px;padding:1px 5px;pointer-events:none;transition:border-color var(--t-theme),color var(--t-theme),background-color var(--t-theme)}
 
   .seg{display:inline-flex;align-items:center;gap:2px;padding:3px;border-radius:999px;background:color-mix(in srgb,var(--ink) 3.5%,transparent);border:1px solid var(--line);transition:background-color var(--t-theme),border-color var(--t-theme)}
   .seg-right{margin-left:auto;display:flex;align-items:center;gap:2px}
@@ -422,6 +426,11 @@
   .ldb-finding.is-fail .ldb-finding-dot{background:#f43f5e}
   .ldb-scale-stage{padding:18px 14px;min-height:92px;display:flex;align-items:center;justify-content:center}
 
+  /* ---------- Design Sourcebook Allo customization ---------- */
+  .brand b,.meta h1,.card-top h2,.hero h1,.cov-sum b,.rk-title b,.ldb-insp-titles b,.mini-glyph,.mini-title,.detail-title,.type-demo.is-display{font-family:var(--display);font-optical-sizing:auto;font-variation-settings:var(--allo-display-rond);font-feature-settings:"calt" 1,"liga" 1,"case" 1}
+  .meta em,.vtag,.card-foot,.pager-btn,.rk-head,.rk-num,.rk-repo,.rk-stars,.rk-npm,.fw-ico,.meta-pill,.spec-cell small,.sec-h h2,.sec-h em,.comp-info,.sw div,.type-spec,.notes h4,.kind,.icon-name,.icon-sub,.ds-select-meta,.ds-select-opt-cnt,.ldb-insp-titles span,.ldb-spec-mini small,.ldb-spec-mini span,.ldb-insp-sec-h,.ldb-scale-card small,.ldb-swatch-btn,.rk-load-meta,.cov-src-top span,.ldb-stage-meta{font-variation-settings:var(--allo-mono-rond);font-feature-settings:"tnum" 1,"case" 1;font-variant-numeric:tabular-nums}
+  code,pre,kbd,.search kbd,.notes code,.cmd,.cmd code,.prompt-box pre,.ldb-code,.sw div span,.type-demo.is-code{font-family:var(--code);font-variation-settings:var(--allo-code-rond);font-feature-settings:"tnum" 1,"ss02" 1;font-variant-numeric:tabular-nums;font-variant-ligatures:no-contextual}
+
   @media (max-width:1120px){
     .bar{flex-wrap:wrap;gap:10px;padding:10px 16px}
     .search{order:3;max-width:none;flex-basis:100%;margin-left:0}
@@ -631,53 +640,8 @@ function stageBg(p,c){
 }
 
 /* ---------- type ---------- */
-const CSS_FONT_KW=new Set(['system-ui','-apple-system','blinkmacsystemfont','sans-serif','serif','monospace','ui-sans-serif','ui-serif','ui-monospace','cursive','fantasy','emoji','math','fangsong']);
-const FONT_ALIASES={
-  'redhatdisplay':["'Red Hat Display'"],
-  'redhattext':["'Red Hat Text'"],
-  'redhatmono':["'Red Hat Mono'"],
-  'red hat mono':["'Red Hat Mono'"],
-  'source sans pro web':["'Source Sans 3'","'Source Sans Pro'"],
-  'source sans pro':["'Source Sans 3'","'Source Sans Pro'"],
-  'merriweather web':["'Merriweather'"],
-  'ubuntu variable':["'Ubuntu'"],
-  'ibm plex sans variable':["'IBM Plex Sans'"],
-  'inter var experimental':["'Inter'"],
-  'inter var':["'Inter'"],
-  'inter variable':["'Inter'"],
-  'mona sans vf':["'Mona Sans'","'Plus Jakarta Sans'"],
-  'geistmono':["'Geist Mono'","'JetBrains Mono'"],
-  'jetbrains-mono':["'JetBrains Mono'"],
-  'ainobodyfont':["'Aino'"],
-  '72full':["'72'","'72full'"],
-  'apple-system':['-apple-system']
-};
-function fontStack(f){
-  const full=String(f||'system-ui').replace(/\s*!important\s*$/i,'').trim();
-  const s=full.toLowerCase();
-  if(!full||/^(var|theme|calc|clamp)\s*\(/i.test(full)) return "'Inter',system-ui,sans-serif";
-  const parts=full.split(',').map(p=>p.trim().replace(/["'<>\\]/g,'').replace(/\s+/g,' ').trim()).filter(Boolean);
-  const out=[];
-  const seen=new Set();
-  const add=tok=>{const k=tok.toLowerCase();if(!seen.has(k)){seen.add(k);out.push(tok);}};
-  for(const raw of parts){
-    const low=raw.toLowerCase();
-    if(/^(null|undefined|false|true|inherit|initial|unset|none|\d+(\.\d+)?(px|rem|em|%)?)$/i.test(raw)) continue;
-    if(FONT_ALIASES[low]){ FONT_ALIASES[low].forEach(add); continue; }
-    if(CSS_FONT_KW.has(low)){ add(low==='-apple-system'||low==='system-ui'||low.startsWith('ui-')||low.endsWith('serif')||low==='monospace'?low:raw); continue; }
-    add("'"+raw+"'");
-  }
-  let fb;
-  if(/serif/.test(s)&&!/sans/.test(s)) fb=["'Source Serif 4'",'Georgia','serif'];
-  else if(/mono|berkeley|plex mono|code|consolas|menlo|inconsolata|courier/.test(s)) fb=["'JetBrains Mono'",'ui-monospace','monospace'];
-  else if(/walsheim|roobert|circular|jakarta|rounded|gothic|cereal|averta|garnett|buenos/.test(s)) fb=["'Plus Jakarta Sans'","'Inter'",'system-ui','sans-serif'];
-  else if(/plex/.test(s)) fb=["'IBM Plex Sans'","'Inter'",'system-ui','sans-serif'];
-  else if(/geist/.test(s)) fb=["'Geist'","'Inter'",'system-ui','sans-serif'];
-  else if(/figtree/.test(s)) fb=["'Figtree'","'Inter'",'system-ui','sans-serif'];
-  else if(/sf pro|helvetica|apple/.test(s)) fb=['-apple-system',"'Helvetica Neue'","'Inter'",'sans-serif'];
-  else fb=['system-ui','-apple-system','sans-serif'];
-  fb.forEach(add);
-  return out.join(',');
+function fontStack(){
+  return "'Allo',system-ui,-apple-system,sans-serif";
 }
 function pxOf(t){
   if(!t) return 16;
@@ -1301,50 +1265,6 @@ function heroFor(p){
   '</div>';
 }
 
-/* ---------- on-demand font loader ---------- */
-const GF_ALLOW=new Set([
-  'Geist','IBM Plex Sans','IBM Plex Mono','Source Serif 4','Plus Jakarta Sans','JetBrains Mono',
-  'Roboto','Roboto Flex','Roboto Mono','Open Sans','Lato','Ubuntu','Public Sans',
-  'Source Sans 3','Source Code Pro','Red Hat Display','Red Hat Text','Red Hat Mono',
-  'Overpass','Titillium Web','Nunito','Nunito Sans','DM Sans','Poppins','Work Sans',
-  'Fira Sans','Fira Code','Space Grotesk','Space Mono','Manrope','Outfit','Figtree',
-  'Merriweather','Lora','PT Serif','Playfair Display','Libre Baskerville','Chakra Petch',
-  'Spline Sans Mono','Atkinson Hyperlegible','Anonymous Pro','Inconsolata','Noto Sans',
-  'Rubik','Montserrat','Cabin','Barlow','Mulish','Karla','Hind','Lexend','Sora','Bitter'
-]);
-const GF_LOADED=new Set(['Inter']);
-function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
-function ensureFontsFor(items){
-  const want=[];
-  (items||[]).forEach(d=>(d&&d.type||[]).forEach(t=>{
-    const st=fontStack(t.fontFamily);
-    st.split(',').forEach(part=>{
-      const clean=part.replace(/['"]/g,'').trim();
-      if(GF_ALLOW.has(clean)&&!GF_LOADED.has(clean)){
-        GF_LOADED.add(clean);
-        want.push(clean);
-      }
-    });
-  }));
-  if(!want.length) return null;
-  const waits=[];
-  for(let i=0;i<want.length;i+=10){
-    const batch=want.slice(i,i+10).map(n=>'family='+encodeURIComponent(n)+':wght@400;500;600;700').join('&');
-    const link=document.createElement('link');
-    link.rel='stylesheet';
-    link.href='https://fonts.googleapis.com/css2?'+batch+'&display=swap';
-    waits.push(new Promise(res=>{
-      link.onload=()=>res();
-      link.onerror=()=>res();
-    }));
-    document.head.appendChild(link);
-  }
-  return Promise.all(waits).then(()=>(document.fonts&&document.fonts.ready)||undefined).catch(()=>{});
-}
-function attachFontPrefetch(el,slug){
-  el.addEventListener('pointerenter',()=>{ const d=DATA.find(x=>x.slug===slug); if(d) ensureFontsFor([d]); },{once:true,passive:true});
-}
-
 const state={q:'',filter:'all',view:'systems',rkMode:'ds',page:1,pageSize:24,rkShown:24,rkStep:24};
 const grid=document.getElementById('grid');
 const pagerEl=document.getElementById('pager');
@@ -1426,7 +1346,7 @@ function card(d){
   if(d.provenance==='listed'){
     return '<article class="card listed" data-slug="'+esc(d.slug)+'">'+
       '<div class="stage" style="background:var(--panel2);display:flex;align-items:center;justify-content:center">'+
-        '<span style="font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim2)">not sourced</span></div>'+
+        '<span style="font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim2)">not sourced</span></div>'+
       '<div class="card-body"><div class="card-top"><h2>'+esc(d.name)+'</h2>'+
         '<span class="vtag warn">listed</span></div>'+
         '<p class="card-desc">'+esc(d.org)+'</p>'+
@@ -1441,7 +1361,7 @@ function card(d){
     '<div class="stage" style="background:'+safeCss(d.canvas)+'">'+stageFor(d)+'</div>'+
     '<div class="strip">'+strip.map(v=>'<i style="background:'+safeCss(v)+'"></i>').join('')+'</div>'+
     '<div class="card-body">'+
-      '<div class="card-top"><h2 style="font-family:'+fontStack(displayType(d).fontFamily)+'">'+esc(d.name)+'</h2>'+
+      '<div class="card-top"><h2>'+esc(d.name)+'</h2>'+
       '<span class="vtag '+(d.verified?'ok':'warn')+'">'+(d.verified?ICONS.check+'Verified':d.warnings+' warn')+'</span></div>'+
       '<p class="card-desc">'+esc(d.style)+'</p>'+
       '<div class="card-foot">'+
@@ -1463,14 +1383,12 @@ function renderIndex(){
   const startIdx=(state.page-1)*effSize;
   const endIdx=Math.min(total,startIdx+effSize);
   const visible=list.slice(startIdx,endIdx);
-  ensureFontsFor(visible);
   grid.innerHTML=visible.map(card).join('');
   pagerEl.innerHTML=buildPagerHtml(total,state.page,state.pageSize);
   bindPager(pagerEl);
   document.getElementById('count').textContent=total?(startIdx+1)+'\u2013'+endIdx+' of '+total:'0 of '+DATA.length;
   document.getElementById('empty').style.display=total?'none':'block';
   grid.querySelectorAll('.card').forEach(el=>{
-    attachFontPrefetch(el,el.dataset.slug);
     el.addEventListener('click',()=>{location.hash='#/'+el.dataset.slug});
   });
 }
@@ -1744,9 +1662,12 @@ function detailHtml(d){
 
   const types=d.type.map(t=>{
     const size=Math.min(pxOf(t),34);
+    const isMono=/mono|code|console|pre|courier|menlo|consolas/i.test((t.name||'')+' '+(t.fontFamily||''));
+    const isDisp=!isMono&&(pxOf(t)>=20||/display|heading|headline|title|hero|^h[1-6]\b/i.test(t.name||''));
+    const demoCls=isMono?'type-demo is-code':(isDisp?'type-demo is-display':'type-demo');
     return '<div class="type-row"><div class="type-spec"><b>'+esc(t.name)+'</b>'+
       (t.fontSize?pxOf(t)+'px ':'')+esc(t.fontWeight||'')+(t.lineHeight?' / '+esc(t.lineHeight):'')+'</div>'+
-      '<div class="type-demo" style="font-family:'+fontStack(t.fontFamily)+';font-size:'+size+'px;font-weight:'+
+      '<div class="'+demoCls+'" style="font-family:'+fontStack(t.fontFamily)+';font-size:'+size+'px;font-weight:'+
       safeCss(t.fontWeight||400)+';letter-spacing:'+safeCss(scaledTracking(t))+';line-height:1.2">The quick brown fox jumps over the lazy dog</div></div>';
   }).join('');
 
@@ -1846,7 +1767,7 @@ function detailHtml(d){
   return '<div class="detail-bar">'+
       '<div class="detail-nav">'+
         '<a class="pill-btn" href="#" data-back>'+ICONS.back+backLabel+'</a>'+
-        '<span style="font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.02em;margin-left:4px">'+esc(d.name)+'</span>'+
+        '<span class="detail-title" style="font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.02em;margin-left:4px">'+esc(d.name)+'</span>'+
         (d.org?'<span class="meta-pill">'+esc(d.org)+'</span>':'')+
         '<span class="meta-pill">'+esc(d.license)+'</span>'+
         (d.stars?'<span class="meta-pill">'+ICONS.star+fmtNum(d.stars)+'</span>':'')+
@@ -2021,15 +1942,7 @@ async function renderDetail(slug,immediate){
   const d=DATA.find(x=>x.slug===slug);
   if(!d){ location.hash=''; return; }
   hydrateSystemDetail(slug);
-  const tok=++navToken;
-  const fontWait=ensureFontsFor([d]);
-  let barOn=false;
-  if(fontWait&&!immediate){
-    const barT=setTimeout(()=>{ if(tok===navToken){ barOn=true; startLoader(); } },50);
-    await Promise.race([fontWait,sleep(95)]);
-    clearTimeout(barT);
-    if(tok!==navToken){ if(barOn) stopLoader(); return; }
-  }
+  ++navToken;
   const apply=()=>{
     applySystemTheme(d);
     index.style.display='none';
@@ -2041,9 +1954,8 @@ async function renderDetail(slug,immediate){
     bindDetailEvents(d);
     window.scrollTo(0,0);
   };
-  if(immediate){ apply(); if(barOn) stopLoader(); return; }
+  if(immediate){ apply(); return; }
   await runViewTransition('chameleon',apply,detail);
-  if(barOn) stopLoader();
 }
 
 function copy(text){
@@ -2096,7 +2008,6 @@ function renderRanking(){
   const shownCount=Math.max(state.rkStep||24,state.rkShown||24);
   const endIdx=Math.min(total,shownCount);
   const visible=list.slice(0,endIdx);
-  ensureFontsFor(visible);
 
   const rows=visible.map((d,i)=>{
     const org=d.org || (d.name.includes(' ') ? d.name.split(' ')[0] : d.slug);
@@ -2109,7 +2020,7 @@ function renderRanking(){
       '<div class="rk-num">#'+(i+1)+'</div>'+
       '<div class="rk-name">'+
         '<span class="rk-swatch" style="background:'+safeCss(d.brand)+';color:'+safeCss(swFg)+'">'+esc(init)+'</span>'+
-        '<div class="rk-title"><b style="font-family:'+fontStack(displayType(d).fontFamily)+'">'+esc(d.name)+'</b>'+
+        '<div class="rk-title"><b>'+esc(d.name)+'</b>'+
         '<span class="rk-repo">'+repoLink+'</span></div>'+
       '</div>'+
       '<div><span class="rk-org">'+esc(org)+'</span></div>'+
@@ -2181,7 +2092,6 @@ function renderRanking(){
   });
   rankingEl.querySelectorAll('.rk-row[data-slug]').forEach(el=>{
     const slug=el.dataset.slug;
-    attachFontPrefetch(el,slug);
     el.addEventListener('click',e=>{
       if(e.target.closest('a')) return;
       if(location.hash==='#/'+slug) renderDetail(slug,false);
@@ -2238,7 +2148,6 @@ function renderCoverage(){
     (miss.length?'<div class="cov-h">Unindexed \u2014 '+miss.length+'</div><div class="cov-list">'+miss.map(row).join('')+'</div>':'');
 
   coverageEl.querySelectorAll('[data-slug]').forEach(el=>{
-    attachFontPrefetch(el,el.dataset.slug);
     el.addEventListener('click',()=>{location.hash='#/'+el.dataset.slug});
   });
 }
@@ -3569,7 +3478,7 @@ function buildLogoDetailHtml(item,ctxOpt){
   return '<div class="detail-bar">'+
       '<div class="detail-nav">'+
         '<a class="pill-btn" href="#/logos" data-logo-back>'+ICONS.back+'Logos</a>'+
-        '<span style="font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.02em;margin-left:4px">'+esc(item.brand)+'</span>'+
+        '<span class="detail-title" style="font-family:var(--display);font-size:18px;font-weight:600;letter-spacing:-.02em;margin-left:4px">'+esc(item.brand)+'</span>'+
         '<span class="meta-pill">'+esc(item.markType||'mark')+'</span>'+
         '<span class="meta-pill">'+esc(item.industry||'general')+'</span>'+
         (item.exemplary?'<span class="meta-pill" style="color:var(--warn)">'+ICONS.star+' Study</span>':'')+
