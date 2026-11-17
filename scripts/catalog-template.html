@@ -157,6 +157,8 @@
 
   /* ---------- pagination ---------- */
   .pager{display:flex;justify-content:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--line);transition:border-color var(--t-theme)}
+  .rk-loadmore{align-items:center;gap:10px;flex-wrap:wrap}
+  .rk-load-meta{font-size:12px;color:var(--dim2);font-variant-numeric:tabular-nums;padding:0 4px}
   .pager-pages{display:inline-flex;align-items:center;gap:4px;padding:3px;border-radius:999px;background:color-mix(in srgb,var(--ink) 3%,transparent);border:1px solid var(--line);transition:background-color var(--t-theme),border-color var(--t-theme)}
   .pager-btn{min-width:30px;height:28px;padding:0 9px;border-radius:999px;color:var(--dim);font-size:11.5px;font-family:var(--mono);font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;justify-content:center;gap:4px;transition:color .12s ease-out,background-color .12s ease-out}
   .pager-btn svg{width:12px;height:12px}
@@ -1343,7 +1345,7 @@ function attachFontPrefetch(el,slug){
   el.addEventListener('pointerenter',()=>{ const d=DATA.find(x=>x.slug===slug); if(d) ensureFontsFor([d]); },{once:true,passive:true});
 }
 
-const state={q:'',filter:'all',view:'systems',rkMode:'ds',page:1,pageSize:24,rkPage:1,rkPageSize:24};
+const state={q:'',filter:'all',view:'systems',rkMode:'ds',page:1,pageSize:24,rkShown:24,rkStep:24};
 const grid=document.getElementById('grid');
 const pagerEl=document.getElementById('pager');
 const detail=document.getElementById('detail');
@@ -1378,24 +1380,18 @@ function buildPagerHtml(total,page,pageSize){
   '</div>';
 }
 
-function bindPager(container,isRanking){
+function bindPager(container){
   if(!container) return;
   container.querySelectorAll('[data-pg]').forEach(btn=>{
     btn.addEventListener('click',()=>{
       const p=Number(btn.dataset.pg);
       if(!Number.isFinite(p)||p<1) return;
-      const cur=isRanking?state.rkPage:state.page;
-      if(p===cur){
+      if(p===state.page){
         if(window.scrollY>40) window.scrollTo({top:0,behavior:'smooth'});
         return;
       }
-      if(isRanking){
-        state.rkPage=p;
-        runViewTransition('page',()=>{ window.scrollTo(0,0); renderRanking(); },rankingEl);
-      }else{
-        state.page=p;
-        runViewTransition('page',()=>{ window.scrollTo(0,0); renderIndex(); },grid);
-      }
+      state.page=p;
+      runViewTransition('page',()=>{ window.scrollTo(0,0); renderIndex(); },grid);
     });
   });
 }
@@ -1470,7 +1466,7 @@ function renderIndex(){
   ensureFontsFor(visible);
   grid.innerHTML=visible.map(card).join('');
   pagerEl.innerHTML=buildPagerHtml(total,state.page,state.pageSize);
-  bindPager(pagerEl,false);
+  bindPager(pagerEl);
   document.getElementById('count').textContent=total?(startIdx+1)+'\u2013'+endIdx+' of '+total:'0 of '+DATA.length;
   document.getElementById('empty').style.display=total?'none':'block';
   grid.querySelectorAll('.card').forEach(el=>{
@@ -2097,16 +2093,12 @@ function renderRanking(){
   else list.sort((a,b)=>(b.stars||0)-(a.stars||0)||(b.npmDownloads||0)-(a.npmDownloads||0));
 
   const total=list.length;
-  const effSize=state.rkPageSize||24;
-  const totalPages=Math.max(1,Math.ceil(total/effSize));
-  if(state.rkPage>totalPages) state.rkPage=1;
-  const startIdx=(state.rkPage-1)*effSize;
-  const endIdx=Math.min(total,startIdx+effSize);
-  const visible=list.slice(startIdx,endIdx);
+  const shownCount=Math.max(state.rkStep||24,state.rkShown||24);
+  const endIdx=Math.min(total,shownCount);
+  const visible=list.slice(0,endIdx);
   ensureFontsFor(visible);
 
-  const rows=visible.map((d,idx)=>{
-    const i=startIdx+idx;
+  const rows=visible.map((d,i)=>{
     const org=d.org || (d.name.includes(' ') ? d.name.split(' ')[0] : d.slug);
     const repoLink=d.repo
       ? '<a href="'+esc(d.repo)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+esc(shortRepo(d.repo))+ICONS.ext+'</a>'
@@ -2135,8 +2127,18 @@ function renderRanking(){
     seenPkgs.add(d.package);
     return a+d.npmDownloads;
   },0);
+  const remaining=Math.max(0,total-endIdx);
+  const nextStep=Math.min(state.rkStep||24,remaining);
+  const loadMoreHtml=remaining>0
+    ? '<div class="pager rk-loadmore">'+
+        '<button type="button" class="pill-btn primary" id="rkLoadMore">Load '+nextStep+' more</button>'+
+        (remaining>nextStep?'<button type="button" class="pill-btn" id="rkShowAll">Show all ('+total+')</button>':'')+
+        '<span class="rk-load-meta">'+endIdx+' of '+total+' shown</span>'+
+      '</div>'
+    : (total>(state.rkStep||24)?'<div class="pager rk-loadmore"><span class="rk-load-meta">All '+total+' ranked systems shown</span></div>':'');
+
   rankingEl.innerHTML=
-    '<div class="meta"><h1>Popularity Leaderboard</h1><em>'+(total?((startIdx+1)+'\u2013'+endIdx+' of '+total):'0')+'</em></div>'+
+    '<div class="meta"><h1>Popularity Leaderboard</h1><em>'+(total?('1\u2013'+endIdx+' of '+total):'0')+'</em></div>'+
     '<div class="cov-sum">'+
       '<div><b>'+withRepos+'</b>unique repositories</div>'+
       '<div><b>'+fmtNum(totalStars)+'</b>GitHub stars</div>'+
@@ -2155,14 +2157,25 @@ function renderRanking(){
       '<div class="rk-head"><span>#</span><span>System &amp; Repository</span><span>Organization</span><span>Stars</span><span>npm / mo</span><span>Frameworks</span></div>'+
       rows+
     '</div>'+
-    '<div id="rkPager">'+buildPagerHtml(total,state.rkPage,state.rkPageSize)+'</div>';
+    '<div id="rkPager">'+loadMoreHtml+'</div>';
 
-  bindPager(document.getElementById('rkPager'),true);
+  document.getElementById('rkLoadMore')?.addEventListener('click',()=>{
+    const prevY=window.scrollY;
+    state.rkShown=Math.min(total,(state.rkShown||24)+(state.rkStep||24));
+    renderRanking();
+    window.scrollTo({top:prevY,behavior:'instant'});
+  });
+  document.getElementById('rkShowAll')?.addEventListener('click',()=>{
+    const prevY=window.scrollY;
+    state.rkShown=total;
+    renderRanking();
+    window.scrollTo({top:prevY,behavior:'instant'});
+  });
   rankingEl.querySelectorAll('[data-rk]').forEach(btn=>{
     btn.addEventListener('click',()=>{
       if(state.rkMode===btn.dataset.rk) return;
       state.rkMode=btn.dataset.rk;
-      state.rkPage=1;
+      state.rkShown=state.rkStep||24;
       runViewTransition('tab',()=>renderRanking(),rankingEl);
     });
   });
@@ -3730,7 +3743,7 @@ document.getElementById('logosBtn').addEventListener('click',()=>navigateTab('lo
 document.getElementById('rankBtn').addEventListener('click',()=>navigateTab('ranking'));
 document.getElementById('viewBtn').addEventListener('click',()=>navigateTab('coverage'));
 document.getElementById('q').addEventListener('input',e=>{
-  state.q=e.target.value; state.page=1; state.rkPage=1;
+  state.q=e.target.value; state.page=1; state.rkShown=state.rkStep||24;
   if(state.view==='logos' || location.hash.startsWith('#/logos')){
     logoState.q=e.target.value; logoState.page=1; logoState.iconPage=1;
     if(location.hash!=='#/logos'){ location.hash='#/logos'; return; }
