@@ -100,6 +100,21 @@ const html = template
   .replace("/*__ICON_PACKS__*/ {}", packsJson);
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
+const webBrandDir = path.join(ROOT, "assets/brand/web");
+if (fs.existsSync(webBrandDir)) {
+  for (const file of [
+    "favicon.ico",
+    "favicon.svg",
+    "apple-touch-icon.png",
+    "icon-192.png",
+    "icon-512.png",
+    "maskable-512.png",
+    "site.webmanifest",
+  ]) {
+    const src = path.join(webBrandDir, file);
+    if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT_DIR, file));
+  }
+}
 const dest = path.join(OUT_DIR, "index.html");
 for (let i = 0; i < 8; i++) {
   try {

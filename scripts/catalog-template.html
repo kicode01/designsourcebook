@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Design Sourcebook</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#09090B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Geist:wght@300..700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300..700&family=Plus+Jakarta+Sans:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -65,8 +70,18 @@
   header.top{position:sticky;top:0;z-index:30;background:var(--header-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line);view-transition-name:topbar;transition:background-color var(--t-theme),border-color var(--t-theme),color var(--t-theme)}
   .bar{max-width:1360px;margin:0 auto;padding:11px 24px;display:flex;align-items:center;gap:14px}
   .brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;cursor:pointer;padding:4px 2px;transition:opacity .15s}
-  .brand:hover{opacity:.85}
-  .brand svg{width:17px;height:17px;color:var(--ink);flex:none}
+  .brand:hover{opacity:.92}
+  .brand svg{width:22px;height:22px;color:var(--ink);flex:none;overflow:visible;transition:transform .22s var(--ease-out)}
+  .brand:hover svg{transform:scale(1.06)}
+  .ds-slabs{animation:dsPrismShift 14s linear infinite;will-change:filter}
+  @keyframes dsPrismShift{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(360deg)}}
+  html.sys-active .ds-slabs{animation:none;filter:none}
+  .ds-s1{fill:url(#ds-g1);transition:fill var(--t-theme)}
+  .ds-s2{fill:url(#ds-g2);transition:fill var(--t-theme)}
+  .ds-s3{fill:url(#ds-g3);transition:fill var(--t-theme)}
+  html.sys-active .ds-s1{fill:var(--ds-c1,var(--accent))}
+  html.sys-active .ds-s2{fill:var(--ds-c2,var(--accent))}
+  html.sys-active .ds-s3{fill:var(--ds-c3,var(--accent))}
   .brand b{font-family:var(--display);font-size:14px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
 
   .search{flex:1;position:relative;max-width:340px;margin-left:6px}
@@ -291,9 +306,27 @@
 <header class="top">
   <div class="bar">
     <div class="brand" id="brandHome" title="Design Sourcebook">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-        <rect x="2" y="2" width="12" height="12" rx="3"/>
-        <path d="M2 6.5h12M6.5 6.5V14"/>
+      <svg class="ds-mark" viewBox="0 0 256 256" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="ds-g1" gradientUnits="userSpaceOnUse" x1="138" y1="67" x2="230" y2="43">
+            <stop offset="0%" stop-color="#FF3B5C"/>
+            <stop offset="100%" stop-color="#FF8A00"/>
+          </linearGradient>
+          <linearGradient id="ds-g2" gradientUnits="userSpaceOnUse" x1="138" y1="124" x2="230" y2="100">
+            <stop offset="0%" stop-color="#FACC15"/>
+            <stop offset="100%" stop-color="#10B981"/>
+          </linearGradient>
+          <linearGradient id="ds-g3" gradientUnits="userSpaceOnUse" x1="138" y1="181" x2="230" y2="157">
+            <stop offset="0%" stop-color="#0EA5E9"/>
+            <stop offset="100%" stop-color="#8B5CF6"/>
+          </linearGradient>
+        </defs>
+        <path class="ds-frame" fill="currentColor" fill-rule="evenodd" d="M 26 47.18 Q 26 42.68 30.35 43.84 L 113.65 66.17 Q 118 67.33 118 71.83 L 118 208.83 Q 118 213.33 113.65 212.17 L 30.35 189.84 Q 26 188.68 26 184.18 Z M 52.43 74.76 Q 50.5 74.24 50.5 76.24 L 50.5 168.24 Q 50.5 170.24 52.43 170.76 L 91.57 181.25 Q 93.5 181.77 93.5 179.77 L 93.5 87.77 Q 93.5 85.77 91.57 85.25 Z"/>
+        <g class="ds-slabs">
+          <path class="ds-s1" d="M 138 71.83 Q 138 67.33 142.35 66.17 L 225.65 43.84 Q 230 42.68 230 47.18 L 230 70.18 Q 230 74.68 225.65 75.84 L 142.35 98.17 Q 138 99.33 138 94.83 Z"/>
+          <path class="ds-s2" d="M 138 128.83 Q 138 124.33 142.35 123.17 L 225.65 100.84 Q 230 99.68 230 104.18 L 230 127.18 Q 230 131.68 225.65 132.84 L 142.35 155.17 Q 138 156.33 138 151.83 Z"/>
+          <path class="ds-s3" d="M 138 185.83 Q 138 181.33 142.35 180.17 L 225.65 157.84 Q 230 156.68 230 161.18 L 230 184.18 Q 230 188.68 225.65 189.84 L 142.35 212.17 Q 138 213.33 138 208.83 Z"/>
+        </g>
       </svg>
       <b>Design Sourcebook</b>
     </div>
@@ -1460,7 +1493,28 @@ function agentPromptFor(d){
 }
 
 /* ---------- theme chameleon ---------- */
-const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--sans','--display','--card-radius','--header-bg'];
+const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--sans','--display','--card-radius','--header-bg','--ds-c1','--ds-c2','--ds-c3'];
+function systemBrandSlabs(d,canvasCol,inkCol){
+  const candidates=[d.brand,...(d.palette||[]).map(p=>p.value)].filter(Boolean);
+  const picks=[];
+  const seen=new Set();
+  for(const raw of candidates){
+    const rgb=parseColor(raw);
+    if(!rgb) continue;
+    const key=rgb.slice(0,3).map(v=>Math.round(v)).join(',');
+    if(seen.has(key)) continue;
+    const cr=ratio(rgb,canvasCol);
+    if(cr<1.55) continue;
+    const spread=Math.max(rgb[0],rgb[1],rgb[2])-Math.min(rgb[0],rgb[1],rgb[2]);
+    picks.push({col:raw,score:spread+Math.min(cr,6)*6});
+    seen.add(key);
+  }
+  picks.sort((a,b)=>b.score-a.score);
+  const c1=(picks[0]&&picks[0].col)||readable(d.brand,canvasCol)||inkCol;
+  const c2=(picks[1]&&picks[1].col)||('color-mix(in srgb, '+c1+' 70%, '+inkCol+')');
+  const c3=(picks[2]&&picks[2].col)||('color-mix(in srgb, '+c1+' 42%, '+inkCol+')');
+  return [c1,c2,c3];
+}
 function applySystemTheme(d){
   if(!d||d.provenance==='listed'){ resetSystemTheme(); return; }
   const rootEl=document.documentElement;
@@ -1477,6 +1531,7 @@ function applySystemTheme(d){
   const cardRad=parseFloat(d.radius)>=20?'14px':(d.radius||'10px');
   const bFam=fontStack(bodyType(d).fontFamily);
   const dFam=fontStack(displayType(d).fontFamily);
+  const [ds1,ds2,ds3]=systemBrandSlabs(d,d.canvas,inkCol);
   rootEl.style.setProperty('--bg',d.canvas);
   rootEl.style.setProperty('--panel',panelCol);
   rootEl.style.setProperty('--panel2',panel2Col);
@@ -1491,6 +1546,9 @@ function applySystemTheme(d){
   rootEl.style.setProperty('--display',dFam);
   rootEl.style.setProperty('--card-radius',cardRad);
   rootEl.style.setProperty('--header-bg',alpha(d.canvas,0.86));
+  rootEl.style.setProperty('--ds-c1',ds1);
+  rootEl.style.setProperty('--ds-c2',ds2);
+  rootEl.style.setProperty('--ds-c3',ds3);
 }
 function resetSystemTheme(){
   const rootEl=document.documentElement;
