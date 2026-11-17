@@ -83,6 +83,7 @@ rounded:
 icons:
   library: Octicons
   package: "@primer/octicons-react"
+  pack: octicons
   style: solid
   grid: 16
   strokeWidth: 0

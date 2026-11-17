@@ -116,6 +116,7 @@ rounded:
 icons:
   library: Carbon Icons
   package: "@carbon/icons-react"
+  pack: carbon
   style: solid
   grid: 16
   strokeWidth: 0

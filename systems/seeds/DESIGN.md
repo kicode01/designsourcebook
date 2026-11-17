@@ -138,14 +138,15 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Seeds Icons
+  package: "@sproutsocial/seeds-icons"
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://seeds.sproutsocial.com"
 components:
   button-primary:
     backgroundColor: "#3876e3"

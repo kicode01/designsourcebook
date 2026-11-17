@@ -114,6 +114,7 @@ rounded:
 icons:
   library: Lucide / Chakra Icons
   package: lucide-react
+  pack: lucide
   style: outline
   grid: 24
   strokeWidth: 2

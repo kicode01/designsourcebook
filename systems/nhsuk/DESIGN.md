@@ -162,14 +162,15 @@ rounded:
   button: ".25rem"
   default: ".25rem"
 icons:
-  library: Inline System SVGs
-  package: null
+  library: NHS.UK Core SVGs
+  package: nhsuk-frontend
   style: solid
   grid: 24
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: npm
+  url: "https://service-manual.nhs.uk"
 components:
   tag:
     backgroundColor: "#0055a6"

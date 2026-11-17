@@ -75,14 +75,15 @@ rounded:
   nav: 0px
   default: 0px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.5
+  library: React95 Pixel Icons
+  package: "@react95/icons"
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: square
   strokeLinejoin: miter
-  source: derived
+  source: npm
+  url: "https://react95.github.io/React95/"
 components:
   button-primary:
     backgroundColor: "rgb(65,187,241)"

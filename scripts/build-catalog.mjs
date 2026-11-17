@@ -89,7 +89,15 @@ const covJson = JSON.stringify({
   .replace(/\u2028/g, "\\u2028")
   .replace(/\u2029/g, "\\u2029");
 
-const html = template.replace("/*__DATA__*/ []", json).replace("/*__COVERAGE__*/ {}", covJson);
+let iconPacks = {};
+const iconPacksPath = path.join(ROOT, "data/icon-packs.json");
+if (fs.existsSync(iconPacksPath)) iconPacks = JSON.parse(fs.readFileSync(iconPacksPath, "utf8"));
+const packsJson = JSON.stringify(iconPacks).replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+
+const html = template
+  .replace("/*__DATA__*/ []", json)
+  .replace("/*__COVERAGE__*/ {}", covJson)
+  .replace("/*__ICON_PACKS__*/ {}", packsJson);
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 const dest = path.join(OUT_DIR, "index.html");

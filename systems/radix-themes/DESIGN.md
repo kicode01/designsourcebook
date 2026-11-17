@@ -62,6 +62,7 @@ rounded:
 icons:
   library: Radix Icons
   package: "@radix-ui/react-icons"
+  pack: radix
   style: solid
   grid: 15
   strokeWidth: 0

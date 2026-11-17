@@ -64,14 +64,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Phosphor Icons
+  package: "@phosphor-icons/react"
+  pack: phosphor
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://phosphoricons.com"
 components:
   button-primary:
     backgroundColor: "#f6821f"

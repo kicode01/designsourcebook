@@ -127,6 +127,7 @@ rounded:
 icons:
   library: Phosphor Icons
   package: "@phosphor-icons/react"
+  pack: phosphor
   style: outline
   grid: 24
   strokeWidth: 1.5

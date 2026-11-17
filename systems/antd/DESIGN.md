@@ -116,12 +116,13 @@ rounded:
 icons:
   library: Ant Design Icons
   package: "@ant-design/icons"
-  style: outline
+  pack: antd
+  style: solid
   grid: 16
-  strokeWidth: 1.5
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: curated
+  source: npm
   url: "https://ant.design/components/icon"
 components:
   button-primary:

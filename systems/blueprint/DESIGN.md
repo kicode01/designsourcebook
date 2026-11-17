@@ -123,12 +123,13 @@ rounded:
 icons:
   library: Blueprint Icons
   package: "@blueprintjs/icons"
+  pack: blueprint
   style: solid
   grid: 16
   strokeWidth: 0
   strokeLinecap: square
   strokeLinejoin: miter
-  source: curated
+  source: npm
   url: "https://blueprintjs.com/docs/#icons"
 components:
   button-primary:

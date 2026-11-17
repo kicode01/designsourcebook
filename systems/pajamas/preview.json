@@ -875,14 +875,16 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "library": "GitLab SVGs",
+    "package": "@gitlab/svgs",
+    "pack": "gitlab",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "npm",
+    "url": "https://design.gitlab.com/product-foundations/iconography"
   },
   "overview": "**Pajamas** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fc6d26` brand accent.\n\nTypography centers cleanly on `GitLab Sans` (36px display down to 16px body), unified by `.25rem` base corner radius and stepped `#fff` -> `#f7f7f5` surface layering.\n\nMaintained by **Gitlab**. Source: published token package, repo https://github.com/gitlab-org/gitlab-ui, package `@gitlab/ui`, frameworks: vue, css. Inventory: **90** colors, **45** typography steps, and **31** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 31 component tokens with documented paddings: `.375rem .75rem`, `.75rem 1.25rem`, `9px 13px`, `8px 12px`, `2px`.\n- **Hierarchy**: Group controls cleanly within `#f7f7f5` cards; separate sibling sections using `#a5a3a3` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f7f7f5`) and `1px solid #a5a3a3` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fc6d26` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fc6d26` with `#f7f7f8` text (2.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `GitLab Sans` headings with `GitLab Sans` body copy using documented weights and scale steps.\n- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).\n- Separate containers via `#f7f7f5` surface shifts and `#a5a3a3` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

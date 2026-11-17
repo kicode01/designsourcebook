@@ -88,6 +88,7 @@ rounded:
 icons:
   library: Decathlon Vitamin Icons
   package: "@vtmn/icons"
+  pack: vitamin
   style: outline
   grid: 24
   strokeWidth: 1.5

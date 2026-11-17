@@ -248,14 +248,16 @@ rounded:
   button: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Material Icons
+  package: "@material-design-icons/svg"
+  pack: material
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://fonts.google.com/icons"
 components:
   card:
     textColor: "#4f4f4f"

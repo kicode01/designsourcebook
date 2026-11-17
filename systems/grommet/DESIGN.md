@@ -68,6 +68,7 @@ rounded:
 icons:
   library: Grommet Icons
   package: grommet-icons
+  pack: grommet
   style: outline
   grid: 24
   strokeWidth: 2

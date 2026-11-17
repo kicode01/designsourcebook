@@ -179,14 +179,15 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Mistica Icons
+  package: "@telefonica/mistica-icons"
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://mistica-web.vercel.app"
 components:
   button-primary:
     backgroundColor: "#0066ff"

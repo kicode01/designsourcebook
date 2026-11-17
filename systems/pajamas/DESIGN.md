@@ -216,14 +216,16 @@ rounded:
   input: ".25rem"
   default: ".25rem"
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: GitLab SVGs
+  package: "@gitlab/svgs"
+  pack: gitlab
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://design.gitlab.com/product-foundations/iconography"
 components:
   btn:
     backgroundColor: transparent

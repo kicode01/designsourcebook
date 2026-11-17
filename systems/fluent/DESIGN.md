@@ -62,12 +62,13 @@ rounded:
 icons:
   library: Fluent System Icons
   package: "@fluentui/react-icons"
+  pack: fluent
   style: outline
   grid: 20
   strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: curated
+  source: npm
   url: "https://fluent2.microsoft.design/iconography"
 components:
   button-primary:

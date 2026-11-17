@@ -238,6 +238,7 @@ rounded:
 icons:
   library: Material Icons
   package: "@mui/icons-material"
+  pack: material
   style: solid
   grid: 24
   strokeWidth: 0

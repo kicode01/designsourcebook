@@ -179,6 +179,7 @@ rounded:
 icons:
   library: Polaris Icons
   package: "@shopify/polaris-icons"
+  pack: polaris
   style: solid
   grid: 20
   strokeWidth: 0

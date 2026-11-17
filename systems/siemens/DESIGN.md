@@ -131,9 +131,10 @@ rounded:
 icons:
   library: Siemens iX Icons
   package: "@siemens/ix-icons"
-  style: outline
+  pack: siemens
+  style: solid
   grid: 24
-  strokeWidth: 1.5
+  strokeWidth: 0
   strokeLinecap: square
   strokeLinejoin: miter
   source: curated

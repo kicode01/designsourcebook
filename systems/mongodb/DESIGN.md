@@ -115,14 +115,15 @@ rounded:
   nav: 100px
   default: 100px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: LeafyGreen Icons
+  package: "@leafygreen-ui/icon"
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://mongodb.design"
 components:
   button-primary-green:
     backgroundColor: "#00684a"

@@ -106,14 +106,16 @@ rounded:
   nav: 5px
   default: 5px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Flight Icons
+  package: "@hashicorp/flight-icons"
+  pack: flight
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://helios.hashicorp.design/icons/library"
 components:
   button-primary-dark:
     backgroundColor: "#15181e"

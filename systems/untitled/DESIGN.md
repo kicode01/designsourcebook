@@ -84,6 +84,7 @@ rounded:
 icons:
   library: Untitled / Lucide Icons
   package: lucide-react
+  pack: lucide
   style: outline
   grid: 24
   strokeWidth: 2

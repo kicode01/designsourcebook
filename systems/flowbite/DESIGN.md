@@ -109,14 +109,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Flowbite Icons
+  package: flowbite-icons
+  pack: flowbite
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 2
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://flowbite.com/icons/"
 components:
   button-primary:
     backgroundColor: "#79b8ff"

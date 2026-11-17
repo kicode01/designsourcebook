@@ -60,6 +60,7 @@ rounded:
 icons:
   library: Heroicons
   package: "@heroicons/react"
+  pack: heroicons
   style: outline
   grid: 24
   strokeWidth: 1.5

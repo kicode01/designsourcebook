@@ -125,6 +125,7 @@ rounded:
 icons:
   library: Tabler Icons
   package: "@tabler/icons-react"
+  pack: tabler
   style: outline
   grid: 24
   strokeWidth: 2

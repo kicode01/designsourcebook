@@ -163,14 +163,16 @@ rounded:
   badge: 999px
   default: ".3125rem"
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Bootstrap Icons / SGDS
+  package: bootstrap-icons
+  pack: bootstrap
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: curated
+  url: "https://designsystem.tech.gov.sg"
 components:
   btn-close:
     textColor: "#98a2b3"

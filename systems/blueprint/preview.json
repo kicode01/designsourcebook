@@ -556,12 +556,13 @@
   "icons": {
     "library": "Blueprint Icons",
     "package": "@blueprintjs/icons",
+    "pack": "blueprint",
     "style": "solid",
     "grid": 16,
     "strokeWidth": 0,
     "strokeLinecap": "square",
     "strokeLinejoin": "miter",
-    "source": "curated",
+    "source": "npm",
     "url": "https://blueprintjs.com/docs/#icons"
   },
   "overview": "**Blueprint** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#FF9980` brand accent.\n\nTypography centers cleanly on `System UI` (18px display down to 14px body), unified by `3px` base corner radius and stepped `#ffffff` -> `#EDEFF2` surface layering.\n\nMaintained by **Palantir**. Source: published token package (https://github.com/palantir/blueprint), repo https://github.com/palantir/blueprint, package `@blueprintjs/core`, frameworks: react, css. Inventory: **91** colors, **8** typography steps, and **16** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#EDEFF2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#EDEFF2`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF9980` for keyboard focus and active selection states.",

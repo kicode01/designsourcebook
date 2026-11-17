@@ -71,14 +71,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Material Icons
+  package: "@material-ui/icons"
+  pack: material
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://backstage.io"
 components:
   button-primary:
     backgroundColor: "#1F5493"

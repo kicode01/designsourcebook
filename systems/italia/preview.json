@@ -488,14 +488,16 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "library": "Bootstrap Italia Icons",
+    "package": "bootstrap-italia",
+    "pack": "bootstrap",
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "npm",
+    "url": "https://italia.github.io/bootstrap-italia/"
   },
   "overview": "**Italia Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#333` primary ink (12.6:1 contrast) and `#06c` brand accent.\n\nDisplay headlines pair `Titillium Web` with `System Sans` body copy (179px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f5f5f0` surface layering.\n\nMaintained by **Italia**. Source: published token package (https://github.com/italia/design-web-toolkit), repo https://github.com/italia/bootstrap-italia, package `bootstrap-italia`, frameworks: css, react, angular. Inventory: **69** colors, **13** typography steps, and **15** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`, `8px 12px`.\n- **Hierarchy**: Group controls cleanly within `#f5f5f0` cards; separate sibling sections using `#aaa` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f5f0`) and `1px solid #aaa` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#06c` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#333` primary text and `#5a6772` secondary labels.\n- Use `#06c` with `#f7f7f8` text (5.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Titillium Web` headings with `System Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#f5f5f0` surface shifts and `#aaa` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

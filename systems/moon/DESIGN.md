@@ -74,14 +74,15 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Moon Icons
+  package: "@heathmont/moon-icons-tw"
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://moon.io"
 components:
   button-primary:
     backgroundColor: "#ffa7b2"

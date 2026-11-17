@@ -109,9 +109,10 @@ rounded:
 icons:
   library: Duet Icons
   package: "@duetds/icons"
-  style: outline
+  pack: duet
+  style: solid
   grid: 24
-  strokeWidth: 1.5
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
   source: curated

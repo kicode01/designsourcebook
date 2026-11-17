@@ -700,14 +700,16 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "library": "Bootstrap Icons / SGDS",
+    "package": "bootstrap-icons",
+    "pack": "bootstrap",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "curated",
+    "url": "https://designsystem.tech.gov.sg"
   },
   "overview": "**Singapore Government Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#5925dc` brand accent.\n\nTypography centers cleanly on `Inter` (32px display down to 16px body), unified by `.3125rem` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Singapore**. Source: published token package, repo https://github.com/GovTechSG/sgds, package `@govtechsg/sgds`, frameworks: web-components, react, css. Inventory: **91** colors, **29** typography steps, and **21** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `.25em`, `.4375rem 3rem .4375rem 1rem`, `.4375rem 1rem`, `10px 18px`, `18px 20px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#98a2b3` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid #98a2b3` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#5925dc` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#5925dc` with `#f7f7f8` text (7.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.\n- Apply `.3125rem` base geometry across inputs and buttons (6px on outer containers).\n- Separate containers via `#fff` surface shifts and `#98a2b3` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.3125rem` baseline.\n- Do not truncate or drop border contrast on `form-check-input-2` fields and secondary buttons."

@@ -257,14 +257,16 @@ rounded:
   nav: 20px
   default: 20px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Material Symbols
+  package: material-symbols
+  pack: material
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: curated
+  url: "https://fonts.google.com/icons"
 components:
   md3-segmented-button:
     backgroundColor: "rgba(0,0,0,0)"

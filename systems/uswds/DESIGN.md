@@ -208,6 +208,7 @@ rounded:
 icons:
   library: USWDS Icons
   package: "@uswds/uswds"
+  pack: material
   style: solid
   grid: 24
   strokeWidth: 0

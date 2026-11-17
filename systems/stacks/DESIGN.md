@@ -109,14 +109,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
+  library: Stacks Icons
+  package: "@stackoverflow/stacks-icons"
+  pack: stacks
+  style: solid
   grid: 20
-  strokeWidth: 1.75
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://stackoverflow.design/product/components/icons/"
 components:
   button-primary:
     backgroundColor: "#FF5E00"

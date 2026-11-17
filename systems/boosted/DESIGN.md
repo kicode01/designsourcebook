@@ -205,6 +205,7 @@ rounded:
 icons:
   library: Solaris / Bootstrap Icons
   package: bootstrap-icons
+  pack: bootstrap
   style: solid
   grid: 16
   strokeWidth: 0

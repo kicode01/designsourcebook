@@ -88,14 +88,15 @@ rounded:
   nav: 56px
   default: 56px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Coinbase CDS Icons
+  package: "@coinbase/cds-icons"
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://cds.coinbase.com"
 components:
   button-primary-pill:
     backgroundColor: "#eef0f3"

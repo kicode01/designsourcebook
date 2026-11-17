@@ -155,14 +155,15 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Welcome UI Icons
+  package: "@welcome-ui/icons"
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://www.welcome-ui.com"
 components:
   button-primary:
     backgroundColor: "#ffe166"

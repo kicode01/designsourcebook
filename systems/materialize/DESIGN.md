@@ -183,14 +183,16 @@ rounded:
   input: 4px
   default: 2px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Material Icons
+  package: material-design-icons
+  pack: material
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://materializecss.com/icons.html"
 components:
   btn:
     backgroundColor: "#26a69a"

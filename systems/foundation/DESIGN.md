@@ -57,14 +57,14 @@ rounded:
   nav: 4px
   default: "0"
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.5
-  strokeLinecap: square
-  strokeLinejoin: miter
-  source: derived
+  library: Foundation Icons
+  package: foundation-icons
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
 components:
   card:
     backgroundColor: "#fefefe"
