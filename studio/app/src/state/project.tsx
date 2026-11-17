@@ -28,11 +28,38 @@ export interface CatalogSystemSummary {
   icons?: { pack?: string; library?: string };
 }
 
+export interface IconGlyph {
+  slot?: string;
+  name: string;
+  viewBox?: string;
+  grid?: number;
+  fill?: string;
+  stroke?: string;
+  strokeWidth?: number | string;
+  strokeLinecap?: string;
+  strokeLinejoin?: string;
+  body?: string;
+  svg?: string;
+}
+
 export interface IconPackRecord {
   package: string;
   version: string;
   grid: number;
-  glyphs: { name: string; svg: string }[];
+  glyphs: IconGlyph[];
+}
+
+export function glyphToSvg(g: IconGlyph, packGrid = 24, color = '#fafafa'): string {
+  if (g.svg && g.svg.trim().startsWith('<svg')) return g.svg;
+  const vb = g.viewBox || `0 0 ${packGrid} ${packGrid}`;
+  const isNoneFill = g.fill === 'none';
+  const rootFill = isNoneFill ? 'none' : color;
+  const body = g.body || '';
+  const useStroke = Boolean(g.stroke) || (isNoneFill && !/\b(?:stroke|fill)=/i.test(body));
+  const strokeAttrs = useStroke
+    ? ` stroke="${color}" stroke-width="${g.strokeWidth || 1.75}" stroke-linecap="${g.strokeLinecap || 'round'}" stroke-linejoin="${g.strokeLinejoin || 'round'}"`
+    : '';
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="${vb}" fill="${rootFill}"${strokeAttrs}>${body}</svg>`;
 }
 
 export interface ActiveMark {

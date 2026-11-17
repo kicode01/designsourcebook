@@ -82,7 +82,14 @@ function download(blob: Blob, name: string) {
 function recolorSvg(svgText: string, inkHex: string): string {
   return svgText
     .replace(/currentColor/gi, inkHex)
-    .replace(/fill="#?(?:ffffff|fafafa|f4f4f5|000000|111111|111113)"/gi, `fill="${inkHex}"`);
+    .replace(/fill="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `fill="${inkHex}"`);
+}
+
+function fitSvg(svgText: string, inkHex: string): string {
+  const colored = recolorSvg(svgText, inkHex);
+  return colored
+    .replace(/\swidth="[^"]*"/i, ' width="100%"')
+    .replace(/\sheight="[^"]*"/i, ' height="100%"');
 }
 
 function loadImage(src: string): Promise<HTMLImageElement> {
@@ -121,9 +128,9 @@ function TileBody({
       return (
         <div
           className="bx-mark"
-          style={{ width: 72, height: 72, color: brand.accent }}
+          style={{ width: 72, height: 72, overflow: 'hidden', color: brand.accent }}
           dangerouslySetInnerHTML={{
-            __html: recolorSvg(markSvg, brand.accent).replace(/width="[^"]*" height="[^"]*"/, 'width="72" height="72"'),
+            __html: fitSvg(markSvg, brand.accent),
           }}
         />
       );
@@ -162,50 +169,53 @@ function TileBody({
       }
       return <div className="bx-pattern" style={{ backgroundImage: bg, backgroundSize: bgSize }} />;
     }
-    case 'appicon':
+    case 'appicon': {
+      const onAccent = wcagContrast('#09090b', brand.accent) > 4 ? '#09090b' : '#ffffff';
       return (
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 12 }}>
           <div
             style={{
-              width: 60,
-              height: 60,
-              borderRadius: 15,
+              width: 58,
+              height: 58,
+              borderRadius: 14,
               background: brand.accent,
               display: 'grid',
               placeItems: 'center',
               padding: 12,
+              overflow: 'hidden',
             }}
-            dangerouslySetInnerHTML={{
-              __html: recolorSvg(markSvg, wcagContrast('#09090b', brand.accent) > 4 ? '#09090b' : '#ffffff'),
-            }}
+            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, onAccent) }}
           />
           <div
             style={{
-              width: 32,
-              height: 32,
+              width: 34,
+              height: 34,
               borderRadius: 8,
               background: brand.background,
               border: `1px solid ${brand.ink}28`,
               display: 'grid',
               placeItems: 'center',
               padding: 6,
+              overflow: 'hidden',
             }}
-            dangerouslySetInnerHTML={{ __html: recolorSvg(markSvg, brand.ink) }}
+            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, brand.ink) }}
           />
           <div
             style={{
-              width: 18,
-              height: 18,
-              borderRadius: 4,
+              width: 20,
+              height: 20,
+              borderRadius: 5,
               background: brand.ink,
               display: 'grid',
               placeItems: 'center',
               padding: 3,
+              overflow: 'hidden',
             }}
-            dangerouslySetInnerHTML={{ __html: recolorSvg(markSvg, brand.background) }}
+            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, brand.background) }}
           />
         </div>
       );
+    }
     case 'ui':
       return (
         <div style={{ display: 'grid', gap: 8, width: '100%' }}>

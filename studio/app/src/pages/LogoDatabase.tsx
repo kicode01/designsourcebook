@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
 import { parseSvgAnatomy, type SvgAnatomy } from '../engine/svgAnatomy';
-import { useProject } from '../state/project';
+import { glyphToSvg, useProject } from '../state/project';
 
 interface LogoRecord {
   id: string;
@@ -109,13 +109,18 @@ export function LogoDatabase() {
   );
 
   const packEntries = useMemo(() => {
-    const out: { packId: string; name: string; svg: string }[] = [];
+    const out: { packId: string; grid: number; name: string; svg: string }[] = [];
     const nq = iconQuery.trim().toLowerCase();
     for (const [packId, pk] of Object.entries(iconPacks)) {
       if (packFilter !== 'all' && packId !== packFilter) continue;
       for (const g of pk.glyphs || []) {
         if (nq && !g.name.toLowerCase().includes(nq) && !packId.toLowerCase().includes(nq)) continue;
-        out.push({ packId, name: g.name, svg: g.svg });
+        out.push({
+          packId,
+          grid: pk.grid || 24,
+          name: g.name,
+          svg: glyphToSvg(g, pk.grid || 24, '#fafafa'),
+        });
       }
     }
     return out.slice(0, 180);
@@ -314,11 +319,41 @@ export function LogoDatabase() {
 
                 <div className="ldb-grid">
                   {packEntries.map((item) => (
-                    <div key={`${item.packId}-${item.name}`} className="ldb-card">
+                    <div
+                      key={`${item.packId}-${item.name}`}
+                      className="ldb-card"
+                      style={{ cursor: 'pointer' }}
+                      onClick={() =>
+                        setSelectedLogo({
+                          id: `${item.packId}-${item.name}`,
+                          brand: `${item.packId} / ${item.name}`,
+                          variant: 'icon',
+                          width: item.grid,
+                          height: item.grid,
+                          aspect: 1,
+                          aspectClass: 'square',
+                          shapes: 1,
+                          anchors: 0,
+                          colors: ['#fafafa'],
+                          nColors: 1,
+                          primaryFamily: 'mono',
+                          markType: 'pictorial',
+                          subject: item.name,
+                          geometry: ['grid-modular'],
+                          techniques: ['line-monoline'],
+                          industry: 'design-creative',
+                          exemplary: true,
+                          note: `Official ${item.grid}×${item.grid}px grid glyph from ${item.packId}.`,
+                          svg: item.svg,
+                        })
+                      }
+                    >
                       <div
                         className="ldb-stage is-dark"
                         style={{ color: '#fafafa' }}
-                        dangerouslySetInnerHTML={{ __html: item.svg }}
+                        dangerouslySetInnerHTML={{
+                          __html: item.svg.replace(/width="256" height="256"/, 'width="48" height="48"'),
+                        }}
                       />
                       <div className="ldb-card-head">
                         <strong>{item.name}</strong>
@@ -329,7 +364,10 @@ export function LogoDatabase() {
                           type="button"
                           className="ds-action-btn"
                           style={{ flex: 1, justifyContent: 'center' }}
-                          onClick={() => sendToLogoFX(`${item.packId}-${item.name}`, item.svg, 'iconpack')}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            sendToLogoFX(`${item.packId}-${item.name}`, item.svg, 'iconpack');
+                          }}
                         >
                           Open in LogoFX
                         </button>

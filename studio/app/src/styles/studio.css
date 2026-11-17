@@ -241,22 +241,26 @@
   gap: 2px;
   background: var(--studio-toolbar-control);
   border-radius: 999px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
-.toolbar-pill.is-plain { padding: 0 16px; gap: 8px; }
+.toolbar-pill.is-plain { padding: 0 12px; gap: 4px; }
 
 .toolbar-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   min-width: 34px;
   height: 34px;
-  padding: 0 8px;
+  padding: 0 10px;
   border-radius: 999px;
   color: var(--studio-ink);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: background 0.15s, color 0.15s;
 }
 
@@ -298,6 +302,8 @@
   background: var(--primary);
   color: var(--primary-fg);
   overflow: hidden;
+  flex-shrink: 0;
+  white-space: nowrap;
   border: 1px solid var(--studio-panel-border-strong);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
 }
@@ -309,6 +315,7 @@
   height: 100%;
   font-size: 12.5px;
   font-weight: 600;
+  white-space: nowrap;
   color: var(--primary-fg);
   transition: opacity 0.15s;
 }

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Icon } from './icons';
-import { CURATED_MARKS, useProject, type ActiveMark } from '../state/project';
+import { CURATED_MARKS, glyphToSvg, useProject, type ActiveMark } from '../state/project';
 
 export type ExportFormat = 'png' | 'webm';
 
@@ -113,7 +113,7 @@ export function MarkPickerDialog({
       if (packId !== 'all' && pid !== packId) continue;
       for (const g of pk.glyphs || []) {
         if (nq && !g.name.toLowerCase().includes(nq) && !pid.toLowerCase().includes(nq)) continue;
-        out.push({ pack: pid, name: g.name, svg: g.svg });
+        out.push({ pack: pid, name: g.name, svg: glyphToSvg(g, pk.grid || 24, '#fafafa') });
       }
     }
     return out.slice(0, 72);
