@@ -44,14 +44,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Artsy Palette Icons
+  library: Artsy Icons
   package: "@artsy/icons"
-  style: outline
-  grid: 24
-  strokeWidth: 1.5
+  pack: artsy
+  style: solid
+  grid: 18
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
   source: npm
+  url: "https://palette.artsy.net"
 components:
   button-primary:
     backgroundColor: "#1023D7"

@@ -164,6 +164,7 @@ rounded:
 icons:
   library: NHS.UK Core SVGs
   package: nhsuk-frontend
+  pack: nhsuk
   style: solid
   grid: 24
   strokeWidth: 0

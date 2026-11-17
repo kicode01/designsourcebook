@@ -66,13 +66,14 @@ rounded:
 icons:
   library: Vaadin Lumo Icons
   package: "@vaadin/icons"
-  style: outline
-  grid: 24
-  strokeWidth: 1.5
+  pack: vaadin
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
   source: npm
-  url: "https://vaadin.com/icons"
+  url: "https://vaadin.com/components"
 components:
   button-primary:
     backgroundColor: "hsl(214, 90%, 48%)"

@@ -77,14 +77,14 @@ rounded:
   nav: 50px
   default: 50px
 icons:
-  library: Inline System SVGs
+  library: Figma Repo SVGs
   package: null
   style: outline
-  grid: 24
-  strokeWidth: 0.13
+  grid: 32
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: repo
 components:
   button-black-solid:
     backgroundColor: "#000000"

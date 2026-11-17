@@ -79,7 +79,7 @@ icons:
   library: Inline System SVGs
   package: null
   style: solid
-  grid: 12
+  grid: 20
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round

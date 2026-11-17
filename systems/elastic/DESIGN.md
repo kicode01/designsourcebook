@@ -124,6 +124,7 @@ rounded:
 icons:
   library: Elastic EUI Icons
   package: "@elastic/eui"
+  pack: elastic
   style: outline
   grid: 16
   strokeWidth: 1.5

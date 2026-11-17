@@ -380,6 +380,7 @@ rounded:
 icons:
   library: SLDS Icons
   package: "@salesforce-ux/design-system"
+  pack: salesforce
   style: solid
   grid: 24
   strokeWidth: 0

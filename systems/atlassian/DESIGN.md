@@ -131,6 +131,7 @@ rounded:
 icons:
   library: Atlassian Icons
   package: "@atlaskit/icon"
+  pack: atlassian
   style: outline
   grid: 16
   strokeWidth: 1.5

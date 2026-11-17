@@ -130,14 +130,15 @@ rounded:
   nav: 2px
   default: 2px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Font Awesome
+  package: "@fortawesome/fontawesome-free"
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: observed
+  url: "https://fontawesome.com"
 components:
   button-primary:
     textColor: "#000000"

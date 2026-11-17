@@ -412,14 +412,14 @@ rounded:
   badge: 999px
   default: 3px
 icons:
-  library: Inline System SVGs
+  library: Intuit Harmony Repo SVGs
   package: null
   style: solid
   grid: 24
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: repo
 components:
   elementor-price-table:
     backgroundColor: "#000"

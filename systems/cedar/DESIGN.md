@@ -84,14 +84,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Cedar Icons
+  package: "@rei/cedar"
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 0.75
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
 components:
   button-primary:
     backgroundColor: "#454441"

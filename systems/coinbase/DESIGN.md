@@ -90,6 +90,7 @@ rounded:
 icons:
   library: Coinbase CDS Icons
   package: "@coinbase/cds-icons"
+  pack: coinbase
   style: solid
   grid: 24
   strokeWidth: 0

@@ -195,14 +195,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
+  library: Korea Design System Repo SVGs
   package: null
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.6
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: repo
 components:
   btn-help-panel:
     backgroundColor: "#ffffff"

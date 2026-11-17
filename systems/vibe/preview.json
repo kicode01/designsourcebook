@@ -605,8 +605,28 @@
     "strokeWidth": 1.5,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "curated",
-    "url": "https://vibe.monday.com"
+    "source": "repo",
+    "url": "https://vibe.monday.com",
+    "samples": [
+      {
+        "name": "add",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path d=\"M10 2.25C10.4142 2.25 10.75 2.58579 10.75 3V9.25H17C17.4142 9.25 17.75 9.58579 17.75 10C17.75 10.4142 17.4142 10.75 17 10.75H10.75V17C10.75 17.4142 10.4142 17.75 10 17.75C9.58579 17.75 9.25 17.4142 9.25 17V10.75H3C2.58579 10.75 2.25 10.4142 2.25 10C2.25 9.58579 2.58579 9.25 3 9.25H9.25V3C9.25 2.58579 9.58579 2.25 10 2.25Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "addsmall",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path d=\"M10.75 6C10.75 5.58579 10.4142 5.25 10 5.25C9.58579 5.25 9.25 5.58579 9.25 6V9.25H6C5.58579 9.25 5.25 9.58579 5.25 10C5.25 10.4142 5.58579 10.75 6 10.75H9.25V14C9.25 14.4142 9.58579 14.75 10 14.75C10.4142 14.75 10.75 14.4142 10.75 14V10.75H14C14.4142 10.75 14.75 10.4142 14.75 10C14.75 9.58579 14.4142 9.25 14 9.25H10.75V6Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "check",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path d=\"M8.53033 14.2478L8 13.7175L7.46967 14.2478C7.76256 14.5407 8.23744 14.5407 8.53033 14.2478ZM8 12.6569L4.53033 9.18718C4.23744 8.89429 3.76256 8.89429 3.46967 9.18718C3.17678 9.48008 3.17678 9.95495 3.46967 10.2478L7.46967 14.2478L8 13.7175L8.53033 14.2478L16.2478 6.53033C16.5407 6.23743 16.5407 5.76256 16.2478 5.46967C15.955 5.17677 15.4801 5.17677 15.1872 5.46967L8 12.6569Z\" fill=\"currentColor\"/>"
+      }
+    ]
   },
   "overview": "**Vibe** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0073ea` brand accent.\n\nTypography centers cleanly on `Figtree` (40px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#eceff8` surface layering.\n\nSource: published token package (https://github.com/mondaycom/vibe), repo https://github.com/mondaycom/vibe, package `@vibe/core`, frameworks: react, css. Inventory: **91** colors, **16** typography steps, and **16** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#eceff8` cards; separate sibling sections using `#f5f6f8` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#eceff8`) and `1px solid #f5f6f8` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0073ea` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0073ea` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Figtree` headings with `Figtree` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#eceff8` surface shifts and `#f5f6f8` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

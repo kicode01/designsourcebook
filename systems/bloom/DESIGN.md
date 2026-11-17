@@ -52,14 +52,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
+  library: Appear Here Styleguide Repo SVGs
   package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: repo
 components:
   button-primary:
     backgroundColor: "rgb(234, 155, 82)"

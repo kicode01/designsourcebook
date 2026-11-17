@@ -117,14 +117,16 @@ rounded:
   badge: 999px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
+  library: Salesforce SLDS Icons
+  package: "@salesforce-ux/design-system"
+  pack: salesforce
+  style: solid
   grid: 20
-  strokeWidth: 1.75
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: curated
+  url: "https://design.herokai.com"
 components:
   navy:
     textColor: "#001b44"

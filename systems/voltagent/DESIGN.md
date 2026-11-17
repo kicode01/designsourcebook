@@ -120,14 +120,14 @@ rounded:
   nav: 6px
   default: 6px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
+  library: VoltAgent Repo SVGs
+  package: "@voltagent/core"
+  style: solid
   grid: 24
-  strokeWidth: 1.5
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: repo
 components:
   button-ghost-outline:
     textColor: "#ffffff"

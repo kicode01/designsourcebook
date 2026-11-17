@@ -143,14 +143,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: eBay Evo Icons
+  package: "@ebay/skin"
+  pack: ebay
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 16
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://opensource.ebay.com/skin/"
 components:
   button-primary:
     backgroundColor: "#e20020"

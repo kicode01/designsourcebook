@@ -477,14 +477,14 @@ rounded:
   input: 0.5rem
   default: 0.5rem
 icons:
-  library: Inline System SVGs
-  package: null
+  library: "Liferay Lexicon (Clay) Icons"
+  package: "@clayui/css"
   style: solid
-  grid: 24
+  grid: 16
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: npm
 components:
   btn:
     backgroundColor: transparent

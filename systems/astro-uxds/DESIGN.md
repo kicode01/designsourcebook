@@ -296,14 +296,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Astro UXDS Icons
+  package: "@astrouxds/astro-web-components"
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
 components:
   button-primary:
     backgroundColor: "#2dccff"

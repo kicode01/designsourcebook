@@ -771,14 +771,58 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
+    "library": "Korea Design System Repo SVGs",
     "package": null,
     "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "grid": 24,
+    "strokeWidth": 1.6,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "repo",
+    "samples": [
+      {
+        "name": "ico-checkbox",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "body": "<path d=\"M2.66797 7.99984L7.51007 12.6665L14.0013 2.6665\" stroke=\"#8A949E\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+      },
+      {
+        "name": "ico-bread-home",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M3 10.5L12 3L21 10.5V19.5C21 20.3284 20.3284 21 19.5 21H14.25V16.5C14.25 15.6716 13.5784 15 12.75 15H11.25C10.4216 15 9.75 15.6716 9.75 16.5V21H4.5C3.67157 21 3 20.3284 3 19.5V10.5Z\" fill=\"#2D2D2D\"/>"
+      },
+      {
+        "name": "ico-plus",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M12.7992 4.5002C12.7992 4.05837 12.441 3.7002 11.9992 3.7002C11.5574 3.7002 11.1992 4.05837 11.1992 4.5002V11.2002L4.49922 11.2002C4.05739 11.2002 3.69922 11.5584 3.69922 12.0002C3.69922 12.442 4.05739 12.8002 4.49922 12.8002L11.1992 12.8002V19.5002C11.1992 19.942 11.5574 20.3002 11.9992 20.3002C12.441 20.3002 12.7992 19.942 12.7992 19.5002V12.8002L19.4992 12.8002C19.941 12.8002 20.2992 12.442 20.2992 12.0002C20.2992 11.5584 19.941 11.2002 19.4992 11.2002L12.7992 11.2002V4.5002Z\" fill=\"#2D2D2D\"/>"
+      },
+      {
+        "name": "ico-urgent-badge-info",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<rect x=\"0.8\" y=\"-0.8\" width=\"18.4\" height=\"18.4\" rx=\"9.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><rect x=\"11.3008\" y=\"10.4297\" width=\"1.8\" height=\"5.6\" fill=\"currentColor\"/><rect x=\"10.1992\" y=\"10.4297\" width=\"2\" height=\"1.2\" fill=\"currentColor\"/><rect x=\"10\" y=\"15.5938\" width=\"4\" height=\"1.2\" fill=\"currentColor\"/><circle cx=\"11.8992\" cy=\"8.23906\" r=\"1.2\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "ico-checkbox-checked",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "body": "<path d=\"M2.66797 7.99984L7.51007 12.6665L14.0013 2.6665\" stroke=\"#256EF4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
+      },
+      {
+        "name": "ico-information",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M3.6 12C3.6 7.36081 7.36081 3.6 12 3.6C16.6392 3.6 20.4 7.36081 20.4 12C20.4 16.6392 16.6392 20.4 12 20.4C7.36081 20.4 3.6 16.6392 3.6 12ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM13 7.59375V13.5938H11V7.59375H13ZM13 17.0938V15.0938H11V17.0938H13Z\" fill=\"#303336\"/>"
+      },
+      {
+        "name": "ico-information-fill",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<rect width=\"20\" height=\"20\" rx=\"10\" fill=\"currentColor\"/><path d=\"M11.8992 9.44102C12.562 9.44102 13.0992 8.90376 13.0992 8.24102C13.0992 7.57827 12.562 7.04102 11.8992 7.04102C11.2365 7.04102 10.6992 7.57827 10.6992 8.24102C10.6992 8.90376 11.2365 9.44102 11.8992 9.44102ZM11.3008 10.4312H10.1992V11.6312H11.3008V15.5938H10V16.7937H14V15.5938H13.1008V10.4312H12.1992H11.3008Z\" fill=\"currentColor\"/>"
+      }
+    ]
   },
   "overview": "**Korea Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#256ef4` brand accent.\n\nTypography centers cleanly on `System UI` (96px display down to 21px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#ecf2fe` surface layering.\n\nMaintained by **Korea**. Source: published token package (https://github.com/KRDS-uiux/krds-uiux), repo https://github.com/KRDS-uiux/krds-uiux, frameworks: css. Inventory: **91** colors, **46** typography steps, and **15** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#ecf2fe` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ecf2fe`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#256ef4` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#256ef4` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#ecf2fe` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

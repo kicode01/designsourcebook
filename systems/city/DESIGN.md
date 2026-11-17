@@ -72,14 +72,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
+  library: City of Boston Fleet Repo SVGs
   package: null
   style: outline
-  grid: 20
-  strokeWidth: 1.75
+  grid: 24
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: repo
 components:
   btn-link-styled:
     backgroundColor: transparent

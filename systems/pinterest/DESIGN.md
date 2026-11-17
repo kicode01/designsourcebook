@@ -65,14 +65,14 @@ rounded:
   nav: 24px
   default: 24px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Pinterest Icons
+  package: gestalt
   style: solid
   grid: 24
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: npm
 components:
   button-primary-red:
     backgroundColor: "#e60023"

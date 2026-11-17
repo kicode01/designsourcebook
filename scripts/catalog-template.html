@@ -897,17 +897,29 @@ function renderIconSpecimen(p,c){
   const m=compPlate(p,c);
   const spec=iconSpecOf(p);
   const accentCol=readable(p.brand,m.plate);
-  const glyphs=[
-    pickGlyph(spec,'home',0),
-    pickGlyph(spec,'search',1),
-    pickGlyph(spec,'settings',7),
-    pickGlyph(spec,'bell',8)
-  ];
-  return '<div style="display:inline-flex;align-items:center;gap:8px">'+
-    glyphs.map((g,i)=>
-      '<span style="width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;background:'+safeCss(m.bg)+';border:'+safeCss(m.border)+';border-radius:'+safeCss(m.rad)+';color:'+safeCss(i===2?accentCol:m.fg)+'">'+
-      buildSysSvg(spec,g,16,i===2?accentCol:m.fg)+'</span>'
-    ).join('')+'</div>';
+  const officialPack=spec.pack&&ICON_PACKS[spec.pack];
+  let tiles=[];
+  if(officialPack&&officialPack.glyphs&&officialPack.glyphs.length){
+    tiles=[pickGlyph(spec,'home',0),pickGlyph(spec,'search',1),pickGlyph(spec,'settings',7),pickGlyph(spec,'bell',8)]
+      .filter(Boolean)
+      .map((g,i)=>({svg:buildSysSvg(spec,g,16,i===2?accentCol:m.fg),color:i===2?accentCol:m.fg}));
+  }else if(spec.samples&&spec.samples.length){
+    tiles=spec.samples.slice(0,4)
+      .map((s,i)=>({svg:buildSysSvg(spec,s,16,i===2?accentCol:m.fg),color:i===2?accentCol:m.fg}));
+  }
+  if(tiles.length){
+    return '<div style="display:inline-flex;align-items:center;gap:8px">'+
+      tiles.map(t=>
+        '<span style="width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;background:'+safeCss(m.bg)+';border:'+safeCss(m.border)+';border-radius:'+safeCss(m.rad)+';color:'+safeCss(t.color)+'">'+
+        t.svg+'</span>'
+      ).join('')+'</div>';
+  }
+  const sz=(spec.grid||24)+'px';
+  const strokeNote=spec.style==='solid'?'Solid':(spec.strokeWidth||1.5)+'px';
+  return '<div style="display:inline-flex;align-items:center;gap:10px;padding:7px 11px;background:'+safeCss(m.bg)+';border:'+safeCss(m.border)+';border-radius:'+safeCss(m.rad)+';font-family:'+fontStack(m.t.fontFamily)+'">'+
+    '<span style="width:26px;height:26px;border-radius:'+safeCss(thumbRadius(p.radius,8))+';border:'+(spec.style==='solid'?'2px solid ':'1.5px dashed ')+safeCss(accentCol)+';display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;color:'+safeCss(accentCol)+'">'+esc(spec.grid||24)+'</span>'+
+    '<span style="display:flex;flex-direction:column;gap:1px"><span style="font-size:11px;font-weight:600;color:'+safeCss(m.fg)+'">'+esc(spec.library)+'</span>'+
+    '<span style="font-family:var(--mono);font-size:9.5px;color:'+safeCss(m.muted)+'">'+esc(sz)+' grid \u00b7 '+esc(strokeNote)+'</span></span></div>';
 }
 function renderSurface(p,c){
   if(c&&c.kind==='card') return renderCardSpecimen(p,c);
@@ -1580,14 +1592,6 @@ function detailHtml(d){
   const iconAccent=readable(d.brand,d.canvas);
   const officialPack=ic.pack&&ICON_PACKS[ic.pack];
   let iconTiles=[];
-  if(ic.samples&&ic.samples.length){
-    ic.samples.forEach(s=>iconTiles.push({
-      name:s.name,
-      tag:'extracted',
-      svg:buildSysSvg(ic,s,22,iconCol),
-      copySvg:buildSysSvg(ic,s,ic.grid||24,'currentColor',true)
-    }));
-  }
   if(officialPack&&officialPack.glyphs&&officialPack.glyphs.length){
     officialPack.glyphs.forEach((g,idx)=>iconTiles.push({
       name:g.name,
@@ -1595,26 +1599,35 @@ function detailHtml(d){
       svg:buildSysSvg(ic,g,22,idx%5===4?iconAccent:iconCol),
       copySvg:buildSysSvg(ic,g,officialPack.grid||ic.grid||24,'currentColor',true)
     }));
-  }else if(!iconTiles.length){
-    SYS_GLYPHS.forEach((g,idx)=>iconTiles.push({
-      name:g.name,
-      tag:'spec preview',
-      svg:buildSysSvg(ic,g,22,idx%5===4?iconAccent:iconCol),
-      copySvg:buildSysSvg(ic,g,ic.grid||24,'currentColor',true)
+  }else if(ic.samples&&ic.samples.length){
+    ic.samples.forEach((s,idx)=>iconTiles.push({
+      name:s.name,
+      tag:ic.source==='repo'?'repo svg':ic.source==='npm'?'npm svg':'extracted svg',
+      svg:buildSysSvg(ic,s,22,idx%5===4?iconAccent:iconCol),
+      copySvg:buildSysSvg(ic,s,ic.grid||24,'currentColor',true)
     }));
   }
-  const iconGridHtml=iconTiles.map(t=>
-    '<div class="icon-card" data-copy-svg="'+esc(t.copySvg)+'" data-icon-name="'+esc(t.name)+'">'+
-      '<span class="icon-glyph" style="background:'+safeCss(d.surface)+'">'+t.svg+'</span>'+
-      '<span class="icon-name">'+esc(t.name)+'</span>'+
-      '<span class="icon-sub">'+esc(t.tag)+'</span>'+
-    '</div>'
-  ).join('');
+  const safeIconUrl=/^https?:\/\//i.test(ic.url||'')?ic.url:null;
+  const iconBodyHtml=iconTiles.length
+    ? '<div class="icon-grid">'+iconTiles.map(t=>
+        '<div class="icon-card" data-copy-svg="'+esc(t.copySvg)+'" data-icon-name="'+esc(t.name)+'">'+
+          '<span class="icon-glyph" style="background:'+safeCss(d.surface)+'">'+t.svg+'</span>'+
+          '<span class="icon-name">'+esc(t.name)+'</span>'+
+          '<span class="icon-sub">'+esc(t.tag)+'</span>'+
+        '</div>'
+      ).join('')+'</div>'
+    : '<div class="icon-bar" style="margin-top:8px;justify-content:flex-start;gap:14px">'+
+        '<div style="width:42px;height:42px;flex-shrink:0;border-radius:'+safeCss(thumbRadius(d.radius,10))+';border:'+(ic.style==='solid'?'2px solid ':'1.5px dashed ')+safeCss(iconAccent)+';display:grid;place-items:center;font-family:var(--mono);font-size:10px;color:'+safeCss(iconAccent)+'">'+ic.grid+'px</div>'+
+        '<div style="display:flex;flex-direction:column;gap:3px;min-width:0">'+
+          '<span style="font-size:12.5px;font-weight:500">No bundled public SVG package \u2014 follows documented '+esc(ic.library)+' specification ('+ic.grid+'\u00d7'+ic.grid+' grid, '+(ic.style==='solid'?'solid fill':ic.strokeWidth+'px stroke, '+ic.strokeLinecap+' caps')+').</span>'+
+          '<span class="icon-sub" style="font-size:11px;opacity:.75">Generic placeholder glyphs are omitted so every system displays only its authentic icons.</span>'+
+        '</div>'+
+      '</div>';
   const iconRightNote=officialPack
-    ? (officialPack.package+'@'+officialPack.version+' · real package SVGs · click to copy SVG')
-    : (ic.samples&&ic.samples.length
-      ? (ic.grid+'px grid · extracted site SVGs · click to copy SVG')
-      : (ic.grid+'px grid · '+(ic.style==='solid'?'solid':'outline '+ic.strokeWidth+'px')+' · spec reference preview (closed/inline icons)'));
+    ? (officialPack.package+'@'+officialPack.version+' · official package SVGs · click to copy SVG')
+    : (iconTiles.length
+      ? (ic.grid+'px grid · '+iconTiles.length+' harvested SVGs · click to copy SVG')
+      : (ic.grid+'px grid · '+(ic.style==='solid'?'solid':'outline '+ic.strokeWidth+'px')+' · external / proprietary spec'));
   const iconSecHtml='<div class="sec"><div class="sec-h"><h2>Iconography &amp; SVG System</h2><em>'+esc(iconRightNote)+'</em></div>'+
     '<div class="icon-bar">'+
       '<div class="icon-bar-info">'+
@@ -1626,9 +1639,12 @@ function detailHtml(d){
         '<span class="kind"><b>caps</b> '+esc(ic.strokeLinecap)+' / '+esc(ic.strokeLinejoin)+'</span>'+
         '<span class="kind"><b>source</b> '+esc(ic.source)+'</span>'+
       '</div>'+
-      (ic.package?'<button type="button" class="pill-btn" data-copy="npm install '+esc(ic.package)+'">'+ICONS.copy+'npm i '+esc(ic.package)+'</button>':'')+
+      '<div style="display:flex;gap:6px;flex-wrap:wrap">'+
+        (ic.package?'<button type="button" class="pill-btn" data-copy="npm install '+esc(ic.package)+'">'+ICONS.copy+'npm i '+esc(ic.package)+'</button>':'')+
+        (safeIconUrl?'<a class="pill-btn" href="'+esc(safeIconUrl)+'" target="_blank" rel="noopener">Docs '+ICONS.ext+'</a>':'')+
+      '</div>'+
     '</div>'+
-    '<div class="icon-grid">'+iconGridHtml+'</div></div>';
+    iconBodyHtml+'</div>';
 
   return '<div class="detail-bar">'+
       '<div class="detail-nav">'+

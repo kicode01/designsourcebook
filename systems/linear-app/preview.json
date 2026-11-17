@@ -539,7 +539,57 @@
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
     "source": "curated",
-    "url": "https://linear.app"
+    "url": "https://linear.app",
+    "samples": [
+      {
+        "name": "ui-1",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<rect x=\"1\" y=\"7.5\" width=\"14\" height=\"1\" rx=\"0.5\"/><rect x=\"1\" y=\"7.5\" width=\"14\" height=\"1\" rx=\"0.5\"/>"
+      },
+      {
+        "name": "ui-2",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M4.53 5.47a.75.75 0 0 0-1.06 1.06l4 4a.75.75 0 0 0 1.054.007l4-3.903a.75.75 0 0 0-1.048-1.073l-3.47 3.385L4.53 5.47Z\"/>"
+      },
+      {
+        "name": "ui-3",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M7 2C9.76142 2 12 4.23858 12 7C12 8.11012 11.6375 9.13519 11.0254 9.96484L13.7803 12.7197L13.832 12.7764C14.0723 13.0709 14.0549 13.5057 13.7803 13.7803C13.5057 14.0549 13.0709 14.0723 12.7764 13.832L12.7197 13.7803L9.96484 11.0254C9.13519 11.6375 8.11012 12 7 12C4.23858 12 2 9.76142 2 7C2 4.23858 4.23858 2 7 2ZM7 3.5C5.067 3.5 3.5 5.067 3.5 7C3.5 8.933 5.067 10.5 7 10.5C8.933 10.5 10.5 8.933 10.5 7C10.5 5.067 8.933 3.5 7 3.5Z\"/>"
+      },
+      {
+        "name": "ui-4",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M6.75194 10.6239C6.41861 10.8183 6 10.5779 6 10.192V5.80802C6 5.42212 6.41861 5.18169 6.75194 5.37613L10.5096 7.56811C10.8404 7.76105 10.8404 8.23895 10.5096 8.43189L6.75194 10.6239Z\"/>"
+      },
+      {
+        "name": "ui-5",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M3 6.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm5 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z\"/>"
+      },
+      {
+        "name": "ui-6",
+        "viewBox": "0 0 14 14",
+        "fill": "none",
+        "body": "<rect x=\"1\" y=\"1\" width=\"12\" height=\"12\" rx=\"6\" stroke=\"var(--color-yellow)\" stroke-width=\"1.5\" fill=\"none\"/><path fill=\"var(--color-yellow)\" stroke=\"none\" d=\"M 3.5,3.5 L3.5,0 A3.5,3.5 0 0,1 3.5, 7 z\"/>"
+      },
+      {
+        "name": "ui-7",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M11.48 5.674a.75.75 0 1 1-.96 1.152L8.75 5.351v6.899a.75.75 0 0 1-1.5 0V5.351L5.48 6.826a.75.75 0 0 1-.96-1.152l3-2.5a.75.75 0 0 1 .96 0l3 2.5Z\"/>"
+      },
+      {
+        "name": "ui-8",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M11.48 10.326a.75.75 0 0 0-.96-1.152l-1.77 1.475V3.75a.75.75 0 0 0-1.5 0v6.899L5.48 9.174a.75.75 0 0 0-.96 1.152l3 2.5a.75.75 0 0 0 .96 0l3-2.5Z\"/>"
+      }
+    ]
   },
   "overview": "Linear's website is a masterclass in dark-mode-first product design — a near-black canvas (`#08090a`) where content emerges from darkness like starlight. The overall impression is one of extreme precision engineering: every element exists in a carefully calibrated hierarchy of luminance, from barely-visible borders (`rgba(255,255,255,0.05)`) to soft, luminous text (`#f7f8f8`). This is not a dark theme applied to a light design — it is darkness as the native medium, where information density is managed through subtle gradations of white opacity rather than color variation.\n\nThe typography system is built entirely on Inter Variable with OpenType features `\"cv01\"` and `\"ss03\"` enabled globally, giving the typeface a cleaner, more geometric character. Inter is used at a remarkable range of weights — from 300 (light body) through 510 (medium, Linear's signature weight) to 590 (semibold emphasis). The 510 weight is particularly distinctive: it sits between regular and medium, creating a subtle emphasis that doesn't shout. At display sizes (72px, 64px, 48px), Inter uses aggressive negative letter-spacing (-1.584px to -1.056px), creating compressed, authoritative headlines that feel engineered rather than designed. Berkeley Mono serves as the monospace companion for code and technical labels, with fallbacks to ui-monospace, SF Mono, and Menlo.\n\nThe color system is almost entirely achromatic — dark backgrounds with white/gray text — punctuated by a single brand accent: Linear's signature indigo-violet (`#5e6ad2` for backgrounds, `#7170ff` for interactive accents). This accent color is used sparingly and intentionally, appearing only on CTAs, active states, and brand elements. The border system uses ultra-thin, semi-transparent white borders (`rgba(255,255,255,0.05)` to `rgba(255,255,255,0.08)`) that create structure without visual noise, like wireframes drawn in moonlight.\n\n**Key Characteristics:**\n- Dark-mode-native: `#08090a` marketing background, `#0f1011` panel background, `#191a1b` elevated surfaces\n- Inter Variable with `\"cv01\", \"ss03\"` globally — geometric alternates for a cleaner aesthetic\n- Signature weight 510 (between regular and medium) for most UI text\n- Aggressive negative letter-spacing at display sizes (-1.584px at 72px, -1.056px at 48px)\n- Brand indigo-violet: `#5e6ad2` (bg) / `#7170ff` (accent) / `#828fff` (hover) — the only chromatic color in the system\n- Semi-transparent white borders throughout: `rgba(255,255,255,0.05)` to `rgba(255,255,255,0.08)`\n- Button backgrounds at near-zero opacity: `rgba(255,255,255,0.02)` to `rgba(255,255,255,0.05)`\n- Multi-layered shadows with inset variants for depth on dark surfaces\n- Radix UI primitives as the component foundation (6 detected primitives)\n- Success green (`#27a644`, `#10b981`) used only for status indicators\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 1px, 4px, 7px, 8px, 11px, 12px, 16px, 19px, 20px, 22px, 24px, 28px, 32px, 35px\n- The 7px and 11px values suggest micro-adjustments for optical alignment\n- Primary rhythm: 8px, 16px, 24px, 32px (standard 8px grid)\n\n### Grid & Container\n- Max content width: approximately 1200px\n- Hero: centered single-column with generous vertical padding\n- Feature sections: 2–3 column grids for feature cards\n- Full-width dark sections with internal max-width constraints\n- Changelog: single-column timeline layout\n\n### Whitespace Philosophy\n- **Darkness as space**: On Linear's dark canvas, empty space isn't white — it's absence. The near-black background IS the whitespace, and content emerges from it.\n- **Compressed headlines, expanded surroundings**: Display text at 72px with -1.584px tracking is dense and compressed, but sits within vast dark padding. The contrast between typographic density and spatial generosity creates tension.\n- **Section isolation**: Each feature section is separated by generous vertical padding (80px+) with no visible dividers — the dark background provides natural separation.",
   "dos": "### Do\n- Use Inter Variable with `\"cv01\", \"ss03\"` on ALL text — these features are fundamental to Linear's typeface identity\n- Use weight 510 as your default emphasis weight — it's Linear's signature between-weight\n- Apply aggressive negative letter-spacing at display sizes (-1.584px at 72px, -1.056px at 48px)\n- Build on near-black backgrounds: `#08090a` for marketing, `#0f1011` for panels, `#191a1b` for elevated surfaces\n- Use semi-transparent white borders (`rgba(255,255,255,0.05)` to `rgba(255,255,255,0.08)`) instead of solid dark borders\n- Keep button backgrounds nearly transparent: `rgba(255,255,255,0.02)` to `rgba(255,255,255,0.05)`\n- Reserve brand indigo (`#5e6ad2` / `#7170ff`) for primary CTAs and interactive accents only\n- Use `#f7f8f8` for primary text — not pure `#ffffff`, which would be too harsh\n- Apply the luminance stacking model: deeper = darker bg, elevated = slightly lighter bg\n\n### Don't\n- Don't use pure white (`#ffffff`) as primary text — `#f7f8f8` prevents eye strain\n- Don't use solid colored backgrounds for buttons — transparency is the system (rgba white at 0.02–0.05)\n- Don't apply the brand indigo decoratively — it's reserved for interactive/CTA elements only\n- Don't use positive letter-spacing on display text — Inter at large sizes always runs negative\n- Don't use visible/opaque borders on dark backgrounds — borders should be whisper-thin semi-transparent white\n- Don't skip the OpenType features (`\"cv01\", \"ss03\"`) — without them, it's generic Inter, not Linear's Inter\n- Don't use weight 700 (bold) — Linear's maximum weight is 590, with 510 as the workhorse\n- Don't introduce warm colors into the UI chrome — the palette is cool gray with blue-violet accent only\n- Don't use drop shadows for elevation on dark surfaces — use background luminance stepping instead"

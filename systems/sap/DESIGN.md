@@ -125,6 +125,7 @@ rounded:
 icons:
   library: SAP Icons
   package: "@ui5/webcomponents-icons"
+  pack: ui5
   style: solid
   grid: 16
   strokeWidth: 0

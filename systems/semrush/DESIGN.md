@@ -145,6 +145,7 @@ rounded:
 icons:
   library: Intergalactic Icons
   package: "@semcore/icon"
+  pack: semrush
   style: solid
   grid: 16
   strokeWidth: 0

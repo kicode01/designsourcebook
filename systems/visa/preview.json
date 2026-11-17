@@ -657,7 +657,39 @@
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
     "source": "curated",
-    "url": "https://design.visa.com"
+    "url": "https://design.visa.com",
+    "samples": [
+      {
+        "name": "visa",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M16 3H0V1H16V3ZM16 15H0V13H16V15ZM0 9H16V7H0V9Z\"/>"
+      },
+      {
+        "name": "visa-2",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M9 7V5C11.2056 5 13 6.79443 13 9H11C11 7.89697 10.103 7 9 7ZM16.5181 15L24 22.4819L22.4819 24L15 16.5181C15.5551 16.0636 16.0636 15.5551 16.5181 15Z\"/><path d=\"M9 1C4.58887 1 1 4.58887 1 9C1 13.4111 4.58887 17 9 17C13.4111 17 17 13.4111 17 9C17 4.58887 13.4111 1 9 1ZM9 15C5.69141 15 3 12.3086 3 9C3 5.69141 5.69141 3 9 3C12.3086 3 15 5.69141 15 9C15 12.3086 12.3086 15 9 15Z\"/>"
+      },
+      {
+        "name": "visa-3",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z\"/>"
+      },
+      {
+        "name": "visa-4",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M10.6069 1.00049L12 2.47646L6.78617 8.00049L12 13.5245L10.6069 15.0005L4 8.00049L10.6069 1.00049Z\"/>"
+      },
+      {
+        "name": "visa-5",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z\"/>"
+      }
+    ]
   },
   "overview": "**Visa Product Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fcc015` brand accent.\n\nDisplay headlines pair `visa-font-semi-bold` with `visa-font-regular` body copy (69px display down to 18px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **Visa**. Source: live stylesheet extraction (https://design.visa.com/welcome/). Inventory: **45** colors, **50** typography steps, and **27** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 2px 6px -1px rgba(0, 0, 0, .2)`, `0 2px 6px -1px rgba(0, 0, 0, .2),inset 0 0 rgba(255, 255, 255, 0)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fcc015` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fcc015` with `#0b0b0c` text (11.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `visa-font-semi-bold` headings with `visa-font-regular` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."

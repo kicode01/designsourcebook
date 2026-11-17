@@ -111,6 +111,7 @@ rounded:
 icons:
   library: Evergreen UI Icons
   package: evergreen-ui
+  pack: evergreen
   style: solid
   grid: 16
   strokeWidth: 0

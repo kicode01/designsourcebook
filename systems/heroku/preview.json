@@ -527,14 +527,16 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
+    "library": "Salesforce SLDS Icons",
+    "package": "@salesforce-ux/design-system",
+    "pack": "salesforce",
+    "style": "solid",
     "grid": 20,
-    "strokeWidth": 1.75,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "curated",
+    "url": "https://design.herokai.com"
   },
   "overview": "**Heroku Purple3** is a light-first design system anchored on `#f6fffe` canvas surfaces with `#0b0b0c` primary ink (19.3:1 contrast) and `#fa9f47` brand accent.\n\nTypography centers cleanly on `salesforce-sans` (22px display down to 15px body), unified by `8px` base corner radius and stepped `#f6fffe` -> `#f7f8fb` surface layering.\n\nMaintained by **Heroku**. Source: live stylesheet extraction (https://design.herokai.com/), frameworks: css. Inventory: **91** colors, **3** typography steps, and **16** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `8px 12px`.\n- **Hierarchy**: Group controls cleanly within `#f7f8fb` cards; separate sibling sections using `#cfd7e6` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6fffe` -> `#f7f8fb`) and `1px solid #cfd7e6` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fa9f47` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#f6fffe` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fa9f47` with `#0b0b0c` text (9.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `salesforce-sans` headings with `salesforce-sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#f7f8fb` surface shifts and `#cfd7e6` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

@@ -177,6 +177,7 @@ rounded:
 icons:
   library: Clarity Icons
   package: "@cds/core"
+  pack: clarity
   style: outline
   grid: 36
   strokeWidth: 2

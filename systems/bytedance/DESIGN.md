@@ -132,6 +132,7 @@ rounded:
 icons:
   library: Arco Design Icons
   package: "@arco-design/web-react"
+  pack: arco
   style: outline
   grid: 24
   strokeWidth: 2

@@ -123,6 +123,7 @@ rounded:
 icons:
   library: Sanity Icons
   package: "@sanity/icons"
+  pack: sanity
   style: outline
   grid: 25
   strokeWidth: 1.2

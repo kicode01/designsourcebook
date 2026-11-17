@@ -129,6 +129,7 @@ rounded:
 icons:
   library: Nordhealth Icons
   package: "@nordhealth/icons"
+  pack: nordhealth
   style: outline
   grid: 16
   strokeWidth: 1.5

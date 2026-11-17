@@ -107,7 +107,7 @@ icons:
   package: null
   style: outline
   grid: 15
-  strokeWidth: 1.2
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
   source: observed

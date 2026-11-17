@@ -157,6 +157,7 @@ rounded:
 icons:
   library: Welcome UI Icons
   package: "@welcome-ui/icons"
+  pack: welcome
   style: outline
   grid: 24
   strokeWidth: 1.5

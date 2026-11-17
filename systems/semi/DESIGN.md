@@ -172,6 +172,7 @@ rounded:
 icons:
   library: Semi Icons
   package: "@douyinfe/semi-icons"
+  pack: semi
   style: solid
   grid: 24
   strokeWidth: 0

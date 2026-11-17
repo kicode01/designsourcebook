@@ -142,7 +142,7 @@ icons:
   strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: curated
+  source: repo
   url: "https://vibe.monday.com"
 components:
   button-primary:

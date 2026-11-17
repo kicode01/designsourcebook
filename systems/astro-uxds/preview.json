@@ -820,14 +820,64 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
+    "library": "Astro UXDS Icons",
+    "package": "@astrouxds/astro-web-components",
     "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "grid": 24,
+    "strokeWidth": 1.5,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "npm",
+    "samples": [
+      {
+        "name": "add",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "check",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M9.00001 16.1698L5.53001 12.6998C5.14001 12.3098 4.51001 12.3098 4.12001 12.6998C3.73001 13.0898 3.73001 13.7198 4.12001 14.1098L8.30001 18.2898C8.69001 18.6798 9.32001 18.6798 9.71001 18.2898L20.29 7.70982C20.68 7.31982 20.68 6.68982 20.29 6.29982C19.9 5.90982 19.27 5.90982 18.88 6.29982L9.00001 16.1698Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "code",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M4.79998 12L8.69998 15.9C9.08998 16.29 9.08998 16.91 8.69998 17.3C8.30998 17.69 7.68998 17.69 7.29998 17.3L2.70998 12.7C2.31998 12.31 2.31998 11.68 2.70998 11.29L7.29998 6.7C7.68998 6.31 8.30998 6.31 8.69998 6.7C9.08998 7.09 9.08998 7.71 8.69998 8.1L4.79998 12ZM19.2 12L15.3 15.9C14.91 16.29 14.91 16.91 15.3 17.3C15.69 17.69 16.31 17.69 16.7 17.3L21.29 12.7C21.68 12.31 21.68 11.68 21.29 11.29L16.7 6.7C16.31 6.31 15.69 6.31 15.3 6.7C14.91 7.09 14.91 7.71 15.3 8.1L19.2 12Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "edit",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M20.71 5.63006C21.1 6.02006 21.1 6.65006 20.71 7.04006L18.88 8.87006L15.13 5.12006L16.96 3.29006C17.35 2.90006 17.98 2.90006 18.37 3.29006L20.71 5.63006ZM3 20.5001V17.4601C3 17.3201 3.05 17.2001 3.15 17.1001L14.06 6.19006L17.81 9.94006L6.89 20.8501C6.8 20.9501 6.67 21.0001 6.54 21.0001H3.5C3.22 21.0001 3 20.7801 3 20.5001Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "menu",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M4 8C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H4ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "folder",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M10.59 4.59C10.21 4.21 9.7 4 9.17 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6H12L10.59 4.59Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "info",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 17C11.45 17 11 16.55 11 16V12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12V16C13 16.55 12.55 17 12 17ZM11 9H13V7H11V9Z\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "home",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M9.99998 19V14H14V19C14 19.55 14.45 20 15 20H18C18.55 20 19 19.55 19 19V12H20.7C21.16 12 21.38 11.43 21.03 11.13L12.67 3.6C12.29 3.26 11.71 3.26 11.33 3.6L2.96998 11.13C2.62998 11.43 2.83998 12 3.29998 12H4.99998V19C4.99998 19.55 5.44998 20 5.99998 20H8.99998C9.54998 20 9.99998 19.55 9.99998 19Z\" fill=\"currentColor\"/>"
+      }
+    ]
   },
   "overview": "**Astro UXDS** is a dark-first design system anchored on `#172635` canvas surfaces with `#f7f7f8` primary ink (14.4:1 contrast) and `#2dccff` brand accent.\n\nTypography centers cleanly on `Roboto` (60px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Rocket Communications**. Source: published token package (https://github.com/RocketCommunicationsInc/astro), repo https://github.com/RocketCommunicationsInc/astro, package `@astrouxds/astro-web-components`, frameworks: web-components, react, angular. Inventory: **16** colors, **106** typography steps, and **16** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#172635` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#172635` -> `#172635`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#2dccff` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#172635` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.\n- Use `#2dccff` with `#0b0b0c` text (10.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#172635` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

@@ -205,14 +205,14 @@ rounded:
   badge: 999px
   default: 4px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Protocol Icons
+  package: "@mozilla-protocol/core"
+  style: solid
+  grid: 16
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
 components:
   mzp-c-button:
     backgroundColor: "#161616"

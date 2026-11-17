@@ -129,6 +129,7 @@ rounded:
 icons:
   library: Canvas System Icons
   package: "@workday/canvas-system-icons-web"
+  pack: workday
   style: solid
   grid: 24
   strokeWidth: 0

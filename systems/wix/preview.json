@@ -409,7 +409,7 @@
     "library": "Inline System SVGs",
     "package": null,
     "style": "solid",
-    "grid": 12,
+    "grid": 20,
     "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
@@ -419,16 +419,22 @@
         "name": "ui-1",
         "viewBox": "0 0 20 20",
         "fill": "none",
-        "body": "<path stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 8 5 5 5-5\"/>"
+        "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 8 5 5 5-5\"/>"
       },
       {
         "name": "ui-2",
-        "viewBox": "0 0 23 23",
+        "viewBox": "0 0 40 40",
+        "fill": "currentColor",
+        "body": "<rect x=\"13\" y=\"10\" width=\"5\" height=\"20\" fill=\"currentColor\"/><rect x=\"22\" y=\"10\" width=\"5\" height=\"20\" fill=\"currentColor\"/>"
+      },
+      {
+        "name": "ui-3",
+        "viewBox": "-0.001 0 22.536 22.445",
         "fill": "currentColor",
         "body": "<path fill=\"#232427\" d=\"M22.535 11.222 11.201 22.445l-1.075-1.065 9.499-9.405H-.001V10.47h19.626l-9.499-9.405L11.201 0z\"/>"
       },
       {
-        "name": "ui-3",
+        "name": "ui-4",
         "viewBox": "0 0 24 24",
         "fill": "currentColor",
         "body": "<path d=\"M24 0v23.352h-2.215V3.782L1.567 24 0 22.433 20.219 2.215H.648V0z\"/>"

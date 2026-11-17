@@ -117,6 +117,7 @@ rounded:
 icons:
   library: LeafyGreen Icons
   package: "@leafygreen-ui/icon"
+  pack: leafygreen
   style: solid
   grid: 16
   strokeWidth: 0

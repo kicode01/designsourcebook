@@ -331,13 +331,14 @@
   "icons": {
     "library": "Vaadin Lumo Icons",
     "package": "@vaadin/icons",
-    "style": "outline",
-    "grid": 24,
-    "strokeWidth": 1.5,
+    "pack": "vaadin",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
     "source": "npm",
-    "url": "https://vaadin.com/icons"
+    "url": "https://vaadin.com/components"
   },
   "overview": "**Vaadin Lumo** is a light-first design system anchored on `hsl(214, 100%, 98%)` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `hsl(214, 90%, 48%)` brand accent.\n\nTypography centers cleanly on `System UI` (40px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Vaadin**. Source: published token package (https://vaadin.com/components), repo https://github.com/vaadin/web-components, package `@vaadin/vaadin-lumo-styles`, frameworks: web-components, react, css. Inventory: **32** colors, **10** typography steps, and **16** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `hsl(214, 100%, 98%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`hsl(214, 100%, 98%)` -> `hsl(214, 100%, 98%)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `hsl(214, 90%, 48%)` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `hsl(214, 100%, 98%)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `hsl(214, 90%, 48%)` with `#f7f7f8` text (4.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `hsl(214, 100%, 98%)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

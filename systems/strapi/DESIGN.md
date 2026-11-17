@@ -140,6 +140,7 @@ rounded:
 icons:
   library: Strapi Icons
   package: "@strapi/icons"
+  pack: phosphor
   style: solid
   grid: 24
   strokeWidth: 0

@@ -181,6 +181,7 @@ rounded:
 icons:
   library: Mistica Icons
   package: "@telefonica/mistica-icons"
+  pack: telefonica
   style: outline
   grid: 24
   strokeWidth: 1.5

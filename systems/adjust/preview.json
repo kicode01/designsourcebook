@@ -605,6 +605,12 @@
     "source": "observed",
     "samples": [
       {
+        "name": "ui-1",
+        "viewBox": "0 0 30 30",
+        "fill": "none",
+        "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-width=\"2\" d=\"M4 7h22M4 15h22M4 23h22\"/>"
+      },
+      {
         "name": "arrowdown",
         "viewBox": "0 0 16 16",
         "fill": "none",
@@ -615,6 +621,12 @@
         "viewBox": "0 0 24 24",
         "fill": "none",
         "body": "<path stroke=\"currentColor\" d=\"M17.5 10.5h-11a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1Z\"/><path stroke=\"currentColor\" d=\"M16 10.5v-2a4 4 0 0 0-8 0v2M12 14v2\"/>"
+      },
+      {
+        "name": "theme-svg-external-link",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z\"/>"
       }
     ]
   },

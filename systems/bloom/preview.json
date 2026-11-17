@@ -286,14 +286,34 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
+    "library": "Appear Here Styleguide Repo SVGs",
     "package": null,
-    "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "repo",
+    "samples": [
+      {
+        "name": "icon-filter",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M15.5,12.5c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5h-15C0.2,13.5,0,13.3,0,13s0.2-0.5,0.5-0.5H15.5z M3,5\n\tc0,0.8,0.7,1.5,1.5,1.5C5.4,6.5,6,5.8,6,5S5.4,3.5,4.5,3.5C3.7,3.5,3,4.2,3,5z M2.1,5.5H0.5C0.2,5.5,0,5.3,0,5s0.2-0.5,0.5-0.5h1.6\n\tc0.2-1.1,1.2-2,2.4-2s2.2,0.9,2.4,2h8.5C15.8,4.5,16,4.7,16,5s-0.2,0.5-0.5,0.5H7c-0.2,1.1-1.2,2-2.4,2S2.3,6.6,2.1,5.5z\"/>"
+      },
+      {
+        "name": "icon-tick",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<polygon points=\"6.3,11.8 3,8.5 4.3,7.1 6.3,9.1 11.7,3.8 13,5.1\"/>"
+      },
+      {
+        "name": "icon-arrow",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<polyline points=\"10.48 5.25 13.23 8 10.48 10.75\"/>"
+      }
+    ]
   },
   "overview": "**Appear Here Styleguide** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(234, 155, 82)` brand accent.\n\nTypography centers cleanly on `System UI` (44px display down to 16px body), unified by `8px` base corner radius and stepped `rgb(255, 255, 255)` -> `rgb(245, 245, 245)` surface layering.\n\nMaintained by **Appear Here**. Source: published token package (https://github.com/appearhere/bloom), repo https://github.com/appearhere/bloom, frameworks: css. Inventory: **24** colors, **8** typography steps, and **16** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `rgb(245, 245, 245)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255, 255, 255)` -> `rgb(245, 245, 245)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(234, 155, 82)` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `rgb(234, 155, 82)` with `#0b0b0c` text (8.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `rgb(245, 245, 245)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

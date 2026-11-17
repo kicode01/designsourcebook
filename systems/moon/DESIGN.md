@@ -76,6 +76,7 @@ rounded:
 icons:
   library: Moon Icons
   package: "@heathmont/moon-icons-tw"
+  pack: moon
   style: outline
   grid: 24
   strokeWidth: 1.5

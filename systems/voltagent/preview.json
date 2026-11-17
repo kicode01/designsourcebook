@@ -371,38 +371,32 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
+    "library": "VoltAgent Repo SVGs",
+    "package": "@voltagent/core",
+    "style": "solid",
     "grid": 24,
-    "strokeWidth": 1.5,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
+    "source": "repo",
     "samples": [
       {
-        "name": "ui-1",
-        "viewBox": "0 0 15 15",
-        "fill": "none",
-        "body": "<path d=\"M.75.75l13.5 13.5M14.25.75L.75 14.25\"/>"
-      },
-      {
-        "name": "ui-2",
+        "name": "close-menu-mobile",
         "viewBox": "0 0 24 24",
         "fill": "currentColor",
-        "body": "<path d=\"M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z\"/>"
+        "body": "<path d=\"M5 5H7V7H5V5ZM9 9H7V7H9V9ZM11 11H9V9H11V11ZM13 11H11V13H9V15H7V17H5V19H7V17H9V15H11V13H13V15H15V17H17V19H19V17H17V15H15V13H13V11ZM15 9V11H13V9H15ZM17 7V9H15V7H17ZM17 7V5H19V7H17Z\" fill=\"currentColor\"/>"
       },
       {
-        "name": "ui-3",
+        "name": "close-menu-mobile-dark",
         "viewBox": "0 0 24 24",
         "fill": "currentColor",
-        "body": "<path d=\"M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z\"/>"
+        "body": "<path d=\"M5 5H7V7H5V5ZM9 9H7V7H9V9ZM11 11H9V9H11V11ZM13 11H11V13H9V15H7V17H5V19H7V17H9V15H11V13H13V15H15V17H17V19H19V17H17V15H15V13H13V11ZM15 9V11H13V9H15ZM17 7V9H15V7H17ZM17 7V5H19V7H17Z\" fill=\"#FFEC19\"/>"
       },
       {
-        "name": "ui-4",
+        "name": "selected-arrow",
         "viewBox": "0 0 24 24",
         "fill": "none",
-        "body": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25\"/>"
+        "body": "<path d=\"M12 5L14 5L14 7L16 7L16 9L18 9L18 11L20 11L20 13L18 13L18 15L16 15L16 17L14 17L14 19L12 19L12 15L4 15L4 9L12 9L12 5Z\" fill=\"#FFEC19\"/>"
       }
     ]
   },

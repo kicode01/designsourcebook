@@ -361,15 +361,15 @@
     "samples": [
       {
         "name": "ui-1",
-        "viewBox": "0 0 20 20",
+        "viewBox": "0 0 20 22",
         "fill": "none",
-        "body": "<path d=\"M20 2C8.95431 2 0 10.9543 0 22V0H20V2Z\" fill=\"currentColor\"/><path d=\"M20 2H20.25V22.25H0V22H-0.25C-0.25 10.8162 8.81623 1.75 20 1.75V2Z\" stroke=\"black\" stroke-width=\"0.5\" fill=\"none\"/>"
+        "body": "<path d=\"M20 2C8.95431 2 0 10.9543 0 22V0H20V2Z\" fill=\"currentColor\"/><path d=\"M20 2H20.25V22.25H0V22H-0.25C-0.25 10.8162 8.81623 1.75 20 1.75V2Z\" stroke=\"currentColor\" stroke-width=\"0.5\" fill=\"none\"/>"
       },
       {
         "name": "ui-2",
-        "viewBox": "0 0 20 20",
+        "viewBox": "0 0 20 22",
         "fill": "none",
-        "body": "<path d=\"M0 2C11.0457 2 20 10.9543 20 22V0H0V2Z\" fill=\"currentColor\"/><path d=\"M0 2H-0.25V22.25H20V22H20.25C20.25 10.8162 11.1838 1.75 0 1.75V2Z\" stroke-width=\"0.5\" stroke=\"black\" fill=\"none\"/>"
+        "body": "<path d=\"M0 2C11.0457 2 20 10.9543 20 22V0H0V2Z\" fill=\"currentColor\"/><path d=\"M0 2H-0.25V22.25H20V22H20.25C20.25 10.8162 11.1838 1.75 0 1.75V2Z\" stroke-width=\"0.5\" stroke=\"currentColor\" fill=\"none\"/>"
       },
       {
         "name": "size",
@@ -382,6 +382,18 @@
         "viewBox": "0 0 24 24",
         "fill": "none",
         "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-width=\"1.5\" d=\"M4 8h16M4 16h16\"/>"
+      },
+      {
+        "name": "ui-5",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M9.244 2.368C7.414 1.184 5 2.497 5 4.676v14.648c0 2.18 2.414 3.493 4.244 2.309l11.318-7.324c1.675-1.084 1.675-3.534 0-4.618z\"/>"
+      },
+      {
+        "name": "ui-6",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M20.155 10.3209L8.8365 2.99715C7.50578 2.13609 5.75 3.09128 5.75 4.67629V19.3237C5.75 20.9087 7.50577 21.8639 8.8365 21.0029L20.155 13.6791C21.373 12.891 21.373 11.109 20.155 10.3209Z\" fill=\"currentColor\"/>"
       }
     ]
   },

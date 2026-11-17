@@ -167,6 +167,7 @@ rounded:
 icons:
   library: Paste Icons
   package: "@twilio-paste/icons"
+  pack: paste
   style: outline
   grid: 20
   strokeWidth: 1.5

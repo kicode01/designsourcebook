@@ -366,14 +366,34 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "library": "Gympass Yoga Repo SVGs",
+    "package": "@gympass/yoga",
+    "style": "solid",
+    "grid": 12,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "repo",
+    "samples": [
+      {
+        "name": "add",
+        "viewBox": "0 0 12 12",
+        "fill": "currentColor",
+        "body": "<path d=\"M9.00012 6.50002C9.27626 6.50002 9.50012 6.27616 9.50012 6.00002C9.50012 5.72388 9.27626 5.50002 9.00012 5.50002L6.50012 5.50002L6.50022 3.00002C6.50024 2.72388 6.27639 2.50001 6.00024 2.5C5.7241 2.49999 5.50024 2.72384 5.50022 2.99998L5.50012 5.50002H2.92896C2.65281 5.50002 2.42896 5.72388 2.42896 6.00002C2.42896 6.27616 2.65281 6.50002 2.92896 6.50002H5.50008L5.49998 9C5.49997 9.27614 5.72382 9.50001 5.99996 9.50002C6.2761 9.50003 6.49997 9.27618 6.49998 9.00004L6.50008 6.50002H9.00012Z\"/>"
+      },
+      {
+        "name": "check",
+        "viewBox": "0 0 12 12",
+        "fill": "currentColor",
+        "body": "<path d=\"M9.85355 3.14645C10.0488 3.34171 10.0488 3.65829 9.85355 3.85355L5.35355 8.35357C5.25979 8.44734 5.13261 8.50001 5 8.50001C4.86739 8.50001 4.74021 8.44734 4.64645 8.35357L2.14645 5.85357C1.95118 5.65831 1.95118 5.34172 2.14645 5.14646C2.34171 4.9512 2.65829 4.9512 2.85355 5.14646L5 7.29291L9.14645 3.14645C9.34171 2.95118 9.65829 2.95118 9.85355 3.14645Z\"/>"
+      },
+      {
+        "name": "info",
+        "viewBox": "0 0 12 12",
+        "fill": "currentColor",
+        "body": "<path d=\"M5.995 11C3.235 11 1 8.76 1 6C1 3.24 3.235 1 5.995 1C8.76 1 11 3.24 11 6C11 8.76 8.76 11 5.995 11ZM6 8.5C5.72386 8.5 5.5 8.27614 5.5 8V6C5.5 5.72386 5.72386 5.5 6 5.5C6.27614 5.5 6.5 5.72386 6.5 6V8C6.5 8.27614 6.27614 8.5 6 8.5ZM6 4.5C5.72386 4.5 5.5 4.27614 5.5 4C5.5 3.72386 5.72386 3.5 6 3.5C6.27614 3.5 6.5 3.72386 6.5 4C6.5 4.27614 6.27614 4.5 6 4.5ZM2 6C2 3.79 3.79 2 6 2C8.21 2 10 3.79 10 6C10 8.21 8.21 10 6 10C3.79 10 2 8.21 2 6Z\"/>"
+      }
+    ]
   },
   "overview": "**Gympass Yoga** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#000` primary ink (21.0:1 contrast) and `#231B22` brand accent.\n\nTypography centers cleanly on `Rubik` (40px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#FBF8EC` surface layering.\n\nMaintained by **Gympass**. Source: published token package (https://github.com/gympass/yoga), repo https://github.com/gympass/yoga, package `@gympass/yoga`, frameworks: react. Inventory: **42** colors, **7** typography steps, and **16** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#FBF8EC` cards; separate sibling sections using `color-mix(in srgb, #000 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#FBF8EC`) and `1px solid color-mix(in srgb, #000 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#231B22` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#000` primary text and `#000` secondary labels.\n- Use `#231B22` with `#f7f7f8` text (15.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Rubik` headings with `Rubik` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#FBF8EC` surface shifts and `color-mix(in srgb, #000 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

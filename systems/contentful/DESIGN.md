@@ -145,6 +145,7 @@ rounded:
 icons:
   library: Forma 36 Icons
   package: "@contentful/f36-icons"
+  pack: phosphor
   style: solid
   grid: 24
   strokeWidth: 0

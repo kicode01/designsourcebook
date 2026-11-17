@@ -586,38 +586,62 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
+    "library": "Cloudscape Repo SVGs",
+    "package": "@cloudscape-design/design-tokens",
     "style": "solid",
     "grid": 16,
     "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
+    "source": "repo",
     "samples": [
       {
-        "name": "animated",
+        "name": "check",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path d=\"M13 9.012v-6H7M13.02 3 7 9.01\"/><path d=\"M3 5.012v8h8.01\"/>"
+        "body": "<path d=\"M1 9L5 13L15 2\"/>"
       },
       {
-        "name": "animated-2",
+        "name": "edit",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path d=\"m11 11 4 4M7 12A5 5 0 1 0 7 2a5 5 0 0 0 0 10Z\"/>"
+        "body": "<path d=\"M6.19 13.275L2 13.975\"/><path d=\"M2 13.975L2.7 9.785\"/><path d=\"M2.7 9.785L9.89999 2.585C10.68 1.805 11.95 1.805 12.73 2.585L13.39 3.245C14.17 4.025 14.17 5.295 13.39 6.075L6.19 13.275\"/><path d=\"M9 3.995L12 6.995\"/>"
       },
       {
-        "name": "animated-3",
+        "name": "arrow-right",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path d=\"M15 3H1\"/><path d=\"M15 8H1\"/><path d=\"M15 13H1\"/>"
+        "body": "<path d=\"M9 3L14 8L9 13\"/><path d=\"M14 8H1\"/>"
       },
       {
-        "name": "ui-4",
+        "name": "closed-caption",
         "viewBox": "0 0 16 16",
-        "fill": "none",
-        "body": "<line stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M7 4L5 4C2.79086 4 1 5.79086 1 8V8C1 10.2091 2.79086 12 5 12H7\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M9 4L11 4C13.2091 4 15 5.79086 15 8V8C15 10.2091 13.2091 12 11 12H9\" stroke=\"currentColor\" stroke-width=\"2\"/>"
+        "fill": "currentColor",
+        "body": "<path d=\"M15 1H1V15H15V1Z\"/><path d=\"M7.51001 10H5.00001C4.45001 10 4.01001 9.56001 4.01001 9.01001V7.00001C4.01001 6.45001 4.45001 6.01001 5.00001 6.01001H7.51001\"/><path d=\"M13 10H10.49C9.94 10 9.5 9.56001 9.5 9.01001V7.00001C9.5 6.45001 9.94 6.01001 10.49 6.01001H13\"/>"
+      },
+      {
+        "name": "filter",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M1 3L6 8V15L10 13V8L15 3V1H1V3Z\"/>"
+      },
+      {
+        "name": "close",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M2 1.70996L14 13.71\"/><path d=\"M2 13.71L14 1.70996\"/>"
+      },
+      {
+        "name": "folder-open",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M2 7V2H8L9 4H14C14.55 4 15 4.45 15 5V13C15 13.55 14.55 14 14 14H13\"/><path d=\"M1 7H11\"/><path d=\"M3 14H14\"/><path d=\"M1 7L3 14\"/><path d=\"M11 7L14 14\"/>"
+      },
+      {
+        "name": "folder",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M15 5V14H2V2H8L9 4H14C14.55 4 15 4.45 15 5Z\"/>"
       }
     ]
   },

@@ -131,14 +131,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Cloudscape Repo SVGs
+  package: "@cloudscape-design/design-tokens"
   style: solid
   grid: 16
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: repo
 components:
   button-primary:
     backgroundColor: "#002b66"

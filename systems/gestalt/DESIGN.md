@@ -132,14 +132,14 @@ rounded:
   nav: 16px
   default: 16px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Pinterest Gestalt Repo SVGs
+  package: gestalt-design-tokens
   style: solid
   grid: 24
   strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: repo
 components:
   button-primary:
     backgroundColor: "#bd001c"

@@ -1659,14 +1659,22 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
+    "library": "Liferay Lexicon (Clay) Icons",
+    "package": "@clayui/css",
     "style": "solid",
-    "grid": 24,
+    "grid": 16,
     "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed"
+    "source": "npm",
+    "samples": [
+      {
+        "name": "trash",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M10 0a1 1 0 0 1 1 1v.03h2.013a.987.987 0 0 1 0 1.974H2.987a.987.987 0 0 1 0-1.974H5V1a1 1 0 0 1 1-1h4ZM2 13.773C2 15.002 3 16 4.231 16h7.535a2.23 2.23 0 0 0 2.231-2.227v-7.75a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7.75ZM4 6.02h8v7.243a.745.745 0 0 1-.744.742H4.744A.745.745 0 0 1 4 13.262V6.019Zm5 .967h2v5.989H9v-5.99Zm-2 0H5v5.989h2v-5.99Z\"/>"
+      }
+    ]
   },
   "overview": "**Liferay Lexicon (Clay)** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0b5fff` brand accent.\n\nTypography centers cleanly on `System UI` (128px display down to 20px body), unified by `0.5rem` base corner radius and stepped `#fff` -> `#f0f5ff` surface layering.\n\nMaintained by **Liferay**. Source: published token package (http://clayui.com), repo https://github.com/liferay/clay, package `@clayui/css`, frameworks: react, css. Inventory: **90** colors, **170** typography steps, and **33** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 33 component tokens with documented paddings: `9px 13px`, `8px 12px`, `2px`, `6px 12px`, `6px 10px`.\n- **Hierarchy**: Group controls cleanly within `#f0f5ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f0f5ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0b5fff` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0b5fff` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `0.5rem` base geometry across inputs and buttons (1rem on outer containers).\n- Separate containers via `#f0f5ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.5rem` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

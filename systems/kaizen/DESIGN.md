@@ -217,14 +217,14 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
+  library: Kaizen Repo SVGs
+  package: "@kaizen/design-tokens"
   style: outline
   grid: 20
-  strokeWidth: 1.75
+  strokeWidth: 1.5
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: repo
 components:
   button-primary:
     backgroundColor: "#0168b3"

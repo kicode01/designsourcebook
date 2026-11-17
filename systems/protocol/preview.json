@@ -717,14 +717,64 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
-    "grid": 20,
-    "strokeWidth": 1.75,
+    "library": "Protocol Icons",
+    "package": "@mozilla-protocol/core",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "npm",
+    "samples": [
+      {
+        "name": "home",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M16 4.71 8 1 0 4.71V14h16zm-1.5 7.79h-13V5.67L8 2.65l6.5 3.02z\"/>"
+      },
+      {
+        "name": "menu",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M0 0h16v16H0z\"/><path d=\"M16 7.25H0v1.5h16zM16 0H0v1.5h16zm0 14.5H0V16h16z\"/>"
+      },
+      {
+        "name": "trash",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M14 5H2l1.2 11h9.6zm-2.55 9.5H4.54l-.87-8h8.65zM13.846.05 1.844 2.553 2.15 4.02l12.002-2.5z\"/>"
+      },
+      {
+        "name": "plus",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M2 8.75h5.25V14h1.5V8.75H14v-1.5H8.75V2h-1.5v5.25H2z\"/>"
+      },
+      {
+        "name": "search",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M12 6c0-3.31-2.69-6-6-6S0 2.69 0 6s2.69 6 6 6c1.39 0 2.66-.47 3.68-1.26l5.29 5.29 1.06-1.06-5.29-5.29A5.98 5.98 0 0 0 12 6m-6 4.5c-2.48 0-4.5-2.02-4.5-4.5S3.52 1.5 6 1.5s4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5\"/>"
+      },
+      {
+        "name": "info",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<circle stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" cx=\"10\" cy=\"10\" r=\"10\"/><path d=\"M10,14 L10,10\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle fill=\"currentColor\" cx=\"10\" cy=\"6\" r=\"1\"/>"
+      },
+      {
+        "name": "bell",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M0 0h16v16H0z\"/><path d=\"M0 12h16v-1.5h-2V6c0-3.31-2.69-6-6-6S2 2.69 2 6v4.5H0zm3.5-6c0-2.48 2.02-4.5 4.5-4.5s4.5 2.02 4.5 4.5v4.5h-9zM9 14H7v2h2z\"/>"
+      },
+      {
+        "name": "close",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path fill=\"currentColor\" d=\"M3.58 13.48 8 9.06l4.42 4.42 1.06-1.06L9.06 8l4.42-4.42-1.06-1.06L8 6.94 3.58 2.52 2.52 3.58 6.94 8l-4.42 4.42z\"/>"
+      }
+    ]
   },
   "overview": "**Protocol** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#cb9eff` brand accent.\n\nDisplay headlines pair `Mozilla Headline` with `Inter` body copy (56px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Mozilla**. Source: published token package (https://github.com/mozilla/protocol), repo https://github.com/mozilla/protocol, package `@mozilla-protocol/core`, frameworks: css. Inventory: **91** colors, **32** typography steps, and **16** documented components (MPL-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `8px 16px`, `32px 4px`, `0 32px 0 6px`, `10px 18px`, `9px 13px`.\n- **Hierarchy**: Group controls cleanly within `#f9f9fb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 16px 16px -16px rgba(0,0,0,.3)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#cb9eff` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#cb9eff` with `#0b0b0c` text (9.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Mozilla Headline` headings with `Inter` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#f9f9fb` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

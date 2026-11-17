@@ -142,14 +142,16 @@ rounded:
   nav: 3px
   default: 3px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: USWDS / CMS Icons
+  package: "@uswds/uswds"
+  pack: uswds
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: curated
+  url: "https://design.cms.gov"
 components:
   button:
     textColor: "#ffffff"

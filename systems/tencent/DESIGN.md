@@ -119,6 +119,7 @@ rounded:
 icons:
   library: TDesign Icons
   package: tdesign-icons-react
+  pack: tdesign
   style: outline
   grid: 16
   strokeWidth: 1.5

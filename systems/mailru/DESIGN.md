@@ -55,8 +55,9 @@ rounded:
   nav: 16px
   default: 16px
 icons:
-  library: Mail.ru Group Paradigm Icons
+  library: VK / Paradigm Icons
   package: "@vkontakte/icons"
+  pack: vkontakte
   style: outline
   grid: 24
   strokeWidth: 1.5

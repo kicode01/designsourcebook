@@ -203,6 +203,7 @@ rounded:
 icons:
   library: PatternFly Icons
   package: "@patternfly/react-icons"
+  pack: patternfly
   style: solid
   grid: 16
   strokeWidth: 0

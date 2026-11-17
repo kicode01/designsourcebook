@@ -59,6 +59,7 @@ rounded:
 icons:
   library: Foundation Icons
   package: foundation-icons
+  pack: foundation
   style: solid
   grid: 24
   strokeWidth: 0
