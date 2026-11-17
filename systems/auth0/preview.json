@@ -516,14 +516,16 @@
     }
   ],
   "icons": {
-    "library": "Inline System SVGs",
-    "package": null,
-    "style": "outline",
+    "library": "Cosmos Icons",
+    "package": "@auth0/cosmos",
+    "pack": "auth0",
+    "style": "solid",
     "grid": 20,
-    "strokeWidth": 1.75,
+    "strokeWidth": 0,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "derived"
+    "source": "repo",
+    "url": "https://auth0.design"
   },
   "overview": "**Auth0 Cosmos** is a light-first design system anchored on `#f9f9f9` canvas surfaces with `#212121` primary ink (15.3:1 contrast) and `#44C7F4` brand accent.\n\nTypography centers cleanly on `FaktPro` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Auth0**. Source: published token package, repo https://github.com/auth0/cosmos, package `@auth0/cosmos`, frameworks: react. Inventory: **91** colors, **2** typography steps, and **16** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#CCCCCC` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f9f9f9` -> `#f9f9f9`) and `1px solid #CCCCCC` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#44C7F4` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#f9f9f9` (light) with `#212121` primary text and `#757575` secondary labels.\n- Use `#44C7F4` with `#0b0b0c` text (10.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `FaktPro` headings with `FaktPro` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#f9f9f9` surface shifts and `#CCCCCC` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

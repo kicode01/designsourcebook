@@ -36,14 +36,16 @@ rounded:
   nav: 4px
   default: 4px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Grafana Icons
+  package: "@grafana/ui"
+  pack: grafana
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://developers.grafana.com/ui/latest/index.html"
 components:
   button-primary:
     backgroundColor: "rgba(247, 149, 32, 1)"

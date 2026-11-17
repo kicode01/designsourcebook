@@ -223,14 +223,16 @@ rounded:
   nav: 4px
   default: 4px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: DSFR Icons
+  package: "@gouvfr/dsfr"
+  pack: dsfr
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/icone"
 components:
   button-primary:
     backgroundColor: "#ff732c"

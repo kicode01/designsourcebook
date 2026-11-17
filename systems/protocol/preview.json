@@ -727,10 +727,22 @@
     "source": "npm",
     "samples": [
       {
-        "name": "home",
+        "name": "info",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<circle stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" cx=\"10\" cy=\"10\" r=\"10\"/><path d=\"M10,14 L10,10\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle fill=\"currentColor\" cx=\"10\" cy=\"6\" r=\"1\"/>"
+      },
+      {
+        "name": "file-code",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M10,0 L2,0 C0.8954305,0 0,0.8954305 0,2 L0,20 C0,21.1045695 0.8954305,22 2,22 L14,22 C15.1045695,22 16,21.1045695 16,20 L16,6 L10,0 Z\"/><polyline points=\"10 0 10 6 16 6\"/><polyline points=\"10 17 12 14 10 11\"/><polyline points=\"6 11 4 14 6 17\"/>"
+      },
+      {
+        "name": "check",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M16 4.71 8 1 0 4.71V14h16zm-1.5 7.79h-13V5.67L8 2.65l6.5 3.02z\"/>"
+        "body": "<path fill=\"currentColor\" d=\"M1.53 7.17.47 8.23l5.4 5.4 9.66-9.67-1.06-1.06-8.6 8.6z\"/>"
       },
       {
         "name": "bell",
@@ -739,10 +751,10 @@
         "body": "<path d=\"M0 0h16v16H0z\"/><path d=\"M0 12h16v-1.5h-2V6c0-3.31-2.69-6-6-6S2 2.69 2 6v4.5H0zm3.5-6c0-2.48 2.02-4.5 4.5-4.5s4.5 2.02 4.5 4.5v4.5h-9zM9 14H7v2h2z\"/>"
       },
       {
-        "name": "menu",
+        "name": "folder",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path d=\"M0 0h16v16H0z\"/><path d=\"M16 7.25H0v1.5h16zM16 0H0v1.5h16zm0 14.5H0V16h16z\"/>"
+        "body": "<path d=\"M0 0h16v16H0z\"/><path fill=\"currentColor\" d=\"M5 0H0v14h16V2H7zm9.5 12.5h-13v-11h2.88l1.56 1.56.44.44h8.12z\"/>"
       },
       {
         "name": "user",
@@ -751,28 +763,16 @@
         "body": "<path fill=\"currentColor\" d=\"M11.18 10H4.82C2.16 10 0 12.16 0 14.82V16h16v-1.18c0-2.66-2.16-4.82-4.82-4.82m-9.66 4.5c.16-1.68 1.58-3 3.31-3h6.36c1.72 0 3.14 1.32 3.31 3zM10 9c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5\"/>"
       },
       {
-        "name": "info",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<circle stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" cx=\"10\" cy=\"10\" r=\"10\"/><path d=\"M10,14 L10,10\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle fill=\"currentColor\" cx=\"10\" cy=\"6\" r=\"1\"/>"
-      },
-      {
-        "name": "close",
+        "name": "home",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M3.58 13.48 8 9.06l4.42 4.42 1.06-1.06L9.06 8l4.42-4.42-1.06-1.06L8 6.94 3.58 2.52 2.52 3.58 6.94 8l-4.42 4.42z\"/>"
+        "body": "<path fill=\"currentColor\" d=\"M16 4.71 8 1 0 4.71V14h16zm-1.5 7.79h-13V5.67L8 2.65l6.5 3.02z\"/>"
       },
       {
-        "name": "folder",
+        "name": "menu",
         "viewBox": "0 0 16 16",
         "fill": "currentColor",
-        "body": "<path d=\"M0 0h16v16H0z\"/><path fill=\"currentColor\" d=\"M5 0H0v14h16V2H7zm9.5 12.5h-13v-11h2.88l1.56 1.56.44.44h8.12z\"/>"
-      },
-      {
-        "name": "check",
-        "viewBox": "0 0 16 16",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M1.53 7.17.47 8.23l5.4 5.4 9.66-9.67-1.06-1.06-8.6 8.6z\"/>"
+        "body": "<path d=\"M0 0h16v16H0z\"/><path d=\"M16 7.25H0v1.5h16zM16 0H0v1.5h16zm0 14.5H0V16h16z\"/>"
       }
     ]
   },

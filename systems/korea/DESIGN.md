@@ -199,7 +199,7 @@ icons:
   package: null
   style: outline
   grid: 24
-  strokeWidth: 1.6
+  strokeWidth: 2
   strokeLinecap: round
   strokeLinejoin: round
   source: repo

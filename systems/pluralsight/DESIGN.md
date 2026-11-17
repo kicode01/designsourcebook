@@ -129,15 +129,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Pluralsight Design System Icons
+  library: Pluralsight Icons
   package: "@pluralsight/icons"
-  style: outline
+  pack: pluralsight
+  style: solid
   grid: 24
-  strokeWidth: 1.5
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
   source: npm
-  url: "https://design.pluralsight.com/"
+  url: "https://design.pluralsight.com"
 components:
   button-primary:
     backgroundColor: "#D69900"

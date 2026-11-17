@@ -43,6 +43,7 @@ rounded:
 icons:
   library: Orbit Icons
   package: "@kiwicom/orbit-components"
+  pack: orbit
   style: solid
   grid: 24
   strokeWidth: 0

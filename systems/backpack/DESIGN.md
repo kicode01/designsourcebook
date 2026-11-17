@@ -165,14 +165,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
-  grid: 20
-  strokeWidth: 1.75
+  library: Backpack Icons
+  package: "@skyscanner/bpk-svgs"
+  pack: backpack
+  style: solid
+  grid: 24
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: npm
+  url: "https://www.skyscanner.design/latest/components/icon/"
 components:
   button-primary:
     backgroundColor: "#024daf"

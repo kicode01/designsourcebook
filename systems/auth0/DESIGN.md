@@ -107,14 +107,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: Inline System SVGs
-  package: null
-  style: outline
+  library: Cosmos Icons
+  package: "@auth0/cosmos"
+  pack: auth0
+  style: solid
   grid: 20
-  strokeWidth: 1.75
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: derived
+  source: repo
+  url: "https://auth0.design"
 components:
   button-primary:
     backgroundColor: "#44C7F4"

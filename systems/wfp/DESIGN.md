@@ -179,15 +179,16 @@ rounded:
   nav: 8px
   default: 8px
 icons:
-  library: WFP UI Kit Icons
+  library: WFP / Carbon Icons
   package: "@wfp/icons"
-  style: outline
-  grid: 24
-  strokeWidth: 1.5
-  strokeLinecap: round
-  strokeLinejoin: round
+  pack: carbon
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: square
+  strokeLinejoin: miter
   source: npm
-  url: "https://github.com/wfp/carbon-icons#readme"
+  url: "https://uikit.wfp.org"
 components:
   button-primary:
     backgroundColor: "#007dbc"

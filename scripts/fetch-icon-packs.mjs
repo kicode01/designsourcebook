@@ -18,13 +18,13 @@ const SLOTS = [
   { key: "home", names: ["home", "house", "house-door", "home-1", "home-2", "home-page"] },
   { key: "search", names: ["search", "magnifying-glass", "magnifyingglass", "magnifier", "find", "search-md", "ai-search"] },
   { key: "plus", names: ["plus", "add", "plus-lg", "plus-16", "add-16", "math-plus-l"] },
-  { key: "check", names: ["check", "checkmark", "check-lg", "tick", "done", "accept", "approve"] },
+  { key: "check", names: ["check", "checkmark", "check-mark", "checked", "check-lg", "tick", "done", "accept", "approve"] },
   { key: "close", names: ["x", "close", "dismiss", "times", "xmark", "cross-2", "cross", "cross-1", "clear", "x-lg", "cancel", "decline"] },
   { key: "arrow-right", names: ["arrow_forward", "arrow-forward", "arrow-right", "arrowright", "arrow--right", "east", "right-arrow"] },
-  { key: "chevron-down", names: ["keyboard_arrow_down", "chevron-down", "chevrondown", "chevron--down", "expand_more", "caret-down", "slim-arrow-down"] },
-  { key: "settings", names: ["settings", "gear", "cog", "setting", "action-settings", "adjustments-horizontal", "sliders", "gear-16", "preferences"] },
+  { key: "chevron-down", names: ["keyboard_arrow_down", "chevron-down", "chevrondown", "chevron--down", "expand_more", "chevron-single-down", "angle-down", "slim-arrow-down", "caret-down"] },
+  { key: "settings", names: ["settings", "gear", "cog", "setting", "setting-slider", "widget", "action-settings", "adjustments-horizontal", "sliders", "gear-16", "preferences"] },
   { key: "bell", names: ["bell", "notification", "notifications", "alarm", "alert", "notification-2"] },
-  { key: "user", names: ["user", "person", "account", "profile", "user-profile", "customer", "employee"] },
+  { key: "user", names: ["user", "person", "account", "profile", "user-profile", "customer", "employee", "torso"] },
   { key: "folder", names: ["folder", "file-directory", "directory", "folder-close", "folder-closed"] },
   { key: "code", names: ["code", "code-bracket", "xml", "source-code", "syntax"] },
 ];
@@ -35,6 +35,7 @@ function extractIconStem(filePath, { stripCategoryPrefix = false, useParentIf = 
   if (useParentIf && rawBase.toLowerCase() === useParentIf.toLowerCase()) {
     rawBase = path.posix.basename(path.posix.dirname(filePath));
   }
+  rawBase = rawBase.replace(/Icon$/, "");
   const kebab = rawBase
     .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
     .replace(/[_\s]+/g, "-")
@@ -67,14 +68,14 @@ function matchPathForAliases(files, pathPattern, aliases, opts = {}) {
 function normalizeSvgColors(body) {
   return body
     .replace(/\s*<path\b[^>]*\bd=["']M0 0h24v24H0z["'][^>]*\/?>/gi, "")
-    .replace(/\b(stroke|fill)=["'](?:#000(?:000)?|#111(?:111)?|#222(?:222)?|#333(?:333)?|#444(?:444)?|#fff(?:fff)?|#212b32|#0a0b0d|black|oklch\([^)]+\)|currentColor)["']/gi, '$1="currentColor"');
+    .replace(/\b(stroke|fill)=["'](?:#[0-4][0-9a-f]{2}|#[0-4][0-9a-f]{5}|#fff(?:fff)?|#212b32|#0a0b0d|black|oklch\([^)]+\)|currentColor)["']/gi, '$1="currentColor"');
 }
 
 function parseSvgMarkup(raw, realName, fallbackVb = "0 0 24 24") {
   const head = /<svg\b([^>]*)>([\s\S]*?)<\/svg>/i.exec(raw);
   if (!head) return null;
   const attrs = head[1];
-  const body = sanitizePrimitives(normalizeSvgColors(head[2]), { maxElements: 20, maxLength: 1600 });
+  const body = sanitizePrimitives(normalizeSvgColors(head[2]), { maxElements: 24, maxLength: 3600 });
   if (!body) return null;
 
   const wAttr = /\bwidth\s*=\s*["']?(\d+(?:\.\d+)?)/i.exec(attrs)?.[1];
@@ -208,12 +209,12 @@ const NPM_PACKS = [
   { id: "gitlab", pkg: "@gitlab/svgs", pat: /^\/dist\/sprite_icons\/[^/]+\.svg$/i },
   { id: "stacks", pkg: "@stackoverflow/stacks-icons", pat: /^\/dist\/lib\/Icon\/[^/]+\.svg$/i },
   { id: "flowbite", pkg: "flowbite-icons", pat: /^\/src\/outline\/.+\.svg$/i },
-  { id: "antd", pkg: "@ant-design/icons-svg", pat: /^\/inline-svg\/outlined\/[^/]+\.svg$/i, displayGrid: 16 },
+  { id: "antd", pkg: "@ant-design/icons-svg", pat: /^\/inline-svg\/outlined\/[^/]+\.svg$/i, displayGrid: 16, slotOverrides: { "chevron-down": ["down"] } },
   { id: "feather", pkg: "feather-icons", pat: /^\/dist\/icons\/[^/]+\.svg$/i },
   { id: "grommet", pkg: "grommet-icons", pat: /^\/img\/[^/]+\.svg$/i },
   { id: "duet", pkg: "@duetds/icons", pat: /^\/lib\/assets\/[^/]+\.svg$/i, stripCategoryPrefix: true },
   { id: "siemens", pkg: "@siemens/ix-icons", pat: /^\/dist\/ix-icons\/svg\/[^/]+\.svg$/i, displayGrid: 24 },
-  { id: "vitamin", pkg: "@vtmn/icons", pat: /^\/dist\/vitamix\/svg\/[^/]+-line\.svg$/i },
+  { id: "vitamin", pkg: "@vtmn/icons", pat: /^\/dist\/vitamix\/svg\/.+?-line\.svg$/i },
   { id: "dhis2", pkg: "@dhis2/ui-icons", pat: /^\/build\/cjs\/svg\/[^/]+-24\.svg$/i },
   { id: "salesforce", pkg: "@salesforce-ux/design-system", pat: /^\/assets\/icons\/utility\/[^/]+\.svg$/i, displayGrid: 20 },
   { id: "uswds", pkg: "@uswds/uswds", pat: /^\/dist\/img\/usa-icons\/[^/]+\.svg$/i, displayGrid: 24 },
@@ -226,7 +227,7 @@ const NPM_PACKS = [
   { id: "coinbase", pkg: "@coinbase/cds-icons", pat: /^\/esm\/svgs\/[^/]+-16-inactive\.svg$/i, displayGrid: 16 },
   { id: "ebay", pkg: "@ebay/skin", pat: /^\/dist\/svg\/icon\/icon-[^/]+-16\.svg$/i, displayGrid: 16 },
   { id: "clarity", pkg: "@cds/core", pat: /^\/icon\/shapes\/[^/]+\.js$/i, mode: "cds", displayGrid: 16 },
-  { id: "ui5", pkg: "@ui5/webcomponents-icons", pat: /^\/dist\/v5\/[^/]+\.js$/i, mode: "ui5", displayGrid: 16 },
+  { id: "ui5", pkg: "@ui5/webcomponents-icons", pat: /^\/dist\/v5\/[^/]+\.js$/i, mode: "ui5", displayGrid: 16, slotOverrides: { "chevron-down": ["slim-arrow-down"] } },
   { id: "patternfly", pkg: "@patternfly/react-icons", pat: /^\/dist\/esm\/icons\/[^/]+-icon\.js$/i, mode: "patternfly", displayGrid: 16 },
   { id: "sanity", pkg: "@sanity/icons", pat: /^\/dist\/[^/]+\.js$/i, mode: "jsx", viewBox: "0 0 25 25", stroke: true, strokeWidth: 1.2, displayGrid: 20 },
   { id: "semi", pkg: "@douyinfe/semi-icons", pat: /^\/lib\/es\/icons\/Icon[^/]+\.js$/i, mode: "jsx", viewBox: "0 0 24 24", displayGrid: 20 },
@@ -242,6 +243,11 @@ const NPM_PACKS = [
   { id: "evergreen", pkg: "evergreen-ui", pat: /^\/esm\/icons\/generated\/[^/]+Icon\.js$/i, mode: "evergreen", displayGrid: 16 },
   { id: "vaadin", pkg: "@vaadin/icons", pat: /^\/assets\/svg\/[^/]+\.svg$/i, displayGrid: 16 },
   { id: "moon", pkg: "@heathmont/moon-icons-tw", pat: /^\/es\/icons\/(?:Generic|Controls|Arrows|Notifications|Files|Software)[^/]+\.js$/i, stripCategoryPrefix: true, mode: "jsx", viewBox: "0 0 32 32", stroke: true, strokeWidth: 1.5, displayGrid: 20 },
+  { id: "backpack", pkg: "@skyscanner/bpk-svgs", pat: /^\/dist\/svgs\/icons\/lg\/[^/]+\.svg$/i, displayGrid: 24 },
+  { id: "dsfr", pkg: "@gouvfr/dsfr", pat: /^\/dist\/icons\/[^/]+\/[^/]+-line\.svg$/i, displayGrid: 24, slotOverrides: { "chevron-down": ["arrow-down-s"] } },
+  { id: "orbit", pkg: "@kiwicom/orbit-components", pat: /^\/es\/icons\/[^/]+\.js$/i, mode: "jsx", viewBox: "0 0 24 24", displayGrid: 24 },
+  { id: "pluralsight", pkg: "@pluralsight/icons", pat: /^\/npm\/react\/[^/]+\/[^/]+Icon\.js$/i, mode: "jsx", viewBox: "0 0 24 24", displayGrid: 24 },
+  { id: "grafana", pkg: "@grafana/ui", pat: /^\/dist\/public\/img\/icons\/unicons\/[^/]+\.svg$/i, displayGrid: 24, slotOverrides: { close: ["times"], "chevron-down": ["angle-down"], settings: ["cog"] } },
 ];
 
 async function fetchJson(url) {
@@ -269,9 +275,10 @@ async function buildNpmPack(spec) {
   const glyphs = [];
   await Promise.all(
     SLOTS.map(async (slot, idx) => {
+      const aliases = spec.slotOverrides?.[slot.key] || slot.names;
       const chosen = spec.directMap
         ? spec.directMap[slot.key]
-        : matchPathForAliases(files, spec.pat, slot.names, {
+        : matchPathForAliases(files, spec.pat, aliases, {
             stripCategoryPrefix: Boolean(spec.stripCategoryPrefix),
             useParentIf: spec.useParentIf || null,
           });
@@ -308,13 +315,33 @@ async function buildBlueprintPack() {
     bpMap.map(async ([slotKey, bpName], idx) => {
       const code = await fetchText(`https://cdn.jsdelivr.net/npm/@blueprintjs/icons@${meta.version}/lib/esm/generated/16px/paths/${bpName}.js`).catch(() => null);
       if (!code) return;
-      const ds = [...code.matchAll(/"(M[^"]{10,})"/g)].map((m) => `<path d="${m[1]}"/>`);
+      const ds = [...code.matchAll(/"([Mm][^"]{10,})"/g)].map((m) => `<path d="${m[1]}"/>`);
       if (!ds.length) return;
       glyphs[idx] = { slot: slotKey, name: bpName, viewBox: "0 0 16 16", fill: "currentColor", body: ds.join("") };
     })
   );
   const compact = glyphs.filter(Boolean);
   return compact.length >= 4 ? { package: "@blueprintjs/icons", version: meta.version, grid: 16, glyphs: compact } : null;
+}
+
+async function buildAuth0Pack() {
+  const flat = await fetchJson("https://data.jsdelivr.com/v1/package/gh/auth0/cosmos@master/flat");
+  const files = (flat?.files || []).map((f) => f.name);
+  if (!files.length) return null;
+  const glyphs = [];
+  await Promise.all(
+    SLOTS.map(async (slot, idx) => {
+      const chosen = matchPathForAliases(files, /^\/core\/icons\/icon-[^/]+\.svg$/i, slot.names);
+      if (!chosen) return;
+      const svgText = await fetchText(`https://cdn.jsdelivr.net/gh/auth0/cosmos@master${chosen}`).catch(() => null);
+      if (!svgText) return;
+      const rawName = extractIconStem(chosen) || path.posix.basename(chosen, ".svg");
+      const parsed = parseSvgMarkup(svgText, rawName);
+      if (parsed) glyphs[idx] = { slot: slot.key, ...parsed };
+    })
+  );
+  const compact = glyphs.filter(Boolean);
+  return compact.length >= 4 ? { package: "@auth0/cosmos", version: "github:auth0/cosmos", grid: 20, glyphs: compact } : null;
 }
 
 async function buildRadixPack() {
@@ -353,7 +380,11 @@ async function main() {
       })
     );
   }
-  const [bp, rx] = await Promise.all([buildBlueprintPack().catch(() => null), buildRadixPack().catch(() => null)]);
+  const [bp, rx, a0] = await Promise.all([
+    buildBlueprintPack().catch(() => null),
+    buildRadixPack().catch(() => null),
+    buildAuth0Pack().catch(() => null),
+  ]);
   if (bp) {
     packs.blueprint = bp;
     console.log(`+ ${"blueprint".padEnd(12)} (${bp.package}@${bp.version}) -> ${bp.glyphs.length}/12 glyphs`);
@@ -361,6 +392,10 @@ async function main() {
   if (rx) {
     packs.radix = rx;
     console.log(`+ ${"radix".padEnd(12)} (${rx.package}) -> ${rx.glyphs.length}/12 glyphs`);
+  }
+  if (a0) {
+    packs.auth0 = a0;
+    console.log(`+ ${"auth0".padEnd(12)} (${a0.package}@${a0.version}) -> ${a0.glyphs.length}/12 glyphs`);
   }
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
