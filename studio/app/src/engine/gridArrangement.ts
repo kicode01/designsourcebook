@@ -7,12 +7,23 @@
 export const SHEET = 240;
 export const CENTER = SHEET / 2;
 
-export type GridCategory = 'angular' | 'curved' | 'compass';
+export type GridCategory = 'angular' | 'curved' | 'compass' | 'pixel';
 export type SymmetryMode = 'none' | 'x' | 'y' | 'quad' | 'rot2' | 'radial';
-export type DensityLevel = 'low' | 'med' | 'high';
+export type DensityLevel = 'low' | 'med' | 'high' | 'ultra';
 
 export type GridId =
+  | 'adaptive-mesh'
   | 'adaptive'
+  | 'pixel-16'
+  | 'pixel-24'
+  | 'pixel-32'
+  | 'octa-pixel'
+  | 'tri-pixel'
+  | 'iso-fine'
+  | 'skew-45'
+  | 'fib-golden'
+  | 'squircle'
+  | 'polar-fine'
   | 'square'
   | 'circle-spandrel'
   | 'iso30'
@@ -82,7 +93,18 @@ export interface BuiltGrid {
 }
 
 export const CONSTRUCTION_GRIDS: GridCatalogItem[] = [
-  { id: 'adaptive', label: 'Adaptive Logo Grid', short: 'Adaptive', category: 'compass', description: 'Bespoke construction stems, angles, rays & circles synthesized from the active logo' },
+  { id: 'adaptive-mesh', label: 'Adaptive Contour Mesh', short: 'Contour', category: 'compass', description: 'Variable quadtree + 45° diagonal bevel slicing fitted closely to curves, thin strokes & holes' },
+  { id: 'adaptive', label: 'Adaptive Construct', short: 'Construct', category: 'compass', description: 'Bespoke construction stems, angles, rays & compass circles synthesized from the active logo' },
+  { id: 'pixel-24', label: '24×24 System Pixel', short: 'Pixel 24', category: 'pixel', description: 'Standard 24px UI icon matrix for precise orthogonal pixel alignment' },
+  { id: 'pixel-32', label: '32×32 Micro Pixel', short: 'Pixel 32', category: 'pixel', description: 'High-definition 32×32 pixel grid for intricate curved & organic silhouettes' },
+  { id: 'pixel-16', label: '16×16 Icon Pixel', short: 'Pixel 16', category: 'pixel', description: 'Compact 16×16 modular icon & favicon pixel lattice' },
+  { id: 'octa-pixel', label: '16×16 Bevel Octa-Pixel', short: 'Bevel Px', category: 'pixel', description: '16×16 pixel cells diagonally split at ±45° to eliminate jagged staircases' },
+  { id: 'tri-pixel', label: 'Delta Micro Mesh', short: 'Tri-24', category: 'pixel', description: 'High-density 60°/120° equilateral triangle mesh for angular crests & sharp wedges' },
+  { id: 'iso-fine', label: 'Isometric Micro Lattice', short: 'Iso-24', category: 'pixel', description: 'Fine ±30° isometric matrix for intricate 3D blocks & diagonal ribbons' },
+  { id: 'skew-45', label: '45° Micro Diamond', short: 'Skew 45°', category: 'pixel', description: 'High-density rotated ±45° rhombic micro-grid for slashes & X-marks' },
+  { id: 'fib-golden', label: 'Fibonacci Golden Spiral', short: 'Fib φ', category: 'compass', description: 'Golden-ratio harmonic divisions intersected with nested quarter-circle arcs' },
+  { id: 'squircle', label: 'Superellipse Squircle', short: 'Squircle', category: 'curved', description: 'App-icon rounded corner shells, pill channels & optical crosshairs' },
+  { id: 'polar-fine', label: '12×24 Precision Polar', short: 'Polar 24', category: 'curved', description: 'High-precision concentric rings + 15° radial spokes for circular badges & marks' },
   { id: 'square', label: 'Square Matrix', short: 'Square', category: 'angular', description: 'Orthogonal grid + 24 modular presets & 7 motifs' },
   { id: 'circle-spandrel', label: 'Circle in Square', short: 'Circle Sq', category: 'curved', description: 'Inscribed cell circles split into quarter-disks & concave spandrels' },
   { id: 'iso30', label: 'Isometric 30° Cube', short: 'Iso 30°', category: 'angular', description: '±30° isometric lines + vertical stems for 3D marks & cubes' },
@@ -123,7 +145,7 @@ const normAngle = (a: number): number => {
 
 const vKey = (x: number, y: number): string => `${Math.round(x * 100)},${Math.round(y * 100)}`;
 
-function edgeCmd(
+export function edgeCmd(
   fx: number,
   fy: number,
   tx: number,
@@ -155,7 +177,7 @@ function edgeCmd(
   return { fx, fy, tx, ty, kind, r, sweep, outAngle, inAngle, key, revKey };
 }
 
-function buildFaceFromSegs(id: string, segs: SegCmd[], preCx?: number, preCy?: number): GridFace | null {
+export function buildFaceFromSegs(id: string, segs: SegCmd[], preCx?: number, preCy?: number): GridFace | null {
   if (!segs.length) return null;
   let minX = Infinity;
   let minY = Infinity;
@@ -188,7 +210,7 @@ function buildFaceFromSegs(id: string, segs: SegCmd[], preCx?: number, preCy?: n
   };
 }
 
-function makePolygonFace(id: string, pts: [number, number][]): GridFace | null {
+export function makePolygonFace(id: string, pts: [number, number][]): GridFace | null {
   if (pts.length < 3) return null;
   const segs: SegCmd[] = [];
   for (let i = 0; i < pts.length; i++) {
@@ -219,7 +241,7 @@ function makePolygonFace(id: string, pts: [number, number][]): GridFace | null {
   return buildFaceFromSegs(id, segs, cx / (3 * area2), cy / (3 * area2));
 }
 
-function stitchBoundaryUnion(faces: GridFace[], selectedIds: Set<string>): string {
+function stitchBoundaryUnion(faceMap: Map<string, GridFace>, selectedIds: Set<string>): string {
   if (!selectedIds.size) return '';
   const edgeBucket = new Map<string, SegCmd[]>();
   const addEdge = (k: string, seg: SegCmd) => {
@@ -228,8 +250,9 @@ function stitchBoundaryUnion(faces: GridFace[], selectedIds: Set<string>): strin
     else edgeBucket.set(k, [seg]);
   };
 
-  for (const f of faces) {
-    if (!selectedIds.has(f.id)) continue;
+  for (const id of selectedIds) {
+    const f = faceMap.get(id);
+    if (!f) continue;
     for (const seg of f.segs) {
       const oppArr = edgeBucket.get(seg.revKey);
       if (oppArr && oppArr.length > 0) {
@@ -255,18 +278,21 @@ function stitchBoundaryUnion(faces: GridFace[], selectedIds: Set<string>): strin
 
   const used = new Set<SegCmd>();
   let path = '';
+  const sameLineDir = (a: SegCmd, b: SegCmd): boolean => {
+    if (a.kind !== 'line' || b.kind !== 'line') return false;
+    let d = Math.abs(a.outAngle - b.outAngle);
+    if (d > Math.PI) d = Math.PI * 2 - d;
+    return d < 0.006;
+  };
+
   for (const seed of remaining) {
     if (used.has(seed)) continue;
     used.add(seed);
     let cur = seed;
     const startKey = vKey(seed.fx, seed.fy);
-    path += `M${fmt(seed.fx)} ${fmt(seed.fy)}`;
+    const cmds: SegCmd[] = [seed];
     let steps = 0;
     while (steps++ < remaining.length + 2) {
-      path +=
-        cur.kind === 'line'
-          ? `L${fmt(cur.tx)} ${fmt(cur.ty)}`
-          : `A${fmt(cur.r || 1)} ${fmt(cur.r || 1)} 0 0 ${cur.sweep ?? 1} ${fmt(cur.tx)} ${fmt(cur.ty)}`;
       const tk = vKey(cur.tx, cur.ty);
       if (tk === startKey) break;
       const candidates = (byStart.get(tk) || []).filter((e) => !used.has(e));
@@ -286,7 +312,31 @@ function stitchBoundaryUnion(faces: GridFace[], selectedIds: Set<string>): strin
         }
       }
       used.add(next);
+      cmds.push(next);
       cur = next;
+    }
+
+    // Merge consecutive collinear straight segments to keep vector anchor counts clean
+    const merged: SegCmd[] = [];
+    for (const s of cmds) {
+      const prev = merged[merged.length - 1];
+      if (prev && sameLineDir(prev, s)) {
+        merged[merged.length - 1] = { ...prev, tx: s.tx, ty: s.ty };
+      } else {
+        merged.push(s);
+      }
+    }
+    if (merged.length > 1 && sameLineDir(merged[merged.length - 1], merged[0])) {
+      const last = merged.pop()!;
+      merged[0] = { ...merged[0], fx: last.fx, fy: last.fy };
+    }
+
+    path += `M${fmt(merged[0].fx)} ${fmt(merged[0].fy)}`;
+    for (const s of merged) {
+      path +=
+        s.kind === 'line'
+          ? `L${fmt(s.tx)} ${fmt(s.ty)}`
+          : `A${fmt(s.r || 1)} ${fmt(s.r || 1)} 0 0 ${s.sweep ?? 1} ${fmt(s.tx)} ${fmt(s.ty)}`;
     }
     path += 'Z';
   }
@@ -352,7 +402,7 @@ export function wrapBuiltGrid(
     wireframe,
     faces,
     faceMap,
-    unionBoundary: (sel) => stitchBoundaryUnion(faces, sel),
+    unionBoundary: (sel) => stitchBoundaryUnion(faceMap, sel),
     symmetricFaces: buildSymmetryResolver(faces, id, radialOrder),
   };
 }
@@ -361,12 +411,16 @@ export function wrapBuiltGrid(
  * 1. ANALYTIC GRID BUILDERS (0.3ms exact closed-form regions)
  * ========================================================================== */
 
-function countFor(density: DensityLevel, lo: number, med: number, hi: number): number {
+export function countFor(density: DensityLevel, lo: number, med: number, hi: number, ultra?: number): number {
+  if (density === 'ultra') return ultra ?? Math.min(hi + 4, Math.round(hi * 1.25));
   return density === 'low' ? lo : density === 'high' ? hi : med;
 }
 
-function buildSquare(density: DensityLevel): BuiltGrid {
-  const n = countFor(density, 6, 8, 12);
+export function squareCountFor(density: DensityLevel): number {
+  return countFor(density, 6, 8, 12, 16);
+}
+
+function buildSquareCore(id: GridId, label: string, n: number, density: DensityLevel): BuiltGrid {
   const s = SHEET / n;
   const faces: GridFace[] = [];
   let wf = '';
@@ -379,7 +433,11 @@ function buildSquare(density: DensityLevel): BuiltGrid {
       if (f) faces.push(f);
     }
   }
-  return wrapBuiltGrid('square', 'Square Matrix', density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces);
+}
+
+function buildSquare(density: DensityLevel): BuiltGrid {
+  return buildSquareCore('square', 'Square Matrix', squareCountFor(density), density);
 }
 
 function buildCircleSpandrel(density: DensityLevel): BuiltGrid {
@@ -494,8 +552,7 @@ function buildCircleSpandrel(density: DensityLevel): BuiltGrid {
   return wrapBuiltGrid('circle-spandrel', 'Circle in Square', density, wf, faces);
 }
 
-function buildOcta4(density: DensityLevel): BuiltGrid {
-  const n = countFor(density, 4, 6, 8);
+function buildOcta4Core(id: GridId, label: string, n: number, density: DensityLevel): BuiltGrid {
   const s = SHEET / n;
   const faces: GridFace[] = [];
   let wf = '';
@@ -521,7 +578,11 @@ function buildOcta4(density: DensityLevel): BuiltGrid {
       }
     }
   }
-  return wrapBuiltGrid('octa4', '45° Octagrid', density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces);
+}
+
+function buildOcta4(density: DensityLevel): BuiltGrid {
+  return buildOcta4Core('octa4', '45° Octagrid', countFor(density, 4, 6, 8, 12), density);
 }
 
 function buildOcta8(density: DensityLevel): BuiltGrid {
@@ -558,7 +619,7 @@ function buildOcta8(density: DensityLevel): BuiltGrid {
   return wrapBuiltGrid('octa8', '45° Precision 8-Tri', density, wf, faces);
 }
 
-function clipPolyToRect(pts: [number, number][]): [number, number][] {
+export function clipPolyToRect(pts: [number, number][]): [number, number][] {
   const clipEdge = (poly: [number, number][], inside: (p: [number, number]) => boolean, intersect: (a: [number, number], b: [number, number]) => [number, number]) => {
     const out: [number, number][] = [];
     for (let i = 0; i < poly.length; i++) {
@@ -583,8 +644,7 @@ function clipPolyToRect(pts: [number, number][]): [number, number][] {
   return p;
 }
 
-function buildTri60(density: DensityLevel): BuiltGrid {
-  const cols = countFor(density, 6, 9, 12);
+function buildTri60Core(id: GridId, label: string, cols: number, density: DensityLevel): BuiltGrid {
   const w = SHEET / cols;
   const h = (w * Math.sqrt(3)) / 2;
   const rows = Math.ceil(SHEET / h) + 1;
@@ -614,7 +674,11 @@ function buildTri60(density: DensityLevel): BuiltGrid {
       if (fB) faces.push(fB);
     }
   }
-  return wrapBuiltGrid('tri60', '60° Triangle Grid', density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces, 6);
+}
+
+function buildTri60(density: DensityLevel): BuiltGrid {
+  return buildTri60Core('tri60', '60° Triangle Grid', countFor(density, 6, 9, 12, 16), density);
 }
 
 function buildTri12(density: DensityLevel): BuiltGrid {
@@ -658,8 +722,7 @@ function buildTri12(density: DensityLevel): BuiltGrid {
   return wrapBuiltGrid('tri12', 'Hex-Tri Vertical', density, wf, faces);
 }
 
-function buildIso30(density: DensityLevel): BuiltGrid {
-  const cols = countFor(density, 6, 8, 12);
+function buildIso30Core(id: GridId, label: string, cols: number, density: DensityLevel): BuiltGrid {
   const dx = SHEET / cols;
   const dy = dx / Math.sqrt(3);
   const rows = Math.ceil(SHEET / dy) + 3;
@@ -684,11 +747,14 @@ function buildIso30(density: DensityLevel): BuiltGrid {
       if (fB) faces.push(fB);
     }
   }
-  return wrapBuiltGrid('iso30', 'Isometric 30° Cube', density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces, 6);
 }
 
-function buildRhomb45(density: DensityLevel): BuiltGrid {
-  const n = countFor(density, 5, 7, 10);
+function buildIso30(density: DensityLevel): BuiltGrid {
+  return buildIso30Core('iso30', 'Isometric 30° Cube', countFor(density, 6, 8, 12, 16), density);
+}
+
+function buildRhomb45Core(id: GridId, label: string, n: number, density: DensityLevel): BuiltGrid {
   const d = SHEET / n;
   const faces: GridFace[] = [];
   let wf = '';
@@ -706,7 +772,11 @@ function buildRhomb45(density: DensityLevel): BuiltGrid {
       if (f) faces.push(f);
     }
   }
-  return wrapBuiltGrid('rhomb45', '45° Diamond Lattice', density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces);
+}
+
+function buildRhomb45(density: DensityLevel): BuiltGrid {
+  return buildRhomb45Core('rhomb45', '45° Diamond Lattice', countFor(density, 5, 7, 10, 14), density);
 }
 
 function buildHex(density: DensityLevel): BuiltGrid {
@@ -763,9 +833,7 @@ function buildBrick(density: DensityLevel): BuiltGrid {
   return wrapBuiltGrid('brick', 'Staggered Brick', density, wf, faces);
 }
 
-function buildPolar(density: DensityLevel): BuiltGrid {
-  const rings = countFor(density, 4, 6, 8);
-  const sectors = countFor(density, 12, 16, 24);
+function buildPolarCore(id: GridId, label: string, rings: number, sectors: number, density: DensityLevel): BuiltGrid {
   const maxR = CENTER;
   const dr = maxR / rings;
   const da = (Math.PI * 2) / sectors;
@@ -816,7 +884,11 @@ function buildPolar(density: DensityLevel): BuiltGrid {
       if (f) faces.push(f);
     }
   }
-  return wrapBuiltGrid('polar', 'Polar Radial Grid', density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces, sectors >= 12 ? 8 : 4);
+}
+
+function buildPolar(density: DensityLevel): BuiltGrid {
+  return buildPolarCore('polar', 'Polar Radial Grid', countFor(density, 4, 6, 8, 10), countFor(density, 12, 16, 24, 24), density);
 }
 
 /* ============================================================================
@@ -1600,6 +1672,74 @@ function buildNestedFrames(density: DensityLevel): BuiltGrid {
   return arrangePlanarGrid('nested-frames', 'Concentric Rays Frame', density, lines, []);
 }
 
+function buildFibGolden(density: DensityLevel): BuiltGrid {
+  const phi = 1.6180339887;
+  const levels = countFor(density, 2, 3, 4, 5);
+  const lines: LineSegIn[] = [
+    { x1: CENTER, y1: 0, x2: CENTER, y2: SHEET },
+    { x1: 0, y1: CENTER, x2: SHEET, y2: CENTER },
+    { x1: 0, y1: 0, x2: SHEET, y2: SHEET },
+    { x1: SHEET, y1: 0, x2: 0, y2: SHEET },
+  ];
+  const circles: CircleIn[] = [];
+  const xs = new Set<number>();
+  for (let k = 1; k <= levels; k++) {
+    const f = CENTER / Math.pow(phi, k);
+    xs.add(f);
+    xs.add(SHEET - f);
+    if (k <= 3) circles.push({ cx: CENTER, cy: CENTER, r: f * phi });
+  }
+  for (const pos of xs) {
+    if (pos > 6 && pos < SHEET - 6) {
+      lines.push({ x1: pos, y1: 0, x2: pos, y2: SHEET });
+      lines.push({ x1: 0, y1: pos, x2: SHEET, y2: pos });
+    }
+  }
+  // Golden spiral corner focus circles
+  const rMain = Math.round(SHEET / phi);
+  circles.push(
+    { cx: SHEET - rMain, cy: rMain, r: rMain * 0.618 },
+    { cx: rMain, cy: SHEET - rMain, r: rMain * 0.618 },
+  );
+  return arrangePlanarGrid('fib-golden', 'Fibonacci Golden Spiral', density, lines, circles, 4);
+}
+
+function buildSquircle(density: DensityLevel): BuiltGrid {
+  const inset = countFor(density, 28, 24, 20, 18);
+  const cr = countFor(density, 44, 48, 52, 54);
+  const innerInset = inset + 26;
+  const lines: LineSegIn[] = [
+    { x1: CENTER, y1: 0, x2: CENTER, y2: SHEET },
+    { x1: 0, y1: CENTER, x2: SHEET, y2: CENTER },
+    { x1: inset, y1: 0, x2: inset, y2: SHEET },
+    { x1: SHEET - inset, y1: 0, x2: SHEET - inset, y2: SHEET },
+    { x1: 0, y1: inset, x2: SHEET, y2: inset },
+    { x1: 0, y1: SHEET - inset, x2: SHEET, y2: SHEET - inset },
+    { x1: 0, y1: 0, x2: SHEET, y2: SHEET },
+    { x1: SHEET, y1: 0, x2: 0, y2: SHEET },
+  ];
+  if (density !== 'low') {
+    lines.push(
+      { x1: innerInset, y1: 0, x2: innerInset, y2: SHEET },
+      { x1: SHEET - innerInset, y1: 0, x2: SHEET - innerInset, y2: SHEET },
+      { x1: 0, y1: innerInset, x2: SHEET, y2: innerInset },
+      { x1: 0, y1: SHEET - innerInset, x2: SHEET, y2: SHEET - innerInset },
+    );
+  }
+  const cOff = inset + cr;
+  const circles: CircleIn[] = [
+    { cx: cOff, cy: cOff, r: cr },
+    { cx: SHEET - cOff, cy: cOff, r: cr },
+    { cx: cOff, cy: SHEET - cOff, r: cr },
+    { cx: SHEET - cOff, cy: SHEET - cOff, r: cr },
+    { cx: CENTER, cy: CENTER, r: cr * 0.85 },
+  ];
+  if (density === 'high' || density === 'ultra') {
+    circles.push({ cx: CENTER, cy: CENTER, r: cr * 1.45 });
+  }
+  return arrangePlanarGrid('squircle', 'Superellipse Squircle', density, lines, circles, 4);
+}
+
 /* ============================================================================
  * 4. DISPATCH, CACHE & STARTER SHAPES
  * ========================================================================== */
@@ -1613,7 +1753,18 @@ export function buildGridById(id: GridId, density: DensityLevel): BuiltGrid {
 
   let built: BuiltGrid;
   switch (id) {
-    case 'adaptive': built = buildOctaRings(density); built = { ...built, id: 'adaptive', label: 'Adaptive Logo Grid' }; break;
+    case 'adaptive-mesh': built = buildOcta4Core('adaptive-mesh', 'Adaptive Contour Mesh', countFor(density, 10, 14, 18, 22), density); break;
+    case 'adaptive': built = buildOctaRings(density); built = { ...built, id: 'adaptive', label: 'Adaptive Construct' }; break;
+    case 'pixel-16': built = buildSquareCore('pixel-16', '16×16 Icon Pixel', countFor(density, 10, 16, 20, 24), density); break;
+    case 'pixel-24': built = buildSquareCore('pixel-24', '24×24 System Pixel', countFor(density, 12, 24, 28, 32), density); break;
+    case 'pixel-32': built = buildSquareCore('pixel-32', '32×32 Micro Pixel', countFor(density, 14, 32, 36, 40), density); break;
+    case 'octa-pixel': built = buildOcta4Core('octa-pixel', '16×16 Bevel Octa-Pixel', countFor(density, 8, 12, 16, 20), density); break;
+    case 'tri-pixel': built = buildTri60Core('tri-pixel', 'Delta Micro Mesh', countFor(density, 10, 16, 22, 26), density); break;
+    case 'iso-fine': built = buildIso30Core('iso-fine', 'Isometric Micro Lattice', countFor(density, 10, 14, 18, 22), density); break;
+    case 'skew-45': built = buildRhomb45Core('skew-45', '45° Micro Diamond', countFor(density, 8, 12, 16, 20), density); break;
+    case 'fib-golden': built = buildFibGolden(density); break;
+    case 'squircle': built = buildSquircle(density); break;
+    case 'polar-fine': built = buildPolarCore('polar-fine', '12×24 Precision Polar', countFor(density, 6, 10, 12, 14), countFor(density, 16, 24, 24, 32), density); break;
     case 'square': built = buildSquare(density); break;
     case 'circle-spandrel': built = buildCircleSpandrel(density); break;
     case 'octa4': built = buildOcta4(density); break;

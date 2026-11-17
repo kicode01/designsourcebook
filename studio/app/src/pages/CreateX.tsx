@@ -17,6 +17,7 @@ import {
   CONSTRUCTION_GRIDS,
   gridWireframeThumb,
   SHEET,
+  squareCountFor,
   type BuiltGrid,
   type DensityLevel,
   type GridCategory,
@@ -26,11 +27,14 @@ import {
 } from '../engine/gridArrangement';
 import {
   analyzeMarkForGrid,
+  buildAdaptiveContourMesh,
   buildAdaptiveGridForSvg,
   buildTraceSvgInner,
-  matchMarkSilhouetteToFaces,
+  evaluateCandidateGrids,
+  evaluateGridMatch,
+  getMarkRasterMask,
   rankGridsForAnalysis,
-  type MarkGridAnalysis,
+  type MarkRasterMask,
 } from '../engine/adaptiveGrid';
 import { parseSvgAnatomy, sanitizeSvg } from '../engine/svgAnatomy';
 import { useProject, type ActiveMark } from '../state/project';
@@ -86,10 +90,12 @@ const DENSITIES: { id: DensityLevel; label: string }[] = [
   { id: 'low', label: 'Coarse' },
   { id: 'med', label: 'Balanced' },
   { id: 'high', label: 'Fine' },
+  { id: 'ultra', label: 'Ultra' },
 ];
 
 const CATEGORIES: { id: GridFilterCat; label: string }[] = [
   { id: 'best', label: 'Best Fit' },
+  { id: 'pixel', label: 'Pixel' },
   { id: 'all', label: `All (${CONSTRUCTION_GRIDS.length})` },
   { id: 'angular', label: 'Angular' },
   { id: 'curved', label: 'Curved' },
@@ -124,7 +130,7 @@ export function CreateX() {
   const { theme, activeMark, setActiveMark, designSystem } = useProject();
   const openedWithQuery = useMemo(() => hasMarkQueryInHash(), []);
 
-  const [gridId, setGridId] = useState<GridId>(openedWithQuery ? 'adaptive' : DEFAULT_GRID);
+  const [gridId, setGridId] = useState<GridId>(openedWithQuery ? 'adaptive-mesh' : DEFAULT_GRID);
   const [density, setDensity] = useState<DensityLevel>(DEFAULT_DENSITY);
   const [motif, setMotif] = useState<Motif>('square');
   const [selected, setSelected] = useState<Set<string>>(() =>
@@ -149,15 +155,40 @@ export function CreateX() {
   const [toast, setToast] = useState<string | null>(null);
 
   const markAnalysis = useMemo(() => analyzeMarkForGrid(activeMark.svg), [activeMark.svg]);
-  const rankedGrids = useMemo(() => rankGridsForAnalysis(markAnalysis), [markAnalysis]);
+  const [markMask, setMarkMask] = useState<MarkRasterMask>(() => markAnalysis.fallbackMask);
+
+  useEffect(() => {
+    setMarkMask(markAnalysis.fallbackMask);
+    let cancelled = false;
+    void getMarkRasterMask(activeMark.svg, markAnalysis.transform, markAnalysis.fallbackMask).then(
+      (exact) => {
+        if (!cancelled) setMarkMask(exact);
+      },
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [activeMark.svg, markAnalysis.fallbackMask, markAnalysis.transform]);
+
+  const candidateEval = useMemo(
+    () => evaluateCandidateGrids(activeMark.svg, density, markMask),
+    [activeMark.svg, density, markMask],
+  );
+  const rankedGrids = useMemo(
+    () => rankGridsForAnalysis(markAnalysis, candidateEval.measuredIou),
+    [markAnalysis, candidateEval.measuredIou],
+  );
   const fitScoreMap = useMemo(() => new Map(rankedGrids.map((r) => [r.id, r])), [rankedGrids]);
 
-  const builtGrid = useMemo(
-    () =>
-      gridId === 'adaptive'
-        ? buildAdaptiveGridForSvg(activeMark.svg, density)
-        : buildGridById(gridId, density),
-    [gridId, density, activeMark.svg],
+  const builtGrid = useMemo(() => {
+    if (gridId === 'adaptive-mesh') return candidateEval.contourGrid;
+    if (gridId === 'adaptive') return candidateEval.constructGrid;
+    return buildGridById(gridId, density);
+  }, [gridId, density, candidateEval]);
+
+  const currentAccuracy = useMemo(
+    () => evaluateGridMatch(builtGrid, markMask).iouPct,
+    [builtGrid, markMask],
   );
 
   const hitCtx = useMemo(() => {
@@ -179,7 +210,12 @@ export function CreateX() {
     return m;
   }, [builtGrid]);
 
-  const adaptivePreviewWire = useMemo(
+  const adaptiveMeshThumbWire = useMemo(
+    () => buildAdaptiveContourMesh(activeMark.svg, 'low', markMask).wireframe,
+    [activeMark.svg, markMask],
+  );
+
+  const adaptiveConstructThumbWire = useMemo(
     () => buildAdaptiveGridForSvg(activeMark.svg, 'low').wireframe,
     [activeMark.svg],
   );
@@ -188,9 +224,10 @@ export function CreateX() {
     const base = Object.fromEntries(
       CONSTRUCTION_GRIDS.map((g) => [g.id, gridWireframeThumb(g.id)]),
     ) as Record<GridId, string>;
-    base.adaptive = adaptivePreviewWire;
+    base['adaptive-mesh'] = adaptiveMeshThumbWire;
+    base.adaptive = adaptiveConstructThumbWire;
     return base;
-  }, [adaptivePreviewWire]);
+  }, [adaptiveMeshThumbWire, adaptiveConstructThumbWire]);
 
   const traceSvgHtml = useMemo(() => {
     if (!showTrace) return '';
@@ -274,7 +311,7 @@ export function CreateX() {
 
   const markPath = useMemo(() => {
     if (gridId === 'square' && motif !== 'square') {
-      const n = density === 'low' ? 6 : density === 'high' ? 12 : 8;
+      const n = squareCountFor(density);
       const cellSet = new Set<string>();
       for (const id of selected) {
         const m = /^sq-(\d+)-(\d+)$/.exec(id);
@@ -433,40 +470,53 @@ export function CreateX() {
     }
   };
 
-  const fitMarkToBuiltGrid = useCallback(
-    async (targetGrid: BuiltGrid, svgText: string, analysis: MarkGridAnalysis) => {
-      const tok = ++fitTokenRef.current;
-      const hits = await matchMarkSilhouetteToFaces(svgText, targetGrid, analysis.transform);
-      if (tok !== fitTokenRef.current) return;
-      setSelected(hits);
-    },
-    [],
-  );
-
-  const adaptMarkToGrid = useCallback(
-    (
+  const fitMarkAsync = useCallback(
+    async (
       mark: ActiveMark,
-      targetId: GridId = 'adaptive',
+      preferredId?: GridId,
       targetDensity: DensityLevel = density,
       switchToBestCat = true,
     ) => {
-      const nextAnalysis = analyzeMarkForGrid(mark.svg);
-      const nextBuilt =
-        targetId === 'adaptive'
-          ? buildAdaptiveGridForSvg(mark.svg, targetDensity)
-          : buildGridById(targetId, targetDensity);
-      setGridId(targetId);
+      const tok = ++fitTokenRef.current;
+      const analysis = analyzeMarkForGrid(mark.svg);
+      const exactMask = await getMarkRasterMask(mark.svg, analysis.transform, analysis.fallbackMask);
+      if (tok !== fitTokenRef.current) return;
+
+      setMarkMask(exactMask);
+      const ev = evaluateCandidateGrids(mark.svg, targetDensity, exactMask);
+      const chosenId = preferredId ?? ev.recommendedId;
+      const chosenBuilt =
+        chosenId === 'adaptive-mesh'
+          ? ev.contourGrid
+          : chosenId === 'adaptive'
+            ? ev.constructGrid
+            : buildGridById(chosenId, targetDensity);
+
+      const { selected: fitted } = evaluateGridMatch(chosenBuilt, exactMask);
+      setGridId(chosenId);
       setDensity(targetDensity);
-      if (targetId !== 'square') setMotif('square');
+      if (chosenId !== 'square') setMotif('square');
       if (switchToBestCat) setGridCat('best');
       setAdaptedMarkId(mark.id);
       setShowTrace(true);
       setAutoFitMark(true);
       setTip(false);
-      setSymmetry(nextAnalysis.mirrorX > 0.78 ? 'x' : nextAnalysis.radialOrder >= 4 ? 'radial' : 'none');
-      void fitMarkToBuiltGrid(nextBuilt, mark.svg, nextAnalysis);
+      setSymmetry(analysis.mirrorX > 0.78 ? 'x' : analysis.radialOrder >= 4 ? 'radial' : 'none');
+      setSelected(fitted);
     },
-    [density, fitMarkToBuiltGrid],
+    [density],
+  );
+
+  const adaptMarkToGrid = useCallback(
+    (
+      mark: ActiveMark,
+      preferredId?: GridId,
+      targetDensity: DensityLevel = density,
+      switchToBestCat = true,
+    ) => {
+      void fitMarkAsync(mark, preferredId, targetDensity, switchToBestCat);
+    },
+    [fitMarkAsync, density],
   );
 
   const handleMarkPicked = useCallback(
@@ -475,7 +525,7 @@ export function CreateX() {
       setActiveMark(mark);
       setPast([]);
       setFuture([]);
-      adaptMarkToGrid(mark, 'adaptive', density, true);
+      adaptMarkToGrid(mark, undefined, density, true);
       flash(`Adaptive grid fitted to ${mark.name}`);
     },
     [setActiveMark, adaptMarkToGrid, density, flash],
@@ -513,52 +563,54 @@ export function CreateX() {
     lastExternalKeyRef.current = key;
     setPast([]);
     setFuture([]);
-    adaptMarkToGrid(activeMark, 'adaptive', density, true);
+    adaptMarkToGrid(activeMark, undefined, density, true);
     flash(`Adaptive grid fitted to ${activeMark.name}`);
   }, [activeMark, adaptMarkToGrid, density, flash]);
 
   const switchConstructionGrid = (nextId: GridId, nextDensity: DensityLevel = density) => {
     if (nextId === gridId && nextDensity === density) return;
-    if (nextId === 'adaptive' && !adaptedMarkId) {
+    if ((nextId === 'adaptive' || nextId === 'adaptive-mesh') && !adaptedMarkId) {
       pushHistory();
-      adaptMarkToGrid(activeMark, 'adaptive', nextDensity, false);
+      adaptMarkToGrid(activeMark, nextId, nextDensity, false);
       flash(`Adaptive grid fitted to ${activeMark.name}`);
       return;
     }
     pushHistory();
     const nextBuilt =
-      nextId === 'adaptive'
-        ? buildAdaptiveGridForSvg(activeMark.svg, nextDensity)
-        : buildGridById(nextId, nextDensity);
-    let nextSelected = new Set<string>();
+      nextId === 'adaptive-mesh'
+        ? buildAdaptiveContourMesh(activeMark.svg, nextDensity, markMask)
+        : nextId === 'adaptive'
+          ? buildAdaptiveGridForSvg(activeMark.svg, nextDensity)
+          : buildGridById(nextId, nextDensity);
 
-    // Preserve active mark silhouette across grid switches & subdivisions cleanly
-    if (markPath && hitCtx) {
-      try {
-        const p2d = new Path2D(markPath);
-        for (const f of nextBuilt.faces) {
-          if (hitCtx.isPointInPath(p2d, f.cx, f.cy)) nextSelected.add(f.id);
+    let nextSelected: Set<string>;
+    if (adaptedMarkId && autoFitMark) {
+      nextSelected = evaluateGridMatch(nextBuilt, markMask).selected;
+    } else {
+      nextSelected = new Set<string>();
+      if (markPath && hitCtx) {
+        try {
+          const p2d = new Path2D(markPath);
+          for (const f of nextBuilt.faces) {
+            if (hitCtx.isPointInPath(p2d, f.cx, f.cy)) nextSelected.add(f.id);
+          }
+        } catch {
+          /* ignore */
         }
-      } catch {
-        /* ignore */
       }
-    }
-    if (!nextSelected.size && selected.size > 0) {
-      // Fallback: map nearest centroid
-      for (const id of selected) {
-        const oldF = builtGrid.faceMap.get(id);
-        if (!oldF) continue;
-        const hits = nextBuilt.symmetricFaces(oldF, 'none');
-        hits.forEach((hid) => nextSelected.add(hid));
+      if (!nextSelected.size && selected.size > 0) {
+        for (const id of selected) {
+          const oldF = builtGrid.faceMap.get(id);
+          if (!oldF) continue;
+          const hits = nextBuilt.symmetricFaces(oldF, 'none');
+          hits.forEach((hid) => nextSelected.add(hid));
+        }
       }
     }
     setGridId(nextId);
     setDensity(nextDensity);
     if (nextId !== 'square') setMotif('square');
     setSelected(nextSelected);
-    if (adaptedMarkId && autoFitMark) {
-      void fitMarkToBuiltGrid(nextBuilt, activeMark.svg, markAnalysis);
-    }
     const meta = CONSTRUCTION_GRIDS.find((g) => g.id === nextId);
     if (meta && nextId !== gridId) flash(`${meta.label} grid active`);
   };
@@ -570,7 +622,7 @@ export function CreateX() {
 
   const applySquarePreset = (presetId: string) => {
     const preset = GRID_PRESETS.find((p) => p.id === presetId) ?? GRID_PRESETS[0];
-    const n = density === 'low' ? 6 : density === 'high' ? 12 : 8;
+    const n = squareCountFor(density);
     const sqBuilt = buildGridById('square', density);
     const cells = presetCells(presetId, n);
     const nextSel = new Set<string>();
@@ -962,29 +1014,43 @@ export function CreateX() {
                   />
                   <div className="createx-source-meta">
                     <strong>{activeMark.name}</strong>
-                    <span>{markAnalysis.summaryText}</span>
+                    <span>{currentAccuracy}% fit · {markAnalysis.summaryText}</span>
                   </div>
+                  <button
+                    type="button"
+                    className="ds-action-btn"
+                    style={{ padding: '4px 9px', fontSize: 11, flexShrink: 0 }}
+                    onClick={() => setMarkOpen(true)}
+                  >
+                    Load SVG
+                  </button>
                 </div>
                 <div className="createx-source-actions">
                   <button
                     type="button"
-                    className={`ds-action-btn ${gridId === 'adaptive' ? 'is-primary' : ''}`}
+                    className={`ds-action-btn ${gridId === 'adaptive-mesh' ? 'is-primary' : ''}`}
                     style={{ justifyContent: 'center' }}
+                    title="Variable quadtree + 45° bevel slicing fitted to exact logo curves & contours"
                     onClick={() => {
                       pushHistory();
-                      adaptMarkToGrid(activeMark, 'adaptive', density, true);
-                      flash(`Adaptive grid fitted to ${activeMark.name}`);
+                      adaptMarkToGrid(activeMark, 'adaptive-mesh', density, true);
+                      flash(`Contour mesh fitted to ${activeMark.name}`);
                     }}
                   >
-                    Adapt Grid
+                    Adapt Contour
                   </button>
                   <button
                     type="button"
-                    className="ds-action-btn"
+                    className={`ds-action-btn ${gridId === 'adaptive' ? 'is-primary' : ''}`}
                     style={{ justifyContent: 'center' }}
-                    onClick={() => setMarkOpen(true)}
+                    title="Architectural stems, bevel rays & compass circles synthesized from logo geometry"
+                    onClick={() => {
+                      pushHistory();
+                      adaptMarkToGrid(activeMark, 'adaptive', density, true);
+                      flash(`Construct grid fitted to ${activeMark.name}`);
+                    }}
                   >
-                    Load Logo / SVG
+                    Adapt Construct
                   </button>
                 </div>
                 <div className="createx-source-toggles">
@@ -1000,12 +1066,12 @@ export function CreateX() {
                     type="button"
                     className={`page-chip ${autoFitMark ? 'is-active' : ''}`}
                     aria-pressed={autoFitMark}
-                    title="Automatically fit the loaded logo silhouette when switching between Best Fit grids"
+                    title="Automatically fit the loaded logo silhouette when switching between grids"
                     onClick={() => {
                       const next = !autoFitMark;
                       setAutoFitMark(next);
                       if (next) {
-                        void fitMarkToBuiltGrid(builtGrid, activeMark.svg, markAnalysis);
+                        setSelected(evaluateGridMatch(builtGrid, markMask).selected);
                       }
                     }}
                   >
@@ -1017,7 +1083,7 @@ export function CreateX() {
                       className="page-chip"
                       onClick={() => {
                         pushHistory();
-                        void fitMarkToBuiltGrid(builtGrid, activeMark.svg, markAnalysis);
+                        setSelected(evaluateGridMatch(builtGrid, markMask).selected);
                       }}
                     >
                       Refit Facets
@@ -1118,7 +1184,7 @@ export function CreateX() {
                       </svg>
                       {showBadge && (
                         <span className="grid-thumb-score">
-                          {g.id === 'adaptive' ? 'Custom' : `${fit.score}%`}
+                          {fit.score}%
                         </span>
                       )}
                       <span className="grid-thumb-label">{g.short}</span>
