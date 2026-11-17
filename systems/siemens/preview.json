@@ -514,8 +514,83 @@
       "textColor": "#000028",
       "rounded": "8px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00eaff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00eaff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000028",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#000028",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#e0f2f4",
+      "textColor": "#000028",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Siemens iX** is a light-first design system anchored on `#ffffff` canvas surfaces with `#000028` primary ink (20.4:1 contrast) and `#00eaff` brand accent.\n\nTypography centers cleanly on `Arial` (22px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#e0f2f4` surface layering.\n\nMaintained by **Siemens**. Source: published token package (https://github.com/siemens/ix), repo https://github.com/siemens/ix, package `@siemens/ix`, frameworks: web-components, react, angular, vue. Inventory: **91** colors, **13** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#e0f2f4` cards; separate sibling sections using `#B3B3BE` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#e0f2f4`) and `1px solid #B3B3BE` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00eaff` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Siemens iX Icons",
+    "package": "@siemens/ix-icons",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "curated",
+    "url": "https://ix.siemens.io"
+  },
+  "overview": "**Siemens iX** is a light-first design system anchored on `#ffffff` canvas surfaces with `#000028` primary ink (20.4:1 contrast) and `#00eaff` brand accent.\n\nTypography centers cleanly on `Arial` (22px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#e0f2f4` surface layering.\n\nMaintained by **Siemens**. Source: published token package (https://github.com/siemens/ix), repo https://github.com/siemens/ix, package `@siemens/ix`, frameworks: web-components, react, angular, vue. Inventory: **91** colors, **13** typography steps, and **16** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#e0f2f4` cards; separate sibling sections using `#B3B3BE` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#e0f2f4`) and `1px solid #B3B3BE` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00eaff` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#000028` primary text and `#000028` secondary labels.\n- Use `#00eaff` with `#0b0b0c` text (13.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#e0f2f4` surface shifts and `#B3B3BE` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

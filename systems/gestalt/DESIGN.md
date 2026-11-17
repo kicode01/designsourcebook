@@ -131,6 +131,15 @@ rounded:
   badge: 999px
   nav: 16px
   default: 16px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#bd001c"
@@ -172,6 +181,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 16px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f9f9f9"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#bd001c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#bd001c"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f9f9f9"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f9f9f9"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#FFFFFF"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f9f9f9"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Pinterest Gestalt
@@ -182,7 +231,7 @@ components:
 
 Typography centers cleanly on `System UI` (36px display down to 20px body), unified by `16px` base corner radius and stepped `#FFFFFF` -> `#f9f9f9` surface layering.
 
-Maintained by **Pinterest**. Source: published token package (https://gestalt.pinterest.systems/), repo https://github.com/pinterest/gestalt, package `gestalt-design-tokens`, frameworks: react. Inventory: **90** colors, **15** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Pinterest**. Source: published token package (https://gestalt.pinterest.systems/), repo https://github.com/pinterest/gestalt, package `gestalt-design-tokens`, frameworks: react. Inventory: **90** colors, **15** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -205,7 +254,7 @@ Maintained by **Pinterest**. Source: published token package (https://gestalt.pi
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#e8e7e1` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -217,6 +266,7 @@ Maintained by **Pinterest**. Source: published token package (https://gestalt.pi
 
 - **Base Corner Geometry**: `16px` (Buttons `16px` · Inputs `16px` · Cards `16px` · Badges `999px` · Navigation `16px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `16px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -228,6 +278,14 @@ Maintained by **Pinterest**. Source: published token package (https://gestalt.pi
 - **`badge-brand` (badge)**: bg `#bd001c`, ink `#ffffff`, (6.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#a8bb63`, ink `#0b0b0c`, (9.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `16px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#bd001c`, ink `#f7f7f8`, (6.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#bd001c`, ink `#f7f7f8`, (6.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `12px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#FFFFFF`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#FFFFFF`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f9f9f9`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

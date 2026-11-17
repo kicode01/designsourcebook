@@ -653,22 +653,22 @@
     },
     {
       "key": "link-info",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(13,202,240,1)"
     },
     {
       "key": "link-dark-2",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(33,37,41,1)"
     },
     {
       "key": "link-light-3",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(248,249,250,1)"
     },
     {
       "key": "select",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "#fff",
       "textColor": "#212529",
       "rounded": "0.375rem",
@@ -677,17 +677,17 @@
     },
     {
       "key": "link-danger-4",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(220,53,69,1)"
     },
     {
       "key": "link-primary-5",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(13,110,253,1)"
     },
     {
       "key": "link-success-6",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(25,135,84,1)"
     },
     {
@@ -707,7 +707,7 @@
     },
     {
       "key": "banner-preview",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#d0e2ff",
       "textColor": "#0043ce",
       "padding": "8px"
@@ -740,8 +740,66 @@
       "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#764edd",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#764edd",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f2f4f5",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f2f4f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Firefox Acorn Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#764edd` brand accent.\n\nTypography centers cleanly on `Atkinson Hyperlegible` (80px display down to 16px body), unified by `0.375rem` base corner radius and stepped `#fff` -> `#f2f4f5` surface layering.\n\nMaintained by **Firefox**. Source: live stylesheet extraction (https://acorn.firefox.com/), repo https://github.com/mozilla/acorn-icons, frameworks: web-components, css. Inventory: **91** colors, **45** typography steps, and **15** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `0.375rem 2.25rem 0.375rem 0.75rem`, `0.375rem 0.75rem`, `8px`, `10px 18px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `#f2f4f5` cards; separate sibling sections using `#e9ecef` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f2f4f5`) and `1px solid #e9ecef` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#764edd` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#764edd` with `#f7f7f8` text (5.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Atkinson Hyperlegible` headings with `Atkinson Hyperlegible` body copy using documented weights and scale steps.\n- Apply `0.375rem` base geometry across inputs and buttons (0.375rem on outer containers).\n- Separate containers via `#f2f4f5` surface shifts and `#e9ecef` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.375rem` baseline.\n- Do not truncate or drop border contrast on `select` fields and secondary buttons."
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Firefox Acorn Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#764edd` brand accent.\n\nTypography centers cleanly on `Atkinson Hyperlegible` (80px display down to 16px body), unified by `0.375rem` base corner radius and stepped `#fff` -> `#f2f4f5` surface layering.\n\nMaintained by **Firefox**. Source: live stylesheet extraction (https://acorn.firefox.com/), repo https://github.com/mozilla/acorn-icons, frameworks: web-components, css. Inventory: **91** colors, **45** typography steps, and **21** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0.375rem 2.25rem 0.375rem 0.75rem`, `0.375rem 0.75rem`, `8px`, `10px 18px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `#f2f4f5` cards; separate sibling sections using `#e9ecef` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f2f4f5`) and `1px solid #e9ecef` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#764edd` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#764edd` with `#f7f7f8` text (5.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Atkinson Hyperlegible` headings with `Atkinson Hyperlegible` body copy using documented weights and scale steps.\n- Apply `0.375rem` base geometry across inputs and buttons (0.375rem on outer containers).\n- Separate containers via `#f2f4f5` surface shifts and `#e9ecef` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.375rem` baseline.\n- Do not truncate or drop border contrast on `input-group-text-2` fields and secondary buttons."
 }

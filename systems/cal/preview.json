@@ -266,8 +266,83 @@
       "textColor": "#242424",
       "rounded": "8px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#242424",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0099ff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0099ff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#242424",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#242424",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#242424",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#242424",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#242424",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Lucide",
+    "package": "lucide-react",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 2,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "curated",
+    "url": "https://lucide.dev"
+  },
   "overview": "Cal.com's website is a masterclass in monochromatic restraint — a grayscale world where boldness comes not from color but from the sheer confidence of black text on white space. Inspired by Uber's minimal aesthetic, the palette is deliberately stripped of hue: near-black headings (`#242424`), mid-gray secondary text (`#898989`), and pure white surfaces. Color is treated as a foreign substance — when it appears (a rare blue link, a green trust badge), it feels like a controlled accent in an otherwise black-and-white photograph.\n\nCal Sans, the brand's custom geometric display typeface designed by Mark Davis, is the visual centerpiece. Letters are intentionally spaced extremely close at large sizes, creating dense, architectural headlines that feel like they're carved into the page. At 64px and 48px, Cal Sans headings sit at weight 600 with a tight 1.10 line-height — confident, compressed, and immediately recognizable. For body text, the system switches to Inter, providing \"rock-solid\" readability that complements Cal Sans's display personality. The typography pairing creates a clear division: Cal Sans speaks, Inter explains.\n\nThe elevation system is notably sophisticated for a minimal site — 11 shadow definitions create a nuanced depth hierarchy using multi-layered shadows that combine ring borders (`0px 0px 0px 1px`), soft diffused shadows, and inset highlights. This shadow-first approach to depth (rather than border-first) gives surfaces a subtle three-dimensionality that feels modern and polished. Built on Framer with a border-radius scale from 2px to 9999px (pill), Cal.com balances geometric precision with soft, rounded interactive elements.\n\n**Key Characteristics:**\n- Purely grayscale brand palette — no brand colors, boldness through monochrome\n- Cal Sans custom geometric display font with extremely tight default letter-spacing\n- Multi-layered shadow system (11 definitions) with ring borders + diffused shadows + inset highlights\n- Cal Sans for headings, Inter for body — clean typographic division\n- Wide border-radius scale from 2px to 9999px (pill) — versatile rounding\n- White canvas with near-black (#242424) text — maximum contrast, zero decoration\n- Product screenshots as primary visual content — the scheduling UI sells itself\n- Built on Framer platform\n\n### Layout & Spacing\n### Spacing System\n- **Base unit**: 8px\n- **Scale**: 1px, 2px, 3px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 28px, 80px, 96px\n- **Section padding**: 80px–96px vertical between major sections (generous)\n- **Card padding**: 12px–24px internal\n- **Component gaps**: 4px–8px between related elements\n- **Notable jump**: From 28px to 80px — a deliberate gap emphasizing the section-level spacing tier\n\n### Grid & Container\n- **Max width**: ~1200px content container, centered\n- **Column patterns**: Full-width hero, centered text blocks, 2-3 column feature grids\n- **Feature showcase**: Product screenshots flanked by description text\n- **Breakpoints**: 98px, 640px, 768px, 810px, 1024px, 1199px — Framer-generated\n\n### Whitespace Philosophy\n- **Lavish section spacing**: 80px–96px between sections creates a breathable, premium feel\n- **Product-first content**: Screenshots dominate the visual space — minimal surrounding decoration\n- **Centered headlines**: Cal Sans headings centered with generous margins above and below\n\n### Border Radius Scale\n- **2px**: Subtle rounding on inline elements\n- **4px**: Small UI components\n- **6px–7px**: Buttons, small cards, images\n- **8px**: Standard interactive elements — buttons, inputs, images\n- **12px**: Medium containers — links, larger cards, images\n- **16px**: Large section containers\n- **29px**: Special rounded elements\n- **100px**: Large rounding — nearly circular on small elements\n- **1000px**: Very large rounding\n- **9999px**: Full pill shape — badges, links",
   "dos": "### Do\n- Use Cal Sans exclusively for headings (24px+) and never for body text — it's a display font with tight default spacing\n- Apply positive letter-spacing (+0.2px) when using Cal Sans below 24px — the font cramps at small sizes without it\n- Maintain the grayscale palette — boldness comes from contrast, not color\n- Use the multi-layered shadow system for card elevation — ring shadow + diffused shadow + contact shadow\n- Keep backgrounds pure white — the monochrome philosophy requires a clean canvas\n- Use Inter for all body text at weight 300–600 — it's the reliable counterpart to Cal Sans's display personality\n- Let product screenshots be the visual content — no illustrations, no decorative graphics\n- Apply generous section spacing (80px–96px) — the breathing room is essential to the premium feel\n\n### Don't\n- Use Cal Sans for body text or text below 16px — it wasn't designed for extended reading\n- Add brand colors — Cal.com is intentionally grayscale, color is reserved for links and UI states only\n- Use CSS borders when shadows can achieve the same containment — the ring-shadow technique is the system's approach\n- Apply negative letter-spacing to Cal Sans at small sizes — it needs positive spacing (+0.2px) below 24px\n- Create heavy, dark shadows — Cal.com's shadows are subtle (5% opacity diffused) with sharp contact edges\n- Use illustrations, abstract graphics, or decorative elements — the visual language is typography + product UI only\n- Mix Cal Sans weights — the font is designed for weight 600, other weights break the intended character\n- Reduce section spacing below 48px — the generous whitespace is core to the premium monochrome aesthetic"
 }

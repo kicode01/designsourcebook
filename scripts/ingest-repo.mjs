@@ -81,7 +81,7 @@ function main() {
     root = sub;
   }
 
-  const { colors, types, components, harvested, usedFiles } = collectTokens(root);
+  const { colors, types, components, icons, harvested, usedFiles } = collectTokens(root);
 
   if (!Object.keys(colors).length) {
     const why = "no colour tokens found in the repository";
@@ -98,6 +98,7 @@ function main() {
     colors,
     types,
     components,
+    icons,
     license: "see repository",
     homepage: url.replace(/\.git$/, ""),
     repo: url.replace(/\.git$/, ""),

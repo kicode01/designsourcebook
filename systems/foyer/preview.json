@@ -316,7 +316,7 @@
     },
     {
       "key": "link-text",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "#3497ff"
     },
     {
@@ -329,7 +329,7 @@
     },
     {
       "key": "link-2",
-      "kind": "nav",
+      "kind": "link",
       "backgroundColor": "#fff",
       "rounded": "4px",
       "border": "1px solid rgba(0,0,0,.15)",
@@ -350,7 +350,7 @@
     },
     {
       "key": "link-3",
-      "kind": "nav",
+      "kind": "link",
       "backgroundColor": "#fff",
       "rounded": "4px",
       "border": "1px solid rgba(0,0,0,.15)",
@@ -388,22 +388,22 @@
     },
     {
       "key": "blue-grey-link-4",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "#6f8291"
     },
     {
       "key": "link-5",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "#6f8291"
     },
     {
       "key": "link-background-6",
-      "kind": "nav",
+      "kind": "link",
       "backgroundColor": "#3497ff"
     },
     {
       "key": "tab-placeholder",
-      "kind": "nav",
+      "kind": "tabs",
       "backgroundColor": "rgba(246,62,124,.05)",
       "rounded": "3px",
       "border": "1px dashed rgba(246,62,124,.5)"
@@ -436,24 +436,24 @@
     },
     {
       "key": "banner-background",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#e20b0b"
     },
     {
       "key": "tab-overlay-2",
-      "kind": "nav",
+      "kind": "tabs",
       "backgroundColor": "rgba(246,62,124,.05)",
       "rounded": "3px",
       "border": "1px dashed #f63e7c"
     },
     {
       "key": "callout-block-background-1-2",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#fffcc3"
     },
     {
       "key": "callout-block-background-2-3",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#e2f1ff"
     },
     {
@@ -463,10 +463,68 @@
     },
     {
       "key": "tab-view-name",
-      "kind": "nav",
+      "kind": "tabs",
       "textColor": "#605f60"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0B42C8",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0B42C8",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Foyer Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0B42C8` brand accent.\n\nTypography centers cleanly on `DM sans` (72px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Foyer**. Source: live stylesheet extraction (https://design.foyer.lu/), frameworks: css. Inventory: **49** colors, **12** typography steps, and **26** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 26 component tokens with documented paddings: `5px`, `2px`, `12px 25px`, `7px 15px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#E1E6EF` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 10px 0 rgba(0,0,0,.1)`, `0 0 10px 0 rgba(0,0,0,.1)`) paired with `#E1E6EF` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0B42C8` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Foyer Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0B42C8` brand accent.\n\nTypography centers cleanly on `DM sans` (72px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Foyer**. Source: live stylesheet extraction (https://design.foyer.lu/), frameworks: css. Inventory: **49** colors, **12** typography steps, and **32** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 32 component tokens with documented paddings: `5px`, `2px`, `12px 25px`, `7px 15px`, `8px 12px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#E1E6EF` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 10px 0 rgba(0,0,0,.1)`, `0 0 10px 0 rgba(0,0,0,.1)`) paired with `#E1E6EF` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0B42C8` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0B42C8` with `#f7f7f8` text (7.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `DM sans` headings with `DM sans` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#E1E6EF` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

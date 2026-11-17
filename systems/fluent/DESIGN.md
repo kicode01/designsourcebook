@@ -59,6 +59,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Fluent System Icons
+  package: "@fluentui/react-icons"
+  style: outline
+  grid: 20
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://fluent2.microsoft.design/iconography"
 components:
   button-primary:
     backgroundColor: "#750b1c"
@@ -100,6 +110,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f9f0f2"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#750b1c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#750b1c"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f9f0f2"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f9f0f2"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f9f0f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Fluent 2
@@ -110,7 +160,7 @@ components:
 
 Typography centers cleanly on `Segoe UI` (68px display down to 20px body), unified by `6px` base corner radius and stepped `#ffffff` -> `#f9f0f2` surface layering.
 
-Maintained by **Microsoft**. Source: published token package, repo https://github.com/microsoft/fluentui, package `@fluentui/tokens`, frameworks: react, web-components. Inventory: **22** colors, **13** typography steps, and **8** documented components (MIT license).
+Maintained by **Microsoft**. Source: published token package, repo https://github.com/microsoft/fluentui, package `@fluentui/tokens`, frameworks: react, web-components. Inventory: **22** colors, **13** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -133,7 +183,7 @@ Maintained by **Microsoft**. Source: published token package, repo https://githu
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f9f0f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -145,6 +195,7 @@ Maintained by **Microsoft**. Source: published token package, repo https://githu
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Fluent System Icons (`@fluentui/react-icons`) on a `20x20` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -156,6 +207,14 @@ Maintained by **Microsoft**. Source: published token package, repo https://githu
 - **`badge-brand` (badge)**: bg `#750b1c`, ink `#ffffff`, (11.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f9f0f2`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f9f0f2`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#750b1c`, ink `#f7f7f8`, (10.8:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#750b1c`, ink `#f7f7f8`, (10.8:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f9f0f2`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f9f0f2`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f9f0f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

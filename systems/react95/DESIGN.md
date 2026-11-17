@@ -74,6 +74,15 @@ rounded:
   badge: 999px
   nav: 0px
   default: 0px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: derived
 components:
   button-primary:
     backgroundColor: "rgb(65,187,241)"
@@ -115,6 +124,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "rgb(238,244,252)"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgb(65,187,241)"
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgb(65,187,241)"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(238,244,252)"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(238,244,252)"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgb(255,255,255)"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgb(255,255,255)"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(238,244,252)"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # React95
@@ -125,7 +174,7 @@ components:
 
 Typography centers cleanly on `MS Sans Serif` (18px display down to 12px body), unified by `0px` razor-sharp architectural corners and stepped `rgb(255,255,255)` -> `rgb(238,244,252)` surface layering.
 
-Source: published token package (https://react95.io), repo https://github.com/react95-io/React95, package `react95`, frameworks: react. Inventory: **33** colors, **6** typography steps, and **8** documented components (MIT license).
+Source: published token package (https://react95.io), repo https://github.com/react95-io/React95, package `react95`, frameworks: react. Inventory: **33** colors, **6** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -147,7 +196,7 @@ Source: published token package (https://react95.io), repo https://github.com/re
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `rgb(238,244,252)` cards; separate sibling sections using `rgb(238,244,252)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -159,6 +208,7 @@ Source: published token package (https://react95.io), repo https://github.com/re
 
 - **Base Corner Geometry**: `0px` (Buttons `0px` · Inputs `0px` · Cards `0px` · Badges `999px` · Navigation `0px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.5px`, `square` caps).
 
 ## Components
 
@@ -170,6 +220,14 @@ Source: published token package (https://react95.io), repo https://github.com/re
 - **`badge-brand` (badge)**: bg `rgb(65,187,241)`, ink `#0b0b0c`, (9.0:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `rgb(238,244,252)`, ink `#0b0b0c`, (17.8:1), radius `0px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `rgb(238,244,252)`, ink `#0b0b0c`, (17.8:1), radius `0px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgb(65,187,241)`, ink `#0b0b0c`, (9.0:1), radius `2px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgb(65,187,241)`, ink `#0b0b0c`, (9.0:1), radius `0px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgb(238,244,252)`, ink `#0b0b0c`, (17.8:1), radius `0px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgb(238,244,252)`, ink `#0b0b0c`, (17.8:1), radius `0px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgb(255,255,255)`, ink `#0b0b0c`, (19.7:1), radius `0px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgb(255,255,255)`, (19.7:1), radius `0px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgb(238,244,252)`, ink `#0b0b0c`, (17.8:1), radius `0px`, padding `8px`.
 
 ## Do's and Don'ts
 

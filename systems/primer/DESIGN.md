@@ -112,6 +112,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Octicons
+  package: "@primer/octicons-react"
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://primer.style/foundations/icons/"
 components:
   button-primary:
     backgroundColor: "#74b9ff"
@@ -153,6 +163,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#2a313c"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#74b9ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#74b9ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#2a313c"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#2a313c"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#151b23"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#151b23"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#2a313c"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Primer
@@ -163,7 +213,7 @@ components:
 
 Typography centers cleanly on `System Mono` (16px display down to 16px body), unified by `6px` base corner radius and stepped `#151b23` -> `#2a313c` surface layering.
 
-Maintained by **GitHub**. Source: published token package (https://github.com/primer/primitives#readme), repo https://github.com/primer/react, package `@primer/primitives`, frameworks: react, css. Inventory: **91** colors, **5** typography steps, and **8** documented components (MIT license).
+Maintained by **GitHub**. Source: published token package (https://github.com/primer/primitives#readme), repo https://github.com/primer/react, package `@primer/primitives`, frameworks: react, css. Inventory: **91** colors, **5** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -186,7 +236,7 @@ Maintained by **GitHub**. Source: published token package (https://github.com/pr
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#2a313c` cards; separate sibling sections using `#342a1d` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -198,6 +248,7 @@ Maintained by **GitHub**. Source: published token package (https://github.com/pr
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Octicons (`@primer/octicons-react`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -209,6 +260,14 @@ Maintained by **GitHub**. Source: published token package (https://github.com/pr
 - **`badge-brand` (badge)**: bg `#74b9ff`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#194fb1`, ink `#ffffff`, (7.5:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#74b9ff`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#74b9ff`, ink `#0b0b0c`, (9.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#151b23`, ink `#f7f7f8`, (16.2:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#f7f7f8`, ink `#151b23`, (16.2:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#2a313c`, ink `#f7f7f8`, (12.2:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

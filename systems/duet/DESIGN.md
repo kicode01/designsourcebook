@@ -106,6 +106,16 @@ rounded:
   card: 12px
   badge: 999px
   default: 8px
+icons:
+  library: Duet Icons
+  package: "@duetds/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://www.duetds.com/icons/"
 components:
   nav-toggle:
     backgroundColor: "rgba(0, 0, 0, 0)"
@@ -149,6 +159,41 @@ components:
     textColor: "#000000"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "#f5f6f7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  checkbox-control:
+    backgroundColor: "#f7b228"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f6f7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f6f7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fffbf4"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fffbf4"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f6f7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Duet
@@ -159,7 +204,7 @@ components:
 
 Typography centers cleanly on `localtapiola-sans` (58px display down to 16px body), unified by `8px` base corner radius and stepped `#fffbf4` -> `#f5f6f7` surface layering.
 
-Maintained by **LocalTapiola**. Source: live stylesheet extraction (https://www.duetds.com), repo https://github.com/duetds/tokens, package `@duetds/tokens`, frameworks: web-components, css. Inventory: **61** colors, **7** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **LocalTapiola**. Source: live stylesheet extraction (https://www.duetds.com), repo https://github.com/duetds/tokens, package `@duetds/tokens`, frameworks: web-components, css. Inventory: **61** colors, **7** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -181,7 +226,7 @@ Maintained by **LocalTapiola**. Source: live stylesheet extraction (https://www.
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `#f5f6f7` cards; separate sibling sections using `#d4dfe5` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -191,12 +236,13 @@ Maintained by **LocalTapiola**. Source: live stylesheet extraction (https://www.
 
 ## Shapes
 
-- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `20rem`).
+- **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Duet Icons (`@duetds/icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
-- **`nav-toggle` (nav)**: bg `rgba(0, 0, 0, 0)`, ink `rgb(255, 255, 255)`, (1.0:1), radius `20rem`.
+- **`nav-toggle` (switch)**: bg `rgba(0, 0, 0, 0)`, ink `rgb(255, 255, 255)`, (1.0:1), radius `20rem`.
 - **`button-primary` (button)**: bg `#f7b228`, ink `#0b0b0c`, (10.6:1), radius `8px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `8px`, padding `10px 18px`.
 - **`button-danger` (button)**: bg `#ef4444`, ink `#000000`, (5.6:1), radius `8px`, padding `10px 18px`.
@@ -204,6 +250,13 @@ Maintained by **LocalTapiola**. Source: live stylesheet extraction (https://www.
 - **`card-surface` (card)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `12px`, padding `18px 20px`.
 - **`badge-brand` (badge)**: bg `#f7b228`, ink `#000000`, (11.4:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
+- **`select-default` (select)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `8px 12px`.
+- **`checkbox-control` (checkbox)**: bg `#f7b228`, ink `#0b0b0c`, (10.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fffbf4`, ink `#0b0b0c`, (19.1:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fffbf4`, (19.1:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f5f6f7`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

@@ -141,6 +141,15 @@ rounded:
   badge: 999px
   nav: 3px
   default: 3px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button:
     textColor: "#ffffff"
@@ -190,6 +199,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 3px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#e7f3e7"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#00395e"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#00395e"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#e7f3e7"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#e7f3e7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # U.S. CMS.gov Design System
@@ -200,7 +244,7 @@ components:
 
 Typography centers cleanly on `Open Sans` (60px display down to 16px body), unified by `3px` base corner radius and stepped `#ffffff` -> `#e7f3e7` surface layering.
 
-Maintained by **CMS**. Source: live stylesheet extraction (https://design.cms.gov/), repo https://github.com/CMSgov/design-system, package `@cmsgov/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **20** typography steps, and **13** documented components (all rights reserved license).
+Maintained by **CMS**. Source: live stylesheet extraction (https://design.cms.gov/), repo https://github.com/CMSgov/design-system, package `@cmsgov/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **20** typography steps, and **20** documented components (all rights reserved license).
 
 ## Colors
 
@@ -222,7 +266,7 @@ Maintained by **CMS**. Source: live stylesheet extraction (https://design.cms.go
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `8px 24px`, `8px 8px 8px 0px`, `8px`, `8px 32px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 20 component tokens with documented paddings: `8px 24px`, `8px 8px 8px 0px`, `8px`, `8px 32px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `#e7f3e7` cards; separate sibling sections using `#d9d9d9` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -234,6 +278,7 @@ Maintained by **CMS**. Source: live stylesheet extraction (https://design.cms.go
 
 - **Base Corner Geometry**: `3px` (Inputs `3px` · Badges `999px` · Navigation `3px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `3px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -243,8 +288,16 @@ Maintained by **CMS**. Source: live stylesheet extraction (https://design.cms.go
 - **`button-4` (button)**: ink `#ffffff`, radius `3px`, padding `8px 8px 8px 0px`, border `1px solid rgba(0, 0, 0, 0)`.
 - **`input` (input)**: bg `#ffffff`, ink `#262626`, (15.1:1), radius `3px`, padding `8px`, border `2px solid rgb(38, 38, 38)`.
 - **`input-2` (input)**: bg `#ffffff`, ink `#000000`, (21.0:1), radius `2px`, border `1px solid rgb(118, 118, 118)`.
-- **`alert` (card)**: bg `#f2f2f2`, ink `#262626`, (13.5:1).
-- **`alert-2` (card)**: ink `#262626`, padding `8px 32px`.
+- **`alert` (alert)**: bg `#f2f2f2`, ink `#262626`, (13.5:1).
+- **`alert-2` (alert)**: ink `#262626`, padding `8px 32px`.
+- **`alert-3` (alert)**: ink `#0071bc`.
+- **`alert-4` (alert)**: ink `#000000`.
+- **`badge-brand` (badge)**: bg `#00395e`, ink `#ffffff`, (12.0:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#b8dcb7`, ink `#0b0b0c`, (13.1:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#e7f3e7`, ink `#0b0b0c`, (17.2:1), radius `3px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#e7f3e7`, ink `#0b0b0c`, (17.2:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#00395e`, ink `#f7f7f8`, (11.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#00395e`, ink `#f7f7f8`, (11.2:1), radius `4px`, padding `2px`.
 
 ## Do's and Don'ts
 

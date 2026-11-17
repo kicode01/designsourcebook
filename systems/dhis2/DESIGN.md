@@ -107,6 +107,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: DHIS2 UI Icons
+  package: "@dhis2/ui-icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://ui.dhis2.nu"
 components:
   button-primary:
     backgroundColor: "#FF4785"
@@ -148,6 +158,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#FF4785"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#FF4785"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5fbff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # DHIS2 UI
@@ -158,7 +208,7 @@ components:
 
 Typography centers cleanly on `Roboto` (28px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f5fbff` surface layering.
 
-Maintained by **DHIS2**. Source: published token package (https://github.com/dhis2/ui), repo https://github.com/dhis2/ui, package `@dhis2/ui`, frameworks: react. Inventory: **66** colors, **6** typography steps, and **8** documented components (see repository license).
+Maintained by **DHIS2**. Source: published token package (https://github.com/dhis2/ui), repo https://github.com/dhis2/ui, package `@dhis2/ui`, frameworks: react. Inventory: **66** colors, **6** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -180,7 +230,7 @@ Maintained by **DHIS2**. Source: published token package (https://github.com/dhi
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f5fbff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -192,6 +242,7 @@ Maintained by **DHIS2**. Source: published token package (https://github.com/dhi
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: DHIS2 UI Icons (`@dhis2/ui-icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -203,6 +254,14 @@ Maintained by **DHIS2**. Source: published token package (https://github.com/dhi
 - **`badge-brand` (badge)**: bg `#FF4785`, ink `#000000`, (6.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#FF4785`, ink `#0b0b0c`, (6.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#FF4785`, ink `#0b0b0c`, (6.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f5fbff`, ink `#0b0b0c`, (18.9:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

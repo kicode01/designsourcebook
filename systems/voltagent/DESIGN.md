@@ -119,6 +119,15 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-ghost-outline:
     textColor: "#ffffff"
@@ -155,6 +164,46 @@ components:
     textColor: "#f2f2f2"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#101010"
+    textColor: "#f2f2f2"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#818cf8"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#818cf8"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#101010"
+    textColor: "#f2f2f2"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#101010"
+    textColor: "#f2f2f2"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#050507"
+    textColor: "#f2f2f2"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f2f2f2"
+    textColor: "#050507"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#101010"
+    textColor: "#f2f2f2"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: VoltAgent

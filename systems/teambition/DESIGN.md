@@ -35,6 +35,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   input:
     textColor: "#262626"
@@ -81,6 +90,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1B9AEE"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1B9AEE"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Teambition Clarity Design
@@ -91,7 +140,7 @@ components:
 
 Typography centers cleanly on `System UI` (16px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.
 
-Maintained by **Teambition**. Source: live stylesheet extraction (https://design.teambition.com/), frameworks: css. Inventory: **16** colors, **2** typography steps, and **11** documented components (all rights reserved license).
+Maintained by **Teambition**. Source: live stylesheet extraction (https://design.teambition.com/), frameworks: css. Inventory: **16** colors, **2** typography steps, and **19** documented components (all rights reserved license).
 
 ## Colors
 
@@ -112,7 +161,7 @@ Maintained by **Teambition**. Source: live stylesheet extraction (https://design
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0px 8px`, `40px 48px 48px`, `10px 18px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 19 component tokens with documented paddings: `0px 8px`, `40px 48px 48px`, `10px 18px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -124,6 +173,7 @@ Maintained by **Teambition**. Source: live stylesheet extraction (https://design
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -135,6 +185,14 @@ Maintained by **Teambition**. Source: live stylesheet extraction (https://design
 - **`button-primary` (button)**: bg `#1B9AEE`, ink `#0b0b0c`, (6.5:1), radius `4px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `10px 18px`.
 - **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `4px`, padding `10px 18px`.
+- **`badge-brand` (badge)**: bg `#1B9AEE`, ink `#0b0b0c`, (6.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1B9AEE`, ink `#0b0b0c`, (6.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1B9AEE`, ink `#0b0b0c`, (6.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `12px 14px`.
 
 ## Do's and Don'ts
 

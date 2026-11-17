@@ -126,6 +126,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   textarea:
     backgroundColor: "#fff"
@@ -178,6 +187,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  switch-control:
+    backgroundColor: "rgb(147, 0, 0)"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgb(147, 0, 0)"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(247, 247, 247)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(247, 247, 247)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgb(255, 255, 255)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(247, 247, 247)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Yelp Styleguide
@@ -188,7 +232,7 @@ components:
 
 Typography centers cleanly on `Poppins` (48px display down to 20px body), unified by `4px` base corner radius and subtle shadow elevation.
 
-Maintained by **Yelp**. Source: live stylesheet extraction (https://www.yelp.com/styleguide), frameworks: css. Inventory: **91** colors, **5** typography steps, and **9** documented components (all rights reserved license).
+Maintained by **Yelp**. Source: live stylesheet extraction (https://www.yelp.com/styleguide), frameworks: css. Inventory: **91** colors, **5** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -210,7 +254,7 @@ Maintained by **Yelp**. Source: live stylesheet extraction (https://www.yelp.com
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `13px 16px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `13px 16px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `rgb(247, 247, 247)` cards; separate sibling sections using `rgb(200, 201, 202)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -222,17 +266,26 @@ Maintained by **Yelp**. Source: live stylesheet extraction (https://www.yelp.com
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`textarea` (input)**: bg `#fff`, ink `#2d2e2f`, (13.6:1), radius `4px`, padding `13px 16px`, border `0`.
-- **`select-wrapper-2` (input)**: bg `#fff`, ink `#2d2e2f`, (13.6:1), radius `4px`, padding `13px 16px`, border `0`.
+- **`select-wrapper-2` (select)**: bg `#fff`, ink `#2d2e2f`, (13.6:1), radius `4px`, padding `13px 16px`, border `0`.
 - **`button-primary` (button)**: bg `rgb(147, 0, 0)`, ink `#ffffff`, (9.4:1), radius `4px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `10px 18px`.
 - **`button-danger` (button)**: bg `rgb(147, 0, 0)`, ink `#ffffff`, (9.4:1), radius `4px`, padding `10px 18px`.
 - **`card-surface` (card)**: bg `rgb(247, 247, 247)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `18px 20px`.
 - **`badge-brand` (badge)**: bg `rgb(147, 0, 0)`, ink `#ffffff`, (9.4:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `rgb(0, 82, 52)`, ink `#ffffff`, (9.3:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `rgb(247, 247, 247)`, ink `#0b0b0c`, (18.4:1), radius `4px`, padding `10px 16px`.
+- **`switch-control` (switch)**: bg `rgb(147, 0, 0)`, ink `#f7f7f8`, (8.8:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgb(147, 0, 0)`, ink `#f7f7f8`, (8.8:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgb(247, 247, 247)`, ink `#0b0b0c`, (18.4:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgb(247, 247, 247)`, ink `#0b0b0c`, (18.4:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgb(255, 255, 255)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgb(247, 247, 247)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

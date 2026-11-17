@@ -90,6 +90,15 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary-dark:
     backgroundColor: "#1c1c1c"
@@ -134,6 +143,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f7f4ed"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1c1c1c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1c1c1c"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f7f4ed"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f7f4ed"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fcfbf8"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fcfbf8"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f7f4ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Lovable

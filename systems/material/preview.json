@@ -693,29 +693,29 @@
     },
     {
       "key": "link-info",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(84, 180, 211, 1)"
     },
     {
       "key": "link-dark-2",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(51, 45, 45, 1)"
     },
     {
       "key": "alert-info",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#e5f4f8",
       "textColor": "#000000"
     },
     {
       "key": "alert-dark-2",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#262626",
       "textColor": "#eeeeee"
     },
     {
       "key": "link-light-3",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(251, 251, 251, 1)"
     },
     {
@@ -732,13 +732,13 @@
     },
     {
       "key": "alert-light-3",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#f5f5f5",
       "textColor": "#616161"
     },
     {
       "key": "link-danger-4",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(220, 76, 100, 1)"
     },
     {
@@ -749,18 +749,18 @@
     },
     {
       "key": "alert-danger-4",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#fae4e8",
       "textColor": "#b03d50"
     },
     {
       "key": "link-primary-5",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(59, 113, 202, 1)"
     },
     {
       "key": "link-success-6",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(20, 164, 77, 1)"
     },
     {
@@ -771,7 +771,7 @@
     },
     {
       "key": "alert-primary-6",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#e2eaf7",
       "textColor": "#2f5aa2"
     },
@@ -789,7 +789,7 @@
     },
     {
       "key": "navbar-toggler",
-      "kind": "nav",
+      "kind": "switch",
       "backgroundColor": "rgba(0,0,0,0)",
       "border": "1px solid"
     },
@@ -825,8 +825,66 @@
       "textColor": "#000000",
       "rounded": "8px",
       "padding": "10px 18px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#424242",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#424242",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#4f4f4f",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Material Minimal** is a dark-first design system anchored on `#424242` canvas surfaces with `#f7f7f8` primary ink (9.4:1 contrast) and `#fff` brand accent.\n\nTypography centers cleanly on `System UI` (27px display down to 16px body), unified by `8px` base corner radius and stepped `#424242` -> `#4f4f4f` surface layering.\n\nMaintained by **Material**. Source: published token package (https://github.com/mdbootstrap/mdb-ui-kit), repo https://github.com/mdbootstrap/mdb-ui-kit, package `mdb-ui-kit`, frameworks: css, react, vue, angular. Inventory: **90** colors, **53** typography steps, and **23** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 23 component tokens with documented paddings: `.375rem .75rem`, `10px 18px`.\n- **Hierarchy**: Group controls cleanly within `#4f4f4f` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#424242` -> `#4f4f4f`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fff` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Material Minimal** is a dark-first design system anchored on `#424242` canvas surfaces with `#f7f7f8` primary ink (9.4:1 contrast) and `#fff` brand accent.\n\nTypography centers cleanly on `System UI` (27px display down to 16px body), unified by `8px` base corner radius and stepped `#424242` -> `#4f4f4f` surface layering.\n\nMaintained by **Material**. Source: published token package (https://github.com/mdbootstrap/mdb-ui-kit), repo https://github.com/mdbootstrap/mdb-ui-kit, package `mdb-ui-kit`, frameworks: css, react, vue, angular. Inventory: **90** colors, **53** typography steps, and **29** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `.375rem .75rem`, `10px 18px`, `8px 12px`, `2px`, `6px 12px`.\n- **Hierarchy**: Group controls cleanly within `#4f4f4f` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#424242` -> `#4f4f4f`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fff` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#424242` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.\n- Use `#fff` with `#0b0b0c` text (19.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#4f4f4f` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-group-text` fields and secondary buttons."
 }

@@ -93,6 +93,16 @@ rounded:
   badge: 999px
   nav: 12px
   default: 10px
+icons:
+  library: Wise Icons
+  package: "@transferwise/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://github.com/transferwise/icons#readme"
 components:
   button-primary-green-pill:
     backgroundColor: "#9fe870"
@@ -129,6 +139,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 12px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0e0f0c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0e0f0c"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
+    rounded: 10px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#e8ebe6"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#e8ebe6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Wise

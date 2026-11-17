@@ -54,6 +54,16 @@ rounded:
   input: 16px
   nav: 16px
   default: 16px
+icons:
+  library: Mail.ru Group Paradigm Icons
+  package: "@vkontakte/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://vkcom.github.io/icons/"
 components:
   button:
     textColor: "#000000"
@@ -91,6 +101,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 16px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1877f2"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1877f2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#e7e7e9"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#e7e7e9"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Mail.ru Group Paradigm
@@ -101,7 +151,7 @@ components:
 
 Display headlines pair `MazzardH` with `Mail_Sans` body copy (82px display down to 18px body), unified by `16px` base corner radius and subtle shadow elevation.
 
-Maintained by **Mail.ru**. Source: live stylesheet extraction (https://design.mail.ru/), repo https://github.com/VKCOM/VKUI, package `@vkontakte/vkui`, frameworks: react, css. Inventory: **19** colors, **5** typography steps, and **10** documented components (all rights reserved license).
+Maintained by **Mail.ru**. Source: live stylesheet extraction (https://design.mail.ru/), repo https://github.com/VKCOM/VKUI, package `@vkontakte/vkui`, frameworks: react, css. Inventory: **19** colors, **5** typography steps, and **18** documented components (all rights reserved license).
 
 ## Colors
 
@@ -123,7 +173,7 @@ Maintained by **Mail.ru**. Source: live stylesheet extraction (https://design.ma
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0px 28px`, `35px 40px`, `9px 13px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 18 component tokens with documented paddings: `0px 28px`, `35px 40px`, `9px 13px`, `10px 16px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `#919399` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -135,6 +185,7 @@ Maintained by **Mail.ru**. Source: live stylesheet extraction (https://design.ma
 
 - **Base Corner Geometry**: `16px` (Inputs `16px` · Cards `36px` · Navigation `16px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `36px` container.
+- **Iconography & SVGs**: Mail.ru Group Paradigm Icons (`@vkontakte/icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -146,6 +197,14 @@ Maintained by **Mail.ru**. Source: live stylesheet extraction (https://design.ma
 - **`card-3` (card)**: bg `#ffffff`, ink `#000000`, (21.0:1), radius `36px`, padding `35px 40px`.
 - **`card-4` (card)**: ink `#000000`.
 - **`badge` (badge)**: ink `#000000`.
+- **`input-default` (input)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `16px`, padding `9px 13px`.
+- **`nav-bar` (nav)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `16px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1877f2`, ink `#0b0b0c`, (4.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1877f2`, ink `#0b0b0c`, (4.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `12px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#e7e7e9`, ink `#0b0b0c`, (15.9:1), radius `12px`, padding `10px 14px`.
 
 ## Do's and Don'ts
 

@@ -124,6 +124,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Phosphor Icons
+  package: "@phosphor-icons/react"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: repo
+  url: "https://phosphoricons.com"
 components:
   button-primary:
     backgroundColor: "#b52a20"
@@ -165,6 +175,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#b52a20"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#b52a20"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#f0eee6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#f0eee6"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Arena
@@ -175,7 +225,7 @@ components:
 
 Typography centers cleanly on `Spline Sans` (36px display down to 16px body), unified by `8px` base corner radius and stepped `#f0eee6` -> `#ffffff` surface layering.
 
-Maintained by **Dravensoft**. Source: published token package (https://github.com/dravensoft-dev/arena), repo https://github.com/dravensoft-dev/arena, frameworks: css. Inventory: **88** colors, **5** typography steps, and **8** documented components (see repository license).
+Maintained by **Dravensoft**. Source: published token package (https://github.com/dravensoft-dev/arena), repo https://github.com/dravensoft-dev/arena, frameworks: css. Inventory: **88** colors, **5** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -198,7 +248,7 @@ Maintained by **Dravensoft**. Source: published token package (https://github.co
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -210,6 +260,7 @@ Maintained by **Dravensoft**. Source: published token package (https://github.co
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Phosphor Icons (`@phosphor-icons/react`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -221,6 +272,14 @@ Maintained by **Dravensoft**. Source: published token package (https://github.co
 - **`badge-brand` (badge)**: bg `#b52a20`, ink `#ffffff`, (6.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#38a169`, ink `#0b0b0c`, (6.1:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#b52a20`, ink `#f7f7f8`, (5.9:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#b52a20`, ink `#f7f7f8`, (5.9:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#f0eee6`, ink `#0b0b0c`, (16.9:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#f0eee6`, (16.9:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

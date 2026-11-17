@@ -102,6 +102,15 @@ rounded:
   button: 40px
   input: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 15
+  strokeWidth: 1.2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   card:
     backgroundColor: "#fafafa"
@@ -222,6 +231,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 9px 13px
+  select-default:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff8e75"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff8e75"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Mixpanel Design System
@@ -232,7 +276,7 @@ components:
 
 Typography centers cleanly on `Garnett` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fafafa` surface layering.
 
-Maintained by **Mixpanel**. Source: live stylesheet extraction (https://design.mixpanel.com), frameworks: css. Inventory: **85** colors, **4** typography steps, and **25** documented components (all rights reserved license).
+Maintained by **Mixpanel**. Source: live stylesheet extraction (https://design.mixpanel.com), frameworks: css. Inventory: **85** colors, **4** typography steps, and **32** documented components (all rights reserved license).
 
 ## Colors
 
@@ -254,7 +298,7 @@ Maintained by **Mixpanel**. Source: live stylesheet extraction (https://design.m
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `24px`, `8px 32px`, `0 14px 0 16px`, `6px 12px`, `4px 16px`.
+- **Grid & Control Spacing**: Derived from 32 component tokens with documented paddings: `24px`, `8px 32px`, `0 14px 0 16px`, `6px 12px`, `4px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -264,19 +308,28 @@ Maintained by **Mixpanel**. Source: live stylesheet extraction (https://design.m
 
 ## Shapes
 
-- **Base Corner Geometry**: `8px` (Buttons `40px` · Inputs `8px` · Cards `8px` · Navigation `0`).
+- **Base Corner Geometry**: `8px` (Buttons `40px` · Inputs `8px` · Cards `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `15x15` grid (outline, stroke `1.2px`, `round` caps).
 
 ## Components
 
 - **`card` (card)**: bg `#fafafa`, radius `8px`, padding `24px`, border `1px solid #eaeaea`.
-- **`link` (nav)**: ink `#c1b1ff`, radius `0`, padding `8px 32px`.
+- **`link` (link)**: ink `#c1b1ff`, radius `0`, padding `8px 32px`.
 - **`btn-dark` (button)**: bg `#1f2023`, ink `#ffffff`, (16.3:1), radius `40px`, padding `0 14px 0 16px`.
 - **`label` (badge)**: ink `#1f2023`.
 - **`btn-2` (button)**: bg `#472ba0`, ink `#c1b1ff`, (5.2:1), radius `4px`, padding `6px 12px`.
 - **`tag-pool` (badge)**: bg `rgba(114, 190, 244, 0.1)`, ink `#1d4b6d`, (8.6:1), border `1px solid rgba(114, 190, 244, 0.5)`.
 - **`tag-mint-2` (badge)**: bg `rgba(127, 225, 216, 0.1)`, ink `#205f56`, (7.1:1), border `1px solid rgba(127, 225, 216, 0.5)`.
 - **`tag-lava-3` (badge)**: bg `rgba(255, 117, 87, 0.1)`, ink `#661d2d`, (10.7:1), border `1px solid rgba(255, 117, 87, 0.5)`.
+- **`btn-3` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `4px 16px`.
+- **`card-2` (card)**: bg `#fafafa`, radius `8px`, padding `16px`, border `1px solid #eaeaea`.
+- **`tag-peach-4` (badge)**: bg `rgba(255, 178, 122, 0.1)`, ink `#664126`, (8.5:1), border `1px solid rgba(255, 178, 122, 0.5)`.
+- **`tag-grass-5` (badge)**: bg `rgba(59, 169, 116, 0.1)`, ink `#0f472c`, (9.7:1), border `1px solid rgba(59, 169, 116, 0.5)`.
+- **`btn-4` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `8px 16px`.
+- **`tag-purple-6` (badge)**: bg `rgba(120, 86, 255, 0.1)`, ink `#2e1670`, (12.6:1), border `1px solid rgba(120, 86, 255, 0.5)`.
+- **`btn-5` (button)**: bg `#f4f4f4`, ink `#1f2023`, (14.8:1), radius `4px`, padding `4px 8px`.
+- **`label-2` (badge)**: ink `#1f2023`.
 
 ## Do's and Don'ts
 

@@ -51,6 +51,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button:
     textColor: "#5c6570"
@@ -82,6 +91,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ecf2fc"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff8300"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff8300"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ecf2fc"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ecf2fc"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#f6f9fc"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#f6f9fc"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ecf2fc"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # JB Design System
@@ -92,7 +141,7 @@ components:
 
 Typography centers cleanly on `dana` (32px display down to 16px body), unified by `4px` base corner radius and stepped `#f6f9fc` -> `#ecf2fc` surface layering.
 
-Maintained by **JB**. Source: live stylesheet extraction (https://javadbat.github.io/design-system), repo https://github.com/javadbat/design-system, frameworks: react, css. Inventory: **20** colors, **5** typography steps, and **7** documented components (all rights reserved license).
+Maintained by **JB**. Source: live stylesheet extraction (https://javadbat.github.io/design-system), repo https://github.com/javadbat/design-system, frameworks: react, css. Inventory: **20** colors, **5** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -113,7 +162,7 @@ Maintained by **JB**. Source: live stylesheet extraction (https://javadbat.githu
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `0px 9px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `0px 9px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ecf2fc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -125,6 +174,7 @@ Maintained by **JB**. Source: live stylesheet extraction (https://javadbat.githu
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -135,6 +185,14 @@ Maintained by **JB**. Source: live stylesheet extraction (https://javadbat.githu
 - **`badge-brand` (badge)**: bg `#ff8300`, ink `#0b0b0c`, (8.0:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#ff8300`, ink `#0b0b0c`, (8.0:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#ff8300`, ink `#0b0b0c`, (8.0:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#f6f9fc`, ink `#0b0b0c`, (18.6:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#f6f9fc`, (18.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#ecf2fc`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

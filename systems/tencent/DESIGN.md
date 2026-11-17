@@ -116,6 +116,16 @@ rounded:
   input: 3px
   button: 3px
   default: 6px
+icons:
+  library: TDesign Icons
+  package: tdesign-icons-react
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://tdesign.tencent.com/react/components/icon"
 components:
   tag:
     textColor: "rgba(0, 0, 0, 0.9)"
@@ -199,6 +209,26 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 18px
+  switch-control:
+    backgroundColor: "#0052d9"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0052d9"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Tencent TDesign
@@ -209,7 +239,7 @@ components:
 
 Typography centers cleanly on `PingFang SC` (64px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `#FFFFFF` surface layering.
 
-Maintained by **Tencent**. Source: published token package (https://github.com/Tencent/tdesign-react/tree/develop#readme), repo https://github.com/Tencent/tdesign-react, package `tdesign-react`, frameworks: react, vue, web-components. Inventory: **68** colors, **19** typography steps, and **25** documented components (MIT license).
+Maintained by **Tencent**. Source: published token package (https://github.com/Tencent/tdesign-react/tree/develop#readme), repo https://github.com/Tencent/tdesign-react, package `tdesign-react`, frameworks: react, vue, web-components. Inventory: **68** colors, **19** typography steps, and **29** documented components (MIT license).
 
 ## Colors
 
@@ -231,7 +261,7 @@ Maintained by **Tencent**. Source: published token package (https://github.com/T
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `0`, `10px 18px`.
+- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `0`, `10px 18px`, `2px`, `6px 10px`, `8px`.
 - **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -243,17 +273,26 @@ Maintained by **Tencent**. Source: published token package (https://github.com/T
 
 - **Base Corner Geometry**: `6px` (Buttons `3px` · Inputs `3px` · Cards `6px` · Badges `3px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
+- **Iconography & SVGs**: TDesign Icons (`tdesign-icons-react`) on a `16x16` grid (outline, stroke `1.5px`, `square` caps).
 
 ## Components
 
 - **`tag` (badge)**: ink `rgba(0, 0, 0, 0.9)`, radius `3px`, padding `0`, border `1px solid transparent`.
 - **`card` (card)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), radius `6px`, padding `0`.
-- **`tabs` (nav)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), padding `0`.
-- **`alert` (card)**: ink `rgba(0, 0, 0, 0.9)`, radius `6px`, padding `0`.
+- **`tabs` (tabs)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), padding `0`.
+- **`alert` (alert)**: ink `rgba(0, 0, 0, 0.9)`, radius `6px`, padding `0`.
 - **`input` (input)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), radius `3px`, padding `0`, border `1px solid #ddd`.
 - **`badge-2` (badge)**: ink `rgba(0, 0, 0, 0.9)`, padding `0`.
-- **`table` (nav)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), padding `0`.
+- **`table` (table)**: bg `#fff`, ink `rgba(0, 0, 0, 0.9)`, (17.5:1), padding `0`.
 - **`button` (button)**: bg `transparent`, ink `rgba(0, 0, 0, 0.9)`, radius `3px`, padding `0`, border `1px solid transparent`.
+- **`textarea-2` (input)**: ink `rgba(0, 0, 0, 0.9)`, padding `0`.
+- **`tag-input-3` (input)**: ink `rgba(0, 0, 0, 0.9)`, padding `0`.
+- **`tabs-2` (tabs)**: bg `#f3f3f3`, ink `rgba(0, 0, 0, 0.6)`, (5.6:1).
+- **`tabs-3` (tabs)**: bg `#0052d9`, radius `2px`.
+- **`card-2` (card)**: ink `rgba(0, 0, 0, 0.9)`.
+- **`input-3` (input)**: ink `rgba(0, 0, 0, 0.4)`.
+- **`alert-2` (alert)**: ink `rgba(0, 0, 0, 0.6)`.
+- **`alert-3` (alert)**: ink `rgba(0, 0, 0, 0.9)`.
 
 ## Do's and Don'ts
 

@@ -84,6 +84,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-glass-on-dark:
     backgroundColor: "rgba(255, 255, 255, 0.12)"
@@ -117,6 +126,46 @@ components:
     textColor: "#000000"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#bdbbff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#bdbbff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Together AI

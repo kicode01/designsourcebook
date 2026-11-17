@@ -372,8 +372,108 @@
       "textColor": "#0b0b0c",
       "rounded": "6px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1c1e54",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1c1e54",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 16,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"m8.002 7.266 4.236-4.234 1.238 1.237-4.237 4.234 4.233 4.232-1.238 1.237-4.232-4.231-4.236 4.236-1.238-1.237 4.237-4.237-4.24-4.239 1.237-1.237 4.24 4.24Z\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "body": "<path d=\"M4.67065 6L9.3 10.6\" stroke=\"currentColor\" stroke-width=\"1.75\"/><path d=\"M12.6707 6L8.67065 10\" stroke=\"currentColor\" stroke-width=\"1.75\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "body": "<path d=\"M4.67065 6L9.3 10.6\" stroke=\"currentColor\" stroke-width=\"1.75\"/><path d=\"M12.6707 6L8.67065 10\" stroke=\"currentColor\" stroke-width=\"1.75\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 16 16",
+        "fill": "none",
+        "body": "<path d=\"M4.67065 6L9.3 10.6\" stroke=\"currentColor\" stroke-width=\"1.75\"/><path d=\"M12.6707 6L8.67065 10\" stroke=\"currentColor\" stroke-width=\"1.75\"/>"
+      }
+    ]
+  },
   "overview": "Stripe's website is the gold standard of fintech design -- a system that manages to feel simultaneously technical and luxurious, precise and warm. The page opens on a clean white canvas (`#ffffff`) with deep navy headings (`#061b31`) and a signature purple (`#533afd`) that functions as both brand anchor and interactive accent. This isn't the cold, clinical purple of enterprise software; it's a rich, saturated violet that reads as confident and premium. The overall impression is of a financial institution redesigned by a world-class type foundry.\n\nThe custom `sohne-var` variable font is the defining element of Stripe's visual identity. Every text element enables the OpenType `\"ss01\"` stylistic set, which modifies character shapes for a distinctly geometric, modern feel. At display sizes (48px-56px), sohne-var runs at weight 300 -- an extraordinarily light weight for headlines that creates an ethereal, almost whispered authority. This is the opposite of the \"bold hero headline\" convention; Stripe's headlines feel like they don't need to shout. The negative letter-spacing (-1.4px at 56px, -0.96px at 48px) tightens the text into dense, engineered blocks. At smaller sizes, the system also uses weight 300 with proportionally reduced tracking, and tabular numerals via `\"tnum\"` for financial data display.\n\nWhat truly distinguishes Stripe is its shadow system. Rather than the flat or single-layer approach of most sites, Stripe uses multi-layer, blue-tinted shadows: the signature `rgba(50,50,93,0.25)` combined with `rgba(0,0,0,0.1)` creates shadows with a cool, almost atmospheric depth -- like elements are floating in a twilight sky. The blue-gray undertone of the primary shadow color (50,50,93) ties directly to the navy-purple brand palette, making even elevation feel on-brand.\n\n**Key Characteristics:**\n- sohne-var with OpenType `\"ss01\"` on all text -- a custom stylistic set that defines the brand's letterforms\n- Weight 300 as the signature headline weight -- light, confident, anti-convention\n- Negative letter-spacing at display sizes (-1.4px at 56px, progressive relaxation downward)\n- Blue-tinted multi-layer shadows using `rgba(50,50,93,0.25)` -- elevation that feels brand-colored\n- Deep navy (`#061b31`) headings instead of black -- warm, premium, financial-grade\n- Conservative border-radius (4px-8px) -- nothing pill-shaped, nothing harsh\n- Ruby (`#ea2261`) and magenta (`#f96bee`) accents for gradient and decorative elements\n- `SourceCodePro` as the monospace companion for code and technical labels\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 1px, 2px, 4px, 6px, 8px, 10px, 11px, 12px, 14px, 16px, 18px, 20px\n- Notable: The scale is dense at the small end (every 2px from 4-12), reflecting Stripe's precision-oriented UI for financial data\n\n### Grid & Container\n- Max content width: approximately 1080px\n- Hero: centered single-column with generous padding, lightweight headlines\n- Feature sections: 2-3 column grids for feature cards\n- Full-width dark sections with `#1c1e54` background for brand immersion\n- Code/dashboard previews as contained cards with blue-tinted shadows\n\n### Whitespace Philosophy\n- **Precision spacing**: Unlike the vast emptiness of minimalist systems, Stripe uses measured, purposeful whitespace. Every gap is a deliberate typographic choice.\n- **Dense data, generous chrome**: Financial data displays (tables, charts) are tightly packed, but the UI chrome around them is generously spaced. This creates a sense of controlled density -- like a well-organized spreadsheet in a beautiful frame.\n- **Section rhythm**: White sections alternate with dark brand sections (`#1c1e54`), creating a dramatic light/dark cadence that prevents monotony without introducing arbitrary color.",
   "dos": "### Do\n- Use sohne-var with `\"ss01\"` on every text element -- the stylistic set IS the brand\n- Use weight 300 for all headlines and body text -- lightness is the signature\n- Apply blue-tinted shadows (`rgba(50,50,93,0.25)`) for all elevated elements\n- Use `#061b31` (deep navy) for headings instead of `#000000` -- the warmth matters\n- Keep border-radius between 4px-8px -- conservative rounding is intentional\n- Use `\"tnum\"` for any tabular/financial number display\n- Layer shadows: blue-tinted far + neutral close for depth parallax\n- Use `#533afd` purple as the primary interactive/CTA color\n\n### Don't\n- Don't use weight 600-700 for sohne-var headlines -- weight 300 is the brand voice\n- Don't use large border-radius (12px+, pill shapes) on cards or buttons -- Stripe is conservative\n- Don't use neutral gray shadows -- always tint with blue (`rgba(50,50,93,...)`)\n- Don't skip `\"ss01\"` on any sohne-var text -- the alternate glyphs define the personality\n- Don't use pure black (`#000000`) for headings -- always `#061b31` deep navy\n- Don't use warm accent colors (orange, yellow) for interactive elements -- purple is primary\n- Don't apply positive letter-spacing at display sizes -- Stripe tracks tight\n- Don't use the magenta/ruby accents for buttons or links -- they're decorative/gradient only"
 }

@@ -476,6 +476,15 @@ rounded:
   card: 1rem
   input: 0.5rem
   default: 0.5rem
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   btn:
     backgroundColor: transparent
@@ -572,6 +581,36 @@ components:
     textColor: "#0b0b0c"
     rounded: 0.5rem
     padding: 9px 13px
+  select-default:
+    backgroundColor: "#f0f5ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0b5fff"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0b5fff"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f0f5ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f0f5ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Liferay Lexicon (Clay)
@@ -582,7 +621,7 @@ components:
 
 Typography centers cleanly on `System UI` (128px display down to 20px body), unified by `0.5rem` base corner radius and stepped `#fff` -> `#f0f5ff` surface layering.
 
-Maintained by **Liferay**. Source: published token package (http://clayui.com), repo https://github.com/liferay/clay, package `@clayui/css`, frameworks: react, css. Inventory: **90** colors, **170** typography steps, and **27** documented components (MIT license).
+Maintained by **Liferay**. Source: published token package (http://clayui.com), repo https://github.com/liferay/clay, package `@clayui/css`, frameworks: react, css. Inventory: **90** colors, **170** typography steps, and **33** documented components (MIT license).
 
 ## Colors
 
@@ -605,7 +644,7 @@ Maintained by **Liferay**. Source: published token package (http://clayui.com), 
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `9px 13px`.
+- **Grid & Control Spacing**: Derived from 33 component tokens with documented paddings: `9px 13px`, `8px 12px`, `2px`, `6px 12px`, `6px 10px`.
 - **Hierarchy**: Group controls cleanly within `#f0f5ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -617,17 +656,26 @@ Maintained by **Liferay**. Source: published token package (http://clayui.com), 
 
 - **Base Corner Geometry**: `0.5rem` (Buttons `0.5rem` · Inputs `0.5rem` · Cards `1rem`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `1rem` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`btn` (button)**: bg `transparent`, ink `#1c1c24`, radius `0.5rem`, border `1px solid transparent`.
 - **`card` (card)**: bg `#fff`, radius `1rem`, border `1px solid #cdced9`.
 - **`panel` (card)**: bg `#fff`, radius `0.5rem`, border `1px solid transparent`.
-- **`table` (nav)**: bg `#fff`, ink `#1c1c24`, (16.9:1).
+- **`table` (table)**: bg `#fff`, ink `#1c1c24`, (16.9:1).
 - **`btn-ai-2` (button)**: bg `#aa33ff`, ink `#fff`, (4.5:1), border `1px solid #aa33ff`.
 - **`btn-info-3` (button)**: bg `#2e5aac`, ink `#fff`, (6.6:1), border `1px solid #2e5aac`.
 - **`btn-dark-4` (button)**: bg `#272833`, ink `#fff`, (14.6:1), border `1px solid #272833`.
-- **`link` (nav)**: ink `#0b5fff`, radius `1px`.
+- **`link` (link)**: ink `#0b5fff`, radius `1px`.
+- **`btn-beta-5` (button)**: bg `rgba(41, 79, 152, 0.04)`, ink `#294f98`, (7.4:1), border `1px solid transparent`.
+- **`btn-light-6` (button)**: bg `#f1f2f5`, ink `#272833`, (13.0:1), border `1px solid #f1f2f5`.
+- **`link-2` (link)**: ink `#6b6c7e`.
+- **`link-3` (link)**: bg `transparent`, ink `#6b6c7e`, radius `4px`, border `1px solid transparent`.
+- **`alert-info` (alert)**: bg `#eef2fa`, ink `#2e5aac`, (5.9:1), border `1px solid #89a7e0`.
+- **`alert-dark-2` (alert)**: bg `#393a4a`, ink `#f1f2f5`, (10.0:1), border `1px solid #30313f`.
+- **`badge-info` (badge)**: bg `#2e5aac`, ink `#fff`, (6.6:1).
+- **`badge-dark-2` (badge)**: bg `#272833`, ink `#fff`, (14.6:1).
 
 ## Do's and Don'ts
 

@@ -256,6 +256,15 @@ rounded:
   badge: 999px
   nav: 20px
   default: 20px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   md3-segmented-button:
     backgroundColor: "rgba(0,0,0,0)"
@@ -289,6 +298,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 20px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#4f378b"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#4f378b"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Google Material Design
@@ -297,9 +346,9 @@ components:
 
 **Google Material Design** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#4f378b` brand accent.
 
-Typography centers cleanly on `Roboto Flex` (57px display down to 16px body), unified by `20px` base corner radius and hairline `1px` structural borders.
+Typography centers cleanly on `Roboto Flex` (57px display down to 16px body), unified by `12px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Google**. Source: published token package (https://github.com/material-components/material-web#readme), repo https://github.com/material-components/material-web, package `@material/web`, frameworks: web-components, angular, css. Inventory: **91** colors, **32** typography steps, and **7** documented components (Apache-2.0 license).
+Maintained by **Google**. Source: published token package (https://github.com/material-components/material-web#readme), repo https://github.com/material-components/material-web, package `@material/web`, frameworks: web-components, angular, css. Inventory: **91** colors, **32** typography steps, and **15** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -321,7 +370,7 @@ Maintained by **Google**. Source: published token package (https://github.com/ma
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -331,8 +380,9 @@ Maintained by **Google**. Source: published token package (https://github.com/ma
 
 ## Shapes
 
-- **Base Corner Geometry**: `20px` (Inputs `20px` · Cards `20px` · Badges `999px` · Navigation `20px`).
+- **Base Corner Geometry**: `12px` (Inputs `20px` · Cards `20px` · Badges `999px` · Navigation `20px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `20px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -343,6 +393,14 @@ Maintained by **Google**. Source: published token package (https://github.com/ma
 - **`badge-brand` (badge)**: bg `#4f378b`, ink `#ffffff`, (9.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `20px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#4f378b`, ink `#f7f7f8`, (8.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#4f378b`, ink `#f7f7f8`, (8.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -350,12 +408,12 @@ Maintained by **Google**. Source: published token package (https://github.com/ma
 - Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#4f378b` with `#f7f7f8` text (8.7:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `Roboto Flex` headings with `Roboto Flex` body copy using documented weights and scale steps.
-- Apply `20px` base geometry across inputs and buttons (20px on outer containers).
+- Apply `12px` base geometry across inputs and buttons (20px on outer containers).
 - Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `20px` baseline.
+- Do not mix conflicting corner radii that clash with the system's `12px` baseline.
 - Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

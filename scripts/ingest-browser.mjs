@@ -18,6 +18,7 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { collectTokens, selectColors, buildSystem, writeSystem, recordFailure, formatTitle, prettify, isColor, cleanFontFamily, cleanFontSize } from "../lib/ingest.mjs";
 import { parseColor, toHex } from "../lib/color.mjs";
+import { detectIconsFromHtml, inspectSvgSnippets } from "../lib/icons.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -148,7 +149,13 @@ async function main() {
         ["body", "p"],
         ["link", "a"],
         ["button", "button, [role=button], [class*=button], [class*=btn]"],
-        ["input", "input, select, textarea"],
+        ["input", "input:not([type=checkbox]):not([type=radio]), textarea"],
+        ["select", "select, [role=combobox]"],
+        ["checkbox", "input[type=checkbox], [role=checkbox], [class*=checkbox]"],
+        ["switch", "[role=switch], [class*=toggle], [class*=switch]"],
+        ["tabs", "[role=tablist], [role=tab], [class*=tab]"],
+        ["table", "table, [class*=table]"],
+        ["tooltip", "[role=tooltip], [class*=tooltip]"],
         ["card", "[class*=card]"],
         ["badge", "[class*=badge], [class*=tag], [class*=chip], [class*=pill]"],
         ["alert", "[class*=alert], [class*=notice], [class*=banner]"],
@@ -188,11 +195,15 @@ async function main() {
         }
       }
 
+      const svgs = [...document.querySelectorAll("svg[viewBox]")].slice(0, 24).map((el) => el.outerHTML);
+
       return {
         vars,
         rules: chunks.join("\n"),
         els,
         typeSamples,
+        svgs,
+        htmlClassHint: document.documentElement.outerHTML.slice(0, 24000),
         title: document.title || "",
         text: document.body ? document.body.innerText.slice(0, 1500) : "",
       };
@@ -285,8 +296,9 @@ async function main() {
   // component rules returned none.
   if (!Object.keys(components).length) {
     const seenComp = new Set();
+    const keepRoles = new Set(["button", "input", "select", "checkbox", "switch", "tabs", "table", "tooltip", "badge", "card", "alert"]);
     for (const e of data.els) {
-      if (!["button", "input", "badge", "card", "alert"].includes(e.role)) continue;
+      if (!keepRoles.has(e.role)) continue;
       const bg = normComputedColor(e.bg);
       const fg = normComputedColor(e.fg);
       if (!bg && !fg) continue;
@@ -294,7 +306,7 @@ async function main() {
       if (seenComp.has(sig)) continue;
       seenComp.add(sig);
       const n = [...seenComp].filter((s) => s.startsWith(`${e.role}|`)).length;
-      if (n > 4) continue;
+      if (n > 3) continue;
       const key = n === 1 ? e.role : `${e.role}-${n}`;
       const comp = { key, kind: e.role };
       if (bg) comp.backgroundColor = bg;
@@ -306,6 +318,14 @@ async function main() {
       components[key] = comp;
     }
   }
+
+  const domIcons = inspectSvgSnippets(data.svgs || []);
+  const hintIcons = detectIconsFromHtml(data.htmlClassHint || "");
+  const icons = hintIcons
+    ? { ...hintIcons, ...(domIcons?.samples?.length ? { samples: domIcons.samples } : {}) }
+    : domIcons
+    ? { library: "Inline System SVGs", package: null, ...domIcons, source: "observed" }
+    : null;
 
   if (!Object.keys(colors).length) {
     const why = `no colour values in computed styles (${Object.keys(data.vars).length} custom properties, ${data.els.length} elements)`;
@@ -322,6 +342,7 @@ async function main() {
     colors,
     types,
     components,
+    icons,
     license: "all rights reserved",
     homepage: url,
     provenance: "observed",

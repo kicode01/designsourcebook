@@ -156,6 +156,16 @@ rounded:
   badge: 20px
   card: 20px
   default: 0px
+icons:
+  library: Visa Nova Icons
+  package: "@visa/nova-icons-react"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://design.visa.com"
 components:
   nav:
     backgroundColor: "#ffffff"
@@ -214,6 +224,41 @@ components:
     typography:
       fontSize: 12px
       fontWeight: 400
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px 12px
+  checkbox-control:
+    backgroundColor: "#fcc015"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Visa Product Design System
@@ -224,7 +269,7 @@ components:
 
 Display headlines pair `visa-font-semi-bold` with `visa-font-regular` body copy (69px display down to 18px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.
 
-Maintained by **Visa**. Source: live stylesheet extraction (https://design.visa.com/welcome/). Inventory: **45** colors, **50** typography steps, and **20** documented components (all rights reserved license).
+Maintained by **Visa**. Source: live stylesheet extraction (https://design.visa.com/welcome/). Inventory: **45** colors, **50** typography steps, and **27** documented components (all rights reserved license).
 
 ## Colors
 
@@ -246,7 +291,7 @@ Maintained by **Visa**. Source: live stylesheet extraction (https://design.visa.
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 20 component tokens.
+- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -258,6 +303,7 @@ Maintained by **Visa**. Source: live stylesheet extraction (https://design.visa.
 
 - **Base Corner Geometry**: `0px` (Buttons `0px` · Inputs `0px` · Navigation `0px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Visa Nova Icons (`@visa/nova-icons-react`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -269,6 +315,14 @@ Maintained by **Visa**. Source: live stylesheet extraction (https://design.visa.
 - **`label` (label)**: ink `#4a4a4a`.
 - **`button` (button)**: bg `#1434cb`, ink `#ffffff`, (8.8:1), radius `0px`, border `0px solid #1434cb`.
 - **`tag-links-3` (badge)**: bg `#f0f0f0`, radius `20px`.
+- **`v-skip-link-2` (link)**: bg `rgba(179, 215, 255, .35)`.
+- **`input-error-2` (input)**: ink `#AD2929`.
+- **`v-content-card` (card)**: bg `#ffffff`, ink `#000000`, (21.0:1).
+- **`v-switch-label-2` (switch)**: ink `#000000`.
+- **`input-message-3` (input)**: ink `#4a4a4a`.
+- **`v-accordion-panel` (panel)**: bg `#ffffff`, border `1px solid rgba(0, 0, 0, .1)`.
+- **`v-anchor-link-menu-3` (link)**: bg `#ffffff`.
+- **`v-content-card-image-2` (card)**: bg `#f5f5f5`, radius `20px`.
 
 ## Do's and Don'ts
 

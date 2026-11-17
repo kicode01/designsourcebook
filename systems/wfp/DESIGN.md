@@ -178,6 +178,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: WFP UI Kit Icons
+  package: "@wfp/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://github.com/wfp/carbon-icons#readme"
 components:
   button-primary:
     backgroundColor: "#007dbc"
@@ -219,6 +229,46 @@ components:
     textColor: "#001f2f"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f0f3f6"
+    textColor: "#001f2f"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#007dbc"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#007dbc"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f0f3f6"
+    textColor: "#001f2f"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f0f3f6"
+    textColor: "#001f2f"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#001f2f"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#001f2f"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f0f3f6"
+    textColor: "#001f2f"
+    rounded: 8px
+    padding: 8px
 ---
 
 # WFP UI Kit
@@ -229,7 +279,7 @@ components:
 
 Typography centers cleanly on `Open Sans` (64px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f0f3f6` surface layering.
 
-Maintained by **World Food Programme**. Source: published token package, repo https://github.com/wfp/designsystem, package `@wfp/ui`, frameworks: react, css. Inventory: **91** colors, **29** typography steps, and **8** documented components (Apache-2 license).
+Maintained by **World Food Programme**. Source: published token package, repo https://github.com/wfp/designsystem, package `@wfp/ui`, frameworks: react, css. Inventory: **91** colors, **29** typography steps, and **16** documented components (Apache-2 license).
 
 ## Colors
 
@@ -251,7 +301,7 @@ Maintained by **World Food Programme**. Source: published token package, repo ht
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f0f3f6` cards; separate sibling sections using `color-mix(in srgb, #001f2f 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -263,6 +313,7 @@ Maintained by **World Food Programme**. Source: published token package, repo ht
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: WFP UI Kit Icons (`@wfp/icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -274,6 +325,14 @@ Maintained by **World Food Programme**. Source: published token package, repo ht
 - **`badge-brand` (badge)**: bg `#007dbc`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#007dbc`, ink `#0b0b0c`, (4.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#007dbc`, ink `#0b0b0c`, (4.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#001f2f`, (17.0:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#001f2f`, ink `#ffffff`, (17.0:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f0f3f6`, ink `#001f2f`, (15.2:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

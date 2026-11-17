@@ -63,6 +63,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 14
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#201d1d"
@@ -99,6 +108,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f1eeee"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#007aff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#007aff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f1eeee"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f1eeee"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fdfcfc"
+    textColor: "#6e6e73"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#6e6e73"
+    textColor: "#fdfcfc"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f1eeee"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: OpenCode

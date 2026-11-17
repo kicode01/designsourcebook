@@ -522,8 +522,108 @@
       "textColor": "#0b0b0c",
       "rounded": "16px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#bd001c",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#bd001c",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Pinterest Gestalt** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#bd001c` brand accent.\n\nTypography centers cleanly on `System UI` (36px display down to 20px body), unified by `16px` base corner radius and stepped `#FFFFFF` -> `#f9f9f9` surface layering.\n\nMaintained by **Pinterest**. Source: published token package (https://gestalt.pinterest.systems/), repo https://github.com/pinterest/gestalt, package `gestalt-design-tokens`, frameworks: react. Inventory: **90** colors, **15** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#e8e7e1` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#f9f9f9`) and `1px solid #e8e7e1` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#bd001c` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M22.1 18.5c.43-.69-.2-1.5-1-1.5H21a10 10 0 0 1-8.35-15.51C13.05.88 12.73 0 12 0a12 12 0 1 0 10.1 18.5M9 7a12 12 0 0 0 10.26 11.88A10 10 0 1 1 10 2.2c-.64 1.46-1 3.09-1 4.79m10.3-2h-.6l-.09.37a3 3 0 0 1-2.24 2.24l-.37.1v.6l.37.09a3 3 0 0 1 2.24 2.24l.09.37h.6l.09-.37a3 3 0 0 1 2.24-2.24L22 8.3v-.6l-.37-.09a3 3 0 0 1-2.24-2.24z\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M22 4H2v2h20zm0 7H2v2h20zM2 20h20v-2H2z\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M14 2v9h-2V5.41l-8.3 8.3-1.4-1.42L10.58 4H5V2z\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 16 16",
+        "fill": "currentColor",
+        "body": "<path d=\"M4 5H3a2 2 0 0 0-2 2v6c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V4a4 4 0 0 0-8 0zm2-1a2 2 0 1 1 4 0v1H6zm3 4v4H7V8z\"/>"
+      }
+    ]
+  },
+  "overview": "**Pinterest Gestalt** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#bd001c` brand accent.\n\nTypography centers cleanly on `System UI` (36px display down to 20px body), unified by `16px` base corner radius and stepped `#FFFFFF` -> `#f9f9f9` surface layering.\n\nMaintained by **Pinterest**. Source: published token package (https://gestalt.pinterest.systems/), repo https://github.com/pinterest/gestalt, package `gestalt-design-tokens`, frameworks: react. Inventory: **90** colors, **15** typography steps, and **16** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#e8e7e1` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#f9f9f9`) and `1px solid #e8e7e1` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#bd001c` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#bd001c` with `#f7f7f8` text (6.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `16px` base geometry across inputs and buttons (16px on outer containers).\n- Separate containers via `#f9f9f9` surface shifts and `#e8e7e1` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `16px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

@@ -89,6 +89,16 @@ rounded:
   button: 12px
   badge: 999px
   default: 12px
+icons:
+  library: Font Awesome
+  package: "@fortawesome/fontawesome-free"
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://fontawesome.com"
 components:
   banner:
     backgroundColor: "#30c7dc"
@@ -128,6 +138,36 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  switch-control:
+    backgroundColor: "#31bcf6"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#31bcf6"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f7f8"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f7f8"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # GoodBarber Design System
@@ -138,7 +178,7 @@ components:
 
 Typography centers cleanly on `Jakarta` (18px display down to 16px body), unified by `12px` base corner radius and stepped `#fff` -> `#f5f7f8` surface layering.
 
-Maintained by **GoodBarber**. Source: live stylesheet extraction (https://www.goodbarber.com/uxdesign/), frameworks: css. Inventory: **68** colors, **4** typography steps, and **9** documented components (all rights reserved license).
+Maintained by **GoodBarber**. Source: live stylesheet extraction (https://www.goodbarber.com/uxdesign/), frameworks: css. Inventory: **68** colors, **4** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -160,7 +200,7 @@ Maintained by **GoodBarber**. Source: live stylesheet extraction (https://www.go
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `12px`, `10px 18px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `12px`, `10px 18px`, `4px 10px`, `2px`, `6px 12px`.
 - **Hierarchy**: Group controls cleanly within `#f5f7f8` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -170,19 +210,27 @@ Maintained by **GoodBarber**. Source: live stylesheet extraction (https://www.go
 
 ## Shapes
 
-- **Base Corner Geometry**: `12px` (Buttons `12px` · Inputs `12px` · Badges `999px`).
+- **Base Corner Geometry**: `12px` (Buttons `12px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Font Awesome (`@fortawesome/fontawesome-free`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
-- **`banner` (card)**: bg `#30c7dc`, ink `#0b0b0c`, (9.7:1), padding `12px`.
-- **`banner-info` (card)**: bg `#1c2a39`.
-- **`link` (nav)**: ink `#f5f7f8`.
-- **`select` (input)**: bg `#3f4960`, radius `12px`.
+- **`banner` (alert)**: bg `#30c7dc`, ink `#0b0b0c`, (9.7:1), padding `12px`.
+- **`banner-info` (alert)**: bg `#1c2a39`.
+- **`link` (link)**: ink `#f5f7f8`.
+- **`select` (select)**: bg `#3f4960`, radius `12px`.
 - **`button-primary` (button)**: bg `#31bcf6`, ink `#0b0b0c`, (9.0:1), radius `12px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `12px`, padding `10px 18px`.
 - **`button-danger` (button)**: bg `#dc2626`, ink `#ffffff`, (4.8:1), radius `12px`, padding `10px 18px`.
 - **`badge-brand` (badge)**: bg `#31bcf6`, ink `#0b0b0c`, (9.0:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`switch-control` (switch)**: bg `#31bcf6`, ink `#0b0b0c`, (9.0:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#31bcf6`, ink `#0b0b0c`, (9.0:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f5f7f8`, ink `#0b0b0c`, (18.3:1), radius `12px`, padding `6px 12px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f5f7f8`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -198,4 +246,4 @@ Maintained by **GoodBarber**. Source: live stylesheet extraction (https://www.go
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not mix conflicting corner radii that clash with the system's `12px` baseline.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

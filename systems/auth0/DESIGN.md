@@ -106,6 +106,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#44C7F4"
@@ -147,6 +156,46 @@ components:
     textColor: "#212121"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f9f9f9"
+    textColor: "#212121"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#44C7F4"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#44C7F4"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f9f9f9"
+    textColor: "#212121"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f9f9f9"
+    textColor: "#212121"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#f9f9f9"
+    textColor: "#212121"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#212121"
+    textColor: "#f9f9f9"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f9f9f9"
+    textColor: "#212121"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Auth0 Cosmos
@@ -157,7 +206,7 @@ components:
 
 Typography centers cleanly on `FaktPro` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Auth0**. Source: published token package, repo https://github.com/auth0/cosmos, package `@auth0/cosmos`, frameworks: react. Inventory: **91** colors, **2** typography steps, and **8** documented components (MIT license).
+Maintained by **Auth0**. Source: published token package, repo https://github.com/auth0/cosmos, package `@auth0/cosmos`, frameworks: react. Inventory: **91** colors, **2** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -179,7 +228,7 @@ Maintained by **Auth0**. Source: published token package, repo https://github.co
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `#CCCCCC` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -191,6 +240,7 @@ Maintained by **Auth0**. Source: published token package, repo https://github.co
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -202,6 +252,14 @@ Maintained by **Auth0**. Source: published token package, repo https://github.co
 - **`badge-brand` (badge)**: bg `#44C7F4`, ink `#212121`, (8.2:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#4CD964`, ink `#212121`, (8.8:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#44C7F4`, ink `#0b0b0c`, (10.0:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#44C7F4`, ink `#0b0b0c`, (10.0:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#212121`, ink `#f9f9f9`, (15.3:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f9f9f9`, ink `#212121`, (15.3:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

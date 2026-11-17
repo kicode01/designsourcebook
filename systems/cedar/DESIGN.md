@@ -83,6 +83,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#454441"
@@ -124,6 +133,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f4f2ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#454441"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#454441"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f4f2ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f4f2ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#F9F8F6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#F9F8F6"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f4f2ed"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Cedar
@@ -134,7 +183,7 @@ components:
 
 Display headlines pair `Stuart` with `System Sans` body copy (138px display down to 10px body), unified by `8px` base corner radius and stepped `#F9F8F6` -> `#f4f2ed` surface layering.
 
-Maintained by **REI**. Source: published token package (https://rei.github.io/rei-cedar/), repo https://github.com/rei/rei-cedar, package `@rei/cedar`, frameworks: vue, css. Inventory: **18** colors, **11** typography steps, and **8** documented components (MIT license).
+Maintained by **REI**. Source: published token package (https://rei.github.io/rei-cedar/), repo https://github.com/rei/rei-cedar, package `@rei/cedar`, frameworks: vue, css. Inventory: **18** colors, **11** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -155,7 +204,7 @@ Maintained by **REI**. Source: published token package (https://rei.github.io/re
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f4f2ed` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -167,6 +216,7 @@ Maintained by **REI**. Source: published token package (https://rei.github.io/re
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -178,6 +228,14 @@ Maintained by **REI**. Source: published token package (https://rei.github.io/re
 - **`badge-brand` (badge)**: bg `#454441`, ink `#F9F8F6`, (9.2:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f4f2ed`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f4f2ed`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#454441`, ink `#f7f7f8`, (9.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#454441`, ink `#f7f7f8`, (9.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f4f2ed`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f4f2ed`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#F9F8F6`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#F9F8F6`, (18.5:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f4f2ed`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

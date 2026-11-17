@@ -82,6 +82,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#002d72"
@@ -123,6 +132,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#002d72"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#002d72"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#f1f5f9"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#f1f5f9"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Estonia Country Design Guidelines
@@ -133,7 +182,7 @@ components:
 
 Typography centers cleanly on `ainoBodyFont` (72px display down to 16px body), unified by `8px` base corner radius and stepped `#f1f5f9` -> `#fff` surface layering.
 
-Maintained by **Estonia**. Source: live stylesheet extraction (https://brand.estonia.ee), frameworks: css. Inventory: **41** colors, **15** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **Estonia**. Source: live stylesheet extraction (https://brand.estonia.ee), frameworks: css. Inventory: **41** colors, **15** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -155,7 +204,7 @@ Maintained by **Estonia**. Source: live stylesheet extraction (https://brand.est
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#cbd5e1` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -167,6 +216,7 @@ Maintained by **Estonia**. Source: live stylesheet extraction (https://brand.est
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -178,6 +228,14 @@ Maintained by **Estonia**. Source: live stylesheet extraction (https://brand.est
 - **`badge-brand` (badge)**: bg `#002d72`, ink `#ffffff`, (13.0:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#157934`, ink `#ffffff`, (5.5:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#002d72`, ink `#f7f7f8`, (12.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#002d72`, ink `#f7f7f8`, (12.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#f1f5f9`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#f1f5f9`, (18.0:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

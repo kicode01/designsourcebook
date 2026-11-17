@@ -130,6 +130,16 @@ rounded:
   badge: 999px
   nav: 12px
   default: 12px
+icons:
+  library: SF Symbols
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.6
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://developer.apple.com/sf-symbols/"
 components:
   button-primary-blue:
     backgroundColor: "#0071e3"
@@ -177,6 +187,46 @@ components:
     textColor: "#1d1d1f"
     rounded: 12px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5f5f7"
+    textColor: "#1d1d1f"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f5f7"
+    textColor: "#1d1d1f"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f5f7"
+    textColor: "#1d1d1f"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#f5f5f7"
+    textColor: "#1d1d1f"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#1d1d1f"
+    textColor: "#f5f5f7"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f5f7"
+    textColor: "#1d1d1f"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Apple

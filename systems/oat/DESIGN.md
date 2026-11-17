@@ -54,6 +54,15 @@ rounded:
   card: 9999px
   nav: 9999px
   default: 9999px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   badge:
     backgroundColor: transparent
@@ -93,6 +102,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 9999px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#008032"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#008032"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Oat UI
@@ -101,9 +150,9 @@ components:
 
 **Oat UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#008032` brand accent.
 
-Typography centers cleanly on `System UI` (36px display down to 16px body), unified by `9999px` base corner radius and subtle shadow elevation.
+Typography centers cleanly on `System UI` (36px display down to 16px body), unified by `12px` base corner radius and subtle shadow elevation.
 
-Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), repo https://github.com/oat-ink/oat, frameworks: css. Inventory: **13** colors, **6** typography steps, and **7** documented components (all rights reserved license).
+Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), repo https://github.com/oat-ink/oat, frameworks: css. Inventory: **13** colors, **6** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -124,7 +173,7 @@ Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), re
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `1rem`, `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `1rem`, `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `#e4e4e7` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -134,8 +183,9 @@ Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), re
 
 ## Shapes
 
-- **Base Corner Geometry**: `9999px` (Buttons `9999px` · Inputs `9999px` · Cards `9999px` · Badges `9999px` · Navigation `9999px`).
+- **Base Corner Geometry**: `12px` (Buttons `9999px` · Inputs `9999px` · Cards `9999px` · Badges `9999px` · Navigation `9999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `9999px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -146,6 +196,14 @@ Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), re
 - **`input-default` (input)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `9999px`, padding `9px 13px`.
 - **`card-surface` (card)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `9999px`, padding `18px 20px`.
 - **`nav-bar` (nav)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `9999px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#008032`, ink `#f7f7f8`, (4.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#008032`, ink `#f7f7f8`, (4.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `12px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -153,12 +211,12 @@ Maintained by **Oat**. Source: live stylesheet extraction (https://oat.ink/), re
 - Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#008032` with `#f7f7f8` text (4.7:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
-- Apply `9999px` base geometry across inputs and buttons (9999px on outer containers).
+- Apply `12px` base geometry across inputs and buttons (9999px on outer containers).
 - Separate containers via `#fafafa` surface shifts and `#e4e4e7` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `9999px` baseline.
+- Do not mix conflicting corner radii that clash with the system's `12px` baseline.
 - Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

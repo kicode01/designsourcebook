@@ -153,6 +153,15 @@ rounded:
   badge: 999px
   nav: 16px
   default: 16px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 32
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   selectedItemBubble:
     backgroundColor: "#e0e0e0"
@@ -193,6 +202,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 16px
     padding: 10px 16px
+  switch-control:
+    backgroundColor: "#31355e"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#31355e"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Bolt Design System
@@ -203,7 +247,7 @@ components:
 
 Typography centers cleanly on `Open Sans` (96px display down to 18px body), unified by `16px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Pega Digital**. Source: live stylesheet extraction (https://boltdesignsystem.com/), repo https://github.com/boltdesignsystem/bolt, frameworks: web-components, css. Inventory: **83** colors, **30** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **Pega Digital**. Source: live stylesheet extraction (https://boltdesignsystem.com/), repo https://github.com/boltdesignsystem/bolt, frameworks: web-components, css. Inventory: **83** colors, **30** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -226,7 +270,7 @@ Maintained by **Pega Digital**. Source: live stylesheet extraction (https://bolt
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `4px 8px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `4px 8px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#e0e2eb` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -236,12 +280,13 @@ Maintained by **Pega Digital**. Source: live stylesheet extraction (https://bolt
 
 ## Shapes
 
-- **Base Corner Geometry**: `16px` (Buttons `16px` · Inputs `16px` · Cards `16px` · Badges `999px` · Navigation `16px`).
+- **Base Corner Geometry**: `16px` (Buttons `16px` · Cards `16px` · Badges `999px` · Navigation `16px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `16px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `32x32` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
-- **`selectedItemBubble` (input)**: bg `#e0e0e0`, radius `16px`, padding `4px 8px`.
+- **`selectedItemBubble` (select)**: bg `#e0e0e0`, radius `16px`, padding `4px 8px`.
 - **`button-primary` (button)**: bg `#31355e`, ink `#ffffff`, (11.7:1), radius `16px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `16px`, padding `10px 18px`.
 - **`button-danger` (button)**: bg `#fad5d1`, ink `#0b0b0c`, (14.5:1), radius `16px`, padding `10px 18px`.
@@ -249,6 +294,13 @@ Maintained by **Pega Digital**. Source: live stylesheet extraction (https://bolt
 - **`badge-brand` (badge)**: bg `#31355e`, ink `#ffffff`, (11.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#357e38`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `16px`, padding `10px 16px`.
+- **`switch-control` (switch)**: bg `#31355e`, ink `#f7f7f8`, (10.9:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#31355e`, ink `#f7f7f8`, (10.9:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -264,4 +316,4 @@ Maintained by **Pega Digital**. Source: live stylesheet extraction (https://bolt
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not mix conflicting corner radii that clash with the system's `16px` baseline.
-- Do not truncate or drop border contrast on `selectedItemBubble` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

@@ -189,6 +189,16 @@ rounded:
   card: 10px
   nav: 6px
   default: 6px
+icons:
+  library: Linear UI Icons
+  package: null
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://linear.app"
 components:
   button-ghost:
     backgroundColor: "rgba(255,255,255,0.02)"
@@ -249,6 +259,46 @@ components:
     textColor: "#f7f8f8"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#0f1011"
+    textColor: "#f7f8f8"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#5e6ad2"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#5e6ad2"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#0f1011"
+    textColor: "#f7f8f8"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#0f1011"
+    textColor: "#f7f8f8"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#010102"
+    textColor: "#f7f8f8"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f8f8"
+    textColor: "#010102"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#0f1011"
+    textColor: "#f7f8f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Linear

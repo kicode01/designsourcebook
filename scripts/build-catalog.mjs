@@ -65,6 +65,7 @@ const systems = fs
       palette: p.palette,
       type: p.type,
       components: p.components,
+      icons: p.icons || undefined,
       overview: p.overview,
       dos: p.dos,
     };

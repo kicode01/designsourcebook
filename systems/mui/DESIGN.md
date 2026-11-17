@@ -75,6 +75,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Material Icons
+  package: "@mui/icons-material"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://mui.com/material-ui/material-icons/"
 components:
   button-primary:
     backgroundColor: "#fff"
@@ -116,6 +126,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#121212"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#121212"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#121212"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#121212"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#121212"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#121212"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # MUI Material UI
@@ -126,7 +176,7 @@ components:
 
 Typography centers cleanly on `Roboto` (20px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **MUI**. Source: published token package (https://github.com/mui/material-ui), repo https://github.com/mui/material-ui, package `@mui/material`, frameworks: react. Inventory: **60** colors, **2** typography steps, and **8** documented components (see repository license).
+Maintained by **MUI**. Source: published token package (https://github.com/mui/material-ui), repo https://github.com/mui/material-ui, package `@mui/material`, frameworks: react. Inventory: **60** colors, **2** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -147,7 +197,7 @@ Maintained by **MUI**. Source: published token package (https://github.com/mui/m
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#121212` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -159,6 +209,7 @@ Maintained by **MUI**. Source: published token package (https://github.com/mui/m
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Material Icons (`@mui/icons-material`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -170,6 +221,14 @@ Maintained by **MUI**. Source: published token package (https://github.com/mui/m
 - **`badge-brand` (badge)**: bg `#fff`, ink `#000000`, (21.0:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#121212`, ink `#f7f7f8`, (17.5:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#121212`, ink `#f7f7f8`, (17.5:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#121212`, ink `#f7f7f8`, (17.5:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#121212`, ink `#f7f7f8`, (17.5:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#121212`, ink `#f7f7f8`, (17.5:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#f7f7f8`, ink `#121212`, (17.5:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#121212`, ink `#f7f7f8`, (17.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

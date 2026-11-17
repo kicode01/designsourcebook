@@ -75,6 +75,15 @@ rounded:
   badge: 999px
   nav: 24px
   default: 24px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 12
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button:
     backgroundColor: "#ffffff"
@@ -119,6 +128,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 24px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "rgb(240,240,240)"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgb(26,106,255)"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgb(26,106,255)"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(240,240,240)"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(240,240,240)"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(240,240,240)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Wix Style
@@ -127,9 +176,9 @@ components:
 
 **Wix Style** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(26,106,255)` brand accent.
 
-Typography centers cleanly on `Arial` (10px display down to 10px body), unified by `24px` base corner radius and subtle shadow elevation.
+Typography centers cleanly on `Arial` (10px display down to 10px body), unified by `12px` base corner radius and subtle shadow elevation.
 
-Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/), repo https://github.com/wix/wix-style-react, package `wix-style-react`, frameworks: react. Inventory: **61** colors, **1** typography steps, and **11** documented components (all rights reserved license).
+Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/), repo https://github.com/wix/wix-style-react, package `wix-style-react`, frameworks: react. Inventory: **61** colors, **1** typography steps, and **19** documented components (all rights reserved license).
 
 ## Colors
 
@@ -149,7 +198,7 @@ Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/)
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0px 24px`, `0px 12px`, `0px 10px 0px 34px`, `3px 194.4px 3px 52px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 19 component tokens with documented paddings: `0px 24px`, `0px 12px`, `0px 10px 0px 34px`, `3px 194.4px 3px 52px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `rgb(240,240,240)` cards; separate sibling sections using `rgb(194,194,194)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -159,8 +208,9 @@ Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/)
 
 ## Shapes
 
-- **Base Corner Geometry**: `24px` (Buttons `24px` · Inputs `999px` · Badges `999px` · Navigation `24px`).
-- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `24px` container.
+- **Base Corner Geometry**: `12px` (Buttons `24px` · Inputs `999px` · Badges `999px` · Navigation `24px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `12x12` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -172,6 +222,14 @@ Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/)
 - **`card` (card)**: ink `#000000`.
 - **`card-2` (card)**: ink `#000000`, radius `8.64px`.
 - **`card-3` (card)**: bg `#ffffff`, ink `#000000`, (21.0:1).
+- **`badge-brand` (badge)**: bg `rgb(26,106,255)`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `rgb(240,240,240)`, ink `#0b0b0c`, (17.3:1), radius `24px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `rgb(240,240,240)`, ink `#0b0b0c`, (17.3:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgb(26,106,255)`, ink `#f7f7f8`, (4.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgb(26,106,255)`, ink `#f7f7f8`, (4.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgb(240,240,240)`, ink `#0b0b0c`, (17.3:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgb(240,240,240)`, ink `#0b0b0c`, (17.3:1), radius `12px`, padding `12px 14px`.
 
 ## Do's and Don'ts
 
@@ -179,12 +237,12 @@ Maintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/)
 - Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `rgb(26,106,255)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.
-- Apply `24px` base geometry across inputs and buttons (24px on outer containers).
+- Apply `12px` base geometry across inputs and buttons (12px on outer containers).
 - Separate containers via `rgb(240,240,240)` surface shifts and `rgb(194,194,194)` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `24px` baseline.
+- Do not mix conflicting corner radii that clash with the system's `12px` baseline.
 - Do not truncate or drop border contrast on `input` fields and secondary buttons.

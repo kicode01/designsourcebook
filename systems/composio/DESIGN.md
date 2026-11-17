@@ -133,6 +133,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: square
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary-cta:
     backgroundColor: "#ffffff"
@@ -168,6 +177,46 @@ components:
     textColor: "#ffffff"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#00ffff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#00ffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#0f0f0f"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#ffffff"
+    textColor: "#0f0f0f"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Composio

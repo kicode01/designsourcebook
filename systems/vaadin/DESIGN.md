@@ -63,6 +63,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Vaadin Lumo Icons
+  package: "@vaadin/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://vaadin.com/icons"
 components:
   button-primary:
     backgroundColor: "hsl(214, 90%, 48%)"
@@ -104,6 +114,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "hsl(214, 100%, 98%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "hsl(214, 90%, 48%)"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "hsl(214, 90%, 48%)"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "hsl(214, 100%, 98%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "hsl(214, 100%, 98%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "hsl(214, 100%, 98%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "hsl(214, 100%, 98%)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "hsl(214, 100%, 98%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Vaadin Lumo
@@ -114,7 +164,7 @@ components:
 
 Typography centers cleanly on `System UI` (40px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Vaadin**. Source: published token package (https://vaadin.com/components), repo https://github.com/vaadin/web-components, package `@vaadin/vaadin-lumo-styles`, frameworks: web-components, react, css. Inventory: **32** colors, **10** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Vaadin**. Source: published token package (https://vaadin.com/components), repo https://github.com/vaadin/web-components, package `@vaadin/vaadin-lumo-styles`, frameworks: web-components, react, css. Inventory: **32** colors, **10** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -136,7 +186,7 @@ Maintained by **Vaadin**. Source: published token package (https://vaadin.com/co
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `hsl(214, 100%, 98%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -148,6 +198,7 @@ Maintained by **Vaadin**. Source: published token package (https://vaadin.com/co
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Vaadin Lumo Icons (`@vaadin/icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -159,6 +210,14 @@ Maintained by **Vaadin**. Source: published token package (https://vaadin.com/co
 - **`badge-brand` (badge)**: bg `hsl(214, 90%, 48%)`, ink `#ffffff`, (4.8:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `hsl(145, 72%, 30%)`, ink `#ffffff`, (4.8:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `hsl(214, 100%, 98%)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `hsl(214, 100%, 98%)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `hsl(214, 90%, 48%)`, ink `#f7f7f8`, (4.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `hsl(214, 90%, 48%)`, ink `#f7f7f8`, (4.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `hsl(214, 100%, 98%)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `hsl(214, 100%, 98%)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `hsl(214, 100%, 98%)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `hsl(214, 100%, 98%)`, (18.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `hsl(214, 100%, 98%)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

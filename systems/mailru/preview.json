@@ -195,8 +195,83 @@
       "textColor": "#0b0b0c",
       "rounded": "16px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1877f2",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1877f2",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#e7e7e9",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#e7e7e9",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Mail.ru Group Paradigm** is a light-first design system anchored on `#e7e7e9` canvas surfaces with `#0b0b0c` primary ink (15.9:1 contrast) and `#1877f2` brand accent.\n\nDisplay headlines pair `MazzardH` with `Mail_Sans` body copy (82px display down to 18px body), unified by `16px` base corner radius and subtle shadow elevation.\n\nMaintained by **Mail.ru**. Source: live stylesheet extraction (https://design.mail.ru/), repo https://github.com/VKCOM/VKUI, package `@vkontakte/vkui`, frameworks: react, css. Inventory: **19** colors, **5** typography steps, and **10** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0px 28px`, `35px 40px`, `9px 13px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `#919399` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`rgba(15, 15, 15, 0.08) 0px 60px 80px 0px, rgba(15, 15, 15, 0.06) 0px 25.0666px 33.4221px 0px, rgba(15, 15, 15, 0.047) 0px 13.4018px 17.869px 0px, rgba(15, 15, 15, 0.04) 0px 7.51293px 10.0172px 0px, rgba(15, 15, 15, 0.03) 0px 3.99006px 5.32008px 0px, rgba(15, 15, 15, 0.024) 0px 1.66035px 2.21381px 0px`, `rgba(15, 15, 15, 0.08) 0px 60px 80px 0px, rgba(15, 15, 15, 0.06) 0px 25.0666px 33.4221px 0px, rgba(15, 15, 15, 0.047) 0px 13.4018px 17.869px 0px, rgba(15, 15, 15, 0.04) 0px 7.51293px 10.0172px 0px, rgba(15, 15, 15, 0.03) 0px 3.99006px 5.32008px 0px, rgba(15, 15, 15, 0.024) 0px 1.66035px 2.21381px 0px`) paired with `#919399` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1877f2` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Mail.ru Group Paradigm Icons",
+    "package": "@vkontakte/icons",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "npm",
+    "url": "https://vkcom.github.io/icons/"
+  },
+  "overview": "**Mail.ru Group Paradigm** is a light-first design system anchored on `#e7e7e9` canvas surfaces with `#0b0b0c` primary ink (15.9:1 contrast) and `#1877f2` brand accent.\n\nDisplay headlines pair `MazzardH` with `Mail_Sans` body copy (82px display down to 18px body), unified by `16px` base corner radius and subtle shadow elevation.\n\nMaintained by **Mail.ru**. Source: live stylesheet extraction (https://design.mail.ru/), repo https://github.com/VKCOM/VKUI, package `@vkontakte/vkui`, frameworks: react, css. Inventory: **19** colors, **5** typography steps, and **18** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 18 component tokens with documented paddings: `0px 28px`, `35px 40px`, `9px 13px`, `10px 16px`, `8px 12px`.\n- **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `#919399` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`rgba(15, 15, 15, 0.08) 0px 60px 80px 0px, rgba(15, 15, 15, 0.06) 0px 25.0666px 33.4221px 0px, rgba(15, 15, 15, 0.047) 0px 13.4018px 17.869px 0px, rgba(15, 15, 15, 0.04) 0px 7.51293px 10.0172px 0px, rgba(15, 15, 15, 0.03) 0px 3.99006px 5.32008px 0px, rgba(15, 15, 15, 0.024) 0px 1.66035px 2.21381px 0px`, `rgba(15, 15, 15, 0.08) 0px 60px 80px 0px, rgba(15, 15, 15, 0.06) 0px 25.0666px 33.4221px 0px, rgba(15, 15, 15, 0.047) 0px 13.4018px 17.869px 0px, rgba(15, 15, 15, 0.04) 0px 7.51293px 10.0172px 0px, rgba(15, 15, 15, 0.03) 0px 3.99006px 5.32008px 0px, rgba(15, 15, 15, 0.024) 0px 1.66035px 2.21381px 0px`) paired with `#919399` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1877f2` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#e7e7e9` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#1877f2` with `#f7f7f8` text (4.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `MazzardH` headings with `Mail_Sans` body copy using documented weights and scale steps.\n- Apply `16px` base geometry across inputs and buttons (36px on outer containers).\n- Separate containers via `#f2f2f2` surface shifts and `#919399` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `16px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

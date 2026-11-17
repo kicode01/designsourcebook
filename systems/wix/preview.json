@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "rgb(26,106,255)",
   "border": "rgb(194,194,194)",
-  "radius": "24px",
+  "radius": "12px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -339,8 +339,108 @@
       "textColor": "#0b0b0c",
       "rounded": "24px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "rgb(240,240,240)",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "rgb(26,106,255)",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "rgb(26,106,255)",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(240,240,240)",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "rgb(240,240,240)",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgb(240,240,240)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Wix Style** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(26,106,255)` brand accent.\n\nTypography centers cleanly on `Arial` (10px display down to 10px body), unified by `24px` base corner radius and subtle shadow elevation.\n\nMaintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/), repo https://github.com/wix/wix-style-react, package `wix-style-react`, frameworks: react. Inventory: **61** colors, **1** typography steps, and **11** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0px 24px`, `0px 12px`, `0px 10px 0px 34px`, `3px 194.4px 3px 52px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `rgb(240,240,240)` cards; separate sibling sections using `rgb(194,194,194)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`rgba(133, 154, 255, 0.4) 0px 30px 250px 20px, rgba(139, 142, 238, 0.16) 0px 16px 50px 0px`) paired with `rgb(194,194,194)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(26,106,255)` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `rgb(26,106,255)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.\n- Apply `24px` base geometry across inputs and buttons (24px on outer containers).\n- Separate containers via `rgb(240,240,240)` surface shifts and `rgb(194,194,194)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `24px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 12,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 8 5 5 5-5\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 8 5 5 5-5\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"m5 8 5 5 5-5\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 12 12",
+        "fill": "currentColor",
+        "body": "<path d=\"M7.755 8H6.09l3.44-3.36H.155V3.488H9.53L6.09.128h1.664l4.096 3.936L7.755 8Z\"/>"
+      }
+    ]
+  },
+  "overview": "**Wix Style** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(26,106,255)` brand accent.\n\nTypography centers cleanly on `Arial` (10px display down to 10px body), unified by `12px` base corner radius and subtle shadow elevation.\n\nMaintained by **Wix**. Source: live stylesheet extraction (https://www.wix.com/), repo https://github.com/wix/wix-style-react, package `wix-style-react`, frameworks: react. Inventory: **61** colors, **1** typography steps, and **19** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 19 component tokens with documented paddings: `0px 24px`, `0px 12px`, `0px 10px 0px 34px`, `3px 194.4px 3px 52px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `rgb(240,240,240)` cards; separate sibling sections using `rgb(194,194,194)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`rgba(133, 154, 255, 0.4) 0px 30px 250px 20px, rgba(139, 142, 238, 0.16) 0px 16px 50px 0px`) paired with `rgb(194,194,194)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(26,106,255)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `rgb(26,106,255)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.\n- Apply `12px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `rgb(240,240,240)` surface shifts and `rgb(194,194,194)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `12px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

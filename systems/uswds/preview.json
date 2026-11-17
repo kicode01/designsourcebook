@@ -492,7 +492,7 @@
     },
     {
       "key": "link",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "#005ea2"
     },
     {
@@ -505,18 +505,18 @@
     },
     {
       "key": "alert",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#f0f0f0",
       "textColor": "#1b1b1b"
     },
     {
       "key": "table",
-      "kind": "nav",
+      "kind": "table",
       "textColor": "#1b1b1b"
     },
     {
       "key": "select-2",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "white",
       "textColor": "#1b1b1b",
       "rounded": "0",
@@ -525,7 +525,7 @@
     },
     {
       "key": "banner-2",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#f0f0f0"
     },
     {
@@ -578,7 +578,7 @@
     },
     {
       "key": "link-2",
-      "kind": "nav",
+      "kind": "link",
       "backgroundColor": "rgba(0, 0, 0, 0.1)",
       "padding": "0.25rem"
     },
@@ -615,12 +615,12 @@
     },
     {
       "key": "banner-3",
-      "kind": "card",
+      "kind": "alert",
       "textColor": "#1b1b1b"
     },
     {
       "key": "banner-4",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "transparent",
       "textColor": "#000000",
       "rounded": "0",
@@ -629,7 +629,7 @@
     },
     {
       "key": "banner-5",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "transparent",
       "textColor": "#000000"
     },
@@ -658,8 +658,59 @@
       "textColor": "#1b1b1b",
       "rounded": ".5rem",
       "padding": "1rem"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff8d7b",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff8d7b",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7f9fa",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fbfcfd",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7f9fa",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px"
     }
   ],
-  "overview": "**U.S. Web Design System** is a light-first design system anchored on `#fbfcfd` canvas surfaces with `#0b0b0c` primary ink (19.2:1 contrast) and `#ff8d7b` brand accent.\n\nTypography centers cleanly on `Source Sans Pro Web` (51px display down to 18px body), unified by `0px` razor-sharp architectural corners and stepped `#fbfcfd` -> `#f7f9fa` surface layering.\n\nMaintained by **U.S. Government**. Source: published token package (https://github.com/uswds/uswds#readme), repo https://github.com/uswds/uswds, package `@uswds/uswds`, frameworks: css, web-components. Inventory: **28** colors, **55** typography steps, and **27** documented components (SEE LICENSE IN LICENSE.md license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `1rem`, `1px 0.5rem`, `0.5rem`, `0.75rem 1.25rem`, `0`.\n- **Hierarchy**: Group controls cleanly within `#f7f9fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fbfcfd` -> `#f7f9fa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8d7b` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "USWDS Icons",
+    "package": "@uswds/uswds",
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "curated",
+    "url": "https://designsystem.digital.gov/components/icon/"
+  },
+  "overview": "**U.S. Web Design System** is a light-first design system anchored on `#fbfcfd` canvas surfaces with `#0b0b0c` primary ink (19.2:1 contrast) and `#ff8d7b` brand accent.\n\nTypography centers cleanly on `Source Sans Pro Web` (51px display down to 18px body), unified by `0px` razor-sharp architectural corners and stepped `#fbfcfd` -> `#f7f9fa` surface layering.\n\nMaintained by **U.S. Government**. Source: published token package (https://github.com/uswds/uswds#readme), repo https://github.com/uswds/uswds, package `@uswds/uswds`, frameworks: css, web-components. Inventory: **28** colors, **55** typography steps, and **32** documented components (SEE LICENSE IN LICENSE.md license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 32 component tokens with documented paddings: `1rem`, `1px 0.5rem`, `0.5rem`, `0.75rem 1.25rem`, `0`.\n- **Hierarchy**: Group controls cleanly within `#f7f9fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fbfcfd` -> `#f7f9fa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8d7b` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fbfcfd` (light) with `#0b0b0c` primary text and `#e52207` secondary labels.\n- Use `#ff8d7b` with `#0b0b0c` text (8.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Source Sans Pro Web` headings with `Source Sans Pro Web` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#f7f9fa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

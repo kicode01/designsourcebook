@@ -242,7 +242,7 @@
     },
     {
       "key": "button-pill-nav",
-      "kind": "badge",
+      "kind": "button",
       "backgroundColor": "rgba(0, 0, 0, 0.05)",
       "textColor": "#18181b",
       "rounded": "9999px"
@@ -285,8 +285,83 @@
       "textColor": "#222222",
       "rounded": "8px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1456f0",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1456f0",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#222222",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Lucide",
+    "package": "lucide-react",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 2,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "url": "https://lucide.dev"
+  },
   "overview": "MiniMax's website is a clean, product-showcase platform for a Chinese AI technology company that bridges consumer-friendly appeal with technical credibility. The design language is predominantly white-space-driven with a light, airy feel — pure white backgrounds (`#ffffff`) dominate, letting colorful product cards and AI model illustrations serve as the visual anchors. The overall aesthetic sits at the intersection of Apple's product marketing clarity and a playful, rounded design language that makes AI technology feel approachable.\n\nThe typography system is notably multi-font: DM Sans serves as the primary UI workhorse, Outfit handles display headings with geometric elegance, Poppins appears for mid-tier headings, and Roboto handles data-heavy contexts. This variety reflects a brand in rapid growth — each font serves a distinct communicative purpose rather than competing for attention. The hero heading at 80px weight 500 in both DM Sans and Outfit with a tight 1.10 line-height creates a bold but not aggressive opening statement.\n\nWhat makes MiniMax distinctive is its pill-button geometry (9999px radius) for navigation and primary actions, combined with softer 8px–24px radiused cards for product showcases. The product cards themselves are richly colorful — vibrant gradients in pink, purple, orange, and blue — creating a \"gallery of AI capabilities\" feel. Against the white canvas, these colorful cards pop like app icons on a phone home screen, making each AI model/product feel like a self-contained creative tool.\n\n**Key Characteristics:**\n- White-dominant layout with colorful product card accents\n- Multi-font system: DM Sans (UI), Outfit (display), Poppins (mid-tier), Roboto (data)\n- Pill buttons (9999px radius) for primary navigation and CTAs\n- Generous rounded cards (20px–24px radius) for product showcases\n- Brand blue spectrum: from `#1456f0` (brand-6) through `#3b82f6` (primary-500) to `#60a5fa` (light)\n- Brand pink (`#ea5ec1`) as secondary accent\n- Near-black text (`#222222`, `#18181b`) on white backgrounds\n- Purple-tinted shadows (`rgba(44, 30, 116, 0.16)`) creating subtle brand-colored depth\n- Dark footer section (`#181e25`) with product/company links\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 1px, 2px, 4px, 6px, 8px, 10px, 11px, 14px, 16px, 24px, 32px, 40px, 50px, 64px, 80px\n\n### Grid & Container\n- Max content width centered on page\n- Product card grids: horizontal scroll or 3–4 column layout\n- Full-width white sections with contained content\n- Dark footer at full-width\n\n### Breakpoints\n| Name | Width | Key Changes |\n|------|-------|-------------|\n| Mobile | <768px | Single column, stacked cards |\n| Tablet | 768–1024px | 2-column grids |\n| Desktop | >1024px | Full layout, horizontal card scrolls |\n\n### Whitespace Philosophy\n- **Gallery spacing**: Products are presented like gallery items with generous white space between cards, letting each AI model breathe as its own showcase.\n- **Section rhythm**: Large vertical gaps (64px–80px) between major sections create distinct \"chapters\" of content.\n- **Card breathing**: Product cards use internal padding of 16px–24px with ample whitespace around text.\n\n### Border Radius Scale\n- Minimal (4px): Small tags, micro badges\n- Standard (8px): Buttons, small cards\n- Comfortable (11px–13px): Medium cards, panels\n- Generous (16px–20px): Large product cards\n- Large (22px–24px): Hero product cards, major containers\n- Pill (30px–32px): Badge pills, rounded panels\n- Full (9999px): Buttons, nav tabs",
   "dos": "### Do\n- Use white as the dominant background — let product cards provide the color\n- Apply pill radius (9999px) for navigation tabs and toggle buttons\n- Use generous border radius (20px–24px) for product showcase cards\n- Employ the purple-tinted shadow for featured/hero product cards\n- Keep body text at DM Sans weight 400–500 — heavier weights for buttons only\n- Use Outfit for display headings, DM Sans for everything functional\n- Maintain the universal 1.50 line-height across body text\n- Let colorful product illustrations/gradients serve as the primary visual interest\n\n### Don't\n- Don't add colored backgrounds to main content sections — white is structural\n- Don't use sharp corners (0–4px radius) on product cards — the rounded aesthetic is core\n- Don't apply the brand pink (`#ea5ec1`) to text or buttons — it's for logo and decorative accents only\n- Don't mix more than one display font per section (Outfit OR Poppins, not both)\n- Don't use weight 700 for headings — 500–600 is the range, 700 is reserved for strong emphasis in body text\n- Don't darken shadows beyond 0.16 opacity — the light, airy feel requires restraint\n- Don't use Roboto for headings — it's the data/technical context font only"
 }

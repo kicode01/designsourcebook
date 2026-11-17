@@ -411,6 +411,15 @@ rounded:
   input: 3px
   badge: 999px
   default: 3px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   elementor-price-table:
     backgroundColor: "#000"
@@ -470,6 +479,31 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  switch-control:
+    backgroundColor: "#0077C5"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0077C5"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f1f2f3"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f1f2f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Intuit Harmony
@@ -478,9 +512,9 @@ components:
 
 **Intuit Harmony** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0077C5` brand accent.
 
-Display headlines pair `System UI` with `Roboto` body copy (110px display down to 16px body), unified by `3px` base corner radius and subtle shadow elevation.
+Display headlines pair `System UI` with `Roboto` body copy (110px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.
 
-Maintained by **Intuit**. Source: live stylesheet extraction (https://designsystem.quickbooks.com/), repo https://github.com/intuit/design-systems-cli, frameworks: react, css. Inventory: **88** colors, **144** typography steps, and **13** documented components (all rights reserved license).
+Maintained by **Intuit**. Source: live stylesheet extraction (https://designsystem.quickbooks.com/), repo https://github.com/intuit/design-systems-cli, frameworks: react, css. Inventory: **88** colors, **144** typography steps, and **18** documented components (all rights reserved license).
 
 ## Colors
 
@@ -502,7 +536,7 @@ Maintained by **Intuit**. Source: live stylesheet extraction (https://designsyst
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `12px 24px`, `16px`, `0px 0px 0px 0px`, `9px 13px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 18 component tokens with documented paddings: `12px 24px`, `16px`, `0px 0px 0px 0px`, `9px 13px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `#f1f2f3` cards; separate sibling sections using `#d5d8dc` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -512,19 +546,28 @@ Maintained by **Intuit**. Source: live stylesheet extraction (https://designsyst
 
 ## Shapes
 
-- **Base Corner Geometry**: `3px` (Buttons `3px` · Inputs `3px` · Badges `999px`).
-- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `3px` container.
+- **Base Corner Geometry**: `4px` (Buttons `3px` · Inputs `3px` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
-- **`elementor-price-table` (nav)**: bg `#000`.
+- **`elementor-price-table` (table)**: bg `#000`.
 - **`elementor-widget-woocommerce-purchase-summary` (card)**: ink `#69727d`.
-- **`nav-menu-dropdown` (nav)**: bg `#fff`.
+- **`nav-menu-dropdown` (select)**: bg `#fff`.
 - **`button` (button)**: bg `rgb(105, 114, 125)`, ink `rgb(255, 255, 255)`, (4.9:1), radius `3px`, padding `12px 24px`.
 - **`wp-block-button-2` (button)**: bg `rgb(50, 55, 60)`, ink `rgb(255, 255, 255)`, (12.0:1), radius `9999px`.
-- **`wc-block-components-notice-banner` (card)**: bg `rgb(255, 255, 255)`, ink `rgb(47, 47, 47)`, (13.4:1), radius `4px`, padding `16px`, border `1px solid`.
+- **`wc-block-components-notice-banner` (alert)**: bg `rgb(255, 255, 255)`, ink `rgb(47, 47, 47)`, (13.4:1), radius `4px`, padding `16px`, border `1px solid`.
 - **`nav` (nav)**: bg `#ffffff`, padding `0px 0px 0px 0px`.
 - **`dt-wc-btn` (button)**: bg `#999999`.
+- **`wc-block-filter-submit-button-2` (button)**: bg `#999999`.
+- **`woocommerce-widget-layered-nav-dropdown-2` (select)**: bg `#999999`.
+- **`input-default` (input)**: bg `#f1f2f3`, ink `#0b0b0c`, (17.6:1), radius `3px`, padding `9px 13px`.
+- **`badge-brand` (badge)**: bg `#FF0000`, ink `#0b0b0c`, (4.9:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`switch-control` (switch)**: bg `#0077C5`, ink `#f7f7f8`, (4.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0077C5`, ink `#f7f7f8`, (4.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f1f2f3`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `6px 12px`.
 
 ## Do's and Don'ts
 
@@ -532,12 +575,12 @@ Maintained by **Intuit**. Source: live stylesheet extraction (https://designsyst
 - Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#0077C5` with `#f7f7f8` text (4.4:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `System UI` headings with `Roboto` body copy using documented weights and scale steps.
-- Apply `3px` base geometry across inputs and buttons (3px on outer containers).
+- Apply `4px` base geometry across inputs and buttons (4px on outer containers).
 - Separate containers via `#f1f2f3` surface shifts and `#d5d8dc` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `3px` baseline.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
 - Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

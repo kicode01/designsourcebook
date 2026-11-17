@@ -87,6 +87,15 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#ffffff"
@@ -120,6 +129,46 @@ components:
     textColor: "#60646c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f0f0f3"
+    textColor: "#60646c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0d74ce"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0d74ce"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f0f0f3"
+    textColor: "#60646c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f0f0f3"
+    textColor: "#60646c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#60646c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#60646c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f0f0f3"
+    textColor: "#60646c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Expo

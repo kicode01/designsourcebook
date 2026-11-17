@@ -110,6 +110,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Radix Icons
+  package: "@radix-ui/react-icons"
+  style: solid
+  grid: 15
+  strokeWidth: 0
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://www.radix-ui.com/icons"
 components:
   button-primary:
     backgroundColor: "#ffc53d"
@@ -151,6 +161,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#141110"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ffc53d"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ffc53d"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#141110"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#141110"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#111111"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#111111"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#141110"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Radix
@@ -161,7 +211,7 @@ components:
 
 Typography centers cleanly on `System UI` (16px display down to 16px body), unified by `6px` base corner radius and stepped `#111111` -> `#141110` surface layering.
 
-Maintained by **WorkOS**. Source: published token package, repo https://github.com/radix-ui/primitives, package `@radix-ui/colors`, frameworks: react, css. Inventory: **91** colors, **4** typography steps, and **8** documented components (MIT license).
+Maintained by **WorkOS**. Source: published token package, repo https://github.com/radix-ui/primitives, package `@radix-ui/colors`, frameworks: react, css. Inventory: **91** colors, **4** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -184,7 +234,7 @@ Maintained by **WorkOS**. Source: published token package, repo https://github.c
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#141110` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -196,6 +246,7 @@ Maintained by **WorkOS**. Source: published token package, repo https://github.c
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Radix Icons (`@radix-ui/react-icons`) on a `15x15` grid (solid, stroke `0px`, `square` caps).
 
 ## Components
 
@@ -207,6 +258,14 @@ Maintained by **WorkOS**. Source: published token package, repo https://github.c
 - **`badge-brand` (badge)**: bg `#ffc53d`, ink `#000000`, (13.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#141110`, ink `#f7f7f8`, (17.6:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#141110`, ink `#f7f7f8`, (17.6:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#ffc53d`, ink `#0b0b0c`, (12.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#ffc53d`, ink `#0b0b0c`, (12.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#141110`, ink `#f7f7f8`, (17.6:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#141110`, ink `#f7f7f8`, (17.6:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#111111`, ink `#f7f7f8`, (17.6:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#f7f7f8`, ink `#111111`, (17.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#141110`, ink `#f7f7f8`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

@@ -128,6 +128,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Atlassian Icons
+  package: "@atlaskit/icon"
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://atlassian.design/components/icon"
 components:
   button-primary:
     backgroundColor: "#1558BC"
@@ -169,6 +179,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#F8EEFE"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1558BC"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1558BC"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#F8EEFE"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#F8EEFE"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#F0F1F2"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#F0F1F2"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#F8EEFE"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Atlassian Design System
@@ -179,7 +229,7 @@ components:
 
 Typography centers cleanly on `FontFamilyWebSansRefreshed` (48px display down to 16px body), unified by `6px` base corner radius and stepped `#F0F1F2` -> `#F8EEFE` surface layering.
 
-Maintained by **Atlassian**. Source: published token package (https://atlassian.design/components/tokens), repo https://bitbucket.org/atlassian/atlassian-frontend-mirror, package `@atlaskit/tokens`, frameworks: react, css. Inventory: **91** colors, **13** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Atlassian**. Source: published token package (https://atlassian.design/components/tokens), repo https://bitbucket.org/atlassian/atlassian-frontend-mirror, package `@atlaskit/tokens`, frameworks: react, css. Inventory: **91** colors, **13** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -202,7 +252,7 @@ Maintained by **Atlassian**. Source: published token package (https://atlassian.
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#F8EEFE` cards; separate sibling sections using `#E2E3E4` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -214,6 +264,7 @@ Maintained by **Atlassian**. Source: published token package (https://atlassian.
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Atlassian Icons (`@atlaskit/icon`) on a `16x16` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -225,6 +276,14 @@ Maintained by **Atlassian**. Source: published token package (https://atlassian.
 - **`badge-brand` (badge)**: bg `#1558BC`, ink `#ffffff`, (6.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#DCFFF1`, ink `#000000`, (19.6:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1558BC`, ink `#f7f7f8`, (6.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1558BC`, ink `#f7f7f8`, (6.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#F0F1F2`, ink `#0b0b0c`, (17.4:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#F0F1F2`, (17.4:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#F8EEFE`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

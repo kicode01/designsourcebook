@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#3c8dd6",
   "border": "#ccd4da",
-  "radius": "0",
+  "radius": "0px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -769,7 +769,7 @@
     },
     {
       "key": "tab",
-      "kind": "nav",
+      "kind": "tabs",
       "backgroundColor": "transparent",
       "textColor": "#171d21",
       "padding": "0.5rem 1.5rem",
@@ -777,7 +777,7 @@
     },
     {
       "key": "link",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "#007bc5"
     },
     {
@@ -793,7 +793,7 @@
     },
     {
       "key": "tab-2",
-      "kind": "nav",
+      "kind": "tabs",
       "textColor": "#171d21"
     },
     {
@@ -837,17 +837,17 @@
     },
     {
       "key": "njd-spacing-table",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#ffe9f3"
     },
     {
       "key": "njd-design-tokens-table-2",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#fff"
     },
     {
       "key": "njd-design-tokens-table-3",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#fff"
     },
     {
@@ -857,8 +857,67 @@
       "textColor": "#0b0b0c",
       "rounded": "0",
       "padding": "10px 18px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#3c8dd6",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#3c8dd6",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px"
     }
   ],
-  "overview": "**ENGIE Fluid Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3c8dd6` brand accent.\n\nDisplay headlines pair `Lato` with `System Mono` body copy (88px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.design), repo https://github.com/engie-group/fluid-design-system, package `@engie-group/fluid-design-tokens`, frameworks: react, angular, web-components, css. Inventory: **91** colors, **64** typography steps, and **16** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0.5rem 1.5rem`, `0.25rem 0.5rem`, `1.5rem`, `0.25rem 0.75rem`, `10px 18px`.\n- **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#ccd4da` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 0 1px #ccd4da`) paired with `#ccd4da` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3c8dd6` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Material Icons",
+    "package": "@mui/icons-material",
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "url": "https://fonts.google.com/icons"
+  },
+  "overview": "**ENGIE Fluid Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3c8dd6` brand accent.\n\nDisplay headlines pair `Lato` with `System Mono` body copy (88px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.design), repo https://github.com/engie-group/fluid-design-system, package `@engie-group/fluid-design-tokens`, frameworks: react, angular, web-components, css. Inventory: **91** colors, **64** typography steps, and **22** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 22 component tokens with documented paddings: `0.5rem 1.5rem`, `0.25rem 0.5rem`, `1.5rem`, `0.25rem 0.75rem`, `10px 18px`.\n- **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#ccd4da` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 0 1px #ccd4da`) paired with `#ccd4da` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3c8dd6` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#3c8dd6` with `#f7f7f8` text (3.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Lato` headings with `System Mono` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#f5f5f5` surface shifts and `#ccd4da` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `nj-chat-input-suggestion` fields and secondary buttons."
 }

@@ -107,6 +107,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#42c7ff"
@@ -148,6 +157,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#42c7ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#42c7ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Ontario Design System
@@ -158,7 +207,7 @@ components:
 
 Typography centers cleanly on `Open Sans` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f2f2f2` surface layering.
 
-Maintained by **Ontario**. Source: live stylesheet extraction (https://designsystem.ontario.ca/docs/documentation/release-notes.html#latest), repo https://github.com/ongov/ontario-design-system, package `@ongov/ontario-design-system-global-styles`, frameworks: web-components, css. Inventory: **91** colors, **1** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **Ontario**. Source: live stylesheet extraction (https://designsystem.ontario.ca/docs/documentation/release-notes.html#latest), repo https://github.com/ongov/ontario-design-system, package `@ongov/ontario-design-system-global-styles`, frameworks: web-components, css. Inventory: **91** colors, **1** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -178,7 +227,7 @@ Maintained by **Ontario**. Source: live stylesheet extraction (https://designsys
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -190,6 +239,7 @@ Maintained by **Ontario**. Source: live stylesheet extraction (https://designsys
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -201,6 +251,14 @@ Maintained by **Ontario**. Source: live stylesheet extraction (https://designsys
 - **`badge-brand` (badge)**: bg `#42c7ff`, ink `#0b0b0c`, (10.2:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#42c7ff`, ink `#0b0b0c`, (10.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#42c7ff`, ink `#0b0b0c`, (10.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

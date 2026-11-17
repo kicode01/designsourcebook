@@ -105,6 +105,15 @@ rounded:
   badge: 999px
   nav: 5px
   default: 5px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary-dark:
     backgroundColor: "#15181e"
@@ -143,6 +152,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 5px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#efeff1"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#efeff1"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#efeff1"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#f1f2f3"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#f1f2f3"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#efeff1"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: HashiCorp

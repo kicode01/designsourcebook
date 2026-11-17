@@ -88,6 +88,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 4px
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://lucide.dev"
 components:
   button-neon-primary:
     backgroundColor: "#faff69"
@@ -132,6 +142,46 @@ components:
     textColor: "#ffffff"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#f4f692"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#f4f692"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#141414"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: ClickHouse

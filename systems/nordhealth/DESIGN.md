@@ -126,6 +126,16 @@ rounded:
   input: 3px
   button: 5px
   default: 5px
+icons:
+  library: Nordhealth Icons
+  package: "@nordhealth/icons"
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://nordhealth.design/icons"
 components:
   panel:
     backgroundColor: "#fff"
@@ -157,6 +167,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 5px
     padding: 10px 18px
+  switch-control:
+    backgroundColor: "#3559c7"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#3559c7"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fcfcfc"
+    textColor: "#0b0b0c"
+    rounded: 5px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fcfcfc"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Nordhealth
@@ -167,7 +212,7 @@ components:
 
 Typography centers cleanly on `Nordhealth Sans` (36px display down to 16px body), unified by `5px` base corner radius and stepped `#fcfcfc` -> `#fff` surface layering.
 
-Source: live stylesheet extraction (https://nordhealth.design/), repo https://github.com/nordhealth/nord-iot, package `@nordhealth/tokens`, frameworks: web-components, css. Inventory: **91** colors, **13** typography steps, and **9** documented components (all rights reserved license).
+Source: live stylesheet extraction (https://nordhealth.design/), repo https://github.com/nordhealth/nord-iot, package `@nordhealth/tokens`, frameworks: web-components, css. Inventory: **91** colors, **13** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -190,7 +235,7 @@ Source: live stylesheet extraction (https://nordhealth.design/), repo https://gi
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `10px 18px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#d7dce0` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -202,6 +247,7 @@ Source: live stylesheet extraction (https://nordhealth.design/), repo https://gi
 
 - **Base Corner Geometry**: `5px` (Inputs `3px` · Cards `5px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `5px` container.
+- **Iconography & SVGs**: Nordhealth Icons (`@nordhealth/icons`) on a `16x16` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -209,10 +255,18 @@ Source: live stylesheet extraction (https://nordhealth.design/), repo https://gi
 - **`label` (badge)**: ink `rgb(12, 26, 61)`.
 - **`input` (input)**: bg `rgb(255, 255, 255)`, ink `rgb(12, 26, 61)`, (17.1:1), radius `3px`, border `1px solid rgb(188, 197, 204)`.
 - **`n-color-button` (button)**: bg `rgb(255, 255, 255)`.
-- **`n-color-text-link` (nav)**: ink `rgb(53, 89, 199)`.
+- **`n-color-text-link` (link)**: ink `rgb(53, 89, 199)`.
 - **`n-color-nav-heading` (nav)**: ink `rgb(143, 161, 170)`.
 - **`n-color-nav-surface-2` (nav)**: bg `rgb(255, 255, 255)`.
-- **`n-color-nav-selected-3` (input)**: bg `rgb(233, 234, 237)`.
+- **`n-color-nav-selected-3` (select)**: bg `rgb(233, 234, 237)`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `5px`, padding `10px 18px`.
+- **`switch-control` (switch)**: bg `#3559c7`, ink `#f7f7f8`, (5.8:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#3559c7`, ink `#f7f7f8`, (5.8:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `5px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `5px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fcfcfc`, ink `#0b0b0c`, (19.2:1), radius `5px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fcfcfc`, (19.2:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

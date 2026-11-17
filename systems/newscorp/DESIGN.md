@@ -147,6 +147,56 @@ typography:
     fontFamily: monospace
 rounded:
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
+components:
+  select-default:
+    backgroundColor: "rgba(240,249,253,1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0b0b0c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0b0b0c"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgba(240,249,253,1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgba(240,249,253,1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgba(243,249,255,1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgba(243,249,255,1)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgba(240,249,253,1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # NewsKit
@@ -157,7 +207,7 @@ rounded:
 
 Typography centers cleanly on `DM Sans` (80px display down to 17px body), unified by `8px` base corner radius and stepped `rgba(243,249,255,1)` -> `rgba(240,249,253,1)` surface layering.
 
-Maintained by **News Corp**. Source: published token package (https://github.com/newscorp-ghfb/newskit), repo https://github.com/newscorp-ghfb/newskit. Inventory: **91** colors, **25** typography steps, and **0** documented components (see repository license).
+Maintained by **News Corp**. Source: published token package (https://github.com/newscorp-ghfb/newskit), repo https://github.com/newscorp-ghfb/newskit. Inventory: **91** colors, **25** typography steps, and **8** documented components (see repository license).
 
 ## Colors
 
@@ -180,7 +230,7 @@ Maintained by **News Corp**. Source: published token package (https://github.com
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 0 component tokens.
+- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.
 - **Hierarchy**: Group controls cleanly within `rgba(240,249,253,1)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -192,10 +242,18 @@ Maintained by **News Corp**. Source: published token package (https://github.com
 
 - **Base Corner Geometry**: `8px`.
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
-
+- **`select-default` (select)**: bg `rgba(240,249,253,1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0b0b0c`, ink `#f7f7f8`, (18.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0b0b0c`, ink `#f7f7f8`, (18.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgba(240,249,253,1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgba(240,249,253,1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgba(243,249,255,1)`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgba(243,249,255,1)`, (18.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgba(240,249,253,1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

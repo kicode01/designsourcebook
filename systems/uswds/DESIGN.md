@@ -205,6 +205,16 @@ rounded:
   nav: "0"
   card: 0.5rem
   default: "0"
+icons:
+  library: USWDS Icons
+  package: "@uswds/uswds"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://designsystem.digital.gov/components/icon/"
 components:
   nav:
     backgroundColor: white
@@ -334,6 +344,31 @@ components:
     textColor: "#1b1b1b"
     rounded: ".5rem"
     padding: 1rem
+  switch-control:
+    backgroundColor: "#ff8d7b"
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff8d7b"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f7f9fa"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fbfcfd"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f7f9fa"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # U.S. Web Design System
@@ -344,7 +379,7 @@ components:
 
 Typography centers cleanly on `Source Sans Pro Web` (51px display down to 18px body), unified by `0px` razor-sharp architectural corners and stepped `#fbfcfd` -> `#f7f9fa` surface layering.
 
-Maintained by **U.S. Government**. Source: published token package (https://github.com/uswds/uswds#readme), repo https://github.com/uswds/uswds, package `@uswds/uswds`, frameworks: css, web-components. Inventory: **28** colors, **55** typography steps, and **27** documented components (SEE LICENSE IN LICENSE.md license).
+Maintained by **U.S. Government**. Source: published token package (https://github.com/uswds/uswds#readme), repo https://github.com/uswds/uswds, package `@uswds/uswds`, frameworks: css, web-components. Inventory: **28** colors, **55** typography steps, and **32** documented components (SEE LICENSE IN LICENSE.md license).
 
 ## Colors
 
@@ -367,7 +402,7 @@ Maintained by **U.S. Government**. Source: published token package (https://gith
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 27 component tokens with documented paddings: `1rem`, `1px 0.5rem`, `0.5rem`, `0.75rem 1.25rem`, `0`.
+- **Grid & Control Spacing**: Derived from 32 component tokens with documented paddings: `1rem`, `1px 0.5rem`, `0.5rem`, `0.75rem 1.25rem`, `0`.
 - **Hierarchy**: Group controls cleanly within `#f7f9fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -379,17 +414,26 @@ Maintained by **U.S. Government**. Source: published token package (https://gith
 
 - **Base Corner Geometry**: `0` (Buttons `0.25rem` · Inputs `0` · Badges `2px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: USWDS Icons (`@uswds/uswds`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`nav` (nav)**: bg `white`, padding `1rem`.
 - **`tag` (badge)**: bg `#565c65`, ink `white`, (6.7:1), radius `2px`, padding `1px 0.5rem`.
-- **`link` (nav)**: ink `#005ea2`.
+- **`link` (link)**: ink `#005ea2`.
 - **`input` (input)**: ink `#1b1b1b`, radius `0`, padding `0.5rem`, border `1px solid #565c65`.
-- **`alert` (card)**: bg `#f0f0f0`, ink `#1b1b1b`, (15.1:1).
-- **`table` (nav)**: ink `#1b1b1b`.
-- **`select-2` (input)**: bg `white`, ink `#1b1b1b`, (17.2:1), radius `0`, padding `0.5rem`, border `1px solid #565c65`.
-- **`banner-2` (card)**: bg `#f0f0f0`.
+- **`alert` (alert)**: bg `#f0f0f0`, ink `#1b1b1b`, (15.1:1).
+- **`table` (table)**: ink `#1b1b1b`.
+- **`select-2` (select)**: bg `white`, ink `#1b1b1b`, (17.2:1), radius `0`, padding `0.5rem`, border `1px solid #565c65`.
+- **`banner-2` (alert)**: bg `#f0f0f0`.
+- **`button` (button)**: bg `#005ea2`, ink `white`, (6.7:1), radius `0.25rem`, padding `0.75rem 1.25rem`, border `0`.
+- **`textarea-3` (input)**: ink `#1b1b1b`, radius `0`, padding `0.5rem`, border `1px solid #565c65`.
+- **`btn-2` (button)**: bg `transparent`, ink `#000000`, radius `0`, padding `0`, border `0`.
+- **`card` (card)**: bg `#f0f0f0`.
+- **`nav-2` (nav)**: bg `transparent`, ink `#000000`, radius `0`, padding `0`, border `0`.
+- **`input-group-4` (input)**: ink `#1b1b1b`, radius `0`, padding `0.5rem`, border `1px solid #565c65`.
+- **`link-2` (link)**: bg `rgba(0, 0, 0, 0.1)`, padding `0.25rem`.
+- **`in-page-nav-3` (nav)**: ink `#1b1b1b`.
 
 ## Do's and Don'ts
 

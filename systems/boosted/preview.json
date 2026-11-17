@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#ff7900",
   "border": "#ccc",
-  "radius": "0",
+  "radius": "0px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -660,22 +660,22 @@
   "components": [
     {
       "key": "link-info",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(65, 112, 216, 1)"
     },
     {
       "key": "link-dark-2",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(0, 0, 0, 1)"
     },
     {
       "key": "link-light-3",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(204, 204, 204, 1)"
     },
     {
       "key": "select",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "#fff",
       "textColor": "#000",
       "rounded": "0",
@@ -683,17 +683,17 @@
     },
     {
       "key": "link-danger-4",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(205, 60, 20, 1)"
     },
     {
       "key": "link-primary-5",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(241, 110, 0, 1)"
     },
     {
       "key": "link-success-6",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(34, 135, 34, 1)"
     },
     {
@@ -749,8 +749,75 @@
       "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff7900",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff7900",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fafafa",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Orange Boosted** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#ff7900` brand accent.\n\nTypography centers cleanly on `HelvNeueOrange` (60px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#fafafa` -> `#eee` surface layering.\n\nMaintained by **Orange**. Source: published token package (https://boosted.orange.com/), repo https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap, package `boosted`, frameworks: css. Inventory: **91** colors, **46** typography steps, and **14** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `0.5rem 0.625rem`, `10px 18px`, `18px 20px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `#eee` cards; separate sibling sections using `#ccc` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#eee`) and `1px solid #ccc` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff7900` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff7900` with `#f7f7f8` text (2.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `HelvNeueOrange` headings with `HelvNeueOrange` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#eee` surface shifts and `#ccc` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `select` fields and secondary buttons."
+  "icons": {
+    "library": "Solaris / Bootstrap Icons",
+    "package": "bootstrap-icons",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "curated",
+    "url": "https://boosted.orange.com"
+  },
+  "overview": "**Orange Boosted** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#ff7900` brand accent.\n\nTypography centers cleanly on `HelvNeueOrange` (60px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#fafafa` -> `#eee` surface layering.\n\nMaintained by **Orange**. Source: published token package (https://boosted.orange.com/), repo https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap, package `boosted`, frameworks: css. Inventory: **91** colors, **46** typography steps, and **21** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0.5rem 0.625rem`, `10px 18px`, `18px 20px`, `4px 10px`, `2px`.\n- **Hierarchy**: Group controls cleanly within `#eee` cards; separate sibling sections using `#ccc` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#eee`) and `1px solid #ccc` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff7900` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff7900` with `#f7f7f8` text (2.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `HelvNeueOrange` headings with `HelvNeueOrange` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#eee` surface shifts and `#ccc` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input-group-text-2` fields and secondary buttons."
 }

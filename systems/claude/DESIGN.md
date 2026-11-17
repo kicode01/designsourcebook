@@ -118,6 +118,15 @@ rounded:
   badge: 999px
   nav: 12px
   default: 12px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-warm-sand:
     backgroundColor: "#e8e6dc"
@@ -167,6 +176,46 @@ components:
     textColor: "#4d4c48"
     rounded: 12px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5f4ed"
+    textColor: "#4d4c48"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#b53333"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#b53333"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f4ed"
+    textColor: "#4d4c48"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f4ed"
+    textColor: "#4d4c48"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#4d4c48"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#4d4c48"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f4ed"
+    textColor: "#4d4c48"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Claude (Anthropic)

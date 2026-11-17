@@ -162,6 +162,15 @@ rounded:
   card: 6px
   badge: 999px
   default: ".3125rem"
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   btn-close:
     textColor: "#98a2b3"
@@ -217,6 +226,41 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  switch-control:
+    backgroundColor: "#5925dc"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#5925dc"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Singapore Government Design System
@@ -227,7 +271,7 @@ components:
 
 Typography centers cleanly on `Inter` (32px display down to 16px body), unified by `.3125rem` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Singapore**. Source: published token package, repo https://github.com/GovTechSG/sgds, package `@govtechsg/sgds`, frameworks: web-components, react, css. Inventory: **91** colors, **29** typography steps, and **14** documented components (MIT license).
+Maintained by **Singapore**. Source: published token package, repo https://github.com/GovTechSG/sgds, package `@govtechsg/sgds`, frameworks: web-components, react, css. Inventory: **91** colors, **29** typography steps, and **21** documented components (MIT license).
 
 ## Colors
 
@@ -250,7 +294,7 @@ Maintained by **Singapore**. Source: published token package, repo https://githu
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `.25em`, `.4375rem 3rem .4375rem 1rem`, `.4375rem 1rem`, `10px 18px`, `18px 20px`.
+- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `.25em`, `.4375rem 3rem .4375rem 1rem`, `.4375rem 1rem`, `10px 18px`, `18px 20px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#98a2b3` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -260,19 +304,28 @@ Maintained by **Singapore**. Source: published token package, repo https://githu
 
 ## Shapes
 
-- **Base Corner Geometry**: `.3125rem` (Buttons `.3125rem` · Inputs `.3125rem` · Cards `6px` · Badges `999px`).
+- **Base Corner Geometry**: `.3125rem` (Buttons `.3125rem` · Cards `6px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`btn-close` (button)**: ink `#98a2b3`, radius `.3125rem`, padding `.25em`, border `0`.
-- **`link-info` (nav)**: ink `#0f71bb`.
-- **`link-dark-2` (nav)**: ink `#000`.
-- **`link-light-3` (nav)**: ink `#f7f7f9`.
-- **`select` (input)**: bg `#fff`, ink `#1d2939`, (14.7:1), radius `.3125rem`, padding `.4375rem 3rem .4375rem 1rem`, border `1px solid #98a2b3`.
-- **`link-danger-4` (nav)**: ink `#d7260f`.
-- **`link-primary-5` (nav)**: ink `#5925dc`.
-- **`link-success-6` (nav)**: ink `#0a8217`.
+- **`link-info` (link)**: ink `#0f71bb`.
+- **`link-dark-2` (link)**: ink `#000`.
+- **`link-light-3` (link)**: ink `#f7f7f9`.
+- **`select` (select)**: bg `#fff`, ink `#1d2939`, (14.7:1), radius `.3125rem`, padding `.4375rem 3rem .4375rem 1rem`, border `1px solid #98a2b3`.
+- **`link-danger-4` (link)**: ink `#d7260f`.
+- **`link-primary-5` (link)**: ink `#5925dc`.
+- **`link-success-6` (link)**: ink `#0a8217`.
+- **`form-check-input-2` (input)**: bg `#fff`, border `1px solid rgba(0,0,0,.25)`.
+- **`input-group-text-3` (input)**: bg `#e4e7ec`, ink `#1d2939`, (11.9:1), radius `.3125rem`, padding `.4375rem 1rem`, border `1px solid #98a2b3`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `.3125rem`, padding `10px 18px`.
+- **`card-surface` (card)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#5925dc`, ink `#ffffff`, (7.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#0a8217`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`switch-control` (switch)**: bg `#5925dc`, ink `#f7f7f8`, (7.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#5925dc`, ink `#f7f7f8`, (7.2:1), radius `4px`, padding `2px`.
 
 ## Do's and Don'ts
 
@@ -288,4 +341,4 @@ Maintained by **Singapore**. Source: published token package, repo https://githu
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not mix conflicting corner radii that clash with the system's `.3125rem` baseline.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not truncate or drop border contrast on `form-check-input-2` fields and secondary buttons.

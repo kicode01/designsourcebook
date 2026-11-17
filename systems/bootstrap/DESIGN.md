@@ -182,6 +182,16 @@ rounded:
   card: 10px
   badge: 999px
   default: 6px
+icons:
+  library: Bootstrap Icons
+  package: bootstrap-icons
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://icons.getbootstrap.com"
 components:
   link-info:
     textColor: "RGBA(13, 202, 240, 1)"
@@ -230,6 +240,46 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0d6efd"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0d6efd"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Bootstrap
@@ -240,7 +290,7 @@ components:
 
 Display headlines pair `null` with `System UI` body copy (80px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `rgb(255, 255, 255)` surface layering.
 
-Source: published token package (https://getbootstrap.com/), repo https://github.com/twbs/bootstrap, package `bootstrap`, frameworks: css, react, vue. Inventory: **91** colors, **40** typography steps, and **13** documented components (MIT license).
+Source: published token package (https://getbootstrap.com/), repo https://github.com/twbs/bootstrap, package `bootstrap`, frameworks: css, react, vue. Inventory: **91** colors, **40** typography steps, and **21** documented components (MIT license).
 
 ## Colors
 
@@ -263,7 +313,7 @@ Source: published token package (https://getbootstrap.com/), repo https://github
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `#c4c8cb` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -275,17 +325,26 @@ Source: published token package (https://getbootstrap.com/), repo https://github
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Bootstrap Icons (`bootstrap-icons`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
-- **`link-info` (nav)**: ink `RGBA(13, 202, 240, 1)`.
-- **`link-dark-2` (nav)**: ink `RGBA(33, 37, 41, 1)`.
-- **`link-light-3` (nav)**: ink `RGBA(248, 249, 250, 1)`.
-- **`link-danger-4` (nav)**: ink `RGBA(220, 53, 69, 1)`.
-- **`link-primary-5` (nav)**: ink `RGBA(13, 110, 253, 1)`.
-- **`link-success-6` (nav)**: ink `RGBA(25, 135, 84, 1)`.
+- **`link-info` (link)**: ink `RGBA(13, 202, 240, 1)`.
+- **`link-dark-2` (link)**: ink `RGBA(33, 37, 41, 1)`.
+- **`link-light-3` (link)**: ink `RGBA(248, 249, 250, 1)`.
+- **`link-danger-4` (link)**: ink `RGBA(220, 53, 69, 1)`.
+- **`link-primary-5` (link)**: ink `RGBA(13, 110, 253, 1)`.
+- **`link-success-6` (link)**: ink `RGBA(25, 135, 84, 1)`.
 - **`button-primary` (button)**: bg `#0d6efd`, ink `#ffffff`, (4.5:1), radius `6px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#dc3545`, ink `#ffffff`, (4.5:1), radius `6px`, padding `10px 18px`.
+- **`input-default` (input)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `9px 13px`.
+- **`card-surface` (card)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#0d6efd`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#198754`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
+- **`select-default` (select)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0d6efd`, ink `#0b0b0c`, (4.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0d6efd`, ink `#0b0b0c`, (4.4:1), radius `4px`, padding `2px`.
 
 ## Do's and Don'ts
 

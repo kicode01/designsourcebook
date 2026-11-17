@@ -204,6 +204,15 @@ rounded:
   input: 4px
   badge: 999px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   mzp-c-button:
     backgroundColor: "#161616"
@@ -241,6 +250,46 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "#f9f9fb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#cb9eff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#cb9eff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f9f9fb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f9f9fb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f9f9fb"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Protocol
@@ -251,7 +300,7 @@ components:
 
 Display headlines pair `Mozilla Headline` with `Inter` body copy (56px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.
 
-Maintained by **Mozilla**. Source: published token package (https://github.com/mozilla/protocol), repo https://github.com/mozilla/protocol, package `@mozilla-protocol/core`, frameworks: css. Inventory: **91** colors, **32** typography steps, and **8** documented components (MPL-2.0 license).
+Maintained by **Mozilla**. Source: published token package (https://github.com/mozilla/protocol), repo https://github.com/mozilla/protocol, package `@mozilla-protocol/core`, frameworks: css. Inventory: **91** colors, **32** typography steps, and **16** documented components (MPL-2.0 license).
 
 ## Colors
 
@@ -274,7 +323,7 @@ Maintained by **Mozilla**. Source: published token package (https://github.com/m
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 16px`, `32px 4px`, `0 32px 0 6px`, `10px 18px`, `9px 13px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `8px 16px`, `32px 4px`, `0 32px 0 6px`, `10px 18px`, `9px 13px`.
 - **Hierarchy**: Group controls cleanly within `#f9f9fb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -286,17 +335,26 @@ Maintained by **Mozilla**. Source: published token package (https://github.com/m
 
 - **Base Corner Geometry**: `4px` (Inputs `4px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`mzp-c-button` (button)**: bg `#161616`, ink `#fff`, (18.1:1), padding `8px 16px`, border `2px solid rgba(0,0,0,0)`.
 - **`mzp-c-card` (card)**: bg `#fff`.
 - **`mzp-c-menu-panel` (nav)**: bg `#fff`, padding `32px 4px`.
-- **`mzp-c-navigation-menu-button` (nav)**: bg `rgba(0,0,0,0)`, radius `4px`, padding `0 32px 0 6px`.
+- **`mzp-c-navigation-menu-button` (button)**: bg `rgba(0,0,0,0)`, radius `4px`, padding `0 32px 0 6px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `4px`, padding `10px 18px`.
 - **`input-default` (input)**: bg `#f9f9fb`, ink `#0b0b0c`, (18.7:1), radius `4px`, padding `9px 13px`.
 - **`badge-brand` (badge)**: bg `#cb9eff`, ink `#0b0b0c`, (9.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`select-default` (select)**: bg `#f9f9fb`, ink `#0b0b0c`, (18.7:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#cb9eff`, ink `#0b0b0c`, (9.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#cb9eff`, ink `#0b0b0c`, (9.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f9f9fb`, ink `#0b0b0c`, (18.7:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f9f9fb`, ink `#0b0b0c`, (18.7:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f9f9fb`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

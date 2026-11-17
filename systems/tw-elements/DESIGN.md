@@ -101,6 +101,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#d9e4f3"
@@ -142,6 +151,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#404650"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#d9e4f3"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#d9e4f3"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#404650"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#404650"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#4f4f4f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#4f4f4f"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#404650"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Tailwind Elements
@@ -152,7 +201,7 @@ components:
 
 Typography centers cleanly on `Roboto` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#4f4f4f` -> `#404650` surface layering.
 
-Maintained by **MDBootstrap**. Source: published token package (https://tw-elements.com/), repo https://github.com/mdbootstrap/TW-Elements, package `tw-elements`, frameworks: css, react. Inventory: **87** colors, **1** typography steps, and **8** documented components (SEE LICENSE IN <License.txt> license).
+Maintained by **MDBootstrap**. Source: published token package (https://tw-elements.com/), repo https://github.com/mdbootstrap/TW-Elements, package `tw-elements`, frameworks: css, react. Inventory: **87** colors, **1** typography steps, and **16** documented components (SEE LICENSE IN <License.txt> license).
 
 ## Colors
 
@@ -173,7 +222,7 @@ Maintained by **MDBootstrap**. Source: published token package (https://tw-eleme
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#404650` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -185,6 +234,7 @@ Maintained by **MDBootstrap**. Source: published token package (https://tw-eleme
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -196,6 +246,14 @@ Maintained by **MDBootstrap**. Source: published token package (https://tw-eleme
 - **`badge-brand` (badge)**: bg `#d9e4f3`, ink `#0b0b0c`, (15.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#14A44D`, ink `#0b0b0c`, (6.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#d9e4f3`, ink `#0b0b0c`, (15.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#d9e4f3`, ink `#0b0b0c`, (15.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#4f4f4f`, ink `#f7f7f8`, (7.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#f7f7f8`, ink `#4f4f4f`, (7.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#404650`, ink `#f7f7f8`, (8.9:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

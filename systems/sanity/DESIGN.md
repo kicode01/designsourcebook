@@ -120,6 +120,16 @@ typography:
     lineHeight: 1.3
 rounded:
   default: 8px
+icons:
+  library: Sanity Icons
+  package: "@sanity/icons"
+  style: outline
+  grid: 25
+  strokeWidth: 1.2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://www.sanity.io/ui"
 components:
   button-primary-cta:
     backgroundColor: "#f36458"
@@ -165,6 +175,46 @@ components:
   badge-neutral-filled:
     backgroundColor: "#0b0b0b"
     textColor: "#ffffff"
+    padding: 8px
+  select-default:
+    backgroundColor: "#212121"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#f36458"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#f36458"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#212121"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#212121"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#0b0b0b"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0b"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#212121"
+    textColor: "#ffffff"
+    rounded: 8px
     padding: 8px
 ---
 

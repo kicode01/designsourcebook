@@ -323,8 +323,83 @@
       "textColor": "#1d1d1f",
       "rounded": "12px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#1d1d1f",
+      "textColor": "#f5f5f7",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f5f7",
+      "textColor": "#1d1d1f",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "SF Symbols",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.6,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "curated",
+    "url": "https://developer.apple.com/sf-symbols/"
+  },
   "overview": "Apple's website is a masterclass in controlled drama — vast expanses of pure black and near-white serve as cinematic backdrops for products that are photographed as if they were sculptures in a gallery. The design philosophy is reductive to its core: every pixel exists in service of the product, and the interface itself retreats until it becomes invisible. This is not minimalism as aesthetic preference; it is minimalism as reverence for the object.\n\nThe typography anchors everything. San Francisco (SF Pro Display for large sizes, SF Pro Text for body) is Apple's proprietary typeface, engineered with optical sizing that automatically adjusts letterforms depending on point size. At display sizes (56px), weight 600 with a tight line-height of 1.07 and subtle negative letter-spacing (-0.28px) creates headlines that feel machined rather than typeset — precise, confident, and unapologetically direct. At body sizes (17px), the tracking loosens slightly (-0.374px) and line-height opens to 1.47, creating a reading rhythm that is comfortable without ever feeling slack.\n\nThe color story is starkly binary. Product sections alternate between pure black (`#000000`) backgrounds with white text and light gray (`#f5f5f7`) backgrounds with near-black text (`#1d1d1f`). This creates a cinematic pacing — dark sections feel immersive and premium, light sections feel open and informational. The only chromatic accent is Apple Blue (`#0071e3`), reserved exclusively for interactive elements: links, buttons, and focus states. This singular accent color in a sea of neutrals gives every clickable element unmistakable visibility.\n\n**Key Characteristics:**\n- SF Pro Display/Text with optical sizing — letterforms adapt automatically to size context\n- Binary light/dark section rhythm: black (`#000000`) alternating with light gray (`#f5f5f7`)\n- Single accent color: Apple Blue (`#0071e3`) reserved exclusively for interactive elements\n- Product-as-hero photography on solid color fields — no gradients, no textures, no distractions\n- Extremely tight headline line-heights (1.07-1.14) creating compressed, billboard-like impact\n- Full-width section layout with centered content — the viewport IS the canvas\n- Pill-shaped CTAs (980px radius) creating soft, approachable action buttons\n- Generous whitespace between sections allowing each product moment to breathe\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 2px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px, 14px, 15px, 17px, 20px, 24px\n- Notable characteristic: the scale is dense at small sizes (2-11px) with granular 1px increments, then jumps in larger steps. This allows precise micro-adjustments for typography and icon alignment.\n\n### Grid & Container\n- Max content width: approximately 980px (the recurring \"980px radius\" in pill buttons echoes this width)\n- Hero: full-viewport-width sections with centered content block\n- Product grids: 2-3 column layouts within centered container\n- Single-column for hero moments — one product, one message, full attention\n- No visible grid lines or gutters — spacing creates implied structure\n\n### Whitespace Philosophy\n- **Cinematic breathing room**: Each product section occupies a full viewport height (or close to it). The whitespace between products is not empty — it is the pause between scenes in a film.\n- **Vertical rhythm through color blocks**: Rather than using spacing alone to separate sections, Apple uses alternating background colors (black, `#f5f5f7`, white). Each color change signals a new \"scene.\"\n- **Compression within, expansion between**: Text blocks are tightly set (negative letter-spacing, tight line-heights) while the space surrounding them is vast. This creates a tension between density and openness.",
   "dos": "### Do\n- Use SF Pro Display at 20px+ and SF Pro Text below 20px — respect the optical sizing boundary\n- Apply negative letter-spacing at all text sizes (not just headlines) — Apple tracks tight universally\n- Use Apple Blue (`#0071e3`) ONLY for interactive elements — it must be the singular accent\n- Alternate between black and light gray (`#f5f5f7`) section backgrounds for cinematic rhythm\n- Use 980px pill radius for CTA links — the signature Apple link shape\n- Keep product imagery on solid-color fields with no competing visual elements\n- Use the translucent dark glass (`rgba(0,0,0,0.8)` + blur) for sticky navigation\n- Compress headline line-heights to 1.07-1.14 — Apple headlines are famously tight\n\n### Don't\n- Don't introduce additional accent colors — the entire chromatic budget is spent on blue\n- Don't use heavy shadows or multiple shadow layers — Apple's shadow system is one soft diffused shadow or nothing\n- Don't use borders on cards or containers — Apple almost never uses visible borders (except on specific buttons)\n- Don't apply wide letter-spacing to SF Pro — it is designed to run tight at every size\n- Don't use weight 800 or 900 — the maximum is 700 (bold), and even that is rare\n- Don't add textures, patterns, or gradients to backgrounds — solid colors only\n- Don't make the navigation opaque — the glass blur effect is essential to the Apple UI identity\n- Don't center-align body text — Apple body copy is left-aligned; only headlines center\n- Don't use rounded corners larger than 12px on rectangular elements (980px is for pills only)"
 }

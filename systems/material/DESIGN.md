@@ -247,6 +247,15 @@ rounded:
   input: 0.25rem
   button: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   card:
     textColor: "#4f4f4f"
@@ -320,6 +329,36 @@ components:
     textColor: "#000000"
     rounded: 8px
     padding: 10px 18px
+  select-default:
+    backgroundColor: "#4f4f4f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px 12px
+  checkbox-control:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#4f4f4f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#424242"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#424242"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#4f4f4f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Material Minimal
@@ -330,7 +369,7 @@ components:
 
 Typography centers cleanly on `System UI` (27px display down to 16px body), unified by `8px` base corner radius and stepped `#424242` -> `#4f4f4f` surface layering.
 
-Maintained by **Material**. Source: published token package (https://github.com/mdbootstrap/mdb-ui-kit), repo https://github.com/mdbootstrap/mdb-ui-kit, package `mdb-ui-kit`, frameworks: css, react, vue, angular. Inventory: **90** colors, **53** typography steps, and **23** documented components (see repository license).
+Maintained by **Material**. Source: published token package (https://github.com/mdbootstrap/mdb-ui-kit), repo https://github.com/mdbootstrap/mdb-ui-kit, package `mdb-ui-kit`, frameworks: css, react, vue, angular. Inventory: **90** colors, **53** typography steps, and **29** documented components (see repository license).
 
 ## Colors
 
@@ -353,7 +392,7 @@ Maintained by **Material**. Source: published token package (https://github.com/
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 23 component tokens with documented paddings: `.375rem .75rem`, `10px 18px`.
+- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `.375rem .75rem`, `10px 18px`, `8px 12px`, `2px`, `6px 12px`.
 - **Hierarchy**: Group controls cleanly within `#4f4f4f` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -365,17 +404,26 @@ Maintained by **Material**. Source: published token package (https://github.com/
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `0.25rem`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`card` (card)**: ink `#4f4f4f`, border `solid`.
-- **`link-info` (nav)**: ink `RGBA(84, 180, 211, 1)`.
-- **`link-dark-2` (nav)**: ink `RGBA(51, 45, 45, 1)`.
-- **`alert-info` (card)**: bg `#e5f4f8`, ink `#000000`, (18.6:1).
-- **`alert-dark-2` (card)**: bg `#262626`, ink `#eeeeee`, (13.0:1).
-- **`link-light-3` (nav)**: ink `RGBA(251, 251, 251, 1)`.
+- **`link-info` (link)**: ink `RGBA(84, 180, 211, 1)`.
+- **`link-dark-2` (link)**: ink `RGBA(51, 45, 45, 1)`.
+- **`alert-info` (alert)**: bg `#e5f4f8`, ink `#000000`, (18.6:1).
+- **`alert-dark-2` (alert)**: bg `#262626`, ink `#eeeeee`, (13.0:1).
+- **`link-light-3` (link)**: ink `RGBA(251, 251, 251, 1)`.
 - **`badge-info` (badge)**: bg `#e5f4f8`, ink `#000000`, (18.6:1).
 - **`badge-dark-2` (badge)**: bg `#262626`, ink `#eeeeee`, (13.0:1).
+- **`alert-light-3` (alert)**: bg `#f5f5f5`, ink `#616161`, (5.7:1).
+- **`link-danger-4` (link)**: ink `RGBA(220, 76, 100, 1)`.
+- **`badge-light-3` (badge)**: bg `#f5f5f5`, ink `#616161`, (5.7:1).
+- **`alert-danger-4` (alert)**: bg `#fae4e8`, ink `#b03d50`, (4.8:1).
+- **`link-primary-5` (link)**: ink `RGBA(59, 113, 202, 1)`.
+- **`link-success-6` (link)**: ink `RGBA(20, 164, 77, 1)`.
+- **`badge-danger-4` (badge)**: bg `#fae4e8`, ink `#b03d50`, (4.8:1).
+- **`alert-primary-6` (alert)**: bg `#e2eaf7`, ink `#2f5aa2`, (5.6:1).
 
 ## Do's and Don'ts
 

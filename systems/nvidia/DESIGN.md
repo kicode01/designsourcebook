@@ -129,6 +129,15 @@ rounded:
   badge: 999px
   nav: 2px
   default: 2px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     textColor: "#000000"
@@ -164,6 +173,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 2px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#1a1a1a"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#76b900"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#76b900"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#1a1a1a"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#1a1a1a"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#1a1a1a"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#1a1a1a"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#1a1a1a"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: NVIDIA

@@ -309,8 +309,82 @@
       "textColor": "#000000",
       "rounded": "8px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1F5493",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1F5493",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#F8F8F8",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#000000",
+      "textColor": "#F8F8F8",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Spotify Backstage** is a light-first design system anchored on `#F8F8F8` canvas surfaces with `#000000` primary ink (19.8:1 contrast) and `#1F5493` brand accent.\n\nTypography centers cleanly on `System UI` (14px display down to 14px body), unified by `8px` base corner radius and stepped `#F8F8F8` -> `#FFFFFF` surface layering.\n\nMaintained by **Spotify**. Source: published token package (https://backstage.io), repo https://github.com/backstage/backstage, package `@backstage/theme`, frameworks: react. Inventory: **57** colors, **1** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `#E6E6E6` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F8F8F8` -> `#FFFFFF`) and `1px solid #E6E6E6` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1F5493` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Spotify Backstage** is a light-first design system anchored on `#F8F8F8` canvas surfaces with `#000000` primary ink (19.8:1 contrast) and `#1F5493` brand accent.\n\nTypography centers cleanly on `System UI` (14px display down to 14px body), unified by `8px` base corner radius and stepped `#F8F8F8` -> `#FFFFFF` surface layering.\n\nMaintained by **Spotify**. Source: published token package (https://backstage.io), repo https://github.com/backstage/backstage, package `@backstage/theme`, frameworks: react. Inventory: **57** colors, **1** typography steps, and **16** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `#E6E6E6` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F8F8F8` -> `#FFFFFF`) and `1px solid #E6E6E6` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1F5493` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#F8F8F8` (light) with `#000000` primary text and `#6E6E6E` secondary labels.\n- Use `#1F5493` with `#f7f7f8` text (7.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#FFFFFF` surface shifts and `#E6E6E6` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

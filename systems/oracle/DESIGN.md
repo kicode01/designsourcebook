@@ -277,6 +277,15 @@ rounded:
   input: ".25rem"
   badge: 999px
   default: ".25rem"
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   skip-to-content-link:
     backgroundColor: "#fff"
@@ -306,6 +315,46 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "rgb(241,239,237)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgb(34, 126, 158)"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgb(34, 126, 158)"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(241,239,237)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(241,239,237)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgb(255,255,255)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgb(255,255,255)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(241,239,237)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Oracle Redwood
@@ -314,9 +363,9 @@ components:
 
 **Oracle Redwood** is a light-first design system anchored on `rgb(255,255,255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(34, 126, 158)` brand accent.
 
-Display headlines pair `Georgia` with `System UI` body copy (56px display down to 20px body), unified by `.25rem` base corner radius and stepped `rgb(255,255,255)` -> `rgb(241,239,237)` surface layering.
+Display headlines pair `Georgia` with `System UI` body copy (56px display down to 20px body), unified by `4px` base corner radius and stepped `rgb(255,255,255)` -> `rgb(241,239,237)` surface layering.
 
-Maintained by **Oracle**. Source: live stylesheet extraction (https://redwood.oracle.com), frameworks: css. Inventory: **91** colors, **81** typography steps, and **7** documented components (all rights reserved license).
+Maintained by **Oracle**. Source: live stylesheet extraction (https://redwood.oracle.com), frameworks: css. Inventory: **91** colors, **81** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -338,7 +387,7 @@ Maintained by **Oracle**. Source: live stylesheet extraction (https://redwood.or
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `2px 5px`, `10px 18px`, `9px 13px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `2px 5px`, `10px 18px`, `9px 13px`, `4px 10px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `rgb(241,239,237)` cards; separate sibling sections using `rgb(228,225,221)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -348,18 +397,27 @@ Maintained by **Oracle**. Source: live stylesheet extraction (https://redwood.or
 
 ## Shapes
 
-- **Base Corner Geometry**: `.25rem` (Buttons `.25rem` · Inputs `.25rem` · Badges `999px`).
-- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `.25rem` container.
+- **Base Corner Geometry**: `4px` (Buttons `.25rem` · Inputs `.25rem` · Badges `999px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
-- **`skip-to-content-link` (nav)**: bg `#fff`, padding `2px 5px`, border `1px solid #000`.
+- **`skip-to-content-link` (link)**: bg `#fff`, padding `2px 5px`, border `1px solid #000`.
 - **`oj-sp-card-common-volume-button-container` (button)**: bg `#fff`, radius `.25rem`.
 - **`oj-sp-expanded-hover-card-footer-small-screen-2` (card)**: bg `#12110f`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `.25rem`, padding `10px 18px`.
 - **`input-default` (input)**: bg `rgb(241,239,237)`, ink `#0b0b0c`, (17.2:1), radius `.25rem`, padding `9px 13px`.
 - **`badge-brand` (badge)**: bg `rgb(34, 126, 158)`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `rgb(73,118,32)`, ink `#ffffff`, (5.4:1), radius `999px`, padding `4px 10px`.
+- **`select-default` (select)**: bg `rgb(241,239,237)`, ink `#0b0b0c`, (17.2:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgb(34, 126, 158)`, ink `#f7f7f8`, (4.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgb(34, 126, 158)`, ink `#f7f7f8`, (4.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgb(241,239,237)`, ink `#0b0b0c`, (17.2:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgb(241,239,237)`, ink `#0b0b0c`, (17.2:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgb(255,255,255)`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgb(255,255,255)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgb(241,239,237)`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -367,12 +425,12 @@ Maintained by **Oracle**. Source: live stylesheet extraction (https://redwood.or
 - Anchor base views on `rgb(255,255,255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `rgb(34, 126, 158)` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `Georgia` headings with `System UI` body copy using documented weights and scale steps.
-- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).
+- Apply `4px` base geometry across inputs and buttons (4px on outer containers).
 - Separate containers via `rgb(241,239,237)` surface shifts and `rgb(228,225,221)` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
 - Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

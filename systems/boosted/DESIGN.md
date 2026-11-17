@@ -202,6 +202,16 @@ rounded:
   card: 10px
   badge: 999px
   default: "0"
+icons:
+  library: Solaris / Bootstrap Icons
+  package: bootstrap-icons
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://boosted.orange.com"
 components:
   link-info:
     textColor: "RGBA(65, 112, 216, 1)"
@@ -258,6 +268,41 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  switch-control:
+    backgroundColor: "#ff7900"
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff7900"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#eee"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#eee"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fafafa"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#eee"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Orange Boosted
@@ -268,7 +313,7 @@ components:
 
 Typography centers cleanly on `HelvNeueOrange` (60px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#fafafa` -> `#eee` surface layering.
 
-Maintained by **Orange**. Source: published token package (https://boosted.orange.com/), repo https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap, package `boosted`, frameworks: css. Inventory: **91** colors, **46** typography steps, and **14** documented components (MIT license).
+Maintained by **Orange**. Source: published token package (https://boosted.orange.com/), repo https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap, package `boosted`, frameworks: css. Inventory: **91** colors, **46** typography steps, and **21** documented components (MIT license).
 
 ## Colors
 
@@ -291,7 +336,7 @@ Maintained by **Orange**. Source: published token package (https://boosted.orang
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `0.5rem 0.625rem`, `10px 18px`, `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0.5rem 0.625rem`, `10px 18px`, `18px 20px`, `4px 10px`, `2px`.
 - **Hierarchy**: Group controls cleanly within `#eee` cards; separate sibling sections using `#ccc` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -301,19 +346,28 @@ Maintained by **Orange**. Source: published token package (https://boosted.orang
 
 ## Shapes
 
-- **Base Corner Geometry**: `0` (Buttons `0` · Inputs `0` · Cards `10px` · Badges `999px`).
+- **Base Corner Geometry**: `0px` (Buttons `0` · Cards `10px` · Badges `999px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Solaris / Bootstrap Icons (`bootstrap-icons`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
-- **`link-info` (nav)**: ink `RGBA(65, 112, 216, 1)`.
-- **`link-dark-2` (nav)**: ink `RGBA(0, 0, 0, 1)`.
-- **`link-light-3` (nav)**: ink `RGBA(204, 204, 204, 1)`.
-- **`select` (input)**: bg `#fff`, ink `#000`, (21.0:1), radius `0`, border `0.125rem solid #ccc`.
-- **`link-danger-4` (nav)**: ink `RGBA(205, 60, 20, 1)`.
-- **`link-primary-5` (nav)**: ink `RGBA(241, 110, 0, 1)`.
-- **`link-success-6` (nav)**: ink `RGBA(34, 135, 34, 1)`.
+- **`link-info` (link)**: ink `RGBA(65, 112, 216, 1)`.
+- **`link-dark-2` (link)**: ink `RGBA(0, 0, 0, 1)`.
+- **`link-light-3` (link)**: ink `RGBA(204, 204, 204, 1)`.
+- **`select` (select)**: bg `#fff`, ink `#000`, (21.0:1), radius `0`, border `0.125rem solid #ccc`.
+- **`link-danger-4` (link)**: ink `RGBA(205, 60, 20, 1)`.
+- **`link-primary-5` (link)**: ink `RGBA(241, 110, 0, 1)`.
+- **`link-success-6` (link)**: ink `RGBA(34, 135, 34, 1)`.
 - **`input-group-text-2` (input)**: ink `#000`, padding `0.5rem 0.625rem`.
+- **`button-primary` (button)**: bg `#ff7900`, ink `#0b0b0c`, (7.5:1), radius `0`, padding `10px 18px`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `0`, padding `10px 18px`.
+- **`button-danger` (button)**: bg `#cd3c14`, ink `#ffffff`, (4.9:1), radius `0`, padding `10px 18px`.
+- **`card-surface` (card)**: bg `#eee`, ink `#0b0b0c`, (17.0:1), radius `10px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#ff7900`, ink `#0b0b0c`, (7.5:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#228722`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`switch-control` (switch)**: bg `#ff7900`, ink `#0b0b0c`, (7.5:1), radius `2px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#ff7900`, ink `#0b0b0c`, (7.5:1), radius `0px`, padding `2px`.
 
 ## Do's and Don'ts
 
@@ -329,4 +383,4 @@ Maintained by **Orange**. Source: published token package (https://boosted.orang
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input-group-text-2` fields and secondary buttons.

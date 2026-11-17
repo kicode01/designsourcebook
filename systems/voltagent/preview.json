@@ -304,8 +304,108 @@
       "textColor": "#f2f2f2",
       "rounded": "6px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#101010",
+      "textColor": "#f2f2f2",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#818cf8",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#818cf8",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#101010",
+      "textColor": "#f2f2f2",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#101010",
+      "textColor": "#f2f2f2",
+      "rounded": "6px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#050507",
+      "textColor": "#f2f2f2",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#050507",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#101010",
+      "textColor": "#f2f2f2",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 15 15",
+        "fill": "none",
+        "body": "<path d=\"M.75.75l13.5 13.5M14.25.75L.75 14.25\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25\"/>"
+      }
+    ]
+  },
   "overview": "VoltAgent's interface is a deep-space command terminal for the AI age — a developer-facing darkness built on near-pure-black surfaces (`#050507`) where the only interruption is the electric pulse of emerald green energy. The entire experience evokes the feeling of staring into a high-powered IDE at 2am: dark, focused, and alive with purpose. This is not a friendly SaaS landing page — it's an engineering platform that announces itself through code snippets, architectural diagrams, and raw technical confidence.\n\nThe green accent (`#00d992`) is used with surgical precision — it glows from headlines, borders, and interactive elements like a circuit board carrying a signal. Against the carbon-black canvas, this green reads as \"power on\" — a deliberate visual metaphor for an AI agent engineering platform. The supporting palette is built entirely from warm-neutral grays (`#3d3a39`, `#8b949e`, `#b8b3b0`) that soften the darkness without introducing color noise, creating a cockpit-like warmth that pure blue-grays would lack.\n\nTypography leans on the system font stack for headings — achieving maximum rendering speed and native-feeling authority — while Inter carries the body and UI text with geometric precision. Code blocks use SFMono-Regular, the same font developers see in their terminals, reinforcing the tool's credibility at every scroll.\n\n**Key Characteristics:**\n- Carbon-black canvas (`#050507`) with warm-gray border containment (`#3d3a39`) — not cold or sterile\n- Single-accent identity: Emerald Signal Green (`#00d992`) as the sole chromatic energy source\n- Dual-typography system: system-ui for authoritative headings, Inter for precise UI/body text, SFMono for code credibility\n- Ultra-tight heading line-heights (1.0–1.11) creating dense, compressed power blocks\n- Warm neutral palette (`#3d3a39`, `#8b949e`, `#b8b3b0`) that prevents the dark theme from feeling clinical\n- Developer-terminal aesthetic where code snippets ARE the hero content\n- Green glow effects (`drop-shadow`, border accents) that make UI elements feel electrically alive\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 2px, 4px, 5px, 6px, 6.4px, 8px, 12px, 16px, 20px, 24px, 28px, 32px, 40px, 48px, 64px\n- Button padding: 12px 16px (standard), 20px (container-button)\n- Card internal padding: approximately 24–32px\n- Section vertical spacing: generous (estimated 64–96px between major sections)\n- Component gap: 16–24px between sibling cards/elements\n\n### Grid & Container\n- Max container width: approximately 1280–1440px, centered\n- Hero: centered single-column with maximum breathing room\n- Feature sections: alternating asymmetric layouts (code left / text right, then reversed)\n- Logo marquee: full-width horizontal scroll, breaking the container constraint\n- Card grids: 2–3 column for feature showcases\n- Integration grid: responsive multi-column for partner/integration icons\n\n### Whitespace Philosophy\n- **Cinematic breathing room between sections**: Massive vertical gaps create a \"scroll-through-chapters\" experience — each section feels like a new scene.\n- **Dense within components**: Cards and code blocks are internally compact, with tight line-heights and controlled padding. Information is concentrated, not spread thin.\n- **Border-defined separation**: Rather than relying solely on whitespace, VoltAgent uses the Warm Charcoal border system (`#3d3a39`) to delineate content zones. The border IS the whitespace signal.\n- **Hero-first hierarchy**: The top of the page commands the most space — the \"AI Agent Engineering Platform\" headline and npm command get maximum vertical runway before the first content section appears.",
   "dos": "### Do\n- Use Abyss Black (`#050507`) as the landing page background and Carbon Surface (`#101010`) for all contained elements — the two-shade dark system is essential\n- Reserve Emerald Signal Green (`#00d992`) exclusively for high-signal moments: active borders, glow effects, and the most important interactive accents\n- Use VoltAgent Mint (`#2fd6a1`) for button text on dark surfaces — it's more readable than pure Signal Green\n- Keep heading line-heights compressed (1.0–1.11) with negative letter-spacing for dense, authoritative text blocks\n- Use the warm gray palette (`#3d3a39`, `#8b949e`, `#b8b3b0`) for borders and secondary text — warmth prevents the dark theme from feeling sterile\n- Present code snippets as primary content — they're hero elements, not supporting illustrations\n- Use border weight (1px → 2px → 3px) and color shifts (`#3d3a39` → `#00d992`) to communicate depth and importance, rather than relying on shadows\n- Pair system-ui for headings with Inter for body text — the speed/authority of native fonts combined with the precision of a geometric sans\n- Use SFMono-Regular for all code content — it's the developer credibility signal\n- Apply `\"calt\"` and `\"rlig\"` OpenType features across all text\n\n### Don't\n- Don't use bright or light backgrounds as primary surfaces — the entire identity lives on near-black\n- Don't introduce warm colors (orange, red, yellow) as decorative accents — the palette is strictly green + warm neutrals on black. Warm colors are reserved for semantic states (warning, error) only\n- Don't use Emerald Signal Green (`#00d992`) on large surfaces or as background fills — it's an accent, never a surface\n- Don't increase heading line-heights beyond 1.33 — the compressed density is core to the engineering-platform identity\n- Don't use heavy shadows generously — depth comes from border treatment, not box-shadow. Shadows are reserved for Level 4–5 elevation only\n- Don't use pure white (`#ffffff`) as default body text — Snow White (`#f2f2f2`) is the standard. Pure white is reserved for maximum-emphasis headings and button text\n- Don't mix in serif or decorative fonts — the entire system is geometric sans + monospace\n- Don't use border-radius larger than 8px on content cards — 9999px (pill) is only for small tags and badges\n- Don't skip the warm-gray border system — cards without `#3d3a39` borders lose their containment and float ambiguously on the dark canvas\n- Don't animate aggressively — animations are slow and subtle (25–100s durations for marquee, gentle glow pulses). Fast motion contradicts the \"engineering precision\" atmosphere"
 }

@@ -53,6 +53,15 @@ rounded:
   badge: 999px
   nav: 24px
   default: 24px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 15
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button:
     textColor: "#000000"
@@ -107,6 +116,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 24px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0077cf"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0077cf"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Morningstar Design System
@@ -117,7 +161,7 @@ components:
 
 Typography centers cleanly on `MorningstarIntrinsic` (45px display down to 20px body), unified by `24px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Morningstar**. Source: live stylesheet extraction (http://designsystem.morningstar.com/), repo https://github.com/Morningstar/morningstar-design-system, frameworks: vue, css. Inventory: **14** colors, **6** typography steps, and **14** documented components (all rights reserved license).
+Maintained by **Morningstar**. Source: live stylesheet extraction (http://designsystem.morningstar.com/), repo https://github.com/Morningstar/morningstar-design-system, frameworks: vue, css. Inventory: **14** colors, **6** typography steps, and **21** documented components (all rights reserved license).
 
 ## Colors
 
@@ -139,7 +183,7 @@ Maintained by **Morningstar**. Source: live stylesheet extraction (http://design
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `1px 6px`, `8px 24px`, `4px 16px`, `16px`, `10px 10px 10px 16px`.
+- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `1px 6px`, `8px 24px`, `4px 16px`, `16px`, `10px 10px 10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#cccccc` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -151,6 +195,7 @@ Maintained by **Morningstar**. Source: live stylesheet extraction (http://design
 
 - **Base Corner Geometry**: `24px` (Inputs `24px` · Cards `6px` · Badges `999px` · Navigation `24px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `15x15` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -161,7 +206,15 @@ Maintained by **Morningstar**. Source: live stylesheet extraction (http://design
 - **`card` (card)**: bg `#ffffff`, ink `#000000`, (21.0:1), radius `6px`, padding `16px`, border `1px solid rgb(204, 204, 204)`.
 - **`card-2` (card)**: ink `#1e1e1e`, border `2px solid rgba(0, 0, 0, 0)`.
 - **`card-3` (card)**: ink `#000000`.
-- **`alert` (card)**: ink `#f8fbff`, border `1px solid rgb(219, 216, 212)`.
+- **`alert` (alert)**: ink `#f8fbff`, border `1px solid rgb(219, 216, 212)`.
+- **`alert-2` (alert)**: bg `#4560db`, ink `#f8fbff`, (5.1:1), padding `10px 10px 10px 16px`.
+- **`alert-3` (alert)**: bg `#272520`, ink `#f7f5f2`, (14.1:1), padding `10px 16px`.
+- **`input-default` (input)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `24px`, padding `9px 13px`.
+- **`badge-brand` (badge)**: bg `#0077cf`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `24px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0077cf`, ink `#f7f7f8`, (4.3:1), radius `999px`, padding `2px`.
 
 ## Do's and Don'ts
 

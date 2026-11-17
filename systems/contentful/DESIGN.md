@@ -142,6 +142,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Forma 36 Icons
+  package: "@contentful/f36-icons"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://f36.contentful.com/components/icon"
 components:
   button-primary:
     backgroundColor: "#64d2ff"
@@ -183,6 +193,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#F7F9FA"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#64d2ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#64d2ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#F7F9FA"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#F7F9FA"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#F7F9FA"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Contentful Forma 36
@@ -193,7 +243,7 @@ components:
 
 Typography centers cleanly on `Geist Sans` (48px display down to 16px body), unified by `6px` base corner radius and stepped `#ffffff` -> `#F7F9FA` surface layering.
 
-Maintained by **Contentful**. Source: published token package (https://github.com/contentful/forma-36), repo https://github.com/contentful/forma-36, package `@contentful/f36-components`, frameworks: react, css. Inventory: **91** colors, **20** typography steps, and **8** documented components (see repository license).
+Maintained by **Contentful**. Source: published token package (https://github.com/contentful/forma-36), repo https://github.com/contentful/forma-36, package `@contentful/f36-components`, frameworks: react, css. Inventory: **91** colors, **20** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -216,7 +266,7 @@ Maintained by **Contentful**. Source: published token package (https://github.co
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#F7F9FA` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -228,6 +278,7 @@ Maintained by **Contentful**. Source: published token package (https://github.co
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Forma 36 Icons (`@contentful/f36-icons`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -239,6 +290,14 @@ Maintained by **Contentful**. Source: published token package (https://github.co
 - **`badge-brand` (badge)**: bg `#64d2ff`, ink `#0b0b0c`, (11.4:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#006D23`, ink `#ffffff`, (6.5:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#64d2ff`, ink `#0b0b0c`, (11.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#64d2ff`, ink `#0b0b0c`, (11.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#F7F9FA`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

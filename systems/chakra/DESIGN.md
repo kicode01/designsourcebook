@@ -111,6 +111,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Lucide / Chakra Icons
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://chakra-ui.com"
 components:
   button-primary:
     backgroundColor: "#0c5d56"
@@ -152,17 +162,57 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f4f4f5"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0c5d56"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0c5d56"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f4f4f5"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f4f4f5"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fafafa"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f4f4f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Chakra UI
 
 ## Overview
 
-**Chakra UI** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#0d9488` brand accent.
+**Chakra UI** is a light-first design system anchored on `#fafafa` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#0c5d56` brand accent.
 
 Typography centers cleanly on `System UI` (16px display down to 16px body), unified by `6px` base corner radius and stepped `#fafafa` -> `#f4f4f5` surface layering.
 
-Source: published token package (https://github.com/chakra-ui/chakra-ui), repo https://github.com/chakra-ui/chakra-ui, package `@chakra-ui/react`, frameworks: react, vue. Inventory: **91** colors, **4** typography steps, and **8** documented components (see repository license).
+Source: published token package (https://github.com/chakra-ui/chakra-ui), repo https://github.com/chakra-ui/chakra-ui, package `@chakra-ui/react`, frameworks: react, vue. Inventory: **91** colors, **4** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -170,7 +220,7 @@ Source: published token package (https://github.com/chakra-ui/chakra-ui), repo h
 - **Surface (`surface`)**: `#f4f4f5` — elevated cards, popovers, and panels.
 - **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (18.8:1 on canvas).
 - **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
-- **Brand Accent (`brand`)**: `#0d9488` (3.6:1 vs canvas; pair with `#f7f7f8` foreground ink for 3.5:1 contrast).
+- **Brand Accent (`brand`)**: `#0c5d56` (7.4:1 vs canvas; pair with `#f7f7f8` foreground ink for 7.2:1 contrast).
 - **Structural Border (`border`)**: `color-mix(in srgb, #0b0b0c 14%, transparent)` — divider rules, input strokes, and card outlines.
 - **Brand & Accent Scale**: `brand-50` (`#e6f2ff`), `brand-100` (`#e6f2ff`), `brand-200` (`#bfdeff`), `brand-300` (`#99caff`), `brand-950` (`#001a33`), `teal-100` (`#ccfbf1`).
 - **Neutral Ramp**: `brand-500` (`#fff`), `gray-50` (`#fafafa`), `gray-100` (`#f4f4f5`), `gray-200` (`#e4e4e7`), `gray-300` (`#d4d4d8`), `gray-400` (`#a1a1aa`).
@@ -185,35 +235,44 @@ Source: published token package (https://github.com/chakra-ui/chakra-ui), repo h
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f4f4f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
 
 - **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fafafa` -> `#f4f4f5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.
-- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d9488` for keyboard focus and active selection states.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0c5d56` for keyboard focus and active selection states.
 
 ## Shapes
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Lucide / Chakra Icons (`lucide-react`) on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
-- **`button-primary` (button)**: bg `#0d9488`, ink `#ffffff`, (3.7:1), radius `6px`, padding `10px 18px`.
+- **`button-primary` (button)**: bg `#0c5d56`, ink `#ffffff`, (7.7:1), radius `6px`, padding `10px 18px`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `6px`, padding `10px 18px`.
 - **`button-danger` (button)**: bg `#ef4444`, ink `#0b0b0c`, (5.2:1), radius `6px`, padding `10px 18px`.
 - **`input-default` (input)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `9px 13px`.
 - **`card-surface` (card)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `10px`, padding `18px 20px`.
-- **`badge-brand` (badge)**: bg `#0d9488`, ink `#ffffff`, (3.7:1), radius `999px`, padding `4px 10px`.
+- **`badge-brand` (badge)**: bg `#0c5d56`, ink `#ffffff`, (7.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#16a34a`, ink `#0b0b0c`, (6.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0c5d56`, ink `#f7f7f8`, (7.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0c5d56`, ink `#f7f7f8`, (7.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fafafa`, ink `#0b0b0c`, (18.8:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fafafa`, (18.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f4f4f5`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
 ### Do
 - Anchor base views on `#fafafa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
-- Use `#0d9488` with `#f7f7f8` text (3.5:1) for primary CTAs, active tabs, and focus outlines.
+- Use `#0c5d56` with `#f7f7f8` text (7.2:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
 - Apply `6px` base geometry across inputs and buttons (10px on outer containers).
 - Separate containers via `#f4f4f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.

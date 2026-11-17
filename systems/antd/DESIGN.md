@@ -113,6 +113,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Ant Design Icons
+  package: "@ant-design/icons"
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://ant.design/components/icon"
 components:
   button-primary:
     backgroundColor: "#1677ff"
@@ -154,6 +164,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1677ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1677ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Ant Design
@@ -164,7 +214,7 @@ components:
 
 Typography centers cleanly on `System UI` (19px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `#f5f5f5` surface layering.
 
-Maintained by **Ant Financial**. Source: published token package (https://ant.design), repo https://github.com/ant-design/ant-design, package `antd`, frameworks: react, vue, angular. Inventory: **91** colors, **5** typography steps, and **8** documented components (MIT license).
+Maintained by **Ant Financial**. Source: published token package (https://ant.design), repo https://github.com/ant-design/ant-design, package `antd`, frameworks: react, vue, angular. Inventory: **91** colors, **5** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -186,7 +236,7 @@ Maintained by **Ant Financial**. Source: published token package (https://ant.de
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#d9d9d9` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -198,6 +248,7 @@ Maintained by **Ant Financial**. Source: published token package (https://ant.de
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Ant Design Icons (`@ant-design/icons`) on a `16x16` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -209,6 +260,14 @@ Maintained by **Ant Financial**. Source: published token package (https://ant.de
 - **`badge-brand` (badge)**: bg `#1677ff`, ink `#0b0b0c`, (4.8:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#52c41a`, ink `#0b0b0c`, (8.7:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1677ff`, ink `#0b0b0c`, (4.8:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1677ff`, ink `#0b0b0c`, (4.8:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f5f5f5`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

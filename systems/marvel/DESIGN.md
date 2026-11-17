@@ -86,6 +86,15 @@ rounded:
   card: 12px
   badge: 999px
   default: 12px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   input:
     textColor: "rgb(60, 72, 88)"
@@ -135,6 +144,46 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "#f9fafc"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff9e7c"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff9e7c"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f9fafc"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f9fafc"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f9fafc"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Marvel Styleguide
@@ -145,7 +194,7 @@ components:
 
 Typography centers cleanly on `FaktProSoft` (38px display down to 20px body), unified by `12px` base corner radius and subtle shadow elevation.
 
-Maintained by **Marvel**. Source: live stylesheet extraction (https://marvelapp.com/styleguide), frameworks: css. Inventory: **68** colors, **2** typography steps, and **16** documented components (all rights reserved license).
+Maintained by **Marvel**. Source: live stylesheet extraction (https://marvelapp.com/styleguide), frameworks: css. Inventory: **68** colors, **2** typography steps, and **24** documented components (all rights reserved license).
 
 ## Colors
 
@@ -166,7 +215,7 @@ Maintained by **Marvel**. Source: live stylesheet extraction (https://marvelapp.
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 24 component tokens with documented paddings: `18px 20px`, `4px 10px`, `8px 12px`, `2px`, `6px 12px`.
 - **Hierarchy**: Group controls cleanly within `#f9fafc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -178,17 +227,26 @@ Maintained by **Marvel**. Source: live stylesheet extraction (https://marvelapp.
 
 - **Base Corner Geometry**: `12px` (Cards `12px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`input` (input)**: ink `rgb(60, 72, 88)`.
-- **`linkedin` (nav)**: ink `rgb(0, 119, 181)`.
+- **`linkedin` (link)**: ink `rgb(0, 119, 181)`.
 - **`inputGroup-context` (input)**: bg `rgb(249, 250, 252)`, ink `#0b0b0c`, (18.8:1).
-- **`link-red` (nav)**: ink `rgb(255, 73, 73)`.
-- **`link-pink` (nav)**: ink `rgb(255, 73, 219)`.
-- **`link-dark` (nav)**: ink `rgb(60, 72, 88)`.
-- **`link-blue` (nav)**: ink `rgb(31, 182, 255)`.
-- **`link-green` (nav)**: ink `rgb(19, 206, 102)`.
+- **`link-red` (link)**: ink `rgb(255, 73, 73)`.
+- **`link-pink` (link)**: ink `rgb(255, 73, 219)`.
+- **`link-dark` (link)**: ink `rgb(60, 72, 88)`.
+- **`link-blue` (link)**: ink `rgb(31, 182, 255)`.
+- **`link-green` (link)**: ink `rgb(19, 206, 102)`.
+- **`link-light` (link)**: ink `rgb(132, 146, 166)`.
+- **`button-flat` (button)**: ink `rgb(255, 255, 255)`.
+- **`button-ghost` (button)**: bg `transparent`, ink `rgb(60, 72, 88)`.
+- **`input-default` (input)**: bg `#f9fafc`, ink `#0b0b0c`, (18.8:1).
+- **`button-outlined` (button)**: ink `rgb(60, 72, 88)`.
+- **`card-surface` (card)**: bg `#f9fafc`, ink `#0b0b0c`, (18.8:1), radius `12px`, padding `18px 20px`.
+- **`badge-brand` (badge)**: bg `#ff9e7c`, ink `#0b0b0c`, (9.8:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 
 ## Do's and Don'ts
 

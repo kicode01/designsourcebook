@@ -115,6 +115,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://lucide.dev"
 components:
   button-primary:
     backgroundColor: "#0099ff"
@@ -156,6 +166,46 @@ components:
     textColor: "#242424"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5f5f5"
+    textColor: "#242424"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0099ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0099ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f5f5"
+    textColor: "#242424"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f5f5"
+    textColor: "#242424"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#242424"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#242424"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f5f5"
+    textColor: "#242424"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Cal.com

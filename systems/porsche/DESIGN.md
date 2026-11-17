@@ -64,6 +64,16 @@ rounded:
   badge: 999px
   nav: 2px
   default: 2px
+icons:
+  library: Porsche Icons
+  package: "@porsche-design-system/components-js"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://designsystem.porsche.com"
 components:
   button-primary:
     backgroundColor: "#1A44EA"
@@ -105,6 +115,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 2px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1A44EA"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1A44EA"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Porsche Design System
@@ -115,7 +165,7 @@ components:
 
 Typography centers cleanly on `Porsche Next` (120px display down to 16px body), unified by `2px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Porsche**. Source: published token package (https://github.com/porsche-design-system/porsche-design-system), repo https://github.com/porsche-design-system/porsche-design-system, package `@porsche-design-system/components-js`, frameworks: web-components, react, angular, vue. Inventory: **18** colors, **16** typography steps, and **8** documented components (see repository license).
+Maintained by **Porsche**. Source: published token package (https://github.com/porsche-design-system/porsche-design-system), repo https://github.com/porsche-design-system/porsche-design-system, package `@porsche-design-system/components-js`, frameworks: web-components, react, angular, vue. Inventory: **18** colors, **16** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -136,7 +186,7 @@ Maintained by **Porsche**. Source: published token package (https://github.com/p
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -148,6 +198,7 @@ Maintained by **Porsche**. Source: published token package (https://github.com/p
 
 - **Base Corner Geometry**: `2px` (Buttons `2px` · Inputs `2px` · Cards `6px` · Badges `999px` · Navigation `2px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
+- **Iconography & SVGs**: Porsche Icons (`@porsche-design-system/components-js`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -159,6 +210,14 @@ Maintained by **Porsche**. Source: published token package (https://github.com/p
 - **`badge-brand` (badge)**: bg `#1A44EA`, ink `#ffffff`, (6.9:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `2px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1A44EA`, ink `#f7f7f8`, (6.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1A44EA`, ink `#f7f7f8`, (6.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

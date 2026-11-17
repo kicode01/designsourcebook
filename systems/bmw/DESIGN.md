@@ -48,6 +48,15 @@ rounded:
   badge: 999px
   nav: 0px
   default: 0px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: derived
 components:
   button-primary:
     backgroundColor: "#1c69d4"
@@ -89,6 +98,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 0px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1c69d4"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1c69d4"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Design System: BMW

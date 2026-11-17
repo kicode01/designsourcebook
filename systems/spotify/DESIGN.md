@@ -96,6 +96,15 @@ rounded:
   badge: 999px
   nav: 12px
   default: 10px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-dark-pill:
     backgroundColor: "#1f1f1f"
@@ -144,6 +153,46 @@ components:
     textColor: "#ffffff"
     rounded: 12px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1ed760"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1ed760"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 10px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#ffffff"
+    textColor: "#121212"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#121212"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Spotify

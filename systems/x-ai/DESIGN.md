@@ -57,6 +57,16 @@ rounded:
   card: 0px
   nav: 0px
   default: 0px
+icons:
+  library: Heroicons
+  package: "@heroicons/react"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://heroicons.com"
 components:
   button-primary:
     backgroundColor: "#ffffff"
@@ -89,6 +99,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 0px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#1f2228"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#1f2228"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Design System: xAI

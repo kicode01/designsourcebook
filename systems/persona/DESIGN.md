@@ -111,6 +111,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#0060df"
@@ -152,6 +161,46 @@ components:
     textColor: "#15141a"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fbfbfe"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0060df"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0060df"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fbfbfe"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fbfbfe"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#FBFCFD"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#15141a"
+    textColor: "#FBFCFD"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fbfbfe"
+    textColor: "#15141a"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Persona Design System
@@ -162,7 +211,7 @@ components:
 
 Typography centers cleanly on `System UI` (24px display down to 16px body), unified by `8px` base corner radius and stepped `#FBFCFD` -> `#fbfbfe` surface layering.
 
-Maintained by **Persona**. Source: published token package (https://github.com/privy-open-source/design-system), repo https://github.com/privy-open-source/design-system, frameworks: css. Inventory: **88** colors, **6** typography steps, and **8** documented components (see repository license).
+Maintained by **Persona**. Source: published token package (https://github.com/privy-open-source/design-system), repo https://github.com/privy-open-source/design-system, frameworks: css. Inventory: **88** colors, **6** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -184,7 +233,7 @@ Maintained by **Persona**. Source: published token package (https://github.com/p
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fbfbfe` cards; separate sibling sections using `#BFBFBF` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -196,6 +245,7 @@ Maintained by **Persona**. Source: published token package (https://github.com/p
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -207,6 +257,14 @@ Maintained by **Persona**. Source: published token package (https://github.com/p
 - **`badge-brand` (badge)**: bg `#0060df`, ink `#ffffff`, (5.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#15141a`, (7.2:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0060df`, ink `#f7f7f8`, (5.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0060df`, ink `#f7f7f8`, (5.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#FBFCFD`, ink `#15141a`, (17.8:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#15141a`, ink `#FBFCFD`, (17.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fbfbfe`, ink `#15141a`, (17.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

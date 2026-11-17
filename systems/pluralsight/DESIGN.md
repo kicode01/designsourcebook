@@ -128,6 +128,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Pluralsight Design System Icons
+  package: "@pluralsight/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://design.pluralsight.com/"
 components:
   button-primary:
     backgroundColor: "#D69900"
@@ -169,6 +179,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f4f7fa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#D69900"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#D69900"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f4f7fa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f4f7fa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#FFFFFF"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f4f7fa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Pluralsight Design System
@@ -179,7 +229,7 @@ components:
 
 Typography centers cleanly on `PS Commons` (88px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#f4f7fa` surface layering.
 
-Maintained by **Pluralsight**. Source: published token package (https://design.pluralsight.com/), repo https://github.com/pluralsight/pando, package `@pluralsight/design-tokens`, frameworks: react, css. Inventory: **91** colors, **10** typography steps, and **8** documented components (Apache 2.0 license).
+Maintained by **Pluralsight**. Source: published token package (https://design.pluralsight.com/), repo https://github.com/pluralsight/pando, package `@pluralsight/design-tokens`, frameworks: react, css. Inventory: **91** colors, **10** typography steps, and **16** documented components (Apache 2.0 license).
 
 ## Colors
 
@@ -201,7 +251,7 @@ Maintained by **Pluralsight**. Source: published token package (https://design.p
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f4f7fa` cards; separate sibling sections using `#C2D1E2` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -213,6 +263,7 @@ Maintained by **Pluralsight**. Source: published token package (https://design.p
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Pluralsight Design System Icons (`@pluralsight/icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -224,6 +275,14 @@ Maintained by **Pluralsight**. Source: published token package (https://design.p
 - **`badge-brand` (badge)**: bg `#D69900`, ink `#0b0b0c`, (7.9:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#02BB71`, ink `#0b0b0c`, (7.8:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f4f7fa`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f4f7fa`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#D69900`, ink `#0b0b0c`, (7.9:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#D69900`, ink `#0b0b0c`, (7.9:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f4f7fa`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f4f7fa`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#FFFFFF`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#FFFFFF`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f4f7fa`, ink `#0b0b0c`, (18.3:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

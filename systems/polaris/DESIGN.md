@@ -176,6 +176,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Polaris Icons
+  package: "@shopify/polaris-icons"
+  style: solid
+  grid: 20
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://polaris.shopify.com/icons"
 components:
   button-primary:
     backgroundColor: "rgba(229, 165, 0, 1)"
@@ -217,6 +227,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "rgba(247, 247, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgba(229, 165, 0, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgba(229, 165, 0, 1)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgba(247, 247, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgba(247, 247, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgba(255, 255, 255, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgba(255, 255, 255, 1)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgba(247, 247, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Polaris
@@ -227,7 +277,7 @@ components:
 
 Typography centers cleanly on `Inter` (40px display down to 16px body), unified by `8px` base corner radius and stepped `rgba(255, 255, 255, 1)` -> `rgba(247, 247, 247, 1)` surface layering.
 
-Maintained by **Shopify**. Source: published token package (https://polaris.shopify.com), repo https://github.com/Shopify/polaris, package `@shopify/polaris-tokens`, frameworks: react, web-components. Inventory: **91** colors, **37** typography steps, and **8** documented components (SEE LICENSE IN LICENSE.md license).
+Maintained by **Shopify**. Source: published token package (https://polaris.shopify.com), repo https://github.com/Shopify/polaris, package `@shopify/polaris-tokens`, frameworks: react, web-components. Inventory: **91** colors, **37** typography steps, and **16** documented components (SEE LICENSE IN LICENSE.md license).
 
 ## Colors
 
@@ -250,7 +300,7 @@ Maintained by **Shopify**. Source: published token package (https://polaris.shop
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `rgba(247, 247, 247, 1)` cards; separate sibling sections using `rgba(204, 204, 204, 1)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -262,6 +312,7 @@ Maintained by **Shopify**. Source: published token package (https://polaris.shop
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Polaris Icons (`@shopify/polaris-icons`) on a `20x20` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -273,6 +324,14 @@ Maintained by **Shopify**. Source: published token package (https://polaris.shop
 - **`badge-brand` (badge)**: bg `rgba(229, 165, 0, 1)`, ink `#0b0b0c`, (9.1:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `rgba(146, 252, 172, 1)`, ink `#0b0b0c`, (15.7:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `rgba(247, 247, 247, 1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `rgba(247, 247, 247, 1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgba(229, 165, 0, 1)`, ink `#0b0b0c`, (9.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgba(229, 165, 0, 1)`, ink `#0b0b0c`, (9.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgba(247, 247, 247, 1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgba(247, 247, 247, 1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgba(255, 255, 255, 1)`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgba(255, 255, 255, 1)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgba(247, 247, 247, 1)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

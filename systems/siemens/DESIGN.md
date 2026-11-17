@@ -128,6 +128,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Siemens iX Icons
+  package: "@siemens/ix-icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://ix.siemens.io"
 components:
   button-primary:
     backgroundColor: "#00eaff"
@@ -169,6 +179,46 @@ components:
     textColor: "#000028"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#00eaff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#00eaff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#000028"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#000028"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#e0f2f4"
+    textColor: "#000028"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Siemens iX
@@ -179,7 +229,7 @@ components:
 
 Typography centers cleanly on `Arial` (22px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#e0f2f4` surface layering.
 
-Maintained by **Siemens**. Source: published token package (https://github.com/siemens/ix), repo https://github.com/siemens/ix, package `@siemens/ix`, frameworks: web-components, react, angular, vue. Inventory: **91** colors, **13** typography steps, and **8** documented components (see repository license).
+Maintained by **Siemens**. Source: published token package (https://github.com/siemens/ix), repo https://github.com/siemens/ix, package `@siemens/ix`, frameworks: web-components, react, angular, vue. Inventory: **91** colors, **13** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -202,7 +252,7 @@ Maintained by **Siemens**. Source: published token package (https://github.com/s
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#e0f2f4` cards; separate sibling sections using `#B3B3BE` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -214,6 +264,7 @@ Maintained by **Siemens**. Source: published token package (https://github.com/s
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Siemens iX Icons (`@siemens/ix-icons`) on a `24x24` grid (outline, stroke `1.5px`, `square` caps).
 
 ## Components
 
@@ -225,6 +276,14 @@ Maintained by **Siemens**. Source: published token package (https://github.com/s
 - **`badge-brand` (badge)**: bg `#00eaff`, ink `#000000`, (14.2:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#376f1c`, ink `#FFFFFF`, (6.1:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#00eaff`, ink `#0b0b0c`, (13.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#00eaff`, ink `#0b0b0c`, (13.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#000028`, (20.4:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#000028`, ink `#ffffff`, (20.4:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#e0f2f4`, ink `#000028`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

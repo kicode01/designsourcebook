@@ -240,8 +240,108 @@
       "textColor": "#60646c",
       "rounded": "6px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f0f0f3",
+      "textColor": "#60646c",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0d74ce",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0d74ce",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f0f0f3",
+      "textColor": "#60646c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f0f0f3",
+      "textColor": "#60646c",
+      "rounded": "6px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#60646c",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#60646c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f0f0f3",
+      "textColor": "#60646c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17V9.41406L7.70703 17.707C7.31651 18.0976 6.68349 18.0976 6.29297 17.707C5.90244 17.3165 5.90244 16.6835 6.29297 16.293L14.5859 8H7C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6H17C17.5523 6 18 6.44772 18 7V17Z\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M17.293 8.29289C17.6835 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31643 18.7071 9.70696L12.7071 15.707C12.3166 16.0975 11.6835 16.0975 11.293 15.707L5.29302 9.70696C4.90249 9.31643 4.90249 8.68342 5.29302 8.29289C5.68354 7.90237 6.31655 7.90237 6.70708 8.29289L12 13.5859L17.293 8.29289Z\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M17.293 8.29289C17.6835 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31643 18.7071 9.70696L12.7071 15.707C12.3166 16.0975 11.6835 16.0975 11.293 15.707L5.29302 9.70696C4.90249 9.31643 4.90249 8.68342 5.29302 8.29289C5.68354 7.90237 6.31655 7.90237 6.70708 8.29289L12 13.5859L17.293 8.29289Z\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 24 24",
+        "fill": "currentColor",
+        "body": "<path d=\"M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17V9.41406L7.70703 17.707C7.31651 18.0976 6.68349 18.0976 6.29297 17.707C5.90244 17.3165 5.90244 16.6835 6.29297 16.293L14.5859 8H7C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6H17C17.5523 6 18 6.44772 18 7V17Z\"/>"
+      }
+    ]
+  },
   "overview": "Expo's interface is a luminous, confidence-radiating developer platform built on the premise that tools for building apps should feel as polished as the apps themselves. The entire experience lives on a bright, airy canvas — a cool-tinted off-white (`#f0f0f3`) that gives the page a subtle technological coolness without the starkness of pure white. This is a site that breathes: enormous vertical spacing between sections creates a gallery-like pace where each feature gets its own \"room.\"\n\nThe design language is decisively monochromatic — pure black (`#000000`) headlines against the lightest possible backgrounds, with a spectrum of cool blue-grays (`#60646c`, `#b0b4ba`, `#555860`) handling all secondary communication. Color is almost entirely absent from the interface itself; when it appears, it's reserved for product screenshots, app icons, and the React universe illustration — making the actual content burst with life against the neutral canvas.\n\nWhat makes Expo distinctive is its pill-shaped geometry. Buttons, tabs, video containers, and even images use generously rounded or fully pill-shaped corners (24px–9999px), creating an organic, approachable feel that contradicts the typical sharp-edged developer tool aesthetic. Combined with tight letter-spacing on massive headlines (-1.6px to -3px at 64px), the result is a design that's simultaneously premium and friendly — like an Apple product page reimagined for developers.\n\n**Key Characteristics:**\n- Luminous cool-white canvas (`#f0f0f3`) with gallery-like vertical spacing\n- Strictly monochromatic: pure black headlines, cool blue-gray body text, no decorative color\n- Pill-shaped geometry everywhere — buttons, tabs, containers, images (24px–9999px radius)\n- Massive display headlines (64px) with extreme negative letter-spacing (-1.6px to -3px)\n- Inter as the sole typeface, used at weights 400–900 for full expressive range\n- Whisper-soft shadows that barely lift elements from the surface\n- Product screenshots as the only source of color in the interface\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 1px, 2px, 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 144px\n- Button padding: 0px 12px (unusually compact — height driven by line-height)\n- Card internal padding: approximately 24–32px\n- Section vertical spacing: enormous (estimated 96–144px between major sections)\n- Component gap: 16–24px between sibling elements\n\n### Grid & Container\n- Max container width: approximately 1200–1400px, centered\n- Hero: centered single-column with massive breathing room\n- Feature sections: alternating layouts (image left/right, full-width showcases)\n- Card grids: 2–3 column for feature highlights\n- Full-width sections with contained inner content\n\n### Whitespace Philosophy\n- **Gallery-like pacing**: Each section feels like its own exhibit, surrounded by vast empty space. This creates a premium, unhurried browsing experience.\n- **Breathing room is the design**: The generous whitespace IS the primary design element — it communicates confidence, quality, and that each feature deserves individual attention.\n- **Content islands**: Sections float as isolated \"islands\" in the white space, connected by scrolling rather than visual continuation.\n\n### Border Radius Scale\n- Nearly squared (4px): Small inline elements, tags\n- Subtly rounded (6px): Buttons, form inputs, combo boxes — the functional interactive radius\n- Comfortably rounded (8px): Standard content cards, containers\n- Generously rounded (16px): Feature tabs, content panels\n- Very rounded (24px): Buttons, video/image containers, tabpanels — the signature softness\n- Highly rounded (32–36px): Hero CTAs, status badges, nav buttons\n- Pill-shaped (9999px): Primary action buttons, tags, avatars — maximum friendliness",
   "dos": "### Do\n- Use Cloud Gray (`#f0f0f3`) as the page background and Pure White (`#ffffff`) for elevated cards — the two-tone light system is essential\n- Keep display headlines at extreme negative letter-spacing (-1.6px to -3px at 64px) for the signature compressed look\n- Use pill-shaped (9999px) radius for primary CTA buttons — the organic shape is core to the identity\n- Reserve black (`#000000`) for headlines and primary CTAs — it carries maximum authority on the light canvas\n- Use Slate Gray (`#60646c`) for secondary text — it's the precise balance between readable and receded\n- Maintain enormous vertical spacing between sections (96px+) — the gallery pacing defines the premium feel\n- Use product screenshots as the primary visual content — the interface stays monochrome, the products bring color\n- Apply Inter at the full weight range (400–900) — weight contrast IS the hierarchy\n\n### Don't\n- Don't introduce decorative colors into the interface chrome — the monochromatic palette is intentional\n- Don't use sharp corners (border-radius < 6px) on interactive elements — the pill/rounded geometry is the signature\n- Don't reduce section spacing below 64px — the breathing room is the design\n- Don't use heavy drop shadows — depth comes from background contrast and whisper-soft shadows\n- Don't mix in additional typefaces — Inter handles everything from display to caption\n- Don't use letter-spacing wider than -0.25px on body text — extreme tracking is reserved for display only\n- Don't use borders heavier than 2px — containment is subtle, achieved through background color and gentle borders\n- Don't add gradients to the interface — visual richness comes from content, not decoration\n- Don't use saturated colors outside of semantic contexts — the palette is strictly grayscale + functional blue"
 }

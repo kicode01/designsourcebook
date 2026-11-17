@@ -194,6 +194,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   btn-help-panel:
     backgroundColor: "#ffffff"
@@ -227,6 +236,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ecf2fe"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#256ef4"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#256ef4"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ecf2fe"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ecf2fe"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ecf2fe"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Korea Design System
@@ -237,7 +286,7 @@ components:
 
 Typography centers cleanly on `System UI` (96px display down to 21px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#ecf2fe` surface layering.
 
-Maintained by **Korea**. Source: published token package (https://github.com/KRDS-uiux/krds-uiux), repo https://github.com/KRDS-uiux/krds-uiux, frameworks: css. Inventory: **91** colors, **46** typography steps, and **7** documented components (see repository license).
+Maintained by **Korea**. Source: published token package (https://github.com/KRDS-uiux/krds-uiux), repo https://github.com/KRDS-uiux/krds-uiux, frameworks: css. Inventory: **91** colors, **46** typography steps, and **15** documented components (see repository license).
 
 ## Colors
 
@@ -259,7 +308,7 @@ Maintained by **Korea**. Source: published token package (https://github.com/KRD
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ecf2fe` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -271,6 +320,7 @@ Maintained by **Korea**. Source: published token package (https://github.com/KRD
 
 - **Base Corner Geometry**: `8px` (Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -281,6 +331,14 @@ Maintained by **Korea**. Source: published token package (https://github.com/KRD
 - **`badge-brand` (badge)**: bg `#256ef4`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#d8eedd`, ink `#0b0b0c`, (16.1:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#256ef4`, ink `#0b0b0c`, (4.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#256ef4`, ink `#0b0b0c`, (4.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#ecf2fe`, ink `#0b0b0c`, (17.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

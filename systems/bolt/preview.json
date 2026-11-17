@@ -520,7 +520,7 @@
   "components": [
     {
       "key": "selectedItemBubble",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "#e0e0e0",
       "rounded": "16px",
       "padding": "4px 8px"
@@ -580,8 +580,100 @@
       "textColor": "#0b0b0c",
       "rounded": "16px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#31355e",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#31355e",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Bolt Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#31355e` brand accent.\n\nTypography centers cleanly on `Open Sans` (96px display down to 18px body), unified by `16px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Pega Digital**. Source: live stylesheet extraction (https://boltdesignsystem.com/), repo https://github.com/boltdesignsystem/bolt, frameworks: web-components, css. Inventory: **83** colors, **30** typography steps, and **8** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `4px 8px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#e0e2eb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid #e0e2eb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#31355e` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#31355e` with `#f7f7f8` text (10.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `16px` base geometry across inputs and buttons (16px on outer containers).\n- Separate containers via `#fff` surface shifts and `#e0e2eb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `16px` baseline.\n- Do not truncate or drop border contrast on `selectedItemBubble` fields and secondary buttons."
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 32,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path fill=\"#151619\" d=\"M29.06 15.02l-6.48-7.68a.988.988 0 00-1.4-.12c-.42.36-.48.98-.12 1.4l5.38 6.36H4.42c-.56 0-1 .44-1 1s.44 1 1 1h22l-5.38 6.36c-.36.42-.3 1.06.12 1.4a.98.98 0 001.4-.12l6.48-7.66c.48-.56.48-1.38 0-1.96l.02.02z\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path fill=\"#151619\" d=\"M29.06 15.02l-6.48-7.68a.988.988 0 00-1.4-.12c-.42.36-.48.98-.12 1.4l5.38 6.36H4.42c-.56 0-1 .44-1 1s.44 1 1 1h22l-5.38 6.36c-.36.42-.3 1.06.12 1.4a.98.98 0 001.4-.12l6.48-7.66c.48-.56.48-1.38 0-1.96l.02.02z\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path fill=\"#151619\" d=\"M29.06 15.02l-6.48-7.68a.988.988 0 00-1.4-.12c-.42.36-.48.98-.12 1.4l5.38 6.36H4.42c-.56 0-1 .44-1 1s.44 1 1 1h22l-5.38 6.36c-.36.42-.3 1.06.12 1.4a.98.98 0 001.4-.12l6.48-7.66c.48-.56.48-1.38 0-1.96l.02.02z\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path fill=\"#151619\" d=\"M29.06 15.02l-6.48-7.68a.988.988 0 00-1.4-.12c-.42.36-.48.98-.12 1.4l5.38 6.36H4.42c-.56 0-1 .44-1 1s.44 1 1 1h22l-5.38 6.36c-.36.42-.3 1.06.12 1.4a.98.98 0 001.4-.12l6.48-7.66c.48-.56.48-1.38 0-1.96l.02.02z\"/>"
+      }
+    ]
+  },
+  "overview": "**Bolt Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#31355e` brand accent.\n\nTypography centers cleanly on `Open Sans` (96px display down to 18px body), unified by `16px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Pega Digital**. Source: live stylesheet extraction (https://boltdesignsystem.com/), repo https://github.com/boltdesignsystem/bolt, frameworks: web-components, css. Inventory: **83** colors, **30** typography steps, and **15** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `4px 8px`, `10px 18px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#e0e2eb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid #e0e2eb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#31355e` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#31355e` with `#f7f7f8` text (10.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `16px` base geometry across inputs and buttons (16px on outer containers).\n- Separate containers via `#fff` surface shifts and `#e0e2eb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `16px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

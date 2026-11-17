@@ -182,6 +182,15 @@ rounded:
   badge: 16px
   input: 4px
   default: 2px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   btn:
     backgroundColor: "#26a69a"
@@ -240,6 +249,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 9px 13px
+  select-default:
+    backgroundColor: "#fdeaeb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#FF8A80"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#FF8A80"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  alert-info:
+    backgroundColor: "#fdeaeb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#FFFFFF"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#FFFFFF"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fdeaeb"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Materialize CSS
@@ -250,7 +294,7 @@ components:
 
 Typography centers cleanly on `System UI` (67px display down to 16px body), unified by `2px` base corner radius and subtle shadow elevation.
 
-Maintained by **Materialize**. Source: published token package (https://github.com/Dogfalo/materialize), repo https://github.com/Dogfalo/materialize, package `materialize-css`, frameworks: css. Inventory: **47** colors, **52** typography steps, and **10** documented components (see repository license).
+Maintained by **Materialize**. Source: published token package (https://github.com/Dogfalo/materialize), repo https://github.com/Dogfalo/materialize, package `materialize-css`, frameworks: css. Inventory: **47** colors, **52** typography steps, and **17** documented components (see repository license).
 
 ## Colors
 
@@ -271,7 +315,7 @@ Maintained by **Materialize**. Source: published token package (https://github.c
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0 16px`, `0 12px`, `24px`, `0`, `9px 13px`.
+- **Grid & Control Spacing**: Derived from 17 component tokens with documented paddings: `0 16px`, `0 12px`, `24px`, `0`, `9px 13px`.
 - **Hierarchy**: Group controls cleanly within `#fdeaeb` cards; separate sibling sections using `#ddd` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -283,17 +327,26 @@ Maintained by **Materialize**. Source: published token package (https://github.c
 
 - **Base Corner Geometry**: `2px` (Buttons `2px` · Inputs `4px` · Cards `2px` · Badges `16px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `2px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`btn` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `2px`, padding `0 16px`.
 - **`card` (card)**: bg `#fff`, radius `2px`.
-- **`tabs` (nav)**: bg `#fff`.
+- **`tabs` (tabs)**: bg `#fff`.
 - **`chip` (badge)**: bg `#e4e4e4`, ink `rgba(0, 0, 0, 0.6)`, (5.3:1), radius `16px`, padding `0 12px`.
 - **`btn-flat-2` (button)**: bg `transparent`, ink `#343434`, radius `2px`, padding `0 16px`.
 - **`btn-large-3` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `2px`, padding `0 16px`.
 - **`btn-small-4` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `2px`, padding `0 16px`.
 - **`card-panel-2` (card)**: bg `#fff`, radius `2px`, padding `24px`.
+- **`btn-floating-5` (button)**: bg `#26a69a`, ink `#0b0b0c`, (6.6:1), radius `50%`, padding `0`.
+- **`input-default` (input)**: bg `#fdeaeb`, ink `#0b0b0c`, (17.0:1), radius `4px`, padding `9px 13px`.
+- **`select-default` (select)**: bg `#fdeaeb`, ink `#0b0b0c`, (17.0:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#FF8A80`, ink `#0b0b0c`, (8.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#FF8A80`, ink `#0b0b0c`, (8.6:1), radius `4px`, padding `2px`.
+- **`alert-info` (alert)**: bg `#fdeaeb`, ink `#0b0b0c`, (17.0:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#FFFFFF`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#FFFFFF`, (19.7:1), radius `6px`, padding `6px 10px`.
 
 ## Do's and Don'ts
 

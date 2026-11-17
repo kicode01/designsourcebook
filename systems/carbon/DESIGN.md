@@ -93,6 +93,16 @@ rounded:
   badge: 999px
   nav: 0px
   default: 0px
+icons:
+  library: Carbon Icons
+  package: "@carbon/icons-react"
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://carbondesignsystem.com/elements/icons/library/"
 components:
   button-primary:
     backgroundColor: "#002d9c"
@@ -134,6 +144,46 @@ components:
     textColor: "#161616"
     rounded: 0px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f4f4f4"
+    textColor: "#161616"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#002d9c"
+    textColor: "#f7f7f8"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#002d9c"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f4f4f4"
+    textColor: "#161616"
+    rounded: 0px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f4f4f4"
+    textColor: "#161616"
+    rounded: 0px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#161616"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#161616"
+    textColor: "#ffffff"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f4f4f4"
+    textColor: "#161616"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Carbon
@@ -144,7 +194,7 @@ components:
 
 Typography centers cleanly on `IBM Plex Mono` (16px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#ffffff` -> `#f4f4f4` surface layering.
 
-Maintained by **IBM**. Source: published token package, repo https://github.com/carbon-design-system/carbon, package `@carbon/themes`, frameworks: react, web-components, angular, vue, css, svelte. Inventory: **74** colors, **4** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **IBM**. Source: published token package, repo https://github.com/carbon-design-system/carbon, package `@carbon/themes`, frameworks: react, web-components, angular, vue, css, svelte. Inventory: **74** colors, **4** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -167,7 +217,7 @@ Maintained by **IBM**. Source: published token package, repo https://github.com/
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f4f4f4` cards; separate sibling sections using `#c6c6c6` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -179,6 +229,7 @@ Maintained by **IBM**. Source: published token package, repo https://github.com/
 
 - **Base Corner Geometry**: `0px` (Buttons `0px` · Inputs `0px` · Cards `0px` · Badges `999px` · Navigation `0px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Carbon Icons (`@carbon/icons-react`) on a `16x16` grid (solid, stroke `0px`, `square` caps).
 
 ## Components
 
@@ -190,6 +241,14 @@ Maintained by **IBM**. Source: published token package, repo https://github.com/
 - **`badge-brand` (badge)**: bg `#002d9c`, ink `#ffffff`, (11.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#42be65`, ink `#161616`, (7.6:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#002d9c`, ink `#f7f7f8`, (10.6:1), radius `2px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#002d9c`, ink `#f7f7f8`, (10.6:1), radius `0px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#161616`, (18.1:1), radius `0px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#161616`, ink `#ffffff`, (18.1:1), radius `0px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f4f4f4`, ink `#161616`, (16.5:1), radius `0px`, padding `8px`.
 
 ## Do's and Don'ts
 

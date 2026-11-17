@@ -56,6 +56,15 @@ rounded:
   button: "0"
   nav: 4px
   default: "0"
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: derived
 components:
   card:
     backgroundColor: "#fefefe"
@@ -105,6 +114,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fefefe"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1779ba"
+    textColor: "#ffffff"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1779ba"
+    textColor: "#ffffff"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fefefe"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#fefefe"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fefefe"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fefefe"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Foundation
@@ -115,7 +159,7 @@ components:
 
 Typography centers cleanly on `Helvetica Neue` (40px display down to 16px body), unified by `0px` razor-sharp architectural corners and hairline `1px` structural borders.
 
-Source: published token package (https://get.foundation/sites), repo https://github.com/foundation/foundation-sites, package `foundation-sites`, frameworks: css. Inventory: **15** colors, **14** typography steps, and **10** documented components (MIT license).
+Source: published token package (https://get.foundation/sites), repo https://github.com/foundation/foundation-sites, package `foundation-sites`, frameworks: css. Inventory: **15** colors, **14** typography steps, and **17** documented components (MIT license).
 
 ## Colors
 
@@ -138,7 +182,7 @@ Source: published token package (https://get.foundation/sites), repo https://git
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0.33333rem 0.5rem`, `0.3em`, `0.85em 1em`, `1rem`, `0 1rem`.
+- **Grid & Control Spacing**: Derived from 17 component tokens with documented paddings: `0.33333rem 0.5rem`, `0.3em`, `0.85em 1em`, `1rem`, `0 1rem`.
 - **Hierarchy**: Group controls cleanly within `#fefefe` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -148,8 +192,9 @@ Source: published token package (https://get.foundation/sites), repo https://git
 
 ## Shapes
 
-- **Base Corner Geometry**: `0` (Buttons `0` · Cards `0` · Badges `0` · Navigation `4px`).
+- **Base Corner Geometry**: `0px` (Buttons `0` · Cards `0` · Badges `0` · Navigation `4px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.5px`, `square` caps).
 
 ## Components
 
@@ -157,10 +202,18 @@ Source: published token package (https://get.foundation/sites), repo https://git
 - **`label` (badge)**: bg `#1779ba`, ink `#fefefe`, (4.6:1), radius `0`, padding `0.33333rem 0.5rem`.
 - **`badge` (badge)**: bg `#1779ba`, ink `#fefefe`, (4.6:1), radius `50%`, padding `0.3em`.
 - **`button` (button)**: bg `#1779ba`, ink `#fefefe`, (4.6:1), radius `0`, padding `0.85em 1em`, border `1px solid transparent`.
-- **`callout` (card)**: bg `rgb(254.85, 254.85, 254.85)`, ink `#0a0a0a`, (19.8:1), radius `0`, padding `1rem`, border `1px solid rgba(10, 10, 10, 0.25)`.
+- **`callout` (alert)**: bg `rgb(254.85, 254.85, 254.85)`, ink `#0a0a0a`, (19.8:1), radius `0`, padding `1rem`, border `1px solid rgba(10, 10, 10, 0.25)`.
 - **`button-2` (button)**: ink `#8a8a8a`.
 - **`card-divider-2` (card)**: bg `#e6e6e6`, padding `1rem`.
 - **`is-invalid-label-2` (badge)**: ink `#cc4b37`.
+- **`input-group-label` (input)**: bg `#e6e6e6`, ink `#0a0a0a`, (15.9:1), padding `0 1rem`, border `1px solid #cacaca`.
+- **`nav-bar` (nav)**: bg `#fefefe`, ink `#0b0b0c`, (19.5:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fefefe`, ink `#0b0b0c`, (19.5:1), radius `0px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1779ba`, ink `#f7f7f8`, (4.4:1), radius `2px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1779ba`, ink `#f7f7f8`, (4.4:1), radius `0px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fefefe`, ink `#0b0b0c`, (19.5:1), radius `0px`, padding `6px 12px`.
+- **`table-grid` (table)**: bg `#fefefe`, ink `#0b0b0c`, (19.5:1), radius `0px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fefefe`, (19.5:1), radius `0px`, padding `6px 10px`.
 
 ## Do's and Don'ts
 

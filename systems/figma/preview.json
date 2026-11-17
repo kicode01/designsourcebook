@@ -5,7 +5,7 @@
   "muted": "#0b0b0c",
   "brand": "#000000",
   "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
-  "radius": "50px",
+  "radius": "12px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -188,8 +188,108 @@
       "textColor": "#0b0b0c",
       "rounded": "50px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 0.13,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path stroke=\"currentColor\" stroke-width=\"1.25\" d=\"m19.75 8.75-7.25 7-7.25-7\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<rect width=\"24\" height=\"24\" fill=\"#E3ECF2\" rx=\"6\"/><path fill=\"#000\" d=\"M8.999 13.501h1.5V6.75h3v6.751H15V6.75H18v6.751h-2.25v3.75h-3v-3.75h-1.5v3.75H8.249v-3.75h-2.25V6.75h3z\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.25\" d=\"M7.017 6h10.657v10.657l-1.02.017.031-8.963-9.964 9.963-.721-.72 9.964-9.965L7 7.02z\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<rect width=\"24\" height=\"24\" fill=\"#F1E5FF\" rx=\"6\"/><path fill=\"#9747FF\" d=\"M19.5 13.564a.75.75 0 0 1-.22.53l-5.185 5.186a.75.75 0 0 1-.53.22H5.25a.75.75 0 0 1-.75-.75V5.25a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75zM6 17.75c0 .138.112.25.25.25h6.156a.25.25 0 0 0 .25-.25v-4.844a.25.25 0 0 1 .25-.25h4.844a.25.25 0 0 0 .25-.25V6.25a.25.25 0 0 0-.25-.25H6.25a.25.25 0 0 0-.25.25zm8.156-.954c0 .111.135.167.214.088l2.514-2.514a.125.125 0 0 0-.088-.214H14.28a.125.125 0 0 0-.125.125z\"/>"
+      }
+    ]
+  },
   "overview": "Figma's interface is the design tool that designed itself — a masterclass in typographic sophistication where a custom variable font (figmaSans) modulates between razor-thin (weight 320) and bold (weight 700) with stops at unusual intermediates (330, 340, 450, 480, 540) that most type systems never explore. This granular weight control gives every text element a precisely calibrated visual weight, creating hierarchy through micro-differences rather than the blunt instrument of \"regular vs bold.\"\n\nThe page presents a fascinating duality: the interface chrome is strictly black-and-white (literally only `#000000` and `#ffffff` detected as colors), while the hero section and product showcases explode with vibrant multi-color gradients — electric greens, bright yellows, deep purples, hot pinks. This separation means the design system itself is colorless, treating the product's colorful output as the hero content. Figma's marketing page is essentially a white gallery wall displaying colorful art.\n\nWhat makes Figma distinctive beyond the variable font is its circle-and-pill geometry. Buttons use 50px radius (pill) or 50% (perfect circle for icon buttons), creating an organic, tool-palette-like feel. The dashed-outline focus indicator (`dashed 2px`) is a deliberate design choice that echoes selection handles in the Figma editor itself — the website's UI language references the product's UI language.\n\n**Key Characteristics:**\n- Custom variable font (figmaSans) with unusual weight stops: 320, 330, 340, 450, 480, 540, 700\n- Strictly black-and-white interface chrome — color exists only in product content\n- figmaMono for uppercase technical labels with wide letter-spacing\n- Pill (50px) and circular (50%) button geometry\n- Dashed focus outlines echoing Figma's editor selection handles\n- Vibrant multi-color hero gradients (green, yellow, purple, pink)\n- OpenType `\"kern\"` feature enabled globally\n- Negative letter-spacing throughout — even body text at -0.14px to -0.26px\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 1px, 2px, 4px, 4.5px, 8px, 10px, 12px, 16px, 18px, 24px, 32px, 40px, 46px, 48px, 50px\n\n### Grid & Container\n- Max container width: up to 1920px\n- Hero: full-width gradient with centered content\n- Product sections: alternating showcases\n- Footer: dark full-width section\n- Responsive from 559px to 1920px\n\n### Whitespace Philosophy\n- **Gallery-like pacing**: Generous spacing lets each product section breathe as its own exhibit.\n- **Color sections as visual breathing**: The gradient hero and product showcases provide chromatic relief between the monochrome interface sections.\n\n### Border Radius Scale\n- Minimal (2px): Small link elements\n- Subtle (6px): Small containers, dividers\n- Comfortable (8px): Cards, images, dialogs\n- Pill (50px): Tab buttons, CTAs\n- Circle (50%): Icon buttons, circular elements",
   "dos": "### Do\n- Use figmaSans with precise variable weights (320–540) — the granular weight control IS the design\n- Keep the interface strictly black-and-white — color comes from product content only\n- Use pill (50px) and circular (50%) geometry for all interactive elements\n- Apply dashed 2px focus outlines — the signature accessibility pattern\n- Enable `\"kern\"` feature on all text\n- Use figmaMono in uppercase with positive letter-spacing for labels\n- Apply negative letter-spacing throughout (-0.1px to -1.72px)\n\n### Don't\n- Don't add interface colors — the monochrome palette is absolute\n- Don't use standard font weights (400, 500, 600, 700) — use the variable font's unique stops (320, 330, 340, 450, 480, 540)\n- Don't use sharp corners on buttons — pill and circular geometry only\n- Don't use solid focus outlines — dashed is the signature\n- Don't increase body font weight above 450 — the light-weight aesthetic is core\n- Don't use positive letter-spacing on body text — it's always negative"
 }

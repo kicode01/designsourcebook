@@ -684,7 +684,7 @@
     },
     {
       "key": "table",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "transparent",
       "textColor": "#3a383d"
     },
@@ -716,12 +716,12 @@
     },
     {
       "key": "table-info-2",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#c0d8f0"
     },
     {
       "key": "table-dark-3",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#c8c7c9",
       "textColor": "#0b0b0c"
     },
@@ -746,21 +746,21 @@
     },
     {
       "key": "alert-info",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#d2e3f4",
       "textColor": "#133e6d",
       "border": "1px solid #c0d8f0"
     },
     {
       "key": "alert-dark-2",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#d8d7d8",
       "textColor": "#211f24",
       "border": "1px solid #c8c7c9"
     },
     {
       "key": "table-light-4",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#f5f5f4"
     },
     {
@@ -783,19 +783,19 @@
     },
     {
       "key": "alert-light-3",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#f8f8f7",
       "textColor": "#0b0b0c",
       "border": "1px solid #f5f5f4"
     },
     {
       "key": "table-danger-5",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "#efc1ca"
     },
     {
       "key": "table-active-6",
-      "kind": "nav",
+      "kind": "table",
       "backgroundColor": "rgba(5,4,8,.075)"
     },
     {
@@ -806,7 +806,7 @@
     },
     {
       "key": "alert-danger-4",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#f3d2d9",
       "textColor": "#691326",
       "border": "1px solid #efc1ca"
@@ -824,8 +824,66 @@
       "textColor": "#0b0b0c",
       "rounded": ".25rem",
       "padding": "9px 13px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f7f7f5",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fc6d26",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fc6d26",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7f7f5",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7f7f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Pajamas** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fc6d26` brand accent.\n\nTypography centers cleanly on `GitLab Sans` (36px display down to 16px body), unified by `.25rem` base corner radius and stepped `#fff` -> `#f7f7f5` surface layering.\n\nMaintained by **Gitlab**. Source: published token package, repo https://github.com/gitlab-org/gitlab-ui, package `@gitlab/ui`, frameworks: vue, css. Inventory: **90** colors, **45** typography steps, and **25** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `.375rem .75rem`, `.75rem 1.25rem`, `9px 13px`.\n- **Hierarchy**: Group controls cleanly within `#f7f7f5` cards; separate sibling sections using `#a5a3a3` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f7f7f5`) and `1px solid #a5a3a3` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fc6d26` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Pajamas** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fc6d26` brand accent.\n\nTypography centers cleanly on `GitLab Sans` (36px display down to 16px body), unified by `.25rem` base corner radius and stepped `#fff` -> `#f7f7f5` surface layering.\n\nMaintained by **Gitlab**. Source: published token package, repo https://github.com/gitlab-org/gitlab-ui, package `@gitlab/ui`, frameworks: vue, css. Inventory: **90** colors, **45** typography steps, and **31** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 31 component tokens with documented paddings: `.375rem .75rem`, `.75rem 1.25rem`, `9px 13px`, `8px 12px`, `2px`.\n- **Hierarchy**: Group controls cleanly within `#f7f7f5` cards; separate sibling sections using `#a5a3a3` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f7f7f5`) and `1px solid #a5a3a3` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fc6d26` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fc6d26` with `#f7f7f8` text (2.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `GitLab Sans` headings with `GitLab Sans` body copy using documented weights and scale steps.\n- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).\n- Separate containers via `#f7f7f5` surface shifts and `#a5a3a3` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

@@ -314,24 +314,24 @@
   "components": [
     {
       "key": "banner",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#30c7dc",
       "textColor": "#0b0b0c",
       "padding": "12px"
     },
     {
       "key": "banner-info",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#1c2a39"
     },
     {
       "key": "link",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "#f5f7f8"
     },
     {
       "key": "select",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "#3f4960",
       "rounded": "12px"
     },
@@ -374,8 +374,67 @@
       "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#31bcf6",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#31bcf6",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f5f7f8",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f7f8",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**GoodBarber Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#31bcf6` brand accent.\n\nTypography centers cleanly on `Jakarta` (18px display down to 16px body), unified by `12px` base corner radius and stepped `#fff` -> `#f5f7f8` surface layering.\n\nMaintained by **GoodBarber**. Source: live stylesheet extraction (https://www.goodbarber.com/uxdesign/), frameworks: css. Inventory: **68** colors, **4** typography steps, and **9** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `12px`, `10px 18px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `#f5f7f8` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f7f8`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#31bcf6` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#31bcf6` with `#0b0b0c` text (9.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Jakarta` headings with `Jakarta` body copy using documented weights and scale steps.\n- Apply `12px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#f5f7f8` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `12px` baseline.\n- Do not truncate or drop border contrast on `select` fields and secondary buttons."
+  "icons": {
+    "library": "Font Awesome",
+    "package": "@fortawesome/fontawesome-free",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "url": "https://fontawesome.com"
+  },
+  "overview": "**GoodBarber Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#31bcf6` brand accent.\n\nTypography centers cleanly on `Jakarta` (18px display down to 16px body), unified by `12px` base corner radius and stepped `#fff` -> `#f5f7f8` surface layering.\n\nMaintained by **GoodBarber**. Source: live stylesheet extraction (https://www.goodbarber.com/uxdesign/), frameworks: css. Inventory: **68** colors, **4** typography steps, and **15** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `12px`, `10px 18px`, `4px 10px`, `2px`, `6px 12px`.\n- **Hierarchy**: Group controls cleanly within `#f5f7f8` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f7f8`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#31bcf6` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#31bcf6` with `#0b0b0c` text (9.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Jakarta` headings with `Jakarta` body copy using documented weights and scale steps.\n- Apply `12px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#f5f7f8` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `12px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

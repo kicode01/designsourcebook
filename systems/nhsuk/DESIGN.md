@@ -161,6 +161,15 @@ typography:
 rounded:
   button: ".25rem"
   default: ".25rem"
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   tag:
     backgroundColor: "#0055a6"
@@ -282,6 +291,31 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 18px
+  switch-control:
+    backgroundColor: "#005eb8"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#005eb8"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f0f4f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f0f4f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # NHS.UK Service Manual
@@ -290,9 +324,9 @@ components:
 
 **NHS.UK Service Manual** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#005eb8` brand accent.
 
-Typography centers cleanly on `Frutiger W01` (32px display down to 14px body), unified by `.25rem` base corner radius and subtle shadow elevation.
+Typography centers cleanly on `Frutiger W01` (32px display down to 14px body), unified by `4px` base corner radius and subtle shadow elevation.
 
-Maintained by **NHS.UK**. Source: live stylesheet extraction (https://service-manual.nhs.uk/), repo https://github.com/nhsdigital/nhsuk-frontend, package `nhsuk-frontend`, frameworks: css. Inventory: **88** colors, **20** typography steps, and **25** documented components (all rights reserved license).
+Maintained by **NHS.UK**. Source: live stylesheet extraction (https://service-manual.nhs.uk/), repo https://github.com/nhsdigital/nhsuk-frontend, package `nhsuk-frontend`, frameworks: css. Inventory: **88** colors, **20** typography steps, and **30** documented components (all rights reserved license).
 
 ## Colors
 
@@ -314,7 +348,7 @@ Maintained by **NHS.UK**. Source: live stylesheet extraction (https://service-ma
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `4px 8px`, `28px`, `.25rem`, `0 0 0 1em`, `.25rem .5rem`.
+- **Grid & Control Spacing**: Derived from 30 component tokens with documented paddings: `4px 8px`, `28px`, `.25rem`, `0 0 0 1em`, `.25rem .5rem`.
 - **Hierarchy**: Group controls cleanly within `#f0f4f5` cards; separate sibling sections using `#d8dde0` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -324,19 +358,28 @@ Maintained by **NHS.UK**. Source: live stylesheet extraction (https://service-ma
 
 ## Shapes
 
-- **Base Corner Geometry**: `.25rem` (Buttons `.25rem`).
-- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `.25rem` container.
+- **Base Corner Geometry**: `4px` (Buttons `.25rem`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`tag` (badge)**: bg `#0055a6`, ink `#fff`, (7.4:1), padding `4px 8px`, border `1px solid #0055a6`.
-- **`link` (nav)**: ink `#005eb8`.
+- **`link` (link)**: ink `#005eb8`.
 - **`card` (card)**: bg `#fff`, ink `#212b32`, (14.4:1), border `1px solid #d8dde0`.
 - **`panel` (card)**: bg `#007f3b`, ink `#fff`, (5.1:1), padding `28px`, border `4px solid transparent`.
 - **`button` (button)**: bg `#007f3b`, ink `#fff`, (5.1:1), radius `.25rem`, border `2px solid transparent`.
-- **`select` (input)**: bg `#fff`, ink `#212b32`, (14.4:1), padding `.25rem`, border `2px solid #4c6272`.
-- **`link-2` (nav)**: ink `#005eb8`, padding `0 0 0 1em`, border `0`.
-- **`link-3` (nav)**: ink `#005eb8`, border `0`.
+- **`select` (select)**: bg `#fff`, ink `#212b32`, (14.4:1), padding `.25rem`, border `2px solid #4c6272`.
+- **`link-2` (link)**: ink `#005eb8`, padding `0 0 0 1em`, border `0`.
+- **`link-3` (link)**: ink `#005eb8`, border `0`.
+- **`app-side-nav` (nav)**: ink `#005eb8`.
+- **`input-2` (input)**: bg `#d8dde0`, padding `.25rem .5rem`, border `2px solid #4c6272`.
+- **`input-3` (input)**: bg `#d8dde0`, padding `.25rem .5rem`, border `2px solid #4c6272`.
+- **`summary` (card)**: ink `#212b32`, padding `16px`, border `4px solid #d5281b`.
+- **`callout` (alert)**: bg `#fff9c4`, ink `#212b32`, (13.5:1), border `1px solid #ffeb3b`.
+- **`app-side-nav-2` (nav)**: ink `#4c6272`.
+- **`table` (table)**: bg `#005eb8`, ink `#fff`, (6.4:1), padding `8px 24px`.
+- **`input-wrapper-4` (input)**: bg `#d8dde0`, padding `.25rem .5rem`, border `2px solid #4c6272`.
 
 ## Do's and Don'ts
 
@@ -344,12 +387,12 @@ Maintained by **NHS.UK**. Source: live stylesheet extraction (https://service-ma
 - Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#005eb8` with `#f7f7f8` text (6.0:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `Frutiger W01` headings with `Frutiger W01` body copy using documented weights and scale steps.
-- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).
+- Apply `4px` base geometry across inputs and buttons (4px on outer containers).
 - Separate containers via `#f0f4f5` surface shifts and `#d8dde0` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input-2` fields and secondary buttons.

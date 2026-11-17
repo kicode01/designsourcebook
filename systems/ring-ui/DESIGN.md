@@ -80,6 +80,16 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Octicons
+  package: "@primer/octicons-react"
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://primer.style/foundations/icons"
 components:
   button-primary:
     backgroundColor: "#07c3f2"
@@ -121,6 +131,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "rgb(247, 248, 250)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#07c3f2"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#07c3f2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(247, 248, 250)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(247, 248, 250)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgb(255, 255, 255)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(247, 248, 250)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Ring UI
@@ -131,7 +181,7 @@ components:
 
 Typography centers cleanly on `System UI` (26px display down to 16px body), unified by `4px` base corner radius and stepped `rgb(255, 255, 255)` -> `rgb(247, 248, 250)` surface layering.
 
-Maintained by **JetBrains**. Source: published token package (https://github.com/JetBrains/ring-ui#readme), repo https://github.com/JetBrains/ring-ui, package `@jetbrains/ring-ui`, frameworks: react, css. Inventory: **55** colors, **7** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **JetBrains**. Source: published token package (https://github.com/JetBrains/ring-ui#readme), repo https://github.com/JetBrains/ring-ui, package `@jetbrains/ring-ui`, frameworks: react, css. Inventory: **55** colors, **7** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -154,7 +204,7 @@ Maintained by **JetBrains**. Source: published token package (https://github.com
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `rgb(247, 248, 250)` cards; separate sibling sections using `rgb(235, 236, 240)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -166,6 +216,7 @@ Maintained by **JetBrains**. Source: published token package (https://github.com
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Octicons (`@primer/octicons-react`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -177,6 +228,14 @@ Maintained by **JetBrains**. Source: published token package (https://github.com
 - **`badge-brand` (badge)**: bg `#07c3f2`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `rgb(197, 229, 204)`, ink `#0b0b0c`, (14.5:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#07c3f2`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#07c3f2`, ink `#0b0b0c`, (9.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgb(255, 255, 255)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgb(247, 248, 250)`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

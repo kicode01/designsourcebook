@@ -126,6 +126,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Canvas System Icons
+  package: "@workday/canvas-system-icons-web"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://canvas.workday.com"
 components:
   button-primary:
     backgroundColor: "#0875e1"
@@ -167,6 +177,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fbf5ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0875e1"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0875e1"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fbf5ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fbf5ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fbf5ff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Workday Canvas
@@ -177,7 +227,7 @@ components:
 
 Typography centers cleanly on `Roboto` (104px display down to 20px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fbf5ff` surface layering.
 
-Maintained by **Workday**. Source: published token package (https://github.com/Workday/canvas-kit), repo https://github.com/Workday/canvas-kit, package `@workday/canvas-kit-react`, frameworks: react, css. Inventory: **69** colors, **23** typography steps, and **8** documented components (see repository license).
+Maintained by **Workday**. Source: published token package (https://github.com/Workday/canvas-kit), repo https://github.com/Workday/canvas-kit, package `@workday/canvas-kit-react`, frameworks: react, css. Inventory: **69** colors, **23** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -200,7 +250,7 @@ Maintained by **Workday**. Source: published token package (https://github.com/W
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fbf5ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -212,6 +262,7 @@ Maintained by **Workday**. Source: published token package (https://github.com/W
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Canvas System Icons (`@workday/canvas-system-icons-web`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -223,6 +274,14 @@ Maintained by **Workday**. Source: published token package (https://github.com/W
 - **`badge-brand` (badge)**: bg `#0875e1`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0875e1`, ink `#0b0b0c`, (4.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0875e1`, ink `#0b0b0c`, (4.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fbf5ff`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

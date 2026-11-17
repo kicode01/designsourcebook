@@ -40,6 +40,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Orbit Icons
+  package: "@kiwicom/orbit-components"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://orbit.kiwi/foundation/icons/"
 components:
   button-primary:
     backgroundColor: "#0070C8"
@@ -81,6 +91,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#DEF0FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0070C8"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0070C8"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#DEF0FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#DEF0FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#DEF0FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#DEF0FC"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#DEF0FC"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Orbit
@@ -91,7 +141,7 @@ components:
 
 Typography centers cleanly on `System UI` (40px display down to 20px body), unified by `6px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Kiwi.com**. Source: published token package, repo https://github.com/kiwicom/orbit, package `@kiwicom/orbit-design-tokens`, frameworks: react, css. Inventory: **19** colors, **5** typography steps, and **8** documented components (MIT license).
+Maintained by **Kiwi.com**. Source: published token package, repo https://github.com/kiwicom/orbit, package `@kiwicom/orbit-design-tokens`, frameworks: react, css. Inventory: **19** colors, **5** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -111,7 +161,7 @@ Maintained by **Kiwi.com**. Source: published token package, repo https://github
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#DEF0FC` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -123,6 +173,7 @@ Maintained by **Kiwi.com**. Source: published token package, repo https://github
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Orbit Icons (`@kiwicom/orbit-components`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -134,6 +185,14 @@ Maintained by **Kiwi.com**. Source: published token package, repo https://github
 - **`badge-brand` (badge)**: bg `#0070C8`, ink `#f7f7f8`, (4.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#DEF0FC`, ink `#0b0b0c`, (16.8:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#DEF0FC`, ink `#0b0b0c`, (16.8:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0070C8`, ink `#f7f7f8`, (4.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0070C8`, ink `#f7f7f8`, (4.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#DEF0FC`, ink `#0b0b0c`, (16.8:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#DEF0FC`, ink `#0b0b0c`, (16.8:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#DEF0FC`, ink `#0b0b0c`, (16.8:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#DEF0FC`, (16.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#DEF0FC`, ink `#0b0b0c`, (16.8:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

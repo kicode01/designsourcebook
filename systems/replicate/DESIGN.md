@@ -85,6 +85,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-dark-solid:
     backgroundColor: "#202020"
@@ -121,6 +130,46 @@ components:
     textColor: "#646464"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fcfcfc"
+    textColor: "#646464"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#2b9a66"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#2b9a66"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fcfcfc"
+    textColor: "#646464"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fcfcfc"
+    textColor: "#646464"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#646464"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#646464"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fcfcfc"
+    textColor: "#646464"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Replicate

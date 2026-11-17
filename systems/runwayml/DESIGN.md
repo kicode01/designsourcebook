@@ -80,6 +80,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://lucide.dev"
 components:
   button-primary:
     backgroundColor: "#000000"
@@ -121,6 +131,46 @@ components:
     textColor: "#404040"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#404040"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#000000"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#404040"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#404040"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fefefe"
+    textColor: "#404040"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#404040"
+    textColor: "#fefefe"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#404040"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Runway

@@ -5,7 +5,7 @@
   "muted": "#0b0c0c",
   "brand": "#1d70b8",
   "border": "#cecece",
-  "radius": "0",
+  "radius": "0px",
   "ink": "#0b0b0c",
   "palette": [
     {
@@ -299,7 +299,7 @@
     },
     {
       "key": "table",
-      "kind": "nav",
+      "kind": "table",
       "textColor": "#000"
     },
     {
@@ -314,7 +314,7 @@
     },
     {
       "key": "select",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "#fff",
       "textColor": "#000",
       "padding": "5px",
@@ -327,7 +327,7 @@
     },
     {
       "key": "banner",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#f4f8fb",
       "textColor": "#0b0c0c"
     },
@@ -368,7 +368,7 @@
     },
     {
       "key": "banner-2",
-      "kind": "card",
+      "kind": "alert",
       "textColor": "#000"
     },
     {
@@ -386,7 +386,7 @@
     },
     {
       "key": "banner-3",
-      "kind": "card",
+      "kind": "alert",
       "backgroundColor": "#fff",
       "textColor": "#000",
       "padding": "15px"
@@ -434,8 +434,59 @@
       "backgroundColor": "#fff",
       "textColor": "#1d70b8",
       "shadow": "0 2px 0 #0f385c"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1d70b8",
+      "textColor": "#f7f7f8",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1d70b8",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0c0c",
+      "rounded": "0px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0c0c",
+      "textColor": "#f4f8fb",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0c0c",
+      "rounded": "0px",
+      "padding": "8px"
     }
   ],
-  "overview": "**GOV.UK Design System** is a light-first design system anchored on `#f4f8fb` canvas surfaces with `#0b0c0c` primary ink (18.3:1 contrast) and `#1d70b8` brand accent.\n\nTypography centers cleanly on `GDS Transport` (32px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **GOV.UK**. Source: published token package (https://frontend.design-system.service.gov.uk/), repo https://github.com/alphagov/govuk-frontend, package `govuk-frontend`, frameworks: css. Inventory: **35** colors, **21** typography steps, and **24** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 24 component tokens with documented paddings: `2px 8px 3px`, `35px`, `8px 10px 7px`, `5px`, `15px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#cecece` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 2px 0 #083d29`, `0 2px 0 #651b1b`) paired with `#cecece` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1d70b8` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#f4f8fb` (light) with `#0b0c0c` primary text and `#0b0c0c` secondary labels.\n- Use `#1d70b8` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `GDS Transport` headings with `GDS Transport` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#fff` surface shifts and `#cecece` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `select` fields and secondary buttons."
+  "icons": {
+    "library": "GOV.UK Core SVGs",
+    "package": "govuk-frontend",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "curated",
+    "url": "https://design-system.service.gov.uk"
+  },
+  "overview": "**GOV.UK Design System** is a light-first design system anchored on `#f4f8fb` canvas surfaces with `#0b0c0c` primary ink (18.3:1 contrast) and `#1d70b8` brand accent.\n\nTypography centers cleanly on `GDS Transport` (32px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **GOV.UK**. Source: published token package (https://frontend.design-system.service.gov.uk/), repo https://github.com/alphagov/govuk-frontend, package `govuk-frontend`, frameworks: css. Inventory: **35** colors, **21** typography steps, and **29** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `2px 8px 3px`, `35px`, `8px 10px 7px`, `5px`, `15px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#cecece` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 2px 0 #083d29`, `0 2px 0 #651b1b`) paired with `#cecece` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1d70b8` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f4f8fb` (light) with `#0b0c0c` primary text and `#0b0c0c` secondary labels.\n- Use `#1d70b8` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `GDS Transport` headings with `GDS Transport` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#fff` surface shifts and `#cecece` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input-2` fields and secondary buttons."
 }

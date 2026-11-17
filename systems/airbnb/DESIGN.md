@@ -107,6 +107,15 @@ rounded:
   card: 12px
   badge: 999px
   default: 12px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 32
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary-dark:
     backgroundColor: "#222222"
@@ -141,6 +150,46 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "#f2f2f2"
+    textColor: "#222222"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff385c"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff385c"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f2f2f2"
+    textColor: "#222222"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f2f2f2"
+    textColor: "#222222"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#222222"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#222222"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f2f2f2"
+    textColor: "#222222"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Airbnb

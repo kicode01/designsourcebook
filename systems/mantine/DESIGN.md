@@ -122,6 +122,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Tabler Icons
+  package: "@tabler/icons-react"
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://tabler.io/icons"
 components:
   button-primary:
     backgroundColor: "#fd8c73"
@@ -163,6 +173,46 @@ components:
     textColor: "#0a3069"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0a3069"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#fd8c73"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#fd8c73"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0a3069"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0a3069"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0a3069"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0a3069"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0a3069"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Mantine
@@ -173,7 +223,7 @@ components:
 
 Typography centers cleanly on `System UI` (22px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Source: published token package (https://github.com/mantinedev/mantine), repo https://github.com/mantinedev/mantine, package `@mantine/core`, frameworks: react, css. Inventory: **91** colors, **10** typography steps, and **8** documented components (see repository license).
+Source: published token package (https://github.com/mantinedev/mantine), repo https://github.com/mantinedev/mantine, package `@mantine/core`, frameworks: react, css. Inventory: **91** colors, **10** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -196,7 +246,7 @@ Source: published token package (https://github.com/mantinedev/mantine), repo ht
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#d0d7de` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -208,6 +258,7 @@ Source: published token package (https://github.com/mantinedev/mantine), repo ht
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Tabler Icons (`@tabler/icons-react`) on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -219,6 +270,14 @@ Source: published token package (https://github.com/mantinedev/mantine), repo ht
 - **`badge-brand` (badge)**: bg `#fd8c73`, ink `#0a3069`, (5.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#ffffff`, ink `#0a3069`, (12.8:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ffffff`, ink `#0a3069`, (12.8:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#fd8c73`, ink `#0b0b0c`, (8.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#fd8c73`, ink `#0b0b0c`, (8.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ffffff`, ink `#0a3069`, (12.8:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ffffff`, ink `#0a3069`, (12.8:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0a3069`, (12.8:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0a3069`, ink `#ffffff`, (12.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#ffffff`, ink `#0a3069`, (12.8:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

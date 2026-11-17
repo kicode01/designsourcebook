@@ -142,6 +142,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#2694d6"
@@ -183,6 +192,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#e8eaec"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#2694d6"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#2694d6"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#e8eaec"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#e8eaec"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#e8eaec"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#e8eaec"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#e8eaec"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Garden
@@ -193,7 +242,7 @@ components:
 
 Typography centers cleanly on `System UI` (36px display down to 14px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Zendesk**. Source: published token package (https://garden.zendesk.com/), repo https://github.com/zendeskgarden/react-components, package `@zendeskgarden/react-theming`, frameworks: react, css. Inventory: **91** colors, **8** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Zendesk**. Source: published token package (https://garden.zendesk.com/), repo https://github.com/zendeskgarden/react-components, package `@zendeskgarden/react-theming`, frameworks: react, css. Inventory: **91** colors, **8** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -216,7 +265,7 @@ Maintained by **Zendesk**. Source: published token package (https://garden.zende
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#e8eaec` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -228,6 +277,7 @@ Maintained by **Zendesk**. Source: published token package (https://garden.zende
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `16x16` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -239,6 +289,14 @@ Maintained by **Zendesk**. Source: published token package (https://garden.zende
 - **`badge-brand` (badge)**: bg `#2694d6`, ink `#000000`, (6.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#26a178`, ink `#000000`, (6.5:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#e8eaec`, ink `#0b0b0c`, (16.3:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#e8eaec`, ink `#0b0b0c`, (16.3:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#2694d6`, ink `#0b0b0c`, (5.9:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#2694d6`, ink `#0b0b0c`, (5.9:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#e8eaec`, ink `#0b0b0c`, (16.3:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#e8eaec`, ink `#0b0b0c`, (16.3:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#e8eaec`, ink `#0b0b0c`, (16.3:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#e8eaec`, (16.3:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#e8eaec`, ink `#0b0b0c`, (16.3:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

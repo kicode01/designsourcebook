@@ -35,6 +35,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "rgba(247, 149, 32, 1)"
@@ -76,6 +85,46 @@ components:
     textColor: "#ccccdc"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgba(247, 149, 32, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgba(247, 149, 32, 1)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#111217"
+    textColor: "#ccccdc"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#ccccdc"
+    textColor: "#111217"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#181b1f"
+    textColor: "#ccccdc"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Grafana Saga
@@ -86,7 +135,7 @@ components:
 
 Typography centers cleanly on `Inter` (16px display down to 16px body), unified by `4px` base corner radius and stepped `#111217` -> `#181b1f` surface layering.
 
-Maintained by **Grafana**. Source: published token package, repo https://github.com/grafana/grafana, package `@grafana/ui`, frameworks: react. Inventory: **18** colors, **3** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Grafana**. Source: published token package, repo https://github.com/grafana/grafana, package `@grafana/ui`, frameworks: react. Inventory: **18** colors, **3** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -109,7 +158,7 @@ Maintained by **Grafana**. Source: published token package, repo https://github.
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#181b1f` cards; separate sibling sections using `color-mix(in srgb, #ccccdc 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -121,6 +170,7 @@ Maintained by **Grafana**. Source: published token package, repo https://github.
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -132,6 +182,14 @@ Maintained by **Grafana**. Source: published token package, repo https://github.
 - **`badge-brand` (badge)**: bg `rgba(247, 149, 32, 1)`, ink `#000000`, (9.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgba(247, 149, 32, 1)`, ink `#0b0b0c`, (8.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgba(247, 149, 32, 1)`, ink `#0b0b0c`, (8.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#111217`, ink `#ccccdc`, (11.8:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#ccccdc`, ink `#111217`, (11.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#181b1f`, ink `#ccccdc`, (10.9:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

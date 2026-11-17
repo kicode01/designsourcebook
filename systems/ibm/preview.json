@@ -306,8 +306,83 @@
       "textColor": "#0b0b0c",
       "rounded": "0px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0f62fe",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0f62fe",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Carbon Icons",
+    "package": "@carbon/icons-react",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "curated",
+    "url": "https://carbondesignsystem.com/elements/icons/library/"
+  },
   "overview": "IBM's website is the digital embodiment of enterprise authority built on the Carbon Design System — a design language so methodically structured it reads like an engineering specification rendered as a webpage. The page operates on a stark duality: a bright white (`#ffffff`) canvas with near-black (`#161616`) text, punctuated by a single, unwavering accent — IBM Blue 60 (`#0f62fe`). This isn't playful tech-startup minimalism; it's corporate precision distilled into pixels. Every element exists within Carbon's rigid 2x grid, every color maps to a semantic token, every spacing value snaps to the 8px base unit.\n\nThe IBM Plex type family is the system's backbone. IBM Plex Sans at light weight (300) for display headlines creates an unexpectedly airy, almost delicate quality at large sizes — a deliberate counterpoint to IBM's corporate gravity. At body sizes, regular weight (400) with 0.16px letter-spacing on 14px captions introduces the meticulous micro-tracking that makes Carbon text feel engineered rather than designed. IBM Plex Mono serves code, data, and technical labels, completing the family trinity alongside the rarely-surfaced IBM Plex Serif.\n\nWhat defines IBM's visual identity beyond monochrome-plus-blue is the reliance on Carbon's component token system. Every interactive state maps to a CSS custom property prefixed with `--cds-` (Carbon Design System). Buttons don't have hardcoded colors; they reference `--cds-button-primary`, `--cds-button-primary-hover`, `--cds-button-primary-active`. This tokenized architecture means the entire visual layer is a thin skin over a deeply systematic foundation — the design equivalent of a well-typed API.\n\n**Key Characteristics:**\n- IBM Plex Sans at weight 300 (Light) for display — corporate gravitas through typographic restraint\n- IBM Plex Mono for code and technical content with consistent 0.16px letter-spacing at small sizes\n- Single accent color: IBM Blue 60 (`#0f62fe`) — every interactive element, every CTA, every link\n- Carbon token system (`--cds-*`) driving all semantic colors, enabling theme-switching at the variable level\n- 8px spacing grid with strict adherence — no arbitrary values, everything aligns\n- Flat, borderless cards on `#f4f4f4` Gray 10 surface — depth through background-color layering, not shadows\n- Bottom-border inputs (not boxed) — the signature Carbon form pattern\n- 0px border-radius on primary buttons — unapologetically rectangular, no softening\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px (Carbon 2x grid)\n- Component spacing scale: 2px, 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px\n- Layout spacing scale: 16px, 24px, 32px, 48px, 64px, 80px, 96px, 160px\n- Mini unit: 8px (smallest usable spacing)\n- Padding within components: typically 16px\n- Gap between cards/tiles: 1px (hairline) or 16px (standard)\n\n### Grid & Container\n- 16-column grid (Carbon's 2x grid system)\n- Max content width: 1584px (max breakpoint)\n- Column gutters: 32px (16px on mobile)\n- Margin: 16px (mobile), 32px (tablet+)\n- Content typically spans 8-12 columns for readable line lengths\n- Full-bleed sections alternate with contained content\n\n### Whitespace Philosophy\n- **Functional density**: Carbon favors productive density over expansive whitespace. Sections are tightly packed compared to consumer design systems — this reflects IBM's enterprise DNA.\n- **Background-color zoning**: Instead of massive padding between sections, IBM uses alternating background colors (white → gray 10 → white) to create visual separation with minimal vertical space.\n- **Consistent 48px rhythm**: Major section transitions use 48px vertical spacing. Hero sections may use 80px–96px.\n\n### Border Radius Scale\n- **0px**: Primary buttons, inputs, tiles, cards — the dominant treatment. Carbon is fundamentally rectangular.\n- **2px**: Occasionally on small interactive elements (tags)\n- **24px**: Tags/labels (pill shape — the sole rounded exception)\n- **50%**: Avatar circles, icon containers",
   "dos": "### Do\n- Use IBM Plex Sans at weight 300 for display sizes (42px+) — the lightness is intentional\n- Apply 0.16px letter-spacing on 14px body text and 0.32px on 12px captions\n- Use 0px border-radius on buttons, inputs, cards, and tiles — rectangles are the system\n- Reference `--cds-*` token names when implementing (e.g., `--cds-button-primary`, `--cds-text-primary`)\n- Use background-color layering (white → gray 10 → gray 20) for depth instead of shadows\n- Use bottom-border (not box) for input field indicators\n- Maintain the 48px default button height and asymmetric padding for icon accommodation\n- Apply Blue 60 (`#0f62fe`) as the sole accent — one blue to rule them all\n\n### Don't\n- Don't round button corners — 0px radius is the Carbon identity\n- Don't use shadows on cards or tiles — flatness is the point\n- Don't introduce additional accent colors — IBM's system is monochromatic + blue\n- Don't use weight 700 (Bold) — the scale stops at 600 (Semibold)\n- Don't add letter-spacing to display-size text — tracking is only for 14px and below\n- Don't box inputs with full borders — Carbon inputs use bottom-border only\n- Don't use gradient backgrounds — IBM's surfaces are flat, solid colors\n- Don't deviate from the 8px spacing grid — every value should be divisible by 8 (with 2px and 4px for micro-adjustments)"
 }

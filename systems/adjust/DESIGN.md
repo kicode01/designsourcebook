@@ -119,6 +119,15 @@ rounded:
   button: 0.4rem
   input: 0.4rem
   default: 0.4rem
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   card:
     backgroundColor: "#242526"
@@ -189,6 +198,31 @@ components:
     textColor: "#f7f7f8"
     rounded: 0.4rem
     padding: 9px 13px
+  select-default:
+    backgroundColor: "#242526"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#3578e5"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#3578e5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#000"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#242526"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Adjust Atlas
@@ -199,7 +233,7 @@ components:
 
 Typography centers cleanly on `System Sans` (32px display down to 16px body), unified by `0.4rem` base corner radius and subtle shadow elevation.
 
-Maintained by **Adjust**. Source: live stylesheet extraction (https://atlas.adeven.com), frameworks: css. Inventory: **91** colors, **9** typography steps, and **21** documented components (all rights reserved license).
+Maintained by **Adjust**. Source: live stylesheet extraction (https://atlas.adeven.com), frameworks: css. Inventory: **91** colors, **9** typography steps, and **26** documented components (all rights reserved license).
 
 ## Colors
 
@@ -222,7 +256,7 @@ Maintained by **Adjust**. Source: live stylesheet extraction (https://atlas.adev
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0 .5rem 0 2.25rem`, `.6rem 1.5rem`, `10px 18px`, `9px 13px`.
+- **Grid & Control Spacing**: Derived from 26 component tokens with documented paddings: `0 .5rem 0 2.25rem`, `.6rem 1.5rem`, `10px 18px`, `9px 13px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `#242526` cards; separate sibling sections using `#484d5b` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -234,17 +268,26 @@ Maintained by **Adjust**. Source: live stylesheet extraction (https://atlas.adev
 
 - **Base Corner Geometry**: `0.4rem` (Inputs `0.4rem` · Badges `0.4rem`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `0.4rem` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
 - **`card` (card)**: bg `#242526`.
-- **`tabs` (nav)**: ink `#fff`.
+- **`tabs` (tabs)**: ink `#fff`.
 - **`badge` (badge)**: ink `#fff`, radius `0.4rem`, border `1px solid inherit`.
 - **`navbar` (nav)**: bg `#242526`.
 - **`navbar-2` (nav)**: ink `#e3e3e3`.
 - **`navbar-3` (nav)**: ink `#e3e3e3`.
 - **`navbar-sidebar-4` (nav)**: bg `#242526`.
 - **`navbar-5` (nav)**: ink `#ebedf0`, radius `2rem`, padding `0 .5rem 0 2.25rem`.
+- **`navbar-sidebar-6` (nav)**: bg `#ffffff0d`, padding `.6rem 1.5rem`.
+- **`table-of-contents` (table)**: ink `#fff`.
+- **`alert-info` (alert)**: bg `#ecf3fc`, ink `#051844`, (15.4:1).
+- **`button-link` (button)**: ink `#1f51d9`.
+- **`alert-danger` (alert)**: bg `#ffeff3`, ink `#56072c`, (12.9:1).
+- **`alert-success` (alert)**: bg `#e1faf6`, ink `#04585c`, (7.5:1).
+- **`alert-warning` (alert)**: bg `#f9ebd6`, ink `#312824`, (12.3:1).
+- **`badge-secondary` (badge)**: ink `#000`.
 
 ## Do's and Don'ts
 

@@ -50,6 +50,15 @@ rounded:
   button: 40px
   card: 40px
   default: 40px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   emoji-category-button:
     textColor: "rgba(0,0,0,.6)"
@@ -85,6 +94,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 40px
     padding: 18px 20px
+  select-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#5468ff"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#5468ff"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Fomantic / Semantic UI
@@ -93,9 +142,9 @@ components:
 
 **Fomantic / Semantic UI** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#5468ff` brand accent.
 
-Typography centers cleanly on `Lato` (48px display down to 14px body), unified by `40px` base corner radius and subtle shadow elevation.
+Typography centers cleanly on `Lato` (48px display down to 14px body), unified by `12px` base corner radius and subtle shadow elevation.
 
-Maintained by **Semantic**. Source: live stylesheet extraction (https://fomantic-ui.com/), repo https://github.com/fomantic/Fomantic-UI, package `fomantic-ui-css`, frameworks: css, react. Inventory: **13** colors, **11** typography steps, and **7** documented components (all rights reserved license).
+Maintained by **Semantic**. Source: live stylesheet extraction (https://fomantic-ui.com/), repo https://github.com/fomantic/Fomantic-UI, package `fomantic-ui-css`, frameworks: css, react. Inventory: **13** colors, **11** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -116,7 +165,7 @@ Maintained by **Semantic**. Source: live stylesheet extraction (https://fomantic
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `.5em`, `0`, `0 0 0 8px`, `0 8px`, `0 0 2px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `.5em`, `0`, `0 0 0 8px`, `0 8px`, `0 0 2px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -126,18 +175,27 @@ Maintained by **Semantic**. Source: live stylesheet extraction (https://fomantic
 
 ## Shapes
 
-- **Base Corner Geometry**: `40px` (Cards `40px`).
+- **Base Corner Geometry**: `12px` (Cards `40px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `40px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`emoji-category-button` (button)**: ink `rgba(0,0,0,.6)`, padding `.5em`.
-- **`Link` (nav)**: ink `#5468ff`, padding `0`, border `0`.
+- **`Link` (link)**: ink `#5468ff`, padding `0`, border `0`.
 - **`Input` (input)**: bg `transparent`, ink `#1c1e21`, padding `0 0 0 8px`, border `0`.
 - **`Label` (badge)**: ink `#969faf`.
 - **`Button` (button)**: bg `#ebedf0`, ink `#0b0b0c`, (16.8:1), radius `40px`, padding `0 8px`, border `0`.
 - **`Button-Key-2` (button)**: ink `#969faf`, radius `3px`, padding `0 0 2px`, border `0`.
 - **`card-surface` (card)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `40px`, padding `18px 20px`.
+- **`select-default` (select)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#5468ff`, ink `#0b0b0c`, (4.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#5468ff`, ink `#0b0b0c`, (4.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `12px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -145,12 +203,12 @@ Maintained by **Semantic**. Source: live stylesheet extraction (https://fomantic
 - Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#5468ff` with `#f7f7f8` text (4.1:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `Lato` headings with `Lato` body copy using documented weights and scale steps.
-- Apply `40px` base geometry across inputs and buttons (40px on outer containers).
+- Apply `12px` base geometry across inputs and buttons (40px on outer containers).
 - Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `40px` baseline.
+- Do not mix conflicting corner radii that clash with the system's `12px` baseline.
 - Do not truncate or drop border contrast on `Input` fields and secondary buttons.

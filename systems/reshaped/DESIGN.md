@@ -94,6 +94,16 @@ rounded:
   badge: 999px
   nav: inherit
   default: inherit
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://lucide.dev"
 components:
   Button-module:
     backgroundColor: "#0000"
@@ -128,6 +138,46 @@ components:
     textColor: "#0b0b0c"
     rounded: inherit
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f8f8f8"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1860fa"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1860fa"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f8f8f8"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f8f8f8"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f8f8f8"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Reshaped
@@ -136,9 +186,9 @@ components:
 
 **Reshaped** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#1860fa` brand accent.
 
-Typography centers cleanly on `Inter` (80px display down to 16px body), unified by `inherit` base corner radius and stepped `#fff` -> `#f8f8f8` surface layering.
+Typography centers cleanly on `Inter` (80px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `#f8f8f8` surface layering.
 
-Source: live stylesheet extraction (https://reshaped.so), repo https://github.com/reshaped-ui/reshaped, package `reshaped`, frameworks: react, css. Inventory: **49** colors, **17** typography steps, and **7** documented components (all rights reserved license).
+Source: live stylesheet extraction (https://reshaped.so), repo https://github.com/reshaped-ui/reshaped, package `reshaped`, frameworks: react, css. Inventory: **49** colors, **17** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -161,7 +211,7 @@ Source: live stylesheet extraction (https://reshaped.so), repo https://github.co
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f8f8f8` cards; separate sibling sections using `#e4ecf9` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -171,8 +221,9 @@ Source: live stylesheet extraction (https://reshaped.so), repo https://github.co
 
 ## Shapes
 
-- **Base Corner Geometry**: `inherit` (Buttons `inherit` · Inputs `inherit` · Cards `10px` · Badges `999px` · Navigation `inherit`).
+- **Base Corner Geometry**: `6px` (Buttons `inherit` · Inputs `inherit` · Cards `10px` · Badges `999px` · Navigation `inherit`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Lucide (`lucide-react`) on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -183,6 +234,14 @@ Source: live stylesheet extraction (https://reshaped.so), repo https://github.co
 - **`badge-brand` (badge)**: bg `#1860fa`, ink `#ffffff`, (5.1:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#238649`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `inherit`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1860fa`, ink `#f7f7f8`, (4.8:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1860fa`, ink `#f7f7f8`, (4.8:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f8f8f8`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -190,12 +249,12 @@ Source: live stylesheet extraction (https://reshaped.so), repo https://github.co
 - Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#1860fa` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.
-- Apply `inherit` base geometry across inputs and buttons (10px on outer containers).
+- Apply `6px` base geometry across inputs and buttons (10px on outer containers).
 - Separate containers via `#f8f8f8` surface shifts and `#e4ecf9` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `inherit` baseline.
+- Do not mix conflicting corner radii that clash with the system's `6px` baseline.
 - Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

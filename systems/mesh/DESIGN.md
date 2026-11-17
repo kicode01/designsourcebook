@@ -146,6 +146,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#144a38"
@@ -187,6 +196,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#144a38"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#144a38"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Mesh Design System
@@ -197,7 +246,7 @@ components:
 
 Display headlines pair `Crimson Pro` with `Buenos Aires` body copy (60px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Mesh**. Source: live stylesheet extraction (https://www.meshdesignsystem.com/), frameworks: css. Inventory: **75** colors, **30** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **Mesh**. Source: live stylesheet extraction (https://www.meshdesignsystem.com/), frameworks: css. Inventory: **75** colors, **30** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -219,7 +268,7 @@ Maintained by **Mesh**. Source: live stylesheet extraction (https://www.meshdesi
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#9e9e9e` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -231,6 +280,7 @@ Maintained by **Mesh**. Source: live stylesheet extraction (https://www.meshdesi
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -242,6 +292,14 @@ Maintained by **Mesh**. Source: live stylesheet extraction (https://www.meshdesi
 - **`badge-brand` (badge)**: bg `#144a38`, ink `#ffffff`, (10.2:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#144a38`, ink `#ffffff`, (10.2:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#144a38`, ink `#f7f7f8`, (9.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#144a38`, ink `#f7f7f8`, (9.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

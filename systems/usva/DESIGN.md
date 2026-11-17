@@ -65,6 +65,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#8b5cf6"
@@ -106,6 +115,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#100b1f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#8b5cf6"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#8b5cf6"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#100b1f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#100b1f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#000"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#000"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#100b1f"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # usva
@@ -116,7 +165,7 @@ components:
 
 Typography centers cleanly on `Inter` (36px display down to 15px body), unified by `8px` base corner radius and stepped `#000` -> `#100b1f` surface layering.
 
-Source: published token package (https://github.com/matt-pasek/usva), repo https://github.com/matt-pasek/usva, frameworks: css. Inventory: **29** colors, **5** typography steps, and **8** documented components (see repository license).
+Source: published token package (https://github.com/matt-pasek/usva), repo https://github.com/matt-pasek/usva, frameworks: css. Inventory: **29** colors, **5** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -138,7 +187,7 @@ Source: published token package (https://github.com/matt-pasek/usva), repo https
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#100b1f` cards; separate sibling sections using `#221c30` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -150,6 +199,7 @@ Source: published token package (https://github.com/matt-pasek/usva), repo https
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -161,6 +211,14 @@ Source: published token package (https://github.com/matt-pasek/usva), repo https
 - **`badge-brand` (badge)**: bg `#8b5cf6`, ink `#0b0b0c`, (4.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#52c989`, ink `#000000`, (10.1:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#8b5cf6`, ink `#0b0b0c`, (4.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#8b5cf6`, ink `#0b0b0c`, (4.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#000`, ink `#f7f7f8`, (19.6:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#f7f7f8`, ink `#000`, (19.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#100b1f`, ink `#f7f7f8`, (18.0:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

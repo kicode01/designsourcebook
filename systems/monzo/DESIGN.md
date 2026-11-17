@@ -108,6 +108,15 @@ rounded:
   nav: 8px
   badge: 1.875rem
   default: 30px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary-coral:
     backgroundColor: "#ff4f40"
@@ -213,6 +222,26 @@ components:
   navigation-buttons-carousel-button:
     backgroundColor: "#091723"
     rounded: "100%"
+  switch-control:
+    backgroundColor: "#ff4f40"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff4f40"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f2f8f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Monzo Tone of Voice
@@ -223,7 +252,7 @@ components:
 
 Typography centers cleanly on `MonzoSansText` (61px display down to 16px body), unified by `30px` base corner radius and stepped `#fff` -> `#f2f8f3` surface layering.
 
-Maintained by **Monzo**. Source: live stylesheet extraction (https://monzo.com/tone-of-voice/), repo https://github.com/monzo/response, frameworks: css. Inventory: **63** colors, **18** typography steps, and **29** documented components (all rights reserved license).
+Maintained by **Monzo**. Source: live stylesheet extraction (https://monzo.com/tone-of-voice/), repo https://github.com/monzo/response, frameworks: css. Inventory: **63** colors, **18** typography steps, and **33** documented components (all rights reserved license).
 
 ## Colors
 
@@ -245,7 +274,7 @@ Maintained by **Monzo**. Source: live stylesheet extraction (https://monzo.com/t
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `8px 16px`, `11px 12px`, `64px 16px 150px`, `16px 0`, `16px`.
+- **Grid & Control Spacing**: Derived from 33 component tokens with documented paddings: `8px 16px`, `11px 12px`, `64px 16px 150px`, `16px 0`, `16px`.
 - **Hierarchy**: Group controls cleanly within `#f2f8f3` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -255,19 +284,28 @@ Maintained by **Monzo**. Source: live stylesheet extraction (https://monzo.com/t
 
 ## Shapes
 
-- **Base Corner Geometry**: `30px` (Buttons `30px` · Inputs `64px` · Badges `1.875rem` · Navigation `30px`).
+- **Base Corner Geometry**: `30px` (Buttons `30px` · Badges `1.875rem`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `30px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`button-primary-coral` (button)**: bg `#ff4f40`, ink `#091723`, (5.6:1), radius `30px`, padding `8px 16px`.
-- **`button-secondary-navy` (nav)**: bg `transparent`, ink `#091723`, radius `30px`, padding `8px 16px`.
+- **`button-secondary-navy` (button)**: bg `transparent`, ink `#091723`, radius `30px`, padding `8px 16px`.
 - **`card-dark` (card)**: bg `#091723`, ink `#fff`, (18.1:1).
 - **`button-usa` (button)**: bg `#091723`, ink `#fff`, (18.1:1).
 - **`card-light` (card)**: bg `#f2f8f3`, ink `#091723`, (16.8:1).
 - **`button-button` (button)**: bg `#112231`, radius `30px`.
 - **`button-business` (button)**: bg `#218fb7`, ink `#091723`, (4.9:1).
-- **`tabbed-carousel-tab` (nav)**: bg `#e3ebe4`, ink `#091723`, (14.9:1), radius `64px`, padding `8px 16px`.
+- **`tabbed-carousel-tab` (tabs)**: bg `#e3ebe4`, ink `#091723`, (14.9:1), radius `64px`, padding `8px 16px`.
+- **`button-v2-primary-btn` (button)**: bg `#091723`, ink `#fff`, (18.1:1).
+- **`button-v2-secondary-btn` (button)**: bg `transparent`, ink `#091723`.
+- **`tabbed-carousel-description` (nav)**: ink `rgba(9,23,35,.6)`.
+- **`navigation-navigation-curtain` (nav)**: bg `rgba(0,0,0,.3)`.
+- **`navigation-links-navigation-link` (link)**: ink `rgba(9,23,35,.6)`, radius `8px`, padding `11px 12px`.
+- **`navigation-header-navigation-header` (nav)**: ink `rgba(9,23,35,.6)`.
+- **`navigation-content-navigation-content` (nav)**: bg `#fff`, radius `0 0 16px 0`, padding `64px 16px 150px`.
+- **`navigation-links-navigation-links-title` (link)**: ink `rgba(9,23,35,.6)`.
 
 ## Do's and Don'ts
 
@@ -283,4 +321,4 @@ Maintained by **Monzo**. Source: live stylesheet extraction (https://monzo.com/t
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not mix conflicting corner radii that clash with the system's `30px` baseline.
-- Do not truncate or drop border contrast on `navigation-section-selector-navigation-section-selector` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

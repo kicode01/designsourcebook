@@ -108,6 +108,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#79b8ff"
@@ -149,6 +158,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#F3F4F6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#79b8ff"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#79b8ff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#F3F4F6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#F3F4F6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#F9FAFB"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#F9FAFB"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#F3F4F6"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Flowbite Design System
@@ -159,7 +208,7 @@ components:
 
 Typography centers cleanly on `Inter` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#F9FAFB` -> `#F3F4F6` surface layering.
 
-Maintained by **Flowbite**. Source: published token package (https://github.com/themesberg/flowbite), repo https://github.com/themesberg/flowbite, package `flowbite`, frameworks: css, react, vue, svelte, angular. Inventory: **91** colors, **3** typography steps, and **8** documented components (see repository license).
+Maintained by **Flowbite**. Source: published token package (https://github.com/themesberg/flowbite), repo https://github.com/themesberg/flowbite, package `flowbite`, frameworks: css, react, vue, svelte, angular. Inventory: **91** colors, **3** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -182,7 +231,7 @@ Maintained by **Flowbite**. Source: published token package (https://github.com/
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#F3F4F6` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -194,6 +243,7 @@ Maintained by **Flowbite**. Source: published token package (https://github.com/
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -205,6 +255,14 @@ Maintained by **Flowbite**. Source: published token package (https://github.com/
 - **`badge-brand` (badge)**: bg `#79b8ff`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#057A55`, ink `#ffffff`, (5.4:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#F3F4F6`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#F3F4F6`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#79b8ff`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#79b8ff`, ink `#0b0b0c`, (9.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#F3F4F6`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#F3F4F6`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#F9FAFB`, ink `#0b0b0c`, (18.8:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#F9FAFB`, (18.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#F3F4F6`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

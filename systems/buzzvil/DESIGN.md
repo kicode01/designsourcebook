@@ -61,6 +61,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://lucide.dev"
 components:
   button-primary:
     backgroundColor: "#191b1d"
@@ -102,6 +112,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5f5f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#191b1d"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#191b1d"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f5f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f5f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f5f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Buzzvil Design System
@@ -112,7 +162,7 @@ components:
 
 Display headlines pair `Inter` with `Anonymous Pro` body copy (96px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f5f5f2` surface layering.
 
-Maintained by **Buzzvil**. Source: live stylesheet extraction (https://design.buzzvil.com/), frameworks: css. Inventory: **15** colors, **15** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **Buzzvil**. Source: live stylesheet extraction (https://design.buzzvil.com/), frameworks: css. Inventory: **15** colors, **15** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -133,7 +183,7 @@ Maintained by **Buzzvil**. Source: live stylesheet extraction (https://design.bu
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f5f5f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -145,6 +195,7 @@ Maintained by **Buzzvil**. Source: live stylesheet extraction (https://design.bu
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Lucide (`lucide-react`) on a `24x24` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -156,6 +207,14 @@ Maintained by **Buzzvil**. Source: live stylesheet extraction (https://design.bu
 - **`badge-brand` (badge)**: bg `#191b1d`, ink `#ffffff`, (17.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f5f5f2`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f5f5f2`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#191b1d`, ink `#f7f7f8`, (16.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#191b1d`, ink `#f7f7f8`, (16.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f5f5f2`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f5f5f2`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f5f5f2`, ink `#0b0b0c`, (18.0:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

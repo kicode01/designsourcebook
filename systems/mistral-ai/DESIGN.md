@@ -75,6 +75,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 30
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-cream-surface:
     backgroundColor: "#fff0c2"
@@ -113,6 +122,46 @@ components:
     textColor: "#1f1f1f"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fffaeb"
+    textColor: "#1f1f1f"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff8a00"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff8a00"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fffaeb"
+    textColor: "#1f1f1f"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fffaeb"
+    textColor: "#1f1f1f"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#1f1f1f"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#1f1f1f"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fffaeb"
+    textColor: "#1f1f1f"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Mistral AI

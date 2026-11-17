@@ -377,6 +377,16 @@ rounded:
   badge: 15rem
   nav: "0"
   default: 0.25rem
+icons:
+  library: SLDS Icons
+  package: "@salesforce-ux/design-system"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://www.lightningdesignsystem.com/icons/"
 components:
   panel:
     backgroundColor: "rgb(255, 255, 255)"
@@ -475,6 +485,31 @@ components:
     backgroundColor: "rgb(147, 147, 147)"
   input-focus:
     backgroundColor: "rgb(255, 255, 255)"
+  switch-control:
+    backgroundColor: "rgb(3, 35, 77)"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgb(3, 35, 77)"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgb(255, 255, 255)"
+    rounded: 6px
+    padding: 6px 10px
 ---
 
 # Lightning
@@ -485,7 +520,7 @@ components:
 
 Typography centers cleanly on `System UI` (42px display down to 16px body), unified by `0.25rem` base corner radius and subtle shadow elevation.
 
-Maintained by **Salesforce**. Source: published token package, repo https://github.com/salesforce-ux/design-system, package `@salesforce-ux/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **120** typography steps, and **38** documented components (BSD-3-Clause license).
+Maintained by **Salesforce**. Source: published token package, repo https://github.com/salesforce-ux/design-system, package `@salesforce-ux/design-system`, frameworks: react, web-components, css. Inventory: **91** colors, **120** typography steps, and **43** documented components (BSD-3-Clause license).
 
 ## Colors
 
@@ -508,7 +543,7 @@ Maintained by **Salesforce**. Source: published token package, repo https://gith
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 38 component tokens with documented paddings: `0 1rem`, `0 0.125rem`, `0.5rem 1.5rem 0.5rem 2rem`, `0.5rem 0.75rem`, `0 0.5rem`.
+- **Grid & Control Spacing**: Derived from 43 component tokens with documented paddings: `0 1rem`, `0 0.125rem`, `0.5rem 1.5rem 0.5rem 2rem`, `0.5rem 0.75rem`, `0 0.5rem`.
 - **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `rgb(243, 243, 243)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -518,19 +553,28 @@ Maintained by **Salesforce**. Source: published token package, repo https://gith
 
 ## Shapes
 
-- **Base Corner Geometry**: `0.25rem` (Buttons `0.25rem` · Inputs `0.25rem` · Cards `0.25rem` · Badges `15rem`).
+- **Base Corner Geometry**: `0.25rem` (Buttons `0.25rem` · Inputs `0.25rem` · Cards `0.25rem` · Badges `15rem` · Navigation `0`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `0.25rem` container.
+- **Iconography & SVGs**: SLDS Icons (`@salesforce-ux/design-system`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`panel` (card)**: bg `rgb(255, 255, 255)`, radius `0.25rem`.
-- **`table` (nav)**: bg `rgb(255, 255, 255)`.
-- **`link` (nav)**: ink `rgb(11, 92, 171)`.
+- **`table` (table)**: bg `rgb(255, 255, 255)`.
+- **`link` (link)**: ink `rgb(11, 92, 171)`.
 - **`input` (input)**: bg `rgb(255, 255, 255)`, ink `rgb(1, 118, 211)`, (4.6:1), radius `0.25rem`, padding `0 1rem`, border `1px solid rgb(201, 201, 201)`.
 - **`panel-2` (card)**: bg `rgb(255, 255, 255)`, radius `0.25rem 0.25rem 0 0`, border `1px solid rgb(229, 229, 229)`.
 - **`button` (button)**: ink `rgb(1, 68, 134)`, radius `0.25rem`, border `1px solid rgb(201, 201, 201)`.
 - **`input-focus-2` (input)**: bg `rgb(255, 255, 255)`, border `1px solid rgb(27, 150, 255)`.
 - **`badge` (badge)**: bg `rgb(186, 5, 23)`, ink `rgb(255, 255, 255)`, (6.7:1), radius `15rem`, padding `0 0.125rem`.
+- **`nav-vertical` (nav)**: ink `rgb(24, 24, 24)`, radius `0`, padding `0.5rem 1.5rem 0.5rem 2rem`.
+- **`panel-3` (card)**: bg `rgb(255, 255, 255)`, radius `0.25rem 0.25rem 0 0`, padding `0.5rem 0.75rem`.
+- **`nav-vertical-2` (nav)**: ink `rgb(11, 92, 171)`.
+- **`nav-vertical-3` (nav)**: ink `rgb(116, 116, 116)`.
+- **`button-icon` (button)**: ink `rgb(116, 116, 116)`.
+- **`button-icon-bare` (button)**: ink `rgb(116, 116, 116)`.
+- **`button-icon-more` (button)**: bg `rgb(255, 255, 255)`, ink `rgb(116, 116, 116)`, (4.7:1), padding `0 0.5rem`, border `1px solid rgb(201, 201, 201)`.
+- **`button-icon-error` (button)**: ink `rgb(116, 116, 116)`.
 
 ## Do's and Don'ts
 

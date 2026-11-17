@@ -222,8 +222,83 @@
       "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1c1c1e",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1c1c1e",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Lucide",
+    "package": "lucide-react",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 2,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "url": "https://lucide.dev"
+  },
   "overview": "Miro's website is a clean, collaborative-tool-forward platform that communicates \"visual thinking\" through generous whitespace, pastel accent colors, and a confident geometric font. The design uses a predominantly white canvas with near-black text (`#1c1c1e`) and a distinctive pastel color palette — coral, rose, teal, orange, yellow, moss — each representing different collaboration contexts.\n\nThe typography uses Roobert PRO Medium as the primary display font with OpenType character variants (`\"blwf\", \"cv03\", \"cv04\", \"cv09\", \"cv11\"`) and negative letter-spacing (-1.68px at 56px). Noto Sans handles body text with its own stylistic set (`\"liga\" 0, \"ss01\", \"ss04\", \"ss05\"`). The design is built with Framer, giving it smooth animations and modern component patterns.\n\n**Key Characteristics:**\n- White canvas with near-black (`#1c1c1e`) text\n- Roobert PRO Medium with multiple OpenType character variants\n- Pastel accent palette: coral, rose, teal, orange, yellow, moss (light + dark pairs)\n- Blue 450 (`#5b76fe`) as primary interactive color\n- Success green (`#00b473`) for positive states\n- Generous border-radius: 8px–50px range\n- Framer-built with smooth motion patterns\n- Ring shadow border: `rgb(224,226,232) 0px 0px 0px 1px`\n\n### Layout & Spacing\n- Spacing: 1–24px base scale\n- Radius: 8px (buttons), 10px–12px (cards), 20px–24px (panels), 40px–50px (large containers)\n- Ring shadow: `rgb(224,226,232) 0px 0px 0px 1px`",
   "dos": "### Do\n- Use pastel light/dark pairs for feature sections\n- Apply Roobert PRO with OpenType character variants\n- Use Blue 450 (#5b76fe) for interactive elements\n### Don't\n- Don't use heavy shadows\n- Don't mix more than 2 pastel accents per section"
 }

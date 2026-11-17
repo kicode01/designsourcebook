@@ -128,6 +128,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#694ed6"
@@ -169,6 +178,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#694ed6"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#694ed6"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Finastra Design System
@@ -179,7 +228,7 @@ components:
 
 Display headlines pair `Spartan` with `Roboto` body copy (51px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Finastra**. Source: published token package, repo https://github.com/Finastra/finastra-design-system, package `@finastra/fds-theme`, frameworks: web-components, angular, css. Inventory: **33** colors, **42** typography steps, and **8** documented components (MIT license).
+Maintained by **Finastra**. Source: published token package, repo https://github.com/Finastra/finastra-design-system, package `@finastra/fds-theme`, frameworks: web-components, angular, css. Inventory: **33** colors, **42** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -201,7 +250,7 @@ Maintained by **Finastra**. Source: published token package, repo https://github
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -213,6 +262,7 @@ Maintained by **Finastra**. Source: published token package, repo https://github
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -224,6 +274,14 @@ Maintained by **Finastra**. Source: published token package, repo https://github
 - **`badge-brand` (badge)**: bg `#694ed6`, ink `#ffffff`, (5.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `rgba(0, 135, 68, 0.5)`, ink `#0b0b0c`, (9.6:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#694ed6`, ink `#f7f7f8`, (5.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#694ed6`, ink `#f7f7f8`, (5.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

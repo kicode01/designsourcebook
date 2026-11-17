@@ -77,6 +77,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#0f95a1"
@@ -118,6 +127,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0f95a1"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0f95a1"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Vanilla
@@ -128,7 +177,7 @@ components:
 
 Typography centers cleanly on `Ubuntu variable` (32px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f3f3f3` surface layering.
 
-Maintained by **Ubuntu**. Source: published token package (https://vanillaframework.io/), repo https://github.com/canonical/vanilla-framework, package `vanilla-framework`, frameworks: css, react. Inventory: **58** colors, **4** typography steps, and **8** documented components (LGPL-3.0 license).
+Maintained by **Ubuntu**. Source: published token package (https://vanillaframework.io/), repo https://github.com/canonical/vanilla-framework, package `vanilla-framework`, frameworks: css, react. Inventory: **58** colors, **4** typography steps, and **16** documented components (LGPL-3.0 license).
 
 ## Colors
 
@@ -151,7 +200,7 @@ Maintained by **Ubuntu**. Source: published token package (https://vanillaframew
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f3f3f3` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -163,6 +212,7 @@ Maintained by **Ubuntu**. Source: published token package (https://vanillaframew
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -174,6 +224,14 @@ Maintained by **Ubuntu**. Source: published token package (https://vanillaframew
 - **`badge-brand` (badge)**: bg `#0f95a1`, ink `#0b0b0c`, (5.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#0e8420`, ink `#ffffff`, (4.8:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#0f95a1`, ink `#0b0b0c`, (5.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#0f95a1`, ink `#0b0b0c`, (5.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

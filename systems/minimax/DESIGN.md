@@ -107,6 +107,16 @@ rounded:
   card: 12px
   nav: 8px
   default: 8px
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://lucide.dev"
 components:
   button-pill-primary-dark:
     backgroundColor: "#181e25"
@@ -141,6 +151,46 @@ components:
     textColor: "#222222"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f0f0f0"
+    textColor: "#222222"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1456f0"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1456f0"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f0f0f0"
+    textColor: "#222222"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f0f0f0"
+    textColor: "#222222"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#222222"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#222222"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f0f0f0"
+    textColor: "#222222"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: MiniMax

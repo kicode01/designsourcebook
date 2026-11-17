@@ -87,6 +87,15 @@ rounded:
   input: "0"
   nav: "0"
   default: "0"
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: derived
 components:
   button:
     backgroundColor: "#002ea2"
@@ -145,6 +154,41 @@ components:
     textColor: "#0b0b0c"
     rounded: "0"
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#002EA2"
+    textColor: "#f7f7f8"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#002EA2"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # Finland Toolbox
@@ -155,7 +199,7 @@ components:
 
 Typography centers cleanly on `System Sans` (42px display down to 16px body), unified by `0px` razor-sharp architectural corners and hairline `1px` structural borders.
 
-Maintained by **Finland**. Source: live stylesheet extraction (https://toolbox.finland.fi/), frameworks: css. Inventory: **28** colors, **21** typography steps, and **9** documented components (all rights reserved license).
+Maintained by **Finland**. Source: live stylesheet extraction (https://toolbox.finland.fi/), frameworks: css. Inventory: **28** colors, **21** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -177,7 +221,7 @@ Maintained by **Finland**. Source: live stylesheet extraction (https://toolbox.f
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `0`, `8px 16px`, `.125rem .25rem`, `9px 13px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0`, `8px 16px`, `.125rem .25rem`, `9px 13px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -187,19 +231,28 @@ Maintained by **Finland**. Source: live stylesheet extraction (https://toolbox.f
 
 ## Shapes
 
-- **Base Corner Geometry**: `0` (Buttons `0` · Inputs `0` · Badges `0` · Navigation `0`).
+- **Base Corner Geometry**: `0px` (Buttons `0` · Inputs `0` · Badges `0` · Navigation `0`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.5px`, `square` caps).
 
 ## Components
 
 - **`button` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
 - **`tag` (badge)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
 - **`new-post-tag-2` (badge)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `50%`.
-- **`notice` (card)**: bg `#fff`, padding `8px 16px`.
+- **`notice` (alert)**: bg `#fff`, padding `8px 16px`.
 - **`load-more-button-2` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
 - **`button-radio` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), radius `0`, padding `0`, border `0`.
 - **`button-radio-amount` (button)**: bg `#002ea2`, ink `#fff`, (11.0:1), padding `.125rem .25rem`.
 - **`input-default` (input)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0`, padding `9px 13px`.
+- **`nav-bar` (nav)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#002EA2`, ink `#f7f7f8`, (10.3:1), radius `2px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#002EA2`, ink `#f7f7f8`, (10.3:1), radius `0px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0px`, padding `6px 12px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `0px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `0px`, padding `8px`.
 
 ## Do's and Don'ts
 

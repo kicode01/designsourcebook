@@ -65,6 +65,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Grommet Icons
+  package: grommet-icons
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://icons.grommet.io"
 components:
   button-primary:
     backgroundColor: "#7D4CDB"
@@ -106,6 +116,46 @@ components:
     textColor: "#444444"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#FFFFFF"
+    textColor: "#444444"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#7D4CDB"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#7D4CDB"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#FFFFFF"
+    textColor: "#444444"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#FFFFFF"
+    textColor: "#444444"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#444444"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#444444"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#FFFFFF"
+    textColor: "#444444"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Grommet
@@ -116,7 +166,7 @@ components:
 
 Typography centers cleanly on `JetBrains Mono` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Hewlett Packard**. Source: published token package (http://grommet.io), repo https://github.com/grommet/grommet, package `grommet`, frameworks: react. Inventory: **52** colors, **1** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Hewlett Packard**. Source: published token package (http://grommet.io), repo https://github.com/grommet/grommet, package `grommet`, frameworks: react. Inventory: **52** colors, **1** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -138,7 +188,7 @@ Maintained by **Hewlett Packard**. Source: published token package (http://gromm
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `color-mix(in srgb, #444444 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -150,6 +200,7 @@ Maintained by **Hewlett Packard**. Source: published token package (http://gromm
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Grommet Icons (`grommet-icons`) on a `24x24` grid (outline, stroke `2px`, `square` caps).
 
 ## Components
 
@@ -161,6 +212,14 @@ Maintained by **Hewlett Packard**. Source: published token package (http://gromm
 - **`badge-brand` (badge)**: bg `#7D4CDB`, ink `#f8f8f8`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#10b981`, ink `#000000`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#7D4CDB`, ink `#f7f7f8`, (5.0:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#7D4CDB`, ink `#f7f7f8`, (5.0:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#444444`, (9.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#444444`, ink `#ffffff`, (9.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#FFFFFF`, ink `#444444`, (9.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

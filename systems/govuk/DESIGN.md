@@ -95,6 +95,16 @@ rounded:
   badge: 1px
   button: "0"
   default: "0"
+icons:
+  library: GOV.UK Core SVGs
+  package: govuk-frontend
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://design-system.service.gov.uk"
 components:
   tag:
     backgroundColor: "#d2e2f1"
@@ -208,6 +218,31 @@ components:
   button-inverse:
     backgroundColor: "#fff"
     textColor: "#1d70b8"
+  switch-control:
+    backgroundColor: "#1d70b8"
+    textColor: "#f7f7f8"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1d70b8"
+    textColor: "#f7f7f8"
+    rounded: 0px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fff"
+    textColor: "#0b0c0c"
+    rounded: 0px
+    padding: 6px 12px
+  tooltip-overlay:
+    backgroundColor: "#0b0c0c"
+    textColor: "#f4f8fb"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fff"
+    textColor: "#0b0c0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # GOV.UK Design System
@@ -218,7 +253,7 @@ components:
 
 Typography centers cleanly on `GDS Transport` (32px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.
 
-Maintained by **GOV.UK**. Source: published token package (https://frontend.design-system.service.gov.uk/), repo https://github.com/alphagov/govuk-frontend, package `govuk-frontend`, frameworks: css. Inventory: **35** colors, **21** typography steps, and **24** documented components (MIT license).
+Maintained by **GOV.UK**. Source: published token package (https://frontend.design-system.service.gov.uk/), repo https://github.com/alphagov/govuk-frontend, package `govuk-frontend`, frameworks: css. Inventory: **35** colors, **21** typography steps, and **29** documented components (MIT license).
 
 ## Colors
 
@@ -240,7 +275,7 @@ Maintained by **GOV.UK**. Source: published token package (https://frontend.desi
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 24 component tokens with documented paddings: `2px 8px 3px`, `35px`, `8px 10px 7px`, `5px`, `15px`.
+- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `2px 8px 3px`, `35px`, `8px 10px 7px`, `5px`, `15px`.
 - **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#cecece` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -250,19 +285,28 @@ Maintained by **GOV.UK**. Source: published token package (https://frontend.desi
 
 ## Shapes
 
-- **Base Corner Geometry**: `0` (Buttons `0` · Badges `1px`).
+- **Base Corner Geometry**: `0px` (Buttons `0` · Badges `1px`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: GOV.UK Core SVGs (`govuk-frontend`) on a `16x16` grid (solid, stroke `0px`, `square` caps).
 
 ## Components
 
 - **`tag` (badge)**: bg `#d2e2f1`, ink `#0f385c`, (9.1:1), radius `1px`, padding `2px 8px 3px`.
 - **`label` (badge)**: ink `#000`.
 - **`panel` (card)**: ink `#000`, padding `35px`, border `5px solid transparent`.
-- **`table` (nav)**: ink `#000`.
+- **`table` (table)**: ink `#000`.
 - **`button` (button)**: bg `#0f7a52`, ink `#fff`, (5.3:1), radius `0`, padding `8px 10px 7px`, border `2px solid transparent`.
-- **`select` (input)**: bg `#fff`, ink `#000`, (21.0:1), padding `5px`, border `2px solid`.
+- **`select` (select)**: bg `#fff`, ink `#000`, (21.0:1), padding `5px`, border `2px solid`.
 - **`summary-list` (card)**: ink `#000`.
-- **`banner` (card)**: bg `#f4f8fb`, ink `#0b0c0c`, (18.3:1).
+- **`banner` (alert)**: bg `#f4f8fb`, ink `#0b0c0c`, (18.3:1).
+- **`input-2` (input)**: bg `#f3f3f3`, ink `#000`, (18.9:1), padding `5px`, border `2px solid`.
+- **`input-3` (input)**: bg `#f3f3f3`, ink `#000`, (18.9:1), padding `5px`, border `2px solid`.
+- **`summary-2` (card)**: ink `#000`, padding `15px`, border `5px solid`.
+- **`file-upload-button-2` (button)**: bg `#fff`, padding `18px`, border `2px solid #cecece`.
+- **`card` (card)**: ink `#000`.
+- **`banner-2` (alert)**: ink `#000`.
+- **`file-upload-button-3` (button)**: bg `#1d70b8`, ink `#fff`, (5.2:1), padding `15px 10px`.
+- **`card-2` (card)**: bg `#f3f3f3`, padding `15px`.
 
 ## Do's and Don'ts
 
@@ -278,4 +322,4 @@ Maintained by **GOV.UK**. Source: published token package (https://frontend.desi
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not apply rounded corners (> 0px) to structural containers or CTA buttons.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input-2` fields and secondary buttons.

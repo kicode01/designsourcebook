@@ -16,6 +16,7 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { collectTokens, buildSystem, writeSystem, recordFailure, formatTitle } from "../lib/ingest.mjs";
+import { detectIconsFromHtml } from "../lib/icons.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -105,7 +106,8 @@ async function main() {
     return;
   }
 
-  const { colors, types, components, harvested, usedFiles } = collectTokens(work);
+  const { colors, types, components, icons: sheetIcons, harvested, usedFiles } = collectTokens(work);
+  const icons = sheetIcons || detectIconsFromHtml(html);
 
   if (!Object.keys(colors).length) {
     const why = `no colour values in ${wrote} stylesheets`;
@@ -135,6 +137,7 @@ async function main() {
     colors,
     types,
     components,
+    icons,
     license: "all rights reserved",
     homepage: url,
     provenance: "observed",

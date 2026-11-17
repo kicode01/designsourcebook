@@ -139,6 +139,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary:
     backgroundColor: "#868584"
@@ -180,6 +189,46 @@ components:
     textColor: "#666469"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#faf9f6"
+    textColor: "#666469"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#868584"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#868584"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#faf9f6"
+    textColor: "#666469"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#faf9f6"
+    textColor: "#666469"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#faf9f6"
+    textColor: "#666469"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#666469"
+    textColor: "#faf9f6"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#faf9f6"
+    textColor: "#666469"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Warp

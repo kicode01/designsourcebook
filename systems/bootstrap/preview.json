@@ -611,32 +611,32 @@
   "components": [
     {
       "key": "link-info",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(13, 202, 240, 1)"
     },
     {
       "key": "link-dark-2",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(33, 37, 41, 1)"
     },
     {
       "key": "link-light-3",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(248, 249, 250, 1)"
     },
     {
       "key": "link-danger-4",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(220, 53, 69, 1)"
     },
     {
       "key": "link-primary-5",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(13, 110, 253, 1)"
     },
     {
       "key": "link-success-6",
-      "kind": "nav",
+      "kind": "link",
       "textColor": "RGBA(25, 135, 84, 1)"
     },
     {
@@ -694,8 +694,83 @@
       "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Bootstrap** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0d6efd` brand accent.\n\nDisplay headlines pair `null` with `System UI` body copy (80px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `rgb(255, 255, 255)` surface layering.\n\nSource: published token package (https://getbootstrap.com/), repo https://github.com/twbs/bootstrap, package `bootstrap`, frameworks: css, react, vue. Inventory: **91** colors, **40** typography steps, and **13** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 13 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.\n- **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `#c4c8cb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `rgb(255, 255, 255)`) and `1px solid #c4c8cb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d6efd` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Bootstrap Icons",
+    "package": "bootstrap-icons",
+    "style": "solid",
+    "grid": 16,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "curated",
+    "url": "https://icons.getbootstrap.com"
+  },
+  "overview": "**Bootstrap** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0d6efd` brand accent.\n\nDisplay headlines pair `null` with `System UI` body copy (80px display down to 16px body), unified by `6px` base corner radius and stepped `#fff` -> `rgb(255, 255, 255)` surface layering.\n\nSource: published token package (https://getbootstrap.com/), repo https://github.com/twbs/bootstrap, package `bootstrap`, frameworks: css, react, vue. Inventory: **91** colors, **40** typography steps, and **21** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `8px 12px`.\n- **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `#c4c8cb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `rgb(255, 255, 255)`) and `1px solid #c4c8cb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d6efd` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0d6efd` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `null` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `6px` base geometry across inputs and buttons (10px on outer containers).\n- Separate containers via `rgb(255, 255, 255)` surface shifts and `#c4c8cb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `6px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

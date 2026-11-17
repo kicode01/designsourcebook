@@ -215,6 +215,15 @@ rounded:
   card: ".25rem"
   input: ".25rem"
   default: ".25rem"
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   btn:
     backgroundColor: transparent
@@ -295,6 +304,36 @@ components:
     textColor: "#0b0b0c"
     rounded: ".25rem"
     padding: 9px 13px
+  select-default:
+    backgroundColor: "#f7f7f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#fc6d26"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#fc6d26"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f7f7f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f7f7f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Pajamas
@@ -305,7 +344,7 @@ components:
 
 Typography centers cleanly on `GitLab Sans` (36px display down to 16px body), unified by `.25rem` base corner radius and stepped `#fff` -> `#f7f7f5` surface layering.
 
-Maintained by **Gitlab**. Source: published token package, repo https://github.com/gitlab-org/gitlab-ui, package `@gitlab/ui`, frameworks: vue, css. Inventory: **90** colors, **45** typography steps, and **25** documented components (MIT license).
+Maintained by **Gitlab**. Source: published token package, repo https://github.com/gitlab-org/gitlab-ui, package `@gitlab/ui`, frameworks: vue, css. Inventory: **90** colors, **45** typography steps, and **31** documented components (MIT license).
 
 ## Colors
 
@@ -328,7 +367,7 @@ Maintained by **Gitlab**. Source: published token package, repo https://github.c
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `.375rem .75rem`, `.75rem 1.25rem`, `9px 13px`.
+- **Grid & Control Spacing**: Derived from 31 component tokens with documented paddings: `.375rem .75rem`, `.75rem 1.25rem`, `9px 13px`, `8px 12px`, `2px`.
 - **Hierarchy**: Group controls cleanly within `#f7f7f5` cards; separate sibling sections using `#a5a3a3` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -340,17 +379,26 @@ Maintained by **Gitlab**. Source: published token package, repo https://github.c
 
 - **Base Corner Geometry**: `.25rem` (Buttons `.25rem` · Inputs `.25rem` · Cards `.25rem`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `.25rem` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`btn` (button)**: bg `transparent`, ink `#3a383d`, radius `.25rem`, padding `.375rem .75rem`, border `1px solid transparent`.
 - **`card` (card)**: bg `#fff`, radius `.25rem`, border `1px solid #dcdbd9`.
-- **`table` (nav)**: bg `transparent`, ink `#3a383d`.
+- **`table` (table)**: bg `transparent`, ink `#3a383d`.
 - **`btn-info-2` (button)**: bg `#1f73ca`, ink `#fff`, (4.8:1), border `1px solid #1f73ca`.
 - **`btn-dark-3` (button)**: bg `#3a383d`, ink `#fff`, (11.6:1), border `1px solid #3a383d`.
 - **`btn-link-4` (button)**: ink `#007bff`.
 - **`btn-light-5` (button)**: bg `#dcdbd9`, ink `#28272d`, (10.7:1), border `1px solid #dcdbd9`.
-- **`table-info-2` (nav)**: bg `#c0d8f0`.
+- **`table-info-2` (table)**: bg `#c0d8f0`.
+- **`table-dark-3` (table)**: bg `#c8c7c9`, ink `#0b0b0c`, (11.7:1).
+- **`btn-danger-6` (button)**: bg `#c52042`, ink `#fff`, (5.7:1), border `1px solid #c52042`.
+- **`badge-info` (badge)**: bg `#1f73ca`, ink `#fff`, (4.8:1).
+- **`badge-dark-2` (badge)**: bg `#3a383d`, ink `#fff`, (11.6:1).
+- **`alert-info` (alert)**: bg `#d2e3f4`, ink `#133e6d`, (8.3:1), border `1px solid #c0d8f0`.
+- **`alert-dark-2` (alert)**: bg `#d8d7d8`, ink `#211f24`, (11.4:1), border `1px solid #c8c7c9`.
+- **`table-light-4` (table)**: bg `#f5f5f4`.
+- **`card-header-2` (nav)**: bg `#f7f7f5`, padding `.75rem 1.25rem`.
 
 ## Do's and Don'ts
 

@@ -95,6 +95,15 @@ rounded:
   input: 4px
   button: 5px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   input:
     textColor: "#262626"
@@ -206,6 +215,36 @@ components:
     textColor: "#212121"
   tab-view-name:
     textColor: "#605f60"
+  select-default:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#0B42C8"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#0B42C8"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Foyer Design System
@@ -216,7 +255,7 @@ components:
 
 Typography centers cleanly on `DM sans` (72px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.
 
-Maintained by **Foyer**. Source: live stylesheet extraction (https://design.foyer.lu/), frameworks: css. Inventory: **49** colors, **12** typography steps, and **26** documented components (all rights reserved license).
+Maintained by **Foyer**. Source: live stylesheet extraction (https://design.foyer.lu/), frameworks: css. Inventory: **49** colors, **12** typography steps, and **32** documented components (all rights reserved license).
 
 ## Colors
 
@@ -238,7 +277,7 @@ Maintained by **Foyer**. Source: live stylesheet extraction (https://design.foye
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 26 component tokens with documented paddings: `5px`, `2px`, `12px 25px`, `7px 15px`.
+- **Grid & Control Spacing**: Derived from 32 component tokens with documented paddings: `5px`, `2px`, `12px 25px`, `7px 15px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#E1E6EF` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -250,17 +289,26 @@ Maintained by **Foyer**. Source: live stylesheet extraction (https://design.foye
 
 - **Base Corner Geometry**: `4px` (Buttons `5px` · Inputs `4px` · Badges `2px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`input` (input)**: ink `#262626`, radius `4px`, border `1px solid #757575`.
 - **`input-2` (input)**: ink `#6f8291`, radius `4px`, border `1px solid #e2e4e7`.
 - **`input-3` (input)**: ink `#262626`, radius `4px`, border `1px solid #757575`.
-- **`link-text` (nav)**: ink `#3497ff`.
+- **`link-text` (link)**: ink `#3497ff`.
 - **`button` (button)**: bg `#fff`, ink `#000`, (21.0:1), radius `5px`, border `1px solid #c9c8c9`.
-- **`link-2` (nav)**: bg `#fff`, radius `4px`, border `1px solid rgba(0,0,0,.15)`.
+- **`link-2` (link)**: bg `#fff`, radius `4px`, border `1px solid rgba(0,0,0,.15)`.
 - **`input-error-4` (input)**: ink `#ff5252`.
 - **`input-5` (input)**: ink `#262626`, radius `4px`, padding `5px`, border `1px solid #757575`.
+- **`link-3` (link)**: bg `#fff`, radius `4px`, border `1px solid rgba(0,0,0,.15)`.
+- **`button-2` (button)**: bg `#fff`, ink `#000`, (21.0:1), radius `5px`, border `1px solid #c9c8c9`.
+- **`label` (badge)**: bg `#ed4179`, ink `#0b0b0c`, (5.3:1), radius `2px`, padding `2px`.
+- **`nav` (nav)**: bg `#f6f6f6`, border `1px solid #d3d3d3`.
+- **`button-3` (button)**: bg `#ed4179`, ink `#0b0b0c`, (5.3:1), radius `100px`, padding `12px 25px`.
+- **`blue-grey-link-4` (link)**: ink `#6f8291`.
+- **`link-5` (link)**: ink `#6f8291`.
+- **`link-background-6` (link)**: bg `#3497ff`.
 
 ## Do's and Don'ts
 

@@ -129,6 +129,16 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Arco Design Icons
+  package: "@arco-design/web-react"
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://arco.design/react/components/icon"
 components:
   button-primary:
     backgroundColor: "#ff7d00"
@@ -170,6 +180,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#FFF"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff7d00"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff7d00"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#FFF"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#FFF"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#FFF"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#FFF"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#FFF"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # ByteDance Arco Design
@@ -180,7 +230,7 @@ components:
 
 Typography centers cleanly on `NunitoSans-Bold` (56px display down to 14px body), unified by `4px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **ByteDance**. Source: published token package (https://github.com/arco-design/arco-design), repo https://github.com/arco-design/arco-design, package `@arco-design/web-react`, frameworks: react, vue. Inventory: **23** colors, **37** typography steps, and **8** documented components (see repository license).
+Maintained by **ByteDance**. Source: published token package (https://github.com/arco-design/arco-design), repo https://github.com/arco-design/arco-design, package `@arco-design/web-react`, frameworks: react, vue. Inventory: **23** colors, **37** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -202,7 +252,7 @@ Maintained by **ByteDance**. Source: published token package (https://github.com
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#FFF` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -214,6 +264,7 @@ Maintained by **ByteDance**. Source: published token package (https://github.com
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Arco Design Icons (`@arco-design/web-react`) on a `24x24` grid (outline, stroke `2px`, `square` caps).
 
 ## Components
 
@@ -225,6 +276,14 @@ Maintained by **ByteDance**. Source: published token package (https://github.com
 - **`badge-brand` (badge)**: bg `#ff7d00`, ink `#0b0b0c`, (7.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#FFF`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#FFF`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#ff7d00`, ink `#0b0b0c`, (7.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#ff7d00`, ink `#0b0b0c`, (7.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#FFF`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#FFF`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#FFF`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#FFF`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#FFF`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

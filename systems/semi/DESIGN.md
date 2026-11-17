@@ -169,6 +169,16 @@ rounded:
   card: 10px
   badge: 999px
   default: 6px
+icons:
+  library: Semi Icons
+  package: "@douyinfe/semi-icons"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://semi.design/en-US/basic/icon"
 components:
   panel-header:
     backgroundColor: "#fafafa"
@@ -212,6 +222,46 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  select-default:
+    backgroundColor: "rgba(35, 36, 41, 1)"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgba(119, 182, 249, 1)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgba(119, 182, 249, 1)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgba(35, 36, 41, 1)"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgba(35, 36, 41, 1)"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgba(22, 22, 26, 1)"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "rgba(22, 22, 26, 1)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgba(35, 36, 41, 1)"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Semi Design
@@ -222,7 +272,7 @@ components:
 
 Typography centers cleanly on `Inter` (36px display down to 16px body), unified by `6px` base corner radius and stepped `rgba(22, 22, 26, 1)` -> `rgba(35, 36, 41, 1)` surface layering.
 
-Maintained by **Semi**. Source: published token package (https://github.com/DouyinFE/semi-design), repo https://github.com/DouyinFE/semi-design, package `@douyinfe/semi-ui`, frameworks: react, vue, css. Inventory: **57** colors, **47** typography steps, and **8** documented components (see repository license).
+Maintained by **Semi**. Source: published token package (https://github.com/DouyinFE/semi-design), repo https://github.com/DouyinFE/semi-design, package `@douyinfe/semi-ui`, frameworks: react, vue, css. Inventory: **57** colors, **47** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -244,7 +294,7 @@ Maintained by **Semi**. Source: published token package (https://github.com/Douy
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `12px 16px`, `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `12px 16px`, `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `rgba(35, 36, 41, 1)` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -256,6 +306,7 @@ Maintained by **Semi**. Source: published token package (https://github.com/Douy
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Semi Icons (`@douyinfe/semi-icons`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -267,6 +318,14 @@ Maintained by **Semi**. Source: published token package (https://github.com/Douy
 - **`card-surface` (card)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `10px`, padding `18px 20px`.
 - **`badge-brand` (badge)**: bg `rgba(119, 182, 249, 1)`, ink `#0b0b0c`, (9.2:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`select-default` (select)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgba(119, 182, 249, 1)`, ink `#0b0b0c`, (9.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgba(119, 182, 249, 1)`, ink `#0b0b0c`, (9.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgba(22, 22, 26, 1)`, ink `#f7f7f8`, (16.9:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#f7f7f8`, ink `rgba(22, 22, 26, 1)`, (16.9:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgba(35, 36, 41, 1)`, ink `#f7f7f8`, (14.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

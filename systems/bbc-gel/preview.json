@@ -288,8 +288,108 @@
       "textColor": "#0b0b0c",
       "rounded": "8px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#e6e8ea",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ffb32b",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ffb32b",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#e6e8ea",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#e6e8ea",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#e6e8ea",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#e6e8ea",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#e6e8ea",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**BBC GEL** is a light-first design system anchored on `#e6e8ea` canvas surfaces with `#0b0b0c` primary ink (16.0:1 contrast) and `#ffb32b` brand accent.\n\nTypography centers cleanly on `ReithSans` (20px display down to 10px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **BBC**. Source: live stylesheet extraction (https://www.bbc.co.uk/gel), repo https://github.com/bbc/gel, frameworks: react, css. Inventory: **48** colors, **4** typography steps, and **8** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `12px`, `4px`, `9px 13px`, `18px 20px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#e6e8ea` cards; separate sibling sections using `#c8c8c8` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#e6e8ea` -> `#e6e8ea`) and `1px solid #c8c8c8` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ffb32b` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 32,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 20 20",
+        "fill": "none",
+        "body": "<path d=\"M0 3.63393H20V0H0V3.63393ZM0 10.9018H20V7.26787H0V10.9018ZM0 18.5H20V14.8661H0V18.5Z\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 28 28",
+        "fill": "currentColor",
+        "body": "<path d=\"M11,-0.0001 C17.0751322,-0.0001 22,4.92476775 22,10.9999 C22,13.5276632 21.1473793,15.8562862 19.7140404,17.7138664 L28,26 L25,29 L16.518046,20.5178339 C14.8960209,21.4602385 13.0110328,21.9999 11,21.9999 C4.92486775,21.9999 0,17.0750322 0,10.9999 C0,4.92476775 4.92486775,-0.0001 11,-0.0001 Z M11,2.5 C6.30557963,2.5 2.5,6.30557963 2.5,11 C2.5,15.6944204 6.30557963,19.5 11,19.5 C15.6944204,19.5 19.5,15.6944204 19.5,11 C19.5,6.30557963 15.6944204,2.5 11,2.5 Z\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 15 15",
+        "fill": "currentColor",
+        "body": "<path d=\"M6,-5.32907052e-15 C9.3137085,-5.32907052e-15 12,2.6862915 12,6 C12,7.43892143 11.4934776,8.75953821 10.6490096,9.79327337 L15,14.24 L13.2782609,16 L8.72578477,11.3465317 C7.90789326,11.7643456 6.98146665,12 6,12 C2.6862915,12 -1.687539e-14,9.3137085 -1.687539e-14,6 C-1.687539e-14,2.6862915 2.6862915,-5.32907052e-15 6,-5.32907052e-15 Z M6,1.5 C3.51471863,1.5 1.5,3.51471863 1.5,6 C1.5,8.48528137 3.51471863,10.5 6,10.5 C8.48528137,10.5 10.5,8.48528137 10.5,6 C10.5,3.51471863 8.48528137,1.5 6,1.5 Z\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 28 28",
+        "fill": "none",
+        "body": "<path d=\"M7.48651 5.71054L5.79834 7.39871L12.3428 14.0225L5.81992 20.6229L7.46434 22.2673L13.9778 15.6768L20.5123 22.2895H20.5135L22.2017 20.6007L15.6567 13.9781L22.1795 7.37712L20.5351 5.73271L14.0216 12.3232L7.48651 5.71054Z\"/>"
+      }
+    ]
+  },
+  "overview": "**BBC GEL** is a light-first design system anchored on `#e6e8ea` canvas surfaces with `#0b0b0c` primary ink (16.0:1 contrast) and `#ffb32b` brand accent.\n\nTypography centers cleanly on `ReithSans` (20px display down to 10px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **BBC**. Source: live stylesheet extraction (https://www.bbc.co.uk/gel), repo https://github.com/bbc/gel, frameworks: react, css. Inventory: **48** colors, **4** typography steps, and **16** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `12px`, `4px`, `9px 13px`, `18px 20px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#e6e8ea` cards; separate sibling sections using `#c8c8c8` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#e6e8ea` -> `#e6e8ea`) and `1px solid #c8c8c8` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ffb32b` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#e6e8ea` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ffb32b` with `#0b0b0c` text (11.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `ReithSans` headings with `ReithSans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#e6e8ea` surface shifts and `#c8c8c8` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."
 }

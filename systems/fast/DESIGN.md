@@ -162,6 +162,15 @@ rounded:
   input: 0.4rem
   card: 6px
   default: 0.4rem
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   badge:
     textColor: "#fff"
@@ -198,6 +207,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 18px 20px
+  select-default:
+    backgroundColor: "#f1f2f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#3578e5"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#3578e5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f1f2f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f1f2f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f1f2f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Microsoft FAST
@@ -206,9 +255,9 @@ components:
 
 **Microsoft FAST** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3578e5` brand accent.
 
-Typography centers cleanly on `System UI` (60px display down to 16px body), unified by `0.4rem` base corner radius and stepped `#fff` -> `#f1f2f5` surface layering.
+Typography centers cleanly on `System UI` (60px display down to 16px body), unified by `4px` base corner radius and stepped `#fff` -> `#f1f2f5` surface layering.
 
-Maintained by **Microsoft**. Source: live stylesheet extraction (https://fast.design/), repo https://github.com/microsoft/fast, package `@microsoft/fast-element`, frameworks: web-components, css. Inventory: **91** colors, **26** typography steps, and **8** documented components (all rights reserved license).
+Maintained by **Microsoft**. Source: live stylesheet extraction (https://fast.design/), repo https://github.com/microsoft/fast, package `@microsoft/fast-element`, frameworks: web-components, css. Inventory: **91** colors, **26** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -231,7 +280,7 @@ Maintained by **Microsoft**. Source: live stylesheet extraction (https://fast.de
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `8px 12px`, `2px`.
 - **Hierarchy**: Group controls cleanly within `#f1f2f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -241,19 +290,28 @@ Maintained by **Microsoft**. Source: live stylesheet extraction (https://fast.de
 
 ## Shapes
 
-- **Base Corner Geometry**: `0.4rem` (Inputs `0.4rem` · Cards `6px` · Badges `0.4rem`).
+- **Base Corner Geometry**: `4px` (Inputs `0.4rem` · Cards `6px` · Badges `0.4rem`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `6px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`badge` (badge)**: ink `#fff`, radius `0.4rem`, border `1px solid inherit`.
 - **`nav` (nav)**: ink `#3578e5`.
 - **`nav-2` (nav)**: ink `#525860`.
-- **`section-showcase-item-link` (nav)**: ink `#fff`, radius `3px`.
+- **`section-showcase-item-link` (link)**: ink `#fff`, radius `3px`.
 - **`button-link` (button)**: ink `#3578e5`.
 - **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `0.4rem`, padding `10px 18px`.
 - **`input-default` (input)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `0.4rem`, padding `9px 13px`.
 - **`card-surface` (card)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `18px 20px`.
+- **`select-default` (select)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#3578e5`, ink `#0b0b0c`, (4.7:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#3578e5`, ink `#0b0b0c`, (4.7:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f1f2f5`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -261,12 +319,12 @@ Maintained by **Microsoft**. Source: live stylesheet extraction (https://fast.de
 - Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
 - Use `#3578e5` with `#f7f7f8` text (3.9:1) for primary CTAs, active tabs, and focus outlines.
 - Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.
-- Apply `0.4rem` base geometry across inputs and buttons (6px on outer containers).
+- Apply `4px` base geometry across inputs and buttons (6px on outer containers).
 - Separate containers via `#f1f2f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.
 
 ### Don't
 - Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
-- Do not mix conflicting corner radii that clash with the system's `0.4rem` baseline.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
 - Do not truncate or drop border contrast on `input-default` fields and secondary buttons.

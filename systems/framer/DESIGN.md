@@ -128,6 +128,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#a6a6a6"
@@ -169,6 +178,46 @@ components:
     textColor: "#ffffff"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#a6a6a6"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#a6a6a6"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#ffffff"
+    textColor: "#000000"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#000000"
+    textColor: "#ffffff"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Framer

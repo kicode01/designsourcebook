@@ -139,6 +139,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Bootstrap Icons
+  package: bootstrap-icons
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://shoelace.style/components/icon"
 components:
   button-primary:
     backgroundColor: "hsl(217.8 95.8% 57.4%)"
@@ -180,6 +190,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "hsl(0 0% 95%)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "hsl(217.8 95.8% 57.4%)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "hsl(217.8 95.8% 57.4%)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "hsl(0 0% 95%)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "hsl(0 0% 95%)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "hsl(0, 0%, 100%)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "hsl(0, 0%, 100%)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "hsl(0 0% 95%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Shoelace
@@ -190,7 +240,7 @@ components:
 
 Typography centers cleanly on `System UI` (72px display down to 16px body), unified by `6px` base corner radius and stepped `hsl(0, 0%, 100%)` -> `hsl(0 0% 95%)` surface layering.
 
-Source: published token package (https://github.com/shoelace-style/shoelace), repo https://github.com/shoelace-style/shoelace, package `@shoelace-style/shoelace`, frameworks: web-components, react. Inventory: **91** colors, **14** typography steps, and **8** documented components (see repository license).
+Source: published token package (https://github.com/shoelace-style/shoelace), repo https://github.com/shoelace-style/shoelace, package `@shoelace-style/shoelace`, frameworks: web-components, react. Inventory: **91** colors, **14** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -213,7 +263,7 @@ Source: published token package (https://github.com/shoelace-style/shoelace), re
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `hsl(0 0% 95%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -225,6 +275,7 @@ Source: published token package (https://github.com/shoelace-style/shoelace), re
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Bootstrap Icons (`bootstrap-icons`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -236,6 +287,14 @@ Source: published token package (https://github.com/shoelace-style/shoelace), re
 - **`badge-brand` (badge)**: bg `hsl(217.8 95.8% 57.4%)`, ink `#0b0b0c`, (4.8:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `hsl(141.6 72.4% 55.2%)`, ink `#0b0b0c`, (11.2:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `hsl(217.8 95.8% 57.4%)`, ink `#0b0b0c`, (4.8:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `hsl(217.8 95.8% 57.4%)`, ink `#0b0b0c`, (4.8:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `hsl(0, 0%, 100%)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `hsl(0, 0%, 100%)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `hsl(0 0% 95%)`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

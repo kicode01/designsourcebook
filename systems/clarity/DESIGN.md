@@ -174,6 +174,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Clarity Icons
+  package: "@cds/core"
+  style: outline
+  grid: 36
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://clarity.design/documentation/icons"
 components:
   button-primary:
     backgroundColor: "hsl(198deg 100% 48%)"
@@ -215,6 +225,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "hsl(41deg 100% 96%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "hsl(198deg 100% 48%)"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "hsl(198deg 100% 48%)"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "hsl(41deg 100% 96%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "hsl(41deg 100% 96%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "hsl(282deg 3% 97%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "hsl(282deg 3% 97%)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "hsl(41deg 100% 96%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Clarity Design System
@@ -225,7 +275,7 @@ components:
 
 Typography centers cleanly on `Metropolis` (32px display down to 16px body), unified by `8px` base corner radius and stepped `hsl(282deg 3% 97%)` -> `hsl(41deg 100% 96%)` surface layering.
 
-Maintained by **VMware**. Source: published token package (https://clarity.design), repo https://github.com/vmware-clarity/ng-clarity, package `@clr/ui`, frameworks: angular, web-components, css. Inventory: **91** colors, **36** typography steps, and **8** documented components (MIT license).
+Maintained by **VMware**. Source: published token package (https://clarity.design), repo https://github.com/vmware-clarity/ng-clarity, package `@clr/ui`, frameworks: angular, web-components, css. Inventory: **91** colors, **36** typography steps, and **16** documented components (MIT license).
 
 ## Colors
 
@@ -248,7 +298,7 @@ Maintained by **VMware**. Source: published token package (https://clarity.desig
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `hsl(41deg 100% 96%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -260,6 +310,7 @@ Maintained by **VMware**. Source: published token package (https://clarity.desig
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Clarity Icons (`@cds/core`) on a `36x36` grid (outline, stroke `2px`, `round` caps).
 
 ## Components
 
@@ -271,6 +322,14 @@ Maintained by **VMware**. Source: published token package (https://clarity.desig
 - **`badge-brand` (badge)**: bg `hsl(198deg 100% 48%)`, ink `#000000`, (8.1:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `hsl(93deg 80% 37%)`, ink `#000000`, (7.2:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `hsl(198deg 100% 48%)`, ink `#0b0b0c`, (7.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `hsl(198deg 100% 48%)`, ink `#0b0b0c`, (7.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `hsl(282deg 3% 97%)`, ink `#0b0b0c`, (18.4:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `hsl(282deg 3% 97%)`, (18.4:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `hsl(41deg 100% 96%)`, ink `#0b0b0c`, (18.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

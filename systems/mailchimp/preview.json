@@ -322,7 +322,7 @@
     },
     {
       "key": "select",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "rgb(183, 183, 183)",
       "textColor": "#0b0b0c",
       "rounded": "4px"
@@ -347,14 +347,14 @@
     },
     {
       "key": "select-mini-2",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "rgb(183, 183, 183)",
       "textColor": "#0b0b0c",
       "rounded": "4px"
     },
     {
       "key": "select-small-3",
-      "kind": "input",
+      "kind": "select",
       "backgroundColor": "rgb(183, 183, 183)",
       "textColor": "#0b0b0c",
       "rounded": "4px"
@@ -366,8 +366,74 @@
       "textColor": "#0b0b0c",
       "rounded": "4px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#33c3f0",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#33c3f0",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eff3f7",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eff3f7",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eff3f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**Mailchimp Content Styleguide** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#33c3f0` brand accent.\n\nDisplay headlines pair `Helvetica Neue` with `Verdana` body copy (40px display down to 16px body), unified by `4px` base corner radius and stepped `#ffffff` -> `#eff3f7` surface layering.\n\nMaintained by **Mailchimp**. Source: live stylesheet extraction (https://styleguide.mailchimp.com/), frameworks: css. Inventory: **65** colors, **3** typography steps, and **9** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `0.5625em 1.5em`, `18px`, `0.5em 1em`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#eff3f7` cards; separate sibling sections using `#bbbbbb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#eff3f7`) and `1px solid #bbbbbb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#33c3f0` for keyboard focus and active selection states.",
-  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#33c3f0` with `#0b0b0c` text (9.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Helvetica Neue` headings with `Verdana` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#eff3f7` surface shifts and `#bbbbbb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `select` fields and secondary buttons."
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Mailchimp Content Styleguide** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#33c3f0` brand accent.\n\nDisplay headlines pair `Helvetica Neue` with `Verdana` body copy (40px display down to 16px body), unified by `4px` base corner radius and stepped `#ffffff` -> `#eff3f7` surface layering.\n\nMaintained by **Mailchimp**. Source: live stylesheet extraction (https://styleguide.mailchimp.com/), frameworks: css. Inventory: **65** colors, **3** typography steps, and **16** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0.5625em 1.5em`, `18px`, `0.5em 1em`, `10px 16px`, `2px`.\n- **Hierarchy**: Group controls cleanly within `#eff3f7` cards; separate sibling sections using `#bbbbbb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#eff3f7`) and `1px solid #bbbbbb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#33c3f0` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#33c3f0` with `#0b0b0c` text (9.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Helvetica Neue` headings with `Verdana` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#eff3f7` surface shifts and `#bbbbbb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

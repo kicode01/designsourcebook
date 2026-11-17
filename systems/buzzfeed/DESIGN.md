@@ -86,6 +86,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#f7ad19"
@@ -127,6 +136,46 @@ components:
     textColor: "#222"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f4f4f4"
+    textColor: "#222"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#f7ad19"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#f7ad19"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f4f4f4"
+    textColor: "#222"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f4f4f4"
+    textColor: "#222"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#222"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#222"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f4f4f4"
+    textColor: "#222"
+    rounded: 8px
+    padding: 8px
 ---
 
 # BuzzFeed Solid
@@ -137,7 +186,7 @@ components:
 
 Typography centers cleanly on `Proxima Nova` (36px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f4f4f4` surface layering.
 
-Maintained by **BuzzFeed**. Source: published token package (https://github.com/buzzfeed/solid), repo https://github.com/buzzfeed/solid, frameworks: css. Inventory: **48** colors, **6** typography steps, and **8** documented components (see repository license).
+Maintained by **BuzzFeed**. Source: published token package (https://github.com/buzzfeed/solid), repo https://github.com/buzzfeed/solid, frameworks: css. Inventory: **48** colors, **6** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -159,7 +208,7 @@ Maintained by **BuzzFeed**. Source: published token package (https://github.com/
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f4f4f4` cards; separate sibling sections using `color-mix(in srgb, #222 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -171,6 +220,7 @@ Maintained by **BuzzFeed**. Source: published token package (https://github.com/
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -182,6 +232,14 @@ Maintained by **BuzzFeed**. Source: published token package (https://github.com/
 - **`badge-brand` (badge)**: bg `#f7ad19`, ink `#222`, (8.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f4f4f4`, ink `#222`, (14.5:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f4f4f4`, ink `#222`, (14.5:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#f7ad19`, ink `#0b0b0c`, (10.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#f7ad19`, ink `#0b0b0c`, (10.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f4f4f4`, ink `#222`, (14.5:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f4f4f4`, ink `#222`, (14.5:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#222`, (15.9:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#222`, ink `#fff`, (15.9:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f4f4f4`, ink `#222`, (14.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

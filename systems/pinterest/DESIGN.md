@@ -64,6 +64,15 @@ rounded:
   badge: 999px
   nav: 24px
   default: 24px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button-primary-red:
     backgroundColor: "#e60023"
@@ -105,6 +114,46 @@ components:
     textColor: "#211922"
     rounded: 24px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
+    rounded: 12px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#e60023"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#e60023"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
+    rounded: 12px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
+    rounded: 12px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#211922"
+    rounded: 12px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#211922"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f6f6f3"
+    textColor: "#211922"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Pinterest

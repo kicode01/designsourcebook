@@ -82,6 +82,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Lucide
+  package: lucide-react
+  style: outline
+  grid: 24
+  strokeWidth: 2
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://lucide.dev"
 components:
   button-primary-pill:
     backgroundColor: "#0f0f0f"
@@ -122,6 +132,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#171717"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#3ecf8e"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#3ecf8e"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#171717"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#171717"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#0f0f0f"
+    textColor: "#f7f7f8"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#0f0f0f"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#171717"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Supabase

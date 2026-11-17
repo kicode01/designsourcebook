@@ -70,6 +70,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#1F5493"
@@ -111,6 +120,46 @@ components:
     textColor: "#000000"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#1F5493"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#1F5493"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#F8F8F8"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#000000"
+    textColor: "#F8F8F8"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Spotify Backstage
@@ -121,7 +170,7 @@ components:
 
 Typography centers cleanly on `System UI` (14px display down to 14px body), unified by `8px` base corner radius and stepped `#F8F8F8` -> `#FFFFFF` surface layering.
 
-Maintained by **Spotify**. Source: published token package (https://backstage.io), repo https://github.com/backstage/backstage, package `@backstage/theme`, frameworks: react. Inventory: **57** colors, **1** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Spotify**. Source: published token package (https://backstage.io), repo https://github.com/backstage/backstage, package `@backstage/theme`, frameworks: react. Inventory: **57** colors, **1** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -142,7 +191,7 @@ Maintained by **Spotify**. Source: published token package (https://backstage.io
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `#E6E6E6` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -154,6 +203,7 @@ Maintained by **Spotify**. Source: published token package (https://backstage.io
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -165,6 +215,14 @@ Maintained by **Spotify**. Source: published token package (https://backstage.io
 - **`badge-brand` (badge)**: bg `#1F5493`, ink `#ffffff`, (7.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#1F5493`, ink `#f7f7f8`, (7.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#1F5493`, ink `#f7f7f8`, (7.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#F8F8F8`, ink `#000000`, (19.8:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#000000`, ink `#F8F8F8`, (19.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

@@ -222,6 +222,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#ff732c"
@@ -263,6 +272,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#fbf5f2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff732c"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff732c"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#fbf5f2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#fbf5f2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#fbf5f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # French Government Design System
@@ -273,7 +322,7 @@ components:
 
 Typography centers cleanly on `Marianne` (72px display down to 16px body), unified by `4px` base corner radius and stepped `#fff` -> `#fbf5f2` surface layering.
 
-Maintained by **French Government**. Source: published token package (https://github.com/GouvernementFR/dsfr), repo https://github.com/GouvernementFR/dsfr, package `@gouvfr/dsfr`, frameworks: css, react, vue. Inventory: **91** colors, **31** typography steps, and **8** documented components (see repository license).
+Maintained by **French Government**. Source: published token package (https://github.com/GouvernementFR/dsfr), repo https://github.com/GouvernementFR/dsfr, package `@gouvfr/dsfr`, frameworks: css, react, vue. Inventory: **91** colors, **31** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -295,7 +344,7 @@ Maintained by **French Government**. Source: published token package (https://gi
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#fbf5f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -307,6 +356,7 @@ Maintained by **French Government**. Source: published token package (https://gi
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -318,6 +368,14 @@ Maintained by **French Government**. Source: published token package (https://gi
 - **`badge-brand` (badge)**: bg `#ff732c`, ink `#0b0b0c`, (7.3:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#142117`, ink `#ffffff`, (16.7:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#ff732c`, ink `#0b0b0c`, (7.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#ff732c`, ink `#0b0b0c`, (7.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#fbf5f2`, ink `#0b0b0c`, (18.2:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

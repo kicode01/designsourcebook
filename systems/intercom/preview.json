@@ -263,8 +263,108 @@
       "textColor": "#0b0b0c",
       "rounded": "4px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#faf9f6",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#111111",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#111111",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#faf9f6",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#faf9f6",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#faf9f6",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 16,
+    "strokeWidth": 1.8,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M6 6l12 12M6 18L18 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 24 24",
+        "fill": "none",
+        "body": "<path d=\"M3 6h18M3 12h18M3 18h18\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 18 18",
+        "fill": "none",
+        "body": "<path d=\"M11.6402 7.34988L9.07809 10.5525C9.03805 10.6025 8.96195 10.6025 8.92191 10.5525L6.35982 7.34988\" stroke=\"currentColor\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 18 18",
+        "fill": "none",
+        "body": "<path d=\"M11.6402 7.34988L9.07809 10.5525C9.03805 10.6025 8.96195 10.6025 8.92191 10.5525L6.35982 7.34988\" stroke=\"currentColor\"/>"
+      }
+    ]
+  },
   "overview": "Intercom's website is a warm, confident customer service platform that communicates \"AI-first helpdesk\" through a clean, editorial design language. The page operates on a warm off-white canvas (`#faf9f6`) with off-black (`#111111`) text, creating an intimate, magazine-like reading experience. The signature Fin Orange (`#ff5600`) — named after Intercom's AI agent — serves as the singular vibrant accent against the warm neutral palette.\n\nThe typography uses Saans — a custom geometric sans-serif with aggressive negative letter-spacing (-2.4px at 80px, -0.48px at 24px) and a consistent 1.00 line-height across all heading sizes. This creates ultra-compressed, billboard-like headlines that feel engineered and precise. Serrif provides the serif companion for editorial moments, and SaansMono handles code and uppercase technical labels. MediumLL and LLMedium appear for specific UI contexts, creating a rich five-font ecosystem.\n\nWhat distinguishes Intercom is its remarkably sharp geometry — 4px border-radius on buttons creates near-rectangular interactive elements that feel industrial and precise, contrasting with the warm surface colors. Button hover states use `scale(1.1)` expansion, creating a physical \"growing\" interaction. The border system uses warm oat tones (`#dedbd6`) and oklab-based opacity values for sophisticated color management.\n\n**Key Characteristics:**\n- Warm off-white canvas (`#faf9f6`) with oat-toned borders (`#dedbd6`)\n- Saans font with extreme negative tracking (-2.4px at 80px) and 1.00 line-height\n- Fin Orange (`#ff5600`) as singular brand accent\n- Sharp 4px border-radius — near-rectangular buttons and elements\n- Scale(1.1) hover with scale(0.85) active — physical button interaction\n- SaansMono uppercase labels with wide tracking (0.6px–1.2px)\n- Rich multi-color report palette (blue, green, red, pink, lime, orange)\n- oklab color values for sophisticated opacity management\n\n### Layout & Spacing\n### Spacing: 8px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 60px, 64px, 80px, 96px\n### Border Radius: 4px (buttons), 6px (nav items), 8px (cards, containers)",
   "dos": "### Do\n- Use Saans with 1.00 line-height and negative tracking on all headings\n- Apply 4px radius on buttons — sharp geometry is the identity\n- Use Fin Orange (#ff5600) for AI/brand accent only\n- Apply scale(1.1) hover on buttons\n- Use warm neutrals (#faf9f6, #dedbd6)\n\n### Don't\n- Don't round buttons beyond 4px\n- Don't use Fin Orange decoratively\n- Don't use cool gray borders — always warm oat tones\n- Don't skip the negative tracking on headings"
 }

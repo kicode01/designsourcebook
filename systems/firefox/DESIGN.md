@@ -195,6 +195,15 @@ rounded:
   button: 0.375rem
   badge: 999px
   default: 0.375rem
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   card:
     textColor: "#212529"
@@ -249,6 +258,36 @@ components:
     textColor: "#ffffff"
     rounded: 999px
     padding: 4px 10px
+  switch-control:
+    backgroundColor: "#764edd"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#764edd"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f2f4f5"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f2f4f5"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Firefox Acorn Design System
@@ -259,7 +298,7 @@ components:
 
 Typography centers cleanly on `Atkinson Hyperlegible` (80px display down to 16px body), unified by `0.375rem` base corner radius and stepped `#fff` -> `#f2f4f5` surface layering.
 
-Maintained by **Firefox**. Source: live stylesheet extraction (https://acorn.firefox.com/), repo https://github.com/mozilla/acorn-icons, frameworks: web-components, css. Inventory: **91** colors, **45** typography steps, and **15** documented components (all rights reserved license).
+Maintained by **Firefox**. Source: live stylesheet extraction (https://acorn.firefox.com/), repo https://github.com/mozilla/acorn-icons, frameworks: web-components, css. Inventory: **91** colors, **45** typography steps, and **21** documented components (all rights reserved license).
 
 ## Colors
 
@@ -282,7 +321,7 @@ Maintained by **Firefox**. Source: live stylesheet extraction (https://acorn.fir
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `0.375rem 2.25rem 0.375rem 0.75rem`, `0.375rem 0.75rem`, `8px`, `10px 18px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0.375rem 2.25rem 0.375rem 0.75rem`, `0.375rem 0.75rem`, `8px`, `10px 18px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `#f2f4f5` cards; separate sibling sections using `#e9ecef` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -294,17 +333,26 @@ Maintained by **Firefox**. Source: live stylesheet extraction (https://acorn.fir
 
 - **Base Corner Geometry**: `0.375rem` (Inputs `0.375rem` · Badges `999px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `0.375rem` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`card` (card)**: ink `#212529`, border `solid`.
-- **`link-info` (nav)**: ink `RGBA(13,202,240,1)`.
-- **`link-dark-2` (nav)**: ink `RGBA(33,37,41,1)`.
-- **`link-light-3` (nav)**: ink `RGBA(248,249,250,1)`.
-- **`select` (input)**: bg `#fff`, ink `#212529`, (15.4:1), radius `0.375rem`, padding `0.375rem 2.25rem 0.375rem 0.75rem`, border `1px solid #dee2e6`.
-- **`link-danger-4` (nav)**: ink `RGBA(220,53,69,1)`.
-- **`link-primary-5` (nav)**: ink `RGBA(13,110,253,1)`.
-- **`link-success-6` (nav)**: ink `RGBA(25,135,84,1)`.
+- **`link-info` (link)**: ink `RGBA(13,202,240,1)`.
+- **`link-dark-2` (link)**: ink `RGBA(33,37,41,1)`.
+- **`link-light-3` (link)**: ink `RGBA(248,249,250,1)`.
+- **`select` (select)**: bg `#fff`, ink `#212529`, (15.4:1), radius `0.375rem`, padding `0.375rem 2.25rem 0.375rem 0.75rem`, border `1px solid #dee2e6`.
+- **`link-danger-4` (link)**: ink `RGBA(220,53,69,1)`.
+- **`link-primary-5` (link)**: ink `RGBA(13,110,253,1)`.
+- **`link-success-6` (link)**: ink `RGBA(25,135,84,1)`.
+- **`input-group-text-2` (input)**: bg `#f8f9fa`, ink `#212529`, (14.6:1), radius `0.375rem`, padding `0.375rem 0.75rem`, border `1px solid #dee2e6`.
+- **`btn-secondary` (button)**: bg `#6c757d`, border `1px solid #6c757d`.
+- **`banner-preview` (alert)**: bg `#d0e2ff`, ink `#0043ce`, (5.9:1), padding `8px`.
+- **`input-search-container-3` (input)**: bg `hsla(0,0%,100%,.96)`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `0.375rem`, padding `10px 18px`.
+- **`badge-brand` (badge)**: bg `#764edd`, ink `#ffffff`, (5.4:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#198754`, ink `#ffffff`, (4.5:1), radius `999px`, padding `4px 10px`.
+- **`switch-control` (switch)**: bg `#764edd`, ink `#f7f7f8`, (5.0:1), radius `999px`, padding `2px`.
 
 ## Do's and Don'ts
 
@@ -320,4 +368,4 @@ Maintained by **Firefox**. Source: live stylesheet extraction (https://acorn.fir
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not mix conflicting corner radii that clash with the system's `0.375rem` baseline.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input-group-text-2` fields and secondary buttons.

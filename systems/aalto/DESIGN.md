@@ -123,6 +123,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button:
     textColor: "#141414"
@@ -164,6 +173,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#ff8d4f"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#ff8d4f"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fafafa"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fafafa"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f2f2f2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Aalto University
@@ -174,7 +223,7 @@ components:
 
 Typography centers cleanly on `inter` (64px display down to 20px body), unified by `8px` base corner radius and stepped `#fafafa` -> `#f2f2f2` surface layering.
 
-Source: live stylesheet extraction (https://brand.aalto.fi/), frameworks: css. Inventory: **91** colors, **11** typography steps, and **11** documented components (all rights reserved license).
+Source: live stylesheet extraction (https://brand.aalto.fi/), frameworks: css. Inventory: **91** colors, **11** typography steps, and **19** documented components (all rights reserved license).
 
 ## Colors
 
@@ -197,7 +246,7 @@ Source: live stylesheet extraction (https://brand.aalto.fi/), frameworks: css. I
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0px 11.25px 0px 0px`, `15px`, `0px 0px 32px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 19 component tokens with documented paddings: `0px 11.25px 0px 0px`, `15px`, `0px 0px 32px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -209,6 +258,7 @@ Source: live stylesheet extraction (https://brand.aalto.fi/), frameworks: css. I
 
 - **Base Corner Geometry**: `8px` (Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -220,6 +270,14 @@ Source: live stylesheet extraction (https://brand.aalto.fi/), frameworks: css. I
 - **`card` (card)**: bg `#ffffff`, ink `#151515`, (18.3:1), padding `0px 0px 32px`.
 - **`card-2` (card)**: bg `#f2f2f2`, ink `#505050`, (7.2:1).
 - **`card-3` (card)**: ink `#505050`.
+- **`badge-brand` (badge)**: bg `#ff8d4f`, ink `#0b0b0c`, (8.6:1), radius `999px`, padding `4px 10px`.
+- **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#ff8d4f`, ink `#0b0b0c`, (8.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#ff8d4f`, ink `#0b0b0c`, (8.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f2f2f2`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `12px 14px`.
 
 ## Do's and Don'ts
 

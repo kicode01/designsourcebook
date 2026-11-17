@@ -235,6 +235,16 @@ rounded:
   input: "0"
   button: "0"
   default: "0"
+icons:
+  library: Material Icons
+  package: "@mui/icons-material"
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
+  url: "https://fonts.google.com/icons"
 components:
   card:
     textColor: "#171d21"
@@ -288,6 +298,36 @@ components:
     textColor: "#0b0b0c"
     rounded: "0"
     padding: 10px 18px
+  select-default:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#3c8dd6"
+    textColor: "#0b0b0c"
+    rounded: 2px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#3c8dd6"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 2px
+  alert-info:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 12px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 0px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f5f5"
+    textColor: "#0b0b0c"
+    rounded: 0px
+    padding: 8px
 ---
 
 # ENGIE Fluid Design System
@@ -298,7 +338,7 @@ components:
 
 Display headlines pair `Lato` with `System Mono` body copy (88px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.
 
-Maintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.design), repo https://github.com/engie-group/fluid-design-system, package `@engie-group/fluid-design-tokens`, frameworks: react, angular, web-components, css. Inventory: **91** colors, **64** typography steps, and **16** documented components (all rights reserved license).
+Maintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.design), repo https://github.com/engie-group/fluid-design-system, package `@engie-group/fluid-design-tokens`, frameworks: react, angular, web-components, css. Inventory: **91** colors, **64** typography steps, and **22** documented components (all rights reserved license).
 
 ## Colors
 
@@ -321,7 +361,7 @@ Maintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.d
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0.5rem 1.5rem`, `0.25rem 0.5rem`, `1.5rem`, `0.25rem 0.75rem`, `10px 18px`.
+- **Grid & Control Spacing**: Derived from 22 component tokens with documented paddings: `0.5rem 1.5rem`, `0.25rem 0.5rem`, `1.5rem`, `0.25rem 0.75rem`, `10px 18px`.
 - **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#ccd4da` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -331,19 +371,28 @@ Maintained by **ENGIE**. Source: live stylesheet extraction (https://www.engie.d
 
 ## Shapes
 
-- **Base Corner Geometry**: `0` (Inputs `0` · Cards `0` · Badges `50%`).
+- **Base Corner Geometry**: `0px` (Inputs `0` · Cards `0` · Badges `50%`).
 - **Strict Sharp Edges**: Maintain `0px` architectural corners across buttons, inputs, and cards.
+- **Iconography & SVGs**: Material Icons (`@mui/icons-material`) on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
 - **`card` (card)**: ink `#171d21`, radius `0`, border `solid  #ccd4da`.
-- **`tab` (nav)**: bg `transparent`, ink `#171d21`, padding `0.5rem 1.5rem`.
-- **`link` (nav)**: ink `#007bc5`.
+- **`tab` (tabs)**: bg `transparent`, ink `#171d21`, padding `0.5rem 1.5rem`.
+- **`link` (link)**: ink `#007bc5`.
 - **`nj-footer-card-2` (card)**: bg `#f6f8f9`.
 - **`card-3` (card)**: bg `#007bc5`, ink `#fff`, (4.5:1).
-- **`tab-2` (nav)**: ink `#171d21`.
+- **`tab-2` (tabs)**: ink `#171d21`.
 - **`btn-sidebar` (button)**: bg `#e01b78`.
 - **`nj-decorative-badge` (badge)**: bg `#f6f8f9`, radius `50%`.
+- **`nj-chat-input-suggestion` (input)**: ink `#007bc5`, radius `0`, padding `0.25rem 0.5rem`, border `1px solid #3c8dd6`.
+- **`njd-elevation-card-4` (card)**: bg `#fff`, padding `1.5rem`.
+- **`njd-design-tokens-card-5` (card)**: bg `#f6f8f9`, ink `#334551`, (9.3:1), radius `1rem`, padding `0.25rem 0.75rem`.
+- **`njd-design-tokens-card-6` (card)**: bg `#60798b`.
+- **`njd-spacing-table` (table)**: bg `#ffe9f3`.
+- **`njd-design-tokens-table-2` (table)**: bg `#fff`.
+- **`njd-design-tokens-table-3` (table)**: bg `#fff`.
+- **`button-secondary` (button)**: bg `transparent`, ink `#0b0b0c`, radius `0`, padding `10px 18px`.
 
 ## Do's and Don'ts
 

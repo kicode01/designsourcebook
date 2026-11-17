@@ -80,6 +80,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Phosphor Icons
+  package: "@phosphor-icons/react"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://phosphoricons.com"
 components:
   button-primary:
     backgroundColor: "#242424"
@@ -121,6 +131,46 @@ components:
     textColor: "#000000"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#F6F8FB"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#242424"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#242424"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#F6F8FB"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#F6F8FB"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#FFFFFF"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#000000"
+    textColor: "#FFFFFF"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#F6F8FB"
+    textColor: "#000000"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Bento DS
@@ -131,7 +181,7 @@ components:
 
 Typography centers cleanly on `DM Sans` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#F6F8FB` surface layering.
 
-Maintained by **Bento**. Source: published token package (https://github.com/buildo/bento-design-system), repo https://github.com/buildo/bento-design-system, package `@buildo/bento-design-system`, frameworks: react. Inventory: **67** colors, **1** typography steps, and **8** documented components (see repository license).
+Maintained by **Bento**. Source: published token package (https://github.com/buildo/bento-design-system), repo https://github.com/buildo/bento-design-system, package `@buildo/bento-design-system`, frameworks: react. Inventory: **67** colors, **1** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -152,7 +202,7 @@ Maintained by **Bento**. Source: published token package (https://github.com/bui
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#F6F8FB` cards; separate sibling sections using `color-mix(in srgb, #000000 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -164,6 +214,7 @@ Maintained by **Bento**. Source: published token package (https://github.com/bui
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Phosphor Icons (`@phosphor-icons/react`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -175,6 +226,14 @@ Maintained by **Bento**. Source: published token package (https://github.com/bui
 - **`badge-brand` (badge)**: bg `#242424`, ink `#ffffff`, (15.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#17BF33`, ink `#000000`, (8.5:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#242424`, ink `#f7f7f8`, (14.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#242424`, ink `#f7f7f8`, (14.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#FFFFFF`, ink `#000000`, (21.0:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#000000`, ink `#FFFFFF`, (21.0:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#F6F8FB`, ink `#000000`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

@@ -79,6 +79,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: bevel
+  source: observed
 components:
   button-primary:
     backgroundColor: "#146ef5"
@@ -120,6 +129,46 @@ components:
     textColor: "#f7f7f8"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#222222"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#146ef5"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#146ef5"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#222222"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#222222"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#080808"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#f7f7f8"
+    textColor: "#080808"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#222222"
+    textColor: "#f7f7f8"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Design System: Webflow

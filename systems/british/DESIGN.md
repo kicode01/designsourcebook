@@ -125,6 +125,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: solid
+  grid: 24
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: observed
 components:
   button:
     backgroundColor: "#ffffff"
@@ -163,6 +172,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "hsl(224, 20%, 94%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "hsl(224, 100%, 60%)"
+    textColor: "#000000"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "hsl(224, 100%, 60%)"
+    textColor: "#000000"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "hsl(224, 20%, 94%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "hsl(224, 20%, 94%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "hsl(0, 0%, 100%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "hsl(0, 0%, 100%)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "hsl(224, 20%, 94%)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # British Gas Nucleus
@@ -173,7 +222,7 @@ components:
 
 Display headlines pair `Roboto` with `menlo` body copy (36px display down to 17px body), unified by `8px` base corner radius and subtle shadow elevation.
 
-Maintained by **British Gas**. Source: live stylesheet extraction (https://britishgas.design/), frameworks: css. Inventory: **91** colors, **5** typography steps, and **9** documented components (all rights reserved license).
+Maintained by **British Gas**. Source: live stylesheet extraction (https://britishgas.design/), frameworks: css. Inventory: **91** colors, **5** typography steps, and **17** documented components (all rights reserved license).
 
 ## Colors
 
@@ -196,7 +245,7 @@ Maintained by **British Gas**. Source: live stylesheet extraction (https://briti
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `0px 16px 0px 12px`, `10px 24px 10px 18px`, `0px 56px 0px 43.2px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 17 component tokens with documented paddings: `0px 16px 0px 12px`, `10px 24px 10px 18px`, `0px 56px 0px 43.2px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `hsl(224, 20%, 94%)` cards; separate sibling sections using `#eeeeee` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -208,6 +257,7 @@ Maintained by **British Gas**. Source: live stylesheet extraction (https://briti
 
 - **Base Corner Geometry**: `8px` (Buttons `100px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `24x24` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -219,6 +269,14 @@ Maintained by **British Gas**. Source: live stylesheet extraction (https://briti
 - **`card-2` (card)**: bg `#f3f5f7`, ink `#0f2067`, (13.5:1), radius `8px`.
 - **`badge-brand` (badge)**: bg `hsl(224, 100%, 60%)`, ink `#ffffff`, (4.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
+- **`nav-bar` (nav)**: bg `hsl(224, 20%, 94%)`, ink `#0b0b0c`, (17.0:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `hsl(224, 20%, 94%)`, ink `#0b0b0c`, (17.0:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `hsl(224, 100%, 60%)`, ink `#0b0b0c`, (4.3:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `hsl(224, 100%, 60%)`, ink `#0b0b0c`, (4.3:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `hsl(224, 20%, 94%)`, ink `#0b0b0c`, (17.0:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `hsl(224, 20%, 94%)`, ink `#0b0b0c`, (17.0:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `hsl(0, 0%, 100%)`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `hsl(0, 0%, 100%)`, (19.7:1), radius `6px`, padding `6px 10px`.
 
 ## Do's and Don'ts
 

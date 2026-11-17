@@ -178,8 +178,82 @@
       "textColor": "#0b0b0c",
       "rounded": "4px",
       "padding": "10px 16px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ecf2fc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff8300",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff8300",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ecf2fc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ecf2fc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f6f9fc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f6f9fc",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ecf2fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
-  "overview": "**JB Design System** is a light-first design system anchored on `#f6f9fc` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `#ff8300` brand accent.\n\nTypography centers cleanly on `dana` (32px display down to 16px body), unified by `4px` base corner radius and stepped `#f6f9fc` -> `#ecf2fc` surface layering.\n\nMaintained by **JB**. Source: live stylesheet extraction (https://javadbat.github.io/design-system), repo https://github.com/javadbat/design-system, frameworks: react, css. Inventory: **20** colors, **5** typography steps, and **7** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `0px 9px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#ecf2fc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6f9fc` -> `#ecf2fc`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8300` for keyboard focus and active selection states.",
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**JB Design System** is a light-first design system anchored on `#f6f9fc` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `#ff8300` brand accent.\n\nTypography centers cleanly on `dana` (32px display down to 16px body), unified by `4px` base corner radius and stepped `#f6f9fc` -> `#ecf2fc` surface layering.\n\nMaintained by **JB**. Source: live stylesheet extraction (https://javadbat.github.io/design-system), repo https://github.com/javadbat/design-system, frameworks: react, css. Inventory: **20** colors, **5** typography steps, and **15** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `0px 9px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#ecf2fc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6f9fc` -> `#ecf2fc`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8300` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#f6f9fc` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff8300` with `#0b0b0c` text (8.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `dana` headings with `dana` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ecf2fc` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
 }

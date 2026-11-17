@@ -167,6 +167,15 @@ rounded:
   card: 12px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   badge:
     backgroundColor: "#555"
@@ -203,6 +212,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#eaf3dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#00274a"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#00274a"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#eaf3dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#eaf3dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#eaf3dd"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Auro
@@ -213,7 +262,7 @@ components:
 
 Typography centers cleanly on `AS Circular` (86px display down to 18px body), unified by `8px` base corner radius and stepped `#fff` -> `#eaf3dd` surface layering.
 
-Maintained by **Alaska Airlines**. Source: live stylesheet extraction (https://auro.alaskaair.com/), repo https://github.com/AlaskaAirlines/auro, package `@aurodesignsystem/design-tokens`, frameworks: web-components, css. Inventory: **91** colors, **33** typography steps, and **7** documented components (all rights reserved license).
+Maintained by **Alaska Airlines**. Source: live stylesheet extraction (https://auro.alaskaair.com/), repo https://github.com/AlaskaAirlines/auro, package `@aurodesignsystem/design-tokens`, frameworks: web-components, css. Inventory: **91** colors, **33** typography steps, and **15** documented components (all rights reserved license).
 
 ## Colors
 
@@ -236,7 +285,7 @@ Maintained by **Alaska Airlines**. Source: live stylesheet extraction (https://a
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `#eaf3dd` cards; separate sibling sections using `#dbdbdb` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -248,6 +297,7 @@ Maintained by **Alaska Airlines**. Source: live stylesheet extraction (https://a
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -258,6 +308,14 @@ Maintained by **Alaska Airlines**. Source: live stylesheet extraction (https://a
 - **`input-default` (input)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `9px 13px`.
 - **`card-surface` (card)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `12px`, padding `18px 20px`.
 - **`nav-bar` (nav)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#00274a`, ink `#f7f7f8`, (14.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#00274a`, ink `#f7f7f8`, (14.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#eaf3dd`, ink `#0b0b0c`, (17.2:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

@@ -218,7 +218,7 @@
     },
     {
       "key": "button-circular-nav",
-      "kind": "nav",
+      "kind": "button",
       "backgroundColor": "#f2f2f2",
       "textColor": "#222222"
     },
@@ -261,8 +261,108 @@
       "textColor": "#ffffff",
       "rounded": "999px",
       "padding": "4px 10px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#222222",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff385c",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff385c",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#222222",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#222222",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#222222",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "8px"
     }
   ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 32,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "observed",
+    "samples": [
+      {
+        "name": "glyph-1",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path d=\"M28 16H2M17 4l11.3 11.3a1 1 0 0 1 0 1.4L17 28\"/>"
+      },
+      {
+        "name": "glyph-2",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path d=\"m20.666 20.666 10 10\"/><path d=\"m24.0002 12.6668c0 6.2593-5.0741 11.3334-11.3334 11.3334-6.2592 0-11.3333-5.0741-11.3333-11.3334 0-6.2592 5.0741-11.3333 11.3333-11.3333 6.2593 0 11.3334 5.0741 11.3334 11.3333z\" fill=\"none\"/>"
+      },
+      {
+        "name": "glyph-3",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<circle cx=\"16\" cy=\"16\" r=\"14\"/><path d=\"m26.46 25.62c-1.58-2.81-4.26-4.9-7.46-5.73v-.72c1.79-1.04 3-2.96 3-5.17 0-3.31-2.69-6-6-6s-6 2.69-6 6c0 2.22 1.21 4.14 3 5.17v.72c-3.16.82-5.83 2.87-7.42 5.64\"/>"
+      },
+      {
+        "name": "glyph-4",
+        "viewBox": "0 0 32 32",
+        "fill": "currentColor",
+        "body": "<path d=\"M2 16h28M2 24h28M2 8h28\"/>"
+      }
+    ]
+  },
   "overview": "Airbnb's website is a warm, photography-forward marketplace that feels like flipping through a travel magazine where every page invites you to book. The design operates on a foundation of pure white (`#ffffff`) with the iconic Rausch Red (`#ff385c`) — named after Airbnb's first street address — serving as the singular brand accent. The result is a clean, airy canvas where listing photography, category icons, and the red CTA button are the only sources of color.\n\nThe typography uses Airbnb Cereal VF — a custom variable font that's warm and approachable, with rounded terminals that echo the brand's \"belong anywhere\" philosophy. The font operates in a tight weight range: 500 (medium) for most UI, 600 (semibold) for emphasis, and 700 (bold) for primary headings. Slight negative letter-spacing (-0.18px to -0.44px) on headings creates a cozy, intimate reading experience rather than the compressed efficiency of tech companies.\n\nWhat distinguishes Airbnb is its palette-based token system (`--palette-*`) and multi-layered shadow approach. The primary card shadow uses a three-layer stack (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`) that creates a subtle, warm lift. Combined with generous border-radius (8px–32px), circular navigation controls (50%), and a category pill bar with horizontal scrolling, the interface feels tactile and inviting — designed for browsing, not commanding.\n\n**Key Characteristics:**\n- Pure white canvas with Rausch Red (`#ff385c`) as singular brand accent\n- Airbnb Cereal VF — custom variable font with warm, rounded terminals\n- Palette-based token system (`--palette-*`) for systematic color management\n- Three-layer card shadows: border ring + soft blur + stronger blur\n- Generous border-radius: 8px buttons, 14px badges, 20px cards, 32px large elements\n- Circular navigation controls (50% radius)\n- Photography-first listing cards — images are the hero content\n- Near-black text (`#222222`) — warm, not cold\n- Luxe Purple (`#460479`) and Plus Magenta (`#92174d`) for premium tiers\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 2px, 3px, 4px, 6px, 8px, 10px, 11px, 12px, 15px, 16px, 22px, 24px, 32px\n\n### Grid & Container\n- Full-width header with centered search\n- Category pill bar: horizontal scrollable row\n- Listing grid: responsive multi-column (3–5 columns on desktop)\n- Full-width footer with link columns\n\n### Whitespace Philosophy\n- **Travel-magazine spacing**: Generous vertical padding between sections creates a leisurely browsing pace — you're meant to scroll slowly, like browsing a magazine.\n- **Photography density**: Listing cards are packed relatively tightly, but each image is large enough to feel immersive.\n- **Search bar prominence**: The search bar gets maximum vertical space in the header — finding your destination is the primary action.\n\n### Border Radius Scale\n- Subtle (4px): Small links\n- Standard (8px): Buttons, tabs, search elements\n- Badge (14px): Status badges, labels\n- Card (20px): Feature cards, large buttons\n- Large (32px): Large containers, hero elements\n- Circle (50%): Nav controls, avatars, icons",
   "dos": "### Do\n- Use `#222222` (warm near-black) for text — never pure `#000000`\n- Apply Rausch Red (`#ff385c`) only for primary CTAs and brand moments — it's the singular accent\n- Use Airbnb Cereal VF at weight 500–700 — the warm weight range is intentional\n- Apply the three-layer card shadow for all elevated surfaces\n- Use generous border-radius: 8px for buttons, 20px for cards, 50% for controls\n- Use photography as the primary visual content — listings are image-first\n- Apply negative letter-spacing (-0.18px to -0.44px) on headings for intimacy\n- Use circular (50%) buttons for carousel/navigation controls\n\n### Don't\n- Don't use pure black (`#000000`) for text — always `#222222` (warm)\n- Don't apply Rausch Red to backgrounds or large surfaces — it's an accent only\n- Don't use thin font weights (300, 400) for headings — 500 minimum\n- Don't use heavy shadows (>0.1 opacity as primary layer) — keep them warm and graduated\n- Don't use sharp corners (0–4px) on cards — the generous rounding (20px+) is core\n- Don't introduce additional brand colors beyond the Rausch/Luxe/Plus system\n- Don't override the palette token system — use `--palette-*` variables consistently"
 }

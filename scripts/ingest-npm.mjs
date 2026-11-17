@@ -60,6 +60,7 @@ function main() {
   let colors = {};
   let types = {};
   let components = {};
+  let icons = null;
   let harvested = 0;
   let usedFiles = 0;
   let version = "unknown";
@@ -96,6 +97,7 @@ function main() {
     colors = { ...colors, ...got.colors };
     types = { ...types, ...got.types };
     components = { ...components, ...got.components };
+    if (!icons && got.icons) icons = got.icons;
     harvested += got.harvested;
     usedFiles += got.usedFiles;
   }
@@ -118,6 +120,7 @@ function main() {
     colors,
     types,
     components,
+    icons,
     pkg,
     version,
     license: meta.license || "see package",

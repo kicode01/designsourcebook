@@ -112,6 +112,15 @@ rounded:
   card: 12px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   label-block:
     backgroundColor: white
@@ -145,6 +154,46 @@ components:
     textColor: "#333"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f5f5f0"
+    textColor: "#333"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#06c"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#06c"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f5f5f0"
+    textColor: "#333"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f5f5f0"
+    textColor: "#333"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#333"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#333"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f5f5f0"
+    textColor: "#333"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Italia Design System
@@ -155,7 +204,7 @@ components:
 
 Display headlines pair `Titillium Web` with `System Sans` body copy (179px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f5f5f0` surface layering.
 
-Maintained by **Italia**. Source: published token package (https://github.com/italia/design-web-toolkit), repo https://github.com/italia/bootstrap-italia, package `bootstrap-italia`, frameworks: css, react, angular. Inventory: **69** colors, **13** typography steps, and **7** documented components (see repository license).
+Maintained by **Italia**. Source: published token package (https://github.com/italia/design-web-toolkit), repo https://github.com/italia/bootstrap-italia, package `bootstrap-italia`, frameworks: css, react, angular. Inventory: **69** colors, **13** typography steps, and **15** documented components (see repository license).
 
 ## Colors
 
@@ -177,7 +226,7 @@ Maintained by **Italia**. Source: published token package (https://github.com/it
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `10px 16px`, `8px 12px`.
 - **Hierarchy**: Group controls cleanly within `#f5f5f0` cards; separate sibling sections using `#aaa` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -189,6 +238,7 @@ Maintained by **Italia**. Source: published token package (https://github.com/it
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -199,6 +249,14 @@ Maintained by **Italia**. Source: published token package (https://github.com/it
 - **`input-default` (input)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `8px`, padding `9px 13px`.
 - **`card-surface` (card)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `12px`, padding `18px 20px`.
 - **`nav-bar` (nav)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#06c`, ink `#f7f7f8`, (5.2:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#06c`, ink `#f7f7f8`, (5.2:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#333`, (12.6:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#333`, ink `#fff`, (12.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f5f5f0`, ink `#333`, (11.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

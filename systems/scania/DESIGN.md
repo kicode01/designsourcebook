@@ -232,6 +232,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Scania Digital Design System Icons
+  package: "@scania/icons"
+  style: outline
+  grid: 24
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: npm
+  url: "https://github.com/scania-digital-design-system/sdds#readme"
 components:
   button-primary:
     backgroundColor: "#16417f"
@@ -273,6 +283,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "rgba(243, 244, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#16417f"
+    textColor: "#f7f7f8"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#16417f"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgba(243, 244, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgba(243, 244, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgba(255, 255, 255, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgba(255, 255, 255, 1)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgba(243, 244, 247, 1)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Scania Digital Design System
@@ -283,7 +333,7 @@ components:
 
 Typography centers cleanly on `scania sans` (216px display down to 16px body), unified by `8px` base corner radius and stepped `rgba(255, 255, 255, 1)` -> `rgba(243, 244, 247, 1)` surface layering.
 
-Maintained by **Scania**. Source: published token package (https://github.com/scania-digital-design-system/tegel), repo https://github.com/scania-digital-design-system/tegel, package `@scania/tegel`, frameworks: web-components, react, angular. Inventory: **91** colors, **65** typography steps, and **8** documented components (see repository license).
+Maintained by **Scania**. Source: published token package (https://github.com/scania-digital-design-system/tegel), repo https://github.com/scania-digital-design-system/tegel, package `@scania/tegel`, frameworks: web-components, react, angular. Inventory: **91** colors, **65** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -305,7 +355,7 @@ Maintained by **Scania**. Source: published token package (https://github.com/sc
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `rgba(243, 244, 247, 1)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -317,6 +367,7 @@ Maintained by **Scania**. Source: published token package (https://github.com/sc
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Scania Digital Design System Icons (`@scania/icons`) on a `24x24` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -328,6 +379,14 @@ Maintained by **Scania**. Source: published token package (https://github.com/sc
 - **`badge-brand` (badge)**: bg `#16417f`, ink `#ffffff`, (10.0:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#004c3b`, ink `#ffffff`, (10.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `rgba(243, 244, 247, 1)`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `rgba(243, 244, 247, 1)`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#16417f`, ink `#f7f7f8`, (9.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#16417f`, ink `#f7f7f8`, (9.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgba(243, 244, 247, 1)`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgba(243, 244, 247, 1)`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgba(255, 255, 255, 1)`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgba(255, 255, 255, 1)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgba(243, 244, 247, 1)`, ink `#0b0b0c`, (17.9:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

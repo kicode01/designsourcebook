@@ -290,6 +290,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Spectrum Workflow Icons
+  package: "@spectrum-icons/workflow"
+  style: solid
+  grid: 18
+  strokeWidth: 0
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://spectrum.adobe.com/page/iconography"
 components:
   button-primary:
     backgroundColor: "rgb(59, 99, 251)"
@@ -331,6 +341,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "rgb(59, 99, 251)"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "rgb(59, 99, 251)"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "rgb(255, 255, 255)"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "rgb(255, 255, 255)"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Spectrum
@@ -341,7 +391,7 @@ components:
 
 Typography centers cleanly on `Adobe Clean Han` (102px display down to 16px body), unified by `6px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Adobe**. Source: published token package (https://github.com/adobe/spectrum-design-data/tree/main/packages/tokens#readme), repo https://github.com/adobe/react-spectrum, package `@adobe/spectrum-tokens`, frameworks: react, web-components, css. Inventory: **91** colors, **94** typography steps, and **8** documented components (Apache-2.0 license).
+Maintained by **Adobe**. Source: published token package (https://github.com/adobe/spectrum-design-data/tree/main/packages/tokens#readme), repo https://github.com/adobe/react-spectrum, package `@adobe/spectrum-tokens`, frameworks: react, web-components, css. Inventory: **91** colors, **94** typography steps, and **16** documented components (Apache-2.0 license).
 
 ## Colors
 
@@ -364,7 +414,7 @@ Maintained by **Adobe**. Source: published token package (https://github.com/ado
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `rgb(255, 255, 255)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -376,6 +426,7 @@ Maintained by **Adobe**. Source: published token package (https://github.com/ado
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Spectrum Workflow Icons (`@spectrum-icons/workflow`) on a `18x18` grid (solid, stroke `0px`, `square` caps).
 
 ## Components
 
@@ -387,6 +438,14 @@ Maintained by **Adobe**. Source: published token package (https://github.com/ado
 - **`badge-brand` (badge)**: bg `rgb(59, 99, 251)`, ink `#ffffff`, (4.8:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `rgb(3, 110, 69)`, ink `#ffffff`, (6.3:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `rgb(59, 99, 251)`, ink `#f7f7f8`, (4.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `rgb(59, 99, 251)`, ink `#f7f7f8`, (4.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `rgb(255, 255, 255)`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `rgb(255, 255, 255)`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

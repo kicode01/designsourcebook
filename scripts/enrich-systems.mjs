@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import { splitFrontMatter, buildFrontMatter } from "../lib/fm.mjs";
 import { parseColor, contrastRatio, relativeLuminance, flatten } from "../lib/color.mjs";
 import { buildPreview, themeOfCanvas, autoInk } from "../lib/preview.mjs";
+import { deriveIconSpec } from "../lib/icons.mjs";
 import { emitDtcg } from "../lib/emit.mjs";
 import { lint } from "../lib/lint.mjs";
 
@@ -256,9 +257,12 @@ function buildCanonicalProse({ manifest, data, preview }) {
     isSharp
       ? `- **Strict Sharp Edges**: Maintain \`0px\` architectural corners across buttons, inputs, and cards.`
       : `- **Nested Concentricity**: Keep nested pills/badges pill-shaped (\`999px\`) or tighter than their parent \`${cardComps[0]?.rounded || preview.radius}\` container.`,
+    ...(preview.icons
+      ? [`- **Iconography & SVGs**: ${preview.icons.library}${preview.icons.package ? ` (\`${preview.icons.package}\`)` : ""} on a \`${preview.icons.grid}x${preview.icons.grid}\` grid (${preview.icons.style}, stroke \`${preview.icons.strokeWidth}px\`, \`${preview.icons.strokeLinecap}\` caps).`]
+      : []),
   ];
 
-  const compBullets = preview.components.slice(0, 8).map((c) => {
+  const compBullets = preview.components.slice(0, 16).map((c) => {
     const cr = c.backgroundColor && c.textColor && c.backgroundColor !== "transparent"
       ? contrastStr(c.textColor, c.backgroundColor, preview.canvas)
       : null;
@@ -357,6 +361,94 @@ function extractSectionsFromCurated(md) {
   };
 }
 
+function inferCompKind(k, oldKind) {
+  const raw = String(k || "").toLowerCase();
+  if (/button|btn|cta/.test(raw)) return "button";
+  if (/select|dropdown|combobox/.test(raw)) return "select";
+  if (/checkbox/.test(raw)) return "checkbox";
+  if (/radio/.test(raw)) return "radio";
+  if (/switch|toggle/.test(raw)) return "switch";
+  if (/input|textarea|field|search/.test(raw)) return "input";
+  if (/badge|tag|chip|pill/.test(raw)) return "badge";
+  if (/alert|notice|callout|banner|toast/.test(raw)) return "alert";
+  if (/(^|[-_])tabs?([-_]|$)/.test(raw)) return "tabs";
+  if (/table/.test(raw)) return "table";
+  if (/tooltip/.test(raw)) return "tooltip";
+  if (/modal|dialog|drawer|popover/.test(raw)) return "modal";
+  if (/progress/.test(raw)) return "progress";
+  if (/avatar/.test(raw)) return "avatar";
+  if (/link/.test(raw)) return "link";
+  if (/icon|glyph/.test(raw)) return "icon";
+  if (/nav/.test(raw)) return "nav";
+  if (oldKind && oldKind !== "card") return oldKind;
+  return "card";
+}
+
+function safeContrastFg(preferredFg, bgVal, canvasVal) {
+  const cv = parseColor(canvasVal) || [255, 255, 255, 1];
+  const bg = parseColor(bgVal) || cv;
+  const bgFlat = flatten(bg, cv);
+  const fg = parseColor(preferredFg);
+  if (fg && contrastRatio(flatten(fg, bgFlat), bgFlat) >= 4.5) return preferredFg;
+  const black = [0, 0, 0, 1];
+  const white = [255, 255, 255, 1];
+  return contrastRatio(white, bgFlat) >= contrastRatio(black, bgFlat) ? "#ffffff" : "#000000";
+}
+
+function supplementComponents({ data, components, preview }) {
+  const presentKinds = new Set(Object.values(components).map((c) => c.kind));
+  const sharp = parseFloat(preview.radius) === 0;
+  const baseRad = preview.radius || "8px";
+  const ctrlRad = sharp ? "0px" : `${Math.min(12, Math.max(4, Math.round(parseFloat(baseRad) || 6)))}px`;
+  const pillRad = sharp ? "2px" : "999px";
+  const chkRad = sharp ? "0px" : "4px";
+  const surfFg = safeContrastFg(preview.text, preview.surface, preview.canvas);
+  const canvasFg = safeContrastFg(preview.text, preview.canvas, preview.canvas);
+  let brandBg = preview.brand;
+  let brandFg = safeContrastFg(autoInk(brandBg), brandBg, preview.canvas);
+  // Ensure control tokens pass >= 4.5:1 WCAG AA if a system's raw brand hex sits near mid-luminance.
+  const cv = parseColor(preview.canvas) || [255, 255, 255, 1];
+  const brandFlat = flatten(parseColor(brandBg) || cv, cv);
+  if (contrastRatio(parseColor(brandFg), brandFlat) < 4.5) {
+    brandBg = preview.text;
+    brandFg = safeContrastFg(preview.canvas, brandBg, preview.canvas);
+  }
+  const invBg = preview.text;
+  const invFg = safeContrastFg(preview.canvas, invBg, preview.canvas);
+
+  const defaults = [
+    ["select-default", "select", { backgroundColor: preview.surface, textColor: surfFg, rounded: ctrlRad, padding: "8px 12px" }],
+    ["switch-control", "switch", { backgroundColor: brandBg, textColor: brandFg, rounded: pillRad, padding: "2px" }],
+    ["checkbox-control", "checkbox", { backgroundColor: brandBg, textColor: brandFg, rounded: chkRad, padding: "2px" }],
+    ["tabs-nav", "tabs", { backgroundColor: preview.surface, textColor: surfFg, rounded: ctrlRad, padding: "6px 12px" }],
+    ["alert-info", "alert", { backgroundColor: preview.surface, textColor: surfFg, rounded: ctrlRad, padding: "12px 14px" }],
+    ["table-grid", "table", { backgroundColor: preview.canvas, textColor: canvasFg, rounded: ctrlRad, padding: "10px 14px" }],
+    ["tooltip-overlay", "tooltip", { backgroundColor: invBg, textColor: invFg, rounded: sharp ? "0px" : "6px", padding: "6px 10px" }],
+    ["icon-glyph", "icon", { backgroundColor: preview.surface, textColor: surfFg, rounded: sharp ? "0px" : "8px", padding: "8px" }],
+  ];
+
+  const added = {};
+  for (const [key, kind, spec] of defaults) {
+    const cur = data.components?.[key];
+    if (cur) {
+      const cbg = flatten(parseColor(cur.backgroundColor) || cv, cv);
+      const cfg = parseColor(cur.textColor);
+      if (cur.backgroundColor && cur.textColor && cfg && contrastRatio(flatten(cfg, cbg), cbg) < 4.5) {
+        added[key] = { key, kind, ...spec };
+      }
+      continue;
+    }
+    if (presentKinds.has(kind)) continue;
+    added[key] = { key, kind, ...spec };
+  }
+  return added;
+}
+
+const DISCOVERED_ICONS_PATH = path.join(ROOT, "data/discovered-icons.json");
+const discoveredIcons = fs.existsSync(DISCOVERED_ICONS_PATH)
+  ? JSON.parse(fs.readFileSync(DISCOVERED_ICONS_PATH, "utf8"))
+  : {};
+
 const dirs = fs.readdirSync(SYSTEMS, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
 
 let fixedCount = 0;
@@ -452,33 +544,58 @@ for (const slug of dirs) {
       ...(oc?.shadow ? { shadow: oc.shadow } : {}),
       ...c,
       key: k,
-      kind: oc?.kind || (/button|btn|cta/i.test(k) ? "button" : /input|field/i.test(k) ? "input" : /badge|tag|chip|pill/i.test(k) ? "badge" : /nav/i.test(k) ? "nav" : "card"),
+      kind: inferCompKind(k, oc?.kind),
     };
   }
 
   let tempPreview = buildPreview({ colors: data.colors || {}, typography: data.typography || {}, components: mergedComps, prose: {} });
 
-  // Add explicit rounded YAML scale if missing so emitters (tailwind-v4, css-vars, dtcg, prompt) emit --radius-*
+  // Supplement extended canonical component kinds when missing so every system exposes rich UI primitives
+  const addedComps = supplementComponents({ data, components: mergedComps, preview: tempPreview });
+  if (Object.keys(addedComps).length) {
+    if (!data.components) data.components = {};
+    for (const [k, v] of Object.entries(addedComps)) {
+      const { key: _dropK, kind: _dropKind, ...spec } = v;
+      data.components[k] = spec;
+      mergedComps[k] = v;
+    }
+    yamlDirty = true;
+    tempPreview = buildPreview({ colors: data.colors || {}, typography: data.typography || {}, components: mergedComps, prose: {} });
+  }
+
+  // Resolve verified or token-derived SVG Iconography specification
+  const resolvedIcons = deriveIconSpec({
+    radius: tempPreview.radius,
+    components: mergedComps,
+    existingIcons: discoveredIcons[slug] || data.icons || oldPreview.icons || null,
+  });
+  const { samples: _dropSamples, ...yamlIcons } = resolvedIcons;
+  if (JSON.stringify(data.icons || {}) !== JSON.stringify(yamlIcons)) {
+    data.icons = yamlIcons;
+    yamlDirty = true;
+  }
+
+  // Add explicit rounded scale and enforce clean canonical YAML key order
   if (!data.rounded || !Object.keys(data.rounded).length) {
     const derivedR = deriveRoundedScale(data.components, tempPreview.radius);
     if (Object.keys(derivedR).length) {
-      const rebuilt = {};
-      for (const k of ["version", "name", "description", "colors", "typography", "rounded", "spacing", "components"]) {
-        if (k === "rounded") rebuilt.rounded = derivedR;
-        else if (data[k] !== undefined) rebuilt[k] = data[k];
-      }
-      Object.assign(data, rebuilt);
-      // Ensure clean key order in frontmatter
-      for (const key of Object.keys(data)) delete data[key];
-      for (const key of Object.keys(rebuilt)) data[key] = rebuilt[key];
+      data.rounded = derivedR;
       yamlDirty = true;
     }
   }
+  const orderedKeys = ["version", "name", "description", "colors", "typography", "rounded", "spacing", "icons", "components"];
+  const rebuilt = {};
+  for (const k of orderedKeys) if (data[k] !== undefined) rebuilt[k] = data[k];
+  for (const k of Object.keys(data)) if (!(k in rebuilt)) rebuilt[k] = data[k];
+  for (const k of Object.keys(data)) delete data[k];
+  for (const k of Object.keys(rebuilt)) data[k] = rebuilt[k];
 
-  // Determine whether body prose needs enrichment (thin < 1800 chars OR stale contradicting counts/text)
+  // Determine whether body prose needs enrichment (thin < 2500 chars, stale counts, or missing Iconography bullet)
+  tempPreview.icons = resolvedIcons;
   const needsEnrich =
     body.trim().length < 2500 ||
-    /0 type tokens|No resolvable type tokens/i.test(body);
+    /0 type tokens|No resolvable type tokens/i.test(body) ||
+    (/Inventory:\s+\*\*\d+\*\*/i.test(body) && !/Iconography & SVGs/i.test(body));
 
   let prose;
   if (needsEnrich) {
@@ -501,6 +618,7 @@ for (const slug of dirs) {
     typography: data.typography || {},
     components: mergedComps,
     prose,
+    icons: resolvedIcons,
   });
 
   const report = lint(finalMd, { name: slug });

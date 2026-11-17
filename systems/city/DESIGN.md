@@ -71,6 +71,15 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   btn-link-styled:
     backgroundColor: transparent
@@ -106,6 +115,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#fcb61a"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#fcb61a"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#fff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f3f3f3"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # City of Boston Fleet
@@ -116,7 +165,7 @@ components:
 
 Typography centers cleanly on `Montserrat` (44px display down to 18px body), unified by `8px` base corner radius and stepped `#fff` -> `#f3f3f3` surface layering.
 
-Maintained by **City of Boston**. Source: published token package (https://github.com/CityOfBoston/digital), repo https://github.com/CityOfBoston/digital, frameworks: css. Inventory: **25** colors, **7** typography steps, and **7** documented components (see repository license).
+Maintained by **City of Boston**. Source: published token package (https://github.com/CityOfBoston/digital), repo https://github.com/CityOfBoston/digital, frameworks: css. Inventory: **25** colors, **7** typography steps, and **15** documented components (see repository license).
 
 ## Colors
 
@@ -138,7 +187,7 @@ Maintained by **City of Boston**. Source: published token package (https://githu
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 7 component tokens with documented paddings: `0`, `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 15 component tokens with documented paddings: `0`, `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `#f3f3f3` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -150,6 +199,7 @@ Maintained by **City of Boston**. Source: published token package (https://githu
 
 - **Base Corner Geometry**: `8px` (Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -160,6 +210,14 @@ Maintained by **City of Boston**. Source: published token package (https://githu
 - **`badge-brand` (badge)**: bg `#fcb61a`, ink `#0b0b0c`, (11.1:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#fcb61a`, ink `#0b0b0c`, (11.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#fcb61a`, ink `#0b0b0c`, (11.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#fff`, ink `#0b0b0c`, (19.7:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#fff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f3f3f3`, ink `#0b0b0c`, (17.7:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

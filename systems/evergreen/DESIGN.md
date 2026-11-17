@@ -108,6 +108,16 @@ rounded:
   badge: 999px
   nav: 8px
   default: 8px
+icons:
+  library: Evergreen UI Icons
+  package: evergreen-ui
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://evergreen.segment.com/components/icons"
 components:
   button-primary:
     backgroundColor: "#3366FF"
@@ -149,6 +159,46 @@ components:
     textColor: "#425A70"
     rounded: 8px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#F5F6F7"
+    textColor: "#425A70"
+    rounded: 8px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#3366FF"
+    textColor: "#ffffff"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#3366FF"
+    textColor: "#ffffff"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#F5F6F7"
+    textColor: "#425A70"
+    rounded: 8px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#F5F6F7"
+    textColor: "#425A70"
+    rounded: 8px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#F9F9FB"
+    textColor: "#425A70"
+    rounded: 8px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#425A70"
+    textColor: "#F9F9FB"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#F5F6F7"
+    textColor: "#425A70"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Evergreen
@@ -159,7 +209,7 @@ components:
 
 Typography centers cleanly on `SF Mono` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#F9F9FB` -> `#F5F6F7` surface layering.
 
-Source: published token package (https://github.com/segmentio/evergreen), repo https://github.com/segmentio/evergreen, package `evergreen-ui`, frameworks: react. Inventory: **91** colors, **3** typography steps, and **8** documented components (see repository license).
+Source: published token package (https://github.com/segmentio/evergreen), repo https://github.com/segmentio/evergreen, package `evergreen-ui`, frameworks: react. Inventory: **91** colors, **3** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -182,7 +232,7 @@ Source: published token package (https://github.com/segmentio/evergreen), repo h
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#F5F6F7` cards; separate sibling sections using `#E4E7EB` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -194,6 +244,7 @@ Source: published token package (https://github.com/segmentio/evergreen), repo h
 
 - **Base Corner Geometry**: `8px` (Buttons `8px` · Inputs `8px` · Cards `12px` · Badges `999px` · Navigation `8px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `12px` container.
+- **Iconography & SVGs**: Evergreen UI Icons (`evergreen-ui`) on a `16x16` grid (solid, stroke `0px`, `round` caps).
 
 ## Components
 
@@ -205,6 +256,14 @@ Source: published token package (https://github.com/segmentio/evergreen), repo h
 - **`badge-brand` (badge)**: bg `#3366FF`, ink `#ffffff`, (4.7:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#52BD95`, ink `#000000`, (9.1:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#3366FF`, ink `#f7f7f8`, (4.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#3366FF`, ink `#f7f7f8`, (4.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#F9F9FB`, ink `#425A70`, (6.8:1), radius `8px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#425A70`, ink `#F9F9FB`, (6.8:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#F5F6F7`, ink `#425A70`, (6.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

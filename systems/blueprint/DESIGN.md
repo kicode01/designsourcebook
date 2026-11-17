@@ -120,6 +120,16 @@ rounded:
   badge: 999px
   nav: 3px
   default: 3px
+icons:
+  library: Blueprint Icons
+  package: "@blueprintjs/icons"
+  style: solid
+  grid: 16
+  strokeWidth: 0
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: curated
+  url: "https://blueprintjs.com/docs/#icons"
 components:
   button-primary:
     backgroundColor: "#FF9980"
@@ -161,6 +171,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 3px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#EDEFF2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#FF9980"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#FF9980"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#EDEFF2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#EDEFF2"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#EDEFF2"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Blueprint
@@ -171,7 +221,7 @@ components:
 
 Typography centers cleanly on `System UI` (18px display down to 14px body), unified by `3px` base corner radius and stepped `#ffffff` -> `#EDEFF2` surface layering.
 
-Maintained by **Palantir**. Source: published token package (https://github.com/palantir/blueprint), repo https://github.com/palantir/blueprint, package `@blueprintjs/core`, frameworks: react, css. Inventory: **91** colors, **8** typography steps, and **8** documented components (see repository license).
+Maintained by **Palantir**. Source: published token package (https://github.com/palantir/blueprint), repo https://github.com/palantir/blueprint, package `@blueprintjs/core`, frameworks: react, css. Inventory: **91** colors, **8** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -194,7 +244,7 @@ Maintained by **Palantir**. Source: published token package (https://github.com/
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#EDEFF2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -206,6 +256,7 @@ Maintained by **Palantir**. Source: published token package (https://github.com/
 
 - **Base Corner Geometry**: `3px` (Buttons `3px` · Inputs `3px` · Cards `7px` · Badges `999px` · Navigation `3px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `7px` container.
+- **Iconography & SVGs**: Blueprint Icons (`@blueprintjs/icons`) on a `16x16` grid (solid, stroke `0px`, `square` caps).
 
 ## Components
 
@@ -217,6 +268,14 @@ Maintained by **Palantir**. Source: published token package (https://github.com/
 - **`badge-brand` (badge)**: bg `#FF9980`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#15803d`, ink `#ffffff`, (5.0:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `3px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#FF9980`, ink `#0b0b0c`, (9.5:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#FF9980`, ink `#0b0b0c`, (9.5:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#EDEFF2`, ink `#0b0b0c`, (17.1:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

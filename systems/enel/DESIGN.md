@@ -110,6 +110,15 @@ rounded:
   badge: 999px
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button:
     textColor: "#73828c"
@@ -145,6 +154,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#f7f8fb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#9bbdfc"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#9bbdfc"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#f7f8fb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#f7f8fb"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#f7f8fb"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Enel
@@ -155,7 +204,7 @@ components:
 
 Typography centers cleanly on `Roobert` (16px display down to 16px body), unified by `4px` base corner radius and stepped `#ffffff` -> `#f7f8fb` surface layering.
 
-Source: live stylesheet extraction (https://dsyui.enelx.com/), frameworks: css. Inventory: **91** colors, **2** typography steps, and **8** documented components (all rights reserved license).
+Source: live stylesheet extraction (https://dsyui.enelx.com/), frameworks: css. Inventory: **91** colors, **2** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -176,7 +225,7 @@ Source: live stylesheet extraction (https://dsyui.enelx.com/), frameworks: css. 
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `0px 7px`, `0px 8px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0px 7px`, `0px 8px`, `5px 6px 4px 8px`, `18px 20px`, `4px 10px`.
 - **Hierarchy**: Group controls cleanly within `#f7f8fb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -188,6 +237,7 @@ Source: live stylesheet extraction (https://dsyui.enelx.com/), frameworks: css. 
 
 - **Base Corner Geometry**: `4px` (Buttons `4px` · Cards `8px` · Badges `999px` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `8px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
@@ -199,6 +249,14 @@ Source: live stylesheet extraction (https://dsyui.enelx.com/), frameworks: css. 
 - **`badge-brand` (badge)**: bg `#9bbdfc`, ink `#0b0b0c`, (10.4:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#b2e6cd`, ink `#0b0b0c`, (14.1:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#9bbdfc`, ink `#0b0b0c`, (10.4:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#9bbdfc`, ink `#0b0b0c`, (10.4:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#f7f8fb`, ink `#0b0b0c`, (18.5:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

@@ -121,6 +121,16 @@ rounded:
   badge: 999px
   nav: 6px
   default: 6px
+icons:
+  library: Elastic EUI Icons
+  package: "@elastic/eui"
+  style: outline
+  grid: 16
+  strokeWidth: 1.5
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: curated
+  url: "https://eui.elastic.co"
 components:
   button-primary:
     backgroundColor: "#EE72A6"
@@ -162,6 +172,46 @@ components:
     textColor: "#0b0b0c"
     rounded: 6px
     padding: 10px 16px
+  select-default:
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 8px 12px
+  switch-control:
+    backgroundColor: "#EE72A6"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#EE72A6"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
+    rounded: 6px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#F6F9FC"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#F6F9FC"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Elastic UI
@@ -172,7 +222,7 @@ components:
 
 Typography centers cleanly on `Helvetica Neue` (30px display down to 16px body), unified by `6px` base corner radius and hairline `1px` structural borders.
 
-Maintained by **Elastic**. Source: published token package (https://github.com/elastic/eui), repo https://github.com/elastic/eui, package `@elastic/eui`, frameworks: react, css. Inventory: **91** colors, **9** typography steps, and **8** documented components (see repository license).
+Maintained by **Elastic**. Source: published token package (https://github.com/elastic/eui), repo https://github.com/elastic/eui, package `@elastic/eui`, frameworks: react, css. Inventory: **91** colors, **9** typography steps, and **16** documented components (see repository license).
 
 ## Colors
 
@@ -194,7 +244,7 @@ Maintained by **Elastic**. Source: published token package (https://github.com/e
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.
 - **Hierarchy**: Group controls cleanly within `#F6F9FC` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -206,6 +256,7 @@ Maintained by **Elastic**. Source: published token package (https://github.com/e
 
 - **Base Corner Geometry**: `6px` (Buttons `6px` · Inputs `6px` · Cards `10px` · Badges `999px` · Navigation `6px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `10px` container.
+- **Iconography & SVGs**: Elastic EUI Icons (`@elastic/eui`) on a `16x16` grid (outline, stroke `1.5px`, `round` caps).
 
 ## Components
 
@@ -217,6 +268,14 @@ Maintained by **Elastic**. Source: published token package (https://github.com/e
 - **`badge-brand` (badge)**: bg `#EE72A6`, ink `#000000`, (7.6:1), radius `999px`, padding `4px 10px`.
 - **`badge-success` (badge)**: bg `#24C292`, ink `#000000`, (9.2:1), radius `999px`, padding `4px 10px`.
 - **`nav-bar` (nav)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `10px 16px`.
+- **`select-default` (select)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `8px 12px`.
+- **`switch-control` (switch)**: bg `#EE72A6`, ink `#0b0b0c`, (7.1:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#EE72A6`, ink `#0b0b0c`, (7.1:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `6px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#F6F9FC`, (18.6:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#F6F9FC`, ink `#0b0b0c`, (18.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 

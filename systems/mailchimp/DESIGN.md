@@ -89,6 +89,15 @@ rounded:
   badge: 1.3em
   nav: 4px
   default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   btn:
     backgroundColor: "rgb(183, 183, 183)"
@@ -142,6 +151,41 @@ components:
     textColor: "#0b0b0c"
     rounded: 4px
     padding: 10px 16px
+  switch-control:
+    backgroundColor: "#33c3f0"
+    textColor: "#0b0b0c"
+    rounded: 999px
+    padding: 2px
+  checkbox-control:
+    backgroundColor: "#33c3f0"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 2px
+  tabs-nav:
+    backgroundColor: "#eff3f7"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 6px 12px
+  alert-info:
+    backgroundColor: "#eff3f7"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 12px 14px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+  icon-glyph:
+    backgroundColor: "#eff3f7"
+    textColor: "#0b0b0c"
+    rounded: 8px
+    padding: 8px
 ---
 
 # Mailchimp Content Styleguide
@@ -152,7 +196,7 @@ components:
 
 Display headlines pair `Helvetica Neue` with `Verdana` body copy (40px display down to 16px body), unified by `4px` base corner radius and stepped `#ffffff` -> `#eff3f7` surface layering.
 
-Maintained by **Mailchimp**. Source: live stylesheet extraction (https://styleguide.mailchimp.com/), frameworks: css. Inventory: **65** colors, **3** typography steps, and **9** documented components (all rights reserved license).
+Maintained by **Mailchimp**. Source: live stylesheet extraction (https://styleguide.mailchimp.com/), frameworks: css. Inventory: **65** colors, **3** typography steps, and **16** documented components (all rights reserved license).
 
 ## Colors
 
@@ -173,7 +217,7 @@ Maintained by **Mailchimp**. Source: live stylesheet extraction (https://stylegu
 
 ## Layout
 
-- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `0.5625em 1.5em`, `18px`, `0.5em 1em`, `10px 16px`.
+- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `0.5625em 1.5em`, `18px`, `0.5em 1em`, `10px 16px`, `2px`.
 - **Hierarchy**: Group controls cleanly within `#eff3f7` cards; separate sibling sections using `#bbbbbb` hairlines rather than oversized whitespace.
 
 ## Elevation
@@ -183,19 +227,28 @@ Maintained by **Mailchimp**. Source: live stylesheet extraction (https://stylegu
 
 ## Shapes
 
-- **Base Corner Geometry**: `4px` (Buttons `4px` · Inputs `4px` · Badges `1.3em` · Navigation `4px`).
+- **Base Corner Geometry**: `4px` (Buttons `4px` · Badges `1.3em` · Navigation `4px`).
 - **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
 
 ## Components
 
 - **`btn` (button)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`, padding `0.5625em 1.5em`, border `0px`.
 - **`card` (card)**: bg `rgb(255, 255, 255)`, padding `18px`, border `1px solid rgb(220, 220, 220)`.
 - **`badge` (badge)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `1.3em`, padding `0.5em 1em`.
-- **`select` (input)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`.
+- **`select` (select)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`.
 - **`btn-mini-2` (button)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`, padding `0.5625em 1.5em`, border `0px`.
 - **`btn-small-3` (button)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`, padding `0.5625em 1.5em`, border `0px`.
-- **`select-mini-2` (input)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`.
-- **`select-small-3` (input)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`.
+- **`select-mini-2` (select)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`.
+- **`select-small-3` (select)**: bg `rgb(183, 183, 183)`, ink `#0b0b0c`, (9.8:1), radius `4px`.
+- **`nav-bar` (nav)**: bg `#eff3f7`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `10px 16px`.
+- **`switch-control` (switch)**: bg `#33c3f0`, ink `#0b0b0c`, (9.6:1), radius `999px`, padding `2px`.
+- **`checkbox-control` (checkbox)**: bg `#33c3f0`, ink `#0b0b0c`, (9.6:1), radius `4px`, padding `2px`.
+- **`tabs-nav` (tabs)**: bg `#eff3f7`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `6px 12px`.
+- **`alert-info` (alert)**: bg `#eff3f7`, ink `#0b0b0c`, (17.6:1), radius `4px`, padding `12px 14px`.
+- **`table-grid` (table)**: bg `#ffffff`, ink `#0b0b0c`, (19.7:1), radius `4px`, padding `10px 14px`.
+- **`tooltip-overlay` (tooltip)**: bg `#0b0b0c`, ink `#ffffff`, (19.7:1), radius `6px`, padding `6px 10px`.
+- **`icon-glyph` (icon)**: bg `#eff3f7`, ink `#0b0b0c`, (17.6:1), radius `8px`, padding `8px`.
 
 ## Do's and Don'ts
 
@@ -211,4 +264,4 @@ Maintained by **Mailchimp**. Source: live stylesheet extraction (https://stylegu
 - Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
 - Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
 - Do not mix conflicting corner radii that clash with the system's `4px` baseline.
-- Do not truncate or drop border contrast on `select` fields and secondary buttons.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.
