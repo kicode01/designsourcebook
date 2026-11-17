@@ -15,3 +15,15 @@ tmp/
 
 .vercel
 .env*
+
+# Keep local reverse-engineering artifacts under studio/ untracked while versioning studio/app/
+studio/.workbuddy/
+studio/.workbuddy-ai/
+studio/.wbapp_*
+studio/extract/
+studio/rea/
+studio/site/
+studio/spec/
+studio/tools/
+studio/*.json
+studio/REVERSE-ENGINEERING.md

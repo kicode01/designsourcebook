@@ -1,0 +1,387 @@
+/* Extended styles for Design System Maker, Logo Database + Anatomy X-Ray, Craft Dock & BrandFx */
+
+.ds-shell-page {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(340px, 27vw, 390px);
+  gap: 12px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.ds-main-scroll {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  border: 1px solid var(--studio-panel-border);
+  border-radius: var(--studio-panel-radius);
+  background: var(--studio-canvas);
+  padding: 76px 24px 36px;
+}
+
+.ds-subhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.ds-title-block h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--studio-ink);
+}
+
+.ds-title-block p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: var(--studio-muted);
+}
+
+.ds-pills-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.ds-pill-tab {
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--studio-muted);
+  transition: background 0.14s, color 0.14s;
+}
+
+.ds-pill-tab:hover { color: var(--studio-ink); }
+.ds-pill-tab.is-active {
+  background: var(--studio-accent);
+  color: var(--studio-accent-fg);
+  font-weight: 600;
+}
+
+.ds-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+  color: var(--studio-ink);
+  transition: background 0.14s, border-color 0.14s;
+  white-space: nowrap;
+}
+.ds-action-btn:hover { background: var(--studio-panel-control-hover); border-color: var(--studio-panel-border-strong); }
+.ds-action-btn.is-primary {
+  background: var(--primary);
+  color: var(--primary-fg);
+  border-color: var(--primary);
+}
+.ds-action-btn.is-primary:hover { opacity: 0.9; }
+
+.ds-card {
+  border-radius: 12px;
+  border: 1px solid var(--studio-panel-border);
+  background: var(--studio-panel-bg);
+  padding: 16px;
+}
+
+.ds-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.ds-stat-box {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+}
+.ds-stat-box strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 650;
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+  color: var(--studio-ink);
+}
+.ds-stat-box span {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--studio-muted);
+}
+
+/* ---------- Design System Maker specimen ---------- */
+.ds-preview-frame {
+  border-radius: 14px;
+  border: 1px solid rgba(127, 127, 127, 0.22);
+  padding: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.ds-ramp-row {
+  display: grid;
+  grid-template-columns: 74px repeat(11, minmax(0, 1fr));
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ds-ramp-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--studio-muted);
+  text-transform: capitalize;
+}
+
+.ds-ramp-chip {
+  height: 44px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4px 5px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  border: 1px solid rgba(127, 127, 127, 0.16);
+  cursor: pointer;
+  transition: transform 0.12s;
+}
+.ds-ramp-chip:hover { transform: translateY(-2px); }
+
+.ds-code-pre {
+  margin: 0;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--studio-gutter);
+  border: 1px solid var(--studio-panel-border);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.55;
+  overflow: auto;
+  max-height: 520px;
+  color: var(--studio-ink);
+}
+
+/* ---------- Logo Database Grid & Inspector ---------- */
+.ldb-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.ldb-search {
+  flex: 1;
+  min-width: 220px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+  color: var(--studio-muted);
+}
+.ldb-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 12.5px;
+  color: var(--studio-ink);
+}
+
+.ldb-select {
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+  color: var(--studio-ink);
+  font-size: 12px;
+  cursor: pointer;
+}
+.ldb-select option {
+  background: var(--studio-panel-bg);
+  color: var(--studio-ink);
+}
+
+.ldb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+}
+
+.ldb-card {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+  text-align: left;
+  transition: border-color 0.14s, transform 0.14s;
+}
+.ldb-card:hover { border-color: var(--studio-panel-border-strong); transform: translateY(-2px); }
+
+.ldb-stage {
+  height: 112px;
+  border-radius: 9px;
+  background: #ffffff;
+  border: 1px solid rgba(9, 9, 11, 0.08);
+  display: grid;
+  place-items: center;
+  padding: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.ldb-stage.is-dark { background: #101014; }
+.ldb-stage svg { max-width: 100%; max-height: 76px; width: auto; height: auto; display: block; }
+
+.ldb-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.ldb-card-head strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--studio-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ldb-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--studio-panel-control);
+  color: var(--studio-muted);
+  white-space: nowrap;
+}
+.ldb-badge.is-star {
+  background: rgba(245, 158, 11, 0.14);
+  color: #f59e0b;
+}
+
+.ldb-note {
+  margin: 6px 0 8px;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--studio-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 32px;
+}
+
+.ldb-meta-foot {
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid var(--studio-panel-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--studio-dim2);
+}
+
+/* ---------- Craft Audit Dock (CreateX & Anatomy) ---------- */
+.craft-dock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+  margin-bottom: 12px;
+}
+.craft-scales {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.craft-scale-item {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--studio-dim2);
+}
+
+.anatomy-canvas-box {
+  position: relative;
+  height: 280px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--studio-panel-border);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.anatomy-canvas-box.is-dark { background: #0c0c10; }
+.anatomy-canvas-box svg { max-width: 100%; max-height: 230px; }
+
+/* ---------- Icon Pack Picker Grid inside Modals ---------- */
+.icon-pick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+  gap: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.icon-pick-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 6px;
+  border-radius: 8px;
+  background: var(--studio-panel-control);
+  border: 1px solid transparent;
+  font-size: 10px;
+  color: var(--studio-muted);
+}
+.icon-pick-cell:hover {
+  border-color: var(--studio-panel-border-strong);
+  color: var(--studio-ink);
+}
+.icon-pick-cell svg { width: 22px; height: 22px; }
+
+@media (max-width: 960px) {
+  .ds-shell-page { grid-template-columns: 1fr; overflow-y: auto; }
+  .ds-main-scroll { overflow: visible; padding-top: 84px; }
+  .studio-topbar { flex-wrap: wrap; height: auto; }
+}

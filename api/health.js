@@ -10,6 +10,7 @@ export async function GET() {
       SELECT
         (SELECT COUNT(*)::int FROM design_systems) AS systems,
         (SELECT COUNT(*)::int FROM icon_packs) AS icon_packs,
+        (SELECT COUNT(*)::int FROM logos) AS logos,
         (SELECT MAX(stats_synced_at) FROM design_systems) AS last_stats_sync
     `;
     const recentSyncs = await sql`

@@ -17,7 +17,8 @@
     "mcp": "node bin/sourcebook.mjs mcp",
     "discover": "node scripts/discover-github.mjs",
     "db:seed": "node scripts/db-seed.mjs",
-    "db:sync": "node scripts/db-seed.mjs --sync"
+    "db:sync": "node scripts/db-seed.mjs --sync",
+    "db:seed:logos": "node scripts/db-seed-logos.mjs"
   },
   "files": [
     "bin",

@@ -115,6 +115,12 @@ if (fs.existsSync(webBrandDir)) {
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT_DIR, file));
   }
 }
+const studioDist = path.join(ROOT, "studio/app/dist");
+if (fs.existsSync(studioDist)) {
+  const studioOut = path.join(OUT_DIR, "studio");
+  fs.rmSync(studioOut, { recursive: true, force: true });
+  fs.cpSync(studioDist, studioOut, { recursive: true });
+}
 const dest = path.join(OUT_DIR, "index.html");
 for (let i = 0; i < 8; i++) {
   try {

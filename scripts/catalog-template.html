@@ -350,6 +350,7 @@
       <button class="chip" id="catBtn" aria-pressed="true">Catalog</button>
       <button class="chip" id="rankBtn" aria-pressed="false">Ranking</button>
       <button class="chip" id="viewBtn" aria-pressed="false">Coverage</button>
+      <a class="chip" href="./studio/#/systems" title="Design Sourcebook Studio (System Maker, Logo DB, LogoFX, Brand Maker)">Studio ↗</a>
     </div>
   </div>
 </header>
@@ -1729,6 +1730,7 @@ function detailHtml(d){
       '</div>'+
       '<div class="detail-actions">'+
         (d.repo?'<a href="'+esc(d.repo)+'" target="_blank" rel="noopener" class="pill-btn">'+ICONS.gh+esc(shortRepo(d.repo))+ICONS.ext+'</a>':'')+
+        (d.provenance!=='listed'?'<a href="./studio/#/systems?seed='+encodeURIComponent(d.slug)+'" class="pill-btn">Remix in Studio'+ICONS.ext+'</a>':'')+
         '<button type="button" class="pill-btn primary" data-copy-prompt>'+ICONS.copy+'Copy Prompt</button>'+
         '<button type="button" class="pill-btn" data-copy-json>'+ICONS.copy+'JSON</button>'+
       '</div>'+

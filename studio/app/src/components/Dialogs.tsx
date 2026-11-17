@@ -1,0 +1,187 @@
+import { useEffect, useMemo, useState } from 'react';
+import { Icon } from './icons';
+import { CURATED_MARKS, useProject, type ActiveMark } from '../state/project';
+
+export type ExportFormat = 'png' | 'webm';
+
+export function ExportDialog({
+  open,
+  onClose,
+  onExport,
+  defaultSize,
+  busy,
+}: {
+  open: boolean;
+  onClose: () => void;
+  onExport: (format: ExportFormat, size: number, transparent: boolean) => void;
+  defaultSize: number;
+  busy: boolean;
+}) {
+  const [format, setFormat] = useState<ExportFormat>('png');
+  const [size, setSize] = useState(defaultSize);
+  const [transparent, setTransparent] = useState(true);
+
+  useEffect(() => {
+    if (open) setSize(defaultSize);
+  }, [defaultSize, open]);
+
+  if (!open) return null;
+  return (
+    <div className="modal-backdrop" onMouseDown={onClose}>
+      <div className="modal" onMouseDown={(e) => e.stopPropagation()} role="dialog" aria-label="Export">
+        <h2>Export LogoFX</h2>
+        <p className="sub">Rendered offscreen by the WebGL2 SDF shader pipeline + overlay composite.</p>
+
+        <div className="modal-row">
+          <span>Format</span>
+          <div className="segment" role="group" aria-label="Format">
+            <button type="button" aria-pressed={format === 'png'} onClick={() => setFormat('png')}>
+              PNG
+            </button>
+            <button type="button" aria-pressed={format === 'webm'} onClick={() => setFormat('webm')}>
+              Video
+            </button>
+          </div>
+        </div>
+
+        <div className="modal-row">
+          <span>Size</span>
+          <select value={size} onChange={(e) => setSize(Number(e.target.value))} aria-label="Size">
+            {[512, 1024, 1500, 2048, 3000].map((s) => (
+              <option key={s} value={s}>
+                {s} × {s}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="modal-row">
+          <span>Transparent background</span>
+          <div className="segment">
+            <button type="button" aria-pressed={!transparent} onClick={() => setTransparent(false)}>
+              No
+            </button>
+            <button type="button" aria-pressed={transparent} onClick={() => setTransparent(true)}>
+              Yes
+            </button>
+          </div>
+        </div>
+
+        {format === 'webm' && (
+          <p className="sub" style={{ marginTop: 12, marginBottom: 0 }}>
+            Video records one animation loop straight from the canvas at 30 fps.
+          </p>
+        )}
+
+        <div className="modal-actions">
+          <button type="button" className="btn btn-ghost" onClick={onClose}>
+            Cancel
+          </button>
+          <button
+            type="button"
+            className="btn btn-primary"
+            disabled={busy}
+            onClick={() => onExport(format, size, transparent)}
+          >
+            {busy ? 'Rendering…' : format === 'png' ? 'Download PNG' : 'Record video'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function MarkPickerDialog({
+  open,
+  onClose,
+  onSelect,
+  onUploadFile,
+}: {
+  open: boolean;
+  onClose: () => void;
+  onSelect: (mark: ActiveMark) => void;
+  onUploadFile: () => void;
+}) {
+  const { iconPacks, activeMark } = useProject();
+  const [packId, setPackId] = useState('all');
+  const [q, setQ] = useState('');
+
+  const glyphs = useMemo(() => {
+    const out: { pack: string; name: string; svg: string }[] = [];
+    const nq = q.trim().toLowerCase();
+    for (const [pid, pk] of Object.entries(iconPacks)) {
+      if (packId !== 'all' && pid !== packId) continue;
+      for (const g of pk.glyphs || []) {
+        if (nq && !g.name.toLowerCase().includes(nq) && !pid.toLowerCase().includes(nq)) continue;
+        out.push({ pack: pid, name: g.name, svg: g.svg });
+      }
+    }
+    return out.slice(0, 72);
+  }, [iconPacks, packId, q]);
+
+  if (!open) return null;
+  return (
+    <div className="modal-backdrop" onMouseDown={onClose}>
+      <div className="modal" style={{ width: 'min(640px, calc(100vw - 32px))' }} onMouseDown={(e) => e.stopPropagation()} role="dialog" aria-label="Choose Vector Mark">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+          <h2>Choose Source Mark</h2>
+          <button type="button" className="icon-button" aria-label="Close" onClick={onClose}>
+            <Icon name="x" size={16} />
+          </button>
+        </div>
+        <p className="sub">Load a Design Sourcebook mark, your custom SVG, or any verified glyph from {Object.keys(iconPacks).length} icon packs.</p>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 14 }}>
+          {CURATED_MARKS.map((m) => (
+            <button
+              key={m.id}
+              type="button"
+              className={`ds-action-btn ${activeMark.id === m.id ? 'is-primary' : ''}`}
+              onClick={() => { onSelect(m); onClose(); }}
+            >
+              {m.name}
+            </button>
+          ))}
+          <button type="button" className="ds-action-btn" onClick={() => { onClose(); onUploadFile(); }}>
+            <Icon name="upload" size={13} /> Upload SVG / PNG
+          </button>
+        </div>
+
+        <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
+          <label className="ldb-search" style={{ flex: 1 }}>
+            <Icon name="search" size={13} />
+            <input placeholder="Filter verified UI glyphs…" value={q} onChange={(e) => setQ(e.target.value)} />
+          </label>
+          <select className="ldb-select" value={packId} onChange={(e) => setPackId(e.target.value)}>
+            <option value="all">All Packs ({Object.keys(iconPacks).length})</option>
+            {Object.keys(iconPacks).sort().map((id) => (
+              <option key={id} value={id}>{id}</option>
+            ))}
+          </select>
+        </div>
+
+        <div className="icon-pick-grid">
+          {glyphs.map((g) => (
+            <button
+              key={`${g.pack}-${g.name}`}
+              type="button"
+              className="icon-pick-cell"
+              onClick={() => {
+                onSelect({
+                  id: `${g.pack}-${g.name}`,
+                  name: `${g.pack} / ${g.name}`,
+                  svg: g.svg.replace(/currentColor/gi, '#FFFFFF'),
+                  source: 'iconpack',
+                });
+                onClose();
+              }}
+            >
+              <span style={{ color: '#fafafa', display: 'grid', placeItems: 'center' }} dangerouslySetInnerHTML={{ __html: g.svg }} />
+              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>{g.name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
