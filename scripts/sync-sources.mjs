@@ -38,6 +38,8 @@ function argVal(f, fallback = undefined) {
 }
 
 const DRY_RUN = hasFlag("dry-run");
+const FORCE = hasFlag("force");
+const INCLUDE_NPM = hasFlag("include-npm");
 const CUSTOM_URL = argVal("url", "");
 const CUSTOM_REPO = argVal("repo", "");
 const CUSTOM_PKG = argVal("package", "");
@@ -47,7 +49,7 @@ const CUSTOM_ORG = argVal("org", "");
 const SHOULD_INGEST = hasFlag("ingest") || Boolean(CUSTOM_URL || CUSTOM_REPO || CUSTOM_PKG);
 const RETRY_BLOCKED = hasFlag("retry-blocked");
 const SKIP_BUILD = hasFlag("no-build");
-const LIMIT = Math.max(1, Number(argVal("limit", 10)) || 10);
+const LIMIT = Math.max(1, Number(argVal("limit", 5)) || 5);
 
 function decodeHtml(s) {
   return String(s || "")
@@ -304,7 +306,11 @@ function runNode(scriptRel, args = [], timeout = 120_000) {
 }
 
 function tryIngestCandidate(c) {
-  const preExists = fs.existsSync(path.join(ROOT, "systems", c.slug));
+  const destDir = path.join(ROOT, "systems", c.slug);
+  const preExists = fs.existsSync(destDir);
+  if (preExists && !FORCE) {
+    return { ok: false, reason: `system "${c.slug}" already exists (pass --force to overwrite)` };
+  }
   try {
     if (c.pkg) {
       runNode("scripts/ingest-npm.mjs", [c.pkg, "--slug", c.slug, "--org", c.org, "--name", c.name]);
@@ -316,18 +322,22 @@ function tryIngestCandidate(c) {
       return { ok: false, reason: "no ingestible URL or package" };
     }
   } catch (err) {
-    if (!preExists) fs.rmSync(path.join(ROOT, "systems", c.slug), { recursive: true, force: true });
+    if (!preExists) fs.rmSync(destDir, { recursive: true, force: true });
     return { ok: false, reason: err.message };
   }
 
   const md = readDesign(c.slug);
-  const manPath = path.join(ROOT, "systems", c.slug, "manifest.json");
+  const manPath = path.join(destDir, "manifest.json");
   if (!md || !fs.existsSync(manPath)) return { ok: false, reason: "no manifest emitted" };
   const man = JSON.parse(fs.readFileSync(manPath, "utf8"));
   const report = lint(md, { name: c.slug });
-  if (report.counts.errors > 0 || (man.tokens?.colors || 0) < 3) {
-    if (!preExists) fs.rmSync(path.join(ROOT, "systems", c.slug), { recursive: true, force: true });
-    return { ok: false, reason: `insufficient tokens (${man.tokens?.colors || 0} colors, ${report.counts.errors} lint errors)` };
+  const hasWpJunk = /e-global-color|the7-|elementor/i.test(md);
+  if (!report.verified || (man.tokens?.colors || 0) < 8 || hasWpJunk) {
+    if (!preExists) fs.rmSync(destDir, { recursive: true, force: true });
+    return {
+      ok: false,
+      reason: `quality gate rejected (${man.tokens?.colors || 0} colors, ${report.counts.errors}e/${report.counts.warnings}w${hasWpJunk ? ", placeholder CSS" : ""})`,
+    };
   }
   return { ok: true, tokens: man.tokens };
 }
@@ -390,11 +400,13 @@ async function main() {
   }
 
   let npmCandidates = [];
-  try {
-    npmCandidates = await fetchNpmDesignTokenCandidates();
-    console.log(`  ok    ${"npm-registry".padEnd(20)} ${String(npmCandidates.length).padStart(3)} candidate packages`);
-  } catch (err) {
-    console.log(`  warn  ${"npm-registry".padEnd(20)} fetch failed (${err.message})`);
+  if (INCLUDE_NPM) {
+    try {
+      npmCandidates = await fetchNpmDesignTokenCandidates();
+      console.log(`  ok    ${"npm-registry".padEnd(20)} ${String(npmCandidates.length).padStart(3)} candidate packages`);
+    } catch (err) {
+      console.log(`  warn  ${"npm-registry".padEnd(20)} fetch failed (${err.message})`);
+    }
   }
 
   // Known inventory & blocked list

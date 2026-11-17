@@ -33,7 +33,7 @@ on:
       limit:
         description: Maximum new external systems to auto-ingest per run
         required: false
-        default: "10"
+        default: "5"
         type: string
       dry_run:
         description: Only check external sources without committing changes
@@ -60,7 +60,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ARGS=("--limit" "${{ github.event.inputs.limit || '10' }}")
+          ARGS=("--limit" "${{ github.event.inputs.limit || '5' }}")
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS+=("--dry-run")
           else
