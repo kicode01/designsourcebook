@@ -674,7 +674,7 @@ function buildSysSvg(spec,g,px,color,copyable){
   const col=color||'currentColor';
   if(g&&g.body){
     const rootFill=g.fill==='none'?'none':safeCss(col);
-    const useStroke=Boolean(g.stroke)||(!/stroke=/i.test(g.body)&&g.fill==='none');
+    const useStroke=Boolean(g.stroke)||(g.fill==='none'&&!/\b(?:stroke|fill)=/i.test(g.body));
     const sw=g.strokeWidth||(Number(s.strokeWidth)>0?s.strokeWidth:1.75);
     const lc=g.strokeLinecap||s.strokeLinecap||'round';
     const lj=g.strokeLinejoin||s.strokeLinejoin||'round';
