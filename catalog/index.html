@@ -492,9 +492,12 @@ function bodyType(p){
     || p.type.find(t=>t.fontFamily&&!/^(system-ui|inherit|sans-serif)$/i.test(t.fontFamily))
     || p.type.find(t=>t.fontFamily);
   const fallbackFam=famTok?famTok.fontFamily:'system-ui';
-  const sized=p.type.filter(t=>t.fontSize&&!/^html$/i.test(t.name));
-  const picked=sized.find(t=>t.name==='body') || sized.find(t=>/body|base|regular|default|text-md|font-size-100|font-size-base/.test(t.name))
-    || sized.find(t=>pxOf(t)>=14&&pxOf(t)<=16&&!/mono|code/i.test(t.name)) || sized[0] || {px:14,fontFamily:fallbackFam,fontWeight:400};
+  const sized=p.type.filter(t=>(t.fontSize||Number.isFinite(t.px))&&!/^(html|line-height)/i.test(t.name));
+  const picked=sized.find(t=>t.name==='body'&&pxOf(t)>=10&&pxOf(t)<=22)
+    || sized.find(t=>/body|base|regular|default|text-md|font-size-100|font-size-base/.test(t.name)&&pxOf(t)>=12&&pxOf(t)<=20)
+    || sized.find(t=>pxOf(t)>=14&&pxOf(t)<=16&&!/mono|code/i.test(t.name))
+    || sized.find(t=>pxOf(t)>=12&&pxOf(t)<=19&&!/mono|code/i.test(t.name))
+    || {px:14,fontFamily:fallbackFam,fontWeight:400};
   return (!picked.fontFamily||picked.fontFamily==='system-ui'||(/mono|code/i.test(picked.name)&&fallbackFam!==picked.fontFamily))&&fallbackFam!=='system-ui' ? Object.assign({},picked,{fontFamily:fallbackFam}) : picked;
 }
 function displayType(p){
@@ -503,9 +506,11 @@ function displayType(p){
     || p.type.find(t=>t.fontFamily&&!/^(system-ui|inherit|sans-serif)$/i.test(t.fontFamily)&&!/mono|code/i.test(t.name+' '+t.fontFamily))
     || p.type.find(t=>t.fontFamily);
   const fallbackFam=famTok?famTok.fontFamily:'system-ui';
-  const sized=p.type.filter(t=>t.fontSize&&!/^html$/i.test(t.name));
-  const picked=sized.find(t=>/display-xl|display-large|display$/.test(t.name))
-    || sized.find(t=>/display|heading|^h1|title|hero/.test(t.name))
+  const sized=p.type.filter(t=>(t.fontSize||Number.isFinite(t.px))&&!/^(html|line-height)/i.test(t.name));
+  const bySize=sized.slice().sort((a,b)=>pxOf(b)-pxOf(a));
+  const picked=sized.find(t=>/display-xl|display-large|display$/.test(t.name)&&pxOf(t)>=18)
+    || sized.find(t=>/display|heading|^h1|title|hero/.test(t.name)&&pxOf(t)>=18)
+    || bySize.find(t=>pxOf(t)>=18)
     || sized[0] || {px:38,fontWeight:600,fontFamily:fallbackFam,lineHeight:1.15};
   return (!picked.fontFamily||picked.fontFamily==='system-ui'||(/mono|code/i.test(picked.name)&&fallbackFam!==picked.fontFamily))&&fallbackFam!=='system-ui' ? Object.assign({},picked,{fontFamily:fallbackFam}) : picked;
 }
@@ -584,7 +589,7 @@ function btnStyle(p,c,small,backdrop){
     'font-size:'+fs+'px',
     'font-weight:'+safeCss(t.fontWeight||500),
     'line-height:1.2',
-    'letter-spacing:'+safeCss(t.letterSpacing||'normal'),
+    'letter-spacing:'+safeCss(scaledTracking(t)),
     'white-space:nowrap','cursor:pointer','display:inline-flex','align-items:center','gap:5px','flex-shrink:0','max-width:100%','overflow:hidden','text-overflow:ellipsis'
   ].join(';');
 }
@@ -664,6 +669,7 @@ function cleanFontLabel(ff){
   if(/^(sans-serif|inherit)$/i.test(first)) return 'System Sans';
   if(/^(ui-monospace|SFMono-Regular|monospace)$/i.test(first)) return 'System Mono';
   if(/^(ui-serif|serif)$/i.test(first)) return 'System Serif';
+  if(/^ms_sans_serif$/i.test(first)) return 'MS Sans Serif';
   return /^[a-z]/.test(first)&&!/[-_]/.test(first)?first.charAt(0).toUpperCase()+first.slice(1):first;
 }
 function scaledTracking(tok){
