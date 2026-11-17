@@ -2529,7 +2529,7 @@ function buildLogoDbShell(){
   logoState.shellBuilt=true;
   const packCount=Object.keys(ICON_PACKS).length||57;
   logosEl.innerHTML=
-    '<div class="meta"><h1>Logo Database</h1><em id="ldbMetaRight">1,432 brand marks \u00b7 '+packCount+' UI icon packs \u00b7 Neon Postgres</em></div>'+
+    '<div class="meta"><h1>Logo Database</h1><em id="ldbMetaRight"></em></div>'+
     '<div class="cov-sum" id="ldbStats"></div>'+
     '<div class="rk-controls">'+
       '<div class="seg" role="tablist" aria-label="Logo Database Collection">'+
@@ -2727,7 +2727,7 @@ function renderBrandLogoGrid(){
   if(metaRight){
     const start=(logoState.page-1)*logoState.limit+1;
     const end=Math.min(logoState.total,start+items.length-1);
-    metaRight.textContent=items.length?(start+'\u2013'+end+' of '+logoState.total+' marks \u00b7 Neon Postgres'):'0 matched marks';
+    metaRight.textContent=items.length?(start+'\u2013'+end+' of '+logoState.total):'0';
   }
   if(!items.length){
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No logos matched those filters.</div>';
@@ -2792,7 +2792,7 @@ function renderIconPackGrid(){
   const slice=entries.slice(startIdx,startIdx+logoState.iconLimit);
   const metaRight=document.getElementById('ldbMetaRight');
   if(metaRight){
-    metaRight.textContent=total?((startIdx+1)+'\u2013'+(startIdx+slice.length)+' of '+total+' verified UI glyphs'):'0 matched glyphs';
+    metaRight.textContent=total?((startIdx+1)+'\u2013'+(startIdx+slice.length)+' of '+total):'0';
   }
 
   if(!slice.length){
