@@ -92,9 +92,7 @@
   .card-body{padding:13px 15px 14px;display:flex;flex-direction:column;flex:1}
   .card-top{display:flex;align-items:center;gap:8px;margin-bottom:6px}
   .card-top h2{font-size:14px;font-weight:560;margin:0;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .dot{width:6px;height:6px;border-radius:50%;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
-  .vtag{margin-left:auto;display:inline-flex;align-items:center;gap:4.5px;font-size:10px;font-family:var(--mono);letter-spacing:.02em;padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--dim);flex:none}
-  .vtag::before{content:'';width:4.5px;height:4.5px;border-radius:50%;background:currentColor}
+  .vtag{margin-left:auto;display:inline-flex;align-items:center;font-size:10px;font-family:var(--mono);letter-spacing:.02em;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--dim);flex:none}
   .vtag.ok{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 28%,transparent);background:color-mix(in srgb,var(--ok) 6%,transparent)}
   .vtag.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 28%,transparent);background:color-mix(in srgb,var(--warn) 6%,transparent)}
   .card-desc{font-size:12px;color:var(--dim);line-height:1.48;margin:0 0 12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:35px}
@@ -623,10 +621,9 @@ function renderBadge(p,c,small,backdrop){
   const fg=rawFg||ink(over(bg,surf));
   const shown=readable(fg,over(bg,surf));
   const br=(c&&c.rounded)?thumbRadius(c.rounded,999):'999px';
-  return '<span style="display:inline-flex;align-items:center;gap:4.5px;background:'+safeCss(bg)+';color:'+safeCss(shown)+
+  return '<span style="display:inline-flex;align-items:center;background:'+safeCss(bg)+';color:'+safeCss(shown)+
     ';border-radius:'+safeCss(small?br:(c&&c.rounded?c.rounded:'999px'))+';padding:'+(small?'3px 8px':(c&&c.padding?safeCss(c.padding):'4px 10px'))+
     ';font-family:'+fontStack(t.fontFamily)+';font-size:'+(small?10:11)+'px;font-weight:500;white-space:nowrap;flex-shrink:0">'+
-    '<span style="width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.85"></span>'+
     badgeCopy(c&&c.key)+'</span>';
 }
 function renderCardBox(p){
@@ -913,7 +910,7 @@ function card(d){
     '<div class="stage" style="background:'+safeCss(d.canvas)+'">'+stageFor(d)+'</div>'+
     '<div class="strip">'+strip.map(v=>'<i style="background:'+safeCss(v)+'"></i>').join('')+'</div>'+
     '<div class="card-body">'+
-      '<div class="card-top"><span class="dot" style="background:'+safeCss(d.brand)+'"></span><h2 style="font-family:'+fontStack(displayType(d).fontFamily)+'">'+esc(d.name)+'</h2>'+
+      '<div class="card-top"><h2 style="font-family:'+fontStack(displayType(d).fontFamily)+'">'+esc(d.name)+'</h2>'+
       '<span class="vtag '+(d.verified?'ok':'warn')+'">'+(d.verified?'Verified':d.warnings+' warn')+'</span></div>'+
       '<p class="card-desc">'+esc(d.style)+'</p>'+
       '<div class="card-foot">'+
