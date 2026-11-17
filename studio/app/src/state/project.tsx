@@ -135,12 +135,11 @@ const ProjectContext = createContext<ProjectContextValue | null>(null);
 
 const STORAGE_KEY = 'ds_studio_project_v1';
 
-function readInitialHashSeed(): string | null {
+function readHashParams(): URLSearchParams | null {
   const h = window.location.hash;
   const qIdx = h.indexOf('?');
   if (qIdx === -1) return null;
-  const params = new URLSearchParams(h.slice(qIdx + 1));
-  return params.get('seed');
+  return new URLSearchParams(h.slice(qIdx + 1));
 }
 
 export function ProjectProvider({ children }: { children: ReactNode }) {
@@ -230,15 +229,59 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     } catch { /* ignore */ }
   }, [catalogSystems]);
 
+  const loadMarkFromLogoId = useCallback(async (logoId: string) => {
+    try {
+      const res = await fetch(`/api/logos?id=${encodeURIComponent(logoId)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.ok && data.logo?.svg) {
+        const normalized = String(data.logo.svg).replace(/currentColor/gi, '#FFFFFF');
+        setActiveMarkState({
+          id: data.logo.id || logoId,
+          name: data.logo.brand || logoId,
+          svg: normalized,
+          source: 'logodb',
+        });
+      }
+    } catch { /* ignore */ }
+  }, []);
+
   useEffect(() => {
-    const checkSeed = () => {
-      const seed = readInitialHashSeed();
+    const checkHashParams = () => {
+      const params = readHashParams();
+      if (!params) return;
+      const seed = params.get('seed');
       if (seed) seedFromSystemSlug(seed);
+      const logo = params.get('logo');
+      if (logo) loadMarkFromLogoId(logo);
     };
-    checkSeed();
-    window.addEventListener('hashchange', checkSeed);
-    return () => window.removeEventListener('hashchange', checkSeed);
-  }, [seedFromSystemSlug]);
+    checkHashParams();
+    window.addEventListener('hashchange', checkHashParams);
+    return () => window.removeEventListener('hashchange', checkHashParams);
+  }, [seedFromSystemSlug, loadMarkFromLogoId]);
+
+  useEffect(() => {
+    const syncPackMark = () => {
+      const params = readHashParams();
+      if (!params) return;
+      const packId = params.get('pack');
+      const glyphName = params.get('glyph');
+      if (!packId || !glyphName) return;
+      const pk = iconPacks[packId];
+      if (!pk?.glyphs?.length) return;
+      const g = pk.glyphs.find((x) => x.name === glyphName);
+      if (!g) return;
+      setActiveMarkState({
+        id: `${packId}-${glyphName}`,
+        name: `${packId} / ${glyphName}`,
+        svg: glyphToSvg(g, pk.grid || 24, '#FFFFFF').replace(/currentColor/gi, '#FFFFFF'),
+        source: 'iconpack',
+      });
+    };
+    syncPackMark();
+    window.addEventListener('hashchange', syncPackMark);
+    return () => window.removeEventListener('hashchange', syncPackMark);
+  }, [iconPacks]);
 
   const compiledSystem = useMemo(() => compileDesignSystem(designSystem), [designSystem]);
 

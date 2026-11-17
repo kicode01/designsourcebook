@@ -1,11 +1,10 @@
 import { Icon } from './icons';
 import { useProject } from '../state/project';
 
-export type Product = 'systems' | 'logos' | 'create' | 'logofx' | 'brand';
+export type Product = 'systems' | 'create' | 'logofx' | 'brand';
 
 const PRODUCTS: { id: Product; label: string; href: string }[] = [
   { id: 'systems', label: 'System Maker', href: '#/systems' },
-  { id: 'logos', label: 'Logo DB', href: '#/logos' },
   { id: 'create', label: 'Logo Maker', href: '#/create' },
   { id: 'logofx', label: 'LogoFX', href: '#/logofx' },
   { id: 'brand', label: 'Brand Maker', href: '#/brand' },
@@ -81,6 +80,15 @@ export function TopBar({
 
       <div className="studio-top-actions">
         {extraActions}
+        <a
+          className="product-switcher"
+          href="../#/logos"
+          style={{ fontSize: 11.5, padding: '4px 10px' }}
+          title="Open 1,432 Logos & 57 Icon Packs Database in Catalog"
+        >
+          <span>Logos</span>
+          <Icon name="arrowUpRight" size={12} />
+        </a>
         <a
           className="product-switcher"
           href="../"

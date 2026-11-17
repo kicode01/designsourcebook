@@ -82,14 +82,18 @@ function download(blob: Blob, name: string) {
 function recolorSvg(svgText: string, inkHex: string): string {
   return svgText
     .replace(/currentColor/gi, inkHex)
-    .replace(/fill="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `fill="${inkHex}"`);
+    .replace(/fill="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `fill="${inkHex}"`)
+    .replace(/stroke="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `stroke="${inkHex}"`);
 }
 
 function fitSvg(svgText: string, inkHex: string): string {
   const colored = recolorSvg(svgText, inkHex);
-  return colored
+  let out = colored
     .replace(/\swidth="[^"]*"/i, ' width="100%"')
     .replace(/\sheight="[^"]*"/i, ' height="100%"');
+  if (!/\swidth=/i.test(out)) out = out.replace(/<svg\b/i, '<svg width="100%"');
+  if (!/\sheight=/i.test(out)) out = out.replace(/<svg\b/i, '<svg height="100%"');
+  return out;
 }
 
 function loadImage(src: string): Promise<HTMLImageElement> {

@@ -84,7 +84,7 @@
   html.sys-active .ds-s3{fill:var(--ds-c3,var(--accent))}
   .brand b{font-family:var(--display);font-size:14px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
 
-  .search{flex:1;position:relative;max-width:340px;margin-left:6px}
+  .search{flex:1;position:relative;min-width:170px;max-width:280px;margin-left:6px}
   .search input{width:100%;background:color-mix(in srgb,var(--ink) 4%,transparent);border:1px solid var(--line);border-radius:999px;padding:6.5px 34px 6.5px 32px;color:var(--ink);font-family:var(--sans);font-size:12.5px;outline:none;transition:border-color var(--t-ui),background-color var(--t-ui),color var(--t-theme)}
   .search input:focus{border-color:var(--line2);background:color-mix(in srgb,var(--ink) 6.5%,transparent)}
   .search input::placeholder{color:var(--dim2)}
@@ -92,8 +92,8 @@
   .search kbd{position:absolute;right:9px;top:50%;transform:translateY(-50%);font:10px var(--mono);color:var(--dim2);background:color-mix(in srgb,var(--ink) 5%,transparent);border:1px solid var(--line);border-radius:4px;padding:1px 5px;pointer-events:none;transition:border-color var(--t-theme),color var(--t-theme),background-color var(--t-theme)}
 
   .seg{display:inline-flex;align-items:center;gap:2px;padding:3px;border-radius:999px;background:color-mix(in srgb,var(--ink) 3.5%,transparent);border:1px solid var(--line);transition:background-color var(--t-theme),border-color var(--t-theme)}
-  .seg-right{margin-left:auto;display:flex;align-items:center;gap:8px}
-  .chip{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:500;color:var(--dim);border:1px solid transparent;transition:color var(--t-ui),background-color var(--t-ui),box-shadow var(--t-ui),transform .12s var(--ease-out);white-space:nowrap}
+  .seg-right{margin-left:auto;display:flex;align-items:center;gap:2px}
+  .chip{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:500;color:var(--dim);border:1px solid transparent;transition:color var(--t-ui),background-color var(--t-ui),box-shadow var(--t-ui),transform .12s var(--ease-out);white-space:nowrap}
   .chip svg{width:12px;height:12px;flex:none}
   .chip:hover{color:var(--ink)}
   .chip:active{transform:scale(.97)}
@@ -292,7 +292,63 @@
   .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,10px);background:#18181c;color:#fafafa;border:1px solid rgba(255,255,255,.12);font-family:var(--sans);font-size:12px;font-weight:500;padding:8px 14px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .16s,transform .16s;z-index:70;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis}
   .toast svg{width:13px;height:13px;flex:none;color:#10b981}
   .toast.on{opacity:1;transform:translate(-50%,0)}
-  @media (max-width:860px){
+  /* ---------- logo database & construction anatomy ---------- */
+  .ldb-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+  .ldb-search-local{position:relative;flex:1;min-width:220px;max-width:360px}
+  .ldb-search-local svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:13px;height:13px;color:var(--dim2);pointer-events:none}
+  .ldb-search-local input{width:100%;height:32px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:0 12px 0 32px;color:var(--ink);font-family:var(--sans);font-size:12px;outline:none;transition:border-color var(--t-ui)}
+  .ldb-search-local input:focus{border-color:var(--line2)}
+  .ldb-search-local input::placeholder{color:var(--dim2)}
+  .ldb-select{height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-family:var(--sans);font-size:12px;outline:none;cursor:pointer;transition:border-color var(--t-ui)}
+  .ldb-select:hover,.ldb-select:focus{border-color:var(--line2)}
+  .ldb-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:18px;align-items:start}
+  @media (max-width:1080px){.ldb-layout{grid-template-columns:1fr}}
+  .ldb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(174px,1fr));gap:10px}
+  .ldb-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:11px;display:flex;flex-direction:column;gap:8px;text-align:left;cursor:pointer;transition:border-color var(--t-ui),transform .18s var(--ease-out),box-shadow .18s var(--ease-out);min-width:0}
+  .ldb-card:hover{border-color:var(--line2);transform:translateY(-1.5px)}
+  .ldb-card[aria-current="true"]{border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+  .ldb-stage{height:90px;border-radius:8px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden;border:1px solid rgba(0,0,0,.06)}
+  .ldb-stage.is-dark{background:#15151a;color:#fafafa;border-color:var(--line)}
+  .ldb-stage svg{max-width:100%;max-height:100%;width:auto;height:auto;display:block;flex:none}
+  .ldb-card-head{display:flex;align-items:center;justify-content:space-between;gap:6px;min-width:0}
+  .ldb-card-head strong{font-size:12.5px;font-weight:560;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ldb-badge{font-size:9.5px;font-family:var(--mono);padding:2px 6px;border-radius:999px;border:1px solid var(--line);color:var(--dim);white-space:nowrap;flex:none}
+  .ldb-badge.is-star{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 38%,transparent);background:color-mix(in srgb,var(--warn) 10%,transparent)}
+  .ldb-note{font-size:11px;color:var(--dim);line-height:1.42;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:31px}
+  .ldb-foot{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:auto;padding-top:6px;border-top:1px solid var(--line);font-size:10px;font-family:var(--mono);color:var(--dim2)}
+
+  .ldb-inspector{position:sticky;top:70px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;display:flex;flex-direction:column}
+  .ldb-insp-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:12px}
+  .ldb-insp-head b{font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ldb-insp-body{padding:14px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 140px);overflow-y:auto}
+  .ldb-xray{position:relative;height:218px;border-radius:10px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;padding:22px;overflow:hidden;border:1px solid var(--line)}
+  .ldb-xray.is-dark{background:#0b0b0e;color:#fafafa}
+  .ldb-xray-mark{width:100%;height:100%;display:grid;place-items:center}
+  .ldb-xray-mark svg{max-width:100%;max-height:100%;width:auto;height:auto}
+  .ldb-xray-overlay{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);pointer-events:none}
+  .ldb-scales{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .ldb-scale-cell{background:color-mix(in srgb,var(--ink) 3%,transparent);border:1px solid var(--line);border-radius:8px;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}
+  .ldb-scale-stage{height:52px;width:100%;display:grid;place-items:center}
+  .ldb-scale-box{display:grid;place-items:center;border-radius:4px;overflow:hidden;background:#ffffff;padding:2px}
+  .ldb-xray.is-dark ~ .ldb-scales .ldb-scale-box,.ldb-scale-box.is-dark{background:#18181c}
+  .ldb-scale-cell span{font-size:10px;font-family:var(--mono);color:var(--dim2)}
+  .ldb-sec-title{font-size:10px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--dim2);margin-bottom:6px}
+  .ldb-kv{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--line);font-size:11.5px;gap:8px}
+  .ldb-kv:last-child{border-bottom:0}
+  .ldb-kv span{color:var(--dim)}
+  .ldb-kv b{color:var(--ink);font-family:var(--mono);font-size:11px;font-weight:500;text-align:right}
+  .ldb-findings{display:flex;flex-direction:column;gap:5px}
+  .ldb-finding{font-size:11px;line-height:1.42;padding:6px 8px;border-radius:7px;border:1px solid var(--line);color:var(--dim);background:color-mix(in srgb,var(--ink) 2.5%,transparent)}
+  .ldb-finding.is-pass{border-color:color-mix(in srgb,var(--ok) 35%,transparent);color:var(--ok)}
+  .ldb-finding.is-warn{border-color:color-mix(in srgb,var(--warn) 35%,transparent);color:var(--warn)}
+  .ldb-finding.is-fail{border-color:rgba(244,63,94,.4);color:#fb7185}
+  .ldb-swatches{display:flex;flex-wrap:wrap;gap:6px}
+  .ldb-swatch-btn{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);font-size:10.5px;font-family:var(--mono);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui)}
+  .ldb-swatch-btn:hover{border-color:var(--line2);color:var(--ink)}
+  .ldb-swatch-btn i{width:10px;height:10px;border-radius:3px;border:1px solid var(--line2);display:inline-block}
+  .ldb-actions{display:grid;gap:7px}
+
+  @media (max-width:1120px){
     .bar{flex-wrap:wrap;gap:10px;padding:10px 16px}
     .search{order:3;max-width:none;flex-basis:100%;margin-left:0}
     .seg-right{margin-left:0}
@@ -347,10 +403,11 @@
       <button class="chip" data-f="listed" aria-pressed="false" style="display:none">Listed</button>
     </div>
     <div class="seg seg-right">
-      <button class="chip" id="catBtn" aria-pressed="true">Catalog</button>
+      <button class="chip" id="catBtn" aria-pressed="true">Systems</button>
+      <button class="chip" id="logosBtn" aria-pressed="false">Logos</button>
       <button class="chip" id="rankBtn" aria-pressed="false">Ranking</button>
       <button class="chip" id="viewBtn" aria-pressed="false">Coverage</button>
-      <a class="chip" href="./studio/#/systems" title="Design Sourcebook Studio (System Maker, Logo DB, LogoFX, Brand Maker)">Studio ↗</a>
+      <a class="chip" href="./studio/#/systems" title="Design Sourcebook Studio (System Maker, Logo Maker, LogoFX, Brand Maker)">Studio ↗</a>
     </div>
   </div>
 </header>
@@ -362,13 +419,14 @@
     <div id="pager"></div>
     <div class="empty" id="empty" style="display:none">No design systems matched your query.</div>
   </div>
+  <div id="logosView" style="display:none"></div>
   <div id="ranking" style="display:none"></div>
   <div id="coverage" style="display:none"></div>
   <div class="detail" id="detail"></div>
 </main>
 
 <footer>
-  Specimens are rendered live from each system's verified tokens — colours, typography scales, corner geometry, and component values.
+  Specimens are rendered live from verified system tokens, 1,432 indexed brand marks, and 57 official SVG icon packages — educational &amp; engineering reference.
 </footer>
 
 <div class="toast" id="toast">Copied</div>
@@ -2097,9 +2155,606 @@ function renderCoverage(){
   });
 }
 
+/* ---------- logo database & construction anatomy ---------- */
+const logosEl=document.getElementById('logosView');
+const CLEAN_ANGLES=[0,15,30,45,60,75,90,105,120,135,150,165,180];
+const logoState={
+  subTab:'logos',
+  q:'',
+  industry:'',
+  markType:'',
+  technique:'',
+  onlyExemplary:false,
+  packFilter:'all',
+  page:1,
+  limit:36,
+  total:0,
+  items:[],
+  stats:null,
+  loading:false,
+  selected:null,
+  selectedPackItem:null,
+  xrayDark:false,
+  showGrid:true,
+  showAnchors:true,
+  shellBuilt:false,
+  fetchToken:0,
+  debounceT:null
+};
+
+function scopeSvgIds(svgText,prefix){
+  let out=String(svgText||'');
+  const ids=[];
+  out.replace(/\bid=["']([^"']+)["']/gi,(_,id)=>{ ids.push(id); return _; });
+  if(ids.length){
+    ids.forEach(id=>{
+      const scoped=prefix+'_'+id;
+      const escId=id.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      out=out
+        .replace(new RegExp('id=["\']'+escId+'["\']','g'),'id="'+scoped+'"')
+        .replace(new RegExp('url\\(#'+escId+'\\)','g'),'url(#'+scoped+')')
+        .replace(new RegExp('(xlink:href|href)=["\']#'+escId+'["\']','g'),'$1="#'+scoped+'"');
+    });
+  }
+  return out;
+}
+
+function ensureSvgBox(svgText,fillMode,fixedSize){
+  let out=String(svgText||'').trim();
+  if(!/^<svg\b/i.test(out)) return out;
+  if(!/\bviewBox=/i.test(out)){
+    const wm=out.match(/\bwidth=["']([\d.]+)/i);
+    const hm=out.match(/\bheight=["']([\d.]+)/i);
+    const w=(wm&&parseFloat(wm[1]))||256;
+    const h=(hm&&parseFloat(hm[1]))||256;
+    out=out.replace(/<svg\b/i,'<svg viewBox="0 0 '+w+' '+h+'"');
+  }
+  if(fillMode||fixedSize){
+    const wAttr=fixedSize?(fixedSize+'px'):'100%';
+    const hAttr=fixedSize?(fixedSize+'px'):'100%';
+    out=out
+      .replace(/\swidth=["'][^"']*["']/i,'')
+      .replace(/\sheight=["'][^"']*["']/i,'')
+      .replace(/<svg\b/i,'<svg width="'+wAttr+'" height="'+hAttr+'"');
+  }
+  return out;
+}
+
+function parseLogoAnatomy(svgText){
+  const parser=new DOMParser();
+  const doc=parser.parseFromString(String(svgText||''),'image/svg+xml');
+  const root=doc.documentElement;
+  let vb=[0,0,256,256];
+  if(root && !doc.querySelector('parsererror')){
+    const rawVb=(root.getAttribute('viewBox')||'').trim().split(/[\s,]+/).map(Number);
+    if(rawVb.length===4 && rawVb.every(Number.isFinite) && rawVb[2]>0 && rawVb[3]>0){
+      vb=rawVb;
+    }else{
+      const w=parseFloat(root.getAttribute('width')||'256')||256;
+      const h=parseFloat(root.getAttribute('height')||'256')||256;
+      vb=[0,0,w,h];
+    }
+  }
+  const anchors=[];
+  const handles=[];
+  const anglesSet=new Set();
+  const colorSet=new Set();
+  const findings=[];
+  if(!root || root.localName!=='svg' || doc.querySelector('parsererror')){
+    return {viewBox:vb,shapes:0,anchors,handles,anglesDeg:[],colors:[],score:0,findings:[{level:'fail',message:'Could not parse SVG document.'}]};
+  }
+  const shapeEls=[...root.querySelectorAll('path,rect,circle,ellipse,polygon,polyline,line')];
+  const hasText=root.querySelectorAll('text,tspan').length>0;
+  const hasFilter=root.querySelectorAll('filter').length>0;
+  const hasRaster=root.querySelectorAll('image').length>0;
+  root.querySelectorAll('[fill],[stroke],stop').forEach(el=>{
+    [el.getAttribute('fill'),el.getAttribute('stroke'),el.getAttribute('stop-color')].forEach(c=>{
+      if(c && /^#|^rgb|^hsl/i.test(c.trim()) && !/^(none|transparent|currentcolor)$/i.test(c.trim())){
+        colorSet.add(c.trim().toLowerCase());
+      }
+    });
+  });
+  const recordAngle=(a,b)=>{
+    const dx=b.x-a.x, dy=b.y-a.y;
+    if(Math.hypot(dx,dy)<0.01) return;
+    let deg=Math.abs((Math.atan2(dy,dx)*180)/Math.PI);
+    if(deg>180) deg-=180;
+    anglesSet.add(Math.round(deg*10)/10);
+  };
+  for(const el of shapeEls){
+    const tag=el.localName;
+    if(tag==='rect'){
+      const x=parseFloat(el.getAttribute('x')||'0'), y=parseFloat(el.getAttribute('y')||'0');
+      const w=parseFloat(el.getAttribute('width')||'0'), h=parseFloat(el.getAttribute('height')||'0');
+      anchors.push({x,y},{x:x+w,y},{x:x+w,y:y+h},{x,y:y+h});
+      anglesSet.add(0); anglesSet.add(90);
+    }else if(tag==='circle'){
+      const cx=parseFloat(el.getAttribute('cx')||'0'), cy=parseFloat(el.getAttribute('cy')||'0'), r=parseFloat(el.getAttribute('r')||'0');
+      anchors.push({x:cx,y:cy-r},{x:cx+r,y:cy},{x:cx,y:cy+r},{x:cx-r,y:cy});
+    }else if(tag==='path'){
+      const d=el.getAttribute('d')||'';
+      const toks=d.match(/[a-zA-Z]|-?\d*\.?\d+(?:e[-+]?\d+)?/g)||[];
+      let idx=0, cx=0, cy=0, sx=0, sy=0, cmd='M';
+      const num=()=>Number(toks[idx++]||0);
+      while(idx<toks.length){
+        if(/^[a-zA-Z]$/.test(toks[idx])){
+          cmd=toks[idx++];
+          if(cmd==='Z'||cmd==='z'){ recordAngle({x:cx,y:cy},{x:sx,y:sy}); cx=sx; cy=sy; continue; }
+        }
+        const rel=cmd>='a' && cmd<='z';
+        const op=cmd.toUpperCase();
+        if(op==='M'||op==='L'){
+          const x=num()+(rel?cx:0), y=num()+(rel?cy:0);
+          if(op==='L') recordAngle({x:cx,y:cy},{x,y});
+          else { sx=x; sy=y; }
+          cx=x; cy=y; anchors.push({x,y});
+          if(cmd==='M') cmd='L'; if(cmd==='m') cmd='l';
+        }else if(op==='H'){
+          const x=num()+(rel?cx:0); recordAngle({x:cx,y:cy},{x,y:cy}); cx=x; anchors.push({x:cx,y:cy});
+        }else if(op==='V'){
+          const y=num()+(rel?cy:0); recordAngle({x:cx,y:cy},{x:cx,y}); cy=y; anchors.push({x:cx,y:cy});
+        }else if(op==='Q'){
+          const qx=num()+(rel?cx:0), qy=num()+(rel?cy:0), x=num()+(rel?cx:0), y=num()+(rel?cy:0);
+          handles.push({anchor:{x,y},control:{x:qx,y:qy}}); anchors.push({x,y}); cx=x; cy=y;
+        }else if(op==='C'){
+          const x1=num()+(rel?cx:0), y1=num()+(rel?cy:0), x2=num()+(rel?cx:0), y2=num()+(rel?cy:0), x=num()+(rel?cx:0), y=num()+(rel?cy:0);
+          handles.push({anchor:{x:cx,y:cy},control:{x:x1,y:y1}},{anchor:{x,y},control:{x:x2,y:y2}});
+          anchors.push({x,y}); cx=x; cy=y;
+        }else if(op==='A'){
+          num(); num(); num(); num(); num();
+          const x=num()+(rel?cx:0), y=num()+(rel?cy:0);
+          anchors.push({x,y}); cx=x; cy=y;
+        }else{ idx++; }
+      }
+    }
+  }
+  let score=100;
+  if(hasText){ score-=25; findings.push({level:'fail',message:'Contains live <text>: final logos should convert type to outlined paths.'}); }
+  if(hasRaster){ score-=30; findings.push({level:'fail',message:'Contains embedded raster <image> rather than pure vectors.'}); }
+  if(hasFilter){ score-=10; findings.push({level:'warn',message:'Uses SVG <filter> effects; maintain a flat vector master alongside.'}); }
+  if(colorSet.size>4){ score-=10; findings.push({level:'warn',message:colorSet.size+' colours detected (~75% of enduring logos use \u2264 3).'}); }
+  if(anchors.length>160){ score-=10; findings.push({level:'warn',message:anchors.length+' anchors may plug counters at 16px favicon scale.'}); }
+  const nearMiss=[...anglesSet].filter(a=>CLEAN_ANGLES.some(clean=>{ const diff=Math.abs(a-clean); return diff>=0.4 && diff<=2.5; }));
+  if(nearMiss.length){
+    score-=6;
+    findings.push({level:'warn',message:'Near-miss angles ('+nearMiss.slice(0,3).map(d=>d+'\u00b0').join(', ')+'): snap toward 15\u00b0/30\u00b0/45\u00b0/90\u00b0 axes.'});
+  }
+  if(!findings.length){
+    findings.push({level:'pass',message:shapeEls.length+' vector element(s), '+anchors.length+' anchors, clean geometry.'});
+  }
+  return {viewBox:vb,shapes:shapeEls.length,anchors,handles,anglesDeg:[...anglesSet].sort((a,b)=>a-b),colors:[...colorSet],score:Math.max(0,score),findings};
+}
+
+function buildLogoDbShell(){
+  if(logoState.shellBuilt) return;
+  logoState.shellBuilt=true;
+  const searchIco='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
+  const packCount=Object.keys(ICON_PACKS).length||57;
+  logosEl.innerHTML=
+    '<div class="meta"><h1>Logo Database &amp; Construction Anatomy</h1><em id="ldbMetaRight">1,432 brand marks \u00b7 '+packCount+' UI icon packs \u00b7 Neon Postgres</em></div>'+
+    '<div class="cov-sum" id="ldbStats"></div>'+
+    '<div class="rk-controls">'+
+      '<div class="seg" role="tablist" aria-label="Logo Database Collection">'+
+        '<button type="button" class="chip" data-ldb-tab="logos" aria-pressed="true">Brand Marks (1,432)</button>'+
+        '<button type="button" class="chip" data-ldb-tab="icons" aria-pressed="false">UI Icon Packs ('+packCount+')</button>'+
+      '</div>'+
+      '<div class="ldb-search-local">'+searchIco+'<input id="ldbSearch" type="search" placeholder="Search brands, geometry, subject, or icon glyphs\u2026" autocomplete="off"></div>'+
+      '<select class="ldb-select" id="ldbMarkType" aria-label="Filter by mark type"><option value="">All Mark Types</option></select>'+
+      '<select class="ldb-select" id="ldbTechnique" aria-label="Filter by technique"><option value="">All Techniques</option></select>'+
+      '<select class="ldb-select" id="ldbIndustry" aria-label="Filter by industry"><option value="">All Industries</option></select>'+
+      '<select class="ldb-select" id="ldbPack" style="display:none" aria-label="Filter by icon pack"><option value="all">All Icon Packs ('+packCount+')</option></select>'+
+      '<button type="button" class="chip" id="ldbExBtn" aria-pressed="false">'+ICONS.star+' Exemplary Only</button>'+
+    '</div>'+
+    '<div class="ldb-layout">'+
+      '<div>'+
+        '<div class="ldb-grid" id="ldbGrid"></div>'+
+        '<div id="ldbPager"></div>'+
+      '</div>'+
+      '<aside class="ldb-inspector" id="ldbInspector" aria-label="SVG Construction Anatomy Inspector"></aside>'+
+    '</div>';
+
+  const packSel=document.getElementById('ldbPack');
+  Object.entries(ICON_PACKS).sort((a,b)=>a[0].localeCompare(b[0])).forEach(([id,pk])=>{
+    const opt=document.createElement('option');
+    opt.value=id;
+    opt.textContent=id+' ('+(pk.grid||24)+'px)';
+    packSel.appendChild(opt);
+  });
+
+  logosEl.querySelectorAll('[data-ldb-tab]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const next=btn.dataset.ldbTab;
+      if(logoState.subTab===next) return;
+      logoState.subTab=next;
+      syncLogoControls();
+      if(next==='logos') fetchLogos();
+      else renderIconPackGrid();
+    });
+  });
+
+  const ldbSearch=document.getElementById('ldbSearch');
+  ldbSearch.addEventListener('input',e=>{
+    logoState.q=e.target.value;
+    logoState.page=1;
+    const topQ=document.getElementById('q');
+    if(topQ && topQ.value!==logoState.q) topQ.value=logoState.q;
+    scheduleLogosRefresh();
+  });
+
+  ['ldbMarkType','ldbTechnique','ldbIndustry'].forEach((id,i)=>{
+    const keys=['markType','technique','industry'];
+    document.getElementById(id).addEventListener('change',e=>{
+      logoState[keys[i]]=e.target.value;
+      logoState.page=1;
+      fetchLogos();
+    });
+  });
+
+  packSel.addEventListener('change',e=>{
+    logoState.packFilter=e.target.value;
+    renderIconPackGrid();
+  });
+
+  document.getElementById('ldbExBtn').addEventListener('click',()=>{
+    logoState.onlyExemplary=!logoState.onlyExemplary;
+    logoState.page=1;
+    syncLogoControls();
+    fetchLogos();
+  });
+
+  renderLogoStats();
+}
+
+function scheduleLogosRefresh(){
+  if(logoState.subTab==='icons'){ renderIconPackGrid(); return; }
+  clearTimeout(logoState.debounceT);
+  logoState.debounceT=setTimeout(()=>fetchLogos(),160);
+}
+
+function syncLogoControls(){
+  if(!logoState.shellBuilt) return;
+  const isLogos=logoState.subTab==='logos';
+  logosEl.querySelectorAll('[data-ldb-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.ldbTab===logoState.subTab)));
+  document.getElementById('ldbMarkType').style.display=isLogos?'':'none';
+  document.getElementById('ldbTechnique').style.display=isLogos?'':'none';
+  document.getElementById('ldbIndustry').style.display=isLogos?'':'none';
+  document.getElementById('ldbExBtn').style.display=isLogos?'':'none';
+  document.getElementById('ldbExBtn').setAttribute('aria-pressed',String(logoState.onlyExemplary));
+  document.getElementById('ldbPack').style.display=isLogos?'none':'';
+  const s=document.getElementById('ldbSearch');
+  if(s && s.value!==logoState.q) s.value=logoState.q;
+}
+
+function renderLogoStats(){
+  const statsEl=document.getElementById('ldbStats');
+  if(!statsEl) return;
+  const s=logoState.stats;
+  const packCount=Object.keys(ICON_PACKS).length||57;
+  if(!s){
+    statsEl.innerHTML=
+      '<div><b>1,432</b>indexed SVG marks</div>'+
+      '<div><b>141</b>exemplary studies</div>'+
+      '<div><b>75</b>median anchors</div>'+
+      '<div><b>'+packCount+'</b>verified UI icon packs</div>';
+    return;
+  }
+  statsEl.innerHTML=
+    '<div><b>'+Number(s.total||1432).toLocaleString()+'</b>indexed SVG marks</div>'+
+    '<div><b>'+Number(s.exemplaryCount||0)+'</b>exemplary studies</div>'+
+    '<div><b>'+Number(s.medianAnchors||0)+'</b>median anchor points</div>'+
+    '<div><b>'+Number(s.twoOrFewerColorsPct||0)+'%</b>use 1\u20132 solid colors</div>';
+
+  const brandTabBtn=logosEl.querySelector('[data-ldb-tab="logos"]');
+  if(brandTabBtn) brandTabBtn.textContent='Brand Marks ('+Number(s.total||1432).toLocaleString()+')';
+
+  const fillSelect=(id,label,arr,cur)=>{
+    const el=document.getElementById(id);
+    if(!el || !Array.isArray(arr)) return;
+    el.innerHTML='<option value="">'+esc(label)+'</option>'+arr.map(x=>'<option value="'+esc(x.key)+'"'+(cur===x.key?' selected':'')+'>'+esc(x.key)+' ('+x.count+')</option>').join('');
+  };
+  fillSelect('ldbMarkType','All Mark Types',s.markTypes,logoState.markType);
+  fillSelect('ldbTechnique','All Techniques',s.techniques,logoState.technique);
+  fillSelect('ldbIndustry','All Industries',s.industries,logoState.industry);
+}
+
+async function loadLogoStats(){
+  if(logoState.stats || !location.protocol.startsWith('http')) return;
+  try{
+    const res=await fetch('/api/logos?stats=1');
+    if(!res.ok) return;
+    const j=await res.json();
+    if(j && j.ok){ logoState.stats=j; renderLogoStats(); }
+  }catch(_){}
+}
+
+async function selectLogoById(logoId){
+  if(!logoId) return;
+  const hit=logoState.items.find(x=>x.id===logoId);
+  if(hit){ logoState.selected=hit; logoState.selectedPackItem=null; renderLogoInspector(); syncCardCurrent(); return; }
+  if(!location.protocol.startsWith('http')) return;
+  try{
+    const res=await fetch('/api/logos?id='+encodeURIComponent(logoId));
+    if(!res.ok) return;
+    const j=await res.json();
+    if(j && j.ok && j.logo){
+      logoState.selected=j.logo;
+      logoState.selectedPackItem=null;
+      renderLogoInspector();
+      syncCardCurrent();
+    }
+  }catch(_){}
+}
+
+function syncCardCurrent(){
+  const curId=logoState.selectedPackItem?logoState.selectedPackItem.id:(logoState.selected?logoState.selected.id:'');
+  logosEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(el=>{
+    el.setAttribute('aria-current',String(el.dataset.logoId===curId));
+  });
+}
+
+async function fetchLogos(targetLogoId){
+  buildLogoDbShell();
+  syncLogoControls();
+  const gridEl=document.getElementById('ldbGrid');
+  const pagerBox=document.getElementById('ldbPager');
+  if(!location.protocol.startsWith('http')){
+    gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Brand Marks require HTTP/Postgres (/api/logos). Switch to <b>UI Icon Packs ('+(Object.keys(ICON_PACKS).length||57)+')</b> above for offline vector browsing.</div>';
+    pagerBox.innerHTML='';
+    renderLogoInspector();
+    return;
+  }
+  const tok=++logoState.fetchToken;
+  logoState.loading=true;
+  if(!logoState.items.length) gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Loading logos from Neon Postgres\u2026</div>';
+  try{
+    const params=new URLSearchParams({page:String(logoState.page),limit:String(logoState.limit)});
+    if(logoState.q.trim()) params.set('q',logoState.q.trim());
+    if(logoState.industry) params.set('industry',logoState.industry);
+    if(logoState.markType) params.set('mark_type',logoState.markType);
+    if(logoState.technique) params.set('technique',logoState.technique);
+    if(logoState.onlyExemplary) params.set('exemplary','1');
+    const res=await fetch('/api/logos?'+params.toString());
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const d=await res.json();
+    if(tok!==logoState.fetchToken) return;
+    if(d && d.ok){
+      logoState.items=d.items||[];
+      logoState.total=Number(d.total||0);
+      if(targetLogoId){
+        await selectLogoById(targetLogoId);
+      }else if(!logoState.selected && !logoState.selectedPackItem && logoState.items.length){
+        logoState.selected=logoState.items[0];
+      }
+      renderBrandLogoGrid();
+      renderLogoInspector();
+    }
+  }catch(_){
+    if(tok===logoState.fetchToken) gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Could not reach /api/logos. Try refreshing or switch to UI Icon Packs.</div>';
+  }finally{
+    if(tok===logoState.fetchToken) logoState.loading=false;
+  }
+}
+
+function renderBrandLogoGrid(){
+  const gridEl=document.getElementById('ldbGrid');
+  const pagerBox=document.getElementById('ldbPager');
+  if(!gridEl) return;
+  const items=logoState.items;
+  if(!items.length){
+    gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No logos matched those filters.</div>';
+    pagerBox.innerHTML='';
+    return;
+  }
+  const curId=logoState.selected?logoState.selected.id:'';
+  gridEl.innerHTML=items.map((logo,idx)=>{
+    const scoped=ensureSvgBox(scopeSvgIds(logo.svg,'ldb'+idx),false);
+    const badge=logo.exemplary?'<span class="ldb-badge is-star">\u2605 Study</span>':'<span class="ldb-badge">'+esc(logo.markType||'mark')+'</span>';
+    return '<button type="button" class="ldb-card" data-logo-id="'+esc(logo.id)+'" aria-current="'+String(logo.id===curId)+'">'+
+      '<div class="ldb-stage">'+scoped+'</div>'+
+      '<div class="ldb-card-head"><strong>'+esc(logo.brand)+'</strong>'+badge+'</div>'+
+      '<p class="ldb-note">'+esc(logo.note||logo.subject||((logo.markType||'mark')+' \u00b7 '+(logo.industry||'')))+'</p>'+
+      '<div class="ldb-foot"><span>'+Number(logo.anchors||0)+' anchors</span><span>'+Number(logo.nColors||1)+'c \u00b7 '+esc((logo.techniques&&logo.techniques[0])||'flat')+'</span></div>'+
+    '</button>';
+  }).join('');
+
+  gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item=logoState.items.find(x=>x.id===btn.dataset.logoId);
+      if(!item) return;
+      logoState.selected=item;
+      logoState.selectedPackItem=null;
+      syncCardCurrent();
+      renderLogoInspector();
+      try{ history.replaceState(null,'','#/logos/'+encodeURIComponent(item.id)); }catch(_){}
+    });
+  });
+
+  pagerBox.innerHTML=buildPagerHtml(logoState.total,logoState.page,logoState.limit);
+  pagerBox.querySelectorAll('[data-pg]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const p=Number(btn.dataset.pg);
+      if(!Number.isFinite(p)||p<1||p===logoState.page) return;
+      logoState.page=p;
+      window.scrollTo(0,0);
+      fetchLogos();
+    });
+  });
+}
+
+function renderIconPackGrid(){
+  buildLogoDbShell();
+  syncLogoControls();
+  const gridEl=document.getElementById('ldbGrid');
+  const pagerBox=document.getElementById('ldbPager');
+  const q=(logoState.q||'').trim().toLowerCase();
+  const pf=logoState.packFilter;
+  const entries=[];
+  Object.entries(ICON_PACKS).sort((a,b)=>a[0].localeCompare(b[0])).forEach(([packId,pk])=>{
+    if(pf!=='all' && packId!==pf) return;
+    (pk.glyphs||[]).forEach(g=>{
+      if(q && !g.name.toLowerCase().includes(q) && !packId.toLowerCase().includes(q)) return;
+      const svg256=buildSysSvg(pk,g,256,'#fafafa',true).replace(/currentColor/gi,'#fafafa');
+      entries.push({
+        id:packId+'::'+g.name,
+        packId,
+        glyphName:g.name,
+        grid:pk.grid||24,
+        brand:packId+' / '+g.name,
+        markType:'icon glyph',
+        industry:'ui icon pack',
+        note:'Official '+(pk.grid||24)+'\u00d7'+(pk.grid||24)+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.',
+        colors:['#fafafa'],
+        techniques:[pk.style||'vector',((pk.grid||24)+'px grid')],
+        geometry:['grid-modular'],
+        svg:svg256,
+        thumb:buildSysSvg(pk,g,44,'#fafafa',false)
+      });
+    });
+  });
+  const slice=entries.slice(0,180);
+  if(!logoState.selectedPackItem && !logoState.selected && slice.length){
+    logoState.selectedPackItem=slice[0];
+  }
+  const curId=logoState.selectedPackItem?logoState.selectedPackItem.id:'';
+  if(!slice.length){
+    gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No UI glyphs matched your query.</div>';
+    pagerBox.innerHTML='';
+    return;
+  }
+  gridEl.innerHTML=slice.map(item=>
+    '<button type="button" class="ldb-card" data-logo-id="'+esc(item.id)+'" aria-current="'+String(item.id===curId)+'">'+
+      '<div class="ldb-stage is-dark">'+item.thumb+'</div>'+
+      '<div class="ldb-card-head"><strong>'+esc(item.glyphName)+'</strong><span class="ldb-badge">'+esc(item.packId)+'</span></div>'+
+      '<p class="ldb-note">'+esc(item.note)+'</p>'+
+      '<div class="ldb-foot"><span>'+item.grid+'px grid</span><span>official svg</span></div>'+
+    '</button>'
+  ).join('');
+
+  gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach((btn,idx)=>{
+    btn.addEventListener('click',()=>{
+      logoState.selectedPackItem=slice[idx];
+      logoState.selected=null;
+      syncCardCurrent();
+      renderLogoInspector();
+    });
+  });
+  pagerBox.innerHTML='';
+  renderLogoInspector();
+}
+
+function renderLogoInspector(){
+  const box=document.getElementById('ldbInspector');
+  if(!box) return;
+  const item=logoState.selectedPackItem||logoState.selected;
+  if(!item){
+    box.innerHTML='<div class="ldb-insp-head"><b>Construction Anatomy</b></div><div class="ldb-insp-body"><p style="font-size:12px;color:var(--dim);margin:0">Select any brand mark or UI glyph to inspect its vectors, Bezier handles, alignment angles, and Craft Audit score.</p></div>';
+    return;
+  }
+  const anatomy=parseLogoAnatomy(item.svg);
+  const vb=anatomy.viewBox;
+  const vbStr=vb.join(' ');
+  const swGrid=vb[2]/256;
+  const swHandle=vb[2]/300;
+  const rAnc=vb[2]/92;
+  const swAnc=vb[2]/280;
+  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'insp'),true);
+  const isPack=Boolean(item.packId);
+  const darkBox=isPack||logoState.xrayDark;
+
+  const gridOverlay=logoState.showGrid
+    ? '<g stroke="rgba(14,165,233,0.4)" stroke-width="'+swGrid+'" fill="none">'+
+        '<rect x="'+vb[0]+'" y="'+vb[1]+'" width="'+vb[2]+'" height="'+vb[3]+'"/>'+
+        '<line x1="'+(vb[0]+vb[2]/2)+'" y1="'+vb[1]+'" x2="'+(vb[0]+vb[2]/2)+'" y2="'+(vb[1]+vb[3])+'"/>'+
+        '<line x1="'+vb[0]+'" y1="'+(vb[1]+vb[3]/2)+'" x2="'+(vb[0]+vb[2])+'" y2="'+(vb[1]+vb[3]/2)+'"/>'+
+        '<line x1="'+vb[0]+'" y1="'+vb[1]+'" x2="'+(vb[0]+vb[2])+'" y2="'+(vb[1]+vb[3])+'" stroke-dasharray="'+(vb[2]/48)+' '+(vb[2]/48)+'"/>'+
+      '</g>'
+    : '';
+
+  const anchorOverlay=logoState.showAnchors
+    ? '<g>'+
+        anatomy.handles.slice(0,120).map(h=>'<line x1="'+h.anchor.x+'" y1="'+h.anchor.y+'" x2="'+h.control.x+'" y2="'+h.control.y+'" stroke="#f43f5e" stroke-width="'+swHandle+'"/>').join('')+
+        anatomy.anchors.slice(0,160).map(pt=>'<circle cx="'+pt.x+'" cy="'+pt.y+'" r="'+rAnc+'" fill="#0ea5e9" stroke="#ffffff" stroke-width="'+swAnc+'"/>').join('')+
+      '</g>'
+    : '';
+
+  const studioLogofxUrl=isPack
+    ? './studio/#/logofx?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
+    : './studio/#/logofx?logo='+encodeURIComponent(item.id);
+  const studioBrandUrl=isPack
+    ? './studio/#/brand?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
+    : './studio/#/brand?logo='+encodeURIComponent(item.id);
+
+  const scales=[16,28,48].map((sz,i)=>
+    '<div class="ldb-scale-cell"><div class="ldb-scale-stage"><div class="ldb-scale-box'+(darkBox?' is-dark':'')+'">'+
+      ensureSvgBox(scopeSvgIds(item.svg,'sc'+i),false,sz)+
+    '</div></div><span>'+sz+'px</span></div>'
+  ).join('');
+
+  const swatches=(item.colors||anatomy.colors||[]).slice(0,8).map(c=>
+    '<button type="button" class="ldb-swatch-btn" data-copy-hex="'+esc(c)+'"><i style="background:'+safeCss(c)+'"></i><span>'+esc(c)+'</span></button>'
+  ).join('');
+
+  const tags=[...(item.techniques||[]),...(item.geometry||[])].filter(Boolean).slice(0,8).map(t=>
+    '<span class="ldb-badge">'+esc(t)+'</span>'
+  ).join('');
+
+  const findingsHtml=anatomy.findings.map(f=>
+    '<div class="ldb-finding is-'+esc(f.level)+'">'+esc(f.message)+'</div>'
+  ).join('');
+
+  box.innerHTML=
+    '<div class="ldb-insp-head">'+
+      '<b>'+esc(item.brand)+'</b>'+
+      '<button type="button" class="pill-btn" id="ldbGroundBtn" style="padding:3px 9px;font-size:11px">'+(darkBox?'Dark':'Light')+'</button>'+
+    '</div>'+
+    '<div class="ldb-insp-body">'+
+      '<div>'+
+        '<div class="ldb-xray'+(darkBox?' is-dark':'')+'">'+
+          '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
+          '<svg class="ldb-xray-overlay" viewBox="'+esc(vbStr)+'">'+gridOverlay+anchorOverlay+'</svg>'+
+        '</div>'+
+        '<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">'+
+          '<button type="button" class="chip" id="ldbGridBtn" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+
+          '<button type="button" class="chip" id="ldbAncBtn" aria-pressed="'+String(logoState.showAnchors)+'">Anchors ('+anatomy.anchors.length+')</button>'+
+        '</div>'+
+      '</div>'+
+      '<div><div class="ldb-sec-title">Favicon Survivability</div><div class="ldb-scales">'+scales+'</div></div>'+
+      '<div>'+
+        '<div class="ldb-sec-title">Construction Spec</div>'+
+        '<div class="ldb-kv"><span>Mark Type</span><b>'+esc(item.markType||'mark')+'</b></div>'+
+        '<div class="ldb-kv"><span>Industry</span><b>'+esc(item.industry||'general')+'</b></div>'+
+        '<div class="ldb-kv"><span>Primitives</span><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b></div>'+
+        '<div class="ldb-kv"><span>ViewBox</span><b>'+esc(vbStr)+'</b></div>'+
+        '<div class="ldb-kv"><span>Craft Audit</span><b>'+anatomy.score+'/100</b></div>'+
+      '</div>'+
+      '<div><div class="ldb-sec-title">Craft Audit Findings</div><div class="ldb-findings">'+findingsHtml+'</div></div>'+
+      (item.note?'<div><div class="ldb-sec-title">Construction Note</div><p style="font-size:11.5px;color:var(--dim);line-height:1.5;margin:0">'+esc(item.note)+'</p></div>':'')+
+      (tags||swatches?'<div><div class="ldb-sec-title">Techniques &amp; Colours</div>'+(tags?'<div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px">'+tags+'</div>':'')+(swatches?'<div class="ldb-swatches">'+swatches+'</div>':'')+'</div>':'')+
+      '<div class="ldb-actions">'+
+        '<a class="pill-btn primary" style="justify-content:center" href="'+studioLogofxUrl+'">Open in LogoFX'+ICONS.ext+'</a>'+
+        '<a class="pill-btn" style="justify-content:center" href="'+studioBrandUrl+'">Use in Brand Maker'+ICONS.ext+'</a>'+
+        '<button type="button" class="pill-btn" style="justify-content:center" id="ldbCopySvgBtn">'+ICONS.copy+'Copy Clean SVG</button>'+
+      '</div>'+
+    '</div>';
+
+  document.getElementById('ldbGroundBtn').addEventListener('click',()=>{ logoState.xrayDark=!darkBox; renderLogoInspector(); });
+  document.getElementById('ldbGridBtn').addEventListener('click',()=>{ logoState.showGrid=!logoState.showGrid; renderLogoInspector(); });
+  document.getElementById('ldbAncBtn').addEventListener('click',()=>{ logoState.showAnchors=!logoState.showAnchors; renderLogoInspector(); });
+  document.getElementById('ldbCopySvgBtn').addEventListener('click',()=>copy(item.svg));
+  box.querySelectorAll('[data-copy-hex]').forEach(el=>el.addEventListener('click',()=>copy(el.dataset.copyHex)));
+}
+
 /* ---------- wiring ---------- */
 let initialLoad=true;
-function showView(immediate){
+function syncTopSearchPlaceholder(){
+  const qEl=document.getElementById('q');
+  const chipsEl=document.getElementById('chips');
+  const isLogos=state.view==='logos';
+  if(qEl) qEl.placeholder=isLogos?'Search 1,432 logos, geometry, or 57 UI packs\u2026':'Search systems, intent, or repo\u2026';
+  if(chipsEl) chipsEl.style.opacity=isLogos?'.45':'1';
+}
+
+function showView(immediate,logoId){
   ++navToken;
   clearTimeout(loaderT);
   const loaderEl=document.getElementById('topLoader');
@@ -2107,27 +2762,48 @@ function showView(immediate){
   const wasSysActive=document.documentElement.classList.contains('sys-active');
   const cov=state.view==='coverage';
   const rk=state.view==='ranking';
-  const sys=!cov&&!rk;
+  const lg=state.view==='logos';
+  const sys=!cov&&!rk&&!lg;
   const apply=()=>{
     resetSystemTheme();
+    syncTopSearchPlaceholder();
     index.style.display=sys?'':'none';
+    logosEl.style.display=lg?'':'none';
     rankingEl.style.display=rk?'':'none';
     coverageEl.style.display=cov?'':'none';
     detail.classList.remove('on');
     document.getElementById('catBtn').setAttribute('aria-pressed',String(sys));
+    document.getElementById('logosBtn').setAttribute('aria-pressed',String(lg));
     document.getElementById('rankBtn').setAttribute('aria-pressed',String(rk));
     document.getElementById('viewBtn').setAttribute('aria-pressed',String(cov));
     if(cov) renderCoverage();
     else if(rk) renderRanking();
+    else if(lg){
+      buildLogoDbShell();
+      syncLogoControls();
+      loadLogoStats();
+      if(logoState.subTab==='logos') fetchLogos(logoId||null);
+      else renderIconPackGrid();
+    }
     else renderIndex();
     if(!immediate) window.scrollTo(0,0);
   };
   if(immediate){ apply(); return; }
   const kind=wasSysActive?'chameleon':'tab';
-  const fb=cov?coverageEl:(rk?rankingEl:index);
+  const fb=lg?logosEl:(cov?coverageEl:(rk?rankingEl:index));
   runViewTransition(kind,apply,fb);
 }
+
 function navigateTab(nextView){
+  if(nextView==='logos'){
+    if(location.hash.startsWith('#/logos')){
+      if(window.scrollY>40) window.scrollTo({top:0,behavior:'smooth'});
+      return;
+    }
+    state.view='logos';
+    location.hash='#/logos';
+    return;
+  }
   const hasHash=Boolean(location.hash&&location.hash!=='#');
   if(!hasHash && state.view===nextView){
     if(window.scrollY>40) window.scrollTo({top:0,behavior:'smooth'});
@@ -2140,10 +2816,17 @@ function navigateTab(nextView){
 
 document.getElementById('brandHome').addEventListener('click',()=>navigateTab('systems'));
 document.getElementById('catBtn').addEventListener('click',()=>navigateTab('systems'));
+document.getElementById('logosBtn').addEventListener('click',()=>navigateTab('logos'));
 document.getElementById('rankBtn').addEventListener('click',()=>navigateTab('ranking'));
 document.getElementById('viewBtn').addEventListener('click',()=>navigateTab('coverage'));
 document.getElementById('q').addEventListener('input',e=>{
   state.q=e.target.value; state.page=1; state.rkPage=1;
+  if(state.view==='logos' || location.hash.startsWith('#/logos')){
+    logoState.q=e.target.value; logoState.page=1;
+    syncLogoControls();
+    scheduleLogosRefresh();
+    return;
+  }
   if(location.hash&&location.hash!=='#'){ location.hash=''; return; }
   showView(true);
 });
@@ -2182,14 +2865,22 @@ async function hydrateFromDb(){
     if(j.coverage) COVERAGE=j.coverage;
     DB_META={ live:true, syncedAt:j.syncedAt||null };
     const slug=location.hash.replace(/^#\/?/,'');
-    if(!slug) showView(true);
+    if(!slug && state.view!=='logos') showView(true);
+    else if(state.view==='logos'){ renderLogoStats(); if(logoState.subTab==='icons') renderIconPackGrid(); }
   }catch(_){}
 }
 function route(){
   const immediate=initialLoad;
   initialLoad=false;
   const slug=location.hash.replace(/^#\/?/,'');
+  if(slug==='logos'||slug.startsWith('logos/')){
+    state.view='logos';
+    const logoId=slug.startsWith('logos/')?decodeURIComponent(slug.slice(6)):null;
+    showView(immediate,logoId);
+    return;
+  }
   if(slug){ renderDetail(slug,immediate); return; }
+  if(state.view==='logos') state.view='systems';
   showView(immediate);
 }
 window.addEventListener('hashchange',route);
