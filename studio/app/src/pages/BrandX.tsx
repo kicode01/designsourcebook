@@ -136,11 +136,23 @@ function TileBody({
       );
     case 'palette':
       return (
-        <div className="bx-palette" style={{ width: '80%' }}>
+        <div className="bx-palette">
           {brand.palette.map((c, i) => (
-            <div key={i} style={{ flex: 1, display: 'grid', gap: 4 }}>
+            <div key={i} style={{ minWidth: 0, display: 'grid', gap: '2.2cqw' }}>
               <div className="bx-swatch" style={{ background: c }} title={c} />
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: 9, color: brand.ink, opacity: 0.65, textAlign: 'center' }}>
+              <span
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '4.1cqw',
+                  lineHeight: 1.2,
+                  color: brand.ink,
+                  opacity: 0.68,
+                  textAlign: 'center',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
                 {c}
               </span>
             </div>
