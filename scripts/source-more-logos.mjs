@@ -14,6 +14,9 @@ import {
   computeGeomHash,
   measureLogoSvg,
   classifyLogoMetadata,
+  coreBrandStem,
+  rasterizeSvgMask36,
+  maskIoU36,
 } from "./lib/logo-anatomy.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -21,7 +24,7 @@ const EXTRA_LOGOS_PATH = path.join(ROOT, "data/extra-logos.json");
 const BASE_LIB_DIR = path.join(os.homedir(), ".gemini/config/skills/logo-design/assets/library");
 
 const VARIANT_SUFFIX_RE =
-  /-(?:icon|dark|light|mono|monochrome|grayscale|greyscale|gray|grey|outline|outlined|filled|fill|solid|app-icon|wordmark|lettermark|horizontal|horiz|vertical|vert|stacked|badge|symbol|mark|logo|alt|old|new|v2|v3|beta|legacy|black|white|color|colour|inverted|square|round|rounded|circle|202[0-9]|201[0-9]|digital)$/gi;
+  /-(?:icon|dark|light|mono|monochrome|grayscale|greyscale|gray|grey|outline|outlined|filled|fill|solid|app-icon|wordmark|lettermark|horizontal|horiz|vertical|vert|stacked|badge|symbol|mark|logo|alt|old|new|v2|v3|beta|legacy|black|white|color|colour|inverted|square|round|rounded|circle|202[0-9]|201[0-9]|digital|ai|js|ts|api|ru|lang|hq|labs)$/gi;
 
 const ALIAS_GROUPS = [
   ["aws", "amazonwebservices"],
@@ -53,7 +56,7 @@ for (const grp of ALIAS_GROUPS) {
 function canonicalRoot(str) {
   let s = String(str || "").toLowerCase().trim();
   for (let i = 0; i < 3; i++) s = s.replace(VARIANT_SUFFIX_RE, "");
-  s = s.replace(/(?:dotai|dotcom|dotio|dotorg|dotdev|dotapp|dotco|dotnet|dotgg)$/g, "");
+  s = s.replace(/(?:dotai|dotcom|dotio|dotorg|dotdev|dotapp|dotco|dotnet|dotgg|dotjs|dotts|dotrs|dotpy|dotcss)$/g, "");
   const norm = s.replace(/[^a-z0-9]/g, "");
   return ALIAS_CANON_MAP.get(norm) || norm;
 }
@@ -376,8 +379,75 @@ async function main() {
   }
   console.log(`Tier 3 (thesvg brands): kept ${tsKept}`);
 
+  // ------------------------------------------------------------------
+  // Final Pass: Cross-source Visual Stem + Silhouette IoU Deduplication
+  // Catches clones where TLD/product suffixes (-ai, -io, -js, google-, apache-, adobe-)
+  // hide identical/near-identical vector marks across sources.
+  // ------------------------------------------------------------------
+  const baseByStem = new Map();
+  for (const item of baseCatalog) {
+    const id = item.file.replace(/\.svg$/i, "").toLowerCase();
+    const st = coreBrandStem(id);
+    if (!st || st.length < 3) continue;
+    const fp = path.join(baseSvgDir, item.file);
+    if (!fs.existsSync(fp)) continue;
+    const cleaned = sanitizeLogoSvg(fs.readFileSync(fp, "utf8"));
+    if (!cleaned) continue;
+    if (!baseByStem.has(st)) baseByStem.set(st, []);
+    baseByStem.get(st).push({ id, brand: item.brand, aspect: item.aspect || 1, mask: rasterizeSvgMask36(cleaned) });
+  }
+
+  const droppedStemIds = new Set();
+  const extraByStem = new Map();
+  for (const rec of extraItems) {
+    rec._mask = rasterizeSvgMask36(rec.svg);
+    const st = coreBrandStem(rec.id);
+    if (!st || st.length < 3) continue;
+    const basePeers = baseByStem.get(st) || [];
+    const aspectClose = (a, b) => Math.abs(Math.log(Math.max(a, 0.1) / Math.max(b, 0.1))) < 0.45;
+    if (basePeers.some((bp) => aspectClose(bp.aspect, rec.aspect) && maskIoU36(bp.mask, rec._mask) >= 0.48)) {
+      droppedStemIds.add(rec.id);
+      rejected.dupBrand++;
+      continue;
+    }
+    if (!extraByStem.has(st)) extraByStem.set(st, []);
+    extraByStem.get(st).push(rec);
+  }
+  for (const list of extraByStem.values()) {
+    if (list.length < 2) continue;
+    // Prefer canonical slug without -ai/-icon suffix or fewer anchors
+    list.sort((a, b) => {
+      const aPen = /-(?:ai|icon|js|ts|io|lang)$/.test(a.id) ? 1 : 0;
+      const bPen = /-(?:ai|icon|js|ts|io|lang)$/.test(b.id) ? 1 : 0;
+      return aPen - bPen || a.anchors - b.anchors || a.id.localeCompare(b.id);
+    });
+    const kept = [];
+    for (const item of list) {
+      const collides = kept.some((k) => {
+        if (k.brand === item.brand && (k.variant !== item.variant)) return false; // valid main/-icon pair
+        const aClose = Math.abs(Math.log(Math.max(k.aspect, 0.1) / Math.max(item.aspect, 0.1))) < 0.45;
+        return aClose && maskIoU36(k._mask, item._mask) >= 0.45;
+      });
+      if (collides) {
+        droppedStemIds.add(item.id);
+        rejected.dupBrand++;
+      } else {
+        kept.push(item);
+      }
+    }
+  }
+
+  const survivingItems = extraItems.filter((r) => !droppedStemIds.has(r.id));
+  for (const r of survivingItems) {
+    if (r.pair) {
+      const pairId = r.pair.replace(/\.svg$/i, "").toLowerCase();
+      if (droppedStemIds.has(pairId)) r.pair = null;
+    }
+  }
+  console.log(`Visual stem dedup pruned ${droppedStemIds.size} redundant marks.`);
+
   // Strip internal-only temporary helper fields before persisting
-  const cleanedItems = extraItems.map(({ circles, rects, hasStrokeOnly, hasOpacity, ...rest }) => rest);
+  const cleanedItems = survivingItems.map(({ circles, rects, hasStrokeOnly, hasOpacity, _mask, ...rest }) => rest);
   cleanedItems.sort((a, b) => a.id.localeCompare(b.id));
 
   const payload = {
@@ -387,6 +457,7 @@ async function main() {
       addedGilbarbara: gbKept,
       addedSvgl: svglKept,
       addedThesvg: tsKept,
+      prunedVisualStem: droppedStemIds.size,
       addedTotal: cleanedItems.length,
       grandTotal: baseCatalog.length + cleanedItems.length,
     },

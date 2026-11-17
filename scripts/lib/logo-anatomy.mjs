@@ -320,3 +320,93 @@ export function classifyLogoMetadata({ id, variant, metrics, categories = [], ti
     note,
   };
 }
+
+const STEM_PREF_RE = /^(?:google|microsoft|amazon|aws|apache|adobe|meta|open|the|get|use|try)-/i;
+const STEM_SUF_RE = /-(?:ai|io|js|ts|api|ru|hq|labs|app|dev|cloud|web|plus|ui|sdk|cli|py|go|rs|db|ml|pro|core|os|kit|lang|studio|code|icon)$/i;
+
+export function coreBrandStem(slug) {
+  let s = String(slug || "").toLowerCase().trim();
+  for (let i = 0; i < 2; i++) s = s.replace(STEM_SUF_RE, "");
+  s = s.replace(STEM_PREF_RE, "");
+  return s.replace(/[^a-z0-9]/g, "");
+}
+
+/** Lightweight 36x36 path/primitive point-cloud occupancy bitmap + IoU for SVG duplicate detection. */
+export function rasterizeSvgMask36(svgText) {
+  const N = 36;
+  const grid = new Uint8Array(N * N);
+  const vbM = /\bviewBox\s*=\s*["']\s*(-?[\d.]+)\s+(-?[\d.]+)\s+([\d.]+)\s+([\d.]+)\s*["']/i.exec(svgText);
+  const ox = vbM ? parseFloat(vbM[1]) || 0 : 0;
+  const oy = vbM ? parseFloat(vbM[2]) || 0 : 0;
+  const vw = vbM ? Math.max(1e-3, parseFloat(vbM[3]) || 24) : 24;
+  const vh = vbM ? Math.max(1e-3, parseFloat(vbM[4]) || 24) : 24;
+  const paintPt = (px, py) => {
+    const gx = Math.floor(((px - ox) / vw) * (N - 1));
+    const gy = Math.floor(((py - oy) / vh) * (N - 1));
+    for (let dy = -1; dy <= 1; dy++) {
+      for (let dx = -1; dx <= 1; dx++) {
+        const xx = gx + dx;
+        const yy = gy + dy;
+        if (xx >= 0 && xx < N && yy >= 0 && yy < N) grid[yy * N + xx] = 1;
+      }
+    }
+  };
+  const visible = svgText.replace(/<(?:clipPath|mask|pattern|symbol)\b[\s\S]*?<\/(?:clipPath|mask|pattern|symbol)>/gi, "");
+  for (const pm of visible.matchAll(/<circle\b([^>]*)>/gi)) {
+    const cx = parseFloat(/\bcx=["']?(-?[\d.]+)/i.exec(pm[1])?.[1] || "0");
+    const cy = parseFloat(/\bcy=["']?(-?[\d.]+)/i.exec(pm[1])?.[1] || "0");
+    const r = parseFloat(/\br=["']?([\d.]+)/i.exec(pm[1])?.[1] || "0");
+    for (let a = 0; a < 16; a++) {
+      const ang = (a / 16) * Math.PI * 2;
+      paintPt(cx + r * Math.cos(ang), cy + r * Math.sin(ang));
+    }
+  }
+  for (const rm of visible.matchAll(/<rect\b([^>]*)>/gi)) {
+    const x = parseFloat(/\bx=["']?(-?[\d.]+)/i.exec(rm[1])?.[1] || "0");
+    const y = parseFloat(/\by=["']?(-?[\d.]+)/i.exec(rm[1])?.[1] || "0");
+    const w = parseFloat(/\bwidth=["']?([\d.]+)/i.exec(rm[1])?.[1] || "0");
+    const h = parseFloat(/\bheight=["']?([\d.]+)/i.exec(rm[1])?.[1] || "0");
+    for (let t = 0; t <= 4; t++) {
+      paintPt(x + (w * t) / 4, y);
+      paintPt(x + (w * t) / 4, y + h);
+      paintPt(x, y + (h * t) / 4);
+      paintPt(x + w, y + (h * t) / 4);
+    }
+  }
+  for (const dm of visible.matchAll(/\bd=["']([^"']+)["']/gi)) {
+    const tokens = dm[1].match(/[MmLlHhVvCcSsQqTtAaZz]|-?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g) || [];
+    let cx = 0, cy = 0, sx = 0, sy = 0, i = 0, cmd = "M";
+    const num = () => parseFloat(tokens[i++] || "0") || 0;
+    while (i < tokens.length) {
+      if (/^[A-Za-z]$/.test(tokens[i])) {
+        cmd = tokens[i++];
+        if (cmd === "Z" || cmd === "z") { paintPt((cx + sx) / 2, (cy + sy) / 2); cx = sx; cy = sy; }
+        continue;
+      }
+      if (cmd === "M" || cmd === "L" || cmd === "T") { const nx = num(), ny = num(); paintPt(nx, ny); if (cmd === "M") { sx = nx; sy = ny; cmd = "L"; } else paintPt((cx+nx)/2,(cy+ny)/2); cx = nx; cy = ny; }
+      else if (cmd === "m" || cmd === "l" || cmd === "t") { const nx = cx + num(), ny = cy + num(); paintPt(nx, ny); if (cmd === "m") { sx = nx; sy = ny; cmd = "l"; } else paintPt((cx+nx)/2,(cy+ny)/2); cx = nx; cy = ny; }
+      else if (cmd === "H") { cx = num(); paintPt(cx, cy); }
+      else if (cmd === "h") { cx += num(); paintPt(cx, cy); }
+      else if (cmd === "V") { cy = num(); paintPt(cx, cy); }
+      else if (cmd === "v") { cy += num(); paintPt(cx, cy); }
+      else if (cmd === "C") { const x1=num(),y1=num(),x2=num(),y2=num(),nx=num(),ny=num(); paintPt((x1+x2)/2,(y1+y2)/2); paintPt(nx,ny); cx=nx; cy=ny; }
+      else if (cmd === "c") { const x1=cx+num(),y1=cy+num(),x2=cx+num(),y2=cy+num(),nx=cx+num(),ny=cy+num(); paintPt((x1+x2)/2,(y1+y2)/2); paintPt(nx,ny); cx=nx; cy=ny; }
+      else if (cmd === "S" || cmd === "Q") { num(); num(); const nx = num(), ny = num(); paintPt((cx+nx)/2,(cy+ny)/2); paintPt(nx, ny); cx = nx; cy = ny; }
+      else if (cmd === "s" || cmd === "q") { num(); num(); const nx = cx + num(), ny = cy + num(); paintPt((cx+nx)/2,(cy+ny)/2); paintPt(nx, ny); cx = nx; cy = ny; }
+      else if (cmd === "A") { num(); num(); num(); num(); num(); const nx = num(), ny = num(); paintPt((cx+nx)/2,(cy+ny)/2); paintPt(nx, ny); cx = nx; cy = ny; }
+      else if (cmd === "a") { num(); num(); num(); num(); num(); const nx = cx + num(), ny = cy + num(); paintPt((cx+nx)/2,(cy+ny)/2); paintPt(nx, ny); cx = nx; cy = ny; }
+      else i++;
+    }
+  }
+  return grid;
+}
+
+export function maskIoU36(mA, mB) {
+  let inter = 0, union = 0;
+  for (let i = 0; i < mA.length; i++) {
+    const a = mA[i] > 0, b = mB[i] > 0;
+    if (a && b) inter++;
+    if (a || b) union++;
+  }
+  return union ? inter / union : 0;
+}

@@ -3,11 +3,13 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import { fileURLToPath } from "node:url";
 import { ensureSchema, getSql, hasDatabase, loadLocalEnv } from "../lib/db.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const EXTRA_LOGOS_PATH = path.join(ROOT, "data/extra-logos.json");
+const BASE_CATALOG_PATH = path.join(os.homedir(), ".gemini/config/skills/logo-design/assets/library/catalog.json");
 
 loadLocalEnv(ROOT);
 
@@ -110,6 +112,13 @@ async function main() {
     if ((i + batchSize) % 350 === 0 || i + batchSize >= items.length) {
       console.log(`Seeded ${upserted} / ${items.length} supplemental logos...`);
     }
+  }
+
+  if (fs.existsSync(BASE_CATALOG_PATH)) {
+    const base = JSON.parse(fs.readFileSync(BASE_CATALOG_PATH, "utf8"));
+    const keepIds = [...new Set([...base.map((x) => x.file.replace(/\.svg$/i, "")), ...items.map((x) => x.id)])];
+    const delRes = await sql`DELETE FROM logos WHERE NOT (id = ANY(${keepIds})) RETURNING id`;
+    if (delRes.length) console.log(`Pruned ${delRes.length} stale/redundant logos from Postgres.`);
   }
 
   const [totals] = await sql`SELECT COUNT(*)::int AS total, COUNT(DISTINCT brand)::int AS brands FROM logos`;
