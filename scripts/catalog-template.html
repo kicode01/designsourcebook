@@ -263,7 +263,7 @@
   .icon-card{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:8px;padding:16px 10px 11px;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--panel);cursor:pointer;text-align:center;transition:border-color var(--t-ui),transform .18s var(--ease-out),background-color var(--t-theme),border-radius var(--t-theme)}
   .icon-card:hover{border-color:var(--line2);transform:translateY(-1px)}
   .icon-card:active{transform:scale(.97)}
-  .icon-glyph{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:calc(var(--card-radius) * .65);transition:background-color var(--t-theme),color var(--t-theme)}
+  .icon-glyph{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:calc(var(--card-radius) * .65);transition:background-color var(--t-theme),color var(--t-theme)}
   .icon-name{font-size:10.5px;font-family:var(--mono);color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
   .icon-sub{font-size:9.5px;font-family:var(--mono);color:var(--dim2);text-transform:uppercase;letter-spacing:.04em}
 
@@ -1599,14 +1599,14 @@ function detailHtml(d){
     officialPack.glyphs.forEach((g,idx)=>iconTiles.push({
       name:g.name,
       tag:'official svg',
-      svg:buildSysSvg(ic,g,22,idx%5===4?iconAccent:iconCol),
+      svg:buildSysSvg(ic,g,28,idx%5===4?iconAccent:iconCol),
       copySvg:buildSysSvg(ic,g,officialPack.grid||ic.grid||24,'currentColor',true)
     }));
   }else if(ic.samples&&ic.samples.length){
     ic.samples.forEach((s,idx)=>iconTiles.push({
       name:s.name,
       tag:ic.source==='repo'?'repo svg':ic.source==='npm'?'npm svg':'extracted svg',
-      svg:buildSysSvg(ic,s,22,idx%5===4?iconAccent:iconCol),
+      svg:buildSysSvg(ic,s,28,idx%5===4?iconAccent:iconCol),
       copySvg:buildSysSvg(ic,s,ic.grid||24,'currentColor',true)
     }));
   }

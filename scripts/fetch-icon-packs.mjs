@@ -67,7 +67,7 @@ function matchPathForAliases(files, pathPattern, aliases, opts = {}) {
 function normalizeSvgColors(body) {
   return body
     .replace(/\s*<path\b[^>]*\bd=["']M0 0h24v24H0z["'][^>]*\/?>/gi, "")
-    .replace(/\b(stroke|fill)=["'](?:#000(?:000)?|#fff(?:fff)?|#212b32|#0a0b0d|black|oklch\([^)]+\)|currentColor)["']/gi, '$1="currentColor"');
+    .replace(/\b(stroke|fill)=["'](?:#000(?:000)?|#111(?:111)?|#222(?:222)?|#333(?:333)?|#444(?:444)?|#fff(?:fff)?|#212b32|#0a0b0d|black|oklch\([^)]+\)|currentColor)["']/gi, '$1="currentColor"');
 }
 
 function parseSvgMarkup(raw, realName, fallbackVb = "0 0 24 24") {
@@ -187,19 +187,20 @@ const NPM_PACKS = [
   {
     id: "material-symbols",
     pkg: "@material-symbols/svg-400",
+    // Official Google Fonts CDN serves optical-size 24px (wght 400, 80/960 stroke), matching fonts.google.com/icons
     directMap: {
-      home: "/outlined/home.svg",
-      search: "/outlined/search.svg",
-      plus: "/outlined/add.svg",
-      check: "/outlined/check.svg",
-      close: "/outlined/close.svg",
-      "arrow-right": "/outlined/arrow_forward.svg",
-      "chevron-down": "/outlined/keyboard_arrow_down.svg",
-      settings: "/outlined/settings.svg",
-      bell: "/outlined/notifications.svg",
-      user: "/outlined/person.svg",
-      folder: "/outlined/folder.svg",
-      code: "/outlined/code.svg",
+      home: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/home/default/24px.svg",
+      search: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/search/default/24px.svg",
+      plus: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/add/default/24px.svg",
+      check: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/check/default/24px.svg",
+      close: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/close/default/24px.svg",
+      "arrow-right": "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/arrow_forward/default/24px.svg",
+      "chevron-down": "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/keyboard_arrow_down/default/24px.svg",
+      settings: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/settings/default/24px.svg",
+      bell: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/notifications/default/24px.svg",
+      user: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/person/default/24px.svg",
+      folder: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/folder/default/24px.svg",
+      code: "https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/code/default/24px.svg",
     },
     displayGrid: 24,
   },
@@ -275,9 +276,15 @@ async function buildNpmPack(spec) {
             useParentIf: spec.useParentIf || null,
           });
       if (!chosen) return;
-      const bodyText = await fetchText(`https://cdn.jsdelivr.net/npm/${spec.pkg}@${meta.version}${chosen}`).catch(() => null);
+      const fetchUrl = /^https?:\/\//i.test(chosen)
+        ? chosen
+        : `https://cdn.jsdelivr.net/npm/${spec.pkg}@${meta.version}${chosen}`;
+      const bodyText = await fetchText(fetchUrl).catch(() => null);
       if (!bodyText) return;
-      const rawName = extractIconStem(chosen, { stripCategoryPrefix: Boolean(spec.stripCategoryPrefix), useParentIf: spec.useParentIf || null }) || path.posix.basename(chosen, path.posix.extname(chosen));
+      const stemSource = /^https?:\/\//i.test(chosen)
+        ? chosen.split("/").slice(-3, -2)[0]
+        : chosen;
+      const rawName = extractIconStem(stemSource, { stripCategoryPrefix: Boolean(spec.stripCategoryPrefix), useParentIf: spec.useParentIf || null }) || path.posix.basename(stemSource, path.posix.extname(stemSource));
       const parsed = spec.mode ? parseJsIconModule(bodyText, rawName, spec) : parseSvgMarkup(bodyText, rawName);
       if (parsed) glyphs[idx] = { slot: slot.key, ...parsed };
     })
