@@ -109,13 +109,13 @@ export function DsSelect({
     }
 
     const onPointerDown = (e: PointerEvent) => {
-      const t = e.target as Node;
-      if (wrapRef.current?.contains(t) || menuRef.current?.contains(t)) return;
+      const t = e.target;
+      if (t instanceof Node && (wrapRef.current?.contains(t) || menuRef.current?.contains(t))) return;
       setOpen(false);
     };
     const onScroll = (e: Event) => {
-      const t = e.target as Node | null;
-      if (t && menuRef.current?.contains(t)) return;
+      const t = e.target;
+      if (t instanceof Node && menuRef.current?.contains(t)) return;
       setOpen(false);
     };
     document.addEventListener('pointerdown', onPointerDown, true);

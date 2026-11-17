@@ -359,10 +359,10 @@
   .ldb-insp-subbar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 14px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent);flex:none}
   .ldb-insp-subbar .seg{padding:2px}
   .ldb-insp-subbar .chip{padding:3.5px 9px;font-size:11px}
-  .ldb-insp-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:13px 14px;display:flex;flex-direction:column;gap:13px}
-  .ldb-xray-stage{position:relative;height:208px;padding:22px;border-radius:10px;border:1px solid var(--line);background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none;transition:background-color var(--t-theme)}
+  .ldb-insp-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:12px 14px;display:flex;flex-direction:column;gap:11px}
+  .ldb-xray-stage{position:relative;height:184px;padding:18px;border-radius:10px;border:1px solid var(--line);background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none;transition:background-color var(--t-theme)}
   .ldb-xray-stage.is-dark{background:#0c0c0f;color:#fafafa}
-  .ldb-xray-stage .ldb-hero-canvas{width:min(100%,300px);height:164px}
+  .ldb-xray-stage .ldb-hero-canvas{width:min(100%,300px);height:148px}
   .ldb-xray-stage .ldb-hero-tools{top:9px;right:9px;gap:4px;padding:2.5px}
   .ldb-xray-stage .ldb-hero-tools .chip{padding:3px 8px;font-size:10.5px}
   .ldb-spec-mini{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -2739,11 +2739,13 @@ function openDsSelectMenu(sel){
   }
 
   const onDoc=e=>{
-    if(menu.contains(e.target)||wrap.contains(e.target)) return;
+    const t=e&&e.target;
+    if(t instanceof Node&&(menu.contains(t)||wrap.contains(t))) return;
     closeDsSelectMenu(false);
   };
   const onScroll=e=>{
-    if(e&&e.target&&menu.contains(e.target)) return;
+    const t=e&&e.target;
+    if(t instanceof Node&&menu.contains(t)) return;
     closeDsSelectMenu(false);
   };
   const onKey=e=>{
