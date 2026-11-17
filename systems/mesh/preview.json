@@ -608,56 +608,12 @@
   "icons": {
     "library": "Inline System SVGs",
     "package": null,
-    "style": "solid",
-    "grid": 24,
-    "strokeWidth": 0,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "search",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M5.995.828c4.973-2.113 10.718.205 12.832 5.178a9.78 9.78 0 0 1-1.575 10.197l6.495 6.495a.75.75 0 0 1-1.06 1.06l-6.495-6.495a9.8 9.8 0 0 1-2.543 1.575C8.676 20.952 2.931 18.634.817 13.66-1.296 8.687 1.022 2.942 5.995.828m11.452 5.765a8.284 8.284 0 1 0-1.784 9.118l.017-.02.02-.02a8.28 8.28 0 0 0 1.747-9.078\"/>"
-      },
-      {
-        "name": "edit",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"m1.924 15.89.032-.038.034-.038.007-.006L16.484 1.32a4.39 4.39 0 0 1 6.237-.04 4.39 4.39 0 0 1-.036 6.228l-14.5 14.5a.75.75 0 0 1-.344.196L.936 23.976a.75.75 0 0 1-.913-.912l1.77-6.905a.75.75 0 0 1 .197-.345zm.996 1.912L1.791 22.21l4.41-1.132zM16.605 3.32 3.581 16.343l4.078 4.07 13.02-13.02zm2.998-1.82a2.9 2.9 0 0 0-2.053.876l.12-.113 4.069 4.07a2.9 2.9 0 0 0 .753-1.726l.009-.21a2.9 2.9 0 0 0-.841-2.056 2.9 2.9 0 0 0-2.057-.84\"/>"
-      },
-      {
-        "name": "ui-3",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M20.158 1.08a3.75 3.75 0 0 1 3.75 3.75v11.136a3.75 3.75 0 0 1-3.75 3.75l-4.291-.001.483 2.785h1.601a.75.75 0 0 1 .743.648l.007.102a.75.75 0 0 1-.75.75h-11.9a.75.75 0 0 1 0-1.5h1.6l.484-2.785-4.29.001a3.75 3.75 0 0 1-3.75-3.75V4.83a3.75 3.75 0 0 1 3.75-3.75zm-5.813 18.636H9.657L9.174 22.5h5.655zm7.877-2.855H1.78a2.25 2.25 0 0 0 2.065 1.355h16.313a2.25 2.25 0 0 0 2.064-1.355M20.157 2.58H3.845a2.25 2.25 0 0 0-2.25 2.25l-.001 10.53h20.813V4.83a2.25 2.25 0 0 0-2.25-2.25\"/>"
-      },
-      {
-        "name": "ui-4",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M.75 22.5a.75.75 0 1 1 0-1.5h.75v-9a1.5 1.5 0 0 1 1.356-1.493L3 10.5h3A1.5 1.5 0 0 1 7.5 12v9H9V3a1.5 1.5 0 0 1 1.356-1.493L10.5 1.5h3A1.5 1.5 0 0 1 15 3v18h1.5V7.5a1.5 1.5 0 0 1 1.356-1.493L18 6h3a1.5 1.5 0 0 1 1.5 1.5V21h.75a.75.75 0 0 1 .743.648l.007.102a.75.75 0 0 1-.75.75ZM6 12H3v9h3zm7.5-9h-3v18h3zM21 7.5h-3V21h3z\"/>"
-      },
-      {
-        "name": "ui-5",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M2.928 5.78a11.23 11.23 0 0 0 .065 11.034L.085 22.921c-.303.638.362 1.304 1 1l6.107-2.908a11.241 11.241 0 1 0 5.56-21A11.23 11.23 0 0 0 2.928 5.78m-.58 15.878 2.172-4.561a.75.75 0 0 0-.04-.72A9.726 9.726 0 0 1 12.75 1.513h.003a9.741 9.741 0 1 1-5.127 18.014.75.75 0 0 0-.718-.04z\"/>"
-      },
-      {
-        "name": "menu",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M23.141 18.142a.75.75 0 0 1 0 1.5H.856a.75.75 0 1 1 0-1.5Zm0-6.857a.75.75 0 1 1 0 1.5H.856a.75.75 0 0 1 0-1.5Zm0-6.857a.75.75 0 1 1 0 1.5H.856a.75.75 0 0 1 0-1.5Z\"/>"
-      },
-      {
-        "name": "chevron",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M12 18.65 1.38 8.03A.75.75 0 1 0 .32 9.09l11.15 11.15a.75.75 0 0 0 1.06 0L23.68 9.09a.75.75 0 1 0-1.06-1.06z\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "**Mesh Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#144a38` brand accent.\n\nDisplay headlines pair `Crimson Pro` with `Buenos Aires` body copy (60px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Mesh**. Source: live stylesheet extraction (https://www.meshdesignsystem.com/), frameworks: css. Inventory: **75** colors, **30** typography steps, and **16** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 16 component tokens with documented paddings: `10px 18px`, `9px 13px`, `18px 20px`, `4px 10px`, `10px 16px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#9e9e9e` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid #9e9e9e` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#144a38` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#144a38` with `#f7f7f8` text (9.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Crimson Pro` headings with `Buenos Aires` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#9e9e9e` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

@@ -117,11 +117,11 @@ icons:
   library: Inline System SVGs
   package: null
   style: outline
-  grid: 24
-  strokeWidth: 0.5
+  grid: 20
+  strokeWidth: 1.75
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: derived
 components:
   button-primary-black-pill:
     backgroundColor: "#000000"

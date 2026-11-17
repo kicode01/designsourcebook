@@ -19,7 +19,7 @@ const UA = "Mozilla/5.0 (compatible; designsourcebook/0.1; +https://github.com/)
 // where token packages alone omit the UI icon sibling dependency.
 const CANONICAL_ICON_MAP = {
   apple: { library: "SF Symbols", package: null, style: "outline", grid: 20, strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round", source: "curated", proprietary: true, url: "https://developer.apple.com/sf-symbols/" },
-  google: { library: "Material Symbols", package: "material-symbols", pack: "material", style: "outline", grid: 24, strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round", source: "curated", url: "https://fonts.google.com/icons" },
+  google: { library: "Material Symbols", package: "@material-symbols/svg-400", pack: "material-symbols", style: "outline", grid: 24, strokeWidth: 0, strokeLinecap: "round", strokeLinejoin: "round", source: "npm", url: "https://fonts.google.com/icons" },
   material: { library: "Material Icons", package: "@material-design-icons/svg", pack: "material", style: "outline", grid: 24, strokeWidth: 0, strokeLinecap: "round", strokeLinejoin: "round", source: "npm", url: "https://fonts.google.com/icons" },
   materialize: { library: "Material Icons", package: "material-design-icons", pack: "material", style: "solid", grid: 24, strokeWidth: 0, strokeLinecap: "round", strokeLinejoin: "round", source: "npm", url: "https://materializecss.com/icons.html" },
   mui: { library: "Material Icons", package: "@mui/icons-material", pack: "material", style: "solid", grid: 24, strokeWidth: 0, strokeLinecap: "round", strokeLinejoin: "round", source: "curated", url: "https://mui.com/material-ui/material-icons/" },
@@ -118,13 +118,13 @@ async function harvestSvgsFromFlat(baseCdnUrl, flatUrl, { maxSamples = 8 } = {})
 
   const isIconSvg = (p) =>
     /\.svg$/i.test(p) &&
-    /(?:^|\/)(?:icons?|svgs?|glyphs?|symbols?|assets\/(?:icons?|images|svg)|img)\/[^/]+\.svg$/i.test(p) &&
-    !/logo|wordmark|brand|flag|illustration|emoji|spinner|banner|avatar|favicon|crest|mask|social|twitter|github|linkedin|youtube|facebook|instagram/i.test(p);
+    /(?:^|\/)(?:icons?|svgs?|glyphs?|symbols?|assets\/(?:icons?|svg)|img)\/[^/]+\.svg$/i.test(p) &&
+    !/logo|wordmark|brand|flag|illustration|emoji|spinner|banner|avatar|favicon|crest|mask|social|twitter|github|linkedin|youtube|facebook|instagram|corner-radius|pointer|placeholder|skeleton|diagram|hero|badge/i.test(p);
 
   const candidates = files.filter(isIconSvg);
   if (!candidates.length) return null;
 
-  const priority = /(?:home|search|check|close|add|plus|arrow-right|chevron-down|settings|gear|bell|user|folder|code|edit|trash|filter|menu|info)/i;
+  const priority = /(?:home|search|check|close|add|plus|arrow-right|arrow_forward|chevron-down|settings|gear|bell|user|folder|code|edit|trash|filter|menu|info)/i;
   candidates.sort((a, b) => (priority.test(a) ? 0 : 1) - (priority.test(b) ? 0 : 1) || a.length - b.length);
   const picks = candidates.slice(0, 14);
   const items = [];
@@ -138,7 +138,11 @@ async function harvestSvgsFromFlat(baseCdnUrl, flatUrl, { maxSamples = 8 } = {})
     })
   );
   if (!items.length) return null;
-  return inspectSvgSnippets(items, { maxSamples });
+  const inspected = inspectSvgSnippets(items, { maxSamples });
+  if (!inspected?.samples || inspected.samples.length < 2) return null;
+  const unnamed = inspected.samples.filter((s) => /^ui-\d+$/.test(s.name)).length;
+  if (unnamed > Math.floor(inspected.samples.length / 2)) return null;
+  return inspected;
 }
 
 async function probeSystem(slug, m) {
@@ -230,15 +234,14 @@ async function probeSystem(slug, m) {
   if (url && /^https?:\/\//i.test(url)) {
     let host = "";
     try { host = new URL(url).hostname.replace(/^www\./, "").toLowerCase(); } catch {}
-    // Never scan GitHub/GitLab/Bitbucket/npm UI chrome for third-party systems' icons.
+    // Only extract explicit icon-library stylesheet signals from docs HTML; skip noisy DOM <svg> scrapes.
     if (host && !/^(github\.com|gitlab\.com|bitbucket\.org|npmjs\.com)$/.test(host)) {
       const html = await fetchText(url).catch(() => null);
       if (html) {
-        const fromHtml = detectIconsFromHtml(html);
+        const fromHtml = detectIconsFromHtml(html, { allowDomSvgs: false });
         if (fromHtml) {
           fromHtml.pack = fromHtml.pack || inferPackId(fromHtml) || undefined;
-          if (result && !fromHtml.samples?.length) return result;
-          return result ? { ...result, samples: fromHtml.samples, grid: result.grid || fromHtml.grid } : fromHtml;
+          return result || fromHtml;
         }
       }
     }

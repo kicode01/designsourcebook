@@ -345,39 +345,7 @@
     "strokeWidth": 1.5,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "npm",
-    "samples": [
-      {
-        "name": "ui-1",
-        "viewBox": "0 0 16 16",
-        "fill": "none",
-        "body": "<path fill=\"currentColor\" d=\"M12.665 15.358c-.905.844-1.893.711-2.843.311-1.006-.409-1.93-.427-2.991 0-1.33.551-2.03.391-2.825-.31C-.498 10.886.166 4.078 5.28 3.83c1.246.062 2.114.657 2.843.71 1.09-.213 2.133-.826 3.296-.746 1.393.107 2.446.64 3.138 1.6-2.88 1.662-2.197 5.315.443 6.337-.526 1.333-1.21 2.657-2.345 3.635zM8.03 3.778C7.892 1.794 9.563.16 11.483 0c.268 2.293-2.16 4-3.452 3.777\"/>"
-      },
-      {
-        "name": "ui-2",
-        "viewBox": "0 0 26 26",
-        "fill": "none",
-        "body": "<path fill=\"#D8D8D8\" d=\"M13.844 18.194q.48 0 .87-.375l7.755-7.725q.42-.39.42-.9t-.42-.915L14.714.569q-.39-.375-.87-.375-.495 0-.84.33t-.345.825q0 .24.082.465.083.225.248.39l2.085 2.145 5.055 4.56.27-.78-3.69-.15H1.754q-.54 0-.87.337-.33.338-.33.878 0 .525.33.862.33.338.87.338h14.955l3.69-.135-.27-.78-5.055 4.56-2.085 2.13q-.165.165-.248.39t-.082.465q0 .51.345.84t.84.33m10.245 0q.525 0 .87-.33t.345-.84V1.379q0-.525-.345-.855t-.87-.33-.87.33-.345.855v15.645q0 .51.345.84t.87.33\"/>"
-      },
-      {
-        "name": "ui-3",
-        "viewBox": "0 0 16 16",
-        "fill": "none",
-        "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M8 4.75v2.836a1 1 0 0 0 .293.707l1.957 1.957m4-2.25a6.25 6.25 0 1 1-12.5 0 6.25 6.25 0 0 1 12.5 0Z\"/>"
-      },
-      {
-        "name": "ui-4",
-        "viewBox": "0 0 16 16",
-        "fill": "none",
-        "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M10.5 4.25a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM8 9.25c-2.245 0-4.318 1.055-5.134 3.046-.419 1.022.529 1.954 1.633 1.954h7.002c1.104 0 2.052-.932 1.633-1.954C12.318 10.305 10.245 9.25 8 9.25Z\"/>"
-      },
-      {
-        "name": "ui-5",
-        "viewBox": "0 0 16 16",
-        "fill": "none",
-        "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M12.5 7.25v0a1.75 1.75 0 0 0 1.75-1.75V3.75m-12.5 0V5.5c0 .966.784 1.75 1.75 1.75m10.75 6V11.5a1.75 1.75 0 0 0-1.75-1.75m-10.75 3.5V11.5c0-.966.784-1.75 1.75-1.75m7.883 2.034C10.826 10.829 9.668 9.75 8 9.75s-2.826 1.079-3.383 2.034m6.766 0c.544-1.05.867-2.362.867-3.784 0-3.452-1.903-6.25-4.25-6.25S3.75 4.548 3.75 8c0 1.422.323 2.733.867 3.784m6.766 0C10.607 13.283 9.38 14.25 8 14.25s-2.607-.967-3.383-2.466\"/>"
-      }
-    ]
+    "source": "npm"
   },
   "overview": "Raycast's marketing site feels like the dark interior of a precision instrument — a Swiss watch case carved from obsidian. The background isn't just dark, it's an almost-black blue-tint (`#07080a`) that creates a sense of being inside a macOS native application rather than a website. Every surface, every border, every shadow is calibrated to evoke the feeling of a high-performance desktop utility: fast, minimal, trustworthy.\n\nThe signature move is the layered shadow system borrowed from macOS window chrome: multi-layer box-shadows with inset highlights that simulate physical depth, as if cards and buttons are actual pressed or raised glass elements on a dark desk. Combined with Raycast Red (`#FF6363`) — deployed almost exclusively in the hero's iconic diagonal stripe pattern — the palette creates a brand that reads as \"powerful tool with personality.\" The red doesn't dominate; it punctuates.\n\nInter is used everywhere — headings, body, buttons, captions — with extensive OpenType features (`calt`, `kern`, `liga`, `ss03`) creating a consistent, readable typographic voice. The positive letter-spacing (0.2px–0.4px on body text) is unusual for a dark UI and gives the text an airy, breathable quality that counterbalances the dense, dark surfaces. GeistMono appears for code elements, reinforcing the developer-tool identity.\n\n**Key Characteristics:**\n- Near-black blue-tinted background (`#07080a`) — not pure black, subtly blue-shifted\n- macOS-native shadow system with multi-layer inset highlights simulating physical depth\n- Raycast Red (`#FF6363`) as a punctuation color — hero stripes, not pervasive\n- Inter with positive letter-spacing (0.2px) for an airy, readable dark-mode experience\n- Radix UI component primitives powering the interaction layer\n- Subtle rgba white borders (0.06–0.1 opacity) for containment on dark surfaces\n- Keyboard shortcut styling with gradient key caps and heavy shadows\n\n### Layout & Spacing\n### Spacing System\n- **Base unit**: 8px\n- **Scale**: 1px, 2px, 3px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px\n- **Section padding**: 80px–120px vertical between major sections\n- **Card padding**: 16px–32px internal spacing\n- **Component gaps**: 8px–16px between related elements\n\n### Grid & Container\n- **Max width**: ~1200px container (breakpoint at 1204px), centered\n- **Column patterns**: Single-column hero, 2–3 column feature grids, full-width showcase sections\n- **App showcase**: Product UI presented in centered window frames\n\n### Whitespace Philosophy\n- **Dramatic negative space**: Sections float in vast dark void, creating cinematic pacing between features\n- **Dense product, sparse marketing**: The product UI screenshots are information-dense, but the surrounding marketing copy uses minimal text with generous spacing\n- **Vertical rhythm**: Consistent 24px–32px gaps between elements within sections\n\n### Border Radius Scale\n- **2px–3px**: Micro-elements, code spans, tiny indicators\n- **4px–5px**: Keyboard keys, small interactive elements\n- **6px**: Buttons, badges, tags — the workhorse radius\n- **8px**: Input fields, inline components\n- **9px–11px**: Images, medium containers\n- **12px**: Standard cards, product screenshots\n- **16px**: Large cards, feature sections\n- **20px**: Hero cards, prominent containers\n- **86px+**: Pill buttons, nav CTAs — full pill shape",
   "dos": "### Do\n- Use `#07080a` (not pure black) as the background — the blue-cold tint is essential to the Raycast feel\n- Apply positive letter-spacing (+0.2px) on body text — this is deliberately different from most dark UIs\n- Use multi-layer shadows with inset highlights for interactive elements — the macOS-native depth is signature\n- Keep Raycast Red (`#FF6363`) as punctuation, not pervasive — reserve it for hero moments and error states\n- Use `rgba(255, 255, 255, 0.06)` borders for card containment — barely visible, structurally essential\n- Apply weight 500 as the body text baseline — medium weight improves dark-mode legibility\n- Use pill shapes (86px+ radius) for primary CTAs, rectangular shapes (6px–8px) for secondary actions\n- Enable OpenType features `calt`, `kern`, `liga`, `ss03` on all Inter text\n- Use opacity transitions (hover: opacity 0.6) for button interactions, not color changes\n\n### Don't\n- Use pure black (`#000000`) as the background — the blue tint differentiates Raycast from generic dark themes\n- Apply negative letter-spacing on body text — Raycast deliberately uses positive spacing for readability\n- Use Raycast Blue as the primary accent for everything — blue is for interactive/info, red is the brand color\n- Create single-layer flat shadows — the multi-layer inset system is core to the macOS-native aesthetic\n- Use regular weight (400) for body text when 500 is available — the extra weight prevents dark-mode text from feeling thin\n- Mix warm and cool borders — stick to the cool gray (`hsl(195, 5%, 15%)`) border palette\n- Apply heavy drop shadows without inset companions — shadows always come in pairs (outer + inset)\n- Use decorative elements, gradients, or colorful backgrounds — the dark void is the stage, content is the performer"

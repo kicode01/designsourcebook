@@ -353,49 +353,11 @@
     "library": "Inline System SVGs",
     "package": null,
     "style": "outline",
-    "grid": 24,
-    "strokeWidth": 0.5,
+    "grid": 20,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "ui-1",
-        "viewBox": "0 0 20 22",
-        "fill": "none",
-        "body": "<path d=\"M20 2C8.95431 2 0 10.9543 0 22V0H20V2Z\" fill=\"currentColor\"/><path d=\"M20 2H20.25V22.25H0V22H-0.25C-0.25 10.8162 8.81623 1.75 20 1.75V2Z\" stroke=\"currentColor\" stroke-width=\"0.5\" fill=\"none\"/>"
-      },
-      {
-        "name": "ui-2",
-        "viewBox": "0 0 20 22",
-        "fill": "none",
-        "body": "<path d=\"M0 2C11.0457 2 20 10.9543 20 22V0H0V2Z\" fill=\"currentColor\"/><path d=\"M0 2H-0.25V22.25H20V22H20.25C20.25 10.8162 11.1838 1.75 0 1.75V2Z\" stroke-width=\"0.5\" stroke=\"currentColor\" fill=\"none\"/>"
-      },
-      {
-        "name": "size",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path d=\"M9.5 18.25L15.75 12L9.5 5.75\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
-      },
-      {
-        "name": "ui-4",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-width=\"1.5\" d=\"M4 8h16M4 16h16\"/>"
-      },
-      {
-        "name": "ui-5",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M9.244 2.368C7.414 1.184 5 2.497 5 4.676v14.648c0 2.18 2.414 3.493 4.244 2.309l11.318-7.324c1.675-1.084 1.675-3.534 0-4.618z\"/>"
-      },
-      {
-        "name": "ui-6",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path d=\"M20.155 10.3209L8.8365 2.99715C7.50578 2.13609 5.75 3.09128 5.75 4.67629V19.3237C5.75 20.9087 7.50577 21.8639 8.8365 21.0029L20.155 13.6791C21.373 12.891 21.373 11.109 20.155 10.3209Z\" fill=\"currentColor\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "ElevenLabs' website is a study in restrained elegance — a near-white canvas (`#ffffff`, `#f5f5f5`) where typography and subtle shadows do all the heavy lifting. The design feels like a premium audio product brochure: clean, spacious, and confident enough to let the content speak (literally, given ElevenLabs makes voice AI). There's an almost Apple-like quality to the whitespace strategy, but warmer — the occasional warm stone tint (`#f5f2ef`, `#777169`) prevents the purity from feeling clinical.\n\nThe typography system is built on a fascinating duality: Waldenburg at weight 300 (light) for display headings creates ethereal, whisper-thin titles that feel like sound waves rendered in type — delicate, precise, and surprisingly impactful at large sizes. This light-weight display approach is the design's signature — where most sites use bold headings to grab attention, ElevenLabs uses lightness to create intrigue. Inter handles all body and UI text with workmanlike reliability, using slight positive letter-spacing (0.14px–0.18px) that gives body text an airy, well-spaced quality. WaldenburgFH appears as a bold uppercase variant for specific button labels.\n\nWhat makes ElevenLabs distinctive is its multi-layered shadow system. Rather than simple box-shadows, elements use complex stacks: inset border-shadows (`rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset`), outline shadows (`rgba(0,0,0,0.06) 0px 0px 0px 1px`), and soft elevation shadows (`rgba(0,0,0,0.04) 0px 4px 4px`) — all at remarkably low opacities. The result is a design where surfaces seem to barely exist, floating just above the page with the lightest possible touch. Pill-shaped buttons (9999px) with warm-tinted backgrounds (`rgba(245,242,239,0.8)`) and warm shadows (`rgba(78,50,23,0.04)`) add a tactile, physical quality.\n\n**Key Characteristics:**\n- Near-white canvas with warm undertones (`#f5f5f5`, `#f5f2ef`)\n- Waldenburg weight 300 (light) for display — ethereal, whisper-thin headings\n- Inter with positive letter-spacing (0.14–0.18px) for body — airy readability\n- Multi-layered shadow stacks at sub-0.1 opacity — surfaces barely exist\n- Pill buttons (9999px) with warm stone-tinted backgrounds\n- WaldenburgFH bold uppercase for specific CTA labels\n- Warm shadow tints: `rgba(78, 50, 23, 0.04)` — shadows have color, not just darkness\n- Geist Mono / ui-monospace for code snippets\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 1px, 3px, 4px, 8px, 9px, 10px, 11px, 12px, 16px, 18px, 20px, 24px, 28px, 32px, 40px\n\n### Grid & Container\n- Centered content with generous max-width\n- Single-column hero, expanding to feature grids\n- Full-width gradient sections for product showcases\n- White card grids on light gray backgrounds\n\n### Whitespace Philosophy\n- **Apple-like generosity**: Massive vertical spacing between sections creates a premium, unhurried pace. Each section is an exhibit.\n- **Warm emptiness**: The whitespace isn't cold — the warm stone undertones and warm shadows give empty space a tactile, physical quality.\n- **Typography-led rhythm**: The light-weight Waldenburg headings create visual \"whispers\" that draw the eye through vast white space.\n\n### Border Radius Scale\n- Minimal (2px): Small links, inline elements\n- Subtle (4px): Nav items, tab panels, tags\n- Standard (8px): Small containers\n- Comfortable (10px–12px): Medium cards, dropdowns\n- Card (16px): Standard cards, articles\n- Large (18px–20px): Featured cards, code panels\n- Section (24px): Large panels, section containers\n- Warm Button (30px): Warm stone CTA\n- Pill (9999px): Primary buttons, navigation pills",
   "dos": "### Do\n- Use Waldenburg weight 300 for all display headings — the lightness IS the brand\n- Apply multi-layer shadows (inset + outline + elevation) at sub-0.1 opacity\n- Use warm stone tints (`#f5f2ef`, `rgba(245,242,239,0.8)`) for featured elements\n- Apply positive letter-spacing (+0.14px to +0.18px) on Inter body text\n- Use 9999px radius for primary buttons — pill shape is standard\n- Use warm-tinted shadows (`rgba(78,50,23,0.04)`) on featured CTAs\n- Keep the page predominantly white with subtle gray section differentiation\n- Use WaldenburgFH bold uppercase ONLY for specific CTA button labels\n\n### Don't\n- Don't use bold (700) Waldenburg for headings — weight 300 is non-negotiable\n- Don't use heavy shadows (>0.1 opacity) — the ethereal quality requires whisper-level depth\n- Don't use cool gray borders — the system is warm-tinted throughout\n- Don't skip the inset shadow component — half-pixel inset borders define edges\n- Don't apply negative letter-spacing to body text — Inter uses positive tracking\n- Don't use sharp corners (<8px) on cards — the generous radius is structural\n- Don't introduce brand colors — the palette is intentionally achromatic with warm undertones\n- Don't make buttons opaque and heavy — the warm translucent stone treatment is the signature"

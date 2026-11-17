@@ -258,14 +258,14 @@ rounded:
   default: 20px
 icons:
   library: Material Symbols
-  package: material-symbols
-  pack: material
+  package: "@material-symbols/svg-400"
+  pack: material-symbols
   style: outline
   grid: 24
-  strokeWidth: 1.5
+  strokeWidth: 0
   strokeLinecap: round
   strokeLinejoin: round
-  source: curated
+  source: npm
   url: "https://fonts.google.com/icons"
 components:
   md3-segmented-button:

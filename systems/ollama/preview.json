@@ -286,25 +286,11 @@
     "library": "Inline System SVGs",
     "package": null,
     "style": "outline",
-    "grid": 24,
-    "strokeWidth": 1.5,
+    "grid": 20,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "ui-1",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5\"/>"
-      },
-      {
-        "name": "ui-2",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6 18L18 6M6 6l12 12\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "Ollama's interface is radical minimalism taken to its logical conclusion — a pure-white void where content floats without decoration, shadow, or color. The design philosophy mirrors the product itself: strip away everything unnecessary until only the essential tool remains. This is the digital equivalent of a Dieter Rams object — every pixel earns its place, and the absence of design IS the design.\n\nThe entire page exists in pure grayscale. There is zero chromatic color in the interface — no brand blue, no accent green, no semantic red. The only colors that exist are shades between pure black (`#000000`) and pure white (`#ffffff`), creating a monochrome environment that lets the user's mental model of \"open models\" remain uncolored by brand opinion. The Ollama llama mascot, rendered in simple black line art, is the only illustration — and even it's monochrome.\n\nWhat makes Ollama distinctive is the combination of SF Pro Rounded (Apple's rounded system font) with an exclusively pill-shaped geometry (9999px radius on everything interactive). The rounded letterforms + rounded buttons + rounded containers create a cohesive \"softness language\" that makes a developer CLI tool feel approachable and friendly rather than intimidating. This is minimalism with warmth — not cold Swiss-style grid minimalism, but the kind where the edges are literally softened.\n\n**Key Characteristics:**\n- Pure white canvas with zero chromatic color — completely grayscale\n- SF Pro Rounded headlines creating a distinctively Apple-like softness\n- Binary border-radius system: 12px (containers) or 9999px (everything interactive)\n- Zero shadows — depth comes exclusively from background color shifts and borders\n- Pill-shaped geometry on all interactive elements (buttons, tabs, inputs, tags)\n- The Ollama llama as the sole illustration — black line art, no color\n- Extreme content restraint — the homepage is short, focused, and uncluttered\n\n### Layout & Spacing\n### Spacing System\n- Base unit: 8px\n- Scale: 4px, 6px, 8px, 9px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 88px, 112px\n- Button padding: 10px 24px (consistent across all buttons)\n- Card internal padding: approximately 24–32px\n- Section vertical spacing: very generous (88px–112px)\n\n### Grid & Container\n- Max container width: approximately 1024–1280px, centered\n- Hero: centered single-column with llama illustration\n- Feature sections: 2-column layout (text left, code right)\n- Integration grid: responsive multi-column\n- Footer: clean single-row\n\n### Whitespace Philosophy\n- **Emptiness as luxury**: The page is remarkably short and sparse — no feature section overstays its welcome. Each concept gets minimal but sufficient space.\n- **Content density is low by design**: Where other AI companies pack feature after feature, Ollama presents three ideas (run models, use with apps, integrations) and stops.\n- **The white space IS the brand**: Pure white space with zero decoration communicates \"this tool gets out of your way.\"\n\n### Border Radius Scale\n- Comfortably rounded (12px): The sole container radius — code blocks, cards, panels\n- Pill-shaped (9999px): Everything interactive — buttons, tabs, inputs, tags, badges\n\n*This binary system is extreme and distinctive. There is no 4px, no 8px, no gradient of roundness. Elements are either containers (12px) or interactive (pill).*",
   "dos": "### Do\n- Use pure white (`#ffffff`) as the page background — never off-white or cream\n- Use pill-shaped (9999px) radius on all interactive elements — buttons, tabs, inputs, tags\n- Use 12px radius on all non-interactive containers — code blocks, cards, panels\n- Keep the palette strictly grayscale — no chromatic colors except the blue focus ring\n- Use SF Pro Rounded at weight 500 for display headings — the rounded terminals are the brand expression\n- Maintain zero shadows — depth comes from borders and background shifts only\n- Keep content density low — each section should present one clear idea\n- Use monospace for terminal commands and code — it's primary content, not decoration\n- Keep all buttons at 10px 24px padding with pill shape — consistency is absolute\n\n### Don't\n- Don't introduce any chromatic color — no brand blue, no accent green, no warm tones\n- Don't use border-radius between 12px and 9999px — the system is binary\n- Don't add shadows to any element — the flat aesthetic is intentional\n- Don't use font weights above 500 — no bold, no black weight\n- Don't add decorative illustrations beyond the llama mascot\n- Don't use gradients anywhere — flat blocks and borders only\n- Don't overcomplicate the layout — two columns maximum, no complex grids\n- Don't use borders heavier than 1px — containment is always the lightest possible touch\n- Don't add hover animations or transitions — interactions should feel instant and direct"

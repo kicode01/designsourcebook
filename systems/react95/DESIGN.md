@@ -78,7 +78,7 @@ icons:
   library: React95 Pixel Icons
   package: "@react95/icons"
   style: solid
-  grid: 32
+  grid: 16
   strokeWidth: 0
   strokeLinecap: square
   strokeLinejoin: miter

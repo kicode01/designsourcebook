@@ -346,62 +346,12 @@
   "icons": {
     "library": "Inline System SVGs",
     "package": null,
-    "style": "solid",
+    "style": "outline",
     "grid": 20,
-    "strokeWidth": 0,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "align-center",
-        "viewBox": "0 0 20 20",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M18.25 18.25H1.75V16.75H18.25V18.25Z\"/><path fill=\"currentColor\" d=\"M13 5.5C14.5188 5.5 15.75 6.73122 15.75 8.25V11.75C15.75 13.2688 14.5188 14.5 13 14.5H7C5.48122 14.5 4.25 13.2688 4.25 11.75V8.25C4.25 6.73122 5.48122 5.5 7 5.5H13ZM7 7C6.30964 7 5.75 7.55964 5.75 8.25V11.75C5.75 12.4404 6.30964 13 7 13H13C13.6904 13 14.25 12.4404 14.25 11.75V8.25C14.25 7.55964 13.6904 7 13 7H7Z\"/><path fill=\"currentColor\" d=\"M18.25 3.25H1.75V1.75H18.25V3.25Z\"/>"
-      },
-      {
-        "name": "align-left",
-        "viewBox": "0 0 20 20",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M18.25 18.25H1.75V16.75H18.25V18.25Z\"/><path fill=\"currentColor\" d=\"M10.5 5.5C12.0188 5.5 13.25 6.73122 13.25 8.25V11.75C13.25 13.2688 12.0188 14.5 10.5 14.5H4.5C2.98122 14.5 1.75 13.2688 1.75 11.75V8.25C1.75 6.73122 2.98122 5.5 4.5 5.5H10.5ZM4.5 7C3.80964 7 3.25 7.55964 3.25 8.25V11.75C3.25 12.4404 3.80964 13 4.5 13H10.5C11.1904 13 11.75 12.4404 11.75 11.75V8.25C11.75 7.55964 11.1904 7 10.5 7H4.5Z\"/><path fill=\"currentColor\" d=\"M18.25 3.25H1.75V1.75H18.25V3.25Z\"/>"
-      },
-      {
-        "name": "align-right",
-        "viewBox": "0 0 20 20",
-        "fill": "currentColor",
-        "body": "<path fill=\"currentColor\" d=\"M18.25 18.25H1.75V16.75H18.25V18.25Z\"/><path fill=\"currentColor\" d=\"M15.5 5.5C17.0188 5.5 18.25 6.73122 18.25 8.25V11.75C18.25 13.2688 17.0188 14.5 15.5 14.5H9.5C7.98122 14.5 6.75 13.2688 6.75 11.75V8.25C6.75 6.73122 7.98122 5.5 9.5 5.5H15.5ZM9.5 7C8.80964 7 8.25 7.55964 8.25 8.25V11.75C8.25 12.4404 8.80964 13 9.5 13H15.5C16.1904 13 16.75 12.4404 16.75 11.75V8.25C16.75 7.55964 16.1904 7 15.5 7H9.5Z\"/><path fill=\"currentColor\" d=\"M18.25 3.25H1.75V1.75H18.25V3.25Z\"/>"
-      },
-      {
-        "name": "arrow-down",
-        "viewBox": "0 0 20 20",
-        "fill": "none",
-        "body": "<path d=\"M10 2L10 18M3.333 11.333L10 18L16.667 11.333\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
-      },
-      {
-        "name": "arrow-down-bars",
-        "viewBox": "0 0 20 20",
-        "fill": "none",
-        "body": "<path d=\"M6 18.5H4.5V8.5H6V18.5Z\" fill=\"currentColor\"/><path d=\"M10 18.5H8.5V11H10V18.5Z\" fill=\"currentColor\"/><path d=\"M14 18.5H12.5V14.5H14V18.5Z\" fill=\"currentColor\"/><path d=\"M4.61133 3.2998C7.30038 5.98886 10.9471 7.5 14.75 7.5H17.0615L14.2754 4.71387L15.3359 3.65332L18.3408 6.6582C19.2193 7.53685 19.2193 8.96217 18.3408 9.84082L15.3359 12.8457L14.2754 11.7852L17.0605 9H14.75C10.5493 9 6.52016 7.33169 3.5498 4.36133L1.96973 2.78027L3.03027 1.71973L4.61133 3.2998Z\" fill=\"currentColor\"/>"
-      },
-      {
-        "name": "arrow-down-line",
-        "viewBox": "0 0 20 20",
-        "fill": "none",
-        "body": "<path d=\"M19 18.5H1V17H19V18.5Z\" fill=\"currentColor\"/><path d=\"M10.75 13.751C10.8793 13.6539 10.994 13.5292 11.083 13.375L14.6338 7.22559L15.9326 7.97559L12.3818 14.125C11.3234 15.958 8.6778 15.9578 7.61914 14.125L4.06836 7.97559L5.36719 7.22559L8.91797 13.375C9.00695 13.529 9.12085 13.654 9.25 13.751V1H10.75V13.751Z\" fill=\"currentColor\"/>"
-      },
-      {
-        "name": "arrow-down-sort",
-        "viewBox": "0 0 20 20",
-        "fill": "none",
-        "body": "<path d=\"M17.1313 16.5H1.13135V15H17.1313V16.5Z\" fill=\"currentColor\"/><path d=\"M16.1313 10.6465L17.8081 8.96973L18.8687 10.0303L16.2651 12.6338C15.8075 13.0914 15.0832 13.1201 14.5923 12.7197L14.4976 12.6338L11.894 10.0303L12.9546 8.96973L14.6313 10.6465V3.5H16.1313V10.6465Z\" fill=\"currentColor\"/><path d=\"M10.6313 11.75H1.13135V10.25H10.6313V11.75Z\" fill=\"currentColor\"/><path d=\"M12.6313 7H1.13135V5.5H12.6313V7Z\" fill=\"currentColor\"/>"
-      },
-      {
-        "name": "arrow-left",
-        "viewBox": "0 0 20 20",
-        "fill": "none",
-        "body": "<path d=\"M8.667 3.333L2 10L8.667 16.667M2 10L18 10\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "Superhuman's website feels like opening a luxury envelope — predominantly white, immaculately clean, with a single dramatic gesture of color that commands attention. The hero section is a cinematic purple gradient, a deep twilight wash of `#1b1938` that evokes the moment just before dawn, overlaid with confident white typography. Below this dramatic entrance, the rest of the site is almost entirely white canvas with dark charcoal text, creating a stark but refined reading experience.\n\nThe typography is the true signature: Super Sans VF, a custom variable font with unconventional weight stops (460, 540, 600, 700) that sit between traditional font weight categories. Weight 460 — slightly heavier than regular but lighter than medium — is the workhorse, creating text that feels more confident than typical 400-weight but never aggressive. The tight line-heights (0.96 on display text) compress headlines into dense, powerful blocks, while generous 1.50 line-height on body text provides airy readability. This tension between compressed power and breathing room defines the Superhuman typographic voice.\n\nThe design philosophy is maximum confidence through minimum decoration. Warm cream buttons (`#e9e5dd`) instead of bright CTAs, a near-absence of borders and shadows, and lavender purple (`#cbb7fb`) as the sole accent color. It's a productivity tool that markets itself like a luxury brand — every pixel earns its place, nothing is merely decorative. The brand naming convention extends to colors: the primary purple is called \"Mysteria,\" straddling blue and purple with deliberate ambiguity.\n\n**Key Characteristics:**\n- Deep purple gradient hero (`#1b1938`) contrasting against a predominantly white content body\n- Super Sans VF variable font with non-standard weight stops (460, 540, 600, 700) — sits between conventional weight categories\n- Ultra-tight display line-height (0.96) creating compressed, powerful headlines\n- Warm Cream (`#e9e5dd`) buttons instead of bright/saturated CTAs — understated luxury\n- Lavender Purple (`#cbb7fb`) as the singular accent color — a soft, approachable purple\n- Minimal border-radius scale: only 8px and 16px — no micro-rounding, no pill shapes\n- Product screenshots dominate the content — the UI sells itself with minimal surrounding decoration\n\n### Layout & Spacing\n### Spacing System\n- **Base unit**: 8px\n- **Scale**: 2px, 4px, 6px, 8px, 12px, 16px, 18px, 20px, 24px, 28px, 32px, 36px, 40px, 48px, 56px\n- **Section padding**: 48px–80px vertical between major sections\n- **Card padding**: 16px–32px internal spacing\n- **Component gaps**: 8px–16px between related elements\n\n### Grid & Container\n- **Max width**: ~1200px content container, centered\n- **Column patterns**: Full-width hero, centered single-column for key messaging, 2-3 column grid for feature cards\n- **Feature grid**: Even column distribution for \"Your Superhuman suite\" product showcase\n\n### Whitespace Philosophy\n- **Confident emptiness**: Generous whitespace between sections signals premium positioning — every element has room to breathe\n- **Product as content**: Large product screenshots fill space that lesser sites would fill with marketing copy\n- **Progressive density**: The hero is spacious and cinematic, content sections become denser with feature grids, then opens up again for CTAs\n\n### Border Radius Scale\n- **8px**: Buttons, inline elements (`span`, `button`, `div`) — the universal small radius\n- **16px**: Cards, links, larger containers (`a`, card elements) — the universal large radius\n- Only two radii in the entire system — radical simplicity. No micro-rounding (2px), no pill shapes (50px+)",
   "dos": "### Do\n- Use Super Sans VF at weight 460 as the default — it's slightly heavier than regular, which is the brand's typographic signature\n- Keep display headlines at 0.96 line-height — the compression is intentional and powerful\n- Use Warm Cream (`#e9e5dd`) for primary buttons — not white, not gray, specifically warm cream\n- Limit border-radius to 8px (small) and 16px (large) — the binary radius system is deliberate\n- Apply negative letter-spacing on headlines only (-0.63px to -1.32px) — body text stays at 0px\n- Use Lavender Glow (`#cbb7fb`) as the only accent color — it's the sole color departure from the neutral palette\n- Let product screenshots be the primary visual content — the UI sells itself\n- Maintain the dramatic hero gradient as a singular gesture — the rest of the page is white\n\n### Don't\n- Use conventional font weights (400, 500, 600) — Superhuman's 460 and 540 are deliberately between standard stops\n- Add bright or saturated CTA colors (blue, green, red) — buttons are intentionally muted in Warm Cream or Charcoal\n- Introduce additional accent colors beyond Lavender Glow — the palette is deliberately restrained to one accent\n- Apply shadows generously — depth comes from borders, color contrast, and photography, not box-shadows\n- Use tight line-height on body text — display is compressed (0.96) but body is generous (1.50)\n- Add decorative elements, icons, or illustrations — Superhuman relies on product UI and minimal typography\n- Create pill-shaped buttons — the system uses 8px radius, not rounded pills\n- Use pure black (`#000000`) for text — Charcoal Ink (`#292827`) is warmer and softer"

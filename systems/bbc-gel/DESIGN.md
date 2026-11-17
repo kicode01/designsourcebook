@@ -80,12 +80,12 @@ rounded:
 icons:
   library: Inline System SVGs
   package: null
-  style: solid
-  grid: 32
-  strokeWidth: 0
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: derived
 components:
   button:
     textColor: "#0000ee"

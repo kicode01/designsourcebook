@@ -127,11 +127,11 @@ icons:
   library: Inline System SVGs
   package: null
   style: outline
-  grid: 16
-  strokeWidth: 1.5
+  grid: 20
+  strokeWidth: 1.75
   strokeLinecap: round
   strokeLinejoin: round
-  source: observed
+  source: derived
 components:
   button-primary-brand:
     backgroundColor: "#0d0d0d"

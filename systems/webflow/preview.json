@@ -297,25 +297,11 @@
     "library": "Inline System SVGs",
     "package": null,
     "style": "outline",
-    "grid": 24,
-    "strokeWidth": 1.5,
-    "strokeLinecap": "square",
-    "strokeLinejoin": "bevel",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "arrow",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path d=\"M16.293 9.29297L12 13.586L7.70697 9.29297L6.29297 10.707L12 16.414L17.707 10.707L16.293 9.29297Z\" fill=\"currentColor\"/>"
-      },
-      {
-        "name": "ui-2",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path d=\"M4 18V6H20V18\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M1 18H23\" stroke=\"currentColor\" stroke-width=\"1.5\"/>"
-      }
-    ]
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
   },
   "overview": "Webflow's website is a visually rich, tool-forward platform that communicates \"design without code\" through clean white surfaces, the signature Webflow Blue (`#146ef5`), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.\n\n**Key Characteristics:**\n- White canvas with near-black (`#080808`) text\n- Webflow Blue (`#146ef5`) as primary brand + interactive color\n- WF Visual Sans Variable — custom variable font with weight 500–600\n- Rich secondary palette: purple `#7a3dff`, pink `#ed52cb`, green `#00d722`, orange `#ff6b00`, yellow `#ffae13`, red `#ee1d36`\n- Conservative 4px–8px border-radius — sharp, not rounded\n- Multi-layer shadow stacks (5-layer cascading shadows)\n- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)\n- translate(6px) hover animation on buttons\n\n### Layout & Spacing\n- Spacing: fractional scale (1px, 2.4px, 3.2px, 4px, 5.6px, 6px, 7.2px, 8px, 9.6px, 12px, 16px, 24px)\n- Radius: 2px, 4px, 8px, 50% — conservative, sharp\n- Breakpoints: 479px, 768px, 992px",
   "dos": "- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.\n- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs."

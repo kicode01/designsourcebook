@@ -381,50 +381,12 @@
   "icons": {
     "library": "Inline System SVGs",
     "package": null,
-    "style": "solid",
-    "grid": 24,
-    "strokeWidth": 0,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "ui-1",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path d=\"M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.475-3.08a.75.75 0 0 1 .106 1.055l-4.5 5.5a.75.75 0 0 1-1.111.055l-2-2a.75.75 0 1 1 1.06-1.06l1.414 1.414 3.975-4.859a.75.75 0 0 1 1.056-.105Z\"/>"
-      },
-      {
-        "name": "ui-2",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path d=\"M7.47 9.47a.75.75 0 0 1 1.06 0L12 12.94l3.47-3.47a.75.75 0 1 1 1.06 1.06l-3.646 3.647a1.25 1.25 0 0 1-1.768 0L7.47 10.53a.75.75 0 0 1 0-1.06Z\"/>"
-      },
-      {
-        "name": "ui-3",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path d=\"M11 4.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM3 11a8 8 0 1 1 14.162 5.102l3.618 3.618a.75.75 0 1 1-1.06 1.06l-3.618-3.618A8 8 0 0 1 3 11Z\"/>"
-      },
-      {
-        "name": "ui-4",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path d=\"M12 3.5a8.5 8.5 0 0 0-6.223 14.29C7.247 16.074 9.417 15 12 15c2.583 0 4.752 1.074 6.223 2.79A8.5 8.5 0 0 0 12 3.5Zm5.108 15.294C15.917 17.388 14.151 16.5 12 16.5c-2.15 0-3.917.888-5.109 2.294A8.46 8.46 0 0 0 12 20.5a8.46 8.46 0 0 0 5.108-1.706ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 2.974-1.3 5.646-3.359 7.476A9.965 9.965 0 0 1 12 22a9.965 9.965 0 0 1-6.641-2.524A9.977 9.977 0 0 1 2 12Zm10-4.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM8 10a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z\"/>"
-      },
-      {
-        "name": "ui-5",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path d=\"M7 4.5h10A2.5 2.5 0 0 1 19.5 7v10a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 17V7A2.5 2.5 0 0 1 7 4.5ZM7 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H7Z\"/>"
-      },
-      {
-        "name": "ui-6",
-        "viewBox": "0 0 24 24",
-        "fill": "currentColor",
-        "body": "<path d=\"M4.75 3.69 12 10.94l7.25-7.25 1.06 1.06L13.06 12l7.25 7.25-1.06 1.06L12 13.06l-7.25 7.25-1.06-1.06L10.94 12 3.69 4.75l1.06-1.06Z\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "PostHog's website feels like a startup's internal wiki that escaped into the wild — warm, irreverent, and deliberately anti-corporate. The background isn't the expected crisp white or dark void of developer tools; it's a warm, sage-tinted cream (`#fdfdf8`) that gives every surface a handmade, paper-like quality. Colors lean into earthy olive greens and muted sage rather than the conventional blues and purples of the SaaS world. It's as if someone designed a developer analytics platform inside a cozy garden shed.\n\nThe personality is the star: hand-drawn hedgehog illustrations, quirky action figures, and playful imagery replace the stock photography and abstract gradients typical of B2B SaaS. IBM Plex Sans Variable serves as the typographic foundation — a font with genuine technical credibility (created by IBM, widely used in developer contexts) deployed here with bold weights (700, 800) on headings and generous line-heights on body text. The typography says \"we're serious engineers\" while everything around it says \"but we don't take ourselves too seriously.\"\n\nThe interaction design carries the same spirit: hover states flash PostHog Orange (`#F54E00`) text — a hidden brand color that doesn't appear at rest but surprises on interaction. Dark near-black buttons (`#1e1f23`) use opacity reduction on hover rather than color shifts, and active states scale slightly. The border system uses sage-tinted grays (`#bfc1b7`) that harmonize with the olive text palette. Built on Tailwind CSS with Radix UI and shadcn/ui primitives, the technical foundation is modern and component-driven, but the visual output is stubbornly unique.\n\n**Key Characteristics:**\n- Warm sage/olive color palette instead of conventional blues — earthy and approachable\n- IBM Plex Sans Variable font at bold weights (700/800) for headings with generous 1.50+ line-heights\n- Hidden brand orange (`#F54E00`) that only appears on hover interactions — a delightful surprise\n- Hand-drawn hedgehog illustrations and playful imagery — deliberately anti-corporate\n- Sage-tinted borders (`#bfc1b7`) and backgrounds (`#eeefe9`) creating a unified warm-green system\n- Dark near-black CTAs (`#1e1f23`) with opacity-based hover states\n- Content-heavy editorial layout — the site reads like a magazine, not a typical landing page\n- Tailwind CSS + Radix UI + shadcn/ui component architecture\n\n### Layout & Spacing\n### Spacing System\n- **Base unit**: 8px\n- **Scale**: 2px, 4px, 6px, 8px, 10px, 12px, 16px, 18px, 24px, 32px, 34px\n- **Section padding**: 32px–48px vertical between sections (compact for a content-heavy site)\n- **Card padding**: 4px–12px internal (notably compact)\n- **Component gaps**: 4px–8px between related elements\n\n### Grid & Container\n- **Max width**: 1536px (largest breakpoint), with content containers likely 1200px–1280px\n- **Column patterns**: Varied — single column for text content, 2-3 column grids for feature cards, asymmetric layouts for product demos\n- **Breakpoints**: 13 defined — 1px, 425px, 482px, 640px, 768px, 767px, 800px, 900px, 1024px, 1076px, 1160px, 1280px, 1536px\n\n### Whitespace Philosophy\n- **Content-dense by design**: PostHog's site is information-rich — whitespace is measured, not lavish\n- **Editorial pacing**: Content sections flow like a magazine with varied layouts keeping the eye moving\n- **Illustrations as breathing room**: Hand-drawn hedgehog art breaks up dense content sections naturally\n\n### Border Radius Scale\n- **2px**: Small inline elements, tags (`span`)\n- **4px**: Primary UI components — buttons, inputs, dropdowns, menu items (`button`, `div`, `combobox`)\n- **6px**: Secondary containers — larger buttons, list items, card variants (`button`, `div`, `li`)\n- **9999px**: Pill shape — badges, status indicators, rounded tags (`span`, `div`)",
   "dos": "### Do\n- Use the olive/sage color family (#4d4f46, #23251d, #bfc1b7) for text and borders — the warm green undertone is essential to the brand\n- Flash PostHog Orange (#F54E00) on hover states — it's the hidden brand signature\n- Use IBM Plex Sans at bold weights (700/800) for headings — the font carries technical credibility\n- Keep body text at generous line-heights (1.50–1.71) — the content-heavy site demands readability\n- Maintain the warm parchment background (#fdfdf8) — not pure white, never cold\n- Use 4px border-radius for most UI elements — keep corners subtle and functional\n- Include playful, hand-drawn illustration elements — the personality is the differentiator\n- Apply opacity-based hover states (0.7 opacity) on dark buttons rather than color shifts\n\n### Don't\n- Use blue, purple, or typical tech-SaaS colors — PostHog's palette is deliberately olive/sage\n- Add heavy shadows — the system uses one shadow for floating elements only; everything else uses borders\n- Make the design look \"polished\" or \"premium\" in a conventional sense — PostHog's charm is its irreverent, scrappy energy\n- Use tight line-heights on body text — the generous 1.50+ spacing is essential for the content-heavy layout\n- Apply large border-radius (12px+) on cards — PostHog uses 4px–6px, keeping things tight and functional\n- Remove the orange hover flash — it's a core interaction pattern, not decoration\n- Replace illustrations with stock photography — the hand-drawn hedgehog art is the brand\n- Use pure white (#ffffff) as page background — the warm sage-cream (#fdfdf8) tint is foundational"

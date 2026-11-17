@@ -611,37 +611,11 @@
     "library": "Inline System SVGs",
     "package": null,
     "style": "outline",
-    "grid": 15,
-    "strokeWidth": 1.5,
+    "grid": 20,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "arrow",
-        "viewBox": "0 0 15 12",
-        "fill": "none",
-        "body": "<path d=\"M 13.328 6.011 L 8 10.955 L 6.824 9.803 L 10.04 6.923 L 11 6 L 10.04 5.075 L 6.824 2.219 L 8 1.043 Z\" fill=\"currentColor\"/>"
-      },
-      {
-        "name": "arrow-2",
-        "viewBox": "0 0 15 12",
-        "fill": "none",
-        "body": "<path d=\"M 10.04 6.923 L 1 6.923 L 1 5.075 L 10.04 5.075 Z\" fill=\"currentColor\"/>"
-      },
-      {
-        "name": "arrow-3",
-        "viewBox": "0 0 15 12",
-        "fill": "none",
-        "body": "<path d=\"M 13.328 6.011 L 8 10.955 L 6.824 9.803 L 10.04 6.923 L 11 6 L 10.04 5.075 L 6.824 2.219 L 8 1.043 Z\" fill=\"rgb(31, 32, 35)\"/>"
-      },
-      {
-        "name": "arrow-4",
-        "viewBox": "0 0 15 12",
-        "fill": "none",
-        "body": "<path d=\"M 10.04 6.923 L 1 6.923 L 1 5.075 L 10.04 5.075 Z\" fill=\"rgb(31, 32, 35)\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "**Mixpanel Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff8e75` brand accent.\n\nTypography centers cleanly on `Garnett` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fafafa` surface layering.\n\nMaintained by **Mixpanel**. Source: live stylesheet extraction (https://design.mixpanel.com), frameworks: css. Inventory: **85** colors, **4** typography steps, and **32** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 32 component tokens with documented paddings: `24px`, `8px 32px`, `0 14px 0 16px`, `6px 12px`, `4px 16px`.\n- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#fafafa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8e75` for keyboard focus and active selection states.",
   "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff8e75` with `#0b0b0c` text (8.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Garnett` headings with `Garnett` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fafafa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input-default` fields and secondary buttons."

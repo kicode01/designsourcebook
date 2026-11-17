@@ -563,11 +563,15 @@ for (const slug of dirs) {
     tempPreview = buildPreview({ colors: data.colors || {}, typography: data.typography || {}, components: mergedComps, prose: {} });
   }
 
-  // Resolve verified or token-derived SVG Iconography specification
+  // Resolve verified or token-derived SVG Iconography specification (dropping stale DOM scrapes)
+  const fallbackIconsRaw = data.icons || oldPreview.icons || null;
+  const fallbackIcons = fallbackIconsRaw && fallbackIconsRaw.library !== "Inline System SVGs"
+    ? (({ samples: _dropOldSamples, ...rest }) => rest)(fallbackIconsRaw)
+    : null;
   const resolvedIcons = deriveIconSpec({
     radius: tempPreview.radius,
     components: mergedComps,
-    existingIcons: discoveredIcons[slug] || data.icons || oldPreview.icons || null,
+    existingIcons: discoveredIcons[slug] || fallbackIcons,
   });
   const { samples: _dropSamples, ...yamlIcons } = resolvedIcons;
   if (JSON.stringify(data.icons || {}) !== JSON.stringify(yamlIcons)) {

@@ -52,11 +52,11 @@ icons:
   library: Inline System SVGs
   package: null
   style: outline
-  grid: 52
-  strokeWidth: 1
-  strokeLinecap: round
-  strokeLinejoin: round
-  source: observed
+  grid: 20
+  strokeWidth: 1.5
+  strokeLinecap: square
+  strokeLinejoin: miter
+  source: derived
 components:
   button-primary:
     backgroundColor: "#1c69d4"

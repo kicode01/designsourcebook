@@ -333,61 +333,11 @@
     "library": "Inline System SVGs",
     "package": null,
     "style": "outline",
-    "grid": 16,
-    "strokeWidth": 1.8,
+    "grid": 20,
+    "strokeWidth": 1.75,
     "strokeLinecap": "round",
     "strokeLinejoin": "round",
-    "source": "observed",
-    "samples": [
-      {
-        "name": "ui-1",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path d=\"M6 6l12 12M6 18L18 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>"
-      },
-      {
-        "name": "ui-2",
-        "viewBox": "0 0 24 24",
-        "fill": "none",
-        "body": "<path d=\"M3 6h18M3 12h18M3 18h18\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/>"
-      },
-      {
-        "name": "ui-3",
-        "viewBox": "0 0 18 18",
-        "fill": "none",
-        "body": "<path d=\"M11.6402 7.34988L9.07809 10.5525C9.03805 10.6025 8.96195 10.6025 8.92191 10.5525L6.35982 7.34988\" stroke=\"currentColor\"/>"
-      },
-      {
-        "name": "ui-4",
-        "viewBox": "0 0 16 16",
-        "fill": "none",
-        "body": "<path fill=\"currentColor\" d=\"M8 1.25C4.27 1.25 1.25 4.27 1.25 8S4.27 14.75 8 14.75s6.75-3.02 6.75-6.75S11.73 1.25 8 1.25m3.72 5.08-5.18 5.18L4.1 9.07a.85.85 0 0 1 0-1.2c.33-.33.87-.33 1.2 0l1.24 1.24 3.98-3.98c.33-.33.87-.33 1.2 0s.33.87 0 1.2\"/>"
-      },
-      {
-        "name": "ui-5",
-        "viewBox": "0 0 16 16",
-        "fill": "currentColor",
-        "body": "<path d=\"M6.8.366.8 4.41c-.5.35-.8.893-.8 1.472v8.28c0 1.012.9 1.84 2 1.84h12c1.1 0 2-.828 2-1.84v-8.28c0-.58-.3-1.122-.8-1.472L9.2.366a2.15 2.15 0 0 0-2.4 0M4.3 9.842a.75.75 0 0 0-1 1.12A7.03 7.03 0 0 0 8 12.752a7.03 7.03 0 0 0 4.7-1.792.75.75 0 1 0-1-1.12A5.53 5.53 0 0 1 8 11.254a5.54 5.54 0 0 1-3.7-1.412\"/>"
-      },
-      {
-        "name": "ui-6",
-        "viewBox": "0 0 16 16",
-        "fill": "currentColor",
-        "body": "<path d=\"M11.14 3H4.86c-.25 0-.48.13-.61.35L1.2 8.64c-.13.23-.2.49-.2.75V13c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V9.39c0-.26-.07-.52-.2-.75l-3.05-5.29a.7.7 0 0 0-.61-.35M10 9v2H6V9H2.72l2.6-4.5h5.36l2.6 4.5z\"/>"
-      },
-      {
-        "name": "ui-7",
-        "viewBox": "0 0 16 16",
-        "fill": "currentColor",
-        "body": "<path d=\"M14.905 1.843c-.249 0-.967.02-1.905.185V0S9.41.08 7.087 2.833c0 0-2.292-1.594-6.572-1.594q-.253 0-.515.007v12.486c3.566.036 5.955.777 8 2.03 0 0 2.816-1.809 7-1.87V1.845l-.095-.001zM11.5 1.778v8.866c-.977.38-2.38 1.098-3.5 2.312v-8.88l.233-.276c.979-1.16 2.27-1.736 3.267-2.022m-10 .993c3.063.202 4.722 1.288 4.73 1.293l.27.188v9.11c-1.5-.588-3.122-.945-5-1.073V2.77z\"/>"
-      },
-      {
-        "name": "ui-8",
-        "viewBox": "0 0 16 16",
-        "fill": "currentColor",
-        "body": "<path d=\"M5 6H2v6h3zm4.5-5h-3v11h3zM14 4h-3v8h3zM2 13.5V15h12v-1.5z\"/>"
-      }
-    ]
+    "source": "derived"
   },
   "overview": "Intercom's website is a warm, confident customer service platform that communicates \"AI-first helpdesk\" through a clean, editorial design language. The page operates on a warm off-white canvas (`#faf9f6`) with off-black (`#111111`) text, creating an intimate, magazine-like reading experience. The signature Fin Orange (`#ff5600`) — named after Intercom's AI agent — serves as the singular vibrant accent against the warm neutral palette.\n\nThe typography uses Saans — a custom geometric sans-serif with aggressive negative letter-spacing (-2.4px at 80px, -0.48px at 24px) and a consistent 1.00 line-height across all heading sizes. This creates ultra-compressed, billboard-like headlines that feel engineered and precise. Serrif provides the serif companion for editorial moments, and SaansMono handles code and uppercase technical labels. MediumLL and LLMedium appear for specific UI contexts, creating a rich five-font ecosystem.\n\nWhat distinguishes Intercom is its remarkably sharp geometry — 4px border-radius on buttons creates near-rectangular interactive elements that feel industrial and precise, contrasting with the warm surface colors. Button hover states use `scale(1.1)` expansion, creating a physical \"growing\" interaction. The border system uses warm oat tones (`#dedbd6`) and oklab-based opacity values for sophisticated color management.\n\n**Key Characteristics:**\n- Warm off-white canvas (`#faf9f6`) with oat-toned borders (`#dedbd6`)\n- Saans font with extreme negative tracking (-2.4px at 80px) and 1.00 line-height\n- Fin Orange (`#ff5600`) as singular brand accent\n- Sharp 4px border-radius — near-rectangular buttons and elements\n- Scale(1.1) hover with scale(0.85) active — physical button interaction\n- SaansMono uppercase labels with wide tracking (0.6px–1.2px)\n- Rich multi-color report palette (blue, green, red, pink, lime, orange)\n- oklab color values for sophisticated opacity management\n\n### Layout & Spacing\n### Spacing: 8px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 60px, 64px, 80px, 96px\n### Border Radius: 4px (buttons), 6px (nav items), 8px (cards, containers)",
   "dos": "### Do\n- Use Saans with 1.00 line-height and negative tracking on all headings\n- Apply 4px radius on buttons — sharp geometry is the identity\n- Use Fin Orange (#ff5600) for AI/brand accent only\n- Apply scale(1.1) hover on buttons\n- Use warm neutrals (#faf9f6, #dedbd6)\n\n### Don't\n- Don't round buttons beyond 4px\n- Don't use Fin Orange decoratively\n- Don't use cool gray borders — always warm oat tones\n- Don't skip the negative tracking on headings"

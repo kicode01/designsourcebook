@@ -20,8 +20,8 @@ const SLOTS = [
   { key: "plus", names: ["plus", "add", "plus-lg", "plus-16", "add-16", "math-plus-l"] },
   { key: "check", names: ["check", "checkmark", "check-lg", "tick", "done", "accept", "approve"] },
   { key: "close", names: ["x", "close", "dismiss", "times", "xmark", "cross-2", "cross", "cross-1", "clear", "x-lg", "cancel", "decline"] },
-  { key: "arrow-right", names: ["arrow-right", "arrowright", "arrow--right", "arrow_forward", "east", "arrow-forward", "right-arrow"] },
-  { key: "chevron-down", names: ["chevron-down", "chevrondown", "chevron--down", "caret-down", "expand_more", "keyboard_arrow_down", "down", "arrow-down", "slim-arrow-down"] },
+  { key: "arrow-right", names: ["arrow_forward", "arrow-forward", "arrow-right", "arrowright", "arrow--right", "east", "right-arrow"] },
+  { key: "chevron-down", names: ["keyboard_arrow_down", "chevron-down", "chevrondown", "chevron--down", "expand_more", "caret-down", "slim-arrow-down"] },
   { key: "settings", names: ["settings", "gear", "cog", "setting", "action-settings", "adjustments-horizontal", "sliders", "gear-16", "preferences"] },
   { key: "bell", names: ["bell", "notification", "notifications", "alarm", "alert", "notification-2"] },
   { key: "user", names: ["user", "person", "account", "profile", "user-profile", "customer", "employee"] },
@@ -184,6 +184,25 @@ const NPM_PACKS = [
     displayGrid: 20,
   },
   { id: "material", pkg: "@material-design-icons/svg", pat: /^\/outlined\/[^/]+\.svg$/i },
+  {
+    id: "material-symbols",
+    pkg: "@material-symbols/svg-400",
+    directMap: {
+      home: "/outlined/home.svg",
+      search: "/outlined/search.svg",
+      plus: "/outlined/add.svg",
+      check: "/outlined/check.svg",
+      close: "/outlined/close.svg",
+      "arrow-right": "/outlined/arrow_forward.svg",
+      "chevron-down": "/outlined/keyboard_arrow_down.svg",
+      settings: "/outlined/settings.svg",
+      bell: "/outlined/notifications.svg",
+      user: "/outlined/person.svg",
+      folder: "/outlined/folder.svg",
+      code: "/outlined/code.svg",
+    },
+    displayGrid: 24,
+  },
   { id: "flight", pkg: "@hashicorp/flight-icons", pat: /^\/svg\/[^/]+-16\.svg$/i },
   { id: "gitlab", pkg: "@gitlab/svgs", pat: /^\/dist\/sprite_icons\/[^/]+\.svg$/i },
   { id: "stacks", pkg: "@stackoverflow/stacks-icons", pat: /^\/dist\/lib\/Icon\/[^/]+\.svg$/i },
@@ -295,7 +314,7 @@ async function buildRadixPack() {
   const radixMap = [
     ["home", "home"], ["search", "magnifying-glass"], ["plus", "plus"], ["check", "check"],
     ["close", "cross-2"], ["arrow-right", "arrow-right"], ["chevron-down", "chevron-down"],
-    ["settings", "gear"], ["bell", "bell"], ["user", "person"], ["folder", "file"], ["code", "code"],
+    ["settings", "gear"], ["bell", "bell"], ["user", "person"], ["code", "code"],
   ];
   const glyphs = [];
   await Promise.all(

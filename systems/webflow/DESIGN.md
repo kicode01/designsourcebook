@@ -83,11 +83,11 @@ icons:
   library: Inline System SVGs
   package: null
   style: outline
-  grid: 24
-  strokeWidth: 1.5
-  strokeLinecap: square
-  strokeLinejoin: bevel
-  source: observed
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
 components:
   button-primary:
     backgroundColor: "#146ef5"
