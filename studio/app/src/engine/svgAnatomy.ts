@@ -93,6 +93,15 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
     anglesSet.add(Math.round(deg * 10) / 10);
   };
 
+  const pushAnchor = (x: number, y: number) => {
+    if (Number.isFinite(x) && Number.isFinite(y)) anchors.push({ x, y });
+  };
+  const pushHandle = (ax: number, ay: number, cx: number, cy: number) => {
+    if (Number.isFinite(ax) && Number.isFinite(ay) && Number.isFinite(cx) && Number.isFinite(cy)) {
+      handles.push({ anchor: { x: ax, y: ay }, control: { x: cx, y: cy } });
+    }
+  };
+
   for (const el of shapesEls) {
     const tag = el.localName;
     if (tag === 'rect') {
@@ -100,24 +109,33 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
       const y = parseFloat(el.getAttribute('y') || '0');
       const w = parseFloat(el.getAttribute('width') || '0');
       const h = parseFloat(el.getAttribute('height') || '0');
-      anchors.push({ x, y }, { x: x + w, y }, { x: x + w, y: y + h }, { x, y: y + h });
+      pushAnchor(x, y);
+      pushAnchor(x + w, y);
+      pushAnchor(x + w, y + h);
+      pushAnchor(x, y + h);
       anglesSet.add(0);
       anglesSet.add(90);
     } else if (tag === 'circle') {
       const cx = parseFloat(el.getAttribute('cx') || '0');
       const cy = parseFloat(el.getAttribute('cy') || '0');
       const r = parseFloat(el.getAttribute('r') || '0');
-      anchors.push({ x: cx, y: cy - r }, { x: cx + r, y: cy }, { x: cx, y: cy + r }, { x: cx - r, y: cy });
+      pushAnchor(cx, cy - r);
+      pushAnchor(cx + r, cy);
+      pushAnchor(cx, cy + r);
+      pushAnchor(cx - r, cy);
     } else if (tag === 'path') {
       const d = el.getAttribute('d') || '';
-      const toks = d.match(/[a-zA-Z]|-?\d*\.?\d+(?:e[-+]?\d+)?/g) || [];
+      const toks = d.match(/[a-zA-Z]|[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?/g) || [];
       let idx = 0;
       let cx = 0;
       let cy = 0;
       let sx = 0;
       let sy = 0;
       let cmd = 'M';
-      const num = () => Number(toks[idx++] || 0);
+      const num = () => {
+        const v = Number(toks[idx++]);
+        return Number.isFinite(v) ? v : 0;
+      };
       while (idx < toks.length) {
         if (/^[a-zA-Z]$/.test(toks[idx])) {
           cmd = toks[idx++];
@@ -130,36 +148,36 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
         }
         const rel = cmd >= 'a' && cmd <= 'z';
         const op = cmd.toUpperCase();
-        if (op === 'M' || op === 'L') {
+        if (op === 'M' || op === 'L' || op === 'T') {
           const x = num() + (rel ? cx : 0);
           const y = num() + (rel ? cy : 0);
-          if (op === 'L') recordSegAngle({ x: cx, y: cy }, { x, y });
+          if (op === 'L' || op === 'T') recordSegAngle({ x: cx, y: cy }, { x, y });
           else {
             sx = x;
             sy = y;
           }
           cx = x;
           cy = y;
-          anchors.push({ x, y });
+          pushAnchor(x, y);
           if (cmd === 'M') cmd = 'L';
           if (cmd === 'm') cmd = 'l';
         } else if (op === 'H') {
           const x = num() + (rel ? cx : 0);
           recordSegAngle({ x: cx, y: cy }, { x, y: cy });
           cx = x;
-          anchors.push({ x: cx, y: cy });
+          pushAnchor(cx, cy);
         } else if (op === 'V') {
           const y = num() + (rel ? cy : 0);
           recordSegAngle({ x: cx, y: cy }, { x: cx, y });
           cy = y;
-          anchors.push({ x: cx, y: cy });
-        } else if (op === 'Q') {
+          pushAnchor(cx, cy);
+        } else if (op === 'Q' || op === 'S') {
           const qx = num() + (rel ? cx : 0);
           const qy = num() + (rel ? cy : 0);
           const x = num() + (rel ? cx : 0);
           const y = num() + (rel ? cy : 0);
-          handles.push({ anchor: { x, y }, control: { x: qx, y: qy } });
-          anchors.push({ x, y });
+          pushHandle(x, y, qx, qy);
+          pushAnchor(x, y);
           cx = x;
           cy = y;
         } else if (op === 'C') {
@@ -169,20 +187,30 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
           const y2 = num() + (rel ? cy : 0);
           const x = num() + (rel ? cx : 0);
           const y = num() + (rel ? cy : 0);
-          handles.push({ anchor: { x: cx, y: cy }, control: { x: x1, y: y1 } });
-          handles.push({ anchor: { x, y }, control: { x: x2, y: y2 } });
-          anchors.push({ x, y });
+          pushHandle(cx, cy, x1, y1);
+          pushHandle(x, y, x2, y2);
+          pushAnchor(x, y);
           cx = x;
           cy = y;
         } else if (op === 'A') {
           num();
           num();
           num();
+          const f1 = toks[idx] || '0';
+          if (/^[01]{2,}$/.test(f1)) {
+            toks.splice(idx, 1, f1[0], f1[1], ...(f1.length > 2 ? [f1.slice(2)] : []));
+          } else if (/^[01][01]/.test(f1) && f1.length > 1) {
+            toks.splice(idx, 1, f1[0], f1.slice(1));
+          }
           num();
+          const f2 = toks[idx] || '0';
+          if (/^[01].+/.test(f2) && f2.length > 1) {
+            toks.splice(idx, 1, f2[0], f2.slice(1));
+          }
           num();
           const x = num() + (rel ? cx : 0);
           const y = num() + (rel ? cy : 0);
-          anchors.push({ x, y });
+          pushAnchor(x, y);
           cx = x;
           cy = y;
         } else {
