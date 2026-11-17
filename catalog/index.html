@@ -2980,7 +2980,7 @@ function buildLogoDetailHtml(item,anatomy){
     return '<div class="comp">'+
       '<div class="comp-stage" style="gap:18px;background:#0c0c0f;min-height:92px">'+
         '<div style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center;flex:none;color:#fafafa'+(needsInvertForDark?';filter:brightness(0) invert(1)':'')+'">'+dSvg+'</div>'+
-        '<div style="width:'+(sz+12)+'px;height:'+(sz+12)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:6px;flex:none;color:#09090b'+(needsInvertForLight?';filter:brightness(0)':'')+'">'+lSvg+'</div>'+
+        '<div style="width:'+(sz+12)+'px;height:'+(sz+12)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:6px;flex:none;color:#09090b"><span style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center'+(needsInvertForLight?';filter:brightness(0)':'')+'">'+lSvg+'</span></div>'+
       '</div>'+
       '<div class="comp-info"><b>'+sz+' \u00d7 '+sz+' px</b><span>Dark ground \u00b7 Light app badge</span></div>'+
     '</div>';
