@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#09090B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Geist:wght@300..700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300..700&family=Plus+Jakarta+Sans:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#09090b; --panel:#101013; --panel2:#17171c;
@@ -19,9 +19,10 @@
     --ink:#fafafa; --dim:#a1a1aa; --dim2:#71717a;
     --accent:#fafafa; --accent-fg:#09090b;
     --ok:#10b981; --warn:#f59e0b;
-    --sans:'Geist','Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-    --display:'Geist','Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
-    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+    --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --display:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --mono:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --code:ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,monospace;
     --sys-radius:999px; --card-radius:12px;
     --header-bg:rgba(9,9,11,.84);
     --ease-out:cubic-bezier(.22,1,.36,1);
@@ -195,18 +196,25 @@
   }
 
   /* ---------- coverage ---------- */
+  .cov-sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:20px}
+  .cov-src-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 14px;display:flex;flex-direction:column;gap:7px;transition:background-color var(--t-theme),border-color var(--t-theme)}
+  .cov-src-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:12px}
+  .cov-src-top b{font-weight:560;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .cov-src-top span{font-size:11.5px;color:var(--dim2);font-variant-numeric:tabular-nums;flex:none}
+  .cov-src-bar{height:3px;border-radius:999px;background:color-mix(in srgb,var(--ink) 8%,transparent);overflow:hidden}
+  .cov-src-bar i{display:block;height:100%;border-radius:999px;background:color-mix(in srgb,var(--ok) 75%,var(--ink) 25%)}
   .cov-list{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);transition:background-color var(--t-theme),border-color var(--t-theme)}
   .cov-row{display:grid;grid-template-columns:190px 1fr 150px 64px;gap:14px;align-items:center;padding:9px 15px;border-bottom:1px solid var(--line);font-size:12.5px;transition:background-color var(--t-ui),border-color var(--t-theme)}
   .cov-row:last-child{border-bottom:0}
   .cov-row.have:hover{background:color-mix(in srgb,var(--ink) 4%,transparent);cursor:pointer}
   .cov-org{color:var(--ink);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .cov-sys{color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .cov-src{color:var(--dim2);font-size:11px;font-family:var(--mono)}
-  .cov-tag{font-size:10px;font-family:var(--mono);padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--dim2);text-align:center}
+  .cov-src{color:var(--dim2);font-size:11.5px;font-family:var(--sans)}
+  .cov-tag{font-size:10.5px;font-family:var(--sans);font-weight:500;padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--dim2);text-align:center}
   .cov-tag.in{color:var(--ink);border-color:var(--line2);background:color-mix(in srgb,var(--ink) 5%,transparent)}
   .cov-tag.npm{color:var(--ink);border-color:var(--line2)}
   .cov-tag.repo{color:var(--dim);border-color:var(--line2)}
-  .cov-h{font-size:11px;font-family:var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:24px 0 9px}
+  .cov-h{font-size:11px;font-family:var(--sans);font-weight:550;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:24px 0 9px}
 
   /* ---------- detail page (chameleon aware) ---------- */
   .detail{display:none}
@@ -267,13 +275,13 @@
   .notes h4{font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin:16px 0 8px}
   .notes ul,.notes ol{margin:0 0 14px;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.65;color:var(--dim)}
   .notes strong{color:var(--ink);font-weight:560}
-  .notes code{font-family:var(--mono);font-size:11.5px;padding:1.5px 5px;border-radius:4px;background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid var(--line);color:var(--ink)}
-  .cmd{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:10px 14px;font-family:var(--mono);font-size:12px;color:var(--ink);transition:background-color var(--t-theme),border-color var(--t-theme),border-radius var(--t-theme),color var(--t-theme)}
+  .notes code{font-family:var(--code);font-size:11.5px;padding:1.5px 5px;border-radius:4px;background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid var(--line);color:var(--ink)}
+  .cmd{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:10px 14px;font-family:var(--code);font-size:12px;color:var(--ink);transition:background-color var(--t-theme),border-color var(--t-theme),border-radius var(--t-theme),color var(--t-theme)}
   .cmd code{flex:1;overflow-x:auto;white-space:nowrap}
   .cmd-stack{display:flex;flex-direction:column;gap:9px}
   .prompt-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);padding:10px 14px;transition:background-color var(--t-theme),border-color var(--t-theme),border-radius var(--t-theme)}
-  .prompt-box summary{cursor:pointer;font-size:11.5px;font-family:var(--mono);color:var(--dim);user-select:none}
-  .prompt-box pre{margin:10px 0 0;padding:12px;background:var(--bg);border:1px solid var(--line);border-radius:8px;font-family:var(--mono);font-size:11px;line-height:1.55;color:var(--dim);max-height:280px;overflow:auto;white-space:pre-wrap;word-break:break-word;transition:background-color var(--t-theme),border-color var(--t-theme),color var(--t-theme)}
+  .prompt-box summary{cursor:pointer;font-size:12px;font-weight:500;font-family:var(--sans);color:var(--dim);user-select:none}
+  .prompt-box pre{margin:10px 0 0;padding:12px;background:var(--bg);border:1px solid var(--line);border-radius:8px;font-family:var(--code);font-size:11px;line-height:1.55;color:var(--dim);max-height:280px;overflow:auto;white-space:pre-wrap;word-break:break-word;transition:background-color var(--t-theme),border-color var(--t-theme),color var(--t-theme)}
   .kinds{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
   .kind{font-size:10.5px;font-family:var(--mono);padding:3.5px 9px;border-radius:999px;background:var(--panel);border:1px solid var(--line);color:var(--dim);transition:background-color var(--t-theme),border-color var(--t-theme),color var(--t-theme)}
   .kind b{color:var(--ink);font-weight:550}
@@ -376,13 +384,13 @@
   .ldb-scale-pair{display:flex;align-items:center;justify-content:center;gap:8px;min-height:42px;width:100%;background:#0c0c0f;border-radius:6px;padding:4px 6px}
   .ldb-scale-card small{font-size:10px;font-family:var(--mono);color:var(--dim2)}
   .ldb-swatches{display:flex;flex-wrap:wrap;gap:6px}
-  .ldb-swatch-btn{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);font-size:11px;font-family:var(--mono);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui),background-color var(--t-ui)}
+  .ldb-swatch-btn{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);font-size:11px;font-family:var(--sans);font-variant-numeric:tabular-nums;color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui),background-color var(--t-ui)}
   .ldb-swatch-btn:hover{border-color:var(--line2);color:var(--ink);background:color-mix(in srgb,var(--ink) 6%,transparent)}
   .ldb-swatch-btn i{width:10px;height:10px;border-radius:3px;border:1px solid var(--line2);display:inline-block;flex:none}
   .ldb-tags{display:flex;flex-wrap:wrap;gap:5px}
-  .ldb-tag{font-size:10.5px;font-family:var(--mono);padding:3px 8px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui)}
+  .ldb-tag{font-size:11px;font-family:var(--sans);padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui)}
   button.ldb-tag:hover{border-color:var(--line2);color:var(--ink)}
-  .ldb-code{margin:0;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:var(--bg);font-family:var(--mono);font-size:10.5px;line-height:1.5;color:var(--dim);max-height:190px;overflow:auto;white-space:pre-wrap;word-break:break-all}
+  .ldb-code{margin:0;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:var(--bg);font-family:var(--code);font-size:10.5px;line-height:1.5;color:var(--dim);max-height:190px;overflow:auto;white-space:pre-wrap;word-break:break-all}
   .ldb-insp-foot{padding:10px 14px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent);display:grid;grid-template-columns:1fr 1fr;gap:7px;flex:none}
   .ldb-insp-foot .pill-btn{justify-content:center}
 
@@ -1283,6 +1291,7 @@ function heroFor(p){
 
 /* ---------- on-demand font loader ---------- */
 const GF_ALLOW=new Set([
+  'Geist','IBM Plex Sans','IBM Plex Mono','Source Serif 4','Plus Jakarta Sans','JetBrains Mono',
   'Roboto','Roboto Flex','Roboto Mono','Open Sans','Lato','Ubuntu','Public Sans',
   'Source Sans 3','Source Code Pro','Red Hat Display','Red Hat Text','Red Hat Mono',
   'Overpass','Titillium Web','Nunito','Nunito Sans','DM Sans','Poppins','Work Sans',
@@ -1291,7 +1300,7 @@ const GF_ALLOW=new Set([
   'Spline Sans Mono','Atkinson Hyperlegible','Anonymous Pro','Inconsolata','Noto Sans',
   'Rubik','Montserrat','Cabin','Barlow','Mulish','Karla','Hind','Lexend','Sora','Bitter'
 ]);
-const GF_LOADED=new Set(['Inter','Geist','IBM Plex Sans','IBM Plex Mono','Source Serif 4','Plus Jakarta Sans','JetBrains Mono']);
+const GF_LOADED=new Set(['Inter']);
 function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
 function ensureFontsFor(items){
   const want=[];
@@ -1606,7 +1615,7 @@ function agentPromptFor(d){
 }
 
 /* ---------- theme chameleon ---------- */
-const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--sans','--display','--card-radius','--header-bg','--ds-c1','--ds-c2','--ds-c3','--sb-accent'];
+const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--card-radius','--header-bg','--ds-c1','--ds-c2','--ds-c3','--sb-accent'];
 function systemBrandSlabs(d,canvasRgb,inkCol){
   const candidates=[d.brand,...(d.palette||[]).map(p=>p.value)].filter(Boolean);
   const picks=[];
@@ -1653,8 +1662,6 @@ function applySystemTheme(d){
   const lineCol=d.border||(isDark?'rgba(255,255,255,0.12)':'rgba(0,0,0,0.1)');
   const line2Col=isDark?'rgba(255,255,255,0.22)':'rgba(0,0,0,0.2)';
   const cardRad=parseFloat(d.radius)>=20?'14px':(d.radius||'10px');
-  const bFam=fontStack(bodyType(d).fontFamily);
-  const dFam=fontStack(displayType(d).fontFamily);
   const [ds1,ds2,ds3]=systemBrandSlabs(d,cRgb,inkCol);
   rootEl.style.setProperty('--bg',d.canvas);
   rootEl.style.setProperty('--panel',panelCol);
@@ -1666,8 +1673,6 @@ function applySystemTheme(d){
   rootEl.style.setProperty('--dim2',alpha(inkCol,0.55));
   rootEl.style.setProperty('--accent',d.brand);
   rootEl.style.setProperty('--accent-fg',readable(ink(d.brand),d.brand));
-  rootEl.style.setProperty('--sans',bFam);
-  rootEl.style.setProperty('--display',dFam);
   rootEl.style.setProperty('--card-radius',cardRad);
   rootEl.style.setProperty('--header-bg',alpha(d.canvas,0.86));
   rootEl.style.setProperty('--ds-c1',ds1);
@@ -2120,12 +2125,8 @@ function renderRanking(){
     seenPkgs.add(d.package);
     return a+d.npmDownloads;
   },0);
-  const syncLabel=DB_META.live
-    ? ('Neon Postgres'+(DB_META.syncedAt?' \u00b7 synced '+String(DB_META.syncedAt).slice(0,10):''))
-    : 'Unique upstream repos';
-
   rankingEl.innerHTML=
-    '<div class="meta"><h1>Popularity Leaderboard</h1><em>'+(total?((startIdx+1)+'\u2013'+endIdx+' of '+total):'0')+' systems \u00b7 '+esc(syncLabel)+'</em></div>'+
+    '<div class="meta"><h1>Popularity Leaderboard</h1><em>'+(total?((startIdx+1)+'\u2013'+endIdx+' of '+total):'0')+'</em></div>'+
     '<div class="cov-sum">'+
       '<div><b>'+withRepos+'</b>unique repositories</div>'+
       '<div><b>'+fmtNum(totalStars)+'</b>GitHub stars</div>'+
@@ -2193,16 +2194,23 @@ function renderCoverage(){
   const haveAll=entries.filter(e=>e.covered).length;
   const reachAll=entries.filter(e=>!e.covered&&e.npm).length;
   const repoAll=entries.filter(e=>!e.covered&&!e.npm&&e.repo).length;
-  const srcLine=(COVERAGE.sources||[]).map(s=>s.name.split(' (')[0]+' '+s.covered+'/'+s.total).join('  \u00b7  ');
+  const srcCards=(COVERAGE.sources||[]).map(s=>{
+    const pct=s.total?Math.round((s.covered/s.total)*100):0;
+    return '<div class="cov-src-card">'+
+      '<div class="cov-src-top"><b>'+esc(s.name.split(' (')[0])+'</b><span>'+s.covered+'/'+s.total+' \u00b7 '+pct+'%</span></div>'+
+      '<div class="cov-src-bar"><i style="width:'+pct+'%"></i></div>'+
+    '</div>';
+  }).join('');
 
   coverageEl.innerHTML=
-    '<div class="meta"><h1>Registry Coverage</h1><em>'+srcLine+'</em></div>'+
+    '<div class="meta"><h1>Registry Coverage</h1><em>'+have.length+' of '+list.length+'</em></div>'+
     '<div class="cov-sum">'+
       '<div><b>'+haveAll+'/'+total+'</b>organisations sourced</div>'+
       '<div><b>'+(total-haveAll)+'</b>unindexed</div>'+
       '<div><b>'+reachAll+'</b>reachable via npm</div>'+
       '<div><b>'+repoAll+'</b>reachable via repo</div>'+
     '</div>'+
+    (srcCards?'<div class="cov-sources">'+srcCards+'</div>':'')+
     (have.length?'<div class="cov-h">In Registry \u2014 '+have.length+'</div><div class="cov-list">'+have.map(row).join('')+'</div>':'')+
     (miss.length?'<div class="cov-h">Unindexed \u2014 '+miss.length+'</div><div class="cov-list">'+miss.map(row).join('')+'</div>':'');
 

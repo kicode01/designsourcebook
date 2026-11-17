@@ -498,7 +498,7 @@ export function seedSystemFromCatalog(raw: Record<string, unknown>): Partial<Des
   const derived = harmonyPair(brand, 'split');
   const radiusNum = parseFloat(String(raw.radius || '8'));
   const typeArr = Array.isArray(raw.type) ? (raw.type as { fontFamily?: string }[]) : [];
-  const firstFont = typeArr[0]?.fontFamily ? String(typeArr[0].fontFamily).split(',')[0].replace(/['"]/g, '').trim() : 'Geist';
+  const firstFont = typeArr[0]?.fontFamily ? String(typeArr[0].fontFamily).split(',')[0].replace(/['"]/g, '').trim() : 'Inter';
   const fontMatch = FONT_OPTIONS.find((f) => f.label.toLowerCase().includes(firstFont.toLowerCase()))?.stack || `'${firstFont}', 'Inter', system-ui, sans-serif`;
 
   return {
