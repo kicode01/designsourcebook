@@ -1494,25 +1494,36 @@ function agentPromptFor(d){
 
 /* ---------- theme chameleon ---------- */
 const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--sans','--display','--card-radius','--header-bg','--ds-c1','--ds-c2','--ds-c3'];
-function systemBrandSlabs(d,canvasCol,inkCol){
+function systemBrandSlabs(d,canvasRgb,inkCol){
   const candidates=[d.brand,...(d.palette||[]).map(p=>p.value)].filter(Boolean);
   const picks=[];
   const seen=new Set();
   for(const raw of candidates){
-    const rgb=parseColor(raw);
-    if(!rgb) continue;
+    const parsed=parseColor(raw);
+    if(!parsed) continue;
+    const rgb=parsed[3]<1?over(parsed,canvasRgb):parsed;
     const key=rgb.slice(0,3).map(v=>Math.round(v)).join(',');
     if(seen.has(key)) continue;
-    const cr=ratio(rgb,canvasCol);
+    const cr=ratio(rgb,canvasRgb);
     if(cr<1.55) continue;
     const spread=Math.max(rgb[0],rgb[1],rgb[2])-Math.min(rgb[0],rgb[1],rgb[2]);
-    picks.push({col:raw,score:spread+Math.min(cr,6)*6});
+    picks.push({col:raw,rgb,score:spread+Math.min(cr,6)*6});
     seen.add(key);
   }
   picks.sort((a,b)=>b.score-a.score);
-  const c1=(picks[0]&&picks[0].col)||readable(d.brand,canvasCol)||inkCol;
-  const c2=(picks[1]&&picks[1].col)||('color-mix(in srgb, '+c1+' 70%, '+inkCol+')');
-  const c3=(picks[2]&&picks[2].col)||('color-mix(in srgb, '+c1+' 42%, '+inkCol+')');
+  const distinct=[];
+  for(const p of picks){
+    const far=distinct.every(q=>{
+      const dr=p.rgb[0]-q.rgb[0],dg=p.rgb[1]-q.rgb[1],db=p.rgb[2]-q.rgb[2];
+      return Math.hypot(dr,dg,db)>=42;
+    });
+    if(far||!distinct.length) distinct.push(p);
+    if(distinct.length>=3) break;
+  }
+  const chosen=distinct.length>=3?distinct:picks;
+  const c1=(chosen[0]&&chosen[0].col)||readable(d.brand,canvasRgb)||inkCol;
+  const c2=(chosen[1]&&chosen[1].col)||('color-mix(in srgb, '+c1+' 70%, '+inkCol+')');
+  const c3=(chosen[2]&&chosen[2].col)||('color-mix(in srgb, '+c1+' 42%, '+inkCol+')');
   return [c1,c2,c3];
 }
 function applySystemTheme(d){
@@ -1531,7 +1542,7 @@ function applySystemTheme(d){
   const cardRad=parseFloat(d.radius)>=20?'14px':(d.radius||'10px');
   const bFam=fontStack(bodyType(d).fontFamily);
   const dFam=fontStack(displayType(d).fontFamily);
-  const [ds1,ds2,ds3]=systemBrandSlabs(d,d.canvas,inkCol);
+  const [ds1,ds2,ds3]=systemBrandSlabs(d,cRgb,inkCol);
   rootEl.style.setProperty('--bg',d.canvas);
   rootEl.style.setProperty('--panel',panelCol);
   rootEl.style.setProperty('--panel2',panel2Col);
