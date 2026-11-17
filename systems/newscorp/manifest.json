@@ -1,0 +1,41 @@
+{
+  "name": "newscorp",
+  "displayName": "NewsKit",
+  "description": "News Corp NewsKit — tokens read from https://github.com/newscorp-ghfb/newskit.",
+  "style": "News Corp NewsKit — tokens read from https://github.com/newscorp-ghfb/newskit.",
+  "category": "News Corp",
+  "org": "News Corp",
+  "theme": "light",
+  "tags": [
+    "published",
+    "news-corp",
+    "light"
+  ],
+  "homepage": "https://github.com/newscorp-ghfb/newskit",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/newscorp-ghfb/newskit — 6 token files, 339 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/newscorp-ghfb/newskit"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 25,
+    "components": 0
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

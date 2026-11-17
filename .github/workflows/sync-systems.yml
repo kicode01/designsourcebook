@@ -1,0 +1,103 @@
+name: Sync External Design Systems
+
+on:
+  schedule:
+    # Weekly Monday 04:00 UTC check for newly published design systems
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Optional custom site URL to ingest immediately
+        required: false
+        type: string
+      repo:
+        description: Optional custom GitHub/Git repository URL to ingest immediately
+        required: false
+        type: string
+      package:
+        description: Optional custom npm token package to ingest immediately
+        required: false
+        type: string
+      slug:
+        description: Optional slug override for custom target
+        required: false
+        type: string
+      name:
+        description: Optional display name for custom target
+        required: false
+        type: string
+      org:
+        description: Optional organization name for custom target
+        required: false
+        type: string
+      limit:
+        description: Maximum new external systems to auto-ingest per run
+        required: false
+        default: "10"
+        type: string
+      dry_run:
+        description: Only check external sources without committing changes
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Discover & ingest external design systems
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARGS=("--limit" "${{ github.event.inputs.limit || '10' }}")
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS+=("--dry-run")
+          else
+            ARGS+=("--ingest")
+          fi
+          if [ -n "${{ github.event.inputs.url }}" ]; then
+            ARGS+=("--url" "${{ github.event.inputs.url }}")
+          fi
+          if [ -n "${{ github.event.inputs.repo }}" ]; then
+            ARGS+=("--repo" "${{ github.event.inputs.repo }}")
+          fi
+          if [ -n "${{ github.event.inputs.package }}" ]; then
+            ARGS+=("--package" "${{ github.event.inputs.package }}")
+          fi
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            ARGS+=("--slug" "${{ github.event.inputs.slug }}")
+          fi
+          if [ -n "${{ github.event.inputs.name }}" ]; then
+            ARGS+=("--name" "${{ github.event.inputs.name }}")
+          fi
+          if [ -n "${{ github.event.inputs.org }}" ]; then
+            ARGS+=("--org" "${{ github.event.inputs.org }}")
+          fi
+          node scripts/sync-sources.mjs "${ARGS[@]}"
+
+      - name: Verify lint across all systems
+        run: npm run lint
+
+      - name: Commit and push updated catalog
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No new design system updates."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(sync): auto-discover and update external design systems"
+          git push

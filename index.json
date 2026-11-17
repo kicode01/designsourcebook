@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-17T03:09:22.367Z",
-  "count": 206,
+  "generatedAt": "2026-11-17T03:21:36.055Z",
+  "count": 208,
   "systems": [
     {
       "name": "aalto",
@@ -3832,6 +3832,27 @@
       }
     },
     {
+      "name": "newscorp",
+      "displayName": "NewsKit",
+      "org": "News Corp",
+      "style": "News Corp NewsKit — tokens read from https://github.com/newscorp-ghfb/newskit.",
+      "tags": [
+        "published",
+        "news-corp",
+        "light"
+      ],
+      "license": "see repository",
+      "homepage": "https://github.com/newscorp-ghfb/newskit",
+      "repo": "https://github.com/newscorp-ghfb/newskit",
+      "package": null,
+      "popularity": null,
+      "checks": {
+        "errors": 0,
+        "warnings": 0,
+        "verified": true
+      }
+    },
+    {
       "name": "nhsuk",
       "displayName": "NHS.UK Service Manual",
       "org": "NHS.UK",
@@ -6256,6 +6277,27 @@
         "isDesignSystemRepo": true,
         "enterpriseRank": 42
       },
+      "checks": {
+        "errors": 0,
+        "warnings": 0,
+        "verified": true
+      }
+    },
+    {
+      "name": "visa",
+      "displayName": "Visa Product Design System",
+      "org": "Visa",
+      "style": "Visa Product Design System — read from design.visa.com's live stylesheets, not a published token package.",
+      "tags": [
+        "observed",
+        "visa",
+        "light"
+      ],
+      "license": "all rights reserved",
+      "homepage": "https://design.visa.com/welcome/",
+      "repo": null,
+      "package": null,
+      "popularity": null,
       "checks": {
         "errors": 0,
         "warnings": 0,

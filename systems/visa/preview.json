@@ -1,0 +1,597 @@
+{
+  "canvas": "#fff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fcc015",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "v-button-default-foreground",
+      "value": "#bdeaff"
+    },
+    {
+      "name": "v-button-default-focus-foreground",
+      "value": "#80d7ff"
+    },
+    {
+      "name": "palette-default-active-pressed",
+      "value": "#80d7ff"
+    },
+    {
+      "name": "v-button-tertiary-hover-background",
+      "value": "#4c4c4c"
+    },
+    {
+      "name": "v-badge-background",
+      "value": "#fff"
+    },
+    {
+      "name": "v-badge-foreground",
+      "value": "#000"
+    },
+    {
+      "name": "v-divider-high-contrast-decorative",
+      "value": "#000000"
+    },
+    {
+      "name": "v-logo-hc-light-foreground",
+      "value": "#000"
+    },
+    {
+      "name": "v-logo-hc-dark-foreground",
+      "value": "#fff"
+    },
+    {
+      "name": "v-logo-hc-background",
+      "value": "#fff"
+    },
+    {
+      "name": "palette-default-active",
+      "value": "#1434cb"
+    },
+    {
+      "name": "palette-default-active-hover",
+      "value": "#173be8"
+    },
+    {
+      "name": "palette-default-active-accent",
+      "value": "#fcc015"
+    },
+    {
+      "name": "palette-default-surface-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "palette-default-surface-2",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "palette-default-surface-3",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "palette-default-text",
+      "value": "#000000"
+    },
+    {
+      "name": "palette-default-text-subtle",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "palette-default-text-on-active",
+      "value": "#ffffff"
+    },
+    {
+      "name": "palette-messaging-surface-positive",
+      "value": "#d6f2c4"
+    },
+    {
+      "name": "palette-messaging-graphics-positive",
+      "value": "#40996b"
+    },
+    {
+      "name": "palette-messaging-text-hover-positive",
+      "value": "#327753"
+    },
+    {
+      "name": "palette-messaging-text-positive",
+      "value": "#2C6849"
+    },
+    {
+      "name": "palette-messaging-text-pressed-positive",
+      "value": "#1A3D2B"
+    },
+    {
+      "name": "palette-messaging-highlight-warning",
+      "value": "#ffef99"
+    },
+    {
+      "name": "palette-messaging-graphics-warning",
+      "value": "#c38004"
+    },
+    {
+      "name": "palette-messaging-text-warning",
+      "value": "#875903"
+    },
+    {
+      "name": "palette-messaging-surface-negative",
+      "value": "#ffd6e9"
+    },
+    {
+      "name": "palette-messaging-graphics-negative",
+      "value": "#d65151"
+    },
+    {
+      "name": "palette-messaging-text-hover-negative",
+      "value": "#C62F2F"
+    },
+    {
+      "name": "palette-messaging-text-negative",
+      "value": "#AD2929"
+    },
+    {
+      "name": "palette-messaging-text-pressed-negative",
+      "value": "#7C1D1D"
+    },
+    {
+      "name": "palette-messaging-highlight-info",
+      "value": "#c7edff"
+    },
+    {
+      "name": "palette-messaging-graphics-info",
+      "value": "#0088c7"
+    },
+    {
+      "name": "palette-messaging-text-info",
+      "value": "#005e8a"
+    },
+    {
+      "name": "palette-accent-app-name",
+      "value": "#1434CB"
+    },
+    {
+      "name": "palette-messaging-surface-warning",
+      "value": "#4B3102"
+    },
+    {
+      "name": "palette-messaging-text-hover-warning",
+      "value": "hsla(39, 96%, 68%, 1)"
+    },
+    {
+      "name": "palette-messaging-text-pressed-warning",
+      "value": "hsla(39, 96%, 50%, 1)"
+    },
+    {
+      "name": "palette-messaging-surface-info",
+      "value": "#00344D"
+    },
+    {
+      "name": "palette-messaging-text-hover-info",
+      "value": "hsla(198, 59%, 65%, 1)"
+    },
+    {
+      "name": "palette-messaging-text-pressed-info",
+      "value": "hsla(198, 59%, 47%, 1)"
+    },
+    {
+      "name": "v-button-default-background",
+      "value": "#1434cb"
+    },
+    {
+      "name": "v-button-default-border-color",
+      "value": "#1434cb"
+    },
+    {
+      "name": "primary",
+      "value": "#fcc015"
+    }
+  ],
+  "type": [
+    {
+      "name": "typography-display-1-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "4.2857142857rem",
+      "px": 68.5714285712
+    },
+    {
+      "name": "typography-display-2-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "typography-headline-1-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "2.2857142857rem",
+      "px": 36.5714285712
+    },
+    {
+      "name": "v-input-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "2.143rem",
+      "px": 34.288
+    },
+    {
+      "name": "typography-headline-2-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "1.7857142857rem",
+      "px": 28.5714285712
+    },
+    {
+      "name": "typography-headline-3-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "1.4285714286rem",
+      "px": 22.8571428576
+    },
+    {
+      "name": "typography-headline-4-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "1.2857142857rem",
+      "px": 20.5714285712
+    },
+    {
+      "name": "typography-subtitle-1-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "1.1428571429rem",
+      "px": 18.2857142864
+    },
+    {
+      "name": "typography-subtitle-2-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "1.1428571429rem",
+      "px": 18.2857142864
+    },
+    {
+      "name": "typography-body-1-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1.1428571429rem",
+      "px": 18.2857142864
+    },
+    {
+      "name": "splash-body-1",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "typography-subtitle-3-font-size",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-bold-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-link-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-medium-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-button-large-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-label-large-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-label-large-active-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-display-1-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-display-2-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-subtitle-1-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-subtitle-2-font-family",
+      "fontFamily": "visa-font-medium, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-subtitle-3-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-body-1-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-bold-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-link-font-family",
+      "fontFamily": "visa-font-medium, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-body-2-medium-font-family",
+      "fontFamily": "visa-font-medium, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-body-3-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-large-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-medium-font-family",
+      "fontFamily": "visa-font-semi-bold, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-button-small-font-family",
+      "fontFamily": "visa-font-medium, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-label-large-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-label-large-active-font-family",
+      "fontFamily": "visa-font-medium, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-label-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-label-active-font-family",
+      "fontFamily": "visa-font-medium, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-label-small-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-label-small-active-font-family",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "theme-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "typography-body-3-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".8571428571rem",
+      "px": 13.7142857136
+    },
+    {
+      "name": "typography-button-medium-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".8571428571rem",
+      "px": 13.7142857136
+    },
+    {
+      "name": "typography-button-small-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".8571428571rem",
+      "px": 13.7142857136
+    },
+    {
+      "name": "typography-label-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".8571428571rem",
+      "px": 13.7142857136
+    },
+    {
+      "name": "typography-label-active-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".8571428571rem",
+      "px": 13.7142857136
+    },
+    {
+      "name": "typography-label-small-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".7857142857rem",
+      "px": 12.5714285712
+    },
+    {
+      "name": "typography-label-small-active-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".7857142857rem",
+      "px": 12.5714285712
+    },
+    {
+      "name": "typography-overline-font-size",
+      "fontFamily": "visa-font-regular, \"Open Sans\", sans-serif",
+      "fontSize": ".7142857143rem",
+      "px": 11.4285714288
+    }
+  ],
+  "components": [
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "0px",
+      "border": "1px solid rgba(0, 0, 0, .1)",
+      "shadow": "0 2px 6px -1px rgba(0, 0, 0, .2)"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "backgroundColor": "rgba(255, 255, 255, 0)",
+      "textColor": "#1434cb",
+      "rounded": "0px",
+      "border": "1px solid rgba(255, 255, 255, 0)"
+    },
+    {
+      "key": "chip",
+      "kind": "badge",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #1434cb"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "rgba(255, 255, 255, 0)",
+      "textColor": "#000000",
+      "rounded": "0px",
+      "border": "1px solid rgba(255, 255, 255, 0)"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "rgba(255, 255, 255, 0)",
+      "textColor": "#000000",
+      "border": "1px solid rgba(0, 0, 0, .1)"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#4a4a4a"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#1434cb",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "border": "0px solid #1434cb"
+    },
+    {
+      "key": "tag-links-3",
+      "kind": "badge",
+      "backgroundColor": "#f0f0f0",
+      "rounded": "20px"
+    },
+    {
+      "key": "v-skip-link-2",
+      "kind": "link",
+      "backgroundColor": "rgba(179, 215, 255, .35)"
+    },
+    {
+      "key": "input-error-2",
+      "kind": "input",
+      "textColor": "#AD2929"
+    },
+    {
+      "key": "v-content-card",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "shadow": "0 2px 6px -1px rgba(0, 0, 0, .2),inset 0 0 rgba(255, 255, 255, 0)"
+    },
+    {
+      "key": "v-switch-label-2",
+      "kind": "label",
+      "textColor": "#000000"
+    },
+    {
+      "key": "input-message-3",
+      "kind": "input",
+      "textColor": "#4a4a4a"
+    },
+    {
+      "key": "v-accordion-panel",
+      "kind": "panel",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, .1)"
+    },
+    {
+      "key": "v-anchor-link-menu-3",
+      "kind": "link",
+      "backgroundColor": "#ffffff"
+    },
+    {
+      "key": "v-content-card-image-2",
+      "kind": "card",
+      "backgroundColor": "#f5f5f5",
+      "rounded": "20px"
+    },
+    {
+      "key": "v-content-card-title-3",
+      "kind": "card",
+      "textColor": "#1434cb"
+    },
+    {
+      "key": "v-content-card-subtitle-4",
+      "kind": "card",
+      "textColor": "#4a4a4a"
+    },
+    {
+      "key": "v-content-card-title-link-5",
+      "kind": "card",
+      "textColor": "#1434cb"
+    },
+    {
+      "key": "color-swatch-card",
+      "kind": "card",
+      "textColor": "#000"
+    }
+  ],
+  "overview": "**Visa Product Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fcc015` brand accent.\n\nDisplay headlines pair `visa-font-semi-bold` with `visa-font-regular` body copy (69px display down to 18px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **Visa**. Source: live stylesheet extraction (https://design.visa.com/welcome/). Inventory: **45** colors, **50** typography steps, and **20** documented components (all rights reserved license).",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fcc015` with `#0b0b0c` text (11.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `visa-font-semi-bold` headings with `visa-font-regular` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

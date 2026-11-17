@@ -1,97 +1,959 @@
 {
   "source": "designsystems.surf",
-  "captured": "2026-11-16",
+  "sourceUrl": "https://designsystems.surf/",
+  "captured": "2026-11-17",
   "note": "d = documentation sections, c = components, as counted by the source site. r = linked resources.",
   "systems": [
-    { "org": "Aalto University", "name": "Design System", "d": 9, "c": 34, "r": ["storybook"] },
-    { "org": "Adobe", "name": "Spectrum", "d": 18, "c": 37, "r": ["repo", "storybook"] },
-    { "org": "Alaska Airlines", "name": "Auro", "d": 6, "c": 23, "r": [] },
-    { "org": "Amazon", "name": "Cloudscape", "d": 16, "c": 32, "r": ["figma", "repo"] },
-    { "org": "Ant Group", "name": "Ant Design", "d": 12, "c": 33, "r": ["repo"] },
-    { "org": "Apple", "name": "HIG", "d": 13, "c": 21, "r": ["figma"] },
-    { "org": "Arbetsformedlingen", "name": "Design System", "d": 14, "c": 33, "r": ["figma", "repo", "storybook"] },
-    { "org": "Atlassian", "name": "Design System", "d": 14, "c": 35, "r": ["figma", "repo", "storybook"] },
-    { "org": "Audi", "name": "Design System", "d": 8, "c": 23, "r": [] },
-    { "org": "Australian Gov", "name": "Agriculture", "d": 12, "c": 34, "r": ["repo"] },
-    { "org": "Aviva", "name": "Design System", "d": 6, "c": 31, "r": [] },
-    { "org": "Basis", "name": "Design System", "d": 16, "c": 31, "r": ["storybook"] },
-    { "org": "BBC", "name": "Design System", "d": 7, "c": 10, "r": ["repo", "storybook"] },
-    { "org": "Biings", "name": "Design System", "d": 5, "c": 19, "r": [] },
-    { "org": "Brainly", "name": "Pencil", "d": 14, "c": 10, "r": ["figma", "storybook"] },
-    { "org": "Carrefour", "name": "Marcel", "d": 13, "c": 30, "r": [] },
-    { "org": "Cash App", "name": "Design System", "d": 5, "c": 0, "r": [] },
-    { "org": "CMS", "name": "Design System", "d": 11, "c": 23, "r": ["repo", "storybook"] },
-    { "org": "Datadog", "name": "Druids", "d": 10, "c": 38, "r": ["figma"] },
-    { "org": "Dell", "name": "Design System", "d": 11, "c": 34, "r": ["storybook"] },
-    { "org": "Denmark", "name": "Design System", "d": 12, "c": 25, "r": ["figma", "repo"] },
-    { "org": "Docplanner", "name": "Watson", "d": 10, "c": 31, "r": ["repo"] },
-    { "org": "eBay", "name": "Evo", "d": 16, "c": 32, "r": ["figma", "repo", "storybook"] },
-    { "org": "Elastic", "name": "Design System", "d": 12, "c": 37, "r": ["figma", "repo"] },
-    { "org": "Elisa", "name": "Design System", "d": 10, "c": 30, "r": ["storybook"] },
-    { "org": "Esri", "name": "Calcite", "d": 9, "c": 35, "r": ["figma", "repo"] },
-    { "org": "General Electric", "name": "Edison", "d": 12, "c": 33, "r": [] },
-    { "org": "GitHub", "name": "Primer", "d": 12, "c": 32, "r": ["figma", "repo", "storybook"] },
-    { "org": "GitLab", "name": "Pajamas", "d": 19, "c": 34, "r": ["figma", "repo", "storybook"] },
-    { "org": "Google", "name": "Material Design", "d": 15, "c": 24, "r": ["figma", "repo"] },
-    { "org": "GOV.UK", "name": "Design System", "d": 12, "c": 18, "r": ["repo", "storybook"] },
-    { "org": "Helsinki", "name": "Design System", "d": 12, "c": 25, "r": ["figma", "repo", "storybook"] },
-    { "org": "IBM", "name": "Carbon", "d": 14, "c": 31, "r": ["figma", "repo", "storybook"] },
-    { "org": "Ideagen", "name": "Helix", "d": 10, "c": 27, "r": [] },
-    { "org": "INPS", "name": "Sirio", "d": 13, "c": 24, "r": ["figma", "repo"] },
-    { "org": "Kajabi", "name": "Sage", "d": 5, "c": 33, "r": ["repo", "storybook"] },
-    { "org": "Kiwicom", "name": "Orbit", "d": 16, "c": 33, "r": ["figma", "repo", "storybook"] },
-    { "org": "Lemon Squeezy", "name": "Wedges", "d": 4, "c": 20, "r": ["figma", "repo"] },
-    { "org": "Line", "name": "Design System", "d": 7, "c": 25, "r": [] },
-    { "org": "LocalTapiola", "name": "Duet", "d": 12, "c": 33, "r": ["repo"] },
-    { "org": "Maersk", "name": "Design System", "d": 13, "c": 36, "r": [] },
-    { "org": "Meta", "name": "Astryx", "d": 15, "c": 40, "r": ["repo"] },
-    { "org": "Michelin", "name": "Motion", "d": 12, "c": 26, "r": ["repo"] },
-    { "org": "Microsoft", "name": "Fluent 2", "d": 18, "c": 26, "r": ["figma", "repo", "storybook"] },
-    { "org": "Monday.com", "name": "Vibe", "d": 11, "c": 31, "r": ["figma", "repo", "storybook"] },
-    { "org": "MongoDB", "name": "LeafyGreen", "d": 8, "c": 28, "r": ["repo", "storybook"] },
-    { "org": "Morningstar", "name": "Design System", "d": 11, "c": 31, "r": [] },
-    { "org": "Motorway", "name": "Highway Code", "d": 10, "c": 18, "r": ["storybook"] },
-    { "org": "Mozilla", "name": "Protocol", "d": 6, "c": 18, "r": ["repo"] },
-    { "org": "Nordhealth", "name": "Design System", "d": 10, "c": 32, "r": ["repo"] },
-    { "org": "NS", "name": "Tractie", "d": 12, "c": 37, "r": ["storybook"] },
-    { "org": "NSW", "name": "Design System", "d": 7, "c": 22, "r": ["figma", "repo"] },
-    { "org": "NYS", "name": "Design System", "d": 9, "c": 18, "r": ["figma", "repo"] },
-    { "org": "Ontario", "name": "Design System", "d": 5, "c": 18, "r": ["repo"] },
-    { "org": "Orange", "name": "Design System", "d": 12, "c": 26, "r": ["repo"] },
-    { "org": "Palantir", "name": "Blueprint", "d": 6, "c": 32, "r": ["repo"] },
-    { "org": "Pluralsight", "name": "Design System", "d": 7, "c": 33, "r": ["repo"] },
-    { "org": "Porsche", "name": "Design System", "d": 12, "c": 25, "r": ["figma", "repo"] },
-    { "org": "Power", "name": "Playbook", "d": 10, "c": 25, "r": ["figma", "repo"] },
-    { "org": "Razorpay", "name": "Blade", "d": 10, "c": 29, "r": ["figma", "repo"] },
-    { "org": "Red Hat", "name": "PatternFly", "d": 11, "c": 41, "r": ["repo"] },
-    { "org": "Rei", "name": "Cedar", "d": 16, "c": 22, "r": ["figma", "repo"] },
-    { "org": "Salesforce", "name": "Lightning", "d": 18, "c": 33, "r": ["figma", "repo", "storybook"] },
-    { "org": "Samsung", "name": "One UI", "d": 9, "c": 8, "r": [] },
-    { "org": "SAP", "name": "Fiori", "d": 14, "c": 34, "r": ["figma", "repo"] },
-    { "org": "Seek", "name": "Braid", "d": 5, "c": 24, "r": ["repo"] },
-    { "org": "Segment", "name": "Evergreen", "d": 10, "c": 24, "r": ["figma", "repo"] },
-    { "org": "ServiceNow", "name": "Horizon", "d": 14, "c": 26, "r": ["figma"] },
-    { "org": "Shopify", "name": "Polaris", "d": 18, "c": 36, "r": ["figma", "repo"] },
-    { "org": "Sigma", "name": "Design System", "d": 7, "c": 21, "r": ["figma"] },
-    { "org": "Skoda", "name": "Flow", "d": 9, "c": 21, "r": ["storybook"] },
-    { "org": "Sprout Social", "name": "Seeds", "d": 13, "c": 29, "r": ["repo"] },
-    { "org": "SumUp", "name": "Circuit", "d": 6, "c": 26, "r": ["repo", "storybook"] },
-    { "org": "Sunrise", "name": "Solar", "d": 8, "c": 27, "r": [] },
-    { "org": "Tailwind", "name": "Framework", "d": 11, "c": 27, "r": ["figma", "repo"] },
-    { "org": "Teamleader", "name": "Ahoy", "d": 13, "c": 24, "r": ["figma", "repo", "storybook"] },
-    { "org": "Thumbtack", "name": "Thumbprint", "d": 12, "c": 23, "r": ["repo"] },
-    { "org": "Twilio", "name": "Paste", "d": 17, "c": 32, "r": ["figma", "repo", "storybook"] },
-    { "org": "U.S. Web", "name": "Design System", "d": 14, "c": 26, "r": ["figma", "repo"] },
-    { "org": "UAE", "name": "Design System", "d": 10, "c": 25, "r": ["repo"] },
-    { "org": "Uber", "name": "Base", "d": 18, "c": 37, "r": ["figma", "repo"] },
-    { "org": "Vercel", "name": "Geist", "d": 5, "c": 29, "r": [] },
-    { "org": "Visa", "name": "Design System", "d": 14, "c": 31, "r": ["figma", "repo"] },
-    { "org": "VTS", "name": "Terra", "d": 5, "c": 22, "r": [] },
-    { "org": "Washington Post", "name": "Design System", "d": 14, "c": 23, "r": ["figma"] },
-    { "org": "Wikimedia", "name": "Codex", "d": 12, "c": 23, "r": ["figma", "repo"] },
-    { "org": "Wonderflow", "name": "Wanda", "d": 10, "c": 26, "r": ["repo", "storybook"] },
-    { "org": "Workday", "name": "Canvas", "d": 16, "c": 24, "r": ["repo", "storybook"] },
-    { "org": "WorkOS", "name": "Radix", "d": 12, "c": 19, "r": ["figma", "repo"] },
-    { "org": "Zendesk", "name": "Garden", "d": 9, "c": 27, "r": ["figma", "repo"] }
+    {
+      "org": "Aalto University",
+      "name": "Design System",
+      "d": 9,
+      "c": 34,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "Adobe",
+      "name": "Spectrum",
+      "d": 18,
+      "c": 37,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Alaska Airlines",
+      "name": "Auro",
+      "d": 6,
+      "c": 23,
+      "r": []
+    },
+    {
+      "org": "Amazon",
+      "name": "Cloudscape",
+      "d": 16,
+      "c": 32,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Ant Group",
+      "name": "Ant Design",
+      "d": 12,
+      "c": 33,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Apple",
+      "name": "HIG",
+      "d": 13,
+      "c": 21,
+      "r": [
+        "figma"
+      ]
+    },
+    {
+      "org": "Arbetsformedlingen",
+      "name": "Design System",
+      "d": 14,
+      "c": 33,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Atlassian",
+      "name": "Design System",
+      "d": 14,
+      "c": 35,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Audi",
+      "name": "Design System",
+      "d": 8,
+      "c": 23,
+      "r": []
+    },
+    {
+      "org": "Australian Gov",
+      "name": "Agriculture",
+      "d": 12,
+      "c": 34,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Aviva",
+      "name": "Design System",
+      "d": 6,
+      "c": 31,
+      "r": []
+    },
+    {
+      "org": "Basis",
+      "name": "Design System",
+      "d": 16,
+      "c": 31,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "BBC",
+      "name": "Design System",
+      "d": 7,
+      "c": 10,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Biings",
+      "name": "Design System",
+      "d": 5,
+      "c": 19,
+      "r": []
+    },
+    {
+      "org": "Brainly",
+      "name": "Pencil",
+      "d": 14,
+      "c": 10,
+      "r": [
+        "figma",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Carrefour",
+      "name": "Marcel",
+      "d": 13,
+      "c": 30,
+      "r": []
+    },
+    {
+      "org": "Cash App",
+      "name": "Design System",
+      "d": 5,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "CMS",
+      "name": "Design System",
+      "d": 11,
+      "c": 23,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Datadog",
+      "name": "Druids",
+      "d": 10,
+      "c": 38,
+      "r": [
+        "figma"
+      ]
+    },
+    {
+      "org": "Dell",
+      "name": "Design System",
+      "d": 11,
+      "c": 34,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "Denmark",
+      "name": "Design System",
+      "d": 12,
+      "c": 25,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Docplanner",
+      "name": "Watson",
+      "d": 10,
+      "c": 31,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "eBay",
+      "name": "Evo",
+      "d": 16,
+      "c": 32,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Elastic",
+      "name": "Design System",
+      "d": 12,
+      "c": 37,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Elisa",
+      "name": "Design System",
+      "d": 10,
+      "c": 30,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "Esri",
+      "name": "Calcite",
+      "d": 9,
+      "c": 35,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "General Electric",
+      "name": "Edison",
+      "d": 12,
+      "c": 33,
+      "r": []
+    },
+    {
+      "org": "GitHub",
+      "name": "Primer",
+      "d": 12,
+      "c": 32,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "GitLab",
+      "name": "Pajamas",
+      "d": 19,
+      "c": 34,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Google",
+      "name": "Material Design",
+      "d": 15,
+      "c": 24,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "GOV.UK",
+      "name": "Design System",
+      "d": 12,
+      "c": 18,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Helsinki",
+      "name": "Design System",
+      "d": 12,
+      "c": 25,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "IBM",
+      "name": "Carbon",
+      "d": 14,
+      "c": 31,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Ideagen",
+      "name": "Helix",
+      "d": 10,
+      "c": 27,
+      "r": []
+    },
+    {
+      "org": "INPS",
+      "name": "Sirio",
+      "d": 13,
+      "c": 24,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Kajabi",
+      "name": "Sage",
+      "d": 5,
+      "c": 33,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Kiwicom",
+      "name": "Orbit",
+      "d": 16,
+      "c": 33,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Lemon Squeezy",
+      "name": "Wedges",
+      "d": 4,
+      "c": 20,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Line",
+      "name": "Design System",
+      "d": 7,
+      "c": 25,
+      "r": []
+    },
+    {
+      "org": "LocalTapiola",
+      "name": "Duet",
+      "d": 12,
+      "c": 33,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Maersk",
+      "name": "Design System",
+      "d": 13,
+      "c": 36,
+      "r": []
+    },
+    {
+      "org": "Meta",
+      "name": "Astryx",
+      "d": 15,
+      "c": 40,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Michelin",
+      "name": "Motion",
+      "d": 12,
+      "c": 26,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Microsoft",
+      "name": "Fluent 2",
+      "d": 18,
+      "c": 26,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Monday.com",
+      "name": "Vibe",
+      "d": 11,
+      "c": 31,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "MongoDB",
+      "name": "LeafyGreen",
+      "d": 8,
+      "c": 28,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Morningstar",
+      "name": "Design System",
+      "d": 11,
+      "c": 31,
+      "r": []
+    },
+    {
+      "org": "Motorway",
+      "name": "Highway Code",
+      "d": 10,
+      "c": 18,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "Mozilla",
+      "name": "Protocol",
+      "d": 6,
+      "c": 18,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Nordhealth",
+      "name": "Design System",
+      "d": 10,
+      "c": 32,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "NS",
+      "name": "Tractie",
+      "d": 12,
+      "c": 37,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "NSW",
+      "name": "Design System",
+      "d": 7,
+      "c": 22,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "NYS",
+      "name": "Design System",
+      "d": 9,
+      "c": 18,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Ontario",
+      "name": "Design System",
+      "d": 5,
+      "c": 18,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Orange",
+      "name": "Design System",
+      "d": 12,
+      "c": 26,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Palantir",
+      "name": "Blueprint",
+      "d": 6,
+      "c": 32,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Pluralsight",
+      "name": "Design System",
+      "d": 7,
+      "c": 33,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Porsche",
+      "name": "Design System",
+      "d": 12,
+      "c": 25,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Power",
+      "name": "Playbook",
+      "d": 10,
+      "c": 25,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Razorpay",
+      "name": "Blade",
+      "d": 10,
+      "c": 29,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Red Hat",
+      "name": "PatternFly",
+      "d": 11,
+      "c": 41,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Rei",
+      "name": "Cedar",
+      "d": 16,
+      "c": 22,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Salesforce",
+      "name": "Lightning",
+      "d": 18,
+      "c": 33,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Samsung",
+      "name": "One UI",
+      "d": 9,
+      "c": 8,
+      "r": []
+    },
+    {
+      "org": "SAP",
+      "name": "Fiori",
+      "d": 14,
+      "c": 34,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Seek",
+      "name": "Braid",
+      "d": 5,
+      "c": 24,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Segment",
+      "name": "Evergreen",
+      "d": 10,
+      "c": 24,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "ServiceNow",
+      "name": "Horizon",
+      "d": 14,
+      "c": 26,
+      "r": [
+        "figma"
+      ]
+    },
+    {
+      "org": "Shopify",
+      "name": "Polaris",
+      "d": 18,
+      "c": 36,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Sigma",
+      "name": "Design System",
+      "d": 7,
+      "c": 21,
+      "r": [
+        "figma"
+      ]
+    },
+    {
+      "org": "Skoda",
+      "name": "Flow",
+      "d": 9,
+      "c": 21,
+      "r": [
+        "storybook"
+      ]
+    },
+    {
+      "org": "Sprout Social",
+      "name": "Seeds",
+      "d": 13,
+      "c": 29,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "SumUp",
+      "name": "Circuit",
+      "d": 6,
+      "c": 26,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Sunrise",
+      "name": "Solar",
+      "d": 8,
+      "c": 27,
+      "r": []
+    },
+    {
+      "org": "Tailwind",
+      "name": "Framework",
+      "d": 11,
+      "c": 27,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Teamleader",
+      "name": "Ahoy",
+      "d": 13,
+      "c": 24,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Thumbtack",
+      "name": "Thumbprint",
+      "d": 12,
+      "c": 23,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Twilio",
+      "name": "Paste",
+      "d": 17,
+      "c": 32,
+      "r": [
+        "figma",
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "U.S. Web",
+      "name": "Design System",
+      "d": 14,
+      "c": 26,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "UAE",
+      "name": "Design System",
+      "d": 10,
+      "c": 25,
+      "r": [
+        "repo"
+      ]
+    },
+    {
+      "org": "Uber",
+      "name": "Base",
+      "d": 18,
+      "c": 37,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Vercel",
+      "name": "Geist",
+      "d": 5,
+      "c": 29,
+      "r": []
+    },
+    {
+      "org": "Visa",
+      "name": "Design System",
+      "d": 14,
+      "c": 31,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "VTS",
+      "name": "Terra",
+      "d": 5,
+      "c": 22,
+      "r": []
+    },
+    {
+      "org": "Washington Post",
+      "name": "Design System",
+      "d": 14,
+      "c": 23,
+      "r": [
+        "figma"
+      ]
+    },
+    {
+      "org": "Wikimedia",
+      "name": "Codex",
+      "d": 12,
+      "c": 23,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Wonderflow",
+      "name": "Wanda",
+      "d": 10,
+      "c": 26,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "Workday",
+      "name": "Canvas",
+      "d": 16,
+      "c": 24,
+      "r": [
+        "repo",
+        "storybook"
+      ]
+    },
+    {
+      "org": "WorkOS",
+      "name": "Radix",
+      "d": 12,
+      "c": 19,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Zendesk",
+      "name": "Garden",
+      "d": 9,
+      "c": 27,
+      "r": [
+        "figma",
+        "repo"
+      ]
+    },
+    {
+      "org": "Wise",
+      "name": "Wise Design System",
+      "surfUrl": "https://designsystems.surf/design-systems/wise",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Uswds",
+      "name": "U.S. Web Design System (USWDS) for United States Government",
+      "surfUrl": "https://designsystems.surf/design-systems/uswds",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Pinterest",
+      "name": "Gestalt Design System – UI Framework by Pinterest",
+      "surfUrl": "https://designsystems.surf/design-systems/pinterest",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Nysds",
+      "name": "The New York State Design System (NYSDS)",
+      "surfUrl": "https://designsystems.surf/design-systems/nysds",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Ns Dutch Railways",
+      "name": "Tractie Design System for NS Enterprise",
+      "surfUrl": "https://designsystems.surf/design-systems/ns-dutch-railways",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Mixpanel",
+      "name": "Design System from Mixpanel",
+      "surfUrl": "https://designsystems.surf/design-systems/mixpanel",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Miro",
+      "name": "Design System from Miro – UI Framework",
+      "surfUrl": "https://designsystems.surf/design-systems/miro",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Mailchimp",
+      "name": "Mailchimp Design System – UI Framework",
+      "surfUrl": "https://designsystems.surf/design-systems/mailchimp",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Astryx",
+      "name": "Astryx Design System by Meta, Open Source React UI",
+      "surfUrl": "https://designsystems.surf/design-systems/astryx",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Hellyhansen",
+      "name": "Design System from Helly Hansen",
+      "surfUrl": "https://designsystems.surf/design-systems/hellyhansen",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Gusto",
+      "name": "Workbench Design System from Gusto",
+      "surfUrl": "https://designsystems.surf/design-systems/gusto",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Goldmansachs",
+      "name": "Design System from Goldman Sachs",
+      "surfUrl": "https://designsystems.surf/design-systems/goldmansachs",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Cisco",
+      "name": "Cisco Momentum Design System – Webex's Framework",
+      "surfUrl": "https://designsystems.surf/design-systems/cisco",
+      "d": 0,
+      "c": 0,
+      "r": []
+    },
+    {
+      "org": "Cbrebuild",
+      "name": "Blocks Design System by CBRE Build",
+      "surfUrl": "https://designsystems.surf/design-systems/cbrebuild",
+      "d": 0,
+      "c": 0,
+      "r": []
+    }
   ]
 }

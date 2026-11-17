@@ -12,6 +12,7 @@
     "coverage": "node scripts/coverage.mjs",
     "catalog": "node scripts/build-catalog.mjs",
     "build": "node scripts/build-catalog.mjs",
+    "sync": "node scripts/sync-sources.mjs",
     "lint": "node bin/sourcebook.mjs lint --all",
     "mcp": "node bin/sourcebook.mjs mcp",
     "discover": "node scripts/discover-github.mjs"

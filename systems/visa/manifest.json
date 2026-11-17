@@ -1,0 +1,41 @@
+{
+  "name": "visa",
+  "displayName": "Visa Product Design System",
+  "description": "Visa Product Design System — read from design.visa.com's live stylesheets, not a published token package.",
+  "style": "Visa Product Design System — read from design.visa.com's live stylesheets, not a published token package.",
+  "category": "Visa",
+  "org": "Visa",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "visa",
+    "light"
+  ],
+  "homepage": "https://design.visa.com/welcome/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://design.visa.com/welcome/ and its 3 stylesheets on 2026-11-17. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "url": "https://design.visa.com/welcome/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 45,
+    "typography": 50,
+    "components": 20
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

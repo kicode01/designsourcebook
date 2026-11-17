@@ -3,6 +3,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 import { listSystems, loadSystem, readDesign, readPreview, search, buildIndex, ROOT } from "../lib/registry.mjs";
 import { lint } from "../lib/lint.mjs";
 import { EMITTERS } from "../lib/emit.mjs";
@@ -304,6 +305,15 @@ function cmdIndex() {
   console.log(`${green("+")} index.json ${dim(`(${index.count} systems)`)}`);
 }
 
+function cmdSync() {
+  const syncScript = path.join(ROOT, "scripts/sync-sources.mjs");
+  try {
+    execFileSync(process.execPath, [syncScript, ...argv.slice(1)], { cwd: ROOT, stdio: "inherit" });
+  } catch (err) {
+    process.exit(err.status || 1);
+  }
+}
+
 function resolve(name) {
   const systems = listSystems();
   const n = String(name).toLowerCase();
@@ -331,6 +341,7 @@ ${bold("Usage")}
   sourcebook lint <name> | --all [--format json]
   sourcebook export <name> --format tailwind-v4|css-vars|dtcg|prompt|json
   sourcebook index
+  sourcebook sync [--dry-run] [--ingest] [--limit n] [--url <url>] [--repo <url>] [--package <pkg>]
   sourcebook mcp
 
 ${bold("Connect to an agent")}
@@ -368,6 +379,9 @@ switch (cmd) {
     break;
   case "index":
     cmdIndex();
+    break;
+  case "sync":
+    cmdSync();
     break;
   case "mcp":
     startMcpServer();
