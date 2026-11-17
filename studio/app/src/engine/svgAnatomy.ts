@@ -291,10 +291,12 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
     });
   }
   if (!findings.length) {
+    const elWord = shapesEls.length === 1 ? 'vector element' : 'vector elements';
+    const ancWord = anchors.length === 1 ? 'anchor' : 'anchors';
     findings.push({
       level: 'pass',
       code: 'clean',
-      message: `${shapesEls.length} vector element(s), ${anchors.length} anchors, clean geometry.`,
+      message: `${shapesEls.length} ${elWord} · ${anchors.length} ${ancWord} · clean geometry`,
     });
   }
 

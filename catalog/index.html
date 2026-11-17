@@ -409,10 +409,14 @@
   .ldb-xray-mark,.ldb-xray-overlay{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
   .ldb-xray-overlay{pointer-events:none}
   .ldb-xray-mark svg{width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;display:block}
-  .ldb-finding{font-size:12px;line-height:1.5;padding:9px 12px;border-radius:var(--card-radius);border:1px solid var(--line);color:var(--dim);background:var(--panel)}
-  .ldb-finding.is-pass{border-color:color-mix(in srgb,var(--ok) 35%,transparent);color:var(--ok)}
-  .ldb-finding.is-warn{border-color:color-mix(in srgb,var(--warn) 35%,transparent);color:var(--warn)}
-  .ldb-finding.is-fail{border-color:rgba(244,63,94,.4);color:#fb7185}
+  .ldb-finding{display:flex;align-items:center;gap:8px;font-size:12px;line-height:1.45;padding:9px 12px;border-radius:9px;border:1px solid var(--line);color:var(--dim);background:var(--panel)}
+  .ldb-finding.is-compact{padding:7px 10px;font-size:11.5px;background:color-mix(in srgb,var(--ink) 2.5%,transparent)}
+  .ldb-finding-mark{width:13px;height:13px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+  .ldb-finding-mark svg{width:13px;height:13px;display:block}
+  .ldb-finding-dot{width:6px;height:6px;border-radius:999px;display:block}
+  .ldb-finding.is-pass .ldb-finding-mark{color:var(--ok)}
+  .ldb-finding.is-warn .ldb-finding-dot{background:var(--warn)}
+  .ldb-finding.is-fail .ldb-finding-dot{background:#f43f5e}
   .ldb-scale-stage{padding:18px 14px;min-height:92px;display:flex;align-items:center;justify-content:center}
 
   @media (max-width:1120px){
@@ -2618,7 +2622,10 @@ function parseLogoAnatomy(svgText){
     findings.push({level:'warn',message:'Near-miss angles ('+nearMiss.slice(0,3).map(d=>d+'\u00b0').join(', ')+'): snap toward 15\u00b0/30\u00b0/45\u00b0/90\u00b0 axes.'});
   }
   if(!findings.length){
-    findings.push({level:'pass',message:shapeCount+' vector element(s), '+anchors.length+' anchors, clean geometry.'});
+    findings.push({
+      level:'pass',
+      message:shapeCount+' '+(shapeCount===1?'vector element':'vector elements')+' \u00b7 '+anchors.length+' '+(anchors.length===1?'anchor':'anchors')+' \u00b7 clean geometry'
+    });
   }
   return {viewBox:vb,inkBox,shapes:shapeCount,anchors,handles,segments,circles,anglesDeg:[...anglesSet].sort((a,b)=>a-b),colors:[...colorSet],score:Math.max(0,score),findings};
 }
@@ -2879,6 +2886,15 @@ function buildLogoScalePairHtml(item,prefix,sz,needsInvertForDark,needsInvertFor
   const lSvg=ensureSvgBox(scopeSvgIds(item.svg,prefix+'l'),false,sz);
   return '<div style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center;flex:none;color:#fafafa'+(needsInvertForDark?';filter:brightness(0) invert(1)':'')+'">'+dSvg+'</div>'+
     '<div style="width:'+(sz+10)+'px;height:'+(sz+10)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:5px;flex:none;color:#09090b"><span style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center'+(needsInvertForLight?';filter:brightness(0)':'')+'">'+lSvg+'</span></div>';
+}
+function buildLogoFindingsHtml(findings,compact){
+  return findings.map(f=>{
+    const mark=f.level==='pass'?ICONS.check:'<span class="ldb-finding-dot"></span>';
+    return '<div class="ldb-finding is-'+esc(f.level)+(compact?' is-compact':'')+'">'+
+      '<span class="ldb-finding-mark" aria-hidden="true">'+mark+'</span>'+
+      '<span>'+esc(f.message)+'</span>'+
+    '</div>';
+  }).join('');
 }
 function buildLogoXrayBoxHtml(item,ctx,prefix,ids,isHero){
   const {anatomy,darkBox,vbStr}=ctx;
@@ -3173,14 +3189,14 @@ function renderLogoInspector(){
         : '<button type="button" class="ldb-tag" data-filter-tech="'+esc(t)+'" title="Filter by '+esc(t)+'">'+esc(t)+'</button>'
     ).join('');
     const geoTags=(item.geometry||[]).filter(Boolean).map(g=>'<span class="ldb-tag">'+esc(g)+'</span>').join('');
-    const findingsHtml=anatomy.findings.map(f=>'<div class="ldb-finding is-'+esc(f.level)+'" style="padding:7px 10px;font-size:11px">'+esc(f.message)+'</div>').join('');
+    const findingsHtml=buildLogoFindingsHtml(anatomy.findings,true);
 
     bodyHtml=
       buildLogoXrayBoxHtml(item,ctx,'sideinsp',{stage:'ldbSideStage',overlay:'ldbSideOverlay',grid:'ldbSideGridBtn',anc:'ldbSideAncBtn',ground:'ldbSideGroundBtn'},false)+
       '<div class="ldb-spec-mini">'+
-        '<div><small>Geometry</small><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b><span>'+esc(vbStr)+'</span></div>'+
-        '<div><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' circle(s)</span></div>'+
-        '<div><small>Palette</small><div class="spec-dots" style="margin:2px 0">'+palCols.slice(0,5).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('')+'</div><span>'+palCols.length+' token(s)</span></div>'+
+        '<div><small>Geometry</small><b>'+anatomy.shapes+' '+(anatomy.shapes===1?'shape':'shapes')+' \u00b7 '+anatomy.anchors.length+' '+(anatomy.anchors.length===1?'anchor':'anchors')+'</b><span>'+esc(vbStr)+'</span></div>'+
+        '<div><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' '+(anatomy.circles.length===1?'circle':'circles')+'</span></div>'+
+        '<div><small>Palette</small><div class="spec-dots" style="margin:2px 0">'+palCols.slice(0,5).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('')+'</div><span>'+palCols.length+' '+(palCols.length===1?'token':'tokens')+'</span></div>'+
         '<div><small>Craft Audit</small><b>'+anatomy.score+' / 100</b><span>'+esc((anatomy.findings[0]&&anatomy.findings[0].level)||'pass')+'</span></div>'+
       '</div>'+
       '<div><div class="ldb-insp-sec-h"><span>Micro-Scale Survivability</span><span>dark / light</span></div><div class="ldb-scales-row">'+scaleCells+'</div></div>'+
@@ -3530,9 +3546,7 @@ function buildLogoDetailHtml(item,ctxOpt){
     '<span class="kind"><b>tag</b> '+esc(t)+'</span>'
   ).join('');
 
-  const findingsHtml=anatomy.findings.map(f=>
-    '<div class="ldb-finding is-'+esc(f.level)+'">'+esc(f.message)+'</div>'
-  ).join('');
+  const findingsHtml=buildLogoFindingsHtml(anatomy.findings,false);
 
   return '<div class="detail-bar">'+
       '<div class="detail-nav">'+
@@ -3552,9 +3566,9 @@ function buildLogoDetailHtml(item,ctxOpt){
     '<div class="hero-wrap">'+
       buildLogoXrayBoxHtml(item,ctx,'insp',{stage:'ldbHeroStage',overlay:'ldbHeroOverlay',grid:'ldbGridBtn',anc:'ldbAncBtn',ground:'ldbGroundBtn'},true)+
       '<div class="spec-bar">'+
-        '<div class="spec-cell"><small>Geometry</small><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b><span>ViewBox '+esc(vbStr)+'</span></div>'+
-        '<div class="spec-cell"><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' detected circle(s)</span></div>'+
-        '<div class="spec-cell"><small>Palette</small><div class="spec-dots">'+dotsHtml+'</div><span>'+palCols.length+' token(s)</span></div>'+
+        '<div class="spec-cell"><small>Geometry</small><b>'+anatomy.shapes+' '+(anatomy.shapes===1?'shape':'shapes')+' \u00b7 '+anatomy.anchors.length+' '+(anatomy.anchors.length===1?'anchor':'anchors')+'</b><span>ViewBox '+esc(vbStr)+'</span></div>'+
+        '<div class="spec-cell"><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' detected '+(anatomy.circles.length===1?'circle':'circles')+'</span></div>'+
+        '<div class="spec-cell"><small>Palette</small><div class="spec-dots">'+dotsHtml+'</div><span>'+palCols.length+' '+(palCols.length===1?'token':'tokens')+'</span></div>'+
         '<div class="spec-cell"><small>Craft Audit</small><b>'+anatomy.score+' / 100</b><span>'+esc((anatomy.findings[0]&&anatomy.findings[0].level)||'pass')+'</span></div>'+
       '</div>'+
     '</div>'+
