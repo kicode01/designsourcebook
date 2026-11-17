@@ -465,9 +465,10 @@
   border: 1px solid var(--page-tile-border);
   background: var(--page-tile);
   cursor: grab;
-  transition: border-color 0.14s, box-shadow 0.14s;
+  transition: border-color 0.12s ease-out;
 }
 
+.bx-tile:hover { border-color: var(--studio-panel-border-strong); }
 .bx-tile:active { cursor: grabbing; }
 
 .bx-tile.is-selected {

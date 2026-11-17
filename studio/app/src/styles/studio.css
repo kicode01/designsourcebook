@@ -122,9 +122,9 @@
   font-weight: 600;
   letter-spacing: -0.02em;
   text-decoration: none;
-  transition: border-color 0.15s, opacity 0.15s;
+  transition: border-color 0.12s ease-out, background-color 0.12s ease-out;
 }
-.ds-brand-link:hover { border-color: var(--studio-panel-border-strong); opacity: 0.92; }
+.ds-brand-link:hover { background: var(--studio-panel-control-hover); border-color: var(--studio-panel-border-strong); }
 .ds-brand-badge {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -163,16 +163,17 @@
   color: var(--studio-muted);
   text-decoration: none;
   white-space: nowrap;
-  transition: color 0.15s, background-color 0.15s;
+  transition: color 0.12s ease-out, background-color 0.12s ease-out;
 }
 
-.product-switcher:hover { color: var(--studio-ink); }
+.product-switcher:hover { background: color-mix(in srgb, var(--studio-ink) 5%, transparent); color: var(--studio-ink); }
 .product-switcher.is-current {
   background: var(--studio-accent);
   color: var(--studio-accent-fg);
   font-weight: 600;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
 }
+.product-switcher.is-current:hover { background: var(--primary-hover); color: var(--studio-accent-fg); }
 
 .studio-top-actions {
   display: flex;
@@ -317,10 +318,10 @@
   font-weight: 600;
   white-space: nowrap;
   color: var(--primary-fg);
-  transition: opacity 0.15s;
+  transition: background-color 0.12s ease-out;
 }
 
-.export-split button:hover { opacity: 0.85; }
+.export-split button:hover { background: var(--primary-hover); }
 .export-split .export-main { padding: 0 16px; }
 .export-split .export-caret { width: 30px; border-left: 1px solid color-mix(in srgb, var(--primary-fg) 18%, transparent); }
 
@@ -351,10 +352,10 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--studio-muted);
-  transition: color 0.15s;
+  transition: color 0.12s ease-out, background-color 0.12s ease-out;
 }
 
-.studio-tab:hover { color: var(--studio-ink); }
+.studio-tab:hover { background: color-mix(in srgb, var(--studio-ink) 3.5%, transparent); color: var(--studio-ink); }
 .studio-tab[aria-selected='true'] { color: var(--studio-ink); }
 
 .studio-tab[aria-selected='true']::after {

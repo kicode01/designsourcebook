@@ -62,15 +62,16 @@
   font-size: 12px;
   font-weight: 500;
   color: var(--studio-muted);
-  transition: background 0.14s, color 0.14s;
+  transition: background-color 0.12s ease-out, color 0.12s ease-out;
 }
 
-.ds-pill-tab:hover { color: var(--studio-ink); }
+.ds-pill-tab:hover { background: color-mix(in srgb, var(--studio-ink) 5%, transparent); color: var(--studio-ink); }
 .ds-pill-tab.is-active {
   background: var(--studio-accent);
   color: var(--studio-accent-fg);
   font-weight: 600;
 }
+.ds-pill-tab.is-active:hover { background: var(--primary-hover); color: var(--studio-accent-fg); }
 
 .ds-action-btn {
   display: inline-flex;
@@ -84,7 +85,7 @@
   background: var(--studio-panel-control);
   border: 1px solid var(--studio-panel-border);
   color: var(--studio-ink);
-  transition: background 0.14s, border-color 0.14s;
+  transition: background-color 0.12s ease-out, border-color 0.12s ease-out;
   white-space: nowrap;
 }
 .ds-action-btn:hover { background: var(--studio-panel-control-hover); border-color: var(--studio-panel-border-strong); }
@@ -93,7 +94,7 @@
   color: var(--primary-fg);
   border-color: var(--primary);
 }
-.ds-action-btn.is-primary:hover { opacity: 0.9; }
+.ds-action-btn.is-primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
 
 .ds-card {
   border-radius: 12px;
@@ -164,9 +165,9 @@
   font-size: 9px;
   border: 1px solid rgba(127, 127, 127, 0.16);
   cursor: pointer;
-  transition: transform 0.12s;
+  transition: border-color 0.12s ease-out;
 }
-.ds-ramp-chip:hover { transform: translateY(-2px); }
+.ds-ramp-chip:hover { border-color: var(--studio-ink); }
 
 .ds-code-pre {
   margin: 0;
@@ -243,9 +244,12 @@
   background: var(--studio-panel-bg);
   border: 1px solid var(--studio-panel-border);
   text-align: left;
-  transition: border-color 0.14s, transform 0.14s;
+  transition: border-color 0.14s ease-out, background-color 0.14s ease-out;
 }
-.ldb-card:hover { border-color: var(--studio-panel-border-strong); transform: translateY(-2px); }
+.ldb-card:hover {
+  border-color: var(--studio-panel-border-strong);
+  background: color-mix(in srgb, var(--studio-ink) 2.5%, var(--studio-panel-bg));
+}
 
 .ldb-stage {
   height: 112px;
@@ -373,8 +377,10 @@
   border: 1px solid transparent;
   font-size: 10px;
   color: var(--studio-muted);
+  transition: background-color 0.12s ease-out, border-color 0.12s ease-out, color 0.12s ease-out;
 }
 .icon-pick-cell:hover {
+  background: var(--studio-panel-control-hover);
   border-color: var(--studio-panel-border-strong);
   color: var(--studio-ink);
 }
