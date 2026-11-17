@@ -6,6 +6,8 @@ interface Props {
   params: Record<string, number | string | boolean>;
   size: number;
   dark: boolean;
+  brandName?: string;
+  brandHandle?: string;
 }
 
 export function paintSocialOverlay(
@@ -14,6 +16,8 @@ export function paintSocialOverlay(
   params: Record<string, number | string | boolean>,
   size: number,
   dark: boolean,
+  brandName?: string,
+  brandHandle?: string,
 ) {
   if (!SOCIAL_IDS.includes(effectId)) return;
 
@@ -43,7 +47,11 @@ export function paintSocialOverlay(
   ctx.restore();
 
   const platform = effectId.replace('social', '').toLowerCase();
-  const handle = `@${platform}.sourcebook`;
+  const cleanHandle = (brandHandle || '').trim();
+  const handle = cleanHandle
+    ? (cleanHandle.startsWith('@') ? cleanHandle : `@${cleanHandle}`)
+    : `@${platform}.sourcebook`;
+  const displayName = (brandName || '').trim() || (platform === 'youtube' ? 'Design Sourcebook' : 'Design Sourcebook Studio');
 
   ctx.fillStyle = textColor;
   ctx.textBaseline = 'middle';
@@ -76,7 +84,7 @@ export function paintSocialOverlay(
 
   ctx.font = `600 ${Math.round(header * 0.24)}px "Allo", system-ui, sans-serif`;
   ctx.fillStyle = textColor;
-  ctx.fillText(platform === 'youtube' ? 'Design Sourcebook' : 'Design Sourcebook Studio', avatarX + avatarR * 1.6, avatarY - header * 0.08);
+  ctx.fillText(displayName, avatarX + avatarR * 1.6, avatarY - header * 0.08);
   ctx.fillStyle = muted;
   ctx.font = `500 ${Math.round(header * 0.18)}px "Allo", system-ui, sans-serif`;
   ctx.fillText(handle, avatarX + avatarR * 1.6, avatarY + header * 0.16);
@@ -112,7 +120,7 @@ export function paintSocialOverlay(
   }
 }
 
-export function SocialOverlay({ effectId, params, size, dark }: Props) {
+export function SocialOverlay({ effectId, params, size, dark, brandName, brandHandle }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -126,14 +134,14 @@ export function SocialOverlay({ effectId, params, size, dark }: Props) {
       const ctx = canvas.getContext('2d')!;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, size, size);
-      paintSocialOverlay(ctx, effectId, params, size, dark);
+      paintSocialOverlay(ctx, effectId, params, size, dark, brandName, brandHandle);
     };
     draw();
     if (typeof document !== 'undefined' && document.fonts?.status !== 'loaded') {
       void document.fonts.ready.then(draw);
     }
     return () => { alive = false; };
-  }, [effectId, params, size, dark]);
+  }, [effectId, params, size, dark, brandName, brandHandle]);
 
   if (!SOCIAL_IDS.includes(effectId)) return null;
   return (

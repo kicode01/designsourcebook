@@ -119,9 +119,19 @@ export function EffectPicker({ current, onSelect, onClose, anchor }: Props) {
         <input
           autoFocus
           value={query}
-          placeholder="Search 40 effects or material…"
+          placeholder={`Search ${Object.keys(effects).length} effects or material…`}
           onChange={(e) => setQuery(e.target.value)}
         />
+        {query && (
+          <button
+            type="button"
+            aria-label="Clear search"
+            onClick={() => setQuery('')}
+            style={{ color: 'var(--studio-muted)', display: 'grid', placeItems: 'center' }}
+          >
+            <Icon name="x" size={12} />
+          </button>
+        )}
       </label>
       <div className="catalog-filters">
         {FILTERS.map((f) => (

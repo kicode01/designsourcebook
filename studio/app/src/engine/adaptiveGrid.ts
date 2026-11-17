@@ -13,7 +13,6 @@ import {
   CENTER,
   CONSTRUCTION_GRIDS,
   edgeCmd,
-  makePolygonFace,
   SHEET,
   wrapBuiltGrid,
   type BuiltGrid,
@@ -24,6 +23,7 @@ import {
   type LineSegIn,
   type SegCmd,
 } from './gridArrangement';
+import { hexToRgbTuple, inspectSvgPaint, rgbDistance, type SvgPaintInfo } from './svgPaint';
 
 export interface NormalizedTransform {
   viewBox: [number, number, number, number];
@@ -45,6 +45,7 @@ export interface MarkRasterMask {
   width: number;
   height: number;
   pixels: Uint8Array;
+  rgba?: Uint8ClampedArray;
   sat: Int32Array;
   inkPixels: number;
 }
@@ -52,6 +53,9 @@ export interface MarkRasterMask {
 export interface MarkGridAnalysis {
   transform: NormalizedTransform;
   aspect: number;
+  isIconMark: boolean;
+  sourceGridSize: number | null;
+  paintInfo: SvgPaintInfo;
   xStems: { pos: number; weight: number }[];
   yStems: { pos: number; weight: number }[];
   dominantAngles: { deg: number; weight: number }[];
@@ -732,16 +736,17 @@ function extractRawFeatures(svgText: string): RawExtractedFeatures {
           const rx = num();
           const ry = num();
           const rot = num();
-          const f1 = toks[idx] || '0';
-          if (/^[01]{2,}$/.test(f1)) {
-            toks.splice(idx, 1, f1[0], f1[1], ...(f1.length > 2 ? [f1.slice(2)] : []));
-          }
-          const largeArc = num();
-          const f2 = toks[idx] || '0';
-          if (/^[01].+/.test(f2) && f2.length > 1) {
-            toks.splice(idx, 1, f2[0], f2.slice(1));
-          }
-          const sweep = num();
+          const consumeFlag = () => {
+            const cur = toks[idx] || '0';
+            if (/^[01].+/.test(cur)) {
+              const bit = Number(cur[0]);
+              toks[idx] = cur.slice(1);
+              return bit;
+            }
+            return num() ? 1 : 0;
+          };
+          const largeArc = consumeFlag();
+          const sweep = consumeFlag();
           const nx = num() + (rel ? cx : 0);
           const ny = num() + (rel ? cy : 0);
           const arcInfo = svgArcToCenter(cx, cy, rx, ry, rot, largeArc ? 1 : 0, sweep ? 1 : 0, nx, ny);
@@ -830,7 +835,8 @@ function buildFallbackMask(subpaths: SubpathPoly[], norm: NormalizedTransform): 
 
   for (const sp of subpaths) {
     const tPts: [number, number][] = sp.pts.map(([x, y]) => [ox + x * scale, oy + y * scale]);
-    if (sp.fillMode !== 'stroke' && sp.closed && tPts.length >= 3) {
+    // Per SVG spec, filled subpaths implicitly close even if trailing Z is omitted
+    if (sp.fillMode !== 'stroke' && tPts.length >= 3) {
       filledPolys.push(tPts);
     }
     if (sp.fillMode !== 'fill' && tPts.length >= 2) {
@@ -1157,10 +1163,21 @@ export function analyzeMarkForGrid(svgText: string): MarkGridAnalysis {
 
   const summaryText = chips.length ? chips.slice(0, 3).join(' · ') : 'Custom proportions';
   const fallbackMask = buildFallbackMask(raw.subpaths, transform);
+  const paintInfo = inspectSvgPaint(svgText);
+  const vbMax = Math.max(vb[2], vb[3]);
+  const isNearSquare = Math.abs(vb[2] - vb[3]) <= Math.max(2, vbMax * 0.12);
+  const sourceGridSize =
+    isNearSquare && vbMax >= 12 && vbMax <= 48 ? Math.round(vbMax) : null;
+  const isIconMark =
+    Boolean(sourceGridSize) ||
+    /\b(?:stroke-width|stroke-linecap|stroke-linejoin)=/i.test(svgText) && raw.samples.length > 0 && vbMax <= 64;
 
   return {
     transform,
     aspect: inkW / inkH,
+    isIconMark,
+    sourceGridSize,
+    paintInfo,
     xStems,
     yStems,
     dominantAngles,
@@ -1314,21 +1331,62 @@ export function buildAdaptiveGridForSvg(svgText: string, density: DensityLevel):
  * counters, and thin strokes down to 3.75px + 45° diagonal bevel cuts with exact T-junction splits
  * so `stitchBoundaryUnion` merges cleanly into a watertight vector outline.
  */
-export function buildAdaptiveContourMesh(
-  svgText: string,
-  density: DensityLevel,
-  maskOverride?: MarkRasterMask,
-): BuiltGrid {
-  const analysis = analyzeMarkForGrid(svgText);
-  const mask = maskOverride ?? analysis.fallbackMask;
-  const { sat, pixels } = mask;
+interface QuadtreeMeshOpts {
+  id: 'adaptive-mesh' | 'adaptive-icon';
+  label: string;
+  density: DensityLevel;
+  rootCols: number;
+  minStep: number;
+  maxLeaves: number;
+  detectColorSeams: boolean;
+}
 
-  const minStep =
-    density === 'low' ? 15 : density === 'med' ? 7.5 : 3.75; // exact divisors of 30 (240/8)
-  const maxLeaves =
-    density === 'low' ? 240 : density === 'med' ? 640 : density === 'high' ? 980 : 1450;
+function cellHasColorSeam(
+  rgba: Uint8ClampedArray | undefined,
+  x: number,
+  y: number,
+  s: number,
+): boolean {
+  if (!rgba || s < 4) return false;
+  let refR = -1;
+  let refG = 0;
+  let refB = 0;
+  const pts: [number, number][] = [
+    [x + s * 0.2, y + s * 0.2],
+    [x + s * 0.8, y + s * 0.2],
+    [x + s * 0.2, y + s * 0.8],
+    [x + s * 0.8, y + s * 0.8],
+    [x + s * 0.5, y + s * 0.5],
+  ];
+  for (const [px, py] of pts) {
+    const ix = Math.max(0, Math.min(SHEET - 1, Math.floor(px)));
+    const iy = Math.max(0, Math.min(SHEET - 1, Math.floor(py)));
+    const off = (iy * SHEET + ix) * 4;
+    if (rgba[off + 3] < 160) continue;
+    const r = rgba[off];
+    const g = rgba[off + 1];
+    const b = rgba[off + 2];
+    if (refR < 0) {
+      refR = r;
+      refG = g;
+      refB = b;
+    } else if (Math.abs(r - refR) + Math.abs(g - refG) + Math.abs(b - refB) > 68) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function buildAdaptiveQuadtreeMeshCore(
+  analysis: MarkGridAnalysis,
+  mask: MarkRasterMask,
+  opts: QuadtreeMeshOpts,
+): BuiltGrid {
+  const { id, label, density, rootCols, minStep, maxLeaves, detectColorSeams } = opts;
+  const { sat, pixels, rgba } = mask;
   const hiCov = density === 'ultra' ? 0.985 : 0.965;
   const loCov = density === 'ultra' ? 0.015 : 0.035;
+  const rootStep = SHEET / rootCols;
 
   interface LeafPoly {
     pts: [number, number][];
@@ -1336,11 +1394,10 @@ export function buildAdaptiveContourMesh(
   }
   const leaves: LeafPoly[] = [];
 
-  // Root partition: 8x8 cells of size 30 across 240x240 sheet
   const queue: { x: number; y: number; s: number }[] = [];
-  for (let r = 0; r < 8; r++) {
-    for (let c = 0; c < 8; c++) {
-      queue.push({ x: c * 30, y: r * 30, s: 30 });
+  for (let r = 0; r < rootCols; r++) {
+    for (let c = 0; c < rootCols; c++) {
+      queue.push({ x: c * rootStep, y: r * rootStep, s: rootStep });
     }
   }
 
@@ -1349,8 +1406,9 @@ export function buildAdaptiveContourMesh(
     const cell = queue[qIdx++];
     const { x, y, s } = cell;
     const cov = querySatRectCov(sat, x, y, x + s, y + s);
+    const hasColorBoundary = detectColorSeams && cov > loCov && cellHasColorSeam(rgba, x, y, s);
 
-    if (cov <= loCov || cov >= hiCov) {
+    if ((cov <= loCov || cov >= hiCov) && !hasColorBoundary) {
       leaves.push({ pts: [[x, y], [x + s, y], [x + s, y + s], [x, y + s]], diag: false });
       continue;
     }
@@ -1367,12 +1425,23 @@ export function buildAdaptiveContourMesh(
       continue;
     }
 
-    // Compare actual pixel error across Whole Square vs Horizontal/Vertical Halves vs ±45° Triangles
-    // so horizontal/vertical tangents remain flat (zero sawtooth spikes) and true slopes get 45° bevels.
     const x0 = Math.max(0, Math.floor(x));
     const x1 = Math.min(SHEET, Math.ceil(x + s));
     const y0 = Math.max(0, Math.floor(y));
     const y1 = Math.min(SHEET, Math.ceil(y + s));
+
+    // When bisecting an internal color boundary inside an opaque cell, discriminate against top-left sample color
+    let refR = 0;
+    let refG = 0;
+    let refB = 0;
+    const useColorMask = hasColorBoundary && cov >= hiCov && Boolean(rgba);
+    if (useColorMask && rgba) {
+      const roff = (Math.min(SHEET - 1, Math.floor(y + 1)) * SHEET + Math.min(SHEET - 1, Math.floor(x + 1))) * 4;
+      refR = rgba[roff];
+      refG = rgba[roff + 1];
+      refB = rgba[roff + 2];
+    }
+
     let tot1 = 0; let tot0 = 0;
     let top1 = 0; let top0 = 0; let bot1 = 0; let bot0 = 0;
     let left1 = 0; let left0 = 0; let right1 = 0; let right0 = 0;
@@ -1384,7 +1453,12 @@ export function buildAdaptiveContourMesh(
       const rowOff = py * SHEET;
       for (let px = x0; px < x1; px++) {
         const u = (px + 0.5 - x) / s;
-        const on = pixels[rowOff + px] >= 90;
+        let on = pixels[rowOff + px] >= 90;
+        if (on && useColorMask && rgba) {
+          const coff = (rowOff + px) * 4;
+          const diff = Math.abs(rgba[coff] - refR) + Math.abs(rgba[coff + 1] - refG) + Math.abs(rgba[coff + 2] - refB);
+          on = diff < 56;
+        }
         if (on) tot1++; else tot0++;
         if (v < 0.5) { if (on) top1++; else top0++; } else { if (on) bot1++; else bot0++; }
         if (u < 0.5) { if (on) left1++; else left0++; } else { if (on) right1++; else right0++; }
@@ -1404,7 +1478,7 @@ export function buildAdaptiveContourMesh(
     const bestAll = Math.min(bestOrtho, bestDiag);
     const hs = s / 2;
 
-    if (errSq > 0 && bestAll < errSq * 0.72) {
+    if (errSq > 0 && bestAll < errSq * 0.78) {
       if (bestDiag < bestOrtho) {
         if (errD1 <= errD2) {
           leaves.push({ pts: [[x, y], [x + s, y], [x + s, y + s]], diag: true });
@@ -1467,7 +1541,6 @@ export function buildAdaptiveContourMesh(
       const a = leaf.pts[i];
       const b = leaf.pts[(i + 1) % leaf.pts.length];
       if (Math.abs(a[1] - b[1]) < 0.005) {
-        // Horizontal segment: insert intermediate T-vertices
         const rowXs = sortedXsByY.get(vKeyAxis(a[1])) || [];
         const lo = Math.min(a[0], b[0]) + 0.02;
         const hi = Math.max(a[0], b[0]) - 0.02;
@@ -1480,7 +1553,6 @@ export function buildAdaptiveContourMesh(
         }
         segs.push(edgeCmd(curX, a[1], b[0], b[1], 'line'));
       } else if (Math.abs(a[0] - b[0]) < 0.005) {
-        // Vertical segment: insert intermediate T-vertices
         const colYs = sortedYsByX.get(vKeyAxis(a[0])) || [];
         const lo = Math.min(a[1], b[1]) + 0.02;
         const hi = Math.max(a[1], b[1]) - 0.02;
@@ -1497,17 +1569,168 @@ export function buildAdaptiveContourMesh(
       }
     }
 
-    // Centroid for winding & label
     const cx = leaf.pts.reduce((s, p) => s + p[0], 0) / leaf.pts.length;
     const cy = leaf.pts.reduce((s, p) => s + p[1], 0) / leaf.pts.length;
     const face = buildFaceFromSegs(`cm-${idx}`, segs, cx, cy);
     if (face) faces.push(face);
   }
 
-  // Keep pixels referenced lazily if mask wasn't warmed (already passed/built above)
-  void pixels;
   const symOrder = analysis.radialOrder >= 3 ? analysis.radialOrder : 4;
-  return wrapBuiltGrid('adaptive-mesh', 'Adaptive Contour Mesh', density, wf, faces, symOrder);
+  return wrapBuiltGrid(id, label, density, wf, faces, symOrder);
+}
+
+/**
+ * Logo-calibrated Adaptive Contour Mesh: automatically refines wide wordmarks, delicate
+ * thin strokes & internal multi-color brand boundaries.
+ */
+export function buildAdaptiveContourMesh(
+  svgText: string,
+  density: DensityLevel,
+  maskOverride?: MarkRasterMask,
+): BuiltGrid {
+  const analysis = analyzeMarkForGrid(svgText);
+  const mask = maskOverride ?? analysis.fallbackMask;
+  const inkFrac = mask.inkPixels / (SHEET * SHEET);
+  const isWideOrFine = analysis.aspect > 1.55 || analysis.aspect < 0.65 || inkFrac < 0.14;
+
+  const minStep =
+    density === 'low'
+      ? isWideOrFine ? 7.5 : 15
+      : density === 'med'
+        ? isWideOrFine ? 3.75 : 7.5
+        : isWideOrFine ? 1.875 : 3.75;
+  const maxLeaves =
+    density === 'low' ? 280 : density === 'med' ? 860 : density === 'high' ? 1280 : 1800;
+
+  return buildAdaptiveQuadtreeMeshCore(analysis, mask, {
+    id: 'adaptive-mesh',
+    label: 'Adaptive Logo Mesh',
+    density,
+    rootCols: 8,
+    minStep,
+    maxLeaves,
+    detectColorSeams: analysis.paintInfo.kind === 'multicolor',
+  });
+}
+
+/**
+ * UI-Icon-calibrated Adaptive Keyline Grid: quantizes root cells cleanly to native
+ * 16×16 / 20×20 / 24×24 / 32×32 icon lattices (all exact divisors of 240) and slices only
+ * curves & diagonal edges into half-pixel bevels so strokes stay optically crisp.
+ */
+export function buildAdaptiveIconGrid(
+  svgText: string,
+  density: DensityLevel,
+  maskOverride?: MarkRasterMask,
+): BuiltGrid {
+  const analysis = analyzeMarkForGrid(svgText);
+  const mask = maskOverride ?? analysis.fallbackMask;
+  const gridPx = analysis.sourceGridSize ?? 24;
+
+  // Pick root division matching icon pitch (exact divisors of 240: 12, 10, 8, 16)
+  const rootCols =
+    gridPx <= 16
+      ? 8 // 30u -> splits to 15u (16px icon unit), 7.5u (half px), 3.75u
+      : gridPx <= 20
+        ? 10 // 24u -> splits to 12u (20px icon unit), 6u (half px), 3u
+        : 12; // 20u (2px in 24 grid) -> splits to 10u (1px), 5u (half px), 2.5u
+
+  const rootStep = SHEET / rootCols;
+  const minStep =
+    density === 'low'
+      ? rootStep / 2
+      : density === 'med'
+        ? rootStep / 4
+        : rootStep / 8;
+  const maxLeaves =
+    density === 'low' ? 320 : density === 'med' ? 760 : density === 'high' ? 1150 : 1600;
+
+  return buildAdaptiveQuadtreeMeshCore(analysis, mask, {
+    id: 'adaptive-icon',
+    label: `Adaptive ${gridPx}px Icon`,
+    density,
+    rootCols,
+    minStep,
+    maxLeaves,
+    detectColorSeams: analysis.paintInfo.kind === 'multicolor',
+  });
+}
+
+/**
+ * Extracts per-face brand colors from the rasterized source SVG canvas for multicolor marks
+ * (e.g., Logstash, YouTube, Google, Figma) and snaps pixels to exact SVG palette tokens.
+ */
+export function sampleGridFaceColors(
+  grid: BuiltGrid,
+  selected: Set<string>,
+  mask: MarkRasterMask,
+  svgText: string,
+): { faceColors: Map<string, string>; palette: string[]; paintInfo: SvgPaintInfo } {
+  const paintInfo = inspectSvgPaint(svgText);
+  const faceColors = new Map<string, string>();
+  const rgba = mask.rgba;
+
+  if (paintInfo.kind !== 'multicolor' || !rgba || !selected.size) {
+    return { faceColors, palette: paintInfo.palette, paintInfo };
+  }
+
+  const snapTargets = paintInfo.palette.length > 0 ? paintInfo.palette : [];
+  const toHex = (r: number, g: number, b: number) =>
+    `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+
+  for (const id of selected) {
+    const face = grid.faceMap.get(id);
+    if (!face) continue;
+    let sumR = 0;
+    let sumG = 0;
+    let sumB = 0;
+    let count = 0;
+
+    const samplePts: [number, number][] = [[face.cx, face.cy]];
+    const stride = Math.max(1, Math.floor(face.segs.length / 4));
+    for (let i = 0; i < face.segs.length; i += stride) {
+      const s = face.segs[i];
+      samplePts.push([(face.cx + s.fx) * 0.5, (face.cy + s.fy) * 0.5]);
+    }
+    for (const [px, py] of samplePts) {
+      const ix = Math.max(0, Math.min(SHEET - 1, Math.round(px)));
+      const iy = Math.max(0, Math.min(SHEET - 1, Math.round(py)));
+      const off = (iy * SHEET + ix) * 4;
+      if (rgba[off + 3] >= 180) {
+        sumR += rgba[off];
+        sumG += rgba[off + 1];
+        sumB += rgba[off + 2];
+        count++;
+      }
+    }
+    if (!count) continue;
+    const avgHex = toHex(Math.round(sumR / count), Math.round(sumG / count), Math.round(sumB / count));
+    if (snapTargets.length) {
+      let best = snapTargets[0];
+      let bestD = Infinity;
+      const [ar, ag, ab] = hexToRgbTuple(avgHex);
+      for (const t of snapTargets) {
+        const [tr, tg, tb] = hexToRgbTuple(t);
+        const d = Math.hypot(ar - tr, ag - tg, ab - tb);
+        if (d < bestD) {
+          bestD = d;
+          best = t;
+        }
+      }
+      faceColors.set(id, bestD <= 84 ? best : avgHex);
+    } else {
+      faceColors.set(id, avgHex);
+    }
+  }
+
+  // Ensure palette lists actual used hexes in deterministic order
+  const palette = paintInfo.palette.length
+    ? paintInfo.palette
+    : Array.from(new Set(faceColors.values())).slice(0, 8);
+  for (const c of faceColors.values()) {
+    if (!palette.some((p) => rgbDistance(p, c) < 12)) palette.push(c);
+  }
+  return { faceColors, palette: palette.slice(0, 8), paintInfo };
 }
 
 /**
@@ -1573,9 +1796,30 @@ interface GridSignature {
 }
 
 const GRID_SIGNATURES: Record<GridId, GridSignature> = {
-  'adaptive-mesh': { angles: [0, 45, 90, 135], curveAffinity: 0.92, radialOrder: 4, versatility: 1, reasonHint: 'Quadtree + 45° bevel contour slicing' },
-  adaptive: { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.55, radialOrder: 0, versatility: 0.98, reasonHint: 'Stems, bevel rays & circles from logo' },
+  'adaptive-mesh': { angles: [0, 45, 90, 135], curveAffinity: 0.92, radialOrder: 4, versatility: 1, reasonHint: 'Logo-tuned quadtree + 45° bevels & color seams' },
+  'adaptive-icon': { angles: [0, 45, 90, 135], curveAffinity: 0.88, radialOrder: 4, versatility: 0.99, reasonHint: 'UI-icon quantized keyline + sub-pixel bevels' },
+  adaptive: { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.55, radialOrder: 0, versatility: 0.98, reasonHint: 'Stems, bevel rays & circles synthesized from mark' },
+  'radial-8': { angles: [0, 45, 90, 135], curveAffinity: 0.9, radialOrder: 8, versatility: 0.82, reasonHint: '8-spoke compass + concentric harmonic rings' },
+  'radial-12': { angles: [0, 30, 60, 90, 120, 150], curveAffinity: 0.92, radialOrder: 12, versatility: 0.85, reasonHint: '30° clock-face radial sectors & rings' },
+  'radial-16': { angles: [0, 22.5, 45, 67.5, 90, 112.5, 135, 157.5], curveAffinity: 0.94, radialOrder: 16, versatility: 0.86, reasonHint: '16-spoke fine compass rose & aperture rings' },
+  'radial-24': { angles: [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165], curveAffinity: 0.97, radialOrder: 24, versatility: 0.9, reasonHint: '15° ultra-fine radial sectors & rings' },
+  'radial-target': { angles: [0, 45, 90, 135], curveAffinity: 0.86, radialOrder: 8, versatility: 0.82, reasonHint: 'Bullseye optical circles + inner keyline frame' },
+  'radial-hex': { angles: [0, 30, 60, 90, 120, 150], curveAffinity: 0.82, radialOrder: 6, versatility: 0.78, reasonHint: 'Hex-radial 60° web over concentric circles' },
+  'radial-golden': { angles: [0, 45, 90, 135], curveAffinity: 0.94, radialOrder: 16, versatility: 0.84, reasonHint: 'Fibonacci golden-ratio radial rings' },
+  polar: { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.96, radialOrder: 8, versatility: 0.78, reasonHint: 'Concentric rings + radial angular spokes' },
+  'polar-fine': { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.96, radialOrder: 8, versatility: 0.88, reasonHint: '12 rings × 15° spokes for fine circular marks' },
+  'pinwheel-spiral': { angles: [0, 90], curveAffinity: 0.9, radialOrder: 4, versatility: 0.54, reasonHint: 'Swept rotational spiral arcs & blades' },
+  'octa-rings': { angles: [0, 45, 90, 135], curveAffinity: 0.72, radialOrder: 8, versatility: 0.88, reasonHint: '±45° Octagrid fused with bulls-eye rings' },
+  'tri-halo': { angles: [0, 60, 120], curveAffinity: 0.65, radialOrder: 6, versatility: 0.68, reasonHint: '60° triangular axes + concentric rings' },
+  vesica: { angles: [0, 60, 120], curveAffinity: 0.96, radialOrder: 6, versatility: 0.62, reasonHint: 'Seed of Life 6-fold tangent circle petals' },
+  'tri-orbital': { angles: [0, 60, 120], curveAffinity: 0.92, radialOrder: 3, versatility: 0.58, reasonHint: 'Three-center overlapping compass arcs' },
+  'icon-24-keyline': { angles: [0, 45, 90, 135], curveAffinity: 0.76, radialOrder: 4, versatility: 0.84, reasonHint: '24px Material/Lucide safe-area keyline artboard' },
+  'icon-20-keyline': { angles: [0, 45, 90, 135], curveAffinity: 0.76, radialOrder: 4, versatility: 0.82, reasonHint: '20px Fluent/Polaris optical keyline bounds' },
+  'icon-16-keyline': { angles: [0, 45, 90, 135], curveAffinity: 0.72, radialOrder: 4, versatility: 0.82, reasonHint: '16px Octicon/Bootstrap micro keyline grid' },
+  'icon-radial-keyline': { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.88, radialOrder: 12, versatility: 0.86, reasonHint: 'UI live-area square + 30°/45° radial axes' },
+  'icon-ios-squircle': { angles: [0, 45, 90, 135], curveAffinity: 0.84, radialOrder: 4, versatility: 0.82, reasonHint: 'App icon superellipse corner & safe-zone template' },
   'pixel-24': { angles: [0, 90], curveAffinity: 0.65, radialOrder: 4, versatility: 0.88, reasonHint: 'Standard 24×24 system icon matrix' },
+  'pixel-20': { angles: [0, 90], curveAffinity: 0.6, radialOrder: 4, versatility: 0.85, reasonHint: '20×20 Fluent/Polaris icon matrix' },
   'pixel-32': { angles: [0, 90], curveAffinity: 0.88, radialOrder: 4, versatility: 0.94, reasonHint: 'High-res 32×32 micro-pixel matrix' },
   'pixel-16': { angles: [0, 90], curveAffinity: 0.45, radialOrder: 4, versatility: 0.78, reasonHint: '16×16 modular UI icon pixel lattice' },
   'octa-pixel': { angles: [0, 45, 90, 135], curveAffinity: 0.78, radialOrder: 4, versatility: 0.94, reasonHint: '16×16 pixels with ±45° anti-stairstep bevels' },
@@ -1584,28 +1828,21 @@ const GRID_SIGNATURES: Record<GridId, GridSignature> = {
   'skew-45': { angles: [45, 135], curveAffinity: 0.42, radialOrder: 4, versatility: 0.82, reasonHint: 'Dense ±45° diagonal rhombic pixels' },
   'fib-golden': { angles: [0, 45, 90, 135], curveAffinity: 0.72, radialOrder: 4, versatility: 0.76, reasonHint: 'Golden φ intervals & Fibonacci arcs' },
   squircle: { angles: [0, 45, 90, 135], curveAffinity: 0.82, radialOrder: 4, versatility: 0.8, reasonHint: 'App-icon superellipse corner shells' },
-  'polar-fine': { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.96, radialOrder: 8, versatility: 0.88, reasonHint: '12 rings × 15° spokes for fine circular marks' },
   square: { angles: [0, 90], curveAffinity: 0.05, radialOrder: 4, versatility: 0.75, reasonHint: 'Clean horizontal & vertical modular axes' },
   'circle-spandrel': { angles: [0, 90], curveAffinity: 0.78, radialOrder: 4, versatility: 0.7, reasonHint: 'Inscribed cell circles inside orthogonal grid' },
   iso30: { angles: [30, 90, 150], curveAffinity: 0.05, radialOrder: 6, versatility: 0.72, reasonHint: '±30° isometric vectors & vertical stems' },
   octa4: { angles: [0, 45, 90, 135], curveAffinity: 0.1, radialOrder: 4, versatility: 0.85, reasonHint: 'Orthogonal stems + ±45° chamfer diagonals' },
   tri60: { angles: [0, 60, 120], curveAffinity: 0.08, radialOrder: 6, versatility: 0.72, reasonHint: 'Equilateral 60°/120° delta & hex planes' },
-  'tri-orbital': { angles: [0, 60, 120], curveAffinity: 0.92, radialOrder: 3, versatility: 0.58, reasonHint: 'Three-center overlapping compass arcs' },
-  'tri-halo': { angles: [0, 60, 120], curveAffinity: 0.65, radialOrder: 6, versatility: 0.68, reasonHint: '60° triangular axes + concentric rings' },
-  'octa-rings': { angles: [0, 45, 90, 135], curveAffinity: 0.72, radialOrder: 8, versatility: 0.88, reasonHint: '±45° Octagrid fused with bulls-eye rings' },
   tri12: { angles: [30, 60, 90, 120, 150], curveAffinity: 0.1, radialOrder: 6, versatility: 0.74, reasonHint: '30°/60°/90° hexagonal & vertical facets' },
   octa8: { angles: [0, 45, 90, 135], curveAffinity: 0.12, radialOrder: 8, versatility: 0.92, reasonHint: 'Precision 0°/45°/90° subdivided octagrid' },
   rhomb45: { angles: [45, 135], curveAffinity: 0.08, radialOrder: 4, versatility: 0.66, reasonHint: 'Pure ±45° diagonal diamond lattice' },
   hex: { angles: [30, 60, 90, 120, 150], curveAffinity: 0.15, radialOrder: 6, versatility: 0.68, reasonHint: '6-fold honeycomb wedges & radial vertices' },
   brick: { angles: [0, 90], curveAffinity: 0.05, radialOrder: 2, versatility: 0.6, aspectPref: 1.4, reasonHint: 'Staggered horizontal brick modules' },
   'arc-mesh': { angles: [0, 90], curveAffinity: 0.72, radialOrder: 4, versatility: 0.66, reasonHint: 'Square lattice intersected by vertex arcs' },
-  polar: { angles: [0, 30, 45, 60, 90, 120, 135, 150], curveAffinity: 0.96, radialOrder: 8, versatility: 0.78, reasonHint: 'Concentric rings + radial angular spokes' },
-  vesica: { angles: [0, 60, 120], curveAffinity: 0.96, radialOrder: 6, versatility: 0.62, reasonHint: 'Seed of Life 6-fold tangent circle petals' },
   'duo-vesica': { angles: [0, 90], curveAffinity: 0.92, radialOrder: 2, versatility: 0.56, aspectPref: 1.5, reasonHint: 'Paired orbital centers for wide & curved marks' },
   'golden-construct': { angles: [0, 45, 90, 135], curveAffinity: 0.52, radialOrder: 4, versatility: 0.76, reasonHint: 'φ harmonic guides + center construction rings' },
   octagram: { angles: [0, 45, 90, 135], curveAffinity: 0.45, radialOrder: 8, versatility: 0.74, reasonHint: 'Nested 0°+45° star frames + orbital rings' },
   shield: { angles: [0, 45, 90, 135], curveAffinity: 0.55, radialOrder: 2, versatility: 0.62, reasonHint: 'Bilateral crest arcs, chamfers & centerline' },
-  'pinwheel-spiral': { angles: [0, 90], curveAffinity: 0.9, radialOrder: 4, versatility: 0.54, reasonHint: 'Swept rotational spiral arcs & blades' },
   'grid-fillet': { angles: [0, 45, 90, 135], curveAffinity: 0.25, radialOrder: 4, versatility: 0.76, reasonHint: 'Beveled octagon & diamond corner hubs' },
   'iso-cube': { angles: [30, 90, 150], curveAffinity: 0.08, radialOrder: 6, versatility: 0.68, reasonHint: 'Isometric rhombic faces for 3D planes' },
   'nested-frames': { angles: [0, 45, 90, 135], curveAffinity: 0.15, radialOrder: 8, versatility: 0.72, reasonHint: 'Concentric square rails + 45° radial axes' },
@@ -1625,8 +1862,9 @@ export function rankGridsForAnalysis(
     const sig = GRID_SIGNATURES[g.id];
     const measured = measuredIou?.get(g.id);
 
-    if (g.id === 'adaptive-mesh') {
-      const score = measured !== undefined ? Math.max(84, Math.min(99, measured)) : 96;
+    if (g.id === 'adaptive-mesh' || g.id === 'adaptive-icon') {
+      const bonus = analysis.isIconMark && g.id === 'adaptive-icon' ? 1 : !analysis.isIconMark && g.id === 'adaptive-mesh' ? 1 : 0;
+      const score = measured !== undefined ? Math.max(84, Math.min(99, measured + bonus)) : 96;
       results.push({
         id: g.id,
         score,
@@ -1793,7 +2031,7 @@ export async function getMarkRasterMask(
     for (let i = 0; i < pixels.length; i++) pixels[i] = rgba[i * 4 + 3];
 
     const { sat, inkPixels } = buildSatFromPixels(pixels);
-    const mask: MarkRasterMask = { width: SHEET, height: SHEET, pixels, sat, inkPixels };
+    const mask: MarkRasterMask = { width: SHEET, height: SHEET, pixels, rgba, sat, inkPixels };
     if (MASK_CACHE.size >= 24) {
       const oldest = MASK_CACHE.keys().next().value;
       if (oldest) MASK_CACHE.delete(oldest);
@@ -1812,32 +2050,45 @@ export function evaluateCandidateGrids(
   svgText: string,
   density: DensityLevel,
   mask: MarkRasterMask,
+  markSource?: string,
 ): {
   recommendedId: GridId;
   measuredIou: Map<GridId, number>;
   constructGrid: BuiltGrid;
   contourGrid: BuiltGrid;
+  iconGrid: BuiltGrid;
 } {
+  const analysis = analyzeMarkForGrid(svgText);
   const constructGrid = buildAdaptiveGridForSvg(svgText, density);
   const contourGrid = buildAdaptiveContourMesh(svgText, density, mask);
+  const iconGrid = buildAdaptiveIconGrid(svgText, density, mask);
   const constructEval = evaluateGridMatch(constructGrid, mask);
   const contourEval = evaluateGridMatch(contourGrid, mask);
+  const iconEval = evaluateGridMatch(iconGrid, mask);
 
   const measuredIou = new Map<GridId, number>();
   measuredIou.set('adaptive', constructEval.iouPct);
   measuredIou.set('adaptive-mesh', contourEval.iouPct);
+  measuredIou.set('adaptive-icon', iconEval.iouPct);
 
-  // Measure high-resolution pixel/micro grids in <2ms using fast analytic builders
+  // Measure high-resolution radial, icon & pixel grids synchronously using fast analytic builders
   const probeIds: GridId[] = [
     'octa-pixel',
     'pixel-32',
     'pixel-24',
+    'pixel-20',
+    'pixel-16',
+    'radial-24',
+    'radial-16',
+    'radial-12',
+    'radial-8',
+    'radial-golden',
+    'polar-fine',
     'octa4',
     'octa8',
     'tri-pixel',
     'iso-fine',
     'skew-45',
-    'polar-fine',
   ];
   for (const pid of probeIds) {
     const built = buildAdaptiveProbeGrid(pid, density);
@@ -1846,14 +2097,23 @@ export function evaluateCandidateGrids(
     }
   }
 
-  // Prefer architectural Adaptive Construct when it already fits cleanly (>= 88% IoU or close to Contour),
-  // otherwise automatically pick Adaptive Contour Mesh for curved/organic/intricate marks!
-  const recommendedId: GridId =
-    constructEval.iouPct >= 90 && constructEval.iouPct >= contourEval.iouPct - 2
-      ? 'adaptive'
-      : 'adaptive-mesh';
+  const isIcon = markSource === 'iconpack' || analysis.isIconMark;
+  let recommendedId: GridId;
+  if (isIcon) {
+    recommendedId =
+      constructEval.iouPct >= 92 && constructEval.iouPct >= iconEval.iouPct - 1
+        ? 'adaptive'
+        : iconEval.iouPct >= contourEval.iouPct - 2
+          ? 'adaptive-icon'
+          : 'adaptive-mesh';
+  } else {
+    recommendedId =
+      constructEval.iouPct >= 90 && constructEval.iouPct >= contourEval.iouPct - 2
+        ? 'adaptive'
+        : 'adaptive-mesh';
+  }
 
-  return { recommendedId, measuredIou, constructGrid, contourGrid };
+  return { recommendedId, measuredIou, constructGrid, contourGrid, iconGrid };
 }
 
 function buildAdaptiveProbeGrid(id: GridId, density: DensityLevel): BuiltGrid | null {

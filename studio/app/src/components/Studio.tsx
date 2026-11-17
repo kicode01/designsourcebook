@@ -23,7 +23,7 @@ function download(blob: Blob, filename: string) {
 
 export function Studio() {
   const { state, dispatch, shader } = useStudio();
-  const { theme, activeMark, setActiveMark } = useProject();
+  const { theme, activeMark, setActiveMark, designSystem } = useProject();
   const { doc, ui } = state;
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -239,7 +239,15 @@ export function Studio() {
           ctx.restore();
           bmp.close();
 
-          paintSocialOverlay(ctx, doc.effectId, currentParams(doc), size, theme === 'dark');
+          paintSocialOverlay(
+            ctx,
+            doc.effectId,
+            currentParams(doc),
+            size,
+            theme === 'dark',
+            designSystem.name,
+            designSystem.handle,
+          );
           const finalBlob = await new Promise<Blob>((resolve) => out.toBlob((b) => resolve(b!), 'image/png'));
           download(finalBlob, `designsourcebook-${doc.effectId.replace(/[:]/g, '-')}-${size}.png`);
           flash(`PNG exported at ${size}px`);
@@ -269,7 +277,7 @@ export function Studio() {
         setBusy(false);
       }
     },
-    [buildState, doc, flash, theme],
+    [buildState, doc, flash, theme, designSystem.name, designSystem.handle],
   );
 
   const sharePreset = async () => {
@@ -311,7 +319,7 @@ export function Studio() {
             }}
           >
             <div
-              className="studio-stage"
+              className={`studio-stage ${doc.canvas.background === 'transparent' ? 'is-transparent' : ''}`}
               style={{
                 width: STAGE,
                 height: STAGE,
@@ -320,7 +328,14 @@ export function Studio() {
               }}
             >
               <canvas ref={canvasRef} width={1024} height={1024} aria-label="Logo effect canvas" />
-              <SocialOverlay effectId={doc.effectId} params={currentParams(doc)} size={STAGE} dark={theme === 'dark'} />
+              <SocialOverlay
+                effectId={doc.effectId}
+                params={currentParams(doc)}
+                size={STAGE}
+                dark={theme === 'dark'}
+                brandName={designSystem.name}
+                brandHandle={designSystem.handle}
+              />
             </div>
             {dropping && <div className="drop-overlay">Drop an SVG or PNG</div>}
           </div>

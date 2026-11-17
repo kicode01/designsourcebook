@@ -10,7 +10,7 @@ interface Props {
 
 export function Toolbar({ onPickMark, onUpload, onExport, onFlip }: Props) {
   const { state, dispatch } = useStudio();
-  const { ui, past, future } = state;
+  const { doc, ui, past, future } = state;
 
   const zoomBy = (delta: number) =>
     dispatch({ type: 'setUI', patch: { zoom: Math.min(200, Math.max(25, ui.zoom + delta)) } });
@@ -30,6 +30,15 @@ export function Toolbar({ onPickMark, onUpload, onExport, onFlip }: Props) {
         </div>
 
         <div className="toolbar-pill">
+          <button
+            type="button"
+            className="toolbar-button is-icon"
+            aria-label={doc.animation.animate ? 'Pause animation' : 'Play animation'}
+            title={doc.animation.animate ? 'Pause animation' : 'Play animation'}
+            onClick={() => dispatch({ type: 'setAnimation', patch: { animate: !doc.animation.animate } })}
+          >
+            <Icon name={doc.animation.animate ? 'pause' : 'play'} size={14} />
+          </button>
           <button
             type="button"
             className="toolbar-button is-icon"

@@ -78,7 +78,7 @@ export function Inspector() {
               <div className="studio-section-title">
                 <span>Effect Settings</span>
                 <div style={{ display: 'flex', gap: 10 }}>
-                  {colors.length > 0 && (
+                  {(colors.length > 0 || controls.some((c) => c.kind === 'color')) && (
                     <button
                       type="button"
                       onClick={() => {
@@ -86,6 +86,16 @@ export function Inspector() {
                         colors.forEach((_, idx) => {
                           dispatch({ type: 'setColor', index: idx, value: pal[idx % pal.length] });
                         });
+                        const colorControls = controls.filter((c) => c.kind === 'color');
+                        colorControls.forEach((c, idx) => {
+                          const v = c.key.toLowerCase().includes('background')
+                            ? compiledSystem.semantic.canvas
+                            : pal[idx % pal.length];
+                          dispatch({ type: 'setParam', key: c.key, value: v });
+                        });
+                        if (doc.canvas.background === 'color') {
+                          dispatch({ type: 'setCanvas', patch: { backgroundColor: compiledSystem.semantic.canvas } });
+                        }
                         dispatch({ type: 'commit' });
                       }}
                     >
@@ -234,9 +244,16 @@ export function Inspector() {
             <div className="studio-section">
               <div className="studio-section-title">
                 <span>Filters</span>
-                <button type="button" onClick={() => dispatch({ type: 'setUI', patch: { showFilters: !ui.showFilters } })}>
-                  {ui.showFilters ? 'Hide' : 'Show'}
-                </button>
+                <div style={{ display: 'flex', gap: 10 }}>
+                  {doc.filters.some((f) => f.enabled) && (
+                    <button type="button" onClick={() => dispatch({ type: 'resetFilters' })}>
+                      Reset
+                    </button>
+                  )}
+                  <button type="button" onClick={() => dispatch({ type: 'setUI', patch: { showFilters: !ui.showFilters } })}>
+                    {ui.showFilters ? 'Hide' : 'Show'}
+                  </button>
+                </div>
               </div>
               {ui.showFilters &&
                 FILTERS.map((filter) => {

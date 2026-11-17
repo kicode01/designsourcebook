@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
 import { DsSelect } from '../components/DsSelect';
+import { adaptSvgPaintForSurface } from '../engine/svgPaint';
 import {
   FONT_OPTIONS,
   MONO_OPTIONS,
@@ -47,6 +48,8 @@ const CVD_MODES: { id: CvdMode; label: string }[] = [
 
 export function SystemMaker() {
   const {
+    theme,
+    setTheme,
     designSystem,
     setDesignSystem,
     resetDesignSystem,
@@ -114,7 +117,7 @@ export function SystemMaker() {
   };
 
   return (
-    <div className="logo-studio">
+    <div className="logo-studio" data-theme={theme}>
       <div className="ds-shell-page">
         <div style={{ position: 'relative', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
           <TopBar
@@ -160,8 +163,12 @@ export function SystemMaker() {
                   onChange={(v) => setCvd(v as CvdMode)}
                   options={CVD_MODES.map((m) => ({ value: m.id, label: m.label }))}
                 />
+                <a className="ds-action-btn" href="#/create" title="Refine mark in Logo Maker">
+                  <span>Logo Maker</span>
+                  <Icon name="arrowUpRight" size={13} />
+                </a>
                 <a className="ds-action-btn is-primary" href="#/brand" onClick={() => flash('Synced to Brand Maker')}>
-                  <span>Open in Brand Maker</span>
+                  <span>Brand Maker</span>
                   <Icon name="arrowUpRight" size={13} />
                 </a>
               </div>
@@ -203,7 +210,7 @@ export function SystemMaker() {
                         padding: 6,
                       }}
                       dangerouslySetInnerHTML={{
-                        __html: activeMark.svg.replace(/fill="#?[0-9a-fA-F]+"/g, `fill="${cvdHex(semantic.brandFg)}"`),
+                        __html: adaptSvgPaintForSurface(activeMark.svg, cvdHex(semantic.brandFg), 'sm-mk-'),
                       }}
                     />
                     <strong style={{ ...fontStyleFor(designSystem.displayFont, 'display'), fontSize: 15 }}>{designSystem.name}</strong>
@@ -624,20 +631,33 @@ export function SystemMaker() {
                   onChange={(e) => setDesignSystem({ name: e.target.value })}
                 />
               </label>
+              <label className="page-field">
+                <span>Social Handle</span>
+                <input
+                  value={designSystem.handle}
+                  onChange={(e) => setDesignSystem({ handle: e.target.value })}
+                />
+              </label>
               <div className="param-row">
                 <span className="param-label">Surface Mode</span>
                 <div className="segment">
                   <button
                     type="button"
                     aria-pressed={designSystem.polarity === 'dark'}
-                    onClick={() => setDesignSystem({ polarity: 'dark' })}
+                    onClick={() => {
+                      setDesignSystem({ polarity: 'dark' });
+                      setTheme('dark');
+                    }}
                   >
                     Dark
                   </button>
                   <button
                     type="button"
                     aria-pressed={designSystem.polarity === 'light'}
-                    onClick={() => setDesignSystem({ polarity: 'light' })}
+                    onClick={() => {
+                      setDesignSystem({ polarity: 'light' });
+                      setTheme('light');
+                    }}
                   >
                     Light
                   </button>

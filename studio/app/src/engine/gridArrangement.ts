@@ -7,14 +7,35 @@
 export const SHEET = 240;
 export const CENTER = SHEET / 2;
 
-export type GridCategory = 'angular' | 'curved' | 'compass' | 'pixel';
+export type GridCategory = 'radial' | 'icon' | 'pixel' | 'angular' | 'curved' | 'compass';
 export type SymmetryMode = 'none' | 'x' | 'y' | 'quad' | 'rot2' | 'radial';
 export type DensityLevel = 'low' | 'med' | 'high' | 'ultra';
 
 export type GridId =
   | 'adaptive-mesh'
+  | 'adaptive-icon'
   | 'adaptive'
+  | 'radial-8'
+  | 'radial-12'
+  | 'radial-16'
+  | 'radial-24'
+  | 'radial-target'
+  | 'radial-hex'
+  | 'radial-golden'
+  | 'polar'
+  | 'polar-fine'
+  | 'pinwheel-spiral'
+  | 'octa-rings'
+  | 'tri-halo'
+  | 'vesica'
+  | 'tri-orbital'
+  | 'icon-24-keyline'
+  | 'icon-20-keyline'
+  | 'icon-16-keyline'
+  | 'icon-radial-keyline'
+  | 'icon-ios-squircle'
   | 'pixel-16'
+  | 'pixel-20'
   | 'pixel-24'
   | 'pixel-32'
   | 'octa-pixel'
@@ -23,28 +44,21 @@ export type GridId =
   | 'skew-45'
   | 'fib-golden'
   | 'squircle'
-  | 'polar-fine'
   | 'square'
   | 'circle-spandrel'
   | 'iso30'
   | 'octa4'
   | 'tri60'
-  | 'tri-orbital'
-  | 'tri-halo'
-  | 'octa-rings'
   | 'tri12'
   | 'octa8'
   | 'rhomb45'
   | 'hex'
   | 'brick'
   | 'arc-mesh'
-  | 'polar'
-  | 'vesica'
   | 'duo-vesica'
   | 'golden-construct'
   | 'octagram'
   | 'shield'
-  | 'pinwheel-spiral'
   | 'grid-fillet'
   | 'iso-cube'
   | 'nested-frames';
@@ -93,9 +107,30 @@ export interface BuiltGrid {
 }
 
 export const CONSTRUCTION_GRIDS: GridCatalogItem[] = [
-  { id: 'adaptive-mesh', label: 'Adaptive Contour Mesh', short: 'Contour', category: 'compass', description: 'Variable quadtree + 45° diagonal bevel slicing fitted closely to curves, thin strokes & holes' },
+  { id: 'adaptive-mesh', label: 'Adaptive Logo Mesh', short: 'Adapt Logo', category: 'compass', description: 'Logo-tuned variable quadtree + 45° diagonal bevel & color-seam slicing for wordmarks & brand marks' },
+  { id: 'adaptive-icon', label: 'Adaptive Icon Keyline', short: 'Adapt Icon', category: 'icon', description: 'UI-icon adaptive quadtree quantized to native 16/20/24/32px grids with 45° bevels & keyline fitting' },
   { id: 'adaptive', label: 'Adaptive Construct', short: 'Construct', category: 'compass', description: 'Bespoke construction stems, angles, rays & compass circles synthesized from the active logo' },
+  { id: 'radial-8', label: 'Radial 8-Spoke Star', short: 'Radial 8', category: 'radial', description: 'Concentric harmonic rings intersected with 8 orthogonal & 45° compass axes' },
+  { id: 'radial-12', label: 'Radial 12 Clock', short: 'Radial 12', category: 'radial', description: '30° clock-face radial sectors for suns, stars, gears, flowers & circular UI glyphs' },
+  { id: 'radial-16', label: 'Radial 16 Compass', short: 'Radial 16', category: 'radial', description: '22.5° 16-spoke navigational compass rose with concentric aperture rings' },
+  { id: 'radial-24', label: 'Radial 24 Precision', short: 'Radial 24', category: 'radial', description: '15° fine radial wedge system for intricate starbursts, dials & circular logos' },
+  { id: 'radial-target', label: 'Bullseye & Crosshair', short: 'Bullseye', category: 'radial', description: 'Material/iOS optical keyline circles fused with ±45°/90° axes & inner square frame' },
+  { id: 'radial-hex', label: 'Hex-Radial Aperture', short: 'Hex-Rad', category: 'radial', description: '60° hexagonal chord web over concentric rings for 6-fold emblems & badges' },
+  { id: 'radial-golden', label: 'Golden φ Radial', short: 'Phi Radial', category: 'radial', description: 'Fibonacci golden-ratio radii R/φ^k divided by 16 radial spokes for balanced marks' },
+  { id: 'polar', label: 'Polar Radial Grid', short: 'Polar', category: 'radial', description: 'Concentric rings + angular spokes for apertures & badges' },
+  { id: 'polar-fine', label: '12×24 Precision Polar', short: 'Polar 24', category: 'radial', description: 'High-precision concentric rings + 15° radial spokes for circular badges & marks' },
+  { id: 'pinwheel-spiral', label: 'Spiral Vortex Blades', short: 'Vortex', category: 'radial', description: 'Swept off-center arcs radiating into aperture & swirl blades' },
+  { id: 'octa-rings', label: 'Octagrid + Bulls-eye', short: 'Octa+Ring', category: 'radial', description: '45° Octagrid fused with concentric radial circles' },
+  { id: 'tri-halo', label: 'Tri-Grid + Halos', short: 'Tri+Halo', category: 'radial', description: '60° triangular matrix intersected with concentric construction rings' },
+  { id: 'vesica', label: 'Seed of Life', short: 'Vesica 7', category: 'radial', description: 'Overlapping equilateral circles creating petals, lenses & trefoils' },
+  { id: 'tri-orbital', label: 'Tri-Orbital Ripples', short: 'Tri-Orbit', category: 'radial', description: 'Three overlapping concentric circle centers for blades & lenses' },
+  { id: 'icon-24-keyline', label: '24px Icon Keyline', short: 'Keyline 24', category: 'icon', description: 'Authentic 24px Material/Lucide keyline artboard with 2px safe area, circle, square & rect bounds' },
+  { id: 'icon-20-keyline', label: '20px Compact Keyline', short: 'Keyline 20', category: 'icon', description: 'Fluent & Polaris 20px optical keyline scaffold with balanced padding & center hubs' },
+  { id: 'icon-16-keyline', label: '16px Micro Keyline', short: 'Keyline 16', category: 'icon', description: 'Octicons & Bootstrap 16px keyline grid with 1px trim margin & 45° optical bevels' },
+  { id: 'icon-radial-keyline', label: 'Radial Icon Composer', short: 'Rad Icon', category: 'icon', description: 'UI live-area square keylines intersected with 30° & 45° radial axes + center rings' },
+  { id: 'icon-ios-squircle', label: 'App Icon Keyline', short: 'App Icon', category: 'icon', description: 'Apple/Android app icon superellipse template with safe-zone rings & golden thirds' },
   { id: 'pixel-24', label: '24×24 System Pixel', short: 'Pixel 24', category: 'pixel', description: 'Standard 24px UI icon matrix for precise orthogonal pixel alignment' },
+  { id: 'pixel-20', label: '20×20 Fluent Pixel', short: 'Pixel 20', category: 'pixel', description: '20px UI toolbar & dense control lattice (Fluent / Polaris / Stacks grid)' },
   { id: 'pixel-32', label: '32×32 Micro Pixel', short: 'Pixel 32', category: 'pixel', description: 'High-definition 32×32 pixel grid for intricate curved & organic silhouettes' },
   { id: 'pixel-16', label: '16×16 Icon Pixel', short: 'Pixel 16', category: 'pixel', description: 'Compact 16×16 modular icon & favicon pixel lattice' },
   { id: 'octa-pixel', label: '16×16 Bevel Octa-Pixel', short: 'Bevel Px', category: 'pixel', description: '16×16 pixel cells diagonally split at ±45° to eliminate jagged staircases' },
@@ -104,28 +139,21 @@ export const CONSTRUCTION_GRIDS: GridCatalogItem[] = [
   { id: 'skew-45', label: '45° Micro Diamond', short: 'Skew 45°', category: 'pixel', description: 'High-density rotated ±45° rhombic micro-grid for slashes & X-marks' },
   { id: 'fib-golden', label: 'Fibonacci Golden Spiral', short: 'Fib φ', category: 'compass', description: 'Golden-ratio harmonic divisions intersected with nested quarter-circle arcs' },
   { id: 'squircle', label: 'Superellipse Squircle', short: 'Squircle', category: 'curved', description: 'App-icon rounded corner shells, pill channels & optical crosshairs' },
-  { id: 'polar-fine', label: '12×24 Precision Polar', short: 'Polar 24', category: 'curved', description: 'High-precision concentric rings + 15° radial spokes for circular badges & marks' },
   { id: 'square', label: 'Square Matrix', short: 'Square', category: 'angular', description: 'Orthogonal grid + 24 modular presets & 7 motifs' },
   { id: 'circle-spandrel', label: 'Circle in Square', short: 'Circle Sq', category: 'curved', description: 'Inscribed cell circles split into quarter-disks & concave spandrels' },
   { id: 'iso30', label: 'Isometric 30° Cube', short: 'Iso 30°', category: 'angular', description: '±30° isometric lines + vertical stems for 3D marks & cubes' },
   { id: 'octa4', label: '45° Octagrid', short: 'Octa 45°', category: 'angular', description: 'Squares divided by ±45° diagonals into 4 triangles' },
   { id: 'tri60', label: '60° Triangle Grid', short: 'Tri 60°', category: 'angular', description: 'True equilateral triangles for crests, ribbons & deltas' },
-  { id: 'tri-orbital', label: 'Tri-Orbital Ripples', short: 'Tri-Orbit', category: 'compass', description: 'Three overlapping concentric circle centers for blades & lenses' },
-  { id: 'tri-halo', label: 'Tri-Grid + Halos', short: 'Tri+Halo', category: 'compass', description: '60° triangular matrix intersected with concentric construction rings' },
-  { id: 'octa-rings', label: 'Octagrid + Bulls-eye', short: 'Octa+Ring', category: 'compass', description: '45° Octagrid fused with concentric radial circles' },
   { id: 'tri12', label: 'Hex-Tri Vertical', short: 'Tri-12', category: 'angular', description: '±60° diagonals + vertical lines forming 30-60-90 facets' },
   { id: 'octa8', label: '45° Precision 8-Tri', short: 'Octa 8', category: 'angular', description: 'Subdivided H/V midlines + ±45° diagonals (8 tris per cell)' },
   { id: 'rhomb45', label: '45° Diamond Lattice', short: 'Diamond', category: 'angular', description: 'Tilted 45° rhombic facets for emblems & shields' },
   { id: 'hex', label: 'Honeycomb Hexagons', short: 'Hexagon', category: 'angular', description: 'Regular hexagons split into triangular cube wedges' },
   { id: 'brick', label: 'Staggered Brick', short: 'Brick', category: 'angular', description: 'Offset running-bond grid for woven monograms & knots' },
   { id: 'arc-mesh', label: 'Vertex Circle Mesh', short: 'Arc Mesh', category: 'curved', description: 'Squares intersected by vertex-centered circles' },
-  { id: 'polar', label: 'Polar Radial Grid', short: 'Polar', category: 'curved', description: 'Concentric rings + angular spokes for apertures & badges' },
-  { id: 'vesica', label: 'Seed of Life', short: 'Vesica 7', category: 'curved', description: 'Overlapping equilateral circles creating petals, lenses & trefoils' },
   { id: 'duo-vesica', label: 'Twin Orbital Vesica', short: 'Duo-Orbit', category: 'curved', description: 'Paired ripple centers for infinities, crescents & S-curves' },
   { id: 'golden-construct', label: 'Golden φ Compass', short: 'Golden φ', category: 'compass', description: '1:1.618 harmonic guide lines & tangent construction circles' },
   { id: 'octagram', label: '8-Fold Star Construct', short: 'Octagram', category: 'compass', description: 'Nested 0°+45° squares + inner octagonal rings' },
   { id: 'shield', label: 'Heraldic Shield Grid', short: 'Shield', category: 'compass', description: 'Swept crest arcs, 45° chamfers & structural centerline ribs' },
-  { id: 'pinwheel-spiral', label: 'Spiral Vortex Blades', short: 'Vortex', category: 'curved', description: 'Swept off-center arcs radiating into aperture & swirl blades' },
   { id: 'grid-fillet', label: 'Octagon-Corner Lattice', short: 'Chamfer', category: 'angular', description: 'Octagonal bevel tiles + diamond vertex hubs for fintech marks' },
   { id: 'iso-cube', label: 'Isometric Cube Lattice', short: 'Cube Hub', category: 'angular', description: '3D rhombic cube faces paired for Penrose ribbons & blocks' },
   { id: 'nested-frames', label: 'Concentric Rays Frame', short: 'Frames', category: 'compass', description: 'Nested square frames intersected by 0°/45° radial axes' },
@@ -833,36 +861,42 @@ function buildBrick(density: DensityLevel): BuiltGrid {
   return wrapBuiltGrid('brick', 'Staggered Brick', density, wf, faces);
 }
 
-function buildPolarCore(id: GridId, label: string, rings: number, sectors: number, density: DensityLevel): BuiltGrid {
-  const maxR = CENTER;
-  const dr = maxR / rings;
+function buildPolarRadiiCore(
+  id: GridId,
+  label: string,
+  radii: number[],
+  sectors: number,
+  density: DensityLevel,
+  startAngle = -Math.PI / 2,
+): BuiltGrid {
+  const maxR = radii[radii.length - 1] || CENTER;
   const da = (Math.PI * 2) / sectors;
   const faces: GridFace[] = [];
   let wf = '';
 
-  for (let k = 1; k <= rings; k++) {
-    const r = k * dr;
+  for (const r of radii) {
+    if (r <= 0.2) continue;
     wf += `M${fmt(CENTER + r)} ${CENTER}A${fmt(r)} ${fmt(r)} 0 1 0 ${fmt(CENTER - r)} ${CENTER}A${fmt(r)} ${fmt(r)} 0 1 0 ${fmt(CENTER + r)} ${CENTER}`;
   }
   for (let s = 0; s < sectors; s++) {
-    const a = s * da - Math.PI / 2;
+    const a = s * da + startAngle;
     wf += `M${CENTER} ${CENTER}L${fmt(CENTER + maxR * Math.cos(a))} ${fmt(CENTER + maxR * Math.sin(a))}`;
   }
 
-  for (let k = 0; k < rings; k++) {
-    const r0 = k * dr;
-    const r1 = (k + 1) * dr;
+  for (let k = 0; k < radii.length; k++) {
+    const r0 = k === 0 ? 0 : radii[k - 1];
+    const r1 = radii[k];
     const rMid = (r0 + r1) / 2;
     for (let s = 0; s < sectors; s++) {
-      const a0 = s * da - Math.PI / 2;
-      const a1 = (s + 1) * da - Math.PI / 2;
+      const a0 = s * da + startAngle;
+      const a1 = (s + 1) * da + startAngle;
       const am = (a0 + a1) / 2;
       const x01 = CENTER + r1 * Math.cos(a0);
       const y01 = CENTER + r1 * Math.sin(a0);
       const x11 = CENTER + r1 * Math.cos(a1);
       const y11 = CENTER + r1 * Math.sin(a1);
       const segs: SegCmd[] = [];
-      if (r0 < 0.1) {
+      if (r0 < 0.2) {
         segs.push(
           edgeCmd(CENTER, CENTER, x01, y01, 'line'),
           edgeCmd(x01, y01, x11, y11, 'arc', r1, 1, CENTER, CENTER),
@@ -884,7 +918,13 @@ function buildPolarCore(id: GridId, label: string, rings: number, sectors: numbe
       if (f) faces.push(f);
     }
   }
-  return wrapBuiltGrid(id, label, density, wf, faces, sectors >= 12 ? 8 : 4);
+  return wrapBuiltGrid(id, label, density, wf, faces, sectors >= 12 ? sectors : Math.max(4, sectors));
+}
+
+function buildPolarCore(id: GridId, label: string, rings: number, sectors: number, density: DensityLevel): BuiltGrid {
+  const dr = CENTER / rings;
+  const radii = Array.from({ length: rings }, (_, k) => (k + 1) * dr);
+  return buildPolarRadiiCore(id, label, radii, sectors, density);
 }
 
 function buildPolar(density: DensityLevel): BuiltGrid {
@@ -1764,6 +1804,145 @@ function buildSquircle(density: DensityLevel): BuiltGrid {
   return arrangePlanarGrid('squircle', 'Superellipse Squircle', density, lines, circles, 4);
 }
 
+function buildRadialTarget(density: DensityLevel): BuiltGrid {
+  const safe = 36;
+  const lines: LineSegIn[] = [
+    { x1: CENTER, y1: 0, x2: CENTER, y2: SHEET },
+    { x1: 0, y1: CENTER, x2: SHEET, y2: CENTER },
+    { x1: 0, y1: 0, x2: SHEET, y2: SHEET },
+    { x1: SHEET, y1: 0, x2: 0, y2: SHEET },
+    { x1: safe, y1: 0, x2: safe, y2: SHEET },
+    { x1: SHEET - safe, y1: 0, x2: SHEET - safe, y2: SHEET },
+    { x1: 0, y1: safe, x2: SHEET, y2: safe },
+    { x1: 0, y1: SHEET - safe, x2: SHEET, y2: SHEET - safe },
+  ];
+  const rings = countFor(density, 4, 5, 6, 7);
+  const radii = Array.from({ length: rings }, (_, i) => Math.round(((i + 1) * 112) / rings));
+  const circles: CircleIn[] = radii.map((r) => ({ cx: CENTER, cy: CENTER, r }));
+  return arrangePlanarGrid('radial-target', 'Bullseye & Crosshair', density, lines, circles, 8);
+}
+
+function buildRadialHex(density: DensityLevel): BuiltGrid {
+  const lines: LineSegIn[] = [
+    { x1: CENTER, y1: 0, x2: CENTER, y2: SHEET },
+    { x1: 0, y1: CENTER, x2: SHEET, y2: CENTER },
+  ];
+  for (const deg of [30, 60, 120, 150]) {
+    const rad = (deg * Math.PI) / 180;
+    const dx = Math.cos(rad) * SHEET;
+    const dy = Math.sin(rad) * SHEET;
+    lines.push({ x1: CENTER - dx, y1: CENTER - dy, x2: CENTER + dx, y2: CENTER + dy });
+  }
+  const ringR = countFor(density, 3, 4, 5, 6);
+  const circles: CircleIn[] = Array.from({ length: ringR }, (_, i) => ({
+    cx: CENTER,
+    cy: CENTER,
+    r: Math.round(((i + 1) * 110) / ringR),
+  }));
+  // Inscribed hexagon chords at key outer radius
+  const hexR = density === 'low' ? 88 : 96;
+  for (let k = 0; k < 6; k++) {
+    const a1 = (k * Math.PI) / 3 - Math.PI / 2;
+    const a2 = ((k + 1) * Math.PI) / 3 - Math.PI / 2;
+    lines.push({
+      x1: CENTER + hexR * Math.cos(a1),
+      y1: CENTER + hexR * Math.sin(a1),
+      x2: CENTER + hexR * Math.cos(a2),
+      y2: CENTER + hexR * Math.sin(a2),
+    });
+  }
+  return arrangePlanarGrid('radial-hex', 'Hex-Radial Aperture', density, lines, circles, 6);
+}
+
+function buildRadialGolden(density: DensityLevel): BuiltGrid {
+  const phi = 1.6180339887;
+  const levels = countFor(density, 5, 7, 9, 11);
+  const radii: number[] = [];
+  for (let k = levels - 1; k >= 0; k--) {
+    const r = Math.round((CENTER - 4) / Math.pow(phi, k * 0.48));
+    if (r >= 8 && (!radii.length || r - radii[radii.length - 1] >= 5)) {
+      radii.push(r);
+    }
+  }
+  if (!radii.length || radii[radii.length - 1] < CENTER - 6) radii.push(CENTER - 4);
+  const sectors = countFor(density, 8, 12, 16, 24);
+  return buildPolarRadiiCore('radial-golden', 'Golden φ Radial', radii, sectors, density);
+}
+
+function buildKeylineGridCore(
+  id: GridId,
+  label: string,
+  unitPitch: number,
+  safeInsetPx: number,
+  density: DensityLevel,
+  mode: 'icon' | 'radial-icon',
+): BuiltGrid {
+  const inset = safeInsetPx * unitPitch; // e.g. 2px margin on 24px -> 20u
+  const innerSq = inset + unitPitch; // e.g. 30u -> 18px box
+  const rectNear = inset + unitPitch * 2; // e.g. 40u -> 16px aspect rect
+  const lines: LineSegIn[] = [
+    { x1: CENTER, y1: 0, x2: CENTER, y2: SHEET },
+    { x1: 0, y1: CENTER, x2: SHEET, y2: CENTER },
+    { x1: 0, y1: 0, x2: SHEET, y2: SHEET },
+    { x1: SHEET, y1: 0, x2: 0, y2: SHEET },
+    { x1: inset, y1: 0, x2: inset, y2: SHEET },
+    { x1: SHEET - inset, y1: 0, x2: SHEET - inset, y2: SHEET },
+    { x1: 0, y1: inset, x2: SHEET, y2: inset },
+    { x1: 0, y1: SHEET - inset, x2: SHEET, y2: SHEET - inset },
+  ];
+
+  if (mode === 'radial-icon') {
+    for (const deg of [30, 60, 120, 150]) {
+      const rad = (deg * Math.PI) / 180;
+      const dx = Math.cos(rad) * SHEET;
+      const dy = Math.sin(rad) * SHEET;
+      lines.push({ x1: CENTER - dx, y1: CENTER - dy, x2: CENTER + dx, y2: CENTER + dy });
+    }
+    const circles: CircleIn[] =
+      density === 'low'
+        ? [
+            { cx: CENTER, cy: CENTER, r: 44 },
+            { cx: CENTER, cy: CENTER, r: 88 },
+          ]
+        : [
+            { cx: CENTER, cy: CENTER, r: 28 },
+            { cx: CENTER, cy: CENTER, r: 58 },
+            { cx: CENTER, cy: CENTER, r: 86 },
+            { cx: CENTER, cy: CENTER, r: 104 },
+          ];
+    return arrangePlanarGrid(id, label, density, lines, circles, 12);
+  }
+
+  if (density !== 'low') {
+    lines.push(
+      { x1: innerSq, y1: 0, x2: innerSq, y2: SHEET },
+      { x1: SHEET - innerSq, y1: 0, x2: SHEET - innerSq, y2: SHEET },
+      { x1: 0, y1: innerSq, x2: SHEET, y2: innerSq },
+      { x1: 0, y1: SHEET - innerSq, x2: SHEET, y2: SHEET - innerSq },
+    );
+  }
+  if (density === 'high' || density === 'ultra') {
+    lines.push(
+      { x1: rectNear, y1: 0, x2: rectNear, y2: SHEET },
+      { x1: SHEET - rectNear, y1: 0, x2: SHEET - rectNear, y2: SHEET },
+      { x1: 0, y1: rectNear, x2: SHEET, y2: rectNear },
+      { x1: 0, y1: SHEET - rectNear, x2: SHEET, y2: SHEET - rectNear },
+    );
+  }
+  const rOuter = CENTER - inset;
+  const rInner = Math.round(rOuter * 0.5);
+  const circles: CircleIn[] =
+    density === 'low'
+      ? [{ cx: CENTER, cy: CENTER, r: rInner }, { cx: CENTER, cy: CENTER, r: rOuter }]
+      : [
+          { cx: CENTER, cy: CENTER, r: Math.round(rOuter * 0.35) },
+          { cx: CENTER, cy: CENTER, r: rInner },
+          { cx: CENTER, cy: CENTER, r: Math.round(rOuter * 0.78) },
+          { cx: CENTER, cy: CENTER, r: rOuter },
+        ];
+  return arrangePlanarGrid(id, label, density, lines, circles, 4);
+}
+
 /* ============================================================================
  * 4. DISPATCH, CACHE & STARTER SHAPES
  * ========================================================================== */
@@ -1777,9 +1956,30 @@ export function buildGridById(id: GridId, density: DensityLevel): BuiltGrid {
 
   let built: BuiltGrid;
   switch (id) {
-    case 'adaptive-mesh': built = buildOcta4Core('adaptive-mesh', 'Adaptive Contour Mesh', countFor(density, 10, 14, 18, 22), density); break;
+    case 'adaptive-mesh': built = buildOcta4Core('adaptive-mesh', 'Adaptive Logo Mesh', countFor(density, 10, 14, 18, 22), density); break;
+    case 'adaptive-icon': built = buildOcta4Core('adaptive-icon', 'Adaptive Icon Keyline', countFor(density, 12, 16, 20, 24), density); break;
     case 'adaptive': built = buildOctaRings(density); built = { ...built, id: 'adaptive', label: 'Adaptive Construct' }; break;
+    case 'radial-8': built = buildPolarCore('radial-8', 'Radial 8-Spoke Star', countFor(density, 4, 6, 8, 10), 8, density); break;
+    case 'radial-12': built = buildPolarCore('radial-12', 'Radial 12 Clock', countFor(density, 4, 6, 8, 10), 12, density); break;
+    case 'radial-16': built = buildPolarCore('radial-16', 'Radial 16 Compass', countFor(density, 4, 6, 8, 10), 16, density); break;
+    case 'radial-24': built = buildPolarCore('radial-24', 'Radial 24 Precision', countFor(density, 5, 8, 10, 12), 24, density); break;
+    case 'radial-target': built = buildRadialTarget(density); break;
+    case 'radial-hex': built = buildRadialHex(density); break;
+    case 'radial-golden': built = buildRadialGolden(density); break;
+    case 'polar': built = buildPolar(density); break;
+    case 'polar-fine': built = buildPolarCore('polar-fine', '12×24 Precision Polar', countFor(density, 6, 10, 12, 14), countFor(density, 16, 24, 24, 32), density); break;
+    case 'pinwheel-spiral': built = buildPinwheelSpiral(density); break;
+    case 'octa-rings': built = buildOctaRings(density); break;
+    case 'tri-halo': built = buildTriHalo(density); break;
+    case 'vesica': built = buildVesica(density); break;
+    case 'tri-orbital': built = buildTriOrbital(density); break;
+    case 'icon-24-keyline': built = buildKeylineGridCore('icon-24-keyline', '24px Icon Keyline', 10, 2, density, 'icon'); break;
+    case 'icon-20-keyline': built = buildKeylineGridCore('icon-20-keyline', '20px Compact Keyline', 12, 2, density, 'icon'); break;
+    case 'icon-16-keyline': built = buildKeylineGridCore('icon-16-keyline', '16px Micro Keyline', 15, 1, density, 'icon'); break;
+    case 'icon-radial-keyline': built = buildKeylineGridCore('icon-radial-keyline', 'Radial Icon Composer', 10, 2, density, 'radial-icon'); break;
+    case 'icon-ios-squircle': built = { ...buildSquircle(density), id: 'icon-ios-squircle', label: 'App Icon Keyline' }; break;
     case 'pixel-16': built = buildSquareCore('pixel-16', '16×16 Icon Pixel', countFor(density, 10, 16, 20, 24), density); break;
+    case 'pixel-20': built = buildSquareCore('pixel-20', '20×20 Fluent Pixel', countFor(density, 10, 20, 24, 30), density); break;
     case 'pixel-24': built = buildSquareCore('pixel-24', '24×24 System Pixel', countFor(density, 12, 24, 28, 32), density); break;
     case 'pixel-32': built = buildSquareCore('pixel-32', '32×32 Micro Pixel', countFor(density, 14, 32, 36, 40), density); break;
     case 'octa-pixel': built = buildOcta4Core('octa-pixel', '16×16 Bevel Octa-Pixel', countFor(density, 8, 12, 16, 20), density); break;
@@ -1788,7 +1988,6 @@ export function buildGridById(id: GridId, density: DensityLevel): BuiltGrid {
     case 'skew-45': built = buildRhomb45Core('skew-45', '45° Micro Diamond', countFor(density, 8, 12, 16, 20), density); break;
     case 'fib-golden': built = buildFibGolden(density); break;
     case 'squircle': built = buildSquircle(density); break;
-    case 'polar-fine': built = buildPolarCore('polar-fine', '12×24 Precision Polar', countFor(density, 6, 10, 12, 14), countFor(density, 16, 24, 24, 32), density); break;
     case 'square': built = buildSquare(density); break;
     case 'circle-spandrel': built = buildCircleSpandrel(density); break;
     case 'octa4': built = buildOcta4(density); break;
@@ -1799,17 +1998,11 @@ export function buildGridById(id: GridId, density: DensityLevel): BuiltGrid {
     case 'rhomb45': built = buildRhomb45(density); break;
     case 'hex': built = buildHex(density); break;
     case 'brick': built = buildBrick(density); break;
-    case 'polar': built = buildPolar(density); break;
-    case 'tri-orbital': built = buildTriOrbital(density); break;
-    case 'tri-halo': built = buildTriHalo(density); break;
-    case 'octa-rings': built = buildOctaRings(density); break;
-    case 'vesica': built = buildVesica(density); break;
     case 'duo-vesica': built = buildDuoVesica(density); break;
     case 'golden-construct': built = buildGoldenConstruct(density); break;
     case 'arc-mesh': built = buildArcMesh(density); break;
     case 'octagram': built = buildOctagram(density); break;
     case 'shield': built = buildShield(density); break;
-    case 'pinwheel-spiral': built = buildPinwheelSpiral(density); break;
     case 'grid-fillet': built = buildGridFillet(density); break;
     case 'iso-cube': built = buildIsoCube(density); break;
     case 'nested-frames': built = buildNestedFrames(density); break;

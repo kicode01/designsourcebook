@@ -2,7 +2,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
 import { DsSelect } from '../components/DsSelect';
+import { MarkPickerDialog } from '../components/Dialogs';
 import { FONT_OPTIONS, exportDesignSystem, fontStyleFor, resolveFontOption, wcagContrast } from '../engine/dsEngine';
+import { adaptSvgPaintForSurface, inspectSvgPaint } from '../engine/svgPaint';
 import { useProject } from '../state/project';
 
 type TileKind =
@@ -80,15 +82,13 @@ function download(blob: Blob, name: string) {
   setTimeout(() => URL.revokeObjectURL(url), 4000);
 }
 
-function recolorSvg(svgText: string, inkHex: string): string {
-  return svgText
-    .replace(/currentColor/gi, inkHex)
-    .replace(/fill="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `fill="${inkHex}"`)
-    .replace(/stroke="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `stroke="${inkHex}"`);
-}
-
-function fitSvg(svgText: string, inkHex: string): string {
-  const colored = recolorSvg(svgText, inkHex);
+function fitSvg(svgText: string, inkHex: string, scopePrefix?: string, forceMono = false): string {
+  const colored = forceMono
+    ? svgText
+        .replace(/currentColor/gi, inkHex)
+        .replace(/fill="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `fill="${inkHex}"`)
+        .replace(/stroke="#?(?:ffffff|fafafa|f4f4f5|000000|09090b|111111|111113)"/gi, `stroke="${inkHex}"`)
+    : adaptSvgPaintForSurface(svgText, inkHex, scopePrefix);
   let out = colored
     .replace(/\swidth="[^"]*"/i, ' width="100%"')
     .replace(/\sheight="[^"]*"/i, ' height="100%"');
@@ -137,7 +137,7 @@ function TileBody({
           className="bx-mark"
           style={{ width: 72, height: 72, overflow: 'hidden', color: brand.accent }}
           dangerouslySetInnerHTML={{
-            __html: fitSvg(markSvg, brand.accent),
+            __html: fitSvg(markSvg, brand.accent, 'bx-mark-'),
           }}
         />
       );
@@ -190,6 +190,7 @@ function TileBody({
     }
     case 'appicon': {
       const onAccent = wcagContrast('#09090b', brand.accent) > 4 ? '#09090b' : '#ffffff';
+      const isChromatic = inspectSvgPaint(markSvg).kind !== 'monochrome';
       return (
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 12 }}>
           <div
@@ -197,13 +198,14 @@ function TileBody({
               width: 58,
               height: 58,
               borderRadius: 14,
-              background: brand.accent,
+              background: isChromatic ? brand.background : brand.accent,
+              border: isChromatic ? `1px solid ${brand.ink}28` : undefined,
               display: 'grid',
               placeItems: 'center',
               padding: 12,
               overflow: 'hidden',
             }}
-            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, onAccent) }}
+            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, onAccent, 'bx-app-1-') }}
           />
           <div
             style={{
@@ -217,7 +219,7 @@ function TileBody({
               padding: 6,
               overflow: 'hidden',
             }}
-            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, brand.ink) }}
+            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, brand.ink, 'bx-app-2-') }}
           />
           <div
             style={{
@@ -230,7 +232,7 @@ function TileBody({
               padding: 3,
               overflow: 'hidden',
             }}
-            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, brand.background) }}
+            dangerouslySetInnerHTML={{ __html: fitSvg(markSvg, brand.background, 'bx-app-3-') }}
           />
         </div>
       );
@@ -341,7 +343,8 @@ function TileBody({
 }
 
 export function BrandX() {
-  const { theme, designSystem, compiledSystem, activeMark } = useProject();
+  const { theme, designSystem, compiledSystem, activeMark, setActiveMark } = useProject();
+  const [markOpen, setMarkOpen] = useState(false);
 
   const initialBrand = useMemo<Brand>(() => ({
     name: designSystem.name,
@@ -509,9 +512,20 @@ export function BrandX() {
       ctx.globalAlpha = 1;
     }
 
-    const markUrl = URL.createObjectURL(new Blob([recolorSvg(activeMark.svg, brand.accent)], { type: 'image/svg+xml' }));
+    const markUrl = URL.createObjectURL(
+      new Blob([adaptSvgPaintForSurface(activeMark.svg, brand.accent, 'bx-exp-1-')], { type: 'image/svg+xml' }),
+    );
     const markDarkUrl = URL.createObjectURL(
-      new Blob([recolorSvg(activeMark.svg, wcagContrast('#09090b', brand.accent) > 4 ? '#09090b' : '#ffffff')], { type: 'image/svg+xml' }),
+      new Blob(
+        [
+          adaptSvgPaintForSurface(
+            activeMark.svg,
+            wcagContrast('#09090b', brand.accent) > 4 ? '#09090b' : '#ffffff',
+            'bx-exp-2-',
+          ),
+        ],
+        { type: 'image/svg+xml' },
+      ),
     );
     let markImg: HTMLImageElement | null = null;
     let markOnAccentImg: HTMLImageElement | null = null;
@@ -660,7 +674,7 @@ export function BrandX() {
       ``,
       `## Logo Vector Master (SVG)`,
       '```svg',
-      recolorSvg(activeMark.svg, doc.brand.accent),
+      adaptSvgPaintForSurface(activeMark.svg, doc.brand.accent),
       '```',
     ].join('\n');
     download(new Blob([md], { type: 'text/markdown' }), `${doc.brand.name.toLowerCase().replace(/\s+/g, '-')}-BRAND.md`);
@@ -732,6 +746,10 @@ export function BrandX() {
 
           <div className="studio-toolbar">
             <div className="toolbar-pill is-plain">
+              <button type="button" className="toolbar-button" onClick={() => setMarkOpen(true)} title="Pick logo mark, UI icon, or SVG">
+                <Icon name="grid" size={14} />
+                <span>Mark</span>
+              </button>
               <button type="button" className="toolbar-button" onClick={syncFromSystemMaker}>
                 <Icon name="sliders" size={14} />
                 <span>Sync System</span>
@@ -945,6 +963,32 @@ export function BrandX() {
           </div>
         </aside>
       </div>
+      <MarkPickerDialog
+        open={markOpen}
+        onClose={() => setMarkOpen(false)}
+        onSelect={(m) => {
+          setActiveMark(m);
+          flash(`Mark set to ${m.name}`);
+        }}
+        onUploadFile={() => {
+          const inp = document.createElement('input');
+          inp.type = 'file';
+          inp.accept = 'image/svg+xml,.svg';
+          inp.onchange = async () => {
+            const f = inp.files?.[0];
+            if (!f) return;
+            const text = await f.text();
+            setActiveMark({
+              id: `upload-${Date.now()}`,
+              name: f.name.replace(/\.svg$/i, ''),
+              svg: text,
+              source: 'upload',
+            });
+            flash(`Loaded ${f.name}`);
+          };
+          inp.click();
+        }}
+      />
       {toast && <div className="toast" role="status">{toast}</div>}
     </div>
   );

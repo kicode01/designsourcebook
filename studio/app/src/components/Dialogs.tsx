@@ -231,7 +231,10 @@ export function MarkPickerDialog({
                   onClose();
                 }}
               >
-                <span style={{ color: '#fafafa', display: 'grid', placeItems: 'center' }} dangerouslySetInnerHTML={{ __html: g.svg }} />
+                <span
+                  style={{ color: 'var(--studio-ink)', display: 'grid', placeItems: 'center' }}
+                  dangerouslySetInnerHTML={{ __html: g.svg.replace(/#[0-9a-fA-F]{6}\b/gi, 'currentColor') }}
+                />
                 <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>{g.name}</span>
               </button>
             ))
@@ -249,14 +252,14 @@ export function MarkPickerDialog({
                   onSelect({
                     id: logo.id,
                     name: logo.brand,
-                    svg: logo.svg.replace(/currentColor/gi, '#FFFFFF'),
+                    svg: logo.svg,
                     source: 'logodb',
                   });
                   onClose();
                 }}
               >
                 <span
-                  style={{ width: 28, height: 28, display: 'grid', placeItems: 'center', overflow: 'hidden' }}
+                  style={{ width: 28, height: 28, display: 'grid', placeItems: 'center', overflow: 'hidden', color: 'var(--studio-ink)' }}
                   dangerouslySetInnerHTML={{
                     __html: logo.svg
                       .replace(/\swidth="[^"]*"/i, ' width="24"')

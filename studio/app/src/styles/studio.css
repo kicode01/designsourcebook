@@ -57,7 +57,16 @@
   flex: none;
   overflow: hidden;
   isolation: isolate;
+  border-radius: 14px;
   cursor: grab;
+  transition: transform 0.08s ease-out;
+  will-change: transform;
+}
+
+.studio-stage.is-transparent {
+  background-image: radial-gradient(color-mix(in srgb, var(--studio-ink) 12%, transparent) 1px, transparent 1px);
+  background-size: 16px 16px;
+  border: 1px solid color-mix(in srgb, var(--studio-ink) 8%, transparent);
 }
 
 .studio-stage:active { cursor: grabbing; }
@@ -570,19 +579,19 @@
   max-height: min(560px, calc(100dvh - 120px));
   display: flex;
   flex-direction: column;
-  background: rgba(16, 16, 19, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: color-mix(in srgb, var(--studio-panel-bg) 94%, transparent);
+  border: 1px solid var(--studio-panel-border-strong);
   border-radius: 12px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.56);
+  backdrop-filter: blur(22px) saturate(1.2);
   overflow: hidden;
   animation: pop-in 0.14s ease-out;
 }
 
 .logo-studio[data-theme='light'] .catalog-popover {
-  background: rgba(255, 255, 255, 0.96);
-  border-color: rgba(9, 9, 11, 0.12);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--studio-panel-border-strong);
+  box-shadow: 0 18px 44px -10px rgba(9, 9, 11, 0.16);
 }
 
 @keyframes pop-in {
@@ -832,11 +841,13 @@
   z-index: 80;
   padding: 9px 16px;
   border-radius: 999px;
-  background: #101012f2;
-  border: 1px solid #ffffff24;
-  color: #f5f5f5;
+  background: color-mix(in srgb, var(--studio-panel-bg) 95%, transparent);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--studio-panel-border-strong);
+  color: var(--studio-ink);
   font-size: 12px;
-  box-shadow: 0 12px 30px #0000004d;
+  font-weight: 500;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   animation: toast-in 0.2s ease-out;
 }
 

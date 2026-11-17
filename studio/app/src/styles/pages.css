@@ -345,21 +345,125 @@
   cursor: pointer;
 }
 
-.createx-swatch input {
+.createx-swatch-dot {
   width: 22px;
   height: 22px;
+  border-radius: 999px;
+  border: 1px solid var(--studio-panel-border-strong);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+
+.createx-swatch input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.createx-color-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.createx-hex-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 10px 0 6px;
+  border-radius: 999px;
+  border: 1px solid var(--studio-panel-border);
+  background: var(--studio-panel-control);
+  cursor: pointer;
+}
+
+.createx-hex-pill input[type='color'] {
+  width: 20px;
+  height: 20px;
   padding: 0;
-  border: 1px solid #ffffff40;
+  border: 1px solid rgba(127, 127, 127, 0.3);
   border-radius: 999px;
   background: transparent;
   cursor: pointer;
   overflow: hidden;
   -webkit-appearance: none;
-  appearance: none;
 }
 
-.createx-swatch input::-webkit-color-swatch-wrapper { padding: 0; }
-.createx-swatch input::-webkit-color-swatch { border: none; border-radius: 999px; }
+.createx-hex-pill input[type='color']::-webkit-color-swatch-wrapper { padding: 0; }
+.createx-hex-pill input[type='color']::-webkit-color-swatch { border: none; border-radius: 999px; }
+
+.createx-mono-hex {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--studio-ink);
+}
+
+.createx-grad-box {
+  margin-top: 8px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-grad-stops {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.createx-angle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--studio-muted);
+}
+
+.createx-angle-row input[type='range'] {
+  flex: 1;
+  accent-color: var(--studio-accent);
+  height: 4px;
+}
+
+.createx-grad-chip-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-right: 5px;
+  vertical-align: -1px;
+  border: 1px solid rgba(127, 127, 127, 0.3);
+}
+
+.createx-swatch-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.createx-swatch-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 1px solid var(--studio-panel-border-strong);
+  transition: transform 0.12s ease-out, box-shadow 0.12s ease-out;
+}
+
+.createx-swatch-btn.is-active {
+  box-shadow: 0 0 0 2px var(--studio-panel-bg), 0 0 0 3.5px var(--studio-ink);
+}
 
 .grid-picker {
   display: grid;
@@ -524,6 +628,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
+}
+.createx-source-actions.is-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .createx-source-toggles {

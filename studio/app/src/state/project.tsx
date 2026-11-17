@@ -242,11 +242,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       if (!res.ok) return;
       const data = await res.json();
       if (data.ok && data.logo?.svg) {
-        const normalized = String(data.logo.svg).replace(/currentColor/gi, '#FFFFFF');
         setActiveMarkState({
           id: data.logo.id || logoId,
           name: data.logo.brand || logoId,
-          svg: normalized,
+          svg: String(data.logo.svg),
           source: 'logodb',
         });
       }
