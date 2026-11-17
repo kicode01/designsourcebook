@@ -311,3 +311,31 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
     findings,
   };
 }
+
+/** Sanitizes an uploaded or pasted SVG string for safe inline rendering and geometry extraction. */
+export function sanitizeSvg(text: string): string {
+  const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+  const blocked = ['script', 'style', 'foreignObject', 'image', 'iframe', 'animate', 'set'];
+  blocked.forEach((tag) => doc.querySelectorAll(tag).forEach((el) => el.remove()));
+  doc.querySelectorAll('*').forEach((el) => {
+    [...el.attributes].forEach((attr) => {
+      if (/^on/i.test(attr.name) || attr.name === 'style') el.removeAttribute(attr.name);
+    });
+  });
+  const root = doc.documentElement;
+  if (!root || root.localName !== 'svg' || doc.querySelector('parsererror')) {
+    throw new Error('Invalid SVG content.');
+  }
+  if (!root.querySelector('path,rect,circle,ellipse,polygon,polyline,line,text,use')) {
+    throw new Error('The SVG has no visible shapes.');
+  }
+  root.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  if (!root.hasAttribute('width') || !root.hasAttribute('height')) {
+    const box = (root.getAttribute('viewBox') ?? '').trim().split(/[\s,]+/).map(Number);
+    const w = Number.isFinite(box[2]) ? box[2] : 512;
+    const h = Number.isFinite(box[3]) ? box[3] : 512;
+    root.setAttribute('width', String(w));
+    root.setAttribute('height', String(h));
+  }
+  return new XMLSerializer().serializeToString(root);
+}

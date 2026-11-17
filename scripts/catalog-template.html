@@ -402,6 +402,7 @@
   .ldb-code{margin:0;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:var(--bg);font-family:var(--code);font-size:10.5px;line-height:1.5;color:var(--dim);max-height:190px;overflow:auto;white-space:pre-wrap;word-break:break-all}
   .ldb-insp-foot{padding:10px 14px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent);display:grid;grid-template-columns:1fr 1fr;gap:7px;flex:none}
   .ldb-insp-foot .pill-btn{justify-content:center}
+  .ldb-insp-foot .pill-btn.is-wide{grid-column:1 / -1}
 
   .ldb-hero-stage{position:relative;height:282px;padding:28px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:background-color var(--t-theme)}
   .ldb-hero-stage.is-dark{background:#0c0c0f;color:#fafafa}
@@ -2868,6 +2869,9 @@ function getLogoContext(item){
     : 'Pure curves';
   const needsInvertForLight=isPack||isLightOnlySvg(item.svg,palCols);
   const needsInvertForDark=!isPack&&(!palCols.length||palCols.every(c=>/^#?(?:[0-3][0-9a-f]{2}|[0-3][0-9a-f]{5}|black|currentcolor)$/i.test(String(c).trim())))&&!needsInvertForLight;
+  const studioCreateUrl=isPack
+    ? './studio/#/create?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
+    : './studio/#/create?logo='+encodeURIComponent(item.id);
   const studioLogofxUrl=isPack
     ? './studio/#/logofx?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
     : './studio/#/logofx?logo='+encodeURIComponent(item.id);
@@ -2879,7 +2883,7 @@ function getLogoContext(item){
     viewBox:anatomy.viewBox,shapes:anatomy.shapes,anchors:anatomy.anchors.length,
     anglesDeg:anatomy.anglesDeg,colors:palCols,score:anatomy.score,note:item.note
   },null,2);
-  return {item,isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta};
+  return {item,isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioCreateUrl,studioLogofxUrl,studioBrandUrl,jsonMeta};
 }
 function buildLogoScalePairHtml(item,prefix,sz,needsInvertForDark,needsInvertForLight){
   const dSvg=ensureSvgBox(scopeSvgIds(item.svg,prefix+'d'),false,sz);
@@ -3158,7 +3162,7 @@ function renderLogoInspector(){
   }
   applyLogoScrollAccent(item);
   const ctx=getLogoContext(item);
-  const {isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
+  const {isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioCreateUrl,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
   const miniSvg=ensureSvgBox(scopeSvgIds(item.svg,'miniinsp'),true);
   const fullHref=logoDetailHashFor(item);
   const subMeta=(isPack?(item.packId+' \u00b7 '+(item.techniques&&item.techniques[1]||'24px grid')):(item.markType||'mark')+' \u00b7 '+(item.industry||'general'));
@@ -3228,6 +3232,7 @@ function renderLogoInspector(){
     '<div class="ldb-insp-foot">'+
       '<a href="'+studioLogofxUrl+'" class="pill-btn primary">Open in LogoFX'+ICONS.ext+'</a>'+
       '<a href="'+studioBrandUrl+'" class="pill-btn">Brand Maker'+ICONS.ext+'</a>'+
+      '<a href="'+studioCreateUrl+'" class="pill-btn is-wide">Open in Logo Maker'+ICONS.ext+'</a>'+
     '</div>';
 
   insp.querySelectorAll('[data-insp-tab]').forEach(btn=>{
@@ -3526,7 +3531,7 @@ function buildLogoXrayOverlayMarkup(anatomy,showGrid,showAnchors){
 
 function buildLogoDetailHtml(item,ctxOpt){
   const ctx=ctxOpt||getLogoContext(item);
-  const {anatomy,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
+  const {anatomy,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioCreateUrl,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
   const dotsHtml=palCols.slice(0,6).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('');
 
   const scales=[16,24,32,48].map((sz,i)=>
@@ -3558,6 +3563,7 @@ function buildLogoDetailHtml(item,ctxOpt){
       '</div>'+
       '<div class="detail-actions">'+
         '<a href="'+studioLogofxUrl+'" class="pill-btn primary">Open in LogoFX'+ICONS.ext+'</a>'+
+        '<a href="'+studioCreateUrl+'" class="pill-btn">Open in Logo Maker'+ICONS.ext+'</a>'+
         '<a href="'+studioBrandUrl+'" class="pill-btn">Use in Brand Maker'+ICONS.ext+'</a>'+
         '<button type="button" class="pill-btn" id="ldbDetailCopySvg">'+ICONS.copy+'Copy SVG</button>'+
         '<button type="button" class="pill-btn" id="ldbDetailCopyJson">'+ICONS.copy+'JSON</button>'+

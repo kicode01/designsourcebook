@@ -12,6 +12,7 @@ export type SymmetryMode = 'none' | 'x' | 'y' | 'quad' | 'rot2' | 'radial';
 export type DensityLevel = 'low' | 'med' | 'high';
 
 export type GridId =
+  | 'adaptive'
   | 'square'
   | 'circle-spandrel'
   | 'iso30'
@@ -81,6 +82,7 @@ export interface BuiltGrid {
 }
 
 export const CONSTRUCTION_GRIDS: GridCatalogItem[] = [
+  { id: 'adaptive', label: 'Adaptive Logo Grid', short: 'Adaptive', category: 'compass', description: 'Bespoke construction stems, angles, rays & circles synthesized from the active logo' },
   { id: 'square', label: 'Square Matrix', short: 'Square', category: 'angular', description: 'Orthogonal grid + 24 modular presets & 7 motifs' },
   { id: 'circle-spandrel', label: 'Circle in Square', short: 'Circle Sq', category: 'curved', description: 'Inscribed cell circles split into quarter-disks & concave spandrels' },
   { id: 'iso30', label: 'Isometric 30° Cube', short: 'Iso 30°', category: 'angular', description: '±30° isometric lines + vertical stems for 3D marks & cubes' },
@@ -291,7 +293,7 @@ function stitchBoundaryUnion(faces: GridFace[], selectedIds: Set<string>): strin
   return path;
 }
 
-function buildSymmetryResolver(faces: GridFace[], id: GridId) {
+function buildSymmetryResolver(faces: GridFace[], id: GridId, radialOrder?: number) {
   return (face: GridFace, mode: SymmetryMode): string[] => {
     if (mode === 'none') return [face.id];
     const targets: [number, number][] = [[face.cx, face.cy]];
@@ -301,7 +303,11 @@ function buildSymmetryResolver(faces: GridFace[], id: GridId) {
     else if (mode === 'quad') targets.push([SHEET - cx, cy], [cx, SHEET - cy], [SHEET - cx, SHEET - cy]);
     else if (mode === 'rot2') targets.push([SHEET - cx, SHEET - cy]);
     else if (mode === 'radial') {
-      const kSym = id === 'tri60' || id === 'tri12' || id === 'tri-halo' || id === 'tri-orbital' || id === 'vesica' || id === 'hex' ? 6 : 4;
+      const kSym = radialOrder && radialOrder >= 2
+        ? radialOrder
+        : id === 'tri60' || id === 'tri12' || id === 'tri-halo' || id === 'tri-orbital' || id === 'vesica' || id === 'hex'
+          ? 6
+          : 4;
       const dx = cx - CENTER;
       const dy = cy - CENTER;
       for (let i = 1; i < kSym; i++) {
@@ -329,7 +335,14 @@ function buildSymmetryResolver(faces: GridFace[], id: GridId) {
   };
 }
 
-function wrapBuiltGrid(id: GridId, label: string, density: DensityLevel, wireframe: string, faces: GridFace[]): BuiltGrid {
+export function wrapBuiltGrid(
+  id: GridId,
+  label: string,
+  density: DensityLevel,
+  wireframe: string,
+  faces: GridFace[],
+  radialOrder?: number,
+): BuiltGrid {
   const faceMap = new Map<string, GridFace>();
   for (const f of faces) faceMap.set(f.id, f);
   return {
@@ -340,7 +353,7 @@ function wrapBuiltGrid(id: GridId, label: string, density: DensityLevel, wirefra
     faces,
     faceMap,
     unionBoundary: (sel) => stitchBoundaryUnion(faces, sel),
-    symmetricFaces: buildSymmetryResolver(faces, id),
+    symmetricFaces: buildSymmetryResolver(faces, id, radialOrder),
   };
 }
 
@@ -810,8 +823,8 @@ function buildPolar(density: DensityLevel): BuiltGrid {
  * 2. GENERAL 2D LINE + CIRCLE DCEL PLANAR ARRANGEMENT ENGINE
  * ========================================================================== */
 
-interface LineSegIn { x1: number; y1: number; x2: number; y2: number }
-interface CircleIn { cx: number; cy: number; r: number }
+export interface LineSegIn { x1: number; y1: number; x2: number; y2: number }
+export interface CircleIn { cx: number; cy: number; r: number }
 
 function clipSegToSheet(x1: number, y1: number, x2: number, y2: number): LineSegIn | null {
   const dx = x2 - x1;
@@ -872,12 +885,13 @@ function pointInFaceLoop(px: number, py: number, pts: [number, number][]): boole
   return inside;
 }
 
-function arrangePlanarGrid(
+export function arrangePlanarGrid(
   id: GridId,
   label: string,
   density: DensityLevel,
   rawLines: LineSegIn[],
   rawCircles: CircleIn[],
+  radialOrder?: number,
 ): BuiltGrid {
   // Always add outer sheet boundary
   const boundary: LineSegIn[] = [
@@ -1294,7 +1308,7 @@ function arrangePlanarGrid(
     }
   }
 
-  return wrapBuiltGrid(id, label, density, wf, faces);
+  return wrapBuiltGrid(id, label, density, wf, faces, radialOrder);
 }
 
 /* ============================================================================
@@ -1599,6 +1613,7 @@ export function buildGridById(id: GridId, density: DensityLevel): BuiltGrid {
 
   let built: BuiltGrid;
   switch (id) {
+    case 'adaptive': built = buildOctaRings(density); built = { ...built, id: 'adaptive', label: 'Adaptive Logo Grid' }; break;
     case 'square': built = buildSquare(density); break;
     case 'circle-spandrel': built = buildCircleSpandrel(density); break;
     case 'octa4': built = buildOcta4(density); break;

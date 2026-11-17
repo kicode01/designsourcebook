@@ -422,13 +422,115 @@
   background: color-mix(in srgb, var(--createx-sheet) 88%, transparent);
   backdrop-filter: blur(4px);
   font-size: 9.5px;
-  font-family: var(--font-mono);
   font-weight: 500;
   color: var(--studio-ink);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.grid-thumb-score {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--createx-sheet) 90%, transparent);
+  border: 1px solid var(--studio-panel-border);
+  font-size: 9px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--studio-muted);
+  line-height: 1.25;
+}
+
+.grid-thumb.is-current .grid-thumb-score {
+  color: var(--studio-accent);
+  border-color: color-mix(in srgb, var(--studio-accent) 40%, transparent);
+}
+
+.createx-trace {
+  opacity: 0.22;
+  color: var(--studio-ink);
+  pointer-events: none;
+}
+
+.createx-source-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 9px 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--studio-panel-border);
+  background: color-mix(in srgb, var(--studio-ink) 2.5%, transparent);
+}
+
+.createx-source-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.createx-source-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--studio-panel-border);
+  background: var(--createx-sheet);
+  color: var(--studio-ink);
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  flex: none;
+  overflow: hidden;
+}
+
+.createx-source-thumb svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.createx-source-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.createx-source-meta strong {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--studio-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.createx-source-meta span {
+  font-size: 10.5px;
+  color: var(--studio-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+
+.createx-source-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.createx-source-toggles {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .grid-thumb.is-current {

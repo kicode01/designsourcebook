@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { TopBar } from '../components/TopBar';
+import { MarkPickerDialog } from '../components/Dialogs';
 import { Icon } from '../components/icons';
 import {
   CELL,
@@ -23,10 +24,19 @@ import {
   type GridId,
   type SymmetryMode,
 } from '../engine/gridArrangement';
-import { parseSvgAnatomy } from '../engine/svgAnatomy';
-import { useProject } from '../state/project';
+import {
+  analyzeMarkForGrid,
+  buildAdaptiveGridForSvg,
+  buildTraceSvgInner,
+  matchMarkSilhouetteToFaces,
+  rankGridsForAnalysis,
+  type MarkGridAnalysis,
+} from '../engine/adaptiveGrid';
+import { parseSvgAnatomy, sanitizeSvg } from '../engine/svgAnatomy';
+import { useProject, type ActiveMark } from '../state/project';
 
 type Tool = 'select' | 'brush' | 'eraser';
+type GridFilterCat = 'best' | 'all' | GridCategory;
 
 interface SnapState {
   gridId: GridId;
@@ -39,6 +49,19 @@ const DEFAULT_GRID: GridId = 'tri60';
 const DEFAULT_DENSITY: DensityLevel = 'med';
 const DEFAULT_INK = { dark: '#fafafa', light: '#09090b' } as const;
 const SHEET_FILL = 0.82;
+
+function hasMarkQueryInHash(): boolean {
+  const h = typeof window !== 'undefined' ? window.location.hash : '';
+  return /[?&](logo|pack)=/.test(h);
+}
+
+function adaptMonochromeForCanvas(svgHtml: string): string {
+  // Turn pure-white monochrome strokes/fills into currentColor so trace & preview adapt to both themes
+  const hexes = [...svgHtml.matchAll(/#[0-9a-fA-F]{3,8}\b/g)].map((m) => m[0].toLowerCase());
+  const onlyWhiteOrEmpty =
+    hexes.length === 0 || hexes.every((c) => c === '#fff' || c === '#ffffff' || c === '#fafafa');
+  return onlyWhiteOrEmpty ? svgHtml.replace(/#(?:ffffff|fff|fafafa)\b/gi, 'currentColor') : svgHtml;
+}
 
 const MOTIFS: { id: Motif; label: string }[] = [
   { id: 'square', label: 'Square' },
@@ -65,7 +88,8 @@ const DENSITIES: { id: DensityLevel; label: string }[] = [
   { id: 'high', label: 'Fine' },
 ];
 
-const CATEGORIES: { id: 'all' | GridCategory; label: string }[] = [
+const CATEGORIES: { id: GridFilterCat; label: string }[] = [
+  { id: 'best', label: 'Best Fit' },
   { id: 'all', label: `All (${CONSTRUCTION_GRIDS.length})` },
   { id: 'angular', label: 'Angular' },
   { id: 'curved', label: 'Curved' },
@@ -97,20 +121,26 @@ function buildCleanSvg(markPath: string, fillHex: string, title = 'Design Source
 }
 
 export function CreateX() {
-  const { theme, setActiveMark, designSystem } = useProject();
+  const { theme, activeMark, setActiveMark, designSystem } = useProject();
+  const openedWithQuery = useMemo(() => hasMarkQueryInHash(), []);
 
-  const [gridId, setGridId] = useState<GridId>(DEFAULT_GRID);
+  const [gridId, setGridId] = useState<GridId>(openedWithQuery ? 'adaptive' : DEFAULT_GRID);
   const [density, setDensity] = useState<DensityLevel>(DEFAULT_DENSITY);
   const [motif, setMotif] = useState<Motif>('square');
   const [selected, setSelected] = useState<Set<string>>(() =>
-    stampStarterOnGrid(buildGridById(DEFAULT_GRID, DEFAULT_DENSITY), 1),
+    openedWithQuery ? new Set() : stampStarterOnGrid(buildGridById(DEFAULT_GRID, DEFAULT_DENSITY), 1),
   );
-  const [gridCat, setGridCat] = useState<'all' | GridCategory>('all');
+  const [gridCat, setGridCat] = useState<GridFilterCat>(openedWithQuery ? 'best' : 'all');
   const [symmetry, setSymmetry] = useState<SymmetryMode>('radial');
   const [color, setColor] = useState<string>(DEFAULT_INK[theme]);
   const [tool, setTool] = useState<Tool>('brush');
   const [zoom, setZoom] = useState(100);
-  const [tip, setTip] = useState(true);
+  const [tip, setTip] = useState(!openedWithQuery);
+
+  const [showTrace, setShowTrace] = useState<boolean>(openedWithQuery);
+  const [autoFitMark, setAutoFitMark] = useState<boolean>(true);
+  const [adaptedMarkId, setAdaptedMarkId] = useState<string | null>(null);
+  const [markOpen, setMarkOpen] = useState<boolean>(false);
 
   const [past, setPast] = useState<SnapState[]>([]);
   const [future, setFuture] = useState<SnapState[]>([]);
@@ -118,7 +148,17 @@ export function CreateX() {
   const [hoverFace, setHoverFace] = useState<GridFace | null>(null);
   const [toast, setToast] = useState<string | null>(null);
 
-  const builtGrid = useMemo(() => buildGridById(gridId, density), [gridId, density]);
+  const markAnalysis = useMemo(() => analyzeMarkForGrid(activeMark.svg), [activeMark.svg]);
+  const rankedGrids = useMemo(() => rankGridsForAnalysis(markAnalysis), [markAnalysis]);
+  const fitScoreMap = useMemo(() => new Map(rankedGrids.map((r) => [r.id, r])), [rankedGrids]);
+
+  const builtGrid = useMemo(
+    () =>
+      gridId === 'adaptive'
+        ? buildAdaptiveGridForSvg(activeMark.svg, density)
+        : buildGridById(gridId, density),
+    [gridId, density, activeMark.svg],
+  );
 
   const hitCtx = useMemo(() => {
     const c = document.createElement('canvas');
@@ -139,10 +179,32 @@ export function CreateX() {
     return m;
   }, [builtGrid]);
 
-  const thumbPaths = useMemo(
+  const adaptivePreviewWire = useMemo(
+    () => buildAdaptiveGridForSvg(activeMark.svg, 'low').wireframe,
+    [activeMark.svg],
+  );
+
+  const thumbPaths = useMemo(() => {
+    const base = Object.fromEntries(
+      CONSTRUCTION_GRIDS.map((g) => [g.id, gridWireframeThumb(g.id)]),
+    ) as Record<GridId, string>;
+    base.adaptive = adaptivePreviewWire;
+    return base;
+  }, [adaptivePreviewWire]);
+
+  const traceSvgHtml = useMemo(() => {
+    if (!showTrace) return '';
+    return adaptMonochromeForCanvas(buildTraceSvgInner(activeMark.svg, markAnalysis.transform));
+  }, [showTrace, activeMark.svg, markAnalysis.transform]);
+
+  const sourceThumbHtml = useMemo(
     () =>
-      Object.fromEntries(CONSTRUCTION_GRIDS.map((g) => [g.id, gridWireframeThumb(g.id)])) as Record<GridId, string>,
-    [],
+      adaptMonochromeForCanvas(
+        activeMark.svg
+          .replace(/\swidth="[^"]*"/i, ' width="24"')
+          .replace(/\sheight="[^"]*"/i, ' height="24"'),
+      ),
+    [activeMark.svg],
   );
 
   const flash = useCallback((m: string) => {
@@ -161,6 +223,9 @@ export function CreateX() {
 
   const areaRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+  const fitTokenRef = useRef(0);
+  const lastExternalKeyRef = useRef('');
   const painting = useRef(false);
   const strokeDirty = useRef(false);
   const lastClientPt = useRef<{ x: number; y: number } | null>(null);
@@ -368,10 +433,103 @@ export function CreateX() {
     }
   };
 
+  const fitMarkToBuiltGrid = useCallback(
+    async (targetGrid: BuiltGrid, svgText: string, analysis: MarkGridAnalysis) => {
+      const tok = ++fitTokenRef.current;
+      const hits = await matchMarkSilhouetteToFaces(svgText, targetGrid, analysis.transform);
+      if (tok !== fitTokenRef.current) return;
+      setSelected(hits);
+    },
+    [],
+  );
+
+  const adaptMarkToGrid = useCallback(
+    (
+      mark: ActiveMark,
+      targetId: GridId = 'adaptive',
+      targetDensity: DensityLevel = density,
+      switchToBestCat = true,
+    ) => {
+      const nextAnalysis = analyzeMarkForGrid(mark.svg);
+      const nextBuilt =
+        targetId === 'adaptive'
+          ? buildAdaptiveGridForSvg(mark.svg, targetDensity)
+          : buildGridById(targetId, targetDensity);
+      setGridId(targetId);
+      setDensity(targetDensity);
+      if (targetId !== 'square') setMotif('square');
+      if (switchToBestCat) setGridCat('best');
+      setAdaptedMarkId(mark.id);
+      setShowTrace(true);
+      setAutoFitMark(true);
+      setTip(false);
+      setSymmetry(nextAnalysis.mirrorX > 0.78 ? 'x' : nextAnalysis.radialOrder >= 4 ? 'radial' : 'none');
+      void fitMarkToBuiltGrid(nextBuilt, mark.svg, nextAnalysis);
+    },
+    [density, fitMarkToBuiltGrid],
+  );
+
+  const handleMarkPicked = useCallback(
+    (mark: ActiveMark) => {
+      lastExternalKeyRef.current = `${mark.source}:${mark.id}`;
+      setActiveMark(mark);
+      setPast([]);
+      setFuture([]);
+      adaptMarkToGrid(mark, 'adaptive', density, true);
+      flash(`Adaptive grid fitted to ${mark.name}`);
+    },
+    [setActiveMark, adaptMarkToGrid, density, flash],
+  );
+
+  const handleUploadSvgFile = useCallback(
+    async (file: File) => {
+      try {
+        if (!file.name.toLowerCase().endsWith('.svg') && file.type !== 'image/svg+xml') {
+          throw new Error('Choose an SVG vector file for grid adaptation.');
+        }
+        const text = sanitizeSvg(await file.text());
+        const nextMark: ActiveMark = {
+          id: `upload-${Date.now()}`,
+          name: file.name.replace(/\.svg$/i, ''),
+          svg: text,
+          source: 'upload',
+        };
+        handleMarkPicked(nextMark);
+      } catch (err) {
+        flash((err as Error).message);
+      }
+    },
+    [handleMarkPicked, flash],
+  );
+
+  useEffect(() => {
+    const isExternal =
+      activeMark.source === 'logodb' ||
+      activeMark.source === 'iconpack' ||
+      activeMark.source === 'upload';
+    if (!isExternal) return;
+    const key = `${activeMark.source}:${activeMark.id}`;
+    if (lastExternalKeyRef.current === key) return;
+    lastExternalKeyRef.current = key;
+    setPast([]);
+    setFuture([]);
+    adaptMarkToGrid(activeMark, 'adaptive', density, true);
+    flash(`Adaptive grid fitted to ${activeMark.name}`);
+  }, [activeMark, adaptMarkToGrid, density, flash]);
+
   const switchConstructionGrid = (nextId: GridId, nextDensity: DensityLevel = density) => {
     if (nextId === gridId && nextDensity === density) return;
+    if (nextId === 'adaptive' && !adaptedMarkId) {
+      pushHistory();
+      adaptMarkToGrid(activeMark, 'adaptive', nextDensity, false);
+      flash(`Adaptive grid fitted to ${activeMark.name}`);
+      return;
+    }
     pushHistory();
-    const nextBuilt = buildGridById(nextId, nextDensity);
+    const nextBuilt =
+      nextId === 'adaptive'
+        ? buildAdaptiveGridForSvg(activeMark.svg, nextDensity)
+        : buildGridById(nextId, nextDensity);
     let nextSelected = new Set<string>();
 
     // Preserve active mark silhouette across grid switches & subdivisions cleanly
@@ -398,6 +556,9 @@ export function CreateX() {
     setDensity(nextDensity);
     if (nextId !== 'square') setMotif('square');
     setSelected(nextSelected);
+    if (adaptedMarkId && autoFitMark) {
+      void fitMarkToBuiltGrid(nextBuilt, activeMark.svg, markAnalysis);
+    }
     const meta = CONSTRUCTION_GRIDS.find((g) => g.id === nextId);
     if (meta && nextId !== gridId) flash(`${meta.label} grid active`);
   };
@@ -502,14 +663,21 @@ export function CreateX() {
     return ids.map((id) => builtGrid.faceMap.get(id)).filter((f): f is GridFace => Boolean(f));
   }, [hoverFace, builtGrid, symmetry]);
 
-  const filteredGrids = useMemo(
-    () => (gridCat === 'all' ? CONSTRUCTION_GRIDS : CONSTRUCTION_GRIDS.filter((g) => g.category === gridCat)),
-    [gridCat],
-  );
+  const filteredGrids = useMemo(() => {
+    if (gridCat === 'best') {
+      const orderMap = new Map(rankedGrids.map((r, i) => [r.id, i]));
+      return [...CONSTRUCTION_GRIDS].sort(
+        (a, b) => (orderMap.get(a.id) ?? 999) - (orderMap.get(b.id) ?? 999),
+      );
+    }
+    if (gridCat === 'all') return CONSTRUCTION_GRIDS;
+    return CONSTRUCTION_GRIDS.filter((g) => g.category === gridCat);
+  }, [gridCat, rankedGrids]);
   const activeGridMeta = useMemo(
     () => CONSTRUCTION_GRIDS.find((g) => g.id === gridId) ?? CONSTRUCTION_GRIDS[0],
     [gridId],
   );
+  const activeFit = fitScoreMap.get(gridId);
 
   return (
     <div className="logo-studio" data-theme={theme}>
@@ -519,14 +687,23 @@ export function CreateX() {
 
           {tip && (
             <div className="createx-tip" role="status">
-              <span>Click or drag facets on any construction grid. Adjacent shapes merge seamlessly into clean vector outlines.</span>
+              <span>Click or drag facets on any construction grid, or load any brand logo to synthesize an adaptive grid.</span>
               <button type="button" aria-label="Dismiss tip" onClick={() => setTip(false)}>
                 <Icon name="x" size={14} />
               </button>
             </div>
           )}
 
-          <div className="page-canvas-area is-flush" ref={areaRef}>
+          <div
+            className="page-canvas-area is-flush"
+            ref={areaRef}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(e) => {
+              e.preventDefault();
+              const file = e.dataTransfer.files?.[0];
+              if (file) void handleUploadSvgFile(file);
+            }}
+          >
             <svg
               ref={svgRef}
               className="createx-canvas"
@@ -542,6 +719,12 @@ export function CreateX() {
 
               {/* Geometric construction lines & circles */}
               <g transform={`translate(${geo.ox} ${geo.oy}) scale(${geo.scale})`}>
+                {showTrace && traceSvgHtml && (
+                  <g
+                    className="createx-trace"
+                    dangerouslySetInnerHTML={{ __html: traceSvgHtml }}
+                  />
+                )}
                 <path
                   className="createx-lines"
                   d={builtGrid.wireframe}
@@ -679,6 +862,25 @@ export function CreateX() {
               <button type="button" className="toolbar-button is-icon" aria-label="Rotate 90 degrees" title="Rotate 90°" onClick={rotate90}>
                 <Icon name="reset" size={15} />
               </button>
+              <button
+                type="button"
+                className={`toolbar-button is-icon ${showTrace ? 'is-active' : ''}`}
+                aria-label="Toggle source logo trace overlay"
+                aria-pressed={showTrace}
+                title="Toggle source logo trace overlay"
+                onClick={() => setShowTrace((v) => !v)}
+              >
+                <Icon name="eye" size={15} />
+              </button>
+              <button
+                type="button"
+                className="toolbar-button is-icon"
+                aria-label="Load logo or SVG into adaptive grid"
+                title="Choose brand logo, UI icon, or SVG"
+                onClick={() => setMarkOpen(true)}
+              >
+                <Icon name="upload" size={15} />
+              </button>
               <button type="button" className="toolbar-button is-icon" aria-label="Clear grid" title="Clear canvas" onClick={clear}>
                 <Icon name="trash" size={15} />
               </button>
@@ -750,6 +952,81 @@ export function CreateX() {
               </button>
             </div>
 
+            <div className="page-section">
+              <div className="page-section-title">Adaptive Logo Source</div>
+              <div className="createx-source-card">
+                <div className="createx-source-row">
+                  <div
+                    className="createx-source-thumb"
+                    dangerouslySetInnerHTML={{ __html: sourceThumbHtml }}
+                  />
+                  <div className="createx-source-meta">
+                    <strong>{activeMark.name}</strong>
+                    <span>{markAnalysis.summaryText}</span>
+                  </div>
+                </div>
+                <div className="createx-source-actions">
+                  <button
+                    type="button"
+                    className={`ds-action-btn ${gridId === 'adaptive' ? 'is-primary' : ''}`}
+                    style={{ justifyContent: 'center' }}
+                    onClick={() => {
+                      pushHistory();
+                      adaptMarkToGrid(activeMark, 'adaptive', density, true);
+                      flash(`Adaptive grid fitted to ${activeMark.name}`);
+                    }}
+                  >
+                    Adapt Grid
+                  </button>
+                  <button
+                    type="button"
+                    className="ds-action-btn"
+                    style={{ justifyContent: 'center' }}
+                    onClick={() => setMarkOpen(true)}
+                  >
+                    Load Logo / SVG
+                  </button>
+                </div>
+                <div className="createx-source-toggles">
+                  <button
+                    type="button"
+                    className={`page-chip ${showTrace ? 'is-active' : ''}`}
+                    aria-pressed={showTrace}
+                    onClick={() => setShowTrace((v) => !v)}
+                  >
+                    Trace {showTrace ? 'On' : 'Off'}
+                  </button>
+                  <button
+                    type="button"
+                    className={`page-chip ${autoFitMark ? 'is-active' : ''}`}
+                    aria-pressed={autoFitMark}
+                    title="Automatically fit the loaded logo silhouette when switching between Best Fit grids"
+                    onClick={() => {
+                      const next = !autoFitMark;
+                      setAutoFitMark(next);
+                      if (next) {
+                        void fitMarkToBuiltGrid(builtGrid, activeMark.svg, markAnalysis);
+                      }
+                    }}
+                  >
+                    Auto-Fit {autoFitMark ? 'On' : 'Off'}
+                  </button>
+                  {adaptedMarkId && (
+                    <button
+                      type="button"
+                      className="page-chip"
+                      onClick={() => {
+                        pushHistory();
+                        void fitMarkToBuiltGrid(builtGrid, activeMark.svg, markAnalysis);
+                      }}
+                    >
+                      Refit Facets
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+
             <div className="page-section" style={{ marginTop: 8 }}>
               <div className="page-section-title">Symmetry</div>
               <div className="page-segmented">
@@ -801,7 +1078,8 @@ export function CreateX() {
             <div className="page-section">
               <div className="page-section-title">Construction Grids ({CONSTRUCTION_GRIDS.length})</div>
               <p style={{ margin: '2px 0 8px', fontSize: 11, color: 'var(--studio-muted)', lineHeight: 1.4 }}>
-                <strong style={{ color: 'var(--studio-ink)' }}>{activeGridMeta.label}:</strong> {activeGridMeta.description}
+                <strong style={{ color: 'var(--studio-ink)' }}>{activeGridMeta.label}:</strong>{' '}
+                {gridCat === 'best' && activeFit ? activeFit.reason : activeGridMeta.description}
               </p>
               <div className="page-chip-row" style={{ marginBottom: 10 }}>
                 {CATEGORIES.map((c) => (
@@ -817,27 +1095,36 @@ export function CreateX() {
               </div>
 
               <div className="grid-picker">
-                {filteredGrids.map((g) => (
-                  <button
-                    key={g.id}
-                    type="button"
-                    className={`grid-thumb ${g.id === gridId ? 'is-current' : ''}`}
-                    title={`${g.label} — ${g.description}`}
-                    aria-label={g.label}
-                    aria-pressed={g.id === gridId}
-                    onClick={() => switchConstructionGrid(g.id, density)}
-                  >
-                    <svg viewBox={`0 0 ${SHEET} ${SHEET}`} aria-hidden="true">
-                      <path
-                        className="grid-thumb-wire"
-                        d={thumbPaths[g.id]}
-                        vectorEffect="non-scaling-stroke"
-                        shapeRendering="geometricPrecision"
-                      />
-                    </svg>
-                    <span className="grid-thumb-label">{g.short}</span>
-                  </button>
-                ))}
+                {filteredGrids.map((g) => {
+                  const fit = fitScoreMap.get(g.id);
+                  const showBadge = Boolean(adaptedMarkId || gridCat === 'best') && fit;
+                  return (
+                    <button
+                      key={g.id}
+                      type="button"
+                      className={`grid-thumb ${g.id === gridId ? 'is-current' : ''}`}
+                      title={`${g.label} — ${fit ? `${fit.score}% match (${fit.reason})` : g.description}`}
+                      aria-label={g.label}
+                      aria-pressed={g.id === gridId}
+                      onClick={() => switchConstructionGrid(g.id, density)}
+                    >
+                      <svg viewBox={`0 0 ${SHEET} ${SHEET}`} aria-hidden="true">
+                        <path
+                          className="grid-thumb-wire"
+                          d={thumbPaths[g.id]}
+                          vectorEffect="non-scaling-stroke"
+                          shapeRendering="geometricPrecision"
+                        />
+                      </svg>
+                      {showBadge && (
+                        <span className="grid-thumb-score">
+                          {g.id === 'adaptive' ? 'Custom' : `${fit.score}%`}
+                        </span>
+                      )}
+                      <span className="grid-thumb-label">{g.short}</span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -882,6 +1169,23 @@ export function CreateX() {
           </div>
         </aside>
       </div>
+      <input
+        ref={fileRef}
+        type="file"
+        accept="image/svg+xml,.svg"
+        hidden
+        onChange={(e) => {
+          const file = e.target.files?.[0];
+          if (file) void handleUploadSvgFile(file);
+          e.target.value = '';
+        }}
+      />
+      <MarkPickerDialog
+        open={markOpen}
+        onClose={() => setMarkOpen(false)}
+        onSelect={handleMarkPicked}
+        onUploadFile={() => fileRef.current?.click()}
+      />
       {toast && <div className="toast" role="status">{toast}</div>}
     </div>
   );
