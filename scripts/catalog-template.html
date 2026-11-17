@@ -326,8 +326,8 @@
   .ldb-xray{position:relative;height:218px;border-radius:10px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;padding:22px;overflow:hidden;border:1px solid var(--line)}
   .ldb-xray.is-dark{background:#0b0b0e;color:#fafafa}
   .ldb-xray-mark{width:100%;height:100%;display:grid;place-items:center}
-  .ldb-xray-mark svg{max-width:100%;max-height:100%;width:auto;height:auto}
-  .ldb-xray-overlay{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);pointer-events:none}
+  .ldb-xray-mark svg{width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;display:block}
+  .ldb-xray-overlay{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);pointer-events:none;overflow:visible}
   .ldb-scales{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
   .ldb-scale-cell{background:color-mix(in srgb,var(--ink) 3%,transparent);border:1px solid var(--line);border-radius:8px;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}
   .ldb-scale-stage{height:52px;width:100%;display:grid;place-items:center}
@@ -2177,8 +2177,8 @@ const logoState={
   selected:null,
   selectedPackItem:null,
   xrayDark:false,
-  showGrid:true,
-  showAnchors:true,
+  showGrid:false,
+  showAnchors:false,
   shellBuilt:false,
   fetchToken:0,
   debounceT:null
@@ -2217,9 +2217,62 @@ function ensureSvgBox(svgText,fillMode,fixedSize){
     out=out
       .replace(/\swidth=["'][^"']*["']/i,'')
       .replace(/\sheight=["'][^"']*["']/i,'')
-      .replace(/<svg\b/i,'<svg width="'+wAttr+'" height="'+hAttr+'"');
+      .replace(/\spreserveAspectRatio=["'][^"']*["']/i,'')
+      .replace(/<svg\b/i,'<svg preserveAspectRatio="xMidYMid meet" width="'+wAttr+'" height="'+hAttr+'"');
   }
   return out;
+}
+
+function parseSvgTransform(str){
+  let m=[1,0,0,1,0,0];
+  if(!str) return m;
+  const mul=(a,b)=>[
+    a[0]*b[0]+a[2]*b[1], a[1]*b[0]+a[3]*b[1],
+    a[0]*b[2]+a[2]*b[3], a[1]*b[2]+a[3]*b[3],
+    a[0]*b[4]+a[2]*b[5]+a[4], a[1]*b[4]+a[3]*b[5]+a[5]
+  ];
+  const re=/([a-zA-Z]+)\s*\(([^)]*)\)/g;
+  let match;
+  while((match=re.exec(str))!==null){
+    const fn=match[1].toLowerCase();
+    const n=(match[2].match(/[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?/g)||[]).map(Number).filter(Number.isFinite);
+    if(fn==='matrix' && n.length>=6) m=mul(m,n.slice(0,6));
+    else if(fn==='translate' && n.length>=1) m=mul(m,[1,0,0,1,n[0],n[1]||0]);
+    else if(fn==='scale' && n.length>=1) m=mul(m,[n[0],0,0,n.length>1?n[1]:n[0],0,0]);
+    else if(fn==='rotate' && n.length>=1){
+      const r=(n[0]*Math.PI)/180, c=Math.cos(r), s=Math.sin(r), cx=n[1]||0, cy=n[2]||0;
+      m=mul(m,[1,0,0,1,cx,cy]); m=mul(m,[c,s,-s,c,0,0]); m=mul(m,[1,0,0,1,-cx,-cy]);
+    }else if(fn==='skewx' && n.length>=1) m=mul(m,[1,0,Math.tan((n[0]*Math.PI)/180),1,0,0]);
+    else if(fn==='skewy' && n.length>=1) m=mul(m,[1,Math.tan((n[0]*Math.PI)/180),0,1,0,0]);
+  }
+  return m;
+}
+
+function arcEndpointToCenter(x1,y1,rx0,ry0,phiDeg,large,sweep,x2,y2){
+  let rx=Math.abs(rx0), ry=Math.abs(ry0);
+  if(rx<1e-6||ry<1e-6) return null;
+  const phi=(phiDeg*Math.PI)/180, cp=Math.cos(phi), sp=Math.sin(phi);
+  const dx2=(x1-x2)/2, dy2=(y1-y2)/2;
+  const x1p=cp*dx2+sp*dy2, y1p=-sp*dx2+cp*dy2;
+  const lam=(x1p*x1p)/(rx*rx)+(y1p*y1p)/(ry*ry);
+  if(lam>1){ const sc=Math.sqrt(lam); rx*=sc; ry*=sc; }
+  const rx2=rx*rx, ry2=ry*ry, x1p2=x1p*x1p, y1p2=y1p*y1p;
+  const num=Math.max(0,rx2*ry2-rx2*y1p2-ry2*x1p2);
+  const den=rx2*y1p2+ry2*x1p2;
+  if(den<1e-9) return null;
+  const factor=(large===sweep?-1:1)*Math.sqrt(num/den);
+  const cxp=factor*((rx*y1p)/ry), cyp=factor*(-(ry*x1p)/rx);
+  const cx=cp*cxp-sp*cyp+(x1+x2)/2, cy=sp*cxp+cp*cyp+(y1+y2)/2;
+  const ang=(ux,uy,vx,vy)=>{
+    const dot=ux*vx+uy*vy, len=Math.hypot(ux,uy)*Math.hypot(vx,vy);
+    const a=Math.acos(Math.max(-1,Math.min(1,dot/(len||1))));
+    return ux*vy-uy*vx<0?-a:a;
+  };
+  const t1=ang(1,0,(x1p-cxp)/rx,(y1p-cyp)/ry);
+  let dt=ang((x1p-cxp)/rx,(y1p-cyp)/ry,(-x1p-cxp)/rx,(-y1p-cyp)/ry);
+  if(!sweep && dt>0) dt-=Math.PI*2;
+  if(sweep && dt<0) dt+=Math.PI*2;
+  return {cx,cy,rx,ry,phi,t1,dt};
 }
 
 function parseLogoAnatomy(svgText){
@@ -2237,93 +2290,242 @@ function parseLogoAnatomy(svgText){
       vb=[0,0,w,h];
     }
   }
-  const anchors=[];
-  const handles=[];
-  const anglesSet=new Set();
-  const colorSet=new Set();
-  const findings=[];
+  const minDim=Math.min(vb[2],vb[3])||256;
+  const dedupTol=minDim*0.0025;
+  const anchors=[], handles=[], segments=[], circles=[], inkPts=[];
+  const anglesSet=new Set(), colorSet=new Set(), findings=[];
   if(!root || root.localName!=='svg' || doc.querySelector('parsererror')){
-    return {viewBox:vb,shapes:0,anchors,handles,anglesDeg:[],colors:[],score:0,findings:[{level:'fail',message:'Could not parse SVG document.'}]};
+    return {viewBox:vb,inkBox:vb,shapes:0,anchors,handles,segments,circles,anglesDeg:[],colors:[],score:0,findings:[{level:'fail',message:'Could not parse SVG document.'}]};
   }
-  const shapeEls=[...root.querySelectorAll('path,rect,circle,ellipse,polygon,polyline,line')];
-  const hasText=root.querySelectorAll('text,tspan').length>0;
-  const hasFilter=root.querySelectorAll('filter').length>0;
-  const hasRaster=root.querySelectorAll('image').length>0;
+  let shapeCount=0;
+  let hasText=false, hasFilter=false, hasRaster=false;
+  const idMap=new Map();
+  root.querySelectorAll('[id]').forEach(el=>idMap.set(el.getAttribute('id'),el));
   root.querySelectorAll('[fill],[stroke],stop').forEach(el=>{
+    if(el.closest('defs,clipPath,mask,pattern')) return;
     [el.getAttribute('fill'),el.getAttribute('stroke'),el.getAttribute('stop-color')].forEach(c=>{
       if(c && /^#|^rgb|^hsl/i.test(c.trim()) && !/^(none|transparent|currentcolor)$/i.test(c.trim())){
         colorSet.add(c.trim().toLowerCase());
       }
     });
   });
-  const recordAngle=(a,b)=>{
-    const dx=b.x-a.x, dy=b.y-a.y;
-    if(Math.hypot(dx,dy)<0.01) return;
-    let deg=Math.abs((Math.atan2(dy,dx)*180)/Math.PI);
-    if(deg>180) deg-=180;
+
+  const xf=(m,x,y)=>[m[0]*x+m[2]*y+m[4], m[1]*x+m[3]*y+m[5]];
+  const mulM=(a,b)=>[
+    a[0]*b[0]+a[2]*b[1], a[1]*b[0]+a[3]*b[1],
+    a[0]*b[2]+a[2]*b[3], a[1]*b[2]+a[3]*b[3],
+    a[0]*b[4]+a[2]*b[5]+a[4], a[1]*b[4]+a[3]*b[5]+a[5]
+  ];
+  const recSeg=(ax,ay,bx,by)=>{
+    const dx=bx-ax, dy=by-ay, len=Math.hypot(dx,dy);
+    if(len<dedupTol) return;
+    let deg=(Math.atan2(dy,dx)*180)/Math.PI;
+    if(deg<0) deg+=180;
+    if(deg>=180) deg-=180;
     anglesSet.add(Math.round(deg*10)/10);
+    segments.push({x1:ax,y1:ay,x2:bx,y2:by,len,angle:deg});
   };
-  const pushAnchor=(x,y)=>{ if(Number.isFinite(x)&&Number.isFinite(y)) anchors.push({x,y}); };
-  const pushHandle=(ax,ay,cx,cy)=>{ if(Number.isFinite(ax)&&Number.isFinite(ay)&&Number.isFinite(cx)&&Number.isFinite(cy)) handles.push({anchor:{x:ax,y:ay},control:{x:cx,y:cy}}); };
-  for(const el of shapeEls){
+  const pushAnc=(x,y,smooth)=>{
+    if(!Number.isFinite(x)||!Number.isFinite(y)) return;
+    inkPts.push([x,y]);
+    // Skip duplicate coincident closing vertex if directly onto previous point
+    const prev=anchors[anchors.length-1];
+    if(prev && Math.hypot(prev.x-x,prev.y-y)<dedupTol){ if(smooth) prev.smooth=true; return; }
+    anchors.push({x,y,smooth:Boolean(smooth)});
+  };
+  const pushHnd=(ax,ay,cx,cy)=>{
+    if(!Number.isFinite(ax)||!Number.isFinite(ay)||!Number.isFinite(cx)||!Number.isFinite(cy)) return;
+    if(Math.hypot(cx-ax,cy-ay)<dedupTol) return;
+    handles.push({anchor:{x:ax,y:ay},control:{x:cx,y:cy}});
+  };
+  const sampleCubic=(p0,p1,p2,p3)=>{
+    for(const t of [0.25,0.5,0.75]){
+      const mt=1-t, b0=mt*mt*mt, b1=3*mt*mt*t, b2=3*mt*t*t, b3=t*t*t;
+      inkPts.push([b0*p0[0]+b1*p1[0]+b2*p2[0]+b3*p3[0], b0*p0[1]+b1*p1[1]+b2*p2[1]+b3*p3[1]]);
+    }
+  };
+  const sampleQuad=(p0,p1,p2)=>{
+    for(const t of [0.25,0.5,0.75]){
+      const mt=1-t, b0=mt*mt, b1=2*mt*t, b2=t*t;
+      inkPts.push([b0*p0[0]+b1*p1[0]+b2*p2[0], b0*p0[1]+b1*p1[1]+b2*p2[1]]);
+    }
+  };
+
+  const inspectEl=(el,ctm)=>{
     const tag=el.localName;
+    if(['defs','clippath','mask','pattern','marker','style','script'].includes(tag)) return;
+    const nextCtm=mulM(ctm,parseSvgTransform(el.getAttribute('transform')));
+    if(tag==='text'||tag==='tspan'){ hasText=true; }
+    if(tag==='filter'){ hasFilter=true; }
+    if(tag==='image'){ hasRaster=true; }
+    if(tag==='use'){
+      const href=(el.getAttribute('href')||el.getAttribute('xlink:href')||'').replace(/^#/,'');
+      const target=href?idMap.get(href):null;
+      if(target){
+        const ux=parseFloat(el.getAttribute('x')||'0')||0, uy=parseFloat(el.getAttribute('y')||'0')||0;
+        const useCtm=mulM(nextCtm,[1,0,0,1,ux,uy]);
+        if(target.localName==='path'||target.localName==='rect'||target.localName==='circle'||target.localName==='ellipse'||target.localName==='polygon'||target.localName==='polyline'||target.localName==='line'||target.localName==='g'){
+          const cloneTag=target.localName;
+          if(cloneTag==='g'){ [...target.children].forEach(ch=>inspectEl(ch,useCtm)); }
+          else{ parseLeaf(target,useCtm); }
+        }
+      }
+      return;
+    }
+    if(['path','rect','circle','ellipse','polygon','polyline','line'].includes(tag)){
+      parseLeaf(el,nextCtm);
+      return;
+    }
+    for(const ch of [...el.children]) inspectEl(ch,nextCtm);
+  };
+
+  const parseLeaf=(el,m)=>{
+    shapeCount++;
+    const tag=el.localName;
+    const sc=Math.sqrt(Math.abs(m[0]*m[3]-m[1]*m[2]))||1;
     if(tag==='rect'){
-      const x=parseFloat(el.getAttribute('x')||'0'), y=parseFloat(el.getAttribute('y')||'0');
-      const w=parseFloat(el.getAttribute('width')||'0'), h=parseFloat(el.getAttribute('height')||'0');
-      pushAnchor(x,y); pushAnchor(x+w,y); pushAnchor(x+w,y+h); pushAnchor(x,y+h);
-      anglesSet.add(0); anglesSet.add(90);
-    }else if(tag==='circle'){
-      const cx=parseFloat(el.getAttribute('cx')||'0'), cy=parseFloat(el.getAttribute('cy')||'0'), r=parseFloat(el.getAttribute('r')||'0');
-      pushAnchor(cx,cy-r); pushAnchor(cx+r,cy); pushAnchor(cx,cy+r); pushAnchor(cx-r,cy);
+      const x=parseFloat(el.getAttribute('x')||'0')||0, y=parseFloat(el.getAttribute('y')||'0')||0;
+      const w=parseFloat(el.getAttribute('width')||'0')||0, h=parseFloat(el.getAttribute('height')||'0')||0;
+      const rx=Math.min(w/2,parseFloat(el.getAttribute('rx')||el.getAttribute('ry')||'0')||0);
+      const pts=rx>dedupTol
+        ? [[x+rx,y],[x+w-rx,y],[x+w,y+rx],[x+w,y+h-rx],[x+w-rx,y+h],[x+rx,y+h],[x,y+h-rx],[x,y+rx]]
+        : [[x,y],[x+w,y],[x+w,y+h],[x,y+h]];
+      const tPts=pts.map(p=>xf(m,p[0],p[1]));
+      tPts.forEach((p,i)=>{
+        pushAnc(p[0],p[1],rx>dedupTol);
+        const nxt=tPts[(i+1)%tPts.length];
+        recSeg(p[0],p[1],nxt[0],nxt[1]);
+      });
+    }else if(tag==='circle'||tag==='ellipse'){
+      const cx=parseFloat(el.getAttribute('cx')||'0')||0, cy=parseFloat(el.getAttribute('cy')||'0')||0;
+      const rx=parseFloat(el.getAttribute(tag==='circle'?'r':'rx')||'0')||0;
+      const ry=parseFloat(el.getAttribute(tag==='circle'?'r':'ry')||'0')||0;
+      const cT=xf(m,cx,cy);
+      if(rx>0 && Math.abs(rx-ry)<0.05*Math.max(rx,ry)) circles.push({cx:cT[0],cy:cT[1],r:rx*sc});
+      const k=0.55228475;
+      const card=[[cx,cy-ry,cx+k*rx,cy-ry,cx-k*rx,cy-ry],[cx+rx,cy,cx+rx,cy+k*ry,cx+rx,cy-k*ry],[cx,cy+ry,cx-k*rx,cy+ry,cx+k*rx,cy+ry],[cx-rx,cy,cx-rx,cy-k*ry,cx-rx,cy+k*ry]];
+      card.forEach(([px,py,h1x,h1y,h2x,h2y])=>{
+        const pt=xf(m,px,py), t1=xf(m,h1x,h1y), t2=xf(m,h2x,h2y);
+        pushAnc(pt[0],pt[1],true); pushHnd(pt[0],pt[1],t1[0],t1[1]); pushHnd(pt[0],pt[1],t2[0],t2[1]);
+      });
+      for(let a=0;a<Math.PI*2;a+=Math.PI/8) inkPts.push(xf(m,cx+rx*Math.cos(a),cy+ry*Math.sin(a)));
+    }else if(tag==='line'){
+      const p1=xf(m,parseFloat(el.getAttribute('x1')||'0')||0,parseFloat(el.getAttribute('y1')||'0')||0);
+      const p2=xf(m,parseFloat(el.getAttribute('x2')||'0')||0,parseFloat(el.getAttribute('y2')||'0')||0);
+      pushAnc(p1[0],p1[1],false); pushAnc(p2[0],p2[1],false); recSeg(p1[0],p1[1],p2[0],p2[1]);
+    }else if(tag==='polygon'||tag==='polyline'){
+      const nums=(el.getAttribute('points')||'').match(/[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?/g)||[];
+      const tPts=[];
+      for(let i=0;i+1<nums.length;i+=2){ const p=xf(m,Number(nums[i]),Number(nums[i+1])); tPts.push(p); pushAnc(p[0],p[1],false); }
+      for(let i=0;i<tPts.length-(tag==='polyline'?1:0);i++){ const nxt=tPts[(i+1)%tPts.length]; recSeg(tPts[i][0],tPts[i][1],nxt[0],nxt[1]); }
     }else if(tag==='path'){
       const d=el.getAttribute('d')||'';
       const toks=d.match(/[a-zA-Z]|[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?/g)||[];
-      let idx=0, cx=0, cy=0, sx=0, sy=0, cmd='M';
+      let idx=0, cx=0, cy=0, sx=0, sy=0, cmd='M', lastOp='', lastC2=null, lastQ=null;
+      let subPts=[], subHasCurve=false, subClosed=false;
+      const flushSub=()=>{
+        // Detect closed circular Bezier paths (common SVGO output for <circle>)
+        if(subClosed && subHasCurve && subPts.length>=4 && subPts.length<=8){
+          let mx0=Infinity,my0=Infinity,mx1=-Infinity,my1=-Infinity;
+          for(const pt of subPts){ mx0=Math.min(mx0,pt[0]); my0=Math.min(my0,pt[1]); mx1=Math.max(mx1,pt[0]); my1=Math.max(my1,pt[1]); }
+          const bw=mx1-mx0, bh=my1-my0, rEst=(bw+bh)/4;
+          if(rEst>minDim*0.03 && Math.abs(bw-bh)<rEst*0.08){
+            const ccx=(mx0+mx1)/2, ccy=(my0+my1)/2;
+            const onCircle=subPts.every(pt=>Math.abs(Math.hypot(pt[0]-ccx,pt[1]-ccy)-rEst)<rEst*0.06);
+            if(onCircle) circles.push({cx:ccx,cy:ccy,r:rEst});
+          }
+        }
+        subPts=[]; subHasCurve=false; subClosed=false;
+      };
       const num=()=>{ const v=Number(toks[idx++]); return Number.isFinite(v)?v:0; };
       while(idx<toks.length){
         if(/^[a-zA-Z]$/.test(toks[idx])){
           cmd=toks[idx++];
-          if(cmd==='Z'||cmd==='z'){ recordAngle({x:cx,y:cy},{x:sx,y:sy}); cx=sx; cy=sy; continue; }
+          if(cmd==='Z'||cmd==='z'){
+            const pA=xf(m,cx,cy), pB=xf(m,sx,sy);
+            recSeg(pA[0],pA[1],pB[0],pB[1]);
+            if(anchors.length && subPts.length>1 && Math.hypot(pA[0]-pB[0],pA[1]-pB[1])<dedupTol) anchors.pop();
+            subClosed=true; flushSub();
+            cx=sx; cy=sy; lastOp='Z'; lastC2=null; lastQ=null; continue;
+          }
         }
-        const rel=cmd>='a' && cmd<='z';
-        const op=cmd.toUpperCase();
-        if(op==='M'||op==='L'||op==='T'){
-          const x=num()+(rel?cx:0), y=num()+(rel?cy:0);
-          if(op==='L'||op==='T') recordAngle({x:cx,y:cy},{x,y});
-          else { sx=x; sy=y; }
-          cx=x; cy=y; pushAnchor(x,y);
-          if(cmd==='M') cmd='L'; if(cmd==='m') cmd='l';
+        const rel=cmd>='a'&&cmd<='z', op=cmd.toUpperCase();
+        if(op==='M'){
+          flushSub();
+          const x=num()+(rel?cx:0), y=num()+(rel?cy:0), tp=xf(m,x,y);
+          sx=x; sy=y; cx=x; cy=y; pushAnc(tp[0],tp[1],false); subPts.push(tp);
+          cmd=rel?'l':'L'; lastOp='M'; lastC2=null; lastQ=null;
+        }else if(op==='L'){
+          const x=num()+(rel?cx:0), y=num()+(rel?cy:0), p0=xf(m,cx,cy), p1=xf(m,x,y);
+          recSeg(p0[0],p0[1],p1[0],p1[1]); pushAnc(p1[0],p1[1],false); subPts.push(p1);
+          cx=x; cy=y; lastOp='L'; lastC2=null; lastQ=null;
         }else if(op==='H'){
-          const x=num()+(rel?cx:0); recordAngle({x:cx,y:cy},{x,y:cy}); cx=x; pushAnchor(cx,cy);
+          const x=num()+(rel?cx:0), p0=xf(m,cx,cy), p1=xf(m,x,cy);
+          recSeg(p0[0],p0[1],p1[0],p1[1]); pushAnc(p1[0],p1[1],false); subPts.push(p1);
+          cx=x; lastOp='H'; lastC2=null; lastQ=null;
         }else if(op==='V'){
-          const y=num()+(rel?cy:0); recordAngle({x:cx,y:cy},{x:cx,y}); cy=y; pushAnchor(cx,cy);
-        }else if(op==='Q'||op==='S'){
-          const qx=num()+(rel?cx:0), qy=num()+(rel?cy:0), x=num()+(rel?cx:0), y=num()+(rel?cy:0);
-          pushHandle(x,y,qx,qy); pushAnchor(x,y); cx=x; cy=y;
-        }else if(op==='C'){
-          const x1=num()+(rel?cx:0), y1=num()+(rel?cy:0), x2=num()+(rel?cx:0), y2=num()+(rel?cy:0), x=num()+(rel?cx:0), y=num()+(rel?cy:0);
-          pushHandle(cx,cy,x1,y1); pushHandle(x,y,x2,y2);
-          pushAnchor(x,y); cx=x; cy=y;
-        }else if(op==='A'){
-          num(); num(); num();
-          const f1=toks[idx]||'0';
-          if(/^[01]{2,}$/.test(f1)){
-            toks.splice(idx,1,f1[0],f1[1],...(f1.length>2?[f1.slice(2)]:[]));
-          }else if(/^[01][01]/.test(f1)&&f1.length>1){
-            toks.splice(idx,1,f1[0],f1.slice(1));
-          }
-          num();
-          const f2=toks[idx]||'0';
-          if(/^[01].+/.test(f2)&&f2.length>1){
-            toks.splice(idx,1,f2[0],f2.slice(1));
-          }
-          num();
+          const y=num()+(rel?cy:0), p0=xf(m,cx,cy), p1=xf(m,cx,y);
+          recSeg(p0[0],p0[1],p1[0],p1[1]); pushAnc(p1[0],p1[1],false); subPts.push(p1);
+          cy=y; lastOp='V'; lastC2=null; lastQ=null;
+        }else if(op==='C'||op==='S'){
+          const hasC2=lastC2&&(lastOp==='C'||lastOp==='S');
+          const x1=op==='C'?(num()+(rel?cx:0)):(hasC2?(2*cx-lastC2[0]):cx);
+          const y1=op==='C'?(num()+(rel?cy:0)):(hasC2?(2*cy-lastC2[1]):cy);
+          const x2=num()+(rel?cx:0), y2=num()+(rel?cy:0), x=num()+(rel?cx:0), y=num()+(rel?cy:0);
+          const p0=xf(m,cx,cy), p1=xf(m,x1,y1), p2=xf(m,x2,y2), p3=xf(m,x,y);
+          if(anchors.length) anchors[anchors.length-1].smooth=true;
+          pushHnd(p0[0],p0[1],p1[0],p1[1]); pushHnd(p3[0],p3[1],p2[0],p2[1]);
+          pushAnc(p3[0],p3[1],true); sampleCubic(p0,p1,p2,p3); subPts.push(p3); subHasCurve=true;
+          lastC2=[x2,y2]; lastQ=null; cx=x; cy=y; lastOp=op;
+        }else if(op==='Q'||op==='T'){
+          const hasQ=lastQ&&(lastOp==='Q'||lastOp==='T');
+          const qx=op==='Q'?(num()+(rel?cx:0)):(hasQ?(2*cx-lastQ[0]):cx);
+          const qy=op==='Q'?(num()+(rel?cy:0)):(hasQ?(2*cy-lastQ[1]):cy);
           const x=num()+(rel?cx:0), y=num()+(rel?cy:0);
-          pushAnchor(x,y); cx=x; cy=y;
+          const p0=xf(m,cx,cy), p1=xf(m,qx,qy), p2=xf(m,x,y);
+          if(anchors.length) anchors[anchors.length-1].smooth=true;
+          pushHnd(p0[0],p0[1],p1[0],p1[1]); pushHnd(p2[0],p2[1],p1[0],p1[1]);
+          pushAnc(p2[0],p2[1],true); sampleQuad(p0,p1,p2); subPts.push(p2); subHasCurve=true;
+          lastQ=[qx,qy]; lastC2=null; cx=x; cy=y; lastOp=op;
+        }else if(op==='A'){
+          const rx=num(), ry=num(), rot=num();
+          const f1=toks[idx]||'0';
+          if(/^[01]{2,}$/.test(f1)) toks.splice(idx,1,f1[0],f1[1],...(f1.length>2?[f1.slice(2)]:[]));
+          else if(/^[01][01]/.test(f1)&&f1.length>1) toks.splice(idx,1,f1[0],f1.slice(1));
+          const large=num();
+          const f2=toks[idx]||'0';
+          if(/^[01].+/.test(f2)&&f2.length>1) toks.splice(idx,1,f2[0],f2.slice(1));
+          const sweep=num(), x=num()+(rel?cx:0), y=num()+(rel?cy:0);
+          const arc=arcEndpointToCenter(cx,cy,rx,ry,rot,Boolean(large),Boolean(sweep),x,y);
+          if(arc){
+            if(Math.abs(arc.rx-arc.ry)<0.05*Math.max(arc.rx,arc.ry) && Math.abs(arc.dt)>Math.PI*0.35){
+              const ac=xf(m,arc.cx,arc.cy);
+              circles.push({cx:ac[0],cy:ac[1],r:arc.rx*sc});
+            }
+            for(const f of [0.25,0.5,0.75]){
+              const t=arc.t1+arc.dt*f, cp=Math.cos(arc.phi), sp=Math.sin(arc.phi);
+              const ex=arc.rx*Math.cos(t), ey=arc.ry*Math.sin(t);
+              inkPts.push(xf(m,arc.cx+cp*ex-sp*ey,arc.cy+sp*ex+cp*ey));
+            }
+          }
+          const tp=xf(m,x,y);
+          if(anchors.length) anchors[anchors.length-1].smooth=true;
+          pushAnc(tp[0],tp[1],true); subPts.push(tp); subHasCurve=true;
+          cx=x; cy=y; lastOp='A'; lastC2=null; lastQ=null;
         }else{ idx++; }
       }
+      flushSub();
     }
+  };
+
+  inspectEl(root,[1,0,0,1,0,0]);
+
+  let ix0=Infinity, iy0=Infinity, ix1=-Infinity, iy1=-Infinity;
+  for(const [x,y] of inkPts){
+    if(x<ix0) ix0=x; if(y<iy0) iy0=y; if(x>ix1) ix1=x; if(y>iy1) iy1=y;
   }
+  const inkBox=Number.isFinite(ix0)&&ix1>ix0&&iy1>iy0?[ix0,iy0,ix1,iy1]:vb;
+
   let score=100;
   if(hasText){ score-=25; findings.push({level:'fail',message:'Contains live <text>: final logos should convert type to outlined paths.'}); }
   if(hasRaster){ score-=30; findings.push({level:'fail',message:'Contains embedded raster <image> rather than pure vectors.'}); }
@@ -2336,9 +2538,9 @@ function parseLogoAnatomy(svgText){
     findings.push({level:'warn',message:'Near-miss angles ('+nearMiss.slice(0,3).map(d=>d+'\u00b0').join(', ')+'): snap toward 15\u00b0/30\u00b0/45\u00b0/90\u00b0 axes.'});
   }
   if(!findings.length){
-    findings.push({level:'pass',message:shapeEls.length+' vector element(s), '+anchors.length+' anchors, clean geometry.'});
+    findings.push({level:'pass',message:shapeCount+' vector element(s), '+anchors.length+' anchors, clean geometry.'});
   }
-  return {viewBox:vb,shapes:shapeEls.length,anchors,handles,anglesDeg:[...anglesSet].sort((a,b)=>a-b),colors:[...colorSet],score:Math.max(0,score),findings};
+  return {viewBox:vb,inkBox,shapes:shapeCount,anchors,handles,segments,circles,anglesDeg:[...anglesSet].sort((a,b)=>a-b),colors:[...colorSet],score:Math.max(0,score),findings};
 }
 
 function buildLogoDbShell(){
@@ -2668,28 +2870,125 @@ function renderLogoInspector(){
   }
   const anatomy=parseLogoAnatomy(item.svg);
   const vb=anatomy.viewBox;
+  const ib=anatomy.inkBox||vb;
   const vbStr=vb.join(' ');
-  const swGrid=vb[2]/256;
-  const swHandle=vb[2]/300;
-  const rAnc=vb[2]/92;
-  const swAnc=vb[2]/280;
+  const pxU=Math.max(vb[2]/260,vb[3]/170);
+  const swGrid=pxU*1.0;
+  const swHandle=pxU*1.15;
+  const rAnc=pxU*3.1;
+  const rCtrl=pxU*2.3;
+  const swAnc=pxU*1.2;
   const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'insp'),true);
   const isPack=Boolean(item.packId);
   const darkBox=isPack||logoState.xrayDark;
 
-  const gridOverlay=logoState.showGrid
-    ? '<g stroke="rgba(14,165,233,0.4)" stroke-width="'+swGrid+'" fill="none">'+
-        '<rect x="'+vb[0]+'" y="'+vb[1]+'" width="'+vb[2]+'" height="'+vb[3]+'"/>'+
-        '<line x1="'+(vb[0]+vb[2]/2)+'" y1="'+vb[1]+'" x2="'+(vb[0]+vb[2]/2)+'" y2="'+(vb[1]+vb[3])+'"/>'+
-        '<line x1="'+vb[0]+'" y1="'+(vb[1]+vb[3]/2)+'" x2="'+(vb[0]+vb[2])+'" y2="'+(vb[1]+vb[3]/2)+'"/>'+
-        '<line x1="'+vb[0]+'" y1="'+vb[1]+'" x2="'+(vb[0]+vb[2])+'" y2="'+(vb[1]+vb[3])+'" stroke-dasharray="'+(vb[2]/48)+' '+(vb[2]/48)+'"/>'+
-      '</g>'
-    : '';
+  const iw=Math.max(1e-3,ib[2]-ib[0]), ih=Math.max(1e-3,ib[3]-ib[1]);
+  const icx=(ib[0]+ib[2])/2, icy=(ib[1]+ib[3])/2;
+  const pad=Math.max(iw,ih)*0.12;
+  const gx0=ib[0]-pad, gy0=ib[1]-pad, gx1=ib[2]+pad, gy1=ib[3]+pad;
+
+  const buildLogoGridOverlay=()=>{
+    const dash=pxU*3.5+' '+pxU*3.5;
+    let out='<g fill="none">';
+    // 1. Tight ink frame caplines with architectural corner ticks
+    out+='<g stroke="rgba(14,165,233,0.42)" stroke-width="'+swGrid+'">';
+    out+='<line x1="'+gx0+'" y1="'+ib[1]+'" x2="'+gx1+'" y2="'+ib[1]+'"/>';
+    out+='<line x1="'+gx0+'" y1="'+ib[3]+'" x2="'+gx1+'" y2="'+ib[3]+'"/>';
+    out+='<line x1="'+ib[0]+'" y1="'+gy0+'" x2="'+ib[0]+'" y2="'+gy1+'"/>';
+    out+='<line x1="'+ib[2]+'" y1="'+gy0+'" x2="'+ib[2]+'" y2="'+gy1+'"/>';
+    out+='</g>';
+    // 2. Optical center axes through ink center
+    out+='<g stroke="rgba(14,165,233,0.58)" stroke-width="'+swGrid+'" stroke-dasharray="'+dash+'">';
+    out+='<line x1="'+icx+'" y1="'+gy0+'" x2="'+icx+'" y2="'+gy1+'"/>';
+    out+='<line x1="'+gx0+'" y1="'+icy+'" x2="'+gx1+'" y2="'+icy+'"/>';
+    out+='</g>';
+    // 3. Key interior X/Y stem alignments derived from actual anchors
+    const clusterCoords=(vals,minVal,maxVal,midVal,span)=>{
+      const tol=span*0.025, edgeTol=span*0.04;
+      const groups=[];
+      vals.forEach(v=>{
+        if(Math.abs(v-minVal)<edgeTol||Math.abs(v-maxVal)<edgeTol||Math.abs(v-midVal)<edgeTol) return;
+        const g=groups.find(x=>Math.abs(x.mean-v)<tol);
+        if(g){ g.sum+=v; g.n++; g.mean=g.sum/g.n; } else groups.push({sum:v,n:1,mean:v});
+      });
+      return groups.filter(g=>g.n>=2).sort((a,b)=>b.n-a.n).slice(0,3).map(g=>g.mean);
+    };
+    const alignX=clusterCoords(anatomy.anchors.map(a=>a.x),ib[0],ib[2],icx,iw);
+    const alignY=clusterCoords(anatomy.anchors.map(a=>a.y),ib[1],ib[3],icy,ih);
+    if(alignX.length||alignY.length){
+      out+='<g stroke="rgba(56,189,248,0.34)" stroke-width="'+(pxU*0.85)+'" stroke-dasharray="'+dash+'">';
+      alignX.forEach(x=>{ out+='<line x1="'+x+'" y1="'+gy0+'" x2="'+x+'" y2="'+gy1+'"/>'; });
+      alignY.forEach(y=>{ out+='<line x1="'+gx0+'" y1="'+y+'" x2="'+gx1+'" y2="'+y+'"/>'; });
+      out+='</g>';
+    }
+    // 4. Extended dominant structural diagonal angles (e.g. 30/45/60 deg bevels)
+    const clipRay=(x1,y1,x2,y2)=>{
+      const dx=x2-x1, dy=y2-y1, len=Math.hypot(dx,dy);
+      if(len<1e-6) return null;
+      const ux=dx/len, uy=dy/len, ext=Math.hypot(gx1-gx0,gy1-gy0);
+      let ax=x1-ux*ext, ay=y1-uy*ext, bx=x2+ux*ext, by=y2+uy*ext;
+      const ddx=bx-ax, ddy=by-ay;
+      let t0=0, t1=1;
+      for(const [p,q] of [[-ddx,ax-gx0],[ddx,gx1-ax],[-ddy,ay-gy0],[ddy,gy1-ay]]){
+        if(Math.abs(p)<1e-9){ if(q<0) return null; }
+        else{ const r=q/p; if(p<0){ if(r>t1)return null; if(r>t0)t0=r; }else{ if(r<t0)return null; if(r<t1)t1=r; } }
+      }
+      return [ax+t0*ddx,ay+t0*ddy,ax+t1*ddx,ay+t1*ddy];
+    };
+    const nonOrtho=anatomy.segments.filter(s=>s.len>=Math.max(iw,ih)*0.12 && s.angle>2 && Math.abs(s.angle-90)>2 && s.angle<178);
+    nonOrtho.sort((a,b)=>b.len-a.len);
+    const seenRays=[];
+    const uniqueRays=[];
+    for(const s of nonOrtho){
+      const rad=(s.angle*Math.PI)/180, nx=-Math.sin(rad), ny=Math.cos(rad);
+      const off=s.x1*nx+s.y1*ny;
+      if(seenRays.some(r=>Math.abs(r.a-s.angle)<2 && Math.abs(r.off-off)<Math.max(iw,ih)*0.03)) continue;
+      seenRays.push({a:s.angle,off});
+      const seg=clipRay(s.x1,s.y1,s.x2,s.y2);
+      if(seg) uniqueRays.push(seg);
+      if(uniqueRays.length>=6) break;
+    }
+    if(uniqueRays.length){
+      out+='<g stroke="rgba(245,158,11,0.56)" stroke-width="'+(pxU*0.95)+'" stroke-dasharray="'+dash+'">';
+      uniqueRays.forEach(([x1,y1,x2,y2])=>{ out+='<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'"/>'; });
+      out+='</g>';
+    }
+    // 5. Detected compass circles & arc centers
+    const uCircles=[];
+    const minSpan=Math.min(vb[2],vb[3])||256;
+    for(const c of [...anatomy.circles].sort((a,b)=>b.r-a.r)){
+      if(c.r<Math.min(iw,ih)*0.04) continue;
+      if(uCircles.some(u=>Math.hypot(u.cx-c.cx,u.cy-c.cy)<minSpan*0.02 && Math.abs(u.r-c.r)<minSpan*0.02)) continue;
+      uCircles.push(c);
+      if(uCircles.length>=6) break;
+    }
+    if(uCircles.length){
+      out+='<g stroke="rgba(16,185,129,0.68)" stroke-width="'+(pxU*1.05)+'">';
+      const arm=pxU*4;
+      uCircles.forEach(c=>{
+        out+='<circle cx="'+c.cx+'" cy="'+c.cy+'" r="'+c.r+'" stroke-dasharray="'+dash+'"/>';
+        out+='<line x1="'+(c.cx-arm)+'" y1="'+c.cy+'" x2="'+(c.cx+arm)+'" y2="'+c.cy+'"/>';
+        out+='<line x1="'+c.cx+'" y1="'+(c.cy-arm)+'" x2="'+c.cx+'" y2="'+(c.cy+arm)+'"/>';
+      });
+      out+='</g>';
+    }
+    out+='</g>';
+    return out;
+  };
+
+  const gridOverlay=logoState.showGrid?buildLogoGridOverlay():'';
 
   const anchorOverlay=logoState.showAnchors
     ? '<g>'+
-        anatomy.handles.slice(0,120).map(h=>'<line x1="'+h.anchor.x+'" y1="'+h.anchor.y+'" x2="'+h.control.x+'" y2="'+h.control.y+'" stroke="#f43f5e" stroke-width="'+swHandle+'"/>').join('')+
-        anatomy.anchors.slice(0,160).map(pt=>'<circle cx="'+pt.x+'" cy="'+pt.y+'" r="'+rAnc+'" fill="#0ea5e9" stroke="#ffffff" stroke-width="'+swAnc+'"/>').join('')+
+        anatomy.handles.slice(0,140).map(h=>
+          '<line x1="'+h.anchor.x+'" y1="'+h.anchor.y+'" x2="'+h.control.x+'" y2="'+h.control.y+'" stroke="#f43f5e" stroke-width="'+swHandle+'"/>'+
+          '<circle cx="'+h.control.x+'" cy="'+h.control.y+'" r="'+rCtrl+'" fill="#ffffff" stroke="#f43f5e" stroke-width="'+(pxU*1.1)+'"/>'
+        ).join('')+
+        anatomy.anchors.slice(0,180).map(pt=>
+          pt.smooth
+            ? '<circle cx="'+pt.x+'" cy="'+pt.y+'" r="'+rAnc+'" fill="#0ea5e9" stroke="#ffffff" stroke-width="'+swAnc+'"/>'
+            : '<rect x="'+(pt.x-rAnc)+'" y="'+(pt.y-rAnc)+'" width="'+(rAnc*2)+'" height="'+(rAnc*2)+'" fill="#38bdf8" stroke="#ffffff" stroke-width="'+swAnc+'"/>'
+        ).join('')+
       '</g>'
     : '';
 
@@ -2727,7 +3026,7 @@ function renderLogoInspector(){
       '<div>'+
         '<div class="ldb-xray'+(darkBox?' is-dark':'')+'">'+
           '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
-          '<svg class="ldb-xray-overlay" viewBox="'+esc(vbStr)+'">'+gridOverlay+anchorOverlay+'</svg>'+
+          '<svg class="ldb-xray-overlay" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+gridOverlay+anchorOverlay+'</svg>'+
         '</div>'+
         '<div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">'+
           '<button type="button" class="chip" id="ldbGridBtn" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+

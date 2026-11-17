@@ -94,7 +94,10 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
   };
 
   const pushAnchor = (x: number, y: number) => {
-    if (Number.isFinite(x) && Number.isFinite(y)) anchors.push({ x, y });
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+    const prev = anchors[anchors.length - 1];
+    if (prev && Math.hypot(prev.x - x, prev.y - y) < 0.05) return;
+    anchors.push({ x, y });
   };
   const pushHandle = (ax: number, ay: number, cx: number, cy: number) => {
     if (Number.isFinite(ax) && Number.isFinite(ay) && Number.isFinite(cx) && Number.isFinite(cy)) {
@@ -103,6 +106,7 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
   };
 
   for (const el of shapesEls) {
+    if (el.closest('defs,clipPath,mask,pattern')) continue;
     const tag = el.localName;
     if (tag === 'rect') {
       const x = parseFloat(el.getAttribute('x') || '0');
@@ -132,6 +136,9 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
       let sx = 0;
       let sy = 0;
       let cmd = 'M';
+      let lastOp = '';
+      let lastC2: [number, number] | null = null;
+      let lastQ: [number, number] | null = null;
       const num = () => {
         const v = Number(toks[idx++]);
         return Number.isFinite(v) ? v : 0;
@@ -141,17 +148,21 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
           cmd = toks[idx++];
           if (cmd === 'Z' || cmd === 'z') {
             recordSegAngle({ x: cx, y: cy }, { x: sx, y: sy });
+            if (anchors.length > 1 && Math.hypot(cx - sx, cy - sy) < 0.05) anchors.pop();
             cx = sx;
             cy = sy;
+            lastOp = 'Z';
+            lastC2 = null;
+            lastQ = null;
             continue;
           }
         }
         const rel = cmd >= 'a' && cmd <= 'z';
         const op = cmd.toUpperCase();
-        if (op === 'M' || op === 'L' || op === 'T') {
+        if (op === 'M' || op === 'L') {
           const x = num() + (rel ? cx : 0);
           const y = num() + (rel ? cy : 0);
-          if (op === 'L' || op === 'T') recordSegAngle({ x: cx, y: cy }, { x, y });
+          if (op === 'L') recordSegAngle({ x: cx, y: cy }, { x, y });
           else {
             sx = x;
             sy = y;
@@ -161,28 +172,45 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
           pushAnchor(x, y);
           if (cmd === 'M') cmd = 'L';
           if (cmd === 'm') cmd = 'l';
+          lastOp = op;
+          lastC2 = null;
+          lastQ = null;
         } else if (op === 'H') {
           const x = num() + (rel ? cx : 0);
           recordSegAngle({ x: cx, y: cy }, { x, y: cy });
           cx = x;
           pushAnchor(cx, cy);
+          lastOp = op;
+          lastC2 = null;
+          lastQ = null;
         } else if (op === 'V') {
           const y = num() + (rel ? cy : 0);
           recordSegAngle({ x: cx, y: cy }, { x: cx, y });
           cy = y;
           pushAnchor(cx, cy);
-        } else if (op === 'Q' || op === 'S') {
-          const qx = num() + (rel ? cx : 0);
-          const qy = num() + (rel ? cy : 0);
+          lastOp = op;
+          lastC2 = null;
+          lastQ = null;
+        } else if (op === 'Q' || op === 'T') {
+          const prevQ = lastQ as [number, number] | null;
+          const hasQ: boolean = Boolean(prevQ && (lastOp === 'Q' || lastOp === 'T'));
+          const qx: number = op === 'Q' ? num() + (rel ? cx : 0) : hasQ && prevQ ? 2 * cx - prevQ[0] : cx;
+          const qy: number = op === 'Q' ? num() + (rel ? cy : 0) : hasQ && prevQ ? 2 * cy - prevQ[1] : cy;
           const x = num() + (rel ? cx : 0);
           const y = num() + (rel ? cy : 0);
+          pushHandle(cx, cy, qx, qy);
           pushHandle(x, y, qx, qy);
           pushAnchor(x, y);
+          lastQ = [qx, qy];
+          lastC2 = null;
           cx = x;
           cy = y;
-        } else if (op === 'C') {
-          const x1 = num() + (rel ? cx : 0);
-          const y1 = num() + (rel ? cy : 0);
+          lastOp = op;
+        } else if (op === 'C' || op === 'S') {
+          const prevC2 = lastC2 as [number, number] | null;
+          const hasC2: boolean = Boolean(prevC2 && (lastOp === 'C' || lastOp === 'S'));
+          const x1: number = op === 'C' ? num() + (rel ? cx : 0) : hasC2 && prevC2 ? 2 * cx - prevC2[0] : cx;
+          const y1: number = op === 'C' ? num() + (rel ? cy : 0) : hasC2 && prevC2 ? 2 * cy - prevC2[1] : cy;
           const x2 = num() + (rel ? cx : 0);
           const y2 = num() + (rel ? cy : 0);
           const x = num() + (rel ? cx : 0);
@@ -190,8 +218,11 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
           pushHandle(cx, cy, x1, y1);
           pushHandle(x, y, x2, y2);
           pushAnchor(x, y);
+          lastC2 = [x2, y2];
+          lastQ = null;
           cx = x;
           cy = y;
+          lastOp = op;
         } else if (op === 'A') {
           num();
           num();
@@ -213,6 +244,9 @@ export function parseSvgAnatomy(svgText: string): SvgAnatomy {
           pushAnchor(x, y);
           cx = x;
           cy = y;
+          lastOp = op;
+          lastC2 = null;
+          lastQ = null;
         } else {
           idx++;
         }
