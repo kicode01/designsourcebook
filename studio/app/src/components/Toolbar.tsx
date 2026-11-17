@@ -93,14 +93,16 @@ export function Toolbar({ onPickMark, onUpload, onExport, onFlip }: Props) {
         </div>
       </div>
 
-      <button
-        type="button"
-        className="studio-corner-button is-right"
-        aria-label={ui.collapsed ? 'Show settings panel' : 'Hide settings panel'}
-        onClick={() => dispatch({ type: 'setUI', patch: { collapsed: !ui.collapsed } })}
-      >
-        <Icon name="chevronRight" size={16} style={{ transform: ui.collapsed ? 'rotate(180deg)' : 'none' }} />
-      </button>
+      {ui.collapsed && (
+        <button
+          type="button"
+          className="studio-corner-button is-right"
+          aria-label="Show settings panel"
+          onClick={() => dispatch({ type: 'setUI', patch: { collapsed: false } })}
+        >
+          <Icon name="chevronRight" size={16} style={{ transform: 'rotate(180deg)' }} />
+        </button>
+      )}
     </>
   );
 }

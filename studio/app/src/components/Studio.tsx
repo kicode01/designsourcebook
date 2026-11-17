@@ -300,10 +300,9 @@ export function Studio() {
 
   return (
     <div className="logo-studio" data-theme={theme}>
+      <TopBar current="logofx" onShare={sharePreset} />
       <div className={`studio-workspace ${ui.collapsed ? 'is-collapsed' : ''}`}>
         <section className="studio-preview-column" aria-label="Logo effect preview">
-          <TopBar current="logofx" onShare={sharePreset} />
-
           <div
             className="studio-viewport"
             onDragOver={(e) => {

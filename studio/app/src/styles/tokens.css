@@ -1,6 +1,8 @@
 /* Design Sourcebook Studio — unified design tokens aligned with designsourcebook.vercel.app. */
 
-:root {
+:root,
+html.light,
+.logo-studio[data-theme='light'] {
   --background: #ffffff;
   --foreground: #09090b;
   --card: #fafafa;

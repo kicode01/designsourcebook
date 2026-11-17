@@ -685,10 +685,9 @@ export function BrandX() {
 
   return (
     <div className="logo-studio" data-theme={theme}>
+      <TopBar current="brand" onShare={exportBrandMd} />
       <div className="page-workspace">
         <section className="studio-preview-column" aria-label="Brand Maker & BrandFx">
-          <TopBar current="brand" onShare={exportBrandMd} />
-
           <div className="page-canvas-area">
             <div
               className="brandx-board"

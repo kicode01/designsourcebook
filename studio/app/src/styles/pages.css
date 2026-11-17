@@ -47,7 +47,7 @@
   inset: 0;
   display: grid;
   place-items: center;
-  padding: 96px 24px 104px;
+  padding: 20px 24px 96px;
 }
 
 /* The sheet bleeds under the floating chrome, so the area drops its padding.
@@ -264,7 +264,7 @@
 /* ---------- CreateX ---------- */
 .createx-tip {
   position: absolute;
-  top: 78px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;

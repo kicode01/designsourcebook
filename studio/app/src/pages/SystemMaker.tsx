@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
 import { DsSelect } from '../components/DsSelect';
-import { adaptSvgPaintForSurface } from '../engine/svgPaint';
+import { adaptSvgPaintForSurface, inspectSvgPaint } from '../engine/svgPaint';
 import {
   FONT_OPTIONS,
   MONO_OPTIONS,
@@ -118,14 +118,13 @@ export function SystemMaker() {
 
   return (
     <div className="logo-studio" data-theme={theme}>
+      <TopBar
+        current="systems"
+        onShare={() => copyText(JSON.stringify(designSystem, null, 2), 'system JSON')}
+      />
       <div className="ds-shell-page">
         <div style={{ position: 'relative', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
-          <TopBar
-            current="systems"
-            onShare={() => copyText(JSON.stringify(designSystem, null, 2), 'system JSON')}
-          />
-
-          <div className="ds-main-scroll">
+          <div className="ds-main-scroll" style={{ flex: 1 }}>
             <div className="ds-subhead">
               <div className="ds-title-block">
                 <h1>{designSystem.name} · Design System Maker</h1>
@@ -198,21 +197,23 @@ export function SystemMaker() {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <span
-                      style={{
-                        width: 32,
-                        height: 32,
-                        borderRadius: radii.md,
-                        background: cvdHex(semantic.brand),
-                        color: cvdHex(semantic.brandFg),
-                        display: 'grid',
-                        placeItems: 'center',
-                        padding: 6,
-                      }}
-                      dangerouslySetInnerHTML={{
-                        __html: adaptSvgPaintForSurface(activeMark.svg, cvdHex(semantic.brandFg), 'sm-mk-'),
-                      }}
-                    />
+                    {(() => {
+                      const chromatic = inspectSvgPaint(activeMark.svg).kind !== 'monochrome';
+                      return (
+                        <span
+                          className="ds-sys-mark-badge"
+                          style={{
+                            borderRadius: radii.md,
+                            background: chromatic ? cvdHex(semantic.surfaceAlt) : cvdHex(semantic.brand),
+                            border: chromatic ? `1px solid ${semantic.border}` : undefined,
+                            color: chromatic ? cvdHex(semantic.ink) : cvdHex(semantic.brandFg),
+                          }}
+                          dangerouslySetInnerHTML={{
+                            __html: adaptSvgPaintForSurface(activeMark.svg, cvdHex(semantic.brandFg), 'sm-mk-'),
+                          }}
+                        />
+                      );
+                    })()}
                     <strong style={{ ...fontStyleFor(designSystem.displayFont, 'display'), fontSize: 15 }}>{designSystem.name}</strong>
                     <span
                       style={{

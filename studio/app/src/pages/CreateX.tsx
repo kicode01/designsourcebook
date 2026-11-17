@@ -979,10 +979,9 @@ export function CreateX() {
 
   return (
     <div className="logo-studio" data-theme={theme}>
+      <TopBar current="create" onShare={exportSvg} />
       <div className="page-workspace is-createx">
         <section className="studio-preview-column" aria-label="Logo Maker construction grid editor">
-          <TopBar current="create" onShare={exportSvg} />
-
           {tip && (
             <div className="createx-tip" role="status">
               <span>Click or drag facets on any construction grid, or load any brand logo to synthesize an adaptive grid.</span>
