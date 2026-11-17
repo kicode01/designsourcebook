@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
+import { DsSelect } from '../components/DsSelect';
 import { FONT_OPTIONS, exportDesignSystem, wcagContrast } from '../engine/dsEngine';
 import { useProject } from '../state/project';
 
@@ -895,9 +896,13 @@ export function BrandX() {
                 </label>
                 <div className="page-field">
                   <span>Font</span>
-                  <select value={doc.brand.displayFont} onChange={(e) => patchBrand({ displayFont: e.target.value })}>
-                    {FONT_OPTIONS.map((f) => <option key={f.label} value={f.stack}>{f.label}</option>)}
-                  </select>
+                  <DsSelect
+                    fullWidth
+                    ariaLabel="Brand display font"
+                    value={doc.brand.displayFont}
+                    onChange={(displayFont) => patchBrand({ displayFont })}
+                    options={FONT_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                  />
                 </div>
                 <div className="page-field">
                   <span>Accent</span>

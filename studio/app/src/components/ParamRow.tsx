@@ -1,5 +1,6 @@
 import { useCallback, useRef } from 'react';
 import type { Control } from '../data/effects';
+import { DsSelect } from './DsSelect';
 
 function formatValue(value: number, step: number | undefined, unit: string | undefined): string {
   const decimals = !step || step >= 1 ? 0 : step >= 0.1 ? 1 : 2;
@@ -144,15 +145,13 @@ export function SelectRow({
   return (
     <div className="param-row">
       <span className="param-label">{label}</span>
-      <span className="row-select">
-        <select value={value} aria-label={label} onChange={(e) => onChange(e.target.value)}>
-          {options.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-      </span>
+      <DsSelect
+        variant="row"
+        value={value}
+        ariaLabel={label}
+        options={options}
+        onChange={onChange}
+      />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Icon } from './icons';
+import { DsSelect } from './DsSelect';
 import { CURATED_MARKS, glyphToSvg, useProject, type ActiveMark } from '../state/project';
 
 export type ExportFormat = 'png' | 'webm';
@@ -46,13 +47,16 @@ export function ExportDialog({
 
         <div className="modal-row">
           <span>Size</span>
-          <select value={size} onChange={(e) => setSize(Number(e.target.value))} aria-label="Size">
-            {[512, 1024, 1500, 2048, 3000].map((s) => (
-              <option key={s} value={s}>
-                {s} × {s}
-              </option>
-            ))}
-          </select>
+          <DsSelect
+            ariaLabel="Size"
+            value={String(size)}
+            onChange={(v) => setSize(Number(v))}
+            options={[512, 1024, 1500, 2048, 3000].map((s) => ({
+              value: String(s),
+              label: `${s} × ${s}`,
+              meta: 'px',
+            }))}
+          />
         </div>
 
         <div className="modal-row">
@@ -195,12 +199,18 @@ export function MarkPickerDialog({
             />
           </label>
           {sourceTab === 'packs' && (
-            <select className="ldb-select" value={packId} onChange={(e) => setPackId(e.target.value)}>
-              <option value="all">All Packs ({Object.keys(iconPacks).length})</option>
-              {Object.keys(iconPacks).sort().map((id) => (
-                <option key={id} value={id}>{id}</option>
-              ))}
-            </select>
+            <DsSelect
+              variant="pill"
+              ariaLabel="Filter icon pack"
+              value={packId}
+              onChange={setPackId}
+              options={[
+                { value: 'all', label: 'All Packs', meta: String(Object.keys(iconPacks).length) },
+                ...Object.entries(iconPacks)
+                  .sort((a, b) => a[0].localeCompare(b[0]))
+                  .map(([id, pk]) => ({ value: id, label: id, meta: `${pk.grid}px` })),
+              ]}
+            />
           )}
         </div>
 

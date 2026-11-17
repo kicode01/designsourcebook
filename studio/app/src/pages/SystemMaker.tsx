@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
+import { DsSelect } from '../components/DsSelect';
 import {
   FONT_OPTIONS,
   MONO_OPTIONS,
@@ -150,16 +151,13 @@ export function SystemMaker() {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <select
-                  className="ldb-select"
+                <DsSelect
+                  variant="pill"
+                  ariaLabel="Color blindness vision simulator"
                   value={cvd}
-                  aria-label="Color blindness vision simulator"
-                  onChange={(e) => setCvd(e.target.value as CvdMode)}
-                >
-                  {CVD_MODES.map((m) => (
-                    <option key={m.id} value={m.id}>{m.label}</option>
-                  ))}
-                </select>
+                  onChange={(v) => setCvd(v as CvdMode)}
+                  options={CVD_MODES.map((m) => ({ value: m.id, label: m.label }))}
+                />
                 <a className="ds-action-btn is-primary" href="#/brand" onClick={() => flash('Synced to Brand Maker')}>
                   <span>Open in Brand Maker</span>
                   <Icon name="arrowUpRight" size={13} />
@@ -175,6 +173,7 @@ export function SystemMaker() {
                   color: cvdHex(semantic.ink),
                   fontFamily: designSystem.bodyFont,
                   borderColor: semantic.border,
+                  ['--sb-accent' as string]: cvdHex(semantic.accent),
                 }}
               >
                 <div
@@ -589,25 +588,25 @@ export function SystemMaker() {
               />
               <div className="page-field">
                 <span>Basis System</span>
-                <div className="row-select">
-                  <select
-                    aria-label="Seed from verified design system"
-                    value={designSystem.seedSlug || ''}
-                    onChange={async (e) => {
-                      if (!e.target.value) return;
-                      await seedFromSystemSlug(e.target.value);
-                      flash(`Seeded from ${e.target.value}`);
-                    }}
-                  >
-                    <option value="">Choose system ({filteredSeeds.length})…</option>
-                    {filteredSeeds.map((s) => (
-                      <option key={s.slug} value={s.slug}>
-                        {s.name} ({s.theme})
-                      </option>
-                    ))}
-                  </select>
-                  <Icon name="chevronDown" size={12} />
-                </div>
+                <DsSelect
+                  fullWidth
+                  searchable
+                  ariaLabel="Seed from verified design system"
+                  value={designSystem.seedSlug || ''}
+                  onChange={async (slug) => {
+                    if (!slug) return;
+                    await seedFromSystemSlug(slug);
+                    flash(`Seeded from ${slug}`);
+                  }}
+                  options={[
+                    { value: '', label: 'Choose system…', meta: String(filteredSeeds.length) },
+                    ...filteredSeeds.map((s) => ({
+                      value: s.slug,
+                      label: s.name,
+                      meta: s.theme,
+                    })),
+                  ]}
+                />
               </div>
             </div>
 
@@ -695,39 +694,47 @@ export function SystemMaker() {
               <div className="studio-section-title"><span>Typography Scale</span></div>
               <div className="param-row">
                 <span className="param-label">Display</span>
-                <div className="row-select">
-                  <select value={designSystem.displayFont} onChange={(e) => setDesignSystem({ displayFont: e.target.value })}>
-                    {FONT_OPTIONS.map((f) => <option key={f.label} value={f.stack}>{f.label}</option>)}
-                  </select>
-                  <Icon name="chevronDown" size={12} />
-                </div>
+                <DsSelect
+                  variant="row"
+                  ariaLabel="Display font"
+                  value={designSystem.displayFont}
+                  onChange={(displayFont) => setDesignSystem({ displayFont })}
+                  options={FONT_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                />
               </div>
               <div className="param-row">
                 <span className="param-label">Body</span>
-                <div className="row-select">
-                  <select value={designSystem.bodyFont} onChange={(e) => setDesignSystem({ bodyFont: e.target.value })}>
-                    {FONT_OPTIONS.map((f) => <option key={f.label} value={f.stack}>{f.label}</option>)}
-                  </select>
-                  <Icon name="chevronDown" size={12} />
-                </div>
+                <DsSelect
+                  variant="row"
+                  ariaLabel="Body font"
+                  value={designSystem.bodyFont}
+                  onChange={(bodyFont) => setDesignSystem({ bodyFont })}
+                  options={FONT_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                />
               </div>
               <div className="param-row">
                 <span className="param-label">Mono</span>
-                <div className="row-select">
-                  <select value={designSystem.monoFont} onChange={(e) => setDesignSystem({ monoFont: e.target.value })}>
-                    {MONO_OPTIONS.map((f) => <option key={f.label} value={f.stack}>{f.label}</option>)}
-                  </select>
-                  <Icon name="chevronDown" size={12} />
-                </div>
+                <DsSelect
+                  variant="row"
+                  ariaLabel="Mono font"
+                  value={designSystem.monoFont}
+                  onChange={(monoFont) => setDesignSystem({ monoFont })}
+                  options={MONO_OPTIONS.map((f) => ({ value: f.stack, label: f.label }))}
+                />
               </div>
               <div className="param-row">
                 <span className="param-label">Ratio</span>
-                <div className="row-select">
-                  <select value={designSystem.typeRatio} onChange={(e) => setDesignSystem({ typeRatio: Number(e.target.value) })}>
-                    {TYPE_RATIOS.map((tr) => <option key={tr.value} value={tr.value}>{tr.label}</option>)}
-                  </select>
-                  <Icon name="chevronDown" size={12} />
-                </div>
+                <DsSelect
+                  variant="row"
+                  ariaLabel="Type ratio"
+                  value={String(designSystem.typeRatio)}
+                  onChange={(v) => setDesignSystem({ typeRatio: Number(v) })}
+                  options={TYPE_RATIOS.map((tr) => ({
+                    value: String(tr.value),
+                    label: tr.label,
+                    meta: String(tr.value),
+                  }))}
+                />
               </div>
               <div className="param-row">
                 <span className="param-label">Base px</span>

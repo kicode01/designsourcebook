@@ -27,15 +27,23 @@
     --ease-out:cubic-bezier(.22,1,.36,1);
     --t-theme:.32s var(--ease-out);
     --t-ui:.18s var(--ease-out);
+    --sb-accent:var(--ink);
   }
-  html{color-scheme:dark;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--ink) 22%,transparent) var(--bg)}
+  html{color-scheme:dark}
   html.sys-light{color-scheme:light}
-  *::-webkit-scrollbar{width:8px;height:8px}
-  *::-webkit-scrollbar-track{background:var(--bg)}
-  *::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--ink) 20%,transparent);border-radius:999px;border:2px solid var(--bg)}
-  *::-webkit-scrollbar-thumb:hover{background:color-mix(in srgb,var(--ink) 36%,transparent)}
+  *::-webkit-scrollbar{width:9px;height:9px}
+  *::-webkit-scrollbar-track{background:transparent}
+  html::-webkit-scrollbar-track{background:var(--bg)}
+  *::-webkit-scrollbar-thumb{background:color-mix(in srgb,color-mix(in srgb,var(--sb-accent,var(--ink)) 42%,var(--ink)) 24%,transparent);border-radius:999px;border:2.5px solid transparent;background-clip:padding-box;min-height:36px}
+  *::-webkit-scrollbar-thumb:hover{background:color-mix(in srgb,color-mix(in srgb,var(--sb-accent,var(--ink)) 62%,var(--ink)) 56%,transparent);border:2px solid transparent;background-clip:padding-box}
+  *::-webkit-scrollbar-thumb:active{background:color-mix(in srgb,color-mix(in srgb,var(--sb-accent,var(--ink)) 82%,var(--ink)) 84%,transparent);border:2px solid transparent;background-clip:padding-box}
+  .ds-select-list::-webkit-scrollbar,.ldb-insp-body::-webkit-scrollbar,.prompt-box pre::-webkit-scrollbar,.ldb-code::-webkit-scrollbar,.cmd code::-webkit-scrollbar{width:7px;height:6px}
   *::-webkit-scrollbar-button{display:none;width:0;height:0}
   *::-webkit-scrollbar-corner{background:transparent}
+  @supports not selector(::-webkit-scrollbar){
+    *{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,color-mix(in srgb,var(--sb-accent,var(--ink)) 48%,var(--ink)) 30%,transparent) transparent}
+    html{scrollbar-color:color-mix(in srgb,color-mix(in srgb,var(--sb-accent,var(--ink)) 48%,var(--ink)) 30%,transparent) var(--bg)}
+  }
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;transition:background-color var(--t-theme),color var(--t-theme)}
   a{color:inherit;text-decoration:none}
@@ -292,18 +300,91 @@
   .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,10px);background:#18181c;color:#fafafa;border:1px solid rgba(255,255,255,.12);font-family:var(--sans);font-size:12px;font-weight:500;padding:8px 14px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .16s,transform .16s;z-index:70;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis}
   .toast svg{width:13px;height:13px;flex:none;color:#10b981}
   .toast.on{opacity:1;transform:translate(-50%,0)}
-  /* ---------- logo database & construction anatomy (aligned with catalog cards & system detail) ---------- */
-  .ldb-select{height:30px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3.5%,transparent);color:var(--ink);font-family:var(--sans);font-size:12px;outline:none;cursor:pointer;transition:border-color var(--t-ui),background-color var(--t-ui)}
-  .ldb-select:hover,.ldb-select:focus{border-color:var(--line2);background:color-mix(in srgb,var(--ink) 6%,transparent)}
-  .ldb-select option{background:var(--panel);color:var(--ink)}
-  .ldb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(264px,1fr));gap:14px}
-  .ldb-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;box-shadow:inset 0 1px 0 rgba(255,255,255,.035);content-visibility:auto;contain-intrinsic-size:0 248px;transition:border-color var(--t-ui),transform .22s var(--ease-out),box-shadow .22s var(--ease-out),background-color var(--t-theme),border-radius var(--t-theme)}
+  /* ---------- custom design sourcebook dropdowns ---------- */
+  .ds-select{position:relative;display:inline-flex;align-items:center}
+  .ds-select-native{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;margin:0;padding:0}
+  .ds-select-btn{height:30px;padding:0 10px 0 12px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 4%,var(--panel));color:var(--ink);font-family:var(--sans);font-size:12px;font-weight:500;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;max-width:230px;transition:border-color var(--t-ui),background-color var(--t-ui),color var(--t-ui),box-shadow var(--t-ui)}
+  .ds-select-btn:hover,.ds-select-btn:focus-visible{outline:none;border-color:var(--line2);background:color-mix(in srgb,var(--ink) 7%,var(--panel))}
+  .ds-select.is-filtered .ds-select-btn{border-color:color-mix(in srgb,var(--sb-accent,var(--ink)) 48%,var(--line2));background:color-mix(in srgb,var(--sb-accent,var(--ink)) 10%,var(--panel))}
+  .ds-select-dot{width:6px;height:6px;border-radius:999px;background:var(--sb-accent,var(--ink));flex:none;display:none}
+  .ds-select.is-filtered .ds-select-dot{display:inline-block}
+  .ds-select-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ds-select-meta{font-family:var(--mono);font-size:10.5px;color:var(--dim2);font-variant-numeric:tabular-nums;flex:none}
+  .ds-select-chev{width:12px;height:12px;color:var(--dim2);flex:none;transition:transform .18s var(--ease-out),color var(--t-ui)}
+  .ds-select-btn[aria-expanded="true"] .ds-select-chev{transform:rotate(180deg);color:var(--ink)}
+
+  .ds-select-menu{position:fixed;z-index:120;min-width:220px;max-width:min(320px,calc(100vw - 16px));background:color-mix(in srgb,var(--panel) 94%,var(--bg));backdrop-filter:blur(22px) saturate(1.25);-webkit-backdrop-filter:blur(22px) saturate(1.25);border:1px solid var(--line2);border-radius:14px;box-shadow:0 20px 50px -12px rgba(0,0,0,.62),inset 0 1px 0 color-mix(in srgb,var(--ink) 8%,transparent);overflow:hidden;display:flex;flex-direction:column;animation:dsMenuIn .15s var(--ease-out)}
+  html.sys-light .ds-select-menu{box-shadow:0 18px 44px -10px rgba(9,9,11,.16),inset 0 1px 0 rgba(255,255,255,.7)}
+  @keyframes dsMenuIn{from{opacity:0;transform:translateY(-4px) scale(.985)}to{opacity:1;transform:none}}
+  .ds-select-search{display:flex;align-items:center;gap:7px;padding:8px 11px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2.5%,transparent)}
+  .ds-select-search svg{width:12px;height:12px;color:var(--dim2);flex:none}
+  .ds-select-search input{flex:1;min-width:0;border:0;outline:none;background:transparent;color:var(--ink);font-family:var(--sans);font-size:12px}
+  .ds-select-search input::placeholder{color:var(--dim2)}
+  .ds-select-list{max-height:276px;overflow-y:auto;overscroll-behavior:contain;padding:5px;display:flex;flex-direction:column;gap:2px}
+  .ds-select-opt{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6.5px 9px;border-radius:8px;font-size:12px;color:var(--dim);text-align:left;transition:background-color .12s var(--ease-out),color .12s var(--ease-out)}
+  .ds-select-opt:hover,.ds-select-opt.is-active{background:color-mix(in srgb,var(--ink) 7%,transparent);color:var(--ink)}
+  .ds-select-opt[aria-selected="true"]{background:color-mix(in srgb,var(--sb-accent,var(--ink)) 14%,transparent);color:var(--ink);font-weight:560}
+  .ds-select-opt-main{display:flex;align-items:center;gap:7px;min-width:0;flex:1}
+  .ds-select-opt-main span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ds-select-opt-right{display:inline-flex;align-items:center;gap:6px;flex:none}
+  .ds-select-opt-cnt{font-family:var(--mono);font-size:10.5px;color:var(--dim2);font-variant-numeric:tabular-nums;padding:1px 6px;border-radius:999px;background:color-mix(in srgb,var(--ink) 4.5%,transparent)}
+  .ds-select-opt-chk{width:12px;height:12px;color:var(--sb-accent,var(--ink));opacity:0;flex:none}
+  .ds-select-opt[aria-selected="true"] .ds-select-opt-chk{opacity:1}
+  .ds-select-sep{height:1px;background:var(--line);margin:4px 6px}
+  .ds-select-empty{padding:14px 10px;text-align:center;font-size:11.5px;color:var(--dim2)}
+
+  /* ---------- logo database & refined inspector sidebar ---------- */
+  .ldb-layout{display:grid;grid-template-columns:minmax(0,1fr) 368px;gap:18px;align-items:start}
+  @media (max-width:1080px){.ldb-layout{grid-template-columns:1fr}}
+  .ldb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:13px}
+  .ldb-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;box-shadow:inset 0 1px 0 rgba(255,255,255,.035);content-visibility:auto;contain-intrinsic-size:0 244px;transition:border-color var(--t-ui),transform .22s var(--ease-out),box-shadow .22s var(--ease-out),background-color var(--t-theme),border-radius var(--t-theme)}
   .ldb-card:hover{border-color:var(--line2);transform:translateY(-1.5px);box-shadow:0 8px 24px -8px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06)}
   .ldb-card:active{transform:translateY(0) scale(.994)}
-  .ldb-stage{height:132px;padding:20px 24px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+  .ldb-card[aria-current="true"]{border-color:color-mix(in srgb,var(--sb-accent,var(--ink)) 78%,var(--ink));box-shadow:0 0 0 1px color-mix(in srgb,var(--sb-accent,var(--ink)) 68%,var(--ink)),0 10px 26px -10px rgba(0,0,0,.5)}
+  .ldb-stage{height:124px;padding:18px 22px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
   .ldb-stage.is-dark{background:#121216;color:#fafafa}
   .ldb-stage svg{max-width:100%;max-height:100%;width:auto;height:auto;display:block;flex:none}
   .ldb-stage.is-pack svg{width:46px;height:46px}
+
+  .ldb-inspector{position:sticky;top:70px;background:var(--panel);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;display:flex;flex-direction:column;max-height:calc(100dvh - 88px);box-shadow:inset 0 1px 0 rgba(255,255,255,.04);transition:background-color var(--t-theme),border-color var(--t-theme)}
+  @media (max-width:1080px){.ldb-inspector{position:static;max-height:none}}
+  .ldb-insp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);flex:none}
+  .ldb-insp-title-wrap{display:flex;align-items:center;gap:9px;min-width:0;flex:1}
+  .ldb-insp-mini{width:26px;height:26px;border-radius:7px;background:#ffffff;color:#09090b;display:grid;place-items:center;padding:4px;flex:none;border:1px solid var(--line)}
+  .ldb-insp-mini.is-dark{background:#121216;color:#fafafa}
+  .ldb-insp-mini svg{width:100%;height:100%;display:block}
+  .ldb-insp-titles{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .ldb-insp-titles b{font-family:var(--display);font-size:13.5px;font-weight:600;letter-spacing:-.015em;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ldb-insp-titles span{font-family:var(--mono);font-size:10.5px;color:var(--dim2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ldb-insp-subbar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 14px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent);flex:none}
+  .ldb-insp-subbar .seg{padding:2px}
+  .ldb-insp-subbar .chip{padding:3.5px 9px;font-size:11px}
+  .ldb-insp-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:13px 14px;display:flex;flex-direction:column;gap:13px}
+  .ldb-xray-stage{position:relative;height:208px;padding:22px;border-radius:10px;border:1px solid var(--line);background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none;transition:background-color var(--t-theme)}
+  .ldb-xray-stage.is-dark{background:#0c0c0f;color:#fafafa}
+  .ldb-xray-stage .ldb-hero-canvas{width:min(100%,300px);height:164px}
+  .ldb-xray-stage .ldb-hero-tools{top:9px;right:9px;gap:4px;padding:2.5px}
+  .ldb-xray-stage .ldb-hero-tools .chip{padding:3px 8px;font-size:10.5px}
+  .ldb-spec-mini{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .ldb-spec-mini>div{background:color-mix(in srgb,var(--ink) 2.5%,transparent);border:1px solid var(--line);border-radius:9px;padding:8px 10px;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .ldb-spec-mini small{font-size:9.5px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--dim2)}
+  .ldb-spec-mini b{font-size:12px;font-weight:560;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ldb-spec-mini span{font-size:10.5px;font-family:var(--mono);color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ldb-insp-sec-h{display:flex;align-items:center;justify-content:space-between;font-size:10px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--dim2);margin-bottom:6px}
+  .ldb-scales-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .ldb-scale-card{background:color-mix(in srgb,var(--ink) 2.5%,transparent);border:1px solid var(--line);border-radius:9px;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}
+  .ldb-scale-pair{display:flex;align-items:center;justify-content:center;gap:8px;min-height:42px;width:100%;background:#0c0c0f;border-radius:6px;padding:4px 6px}
+  .ldb-scale-card small{font-size:10px;font-family:var(--mono);color:var(--dim2)}
+  .ldb-swatches{display:flex;flex-wrap:wrap;gap:6px}
+  .ldb-swatch-btn{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);font-size:11px;font-family:var(--mono);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui),background-color var(--t-ui)}
+  .ldb-swatch-btn:hover{border-color:var(--line2);color:var(--ink);background:color-mix(in srgb,var(--ink) 6%,transparent)}
+  .ldb-swatch-btn i{width:10px;height:10px;border-radius:3px;border:1px solid var(--line2);display:inline-block;flex:none}
+  .ldb-tags{display:flex;flex-wrap:wrap;gap:5px}
+  .ldb-tag{font-size:10.5px;font-family:var(--mono);padding:3px 8px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--ink) 3%,transparent);color:var(--dim);transition:border-color var(--t-ui),color var(--t-ui)}
+  button.ldb-tag:hover{border-color:var(--line2);color:var(--ink)}
+  .ldb-code{margin:0;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:var(--bg);font-family:var(--mono);font-size:10.5px;line-height:1.5;color:var(--dim);max-height:190px;overflow:auto;white-space:pre-wrap;word-break:break-all}
+  .ldb-insp-foot{padding:10px 14px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent);display:grid;grid-template-columns:1fr 1fr;gap:7px;flex:none}
+  .ldb-insp-foot .pill-btn{justify-content:center}
 
   .ldb-hero-stage{position:relative;height:310px;padding:28px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:background-color var(--t-theme)}
   .ldb-hero-stage.is-dark{background:#0c0c0f;color:#fafafa}
@@ -1525,7 +1606,7 @@ function agentPromptFor(d){
 }
 
 /* ---------- theme chameleon ---------- */
-const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--sans','--display','--card-radius','--header-bg','--ds-c1','--ds-c2','--ds-c3'];
+const THEME_VARS=['--bg','--panel','--panel2','--line','--line2','--ink','--dim','--dim2','--accent','--accent-fg','--sans','--display','--card-radius','--header-bg','--ds-c1','--ds-c2','--ds-c3','--sb-accent'];
 function systemBrandSlabs(d,canvasRgb,inkCol){
   const candidates=[d.brand,...(d.palette||[]).map(p=>p.value)].filter(Boolean);
   const picks=[];
@@ -1592,6 +1673,7 @@ function applySystemTheme(d){
   rootEl.style.setProperty('--ds-c1',ds1);
   rootEl.style.setProperty('--ds-c2',ds2);
   rootEl.style.setProperty('--ds-c3',ds3);
+  rootEl.style.setProperty('--sb-accent',readable(d.brand||ds1,d.canvas));
 }
 function resetSystemTheme(){
   const rootEl=document.documentElement;
@@ -1924,6 +2006,7 @@ async function hydrateSystemDetail(slug){
   }catch(_){}
 }
 async function renderDetail(slug,immediate){
+  closeDsSelectMenu(false);
   const d=DATA.find(x=>x.slug===slug);
   if(!d){ location.hash=''; return; }
   hydrateSystemDetail(slug);
@@ -2150,6 +2233,9 @@ const logoState={
   items:[],
   stats:null,
   loading:false,
+  selected:null,
+  selectedPackItem:null,
+  inspTab:'inspect',
   xrayDark:false,
   showGrid:false,
   showAnchors:false,
@@ -2524,6 +2610,280 @@ function parseLogoAnatomy(svgText){
   return {viewBox:vb,inkBox,shapes:shapeCount,anchors,handles,segments,circles,anglesDeg:[...anglesSet].sort((a,b)=>a-b),colors:[...colorSet],score:Math.max(0,score),findings};
 }
 
+/* ---------- design sourcebook custom dropdowns ---------- */
+let dsOpenMenu=null;
+function closeDsSelectMenu(restoreFocus){
+  if(!dsOpenMenu) return;
+  const {menu,btn,onDoc,onScroll,onKey}=dsOpenMenu;
+  document.removeEventListener('pointerdown',onDoc,true);
+  window.removeEventListener('scroll',onScroll,true);
+  window.removeEventListener('resize',onScroll);
+  document.removeEventListener('keydown',onKey,true);
+  menu.remove();
+  btn.setAttribute('aria-expanded','false');
+  dsOpenMenu=null;
+  if(restoreFocus) btn.focus({preventScroll:true});
+}
+function splitOptMeta(text){
+  const m=String(text||'').match(/^(.*?)\s*\(([^()]+)\)\s*$/);
+  return m?{label:m[1],meta:m[2]}:{label:String(text||''),meta:''};
+}
+function syncDsSelect(sel){
+  if(!sel||!sel._dsWrap) return;
+  const wrap=sel._dsWrap;
+  const btn=wrap.querySelector('.ds-select-btn');
+  const lblEl=btn.querySelector('.ds-select-label');
+  const metaEl=btn.querySelector('.ds-select-meta');
+  const curOpt=sel.options[sel.selectedIndex]||sel.options[0];
+  const parsed=splitOptMeta(curOpt?curOpt.textContent:'');
+  lblEl.textContent=parsed.label;
+  metaEl.textContent=parsed.meta;
+  metaEl.style.display=parsed.meta?'':'none';
+  const isDefault=!sel.value||sel.value==='all';
+  wrap.classList.toggle('is-filtered',!isDefault);
+}
+function openDsSelectMenu(sel){
+  const wrap=sel._dsWrap;
+  const btn=wrap&&wrap.querySelector('.ds-select-btn');
+  if(!wrap||!btn) return;
+  if(dsOpenMenu&&dsOpenMenu.sel===sel){ closeDsSelectMenu(false); return; }
+  closeDsSelectMenu(false);
+
+  const menu=document.createElement('div');
+  menu.className='ds-select-menu';
+  menu.setAttribute('role','listbox');
+  const opts=[...sel.options];
+  const showSearch=opts.length>8;
+  let searchQ='';
+  let activeIdx=Math.max(0,sel.selectedIndex);
+
+  if(showSearch){
+    const sBox=document.createElement('div');
+    sBox.className='ds-select-search';
+    sBox.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Filter options\u2026" autocomplete="off">';
+    menu.appendChild(sBox);
+  }
+  const listEl=document.createElement('div');
+  listEl.className='ds-select-list';
+  menu.appendChild(listEl);
+
+  const getFiltered=()=>opts.filter(o=>!searchQ||o.textContent.toLowerCase().includes(searchQ));
+  const choose=(val)=>{
+    closeDsSelectMenu(true);
+    if(sel.value!==val){
+      sel.value=val;
+      syncDsSelect(sel);
+      sel.dispatchEvent(new Event('change',{bubbles:true}));
+    }
+  };
+
+  const renderOpts=()=>{
+    const filtered=getFiltered();
+    if(!filtered.length){
+      listEl.innerHTML='<div class="ds-select-empty">No matching options</div>';
+      return;
+    }
+    if(activeIdx>=filtered.length) activeIdx=0;
+    listEl.innerHTML='';
+    filtered.forEach((opt,i)=>{
+      if(i===1&&!searchQ&&opts[0]&&(opts[0].value===''||opts[0].value==='all')){
+        const sep=document.createElement('div');
+        sep.className='ds-select-sep';
+        listEl.appendChild(sep);
+      }
+      const p=splitOptMeta(opt.textContent);
+      const b=document.createElement('button');
+      b.type='button';
+      b.className='ds-select-opt'+(i===activeIdx?' is-active':'');
+      b.setAttribute('role','option');
+      b.setAttribute('aria-selected',String(opt.value===sel.value));
+      b.innerHTML='<span class="ds-select-opt-main"><span>'+esc(p.label)+'</span></span>'+
+        '<span class="ds-select-opt-right">'+(p.meta?'<span class="ds-select-opt-cnt">'+esc(p.meta)+'</span>':'')+
+        '<svg class="ds-select-opt-chk" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3.2L13 5"/></svg></span>';
+      b.addEventListener('mouseenter',()=>{ activeIdx=i; });
+      b.addEventListener('click',()=>choose(opt.value));
+      listEl.appendChild(b);
+    });
+    const curBtn=listEl.children[Math.min(activeIdx+(searchQ?0:1),listEl.children.length-1)];
+    if(curBtn&&curBtn.scrollIntoView) curBtn.scrollIntoView({block:'nearest'});
+  };
+
+  renderOpts();
+  document.body.appendChild(menu);
+  btn.setAttribute('aria-expanded','true');
+
+  const positionMenu=()=>{
+    const rect=btn.getBoundingClientRect();
+    const mw=Math.max(224,Math.round(rect.width));
+    menu.style.minWidth=mw+'px';
+    const mh=menu.offsetHeight||280;
+    const spaceBelow=window.innerHeight-rect.bottom-10;
+    const spaceAbove=rect.top-10;
+    const openUp=spaceBelow<Math.min(mh,220)&&spaceAbove>spaceBelow;
+    const top=openUp?Math.max(8,rect.top-mh-6):Math.min(window.innerHeight-mh-8,rect.bottom+6);
+    const left=Math.min(Math.max(8,rect.left),Math.max(8,window.innerWidth-menu.offsetWidth-8));
+    menu.style.top=Math.round(top)+'px';
+    menu.style.left=Math.round(left)+'px';
+  };
+  positionMenu();
+
+  const searchIn=menu.querySelector('.ds-select-search input');
+  if(searchIn){
+    searchIn.addEventListener('input',e=>{
+      searchQ=e.target.value.trim().toLowerCase();
+      activeIdx=0;
+      renderOpts();
+      positionMenu();
+    });
+    setTimeout(()=>searchIn.focus({preventScroll:true}),0);
+  }
+
+  const onDoc=e=>{
+    if(menu.contains(e.target)||wrap.contains(e.target)) return;
+    closeDsSelectMenu(false);
+  };
+  const onScroll=e=>{
+    if(e&&e.target&&menu.contains(e.target)) return;
+    closeDsSelectMenu(false);
+  };
+  const onKey=e=>{
+    const filtered=getFiltered();
+    if(e.key==='Escape'){ e.preventDefault(); e.stopPropagation(); closeDsSelectMenu(true); return; }
+    if(!filtered.length) return;
+    if(e.key==='ArrowDown'){ e.preventDefault(); activeIdx=(activeIdx+1)%filtered.length; renderOpts(); }
+    else if(e.key==='ArrowUp'){ e.preventDefault(); activeIdx=(activeIdx-1+filtered.length)%filtered.length; renderOpts(); }
+    else if(e.key==='Home'){ e.preventDefault(); activeIdx=0; renderOpts(); }
+    else if(e.key==='End'){ e.preventDefault(); activeIdx=filtered.length-1; renderOpts(); }
+    else if(e.key==='Enter'){
+      if(document.activeElement===searchIn||!menu.contains(document.activeElement)||document.activeElement?.classList.contains('ds-select-opt')){
+        e.preventDefault();
+        choose(filtered[activeIdx].value);
+      }
+    }
+  };
+  document.addEventListener('pointerdown',onDoc,true);
+  window.addEventListener('scroll',onScroll,true);
+  window.addEventListener('resize',onScroll);
+  document.addEventListener('keydown',onKey,true);
+  dsOpenMenu={sel,menu,btn,onDoc,onScroll,onKey};
+}
+function wrapDsSelect(sel){
+  if(!sel||sel._dsWrap) return sel?._dsWrap;
+  const wrap=document.createElement('div');
+  wrap.className='ds-select';
+  sel.parentNode.insertBefore(wrap,sel);
+  wrap.appendChild(sel);
+  sel.className='ds-select-native';
+  sel.tabIndex=-1;
+  sel.setAttribute('aria-hidden','true');
+
+  const btn=document.createElement('button');
+  btn.type='button';
+  btn.className='ds-select-btn';
+  btn.setAttribute('aria-haspopup','listbox');
+  btn.setAttribute('aria-expanded','false');
+  if(sel.getAttribute('aria-label')) btn.setAttribute('aria-label',sel.getAttribute('aria-label'));
+  btn.innerHTML='<span class="ds-select-dot"></span><span class="ds-select-label"></span><span class="ds-select-meta"></span>'+
+    '<svg class="ds-select-chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4"/></svg>';
+  btn.addEventListener('click',()=>openDsSelectMenu(sel));
+  btn.addEventListener('keydown',e=>{
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'||e.key==='Enter'||e.key===' '){
+      e.preventDefault();
+      openDsSelectMenu(sel);
+    }
+  });
+  wrap.appendChild(btn);
+  sel._dsWrap=wrap;
+  syncDsSelect(sel);
+  return wrap;
+}
+function setDsSelectVisible(id,vis){
+  const sel=document.getElementById(id);
+  if(!sel) return;
+  if(sel._dsWrap) sel._dsWrap.style.display=vis?'':'none';
+  else sel.style.display=vis?'':'none';
+}
+
+function makePackLogoItem(packId,pk,g){
+  const gridPx=pk.grid||24;
+  return {
+    id:packId+'::'+g.name,
+    packId,
+    glyphName:g.name,
+    brand:packId+' / '+g.name,
+    markType:'icon glyph',
+    industry:'ui icon pack',
+    colors:['#fafafa'],
+    techniques:[pk.style||'vector',(gridPx+'px grid')],
+    geometry:['grid-modular'],
+    exemplary:true,
+    note:'Official '+gridPx+'\u00d7'+gridPx+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.',
+    svg:buildSysSvg(pk,g,256,'#fafafa',true).replace(/currentColor/gi,'#fafafa')
+  };
+}
+function logoDetailHashFor(item){
+  return item.packId
+    ? '#/logos/pack/'+encodeURIComponent(item.packId)+'/'+encodeURIComponent(item.glyphName)
+    : '#/logos/'+encodeURIComponent(item.id);
+}
+function activeLogoInspectorItem(){
+  return logoState.subTab==='icons'?logoState.selectedPackItem:logoState.selected;
+}
+function applyLogoScrollAccent(item){
+  const r=document.documentElement;
+  const cols=(item&&item.colors||[]).filter(Boolean);
+  if(cols.length) r.style.setProperty('--sb-accent',readable(cols[0],'#09090b'));
+  else r.style.removeProperty('--sb-accent');
+}
+function getLogoContext(item){
+  const isPack=Boolean(item.packId);
+  const anatomy=parseLogoAnatomy(item.svg);
+  const darkBox=isPack||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
+  const vbStr=anatomy.viewBox.join(' ');
+  const palCols=(item.colors&&item.colors.length?item.colors:anatomy.colors);
+  const anglesStr=anatomy.anglesDeg.length
+    ? [...new Set(anatomy.anglesDeg.map(a=>Math.round(a)))].slice(0,5).map(a=>a+'\u00b0').join(' \u00b7 ')
+    : 'Pure curves';
+  const needsInvertForLight=isPack||isLightOnlySvg(item.svg,palCols);
+  const needsInvertForDark=!isPack&&(!palCols.length||palCols.every(c=>/^#?(?:[0-3][0-9a-f]{2}|[0-3][0-9a-f]{5}|black|currentcolor)$/i.test(String(c).trim())))&&!needsInvertForLight;
+  const studioLogofxUrl=isPack
+    ? './studio/#/logofx?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
+    : './studio/#/logofx?logo='+encodeURIComponent(item.id);
+  const studioBrandUrl=isPack
+    ? './studio/#/brand?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
+    : './studio/#/brand?logo='+encodeURIComponent(item.id);
+  const jsonMeta=JSON.stringify({
+    id:item.id,brand:item.brand,markType:item.markType,industry:item.industry,
+    viewBox:anatomy.viewBox,shapes:anatomy.shapes,anchors:anatomy.anchors.length,
+    anglesDeg:anatomy.anglesDeg,colors:palCols,score:anatomy.score,note:item.note
+  },null,2);
+  return {item,isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta};
+}
+function buildLogoScalePairHtml(item,prefix,sz,needsInvertForDark,needsInvertForLight){
+  const dSvg=ensureSvgBox(scopeSvgIds(item.svg,prefix+'d'),false,sz);
+  const lSvg=ensureSvgBox(scopeSvgIds(item.svg,prefix+'l'),false,sz);
+  return '<div style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center;flex:none;color:#fafafa'+(needsInvertForDark?';filter:brightness(0) invert(1)':'')+'">'+dSvg+'</div>'+
+    '<div style="width:'+(sz+10)+'px;height:'+(sz+10)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:5px;flex:none;color:#09090b"><span style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center'+(needsInvertForLight?';filter:brightness(0)':'')+'">'+lSvg+'</span></div>';
+}
+function bindLogoXrayStage(item,anatomy,ids){
+  let stageDark=Boolean(item.packId)||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
+  const refresh=()=>{
+    const stage=document.getElementById(ids.stage);
+    const overlay=document.getElementById(ids.overlay);
+    const gBtn=document.getElementById(ids.grid);
+    const aBtn=document.getElementById(ids.anc);
+    const tBtn=document.getElementById(ids.ground);
+    if(stage) stage.classList.toggle('is-dark',stageDark);
+    if(tBtn){ tBtn.setAttribute('aria-pressed',String(stageDark)); tBtn.textContent=stageDark?'Dark Ground':'Light Ground'; }
+    if(gBtn) gBtn.setAttribute('aria-pressed',String(logoState.showGrid));
+    if(aBtn) aBtn.setAttribute('aria-pressed',String(logoState.showAnchors));
+    if(overlay) overlay.innerHTML=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
+  };
+  document.getElementById(ids.grid)?.addEventListener('click',()=>{ logoState.showGrid=!logoState.showGrid; refresh(); });
+  document.getElementById(ids.anc)?.addEventListener('click',()=>{ logoState.showAnchors=!logoState.showAnchors; refresh(); });
+  document.getElementById(ids.ground)?.addEventListener('click',()=>{ stageDark=!stageDark; logoState.xrayDark=stageDark; refresh(); });
+}
+
 function buildLogoDbShell(){
   if(logoState.shellBuilt) return;
   logoState.shellBuilt=true;
@@ -2539,12 +2899,17 @@ function buildLogoDbShell(){
       '<select class="ldb-select" id="ldbMarkType" aria-label="Filter by mark type"><option value="">All Mark Types</option></select>'+
       '<select class="ldb-select" id="ldbTechnique" aria-label="Filter by technique"><option value="">All Techniques</option></select>'+
       '<select class="ldb-select" id="ldbIndustry" aria-label="Filter by industry"><option value="">All Industries</option></select>'+
-      '<select class="ldb-select" id="ldbPack" style="display:none" aria-label="Filter by icon pack"><option value="all">All Icon Packs ('+packCount+')</option></select>'+
+      '<select class="ldb-select" id="ldbPack" aria-label="Filter by icon pack"><option value="all">All Icon Packs ('+packCount+')</option></select>'+
       '<button type="button" class="chip" id="ldbExBtn" aria-pressed="false">'+ICONS.star+' Exemplary Only</button>'+
       '<button type="button" class="pill-btn" id="ldbResetBtn" style="display:none;margin-left:auto">Reset Filters</button>'+
     '</div>'+
-    '<div class="ldb-grid" id="ldbGrid"></div>'+
-    '<div id="ldbPager"></div>';
+    '<div class="ldb-layout">'+
+      '<div>'+
+        '<div class="ldb-grid" id="ldbGrid"></div>'+
+        '<div id="ldbPager"></div>'+
+      '</div>'+
+      '<aside class="ldb-inspector" id="ldbInspector" aria-label="SVG Construction Anatomy Inspector"></aside>'+
+    '</div>';
 
   const packSel=document.getElementById('ldbPack');
   Object.entries(ICON_PACKS).sort((a,b)=>a[0].localeCompare(b[0])).forEach(([id,pk])=>{
@@ -2553,6 +2918,8 @@ function buildLogoDbShell(){
     opt.textContent=id+' ('+(pk.grid||24)+'px)';
     packSel.appendChild(opt);
   });
+
+  ['ldbMarkType','ldbTechnique','ldbIndustry','ldbPack'].forEach(id=>wrapDsSelect(document.getElementById(id)));
 
   logosEl.querySelectorAll('[data-ldb-tab]').forEach(btn=>{
     btn.addEventListener('click',()=>{
@@ -2595,6 +2962,10 @@ function buildLogoDbShell(){
     state.q='';
     const topQ=document.getElementById('q');
     if(topQ) topQ.value='';
+    ['ldbMarkType','ldbTechnique','ldbIndustry'].forEach(id=>{
+      const s=document.getElementById(id); if(s){ s.value=''; syncDsSelect(s); }
+    });
+    if(packSel){ packSel.value='all'; syncDsSelect(packSel); }
     syncLogoControls();
     if(logoState.subTab==='logos') fetchLogos();
     else renderIconPackGrid();
@@ -2613,12 +2984,13 @@ function syncLogoControls(){
   if(!logoState.shellBuilt) return;
   const isLogos=logoState.subTab==='logos';
   logosEl.querySelectorAll('[data-ldb-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.ldbTab===logoState.subTab)));
-  document.getElementById('ldbMarkType').style.display=isLogos?'':'none';
-  document.getElementById('ldbTechnique').style.display=isLogos?'':'none';
-  document.getElementById('ldbIndustry').style.display=isLogos?'':'none';
+  setDsSelectVisible('ldbMarkType',isLogos);
+  setDsSelectVisible('ldbTechnique',isLogos);
+  setDsSelectVisible('ldbIndustry',isLogos);
+  setDsSelectVisible('ldbPack',!isLogos);
+  ['ldbMarkType','ldbTechnique','ldbIndustry','ldbPack'].forEach(id=>syncDsSelect(document.getElementById(id)));
   document.getElementById('ldbExBtn').style.display=isLogos?'':'none';
   document.getElementById('ldbExBtn').setAttribute('aria-pressed',String(logoState.onlyExemplary));
-  document.getElementById('ldbPack').style.display=isLogos?'none':'';
   const hasAny=Boolean(logoState.q.trim()||(isLogos?(logoState.markType||logoState.technique||logoState.industry||logoState.onlyExemplary):(logoState.packFilter!=='all')));
   const rst=document.getElementById('ldbResetBtn');
   if(rst) rst.style.display=hasAny?'':'none';
@@ -2650,6 +3022,7 @@ function renderLogoStats(){
     const el=document.getElementById(id);
     if(!el || !Array.isArray(arr)) return;
     el.innerHTML='<option value="">'+esc(label)+'</option>'+arr.map(x=>'<option value="'+esc(x.key)+'"'+(cur===x.key?' selected':'')+'>'+esc(x.key)+' ('+x.count+')</option>').join('');
+    syncDsSelect(el);
   };
   fillSelect('ldbMarkType','All Mark Types',s.markTypes,logoState.markType);
   fillSelect('ldbTechnique','All Techniques',s.techniques,logoState.technique);
@@ -2674,6 +3047,7 @@ async function fetchLogos(){
   if(!location.protocol.startsWith('http')){
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Brand Marks require HTTP/Postgres (/api/logos). Switch to <b>UI Icon Packs ('+(Object.keys(ICON_PACKS).length||57)+')</b> above for offline vector browsing.</div>';
     pagerBox.innerHTML='';
+    renderLogoInspector();
     return;
   }
   const params=new URLSearchParams({page:String(logoState.page),limit:String(logoState.limit)});
@@ -2711,10 +3085,133 @@ async function fetchLogos(){
       renderBrandLogoGrid();
     }
   }catch(_){
-    if(tok===logoState.fetchToken) gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Could not reach /api/logos. Try refreshing or switch to UI Icon Packs.</div>';
+    if(tok===logoState.fetchToken){
+      gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">Could not reach /api/logos. Try refreshing or switch to UI Icon Packs.</div>';
+      renderLogoInspector();
+    }
   }finally{
     if(tok===logoState.fetchToken) logoState.loading=false;
     stopLoader();
+  }
+}
+
+function renderLogoInspector(){
+  const insp=document.getElementById('ldbInspector');
+  if(!insp) return;
+  const item=activeLogoInspectorItem();
+  if(!item){
+    insp.innerHTML='<div class="ldb-insp-head"><div class="ldb-insp-titles"><b>Construction Inspector</b><span>Select any brand mark or glyph</span></div></div><div class="ldb-insp-body"><div class="empty" style="padding:32px 12px">Select a card on the left to inspect its vector anatomy, anchors, survivability, and colour tokens.</div></div>';
+    return;
+  }
+  applyLogoScrollAccent(item);
+  const ctx=getLogoContext(item);
+  const {isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
+  const miniSvg=ensureSvgBox(scopeSvgIds(item.svg,'miniinsp'),true);
+  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'sideinsp'),true);
+  const overlaySvg=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
+  const fullHref=logoDetailHashFor(item);
+  const subMeta=(isPack?(item.packId+' \u00b7 '+(item.techniques&&item.techniques[1]||'24px grid')):(item.markType||'mark')+' \u00b7 '+(item.industry||'general'));
+
+  let bodyHtml='';
+  if(logoState.inspTab==='source'){
+    bodyHtml=
+      '<div>'+
+        '<div class="ldb-insp-sec-h"><span>SVG Vector Source ('+item.svg.length+' bytes)</span><button type="button" class="pill-btn" id="ldbSideCopySvg" style="padding:2px 8px;font-size:10.5px">'+ICONS.copy+'Copy</button></div>'+
+        '<pre class="ldb-code">'+esc(item.svg)+'</pre>'+
+      '</div>'+
+      '<div>'+
+        '<div class="ldb-insp-sec-h"><span>Geometry Spec JSON</span><button type="button" class="pill-btn" id="ldbSideCopyJson" style="padding:2px 8px;font-size:10.5px">'+ICONS.copy+'Copy</button></div>'+
+        '<pre class="ldb-code">'+esc(jsonMeta)+'</pre>'+
+      '</div>';
+  }else{
+    const scaleCells=[16,24,36].map((sz,i)=>
+      '<div class="ldb-scale-card"><div class="ldb-scale-pair">'+
+      buildLogoScalePairHtml(item,'inspSc'+i,sz,needsInvertForDark,needsInvertForLight)+
+      '</div><small>'+sz+'px</small></div>'
+    ).join('');
+    const swatches=(palCols.length?palCols:['#fafafa']).map(c=>
+      '<button type="button" class="ldb-swatch-btn" data-copy="'+esc(c)+'"><i style="background:'+safeCss(c)+'"></i>'+esc(c)+'</button>'
+    ).join('');
+    const techButtons=(item.techniques||[]).filter(Boolean).map(t=>
+      isPack
+        ? '<span class="ldb-tag">'+esc(t)+'</span>'
+        : '<button type="button" class="ldb-tag" data-filter-tech="'+esc(t)+'" title="Filter by '+esc(t)+'">'+esc(t)+'</button>'
+    ).join('');
+    const geoTags=(item.geometry||[]).filter(Boolean).map(g=>'<span class="ldb-tag">'+esc(g)+'</span>').join('');
+    const findingsHtml=anatomy.findings.map(f=>'<div class="ldb-finding is-'+esc(f.level)+'" style="padding:7px 10px;font-size:11px">'+esc(f.message)+'</div>').join('');
+
+    bodyHtml=
+      '<div class="ldb-xray-stage'+(darkBox?' is-dark':'')+'" id="ldbSideStage">'+
+        '<div class="ldb-hero-tools">'+
+          '<button type="button" class="chip" id="ldbSideGridBtn" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+
+          '<button type="button" class="chip" id="ldbSideAncBtn" aria-pressed="'+String(logoState.showAnchors)+'">Anchors ('+anatomy.anchors.length+')</button>'+
+          '<button type="button" class="chip" id="ldbSideGroundBtn" aria-pressed="'+String(darkBox)+'">'+(darkBox?'Dark Ground':'Light Ground')+'</button>'+
+        '</div>'+
+        '<div class="ldb-hero-canvas">'+
+          '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
+          '<svg class="ldb-xray-overlay" id="ldbSideOverlay" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+overlaySvg+'</svg>'+
+        '</div>'+
+      '</div>'+
+      '<div class="ldb-spec-mini">'+
+        '<div><small>Geometry</small><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b><span>'+esc(vbStr)+'</span></div>'+
+        '<div><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' circle(s)</span></div>'+
+        '<div><small>Palette</small><div class="spec-dots" style="margin:2px 0">'+palCols.slice(0,5).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('')+'</div><span>'+palCols.length+' token(s)</span></div>'+
+        '<div><small>Craft Audit</small><b>'+anatomy.score+' / 100</b><span>'+esc((anatomy.findings[0]&&anatomy.findings[0].level)||'pass')+'</span></div>'+
+      '</div>'+
+      '<div><div class="ldb-insp-sec-h"><span>Micro-Scale Survivability</span><span>dark / light</span></div><div class="ldb-scales-row">'+scaleCells+'</div></div>'+
+      (item.note||techButtons||geoTags
+        ? '<div><div class="ldb-insp-sec-h"><span>Anatomy &amp; Construction</span></div>'+
+          (item.note?'<p style="margin:0 0 8px;font-size:12px;line-height:1.5;color:var(--dim)">'+esc(item.note)+'</p>':'')+
+          '<div class="ldb-tags">'+techButtons+geoTags+'</div></div>'
+        : '')+
+      '<div><div class="ldb-insp-sec-h"><span>Colour Palette</span><span>click to copy</span></div><div class="ldb-swatches">'+swatches+'</div></div>'+
+      '<div class="cmd-stack" style="gap:6px">'+findingsHtml+'</div>';
+  }
+
+  insp.innerHTML=
+    '<div class="ldb-insp-head">'+
+      '<div class="ldb-insp-title-wrap">'+
+        '<div class="ldb-insp-mini'+(darkBox?' is-dark':'')+'">'+miniSvg+'</div>'+
+        '<div class="ldb-insp-titles"><b>'+esc(item.brand)+'</b><span>'+esc(subMeta)+'</span></div>'+
+      '</div>'+
+      '<a href="'+esc(fullHref)+'" class="pill-btn" style="padding:4px 9px;font-size:11px">Full View'+ICONS.ext+'</a>'+
+    '</div>'+
+    '<div class="ldb-insp-subbar">'+
+      '<div class="seg" role="tablist" aria-label="Inspector section">'+
+        '<button type="button" class="chip" data-insp-tab="inspect" aria-pressed="'+String(logoState.inspTab==='inspect')+'">Inspect</button>'+
+        '<button type="button" class="chip" data-insp-tab="source" aria-pressed="'+String(logoState.inspTab==='source')+'">Source</button>'+
+      '</div>'+
+      (item.exemplary?'<span class="star-pill" style="font-size:11px;font-family:var(--mono)">'+ICONS.star+' Study</span>':'<span style="font-size:11px;font-family:var(--mono);color:var(--dim2)">'+anatomy.score+'/100</span>')+
+    '</div>'+
+    '<div class="ldb-insp-body">'+bodyHtml+'</div>'+
+    '<div class="ldb-insp-foot">'+
+      '<a href="'+studioLogofxUrl+'" class="pill-btn primary">Open in LogoFX'+ICONS.ext+'</a>'+
+      '<a href="'+studioBrandUrl+'" class="pill-btn">Brand Maker'+ICONS.ext+'</a>'+
+    '</div>';
+
+  insp.querySelectorAll('[data-insp-tab]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const next=btn.dataset.inspTab;
+      if(logoState.inspTab===next) return;
+      logoState.inspTab=next;
+      renderLogoInspector();
+    });
+  });
+  insp.querySelectorAll('[data-copy]').forEach(el=>el.addEventListener('click',()=>copy(el.dataset.copy)));
+  document.getElementById('ldbSideCopySvg')?.addEventListener('click',()=>copy(item.svg));
+  document.getElementById('ldbSideCopyJson')?.addEventListener('click',()=>copy(jsonMeta));
+  insp.querySelectorAll('[data-filter-tech]').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const techSel=document.getElementById('ldbTechnique');
+      logoState.technique=el.dataset.filterTech;
+      logoState.page=1;
+      if(techSel){ techSel.value=logoState.technique; syncDsSelect(techSel); }
+      syncLogoControls();
+      fetchLogos();
+    });
+  });
+  if(logoState.inspTab!=='source'){
+    bindLogoXrayStage(item,anatomy,{stage:'ldbSideStage',overlay:'ldbSideOverlay',grid:'ldbSideGridBtn',anc:'ldbSideAncBtn',ground:'ldbSideGroundBtn'});
   }
 }
 
@@ -2730,10 +3227,16 @@ function renderBrandLogoGrid(){
     metaRight.textContent=items.length?(start+'\u2013'+end+' of '+logoState.total):'0';
   }
   if(!items.length){
+    logoState.selected=null;
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No logos matched those filters.</div>';
     pagerBox.innerHTML='';
+    renderLogoInspector();
     return;
   }
+  if(!logoState.selected||!items.some(x=>x.id===logoState.selected.id)){
+    logoState.selected=items[0];
+  }
+  const curId=logoState.selected?.id;
   gridEl.innerHTML=items.map((logo,idx)=>{
     const scoped=ensureSvgBox(scopeSvgIds(logo.svg,'ldb'+idx),false);
     const darkStage=isLightOnlySvg(logo.svg,logo.colors);
@@ -2741,7 +3244,7 @@ function renderBrandLogoGrid(){
     const tag=logo.exemplary
       ? '<span class="vtag" style="color:var(--warn)">'+ICONS.star+' Study</span>'
       : '<span class="vtag">'+esc(logo.markType||'mark')+'</span>';
-    return '<div class="ldb-card" data-logo-id="'+esc(logo.id)+'" role="button" tabindex="0">'+
+    return '<div class="ldb-card" data-logo-id="'+esc(logo.id)+'" aria-current="'+String(logo.id===curId)+'" role="button" tabindex="0">'+
       '<div class="ldb-stage'+(darkStage?' is-dark':'')+'">'+scoped+'</div>'+
       '<div class="strip">'+stripCols+'</div>'+
       '<div class="card-body">'+
@@ -2753,10 +3256,19 @@ function renderBrandLogoGrid(){
   }).join('');
 
   gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(card=>{
-    const open=()=>{ location.hash='#/logos/'+encodeURIComponent(card.dataset.logoId); };
-    card.addEventListener('click',open);
-    card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
+    const item=items.find(x=>x.id===card.dataset.logoId);
+    const selectCard=()=>{
+      if(!item) return;
+      logoState.selected=item;
+      gridEl.querySelectorAll('.ldb-card[data-logo-id]').forEach(el=>el.setAttribute('aria-current',String(el===card)));
+      renderLogoInspector();
+    };
+    card.addEventListener('click',selectCard);
+    card.addEventListener('dblclick',()=>{ if(item) location.hash=logoDetailHashFor(item); });
+    card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); selectCard(); } });
   });
+
+  renderLogoInspector();
 
   pagerBox.innerHTML=buildPagerHtml(logoState.total,logoState.page,logoState.limit);
   pagerBox.querySelectorAll('[data-pg]').forEach(btn=>{
@@ -2796,15 +3308,24 @@ function renderIconPackGrid(){
   }
 
   if(!slice.length){
+    logoState.selectedPackItem=null;
     gridEl.innerHTML='<div class="empty" style="grid-column:1/-1">No UI glyphs matched your query.</div>';
     pagerBox.innerHTML='';
+    renderLogoInspector();
     return;
   }
-  gridEl.innerHTML=slice.map(({packId,pk,g})=>{
+
+  const packItems=slice.map(({packId,pk,g})=>({packId,pk,g,item:makePackLogoItem(packId,pk,g)}));
+  if(!logoState.selectedPackItem||!packItems.some(x=>x.item.id===logoState.selectedPackItem.id)){
+    logoState.selectedPackItem=packItems[0].item;
+  }
+  const curId=logoState.selectedPackItem?.id;
+
+  gridEl.innerHTML=packItems.map(({packId,pk,g,item})=>{
     const gridPx=pk.grid||24;
     const thumb=buildSysSvg(pk,g,44,'#fafafa',false);
     const note='Official '+gridPx+'\u00d7'+gridPx+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.';
-    return '<div class="ldb-card" data-pack="'+esc(packId)+'" data-glyph="'+esc(g.name)+'" role="button" tabindex="0">'+
+    return '<div class="ldb-card" data-pack-item-id="'+esc(item.id)+'" role="button" tabindex="0" aria-current="'+String(item.id===curId)+'">'+
       '<div class="ldb-stage is-dark is-pack">'+thumb+'</div>'+
       '<div class="strip"><i style="background:#fafafa"></i><i style="background:#71717a"></i></div>'+
       '<div class="card-body">'+
@@ -2815,11 +3336,20 @@ function renderIconPackGrid(){
     '</div>';
   }).join('');
 
-  gridEl.querySelectorAll('.ldb-card[data-pack]').forEach(card=>{
-    const open=()=>{ location.hash='#/logos/pack/'+encodeURIComponent(card.dataset.pack)+'/'+encodeURIComponent(card.dataset.glyph); };
-    card.addEventListener('click',open);
-    card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
+  gridEl.querySelectorAll('.ldb-card[data-pack-item-id]').forEach(card=>{
+    const match=packItems.find(x=>x.item.id===card.dataset.packItemId);
+    const selectCard=()=>{
+      if(!match) return;
+      logoState.selectedPackItem=match.item;
+      gridEl.querySelectorAll('.ldb-card[data-pack-item-id]').forEach(el=>el.setAttribute('aria-current',String(el===card)));
+      renderLogoInspector();
+    };
+    card.addEventListener('click',selectCard);
+    card.addEventListener('dblclick',()=>{ if(match) location.hash=logoDetailHashFor(match.item); });
+    card.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); selectCard(); } });
   });
+
+  renderLogoInspector();
 
   pagerBox.innerHTML=buildPagerHtml(total,logoState.iconPage,logoState.iconLimit);
   pagerBox.querySelectorAll('[data-pg]').forEach(btn=>{
@@ -2835,6 +3365,7 @@ function renderIconPackGrid(){
 function applyLogoHeaderSlabs(item){
   const r=document.documentElement;
   const cols=(item.colors||[]).filter(Boolean);
+  applyLogoScrollAccent(item);
   if(cols.length){
     r.style.setProperty('--ds-c1',cols[0]);
     r.style.setProperty('--ds-c2',cols[1]||cols[0]);
@@ -2952,39 +3483,21 @@ function buildLogoXrayOverlayMarkup(anatomy,showGrid,showAnchors){
   return out;
 }
 
-function buildLogoDetailHtml(item,anatomy){
-  const isPack=Boolean(item.packId);
-  const darkBox=isPack||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
-  const vbStr=anatomy.viewBox.join(' ');
+function buildLogoDetailHtml(item,ctxOpt){
+  const ctx=ctxOpt||getLogoContext(item);
+  const {anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
   const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'insp'),true);
   const overlaySvg=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
-
-  const studioLogofxUrl=isPack
-    ? './studio/#/logofx?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
-    : './studio/#/logofx?logo='+encodeURIComponent(item.id);
-  const studioBrandUrl=isPack
-    ? './studio/#/brand?pack='+encodeURIComponent(item.packId)+'&glyph='+encodeURIComponent(item.glyphName)
-    : './studio/#/brand?logo='+encodeURIComponent(item.id);
-
-  const palCols=(item.colors&&item.colors.length?item.colors:anatomy.colors);
   const dotsHtml=palCols.slice(0,6).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('');
-  const anglesStr=anatomy.anglesDeg.length
-    ? [...new Set(anatomy.anglesDeg.map(a=>Math.round(a)))].slice(0,6).map(a=>a+'\u00b0').join(' \u00b7 ')
-    : 'Pure curves';
 
-  const needsInvertForLight=isPack||isLightOnlySvg(item.svg,palCols);
-  const needsInvertForDark=!isPack && (!palCols.length || palCols.every(c=>/^#?(?:[0-3][0-9a-f]{2}|[0-3][0-9a-f]{5}|black|currentcolor)$/i.test(String(c).trim()))) && !needsInvertForLight;
-  const scales=[16,24,32,48].map((sz,i)=>{
-    const dSvg=ensureSvgBox(scopeSvgIds(item.svg,'scd'+i),false,sz);
-    const lSvg=ensureSvgBox(scopeSvgIds(item.svg,'scl'+i),false,sz);
-    return '<div class="comp">'+
+  const scales=[16,24,32,48].map((sz,i)=>
+    '<div class="comp">'+
       '<div class="comp-stage" style="gap:18px;background:#0c0c0f;min-height:92px">'+
-        '<div style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center;flex:none;color:#fafafa'+(needsInvertForDark?';filter:brightness(0) invert(1)':'')+'">'+dSvg+'</div>'+
-        '<div style="width:'+(sz+12)+'px;height:'+(sz+12)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:6px;flex:none;color:#09090b"><span style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center'+(needsInvertForLight?';filter:brightness(0)':'')+'">'+lSvg+'</span></div>'+
+        buildLogoScalePairHtml(item,'sc'+i,sz,needsInvertForDark,needsInvertForLight)+
       '</div>'+
       '<div class="comp-info"><b>'+sz+' \u00d7 '+sz+' px</b><span>Dark ground \u00b7 Light app badge</span></div>'+
-    '</div>';
-  }).join('');
+    '</div>'
+  ).join('');
 
   const swatches=(palCols.length?palCols:['#fafafa']).map(c=>
     '<div class="sw" data-copy="'+esc(c)+'"><i style="background:'+safeCss(c)+'"></i><div><b>'+esc(c)+'</b><span>vector color</span></div></div>'
@@ -2997,12 +3510,6 @@ function buildLogoDetailHtml(item,anatomy){
   const findingsHtml=anatomy.findings.map(f=>
     '<div class="ldb-finding is-'+esc(f.level)+'">'+esc(f.message)+'</div>'
   ).join('');
-
-  const jsonMeta=JSON.stringify({
-    id:item.id, brand:item.brand, markType:item.markType, industry:item.industry,
-    viewBox:anatomy.viewBox, shapes:anatomy.shapes, anchors:anatomy.anchors.length,
-    anglesDeg:anatomy.anglesDeg, colors:palCols, score:anatomy.score, note:item.note
-  },null,2);
 
   return '<div class="detail-bar">'+
       '<div class="detail-nav">'+
@@ -3053,37 +3560,17 @@ function buildLogoDetailHtml(item,anatomy){
       '</div></div>';
 }
 
-function bindLogoDetailInteractions(item,anatomy){
+function bindLogoDetailInteractions(item,ctx){
   const backBtn=detail.querySelector('[data-logo-back]');
   if(backBtn) backBtn.addEventListener('click',e=>{ e.preventDefault(); location.hash='#/logos'; });
   detail.querySelectorAll('[data-copy]').forEach(el=>el.addEventListener('click',()=>copy(el.dataset.copy)));
-  const svgBtn=document.getElementById('ldbDetailCopySvg');
-  if(svgBtn) svgBtn.addEventListener('click',()=>copy(item.svg));
-  const jsonBtn=document.getElementById('ldbDetailCopyJson');
-  if(jsonBtn) jsonBtn.addEventListener('click',()=>{
-    copy(JSON.stringify({id:item.id,brand:item.brand,markType:item.markType,industry:item.industry,anchors:anatomy.anchors.length,score:anatomy.score,colors:item.colors,note:item.note},null,2));
-  });
-
-  let stageDark=Boolean(item.packId)||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
-  const refreshXray=()=>{
-    const stage=document.getElementById('ldbHeroStage');
-    const overlay=document.getElementById('ldbHeroOverlay');
-    const gBtn=document.getElementById('ldbGridBtn');
-    const aBtn=document.getElementById('ldbAncBtn');
-    const tBtn=document.getElementById('ldbGroundBtn');
-    if(stage) stage.classList.toggle('is-dark',stageDark);
-    if(tBtn){ tBtn.setAttribute('aria-pressed',String(stageDark)); tBtn.textContent=stageDark?'Dark Ground':'Light Ground'; }
-    if(gBtn) gBtn.setAttribute('aria-pressed',String(logoState.showGrid));
-    if(aBtn) aBtn.setAttribute('aria-pressed',String(logoState.showAnchors));
-    if(overlay) overlay.innerHTML=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
-  };
-
-  document.getElementById('ldbGridBtn')?.addEventListener('click',()=>{ logoState.showGrid=!logoState.showGrid; refreshXray(); });
-  document.getElementById('ldbAncBtn')?.addEventListener('click',()=>{ logoState.showAnchors=!logoState.showAnchors; refreshXray(); });
-  document.getElementById('ldbGroundBtn')?.addEventListener('click',()=>{ stageDark=!stageDark; logoState.xrayDark=stageDark; refreshXray(); });
+  document.getElementById('ldbDetailCopySvg')?.addEventListener('click',()=>copy(item.svg));
+  document.getElementById('ldbDetailCopyJson')?.addEventListener('click',()=>copy(ctx.jsonMeta));
+  bindLogoXrayStage(item,ctx.anatomy,{stage:'ldbHeroStage',overlay:'ldbHeroOverlay',grid:'ldbGridBtn',anc:'ldbAncBtn',ground:'ldbGroundBtn'});
 }
 
 async function renderLogoDetail(logoRoute,immediate){
+  closeDsSelectMenu(false);
   const tok=++navToken;
   let item=null;
   if(logoRoute.startsWith('pack/')){
@@ -3092,21 +3579,7 @@ async function renderLogoDetail(logoRoute,immediate){
     const glyphName=decodeURIComponent(parts.slice(1).join('/')||'');
     const pk=ICON_PACKS[packId];
     const g=(pk&&pk.glyphs||[]).find(x=>x.name===glyphName);
-    if(g){
-      item={
-        id:packId+'::'+glyphName,
-        packId,
-        glyphName,
-        brand:packId+' / '+glyphName,
-        markType:'icon glyph',
-        industry:'ui icon pack',
-        colors:['#fafafa'],
-        techniques:[pk.style||'vector',((pk.grid||24)+'px grid')],
-        geometry:['grid-modular'],
-        note:'Official '+(pk.grid||24)+'\u00d7'+(pk.grid||24)+'px grid glyph from '+packId+(pk.version?(' v'+pk.version):'')+'.',
-        svg:buildSysSvg(pk,g,256,'#fafafa',true).replace(/currentColor/gi,'#fafafa')
-      };
-    }
+    if(g) item=makePackLogoItem(packId,pk,g);
   }else{
     const logoId=decodeURIComponent(logoRoute);
     item=logoByIdCache.get(logoId)||null;
@@ -3124,7 +3597,7 @@ async function renderLogoDetail(logoRoute,immediate){
   if(tok!==navToken) return;
   if(!item){ location.hash='#/logos'; return; }
 
-  const anatomy=parseLogoAnatomy(item.svg);
+  const ctx=getLogoContext(item);
   const apply=()=>{
     resetSystemTheme();
     state.view='logos';
@@ -3138,9 +3611,9 @@ async function renderLogoDetail(logoRoute,immediate){
     rankingEl.style.display='none';
     coverageEl.style.display='none';
     applyLogoHeaderSlabs(item);
-    detail.innerHTML=buildLogoDetailHtml(item,anatomy);
+    detail.innerHTML=buildLogoDetailHtml(item,ctx);
     detail.classList.add('on');
-    bindLogoDetailInteractions(item,anatomy);
+    bindLogoDetailInteractions(item,ctx);
     if(!immediate) window.scrollTo(0,0);
   };
   if(immediate){ apply(); return; }
@@ -3158,6 +3631,7 @@ function syncTopSearchPlaceholder(){
 }
 
 function showView(immediate){
+  closeDsSelectMenu(false);
   ++navToken;
   clearTimeout(loaderT);
   const loaderEl=document.getElementById('topLoader');
