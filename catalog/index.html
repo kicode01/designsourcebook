@@ -373,11 +373,15 @@
   .ldb-insp-subbar .seg{padding:2px}
   .ldb-insp-subbar .chip{padding:3.5px 9px;font-size:11px}
   .ldb-insp-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:12px 14px;display:flex;flex-direction:column;gap:11px}
-  .ldb-xray-stage{position:relative;height:184px;padding:18px;border-radius:10px;border:1px solid var(--line);background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:none;transition:background-color var(--t-theme)}
+  .ldb-xray-wrap{border:1px solid var(--line);border-radius:10px;overflow:hidden;flex:none;background:var(--panel)}
+  .ldb-xray-stage{position:relative;height:164px;padding:18px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:background-color var(--t-theme)}
   .ldb-xray-stage.is-dark{background:#0c0c0f;color:#fafafa}
-  .ldb-xray-stage .ldb-hero-canvas{width:min(100%,300px);height:148px}
-  .ldb-xray-stage .ldb-hero-tools{top:9px;right:9px;gap:4px;padding:2.5px}
-  .ldb-xray-stage .ldb-hero-tools .chip{padding:3px 8px;font-size:10.5px}
+  .ldb-xray-stage .ldb-hero-canvas{width:min(100%,296px);height:128px}
+  .ldb-stage-bar{display:flex;align-items:center;justify-content:center;gap:8px;padding:7px 10px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent)}
+  .ldb-stage-bar .seg{padding:2px;flex-wrap:wrap;justify-content:center}
+  .ldb-stage-bar .chip{padding:3.5px 9px;font-size:11px}
+  .ldb-stage-bar.is-hero{justify-content:space-between;padding:8px 16px}
+  .ldb-stage-meta{font-size:11px;color:var(--dim2);font-variant-numeric:tabular-nums}
   .ldb-spec-mini{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .ldb-spec-mini>div{background:color-mix(in srgb,var(--ink) 2.5%,transparent);border:1px solid var(--line);border-radius:9px;padding:8px 10px;min-width:0;display:flex;flex-direction:column;gap:2px}
   .ldb-spec-mini small{font-size:9.5px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--dim2)}
@@ -399,17 +403,12 @@
   .ldb-insp-foot{padding:10px 14px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--ink) 2%,transparent);display:grid;grid-template-columns:1fr 1fr;gap:7px;flex:none}
   .ldb-insp-foot .pill-btn{justify-content:center}
 
-  .ldb-hero-stage{position:relative;height:310px;padding:28px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:background-color var(--t-theme)}
+  .ldb-hero-stage{position:relative;height:282px;padding:28px;background:#ffffff;color:#09090b;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:background-color var(--t-theme)}
   .ldb-hero-stage.is-dark{background:#0c0c0f;color:#fafafa}
-  .ldb-hero-canvas{position:relative;width:min(100%,560px);height:254px;flex:none}
+  .ldb-hero-canvas{position:relative;width:min(100%,560px);height:226px;flex:none}
   .ldb-xray-mark,.ldb-xray-overlay{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
   .ldb-xray-overlay{pointer-events:none}
   .ldb-xray-mark svg{width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;display:block}
-  .ldb-hero-tools{position:absolute;top:14px;right:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2;padding:3px;border-radius:999px;background:rgba(9,9,11,.78);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12)}
-  .ldb-hero-tools .chip{color:#d4d4d8;padding:4px 10px;font-size:11.5px}
-  .ldb-hero-tools .chip:hover{color:#fafafa;background:rgba(255,255,255,.1)}
-  .ldb-hero-tools .chip[aria-pressed="true"]{background:#fafafa;color:#09090b}
-  .ldb-hero-tools .chip[aria-pressed="true"]:hover{background:#e4e4e7;color:#09090b}
   .ldb-finding{font-size:12px;line-height:1.5;padding:9px 12px;border-radius:var(--card-radius);border:1px solid var(--line);color:var(--dim);background:var(--panel)}
   .ldb-finding.is-pass{border-color:color-mix(in srgb,var(--ok) 35%,transparent);color:var(--ok)}
   .ldb-finding.is-warn{border-color:color-mix(in srgb,var(--warn) 35%,transparent);color:var(--warn)}
@@ -2881,6 +2880,28 @@ function buildLogoScalePairHtml(item,prefix,sz,needsInvertForDark,needsInvertFor
   return '<div style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center;flex:none;color:#fafafa'+(needsInvertForDark?';filter:brightness(0) invert(1)':'')+'">'+dSvg+'</div>'+
     '<div style="width:'+(sz+10)+'px;height:'+(sz+10)+'px;border-radius:6px;background:#ffffff;display:grid;place-items:center;padding:5px;flex:none;color:#09090b"><span style="width:'+sz+'px;height:'+sz+'px;display:grid;place-items:center'+(needsInvertForLight?';filter:brightness(0)':'')+'">'+lSvg+'</span></div>';
 }
+function buildLogoXrayBoxHtml(item,ctx,prefix,ids,isHero){
+  const {anatomy,darkBox,vbStr}=ctx;
+  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,prefix),true);
+  const overlaySvg=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
+  const stageCls=(isHero?'ldb-hero-stage':'ldb-xray-stage')+(darkBox?' is-dark':'');
+  const stageHtml=
+    '<div class="'+stageCls+'" id="'+esc(ids.stage)+'">'+
+      '<div class="ldb-hero-canvas">'+
+        '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
+        '<svg class="ldb-xray-overlay" id="'+esc(ids.overlay)+'" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+overlaySvg+'</svg>'+
+      '</div>'+
+    '</div>'+
+    '<div class="ldb-stage-bar'+(isHero?' is-hero':'')+'">'+
+      (isHero?'<span class="ldb-stage-meta">ViewBox '+esc(vbStr)+' \u00b7 1:1 inspection</span>':'')+
+      '<div class="seg" role="toolbar" aria-label="X-Ray Inspection Controls">'+
+        '<button type="button" class="chip" id="'+esc(ids.grid)+'" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+
+        '<button type="button" class="chip" id="'+esc(ids.anc)+'" aria-pressed="'+String(logoState.showAnchors)+'">Anchors ('+anatomy.anchors.length+')</button>'+
+        '<button type="button" class="chip" id="'+esc(ids.ground)+'" aria-pressed="'+String(darkBox)+'">'+(darkBox?'Dark Ground':'Light Ground')+'</button>'+
+      '</div>'+
+    '</div>';
+  return isHero?stageHtml:('<div class="ldb-xray-wrap">'+stageHtml+'</div>');
+}
 function bindLogoXrayStage(item,anatomy,ids){
   let stageDark=Boolean(item.packId)||isLightOnlySvg(item.svg,item.colors)||logoState.xrayDark;
   const refresh=()=>{
@@ -3123,8 +3144,6 @@ function renderLogoInspector(){
   const ctx=getLogoContext(item);
   const {isPack,anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
   const miniSvg=ensureSvgBox(scopeSvgIds(item.svg,'miniinsp'),true);
-  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'sideinsp'),true);
-  const overlaySvg=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
   const fullHref=logoDetailHashFor(item);
   const subMeta=(isPack?(item.packId+' \u00b7 '+(item.techniques&&item.techniques[1]||'24px grid')):(item.markType||'mark')+' \u00b7 '+(item.industry||'general'));
 
@@ -3157,17 +3176,7 @@ function renderLogoInspector(){
     const findingsHtml=anatomy.findings.map(f=>'<div class="ldb-finding is-'+esc(f.level)+'" style="padding:7px 10px;font-size:11px">'+esc(f.message)+'</div>').join('');
 
     bodyHtml=
-      '<div class="ldb-xray-stage'+(darkBox?' is-dark':'')+'" id="ldbSideStage">'+
-        '<div class="ldb-hero-tools">'+
-          '<button type="button" class="chip" id="ldbSideGridBtn" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+
-          '<button type="button" class="chip" id="ldbSideAncBtn" aria-pressed="'+String(logoState.showAnchors)+'">Anchors ('+anatomy.anchors.length+')</button>'+
-          '<button type="button" class="chip" id="ldbSideGroundBtn" aria-pressed="'+String(darkBox)+'">'+(darkBox?'Dark Ground':'Light Ground')+'</button>'+
-        '</div>'+
-        '<div class="ldb-hero-canvas">'+
-          '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
-          '<svg class="ldb-xray-overlay" id="ldbSideOverlay" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+overlaySvg+'</svg>'+
-        '</div>'+
-      '</div>'+
+      buildLogoXrayBoxHtml(item,ctx,'sideinsp',{stage:'ldbSideStage',overlay:'ldbSideOverlay',grid:'ldbSideGridBtn',anc:'ldbSideAncBtn',ground:'ldbSideGroundBtn'},false)+
       '<div class="ldb-spec-mini">'+
         '<div><small>Geometry</small><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b><span>'+esc(vbStr)+'</span></div>'+
         '<div><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' circle(s)</span></div>'+
@@ -3501,9 +3510,7 @@ function buildLogoXrayOverlayMarkup(anatomy,showGrid,showAnchors){
 
 function buildLogoDetailHtml(item,ctxOpt){
   const ctx=ctxOpt||getLogoContext(item);
-  const {anatomy,darkBox,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
-  const xrayMark=ensureSvgBox(scopeSvgIds(item.svg,'insp'),true);
-  const overlaySvg=buildLogoXrayOverlayMarkup(anatomy,logoState.showGrid,logoState.showAnchors);
+  const {anatomy,vbStr,palCols,anglesStr,needsInvertForLight,needsInvertForDark,studioLogofxUrl,studioBrandUrl,jsonMeta}=ctx;
   const dotsHtml=palCols.slice(0,6).map(c=>'<i style="background:'+safeCss(c)+'"></i>').join('');
 
   const scales=[16,24,32,48].map((sz,i)=>
@@ -3543,17 +3550,7 @@ function buildLogoDetailHtml(item,ctxOpt){
       '</div>'+
     '</div>'+
     '<div class="hero-wrap">'+
-      '<div class="ldb-hero-stage'+(darkBox?' is-dark':'')+'" id="ldbHeroStage">'+
-        '<div class="ldb-hero-tools">'+
-          '<button type="button" class="chip" id="ldbGridBtn" aria-pressed="'+String(logoState.showGrid)+'">Grid Axes</button>'+
-          '<button type="button" class="chip" id="ldbAncBtn" aria-pressed="'+String(logoState.showAnchors)+'">Anchors ('+anatomy.anchors.length+')</button>'+
-          '<button type="button" class="chip" id="ldbGroundBtn" aria-pressed="'+String(darkBox)+'">'+(darkBox?'Dark Ground':'Light Ground')+'</button>'+
-        '</div>'+
-        '<div class="ldb-hero-canvas">'+
-          '<div class="ldb-xray-mark">'+xrayMark+'</div>'+
-          '<svg class="ldb-xray-overlay" id="ldbHeroOverlay" viewBox="'+esc(vbStr)+'" preserveAspectRatio="xMidYMid meet">'+overlaySvg+'</svg>'+
-        '</div>'+
-      '</div>'+
+      buildLogoXrayBoxHtml(item,ctx,'insp',{stage:'ldbHeroStage',overlay:'ldbHeroOverlay',grid:'ldbGridBtn',anc:'ldbAncBtn',ground:'ldbGroundBtn'},true)+
       '<div class="spec-bar">'+
         '<div class="spec-cell"><small>Geometry</small><b>'+anatomy.shapes+' shapes \u00b7 '+anatomy.anchors.length+' anchors</b><span>ViewBox '+esc(vbStr)+'</span></div>'+
         '<div class="spec-cell"><small>Angles</small><b>'+esc(anglesStr)+'</b><span>'+anatomy.circles.length+' detected circle(s)</span></div>'+
