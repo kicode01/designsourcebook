@@ -59,6 +59,35 @@ export default function App() {
     document.title = TITLES[path] ?? TITLES['/systems'];
   }, [path]);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    let hasChameleon = root.classList.contains('ds-chameleon-enter');
+    try {
+      const raw = sessionStorage.getItem('ds_studio_chameleon');
+      if (raw) {
+        sessionStorage.removeItem('ds_studio_chameleon');
+        hasChameleon = true;
+      }
+    } catch {
+      // ignore storage restrictions
+    }
+    if (!hasChameleon) return;
+    root.classList.add('ds-chameleon-revealed');
+    const raf = requestAnimationFrame(() => {
+      root.classList.remove('ds-chameleon-enter');
+    });
+    const timer = window.setTimeout(() => {
+      root.classList.remove('ds-chameleon-revealed');
+      root.style.removeProperty('background-color');
+    }, 380);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.clearTimeout(timer);
+      root.classList.remove('ds-chameleon-enter', 'ds-chameleon-revealed');
+      root.style.removeProperty('background-color');
+    };
+  }, []);
+
   return (
     <ProjectProvider>
       <RouterView path={path} />

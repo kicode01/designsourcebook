@@ -9,6 +9,32 @@
       content="Deterministic Design System Maker, Indexed Logo Construction Database, Logo Maker, WebGL2 LogoFX, and Brand Kit Workbench."
     />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <style>html.ds-chameleon-enter #root{opacity:0;transform:scale(.992)}</style>
+    <script>
+      (function () {
+        var theme = 'dark';
+        try {
+          if (localStorage.getItem('ds_studio_theme') === 'light') theme = 'light';
+        } catch (e) {}
+        var root = document.documentElement;
+        root.classList.toggle('dark', theme !== 'light');
+        root.style.backgroundColor = theme === 'light' ? '#fafafa' : '#09090b';
+        try {
+          var raw = sessionStorage.getItem('ds_studio_chameleon');
+          if (raw) {
+            var data = JSON.parse(raw);
+            if (data && typeof data.ts === 'number' && Date.now() - data.ts < 5000) {
+              root.classList.add('ds-chameleon-enter');
+              setTimeout(function () {
+                root.classList.remove('ds-chameleon-enter');
+              }, 900);
+            } else {
+              sessionStorage.removeItem('ds_studio_chameleon');
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
