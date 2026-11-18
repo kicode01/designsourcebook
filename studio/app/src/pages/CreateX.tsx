@@ -45,8 +45,30 @@ import {
 } from '../engine/svgPaint';
 import { parseSvgAnatomy, sanitizeSvg } from '../engine/svgAnatomy';
 import { useProject, type ActiveMark } from '../state/project';
+import {
+  buildBadgeContainerPath,
+  buildBlueprintSpecSvg,
+  buildKeylineOverlayPaths,
+  buildReactComponentCode,
+  computeOpticalMetrics,
+  dilateSelection,
+  erodeSelection,
+  EXTENDED_STARTERS,
+  floodFillFaces,
+  MONOGRAM_CHARS,
+  outlineSelection,
+  rayIntersectFaces,
+  stampMonogramLetter,
+  type BadgeShape,
+  type KeylineOverlayKind,
+  type RenderPathStyle,
+} from '../components/logo-maker/logoMakerUtils';
+import { LogoStressTestLab } from '../components/logo-maker/LogoStressTestLab';
+import { LogoLockupBuilder } from '../components/logo-maker/LogoLockupBuilder';
 
-type Tool = 'select' | 'brush' | 'eraser';
+type Tool = 'select' | 'brush' | 'bucket' | 'line' | 'picker' | 'eraser';
+type StageMode = 'construct' | 'lockup' | 'audit';
+type InspectorTab = 'construct' | 'style' | 'starters';
 type GridFilterCat = 'best' | 'all' | GridCategory;
 type FillMode = 'solid' | 'linear' | 'radial';
 
@@ -152,6 +174,17 @@ interface MarkPathLayer {
   d: string;
 }
 
+interface CleanSvgStyleOpts {
+  renderStyle?: RenderPathStyle;
+  strokeWidth?: number;
+  strokeJoin?: 'round' | 'miter' | 'bevel';
+  badgeShape?: BadgeShape;
+  badgeColor?: string;
+  badgeKnockout?: boolean;
+  markScalePct?: number;
+  markRotateDeg?: number;
+}
+
 function buildCleanSvg(
   layers: MarkPathLayer[],
   fillMode: FillMode,
@@ -159,7 +192,19 @@ function buildCleanSvg(
   angleDeg: number,
   gradId: string,
   title = 'Design Sourcebook Custom Mark',
+  opts: CleanSvgStyleOpts = {},
 ): string {
+  const {
+    renderStyle = 'fill',
+    strokeWidth = 3,
+    strokeJoin = 'round',
+    badgeShape = 'none',
+    badgeColor = '#18181b',
+    badgeKnockout = false,
+    markScalePct = 100,
+    markRotateDeg = 0,
+  } = opts;
+
   const usesGrad = layers.some((l) => l.fillKey === GRAD_KEY) || (layers.length === 0 && fillMode !== 'solid');
   const gc = computeGradientCoords(angleDeg);
   const stopXml = stops
@@ -170,14 +215,40 @@ function buildCleanSvg(
       ? `<defs><radialGradient id="${gradId}" gradientUnits="userSpaceOnUse" cx="${CENTER}" cy="${CENTER}" r="112">${stopXml}</radialGradient></defs>`
       : `<defs><linearGradient id="${gradId}" gradientUnits="userSpaceOnUse" x1="${gc.x1}" y1="${gc.y1}" x2="${gc.x2}" y2="${gc.y2}">${stopXml}</linearGradient></defs>`
     : '';
-  const pathXml = layers
-    .map((l) => `<path fill="${l.fillKey === GRAD_KEY ? `url(#${gradId})` : l.fillAttr}" d="${l.d}"/>`)
-    .join('');
+
+  const badgePathD = buildBadgeContainerPath(badgeShape, 10);
+  const transformAttr =
+    markScalePct !== 100 || markRotateDeg !== 0
+      ? ` transform="translate(${CENTER} ${CENTER}) rotate(${markRotateDeg}) scale(${(markScalePct / 100).toFixed(3)}) translate(-${CENTER} -${CENTER})"`
+      : '';
+
+  let innerXml = '';
+  if (badgeShape !== 'none' && badgeKnockout && badgePathD) {
+    const combinedMarkD = layers.map((l) => l.d).join(' ');
+    const paint = layers[0]?.fillKey === GRAD_KEY ? `url(#${gradId})` : layers[0]?.fillAttr ?? badgeColor;
+    innerXml = `<path fill="${paint}" fill-rule="evenodd" d="${badgePathD} ${combinedMarkD}"${transformAttr}/>`;
+  } else {
+    const badgeXml = badgeShape !== 'none' && badgePathD ? `<path fill="${badgeColor}" d="${badgePathD}"/>` : '';
+    const pathXml = layers
+      .map((l) => {
+        const paint = l.fillKey === GRAD_KEY ? `url(#${gradId})` : l.fillAttr;
+        if (renderStyle === 'stroke') {
+          return `<path fill="none" stroke="${paint}" stroke-width="${strokeWidth}" stroke-linejoin="${strokeJoin}" stroke-linecap="round" d="${l.d}"/>`;
+        }
+        if (renderStyle === 'fill-stroke') {
+          return `<path fill="${paint}" fill-opacity="0.22" stroke="${paint}" stroke-width="${strokeWidth}" stroke-linejoin="${strokeJoin}" stroke-linecap="round" d="${l.d}"/>`;
+        }
+        return `<path fill="${paint}" d="${l.d}"/>`;
+      })
+      .join('');
+    innerXml = `${badgeXml}<g${transformAttr}>${pathXml}</g>`;
+  }
+
   // SHEET=240 fits cleanly inside 256x256 with an exact 8px optical margin on every side
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
   <title id="title">${title}</title>
   ${defsXml}<g id="symbol" transform="translate(8 8)">
-    ${pathXml}
+    ${innerXml}
   </g>
 </svg>`;
 }
@@ -185,6 +256,25 @@ function buildCleanSvg(
 export function CreateX() {
   const { theme, activeMark, setActiveMark, designSystem } = useProject();
   const openedWithQuery = useMemo(() => hasMarkQueryInHash(), []);
+
+  const [stageMode, setStageMode] = useState<StageMode>('construct');
+  const [inspectorTab, setInspectorTab] = useState<InspectorTab>('construct');
+  const [keylineKind, setKeylineKind] = useState<KeylineOverlayKind>('golden-phi');
+  const [showOpticalHud, setShowOpticalHud] = useState<boolean>(true);
+  const [showAnchorXray, setShowAnchorXray] = useState<boolean>(false);
+
+  const [renderStyle, setRenderStyle] = useState<RenderPathStyle>('fill');
+  const [strokeWidth, setStrokeWidth] = useState<number>(3.5);
+  const [strokeJoin, setStrokeJoin] = useState<'round' | 'miter' | 'bevel'>('round');
+  const [badgeShape, setBadgeShape] = useState<BadgeShape>('none');
+  const [badgeColor, setBadgeColor] = useState<string>('#18181b');
+  const [badgeKnockout, setBadgeKnockout] = useState<boolean>(false);
+  const [markScalePct, setMarkScalePct] = useState<number>(100);
+  const [markRotateDeg, setMarkRotateDeg] = useState<number>(0);
+  const [starterCat, setStarterCat] = useState<'all' | 'emblem' | 'tech' | 'badge'>('all');
+  const [monogramMode, setMonogramMode] = useState<'replace' | 'union' | 'subtract'>('replace');
+  const [activeMonogramChar, setActiveMonogramChar] = useState<string>('A');
+  const [lineDrag, setLineDrag] = useState<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
 
   const [gridId, setGridId] = useState<GridId>(openedWithQuery ? 'adaptive-mesh' : DEFAULT_GRID);
   const [density, setDensity] = useState<DensityLevel>(DEFAULT_DENSITY);
@@ -403,13 +493,15 @@ export function CreateX() {
     if (!el) return;
     const read = () => {
       const r = el.getBoundingClientRect();
-      setBox({ w: Math.max(1, Math.round(r.width)), h: Math.max(1, Math.round(r.height)) });
+      if (r.width > 20 && r.height > 20) {
+        setBox({ w: Math.round(r.width), h: Math.round(r.height) });
+      }
     };
     read();
     const ro = new ResizeObserver(read);
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [stageMode]);
 
   const geo = useMemo(() => {
     const sheet = Math.max(160, Math.round((Math.min(box.w, box.h) * SHEET_FILL * zoom) / 100));
@@ -485,19 +577,46 @@ export function CreateX() {
 
   const markPath = useMemo(() => markLayers.map((l) => l.d).join(''), [markLayers]);
 
+  const styleOpts = useMemo<CleanSvgStyleOpts>(
+    () => ({
+      renderStyle,
+      strokeWidth,
+      strokeJoin,
+      badgeShape,
+      badgeColor,
+      badgeKnockout,
+      markScalePct,
+      markRotateDeg,
+    }),
+    [renderStyle, strokeWidth, strokeJoin, badgeShape, badgeColor, badgeKnockout, markScalePct, markRotateDeg],
+  );
+
   const cleanSvg = useMemo(
-    () => buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-grad', `${designSystem.name} Mark`),
-    [markLayers, fillMode, activeStops, gradAngle, designSystem.name],
+    () => buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-grad', `${designSystem.name} Mark`, styleOpts),
+    [markLayers, fillMode, activeStops, gradAngle, designSystem.name, styleOpts],
   );
   const craftDockSvgs = useMemo(
     () => ({
-      48: buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-dock-48', `${designSystem.name} Mark`),
-      28: buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-dock-28', `${designSystem.name} Mark`),
-      16: buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-dock-16', `${designSystem.name} Mark`),
+      48: buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-dock-48', `${designSystem.name} Mark`, styleOpts),
+      28: buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-dock-28', `${designSystem.name} Mark`, styleOpts),
+      16: buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, 'ds-mk-dock-16', `${designSystem.name} Mark`, styleOpts),
     }),
-    [markLayers, fillMode, activeStops, gradAngle, designSystem.name],
+    [markLayers, fillMode, activeStops, gradAngle, designSystem.name, styleOpts],
   );
   const anatomy = useMemo(() => parseSvgAnatomy(cleanSvg), [cleanSvg]);
+  const optical = useMemo(() => computeOpticalMetrics(builtGrid, selected), [builtGrid, selected]);
+  const keylineOverlay = useMemo(() => buildKeylineOverlayPaths(keylineKind), [keylineKind]);
+  const badgeContainerPathD = useMemo(() => buildBadgeContainerPath(badgeShape, 10), [badgeShape]);
+
+  const lockupMarkInnerXml = useMemo(() => {
+    const m = /<g id="symbol"[^>]*>([\s\S]*?)<\/g>\s*<\/svg>/i.exec(cleanSvg);
+    return m ? m[1].trim() : '';
+  }, [cleanSvg]);
+
+  const lockupDefsXml = useMemo(() => {
+    const m = /(<defs>[\s\S]*?<\/defs>)/i.exec(cleanSvg);
+    return m ? m[1] : '';
+  }, [cleanSvg]);
 
   const undo = useCallback(() => {
     if (!past.length) return;
@@ -530,36 +649,91 @@ export function CreateX() {
     };
   }, []);
 
+  const transformSelection = useCallback(
+    (mapPt: (x: number, y: number) => [number, number]) => {
+      if (!selected.size) return;
+      pushHistory();
+      const next = new Set<string>();
+      for (const id of selected) {
+        const f = builtGrid.faceMap.get(id);
+        if (!f) continue;
+        const [tx, ty] = mapPt(f.cx, f.cy);
+        let best = '';
+        let bestD = Infinity;
+        for (const cand of builtGrid.faces) {
+          const d = (cand.cx - tx) ** 2 + (cand.cy - ty) ** 2;
+          if (d < bestD) {
+            bestD = d;
+            best = cand.id;
+          }
+        }
+        if (best) next.add(best);
+      }
+      setSelected(next);
+    },
+    [selected, builtGrid, pushHistory],
+  );
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement)?.tagName === 'INPUT') return;
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA') return;
       const meta = e.metaKey || e.ctrlKey;
-      if (meta && e.key.toLowerCase() === 'z') {
+      const k = e.key.toLowerCase();
+      if (meta && k === 'z') {
         e.preventDefault();
         if (e.shiftKey) redo();
         else undo();
-      } else if (meta && e.key.toLowerCase() === 'y') {
+      } else if (meta && k === 'y') {
         e.preventDefault();
         redo();
-      } else if (!meta && e.key.toLowerCase() === 'b') {
+      } else if (!meta && k === 'b') {
         setTool('brush');
-      } else if (!meta && e.key.toLowerCase() === 'e') {
+      } else if (!meta && k === 'e') {
         setTool('eraser');
-      } else if (!meta && e.key.toLowerCase() === 's') {
+      } else if (!meta && k === 's') {
         setTool('select');
+      } else if (!meta && k === 'g') {
+        setTool('bucket');
+      } else if (!meta && k === 'l') {
+        setTool('line');
+      } else if (!meta && k === 'i') {
+        setTool('picker');
+      } else if (!meta && e.key === 'ArrowLeft') {
+        e.preventDefault();
+        transformSelection((x, y) => [x - 10, y]);
+      } else if (!meta && e.key === 'ArrowRight') {
+        e.preventDefault();
+        transformSelection((x, y) => [x + 10, y]);
+      } else if (!meta && e.key === 'ArrowUp') {
+        e.preventDefault();
+        transformSelection((x, y) => [x, y - 10]);
+      } else if (!meta && e.key === 'ArrowDown') {
+        e.preventDefault();
+        transformSelection((x, y) => [x, y + 10]);
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [undo, redo]);
+  }, [undo, redo, transformSelection]);
 
-  const faceAt = useCallback(
-    (clientX: number, clientY: number): GridFace | null => {
+  const sheetPointAt = useCallback(
+    (clientX: number, clientY: number): { sx: number; sy: number } | null => {
       const rect = svgRef.current?.getBoundingClientRect();
-      if (!rect || !hitCtx) return null;
+      if (!rect) return null;
       const sx = ((clientX - rect.left - geo.ox) / geo.sheet) * SHEET;
       const sy = ((clientY - rect.top - geo.oy) / geo.sheet) * SHEET;
       if (sx < 0 || sy < 0 || sx > SHEET || sy > SHEET) return null;
+      return { sx, sy };
+    },
+    [geo],
+  );
+
+  const faceAt = useCallback(
+    (clientX: number, clientY: number): GridFace | null => {
+      const pt = sheetPointAt(clientX, clientY);
+      if (!pt || !hitCtx) return null;
+      const { sx, sy } = pt;
       for (const f of builtGrid.faces) {
         if (sx < f.bbox[0] - 0.5 || sx > f.bbox[2] + 0.5 || sy < f.bbox[1] - 0.5 || sy > f.bbox[3] + 0.5) continue;
         const p = hitPaths.get(f.id);
@@ -567,7 +741,7 @@ export function CreateX() {
       }
       return null;
     },
-    [geo, builtGrid, hitPaths, hitCtx],
+    [sheetPointAt, builtGrid, hitPaths, hitCtx],
   );
 
   const paintFace = useCallback(
@@ -604,10 +778,54 @@ export function CreateX() {
   );
 
   const onPointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
+    const pt = sheetPointAt(e.clientX, e.clientY);
     const f = faceAt(e.clientX, e.clientY);
-    if (!f) return;
+    if (!f && tool !== 'line') return;
     e.preventDefault();
     svgRef.current?.setPointerCapture(e.pointerId);
+
+    if (tool === 'picker' && f) {
+      const sampled = faceColors.get(f.id);
+      if (sampled && sampled !== GRAD_KEY) {
+        setFillMode('solid');
+        setColor(sampled);
+        flash(`Sampled ${sampled.toUpperCase()}`);
+      } else {
+        flash(`Brush active: ${color.toUpperCase()}`);
+      }
+      setTool('brush');
+      return;
+    }
+
+    if (tool === 'bucket' && f) {
+      pushHistory();
+      const { component, targetSelectState } = floodFillFaces(builtGrid, selected, f, symmetry);
+      const next = new Set(selected);
+      const nextColors = new Map(faceColors);
+      const activeTok = fillMode === 'solid' ? color.toLowerCase() : GRAD_KEY;
+      for (const id of component) {
+        if (targetSelectState) {
+          next.add(id);
+          if (paintByFacet || nextColors.size > 0) nextColors.set(id, activeTok);
+        } else {
+          next.delete(id);
+          nextColors.delete(id);
+        }
+      }
+      setSelected(next);
+      setFaceColors(nextColors);
+      flash(`Flood-filled ${component.size} connected facets`);
+      return;
+    }
+
+    if (tool === 'line' && pt) {
+      const x0 = f ? f.cx : pt.sx;
+      const y0 = f ? f.cy : pt.sy;
+      setLineDrag({ x1: x0, y1: y0, x2: pt.sx, y2: pt.sy });
+      return;
+    }
+
+    if (!f) return;
     painting.current = true;
     strokeDirty.current = false;
     lastClientPt.current = { x: e.clientX, y: e.clientY };
@@ -618,7 +836,14 @@ export function CreateX() {
   const onPointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
     const f = faceAt(e.clientX, e.clientY);
     setHoverFace(f);
-    if (!painting.current || tool === 'select') return;
+    if (lineDrag) {
+      const pt = sheetPointAt(e.clientX, e.clientY);
+      if (pt) {
+        setLineDrag((prev) => (prev ? { ...prev, x2: f ? f.cx : pt.sx, y2: f ? f.cy : pt.sy } : null));
+      }
+      return;
+    }
+    if (!painting.current || tool === 'select' || tool === 'bucket' || tool === 'picker') return;
 
     // Interpolate intermediate samples along fast drags so thin triangles are never skipped
     const prevPt = lastClientPt.current;
@@ -638,6 +863,34 @@ export function CreateX() {
     } else if (f && f.id !== lastFaceId.current) {
       lastFaceId.current = f.id;
       paintFace(f, false);
+    }
+  };
+
+  const onPointerUpCanvas = () => {
+    if (lineDrag) {
+      const rayHits = rayIntersectFaces(
+        builtGrid,
+        lineDrag.x1,
+        lineDrag.y1,
+        lineDrag.x2,
+        lineDrag.y2,
+        symmetry,
+        hitCtx,
+        hitPaths,
+      );
+      if (rayHits.size > 0) {
+        pushHistory();
+        const next = new Set(selected);
+        const nextColors = new Map(faceColors);
+        const activeTok = fillMode === 'solid' ? color.toLowerCase() : GRAD_KEY;
+        rayHits.forEach((id) => {
+          next.add(id);
+          if (paintByFacet || nextColors.size > 0) nextColors.set(id, activeTok);
+        });
+        setSelected(next);
+        setFaceColors(nextColors);
+      }
+      setLineDrag(null);
     }
   };
 
@@ -834,9 +1087,30 @@ export function CreateX() {
     if (meta && nextId !== gridId) flash(`${meta.label} grid active`);
   };
 
-  const applyStarter = (starterIdx: number) => {
+  const applyExtendedStarter = (starterId: string) => {
+    const st = EXTENDED_STARTERS.find((s) => s.id === starterId) ?? EXTENDED_STARTERS[0];
     pushHistory();
-    setSelected(stampStarterOnGrid(builtGrid, starterIdx));
+    setSelected(new Set(builtGrid.faces.filter((f) => st.keep(f.cx, f.cy)).map((f) => f.id)));
+    setFaceColors(new Map());
+    flash(`${st.label} starter applied`);
+  };
+
+  const applyMonogramStamp = (char: string) => {
+    setActiveMonogramChar(char);
+    pushHistory();
+    const stamped = stampMonogramLetter(builtGrid, char);
+    if (monogramMode === 'union') {
+      const next = new Set(selected);
+      stamped.forEach((id) => next.add(id));
+      setSelected(next);
+    } else if (monogramMode === 'subtract') {
+      const next = new Set(selected);
+      stamped.forEach((id) => next.delete(id));
+      setSelected(next);
+    } else {
+      setSelected(stamped);
+    }
+    flash(`Monogram '${char}' (${monogramMode})`);
   };
 
   const applySquarePreset = (presetId: string) => {
@@ -856,30 +1130,82 @@ export function CreateX() {
     setSelected(nextSel);
   };
 
-  const transformSelection = (mapPt: (x: number, y: number) => [number, number]) => {
-    if (!selected.size) return;
+  const flip = () => transformSelection((x, y) => [SHEET - x, y]);
+  const flipV = () => transformSelection((x, y) => [x, SHEET - y]);
+  const rotate90 = () => transformSelection((x, y) => [CENTER - (y - CENTER), CENTER + (x - CENTER)]);
+
+  const invertSelection = () => {
     pushHistory();
     const next = new Set<string>();
+    for (const f of builtGrid.faces) {
+      const r = Math.hypot(f.cx - CENTER, f.cy - CENTER);
+      if (r <= 104 && !selected.has(f.id)) next.add(f.id);
+    }
+    setSelected(next);
+    flash('Inverted selection inside emblem radius');
+  };
+
+  const hollowOutline = () => {
+    if (!selected.size) return;
+    pushHistory();
+    setSelected(outlineSelection(builtGrid, selected));
+    flash('Converted selection to boundary outline ring');
+  };
+
+  const expandSelection = () => {
+    if (!selected.size) return;
+    pushHistory();
+    setSelected(dilateSelection(builtGrid, selected));
+    flash('Expanded selection (+1 ring)');
+  };
+
+  const contractSelection = () => {
+    if (!selected.size) return;
+    pushHistory();
+    setSelected(erodeSelection(builtGrid, selected));
+    flash('Contracted selection (-1 ring)');
+  };
+
+  const autoCenterSelection = () => {
+    if (!selected.size) return;
+    if (Math.abs(optical.dx) < 0.8 && Math.abs(optical.dy) < 0.8) {
+      flash('Mark is already optically centered (Δ < 0.8px)');
+      return;
+    }
+    transformSelection((x, y) => [x - optical.dx, y - optical.dy]);
+    flash(`Optically centered mark by Δ(${-optical.dx}, ${-optical.dy})`);
+  };
+
+  const symmetrizeSelection = () => {
+    if (!selected.size) return;
+    const mode = symmetry === 'none' ? 'x' : symmetry;
+    pushHistory();
+    const next = new Set(selected);
     for (const id of selected) {
       const f = builtGrid.faceMap.get(id);
       if (!f) continue;
-      const [tx, ty] = mapPt(f.cx, f.cy);
-      let best = '';
-      let bestD = Infinity;
-      for (const cand of builtGrid.faces) {
-        const d = (cand.cx - tx) ** 2 + (cand.cy - ty) ** 2;
-        if (d < bestD) {
-          bestD = d;
-          best = cand.id;
-        }
-      }
-      if (best) next.add(best);
+      builtGrid.symmetricFaces(f, mode).forEach((sid) => next.add(sid));
     }
     setSelected(next);
+    flash(`Symmetrized selection (${mode.toUpperCase()})`);
   };
 
-  const flip = () => transformSelection((x, y) => [SHEET - x, y]);
-  const rotate90 = () => transformSelection((x, y) => [CENTER - (y - CENTER), CENTER + (x - CENTER)]);
+  const randomizeEmblem = () => {
+    pushHistory();
+    const pick = EXTENDED_STARTERS[Math.floor(Math.random() * EXTENDED_STARTERS.length)];
+    const innerCutR = 14 + Math.random() * 24;
+    const outerMaxR = 78 + Math.random() * 22;
+    const next = new Set<string>();
+    for (const f of builtGrid.faces) {
+      const r = Math.hypot(f.cx - CENTER, f.cy - CENTER);
+      if (r >= innerCutR && r <= outerMaxR && pick.keep(f.cx, f.cy)) {
+        builtGrid.symmetricFaces(f, symmetry === 'none' ? 'x' : symmetry).forEach((sid) => next.add(sid));
+      }
+    }
+    setSelected(next);
+    setFaceColors(new Map());
+    flash(`Synthesized ${pick.label} emblem`);
+  };
 
   const clear = () => {
     pushHistory();
@@ -892,8 +1218,25 @@ export function CreateX() {
     flash('Vector SVG exported');
   };
 
-  const exportPng = () => {
-    const px = 1024;
+  const exportBlueprintSvg = () => {
+    const bpSvg = buildBlueprintSpecSvg({
+      brandName: designSystem.name || activeMark.name || 'Custom Brand Mark',
+      gridLabel: `${builtGrid.label} (${density.toUpperCase()})`,
+      wireframeD: builtGrid.wireframe,
+      keylinePrimaryD: keylineOverlay.primary,
+      keylineSecondaryD: keylineOverlay.secondary,
+      markInnerXml: lockupMarkInnerXml,
+      metrics: optical,
+      score: anatomy.score,
+      anchorsCount: anatomy.anchors.length,
+      facetsCount: selected.size,
+      darkTheme: theme === 'dark',
+    });
+    download(new Blob([bpSvg], { type: 'image/svg+xml' }), `blueprint-${gridId}-${density}.svg`);
+    flash('Architectural Blueprint SVG exported');
+  };
+
+  const exportPngAtSize = (px = 1024) => {
     const canvas = document.createElement('canvas');
     canvas.width = px;
     canvas.height = px;
@@ -902,6 +1245,10 @@ export function CreateX() {
     const k = px / 256;
     ctx.scale(k, k);
     ctx.translate(8, 8);
+    if (badgeShape !== 'none' && badgeContainerPathD && !badgeKnockout) {
+      ctx.fillStyle = badgeColor;
+      ctx.fill(new Path2D(badgeContainerPathD));
+    }
     let gradBrush: CanvasGradient | null = null;
     if (markLayers.some((l) => l.fillKey === GRAD_KEY)) {
       if (fillMode === 'radial') {
@@ -914,18 +1261,39 @@ export function CreateX() {
       }
     }
     for (const layer of markLayers) {
-      ctx.fillStyle = layer.fillKey === GRAD_KEY && gradBrush ? gradBrush : layer.fillAttr;
-      ctx.fill(new Path2D(layer.d));
+      const paint = layer.fillKey === GRAD_KEY && gradBrush ? gradBrush : layer.fillAttr;
+      if (renderStyle === 'stroke') {
+        ctx.strokeStyle = paint;
+        ctx.lineWidth = strokeWidth;
+        ctx.lineJoin = strokeJoin;
+        ctx.stroke(new Path2D(layer.d));
+      } else {
+        ctx.fillStyle = paint;
+        ctx.fill(new Path2D(layer.d));
+      }
     }
     canvas.toBlob((blob) => {
       if (blob) {
-        download(blob, `logo-${gridId}-${density}.png`);
-        flash('PNG exported at 1024px');
+        download(blob, `logo-${gridId}-${px}px.png`);
+        flash(`PNG exported at ${px}×${px}px`);
       }
     }, 'image/png');
   };
 
-  const pushMark = (targetRoute: '#/logofx' | '#/brand') => {
+  const exportPng = () => exportPngAtSize(1024);
+
+  const copySvgCode = () => {
+    void navigator.clipboard.writeText(cleanSvg);
+    flash('Copied clean SVG code to clipboard');
+  };
+
+  const copyReactCode = () => {
+    const code = buildReactComponentCode(cleanSvg, `${designSystem.name || 'Brand'}Mark`);
+    void navigator.clipboard.writeText(code);
+    flash('Copied React TSX component to clipboard');
+  };
+
+  const pushMark = (targetRoute: '#/logofx' | '#/brand' | '#/systems') => {
     if (!markPath.trim()) {
       flash('Draw or pick a shape before sending');
       return;
@@ -933,6 +1301,8 @@ export function CreateX() {
     const isUniformMono =
       fillMode === 'solid' &&
       faceColors.size === 0 &&
+      badgeShape === 'none' &&
+      renderStyle === 'fill' &&
       (color.toLowerCase() === DEFAULT_INK.dark || color.toLowerCase() === DEFAULT_INK.light);
     const outSvg = isUniformMono
       ? buildCleanSvg(
@@ -942,8 +1312,17 @@ export function CreateX() {
           gradAngle,
           'ds-mk-push',
           `${gridId} custom mark`,
+          styleOpts,
         )
-      : buildCleanSvg(markLayers, fillMode, activeStops, gradAngle, `ds-mk-${Date.now().toString(36)}`, `${gridId} custom mark`);
+      : buildCleanSvg(
+          markLayers,
+          fillMode,
+          activeStops,
+          gradAngle,
+          `ds-mk-${Date.now().toString(36)}`,
+          `${gridId} custom mark`,
+          styleOpts,
+        );
     setActiveMark({
       id: `createx-${gridId}-${Date.now()}`,
       name: `${builtGrid.label}`,
@@ -977,285 +1356,598 @@ export function CreateX() {
   );
   const activeFit = fitScoreMap.get(gridId);
 
+  const visibleStarters = useMemo(
+    () => (starterCat === 'all' ? EXTENDED_STARTERS : EXTENDED_STARTERS.filter((s) => s.category === starterCat)),
+    [starterCat],
+  );
+
+  const markTransformAttr =
+    markScalePct !== 100 || markRotateDeg !== 0
+      ? `translate(${CENTER} ${CENTER}) rotate(${markRotateDeg}) scale(${(markScalePct / 100).toFixed(3)}) translate(-${CENTER} -${CENTER})`
+      : undefined;
+
   return (
     <div className="logo-studio" data-theme={theme}>
       <TopBar current="create" onShare={exportSvg} />
       <div className="page-workspace is-createx">
         <section className="studio-preview-column" aria-label="Logo Maker construction grid editor">
-          {tip && (
-            <div className="createx-tip" role="status">
-              <span>Click or drag facets on any construction grid, or load any brand logo to synthesize an adaptive grid.</span>
+          {/* Stage Mode & Architectural Overlay Bar */}
+          <div className="createx-stage-bar" role="toolbar" aria-label="Stage view and geometric overlays">
+            <div className="createx-stage-modes" role="tablist" aria-label="Logo Maker stage mode">
+              {(
+                [
+                  ['construct', 'Grid Construct'],
+                  ['lockup', 'Lockup & Badge'],
+                  ['audit', 'Stress Test & Audit'],
+                ] as const
+              ).map(([modeId, label]) => (
+                <button
+                  key={modeId}
+                  type="button"
+                  role="tab"
+                  aria-selected={stageMode === modeId}
+                  className={`createx-stage-mode-btn ${stageMode === modeId ? 'is-active' : ''}`}
+                  onClick={() => setStageMode(modeId)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {stageMode === 'construct' && (
+              <div className="createx-overlay-controls">
+                <span className="createx-overlay-label">Keylines</span>
+                <div className="createx-keyline-pills" role="group" aria-label="Architectural keyline overlay">
+                  {(
+                    [
+                      ['none', 'Off'],
+                      ['golden-phi', 'Golden φ'],
+                      ['ios-squircle', 'iOS'],
+                      ['material', 'Material'],
+                      ['fibonacci', 'Spiral φ'],
+                      ['harmonic-643', '6:4:3'],
+                      ['safe-zone', 'Safe'],
+                    ] as const
+                  ).map(([kid, klbl]) => (
+                    <button
+                      key={kid}
+                      type="button"
+                      className={`createx-mini-pill ${keylineKind === kid ? 'is-active' : ''}`}
+                      aria-pressed={keylineKind === kid}
+                      onClick={() => setKeylineKind(kid)}
+                    >
+                      {klbl}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  className={`createx-mini-pill ${showOpticalHud ? 'is-active' : ''}`}
+                  aria-pressed={showOpticalHud}
+                  title="Show optical center of gravity & bounding box telemetry"
+                  onClick={() => setShowOpticalHud((v) => !v)}
+                >
+                  Optical HUD
+                </button>
+                <button
+                  type="button"
+                  className={`createx-mini-pill ${showAnchorXray ? 'is-active' : ''}`}
+                  aria-pressed={showAnchorXray}
+                  title="Show SVG path anchor vertices X-Ray"
+                  onClick={() => setShowAnchorXray((v) => !v)}
+                >
+                  Anchors ({anatomy.anchors.length})
+                </button>
+              </div>
+            )}
+          </div>
+
+          {stageMode === 'construct' && tip && (
+            <div className="createx-tip" role="status" style={{ top: 64, zIndex: 7 }}>
+              <span>Click or drag facets, use Flood Bucket (G) or Line Ray (L), or load any brand logo to synthesize an adaptive grid.</span>
               <button type="button" aria-label="Dismiss tip" onClick={() => setTip(false)}>
                 <Icon name="x" size={14} />
               </button>
             </div>
           )}
 
-          <div
-            className="page-canvas-area is-flush"
-            ref={areaRef}
-            onDragOver={(e) => e.preventDefault()}
-            onDrop={(e) => {
-              e.preventDefault();
-              const file = e.dataTransfer.files?.[0];
-              if (file) void handleUploadSvgFile(file);
-            }}
-          >
-            <svg
-              ref={svgRef}
-              className="createx-canvas"
-              viewBox={`0 0 ${box.w} ${box.h}`}
-              role="group"
-              aria-label={`${builtGrid.label} construction canvas`}
-              style={{ ['--cell-color' as string]: color }}
-              onPointerDown={onPointerDown}
-              onPointerMove={onPointerMove}
-              onPointerLeave={() => setHoverFace(null)}
-            >
-              <rect className="createx-sheet" x="0" y="0" width={box.w} height={box.h} />
-
-              {/* Geometric construction lines & circles */}
-              <g transform={`translate(${geo.ox} ${geo.oy}) scale(${geo.scale})`}>
-                <defs>
-                  {fillMode === 'radial' ? (
-                    <radialGradient id="createx-canvas-grad" gradientUnits="userSpaceOnUse" cx={CENTER} cy={CENTER} r={112}>
-                      {activeStops.map((s, idx) => (
-                        <stop key={idx} offset={`${s.offset * 100}%`} stopColor={s.color} />
-                      ))}
-                    </radialGradient>
-                  ) : (
-                    <linearGradient id="createx-canvas-grad" gradientUnits="userSpaceOnUse" x1={gradMeta.x1} y1={gradMeta.y1} x2={gradMeta.x2} y2={gradMeta.y2}>
-                      {activeStops.map((s, idx) => (
-                        <stop key={idx} offset={`${s.offset * 100}%`} stopColor={s.color} />
-                      ))}
-                    </linearGradient>
-                  )}
-                </defs>
-                {showTrace && traceSvgHtml && (
-                  <g
-                    className="createx-trace"
-                    dangerouslySetInnerHTML={{ __html: traceSvgHtml }}
-                  />
-                )}
-                <path
-                  className="createx-lines"
-                  d={builtGrid.wireframe}
-                  vectorEffect="non-scaling-stroke"
-                  shapeRendering="geometricPrecision"
-                />
-
-                {(symmetry === 'x' || symmetry === 'quad') && (
-                  <line
-                    x1={CENTER}
-                    y1={0}
-                    x2={CENTER}
-                    y2={SHEET}
-                    stroke="var(--studio-accent)"
-                    strokeOpacity="0.4"
-                    strokeDasharray="4 4"
-                    vectorEffect="non-scaling-stroke"
-                    pointerEvents="none"
-                  />
-                )}
-                {(symmetry === 'y' || symmetry === 'quad') && (
-                  <line
-                    x1={0}
-                    y1={CENTER}
-                    x2={SHEET}
-                    y2={CENTER}
-                    stroke="var(--studio-accent)"
-                    strokeOpacity="0.4"
-                    strokeDasharray="4 4"
-                    vectorEffect="non-scaling-stroke"
-                    pointerEvents="none"
-                  />
-                )}
-                {(symmetry === 'rot2' || symmetry === 'radial') && (
-                  <circle
-                    cx={CENTER}
-                    cy={CENTER}
-                    r={6}
-                    fill="none"
-                    stroke="var(--studio-accent)"
-                    strokeOpacity="0.45"
-                    vectorEffect="non-scaling-stroke"
-                    pointerEvents="none"
-                  />
-                )}
-
-                {/* Seamless unioned multi-color / gradient mark layers */}
-                {markLayers.map((layer) => (
-                  <path
-                    key={layer.fillKey}
-                    className="createx-mark"
-                    style={{ fill: layer.fillAttr }}
-                    d={layer.d}
-                    shapeRendering="geometricPrecision"
-                  />
-                ))}
-
-                {/* Hover & Symmetry target preview */}
-                {hoverSymFaces.map((hf) => (
-                  <path
-                    key={hf.id}
-                    className="createx-hover"
-                    d={hf.d}
-                    stroke="var(--studio-accent)"
-                    strokeOpacity="0.7"
-                    strokeWidth="1.2"
-                    vectorEffect="non-scaling-stroke"
-                    pointerEvents="none"
-                  />
-                ))}
-              </g>
-
-              {/* Outer sheet veil & artboard frame */}
-              <path
-                className="createx-veil"
-                fillRule="evenodd"
-                d={
-                  `M0 0H${box.w}V${box.h}H0Z` +
-                  `M${geo.ox} ${geo.oy}H${geo.ox + geo.sheet}V${geo.oy + geo.sheet}H${geo.ox}Z`
-                }
-              />
-              <rect
-                className="createx-sheet-edge"
-                x={geo.ox}
-                y={geo.oy}
-                width={geo.sheet}
-                height={geo.sheet}
-                shapeRendering="crispEdges"
-              />
-            </svg>
-          </div>
-
-          <div className="studio-toolbar">
-            <div className="toolbar-pill">
-              {(
-                [
-                  ['select', 'cursor', 'Toggle facet (S)'],
-                  ['brush', 'brush', 'Fill (B)'],
-                  ['eraser', 'eraser', 'Erase (E)'],
-                ] as const
-              ).map(([id, icon, label]) => (
-                <button
-                  key={id}
-                  type="button"
-                  className={`toolbar-button is-icon ${tool === id ? 'is-active' : ''}`}
-                  aria-label={label}
-                  title={label}
-                  aria-pressed={tool === id}
-                  onClick={() => setTool(id)}
+          {stageMode === 'construct' ? (
+            <>
+              <div
+                className="page-canvas-area is-flush"
+                ref={areaRef}
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  const file = e.dataTransfer.files?.[0];
+                  if (file) void handleUploadSvgFile(file);
+                }}
+              >
+                <svg
+                  ref={svgRef}
+                  className="createx-canvas"
+                  viewBox={`0 0 ${box.w} ${box.h}`}
+                  role="group"
+                  aria-label={`${builtGrid.label} construction canvas`}
+                  style={{ ['--cell-color' as string]: color }}
+                  onPointerDown={onPointerDown}
+                  onPointerMove={onPointerMove}
+                  onPointerUp={onPointerUpCanvas}
+                  onPointerLeave={() => {
+                    setHoverFace(null);
+                    setLineDrag(null);
+                  }}
                 >
-                  <Icon name={icon} size={15} />
-                </button>
-              ))}
-              <label
-                className="createx-swatch"
-                aria-label="Mark colour or gradient"
-                title={fillMode === 'solid' ? `Fill ${color}` : `${fillMode === 'radial' ? 'Radial' : 'Linear'} gradient`}
-              >
-                <span
-                  className="createx-swatch-dot"
-                  style={{
-                    background:
-                      fillMode === 'solid'
-                        ? color
-                        : fillMode === 'radial'
-                          ? `radial-gradient(circle, ${activeStops.map((s) => `${s.color} ${Math.round(s.offset * 100)}%`).join(', ')})`
-                          : `linear-gradient(${gradAngle + 90}deg, ${activeStops.map((s) => `${s.color} ${Math.round(s.offset * 100)}%`).join(', ')})`,
-                  }}
-                />
-                <input
-                  type="color"
-                  value={fillMode === 'solid' ? color : gradStart}
-                  onChange={(e) => {
-                    const hex = e.target.value;
-                    if (fillMode === 'solid') {
-                      setColor(hex);
-                    } else {
-                      setGradStart(hex);
-                      setGradStops(null);
+                  <rect className="createx-sheet" x="0" y="0" width={box.w} height={box.h} />
+
+                  {/* Geometric construction lines & circles */}
+                  <g transform={`translate(${geo.ox} ${geo.oy}) scale(${geo.scale})`}>
+                    <defs>
+                      {fillMode === 'radial' ? (
+                        <radialGradient id="createx-canvas-grad" gradientUnits="userSpaceOnUse" cx={CENTER} cy={CENTER} r={112}>
+                          {activeStops.map((s, idx) => (
+                            <stop key={idx} offset={`${s.offset * 100}%`} stopColor={s.color} />
+                          ))}
+                        </radialGradient>
+                      ) : (
+                        <linearGradient id="createx-canvas-grad" gradientUnits="userSpaceOnUse" x1={gradMeta.x1} y1={gradMeta.y1} x2={gradMeta.x2} y2={gradMeta.y2}>
+                          {activeStops.map((s, idx) => (
+                            <stop key={idx} offset={`${s.offset * 100}%`} stopColor={s.color} />
+                          ))}
+                        </linearGradient>
+                      )}
+                    </defs>
+
+                    {/* Container Badge Background (when not in knockout mode) */}
+                    {badgeShape !== 'none' && badgeContainerPathD && !badgeKnockout && (
+                      <path
+                        d={badgeContainerPathD}
+                        fill={badgeColor}
+                        pointerEvents="none"
+                      />
+                    )}
+
+                    {showTrace && traceSvgHtml && (
+                      <g
+                        className="createx-trace"
+                        dangerouslySetInnerHTML={{ __html: traceSvgHtml }}
+                      />
+                    )}
+                    <path
+                      className="createx-lines"
+                      d={builtGrid.wireframe}
+                      vectorEffect="non-scaling-stroke"
+                      shapeRendering="geometricPrecision"
+                    />
+
+                    {/* Architectural Keyline Overlays */}
+                    {keylineOverlay.secondary && (
+                      <path
+                        d={keylineOverlay.secondary}
+                        fill="none"
+                        stroke="#0ea5e9"
+                        strokeOpacity="0.32"
+                        strokeWidth="1"
+                        strokeDasharray="3 3"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    )}
+                    {keylineOverlay.primary && (
+                      <path
+                        d={keylineOverlay.primary}
+                        fill="none"
+                        stroke="#0ea5e9"
+                        strokeOpacity="0.65"
+                        strokeWidth="1.15"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    )}
+                    {keylineOverlay.labels.map((lbl, idx) => (
+                      <text
+                        key={idx}
+                        x={lbl.x}
+                        y={lbl.y}
+                        fill="#0ea5e9"
+                        fillOpacity="0.85"
+                        fontSize="6.5"
+                        fontFamily="monospace"
+                        fontWeight="700"
+                        pointerEvents="none"
+                      >
+                        {lbl.text}
+                      </text>
+                    ))}
+
+                    {(symmetry === 'x' || symmetry === 'quad') && (
+                      <line
+                        x1={CENTER}
+                        y1={0}
+                        x2={CENTER}
+                        y2={SHEET}
+                        stroke="var(--studio-accent)"
+                        strokeOpacity="0.4"
+                        strokeDasharray="4 4"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    )}
+                    {(symmetry === 'y' || symmetry === 'quad') && (
+                      <line
+                        x1={0}
+                        y1={CENTER}
+                        x2={SHEET}
+                        y2={CENTER}
+                        stroke="var(--studio-accent)"
+                        strokeOpacity="0.4"
+                        strokeDasharray="4 4"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    )}
+                    {(symmetry === 'rot2' || symmetry === 'radial') && (
+                      <circle
+                        cx={CENTER}
+                        cy={CENTER}
+                        r={6}
+                        fill="none"
+                        stroke="var(--studio-accent)"
+                        strokeOpacity="0.45"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    )}
+
+                    {/* Seamless unioned multi-color / gradient / knockout / stroke mark layers */}
+                    {badgeShape !== 'none' && badgeKnockout && badgeContainerPathD ? (
+                      <path
+                        className="createx-mark"
+                        fillRule="evenodd"
+                        transform={markTransformAttr}
+                        style={{ fill: markLayers[0]?.fillAttr ?? badgeColor }}
+                        d={`${badgeContainerPathD} ${markPath}`}
+                        shapeRendering="geometricPrecision"
+                      />
+                    ) : (
+                      <g transform={markTransformAttr}>
+                        {markLayers.map((layer) => (
+                          <path
+                            key={layer.fillKey}
+                            className="createx-mark"
+                            style={{
+                              fill:
+                                renderStyle === 'stroke'
+                                  ? 'none'
+                                  : layer.fillAttr,
+                              fillOpacity: renderStyle === 'fill-stroke' ? 0.24 : 1,
+                              stroke:
+                                renderStyle === 'stroke' || renderStyle === 'fill-stroke'
+                                  ? layer.fillAttr
+                                  : 'none',
+                              strokeWidth:
+                                renderStyle === 'stroke' || renderStyle === 'fill-stroke'
+                                  ? strokeWidth
+                                  : 0,
+                              strokeLinejoin: strokeJoin,
+                              strokeLinecap: 'round',
+                            }}
+                            d={layer.d}
+                            shapeRendering="geometricPrecision"
+                          />
+                        ))}
+                      </g>
+                    )}
+
+                    {/* Optical Center of Gravity & Bounding Box HUD */}
+                    {showOpticalHud && selected.size > 0 && (
+                      <g pointerEvents="none">
+                        <rect
+                          x={optical.bbox[0]}
+                          y={optical.bbox[1]}
+                          width={Math.max(1, optical.width)}
+                          height={Math.max(1, optical.height)}
+                          fill="none"
+                          stroke="#f59e0b"
+                          strokeOpacity="0.55"
+                          strokeWidth="1"
+                          strokeDasharray="3 2"
+                          vectorEffect="non-scaling-stroke"
+                        />
+                        <line
+                          x1={CENTER}
+                          y1={CENTER}
+                          x2={optical.cx}
+                          y2={optical.cy}
+                          stroke="#f59e0b"
+                          strokeWidth="1.2"
+                          vectorEffect="non-scaling-stroke"
+                        />
+                        <circle
+                          cx={CENTER}
+                          cy={CENTER}
+                          r={3.2}
+                          fill="none"
+                          stroke="#0ea5e9"
+                          strokeWidth="1.2"
+                          vectorEffect="non-scaling-stroke"
+                        />
+                        <circle
+                          cx={optical.cx}
+                          cy={optical.cy}
+                          r={2.8}
+                          fill="#f59e0b"
+                        />
+                        <text
+                          x={optical.bbox[0]}
+                          y={Math.max(8, optical.bbox[1] - 4)}
+                          fill="#f59e0b"
+                          fontSize="6.2"
+                          fontFamily="monospace"
+                          fontWeight="700"
+                        >
+                          {optical.width}×{optical.height} · Δ({optical.dx},{optical.dy})
+                        </text>
+                      </g>
+                    )}
+
+                    {/* Anchor Vertex X-Ray Overlay */}
+                    {showAnchorXray &&
+                      anatomy.anchors.slice(0, 420).map((pt, idx) => (
+                        <circle
+                          key={idx}
+                          cx={pt.x - 8}
+                          cy={pt.y - 8}
+                          r={1.6}
+                          fill="#10b981"
+                          stroke="#09090b"
+                          strokeWidth="0.4"
+                          pointerEvents="none"
+                        />
+                      ))}
+
+                    {/* Line Ray Drag Preview */}
+                    {lineDrag && (
+                      <g pointerEvents="none">
+                        <line
+                          x1={lineDrag.x1}
+                          y1={lineDrag.y1}
+                          x2={lineDrag.x2}
+                          y2={lineDrag.y2}
+                          stroke="#10b981"
+                          strokeWidth="2"
+                          strokeDasharray="3 2"
+                          vectorEffect="non-scaling-stroke"
+                        />
+                        <circle cx={lineDrag.x1} cy={lineDrag.y1} r={3} fill="#10b981" />
+                        <circle cx={lineDrag.x2} cy={lineDrag.y2} r={3} fill="#10b981" />
+                      </g>
+                    )}
+
+                    {/* Hover & Symmetry target preview */}
+                    {hoverSymFaces.map((hf) => (
+                      <path
+                        key={hf.id}
+                        className="createx-hover"
+                        d={hf.d}
+                        stroke="var(--studio-accent)"
+                        strokeOpacity="0.7"
+                        strokeWidth="1.2"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    ))}
+                  </g>
+
+                  {/* Outer sheet veil & artboard frame */}
+                  <path
+                    className="createx-veil"
+                    fillRule="evenodd"
+                    d={
+                      `M0 0H${box.w}V${box.h}H0Z` +
+                      `M${geo.ox} ${geo.oy}H${geo.ox + geo.sheet}V${geo.oy + geo.sheet}H${geo.ox}Z`
                     }
-                  }}
-                />
-              </label>
-            </div>
+                  />
+                  <rect
+                    className="createx-sheet-edge"
+                    x={geo.ox}
+                    y={geo.oy}
+                    width={geo.sheet}
+                    height={geo.sheet}
+                    shapeRendering="crispEdges"
+                  />
+                </svg>
+              </div>
 
-            <div className="toolbar-pill">
-              <button
-                type="button"
-                className="toolbar-button is-icon"
-                aria-label="Undo"
-                disabled={past.length === 0}
-                onClick={undo}
-              >
-                <Icon name="undo" size={15} />
-              </button>
-              <button
-                type="button"
-                className="toolbar-button is-icon"
-                aria-label="Redo"
-                disabled={future.length === 0}
-                onClick={redo}
-              >
-                <Icon name="redo" size={15} />
-              </button>
-              <button type="button" className="toolbar-button is-icon" aria-label="Mirror horizontally" title="Flip horizontal" onClick={flip}>
-                <Icon name="flip" size={15} />
-              </button>
-              <button type="button" className="toolbar-button is-icon" aria-label="Rotate 90 degrees" title="Rotate 90°" onClick={rotate90}>
-                <Icon name="reset" size={15} />
-              </button>
-              <button
-                type="button"
-                className={`toolbar-button is-icon ${showTrace ? 'is-active' : ''}`}
-                aria-label="Toggle source logo trace overlay"
-                aria-pressed={showTrace}
-                title="Toggle source logo trace overlay"
-                onClick={() => setShowTrace((v) => !v)}
-              >
-                <Icon name="eye" size={15} />
-              </button>
-              <button
-                type="button"
-                className="toolbar-button is-icon"
-                aria-label="Load logo or SVG into adaptive grid"
-                title="Choose brand logo, UI icon, or SVG"
-                onClick={() => setMarkOpen(true)}
-              >
-                <Icon name="upload" size={15} />
-              </button>
-              <button type="button" className="toolbar-button is-icon" aria-label="Clear grid" title="Clear canvas" onClick={clear}>
-                <Icon name="trash" size={15} />
-              </button>
-            </div>
+              <div className="studio-toolbar">
+                <div className="toolbar-pill">
+                  {(
+                    [
+                      ['select', 'cursor', 'Toggle facet (S)'],
+                      ['brush', 'brush', 'Paint brush (B)'],
+                      ['bucket', 'bucket', 'Flood fill contiguous region (G)'],
+                      ['line', 'line', 'Line ray stroke (L)'],
+                      ['picker', 'picker', 'Sample facet color (I)'],
+                      ['eraser', 'eraser', 'Erase facet (E)'],
+                    ] as const
+                  ).map(([id, icon, label]) => (
+                    <button
+                      key={id}
+                      type="button"
+                      className={`toolbar-button is-icon ${tool === id ? 'is-active' : ''}`}
+                      aria-label={label}
+                      title={label}
+                      aria-pressed={tool === id}
+                      onClick={() => setTool(id)}
+                    >
+                      <Icon name={icon} size={15} />
+                    </button>
+                  ))}
+                  <label
+                    className="createx-swatch"
+                    aria-label="Mark colour or gradient"
+                    title={fillMode === 'solid' ? `Fill ${color}` : `${fillMode === 'radial' ? 'Radial' : 'Linear'} gradient`}
+                  >
+                    <span
+                      className="createx-swatch-dot"
+                      style={{
+                        background:
+                          fillMode === 'solid'
+                            ? color
+                            : fillMode === 'radial'
+                              ? `radial-gradient(circle, ${activeStops.map((s) => `${s.color} ${Math.round(s.offset * 100)}%`).join(', ')})`
+                              : `linear-gradient(${gradAngle + 90}deg, ${activeStops.map((s) => `${s.color} ${Math.round(s.offset * 100)}%`).join(', ')})`,
+                      }}
+                    />
+                    <input
+                      type="color"
+                      value={fillMode === 'solid' ? color : gradStart}
+                      onChange={(e) => {
+                        const hex = e.target.value;
+                        if (fillMode === 'solid') {
+                          setColor(hex);
+                        } else {
+                          setGradStart(hex);
+                          setGradStops(null);
+                        }
+                      }}
+                    />
+                  </label>
+                </div>
 
-            <div className="toolbar-pill">
-              <button type="button" className="toolbar-button is-icon" aria-label="Zoom out" onClick={() => zoomBy(-10)}>
-                <Icon name="zoomOut" size={14} />
-              </button>
-              <span className="zoom-value">{zoom}%</span>
-              <button type="button" className="toolbar-button is-icon" aria-label="Zoom in" onClick={() => zoomBy(10)}>
-                <Icon name="zoomIn" size={14} />
-              </button>
-            </div>
+                <div className="toolbar-pill">
+                  <button
+                    type="button"
+                    className="toolbar-button is-icon"
+                    aria-label="Undo"
+                    title="Undo (Ctrl+Z)"
+                    disabled={past.length === 0}
+                    onClick={undo}
+                  >
+                    <Icon name="undo" size={15} />
+                  </button>
+                  <button
+                    type="button"
+                    className="toolbar-button is-icon"
+                    aria-label="Redo"
+                    title="Redo (Ctrl+Y)"
+                    disabled={future.length === 0}
+                    onClick={redo}
+                  >
+                    <Icon name="redo" size={15} />
+                  </button>
+                  <button type="button" className="toolbar-button is-icon" aria-label="Mirror horizontally" title="Flip horizontal" onClick={flip}>
+                    <Icon name="flip" size={15} />
+                  </button>
+                  <button type="button" className="toolbar-button is-icon" aria-label="Mirror vertically" title="Flip vertical" onClick={flipV}>
+                    <Icon name="flipV" size={15} />
+                  </button>
+                  <button type="button" className="toolbar-button is-icon" aria-label="Rotate 90 degrees" title="Rotate 90°" onClick={rotate90}>
+                    <Icon name="reset" size={15} />
+                  </button>
+                  <button
+                    type="button"
+                    className="toolbar-button is-icon"
+                    aria-label="Auto-center optically"
+                    title="Auto-center optical center of gravity"
+                    onClick={autoCenterSelection}
+                  >
+                    <Icon name="target" size={15} />
+                  </button>
+                  <button
+                    type="button"
+                    className={`toolbar-button is-icon ${showTrace ? 'is-active' : ''}`}
+                    aria-label="Toggle source logo trace overlay"
+                    aria-pressed={showTrace}
+                    title="Toggle source logo trace overlay"
+                    onClick={() => setShowTrace((v) => !v)}
+                  >
+                    <Icon name="eye" size={15} />
+                  </button>
+                  <button
+                    type="button"
+                    className="toolbar-button is-icon"
+                    aria-label="Load logo or SVG into adaptive grid"
+                    title="Choose brand logo, UI icon, or SVG"
+                    onClick={() => setMarkOpen(true)}
+                  >
+                    <Icon name="upload" size={15} />
+                  </button>
+                  <button type="button" className="toolbar-button is-icon" aria-label="Clear grid" title="Clear canvas" onClick={clear}>
+                    <Icon name="trash" size={15} />
+                  </button>
+                </div>
 
-            <div className="export-split">
-              <button type="button" className="export-main" onClick={exportSvg}>
-                Export SVG
-              </button>
-              <button type="button" className="export-caret" aria-label="Export PNG" title="Export 1024px PNG" onClick={exportPng}>
-                <Icon name="image" size={13} />
-              </button>
-            </div>
-          </div>
+                <div className="toolbar-pill">
+                  <button type="button" className="toolbar-button is-icon" aria-label="Zoom out" onClick={() => zoomBy(-10)}>
+                    <Icon name="zoomOut" size={14} />
+                  </button>
+                  <span className="zoom-value">{zoom}%</span>
+                  <button type="button" className="toolbar-button is-icon" aria-label="Zoom in" onClick={() => zoomBy(10)}>
+                    <Icon name="zoomIn" size={14} />
+                  </button>
+                </div>
+
+                <div className="export-split">
+                  <button type="button" className="export-main" onClick={exportSvg}>
+                    Export SVG
+                  </button>
+                  <button
+                    type="button"
+                    className="export-caret"
+                    aria-label="Export Blueprint SVG"
+                    title="Export Architectural Blueprint SVG"
+                    onClick={exportBlueprintSvg}
+                  >
+                    <Icon name="grid" size={13} />
+                  </button>
+                  <button type="button" className="export-caret" aria-label="Export PNG" title="Export 1024px PNG" onClick={exportPng}>
+                    <Icon name="image" size={13} />
+                  </button>
+                </div>
+              </div>
+            </>
+          ) : stageMode === 'lockup' ? (
+            <LogoLockupBuilder
+              markInnerXml={lockupMarkInnerXml}
+              defsXml={lockupDefsXml}
+              defaultBrandName={designSystem.name}
+              defaultTagline={designSystem.tagline}
+              primaryHex={designSystem.primaryHex}
+              accentHex={designSystem.accentHex}
+              theme={theme}
+              onFlash={flash}
+            />
+          ) : (
+            <LogoStressTestLab
+              cleanSvg={cleanSvg}
+              brandName={designSystem.name || activeMark.name || 'Custom Brand'}
+              anatomy={anatomy}
+              optical={optical}
+              primaryHex={designSystem.primaryHex}
+              secondaryHex={designSystem.secondaryHex}
+              accentHex={designSystem.accentHex}
+              onAutoCenter={autoCenterSelection}
+              onExportBlueprint={exportBlueprintSvg}
+            />
+          )}
         </section>
 
         <aside className="page-panel" aria-label="Logo Maker Settings">
           <header className="page-panel-head">
             <span>Logo Maker</span>
-            <span className="page-panel-count">Score {anatomy.score}/100</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <button
+                type="button"
+                className="page-chip"
+                style={{ height: 22, padding: '0 8px', fontSize: 10.5 }}
+                title="Synthesize a procedural symmetric emblem on the active grid"
+                onClick={randomizeEmblem}
+              >
+                <Icon name="shuffle" size={11} /> Randomize
+              </button>
+              <span className="page-panel-count">Score {anatomy.score}/100</span>
+            </div>
           </header>
           <div className="page-panel-body">
             <div className="craft-dock">
@@ -1273,419 +1965,706 @@ export function CreateX() {
                 ))}
               </div>
               <div style={{ marginLeft: 'auto', textAlign: 'right', fontSize: 11, color: 'var(--studio-muted)' }}>
-                <div>{selected.size} facets</div>
-                <div>{anatomy.anchors.length} anchors</div>
+                <div>{selected.size} facets · {anatomy.anchors.length} pts</div>
+                <div style={{ color: Math.hypot(optical.dx, optical.dy) <= 3 ? '#10b981' : '#f59e0b' }}>
+                  Optical Δ({optical.dx}, {optical.dy})
+                </div>
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginBottom: 14 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 5, marginBottom: 10 }}>
               <button
                 type="button"
                 className="ds-action-btn is-primary"
-                style={{ justifyContent: 'center' }}
+                style={{ justifyContent: 'center', padding: '6px 4px', fontSize: 11 }}
                 onClick={() => pushMark('#/logofx')}
               >
-                Send to LogoFX
+                To LogoFX
               </button>
               <button
                 type="button"
                 className="ds-action-btn"
-                style={{ justifyContent: 'center' }}
+                style={{ justifyContent: 'center', padding: '6px 4px', fontSize: 11 }}
                 onClick={() => pushMark('#/brand')}
               >
-                Use in Brand
+                To Brand
+              </button>
+              <button
+                type="button"
+                className="ds-action-btn"
+                style={{ justifyContent: 'center', padding: '6px 4px', fontSize: 11 }}
+                onClick={() => pushMark('#/systems')}
+              >
+                To System
               </button>
             </div>
 
-            <div className="page-section" style={{ marginTop: 10 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
-                <div className="page-section-title" style={{ marginBottom: 0 }}>Fill &amp; Gradient</div>
-                {faceColors.size > 0 && (
-                  <button
-                    type="button"
-                    className="page-chip"
-                    style={{ height: 22, padding: '0 8px', fontSize: 10.5 }}
-                    title="Apply active color or gradient across every selected facet"
-                    onClick={() => {
-                      pushHistory();
-                      setFaceColors(new Map());
-                      setPaintByFacet(false);
-                    }}
-                  >
-                    Fill All
-                  </button>
-                )}
-              </div>
-
-              <div className="page-segmented" role="group" aria-label="Fill type">
-                {(['solid', 'linear', 'radial'] as const).map((fm) => (
-                  <button
-                    key={fm}
-                    type="button"
-                    aria-pressed={fillMode === fm}
-                    onClick={() => {
-                      pushHistory();
-                      setFillMode(fm);
-                      if (fm !== 'solid' && !paintByFacet) setFaceColors(new Map());
-                    }}
-                  >
-                    {fm === 'solid' ? 'Solid' : fm === 'linear' ? 'Linear' : 'Radial'}
-                  </button>
-                ))}
-              </div>
-
-              {fillMode === 'solid' ? (
-                <div className="createx-color-bar">
-                  <label className="createx-hex-pill" title="Pick active brush hex color">
-                    <input
-                      type="color"
-                      value={color}
-                      onChange={(e) => setColor(e.target.value)}
-                    />
-                    <span className="createx-mono-hex">{color.toUpperCase()}</span>
-                  </label>
-                  <button
-                    type="button"
-                    className={`page-chip ${paintByFacet || faceColors.size > 0 ? 'is-active' : ''}`}
-                    aria-pressed={paintByFacet || faceColors.size > 0}
-                    title="When active, brush paints individual facets with the selected swatch"
-                    onClick={() => setPaintByFacet((v) => !v)}
-                  >
-                    {paintByFacet || faceColors.size > 0 ? 'Layer Paint' : 'Whole Mark'}
-                  </button>
-                </div>
-              ) : (
-                <div className="createx-grad-box">
-                  <div className="createx-grad-stops">
-                    <label className="createx-hex-pill" title="Gradient start stop">
-                      <input
-                        type="color"
-                        value={activeStops[0]?.color ?? gradStart}
-                        onChange={(e) => {
-                          setGradStart(e.target.value);
-                          setGradStops(null);
-                        }}
-                      />
-                      <span className="createx-mono-hex">{(activeStops[0]?.color ?? gradStart).toUpperCase()}</span>
-                    </label>
-                    <span style={{ color: 'var(--studio-muted)', fontSize: 11 }}>→</span>
-                    <label className="createx-hex-pill" title="Gradient end stop">
-                      <input
-                        type="color"
-                        value={activeStops[activeStops.length - 1]?.color ?? gradEnd}
-                        onChange={(e) => {
-                          setGradEnd(e.target.value);
-                          setGradStops(null);
-                        }}
-                      />
-                      <span className="createx-mono-hex">{(activeStops[activeStops.length - 1]?.color ?? gradEnd).toUpperCase()}</span>
-                    </label>
-                  </div>
-                  {fillMode === 'linear' && (
-                    <label className="createx-angle-row">
-                      <span>Angle {Math.round(gradAngle)}°</span>
-                      <input
-                        type="range"
-                        min={0}
-                        max={360}
-                        step={5}
-                        value={gradAngle}
-                        onChange={(e) => setGradAngle(Number(e.target.value))}
-                      />
-                    </label>
-                  )}
-                  <div className="page-chip-row" style={{ marginTop: 6 }}>
-                    <button
-                      type="button"
-                      className="page-chip"
-                      title="Use active Design System primary and accent gradient"
-                      onClick={() => {
-                        pushHistory();
-                        setGradStart(designSystem.primaryHex);
-                        setGradEnd(designSystem.accentHex);
-                        setGradStops(null);
-                      }}
-                    >
-                      System
-                    </button>
-                    {GRADIENT_PRESETS.map((gp) => (
-                      <button
-                        key={gp.id}
-                        type="button"
-                        className="page-chip"
-                        title={gp.label}
-                        onClick={() => {
-                          pushHistory();
-                          setFillMode('linear');
-                          setGradAngle(gp.angle);
-                          setGradStart(gp.stops[0].color);
-                          setGradEnd(gp.stops[gp.stops.length - 1].color);
-                          setGradStops(gp.stops);
-                          if (!paintByFacet) setFaceColors(new Map());
-                        }}
-                      >
-                        <span
-                          className="createx-grad-chip-dot"
-                          style={{
-                            background: `linear-gradient(135deg, ${gp.stops[0].color}, ${gp.stops[gp.stops.length - 1].color})`,
-                          }}
-                        />
-                        {gp.label.split(' ')[0]}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              <div className="createx-swatch-strip" aria-label="Quick brand & system color swatches">
-                {[...new Set([
-                  ...sourcePalette,
-                  designSystem.primaryHex,
-                  designSystem.secondaryHex,
-                  designSystem.accentHex,
-                  DEFAULT_INK[theme],
-                ])]
-                  .slice(0, 10)
-                  .map((sw) => (
-                    <button
-                      key={sw}
-                      type="button"
-                      className={`createx-swatch-btn ${color.toLowerCase() === sw.toLowerCase() && fillMode === 'solid' ? 'is-active' : ''}`}
-                      style={{ background: sw }}
-                      title={`Paint ${sw.toUpperCase()}`}
-                      aria-label={`Select color ${sw}`}
-                      onClick={() => {
-                        setFillMode('solid');
-                        setColor(sw);
-                      }}
-                    />
-                  ))}
-              </div>
+            {/* Inspector Section Tabs */}
+            <div className="page-segmented" role="tablist" aria-label="Inspector sections" style={{ marginBottom: 10 }}>
+              {(
+                [
+                  ['construct', 'Construct'],
+                  ['style', 'Style & Badge'],
+                  ['starters', 'Starters & Export'],
+                ] as const
+              ).map(([tid, tlabel]) => (
+                <button
+                  key={tid}
+                  type="button"
+                  role="tab"
+                  aria-selected={inspectorTab === tid}
+                  aria-pressed={inspectorTab === tid}
+                  onClick={() => setInspectorTab(tid)}
+                >
+                  {tlabel}
+                </button>
+              ))}
             </div>
 
-            <div className="page-section">
-              <div className="page-section-title">Adaptive Logo &amp; Icon Source</div>
-              <div className="createx-source-card">
-                <div className="createx-source-row">
-                  <div
-                    className="createx-source-thumb"
-                    dangerouslySetInnerHTML={{ __html: sourceThumbHtml }}
-                  />
-                  <div className="createx-source-meta">
-                    <strong>{activeMark.name}</strong>
-                    <span>{currentAccuracy}% fit · {markAnalysis.summaryText}</span>
-                  </div>
-                  <button
-                    type="button"
-                    className="ds-action-btn"
-                    style={{ padding: '4px 9px', fontSize: 11, flexShrink: 0 }}
-                    onClick={() => setMarkOpen(true)}
-                  >
-                    Load SVG
-                  </button>
-                </div>
-                <div className="createx-source-actions is-three">
-                  <button
-                    type="button"
-                    className={`ds-action-btn ${gridId === 'adaptive-mesh' ? 'is-primary' : ''}`}
-                    style={{ justifyContent: 'center', fontSize: 11, padding: '6px 4px' }}
-                    title="Adaptive Logo quadtree + 45° bevel & color-seam slicing for brand marks & wordmarks"
-                    onClick={() => {
-                      pushHistory();
-                      adaptMarkToGrid(activeMark, 'adaptive-mesh', density, true);
-                      flash(`Adaptive Logo mesh fitted to ${activeMark.name}`);
-                    }}
-                  >
-                    Adapt Logo
-                  </button>
-                  <button
-                    type="button"
-                    className={`ds-action-btn ${gridId === 'adaptive-icon' ? 'is-primary' : ''}`}
-                    style={{ justifyContent: 'center', fontSize: 11, padding: '6px 4px' }}
-                    title="UI-icon keyline quadtree snapped to 16/20/24/32px lattices with sub-pixel bevels"
-                    onClick={() => {
-                      pushHistory();
-                      adaptMarkToGrid(activeMark, 'adaptive-icon', density, true);
-                      flash(`Adaptive Icon grid fitted to ${activeMark.name}`);
-                    }}
-                  >
-                    Adapt Icon
-                  </button>
-                  <button
-                    type="button"
-                    className={`ds-action-btn ${gridId === 'adaptive' ? 'is-primary' : ''}`}
-                    style={{ justifyContent: 'center', fontSize: 11, padding: '6px 4px' }}
-                    title="Architectural stems, bevel rays & compass circles synthesized from logo geometry"
-                    onClick={() => {
-                      pushHistory();
-                      adaptMarkToGrid(activeMark, 'adaptive', density, true);
-                      flash(`Construct grid fitted to ${activeMark.name}`);
-                    }}
-                  >
-                    Construct
-                  </button>
-                </div>
-                <div className="createx-source-toggles">
-                  <button
-                    type="button"
-                    className={`page-chip ${showTrace ? 'is-active' : ''}`}
-                    aria-pressed={showTrace}
-                    onClick={() => setShowTrace((v) => !v)}
-                  >
-                    Trace {showTrace ? 'On' : 'Off'}
-                  </button>
-                  <button
-                    type="button"
-                    className={`page-chip ${autoFitMark ? 'is-active' : ''}`}
-                    aria-pressed={autoFitMark}
-                    title="Automatically fit the loaded logo silhouette when switching between grids"
-                    onClick={() => {
-                      const next = !autoFitMark;
-                      setAutoFitMark(next);
-                      if (next) {
-                        setSelected(evaluateGridMatch(builtGrid, markMask).selected);
-                      }
-                    }}
-                  >
-                    Auto-Fit {autoFitMark ? 'On' : 'Off'}
-                  </button>
-                  {adaptedMarkId && (
-                    <button
-                      type="button"
-                      className="page-chip"
-                      onClick={() => {
-                        pushHistory();
-                        setSelected(evaluateGridMatch(builtGrid, markMask).selected);
-                      }}
-                    >
-                      Refit Facets
-                    </button>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            <div className="page-section" style={{ marginTop: 8 }}>
-              <div className="page-section-title">Symmetry</div>
-              <div className="page-segmented">
-                {SYMMETRIES.map((s) => (
-                  <button
-                    key={s.id}
-                    type="button"
-                    aria-pressed={symmetry === s.id}
-                    onClick={() => setSymmetry(s.id)}
-                  >
-                    {s.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="page-section">
-              <div className="page-section-title">Grid Subdivision</div>
-              <div className="page-segmented">
-                {DENSITIES.map((d) => (
-                  <button
-                    key={d.id}
-                    type="button"
-                    aria-pressed={density === d.id}
-                    onClick={() => switchConstructionGrid(gridId, d.id)}
-                  >
-                    {d.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="page-section">
-              <div className="page-section-title">Quick Form Starters</div>
-              <div className="page-chip-row">
-                {COMPASS_STARTERS.map((st, idx) => (
-                  <button
-                    key={st.id}
-                    type="button"
-                    className="page-chip"
-                    onClick={() => applyStarter(idx)}
-                  >
-                    {st.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="page-section">
-              <div className="page-section-title">Construction Grids ({CONSTRUCTION_GRIDS.length})</div>
-              <p style={{ margin: '2px 0 8px', fontSize: 11, color: 'var(--studio-muted)', lineHeight: 1.4 }}>
-                <strong style={{ color: 'var(--studio-ink)' }}>{activeGridMeta.label}:</strong>{' '}
-                {gridCat === 'best' && activeFit ? activeFit.reason : activeGridMeta.description}
-              </p>
-              <div className="page-chip-row" style={{ marginBottom: 10 }}>
-                {CATEGORIES.map((c) => (
-                  <button
-                    key={c.id}
-                    type="button"
-                    className={`page-chip ${gridCat === c.id ? 'is-active' : ''}`}
-                    onClick={() => setGridCat(c.id)}
-                  >
-                    {c.label}
-                  </button>
-                ))}
-              </div>
-
-              <div className="grid-picker">
-                {filteredGrids.map((g) => {
-                  const fit = fitScoreMap.get(g.id);
-                  const showBadge = Boolean(adaptedMarkId || gridCat === 'best') && fit;
-                  return (
-                    <button
-                      key={g.id}
-                      type="button"
-                      className={`grid-thumb ${g.id === gridId ? 'is-current' : ''}`}
-                      title={`${g.label} — ${fit ? `${fit.score}% match (${fit.reason})` : g.description}`}
-                      aria-label={g.label}
-                      aria-pressed={g.id === gridId}
-                      onClick={() => switchConstructionGrid(g.id, density)}
-                    >
-                      <svg viewBox={`0 0 ${SHEET} ${SHEET}`} aria-hidden="true">
-                        <path
-                          className="grid-thumb-wire"
-                          d={thumbPaths[g.id]}
-                          vectorEffect="non-scaling-stroke"
-                          shapeRendering="geometricPrecision"
-                        />
-                      </svg>
-                      {showBadge && (
-                        <span className="grid-thumb-score">
-                          {fit.score}%
-                        </span>
-                      )}
-                      <span className="grid-thumb-label">{g.short}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {gridId === 'square' && (
+            {inspectorTab === 'construct' && (
               <>
                 <div className="page-section">
-                  <div className="page-section-title">Square Cell Motif</div>
-                  <div className="page-chip-row">
-                    {MOTIFS.map((m) => (
+                  <div className="page-section-title">Adaptive Logo &amp; Icon Source</div>
+                  <div className="createx-source-card">
+                    <div className="createx-source-row">
+                      <div
+                        className="createx-source-thumb"
+                        dangerouslySetInnerHTML={{ __html: sourceThumbHtml }}
+                      />
+                      <div className="createx-source-meta">
+                        <strong>{activeMark.name}</strong>
+                        <span>{currentAccuracy}% fit · {markAnalysis.summaryText}</span>
+                      </div>
                       <button
-                        key={m.id}
                         type="button"
-                        className={`page-chip ${motif === m.id ? 'is-active' : ''}`}
+                        className="ds-action-btn"
+                        style={{ padding: '4px 9px', fontSize: 11, flexShrink: 0 }}
+                        onClick={() => setMarkOpen(true)}
+                      >
+                        Load SVG
+                      </button>
+                    </div>
+                    <div className="createx-source-actions is-three">
+                      <button
+                        type="button"
+                        className={`ds-action-btn ${gridId === 'adaptive-mesh' ? 'is-primary' : ''}`}
+                        style={{ justifyContent: 'center', fontSize: 11, padding: '6px 4px' }}
+                        title="Adaptive Logo quadtree + 45° bevel & color-seam slicing for brand marks & wordmarks"
                         onClick={() => {
                           pushHistory();
-                          setMotif(m.id);
+                          adaptMarkToGrid(activeMark, 'adaptive-mesh', density, true);
+                          flash(`Adaptive Logo mesh fitted to ${activeMark.name}`);
                         }}
                       >
-                        {m.label}
+                        Adapt Logo
+                      </button>
+                      <button
+                        type="button"
+                        className={`ds-action-btn ${gridId === 'adaptive-icon' ? 'is-primary' : ''}`}
+                        style={{ justifyContent: 'center', fontSize: 11, padding: '6px 4px' }}
+                        title="UI-icon keyline quadtree snapped to 16/20/24/32px lattices with sub-pixel bevels"
+                        onClick={() => {
+                          pushHistory();
+                          adaptMarkToGrid(activeMark, 'adaptive-icon', density, true);
+                          flash(`Adaptive Icon grid fitted to ${activeMark.name}`);
+                        }}
+                      >
+                        Adapt Icon
+                      </button>
+                      <button
+                        type="button"
+                        className={`ds-action-btn ${gridId === 'adaptive' ? 'is-primary' : ''}`}
+                        style={{ justifyContent: 'center', fontSize: 11, padding: '6px 4px' }}
+                        title="Architectural stems, bevel rays & compass circles synthesized from logo geometry"
+                        onClick={() => {
+                          pushHistory();
+                          adaptMarkToGrid(activeMark, 'adaptive', density, true);
+                          flash(`Construct grid fitted to ${activeMark.name}`);
+                        }}
+                      >
+                        Construct
+                      </button>
+                    </div>
+                    <div className="createx-source-toggles">
+                      <button
+                        type="button"
+                        className={`page-chip ${showTrace ? 'is-active' : ''}`}
+                        aria-pressed={showTrace}
+                        onClick={() => setShowTrace((v) => !v)}
+                      >
+                        Trace {showTrace ? 'On' : 'Off'}
+                      </button>
+                      <button
+                        type="button"
+                        className={`page-chip ${autoFitMark ? 'is-active' : ''}`}
+                        aria-pressed={autoFitMark}
+                        title="Automatically fit the loaded logo silhouette when switching between grids"
+                        onClick={() => {
+                          const next = !autoFitMark;
+                          setAutoFitMark(next);
+                          if (next) {
+                            setSelected(evaluateGridMatch(builtGrid, markMask).selected);
+                          }
+                        }}
+                      >
+                        Auto-Fit {autoFitMark ? 'On' : 'Off'}
+                      </button>
+                      {adaptedMarkId && (
+                        <button
+                          type="button"
+                          className="page-chip"
+                          onClick={() => {
+                            pushHistory();
+                            setSelected(evaluateGridMatch(builtGrid, markMask).selected);
+                          }}
+                        >
+                          Refit Facets
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Topological & Path Boolean Operations */}
+                <div className="page-section">
+                  <div className="page-section-title">Path &amp; Topological Operations</div>
+                  <div className="createx-ops-grid">
+                    <button
+                      type="button"
+                      className="page-chip"
+                      title="Hollow out interior facets, keeping only the outer perimeter ring"
+                      onClick={hollowOutline}
+                    >
+                      Outline Ring
+                    </button>
+                    <button
+                      type="button"
+                      className="page-chip"
+                      title="Expand selection outward by 1 neighbor ring"
+                      onClick={expandSelection}
+                    >
+                      Expand +1
+                    </button>
+                    <button
+                      type="button"
+                      className="page-chip"
+                      title="Contract selection inward by 1 boundary ring"
+                      onClick={contractSelection}
+                    >
+                      Contract −1
+                    </button>
+                    <button
+                      type="button"
+                      className="page-chip"
+                      title="Invert selected facets inside the emblem radius"
+                      onClick={invertSelection}
+                    >
+                      Invert
+                    </button>
+                    <button
+                      type="button"
+                      className="page-chip"
+                      title="Align area-weighted optical center of mass to geometric center (120, 120)"
+                      onClick={autoCenterSelection}
+                    >
+                      Optical Center
+                    </button>
+                    <button
+                      type="button"
+                      className="page-chip"
+                      title="Mirror current selection across the active symmetry mode"
+                      onClick={symmetrizeSelection}
+                    >
+                      Symmetrize
+                    </button>
+                  </div>
+                </div>
+
+                <div className="page-section">
+                  <div className="page-section-title">Symmetry</div>
+                  <div className="page-segmented">
+                    {SYMMETRIES.map((s) => (
+                      <button
+                        key={s.id}
+                        type="button"
+                        aria-pressed={symmetry === s.id}
+                        onClick={() => setSymmetry(s.id)}
+                      >
+                        {s.label}
                       </button>
                     ))}
                   </div>
                 </div>
+
+                <div className="page-section">
+                  <div className="page-section-title">Grid Subdivision</div>
+                  <div className="page-segmented">
+                    {DENSITIES.map((d) => (
+                      <button
+                        key={d.id}
+                        type="button"
+                        aria-pressed={density === d.id}
+                        onClick={() => switchConstructionGrid(gridId, d.id)}
+                      >
+                        {d.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="page-section">
+                  <div className="page-section-title">Construction Grids ({CONSTRUCTION_GRIDS.length})</div>
+                  <p style={{ margin: '2px 0 8px', fontSize: 11, color: 'var(--studio-muted)', lineHeight: 1.4 }}>
+                    <strong style={{ color: 'var(--studio-ink)' }}>{activeGridMeta.label}:</strong>{' '}
+                    {gridCat === 'best' && activeFit ? activeFit.reason : activeGridMeta.description}
+                  </p>
+                  <div className="page-chip-row" style={{ marginBottom: 10 }}>
+                    {CATEGORIES.map((c) => (
+                      <button
+                        key={c.id}
+                        type="button"
+                        className={`page-chip ${gridCat === c.id ? 'is-active' : ''}`}
+                        onClick={() => setGridCat(c.id)}
+                      >
+                        {c.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="grid-picker">
+                    {filteredGrids.map((g) => {
+                      const fit = fitScoreMap.get(g.id);
+                      const showBadge = Boolean(adaptedMarkId || gridCat === 'best') && fit;
+                      return (
+                        <button
+                          key={g.id}
+                          type="button"
+                          className={`grid-thumb ${g.id === gridId ? 'is-current' : ''}`}
+                          title={`${g.label} — ${fit ? `${fit.score}% match (${fit.reason})` : g.description}`}
+                          aria-label={g.label}
+                          aria-pressed={g.id === gridId}
+                          onClick={() => switchConstructionGrid(g.id, density)}
+                        >
+                          <svg viewBox={`0 0 ${SHEET} ${SHEET}`} aria-hidden="true">
+                            <path
+                              className="grid-thumb-wire"
+                              d={thumbPaths[g.id]}
+                              vectorEffect="non-scaling-stroke"
+                              shapeRendering="geometricPrecision"
+                            />
+                          </svg>
+                          {showBadge && (
+                            <span className="grid-thumb-score">
+                              {fit.score}%
+                            </span>
+                          )}
+                          <span className="grid-thumb-label">{g.short}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {inspectorTab === 'style' && (
+              <>
+                <div className="page-section">
+                  <div className="page-section-title">Vector Path Render Mode</div>
+                  <div className="page-segmented" role="group" aria-label="Vector path render style">
+                    {(
+                      [
+                        ['fill', 'Solid Fill'],
+                        ['stroke', 'Outline Stroke'],
+                        ['fill-stroke', 'Fill + Stroke'],
+                      ] as const
+                    ).map(([rs, lbl]) => (
+                      <button
+                        key={rs}
+                        type="button"
+                        aria-pressed={renderStyle === rs}
+                        onClick={() => setRenderStyle(rs)}
+                      >
+                        {lbl}
+                      </button>
+                    ))}
+                  </div>
+                  {renderStyle !== 'fill' && (
+                    <div style={{ marginTop: 8, display: 'grid', gap: 8 }}>
+                      <label className="createx-angle-row">
+                        <span>Stroke Width · {strokeWidth}px</span>
+                        <input
+                          type="range"
+                          min={1}
+                          max={10}
+                          step={0.5}
+                          value={strokeWidth}
+                          onChange={(e) => setStrokeWidth(Number(e.target.value))}
+                        />
+                      </label>
+                      <div className="page-segmented">
+                        {(['round', 'miter', 'bevel'] as const).map((jn) => (
+                          <button
+                            key={jn}
+                            type="button"
+                            aria-pressed={strokeJoin === jn}
+                            onClick={() => setStrokeJoin(jn)}
+                          >
+                            {jn.charAt(0).toUpperCase() + jn.slice(1)} Join
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <div className="page-section">
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+                    <div className="page-section-title" style={{ marginBottom: 0 }}>Fill &amp; Gradient</div>
+                    {faceColors.size > 0 && (
+                      <button
+                        type="button"
+                        className="page-chip"
+                        style={{ height: 22, padding: '0 8px', fontSize: 10.5 }}
+                        title="Apply active color or gradient across every selected facet"
+                        onClick={() => {
+                          pushHistory();
+                          setFaceColors(new Map());
+                          setPaintByFacet(false);
+                        }}
+                      >
+                        Fill All
+                      </button>
+                    )}
+                  </div>
+
+                  <div className="page-segmented" role="group" aria-label="Fill type">
+                    {(['solid', 'linear', 'radial'] as const).map((fm) => (
+                      <button
+                        key={fm}
+                        type="button"
+                        aria-pressed={fillMode === fm}
+                        onClick={() => {
+                          pushHistory();
+                          setFillMode(fm);
+                          if (fm !== 'solid' && !paintByFacet) setFaceColors(new Map());
+                        }}
+                      >
+                        {fm === 'solid' ? 'Solid' : fm === 'linear' ? 'Linear' : 'Radial'}
+                      </button>
+                    ))}
+                  </div>
+
+                  {fillMode === 'solid' ? (
+                    <div className="createx-color-bar">
+                      <label className="createx-hex-pill" title="Pick active brush hex color">
+                        <input
+                          type="color"
+                          value={color}
+                          onChange={(e) => setColor(e.target.value)}
+                        />
+                        <span className="createx-mono-hex">{color.toUpperCase()}</span>
+                      </label>
+                      <button
+                        type="button"
+                        className={`page-chip ${paintByFacet || faceColors.size > 0 ? 'is-active' : ''}`}
+                        aria-pressed={paintByFacet || faceColors.size > 0}
+                        title="When active, brush paints individual facets with the selected swatch"
+                        onClick={() => setPaintByFacet((v) => !v)}
+                      >
+                        {paintByFacet || faceColors.size > 0 ? 'Layer Paint' : 'Whole Mark'}
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="createx-grad-box">
+                      <div className="createx-grad-stops">
+                        <label className="createx-hex-pill" title="Gradient start stop">
+                          <input
+                            type="color"
+                            value={activeStops[0]?.color ?? gradStart}
+                            onChange={(e) => {
+                              setGradStart(e.target.value);
+                              setGradStops(null);
+                            }}
+                          />
+                          <span className="createx-mono-hex">{(activeStops[0]?.color ?? gradStart).toUpperCase()}</span>
+                        </label>
+                        <span style={{ color: 'var(--studio-muted)', fontSize: 11 }}>→</span>
+                        <label className="createx-hex-pill" title="Gradient end stop">
+                          <input
+                            type="color"
+                            value={activeStops[activeStops.length - 1]?.color ?? gradEnd}
+                            onChange={(e) => {
+                              setGradEnd(e.target.value);
+                              setGradStops(null);
+                            }}
+                          />
+                          <span className="createx-mono-hex">{(activeStops[activeStops.length - 1]?.color ?? gradEnd).toUpperCase()}</span>
+                        </label>
+                      </div>
+                      {fillMode === 'linear' && (
+                        <label className="createx-angle-row">
+                          <span>Angle {Math.round(gradAngle)}°</span>
+                          <input
+                            type="range"
+                            min={0}
+                            max={360}
+                            step={5}
+                            value={gradAngle}
+                            onChange={(e) => setGradAngle(Number(e.target.value))}
+                          />
+                        </label>
+                      )}
+                      <div className="page-chip-row" style={{ marginTop: 6 }}>
+                        <button
+                          type="button"
+                          className="page-chip"
+                          title="Use active Design System primary and accent gradient"
+                          onClick={() => {
+                            pushHistory();
+                            setGradStart(designSystem.primaryHex);
+                            setGradEnd(designSystem.accentHex);
+                            setGradStops(null);
+                          }}
+                        >
+                          System
+                        </button>
+                        {GRADIENT_PRESETS.map((gp) => (
+                          <button
+                            key={gp.id}
+                            type="button"
+                            className="page-chip"
+                            title={gp.label}
+                            onClick={() => {
+                              pushHistory();
+                              setFillMode('linear');
+                              setGradAngle(gp.angle);
+                              setGradStart(gp.stops[0].color);
+                              setGradEnd(gp.stops[gp.stops.length - 1].color);
+                              setGradStops(gp.stops);
+                              if (!paintByFacet) setFaceColors(new Map());
+                            }}
+                          >
+                            <span
+                              className="createx-grad-chip-dot"
+                              style={{
+                                background: `linear-gradient(135deg, ${gp.stops[0].color}, ${gp.stops[gp.stops.length - 1].color})`,
+                              }}
+                            />
+                            {gp.label.split(' ')[0]}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="createx-swatch-strip" aria-label="Quick brand & system color swatches">
+                    {[...new Set([
+                      ...sourcePalette,
+                      designSystem.primaryHex,
+                      designSystem.secondaryHex,
+                      designSystem.accentHex,
+                      DEFAULT_INK[theme],
+                    ])]
+                      .slice(0, 10)
+                      .map((sw) => (
+                        <button
+                          key={sw}
+                          type="button"
+                          className={`createx-swatch-btn ${color.toLowerCase() === sw.toLowerCase() && fillMode === 'solid' ? 'is-active' : ''}`}
+                          style={{ background: sw }}
+                          title={`Paint ${sw.toUpperCase()}`}
+                          aria-label={`Select color ${sw}`}
+                          onClick={() => {
+                            setFillMode('solid');
+                            setColor(sw);
+                          }}
+                        />
+                      ))}
+                  </div>
+                </div>
+
+                <div className="page-section">
+                  <div className="page-section-title">Container Badge &amp; Knock-Out</div>
+                  <div className="page-chip-row">
+                    {(
+                      [
+                        ['none', 'None'],
+                        ['squircle', 'Squircle'],
+                        ['circle', 'Circle'],
+                        ['rounded', 'Rounded'],
+                        ['hexagon', 'Hexagon'],
+                        ['octagon', 'Octagon'],
+                        ['shield', 'Shield'],
+                      ] as const
+                    ).map(([bId, bLbl]) => (
+                      <button
+                        key={bId}
+                        type="button"
+                        className={`page-chip ${badgeShape === bId ? 'is-active' : ''}`}
+                        onClick={() => setBadgeShape(bId)}
+                      >
+                        {bLbl}
+                      </button>
+                    ))}
+                  </div>
+                  {badgeShape !== 'none' && (
+                    <div className="createx-color-bar" style={{ marginTop: 8 }}>
+                      <label className="createx-hex-pill" title="Badge background color">
+                        <input
+                          type="color"
+                          value={badgeColor}
+                          onChange={(e) => setBadgeColor(e.target.value)}
+                        />
+                        <span className="createx-mono-hex">{badgeColor.toUpperCase()}</span>
+                      </label>
+                      <button
+                        type="button"
+                        className={`page-chip ${badgeKnockout ? 'is-active' : ''}`}
+                        aria-pressed={badgeKnockout}
+                        title="Punch mark out of the container badge using evenodd compound path"
+                        onClick={() => setBadgeKnockout((v) => !v)}
+                      >
+                        {badgeKnockout ? 'Knock-Out On' : 'Layered On Badge'}
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                <div className="page-section">
+                  <div className="page-section-title">Optical Scale &amp; Angle Trim</div>
+                  <label className="createx-angle-row">
+                    <span>Mark Scale · {markScalePct}%</span>
+                    <input
+                      type="range"
+                      min={65}
+                      max={118}
+                      step={1}
+                      value={markScalePct}
+                      onChange={(e) => setMarkScalePct(Number(e.target.value))}
+                    />
+                  </label>
+                  <label className="createx-angle-row" style={{ marginTop: 6 }}>
+                    <span>Rotation · {markRotateDeg}°</span>
+                    <input
+                      type="range"
+                      min={-45}
+                      max={45}
+                      step={5}
+                      value={markRotateDeg}
+                      onChange={(e) => setMarkRotateDeg(Number(e.target.value))}
+                    />
+                  </label>
+                  {(markScalePct !== 100 || markRotateDeg !== 0) && (
+                    <button
+                      type="button"
+                      className="page-chip"
+                      style={{ marginTop: 6 }}
+                      onClick={() => {
+                        setMarkScalePct(100);
+                        setMarkRotateDeg(0);
+                      }}
+                    >
+                      Reset Transform
+                    </button>
+                  )}
+                </div>
+              </>
+            )}
+
+            {inspectorTab === 'starters' && (
+              <>
+                <div className="page-section">
+                  <div className="page-section-title">Geometric Form Starters ({EXTENDED_STARTERS.length})</div>
+                  <div className="page-chip-row" style={{ marginBottom: 8 }}>
+                    {(
+                      [
+                        ['all', 'All'],
+                        ['emblem', 'Emblem'],
+                        ['tech', 'Tech'],
+                        ['badge', 'Badge'],
+                      ] as const
+                    ).map(([cid, clbl]) => (
+                      <button
+                        key={cid}
+                        type="button"
+                        className={`page-chip ${starterCat === cid ? 'is-active' : ''}`}
+                        onClick={() => setStarterCat(cid)}
+                      >
+                        {clbl}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="page-chip-row">
+                    {visibleStarters.map((st) => (
+                      <button
+                        key={st.id}
+                        type="button"
+                        className="page-chip"
+                        onClick={() => applyExtendedStarter(st.id)}
+                      >
+                        {st.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="page-section">
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+                    <div className="page-section-title" style={{ marginBottom: 0 }}>Constructive Monogram Stamp</div>
+                    <div className="page-segmented" style={{ width: 152 }}>
+                      {(
+                        [
+                          ['replace', 'Set'],
+                          ['union', '+Add'],
+                          ['subtract', '−Cut'],
+                        ] as const
+                      ).map(([mId, mLbl]) => (
+                        <button
+                          key={mId}
+                          type="button"
+                          aria-pressed={monogramMode === mId}
+                          onClick={() => setMonogramMode(mId)}
+                        >
+                          {mLbl}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="createx-monogram-grid">
+                    {MONOGRAM_CHARS.map((ch) => (
+                      <button
+                        key={ch}
+                        type="button"
+                        className={`createx-monogram-btn ${activeMonogramChar === ch ? 'is-active' : ''}`}
+                        onClick={() => applyMonogramStamp(ch)}
+                      >
+                        {ch}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {gridId === 'square' && (
+                  <div className="page-section">
+                    <div className="page-section-title">Square Cell Motif</div>
+                    <div className="page-chip-row">
+                      {MOTIFS.map((m) => (
+                        <button
+                          key={m.id}
+                          type="button"
+                          className={`page-chip ${motif === m.id ? 'is-active' : ''}`}
+                          onClick={() => {
+                            pushHistory();
+                            setMotif(m.id);
+                          }}
+                        >
+                          {m.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="page-section">
                   <div className="page-section-title">Square Pattern Presets ({GRID_PRESETS.length})</div>
@@ -1700,6 +2679,38 @@ export function CreateX() {
                         {p.label}
                       </button>
                     ))}
+                  </div>
+                </div>
+
+                <div className="page-section">
+                  <div className="page-section-title">Pro Export &amp; Code Suite</div>
+                  <div className="createx-export-grid">
+                    <button type="button" className="ds-action-btn is-primary" onClick={exportSvg}>
+                      Master Vector SVG
+                    </button>
+                    <button type="button" className="ds-action-btn" onClick={exportBlueprintSvg}>
+                      Blueprint Spec SVG
+                    </button>
+                    <button type="button" className="ds-action-btn" onClick={() => exportPngAtSize(512)}>
+                      PNG 512px
+                    </button>
+                    <button type="button" className="ds-action-btn" onClick={() => exportPngAtSize(1024)}>
+                      PNG 1024px
+                    </button>
+                    <button type="button" className="ds-action-btn" onClick={() => exportPngAtSize(2048)}>
+                      PNG 2048px
+                    </button>
+                    <button type="button" className="ds-action-btn" onClick={copySvgCode}>
+                      Copy Clean SVG
+                    </button>
+                    <button
+                      type="button"
+                      className="ds-action-btn"
+                      style={{ gridColumn: '1 / -1', justifyContent: 'center' }}
+                      onClick={copyReactCode}
+                    >
+                      Copy React / TSX Component
+                    </button>
                   </div>
                 </div>
               </>

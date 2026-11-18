@@ -822,3 +822,615 @@
     overflow-y: auto;
   }
 }
+
+/* ── Logo Maker Stage Bar, Overlays, Lockup Studio & Stress-Test Lab ── */
+
+.is-createx .studio-toolbar {
+  bottom: 14px;
+  gap: 5px;
+  max-width: calc(100% - 20px);
+}
+
+.is-createx .toolbar-pill {
+  height: 36px;
+  padding: 0 4px;
+  gap: 1px;
+}
+
+.is-createx .toolbar-button.is-icon {
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+.is-createx .zoom-value {
+  min-width: 40px;
+  font-size: 11.5px;
+}
+
+.createx-stage-bar {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  right: 10px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--studio-panel-bg) 92%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--studio-panel-border);
+  flex-wrap: wrap;
+}
+
+.createx-stage-modes {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 7px;
+  background: var(--studio-panel-control);
+}
+
+.createx-stage-mode-btn {
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--studio-muted);
+  white-space: nowrap;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.createx-stage-mode-btn:hover {
+  color: var(--studio-ink);
+}
+
+.createx-stage-mode-btn.is-active {
+  background: var(--studio-accent);
+  color: var(--studio-accent-fg);
+}
+
+.createx-overlay-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.createx-overlay-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--studio-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 1px;
+}
+
+.createx-keyline-pills {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.createx-mini-pill {
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--studio-muted);
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+  transition: all 120ms ease;
+}
+
+.createx-mini-pill:hover {
+  color: var(--studio-ink);
+}
+
+.createx-mini-pill.is-active {
+  color: #0ea5e9;
+  border-color: rgba(14, 165, 233, 0.45);
+  background: rgba(14, 165, 233, 0.14);
+}
+
+.createx-ops-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.createx-ops-grid .page-chip {
+  justify-content: center;
+  width: 100%;
+  font-size: 10.5px;
+  padding: 0 6px;
+}
+
+.createx-monogram-grid {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.createx-monogram-btn {
+  height: 27px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--studio-ink);
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+  transition: all 110ms ease;
+}
+
+.createx-monogram-btn:hover {
+  border-color: var(--studio-ink);
+}
+
+.createx-monogram-btn.is-active {
+  background: var(--studio-accent);
+  color: var(--studio-accent-fg);
+}
+
+.createx-export-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.createx-export-grid .ds-action-btn {
+  justify-content: center;
+  font-size: 11px;
+  padding: 7px 8px;
+}
+
+/* Stress-Test Lab & Lockup Studio Scroll Container */
+.createx-lab-scroll {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 58px 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.createx-lab-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--studio-panel-border);
+  flex-wrap: wrap;
+}
+
+.createx-lab-eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--studio-muted);
+  margin-bottom: 2px;
+}
+
+.createx-lab-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--studio-ink);
+}
+
+.createx-lab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.createx-lab-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 13px;
+  border-radius: 12px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-lab-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.createx-lab-card-head strong {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--studio-ink);
+}
+
+.createx-lab-card-head span {
+  display: block;
+  font-size: 11px;
+  color: var(--studio-muted);
+  margin-top: 2px;
+}
+
+.createx-lab-badge {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+  color: var(--studio-ink);
+}
+
+.createx-squint-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.createx-squint-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-squint-box.is-dark {
+  background: #09090b;
+  color: #a1a1aa;
+}
+
+.createx-squint-box.is-light {
+  background: #ffffff;
+  color: #52525b;
+}
+
+.createx-squint-box span {
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.createx-squint-svg {
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  transition: filter 150ms ease;
+}
+
+.createx-scale-strip {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #09090b;
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-scale-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: #a1a1aa;
+  font-family: ui-monospace, monospace;
+}
+
+.createx-scale-frame {
+  min-width: 36px;
+  min-height: 36px;
+  display: grid;
+  place-items: center;
+}
+
+.createx-tab-sim-stack {
+  display: grid;
+  gap: 6px;
+}
+
+.createx-browser-tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-browser-tab.is-dark {
+  background: #141418;
+  color: #fafafa;
+}
+
+.createx-browser-tab.is-light {
+  background: #f4f4f5;
+  color: #09090b;
+}
+
+.createx-browser-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.createx-browser-dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.25;
+}
+
+.createx-browser-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(128, 128, 128, 0.14);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.createx-browser-fav {
+  width: 16px;
+  height: 16px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.createx-browser-close {
+  opacity: 0.5;
+  margin-left: 4px;
+}
+
+.createx-surface-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.createx-surface-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 8px 8px;
+  border-radius: 9px;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+}
+
+.createx-surface-meta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.createx-surface-meta strong {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.createx-surface-meta span {
+  font-family: ui-monospace, monospace;
+  opacity: 0.8;
+}
+
+.createx-mask-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.createx-mask-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  font-size: 10.5px;
+  color: var(--studio-muted);
+}
+
+.createx-mask-avatar {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  background: #09090b;
+  border: 1px solid var(--studio-panel-border);
+  overflow: hidden;
+}
+
+@keyframes createxSpin360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.createx-mask-avatar.is-spinning svg {
+  animation: createxSpin360 6s linear infinite;
+}
+
+.createx-telemetry-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.createx-telemetry-kpi {
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-telemetry-kpi span {
+  display: block;
+  font-size: 9.5px;
+  color: var(--studio-muted);
+  text-transform: uppercase;
+}
+
+.createx-telemetry-kpi strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-family: ui-monospace, monospace;
+}
+
+.createx-findings-list {
+  display: grid;
+  gap: 5px;
+}
+
+.createx-finding-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  border-radius: 7px;
+  font-size: 11px;
+  background: var(--studio-panel-control);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-finding-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #10b981;
+}
+
+.createx-finding-item.is-warn .createx-finding-dot {
+  background: #f59e0b;
+}
+
+.createx-finding-item.is-fail .createx-finding-dot {
+  background: #ef4444;
+}
+
+/* Lockup Builder Controls & Specimens */
+.createx-lockup-controls {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr 1fr 1.1fr;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-lockup-sliders {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+}
+
+.createx-lockup-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--studio-muted);
+}
+
+.createx-lockup-stage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.createx-lockup-specimen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--studio-panel-bg);
+  border: 1px solid var(--studio-panel-border);
+  cursor: pointer;
+  transition: border-color 140ms ease;
+}
+
+.createx-lockup-specimen.is-wide {
+  grid-column: 1 / -1;
+}
+
+.createx-lockup-specimen.is-selected {
+  border-color: var(--studio-ink);
+}
+
+.createx-lockup-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.createx-lockup-card-top strong {
+  font-size: 12.5px;
+  color: var(--studio-ink);
+}
+
+.createx-lockup-card-top span {
+  font-size: 11px;
+  color: var(--studio-muted);
+}
+
+.createx-lockup-svg-wrap {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.createx-lockup-svg-wrap svg {
+  width: 100%;
+  max-height: 220px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  .createx-lab-grid,
+  .createx-lockup-controls,
+  .createx-lockup-sliders,
+  .createx-lockup-stage {
+    grid-template-columns: 1fr;
+  }
+}
+

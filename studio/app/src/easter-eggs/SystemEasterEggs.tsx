@@ -153,6 +153,7 @@ export const AppleLiquidGlassStage = memo(function AppleLiquidGlassStage({
     el.setAttribute('data-theme', mode);
     el.style.background = mode === 'dark' ? '#000000' : '#f5f5f7';
     el.style.color = mode === 'dark' ? '#f5f5f7' : '#1d1d1f';
+    el.style.setProperty('--apple-link-tint', mode === 'dark' ? '#2997ff' : '#0066cc');
     const sub = el.querySelector<HTMLElement>('[data-apple-sub]');
     if (sub) {
       sub.style.color = mode === 'dark' ? 'rgba(245, 245, 247, 0.68)' : 'rgba(29, 29, 31, 0.72)';
@@ -167,6 +168,7 @@ export const AppleLiquidGlassStage = memo(function AppleLiquidGlassStage({
       className="ds-glisse-stage"
       data-theme={defaultPolarity}
       style={{
+        ['--apple-link-tint' as string]: isDarkInit ? '#2997ff' : '#0066cc',
         position: 'relative',
         padding: compact ? '24px 26px' : '38px 40px',
         background: isDarkInit ? '#000000' : '#f5f5f7',
