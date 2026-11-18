@@ -1,0 +1,640 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#F5F5F5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#76A300",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "50",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "100",
+      "value": "#EBEBEC"
+    },
+    {
+      "name": "200",
+      "value": "#D7D8D9"
+    },
+    {
+      "name": "300",
+      "value": "#AFB2B3"
+    },
+    {
+      "name": "400",
+      "value": "#888B8E"
+    },
+    {
+      "name": "500",
+      "value": "#606568"
+    },
+    {
+      "name": "600",
+      "value": "#4F5054"
+    },
+    {
+      "name": "700",
+      "value": "#363638"
+    },
+    {
+      "name": "800",
+      "value": "#2B2B2C"
+    },
+    {
+      "name": "900",
+      "value": "#1C1C1D"
+    },
+    {
+      "name": "1000",
+      "value": "#131314"
+    },
+    {
+      "name": "1100",
+      "value": "#0B0B0B"
+    },
+    {
+      "name": "tog",
+      "value": "#123DA0"
+    },
+    {
+      "name": "lokaltog",
+      "value": "#65B152"
+    },
+    {
+      "name": "lokaltog-light",
+      "value": "#E5F6D1"
+    },
+    {
+      "name": "regiontog",
+      "value": "#C34C4C"
+    },
+    {
+      "name": "regiontog-light",
+      "value": "#FBE8EB"
+    },
+    {
+      "name": "region-ekspress",
+      "value": "#10A8B2"
+    },
+    {
+      "name": "region-ekspress-light",
+      "value": "#D8F1F4"
+    },
+    {
+      "name": "fjerntog",
+      "value": "#123DA0"
+    },
+    {
+      "name": "fjerntog-light",
+      "value": "#DCE4EF"
+    },
+    {
+      "name": "flytog",
+      "value": "#CF6C05"
+    },
+    {
+      "name": "flytog-light",
+      "value": "#FFE6CC"
+    },
+    {
+      "name": "vy-buss",
+      "value": "#037D67"
+    },
+    {
+      "name": "vy-buss-light",
+      "value": "#E5F4F1"
+    },
+    {
+      "name": "lokalbuss",
+      "value": "#606568"
+    },
+    {
+      "name": "lokalbuss-light",
+      "value": "#EBEBEC"
+    },
+    {
+      "name": "ferge",
+      "value": "#8835A5"
+    },
+    {
+      "name": "ferge-light",
+      "value": "#F0DDF0"
+    },
+    {
+      "name": "trikk",
+      "value": "#0392F1"
+    },
+    {
+      "name": "trikk-light",
+      "value": "#D9EDFB"
+    },
+    {
+      "name": "tbane",
+      "value": "#E77300"
+    },
+    {
+      "name": "tbane-light",
+      "value": "#FFE6CC"
+    },
+    {
+      "name": "alt-transport",
+      "value": "#FAE053"
+    },
+    {
+      "name": "alt-transport-light",
+      "value": "#FDF3BA"
+    },
+    {
+      "name": "ruter-oslo",
+      "value": "#E60000"
+    },
+    {
+      "name": "ruter-akershus",
+      "value": "#76A300"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "color-linjetag-tog",
+      "value": "#123DA0"
+    },
+    {
+      "name": "color-linjetag-lokaltog",
+      "value": "#65B152"
+    },
+    {
+      "name": "color-linjetag-lokaltog-light",
+      "value": "#E5F6D1"
+    },
+    {
+      "name": "color-linjetag-regiontog",
+      "value": "#C34C4C"
+    },
+    {
+      "name": "color-linjetag-regiontog-light",
+      "value": "#FBE8EB"
+    },
+    {
+      "name": "color-linjetag-region-ekspress",
+      "value": "#10A8B2"
+    },
+    {
+      "name": "color-linjetag-region-ekspress-light",
+      "value": "#D8F1F4"
+    },
+    {
+      "name": "color-linjetag-fjerntog",
+      "value": "#123DA0"
+    },
+    {
+      "name": "color-linjetag-fjerntog-light",
+      "value": "#DCE4EF"
+    },
+    {
+      "name": "color-linjetag-flytog",
+      "value": "#CF6C05"
+    },
+    {
+      "name": "color-linjetag-flytog-light",
+      "value": "#FFE6CC"
+    },
+    {
+      "name": "color-linjetag-vy-buss",
+      "value": "#037D67"
+    },
+    {
+      "name": "color-linjetag-vy-buss-light",
+      "value": "#E5F4F1"
+    },
+    {
+      "name": "color-linjetag-lokalbuss",
+      "value": "#606568"
+    },
+    {
+      "name": "color-linjetag-lokalbuss-light",
+      "value": "#EBEBEC"
+    },
+    {
+      "name": "color-linjetag-ferge",
+      "value": "#8835A5"
+    },
+    {
+      "name": "color-linjetag-ferge-light",
+      "value": "#F0DDF0"
+    },
+    {
+      "name": "color-linjetag-trikk",
+      "value": "#0392F1"
+    },
+    {
+      "name": "color-linjetag-trikk-light",
+      "value": "#D9EDFB"
+    },
+    {
+      "name": "color-linjetag-tbane",
+      "value": "#E77300"
+    },
+    {
+      "name": "color-linjetag-tbane-light",
+      "value": "#FFE6CC"
+    },
+    {
+      "name": "color-linjetag-alt-transport",
+      "value": "#FAE053"
+    },
+    {
+      "name": "color-linjetag-alt-transport-light",
+      "value": "#FDF3BA"
+    },
+    {
+      "name": "color-linjetag-ruter-oslo",
+      "value": "#E60000"
+    },
+    {
+      "name": "color-linjetag-ruter-akershus",
+      "value": "#76A300"
+    },
+    {
+      "name": "color-palette-grey-50",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "color-palette-grey-100",
+      "value": "#EBEBEC"
+    },
+    {
+      "name": "color-palette-grey-200",
+      "value": "#D7D8D9"
+    },
+    {
+      "name": "color-palette-grey-300",
+      "value": "#AFB2B3"
+    },
+    {
+      "name": "color-palette-grey-400",
+      "value": "#888B8E"
+    },
+    {
+      "name": "color-palette-grey-500",
+      "value": "#606568"
+    },
+    {
+      "name": "color-palette-grey-600",
+      "value": "#4F5054"
+    },
+    {
+      "name": "color-palette-grey-700",
+      "value": "#363638"
+    },
+    {
+      "name": "color-palette-grey-800",
+      "value": "#2B2B2C"
+    },
+    {
+      "name": "color-palette-grey-900",
+      "value": "#1C1C1D"
+    },
+    {
+      "name": "color-palette-grey-1000",
+      "value": "#131314"
+    },
+    {
+      "name": "color-palette-grey-1100",
+      "value": "#0B0B0B"
+    },
+    {
+      "name": "color-palette-green-50",
+      "value": "#E5F4F1"
+    },
+    {
+      "name": "color-palette-green-100",
+      "value": "#CCEAE4"
+    },
+    {
+      "name": "color-palette-green-200",
+      "value": "#B2DFD7"
+    },
+    {
+      "name": "color-palette-green-300",
+      "value": "#84CFC2"
+    },
+    {
+      "name": "color-palette-green-400",
+      "value": "#38B49E"
+    },
+    {
+      "name": "color-palette-green-500",
+      "value": "#00957A"
+    },
+    {
+      "name": "color-palette-green-600",
+      "value": "#037D67"
+    },
+    {
+      "name": "color-palette-green-700",
+      "value": "#00685E"
+    },
+    {
+      "name": "color-palette-green-800",
+      "value": "#00453E"
+    },
+    {
+      "name": "color-palette-green-900",
+      "value": "#012622"
+    },
+    {
+      "name": "color-palette-green-1000",
+      "value": "#001A18"
+    },
+    {
+      "name": "color-palette-green-1100",
+      "value": "#001211"
+    },
+    {
+      "name": "color-palette-blue-50",
+      "value": "#EDF1F7"
+    },
+    {
+      "name": "color-palette-blue-100",
+      "value": "#DCE4EF"
+    },
+    {
+      "name": "primary",
+      "value": "#76A300"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-style-xxl-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "3.375rem",
+      "px": 54
+    },
+    {
+      "name": "font-style-xl-display-font-size-desktop",
+      "fontFamily": "\"Vy Display\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-style-xl-sans-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-style-xxl-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "font-style-xl-display-font-size-mobile",
+      "fontFamily": "\"Vy Display\"",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "font-style-xl-sans-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "font-style-lg-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "font-style-lg-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-style-md-lg-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-style-md-lg-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "font-style-md-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "font-style-md-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-style-sm-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-style-sm-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-style-xs-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-heading",
+      "fontFamily": "\"Vy Display\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-body",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "\"Roboto Mono\"",
+      "px": 16
+    },
+    {
+      "name": "monospace",
+      "fontFamily": "\"Roboto Mono\"",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Vy Display\"",
+      "px": 16
+    },
+    {
+      "name": "xxl",
+      "fontFamily": "\"Vy Display\"",
+      "px": 16
+    },
+    {
+      "name": "xl-display",
+      "fontFamily": "\"Vy Display\"",
+      "px": 16
+    },
+    {
+      "name": "xl-sans",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "lg",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "md-lg",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "md",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "sm",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "xs",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "2xs",
+      "fontFamily": "\"Vy Sans\"",
+      "px": 16
+    },
+    {
+      "name": "font-style-xs-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-style-2xs-font-size-desktop",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-style-2xs-font-size-mobile",
+      "fontFamily": "\"Vy Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#76A300",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#76A300",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Spor** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#76A300` brand accent.\n\nTypography centers cleanly on `Vy Sans` (54px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#F5F5F5` surface layering.\n\nMaintained by **Vy Group**. Source: published token package (https://github.com/nsbno/spor/tree/main/packages/spor-card-react), package `@vygruppen/spor-design-tokens`. Inventory: **91** colors, **33** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#F5F5F5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#F5F5F5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#76A300` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#76A300` with `#f7f7f8` text (2.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Vy Sans` headings with `Vy Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F5F5F5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "dracula",
+  "displayName": "Dracula UI",
+  "description": "Dracula Theme Dracula UI — tokens imported from dracula-ui.",
+  "style": "Dracula Theme Dracula UI — tokens imported from dracula-ui.",
+  "category": "Dracula Theme",
+  "org": "Dracula Theme",
+  "theme": "light",
+  "tags": [
+    "published",
+    "dracula-theme",
+    "light"
+  ],
+  "homepage": "https://ui.draculatheme.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from dracula-ui@1.0.6 (2 token files, 105 colours harvested, 24 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "dracula-ui",
+    "version": "1.0.6"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 25,
+    "typography": 0,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,745 @@
+{
+  "canvas": "#f3f4f7",
+  "surface": "#f3f4f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "brand-colorpalette-1-300",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "neutral-025",
+      "value": "#f3f4f7"
+    },
+    {
+      "name": "neutral-100",
+      "value": "#dfe1ea"
+    },
+    {
+      "name": "neutral-200",
+      "value": "#c0c3d5"
+    },
+    {
+      "name": "neutral-300",
+      "value": "#a9aec6"
+    },
+    {
+      "name": "neutral-400",
+      "value": "#8e93b1"
+    },
+    {
+      "name": "neutral-500",
+      "value": "#6e7597"
+    },
+    {
+      "name": "neutral-600",
+      "value": "#5b6185"
+    },
+    {
+      "name": "neutral-700",
+      "value": "#454b6b"
+    },
+    {
+      "name": "neutral-800",
+      "value": "#30344f"
+    },
+    {
+      "name": "neutral-900",
+      "value": "#1d2034"
+    },
+    {
+      "name": "brand-colorpalette-1-025",
+      "value": "#f2f2fb"
+    },
+    {
+      "name": "brand-colorpalette-1-100",
+      "value": "#dfe0f5"
+    },
+    {
+      "name": "brand-colorpalette-1-200",
+      "value": "#bfc0ea"
+    },
+    {
+      "name": "brand-colorpalette-1-300",
+      "value": "#a9aae2"
+    },
+    {
+      "name": "brand-colorpalette-1-400",
+      "value": "#8f8dd7"
+    },
+    {
+      "name": "brand-colorpalette-1-500",
+      "value": "#716bc7"
+    },
+    {
+      "name": "brand-colorpalette-1-600",
+      "value": "#5f54bb"
+    },
+    {
+      "name": "brand-colorpalette-1-700",
+      "value": "#4b38ab"
+    },
+    {
+      "name": "brand-colorpalette-1-800",
+      "value": "#3a1797"
+    },
+    {
+      "name": "brand-colorpalette-1-900",
+      "value": "#240070"
+    },
+    {
+      "name": "brand-colorpalette-2-025",
+      "value": "#c4ffee"
+    },
+    {
+      "name": "brand-colorpalette-2-100",
+      "value": "#80f6d7"
+    },
+    {
+      "name": "brand-colorpalette-2-200",
+      "value": "#42dab8"
+    },
+    {
+      "name": "brand-colorpalette-2-300",
+      "value": "#28c4a4"
+    },
+    {
+      "name": "brand-colorpalette-2-400",
+      "value": "#0ea88b"
+    },
+    {
+      "name": "brand-colorpalette-2-500",
+      "value": "#00866e"
+    },
+    {
+      "name": "brand-colorpalette-2-600",
+      "value": "#00705c"
+    },
+    {
+      "name": "brand-colorpalette-2-700",
+      "value": "#005747"
+    },
+    {
+      "name": "brand-colorpalette-2-800",
+      "value": "#003e32"
+    },
+    {
+      "name": "brand-colorpalette-2-900",
+      "value": "#00271f"
+    },
+    {
+      "name": "kern-color-neutral-025",
+      "value": "#f3f4f7"
+    },
+    {
+      "name": "kern-color-neutral-100",
+      "value": "#dfe1ea"
+    },
+    {
+      "name": "kern-color-neutral-200",
+      "value": "#c0c3d5"
+    },
+    {
+      "name": "kern-color-neutral-300",
+      "value": "#a9aec6"
+    },
+    {
+      "name": "kern-color-neutral-400",
+      "value": "#8e93b1"
+    },
+    {
+      "name": "kern-color-neutral-500",
+      "value": "#6e7597"
+    },
+    {
+      "name": "kern-color-neutral-600",
+      "value": "#5b6185"
+    },
+    {
+      "name": "kern-color-neutral-700",
+      "value": "#454b6b"
+    },
+    {
+      "name": "kern-color-neutral-800",
+      "value": "#30344f"
+    },
+    {
+      "name": "kern-color-neutral-900",
+      "value": "#1d2034"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-025",
+      "value": "#f2f2fb"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-100",
+      "value": "#dfe0f5"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-200",
+      "value": "#bfc0ea"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-300",
+      "value": "#a9aae2"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-400",
+      "value": "#8f8dd7"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-500",
+      "value": "#716bc7"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-600",
+      "value": "#5f54bb"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-700",
+      "value": "#4b38ab"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-800",
+      "value": "#3a1797"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-1-900",
+      "value": "#240070"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-025",
+      "value": "#c4ffee"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-100",
+      "value": "#80f6d7"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-200",
+      "value": "#42dab8"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-300",
+      "value": "#28c4a4"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-400",
+      "value": "#0ea88b"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-500",
+      "value": "#00866e"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-600",
+      "value": "#00705c"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-700",
+      "value": "#005747"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-800",
+      "value": "#003e32"
+    },
+    {
+      "name": "kern-color-brand-colorpalette-2-900",
+      "value": "#00271f"
+    },
+    {
+      "name": "darkblue-025",
+      "value": "#eff3fa"
+    },
+    {
+      "name": "darkblue-650",
+      "value": "#2e53b2"
+    },
+    {
+      "name": "lightblue-300",
+      "value": "#10bdec"
+    },
+    {
+      "name": "lightblue-950",
+      "value": "#001924"
+    },
+    {
+      "name": "turquois-600",
+      "value": "#007155"
+    },
+    {
+      "name": "green-250",
+      "value": "#8ac593"
+    },
+    {
+      "name": "green-900",
+      "value": "#002803"
+    },
+    {
+      "name": "limette-550",
+      "value": "#5f7400"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#e9c00d"
+    },
+    {
+      "name": "yellow-850",
+      "value": "#372a00"
+    },
+    {
+      "name": "orange-500",
+      "value": "#ad6500"
+    },
+    {
+      "name": "red-150",
+      "value": "#fdc5bb"
+    },
+    {
+      "name": "red-800",
+      "value": "#740000"
+    },
+    {
+      "name": "violet-450",
+      "value": "#b36bd6"
+    },
+    {
+      "name": "grey-100",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "grey-750",
+      "value": "#424242"
+    },
+    {
+      "name": "kern-color-darkblue-300",
+      "value": "#97afe1"
+    },
+    {
+      "name": "kern-color-darkblue-950",
+      "value": "#06005d"
+    },
+    {
+      "name": "kern-color-lightblue-600",
+      "value": "#006b8c"
+    },
+    {
+      "name": "kern-color-turquois-250",
+      "value": "#4fcba7"
+    },
+    {
+      "name": "kern-color-turquois-900",
+      "value": "#00271b"
+    },
+    {
+      "name": "kern-color-green-550",
+      "value": "#007d31"
+    },
+    {
+      "name": "kern-color-limette-200",
+      "value": "#afd116"
+    },
+    {
+      "name": "kern-color-limette-850",
+      "value": "#252f00"
+    },
+    {
+      "name": "kern-color-yellow-500",
+      "value": "#8f7400"
+    },
+    {
+      "name": "kern-color-orange-150",
+      "value": "#feca6e"
+    },
+    {
+      "name": "kern-color-orange-800",
+      "value": "#532d00"
+    },
+    {
+      "name": "kern-color-red-450",
+      "value": "#e35e4e"
+    },
+    {
+      "name": "kern-color-violet-100",
+      "value": "#eddaf7"
+    },
+    {
+      "name": "kern-color-violet-750",
+      "value": "#6e0095"
+    },
+    {
+      "name": "primary",
+      "value": "#dfe0f5"
+    }
+  ],
+  "type": [
+    {
+      "name": "kern-font-size-80",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "5rem",
+      "px": 80
+    },
+    {
+      "name": "kern-font-size-72",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "kern-font-size-56",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "kern-font-size-48",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "kern-font-size-40",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "kern-font-size-32",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "kern-font-size-26",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "kern-font-size-24",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "kern-font-size-21",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "kern-font-size-20",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "kern-font-size-18",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "kern-font-size-16",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "kern-typography-font-family-fira-sans",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "kern-typography-font-family-fira-mono",
+      "fontFamily": "\"Fira Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "kern-component-kopfzeile-font-family",
+      "fontFamily": "\"Fira Sans\", \"Fira Sans Regular\", \"Noto Sans\", \"Noto Sans Regular\", \"SF Pro Text\", \"Segoe UI\", SegoeUI, Roboto, Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "kern-typography-font-family-default",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-body",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-heading-display",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-heading-x-large",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-heading-large",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-heading-medium",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-heading-small",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-title",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "kern-font-size-14",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "kern-font-size-12",
+      "fontFamily": "\"Fira Sans\", sans-serif",
+      "fontSize": ".75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#FFF",
+      "rounded": "0.25rem",
+      "padding": "0rem",
+      "border": "0.0625rem solid #C0C3D5"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#131525",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#131525",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "backgroundColor": "#FFF",
+      "rounded": "0.5rem",
+      "padding": "0rem",
+      "border": "0.0625rem solid #6E7597"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "backgroundColor": "#FFF",
+      "rounded": "0rem 0rem 0.25rem 0.25rem",
+      "padding": "0.5rem 1.5rem 1rem 1.5rem"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "#131525",
+      "padding": "0.375rem 0rem 0.125rem 0rem",
+      "shadow": "inset 0 -1px 0 0 #6E7597"
+    },
+    {
+      "key": "summary",
+      "kind": "summary",
+      "backgroundColor": "#F3F4F7",
+      "rounded": "0.25rem",
+      "padding": "1rem",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "table-2",
+      "kind": "table",
+      "textColor": "#131525",
+      "padding": "0.375rem 0rem 0.125rem 0rem",
+      "shadow": "inset 0 -1px 0 0 #6E7597"
+    },
+    {
+      "key": "kern-form-input",
+      "kind": "input",
+      "backgroundColor": "#F7F7F9",
+      "textColor": "#131525",
+      "rounded": "0.125rem",
+      "padding": "0.375rem 0rem 0.125rem 0rem",
+      "border": "none"
+    },
+    {
+      "key": "kern-form-input-2",
+      "kind": "input",
+      "backgroundColor": "transparent",
+      "textColor": "#131525",
+      "padding": "0.375rem 0rem 0.125rem 0rem",
+      "border": "none"
+    },
+    {
+      "key": "kern-form-input-3",
+      "kind": "input",
+      "backgroundColor": "#F3F4F7",
+      "rounded": "0.125rem",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "icon-add",
+      "kind": "icon",
+      "backgroundColor": "#131525"
+    },
+    {
+      "key": "icon-edit",
+      "kind": "icon",
+      "backgroundColor": "#131525"
+    },
+    {
+      "key": "icon-home",
+      "kind": "icon",
+      "backgroundColor": "#131525"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#C0F3FF"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "#C0F3FF",
+      "border": "0.0625rem solid #006B8C"
+    },
+    {
+      "key": "link-small",
+      "kind": "link",
+      "textColor": "#131525",
+      "padding": "0.4375rem 0rem 0.0625rem 0rem"
+    },
+    {
+      "key": "btn-primary",
+      "kind": "button",
+      "backgroundColor": "#2044AA",
+      "border": "3px solid transparent"
+    },
+    {
+      "key": "label-large",
+      "kind": "label",
+      "textColor": "#131525",
+      "padding": "0.0625rem 0rem 0.4375rem 0rem"
+    },
+    {
+      "key": "label-small",
+      "kind": "label",
+      "textColor": "#131525",
+      "padding": "0.4375rem 0rem 0.0625rem 0rem"
+    },
+    {
+      "key": "alert-danger",
+      "kind": "alert",
+      "backgroundColor": "#FEE4E0"
+    },
+    {
+      "key": "badge-danger",
+      "kind": "badge",
+      "backgroundColor": "#FEE4E0",
+      "border": "0.0625rem solid #C31C13"
+    },
+    {
+      "key": "card-surface",
+      "kind": "card",
+      "backgroundColor": "#F7F7F9"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#DEF6ED",
+      "border": "0.0625rem solid #007155"
+    },
+    {
+      "key": "badge-warning",
+      "kind": "badge",
+      "backgroundColor": "#FFE7B6",
+      "border": "0.0625rem solid #925400"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f3f4f7",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "brand-colorpalette-1-300",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "brand-colorpalette-1-300",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f3f4f7",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f3f4f7",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**KERN UX** is a light-first design system anchored on `#f3f4f7` canvas surfaces with `#0b0b0c` primary ink (17.9:1 contrast) and `brand-colorpalette-1-300` brand accent.\n\nTypography centers cleanly on `Fira Sans` (80px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Germany Federal Government**. Source: published token package (https://kern-ux.de), package `@kern-ux/native`. Inventory: **91** colors, **26** typography steps, and **30** documented components (EUPL-1.2 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 30 component tokens with documented paddings: `0rem`, `0`, `0.5rem 1.5rem 1rem 1.5rem`, `0.375rem 0rem 0.125rem 0rem`, `1rem`.\n- **Hierarchy**: Group controls cleanly within `#f3f4f7` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`inset 0 -1px 0 0 #6E7597`, `inset 0 -1px 0 0 #6E7597`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `brand-colorpalette-1-300` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f3f4f7` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `brand-colorpalette-1-300` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `Fira Sans` headings with `Fira Sans` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (0.25rem on outer containers).\n- Separate containers via `#f3f4f7` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `kern-form-input` fields and secondary buttons."
+}

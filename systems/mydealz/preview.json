@@ -1,0 +1,454 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f3f5f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#30a83c",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.md}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#30a83c"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "green-strong",
+      "value": "#197e25"
+    },
+    {
+      "name": "discount-surface",
+      "value": "#defde4"
+    },
+    {
+      "name": "hot",
+      "value": "#ce1736"
+    },
+    {
+      "name": "cold",
+      "value": "#034eb1"
+    },
+    {
+      "name": "warm",
+      "value": "#fb6001"
+    },
+    {
+      "name": "premium",
+      "value": "#7457dd"
+    },
+    {
+      "name": "canvas",
+      "value": "#f3f5f7"
+    },
+    {
+      "name": "surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "body",
+      "value": "#6b6d70"
+    },
+    {
+      "name": "muted",
+      "value": "#a7a9ac"
+    },
+    {
+      "name": "hairline",
+      "value": "#dfe1e4"
+    },
+    {
+      "name": "warning-surface",
+      "value": "#faf9ca"
+    },
+    {
+      "name": "warning-text",
+      "value": "#9f5c0c"
+    }
+  ],
+  "type": [
+    {
+      "name": "display",
+      "fontFamily": "Averta CY",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-lg",
+      "fontFamily": "Averta CY",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading",
+      "fontFamily": "Averta CY",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "lead",
+      "fontFamily": "Averta CY",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body",
+      "fontFamily": "Averta CY",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "mono",
+      "fontFamily": "monospace",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui",
+      "fontFamily": "Averta CY",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Averta CY",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Averta CY",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "0px 14px"
+    },
+    {
+      "key": "button-outline-green",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.full}",
+      "padding": "0px 14px"
+    },
+    {
+      "key": "button-outline-neutral",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "0px 12px"
+    },
+    {
+      "key": "button-muted",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.body}",
+      "rounded": "{rounded.full}",
+      "padding": "0px 14px"
+    },
+    {
+      "key": "button-tag",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "0px 4px"
+    },
+    {
+      "key": "search-pill",
+      "kind": "input",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.body}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "deal-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "16px"
+    },
+    {
+      "key": "temperature-control",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.hot}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "temperature-up",
+      "kind": "component",
+      "textColor": "{colors.hot}"
+    },
+    {
+      "key": "temperature-down",
+      "kind": "component",
+      "textColor": "{colors.cold}"
+    },
+    {
+      "key": "price-lockup",
+      "kind": "component",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "discount-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.discount-surface}",
+      "textColor": "{colors.green-strong}",
+      "rounded": "{rounded.sm}",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "badge-neutral-subtle",
+      "kind": "badge",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "0px 4px"
+    },
+    {
+      "key": "badge-filled",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.body}",
+      "rounded": "{rounded.sm}",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "premium-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.premium}",
+      "rounded": "{rounded.sm}"
+    },
+    {
+      "key": "warning-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.warning-surface}",
+      "textColor": "{colors.warning-text}",
+      "rounded": "{rounded.sm}",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "9px 35px"
+    },
+    {
+      "key": "email-input",
+      "kind": "input",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "9px 16px"
+    },
+    {
+      "key": "timestamp-pill",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.body}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "sidebar-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "16px"
+    },
+    {
+      "key": "avatar",
+      "kind": "avatar",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.circle}"
+    },
+    {
+      "key": "country-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.body}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#30a83c",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#30a83c",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f3f5f7",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f3f5f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "mydealz is a deals-community feed running at maximum density: a single cool-gray canvas (`{colors.canvas}`) stacked with hundreds of white deal cards (`{colors.surface}`), each one a compact bundle of thumbnail, title, price, and social signals. The design's whole job is to make that firehose scannable, and it does it with one confident brand green (`{colors.primary}`) — the color of every price, every \"Zum Deal\" pill, every submit action — plus a tight status vocabulary that keeps the eye moving.\r\n\r\nThe signature move is the **temperature control**: every deal carries a pill showing a cold-blue down-arrow (`{colors.cold}`), the deal's crowd-voted temperature in hot-red (`{colors.hot}`), and a hot-red up-arrow — pricing turned into a live vote. That red/blue pairing, extended by a warm orange (`{colors.warm}`) for rising deals and a premium violet (`{colors.premium}`) for highlighted content, is the brand's playful counterweight to an otherwise businesslike grid. Discount percentages sit in soft mint pills (`{colors.discount-surface}`), so a card reads at a glance: green price, red-hot temperature, mint saving.\r\n\r\nGeometrically the system is defined by the **fully-round 540px pill** — buttons, the search field, the temperature control, filter chips all curve to a complete radius, while content cards settle at a friendly 8px. Averta CY carries everything at just two weights (medium 500, bold 700), keeping headlines punchy and the dense body legible. Depth is minimal: cards separate with a hairline (`{colors.hairline}`) and lift on the softest shadow only when they matter.\r\n\r\n**Key Characteristics:**\r\n- One brand green (`{colors.primary}`) owns every action and every price — the single unifying signal across a chaotic feed\r\n- Signature hot/cold **temperature control**: `{colors.cold}` down-vote, `{colors.hot}` up-vote and temperature reading, on every deal card\r\n- Fully-round `{rounded.full}` (540px) pills for buttons, search, chips, and the temperature control; 8px cards\r\n- Mint discount pills (`{colors.discount-surface}`) pairing green savings against the red-hot temperature\r\n- Averta CY at two weights (500/700) driving a punchy, high-density type system\r\n- Cool-gray canvas (`{colors.canvas}`) behind stacked white cards (`{colors.surface}`) — a scannable card feed, not a marketing page\r\n- A compact accent set — `{colors.warm}` orange for rising, `{colors.premium}` violet for highlighted — kept strictly functional",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` green for actions and prices — it is the single thread tying the feed together.\r\n- Keep the `temperature-control` pairing intact: `{colors.cold}` down, `{colors.hot}` up and temperature — it's the brand's signature.\r\n- Pill every button, chip, search, and the temperature control to `{rounded.full}`; keep content cards at `{rounded.md}`.\r\n- Put savings in the `{colors.discount-surface}` mint badge beside the green price.\r\n- Hold typography to Averta CY 500 / 700; bold every price and temperature.\r\n- Separate cards with `{colors.hairline}` borders and the `{colors.canvas}` gutter, not heavy shadows.\r\n\r\n### Don't\r\n- Don't recolor prices or primary actions away from `{colors.primary}` green.\r\n- Don't split the temperature pairing or recolor the vote arrows — cold is blue, hot is red, always.\r\n- Don't introduce shadows on resting feed cards; the soft 4–12px shadow is for elements that lift.\r\n- Don't use a third or fourth type weight — the system is 500 and 700 only.\r\n- Don't let `{colors.warm}` orange or `{colors.premium}` violet drift into decorative use; they are functional status colors.\r\n- Don't square off the pills — the fully-round `{rounded.full}` button is the brand's shape signature."
+}

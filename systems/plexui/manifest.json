@@ -1,0 +1,42 @@
+{
+  "name": "plexui",
+  "displayName": "Plex UI",
+  "description": "Plex UI — tokens imported from @plexui/styles.",
+  "style": "Plex UI — tokens imported from @plexui/styles.",
+  "category": "Plex UI",
+  "org": "Plex UI",
+  "theme": "light",
+  "tags": [
+    "published",
+    "plex-ui",
+    "light"
+  ],
+  "homepage": "https://plexui.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @plexui/styles@0.16.4 (5 token files, 151 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@plexui/styles",
+    "version": "0.16.4"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 83,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

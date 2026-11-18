@@ -1,0 +1,792 @@
+{
+  "canvas": "#fcfdfd",
+  "surface": "#f6f6f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#4cc0f4",
+  "border": "#a7a7ac",
+  "radius": "0px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "canvas-text",
+      "value": "#141424"
+    },
+    {
+      "name": "h1-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "link-bg",
+      "value": "#f4f5f6"
+    },
+    {
+      "name": "link-text",
+      "value": "#65717b"
+    },
+    {
+      "name": "css-surface-5",
+      "value": "#ffff00"
+    },
+    {
+      "name": "css-color-6",
+      "value": "#000000"
+    },
+    {
+      "name": "css-border-7",
+      "value": "#a7a7ac"
+    },
+    {
+      "name": "css-border-8",
+      "value": "#7c7c84"
+    },
+    {
+      "name": "css-border-9",
+      "value": "#d64226"
+    },
+    {
+      "name": "css-border-10",
+      "value": "#2aaa5b"
+    },
+    {
+      "name": "css-border-11",
+      "value": "#c6c6c8"
+    },
+    {
+      "name": "css-surface-12",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "css-color-13",
+      "value": "#808087"
+    },
+    {
+      "name": "css-surface-14",
+      "value": "rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "name": "css-color-15",
+      "value": "#4f4f5b"
+    },
+    {
+      "name": "css-fill-16",
+      "value": "#84909a"
+    },
+    {
+      "name": "css-fill-17",
+      "value": "#3c5a99"
+    },
+    {
+      "name": "css-fill-18",
+      "value": "#dc4e41"
+    },
+    {
+      "name": "css-fill-19",
+      "value": "#ffd32f"
+    },
+    {
+      "name": "css-fill-20",
+      "value": "#00aced"
+    },
+    {
+      "name": "css-color-21",
+      "value": "#53535e"
+    },
+    {
+      "name": "css-surface-22",
+      "value": "rgba(255, 255, 255, 0.7)"
+    },
+    {
+      "name": "css-surface-23",
+      "value": "#e9ebed"
+    },
+    {
+      "name": "css-surface-24",
+      "value": "#e8e8e9"
+    },
+    {
+      "name": "css-surface-25",
+      "value": "#dadadb"
+    },
+    {
+      "name": "css-border-26",
+      "value": "#10101d"
+    },
+    {
+      "name": "css-surface-27",
+      "value": "#232332"
+    },
+    {
+      "name": "css-border-28",
+      "value": "#cccccc"
+    },
+    {
+      "name": "css-surface-29",
+      "value": "#f6f6f7"
+    },
+    {
+      "name": "css-surface-30",
+      "value": "rgba(167, 167, 172, 0.1)"
+    },
+    {
+      "name": "css-surface-31",
+      "value": "rgba(132, 166, 255, 0.3)"
+    },
+    {
+      "name": "css-surface-32",
+      "value": "rgba(255, 170, 85, 0.3)"
+    },
+    {
+      "name": "css-surface-33",
+      "value": "rgba(172, 150, 222, 0.3)"
+    },
+    {
+      "name": "css-surface-34",
+      "value": "rgba(255, 213, 85, 0.3)"
+    },
+    {
+      "name": "css-surface-35",
+      "value": "rgba(126, 220, 233, 0.3)"
+    },
+    {
+      "name": "css-surface-36",
+      "value": "rgba(130, 202, 80, 0.3)"
+    },
+    {
+      "name": "css-surface-37",
+      "value": "rgba(83, 83, 94, 0.3)"
+    },
+    {
+      "name": "css-surface-38",
+      "value": "rgba(255, 138, 131, 0.3)"
+    },
+    {
+      "name": "css-surface-39",
+      "value": "rgba(255, 117, 212, 0.3)"
+    },
+    {
+      "name": "css-surface-40",
+      "value": "rgba(172, 176, 255, 0.3)"
+    },
+    {
+      "name": "css-surface-41",
+      "value": "rgba(20, 20, 36, 0.5)"
+    },
+    {
+      "name": "css-color-42",
+      "value": "#008fe9"
+    },
+    {
+      "name": "css-surface-43",
+      "value": "#e4f8ff"
+    },
+    {
+      "name": "css-color-44",
+      "value": "#b0b8bf"
+    },
+    {
+      "name": "css-color-45",
+      "value": "#0c72bf"
+    },
+    {
+      "name": "css-color-46",
+      "value": "#4cc0f4"
+    },
+    {
+      "name": "css-color-47",
+      "value": "#f27930"
+    },
+    {
+      "name": "css-color-48",
+      "value": "#9c55b8"
+    },
+    {
+      "name": "css-surface-49",
+      "value": "#fcfdfd"
+    },
+    {
+      "name": "css-color-50",
+      "value": "#262645"
+    },
+    {
+      "name": "css-surface-51",
+      "value": "#fafafa"
+    },
+    {
+      "name": "css-color-52",
+      "value": "#999988"
+    },
+    {
+      "name": "css-color-53",
+      "value": "#333333"
+    },
+    {
+      "name": "css-color-54",
+      "value": "#009999"
+    },
+    {
+      "name": "css-color-55",
+      "value": "#990000"
+    },
+    {
+      "name": "css-color-56",
+      "value": "#445588"
+    },
+    {
+      "name": "css-color-57",
+      "value": "#009926"
+    },
+    {
+      "name": "css-color-58",
+      "value": "#990073"
+    },
+    {
+      "name": "css-color-59",
+      "value": "#0086b3"
+    },
+    {
+      "name": "css-color-60",
+      "value": "#999999"
+    },
+    {
+      "name": "css-surface-61",
+      "value": "#ffdddd"
+    },
+    {
+      "name": "css-surface-62",
+      "value": "#ddffdd"
+    },
+    {
+      "name": "css-color-63",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "css-surface-64",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "css-surface-65",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "css-color-66",
+      "value": "#cbcbcb"
+    },
+    {
+      "name": "css-surface-67",
+      "value": "rgba(0,0,0,0.2)"
+    },
+    {
+      "name": "css-surface-68",
+      "value": "rgba(255,255,255,0.7)"
+    },
+    {
+      "name": "css-surface-69",
+      "value": "rgba(167,167,172,0.1)"
+    },
+    {
+      "name": "css-surface-70",
+      "value": "rgba(132,166,255,0.3)"
+    },
+    {
+      "name": "css-surface-71",
+      "value": "rgba(255,170,85,0.3)"
+    },
+    {
+      "name": "css-surface-72",
+      "value": "rgba(172,150,222,0.3)"
+    },
+    {
+      "name": "css-surface-73",
+      "value": "rgba(255,213,85,0.3)"
+    },
+    {
+      "name": "css-surface-74",
+      "value": "rgba(126,220,233,0.3)"
+    },
+    {
+      "name": "css-surface-75",
+      "value": "rgba(130,202,80,0.3)"
+    },
+    {
+      "name": "css-surface-76",
+      "value": "rgba(83,83,94,0.3)"
+    },
+    {
+      "name": "css-surface-77",
+      "value": "rgba(255,138,131,0.3)"
+    },
+    {
+      "name": "css-surface-78",
+      "value": "rgba(255,117,212,0.3)"
+    },
+    {
+      "name": "css-surface-79",
+      "value": "rgba(172,176,255,0.3)"
+    },
+    {
+      "name": "css-surface-80",
+      "value": "rgba(20,20,36,0.5)"
+    },
+    {
+      "name": "css-surface-81",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "css-surface-82",
+      "value": "#dddddd"
+    },
+    {
+      "name": "css-surface-83",
+      "value": "#c1d9ff"
+    },
+    {
+      "name": "css-surface-84",
+      "value": "#e0edfe"
+    },
+    {
+      "name": "css-border-85",
+      "value": "#99ccff"
+    },
+    {
+      "name": "css-surface-86",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "css-surface-87",
+      "value": "#d6e9f8"
+    },
+    {
+      "name": "primary",
+      "value": "#4cc0f4"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "system-ui",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "us-heading-1",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875em",
+      "px": 30,
+      "lineHeight": "1.3em"
+    },
+    {
+      "name": "us-content-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.6785em",
+      "px": 26.856
+    },
+    {
+      "name": "us-heading-2",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": "1.3em"
+    },
+    {
+      "name": "us-reminder-navy-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5em",
+      "px": 24
+    },
+    {
+      "name": "us-hero-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25em",
+      "px": 20
+    },
+    {
+      "name": "us-heading-3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25em",
+      "px": 20,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "us-promo-banner-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.2em",
+      "px": 19.2,
+      "fontWeight": 700
+    },
+    {
+      "name": "us-tab-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125em",
+      "px": 18,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "us-table-toolbar-heading",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "us-ct-row-title-mobile",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "us-article-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125em",
+      "px": 18,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "us-related-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125em",
+      "px": 18
+    },
+    {
+      "name": "us-heading-4",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125em",
+      "px": 18,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "styleguide-block-small-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125em",
+      "px": 18
+    },
+    {
+      "name": "html",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": "1.618em"
+    },
+    {
+      "name": "us-heading-5",
+      "fontFamily": "system-ui",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "us-heading-6",
+      "fontFamily": "system-ui",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "colour-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "google-visualization-toolbar-big-dialog-title",
+      "fontFamily": "system-ui",
+      "fontSize": "12pt",
+      "px": 16
+    },
+    {
+      "name": "us-related-item-title",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875em",
+      "px": 14,
+      "lineHeight": "1.15em"
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "rgb(233, 235, 237)",
+      "textColor": "rgb(20, 20, 36)",
+      "rounded": "0px",
+      "padding": "0px",
+      "border": "0px"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "rgb(20, 20, 36)"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "rgb(79, 79, 91)"
+    },
+    {
+      "key": "tag",
+      "kind": "badge",
+      "textColor": "rgb(20, 20, 36)"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(226, 226, 226)"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    {
+      "key": "us-form-input",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(20, 20, 36)",
+      "rounded": "0px",
+      "padding": "0.35em 0.5em",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "table-head-2",
+      "kind": "table",
+      "textColor": "rgb(20, 20, 36)",
+      "padding": "0px 1em 0.5em 0px"
+    },
+    {
+      "key": "us-form-select",
+      "kind": "select",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(20, 20, 36)",
+      "rounded": "0px",
+      "padding": "0.35em 40px 0.35em 0.5em",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "toggle",
+      "kind": "switch",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(167, 167, 172)",
+      "padding": "10px 26px",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "us-comp-banner",
+      "kind": "alert",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(20, 20, 36)",
+      "padding": "60px",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "us-promo-banner-2",
+      "kind": "alert",
+      "backgroundColor": "rgb(20, 20, 36)",
+      "padding": "1.7em"
+    },
+    {
+      "key": "us-form-textarea-2",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(20, 20, 36)",
+      "rounded": "0px",
+      "padding": "0.35em 0.5em",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "rgb(167, 167, 172)",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "50%"
+    },
+    {
+      "key": "tooltip-2",
+      "kind": "tooltip",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(20, 20, 36)",
+      "padding": "0.75em 1em",
+      "border": "1px solid rgb(20, 20, 36)"
+    },
+    {
+      "key": "table-toolbar-3",
+      "kind": "table",
+      "backgroundColor": "rgb(244, 245, 246)",
+      "padding": "15px"
+    },
+    {
+      "key": "us-news-item-link-2",
+      "kind": "link",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "8px",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "us-more-item-link-3",
+      "kind": "link",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "8px",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "input-group-3",
+      "kind": "input",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(167, 167, 172)",
+      "border": "1px solid rgb(167, 167, 172)"
+    },
+    {
+      "key": "tabs-nav-mainlink-2",
+      "kind": "tabs",
+      "backgroundColor": "rgb(226, 226, 226)",
+      "textColor": "rgb(83, 83, 94)"
+    },
+    {
+      "key": "us-promo-banner-3",
+      "kind": "alert",
+      "textColor": "rgb(255, 255, 255)",
+      "padding": "5px 10px 0px"
+    },
+    {
+      "key": "nav-mobile",
+      "kind": "nav",
+      "backgroundColor": "rgb(20, 20, 36)",
+      "textColor": "transparent",
+      "rounded": "2px",
+      "padding": "0px",
+      "border": "0px"
+    },
+    {
+      "key": "btn-link",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "rgb(20, 20, 36)",
+      "padding": "0px",
+      "border": "0px"
+    },
+    {
+      "key": "btn-hero",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "rgb(20, 20, 36)",
+      "border": "1px solid rgb(20, 20, 36)"
+    },
+    {
+      "key": "btn-action",
+      "kind": "button",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "rgb(20, 20, 36)",
+      "border": "1px solid rgb(204, 204, 204)"
+    },
+    {
+      "key": "tabs-page-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(226, 226, 226)"
+    },
+    {
+      "key": "progress-next",
+      "kind": "progress",
+      "textColor": "rgb(20, 20, 36)"
+    },
+    {
+      "key": "toggle-disabled",
+      "kind": "switch",
+      "backgroundColor": "rgb(226, 226, 226)",
+      "textColor": "rgb(167, 167, 172)",
+      "border": "1px solid rgb(198, 198, 200)"
+    },
+    {
+      "key": "us-form-select-disabled",
+      "kind": "select",
+      "backgroundColor": "rgb(226, 226, 226)",
+      "textColor": "rgb(167, 167, 172)",
+      "border": "1px solid rgb(198, 198, 200)"
+    },
+    {
+      "key": "progress-current",
+      "kind": "progress",
+      "textColor": "rgb(20, 20, 36)"
+    },
+    {
+      "key": "us-form-select-wrap-disabled",
+      "kind": "select",
+      "backgroundColor": "rgb(226, 226, 226)",
+      "textColor": "rgb(167, 167, 172)",
+      "border": "1px solid rgb(198, 198, 200)"
+    },
+    {
+      "key": "goog-menu-button",
+      "kind": "button",
+      "textColor": "#000",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "goog-menu-button-open-2",
+      "kind": "button",
+      "backgroundColor": "#bbb"
+    },
+    {
+      "key": "goog-menu-button-active-3",
+      "kind": "button",
+      "backgroundColor": "#bbb"
+    },
+    {
+      "key": "google-visualization-toolbar-big-dialog",
+      "kind": "modal",
+      "backgroundColor": "#c1d9ff",
+      "padding": "8px",
+      "border": "1px solid #3a5774"
+    },
+    {
+      "key": "google-visualization-toolbar-small-dialog-2",
+      "kind": "modal",
+      "backgroundColor": "#c1d9ff",
+      "padding": "8px",
+      "border": "1px solid #3a5774"
+    },
+    {
+      "key": "google-visualization-toolbar-big-dialog-bg-3",
+      "kind": "modal",
+      "backgroundColor": "#ddd"
+    },
+    {
+      "key": "google-visualization-tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "white",
+      "rounded": "2px",
+      "padding": "0px",
+      "border": "solid 1px #bdbdbd",
+      "shadow": "0px 2px 2px 0px rgba(204, 204, 204, 0.6)"
+    },
+    {
+      "key": "google-visualization-tooltip-separator-2",
+      "kind": "tooltip",
+      "backgroundColor": "#dddddd",
+      "padding": "0"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#4cc0f4",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f6f6f7",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "derived"
+  },
+  "overview": "**uStyle** is a light-first design system anchored on `#fcfdfd` canvas surfaces with `#0b0b0c` primary ink (19.3:1 contrast) and `#4cc0f4` brand accent.\n\nTypography centers cleanly on `System UI` (32px display down to 16px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **uSwitch**. Source: live stylesheet extraction (https://ustyle.guide/). Inventory: **88** colors, **21** typography steps, and **41** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 41 component tokens with documented paddings: `0px`, `0.35em 0.5em`, `0px 1em 0.5em 0px`, `0.35em 40px 0.35em 0.5em`, `10px 26px`.\n- **Hierarchy**: Group controls cleanly within `#f6f6f7` cards; separate sibling sections using `#a7a7ac` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0px 2px 2px 0px rgba(204, 204, 204, 0.6)`) paired with `#a7a7ac` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#4cc0f4` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fcfdfd` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#4cc0f4` with `#0b0b0c` text (9.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#f6f6f7` surface shifts and `#a7a7ac` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `us-form-input` fields and secondary buttons."
+}

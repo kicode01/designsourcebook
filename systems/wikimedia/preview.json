@@ -1,0 +1,635 @@
+{
+  "canvas": "#202122",
+  "surface": "#202122",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#36c",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "color-neutral",
+      "value": "#c8ccd1"
+    },
+    {
+      "name": "color-error-hover",
+      "value": "#fea898"
+    },
+    {
+      "name": "box-shadow-color-progressive-focus",
+      "value": "#6485d1"
+    },
+    {
+      "name": "background-color-neutral-subtle",
+      "value": "#202122"
+    },
+    {
+      "name": "background-color-interactive-subtle",
+      "value": "#202122"
+    },
+    {
+      "name": "background-color-disabled-subtle",
+      "value": "#27292d"
+    },
+    {
+      "name": "background-color-progressive-subtle-hover",
+      "value": "#233566"
+    },
+    {
+      "name": "background-color-destructive-subtle-hover",
+      "value": "#612419"
+    },
+    {
+      "name": "background-color-error-subtle-active",
+      "value": "#9f3526"
+    },
+    {
+      "name": "background-color-content-added",
+      "value": "#233566"
+    },
+    {
+      "name": "background-color-option-orange",
+      "value": "#572c19"
+    },
+    {
+      "name": "background-color-option-blue",
+      "value": "#233566"
+    },
+    {
+      "name": "border-color-base",
+      "value": "#72777d"
+    },
+    {
+      "name": "border-color-interactive-hover",
+      "value": "#a2a9b1"
+    },
+    {
+      "name": "border-color-progressive",
+      "value": "#6485d1"
+    },
+    {
+      "name": "border-color-destructive-hover",
+      "value": "#fd7865"
+    },
+    {
+      "name": "border-color-error-active",
+      "value": "#fea898"
+    },
+    {
+      "name": "border-color-content-removed",
+      "value": "#987027"
+    },
+    {
+      "name": "color-icon-warning",
+      "value": "#ab7f2a"
+    },
+    {
+      "name": "background-color-progressive-hover",
+      "value": "#3056a9"
+    },
+    {
+      "name": "background-color-destructive-active",
+      "value": "#612419"
+    },
+    {
+      "name": "background-color-input-binary-checked",
+      "value": "#36c"
+    },
+    {
+      "name": "border-color-error",
+      "value": "#f54739"
+    },
+    {
+      "name": "border-color-option-red",
+      "value": "#f54739"
+    },
+    {
+      "name": "border-color-option-green",
+      "value": "#099979"
+    },
+    {
+      "name": "border-color-option-maroon",
+      "value": "#b57775"
+    },
+    {
+      "name": "accent",
+      "value": "#36c"
+    },
+    {
+      "name": "progressive-focus",
+      "value": "#36c"
+    },
+    {
+      "name": "error-active",
+      "value": "#ffc8bd"
+    },
+    {
+      "name": "icon-warning",
+      "value": "#ab7f2a"
+    },
+    {
+      "name": "link-active",
+      "value": "#b6d4fb"
+    },
+    {
+      "name": "link-visited-active",
+      "value": "#d9d0e9"
+    },
+    {
+      "name": "link-red-focus",
+      "value": "#36c"
+    },
+    {
+      "name": "accent30",
+      "value": "#3056a9"
+    },
+    {
+      "name": "accent-color",
+      "value": "#36c"
+    },
+    {
+      "name": "error-subtle",
+      "value": "#3c1a13"
+    },
+    {
+      "name": "success-subtle",
+      "value": "#132821"
+    },
+    {
+      "name": "warning-active",
+      "value": "#edb537"
+    },
+    {
+      "name": "cdx-color-disabled-emphasized",
+      "value": "#a2a9b1"
+    },
+    {
+      "name": "cdx-color-error-hover",
+      "value": "#9f3526"
+    },
+    {
+      "name": "cdx-color-icon-error",
+      "value": "#f54739"
+    },
+    {
+      "name": "cdx-color-link-hover",
+      "value": "#3056a9"
+    },
+    {
+      "name": "cdx-color-link-visited-hover",
+      "value": "#534fa3"
+    },
+    {
+      "name": "cdx-color-link-red-active",
+      "value": "#612419"
+    },
+    {
+      "name": "cdx-color-link-red-visited-active",
+      "value": "#512e2e"
+    },
+    {
+      "name": "cdx-background-color-base",
+      "value": "#fff"
+    },
+    {
+      "name": "cdx-background-color-interactive",
+      "value": "#eaecf0"
+    },
+    {
+      "name": "cdx-background-color-interactive-subtle-hover",
+      "value": "#eaecf0"
+    },
+    {
+      "name": "cdx-background-color-inverted",
+      "value": "#101418"
+    },
+    {
+      "name": "cdx-background-color-progressive-focus",
+      "value": "#36c"
+    },
+    {
+      "name": "cdx-background-color-destructive",
+      "value": "#bf3c2c"
+    },
+    {
+      "name": "cdx-background-color-destructive-subtle",
+      "value": "#ffe9e5"
+    },
+    {
+      "name": "cdx-background-color-error-hover",
+      "value": "#d74032"
+    },
+    {
+      "name": "cdx-background-color-error-subtle-active",
+      "value": "#ffc8bd"
+    },
+    {
+      "name": "cdx-background-color-content-added",
+      "value": "#a3d3ff"
+    },
+    {
+      "name": "cdx-background-color-option-orange",
+      "value": "#ffead4"
+    },
+    {
+      "name": "cdx-background-color-option-blue",
+      "value": "#e8eeff"
+    },
+    {
+      "name": "cdx-background-color-input-binary-checked",
+      "value": "#36c"
+    },
+    {
+      "name": "cdx-border-color-muted",
+      "value": "#dadde3"
+    },
+    {
+      "name": "cdx-border-color-disabled",
+      "value": "#c8ccd1"
+    },
+    {
+      "name": "cdx-border-color-progressive-hover",
+      "value": "#3056a9"
+    },
+    {
+      "name": "cdx-border-color-destructive-hover",
+      "value": "#9f3526"
+    },
+    {
+      "name": "cdx-border-color-error-hover",
+      "value": "#9f3526"
+    },
+    {
+      "name": "cdx-border-color-warning-active",
+      "value": "#453217"
+    },
+    {
+      "name": "cdx-border-color-content-removed",
+      "value": "#ffe49c"
+    },
+    {
+      "name": "cdx-border-color-option-lime",
+      "value": "#259948"
+    },
+    {
+      "name": "cdx-border-color-option-pink",
+      "value": "#b5739e"
+    },
+    {
+      "name": "cdx-border-color-input-binary",
+      "value": "#72777d"
+    },
+    {
+      "name": "cdx-border-color-input-binary-checked",
+      "value": "#36c"
+    },
+    {
+      "name": "color-base",
+      "value": "#eaecf0"
+    },
+    {
+      "name": "color-visited-active",
+      "value": "#d9d0e9"
+    },
+    {
+      "name": "color-option-blue",
+      "value": "#88a3e8"
+    },
+    {
+      "name": "color-icon-notice",
+      "value": "#72777d"
+    },
+    {
+      "name": "gray900",
+      "value": "#202122"
+    },
+    {
+      "name": "red999",
+      "value": "#8b0000"
+    },
+    {
+      "name": "yellow50",
+      "value": "#fdf2d5"
+    },
+    {
+      "name": "lime100",
+      "value": "#d1e9d2"
+    },
+    {
+      "name": "green300",
+      "value": "#80cdb3"
+    },
+    {
+      "name": "blue400",
+      "value": "#88a3e8"
+    },
+    {
+      "name": "purple500",
+      "value": "#8d7ebd"
+    },
+    {
+      "name": "pink700",
+      "value": "#9b527f"
+    },
+    {
+      "name": "maroon900",
+      "value": "#512e2e"
+    },
+    {
+      "name": "destructive",
+      "value": "#fd7865"
+    },
+    {
+      "name": "content-removed",
+      "value": "#fd7865"
+    },
+    {
+      "name": "progressive-selected-active",
+      "value": "#b6d4fb"
+    },
+    {
+      "name": "yellow90",
+      "value": "#ffe49c"
+    },
+    {
+      "name": "progressive-subtle-active",
+      "value": "#3056a9"
+    },
+    {
+      "name": "cdx-color-base-fixed",
+      "value": "#202122"
+    },
+    {
+      "name": "cdx-color-visited",
+      "value": "#6a60b0"
+    },
+    {
+      "name": "cdx-color-option-yellow",
+      "value": "#886425"
+    },
+    {
+      "name": "primary",
+      "value": "#36c"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-xxx-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "cdx-font-size-xxx-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "font-size-xx-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "cdx-font-size-xx-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-x-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "cdx-font-size-xlarge",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "cdx-font-size-large",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-medium",
+      "fontFamily": "sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-base",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-system-sans",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-sans-fallback",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-serif",
+      "fontFamily": "\"Linux Libertine\", Georgia, Times, \"Source Serif 4\", serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-serif-fallback",
+      "fontFamily": "serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "Menlo, Consolas, \"Liberation Mono\", \"Fira Code\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace-fallback",
+      "fontFamily": "monospace, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-heading-main",
+      "fontFamily": "\"Linux Libertine\", Georgia, Times, \"Source Serif 4\", serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-sans",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"Liberation Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-base",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-system-sans",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Inter, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-sans-fallback",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-serif",
+      "fontFamily": "\"Linux Libertine\", Georgia, Times, \"Source Serif 4\", serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-serif-fallback",
+      "fontFamily": "serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-monospace",
+      "fontFamily": "Menlo, Consolas, \"Liberation Mono\", \"Fira Code\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-monospace-fallback",
+      "fontFamily": "monospace, monospace",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-heading-main",
+      "fontFamily": "\"Linux Libertine\", Georgia, Times, \"Source Serif 4\", serif",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-size-medium",
+      "fontFamily": "sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "cdx-font-family-sans",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"Liberation Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "cdx-font-size-small",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-x-small",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "cdx-font-size-xsmall",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#202122",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#36c",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#36c",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#202122",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#202122",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#202122",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#202122",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#202122",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Codex** is a dark-first design system anchored on `#202122` canvas surfaces with `#f7f7f8` primary ink (15.1:1 contrast) and `#36c` brand accent.\n\nTypography centers cleanly on `System Sans` (28px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Wikimedia**. Source: published token package (https://doc.wikimedia.org/codex/), package `@wikimedia/codex-design-tokens`. Inventory: **91** colors, **33** typography steps, and **8** documented components (GPL-2.0+ license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#202122` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#202122` -> `#202122`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#36c` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#202122` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.\n- Use `#36c` with `#f7f7f8` text (5.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System Sans` headings with `System Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#202122` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,774 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0b0b0c",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.sm}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "\"#0070d5\"          # DJI Blue — Store pill, Buy Now pills, active selector, announcement link"
+    },
+    {
+      "name": "store-blue",
+      "value": "\"#0060ef\"       # store Buy Now, Add to Cart label, selected option border, store links"
+    },
+    {
+      "name": "store-blue-tint",
+      "value": "\"#deeafd\"  # Add to Cart pill fill (store blue at 13% on white)"
+    },
+    {
+      "name": "on-primary",
+      "value": "\"#ffffff\"       # labels on blue and dark pills, hero text over photography"
+    },
+    {
+      "name": "link-blue",
+      "value": "\"#1890ff\"        # \"Learn More ›\" / \"Buy Now ›\" text links on product cards"
+    },
+    {
+      "name": "tier-orange",
+      "value": "\"#be4e04\"      # product tier eyebrows (\"Flagship\", \"Advanced\")"
+    },
+    {
+      "name": "badge-orange",
+      "value": "\"#fa8c16\"     # option corner badge"
+    },
+    {
+      "name": "error",
+      "value": "#f5222d\"            # \"Out of Stock"
+    },
+    {
+      "name": "canvas",
+      "value": "\"#ffffff\"           # page canvas, cards, nav, purchase bar"
+    },
+    {
+      "name": "canvas-soft",
+      "value": "\"#f7f9fa\"      # feature-link band, store panels, In the Box tiles, store footer"
+    },
+    {
+      "name": "panel",
+      "value": "\"#f6f8f9\"            # product benefits panel"
+    },
+    {
+      "name": "fog",
+      "value": "\"#f5f5f5\"              # Explore More band, product-card backdrop, region pill"
+    },
+    {
+      "name": "announce",
+      "value": "\"#fafafa\"         # announcement bar, category icon strip"
+    },
+    {
+      "name": "media-black",
+      "value": "\"#000000\"      # store feature media tiles"
+    },
+    {
+      "name": "footer",
+      "value": "\"#272727\"           # brand-site footer"
+    },
+    {
+      "name": "footer-pill",
+      "value": "\"#383838\"      # Download App pill on the footer"
+    },
+    {
+      "name": "footer-divider",
+      "value": "\"#414141\"   # footer rules"
+    },
+    {
+      "name": "ink",
+      "value": "\"#262626\"              # headings and body (black at 85%)"
+    },
+    {
+      "name": "ink-secondary",
+      "value": "\"#595959\"    # secondary text, inactive tabs (black at 65%)"
+    },
+    {
+      "name": "ink-tertiary",
+      "value": "\"#8c8c8c\"     # tile eyebrows (black at 45%)"
+    },
+    {
+      "name": "store-ink",
+      "value": "\"#333333\"        # store product and option titles"
+    },
+    {
+      "name": "graphite",
+      "value": "\"#3b3e40\"         # store body copy and section headings"
+    },
+    {
+      "name": "nav-ink",
+      "value": "\"#303233\"          # nav labels on white"
+    },
+    {
+      "name": "slate",
+      "value": "\"#6c7073\"            # store footer links, input text, footer field border"
+    },
+    {
+      "name": "steel",
+      "value": "\"#9fa3a6\"            # spec captions"
+    },
+    {
+      "name": "footer-link",
+      "value": "\"#b3b3b3\"      # brand footer links (white at 65%)"
+    },
+    {
+      "name": "hairline",
+      "value": "\"#f0f0f0\"         # tab track rule"
+    },
+    {
+      "name": "divider",
+      "value": "\"#e8e8e8\"          # FAQ rows, purchase-bar rule"
+    },
+    {
+      "name": "card-border",
+      "value": "\"#d9d9d9\"      # option card border"
+    },
+    {
+      "name": "dashed-border",
+      "value": "\"#dddddd\"    # unavailable option card (dashed)"
+    },
+    {
+      "name": "input-border",
+      "value": "\"#d4d7d9\"     # store email field"
+    },
+    {
+      "name": "control-border",
+      "value": "\"#cccccc\"   # quantity stepper, checkbox"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "Open Sans",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 600,
+      "lineHeight": 1.08,
+      "letterSpacing": "-1.44px"
+    },
+    {
+      "name": "display",
+      "fontFamily": "Open Sans",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "spec-value",
+      "fontFamily": "Open Sans",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-1.2px"
+    },
+    {
+      "name": "heading",
+      "fontFamily": "Open Sans",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 600,
+      "lineHeight": 1.125,
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "name": "card-title-lg",
+      "fontFamily": "Open Sans",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 500,
+      "lineHeight": 1.125,
+      "letterSpacing": 0
+    },
+    {
+      "name": "news-title",
+      "fontFamily": "Open Sans",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 600,
+      "lineHeight": 1.14,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-md",
+      "fontFamily": "Open Sans",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.17,
+      "letterSpacing": "-0.72px"
+    },
+    {
+      "name": "product-name",
+      "fontFamily": "Open Sans",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.17,
+      "letterSpacing": "-0.72px"
+    },
+    {
+      "name": "price",
+      "fontFamily": "Open Sans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.4px"
+    },
+    {
+      "name": "subhead",
+      "fontFamily": "Open Sans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.6px"
+    },
+    {
+      "name": "feature-title",
+      "fontFamily": "Open Sans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "option-title",
+      "fontFamily": "Open Sans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.36px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Open Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "button",
+      "fontFamily": "Open Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "faq",
+      "fontFamily": "Open Sans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.32px"
+    },
+    {
+      "name": "ui",
+      "fontFamily": "Open Sans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": "-0.28px"
+    },
+    {
+      "name": "nav",
+      "fontFamily": "Open Sans",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "-0.28px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Open Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.24px"
+    },
+    {
+      "name": "badge",
+      "fontFamily": "Open Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 1.33,
+      "letterSpacing": "-0.24px"
+    },
+    {
+      "name": "footer-heading",
+      "fontFamily": "Open Sans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Open Sans",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 600,
+      "lineHeight": 1.8,
+      "letterSpacing": "-0.2px"
+    }
+  ],
+  "components": [
+    {
+      "key": "announcement-bar",
+      "kind": "component",
+      "backgroundColor": "{colors.announce}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "nav-bar-overlay",
+      "kind": "nav",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.nav-ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "button-store-pill",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "8px 16px 8px 34px"
+    },
+    {
+      "key": "region-pill",
+      "kind": "badge",
+      "backgroundColor": "{colors.fog}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 12px"
+    },
+    {
+      "key": "button-hero-ghost",
+      "kind": "button",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xxl}",
+      "padding": "5px 16px"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xl}",
+      "padding": "0px 16px"
+    },
+    {
+      "key": "button-outline",
+      "kind": "button",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xl}",
+      "padding": "0px 15px"
+    },
+    {
+      "key": "button-outline-lg",
+      "kind": "button",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "14px 16px"
+    },
+    {
+      "key": "button-store-buy",
+      "kind": "button",
+      "backgroundColor": "{colors.store-blue}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "14px 32px"
+    },
+    {
+      "key": "button-store-cart",
+      "kind": "button",
+      "backgroundColor": "{colors.store-blue-tint}",
+      "textColor": "{colors.store-blue}",
+      "rounded": "{rounded.full}",
+      "padding": "14px 32px"
+    },
+    {
+      "key": "button-dark-pill",
+      "kind": "button",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "button-download-app",
+      "kind": "button",
+      "backgroundColor": "{colors.footer-pill}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.pill}",
+      "padding": "10px 16px"
+    },
+    {
+      "key": "compare-options-button",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "24px"
+    },
+    {
+      "key": "text-link",
+      "kind": "link",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "text-link-store",
+      "kind": "link",
+      "textColor": "{colors.store-blue}"
+    },
+    {
+      "key": "card-text-link",
+      "kind": "link",
+      "textColor": "{colors.link-blue}"
+    },
+    {
+      "key": "product-tile",
+      "kind": "card",
+      "backgroundColor": "{colors.fog}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "tile-eyebrow",
+      "kind": "card",
+      "textColor": "{colors.ink-tertiary}"
+    },
+    {
+      "key": "tier-eyebrow",
+      "kind": "component",
+      "textColor": "{colors.tier-orange}"
+    },
+    {
+      "key": "product-card",
+      "kind": "card",
+      "backgroundColor": "{colors.fog}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "category-strip",
+      "kind": "component",
+      "backgroundColor": "{colors.announce}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "comparison-tabs",
+      "kind": "tabs",
+      "textColor": "{colors.ink-secondary}",
+      "padding": "14px 0px"
+    },
+    {
+      "key": "comparison-tab-active",
+      "kind": "tabs",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "spec-column",
+      "kind": "component",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "spec-caption",
+      "kind": "component",
+      "textColor": "{colors.steel}"
+    },
+    {
+      "key": "explore-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "field-card",
+      "kind": "input",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "news-card",
+      "kind": "card",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "feature-link-band",
+      "kind": "link",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "padding": "64px 0px"
+    },
+    {
+      "key": "store-nav",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "care-tag",
+      "kind": "badge",
+      "backgroundColor": "{colors.store-blue}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xs}",
+      "padding": "0px 4px"
+    },
+    {
+      "key": "benefits-panel",
+      "kind": "card",
+      "backgroundColor": "{colors.panel}",
+      "textColor": "{colors.graphite}",
+      "rounded": "{rounded.sm}",
+      "padding": "16px"
+    },
+    {
+      "key": "option-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.store-ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "24px"
+    },
+    {
+      "key": "option-card-active",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.store-ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "23px"
+    },
+    {
+      "key": "option-card-disabled",
+      "kind": "card",
+      "textColor": "{colors.store-ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "24px"
+    },
+    {
+      "key": "option-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.badge-orange}",
+      "textColor": "{colors.on-primary}",
+      "padding": "2px 8px"
+    },
+    {
+      "key": "media-toggle",
+      "kind": "switch",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "media-toggle-active",
+      "kind": "switch",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "quantity-stepper",
+      "kind": "component",
+      "textColor": "{colors.store-ink}"
+    },
+    {
+      "key": "purchase-bar",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "16px 0px"
+    },
+    {
+      "key": "region-banner",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.graphite}",
+      "padding": "20px 12px"
+    },
+    {
+      "key": "media-tile",
+      "kind": "card",
+      "backgroundColor": "{colors.media-black}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "in-box-tile",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "faq-row",
+      "kind": "component",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "footnote-panel",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink-secondary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "floating-circle-button",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "newsletter-input",
+      "kind": "input",
+      "textColor": "{colors.on-primary}",
+      "padding": "4px 0px 4px 12px"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.footer}",
+      "textColor": "{colors.footer-link}",
+      "padding": "32px 16px"
+    },
+    {
+      "key": "footer-store",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.slate}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.huge}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "DJI's site works like a brightly lit product showroom. The page is a white canvas (`{colors.canvas}`) tiled edge to edge with studio photography: a full-height hero carousel of a single hero product over dark or sky backdrops, then a two-up grid of square-cornered product tiles separated by thin white gutters, each tile a soft grey render of a drone, gimbal or microphone with its name set as large, light-weight wordmark-style type above it. Text is never pure black; it is Open Sans in a near-black ink (`{colors.ink}`) at stepped opacities, tracked slightly tight so headings read compact and engineered.\r\n\r\nColour is used almost only for action. Every interactive pill (the nav Store button, \"Buy Now\", model selectors, \"Where to Buy\") is filled with a single engineering blue (`{colors.primary}`), while secondary actions are thin black-outlined pills. The store sharpens the same idea with a slightly brighter blue (`{colors.store-blue}`) and a pale tinted companion for \"Add to Cart\". A small burnt-orange label (`{colors.tier-orange}`) marks product rank such as \"Flagship\" or \"Advanced\"; it is the only warm accent on the brand site.\r\n\r\nPages share a clear rhythm: an announcement bar and white nav, photographic tiles, a centred section heading, comparison or editorial grids, a pale grey feature-link band, and a charcoal footer (`{colors.footer}`). The store keeps that skeleton but adds commerce furniture: 8px option cards with a 2px blue selection ring, an orange corner badge, a sticky white purchase bar, square black media tiles for feature storytelling, and a light grey footer.\r\n\r\n**Key Characteristics:**\r\n- Photography-first: full-bleed hero carousel and square, gutter-separated product tiles on `{colors.canvas}`; UI chrome stays out of the way.\r\n- One action colour: `{colors.primary}` on the brand site and `{colors.store-blue}` in the store; every CTA is a pill (`{rounded.xl}`, `{rounded.xxl}`, `{rounded.full}`).\r\n- Secondary actions are 1px `{colors.ink}` outline pills (`button-outline`); hero CTAs are white ghost pills over photography (`button-hero-ghost`).\r\n- Open Sans throughout, tracked tight (about −0.02em for body, −0.03em for headings), with weight 600 for headings and 400 for everything else.\r\n- Ink at stepped opacities: `{colors.ink}`, `{colors.ink-secondary}`, `{colors.ink-tertiary}`.\r\n- Small `{colors.tier-orange}` eyebrows mark product rank; orange never fills a button.\r\n- Page rhythm: announcement bar, nav, photo hero, product tiles, centred heading with grid, `{colors.canvas-soft}` feature-link band, `{colors.footer}` footer.",
+  "dos": "### Do\r\n- Let product photography fill square, gutter-separated tiles; keep text centred above the render.\r\n- Use `{colors.primary}` (brand site) or `{colors.store-blue}` (store) for every primary action, always as a pill.\r\n- Pair a filled blue pill with a 1px `{colors.ink}` outline pill for the secondary action.\r\n- Use white `button-hero-ghost` pills over dark hero photography.\r\n- Set all text in Open Sans with slight negative tracking, and use the ink opacity steps (`{colors.ink}`, `{colors.ink-secondary}`, `{colors.ink-tertiary}`) for hierarchy.\r\n- Mark product rank with a small `tier-eyebrow` in `{colors.tier-orange}`.\r\n- In the store, group choices into `{rounded.sm}` option cards and show selection with a 2px `{colors.store-blue}` ring.\r\n- Close pages with the `{colors.footer}` footer on the brand site and `{colors.canvas-soft}` in the store.\r\n\r\n### Don't\r\n- Don't round photo tiles, cards or media tiles; only pills, option cards and small tags are rounded.\r\n- Don't use more than one blue on the same surface; the brand site and the store each have their own.\r\n- Don't use orange for buttons or large fills; it is reserved for small rank labels and the option badge.\r\n- Don't use pure black for text; use `{colors.ink}`.\r\n- Don't add drop shadows to tiles or cards; keep shadows for floating buttons and the sticky purchase bar.\r\n- Don't set headings heavier than 600 or track type positively."
+}

@@ -1,0 +1,469 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#eceff1",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#b3e5fc",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand1-50",
+      "value": "#E0EBF4"
+    },
+    {
+      "name": "brand1-100",
+      "value": "#B3CEE3"
+    },
+    {
+      "name": "brand1-200",
+      "value": "#80ADD1"
+    },
+    {
+      "name": "brand1-300",
+      "value": "#4D8CBE"
+    },
+    {
+      "name": "brand1-400",
+      "value": "#2674B0"
+    },
+    {
+      "name": "brand1-500",
+      "value": "#005BA2"
+    },
+    {
+      "name": "brand1-600",
+      "value": "#00539A"
+    },
+    {
+      "name": "brand1-700",
+      "value": "#004990"
+    },
+    {
+      "name": "brand1-800",
+      "value": "#004086"
+    },
+    {
+      "name": "brand1-900",
+      "value": "#002f75"
+    },
+    {
+      "name": "brand2-50",
+      "value": "#E1E6EA"
+    },
+    {
+      "name": "brand2-100",
+      "value": "#B3C0CB"
+    },
+    {
+      "name": "brand2-200",
+      "value": "#8096A9"
+    },
+    {
+      "name": "brand2-300",
+      "value": "#4D6B86"
+    },
+    {
+      "name": "brand2-400",
+      "value": "#274C6C"
+    },
+    {
+      "name": "brand2-500",
+      "value": "#012C52"
+    },
+    {
+      "name": "brand2-600",
+      "value": "#01274B"
+    },
+    {
+      "name": "brand2-700",
+      "value": "#012141"
+    },
+    {
+      "name": "brand2-800",
+      "value": "#011B38"
+    },
+    {
+      "name": "brand2-900",
+      "value": "#001028"
+    },
+    {
+      "name": "primary-50",
+      "value": "#e1f5fe"
+    },
+    {
+      "name": "primary-100",
+      "value": "#b3e5fc"
+    },
+    {
+      "name": "primary-200",
+      "value": "#81d4fa"
+    },
+    {
+      "name": "primary-300",
+      "value": "#4fc3f7"
+    },
+    {
+      "name": "primary-400",
+      "value": "#29b6f6"
+    },
+    {
+      "name": "primary-500",
+      "value": "#03a9f4"
+    },
+    {
+      "name": "primary-600",
+      "value": "#03a2f3"
+    },
+    {
+      "name": "primary-700",
+      "value": "#0298f1"
+    },
+    {
+      "name": "primary-800",
+      "value": "#028fef"
+    },
+    {
+      "name": "primary-900",
+      "value": "#017eec"
+    },
+    {
+      "name": "secondary-50",
+      "value": "#eceff1"
+    },
+    {
+      "name": "secondary-100",
+      "value": "#d1d8dc"
+    },
+    {
+      "name": "secondary-200",
+      "value": "#b2bec5"
+    },
+    {
+      "name": "secondary-300",
+      "value": "#93a3ad"
+    },
+    {
+      "name": "secondary-400",
+      "value": "#7b909c"
+    },
+    {
+      "name": "secondary-500",
+      "value": "#647c8a"
+    },
+    {
+      "name": "secondary-600",
+      "value": "#5c7482"
+    },
+    {
+      "name": "secondary-700",
+      "value": "#526977"
+    },
+    {
+      "name": "secondary-800",
+      "value": "#485f6d"
+    },
+    {
+      "name": "secondary-900",
+      "value": "#364c5a"
+    },
+    {
+      "name": "success-50",
+      "value": "#f0fae4"
+    },
+    {
+      "name": "success-100",
+      "value": "#d8f2bc"
+    },
+    {
+      "name": "success-200",
+      "value": "#bfe990"
+    },
+    {
+      "name": "success-300",
+      "value": "#a5e064"
+    },
+    {
+      "name": "success-400",
+      "value": "#91da42"
+    },
+    {
+      "name": "success-500",
+      "value": "#7ed321"
+    },
+    {
+      "name": "success-600",
+      "value": "#76ce1d"
+    },
+    {
+      "name": "success-700",
+      "value": "#6bc818"
+    },
+    {
+      "name": "success-800",
+      "value": "#61c214"
+    },
+    {
+      "name": "success-900",
+      "value": "#4eb70b"
+    },
+    {
+      "name": "warning-50",
+      "value": "#fef8e2"
+    },
+    {
+      "name": "warning-100",
+      "value": "#fcecb6"
+    },
+    {
+      "name": "warning-200",
+      "value": "#fae085"
+    },
+    {
+      "name": "warning-300",
+      "value": "#f7d454"
+    },
+    {
+      "name": "warning-400",
+      "value": "#f6ca30"
+    },
+    {
+      "name": "warning-500",
+      "value": "#f4c10b"
+    },
+    {
+      "name": "warning-600",
+      "value": "#f3bb0a"
+    },
+    {
+      "name": "warning-700",
+      "value": "#f1b308"
+    },
+    {
+      "name": "warning-800",
+      "value": "#efab06"
+    },
+    {
+      "name": "warning-900",
+      "value": "#ec9e03"
+    },
+    {
+      "name": "danger-50",
+      "value": "#fee7eb"
+    },
+    {
+      "name": "danger-100",
+      "value": "#fcc3ce"
+    },
+    {
+      "name": "danger-200",
+      "value": "#fa9bad"
+    },
+    {
+      "name": "danger-300",
+      "value": "#f7728c"
+    },
+    {
+      "name": "danger-400",
+      "value": "#f65474"
+    },
+    {
+      "name": "danger-500",
+      "value": "#f4365b"
+    },
+    {
+      "name": "danger-600",
+      "value": "#f33053"
+    },
+    {
+      "name": "danger-700",
+      "value": "#f12949"
+    },
+    {
+      "name": "danger-800",
+      "value": "#ef2240"
+    },
+    {
+      "name": "danger-900",
+      "value": "#ec162f"
+    },
+    {
+      "name": "info-50",
+      "value": "#e0fbfd"
+    },
+    {
+      "name": "info-100",
+      "value": "#b3f5fb"
+    },
+    {
+      "name": "info-200",
+      "value": "#80eff9"
+    },
+    {
+      "name": "info-300",
+      "value": "#4de9f6"
+    },
+    {
+      "name": "info-400",
+      "value": "#26e4f4"
+    },
+    {
+      "name": "info-500",
+      "value": "#00dff2"
+    },
+    {
+      "name": "info-600",
+      "value": "#00dbf0"
+    },
+    {
+      "name": "info-700",
+      "value": "#00d7ee"
+    },
+    {
+      "name": "info-800",
+      "value": "#00d2ec"
+    },
+    {
+      "name": "info-900",
+      "value": "#00cae8"
+    },
+    {
+      "name": "error-100",
+      "value": "#fff5f5"
+    },
+    {
+      "name": "error-300",
+      "value": "#f88e86"
+    },
+    {
+      "name": "error-500",
+      "value": "#ec584e"
+    },
+    {
+      "name": "error-700",
+      "value": "#e91b0c"
+    },
+    {
+      "name": "error-900",
+      "value": "#ac001a"
+    },
+    {
+      "name": "neutral-0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "neutral-100",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "neutral-300",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "neutral-500",
+      "value": "#999999"
+    },
+    {
+      "name": "neutral-700",
+      "value": "#424242"
+    },
+    {
+      "name": "primary",
+      "value": "#b3e5fc"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size",
+      "fontFamily": "\"Nunito Sans\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Nunito Sans\"",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#eceff1",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#b3e5fc",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#b3e5fc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eceff1",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eceff1",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eceff1",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Material Icons",
+    "package": "@mui/icons-material",
+    "pack": "material",
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "npm",
+    "url": "https://mui.com/material-ui/material-icons"
+  },
+  "overview": "**Quantum** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#b3e5fc` brand accent.\n\nTypography centers cleanly on `Nunito Sans` (18px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#eceff1` surface layering.\n\nMaintained by **Catho**. Source: published token package, package `@catho/quantum`. Inventory: **91** colors, **2** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#eceff1` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#eceff1`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#b3e5fc` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#b3e5fc` with `#0b0b0c` text (14.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Nunito Sans` headings with `Nunito Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#eceff1` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

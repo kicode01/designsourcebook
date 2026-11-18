@@ -1,0 +1,683 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff6358",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0.25rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "app-surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "subtle",
+      "value": "#666666"
+    },
+    {
+      "name": "surface",
+      "value": "#fafafa"
+    },
+    {
+      "name": "pretty-value",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "primary",
+      "value": "#ff6358"
+    },
+    {
+      "name": "secondary",
+      "value": "#666666"
+    },
+    {
+      "name": "tertiary",
+      "value": "#03a9f4"
+    },
+    {
+      "name": "info",
+      "value": "#0058e9"
+    },
+    {
+      "name": "success",
+      "value": "#37b400"
+    },
+    {
+      "name": "warning",
+      "value": "#ffc000"
+    },
+    {
+      "name": "error",
+      "value": "#f31700"
+    },
+    {
+      "name": "inverse",
+      "value": "#3d3d3d"
+    },
+    {
+      "name": "series",
+      "value": "#ff6358"
+    },
+    {
+      "name": "kendo-color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "kendo-color-black",
+      "value": "#000000"
+    },
+    {
+      "name": "kendo-accent-icon-color",
+      "value": "#8B7CF6"
+    },
+    {
+      "name": "kendo-color-preview-no-color-text",
+      "value": "#f31700"
+    },
+    {
+      "name": "kendo-editor-resize-handle-border",
+      "value": "#000000"
+    },
+    {
+      "name": "kendo-editor-resize-handle-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "kendo-editor-selectednode-outline-color",
+      "value": "#88ccff"
+    },
+    {
+      "name": "kendo-gantt-action-on-offset-text",
+      "value": "#000000"
+    },
+    {
+      "name": "kendo-color-app-surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "kendo-color-subtle",
+      "value": "#666666"
+    },
+    {
+      "name": "kendo-color-surface",
+      "value": "#fafafa"
+    },
+    {
+      "name": "kendo-color-base",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "kendo-color-primary",
+      "value": "#ff6358"
+    },
+    {
+      "name": "kendo-color-secondary",
+      "value": "#666666"
+    },
+    {
+      "name": "kendo-color-tertiary",
+      "value": "#03a9f4"
+    },
+    {
+      "name": "kendo-color-info",
+      "value": "#0058e9"
+    },
+    {
+      "name": "kendo-color-success",
+      "value": "#37b400"
+    },
+    {
+      "name": "kendo-color-warning",
+      "value": "#ffc000"
+    },
+    {
+      "name": "kendo-color-error",
+      "value": "#f31700"
+    },
+    {
+      "name": "kendo-color-inverse",
+      "value": "#3d3d3d"
+    },
+    {
+      "name": "kendo-color-series",
+      "value": "#ff6358"
+    },
+    {
+      "name": "kendo-color-surface-alt",
+      "value": "#ffffff"
+    },
+    {
+      "name": "kendo-color-warning-subtle",
+      "value": "#fff5d8"
+    },
+    {
+      "name": "kendo-color-warning-subtle-hover",
+      "value": "#feeebb"
+    },
+    {
+      "name": "surface-alt",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-map",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "warning-subtle",
+      "value": "#fff5d8"
+    },
+    {
+      "name": "warning-subtle-hover",
+      "value": "#feeebb"
+    },
+    {
+      "name": "kendo-taskboard-column-focus-border",
+      "value": "#424242"
+    }
+  ],
+  "type": [
+    {
+      "name": "kendo-font-size-xl",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "kendo-pivotgrid-configurator-header-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "kendo-font-size-lg",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "kendo-font-family-sans",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "px": 16
+    },
+    {
+      "name": "kendo-font-family-serif",
+      "fontFamily": "\"(\"Times New Roman\", Georgia, Garamond, Palatino, \"Baskerville)\"",
+      "px": 16
+    },
+    {
+      "name": "kendo-font-family-sans-serif",
+      "fontFamily": "\"(system-ui\", -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\")\"",
+      "px": 16
+    },
+    {
+      "name": "kendo-font-family-monospace",
+      "fontFamily": "\"(SFMono-Regular\", Menlo, Monaco, Consolas, \"Roboto Mono\", \"Ubuntu Mono\", \"Lucida Console\", \"Courier New\", \"monospace)\"",
+      "px": 16
+    },
+    {
+      "name": "kendo-spreadsheet-action-bar-font-family",
+      "fontFamily": "\"(Arial\", Verdana, \"sans-serif)\"",
+      "px": 16
+    },
+    {
+      "name": "kendo-spreadsheet-view-font-family",
+      "fontFamily": "\"(Arial\", Verdana, \"sans-serif)\"",
+      "px": 16
+    },
+    {
+      "name": "kendo-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "kendo-font-size-md",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "kendo-actionsheet-item-description-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "kendo-font-size-sm",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "kendo-list-item-group-label-sm-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": ".75em",
+      "px": 12
+    },
+    {
+      "name": "kendo-list-item-group-label-md-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": ".75em",
+      "px": 12
+    },
+    {
+      "name": "kendo-list-item-group-label-lg-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": ".75em",
+      "px": 12
+    },
+    {
+      "name": "item-group-label-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "kendo-menu-popup-sm-group-header-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "kendo-menu-popup-md-group-header-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "kendo-menu-popup-lg-group-header-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "group-header-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75em",
+      "px": 12
+    },
+    {
+      "name": "kendo-calendar-week-number-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "kendo-font-size-xs",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "kendo-switch-sm-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "kendo-switch-md-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "kendo-switch-lg-font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "sm",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "md",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "lg",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "kendo-font-size-xxs",
+      "fontFamily": "\"(Arial\", Verdana, Tahoma, \"Trebuchet MS\", Helvetica, Impact, \"Gill Sans)\"",
+      "fontSize": "0.5rem",
+      "px": 8
+    }
+  ],
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "rounded": "0.25rem",
+      "padding": "0",
+      "border": "1px solid rgba(0,0,0,0)"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "backgroundColor": "#ffffff",
+      "rounded": "50%",
+      "padding": "0",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "panel",
+      "kind": "panel",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#d6e5e9",
+      "rounded": "0.25rem",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "avatar",
+      "kind": "avatar",
+      "backgroundColor": "#e7607b",
+      "border": "1px solid #e7607b"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "backgroundColor": "#ffffff",
+      "padding": "0"
+    },
+    {
+      "key": "drawer-2",
+      "kind": "modal",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#3d3d3d",
+      "rounded": "0.25rem",
+      "border": "1px solid #3d3d3d",
+      "shadow": "0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)"
+    },
+    {
+      "key": "popover-3",
+      "kind": "modal",
+      "backgroundColor": "#ffffff",
+      "padding": "0",
+      "border": "1px solid rgba(0, 0, 0, 0.08)",
+      "shadow": "0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "k-data-table-2",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "k-bottom-nav",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0,0,0,0)"
+    },
+    {
+      "key": "breadcrumb-2",
+      "kind": "nav",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "border": "1px solid rgba(0,0,0,0)"
+    },
+    {
+      "key": "k-accent-icon",
+      "kind": "icon",
+      "textColor": "#8b7cf6"
+    },
+    {
+      "key": "table-thead-3",
+      "kind": "table",
+      "backgroundColor": "#f8f9fa",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "tooltip-info-2",
+      "kind": "tooltip",
+      "backgroundColor": "#00a8c1",
+      "border": "1px solid #00a8c1"
+    },
+    {
+      "key": "tooltip-base-3",
+      "kind": "tooltip",
+      "backgroundColor": "#d6e5e9",
+      "border": "1px solid #d6e5e9"
+    },
+    {
+      "key": "k-fab-item-icon-2",
+      "kind": "icon",
+      "backgroundColor": "#d6e5e9",
+      "rounded": "50%",
+      "border": "1px solid rgba(0, 0, 0, 0.08)",
+      "shadow": "0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)"
+    },
+    {
+      "key": "card-subtitle-2",
+      "kind": "card",
+      "textColor": "#8f9ea2"
+    },
+    {
+      "key": "k-taskboard-card-3",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "k-tool-call-label",
+      "kind": "label",
+      "textColor": "#8f9ea2"
+    },
+    {
+      "key": "k-list-item-group-label-2",
+      "kind": "label",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "k-menu-link-description",
+      "kind": "link",
+      "textColor": "#8f9ea2"
+    },
+    {
+      "key": "k-task-summary-complete",
+      "kind": "summary",
+      "textColor": "#3d3d3d"
+    },
+    {
+      "key": "k-loader-container-panel-2",
+      "kind": "panel",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "k-filemanager-breadcrumb-3",
+      "kind": "nav",
+      "backgroundColor": "#f8f9fa"
+    },
+    {
+      "key": "k-segmented-control-button-2",
+      "kind": "button",
+      "backgroundColor": "rgba(0,0,0,0)"
+    },
+    {
+      "key": "k-colorgradient-input-label-2",
+      "kind": "input",
+      "textColor": "#8f9ea2"
+    },
+    {
+      "key": "k-datainsights-composer-card-4",
+      "kind": "card",
+      "backgroundColor": "#f8f9fa",
+      "border": "1px solid"
+    },
+    {
+      "key": "k-pivotgrid-configurator-panel-3",
+      "kind": "panel",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "k-pivotgrid-configurator-button-3",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "breadcrumb",
+      "kind": "nav",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "border": "1px solid rgba(0,0,0,0)"
+    },
+    {
+      "key": "table-thead",
+      "kind": "table",
+      "backgroundColor": "#fafafa",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "table-tfoot-2",
+      "kind": "table",
+      "backgroundColor": "#fafafa",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "table-header-3",
+      "kind": "table",
+      "backgroundColor": "#fafafa",
+      "border": "1px solid rgba(0, 0, 0, 0.08)"
+    },
+    {
+      "key": "card-subtitle",
+      "kind": "card",
+      "textColor": "#666666"
+    },
+    {
+      "key": "dialog-titlebar",
+      "kind": "modal",
+      "backgroundColor": "#fafafa"
+    },
+    {
+      "key": "drawer-separator-2",
+      "kind": "modal",
+      "backgroundColor": "rgba(0, 0, 0, 0.08)",
+      "padding": "0"
+    },
+    {
+      "key": "k-filemanager-breadcrumb-2",
+      "kind": "nav",
+      "backgroundColor": "#fafafa"
+    },
+    {
+      "key": "k-colorgradient-input-label",
+      "kind": "input",
+      "textColor": "#666666"
+    },
+    {
+      "key": "k-citation-popover-view-body-3",
+      "kind": "modal",
+      "textColor": "#666666"
+    },
+    {
+      "key": "k-datainsights-composer-card-2",
+      "kind": "card",
+      "backgroundColor": "#fafafa",
+      "border": "1px solid"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff6358",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Kendo UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff6358` brand accent.\n\nTypography centers cleanly on `(Arial` (20px display down to 16px body), unified by `0.25rem` base corner radius and subtle shadow elevation.\n\nMaintained by **Progress Telerik**. Source: published token package (https://github.com/telerik/kendo-themes/tree/master/packages/default), package `@progress/kendo-theme-default`. Inventory: **42** colors, **31** typography steps, and **49** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 49 component tokens with documented paddings: `0`, `8px 12px`, `2px`, `6px 12px`, `12px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)`, `0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff6358` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff6358` with `#f7f7f8` text (2.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `(Arial` headings with `(Arial` body copy using documented weights and scale steps.\n- Apply `0.25rem` base geometry across inputs and buttons (0.25rem on outer containers).\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.25rem` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

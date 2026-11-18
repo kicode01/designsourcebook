@@ -1,0 +1,41 @@
+{
+  "name": "michelin",
+  "displayName": "Motion",
+  "description": "Michelin Motion — read from designsystem.michelin.com's live stylesheets, not a published token package.",
+  "style": "Michelin Motion — read from designsystem.michelin.com's live stylesheets, not a published token package.",
+  "category": "Michelin",
+  "org": "Michelin",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "michelin",
+    "light"
+  ],
+  "homepage": "https://designsystem.michelin.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://designsystem.michelin.com/ and its 1 stylesheets on 2026-11-18. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "url": "https://designsystem.michelin.com/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 28,
+    "typography": 5,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

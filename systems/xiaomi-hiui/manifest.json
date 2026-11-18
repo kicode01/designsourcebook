@@ -1,0 +1,41 @@
+{
+  "name": "xiaomi-hiui",
+  "displayName": "HIUI",
+  "description": "Xiaomi HIUI — tokens read from https://github.com/XiaoMi/hiui.",
+  "style": "Xiaomi HIUI — tokens read from https://github.com/XiaoMi/hiui.",
+  "category": "Xiaomi",
+  "org": "Xiaomi",
+  "theme": "light",
+  "tags": [
+    "published",
+    "xiaomi",
+    "light"
+  ],
+  "homepage": "https://github.com/XiaoMi/hiui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/XiaoMi/hiui — 7 token files, 78 colours harvested, 76 selected.",
+  "source": {
+    "repo": "https://github.com/XiaoMi/hiui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 77,
+    "typography": 16,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

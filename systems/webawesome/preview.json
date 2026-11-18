@@ -1,0 +1,476 @@
+{
+  "canvas": "#f8f8ff",
+  "surface": "#f0f8ff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00bfff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "wa-color-orange-95",
+      "value": "#ffeddb"
+    },
+    {
+      "name": "wa-color-orange-90",
+      "value": "#ffd8b5"
+    },
+    {
+      "name": "wa-color-orange-80",
+      "value": "#ffb384"
+    },
+    {
+      "name": "wa-color-orange-70",
+      "value": "#ff8b57"
+    },
+    {
+      "name": "wa-color-orange-40",
+      "value": "#953f00"
+    },
+    {
+      "name": "wa-color-orange-30",
+      "value": "#773000"
+    },
+    {
+      "name": "wa-color-orange-20",
+      "value": "#5b2100"
+    },
+    {
+      "name": "wa-color-orange-10",
+      "value": "#3a1100"
+    },
+    {
+      "name": "wa-color-orange-05",
+      "value": "#270900"
+    },
+    {
+      "name": "fill",
+      "value": "#000"
+    },
+    {
+      "name": "aliceblue",
+      "value": "#f0f8ff"
+    },
+    {
+      "name": "antiquewhite",
+      "value": "#faebd7"
+    },
+    {
+      "name": "aqua",
+      "value": "#00ffff"
+    },
+    {
+      "name": "aquamarine",
+      "value": "#7fffd4"
+    },
+    {
+      "name": "azure",
+      "value": "#f0ffff"
+    },
+    {
+      "name": "beige",
+      "value": "#f5f5dc"
+    },
+    {
+      "name": "bisque",
+      "value": "#ffe4c4"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "blanchedalmond",
+      "value": "#ffebcd"
+    },
+    {
+      "name": "blue",
+      "value": "#0000ff"
+    },
+    {
+      "name": "blueviolet",
+      "value": "#8a2be2"
+    },
+    {
+      "name": "brown",
+      "value": "#a52a2a"
+    },
+    {
+      "name": "burlywood",
+      "value": "#deb887"
+    },
+    {
+      "name": "cadetblue",
+      "value": "#5f9ea0"
+    },
+    {
+      "name": "chartreuse",
+      "value": "#7fff00"
+    },
+    {
+      "name": "chocolate",
+      "value": "#d2691e"
+    },
+    {
+      "name": "coral",
+      "value": "#ff7f50"
+    },
+    {
+      "name": "cornflowerblue",
+      "value": "#6495ed"
+    },
+    {
+      "name": "cornsilk",
+      "value": "#fff8dc"
+    },
+    {
+      "name": "crimson",
+      "value": "#dc143c"
+    },
+    {
+      "name": "cyan",
+      "value": "#00ffff"
+    },
+    {
+      "name": "darkblue",
+      "value": "#00008b"
+    },
+    {
+      "name": "darkcyan",
+      "value": "#008b8b"
+    },
+    {
+      "name": "darkgoldenrod",
+      "value": "#b8860b"
+    },
+    {
+      "name": "darkgray",
+      "value": "#a9a9a9"
+    },
+    {
+      "name": "darkgreen",
+      "value": "#006400"
+    },
+    {
+      "name": "darkgrey",
+      "value": "#a9a9a9"
+    },
+    {
+      "name": "darkkhaki",
+      "value": "#bdb76b"
+    },
+    {
+      "name": "darkmagenta",
+      "value": "#8b008b"
+    },
+    {
+      "name": "darkolivegreen",
+      "value": "#556b2f"
+    },
+    {
+      "name": "darkorange",
+      "value": "#ff8c00"
+    },
+    {
+      "name": "darkorchid",
+      "value": "#9932cc"
+    },
+    {
+      "name": "darkred",
+      "value": "#8b0000"
+    },
+    {
+      "name": "darksalmon",
+      "value": "#e9967a"
+    },
+    {
+      "name": "darkseagreen",
+      "value": "#8fbc8f"
+    },
+    {
+      "name": "darkslateblue",
+      "value": "#483d8b"
+    },
+    {
+      "name": "darkslategray",
+      "value": "#2f4f4f"
+    },
+    {
+      "name": "darkslategrey",
+      "value": "#2f4f4f"
+    },
+    {
+      "name": "darkturquoise",
+      "value": "#00ced1"
+    },
+    {
+      "name": "darkviolet",
+      "value": "#9400d3"
+    },
+    {
+      "name": "deeppink",
+      "value": "#ff1493"
+    },
+    {
+      "name": "deepskyblue",
+      "value": "#00bfff"
+    },
+    {
+      "name": "dimgray",
+      "value": "#696969"
+    },
+    {
+      "name": "dimgrey",
+      "value": "#696969"
+    },
+    {
+      "name": "dodgerblue",
+      "value": "#1e90ff"
+    },
+    {
+      "name": "firebrick",
+      "value": "#b22222"
+    },
+    {
+      "name": "floralwhite",
+      "value": "#fffaf0"
+    },
+    {
+      "name": "forestgreen",
+      "value": "#228b22"
+    },
+    {
+      "name": "fuchsia",
+      "value": "#ff00ff"
+    },
+    {
+      "name": "gainsboro",
+      "value": "#dcdcdc"
+    },
+    {
+      "name": "ghostwhite",
+      "value": "#f8f8ff"
+    },
+    {
+      "name": "goldenrod",
+      "value": "#daa520"
+    },
+    {
+      "name": "gold",
+      "value": "#ffd700"
+    },
+    {
+      "name": "gray",
+      "value": "#808080"
+    },
+    {
+      "name": "green",
+      "value": "#008000"
+    },
+    {
+      "name": "greenyellow",
+      "value": "#adff2f"
+    },
+    {
+      "name": "grey",
+      "value": "#808080"
+    },
+    {
+      "name": "honeydew",
+      "value": "#f0fff0"
+    },
+    {
+      "name": "hotpink",
+      "value": "#ff69b4"
+    },
+    {
+      "name": "indianred",
+      "value": "#cd5c5c"
+    },
+    {
+      "name": "indigo",
+      "value": "#4b0082"
+    },
+    {
+      "name": "ivory",
+      "value": "#fffff0"
+    },
+    {
+      "name": "khaki",
+      "value": "#f0e68c"
+    },
+    {
+      "name": "lavenderblush",
+      "value": "#fff0f5"
+    },
+    {
+      "name": "lavender",
+      "value": "#e6e6fa"
+    },
+    {
+      "name": "lawngreen",
+      "value": "#7cfc00"
+    },
+    {
+      "name": "lemonchiffon",
+      "value": "#fffacd"
+    },
+    {
+      "name": "lightblue",
+      "value": "#add8e6"
+    },
+    {
+      "name": "lightcoral",
+      "value": "#f08080"
+    },
+    {
+      "name": "lightcyan",
+      "value": "#e0ffff"
+    },
+    {
+      "name": "lightgoldenrodyellow",
+      "value": "#fafad2"
+    },
+    {
+      "name": "lightgray",
+      "value": "#d3d3d3"
+    },
+    {
+      "name": "lightgreen",
+      "value": "#90ee90"
+    },
+    {
+      "name": "lightgrey",
+      "value": "#d3d3d3"
+    },
+    {
+      "name": "lightpink",
+      "value": "#ffb6c1"
+    },
+    {
+      "name": "lightsalmon",
+      "value": "#ffa07a"
+    },
+    {
+      "name": "lightseagreen",
+      "value": "#20b2aa"
+    },
+    {
+      "name": "lightskyblue",
+      "value": "#87cefa"
+    },
+    {
+      "name": "lightslategray",
+      "value": "#778899"
+    },
+    {
+      "name": "lightslategrey",
+      "value": "#778899"
+    },
+    {
+      "name": "primary",
+      "value": "#00bfff"
+    }
+  ],
+  "type": [
+    {
+      "name": "wa-font-family-body",
+      "fontFamily": "Quicksand, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "wa-font-family-heading",
+      "fontFamily": "Quicksand, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "wa-font-family-code",
+      "fontFamily": "ui-monospace, monospace",
+      "px": 16
+    },
+    {
+      "name": "wa-font-family-longform",
+      "fontFamily": "\"Crimson Pro\", serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f0f8ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00bfff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00bfff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f0f8ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f0f8ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f8f8ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f8f8ff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f0f8ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Web Awesome** is a light-first design system anchored on `#f8f8ff` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `#00bfff` brand accent.\n\nTypography centers cleanly on `Quicksand` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#f8f8ff` -> `#f0f8ff` surface layering.\n\nSource: published token package (https://webawesome.com/), package `@awesome.me/webawesome`. Inventory: **91** colors, **4** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f0f8ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f8f8ff` -> `#f0f8ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00bfff` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f8f8ff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#00bfff` with `#0b0b0c` text (9.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Quicksand` headings with `Quicksand` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f0f8ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

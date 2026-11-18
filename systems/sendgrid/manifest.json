@@ -1,0 +1,42 @@
+{
+  "name": "sendgrid",
+  "displayName": "SendGrid",
+  "description": "SendGrid — tokens imported from @sendgrid/ui-components.",
+  "style": "SendGrid — tokens imported from @sendgrid/ui-components.",
+  "category": "SendGrid",
+  "org": "SendGrid",
+  "theme": "light",
+  "tags": [
+    "published",
+    "send-grid",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @sendgrid/ui-components@2.0.2 (5 token files, 64 colours harvested, 63 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@sendgrid/ui-components",
+    "version": "2.0.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 64,
+    "typography": 8,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

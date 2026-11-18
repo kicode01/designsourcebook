@@ -1,0 +1,44 @@
+{
+  "name": "jobright",
+  "displayName": "Jobright",
+  "description": "An analysis of Jobright's design language — an AI job-hunting platform built on an energetic spring-mint green against black and white, with pale-mint section bands carrying the page rhythm. Bold condensed Titillium Web display headings pair with a clean Inter UI, and the CTA system runs on high-contrast pill buttons — black pills for primary actions, a mint-green pill for the signature accent. Rounded product-mockup cards, a scrolling black job ticker, and generous whitespace give it a friendly, high-energy startup feel.",
+  "style": "An analysis of Jobright's design language — an AI job-hunting platform built on an energetic spring-mint green against black and white, with pale-mint section bands carrying the page rhythm. Bold condensed Titillium Web display headings pair with a clean Inter UI, and the CTA system runs on high-contrast pill buttons — black pills for primary actions, a mint-green pill for the signature accent. Rounded product-mockup cards, a scrolling black job ticker, and generous whitespace give it a friendly, high-energy startup feel.",
+  "category": "AI & LLM Platforms",
+  "org": "Jobright",
+  "theme": "light",
+  "tags": [
+    "ai",
+    "llm",
+    "platforms",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://jobright.ai",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (jobright/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/jobright"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 9,
+    "typography": 11,
+    "components": 34
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 3,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

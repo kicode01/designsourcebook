@@ -1,0 +1,42 @@
+{
+  "name": "deque",
+  "displayName": "Cauldron",
+  "description": "Deque Cauldron — tokens imported from @deque/cauldron-styles.",
+  "style": "Deque Cauldron — tokens imported from @deque/cauldron-styles.",
+  "category": "Deque",
+  "org": "Deque",
+  "theme": "light",
+  "tags": [
+    "published",
+    "deque",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MPL-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @deque/cauldron-styles@7.8.0 + @deque/cauldron-react (1 token files, 121 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@deque/cauldron-styles",
+    "version": "7.8.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 2,
+    "components": 29
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

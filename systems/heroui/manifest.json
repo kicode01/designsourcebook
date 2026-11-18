@@ -1,0 +1,41 @@
+{
+  "name": "heroui",
+  "displayName": "HeroUI",
+  "description": "HeroUI — tokens read from https://github.com/heroui-inc/heroui.",
+  "style": "HeroUI — tokens read from https://github.com/heroui-inc/heroui.",
+  "category": "HeroUI",
+  "org": "HeroUI",
+  "theme": "light",
+  "tags": [
+    "published",
+    "hero-ui",
+    "light"
+  ],
+  "homepage": "https://github.com/heroui-inc/heroui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/heroui-inc/heroui — 2 token files, 27 colours harvested, 26 selected.",
+  "source": {
+    "repo": "https://github.com/heroui-inc/heroui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 27,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

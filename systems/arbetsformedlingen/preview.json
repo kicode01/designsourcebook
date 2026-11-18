@@ -1,0 +1,688 @@
+{
+  "canvas": "#fefefe",
+  "surface": "#F1F7E5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1db920",
+  "border": "#d5d5d5",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "sentiment-informative-200",
+      "value": "#E9E9FF"
+    },
+    {
+      "name": "sentiment-informative-500",
+      "value": "#0000FF"
+    },
+    {
+      "name": "sentiment-informative-700",
+      "value": "#0058A3"
+    },
+    {
+      "name": "sentiment-error-200",
+      "value": "#FDEDED"
+    },
+    {
+      "name": "sentiment-error-500",
+      "value": "#DA0000"
+    },
+    {
+      "name": "sentiment-error-700",
+      "value": "#C7311A"
+    },
+    {
+      "name": "sentiment-success-200",
+      "value": "#E9F6EC"
+    },
+    {
+      "name": "sentiment-success-500",
+      "value": "#009322"
+    },
+    {
+      "name": "sentiment-success-700",
+      "value": "#02703C"
+    },
+    {
+      "name": "sentiment-warning-200",
+      "value": "#FFF398"
+    },
+    {
+      "name": "sentiment-warning-50",
+      "value": "#FFFBDD"
+    },
+    {
+      "name": "sentiment-warning-500",
+      "value": "#FFE200"
+    },
+    {
+      "name": "sentiment-warning-700",
+      "value": "#FFC108"
+    },
+    {
+      "name": "sentiment-warning-900",
+      "value": "#664D00"
+    },
+    {
+      "name": "digi-progress-circle-border-color",
+      "value": "#d5d5d5"
+    },
+    {
+      "name": "digi-color-logotype-secondary-symbol-light-af18",
+      "value": "#1db920"
+    },
+    {
+      "name": "digi-color-logotype-primary-symbol-dark",
+      "value": "#1db920"
+    },
+    {
+      "name": "digi-color-logotype-secondary-symbol-dark",
+      "value": "#1db920"
+    },
+    {
+      "name": "digi-color-logotype-secondary-symbol-light",
+      "value": "#1db920"
+    },
+    {
+      "name": "digi-sentiment-error-200",
+      "value": "#fdeded"
+    },
+    {
+      "name": "digi-sentiment-error-400",
+      "value": "#eb0000"
+    },
+    {
+      "name": "digi-sentiment-error-500",
+      "value": "#da0000"
+    },
+    {
+      "name": "digi-sentiment-error-700",
+      "value": "#c7311a"
+    },
+    {
+      "name": "digi-sentiment-informative-200",
+      "value": "#e9e9ff"
+    },
+    {
+      "name": "digi-sentiment-informative-400",
+      "value": "#296df5"
+    },
+    {
+      "name": "digi-sentiment-informative-500",
+      "value": "#0a4dd1"
+    },
+    {
+      "name": "digi-sentiment-informative-700",
+      "value": "#0058a3"
+    },
+    {
+      "name": "digi-sentiment-success-200",
+      "value": "#e9f6ec"
+    },
+    {
+      "name": "digi-sentiment-success-500",
+      "value": "#008a20"
+    },
+    {
+      "name": "digi-sentiment-success-700",
+      "value": "#02703c"
+    },
+    {
+      "name": "digi-sentiment-warning-200",
+      "value": "#fff398"
+    },
+    {
+      "name": "digi-sentiment-warning-50",
+      "value": "#fffbdd"
+    },
+    {
+      "name": "digi-sentiment-warning-500",
+      "value": "#ffe200"
+    },
+    {
+      "name": "digi-sentiment-warning-700",
+      "value": "#ffc108"
+    },
+    {
+      "name": "digi-sentiment-warning-900",
+      "value": "#664d00"
+    },
+    {
+      "name": "log-text",
+      "value": "#fff"
+    },
+    {
+      "name": "info-bg",
+      "value": "#058470"
+    },
+    {
+      "name": "info-text",
+      "value": "#fff"
+    },
+    {
+      "name": "warn-text",
+      "value": "#333"
+    },
+    {
+      "name": "error-bg",
+      "value": "#e21c50"
+    },
+    {
+      "name": "error-text",
+      "value": "#fff"
+    },
+    {
+      "name": "text",
+      "value": "#fff"
+    },
+    {
+      "name": "digi-color-icon-primary",
+      "value": "#333"
+    },
+    {
+      "name": "digi-code-syntax-background",
+      "value": "#fefefe"
+    },
+    {
+      "name": "digi-code-syntax-text",
+      "value": "#545454"
+    },
+    {
+      "name": "digi-color-background-inverted-3",
+      "value": "#272727"
+    },
+    {
+      "name": "color-amber-200",
+      "value": "#FFF398"
+    },
+    {
+      "name": "color-amber-900",
+      "value": "#664D00"
+    },
+    {
+      "name": "color-forest-700",
+      "value": "#02703C"
+    },
+    {
+      "name": "color-jade-100",
+      "value": "#BDDFDA"
+    },
+    {
+      "name": "color-jade-500",
+      "value": "#058470"
+    },
+    {
+      "name": "color-leaf-100",
+      "value": "#F1F7E5"
+    },
+    {
+      "name": "color-leaf-600",
+      "value": "#779B32"
+    },
+    {
+      "name": "color-rose-100",
+      "value": "#F4CADA"
+    },
+    {
+      "name": "color-rose-500",
+      "value": "#D43372"
+    },
+    {
+      "name": "color-ruby-200",
+      "value": "#FDEDED"
+    },
+    {
+      "name": "color-stratos-100",
+      "value": "#DDDDE9"
+    },
+    {
+      "name": "color-water-200",
+      "value": "#F1F8FE"
+    },
+    {
+      "name": "granskott-150",
+      "value": "#F2FAF2"
+    },
+    {
+      "name": "granskott-350",
+      "value": "#ACE4AD"
+    },
+    {
+      "name": "granskott-800",
+      "value": "#016503"
+    },
+    {
+      "name": "natthimmel-350-bla",
+      "value": "#ABDEF7"
+    },
+    {
+      "name": "norrsken-400",
+      "value": "#AAF5AB"
+    },
+    {
+      "name": "sapphire-500",
+      "value": "#1616B2"
+    },
+    {
+      "name": "grayscale-300",
+      "value": "#E4E4E4"
+    },
+    {
+      "name": "grayscale-600",
+      "value": "#ACACAC"
+    },
+    {
+      "name": "grayscale-1000",
+      "value": "#000000"
+    },
+    {
+      "name": "digi-color-jade-100",
+      "value": "#bddfda"
+    },
+    {
+      "name": "digi-color-jade-500",
+      "value": "#058470"
+    },
+    {
+      "name": "digi-color-leaf-100",
+      "value": "#f1f7e5"
+    },
+    {
+      "name": "digi-color-leaf-600",
+      "value": "#779b32"
+    },
+    {
+      "name": "digi-color-rose-200",
+      "value": "#e997b7"
+    },
+    {
+      "name": "digi-color-rose-600",
+      "value": "#bd2e65"
+    },
+    {
+      "name": "digi-color-stratos-100",
+      "value": "#dddde9"
+    },
+    {
+      "name": "digi-color-water-200",
+      "value": "#f1f8fe"
+    },
+    {
+      "name": "digi-amethyst-500",
+      "value": "#822998"
+    },
+    {
+      "name": "digi-granskott-300",
+      "value": "#cbecc9"
+    },
+    {
+      "name": "digi-granskott-700",
+      "value": "#02a704"
+    },
+    {
+      "name": "digi-granskott-925",
+      "value": "#081b14"
+    },
+    {
+      "name": "digi-natthimmel-350",
+      "value": "#abdef7"
+    },
+    {
+      "name": "digi-natthimmel-700",
+      "value": "#043982"
+    },
+    {
+      "name": "digi-natthimmel-950-hypotes",
+      "value": "#060817"
+    },
+    {
+      "name": "digi-rallarros-500",
+      "value": "#ce1cbd"
+    },
+    {
+      "name": "digi-grayscale-1000",
+      "value": "#000000"
+    },
+    {
+      "name": "digi-grayscale-50",
+      "value": "#fbfbfb"
+    },
+    {
+      "name": "digi-grayscale-700",
+      "value": "#757575"
+    },
+    {
+      "name": "digi-grayscale-825",
+      "value": "#535353"
+    },
+    {
+      "name": "digi-grayscale-925",
+      "value": "#2e2e2e"
+    },
+    {
+      "name": "log-bg",
+      "value": "#1616b2"
+    },
+    {
+      "name": "digi-icon-color",
+      "value": "rgb(245, 245, 245)"
+    },
+    {
+      "name": "primary",
+      "value": "#1db920"
+    }
+  ],
+  "type": [
+    {
+      "name": "global-typography-font-size-largest-6",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "digi-global-typography-font-size-largest-6",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "global-typography-font-size-largest-5",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "digi-global-typography-font-size-largest-5",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "global-typography-font-size-largest-4",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "digi-global-typography-font-size-largest-4",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "global-typography-font-size-largest-3",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "digi-global-typography-font-size-largest-3",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "global-typography-font-size-largest-2",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "digi-global-typography-font-size-largest-2",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "global-typography-font-size-largest",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "digi-global-typography-font-size-largest",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "global-typography-font-size-larger",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "digi-global-typography-font-size-larger",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "global-typography-font-size-large",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "global-typography-font-size-interaction-large",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "digi-global-typography-font-size-large",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "digi-global-typography-font-size-interaction-large",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "global-typography-font-size-base",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "global-typography-font-size-interaction-medium",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "global-typography-font-family-default",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "global-typography-font-family-mono",
+      "fontFamily": "Consolas, Monaco, \"Andale Mono\", \"Ubuntu Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "digi-global-typography-font-size-base",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "digi-global-typography-font-size-interaction-medium",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "digi-global-typography-font-family-default",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "digi-global-typography-font-family-mono",
+      "fontFamily": "Consolas, Monaco, \"Andale Mono\", \"Ubuntu Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "digi-header-avatar-font-family",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "digi-link-internal-font-family",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "digi-link-font-family",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "title",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "global-typography-font-size-small",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "global-typography-font-size-interaction-small",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "digi-global-typography-font-size-small",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "digi-global-typography-font-size-interaction-small",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "digi-button-font-size-medium",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "digi-quote-author-title",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "global-typography-font-size-smaller",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "digi-global-typography-font-size-smaller",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#F1F7E5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1db920",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1db920",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F1F7E5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#F1F7E5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fefefe",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fefefe",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F1F7E5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Arbetsformedlingen Design System** is a light-first design system anchored on `#fefefe` canvas surfaces with `#0b0b0c` primary ink (19.5:1 contrast) and `#1db920` brand accent.\n\nTypography centers cleanly on `Open Sans` (40px display down to 16px body), unified by `8px` base corner radius and stepped `#fefefe` -> `#F1F7E5` surface layering.\n\nMaintained by **Arbetsformedlingen**. Source: published token package (https://designsystem.arbetsformedlingen.se/), package `@designsystem-se/af`. Inventory: **91** colors, **40** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#F1F7E5` cards; separate sibling sections using `#d5d5d5` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fefefe` -> `#F1F7E5`) and `1px solid #d5d5d5` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1db920` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fefefe` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#1db920` with `#0b0b0c` text (7.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F1F7E5` surface shifts and `#d5d5d5` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

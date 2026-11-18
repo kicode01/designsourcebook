@@ -1,0 +1,202 @@
+{
+  "canvas": "#fff",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fc6408",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "v-color-foreground-primary",
+      "value": "#000"
+    },
+    {
+      "name": "v-color-foreground-secondary",
+      "value": "#5e5e5e"
+    },
+    {
+      "name": "v-color-foreground-tertiary",
+      "value": "#787878"
+    },
+    {
+      "name": "v-color-foreground-inverted",
+      "value": "#fff"
+    },
+    {
+      "name": "v-color-foreground-accent-blue",
+      "value": "#0b2ded"
+    },
+    {
+      "name": "v-color-foreground-feedback-green",
+      "value": "#04771d"
+    },
+    {
+      "name": "v-color-foreground-feedback-red",
+      "value": "#cd2314"
+    },
+    {
+      "name": "v-color-foreground-feedback-orange",
+      "value": "#ce6700"
+    },
+    {
+      "name": "v-color-surface-neutral",
+      "value": "#000"
+    },
+    {
+      "name": "v-color-surface-gray",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "v-color-surface-accent-blue",
+      "value": "#0b2ded"
+    },
+    {
+      "name": "v-color-surface-accent-safety",
+      "value": "#fc6408"
+    },
+    {
+      "name": "v-color-surface-feedback-green",
+      "value": "#048220"
+    },
+    {
+      "name": "v-color-surface-feedback-orange",
+      "value": "#ce6700"
+    },
+    {
+      "name": "v-color-surface-feedback-red",
+      "value": "#e52715"
+    },
+    {
+      "name": "v-color-background-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "v-color-background-secondary",
+      "value": "#fafafa"
+    },
+    {
+      "name": "v-color-background-feedback-green",
+      "value": "#d7f9df"
+    },
+    {
+      "name": "v-color-background-feedback-red",
+      "value": "#fce5e3"
+    },
+    {
+      "name": "v-color-background-feedback-orange",
+      "value": "#ffe8d1"
+    },
+    {
+      "name": "v-color-background-feedback-gray",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "v-color-always-white",
+      "value": "#fff"
+    },
+    {
+      "name": "v-color-always-black",
+      "value": "#000"
+    },
+    {
+      "name": "tokens",
+      "value": "#787878"
+    },
+    {
+      "name": "primary",
+      "value": "#fc6408"
+    }
+  ],
+  "type": [
+    {
+      "name": "v-font-sans-family",
+      "fontFamily": "\"Volvo Centum\", \"Helvetica Neue\", Helvetica, \"Noto Sans\", \"Segoe UI\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "v-font-mono-family",
+      "fontFamily": "monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fc6408",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fc6408",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Volvo Cars Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fc6408` brand accent.\n\nTypography centers cleanly on `Volvo Centum` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#fafafa` surface layering.\n\nMaintained by **Volvo Cars**. Source: published token package, package `@volvo-cars/css`. Inventory: **25** colors, **2** typography steps, and **8** documented components (UNLICENSED license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fafafa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fc6408` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fc6408` with `#f7f7f8` text (2.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Volvo Centum` headings with `Volvo Centum` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fafafa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

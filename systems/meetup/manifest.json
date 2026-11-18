@@ -1,0 +1,42 @@
+{
+  "name": "meetup",
+  "displayName": "Swarm Design System",
+  "description": "Meetup Swarm Design System — tokens imported from swarm-constants.",
+  "style": "Meetup Swarm Design System — tokens imported from swarm-constants.",
+  "category": "Meetup",
+  "org": "Meetup",
+  "theme": "light",
+  "tags": [
+    "published",
+    "meetup",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from swarm-constants@2.2.122 (3 token files, 120 colours harvested, 80 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "swarm-constants",
+    "version": "2.2.122"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 81,
+    "typography": 11,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

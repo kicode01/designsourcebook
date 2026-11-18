@@ -1,0 +1,43 @@
+{
+  "name": "nike",
+  "displayName": "Nike",
+  "description": "Athletic retail. Monochrome UI, massive uppercase Futura, full-bleed photography",
+  "style": "Athletic retail. Monochrome UI, massive uppercase Futura, full-bleed photography",
+  "category": "E-commerce & Retail",
+  "org": "Nike",
+  "theme": "light",
+  "tags": [
+    "e-commerce",
+    "retail",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://www.nike.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (nike/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/nike"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 23,
+    "typography": 13,
+    "components": 31
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

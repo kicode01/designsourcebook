@@ -1,0 +1,959 @@
+{
+  "canvas": "#fff",
+  "surface": "#f9f9f9",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0285ff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-accent",
+      "value": "#0285ff"
+    },
+    {
+      "name": "codeblock-background-color",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-picker-add-background",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "color-picker-selection-color",
+      "value": "#fff"
+    },
+    {
+      "name": "codeblock-syntax-1",
+      "value": "#c0660d"
+    },
+    {
+      "name": "gray-500",
+      "value": "#5d5d5d"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "green-25",
+      "value": "#edfaf2"
+    },
+    {
+      "name": "green-50",
+      "value": "#d9f4e4"
+    },
+    {
+      "name": "green-75",
+      "value": "#b8ebcc"
+    },
+    {
+      "name": "green-100",
+      "value": "#8cdfad"
+    },
+    {
+      "name": "green-200",
+      "value": "#66d492"
+    },
+    {
+      "name": "green-300",
+      "value": "#40c977"
+    },
+    {
+      "name": "green-400",
+      "value": "#04b84c"
+    },
+    {
+      "name": "green-500",
+      "value": "#00a240"
+    },
+    {
+      "name": "green-600",
+      "value": "#008635"
+    },
+    {
+      "name": "green-700",
+      "value": "#00692a"
+    },
+    {
+      "name": "green-800",
+      "value": "#004f1f"
+    },
+    {
+      "name": "green-900",
+      "value": "#003716"
+    },
+    {
+      "name": "green-950",
+      "value": "#011c0b"
+    },
+    {
+      "name": "green-1000",
+      "value": "#001207"
+    },
+    {
+      "name": "red-25",
+      "value": "#fff0f0"
+    },
+    {
+      "name": "red-50",
+      "value": "#ffd9d9"
+    },
+    {
+      "name": "red-75",
+      "value": "#ffc6c5"
+    },
+    {
+      "name": "red-100",
+      "value": "#ffa4a2"
+    },
+    {
+      "name": "red-200",
+      "value": "#ff8583"
+    },
+    {
+      "name": "red-300",
+      "value": "#ff6764"
+    },
+    {
+      "name": "red-400",
+      "value": "#fa423e"
+    },
+    {
+      "name": "red-500",
+      "value": "#e02e2a"
+    },
+    {
+      "name": "red-600",
+      "value": "#ba2623"
+    },
+    {
+      "name": "red-700",
+      "value": "#911e1b"
+    },
+    {
+      "name": "red-800",
+      "value": "#6e1615"
+    },
+    {
+      "name": "red-900",
+      "value": "#4d100e"
+    },
+    {
+      "name": "red-950",
+      "value": "#280b0a"
+    },
+    {
+      "name": "red-1000",
+      "value": "#1f0909"
+    },
+    {
+      "name": "pink-25",
+      "value": "#fff4f9"
+    },
+    {
+      "name": "pink-50",
+      "value": "#ffe8f3"
+    },
+    {
+      "name": "pink-75",
+      "value": "#ffd4e8"
+    },
+    {
+      "name": "pink-100",
+      "value": "#ffbada"
+    },
+    {
+      "name": "pink-200",
+      "value": "#ffa3ce"
+    },
+    {
+      "name": "pink-300",
+      "value": "#ff8cc1"
+    },
+    {
+      "name": "pink-400",
+      "value": "#ff66ad"
+    },
+    {
+      "name": "pink-500",
+      "value": "#e04c91"
+    },
+    {
+      "name": "pink-600",
+      "value": "#ba437a"
+    },
+    {
+      "name": "pink-700",
+      "value": "#963c67"
+    },
+    {
+      "name": "pink-800",
+      "value": "#6e2c4a"
+    },
+    {
+      "name": "pink-900",
+      "value": "#4d1f34"
+    },
+    {
+      "name": "pink-950",
+      "value": "#29101c"
+    },
+    {
+      "name": "pink-1000",
+      "value": "#1a0a11"
+    },
+    {
+      "name": "orange-25",
+      "value": "#fff5f0"
+    },
+    {
+      "name": "orange-50",
+      "value": "#ffe7d9"
+    },
+    {
+      "name": "orange-75",
+      "value": "#ffcfb4"
+    },
+    {
+      "name": "orange-100",
+      "value": "#ffb790"
+    },
+    {
+      "name": "orange-200",
+      "value": "#ff9e6c"
+    },
+    {
+      "name": "orange-300",
+      "value": "#ff8549"
+    },
+    {
+      "name": "orange-400",
+      "value": "#fb6a22"
+    },
+    {
+      "name": "orange-500",
+      "value": "#e25507"
+    },
+    {
+      "name": "orange-600",
+      "value": "#b9480d"
+    },
+    {
+      "name": "orange-700",
+      "value": "#923b0f"
+    },
+    {
+      "name": "orange-800",
+      "value": "#6d2e0f"
+    },
+    {
+      "name": "orange-900",
+      "value": "#4a2206"
+    },
+    {
+      "name": "orange-950",
+      "value": "#281105"
+    },
+    {
+      "name": "orange-1000",
+      "value": "#211107"
+    },
+    {
+      "name": "yellow-25",
+      "value": "#fffbed"
+    },
+    {
+      "name": "yellow-50",
+      "value": "#fff6d9"
+    },
+    {
+      "name": "yellow-75",
+      "value": "#ffeeb8"
+    },
+    {
+      "name": "yellow-100",
+      "value": "#ffe48c"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#ffdb66"
+    },
+    {
+      "name": "yellow-300",
+      "value": "#ffd240"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#ffc300"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#e0ac00"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#ba8e00"
+    },
+    {
+      "name": "yellow-700",
+      "value": "#916f00"
+    },
+    {
+      "name": "yellow-800",
+      "value": "#6e5400"
+    },
+    {
+      "name": "yellow-900",
+      "value": "#4d3b00"
+    },
+    {
+      "name": "yellow-950",
+      "value": "#261d00"
+    },
+    {
+      "name": "yellow-1000",
+      "value": "#1a1400"
+    },
+    {
+      "name": "purple-25",
+      "value": "#f9f5fe"
+    },
+    {
+      "name": "purple-50",
+      "value": "#efe5fe"
+    },
+    {
+      "name": "purple-75",
+      "value": "#e0cefd"
+    },
+    {
+      "name": "purple-100",
+      "value": "#ceb0fb"
+    },
+    {
+      "name": "purple-200",
+      "value": "#be95fa"
+    },
+    {
+      "name": "purple-300",
+      "value": "#ad7bf9"
+    },
+    {
+      "name": "purple-400",
+      "value": "#924ff7"
+    },
+    {
+      "name": "purple-500",
+      "value": "#8046d9"
+    },
+    {
+      "name": "purple-600",
+      "value": "#6b3ab4"
+    },
+    {
+      "name": "purple-700",
+      "value": "#532d8d"
+    },
+    {
+      "name": "purple-800",
+      "value": "#3f226a"
+    },
+    {
+      "name": "purple-900",
+      "value": "#2c184a"
+    },
+    {
+      "name": "primary",
+      "value": "#0285ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "toolbar-large-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "34px",
+      "px": 34
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "1.75em",
+      "px": 28,
+      "lineHeight": 1.222
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": 1.222
+    },
+    {
+      "name": "toolbar-medium-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "page-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "floating-input-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "toolbar-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "toolbar-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "tip-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "sidebar-menu-item-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "title",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": "22px"
+    },
+    {
+      "name": "select-control-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-font-size-md",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "field-group-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "control-font-size-md",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "control-font-size-lg",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-font-size-lg",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-font-size-xl",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-font-size-2xl",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-font-size-3xl",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "button-glass-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "menu-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "sidebar-menu-sub-item-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "card-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "accordion-trigger-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "accordion-content-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "switch-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "color-picker-hex-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "color-picker-field-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "toggle-group-round-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "checkbox-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "radio-group-item-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "slider-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "slider-value-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "field-row-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "input-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "\"Geist Mono Variable\", \"Geist Mono\", ui-monospace, Menlo, Consolas, \"Liberation Mono\", \"DejaVu Sans Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-serif",
+      "fontFamily": "ui-serif, Georgia, \"Times New Roman\", serif",
+      "px": 16
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "1em",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "1em",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "1em",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "field-row-above-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "toolbar-title-compact-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "toolbar-large-subtitle-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "tip-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "breadcrumb-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "button-font-size-3xs",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "button-font-size-2xs",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "button-font-size-xs",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "button-font-size-sm",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "menu-header-title-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "alert-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "card-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "card-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "table-cell-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "switch-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "stepper-value-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "checkbox-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "radio-group-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "empty-message-action-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "mobile-field-error-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "field-row-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "field-row-action-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "field-group-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "segmented-control-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "sidebar-group-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "swipe-actions-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "subtitle",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": "18px"
+    },
+    {
+      "name": "menu-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "menu-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "menu-header-description-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "color-picker-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "field-group-footer-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "field-error-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "toolbar-subtitle-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "tab-bar-badge-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "index-bar-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "kbd-font-size",
+      "fontFamily": "\"Geist Mono Variable\", \"Geist Mono\", ui-monospace, Menlo, Consolas, \"Liberation Mono\", \"DejaVu Sans Mono\", \"Courier New\", monospace",
+      "fontSize": "0.6875rem",
+      "px": 11
+    },
+    {
+      "name": "tab-bar-label-font-size",
+      "fontFamily": "\"Inter Variable\", Inter, ui-sans-serif, system-ui, \"Segoe UI\", \"Noto Sans\", Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0285ff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0285ff",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Plex UI** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0285ff` brand accent.\n\nTypography centers cleanly on `Inter Variable` (34px display down to 17px body), unified by `8px` base corner radius and stepped `#fff` -> `#f9f9f9` surface layering.\n\nSource: published token package (https://plexui.com), package `@plexui/styles`. Inventory: **91** colors, **83** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f9f9f9`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0285ff` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0285ff` with `#f7f7f8` text (3.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter Variable` headings with `Inter Variable` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f9f9f9` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

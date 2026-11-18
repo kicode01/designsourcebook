@@ -1,0 +1,42 @@
+{
+  "name": "vuetify",
+  "displayName": "Vuetify",
+  "description": "Vuetify — tokens imported from vuetify.",
+  "style": "Vuetify — tokens imported from vuetify.",
+  "category": "Vuetify",
+  "org": "Vuetify",
+  "theme": "light",
+  "tags": [
+    "published",
+    "vuetify",
+    "light"
+  ],
+  "homepage": "https://vuetifyjs.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from vuetify@4.3.4 (6 token files, 342 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "vuetify",
+    "version": "4.3.4"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 117,
+    "components": 31
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

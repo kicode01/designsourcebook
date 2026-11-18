@@ -1,0 +1,41 @@
+{
+  "name": "datadog",
+  "displayName": "Druids",
+  "description": "Datadog Druids — read from the rendered page in a browser, not from published tokens.",
+  "style": "Datadog Druids — read from the rendered page in a browser, not from published tokens.",
+  "category": "Datadog",
+  "org": "Datadog",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "datadog",
+    "light"
+  ],
+  "homepage": "https://druids.datadoghq.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://druids.datadoghq.com/ in headless Chromium on 2026-11-18 (222 custom properties, 77 sampled elements, 5 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: DRUIDS by Datadog.",
+  "source": {
+    "url": "https://druids.datadoghq.com/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 11,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

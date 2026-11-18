@@ -1,0 +1,246 @@
+{
+  "canvas": "#fff",
+  "surface": "#eee",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff80cc",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "near-black",
+      "value": "#111"
+    },
+    {
+      "name": "dark-gray",
+      "value": "#333"
+    },
+    {
+      "name": "mid-gray",
+      "value": "#555"
+    },
+    {
+      "name": "gray",
+      "value": "#777"
+    },
+    {
+      "name": "silver",
+      "value": "#999"
+    },
+    {
+      "name": "light-silver",
+      "value": "#aaa"
+    },
+    {
+      "name": "moon-gray",
+      "value": "#ccc"
+    },
+    {
+      "name": "light-gray",
+      "value": "#eee"
+    },
+    {
+      "name": "near-white",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "dark-red",
+      "value": "#e7040f"
+    },
+    {
+      "name": "red",
+      "value": "#ff4136"
+    },
+    {
+      "name": "light-red",
+      "value": "#ff725c"
+    },
+    {
+      "name": "orange",
+      "value": "#ff6300"
+    },
+    {
+      "name": "gold",
+      "value": "#ffb700"
+    },
+    {
+      "name": "yellow",
+      "value": "#ffd700"
+    },
+    {
+      "name": "light-yellow",
+      "value": "#fbf1a9"
+    },
+    {
+      "name": "purple",
+      "value": "#5e2ca5"
+    },
+    {
+      "name": "light-purple",
+      "value": "#a463f2"
+    },
+    {
+      "name": "dark-pink",
+      "value": "#d5008f"
+    },
+    {
+      "name": "hot-pink",
+      "value": "#ff41b4"
+    },
+    {
+      "name": "pink",
+      "value": "#ff80cc"
+    },
+    {
+      "name": "light-pink",
+      "value": "#ffa3d7"
+    },
+    {
+      "name": "dark-green",
+      "value": "#137752"
+    },
+    {
+      "name": "green",
+      "value": "#19a974"
+    },
+    {
+      "name": "light-green",
+      "value": "#9eebcf"
+    },
+    {
+      "name": "navy",
+      "value": "#001b44"
+    },
+    {
+      "name": "dark-blue",
+      "value": "#00449e"
+    },
+    {
+      "name": "blue",
+      "value": "#357edd"
+    },
+    {
+      "name": "light-blue",
+      "value": "#96ccff"
+    },
+    {
+      "name": "lightest-blue",
+      "value": "#cdecff"
+    },
+    {
+      "name": "washed-blue",
+      "value": "#f6fffe"
+    },
+    {
+      "name": "washed-green",
+      "value": "#e8fdf5"
+    },
+    {
+      "name": "washed-yellow",
+      "value": "#fffceb"
+    },
+    {
+      "name": "washed-red",
+      "value": "#ffdfdf"
+    },
+    {
+      "name": "primary",
+      "value": "#ff80cc"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "system-ui",
+      "fontSize": "2em",
+      "px": 32
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff80cc",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff80cc",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Tachyons** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff80cc` brand accent.\n\nTypography centers cleanly on `System UI` (32px display down to 32px body), unified by `8px` base corner radius and stepped `#fff` -> `#eee` surface layering.\n\nSource: published token package, package `tachyons`. Inventory: **37** colors, **1** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#eee` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#eee`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff80cc` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff80cc` with `#0b0b0c` text (8.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#eee` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

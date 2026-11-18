@@ -1,0 +1,42 @@
+{
+  "name": "thumbtack",
+  "displayName": "Thumbprint",
+  "description": "Thumbtack Thumbprint — tokens imported from @thumbtack/thumbprint-tokens.",
+  "style": "Thumbtack Thumbprint — tokens imported from @thumbtack/thumbprint-tokens.",
+  "category": "Thumbtack",
+  "org": "Thumbtack",
+  "theme": "light",
+  "tags": [
+    "published",
+    "thumbtack",
+    "light"
+  ],
+  "homepage": "https://thumbprint.design/tokens",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @thumbtack/thumbprint-tokens@13.0.1 (2 token files, 79 colours harvested, 75 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@thumbtack/thumbprint-tokens",
+    "version": "13.0.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 76,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "simplecss",
+  "displayName": "Simple.css",
+  "description": "Simple.css — tokens imported from simpledotcss.",
+  "style": "Simple.css — tokens imported from simpledotcss.",
+  "category": "Simple.css",
+  "org": "Simple.css",
+  "theme": "light",
+  "tags": [
+    "published",
+    "simple-css",
+    "light"
+  ],
+  "homepage": "https://github.com/kevquirk/simple.css#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from simpledotcss@2.3.7 (2 token files, 12 colours harvested, 12 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "simpledotcss",
+    "version": "2.3.7"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 13,
+    "typography": 8,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

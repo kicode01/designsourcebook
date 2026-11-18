@@ -1,0 +1,42 @@
+{
+  "name": "db-ux",
+  "displayName": "DB UI",
+  "description": "Deutsche Bahn DB UI — tokens imported from @db-ui/core.",
+  "style": "Deutsche Bahn DB UI — tokens imported from @db-ui/core.",
+  "category": "Deutsche Bahn",
+  "org": "Deutsche Bahn",
+  "theme": "light",
+  "tags": [
+    "published",
+    "deutsche-bahn",
+    "light"
+  ],
+  "homepage": "https://db-ui.github.io/core/",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @db-ui/core@3.3.7 (17 token files, 172 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@db-ui/core",
+    "version": "3.3.7"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 9,
+    "components": 17
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "benevity",
+  "displayName": "Skyline",
+  "description": "Benevity Skyline — read from the rendered page in a browser, not from published tokens.",
+  "style": "Benevity Skyline — read from the rendered page in a browser, not from published tokens.",
+  "category": "Benevity",
+  "org": "Benevity",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "benevity",
+    "light"
+  ],
+  "homepage": "https://skyline.benevity.org/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://skyline.benevity.org/ in headless Chromium on 2026-11-18 (30 custom properties, 118 sampled elements, 1 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Skyline, Benevity's Design System..",
+  "source": {
+    "url": "https://skyline.benevity.org/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 16,
+    "typography": 50,
+    "components": 50
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "coop",
+  "displayName": "Co-op Experience Library",
+  "description": "Co-op Experience Library — tokens imported from @coopdigital/foundations-vars.",
+  "style": "Co-op Experience Library — tokens imported from @coopdigital/foundations-vars.",
+  "category": "Co-op",
+  "org": "Co-op",
+  "theme": "light",
+  "tags": [
+    "published",
+    "co-op",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @coopdigital/foundations-vars@3.8.2 (2 token files, 160 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@coopdigital/foundations-vars",
+    "version": "3.8.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

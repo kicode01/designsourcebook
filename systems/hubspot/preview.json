@@ -1,0 +1,602 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f8f5ee",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fcc6b1",
+  "border": "#f8f5ee",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "light-theme-accent-fill-01",
+      "value": "#cfcccb"
+    },
+    {
+      "name": "light-theme-accent-fill-03",
+      "value": "#fcc5be"
+    },
+    {
+      "name": "light-theme-accent-fill-05",
+      "value": "#ece6d9"
+    },
+    {
+      "name": "light-theme-accent-fill-07",
+      "value": "#b2e9eb"
+    },
+    {
+      "name": "light-theme-accent-decoration-01",
+      "value": "#9b9897"
+    },
+    {
+      "name": "light-theme-accent-decoration-03",
+      "value": "#ffa499"
+    },
+    {
+      "name": "light-theme-accent-decoration-05",
+      "value": "#ccc0a3"
+    },
+    {
+      "name": "light-theme-accent-decoration-07",
+      "value": "#97dadc"
+    },
+    {
+      "name": "light-theme-badge-brand-fill-01",
+      "value": "#fcc6b1"
+    },
+    {
+      "name": "light-theme-background-02",
+      "value": "#f8f5ee"
+    },
+    {
+      "name": "light-theme-background-accent-01",
+      "value": "#b9cdbe"
+    },
+    {
+      "name": "light-theme-background-accent-03",
+      "value": "#fcc3dc"
+    },
+    {
+      "name": "light-theme-beta-background-01",
+      "value": "#e5e1fa"
+    },
+    {
+      "name": "light-theme-border-brand-01",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-button-primary-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-button-primary-fill-idle",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-button-primary-fill-pressed",
+      "value": "#9f2800"
+    },
+    {
+      "name": "light-theme-button-secondary-border-hover",
+      "value": "#c93700"
+    },
+    {
+      "name": "light-theme-button-secondary-fill-hover",
+      "value": "#fcece6"
+    },
+    {
+      "name": "light-theme-button-secondary-text-color-hover",
+      "value": "#c93700"
+    },
+    {
+      "name": "light-theme-button-tertiary-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-checkmark-list-icon-brand-fill",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-error-background-01",
+      "value": "#fcc5be"
+    },
+    {
+      "name": "light-theme-free-background-01",
+      "value": "#ccf4f5"
+    },
+    {
+      "name": "light-theme-hover-link-01",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "light-theme-link-01",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "light-theme-loading-primary-fill-active",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-neutral-01",
+      "value": "#9b9897"
+    },
+    {
+      "name": "light-theme-pressed-brand-01",
+      "value": "#9f2800"
+    },
+    {
+      "name": "light-theme-success-01",
+      "value": "#00823a"
+    },
+    {
+      "name": "light-theme-text-01",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "light-theme-text-link-underline-01",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-warning-01",
+      "value": "#eeb117"
+    },
+    {
+      "name": "dark-theme-accent-fill-01",
+      "value": "#000000"
+    },
+    {
+      "name": "dark-theme-accent-fill-03",
+      "value": "#ac0020"
+    },
+    {
+      "name": "dark-theme-accent-fill-05",
+      "value": "#64593e"
+    },
+    {
+      "name": "dark-theme-accent-fill-07",
+      "value": "#1e5b5f"
+    },
+    {
+      "name": "dark-theme-accent-decoration-01",
+      "value": "#1c1c1c"
+    },
+    {
+      "name": "dark-theme-accent-decoration-03",
+      "value": "#d9002b"
+    },
+    {
+      "name": "dark-theme-accent-decoration-05",
+      "value": "#7d7050"
+    },
+    {
+      "name": "dark-theme-accent-decoration-07",
+      "value": "#2f7579"
+    },
+    {
+      "name": "dark-theme-badge-brand-fill-01",
+      "value": "#c93700"
+    },
+    {
+      "name": "dark-theme-background-02",
+      "value": "#093436"
+    },
+    {
+      "name": "dark-theme-background-accent-01",
+      "value": "#042729"
+    },
+    {
+      "name": "dark-theme-background-accent-03",
+      "value": "#25155e"
+    },
+    {
+      "name": "dark-theme-beta-background-01",
+      "value": "#6431da"
+    },
+    {
+      "name": "dark-theme-border-brand-01",
+      "value": "#ff4800"
+    },
+    {
+      "name": "dark-theme-button-primary-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dark-theme-button-primary-fill-idle",
+      "value": "#ff4800"
+    },
+    {
+      "name": "dark-theme-button-primary-fill-pressed",
+      "value": "#9f2800"
+    },
+    {
+      "name": "dark-theme-button-secondary-border-hover",
+      "value": "#f8f5ee"
+    },
+    {
+      "name": "dark-theme-button-secondary-text-color-pressed",
+      "value": "#f8f5ee"
+    },
+    {
+      "name": "dark-theme-button-tertiary-text-color-hover",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "dark-theme-error-01",
+      "value": "#ff7b70"
+    },
+    {
+      "name": "dark-theme-focus-01",
+      "value": "#7aa485"
+    },
+    {
+      "name": "dark-theme-hover-brand-01",
+      "value": "#ff7d4c"
+    },
+    {
+      "name": "dark-theme-hubspot-brand-01",
+      "value": "#ff4800"
+    },
+    {
+      "name": "dark-theme-link-02",
+      "value": "#eef4f0"
+    },
+    {
+      "name": "dark-theme-loading-primary-fill-inactive",
+      "value": "#fcc6b1"
+    },
+    {
+      "name": "dark-theme-neutral-01",
+      "value": "#4d4c4c"
+    },
+    {
+      "name": "dark-theme-pressed-brand-01",
+      "value": "#ffa581"
+    },
+    {
+      "name": "dark-theme-success-01",
+      "value": "#3cb769"
+    },
+    {
+      "name": "dark-theme-text-01",
+      "value": "#f8f5ee"
+    },
+    {
+      "name": "dark-theme-text-link-underline-01",
+      "value": "#ff4800"
+    },
+    {
+      "name": "dark-theme-warning-01",
+      "value": "#d39913"
+    },
+    {
+      "name": "a11y-contrast-toggle-border-color",
+      "value": "#2e475d"
+    },
+    {
+      "name": "cl-button-background",
+      "value": "#180bb1"
+    },
+    {
+      "name": "light-theme-beta-01",
+      "value": "#7d53e9"
+    },
+    {
+      "name": "light-theme-button-tertiary-fill-idle",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "light-theme-container-01",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-container-inverse-01",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "light-theme-free-01",
+      "value": "#2f7579"
+    },
+    {
+      "name": "light-theme-hover-03",
+      "value": "#cfcccb"
+    },
+    {
+      "name": "light-theme-icon-01",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "light-theme-icon-02",
+      "value": "#292929"
+    },
+    {
+      "name": "light-theme-icon-on-color-01",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-number-fill-active",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-number-fill-inactive",
+      "value": "#ffdbc1"
+    },
+    {
+      "name": "light-theme-number-fill-statistic",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-play-button-fill-idle",
+      "value": "#ff4800"
+    },
+    {
+      "name": "light-theme-play-button-fill-hover",
+      "value": "#c93700"
+    },
+    {
+      "name": "light-theme-play-button-fill-pressed",
+      "value": "#ffa766"
+    },
+    {
+      "name": "light-theme-social-button-fill-idle",
+      "value": "#292929"
+    },
+    {
+      "name": "light-theme-social-button-icon-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-pressed-03",
+      "value": "#9b9897"
+    },
+    {
+      "name": "dark-theme-beta-01",
+      "value": "#9778ec"
+    },
+    {
+      "name": "dark-theme-button-tertiary-fill-idle",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dark-theme-container-01",
+      "value": "#061c1d"
+    },
+    {
+      "name": "dark-theme-container-inverse-01",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dark-theme-free-01",
+      "value": "#459195"
+    },
+    {
+      "name": "primary",
+      "value": "#fcc6b1"
+    }
+  ],
+  "type": [
+    {
+      "name": "cl-font-size-display-01",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "7rem",
+      "px": 112
+    },
+    {
+      "name": "cl-font-size-display-02",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "cl-font-size-display-01-small",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "cl-font-size-display-02-small",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "cl-font-size-h1",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "cl-font-size-h1-small",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "cl-font-size-h2",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "cl-font-size-h2-small",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "cl-font-size-display-03",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "cl-font-size-display-03-small",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "cl-font-size-h3",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "cl-font-size-h4",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "cl-font-size-large",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "cl-font-size-blockquote",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "cl-font-size-h5",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "cl-font-size-medium",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "cl-font-size-h6",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "cl-font-family",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "cl-font-family-display",
+      "fontFamily": "\"HubSpot Serif\", serif",
+      "px": 16
+    },
+    {
+      "name": "cl-font-family-heading",
+      "fontFamily": "\"Zen Kaku Gothic New\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "cl-font-size-small",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "cl-font-size-micro",
+      "fontFamily": "\"HubSpot Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-overlay",
+      "kind": "nav",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f8f5ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fcc6b1",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fcc6b1",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f8f5ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f8f5ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f8f5ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Canvas Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fcc6b1` brand accent.\n\nDisplay headlines pair `HubSpot Serif` with `HubSpot Sans` body copy (112px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f8f5ee` surface layering.\n\nMaintained by **Hubspot**. Source: live stylesheet extraction (https://canvas.hubspot.com/). Inventory: **91** colors, **24** typography steps, and **9** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f8f5ee` cards; separate sibling sections using `#f8f5ee` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f8f5ee`) and `1px solid #f8f5ee` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fcc6b1` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fcc6b1` with `#0b0b0c` text (13.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `HubSpot Serif` headings with `HubSpot Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f8f5ee` surface shifts and `#f8f5ee` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

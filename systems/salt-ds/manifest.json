@@ -1,0 +1,42 @@
+{
+  "name": "salt-ds",
+  "displayName": "Salt Design System",
+  "description": "J.P. Morgan Salt Design System — tokens imported from @salt-ds/theme.",
+  "style": "J.P. Morgan Salt Design System — tokens imported from @salt-ds/theme.",
+  "category": "J.P. Morgan",
+  "org": "J.P. Morgan",
+  "theme": "light",
+  "tags": [
+    "published",
+    "j-p-morgan",
+    "light"
+  ],
+  "homepage": "",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @salt-ds/theme@1.48.0 (3 token files, 591 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@salt-ds/theme",
+    "version": "1.48.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 48,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

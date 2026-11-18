@@ -1,0 +1,187 @@
+{
+  "canvas": "#fff",
+  "surface": "#f8f8f2",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff9580",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "entities",
+      "value": "#21222c"
+    },
+    {
+      "name": "black",
+      "value": "#21222c"
+    },
+    {
+      "name": "black-secondary",
+      "value": "#414558"
+    },
+    {
+      "name": "black-ternary",
+      "value": "#a7abbe"
+    },
+    {
+      "name": "grey",
+      "value": "#414558"
+    },
+    {
+      "name": "grey-secondary",
+      "value": "#626784"
+    },
+    {
+      "name": "grey-ternary",
+      "value": "#b6b9c9"
+    },
+    {
+      "name": "white",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "white-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "cyan",
+      "value": "#80ffea"
+    },
+    {
+      "name": "cyan-secondary",
+      "value": "#ccfff6"
+    },
+    {
+      "name": "green",
+      "value": "#8aff80"
+    },
+    {
+      "name": "green-secondary",
+      "value": "#d0ffcc"
+    },
+    {
+      "name": "orange",
+      "value": "#ffca80"
+    },
+    {
+      "name": "orange-secondary",
+      "value": "#ffeacc"
+    },
+    {
+      "name": "pink",
+      "value": "#ff80bf"
+    },
+    {
+      "name": "pink-secondary",
+      "value": "#ffcce6"
+    },
+    {
+      "name": "purple",
+      "value": "#9580ff"
+    },
+    {
+      "name": "purple-secondary",
+      "value": "#d4ccff"
+    },
+    {
+      "name": "red",
+      "value": "#ff9580"
+    },
+    {
+      "name": "red-secondary",
+      "value": "#ffd4cc"
+    },
+    {
+      "name": "yellow",
+      "value": "#ffff80"
+    },
+    {
+      "name": "yellow-secondary",
+      "value": "#ffc"
+    },
+    {
+      "name": "disabled",
+      "value": "#6c7393"
+    },
+    {
+      "name": "primary",
+      "value": "#ff9580"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select",
+      "kind": "select",
+      "textColor": "#f8f8f2",
+      "rounded": "0.5rem",
+      "border": ".3rem solid transparent"
+    },
+    {
+      "key": "tab-link",
+      "kind": "tabs",
+      "textColor": "#6c7393"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff9580",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff9580",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f8f8f2",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f8f8f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Dracula UI** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff9580` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `4px` base corner radius and stepped `#fff` -> `#f8f8f2` surface layering.\n\nMaintained by **Dracula Theme**. Source: published token package (https://ui.draculatheme.com), package `dracula-ui`. Inventory: **25** colors, **0** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `2px`, `12px 14px`, `10px 14px`, `6px 10px`, `8px`.\n- **Hierarchy**: Group controls cleanly within `#f8f8f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f8f8f2`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff9580` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff9580` with `#0b0b0c` text (9.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#f8f8f2` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

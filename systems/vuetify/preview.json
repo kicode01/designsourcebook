@@ -1,0 +1,1397 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#EEEEEE",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#FF8A80",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "colors-background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-surface",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-surface-bright",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-surface-light",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "colors-surface-variant",
+      "value": "#424242"
+    },
+    {
+      "name": "colors-on-surface-variant",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "colors-primary",
+      "value": "#1867C0"
+    },
+    {
+      "name": "colors-primary-darken-1",
+      "value": "#1F5592"
+    },
+    {
+      "name": "colors-secondary",
+      "value": "#48A9A6"
+    },
+    {
+      "name": "colors-secondary-darken-1",
+      "value": "#018786"
+    },
+    {
+      "name": "colors-error",
+      "value": "#B00020"
+    },
+    {
+      "name": "colors-info",
+      "value": "#2196F3"
+    },
+    {
+      "name": "colors-success",
+      "value": "#4CAF50"
+    },
+    {
+      "name": "colors-warning",
+      "value": "#FB8C00"
+    },
+    {
+      "name": "variables-border-color",
+      "value": "#000000"
+    },
+    {
+      "name": "background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "surface",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "surface-bright",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "surface-light",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "surface-variant",
+      "value": "#424242"
+    },
+    {
+      "name": "on-surface-variant",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "primary",
+      "value": "#FF8A80"
+    },
+    {
+      "name": "primary-darken-1",
+      "value": "#1F5592"
+    },
+    {
+      "name": "secondary",
+      "value": "#48A9A6"
+    },
+    {
+      "name": "secondary-darken-1",
+      "value": "#018786"
+    },
+    {
+      "name": "error",
+      "value": "#B00020"
+    },
+    {
+      "name": "info",
+      "value": "#2196F3"
+    },
+    {
+      "name": "success",
+      "value": "#4CAF50"
+    },
+    {
+      "name": "warning",
+      "value": "#FB8C00"
+    },
+    {
+      "name": "border-color",
+      "value": "#000000"
+    },
+    {
+      "name": "accent-1",
+      "value": "#FF8A80"
+    },
+    {
+      "name": "accent-2",
+      "value": "#FF5252"
+    },
+    {
+      "name": "accent-3",
+      "value": "#FF1744"
+    },
+    {
+      "name": "accent-4",
+      "value": "#D50000"
+    },
+    {
+      "name": "accent1",
+      "value": "#ff8a80"
+    },
+    {
+      "name": "accent2",
+      "value": "#ff5252"
+    },
+    {
+      "name": "accent3",
+      "value": "#ff1744"
+    },
+    {
+      "name": "accent4",
+      "value": "#d50000"
+    },
+    {
+      "name": "overlay-scrim-background",
+      "value": "#000"
+    },
+    {
+      "name": "colors-primary-lighten-1",
+      "value": "#C5CAE9"
+    },
+    {
+      "name": "colors-secondary-lighten-1",
+      "value": "#FF80AB"
+    },
+    {
+      "name": "colors-accent",
+      "value": "#009688"
+    },
+    {
+      "name": "primary-lighten-1",
+      "value": "#C5CAE9"
+    },
+    {
+      "name": "secondary-lighten-1",
+      "value": "#FF80AB"
+    },
+    {
+      "name": "accent",
+      "value": "#009688"
+    },
+    {
+      "name": "red-accent1",
+      "value": "#ff8a80"
+    },
+    {
+      "name": "red-accent2",
+      "value": "#ff5252"
+    },
+    {
+      "name": "red-accent3",
+      "value": "#ff1744"
+    },
+    {
+      "name": "red-accent4",
+      "value": "#d50000"
+    },
+    {
+      "name": "pink-accent1",
+      "value": "#ff80ab"
+    },
+    {
+      "name": "pink-accent2",
+      "value": "#ff4081"
+    },
+    {
+      "name": "pink-accent3",
+      "value": "#f50057"
+    },
+    {
+      "name": "pink-accent4",
+      "value": "#c51162"
+    },
+    {
+      "name": "purple-accent1",
+      "value": "#ea80fc"
+    },
+    {
+      "name": "purple-accent2",
+      "value": "#e040fb"
+    },
+    {
+      "name": "purple-accent3",
+      "value": "#d500f9"
+    },
+    {
+      "name": "purple-accent4",
+      "value": "#aa00ff"
+    },
+    {
+      "name": "deep-purple-accent1",
+      "value": "#b388ff"
+    },
+    {
+      "name": "deep-purple-accent2",
+      "value": "#7c4dff"
+    },
+    {
+      "name": "deep-purple-accent3",
+      "value": "#651fff"
+    },
+    {
+      "name": "deep-purple-accent4",
+      "value": "#6200ea"
+    },
+    {
+      "name": "indigo-accent1",
+      "value": "#8c9eff"
+    },
+    {
+      "name": "indigo-accent2",
+      "value": "#536dfe"
+    },
+    {
+      "name": "indigo-accent3",
+      "value": "#3d5afe"
+    },
+    {
+      "name": "indigo-accent4",
+      "value": "#304ffe"
+    },
+    {
+      "name": "blue-accent1",
+      "value": "#82b1ff"
+    },
+    {
+      "name": "blue-accent2",
+      "value": "#448aff"
+    },
+    {
+      "name": "blue-accent3",
+      "value": "#2979ff"
+    },
+    {
+      "name": "blue-accent4",
+      "value": "#2962ff"
+    },
+    {
+      "name": "light-blue-accent1",
+      "value": "#80d8ff"
+    },
+    {
+      "name": "light-blue-accent2",
+      "value": "#40c4ff"
+    },
+    {
+      "name": "light-blue-accent3",
+      "value": "#00b0ff"
+    },
+    {
+      "name": "light-blue-accent4",
+      "value": "#0091ea"
+    },
+    {
+      "name": "cyan-accent1",
+      "value": "#84ffff"
+    },
+    {
+      "name": "cyan-accent2",
+      "value": "#18ffff"
+    },
+    {
+      "name": "cyan-accent3",
+      "value": "#00e5ff"
+    },
+    {
+      "name": "cyan-accent4",
+      "value": "#00b8d4"
+    },
+    {
+      "name": "teal-accent1",
+      "value": "#a7ffeb"
+    },
+    {
+      "name": "teal-accent2",
+      "value": "#64ffda"
+    },
+    {
+      "name": "teal-accent3",
+      "value": "#1de9b6"
+    },
+    {
+      "name": "teal-accent4",
+      "value": "#00bfa5"
+    },
+    {
+      "name": "green-accent1",
+      "value": "#b9f6ca"
+    },
+    {
+      "name": "green-accent2",
+      "value": "#69f0ae"
+    },
+    {
+      "name": "green-accent3",
+      "value": "#00e676"
+    },
+    {
+      "name": "green-accent4",
+      "value": "#00c853"
+    },
+    {
+      "name": "light-green-accent1",
+      "value": "#ccff90"
+    },
+    {
+      "name": "light-green-accent2",
+      "value": "#b2ff59"
+    },
+    {
+      "name": "light-green-accent3",
+      "value": "#76ff03"
+    },
+    {
+      "name": "light-green-accent4",
+      "value": "#64dd17"
+    },
+    {
+      "name": "lime-accent1",
+      "value": "#f4ff81"
+    }
+  ],
+  "type": [
+    {
+      "name": "text-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": 1.1228070175
+    },
+    {
+      "name": "text-sm-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": 1.1228070175
+    },
+    {
+      "name": "text-md-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": 1.1228070175
+    },
+    {
+      "name": "text-lg-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": 1.1228070175
+    },
+    {
+      "name": "text-xl-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": 1.1228070175
+    },
+    {
+      "name": "text-xxl-display-large",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5625rem",
+      "px": 57,
+      "fontWeight": 400,
+      "lineHeight": 1.1228070175
+    },
+    {
+      "name": "file-upload-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "text-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": 1.1555555556
+    },
+    {
+      "name": "text-sm-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": 1.1555555556
+    },
+    {
+      "name": "text-md-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": 1.1555555556
+    },
+    {
+      "name": "text-lg-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": 1.1555555556
+    },
+    {
+      "name": "text-xl-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": 1.1555555556
+    },
+    {
+      "name": "text-xxl-display-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "2.8125rem",
+      "px": 45,
+      "fontWeight": 400,
+      "lineHeight": 1.1555555556
+    },
+    {
+      "name": "text-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "text-sm-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "text-md-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "text-lg-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "text-xl-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "text-xxl-display-small",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": 1.2222222222
+    },
+    {
+      "name": "bottom-navigation-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "file-upload-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "toolbar-prominent-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "v-alert-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "v-file-upload-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 600
+    },
+    {
+      "name": "text-title-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "text-sm-title-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "text-md-title-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "text-lg-title-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "text-xl-title-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "text-xxl-title-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "v-card-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400
+    },
+    {
+      "name": "v-empty-state-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 1.2727272727
+    },
+    {
+      "name": "otp-input-field-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "toolbar-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "v-toolbar-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "time-picker-ampm-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "blockquote-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "button-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "field-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "hotkey-divider-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "hotkey-inline-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "hotkey-inline-divider-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "time-picker-number-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "font-size-root",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "text-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-sm-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-sm-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-md-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-md-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-lg-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-lg-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-xl-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-xl-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-xxl-title-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-xxl-body-large",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "v-list-item-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "v-stepper-vertical-item-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "expansion-panel-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9375rem",
+      "px": 15
+    },
+    {
+      "name": "v-expansion-panel-title",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9375rem",
+      "px": 15,
+      "lineHeight": 1
+    },
+    {
+      "name": "code-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9em",
+      "px": 14.4
+    },
+    {
+      "name": "date-picker-month-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "kbd-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875em",
+      "px": 14
+    },
+    {
+      "name": "list-subheader-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "stepper-item-avatar-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "tooltip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "audio-time-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "month-picker-btn-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "video-time-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "text-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-sm-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-sm-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-md-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-md-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-lg-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-lg-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-xl-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-xl-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-xxl-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "text-xxl-body-medium",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "v-card-subtitle",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400
+    },
+    {
+      "name": "v-list-item-subtitle",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "1rem"
+    },
+    {
+      "name": "list-item-nav-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "heatmap-header-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "pie-legend-chip-default-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "color-picker-input-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "calendar-weekly-day-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "calendar-event-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "counter-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "hotkey-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "input-details-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "list-nav-subheader-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "list-item-nav-subtitle-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "messages-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "stepper-item-avatar-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "stepper-item-subtitle-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "time-picker-field-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "audio-time-stacked-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "heatmap-cell-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "media-progress-bar-tooltip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "text-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3333333333
+    },
+    {
+      "name": "text-sm-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3333333333
+    },
+    {
+      "name": "text-md-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3333333333
+    },
+    {
+      "name": "text-lg-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3333333333
+    },
+    {
+      "name": "text-xl-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3333333333
+    },
+    {
+      "name": "text-xxl-body-small",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3333333333
+    },
+    {
+      "name": "v-picker-title",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400
+    },
+    {
+      "name": "v-stepper-item-subtitle",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "lineHeight": 1
+    },
+    {
+      "name": "v-stepper-vertical-item-subtitle",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "calendar-daily-weekday-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "calendar-weekly-weekday-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "pie-legend-chip-compact-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "0.66rem",
+      "px": 10.56
+    },
+    {
+      "name": "calendar-daily-interval-gutter-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "v-otp-input",
+      "kind": "input",
+      "backgroundColor": "transparent",
+      "textColor": "transparent",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "v-navigation-drawer",
+      "kind": "modal",
+      "backgroundColor": "black"
+    },
+    {
+      "key": "btn-group",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "rounded": "4px",
+      "shadow": "0 0 0 0 rgba(,.3),0 0 0 0 rgba(,.15)"
+    },
+    {
+      "key": "progress-linear",
+      "kind": "progress",
+      "backgroundColor": "#0000",
+      "border": "thin solid buttontext"
+    },
+    {
+      "key": "btn-variant-text",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "btn-variant-plain",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "btn-variant-tonal",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "card-variant-text",
+      "kind": "card",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "chip-variant-text",
+      "kind": "badge",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "alert-variant-text",
+      "kind": "alert",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "card-variant-plain",
+      "kind": "card",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "card-variant-tonal",
+      "kind": "card",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "chip-variant-plain",
+      "kind": "badge",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "chip-variant-tonal",
+      "kind": "badge",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "alert-variant-plain",
+      "kind": "alert",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "alert-variant-tonal",
+      "kind": "alert",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "avatar-variant-text",
+      "kind": "avatar",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "avatar-variant-plain",
+      "kind": "avatar",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "avatar-variant-tonal",
+      "kind": "avatar",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "card-variant-outlined",
+      "kind": "card",
+      "backgroundColor": "#0000",
+      "border": "thin solid"
+    },
+    {
+      "key": "chip-variant-outlined",
+      "kind": "badge",
+      "backgroundColor": "#0000",
+      "border": "thin solid"
+    },
+    {
+      "key": "icon-btn-variant-text",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "icon-btn-variant-plain",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "icon-btn-variant-tonal",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#EEEEEE",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#FF8A80",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#FF8A80",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#EEEEEE",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#EEEEEE",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Vuetify** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#FF8A80` brand accent.\n\nTypography centers cleanly on `System UI` (57px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nSource: published token package (https://vuetifyjs.com), package `vuetify`. Inventory: **90** colors, **117** typography steps, and **31** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 31 component tokens with documented paddings: `0`, `8px 12px`, `2px`, `6px 12px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#EEEEEE` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 0 0 rgba(,.3),0 0 0 0 rgba(,.15)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF8A80` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#FF8A80` with `#0b0b0c` text (8.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#EEEEEE` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `v-otp-input` fields and secondary buttons."
+}

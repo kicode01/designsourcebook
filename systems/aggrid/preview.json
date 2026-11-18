@@ -1,0 +1,398 @@
+{
+  "canvas": "#fff",
+  "surface": "#f8f8f8",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3f51b5",
+  "border": "#babfc7",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "ag-alpine-active-color",
+      "value": "#2196f3"
+    },
+    {
+      "name": "ag-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "ag-foreground-color",
+      "value": "#181d1f"
+    },
+    {
+      "name": "ag-border-color",
+      "value": "#babfc7"
+    },
+    {
+      "name": "ag-secondary-border-color",
+      "value": "#dde2eb"
+    },
+    {
+      "name": "ag-header-background-color",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "ag-tooltip-background-color",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "ag-odd-row-background-color",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "ag-control-panel-background-color",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "ag-subheader-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "ag-invalid-color",
+      "value": "#e02525"
+    },
+    {
+      "name": "ag-checkbox-unchecked-color",
+      "value": "#999"
+    },
+    {
+      "name": "ag-advanced-filter-join-pill-color",
+      "value": "#f08e8d"
+    },
+    {
+      "name": "ag-advanced-filter-column-pill-color",
+      "value": "#a6e194"
+    },
+    {
+      "name": "ag-advanced-filter-option-pill-color",
+      "value": "#f3c08b"
+    },
+    {
+      "name": "ag-advanced-filter-value-pill-color",
+      "value": "#85c0e4"
+    },
+    {
+      "name": "ag-find-match-background-color",
+      "value": "#ffff00"
+    },
+    {
+      "name": "ag-find-active-match-background-color",
+      "value": "#ffa500"
+    },
+    {
+      "name": "ag-cell-batch-edit-text-color",
+      "value": "#f3d0b3"
+    },
+    {
+      "name": "ag-formula-token-1-color",
+      "value": "#4da3e5"
+    },
+    {
+      "name": "ag-formula-token-2-color",
+      "value": "#f55864"
+    },
+    {
+      "name": "ag-formula-token-3-color",
+      "value": "#b688f2"
+    },
+    {
+      "name": "ag-formula-token-4-color",
+      "value": "#24bb4a"
+    },
+    {
+      "name": "ag-formula-token-5-color",
+      "value": "#e772ba"
+    },
+    {
+      "name": "ag-formula-token-6-color",
+      "value": "#f69b5f"
+    },
+    {
+      "name": "ag-formula-token-7-color",
+      "value": "#a3e6ff"
+    },
+    {
+      "name": "ag-calculated-column-reference-color",
+      "value": "#4da3e5"
+    },
+    {
+      "name": "ag-calculated-column-function-color",
+      "value": "#24bb4a"
+    },
+    {
+      "name": "ag-balham-active-color",
+      "value": "#0091ea"
+    },
+    {
+      "name": "ag-input-border-color",
+      "value": "#95a5a6"
+    },
+    {
+      "name": "ag-material-primary-color",
+      "value": "#3f51b5"
+    },
+    {
+      "name": "ag-material-accent-color",
+      "value": "#ff4081"
+    },
+    {
+      "name": "ag-header-cell-hover-background-color",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "ag-value-change-value-highlight-background-color",
+      "value": "#00acc1"
+    },
+    {
+      "name": "ag-data-color",
+      "value": "#f5f5f5ff"
+    },
+    {
+      "name": "ag-icon-button-hover-background-color",
+      "value": "#000000ff"
+    },
+    {
+      "name": "ag-checkbox-background-color",
+      "value": "#121212ff"
+    },
+    {
+      "name": "ag-input-border-color-invalid",
+      "value": "#e02525ff"
+    },
+    {
+      "name": "ag-side-button-selected-background-color",
+      "value": "#2c2c2cff"
+    },
+    {
+      "name": "ag-selected-tab-underline-color",
+      "value": "#3f51b5ff"
+    },
+    {
+      "name": "ag-value-change-delta-down-color",
+      "value": "#e53935ff"
+    },
+    {
+      "name": "ag-menu-background-color",
+      "value": "#2c2c2cff"
+    },
+    {
+      "name": "ag-active-color",
+      "value": "#2196f3"
+    },
+    {
+      "name": "params-background-color",
+      "value": "hsl(29, 10%, 17%)"
+    },
+    {
+      "name": "background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "foreground-color",
+      "value": "#181d1f"
+    },
+    {
+      "name": "accent-color",
+      "value": "#2196f3"
+    },
+    {
+      "name": "invalid-color",
+      "value": "#e02525"
+    },
+    {
+      "name": "calculated-column-reference-color",
+      "value": "#3269c6"
+    },
+    {
+      "name": "calculated-column-function-color",
+      "value": "#007c1f"
+    },
+    {
+      "name": "value-change-delta-up-color",
+      "value": "#43a047"
+    },
+    {
+      "name": "value-change-delta-down-color",
+      "value": "#e53935"
+    },
+    {
+      "name": "cell-batch-edit-text-color",
+      "value": "#422f00"
+    },
+    {
+      "name": "advanced-filter-builder-join-pill-color",
+      "value": "#f08e8d"
+    },
+    {
+      "name": "advanced-filter-builder-column-pill-color",
+      "value": "#a6e194"
+    },
+    {
+      "name": "advanced-filter-builder-option-pill-color",
+      "value": "#f3c08b"
+    },
+    {
+      "name": "advanced-filter-builder-value-pill-color",
+      "value": "#85c0e4"
+    },
+    {
+      "name": "find-match-background-color",
+      "value": "#ffff00"
+    },
+    {
+      "name": "find-active-match-background-color",
+      "value": "#ffa500"
+    },
+    {
+      "name": "formula-token1-color",
+      "value": "#3269c6"
+    },
+    {
+      "name": "formula-token2-color",
+      "value": "#c0343f"
+    },
+    {
+      "name": "formula-token3-color",
+      "value": "#8156b8"
+    },
+    {
+      "name": "formula-token4-color",
+      "value": "#007c1f"
+    },
+    {
+      "name": "formula-token5-color",
+      "value": "#b03e85"
+    },
+    {
+      "name": "formula-token6-color",
+      "value": "#b74900"
+    },
+    {
+      "name": "formula-token7-color",
+      "value": "#247492"
+    },
+    {
+      "name": "primary-color",
+      "value": "#3f51b5"
+    },
+    {
+      "name": "ag-row-numbers-selected-color",
+      "value": "#bbb"
+    },
+    {
+      "name": "ag-calculated-column-highlight-color",
+      "value": "#bbb"
+    },
+    {
+      "name": "ag-column-header-edit-highlight-color",
+      "value": "#bbb"
+    },
+    {
+      "name": "primary",
+      "value": "#3f51b5"
+    }
+  ],
+  "type": [
+    {
+      "name": "ag-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "ag-icon-font-family",
+      "fontFamily": "agGridAlpine",
+      "px": 16
+    },
+    {
+      "name": "ag-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "ag-chart-settings-card-item",
+      "kind": "card",
+      "backgroundColor": "#000",
+      "rounded": "4px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f8f8f8",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#3f51b5",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#3f51b5",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f8f8f8",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f8f8f8",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f8f8f8",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**AG Grid** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3f51b5` brand accent.\n\nTypography centers cleanly on `System UI` (16px display down to 16px body), unified by `4px` base corner radius and stepped `#fff` -> `#f8f8f8` surface layering.\n\nSource: published token package (https://www.ag-grid.com/), package `ag-grid-community`. Inventory: **71** colors, **3** typography steps, and **9** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f8f8f8` cards; separate sibling sections using `#babfc7` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f8f8f8`) and `1px solid #babfc7` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3f51b5` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#3f51b5` with `#f7f7f8` text (6.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#f8f8f8` surface shifts and `#babfc7` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

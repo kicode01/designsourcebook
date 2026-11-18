@@ -1,0 +1,43 @@
+{
+  "name": "kern",
+  "displayName": "KERN UX",
+  "description": "Germany Federal Government KERN UX — tokens imported from @kern-ux/native.",
+  "style": "Germany Federal Government KERN UX — tokens imported from @kern-ux/native.",
+  "category": "Germany Federal Government",
+  "org": "Germany Federal Government",
+  "theme": "light",
+  "tags": [
+    "published",
+    "germany-federal-government",
+    "government",
+    "light"
+  ],
+  "homepage": "https://kern-ux.de",
+  "license": "EUPL-1.2",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @kern-ux/native@2.8.2 (2 token files, 522 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@kern-ux/native",
+    "version": "2.8.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 26,
+    "components": 30
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

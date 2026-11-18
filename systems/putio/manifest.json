@@ -1,0 +1,42 @@
+{
+  "name": "putio",
+  "displayName": "Put.io Design System",
+  "description": "Put.io Design System — tokens imported from @putdotio/design.",
+  "style": "Put.io Design System — tokens imported from @putdotio/design.",
+  "category": "Put.io",
+  "org": "Put.io",
+  "theme": "light",
+  "tags": [
+    "published",
+    "put-io",
+    "light"
+  ],
+  "homepage": "https://design.put.io",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @putdotio/design@5.3.3 (6 token files, 689 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@putdotio/design",
+    "version": "5.3.3"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 19,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

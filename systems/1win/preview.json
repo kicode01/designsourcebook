@@ -1,0 +1,361 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f0f2f5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00b24b",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.card}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#00b24b"
+    },
+    {
+      "name": "secondary",
+      "value": "#0075ff"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas",
+      "value": "#141415"
+    },
+    {
+      "name": "surface",
+      "value": "#2e3035"
+    },
+    {
+      "name": "hairline",
+      "value": "#2d2f33"
+    },
+    {
+      "name": "ink",
+      "value": "#f0f2f5"
+    },
+    {
+      "name": "muted",
+      "value": "#9aa1b1"
+    },
+    {
+      "name": "faint",
+      "value": "#53575f"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    }
+  ],
+  "type": [
+    {
+      "name": "display",
+      "fontFamily": "Inter",
+      "fontSize": "33px",
+      "px": 33,
+      "fontWeight": 800,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 800,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "{colors.secondary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "button-tertiary",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xl}",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "button-ghost",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "0px 8px"
+    },
+    {
+      "key": "pill-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.secondary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "0px 4px"
+    },
+    {
+      "key": "pill-outline",
+      "kind": "badge",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "0px 8px"
+    },
+    {
+      "key": "top-nav",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "sidebar-rail",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.muted}",
+      "padding": "8px"
+    },
+    {
+      "key": "game-tile",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}"
+    },
+    {
+      "key": "hero-banner",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "24px"
+    },
+    {
+      "key": "promo-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "16px"
+    },
+    {
+      "key": "feature-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "16px"
+    },
+    {
+      "key": "feature-card-elevated",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "16px"
+    },
+    {
+      "key": "bet-odds-button",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "betslip-panel",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "16px"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.muted}",
+      "padding": "24px"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00b24b",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00b24b",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f0f2f5",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f0f2f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "1win is a crypto casino and sportsbook that runs almost entirely on a near-black canvas (`{colors.canvas}` — #141415), a flat, slightly cool dark field that lets thousands of vibrant game thumbnails do the shouting. The chrome around the content is deliberately quiet: dark-grey surfaces (`{colors.surface}` — #2e3035), faint translucent hairlines, and off-white text (`{colors.ink}` — #f0f2f5). Against that restraint, two action colors carry the entire interactive layer — a vivid green (`{colors.primary}` — #00b24b) on the \"Registration\" CTA and every primary confirm, and an electric blue (`{colors.secondary}` — #0075ff) on \"Log In\", links, the \"Show more\" pill, active tabs, and bet highlights.\r\n\r\nThe layout is a high-density product surface, not a marketing page. A fixed left icon rail holds category navigation; the main column is a long stack of horizontally-scrolling rails — \"Top games\", \"Slots\", \"Originals\", game providers — each a row of full-bleed, brightly-illustrated `game-tile` thumbnails. Promotional bonuses ride in gradient-rich `hero-banner` cards at the top, and the sportsbook adds match rows with `bet-odds-button` chips and a right-hand `betslip-panel`. Typography is Inter set at heavy weights only (600 and 800) — even body copy is semibold — which gives the dense UI a punchy, app-like confidence rather than an editorial calm.\r\n\r\nColor discipline is the key to reading this brand correctly: the loud purples, reds, ambers, and violets that fill the screen all live *inside* game artwork and bonus-card illustrations — they are content, not chrome. The system itself is monochrome dark plus exactly two signals: green for \"go / win / register\" and blue for \"secondary / navigate / live\". Everything structural is built from the dark surface ladder and those two accents.\r\n\r\n**Key Characteristics:**\r\n- Near-black `{colors.canvas}` foundation with a flat `{colors.surface}` card/tile ladder — depth comes from surface shifts and faint `{colors.hairline}` borders, not heavy shadow.\r\n- Two-signal action system: green `{colors.primary}` for primary CTAs (Registration, confirm) and blue `{colors.secondary}` for secondary actions, links, and live/betting highlights.\r\n- Inter at heavy weights only (600 / 800) — even `{typography.body}` is semibold, giving the dense UI an app-like punch.\r\n- Content-forward game rails — full-bleed `game-tile` artwork supplies all the saturation; the surrounding frame stays monochrome dark.\r\n- Pill language for badges and status (`{rounded.full}`), modest `{rounded.lg}`–`{rounded.xl}` on buttons, and `{rounded.card}` (16px) on tiles, promo cards, and panels.\r\n- A left icon `sidebar-rail` + dense horizontally-scrolling rails define the shell, closer to a native app than a website.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` (green) for primary actions — Registration, confirm, place-bet — and `{colors.secondary}` (blue) for secondary actions, links, and live/betting highlights.\r\n- Build depth with the surface ladder (`{colors.canvas}` → `{colors.surface}`) plus a faint `{colors.hairline}` edge; avoid heavy shadows.\r\n- Set every label in Inter 600+ (`{typography.body}` / `{typography.caption}`); use the 800 weight for headlines and bonus figures.\r\n- Let game and promo artwork supply the color — keep the surrounding chrome monochrome dark.\r\n- Use `{rounded.lg}`–`{rounded.xl}` on buttons, `{rounded.card}` (16px) on tiles/cards/panels, and `{rounded.full}` on pills and badges.\r\n- Pair accent fills with `{colors.on-primary}` (white) text for legibility.\r\n\r\n### Don't\r\n- Don't promote game-tile or bonus-banner gradient colors (the purples, reds, violets, ambers) into the UI palette — they are content, not chrome.\r\n- Don't add a third structural accent; the system is green + blue only.\r\n- Don't use pure-regular weights — there is no Inter 400 here; body copy is semibold.\r\n- Don't pad game tiles — artwork is full-bleed inside `{rounded.card}` corners.\r\n- Don't rely on drop shadows for elevation; the surface brightness step is the elevation language."
+}

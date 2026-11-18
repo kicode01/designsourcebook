@@ -1,0 +1,157 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00bfe9",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "au-color-foreground-text",
+      "value": "#313131"
+    },
+    {
+      "name": "au-color-foreground-action",
+      "value": "#00698f"
+    },
+    {
+      "name": "au-color-foreground-focus",
+      "value": "#9263DE"
+    },
+    {
+      "name": "au-color-foreground-hint",
+      "value": "#6f777b"
+    },
+    {
+      "name": "au-color-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "au-color-foreground-alt-hint",
+      "value": "#61696B"
+    },
+    {
+      "name": "au-colordark-foreground-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "au-colordark-foreground-action",
+      "value": "#61daff"
+    },
+    {
+      "name": "au-colordark-foreground-focus",
+      "value": "#C390F9"
+    },
+    {
+      "name": "au-colordark-background",
+      "value": "#135E70"
+    },
+    {
+      "name": "au-color-error",
+      "value": "#d60000"
+    },
+    {
+      "name": "au-color-success",
+      "value": "#0b996c"
+    },
+    {
+      "name": "au-color-warning",
+      "value": "#f69900"
+    },
+    {
+      "name": "au-color-info",
+      "value": "#00bfe9"
+    },
+    {
+      "name": "primary",
+      "value": "#00bfe9"
+    }
+  ],
+  "type": [
+    {
+      "name": "au-font-monospace",
+      "fontFamily": "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00bfe9",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00bfe9",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Australian Government Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00bfe9` brand accent.\n\nTypography centers cleanly on `System Mono` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Australian Government**. Source: published token package (https://designsystem.gov.au/components/core), package `@gov.au/core`. Inventory: **15** colors, **1** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00bfe9` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#00bfe9` with `#0b0b0c` text (9.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System Mono` headings with `System Mono` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

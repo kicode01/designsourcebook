@@ -1,0 +1,717 @@
+{
+  "canvas": "rgb(255, 255, 255)",
+  "surface": "rgb(245, 247, 248)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "rgb(255, 167, 156)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "salt-color-background-snow-rgb",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "salt-color-background-marble-rgb",
+      "value": "rgb(245, 247, 248)"
+    },
+    {
+      "name": "salt-color-background-limestone-rgb",
+      "value": "rgb(250, 248, 242)"
+    },
+    {
+      "name": "salt-color-background-titanium-rgb",
+      "value": "rgb(226, 228, 229)"
+    },
+    {
+      "name": "salt-color-background-jet-rgb",
+      "value": "rgb(16, 24, 32)"
+    },
+    {
+      "name": "salt-color-background-granite-rgb",
+      "value": "rgb(26, 34, 41)"
+    },
+    {
+      "name": "salt-color-background-leather-rgb",
+      "value": "rgb(38, 41, 43)"
+    },
+    {
+      "name": "salt-color-black-rgb",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "salt-color-gray-500-rgb",
+      "value": "rgb(114, 119, 125)"
+    },
+    {
+      "name": "salt-color-blue-200-rgb",
+      "value": "rgb(199, 222, 255)"
+    },
+    {
+      "name": "salt-color-blue-800-rgb",
+      "value": "rgb(0, 45, 89)"
+    },
+    {
+      "name": "salt-color-brown-500-rgb",
+      "value": "rgb(153, 108, 72)"
+    },
+    {
+      "name": "salt-color-green-200-rgb",
+      "value": "rgb(184, 229, 209)"
+    },
+    {
+      "name": "salt-color-green-800-rgb",
+      "value": "rgb(0, 63, 37)"
+    },
+    {
+      "name": "salt-color-teal-500-rgb",
+      "value": "rgb(27, 127, 158)"
+    },
+    {
+      "name": "salt-color-orange-200-rgb",
+      "value": "rgb(255, 198, 161)"
+    },
+    {
+      "name": "salt-color-orange-800-rgb",
+      "value": "rgb(97, 41, 0)"
+    },
+    {
+      "name": "salt-color-red-500-rgb",
+      "value": "rgb(229, 33, 53)"
+    },
+    {
+      "name": "salt-color-purple-200-rgb",
+      "value": "rgb(240, 214, 245)"
+    },
+    {
+      "name": "salt-color-purple-800-rgb",
+      "value": "rgb(73, 21, 82)"
+    },
+    {
+      "name": "salt-color-cobalt-400",
+      "value": "rgb(118, 148, 207)"
+    },
+    {
+      "name": "salt-color-cider-100",
+      "value": "rgb(255, 235, 217)"
+    },
+    {
+      "name": "salt-color-cider-700",
+      "value": "rgb(116, 64, 21)"
+    },
+    {
+      "name": "salt-color-plum-400",
+      "value": "rgb(188, 115, 222)"
+    },
+    {
+      "name": "salt-color-aqua-100",
+      "value": "rgb(220, 247, 247)"
+    },
+    {
+      "name": "salt-color-aqua-700",
+      "value": "rgb(19, 88, 90)"
+    },
+    {
+      "name": "salt-color-slate-400",
+      "value": "rgb(134, 145, 172)"
+    },
+    {
+      "name": "salt-color-rose-100",
+      "value": "rgb(255, 227, 249)"
+    },
+    {
+      "name": "salt-color-rose-700",
+      "value": "rgb(118, 50, 104)"
+    },
+    {
+      "name": "salt-color-olive-400",
+      "value": "rgb(149, 166, 113)"
+    },
+    {
+      "name": "salt-color-salmon-100",
+      "value": "rgb(255, 232, 233)"
+    },
+    {
+      "name": "salt-color-salmon-700",
+      "value": "rgb(121, 44, 48)"
+    },
+    {
+      "name": "salt-color-indigo-400",
+      "value": "rgb(149, 129, 229)"
+    },
+    {
+      "name": "salt-color-jade-100",
+      "value": "rgb(225, 245, 230)"
+    },
+    {
+      "name": "salt-color-jade-700",
+      "value": "rgb(21, 90, 39)"
+    },
+    {
+      "name": "salt-color-citrine-400",
+      "value": "rgb(178, 156, 66)"
+    },
+    {
+      "name": "salt-color-autumn-100",
+      "value": "rgb(255, 233, 217)"
+    },
+    {
+      "name": "salt-color-autumn-700",
+      "value": "rgb(119, 55, 14)"
+    },
+    {
+      "name": "salt-color-lavender-400",
+      "value": "rgb(186, 134, 186)"
+    },
+    {
+      "name": "salt-color-ocean-100",
+      "value": "rgb(227, 251, 255)"
+    },
+    {
+      "name": "salt-color-ocean-700",
+      "value": "rgb(0, 84, 97)"
+    },
+    {
+      "name": "salt-color-smoke-400",
+      "value": "rgb(144, 147, 152)"
+    },
+    {
+      "name": "salt-color-fuchsia-100",
+      "value": "rgb(255, 232, 247)"
+    },
+    {
+      "name": "salt-color-fuchsia-700",
+      "value": "rgb(140, 37, 101)"
+    },
+    {
+      "name": "salt-color-lime-400",
+      "value": "rgb(146, 166, 71)"
+    },
+    {
+      "name": "salt-color-fur-100",
+      "value": "rgb(255, 244, 235)"
+    },
+    {
+      "name": "salt-color-fur-700",
+      "value": "rgb(107, 65, 36)"
+    },
+    {
+      "name": "salt-color-violet-400",
+      "value": "rgb(134, 139, 219)"
+    },
+    {
+      "name": "salt-color-forest-100",
+      "value": "rgb(237, 250, 245)"
+    },
+    {
+      "name": "salt-color-forest-700",
+      "value": "rgb(15, 90, 61)"
+    },
+    {
+      "name": "salt-color-red-40-rgb",
+      "value": "rgb(255, 167, 156)"
+    },
+    {
+      "name": "salt-color-orange-50-rgb",
+      "value": "rgb(254, 197, 94)"
+    },
+    {
+      "name": "salt-color-green-40-rgb",
+      "value": "rgb(136, 210, 145)"
+    },
+    {
+      "name": "salt-color-teal-50-rgb",
+      "value": "rgb(141, 205, 209)"
+    },
+    {
+      "name": "salt-color-purple-10-rgb",
+      "value": "rgb(249, 224, 247)"
+    },
+    {
+      "name": "salt-color-gray-20-rgb",
+      "value": "rgb(234, 237, 239)"
+    },
+    {
+      "name": "salt-color-gray-80-rgb",
+      "value": "rgb(159, 163, 170)"
+    },
+    {
+      "name": "salt-color-jet-rgb",
+      "value": "rgb(16, 24, 32)"
+    },
+    {
+      "name": "salt-color-topaz-400-rgb",
+      "value": "rgb(74, 176, 199)"
+    },
+    {
+      "name": "salt-color-topaz-900-rgb",
+      "value": "rgb(3, 31, 38)"
+    },
+    {
+      "name": "salt-color-clementine-500-rgb",
+      "value": "rgb(189, 91, 0)"
+    },
+    {
+      "name": "salt-color-quartz-200-rgb",
+      "value": "rgb(227, 205, 240)"
+    },
+    {
+      "name": "salt-color-quartz-700-rgb",
+      "value": "rgb(84, 53, 102)"
+    },
+    {
+      "name": "salt-color-smoke-400-rgb",
+      "value": "rgb(168, 153, 138)"
+    },
+    {
+      "name": "salt-color-smoke-900-rgb",
+      "value": "rgb(33, 27, 21)"
+    },
+    {
+      "name": "salt-color-clay-500-rgb",
+      "value": "rgb(212, 64, 37)"
+    },
+    {
+      "name": "salt-color-emerald-200-rgb",
+      "value": "rgb(186, 222, 204)"
+    },
+    {
+      "name": "salt-color-emerald-700-rgb",
+      "value": "rgb(11, 74, 43)"
+    },
+    {
+      "name": "salt-color-salmon-400-rgb",
+      "value": "rgb(207, 137, 134)"
+    },
+    {
+      "name": "salt-color-salmon-900-rgb",
+      "value": "rgb(50, 18, 17)"
+    },
+    {
+      "name": "salt-color-cobalt-500-rgb",
+      "value": "rgb(38, 115, 223)"
+    },
+    {
+      "name": "salt-color-ruby-200-rgb",
+      "value": "rgb(245, 202, 215)"
+    },
+    {
+      "name": "salt-color-ruby-700-rgb",
+      "value": "rgb(112, 42, 63)"
+    },
+    {
+      "name": "salt-color-olive-400-rgb",
+      "value": "rgb(149, 166, 113)"
+    },
+    {
+      "name": "salt-color-olive-900-rgb",
+      "value": "rgb(21, 31, 0)"
+    },
+    {
+      "name": "salt-color-lavender-500-rgb",
+      "value": "rgb(148, 102, 148)"
+    },
+    {
+      "name": "salt-color-violet-200-rgb",
+      "value": "rgb(207, 208, 255)"
+    },
+    {
+      "name": "salt-color-violet-700-rgb",
+      "value": "rgb(53, 61, 117)"
+    },
+    {
+      "name": "salt-color-citrine-400-rgb",
+      "value": "rgb(178, 156, 66)"
+    },
+    {
+      "name": "salt-color-citrine-900-rgb",
+      "value": "rgb(33, 28, 0)"
+    },
+    {
+      "name": "salt-color-fuchsia-500-rgb",
+      "value": "rgb(194, 70, 149)"
+    },
+    {
+      "name": "salt-color-sapphire-200-rgb",
+      "value": "rgb(201, 214, 242)"
+    },
+    {
+      "name": "salt-color-sapphire-700-rgb",
+      "value": "rgb(32, 65, 120)"
+    },
+    {
+      "name": "salt-color-rose-400-rgb",
+      "value": "rgb(217, 124, 196)"
+    },
+    {
+      "name": "salt-color-rose-900-rgb",
+      "value": "rgb(56, 4, 45)"
+    },
+    {
+      "name": "salt-color-indigo-500-rgb",
+      "value": "rgb(120, 101, 207)"
+    },
+    {
+      "name": "salt-color-lime-200-rgb",
+      "value": "rgb(215, 227, 168)"
+    },
+    {
+      "name": "salt-color-lime-700-rgb",
+      "value": "rgb(57, 71, 9)"
+    },
+    {
+      "name": "salt-color-slate-400-rgb",
+      "value": "rgb(143, 155, 184)"
+    },
+    {
+      "name": "salt-color-slate-900-rgb",
+      "value": "rgb(18, 27, 48)"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(255, 167, 156)"
+    }
+  ],
+  "type": [
+    {
+      "name": "salt-text-editorial1-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "56px",
+      "px": 56
+    },
+    {
+      "name": "salt-text-editorial2-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "52px",
+      "px": 52
+    },
+    {
+      "name": "salt-text-editorial3-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "48px",
+      "px": 48
+    },
+    {
+      "name": "salt-text-editorial4-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "44px",
+      "px": 44
+    },
+    {
+      "name": "salt-text-display1-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "salt-text-editorial5-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "salt-text-display2-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
+      "name": "salt-text-editorial6-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
+      "name": "salt-text-display3-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "salt-text-display4-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "salt-text-h1-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "salt-text-h2-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "salt-text-h3-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "salt-text-body2-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "salt-text-eyebrow-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "salt-text-h4-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "salt-text-label2-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "salt-text-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "salt-typography-font-family-open-sans",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-typography-font-family-amplitude",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-typography-font-family-pt-mono",
+      "fontFamily": "\"PT Mono\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-code-font-family",
+      "fontFamily": "\"PT Mono\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-action-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-heading-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-display-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-editorial-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-eyebrow-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-typography-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-typography-font-family-code",
+      "fontFamily": "\"PT Mono\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-h1-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-h2-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-h3-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-h4-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-display1-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-display2-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-display3-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-display4-font-family",
+      "fontFamily": "Amplitude",
+      "px": 16
+    },
+    {
+      "name": "salt-text-label-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-text-notation-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-palette-text-font-family-heading",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-palette-text-font-family-action",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-palette-text-font-family",
+      "fontFamily": "\"Open Sans\"",
+      "px": 16
+    },
+    {
+      "name": "salt-palette-text-font-family-code",
+      "fontFamily": "\"PT Mono\"",
+      "px": 16
+    },
+    {
+      "name": "salt-typography-font-family-roboto",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "salt-text-label-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "salt-accent-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "salt-text-notation-font-size",
+      "fontFamily": "\"Open Sans\"",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "rgb(245, 247, 248)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "rgb(255, 167, 156)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "rgb(255, 167, 156)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(245, 247, 248)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "rgb(245, 247, 248)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgb(245, 247, 248)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Salt Design System** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(255, 167, 156)` brand accent.\n\nTypography centers cleanly on `Open Sans` (56px display down to 18px body), unified by `8px` base corner radius and stepped `rgb(255, 255, 255)` -> `rgb(245, 247, 248)` surface layering.\n\nMaintained by **J.P. Morgan**. Source: published token package, package `@salt-ds/theme`. Inventory: **91** colors, **48** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `rgb(245, 247, 248)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255, 255, 255)` -> `rgb(245, 247, 248)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(255, 167, 156)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `rgb(255, 167, 156)` with `#0b0b0c` text (10.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `rgb(245, 247, 248)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "digdir",
+  "displayName": "Designsystemet",
+  "description": "Norwegian Digitalisation Agency Designsystemet — tokens imported from @digdir/designsystemet-theme.",
+  "style": "Norwegian Digitalisation Agency Designsystemet — tokens imported from @digdir/designsystemet-theme.",
+  "category": "Norwegian Digitalisation Agency",
+  "org": "Norwegian Digitalisation Agency",
+  "theme": "light",
+  "tags": [
+    "published",
+    "norwegian-digitalisation-agency",
+    "light"
+  ],
+  "homepage": "https://github.com/digdir/designsystemet/tree/main/packages/theme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @digdir/designsystemet-theme@1.10.0 (2 token files, 147 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@digdir/designsystemet-theme",
+    "version": "1.10.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

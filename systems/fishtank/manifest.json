@@ -1,0 +1,42 @@
+{
+  "name": "fishtank",
+  "displayName": "Fishtank",
+  "description": "Bloomberg BNA Fishtank — tokens imported from @fishtank/colors.",
+  "style": "Bloomberg BNA Fishtank — tokens imported from @fishtank/colors.",
+  "category": "Bloomberg BNA",
+  "org": "Bloomberg BNA",
+  "theme": "light",
+  "tags": [
+    "published",
+    "bloomberg-bna",
+    "light"
+  ],
+  "homepage": "",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @fishtank/colors@3.5.1 (5 token files, 94 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@fishtank/colors",
+    "version": "3.5.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

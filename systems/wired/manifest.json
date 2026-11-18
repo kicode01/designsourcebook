@@ -1,0 +1,43 @@
+{
+  "name": "wired",
+  "displayName": "WIRED",
+  "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+  "style": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+  "category": "Media & Consumer Tech",
+  "org": "WIRED",
+  "theme": "light",
+  "tags": [
+    "media",
+    "consumer",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://www.wired.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (wired/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/wired"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 9,
+    "typography": 14,
+    "components": 30
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

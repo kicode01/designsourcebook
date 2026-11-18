@@ -1,0 +1,42 @@
+{
+  "name": "washingtonpost",
+  "displayName": "WPDS",
+  "description": "Washington Post WPDS — tokens imported from @washingtonpost/wpds-ui-kit.",
+  "style": "Washington Post WPDS — tokens imported from @washingtonpost/wpds-ui-kit.",
+  "category": "Washington Post",
+  "org": "Washington Post",
+  "theme": "light",
+  "tags": [
+    "published",
+    "washington-post",
+    "light"
+  ],
+  "homepage": "https://github.com/washingtonpost/wpds-ui-kit#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @washingtonpost/wpds-ui-kit@2.15.0 (2 token files, 128 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@washingtonpost/wpds-ui-kit",
+    "version": "2.15.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

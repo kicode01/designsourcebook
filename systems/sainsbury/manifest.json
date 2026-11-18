@@ -1,0 +1,41 @@
+{
+  "name": "sainsbury",
+  "displayName": "Luna",
+  "description": "Sainsbury Luna — read from the rendered page in a browser, not from published tokens.",
+  "style": "Sainsbury Luna — read from the rendered page in a browser, not from published tokens.",
+  "category": "Sainsbury",
+  "org": "Sainsbury",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "sainsbury",
+    "light"
+  ],
+  "homepage": "https://design-systems.sainsburys.co.uk/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://design-systems.sainsburys.co.uk/ in headless Chromium on 2026-11-18 (1073 custom properties, 73 sampled elements, 0 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Design & deliver better experiences | Sainsbury’s Design System.",
+  "source": {
+    "url": "https://design-systems.sainsburys.co.uk/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 63,
+    "components": 12
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

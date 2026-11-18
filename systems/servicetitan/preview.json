@@ -1,0 +1,554 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fcfcfc",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff8670",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-neutral-0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-neutral-10",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "color-neutral-20",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-neutral-30",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "color-neutral-40",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "color-neutral-50",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "color-neutral-60",
+      "value": "#ededed"
+    },
+    {
+      "name": "color-neutral-70",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "color-neutral-80",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "color-neutral-90",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-neutral-100",
+      "value": "#dfdfdf"
+    },
+    {
+      "name": "color-neutral-200",
+      "value": "#c4c4c4"
+    },
+    {
+      "name": "color-neutral-300",
+      "value": "#a8a8a8"
+    },
+    {
+      "name": "color-neutral-400",
+      "value": "#8b8b8b"
+    },
+    {
+      "name": "color-neutral-500",
+      "value": "#707070"
+    },
+    {
+      "name": "color-neutral-600",
+      "value": "#545454"
+    },
+    {
+      "name": "color-neutral-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-neutral-800",
+      "value": "#292929"
+    },
+    {
+      "name": "color-neutral-900",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "color-neutral-950",
+      "value": "#040404"
+    },
+    {
+      "name": "color-neutral0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-neutral10",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "color-neutral20",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-neutral30",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "color-neutral40",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "color-neutral50",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "color-neutral60",
+      "value": "#ededed"
+    },
+    {
+      "name": "color-neutral70",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "color-neutral80",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "color-neutral90",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-neutral100",
+      "value": "#dfdfdf"
+    },
+    {
+      "name": "color-neutral200",
+      "value": "#c4c4c4"
+    },
+    {
+      "name": "color-neutral300",
+      "value": "#a8a8a8"
+    },
+    {
+      "name": "color-neutral400",
+      "value": "#8b8b8b"
+    },
+    {
+      "name": "color-neutral500",
+      "value": "#707070"
+    },
+    {
+      "name": "color-neutral600",
+      "value": "#545454"
+    },
+    {
+      "name": "color-neutral700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-neutral800",
+      "value": "#292929"
+    },
+    {
+      "name": "color-neutral900",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "color-neutral950",
+      "value": "#040404"
+    },
+    {
+      "name": "chart-status-success-fill-color",
+      "value": "#007a4d"
+    },
+    {
+      "name": "chart-status-warning-fill-color",
+      "value": "#ffbe00"
+    },
+    {
+      "name": "chart-status-danger-fill-color",
+      "value": "#e13212"
+    },
+    {
+      "name": "chart-status-neutral-fill-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "chart-status-neutral-stroke-color",
+      "value": "#8c9ca5"
+    },
+    {
+      "name": "a2-chart-status-success-fill-color",
+      "value": "#007a4d"
+    },
+    {
+      "name": "a2-chart-status-warning-fill-color",
+      "value": "#ffbe00"
+    },
+    {
+      "name": "a2-chart-status-danger-fill-color",
+      "value": "#e13212"
+    },
+    {
+      "name": "a2-chart-status-neutral-fill-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "a2-chart-status-neutral-stroke-color",
+      "value": "#8c9ca5"
+    },
+    {
+      "name": "a2-color-neutral-0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "a2-color-neutral-10",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "a2-color-neutral-20",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "a2-color-neutral-30",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "a2-color-neutral-40",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "a2-color-neutral-50",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "a2-color-neutral-60",
+      "value": "#ededed"
+    },
+    {
+      "name": "a2-color-neutral-70",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "a2-color-neutral-80",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "a2-color-neutral-90",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "a2-color-neutral-100",
+      "value": "#dfdfdf"
+    },
+    {
+      "name": "a2-color-neutral-200",
+      "value": "#c4c4c4"
+    },
+    {
+      "name": "a2-color-neutral-300",
+      "value": "#a8a8a8"
+    },
+    {
+      "name": "a2-color-neutral-400",
+      "value": "#8b8b8b"
+    },
+    {
+      "name": "a2-color-neutral-500",
+      "value": "#707070"
+    },
+    {
+      "name": "a2-color-neutral-600",
+      "value": "#545454"
+    },
+    {
+      "name": "a2-color-neutral-700",
+      "value": "#404040"
+    },
+    {
+      "name": "a2-color-neutral-800",
+      "value": "#292929"
+    },
+    {
+      "name": "a2-color-neutral-900",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "a2-color-neutral-950",
+      "value": "#040404"
+    },
+    {
+      "name": "appearance-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-red-900",
+      "value": "#470b00"
+    },
+    {
+      "name": "color-blue-grey-800",
+      "value": "#24333d"
+    },
+    {
+      "name": "color-cyan-700",
+      "value": "#075563"
+    },
+    {
+      "name": "color-magenta-600",
+      "value": "#be288d"
+    },
+    {
+      "name": "color-lime-500",
+      "value": "#6b9013"
+    },
+    {
+      "name": "color-brown-400",
+      "value": "#c5855e"
+    },
+    {
+      "name": "color-red300",
+      "value": "#ff8670"
+    },
+    {
+      "name": "color-blue-grey200",
+      "value": "#b9c9d5"
+    },
+    {
+      "name": "color-cyan100",
+      "value": "#c2f2fb"
+    },
+    {
+      "name": "color-magenta50",
+      "value": "#fae6f3"
+    },
+    {
+      "name": "color-lime10",
+      "value": "#fdfdfc"
+    },
+    {
+      "name": "color-yellow950",
+      "value": "#191100"
+    },
+    {
+      "name": "chart-categorical-04-fill-color",
+      "value": "#907af5"
+    },
+    {
+      "name": "a2-color-blue-50",
+      "value": "#e6f1ff"
+    },
+    {
+      "name": "a2-color-green-10",
+      "value": "#f5fefb"
+    },
+    {
+      "name": "a2-color-blue-grey-950",
+      "value": "#090d10"
+    },
+    {
+      "name": "a2-color-cyan-900",
+      "value": "#032025"
+    },
+    {
+      "name": "a2-color-magenta-800",
+      "value": "#591342"
+    },
+    {
+      "name": "a2-color-lime-700",
+      "value": "#3a5007"
+    },
+    {
+      "name": "primary",
+      "value": "#ff8670"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "a2-font-size-900",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "a2-font-size-800",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "a2-font-size-700",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "a2-font-size-600",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "a2-font-size-500",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "a2-font-size-400",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "a2-typography-paragraph-font-family",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "a2-typography-heading-font-family",
+      "fontFamily": "\"Sofia Pro\", SofiaPro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "a2-typography-label-font-family",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "a2-font-family-base",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "a2-font-family-display",
+      "fontFamily": "\"Sofia Pro\", SofiaPro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "data-table-body-cell-select-trigger-101bf-5",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "bodytext-gpm68-61",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "a2-font-size-300",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "a2-font-size-200",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "a2-font-size-100",
+      "fontFamily": "\"Nunito Sans\", sans-serif",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff8670",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff8670",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**Anvil** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff8670` brand accent.\n\nTypography centers cleanly on `Nunito Sans` (40px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fcfcfc` surface layering.\n\nMaintained by **ServiceTitan**. Source: published token package, package `@servicetitan/anvil2`. Inventory: **91** colors, **17** typography steps, and **8** documented components (see package license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fcfcfc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#fcfcfc`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff8670` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff8670` with `#0b0b0c` text (8.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Nunito Sans` headings with `Nunito Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fcfcfc` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,469 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f6f8f9",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "cui-bg-accent",
+  "border": "#e3e7eb",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "cui-bg-normal",
+      "value": "#171d24"
+    },
+    {
+      "name": "cui-bg-normal-hovered",
+      "value": "#212831"
+    },
+    {
+      "name": "cui-bg-normal-pressed",
+      "value": "#28313c"
+    },
+    {
+      "name": "cui-bg-subtle",
+      "value": "#0c0f12"
+    },
+    {
+      "name": "cui-bg-subtle-hovered",
+      "value": "#212b31"
+    },
+    {
+      "name": "cui-bg-subtle-pressed",
+      "value": "#36434a"
+    },
+    {
+      "name": "cui-bg-highlight",
+      "value": "#363c41"
+    },
+    {
+      "name": "cui-bg-highlight-hovered",
+      "value": "#3d4249"
+    },
+    {
+      "name": "cui-bg-highlight-pressed",
+      "value": "#424950"
+    },
+    {
+      "name": "cui-bg-strong",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-bg-strong-hovered",
+      "value": "#f6f8f9"
+    },
+    {
+      "name": "cui-bg-strong-pressed",
+      "value": "#e3e7eb"
+    },
+    {
+      "name": "cui-bg-accent",
+      "value": "#0c0f12"
+    },
+    {
+      "name": "cui-bg-accent-hovered",
+      "value": "#20292e"
+    },
+    {
+      "name": "cui-bg-accent-pressed",
+      "value": "#313d43"
+    },
+    {
+      "name": "cui-bg-accent-strong",
+      "value": "#e1e7ef"
+    },
+    {
+      "name": "cui-bg-accent-strong-hovered",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-bg-accent-strong-pressed",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-bg-success-strong",
+      "value": "#0cd368"
+    },
+    {
+      "name": "cui-bg-success-strong-hovered",
+      "value": "#13e072"
+    },
+    {
+      "name": "cui-bg-success-strong-pressed",
+      "value": "#25e980"
+    },
+    {
+      "name": "cui-bg-warning-strong",
+      "value": "#f5b81c"
+    },
+    {
+      "name": "cui-bg-warning-strong-hovered",
+      "value": "#f7c440"
+    },
+    {
+      "name": "cui-bg-warning-strong-pressed",
+      "value": "#f7cb59"
+    },
+    {
+      "name": "cui-bg-danger-strong",
+      "value": "#ff4e37"
+    },
+    {
+      "name": "cui-bg-danger-strong-hovered",
+      "value": "#ff6259"
+    },
+    {
+      "name": "cui-bg-danger-strong-pressed",
+      "value": "#ff827b"
+    },
+    {
+      "name": "cui-bg-promo-strong",
+      "value": "#c353f7"
+    },
+    {
+      "name": "cui-bg-promo-strong-hovered",
+      "value": "#c768f3"
+    },
+    {
+      "name": "cui-bg-promo-strong-pressed",
+      "value": "#ce72f8"
+    },
+    {
+      "name": "cui-fg-normal",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-fg-normal-pressed",
+      "value": "#e3e7eb"
+    },
+    {
+      "name": "cui-fg-on-strong",
+      "value": "#0f131a"
+    },
+    {
+      "name": "cui-fg-on-strong-hovered",
+      "value": "#0f131a"
+    },
+    {
+      "name": "cui-fg-on-strong-pressed",
+      "value": "#0f131a"
+    },
+    {
+      "name": "cui-fg-accent",
+      "value": "#e1e7ef"
+    },
+    {
+      "name": "cui-fg-accent-hovered",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-fg-accent-pressed",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-fg-success",
+      "value": "#17db72"
+    },
+    {
+      "name": "cui-fg-success-hovered",
+      "value": "#13e072"
+    },
+    {
+      "name": "cui-fg-success-pressed",
+      "value": "#25e980"
+    },
+    {
+      "name": "cui-fg-warning",
+      "value": "#f5b81c"
+    },
+    {
+      "name": "cui-fg-warning-hovered",
+      "value": "#f7c440"
+    },
+    {
+      "name": "cui-fg-warning-pressed",
+      "value": "#f7cb59"
+    },
+    {
+      "name": "cui-fg-danger",
+      "value": "#ff634e"
+    },
+    {
+      "name": "cui-fg-danger-hovered",
+      "value": "#ff5c47"
+    },
+    {
+      "name": "cui-fg-danger-pressed",
+      "value": "#ff6a57"
+    },
+    {
+      "name": "cui-fg-promo",
+      "value": "#cf7bf6"
+    },
+    {
+      "name": "cui-fg-promo-hovered",
+      "value": "#c768f3"
+    },
+    {
+      "name": "cui-fg-promo-pressed",
+      "value": "#ce72f8"
+    },
+    {
+      "name": "cui-border-strong",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-border-strong-hovered",
+      "value": "#f6f8f9"
+    },
+    {
+      "name": "cui-border-strong-pressed",
+      "value": "#e3e7eb"
+    },
+    {
+      "name": "cui-border-accent",
+      "value": "#ffffff"
+    },
+    {
+      "name": "cui-border-accent-hovered",
+      "value": "#f6f8f9"
+    },
+    {
+      "name": "cui-border-accent-pressed",
+      "value": "#e3e7eb"
+    },
+    {
+      "name": "cui-border-success",
+      "value": "#0cd368"
+    },
+    {
+      "name": "cui-border-success-hovered",
+      "value": "#13e072"
+    },
+    {
+      "name": "cui-border-success-pressed",
+      "value": "#25e980"
+    },
+    {
+      "name": "cui-border-warning",
+      "value": "#f5b81c"
+    },
+    {
+      "name": "cui-border-warning-hovered",
+      "value": "#f7c440"
+    },
+    {
+      "name": "cui-border-warning-pressed",
+      "value": "#f7cb59"
+    },
+    {
+      "name": "cui-border-danger",
+      "value": "#ff634e"
+    },
+    {
+      "name": "cui-border-danger-hovered",
+      "value": "#ff5c47"
+    },
+    {
+      "name": "cui-border-danger-pressed",
+      "value": "#ff6a57"
+    },
+    {
+      "name": "cui-border-promo",
+      "value": "#c353f7"
+    },
+    {
+      "name": "cui-border-promo-hovered",
+      "value": "#c768f3"
+    },
+    {
+      "name": "cui-border-promo-pressed",
+      "value": "#ce72f8"
+    },
+    {
+      "name": "cui-bg-elevated",
+      "value": "#2f3438"
+    },
+    {
+      "name": "cui-border-focus",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#e1e7ef"
+    }
+  ],
+  "type": [
+    {
+      "name": "cui-typography-title-one-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "7.5rem",
+      "px": 120
+    },
+    {
+      "name": "cui-typography-title-two-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "6rem",
+      "px": 96
+    },
+    {
+      "name": "cui-typography-title-three-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "cui-typography-title-four-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "cui-typography-headline-one-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "cui-typography-headline-two-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "cui-typography-headline-three-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "cui-typography-body-large-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "cui-typography-headline-four-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "mono",
+      "fontFamily": "Menlo, Consolas, Monaco, \"Liberation Mono\", \"Lucida Console\", monospace",
+      "px": 16
+    },
+    {
+      "name": "cui-font-stack-default",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "cui-font-stack-mono",
+      "fontFamily": "Menlo, Consolas, Monaco, \"Liberation Mono\", \"Lucida Console\", monospace",
+      "px": 16
+    },
+    {
+      "name": "cui-typography-body-one-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "cui-typography-sub-headline-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "cui-typography-body-two-font-size",
+      "fontFamily": "aktiv-grotesk, Helvetica, Arial, system-ui, sans-serif, \"Segoe UI\", Roboto, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": ".875rem",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f6f8f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "cui-bg-accent",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "cui-bg-accent",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f6f8f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f6f8f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f6f8f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Circuit UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `cui-bg-accent` brand accent.\n\nTypography centers cleanly on `aktiv-grotesk` (120px display down to 20px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f6f8f9` surface layering.\n\nMaintained by **SumUp**. Source: published token package (https://github.com/sumup-oss/circuit-ui/tree/main/packages/design-tokens/README.md), package `@sumup/design-tokens`. Inventory: **71** colors, **16** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f6f8f9` cards; separate sibling sections using `#e3e7eb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f6f8f9`) and `1px solid #e3e7eb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `cui-bg-accent` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `cui-bg-accent` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `aktiv-grotesk` headings with `aktiv-grotesk` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f6f8f9` surface shifts and `#e3e7eb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,482 @@
+{
+  "canvas": "#fff",
+  "surface": "rgb(243, 244.5, 246.75)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#876400",
+  "border": "rgb(231, 234, 239.5)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "pico-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "pico-muted-border-color",
+      "value": "rgb(231, 234, 239.5)"
+    },
+    {
+      "name": "pico-primary",
+      "value": "#876400"
+    },
+    {
+      "name": "pico-primary-background",
+      "value": "#ffbf00"
+    },
+    {
+      "name": "pico-primary-hover",
+      "value": "#694d00"
+    },
+    {
+      "name": "pico-primary-hover-background",
+      "value": "#e8ae01"
+    },
+    {
+      "name": "pico-primary-inverse",
+      "value": "#000"
+    },
+    {
+      "name": "pico-secondary",
+      "value": "#5d6b89"
+    },
+    {
+      "name": "pico-secondary-background",
+      "value": "#525f7a"
+    },
+    {
+      "name": "pico-secondary-hover",
+      "value": "#48536b"
+    },
+    {
+      "name": "pico-secondary-hover-background",
+      "value": "#48536b"
+    },
+    {
+      "name": "pico-secondary-inverse",
+      "value": "#fff"
+    },
+    {
+      "name": "pico-contrast-background",
+      "value": "#181c25"
+    },
+    {
+      "name": "pico-contrast-hover-background",
+      "value": "#000"
+    },
+    {
+      "name": "pico-mark-background-color",
+      "value": "rgb(252.5, 230.5, 191.5)"
+    },
+    {
+      "name": "pico-code-background-color",
+      "value": "rgb(243, 244.5, 246.75)"
+    },
+    {
+      "name": "pico-form-element-background-color",
+      "value": "rgb(251, 251.5, 252.25)"
+    },
+    {
+      "name": "pico-form-element-selected-background-color",
+      "value": "#dfe3eb"
+    },
+    {
+      "name": "pico-form-element-border-color",
+      "value": "#cfd5e2"
+    },
+    {
+      "name": "pico-form-element-active-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "pico-form-element-invalid-border-color",
+      "value": "rgb(183.5, 105.5, 106.5)"
+    },
+    {
+      "name": "pico-form-element-invalid-active-border-color",
+      "value": "rgb(200.25, 79.25, 72.25)"
+    },
+    {
+      "name": "pico-form-element-valid-border-color",
+      "value": "rgb(76, 154.5, 137.5)"
+    },
+    {
+      "name": "pico-form-element-valid-active-border-color",
+      "value": "rgb(39, 152.75, 118.75)"
+    },
+    {
+      "name": "pico-switch-background-color",
+      "value": "#bfc7d9"
+    },
+    {
+      "name": "pico-range-border-color",
+      "value": "#dfe3eb"
+    },
+    {
+      "name": "pico-range-active-border-color",
+      "value": "#bfc7d9"
+    },
+    {
+      "name": "pico-card-sectioning-background-color",
+      "value": "rgb(251, 251.5, 252.25)"
+    },
+    {
+      "name": "pico-dropdown-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "pico-dropdown-border-color",
+      "value": "#eff1f4"
+    },
+    {
+      "name": "pico-dropdown-hover-background-color",
+      "value": "#eff1f4"
+    },
+    {
+      "name": "pico-progress-background-color",
+      "value": "#dfe3eb"
+    },
+    {
+      "name": "pico-card-background-color",
+      "value": "#181c25"
+    },
+    {
+      "name": "pico-color-red-950",
+      "value": "#1c0d06"
+    },
+    {
+      "name": "pico-color-red-250",
+      "value": "#f5a390"
+    },
+    {
+      "name": "pico-color-pink-550",
+      "value": "#c72259"
+    },
+    {
+      "name": "pico-color-fuchsia-850",
+      "value": "#480b33"
+    },
+    {
+      "name": "pico-color-fuchsia-150",
+      "value": "#f9c6e1"
+    },
+    {
+      "name": "pico-color-purple-450",
+      "value": "#c652dc"
+    },
+    {
+      "name": "pico-color-violet-750",
+      "value": "#4d2585"
+    },
+    {
+      "name": "pico-color-violet-50",
+      "value": "#f3eff7"
+    },
+    {
+      "name": "pico-color-indigo-350",
+      "value": "#a294e5"
+    },
+    {
+      "name": "pico-color-blue-650",
+      "value": "#184eb8"
+    },
+    {
+      "name": "pico-color-azure-950",
+      "value": "#04121d"
+    },
+    {
+      "name": "pico-color-azure-250",
+      "value": "#79c0ff"
+    },
+    {
+      "name": "pico-color-cyan-550",
+      "value": "#047878"
+    },
+    {
+      "name": "pico-color-jade-850",
+      "value": "#042c1b"
+    },
+    {
+      "name": "pico-color-jade-150",
+      "value": "#39f1a6"
+    },
+    {
+      "name": "pico-color-green-450",
+      "value": "#409614"
+    },
+    {
+      "name": "pico-color-lime-750",
+      "value": "#304100"
+    },
+    {
+      "name": "pico-color-lime-50",
+      "value": "#defc85"
+    },
+    {
+      "name": "pico-color-yellow-350",
+      "value": "#ad9f00"
+    },
+    {
+      "name": "pico-color-amber-650",
+      "value": "#694d00"
+    },
+    {
+      "name": "pico-color-pumpkin-950",
+      "value": "#180f04"
+    },
+    {
+      "name": "pico-color-pumpkin-250",
+      "value": "#ffa23a"
+    },
+    {
+      "name": "pico-color-orange-550",
+      "value": "#bd3c13"
+    },
+    {
+      "name": "pico-color-sand-850",
+      "value": "#272622"
+    },
+    {
+      "name": "pico-color-sand-150",
+      "value": "#dad4c2"
+    },
+    {
+      "name": "pico-color-grey-450",
+      "value": "#808080"
+    },
+    {
+      "name": "pico-color-zinc-750",
+      "value": "#373c44"
+    },
+    {
+      "name": "pico-color-zinc-50",
+      "value": "#f0f1f3"
+    },
+    {
+      "name": "pico-color-slate-350",
+      "value": "#909ebe"
+    },
+    {
+      "name": "red-950",
+      "value": "#1c0d06"
+    },
+    {
+      "name": "red-250",
+      "value": "#f5a390"
+    },
+    {
+      "name": "pink-500",
+      "value": "#d92662"
+    },
+    {
+      "name": "fuchsia-750",
+      "value": "#700e4f"
+    },
+    {
+      "name": "fuchsia-50",
+      "value": "#fbedf4"
+    },
+    {
+      "name": "purple-300",
+      "value": "#db90e8"
+    },
+    {
+      "name": "violet-550",
+      "value": "#8352c5"
+    },
+    {
+      "name": "indigo-800",
+      "value": "#272678"
+    },
+    {
+      "name": "indigo-100",
+      "value": "#e5e0f4"
+    },
+    {
+      "name": "blue-350",
+      "value": "#8999f9"
+    },
+    {
+      "name": "azure-600",
+      "value": "#02659a"
+    },
+    {
+      "name": "cyan-850",
+      "value": "#052b2b"
+    },
+    {
+      "name": "cyan-150",
+      "value": "#3deceb"
+    },
+    {
+      "name": "jade-400",
+      "value": "#00a66e"
+    },
+    {
+      "name": "green-650",
+      "value": "#265e09"
+    },
+    {
+      "name": "lime-900",
+      "value": "#191d03"
+    },
+    {
+      "name": "lime-200",
+      "value": "#a5d601"
+    },
+    {
+      "name": "yellow-450",
+      "value": "#908501"
+    },
+    {
+      "name": "amber-700",
+      "value": "#5b4200"
+    },
+    {
+      "name": "pumpkin-950",
+      "value": "#180f04"
+    },
+    {
+      "name": "pumpkin-250",
+      "value": "#ffa23a"
+    },
+    {
+      "name": "orange-500",
+      "value": "#d24317"
+    },
+    {
+      "name": "sand-750",
+      "value": "#3d3b35"
+    },
+    {
+      "name": "sand-50",
+      "value": "#f2f0ec"
+    },
+    {
+      "name": "grey-300",
+      "value": "#ababab"
+    },
+    {
+      "name": "zinc-550",
+      "value": "#646b79"
+    },
+    {
+      "name": "slate-800",
+      "value": "#2a3140"
+    },
+    {
+      "name": "slate-100",
+      "value": "#dfe3eb"
+    },
+    {
+      "name": "primary",
+      "value": "#876400"
+    }
+  ],
+  "type": [
+    {
+      "name": "pico-font-size",
+      "fontFamily": "system-ui, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, \"Helvetica Neue\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "pico-font-family-emoji",
+      "fontFamily": "\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "pico-font-family-sans-serif",
+      "fontFamily": "system-ui, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, \"Helvetica Neue\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "pico-font-family-monospace",
+      "fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "pico-font-family",
+      "fontFamily": "system-ui, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, \"Helvetica Neue\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "rgb(243, 244.5, 246.75)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#876400",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#876400",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(243, 244.5, 246.75)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "rgb(243, 244.5, 246.75)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgb(243, 244.5, 246.75)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Pico CSS** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#876400` brand accent.\n\nTypography centers cleanly on `System UI` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `rgb(243, 244.5, 246.75)` surface layering.\n\nMaintained by **Pico.css**. Source: published token package (https://picocss.com), package `@picocss/pico`. Inventory: **91** colors, **5** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `rgb(243, 244.5, 246.75)` cards; separate sibling sections using `rgb(231, 234, 239.5)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `rgb(243, 244.5, 246.75)`) and `1px solid rgb(231, 234, 239.5)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#876400` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#876400` with `#f7f7f8` text (5.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `rgb(243, 244.5, 246.75)` surface shifts and `rgb(231, 234, 239.5)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

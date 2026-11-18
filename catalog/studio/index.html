@@ -9,7 +9,7 @@
       content="Deterministic Design System Maker, Indexed Logo Construction Database, Logo Maker, WebGL2 LogoFX, and Brand Kit Workbench."
     />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <style>html.ds-chameleon-enter #root{opacity:0;transform:scale(.992)}</style>
+    <style>html.ds-chameleon-enter #root{opacity:0}</style>
     <script>
       (function () {
         var theme = 'dark';
@@ -18,9 +18,19 @@
         } catch (e) {}
         var root = document.documentElement;
         root.classList.toggle('dark', theme !== 'light');
+        root.classList.toggle('light', theme === 'light');
+        root.style.colorScheme = theme;
         root.style.backgroundColor = theme === 'light' ? '#fafafa' : '#09090b';
+        var hasCrossDocVT = 'onpagereveal' in window && location.protocol !== 'file:';
+        if (hasCrossDocVT) {
+          try {
+            sessionStorage.removeItem('ds_portal_handoff');
+            sessionStorage.removeItem('ds_studio_chameleon');
+          } catch (e) {}
+          return;
+        }
         try {
-          var raw = sessionStorage.getItem('ds_studio_chameleon');
+          var raw = sessionStorage.getItem('ds_portal_handoff') || sessionStorage.getItem('ds_studio_chameleon');
           if (raw) {
             var data = JSON.parse(raw);
             if (data && typeof data.ts === 'number' && Date.now() - data.ts < 5000) {
@@ -29,13 +39,14 @@
                 root.classList.remove('ds-chameleon-enter');
               }, 900);
             } else {
+              sessionStorage.removeItem('ds_portal_handoff');
               sessionStorage.removeItem('ds_studio_chameleon');
             }
           }
         } catch (e) {}
       })();
     </script>
-    <script type="module" crossorigin src="./assets/app.js"></script>
+    <script type="module" blocking="render" crossorigin src="./assets/app.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index.css">
   </head>
   <body>

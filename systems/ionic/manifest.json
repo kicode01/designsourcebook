@@ -1,0 +1,42 @@
+{
+  "name": "ionic",
+  "displayName": "Ionic Framework",
+  "description": "Ionic Framework — tokens imported from @ionic/core.",
+  "style": "Ionic Framework — tokens imported from @ionic/core.",
+  "category": "Ionic",
+  "org": "Ionic",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "ionic",
+    "dark"
+  ],
+  "homepage": "https://ionicframework.com/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @ionic/core@9.0.12 (6 token files, 108 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@ionic/core",
+    "version": "9.0.12"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 14,
+    "components": 17
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

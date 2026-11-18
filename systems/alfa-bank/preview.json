@@ -1,0 +1,476 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ef3124",
+  "border": "#d5d6dc",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-static-corpbg-neutral",
+      "value": "#bdc0c2"
+    },
+    {
+      "name": "color-dark-accent-secondary",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "color-dark-base-bg-alt-secondary-inverted",
+      "value": "#fff"
+    },
+    {
+      "name": "color-dark-modal-bg-primary",
+      "value": "#1c1c1e"
+    },
+    {
+      "name": "color-dark-neutral-0-press",
+      "value": "#353539"
+    },
+    {
+      "name": "color-dark-neutral-1300-inverted",
+      "value": "#212124"
+    },
+    {
+      "name": "color-dark-neutral-1500-press",
+      "value": "#a0a1a9"
+    },
+    {
+      "name": "color-dark-neutral-300-inverted",
+      "value": "#e7e8eb"
+    },
+    {
+      "name": "color-dark-neutral-400-press",
+      "value": "#4a4a51"
+    },
+    {
+      "name": "color-dark-neutral-700-inverted",
+      "value": "#898991"
+    },
+    {
+      "name": "color-dark-status-info-inverted-press",
+      "value": "#2c64d4"
+    },
+    {
+      "name": "color-dark-status-muted-info-hover",
+      "value": "#293044"
+    },
+    {
+      "name": "color-dark-text-attention-inverted-press",
+      "value": "#b45a06"
+    },
+    {
+      "name": "color-dark-text-negative-hover",
+      "value": "#ff755e"
+    },
+    {
+      "name": "color-dark-text-positive-inverted-press",
+      "value": "#036625"
+    },
+    {
+      "name": "color-light-accent-secondary-hover",
+      "value": "#2f2f32"
+    },
+    {
+      "name": "color-light-base-bg-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "color-light-modal-bg-primary-inverted",
+      "value": "#1c1c1e"
+    },
+    {
+      "name": "color-light-neutral-100",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "color-light-neutral-1300-inverted-hover",
+      "value": "#d2d3d9"
+    },
+    {
+      "name": "color-light-neutral-200",
+      "value": "#edeef0"
+    },
+    {
+      "name": "color-light-neutral-300-inverted-hover",
+      "value": "#2f2f32"
+    },
+    {
+      "name": "color-light-neutral-500",
+      "value": "#babbc2"
+    },
+    {
+      "name": "color-light-neutral-700-inverted-hover",
+      "value": "#a0a1a9"
+    },
+    {
+      "name": "color-light-status-info-press",
+      "value": "#2c64d4"
+    },
+    {
+      "name": "color-light-status-muted-info-inverted",
+      "value": "#222a3e"
+    },
+    {
+      "name": "color-light-text-attention-press",
+      "value": "#b45a06"
+    },
+    {
+      "name": "color-light-text-negative-inverted",
+      "value": "#ff4837"
+    },
+    {
+      "name": "color-light-text-positive-press",
+      "value": "#036625"
+    },
+    {
+      "name": "color-static-accent-secondary-inverted",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "color-static-neutral-0-inverted-press",
+      "value": "#353539"
+    },
+    {
+      "name": "color-static-neutral-1300-hover",
+      "value": "#3f3f45"
+    },
+    {
+      "name": "color-static-neutral-1500-inverted-press",
+      "value": "#a0a1a9"
+    },
+    {
+      "name": "color-static-neutral-300-hover",
+      "value": "#dcdde1"
+    },
+    {
+      "name": "color-static-neutral-400-inverted-press",
+      "value": "#4a4a51"
+    },
+    {
+      "name": "color-static-neutral-700-hover",
+      "value": "#75757d"
+    },
+    {
+      "name": "color-static-status-muted-alt-info-inverted",
+      "value": "#293044"
+    },
+    {
+      "name": "color-static-text-info",
+      "value": "#2a77ef"
+    },
+    {
+      "name": "color-static-text-negative-inverted-hover",
+      "value": "#ff755e"
+    },
+    {
+      "name": "color-static-text-primary-dark",
+      "value": "#0e0e0e"
+    },
+    {
+      "name": "color-dark-bg-primary-inverted",
+      "value": "#fff"
+    },
+    {
+      "name": "color-dark-border-primary-inverted",
+      "value": "#d5d6dc"
+    },
+    {
+      "name": "color-dark-graphic-neutral",
+      "value": "#2a2a2c"
+    },
+    {
+      "name": "color-light-bg-accent",
+      "value": "#ef3124"
+    },
+    {
+      "name": "color-light-bg-secondary-grouped",
+      "value": "#fff"
+    },
+    {
+      "name": "color-light-border-secondary-inverted",
+      "value": "#27272a"
+    },
+    {
+      "name": "color-light-graphic-primary-inverted",
+      "value": "#f1f1f1"
+    },
+    {
+      "name": "color-static-bg-neutral-light",
+      "value": "#dcdcdd"
+    },
+    {
+      "name": "color-dark-bg-accent-shade-15",
+      "value": "rgb(203, 42, 31)"
+    },
+    {
+      "name": "color-dark-bg-primary-inverted-shade-15",
+      "value": "rgb(217, 217, 217)"
+    },
+    {
+      "name": "color-dark-bg-secondary-inverted-tint-15",
+      "value": "rgb(244, 245, 246)"
+    },
+    {
+      "name": "color-dark-graphic-primary-tint-10",
+      "value": "rgb(242, 242, 242)"
+    },
+    {
+      "name": "color-dark-graphic-secondary-inverted-shade-20",
+      "value": "rgb(110, 110, 116)"
+    },
+    {
+      "name": "color-light-bg-accent-shade-7",
+      "value": "rgb(222, 46, 33)"
+    },
+    {
+      "name": "color-light-bg-secondary-tint-15",
+      "value": "rgb(244, 245, 246)"
+    },
+    {
+      "name": "color-light-graphic-accent-shade-7",
+      "value": "rgb(222, 46, 33)"
+    },
+    {
+      "name": "color-light-graphic-primary-inverted-shade-7",
+      "value": "rgb(224, 224, 224)"
+    },
+    {
+      "name": "color-light-graphic-secondary-inverted-shade-30",
+      "value": "rgb(96, 96, 102)"
+    },
+    {
+      "name": "color-static-brand-red",
+      "value": "#ef3124"
+    },
+    {
+      "name": "color-dark-decorative-text-fuchsia-inverted",
+      "value": "#d62f95"
+    },
+    {
+      "name": "color-dark-decorative-text-orange",
+      "value": "#fa9313"
+    },
+    {
+      "name": "color-dark-decorative-text-teal-inverted",
+      "value": "#058a8f"
+    },
+    {
+      "name": "color-light-decorative-text-green",
+      "value": "#0d9336"
+    },
+    {
+      "name": "color-light-decorative-text-orange-inverted",
+      "value": "#fa9313"
+    },
+    {
+      "name": "color-light-decorative-text-yellow",
+      "value": "#dcb30b"
+    },
+    {
+      "name": "color-light-superapp-surface-bg-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "color-static-corpbg-tertiary",
+      "value": "#7a7f85"
+    },
+    {
+      "name": "color-static-status-blue",
+      "value": "#007aff"
+    },
+    {
+      "name": "color-dark-status-muted-alt-positive-inverted",
+      "value": "#d1f1d7"
+    },
+    {
+      "name": "color-light-status-muted-alt-positive-inverted-press",
+      "value": "#2d4e33"
+    },
+    {
+      "name": "color-dark-graphic-tertiary-inverted",
+      "value": "#b8b9c0"
+    },
+    {
+      "name": "color-light-graphic-tertiary-tint-15",
+      "value": "rgb(195, 195, 201)"
+    },
+    {
+      "name": "color-dark-decorative-muted-alt-cyan-hover",
+      "value": "#1e3e51"
+    },
+    {
+      "name": "color-dark-decorative-muted-blue-hover",
+      "value": "#293044"
+    },
+    {
+      "name": "color-dark-decorative-muted-teal-inverted-hover",
+      "value": "#c8f1f3"
+    },
+    {
+      "name": "color-dark-decorative-soft-magenta-inverted-hover",
+      "value": "#fba1bb"
+    },
+    {
+      "name": "color-light-decorative-indigo-hover",
+      "value": "#7a63f1"
+    },
+    {
+      "name": "color-light-decorative-muted-alt-orange-press",
+      "value": "#f0c492"
+    },
+    {
+      "name": "color-light-decorative-muted-orange",
+      "value": "#ffefd9"
+    },
+    {
+      "name": "color-light-decorative-soft-fuchsia-inverted-press",
+      "value": "#fdb1e4"
+    },
+    {
+      "name": "color-light-go-lilac",
+      "value": "#f6ebff"
+    },
+    {
+      "name": "color-static-pfm-system-tars",
+      "value": "#a0a1a9"
+    },
+    {
+      "name": "color-dark-promo-pale-seafoam-press",
+      "value": "#baf6d2"
+    },
+    {
+      "name": "color-light-promo-conclave",
+      "value": "#b3ccff"
+    },
+    {
+      "name": "color-light-promo-seafoam-hover",
+      "value": "#80f9b7"
+    },
+    {
+      "name": "color-static-promo-vibrant-conclave",
+      "value": "#266fff"
+    },
+    {
+      "name": "color-dark-qualitative-tricolor-set-b-3",
+      "value": "#fda136"
+    },
+    {
+      "name": "color-light-qualitative-tricolor-set-b-3",
+      "value": "#fda136"
+    },
+    {
+      "name": "color-dark-sequential-magenta-7",
+      "value": "#55202d"
+    },
+    {
+      "name": "color-light-sequential-fuchsia-7",
+      "value": "#ffdafa"
+    },
+    {
+      "name": "primary",
+      "value": "#ef3124"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-family-system",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-styrene",
+      "fontFamily": "\"Styrene UI\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-alfasans",
+      "fontFamily": "\"Alfa Interface Sans\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ef3124",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ef3124",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Alfa Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ef3124` brand accent.\n\nTypography centers cleanly on `System UI` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Alfa-Bank**. Source: published token package, package `@alfalab/core-components-vars`. Inventory: **91** colors, **4** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#d5d6dc` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid #d5d6dc` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ef3124` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ef3124` with `#f7f7f8` text (3.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fff` surface shifts and `#d5d6dc` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

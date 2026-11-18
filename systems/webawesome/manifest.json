@@ -1,0 +1,42 @@
+{
+  "name": "webawesome",
+  "displayName": "Web Awesome",
+  "description": "Web Awesome — tokens imported from @awesome.me/webawesome.",
+  "style": "Web Awesome — tokens imported from @awesome.me/webawesome.",
+  "category": "Web Awesome",
+  "org": "Web Awesome",
+  "theme": "light",
+  "tags": [
+    "published",
+    "web-awesome",
+    "light"
+  ],
+  "homepage": "https://webawesome.com/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @awesome.me/webawesome@3.15.0 (4 token files, 159 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@awesome.me/webawesome",
+    "version": "3.15.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 4,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

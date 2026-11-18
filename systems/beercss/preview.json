@@ -1,0 +1,283 @@
+{
+  "canvas": "#49454e",
+  "surface": "#141316",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#cfbcff",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "0px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#cfbcff"
+    },
+    {
+      "name": "on-primary",
+      "value": "#381e72"
+    },
+    {
+      "name": "primary-container",
+      "value": "#4f378a"
+    },
+    {
+      "name": "on-primary-container",
+      "value": "#e9ddff"
+    },
+    {
+      "name": "secondary",
+      "value": "#cbc2db"
+    },
+    {
+      "name": "on-secondary",
+      "value": "#332d41"
+    },
+    {
+      "name": "secondary-container",
+      "value": "#4a4458"
+    },
+    {
+      "name": "on-secondary-container",
+      "value": "#e8def8"
+    },
+    {
+      "name": "tertiary",
+      "value": "#efb8c8"
+    },
+    {
+      "name": "on-tertiary",
+      "value": "#4a2532"
+    },
+    {
+      "name": "tertiary-container",
+      "value": "#633b48"
+    },
+    {
+      "name": "on-tertiary-container",
+      "value": "#ffd9e3"
+    },
+    {
+      "name": "error",
+      "value": "#ffb4ab"
+    },
+    {
+      "name": "on-error",
+      "value": "#690005"
+    },
+    {
+      "name": "error-container",
+      "value": "#93000a"
+    },
+    {
+      "name": "on-error-container",
+      "value": "#ffb4ab"
+    },
+    {
+      "name": "background",
+      "value": "#1c1b1e"
+    },
+    {
+      "name": "on-background",
+      "value": "#e6e1e6"
+    },
+    {
+      "name": "surface",
+      "value": "#141316"
+    },
+    {
+      "name": "on-surface",
+      "value": "#e6e1e6"
+    },
+    {
+      "name": "surface-variant",
+      "value": "#49454e"
+    },
+    {
+      "name": "on-surface-variant",
+      "value": "#cac4cf"
+    },
+    {
+      "name": "outline",
+      "value": "#948f99"
+    },
+    {
+      "name": "outline-variant",
+      "value": "#49454e"
+    },
+    {
+      "name": "shadow",
+      "value": "#000000"
+    },
+    {
+      "name": "scrim",
+      "value": "#000000"
+    },
+    {
+      "name": "inverse-surface",
+      "value": "#e6e1e6"
+    },
+    {
+      "name": "inverse-on-surface",
+      "value": "#313033"
+    },
+    {
+      "name": "inverse-primary",
+      "value": "#6750a4"
+    },
+    {
+      "name": "surface-dim",
+      "value": "#141316"
+    },
+    {
+      "name": "surface-bright",
+      "value": "#3a383c"
+    },
+    {
+      "name": "surface-container-lowest",
+      "value": "#0f0e11"
+    },
+    {
+      "name": "surface-container-low",
+      "value": "#1c1b1e"
+    },
+    {
+      "name": "surface-container",
+      "value": "#201f22"
+    },
+    {
+      "name": "surface-container-high",
+      "value": "#2b292d"
+    },
+    {
+      "name": "surface-container-highest",
+      "value": "#363438"
+    }
+  ],
+  "type": [
+    {
+      "name": "body",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "lineHeight": "1.5rem"
+    }
+  ],
+  "components": [
+    {
+      "key": "chip",
+      "kind": "badge",
+      "backgroundColor": "transparent",
+      "textColor": "#49454e",
+      "rounded": "0.5rem",
+      "border": "0.0625rem solid #cac4cf"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#6750a4"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "#ba1a1a",
+      "textColor": "#ffffff",
+      "rounded": "1rem",
+      "padding": "0 0.25rem"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "#1c1b1e",
+      "rounded": "0"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#6750a4",
+      "textColor": "#ffffff",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#313033",
+      "textColor": "#f4eff4",
+      "rounded": "0.25rem",
+      "padding": "0.5rem"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "textColor": "#cfbcff"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#141316",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#cfbcff",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#cfbcff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#141316",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#141316",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#49454e",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#141316",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "derived"
+  },
+  "overview": "**Beer CSS** is a dark-first design system anchored on `#49454e` canvas surfaces with `#f7f7f8` primary ink (8.7:1 contrast) and `#cfbcff` brand accent.\n\nTypography centers cleanly on `System UI` (14px display down to 14px body), unified by `0px` razor-sharp architectural corners and stepped `#49454e` -> `#141316` surface layering.\n\nSource: published token package (https://www.beercss.com/), package `beercss`. Inventory: **36** colors, **1** typography steps, and **14** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 14 component tokens with documented paddings: `0 0.25rem`, `0`, `0.5rem`, `8px 12px`, `2px`.\n- **Hierarchy**: Group controls cleanly within `#141316` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#49454e` -> `#141316`) and `1px solid color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#cfbcff` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#49454e` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.\n- Use `#cfbcff` with `#0b0b0c` text (11.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#141316` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,41 @@
+{
+  "name": "slack",
+  "displayName": "Slacc-Inspired",
+  "description": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
+  "style": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
+  "category": "VoltAgent DESIGN.md",
+  "org": "Slacc-Inspired",
+  "theme": "light",
+  "tags": [
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://slack.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (slack/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/slack"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 19,
+    "typography": 15,
+    "components": 24
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

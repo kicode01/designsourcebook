@@ -1,0 +1,42 @@
+{
+  "name": "esri",
+  "displayName": "Calcite Design System",
+  "description": "Esri Calcite Design System — tokens imported from @esri/calcite-design-tokens.",
+  "style": "Esri Calcite Design System — tokens imported from @esri/calcite-design-tokens.",
+  "category": "Esri",
+  "org": "Esri",
+  "theme": "light",
+  "tags": [
+    "published",
+    "esri",
+    "light"
+  ],
+  "homepage": "",
+  "license": "SEE LICENSE.md",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @esri/calcite-design-tokens@4.2.0 + @esri/calcite-components (6 token files, 992 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@esri/calcite-design-tokens",
+    "version": "4.2.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 51,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "canvas": "#fff",
+  "surface": "#f5f5f5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00ceb3",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "pink",
+      "value": "#eb5f8e"
+    },
+    {
+      "name": "light-green",
+      "value": "#72b72a"
+    },
+    {
+      "name": "light-blue",
+      "value": "#35adce"
+    },
+    {
+      "name": "yellow",
+      "value": "#fcc31e"
+    },
+    {
+      "name": "red",
+      "value": "#d60000"
+    },
+    {
+      "name": "dark-blue",
+      "value": "#00528a"
+    },
+    {
+      "name": "olive",
+      "value": "#b9cc3f"
+    },
+    {
+      "name": "turquoise",
+      "value": "#00ceb3"
+    },
+    {
+      "name": "light-orange",
+      "value": "#f39722"
+    },
+    {
+      "name": "lavender",
+      "value": "#c380bb"
+    },
+    {
+      "name": "bright-orange",
+      "value": "#f76908"
+    },
+    {
+      "name": "dove-grey",
+      "value": "#666"
+    },
+    {
+      "name": "graphite",
+      "value": "#2f2e31"
+    },
+    {
+      "name": "alto",
+      "value": "#d0d0d0"
+    },
+    {
+      "name": "gallery",
+      "value": "#ececec"
+    },
+    {
+      "name": "wild-sand",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "pastel-green",
+      "value": "#e3f1d4"
+    },
+    {
+      "name": "pastel-red",
+      "value": "#fbe6e6"
+    },
+    {
+      "name": "pastel-yellow",
+      "value": "#fef3d2"
+    },
+    {
+      "name": "pastel-blue",
+      "value": "#d7eff5"
+    },
+    {
+      "name": "strikethrough-color",
+      "value": "#666"
+    },
+    {
+      "name": "primary",
+      "value": "#00ceb3"
+    }
+  ],
+  "type": [
+    {
+      "name": "gg-c-modal-main-title",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": "32px"
+    },
+    {
+      "name": "body",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "gg-c-cards-title",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "gg-c-form-error-title",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "gg-c-alert-title",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "gg-c-minor-alert-title",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "single-figure-caption",
+      "fontFamily": "Poppins, giffgaff, \"Century Gothic\", CenturyGothic, AppleGothic, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": "18px"
+    }
+  ],
+  "components": [
+    {
+      "key": "gg-u-link",
+      "kind": "link",
+      "textColor": "#00528a"
+    },
+    {
+      "key": "gg-c-select",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "rounded": "0",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-accordion",
+      "kind": "accordion",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-radio",
+      "kind": "radio",
+      "backgroundColor": "#fff",
+      "padding": "8px  8px 44px",
+      "border": "2px solid #d0d0d0"
+    },
+    {
+      "key": "gg-c-btn",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "rounded": "24px",
+      "padding": "0 24px",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-link-button-2",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "padding": "0",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-minor-alert",
+      "kind": "alert",
+      "backgroundColor": "#fbe6e6",
+      "padding": "16px"
+    },
+    {
+      "key": "gg-c-radio-2",
+      "kind": "radio",
+      "textColor": "#d60000"
+    },
+    {
+      "key": "gg-c-tab-bar",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "border": "1px solid #000"
+    },
+    {
+      "key": "gg-c-select-list-2",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "padding": "0 16px",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-input-with-button",
+      "kind": "button",
+      "backgroundColor": "#000",
+      "textColor": "#fff",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-o-focus-panel",
+      "kind": "panel",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "padding": "24px"
+    },
+    {
+      "key": "gg-c-input-with-prefix-2",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "padding": "0 0 0 8px",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-input-with-suffix-3",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "padding": "0 8px 0 0",
+      "border": "2px solid #000"
+    },
+    {
+      "key": "gg-c-alert-info",
+      "kind": "alert",
+      "backgroundColor": "#00528a",
+      "textColor": "#fff"
+    },
+    {
+      "key": "gg-c-btn-loading",
+      "kind": "button",
+      "textColor": "transparent"
+    },
+    {
+      "key": "gg-c-alert-error",
+      "kind": "alert",
+      "backgroundColor": "#d60000",
+      "textColor": "#fff"
+    },
+    {
+      "key": "gg-c-btn-loading-text",
+      "kind": "button",
+      "textColor": "#000",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "gg-o-focus-panel-black",
+      "kind": "panel",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "gg-o-focus-panel-light-blue",
+      "kind": "panel",
+      "backgroundColor": "#35adce"
+    },
+    {
+      "key": "gg-c-pagination-current-page",
+      "kind": "nav",
+      "backgroundColor": "#000",
+      "textColor": "#fff"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00ceb3",
+      "textColor": "#0b0b0c",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00ceb3",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "derived"
+  },
+  "overview": "**giffgaff Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00ceb3` brand accent.\n\nTypography centers cleanly on `Poppins` (24px display down to 16px body), unified by `0px` razor-sharp architectural corners and stepped `#fff` -> `#f5f5f5` surface layering.\n\nMaintained by **giffgaff**. Source: live stylesheet extraction (https://www.giffgaff.design/). Inventory: **24** colors, **7** typography steps, and **26** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 26 component tokens with documented paddings: `8px  8px 44px`, `0 24px`, `0`, `16px`, `0 16px`.\n- **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f5f5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00ceb3` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#00ceb3` with `#0b0b0c` text (9.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Poppins` headings with `Poppins` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#f5f5f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `gg-c-input-with-prefix-2` fields and secondary buttons."
+}

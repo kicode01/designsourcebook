@@ -1,0 +1,41 @@
+{
+  "name": "inps",
+  "displayName": "Sirio",
+  "description": "INPS Sirio — tokens read from https://github.com/INPS-it/sirio-design-token.",
+  "style": "INPS Sirio — tokens read from https://github.com/INPS-it/sirio-design-token.",
+  "category": "INPS",
+  "org": "INPS",
+  "theme": "light",
+  "tags": [
+    "published",
+    "inps",
+    "light"
+  ],
+  "homepage": "https://github.com/INPS-it/sirio-design-token",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/INPS-it/sirio-design-token — 4 token files, 262 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/INPS-it/sirio-design-token"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 7,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

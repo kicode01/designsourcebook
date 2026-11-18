@@ -1,0 +1,525 @@
+{
+  "canvas": "#fff",
+  "surface": "#f7efe9",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#8c50b9",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "7px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-secondary",
+      "value": "#cb9569"
+    },
+    {
+      "name": "color-secondary-dark",
+      "value": "#a27754"
+    },
+    {
+      "name": "color-secondary-light",
+      "value": "#dbb596"
+    },
+    {
+      "name": "color-secondary-lighter",
+      "value": "#f7efe9"
+    },
+    {
+      "name": "color-cyan",
+      "value": "#01bfea"
+    },
+    {
+      "name": "color-cyan-dark",
+      "value": "#018fb0"
+    },
+    {
+      "name": "color-cyan-light",
+      "value": "#4dd2f0"
+    },
+    {
+      "name": "color-cyan-lighter",
+      "value": "#ccf2fb"
+    },
+    {
+      "name": "color-blue",
+      "value": "#087fd2"
+    },
+    {
+      "name": "color-blue-dark",
+      "value": "#065f9e"
+    },
+    {
+      "name": "color-blue-light",
+      "value": "#52a5e0"
+    },
+    {
+      "name": "color-blue-lighter",
+      "value": "#cee5f6"
+    },
+    {
+      "name": "color-purple",
+      "value": "#aa50b5"
+    },
+    {
+      "name": "color-purple-dark",
+      "value": "#803c88"
+    },
+    {
+      "name": "color-purple-light",
+      "value": "#c485cb"
+    },
+    {
+      "name": "color-purple-lighter",
+      "value": "#eedcf0"
+    },
+    {
+      "name": "color-red",
+      "value": "#f45564"
+    },
+    {
+      "name": "color-red-dark",
+      "value": "#c34450"
+    },
+    {
+      "name": "color-red-light",
+      "value": "#f78893"
+    },
+    {
+      "name": "color-red-lighter",
+      "value": "#fddde0"
+    },
+    {
+      "name": "color-pink",
+      "value": "#e26ea5"
+    },
+    {
+      "name": "color-pink-dark",
+      "value": "#aa537c"
+    },
+    {
+      "name": "color-pink-light",
+      "value": "#eb9ac0"
+    },
+    {
+      "name": "color-pink-lighter",
+      "value": "#f9e2ed"
+    },
+    {
+      "name": "color-orange",
+      "value": "#f77d2c"
+    },
+    {
+      "name": "color-orange-dark",
+      "value": "#d55d0c"
+    },
+    {
+      "name": "color-orange-light",
+      "value": "#fbae7c"
+    },
+    {
+      "name": "color-orange-lighter",
+      "value": "#fee9db"
+    },
+    {
+      "name": "color-green",
+      "value": "#7db058"
+    },
+    {
+      "name": "color-green-dark",
+      "value": "#5e8442"
+    },
+    {
+      "name": "color-green-light",
+      "value": "#a4c88a"
+    },
+    {
+      "name": "color-green-lighter",
+      "value": "#e5efde"
+    },
+    {
+      "name": "color-yellow",
+      "value": "#ffc748"
+    },
+    {
+      "name": "color-yellow-dark",
+      "value": "#d9a93d"
+    },
+    {
+      "name": "color-yellow-light",
+      "value": "#ffd87f"
+    },
+    {
+      "name": "color-yellow-lighter",
+      "value": "#ffeec8"
+    },
+    {
+      "name": "color-turquoise",
+      "value": "#00c8b5"
+    },
+    {
+      "name": "color-turquoise-dark",
+      "value": "#009688"
+    },
+    {
+      "name": "color-turquoise-light",
+      "value": "#4dd9cb"
+    },
+    {
+      "name": "color-turquoise-lighter",
+      "value": "#ccf4f0"
+    },
+    {
+      "name": "color-black",
+      "value": "#130a1a"
+    },
+    {
+      "name": "color-black-bis",
+      "value": "#241b27"
+    },
+    {
+      "name": "color-black-ter",
+      "value": "#2d232e"
+    },
+    {
+      "name": "color-grey-darker",
+      "value": "#6d5f64"
+    },
+    {
+      "name": "color-grey-dark",
+      "value": "#8a7d7f"
+    },
+    {
+      "name": "color-grey",
+      "value": "#9c9090"
+    },
+    {
+      "name": "color-grey-light",
+      "value": "#c8c0bd"
+    },
+    {
+      "name": "color-grey-lighter",
+      "value": "#dfdad7"
+    },
+    {
+      "name": "color-grey-lightest",
+      "value": "#e7e2e0"
+    },
+    {
+      "name": "color-white-ter",
+      "value": "#efebe9"
+    },
+    {
+      "name": "color-white-bis",
+      "value": "#faf7f5"
+    },
+    {
+      "name": "color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "color-primary",
+      "value": "#8c50b9"
+    },
+    {
+      "name": "color-primary-dark",
+      "value": "#5b3478"
+    },
+    {
+      "name": "color-primary-light",
+      "value": "#a373c7"
+    },
+    {
+      "name": "color-primary-lighter",
+      "value": "#eee5f5"
+    },
+    {
+      "name": "color-primary-lightest",
+      "value": "#f9f6fc"
+    },
+    {
+      "name": "color-light",
+      "value": "#efebe9"
+    },
+    {
+      "name": "color-dark",
+      "value": "#46285d"
+    },
+    {
+      "name": "color-info",
+      "value": "#2973cc"
+    },
+    {
+      "name": "color-info-dark",
+      "value": "#2362ad"
+    },
+    {
+      "name": "color-info-lighter",
+      "value": "#d4e3f5"
+    },
+    {
+      "name": "color-success",
+      "value": "#53ab73"
+    },
+    {
+      "name": "color-success-dark",
+      "value": "#499665"
+    },
+    {
+      "name": "color-success-lighter",
+      "value": "#ddeee3"
+    },
+    {
+      "name": "color-warning",
+      "value": "#f2bb50"
+    },
+    {
+      "name": "color-warning-dark",
+      "value": "#ce9f44"
+    },
+    {
+      "name": "color-warning-lighter",
+      "value": "#fcf1dc"
+    },
+    {
+      "name": "color-danger",
+      "value": "#f45564"
+    },
+    {
+      "name": "color-danger-dark",
+      "value": "#cf4855"
+    },
+    {
+      "name": "color-danger-lighter",
+      "value": "#fddde0"
+    },
+    {
+      "name": "primary",
+      "value": "#8c50b9"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Plush, serif",
+      "fontSize": "2.5rem",
+      "px": 40,
+      "fontWeight": 300
+    },
+    {
+      "name": "title",
+      "fontFamily": "Plush, serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "fontWeight": 400,
+      "lineHeight": 1
+    },
+    {
+      "name": "modal-card-title",
+      "fontFamily": "Plush, serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1
+    },
+    {
+      "name": "subtitle",
+      "fontFamily": "Plush, serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "heading",
+      "fontFamily": "Plush, serif",
+      "fontSize": "11px",
+      "px": 11
+    }
+  ],
+  "components": [
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "hsla(0,0%,100%,.5)",
+      "textColor": "#46285d",
+      "rounded": "7px",
+      "padding": ".25em .875em",
+      "border": "1px solid transparent",
+      "shadow": "inset 0 1px 2px rgba(19,10,26,.06)"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#46285d"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "transparent",
+      "textColor": "#46285d"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#46285d",
+      "rounded": "7px",
+      "padding": ".25em .875em",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "textarea-2",
+      "kind": "input",
+      "backgroundColor": "hsla(0,0%,100%,.5)",
+      "textColor": "#46285d",
+      "rounded": "7px",
+      "padding": ".25em .875em",
+      "border": "1px solid transparent",
+      "shadow": "inset 0 1px 2px rgba(19,10,26,.06)"
+    },
+    {
+      "key": "label-2",
+      "kind": "label",
+      "textColor": "#aa50b5"
+    },
+    {
+      "key": "radio-mark",
+      "kind": "radio",
+      "backgroundColor": "#fff",
+      "rounded": "5px",
+      "shadow": "inset 0 0 0 1px rgba(19,10,26,.15)"
+    },
+    {
+      "key": "modal-close",
+      "kind": "modal",
+      "backgroundColor": "rgba(70,40,93,.2)",
+      "rounded": "290486px",
+      "border": "none"
+    },
+    {
+      "key": "has-text-link",
+      "kind": "link",
+      "textColor": "#8c50b9"
+    },
+    {
+      "key": "checkbox-mark",
+      "kind": "checkbox",
+      "backgroundColor": "#fff",
+      "rounded": "5px",
+      "shadow": "inset 0 0 0 1px rgba(19,10,26,.15)"
+    },
+    {
+      "key": "card-foot",
+      "kind": "card",
+      "backgroundColor": "#faf7f5",
+      "padding": "1.65rem 1.75rem"
+    },
+    {
+      "key": "card-head-2",
+      "kind": "card",
+      "backgroundColor": "#faf7f5",
+      "padding": "1.65rem 1.75rem"
+    },
+    {
+      "key": "card-body-3",
+      "kind": "card",
+      "backgroundColor": "#faf7f5",
+      "padding": "1.625rem 1.75rem"
+    },
+    {
+      "key": "modal-background-2",
+      "kind": "modal",
+      "backgroundColor": "rgba(19,10,26,.35)"
+    },
+    {
+      "key": "card-title-4",
+      "kind": "card",
+      "textColor": "#46285d"
+    },
+    {
+      "key": "has-text-link-dark-2",
+      "kind": "link",
+      "textColor": "#7f44ab"
+    },
+    {
+      "key": "has-background-link-3",
+      "kind": "link",
+      "backgroundColor": "#8c50b9"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "toggle",
+      "kind": "switch",
+      "backgroundColor": "rgba(246, 245, 250, .8)",
+      "rounded": "2px",
+      "padding": ".8em"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f7efe9",
+      "textColor": "#0b0b0c",
+      "rounded": "7px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7efe9",
+      "textColor": "#0b0b0c",
+      "rounded": "7px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f7efe9",
+      "textColor": "#0b0b0c",
+      "rounded": "7px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7efe9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Biings Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#8c50b9` brand accent.\n\nDisplay headlines pair `Plush` with `Source Sans Pro` body copy (40px display down to 15px body), unified by `7px` base corner radius and subtle shadow elevation.\n\nMaintained by **Biings**. Source: live stylesheet extraction (https://biings.design/#/color). Inventory: **72** colors, **7** typography steps, and **24** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 24 component tokens with documented paddings: `.25em .875em`, `1.65rem 1.75rem`, `1.625rem 1.75rem`, `.8em`, `8px 12px`.\n- **Hierarchy**: Group controls cleanly within `#f7efe9` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`inset 0 1px 2px rgba(19,10,26,.06)`, `inset 0 1px 2px rgba(19,10,26,.06)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#8c50b9` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#8c50b9` with `#f7f7f8` text (4.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Plush` headings with `Source Sans Pro` body copy using documented weights and scale steps.\n- Apply `7px` base geometry across inputs and buttons (7px on outer containers).\n- Separate containers via `#f7efe9` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `7px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

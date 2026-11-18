@@ -1,0 +1,412 @@
+{
+  "canvas": "#f2f4f5",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00f0a0",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.lg}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#00f0a0"
+    },
+    {
+      "name": "on-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-mint",
+      "value": "#ecffe0"
+    },
+    {
+      "name": "muted",
+      "value": "#86909c"
+    },
+    {
+      "name": "hairline",
+      "value": "#e5e7eb"
+    },
+    {
+      "name": "surface-soft",
+      "value": "#f2f4f5"
+    }
+  ],
+  "type": [
+    {
+      "name": "display",
+      "fontFamily": "Titillium Web",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 700,
+      "lineHeight": 1.05,
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "Titillium Web",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.5px"
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "Titillium Web",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 700,
+      "lineHeight": 1.15,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "Titillium Web",
+      "fontSize": "38px",
+      "px": 38,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-4",
+      "fontFamily": "Titillium Web",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-lg",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 300,
+      "lineHeight": 1.6,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.6,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xl}",
+      "padding": "{spacing.sm} {spacing.section}"
+    },
+    {
+      "key": "button-primary-sm",
+      "kind": "button",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.pill-nav}",
+      "padding": "{spacing.xxs} {spacing.md}"
+    },
+    {
+      "key": "button-green",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.pill}",
+      "padding": "{spacing.sm} {spacing.xxl}"
+    },
+    {
+      "key": "button-dark-square",
+      "kind": "button",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "hero",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-mint}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.section}"
+    },
+    {
+      "key": "video-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "stat-item",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-mint}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "job-ticker",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "feature-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-mint}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.section}"
+    },
+    {
+      "key": "feature-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "score-ring",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "testimonial-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "testimonial-band-dark",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "padding": "{spacing.section}"
+    },
+    {
+      "key": "faq-item",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-mint}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "cta-band",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas-mint}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.section}"
+    },
+    {
+      "key": "job-search-bar",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "{spacing.xs} {spacing.md}"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.muted}",
+      "padding": "{spacing.section}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00f0a0",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00f0a0",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f2f4f5",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Jobright is the marketing site of an AI job-hunting platform, and its design radiates startup energy. The system is anchored by a single electric accent — a spring-mint green (`{colors.primary}` — #00f0a0) — set against crisp black (`{colors.ink}`) and white (`{colors.canvas}`). The signature move is a pale-mint section band (`{colors.canvas-mint}` — #ecffe0) that carries most of the page: heroes, feature blocks, FAQ, and the closing CTA all sit on this soft green wash, punctuated by full-black bands for the scrolling job ticker and a featured testimonial.\r\n\r\nThe type system pairs a bold, slightly condensed Titillium Web (`{typography.display}`) for big confident headlines with a clean Inter (`{typography.body-md}`) for UI and body copy. Headlines run large and heavy; body stays light and readable. The overall feel is friendly and high-energy rather than corporate — rounded product-mockup cards, emoji accents, and generous whitespace keep it approachable.\r\n\r\nThe CTA system is built on high-contrast pill buttons. Primary actions use a **black pill** (`{colors.ink}` fill, white label) at a large 28px radius; the brand's signature accent button is a **mint-green pill** (`{colors.primary}` fill, black label, thin black border) at a rounder 36px. Product features are demonstrated in white mockup cards with pronounced 40px asymmetric corners, floating over the mint bands. Elevation is light — a hairline or a whisper-soft shadow, never heavy blur.\r\n\r\n**Key Characteristics:**\r\n- A single electric accent: spring-mint `{colors.primary}` owns the logo, links, the signature green pill, and every highlight — used against black and white with conviction.\r\n- Pale-mint section bands (`{colors.canvas-mint}`) carry the page rhythm, alternating with white and full-black bands.\r\n- Dual pill-button system: black pills (`{rounded.lg}`) for primary CTAs, a mint-green pill (`{rounded.pill}`) for the signature accent action.\r\n- Bold Titillium Web display type (`{typography.display}`) over a light, clean Inter body (`{typography.body-lg}`) — confident headlines, quiet copy.\r\n- Rounded product-mockup cards with a distinctive 40px asymmetric corner (`{rounded.card}`), floating over the mint bands to demo AI features.\r\n- Page rhythm: mint hero → mint stats → white job-hub → black scrolling ticker → alternating mint feature bands → white testimonials → black featured quote → mint FAQ → mint CTA → white footer.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` for the logo, links, the signature green pill, and highlights — the one electric accent that carries the brand.\r\n- Carry section rhythm on the pale-mint band (`{colors.canvas-mint}`), alternating with white and full-black bands.\r\n- Use black pills (`{rounded.lg}`) for primary CTAs and the mint-green pill (`{rounded.pill}`) for the one signature accent action.\r\n- Pair heavy Titillium Web headlines (`{typography.display}`) with light Inter body (`{typography.body-lg}`) for confident-yet-quiet hierarchy.\r\n- Float product-mockup cards (`{rounded.card}`) on soft shadows over the mint bands to demo AI features.\r\n- Keep buttons pill-shaped and high-contrast — black-on-mint or white-on-black.\r\n\r\n### Don't\r\n- Don't introduce the product-UI tag/score palette (Ant-style pastels) as brand chrome — the marketing system is mint, black, and white only.\r\n- Don't fill a primary CTA with `{colors.primary}` green as the default — the everyday primary is the black pill; green is the one accent pill.\r\n- Don't set body copy in Titillium Web or headlines in Inter — the display/UI font roles are fixed.\r\n- Don't put heavy shadows on cards — elevation is a hairline or a whisper-soft float.\r\n- Don't cool or blue-shift the mint bands — the section wash is warm spring-mint `{colors.canvas-mint}`.\r\n- Don't square off the pills or the mockup cards — the rounded pill + 40px card silhouette is core to the friendly feel."
+}

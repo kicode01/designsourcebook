@@ -1,0 +1,42 @@
+{
+  "name": "tabler",
+  "displayName": "Tabler UI",
+  "description": "Tabler UI — tokens imported from @tabler/core.",
+  "style": "Tabler UI — tokens imported from @tabler/core.",
+  "category": "Tabler",
+  "org": "Tabler",
+  "theme": "light",
+  "tags": [
+    "published",
+    "tabler",
+    "light"
+  ],
+  "homepage": "https://tabler.io",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @tabler/core@1.7.5 (13 token files, 170 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@tabler/core",
+    "version": "1.7.5"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 109,
+    "components": 25
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

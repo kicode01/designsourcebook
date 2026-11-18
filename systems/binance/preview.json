@@ -1,0 +1,562 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fcd535",
+  "border": "#cdd1d6",
+  "radius": "{rounded.md}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#fcd535"
+    },
+    {
+      "name": "primary-active",
+      "value": "#f0b90b"
+    },
+    {
+      "name": "primary-disabled",
+      "value": "#3a3a1f"
+    },
+    {
+      "name": "ink",
+      "value": "#181a20"
+    },
+    {
+      "name": "body",
+      "value": "#eaecef"
+    },
+    {
+      "name": "body-on-light",
+      "value": "#181a20"
+    },
+    {
+      "name": "muted",
+      "value": "#707a8a"
+    },
+    {
+      "name": "muted-strong",
+      "value": "#929aa5"
+    },
+    {
+      "name": "hairline-on-light",
+      "value": "#eaecef"
+    },
+    {
+      "name": "hairline-on-dark",
+      "value": "#2b3139"
+    },
+    {
+      "name": "border-strong",
+      "value": "#cdd1d6"
+    },
+    {
+      "name": "canvas-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-dark",
+      "value": "#0b0e11"
+    },
+    {
+      "name": "surface-card-dark",
+      "value": "#1e2329"
+    },
+    {
+      "name": "surface-elevated-dark",
+      "value": "#2b3139"
+    },
+    {
+      "name": "surface-soft-light",
+      "value": "#fafafa"
+    },
+    {
+      "name": "surface-strong-light",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "on-primary",
+      "value": "#181a20"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "trading-up",
+      "value": "#0ecb81"
+    },
+    {
+      "name": "trading-down",
+      "value": "#f6465d"
+    },
+    {
+      "name": "accent-turquoise",
+      "value": "#2dbdb6"
+    },
+    {
+      "name": "info",
+      "value": "#3b82f6"
+    },
+    {
+      "name": "info-ring",
+      "value": "#3b82f6"
+    }
+  ],
+  "type": [
+    {
+      "name": "hero-display",
+      "fontFamily": "BinanceNova, -apple-system, BlinkMacSystemFont, sans-serif",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.5px"
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 600,
+      "lineHeight": 1.15,
+      "letterSpacing": "-0.3px"
+    },
+    {
+      "name": "number-display",
+      "fontFamily": "BinancePlex, BinanceNova, sans-serif",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": "-0.3px"
+    },
+    {
+      "name": "display-sm",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-lg",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-md",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.35,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-sm",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "number-md",
+      "fontFamily": "BinancePlex, BinanceNova, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "number-sm",
+      "fontFamily": "BinancePlex, BinanceNova, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "BinanceNova, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.md}",
+      "padding": "12px 24px"
+    },
+    {
+      "key": "button-primary-active",
+      "kind": "button",
+      "backgroundColor": "{colors.primary-active}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "button-primary-disabled",
+      "kind": "button",
+      "backgroundColor": "{colors.primary-disabled}",
+      "textColor": "{colors.muted}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "button-primary-pill",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.pill}",
+      "padding": "14px 32px"
+    },
+    {
+      "key": "button-secondary-on-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.md}",
+      "padding": "12px 24px"
+    },
+    {
+      "key": "button-secondary-on-light",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "12px 24px"
+    },
+    {
+      "key": "button-tertiary-text",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.body}"
+    },
+    {
+      "key": "button-trading-up",
+      "kind": "button",
+      "backgroundColor": "{colors.trading-up}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.sm}",
+      "padding": "8px 20px"
+    },
+    {
+      "key": "button-trading-down",
+      "kind": "button",
+      "backgroundColor": "{colors.trading-down}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.sm}",
+      "padding": "8px 20px"
+    },
+    {
+      "key": "button-subscribe",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.sm}",
+      "padding": "6px 16px"
+    },
+    {
+      "key": "text-link",
+      "kind": "link",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "top-nav-dark",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "top-nav-light",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "hero-band-dark",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.on-dark}",
+      "padding": "80px"
+    },
+    {
+      "key": "stat-callout-card",
+      "kind": "alert",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "trust-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.lg}",
+      "padding": "16px 20px"
+    },
+    {
+      "key": "markets-table-card",
+      "kind": "table",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xl}",
+      "padding": "24px"
+    },
+    {
+      "key": "markets-row",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "padding": "12px 0"
+    },
+    {
+      "key": "price-up-cell",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.trading-up}"
+    },
+    {
+      "key": "price-down-cell",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.trading-down}"
+    },
+    {
+      "key": "search-input-on-dark",
+      "kind": "input",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.lg}",
+      "padding": "10px 16px"
+    },
+    {
+      "key": "text-input-on-light",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "10px 16px"
+    },
+    {
+      "key": "funds-safu-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.primary}",
+      "padding": "80px"
+    },
+    {
+      "key": "feature-photo-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xl}"
+    },
+    {
+      "key": "qr-promo-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xl}",
+      "padding": "32px"
+    },
+    {
+      "key": "faq-row",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.md}",
+      "padding": "20px 0"
+    },
+    {
+      "key": "cta-band-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.surface-card-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xl}",
+      "padding": "48px"
+    },
+    {
+      "key": "arena-hero-gradient",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.primary}",
+      "padding": "80px"
+    },
+    {
+      "key": "cookie-consent-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "16px"
+    },
+    {
+      "key": "buy-crypto-amount-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "24px"
+    },
+    {
+      "key": "steps-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "24px"
+    },
+    {
+      "key": "price-chart-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "24px"
+    },
+    {
+      "key": "conversion-cell",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.body-on-light}"
+    },
+    {
+      "key": "trader-row",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "padding": "12px 0"
+    },
+    {
+      "key": "footer-light",
+      "kind": "component",
+      "backgroundColor": "{colors.surface-soft-light}",
+      "textColor": "{colors.body-on-light}",
+      "padding": "64px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fcd535",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fcd535",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Binance reads like a financial trading platform that wants to feel both authoritative and energetic. The base atmosphere is **deep near-black canvas** (`{colors.canvas-dark}` — #0b0e11) holding white type and a single, ubiquitous accent: **Binance Yellow** (`{colors.primary}` — #FCD535). That yellow does almost all of the brand's heavy lifting — it carries every primary CTA, every value-claim headline (\"FUNDS ARE SAFU\"), every \"Sign Up\" pill, every featured tier indicator, and the wordmark itself. There is no secondary brand color. The system trusts the yellow voltage to do the brand work, and it carries it.\r\n\r\nType runs Binance's custom **BinanceNova** (display + body) and **BinancePlex** (numerical / financial display) stack. BinanceNova carries display headlines, section titles, and body copy. BinancePlex appears on price tickers, large stat numbers (transaction volumes, user counts, prize pools) — anywhere a number wants to feel \"tabular and reliable.\" Both run at modest weights — display sizes use weight 600-700 (bolder than typical marketing because trading platforms need numbers to read at a glance), body stays at 400.\r\n\r\nThe product is **multi-theme**: marketing surfaces (homepage, smart-money, futures arena) default to dark, while transactional surfaces (buy crypto, deposit, withdraw) flip to a light theme. The same yellow CTAs and gray-blue hairlines (`{colors.hairline-on-light}` — #eaecef) thread through both — only canvas, surface, and text tones flip. Trading **green** (`{colors.trading-up}` — #0ecb81) and **red** (`{colors.trading-down}` — #f6465d) signal price direction in tables, charts, and price tickers across both modes.\r\n\r\n**Key Characteristics:**\r\n- Single accent color: `{colors.primary}` (#FCD535) does all brand voltage — primary CTAs, hero headlines, brand mark, badges. Used scarcely on dark for emphasis, ubiquitously on transactional dialogs.\r\n- Custom type stack: `BinanceNova` (display + body) and `BinancePlex` (numbers, prices, financial data). Big stat numbers always render in BinancePlex for tabular consistency.\r\n- Multi-theme: marketing pages default dark (`{colors.canvas-dark}`); transactional pages flip light (`{colors.canvas-light}`). Yellow CTAs and trading green/red are shared across both.\r\n- Light footer on dark body: the homepage uses `{colors.surface-soft-light}` (#fafafa) for the footer even when the body above it is dark — a deliberate inversion that visually closes the page.\r\n- Trading semantics: green up / red down (`{colors.trading-up}` / `{colors.trading-down}`) for price changes, applied as text color rather than badge background.\r\n- Card surfaces: `{colors.surface-card-dark}` (#1e2329) for elevated cards on dark; `{colors.canvas-light}` for cards on light. No gradient surfaces, no atmospheric backdrops — flat color blocks throughout.\r\n- Border radius is small to medium: `{rounded.md}` (6px) for primary buttons, `{rounded.lg}` (8px) for inputs and content cards, `{rounded.xl}` (12px) for elevated card containers, `{rounded.pill}` for prominent feature CTAs.\r\n- Spacing follows a 4-multiple scale; major editorial bands sit at `{spacing.section}` (80px) — slightly tighter than typical marketing-only sites because product pages need denser layouts.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` (Binance Yellow) for primary actions, brand-claim headlines, and the wordmark. Never use it for secondary or decorative purposes — yellow's scarcity is what makes it powerful.\r\n- Keep `{components.button-primary}` (yellow with black text) as the universal primary CTA across both dark and light modes. The same button appears identically on `{colors.canvas-dark}` and `{colors.canvas-light}`.\r\n- Use `{components.button-trading-up}` (green) and `{components.button-trading-down}` (red) only for explicit Buy/Sell or Long/Short actions. Never use them for general \"confirm\" or \"cancel\" because they carry semantic price-direction meaning.\r\n- Use BinancePlex for every number. Prices, volumes, percentages, stat counters — all BinancePlex. Mixing BinanceNova into a number ticker breaks the trading-platform character.\r\n- Choose canvas mode by surface intent: dark for marketing / product showcase / trading dashboards; light for transactional dialogs (buy / deposit / withdraw / form submission).\r\n- Anchor every editorial band with `{spacing.section}` (80px). Binance is denser than airy marketing sites — 80px is the right rhythm.\r\n\r\n### Don't\r\n- Don't introduce a second brand color. The system has exactly one accent (`{colors.primary}`) and any expansion dilutes the brand identity. The turquoise on Smart Money is a single-product experiment, not a system token.\r\n- Don't use yellow for body text or large surface fills. It is for focal-point CTAs and headlines only.\r\n- Don't use `{colors.trading-up}` / `{colors.trading-down}` as background fills on cards. They are price-direction signals, expressed as text color or small badge fill — never as a card surface.\r\n- Don't soften display weight. `{typography.hero-display}` and `{typography.display-lg}` are intentionally weight 700 — going to 400 reads as design-portfolio, not trading platform.\r\n- Don't add atmospheric gradients to the canvas (mesh, aurora, glow effects). Binance trusts color-block contrast — adding atmospheric depth muddies the trading-platform feel.\r\n- Don't invert `{components.button-primary}`'s text color. Black on yellow is the system's signature — white text on yellow loses contrast and brand recognition."
+}

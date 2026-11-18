@@ -1,0 +1,42 @@
+{
+  "name": "entur",
+  "displayName": "Entur Design System",
+  "description": "Entur Design System — tokens imported from @entur/tokens.",
+  "style": "Entur Design System — tokens imported from @entur/tokens.",
+  "category": "Entur",
+  "org": "Entur",
+  "theme": "light",
+  "tags": [
+    "published",
+    "entur",
+    "light"
+  ],
+  "homepage": "",
+  "license": "EUPL-1.2",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @entur/tokens@4.4.0 (5 token files, 791 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@entur/tokens",
+    "version": "4.4.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 11,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "canvas": "#33302E",
+  "surface": "#33302E",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#FF4747",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "12px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "color-red-accent",
+      "value": "#FF4747"
+    },
+    {
+      "name": "color-red-accent-rgb",
+      "value": "rgb(255, 71, 71)"
+    },
+    {
+      "name": "color-orange-accent",
+      "value": "#FF8B33"
+    },
+    {
+      "name": "color-orange-accent-rgb",
+      "value": "rgb(255, 139, 51)"
+    },
+    {
+      "name": "color-yellow-accent",
+      "value": "#FFB83D"
+    },
+    {
+      "name": "color-yellow-accent-rgb",
+      "value": "rgb(255, 184, 61)"
+    },
+    {
+      "name": "color-green-accent",
+      "value": "#56F09E"
+    },
+    {
+      "name": "color-green-accent-rgb",
+      "value": "rgb(86, 240, 158)"
+    },
+    {
+      "name": "color-blue-accent",
+      "value": "#2E96FF"
+    },
+    {
+      "name": "color-blue-accent-rgb",
+      "value": "rgb(46, 150, 255)"
+    },
+    {
+      "name": "color-slate-accent",
+      "value": "#47C2FF"
+    },
+    {
+      "name": "color-slate-accent-rgb",
+      "value": "rgb(71, 194, 255)"
+    },
+    {
+      "name": "color-cobalt-accent",
+      "value": "#47A3FF"
+    },
+    {
+      "name": "color-cobalt-accent-rgb",
+      "value": "rgb(71, 163, 255)"
+    },
+    {
+      "name": "color-purple-accent",
+      "value": "#C285FF"
+    },
+    {
+      "name": "color-purple-accent-rgb",
+      "value": "rgb(194, 133, 255)"
+    },
+    {
+      "name": "color-magenta-accent",
+      "value": "#FF5CAA"
+    },
+    {
+      "name": "color-magenta-accent-rgb",
+      "value": "rgb(255, 92, 170)"
+    },
+    {
+      "name": "color-action-disabled",
+      "value": "#ABB9C7"
+    },
+    {
+      "name": "color-action-disabled-rgb",
+      "value": "rgb(171, 185, 199)"
+    },
+    {
+      "name": "color-text-headline",
+      "value": "#33302E"
+    },
+    {
+      "name": "color-text-headline-rgb",
+      "value": "rgb(51, 48, 46)"
+    },
+    {
+      "name": "color-text-dark",
+      "value": "#33302E"
+    },
+    {
+      "name": "color-text-dark-rgb",
+      "value": "rgb(51, 48, 46)"
+    },
+    {
+      "name": "color-text-default",
+      "value": "#4A4441"
+    },
+    {
+      "name": "color-text-default-rgb",
+      "value": "rgb(74, 68, 65)"
+    },
+    {
+      "name": "color-text-light",
+      "value": "#8A7B74"
+    },
+    {
+      "name": "color-text-light-rgb",
+      "value": "rgb(138, 123, 116)"
+    },
+    {
+      "name": "color-text-disabled",
+      "value": "#9E8F88"
+    },
+    {
+      "name": "color-text-disabled-rgb",
+      "value": "rgb(158, 143, 136)"
+    },
+    {
+      "name": "color-success-text",
+      "value": "#2E5940"
+    },
+    {
+      "name": "color-success-text-rgb",
+      "value": "rgb(46, 89, 64)"
+    },
+    {
+      "name": "color-success-background-dark",
+      "value": "#2D8556"
+    },
+    {
+      "name": "color-success-background-dark-rgb",
+      "value": "rgb(45, 133, 86)"
+    },
+    {
+      "name": "color-success-icon",
+      "value": "#47C47D"
+    },
+    {
+      "name": "color-success-icon-rgb",
+      "value": "rgb(71, 196, 125)"
+    },
+    {
+      "name": "color-success-border",
+      "value": "#47C47D"
+    },
+    {
+      "name": "color-success-border-rgb",
+      "value": "rgb(71, 196, 125)"
+    },
+    {
+      "name": "color-success-background-light",
+      "value": "#F2FFF0"
+    },
+    {
+      "name": "color-success-background-light-rgb",
+      "value": "rgb(242, 255, 240)"
+    },
+    {
+      "name": "color-error-text",
+      "value": "#B83525"
+    },
+    {
+      "name": "color-error-text-rgb",
+      "value": "rgb(184, 53, 37)"
+    },
+    {
+      "name": "color-error-background-dark",
+      "value": "#B83525"
+    },
+    {
+      "name": "color-error-background-dark-rgb",
+      "value": "rgb(184, 53, 37)"
+    },
+    {
+      "name": "color-error-icon",
+      "value": "#FF4747"
+    },
+    {
+      "name": "color-error-icon-rgb",
+      "value": "rgb(255, 71, 71)"
+    },
+    {
+      "name": "color-error-border",
+      "value": "#E54A32"
+    },
+    {
+      "name": "color-error-border-rgb",
+      "value": "rgb(229, 74, 50)"
+    },
+    {
+      "name": "color-error-background-light",
+      "value": "#feeae7"
+    },
+    {
+      "name": "color-error-background-light-rgb",
+      "value": "rgb(254, 234, 231)"
+    },
+    {
+      "name": "color-warning-text",
+      "value": "#A35214"
+    },
+    {
+      "name": "color-warning-text-rgb",
+      "value": "rgb(163, 82, 20)"
+    },
+    {
+      "name": "color-warning-background-dark",
+      "value": "#A35214"
+    },
+    {
+      "name": "color-warning-background-dark-rgb",
+      "value": "rgb(163, 82, 20)"
+    },
+    {
+      "name": "color-warning-icon",
+      "value": "#FFB83D"
+    },
+    {
+      "name": "color-warning-icon-rgb",
+      "value": "rgb(255, 184, 61)"
+    },
+    {
+      "name": "color-warning-border",
+      "value": "#FABF5A"
+    },
+    {
+      "name": "color-warning-border-rgb",
+      "value": "rgb(250, 191, 90)"
+    },
+    {
+      "name": "color-warning-background-light",
+      "value": "#FFF6E5"
+    },
+    {
+      "name": "color-warning-background-light-rgb",
+      "value": "rgb(255, 246, 229)"
+    },
+    {
+      "name": "color-info-text",
+      "value": "#263AAD"
+    },
+    {
+      "name": "color-info-text-rgb",
+      "value": "rgb(38, 58, 173)"
+    },
+    {
+      "name": "color-info-background-dark",
+      "value": "#304DDB"
+    },
+    {
+      "name": "color-info-background-dark-rgb",
+      "value": "rgb(48, 77, 219)"
+    },
+    {
+      "name": "color-info-icon",
+      "value": "#4176FA"
+    },
+    {
+      "name": "color-info-icon-rgb",
+      "value": "rgb(65, 118, 250)"
+    },
+    {
+      "name": "color-info-border",
+      "value": "#4176FA"
+    },
+    {
+      "name": "color-info-border-rgb",
+      "value": "rgb(65, 118, 250)"
+    },
+    {
+      "name": "color-info-background-light",
+      "value": "#EBF5FF"
+    },
+    {
+      "name": "color-info-background-light-rgb",
+      "value": "rgb(235, 245, 255)"
+    },
+    {
+      "name": "color-red-100",
+      "value": "#FFF0E8"
+    },
+    {
+      "name": "color-red-700",
+      "value": "#822824"
+    },
+    {
+      "name": "color-orange-300",
+      "value": "#FAC096"
+    },
+    {
+      "name": "color-orange-900",
+      "value": "#3D2F22"
+    },
+    {
+      "name": "color-yellow-500",
+      "value": "#E09C24"
+    },
+    {
+      "name": "color-green-100",
+      "value": "#F2FFF0"
+    },
+    {
+      "name": "color-green-700",
+      "value": "#28704C"
+    },
+    {
+      "name": "color-blue-300",
+      "value": "#7ACAFF"
+    },
+    {
+      "name": "color-blue-900",
+      "value": "#001C5A"
+    },
+    {
+      "name": "color-slate-500",
+      "value": "#82A7BA"
+    },
+    {
+      "name": "color-cobalt-100",
+      "value": "#EBF5FF"
+    },
+    {
+      "name": "color-cobalt-700",
+      "value": "#263AAD"
+    },
+    {
+      "name": "color-purple-300",
+      "value": "#D7BAF5"
+    },
+    {
+      "name": "color-purple-900",
+      "value": "#31253D"
+    },
+    {
+      "name": "color-magenta-500",
+      "value": "#BF5878"
+    },
+    {
+      "name": "color-charcoal-100",
+      "value": "#f9fafa"
+    },
+    {
+      "name": "color-charcoal-700",
+      "value": "#556575"
+    },
+    {
+      "name": "color-clay-100",
+      "value": "#FAF8F7"
+    },
+    {
+      "name": "color-clay-700",
+      "value": "#8A7B74"
+    },
+    {
+      "name": "color-basics-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#FF4747"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-family-sans",
+      "fontFamily": "\"Scoutie Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-serif",
+      "fontFamily": "\"Victor Serif\", serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-mono",
+      "fontFamily": "\"Geist Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-hand",
+      "fontFamily": "\"Help Desk Hand\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Graphik, Helvetica, Arial, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#0064F0",
+      "textColor": "#ffffff",
+      "rounded": "9999px",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "modal-container",
+      "kind": "modal",
+      "backgroundColor": "white",
+      "padding": "30px",
+      "shadow": "0 5px 10px rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "key": "button-base-text-2",
+      "kind": "button",
+      "textColor": "#fff"
+    },
+    {
+      "key": "toggle-checkmark",
+      "kind": "switch",
+      "backgroundColor": "rgba(255, 255, 255, 0.9)",
+      "border": "1px solid #d8d8d8"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#33302E",
+      "textColor": "#f7f7f8",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#FF4747",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#33302E",
+      "textColor": "#f7f7f8",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#33302E",
+      "textColor": "#f7f7f8",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#33302E",
+      "textColor": "#f7f7f8",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#33302E",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#33302E",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Help Scout Style Guide** is a dark-first design system anchored on `#33302E` canvas surfaces with `#f7f7f8` primary ink (12.2:1 contrast) and `#FF4747` brand accent.\n\nTypography centers cleanly on `Scoutie Sans` (16px display down to 16px body), unified by `12px` base corner radius and subtle shadow elevation.\n\nMaintained by **Help Scout**. Source: live stylesheet extraction (http://style.helpscout.com/). Inventory: **91** colors, **5** typography steps, and **11** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `0`, `30px`, `8px 12px`, `2px`, `6px 12px`.\n- **Hierarchy**: Group controls cleanly within `#33302E` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 5px 10px rgba(0, 0, 0, 0.1)`) paired with `color-mix(in srgb, #f7f7f8 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF4747` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#33302E` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.\n- Use `#FF4747` with `#f7f7f8` text (3.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Scoutie Sans` headings with `Scoutie Sans` body copy using documented weights and scale steps.\n- Apply `12px` base geometry across inputs and buttons (12px on outer containers).\n- Separate containers via `#33302E` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `12px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,1015 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f9f9f9",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "brand-fjellgra",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-snohvit",
+      "value": "#F9F9F9"
+    },
+    {
+      "name": "brand-hvit",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "brand-fjellgra",
+      "value": "#444141"
+    },
+    {
+      "name": "brand-dis",
+      "value": "#ECE9E5"
+    },
+    {
+      "name": "functional-info-dark",
+      "value": "#A9A9CA"
+    },
+    {
+      "name": "functional-warning",
+      "value": "#EFDD9E"
+    },
+    {
+      "name": "functional-error-dark",
+      "value": "#DE9E9E"
+    },
+    {
+      "name": "neutral-light",
+      "value": "#E0DBD4"
+    },
+    {
+      "name": "info-dark",
+      "value": "#A9A9CA"
+    },
+    {
+      "name": "warning-light",
+      "value": "#EFDD9E"
+    },
+    {
+      "name": "error-dark",
+      "value": "#DE9E9E"
+    },
+    {
+      "name": "info",
+      "value": "#D3D3F6"
+    },
+    {
+      "name": "error",
+      "value": "#F6B3B3"
+    },
+    {
+      "name": "color-brand-snohvit",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-brand-hvit",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-brand-fjellgra",
+      "value": "#444141"
+    },
+    {
+      "name": "color-brand-dis",
+      "value": "#ece9e5"
+    },
+    {
+      "name": "color-functional-info-dark",
+      "value": "#a9a9ca"
+    },
+    {
+      "name": "color-functional-warning",
+      "value": "#efdd9e"
+    },
+    {
+      "name": "color-functional-error-dark",
+      "value": "#de9e9e"
+    },
+    {
+      "name": "jkl-color-brand-snohvit",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "jkl-color-brand-hvit",
+      "value": "#ffffff"
+    },
+    {
+      "name": "jkl-color-brand-fjellgra",
+      "value": "#444141"
+    },
+    {
+      "name": "jkl-color-brand-dis",
+      "value": "#ece9e5"
+    },
+    {
+      "name": "jkl-color-functional-info-dark",
+      "value": "#a9a9ca"
+    },
+    {
+      "name": "jkl-color-functional-warning",
+      "value": "#efdd9e"
+    },
+    {
+      "name": "jkl-color-functional-error-dark",
+      "value": "#de9e9e"
+    },
+    {
+      "name": "color-background-page-variant-light",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-background-container-dark",
+      "value": "#313030"
+    },
+    {
+      "name": "color-background-container-high-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-container-inverted-dark",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-background-input-base-light",
+      "value": "#000000"
+    },
+    {
+      "name": "color-background-input-focus-dark",
+      "value": "#313030"
+    },
+    {
+      "name": "color-background-interactive-light",
+      "value": "#000000"
+    },
+    {
+      "name": "color-background-interactive-hover-dark",
+      "value": "#444141"
+    },
+    {
+      "name": "color-background-alert-neutral-light",
+      "value": "#e0dbd4"
+    },
+    {
+      "name": "color-background-alert-info-dark",
+      "value": "#a9a9ca"
+    },
+    {
+      "name": "color-background-alert-warning-light",
+      "value": "#efdd9e"
+    },
+    {
+      "name": "color-background-alert-error-dark",
+      "value": "#de9e9e"
+    },
+    {
+      "name": "color-text-subdued-light",
+      "value": "#636060"
+    },
+    {
+      "name": "color-text-inverted-dark",
+      "value": "#1b1917"
+    },
+    {
+      "name": "color-text-interactive-light",
+      "value": "#1b1917"
+    },
+    {
+      "name": "color-text-interactive-hover-dark",
+      "value": "#c8c5c3"
+    },
+    {
+      "name": "color-text-on-alert-subdued-light",
+      "value": "#444141"
+    },
+    {
+      "name": "color-border-action-dark",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-border-input-focus-light",
+      "value": "#1b1917"
+    },
+    {
+      "name": "color-border-separator-dark",
+      "value": "#636060"
+    },
+    {
+      "name": "color-border-separator-hover-light",
+      "value": "#1b1917"
+    },
+    {
+      "name": "color-border-subdued-dark",
+      "value": "#636060"
+    },
+    {
+      "name": "jkl-color-background-container",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "jkl-color-background-container-inverted",
+      "value": "#1b1917"
+    },
+    {
+      "name": "jkl-color-background-action",
+      "value": "#1b1917"
+    },
+    {
+      "name": "jkl-color-background-alert-neutral",
+      "value": "#e0dbd4"
+    },
+    {
+      "name": "jkl-color-background-alert-warning",
+      "value": "#efdd9e"
+    },
+    {
+      "name": "jkl-color-text-subdued",
+      "value": "#636060"
+    },
+    {
+      "name": "jkl-color-text-interactive",
+      "value": "#1b1917"
+    },
+    {
+      "name": "jkl-color-text-on-alert-subdued",
+      "value": "#444141"
+    },
+    {
+      "name": "jkl-color-border-input-focus",
+      "value": "#1b1917"
+    },
+    {
+      "name": "jkl-color-border-separator-hover",
+      "value": "#1b1917"
+    },
+    {
+      "name": "jkl-error",
+      "value": "#f6b3b3"
+    },
+    {
+      "name": "jkl-success",
+      "value": "#acd3b5"
+    },
+    {
+      "name": "page-light",
+      "value": "#F4F2EF"
+    },
+    {
+      "name": "page-variant-dark",
+      "value": "#1B1917"
+    },
+    {
+      "name": "container-low-light",
+      "value": "#ECE9E5"
+    },
+    {
+      "name": "container-high-dark",
+      "value": "#313030"
+    },
+    {
+      "name": "container-subdued-light",
+      "value": "#C8C5C3"
+    },
+    {
+      "name": "action-dark",
+      "value": "#F9F9F9"
+    },
+    {
+      "name": "interactive-selected-light",
+      "value": "#E0DBD4"
+    },
+    {
+      "name": "subdued-dark",
+      "value": "#C8C5C3"
+    },
+    {
+      "name": "on-action-light",
+      "value": "#F9F9F9"
+    },
+    {
+      "name": "interactive-dark",
+      "value": "#F9F9F9"
+    },
+    {
+      "name": "on-alert-subdued-light",
+      "value": "#444141"
+    },
+    {
+      "name": "input-dark",
+      "value": "#C8C5C3"
+    },
+    {
+      "name": "separator-strong-light",
+      "value": "#636060"
+    },
+    {
+      "name": "separator-hover-dark",
+      "value": "#F9F9F9"
+    },
+    {
+      "name": "granitt",
+      "value": "#1B1917"
+    },
+    {
+      "name": "skifer",
+      "value": "#313030"
+    },
+    {
+      "name": "svaberg",
+      "value": "#C8C5C3"
+    },
+    {
+      "name": "suksess",
+      "value": "#acd3b5"
+    },
+    {
+      "name": "feil-dark",
+      "value": "#de9e9e"
+    },
+    {
+      "name": "color-svart",
+      "value": "#000000"
+    },
+    {
+      "name": "color-fjellgra",
+      "value": "#444141"
+    },
+    {
+      "name": "color-varde",
+      "value": "#e0dbd4"
+    },
+    {
+      "name": "color-snohvit",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "color-suksess-dark",
+      "value": "#94b79b"
+    },
+    {
+      "name": "color-advarsel",
+      "value": "#efdd9e"
+    },
+    {
+      "name": "jkl-color-granitt",
+      "value": "#1b1917"
+    },
+    {
+      "name": "jkl-color-stein",
+      "value": "#636060"
+    },
+    {
+      "name": "jkl-color-dis",
+      "value": "#ece9e5"
+    },
+    {
+      "name": "jkl-color-hvit",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#ECE9E5"
+    }
+  ],
+  "type": [
+    {
+      "name": "typography-font-size-56",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "typography-title-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "jkl-typography-font-size-56",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "jkl-typography-title-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "jkl-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "typography-font-size-44",
+      "fontFamily": "system-ui",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "typography-title-small-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "jkl-typography-font-size-44",
+      "fontFamily": "system-ui",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "jkl-typography-title-small-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "jkl-title-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "typography-font-size-36",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "typography-title-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "typography-heading-1-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "jkl-typography-font-size-36",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "jkl-typography-title-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "jkl-typography-heading-1-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "jkl-heading-1-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "jkl-title",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": "2.75rem"
+    },
+    {
+      "name": "title",
+      "fontFamily": "system-ui",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "fontWeight": 400,
+      "lineHeight": "2.75rem"
+    },
+    {
+      "name": "h1",
+      "fontFamily": "system-ui",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "typography-font-size-30",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "typography-title-small-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "jkl-typography-font-size-30",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "jkl-typography-title-small-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "jkl-title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875rem",
+      "px": 30,
+      "fontWeight": 400,
+      "lineHeight": "2.25rem"
+    },
+    {
+      "name": "title-small",
+      "fontFamily": "system-ui",
+      "fontSize": "1.875rem",
+      "px": 30,
+      "fontWeight": 400,
+      "lineHeight": "2.25rem"
+    },
+    {
+      "name": "typography-font-size-28",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "typography-heading-2-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "jkl-typography-font-size-28",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "jkl-typography-heading-2-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "jkl-heading-2-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "typography-font-size-26",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "typography-heading-1-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "jkl-typography-font-size-26",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "jkl-typography-heading-1-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "jkl-heading-1",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "typography-font-size-25",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "typography-heading-3-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "jkl-typography-font-size-25",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "jkl-typography-heading-3-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "jkl-heading-3-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "typography-font-size-23",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4375rem",
+      "px": 23
+    },
+    {
+      "name": "typography-heading-2-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4375rem",
+      "px": 23
+    },
+    {
+      "name": "jkl-typography-font-size-23",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4375rem",
+      "px": 23
+    },
+    {
+      "name": "jkl-typography-heading-2-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4375rem",
+      "px": 23
+    },
+    {
+      "name": "jkl-heading-2",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4375rem",
+      "px": 23,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "system-ui",
+      "fontSize": "1.4375rem",
+      "px": 23,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "typography-font-size-21",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "typography-heading-3-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "typography-heading-4-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "jkl-typography-font-size-21",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "jkl-typography-heading-3-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "jkl-typography-heading-4-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "jkl-heading-4-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21
+    },
+    {
+      "name": "jkl-heading-3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.3125rem",
+      "px": 21,
+      "fontWeight": 700,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "typography-font-size-20",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "typography-body-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "jkl-typography-font-size-20",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "jkl-typography-body-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "jkl-body-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "typography-font-size-18",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "typography-heading-4-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "typography-body-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "jkl-typography-font-size-18",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "jkl-typography-heading-4-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "jkl-typography-body-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "jkl-heading-4",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "jkl-body",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "heading-4",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "body",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-font-size-16",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-5-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-heading-5-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-small-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-small-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-typography-font-size-16",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-typography-heading-5-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-typography-heading-5-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-typography-small-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-typography-small-base-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-heading-5-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "jkl-heading-5",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "heading-5",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "1.5rem"
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-link",
+      "kind": "link",
+      "textColor": "#1b1917"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "brand-fjellgra",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "brand-fjellgra",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Jokul** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `brand-fjellgra` brand accent.\n\nTypography centers cleanly on `System UI` (56px display down to 20px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f9f9f9` surface layering.\n\nMaintained by **Fremtind Forsikring**. Source: published token package (https://github.com/fremtind/jokul/tree/pre-1.0/packages/core), package `@fremtind/jkl-core`. Inventory: **91** colors, **87** typography steps, and **9** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f9f9f9` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f9f9f9`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `brand-fjellgra` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `brand-fjellgra` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f9f9f9` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,12 +1,14 @@
 import { getSql, hasDatabase } from "../lib/db.mjs";
 
-export async function GET() {
+export async function GET(request) {
   if (!hasDatabase()) {
     return Response.json({ ok: false, error: "DATABASE_URL not configured" }, { status: 503 });
   }
   try {
+    const url = new URL(request.url);
+    const includeAll = url.searchParams.get("include") === "all";
     const sql = getSql();
-    const [sysRows, packRows, covRows, syncMeta] = await Promise.all([
+    const [sysRows, syncMeta, extraRows] = await Promise.all([
       sql`
         SELECT
           slug, name, provenance, org, style, category, theme, license,
@@ -18,9 +20,13 @@ export async function GET() {
         FROM design_systems
         ORDER BY name ASC
       `,
-      sql`SELECT id, package_name, version, grid, glyphs FROM icon_packs`,
-      sql`SELECT sources, entries FROM coverage_meta WHERE id = 'default' LIMIT 1`,
       sql`SELECT MAX(stats_synced_at) AS synced_at FROM design_systems`,
+      includeAll
+        ? Promise.all([
+            sql`SELECT id, package_name, version, grid, glyphs FROM icon_packs`,
+            sql`SELECT sources, entries FROM coverage_meta WHERE id = 'default' LIMIT 1`,
+          ])
+        : Promise.resolve(null),
     ]);
 
     const systems = sysRows.map((r) => {
@@ -69,31 +75,33 @@ export async function GET() {
       };
     });
 
-    const iconPacks = {};
-    for (const pk of packRows) {
-      iconPacks[pk.id] = {
-        package: pk.package_name,
-        version: pk.version,
-        grid: Number(pk.grid),
-        glyphs: pk.glyphs || [],
-      };
+    const payload = {
+      dbBacked: true,
+      syncedAt: syncMeta[0]?.synced_at || null,
+      systems,
+    };
+
+    if (extraRows) {
+      const [packRows, covRows] = extraRows;
+      const iconPacks = {};
+      for (const pk of packRows) {
+        iconPacks[pk.id] = {
+          package: pk.package_name,
+          version: pk.version,
+          grid: Number(pk.grid),
+          glyphs: pk.glyphs || [],
+        };
+      }
+      const cov = covRows[0] || { sources: [], entries: [] };
+      payload.iconPacks = iconPacks;
+      payload.coverage = { sources: cov.sources || [], union: { entries: cov.entries || [] } };
     }
 
-    const cov = covRows[0] || { sources: [], entries: [] };
-    return Response.json(
-      {
-        dbBacked: true,
-        syncedAt: syncMeta[0]?.synced_at || null,
-        systems,
-        iconPacks,
-        coverage: { sources: cov.sources || [], union: { entries: cov.entries || [] } },
+    return Response.json(payload, {
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600",
       },
-      {
-        headers: {
-          "Cache-Control": "public, s-maxage=120, stale-while-revalidate=600",
-        },
-      }
-    );
+    });
   } catch (err) {
     console.error("GET /api/catalog failed:", err);
     return Response.json({ ok: false, error: err.message }, { status: 500 });

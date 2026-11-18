@@ -1,0 +1,273 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#f8ab59",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "12344d",
+      "value": "#fff"
+    },
+    {
+      "name": "color",
+      "value": "#000"
+    },
+    {
+      "name": "color-milk",
+      "value": "#fff"
+    },
+    {
+      "name": "color-elephant-900",
+      "value": "#12344d"
+    },
+    {
+      "name": "color-elephant-800",
+      "value": "#264966"
+    },
+    {
+      "name": "color-elephant-700",
+      "value": "#345c7c"
+    },
+    {
+      "name": "color-elephant-600",
+      "value": "#447093"
+    },
+    {
+      "name": "color-smoke-700",
+      "value": "#475867"
+    },
+    {
+      "name": "color-smoke-300",
+      "value": "#92a2b1"
+    },
+    {
+      "name": "color-smoke-100",
+      "value": "#cfd7df"
+    },
+    {
+      "name": "color-smoke-50",
+      "value": "#ebeff3"
+    },
+    {
+      "name": "color-smoke-25",
+      "value": "#f3f5f7"
+    },
+    {
+      "name": "color-jungle-800",
+      "value": "#00795b"
+    },
+    {
+      "name": "color-jungle-500",
+      "value": "#00a886"
+    },
+    {
+      "name": "color-jungle-100",
+      "value": "#b4e5da"
+    },
+    {
+      "name": "color-jungle-50",
+      "value": "#e0f5f1"
+    },
+    {
+      "name": "color-azure-800",
+      "value": "#2c5cc5"
+    },
+    {
+      "name": "color-azure-100",
+      "value": "#bbdcfe"
+    },
+    {
+      "name": "color-azure-50",
+      "value": "#e5f2fd"
+    },
+    {
+      "name": "color-persimmon-900",
+      "value": "#c82124"
+    },
+    {
+      "name": "color-persimmon-800",
+      "value": "#d72d30"
+    },
+    {
+      "name": "color-persimmon-100",
+      "value": "#ffd0d6"
+    },
+    {
+      "name": "color-persimmon-50",
+      "value": "#ffecf0"
+    },
+    {
+      "name": "color-casablanca-700",
+      "value": "#e86f25"
+    },
+    {
+      "name": "color-casablanca-300",
+      "value": "#f8ab59"
+    },
+    {
+      "name": "color-casablanca-100",
+      "value": "#fedcb3"
+    },
+    {
+      "name": "color-casablanca-50",
+      "value": "#fef1e1"
+    },
+    {
+      "name": "primary",
+      "value": "#f8ab59"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-24",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size-20",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size-18",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-size-16",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-stack",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-14",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-12",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-10",
+      "fontFamily": "-apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, oxygen, ubuntu, cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "4px"
+    },
+    {
+      "key": "modal-container-2",
+      "kind": "modal",
+      "backgroundColor": "rgba(18, 52, 77, 0.5)"
+    },
+    {
+      "key": "icon",
+      "kind": "icon",
+      "backgroundColor": "#ebeff3",
+      "rounded": "3px",
+      "padding": "3px 0 0 6px"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#6f7c87",
+      "rounded": "2px",
+      "border": "1px solid #dadfe3"
+    },
+    {
+      "key": "label-field",
+      "kind": "input",
+      "textColor": "#475867"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#f8ab59",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#f8ab59",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 14,
+    "strokeWidth": 1,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**Crayons** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#f8ab59` brand accent.\n\nTypography centers cleanly on `System UI` (24px display down to 16px body), unified by `4px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Freshworks**. Source: published token package (https://github.com/freshworks/crayons#readme), package `@freshworks/crayons`. Inventory: **28** colors, **8** typography steps, and **12** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 12 component tokens with documented paddings: `3px 0 0 6px`, `8px 12px`, `2px`, `6px 12px`, `12px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#f8ab59` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#f8ab59` with `#0b0b0c` text (10.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `label-field` fields and secondary buttons."
+}

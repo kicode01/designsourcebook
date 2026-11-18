@@ -1,0 +1,42 @@
+{
+  "name": "axa",
+  "displayName": "AXA Slash Design System",
+  "description": "AXA Slash Design System — tokens imported from @axa-fr/react-toolkit-all.",
+  "style": "AXA Slash Design System — tokens imported from @axa-fr/react-toolkit-all.",
+  "category": "AXA",
+  "org": "AXA",
+  "theme": "light",
+  "tags": [
+    "published",
+    "axa",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @axa-fr/react-toolkit-all@3.0.2 + @axa-ch/patterns-library-polyfill (1 token files, 21 colours harvested, 21 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@axa-fr/react-toolkit-all",
+    "version": "3.0.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 21,
+    "typography": 25,
+    "components": 56
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 5,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

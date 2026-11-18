@@ -1,0 +1,41 @@
+{
+  "name": "kontur",
+  "displayName": "Kontur",
+  "description": "Kontur — read from the rendered page in a browser, not from published tokens.",
+  "style": "Kontur — read from the rendered page in a browser, not from published tokens.",
+  "category": "Kontur",
+  "org": "Kontur",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "kontur",
+    "light"
+  ],
+  "homepage": "https://guides.kontur.ru/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://guides.kontur.ru/ in headless Chromium on 2026-11-18 (3 custom properties, 37 sampled elements, 8 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Контур.Гайды.",
+  "source": {
+    "url": "https://guides.kontur.ru/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 40,
+    "typography": 11,
+    "components": 14
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1b50b3",
+  "border": "#dbdcdd",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "wb-semantic-color-core-border-instructive-subtle",
+      "value": "#b5cefb"
+    },
+    {
+      "name": "wb-semantic-color-core-border-neutral-default",
+      "value": "#909296"
+    },
+    {
+      "name": "wb-semantic-color-core-border-critical-strong",
+      "value": "#9e271d"
+    },
+    {
+      "name": "wb-semantic-color-core-border-warning-subtle",
+      "value": "#ffecc2"
+    },
+    {
+      "name": "wb-semantic-color-core-border-disabled-strong",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-core-background-base-strong",
+      "value": "#0b2149"
+    },
+    {
+      "name": "wb-semantic-color-core-background-neutral-subtle",
+      "value": "#ededee"
+    },
+    {
+      "name": "wb-semantic-color-core-background-critical-default",
+      "value": "#d92916"
+    },
+    {
+      "name": "wb-semantic-color-core-background-success-strong",
+      "value": "#0b7c18"
+    },
+    {
+      "name": "wb-semantic-color-core-background-disabled-default",
+      "value": "#ededee"
+    },
+    {
+      "name": "wb-semantic-color-core-foreground-neutral-strong",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-core-foreground-warning-subtle",
+      "value": "#ffecc2"
+    },
+    {
+      "name": "wb-semantic-color-core-foreground-disabled-default",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-core-shadow-chonky-neutral-strong",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-graphics-external-brands-google-gr",
+      "value": "#34A853"
+    },
+    {
+      "name": "wb-semantic-color-graphics-external-brands-apple-bra",
+      "value": "#000000"
+    },
+    {
+      "name": "wb-semantic-color-graphics-role-parent-background",
+      "value": "#BCEBBB"
+    },
+    {
+      "name": "wb-semantic-color-graphics-neutral-background-subtle",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "wb-semantic-color-learning-background-gems-strong",
+      "value": "#84275E"
+    },
+    {
+      "name": "wb-semantic-color-learning-background-streaks-subtle",
+      "value": "#FEE9E5"
+    },
+    {
+      "name": "wb-semantic-color-learning-background-progress-attem",
+      "value": "#FEE7AD"
+    },
+    {
+      "name": "wb-semantic-color-learning-border-gems-default",
+      "value": "#F9BBE1"
+    },
+    {
+      "name": "wb-semantic-color-learning-border-streaks-strong",
+      "value": "#F8551A"
+    },
+    {
+      "name": "wb-semantic-color-learning-border-characters-flesh-b",
+      "value": "#6C82FF"
+    },
+    {
+      "name": "wb-semantic-color-learning-border-characters-flesh-o",
+      "value": "#F97B4F"
+    },
+    {
+      "name": "wb-semantic-color-action-primary-progressive-press-b",
+      "value": "#1b50b3"
+    },
+    {
+      "name": "wb-semantic-color-action-primary-destructive-hover-f",
+      "value": "#ffffff"
+    },
+    {
+      "name": "wb-semantic-color-action-primary-neutral-default-for",
+      "value": "#ffffff"
+    },
+    {
+      "name": "wb-semantic-color-action-primary-neutral-press-borde",
+      "value": "#5f6167"
+    },
+    {
+      "name": "wb-semantic-color-action-primary-disabled-background",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-action-secondary-progressive-press",
+      "value": "#1b50b3"
+    },
+    {
+      "name": "wb-semantic-color-action-secondary-neutral-default-b",
+      "value": "#909296"
+    },
+    {
+      "name": "wb-semantic-color-action-secondary-neutral-press-bor",
+      "value": "#5f6167"
+    },
+    {
+      "name": "wb-semantic-color-action-secondary-disabled-foregrou",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-action-tertiary-neutral-press-bord",
+      "value": "#5f6167"
+    },
+    {
+      "name": "wb-semantic-color-chonky-progressive-background-prim",
+      "value": "#1865f2"
+    },
+    {
+      "name": "wb-semantic-color-chonky-progressive-shadow-primary-",
+      "value": "#1b50b3"
+    },
+    {
+      "name": "wb-semantic-color-chonky-neutral-border-secondary-ho",
+      "value": "#dbdcdd"
+    },
+    {
+      "name": "wb-semantic-color-chonky-neutral-border-tertiary-pre",
+      "value": "#dbdcdd"
+    },
+    {
+      "name": "wb-semantic-color-chonky-neutral-shadow-primary-rest",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-chonky-neutral-shadow-secondary-ho",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-chonky-neutral-shadow-tertiary-pre",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-chonky-disabled-border-primary",
+      "value": "#dbdcdd"
+    },
+    {
+      "name": "wb-semantic-color-chonky-disabled-foreground-tertiar",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-input-default-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "wb-semantic-color-input-disabled-background",
+      "value": "#f7f8fa"
+    },
+    {
+      "name": "wb-semantic-color-input-error-background",
+      "value": "#fceeec"
+    },
+    {
+      "name": "wb-semantic-color-status-critical-background",
+      "value": "#fceeec"
+    },
+    {
+      "name": "wb-semantic-color-status-success-foreground",
+      "value": "#00a60e"
+    },
+    {
+      "name": "wb-semantic-color-focus-outer",
+      "value": "#1865f2"
+    },
+    {
+      "name": "wb-semantic-color-link-press",
+      "value": "#1b50b3"
+    },
+    {
+      "name": "wb-semantic-color-mastery-primary",
+      "value": "#9059ff"
+    },
+    {
+      "name": "wb-semantic-color-feedback-info-subtle-text",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-feedback-info-strong-icon",
+      "value": "#1865f2"
+    },
+    {
+      "name": "wb-semantic-color-feedback-success-subtle-text",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-feedback-success-strong-icon",
+      "value": "#00a60e"
+    },
+    {
+      "name": "wb-semantic-color-feedback-warning-subtle-text",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-feedback-warning-strong-icon",
+      "value": "#ffb100"
+    },
+    {
+      "name": "wb-semantic-color-feedback-critical-strong-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "wb-semantic-color-feedback-neutral-subtle-text",
+      "value": "#21242c"
+    },
+    {
+      "name": "wb-semantic-color-feedback-neutral-strong-icon",
+      "value": "#717378"
+    },
+    {
+      "name": "wb-semantic-color-chonky-neutral-border-tertiary-sel",
+      "value": "#5753FA"
+    },
+    {
+      "name": "wb-semantic-color-core-foreground-instructive-subtle",
+      "value": "#b5cefb"
+    },
+    {
+      "name": "wb-semantic-color-core-shadow-chonky-instructive-sub",
+      "value": "#b5cefb"
+    },
+    {
+      "name": "wb-semantic-color-graphics-characters-flesh-green-bo",
+      "value": "#72BB82"
+    },
+    {
+      "name": "wb-semantic-color-graphics-progress-attempted-foregr",
+      "value": "#FDD673"
+    },
+    {
+      "name": "wb-semantic-color-graphics-role-administrator-foregr",
+      "value": "#57BAFD"
+    },
+    {
+      "name": "wb-semantic-color-learning-math-foreground-blue",
+      "value": "#3D7586"
+    },
+    {
+      "name": "wb-semantic-color-learning-math-foreground-purple-d",
+      "value": "#8351E8"
+    },
+    {
+      "name": "wb-semantic-color-learning-foreground-gems-strong",
+      "value": "#84275E"
+    },
+    {
+      "name": "wb-semantic-color-learning-foreground-progress-not-s",
+      "value": "#B5B6B9"
+    },
+    {
+      "name": "wb-semantic-color-learning-characters-flesh-cyan-def",
+      "value": "#28A9FF"
+    },
+    {
+      "name": "wb-semantic-color-action-tertiary-destructive-defaul",
+      "value": "#d92916"
+    },
+    {
+      "name": "wb-semantic-color-chonky-progressive-shadow-tertiary",
+      "value": "#b8b9bb"
+    },
+    {
+      "name": "wb-semantic-color-feedback-critical-subtle-icon",
+      "value": "#d92916"
+    },
+    {
+      "name": "black",
+      "value": "#151521"
+    },
+    {
+      "name": "google-blue",
+      "value": "#4285F4"
+    },
+    {
+      "name": "foreground-blue",
+      "value": "#3D7586"
+    },
+    {
+      "name": "foreground-purple-d",
+      "value": "#8351E8"
+    },
+    {
+      "name": "red",
+      "value": "#d92916"
+    },
+    {
+      "name": "red-60",
+      "value": "#FBB1B1"
+    },
+    {
+      "name": "red-01",
+      "value": "#3B141A"
+    },
+    {
+      "name": "orange-30",
+      "value": "#F8551A"
+    },
+    {
+      "name": "yellow-70",
+      "value": "#FEEAB8"
+    },
+    {
+      "name": "yellow-05",
+      "value": "#5F4500"
+    },
+    {
+      "name": "green-40",
+      "value": "#72BB82"
+    },
+    {
+      "name": "cyan-80",
+      "value": "#DDF0FE"
+    },
+    {
+      "name": "cyan-10",
+      "value": "#20628F"
+    },
+    {
+      "name": "blue-50",
+      "value": "#8DA2FF"
+    },
+    {
+      "name": "magenta-70",
+      "value": "#FAD4EC"
+    },
+    {
+      "name": "primary",
+      "value": "#1b50b3"
+    }
+  ],
+  "type": [
+    {
+      "name": "wb-c-link-root-font-family",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Noto Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "wb-font-family-sans",
+      "fontFamily": "Lato, \"Noto Sans\", Helvetica, Corbel, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "wb-font-family-serif",
+      "fontFamily": "\"Noto Serif\", serif",
+      "px": 16
+    },
+    {
+      "name": "wb-font-family-mono",
+      "fontFamily": "Inconsolata, monospace",
+      "px": 16
+    },
+    {
+      "name": "sans",
+      "fontFamily": "Lato, \"Noto Sans\", Helvetica, Corbel, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "serif",
+      "fontFamily": "\"Noto Serif\", serif",
+      "px": 16
+    },
+    {
+      "name": "mono",
+      "fontFamily": "Inconsolata, monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1b50b3",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1b50b3",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Wonder Blocks** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#1b50b3` brand accent.\n\nTypography centers cleanly on `Plus Jakarta Sans` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Khan Academy**. Source: published token package, package `@khanacademy/wonder-blocks-tokens`. Inventory: **91** colors, **7** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#dbdcdd` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#ffffff`) and `1px solid #dbdcdd` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1b50b3` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#1b50b3` with `#f7f7f8` text (6.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Plus Jakarta Sans` headings with `Plus Jakarta Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#dbdcdd` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

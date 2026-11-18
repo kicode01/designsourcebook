@@ -1,0 +1,498 @@
+{
+  "canvas": "#f5f8fc",
+  "surface": "#edf2ff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff6700",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "50",
+      "value": "#edf2ff"
+    },
+    {
+      "name": "100",
+      "value": "#e5ecff"
+    },
+    {
+      "name": "200",
+      "value": "#b1cafc"
+    },
+    {
+      "name": "300",
+      "value": "#74a2ff"
+    },
+    {
+      "name": "400",
+      "value": "#4d82ff"
+    },
+    {
+      "name": "500",
+      "value": "#2660ff"
+    },
+    {
+      "name": "600",
+      "value": "#1843d2"
+    },
+    {
+      "name": "700",
+      "value": "#0c2ba6"
+    },
+    {
+      "name": "800",
+      "value": "#051879"
+    },
+    {
+      "name": "900",
+      "value": "#000a4d"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "bg-color",
+      "value": "#f5f8fc"
+    },
+    {
+      "name": "var-value",
+      "value": "#fff"
+    },
+    {
+      "name": "color-brand",
+      "value": "#ff6700"
+    },
+    {
+      "name": "color-palette-brandblue-50",
+      "value": "#e2f3fe"
+    },
+    {
+      "name": "color-palette-brandblue-100",
+      "value": "#bde2ff"
+    },
+    {
+      "name": "color-palette-brandblue-200",
+      "value": "#96ceff"
+    },
+    {
+      "name": "color-palette-brandblue-300",
+      "value": "#70b8ff"
+    },
+    {
+      "name": "color-palette-brandblue-400",
+      "value": "#4a9eff"
+    },
+    {
+      "name": "color-palette-brandblue-500",
+      "value": "#237ffa"
+    },
+    {
+      "name": "color-palette-brandblue-600",
+      "value": "#1360d4"
+    },
+    {
+      "name": "color-palette-brandblue-700",
+      "value": "#0744ad"
+    },
+    {
+      "name": "color-palette-brandblue-800",
+      "value": "#002d87"
+    },
+    {
+      "name": "color-palette-brandblue-900",
+      "value": "#001d61"
+    },
+    {
+      "name": "color-palette-gray-50",
+      "value": "#f5f7fa"
+    },
+    {
+      "name": "color-palette-gray-100",
+      "value": "#f2f4f7"
+    },
+    {
+      "name": "color-palette-gray-200",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "color-palette-gray-300",
+      "value": "#dfe2e8"
+    },
+    {
+      "name": "color-palette-gray-400",
+      "value": "#c9ced6"
+    },
+    {
+      "name": "color-palette-gray-500",
+      "value": "#929aa6"
+    },
+    {
+      "name": "color-palette-gray-600",
+      "value": "#5f6a7a"
+    },
+    {
+      "name": "color-palette-gray-700",
+      "value": "#1f2733"
+    },
+    {
+      "name": "color-palette-gray-800",
+      "value": "#1f2937"
+    },
+    {
+      "name": "color-palette-gray-900",
+      "value": "#111827"
+    },
+    {
+      "name": "color-palette-primary-normal",
+      "value": "#237ffa"
+    },
+    {
+      "name": "color-palette-success-normal",
+      "value": "#14ca64"
+    },
+    {
+      "name": "color-palette-warning-normal",
+      "value": "#fab007"
+    },
+    {
+      "name": "color-palette-danger-normal",
+      "value": "#ff5959"
+    },
+    {
+      "name": "color-danger-20",
+      "value": "#fee9e5"
+    },
+    {
+      "name": "color-danger-30",
+      "value": "#ffd1c9"
+    },
+    {
+      "name": "color-danger-40",
+      "value": "#ffb6ad"
+    },
+    {
+      "name": "color-danger-50",
+      "value": "#ff7a75"
+    },
+    {
+      "name": "color-danger-60",
+      "value": "#d94146"
+    },
+    {
+      "name": "color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "color-gray-80",
+      "value": "#5f6a7a"
+    },
+    {
+      "name": "color-gray-70",
+      "value": "#929aa6"
+    },
+    {
+      "name": "color-gray-50",
+      "value": "#c9ced6"
+    },
+    {
+      "name": "color-gray-30",
+      "value": "#dfe2e8"
+    },
+    {
+      "name": "color-gray-20",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "color-gray-10",
+      "value": "#f5f7fa"
+    },
+    {
+      "name": "color-success-20",
+      "value": "#e5feeb"
+    },
+    {
+      "name": "color-success-30",
+      "value": "#b3f2c6"
+    },
+    {
+      "name": "color-success-40",
+      "value": "#8bf0ad"
+    },
+    {
+      "name": "color-success-50",
+      "value": "#38d677"
+    },
+    {
+      "name": "color-success-60",
+      "value": "#08a351"
+    },
+    {
+      "name": "color-warning-20",
+      "value": "#fefae0"
+    },
+    {
+      "name": "color-warning-30",
+      "value": "#fef2b4"
+    },
+    {
+      "name": "color-warning-40",
+      "value": "#fee789"
+    },
+    {
+      "name": "color-warning-50",
+      "value": "#fec833"
+    },
+    {
+      "name": "color-warning-60",
+      "value": "#d99100"
+    },
+    {
+      "name": "color-primary-10",
+      "value": "#e2f3fe"
+    },
+    {
+      "name": "color-primary-20",
+      "value": "#e2f3fe"
+    },
+    {
+      "name": "color-primary-30",
+      "value": "#bde2ff"
+    },
+    {
+      "name": "color-primary-40",
+      "value": "#96ceff"
+    },
+    {
+      "name": "color-primary-50",
+      "value": "#70b8ff"
+    },
+    {
+      "name": "color-primary-60",
+      "value": "#1360d4"
+    },
+    {
+      "name": "color-primary-70",
+      "value": "#0744ad"
+    },
+    {
+      "name": "color-primary-80",
+      "value": "#002d87"
+    },
+    {
+      "name": "color-primary-90",
+      "value": "#001d61"
+    },
+    {
+      "name": "color-danger",
+      "value": "#ff5959"
+    },
+    {
+      "name": "color-black",
+      "value": "#1f2733"
+    },
+    {
+      "name": "color-success",
+      "value": "#14ca64"
+    },
+    {
+      "name": "color-warning",
+      "value": "#fab007"
+    },
+    {
+      "name": "color-primary",
+      "value": "#237ffa"
+    },
+    {
+      "name": "sider-primary-color",
+      "value": "#2b64ff"
+    },
+    {
+      "name": "primary",
+      "value": "#ff6700"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-h1",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "font-size-h2",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size-h3",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size-x-large",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-stack-sans",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-serif",
+      "fontFamily": "\"('Times New Roman\", \"times)\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-mono",
+      "fontFamily": "\"('SFMono-Regular\", consolas, \"Liberation Mono\", menlo, \"courier)\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-symbol",
+      "fontFamily": "\"('Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol')\"",
+      "px": 16
+    },
+    {
+      "name": "font-size-large",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-h4",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "hi-popover-title",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "font-size-normal",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-h5",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-h6",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-x-small",
+      "fontFamily": "\"('Helvetica Neue\", helvetica, \"arial)\"",
+      "fontSize": "11px",
+      "px": 11
+    }
+  ],
+  "components": [
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#edf2ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff6700",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff6700",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#edf2ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#edf2ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f5f8fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f5f8fc",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#edf2ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**HIUI** is a light-first design system anchored on `#f5f8fc` canvas surfaces with `#0b0b0c` primary ink (18.5:1 contrast) and `#ff6700` brand accent.\n\nTypography centers cleanly on `(Helvetica Neue` (32px display down to 16px body), unified by `8px` base corner radius and stepped `#f5f8fc` -> `#edf2ff` surface layering.\n\nMaintained by **Xiaomi**. Source: published token package (https://github.com/XiaoMi/hiui), repo https://github.com/XiaoMi/hiui. Inventory: **77** colors, **16** typography steps, and **9** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#edf2ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f5f8fc` -> `#edf2ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff6700` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f5f8fc` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff6700` with `#f7f7f8` text (2.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `(Helvetica Neue` headings with `(Helvetica Neue` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#edf2ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

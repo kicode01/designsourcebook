@@ -1,0 +1,455 @@
+{
+  "canvas": "#fff",
+  "surface": "#fafafb",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#e01032",
+  "border": "#eaeaed",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "dt-colors-theme-background-10",
+      "value": "#fafafb"
+    },
+    {
+      "name": "dt-colors-theme-neutral-20",
+      "value": "#eff0f2"
+    },
+    {
+      "name": "dt-colors-theme-neutral-60",
+      "value": "#d6d7da"
+    },
+    {
+      "name": "dt-colors-theme-primary-10",
+      "value": "#f0f4fa"
+    },
+    {
+      "name": "dt-colors-theme-primary-50",
+      "value": "#c3d8ff"
+    },
+    {
+      "name": "dt-colors-theme-primary-90",
+      "value": "#0042da"
+    },
+    {
+      "name": "dt-colors-theme-success-40",
+      "value": "#d8efe2"
+    },
+    {
+      "name": "dt-colors-theme-success-80",
+      "value": "#2cd08f"
+    },
+    {
+      "name": "dt-colors-theme-warning-30",
+      "value": "#fdf3dd"
+    },
+    {
+      "name": "dt-colors-theme-warning-70",
+      "value": "#fdc300"
+    },
+    {
+      "name": "dt-colors-background-surface-default",
+      "value": "#fff"
+    },
+    {
+      "name": "olors-background-container-neutral-accent",
+      "value": "#34353d"
+    },
+    {
+      "name": "lors-background-container-success-default",
+      "value": "#f1f6f3"
+    },
+    {
+      "name": "s-background-container-warning-emphasized",
+      "value": "#fdf7e8"
+    },
+    {
+      "name": "lors-background-container-critical-accent",
+      "value": "#e01032"
+    },
+    {
+      "name": "background-field-neutral-emphasized-hover",
+      "value": "#e4e4e7"
+    },
+    {
+      "name": "rs-background-field-neutral-accent-active",
+      "value": "#14151c"
+    },
+    {
+      "name": "background-field-primary-emphasized-hover",
+      "value": "#d1e1fd"
+    },
+    {
+      "name": "rs-background-field-primary-accent-active",
+      "value": "#0042da"
+    },
+    {
+      "name": "background-field-success-emphasized-hover",
+      "value": "#d8efe2"
+    },
+    {
+      "name": "rs-background-field-success-accent-active",
+      "value": "#43df9d"
+    },
+    {
+      "name": "background-field-warning-emphasized-hover",
+      "value": "#fdefd1"
+    },
+    {
+      "name": "rs-background-field-warning-accent-active",
+      "value": "#ffe27f"
+    },
+    {
+      "name": "colors-background-field-critical-accent",
+      "value": "#e01032"
+    },
+    {
+      "name": "dt-colors-charts-status-neutral-default",
+      "value": "#36383a"
+    },
+    {
+      "name": "dt-colors-charts-logstatus-info-default",
+      "value": "#0057bf"
+    },
+    {
+      "name": "colors-charts-threshold-warning-default",
+      "value": "#d7b43b"
+    },
+    {
+      "name": "dt-colors-border-neutral-accent",
+      "value": "#5c5d66"
+    },
+    {
+      "name": "dt-colors-border-neutral-subdued",
+      "value": "#eaeaed"
+    },
+    {
+      "name": "dt-colors-border-primary-default-hover",
+      "value": "#c3d8ff"
+    },
+    {
+      "name": "dt-colors-border-primary-accent-active",
+      "value": "#0017ae"
+    },
+    {
+      "name": "dt-colors-border-success-default-active",
+      "value": "#c1e8d2"
+    },
+    {
+      "name": "colors-border-success-on-accent-default",
+      "value": "#080c0a"
+    },
+    {
+      "name": "dt-colors-border-warning-accent",
+      "value": "#815d00"
+    },
+    {
+      "name": "dt-colors-border-critical-default",
+      "value": "#fbd6d4"
+    },
+    {
+      "name": "dt-colors-border-critical-accent-hover",
+      "value": "#a60016"
+    },
+    {
+      "name": "dt-colors-text-neutral-subdued-hover",
+      "value": "#46474f"
+    },
+    {
+      "name": "dt-colors-text-neutral-default-active",
+      "value": "#5c5d66"
+    },
+    {
+      "name": "dt-colors-text-primary-default-active",
+      "value": "#0017ae"
+    },
+    {
+      "name": "dt-colors-text-success-default-active",
+      "value": "#004222"
+    },
+    {
+      "name": "dt-colors-text-warning-default-active",
+      "value": "#4c3400"
+    },
+    {
+      "name": "dt-colors-text-critical-default-active",
+      "value": "#80000c"
+    },
+    {
+      "name": "dt-colors-icon-neutral-subdued-active",
+      "value": "#31323a"
+    },
+    {
+      "name": "dt-colors-icon-neutral-on-accent-default",
+      "value": "#f6f6fa"
+    },
+    {
+      "name": "dt-colors-icon-primary-on-accent-default",
+      "value": "#f7f9fc"
+    },
+    {
+      "name": "dt-colors-icon-success-on-accent-default",
+      "value": "#080c0a"
+    },
+    {
+      "name": "dt-colors-icon-warning-on-accent-default",
+      "value": "#0d0b07"
+    },
+    {
+      "name": "dt-colors-background-container-neutral-emphasized",
+      "value": "#292931"
+    },
+    {
+      "name": "dt-colors-background-container-primary-accent",
+      "value": "#115aed"
+    },
+    {
+      "name": "dt-colors-background-container-warning-default",
+      "value": "#2e2719"
+    },
+    {
+      "name": "dt-colors-background-container-critical-emphasized",
+      "value": "#3d201f"
+    },
+    {
+      "name": "dt-colors-background-field-neutral-emphasized",
+      "value": "#34343b"
+    },
+    {
+      "name": "dt-colors-background-field-neutral-accent-active",
+      "value": "#fcfcff"
+    },
+    {
+      "name": "dt-colors-background-field-primary-emphasized-hover",
+      "value": "#1d315a"
+    },
+    {
+      "name": "dt-colors-background-field-success-default-hover",
+      "value": "#1f4332"
+    },
+    {
+      "name": "dt-colors-background-field-success-emphasized-active",
+      "value": "#204c38"
+    },
+    {
+      "name": "dt-colors-background-field-warning-default-active",
+      "value": "#5e4c20"
+    },
+    {
+      "name": "dt-colors-background-field-warning-accent-hover",
+      "value": "#f0bc2b"
+    },
+    {
+      "name": "dt-colors-background-field-critical-emphasized",
+      "value": "#482220"
+    },
+    {
+      "name": "dt-colors-background-field-critical-accent-hover",
+      "value": "#bb001c"
+    },
+    {
+      "name": "dt-colors-border-neutral-on-accent-default",
+      "value": "#0b0b0f"
+    },
+    {
+      "name": "dt-colors-border-critical-on-accent-default",
+      "value": "#faf5f5"
+    },
+    {
+      "name": "dt-colors-theme-foreground-10",
+      "value": "#383842"
+    },
+    {
+      "name": "olors-charts-categorical-color-11-default",
+      "value": "#2380ff"
+    },
+    {
+      "name": "rical-themed-purple-rain-color-04-default",
+      "value": "#8e5fff"
+    },
+    {
+      "name": "categorical-themed-neon-color-03-default",
+      "value": "#1bd4b7"
+    },
+    {
+      "name": "dt-colors-charts-status-good-default",
+      "value": "#006ae5"
+    },
+    {
+      "name": "rts-vulnerability-status-affected-default",
+      "value": "#d40036"
+    },
+    {
+      "name": "equential-blue-turquoise-color-06-default",
+      "value": "#007d91"
+    },
+    {
+      "name": "s-charts-sequential-moss-color-02-default",
+      "value": "#005938"
+    },
+    {
+      "name": "s-charts-sequential-pink-color-07-default",
+      "value": "#f990c4"
+    },
+    {
+      "name": "charts-sequential-purple-color-03-default",
+      "value": "#6c00e3"
+    },
+    {
+      "name": "charts-sequential-brown-color-08-default",
+      "value": "#efbfa5"
+    },
+    {
+      "name": "charts-sequential-orange-color-04-default",
+      "value": "#b64e00"
+    },
+    {
+      "name": "harts-diverging-red-blue-color-07-default",
+      "value": "#cae0ff"
+    },
+    {
+      "name": "arts-diverging-blue-moss-color-08-default",
+      "value": "#56d298"
+    },
+    {
+      "name": "arts-diverging-red-green-color-09-default",
+      "value": "#009f68"
+    },
+    {
+      "name": "rts-diverging-pink-green-color-10-default",
+      "value": "#007048"
+    },
+    {
+      "name": "dt-colors-charts-categorical-color-08-default",
+      "value": "#9f81ff"
+    },
+    {
+      "name": "dt-colors-charts-categorical-themed-purple-rain-colo",
+      "value": "#b900e1"
+    },
+    {
+      "name": "dt-colors-charts-categorical-themed-tide-color-02-de",
+      "value": "#9166ff"
+    },
+    {
+      "name": "dt-colors-charts-sequential-pink-purple-color-07-def",
+      "value": "#6866cd"
+    },
+    {
+      "name": "dt-colors-charts-sequential-grey-color-03-default",
+      "value": "#767a7f"
+    },
+    {
+      "name": "dt-colors-charts-sequential-turquoise-color-08-defau",
+      "value": "#00f0cf"
+    },
+    {
+      "name": "dt-colors-charts-sequential-petrol-color-04-default",
+      "value": "#009caa"
+    },
+    {
+      "name": "dt-colors-charts-sequential-pear-color-09-default",
+      "value": "#9dff7a"
+    },
+    {
+      "name": "dt-colors-charts-sequential-magenta-color-05-default",
+      "value": "#d952ff"
+    },
+    {
+      "name": "dt-colors-charts-diverging-orange-blue-color-10-defa",
+      "value": "#0072f5"
+    },
+    {
+      "name": "dt-colors-charts-diverging-red-purple-color-11-defau",
+      "value": "#6800db"
+    },
+    {
+      "name": "dt-colors-charts-diverging-red-green-color-01-defaul",
+      "value": "#aa002a"
+    },
+    {
+      "name": "primary",
+      "value": "#e01032"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#e01032",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#e01032",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fafafb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fafafb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fafafb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Strato Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#e01032` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `8px` base corner radius and stepped `#fff` -> `#fafafb` surface layering.\n\nMaintained by **Dynatrace**. Source: published token package (https://developer.dynatrace.com/design/design-tokens/), package `@dynatrace/strato-design-tokens`. Inventory: **91** colors, **0** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fafafb` cards; separate sibling sections using `#eaeaed` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fafafb`) and `1px solid #eaeaed` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#e01032` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#e01032` with `#f7f7f8` text (4.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fafafb` surface shifts and `#eaeaed` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

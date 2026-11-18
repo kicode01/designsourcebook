@@ -1,0 +1,447 @@
+{
+  "canvas": "#fff",
+  "surface": "#f7f8fa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff976a",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "van-black",
+      "value": "#000"
+    },
+    {
+      "name": "van-white",
+      "value": "#fff"
+    },
+    {
+      "name": "van-gray-1",
+      "value": "#f7f8fa"
+    },
+    {
+      "name": "van-gray-2",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "van-gray-3",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "van-gray-4",
+      "value": "#dcdee0"
+    },
+    {
+      "name": "van-gray-5",
+      "value": "#c8c9cc"
+    },
+    {
+      "name": "van-gray-6",
+      "value": "#969799"
+    },
+    {
+      "name": "van-gray-7",
+      "value": "#646566"
+    },
+    {
+      "name": "van-gray-8",
+      "value": "#323233"
+    },
+    {
+      "name": "van-red",
+      "value": "#ee0a24"
+    },
+    {
+      "name": "van-blue",
+      "value": "#1989fa"
+    },
+    {
+      "name": "van-orange",
+      "value": "#ff976a"
+    },
+    {
+      "name": "van-orange-dark",
+      "value": "#ed6a0c"
+    },
+    {
+      "name": "van-orange-light",
+      "value": "#fffbe8"
+    },
+    {
+      "name": "van-green",
+      "value": "#07c160"
+    },
+    {
+      "name": "van-text-color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "van-text-color-2",
+      "value": "#707070"
+    },
+    {
+      "name": "van-text-color-3",
+      "value": "#4d4d4d"
+    },
+    {
+      "name": "van-border-color",
+      "value": "#3a3a3c"
+    },
+    {
+      "name": "van-active-color",
+      "value": "#3a3a3c"
+    },
+    {
+      "name": "van-background",
+      "value": "#000"
+    },
+    {
+      "name": "van-background-2",
+      "value": "#1c1c1e"
+    },
+    {
+      "name": "van-background-3",
+      "value": "#37363b"
+    },
+    {
+      "name": "van-back-top-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "fill",
+      "value": "#EBEDF0"
+    },
+    {
+      "name": "van-popover-dark-background",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "primary",
+      "value": "#ff976a"
+    }
+  ],
+  "type": [
+    {
+      "name": "van-calendar-month-mark-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "160px",
+      "px": 160
+    },
+    {
+      "name": "van-coupon-amount-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "van-number-keyboard-key-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "van-password-input-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "van-submit-bar-price-integer-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "van-font-size-lg",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "van-barrage-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "van-dropdown-menu-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "van-font-size-md",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "van-address-list-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "van-font-size-sm",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "van-field-error-message-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "van-font-size-xs",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "van-coupon-currency-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "40%",
+      "px": 6.4
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "textColor": "#fff",
+      "rounded": "2px",
+      "padding": "0 4px"
+    },
+    {
+      "key": "tab",
+      "kind": "tabs",
+      "textColor": "#646566",
+      "padding": "0 4px"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#f7f8fa",
+      "textColor": "#323233",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "#ee0a24",
+      "textColor": "#fff",
+      "rounded": "999px",
+      "padding": "0 3px",
+      "border": "1px solid #fff"
+    },
+    {
+      "key": "toast",
+      "kind": "alert",
+      "backgroundColor": "rgba(0, 0, 0, .7)",
+      "textColor": "#fff",
+      "rounded": "8px",
+      "padding": "16px"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "backgroundColor": "rgba(120, 120, 128, .16)",
+      "rounded": "1em"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "16px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#ebedf0",
+      "rounded": "4px"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "textColor": "#969799"
+    },
+    {
+      "key": "tabs-2",
+      "kind": "tabs",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "notice-bar-2",
+      "kind": "alert",
+      "backgroundColor": "#fffbe8",
+      "textColor": "#ed6a0c",
+      "padding": "0 16px"
+    },
+    {
+      "key": "card-3",
+      "kind": "card",
+      "textColor": "#969799"
+    },
+    {
+      "key": "tabs-3",
+      "kind": "tabs",
+      "backgroundColor": "#1989fa",
+      "rounded": "3px"
+    },
+    {
+      "key": "card-4",
+      "kind": "card",
+      "textColor": "#323233"
+    },
+    {
+      "key": "switch-2",
+      "kind": "switch",
+      "backgroundColor": "#fff",
+      "rounded": "100%",
+      "shadow": "0 3px 1px 0 rgba(0, 0, 0, .05)"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "#323233"
+    },
+    {
+      "key": "nav-bar-2",
+      "kind": "nav",
+      "textColor": "#1989fa"
+    },
+    {
+      "key": "nav-bar-3",
+      "kind": "nav",
+      "textColor": "#323233"
+    },
+    {
+      "key": "dialog-2",
+      "kind": "modal",
+      "textColor": "#323233"
+    },
+    {
+      "key": "toast-3",
+      "kind": "alert",
+      "textColor": "#fff",
+      "padding": "4px"
+    },
+    {
+      "key": "van-floating-panel",
+      "kind": "panel",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "van-action-bar-icon",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#323233"
+    },
+    {
+      "key": "dialog-3",
+      "kind": "modal",
+      "textColor": "#323233",
+      "padding": "26px 24px"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "textColor": "#323233"
+    },
+    {
+      "key": "progress-2",
+      "kind": "progress",
+      "backgroundColor": "#1989fa",
+      "textColor": "#fff",
+      "rounded": "1em",
+      "padding": "0 5px"
+    },
+    {
+      "key": "van-skeleton-avatar",
+      "kind": "avatar",
+      "backgroundColor": "#f2f3f5"
+    },
+    {
+      "key": "van-tree-select",
+      "kind": "select",
+      "backgroundColor": "#f7f8fa"
+    },
+    {
+      "key": "progress-3",
+      "kind": "progress",
+      "backgroundColor": "#1989fa"
+    },
+    {
+      "key": "van-password-input",
+      "kind": "input",
+      "textColor": "#969799"
+    },
+    {
+      "key": "van-tree-select-2",
+      "kind": "select",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "van-action-bar-icon-2",
+      "kind": "icon",
+      "textColor": "#323233"
+    },
+    {
+      "key": "van-password-input-2",
+      "kind": "input",
+      "backgroundColor": "#323233"
+    },
+    {
+      "key": "van-floating-panel-2",
+      "kind": "panel",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "van-floating-panel-3",
+      "kind": "panel",
+      "backgroundColor": "#c8c9cc",
+      "rounded": "4px"
+    },
+    {
+      "key": "van-password-input-3",
+      "kind": "input",
+      "textColor": "#ee0a24"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Vant** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff976a` brand accent.\n\nTypography centers cleanly on `System UI` (160px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Youzan**. Source: published token package, package `vant`. Inventory: **28** colors, **14** typography steps, and **38** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 38 component tokens with documented paddings: `0 4px`, `8px 16px`, `0 3px`, `16px`, `0 16px`.\n- **Hierarchy**: Group controls cleanly within `#f7f8fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 3px 1px 0 rgba(0, 0, 0, .05)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff976a` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff976a` with `#0b0b0c` text (9.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#f7f8fa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `van-password-input` fields and secondary buttons."
+}

@@ -1,0 +1,41 @@
+{
+  "name": "nebular",
+  "displayName": "Nebular Eva Design System",
+  "description": "Akveo Nebular Eva Design System — tokens read from https://github.com/akveo/nebular.",
+  "style": "Akveo Nebular Eva Design System — tokens read from https://github.com/akveo/nebular.",
+  "category": "Akveo",
+  "org": "Akveo",
+  "theme": "light",
+  "tags": [
+    "published",
+    "akveo",
+    "light"
+  ],
+  "homepage": "https://github.com/akveo/nebular",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/akveo/nebular — 3 token files, 99 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/akveo/nebular"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

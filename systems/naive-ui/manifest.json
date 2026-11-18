@@ -1,0 +1,42 @@
+{
+  "name": "naive-ui",
+  "displayName": "Naive UI",
+  "description": "TuSimple Naive UI — tokens imported from naive-ui.",
+  "style": "TuSimple Naive UI — tokens imported from naive-ui.",
+  "category": "TuSimple",
+  "org": "TuSimple",
+  "theme": "light",
+  "tags": [
+    "published",
+    "tu-simple",
+    "light"
+  ],
+  "homepage": "https://www.naiveui.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from naive-ui@2.45.3 (4 token files, 275 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "naive-ui",
+    "version": "2.45.3"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 46,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

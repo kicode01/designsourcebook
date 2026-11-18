@@ -1,0 +1,466 @@
+{
+  "canvas": "#f7f7f7",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "on-primary",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.none}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#ffed00"
+    },
+    {
+      "name": "primary-deep",
+      "value": "#e6d200"
+    },
+    {
+      "name": "on-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "body",
+      "value": "#222222"
+    },
+    {
+      "name": "charcoal",
+      "value": "#333333"
+    },
+    {
+      "name": "mute",
+      "value": "#666666"
+    },
+    {
+      "name": "ash",
+      "value": "#8a8a8a"
+    },
+    {
+      "name": "stone",
+      "value": "#c4c4c4"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "on-dark-mute",
+      "value": "rgba(255,255,255,0.72)"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-soft",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "surface-card",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-dark",
+      "value": "#000000"
+    },
+    {
+      "name": "surface-deep",
+      "value": "#111111"
+    },
+    {
+      "name": "hairline",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "hairline-strong",
+      "value": "#000000"
+    },
+    {
+      "name": "divider-dark",
+      "value": "rgba(255,255,255,0.16)"
+    },
+    {
+      "name": "badge-new",
+      "value": "#ffed00"
+    },
+    {
+      "name": "link",
+      "value": "#0000ee"
+    },
+    {
+      "name": "error",
+      "value": "#be6464"
+    },
+    {
+      "name": "warning",
+      "value": "#f0ad4e"
+    },
+    {
+      "name": "success",
+      "value": "#8dc572"
+    },
+    {
+      "name": "info",
+      "value": "#337ab7"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "NouvelR",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 700,
+      "lineHeight": 0.95,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "NouvelR",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 0.95,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "NouvelR",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 700,
+      "lineHeight": 0.95,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-lg",
+      "fontFamily": "NouvelR",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 0.95,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-md",
+      "fontFamily": "NouvelR",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 0.95,
+      "letterSpacing": 0
+    },
+    {
+      "name": "subtitle",
+      "fontFamily": "NouvelR",
+      "fontSize": "19.2px",
+      "px": 19.2,
+      "fontWeight": 600,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-sm",
+      "fontFamily": "NouvelR",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-lg",
+      "fontFamily": "NouvelR",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "NouvelR",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button-lg",
+      "fontFamily": "NouvelR",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button-md",
+      "fontFamily": "NouvelR",
+      "fontSize": "14.4px",
+      "px": 14.4,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "0.144px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "NouvelR",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.57,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button-sm",
+      "fontFamily": "NouvelR",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.13px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "NouvelR",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "overline",
+      "fontFamily": "NouvelR",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 700,
+      "lineHeight": 1.45,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xs}",
+      "padding": "14px 24px"
+    },
+    {
+      "key": "button-primary-pressed",
+      "kind": "button",
+      "backgroundColor": "{colors.primary-deep}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xs}"
+    },
+    {
+      "key": "button-secondary-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.surface-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xs}",
+      "padding": "14px 24px"
+    },
+    {
+      "key": "button-outline-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xs}",
+      "padding": "13px 23px"
+    },
+    {
+      "key": "button-outline-light",
+      "kind": "button",
+      "backgroundColor": "{colors.surface-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.xs}",
+      "padding": "13px 23px"
+    },
+    {
+      "key": "button-pill",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "button-icon-square",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xs}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "hero-banner",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": 0
+    },
+    {
+      "key": "promo-tile-light",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "32px"
+    },
+    {
+      "key": "promo-tile-dark",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "32px"
+    },
+    {
+      "key": "promo-tile-yellow",
+      "kind": "card",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "32px"
+    },
+    {
+      "key": "vehicle-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": 0
+    },
+    {
+      "key": "configurator-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "24px 0"
+    },
+    {
+      "key": "configurator-swatch",
+      "kind": "component",
+      "backgroundColor": "{colors.surface-soft}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "badge-new",
+      "kind": "badge",
+      "backgroundColor": "{colors.badge-new}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "6px 14px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "sub-nav-pill",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.surface-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "64px 24px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "on-primary",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "on-primary",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f7f7f7",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Renault's Turkish marketing surfaces are unapologetically high-contrast: a\r\nwhite canvas for browsing, a black canvas for product storytelling, and a\r\nsingle Sunlight Yellow accent (`{colors.primary}` — `#ffed00`) reserved for\r\nthe most consequential actions. The brand's modernised flat diamond logo sets\r\nthe tone — geometric, confident, slightly industrial — and the system follows\r\nsuit. Square corners dominate, hairline borders are rare, and elevation is\r\nexpressed through colour blocking rather than shadow.\r\n\r\nThe typography is monolithic. Every text on the site is set in **NouvelR**,\r\nRenault's bespoke display family, with a strong preference for weight 700 at\r\ndisplay sizes (with a tight `lineHeight: 0.95`) and weight 400 for body. There\r\nis no secondary serif, no decorative italic, no script — the discipline is\r\nthe signature.\r\n\r\nPage rhythm cycles between three surface modes: a **white catalogue mode** for\r\nlistings and configurators (`{colors.canvas}` with hairline-thin\r\n`{colors.hairline}` dividers), a **black storytelling mode** for hero\r\nsections, lifestyle imagery, and the lower half of campaign pages, and brief\r\n**yellow accent moments** (`{colors.primary}` tiles, \"NEW\" badges, R5-coded\r\nyellow paint shots) that punctuate the otherwise neutral palette.\r\n\r\n**Key Characteristics:**\r\n- Two-tone canvas system — `{colors.canvas}` (white) for browsing, `{colors.surface-dark}` (black) for storytelling — switched in full-bleed bands rather than subtle gradations.\r\n- A single brand accent — `{colors.primary}` Sunlight Yellow — used scarcely on primary CTAs, \"NEW\" badges, R5 hero photography, and configurator dot indicators.\r\n- **NouvelR everywhere**, with `{typography.display-xl}` headlines at 56px / weight 700 / `lineHeight: 0.95` so condensed multi-line headlines stack cleanly.\r\n- Square geometry: `{rounded.xs}` (2px) on buttons, `{rounded.none}` on tiles and product cards, `{rounded.pill}` reserved exclusively for sub-nav chips and decorative badges.\r\n- Photography-first product tiles — vehicle photos full-bleed inside otherwise neutral cards, with copy stacked beneath rather than overlaid.\r\n- Page-level rhythm cycles white → black → yellow accent → black, with the wordmark and footer always closing on `{colors.surface-dark}`.\n\n### Layout & Spacing\n### Spacing System\r\n- **Base unit**: 4px, with the working scale built on multiples of 4 and 8.\r\n- **Tokens**: `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 20px · `{spacing.xl}` 24px · `{spacing.xxl}` 32px · `{spacing.xxxl}` 40px · `{spacing.section}` 80px.\r\n- Section padding (full-bleed band → next band): `{spacing.section}` (80px) on desktop, collapsing to `{spacing.xxxl}` (40px) on mobile.\r\n- Promo-tile internal padding: `{spacing.xxl}` (32px) all sides on desktop.\r\n- Configurator row vertical padding: `{spacing.xl}` (24px) top/bottom with hairline divider between rows.\r\n\r\n### Grid & Container\r\n- **Max content width** ≈ 1440px. Beyond that, content remains centred and the dark/light bands extend full-bleed.\r\n- **Promo grid** on the homepage: a 2-column tile grid on desktop, dropping to 1-up on mobile. Each tile is square-cornered (`{rounded.none}`) with the photography or solid colour as the background.\r\n- **Vehicle range grids**: 3 to 4 cars per row at desktop, collapsing 2-up at tablet and 1-up at small mobile.\r\n- **Configurator** uses a fixed left visualisation pane (~60% width) with a right-hand scrolling option list (~40% width) on desktop.\r\n\r\n### Whitespace Philosophy\r\n- Whitespace is structural, not decorative. Sections are separated by colour-blocking (white → black) rather than soft padding ramps.\r\n- Inside cards and configurator rows, padding is generous but never airy — the brand is mass-market, so density is acceptable.\r\n- Hairline `{colors.hairline}` dividers on white surfaces create the sense of catalogue precision; on dark surfaces, `{colors.divider-dark}` carries the same role.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` exclusively for primary CTAs, \"yeni\"/\"NEW\" badges, and at most one accent promo tile per band — `{components.promo-tile-yellow}` is intentionally rare.\r\n- Pair `{colors.primary}` only with `{colors.on-primary}` text. Yellow + white is forbidden.\r\n- Set everything in **NouvelR** — no secondary serif, no script, no decorative italic.\r\n- Hold display headlines at `{typography.display-xl}` weight 700 with `lineHeight: 0.95` so they stack tightly on multi-line wraps.\r\n- Use `{rounded.xs}` (2px) on every standard button — the near-flat corner is part of the brand.\r\n- Switch full bands between `{colors.canvas}` and `{colors.surface-dark}` for storytelling rhythm. Avoid mid-greys as section backgrounds.\r\n- Show vehicle photography full-bleed inside `{components.vehicle-card}` with copy stacked beneath, never overlaid.\r\n- Use `{components.sub-nav-pill}` (`{rounded.pill}`) only for sub-nav and small filter rows — never for primary CTAs.\r\n\r\n### Don't\r\n- Don't introduce a secondary accent colour. Yellow is the only brand accent; semantic colours (`{colors.error}`, `{colors.success}`, `{colors.warning}`) are functional, not decorative.\r\n- Don't round vehicle cards or promo tiles. Square-cornered photography is core to the brand expression.\r\n- Don't soften body weights to 500 or 600 — the system relies on the 400 / 700 contrast.\r\n- Don't apply `{colors.primary}` to body text or large surfaces beyond the single accent tile per band.\r\n- Don't add atmospheric gradient washes outside the dedicated R5 / E-TECH hero contexts.\r\n- Don't pair light grey text on white. Body text steps through `{colors.body}`, `{colors.charcoal}`, `{colors.mute}` — `{colors.ash}` and `{colors.stone}` are reserved for placeholders and disabled states.\r\n- Don't add drop shadows to vehicle cards or promo tiles — the system is shadow-free at the catalogue level."
+}

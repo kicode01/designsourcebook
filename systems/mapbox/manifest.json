@@ -1,0 +1,42 @@
+{
+  "name": "mapbox",
+  "displayName": "Assembly",
+  "description": "Mapbox Assembly — tokens imported from @mapbox/mbx-assembly.",
+  "style": "Mapbox Assembly — tokens imported from @mapbox/mbx-assembly.",
+  "category": "Mapbox",
+  "org": "Mapbox",
+  "theme": "light",
+  "tags": [
+    "published",
+    "mapbox",
+    "light"
+  ],
+  "homepage": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @mapbox/mbx-assembly@2.0.3 (1 token files, 63 colours harvested, 50 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@mapbox/mbx-assembly",
+    "version": "2.0.3"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 51,
+    "typography": 13,
+    "components": 22
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

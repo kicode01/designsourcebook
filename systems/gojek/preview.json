@@ -1,0 +1,676 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0d6efd",
+  "border": "#e8e8e8",
+  "radius": ".25rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "bs-blue",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-indigo",
+      "value": "#6610f2"
+    },
+    {
+      "name": "bs-purple",
+      "value": "#6f42c1"
+    },
+    {
+      "name": "bs-pink",
+      "value": "#d63384"
+    },
+    {
+      "name": "bs-red",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-orange",
+      "value": "#fd7e14"
+    },
+    {
+      "name": "bs-yellow",
+      "value": "#ffc107"
+    },
+    {
+      "name": "bs-green",
+      "value": "#198754"
+    },
+    {
+      "name": "bs-teal",
+      "value": "#20c997"
+    },
+    {
+      "name": "bs-cyan",
+      "value": "#0dcaf0"
+    },
+    {
+      "name": "bs-white",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-gray",
+      "value": "#6c757d"
+    },
+    {
+      "name": "bs-gray-dark",
+      "value": "#343a40"
+    },
+    {
+      "name": "bs-gray-100",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "bs-gray-200",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "bs-gray-300",
+      "value": "#dee2e6"
+    },
+    {
+      "name": "bs-gray-400",
+      "value": "#ced4da"
+    },
+    {
+      "name": "bs-gray-500",
+      "value": "#adb5bd"
+    },
+    {
+      "name": "bs-gray-600",
+      "value": "#6c757d"
+    },
+    {
+      "name": "bs-gray-700",
+      "value": "#495057"
+    },
+    {
+      "name": "bs-gray-800",
+      "value": "#343a40"
+    },
+    {
+      "name": "bs-gray-900",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-primary",
+      "value": "#0d6efd"
+    },
+    {
+      "name": "bs-secondary",
+      "value": "#6c757d"
+    },
+    {
+      "name": "bs-success",
+      "value": "#198754"
+    },
+    {
+      "name": "bs-info",
+      "value": "#0dcaf0"
+    },
+    {
+      "name": "bs-warning",
+      "value": "#ffc107"
+    },
+    {
+      "name": "bs-danger",
+      "value": "#dc3545"
+    },
+    {
+      "name": "bs-light",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "bs-dark",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-body-color",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-body-bg",
+      "value": "#fff"
+    },
+    {
+      "name": "bs-table-striped-color",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-table-active-color",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-table-hover-color",
+      "value": "#212529"
+    },
+    {
+      "name": "bs-table-bg",
+      "value": "#cfe2ff"
+    },
+    {
+      "name": "active-color-primary",
+      "value": "#00800d"
+    },
+    {
+      "name": "active-color-secondary",
+      "value": "#eaffea"
+    },
+    {
+      "name": "inactive-color-primary",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "inactive-color-secondary",
+      "value": "#ededed"
+    },
+    {
+      "name": "background-color-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-color-secondary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-color-tertiary",
+      "value": "#1c1d1d"
+    },
+    {
+      "name": "background-color-quaternary",
+      "value": "#f1f2f4"
+    },
+    {
+      "name": "mute-color-primary",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "mute-color-secondary",
+      "value": "#fafafa"
+    },
+    {
+      "name": "error-color-primary",
+      "value": "#ea001f"
+    },
+    {
+      "name": "error-color-secondary",
+      "value": "#fff8f8"
+    },
+    {
+      "name": "product-color-payments",
+      "value": "#0081a0"
+    },
+    {
+      "name": "product-color-fmcg",
+      "value": "#e52535"
+    },
+    {
+      "name": "product-color-daily-needs",
+      "value": "#c85200"
+    },
+    {
+      "name": "border-color-active",
+      "value": "#00880d"
+    },
+    {
+      "name": "border-color-inactive",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "border-color-focus",
+      "value": "#1c1d1d"
+    },
+    {
+      "name": "border-color-mute-primary",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "border-color-static-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "border-color-error",
+      "value": "#ea001f"
+    },
+    {
+      "name": "icon-dynamic-color-default",
+      "value": "#494a4a"
+    },
+    {
+      "name": "icon-dynamic-color-active",
+      "value": "#00880d"
+    },
+    {
+      "name": "icon-dynamic-color-inactive",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "icon-dynamic-color-inverted",
+      "value": "#ffffff"
+    },
+    {
+      "name": "icon-dynamic-color-error",
+      "value": "#ea001f"
+    },
+    {
+      "name": "icon-static-color-transport-logistic",
+      "value": "#00aa13"
+    },
+    {
+      "name": "icon-static-color-payments",
+      "value": "#00aed6"
+    },
+    {
+      "name": "icon-static-color-fmcg",
+      "value": "#ee2737"
+    },
+    {
+      "name": "icon-static-color-daily-needs",
+      "value": "#f06400"
+    },
+    {
+      "name": "icon-static-color-news-entertainment",
+      "value": "#df1995"
+    },
+    {
+      "name": "icon-static-color-business",
+      "value": "#93328e"
+    },
+    {
+      "name": "icon-static-color-black",
+      "value": "#1c1d1d"
+    },
+    {
+      "name": "icon-static-color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "icon-static-color-inactive",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "typography-color-default-title",
+      "value": "#1c1d1d"
+    },
+    {
+      "name": "typography-color-default-body",
+      "value": "#494a4a"
+    },
+    {
+      "name": "typography-color-default-caption",
+      "value": "#494a4a"
+    },
+    {
+      "name": "typography-color-active",
+      "value": "#00880d"
+    },
+    {
+      "name": "typography-color-inactive",
+      "value": "#727272"
+    },
+    {
+      "name": "typography-color-error",
+      "value": "#ea001f"
+    },
+    {
+      "name": "typography-color-static-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "typography-color-inverted",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#0d6efd"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "120px",
+      "px": 120,
+      "lineHeight": "160px"
+    },
+    {
+      "name": "display-5xl",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "58px",
+      "px": 58,
+      "lineHeight": "76px"
+    },
+    {
+      "name": "card-title",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600
+    },
+    {
+      "name": "lead",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "bs-body-font-size",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "bs-font-sans-serif",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "bs-font-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "bs-body-font-family",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "figure-caption",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "display-l",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "13px",
+      "px": 13
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#212529",
+      "rounded": ".25rem",
+      "padding": ".375rem .75rem",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": ".25rem",
+      "border": "1px solid rgba(0,0,0,.125)"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "#212529",
+      "border": "1px solid #dee2e6"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "padding": ".35em .65em"
+    },
+    {
+      "key": "toast",
+      "kind": "alert",
+      "backgroundColor": "rgba(255,255,255,.85)",
+      "rounded": ".25rem",
+      "border": "1px solid rgba(0,0,0,.1)",
+      "shadow": "0 .5rem 1rem rgba(0,0,0,.15)"
+    },
+    {
+      "key": "popover",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": ".3rem",
+      "border": "1px solid rgba(0,0,0,.2)"
+    },
+    {
+      "key": "btn-info-2",
+      "kind": "button",
+      "backgroundColor": "#0dcaf0",
+      "textColor": "#000",
+      "border": "1px solid #0dcaf0"
+    },
+    {
+      "key": "btn-dark-3",
+      "kind": "button",
+      "backgroundColor": "#212529",
+      "textColor": "#fff",
+      "border": "1px solid #212529"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#0d6efd"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "textColor": "#0d6efd",
+      "padding": ".5rem 1rem"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#e9ecef",
+      "rounded": ".25rem"
+    },
+    {
+      "key": "btn-light-4",
+      "kind": "button",
+      "backgroundColor": "#f8f9fa",
+      "textColor": "#000",
+      "border": "1px solid #f8f9fa"
+    },
+    {
+      "key": "link-3",
+      "kind": "link",
+      "backgroundColor": "#fff",
+      "textColor": "#0d6efd",
+      "padding": ".375rem .75rem",
+      "border": "1px solid #dee2e6"
+    },
+    {
+      "key": "table-info-2",
+      "kind": "table",
+      "textColor": "#000",
+      "border": "1px solid #badce3"
+    },
+    {
+      "key": "table-dark-3",
+      "kind": "table",
+      "textColor": "#fff",
+      "border": "1px solid #373b3e"
+    },
+    {
+      "key": "alert-info-2",
+      "kind": "alert",
+      "backgroundColor": "#cff4fc",
+      "textColor": "#055160",
+      "border": "1px solid #b6effb"
+    },
+    {
+      "key": "alert-dark-3",
+      "kind": "alert",
+      "backgroundColor": "#d3d3d4",
+      "textColor": "#141619",
+      "border": "1px solid #bcbebf"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#212529",
+      "rounded": ".25rem",
+      "padding": ".375rem 2.25rem .375rem .75rem",
+      "border": "1px solid #ced4da"
+    },
+    {
+      "key": "card-header-2",
+      "kind": "card",
+      "backgroundColor": "rgba(0,0,0,.03)",
+      "padding": ".5rem 1rem"
+    },
+    {
+      "key": "card-footer-3",
+      "kind": "card",
+      "backgroundColor": "rgba(0,0,0,.03)",
+      "padding": ".5rem 1rem"
+    },
+    {
+      "key": "progress-bar-2",
+      "kind": "progress",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#fff"
+    },
+    {
+      "key": "popover-body-2",
+      "kind": "modal",
+      "textColor": "#212529",
+      "padding": "1rem 1rem"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "rgba(25,135,84,.9)",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "padding": ".25rem .5rem"
+    },
+    {
+      "key": "modal-content-3",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": ".3rem",
+      "border": "1px solid rgba(0,0,0,.2)"
+    },
+    {
+      "key": "tooltip-inner-2",
+      "kind": "tooltip",
+      "backgroundColor": "#000",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "padding": ".25rem .5rem"
+    },
+    {
+      "key": "accordion-item",
+      "kind": "accordion",
+      "backgroundColor": "#fff",
+      "border": "1px solid rgba(0,0,0,.125)"
+    },
+    {
+      "key": "tooltip-3",
+      "kind": "tooltip",
+      "backgroundColor": "rgba(220,53,69,.9)",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "padding": ".25rem .5rem"
+    },
+    {
+      "key": "form-check-input",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "border": "1px solid rgba(0,0,0,.25)"
+    },
+    {
+      "key": "input-group-text-2",
+      "kind": "input",
+      "backgroundColor": "#e9ecef",
+      "textColor": "#212529",
+      "rounded": ".25rem",
+      "padding": ".375rem .75rem",
+      "border": "1px solid #ced4da"
+    },
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "padding": "0",
+      "shadow": "0px 0px 40px rgba(0, 0, 0, 0.06)"
+    },
+    {
+      "key": "icon-static-fmcg",
+      "kind": "icon",
+      "textColor": "#ee2737"
+    },
+    {
+      "key": "icon-static-black-2",
+      "kind": "icon",
+      "textColor": "#1c1d1d"
+    },
+    {
+      "key": "icon-static-white-3",
+      "kind": "icon",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "tag",
+      "kind": "badge",
+      "textColor": "#7fdbca"
+    },
+    {
+      "key": "hljs-selector-tag-2",
+      "kind": "select",
+      "textColor": "#ff6363"
+    },
+    {
+      "key": "hljs-template-tag-3",
+      "kind": "badge",
+      "textColor": "#c792ea"
+    },
+    {
+      "key": "hljs-template-tag-2",
+      "kind": "badge",
+      "textColor": "#800"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0d6efd",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Asphalt** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0d6efd` brand accent.\n\nTypography centers cleanly on `System UI` (120px display down to 16px body), unified by `.25rem` base corner radius and subtle shadow elevation.\n\nMaintained by **GO-JEK**. Source: live stylesheet extraction (https://asphalt.gojek.io/). Inventory: **80** colors, **10** typography steps, and **40** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 40 component tokens with documented paddings: `.375rem .75rem`, `.35em .65em`, `.5rem 1rem`, `.375rem 2.25rem .375rem .75rem`, `1rem 1rem`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#e8e8e8` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 .5rem 1rem rgba(0,0,0,.15)`, `0px 0px 40px rgba(0, 0, 0, 0.06)`) paired with `#e8e8e8` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0d6efd` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0d6efd` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#e8e8e8` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.\n- Do not truncate or drop border contrast on `form-check-input` fields and secondary buttons."
+}

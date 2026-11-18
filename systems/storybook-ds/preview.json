@@ -1,0 +1,211 @@
+{
+  "canvas": "#F5FBFF",
+  "surface": "#F6F9FC",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#FF4785",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "fill",
+      "value": "#A849FF"
+    },
+    {
+      "name": "stop-color",
+      "value": "#35C1F1"
+    },
+    {
+      "name": "stroke",
+      "value": "#1EA7FD"
+    },
+    {
+      "name": "app",
+      "value": "#F6F9FC"
+    },
+    {
+      "name": "app-inverse",
+      "value": "#7A8997"
+    },
+    {
+      "name": "positive",
+      "value": "#E1FFD4"
+    },
+    {
+      "name": "negative",
+      "value": "#FEDED2"
+    },
+    {
+      "name": "warning",
+      "value": "#FFF5CF"
+    },
+    {
+      "name": "calm-blue",
+      "value": "#E3F3FF"
+    },
+    {
+      "name": "primary",
+      "value": "#FF4785"
+    },
+    {
+      "name": "secondary",
+      "value": "#029CFD"
+    },
+    {
+      "name": "tertiary",
+      "value": "#E3E6E8"
+    },
+    {
+      "name": "orange",
+      "value": "#FC521F"
+    },
+    {
+      "name": "gold",
+      "value": "#FFAE00"
+    },
+    {
+      "name": "green",
+      "value": "#66BF3C"
+    },
+    {
+      "name": "seafoam",
+      "value": "#37D5D3"
+    },
+    {
+      "name": "purple",
+      "value": "#6F2CAC"
+    },
+    {
+      "name": "ultraviolet",
+      "value": "#2A0481"
+    },
+    {
+      "name": "red",
+      "value": "#ff4400"
+    },
+    {
+      "name": "bluelight",
+      "value": "#E3F3FF"
+    },
+    {
+      "name": "bluelighter",
+      "value": "#F5FBFF"
+    },
+    {
+      "name": "lighter",
+      "value": "#F7FAFC"
+    },
+    {
+      "name": "mediumlight",
+      "value": "#ECF4F9"
+    },
+    {
+      "name": "medium",
+      "value": "#D9E8F2"
+    },
+    {
+      "name": "mediumdark",
+      "value": "#73828C"
+    },
+    {
+      "name": "darker",
+      "value": "#454E54"
+    },
+    {
+      "name": "darkest",
+      "value": "#2E3438"
+    },
+    {
+      "name": "selected",
+      "value": "#0271B6"
+    },
+    {
+      "name": "style-fill",
+      "value": "#db4437"
+    },
+    {
+      "name": "style-stop-color",
+      "value": "#3e2723"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#F6F9FC",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#FF4785",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#FF4785",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F6F9FC",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#F6F9FC",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#F5FBFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#F5FBFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F6F9FC",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Storybook Design System** is a light-first design system anchored on `#F5FBFF` canvas surfaces with `#0b0b0c` primary ink (18.9:1 contrast) and `#FF4785` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `8px` base corner radius and stepped `#F5FBFF` -> `#F6F9FC` surface layering.\n\nMaintained by **Storybook**. Source: published token package, package `@storybook/design-system`. Inventory: **30** colors, **0** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#F6F9FC` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#F5FBFF` -> `#F6F9FC`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#FF4785` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#F5FBFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#FF4785` with `#f7f7f8` text (3.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F6F9FC` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

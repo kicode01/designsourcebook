@@ -1,0 +1,41 @@
+{
+  "name": "audi",
+  "displayName": "Audi UI",
+  "description": "Audi UI — read from the rendered page in a browser, not from published tokens.",
+  "style": "Audi UI — read from the rendered page in a browser, not from published tokens.",
+  "category": "Audi",
+  "org": "Audi",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "audi",
+    "light"
+  ],
+  "homepage": "https://styleguide.audi.com/document/1811#/-/colours",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://styleguide.audi.com/document/1811#/-/colours in headless Chromium on 2026-11-18 (659 custom properties, 92 sampled elements, 11 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Colours - Basics - Brand.",
+  "source": {
+    "url": "https://styleguide.audi.com/document/1811#/-/colours"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 118,
+    "components": 40
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 3,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

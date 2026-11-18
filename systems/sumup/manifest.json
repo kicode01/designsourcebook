@@ -1,0 +1,42 @@
+{
+  "name": "sumup",
+  "displayName": "Circuit UI",
+  "description": "SumUp Circuit UI — tokens imported from @sumup/design-tokens.",
+  "style": "SumUp Circuit UI — tokens imported from @sumup/design-tokens.",
+  "category": "SumUp",
+  "org": "SumUp",
+  "theme": "light",
+  "tags": [
+    "published",
+    "sum-up",
+    "light"
+  ],
+  "homepage": "https://github.com/sumup-oss/circuit-ui/tree/main/packages/design-tokens/README.md",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @sumup/design-tokens@7.3.1 (1 token files, 135 colours harvested, 70 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@sumup/design-tokens",
+    "version": "7.3.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 71,
+    "typography": 16,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

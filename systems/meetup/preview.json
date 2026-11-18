@@ -1,0 +1,480 @@
+{
+  "canvas": "rgb(255, 255, 255)",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "rgb(0, 212, 128)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "rgba",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "hex",
+      "value": "#ffffff"
+    },
+    {
+      "name": "hsl",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "android-hex8",
+      "value": "#ffffffff"
+    },
+    {
+      "name": "c-white",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "c-light-gray",
+      "value": "rgb(246, 247, 248)"
+    },
+    {
+      "name": "c-medium-gray",
+      "value": "rgb(117, 117, 117)"
+    },
+    {
+      "name": "c-dark-gray",
+      "value": "rgb(53, 62, 72)"
+    },
+    {
+      "name": "c-cool-gray-light",
+      "value": "rgb(228, 233, 237)"
+    },
+    {
+      "name": "c-cool-gray-medium",
+      "value": "rgb(151, 159, 164)"
+    },
+    {
+      "name": "c-red",
+      "value": "rgb(241, 58, 89)"
+    },
+    {
+      "name": "c-dark-red",
+      "value": "rgb(211, 45, 74)"
+    },
+    {
+      "name": "c-pink",
+      "value": "rgb(255, 153, 209)"
+    },
+    {
+      "name": "c-yellow",
+      "value": "rgb(255, 229, 51)"
+    },
+    {
+      "name": "c-light-blue",
+      "value": "rgb(77, 209, 237)"
+    },
+    {
+      "name": "c-purple",
+      "value": "rgb(55, 30, 172)"
+    },
+    {
+      "name": "c-blue",
+      "value": "rgb(0, 162, 199)"
+    },
+    {
+      "name": "c-plum",
+      "value": "rgb(112, 0, 176)"
+    },
+    {
+      "name": "c-orange",
+      "value": "rgb(255, 91, 15)"
+    },
+    {
+      "name": "c-teal",
+      "value": "rgb(0, 212, 128)"
+    },
+    {
+      "name": "c-shamrock",
+      "value": "rgb(89, 219, 51)"
+    },
+    {
+      "name": "c-black",
+      "value": "rgb(15, 23, 33)"
+    },
+    {
+      "name": "c-facebook",
+      "value": "rgb(59, 89, 152)"
+    },
+    {
+      "name": "c-twitter",
+      "value": "rgb(51, 204, 255)"
+    },
+    {
+      "name": "c-linkedin",
+      "value": "rgb(72, 117, 180)"
+    },
+    {
+      "name": "c-tumblr",
+      "value": "rgb(43, 73, 100)"
+    },
+    {
+      "name": "c-flickr",
+      "value": "rgb(254, 8, 131)"
+    },
+    {
+      "name": "c-foursquare",
+      "value": "rgb(12, 186, 223)"
+    },
+    {
+      "name": "c-googleplus",
+      "value": "rgb(198, 61, 45)"
+    },
+    {
+      "name": "c-googleplusbutton",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "c-instagram",
+      "value": "rgb(78, 67, 60)"
+    },
+    {
+      "name": "c-reddit",
+      "value": "rgb(206, 227, 248)"
+    },
+    {
+      "name": "c-wepay",
+      "value": "rgb(72, 145, 220)"
+    },
+    {
+      "name": "c-yahoo",
+      "value": "rgb(123, 0, 153)"
+    },
+    {
+      "name": "c-outlook",
+      "value": "rgb(0, 114, 198)"
+    },
+    {
+      "name": "c-text-primary",
+      "value": "rgb(46, 62, 72)"
+    },
+    {
+      "name": "c-text-primary-inverted",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "c-attention",
+      "value": "rgb(255, 91, 15)"
+    },
+    {
+      "name": "c-success",
+      "value": "rgb(0, 212, 128)"
+    },
+    {
+      "name": "c-content-bg",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "c-content-bginverted",
+      "value": "rgb(15, 23, 33)"
+    },
+    {
+      "name": "c-collection-bg",
+      "value": "rgb(246, 247, 248)"
+    },
+    {
+      "name": "custom-properties-c-white",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "custom-properties-c-light-gray",
+      "value": "rgb(246, 247, 248)"
+    },
+    {
+      "name": "custom-properties-c-medium-gray",
+      "value": "rgb(117, 117, 117)"
+    },
+    {
+      "name": "custom-properties-c-dark-gray",
+      "value": "rgb(53, 62, 72)"
+    },
+    {
+      "name": "custom-properties-c-cool-gray-light",
+      "value": "rgb(228, 233, 237)"
+    },
+    {
+      "name": "custom-properties-c-cool-gray-medium",
+      "value": "rgb(151, 159, 164)"
+    },
+    {
+      "name": "custom-properties-c-red",
+      "value": "rgb(241, 58, 89)"
+    },
+    {
+      "name": "custom-properties-c-dark-red",
+      "value": "rgb(211, 45, 74)"
+    },
+    {
+      "name": "custom-properties-c-pink",
+      "value": "rgb(255, 153, 209)"
+    },
+    {
+      "name": "custom-properties-c-yellow",
+      "value": "rgb(255, 229, 51)"
+    },
+    {
+      "name": "custom-properties-c-light-blue",
+      "value": "rgb(77, 209, 237)"
+    },
+    {
+      "name": "custom-properties-c-purple",
+      "value": "rgb(55, 30, 172)"
+    },
+    {
+      "name": "custom-properties-c-blue",
+      "value": "rgb(0, 162, 199)"
+    },
+    {
+      "name": "custom-properties-c-plum",
+      "value": "rgb(112, 0, 176)"
+    },
+    {
+      "name": "custom-properties-c-orange",
+      "value": "rgb(255, 91, 15)"
+    },
+    {
+      "name": "custom-properties-c-teal",
+      "value": "rgb(0, 212, 128)"
+    },
+    {
+      "name": "custom-properties-c-shamrock",
+      "value": "rgb(89, 219, 51)"
+    },
+    {
+      "name": "custom-properties-c-black",
+      "value": "rgb(15, 23, 33)"
+    },
+    {
+      "name": "custom-properties-c-facebook",
+      "value": "rgb(59, 89, 152)"
+    },
+    {
+      "name": "custom-properties-c-twitter",
+      "value": "rgb(51, 204, 255)"
+    },
+    {
+      "name": "custom-properties-c-linkedin",
+      "value": "rgb(72, 117, 180)"
+    },
+    {
+      "name": "custom-properties-c-tumblr",
+      "value": "rgb(43, 73, 100)"
+    },
+    {
+      "name": "custom-properties-c-flickr",
+      "value": "rgb(254, 8, 131)"
+    },
+    {
+      "name": "custom-properties-c-foursquare",
+      "value": "rgb(12, 186, 223)"
+    },
+    {
+      "name": "custom-properties-c-googleplus",
+      "value": "rgb(198, 61, 45)"
+    },
+    {
+      "name": "custom-properties-c-googleplusbutton",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "custom-properties-c-instagram",
+      "value": "rgb(78, 67, 60)"
+    },
+    {
+      "name": "custom-properties-c-reddit",
+      "value": "rgb(206, 227, 248)"
+    },
+    {
+      "name": "custom-properties-c-wepay",
+      "value": "rgb(72, 145, 220)"
+    },
+    {
+      "name": "custom-properties-c-yahoo",
+      "value": "rgb(123, 0, 153)"
+    },
+    {
+      "name": "custom-properties-c-outlook",
+      "value": "rgb(0, 114, 198)"
+    },
+    {
+      "name": "custom-properties-c-text-primary",
+      "value": "rgb(46, 62, 72)"
+    },
+    {
+      "name": "custom-properties-c-text-primary-inverted",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "custom-properties-c-attention",
+      "value": "rgb(255, 91, 15)"
+    },
+    {
+      "name": "custom-properties-c-success",
+      "value": "rgb(0, 212, 128)"
+    },
+    {
+      "name": "custom-properties-c-content-bg",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "custom-properties-c-content-bginverted",
+      "value": "rgb(15, 23, 33)"
+    },
+    {
+      "name": "custom-properties-c-collection-bg",
+      "value": "rgb(246, 247, 248)"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(0, 212, 128)"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-display1",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "42px",
+      "px": 42
+    },
+    {
+      "name": "font-size-display2",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "34px",
+      "px": 34
+    },
+    {
+      "name": "font-size-title",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "font-size-display3",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "font-size-big",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size-section-title",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size-normal",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family-normal",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-mono",
+      "fontFamily": "Monaco, \"Andale Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-tiny",
+      "fontFamily": "\"Graphik Meetup\", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "rgb(0, 212, 128)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "rgb(0, 212, 128)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Swarm Design System** is a light-first design system anchored on `rgb(255, 255, 255)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `rgb(0, 212, 128)` brand accent.\n\nTypography centers cleanly on `Graphik Meetup` (42px display down to 16px body), unified by `8px` base corner radius and stepped `rgb(255, 255, 255)` -> `#ffffff` surface layering.\n\nMaintained by **Meetup**. Source: published token package, package `swarm-constants`. Inventory: **81** colors, **11** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgb(255, 255, 255)` -> `#ffffff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(0, 212, 128)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `rgb(255, 255, 255)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `rgb(0, 212, 128)` with `#0b0b0c` text (10.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Graphik Meetup` headings with `Graphik Meetup` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

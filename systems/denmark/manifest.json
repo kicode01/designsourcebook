@@ -1,0 +1,41 @@
+{
+  "name": "denmark",
+  "displayName": "Det Fælles Designsystem",
+  "description": "Denmark Det Fælles Designsystem — read from the rendered page in a browser, not from published tokens.",
+  "style": "Denmark Det Fælles Designsystem — read from the rendered page in a browser, not from published tokens.",
+  "category": "Denmark",
+  "org": "Denmark",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "denmark",
+    "light"
+  ],
+  "homepage": "https://designsystem.dk/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://designsystem.dk/ in headless Chromium on 2026-11-18 (22 custom properties, 101 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Forside | Det Fælles Designsystem.",
+  "source": {
+    "url": "https://designsystem.dk/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 15,
+    "typography": 21,
+    "components": 29
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

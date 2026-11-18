@@ -1,0 +1,292 @@
+---
+version: alpha
+name: Solar
+description: "Sunrise Solar — read from the rendered page in a browser, not from published tokens."
+colors:
+  colors-blocks-content-text-styleguide-body: "#000000"
+  colors-blocks-upload-text-label: "#3D3935"
+  colors-blocks-content-text-large-heading: "#3D3935"
+  colors-styleguide-background-accent: "#DA291C"
+  colors-blocks-content-text-link: "#DA291C"
+  colors-blocks-content-text-smaller-heading: "#3D3935"
+  colors-blocks-content-text-small-heading: "#3D3935"
+  colors-blocks-content-text-styleguide-title: "#3D3935"
+  colors-blocks-content-text-styleguide-page-intro: "#5F5955"
+  colors-styleguide-reversed-accent: "#FFFFFF"
+  colors-ui-element-background-main: "#ffffff"
+  colors-ui-element-background-action: "#2265c9"
+  colors-ui-element-background-active: "#eeeeee"
+  colors-ui-element-background-hover: "#f7f7f7"
+  colors-ui-element-border: "#dedede"
+  colors-ui-element-text: "#212121"
+  colors-ui-element-text-secondary: "#605f60"
+  rt-color-white: "#fff"
+  rt-color-dark: "#222"
+  rt-color-success: "#8dc572"
+  rt-color-error: "#be6464"
+  rt-color-warning: "#f0ad4e"
+  rt-color-info: "#337ab7"
+  primary: "#DA291C"
+typography:
+  type-landing-heading:
+    fontSize: 2.5rem
+    fontWeight: 800
+    lineHeight: 3rem
+  type-heading-xsmall:
+    fontSize: ".75rem"
+    fontWeight: 700
+    lineHeight: 1rem
+  type-heading-large:
+    fontSize: 1.5rem
+    fontWeight: 700
+    lineHeight: 2rem
+  h1:
+    fontSize: 2rem
+  h3:
+    fontSize: 1.3rem
+    fontWeight: 700
+  typography-heading-small:
+    fontSize: 1rem
+    fontWeight: 600
+    lineHeight: 24px
+  landing-bottom-cta-title:
+    fontSize: 2.4rem
+    fontWeight: 400
+  landing-title:
+    fontSize: 4.5rem
+    fontWeight: 300
+  landing-subtitle:
+    fontSize: 3rem
+    fontWeight: 300
+  big-title:
+    fontSize: 2rem
+    fontWeight: 250
+  title-text:
+    fontSize: ".8125rem"
+  body:
+    fontFamily: "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif"
+    fontSize: 0.8125rem
+rounded:
+  input: 4px
+  button: 5px
+  nav: "50%"
+  default: 4px
+icons:
+  library: Inline System SVGs
+  package: null
+  style: outline
+  grid: 20
+  strokeWidth: 1.75
+  strokeLinecap: round
+  strokeLinejoin: round
+  source: derived
+components:
+  input:
+    textColor: "#262626"
+    typography:
+      fontSize: ".875rem"
+      fontWeight: 500
+    rounded: 4px
+    height: 40px
+  switch:
+    backgroundColor: "#e8e8e8"
+    rounded: 100px
+    padding: 2px
+    height: 24px
+    width: 44px
+  input-2:
+    textColor: "#6f8291"
+    typography:
+      fontSize: 1.2em
+    rounded: 4px
+  input-3:
+    textColor: "#262626"
+    typography:
+      fontSize: ".875rem"
+      fontWeight: 500
+    rounded: 4px
+    height: 40px
+  link-text:
+    textColor: "#3497ff"
+  icon-text:
+    textColor: "#6a6a6a"
+  button:
+    backgroundColor: "#fff"
+    textColor: "#000"
+    typography:
+      fontSize: ".8rem"
+      fontWeight: 400
+    rounded: 5px
+  link-2:
+    backgroundColor: "#fff"
+    typography:
+      fontSize: 1rem
+    rounded: 4px
+  switch-2:
+    backgroundColor: "#f6f6f6"
+    rounded: 23px
+    height: 21px
+    width: 35px
+  link-3:
+    backgroundColor: "#fff"
+    typography:
+      fontSize: 1rem
+    rounded: 4px
+  button-2:
+    backgroundColor: "#fff"
+    textColor: "#000"
+    typography:
+      fontSize: ".75rem"
+    rounded: 5px
+    height: 20px
+    width: 85px
+  switch-circle-3:
+    backgroundColor: "#fff"
+    rounded: "50%"
+    height: 20px
+    width: 20px
+  label:
+    backgroundColor: "#ed4179"
+    textColor: "#fff"
+    typography:
+      fontSize: ".625rem"
+    rounded: 2px
+    padding: 2px
+  nav:
+    backgroundColor: "#f6f6f6"
+    height: 80px
+  button-3:
+    backgroundColor: "#ed4179"
+    textColor: "#fff"
+    typography:
+      fontSize: ".875rem"
+    rounded: 100px
+    padding: 12px 25px
+  tab-placeholder:
+    backgroundColor: "rgba(246,62,124,.05)"
+    rounded: 3px
+  osx-blue-button-4:
+    backgroundColor: "#ed4179"
+    textColor: "#fff"
+    typography:
+      fontSize: ".8rem"
+      fontWeight: 400
+    rounded: 5px
+  banner-background:
+    backgroundColor: "#e20b0b"
+  progress-view:
+    backgroundColor: "#fff"
+  tab-overlay-2:
+    backgroundColor: "rgba(246,62,124,.05)"
+    rounded: 3px
+  callout-block_background-1-2:
+    backgroundColor: "#fffcc3"
+  callout-block_background-2-3:
+    backgroundColor: "#e2f1ff"
+  nav-page-indicator-2:
+    backgroundColor: "#6f8291"
+    rounded: "50%"
+    height: 8px
+    width: 8px
+  icon-background:
+    backgroundColor: "rgb(255, 255, 255)"
+  select-default:
+    backgroundColor: "#fff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 8px 12px
+  checkbox-control:
+    backgroundColor: "#DA291C"
+    textColor: "#f7f7f8"
+    rounded: 4px
+    padding: 2px
+  table-grid:
+    backgroundColor: "#ffffff"
+    textColor: "#0b0b0c"
+    rounded: 4px
+    padding: 10px 14px
+  tooltip-overlay:
+    backgroundColor: "#0b0b0c"
+    textColor: "#ffffff"
+    rounded: 6px
+    padding: 6px 10px
+---
+
+# Solar
+
+## Overview
+
+**Solar** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#DA291C` brand accent.
+
+Typography centers cleanly on `DM sans` (72px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.
+
+Maintained by **Sunrise**. Source: live stylesheet extraction (https://solar.sunrise.net/). Inventory: **24** colors, **12** typography steps, and **28** documented components (all rights reserved license).
+
+## Colors
+
+- **Canvas (`canvas`)**: `#ffffff` — base application backdrop (light theme).
+- **Surface (`surface`)**: `#fff` — elevated cards, popovers, and panels.
+- **Primary Ink (`text`)**: `#0b0b0c` — body copy and primary headings (19.7:1 on canvas).
+- **Muted Ink (`muted`)**: `#0b0b0c` — secondary captions, placeholders, and helper labels.
+- **Brand Accent (`brand`)**: `#DA291C` (4.9:1 vs canvas; pair with `#f7f7f8` foreground ink for 4.5:1 contrast).
+- **Structural Border (`border`)**: `#dedede` — divider rules, input strokes, and card outlines.
+- **Brand & Accent Scale**: `colors-styleguide-background-accent` (`#DA291C`), `colors-ui-element-background-action` (`#2265c9`), `primary` (`#DA291C`).
+- **Neutral Ramp**: `colors-blocks-content-text-styleguide-body` (`#000000`), `colors-blocks-upload-text-label` (`#3D3935`), `colors-blocks-content-text-large-heading` (`#3D3935`), `colors-blocks-content-text-smaller-heading` (`#3D3935`), `colors-blocks-content-text-small-heading` (`#3D3935`), `colors-blocks-content-text-styleguide-title` (`#3D3935`).
+- **Semantic States**: success: `rt-color-success` (`#8dc572`) · danger: `rt-color-error` (`#be6464`) · warning: `rt-color-warning` (`#f0ad4e`) · info: `colors-blocks-content-text-link` (`#DA291C`).
+
+## Typography
+
+- **Primary / Display Voice**: `"DM sans", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (top step `landing-title`: 4.5rem, weight 300).
+- **Body & UI Controls**: `"DM sans", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif` (`body`: 0.8125rem, weight 400).
+- **Scale Steps (12)**: `landing-title` (4.5rem, w300), `landing-subtitle` (3rem, w300), `type-landing-heading` (2.5rem, w800), `landing-bottom-cta-title` (2.4rem, w400), `h1` (2rem), `big-title` (2rem, w250), `type-heading-large` (1.5rem, w700), `h3` (1.3rem, w700).
+
+## Layout
+
+- **Grid & Control Spacing**: Derived from 28 component tokens with documented paddings: `2px`, `12px 25px`, `8px 12px`, `10px 14px`, `6px 10px`.
+- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#dedede` hairlines rather than oversized whitespace.
+
+## Elevation
+
+- **Layered Shadow Model**: Uses documented shadows (`0 0 10px 0 rgba(0,0,0,.1)`, `0 0 10px 0 rgba(0,0,0,.1)`) paired with `#dedede` borders for elevated overlays.
+- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#DA291C` for keyboard focus and active selection states.
+
+## Shapes
+
+- **Base Corner Geometry**: `4px` (Buttons `5px` · Inputs `4px`).
+- **Nested Concentricity**: Keep nested pills/badges pill-shaped (`999px`) or tighter than their parent `4px` container.
+- **Iconography & SVGs**: Inline System SVGs on a `20x20` grid (outline, stroke `1.75px`, `round` caps).
+
+## Components
+
+- **`input` (input)**: ink `#262626`, radius `4px`, border `1px solid #757575`.
+- **`switch` (switch)**: bg `#e8e8e8`, radius `100px`, padding `2px`.
+- **`input-2` (input)**: ink `#6f8291`, radius `4px`, border `1px solid #e2e4e7`.
+- **`input-3` (input)**: ink `#262626`, radius `4px`, border `1px solid #757575`.
+- **`link-text` (link)**: ink `#3497ff`.
+- **`icon-text` (icon)**: ink `#6a6a6a`.
+- **`button` (button)**: bg `#fff`, ink `#000`, (21.0:1), radius `5px`, border `1px solid #c9c8c9`.
+- **`link-2` (link)**: bg `#fff`, radius `4px`, border `1px solid rgba(0,0,0,.15)`.
+- **`switch-2` (switch)**: bg `#f6f6f6`, radius `23px`, border `1px solid rgba(96,95,96,.15)`.
+- **`link-3` (link)**: bg `#fff`, radius `4px`, border `1px solid rgba(0,0,0,.15)`.
+- **`button-2` (button)**: bg `#fff`, ink `#000`, (21.0:1), radius `5px`, border `1px solid #c9c8c9`.
+- **`switch-circle-3` (switch)**: bg `#fff`, radius `50%`.
+- **`label` (label)**: bg `#ed4179`, ink `#fff`, (3.7:1), radius `2px`, padding `2px`.
+- **`nav` (nav)**: bg `#f6f6f6`, border `1px solid #d3d3d3`.
+- **`button-3` (button)**: bg `#ed4179`, ink `#fff`, (3.7:1), radius `100px`, padding `12px 25px`.
+- **`tab-placeholder` (tabs)**: bg `rgba(246,62,124,.05)`, radius `3px`, border `1px dashed rgba(246,62,124,.5)`.
+
+## Do's and Don'ts
+
+### Do
+- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.
+- Use `#DA291C` with `#f7f7f8` text (4.5:1) for primary CTAs, active tabs, and focus outlines.
+- Pair `DM sans` headings with `DM sans` body copy using documented weights and scale steps.
+- Apply `4px` base geometry across inputs and buttons (4px on outer containers).
+- Separate containers via `#fff` surface shifts and `#dedede` hairlines cleanly.
+
+### Don't
+- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.
+- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.
+- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.
+- Do not mix conflicting corner radii that clash with the system's `4px` baseline.
+- Do not truncate or drop border contrast on `input` fields and secondary buttons.

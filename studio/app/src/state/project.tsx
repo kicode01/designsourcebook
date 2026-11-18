@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import {
   compileDesignSystem,
   resolveFontOption,
@@ -129,6 +129,8 @@ interface ProjectContextValue {
   catalogSystems: CatalogSystemSummary[];
   iconPacks: Record<string, IconPackRecord>;
   catalogLoading: boolean;
+  iconPacksLoading: boolean;
+  ensureIconPacksLoaded: (packId?: string) => Promise<void>;
   seedFromSystemSlug: (slug: string) => Promise<void>;
 }
 
@@ -189,12 +191,61 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
   const [catalogSystems, setCatalogSystems] = useState<CatalogSystemSummary[]>([]);
   const [iconPacks, setIconPacks] = useState<Record<string, IconPackRecord>>({});
   const [catalogLoading, setCatalogLoading] = useState(true);
+  const [iconPacksLoading, setIconPacksLoading] = useState(false);
+  const iconPacksAllLoadedRef = useRef(false);
+  const iconPacksPromiseRef = useRef<Promise<void> | null>(null);
+  const iconPacksRef = useRef<Record<string, IconPackRecord>>({});
+  iconPacksRef.current = iconPacks;
 
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({ designSystem, activeMark }));
     } catch { /* ignore */ }
   }, [designSystem, activeMark]);
+
+  const ensureIconPacksLoaded = useCallback(async (packId?: string) => {
+    if (iconPacksAllLoadedRef.current) return;
+    if (packId && iconPacksRef.current[packId]) return;
+    if (!packId && iconPacksPromiseRef.current) return iconPacksPromiseRef.current;
+
+    const run = async () => {
+      if (!packId) setIconPacksLoading(true);
+      try {
+        const endpoint = packId
+          ? `/api/icon-packs?pack=${encodeURIComponent(packId)}`
+          : '/api/icon-packs';
+        const res = await fetch(endpoint);
+        if (!res.ok) return;
+        const data = await res.json();
+        if (packId && data.ok && data.pack?.id) {
+          const pk = data.pack;
+          setIconPacks((prev) => ({
+            ...prev,
+            [pk.id]: {
+              package: pk.package,
+              version: pk.version,
+              grid: pk.grid,
+              glyphs: pk.glyphs || [],
+            },
+          }));
+        } else if (data.ok && data.iconPacks) {
+          iconPacksAllLoadedRef.current = true;
+          setIconPacks(data.iconPacks);
+        }
+      } catch {
+        // Offline / local fallback leaves lists empty gracefully
+      } finally {
+        if (!packId) {
+          setIconPacksLoading(false);
+          iconPacksPromiseRef.current = null;
+        }
+      }
+    };
+
+    const p = run();
+    if (!packId) iconPacksPromiseRef.current = p;
+    return p;
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -205,7 +256,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
         const data = await res.json();
         if (!cancelled && Array.isArray(data.systems)) {
           setCatalogSystems(data.systems);
-          setIconPacks(data.iconPacks || {});
+          if (data.iconPacks && Object.keys(data.iconPacks).length > 0) {
+            iconPacksAllLoadedRef.current = true;
+            setIconPacks(data.iconPacks);
+          }
         }
       } catch {
         // Offline / local fallback leaves lists empty gracefully
@@ -274,7 +328,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       const glyphName = params.get('glyph');
       if (!packId || !glyphName) return;
       const pk = iconPacks[packId];
-      if (!pk?.glyphs?.length) return;
+      if (!pk?.glyphs?.length) {
+        ensureIconPacksLoaded(packId);
+        return;
+      }
       const g = pk.glyphs.find((x) => x.name === glyphName);
       if (!g) return;
       setActiveMarkState({
@@ -287,7 +344,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     syncPackMark();
     window.addEventListener('hashchange', syncPackMark);
     return () => window.removeEventListener('hashchange', syncPackMark);
-  }, [iconPacks]);
+  }, [iconPacks, ensureIconPacksLoaded]);
 
   const compiledSystem = useMemo(() => compileDesignSystem(designSystem), [designSystem]);
 
@@ -305,8 +362,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     catalogSystems,
     iconPacks,
     catalogLoading,
+    iconPacksLoading,
+    ensureIconPacksLoaded,
     seedFromSystemSlug,
-  }), [theme, designSystem, compiledSystem, activeMark, catalogSystems, iconPacks, catalogLoading, seedFromSystemSlug]);
+  }), [theme, designSystem, compiledSystem, activeMark, catalogSystems, iconPacks, catalogLoading, iconPacksLoading, ensureIconPacksLoaded, seedFromSystemSlug]);
 
   return <ProjectContext.Provider value={value}>{children}</ProjectContext.Provider>;
 }

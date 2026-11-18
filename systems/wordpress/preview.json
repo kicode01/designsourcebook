@@ -1,0 +1,503 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3858e9",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "wpds-color-background-interactive-brand-strong",
+      "value": "#3858e9"
+    },
+    {
+      "name": "wpds-color-background-interactive-brand-strong-disab",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "wpds-color-background-interactive-error-active",
+      "value": "#fff6f5"
+    },
+    {
+      "name": "wpds-color-background-interactive-error-strong-activ",
+      "value": "#b90000"
+    },
+    {
+      "name": "wpds-color-background-interactive-error-weak-active",
+      "value": "#fae5e1"
+    },
+    {
+      "name": "wpds-color-background-interactive-neutral-active",
+      "value": "#fff"
+    },
+    {
+      "name": "wpds-color-background-interactive-neutral-strong",
+      "value": "#2d2d2d"
+    },
+    {
+      "name": "wpds-color-background-interactive-neutral-strong-dis",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "wpds-color-background-surface-brand",
+      "value": "#ecf0fa"
+    },
+    {
+      "name": "wpds-color-background-surface-caution-weak",
+      "value": "#fff9ca"
+    },
+    {
+      "name": "wpds-color-background-surface-error-weak",
+      "value": "#fff6f5"
+    },
+    {
+      "name": "wpds-color-background-surface-info-weak",
+      "value": "#f3f9ff"
+    },
+    {
+      "name": "wpds-color-background-surface-neutral-strong",
+      "value": "#fff"
+    },
+    {
+      "name": "wpds-color-background-surface-success",
+      "value": "#c2f8ca"
+    },
+    {
+      "name": "wpds-color-background-surface-warning",
+      "value": "#fde6be"
+    },
+    {
+      "name": "wpds-color-background-thumb-brand",
+      "value": "#3858e9"
+    },
+    {
+      "name": "wpds-color-background-thumb-brand-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "wpds-color-background-thumb-neutral-weak",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "wpds-color-background-thumb-neutral-weak-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "wpds-color-background-track-neutral-weak",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "wpds-color-foreground-content-error-weak",
+      "value": "#cc1818"
+    },
+    {
+      "name": "wpds-color-foreground-content-info-weak",
+      "value": "#006bd7"
+    },
+    {
+      "name": "wpds-color-foreground-content-neutral-weak",
+      "value": "#707070"
+    },
+    {
+      "name": "wpds-color-foreground-content-success-weak",
+      "value": "#008030"
+    },
+    {
+      "name": "wpds-color-foreground-content-warning-weak",
+      "value": "#936300"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-brand-active",
+      "value": "#0b0070"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-brand-strong",
+      "value": "#eff0f2"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-brand-strong-disab",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-error-active",
+      "value": "#470000"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-error-strong",
+      "value": "#f2efef"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-error-strong-disab",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-neutral-active",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-neutral-strong",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-neutral-strong-dis",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "wpds-color-foreground-interactive-neutral-weak-activ",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "wpds-color-stroke-focus",
+      "value": "#3858e9"
+    },
+    {
+      "name": "wpds-color-stroke-interactive-brand-active",
+      "value": "#2337c8"
+    },
+    {
+      "name": "wpds-color-stroke-interactive-error",
+      "value": "#cc1818"
+    },
+    {
+      "name": "wpds-color-stroke-interactive-error-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "wpds-color-stroke-interactive-neutral",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "wpds-color-stroke-interactive-neutral-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "wpds-color-stroke-surface-brand",
+      "value": "#aebbda"
+    },
+    {
+      "name": "wpds-color-stroke-surface-caution",
+      "value": "#d0c28b"
+    },
+    {
+      "name": "wpds-color-stroke-surface-error",
+      "value": "#e0afa7"
+    },
+    {
+      "name": "wpds-color-stroke-surface-info",
+      "value": "#adc6e2"
+    },
+    {
+      "name": "wpds-color-stroke-surface-neutral",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "wpds-color-stroke-surface-neutral-weak",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "wpds-color-stroke-surface-success-strong",
+      "value": "#008030"
+    },
+    {
+      "name": "wpds-color-stroke-surface-warning-strong",
+      "value": "#936300"
+    },
+    {
+      "name": "color-background-interactive-error-active",
+      "value": "#fff6f5"
+    },
+    {
+      "name": "ackground-interactive-error-strong-active",
+      "value": "#b90000"
+    },
+    {
+      "name": "background-interactive-error-weak-active",
+      "value": "#fae5e1"
+    },
+    {
+      "name": "r-background-interactive-neutral-disabled",
+      "value": "#fff"
+    },
+    {
+      "name": "kground-interactive-neutral-strong-active",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "ackground-interactive-neutral-weak-active",
+      "value": "#ededed"
+    },
+    {
+      "name": "s-color-background-surface-neutral-strong",
+      "value": "#fff"
+    },
+    {
+      "name": "pds-color-background-surface-success-weak",
+      "value": "#ebffed"
+    },
+    {
+      "name": "pds-color-background-thumb-brand-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "or-background-thumb-neutral-weak-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "pds-color-foreground-content-success-weak",
+      "value": "#008030"
+    },
+    {
+      "name": "lor-foreground-interactive-brand-disabled",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "oreground-interactive-brand-strong-active",
+      "value": "#fff"
+    },
+    {
+      "name": "color-foreground-interactive-error-active",
+      "value": "#470000"
+    },
+    {
+      "name": "color-foreground-interactive-error-strong",
+      "value": "#f2efef"
+    },
+    {
+      "name": "eground-interactive-error-strong-disabled",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "r-foreground-interactive-neutral-disabled",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "eground-interactive-neutral-strong-active",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "oreground-interactive-neutral-weak-active",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "s-color-stroke-interactive-brand-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "s-color-stroke-interactive-error-disabled",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "s-color-stroke-interactive-neutral-active",
+      "value": "#6e6e6e"
+    },
+    {
+      "name": "s-color-stroke-interactive-neutral-strong",
+      "value": "#6e6e6e"
+    },
+    {
+      "name": "primary",
+      "value": "#3858e9"
+    },
+    {
+      "name": "success",
+      "value": "#4ab866"
+    },
+    {
+      "name": "error",
+      "value": "#cc1818"
+    },
+    {
+      "name": "ramp-surface6",
+      "value": "#d6d6d6"
+    },
+    {
+      "name": "ramp-surface4",
+      "value": "#ededed"
+    },
+    {
+      "name": "ramp-fg-surface4",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "ramp-fg-surface2",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "ramp-surface1",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "surface6",
+      "value": "#d6d6d6"
+    },
+    {
+      "name": "surface4",
+      "value": "#ededed"
+    },
+    {
+      "name": "fg-surface4",
+      "value": "#1e1e1e"
+    },
+    {
+      "name": "fg-surface2",
+      "value": "#8d8d8d"
+    },
+    {
+      "name": "surface1",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "wpds-color-foreground-content-caution",
+      "value": "#281d00"
+    },
+    {
+      "name": "caution",
+      "value": "#f0d149"
+    },
+    {
+      "name": "ramp-stroke2",
+      "value": "#dbdbdb"
+    },
+    {
+      "name": "ramp-fg-fill-inverted",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "stroke2",
+      "value": "#dbdbdb"
+    }
+  ],
+  "type": [
+    {
+      "name": "wpds-typography-font-size-2xl",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "wpds-typography-font-size-xl",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "wpds-typography-font-family-body",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "wpds-typography-font-family-heading",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "wpds-typography-font-family-mono",
+      "fontFamily": "Menlo, Consolas, monaco, monospace",
+      "px": 16
+    },
+    {
+      "name": "wpds-typography-font-size-lg",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "wpds-typography-font-size-md",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "wpds-typography-font-size-sm",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "wpds-typography-font-size-xs",
+      "fontFamily": "-apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#3858e9",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#3858e9",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**WordPress Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#3858e9` brand accent.\n\nTypography centers cleanly on `System UI` (32px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **WordPress**. Source: published token package (https://github.com/WordPress/gutenberg/tree/HEAD/packages/theme/README.md), package `@wordpress/theme`. Inventory: **90** colors, **9** typography steps, and **8** documented components (GPL-2.0-or-later license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3858e9` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#3858e9` with `#f7f7f8` text (5.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

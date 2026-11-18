@@ -1,0 +1,348 @@
+{
+  "canvas": "#131313",
+  "surface": "#2d2d2d",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#1eaedb",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "8px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "jelly-mint",
+      "value": "#3cffd0"
+    },
+    {
+      "name": "verge-ultraviolet",
+      "value": "#5200ff"
+    },
+    {
+      "name": "console-mint-border",
+      "value": "#309875"
+    },
+    {
+      "name": "deep-link-blue",
+      "value": "#3860be"
+    },
+    {
+      "name": "focus-cyan",
+      "value": "#1eaedb"
+    },
+    {
+      "name": "purple-rule",
+      "value": "#3d00bf"
+    },
+    {
+      "name": "canvas-black",
+      "value": "#131313"
+    },
+    {
+      "name": "surface-slate",
+      "value": "#2d2d2d"
+    },
+    {
+      "name": "image-frame",
+      "value": "#313131"
+    },
+    {
+      "name": "hazard-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "absolute-black",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "secondary-text",
+      "value": "#949494"
+    },
+    {
+      "name": "muted-text",
+      "value": "#e9e9e9"
+    },
+    {
+      "name": "inverted-text",
+      "value": "#131313"
+    },
+    {
+      "name": "focus-ring",
+      "value": "#1eaedb"
+    },
+    {
+      "name": "overlay-black",
+      "value": "rgba(0, 0, 0, 0.33)"
+    },
+    {
+      "name": "dim-gray",
+      "value": "#8c8c8c"
+    },
+    {
+      "name": "primary",
+      "value": "#1eaedb"
+    }
+  ],
+  "type": [
+    {
+      "name": "hero-wordmark-display",
+      "fontFamily": "Manuka",
+      "fontSize": "107px",
+      "px": 107,
+      "fontWeight": 900,
+      "lineHeight": 0.8,
+      "letterSpacing": "1.07px"
+    },
+    {
+      "name": "secondary-display",
+      "fontFamily": "Manuka",
+      "fontSize": "90px",
+      "px": 90,
+      "fontWeight": 900,
+      "lineHeight": 0.8
+    },
+    {
+      "name": "tertiary-display",
+      "fontFamily": "Manuka",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 900,
+      "lineHeight": 0.8
+    },
+    {
+      "name": "large-headline",
+      "fontFamily": "PolySans",
+      "fontSize": "34px",
+      "px": 34,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "heading-wide",
+      "fontFamily": "PolySans",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.1,
+      "letterSpacing": "0.32px"
+    },
+    {
+      "name": "heading-medium",
+      "fontFamily": "PolySans",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "heading-small",
+      "fontFamily": "PolySans",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "serif-caption",
+      "fontFamily": "FK Roman Standard",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "light-capitalized-label",
+      "fontFamily": "PolySans",
+      "fontSize": "19px",
+      "px": 19,
+      "fontWeight": 300,
+      "lineHeight": 1.2,
+      "letterSpacing": "1.9px"
+    },
+    {
+      "name": "all-caps-label-xl",
+      "fontFamily": "PolySans",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.1,
+      "letterSpacing": "1.8px"
+    },
+    {
+      "name": "bold-body",
+      "fontFamily": "PolySans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "body-relaxed",
+      "fontFamily": "PolySans",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "serif-body",
+      "fontFamily": "FK Roman Standard",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "inline-label",
+      "fontFamily": "PolySans",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.15px"
+    },
+    {
+      "name": "body-compact",
+      "fontFamily": "PolySans",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "eyebrow-all-caps",
+      "fontFamily": "PolySans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "1.8px"
+    },
+    {
+      "name": "tag-label",
+      "fontFamily": "PolySans",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.72px"
+    },
+    {
+      "name": "mono-button-label",
+      "fontFamily": "PolySans Mono",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": 2,
+      "letterSpacing": "1.5px"
+    },
+    {
+      "name": "caption-micro",
+      "fontFamily": "PolySans",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "1.1px"
+    },
+    {
+      "name": "mono-timestamp",
+      "fontFamily": "PolySans Mono",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "1.8px"
+    },
+    {
+      "name": "meta-nano",
+      "fontFamily": "PolySans",
+      "fontSize": "10px",
+      "px": 10,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": "1.5px"
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#2d2d2d",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1eaedb",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1eaedb",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#2d2d2d",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#2d2d2d",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#131313",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#131313",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#2d2d2d",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "The Verge's 2024 redesign feels like somebody wired a Condé Nast magazine to a chiptune soundboard. The canvas is almost-black (`#131313`), the headlines are built from a brutally heavy display face (Manuka) that runs up to 107px, and the whole page is peppered with acid-mint `#3cffd0` and ultraviolet `#5200ff` that behave less like brand colors and more like hazard tape. Story tiles are not quiet gray cards — they're saturated, full-bleed color blocks (yellow, pink, orange, blue, purple) that feel like pasted-up rave flyers arranged into a timeline. The mood is \"developer console meets club night meets tech tabloid\": serious enough to cover a congressional hearing, loud enough to review a synthesizer.\r\n\r\nWhat makes this system unmistakable is the **StoryStream** timeline: a vertical feed where every post is a rounded rectangle — often 20–40px radius — filled edge-to-edge with color, framed by a thin border, and marked by a mono-uppercase timestamp on its left rail. Stories don't float on a grid; they stack on a dashed vertical rule like commits in a git log. Above that, a massive **\"The Verge\" wordmark** dominates the masthead in Manuka at hero scale, letting the reader know before any headline loads that this is editorial territory, not a template.\r\n\r\nThere is no \"light mode\" on the homepage — the dark canvas is the product, and the only time the palette inverts is when a single story tile takes a mint or yellow fill. The depth is almost entirely flat: **hairline 1px borders** (`#ffffff`, `#3cffd0`, or `#5200ff`) do the work that shadows would do on a Material-flavored site. Every container is either `#131313` with a 1px outline, a fully saturated accent block, or a slate-gray `#2d2d2d` secondary surface.\r\n\r\n**Key Characteristics:**\r\n- Near-black editorial canvas (`#131313`) as the default surface — no light mode on the homepage\r\n- Acid-mint `#3cffd0` + ultraviolet `#5200ff` as hazard-tape accents, never quiet background wash\r\n- Massive Manuka display headlines up to 107px — the single loudest type move in mainstream tech media\r\n- Rounded pill-card everything: 20/24/30/40px corner radii, never square\r\n- Fully saturated color-block story tiles (mint, purple, yellow, pink, orange, electric blue) on a dark page\r\n- Timeline \"StoryStream\" feed with mono uppercase timestamps rather than a traditional magazine grid\r\n- Flat depth — 1px borders in white, mint, purple do the work that shadows would do elsewhere",
+  "dos": "### Do\r\n- **Do** use `#131313` as the canvas for every view. There is no light mode.\r\n- **Do** use Jelly Mint (`#3cffd0`) and Verge Ultraviolet (`#5200ff`) as hazard accents — buttons, borders, active states, and saturated color-block tiles.\r\n- **Do** use Manuka exclusively at 60px+ for hero headlines. Treat anything smaller as a bug.\r\n- **Do** round everything: 20px for cards, 24px for feature cards, 30–40px for pill buttons.\r\n- **Do** use PolySans Mono for UPPERCASE labels, timestamps, kickers, and button text. Lowercase mono doesn't exist here.\r\n- **Do** apply 1.5–1.9px letter-spacing to every ALL-CAPS label — this is a Verge signature.\r\n- **Do** use saturated color-block tiles (mint, purple, yellow, pink, orange, white) to elevate a story — never a drop shadow.\r\n- **Do** use `#3860be` (deep link blue) as the hover color on every link, regardless of base color.\r\n- **Do** apply the StoryStream timeline rail (1px dashed/solid `#3d00bf` or white) on feed views.\r\n- **Do** use thin-weight (300) PolySans at 19–20px with 1.9px tracking for \"fashion-whisper\" capitalized eyebrows — the contrast with the 107px Manuka shout is the whole voice.\r\n\r\n### Don't\r\n- **Don't** use a light background. The dark canvas is the product.\r\n- **Don't** add `box-shadow` for elevation. Use 1px borders or saturated accent fills instead.\r\n- **Don't** use square corners. Every interactive and content container is rounded.\r\n- **Don't** use Manuka for UI, buttons, or body copy. It's strictly display.\r\n- **Don't** use lowercase mono. PolySans Mono is always UPPERCASE.\r\n- **Don't** let mint and ultraviolet appear as background washes — they're hazard accents, not canvas tints.\r\n- **Don't** use gradients anywhere. The system is solid color blocks only.\r\n- **Don't** introduce new accent colors outside the declared mint / purple / yellow / pink / orange tile palette.\r\n- **Don't** pair Manuka with FK Roman Standard in the same headline cluster — Manuka is the only display shout, serif pulls are reserved for body moments.\r\n- **Don't** use `#3cffd0` text on a `#131313` background at under 16px — the contrast vibrates at small sizes."
+}

@@ -1,0 +1,472 @@
+{
+  "canvas": "hsl(0 0% 100%)",
+  "surface": "hsl(220 20% 98%)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#e00000",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "0",
+      "value": "#e7ffff"
+    },
+    {
+      "name": "10",
+      "value": "#a7e2ff"
+    },
+    {
+      "name": "30",
+      "value": "#458bd0"
+    },
+    {
+      "name": "50",
+      "value": "#12499f"
+    },
+    {
+      "name": "70",
+      "value": "#00246f"
+    },
+    {
+      "name": "90",
+      "value": "#00123e"
+    },
+    {
+      "name": "brand",
+      "value": "#e00000"
+    },
+    {
+      "name": "support-brand",
+      "value": "hsl(0, 100%, 47%)"
+    },
+    {
+      "name": "primary-0",
+      "value": "hsl(220 20% 98%)"
+    },
+    {
+      "name": "primary-5",
+      "value": "hsl(220 19% 91%)"
+    },
+    {
+      "name": "primary-10",
+      "value": "hsl(220 16% 85%)"
+    },
+    {
+      "name": "primary-20",
+      "value": "hsl(219 14% 75%)"
+    },
+    {
+      "name": "primary-30",
+      "value": "hsl(220 12% 66%)"
+    },
+    {
+      "name": "primary-40",
+      "value": "hsl(221 10% 56%)"
+    },
+    {
+      "name": "primary-50",
+      "value": "hsl(221 9% 49%)"
+    },
+    {
+      "name": "primary-60",
+      "value": "hsl(221 10% 39%)"
+    },
+    {
+      "name": "primary-70",
+      "value": "hsl(221 10% 30%)"
+    },
+    {
+      "name": "primary-80",
+      "value": "hsl(219 13% 22%)"
+    },
+    {
+      "name": "primary-90",
+      "value": "hsl(217 11% 14%)"
+    },
+    {
+      "name": "primary-100",
+      "value": "hsl(220 11% 7%)"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "support-white",
+      "value": "hsl(0 0% 100%)"
+    },
+    {
+      "name": "red-0",
+      "value": "hsl(343 100% 96%)"
+    },
+    {
+      "name": "red-10",
+      "value": "hsl(351 100% 81%)"
+    },
+    {
+      "name": "red-30",
+      "value": "hsl(350 66% 49%)"
+    },
+    {
+      "name": "red-50",
+      "value": "hsl(351 100% 31%)"
+    },
+    {
+      "name": "red-70",
+      "value": "hsl(351 100% 20%)"
+    },
+    {
+      "name": "red-90",
+      "value": "hsl(350 100% 10%)"
+    },
+    {
+      "name": "magenta-0",
+      "value": "hsl(327 73% 97%)"
+    },
+    {
+      "name": "magenta-10",
+      "value": "hsl(324 70% 84%)"
+    },
+    {
+      "name": "magenta-30",
+      "value": "hsl(324 60% 64%)"
+    },
+    {
+      "name": "magenta-50",
+      "value": "hsl(324 70% 38%)"
+    },
+    {
+      "name": "magenta-70",
+      "value": "hsl(324 70% 25%)"
+    },
+    {
+      "name": "magenta-90",
+      "value": "hsl(324 70% 16%)"
+    },
+    {
+      "name": "purple-0",
+      "value": "hsl(300 100% 98%)"
+    },
+    {
+      "name": "purple-10",
+      "value": "hsl(299 65% 87%)"
+    },
+    {
+      "name": "purple-30",
+      "value": "hsl(297 39% 64%)"
+    },
+    {
+      "name": "purple-50",
+      "value": "hsl(298 32% 46%)"
+    },
+    {
+      "name": "purple-70",
+      "value": "hsl(298 38% 31%)"
+    },
+    {
+      "name": "purple-90",
+      "value": "hsl(297 42% 18%)"
+    },
+    {
+      "name": "violet-0",
+      "value": "hsl(257 47% 97%)"
+    },
+    {
+      "name": "violet-10",
+      "value": "hsl(262 50% 85%)"
+    },
+    {
+      "name": "violet-30",
+      "value": "hsl(263 50% 62%)"
+    },
+    {
+      "name": "violet-50",
+      "value": "hsl(263 50% 40%)"
+    },
+    {
+      "name": "violet-70",
+      "value": "hsl(262 50% 30%)"
+    },
+    {
+      "name": "violet-90",
+      "value": "hsl(263 51% 18%)"
+    },
+    {
+      "name": "indigo-0",
+      "value": "hsl(240 60% 98%)"
+    },
+    {
+      "name": "indigo-10",
+      "value": "hsl(240 57% 90%)"
+    },
+    {
+      "name": "indigo-30",
+      "value": "hsl(240 52% 74%)"
+    },
+    {
+      "name": "indigo-50",
+      "value": "hsl(241 60% 56%)"
+    },
+    {
+      "name": "indigo-70",
+      "value": "hsl(241 60% 38%)"
+    },
+    {
+      "name": "indigo-90",
+      "value": "hsl(242 61% 16%)"
+    },
+    {
+      "name": "blue-0",
+      "value": "hsl(180 100% 95%)"
+    },
+    {
+      "name": "blue-10",
+      "value": "hsl(200 100% 83%)"
+    },
+    {
+      "name": "blue-30",
+      "value": "hsl(210 60% 54%)"
+    },
+    {
+      "name": "blue-50",
+      "value": "hsl(217 80% 35%)"
+    },
+    {
+      "name": "blue-70",
+      "value": "hsl(221 100% 22%)"
+    },
+    {
+      "name": "blue-90",
+      "value": "hsl(223 100% 12%)"
+    },
+    {
+      "name": "cyan-0",
+      "value": "hsl(186 100% 96%)"
+    },
+    {
+      "name": "cyan-10",
+      "value": "hsl(187 65% 74%)"
+    },
+    {
+      "name": "cyan-30",
+      "value": "hsl(187 52% 48%)"
+    },
+    {
+      "name": "cyan-50",
+      "value": "hsl(187 64% 33%)"
+    },
+    {
+      "name": "cyan-70",
+      "value": "hsl(187 66% 22%)"
+    },
+    {
+      "name": "cyan-90",
+      "value": "hsl(186 67% 15%)"
+    },
+    {
+      "name": "mint-0",
+      "value": "hsl(165 62% 95%)"
+    },
+    {
+      "name": "mint-10",
+      "value": "hsl(165 60% 82%)"
+    },
+    {
+      "name": "mint-30",
+      "value": "hsl(166 60% 55%)"
+    },
+    {
+      "name": "mint-50",
+      "value": "hsl(165 60% 35%)"
+    },
+    {
+      "name": "mint-70",
+      "value": "hsl(165 61% 24%)"
+    },
+    {
+      "name": "mint-90",
+      "value": "hsl(165 64% 14%)"
+    },
+    {
+      "name": "green-0",
+      "value": "hsl(149 100% 91%)"
+    },
+    {
+      "name": "green-10",
+      "value": "hsl(145 76% 75%)"
+    },
+    {
+      "name": "green-30",
+      "value": "hsl(147 63% 46%)"
+    },
+    {
+      "name": "green-50",
+      "value": "hsl(152 100% 28%)"
+    },
+    {
+      "name": "green-70",
+      "value": "hsl(160 100% 18%)"
+    },
+    {
+      "name": "green-90",
+      "value": "hsl(170 100% 8%)"
+    },
+    {
+      "name": "dipsy-0",
+      "value": "hsl(81 55% 94%)"
+    },
+    {
+      "name": "dipsy-10",
+      "value": "hsl(83 53% 74%)"
+    },
+    {
+      "name": "dipsy-30",
+      "value": "hsl(83 50% 54%)"
+    },
+    {
+      "name": "dipsy-50",
+      "value": "hsl(83 60% 38%)"
+    },
+    {
+      "name": "dipsy-70",
+      "value": "hsl(83 80% 24%)"
+    },
+    {
+      "name": "dipsy-90",
+      "value": "hsl(82 69% 17%)"
+    },
+    {
+      "name": "yellow-0",
+      "value": "hsl(60 100% 89%)"
+    },
+    {
+      "name": "yellow-10",
+      "value": "hsl(38 100% 77%)"
+    },
+    {
+      "name": "yellow-30",
+      "value": "hsl(28 72% 53%)"
+    },
+    {
+      "name": "yellow-50",
+      "value": "hsl(25 100% 34%)"
+    },
+    {
+      "name": "yellow-70",
+      "value": "hsl(22 100% 24%)"
+    },
+    {
+      "name": "yellow-90",
+      "value": "hsl(22 100% 15%)"
+    },
+    {
+      "name": "salmon-0",
+      "value": "hsl(16 73% 97%)"
+    },
+    {
+      "name": "salmon-10",
+      "value": "hsl(15 70% 83%)"
+    },
+    {
+      "name": "primary",
+      "value": "#e00000"
+    }
+  ],
+  "type": [
+    {
+      "name": "html",
+      "fontFamily": "\"token(--wds-font-family-sans)\"",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"token(--wds-font-family-sans)\"",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "system-ui, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "hsl(220 20% 98%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#e00000",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#e00000",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "hsl(220 20% 98%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "hsl(220 20% 98%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "hsl(0 0% 100%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "hsl(0 0% 100%)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "hsl(220 20% 98%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**Wanda Design System** is a light-first design system anchored on `hsl(0 0% 100%)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#e00000` brand accent.\n\nTypography centers cleanly on `token(--wds-font-family-sans)` (16px display down to 16px body), unified by `8px` base corner radius and stepped `hsl(0 0% 100%)` -> `hsl(220 20% 98%)` surface layering.\n\nMaintained by **Wonderflow**. Source: published token package (https://github.com/wonderflow-bv/wanda), repo https://github.com/wonderflow-bv/wanda. Inventory: **91** colors, **3** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `hsl(220 20% 98%)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`hsl(0 0% 100%)` -> `hsl(220 20% 98%)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#e00000` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `hsl(0 0% 100%)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#e00000` with `#f7f7f8` text (4.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `token(--wds-font-family-sans)` headings with `token(--wds-font-family-sans)` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `hsl(220 20% 98%)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

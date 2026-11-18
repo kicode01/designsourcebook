@@ -1,0 +1,43 @@
+{
+  "name": "hp",
+  "displayName": "HP",
+  "description": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
+  "style": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
+  "category": "Media & Consumer Tech",
+  "org": "HP",
+  "theme": "light",
+  "tags": [
+    "media",
+    "consumer",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://www.hp.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (hp/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/hp"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 28,
+    "typography": 16,
+    "components": 37
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 2,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

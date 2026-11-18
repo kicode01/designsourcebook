@@ -1,0 +1,480 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fa9000",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.md}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#fa9000"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "live-red",
+      "value": "#c31833"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "charcoal",
+      "value": "#333333"
+    },
+    {
+      "name": "slate",
+      "value": "#595959"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "soft",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "hairline",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "silver",
+      "value": "#bebebe"
+    },
+    {
+      "name": "indigo",
+      "value": "#272967"
+    },
+    {
+      "name": "night-navy",
+      "value": "#100e2f"
+    },
+    {
+      "name": "network-canvas",
+      "value": "#181818"
+    },
+    {
+      "name": "gold",
+      "value": "#dba200"
+    },
+    {
+      "name": "amber",
+      "value": "#ffa000"
+    },
+    {
+      "name": "select-gold",
+      "value": "#ffc500"
+    },
+    {
+      "name": "rail-teal",
+      "value": "#00cbca"
+    },
+    {
+      "name": "rail-red",
+      "value": "#bc0000"
+    },
+    {
+      "name": "mist",
+      "value": "#dddddd"
+    },
+    {
+      "name": "graphite",
+      "value": "#323232"
+    }
+  ],
+  "type": [
+    {
+      "name": "headline-xl",
+      "fontFamily": "Roboto",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "network-display",
+      "fontFamily": "Roboto",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "headline-lg",
+      "fontFamily": "Roboto",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 700,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "headline-md",
+      "fontFamily": "Roboto",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "section-eyebrow",
+      "fontFamily": "Roboto",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 300,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "headline-sm",
+      "fontFamily": "Roboto",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.35,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body",
+      "fontFamily": "Roboto",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "Roboto",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "label-black",
+      "fontFamily": "Roboto",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 900,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Roboto",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.45,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Roboto",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "0px 15px"
+    },
+    {
+      "key": "logo-block",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "button-pill-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "6px 17px"
+    },
+    {
+      "key": "button-pill-mini",
+      "kind": "button",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "1px 6px"
+    },
+    {
+      "key": "section-eyebrow-lockup",
+      "kind": "component",
+      "textColor": "{colors.slate}"
+    },
+    {
+      "key": "news-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "media-thumb",
+      "kind": "component",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "live-badge",
+      "kind": "badge",
+      "textColor": "{colors.live-red}",
+      "rounded": "{rounded.xs}"
+    },
+    {
+      "key": "breaking-band",
+      "kind": "component",
+      "backgroundColor": "{colors.live-red}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "live-strip-item",
+      "kind": "component",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "most-popular-row",
+      "kind": "component",
+      "textColor": "{colors.ink}",
+      "padding": "16px 0px"
+    },
+    {
+      "key": "popular-numeral",
+      "kind": "component",
+      "textColor": "{colors.slate}"
+    },
+    {
+      "key": "newsletter-card",
+      "kind": "card",
+      "backgroundColor": "{colors.soft}",
+      "textColor": "{colors.ink}",
+      "padding": "20px"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xl}",
+      "padding": "0px 15px"
+    },
+    {
+      "key": "avatar-circle",
+      "kind": "avatar",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "network-utility-strip",
+      "kind": "component",
+      "backgroundColor": "{colors.night-navy}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "network-nav",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.graphite}"
+    },
+    {
+      "key": "network-nav-active",
+      "kind": "nav",
+      "textColor": "{colors.amber}"
+    },
+    {
+      "key": "network-hero-panel",
+      "kind": "card",
+      "backgroundColor": "{colors.indigo}",
+      "textColor": "{colors.on-primary}",
+      "padding": "24px"
+    },
+    {
+      "key": "leader-band",
+      "kind": "component",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "leader-card",
+      "kind": "card",
+      "backgroundColor": "{colors.network-canvas}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "section-rail-teal",
+      "kind": "component",
+      "backgroundColor": "{colors.rail-teal}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "section-rail-red",
+      "kind": "component",
+      "backgroundColor": "{colors.rail-red}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "award-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.graphite}"
+    },
+    {
+      "key": "network-select",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.graphite}"
+    },
+    {
+      "key": "network-footer",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.mist}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.sm} {spacing.lg}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.huge}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fa9000",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fa9000",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Al Jazeera's news surface is a printing press, not a product. The page is flat `{colors.canvas}` paper packed edge-to-edge with photography and dense Roboto headline stacks; there are no shadows, no tonal card fills, no decorative gradients — hierarchy is carried entirely by type weight, rules, and the discipline of the grid. Against that severity the brand signs itself with a single saturated orange: the `{colors.primary}` logo block in the masthead and the short orange bar that fronts every section eyebrow (\"MUST READ\", \"OPINION\", \"FEATURED\"). Orange never fills a button and never colors a link — it is a marker pen, not a control.\r\n\r\nUrgency has its own color. `{colors.live-red}` belongs exclusively to the live apparatus: the LIVE badge beside the masthead, the breaking-coverage band, the pulsing dots of the minute-by-minute timeline, and the LIVE UPDATES labels on running stories. Actions, by contrast, are quiet black objects — compact `{colors.ink}` pills at `{rounded.lg}` for Sign up and Subscribe, a rounded `{rounded.xl}` email capsule for the newsletter — so that nothing competes with the news imagery for attention.\r\n\r\nThe corporate network pages flip the polarity while keeping the family jewelry. On a near-black `{colors.network-canvas}` canvas, a `{colors.night-navy}` utility strip and royal `{colors.indigo}` hero panels frame monochrome leadership portraiture; `{colors.gold}` rules and `{colors.amber}` active links carry the network's gilded eagle identity; and vivid vertical rails in `{colors.rail-teal}` and `{colors.rail-red}` label whole sections from the margin. It reads as the broadcast brand's title-card language applied to the web.\r\n\r\n**Key Characteristics:**\r\n- Flat white paper with zero elevation — `{colors.hairline}` rules and whitespace do all the separating on news surfaces\r\n- One-color signature: `{colors.primary}` appears only as the logo block and the 8px eyebrow bar before `{typography.section-eyebrow}` labels\r\n- A dedicated live-news color system — `{colors.live-red}` badges, bands, and timeline dots connected by a `{colors.silver}` rail\r\n- Compact black pill controls (`{rounded.lg}`) and a `{rounded.xl}` capsule input; media thumbnails round at `{rounded.md}` while article imagery stays square\r\n- Roboto-only hierarchy spanning 300-weight uppercase eyebrows to 900-weight LIVE and Trending labels\r\n- The network sub-surface: `{colors.network-canvas}` dark canvas, `{colors.indigo}` hero panels, `{colors.gold}`/`{colors.amber}` gilding, and teal/crimson section rails\r\n- Page rhythm runs white masthead → live strip → photo-dense grids → `{colors.soft}` newsletter card → white footer; network pages run navy strip → white nav → dark portrait canvas → black footer",
+  "dos": "### Do\r\n- Keep `{colors.primary}` to identity duty — the logo block and the eyebrow bar — and let black pills carry every action.\r\n- Reserve `{colors.live-red}` strictly for live/breaking state: badges, bands, timeline dots.\r\n- Open every editorial section with the `section-eyebrow-lockup` (orange bar + 300-weight uppercase label).\r\n- Keep the news surface flat: hairline rules and weight contrast, never shadows or tonal cards.\r\n- Run photography dense and square in article grids; save `{rounded.md}` for carousels and thumbs.\r\n- On network pages, keep the gilded family — `{colors.gold}` rules, `{colors.amber}` active links — over the dark `{colors.network-canvas}`.\r\n- Use the wide Roboto weight spread deliberately: 300 eyebrows, 700 headlines, 900 urgent labels.\r\n\r\n### Don't\r\n- Don't fill buttons or links with `{colors.primary}` — orange interaction chrome breaks the marker-pen rule.\r\n- Don't use `{colors.live-red}` decoratively; if it isn't live coverage, it isn't red.\r\n- Don't add shadows, gradients, or card fills to news grids — density and rules are the aesthetic.\r\n- Don't round article photography; square crops are part of the wire-service voice.\r\n- Don't mix the network's gold/amber/indigo family into the news surface, or the orange eyebrow system into corporate pages.\r\n- Don't soften the eyebrows — they stay uppercase, light-weight, and barred.\r\n- Don't introduce new accent hues; the palette's color budget is spent on orange, live-red, and the network's gold and rails."
+}

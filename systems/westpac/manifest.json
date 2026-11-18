@@ -1,0 +1,41 @@
+{
+  "name": "westpac",
+  "displayName": "GEL",
+  "description": "Westpac GEL — tokens read from https://github.com/WestpacGEL/GEL-next.",
+  "style": "Westpac GEL — tokens read from https://github.com/WestpacGEL/GEL-next.",
+  "category": "Westpac",
+  "org": "Westpac",
+  "theme": "light",
+  "tags": [
+    "published",
+    "westpac",
+    "light"
+  ],
+  "homepage": "https://github.com/WestpacGEL/GEL-next",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/WestpacGEL/GEL-next — 8 token files, 801 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/WestpacGEL/GEL-next"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 7,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

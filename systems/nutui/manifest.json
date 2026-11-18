@@ -1,0 +1,42 @@
+{
+  "name": "nutui",
+  "displayName": "NutUI",
+  "description": "JD.com NutUI — tokens imported from @nutui/nutui.",
+  "style": "JD.com NutUI — tokens imported from @nutui/nutui.",
+  "category": "JD.com",
+  "org": "JD.com",
+  "theme": "light",
+  "tags": [
+    "published",
+    "jd-com",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @nutui/nutui@4.3.15-beta.1 (7 token files, 473 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@nutui/nutui",
+    "version": "4.3.15-beta.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 153,
+    "components": 40
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 3,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

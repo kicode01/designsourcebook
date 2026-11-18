@@ -1,0 +1,536 @@
+{
+  "canvas": "#E9F2FE",
+  "surface": "#E9F2FE",
+  "text": "#5D1F1A",
+  "muted": "#164B35",
+  "brand": "#144794",
+  "border": "#FFFFFF",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background-accent-lime-subtlest",
+      "value": "#EFFFD6"
+    },
+    {
+      "name": "background-accent-lime-subtle",
+      "value": "#94C748"
+    },
+    {
+      "name": "background-accent-red-subtlest",
+      "value": "#FFECEB"
+    },
+    {
+      "name": "background-accent-red-subtle",
+      "value": "#F87168"
+    },
+    {
+      "name": "background-accent-orange-subtlest",
+      "value": "#FFF5DB"
+    },
+    {
+      "name": "background-accent-orange-subtle",
+      "value": "#FCA700"
+    },
+    {
+      "name": "background-accent-yellow-subtlest",
+      "value": "#FEF7C8"
+    },
+    {
+      "name": "background-accent-yellow-subtle",
+      "value": "#EED12B"
+    },
+    {
+      "name": "background-accent-green-subtlest",
+      "value": "#DCFFF1"
+    },
+    {
+      "name": "background-accent-green-subtle",
+      "value": "#4BCE97"
+    },
+    {
+      "name": "background-accent-teal-subtlest",
+      "value": "#E7F9FF"
+    },
+    {
+      "name": "background-accent-teal-subtle",
+      "value": "#6CC3E0"
+    },
+    {
+      "name": "background-accent-blue-subtlest",
+      "value": "#E9F2FE"
+    },
+    {
+      "name": "background-accent-blue-subtle",
+      "value": "#669DF1"
+    },
+    {
+      "name": "background-accent-purple-subtlest",
+      "value": "#F8EEFE"
+    },
+    {
+      "name": "background-accent-purple-subtle",
+      "value": "#C97CF4"
+    },
+    {
+      "name": "background-accent-magenta-subtlest",
+      "value": "#FFECF8"
+    },
+    {
+      "name": "background-accent-magenta-subtle",
+      "value": "#E774BB"
+    },
+    {
+      "name": "background-accent-gray-subtlest",
+      "value": "#F0F1F2"
+    },
+    {
+      "name": "background-accent-gray-subtle",
+      "value": "#8C8F97"
+    },
+    {
+      "name": "background-code-added-highlight",
+      "value": "#DCFFF1"
+    },
+    {
+      "name": "background-droptarget",
+      "value": "#E9F2FE"
+    },
+    {
+      "name": "background-neutral-bold-pressed",
+      "value": "#505258"
+    },
+    {
+      "name": "background-selected-bold-pressed",
+      "value": "#123263"
+    },
+    {
+      "name": "background-brand-bold-pressed",
+      "value": "#144794"
+    },
+    {
+      "name": "background-danger-pressed",
+      "value": "#FFB8B2"
+    },
+    {
+      "name": "background-danger-bold-hovered",
+      "value": "#AE2E24"
+    },
+    {
+      "name": "background-warning-subtler-hovered",
+      "value": "#FBD779"
+    },
+    {
+      "name": "background-success",
+      "value": "#EFFFD6"
+    },
+    {
+      "name": "background-success-subtle",
+      "value": "#B3DF72"
+    },
+    {
+      "name": "background-discovery-pressed",
+      "value": "#E3BDFA"
+    },
+    {
+      "name": "background-discovery-bold-hovered",
+      "value": "#803FA5"
+    },
+    {
+      "name": "background-information-subtler-hovered",
+      "value": "#ADCBFB"
+    },
+    {
+      "name": "border-accent-lime",
+      "value": "#6A9A23"
+    },
+    {
+      "name": "border-accent-yellow",
+      "value": "#B38600"
+    },
+    {
+      "name": "border-accent-blue",
+      "value": "#357DE8"
+    },
+    {
+      "name": "border-accent-gray",
+      "value": "#7D818A"
+    },
+    {
+      "name": "border-inverse",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "border-warning-subtle",
+      "value": "#FBC828"
+    },
+    {
+      "name": "border-information-subtle",
+      "value": "#8FB8F6"
+    },
+    {
+      "name": "text-accent-red-bolder",
+      "value": "#5D1F1A"
+    },
+    {
+      "name": "text-accent-green-bolder",
+      "value": "#164B35"
+    },
+    {
+      "name": "text-accent-purple-bolder",
+      "value": "#48245D"
+    },
+    {
+      "name": "text-code-accent-2",
+      "value": "#1558BC"
+    },
+    {
+      "name": "text-code-numbers",
+      "value": "#7F5F01"
+    },
+    {
+      "name": "text-brand",
+      "value": "#1868DB"
+    },
+    {
+      "name": "text-success",
+      "value": "#4C6B1F"
+    },
+    {
+      "name": "text-subtlest",
+      "value": "#6B6E76"
+    },
+    {
+      "name": "icon-accent-green",
+      "value": "#22A06B"
+    },
+    {
+      "name": "icon-brand",
+      "value": "#1868DB"
+    },
+    {
+      "name": "link",
+      "value": "#1868DB"
+    },
+    {
+      "name": "chart-brand",
+      "value": "#357DE8"
+    },
+    {
+      "name": "chart-warning",
+      "value": "#F68909"
+    },
+    {
+      "name": "chart-success-bold",
+      "value": "#5B7F24"
+    },
+    {
+      "name": "rovo-background-brand-bold",
+      "value": "#000000"
+    },
+    {
+      "name": "rovo-border-purple",
+      "value": "#AF59E1"
+    },
+    {
+      "name": "surface-overlay-pressed",
+      "value": "#DDDEE1"
+    },
+    {
+      "name": "rovo-surface-overlay-hovered",
+      "value": "#F0F1F2"
+    },
+    {
+      "name": "border-color",
+      "value": "#4b4d51"
+    },
+    {
+      "name": "icon",
+      "value": "#292A2E"
+    },
+    {
+      "name": "icon-discovery",
+      "value": "#AF59E1"
+    },
+    {
+      "name": "chart-categorical-1",
+      "value": "#357DE8"
+    },
+    {
+      "name": "chart-categorical-2-hovered",
+      "value": "#6A9A23"
+    },
+    {
+      "name": "chart-categorical-4",
+      "value": "#F68909"
+    },
+    {
+      "name": "chart-categorical-5-hovered",
+      "value": "#123263"
+    },
+    {
+      "name": "chart-categorical-7",
+      "value": "#42B2D7"
+    },
+    {
+      "name": "chart-categorical-8-hovered",
+      "value": "#7A3B00"
+    },
+    {
+      "name": "chart-lime-bolder",
+      "value": "#5B7F24"
+    },
+    {
+      "name": "chart-lime-boldest-hovered",
+      "value": "#37471F"
+    },
+    {
+      "name": "chart-red-bolder",
+      "value": "#E2483D"
+    },
+    {
+      "name": "chart-red-boldest-hovered",
+      "value": "#5D1F1A"
+    },
+    {
+      "name": "chart-orange-bolder",
+      "value": "#BD5B00"
+    },
+    {
+      "name": "chart-orange-boldest-hovered",
+      "value": "#693200"
+    },
+    {
+      "name": "chart-yellow-bolder",
+      "value": "#946F00"
+    },
+    {
+      "name": "chart-yellow-boldest-hovered",
+      "value": "#533F04"
+    },
+    {
+      "name": "chart-green-bolder",
+      "value": "#1F845A"
+    },
+    {
+      "name": "chart-green-boldest-hovered",
+      "value": "#164B35"
+    },
+    {
+      "name": "chart-teal-bolder",
+      "value": "#227D9B"
+    },
+    {
+      "name": "chart-teal-boldest-hovered",
+      "value": "#164555"
+    },
+    {
+      "name": "chart-blue-bolder",
+      "value": "#357DE8"
+    },
+    {
+      "name": "chart-blue-boldest-hovered",
+      "value": "#123263"
+    },
+    {
+      "name": "chart-purple-bolder",
+      "value": "#AF59E1"
+    },
+    {
+      "name": "chart-purple-boldest-hovered",
+      "value": "#48245D"
+    },
+    {
+      "name": "chart-magenta-bolder",
+      "value": "#CD519D"
+    },
+    {
+      "name": "chart-magenta-boldest-hovered",
+      "value": "#50253F"
+    },
+    {
+      "name": "chart-gray-bolder",
+      "value": "#7D818A"
+    },
+    {
+      "name": "chart-gray-boldest-hovered",
+      "value": "#3B3D42"
+    },
+    {
+      "name": "chart-discovery-bold",
+      "value": "#803FA5"
+    },
+    {
+      "name": "rovo-icon-saffron",
+      "value": "#FCA700"
+    },
+    {
+      "name": "icon-hover-color",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "#144794"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-heading-xxlarge",
+      "fontFamily": "\"normal 653 2rem/2.25rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-xlarge",
+      "fontFamily": "\"normal 653 1.75rem/2rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-large",
+      "fontFamily": "\"normal 653 1.5rem/1.75rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-medium",
+      "fontFamily": "\"normal 653 1.25rem/1.5rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-small",
+      "fontFamily": "\"normal 653 1rem/1.25rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-xsmall",
+      "fontFamily": "\"normal 653 0.875rem/1.25rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-heading-xxsmall",
+      "fontFamily": "\"normal 653 0.75rem/1rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-large",
+      "fontFamily": "\"normal 400 1rem/1.5rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body",
+      "fontFamily": "\"normal 400 0.875rem/1.25rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-body-small",
+      "fontFamily": "\"normal 400 0.75rem/1rem \"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-code",
+      "fontFamily": "\"normal 400 0.875em/1 \"Atlassian Mono\", ui-monospace, Menlo, \"Segoe UI Mono\", \"Ubuntu Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-heading",
+      "fontFamily": "\"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-body",
+      "fontFamily": "\"Atlassian Sans\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-code",
+      "fontFamily": "\"Atlassian Mono\", ui-monospace, Menlo, \"Segoe UI Mono\", \"Ubuntu Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-brand-heading",
+      "fontFamily": "\"Charlie Display\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-brand-body",
+      "fontFamily": "\"Charlie Text\", ui-sans-serif, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ubuntu, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#E9F2FE",
+      "textColor": "#5D1F1A",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#144794",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#144794",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#E9F2FE",
+      "textColor": "#5D1F1A",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#E9F2FE",
+      "textColor": "#5D1F1A",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#E9F2FE",
+      "textColor": "#5D1F1A",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#5D1F1A",
+      "textColor": "#E9F2FE",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#E9F2FE",
+      "textColor": "#5D1F1A",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Nachos** is a light-first design system anchored on `#E9F2FE` canvas surfaces with `#5D1F1A` primary ink (11.1:1 contrast) and `#144794` brand accent.\n\nDisplay headlines pair `normal 653 2rem/2.25rem Atlassian Sans` with `normal 400 1rem/1.5rem Atlassian Sans` body copy (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Trello**. Source: live stylesheet extraction (https://design.trello.com/). Inventory: **91** colors, **16** typography steps, and **8** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#E9F2FE` cards; separate sibling sections using `#FFFFFF` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#E9F2FE` -> `#E9F2FE`) and `1px solid #FFFFFF` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#144794` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#E9F2FE` (light) with `#5D1F1A` primary text and `#164B35` secondary labels.\n- Use `#144794` with `#f7f7f8` text (8.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `normal 653 2rem/2.25rem Atlassian Sans` headings with `normal 400 1rem/1.5rem Atlassian Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#E9F2FE` surface shifts and `#FFFFFF` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

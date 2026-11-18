@@ -1,0 +1,803 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#eeeeee",
+  "text": "#333",
+  "muted": "#333",
+  "brand": "#007ac7",
+  "border": "color-mix(in srgb, #333 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "1",
+      "value": "#FAFDFF"
+    },
+    {
+      "name": "6",
+      "value": "#CCE7FF"
+    },
+    {
+      "name": "11",
+      "value": "#4DACFF"
+    },
+    {
+      "name": "16",
+      "value": "#006DCC"
+    },
+    {
+      "name": "21",
+      "value": "#00294D"
+    },
+    {
+      "name": "26",
+      "value": "#003D26"
+    },
+    {
+      "name": "gds-sys-color-text-primary",
+      "value": "#333333"
+    },
+    {
+      "name": "gds-sys-color-text-secondary",
+      "value": "#ababab"
+    },
+    {
+      "name": "gds-sys-color-text-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "gds-sys-color-text-black",
+      "value": "#333333"
+    },
+    {
+      "name": "gds-sys-color-text-inverted",
+      "value": "#ffffff"
+    },
+    {
+      "name": "gds-sys-color-text-link",
+      "value": "#0062bc"
+    },
+    {
+      "name": "gds-sys-color-text-error",
+      "value": "#9f000a"
+    },
+    {
+      "name": "gds-sys-color-text-disabled",
+      "value": "#adadad"
+    },
+    {
+      "name": "gds-sys-color-background-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "gds-sys-color-background-secondary",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "neutral-000",
+      "value": "#ffffff"
+    },
+    {
+      "name": "neutral-050",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "neutral-100",
+      "value": "#e9e9e9"
+    },
+    {
+      "name": "neutral-150",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "neutral-200",
+      "value": "#dedede"
+    },
+    {
+      "name": "neutral-250",
+      "value": "#cecece"
+    },
+    {
+      "name": "neutral-300",
+      "value": "#ababab"
+    },
+    {
+      "name": "neutral-350",
+      "value": "#adadad"
+    },
+    {
+      "name": "neutral-400",
+      "value": "#868686"
+    },
+    {
+      "name": "neutral-450",
+      "value": "#757575"
+    },
+    {
+      "name": "neutral-500",
+      "value": "#494949"
+    },
+    {
+      "name": "neutral-525",
+      "value": "#464646"
+    },
+    {
+      "name": "neutral-550",
+      "value": "#333333"
+    },
+    {
+      "name": "neutral-600",
+      "value": "#2c2c2c"
+    },
+    {
+      "name": "neutral-650",
+      "value": "#272727"
+    },
+    {
+      "name": "neutral-700",
+      "value": "#222222"
+    },
+    {
+      "name": "neutral-750",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "neutral-800",
+      "value": "#121212"
+    },
+    {
+      "name": "neutral-1000",
+      "value": "#000000"
+    },
+    {
+      "name": "gds-comp-check-mark-background",
+      "value": "#60cd18"
+    },
+    {
+      "name": "link-color",
+      "value": "rgb(0, 98, 188)"
+    },
+    {
+      "name": "link-color-visited",
+      "value": "rgb(103, 58, 182)"
+    },
+    {
+      "name": "background-color",
+      "value": "#eee"
+    },
+    {
+      "name": "form-control-bg-disabled",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "gds-checkbox-border-color",
+      "value": "hsla(60, 4%, 20%, 1)"
+    },
+    {
+      "name": "text-primary-color",
+      "value": "#333"
+    },
+    {
+      "name": "sg-border-color",
+      "value": "#868686"
+    },
+    {
+      "name": "gds-sys-color-focus-outline",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "sg-card-background",
+      "value": "#fff"
+    },
+    {
+      "name": "gds-sys-color-surface",
+      "value": "#fff"
+    },
+    {
+      "name": "border-color-normal",
+      "value": "#868686"
+    },
+    {
+      "name": "text-disabled-color",
+      "value": "#adadad"
+    },
+    {
+      "name": "sg-popover-background",
+      "value": "#fff"
+    },
+    {
+      "name": "sg-text-primary",
+      "value": "#333"
+    },
+    {
+      "name": "sg-modal-background",
+      "value": "#fff"
+    },
+    {
+      "name": "gds-comp-checkbox-border-color",
+      "value": "#333"
+    },
+    {
+      "name": "gds-comp-radio-border",
+      "value": "#333"
+    },
+    {
+      "name": "gds-comp-radio-border-checked",
+      "value": "#333"
+    },
+    {
+      "name": "sg-table-header-background",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "primary",
+      "value": "#007ac7"
+    },
+    {
+      "name": "disabled",
+      "value": "#dedede"
+    },
+    {
+      "name": "gds-ref-color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "gds-sys-color-dark-blue-1",
+      "value": "#41b0ee"
+    },
+    {
+      "name": "gds-sys-color-yellow",
+      "value": "#ffc500"
+    },
+    {
+      "name": "gds-sys-color-dark-red-2",
+      "value": "#bb000c"
+    },
+    {
+      "name": "gds-sys-color-black",
+      "value": "#000000"
+    },
+    {
+      "name": "gds-sys-color-base-500",
+      "value": "#adadad"
+    },
+    {
+      "name": "gds-ref-pallet-base000",
+      "value": "hsl(0 0% 100%)"
+    },
+    {
+      "name": "gds-ref-pallet-base500",
+      "value": "hsl(0, 0%, 68%)"
+    },
+    {
+      "name": "gds-ref-pallet-base1000",
+      "value": "hsl(0 0% 0%)"
+    },
+    {
+      "name": "grey-s500",
+      "value": "#adadad"
+    },
+    {
+      "name": "green-s100",
+      "value": "#8fd668"
+    },
+    {
+      "name": "blue-s100",
+      "value": "#7ecff9"
+    },
+    {
+      "name": "purple-s100",
+      "value": "#b39ddb"
+    },
+    {
+      "name": "red-s100",
+      "value": "#f7706d"
+    },
+    {
+      "name": "yellow-s100",
+      "value": "#ffe182"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "s400",
+      "value": "#cecece"
+    },
+    {
+      "name": "s900",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "blue-500",
+      "value": "#0092e1"
+    },
+    {
+      "name": "green-300",
+      "value": "#45b400"
+    },
+    {
+      "name": "red-400",
+      "value": "#d81a1a"
+    },
+    {
+      "name": "purple-100",
+      "value": "#ad91dc"
+    },
+    {
+      "name": "purple-600",
+      "value": "#3f2587"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#f0be47"
+    },
+    {
+      "name": "gds-comp-chips-br-color",
+      "value": "#2c2c2c"
+    },
+    {
+      "name": "gds-sys-outline-color",
+      "value": "#333333"
+    },
+    {
+      "name": "grey-400",
+      "value": "#494949"
+    },
+    {
+      "name": "grey-900",
+      "value": "#121212"
+    },
+    {
+      "name": "green-0",
+      "value": "#60cd18"
+    },
+    {
+      "name": "yellow-2",
+      "value": "#f8a000"
+    },
+    {
+      "name": "purple-1",
+      "value": "#4f2c99"
+    },
+    {
+      "name": "gds-checkbox-checked-color",
+      "value": "hsla(130, 40%, 30%, 1)"
+    },
+    {
+      "name": "gds-sys-color-font",
+      "value": "#333"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-2xl",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "82px",
+      "px": 82,
+      "lineHeight": 90
+    },
+    {
+      "name": "display-xl",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "64px",
+      "px": 64,
+      "lineHeight": 72
+    },
+    {
+      "name": "display-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "48px",
+      "px": 48,
+      "lineHeight": 56
+    },
+    {
+      "name": "bb-chart-arcs-gauge-title",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "2.7em",
+      "px": 43.2
+    },
+    {
+      "name": "display-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "36px",
+      "px": 36,
+      "lineHeight": 44
+    },
+    {
+      "name": "heading-xl",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "34px",
+      "px": 34,
+      "lineHeight": 46
+    },
+    {
+      "name": "display-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "32px",
+      "px": 32,
+      "lineHeight": 40
+    },
+    {
+      "name": "preamble-2xl",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "32px",
+      "px": 32,
+      "lineHeight": 40
+    },
+    {
+      "name": "heading-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "28px",
+      "px": 28,
+      "lineHeight": 40
+    },
+    {
+      "name": "preamble-xl",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "28px",
+      "px": 28,
+      "lineHeight": 36
+    },
+    {
+      "name": "heading-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "24px",
+      "px": 24,
+      "lineHeight": 32
+    },
+    {
+      "name": "preamble-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "24px",
+      "px": 24,
+      "lineHeight": 32
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "bb-chart-arcs-title",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "1.3em",
+      "px": 20.8
+    },
+    {
+      "name": "heading-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 28
+    },
+    {
+      "name": "preamble-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 28
+    },
+    {
+      "name": "body-regular-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 26
+    },
+    {
+      "name": "body-medium-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 26
+    },
+    {
+      "name": "body-book-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 26
+    },
+    {
+      "name": "body-italic-l",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 26
+    },
+    {
+      "name": "preamble-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "18px",
+      "px": 18,
+      "lineHeight": 26
+    },
+    {
+      "name": "detail-book-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": 20
+    },
+    {
+      "name": "detail-regular-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": 20
+    },
+    {
+      "name": "body-medium-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": 24
+    },
+    {
+      "name": "body-book-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": 24
+    },
+    {
+      "name": "body-regular-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": 24
+    },
+    {
+      "name": "body-italic-m",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "17px",
+      "px": 17,
+      "lineHeight": 24
+    },
+    {
+      "name": "family",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif",
+      "px": 16
+    },
+    {
+      "name": "heading-xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": 24
+    },
+    {
+      "name": "preamble-xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": 24
+    },
+    {
+      "name": "root-font-size",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "base-font-size",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-sans-serif",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "px": 16
+    },
+    {
+      "name": "item-list-header-title",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"tokens.font-family('sans')\"",
+      "px": 16,
+      "lineHeight": 1.125
+    },
+    {
+      "name": "detail-book-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "15px",
+      "px": 15,
+      "lineHeight": 18
+    },
+    {
+      "name": "detail-regular-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "15px",
+      "px": 15,
+      "lineHeight": 18
+    },
+    {
+      "name": "heading-2xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 20
+    },
+    {
+      "name": "gds-list-heading",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500
+    },
+    {
+      "name": "bb-title",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-font-size",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "form-info-font-size",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "body-medium-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": 20
+    },
+    {
+      "name": "body-book-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": 20
+    },
+    {
+      "name": "body-regular-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": 20
+    },
+    {
+      "name": "body-italic-s",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": 20
+    },
+    {
+      "name": "detail-book-xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": 16
+    },
+    {
+      "name": "detail-regular-xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": 16
+    },
+    {
+      "name": "detail-book-2xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": 16
+    },
+    {
+      "name": "item-list-header-subtitle",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "detail-regular-2xs",
+      "fontFamily": "\"SEB SansSerif\", \"SEB SansSerif GDS\", SEBSansSerif, sans-serif, \"Helvetica Neue\", Helvetica, Arial",
+      "fontSize": "11px",
+      "px": 11,
+      "lineHeight": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#eeeeee",
+      "textColor": "#333",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#007ac7",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#007ac7",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eeeeee",
+      "textColor": "#333",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eeeeee",
+      "textColor": "#333",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#333",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#333",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eeeeee",
+      "textColor": "#333",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**SEB Green Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#333` primary ink (12.6:1 contrast) and `#007ac7` brand accent.\n\nTypography centers cleanly on `SEB SansSerif` (82px display down to 20px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#eeeeee` surface layering.\n\nMaintained by **Skandinaviska Enskilda Banken**. Source: published token package (https://github.com/seb-oss/green), repo https://github.com/seb-oss/green. Inventory: **90** colors, **52** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#eeeeee` cards; separate sibling sections using `color-mix(in srgb, #333 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#eeeeee`) and `1px solid color-mix(in srgb, #333 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#007ac7` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#333` primary text and `#333` secondary labels.\n- Use `#007ac7` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `SEB SansSerif` headings with `SEB SansSerif` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#eeeeee` surface shifts and `color-mix(in srgb, #333 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

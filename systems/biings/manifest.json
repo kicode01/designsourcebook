@@ -1,0 +1,41 @@
+{
+  "name": "biings",
+  "displayName": "Biings Design System",
+  "description": "Biings Design System — read from biings.design's live stylesheets, not a published token package.",
+  "style": "Biings Design System — read from biings.design's live stylesheets, not a published token package.",
+  "category": "Biings",
+  "org": "Biings",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "biings",
+    "light"
+  ],
+  "homepage": "https://biings.design/#/color",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://biings.design/#/color and its 1 stylesheets on 2026-11-18. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "url": "https://biings.design/#/color"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 72,
+    "typography": 7,
+    "components": 24
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

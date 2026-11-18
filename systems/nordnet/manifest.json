@@ -1,0 +1,42 @@
+{
+  "name": "nordnet",
+  "displayName": "Nordnet UI Kit",
+  "description": "Nordnet UI Kit — tokens imported from nordnet-ui-kit.",
+  "style": "Nordnet UI Kit — tokens imported from nordnet-ui-kit.",
+  "category": "Nordnet",
+  "org": "Nordnet",
+  "theme": "light",
+  "tags": [
+    "published",
+    "nordnet",
+    "light"
+  ],
+  "homepage": "https://nordnet.github.io/nordnet-ui-kit",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from nordnet-ui-kit@5.3.10 (8 token files, 33 colours harvested, 32 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "nordnet-ui-kit",
+    "version": "5.3.10"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 33,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

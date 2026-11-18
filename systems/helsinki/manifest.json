@@ -1,0 +1,42 @@
+{
+  "name": "helsinki",
+  "displayName": "Helsinki Design System",
+  "description": "City of Helsinki Helsinki Design System — tokens imported from hds-design-tokens.",
+  "style": "City of Helsinki Helsinki Design System — tokens imported from hds-design-tokens.",
+  "category": "City of Helsinki",
+  "org": "City of Helsinki",
+  "theme": "light",
+  "tags": [
+    "published",
+    "city-of-helsinki",
+    "light"
+  ],
+  "homepage": "https://github.com/City-of-Helsinki/helsinki-design-system#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from hds-design-tokens@6.0.8 (1 token files, 73 colours harvested, 73 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "hds-design-tokens",
+    "version": "6.0.8"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 74,
+    "typography": 12,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

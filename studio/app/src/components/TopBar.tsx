@@ -1,5 +1,6 @@
 import { Icon } from './icons';
 import { useProject } from '../state/project';
+import { triggerPortalNavigation } from '../utils/chameleonNav';
 
 export type Product = 'systems' | 'create' | 'logofx' | 'brand';
 
@@ -24,7 +25,12 @@ export function TopBar({
   return (
     <header className="studio-topbar" aria-label="Design Sourcebook Studio Navigation">
       <div className="studio-brand">
-        <a className="ds-brand-link" href="../" title="Return to Design Sourcebook Catalog">
+        <a
+          className="ds-brand-link"
+          href="../"
+          onClick={(e) => triggerPortalNavigation(e)}
+          title="Return to Design Sourcebook Catalog"
+        >
           <svg className="ds-mark" viewBox="0 0 256 256" aria-hidden="true">
             <defs>
               <linearGradient id="tb-g1" gradientUnits="userSpaceOnUse" x1="138" y1="67" x2="230" y2="43">
@@ -83,6 +89,7 @@ export function TopBar({
         <a
           className="product-switcher"
           href="../#/logos"
+          onClick={(e) => triggerPortalNavigation(e)}
           style={{ fontSize: 11.5, padding: '4px 10px' }}
           title="Open Brand Logos & Icon Packs Database in Catalog"
         >
@@ -92,6 +99,7 @@ export function TopBar({
         <a
           className="product-switcher"
           href="../"
+          onClick={(e) => triggerPortalNavigation(e)}
           style={{ fontSize: 11.5, padding: '4px 10px' }}
           title="Back to 208-system Catalog"
         >

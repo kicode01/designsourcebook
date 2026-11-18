@@ -1,0 +1,43 @@
+{
+  "name": "alberta",
+  "displayName": "Alberta Design System",
+  "description": "Government of Alberta Alberta Design System — tokens imported from @abgov/design-tokens.",
+  "style": "Government of Alberta Alberta Design System — tokens imported from @abgov/design-tokens.",
+  "category": "Government of Alberta",
+  "org": "Government of Alberta",
+  "theme": "light",
+  "tags": [
+    "published",
+    "government-of-alberta",
+    "government",
+    "light"
+  ],
+  "homepage": "",
+  "license": "see package",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @abgov/design-tokens@2.12.9 (19 token files, 710 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@abgov/design-tokens",
+    "version": "2.12.9"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 20,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

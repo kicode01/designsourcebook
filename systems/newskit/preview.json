@@ -1,0 +1,594 @@
+{
+  "canvas": "rgba(243,249,255,1)",
+  "surface": "rgba(240,249,253,1)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0b0b0c",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "neutral010",
+      "value": "#F1F1F1"
+    },
+    {
+      "name": "neutral020",
+      "value": "#E2E2E2"
+    },
+    {
+      "name": "neutral030",
+      "value": "#C6C6C6"
+    },
+    {
+      "name": "neutral040",
+      "value": "#ABABAB"
+    },
+    {
+      "name": "neutral050",
+      "value": "#919191"
+    },
+    {
+      "name": "neutral060",
+      "value": "#6A6A6A"
+    },
+    {
+      "name": "neutral070",
+      "value": "#525252"
+    },
+    {
+      "name": "neutral080",
+      "value": "#3B3B3B"
+    },
+    {
+      "name": "neutral090",
+      "value": "#262626"
+    },
+    {
+      "name": "neutral100",
+      "value": "#111111"
+    },
+    {
+      "name": "focus010",
+      "value": "#3768FB"
+    },
+    {
+      "name": "primary015",
+      "value": "rgba(242,250,242,1)"
+    },
+    {
+      "name": "primary025",
+      "value": "rgba(229,245,228,1)"
+    },
+    {
+      "name": "primary050",
+      "value": "rgba(205,235,202,1)"
+    },
+    {
+      "name": "primary075",
+      "value": "rgba(152,213,149,1)"
+    },
+    {
+      "name": "primary085",
+      "value": "rgba(77,183,77,1)"
+    },
+    {
+      "name": "primary100",
+      "value": "rgba(68,164,68,1)"
+    },
+    {
+      "name": "primary200",
+      "value": "rgba(60,149,60,1)"
+    },
+    {
+      "name": "primary300",
+      "value": "rgba(55,134,50,1)"
+    },
+    {
+      "name": "primary400",
+      "value": "rgba(54,127,46,1)"
+    },
+    {
+      "name": "primary500",
+      "value": "rgba(43,107,37,1)"
+    },
+    {
+      "name": "primary600",
+      "value": "rgba(38,90,32,1)"
+    },
+    {
+      "name": "primary700",
+      "value": "rgba(19,56,15,1)"
+    },
+    {
+      "name": "primary800",
+      "value": "rgba(14,44,11,1)"
+    },
+    {
+      "name": "primary900",
+      "value": "rgba(8,33,2,1)"
+    },
+    {
+      "name": "secondary015",
+      "value": "rgba(240,249,253,1)"
+    },
+    {
+      "name": "secondary025",
+      "value": "rgba(227,243,252,1)"
+    },
+    {
+      "name": "secondary050",
+      "value": "rgba(202,231,246,1)"
+    },
+    {
+      "name": "secondary075",
+      "value": "rgba(142,207,238,1)"
+    },
+    {
+      "name": "secondary085",
+      "value": "rgba(99,190,232,1)"
+    },
+    {
+      "name": "secondary100",
+      "value": "rgba(39,149,233,1)"
+    },
+    {
+      "name": "secondary200",
+      "value": "rgba(45,137,207,1)"
+    },
+    {
+      "name": "secondary300",
+      "value": "rgba(54,119,168,1)"
+    },
+    {
+      "name": "secondary400",
+      "value": "rgba(47,112,157,1)"
+    },
+    {
+      "name": "secondary500",
+      "value": "rgba(26,93,128,1)"
+    },
+    {
+      "name": "secondary600",
+      "value": "rgba(21,75,104,1)"
+    },
+    {
+      "name": "secondary700",
+      "value": "rgba(8,52,74,1)"
+    },
+    {
+      "name": "secondary800",
+      "value": "rgba(9,40,58,1)"
+    },
+    {
+      "name": "secondary900",
+      "value": "rgba(5,30,43,1)"
+    },
+    {
+      "name": "info015",
+      "value": "rgba(243,249,255,1)"
+    },
+    {
+      "name": "info025",
+      "value": "rgba(229,242,254,1)"
+    },
+    {
+      "name": "info050",
+      "value": "rgba(207,229,251,1)"
+    },
+    {
+      "name": "info075",
+      "value": "rgba(158,203,245,1)"
+    },
+    {
+      "name": "info085",
+      "value": "rgba(105,177,241,1)"
+    },
+    {
+      "name": "info100",
+      "value": "rgba(39,149,233,1)"
+    },
+    {
+      "name": "info200",
+      "value": "rgba(29,136,218,1)"
+    },
+    {
+      "name": "info300",
+      "value": "rgba(29,121,201,1)"
+    },
+    {
+      "name": "info400",
+      "value": "rgba(7,109,187,1)"
+    },
+    {
+      "name": "info500",
+      "value": "rgba(0,82,156,1)"
+    },
+    {
+      "name": "info600",
+      "value": "rgba(8,59,114,1)"
+    },
+    {
+      "name": "info700",
+      "value": "rgba(0,38,77,1)"
+    },
+    {
+      "name": "info800",
+      "value": "rgba(0,28,59,1)"
+    },
+    {
+      "name": "info900",
+      "value": "rgba(1,17,40,1)"
+    },
+    {
+      "name": "neutral015",
+      "value": "rgba(248,248,248,1)"
+    },
+    {
+      "name": "neutral025",
+      "value": "rgba(241,241,241,1)"
+    },
+    {
+      "name": "neutral075",
+      "value": "rgba(198,198,198,1)"
+    },
+    {
+      "name": "neutral085",
+      "value": "rgba(171,171,171,1)"
+    },
+    {
+      "name": "neutral200",
+      "value": "rgba(132,132,132,1)"
+    },
+    {
+      "name": "neutral300",
+      "value": "rgba(118,118,118,1)"
+    },
+    {
+      "name": "neutral400",
+      "value": "rgba(106,106,106,1)"
+    },
+    {
+      "name": "neutral500",
+      "value": "rgba(82,82,82,1)"
+    },
+    {
+      "name": "neutral600",
+      "value": "rgba(59,59,59,1)"
+    },
+    {
+      "name": "neutral700",
+      "value": "rgba(38,38,38,1)"
+    },
+    {
+      "name": "neutral800",
+      "value": "rgba(27,27,27,1)"
+    },
+    {
+      "name": "neutral900",
+      "value": "rgba(17,17,17,1)"
+    },
+    {
+      "name": "blue010",
+      "value": "#ECF1FF"
+    },
+    {
+      "name": "blue090",
+      "value": "#03264D"
+    },
+    {
+      "name": "teal070",
+      "value": "#005B65"
+    },
+    {
+      "name": "red050",
+      "value": "#FB5959"
+    },
+    {
+      "name": "green030",
+      "value": "#95CAA3"
+    },
+    {
+      "name": "amber010",
+      "value": "#FFEDE1"
+    },
+    {
+      "name": "amber090",
+      "value": "#3C1F00"
+    },
+    {
+      "name": "purple070",
+      "value": "#4C33CC"
+    },
+    {
+      "name": "social-instagram",
+      "value": "#C32AA3"
+    },
+    {
+      "name": "social-google-yellow",
+      "value": "#F4B400"
+    },
+    {
+      "name": "dark-blue080",
+      "value": "#2E3F54"
+    },
+    {
+      "name": "tertiary015",
+      "value": "rgba(240,249,253,1)"
+    },
+    {
+      "name": "tertiary400",
+      "value": "rgba(47,112,157,1)"
+    },
+    {
+      "name": "positive050",
+      "value": "rgba(197,236,198,1)"
+    },
+    {
+      "name": "positive600",
+      "value": "rgba(1,83,22,1)"
+    },
+    {
+      "name": "negative085",
+      "value": "rgba(255,113,108,1)"
+    },
+    {
+      "name": "negative800",
+      "value": "rgba(62,4,9,1)"
+    },
+    {
+      "name": "highlight200",
+      "value": "rgba(170,123,36,1)"
+    },
+    {
+      "name": "attention015",
+      "value": "rgba(255,246,240,1)"
+    },
+    {
+      "name": "attention400",
+      "value": "rgba(169,83,7,1)"
+    },
+    {
+      "name": "system050",
+      "value": "rgba(207,228,255,1)"
+    },
+    {
+      "name": "system600",
+      "value": "rgba(0,57,127,1)"
+    },
+    {
+      "name": "facebook",
+      "value": "rgba(24,119,242,1)"
+    },
+    {
+      "name": "brown050",
+      "value": "rgba(137, 103, 103, 1)"
+    },
+    {
+      "name": "virgin-red030",
+      "value": "rgba(241, 242, 242, 1)"
+    },
+    {
+      "name": "primary",
+      "value": "rgba(229,245,228,1)"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size160",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "80px",
+      "px": 80
+    },
+    {
+      "name": "font-size150",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "64px",
+      "px": 64
+    },
+    {
+      "name": "font-size140",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "56px",
+      "px": 56
+    },
+    {
+      "name": "font-size130",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "48px",
+      "px": 48
+    },
+    {
+      "name": "font-size120",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "44px",
+      "px": 44
+    },
+    {
+      "name": "font-size110",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "font-size100",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "36px",
+      "px": 36
+    },
+    {
+      "name": "font-size090",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "font-size080",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "font-size070",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size060",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "font-size050",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size040",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-size035",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "17px",
+      "px": 17
+    },
+    {
+      "name": "font-size030",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family010",
+      "fontFamily": "\"Escrow Condensed\", Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "font-family020",
+      "fontFamily": "Exchange, Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "font-family030",
+      "fontFamily": "Retina, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "reg-button-typography-preset",
+      "fontFamily": "\"Noto Sans\"",
+      "px": 16
+    },
+    {
+      "name": "font-family040",
+      "fontFamily": "\"Retina Narrow\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size020",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size015",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "font-size010",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "rgba(240,249,253,1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgba(240,249,253,1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "rgba(240,249,253,1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "rgba(243,249,255,1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "rgba(243,249,255,1)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgba(240,249,253,1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**NewsKit** is a light-first design system anchored on `rgba(243,249,255,1)` canvas surfaces with `#0b0b0c` primary ink (18.6:1 contrast) and `#0b0b0c` brand accent.\n\nTypography centers cleanly on `DM Sans` (80px display down to 17px body), unified by `8px` base corner radius and stepped `rgba(243,249,255,1)` -> `rgba(240,249,253,1)` surface layering.\n\nMaintained by **News UK**. Source: published token package, package `newskit`. Inventory: **91** colors, **24** typography steps, and **8** documented components (BSD-3-Clause license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `rgba(240,249,253,1)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`rgba(243,249,255,1)` -> `rgba(240,249,253,1)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0b0b0c` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `rgba(243,249,255,1)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0b0b0c` with `#f7f7f8` text (18.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `DM Sans` headings with `DM Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `rgba(240,249,253,1)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

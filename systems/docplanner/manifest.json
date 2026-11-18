@@ -1,0 +1,41 @@
+{
+  "name": "docplanner",
+  "displayName": "Watson",
+  "description": "Docplanner Watson — read from the rendered page in a browser, not from published tokens.",
+  "style": "Docplanner Watson — read from the rendered page in a browser, not from published tokens.",
+  "category": "Docplanner",
+  "org": "Docplanner",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "docplanner",
+    "light"
+  ],
+  "homepage": "https://watson.docplanner.design/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://watson.docplanner.design/ in headless Chromium on 2026-11-18 (316 custom properties, 1 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Supernova.io.",
+  "source": {
+    "url": "https://watson.docplanner.design/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 49,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

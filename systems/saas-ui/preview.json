@@ -1,0 +1,487 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#4f39f6",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "gray-focus-ring",
+      "value": "#51555c"
+    },
+    {
+      "name": "zinc-focus-ring",
+      "value": "#55555b"
+    },
+    {
+      "name": "stone-focus-ring",
+      "value": "#5a5450"
+    },
+    {
+      "name": "red-focus-ring",
+      "value": "#d40924"
+    },
+    {
+      "name": "orange-focus-ring",
+      "value": "#d83b00"
+    },
+    {
+      "name": "amber-focus-ring",
+      "value": "#ffa800"
+    },
+    {
+      "name": "yellow-focus-ring",
+      "value": "#f8c500"
+    },
+    {
+      "name": "lime-focus-ring",
+      "value": "#94d600"
+    },
+    {
+      "name": "green-focus-ring",
+      "value": "#00910f"
+    },
+    {
+      "name": "emerald-focus-ring",
+      "value": "#009549"
+    },
+    {
+      "name": "teal-focus-ring",
+      "value": "#00957b"
+    },
+    {
+      "name": "cyan-focus-ring",
+      "value": "#008dc3"
+    },
+    {
+      "name": "sky-focus-ring",
+      "value": "#007de2"
+    },
+    {
+      "name": "blue-focus-ring",
+      "value": "#0063eb"
+    },
+    {
+      "name": "indigo-focus-ring",
+      "value": "#524ce3"
+    },
+    {
+      "name": "violet-focus-ring",
+      "value": "#743ed8"
+    },
+    {
+      "name": "purple-focus-ring",
+      "value": "#8c3cd3"
+    },
+    {
+      "name": "fuchsia-focus-ring",
+      "value": "#a930bb"
+    },
+    {
+      "name": "pink-focus-ring",
+      "value": "#c91b86"
+    },
+    {
+      "name": "rose-focus-ring",
+      "value": "#d30043"
+    },
+    {
+      "name": "sui-colors-gray-focusring",
+      "value": "#51555c"
+    },
+    {
+      "name": "sui-colors-zinc-focusring",
+      "value": "#55555b"
+    },
+    {
+      "name": "sui-colors-stone-focusring",
+      "value": "#5a5450"
+    },
+    {
+      "name": "sui-colors-red-focusring",
+      "value": "#d40924"
+    },
+    {
+      "name": "sui-colors-orange-focusring",
+      "value": "#d83b00"
+    },
+    {
+      "name": "sui-colors-amber-focusring",
+      "value": "#ffa800"
+    },
+    {
+      "name": "sui-colors-yellow-focusring",
+      "value": "#f8c500"
+    },
+    {
+      "name": "sui-colors-lime-focusring",
+      "value": "#94d600"
+    },
+    {
+      "name": "sui-colors-green-focusring",
+      "value": "#00910f"
+    },
+    {
+      "name": "sui-colors-emerald-focusring",
+      "value": "#009549"
+    },
+    {
+      "name": "sui-colors-teal-focusring",
+      "value": "#00957b"
+    },
+    {
+      "name": "sui-colors-cyan-focusring",
+      "value": "#008dc3"
+    },
+    {
+      "name": "sui-colors-sky-focusring",
+      "value": "#007de2"
+    },
+    {
+      "name": "sui-colors-blue-focusring",
+      "value": "#0063eb"
+    },
+    {
+      "name": "sui-colors-indigo-focusring",
+      "value": "#524ce3"
+    },
+    {
+      "name": "sui-colors-violet-focusring",
+      "value": "#743ed8"
+    },
+    {
+      "name": "sui-colors-purple-focusring",
+      "value": "#8c3cd3"
+    },
+    {
+      "name": "sui-colors-fuchsia-focusring",
+      "value": "#a930bb"
+    },
+    {
+      "name": "sui-colors-pink-focusring",
+      "value": "#c91b86"
+    },
+    {
+      "name": "sui-colors-rose-focusring",
+      "value": "#d30043"
+    },
+    {
+      "name": "sui-accent",
+      "value": "#4f39f6"
+    },
+    {
+      "name": "black",
+      "value": "#000004"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "gray-contrast",
+      "value": "#fafafb"
+    },
+    {
+      "name": "gray-solid",
+      "value": "#51555c"
+    },
+    {
+      "name": "zinc-contrast",
+      "value": "#fafafb"
+    },
+    {
+      "name": "zinc-solid",
+      "value": "#55555b"
+    },
+    {
+      "name": "stone-contrast",
+      "value": "#fbfaf9"
+    },
+    {
+      "name": "stone-solid",
+      "value": "#5a5450"
+    },
+    {
+      "name": "red-contrast",
+      "value": "#fff7f6"
+    },
+    {
+      "name": "red-solid",
+      "value": "#d40924"
+    },
+    {
+      "name": "orange-contrast",
+      "value": "#fff8f2"
+    },
+    {
+      "name": "orange-solid",
+      "value": "#d83b00"
+    },
+    {
+      "name": "amber-contrast",
+      "value": "#120c04"
+    },
+    {
+      "name": "amber-solid",
+      "value": "#ffa800"
+    },
+    {
+      "name": "yellow-contrast",
+      "value": "#100d04"
+    },
+    {
+      "name": "yellow-solid",
+      "value": "#f8c500"
+    },
+    {
+      "name": "lime-contrast",
+      "value": "#0a0f05"
+    },
+    {
+      "name": "lime-solid",
+      "value": "#94d600"
+    },
+    {
+      "name": "green-contrast",
+      "value": "#f4fdf6"
+    },
+    {
+      "name": "green-solid",
+      "value": "#00910f"
+    },
+    {
+      "name": "emerald-contrast",
+      "value": "#f3fdf8"
+    },
+    {
+      "name": "emerald-solid",
+      "value": "#009549"
+    },
+    {
+      "name": "teal-contrast",
+      "value": "#f1fdfb"
+    },
+    {
+      "name": "teal-solid",
+      "value": "#00957b"
+    },
+    {
+      "name": "cyan-contrast",
+      "value": "#f1fdff"
+    },
+    {
+      "name": "cyan-solid",
+      "value": "#008dc3"
+    },
+    {
+      "name": "sky-contrast",
+      "value": "#f2fcff"
+    },
+    {
+      "name": "sky-solid",
+      "value": "#007de2"
+    },
+    {
+      "name": "blue-contrast",
+      "value": "#f5faff"
+    },
+    {
+      "name": "blue-solid",
+      "value": "#0063eb"
+    },
+    {
+      "name": "indigo-contrast",
+      "value": "#f8faff"
+    },
+    {
+      "name": "indigo-solid",
+      "value": "#524ce3"
+    },
+    {
+      "name": "violet-contrast",
+      "value": "#faf9ff"
+    },
+    {
+      "name": "violet-solid",
+      "value": "#743ed8"
+    },
+    {
+      "name": "purple-contrast",
+      "value": "#fcf8ff"
+    },
+    {
+      "name": "purple-solid",
+      "value": "#8c3cd3"
+    },
+    {
+      "name": "fuchsia-contrast",
+      "value": "#fef7ff"
+    },
+    {
+      "name": "fuchsia-solid",
+      "value": "#a930bb"
+    },
+    {
+      "name": "pink-contrast",
+      "value": "#fff7fb"
+    },
+    {
+      "name": "pink-solid",
+      "value": "#c91b86"
+    },
+    {
+      "name": "rose-contrast",
+      "value": "#fff7f7"
+    },
+    {
+      "name": "rose-solid",
+      "value": "#d30043"
+    },
+    {
+      "name": "ring-offset-color",
+      "value": "#fff"
+    },
+    {
+      "name": "sui-colors-black",
+      "value": "#000004"
+    },
+    {
+      "name": "sui-colors-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "sui-colors-gray-contrast",
+      "value": "#fafafb"
+    },
+    {
+      "name": "sui-colors-gray-solid",
+      "value": "#51555c"
+    },
+    {
+      "name": "sui-colors-zinc-contrast",
+      "value": "#fafafb"
+    },
+    {
+      "name": "sui-colors-zinc-solid",
+      "value": "#55555b"
+    },
+    {
+      "name": "primary",
+      "value": "#4f39f6"
+    }
+  ],
+  "type": [
+    {
+      "name": "title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64,
+      "lineHeight": 1.15
+    },
+    {
+      "name": "h2",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.5em",
+      "px": 24
+    },
+    {
+      "name": "mono",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#4f39f6",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#4f39f6",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Lucide",
+    "package": "lucide-react",
+    "pack": "lucide",
+    "style": "outline",
+    "grid": 16,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "npm",
+    "url": "https://lucide.dev"
+  },
+  "overview": "**Saas UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#4f39f6` brand accent.\n\nTypography centers cleanly on `System UI` (64px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fff` surface layering.\n\nSource: published token package (https://github.com/saas-js/saas-ui), repo https://github.com/saas-js/saas-ui. Inventory: **91** colors, **5** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#fff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#4f39f6` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#4f39f6` with `#f7f7f8` text (6.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

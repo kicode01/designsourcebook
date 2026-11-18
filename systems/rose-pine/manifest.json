@@ -1,0 +1,42 @@
+{
+  "name": "rose-pine",
+  "displayName": "Rose Pine",
+  "description": "Rose Pine — tokens imported from @rose-pine/palette.",
+  "style": "Rose Pine — tokens imported from @rose-pine/palette.",
+  "category": "Rose Pine",
+  "org": "Rose Pine",
+  "theme": "light",
+  "tags": [
+    "published",
+    "rose-pine",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @rose-pine/palette@4.0.1 (3 token files, 59 colours harvested, 59 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@rose-pine/palette",
+    "version": "4.0.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 60,
+    "typography": 0,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

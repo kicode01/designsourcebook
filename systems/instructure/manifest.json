@@ -1,0 +1,42 @@
+{
+  "name": "instructure",
+  "displayName": "InstUI",
+  "description": "Instructure InstUI — tokens imported from @instructure/ui-themes.",
+  "style": "Instructure InstUI — tokens imported from @instructure/ui-themes.",
+  "category": "Instructure",
+  "org": "Instructure",
+  "theme": "light",
+  "tags": [
+    "published",
+    "instructure",
+    "light"
+  ],
+  "homepage": "https://instructure.github.io/instructure-ui/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @instructure/ui-themes@11.7.10 (11 token files, 1100 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@instructure/ui-themes",
+    "version": "11.7.10"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 28,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

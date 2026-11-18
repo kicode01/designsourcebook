@@ -1,0 +1,468 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#e91d2a",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.none}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#e91d2a"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "frame-ink",
+      "value": "#000000"
+    },
+    {
+      "name": "yellow-sticker",
+      "value": "#fcc20f"
+    },
+    {
+      "name": "purple-stripe",
+      "value": "#6a26a4"
+    },
+    {
+      "name": "link",
+      "value": "#0000ee"
+    },
+    {
+      "name": "tint-olive",
+      "value": "#8e8a25"
+    },
+    {
+      "name": "tint-sage",
+      "value": "#b3bd95"
+    },
+    {
+      "name": "tint-salmon",
+      "value": "#d77a7a"
+    },
+    {
+      "name": "tint-peach",
+      "value": "#e6915d"
+    },
+    {
+      "name": "tint-lime",
+      "value": "#c0d4a7"
+    },
+    {
+      "name": "tint-sky",
+      "value": "#9ab6c8"
+    },
+    {
+      "name": "tint-steel",
+      "value": "#a5b8c0"
+    },
+    {
+      "name": "tint-periwinkle",
+      "value": "#8c9ae0"
+    }
+  ],
+  "type": [
+    {
+      "name": "display",
+      "fontFamily": "Arial Black",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 900,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "Arial Black",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 900,
+      "lineHeight": 1.05,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "Helvetica",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "Helvetica",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body",
+      "fontFamily": "Times New Roman",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "link",
+      "fontFamily": "Times New Roman",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Times New Roman",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "Helvetica",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui-label",
+      "fontFamily": "Helvetica",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Times New Roman",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 400,
+      "lineHeight": 1.35,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "page-frame",
+      "kind": "component",
+      "backgroundColor": "{colors.frame-ink}",
+      "textColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "8px"
+    },
+    {
+      "key": "top-banner",
+      "kind": "alert",
+      "backgroundColor": "{colors.frame-ink}",
+      "textColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "section-eyebrow-olive",
+      "kind": "component",
+      "backgroundColor": "{colors.tint-olive}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "24px 16px"
+    },
+    {
+      "key": "section-eyebrow-salmon",
+      "kind": "component",
+      "backgroundColor": "{colors.tint-salmon}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "24px 16px"
+    },
+    {
+      "key": "ribbon-card-title",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "ribbon-card-body-sage",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-sage}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "ribbon-card-body-salmon",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-salmon}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "ribbon-card-body-peach",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-peach}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "ribbon-card-body-lime",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-lime}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "ribbon-card-body-sky",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-sky}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "ribbon-card-body-steel",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-steel}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "ribbon-card-body-periwinkle",
+      "kind": "card",
+      "backgroundColor": "{colors.tint-periwinkle}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "cta-block-red",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "16px"
+    },
+    {
+      "key": "phone-callout",
+      "kind": "alert",
+      "backgroundColor": "{colors.frame-ink}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.none}",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "buy-a-dell-sticker",
+      "kind": "component",
+      "backgroundColor": "{colors.yellow-sticker}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "new-burst-sticker",
+      "kind": "component",
+      "backgroundColor": "{colors.yellow-sticker}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "cert-seal",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.canvas}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "icon-label-nav",
+      "kind": "icon",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "8px"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "4px 6px"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.frame-ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "6px 16px"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "6px 16px"
+    },
+    {
+      "key": "button-text-link",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.link}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "footer-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "16px"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#e91d2a",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#e91d2a",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Dell's December 1996 home page is a perfectly preserved fossil of catalog-era enterprise web design — the moment when a Fortune-100 brand decided the web was *important enough* to invest in, but two years before CSS would be widely adopted and three years before \"design system\" was a phrase anyone used. Every visual choice on the page is a downstream consequence of that constraint: layout via HTML tables, type via the browser's built-in font stack (Arial Black / Helvetica / Times Roman), color via 8-bit-safe flat fills, and decoration via hand-cut GIF \"stickers\" (the NEW! burst, the round PC Magazine Readers' Choice seal, the beveled \"BUY a DELL\" yellow tab). The page is bordered — literally bordered, in a 1-cell-wide black HTML table — and inside that frame, every product line gets a \"ribbon card\": a white title bar with a sharp black underline, a tinted body block in one of eight catalog colors (sage, salmon, peach, lime, sky, steel, periwinkle, olive), and a beveled product photograph notched into the right edge of the card.\r\n\r\nThe brand voice carries through in two anchors: a vivid Dell-red CTA panel on the left of the homepage (cream-yellow Times Roman copy on a `{colors.primary}` fill, set inside the black frame) and a screaming red phone number — `1-800-213-DELL` — pinned to the top-right of every page, because in 1996 the website was a brochure that ended with a phone call. The footer is a row of four hand-drawn icon-labels (FIND / HOME / ONLINE STORE / SERVICE & SUPPORT) linked by a thin green horizontal rule, and a single classic-Mosaic-blue underlined \"Copyright\" link sitting above the legal small print in Times Roman.\r\n\r\n**Key Characteristics:**\r\n- Literal page frame: every page sits inside a `{colors.frame-ink}` (black) outer border ~8 px thick — the design treats the browser window as a printed picture frame\r\n- Flat color-block \"ribbon cards\" tint each product family with a dedicated catalog color (`{colors.tint-sage}` Latitude, `{colors.tint-salmon}` OptiPlex GX, `{colors.tint-periwinkle}` PowerEdge, `{colors.tint-sky}` Dellware, etc.) — no gradients, no shadows, no opacity\r\n- Chunky display typography in `{typography.display}` (Arial Black 36 / weight 900) for section title blocks; `{typography.heading-2}` (Helvetica Bold 16) for product row titles; `{typography.body}` Times Roman 14 for everything else\r\n- Hand-cut GIF \"stickers\" overlay the layout: yellow \"BUY a DELL\" tab in the top right, angled \"NEW!\" bursts on new product rows, round red PC Magazine Readers' Choice seals\r\n- `{colors.primary}` (Dell red) reserved for two things only: the homepage CTA panel and the top-right phone number — never decorative\r\n- Footer icon-nav with classic-blue (`{colors.link}` #0000ee) anchor underlines — the unmistakable Netscape 3.x link colour",
+  "dos": "### Do\r\n- Keep the literal `{components.page-frame}` black border on every page — this is the brand's single most identifiable container chrome.\r\n- Reserve `{colors.primary}` (Dell red) for the `{components.cta-block-red}` panel and the `{components.phone-callout}` only. Every other use dilutes the urgency signal.\r\n- Use the eight ribbon-card tint colors (`{colors.tint-olive}` / sage / salmon / peach / lime / sky / steel / periwinkle) as a *family* — pick one per product line and stay with it across the line's marketing surfaces.\r\n- Set every display headline in `{typography.display}` (Arial Black 36 / weight 900). The brand's typographic register depends on extreme weight against flat color.\r\n- Keep body copy in `{typography.body}` Times Roman 14 — substituting a modern sans loses the catalog feel entirely.\r\n- Render every CTA / button at `{rounded.none}` (0 px). Modern soft-radius buttons betray the era.\r\n- Use hand-painted bevels / hard-edge GIF shadows on stickers and product photos. Never substitute a soft CSS shadow.\r\n\r\n### Don't\r\n- Don't introduce a chromatic accent outside the eight catalog tints + Dell red + Dell yellow + classic link blue. The palette is closed by design.\r\n- Don't soften any corner. `{rounded.none}` is the universal modifier; only award seals get `{rounded.full}`.\r\n- Don't replace Times Roman body with Arial / Helvetica / Inter / a webfont — the serif body is the era's signature.\r\n- Don't add soft drop-shadows or atmospheric gradients. The brand has hard borders and flat fills; everything else reads as anachronism.\r\n- Don't crop or \"tuck\" product photos with `border-radius` or `clip-path`. The notch into the ribbon-card right edge is the framing — the photo itself stays a hard rectangle.\r\n- Don't pair two `{components.cta-block-red}` panels on the same page. The red fill is meant to be the singular attention pole.\r\n- Don't strip the `{components.phone-callout}` from the top banner. In 1996 the website existed to drive phone-call orders; the phone number IS the navigation."
+}

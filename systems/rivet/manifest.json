@@ -1,0 +1,42 @@
+{
+  "name": "rivet",
+  "displayName": "Rivet Design System",
+  "description": "Indiana University Rivet Design System — tokens imported from rivet-core.",
+  "style": "Indiana University Rivet Design System — tokens imported from rivet-core.",
+  "category": "Indiana University",
+  "org": "Indiana University",
+  "theme": "light",
+  "tags": [
+    "published",
+    "indiana-university",
+    "light"
+  ],
+  "homepage": "https://rivet.iu.edu",
+  "license": "BSD-3-Clause",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from rivet-core@2.9.1 (4 token files, 204 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "rivet-core",
+    "version": "2.9.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 26,
+    "components": 37
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "designsystemau",
+  "displayName": "GOLD Design System",
+  "description": "Design System AU GOLD Design System — tokens read from https://github.com/designsystemau/gold-design-system.",
+  "style": "Design System AU GOLD Design System — tokens read from https://github.com/designsystemau/gold-design-system.",
+  "category": "Design System AU",
+  "org": "Design System AU",
+  "theme": "light",
+  "tags": [
+    "published",
+    "design-system-au",
+    "light"
+  ],
+  "homepage": "https://github.com/designsystemau/gold-design-system",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/designsystemau/gold-design-system — 3 token files, 20 colours harvested, 20 selected.",
+  "source": {
+    "repo": "https://github.com/designsystemau/gold-design-system"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 21,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

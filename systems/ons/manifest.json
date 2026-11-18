@@ -1,0 +1,42 @@
+{
+  "name": "ons",
+  "displayName": "ONS Design System",
+  "description": "Office for National Statistics ONS Design System — tokens imported from @ons/design-system.",
+  "style": "Office for National Statistics ONS Design System — tokens imported from @ons/design-system.",
+  "category": "Office for National Statistics",
+  "org": "Office for National Statistics",
+  "theme": "light",
+  "tags": [
+    "published",
+    "office-for-national-statistics",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @ons/design-system@73.13.2 (6 token files, 100 colours harvested, 89 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@ons/design-system",
+    "version": "73.13.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 7,
+    "components": 30
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "nsw",
+  "displayName": "Digital NSW",
+  "description": "State of New South Wales Digital NSW — tokens imported from nsw-design-system.",
+  "style": "State of New South Wales Digital NSW — tokens imported from nsw-design-system.",
+  "category": "State of New South Wales",
+  "org": "State of New South Wales",
+  "theme": "light",
+  "tags": [
+    "published",
+    "state-of-new-south-wales",
+    "light"
+  ],
+  "homepage": "https://www.digital.nsw.gov.au/digital-design-system",
+  "license": "ISC",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from nsw-design-system@3.28.2 (4 token files, 215 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "nsw-design-system",
+    "version": "3.28.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 24,
+    "components": 35
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

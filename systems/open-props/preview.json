@@ -1,0 +1,729 @@
+{
+  "canvas": "#f8fafb",
+  "surface": "#f8f0fc",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0866ff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "0",
+      "value": "#fff9db"
+    },
+    {
+      "name": "8",
+      "value": "#f08c00"
+    },
+    {
+      "name": "brand-facebook",
+      "value": "#0866ff"
+    },
+    {
+      "name": "brand-twitter",
+      "value": "#469cf0"
+    },
+    {
+      "name": "brand-whatsapp",
+      "value": "#25d366"
+    },
+    {
+      "name": "brand-instagram-yellow",
+      "value": "#f8d648"
+    },
+    {
+      "name": "brand-instagram-red",
+      "value": "#e93365"
+    },
+    {
+      "name": "brand-instagram-magenta",
+      "value": "#d32dbf"
+    },
+    {
+      "name": "brand-instagram-blue",
+      "value": "#611ef5"
+    },
+    {
+      "name": "brand-snapchat",
+      "value": "#fffc00"
+    },
+    {
+      "name": "brand-google-blue",
+      "value": "#4285f4"
+    },
+    {
+      "name": "brand-google-red",
+      "value": "#db4437"
+    },
+    {
+      "name": "brand-google-yellow",
+      "value": "#f4b400"
+    },
+    {
+      "name": "brand-google-green",
+      "value": "#0f9d58"
+    },
+    {
+      "name": "brand-tiktok-razzmatazz",
+      "value": "#fe2c55"
+    },
+    {
+      "name": "brand-tiktok-splash",
+      "value": "#25f4ee"
+    },
+    {
+      "name": "brand-microsoft-red",
+      "value": "#f25022"
+    },
+    {
+      "name": "brand-microsoft-green",
+      "value": "#7fba00"
+    },
+    {
+      "name": "brand-microsoft-blue",
+      "value": "#00a4ef"
+    },
+    {
+      "name": "brand-microsoft-yellow",
+      "value": "#ffb900"
+    },
+    {
+      "name": "brand-pinterest",
+      "value": "#e60023"
+    },
+    {
+      "name": "brand-spotify",
+      "value": "#1ed760"
+    },
+    {
+      "name": "brand-discord",
+      "value": "#5865f2"
+    },
+    {
+      "name": "brand-telegram",
+      "value": "#2aabee"
+    },
+    {
+      "name": "brand-reddit",
+      "value": "#ff4500"
+    },
+    {
+      "name": "brand-amazon",
+      "value": "#232f3e"
+    },
+    {
+      "name": "brand-twitch",
+      "value": "#9146ff"
+    },
+    {
+      "name": "link",
+      "value": "#0065ff"
+    },
+    {
+      "name": "link-visited",
+      "value": "#a628ff"
+    },
+    {
+      "name": "brand-youtube",
+      "value": "#FF0000"
+    },
+    {
+      "name": "yellow-9",
+      "value": "#e67700"
+    },
+    {
+      "name": "yellow-1",
+      "value": "#fff3bf"
+    },
+    {
+      "name": "violet-6",
+      "value": "#7950f2"
+    },
+    {
+      "name": "teal-11",
+      "value": "#054d37"
+    },
+    {
+      "name": "teal-3",
+      "value": "#63e6be"
+    },
+    {
+      "name": "stone-8",
+      "value": "#666968"
+    },
+    {
+      "name": "stone-0",
+      "value": "#f8fafb"
+    },
+    {
+      "name": "sand-5",
+      "value": "#9a9178"
+    },
+    {
+      "name": "red-10",
+      "value": "#b02525"
+    },
+    {
+      "name": "red-2",
+      "value": "#ffc9c9"
+    },
+    {
+      "name": "purple-7",
+      "value": "#ae3ec9"
+    },
+    {
+      "name": "pink-12",
+      "value": "#59102a"
+    },
+    {
+      "name": "pink-4",
+      "value": "#f783ac"
+    },
+    {
+      "name": "orange-9",
+      "value": "#d9480f"
+    },
+    {
+      "name": "orange-1",
+      "value": "#ffe8cc"
+    },
+    {
+      "name": "lime-6",
+      "value": "#82c91e"
+    },
+    {
+      "name": "jungle-11",
+      "value": "#516605"
+    },
+    {
+      "name": "jungle-3",
+      "value": "#c2dd6e"
+    },
+    {
+      "name": "indigo-8",
+      "value": "#3b5bdb"
+    },
+    {
+      "name": "indigo-0",
+      "value": "#edf2ff"
+    },
+    {
+      "name": "green-5",
+      "value": "#51cf66"
+    },
+    {
+      "name": "gray-10",
+      "value": "#16191d"
+    },
+    {
+      "name": "gray-2",
+      "value": "#e9ecef"
+    },
+    {
+      "name": "cyan-7",
+      "value": "#1098ad"
+    },
+    {
+      "name": "choco-12",
+      "value": "#3d210d"
+    },
+    {
+      "name": "choco-4",
+      "value": "#e99b62"
+    },
+    {
+      "name": "camo-9",
+      "value": "#6d6414"
+    },
+    {
+      "name": "camo-1",
+      "value": "#e8ed9c"
+    },
+    {
+      "name": "brown-6",
+      "value": "#a87c56"
+    },
+    {
+      "name": "blue-11",
+      "value": "#114678"
+    },
+    {
+      "name": "blue-3",
+      "value": "#74c0fc"
+    },
+    {
+      "name": "gray4",
+      "value": "#ced4da"
+    },
+    {
+      "name": "gray12",
+      "value": "#030507"
+    },
+    {
+      "name": "stone7",
+      "value": "#7e8282"
+    },
+    {
+      "name": "red2",
+      "value": "#ffc9c9"
+    },
+    {
+      "name": "red10",
+      "value": "#b02525"
+    },
+    {
+      "name": "pink5",
+      "value": "#f06595"
+    },
+    {
+      "name": "purple0",
+      "value": "#f8f0fc"
+    },
+    {
+      "name": "purple8",
+      "value": "#9c36b5"
+    },
+    {
+      "name": "violet3",
+      "value": "#b197fc"
+    },
+    {
+      "name": "violet11",
+      "value": "#462d91"
+    },
+    {
+      "name": "indigo6",
+      "value": "#4c6ef5"
+    },
+    {
+      "name": "blue1",
+      "value": "#d0ebff"
+    },
+    {
+      "name": "blue9",
+      "value": "#1864ab"
+    },
+    {
+      "name": "cyan4",
+      "value": "#3bc9db"
+    },
+    {
+      "name": "cyan12",
+      "value": "#053038"
+    },
+    {
+      "name": "teal7",
+      "value": "#0ca678"
+    },
+    {
+      "name": "green2",
+      "value": "#b2f2bb"
+    },
+    {
+      "name": "green10",
+      "value": "#237032"
+    },
+    {
+      "name": "lime5",
+      "value": "#94d82d"
+    },
+    {
+      "name": "yellow0",
+      "value": "#fff9db"
+    },
+    {
+      "name": "yellow8",
+      "value": "#f08c00"
+    },
+    {
+      "name": "orange3",
+      "value": "#ffc078"
+    },
+    {
+      "name": "orange11",
+      "value": "#99330b"
+    },
+    {
+      "name": "choco6",
+      "value": "#d46e25"
+    },
+    {
+      "name": "brown1",
+      "value": "#ede0d1"
+    },
+    {
+      "name": "brown9",
+      "value": "#6f4b2d"
+    },
+    {
+      "name": "sand4",
+      "value": "#aea58c"
+    },
+    {
+      "name": "sand12",
+      "value": "#121210"
+    },
+    {
+      "name": "camo7",
+      "value": "#8c851c"
+    },
+    {
+      "name": "primary",
+      "value": "#0866ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-8",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "font-size-fluid-3",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(2rem, 9vw, 3.5rem)",
+      "px": 56
+    },
+    {
+      "name": "font-size8",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "font-size-fluid3",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(2rem, 9vw, 3.5rem)",
+      "px": 56
+    },
+    {
+      "name": "font-size-7",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size7",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-6",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-size-fluid-2",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(1.5rem, 6vw, 2.5rem)",
+      "px": 40
+    },
+    {
+      "name": "font-size6",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-size-fluid2",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(1.5rem, 6vw, 2.5rem)",
+      "px": 40
+    },
+    {
+      "name": "font-size-5",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-size5",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-size-4",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-fluid-1",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(1rem, 4vw, 1.5rem)",
+      "px": 24
+    },
+    {
+      "name": "font-size4",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-fluid1",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(1rem, 4vw, 1.5rem)",
+      "px": 24
+    },
+    {
+      "name": "font-size-3",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size3",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-2",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1.1rem",
+      "px": 17.6
+    },
+    {
+      "name": "font-size2",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1.1rem",
+      "px": 17.6
+    },
+    {
+      "name": "font-size-1",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-monospace-slab-serif",
+      "fontFamily": "\"Nimbus Mono PS\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-monospace-code",
+      "fontFamily": "\"Dank Mono\", \"Operator Mono\", Inconsolata, \"Fira Mono\", ui-monospace, \"SF Mono\", Monaco, \"Droid Sans Mono\", \"Source Code Pro\", \"Cascadia Code\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-serif",
+      "fontFamily": "ui-serif, serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "\"Dank Mono\", \"Operator Mono\", Inconsolata, \"Fira Mono\", ui-monospace, \"SF Mono\", Monaco, \"Droid Sans Mono\", \"Source Code Pro\", \"Cascadia Code\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size-fluid-0",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(.75rem, 2vw, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "font-size1",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-fluid0",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": "clamp(.75rem, 2vw, 1rem)",
+      "px": 16
+    },
+    {
+      "name": "serif",
+      "fontFamily": "ui-serif, serif",
+      "px": 16
+    },
+    {
+      "name": "handwritten",
+      "fontFamily": "\"Segoe Print\", \"Bradley Hand\", Chilanka, \"TSCu_Comic\", casual, cursive",
+      "px": 16
+    },
+    {
+      "name": "didone",
+      "fontFamily": "Didot, \"Bodoni MT\", \"Noto Serif Display\", \"URW Palladio L\", P052, Sylfaen, serif",
+      "px": 16
+    },
+    {
+      "name": "antique",
+      "fontFamily": "Superclarendon, \"Bookman Old Style\", \"URW Bookman\", \"URW Bookman L\", \"Georgia Pro\", Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "slab-serif",
+      "fontFamily": "Rockwell, \"Rockwell Nova\", \"Roboto Slab\", \"DejaVu Serif\", \"Sitka Small\", serif",
+      "px": 16
+    },
+    {
+      "name": "rounded-sans",
+      "fontFamily": "ui-rounded, \"Hiragino Maru Gothic ProN\", Quicksand, Comfortaa, Manjari, \"Arial Rounded MT\", \"Arial Rounded MT Bold\", Calibri, source-sans-pro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "industrial",
+      "fontFamily": "Bahnschrift, \"DIN Alternate\", \"Franklin Gothic Medium\", \"Nimbus Sans Narrow\", sans-serif-condensed, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "monospace-code",
+      "fontFamily": "\"Dank Mono\", \"Operator Mono\", Inconsolata, \"Fira Mono\", ui-monospace, \"SF Mono\", Monaco, \"Droid Sans Mono\", \"Source Code Pro\", \"Cascadia Code\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "monospace-slab-serif",
+      "fontFamily": "\"Nimbus Mono PS\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "neo-grotesque",
+      "fontFamily": "Inter, Roboto, \"Helvetica Neue\", \"Arial Nova\", \"Nimbus Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "classical-humanist",
+      "fontFamily": "Optima, Candara, \"Noto Sans\", source-sans-pro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "geometric-humanist",
+      "fontFamily": "Avenir, Montserrat, Corbel, \"URW Gothic\", source-sans-pro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "humanist",
+      "fontFamily": "Seravek, \"Gill Sans Nova\", Ubuntu, Calibri, \"DejaVu Sans\", source-sans-pro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "old-style",
+      "fontFamily": "\"Iowan Old Style\", \"Palatino Linotype\", \"URW Palladio L\", P052, serif",
+      "px": 16
+    },
+    {
+      "name": "transitional",
+      "fontFamily": "Charter, \"Bitstream Charter\", \"Sitka Text\", Cambria, serif",
+      "px": 16
+    },
+    {
+      "name": "system-ui",
+      "fontFamily": "system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-0",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size0",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size-00",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": ".5rem",
+      "px": 8
+    },
+    {
+      "name": "font-size00",
+      "fontFamily": "system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif",
+      "fontSize": ".5rem",
+      "px": 8
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f8f0fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0866ff",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0866ff",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f8f0fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f8f0fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f8fafb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f8fafb",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f8f0fc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Open Props** is a light-first design system anchored on `#f8fafb` canvas surfaces with `#0b0b0c` primary ink (18.8:1 contrast) and `#0866ff` brand accent.\n\nTypography centers cleanly on `System UI` (56px display down to 16px body), unified by `8px` base corner radius and stepped `#f8fafb` -> `#f8f0fc` surface layering.\n\nSource: published token package, package `open-props`. Inventory: **91** colors, **49** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f8f0fc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f8fafb` -> `#f8f0fc`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0866ff` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f8fafb` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0866ff` with `#f7f7f8` text (4.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f8f0fc` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

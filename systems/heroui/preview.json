@@ -1,0 +1,210 @@
+{
+  "canvas": "#efeff0",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0485f7",
+  "border": "#dedee0",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "snow",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "eclipse",
+      "value": "#18181b"
+    },
+    {
+      "name": "accent",
+      "value": "#0485f7"
+    },
+    {
+      "name": "success",
+      "value": "#17c964"
+    },
+    {
+      "name": "background",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "surface-secondary",
+      "value": "#efeff0"
+    },
+    {
+      "name": "surface-tertiary",
+      "value": "#eaeaeb"
+    },
+    {
+      "name": "muted",
+      "value": "#71717a"
+    },
+    {
+      "name": "default",
+      "value": "#ebebec"
+    },
+    {
+      "name": "field-foreground",
+      "value": "#18181b"
+    },
+    {
+      "name": "warning",
+      "value": "#f5a524"
+    },
+    {
+      "name": "danger",
+      "value": "#ff383c"
+    },
+    {
+      "name": "border",
+      "value": "#dedee0"
+    },
+    {
+      "name": "separator",
+      "value": "#e4e4e7"
+    },
+    {
+      "name": "surface",
+      "value": "#18181b"
+    },
+    {
+      "name": "overlay",
+      "value": "#18181b"
+    },
+    {
+      "name": "field-background",
+      "value": "#18181b"
+    },
+    {
+      "name": "segment",
+      "value": "#46464c"
+    },
+    {
+      "name": "color-background",
+      "value": "hsl(0, 0%, 14.5%)"
+    },
+    {
+      "name": "color-foreground",
+      "value": "hsl(0, 0%, 98.4%)"
+    },
+    {
+      "name": "color-accent",
+      "value": "hsl(264.1, 100%, 55.1%)"
+    },
+    {
+      "name": "color-danger",
+      "value": "hsl(25.3, 100%, 63.7%)"
+    },
+    {
+      "name": "color-success",
+      "value": "hsl(163.2, 100%, 76.5%)"
+    },
+    {
+      "name": "color-warning",
+      "value": "hsl(86.0, 100%, 79.5%)"
+    },
+    {
+      "name": "primary",
+      "value": "#0485f7"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-sans",
+      "fontFamily": "ui-sans-serif, system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "ui-monospace, monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0485f7",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0485f7",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#efeff0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#efeff0",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**HeroUI** is a light-first design system anchored on `#efeff0` canvas surfaces with `#0b0b0c` primary ink (17.1:1 contrast) and `#0485f7` brand accent.\n\nTypography centers cleanly on `System UI` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#efeff0` -> `#ffffff` surface layering.\n\nSource: published token package (https://github.com/heroui-inc/heroui), repo https://github.com/heroui-inc/heroui. Inventory: **27** colors, **2** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#dedee0` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#efeff0` -> `#ffffff`) and `1px solid #dedee0` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0485f7` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#efeff0` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0485f7` with `#f7f7f8` text (3.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#dedee0` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

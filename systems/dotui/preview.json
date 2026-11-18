@@ -1,0 +1,1936 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f5f5f5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#e31c5f",
+  "border": "#e5e5e5",
+  "radius": ".5rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background-color",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "accent",
+      "value": "#0070f1"
+    },
+    {
+      "name": "primary",
+      "value": "#e31c5f"
+    },
+    {
+      "name": "secondary",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "accent-foreground",
+      "value": "#171717"
+    },
+    {
+      "name": "sidebar-primary",
+      "value": "#171717"
+    },
+    {
+      "name": "sidebar-accent",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "sidebar-border",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "warning",
+      "value": "#eab308"
+    },
+    {
+      "name": "info",
+      "value": "#4862ff"
+    },
+    {
+      "name": "neutral-50",
+      "value": "#f8fafb"
+    },
+    {
+      "name": "neutral-200",
+      "value": "#e6e9ec"
+    },
+    {
+      "name": "neutral-400",
+      "value": "#d5d8dd"
+    },
+    {
+      "name": "neutral-600",
+      "value": "#b6bdc3"
+    },
+    {
+      "name": "neutral-800",
+      "value": "#6e747c"
+    },
+    {
+      "name": "neutral-950",
+      "value": "#1c2026"
+    },
+    {
+      "name": "on-neutral-800",
+      "value": "#ffffff"
+    },
+    {
+      "name": "accent-50",
+      "value": "#f4fafe"
+    },
+    {
+      "name": "accent-200",
+      "value": "#d1ecfc"
+    },
+    {
+      "name": "accent-400",
+      "value": "#add7f3"
+    },
+    {
+      "name": "accent-600",
+      "value": "#77aedc"
+    },
+    {
+      "name": "accent-800",
+      "value": "#3e80c2"
+    },
+    {
+      "name": "accent-950",
+      "value": "#233a59"
+    },
+    {
+      "name": "on-accent-800",
+      "value": "#ffffff"
+    },
+    {
+      "name": "success-50",
+      "value": "#f5faf7"
+    },
+    {
+      "name": "success-200",
+      "value": "#d7eedd"
+    },
+    {
+      "name": "success-400",
+      "value": "#b5dac1"
+    },
+    {
+      "name": "success-600",
+      "value": "#7db590"
+    },
+    {
+      "name": "success-800",
+      "value": "#479867"
+    },
+    {
+      "name": "success-950",
+      "value": "#1d402b"
+    },
+    {
+      "name": "on-success-800",
+      "value": "#ffffff"
+    },
+    {
+      "name": "warning-50",
+      "value": "#faf9f2"
+    },
+    {
+      "name": "warning-200",
+      "value": "#edeac8"
+    },
+    {
+      "name": "warning-400",
+      "value": "#dfd19c"
+    },
+    {
+      "name": "warning-600",
+      "value": "#cba255"
+    },
+    {
+      "name": "warning-800",
+      "value": "#dfac20"
+    },
+    {
+      "name": "warning-950",
+      "value": "#56300e"
+    },
+    {
+      "name": "on-warning-800",
+      "value": "#2a2009"
+    },
+    {
+      "name": "danger-50",
+      "value": "#fff8f7"
+    },
+    {
+      "name": "danger-200",
+      "value": "#ffe1de"
+    },
+    {
+      "name": "danger-400",
+      "value": "#ffc3bd"
+    },
+    {
+      "name": "danger-600",
+      "value": "#f98980"
+    },
+    {
+      "name": "danger-800",
+      "value": "#d9403f"
+    },
+    {
+      "name": "danger-950",
+      "value": "#662320"
+    },
+    {
+      "name": "on-danger-800",
+      "value": "#ffffff"
+    },
+    {
+      "name": "info-50",
+      "value": "#f8faff"
+    },
+    {
+      "name": "info-200",
+      "value": "#e0e8ff"
+    },
+    {
+      "name": "info-400",
+      "value": "#c1d1ff"
+    },
+    {
+      "name": "info-600",
+      "value": "#89a4ff"
+    },
+    {
+      "name": "info-800",
+      "value": "#4058e4"
+    },
+    {
+      "name": "info-950",
+      "value": "#253473"
+    },
+    {
+      "name": "on-info-800",
+      "value": "#ffffff"
+    },
+    {
+      "name": "diff-brand",
+      "value": "#e31c5f"
+    },
+    {
+      "name": "diff-warning-seed",
+      "value": "#eb6100"
+    },
+    {
+      "name": "brand",
+      "value": "#e31c5f"
+    },
+    {
+      "name": "warning-seed",
+      "value": "#eb6100"
+    },
+    {
+      "name": "diff-focus-custom-color",
+      "value": "#1cb0f6"
+    },
+    {
+      "name": "seeds-success",
+      "value": "#009300"
+    },
+    {
+      "name": "seeds-danger",
+      "value": "#d03b3b"
+    },
+    {
+      "name": "color-border-focus",
+      "value": "#1cb0f6"
+    },
+    {
+      "name": "color",
+      "value": "rgb(34, 34, 34)"
+    },
+    {
+      "name": "foreground",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "card",
+      "value": "#ffffff"
+    },
+    {
+      "name": "card-foreground",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "popover",
+      "value": "#ffffff"
+    },
+    {
+      "name": "popover-foreground",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "muted",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "muted-foreground",
+      "value": "#737373"
+    },
+    {
+      "name": "destructive",
+      "value": "#e7000b"
+    },
+    {
+      "name": "input",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "ring",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "chart-1",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "chart-2",
+      "value": "#737373"
+    },
+    {
+      "name": "chart-3",
+      "value": "#525252"
+    },
+    {
+      "name": "chart-4",
+      "value": "#404040"
+    },
+    {
+      "name": "chart-5",
+      "value": "#262626"
+    },
+    {
+      "name": "sidebar",
+      "value": "#fafafa"
+    },
+    {
+      "name": "sidebar-foreground",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "sidebar-ring",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "black-hex",
+      "value": "#000000"
+    },
+    {
+      "name": "black-rgb",
+      "value": "rgb(0,0,0)"
+    },
+    {
+      "name": "black-hsl",
+      "value": "hsl(0,0%,0%)"
+    },
+    {
+      "name": "black-oklch",
+      "value": "#000000"
+    },
+    {
+      "name": "white-hex",
+      "value": "#ffffff"
+    },
+    {
+      "name": "white-rgb",
+      "value": "rgb(255,255,255)"
+    },
+    {
+      "name": "white-hsl",
+      "value": "hsl(0,0%,100%)"
+    },
+    {
+      "name": "white-oklch",
+      "value": "#ffffff"
+    },
+    {
+      "name": "hex",
+      "value": "#000000"
+    },
+    {
+      "name": "rgb",
+      "value": "rgb(0,0,0)"
+    },
+    {
+      "name": "hsl",
+      "value": "hsl(0,0%,0%)"
+    }
+  ],
+  "type": [
+    {
+      "name": "heading-display",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "tab",
+      "fontFamily": "\"Times New Roman\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "tab-selected",
+      "fontFamily": "\"Times New Roman\", \"Helvetica Now Text\", Arial, sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "text-tab",
+      "fontFamily": "\"Times New Roman\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "label-search",
+      "fontFamily": "\"GDS Transport\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "paragraph-textbox",
+      "fontFamily": "\"Inter Variable\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "heading-h4-contentinfo",
+      "fontFamily": "\"Headspace Apercu\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "heading-h3",
+      "fontFamily": "Inter",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "heading-h3-dialog",
+      "fontFamily": "Inter",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "heading-h1-link",
+      "fontFamily": "Manrope",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "heading-h1-dialog",
+      "fontFamily": "-apple-system",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "heading-h5-link",
+      "fontFamily": "\"Headspace Apercu\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "heading-h2-listbox",
+      "fontFamily": "\"Pin Sans\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "heading-h3-listbox",
+      "fontFamily": "\"Pin Sans\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "pagination-item",
+      "fontFamily": "\"GDS Transport\"",
+      "fontSize": "19px",
+      "px": 19
+    },
+    {
+      "name": "text-pagination-item",
+      "fontFamily": "\"GDS Transport\"",
+      "fontSize": "19px",
+      "px": 19
+    },
+    {
+      "name": "heading-h4",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "menuitem",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "heading-h4-link",
+      "fontFamily": "Inter",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "page",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Airbnb Cereal VF\", Circular, -apple-system, BlinkMacSystemFont, Roboto, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "select-trigger",
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "command-item",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "select-item",
+      "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "sans-serif",
+      "fontFamily": "ui-sans-serif, system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "serif",
+      "fontFamily": "ui-serif, Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "mono",
+      "fontFamily": "ui-monospace, \"SF Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "styles",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "vars",
+      "fontFamily": "--mds-field-typo-input-font-family",
+      "px": 16
+    },
+    {
+      "name": "type",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h1-banner",
+      "fontFamily": "-apple-system",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h1-complementary",
+      "fontFamily": "SpotifyMixUI",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h2-link",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h2-search",
+      "fontFamily": "\"Airbnb Cereal VF\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "option",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "radiogroup",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h3-link",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "application",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h6",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "menuitemcheckbox",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "menuitemradio",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "tabpanel",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "text-grid",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "blockquote",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "paragraph-radiogroup",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "time-table",
+      "fontFamily": "\"GDS Transport\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "gridcell",
+      "fontFamily": "GeistSans",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h4-button",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h3-segmented",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h3-banner",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h4-listbox",
+      "fontFamily": "\"Pin Sans\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h6-link",
+      "fontFamily": "Inter",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h4-navigation",
+      "fontFamily": "SpotifyMixUI",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h2-complementary",
+      "fontFamily": "SpotifyMixUI",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "paragraph-listbox",
+      "fontFamily": "SpotifyMixUI",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "heading-h2-menu",
+      "fontFamily": "-apple-system",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "\"Geist Variable\", \"Geist Variable Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "\"Geist Mono\", \"Geist Mono Fallback\", ui-monospace, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-heading",
+      "fontFamily": "\"Source Serif 4\", ui-serif, Georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "heading-4",
+      "fontFamily": "\"Helvetica Now Text\", \"Helvetica Now Text Fallback: Arial\", \"Helvetica Now Text Fallback: Helvetica\", Arial, Helvetica",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "checkbox",
+      "fontFamily": "inter",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "heading-h1",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "heading-h2",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "link",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "text-button",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "heading-h3-complementary",
+      "fontFamily": "Manrope",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "heading-h1-alertdialog",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "pagination-current",
+      "fontFamily": "Inter, \"Inter Fallback\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "toggle",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "calendar-day",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "tooltip",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "calendar-today",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "calendar-selected",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "button-voice",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "composer",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "composer-focus",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "menu-item-highlighted",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "command-item-highlighted",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nav-search",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segmented-app",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segmented-app-item",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segmented-app-selected",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "command-tab",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "command-tab-selected",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "button-send",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "list-item",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "input-search-focus",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "card-artifact",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "button-menu",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "card-tile",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segmented-selected-ink",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segmented-icon",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "dialog-settings",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "settings-nav-item",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "settings-nav-item-active",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "textarea",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "link-muted",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "button-danger",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "input-search",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "button-disabled",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "menu-model",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "menu-model-item",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "menu-model-item-checked",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "user-trigger",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "menu-account",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "menu-account-item-highlighted",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "heading-h2-dialog",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-dialog",
+      "fontFamily": "-apple-system",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-dialog",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "radio",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "searchbox",
+      "fontFamily": "Geist",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "switch",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-dialog",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-navigation",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-option",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-radio",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-radiogroup",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-search",
+      "fontFamily": "-apple-system",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-table",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cell-table",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-checkbox",
+      "fontFamily": "\"IBM Plex Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-contentinfo",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segment",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "select",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-banner",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-checkbox",
+      "fontFamily": "SpotifyMixUI",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-combobox",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-menu",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-menuitem",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "code",
+      "fontFamily": "\"Geist Mono\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "columnheader-table",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "heading-h5",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "heading-h6-table",
+      "fontFamily": "\"IBM Plex Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-option",
+      "fontFamily": "\"IBM Plex Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-table",
+      "fontFamily": "\"IBM Plex Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-button",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-table",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "spinbutton",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-menuitemcheckbox",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-treeitem",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "heading-h4-radiogroup",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "segmented",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-segment",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "heading-h2-banner",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-complementary",
+      "fontFamily": "Geist",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-banner",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "rowheader",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-segmented",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "note",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "graphics-symbol",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "heading-h5-button",
+      "fontFamily": "\"Pin Sans\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-grid",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "grid",
+      "fontFamily": "inter",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-menuitem",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "rowgroup",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "cell-link",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-menu",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "paragraph-tab",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "time-banner",
+      "fontFamily": "GeistSans",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "code-link",
+      "fontFamily": "\"Geist Mono\"",
+      "fontSize": "13.5px",
+      "px": 13.5
+    },
+    {
+      "name": "open",
+      "fontFamily": "-apple-system",
+      "fontSize": "13.3333px",
+      "px": 13.3333
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "button-quiet",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "button-primary",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "button-secondary",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "input",
+      "fontFamily": "\"Helvetica Now Text\", \"Helvetica Now Text Fallback: Arial\", \"Helvetica Now Text Fallback: Helvetica\", Arial, Helvetica",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "toggle-on",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "segmented-item",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "segmented-selected",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "nav-item",
+      "fontFamily": "Roboto",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "nav-item-active",
+      "fontFamily": "Roboto",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "model-trigger",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "values",
+      "fontFamily": "Roboto",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "heading-h3-button",
+      "fontFamily": "ShopifyInter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "paragraph",
+      "fontFamily": "HelveticaNowText-Light",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "text-link",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "alert",
+      "fontFamily": "inter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "status",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "treeitem",
+      "fontFamily": "ShopifyInter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "selected",
+      "fontFamily": "inter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "label-radiogroup",
+      "fontFamily": "Inter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "time-dialog",
+      "fontFamily": "anthropic-sans",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "heading-h2-contentinfo",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "search",
+      "fontFamily": "\"Inter Variable\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "paragraph-combobox",
+      "fontFamily": "ShopifyInter",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "heading-h5-complementary",
+      "fontFamily": "Manrope",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "code-dialog",
+      "fontFamily": "Menlo",
+      "fontSize": "12.6px",
+      "px": 12.6
+    },
+    {
+      "name": "menu-item",
+      "fontFamily": "Roboto",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-muted",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "badge-accent",
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "field-label",
+      "fontFamily": "\"Helvetica Now Text\", \"Helvetica Now Text Fallback: Arial\", \"Helvetica Now Text Fallback: Helvetica\", Arial, Helvetica",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "kbd",
+      "fontFamily": "GeistSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "heading-caption",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "heading-section",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "paragraph-navigation",
+      "fontFamily": "GeistSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-complementary",
+      "fontFamily": "sourceCodePro",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-toggle",
+      "fontFamily": "GeistSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "textbox",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "combobox",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "time",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-menuitemradio",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "disabled",
+      "fontFamily": "Arial",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "paragraph-menu",
+      "fontFamily": "GeistSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-tooltip",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-listbox",
+      "fontFamily": "GeistSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "code-table",
+      "fontFamily": "\"Source Code Pro\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "heading-h2-navigation",
+      "fontFamily": "SpotifyMixUI",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "heading-h3-navigation",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-switch",
+      "fontFamily": "Inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "time-link",
+      "fontFamily": "ShopifyInter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "time-contentinfo",
+      "fontFamily": "GuardianTextSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "paragraph-toggle",
+      "fontFamily": "\"Space Grotesk\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "columnheader-grid",
+      "fontFamily": "GeistSans",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-tablist",
+      "fontFamily": "ui-sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "paragraph-tooltip",
+      "fontFamily": "inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "heading-h3-menu",
+      "fontFamily": "-apple-system",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "text-toolbar",
+      "fontFamily": "-apple-system",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "label-radio",
+      "fontFamily": "inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "paragraph-option",
+      "fontFamily": "inter",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "code-button",
+      "fontFamily": "\"Monaspace Neon\"",
+      "fontSize": "11.9px",
+      "px": 11.9
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "text",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "heading-h3-contentinfo",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "text-contentinfo",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "breadcrumb",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "text-breadcrumb",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "paragraph-link",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "button",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "text-alertdialog",
+      "fontFamily": "\"Helvetica Now Text\"",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "badge",
+      "fontFamily": "Inter",
+      "fontSize": "8px",
+      "px": 8
+    }
+  ],
+  "components": [
+    {
+      "key": "toast",
+      "kind": "alert",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#0000",
+      "padding": "0"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "textarea-2",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "rounded": ".25rem",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "textColor": "#18181b",
+      "rounded": ".5rem",
+      "padding": ".25rem"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "textColor": "#18181b",
+      "rounded": ".5rem"
+    },
+    {
+      "key": "tabs-box",
+      "kind": "tabs",
+      "backgroundColor": "#f8f8f8",
+      "padding": ".25rem"
+    },
+    {
+      "key": "modal-box-2",
+      "kind": "modal",
+      "backgroundColor": "#ffffff",
+      "padding": "1.5rem",
+      "shadow": "0 25px 50px -12px oklch(0% 0 0/.25)"
+    },
+    {
+      "key": "link-info",
+      "kind": "link",
+      "textColor": "#00bafe"
+    },
+    {
+      "key": "input-3",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "alert-info-2",
+      "kind": "alert",
+      "textColor": "#042e49"
+    },
+    {
+      "key": "link-error-2",
+      "kind": "link",
+      "textColor": "#ff627d"
+    },
+    {
+      "key": "alert-dash-3",
+      "kind": "alert",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "drawer-side-3",
+      "kind": "modal",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "link-accent-3",
+      "kind": "link",
+      "textColor": "#00d3bb"
+    },
+    {
+      "key": "badge-ghost",
+      "kind": "badge",
+      "backgroundColor": "#f8f8f8",
+      "textColor": "#18181b",
+      "border": "1px solid #f8f8f8"
+    },
+    {
+      "key": "select-ghost-2",
+      "kind": "select",
+      "backgroundColor": "#0000",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "checkbox-info-2",
+      "kind": "checkbox",
+      "textColor": "#042e49"
+    },
+    {
+      "key": "progress-info-2",
+      "kind": "progress",
+      "textColor": "#00bafe"
+    },
+    {
+      "key": "checkbox-error-3",
+      "kind": "checkbox",
+      "textColor": "#4d0218"
+    },
+    {
+      "key": "progress-error-3",
+      "kind": "progress",
+      "textColor": "#ff627d"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#e31c5f",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Lucide",
+    "package": "lucide-react",
+    "pack": "lucide",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 2,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "npm",
+    "url": "https://lucide.dev"
+  },
+  "overview": "**dotUI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#e31c5f` brand accent.\n\nTypography centers cleanly on `Helvetica Now Text` (32px display down to 16px body), unified by `.5rem` base corner radius and subtle shadow elevation.\n\nSource: published token package (https://github.com/mehdibha/dotUI), repo https://github.com/mehdibha/dotUI. Inventory: **90** colors, **233** typography steps, and **26** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 26 component tokens with documented paddings: `0`, `.25rem`, `1.5rem`, `2px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f5f5f5` cards; separate sibling sections using `#e5e5e5` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 25px 50px -12px oklch(0% 0 0/.25)`) paired with `#e5e5e5` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#e31c5f` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#e31c5f` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Helvetica Now Text` headings with `Helvetica Now Text` body copy using documented weights and scale steps.\n- Apply `.5rem` base geometry across inputs and buttons (.5rem on outer containers).\n- Separate containers via `#f5f5f5` surface shifts and `#e5e5e5` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.5rem` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

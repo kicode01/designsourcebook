@@ -1,0 +1,41 @@
+{
+  "name": "bridge",
+  "displayName": "Bold",
+  "description": "Bridge Design System Bold — read from the rendered page in a browser, not from published tokens.",
+  "style": "Bridge Design System Bold — read from the rendered page in a browser, not from published tokens.",
+  "category": "Bridge Design System",
+  "org": "Bridge Design System",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "bridge-design-system",
+    "light"
+  ],
+  "homepage": "https://bold.bridge.ufsc.tech/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://bold.bridge.ufsc.tech/ in headless Chromium on 2026-11-18 (0 custom properties, 35 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Bold Design System.",
+  "source": {
+    "url": "https://bold.bridge.ufsc.tech/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 40,
+    "typography": 9,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

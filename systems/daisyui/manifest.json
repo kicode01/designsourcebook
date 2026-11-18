@@ -1,0 +1,42 @@
+{
+  "name": "daisyui",
+  "displayName": "daisyUI",
+  "description": "daisyUI — tokens imported from daisyui.",
+  "style": "daisyUI — tokens imported from daisyui.",
+  "category": "daisyUI",
+  "org": "daisyUI",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "daisy-ui",
+    "dark"
+  ],
+  "homepage": "https://daisyui.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from daisyui@5.8.1 (5 token files, 25 colours harvested, 20 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "daisyui",
+    "version": "5.8.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 21,
+    "typography": 4,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

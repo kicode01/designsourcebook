@@ -1,0 +1,42 @@
+{
+  "name": "renault",
+  "displayName": "Renault",
+  "description": "French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons",
+  "style": "French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons",
+  "category": "Automotive",
+  "org": "Renault",
+  "theme": "light",
+  "tags": [
+    "automotive",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://www.renault.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (renault/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/renault"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 25,
+    "typography": 15,
+    "components": 26
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

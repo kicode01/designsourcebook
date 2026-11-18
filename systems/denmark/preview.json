@@ -1,0 +1,441 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#F5F5F5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0059B3",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "alert-background-color",
+      "value": "#DADAEB"
+    },
+    {
+      "name": "alert-border-color",
+      "value": "#6A51A3"
+    },
+    {
+      "name": "color-primary",
+      "value": "#0059B3"
+    },
+    {
+      "name": "color-white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "color-gray-100",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "color-gray-200",
+      "value": "#DCDCDC"
+    },
+    {
+      "name": "color-gray-300",
+      "value": "#BFBFBF"
+    },
+    {
+      "name": "color-gray-400",
+      "value": "#8E8E8E"
+    },
+    {
+      "name": "color-gray-500",
+      "value": "#707070"
+    },
+    {
+      "name": "color-gray-600",
+      "value": "#454545"
+    },
+    {
+      "name": "color-black",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "color-error",
+      "value": "#CC0000"
+    },
+    {
+      "name": "tab-panel-background-color",
+      "value": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "tab-panel-border-color",
+      "value": "#8E8E8E"
+    },
+    {
+      "name": "primary",
+      "value": "#0059B3"
+    }
+  ],
+  "type": [
+    {
+      "name": "fds-title",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2.8rem",
+      "px": 44.8,
+      "fontWeight": 600,
+      "lineHeight": "3.2rem"
+    },
+    {
+      "name": "displayheading-1",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 500,
+      "lineHeight": "3.6rem"
+    },
+    {
+      "name": "card-heading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 600
+    },
+    {
+      "name": "displayheading-2",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2.1rem",
+      "px": 33.6,
+      "fontWeight": 500,
+      "lineHeight": "3.2rem"
+    },
+    {
+      "name": "menu-heading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "solution-heading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 600,
+      "lineHeight": "2.4rem"
+    },
+    {
+      "name": "top-heading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-lead",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": "3.2rem"
+    },
+    {
+      "name": "alert-heading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "checklist-heading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 700
+    },
+    {
+      "name": "heading-link",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "body-copy-text",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 400,
+      "lineHeight": "2.4rem"
+    },
+    {
+      "name": "subheading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 400,
+      "lineHeight": "1.6rem"
+    },
+    {
+      "name": "anchortitle",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 500,
+      "lineHeight": "2.4rem"
+    },
+    {
+      "name": "sub-title",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 500,
+      "lineHeight": 1.4285714286
+    },
+    {
+      "name": "step-subheading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 400,
+      "lineHeight": "1.6rem"
+    },
+    {
+      "name": "card-subheading",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 400,
+      "lineHeight": "1.6rem"
+    },
+    {
+      "name": "figcaption",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"IBM Plex Sans\", system-ui, system, sans-serif",
+      "fontSize": "62.5%",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#454545",
+      "textColor": "#fff",
+      "rounded": "1.2rem",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "backgroundColor": "#f5f5f5",
+      "rounded": "8px",
+      "padding": "1.6rem"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "#454545",
+      "textColor": "#fff",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "toast-2",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "rounded": "8px",
+      "shadow": "0 8px 24px 0 rgba(0,0,0,.2)"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "#1a1a1a",
+      "border": "1px solid #8e8e8e"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,.4)"
+    },
+    {
+      "key": "tag-3",
+      "kind": "badge",
+      "textColor": "#707070"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "textColor": "#1a1a1a",
+      "padding": "0"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#1a1a1a"
+    },
+    {
+      "key": "alert-info-3",
+      "kind": "alert",
+      "backgroundColor": "#e2f2fb"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "backgroundColor": "#004d99"
+    },
+    {
+      "key": "link-3",
+      "kind": "link",
+      "textColor": "#1a1a1a",
+      "border": "none"
+    },
+    {
+      "key": "modal-backdrop-2",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,.4)",
+      "padding": "16px"
+    },
+    {
+      "key": "step-indicator-button-2",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#1a1a1a",
+      "rounded": "8px",
+      "border": "1px solid #bfbfbf"
+    },
+    {
+      "key": "button-copy-container-3",
+      "kind": "button",
+      "backgroundColor": "#f5f5f5"
+    },
+    {
+      "key": "web-component-tab-badge",
+      "kind": "badge",
+      "backgroundColor": "#1a1a1a"
+    },
+    {
+      "key": "component-preview-button-4",
+      "kind": "button",
+      "backgroundColor": "#8e8e8e",
+      "rounded": "50%",
+      "padding": "1px",
+      "border": "1px solid #8e8e8e"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#1a1a1a",
+      "rounded": "8px",
+      "border": "1px solid #8e8e8e"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#1a1a1a",
+      "rounded": "8px",
+      "border": "1px solid #8e8e8e"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#1a1a1a",
+      "rounded": "8px",
+      "padding": "1.6rem 1.6rem 1.6rem 5.6rem"
+    },
+    {
+      "key": "accordion-content",
+      "kind": "accordion",
+      "backgroundColor": "#f5f5f5",
+      "textColor": "#1a1a1a",
+      "rounded": "0 0 8px 8px",
+      "padding": ".8rem 1.6rem 2.4rem 5.6rem"
+    },
+    {
+      "key": "step-indicator-button-3",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#1a1a1a",
+      "rounded": "8px",
+      "border": "1px solid #bfbfbf"
+    },
+    {
+      "key": "button-copy-container-4",
+      "kind": "button",
+      "backgroundColor": "#f5f5f5"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0059B3",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0059B3",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Det Fælles Designsystem** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0059B3` brand accent.\n\nTypography centers cleanly on `IBM Plex Sans` (45px display down to 10px body), unified by `8px` base corner radius and subtle shadow elevation.\n\nMaintained by **Denmark**. Source: live stylesheet extraction (https://designsystem.dk/). Inventory: **15** colors, **21** typography steps, and **29** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `0`, `1.6rem`, `16px`, `1px`, `1.6rem 1.6rem 1.6rem 5.6rem`.\n- **Hierarchy**: Group controls cleanly within `#F5F5F5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 8px 24px 0 rgba(0,0,0,.2)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0059B3` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0059B3` with `#f7f7f8` text (6.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `IBM Plex Sans` headings with `IBM Plex Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F5F5F5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

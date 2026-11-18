@@ -1,0 +1,717 @@
+{
+  "canvas": "#f0f0f0",
+  "surface": "#f0f0f0",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#69b5dd",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "2px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "error-color",
+      "value": "#b94e4a"
+    },
+    {
+      "name": "error-icon-fill",
+      "value": "#b94e4a"
+    },
+    {
+      "name": "error-border-color",
+      "value": "#b94e4a"
+    },
+    {
+      "name": "fileupload-completed-border-color",
+      "value": "#225800"
+    },
+    {
+      "name": "error-text-color",
+      "value": "#b94e4a"
+    },
+    {
+      "name": "button-icon-disabled-color",
+      "value": "rgba(0, 0, 0, 1)"
+    },
+    {
+      "name": "button-primary-disabled-color-gen-ai",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-primary-disabled-hover-color-gen-ai",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-secondary-border-color-gen-ai",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-secondary-color-gen-ai",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-secondary-hover-color-gen-ai",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-secondary-dot-flashing-bg-color-key-one",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-tertiary-focus-border-color-gen-ai",
+      "value": "#C2A1F1"
+    },
+    {
+      "name": "button-tertiary-hover-background-color-gen-ai",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "button-gen-ai-icon-disabled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "focus-color",
+      "value": "#cbdce6"
+    },
+    {
+      "name": "ids-color-status-danger",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "ids-color-status-error",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "ids-color-status-success",
+      "value": "#80ce4d"
+    },
+    {
+      "name": "ids-color-status-warning",
+      "value": "#ff9426"
+    },
+    {
+      "name": "ids-color-status-info",
+      "value": "#2578a9"
+    },
+    {
+      "name": "ids-color-brand-primary-lighter",
+      "value": "#69b5dd"
+    },
+    {
+      "name": "ids-color-brand-primary-base",
+      "value": "#368ac0"
+    },
+    {
+      "name": "ids-color-brand-primary-alt",
+      "value": "#2578a9"
+    },
+    {
+      "name": "ids-color-brand-primary-contrast",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ids-color-brand-secondary-lighter",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "ids-color-brand-secondary-base",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "ids-color-brand-secondary-alt",
+      "value": "#999999"
+    },
+    {
+      "name": "ids-color-brand-secondary-contrast",
+      "value": "#383838"
+    },
+    {
+      "name": "body-color-primary-background",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "body-color-primary-font",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "body-color-secondary-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "danger-value",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "danger-palette-name",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "error-value",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "error-palette-name",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "success-value",
+      "value": "#80ce4d"
+    },
+    {
+      "name": "success-palette-name",
+      "value": "#80ce4d"
+    },
+    {
+      "name": "warning-value",
+      "value": "#ff9426"
+    },
+    {
+      "name": "warning-palette-name",
+      "value": "#ff9426"
+    },
+    {
+      "name": "background-value",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "info-value",
+      "value": "#0064D4"
+    },
+    {
+      "name": "info-palette-name",
+      "value": "#0064D4"
+    },
+    {
+      "name": "ids-color-palette-yellow-10",
+      "value": "#fff8d6"
+    },
+    {
+      "name": "ids-color-palette-yellow-40",
+      "value": "#ffe156"
+    },
+    {
+      "name": "ids-color-palette-yellow-70",
+      "value": "#bb9c21"
+    },
+    {
+      "name": "ids-color-palette-yellow-100",
+      "value": "#4b3700"
+    },
+    {
+      "name": "chart-progressbar-completed-fill",
+      "value": "#2f6b0a"
+    },
+    {
+      "name": "tree-active-bg-color",
+      "value": "#3e586c"
+    },
+    {
+      "name": "button-gen-ai-hover-bg-color",
+      "value": "#DDCBF7"
+    },
+    {
+      "name": "loading-indicator-ai-bar-one-bg-color",
+      "value": "#DDCBF7"
+    },
+    {
+      "name": "badge-alert-bg-color",
+      "value": "#ffd726"
+    },
+    {
+      "name": "datagrid-row-selected-color",
+      "value": "#d8f0f7"
+    },
+    {
+      "name": "ids-color-palette-amber-20",
+      "value": "#f8e09c"
+    },
+    {
+      "name": "ids-color-palette-amber-50",
+      "value": "#f2bc41"
+    },
+    {
+      "name": "ids-color-palette-amber-80",
+      "value": "#e4882b"
+    },
+    {
+      "name": "ids-color-palette-amethyst-10",
+      "value": "#ede3fc"
+    },
+    {
+      "name": "ids-color-palette-amethyst-40",
+      "value": "#b59eca"
+    },
+    {
+      "name": "ids-color-palette-amethyst-70",
+      "value": "#806594"
+    },
+    {
+      "name": "ids-color-palette-amethyst-100",
+      "value": "#4b2a5e"
+    },
+    {
+      "name": "ids-color-palette-azure-30",
+      "value": "#8dc9e6"
+    },
+    {
+      "name": "ids-color-palette-azure-60",
+      "value": "#368ac0"
+    },
+    {
+      "name": "ids-color-palette-azure-90",
+      "value": "#134d71"
+    },
+    {
+      "name": "ids-color-palette-emerald-20",
+      "value": "#c3e8ac"
+    },
+    {
+      "name": "ids-color-palette-emerald-50",
+      "value": "#89bf65"
+    },
+    {
+      "name": "ids-color-palette-emerald-80",
+      "value": "#56932e"
+    },
+    {
+      "name": "ids-color-palette-graphite-10",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "ids-color-palette-graphite-40",
+      "value": "#999999"
+    },
+    {
+      "name": "ids-color-palette-graphite-70",
+      "value": "#454545"
+    },
+    {
+      "name": "ids-color-palette-graphite-100",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "ids-color-palette-ruby-30",
+      "value": "#de8181"
+    },
+    {
+      "name": "ids-color-palette-ruby-60",
+      "value": "#b94e4a"
+    },
+    {
+      "name": "ids-color-palette-ruby-90",
+      "value": "#941e1e"
+    },
+    {
+      "name": "ids-color-palette-slate-20",
+      "value": "#C8CBD4"
+    },
+    {
+      "name": "ids-color-palette-slate-50",
+      "value": "#656871"
+    },
+    {
+      "name": "ids-color-palette-slate-80",
+      "value": "#313236"
+    },
+    {
+      "name": "ids-color-palette-classic-slate-10",
+      "value": "#DEE1E8"
+    },
+    {
+      "name": "ids-color-palette-classic-slate-40",
+      "value": "#888B94"
+    },
+    {
+      "name": "ids-color-palette-classic-slate-70",
+      "value": "#414247"
+    },
+    {
+      "name": "ids-color-palette-classic-slate-100",
+      "value": "#1C1819"
+    },
+    {
+      "name": "ids-color-palette-turquoise-30",
+      "value": "#8ed1c6"
+    },
+    {
+      "name": "ids-color-palette-turquoise-60",
+      "value": "#579e95"
+    },
+    {
+      "name": "ids-color-palette-turquoise-90",
+      "value": "#206b62"
+    },
+    {
+      "name": "ids-color-palette-black",
+      "value": "#000000"
+    },
+    {
+      "name": "ids-color-status-status-01",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "ids-color-status-status-04",
+      "value": "#80ce4d"
+    },
+    {
+      "name": "e",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "black-value",
+      "value": "#000000"
+    },
+    {
+      "name": "caution-palette-name",
+      "value": "#ffd726"
+    },
+    {
+      "name": "status02-value",
+      "value": "#e84f4f"
+    },
+    {
+      "name": "primary",
+      "value": "#69b5dd"
+    }
+  ],
+  "type": [
+    {
+      "name": "h2",
+      "fontFamily": "system-ui",
+      "fontSize": "2.2rem",
+      "px": 35.2
+    },
+    {
+      "name": "h3",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "empty-title",
+      "fontFamily": "system-ui",
+      "fontSize": "1.8rem",
+      "px": 28.8
+    },
+    {
+      "name": "listview-heading",
+      "fontFamily": "system-ui",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 600
+    },
+    {
+      "name": "listview-subheading",
+      "fontFamily": "system-ui",
+      "fontSize": "1.6rem",
+      "px": 25.6
+    },
+    {
+      "name": "section-title",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "body",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "title",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600
+    },
+    {
+      "name": "subtitle",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#E0E0E1",
+      "textColor": "#161618",
+      "rounded": "12px",
+      "padding": "0 10px"
+    },
+    {
+      "key": "btn",
+      "kind": "button",
+      "textColor": "rgb(0, 0, 0)",
+      "rounded": "2px",
+      "padding": "0 10px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "icon",
+      "kind": "icon",
+      "textColor": "#28282A"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "backgroundColor": "#ffffff",
+      "rounded": "8px",
+      "border": "1px solid transparent",
+      "shadow": "0 0 4px 0 #E0E0E1"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "rounded": "2px",
+      "border": "1px solid #6F6F76",
+      "shadow": "0 0 4px rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "#E0E0E1",
+      "textColor": "#161618",
+      "rounded": "12px",
+      "padding": "0 10px"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#161618"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "textColor": "#A14100"
+    },
+    {
+      "key": "toast-2",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#28282A",
+      "rounded": "2px",
+      "padding": "0 10px",
+      "border": "1px solid #C5C5C9"
+    },
+    {
+      "key": "avatar",
+      "kind": "avatar",
+      "backgroundColor": "#4DCC86",
+      "textColor": "#ffffff",
+      "rounded": "50%",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "popover",
+      "kind": "modal",
+      "backgroundColor": "#3B3B3F",
+      "textColor": "#ffffff",
+      "rounded": "2px",
+      "padding": "0",
+      "border": "1px solid #3B3B3F",
+      "shadow": "0 2px 5px rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#3B3B3F",
+      "textColor": "#ffffff",
+      "rounded": "2px",
+      "padding": "0",
+      "border": "1px solid #3B3B3F",
+      "shadow": "0 2px 5px rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "icon-new-2",
+      "kind": "icon",
+      "textColor": "#DF6F00"
+    },
+    {
+      "key": "icon-3",
+      "kind": "icon",
+      "textColor": "rgb(0, 0, 0)",
+      "rounded": "2px",
+      "padding": "0",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "btn-menu-2",
+      "kind": "button",
+      "textColor": "rgb(0, 0, 0)",
+      "rounded": "2px",
+      "padding": "0 10px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "textColor": "#0054B1",
+      "rounded": "8px"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#F5F5F5",
+      "rounded": "4px",
+      "border": "1px solid #6F6F76"
+    },
+    {
+      "key": "link-3",
+      "kind": "link",
+      "textColor": "#004A99"
+    },
+    {
+      "key": "btn-close-3",
+      "kind": "button",
+      "textColor": "rgb(0, 0, 0)",
+      "rounded": "2px",
+      "padding": "0",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "card-deck-2",
+      "kind": "card",
+      "backgroundColor": "#ffffff"
+    },
+    {
+      "key": "alert-3",
+      "kind": "alert",
+      "textColor": "#F98300"
+    },
+    {
+      "key": "card-title-3",
+      "kind": "card",
+      "textColor": "#000000"
+    },
+    {
+      "key": "btn-primary-4",
+      "kind": "button",
+      "backgroundColor": "#004A99",
+      "textColor": "#ffffff",
+      "rounded": "2px",
+      "padding": "0 32px",
+      "border": "1px solid #004A99"
+    },
+    {
+      "key": "input-style",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "border": "1px solid #525257"
+    },
+    {
+      "key": "panel-header",
+      "kind": "panel",
+      "backgroundColor": "#F5F5F5"
+    },
+    {
+      "key": "modal-content-2",
+      "kind": "modal",
+      "backgroundColor": "#F5F5F5",
+      "rounded": "2px",
+      "border": "1px solid #6F6F76",
+      "shadow": "0 2px 5px rgba(0, 0, 0, 0.3)"
+    },
+    {
+      "key": "tab-list-info",
+      "kind": "tabs",
+      "textColor": "#161618",
+      "padding": "10px 30px"
+    },
+    {
+      "key": "tooltip-title-2",
+      "kind": "tooltip",
+      "textColor": "#161618",
+      "padding": "10px 20px"
+    },
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "#E0E0E1",
+      "textColor": "#525257"
+    },
+    {
+      "key": "progress-2",
+      "kind": "progress",
+      "backgroundColor": "#004A99"
+    },
+    {
+      "key": "card-empty-info-4",
+      "kind": "card",
+      "textColor": "#6F6F76",
+      "padding": "0 20px 40px"
+    },
+    {
+      "key": "nav-detail-2",
+      "kind": "nav",
+      "backgroundColor": "#C5C5C9"
+    },
+    {
+      "key": "input-hideshow-text-2",
+      "kind": "input",
+      "textColor": "#8E8E95"
+    },
+    {
+      "key": "tooltip-total-3",
+      "kind": "tooltip",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "nav-guest-title-3",
+      "kind": "nav",
+      "textColor": "#161618"
+    },
+    {
+      "key": "input-hideshow-text",
+      "kind": "input",
+      "textColor": "#8E8E95"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#69b5dd",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#69b5dd",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f0f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Infor Design System** is a light-first design system anchored on `#f0f0f0` canvas surfaces with `#0b0b0c` primary ink (17.3:1 contrast) and `#69b5dd` brand accent.\n\nTypography centers cleanly on `System UI` (35px display down to 16px body), unified by `2px` base corner radius and subtle shadow elevation.\n\nMaintained by **Infor**. Source: published token package (https://oxford.awsdev.infor.com/infor-design/enterprise), package `ids-enterprise`. Inventory: **91** colors, **9** typography steps, and **40** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 40 component tokens with documented paddings: `0 10px`, `0`, `0 32px`, `10px 30px`, `10px 20px`.\n- **Hierarchy**: Group controls cleanly within `#f0f0f0` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 4px 0 #E0E0E1`, `0 0 4px rgba(0, 0, 0, 0.15)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#69b5dd` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f0f0f0` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#69b5dd` with `#0b0b0c` text (8.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `2px` base geometry across inputs and buttons (2px on outer containers).\n- Separate containers via `#f0f0f0` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `2px` baseline.\n- Do not truncate or drop border contrast on `input-style` fields and secondary buttons."
+}

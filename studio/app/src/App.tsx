@@ -5,6 +5,7 @@ import { StudioProvider } from './state/studio';
 import { SystemMaker } from './pages/SystemMaker';
 import { CreateX } from './pages/CreateX';
 import { BrandX } from './pages/BrandX';
+import { installPortalPageShowCleanup } from './utils/chameleonNav';
 
 function readRoute(): string {
   const raw = window.location.hash.replace(/^#/, '');
@@ -60,14 +61,16 @@ export default function App() {
   }, [path]);
 
   useEffect(() => {
+    installPortalPageShowCleanup();
     const root = document.documentElement;
     let hasChameleon = root.classList.contains('ds-chameleon-enter');
     try {
-      const raw = sessionStorage.getItem('ds_studio_chameleon');
+      const raw = sessionStorage.getItem('ds_portal_handoff');
       if (raw) {
-        sessionStorage.removeItem('ds_studio_chameleon');
+        sessionStorage.removeItem('ds_portal_handoff');
         hasChameleon = true;
       }
+      sessionStorage.removeItem('ds_studio_chameleon');
     } catch {
       // ignore storage restrictions
     }
@@ -79,7 +82,7 @@ export default function App() {
     const timer = window.setTimeout(() => {
       root.classList.remove('ds-chameleon-revealed');
       root.style.removeProperty('background-color');
-    }, 380);
+    }, 340);
     return () => {
       cancelAnimationFrame(raf);
       window.clearTimeout(timer);

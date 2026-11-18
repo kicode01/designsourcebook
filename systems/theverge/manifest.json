@@ -1,0 +1,43 @@
+{
+  "name": "theverge",
+  "displayName": "The Verge",
+  "description": "Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type",
+  "style": "Tech editorial media. Acid-mint and ultraviolet accents, Manuka display type",
+  "category": "Media & Consumer Tech",
+  "org": "The Verge",
+  "theme": "dark",
+  "tags": [
+    "media",
+    "consumer",
+    "design.md",
+    "observed",
+    "dark"
+  ],
+  "homepage": "https://www.theverge.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (theverge/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/theverge"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 19,
+    "typography": 21,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

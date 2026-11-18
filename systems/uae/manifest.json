@@ -1,0 +1,42 @@
+{
+  "name": "uae",
+  "displayName": "UAE Design System",
+  "description": "UAE Design System — tokens read from https://github.com/TDRA-ae/aegov-dls.",
+  "style": "UAE Design System — tokens read from https://github.com/TDRA-ae/aegov-dls.",
+  "category": "UAE",
+  "org": "UAE",
+  "theme": "light",
+  "tags": [
+    "published",
+    "uae",
+    "government",
+    "light"
+  ],
+  "homepage": "https://github.com/TDRA-ae/aegov-dls",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/TDRA-ae/aegov-dls — 2 token files, 237 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/TDRA-ae/aegov-dls"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 8,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

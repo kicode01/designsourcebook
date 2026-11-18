@@ -1,0 +1,671 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ebf2f7",
+  "text": "#000000",
+  "muted": "#014a82",
+  "brand": "#1877f2",
+  "border": "#dbe4ea",
+  "radius": "20px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "text-black",
+      "value": "#000000"
+    },
+    {
+      "name": "text-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-blue-60",
+      "value": "#014a82"
+    },
+    {
+      "name": "text-blue-40",
+      "value": "#4fb3f6"
+    },
+    {
+      "name": "text-green-60",
+      "value": "#00672e"
+    },
+    {
+      "name": "text-green-40",
+      "value": "#60d399"
+    },
+    {
+      "name": "text-indigo-60",
+      "value": "#133191"
+    },
+    {
+      "name": "text-indigo-40",
+      "value": "#6d83f3"
+    },
+    {
+      "name": "text-red-60",
+      "value": "#cf1d00"
+    },
+    {
+      "name": "text-red-40",
+      "value": "#ff7968"
+    },
+    {
+      "name": "text-yellow-60",
+      "value": "#935000"
+    },
+    {
+      "name": "text-yellow-40",
+      "value": "#fbbe2e"
+    },
+    {
+      "name": "text-gray-70",
+      "value": "#323c45"
+    },
+    {
+      "name": "text-gray-60",
+      "value": "#46535f"
+    },
+    {
+      "name": "text-gray-50",
+      "value": "#687b8c"
+    },
+    {
+      "name": "text-gray-40",
+      "value": "#c3d1dd"
+    },
+    {
+      "name": "focus-color",
+      "value": "#6d83f3"
+    },
+    {
+      "name": "focus-inner-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "active-border-color",
+      "value": "#dbe4ea"
+    },
+    {
+      "name": "hover-background-color",
+      "value": "#dbe4ea"
+    },
+    {
+      "name": "hover-border-color",
+      "value": "#dbe4ea"
+    },
+    {
+      "name": "button-primary-fb-color",
+      "value": "#1877f2"
+    },
+    {
+      "name": "button-primary-fb-hover-color",
+      "value": "#1964d5"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "blue-70",
+      "value": "#002238"
+    },
+    {
+      "name": "blue-60",
+      "value": "#014a82"
+    },
+    {
+      "name": "blue-50",
+      "value": "#0089e3"
+    },
+    {
+      "name": "blue-40",
+      "value": "#4fb3f6"
+    },
+    {
+      "name": "blue-30",
+      "value": "#b9e2fe"
+    },
+    {
+      "name": "blue-20",
+      "value": "#d9f0ff"
+    },
+    {
+      "name": "blue-10",
+      "value": "#edf8ff"
+    },
+    {
+      "name": "green-70",
+      "value": "#002e13"
+    },
+    {
+      "name": "green-60",
+      "value": "#00672e"
+    },
+    {
+      "name": "green-50",
+      "value": "#24a865"
+    },
+    {
+      "name": "green-40",
+      "value": "#60d399"
+    },
+    {
+      "name": "green-30",
+      "value": "#9ce8c2"
+    },
+    {
+      "name": "green-20",
+      "value": "#e3f7ed"
+    },
+    {
+      "name": "green-10",
+      "value": "#f0faf5"
+    },
+    {
+      "name": "indigo-70",
+      "value": "#0c114d"
+    },
+    {
+      "name": "indigo-60",
+      "value": "#133191"
+    },
+    {
+      "name": "indigo-50",
+      "value": "#163bf3"
+    },
+    {
+      "name": "indigo-40",
+      "value": "#6d83f3"
+    },
+    {
+      "name": "indigo-30",
+      "value": "#bdc7fb"
+    },
+    {
+      "name": "indigo-20",
+      "value": "#ebeeff"
+    },
+    {
+      "name": "indigo-10",
+      "value": "#f2f4ff"
+    },
+    {
+      "name": "red-70",
+      "value": "#8d1a00"
+    },
+    {
+      "name": "red-60",
+      "value": "#cf1d00"
+    },
+    {
+      "name": "red-50",
+      "value": "#ff341a"
+    },
+    {
+      "name": "red-40",
+      "value": "#ff7968"
+    },
+    {
+      "name": "red-30",
+      "value": "#ffc7bf"
+    },
+    {
+      "name": "red-20",
+      "value": "#ffe8e5"
+    },
+    {
+      "name": "red-10",
+      "value": "#fff1f0"
+    },
+    {
+      "name": "yellow-70",
+      "value": "#5b3100"
+    },
+    {
+      "name": "yellow-60",
+      "value": "#935000"
+    },
+    {
+      "name": "yellow-50",
+      "value": "#c98600"
+    },
+    {
+      "name": "yellow-40",
+      "value": "#fbbe2e"
+    },
+    {
+      "name": "yellow-30",
+      "value": "#fedd8e"
+    },
+    {
+      "name": "yellow-20",
+      "value": "#fff3d6"
+    },
+    {
+      "name": "yellow-10",
+      "value": "#fffaf0"
+    },
+    {
+      "name": "gray-70",
+      "value": "#323c45"
+    },
+    {
+      "name": "gray-60",
+      "value": "#46535f"
+    },
+    {
+      "name": "gray-50",
+      "value": "#687b8c"
+    },
+    {
+      "name": "gray-40",
+      "value": "#c3d1dd"
+    },
+    {
+      "name": "gray-30",
+      "value": "#e1eaf1"
+    },
+    {
+      "name": "gray-20",
+      "value": "#ebf2f7"
+    },
+    {
+      "name": "gray-10",
+      "value": "#f5f8fa"
+    },
+    {
+      "name": "icon-black",
+      "value": "#000000"
+    },
+    {
+      "name": "icon-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "icon-blue-60",
+      "value": "#014a82"
+    },
+    {
+      "name": "icon-blue-50",
+      "value": "#0089e3"
+    },
+    {
+      "name": "icon-green-60",
+      "value": "#00672e"
+    },
+    {
+      "name": "icon-green-50",
+      "value": "#24a865"
+    },
+    {
+      "name": "icon-indigo-60",
+      "value": "#133191"
+    },
+    {
+      "name": "icon-indigo-50",
+      "value": "#163bf3"
+    },
+    {
+      "name": "icon-red-60",
+      "value": "#cf1d00"
+    },
+    {
+      "name": "icon-red-50",
+      "value": "#ff341a"
+    },
+    {
+      "name": "icon-yellow-60",
+      "value": "#935000"
+    },
+    {
+      "name": "icon-yellow-50",
+      "value": "#c98600"
+    },
+    {
+      "name": "icon-gray-70",
+      "value": "#323c45"
+    },
+    {
+      "name": "icon-gray-60",
+      "value": "#46535f"
+    },
+    {
+      "name": "icon-gray-50",
+      "value": "#687b8c"
+    },
+    {
+      "name": "icon-gray-40",
+      "value": "#c3d1dd"
+    },
+    {
+      "name": "radio-color",
+      "value": "#000000"
+    },
+    {
+      "name": "radio-ring-inside-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "radio-hover-color",
+      "value": "#46535f"
+    },
+    {
+      "name": "radio-invalid-color",
+      "value": "#cf1d00"
+    },
+    {
+      "name": "radio-invalid-hover-color",
+      "value": "#ff341a"
+    },
+    {
+      "name": "radio-label-color",
+      "value": "#000000"
+    },
+    {
+      "name": "radio-description-color",
+      "value": "#000000"
+    },
+    {
+      "name": "primary",
+      "value": "#1877f2"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Figtree, Helvetica, Arial, sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "form-element-large-font-size",
+      "fontFamily": "Figtree, Helvetica, Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "html",
+      "fontFamily": "Figtree, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "Figtree, Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "form-element-default-font-size",
+      "fontFamily": "Figtree, Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "form-element-small-font-size",
+      "fontFamily": "Figtree, Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "icon-black",
+      "kind": "icon",
+      "backgroundColor": "rgba(0, 0, 0, )"
+    },
+    {
+      "key": "icon-white-2",
+      "kind": "icon",
+      "backgroundColor": "rgba(255, 255, 255, )"
+    },
+    {
+      "key": "icon-red-60-3",
+      "kind": "icon",
+      "backgroundColor": "rgba(207, 29, 0, )"
+    },
+    {
+      "key": "icon",
+      "kind": "icon",
+      "textColor": "#fff"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": "8px",
+      "border": "#c3d1dd solid 1px"
+    },
+    {
+      "key": "chip",
+      "kind": "badge",
+      "backgroundColor": "#ffffff",
+      "rounded": "8px"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#ebf2f7",
+      "textColor": "#000",
+      "rounded": "20px",
+      "padding": "0 16px",
+      "border": "2px solid #ebf2f7"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#000",
+      "textColor": "#fff",
+      "rounded": "20px",
+      "padding": "0 20px",
+      "border": "none"
+    },
+    {
+      "key": "textarea-2",
+      "kind": "input",
+      "backgroundColor": "#ebf2f7",
+      "textColor": "#000",
+      "rounded": "20px",
+      "padding": "6px 16px",
+      "border": "2px solid #ebf2f7"
+    },
+    {
+      "key": "sg-skip-link",
+      "kind": "link",
+      "backgroundColor": "#fff",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "chip-2",
+      "kind": "badge",
+      "textColor": "#000000"
+    },
+    {
+      "key": "sg-mobile-icon-2",
+      "kind": "icon",
+      "textColor": "#fff"
+    },
+    {
+      "key": "sg-subject-icon-3",
+      "kind": "icon",
+      "textColor": "#fff"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#ebf2f7",
+      "textColor": "#46535f",
+      "rounded": "20px",
+      "padding": "0 36px 0 16px",
+      "border": "2px solid #ebf2f7"
+    },
+    {
+      "key": "breadcrumb-list",
+      "kind": "nav",
+      "textColor": "#323c45",
+      "padding": "0"
+    },
+    {
+      "key": "select-menu-2",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "rounded": "16px",
+      "border": "2px solid FieldText",
+      "shadow": "0 8px 32px 0 rgba(50,60,69,.2)"
+    },
+    {
+      "key": "select-menu-3",
+      "kind": "select",
+      "textColor": "#46535f",
+      "rounded": "20px",
+      "padding": "0 44px 0 16px",
+      "border": "2px solid"
+    },
+    {
+      "key": "button-solid-round-2",
+      "kind": "button",
+      "backgroundColor": "#000",
+      "textColor": "#fff",
+      "rounded": "999px",
+      "shadow": "0 2px 8px 0 rgba(50,60,69,.2)"
+    },
+    {
+      "key": "button-solid-round-3",
+      "kind": "button",
+      "backgroundColor": "#0089e3",
+      "textColor": "#fff",
+      "rounded": "5px",
+      "padding": "0 12px",
+      "shadow": "0 2px 8px 0 rgba(50,60,69,.2)"
+    },
+    {
+      "key": "input-white",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "rounded": "20px",
+      "border": "2px solid #fff"
+    },
+    {
+      "key": "label-black",
+      "kind": "label",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "label-white",
+      "kind": "label",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "button-solid",
+      "kind": "button",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "label-red-60",
+      "kind": "label",
+      "backgroundColor": "#cf1d00"
+    },
+    {
+      "key": "avatar-icon",
+      "kind": "avatar",
+      "backgroundColor": "#687b8c"
+    },
+    {
+      "key": "card-blue-40",
+      "kind": "card",
+      "backgroundColor": "#4fb3f6"
+    },
+    {
+      "key": "card-blue-30",
+      "kind": "card",
+      "backgroundColor": "#b9e2fe"
+    },
+    {
+      "key": "card-blue-20",
+      "kind": "card",
+      "backgroundColor": "#d9f0ff"
+    },
+    {
+      "key": "dialog-open-dark",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,.7)"
+    },
+    {
+      "key": "dialog-open-light",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,.3)"
+    },
+    {
+      "key": "dialog-appearance-dialog",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "24px 24px 0 0",
+      "shadow": "0 8px 32px 0 rgba(50,60,69,.2)"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1877f2",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1877f2",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ebf2f7",
+      "textColor": "#000000",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ebf2f7",
+      "textColor": "#000000",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#000000",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 24,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**Pencil** is a light-first design system anchored on `#ffffff` canvas surfaces with `#000000` primary ink (21.0:1 contrast) and `#1877f2` brand accent.\n\nTypography centers cleanly on `Figtree` (32px display down to 16px body), unified by `20px` base corner radius and subtle shadow elevation.\n\nMaintained by **Brainly**. Source: published token package, package `brainly-style-guide`. Inventory: **91** colors, **6** typography steps, and **37** documented components (GPL-3.0-only license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 37 component tokens with documented paddings: `0 16px`, `0 20px`, `6px 16px`, `0`, `0 36px 0 16px`.\n- **Hierarchy**: Group controls cleanly within `#ebf2f7` cards; separate sibling sections using `#dbe4ea` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 8px 32px 0 rgba(50,60,69,.2)`, `0 2px 8px 0 rgba(50,60,69,.2)`) paired with `#dbe4ea` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1877f2` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#000000` primary text and `#014a82` secondary labels.\n- Use `#1877f2` with `#f7f7f8` text (4.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Figtree` headings with `Figtree` body copy using documented weights and scale steps.\n- Apply `20px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ebf2f7` surface shifts and `#dbe4ea` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `20px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

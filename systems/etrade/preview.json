@@ -1,0 +1,618 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#1773b0",
+  "border": "#e2e2e2",
+  "radius": "0px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-text-default",
+      "value": "#242424"
+    },
+    {
+      "name": "color-text-muted",
+      "value": "#666666"
+    },
+    {
+      "name": "color-text-positive",
+      "value": "#107a1b"
+    },
+    {
+      "name": "color-text-negative",
+      "value": "#cc0000"
+    },
+    {
+      "name": "color-text-reverse",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-border-container",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "color-border-divider",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "color-border-form",
+      "value": "#666666"
+    },
+    {
+      "name": "color-background-code",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-background-navigation",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-background-container",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-background-skeleton",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "color-background-status-negative",
+      "value": "#fdf7f7"
+    },
+    {
+      "name": "color-background-status-info",
+      "value": "#f8fbfd"
+    },
+    {
+      "name": "color-background-status-warning",
+      "value": "#fbf8f1"
+    },
+    {
+      "name": "color-interactive-primary-default",
+      "value": "#1773b0"
+    },
+    {
+      "name": "color-interactive-primary-hover",
+      "value": "#005c90"
+    },
+    {
+      "name": "color-interactive-primary-active",
+      "value": "#002451"
+    },
+    {
+      "name": "color-interactive-primary-focus",
+      "value": "#1773b0"
+    },
+    {
+      "name": "color-interactive-primary-disabled",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "color-interactive-secondary-default",
+      "value": "#242424"
+    },
+    {
+      "name": "color-interactive-secondary-hover",
+      "value": "#505050"
+    },
+    {
+      "name": "color-interactive-secondary-active",
+      "value": "#666666"
+    },
+    {
+      "name": "color-interactive-secondary-focus",
+      "value": "#1773b0"
+    },
+    {
+      "name": "color-interactive-secondary-disabled",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "color-status-info",
+      "value": "#1773b0"
+    },
+    {
+      "name": "color-status-warning",
+      "value": "#bb831b"
+    },
+    {
+      "name": "campfire-docs-light-color-text-default",
+      "value": "#242424"
+    },
+    {
+      "name": "campfire-docs-light-color-text-muted",
+      "value": "#666666"
+    },
+    {
+      "name": "campfire-docs-light-color-text-positive",
+      "value": "#107a1b"
+    },
+    {
+      "name": "campfire-docs-light-color-text-negative",
+      "value": "#cc0000"
+    },
+    {
+      "name": "campfire-docs-light-color-text-reverse",
+      "value": "#ffffff"
+    },
+    {
+      "name": "campfire-docs-light-color-border-container",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "campfire-docs-light-color-border-divider",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "campfire-docs-light-color-border-form",
+      "value": "#666666"
+    },
+    {
+      "name": "campfire-docs-light-color-background-code",
+      "value": "#fafafa"
+    },
+    {
+      "name": "campfire-docs-light-color-background-navigation",
+      "value": "#fafafa"
+    },
+    {
+      "name": "campfire-docs-light-color-background-container",
+      "value": "#ffffff"
+    },
+    {
+      "name": "campfire-docs-light-color-background-skeleton",
+      "value": "#e2e2e2"
+    },
+    {
+      "name": "campfire-docs-light-color-background-status-negative",
+      "value": "#fdf7f7"
+    },
+    {
+      "name": "campfire-docs-light-color-background-status-info",
+      "value": "#f8fbfd"
+    },
+    {
+      "name": "campfire-docs-light-color-background-status-warning",
+      "value": "#fbf8f1"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-primary-defaul",
+      "value": "#1773b0"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-primary-hover",
+      "value": "#005c90"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-primary-active",
+      "value": "#002451"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-primary-focus",
+      "value": "#1773b0"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-primary-disabl",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-secondary-defa",
+      "value": "#242424"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-secondary-hove",
+      "value": "#505050"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-secondary-acti",
+      "value": "#666666"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-secondary-focu",
+      "value": "#1773b0"
+    },
+    {
+      "name": "campfire-docs-light-color-interactive-secondary-disa",
+      "value": "#bdbdbd"
+    },
+    {
+      "name": "campfire-docs-light-color-status-info",
+      "value": "#1773b0"
+    },
+    {
+      "name": "campfire-docs-light-color-status-warning",
+      "value": "#bb831b"
+    },
+    {
+      "name": "campfire-docs-dark-color-text-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "campfire-docs-dark-color-text-muted",
+      "value": "#c5c5c5"
+    },
+    {
+      "name": "campfire-docs-dark-color-text-positive",
+      "value": "#23e1a7"
+    },
+    {
+      "name": "campfire-docs-dark-color-text-negative",
+      "value": "#ff623e"
+    },
+    {
+      "name": "campfire-docs-dark-color-text-reverse",
+      "value": "#18222d"
+    },
+    {
+      "name": "campfire-docs-dark-color-border-container",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "campfire-docs-dark-color-border-divider",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "campfire-docs-dark-color-border-form",
+      "value": "#7c7c7c"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-code",
+      "value": "#262e3b"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-navigation",
+      "value": "#262e3b"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-container",
+      "value": "#18222d"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-skeleton",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-status-negative",
+      "value": "#24252e"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-status-info",
+      "value": "#1a2836"
+    },
+    {
+      "name": "campfire-docs-dark-color-background-status-warning",
+      "value": "#262c2e"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-primary-default",
+      "value": "#389dde"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-primary-hover",
+      "value": "#62b1e5"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-primary-active",
+      "value": "#89c4eb"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-primary-focus",
+      "value": "#389dde"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-primary-disable",
+      "value": "#c5c5c5"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-secondary-defau",
+      "value": "#ffffff"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-secondary-hover",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-secondary-activ",
+      "value": "#cccccc"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-secondary-focus",
+      "value": "#389dde"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-secondary-disab",
+      "value": "#5d646c"
+    },
+    {
+      "name": "campfire-docs-dark-color-status-info",
+      "value": "#389dde"
+    },
+    {
+      "name": "campfire-docs-dark-color-status-warning",
+      "value": "#ffc53a"
+    },
+    {
+      "name": "color-interactive-navigation-hover",
+      "value": "#e9f2f9"
+    },
+    {
+      "name": "color-status-positive",
+      "value": "#107a1b"
+    },
+    {
+      "name": "color-code-two",
+      "value": "#0c7583"
+    },
+    {
+      "name": "color-code-four",
+      "value": "#d60012"
+    },
+    {
+      "name": "campfire-docs-light-color-status-negative",
+      "value": "#cc0000"
+    },
+    {
+      "name": "campfire-docs-light-color-code-one",
+      "value": "#946800"
+    },
+    {
+      "name": "campfire-docs-light-color-code-three",
+      "value": "#a62ae5"
+    },
+    {
+      "name": "campfire-docs-dark-color-interactive-navigation-hove",
+      "value": "#434b58"
+    },
+    {
+      "name": "campfire-docs-dark-color-status-positive",
+      "value": "#23e1a7"
+    },
+    {
+      "name": "primary",
+      "value": "#1773b0"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "30px",
+      "px": 30,
+      "fontWeight": 400,
+      "lineHeight": "40px"
+    },
+    {
+      "name": "h6",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": "26px"
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": "26px"
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.3333
+    },
+    {
+      "name": "html",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "body",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": ".875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": ".875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.5
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#666",
+      "rounded": "999px",
+      "padding": "10px",
+      "border": "1px solid #e9e9e9"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "padding": "30px"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#242424"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "textColor": "#666",
+      "rounded": "2px",
+      "padding": "2px 3px",
+      "border": "1px solid #666"
+    },
+    {
+      "key": "icon",
+      "kind": "icon",
+      "textColor": "#242424"
+    },
+    {
+      "key": "popover",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "textColor": "#242424",
+      "rounded": "0",
+      "padding": "1px",
+      "border": "1px solid #e9e9e9",
+      "shadow": "0 1px 7px 0 rgba(0,0,0,.13)"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "textColor": "#5627d8",
+      "rounded": "0",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#e9e9e9"
+    },
+    {
+      "key": "btn-chat",
+      "kind": "button",
+      "backgroundColor": "#241056",
+      "rounded": "50%",
+      "padding": "0",
+      "border": "1px solid #241056"
+    },
+    {
+      "key": "btn-primary-2",
+      "kind": "button",
+      "backgroundColor": "#5627d8",
+      "textColor": "#fff",
+      "border": "1px solid #5627d8"
+    },
+    {
+      "key": "icon-2",
+      "kind": "icon",
+      "backgroundColor": "#5627d8",
+      "rounded": "30px"
+    },
+    {
+      "key": "modal-content-2",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "0",
+      "padding": "30px 25px",
+      "border": "1px solid #e9e9e9"
+    },
+    {
+      "key": "popover-title-3",
+      "kind": "modal",
+      "backgroundColor": "#f7f7f7",
+      "rounded": "5px 5px 0 0",
+      "padding": "8px 14px"
+    },
+    {
+      "key": "input-group-addon",
+      "kind": "input",
+      "backgroundColor": "#eee",
+      "textColor": "#242424",
+      "rounded": "0",
+      "padding": "6px 12px",
+      "border": "1px solid #e4e4e4"
+    },
+    {
+      "key": "toggle",
+      "kind": "switch",
+      "backgroundColor": "#fff",
+      "padding": "0 30px 0 10px"
+    },
+    {
+      "key": "btn-primary-outline-3",
+      "kind": "button",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "textColor": "#5627d8",
+      "border": "1px solid #5627d8"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1773b0",
+      "textColor": "#f7f7f8",
+      "rounded": "0px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "0px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "0px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "square",
+    "strokeLinejoin": "miter",
+    "source": "derived"
+  },
+  "overview": "**E-Trade Design Language** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#1773b0` brand accent.\n\nTypography centers cleanly on `Inter` (30px display down to 14px body), unified by `0px` razor-sharp architectural corners and subtle shadow elevation.\n\nMaintained by **E-Trade**. Source: live stylesheet extraction (http://etrade.design/). Inventory: **91** colors, **8** typography steps, and **22** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 22 component tokens with documented paddings: `10px`, `30px`, `2px 3px`, `1px`, `0`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#e2e2e2` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 1px 7px 0 rgba(0,0,0,.13)`) paired with `#e2e2e2` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1773b0` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#1773b0` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.\n- Enforce `0px` border-radius consistently across cards, inputs, and primary buttons.\n- Separate containers via `#ffffff` surface shifts and `#e2e2e2` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not apply rounded corners (> 0px) to structural containers or CTA buttons.\n- Do not truncate or drop border contrast on `input-group-addon` fields and secondary buttons."
+}

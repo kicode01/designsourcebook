@@ -1,0 +1,371 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f4f4f4",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ffa0e5",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-cherry",
+      "value": "#e00000"
+    },
+    {
+      "name": "color-ruby",
+      "value": "#a51323"
+    },
+    {
+      "name": "color-blood",
+      "value": "#7c0b18"
+    },
+    {
+      "name": "color-sea-glass",
+      "value": "#7fffd4"
+    },
+    {
+      "name": "color-grass",
+      "value": "#42dc42"
+    },
+    {
+      "name": "color-cornflower",
+      "value": "#4083ae"
+    },
+    {
+      "name": "color-navy",
+      "value": "#0a3055"
+    },
+    {
+      "name": "color-ballet-slipper",
+      "value": "#ffa0e5"
+    },
+    {
+      "name": "color-eggplant",
+      "value": "#550055"
+    },
+    {
+      "name": "color-black",
+      "value": "#000000"
+    },
+    {
+      "name": "color-charcoal",
+      "value": "#222222"
+    },
+    {
+      "name": "color-midnight",
+      "value": "#464646"
+    },
+    {
+      "name": "color-manatee",
+      "value": "#888b8d"
+    },
+    {
+      "name": "color-silver",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "color-alto",
+      "value": "#dddddd"
+    },
+    {
+      "name": "color-gallery",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "color-alabaster",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "notification-color-success",
+      "value": "#218003"
+    },
+    {
+      "name": "tip-color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "tip-color-black",
+      "value": "#000"
+    },
+    {
+      "name": "tip-color-gray",
+      "value": "#666"
+    },
+    {
+      "name": "border-top-color",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "primary",
+      "value": "#ffa0e5"
+    }
+  ],
+  "type": [
+    {
+      "name": "directory-group-title",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "2.2rem",
+      "px": 35.2,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "cards-title",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "kss-title",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 100
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "cards-bio-list-title",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4
+    },
+    {
+      "name": "kss-doc-title",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "cards-item-title",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "1.2rem",
+      "px": 19.2,
+      "lineHeight": 1
+    },
+    {
+      "name": "atblock-title-trigger",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "px-video-captions",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "1.1em",
+      "px": 17.6
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "0.85rem",
+      "px": 13.6
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Open Sans\", Arial, sans-serif",
+      "fontSize": "0.65rem",
+      "px": 10.4
+    }
+  ],
+  "components": [
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#f4f4f4",
+      "rounded": "4px",
+      "padding": "0"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#e00000",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "0.8rem 1rem",
+      "border": "3px solid #e00000",
+      "shadow": "0 0 2px rgba(0, 0, 0, 0.5)"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "padding": "1rem 1.5rem"
+    },
+    {
+      "key": "icon",
+      "kind": "icon",
+      "backgroundColor": "#e00000",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "0.8rem 1rem",
+      "border": "3px solid #e00000",
+      "shadow": "0 0 2px rgba(0, 0, 0, 0.5)"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "rgba(0, 0, 0, 0.65)",
+      "rounded": "0 0 4px 4px",
+      "padding": "2rem"
+    },
+    {
+      "key": "button-hover-2",
+      "kind": "button",
+      "backgroundColor": "#a51323",
+      "border": "3px solid #a51323"
+    },
+    {
+      "key": "button-focus-3",
+      "kind": "button",
+      "backgroundColor": "#7c0b18",
+      "border": "3px solid #7c0b18"
+    },
+    {
+      "key": "kss-skip-link",
+      "kind": "link",
+      "backgroundColor": "#e00000",
+      "textColor": "#ffffff",
+      "padding": "0.8rem",
+      "border": "3px solid #a51323"
+    },
+    {
+      "key": "button-active-4",
+      "kind": "button",
+      "backgroundColor": "#7c0b18",
+      "border": "3px solid #7c0b18"
+    },
+    {
+      "key": "pagination-2",
+      "kind": "nav",
+      "backgroundColor": "#f7f7f7",
+      "border": "1px solid #bbbbbb"
+    },
+    {
+      "key": "pagination-3",
+      "kind": "nav",
+      "textColor": "#464646",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "accordion",
+      "kind": "accordion",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#222222",
+      "padding": "10px 40px 10px 16px",
+      "border": "1px solid #bbbbbb"
+    },
+    {
+      "key": "pagination",
+      "kind": "nav",
+      "backgroundColor": "#f7f7f7",
+      "border": "1px solid #bbbbbb"
+    },
+    {
+      "key": "pagination-is-active",
+      "kind": "nav",
+      "backgroundColor": "#e00000",
+      "textColor": "#ffffff"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ffa0e5",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ffa0e5",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f4f4f4",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**A11Y Style Guide** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ffa0e5` brand accent.\n\nTypography centers cleanly on `Open Sans` (35px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **A11Y**. Source: published token package (https://github.com/cehfisher/a11y-style-guide), repo https://github.com/cehfisher/a11y-style-guide. Inventory: **24** colors, **15** typography steps, and **21** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 21 component tokens with documented paddings: `0`, `0.8rem 1rem`, `1rem 1.5rem`, `2rem`, `0.8rem`.\n- **Hierarchy**: Group controls cleanly within `#f4f4f4` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 2px rgba(0, 0, 0, 0.5)`, `0 0 2px rgba(0, 0, 0, 0.5)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ffa0e5` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ffa0e5` with `#0b0b0c` text (10.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#f4f4f4` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

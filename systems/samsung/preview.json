@@ -1,0 +1,805 @@
+{
+  "canvas": "#fff",
+  "surface": "#f8f9fa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#007bff",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0.25rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "blue",
+      "value": "#00B3E3"
+    },
+    {
+      "name": "indigo",
+      "value": "#6610f2"
+    },
+    {
+      "name": "purple",
+      "value": "#6f42c1"
+    },
+    {
+      "name": "pink",
+      "value": "#e83e8c"
+    },
+    {
+      "name": "red",
+      "value": "#dc3545"
+    },
+    {
+      "name": "orange",
+      "value": "#fd7e14"
+    },
+    {
+      "name": "yellow",
+      "value": "#ffc107"
+    },
+    {
+      "name": "green",
+      "value": "#28a745"
+    },
+    {
+      "name": "teal",
+      "value": "#20c997"
+    },
+    {
+      "name": "cyan",
+      "value": "#17a2b8"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "gray",
+      "value": "#6c757d"
+    },
+    {
+      "name": "gray-dark",
+      "value": "#343a40"
+    },
+    {
+      "name": "primary",
+      "value": "#007bff"
+    },
+    {
+      "name": "secondary",
+      "value": "#6c757d"
+    },
+    {
+      "name": "success",
+      "value": "#28a745"
+    },
+    {
+      "name": "info",
+      "value": "#17a2b8"
+    },
+    {
+      "name": "warning",
+      "value": "#ffc107"
+    },
+    {
+      "name": "danger",
+      "value": "#dc3545"
+    },
+    {
+      "name": "light",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "dark",
+      "value": "#343a40"
+    },
+    {
+      "name": "swiper-theme-color",
+      "value": "#007aff"
+    },
+    {
+      "name": "swiper-preloader-color",
+      "value": "#fff"
+    },
+    {
+      "name": "alert-color",
+      "value": "#4a8ff0"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-1",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "6rem",
+      "px": 96,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-2",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "5.5rem",
+      "px": 88,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-3",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "display-4",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56,
+      "fontWeight": 300,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "fontWeight": 700
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22,
+      "fontWeight": 700
+    },
+    {
+      "name": "lead",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 300
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 700
+    },
+    {
+      "name": "list-to-image-panel-title",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 700
+    },
+    {
+      "name": "font-family-sans-serif",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "\"Space Mono\", SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16,
+      "lineHeight": 1.15
+    },
+    {
+      "name": "body",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "cookie-banner-title",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "base-section-title",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Samsung SS Head\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "figure-caption",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "expandable-codeblock-modal-title",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": ".8125rem",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "expandable-table-title",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": ".8125rem",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "expandable-table-modal-title",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": ".8125rem",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "list-to-image-panel-header-title",
+      "fontFamily": "\"Samsung SS Body\", sans-serif",
+      "fontSize": ".8125rem",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#363636",
+      "rounded": "0",
+      "padding": ".5rem"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#50b0de",
+      "rounded": "0",
+      "padding": "0"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": ".875rem",
+      "padding": "1.4375rem"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#2088fd"
+    },
+    {
+      "key": "btn-black-2",
+      "kind": "button",
+      "textColor": "#000"
+    },
+    {
+      "key": "btn-white-3",
+      "kind": "button",
+      "textColor": "#fff"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": ".875rem",
+      "padding": "1.4375rem"
+    },
+    {
+      "key": "card-3",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": ".875rem",
+      "padding": "1.4375rem"
+    },
+    {
+      "key": "panel",
+      "kind": "panel",
+      "backgroundColor": "#fff",
+      "rounded": "36px",
+      "padding": "100px 120px"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "rgba(15,66,207,.05)",
+      "textColor": "#0f42cf",
+      "rounded": "16px",
+      "padding": "0 16px"
+    },
+    {
+      "key": "panel-2",
+      "kind": "panel",
+      "backgroundColor": "#7c7ed2",
+      "padding": "60px 0"
+    },
+    {
+      "key": "btn-indigo-4",
+      "kind": "button",
+      "textColor": "#1e1e1e"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,.6)",
+      "padding": "0 20px"
+    },
+    {
+      "key": "card-4",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "padding": "0 0 1rem"
+    },
+    {
+      "key": "panel-3",
+      "kind": "panel",
+      "backgroundColor": "rgba(32,136,253,.08)",
+      "rounded": "8px",
+      "padding": "16px"
+    },
+    {
+      "key": "notice",
+      "kind": "alert",
+      "backgroundColor": "rgba(32,136,253,.08)",
+      "rounded": "8px",
+      "padding": "16px"
+    },
+    {
+      "key": "tab-v3",
+      "kind": "tabs",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "tooltip-inner",
+      "kind": "tooltip",
+      "backgroundColor": "#363636",
+      "textColor": "#fff",
+      "rounded": "0",
+      "padding": ".5rem 1rem",
+      "border": "none"
+    },
+    {
+      "key": "alert-2",
+      "kind": "alert",
+      "textColor": "#ff4337"
+    },
+    {
+      "key": "link-text-blue-2",
+      "kind": "link",
+      "textColor": "#0f42cf"
+    },
+    {
+      "key": "base-hero-banner-3",
+      "kind": "alert",
+      "backgroundColor": "#e2e2e2"
+    },
+    {
+      "key": "link-footer-3",
+      "kind": "link",
+      "textColor": "#9e9e9e"
+    },
+    {
+      "key": "tab-v3-link-2",
+      "kind": "tabs",
+      "textColor": "#bdbdbd",
+      "padding": "1rem",
+      "border": "none"
+    },
+    {
+      "key": "blog-category-tag-3",
+      "kind": "badge",
+      "backgroundColor": "rgba(15,66,207,.1)",
+      "textColor": "#0f42cf",
+      "padding": "0 .25rem"
+    },
+    {
+      "key": "icon-box-card-item",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "rounded": ".5rem",
+      "padding": "1rem 2rem 1.5rem",
+      "border": "1px solid #dcdeee"
+    },
+    {
+      "key": "custom-control-label",
+      "kind": "label",
+      "backgroundColor": "#fff",
+      "textColor": "#9e9e9e",
+      "rounded": "5px",
+      "padding": ".4375rem 1.25rem",
+      "border": "1px solid #d6d6d6"
+    },
+    {
+      "key": "table-v2-title",
+      "kind": "table",
+      "textColor": "#000"
+    },
+    {
+      "key": "tab-v3-dropdown-btn-3",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "rounded": ".5rem",
+      "padding": "1rem",
+      "border": "1px solid #dcdeee"
+    },
+    {
+      "key": "accordion-list-v3-search-box",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "rounded": "1rem",
+      "padding": "1.125rem 1.5rem",
+      "border": "1px solid #dcdeee"
+    },
+    {
+      "key": "accordion-list-v3-filter-chip-2",
+      "kind": "badge",
+      "textColor": "#bdbdbd",
+      "rounded": "999px",
+      "padding": ".75rem 1rem",
+      "border": "1px solid #bdbdbd"
+    },
+    {
+      "key": "accordion-list-v3-search-icon-3",
+      "kind": "input",
+      "textColor": "#000"
+    },
+    {
+      "key": "sdp-multi-desc-image-caption-badge-4",
+      "kind": "badge",
+      "backgroundColor": "#052832",
+      "textColor": "#fff",
+      "rounded": "99px"
+    },
+    {
+      "key": "sdp-expandable-video-modal-content-2",
+      "kind": "modal",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "sdp-expandable-image-modal-container-3",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "24px",
+      "padding": "16px",
+      "shadow": "0 10px 40px rgba(5,40,50,.1)"
+    },
+    {
+      "key": "sdp-dodont-text-icon-do",
+      "kind": "icon",
+      "backgroundColor": "rgba(0,211,116,.05)"
+    },
+    {
+      "key": "sdp-dodont-text-icon-dont",
+      "kind": "icon",
+      "backgroundColor": "rgba(255,111,0,.05)"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "#052832"
+    },
+    {
+      "key": "table-2",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "padding": ".5rem"
+    },
+    {
+      "key": "list-to-image-panel",
+      "kind": "panel",
+      "textColor": "#052832",
+      "rounded": ".5rem",
+      "padding": ".75rem .9375rem .75rem 1.875rem"
+    },
+    {
+      "key": "list-to-image-panel-2",
+      "kind": "panel",
+      "textColor": "#052832",
+      "padding": ".5rem .9375rem .5rem .625rem"
+    },
+    {
+      "key": "list-to-image-panel-3",
+      "kind": "panel",
+      "backgroundColor": "#fff",
+      "padding": ".5rem"
+    },
+    {
+      "key": "table-3",
+      "kind": "table",
+      "textColor": "#052832",
+      "rounded": ".5rem",
+      "padding": "0 .75rem",
+      "border": "2px solid rgba(5,40,80,.1)"
+    },
+    {
+      "key": "expandable-codeblock-expand-btn",
+      "kind": "button",
+      "textColor": "#052832",
+      "rounded": ".5rem",
+      "padding": "0 .75rem",
+      "border": "2px solid rgba(5,40,80,.1)"
+    },
+    {
+      "key": "expandable-codeblock-modal",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "12px",
+      "border": "1px solid rgba(5,40,80,.1)"
+    },
+    {
+      "key": "expandable-codeblock-modal-2",
+      "kind": "modal",
+      "textColor": "#052832"
+    },
+    {
+      "key": "expandable-codeblock-modal-3",
+      "kind": "modal",
+      "backgroundColor": "rgba(242,244,246,.8)"
+    },
+    {
+      "key": "toast",
+      "kind": "alert",
+      "backgroundColor": "rgba(255, 255, 255, 0.85)",
+      "rounded": "0.25rem",
+      "border": "1px solid rgba(0, 0, 0, 0.1)",
+      "shadow": "0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "key": "popover",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "0.3rem",
+      "border": "1px solid rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "btn-info-2",
+      "kind": "button",
+      "backgroundColor": "#17a2b8",
+      "textColor": "#fff",
+      "border": "1px solid #17a2b8"
+    },
+    {
+      "key": "btn-dark-3",
+      "kind": "button",
+      "backgroundColor": "#343a40",
+      "textColor": "#fff",
+      "border": "1px solid #343a40"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#e9ecef",
+      "rounded": "0.25rem"
+    },
+    {
+      "key": "btn-light-4",
+      "kind": "button",
+      "backgroundColor": "#f8f9fa",
+      "textColor": "#212529",
+      "border": "1px solid #f8f9fa"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "backgroundColor": "#fff",
+      "textColor": "#007bff",
+      "padding": "0.5rem 0.75rem",
+      "border": "1px solid #dee2e6"
+    },
+    {
+      "key": "table-info-2",
+      "kind": "table",
+      "backgroundColor": "#bee5eb"
+    },
+    {
+      "key": "table-dark-3",
+      "kind": "table",
+      "backgroundColor": "#c6c8ca",
+      "textColor": "#fff"
+    },
+    {
+      "key": "breadcrumb",
+      "kind": "nav",
+      "backgroundColor": "#e9ecef",
+      "rounded": "0.25rem",
+      "padding": "0.75rem 1rem"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "#17a2b8",
+      "textColor": "#fff"
+    },
+    {
+      "key": "badge-dark-2",
+      "kind": "badge",
+      "backgroundColor": "#343a40",
+      "textColor": "#fff"
+    },
+    {
+      "key": "alert-info-2",
+      "kind": "alert",
+      "backgroundColor": "#d1ecf1",
+      "textColor": "#0c5460",
+      "border": "1px solid #bee5eb"
+    },
+    {
+      "key": "alert-dark-3",
+      "kind": "alert",
+      "backgroundColor": "#d6d8d9",
+      "textColor": "#1b1e21",
+      "border": "1px solid #c6c8ca"
+    },
+    {
+      "key": "card-header-2",
+      "kind": "card",
+      "backgroundColor": "rgba(0, 0, 0, 0.03)",
+      "padding": "0.75rem 1.25rem"
+    },
+    {
+      "key": "card-footer-3",
+      "kind": "card",
+      "backgroundColor": "rgba(0, 0, 0, 0.03)",
+      "padding": "0.75rem 1.25rem"
+    },
+    {
+      "key": "badge-light-3",
+      "kind": "badge",
+      "backgroundColor": "#f8f9fa",
+      "textColor": "#212529"
+    },
+    {
+      "key": "badge-danger-4",
+      "kind": "badge",
+      "backgroundColor": "#dc3545",
+      "textColor": "#fff"
+    },
+    {
+      "key": "progress-bar-2",
+      "kind": "progress",
+      "backgroundColor": "#007bff",
+      "textColor": "#fff"
+    },
+    {
+      "key": "popover-body-2",
+      "kind": "modal",
+      "textColor": "#212529",
+      "padding": "0.5rem 0.75rem"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "rgba(40, 167, 69, 0.9)",
+      "textColor": "#fff",
+      "rounded": "0.25rem",
+      "padding": "0.25rem 0.5rem"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#495057",
+      "rounded": "0.25rem",
+      "padding": "0.375rem 1.75rem 0.375rem 0.75rem",
+      "border": "1px solid #ced4da"
+    },
+    {
+      "key": "modal-content-3",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "0.3rem",
+      "border": "1px solid rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "tooltip-inner-2",
+      "kind": "tooltip",
+      "backgroundColor": "#000",
+      "textColor": "#fff",
+      "rounded": "0.25rem",
+      "padding": "0.25rem 0.5rem"
+    },
+    {
+      "key": "tooltip-3",
+      "kind": "tooltip",
+      "backgroundColor": "rgba(220, 53, 69, 0.9)",
+      "textColor": "#fff",
+      "rounded": "0.25rem",
+      "padding": "0.25rem 0.5rem"
+    },
+    {
+      "key": "input-group-text",
+      "kind": "input",
+      "backgroundColor": "#e9ecef",
+      "textColor": "#495057",
+      "rounded": "0.25rem",
+      "padding": "0.375rem 0.75rem",
+      "border": "1px solid #ced4da"
+    },
+    {
+      "key": "custom-file-label",
+      "kind": "label",
+      "backgroundColor": "#fff",
+      "textColor": "#495057",
+      "rounded": "0.25rem",
+      "padding": "0.375rem 0.75rem",
+      "border": "1px solid #ced4da"
+    },
+    {
+      "key": "pagination-bullet-2",
+      "kind": "nav",
+      "backgroundColor": "#000",
+      "rounded": "50%"
+    },
+    {
+      "key": "pagination-progressbar-3",
+      "kind": "progress",
+      "backgroundColor": "rgba(0,0,0,.25)"
+    },
+    {
+      "key": "banner",
+      "kind": "alert",
+      "backgroundColor": "#fbfbfb",
+      "padding": "52px 24px 36px",
+      "shadow": "0 4px 16px 0 rgba(0,0,0,.12)"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#007bff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#007bff",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**One UI** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#007bff` brand accent.\n\nDisplay headlines pair `Samsung SS Head` with `System UI` body copy (96px display down to 16px body), unified by `0.25rem` base corner radius and subtle shadow elevation.\n\nMaintained by **Samsung**. Source: live stylesheet extraction (https://developer.samsung.com/one-ui). Inventory: **24** colors, **23** typography steps, and **78** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 78 component tokens with documented paddings: `.5rem`, `0`, `1.4375rem`, `100px 120px`, `0 16px`.\n- **Hierarchy**: Group controls cleanly within `#f8f9fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 10px 40px rgba(5,40,50,.1)`, `0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#007bff` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#007bff` with `#f7f7f8` text (3.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Samsung SS Head` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `0.25rem` base geometry across inputs and buttons (.875rem on outer containers).\n- Separate containers via `#f8f9fa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.25rem` baseline.\n- Do not truncate or drop border contrast on `accordion-list-v3-search-box` fields and secondary buttons."
+}

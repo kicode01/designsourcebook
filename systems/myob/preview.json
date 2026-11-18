@@ -1,0 +1,673 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0969da",
+  "border": "#d1d9e0",
+  "radius": "6px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "bg-color-success-emphasis",
+      "value": "#1f883d"
+    },
+    {
+      "name": "button-primary-bg-color-disabled",
+      "value": "#95d8a6"
+    },
+    {
+      "name": "button-counter-danger-fg-color-rest",
+      "value": "#c21c2c"
+    },
+    {
+      "name": "bg-color-accent-emphasis",
+      "value": "#0969da"
+    },
+    {
+      "name": "bg-color-danger-emphasis",
+      "value": "#cf222e"
+    },
+    {
+      "name": "bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "bg-color-success-muted",
+      "value": "#dafbe1"
+    },
+    {
+      "name": "border-color-attention-emphasis",
+      "value": "#9a6700"
+    },
+    {
+      "name": "border-color-default",
+      "value": "#d1d9e0"
+    },
+    {
+      "name": "border-color-emphasis",
+      "value": "#818b98"
+    },
+    {
+      "name": "border-color-severe-emphasis",
+      "value": "#bc4c00"
+    },
+    {
+      "name": "border-color-success-emphasis",
+      "value": "#1a7f37"
+    },
+    {
+      "name": "display-auburn-border-color-emphasis",
+      "value": "#9d615c"
+    },
+    {
+      "name": "display-blue-border-color-emphasis",
+      "value": "#006edb"
+    },
+    {
+      "name": "display-brown-border-color-emphasis",
+      "value": "#856d4c"
+    },
+    {
+      "name": "display-coral-border-color-emphasis",
+      "value": "#d43511"
+    },
+    {
+      "name": "display-cyan-border-color-emphasis",
+      "value": "#007b94"
+    },
+    {
+      "name": "display-gray-border-color-emphasis",
+      "value": "#647182"
+    },
+    {
+      "name": "display-green-border-color-emphasis",
+      "value": "#2c8141"
+    },
+    {
+      "name": "display-indigo-border-color-emphasis",
+      "value": "#5a61e7"
+    },
+    {
+      "name": "display-lemon-border-color-emphasis",
+      "value": "#866e04"
+    },
+    {
+      "name": "display-lime-border-color-emphasis",
+      "value": "#527a29"
+    },
+    {
+      "name": "display-olive-border-color-emphasis",
+      "value": "#64762d"
+    },
+    {
+      "name": "display-orange-border-color-emphasis",
+      "value": "#b8500f"
+    },
+    {
+      "name": "display-pine-border-color-emphasis",
+      "value": "#167e53"
+    },
+    {
+      "name": "display-pink-border-color-emphasis",
+      "value": "#ce2c85"
+    },
+    {
+      "name": "display-plum-border-color-emphasis",
+      "value": "#a830e8"
+    },
+    {
+      "name": "display-purple-border-color-emphasis",
+      "value": "#894ceb"
+    },
+    {
+      "name": "display-red-border-color-emphasis",
+      "value": "#df0c24"
+    },
+    {
+      "name": "display-teal-border-color-emphasis",
+      "value": "#127e81"
+    },
+    {
+      "name": "display-yellow-border-color-emphasis",
+      "value": "#946a00"
+    },
+    {
+      "name": "fg-color-accent",
+      "value": "#0969da"
+    },
+    {
+      "name": "fg-color-neutral",
+      "value": "#59636e"
+    },
+    {
+      "name": "header-border-color-divider",
+      "value": "#818b98"
+    },
+    {
+      "name": "highlight-neutral-bg-color",
+      "value": "#fff8c5"
+    },
+    {
+      "name": "prettylights-syntax-constant-other-reference-link",
+      "value": "#0a3069"
+    },
+    {
+      "name": "prettylights-syntax-markup-deleted-text",
+      "value": "#82071e"
+    },
+    {
+      "name": "prettylights-syntax-markup-inserted-text",
+      "value": "#116329"
+    },
+    {
+      "name": "button-danger-fg-color-active",
+      "value": "#fff"
+    },
+    {
+      "name": "button-danger-icon-color-hover",
+      "value": "#fff"
+    },
+    {
+      "name": "button-danger-fg-color-rest",
+      "value": "#fa5e55"
+    },
+    {
+      "name": "button-danger-bg-color-hover",
+      "value": "#b62324"
+    },
+    {
+      "name": "control-danger-fg-color-hover",
+      "value": "#ff7b72"
+    },
+    {
+      "name": "control-checked-border-color-active",
+      "value": "#033f9d"
+    },
+    {
+      "name": "button-danger-border-color-hover",
+      "value": "#6e011a"
+    },
+    {
+      "name": "button-primary-bg-color-rest",
+      "value": "#055d20"
+    },
+    {
+      "name": "progress-bar-bg-color-neutral",
+      "value": "#818b98"
+    },
+    {
+      "name": "control-checked-border-color-rest",
+      "value": "#91cbff"
+    },
+    {
+      "name": "color-marketing-icon-secondary",
+      "value": "#1f6feb"
+    },
+    {
+      "name": "control-knob-border-color-rest",
+      "value": "#d1d9e0"
+    },
+    {
+      "name": "control-transparent-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "button-default-border-color-rest",
+      "value": "#d1d9e0"
+    },
+    {
+      "name": "control-track-bg-color-disabled",
+      "value": "#818b98"
+    },
+    {
+      "name": "border-color-closed-emphasis",
+      "value": "#cf222e"
+    },
+    {
+      "name": "button-keybinding-hint-invisible-fg-color-disabled",
+      "value": "#818b98"
+    },
+    {
+      "name": "control-fg-color-disabled",
+      "value": "#818b98"
+    },
+    {
+      "name": "button-keybinding-hint-default-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "button-invisible-fg-color-disabled",
+      "value": "#818b98"
+    },
+    {
+      "name": "color-text-white",
+      "value": "#fff"
+    },
+    {
+      "name": "color-prettylights-syntax-carriage-return-text",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "fg-color-link",
+      "value": "#0969da"
+    },
+    {
+      "name": "button-primary-fg-color-rest",
+      "value": "#fff"
+    },
+    {
+      "name": "button-keybinding-hint-danger-fg-color-rest",
+      "value": "#59636e"
+    },
+    {
+      "name": "button-keybinding-hint-danger-fg-color-active",
+      "value": "#fff"
+    },
+    {
+      "name": "control-track-border-color-rest",
+      "value": "#d1d9e0"
+    },
+    {
+      "name": "control-border-color-danger",
+      "value": "#cf222e"
+    },
+    {
+      "name": "control-border-color-warning",
+      "value": "#9a6700"
+    },
+    {
+      "name": "control-border-color-success",
+      "value": "#1a7f37"
+    },
+    {
+      "name": "control-track-fg-color-disabled",
+      "value": "#fff"
+    },
+    {
+      "name": "control-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "control-knob-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "button-default-fg-color-disabled",
+      "value": "#818b98"
+    },
+    {
+      "name": "control-danger-fg-color-rest",
+      "value": "#d1242f"
+    },
+    {
+      "name": "button-outline-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "button-danger-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "control-checked-bg-color-disabled",
+      "value": "#818b98"
+    },
+    {
+      "name": "border-color-open-emphasis",
+      "value": "#1a7f37"
+    },
+    {
+      "name": "button-keybinding-hint-danger-bg-color-disabled",
+      "value": "#eff2f5"
+    },
+    {
+      "name": "progress-bar-bg-color-accent",
+      "value": "#0969da"
+    },
+    {
+      "name": "ansi-cyan",
+      "value": "#1b7c83"
+    },
+    {
+      "name": "control-bg-color-active",
+      "value": "#e6eaef"
+    },
+    {
+      "name": "display-auburn-scale-9",
+      "value": "#432928"
+    },
+    {
+      "name": "display-gray-scale-3",
+      "value": "#9ba9bb"
+    },
+    {
+      "name": "display-olive-bg-color-emphasis",
+      "value": "#64762d"
+    },
+    {
+      "name": "display-plum-scale-4",
+      "value": "#c264f2"
+    },
+    {
+      "name": "fg-color-done",
+      "value": "#8250df"
+    },
+    {
+      "name": "label-lemon-fg-color-rest",
+      "value": "#786002"
+    },
+    {
+      "name": "label-yellow-fg-color-hover",
+      "value": "#704d00"
+    },
+    {
+      "name": "wonder-green-3",
+      "value": "#08872b"
+    },
+    {
+      "name": "color-prettylights-syntax-markup-bold",
+      "value": "#1f2328"
+    },
+    {
+      "name": "primary",
+      "value": "#0969da"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1.25em",
+      "px": 20
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1.25em",
+      "px": 20
+    },
+    {
+      "name": "font-stack-monospace",
+      "fontFamily": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-stack-sans-serif",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-sans-serif-display",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-stack-system",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body-font-size",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "select-menu-title",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".85em",
+      "px": 13.6
+    },
+    {
+      "name": "markdown-body",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "table-font-size",
+      "fontFamily": "\"Mona Sans VF\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Noto Sans Backtick Fix\", \"Noto Sans\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "fontSize": ".75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "link",
+      "kind": "link",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "btn-invisible",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "rounded": "6px",
+      "border": "0"
+    },
+    {
+      "key": "tab",
+      "kind": "tabs",
+      "backgroundColor": "#0000",
+      "border": "0"
+    },
+    {
+      "key": "btn-signup-mktg-2",
+      "kind": "button",
+      "textColor": "#fff"
+    },
+    {
+      "key": "Toast-dismissButton",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "border": "0"
+    },
+    {
+      "key": "Card-Card-pYjuL",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "border": ".0625rem solid #d1d9e0",
+      "shadow": "0 1px 1px 0 #1f23280a,0 1px 2px 0 #1f232808"
+    },
+    {
+      "key": "Dialog-Dialog-G8cDF",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": ".75rem",
+      "shadow": "0 0 0 1px #d1d9e080,0 6px 12px -3px #25292e0a,0 6px 18px 0 #25292e1f"
+    },
+    {
+      "key": "Card-CardIcon-mIMfj-2",
+      "kind": "icon",
+      "textColor": "#59636e"
+    },
+    {
+      "key": "Checkbox-Input-lWIkv",
+      "kind": "checkbox",
+      "backgroundColor": "#fff",
+      "border": "1px solid #818b98"
+    },
+    {
+      "key": "Pagination-Page-Etgqf",
+      "kind": "nav",
+      "backgroundColor": "#0000",
+      "textColor": "#1f2328",
+      "rounded": ".375rem"
+    },
+    {
+      "key": "Dialog-Backdrop-5Nt2U-2",
+      "kind": "modal",
+      "backgroundColor": "#c8d1da66"
+    },
+    {
+      "key": "Dialog-Subtitle-aBFSq-3",
+      "kind": "modal",
+      "textColor": "#59636e"
+    },
+    {
+      "key": "prc-DataTable-Table-7ux1n",
+      "kind": "table",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "prc-components-Input-IwWrt",
+      "kind": "input",
+      "backgroundColor": "#0000",
+      "border": "0"
+    },
+    {
+      "key": "prc-components-Label-2mrqP",
+      "kind": "label",
+      "textColor": "#1f2328"
+    },
+    {
+      "key": "Card-CardHeading-3HXyS-3",
+      "kind": "card",
+      "textColor": "#1f2328"
+    },
+    {
+      "key": "Button-ButtonBase-9n-Xk",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "textColor": "#25292e",
+      "rounded": ".375rem",
+      "padding": "0 .75rem",
+      "border": ".0625rem solid"
+    },
+    {
+      "key": "Textarea-TextArea-snlco-2",
+      "kind": "input",
+      "backgroundColor": "#0000",
+      "border": "0"
+    },
+    {
+      "key": "Card-CardDescription-MnJ3F-4",
+      "kind": "card",
+      "textColor": "#59636e"
+    },
+    {
+      "key": "prc-SegmentedControl-Button-E48xz-2",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "Textarea-CharacterCounter-qnOXd-3",
+      "kind": "input",
+      "textColor": "#59636e"
+    },
+    {
+      "key": "banner-icon",
+      "kind": "alert",
+      "textColor": "#fff"
+    },
+    {
+      "key": "Input",
+      "kind": "input",
+      "textColor": "#0000",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "switch-account-popover-row",
+      "kind": "switch",
+      "backgroundColor": "#0000",
+      "padding": "0"
+    },
+    {
+      "key": "social-reaction-summary-item",
+      "kind": "summary",
+      "backgroundColor": "#0000",
+      "rounded": "100px",
+      "padding": "0"
+    },
+    {
+      "key": "collapsible-sidebar-widget-button",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "progress-bar",
+      "kind": "progress",
+      "backgroundColor": "rgb(0, 118, 255)"
+    },
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#404040",
+      "textColor": "#eee"
+    },
+    {
+      "key": "sponsors-goal-progress-bar",
+      "kind": "progress",
+      "backgroundColor": "#ec6cb9"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Feelix** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0969da` brand accent.\n\nTypography centers cleanly on `Mona Sans VF` (32px display down to 14px body), unified by `6px` base corner radius and subtle shadow elevation.\n\nMaintained by **MYOB**. Source: live stylesheet extraction (http://feelix.myob.com/). Inventory: **91** colors, **16** typography steps, and **31** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 31 component tokens with documented paddings: `0`, `0 .75rem`, `8px 12px`, `6px 10px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#d1d9e0` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 1px 1px 0 #1f23280a,0 1px 2px 0 #1f232808`, `0 0 0 1px #d1d9e080,0 6px 12px -3px #25292e0a,0 6px 18px 0 #25292e1f`) paired with `#d1d9e0` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0969da` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0969da` with `#f7f7f8` text (4.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Mona Sans VF` headings with `Mona Sans VF` body copy using documented weights and scale steps.\n- Apply `6px` base geometry across inputs and buttons (6px on outer containers).\n- Separate containers via `#fff` surface shifts and `#d1d9e0` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `6px` baseline.\n- Do not truncate or drop border contrast on `prc-components-Input-IwWrt` fields and secondary buttons."
+}

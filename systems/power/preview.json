@@ -1,0 +1,474 @@
+{
+  "canvas": "#EDEDED",
+  "surface": "#EDEDED",
+  "text": "#242B42",
+  "muted": "#687887",
+  "brand": "#0082ff",
+  "border": "#ccc",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-action-dark",
+      "value": "#0082ff"
+    },
+    {
+      "name": "text-lt-light",
+      "value": "#687887"
+    },
+    {
+      "name": "text-dk-success-sm",
+      "value": "#00CA74"
+    },
+    {
+      "name": "product-2-background",
+      "value": "#6000AC"
+    },
+    {
+      "name": "product-4-background",
+      "value": "#007E8F"
+    },
+    {
+      "name": "product-6-background",
+      "value": "#008540"
+    },
+    {
+      "name": "product-8-background",
+      "value": "#144075"
+    },
+    {
+      "name": "product-10-background",
+      "value": "#20c997"
+    },
+    {
+      "name": "product-12-background",
+      "value": "#6F83AF"
+    },
+    {
+      "name": "text-light",
+      "value": "#4B546B"
+    },
+    {
+      "name": "text-success",
+      "value": "#158149"
+    },
+    {
+      "name": "text-link",
+      "value": "#0056CF"
+    },
+    {
+      "name": "text-default-dark",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "text-lighter-dark",
+      "value": "#8A879A"
+    },
+    {
+      "name": "text-error-dark",
+      "value": "#FF1A1A"
+    },
+    {
+      "name": "text-disabled-dark",
+      "value": "#656576"
+    },
+    {
+      "name": "input-text-active",
+      "value": "#242B42"
+    },
+    {
+      "name": "input-text-error",
+      "value": "#DA0014"
+    },
+    {
+      "name": "input-text-state-active",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "input-text-error-dark",
+      "value": "#FF1A1A"
+    },
+    {
+      "name": "input-background-state",
+      "value": "#FBFDFF"
+    },
+    {
+      "name": "input-background-default-dark",
+      "value": "#44405A"
+    },
+    {
+      "name": "input-background-disabled-dark",
+      "value": "#171333"
+    },
+    {
+      "name": "input-border-state",
+      "value": "#0056CF"
+    },
+    {
+      "name": "input-border-disabled",
+      "value": "#E4E8F0"
+    },
+    {
+      "name": "input-border-state-dark",
+      "value": "#0E89FF"
+    },
+    {
+      "name": "input-border-disabled-dark",
+      "value": "#6E6A84"
+    },
+    {
+      "name": "status-text-primary",
+      "value": "#0056CF"
+    },
+    {
+      "name": "status-text-error",
+      "value": "#BF0012"
+    },
+    {
+      "name": "status-text-info",
+      "value": "#16747E"
+    },
+    {
+      "name": "status-text-neutral-dark",
+      "value": "#93A8B8"
+    },
+    {
+      "name": "status-text-success-dark",
+      "value": "#00CA74"
+    },
+    {
+      "name": "status-text-warning-dark",
+      "value": "#F9BB00"
+    },
+    {
+      "name": "status-background-neutral",
+      "value": "#EDEDED"
+    },
+    {
+      "name": "status-background-success",
+      "value": "#E0F0E8"
+    },
+    {
+      "name": "status-background-warning",
+      "value": "#FBF5E3"
+    },
+    {
+      "name": "status-background-notification",
+      "value": "#0056CF"
+    },
+    {
+      "name": "status-background-neutral-hover",
+      "value": "#E3E3E3"
+    },
+    {
+      "name": "status-background-success-hover",
+      "value": "#CDEADB"
+    },
+    {
+      "name": "status-background-warning-hover",
+      "value": "#FAEDC7"
+    },
+    {
+      "name": "status-background-dark",
+      "value": "#231E3D"
+    },
+    {
+      "name": "status-background-notification-error-dark",
+      "value": "#FF4A50"
+    },
+    {
+      "name": "status-background-primary-hover-dark",
+      "value": "#0B2137"
+    },
+    {
+      "name": "status-background-error-hover-dark",
+      "value": "#2E1F1F"
+    },
+    {
+      "name": "status-background-info-hover-dark",
+      "value": "#212645"
+    },
+    {
+      "name": "status-icon-background-primary-hover",
+      "value": "#E5EEFA"
+    },
+    {
+      "name": "status-icon-background-error-hover",
+      "value": "#FBE5E7"
+    },
+    {
+      "name": "status-icon-background-info-hover",
+      "value": "#DEF8FC"
+    },
+    {
+      "name": "status-icon-background-primary-hover-dark",
+      "value": "#1B3956"
+    },
+    {
+      "name": "status-icon-background-error-hover-dark",
+      "value": "#522F2F"
+    },
+    {
+      "name": "status-icon-background-info-hover-dark",
+      "value": "#1A4662"
+    },
+    {
+      "name": "status-border-primary",
+      "value": "#0056CF"
+    },
+    {
+      "name": "status-border-error",
+      "value": "#BF0012"
+    },
+    {
+      "name": "status-border-info",
+      "value": "#16747E"
+    },
+    {
+      "name": "status-border-neutral-dark",
+      "value": "#93A8B8"
+    },
+    {
+      "name": "status-border-success-dark",
+      "value": "#00CA74"
+    },
+    {
+      "name": "status-border-warning-dark",
+      "value": "#F9BB00"
+    },
+    {
+      "name": "status-border-focus",
+      "value": "#0056CF"
+    },
+    {
+      "name": "border-dark",
+      "value": "#3b3752"
+    },
+    {
+      "name": "error-secondary",
+      "value": "#ff0e24"
+    },
+    {
+      "name": "info-secondary",
+      "value": "#0be9ff"
+    },
+    {
+      "name": "neutral-secondary",
+      "value": "#e0e6ea"
+    },
+    {
+      "name": "primary-action",
+      "value": "#0056CF"
+    },
+    {
+      "name": "secondary",
+      "value": "#F9BB00"
+    },
+    {
+      "name": "success-secondary",
+      "value": "#24cb75"
+    },
+    {
+      "name": "text-default",
+      "value": "#242B42"
+    },
+    {
+      "name": "text-lt-default",
+      "value": "#242B42"
+    },
+    {
+      "name": "warning",
+      "value": "#F9BB00"
+    },
+    {
+      "name": "border-bottom-color",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "iti-border-color",
+      "value": "#ccc"
+    },
+    {
+      "name": "royal",
+      "value": "#0056CF"
+    },
+    {
+      "name": "red-dark",
+      "value": "#ff4a50"
+    },
+    {
+      "name": "default",
+      "value": "#93a8b8"
+    },
+    {
+      "name": "slate",
+      "value": "#C1CDD6"
+    },
+    {
+      "name": "bg-dark-card",
+      "value": "#231E3D"
+    },
+    {
+      "name": "product-2-highlight",
+      "value": "#8200E9"
+    },
+    {
+      "name": "product-6-highlight",
+      "value": "#00A851"
+    },
+    {
+      "name": "product-10-highlight",
+      "value": "#38d9a9"
+    },
+    {
+      "name": "category-4",
+      "value": "#14D595"
+    },
+    {
+      "name": "category-8",
+      "value": "#EA599F"
+    },
+    {
+      "name": "category-13",
+      "value": "#058F9D"
+    },
+    {
+      "name": "category-17",
+      "value": "#325B91"
+    },
+    {
+      "name": "category-21",
+      "value": "#040830"
+    },
+    {
+      "name": "card-dark",
+      "value": "#231e3d"
+    },
+    {
+      "name": "category-3",
+      "value": "#F9BB00"
+    },
+    {
+      "name": "data-4",
+      "value": "#1CA05C"
+    },
+    {
+      "name": "doors",
+      "value": "#B85C00"
+    },
+    {
+      "name": "insulation",
+      "value": "#96006C"
+    },
+    {
+      "name": "solar",
+      "value": "#007E8F"
+    },
+    {
+      "name": "highlight-dark",
+      "value": "#202850"
+    },
+    {
+      "name": "primary",
+      "value": "#0082ff"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-family-base",
+      "fontFamily": "\"Power Centra\", \"Helvetica Neue\", Helvetica, Arial, \"sans_serif\"",
+      "px": 16
+    },
+    {
+      "name": "pb-message-body",
+      "fontFamily": "\"Power Centra\", \"Helvetica Neue\", Helvetica, Arial, \"sans_serif\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "attachment-caption",
+      "fontFamily": "\"Power Centra\", \"Helvetica Neue\", Helvetica, Arial, \"sans_serif\"",
+      "fontSize": "0.9em",
+      "px": 14.4,
+      "lineHeight": 1.2
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#EDEDED",
+      "textColor": "#242B42",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0082ff",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0082ff",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#EDEDED",
+      "textColor": "#242B42",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#EDEDED",
+      "textColor": "#242B42",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#EDEDED",
+      "textColor": "#242B42",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#242B42",
+      "textColor": "#EDEDED",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#EDEDED",
+      "textColor": "#242B42",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 18,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**Playbook** is a light-first design system anchored on `#EDEDED` canvas surfaces with `#242B42` primary ink (12.0:1 contrast) and `#0082ff` brand accent.\n\nTypography centers cleanly on `Power Centra` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Power**. Source: published token package (https://github.com/powerhome/playbook), repo https://github.com/powerhome/playbook. Inventory: **91** colors, **3** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#EDEDED` cards; separate sibling sections using `#ccc` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#EDEDED` -> `#EDEDED`) and `1px solid #ccc` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0082ff` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#EDEDED` (light) with `#242B42` primary text and `#687887` secondary labels.\n- Use `#0082ff` with `#f7f7f8` text (3.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Power Centra` headings with `Power Centra` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#EDEDED` surface shifts and `#ccc` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

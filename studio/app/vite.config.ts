@@ -1,8 +1,23 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+function renderBlockingModulePlugin() {
+  return {
+    name: 'render-blocking-module',
+    transformIndexHtml: {
+      order: 'post' as const,
+      handler(html: string) {
+        return html.replace(
+          /<script type="module"(?![^>]*\bblocking=)/g,
+          '<script type="module" blocking="render"',
+        );
+      },
+    },
+  };
+}
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), renderBlockingModulePlugin()],
   base: './',
   server: {
     port: 5183,

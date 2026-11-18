@@ -1,0 +1,574 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f2f0f0",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0081a2",
+  "border": "#cdcdcd",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "0",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "500",
+      "value": "#808080"
+    },
+    {
+      "name": "secondary",
+      "value": "#e0f1ff"
+    },
+    {
+      "name": "brand",
+      "value": "#0081a2"
+    },
+    {
+      "name": "warning",
+      "value": "#f9ce2d"
+    },
+    {
+      "name": "button-secondary-focus-color-text",
+      "value": "#85b5d8"
+    },
+    {
+      "name": "callout-l-info-content-bg-color",
+      "value": "#1e2830"
+    },
+    {
+      "name": "footer-color-links-hover",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "radio-color-bg-error-hover",
+      "value": "#f4c8c5"
+    },
+    {
+      "name": "goa-color-extended-prairie-text",
+      "value": "#47372a"
+    },
+    {
+      "name": "goa-color-extended-dawn-border",
+      "value": "#e9b8d5"
+    },
+    {
+      "name": "goa-color-extended-sky-text-dark",
+      "value": "#093937"
+    },
+    {
+      "name": "goa-color-surface-app-header",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-color-surface-250",
+      "value": "#f2f0f0"
+    },
+    {
+      "name": "goa-color-success-text-dark",
+      "value": "#355147"
+    },
+    {
+      "name": "goa-color-emergency-text-inverse",
+      "value": "#fff6f6"
+    },
+    {
+      "name": "goa-color-important-border",
+      "value": "#fde3a1"
+    },
+    {
+      "name": "goa-color-warning-light",
+      "value": "#fef2c8"
+    },
+    {
+      "name": "goa-color-info-dark",
+      "value": "#004a8f"
+    },
+    {
+      "name": "goa-color-interactive-focus",
+      "value": "#006dcc"
+    },
+    {
+      "name": "goa-radio-inner-color-error-hover",
+      "value": "#ba0000"
+    },
+    {
+      "name": "goa-badge-info-subtle-color-content",
+      "value": "#00527c"
+    },
+    {
+      "name": "goa-button-primary-hover-color-bg",
+      "value": "#045092"
+    },
+    {
+      "name": "goa-button-primary-destructive-focus-color-bg",
+      "value": "#da291c"
+    },
+    {
+      "name": "goa-button-primary-inverse-focus-color-bg",
+      "value": "#006dcc"
+    },
+    {
+      "name": "goa-button-secondary-destructive-color-text",
+      "value": "#a91a10"
+    },
+    {
+      "name": "goa-button-secondary-inverse-color-text",
+      "value": "#045092"
+    },
+    {
+      "name": "goa-button-tertiary-destructive-color-border",
+      "value": "#eeaea5"
+    },
+    {
+      "name": "goa-button-tertiary-inverse-hover-color-text",
+      "value": "#cdcdcd"
+    },
+    {
+      "name": "goa-button-text-destructive-color-text",
+      "value": "#da291c"
+    },
+    {
+      "name": "goa-button-text-dark-hover-color-text",
+      "value": "#045092"
+    },
+    {
+      "name": "goa-callout-l-important-border-color",
+      "value": "#fde3a1"
+    },
+    {
+      "name": "goa-callout-success-heading-bg-color",
+      "value": "#d8f7e6"
+    },
+    {
+      "name": "goa-callout-l-success-content-bg-color",
+      "value": "#f4fff6"
+    },
+    {
+      "name": "goa-checkbox-color-bg-checked-error-disabled",
+      "value": "#f58185"
+    },
+    {
+      "name": "goa-container-info-heading-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-container-important-heading-text-color",
+      "value": "#000000"
+    },
+    {
+      "name": "goa-details-color-text",
+      "value": "#000000"
+    },
+    {
+      "name": "goa-dropdown-color-text-placeholder",
+      "value": "#9f9f9f"
+    },
+    {
+      "name": "goa-dropdown-item-color-text-selected-hover",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-dropdown-multiselect-item-color-text",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "goa-file-upload-instruction-color-focus",
+      "value": "#045092"
+    },
+    {
+      "name": "goa-filter-chip-secondary-text-color-error",
+      "value": "#a91a10"
+    },
+    {
+      "name": "goa-form-item-error-message-color",
+      "value": "#a91a10"
+    },
+    {
+      "name": "goa-app-header-color-text-nav-item-current",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "goa-icon-button-dark-disabled-color",
+      "value": "#808080"
+    },
+    {
+      "name": "goa-text-input-color-text",
+      "value": "#000000"
+    },
+    {
+      "name": "goa-link-color-interactive-default",
+      "value": "#006dcc"
+    },
+    {
+      "name": "goa-link-color-light-hover",
+      "value": "#e9e9e9"
+    },
+    {
+      "name": "goa-modal-callout-information-icon",
+      "value": "#0077ad"
+    },
+    {
+      "name": "goa-modal-callout-information-close-bg-hover",
+      "value": "#cbeaf7"
+    },
+    {
+      "name": "goa-notification-banner-information-color-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-notification-banner-information-low-color-icon",
+      "value": "#0077ad"
+    },
+    {
+      "name": "goa-notification-banner-emergency-low-color-border",
+      "value": "#eeaea5"
+    },
+    {
+      "name": "goa-radio-inner-color-error",
+      "value": "#ec040b"
+    },
+    {
+      "name": "goa-temporary-notification-color-bg-success",
+      "value": "#006f4c"
+    },
+    {
+      "name": "goa-text-area-color-text-counter",
+      "value": "#353535"
+    },
+    {
+      "name": "goa-work-side-menu-item-badge-emergency-background-c",
+      "value": "#da291c"
+    },
+    {
+      "name": "goa-color-interactive-disabled",
+      "value": "#b1b1b1"
+    },
+    {
+      "name": "goa-color-surface-card",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-input-color-text-default",
+      "value": "#000000"
+    },
+    {
+      "name": "goa-input-color-border-default-light",
+      "value": "#cdcdcd"
+    },
+    {
+      "name": "goa-input-color-background-disabled",
+      "value": "#e9e9e9"
+    },
+    {
+      "name": "critical",
+      "value": "#171d23"
+    },
+    {
+      "name": "heading-hover",
+      "value": "#e9e9e9"
+    },
+    {
+      "name": "callout-h-important-heading-bg-color",
+      "value": "#5e4e20"
+    },
+    {
+      "name": "icon-button-default-hover-color-bg",
+      "value": "#3a3a3a"
+    },
+    {
+      "name": "goa-color-extended-prairie-light",
+      "value": "#fff2c8"
+    },
+    {
+      "name": "goa-color-extended-pasture-default",
+      "value": "#afe274"
+    },
+    {
+      "name": "goa-color-greyscale-500",
+      "value": "#808080"
+    },
+    {
+      "name": "goa-color-emergency-light",
+      "value": "#fdded9"
+    },
+    {
+      "name": "goa-temporary-notification-color-bg-basic",
+      "value": "#333333"
+    },
+    {
+      "name": "goa-accordion-icon-color",
+      "value": "#000000"
+    },
+    {
+      "name": "goa-badge-emergency-subtle-color-content",
+      "value": "#8e1515"
+    },
+    {
+      "name": "goa-callout-heading-color",
+      "value": "#000000"
+    },
+    {
+      "name": "goa-callout-h-important-content-bg-color",
+      "value": "#fff6e5"
+    },
+    {
+      "name": "goa-checkbox-color-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-container-important-heading-bg-color",
+      "value": "#f9ce2d"
+    },
+    {
+      "name": "goa-dropdown-item-color-bg-hover",
+      "value": "#f2f0f0"
+    },
+    {
+      "name": "goa-file-upload-color-bg-active",
+      "value": "#f4fdff"
+    },
+    {
+      "name": "goa-footer-color-bg",
+      "value": "#f2f0f0"
+    },
+    {
+      "name": "goa-step-color-sublabel",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "goa-app-header-color-bg-nav-item-in-menu-current-hov",
+      "value": "#045092"
+    },
+    {
+      "name": "goa-icon-button-destructive-color",
+      "value": "#da291c"
+    },
+    {
+      "name": "goa-microsite-header-color-version-number",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "goa-modal-callout-emergency-close-bg-hover",
+      "value": "#eeaea5"
+    },
+    {
+      "name": "goa-notification-banner-important-high-color-bg",
+      "value": "#f9ce2d"
+    },
+    {
+      "name": "goa-notification-banner-important-low-close-bg-hover",
+      "value": "#fde3a1"
+    },
+    {
+      "name": "goa-scroll-panel-footer-color-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "goa-side-menu-child-color-bg-selected",
+      "value": "#f4fdff"
+    },
+    {
+      "name": "primary",
+      "value": "#0081a2"
+    }
+  ],
+  "type": [
+    {
+      "name": "goa-font-size-10",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "goa-font-size-9",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "goa-font-size-8",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "goa-font-size-7",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "goa-font-size-6",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "goa-font-size-5",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "goa-font-size-05",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "goa-font-size-4",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "badge-font-size-large",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "side-menu-typography-item",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "side-menu-typography-item-current",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "goa-font-size-3",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "goa-font-family-number",
+      "fontFamily": "roboto-mono, monospace",
+      "px": 16
+    },
+    {
+      "name": "goa-font-family-sans",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "goa-badge-font-size-large",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "goa-font-size-2",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "goa-badge-font-size",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "goa-font-size-1",
+      "fontFamily": "acumin-variable, helvetica-neue, arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f2f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0081a2",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0081a2",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f2f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f2f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f2f0f0",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Alberta Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0081a2` brand accent.\n\nTypography centers cleanly on `acumin-variable` (48px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f2f0f0` surface layering.\n\nMaintained by **Government of Alberta**. Source: published token package, package `@abgov/design-tokens`. Inventory: **91** colors, **20** typography steps, and **8** documented components (see package license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f2f0f0` cards; separate sibling sections using `#cdcdcd` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f2f0f0`) and `1px solid #cdcdcd` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0081a2` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0081a2` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `acumin-variable` headings with `acumin-variable` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f2f0f0` surface shifts and `#cdcdcd` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

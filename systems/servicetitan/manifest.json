@@ -1,0 +1,42 @@
+{
+  "name": "servicetitan",
+  "displayName": "Anvil",
+  "description": "ServiceTitan Anvil — tokens imported from @servicetitan/anvil2.",
+  "style": "ServiceTitan Anvil — tokens imported from @servicetitan/anvil2.",
+  "category": "ServiceTitan",
+  "org": "ServiceTitan",
+  "theme": "light",
+  "tags": [
+    "published",
+    "service-titan",
+    "light"
+  ],
+  "homepage": "",
+  "license": "see package",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @servicetitan/anvil2@3.19.1 (10 token files, 656 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@servicetitan/anvil2",
+    "version": "3.19.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 17,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

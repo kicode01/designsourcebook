@@ -1,0 +1,42 @@
+{
+  "name": "swiss-post",
+  "displayName": "Swiss Post Design System",
+  "description": "Swiss Post Design System — tokens imported from @swisspost/design-system-styles.",
+  "style": "Swiss Post Design System — tokens imported from @swisspost/design-system-styles.",
+  "category": "Swiss Post",
+  "org": "Swiss Post",
+  "theme": "light",
+  "tags": [
+    "published",
+    "swiss-post",
+    "light"
+  ],
+  "homepage": "https://design-system.post.ch",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @swisspost/design-system-styles@10.9.0 (7 token files, 97 colours harvested, 67 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@swisspost/design-system-styles",
+    "version": "10.9.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 68,
+    "typography": 18,
+    "components": 10
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

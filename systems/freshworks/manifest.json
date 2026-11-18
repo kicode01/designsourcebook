@@ -1,0 +1,42 @@
+{
+  "name": "freshworks",
+  "displayName": "Crayons",
+  "description": "Freshworks Crayons — tokens imported from @freshworks/crayons.",
+  "style": "Freshworks Crayons — tokens imported from @freshworks/crayons.",
+  "category": "Freshworks",
+  "org": "Freshworks",
+  "theme": "light",
+  "tags": [
+    "published",
+    "freshworks",
+    "light"
+  ],
+  "homepage": "https://github.com/freshworks/crayons#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @freshworks/crayons@2.13.4 (2 token files, 27 colours harvested, 27 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@freshworks/crayons",
+    "version": "2.13.4"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 28,
+    "typography": 8,
+    "components": 12
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

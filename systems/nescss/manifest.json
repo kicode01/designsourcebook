@@ -1,0 +1,42 @@
+{
+  "name": "nescss",
+  "displayName": "NES.css",
+  "description": "NES.css — tokens imported from nes.css.",
+  "style": "NES.css — tokens imported from nes.css.",
+  "category": "NES.css",
+  "org": "NES.css",
+  "theme": "light",
+  "tags": [
+    "published",
+    "nes-css",
+    "light"
+  ],
+  "homepage": "https://github.com/nostalgic-css/NES.css#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from nes.css@2.2.1 (2 token files, 68 colours harvested, 68 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "nes.css",
+    "version": "2.2.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 69,
+    "typography": 4,
+    "components": 10
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

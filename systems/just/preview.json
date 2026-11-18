@@ -1,0 +1,636 @@
+{
+  "canvas": "#fdfdfb",
+  "surface": "#f6f3ef",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#f36805",
+  "border": "#f0ece6",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background-default",
+      "value": "#fdfdfb"
+    },
+    {
+      "name": "background-subtle",
+      "value": "#f6f3ef"
+    },
+    {
+      "name": "background-dark",
+      "value": "#1c1a17"
+    },
+    {
+      "name": "border-default",
+      "value": "#f0ece6"
+    },
+    {
+      "name": "border-subtle",
+      "value": "#f6f3ef"
+    },
+    {
+      "name": "border-strong",
+      "value": "#e7e2da"
+    },
+    {
+      "name": "border-inverse",
+      "value": "#59564f"
+    },
+    {
+      "name": "border-selected",
+      "value": "#4c4843"
+    },
+    {
+      "name": "border-selected-brand",
+      "value": "#f36805"
+    },
+    {
+      "name": "border-form",
+      "value": "#8c867e"
+    },
+    {
+      "name": "border-neutral",
+      "value": "#fff"
+    },
+    {
+      "name": "border-decorative-brand",
+      "value": "#ff8000"
+    },
+    {
+      "name": "interactive-brand",
+      "value": "#f36805"
+    },
+    {
+      "name": "interactive-primary",
+      "value": "#2b2a28"
+    },
+    {
+      "name": "interactive-secondary",
+      "value": "#f6f3ef"
+    },
+    {
+      "name": "interactive-error",
+      "value": "#cc0300"
+    },
+    {
+      "name": "support-error",
+      "value": "#cc0300"
+    },
+    {
+      "name": "support-warning",
+      "value": "#ffd600"
+    },
+    {
+      "name": "support-info",
+      "value": "#3147ad"
+    },
+    {
+      "name": "support-neutral",
+      "value": "#f0ece6"
+    },
+    {
+      "name": "support-error-02",
+      "value": "#ffbbba"
+    },
+    {
+      "name": "support-error-tonal",
+      "value": "#ffd2d1"
+    },
+    {
+      "name": "support-warning-02",
+      "value": "#ffee94"
+    },
+    {
+      "name": "support-warning-tonal",
+      "value": "#fff8d6"
+    },
+    {
+      "name": "support-info-02",
+      "value": "#ced7f8"
+    },
+    {
+      "name": "support-info-tonal",
+      "value": "#e4e9fb"
+    },
+    {
+      "name": "support-info-inverse",
+      "value": "#9eaef0"
+    },
+    {
+      "name": "support-neutral-persistent",
+      "value": "#f0ece6"
+    },
+    {
+      "name": "support-error-inverse",
+      "value": "#f85c59"
+    },
+    {
+      "name": "support-warning-inverse",
+      "value": "#ffde33"
+    },
+    {
+      "name": "support-brand-01",
+      "value": "#ff8000"
+    },
+    {
+      "name": "support-brand-02",
+      "value": "#fbc592"
+    },
+    {
+      "name": "support-brand-tonal",
+      "value": "#fddfc3"
+    },
+    {
+      "name": "support-brand-03",
+      "value": "#c1dade"
+    },
+    {
+      "name": "support-brand-03-subtle",
+      "value": "#dbe9eb"
+    },
+    {
+      "name": "support-brand-03-tonal",
+      "value": "#e8f1f2"
+    },
+    {
+      "name": "support-brand-04",
+      "value": "#f2a6b0"
+    },
+    {
+      "name": "support-brand-04-subtle",
+      "value": "#f9d2d7"
+    },
+    {
+      "name": "support-brand-04-tonal",
+      "value": "#fbdfe3"
+    },
+    {
+      "name": "support-brand-05",
+      "value": "#f6c243"
+    },
+    {
+      "name": "support-brand-05-subtle",
+      "value": "#fae0a1"
+    },
+    {
+      "name": "support-brand-05-tonal",
+      "value": "#fceac0"
+    },
+    {
+      "name": "support-brand-06",
+      "value": "#5b3d5b"
+    },
+    {
+      "name": "support-brand-06-subtle",
+      "value": "#d0b2d0"
+    },
+    {
+      "name": "support-brand-06-tonal",
+      "value": "#e3cfe3"
+    },
+    {
+      "name": "support-brand-07",
+      "value": "#f75e28"
+    },
+    {
+      "name": "support-brand-07-subtle",
+      "value": "#ffd3bf"
+    },
+    {
+      "name": "support-brand-08",
+      "value": "#e7cda2"
+    },
+    {
+      "name": "support-brand-08-subtle",
+      "value": "#f0e2c7"
+    },
+    {
+      "name": "support-brand-08-tonal",
+      "value": "#f4ead7"
+    },
+    {
+      "name": "content-interactive-brand",
+      "value": "#f36805"
+    },
+    {
+      "name": "content-interactive-error",
+      "value": "#cc0300"
+    },
+    {
+      "name": "content-link",
+      "value": "#242e30"
+    },
+    {
+      "name": "content-link-distinct",
+      "value": "#3147ad"
+    },
+    {
+      "name": "content-link-light",
+      "value": "#fff"
+    },
+    {
+      "name": "content-link-inverse",
+      "value": "#fff"
+    },
+    {
+      "name": "content-link-visited",
+      "value": "#800080"
+    },
+    {
+      "name": "content-link-visited-inverse",
+      "value": "#c58af9"
+    },
+    {
+      "name": "content-error",
+      "value": "#cc0300"
+    },
+    {
+      "name": "content-brand",
+      "value": "#f36805"
+    },
+    {
+      "name": "content-disabled-solid",
+      "value": "#8c999b"
+    },
+    {
+      "name": "content-brand-solid",
+      "value": "#f36805"
+    },
+    {
+      "name": "content-error-solid",
+      "value": "#cc0300"
+    },
+    {
+      "name": "content-interactive-primary-solid",
+      "value": "#fff"
+    },
+    {
+      "name": "content-interactive-secondary-solid",
+      "value": "#242e30"
+    },
+    {
+      "name": "content-interactive-brand-solid",
+      "value": "#f36805"
+    },
+    {
+      "name": "content-interactive-error-solid",
+      "value": "#cc0300"
+    },
+    {
+      "name": "focus-inner",
+      "value": "#fff"
+    },
+    {
+      "name": "focus-outer",
+      "value": "#2b3e97"
+    },
+    {
+      "name": "disabled-01",
+      "value": "#f0ece6"
+    },
+    {
+      "name": "disabled-01-inverse",
+      "value": "#3f3d39"
+    },
+    {
+      "name": "thirdparty-apple-container-primary",
+      "value": "#000"
+    },
+    {
+      "name": "thirdparty-apple-content-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "thirdparty-apple-container-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "thirdparty-apple-content-secondary",
+      "value": "#000"
+    },
+    {
+      "name": "thirdparty-android-background-dashboard",
+      "value": "#000"
+    },
+    {
+      "name": "thirdparty-facebook-container-primary",
+      "value": "#1877f2"
+    },
+    {
+      "name": "thirdparty-facebook-content-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "thirdparty-facebook-container-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "thirdparty-facebook-content-secondary",
+      "value": "#000"
+    },
+    {
+      "name": "thirdparty-google-container-primary",
+      "value": "#131314"
+    },
+    {
+      "name": "thirdparty-google-content-primary",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "thirdparty-google-content-primary-subdued",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "thirdparty-google-border-primary",
+      "value": "#e3e3e3"
+    },
+    {
+      "name": "thirdparty-google-container-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "thirdparty-google-content-secondary",
+      "value": "#131314"
+    },
+    {
+      "name": "thirdparty-google-content-secondary-subdued",
+      "value": "#6a6c6b"
+    },
+    {
+      "name": "thirdparty-google-border-secondary",
+      "value": "#747775"
+    },
+    {
+      "name": "thirdparty-microsoft-container-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "thirdparty-microsoft-content-primary",
+      "value": "#5e5e5e"
+    },
+    {
+      "name": "primary",
+      "value": "#f36805"
+    }
+  ],
+  "type": [
+    {
+      "name": "family-secondary",
+      "fontFamily": "Arial",
+      "px": 16
+    },
+    {
+      "name": "dt-font-family-alternative",
+      "fontFamily": "JETSansVF2",
+      "px": 16
+    },
+    {
+      "name": "dt-font-family-code",
+      "fontFamily": "PTMono",
+      "px": 16
+    },
+    {
+      "name": "dt-font-family-display",
+      "fontFamily": "JETSansDisplay",
+      "px": 16
+    },
+    {
+      "name": "dt-font-family-primary",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-family-secondary",
+      "fontFamily": "Arial",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-xs-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-s-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-m-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-l-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-xl-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-xxl-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-xs-italic-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-s-italic-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-m-italic-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-l-italic-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-xl-italic-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-heading-xxl-italic-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-s-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-s-link-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-s-link-text-decoration",
+      "fontFamily": "underline",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-l-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-l-link-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-l-link-text-decoration",
+      "fontFamily": "underline",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-strong-s-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-strong-s-link-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-strong-s-link-text-decoration",
+      "fontFamily": "underline",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-strong-l-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-strong-l-link-family",
+      "fontFamily": "JetSansDigital",
+      "px": 16
+    },
+    {
+      "name": "dt-font-body-strong-l-link-text-decoration",
+      "fontFamily": "underline",
+      "px": 16
+    },
+    {
+      "name": "dt-font-display-xl-family",
+      "fontFamily": "JETSansDisplay",
+      "px": 16
+    },
+    {
+      "name": "dt-font-display-l-family",
+      "fontFamily": "JETSansDisplay",
+      "px": 16
+    },
+    {
+      "name": "dt-font-display-m-family",
+      "fontFamily": "JETSansDisplay",
+      "px": 16
+    },
+    {
+      "name": "dt-font-display-s-family",
+      "fontFamily": "JETSansDisplay",
+      "px": 16
+    },
+    {
+      "name": "dt-font-display-xs-family",
+      "fontFamily": "JETSansDisplay",
+      "px": 16
+    },
+    {
+      "name": "font-family-secondary",
+      "fontFamily": "Arial",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f6f3ef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#f36805",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#f36805",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f6f3ef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f6f3ef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fdfdfb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fdfdfb",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f6f3ef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**PIE Design System** is a light-first design system anchored on `#fdfdfb` canvas surfaces with `#0b0b0c` primary ink (19.3:1 contrast) and `#f36805` brand accent.\n\nDisplay headlines pair `Arial` with `JetSansDigital` body copy (16px display down to 16px body), unified by `8px` base corner radius and stepped `#fdfdfb` -> `#f6f3ef` surface layering.\n\nMaintained by **Just**. Source: published token package (https://github.com/justeattakeaway/pie/packages/tools/pie-design-tokens#readme), package `@justeat/pie-design-tokens`. Inventory: **91** colors, **36** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f6f3ef` cards; separate sibling sections using `#f0ece6` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fdfdfb` -> `#f6f3ef`) and `1px solid #f0ece6` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#f36805` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fdfdfb` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#f36805` with `#f7f7f8` text (2.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Arial` headings with `JetSansDigital` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f6f3ef` surface shifts and `#f0ece6` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

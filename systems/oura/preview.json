@@ -1,0 +1,518 @@
+{
+  "canvas": "#ececec",
+  "surface": "#f7f1e8",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#2a72de",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.lg}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#2a72de"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "stone",
+      "value": "#4a4741"
+    },
+    {
+      "name": "on-stone",
+      "value": "#ffffff"
+    },
+    {
+      "name": "clay",
+      "value": "#6b443d"
+    },
+    {
+      "name": "espresso",
+      "value": "#39221e"
+    },
+    {
+      "name": "gold",
+      "value": "#af751b"
+    },
+    {
+      "name": "ochre",
+      "value": "#bc924c"
+    },
+    {
+      "name": "gold-soft",
+      "value": "#ddaa61"
+    },
+    {
+      "name": "gold-pale",
+      "value": "#ddbe78"
+    },
+    {
+      "name": "gold-deep",
+      "value": "#684d07"
+    },
+    {
+      "name": "forest",
+      "value": "#224228"
+    },
+    {
+      "name": "olive",
+      "value": "#5c6f5d"
+    },
+    {
+      "name": "sage",
+      "value": "#849671"
+    },
+    {
+      "name": "sage-mute",
+      "value": "#7b886d"
+    },
+    {
+      "name": "sage-pale",
+      "value": "#ced4b8"
+    },
+    {
+      "name": "canvas",
+      "value": "#f7f1e8"
+    },
+    {
+      "name": "surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-grey",
+      "value": "#ececec"
+    },
+    {
+      "name": "silver",
+      "value": "#cccac7"
+    },
+    {
+      "name": "ink-band",
+      "value": "#000000"
+    },
+    {
+      "name": "ink-band-soft",
+      "value": "#19191c"
+    },
+    {
+      "name": "ink",
+      "value": "#1c1b1a"
+    },
+    {
+      "name": "ash",
+      "value": "#838280"
+    },
+    {
+      "name": "mute",
+      "value": "#a8a5a0"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "hairline",
+      "value": "#e1dcd3"
+    },
+    {
+      "name": "error",
+      "value": "#e33a22"
+    }
+  ],
+  "type": [
+    {
+      "name": "display",
+      "fontFamily": "Editorial New",
+      "fontSize": "110px",
+      "px": 110,
+      "fontWeight": 300,
+      "lineHeight": 1.05,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-2",
+      "fontFamily": "Editorial New",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 300,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "Editorial New",
+      "fontSize": "68px",
+      "px": 68,
+      "fontWeight": 300,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "Editorial New",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 300,
+      "lineHeight": 1.15,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 400,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "lead",
+      "fontFamily": "Editorial New",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 100,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-lg",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "eyebrow",
+      "fontFamily": "AkkuratLL",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": "1px"
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.stone}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "announcement-bar",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "hero",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "{colors.stone}",
+      "textColor": "{colors.on-stone}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-on-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.stone}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-outline",
+      "kind": "button",
+      "backgroundColor": "{colors.ink-band}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-outline-stone",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.stone}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-icon-circular",
+      "kind": "button",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.stone}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.stone}",
+      "textColor": "{colors.on-stone}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "text-input-focused",
+      "kind": "input",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "feature-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "feature-card-elevated",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "product-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-grey}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xl}"
+    },
+    {
+      "key": "person-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}"
+    },
+    {
+      "key": "stat-badge",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.stone}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "pill-tab",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.stone}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "eyebrow-label",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "news-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.ink-band-soft}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#2a72de",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#2a72de",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7f1e8",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ececec",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7f1e8",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Oura's web presence reads like a printed field journal that learned to breathe. The default surface is a warm paper cream (`{colors.canvas}` — #f7f1e8) rather than white, and everything sits on it with generous air: a light, high-contrast serif for the big statements, a calm grotesque sans for everything you actually read, and full-bleed lifestyle photography that carries most of the emotional weight. Where a typical wellness-tech site would reach for gradients and glassmorphism, Oura reaches for restraint — flat fills, hairline rules, and long vertical silences between sections.\r\n\r\nThe system runs three surface \"worlds.\" The **cream world** (`{colors.canvas}`) is home base for marketing and editorial content. The **ink world** (`{colors.ink-band}` / `{colors.ink-band-soft}`) is a near-black stage reserved for the footer and the \"In the News\" band, where cream cards float like clippings on a dark table. The **silver world** (`{colors.surface-grey}` → `{colors.silver}`) is a cool, machined grey gradient used only on the product-showcase pages, where the ring is photographed like jewellery.\r\n\r\nColor discipline is the signature move. The whole palette is earth-toned — mustard and gold (`{colors.gold}`, `{colors.ochre}`), clay and espresso (`{colors.clay}`, `{colors.espresso}`), olive and sage (`{colors.forest}`, `{colors.sage}`) — and these appear as accent bands, illustration, and score/data-visualisation, never as buttons. Buttons carry a single, deliberate exception: **action blue** (`{colors.primary}` — #2a72de), used only for the decisive conversion moments (\"Explore\", \"Shop All Products\"). The warm brand neutral `{colors.stone}` (#4a4741) does the quieter work — the wordmark, editorial pills, form fields, outlines, and links — so the blue never has to compete.\r\n\r\n**Key Characteristics:**\r\n- Warm-paper canvas (`{colors.canvas}`) as the default surface, not white — cream is the brand's resting state.\r\n- A two-typeface voice: `{typography.display}` (Editorial New, a light high-contrast serif) for headlines, `{typography.body}` (AkkuratLL, a neutral grotesque) for reading.\r\n- One decisive **action blue** (`{colors.primary}`) reserved strictly for primary CTAs; every other button is warm-neutral `{colors.stone}` or cream.\r\n- An earth-tone accent family — mustard, clay, olive — used for bands, illustration and data-viz, deliberately kept off buttons.\r\n- Fully-rounded pill buttons (`{rounded.full}`) against softly-rounded cards (`{rounded.lg}`) and large-radius product images (`{rounded.xl}`).\r\n- Three surface worlds cycling in a predictable rhythm: cream editorial → black news/footer band → silver product stage.\r\n- Photography-first hierarchy: full-bleed imagery leads, UI recedes to hairlines and quiet labels.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` strictly for the primary conversion CTA — one blue moment per view, maximum.\r\n- Default every surface to `{colors.canvas}` (warm paper), not white. White (`{colors.surface}`) is for elevated cards and inputs, not backgrounds.\r\n- Use `{colors.stone}` for the wordmark, secondary pills, outlines, form fills, and links — it is the workhorse neutral.\r\n- Pair `{typography.display}` (thin serif) at large sizes with `{typography.body}` (grotesque) for reading; let scale create hierarchy.\r\n- Keep pills fully rounded (`{rounded.full}`) and cards softly rounded (`{rounded.lg}`); use `{rounded.xl}` only for large product imagery.\r\n- Let the earth-tone ramps (gold, clay, olive) live in bands, illustration, and data-viz — as color-blocked sections that pace the scroll.\r\n- Give sections large vertical breathing room; treat empty cream as structure.\r\n\r\n### Don't\r\n- Don't use `{colors.primary}` for links, accents, icons, or decorative fills — it must stay unique to the primary CTA.\r\n- Don't put the mustard/olive accent colors on buttons — they are surfaces and illustration, never actions.\r\n- Don't set body copy in `{typography.display}`; the thin serif is display-only and gets illegible at small sizes.\r\n- Don't default backgrounds to white — it breaks the warm-paper identity.\r\n- Don't add heavy or hard-edged shadows; elevation here is soft, warm, and low-opacity.\r\n- Don't crowd sections — compressing the vertical rhythm collapses the calm, editorial pacing that defines the brand."
+}

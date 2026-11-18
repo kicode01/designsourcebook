@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Icon } from './icons';
 import { DsSelect } from './DsSelect';
 import { CURATED_MARKS, glyphToSvg, useProject, type ActiveMark } from '../state/project';
+import { triggerPortalNavigation } from '../utils/chameleonNav';
 
 export type ExportFormat = 'png' | 'webm';
 
@@ -106,13 +107,18 @@ export function MarkPickerDialog({
   onSelect: (mark: ActiveMark) => void;
   onUploadFile: () => void;
 }) {
-  const { iconPacks, activeMark } = useProject();
+  const { iconPacks, iconPacksLoading, ensureIconPacksLoaded, activeMark } = useProject();
   const [sourceTab, setSourceTab] = useState<'packs' | 'logos'>('packs');
   const [packId, setPackId] = useState('all');
   const [q, setQ] = useState('');
   const [brandLogos, setBrandLogos] = useState<{ id: string; brand: string; svg: string }[]>([]);
   const [brandTotal, setBrandTotal] = useState<number | null>(null);
   const [logosLoading, setLogosLoading] = useState(false);
+
+  useEffect(() => {
+    if (!open || sourceTab !== 'packs') return;
+    ensureIconPacksLoaded();
+  }, [open, sourceTab, ensureIconPacksLoaded]);
 
   const { glyphs, totalGlyphs } = useMemo(() => {
     const out: { pack: string; name: string; svg: string }[] = [];
@@ -188,6 +194,7 @@ export function MarkPickerDialog({
           </button>
           <a
             href="../#/logos"
+            onClick={(e) => triggerPortalNavigation(e)}
             className="ds-action-btn"
             style={{ marginLeft: 'auto' }}
             title="Inspect SVG Construction Anatomy in Catalog"
@@ -238,28 +245,34 @@ export function MarkPickerDialog({
 
         <div className="icon-pick-grid">
           {sourceTab === 'packs' ? (
-            glyphs.map((g) => (
-              <button
-                key={`${g.pack}-${g.name}`}
-                type="button"
-                className="icon-pick-cell"
-                onClick={() => {
-                  onSelect({
-                    id: `${g.pack}-${g.name}`,
-                    name: `${g.pack} / ${g.name}`,
-                    svg: g.svg.replace(/currentColor/gi, '#FFFFFF'),
-                    source: 'iconpack',
-                  });
-                  onClose();
-                }}
-              >
-                <span
-                  style={{ color: 'var(--studio-ink)', display: 'grid', placeItems: 'center' }}
-                  dangerouslySetInnerHTML={{ __html: g.svg.replace(/#[0-9a-fA-F]{6}\b/gi, 'currentColor') }}
-                />
-                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>{g.name}</span>
-              </button>
-            ))
+            iconPacksLoading && glyphs.length === 0 ? (
+              <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: 24, fontSize: 12, color: 'var(--studio-muted)' }}>
+                Loading UI icon packs…
+              </div>
+            ) : (
+              glyphs.map((g) => (
+                <button
+                  key={`${g.pack}-${g.name}`}
+                  type="button"
+                  className="icon-pick-cell"
+                  onClick={() => {
+                    onSelect({
+                      id: `${g.pack}-${g.name}`,
+                      name: `${g.pack} / ${g.name}`,
+                      svg: g.svg.replace(/currentColor/gi, '#FFFFFF'),
+                      source: 'iconpack',
+                    });
+                    onClose();
+                  }}
+                >
+                  <span
+                    style={{ color: 'var(--studio-ink)', display: 'grid', placeItems: 'center' }}
+                    dangerouslySetInnerHTML={{ __html: g.svg.replace(/#[0-9a-fA-F]{6}\b/gi, 'currentColor') }}
+                  />
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '100%' }}>{g.name}</span>
+                </button>
+              ))
+            )
           ) : logosLoading && brandLogos.length === 0 ? (
             <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: 24, fontSize: 12, color: 'var(--studio-muted)' }}>
               Querying brand logos…

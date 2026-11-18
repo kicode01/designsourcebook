@@ -1,0 +1,457 @@
+{
+  "canvas": "hsla(0 0% 100% / 1)",
+  "surface": "hsla(0 0% 100% / 1)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-red",
+      "value": "hsla(0 89.07103825136613% 64.11764705882354% / 1)"
+    },
+    {
+      "name": "color-orange",
+      "value": "hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)"
+    },
+    {
+      "name": "color-yellow",
+      "value": "hsla(43.676470588235304 100% 73.33333333333334% / 1)"
+    },
+    {
+      "name": "color-green",
+      "value": "hsla(154.4186046511628 57.847533632286996% 43.72549019607843% / 1)"
+    },
+    {
+      "name": "color-teal",
+      "value": "hsla(173.8888888888889 42.85714285714286% 49.411764705882355% / 1)"
+    },
+    {
+      "name": "color-blue",
+      "value": "hsla(195.0967741935484 77.11442786069651% 39.411764705882355% / 1)"
+    },
+    {
+      "name": "color-indigo",
+      "value": "hsla(227.9289940828403 89.41798941798945% 62.94117647058823% / 1)"
+    },
+    {
+      "name": "color-purple",
+      "value": "hsla(262.2857142857142 30.172413793103452% 54.50980392156863% / 1)"
+    },
+    {
+      "name": "color-pink",
+      "value": "hsla(351.42857142857144 95.68345323741009% 72.74509803921569% / 1)"
+    },
+    {
+      "name": "color-white",
+      "value": "hsla(0 0% 100% / 1)"
+    },
+    {
+      "name": "color-black",
+      "value": "hsla(0 0% 0% / 1)"
+    },
+    {
+      "name": "color-gray",
+      "value": "hsla(193.63636363636363 10.784313725490199% 60.00000000000001% / 1)"
+    },
+    {
+      "name": "box-shadow-color",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "background",
+      "value": "hsla(0, 0%, 0%, 0.05)"
+    },
+    {
+      "name": "wrapper-background",
+      "value": "rgba(0, 0, 0, 0.75)"
+    },
+    {
+      "name": "hover-background",
+      "value": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "name": "active-background",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "bar-background",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "code-background",
+      "value": "hsla(0, 0%, 0%, 0.05)"
+    },
+    {
+      "name": "value",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "box-shadow-color-sm",
+      "value": "rgba(0, 0, 0, 0.075)"
+    },
+    {
+      "name": "box-shadow-color-lg",
+      "value": "rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "name": "box-shadow-color-xl",
+      "value": "rgba(0, 0, 0, 0.25)"
+    },
+    {
+      "name": "box-shadow-color-md",
+      "value": "rgba(0, 0, 0, 0.15)"
+    },
+    {
+      "name": "drawer-wrapper-background",
+      "value": "hsla(0 0% 0% / 0.75)"
+    },
+    {
+      "name": "drawer-close-hover-background",
+      "value": "hsla(0 0% 0% / 0.1)"
+    },
+    {
+      "name": "drawer-close-active-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "modal-wrapper-background",
+      "value": "hsla(0 0% 0% / 0.75)"
+    },
+    {
+      "name": "modal-close-hover-background",
+      "value": "hsla(0 0% 0% / 0.1)"
+    },
+    {
+      "name": "modal-close-active-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-light-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-light-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-light-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-dark-progress-background",
+      "value": "hsla(0 0% 100% / 0.05)"
+    },
+    {
+      "name": "toast-dark-progress-bar-background",
+      "value": "hsla(0 0% 100% / 0.15)"
+    },
+    {
+      "name": "toast-dark-code-background",
+      "value": "hsla(0 0% 100% / 0.05)"
+    },
+    {
+      "name": "toast-primary-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-primary-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-primary-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-secondary-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-secondary-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-secondary-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-success-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-success-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-success-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-danger-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-danger-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-danger-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-warning-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-warning-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-warning-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-info-progress-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "toast-info-progress-bar-background",
+      "value": "hsla(0 0% 0% / 0.15)"
+    },
+    {
+      "name": "toast-info-code-background",
+      "value": "hsla(0 0% 0% / 0.05)"
+    },
+    {
+      "name": "top",
+      "value": "#bcbcbc"
+    },
+    {
+      "name": "right",
+      "value": "#bcbcbc"
+    },
+    {
+      "name": "bottom",
+      "value": "#bcbcbc"
+    },
+    {
+      "name": "left",
+      "value": "#bcbcbc"
+    },
+    {
+      "name": "primary",
+      "value": "hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "font-family-base",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-print",
+      "fontFamily": "Georgia, \"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-base-secondary",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace-secondary",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-print-secondary",
+      "fontFamily": "Georgia, \"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "heading-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "name",
+      "fontFamily": "font-family-monospace",
+      "px": 16
+    },
+    {
+      "name": "body-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "code-font-family",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "display-font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "kbd-font-family",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "pre-font-family",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "samp-font-family",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "typography-initialism-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "initialism-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "blockquote-cite-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "80%",
+      "px": 12.8
+    },
+    {
+      "name": "blockquote-footer-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "80%",
+      "px": 12.8
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.5rem",
+      "px": 8
+    },
+    {
+      "name": "value",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.5rem",
+      "px": 8
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "hsla(0 0% 100% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "hsla(0 0% 100% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "hsla(0 0% 100% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "hsla(0 0% 100% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "hsla(0 0% 100% / 1)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "hsla(0 0% 100% / 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Inkline** is a light-first design system anchored on `hsla(0 0% 100% / 1)` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)` brand accent.\n\nTypography centers cleanly on `System UI` (32px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nSource: published token package (https://github.com/uxfront-com/inkline), repo https://github.com/uxfront-com/inkline. Inventory: **62** colors, **22** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `hsla(0 0% 100% / 1)` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`hsla(0 0% 100% / 1)` -> `hsla(0 0% 100% / 1)`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `hsla(0 0% 100% / 1)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `hsla(19.622641509433947 92.9824561403509% 66.47058823529412% / 1)` with `#0b0b0c` text (8.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `hsla(0 0% 100% / 1)` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

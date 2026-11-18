@@ -1,0 +1,725 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f8f9fb",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#004ee1",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "dm-color-outline-primary",
+      "value": "#004ee1"
+    },
+    {
+      "name": "dm-color-background-page",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-background-page-faded",
+      "value": "#f8f9fb"
+    },
+    {
+      "name": "dm-color-background-elevation-base",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-background-elevation-raised",
+      "value": "#feffff"
+    },
+    {
+      "name": "dm-color-background-elevation-overlay",
+      "value": "#feffff"
+    },
+    {
+      "name": "dm-color-foreground-neutral",
+      "value": "#000001"
+    },
+    {
+      "name": "dm-color-foreground-neutral-faded",
+      "value": "#66728a"
+    },
+    {
+      "name": "dm-color-foreground-neutral-placeholder",
+      "value": "#8390a9"
+    },
+    {
+      "name": "dm-color-foreground-disabled",
+      "value": "#a2aec8"
+    },
+    {
+      "name": "dm-color-background-primary",
+      "value": "#104fc6"
+    },
+    {
+      "name": "dm-color-background-positive",
+      "value": "#008236"
+    },
+    {
+      "name": "dm-color-background-critical",
+      "value": "#c50027"
+    },
+    {
+      "name": "dm-color-background-upgrade",
+      "value": "#7f22fe"
+    },
+    {
+      "name": "dm-color-background-warning",
+      "value": "#d0571e"
+    },
+    {
+      "name": "dm-color-background-focus",
+      "value": "#104fc6"
+    },
+    {
+      "name": "dm-color-foreground-primary",
+      "value": "#1a58d0"
+    },
+    {
+      "name": "dm-color-foreground-warning",
+      "value": "#ac3500"
+    },
+    {
+      "name": "dm-color-foreground-focus",
+      "value": "#1a58d0"
+    },
+    {
+      "name": "dm-color-foreground-primary-faded",
+      "value": "#406ec5"
+    },
+    {
+      "name": "dm-color-foreground-warning-faded",
+      "value": "#a95836"
+    },
+    {
+      "name": "dm-color-foreground-focus-faded",
+      "value": "#406ec5"
+    },
+    {
+      "name": "dm-color-background-primary-highlighted",
+      "value": "#0038ae"
+    },
+    {
+      "name": "dm-color-background-positive-highlighted",
+      "value": "#006d21"
+    },
+    {
+      "name": "dm-color-background-critical-highlighted",
+      "value": "#ac000f"
+    },
+    {
+      "name": "dm-color-background-upgrade-highlighted",
+      "value": "#6d00e5"
+    },
+    {
+      "name": "dm-color-background-warning-highlighted",
+      "value": "#b84100"
+    },
+    {
+      "name": "dm-color-background-focus-highlighted",
+      "value": "#0038ae"
+    },
+    {
+      "name": "dm-color-on-background-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-positive",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-critical",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-upgrade",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-warning",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-focus",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-border-primary",
+      "value": "#1a58d0"
+    },
+    {
+      "name": "dm-color-border-positive",
+      "value": "#00792d"
+    },
+    {
+      "name": "dm-color-border-critical",
+      "value": "#be0021"
+    },
+    {
+      "name": "dm-color-border-upgrade",
+      "value": "#7400ef"
+    },
+    {
+      "name": "dm-color-border-warning",
+      "value": "#ac3500"
+    },
+    {
+      "name": "dm-color-border-focus",
+      "value": "#1a58d0"
+    },
+    {
+      "name": "dm-color-background-decorative-blue",
+      "value": "#2b7fff"
+    },
+    {
+      "name": "dm-color-background-decorative-cyan",
+      "value": "#00d3f2"
+    },
+    {
+      "name": "dm-color-background-decorative-fuchsia",
+      "value": "#e12afb"
+    },
+    {
+      "name": "dm-color-background-decorative-green",
+      "value": "#31de69"
+    },
+    {
+      "name": "dm-color-background-decorative-grey",
+      "value": "#62748e"
+    },
+    {
+      "name": "dm-color-background-decorative-light-grey",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "dm-color-background-decorative-orange",
+      "value": "#ff8904"
+    },
+    {
+      "name": "dm-color-background-decorative-pink",
+      "value": "#f6339a"
+    },
+    {
+      "name": "dm-color-background-decorative-purple",
+      "value": "#8e51ff"
+    },
+    {
+      "name": "dm-color-background-decorative-red",
+      "value": "#fb2e27"
+    },
+    {
+      "name": "dm-color-background-decorative-teal",
+      "value": "#00d5be"
+    },
+    {
+      "name": "dm-color-background-decorative-yellow",
+      "value": "#fcc801"
+    },
+    {
+      "name": "dm-color-background-decorative-blue-highlighted",
+      "value": "#0d68e6"
+    },
+    {
+      "name": "dm-color-background-decorative-cyan-highlighted",
+      "value": "#00bcdb"
+    },
+    {
+      "name": "dm-color-background-decorative-fuchsia-highlighted",
+      "value": "#c900e3"
+    },
+    {
+      "name": "dm-color-background-decorative-green-highlighted",
+      "value": "#00c753"
+    },
+    {
+      "name": "dm-color-background-decorative-grey-highlighted",
+      "value": "#4e6079"
+    },
+    {
+      "name": "dm-color-background-decorative-light-grey-highlighte",
+      "value": "#bdbebe"
+    },
+    {
+      "name": "dm-color-background-decorative-orange-highlighted",
+      "value": "#e67300"
+    },
+    {
+      "name": "dm-color-background-decorative-pink-highlighted",
+      "value": "#dc0285"
+    },
+    {
+      "name": "dm-color-background-decorative-purple-highlighted",
+      "value": "#7a37e6"
+    },
+    {
+      "name": "dm-color-background-decorative-red-highlighted",
+      "value": "#e10002"
+    },
+    {
+      "name": "dm-color-background-decorative-teal-highlighted",
+      "value": "#00bea8"
+    },
+    {
+      "name": "dm-color-background-decorative-yellow-highlighted",
+      "value": "#e5b100"
+    },
+    {
+      "name": "dm-color-on-background-decorative-blue",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-decorative-cyan",
+      "value": "#001e3a"
+    },
+    {
+      "name": "dm-color-on-background-decorative-fuchsia",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-decorative-green",
+      "value": "#002500"
+    },
+    {
+      "name": "dm-color-on-background-decorative-grey",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-decorative-light-grey",
+      "value": "#262626"
+    },
+    {
+      "name": "dm-color-on-background-decorative-orange",
+      "value": "#350000"
+    },
+    {
+      "name": "dm-color-on-background-decorative-pink",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-decorative-purple",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-decorative-red",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dm-color-on-background-decorative-teal",
+      "value": "#002116"
+    },
+    {
+      "name": "dm-color-on-background-decorative-yellow",
+      "value": "#421100"
+    },
+    {
+      "name": "dm-color-border-decorative-blue",
+      "value": "#0059d6"
+    },
+    {
+      "name": "dm-color-border-decorative-cyan",
+      "value": "#007592"
+    },
+    {
+      "name": "dm-color-border-decorative-fuchsia",
+      "value": "#a800c2"
+    },
+    {
+      "name": "dm-color-border-decorative-green",
+      "value": "#008000"
+    },
+    {
+      "name": "dm-color-border-decorative-grey",
+      "value": "#53647e"
+    },
+    {
+      "name": "dm-color-border-decorative-light-grey",
+      "value": "#636363"
+    },
+    {
+      "name": "dm-color-border-decorative-orange",
+      "value": "#aa3a00"
+    },
+    {
+      "name": "dm-color-border-decorative-pink",
+      "value": "#bd006c"
+    },
+    {
+      "name": "dm-color-border-decorative-purple",
+      "value": "#722adc"
+    },
+    {
+      "name": "dm-color-border-decorative-red",
+      "value": "#c80000"
+    },
+    {
+      "name": "dm-color-border-decorative-teal",
+      "value": "#007b68"
+    },
+    {
+      "name": "dm-color-border-decorative-yellow",
+      "value": "#8a5900"
+    },
+    {
+      "name": "dm-color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "dm-color-foreground-decorative-pink",
+      "value": "#bd006c"
+    },
+    {
+      "name": "primary",
+      "value": "#004ee1"
+    }
+  ],
+  "type": [
+    {
+      "name": "dm-font-size-title-1",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "dm-font-size-featured-1",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "dm-font-size-docs-title-1",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "dm-font-size-title-2",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "dm-font-size-featured-2",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "dm-font-size-docs-title-2",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "dm-font-size-title-3",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "dm-font-size-featured-3",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "dm-font-size-docs-title-3",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "dm-font-size-docs-title-4",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "dm-font-size-docs-quote",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "dm-font-size-docs-title-description",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "dm-font-size-title-4",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "dm-font-size-body-1",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "dm-font-size-docs-title-5",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "dm-font-size-docs-body",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-body",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title-1",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title-2",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title-3",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title-4",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title-5",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-title-6",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-body-1",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-body-2",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-body-3",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-caption-1",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-caption-2",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-title-1",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-title-2",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-title-3",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-title-4",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-title-5",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-quote",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-title-description",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-body",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-body-medium",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-docs-body-small",
+      "fontFamily": "Inter, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family",
+      "fontFamily": "Inter",
+      "px": 16
+    },
+    {
+      "name": "dm-font-family-mono",
+      "fontFamily": "\"Roboto Mono\"",
+      "px": 16
+    },
+    {
+      "name": "dm-font-size-title-5",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "dm-font-size-body-2",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "dm-font-size-docs-body-medium",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "dm-font-size-title-6",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "dm-font-size-body-3",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "dm-font-size-caption-1",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "dm-font-size-docs-body-small",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "dm-font-size-caption-2",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f8f9fb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#004ee1",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#004ee1",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f8f9fb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f8f9fb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f8f9fb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Watson** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#004ee1` brand accent.\n\nTypography centers cleanly on `Inter` (32px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f8f9fb` surface layering.\n\nMaintained by **Docplanner**. Source: live stylesheet extraction (https://watson.docplanner.design/). Inventory: **91** colors, **49** typography steps, and **8** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f8f9fb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f8f9fb`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#004ee1` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#004ee1` with `#f7f7f8` text (6.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f8f9fb` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,625 @@
+{
+  "canvas": "#f0f2f5",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3c7aae",
+  "border": "#b3bfc6",
+  "radius": "3px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "accent-dark",
+      "value": "#02101a"
+    },
+    {
+      "name": "accent-medium",
+      "value": "#283640"
+    },
+    {
+      "name": "accent-light",
+      "value": "#d4dde0"
+    },
+    {
+      "name": "accent-success",
+      "value": "#a5db75"
+    },
+    {
+      "name": "accent-success-high-contrast",
+      "value": "#4fa630"
+    },
+    {
+      "name": "accent-success-light",
+      "value": "#d1ffa4"
+    },
+    {
+      "name": "accent-success-dark",
+      "value": "#57a711"
+    },
+    {
+      "name": "accent-error",
+      "value": "#d93251"
+    },
+    {
+      "name": "accent-error-active",
+      "value": "#c92e40"
+    },
+    {
+      "name": "accent-danger-active",
+      "value": "#fea7a6"
+    },
+    {
+      "name": "accent-danger",
+      "value": "#fe6d6b"
+    },
+    {
+      "name": "accent-danger-light",
+      "value": "#f7846c"
+    },
+    {
+      "name": "accent-warning",
+      "value": "#ffdd75"
+    },
+    {
+      "name": "accent-warning-light",
+      "value": "#ffa1a1"
+    },
+    {
+      "name": "accent-caution",
+      "value": "#ffe69f"
+    },
+    {
+      "name": "accent-warning-dark",
+      "value": "#b88a00"
+    },
+    {
+      "name": "accent-info",
+      "value": "#6cdaf2"
+    },
+    {
+      "name": "accent-info-light",
+      "value": "#83e4fa"
+    },
+    {
+      "name": "accent-info-active",
+      "value": "#a7e9f7"
+    },
+    {
+      "name": "accent-primary",
+      "value": "#3c7aae"
+    },
+    {
+      "name": "accent-primary-active",
+      "value": "#316091"
+    },
+    {
+      "name": "accent-error-disabled",
+      "value": "#db6379"
+    },
+    {
+      "name": "accent-primary-disabled",
+      "value": "#78a6d8"
+    },
+    {
+      "name": "focus-light",
+      "value": "#b51ad1"
+    },
+    {
+      "name": "focus-dark",
+      "value": "#f5a4ff"
+    },
+    {
+      "name": "background-light",
+      "value": "#f0f2f5"
+    },
+    {
+      "name": "metric-accent-mid",
+      "value": "#8ba6c5"
+    },
+    {
+      "name": "workspace-background-color",
+      "value": "#f0f2f5"
+    },
+    {
+      "name": "field-border-color-error-hover",
+      "value": "#c42f41"
+    },
+    {
+      "name": "field-listbox-selected-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "field-border-color",
+      "value": "#74818b"
+    },
+    {
+      "name": "field-background-color-disabled",
+      "value": "#5d676f"
+    },
+    {
+      "name": "alert-warning-background-color",
+      "value": "#d93251"
+    },
+    {
+      "name": "alert-warning-header-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "button-background-color-primary-disabled",
+      "value": "#79a7d9"
+    },
+    {
+      "name": "button-text-color-light",
+      "value": "#fff"
+    },
+    {
+      "name": "button-background-color-primary-active",
+      "value": "#a7e9f7"
+    },
+    {
+      "name": "button-background-color-error-active",
+      "value": "#fea7a6"
+    },
+    {
+      "name": "icon-button-content-color-light-disabled",
+      "value": "#ccc"
+    },
+    {
+      "name": "icon-button-background-color-light",
+      "value": "#dadada"
+    },
+    {
+      "name": "icon-button-background-color-light-active",
+      "value": "#c2c2c2"
+    },
+    {
+      "name": "dialog-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "dialog-heading-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "link-text-color-hover",
+      "value": "#3873a3"
+    },
+    {
+      "name": "tooltip-border-color",
+      "value": "#b3bfc6"
+    },
+    {
+      "name": "top-bar-accent-success",
+      "value": "#62e86b"
+    },
+    {
+      "name": "top-bar-background-color-active",
+      "value": "#0b0e11"
+    },
+    {
+      "name": "loader-overlay-border-color",
+      "value": "#5d676e"
+    },
+    {
+      "name": "tab-inactive-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "tab-panel-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "tab-active-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "tabs-active-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "table-header-background-color-hover",
+      "value": "#dddddd"
+    },
+    {
+      "name": "table-row-border-color",
+      "value": "#5d676f"
+    },
+    {
+      "name": "data-list-border-color",
+      "value": "#5d676f"
+    },
+    {
+      "name": "step-current-indicator-background",
+      "value": "#fff"
+    },
+    {
+      "name": "top-nav-border-bottom-color",
+      "value": "#5d676f"
+    },
+    {
+      "name": "two-column-panel-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "two-column-panel-border-color",
+      "value": "#5d676f"
+    },
+    {
+      "name": "two-column-panel-header-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "two-column-panel-accent-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "two-column-panel-group-heading-background-color",
+      "value": "#b3bfc6"
+    },
+    {
+      "name": "notice-info-color",
+      "value": "#f5f7f8"
+    },
+    {
+      "name": "notice-danger-color",
+      "value": "#fdf2f2"
+    },
+    {
+      "name": "notice-success-color",
+      "value": "#f3fcf7"
+    },
+    {
+      "name": "notice-info-border-color",
+      "value": "#547d93"
+    },
+    {
+      "name": "notice-caution-border-color",
+      "value": "#a16200"
+    },
+    {
+      "name": "notice-danger-border-color",
+      "value": "#df5252"
+    },
+    {
+      "name": "notice-success-border-color",
+      "value": "#4d8c6e"
+    },
+    {
+      "name": "notice-info-icon-color",
+      "value": "#547d93"
+    },
+    {
+      "name": "notice-danger-icon-color",
+      "value": "#df5252"
+    },
+    {
+      "name": "notice-success-icon-color",
+      "value": "#4d8c6e"
+    },
+    {
+      "name": "combobox-listbox-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "timeline-mark-border-color",
+      "value": "#fff"
+    },
+    {
+      "name": "impact-badge-moderate-border-color",
+      "value": "#eb94ff"
+    },
+    {
+      "name": "bottom-sheet-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "bottom-sheet-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "action-menu-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "action-list-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "action-list-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "stroke-light",
+      "value": "#b3bfc6"
+    },
+    {
+      "name": "gray-10",
+      "value": "#fdfdfe"
+    },
+    {
+      "name": "gray-30",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "gray-50",
+      "value": "#757575"
+    },
+    {
+      "name": "gray-80",
+      "value": "#4d4d4d"
+    },
+    {
+      "name": "light-workspace-color",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "field-placeholder-color",
+      "value": "#8c9fab"
+    },
+    {
+      "name": "loader-inner-ring-color",
+      "value": "#fff"
+    },
+    {
+      "name": "step-indicator-color",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "#3c7aae"
+    }
+  ],
+  "type": [
+    {
+      "name": "badge-font-size",
+      "fontFamily": "Roboto, Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "base-font-family",
+      "fontFamily": "Roboto, Helvetica, Arial, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "Tab",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#666666",
+      "padding": "16px"
+    },
+    {
+      "key": "Tag",
+      "kind": "badge",
+      "backgroundColor": "#f0f2f5",
+      "textColor": "#333333",
+      "rounded": "2.25rem",
+      "padding": "0 8px",
+      "border": "1px solid #e0e0e0"
+    },
+    {
+      "key": "Link",
+      "kind": "link",
+      "backgroundColor": "transparent",
+      "textColor": "#333333"
+    },
+    {
+      "key": "Toast",
+      "kind": "alert",
+      "textColor": "#0b0e11",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "Panel",
+      "kind": "panel",
+      "backgroundColor": "#ffffff",
+      "textColor": "#4d4d4d",
+      "rounded": "12px",
+      "padding": "16px",
+      "border": "1px solid #cccccc",
+      "shadow": "0 2px 4px -2px rgba(51, 51, 51, 0.08), 0 4px 8px -2px rgba(0, 0, 0, 0.04)"
+    },
+    {
+      "key": "Badge-2",
+      "kind": "badge",
+      "backgroundColor": "transparent",
+      "textColor": "#333333",
+      "rounded": "2.25rem",
+      "padding": "0 16px 0 12px",
+      "border": "1px solid #e0e0e0"
+    },
+    {
+      "key": "Dialog",
+      "kind": "modal",
+      "backgroundColor": "rgba(0, 0, 0, 0.5)"
+    },
+    {
+      "key": "NavBar",
+      "kind": "nav",
+      "backgroundColor": "#ffffff",
+      "textColor": "#02101a",
+      "padding": "0 16px"
+    },
+    {
+      "key": "Notice-2",
+      "kind": "alert",
+      "backgroundColor": "#f5f7f8",
+      "textColor": "#02101a",
+      "rounded": "4px",
+      "border": "1px solid #02101a"
+    },
+    {
+      "key": "Tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#fdfdfe",
+      "textColor": "#333333",
+      "rounded": "3px",
+      "padding": "4px 16px",
+      "border": "2px solid #333333",
+      "shadow": "0 8px 8px -4px rgba(0, 0, 0, 0.04), 0 20px 24px -4px rgba(51, 51, 51, 0.08)"
+    },
+    {
+      "key": "Popover-2",
+      "kind": "modal",
+      "backgroundColor": "#fdfdfe",
+      "textColor": "#333333",
+      "padding": "0 16px",
+      "border": "2px solid #333333",
+      "shadow": "0 8px 8px -4px rgba(0, 0, 0, 0.04), 0 20px 24px -4px rgba(51, 51, 51, 0.08)"
+    },
+    {
+      "key": "Dialog-3",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "border": "1px solid #cccccc",
+      "shadow": "0 8px 8px -4px rgba(0, 0, 0, 0.04), 0 20px 24px -4px rgba(51, 51, 51, 0.08)"
+    },
+    {
+      "key": "Radio",
+      "kind": "radio",
+      "textColor": "#333333",
+      "rounded": "50%",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "Breadcrumb-2",
+      "kind": "nav",
+      "textColor": "#333333"
+    },
+    {
+      "key": "Accordion",
+      "kind": "accordion",
+      "backgroundColor": "#ffffff",
+      "textColor": "#333333",
+      "rounded": "0 0 3px 3px",
+      "padding": "16px",
+      "border": "1px solid #cccccc"
+    },
+    {
+      "key": "Checkbox",
+      "kind": "checkbox",
+      "textColor": "#333333",
+      "rounded": "5px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "Accordion-2",
+      "kind": "accordion",
+      "backgroundColor": "#ffffff",
+      "textColor": "#333333",
+      "rounded": "3px",
+      "border": "1px solid #cccccc"
+    },
+    {
+      "key": "Breadcrumb-3",
+      "kind": "nav",
+      "textColor": "#666666",
+      "padding": "0 4px"
+    },
+    {
+      "key": "Button-tag",
+      "kind": "button",
+      "textColor": "#53636e",
+      "rounded": "3px"
+    },
+    {
+      "key": "Tab-active",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#316091",
+      "shadow": "inset 0 -2px 0 #3c7aae"
+    },
+    {
+      "key": "Tooltip-big",
+      "kind": "tooltip",
+      "backgroundColor": "#fff",
+      "rounded": "0",
+      "padding": "0",
+      "border": "1px solid #666666"
+    },
+    {
+      "key": "Button-error",
+      "kind": "button",
+      "backgroundColor": "#d93251",
+      "textColor": "#fff",
+      "rounded": "3px",
+      "padding": "0 16px",
+      "border": "1px solid transparent",
+      "shadow": "0 0 1px 2px #b51ad1"
+    },
+    {
+      "key": "Button-badge",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#333333",
+      "rounded": "2.25rem",
+      "padding": "0 16px 0 12px",
+      "border": "1px solid #e0e0e0"
+    },
+    {
+      "key": "Button-danger",
+      "kind": "button",
+      "backgroundColor": "#d93251",
+      "textColor": "#fff",
+      "rounded": "3px",
+      "padding": "0 16px",
+      "border": "1px solid transparent",
+      "shadow": "0 0 0 1px #d93251"
+    },
+    {
+      "key": "Tabs-horizontal",
+      "kind": "tabs",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#3c7aae",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f0f2f5",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Cauldron** is a light-first design system anchored on `#f0f2f5` canvas surfaces with `#0b0b0c` primary ink (17.5:1 contrast) and `#3c7aae` brand accent.\n\nTypography centers cleanly on `Roboto` (16px display down to 16px body), unified by `3px` base corner radius and subtle shadow elevation.\n\nMaintained by **Deque**. Source: published token package, package `@deque/cauldron-styles`. Inventory: **91** colors, **2** typography steps, and **29** documented components (MPL-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 29 component tokens with documented paddings: `16px`, `0 8px`, `8px 16px`, `0 16px 0 12px`, `0 16px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#b3bfc6` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 2px 4px -2px rgba(51, 51, 51, 0.08), 0 4px 8px -2px rgba(0, 0, 0, 0.04)`, `0 8px 8px -4px rgba(0, 0, 0, 0.04), 0 20px 24px -4px rgba(51, 51, 51, 0.08)`) paired with `#b3bfc6` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#3c7aae` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f0f2f5` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#3c7aae` with `#f7f7f8` text (4.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.\n- Apply `3px` base geometry across inputs and buttons (3px on outer containers).\n- Separate containers via `#fff` surface shifts and `#b3bfc6` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `3px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

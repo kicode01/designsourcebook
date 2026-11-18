@@ -1,0 +1,520 @@
+{
+  "canvas": "#f6f6f9",
+  "surface": "#f2f5f7",
+  "text": "#181c56",
+  "muted": "#626493",
+  "brand": "#181c56",
+  "border": "#949699",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "brand-blue",
+      "value": "#181c56"
+    },
+    {
+      "name": "brand-lavender",
+      "value": "#aeb7e2"
+    },
+    {
+      "name": "brand-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "brand-coral",
+      "value": "#ff5959"
+    },
+    {
+      "name": "brand-peach",
+      "value": "#ffbf9e"
+    },
+    {
+      "name": "neutral",
+      "value": "#f2f5f7"
+    },
+    {
+      "name": "accent",
+      "value": "#022231"
+    },
+    {
+      "name": "disabled",
+      "value": "#515254"
+    },
+    {
+      "name": "information",
+      "value": "#067eb2"
+    },
+    {
+      "name": "informationalt",
+      "value": "#64b3e7"
+    },
+    {
+      "name": "informationalt2",
+      "value": "#acd7f1"
+    },
+    {
+      "name": "neutralalt",
+      "value": "#b6b8ba"
+    },
+    {
+      "name": "neutralalt2",
+      "value": "#949699"
+    },
+    {
+      "name": "success",
+      "value": "#1a8e60"
+    },
+    {
+      "name": "successalt",
+      "value": "#5ac39a"
+    },
+    {
+      "name": "successalt2",
+      "value": "#9cd9c2"
+    },
+    {
+      "name": "warning",
+      "value": "#ffca28"
+    },
+    {
+      "name": "warningalt",
+      "value": "#ffe082"
+    },
+    {
+      "name": "warningalt2",
+      "value": "#ffeeb3"
+    },
+    {
+      "name": "disabledalt",
+      "value": "#b6b8ba"
+    },
+    {
+      "name": "airportlinkbus-contrast",
+      "value": "#fbafea"
+    },
+    {
+      "name": "airportlinkbus-default",
+      "value": "#800664"
+    },
+    {
+      "name": "airportlinkrail-contrast",
+      "value": "#fbafea"
+    },
+    {
+      "name": "airportlinkrail-default",
+      "value": "#800664"
+    },
+    {
+      "name": "focus-contrast",
+      "value": "#aeb7e2"
+    },
+    {
+      "name": "focus-standard",
+      "value": "#181c56"
+    },
+    {
+      "name": "airportlinkbus",
+      "value": "#fbafea"
+    },
+    {
+      "name": "airportlinkrail",
+      "value": "#fbafea"
+    },
+    {
+      "name": "text",
+      "value": "#181c56"
+    },
+    {
+      "name": "border-interactive",
+      "value": "#aeb7e2"
+    },
+    {
+      "name": "icon-disabled",
+      "value": "#b6b8ba"
+    },
+    {
+      "name": "text-disabled",
+      "value": "#b6b8ba"
+    },
+    {
+      "name": "text-active",
+      "value": "#181c56"
+    },
+    {
+      "name": "border-disabled",
+      "value": "#949699"
+    },
+    {
+      "name": "text-selected",
+      "value": "#181c56"
+    },
+    {
+      "name": "text-unselected",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-overflow",
+      "value": "#f6f6f9"
+    },
+    {
+      "name": "dateborder",
+      "value": "#e3e6e8"
+    },
+    {
+      "name": "text-accent",
+      "value": "#181c56"
+    },
+    {
+      "name": "text-subdued",
+      "value": "#626493"
+    },
+    {
+      "name": "border-default",
+      "value": "#8284ab"
+    },
+    {
+      "name": "border-negative",
+      "value": "#ff9494"
+    },
+    {
+      "name": "border-success",
+      "value": "#5ac39a"
+    },
+    {
+      "name": "icon-disabled-beta",
+      "value": "#b6b8ba"
+    },
+    {
+      "name": "text-content",
+      "value": "#181c56"
+    },
+    {
+      "name": "text-content-readonly",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-description",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-label",
+      "value": "#626493"
+    },
+    {
+      "name": "text-label-beta",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-disabled-beta",
+      "value": "#b6b8ba"
+    },
+    {
+      "name": "border-selected",
+      "value": "#aeb7e2"
+    },
+    {
+      "name": "text-rebate",
+      "value": "#5ac39a"
+    },
+    {
+      "name": "border-readonly",
+      "value": "#6e6f73"
+    },
+    {
+      "name": "text-bullet",
+      "value": "#ffffff"
+    },
+    {
+      "name": "subject-text",
+      "value": "#d9dae8"
+    },
+    {
+      "name": "stroke-disabled",
+      "value": "#949699"
+    },
+    {
+      "name": "stroke-success",
+      "value": "#5ac39a"
+    },
+    {
+      "name": "text-completed",
+      "value": "#ffffff"
+    },
+    {
+      "name": "text-uncompleted",
+      "value": "#aeb7e2"
+    },
+    {
+      "name": "text-negative",
+      "value": "#181c56"
+    },
+    {
+      "name": "bullet-border",
+      "value": "#181c56"
+    },
+    {
+      "name": "backgroundfalse",
+      "value": "#626493"
+    },
+    {
+      "name": "backgroundtrue-air",
+      "value": "#fbafea"
+    },
+    {
+      "name": "backgroundtrue-bicycle",
+      "value": "#00dbb6"
+    },
+    {
+      "name": "backgroundtrue-bus",
+      "value": "#ff6392"
+    },
+    {
+      "name": "backgroundtrue-cableway",
+      "value": "#b482fb"
+    },
+    {
+      "name": "backgroundtrue-carferry",
+      "value": "#6fdfff"
+    },
+    {
+      "name": "backgroundtrue-citybike",
+      "value": "#00dbb6"
+    },
+    {
+      "name": "backgroundtrue-ferry",
+      "value": "#6fdfff"
+    },
+    {
+      "name": "backgroundtrue-funicular",
+      "value": "#b482fb"
+    },
+    {
+      "name": "backgroundtrue-helicopter",
+      "value": "#fbafea"
+    },
+    {
+      "name": "backgroundtrue-metro",
+      "value": "#f08901"
+    },
+    {
+      "name": "backgroundtrue-mobility",
+      "value": "#00dbb6"
+    },
+    {
+      "name": "backgroundtrue-plane",
+      "value": "#fbafea"
+    },
+    {
+      "name": "backgroundtrue-rail",
+      "value": "#42a5f5"
+    },
+    {
+      "name": "backgroundtrue-railreplacementbus",
+      "value": "#ffe082"
+    },
+    {
+      "name": "backgroundtrue-regional-bus",
+      "value": "#b8db48"
+    },
+    {
+      "name": "backgroundtrue-snowcoach",
+      "value": "#ffe082"
+    },
+    {
+      "name": "backgroundtrue-taxi",
+      "value": "#ffe082"
+    },
+    {
+      "name": "backgroundtrue-train",
+      "value": "#42a5f5"
+    },
+    {
+      "name": "backgroundtrue-tram",
+      "value": "#b482fb"
+    },
+    {
+      "name": "backgroundtrue-walk",
+      "value": "#9ea0bd"
+    },
+    {
+      "name": "backgroundtrue-water",
+      "value": "#6fdfff"
+    },
+    {
+      "name": "backgroundtrue-airportlinkbus",
+      "value": "#fbafea"
+    },
+    {
+      "name": "backgroundtrue-airportlinkrail",
+      "value": "#fbafea"
+    },
+    {
+      "name": "icontrue-airportlinkbus",
+      "value": "#800664"
+    },
+    {
+      "name": "icontrue-airportlinkrail",
+      "value": "#800664"
+    },
+    {
+      "name": "backgroundtrue-bus-regional",
+      "value": "#427500"
+    },
+    {
+      "name": "icontrue-airportlinkbus2",
+      "value": "#800664"
+    },
+    {
+      "name": "primary",
+      "value": "#181c56"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-sizes-extra-large5",
+      "fontFamily": "Nationale",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "font-sizes-extra-large4",
+      "fontFamily": "Nationale",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "font-sizes-extra-large3",
+      "fontFamily": "Nationale",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "font-sizes-extra-large2",
+      "fontFamily": "Nationale",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-sizes-extra-large",
+      "fontFamily": "Nationale",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-family-mono",
+      "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-family-nationale",
+      "fontFamily": "Nationale",
+      "px": 16
+    },
+    {
+      "name": "font-sizes-large",
+      "fontFamily": "Nationale",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-sizes-medium",
+      "fontFamily": "Nationale",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-sizes-small",
+      "fontFamily": "Nationale",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-sizes-extra-small",
+      "fontFamily": "Nationale",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f2f5f7",
+      "textColor": "#181c56",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#181c56",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#181c56",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f2f5f7",
+      "textColor": "#181c56",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f2f5f7",
+      "textColor": "#181c56",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f6f6f9",
+      "textColor": "#181c56",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#181c56",
+      "textColor": "#f6f6f9",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f2f5f7",
+      "textColor": "#181c56",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Entur Design System** is a light-first design system anchored on `#f6f6f9` canvas surfaces with `#181c56` primary ink (14.5:1 contrast) and `#181c56` brand accent.\n\nDisplay headlines pair `Nationale` with `System Mono` body copy (40px display down to 16px body), unified by `8px` base corner radius and stepped `#f6f6f9` -> `#f2f5f7` surface layering.\n\nMaintained by **Entur**. Source: published token package, package `@entur/tokens`. Inventory: **91** colors, **11** typography steps, and **8** documented components (EUPL-1.2 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f2f5f7` cards; separate sibling sections using `#949699` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f6f6f9` -> `#f2f5f7`) and `1px solid #949699` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#181c56` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f6f6f9` (light) with `#181c56` primary text and `#626493` secondary labels.\n- Use `#181c56` with `#f7f7f8` text (14.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Nationale` headings with `System Mono` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f2f5f7` surface shifts and `#949699` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

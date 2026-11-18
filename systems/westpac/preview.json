@@ -1,0 +1,495 @@
+{
+  "canvas": "#f2f9f2",
+  "surface": "#f7f7f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "primitives-color-wbc-primary-400",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "50",
+      "value": "#f2f9f2"
+    },
+    {
+      "name": "primitives-color-success-50",
+      "value": "#f2f9f2"
+    },
+    {
+      "name": "primitives-color-success-300",
+      "value": "#47a447"
+    },
+    {
+      "name": "primitives-color-success-600",
+      "value": "#006d00"
+    },
+    {
+      "name": "primitives-color-success-900",
+      "value": "#003300"
+    },
+    {
+      "name": "primitives-color-info-100",
+      "value": "#d9eaf6"
+    },
+    {
+      "name": "primitives-color-info-400",
+      "value": "#2487cc"
+    },
+    {
+      "name": "primitives-color-info-700",
+      "value": "#005189"
+    },
+    {
+      "name": "primitives-color-info-950",
+      "value": "#001d31"
+    },
+    {
+      "name": "primitives-color-warning-200",
+      "value": "#e8b199"
+    },
+    {
+      "name": "primitives-color-warning-500",
+      "value": "#c53b00"
+    },
+    {
+      "name": "primitives-color-warning-800",
+      "value": "#6c2000"
+    },
+    {
+      "name": "primitives-color-danger-50",
+      "value": "#fcf2f2"
+    },
+    {
+      "name": "primitives-color-danger-300",
+      "value": "#db6363"
+    },
+    {
+      "name": "primitives-color-danger-600",
+      "value": "#a70000"
+    },
+    {
+      "name": "primitives-color-danger-900",
+      "value": "#4e0000"
+    },
+    {
+      "name": "primitives-color-wbc-primary-100",
+      "value": "#facccb"
+    },
+    {
+      "name": "primitives-color-wbc-primary-400",
+      "value": "#ee221b"
+    },
+    {
+      "name": "primitives-color-wbc-primary-700",
+      "value": "#99100b"
+    },
+    {
+      "name": "primitives-color-wbc-primary-950",
+      "value": "#370604"
+    },
+    {
+      "name": "primitives-color-stg-primary-200",
+      "value": "#f87272"
+    },
+    {
+      "name": "primitives-color-stg-primary-500",
+      "value": "#e30000"
+    },
+    {
+      "name": "primitives-color-stg-primary-800",
+      "value": "#750000"
+    },
+    {
+      "name": "primitives-color-bom-primary-50",
+      "value": "#fff4f3"
+    },
+    {
+      "name": "primitives-color-bom-primary-300",
+      "value": "#f24300"
+    },
+    {
+      "name": "primitives-color-bom-primary-600",
+      "value": "#b02f00"
+    },
+    {
+      "name": "primitives-color-bom-primary-900",
+      "value": "#501000"
+    },
+    {
+      "name": "primitives-color-bsa-primary-100",
+      "value": "#fccbcc"
+    },
+    {
+      "name": "primitives-color-bsa-primary-400",
+      "value": "#ed1f30"
+    },
+    {
+      "name": "primitives-color-bsa-primary-700",
+      "value": "#98101b"
+    },
+    {
+      "name": "primitives-color-bsa-primary-950",
+      "value": "#380205"
+    },
+    {
+      "name": "reserved-success-200",
+      "value": "#99cc99"
+    },
+    {
+      "name": "reserved-success-500",
+      "value": "#008000"
+    },
+    {
+      "name": "reserved-success-800",
+      "value": "#004600"
+    },
+    {
+      "name": "reserved-info-50",
+      "value": "#f2f8fc"
+    },
+    {
+      "name": "reserved-info-300",
+      "value": "#459ad4"
+    },
+    {
+      "name": "reserved-info-600",
+      "value": "#0063a7"
+    },
+    {
+      "name": "reserved-info-900",
+      "value": "#002e4e"
+    },
+    {
+      "name": "reserved-warning-100",
+      "value": "#f3d8cc"
+    },
+    {
+      "name": "reserved-warning-400",
+      "value": "#ce5826"
+    },
+    {
+      "name": "reserved-warning-700",
+      "value": "#8a2900"
+    },
+    {
+      "name": "reserved-warning-950",
+      "value": "#310f00"
+    },
+    {
+      "name": "reserved-danger-200",
+      "value": "#eaa6a6"
+    },
+    {
+      "name": "reserved-danger-500",
+      "value": "#c40000"
+    },
+    {
+      "name": "reserved-danger-800",
+      "value": "#6c0000"
+    },
+    {
+      "name": "bom-primary-50",
+      "value": "#fff4f3"
+    },
+    {
+      "name": "bom-primary-300",
+      "value": "#f24300"
+    },
+    {
+      "name": "bom-primary-600",
+      "value": "#b02f00"
+    },
+    {
+      "name": "bom-primary-900",
+      "value": "#501000"
+    },
+    {
+      "name": "bsa-primary-100",
+      "value": "#fccbcc"
+    },
+    {
+      "name": "bsa-primary-400",
+      "value": "#ed1f30"
+    },
+    {
+      "name": "bsa-primary-700",
+      "value": "#98101b"
+    },
+    {
+      "name": "bsa-primary-950",
+      "value": "#380205"
+    },
+    {
+      "name": "stg-primary-200",
+      "value": "#f87272"
+    },
+    {
+      "name": "stg-primary-500",
+      "value": "#e30000"
+    },
+    {
+      "name": "stg-primary-800",
+      "value": "#750000"
+    },
+    {
+      "name": "wbc-primary-50",
+      "value": "#fff0f0"
+    },
+    {
+      "name": "wbc-primary-300",
+      "value": "#f1423c"
+    },
+    {
+      "name": "wbc-primary-600",
+      "value": "#b9140e"
+    },
+    {
+      "name": "wbc-primary-900",
+      "value": "#570906"
+    },
+    {
+      "name": "color-gel-background",
+      "value": "#f3f5f6"
+    },
+    {
+      "name": "color-gel-link",
+      "value": "#1871c9"
+    },
+    {
+      "name": "primitives-color-system-800",
+      "value": "#8c8c00"
+    },
+    {
+      "name": "primitives-color-wbc-hero-500",
+      "value": "#1f1c4f"
+    },
+    {
+      "name": "primitives-color-wbc-holler-200",
+      "value": "#ce84f0"
+    },
+    {
+      "name": "primitives-color-wbc-sing-950",
+      "value": "#410000"
+    },
+    {
+      "name": "primitives-color-stg-muted-700",
+      "value": "#4c4c48"
+    },
+    {
+      "name": "primitives-color-stg-pop-400",
+      "value": "#93d83b"
+    },
+    {
+      "name": "primitives-color-stg-sing-100",
+      "value": "#e1f4fe"
+    },
+    {
+      "name": "primitives-color-stg-dance-900",
+      "value": "#421a00"
+    },
+    {
+      "name": "primitives-color-bom-hero-600",
+      "value": "#433781"
+    },
+    {
+      "name": "primitives-color-bom-holler-300",
+      "value": "#a39cdc"
+    },
+    {
+      "name": "primitives-color-bom-dance-50",
+      "value": "#ffe9e7"
+    },
+    {
+      "name": "primitives-color-bsa-muted-800",
+      "value": "#323238"
+    },
+    {
+      "name": "primitives-color-bsa-pop-500",
+      "value": "#00adbd"
+    },
+    {
+      "name": "primitives-color-bsa-sing-200",
+      "value": "#b5e2a7"
+    },
+    {
+      "name": "primitives-color-bsa-dance-950",
+      "value": "#311b02"
+    },
+    {
+      "name": "bom-muted-100",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "bom-hero-900",
+      "value": "#20024e"
+    },
+    {
+      "name": "bom-holler-600",
+      "value": "#5141ac"
+    },
+    {
+      "name": "bom-dance-300",
+      "value": "#ff6244"
+    },
+    {
+      "name": "bsa-hero-50",
+      "value": "#e9f1fb"
+    },
+    {
+      "name": "bsa-pop-800",
+      "value": "#00545c"
+    },
+    {
+      "name": "bsa-sing-500",
+      "value": "#5cbb3e"
+    },
+    {
+      "name": "stg-muted-200",
+      "value": "#e1e1e0"
+    },
+    {
+      "name": "stg-hero-950",
+      "value": "#002a1c"
+    },
+    {
+      "name": "stg-holler-700",
+      "value": "#3e225f"
+    },
+    {
+      "name": "stg-dance-400",
+      "value": "#ff9752"
+    },
+    {
+      "name": "wbc-hero-100",
+      "value": "#e2e1f4"
+    },
+    {
+      "name": "wbc-pop-900",
+      "value": "#59154d"
+    },
+    {
+      "name": "primary",
+      "value": "#facccb"
+    }
+  ],
+  "type": [
+    {
+      "name": "form-control-font-size-xlarge",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-family-sans",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "font-brand",
+      "fontFamily": "\"Brown Pro\"",
+      "px": 16
+    },
+    {
+      "name": "form-control-font-size-medium",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "form-control-font-size-large",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "form-control-font-size-small",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "primitives-color-wbc-primary-400",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "primitives-color-wbc-primary-400",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f2f9f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f2f9f2",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**GEL** is a light-first design system anchored on `#f2f9f2` canvas surfaces with `#0b0b0c` primary ink (18.4:1 contrast) and `primitives-color-wbc-primary-400` brand accent.\n\nTypography centers cleanly on `System UI` (18px display down to 16px body), unified by `8px` base corner radius and stepped `#f2f9f2` -> `#f7f7f7` surface layering.\n\nMaintained by **Westpac**. Source: published token package (https://github.com/WestpacGEL/GEL-next), repo https://github.com/WestpacGEL/GEL-next. Inventory: **91** colors, **7** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f7f7f7` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f2f9f2` -> `#f7f7f7`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `primitives-color-wbc-primary-400` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f2f9f2` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `primitives-color-wbc-primary-400` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f7f7f7` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

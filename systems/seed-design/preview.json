@@ -1,0 +1,910 @@
+{
+  "canvas": "#fff",
+  "surface": "#f7f8f9",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#f60",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "20px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "seed-color-manner-temp-l1-text",
+      "value": "#757b85"
+    },
+    {
+      "name": "seed-color-manner-temp-l10-text",
+      "value": "#cb0123"
+    },
+    {
+      "name": "seed-color-manner-temp-l2-text",
+      "value": "#ab863f"
+    },
+    {
+      "name": "seed-color-manner-temp-l3-text",
+      "value": "#e08a00"
+    },
+    {
+      "name": "seed-color-manner-temp-l4-text",
+      "value": "#f57e00"
+    },
+    {
+      "name": "seed-color-manner-temp-l5-text",
+      "value": "#ff7300"
+    },
+    {
+      "name": "seed-color-manner-temp-l6-text",
+      "value": "#ff6600"
+    },
+    {
+      "name": "seed-color-manner-temp-l7-text",
+      "value": "#ff5100"
+    },
+    {
+      "name": "seed-color-manner-temp-l8-text",
+      "value": "#ff3300"
+    },
+    {
+      "name": "seed-color-manner-temp-l9-text",
+      "value": "#e82c45"
+    },
+    {
+      "name": "seed-color-fg-brand",
+      "value": "#f60"
+    },
+    {
+      "name": "seed-color-fg-brand-contrast",
+      "value": "#e14d00"
+    },
+    {
+      "name": "seed-color-fg-disabled",
+      "value": "#d1d3d8"
+    },
+    {
+      "name": "seed-color-fg-informative",
+      "value": "#217cf9"
+    },
+    {
+      "name": "seed-color-fg-informative-contrast",
+      "value": "#0b4596"
+    },
+    {
+      "name": "seed-color-fg-neutral",
+      "value": "#1a1c20"
+    },
+    {
+      "name": "seed-color-fg-neutral-inverted",
+      "value": "#fff"
+    },
+    {
+      "name": "seed-color-fg-neutral-muted",
+      "value": "#555d6d"
+    },
+    {
+      "name": "seed-color-fg-neutral-subtle",
+      "value": "#868b94"
+    },
+    {
+      "name": "seed-color-fg-on-brand-solid",
+      "value": "#fff"
+    },
+    {
+      "name": "seed-color-fg-on-informative-solid",
+      "value": "#fff"
+    },
+    {
+      "name": "seed-color-fg-on-neutral-solid",
+      "value": "#fff"
+    },
+    {
+      "name": "seed-color-fg-warning",
+      "value": "#9b7821"
+    },
+    {
+      "name": "seed-color-fg-warning-contrast",
+      "value": "#4f3e1f"
+    },
+    {
+      "name": "seed-color-bg-brand-solid",
+      "value": "#f60"
+    },
+    {
+      "name": "seed-color-bg-brand-solid-pressed",
+      "value": "#e14d00"
+    },
+    {
+      "name": "seed-color-bg-brand-weak",
+      "value": "#fff2ec"
+    },
+    {
+      "name": "seed-color-bg-brand-weak-pressed",
+      "value": "#ffe8db"
+    },
+    {
+      "name": "seed-color-bg-disabled",
+      "value": "#f3f4f5"
+    },
+    {
+      "name": "seed-color-bg-informative-solid",
+      "value": "#217cf9"
+    },
+    {
+      "name": "seed-color-bg-informative-solid-pressed",
+      "value": "#135fcd"
+    },
+    {
+      "name": "seed-color-bg-informative-weak",
+      "value": "#eff6ff"
+    },
+    {
+      "name": "seed-color-bg-informative-weak-pressed",
+      "value": "#e2edfc"
+    },
+    {
+      "name": "seed-color-bg-neutral-inverted",
+      "value": "#2a3038"
+    },
+    {
+      "name": "seed-color-bg-neutral-inverted-pressed",
+      "value": "#555d6d"
+    },
+    {
+      "name": "seed-color-bg-neutral-muted",
+      "value": "#f7f8f9"
+    },
+    {
+      "name": "seed-color-bg-neutral-solid",
+      "value": "#2a3038"
+    },
+    {
+      "name": "seed-color-bg-neutral-solid-pressed",
+      "value": "#555d6d"
+    },
+    {
+      "name": "seed-color-bg-neutral-solid-muted",
+      "value": "#555d6d"
+    },
+    {
+      "name": "seed-color-bg-neutral-solid-muted-pressed",
+      "value": "#2a3038"
+    },
+    {
+      "name": "seed-color-bg-neutral-subtle",
+      "value": "#fff"
+    },
+    {
+      "name": "seed-color-bg-neutral-weak",
+      "value": "#f3f4f5"
+    },
+    {
+      "name": "seed-color-bg-neutral-weak-pressed",
+      "value": "#eeeff1"
+    },
+    {
+      "name": "seed-color-bg-warning-solid",
+      "value": "#fbdc65"
+    },
+    {
+      "name": "seed-color-bg-warning-solid-pressed",
+      "value": "#e9c647"
+    },
+    {
+      "name": "seed-color-bg-warning-weak",
+      "value": "#fff7de"
+    },
+    {
+      "name": "seed-color-bg-warning-weak-pressed",
+      "value": "#fdefb9"
+    },
+    {
+      "name": "seed-color-stroke-brand-solid",
+      "value": "#e14d00"
+    },
+    {
+      "name": "seed-color-stroke-brand-weak",
+      "value": "#ffd5c0"
+    },
+    {
+      "name": "seed-color-stroke-focus-ring",
+      "value": "#5e98fe"
+    },
+    {
+      "name": "seed-color-stroke-informative-solid",
+      "value": "#217cf9"
+    },
+    {
+      "name": "seed-color-stroke-informative-weak",
+      "value": "#cbdffa"
+    },
+    {
+      "name": "seed-color-stroke-neutral-contrast",
+      "value": "#1a1c20"
+    },
+    {
+      "name": "seed-color-stroke-neutral-solid",
+      "value": "#555d6d"
+    },
+    {
+      "name": "seed-color-stroke-warning-solid",
+      "value": "#9b7821"
+    },
+    {
+      "name": "seed-color-stroke-warning-weak",
+      "value": "#fbdc65"
+    },
+    {
+      "name": "seed-color-palette-gray-00",
+      "value": "#ffffff"
+    },
+    {
+      "name": "seed-color-palette-gray-600",
+      "value": "#b0b3ba"
+    },
+    {
+      "name": "seed-color-palette-carrot-200",
+      "value": "#ffe8db"
+    },
+    {
+      "name": "seed-color-palette-carrot-800",
+      "value": "#b93901"
+    },
+    {
+      "name": "seed-color-palette-blue-400",
+      "value": "#aacefd"
+    },
+    {
+      "name": "seed-color-palette-blue-1000",
+      "value": "#032451"
+    },
+    {
+      "name": "seed-color-palette-red-600",
+      "value": "#fc6a66"
+    },
+    {
+      "name": "seed-color-palette-green-200",
+      "value": "#d9f6e9"
+    },
+    {
+      "name": "seed-color-palette-green-800",
+      "value": "#00745f"
+    },
+    {
+      "name": "seed-color-palette-yellow-400",
+      "value": "#e9c647"
+    },
+    {
+      "name": "seed-color-palette-yellow-1000",
+      "value": "#2c2512"
+    },
+    {
+      "name": "seed-color-palette-purple-600",
+      "value": "#9f84fb"
+    },
+    {
+      "name": "seed-color-palette-static-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "seed-color-manner-temp-l4-bg",
+      "value": "#fff3e5"
+    },
+    {
+      "name": "seed-color-banner-blue",
+      "value": "#e1f7ff"
+    },
+    {
+      "name": "seed-color-banner-red",
+      "value": "#ffecee"
+    },
+    {
+      "name": "seed-static-color-static-gray-900",
+      "value": "#212124"
+    },
+    {
+      "name": "seed-static-color-static-yellow-800",
+      "value": "#ba5e02"
+    },
+    {
+      "name": "seed-scale-color-gray-50",
+      "value": "#f7f8fa"
+    },
+    {
+      "name": "seed-scale-color-gray-600",
+      "value": "#868b94"
+    },
+    {
+      "name": "seed-scale-color-carrot-50",
+      "value": "#fff5f0"
+    },
+    {
+      "name": "seed-scale-color-carrot-600",
+      "value": "#fa6616"
+    },
+    {
+      "name": "seed-scale-color-blue-100",
+      "value": "#d2edfa"
+    },
+    {
+      "name": "seed-scale-color-blue-700",
+      "value": "#0077b2"
+    },
+    {
+      "name": "seed-scale-color-red-200",
+      "value": "#fcd2cf"
+    },
+    {
+      "name": "seed-scale-color-red-800",
+      "value": "#a62014"
+    },
+    {
+      "name": "seed-scale-color-green-300",
+      "value": "#6adeac"
+    },
+    {
+      "name": "seed-scale-color-green-900",
+      "value": "#004f40"
+    },
+    {
+      "name": "seed-scale-color-yellow-400",
+      "value": "#dea651"
+    },
+    {
+      "name": "seed-scale-color-yellow-950",
+      "value": "#4d361a"
+    },
+    {
+      "name": "seed-scale-color-pink-500",
+      "value": "#f0657c"
+    },
+    {
+      "name": "seed-scale-color-purple-50",
+      "value": "#f6f4fe"
+    },
+    {
+      "name": "seed-scale-color-purple-600",
+      "value": "#8361e8"
+    },
+    {
+      "name": "seed-color-fg-critical-contrast",
+      "value": "#921708"
+    },
+    {
+      "name": "primary",
+      "value": "#f60"
+    }
+  ],
+  "type": [
+    {
+      "name": "seed-scale-dimension-font-size-1300",
+      "fontFamily": "system-ui",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "seed-scale-dimension-font-size-1200",
+      "fontFamily": "system-ui",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "seed-scale-dimension-font-size-1100",
+      "fontFamily": "system-ui",
+      "fontSize": "3.375rem",
+      "px": 54
+    },
+    {
+      "name": "seed-font-size-t14-static",
+      "fontFamily": "system-ui",
+      "fontSize": "48px",
+      "px": 48
+    },
+    {
+      "name": "seed-scale-dimension-font-size-1000",
+      "fontFamily": "system-ui",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "seed-scale-dimension-font-size-900",
+      "fontFamily": "system-ui",
+      "fontSize": "2.625rem",
+      "px": 42
+    },
+    {
+      "name": "seed-font-size-t13-static",
+      "fontFamily": "system-ui",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "seed-scale-dimension-font-size-800",
+      "fontFamily": "system-ui",
+      "fontSize": "2.125rem",
+      "px": 34
+    },
+    {
+      "name": "seed-font-size-t12-static",
+      "fontFamily": "system-ui",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "seed-scale-dimension-font-size-700",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "seed-font-size-t11-static",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "seed-font-size-t10-static",
+      "fontFamily": "system-ui",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "seed-scale-dimension-font-size-600",
+      "fontFamily": "system-ui",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "seed-font-size-t9-static",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "seed-scale-dimension-font-size-500",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "seed-font-size-t8-static",
+      "fontFamily": "system-ui",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "seed-font-size-t7-static",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "seed-scale-dimension-font-size-400",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "seed-font-size-t6-static",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "seed-scale-dimension-font-size-300",
+      "fontFamily": "system-ui",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "seed-font-size-t5-static",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "seed-scale-dimension-font-size-200",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "seed-scale-dimension-font-size-150",
+      "fontFamily": "system-ui",
+      "fontSize": "0.9375rem",
+      "px": 15
+    },
+    {
+      "name": "seed-font-size-t4-static",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "seed-scale-dimension-font-size-100",
+      "fontFamily": "system-ui",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "seed-font-size-t3-static",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "seed-scale-dimension-font-size-75",
+      "fontFamily": "system-ui",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "seed-font-size-t2-static",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "seed-scale-dimension-font-size-50",
+      "fontFamily": "system-ui",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "seed-font-size-t1-static",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "seed-scale-dimension-font-size-25",
+      "fontFamily": "system-ui",
+      "fontSize": "0.6875rem",
+      "px": 11
+    },
+    {
+      "name": "seed-scale-dimension-font-size-10",
+      "fontFamily": "system-ui",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "shadow": "inset 0 -1px #00000010"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "callout",
+      "kind": "alert",
+      "backgroundColor": "#0000",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "tabs-2",
+      "kind": "tabs",
+      "backgroundColor": "#0000",
+      "textColor": "#868b94",
+      "border": "none"
+    },
+    {
+      "key": "popover-2",
+      "kind": "modal",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "dialog-3",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "20px"
+    },
+    {
+      "key": "seed-reaction-button",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "textColor": "#1a1c20",
+      "border": "none",
+      "shadow": "inset 0 0 0 1px #000f3323"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "rounded": "20px",
+      "shadow": "0px 4px 16px 0px #0000001f"
+    },
+    {
+      "key": "tabs-3",
+      "kind": "tabs",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "accordion",
+      "kind": "accordion",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-image-frame-icon",
+      "kind": "icon",
+      "textColor": "#fff"
+    },
+    {
+      "key": "select-box-2",
+      "kind": "select",
+      "backgroundColor": "#0000",
+      "rounded": "12px",
+      "shadow": "inset 0 0 0 1px #000f3323"
+    },
+    {
+      "key": "seed-field-label",
+      "kind": "input",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "select-box-3",
+      "kind": "select",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-side-panel",
+      "kind": "panel",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-text-input",
+      "kind": "input",
+      "textColor": "#1a1c20",
+      "border": "none"
+    },
+    {
+      "key": "seed-notification-badge-2",
+      "kind": "badge",
+      "backgroundColor": "#f60",
+      "textColor": "#fff"
+    },
+    {
+      "key": "seed-search-input-2",
+      "kind": "input",
+      "backgroundColor": "#f3f4f5"
+    },
+    {
+      "key": "alert-dialog-2",
+      "kind": "alert",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "input-button-3",
+      "kind": "button",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-page-banner-3",
+      "kind": "alert",
+      "backgroundColor": "#0000",
+      "rounded": "4px",
+      "border": "none"
+    },
+    {
+      "key": "seed-side-panel-2",
+      "kind": "panel",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "pagination-page-item",
+      "kind": "nav",
+      "textColor": "#1a1c20",
+      "rounded": "8px",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "seed-side-panel-3",
+      "kind": "panel",
+      "backgroundColor": "#00000074"
+    },
+    {
+      "key": "tag-group-3",
+      "kind": "badge",
+      "textColor": "#b0b3ba"
+    },
+    {
+      "key": "accordion-2",
+      "kind": "accordion",
+      "textColor": "#868b94"
+    },
+    {
+      "key": "accordion-3",
+      "kind": "accordion",
+      "textColor": "#868b94"
+    },
+    {
+      "key": "seed-field-label-2",
+      "kind": "input",
+      "textColor": "#868b94"
+    },
+    {
+      "key": "seed-field-label-3",
+      "kind": "input",
+      "textColor": "#fa342c"
+    },
+    {
+      "key": "seed-floating-action-button-2",
+      "kind": "button",
+      "backgroundColor": "#f60",
+      "textColor": "#fff",
+      "rounded": "9999px",
+      "border": "none",
+      "shadow": "0px 4px 16px 0px #0000001f"
+    },
+    {
+      "key": "seed-floating-action-button-3",
+      "kind": "button",
+      "textColor": "#fff"
+    },
+    {
+      "key": "seed-image-frame-reaction-button-4",
+      "kind": "button",
+      "textColor": "#fff"
+    },
+    {
+      "key": "dialog-2",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "20px"
+    },
+    {
+      "key": "select-3",
+      "kind": "select",
+      "backgroundColor": "#00000010"
+    },
+    {
+      "key": "alert-dialog",
+      "kind": "alert",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-field-button",
+      "kind": "button",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-search-input-3",
+      "kind": "input",
+      "backgroundColor": "#0000",
+      "textColor": "#1a1c20",
+      "padding": "0"
+    },
+    {
+      "key": "callout-2",
+      "kind": "alert",
+      "backgroundColor": "#0000",
+      "rounded": "8px"
+    },
+    {
+      "key": "seed-field-button-2",
+      "kind": "button",
+      "backgroundColor": "#0000"
+    },
+    {
+      "key": "tag-group",
+      "kind": "badge",
+      "textColor": "#b0b3ba"
+    },
+    {
+      "key": "alert-dialog-3",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "rounded": "20px"
+    },
+    {
+      "key": "seed-reaction-button-3",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "border": "1px solid #000f3323"
+    },
+    {
+      "key": "seed-reaction-button-4",
+      "kind": "button",
+      "textColor": "#1a1c20"
+    },
+    {
+      "key": "seed-notification-badge-3",
+      "kind": "badge",
+      "textColor": "#fff"
+    },
+    {
+      "key": "chip-variant_solid",
+      "kind": "badge",
+      "backgroundColor": "#14273b0d"
+    },
+    {
+      "key": "radio-disabled_true",
+      "kind": "radio",
+      "textColor": "#d1d3d8"
+    },
+    {
+      "key": "checkbox-disabled_true",
+      "kind": "checkbox",
+      "textColor": "#d1d3d8"
+    },
+    {
+      "key": "seed-action-button-variant_ghost",
+      "kind": "button",
+      "backgroundColor": "#fff0"
+    },
+    {
+      "key": "seed-action-button-variant_ghost-disabled_true",
+      "kind": "button",
+      "backgroundColor": "#ffffff00"
+    },
+    {
+      "key": "seed-page-banner",
+      "kind": "alert",
+      "backgroundColor": "#0000",
+      "border": "none"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**SEED Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#f60` brand accent.\n\nTypography centers cleanly on `System UI` (72px display down to 16px body), unified by `20px` base corner radius and subtle shadow elevation.\n\nMaintained by **Daangn**. Source: published token package (https://github.com/daangn/seed-design), repo https://github.com/daangn/seed-design. Inventory: **91** colors, **33** typography steps, and **56** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 56 component tokens with documented paddings: `0`, `10px 14px`, `6px 10px`.\n- **Hierarchy**: Group controls cleanly within `#f7f8f9` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`inset 0 -1px #00000010`, `inset 0 0 0 1px #000f3323`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#f60` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#f60` with `#f7f7f8` text (2.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `20px` base geometry across inputs and buttons (20px on outer containers).\n- Separate containers via `#f7f8f9` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `20px` baseline.\n- Do not truncate or drop border contrast on `seed-field-label` fields and secondary buttons."
+}

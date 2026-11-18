@@ -1,0 +1,42 @@
+{
+  "name": "bulma",
+  "displayName": "Bulma CSS",
+  "description": "Bulma CSS — tokens imported from bulma.",
+  "style": "Bulma CSS — tokens imported from bulma.",
+  "category": "Bulma",
+  "org": "Bulma",
+  "theme": "light",
+  "tags": [
+    "published",
+    "bulma",
+    "light"
+  ],
+  "homepage": "https://bulma.io",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from bulma@1.0.4 (2 token files, 33 colours harvested, 33 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "bulma",
+    "version": "1.0.4"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 34,
+    "typography": 20,
+    "components": 16
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

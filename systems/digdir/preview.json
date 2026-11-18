@@ -1,0 +1,461 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#eeb04c",
+  "border": "#bbbcbd",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-accent-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-accent-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-accent-surface-hover",
+      "value": "#c7ddf0"
+    },
+    {
+      "name": "color-accent-border-subtle",
+      "value": "#99c0e3"
+    },
+    {
+      "name": "color-accent-border-strong",
+      "value": "#005db1"
+    },
+    {
+      "name": "color-accent-text-default",
+      "value": "#002c54"
+    },
+    {
+      "name": "color-accent-base-hover",
+      "value": "#004f96"
+    },
+    {
+      "name": "color-accent-base-contrast-subtle",
+      "value": "#dbe9f5"
+    },
+    {
+      "name": "color-neutral-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-neutral-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-neutral-surface-hover",
+      "value": "#d9dadb"
+    },
+    {
+      "name": "color-neutral-border-subtle",
+      "value": "#bbbcbd"
+    },
+    {
+      "name": "color-neutral-border-strong",
+      "value": "#5b5d60"
+    },
+    {
+      "name": "color-neutral-text-default",
+      "value": "#292c30"
+    },
+    {
+      "name": "color-neutral-base-hover",
+      "value": "#36383c"
+    },
+    {
+      "name": "color-neutral-base-contrast-subtle",
+      "value": "#b9babb"
+    },
+    {
+      "name": "color-brand1-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-brand1-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-brand1-surface-hover",
+      "value": "#c6dfd9"
+    },
+    {
+      "name": "color-brand1-border-subtle",
+      "value": "#96c5b9"
+    },
+    {
+      "name": "color-brand1-border-strong",
+      "value": "#0b6a53"
+    },
+    {
+      "name": "color-brand1-text-default",
+      "value": "#053227"
+    },
+    {
+      "name": "color-brand1-base-hover",
+      "value": "#0b644e"
+    },
+    {
+      "name": "color-brand1-base-contrast-subtle",
+      "value": "#ebf4f2"
+    },
+    {
+      "name": "color-brand2-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-brand2-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-brand2-surface-hover",
+      "value": "#ddd7eb"
+    },
+    {
+      "name": "color-brand2-border-subtle",
+      "value": "#c1b6db"
+    },
+    {
+      "name": "color-brand2-border-strong",
+      "value": "#674da7"
+    },
+    {
+      "name": "color-brand2-text-default",
+      "value": "#312256"
+    },
+    {
+      "name": "color-brand2-base-hover",
+      "value": "#47317c"
+    },
+    {
+      "name": "color-brand2-base-contrast-subtle",
+      "value": "#f1eff7"
+    },
+    {
+      "name": "color-info-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-info-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-info-surface-hover",
+      "value": "#c5ddf0"
+    },
+    {
+      "name": "color-info-border-subtle",
+      "value": "#94c1e3"
+    },
+    {
+      "name": "color-info-border-strong",
+      "value": "#0860a3"
+    },
+    {
+      "name": "color-info-text-default",
+      "value": "#042d4d"
+    },
+    {
+      "name": "color-info-base-hover",
+      "value": "#085d9f"
+    },
+    {
+      "name": "color-info-base-contrast-subtle",
+      "value": "#eff6fb"
+    },
+    {
+      "name": "color-success-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-success-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-success-surface-hover",
+      "value": "#c3e2c7"
+    },
+    {
+      "name": "color-success-border-subtle",
+      "value": "#8fc997"
+    },
+    {
+      "name": "color-success-border-strong",
+      "value": "#056d13"
+    },
+    {
+      "name": "color-success-text-default",
+      "value": "#023409"
+    },
+    {
+      "name": "color-success-base-hover",
+      "value": "#057014"
+    },
+    {
+      "name": "color-success-base-contrast-subtle",
+      "value": "#fafdfb"
+    },
+    {
+      "name": "color-warning-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-warning-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-warning-surface-hover",
+      "value": "#f6d5a0"
+    },
+    {
+      "name": "color-warning-border-subtle",
+      "value": "#eeb04c"
+    },
+    {
+      "name": "color-warning-border-strong",
+      "value": "#80540f"
+    },
+    {
+      "name": "color-warning-text-default",
+      "value": "#3c2807"
+    },
+    {
+      "name": "color-warning-base-hover",
+      "value": "#cd8818"
+    },
+    {
+      "name": "color-warning-base-contrast-subtle",
+      "value": "#271a04"
+    },
+    {
+      "name": "color-danger-background-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-danger-surface-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-danger-surface-hover",
+      "value": "#f3d2d2"
+    },
+    {
+      "name": "color-danger-border-subtle",
+      "value": "#e8adad"
+    },
+    {
+      "name": "color-danger-border-strong",
+      "value": "#b81a1a"
+    },
+    {
+      "name": "color-danger-text-default",
+      "value": "#590d0d"
+    },
+    {
+      "name": "color-danger-base-hover",
+      "value": "#9b1616"
+    },
+    {
+      "name": "color-danger-base-contrast-subtle",
+      "value": "#f7e1e1"
+    },
+    {
+      "name": "color-focus-inner",
+      "value": "#ffffff"
+    },
+    {
+      "name": "link-color-visited",
+      "value": "#663299"
+    },
+    {
+      "name": "color-brand3-background-tinted",
+      "value": "#fdf1f3"
+    },
+    {
+      "name": "color-brand3-surface-tinted",
+      "value": "#fbe3e6"
+    },
+    {
+      "name": "color-brand3-surface-active",
+      "value": "#f5bbc4"
+    },
+    {
+      "name": "color-brand3-border-default",
+      "value": "#e1344f"
+    },
+    {
+      "name": "color-brand3-text-subtle",
+      "value": "#b1253a"
+    },
+    {
+      "name": "color-brand3-base-default",
+      "value": "#E02F4A"
+    },
+    {
+      "name": "color-brand3-base-active",
+      "value": "#ec7f90"
+    },
+    {
+      "name": "color-brand3-base-contrast-default",
+      "value": "#000000"
+    },
+    {
+      "name": "color-accent-background-tinted",
+      "value": "#eef4fa"
+    },
+    {
+      "name": "color-accent-surface-tinted",
+      "value": "#ddeaf6"
+    },
+    {
+      "name": "color-accent-surface-active",
+      "value": "#afcee9"
+    },
+    {
+      "name": "color-accent-border-default",
+      "value": "#2a7cc5"
+    },
+    {
+      "name": "color-accent-text-subtle",
+      "value": "#005db1"
+    },
+    {
+      "name": "color-accent-base-default",
+      "value": "#0062BA"
+    },
+    {
+      "name": "color-accent-base-active",
+      "value": "#003d75"
+    },
+    {
+      "name": "color-accent-base-contrast-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-neutral-background-tinted",
+      "value": "#f3f3f4"
+    },
+    {
+      "name": "color-neutral-surface-tinted",
+      "value": "#e8e8e9"
+    },
+    {
+      "name": "color-neutral-surface-active",
+      "value": "#c9cacb"
+    },
+    {
+      "name": "color-neutral-border-default",
+      "value": "#77797b"
+    },
+    {
+      "name": "color-neutral-text-subtle",
+      "value": "#5b5d60"
+    },
+    {
+      "name": "color-neutral-base-default",
+      "value": "#24272B"
+    },
+    {
+      "name": "color-neutral-base-active",
+      "value": "#484a4e"
+    },
+    {
+      "name": "color-neutral-base-contrast-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#eeb04c"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-family",
+      "fontFamily": "Inter",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#eeb04c",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#eeb04c",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Designsystemet** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#eeb04c` brand accent.\n\nTypography centers cleanly on `Inter` (16px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Norwegian Digitalisation Agency**. Source: published token package (https://github.com/digdir/designsystemet/tree/main/packages/theme), package `@digdir/designsystemet-theme`. Inventory: **91** colors, **1** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#bbbcbd` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid #bbbcbd` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#eeb04c` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#eeb04c` with `#0b0b0c` text (10.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#bbbcbd` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

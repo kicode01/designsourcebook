@@ -1,0 +1,41 @@
+{
+  "name": "seb",
+  "displayName": "SEB Green Design System",
+  "description": "Skandinaviska Enskilda Banken SEB Green Design System — tokens read from https://github.com/seb-oss/green.",
+  "style": "Skandinaviska Enskilda Banken SEB Green Design System — tokens read from https://github.com/seb-oss/green.",
+  "category": "Skandinaviska Enskilda Banken",
+  "org": "Skandinaviska Enskilda Banken",
+  "theme": "light",
+  "tags": [
+    "published",
+    "skandinaviska-enskilda-banken",
+    "light"
+  ],
+  "homepage": "https://github.com/seb-oss/green",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/seb-oss/green — 30 token files, 263 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/seb-oss/green"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 52,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

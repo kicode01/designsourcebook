@@ -1,0 +1,42 @@
+{
+  "name": "keboola",
+  "displayName": "Keboola UI",
+  "description": "Keboola UI — tokens imported from @keboola/tailwind-config.",
+  "style": "Keboola UI — tokens imported from @keboola/tailwind-config.",
+  "category": "Keboola",
+  "org": "Keboola",
+  "theme": "light",
+  "tags": [
+    "published",
+    "keboola",
+    "light"
+  ],
+  "homepage": "https://github.com/keboola/ui/tree/main/packages/tailwind-config#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @keboola/tailwind-config@2.0.0 (1 token files, 85 colours harvested, 84 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@keboola/tailwind-config",
+    "version": "2.0.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 85,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

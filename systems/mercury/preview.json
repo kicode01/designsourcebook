@@ -1,0 +1,442 @@
+{
+  "canvas": "#fbfbff",
+  "surface": "#fbfcfd",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#5266eb",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.md}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#5266eb"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "periwinkle",
+      "value": "#9cb4e8"
+    },
+    {
+      "name": "canvas",
+      "value": "#fbfcfd"
+    },
+    {
+      "name": "surface",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-tint",
+      "value": "#fbfbff"
+    },
+    {
+      "name": "lavender",
+      "value": "#edecfb"
+    },
+    {
+      "name": "night",
+      "value": "#171721"
+    },
+    {
+      "name": "night-raised",
+      "value": "#1e1e2a"
+    },
+    {
+      "name": "ink",
+      "value": "#28253b"
+    },
+    {
+      "name": "ink-secondary",
+      "value": "#554e7b"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ededf3"
+    },
+    {
+      "name": "fog",
+      "value": "#c3c3cc"
+    },
+    {
+      "name": "slate",
+      "value": "#70707d"
+    }
+  ],
+  "type": [
+    {
+      "name": "stat",
+      "fontFamily": "arcadiaDisplay",
+      "fontSize": "60px",
+      "px": 60,
+      "fontWeight": 480,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display",
+      "fontFamily": "arcadiaDisplay",
+      "fontSize": "52px",
+      "px": 52,
+      "fontWeight": 480,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "arcadiaDisplay",
+      "fontSize": "42px",
+      "px": 42,
+      "fontWeight": 480,
+      "lineHeight": 1.15,
+      "letterSpacing": "0.42px"
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "arcadiaDisplay",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 480,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.42px"
+    },
+    {
+      "name": "lead",
+      "fontFamily": "arcadiaDisplay",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 480,
+      "lineHeight": 1.2,
+      "letterSpacing": "0.48px"
+    },
+    {
+      "name": "body-lg",
+      "fontFamily": "arcadia",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 360,
+      "lineHeight": 1.35,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body",
+      "fontFamily": "arcadia",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui",
+      "fontFamily": "arcadia",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 420,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui-sm",
+      "fontFamily": "arcadia",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 420,
+      "lineHeight": 1,
+      "letterSpacing": "0.07px"
+    },
+    {
+      "name": "eyebrow",
+      "fontFamily": "arcadia",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1,
+      "letterSpacing": "0.28px"
+    },
+    {
+      "name": "legal",
+      "fontFamily": "arcadia",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.24px"
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.night}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "16px 32px"
+    },
+    {
+      "key": "nav-link",
+      "kind": "link",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 20px"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xl}",
+      "padding": "0px 20px"
+    },
+    {
+      "key": "button-glass-dark",
+      "kind": "button",
+      "backgroundColor": "rgba(175, 178, 206, 0.2)",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 20px"
+    },
+    {
+      "key": "button-tint-dark",
+      "kind": "button",
+      "backgroundColor": "rgba(156, 180, 232, 0.2)",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 20px"
+    },
+    {
+      "key": "button-tint-light",
+      "kind": "button",
+      "backgroundColor": "rgba(82, 102, 235, 0.1)",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 20px"
+    },
+    {
+      "key": "button-outline-light",
+      "kind": "button",
+      "backgroundColor": "rgba(112, 115, 147, 0.1)",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 20px"
+    },
+    {
+      "key": "button-small",
+      "kind": "button",
+      "backgroundColor": "rgba(82, 102, 235, 0.1)",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "padding": "0px 16px"
+    },
+    {
+      "key": "button-icon-round",
+      "kind": "button",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xl}",
+      "padding": "0px 0px 0px 20px"
+    },
+    {
+      "key": "email-capture",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "feature-card-dark",
+      "kind": "card",
+      "backgroundColor": "{colors.night-raised}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "feature-card-light",
+      "kind": "card",
+      "backgroundColor": "{colors.lavender}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "pricing-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-tint}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}"
+    },
+    {
+      "key": "pricing-tier-column",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "toggle-switch",
+      "kind": "switch",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.ink-secondary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "accordion-row",
+      "kind": "component",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "10px 0px"
+    },
+    {
+      "key": "eyebrow-label",
+      "kind": "component",
+      "textColor": "{colors.ink-secondary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "stat-block",
+      "kind": "component",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "quote-block",
+      "kind": "component",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "logo-strip",
+      "kind": "component",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "site-footer",
+      "kind": "component",
+      "backgroundColor": "{colors.night}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.surface}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.xs} {spacing.sm}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.huge}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface}",
+      "rounded": "{rounded.md}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#5266eb",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fbfcfd",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fbfbff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fbfcfd",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Mercury feels like a private bank that happens to be a software company: quiet, precise and slightly nocturnal. The homepage lives in a deep ink-violet night (`{colors.night}` — #171721). Headlines are pale lavender-white (`{colors.on-dark}`), cards sit one shade lifted (`{colors.night-raised}`), and product imagery glows softly out of the dark. Move to the product and pricing pages and the whole system flips to day: a near-white canvas (`{colors.canvas}`), deep plum-ink text (`{colors.ink}`) and pale lavender feature cards (`{colors.lavender}`). The nav bar and footer stay in the night colour on every page, so each light page is bracketed in dark.\r\n\r\nOne colour carries the actions in both worlds: Mercury Indigo (`{colors.primary}` — #5266eb). It fills the \"Open account\" pill in the nav and hero, the annual-pricing toggle, and the brand accent in plan names. Everything else that is clickable is softer: translucent secondary pills tinted with lavender-grey, periwinkle or a 10% wash of the indigo, all with generous 40px capsule corners. The effect is calm and confident, with one saturated button and everything around it whispering.\r\n\r\nTypography is Mercury's own custom family: arcadiaDisplay for headlines and arcadia for text, set at unusually light variable weights (360 for body copy, 420 for UI, 480 for headlines). Nothing on the page is bold in the usual sense. Headlines get presence from size and a hair of extra tracking, not weight.\r\n\r\n**Key Characteristics:**\r\n- Two native surface worlds: a dark homepage (`{colors.night}` / `{colors.night-raised}`) and light product pages (`{colors.canvas}` / `{colors.lavender}`), both framed by the night nav and footer.\r\n- A single saturated action colour, `{colors.primary}`, on a `{rounded.xl}` pill.\r\n- Secondary actions as translucent capsules (`{rounded.pill}`) rather than outlines or grey buttons.\r\n- Custom arcadia / arcadiaDisplay type at light variable weights (360–480).\r\n- Softly rounded cards (`{rounded.md}`) with generous `{spacing.xxl}` padding and no shadows.\r\n- Page rhythm: night nav → dark or light hero → alternating card grids → centered quote → closing CTA → night footer.",
+  "dos": "### Do\r\n- Use `{colors.primary}` for the single most important action on a view, usually \"Open account\".\r\n- Make secondary actions translucent pills (`{rounded.pill}`): lavender-grey or periwinkle on dark, indigo or grey-violet tints on light.\r\n- Frame light pages with the `{colors.night}` nav and footer.\r\n- Keep type light: `{typography.body-lg}` at 360, UI at 420, headlines at 480.\r\n- Separate cards from the canvas with fill (`{colors.lavender}`, `{colors.night-raised}`) rather than borders or heavy shadows.\r\n- Center section headlines and give sections `{spacing.section}` or more of vertical space.\r\n\r\n### Don't\r\n- Don't use more than one solid `{colors.primary}` button in a group. Everything else stays translucent.\r\n- Don't set text in heavy bold weights. The brand never goes above 500.\r\n- Don't use hard outlined buttons or square corners on actions.\r\n- Don't put light-world ink (`{colors.ink}`) on night surfaces or `{colors.on-dark}` on the light canvas.\r\n- Don't add strong drop shadows. Elevation is tonal.\r\n- Don't introduce status greens or oranges into the chrome. They belong to product mockups, not the interface."
+}

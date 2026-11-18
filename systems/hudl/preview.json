@@ -1,0 +1,520 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff6300",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-button-minimal-secondary-label",
+      "value": "#283c50"
+    },
+    {
+      "name": "color-button-minimal-secondary-label-hover",
+      "value": "#283c50"
+    },
+    {
+      "name": "color-button-minimal-secondary-label-active",
+      "value": "#283c50"
+    },
+    {
+      "name": "color-button-minimal-primary-bg-hover",
+      "value": "#cfdde2"
+    },
+    {
+      "name": "color-button-minimal-primary-label",
+      "value": "#00669e"
+    },
+    {
+      "name": "color-button-standard-secondary-bg-active",
+      "value": "#4b5d6c"
+    },
+    {
+      "name": "color-button-standard-secondary-bg-hover",
+      "value": "#5a6f81"
+    },
+    {
+      "name": "color-button-standard-secondary-bg",
+      "value": "#60768a"
+    },
+    {
+      "name": "color-button-primary-active",
+      "value": "#01547e"
+    },
+    {
+      "name": "color-button-primary-hover",
+      "value": "#026ca1"
+    },
+    {
+      "name": "color-button-primary",
+      "value": "#027dbb"
+    },
+    {
+      "name": "color-brand-orange",
+      "value": "#ff6300"
+    },
+    {
+      "name": "color-brand-electric",
+      "value": "#009ce3"
+    },
+    {
+      "name": "color-brand-ink",
+      "value": "#232a31"
+    },
+    {
+      "name": "color-brand-evening",
+      "value": "#38434f"
+    },
+    {
+      "name": "color-brand-slate",
+      "value": "#4e5d6c"
+    },
+    {
+      "name": "color-focus",
+      "value": "#33afdf"
+    },
+    {
+      "name": "color-interjection-information",
+      "value": "#4d6680"
+    },
+    {
+      "name": "color-interjection-warning",
+      "value": "#f2b600"
+    },
+    {
+      "name": "color-link-article-text",
+      "value": "#006399"
+    },
+    {
+      "name": "color-link-article-text-active",
+      "value": "#004266"
+    },
+    {
+      "name": "color-link-article-text-hover",
+      "value": "#00598a"
+    },
+    {
+      "name": "color-link-article-text-visited",
+      "value": "#0073a8"
+    },
+    {
+      "name": "color-link-article-underline-active",
+      "value": "#0073a8"
+    },
+    {
+      "name": "color-link-article-underline-hover",
+      "value": "#009ce3"
+    },
+    {
+      "name": "color-link-default-text-active",
+      "value": "#0073a8"
+    },
+    {
+      "name": "color-link-default-text-hover",
+      "value": "#009ce3"
+    },
+    {
+      "name": "color-link-default-underline-active",
+      "value": "#0073a8"
+    },
+    {
+      "name": "color-link-default-underline-hover",
+      "value": "#009ce3"
+    },
+    {
+      "name": "color-bg-level3-accent",
+      "value": "#353f4a"
+    },
+    {
+      "name": "color-bg-level2-accent",
+      "value": "#313b45"
+    },
+    {
+      "name": "color-bg-level1-accent",
+      "value": "#2c343e"
+    },
+    {
+      "name": "color-bg-level0-accent",
+      "value": "#232a31"
+    },
+    {
+      "name": "color-utility-action-text",
+      "value": "#4db9eb"
+    },
+    {
+      "name": "color-utility-information-bg",
+      "value": "#1b2e42"
+    },
+    {
+      "name": "color-utility-information-text",
+      "value": "#90adcb"
+    },
+    {
+      "name": "color-utility-confirmation-text",
+      "value": "#a9c94d"
+    },
+    {
+      "name": "color-utility-warning-bg",
+      "value": "#594300"
+    },
+    {
+      "name": "color-utility-warning-text",
+      "value": "#edc54d"
+    },
+    {
+      "name": "color-utility-critical-text",
+      "value": "#ff5542"
+    },
+    {
+      "name": "color-utility-warning",
+      "value": "#f2b600"
+    },
+    {
+      "name": "color-utility-information",
+      "value": "#4d6680"
+    },
+    {
+      "name": "color-button-minimal-cancel-label-active",
+      "value": "#59636e"
+    },
+    {
+      "name": "color-button-minimal-cancel-label-hover",
+      "value": "#59636e"
+    },
+    {
+      "name": "color-button-minimal-cancel-label",
+      "value": "#59636e"
+    },
+    {
+      "name": "color-button-minimal-subtle-label-active",
+      "value": "#4f616d"
+    },
+    {
+      "name": "color-button-minimal-subtle-label-hover",
+      "value": "#4f616d"
+    },
+    {
+      "name": "color-button-minimal-subtle-label",
+      "value": "#4f616d"
+    },
+    {
+      "name": "color-button-minimal-confirmation-bg-hover",
+      "value": "#d3e0b8"
+    },
+    {
+      "name": "color-button-minimal-confirmation-label",
+      "value": "#476a01"
+    },
+    {
+      "name": "color-button-minimal-destroy-bg-hover",
+      "value": "#f3e8e7"
+    },
+    {
+      "name": "color-button-minimal-destroy-label",
+      "value": "#c21700"
+    },
+    {
+      "name": "color-button-minimal-bg-hover",
+      "value": "#d1d9e1"
+    },
+    {
+      "name": "color-button-standard-subtle-label",
+      "value": "#3f4f5f"
+    },
+    {
+      "name": "color-button-destroy-active",
+      "value": "#d91900"
+    },
+    {
+      "name": "color-button-destroy-hover",
+      "value": "#cc1900"
+    },
+    {
+      "name": "color-button-destroy",
+      "value": "#e81c00"
+    },
+    {
+      "name": "color-button-confirm-active",
+      "value": "#658700"
+    },
+    {
+      "name": "color-button-confirm-hover",
+      "value": "#477005"
+    },
+    {
+      "name": "color-button-confirm",
+      "value": "#538306"
+    },
+    {
+      "name": "color-button-label-white",
+      "value": "#fff"
+    },
+    {
+      "name": "color-base-white",
+      "value": "#fff"
+    },
+    {
+      "name": "color-base-black",
+      "value": "#000"
+    },
+    {
+      "name": "color-content-contrast",
+      "value": "#13293f"
+    },
+    {
+      "name": "color-content-default",
+      "value": "#3a4d5f"
+    },
+    {
+      "name": "color-content-subtle",
+      "value": "#506277"
+    },
+    {
+      "name": "color-forms-fill",
+      "value": "#fff"
+    },
+    {
+      "name": "color-forms-checked-indicator",
+      "value": "#101417"
+    },
+    {
+      "name": "color-identity-maroon",
+      "value": "#790622"
+    },
+    {
+      "name": "color-identity-scarlet",
+      "value": "#d00000"
+    },
+    {
+      "name": "color-identity-apple",
+      "value": "#ff1e1e"
+    },
+    {
+      "name": "color-identity-orange",
+      "value": "#ff8c00"
+    },
+    {
+      "name": "color-identity-gold",
+      "value": "#edb407"
+    },
+    {
+      "name": "color-identity-yellow",
+      "value": "#fd0"
+    },
+    {
+      "name": "color-identity-forest",
+      "value": "#245900"
+    },
+    {
+      "name": "color-identity-kelly",
+      "value": "#3e9600"
+    },
+    {
+      "name": "color-identity-sky",
+      "value": "#53bcef"
+    },
+    {
+      "name": "color-identity-royal",
+      "value": "#084da3"
+    },
+    {
+      "name": "color-identity-navy",
+      "value": "#0c3970"
+    },
+    {
+      "name": "color-identity-purple",
+      "value": "#621296"
+    },
+    {
+      "name": "color-identity-pink",
+      "value": "#ff4ca2"
+    },
+    {
+      "name": "color-identity-white",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-identity-silver",
+      "value": "#d7d9dd"
+    },
+    {
+      "name": "color-identity-grey",
+      "value": "#646566"
+    },
+    {
+      "name": "color-identity-black",
+      "value": "#222"
+    },
+    {
+      "name": "color-identity-default",
+      "value": "#38434f"
+    },
+    {
+      "name": "color-interjection-default",
+      "value": "#4d6680"
+    },
+    {
+      "name": "color-interjection-critical",
+      "value": "#e81c00"
+    },
+    {
+      "name": "color-interjection-confirmation",
+      "value": "#78a100"
+    },
+    {
+      "name": "color-selection-outline",
+      "value": "#009ce3"
+    },
+    {
+      "name": "primary",
+      "value": "#ff6300"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "font-size-large",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-default",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-body",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": 1
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-micro",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "uni-item-title-small",
+      "fontFamily": "helvetica, arial, sans-serif",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "textColor": "#000000",
+      "rounded": "2px"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#101417",
+      "textColor": "#c3cedb",
+      "rounded": "2px",
+      "padding": "0px 24px",
+      "border": "1px solid rgba(122, 138, 153, 0.6)"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#101417",
+      "textColor": "#c3cedb",
+      "rounded": "2px",
+      "padding": "0px 24px",
+      "border": "1px solid rgba(122, 138, 153, 0.6)"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff6300",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff6300",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Uniform** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff6300` brand accent.\n\nTypography centers cleanly on `helvetica` (32px display down to 16px body), unified by `4px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Hudl**. Source: live stylesheet extraction (http://uniform.hudl.com/). Inventory: **91** colors, **8** typography steps, and **10** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0px 24px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff6300` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff6300` with `#f7f7f8` text (2.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `helvetica` headings with `helvetica` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

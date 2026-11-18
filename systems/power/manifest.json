@@ -1,0 +1,41 @@
+{
+  "name": "power",
+  "displayName": "Playbook",
+  "description": "Power Playbook — tokens read from https://github.com/powerhome/playbook.",
+  "style": "Power Playbook — tokens read from https://github.com/powerhome/playbook.",
+  "category": "Power",
+  "org": "Power",
+  "theme": "light",
+  "tags": [
+    "published",
+    "power",
+    "light"
+  ],
+  "homepage": "https://github.com/powerhome/playbook",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/powerhome/playbook — 9 token files, 232 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/powerhome/playbook"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 3,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

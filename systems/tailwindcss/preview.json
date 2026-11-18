@@ -1,0 +1,471 @@
+{
+  "canvas": "#fbfbf9",
+  "surface": "#f0f9ff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fe9a00",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-red-50",
+      "value": "#fef2f2"
+    },
+    {
+      "name": "color-red-300",
+      "value": "#ffa2a2"
+    },
+    {
+      "name": "color-red-600",
+      "value": "#e7000b"
+    },
+    {
+      "name": "color-red-900",
+      "value": "#82181a"
+    },
+    {
+      "name": "color-orange-100",
+      "value": "#ffedd4"
+    },
+    {
+      "name": "color-orange-400",
+      "value": "#ff8904"
+    },
+    {
+      "name": "color-orange-700",
+      "value": "#ca3500"
+    },
+    {
+      "name": "color-orange-950",
+      "value": "#441306"
+    },
+    {
+      "name": "color-amber-200",
+      "value": "#fee685"
+    },
+    {
+      "name": "color-amber-500",
+      "value": "#fe9a00"
+    },
+    {
+      "name": "color-amber-800",
+      "value": "#973c00"
+    },
+    {
+      "name": "color-yellow-50",
+      "value": "#fefce8"
+    },
+    {
+      "name": "color-yellow-300",
+      "value": "#ffdf20"
+    },
+    {
+      "name": "color-yellow-600",
+      "value": "#d08700"
+    },
+    {
+      "name": "color-yellow-900",
+      "value": "#733e0a"
+    },
+    {
+      "name": "color-lime-100",
+      "value": "#ecfcca"
+    },
+    {
+      "name": "color-lime-400",
+      "value": "#9ae600"
+    },
+    {
+      "name": "color-lime-700",
+      "value": "#497d00"
+    },
+    {
+      "name": "color-lime-950",
+      "value": "#192e03"
+    },
+    {
+      "name": "color-green-200",
+      "value": "#b9f8cf"
+    },
+    {
+      "name": "color-green-500",
+      "value": "#00c950"
+    },
+    {
+      "name": "color-green-800",
+      "value": "#016630"
+    },
+    {
+      "name": "color-emerald-50",
+      "value": "#ecfdf5"
+    },
+    {
+      "name": "color-emerald-300",
+      "value": "#5ee9b5"
+    },
+    {
+      "name": "color-emerald-600",
+      "value": "#009966"
+    },
+    {
+      "name": "color-emerald-900",
+      "value": "#004f3b"
+    },
+    {
+      "name": "color-teal-100",
+      "value": "#cbfbf1"
+    },
+    {
+      "name": "color-teal-400",
+      "value": "#00d5be"
+    },
+    {
+      "name": "color-teal-700",
+      "value": "#00786f"
+    },
+    {
+      "name": "color-teal-950",
+      "value": "#022f2e"
+    },
+    {
+      "name": "color-cyan-200",
+      "value": "#a2f4fd"
+    },
+    {
+      "name": "color-cyan-500",
+      "value": "#00b8db"
+    },
+    {
+      "name": "color-cyan-800",
+      "value": "#005f78"
+    },
+    {
+      "name": "color-sky-50",
+      "value": "#f0f9ff"
+    },
+    {
+      "name": "color-sky-300",
+      "value": "#74d4ff"
+    },
+    {
+      "name": "color-sky-600",
+      "value": "#0084d1"
+    },
+    {
+      "name": "color-sky-900",
+      "value": "#024a70"
+    },
+    {
+      "name": "color-blue-100",
+      "value": "#dbeafe"
+    },
+    {
+      "name": "color-blue-400",
+      "value": "#51a2ff"
+    },
+    {
+      "name": "color-blue-700",
+      "value": "#1447e6"
+    },
+    {
+      "name": "color-blue-950",
+      "value": "#162456"
+    },
+    {
+      "name": "color-indigo-200",
+      "value": "#c6d2ff"
+    },
+    {
+      "name": "color-indigo-500",
+      "value": "#615fff"
+    },
+    {
+      "name": "color-indigo-800",
+      "value": "#372aac"
+    },
+    {
+      "name": "color-violet-50",
+      "value": "#f5f3ff"
+    },
+    {
+      "name": "color-violet-300",
+      "value": "#c4b4ff"
+    },
+    {
+      "name": "color-violet-600",
+      "value": "#7f22fe"
+    },
+    {
+      "name": "color-violet-900",
+      "value": "#4d179a"
+    },
+    {
+      "name": "color-purple-100",
+      "value": "#f3e8ff"
+    },
+    {
+      "name": "color-purple-400",
+      "value": "#c27aff"
+    },
+    {
+      "name": "color-purple-700",
+      "value": "#8200db"
+    },
+    {
+      "name": "color-purple-950",
+      "value": "#3c0366"
+    },
+    {
+      "name": "color-fuchsia-200",
+      "value": "#f6cfff"
+    },
+    {
+      "name": "color-fuchsia-500",
+      "value": "#e12afb"
+    },
+    {
+      "name": "color-fuchsia-800",
+      "value": "#8a0194"
+    },
+    {
+      "name": "color-pink-50",
+      "value": "#fdf2f8"
+    },
+    {
+      "name": "color-pink-300",
+      "value": "#fda5d5"
+    },
+    {
+      "name": "color-pink-600",
+      "value": "#e60076"
+    },
+    {
+      "name": "color-pink-900",
+      "value": "#861043"
+    },
+    {
+      "name": "color-rose-100",
+      "value": "#ffe4e6"
+    },
+    {
+      "name": "color-rose-400",
+      "value": "#ff637e"
+    },
+    {
+      "name": "color-rose-700",
+      "value": "#c70036"
+    },
+    {
+      "name": "color-rose-950",
+      "value": "#4d0218"
+    },
+    {
+      "name": "color-slate-200",
+      "value": "#e2e8f0"
+    },
+    {
+      "name": "color-slate-500",
+      "value": "#62748e"
+    },
+    {
+      "name": "color-slate-800",
+      "value": "#1d293d"
+    },
+    {
+      "name": "color-gray-50",
+      "value": "#f9fafb"
+    },
+    {
+      "name": "color-gray-300",
+      "value": "#d1d5dc"
+    },
+    {
+      "name": "color-gray-600",
+      "value": "#4a5565"
+    },
+    {
+      "name": "color-gray-900",
+      "value": "#101828"
+    },
+    {
+      "name": "color-zinc-200",
+      "value": "#e4e4e7"
+    },
+    {
+      "name": "color-zinc-500",
+      "value": "#71717b"
+    },
+    {
+      "name": "color-zinc-800",
+      "value": "#27272a"
+    },
+    {
+      "name": "color-stone-50",
+      "value": "#fafaf9"
+    },
+    {
+      "name": "color-stone-300",
+      "value": "#d6d3d1"
+    },
+    {
+      "name": "color-stone-600",
+      "value": "#57534d"
+    },
+    {
+      "name": "color-stone-900",
+      "value": "#1c1917"
+    },
+    {
+      "name": "color-mauve-200",
+      "value": "#e7e4e7"
+    },
+    {
+      "name": "color-mauve-500",
+      "value": "#79697b"
+    },
+    {
+      "name": "color-mauve-800",
+      "value": "#2a212c"
+    },
+    {
+      "name": "color-olive-50",
+      "value": "#fbfbf9"
+    },
+    {
+      "name": "color-olive-300",
+      "value": "#d8d8d0"
+    },
+    {
+      "name": "color-olive-600",
+      "value": "#5b5b4b"
+    },
+    {
+      "name": "color-olive-900",
+      "value": "#1d1d16"
+    },
+    {
+      "name": "color-mist-100",
+      "value": "#f1f3f3"
+    },
+    {
+      "name": "color-mist-400",
+      "value": "#9ca8ab"
+    },
+    {
+      "name": "color-mist-700",
+      "value": "#394447"
+    },
+    {
+      "name": "color-mist-950",
+      "value": "#090b0c"
+    },
+    {
+      "name": "color-taupe-200",
+      "value": "#e8e4e3"
+    },
+    {
+      "name": "color-taupe-500",
+      "value": "#7c6d67"
+    },
+    {
+      "name": "primary",
+      "value": "#fe9a00"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-sans",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "px": 16
+    },
+    {
+      "name": "font-serif",
+      "fontFamily": "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f0f9ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fe9a00",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fe9a00",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f0f9ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f0f9ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fbfbf9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fbfbf9",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f0f9ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Tailwind CSS** is a light-first design system anchored on `#fbfbf9` canvas surfaces with `#0b0b0c` primary ink (19.0:1 contrast) and `#fe9a00` brand accent.\n\nTypography centers cleanly on `System UI` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#fbfbf9` -> `#f0f9ff` surface layering.\n\nMaintained by **Tailwind Labs**. Source: published token package (https://tailwindcss.com), package `tailwindcss`. Inventory: **91** colors, **3** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f0f9ff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fbfbf9` -> `#f0f9ff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fe9a00` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fbfbf9` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fe9a00` with `#0b0b0c` text (9.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f0f9ff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

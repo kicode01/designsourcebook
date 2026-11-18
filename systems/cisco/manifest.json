@@ -1,0 +1,42 @@
+{
+  "name": "cisco",
+  "displayName": "Momentum Design",
+  "description": "Cisco Momentum Design — tokens imported from @momentum-design/tokens.",
+  "style": "Cisco Momentum Design — tokens imported from @momentum-design/tokens.",
+  "category": "Cisco",
+  "org": "Cisco",
+  "theme": "light",
+  "tags": [
+    "published",
+    "cisco",
+    "light"
+  ],
+  "homepage": "",
+  "license": "see package",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @momentum-design/tokens@0.18.0 (8 token files, 975 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@momentum-design/tokens",
+    "version": "0.18.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 62,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

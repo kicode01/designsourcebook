@@ -1,0 +1,779 @@
+{
+  "canvas": "#fff",
+  "surface": "#f2f2f2",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#002664",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0.25rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "success",
+      "value": "#008a07"
+    },
+    {
+      "name": "success-bg",
+      "value": "#e5f6e6"
+    },
+    {
+      "name": "info",
+      "value": "#2e5299"
+    },
+    {
+      "name": "info-bg",
+      "value": "#eaedf4"
+    },
+    {
+      "name": "warning",
+      "value": "#c95000"
+    },
+    {
+      "name": "warning-bg",
+      "value": "#fbeee5"
+    },
+    {
+      "name": "error",
+      "value": "#b81237"
+    },
+    {
+      "name": "error-bg",
+      "value": "#f7e7eb"
+    },
+    {
+      "name": "nsw-brand-dark",
+      "value": "#002664"
+    },
+    {
+      "name": "nsw-brand-light",
+      "value": "#cbedfd"
+    },
+    {
+      "name": "nsw-brand-supplementary",
+      "value": "#146cfd"
+    },
+    {
+      "name": "nsw-brand-accent",
+      "value": "#d7153a"
+    },
+    {
+      "name": "nsw-brand-accent-light",
+      "value": "#ffe6ea"
+    },
+    {
+      "name": "nsw-brand-dark-rgb",
+      "value": "rgb(0, 38, 100)"
+    },
+    {
+      "name": "nsw-brand-light-rgb",
+      "value": "rgb(203, 237, 253)"
+    },
+    {
+      "name": "nsw-brand-supplementary-rgb",
+      "value": "rgb(20, 108, 253)"
+    },
+    {
+      "name": "nsw-brand-accent-rgb",
+      "value": "rgb(215, 21, 58)"
+    },
+    {
+      "name": "nsw-brand-accent-light-rgb",
+      "value": "rgb(255, 230, 234)"
+    },
+    {
+      "name": "nsw-text-dark",
+      "value": "#22272b"
+    },
+    {
+      "name": "nsw-text-light",
+      "value": "#fff"
+    },
+    {
+      "name": "nsw-text-dark-rgb",
+      "value": "rgb(34, 39, 43)"
+    },
+    {
+      "name": "nsw-text-light-rgb",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "nsw-link",
+      "value": "#002664"
+    },
+    {
+      "name": "nsw-link-light",
+      "value": "#fff"
+    },
+    {
+      "name": "nsw-focus",
+      "value": "#0086b3"
+    },
+    {
+      "name": "nsw-focus-light",
+      "value": "#cce7f0"
+    },
+    {
+      "name": "nsw-disabled",
+      "value": "#8093b2"
+    },
+    {
+      "name": "nsw-link-rgb",
+      "value": "rgb(0, 38, 100)"
+    },
+    {
+      "name": "nsw-link-light-rgb",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "nsw-status-success",
+      "value": "#008a07"
+    },
+    {
+      "name": "nsw-status-success-bg",
+      "value": "#e5f6e6"
+    },
+    {
+      "name": "nsw-status-info",
+      "value": "#2e5299"
+    },
+    {
+      "name": "nsw-status-info-bg",
+      "value": "#eaedf4"
+    },
+    {
+      "name": "nsw-status-warning",
+      "value": "#c95000"
+    },
+    {
+      "name": "nsw-status-warning-bg",
+      "value": "#fbeee5"
+    },
+    {
+      "name": "nsw-status-error",
+      "value": "#b81237"
+    },
+    {
+      "name": "nsw-status-error-bg",
+      "value": "#f7e7eb"
+    },
+    {
+      "name": "nsw-status-success-bg-rgb",
+      "value": "rgb(229, 246, 230)"
+    },
+    {
+      "name": "nsw-status-info-bg-rgb",
+      "value": "rgb(234, 237, 244)"
+    },
+    {
+      "name": "nsw-status-warning-bg-rgb",
+      "value": "rgb(251, 238, 229)"
+    },
+    {
+      "name": "nsw-status-error-bg-rgb",
+      "value": "rgb(247, 231, 235)"
+    },
+    {
+      "name": "earth-red",
+      "value": "#950906"
+    },
+    {
+      "name": "galah-pink",
+      "value": "#fdd9d9"
+    },
+    {
+      "name": "clay-orange",
+      "value": "#f4aa7d"
+    },
+    {
+      "name": "firewood-brown",
+      "value": "#9e5332"
+    },
+    {
+      "name": "bush-honey-yellow",
+      "value": "#895e00"
+    },
+    {
+      "name": "sunbeam-yellow",
+      "value": "#fff1c5"
+    },
+    {
+      "name": "gumleaf-green",
+      "value": "#b5cda4"
+    },
+    {
+      "name": "saltwater-blue",
+      "value": "#0d6791"
+    },
+    {
+      "name": "bush-plum",
+      "value": "#472642"
+    },
+    {
+      "name": "dusk-purple",
+      "value": "#e4cce0"
+    },
+    {
+      "name": "ash-grey",
+      "value": "#ccc6c2"
+    },
+    {
+      "name": "grey-50",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "grey-300",
+      "value": "#cdd3d6"
+    },
+    {
+      "name": "grey-600",
+      "value": "#6a7175"
+    },
+    {
+      "name": "grey-900",
+      "value": "#22272b"
+    },
+    {
+      "name": "green-01",
+      "value": "#004000"
+    },
+    {
+      "name": "green-04",
+      "value": "#dbfadf"
+    },
+    {
+      "name": "teal-03",
+      "value": "#8cdbe5"
+    },
+    {
+      "name": "blue-02",
+      "value": "#146cfd"
+    },
+    {
+      "name": "purple-01",
+      "value": "#441170"
+    },
+    {
+      "name": "purple-04",
+      "value": "#e6e1fd"
+    },
+    {
+      "name": "fuchsia-03",
+      "value": "#f4b5e6"
+    },
+    {
+      "name": "red-02",
+      "value": "#d7153a"
+    },
+    {
+      "name": "orange-01",
+      "value": "#941b00"
+    },
+    {
+      "name": "orange-04",
+      "value": "#fdeddf"
+    },
+    {
+      "name": "yellow-03",
+      "value": "#fde79a"
+    },
+    {
+      "name": "brown-02",
+      "value": "#b68d5d"
+    },
+    {
+      "name": "nsw-palette-blue-01",
+      "value": "#002664"
+    },
+    {
+      "name": "nsw-palette-blue-04",
+      "value": "#cbedfd"
+    },
+    {
+      "name": "nsw-palette-purple-03",
+      "value": "#cebfff"
+    },
+    {
+      "name": "nsw-palette-fuchsia-02",
+      "value": "#d912ae"
+    },
+    {
+      "name": "nsw-palette-red-01",
+      "value": "#630019"
+    },
+    {
+      "name": "nsw-palette-red-04",
+      "value": "#ffe6ea"
+    },
+    {
+      "name": "nsw-palette-orange-03",
+      "value": "#ffce99"
+    },
+    {
+      "name": "nsw-palette-brown-02",
+      "value": "#b68d5d"
+    },
+    {
+      "name": "nsw-palette-yellow-01",
+      "value": "#694800"
+    },
+    {
+      "name": "nsw-palette-yellow-04",
+      "value": "#fff4cf"
+    },
+    {
+      "name": "nsw-palette-green-03",
+      "value": "#a8edb3"
+    },
+    {
+      "name": "nsw-palette-teal-02",
+      "value": "#2e808e"
+    },
+    {
+      "name": "nsw-palette-black",
+      "value": "#000"
+    },
+    {
+      "name": "nsw-palette-grey-03",
+      "value": "#cdd3d6"
+    },
+    {
+      "name": "nsw-palette-white",
+      "value": "#fff"
+    },
+    {
+      "name": "nsw-aboriginal-palette-coral-pink",
+      "value": "#fbb4b3"
+    },
+    {
+      "name": "nsw-aboriginal-palette-orange-ochre",
+      "value": "#ee6314"
+    },
+    {
+      "name": "nsw-aboriginal-palette-bush-honey-yellow",
+      "value": "#895e00"
+    },
+    {
+      "name": "nsw-aboriginal-palette-sunbeam-yellow",
+      "value": "#fff1c5"
+    },
+    {
+      "name": "nsw-aboriginal-palette-claystone-brown",
+      "value": "#d39165"
+    },
+    {
+      "name": "nsw-aboriginal-palette-emu-grey",
+      "value": "#555"
+    },
+    {
+      "name": "nsw-aboriginal-palette-bushland-green",
+      "value": "#215834"
+    },
+    {
+      "name": "primary",
+      "value": "#002664"
+    }
+  ],
+  "type": [
+    {
+      "name": "nsw-font-size-xxl-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "2.75rem",
+      "px": 44,
+      "lineHeight": "3.5rem"
+    },
+    {
+      "name": "nsw-font-size-xxl-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36,
+      "lineHeight": "2.75rem"
+    },
+    {
+      "name": "nsw-font-size-xl-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "nsw-font-size-xl-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28,
+      "lineHeight": "2.25rem"
+    },
+    {
+      "name": "nsw-font-size-lg-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "nsw-font-size-lg-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "nsw-font-size-md-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "nsw-heading-link-button-icon",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "lineHeight": 1
+    },
+    {
+      "name": "nsw-font-size-md-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "nsw-font-size",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nsw-font-family",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "nsw-font-size-sm-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "nsw-font-size-sm-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "nsw-heading-link-tooltip-icon",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "lineHeight": 1
+    },
+    {
+      "name": "nsw-base-font-size",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nsw-font-size-xs-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "nsw-font-size-xs-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "nsw-font-size-xxs-mobile",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "nsw-font-size-xxs-desktop",
+      "fontFamily": "\"Public Sans\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "textColor": "#002664",
+      "rounded": "1.5rem",
+      "padding": ".125rem 1rem",
+      "border": "1px solid #002664"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#22272b",
+      "rounded": "0.25rem"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,.7)",
+      "padding": "0 1rem"
+    },
+    {
+      "key": "popover-2",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "0.25rem",
+      "shadow": "0 0.25rem 0.75rem 0 rgba(0,0,0,0.15)"
+    },
+    {
+      "key": "nsw-main-nav",
+      "kind": "nav",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "icon-button",
+      "kind": "button",
+      "textColor": "#002664",
+      "rounded": "0.25rem",
+      "padding": ".5rem",
+      "border": "0"
+    },
+    {
+      "key": "nsw-hero-banner",
+      "kind": "alert",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "nsw-global-alert-2",
+      "kind": "alert",
+      "backgroundColor": "#2e5299",
+      "textColor": "#fff",
+      "padding": "1.5rem 0"
+    },
+    {
+      "key": "nsw-status-label",
+      "kind": "label",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#22272b",
+      "rounded": "1.5rem",
+      "padding": ".125rem 1rem",
+      "border": "1px solid #f2f2f2"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": "0.25rem",
+      "padding": "1rem 1rem 3.875rem",
+      "border": "1px solid #cdd3d6"
+    },
+    {
+      "key": "nsw-cookie-banner-3",
+      "kind": "alert",
+      "backgroundColor": "#cbedfd",
+      "padding": "1.5rem 0"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#495054"
+    },
+    {
+      "key": "dialog-3",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "0.25rem"
+    },
+    {
+      "key": "accordion",
+      "kind": "accordion",
+      "backgroundColor": "#f2f2f2",
+      "padding": "1rem 3rem 1rem 1rem"
+    },
+    {
+      "key": "nsw-side-nav-2",
+      "kind": "nav",
+      "backgroundColor": "#f2f2f2",
+      "padding": "1rem",
+      "border": "0"
+    },
+    {
+      "key": "accordion-2",
+      "kind": "accordion",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#22272b",
+      "padding": "1rem 3rem 1rem 1rem",
+      "border": "0"
+    },
+    {
+      "key": "nsw-main-nav-3",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "padding": "3rem 2.5rem",
+      "shadow": "0 4px 9px -5px rgba(0,0,0,.4)"
+    },
+    {
+      "key": "nsw-multi-select",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "padding": ".25rem 0 .25rem 3rem",
+      "border": "0"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "backgroundColor": "#f2f2f2"
+    },
+    {
+      "key": "nsw-multi-select-2",
+      "kind": "select",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "nsw-multi-select-3",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "rounded": ".25em",
+      "padding": "1rem",
+      "shadow": "0 0.25rem 0.75rem 0 rgba(0,0,0,0.15)"
+    },
+    {
+      "key": "card-dark",
+      "kind": "card",
+      "textColor": "#fff"
+    },
+    {
+      "key": "button-dark",
+      "kind": "button",
+      "backgroundColor": "#002664",
+      "textColor": "#fff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "button-info",
+      "kind": "button",
+      "backgroundColor": "#2e5299",
+      "textColor": "#fff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "link-button",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#002664",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "button-light",
+      "kind": "button",
+      "backgroundColor": "#cbedfd",
+      "textColor": "#22272b",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "button-white",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#22272b",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "nsw-status-label-info",
+      "kind": "label",
+      "backgroundColor": "#2e5299",
+      "textColor": "#fff",
+      "border": "1px solid #2e5299"
+    },
+    {
+      "key": "nsw-status-label-error",
+      "kind": "label",
+      "backgroundColor": "#b81237",
+      "textColor": "#fff",
+      "border": "1px solid #b81237"
+    },
+    {
+      "key": "tooltip-dark",
+      "kind": "tooltip",
+      "backgroundColor": "#495054",
+      "textColor": "#fff"
+    },
+    {
+      "key": "tooltip-light",
+      "kind": "tooltip",
+      "backgroundColor": "#fff",
+      "textColor": "#22272b"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#002664",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#002664",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Digital NSW** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#002664` brand accent.\n\nTypography centers cleanly on `Public Sans` (48px display down to 16px body), unified by `0.25rem` base corner radius and subtle shadow elevation.\n\nMaintained by **State of New South Wales**. Source: published token package (https://www.digital.nsw.gov.au/digital-design-system), package `nsw-design-system`. Inventory: **91** colors, **24** typography steps, and **35** documented components (ISC license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 35 component tokens with documented paddings: `.125rem 1rem`, `0 1rem`, `.5rem`, `1.5rem 0`, `1rem 1rem 3.875rem`.\n- **Hierarchy**: Group controls cleanly within `#f2f2f2` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0.25rem 0.75rem 0 rgba(0,0,0,0.15)`, `0 4px 9px -5px rgba(0,0,0,.4)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#002664` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#002664` with `#f7f7f8` text (13.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Public Sans` headings with `Public Sans` body copy using documented weights and scale steps.\n- Apply `0.25rem` base geometry across inputs and buttons (0.25rem on outer containers).\n- Separate containers via `#f2f2f2` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.25rem` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

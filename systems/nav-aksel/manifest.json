@@ -1,0 +1,42 @@
+{
+  "name": "nav-aksel",
+  "displayName": "Aksel",
+  "description": "NAV Norway Aksel — tokens imported from @navikt/ds-tokens.",
+  "style": "NAV Norway Aksel — tokens imported from @navikt/ds-tokens.",
+  "category": "NAV Norway",
+  "org": "NAV Norway",
+  "theme": "light",
+  "tags": [
+    "published",
+    "nav-norway",
+    "light"
+  ],
+  "homepage": "https://aksel.nav.no/grunnleggende/styling/design-tokens/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @navikt/ds-tokens@8.23.0 (1 token files, 159 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@navikt/ds-tokens",
+    "version": "8.23.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 11,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

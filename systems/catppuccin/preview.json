@@ -1,0 +1,455 @@
+{
+  "canvas": "#eff1f5",
+  "surface": "#eff1f5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#c6a0f6",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "ctp-latte-text",
+      "value": "#4c4f69"
+    },
+    {
+      "name": "ctp-latte-subtext1",
+      "value": "#5c5f77"
+    },
+    {
+      "name": "ctp-latte-subtext0",
+      "value": "#6c6f85"
+    },
+    {
+      "name": "ctp-latte-surface2",
+      "value": "#acb0be"
+    },
+    {
+      "name": "ctp-latte-surface1",
+      "value": "#bcc0cc"
+    },
+    {
+      "name": "ctp-latte-surface0",
+      "value": "#ccd0da"
+    },
+    {
+      "name": "ctp-frappe-text",
+      "value": "#c6d0f5"
+    },
+    {
+      "name": "ctp-frappe-subtext1",
+      "value": "#b5bfe2"
+    },
+    {
+      "name": "ctp-frappe-subtext0",
+      "value": "#a5adce"
+    },
+    {
+      "name": "ctp-frappe-surface2",
+      "value": "#626880"
+    },
+    {
+      "name": "ctp-frappe-surface1",
+      "value": "#51576d"
+    },
+    {
+      "name": "ctp-frappe-surface0",
+      "value": "#414559"
+    },
+    {
+      "name": "ctp-macchiato-text",
+      "value": "#cad3f5"
+    },
+    {
+      "name": "ctp-macchiato-subtext1",
+      "value": "#b8c0e0"
+    },
+    {
+      "name": "ctp-macchiato-subtext0",
+      "value": "#a5adcb"
+    },
+    {
+      "name": "ctp-macchiato-surface2",
+      "value": "#5b6078"
+    },
+    {
+      "name": "ctp-macchiato-surface1",
+      "value": "#494d64"
+    },
+    {
+      "name": "ctp-macchiato-surface0",
+      "value": "#363a4f"
+    },
+    {
+      "name": "ctp-mocha-text",
+      "value": "#cdd6f4"
+    },
+    {
+      "name": "ctp-mocha-subtext1",
+      "value": "#bac2de"
+    },
+    {
+      "name": "ctp-mocha-subtext0",
+      "value": "#a6adc8"
+    },
+    {
+      "name": "ctp-mocha-surface2",
+      "value": "#585b70"
+    },
+    {
+      "name": "ctp-mocha-surface1",
+      "value": "#45475a"
+    },
+    {
+      "name": "ctp-mocha-surface0",
+      "value": "#313244"
+    },
+    {
+      "name": "text",
+      "value": "#4c4f69"
+    },
+    {
+      "name": "subtext1",
+      "value": "#5c5f77"
+    },
+    {
+      "name": "subtext0",
+      "value": "#6c6f85"
+    },
+    {
+      "name": "surface2",
+      "value": "#acb0be"
+    },
+    {
+      "name": "surface1",
+      "value": "#bcc0cc"
+    },
+    {
+      "name": "surface0",
+      "value": "#ccd0da"
+    },
+    {
+      "name": "hex",
+      "value": "#dc8a78"
+    },
+    {
+      "name": "ctp-latte-rosewater",
+      "value": "#dc8a78"
+    },
+    {
+      "name": "ctp-latte-flamingo",
+      "value": "#dd7878"
+    },
+    {
+      "name": "ctp-latte-pink",
+      "value": "#ea76cb"
+    },
+    {
+      "name": "ctp-latte-mauve",
+      "value": "#8839ef"
+    },
+    {
+      "name": "ctp-latte-red",
+      "value": "#d20f39"
+    },
+    {
+      "name": "ctp-latte-maroon",
+      "value": "#e64553"
+    },
+    {
+      "name": "ctp-latte-peach",
+      "value": "#fe640b"
+    },
+    {
+      "name": "ctp-latte-yellow",
+      "value": "#df8e1d"
+    },
+    {
+      "name": "ctp-latte-green",
+      "value": "#40a02b"
+    },
+    {
+      "name": "ctp-latte-teal",
+      "value": "#179299"
+    },
+    {
+      "name": "ctp-latte-sky",
+      "value": "#04a5e5"
+    },
+    {
+      "name": "ctp-latte-sapphire",
+      "value": "#209fb5"
+    },
+    {
+      "name": "ctp-latte-blue",
+      "value": "#1e66f5"
+    },
+    {
+      "name": "ctp-latte-lavender",
+      "value": "#7287fd"
+    },
+    {
+      "name": "ctp-latte-overlay2",
+      "value": "#7c7f93"
+    },
+    {
+      "name": "ctp-latte-overlay1",
+      "value": "#8c8fa1"
+    },
+    {
+      "name": "ctp-latte-overlay0",
+      "value": "#9ca0b0"
+    },
+    {
+      "name": "ctp-latte-base",
+      "value": "#eff1f5"
+    },
+    {
+      "name": "ctp-latte-mantle",
+      "value": "#e6e9ef"
+    },
+    {
+      "name": "ctp-latte-crust",
+      "value": "#dce0e8"
+    },
+    {
+      "name": "ctp-frappe-rosewater",
+      "value": "#f2d5cf"
+    },
+    {
+      "name": "ctp-frappe-flamingo",
+      "value": "#eebebe"
+    },
+    {
+      "name": "ctp-frappe-pink",
+      "value": "#f4b8e4"
+    },
+    {
+      "name": "ctp-frappe-mauve",
+      "value": "#ca9ee6"
+    },
+    {
+      "name": "ctp-frappe-red",
+      "value": "#e78284"
+    },
+    {
+      "name": "ctp-frappe-maroon",
+      "value": "#ea999c"
+    },
+    {
+      "name": "ctp-frappe-peach",
+      "value": "#ef9f76"
+    },
+    {
+      "name": "ctp-frappe-yellow",
+      "value": "#e5c890"
+    },
+    {
+      "name": "ctp-frappe-green",
+      "value": "#a6d189"
+    },
+    {
+      "name": "ctp-frappe-teal",
+      "value": "#81c8be"
+    },
+    {
+      "name": "ctp-frappe-sky",
+      "value": "#99d1db"
+    },
+    {
+      "name": "ctp-frappe-sapphire",
+      "value": "#85c1dc"
+    },
+    {
+      "name": "ctp-frappe-blue",
+      "value": "#8caaee"
+    },
+    {
+      "name": "ctp-frappe-lavender",
+      "value": "#babbf1"
+    },
+    {
+      "name": "ctp-frappe-overlay2",
+      "value": "#949cbb"
+    },
+    {
+      "name": "ctp-frappe-overlay1",
+      "value": "#838ba7"
+    },
+    {
+      "name": "ctp-frappe-overlay0",
+      "value": "#737994"
+    },
+    {
+      "name": "ctp-frappe-base",
+      "value": "#303446"
+    },
+    {
+      "name": "ctp-frappe-mantle",
+      "value": "#292c3c"
+    },
+    {
+      "name": "ctp-frappe-crust",
+      "value": "#232634"
+    },
+    {
+      "name": "ctp-macchiato-rosewater",
+      "value": "#f4dbd6"
+    },
+    {
+      "name": "ctp-macchiato-flamingo",
+      "value": "#f0c6c6"
+    },
+    {
+      "name": "ctp-macchiato-pink",
+      "value": "#f5bde6"
+    },
+    {
+      "name": "ctp-macchiato-mauve",
+      "value": "#c6a0f6"
+    },
+    {
+      "name": "ctp-macchiato-red",
+      "value": "#ed8796"
+    },
+    {
+      "name": "ctp-macchiato-maroon",
+      "value": "#ee99a0"
+    },
+    {
+      "name": "ctp-macchiato-peach",
+      "value": "#f5a97f"
+    },
+    {
+      "name": "ctp-macchiato-yellow",
+      "value": "#eed49f"
+    },
+    {
+      "name": "ctp-macchiato-green",
+      "value": "#a6da95"
+    },
+    {
+      "name": "ctp-macchiato-teal",
+      "value": "#8bd5ca"
+    },
+    {
+      "name": "ctp-macchiato-sky",
+      "value": "#91d7e3"
+    },
+    {
+      "name": "ctp-macchiato-sapphire",
+      "value": "#7dc4e4"
+    },
+    {
+      "name": "ctp-macchiato-blue",
+      "value": "#8aadf4"
+    },
+    {
+      "name": "ctp-macchiato-lavender",
+      "value": "#b7bdf8"
+    },
+    {
+      "name": "ctp-macchiato-overlay2",
+      "value": "#939ab7"
+    },
+    {
+      "name": "ctp-macchiato-overlay1",
+      "value": "#8087a2"
+    },
+    {
+      "name": "ctp-macchiato-overlay0",
+      "value": "#6e738d"
+    },
+    {
+      "name": "ctp-macchiato-base",
+      "value": "#24273a"
+    },
+    {
+      "name": "ctp-macchiato-mantle",
+      "value": "#1e2030"
+    },
+    {
+      "name": "primary",
+      "value": "#c6a0f6"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#eff1f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#c6a0f6",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#c6a0f6",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eff1f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eff1f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#eff1f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#eff1f5",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eff1f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Catppuccin** is a light-first design system anchored on `#eff1f5` canvas surfaces with `#0b0b0c` primary ink (17.4:1 contrast) and `#c6a0f6` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nSource: published token package (https://github.com/catppuccin/palette#readme), package `@catppuccin/palette`. Inventory: **91** colors, **0** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#eff1f5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#eff1f5` -> `#eff1f5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#c6a0f6` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#eff1f5` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#c6a0f6` with `#0b0b0c` text (9.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#eff1f5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

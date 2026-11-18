@@ -1,0 +1,41 @@
+{
+  "name": "balm-ui",
+  "displayName": "BalmUI",
+  "description": "BalmJS BalmUI — tokens read from https://github.com/balmjs/balm-ui.",
+  "style": "BalmJS BalmUI — tokens read from https://github.com/balmjs/balm-ui.",
+  "category": "BalmJS",
+  "org": "BalmJS",
+  "theme": "light",
+  "tags": [
+    "published",
+    "balm-js",
+    "light"
+  ],
+  "homepage": "https://github.com/balmjs/balm-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/balmjs/balm-ui — 15 token files, 287 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/balmjs/balm-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 3,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

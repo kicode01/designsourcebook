@@ -73,15 +73,21 @@ const systems = fs
 const bySlug = new Map(systems.map((s) => [normKey(s.name), s]));
 const byDisplay = new Map(systems.map((s) => [normKey(s.displayName || ""), s]));
 const byOrg = new Map();
+const byListed = new Map();
 for (const s of systems) {
-  if (!s.org) continue;
-  const k = normOrg(s.org);
-  if (!byOrg.has(k)) byOrg.set(k, s);
+  if (s.org) {
+    const k = normOrg(s.org);
+    if (!byOrg.has(k)) byOrg.set(k, s);
+  }
+  for (const ln of s.listedNames || []) {
+    const nk = normOrg(ln);
+    if (nk && !byListed.has(nk)) byListed.set(nk, s);
+  }
 }
 
 function lookup(key) {
   if (!key) return null;
-  return byOrg.get(normOrg(key)) || bySlug.get(normOrg(key)) || byDisplay.get(normOrg(key)) || null;
+  return byOrg.get(normOrg(key)) || bySlug.get(normOrg(key)) || byDisplay.get(normOrg(key)) || byListed.get(normOrg(key)) || null;
 }
 
 function findCovered(entry) {

@@ -1,0 +1,874 @@
+{
+  "canvas": "#fafcff",
+  "surface": "#ecf5ff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "rgb(64, 158, 255)",
+  "border": "#e4e7ed",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "el-color-primary-rgb",
+      "value": "rgb(64, 158, 255)"
+    },
+    {
+      "name": "el-color-success-rgb",
+      "value": "rgb(103, 194, 58)"
+    },
+    {
+      "name": "el-color-warning-rgb",
+      "value": "rgb(230, 162, 60)"
+    },
+    {
+      "name": "el-color-danger-rgb",
+      "value": "rgb(245, 108, 108)"
+    },
+    {
+      "name": "el-color-error-rgb",
+      "value": "rgb(245, 108, 108)"
+    },
+    {
+      "name": "el-color-info-rgb",
+      "value": "rgb(144, 147, 153)"
+    },
+    {
+      "name": "el-color-primary",
+      "value": "#409eff"
+    },
+    {
+      "name": "el-color-primary-light-3",
+      "value": "#79bbff"
+    },
+    {
+      "name": "el-color-primary-light-5",
+      "value": "#a0cfff"
+    },
+    {
+      "name": "el-color-primary-light-7",
+      "value": "#c6e2ff"
+    },
+    {
+      "name": "el-color-primary-light-8",
+      "value": "#d9ecff"
+    },
+    {
+      "name": "el-color-primary-light-9",
+      "value": "#ecf5ff"
+    },
+    {
+      "name": "el-color-primary-dark-2",
+      "value": "#337ecc"
+    },
+    {
+      "name": "el-color-success",
+      "value": "#67c23a"
+    },
+    {
+      "name": "el-color-success-light-3",
+      "value": "#95d475"
+    },
+    {
+      "name": "el-color-success-light-5",
+      "value": "#b3e19d"
+    },
+    {
+      "name": "el-color-success-light-7",
+      "value": "#d1edc4"
+    },
+    {
+      "name": "el-color-success-light-8",
+      "value": "#e1f3d8"
+    },
+    {
+      "name": "el-color-success-light-9",
+      "value": "#f0f9eb"
+    },
+    {
+      "name": "el-color-success-dark-2",
+      "value": "#529b2e"
+    },
+    {
+      "name": "el-color-warning",
+      "value": "#e6a23c"
+    },
+    {
+      "name": "el-color-warning-light-3",
+      "value": "#eebe77"
+    },
+    {
+      "name": "el-color-warning-light-5",
+      "value": "#f3d19e"
+    },
+    {
+      "name": "el-color-warning-light-7",
+      "value": "#f8e3c5"
+    },
+    {
+      "name": "el-color-warning-light-8",
+      "value": "#faecd8"
+    },
+    {
+      "name": "el-color-warning-light-9",
+      "value": "#fdf6ec"
+    },
+    {
+      "name": "el-color-warning-dark-2",
+      "value": "#b88230"
+    },
+    {
+      "name": "el-color-danger",
+      "value": "#f56c6c"
+    },
+    {
+      "name": "el-color-danger-light-3",
+      "value": "#f89898"
+    },
+    {
+      "name": "el-color-danger-light-5",
+      "value": "#fab6b6"
+    },
+    {
+      "name": "el-color-danger-light-7",
+      "value": "#fcd3d3"
+    },
+    {
+      "name": "el-color-danger-light-8",
+      "value": "#fde2e2"
+    },
+    {
+      "name": "el-color-danger-light-9",
+      "value": "#fef0f0"
+    },
+    {
+      "name": "el-color-danger-dark-2",
+      "value": "#c45656"
+    },
+    {
+      "name": "el-color-error",
+      "value": "#f56c6c"
+    },
+    {
+      "name": "el-color-error-light-3",
+      "value": "#f89898"
+    },
+    {
+      "name": "el-color-error-light-5",
+      "value": "#fab6b6"
+    },
+    {
+      "name": "el-color-error-light-7",
+      "value": "#fcd3d3"
+    },
+    {
+      "name": "el-color-error-light-8",
+      "value": "#fde2e2"
+    },
+    {
+      "name": "el-color-error-light-9",
+      "value": "#fef0f0"
+    },
+    {
+      "name": "el-color-error-dark-2",
+      "value": "#c45656"
+    },
+    {
+      "name": "el-color-info",
+      "value": "#909399"
+    },
+    {
+      "name": "el-color-info-light-3",
+      "value": "#b1b3b8"
+    },
+    {
+      "name": "el-color-info-light-5",
+      "value": "#c8c9cc"
+    },
+    {
+      "name": "el-color-info-light-7",
+      "value": "#dedfe0"
+    },
+    {
+      "name": "el-color-info-light-8",
+      "value": "#e9e9eb"
+    },
+    {
+      "name": "el-color-info-light-9",
+      "value": "#f4f4f5"
+    },
+    {
+      "name": "el-color-info-dark-2",
+      "value": "#73767a"
+    },
+    {
+      "name": "el-text-color-primary",
+      "value": "#303133"
+    },
+    {
+      "name": "el-text-color-regular",
+      "value": "#606266"
+    },
+    {
+      "name": "el-text-color-secondary",
+      "value": "#909399"
+    },
+    {
+      "name": "el-text-color-placeholder",
+      "value": "#a8abb2"
+    },
+    {
+      "name": "el-text-color-disabled",
+      "value": "#c0c4cc"
+    },
+    {
+      "name": "el-border-color",
+      "value": "#dcdfe6"
+    },
+    {
+      "name": "el-border-color-light",
+      "value": "#e4e7ed"
+    },
+    {
+      "name": "el-border-color-lighter",
+      "value": "#ebeef5"
+    },
+    {
+      "name": "el-border-color-extra-light",
+      "value": "#f2f6fc"
+    },
+    {
+      "name": "el-border-color-dark",
+      "value": "#d4d7de"
+    },
+    {
+      "name": "el-border-color-darker",
+      "value": "#cdd0d6"
+    },
+    {
+      "name": "el-tour-title-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "el-tour-text-color",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(64, 158, 255)"
+    },
+    {
+      "name": "secondary",
+      "value": "#909399"
+    },
+    {
+      "name": "disabled",
+      "value": "#c0c4cc"
+    },
+    {
+      "name": "border-color-base",
+      "value": "#f5f8ff"
+    },
+    {
+      "name": "text-color-base",
+      "value": "#f0f5ff"
+    },
+    {
+      "name": "border-right-color",
+      "value": "#fff"
+    },
+    {
+      "name": "border-left-color",
+      "value": "#fff"
+    },
+    {
+      "name": "success",
+      "value": "#13ce66"
+    },
+    {
+      "name": "warning",
+      "value": "#e6a23c"
+    },
+    {
+      "name": "el-color-picker-alpha-bg-a",
+      "value": "#ccc"
+    },
+    {
+      "name": "el-fill-color-extra-light",
+      "value": "#fafcff"
+    },
+    {
+      "name": "el-empty-fill-color-6",
+      "value": "#212224"
+    },
+    {
+      "name": "regular",
+      "value": "#606266"
+    },
+    {
+      "name": "overlay",
+      "value": "#ffffff"
+    },
+    {
+      "name": "fill-color-8",
+      "value": "#e0e3e9"
+    },
+    {
+      "name": "beige",
+      "value": "#f5f5dc"
+    },
+    {
+      "name": "chocolate",
+      "value": "#d2691e"
+    },
+    {
+      "name": "darkgray",
+      "value": "#a9a9a9"
+    },
+    {
+      "name": "darksalmon",
+      "value": "#e9967a"
+    },
+    {
+      "name": "dimgray",
+      "value": "#696969"
+    },
+    {
+      "name": "goldenrod",
+      "value": "#daa520"
+    },
+    {
+      "name": "indigo",
+      "value": "#4b0082"
+    },
+    {
+      "name": "lightcyan",
+      "value": "#e0ffff"
+    },
+    {
+      "name": "lightslategray",
+      "value": "#778899"
+    },
+    {
+      "name": "mediumaquamarine",
+      "value": "#66cdaa"
+    },
+    {
+      "name": "midnightblue",
+      "value": "#191970"
+    },
+    {
+      "name": "orange",
+      "value": "#ffa500"
+    },
+    {
+      "name": "peru",
+      "value": "#cd853f"
+    },
+    {
+      "name": "saddlebrown",
+      "value": "#8b4513"
+    }
+  ],
+  "type": [
+    {
+      "name": "el-result-icon-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "64px",
+      "px": 64
+    },
+    {
+      "name": "el-font-size-extra-large",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "el-result-title-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "el-font-size-large",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "el-font-size-medium",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "el-font-family",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "el-alert-title-with-description-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "el-alert-close-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "el-descriptions-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "el-drawer-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "el-notification-title-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "el-popover-title-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "px": 16,
+      "fontWeight": 400
+    },
+    {
+      "name": "el-step-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": "38px"
+    },
+    {
+      "name": "el-tour-title-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "el-font-size-base",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-alert-title-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-alert-description-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-alert-close-customed-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-checkbox-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-dialog-content-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-page-header-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500
+    },
+    {
+      "name": "el-pagination-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-select-input-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-tour-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "el-upload-cover-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "36px"
+    },
+    {
+      "name": "el-font-size-small",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "el-collapse-header-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "el-collapse-content-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "el-font-size-extra-small",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-anchor-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-badge-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-carousel-arrow-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-input-otp-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-input-tag-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-menu-item-group-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-messagebox-error-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-select-group-title",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": "34px"
+    },
+    {
+      "name": "el-pagination-font-size-small",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "el-tag-font-size",
+      "fontFamily": "Inter, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#303133",
+      "border": "1px solid"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#f4f4f5",
+      "textColor": "#909399",
+      "rounded": "4px",
+      "padding": "7px 15px"
+    },
+    {
+      "key": "tag-2",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "shadow": "0 0 0 1px #dcdfe6 inset"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "textColor": "#303133",
+      "padding": "0 20px"
+    },
+    {
+      "key": "panel",
+      "kind": "panel",
+      "textColor": "#606266"
+    },
+    {
+      "key": "dialog-2",
+      "kind": "modal",
+      "textColor": "#606266"
+    },
+    {
+      "key": "table-filter",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "rounded": "2px",
+      "border": "solid 1px #ebeef5",
+      "shadow": "0px 0px 12px #0000001f"
+    },
+    {
+      "key": "dialog-3",
+      "kind": "modal",
+      "textColor": "#303133"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "textColor": "#303133"
+    },
+    {
+      "key": "tabs-2",
+      "kind": "tabs",
+      "textColor": "#303133",
+      "rounded": "3px",
+      "border": "1px solid #dcdfe6"
+    },
+    {
+      "key": "badge-3",
+      "kind": "badge",
+      "textColor": "#fff",
+      "padding": "0",
+      "border": "1px solid #fff"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "textColor": "#606266"
+    },
+    {
+      "key": "table-v2-2",
+      "kind": "table",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "table-v2-3",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "shadow": "2px 0 4px #0000000f"
+    },
+    {
+      "key": "tabs-3",
+      "kind": "tabs",
+      "textColor": "#909399"
+    },
+    {
+      "key": "panel-2",
+      "kind": "panel",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "panel-3",
+      "kind": "panel",
+      "backgroundColor": "#0000",
+      "textColor": "#303133",
+      "padding": "0 5px",
+      "border": "none"
+    },
+    {
+      "key": "select-2",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "padding": "4px 12px",
+      "shadow": "0 0 0 1px #dcdfe6 inset"
+    },
+    {
+      "key": "tag-4",
+      "kind": "badge",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "input-otp",
+      "kind": "input",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "pagination",
+      "kind": "nav",
+      "textColor": "#606266"
+    },
+    {
+      "key": "breadcrumb-2",
+      "kind": "nav",
+      "textColor": "#606266"
+    },
+    {
+      "key": "pagination-3",
+      "kind": "nav",
+      "textColor": "#606266"
+    },
+    {
+      "key": "input-group-2",
+      "kind": "input",
+      "backgroundColor": "#f5f7fa",
+      "textColor": "#909399",
+      "padding": "0 20px",
+      "shadow": "0 1px 0 0  inset, 0 -1px 0 0  inset, -1px 0 0 0  inset"
+    },
+    {
+      "key": "progress-bar-2",
+      "kind": "progress",
+      "backgroundColor": "#ebeef5",
+      "rounded": "100px"
+    },
+    {
+      "key": "progress-bar-3",
+      "kind": "progress",
+      "backgroundColor": "#409eff",
+      "rounded": "100px"
+    },
+    {
+      "key": "select-group-3",
+      "kind": "select",
+      "textColor": "#909399",
+      "padding": "0 20px"
+    },
+    {
+      "key": "input-group-3",
+      "kind": "input",
+      "backgroundColor": "#f5f7fa",
+      "textColor": "#909399",
+      "padding": "0 20px",
+      "shadow": "1px 0 0 0  inset, 0 1px 0 0  inset, 0 -1px 0 0  inset"
+    },
+    {
+      "key": "button-text",
+      "kind": "button",
+      "textColor": "#409eff",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "table-2",
+      "kind": "table",
+      "backgroundColor": "#0000",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "rgb(64, 158, 255)",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fafcff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ecf5ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Element Plus** is a light-first design system anchored on `#fafcff` canvas surfaces with `#0b0b0c` primary ink (19.1:1 contrast) and `rgb(64, 158, 255)` brand accent.\n\nTypography centers cleanly on `Inter` (64px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nSource: published token package (https://element-plus.org/), package `element-plus`. Inventory: **90** colors, **41** typography steps, and **37** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 37 component tokens with documented paddings: `7px 15px`, `0 20px`, `0`, `0 5px`, `4px 12px`.\n- **Hierarchy**: Group controls cleanly within `#ecf5ff` cards; separate sibling sections using `#e4e7ed` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 0 1px #dcdfe6 inset`, `0px 0px 12px #0000001f`) paired with `#e4e7ed` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(64, 158, 255)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fafcff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `rgb(64, 158, 255)` with `#f7f7f8` text (2.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#ecf5ff` surface shifts and `#e4e7ed` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input-otp` fields and secondary buttons."
+}

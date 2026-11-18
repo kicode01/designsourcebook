@@ -1,0 +1,42 @@
+{
+  "name": "tailwindcss",
+  "displayName": "Tailwind CSS",
+  "description": "Tailwind Labs Tailwind CSS — tokens imported from tailwindcss.",
+  "style": "Tailwind Labs Tailwind CSS — tokens imported from tailwindcss.",
+  "category": "Tailwind Labs",
+  "org": "Tailwind Labs",
+  "theme": "light",
+  "tags": [
+    "published",
+    "tailwind-labs",
+    "light"
+  ],
+  "homepage": "https://tailwindcss.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from tailwindcss@4.3.5 (1 token files, 275 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "tailwindcss",
+    "version": "4.3.5"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 3,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

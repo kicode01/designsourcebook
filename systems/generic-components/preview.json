@@ -1,0 +1,172 @@
+{
+  "canvas": "#f8f8f2",
+  "surface": "#f1f5ff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fd971f",
+  "border": "#cecece",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "canvas-text",
+      "value": "#000000"
+    },
+    {
+      "name": "nav-bg",
+      "value": "#2137d0"
+    },
+    {
+      "name": "nav-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "link-text",
+      "value": "#0000ee"
+    },
+    {
+      "name": "badge-text",
+      "value": "#f92672"
+    },
+    {
+      "name": "css-surface-6",
+      "value": "#303136"
+    },
+    {
+      "name": "css-surface-7",
+      "value": "#f1f5ff"
+    },
+    {
+      "name": "css-border-8",
+      "value": "#cecece"
+    },
+    {
+      "name": "css-color-9",
+      "value": "#444444"
+    },
+    {
+      "name": "css-color-10",
+      "value": "#f8f8f2"
+    },
+    {
+      "name": "css-surface-11",
+      "value": "#272822"
+    },
+    {
+      "name": "css-color-12",
+      "value": "#ae81ff"
+    },
+    {
+      "name": "css-color-13",
+      "value": "#a6e22e"
+    },
+    {
+      "name": "css-color-14",
+      "value": "#e6db74"
+    },
+    {
+      "name": "css-color-15",
+      "value": "#66d9ef"
+    },
+    {
+      "name": "css-color-16",
+      "value": "#fd971f"
+    },
+    {
+      "name": "primary",
+      "value": "#fd971f"
+    }
+  ],
+  "type": [
+    {
+      "name": "body",
+      "fontFamily": "sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#2137d0",
+      "textColor": "white",
+      "padding": "40px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f1f5ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fd971f",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fd971f",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f1f5ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f1f5ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f8f8f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f8f8f2",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f1f5ff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Generic Components** is a light-first design system anchored on `#f8f8f2` canvas surfaces with `#0b0b0c` primary ink (18.5:1 contrast) and `#fd971f` brand accent.\n\nTypography centers cleanly on `System Sans` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#f8f8f2` -> `#f1f5ff` surface layering.\n\nMaintained by **generic-components**. Source: live stylesheet extraction (https://genericcomponents.netlify.app/index.html). Inventory: **17** colors, **1** typography steps, and **9** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `40px`, `8px 12px`, `2px`, `6px 12px`, `12px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f1f5ff` cards; separate sibling sections using `#cecece` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f8f8f2` -> `#f1f5ff`) and `1px solid #cecece` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fd971f` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f8f8f2` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fd971f` with `#0b0b0c` text (9.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System Sans` headings with `System Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f1f5ff` surface shifts and `#cecece` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

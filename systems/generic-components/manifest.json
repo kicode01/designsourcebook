@@ -1,0 +1,41 @@
+{
+  "name": "generic-components",
+  "displayName": "Generic Components",
+  "description": "generic-components Generic Components — read from the rendered page in a browser, not from published tokens.",
+  "style": "generic-components Generic Components — read from the rendered page in a browser, not from published tokens.",
+  "category": "generic-components",
+  "org": "generic-components",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "generic-components",
+    "light"
+  ],
+  "homepage": "https://genericcomponents.netlify.app/index.html",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://genericcomponents.netlify.app/index.html in headless Chromium on 2026-11-18 (0 custom properties, 41 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: generic-components.",
+  "source": {
+    "url": "https://genericcomponents.netlify.app/index.html"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 17,
+    "typography": 1,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

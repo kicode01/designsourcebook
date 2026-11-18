@@ -1,0 +1,397 @@
+{
+  "canvas": "#f5f5f5",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#000000",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.none}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#000000"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "ink-soft",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "body",
+      "value": "#757575"
+    },
+    {
+      "name": "hairline",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-soft",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "link",
+      "value": "#057dbc"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": "59.52px",
+      "letterSpacing": "-0.5px"
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": "50.4px",
+      "letterSpacing": "-0.4px"
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": "35.2px",
+      "letterSpacing": "-0.3px"
+    },
+    {
+      "name": "display-sm",
+      "fontFamily": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 400,
+      "lineHeight": "28.08px"
+    },
+    {
+      "name": "display-xs",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": "24px",
+      "letterSpacing": "-0.28px"
+    },
+    {
+      "name": "body-serif-lg",
+      "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "fontSize": "19px",
+      "px": 19,
+      "fontWeight": 400,
+      "lineHeight": "27.93px",
+      "letterSpacing": "0.108px"
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 400,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "body-md-strong",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 700,
+      "lineHeight": "22px",
+      "letterSpacing": "-0.144px"
+    },
+    {
+      "name": "body-serif-md",
+      "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "24px",
+      "letterSpacing": "0.09px"
+    },
+    {
+      "name": "button-md",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "20px",
+      "letterSpacing": "0.3px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "18px",
+      "letterSpacing": "0.4px"
+    },
+    {
+      "name": "body-sm-strong",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": "18px",
+      "letterSpacing": "0.4px"
+    },
+    {
+      "name": "byline",
+      "fontFamily": "BreveText, Georgia, \"Times New Roman\", serif",
+      "fontSize": "12.73px",
+      "px": 12.73,
+      "fontWeight": 700,
+      "lineHeight": "28px",
+      "letterSpacing": "0.108px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Apercu, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": "16px"
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.md} {spacing.xl}"
+    },
+    {
+      "key": "nav-link",
+      "kind": "link",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.md} {spacing.xl}"
+    },
+    {
+      "key": "button-outline",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.md} {spacing.xl}"
+    },
+    {
+      "key": "button-icon-circular",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "{spacing.sm}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "story-card-large",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "story-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "story-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.lg} 0"
+    },
+    {
+      "key": "category-eyebrow",
+      "kind": "component",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "byline-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.body}"
+    },
+    {
+      "key": "hero-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.4xl} {spacing.xl}"
+    },
+    {
+      "key": "masthead-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.md} {spacing.xl}"
+    },
+    {
+      "key": "hairline-divider",
+      "kind": "component"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "padding": "{spacing.4xl} {spacing.xl}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.3xl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.none}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#000000",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f5f5f5",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Wired is the flagship technology-magazine brand under Condé Nast — and the web surface refuses to dress itself as a SaaS marketing site. The page is unmistakably an editorial product: a white canvas, a strict black wordmark in the brand's proprietary `WiredDisplay` (a tall, narrow, high-contrast serif used at 64 px), and stacked story cards that read as a printed magazine grid ported to the screen. There is no atmospheric gradient, no decorative chrome, no chromatic accent — the brand's only colour beyond the black-and-white duet is the small `{colors.link}` (`#057dbc`) used for inline body links inside long-form articles.\r\n\r\nType carries the entire identity. Three families ladder the system: `WiredDisplay` (the proprietary high-contrast serif) for hero / section headlines; `BreveText` (a humanist serif) for long-form body and bylines; and `Apercu` (a humanist sans) for metadata, captions, eyebrow tags, and buttons. The pairing is editorial-grade: serifs for narrative, sans for navigation and structural labels.\r\n\r\nButtons are square. The brand uses `{rounded.none}` 0 px corners across the entire UI — newsletter sign-ups, login forms, \"Read more\" CTAs all render as sharp rectangles. The only circular shape is the `button-icon-circular` used for social-share affordances. There are no soft drop-shadows; the brand uses hairline borders for elevation when needed.\r\n\r\n**Key Characteristics:**\r\n- A strict black-and-white duet with no chromatic accent except the inline link blue `{colors.link}`. The brand reads as a printed magazine.\r\n- Three-face typographic system — `WiredDisplay` serif for display, `BreveText` serif for body, `Apercu` sans for metadata and buttons.\r\n- Square buttons (`{rounded.none}`) — the brand never softens corners on interactive elements.\r\n- A magazine-style story grid: large feature card at top, two-up secondary, then a vertical stack of bylined story rows separated by `{colors.hairline}` 1 px dividers.\r\n- The brand's only signature decorative move is the **masthead band** — a thin black strip with the wordmark centred, no other decoration.\r\n- A near-black `{colors.ink}` (`#000000`) footer band, no graphics, just text columns and the wordmark repeating.\n\n### Layout & Spacing\n### Spacing System\r\n- **Base unit**: 4 px.\r\n- **Tokens**: `{spacing.xxs}` 2 px · `{spacing.xs}` 4 px · `{spacing.sm}` 8 px · `{spacing.md}` 12 px · `{spacing.lg}` 16 px · `{spacing.xl}` 20 px · `{spacing.2xl}` 24 px · `{spacing.3xl}` 32 px · `{spacing.4xl}` 48 px.\r\n- **Section padding**: hero / story grid use `{spacing.4xl}` 48 px top/bottom on desktop.\r\n- **Story row padding**: `{spacing.lg}` 16 px vertical between bylined story rows.\r\n\r\n### Grid & Container\r\n- Marketing content uses a wide container (~1400 px max).\r\n- Cover-story grid: 1 large hero + 2-up secondary stories + vertical stack.\r\n- Story-row stack: full-width single column with hairline dividers.\r\n\r\n### Responsive Strategy\r\n\r\n#### Breakpoints\r\n\r\n| Name | Width | Key Changes |\r\n|---|---|---|\r\n| Mobile | < 768px | Cover hero 64→40 px; all grids 1-up; hamburger nav. |\r\n| Tablet | 768–1023px | 2-up secondary story grid. |\r\n| Desktop | ≥ 1024px | Full magazine grid. |\r\n\r\n#### Touch Targets\r\nButton-primary renders ~44 px tall (12 vertical padding + 20 line). WCAG AAA at all widths.\r\n\r\n#### Collapsing Strategy\r\n- Nav: full link row + Subscribe CTA at desktop. Hamburger at mobile.\r\n- Magazine grid: hero stays full-width; 2-up secondary drops to 1-up at mobile.\r\n- Story rows: stay single-column at all viewports.\r\n\r\n#### Image Behavior\r\n- Cover images: full-bleed 16:9 hero / 4:3 secondary.\r\n- Article body images: full-width inside the article column.\r\n- Author avatars: small inline circular crops next to bylines.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` black for the wordmark, every CTA, and the footer fill. The brand IS the strict black-on-white duet.\r\n- Set hero headlines in `{typography.display-hero}` (WiredDisplay 64 px weight 400). The proprietary serif IS the brand's typographic signature.\r\n- Use `{rounded.none}` 0 px on every button and form input. The brand reads as a printed magazine — square corners are non-negotiable.\r\n- Pair WiredDisplay (serif display) with BreveText (serif body) and Apercu (sans labels). Three faces, three roles.\r\n- Render story rows with `{colors.hairline}` 1 px dividers — the brand's only elevation cue.\r\n\r\n### Don't\r\n- Don't introduce a chromatic brand accent. The link blue is reserved for inline body links inside articles only.\r\n- Don't round button corners. The brand never softens its rectangular geometry.\r\n- Don't drop a soft drop-shadow on cards. Surface contrast and hairlines carry elevation.\r\n- Don't substitute the proprietary serif faces with a generic sans for display. The serif voice is the brand.\r\n- Don't promote display weight beyond 400. The brand's elegance is in the typeface design, not bold weight."
+}

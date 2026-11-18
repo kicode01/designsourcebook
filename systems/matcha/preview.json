@@ -1,0 +1,360 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f6f8fa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "ly-bg-brand",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "ly-brand",
+      "value": "#e6edf3"
+    },
+    {
+      "name": "ly-bg-brand",
+      "value": "#010409"
+    },
+    {
+      "name": "light-default",
+      "value": "#1f2328"
+    },
+    {
+      "name": "light-subtle",
+      "value": "#1f2328"
+    },
+    {
+      "name": "light-contrast",
+      "value": "#e6edf3"
+    },
+    {
+      "name": "light-muted",
+      "value": "#656d76"
+    },
+    {
+      "name": "light-accent",
+      "value": "#0969da"
+    },
+    {
+      "name": "light-active",
+      "value": "#8250df"
+    },
+    {
+      "name": "light-variant",
+      "value": "#bf3989"
+    },
+    {
+      "name": "light-success",
+      "value": "#1a7f37"
+    },
+    {
+      "name": "light-attention",
+      "value": "#9a6700"
+    },
+    {
+      "name": "light-severe",
+      "value": "#bc4c00"
+    },
+    {
+      "name": "light-danger",
+      "value": "#d1242f"
+    },
+    {
+      "name": "dark-default",
+      "value": "#e6edf3"
+    },
+    {
+      "name": "dark-subtle",
+      "value": "#e6edf3"
+    },
+    {
+      "name": "dark-contrast",
+      "value": "#1f2328"
+    },
+    {
+      "name": "dark-muted",
+      "value": "#848d97"
+    },
+    {
+      "name": "dark-accent",
+      "value": "#4493f8"
+    },
+    {
+      "name": "dark-active",
+      "value": "#a371f7"
+    },
+    {
+      "name": "dark-variant",
+      "value": "#db61a2"
+    },
+    {
+      "name": "dark-success",
+      "value": "#3fb950"
+    },
+    {
+      "name": "dark-attention",
+      "value": "#d29922"
+    },
+    {
+      "name": "dark-severe",
+      "value": "#db6d28"
+    },
+    {
+      "name": "dark-danger",
+      "value": "#f85149"
+    },
+    {
+      "name": "light-bg-default",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-bg-subtle",
+      "value": "#d0d7de"
+    },
+    {
+      "name": "light-bg-contrast",
+      "value": "#24292f"
+    },
+    {
+      "name": "light-bg-muted",
+      "value": "#f6f8fa"
+    },
+    {
+      "name": "light-bg-accent",
+      "value": "#ddf4ff"
+    },
+    {
+      "name": "light-bg-active",
+      "value": "#fbefff"
+    },
+    {
+      "name": "light-bg-variant",
+      "value": "#ffeff7"
+    },
+    {
+      "name": "light-bg-success",
+      "value": "#dafbe1"
+    },
+    {
+      "name": "light-bg-attention",
+      "value": "#fff8c5"
+    },
+    {
+      "name": "light-bg-severe",
+      "value": "#fff1e5"
+    },
+    {
+      "name": "light-bg-danger",
+      "value": "#ffebe9"
+    },
+    {
+      "name": "dark-bg-default",
+      "value": "#0d1117"
+    },
+    {
+      "name": "dark-bg-subtle",
+      "value": "#30363d"
+    },
+    {
+      "name": "dark-bg-contrast",
+      "value": "#6e7681"
+    },
+    {
+      "name": "dark-bg-muted",
+      "value": "#161b22"
+    },
+    {
+      "name": "dark-bg-accent",
+      "value": "#121d2f"
+    },
+    {
+      "name": "dark-bg-active",
+      "value": "#231f39"
+    },
+    {
+      "name": "dark-bg-variant",
+      "value": "#221926"
+    },
+    {
+      "name": "dark-bg-success",
+      "value": "#12261e"
+    },
+    {
+      "name": "dark-bg-attention",
+      "value": "#272115"
+    },
+    {
+      "name": "dark-bg-severe",
+      "value": "#221a19"
+    },
+    {
+      "name": "dark-bg-danger",
+      "value": "#25171c"
+    },
+    {
+      "name": "comment",
+      "value": "#57606a"
+    },
+    {
+      "name": "function",
+      "value": "#6639ba"
+    },
+    {
+      "name": "language",
+      "value": "#0550ae"
+    },
+    {
+      "name": "string",
+      "value": "#0a307b"
+    },
+    {
+      "name": "keyword",
+      "value": "#cf2248"
+    },
+    {
+      "name": "html",
+      "value": "#0550ae"
+    },
+    {
+      "name": "section",
+      "value": "#0349b4"
+    },
+    {
+      "name": "bullet",
+      "value": "#953800"
+    },
+    {
+      "name": "primary",
+      "value": "#e6edf3"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "system-ui",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h2",
+      "fontFamily": "system-ui",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "h3",
+      "fontFamily": "system-ui",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "h4",
+      "fontFamily": "system-ui",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "h5",
+      "fontFamily": "system-ui",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "h6",
+      "fontFamily": "system-ui",
+      "fontSize": "0.85rem",
+      "px": 13.6
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "textColor": "#1f2328"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#0a307b"
+    },
+    {
+      "key": "hljs-selector-tag-2",
+      "kind": "select",
+      "textColor": "#0550ae"
+    },
+    {
+      "key": "hljs-selector-tag",
+      "kind": "select",
+      "textColor": "#0550ae"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "ly-bg-brand",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "ly-bg-brand",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f6f8fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f6f8fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f6f8fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Matcha.css** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `ly-bg-brand` brand accent.\n\nTypography centers cleanly on `System UI` (32px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f6f8fa` surface layering.\n\nSource: published token package (https://github.com/lowlighter/matcha), package `@lowlighter/matcha`. Inventory: **55** colors, **6** typography steps, and **11** documented components (MIT License license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `2px`, `6px 12px`, `12px 14px`, `10px 14px`, `6px 10px`.\n- **Hierarchy**: Group controls cleanly within `#f6f8fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f6f8fa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `ly-bg-brand` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `ly-bg-brand` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f6f8fa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

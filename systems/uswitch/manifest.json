@@ -1,0 +1,41 @@
+{
+  "name": "uswitch",
+  "displayName": "uStyle",
+  "description": "uSwitch uStyle — read from the rendered page in a browser, not from published tokens.",
+  "style": "uSwitch uStyle — read from the rendered page in a browser, not from published tokens.",
+  "category": "uSwitch",
+  "org": "uSwitch",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "u-switch",
+    "light"
+  ],
+  "homepage": "https://ustyle.guide/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://ustyle.guide/ in headless Chromium on 2026-11-18 (0 custom properties, 65 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: uStyle styleguide.",
+  "source": {
+    "url": "https://ustyle.guide/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 88,
+    "typography": 21,
+    "components": 41
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 7,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

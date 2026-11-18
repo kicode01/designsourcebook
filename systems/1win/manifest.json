@@ -1,0 +1,43 @@
+{
+  "name": "1win",
+  "displayName": "1win",
+  "description": "An analysis of 1win's design language — a near-black crypto casino and sportsbook built on Inter at heavy weights, where a vivid green action color and an electric blue secondary carry every CTA across dense, full-bleed game-tile rails, promo cards, and live betting panels on a flat dark-grey surface ladder.",
+  "style": "An analysis of 1win's design language — a near-black crypto casino and sportsbook built on Inter at heavy weights, where a vivid green action color and an electric blue secondary carry every CTA across dense, full-bleed game-tile rails, promo cards, and live betting panels on a flat dark-grey surface ladder.",
+  "category": "Media & Consumer Tech",
+  "org": "1win",
+  "theme": "light",
+  "tags": [
+    "media",
+    "consumer",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (1win/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/1win"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 10,
+    "typography": 6,
+    "components": 32
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 4,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#faf6ee",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00754a",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "starbucks-green",
+      "value": "#006241"
+    },
+    {
+      "name": "green-accent",
+      "value": "#00754a"
+    },
+    {
+      "name": "house-green",
+      "value": "#1e3932"
+    },
+    {
+      "name": "green-uplift",
+      "value": "#2b5148"
+    },
+    {
+      "name": "green-light",
+      "value": "#d4e9e2"
+    },
+    {
+      "name": "gold",
+      "value": "#cba258"
+    },
+    {
+      "name": "gold-light",
+      "value": "#dfc49d"
+    },
+    {
+      "name": "gold-lightest",
+      "value": "#faf6ee"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "neutral-cool",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "neutral-warm",
+      "value": "#f2f0eb"
+    },
+    {
+      "name": "ceramic",
+      "value": "#edebe9"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "text-black",
+      "value": "rgba(0, 0, 0, 0.87)"
+    },
+    {
+      "name": "text-black-soft",
+      "value": "rgba(0, 0, 0, 0.58)"
+    },
+    {
+      "name": "text-white",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "name": "text-white-soft",
+      "value": "rgba(255, 255, 255, 0.70)"
+    },
+    {
+      "name": "rewards-green",
+      "value": "#33433d"
+    },
+    {
+      "name": "red",
+      "value": "#c82014"
+    },
+    {
+      "name": "yellow",
+      "value": "#fbbc05"
+    },
+    {
+      "name": "red-tint",
+      "value": "hsl(4 82% 43% / 5%)"
+    },
+    {
+      "name": "primary",
+      "value": "#00754a"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-text-10",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "5.0rem",
+      "px": 80,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "jumbo-text-9",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "3.6rem",
+      "px": 57.6,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "hero-large-text-8",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.8rem",
+      "px": 44.8,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "body-text-3",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.01em"
+    },
+    {
+      "name": "h1",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 600,
+      "lineHeight": 36,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "h2",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 36,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "small-text-2",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.4rem",
+      "px": 22.4,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.01em"
+    },
+    {
+      "name": "micro-text-1",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.3rem",
+      "px": 20.8,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "-0.01em"
+    },
+    {
+      "name": "body-large",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "19px",
+      "px": 19,
+      "fontWeight": 400,
+      "lineHeight": 33.25,
+      "letterSpacing": "-0.16px"
+    },
+    {
+      "name": "button-label",
+      "fontFamily": "SoDoSans, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.01em"
+    }
+  ],
+  "components": [
+    {
+      "key": "4-dark-outlined-sign-in",
+      "kind": "component",
+      "textColor": "black"
+    },
+    {
+      "key": "dropdown-menu-account-dropdown-top-nav",
+      "kind": "select",
+      "textColor": "black"
+    },
+    {
+      "key": "size-options-selector",
+      "kind": "select",
+      "textColor": "black"
+    },
+    {
+      "key": "add-in-milk-select-outlined-rectangle",
+      "kind": "button",
+      "textColor": "black"
+    },
+    {
+      "key": "numeric-stepper",
+      "kind": "component",
+      "textColor": "black"
+    },
+    {
+      "key": "ingredients-nutrition-table",
+      "kind": "table",
+      "textColor": "black"
+    },
+    {
+      "key": "pdp-breadcrumb",
+      "kind": "component",
+      "textColor": "black"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00754a",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00754a",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#faf6ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#faf6ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#faf6ee",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Starbucks' design system is a **warm, confident retail flagship** wearing the green of their storefront apron across every surface. The canvas alternates between a neutral-warm cream (`#f2f0eb`) and a ceramic off-white (`#edebe9`) — colors that reference actual store materials: the paper napkins, the café walls, the wood finishes — while the signature **Starbucks Green** (`#006241`) anchors the brand moment on hero bands, CTAs, and the Rewards experience. The greens come in four calibrated shades (Starbucks, Accent, House, Uplift) each mapped to a specific surface role, and gold (`#cba258`) appears only around Rewards-status ceremony — not as a general accent.\r\n\r\nTypography carries most of the brand voice. The proprietary **SoDoSans** typeface (custom to Starbucks) sits across nearly every surface with a tight `-0.16px` letter-spacing — it reads confident and friendly rather than fashion-magazine severe. What's unusual: the Rewards page switches to a warm serif (`\"Lander Tall\", \"Iowan Old Style\", Georgia`) for specific headline moments, subtly echoing the nostalgic feel of a coffeehouse chalkboard. And the Careers pages use a handwritten script (`\"Kalam\", \"Comic Sans MS\", cursive`) for personal cup-name touches. Three typefaces, three contexts — the system is disciplined about when each appears.\r\n\r\nThe surfaces breathe through rounded geometry. Every button is a 50px full-pill. Cards take a 12px rounded-rectangle. The \"Frap\" floating CTA — a 56px circular order button in Green Accent (`#00754A`) — is the product's signature depth move: it floats bottom-right with a layered shadow stack (`0 0 6px rgba(0,0,0,0.24)` base + `0 8px 12px rgba(0,0,0,0.14)` ambient) and compresses via `scale(0.95)` on press. Elevations are otherwise restrained — card shadows stay at a whispered `0.14/0.24` alpha, global nav gets a quiet three-layer shadow stack. The whole system feels like clean café signage: legible, warm, and never shouting.\r\n\r\n**Key Characteristics:**\r\n- Four-tier green brand system (Starbucks / Accent / House / Uplift) each mapped to a distinct surface role — not a single \"brand green\"\r\n- Gold reserved for Rewards-status moments only; never a general-purpose accent\r\n- Warm-neutral canvas (`#f2f0eb` / `#edebe9`) instead of cold white — references café materials\r\n- Custom proprietary typeface (SoDoSans) with tight `-0.16px` letter-spacing as the universal voice\r\n- Context-specific type switches: serif (Lander Tall) for Rewards, script (Kalam) for Careers cup-names\r\n- Full-pill buttons (`50px` radius) universal, `scale(0.95)` active press the signature micro-interaction\r\n- Floating \"Frap\" circular CTA (`56px`, Green Accent fill, layered shadow stack) — the product's signature elevation element\r\n- Gift-card surfaces designed as **photographed physical product** — every card is a distinct illustrated photograph rather than a generated graphic\r\n- 12px card radius + whisper-soft shadows keep content cards flat-plus-hint-of-lift\r\n- Rem-based spacing scale anchored at 1.6rem (~16px) = `--space-3`, stepping to 6.4rem (~64px)\r\n\r\n**Color-block page rhythm:** Cream hero → White content sections → Dark-green (`#1E3932`) feature band with white text → Cream utility zone → Dark-green (`#1E3932`) footer with gold / white text — an espresso-dark bookend around the bright body.",
+  "dos": "### Do\r\n- Use Neutral Warm (`#f2f0eb`) or Ceramic (`#edebe9`) as page canvas instead of pure white — the warm cream is the signature\r\n- Map the green tiers to their intended surface role — Starbucks Green for headings, Green Accent for CTAs, House Green for deep bands, Uplift for decorative\r\n- Keep tracking tight at `-0.01em` / `-0.16px` on SoDoSans across the whole system\r\n- Use 50px full-pill radius on every button without exception\r\n- Apply `transform: scale(0.95)` as the universal button active state\r\n- Reserve Gold for Rewards-status ceremony moments only\r\n- Use SoDoSans for nearly everything; switch to Lander Tall serif only for Rewards editorial headlines; reserve Kalam script for Careers \"cup name\" moments\r\n- Layer 2–3 low-alpha shadows instead of one heavier drop shadow for elevation\r\n- Use the Frap circular CTA as the persistent floating order entry on every shopping surface\r\n- Let the cream canvas breathe between content cards — use whitespace, not dividers\r\n\r\n### Don't\r\n- Don't use pure white as the page canvas — the warm cream temperature is load-bearing\r\n- Don't pick \"one brand green\" — the four-green system is intentional; using only `#006241` everywhere flattens the brand\r\n- Don't use Gold as a general-purpose accent — it's a Rewards signal only\r\n- Don't square the corners on buttons — the 50px pill is universal\r\n- Don't introduce gradient fills — the system is color-block throughout\r\n- Don't weight-contrast h1 and h2 by size — the hierarchy comes from weight + color (600 Starbucks-Green vs 400 Text Black)\r\n- Don't use pure black for body text — `rgba(0,0,0,0.87)` matches the warm canvas\r\n- Don't skip the `scale(0.95)` active feedback on buttons — it's a signature micro-interaction\r\n- Don't stack single heavy shadows; always layer 2–3 low-alpha ones\r\n- Don't introduce serifs or scripts into the main shopping flow — they belong to Rewards and Careers contexts respectively"
+}

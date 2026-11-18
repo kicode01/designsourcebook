@@ -1,0 +1,41 @@
+{
+  "name": "box",
+  "displayName": "Box UI Elements",
+  "description": "Box UI Elements — tokens read from https://github.com/box/box-ui-elements.",
+  "style": "Box UI Elements — tokens read from https://github.com/box/box-ui-elements.",
+  "category": "Box",
+  "org": "Box",
+  "theme": "light",
+  "tags": [
+    "published",
+    "box",
+    "light"
+  ],
+  "homepage": "https://github.com/box/box-ui-elements",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/box/box-ui-elements — 10 token files, 225 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/box/box-ui-elements"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 30,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

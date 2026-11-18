@@ -1,0 +1,491 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#F1F2F4",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#13a5b9",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-global-primary-100",
+      "value": "#2f6dd5"
+    },
+    {
+      "name": "color-global-secondary-90",
+      "value": "#5b6772"
+    },
+    {
+      "name": "color-global-accent-110",
+      "value": "#13a5b9"
+    },
+    {
+      "name": "color-global-dark-primary-115",
+      "value": "#002460"
+    },
+    {
+      "name": "color-global-mid-primary-70",
+      "value": "#84a9e6"
+    },
+    {
+      "name": "color-global-light-primary-40",
+      "value": "#f2f6fc"
+    },
+    {
+      "name": "color-global-dark-secondary-130",
+      "value": "#000000"
+    },
+    {
+      "name": "color-global-dark-secondary-110",
+      "value": "#2d3339"
+    },
+    {
+      "name": "color-global-mid-secondary-80",
+      "value": "#727f8d"
+    },
+    {
+      "name": "color-global-light-secondary-50",
+      "value": "#c6ccd2"
+    },
+    {
+      "name": "color-global-semantic-success-100",
+      "value": "#008069"
+    },
+    {
+      "name": "color-global-semantic-success-130",
+      "value": "#001a15"
+    },
+    {
+      "name": "color-global-semantic-warning-90",
+      "value": "#f97c1d"
+    },
+    {
+      "name": "color-alias-interactive-accent-default",
+      "value": "#18cee7"
+    },
+    {
+      "name": "color-alias-interactive-accent-pressed",
+      "value": "#0f7d8a"
+    },
+    {
+      "name": "color-alias-interactive-primary-hover",
+      "value": "#00368f"
+    },
+    {
+      "name": "color-alias-interactive-secondary-default",
+      "value": "#454d56"
+    },
+    {
+      "name": "color-alias-interactive-secondary-pressed",
+      "value": "#0b0d0e"
+    },
+    {
+      "name": "color-alias-interactive-warning-hover",
+      "value": "#ffa217"
+    },
+    {
+      "name": "color-alias-interactive-success-default",
+      "value": "#008069"
+    },
+    {
+      "name": "color-alias-interactive-success-pressed",
+      "value": "#001a15"
+    },
+    {
+      "name": "color-alias-text-color-primary-light-0",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-alias-text-color-secondary-dark-100",
+      "value": "#454d56"
+    },
+    {
+      "name": "color-alias-background-color-disabled",
+      "value": "#e3e5e8"
+    },
+    {
+      "name": "color-alias-background-color-primary-light-60",
+      "value": "#aec6ef"
+    },
+    {
+      "name": "color-alias-background-color-primary-dark-115",
+      "value": "#002460"
+    },
+    {
+      "name": "color-alias-background-color-secondary-light-40",
+      "value": "#e3e5e8"
+    },
+    {
+      "name": "color-alias-background-color-secondary-mid-90",
+      "value": "#5b6571"
+    },
+    {
+      "name": "color-alias-background-color-secondary-dark-125",
+      "value": "#0b0d0e"
+    },
+    {
+      "name": "color-alias-app-interactive-secondary-default",
+      "value": "#5b6772"
+    },
+    {
+      "name": "color-alias-text-color-alert",
+      "value": "#aa224f"
+    },
+    {
+      "name": "color-alias-text-color-success",
+      "value": "#008069"
+    },
+    {
+      "name": "color-alias-background-color-warning",
+      "value": "#cb4d1e"
+    },
+    {
+      "name": "color-specific-data-entry-label-color-warning",
+      "value": "#cb4d1e"
+    },
+    {
+      "name": "color-specific-data-entry-border-color-default",
+      "value": "#454d56"
+    },
+    {
+      "name": "color-specific-data-entry-border-color-valued",
+      "value": "#454d56"
+    },
+    {
+      "name": "color-specific-data-entry-border-color-success",
+      "value": "#008069"
+    },
+    {
+      "name": "color-specific-option-background-color-hover",
+      "value": "#00368f"
+    },
+    {
+      "name": "color-specific-option-background-color-valued",
+      "value": "#2f6dd5"
+    },
+    {
+      "name": "secondary-100",
+      "value": "#454d56"
+    },
+    {
+      "name": "accent-70",
+      "value": "#8ce7f3"
+    },
+    {
+      "name": "dark-primary-110",
+      "value": "#00368F"
+    },
+    {
+      "name": "dark-primary-130",
+      "value": "#000814"
+    },
+    {
+      "name": "mid-primary-90",
+      "value": "#2357AE"
+    },
+    {
+      "name": "light-primary-60",
+      "value": "#AEC6EF"
+    },
+    {
+      "name": "dark-secondary-120",
+      "value": "#17191c"
+    },
+    {
+      "name": "mid-secondary-90",
+      "value": "#5b6571"
+    },
+    {
+      "name": "light-secondary-60",
+      "value": "#aab2bb"
+    },
+    {
+      "name": "light-secondary-35",
+      "value": "#F1F2F4"
+    },
+    {
+      "name": "semantic-success-120",
+      "value": "#00382E"
+    },
+    {
+      "name": "semantic-warning-100",
+      "value": "#CB4D1E"
+    },
+    {
+      "name": "semantic-info-100",
+      "value": "#2F6DD5"
+    },
+    {
+      "name": "color-global-primary000",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color-global-accent100",
+      "value": "#18cee7"
+    },
+    {
+      "name": "color-global-accent120",
+      "value": "#0f7d8a"
+    },
+    {
+      "name": "color-global-dark-primary120",
+      "value": "#00173d"
+    },
+    {
+      "name": "color-global-mid-primary80",
+      "value": "#598bde"
+    },
+    {
+      "name": "color-global-light-primary50",
+      "value": "#d9e4f7"
+    },
+    {
+      "name": "color-global-dark-secondary125",
+      "value": "#0b0d0e"
+    },
+    {
+      "name": "color-global-mid-secondary100",
+      "value": "#444c55"
+    },
+    {
+      "name": "color-global-mid-secondary70",
+      "value": "#8e98a4"
+    },
+    {
+      "name": "color-global-light-secondary40",
+      "value": "#e3e5e8"
+    },
+    {
+      "name": "color-global-semantic-success110",
+      "value": "#005c4b"
+    },
+    {
+      "name": "color-global-semantic-warning110",
+      "value": "#9c3a16"
+    },
+    {
+      "name": "color-global-semantic-warning80",
+      "value": "#ffa217"
+    },
+    {
+      "name": "color-alias-text-color-primary100",
+      "value": "#2f6dd5"
+    },
+    {
+      "name": "color-alias-text-color-primary-light50",
+      "value": "#d9e4f7"
+    },
+    {
+      "name": "color-alias-text-color-primary-dark110",
+      "value": "#00368f"
+    },
+    {
+      "name": "color-alias-background-color-primary-light60",
+      "value": "#aec6ef"
+    },
+    {
+      "name": "color-alias-background-color-primary-dark115",
+      "value": "#002460"
+    },
+    {
+      "name": "color-alias-background-color-secondary-light40",
+      "value": "#e3e5e8"
+    },
+    {
+      "name": "color-alias-background-color-secondary-mid90",
+      "value": "#5b6571"
+    },
+    {
+      "name": "color-alias-background-color-secondary-dark125",
+      "value": "#0b0d0e"
+    },
+    {
+      "name": "color-alias-gradient-accent-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "color-alias-overlay25-primary000",
+      "value": "#000000"
+    },
+    {
+      "name": "color-global-semantic-alert-100",
+      "value": "#aa224f"
+    },
+    {
+      "name": "color-global-semantic-alert-120",
+      "value": "#551128"
+    },
+    {
+      "name": "color-alias-interactive-alert-default",
+      "value": "#aa224f"
+    },
+    {
+      "name": "color-alias-interactive-alert-pressed",
+      "value": "#3f0d1b"
+    },
+    {
+      "name": "color-specific-data-entry-label-color-hover",
+      "value": "#00368f"
+    },
+    {
+      "name": "color-specific-data-entry-label-color-alert",
+      "value": "#aa224f"
+    },
+    {
+      "name": "color-specific-data-entry-placeholder-color-hover",
+      "value": "#00368f"
+    },
+    {
+      "name": "color-specific-data-entry-placeholder-color-alert",
+      "value": "#aa224f"
+    },
+    {
+      "name": "semantic-alert-110",
+      "value": "#7f1a3b"
+    },
+    {
+      "name": "semantic-alert-130",
+      "value": "#3f0d1b"
+    },
+    {
+      "name": "c1",
+      "value": "#2F6DD5"
+    },
+    {
+      "name": "c3",
+      "value": "#18cee7"
+    },
+    {
+      "name": "color-global-semantic-alert110",
+      "value": "#7f1a3b"
+    },
+    {
+      "name": "color-global-semantic-alert130",
+      "value": "#3f0d1b"
+    },
+    {
+      "name": "color-global-gradient02",
+      "value": "#000000"
+    },
+    {
+      "name": "primary",
+      "value": "#13a5b9"
+    }
+  ],
+  "type": [
+    {
+      "name": "typography-global-font-family-01",
+      "fontFamily": "\"Titillium Web\"",
+      "px": 16
+    },
+    {
+      "name": "typography-global-font-family-02",
+      "fontFamily": "Lora",
+      "px": 16
+    },
+    {
+      "name": "typography-global-font-family-03",
+      "fontFamily": "\"Roboto Mono\"",
+      "px": 16
+    },
+    {
+      "name": "typography-alias-font-family-heading-01",
+      "fontFamily": "\"Titillium Web\"",
+      "px": 16
+    },
+    {
+      "name": "typography-alias-font-family-text-01",
+      "fontFamily": "\"Titillium Web\"",
+      "px": 16
+    },
+    {
+      "name": "typography-alias-font-family-text-02",
+      "fontFamily": "Lora",
+      "px": 16
+    },
+    {
+      "name": "typography-alias-font-family-number-03",
+      "fontFamily": "\"Roboto Mono\"",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#F1F2F4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#13a5b9",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#13a5b9",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F1F2F4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#F1F2F4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F1F2F4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Sirio** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#13a5b9` brand accent.\n\nTypography centers cleanly on `Titillium Web` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#F1F2F4` surface layering.\n\nMaintained by **INPS**. Source: published token package (https://github.com/INPS-it/sirio-design-token), repo https://github.com/INPS-it/sirio-design-token. Inventory: **91** colors, **7** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#F1F2F4` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#F1F2F4`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#13a5b9` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#13a5b9` with `#f7f7f8` text (2.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Titillium Web` headings with `Titillium Web` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F1F2F4` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

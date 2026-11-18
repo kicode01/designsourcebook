@@ -1,0 +1,455 @@
+{
+  "canvas": "#fbfbf9",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fe9a00",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "neutral-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "neutral-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "neutral-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "neutral-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "neutral-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "neutral-500",
+      "value": "#737373"
+    },
+    {
+      "name": "neutral-600",
+      "value": "#525252"
+    },
+    {
+      "name": "neutral-700",
+      "value": "#404040"
+    },
+    {
+      "name": "neutral-800",
+      "value": "#262626"
+    },
+    {
+      "name": "neutral-900",
+      "value": "#171717"
+    },
+    {
+      "name": "neutral-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "mauve-50",
+      "value": "#faf9fb"
+    },
+    {
+      "name": "mauve-300",
+      "value": "#d1cdd7"
+    },
+    {
+      "name": "mauve-600",
+      "value": "#8a8794"
+    },
+    {
+      "name": "mauve-900",
+      "value": "#3d3a41"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "slate-200",
+      "value": "#e2e8f0"
+    },
+    {
+      "name": "slate-500",
+      "value": "#62748e"
+    },
+    {
+      "name": "slate-800",
+      "value": "#1d293d"
+    },
+    {
+      "name": "gray-50",
+      "value": "#f9fafb"
+    },
+    {
+      "name": "gray-300",
+      "value": "#d1d5dc"
+    },
+    {
+      "name": "gray-600",
+      "value": "#4a5565"
+    },
+    {
+      "name": "gray-900",
+      "value": "#101828"
+    },
+    {
+      "name": "zinc-100",
+      "value": "#f4f4f5"
+    },
+    {
+      "name": "zinc-400",
+      "value": "#9f9fa9"
+    },
+    {
+      "name": "zinc-700",
+      "value": "#3f3f46"
+    },
+    {
+      "name": "zinc-950",
+      "value": "#09090b"
+    },
+    {
+      "name": "stone-200",
+      "value": "#e7e5e4"
+    },
+    {
+      "name": "stone-500",
+      "value": "#79716b"
+    },
+    {
+      "name": "stone-800",
+      "value": "#292524"
+    },
+    {
+      "name": "olive-50",
+      "value": "#fbfbf9"
+    },
+    {
+      "name": "olive-300",
+      "value": "#d8d8d0"
+    },
+    {
+      "name": "olive-600",
+      "value": "#5b5b4b"
+    },
+    {
+      "name": "olive-900",
+      "value": "#1d1d16"
+    },
+    {
+      "name": "mist-100",
+      "value": "#f1f3f3"
+    },
+    {
+      "name": "mist-400",
+      "value": "#9ca8ab"
+    },
+    {
+      "name": "mist-700",
+      "value": "#394447"
+    },
+    {
+      "name": "mist-950",
+      "value": "#090b0c"
+    },
+    {
+      "name": "taupe-200",
+      "value": "#e8e4e3"
+    },
+    {
+      "name": "taupe-500",
+      "value": "#7c6d67"
+    },
+    {
+      "name": "taupe-800",
+      "value": "#2b2422"
+    },
+    {
+      "name": "red-50",
+      "value": "#fef2f2"
+    },
+    {
+      "name": "red-300",
+      "value": "#ffa2a2"
+    },
+    {
+      "name": "red-600",
+      "value": "#e7000b"
+    },
+    {
+      "name": "red-900",
+      "value": "#82181a"
+    },
+    {
+      "name": "orange-100",
+      "value": "#ffedd4"
+    },
+    {
+      "name": "orange-400",
+      "value": "#ff8904"
+    },
+    {
+      "name": "orange-700",
+      "value": "#ca3500"
+    },
+    {
+      "name": "orange-950",
+      "value": "#441306"
+    },
+    {
+      "name": "amber-200",
+      "value": "#fee685"
+    },
+    {
+      "name": "amber-500",
+      "value": "#fe9a00"
+    },
+    {
+      "name": "amber-800",
+      "value": "#973c00"
+    },
+    {
+      "name": "yellow-50",
+      "value": "#fefce8"
+    },
+    {
+      "name": "yellow-300",
+      "value": "#ffdf20"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#d08700"
+    },
+    {
+      "name": "yellow-900",
+      "value": "#733e0a"
+    },
+    {
+      "name": "lime-100",
+      "value": "#ecfcca"
+    },
+    {
+      "name": "lime-400",
+      "value": "#9ae600"
+    },
+    {
+      "name": "lime-700",
+      "value": "#497d00"
+    },
+    {
+      "name": "lime-950",
+      "value": "#192e03"
+    },
+    {
+      "name": "green-200",
+      "value": "#b9f8cf"
+    },
+    {
+      "name": "green-500",
+      "value": "#00c950"
+    },
+    {
+      "name": "green-800",
+      "value": "#016630"
+    },
+    {
+      "name": "emerald-50",
+      "value": "#ecfdf5"
+    },
+    {
+      "name": "emerald-300",
+      "value": "#5ee9b5"
+    },
+    {
+      "name": "emerald-600",
+      "value": "#009966"
+    },
+    {
+      "name": "emerald-900",
+      "value": "#004f3b"
+    },
+    {
+      "name": "teal-100",
+      "value": "#cbfbf1"
+    },
+    {
+      "name": "teal-400",
+      "value": "#00d5be"
+    },
+    {
+      "name": "teal-700",
+      "value": "#00786f"
+    },
+    {
+      "name": "teal-950",
+      "value": "#022f2e"
+    },
+    {
+      "name": "cyan-200",
+      "value": "#a2f4fd"
+    },
+    {
+      "name": "cyan-500",
+      "value": "#00b8db"
+    },
+    {
+      "name": "cyan-800",
+      "value": "#005f78"
+    },
+    {
+      "name": "sky-50",
+      "value": "#f0f9ff"
+    },
+    {
+      "name": "sky-300",
+      "value": "#74d4ff"
+    },
+    {
+      "name": "sky-600",
+      "value": "#0084d1"
+    },
+    {
+      "name": "sky-900",
+      "value": "#024a70"
+    },
+    {
+      "name": "blue-100",
+      "value": "#dbeafe"
+    },
+    {
+      "name": "blue-400",
+      "value": "#51a2ff"
+    },
+    {
+      "name": "blue-700",
+      "value": "#1447e6"
+    },
+    {
+      "name": "blue-950",
+      "value": "#162456"
+    },
+    {
+      "name": "indigo-200",
+      "value": "#c6d2ff"
+    },
+    {
+      "name": "indigo-500",
+      "value": "#615fff"
+    },
+    {
+      "name": "indigo-800",
+      "value": "#372aac"
+    },
+    {
+      "name": "violet-50",
+      "value": "#f5f3ff"
+    },
+    {
+      "name": "violet-300",
+      "value": "#c4b4ff"
+    },
+    {
+      "name": "violet-600",
+      "value": "#7f22fe"
+    },
+    {
+      "name": "violet-900",
+      "value": "#4d179a"
+    },
+    {
+      "name": "purple-100",
+      "value": "#f3e8ff"
+    },
+    {
+      "name": "primary",
+      "value": "#fe9a00"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fe9a00",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fe9a00",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fbfbf9",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fbfbf9",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Tamagui** is a light-first design system anchored on `#fbfbf9` canvas surfaces with `#0b0b0c` primary ink (19.0:1 contrast) and `#fe9a00` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `8px` base corner radius and stepped `#fbfbf9` -> `#fafafa` surface layering.\n\nSource: published token package, package `@tamagui/themes`. Inventory: **91** colors, **0** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fbfbf9` -> `#fafafa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fe9a00` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fbfbf9` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fe9a00` with `#0b0b0c` text (9.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fafafa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

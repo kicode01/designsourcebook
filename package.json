@@ -12,6 +12,8 @@
     "coverage": "node scripts/coverage.mjs",
     "catalog": "node scripts/build-catalog.mjs",
     "build": "node scripts/build-catalog.mjs",
+    "build:standalone": "node scripts/build-catalog.mjs --standalone",
+    "build:prod": "npm --prefix studio/app ci --no-audit --no-fund && npm --prefix studio/app run build && node scripts/build-catalog.mjs",
     "sync": "node scripts/sync-sources.mjs",
     "lint": "node bin/sourcebook.mjs lint --all",
     "mcp": "node bin/sourcebook.mjs mcp",

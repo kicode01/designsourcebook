@@ -1,0 +1,521 @@
+{
+  "canvas": "#f5f6f7",
+  "surface": "#f8eaef",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "ax-accent-500",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "ax-neutral-100",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "ax-neutral-200",
+      "value": "#ecedef"
+    },
+    {
+      "name": "ax-neutral-300",
+      "value": "#e1e3e7"
+    },
+    {
+      "name": "ax-neutral-400",
+      "value": "#cfd3d8"
+    },
+    {
+      "name": "ax-neutral-500",
+      "value": "#818997"
+    },
+    {
+      "name": "ax-neutral-600",
+      "value": "#6f7785"
+    },
+    {
+      "name": "ax-neutral-700",
+      "value": "#5d6573"
+    },
+    {
+      "name": "ax-neutral-800",
+      "value": "#555d6a"
+    },
+    {
+      "name": "ax-neutral-900",
+      "value": "#49515e"
+    },
+    {
+      "name": "ax-neutral-1000",
+      "value": "#202733"
+    },
+    {
+      "name": "ax-accent-100",
+      "value": "#f1f7ff"
+    },
+    {
+      "name": "ax-accent-200",
+      "value": "#e4eeff"
+    },
+    {
+      "name": "ax-accent-300",
+      "value": "#d4e5fd"
+    },
+    {
+      "name": "ax-accent-400",
+      "value": "#bad5fb"
+    },
+    {
+      "name": "ax-accent-500",
+      "value": "#428ae3"
+    },
+    {
+      "name": "ax-accent-600",
+      "value": "#2176d4"
+    },
+    {
+      "name": "ax-accent-700",
+      "value": "#0063c1"
+    },
+    {
+      "name": "ax-accent-800",
+      "value": "#005bb6"
+    },
+    {
+      "name": "ax-accent-900",
+      "value": "#004ea3"
+    },
+    {
+      "name": "ax-accent-1000",
+      "value": "#002459"
+    },
+    {
+      "name": "ax-success-100",
+      "value": "#e2fde8"
+    },
+    {
+      "name": "ax-success-200",
+      "value": "#d5f6db"
+    },
+    {
+      "name": "ax-success-300",
+      "value": "#c4edcd"
+    },
+    {
+      "name": "ax-success-400",
+      "value": "#a8dfb4"
+    },
+    {
+      "name": "ax-success-500",
+      "value": "#199d4f"
+    },
+    {
+      "name": "ax-success-600",
+      "value": "#00893c"
+    },
+    {
+      "name": "ax-success-700",
+      "value": "#007629"
+    },
+    {
+      "name": "ax-success-800",
+      "value": "#006c1f"
+    },
+    {
+      "name": "ax-success-900",
+      "value": "#005e0f"
+    },
+    {
+      "name": "ax-success-1000",
+      "value": "#002e00"
+    },
+    {
+      "name": "ax-warning-100",
+      "value": "#fff5e4"
+    },
+    {
+      "name": "ax-warning-200",
+      "value": "#ffebc7"
+    },
+    {
+      "name": "ax-warning-300",
+      "value": "#ffdea5"
+    },
+    {
+      "name": "ax-warning-400",
+      "value": "#ffcb6f"
+    },
+    {
+      "name": "ax-warning-500",
+      "value": "#e75e01"
+    },
+    {
+      "name": "ax-warning-600",
+      "value": "#ca5000"
+    },
+    {
+      "name": "ax-warning-700",
+      "value": "#ac4400"
+    },
+    {
+      "name": "ax-warning-800",
+      "value": "#a03e00"
+    },
+    {
+      "name": "ax-warning-900",
+      "value": "#8c3500"
+    },
+    {
+      "name": "ax-warning-1000",
+      "value": "#481700"
+    },
+    {
+      "name": "ax-danger-100",
+      "value": "#fff2f7"
+    },
+    {
+      "name": "ax-danger-200",
+      "value": "#ffe8f0"
+    },
+    {
+      "name": "ax-danger-300",
+      "value": "#ffd9e6"
+    },
+    {
+      "name": "ax-danger-400",
+      "value": "#ffc2d7"
+    },
+    {
+      "name": "ax-danger-500",
+      "value": "#ec526e"
+    },
+    {
+      "name": "ax-danger-600",
+      "value": "#e22948"
+    },
+    {
+      "name": "ax-danger-700",
+      "value": "#cb0035"
+    },
+    {
+      "name": "ax-danger-800",
+      "value": "#bc002a"
+    },
+    {
+      "name": "ax-danger-900",
+      "value": "#a60017"
+    },
+    {
+      "name": "ax-danger-1000",
+      "value": "#560000"
+    },
+    {
+      "name": "ax-info-100",
+      "value": "#eef6fc"
+    },
+    {
+      "name": "ax-info-200",
+      "value": "#e3eff7"
+    },
+    {
+      "name": "ax-info-300",
+      "value": "#d7e6f0"
+    },
+    {
+      "name": "ax-info-400",
+      "value": "#c0d6e4"
+    },
+    {
+      "name": "ax-info-500",
+      "value": "#5a8fae"
+    },
+    {
+      "name": "ax-info-600",
+      "value": "#457c9d"
+    },
+    {
+      "name": "ax-info-700",
+      "value": "#246b91"
+    },
+    {
+      "name": "ax-info-800",
+      "value": "#156389"
+    },
+    {
+      "name": "ax-info-900",
+      "value": "#00557d"
+    },
+    {
+      "name": "ax-info-1000",
+      "value": "#002942"
+    },
+    {
+      "name": "ax-brand-magenta-100",
+      "value": "#fbf3f6"
+    },
+    {
+      "name": "ax-brand-magenta-200",
+      "value": "#f8eaef"
+    },
+    {
+      "name": "ax-brand-magenta-300",
+      "value": "#f3dde5"
+    },
+    {
+      "name": "ax-brand-magenta-400",
+      "value": "#eccad6"
+    },
+    {
+      "name": "ax-brand-magenta-500",
+      "value": "#c26f92"
+    },
+    {
+      "name": "ax-brand-magenta-600",
+      "value": "#b65681"
+    },
+    {
+      "name": "ax-brand-magenta-700",
+      "value": "#a93d70"
+    },
+    {
+      "name": "ax-brand-magenta-800",
+      "value": "#a33069"
+    },
+    {
+      "name": "ax-brand-magenta-900",
+      "value": "#98185d"
+    },
+    {
+      "name": "ax-brand-magenta-1000",
+      "value": "#52002b"
+    },
+    {
+      "name": "ax-brand-beige-100",
+      "value": "#fff4ee"
+    },
+    {
+      "name": "ax-brand-beige-200",
+      "value": "#fdebe0"
+    },
+    {
+      "name": "ax-brand-beige-300",
+      "value": "#fcddcd"
+    },
+    {
+      "name": "ax-brand-beige-400",
+      "value": "#f8c8b1"
+    },
+    {
+      "name": "ax-brand-beige-500",
+      "value": "#c0765d"
+    },
+    {
+      "name": "ax-brand-beige-600",
+      "value": "#ad634a"
+    },
+    {
+      "name": "ax-brand-beige-700",
+      "value": "#915541"
+    },
+    {
+      "name": "ax-brand-beige-800",
+      "value": "#874e3b"
+    },
+    {
+      "name": "ax-brand-beige-900",
+      "value": "#764332"
+    },
+    {
+      "name": "ax-brand-beige-1000",
+      "value": "#3c1f15"
+    },
+    {
+      "name": "ax-brand-blue-100",
+      "value": "#eef6fc"
+    },
+    {
+      "name": "ax-brand-blue-200",
+      "value": "#e3eff7"
+    },
+    {
+      "name": "ax-brand-blue-300",
+      "value": "#d7e6f0"
+    },
+    {
+      "name": "ax-brand-blue-400",
+      "value": "#c0d6e4"
+    },
+    {
+      "name": "ax-brand-blue-500",
+      "value": "#5a8fae"
+    },
+    {
+      "name": "ax-brand-blue-600",
+      "value": "#457c9d"
+    },
+    {
+      "name": "ax-brand-blue-700",
+      "value": "#246b91"
+    },
+    {
+      "name": "ax-brand-blue-800",
+      "value": "#156389"
+    },
+    {
+      "name": "ax-brand-blue-900",
+      "value": "#00557d"
+    },
+    {
+      "name": "ax-brand-blue-1000",
+      "value": "#002942"
+    },
+    {
+      "name": "primary",
+      "value": "#f8eaef"
+    }
+  ],
+  "type": [
+    {
+      "name": "ax-font-size-heading-2xlarge",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "ax-font-size-heading-xlarge",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "ax-font-size-heading-large",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "ax-font-size-heading-medium",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "ax-font-size-heading-small",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "ax-font-size-xlarge",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "ax-font-size-heading-xsmall",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "ax-font-size-large",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "ax-font-size-medium",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "ax-font-family",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "ax-font-size-small",
+      "fontFamily": "\"Source Sans 3\", \"Source Sans Pro\", Arial, sans-serif",
+      "fontSize": ".875rem",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f8eaef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "ax-accent-500",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "ax-accent-500",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f8eaef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f8eaef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f5f6f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f5f6f7",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f8eaef",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Aksel** is a light-first design system anchored on `#f5f6f7` canvas surfaces with `#0b0b0c` primary ink (18.2:1 contrast) and `ax-accent-500` brand accent.\n\nTypography centers cleanly on `Source Sans 3` (40px display down to 16px body), unified by `8px` base corner radius and stepped `#f5f6f7` -> `#f8eaef` surface layering.\n\nMaintained by **NAV Norway**. Source: published token package (https://aksel.nav.no/grunnleggende/styling/design-tokens/), package `@navikt/ds-tokens`. Inventory: **91** colors, **11** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f8eaef` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f5f6f7` -> `#f8eaef`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `ax-accent-500` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f5f6f7` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `ax-accent-500` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `Source Sans 3` headings with `Source Sans 3` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f8eaef` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

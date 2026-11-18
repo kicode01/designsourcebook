@@ -1,0 +1,42 @@
+{
+  "name": "sbb-lyne",
+  "displayName": "Lyne Design System",
+  "description": "SBB CFF FFS Lyne Design System — tokens imported from @sbb-esta/lyne-design-tokens.",
+  "style": "SBB CFF FFS Lyne Design System — tokens imported from @sbb-esta/lyne-design-tokens.",
+  "category": "SBB CFF FFS",
+  "org": "SBB CFF FFS",
+  "theme": "light",
+  "tags": [
+    "published",
+    "sbb-cff-ffs",
+    "light"
+  ],
+  "homepage": "https://github.com/sbb-design-systems/lyne-design-tokens#readme",
+  "license": "ISC",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @sbb-esta/lyne-design-tokens@2.1.3 (2 token files, 54 colours harvested, 54 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@sbb-esta/lyne-design-tokens",
+    "version": "2.1.3"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 55,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "lemonsqueezy",
+  "displayName": "Wedges",
+  "description": "Lemon Squeezy Wedges — tokens read from https://github.com/lmsqueezy/wedges.",
+  "style": "Lemon Squeezy Wedges — tokens read from https://github.com/lmsqueezy/wedges.",
+  "category": "Lemon Squeezy",
+  "org": "Lemon Squeezy",
+  "theme": "light",
+  "tags": [
+    "published",
+    "lemon-squeezy",
+    "light"
+  ],
+  "homepage": "https://github.com/lmsqueezy/wedges",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/lmsqueezy/wedges — 3 token files, 34 colours harvested, 34 selected.",
+  "source": {
+    "repo": "https://github.com/lmsqueezy/wedges"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 35,
+    "typography": 0,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

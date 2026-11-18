@@ -1,0 +1,42 @@
+{
+  "name": "tesla",
+  "displayName": "Tesla",
+  "description": "Electric vehicles. Radical subtraction, cinematic full-viewport photography, Universal Sans",
+  "style": "Electric vehicles. Radical subtraction, cinematic full-viewport photography, Universal Sans",
+  "category": "Automotive",
+  "org": "Tesla",
+  "theme": "light",
+  "tags": [
+    "automotive",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://www.tesla.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (tesla/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/tesla"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 13,
+    "typography": 8,
+    "components": 12
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

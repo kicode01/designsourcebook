@@ -1,0 +1,808 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#FFFCEB",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#006298",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "0.25rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "100",
+      "value": "#E2E7E9"
+    },
+    {
+      "name": "300",
+      "value": "#75838F"
+    },
+    {
+      "name": "500",
+      "value": "#243142"
+    },
+    {
+      "name": "700",
+      "value": "#0E1825"
+    },
+    {
+      "name": "color-black-200",
+      "value": "#A0ABB4"
+    },
+    {
+      "name": "color-black-400",
+      "value": "#4C5A69"
+    },
+    {
+      "name": "color-black-600",
+      "value": "#182534"
+    },
+    {
+      "name": "color-black-base",
+      "value": "#243142"
+    },
+    {
+      "name": "color-blue-100",
+      "value": "#C6ECF6"
+    },
+    {
+      "name": "color-blue-300",
+      "value": "#63B1D3"
+    },
+    {
+      "name": "color-blue-500",
+      "value": "#006298"
+    },
+    {
+      "name": "color-blue-700",
+      "value": "#00385F"
+    },
+    {
+      "name": "color-blue-000",
+      "value": "#EDFAFD"
+    },
+    {
+      "name": "color-crimson-200",
+      "value": "#FF636A"
+    },
+    {
+      "name": "color-crimson-400",
+      "value": "#DC231E"
+    },
+    {
+      "name": "color-crimson-600",
+      "value": "#800000"
+    },
+    {
+      "name": "color-crimson-base",
+      "value": "#990000"
+    },
+    {
+      "name": "color-gold-100",
+      "value": "#FFF4C6"
+    },
+    {
+      "name": "color-gold-300",
+      "value": "#FFD563"
+    },
+    {
+      "name": "color-gold-500",
+      "value": "#FFAA00"
+    },
+    {
+      "name": "color-gold-700",
+      "value": "#613D00"
+    },
+    {
+      "name": "color-gold-000",
+      "value": "#FFFCEB"
+    },
+    {
+      "name": "color-green-200",
+      "value": "#A7D094"
+    },
+    {
+      "name": "color-green-400",
+      "value": "#329345"
+    },
+    {
+      "name": "color-green-600",
+      "value": "#005C31"
+    },
+    {
+      "name": "color-green-base",
+      "value": "#056E41"
+    },
+    {
+      "name": "color-orange-100",
+      "value": "#FFCDC0"
+    },
+    {
+      "name": "color-orange-300",
+      "value": "#FF7E60"
+    },
+    {
+      "name": "color-orange-500",
+      "value": "#DF3603"
+    },
+    {
+      "name": "color-orange-700",
+      "value": "#690A00"
+    },
+    {
+      "name": "color-orange-000",
+      "value": "#FFF3F0"
+    },
+    {
+      "name": "color-purple-200",
+      "value": "#C09EBB"
+    },
+    {
+      "name": "color-purple-400",
+      "value": "#7D4C73"
+    },
+    {
+      "name": "color-purple-600",
+      "value": "#48183D"
+    },
+    {
+      "name": "color-purple-base",
+      "value": "#59264D"
+    },
+    {
+      "name": "color-white-base",
+      "value": "#ffffff"
+    },
+    {
+      "name": "black",
+      "value": "#243142"
+    },
+    {
+      "name": "blue",
+      "value": "#006298"
+    },
+    {
+      "name": "gold",
+      "value": "#FFAA00"
+    },
+    {
+      "name": "orange",
+      "value": "#DF3603"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "black-200",
+      "value": "#c4c7cc"
+    },
+    {
+      "name": "black-400",
+      "value": "#8b919b"
+    },
+    {
+      "name": "black-600",
+      "value": "#565f6d"
+    },
+    {
+      "name": "black-800",
+      "value": "#243142"
+    },
+    {
+      "name": "black-base",
+      "value": "#243142"
+    },
+    {
+      "name": "blue-100",
+      "value": "#dce3ee"
+    },
+    {
+      "name": "blue-300",
+      "value": "#95adcb"
+    },
+    {
+      "name": "blue-500",
+      "value": "#497ba9"
+    },
+    {
+      "name": "blue-700",
+      "value": "#134a71"
+    },
+    {
+      "name": "blue-900",
+      "value": "#121c28"
+    },
+    {
+      "name": "blue-000",
+      "value": "#edf1f6"
+    },
+    {
+      "name": "crimson-base",
+      "value": "#990000"
+    },
+    {
+      "name": "green-100",
+      "value": "#d4e8d2"
+    },
+    {
+      "name": "green-300",
+      "value": "#7eb97c"
+    },
+    {
+      "name": "green-500",
+      "value": "#008a28"
+    },
+    {
+      "name": "green-700",
+      "value": "#16521d"
+    },
+    {
+      "name": "green-900",
+      "value": "#111f0f"
+    },
+    {
+      "name": "green-000",
+      "value": "#eaf3e8"
+    },
+    {
+      "name": "orange-200",
+      "value": "#ffb49a"
+    },
+    {
+      "name": "orange-400",
+      "value": "#ef663c"
+    },
+    {
+      "name": "orange-600",
+      "value": "#b02f0a"
+    },
+    {
+      "name": "orange-800",
+      "value": "#571e0c"
+    },
+    {
+      "name": "orange-base",
+      "value": "#df3603"
+    },
+    {
+      "name": "white-base",
+      "value": "#ffffff"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#f5bb17"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#b58a1b"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#765a19"
+    },
+    {
+      "name": "yellow-800",
+      "value": "#3c2e13"
+    },
+    {
+      "name": "yellow-base",
+      "value": "#f5bb17"
+    },
+    {
+      "name": "rvt-color-black-100",
+      "value": "#e2e7e9"
+    },
+    {
+      "name": "rvt-color-black-300",
+      "value": "#75838f"
+    },
+    {
+      "name": "rvt-color-black-500",
+      "value": "#243142"
+    },
+    {
+      "name": "rvt-color-black-700",
+      "value": "#0e1825"
+    },
+    {
+      "name": "rvt-color-black-000",
+      "value": "#f8f9fa"
+    },
+    {
+      "name": "rvt-color-blue-200",
+      "value": "#94d2e7"
+    },
+    {
+      "name": "rvt-color-blue-400",
+      "value": "#328bb8"
+    },
+    {
+      "name": "rvt-color-blue-600",
+      "value": "#004f80"
+    },
+    {
+      "name": "rvt-color-blue-base",
+      "value": "#006298"
+    },
+    {
+      "name": "rvt-color-crimson-100",
+      "value": "#ffd6db"
+    },
+    {
+      "name": "rvt-color-crimson-300",
+      "value": "#f23a3f"
+    },
+    {
+      "name": "rvt-color-crimson-500",
+      "value": "#990000"
+    },
+    {
+      "name": "rvt-color-crimson-700",
+      "value": "#5a0c0c"
+    },
+    {
+      "name": "rvt-color-crimson-000",
+      "value": "#fff7f8"
+    },
+    {
+      "name": "rvt-color-gold-200",
+      "value": "#ffe694"
+    },
+    {
+      "name": "rvt-color-gold-400",
+      "value": "#ffc132"
+    },
+    {
+      "name": "rvt-color-gold-600",
+      "value": "#a36b00"
+    },
+    {
+      "name": "rvt-color-gold-base",
+      "value": "#ffaa00"
+    },
+    {
+      "name": "rvt-color-green-100",
+      "value": "#dee8c6"
+    },
+    {
+      "name": "rvt-color-green-300",
+      "value": "#63b363"
+    },
+    {
+      "name": "primary",
+      "value": "#006298"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "rvt-hero-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "rvt-billboard-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.8125rem",
+      "px": 29
+    },
+    {
+      "name": "h2",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.4375rem",
+      "px": 23
+    },
+    {
+      "name": "rvt-timeline-heading",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.4375rem",
+      "px": 23,
+      "fontWeight": 400
+    },
+    {
+      "name": "h3",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "rvt-card-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "rvt-dialog-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1
+    },
+    {
+      "name": "rvt-lockup-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "h6",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 400
+    },
+    {
+      "name": "rvt-alert-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700
+    },
+    {
+      "name": "rvt-footer-resources-heading",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 700
+    },
+    {
+      "name": "font-base",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-serif",
+      "fontFamily": "GeorgiaPro, Georgia, \"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "monospace",
+      "px": 16
+    },
+    {
+      "name": "rvt-font-base",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "rvt-font-sans",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "rvt-font-serif",
+      "fontFamily": "GeorgiaPro, Georgia, \"Times New Roman\", Times, serif",
+      "px": 16
+    },
+    {
+      "name": "rvt-font-mono",
+      "fontFamily": "monospace",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "rvt-header-local-title",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "rvt-dropdown-menu-heading",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 700
+    },
+    {
+      "name": "rvt-hero-media-caption",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "rvt-lockup-subtitle",
+      "fontFamily": "BentonSans, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "lineHeight": 1.1
+    }
+  ],
+  "components": [
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#006298"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.5rem",
+      "border": "1px solid #e2e7e9"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "backgroundColor": "#f8f9fa",
+      "padding": "1rem"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "#e2e7e9",
+      "textColor": "#243142",
+      "rounded": "999rem",
+      "padding": "0.1875rem 0.5rem",
+      "border": "0.125rem solid #e2e7e9"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0.5rem",
+      "border": "1px solid #75838f"
+    },
+    {
+      "key": "avatar",
+      "kind": "avatar",
+      "backgroundColor": "#990000",
+      "textColor": "#ffffff",
+      "rounded": "999rem"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#006298",
+      "textColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0 0.625rem",
+      "border": "0.125rem solid #006298"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.5rem",
+      "shadow": "0 0.25rem 1rem rgba(36, 49, 66, 0.2)"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0.5rem",
+      "border": "1px solid #75838f"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "backgroundColor": "#4c5a69",
+      "textColor": "#e2e7e9",
+      "rounded": "999rem",
+      "padding": "0 0.75rem",
+      "border": "none"
+    },
+    {
+      "key": "textarea-2",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0.5rem",
+      "border": "1px solid #75838f"
+    },
+    {
+      "key": "tabs-2",
+      "kind": "tabs",
+      "backgroundColor": "transparent",
+      "textColor": "#243142",
+      "padding": "1rem 1rem",
+      "border": "none"
+    },
+    {
+      "key": "rvt-text-input-3",
+      "kind": "input",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.25rem",
+      "padding": "0.5rem",
+      "border": "1px solid #75838f"
+    },
+    {
+      "key": "link-reverse-2",
+      "kind": "link",
+      "textColor": "rgba(255, 255, 255, 0.8)"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#990000"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "textColor": "#4c5a69"
+    },
+    {
+      "key": "dialog-2",
+      "kind": "modal",
+      "backgroundColor": "transparent",
+      "textColor": "#243142",
+      "rounded": "0.25rem",
+      "padding": "0.5rem",
+      "border": "none"
+    },
+    {
+      "key": "rvt-global-toggle-2",
+      "kind": "switch",
+      "textColor": "#243142",
+      "rounded": "999rem",
+      "border": "0.125rem solid #a0abb4"
+    },
+    {
+      "key": "alert-2",
+      "kind": "alert",
+      "backgroundColor": "transparent",
+      "textColor": "#243142",
+      "rounded": "0",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "dialog-3",
+      "kind": "modal",
+      "backgroundColor": "#f8f9fa",
+      "padding": "1rem"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "#4c5a69"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "textColor": "#4c5a69"
+    },
+    {
+      "key": "link-hub-3",
+      "kind": "link",
+      "textColor": "#4c5a69"
+    },
+    {
+      "key": "accordion",
+      "kind": "accordion",
+      "textColor": "#243142"
+    },
+    {
+      "key": "accordion-2",
+      "kind": "accordion",
+      "textColor": "#4c5a69"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#edfafd",
+      "textColor": "#00385f"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "#006298",
+      "textColor": "#ffffff",
+      "border": "1px solid #006298"
+    },
+    {
+      "key": "button-link",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#006298",
+      "rounded": "0",
+      "padding": "0",
+      "border": "none"
+    },
+    {
+      "key": "card-raised",
+      "kind": "card",
+      "backgroundColor": "#ffffff",
+      "rounded": "0.5rem",
+      "shadow": "0 0.25rem 1rem rgba(36, 49, 66, 0.2)"
+    },
+    {
+      "key": "badge-danger",
+      "kind": "badge",
+      "backgroundColor": "#df3603",
+      "textColor": "#ffffff",
+      "border": "1px solid #df3603"
+    },
+    {
+      "key": "button-plain",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#006298",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "badge-success",
+      "kind": "badge",
+      "backgroundColor": "#056e41",
+      "textColor": "#ffffff",
+      "border": "1px solid #056e41"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "#df3603",
+      "border": "1px solid #df3603"
+    },
+    {
+      "key": "rvt-global-toggle-id",
+      "kind": "switch",
+      "backgroundColor": "#990000",
+      "textColor": "#ffffff",
+      "border": "none"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#FFFCEB",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Rivet Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#006298` brand accent.\n\nTypography centers cleanly on `BentonSans` (32px display down to 16px body), unified by `0.25rem` base corner radius and subtle shadow elevation.\n\nMaintained by **Indiana University**. Source: published token package (https://rivet.iu.edu), package `rivet-core`. Inventory: **91** colors, **26** typography steps, and **37** documented components (BSD-3-Clause license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 37 component tokens with documented paddings: `1rem`, `0.1875rem 0.5rem`, `0.5rem`, `0 0.625rem`, `0 0.75rem`.\n- **Hierarchy**: Group controls cleanly within `#FFFCEB` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0.25rem 1rem rgba(36, 49, 66, 0.2)`, `0 0.25rem 1rem rgba(36, 49, 66, 0.2)`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#006298` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#006298` with `#f7f7f8` text (6.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `BentonSans` headings with `BentonSans` body copy using documented weights and scale steps.\n- Apply `0.25rem` base geometry across inputs and buttons (0.25rem on outer containers).\n- Separate containers via `#FFFCEB` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `0.25rem` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "open-props",
+  "displayName": "Open Props",
+  "description": "Open Props — tokens imported from open-props.",
+  "style": "Open Props — tokens imported from open-props.",
+  "category": "Open Props",
+  "org": "Open Props",
+  "theme": "light",
+  "tags": [
+    "published",
+    "open-props",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from open-props@1.7.23 (8 token files, 537 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "open-props",
+    "version": "1.7.23"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 49,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

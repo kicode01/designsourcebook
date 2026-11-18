@@ -1,0 +1,793 @@
+{
+  "canvas": "#fff",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#de175c",
+  "border": "#e0e0e0",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "header-color",
+      "value": "#fff"
+    },
+    {
+      "name": "layout-background-color",
+      "value": "#fafafa"
+    },
+    {
+      "name": "layout-color",
+      "value": "#616161"
+    },
+    {
+      "name": "sidebar-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "sidebar-color",
+      "value": "#001a61"
+    },
+    {
+      "name": "header-background-color",
+      "value": "#001a61"
+    },
+    {
+      "name": "nav-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "h1-text",
+      "value": "#424242"
+    },
+    {
+      "name": "link-text",
+      "value": "#331000"
+    },
+    {
+      "name": "link-bg",
+      "value": "#481f00"
+    },
+    {
+      "name": "link-border",
+      "value": "#000000"
+    },
+    {
+      "name": "button-border",
+      "value": "#8b8b8b"
+    },
+    {
+      "name": "button-bg",
+      "value": "#de175c"
+    },
+    {
+      "name": "button-border-1",
+      "value": "#c21954"
+    },
+    {
+      "name": "button-border-2",
+      "value": "#e0e0e0"
+    },
+    {
+      "name": "primary",
+      "value": "#de175c"
+    }
+  ],
+  "type": [
+    {
+      "name": "legacy-heading-1",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.5714285714rem",
+      "px": 41.1428571424
+    },
+    {
+      "name": "c-sky-display-xs",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.44141rem",
+      "px": 39.06256,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "c-heading-1-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.44141rem",
+      "px": 39.06256,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "c-heading-1-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.44140625rem",
+      "px": 39.0625,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.44140625rem",
+      "px": 39.0625,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "c-sky-heading-1",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.44140625rem",
+      "px": 39.0625,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "c-sky-display-lg",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.44140625rem",
+      "px": 39.0625,
+      "fontWeight": 600,
+      "lineHeight": 1.22
+    },
+    {
+      "name": "legacy-heading-2",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.2857142857rem",
+      "px": 36.5714285712
+    },
+    {
+      "name": "c-heading-3-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.953125rem",
+      "px": 31.25,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-heading-2-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.95312rem",
+      "px": 31.24992,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-heading-3",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.95312rem",
+      "px": 31.24992,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-heading-3-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.95312rem",
+      "px": 31.24992,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.95312rem",
+      "px": 31.24992
+    },
+    {
+      "name": "legacy-heading-4",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.7142857143rem",
+      "px": 27.4285714288
+    },
+    {
+      "name": "c-heading-5-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5625rem",
+      "px": 25,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "c-sky-display-sm",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5625rem",
+      "px": 25
+    },
+    {
+      "name": "c-heading-4-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5625rem",
+      "px": 25,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-heading-5",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5625rem",
+      "px": 25,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-heading-5-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5625rem",
+      "px": 25,
+      "fontWeight": 400,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "legacy-heading-5",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.4285714286rem",
+      "px": 22.8571428576
+    },
+    {
+      "name": "c-heading-6-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-card-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-sky-card-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-sky-heading-6",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600
+    },
+    {
+      "name": "c-heading-6-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.28
+    },
+    {
+      "name": "c-sky-modal-dialog-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "custom-block-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "sidebar-heading",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "c-sky-alert-heading",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "c-sky-sub-heading-2",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600
+    },
+    {
+      "name": "legacy-sub-heading-1",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "c-ie-alert-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "c-sub-heading-2-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "c-sub-heading-2-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "algolia-docsearch-suggestion-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": ".9em",
+      "px": 14.4,
+      "fontWeight": 700
+    },
+    {
+      "name": "c-sky-sub-heading-4",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400
+    },
+    {
+      "name": "c-sub-heading-1-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "c-sub-heading-1-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "c-sub-heading-3-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "c-sub-heading-3-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "c-sub-heading-4-grey-800",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "c-sub-heading-4-white",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.888889rem",
+      "px": 14.222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": ".8888888889rem",
+      "px": 14.2222222224,
+      "fontWeight": 400
+    },
+    {
+      "name": "c-sky-dropdown-menu-title",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": ".8888888889rem",
+      "px": 14.2222222224,
+      "fontWeight": 400,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "base-font-size",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875em",
+      "px": 14
+    },
+    {
+      "name": "html",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "87.5%",
+      "px": 14,
+      "lineHeight": 1.42
+    },
+    {
+      "name": "legacy-sub-heading-3",
+      "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": ".8571428571rem",
+      "px": 13.7142857136,
+      "fontWeight": 400
+    }
+  ],
+  "components": [
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#616161",
+      "rounded": "1rem",
+      "padding": "4px 8px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "navbar",
+      "kind": "nav",
+      "backgroundColor": "#001a61"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#616161",
+      "rounded": "4px",
+      "border": "1px solid #e0e0e0",
+      "shadow": "0 2px 4px 0 rgba(0,0,0,.06)"
+    },
+    {
+      "key": "tag-2",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#616161",
+      "rounded": "1rem",
+      "padding": "4px 8px",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#616161",
+      "rounded": "4px",
+      "border": "1px solid #e0e0e0",
+      "shadow": "0 2px 4px 0 rgba(0,0,0,.06)"
+    },
+    {
+      "key": "icon",
+      "kind": "icon",
+      "textColor": "#bdbdbd"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "textColor": "#424242",
+      "rounded": "4px",
+      "padding": "20px",
+      "border": "1px solid #e0e0e0"
+    },
+    {
+      "key": "badge-3",
+      "kind": "badge",
+      "textColor": "#424242",
+      "rounded": "4px",
+      "padding": "5px 9px",
+      "border": "1px solid #fff"
+    },
+    {
+      "key": "toast-2",
+      "kind": "alert",
+      "backgroundColor": "#333",
+      "textColor": "#fff",
+      "rounded": "4px",
+      "padding": "16px",
+      "shadow": "0 3px 7px 0 rgba(0,0,0,.1)"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#616161",
+      "rounded": "0",
+      "padding": ".5rem 1.0714285714rem",
+      "border": "0"
+    },
+    {
+      "key": "navbar-2",
+      "kind": "nav",
+      "textColor": "#001a61"
+    },
+    {
+      "key": "avatar",
+      "kind": "avatar",
+      "backgroundColor": "#fff",
+      "rounded": "50%",
+      "padding": "4px",
+      "border": "2px solid #e0e0e0"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#333",
+      "textColor": "#fff",
+      "rounded": "4px",
+      "padding": "1.1428571429rem 1.4285714286rem"
+    },
+    {
+      "key": "card-3",
+      "kind": "card",
+      "textColor": "#424242"
+    },
+    {
+      "key": "sky-text-tabs",
+      "kind": "tabs",
+      "textColor": "#616161"
+    },
+    {
+      "key": "pagination-3",
+      "kind": "nav",
+      "textColor": "#616161"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "transparent",
+      "textColor": "#616161",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "card-4",
+      "kind": "card",
+      "textColor": "#424242"
+    },
+    {
+      "key": "toast-3",
+      "kind": "alert",
+      "textColor": "#fff"
+    },
+    {
+      "key": "modal-dialog",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "1px solid #e0e0e0"
+    },
+    {
+      "key": "avatar-2",
+      "kind": "avatar",
+      "backgroundColor": "#e0e0e0",
+      "rounded": "50%",
+      "padding": "20% 0"
+    },
+    {
+      "key": "progress-bar",
+      "kind": "progress",
+      "backgroundColor": "#e0e0e0",
+      "border": "0"
+    },
+    {
+      "key": "toggle",
+      "kind": "switch",
+      "textColor": "#424242"
+    },
+    {
+      "key": "sky-clickable-icon-2",
+      "kind": "icon",
+      "backgroundColor": "transparent",
+      "textColor": "#8b8b8b",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "toggle-2",
+      "kind": "switch",
+      "backgroundColor": "#616161",
+      "rounded": ".8571428571rem"
+    },
+    {
+      "key": "tooltip-2",
+      "kind": "tooltip",
+      "textColor": "#fff"
+    },
+    {
+      "key": "table-2",
+      "kind": "table",
+      "textColor": "#616161"
+    },
+    {
+      "key": "sky-date-input",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#424242",
+      "rounded": "4px",
+      "padding": "8px 12px",
+      "border": "1px solid #8b8b8b"
+    },
+    {
+      "key": "avatar-3",
+      "kind": "avatar",
+      "backgroundColor": "#e0e0e0",
+      "rounded": "50%"
+    },
+    {
+      "key": "sky-text-tabs-2",
+      "kind": "tabs",
+      "backgroundColor": "transparent",
+      "textColor": "#616161",
+      "rounded": "0",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "toggle-bar-3",
+      "kind": "switch",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "padding": "0"
+    },
+    {
+      "key": "modal-dialog-2",
+      "kind": "modal",
+      "textColor": "#424242"
+    },
+    {
+      "key": "modal-dialog-3",
+      "kind": "modal",
+      "backgroundColor": "transparent",
+      "textColor": "#616161",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "sky-grouped-input-2",
+      "kind": "input",
+      "backgroundColor": "#fafafa",
+      "padding": "8px",
+      "border": "1px solid #8b8b8b"
+    },
+    {
+      "key": "progress-bar-2",
+      "kind": "progress",
+      "backgroundColor": "#1a801b",
+      "textColor": "#fff"
+    },
+    {
+      "key": "tabs-3",
+      "kind": "tabs",
+      "textColor": "#616161"
+    },
+    {
+      "key": "alert-2",
+      "kind": "alert",
+      "textColor": "rgb(66, 66, 66)"
+    },
+    {
+      "key": "alert-3",
+      "kind": "alert",
+      "textColor": "rgb(66, 66, 66)"
+    },
+    {
+      "key": "tag-link",
+      "kind": "badge",
+      "textColor": "rgb(0, 26, 97)",
+      "border": "1px solid rgb(0, 26, 97)"
+    },
+    {
+      "key": "card-brand",
+      "kind": "card",
+      "backgroundColor": "rgb(0, 26, 97)",
+      "border": "1px solid rgb(0, 26, 97)"
+    },
+    {
+      "key": "button-text",
+      "kind": "button",
+      "textColor": "rgb(0, 26, 97)"
+    },
+    {
+      "key": "button-brand",
+      "kind": "button",
+      "backgroundColor": "rgb(0, 26, 97)",
+      "border": "1px solid rgb(25, 56, 139)"
+    },
+    {
+      "key": "button-action",
+      "kind": "button",
+      "backgroundColor": "rgb(222, 23, 92)",
+      "textColor": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(194, 25, 84)"
+    },
+    {
+      "key": "button-brand-ghost",
+      "kind": "button",
+      "textColor": "rgb(0, 26, 97)",
+      "border": "1px solid rgb(0, 26, 97)"
+    },
+    {
+      "key": "sky-clickable-icon-brand",
+      "kind": "icon",
+      "textColor": "rgb(0, 26, 97)"
+    },
+    {
+      "key": "sky-text-tabs-active",
+      "kind": "tabs",
+      "textColor": "rgb(0, 26, 97)"
+    },
+    {
+      "key": "progress-bar-brand",
+      "kind": "progress",
+      "backgroundColor": "rgb(0, 26, 97)"
+    },
+    {
+      "key": "pagination-active",
+      "kind": "nav",
+      "backgroundColor": "rgb(0, 26, 97)",
+      "textColor": "rgb(255, 255, 255)",
+      "border": "1px solid rgb(25, 56, 139)"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#de175c",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Skyline** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#de175c` brand accent.\n\nTypography centers cleanly on `Open Sans` (41px display down to 14px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Benevity**. Source: live stylesheet extraction (https://skyline.benevity.org/). Inventory: **16** colors, **50** typography steps, and **50** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 50 component tokens with documented paddings: `4px 8px`, `20px`, `5px 9px`, `16px`, `.5rem 1.0714285714rem`.\n- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `#e0e0e0` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 2px 4px 0 rgba(0,0,0,.06)`, `0 2px 4px 0 rgba(0,0,0,.06)`) paired with `#e0e0e0` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#de175c` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#de175c` with `#f7f7f8` text (4.5:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Open Sans` headings with `Open Sans` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#fafafa` surface shifts and `#e0e0e0` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `sky-date-input` fields and secondary buttons."
+}

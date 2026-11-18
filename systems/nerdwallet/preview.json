@@ -1,0 +1,548 @@
+{
+  "canvas": "#f7f7f7",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#008254",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.lg}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#008254"
+    },
+    {
+      "name": "primary-deep",
+      "value": "#006642"
+    },
+    {
+      "name": "forest",
+      "value": "#00482f"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "lime-hero",
+      "value": "#9ae600"
+    },
+    {
+      "name": "lime-panel",
+      "value": "#e8fdac"
+    },
+    {
+      "name": "lime-accent",
+      "value": "#ddfa88"
+    },
+    {
+      "name": "lime-ribbon",
+      "value": "#a8ea4c"
+    },
+    {
+      "name": "logo-lime",
+      "value": "#8dc63f"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-soft",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "mint-50",
+      "value": "#effcf8"
+    },
+    {
+      "name": "mint-100",
+      "value": "#e3faf2"
+    },
+    {
+      "name": "mint-200",
+      "value": "#b7ecda"
+    },
+    {
+      "name": "hairline",
+      "value": "#ebebec"
+    },
+    {
+      "name": "hairline-strong",
+      "value": "#d8d9da"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "body",
+      "value": "#3d4045"
+    },
+    {
+      "name": "muted",
+      "value": "#64666a"
+    },
+    {
+      "name": "faint",
+      "value": "#b1b3b5"
+    },
+    {
+      "name": "link",
+      "value": "#005fb9"
+    },
+    {
+      "name": "info",
+      "value": "#4b99e6"
+    },
+    {
+      "name": "error",
+      "value": "#de2828"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "Gotham",
+      "fontSize": "52px",
+      "px": 52,
+      "fontWeight": 700,
+      "lineHeight": 1.15,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "GothamDisplay",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-1",
+      "fontFamily": "GothamDisplay",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-2",
+      "fontFamily": "Gotham",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 700,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "stat-value",
+      "fontFamily": "Gotham",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-3",
+      "fontFamily": "GothamDisplay",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-4",
+      "fontFamily": "Gotham",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-lg",
+      "fontFamily": "Gotham",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 300,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "Gotham",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 300,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Gotham",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 300,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui-label",
+      "fontFamily": "Gotham",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "ui-sm",
+      "fontFamily": "Gotham",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Gotham",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "eyebrow",
+      "fontFamily": "Gotham",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "micro",
+      "fontFamily": "Gotham",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "logo-wordmark",
+      "kind": "component",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.xs}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "button-secondary",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.xs}",
+      "padding": "{spacing.md}"
+    },
+    {
+      "key": "button-outline",
+      "kind": "button",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "hero-band",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "breadcrumb",
+      "kind": "component",
+      "textColor": "{colors.on-primary}"
+    },
+    {
+      "key": "editorial-badge",
+      "kind": "badge",
+      "textColor": "{colors.lime-panel}"
+    },
+    {
+      "key": "expert-tip-panel",
+      "kind": "card",
+      "backgroundColor": "{colors.lime-panel}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}"
+    },
+    {
+      "key": "stat-block-dark",
+      "kind": "component",
+      "backgroundColor": "{colors.primary-deep}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}"
+    },
+    {
+      "key": "stat-chip-light",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.muted}",
+      "rounded": "{rounded.lg}"
+    },
+    {
+      "key": "product-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}"
+    },
+    {
+      "key": "category-tile",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xxl}"
+    },
+    {
+      "key": "section-panel-mint",
+      "kind": "card",
+      "backgroundColor": "{colors.mint-50}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xxxl}"
+    },
+    {
+      "key": "media-frame-mint",
+      "kind": "component",
+      "backgroundColor": "{colors.mint-100}",
+      "rounded": "{rounded.xxxl}"
+    },
+    {
+      "key": "award-ribbon-pill",
+      "kind": "badge",
+      "backgroundColor": "{colors.mint-100}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "icon-circle-active",
+      "kind": "icon",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "icon-circle-inactive",
+      "kind": "icon",
+      "backgroundColor": "{colors.mint-50}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "comparison-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "spec-cell",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.body}"
+    },
+    {
+      "key": "accordion-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}"
+    },
+    {
+      "key": "link-inline",
+      "kind": "link",
+      "textColor": "{colors.link}"
+    },
+    {
+      "key": "link-green",
+      "kind": "link",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "eyebrow-label",
+      "kind": "component",
+      "textColor": "{colors.muted}"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.body}"
+    },
+    {
+      "key": "rate-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.xxl}"
+    },
+    {
+      "key": "badge-compare",
+      "kind": "badge",
+      "backgroundColor": "{colors.lime-panel}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.xl}"
+    },
+    {
+      "key": "carousel-control",
+      "kind": "component",
+      "backgroundColor": "{colors.mint-50}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "marquee-ribbon",
+      "kind": "component",
+      "backgroundColor": "{colors.lime-ribbon}",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.sm} {spacing.md}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xl}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.xxl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.lg}",
+      "padding": "{spacing.sm} {spacing.lg}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#008254",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#008254",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f7f7f7",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "NerdWallet is a comparison engine wearing an editorial coat, and the design reflects both halves. Article pages open on a wide `{colors.primary}` gradient band carrying a white headline, a byline row and a set of trust badges — the only place the brand raises its voice. Everything below that band drops to `{colors.canvas}` and `{colors.canvas-soft}`, where dense rate tables and product cards do the actual work. The transition is abrupt by design: one saturated green rectangle, then a very long, very quiet document.\r\n\r\nThe palette is almost monochromatic in hue. `{colors.primary}` is a deep spruce green that fills every button, every active tab and every rating star, and beneath it sits a full ladder of mints — `{colors.mint-50}`, `{colors.mint-100}`, `{colors.mint-200}` — that wash section panels, icon tiles and photo frames. Those mints carry enormous surface area, far more than any accent, which is what keeps a page of financial tables from reading as a spreadsheet. The only colours outside the green family are `{colors.link}` for inline links and a lime family used for emphasis.\r\n\r\nThe shape language is the surprise. For a consumer product this heavily illustrated, the corners are nearly square: the primary button sits at `{rounded.xs}` — two pixels — and cards rarely exceed `{rounded.lg}`. There is essentially no elevation; the single shadow in the system is a very wide, very faint double-layer stack. Separation is done with `{colors.hairline}` rules and mint fills instead. The result reads as trustworthy and utilitarian rather than soft.\r\n\r\n**Key Characteristics:**\r\n- One deep green, `{colors.primary}`, fills every action and every active state across all page types.\r\n- A three-step mint ladder (`{colors.mint-50}` → `{colors.mint-100}` → `{colors.mint-200}`) carries the largest surfaces in the system.\r\n- Buttons are nearly square at `{rounded.xs}`; the shape language stays tight even where illustration is playful.\r\n- Almost shadowless — `{colors.hairline}` rules and mint washes replace elevation.\r\n- Editorial pages follow a fixed rhythm: green gradient band → white body → mint callout → white comparison table.\r\n- A lime family (`{colors.lime-hero}`, `{colors.lime-panel}`, `{colors.lime-accent}`) supplies emphasis that green cannot, since green is spent on controls.\r\n- Headings sit in pure `{colors.ink}` black, not a softened near-black.",
+  "dos": "### Do\r\n\r\n- Spend `{colors.primary}` on actions and active states only — buttons, rating stars, active tabs, in-body links.\r\n- Reach for the mint ladder (`{colors.mint-50}` → `{colors.mint-200}`) when a section needs separation; it is the system's substitute for elevation.\r\n- Keep controls at `{rounded.xs}` and cards at `{rounded.lg}`; save `{rounded.xxxl}` for decorative panels and photo frames.\r\n- Separate table rows with a single `{colors.hairline}` rule and no vertical dividers.\r\n- Use the lime family for emphasis that has to survive on a green ground, where `{colors.primary}` would disappear.\r\n- Set headings in `{colors.ink}` pure black and body copy at weight 300 — the weight gap is the hierarchy.\r\n- Give every comparison figure a `{typography.caption}` label above it in `{colors.body}`, never inline.\r\n- Open editorial pages with `{components.hero-band}` and then drop immediately to a light canvas; do not carry the green further down.\r\n\r\n### Don't\r\n\r\n- Don't round the filled buttons. `{rounded.xs}` is a deliberate choice against the softness of the illustration style.\r\n- Don't add drop shadows to cards — use the `{colors.hairline-strong}` border instead. The system's only shadows sit at 4–5% opacity.\r\n- Don't use `{colors.link}` blue and `{colors.primary}` green interchangeably; blue is a supporting reference, green is navigation the reader is meant to follow.\r\n- Don't extend `{components.hero-band}` green into body sections or use it as a card fill.\r\n- Don't introduce a warm accent. The palette runs green through mint with blue as the only outside hue.\r\n- Don't set body copy above weight 300 or headings below 700 — collapsing the gap flattens the hierarchy.\r\n- Don't place `{colors.lime-panel}` on white as a text colour; the lime tier only works as a fill on white or as type on green.\r\n- Don't give `{components.text-input}` a radius or a border of its own; the containing chrome supplies both."
+}

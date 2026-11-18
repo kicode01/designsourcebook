@@ -1,0 +1,43 @@
+{
+  "name": "mastercard",
+  "displayName": "Mastercard",
+  "description": "Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth",
+  "style": "Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth",
+  "category": "Fintech & Crypto",
+  "org": "Mastercard",
+  "theme": "light",
+  "tags": [
+    "fintech",
+    "crypto",
+    "design.md",
+    "observed",
+    "light"
+  ],
+  "homepage": "https://www.mastercard.com",
+  "license": "see source",
+  "provenance": "observed",
+  "provenanceNote": "Extracted from VoltAgent/awesome-design-md (mastercard/DESIGN.md) real public-site analysis.",
+  "source": {
+    "repo": "https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/mastercard"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 16,
+    "typography": 9,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

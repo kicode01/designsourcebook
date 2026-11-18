@@ -1,0 +1,42 @@
+{
+  "name": "telekom",
+  "displayName": "Scale Design System",
+  "description": "Deutsche Telekom Scale Design System — tokens imported from @telekom/design-tokens.",
+  "style": "Deutsche Telekom Scale Design System — tokens imported from @telekom/design-tokens.",
+  "category": "Deutsche Telekom",
+  "org": "Deutsche Telekom",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "deutsche-telekom",
+    "dark"
+  ],
+  "homepage": "https://github.com/telekom/design-tokens#readme",
+  "license": "MPL-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @telekom/design-tokens@1.0.0-beta.12 + @telekom/scale-components (11 token files, 975 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@telekom/design-tokens",
+    "version": "1.0.0-beta.12"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 42,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

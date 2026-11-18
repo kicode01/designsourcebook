@@ -1,0 +1,41 @@
+{
+  "name": "vts",
+  "displayName": "Terra",
+  "description": "VTS Terra — read from the rendered page in a browser, not from published tokens.",
+  "style": "VTS Terra — read from the rendered page in a browser, not from published tokens.",
+  "category": "VTS",
+  "org": "VTS",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "vts",
+    "light"
+  ],
+  "homepage": "https://terra.vts.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://terra.vts.com/ in headless Chromium on 2026-11-18 (45 custom properties, 40 sampled elements, 1 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Terra Design System.",
+  "source": {
+    "url": "https://terra.vts.com/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 35,
+    "typography": 16,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

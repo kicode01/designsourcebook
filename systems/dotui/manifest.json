@@ -1,0 +1,41 @@
+{
+  "name": "dotui",
+  "displayName": "dotUI",
+  "description": "dotUI — tokens read from https://github.com/mehdibha/dotUI.",
+  "style": "dotUI — tokens read from https://github.com/mehdibha/dotUI.",
+  "category": "dotUI",
+  "org": "dotUI",
+  "theme": "light",
+  "tags": [
+    "published",
+    "dot-ui",
+    "light"
+  ],
+  "homepage": "https://github.com/mehdibha/dotUI",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/mehdibha/dotUI — 21 token files, 173 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/mehdibha/dotUI"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 233,
+    "components": 26
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

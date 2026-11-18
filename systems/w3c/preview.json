@@ -1,0 +1,313 @@
+{
+  "canvas": "#fff",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#fea78d",
+  "border": "#bbb",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "off-black",
+      "value": "#111"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "off-white",
+      "value": "#fafafa"
+    },
+    {
+      "name": "maroon",
+      "value": "#85144b"
+    },
+    {
+      "name": "red",
+      "value": "#ff4136"
+    },
+    {
+      "name": "orange",
+      "value": "#ff851b"
+    },
+    {
+      "name": "yellow",
+      "value": "#ffdc00"
+    },
+    {
+      "name": "olive",
+      "value": "#3d9970"
+    },
+    {
+      "name": "green",
+      "value": "#2ecc40"
+    },
+    {
+      "name": "lime",
+      "value": "#01ff70"
+    },
+    {
+      "name": "teal",
+      "value": "#39cccc"
+    },
+    {
+      "name": "aqua",
+      "value": "#7fdbff"
+    },
+    {
+      "name": "blue",
+      "value": "#0073d8"
+    },
+    {
+      "name": "navy",
+      "value": "#001f3f"
+    },
+    {
+      "name": "purple",
+      "value": "#75336c"
+    },
+    {
+      "name": "fuchsia",
+      "value": "#f012be"
+    },
+    {
+      "name": "grey",
+      "value": "#aaa"
+    },
+    {
+      "name": "mercury-grey",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "silver",
+      "value": "#ddd"
+    },
+    {
+      "name": "light-red",
+      "value": "#ec7070"
+    },
+    {
+      "name": "coral",
+      "value": "#fc7750"
+    },
+    {
+      "name": "light-coral",
+      "value": "#fea78d"
+    },
+    {
+      "name": "deep-green",
+      "value": "#0a4343"
+    },
+    {
+      "name": "teal-green",
+      "value": "#237978"
+    },
+    {
+      "name": "light-blue",
+      "value": "#cbe0fb"
+    },
+    {
+      "name": "w3c-blue",
+      "value": "#005a9c"
+    },
+    {
+      "name": "deep-blue",
+      "value": "#002a56"
+    },
+    {
+      "name": "pink",
+      "value": "#ddb0c8"
+    },
+    {
+      "name": "light-pink",
+      "value": "#eeccdc"
+    },
+    {
+      "name": "storm-gray",
+      "value": "#545454"
+    },
+    {
+      "name": "twiki-gray",
+      "value": "#cac9c9"
+    },
+    {
+      "name": "mist-gray",
+      "value": "#f8f8fb"
+    },
+    {
+      "name": "success-color",
+      "value": "#046704"
+    },
+    {
+      "name": "warning-color",
+      "value": "#c28605"
+    },
+    {
+      "name": "error-color",
+      "value": "#a82615"
+    },
+    {
+      "name": "facebook",
+      "value": "#3b5998"
+    },
+    {
+      "name": "instagram",
+      "value": "#405de6"
+    },
+    {
+      "name": "linkedin",
+      "value": "#0077b5"
+    },
+    {
+      "name": "pinterest",
+      "value": "#bd081c"
+    },
+    {
+      "name": "twitter",
+      "value": "#1da1f2"
+    },
+    {
+      "name": "whatsapp",
+      "value": "#25d366"
+    },
+    {
+      "name": "youtube",
+      "value": "#ff0000"
+    },
+    {
+      "name": "border-bottom-color",
+      "value": "#bbb"
+    },
+    {
+      "name": "primary",
+      "value": "#fea78d"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "fontSize": "24pt",
+      "px": 32
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "fontSize": "20pt",
+      "px": 27
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "fontSize": "18pt",
+      "px": 24
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "fontSize": "16pt",
+      "px": 21
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "fontSize": "15pt",
+      "px": 20
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "fontSize": "14pt",
+      "px": 19
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"Trebuchet MS\", Geneva, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#fea78d",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#fea78d",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "solid",
+    "grid": 15,
+    "strokeWidth": 0,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**W3C Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#fea78d` brand accent.\n\nTypography centers cleanly on `Trebuchet MS` (32px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#fafafa` surface layering.\n\nMaintained by **W3C**. Source: published token package (https://github.com/w3c/w3c-website-templates-bundle), repo https://github.com/w3c/w3c-website-templates-bundle. Inventory: **45** colors, **7** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `#bbb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fafafa`) and `1px solid #bbb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#fea78d` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#fea78d` with `#0b0b0c` text (10.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Trebuchet MS` headings with `Trebuchet MS` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fafafa` surface shifts and `#bbb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

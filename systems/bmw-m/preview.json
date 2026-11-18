@@ -1,0 +1,439 @@
+{
+  "canvas": "#262626",
+  "surface": "#0d0d0d",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#ffffff",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "{rounded.none}",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#ffffff"
+    },
+    {
+      "name": "body",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "body-strong",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "muted",
+      "value": "#7e7e7e"
+    },
+    {
+      "name": "hairline",
+      "value": "#3c3c3c"
+    },
+    {
+      "name": "hairline-strong",
+      "value": "#262626"
+    },
+    {
+      "name": "canvas",
+      "value": "#000000"
+    },
+    {
+      "name": "surface-card",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "surface-elevated",
+      "value": "#262626"
+    },
+    {
+      "name": "surface-soft",
+      "value": "#0d0d0d"
+    },
+    {
+      "name": "on-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "m-blue-light",
+      "value": "#0066b1"
+    },
+    {
+      "name": "m-blue-dark",
+      "value": "#1c69d4"
+    },
+    {
+      "name": "m-red",
+      "value": "#e22718"
+    },
+    {
+      "name": "bmw-blue",
+      "value": "#1c69d4"
+    },
+    {
+      "name": "electric-blue",
+      "value": "#0653b6"
+    },
+    {
+      "name": "carbon-gray",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "warning",
+      "value": "#f4b400"
+    },
+    {
+      "name": "success",
+      "value": "#0fa336"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 700,
+      "lineHeight": 1.05,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "display-sm",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 700,
+      "lineHeight": 1.15,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-lg",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": 1.3,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-md",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-sm",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "BMWTypeNextLatin Light, BMWTypeNextLatin, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 300,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "label-uppercase",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.3,
+      "letterSpacing": "1.5px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "BMWTypeNextLatin Light, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 300,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "1.5px"
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.5px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "BMWTypeNextLatin, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.5px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "16px 32px"
+    },
+    {
+      "key": "button-primary-outline",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "16px 32px"
+    },
+    {
+      "key": "button-on-light",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "16px 32px"
+    },
+    {
+      "key": "button-icon",
+      "kind": "button",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "text-link",
+      "kind": "link",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "top-nav",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "hero-photo-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "padding": "96px"
+    },
+    {
+      "key": "m-stripe-divider",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "feature-photo-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "model-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "magazine-article-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "spec-cell",
+      "kind": "component",
+      "backgroundColor": "{colors.surface-soft}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "cookie-consent-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "category-tab",
+      "kind": "tabs",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.body}",
+      "padding": "12px 0"
+    },
+    {
+      "key": "category-tab-active",
+      "kind": "tabs",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "padding": "12px 0"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "chatbot-launcher",
+      "kind": "component",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "cta-band-photo",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "padding": "80px"
+    },
+    {
+      "key": "motorsport-photo-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "carousel-arrow",
+      "kind": "component",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.body}",
+      "padding": "64px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#0d0d0d",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#0d0d0d",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#262626",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#262626",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#0d0d0d",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "BMW M's marketing surface is a near-pure black canvas (`{colors.canvas}` — #000) holding white BMW Type Next Latin headlines in **confident UPPERCASE**. The system has no decorative voltage of its own; brand energy comes from **full-bleed automotive photography** — cars cornering at speed, carbon-fiber wheel detail, driver cockpit shots, motorsport pit lanes — placed as edge-to-edge content that fills entire bands. UI chrome around the photography stays minimal: thin sans-serif copy, dividers as 1px hairlines (`{colors.hairline}`), all-caps button labels with no fill until hovered.\r\n\r\nThe **M tricolor stripe** — `{colors.m-blue-light}` (#0066b1) → `{colors.m-blue-dark}` (#1c69d4) → `{colors.m-red}` (#e22718) — appears sparingly as the brand's signature accent, used on the M wordmark, motorsport chrome, vehicle-tech callouts, and model badges. It is never a CTA color and never used as a background fill — the tricolor is exclusively a brand-identity marker.\r\n\r\nType voice runs **BMW Type Next Latin** in two cuts: regular for display + nav labels and Light for body + secondary copy. Display sizes use weight 700 (BMW's signature heavy-but-tight setting), while body type drops to weight 300 (Light). The contrast between heavy display and light body is the system's editorial signature.\r\n\r\n**Key Characteristics:**\r\n- Near-pure black canvas (`{colors.canvas}` — #000) with white type. The system inverts almost nothing — there is no light-mode marketing surface.\r\n- Display headlines in UPPERCASE BMW Type Next Latin at weight 700. Sub-heads stay sentence-case at lighter weight.\r\n- M tricolor (`{colors.m-blue-light}` / `{colors.m-blue-dark}` / `{colors.m-red}`) used as 4px brand-stripe dividers, M-wordmark accents, and motorsport chrome — never as buttons or fills.\r\n- Photography fills entire bands edge-to-edge. Cars are always the visual subject; UI chrome backs off to small white labels overlaid on photography.\r\n- Buttons are flat with `{rounded.none}` (0px) corners and uppercase letterspaced labels. The \"industrial precision\" rectangular silhouette IS the brand.\r\n- Border radius is mostly zero across the system. The few exceptions: `{rounded.full}` on circular icon buttons (carousel arrows, chatbot launcher) and `{rounded.sm}` on a handful of small toggle pills.\r\n- Spacing is generous and grid-aligned: `{spacing.section}` (96px) between major bands; `{spacing.xxl}` (64px) inside hero photo bands; `{spacing.xl}` (40px) inside content cards.\n\n### Layout & Spacing\n### Spacing System\r\n- **Base unit:** 4px.\r\n- **Tokens:** `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.md}` 16px · `{spacing.lg}` 24px · `{spacing.xl}` 40px · `{spacing.xxl}` 64px · `{spacing.section}` 96px.\r\n- **Section padding (vertical):** `{spacing.section}` (96px) between major editorial bands.\r\n- **Hero photo bands:** `{spacing.xxl}` (64px) internal vertical padding around the hero h1 + sub-headline pair.\r\n- **Card internal padding:** `{spacing.lg}` (24px) for content and model cards; `{spacing.xl}` (40px) for spec-cell tables.\r\n- **Gutters:** `{spacing.lg}` (24px) between cards in 3-up grids; `{spacing.md}` (16px) inside footer columns.\r\n\r\n### Grid & Container\r\n- **Max content width:** ~1440px centered on marketing pages — wider than typical SaaS to give photography breathing room.\r\n- **Editorial body:** Single 12-column grid; photo bands bleed full-bleed (no max-width).\r\n- **Card grids:** 3-up at desktop, 2-up at tablet, 1-up at mobile.\r\n- **Footer:** 4-column link list at desktop, 2-up at tablet, 1-up at mobile.\r\n\r\n### Whitespace Philosophy\r\nBMW M trusts photography to do the visual work. Whitespace around photography is restrained — the cars fill the frame, and copy sits below or beside them in tightly-aligned columns. Where whitespace appears (between body sections, around CTAs), it's always uniform `{spacing.section}` (96px). The system never adds atmospheric backdrops, gradients, or decoration — empty space stays as empty black canvas.",
+  "dos": "### Do\r\n- Anchor every page with full-bleed automotive photography. The cars are the brand voltage; chrome backs off.\r\n- Use UPPERCASE display headlines in `{typography.display-xl}` or `{typography.display-lg}`. Sentence-case display reads as off-brand.\r\n- Pair heavy display (700) with light body (300). The weight contrast is the editorial signature.\r\n- Reserve the M tricolor stripe for brand-identity moments — wordmark accents, motorsport chrome, model badges. Never as a button fill or surface.\r\n- Use `{rounded.none}` (0px) by default. Reserve `{rounded.full}` for circular icon buttons only.\r\n- Letter-space all-caps labels at 1.5px. The \"machined\" feel is non-negotiable.\r\n- Use `{spacing.section}` (96px) between major editorial bands for grid-aligned vertical rhythm.\r\n\r\n### Don't\r\n- Don't introduce a brand color outside the M tricolor (`{colors.m-blue-light}` / `{colors.m-blue-dark}` / `{colors.m-red}`) and the heritage `{colors.bmw-blue}`.\r\n- Don't bold body type. Body stays at 300 (Light) — bumping to 400 or 500 makes the page feel marketing-bombastic instead of European-engineered.\r\n- Don't use rounded buttons. The rectangular silhouette IS the brand. Rounded corners read as consumer-tech, not motorsport.\r\n- Don't put gradient backdrops behind hero type. The hero IS the photography — the page floor stays pure black, and the photo provides the depth.\r\n- Don't repeat the same surface mode in two consecutive bands. Rhythm: photo band → spec table → photo band → magazine grid → photo band. Two text-only bands in a row read as a corporate site.\r\n- Don't use the M stripe as a button fill. The stripe is a divider / accent — never an action surface.\r\n- Don't bold uppercase tracking under 1.5px on button labels — the spacing is what makes them feel \"machined.\""
+}

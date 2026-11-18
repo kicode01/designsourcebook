@@ -1,0 +1,41 @@
+{
+  "name": "mutualofomaha",
+  "displayName": "Digital Design Guide",
+  "description": "Mutual of Omaha Digital Design Guide — read from the rendered page in a browser, not from published tokens.",
+  "style": "Mutual of Omaha Digital Design Guide — read from the rendered page in a browser, not from published tokens.",
+  "category": "Mutual of Omaha",
+  "org": "Mutual of Omaha",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "mutual-of-omaha",
+    "light"
+  ],
+  "homepage": "http://design.mutualofomaha.com/digital/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from http://design.mutualofomaha.com/digital/ in headless Chromium on 2026-11-18 (1 custom properties, 37 sampled elements, 1 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Digital | Mutual of Omaha Design Guide.",
+  "source": {
+    "url": "http://design.mutualofomaha.com/digital/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 31,
+    "typography": 8,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

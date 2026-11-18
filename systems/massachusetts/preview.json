@@ -1,0 +1,590 @@
+{
+  "canvas": "#e8eef4",
+  "surface": "#e8eef4",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "mds-color-brand-gray-700",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "mds-color-brand-gray-100",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "mds-color-brand-gray-200",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "mds-color-brand-gray-300",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "mds-color-brand-gray-400",
+      "value": "#dcdcdc"
+    },
+    {
+      "name": "mds-color-brand-gray-500",
+      "value": "#cccccc"
+    },
+    {
+      "name": "mds-color-brand-gray-600",
+      "value": "#bababa"
+    },
+    {
+      "name": "mds-color-brand-gray-700",
+      "value": "#a8a8a8"
+    },
+    {
+      "name": "mds-color-brand-gray-750",
+      "value": "#949494"
+    },
+    {
+      "name": "mds-color-brand-gray-800",
+      "value": "#878787"
+    },
+    {
+      "name": "mds-color-brand-gray-900",
+      "value": "#707070"
+    },
+    {
+      "name": "mds-color-brand-gray-1000",
+      "value": "#535353"
+    },
+    {
+      "name": "mds-color-brand-gray-1100",
+      "value": "#3d3d3d"
+    },
+    {
+      "name": "mds-color-brand-gray-1200",
+      "value": "#2a2a2a"
+    },
+    {
+      "name": "mds-color-brand-gray-1250",
+      "value": "#212121"
+    },
+    {
+      "name": "mds-color-brand-gray-1300",
+      "value": "#141414"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-100",
+      "value": "#e8eef4"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-200",
+      "value": "#d0dde9"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-300",
+      "value": "#b9ccdd"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-400",
+      "value": "#a1bbd2"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-500",
+      "value": "#8aaac7"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-600",
+      "value": "#7299bc"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-700",
+      "value": "#5b88b1"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-800",
+      "value": "#4377a5"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-900",
+      "value": "#2c669a"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-1000",
+      "value": "#14558f"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-1100",
+      "value": "#104472"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-1200",
+      "value": "#0e3c64"
+    },
+    {
+      "name": "mds-color-brand-bay-blue-1300",
+      "value": "#0a2b48"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-100",
+      "value": "#ebf3ee"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-200",
+      "value": "#d7e7dd"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-300",
+      "value": "#c3dacd"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-400",
+      "value": "#afcebc"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-500",
+      "value": "#9ac1a9"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-600",
+      "value": "#80b294"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-700",
+      "value": "#67a27f"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-800",
+      "value": "#388557"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-900",
+      "value": "#32784e"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-1000",
+      "value": "#2d6a46"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-1100",
+      "value": "#275d3d"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-1200",
+      "value": "#225034"
+    },
+    {
+      "name": "mds-color-brand-berkshires-green-1300",
+      "value": "#1c432c"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-100",
+      "value": "#fef9e8"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-200",
+      "value": "#fdf3d1"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-300",
+      "value": "#fceebb"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-400",
+      "value": "#fbe8a4"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-500",
+      "value": "#fbe28d"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-600",
+      "value": "#fadc76"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-700",
+      "value": "#f8d149"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-800",
+      "value": "#f6c51b"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-900",
+      "value": "#ddb118"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-1000",
+      "value": "#c59e16"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-1100",
+      "value": "#ac8a13"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-1200",
+      "value": "#947610"
+    },
+    {
+      "name": "mds-color-brand-duckling-yellow-1300",
+      "value": "#7b630e"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-100",
+      "value": "#f0e7e8"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-200",
+      "value": "#e1ced2"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-300",
+      "value": "#d2b6bb"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-400",
+      "value": "#c39da5"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-500",
+      "value": "#b4858e"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-600",
+      "value": "#955461"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-700",
+      "value": "#863b4a"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-800",
+      "value": "#772334"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-900",
+      "value": "#680a1d"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-1000",
+      "value": "#5e091a"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-1100",
+      "value": "#530817"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-1200",
+      "value": "#490714"
+    },
+    {
+      "name": "mds-color-brand-independence-cranberry-1300",
+      "value": "#34050f"
+    },
+    {
+      "name": "mds-color-brand-surface-1000",
+      "value": "#fdfdfd"
+    },
+    {
+      "name": "mds-color-utility-danger-red-100",
+      "value": "#fef1f1"
+    },
+    {
+      "name": "mds-color-utility-danger-red-300",
+      "value": "#f99f9f"
+    },
+    {
+      "name": "mds-color-utility-danger-red-600",
+      "value": "#cd0d0d"
+    },
+    {
+      "name": "mds-color-utility-danger-red-900",
+      "value": "#900909"
+    },
+    {
+      "name": "mds-color-utility-danger-red-1300",
+      "value": "#480505"
+    },
+    {
+      "name": "mds-color-utility-focus-blue-300",
+      "value": "#b2dbff"
+    },
+    {
+      "name": "mds-color-utility-focus-blue-600",
+      "value": "#0088ff"
+    },
+    {
+      "name": "mds-color-utility-informative-blue-100",
+      "value": "#e8eef4"
+    },
+    {
+      "name": "mds-color-utility-informative-blue-300",
+      "value": "#b9ccdd"
+    },
+    {
+      "name": "mds-color-utility-informative-blue-600",
+      "value": "#7299bc"
+    },
+    {
+      "name": "mds-color-utility-informative-blue-900",
+      "value": "#14558f"
+    },
+    {
+      "name": "mds-color-utility-informative-blue-1300",
+      "value": "#0a2b48"
+    },
+    {
+      "name": "mds-color-utility-success-green-100",
+      "value": "#eafbef"
+    },
+    {
+      "name": "mds-color-utility-success-green-300",
+      "value": "#81e4a2"
+    },
+    {
+      "name": "mds-color-utility-success-green-600",
+      "value": "#24a850"
+    },
+    {
+      "name": "mds-color-utility-success-green-900",
+      "value": "#187236"
+    },
+    {
+      "name": "mds-color-utility-success-green-1300",
+      "value": "#0b3218"
+    },
+    {
+      "name": "mds-color-utility-warning-yellow-100",
+      "value": "#fef9e8"
+    },
+    {
+      "name": "mds-color-utility-warning-yellow-300",
+      "value": "#fceebb"
+    },
+    {
+      "name": "mds-color-utility-warning-yellow-600",
+      "value": "#fadc76"
+    },
+    {
+      "name": "mds-color-utility-warning-yellow-900",
+      "value": "#f6c51b"
+    },
+    {
+      "name": "mds-color-utility-warning-yellow-1300",
+      "value": "#7b630e"
+    },
+    {
+      "name": "primary",
+      "value": "#e8eef4"
+    }
+  ],
+  "type": [
+    {
+      "name": "mds-font-size-2100",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "10.5rem",
+      "px": 168
+    },
+    {
+      "name": "mds-font-size-1200",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "6rem",
+      "px": 96
+    },
+    {
+      "name": "mds-font-size-800",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "mds-font-size-700",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "mds-font-size-600",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "mds-font-size-550",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "mds-font-size-500",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "mds-font-size-450",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "mds-font-size-400",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mds-font-size-350",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "mds-font-size-325",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "mds-font-size-300",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "mds-font-size-275",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "mds-font-size-250",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mds-font-size-225",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "mds-font-size-200",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-family-headings",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-family-body",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-family-utility",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-family-label",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-size-175",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-size-125",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mds-font-size-100",
+      "fontFamily": "\"Noto Sans\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#e8eef4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "mds-color-brand-gray-700",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "mds-color-brand-gray-700",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#e8eef4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#e8eef4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#e8eef4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#e8eef4",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#e8eef4",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Mayflower Design System** is a light-first design system anchored on `#e8eef4` canvas surfaces with `#0b0b0c` primary ink (16.8:1 contrast) and `mds-color-brand-gray-700` brand accent.\n\nTypography centers cleanly on `Noto Sans` (168px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Massachusetts**. Source: published token package, package `@massds/mds-tokens`. Inventory: **91** colors, **23** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#e8eef4` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#e8eef4` -> `#e8eef4`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `mds-color-brand-gray-700` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#e8eef4` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `mds-color-brand-gray-700` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `Noto Sans` headings with `Noto Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#e8eef4` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "khan",
+  "displayName": "Wonder Blocks",
+  "description": "Khan Academy Wonder Blocks — tokens imported from @khanacademy/wonder-blocks-tokens.",
+  "style": "Khan Academy Wonder Blocks — tokens imported from @khanacademy/wonder-blocks-tokens.",
+  "category": "Khan Academy",
+  "org": "Khan Academy",
+  "theme": "light",
+  "tags": [
+    "published",
+    "khan-academy",
+    "light"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @khanacademy/wonder-blocks-tokens@18.2.0 (2 token files, 469 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@khanacademy/wonder-blocks-tokens",
+    "version": "18.2.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 7,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

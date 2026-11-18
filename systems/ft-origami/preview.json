@@ -1,0 +1,798 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f4f4f5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff7faa",
+  "border": "#cccccc",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "o3-color-use-case-link-text",
+      "value": "#0d7680"
+    },
+    {
+      "name": "o3-color-use-case-link-text-hover",
+      "value": "#08474d"
+    },
+    {
+      "name": "o3-color-use-case-link-underline",
+      "value": "#cfd8d1"
+    },
+    {
+      "name": "o3-color-use-case-link-underline-hover",
+      "value": "#9ec0bd"
+    },
+    {
+      "name": "o3-color-use-case-link-inverse-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "o3-color-use-case-link-inverse-text-hover",
+      "value": "#d4d4d6"
+    },
+    {
+      "name": "o3-color-use-case-link-inverse-underline",
+      "value": "#ffffff"
+    },
+    {
+      "name": "o3-color-use-case-link-inverse-underline-hover",
+      "value": "#d4d4d6"
+    },
+    {
+      "name": "o3-color-use-case-page-background",
+      "value": "#fff1e5"
+    },
+    {
+      "name": "o3-color-use-case-page-inverse-background",
+      "value": "#262a33"
+    },
+    {
+      "name": "o3-color-use-case-body-text",
+      "value": "#33302e"
+    },
+    {
+      "name": "o3-color-use-case-body-inverse-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "o3-color-use-case-support-text",
+      "value": "#4d4845"
+    },
+    {
+      "name": "o3-color-use-case-support-inverse-text",
+      "value": "#e9eaeb"
+    },
+    {
+      "name": "o3-color-use-case-muted-text",
+      "value": "#807973"
+    },
+    {
+      "name": "o3-color-use-case-muted-inverse-text",
+      "value": "#a8aaad"
+    },
+    {
+      "name": "o3-color-use-case-heading-text",
+      "value": "#33302e"
+    },
+    {
+      "name": "o3-color-use-case-heading-inverse-text",
+      "value": "#ffffff"
+    },
+    {
+      "name": "o3-color-use-case-footer-text",
+      "value": "#33302e"
+    },
+    {
+      "name": "o3-color-use-case-caption-text",
+      "value": "#33302e"
+    },
+    {
+      "name": "o3-color-use-case-button-foreground-disabled",
+      "value": "#fff7ef"
+    },
+    {
+      "name": "o3-color-use-case-button-disabled",
+      "value": "#9ec0bd"
+    },
+    {
+      "name": "o3-color-use-case-error-text",
+      "value": "#cc0000"
+    },
+    {
+      "name": "o3-color-use-case-error",
+      "value": "#cc0000"
+    },
+    {
+      "name": "o3-color-use-case-success-background",
+      "value": "#d7f0d1"
+    },
+    {
+      "name": "o3-color-use-case-success-foreground",
+      "value": "#00572c"
+    },
+    {
+      "name": "lor-use-case-link-inverse-underline-hover",
+      "value": "#d4d4d6"
+    },
+    {
+      "name": "color-use-case-button-foreground-disabled",
+      "value": "#fff7ef"
+    },
+    {
+      "name": "o3-color-use-case-error-foreground",
+      "value": "#b30000"
+    },
+    {
+      "name": "o3-color-use-case-warning-background",
+      "value": "#fff2cc"
+    },
+    {
+      "name": "o3-color-use-case-warning-foreground",
+      "value": "#695008"
+    },
+    {
+      "name": "o3-color-use-case-warning-highlight",
+      "value": "#fabf14"
+    },
+    {
+      "name": "o3-color-use-case-success-highlight",
+      "value": "#00994d"
+    },
+    {
+      "name": "o3-color-use-case-border",
+      "value": "#cccccc"
+    },
+    {
+      "name": "o3-color-use-case-surface-background",
+      "value": "#dedfe0"
+    },
+    {
+      "name": "o3-color-use-case-surface-light-background",
+      "value": "#f4f4f5"
+    },
+    {
+      "name": "3-color-use-case-surface-light-background",
+      "value": "#f4f4f5"
+    },
+    {
+      "name": "o3-color-use-case-link-text-focus",
+      "value": "#262a33"
+    },
+    {
+      "name": "o3-color-use-case-link-underline-focus",
+      "value": "#000000"
+    },
+    {
+      "name": "o3-color-use-case-link-inverse-text-focus",
+      "value": "#8fb3a1"
+    },
+    {
+      "name": "o3-color-use-case-link-inverse-underline-focus",
+      "value": "#000000"
+    },
+    {
+      "name": "lor-use-case-link-inverse-underline-focus",
+      "value": "#000000"
+    },
+    {
+      "name": "o3-color-palette-ft-pink",
+      "value": "#fcd0b1"
+    },
+    {
+      "name": "o3-color-palette-ft-grey",
+      "value": "#333333"
+    },
+    {
+      "name": "o3-color-palette-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "o3-color-palette-black",
+      "value": "#000000"
+    },
+    {
+      "name": "o3-color-palette-claret",
+      "value": "#990f3d"
+    },
+    {
+      "name": "o3-color-palette-teal",
+      "value": "#0d7680"
+    },
+    {
+      "name": "o3-color-palette-oxford",
+      "value": "#0f5499"
+    },
+    {
+      "name": "o3-color-palette-slate",
+      "value": "#262a33"
+    },
+    {
+      "name": "o3-color-palette-paper",
+      "value": "#fff1e5"
+    },
+    {
+      "name": "o3-color-palette-mandarin",
+      "value": "#ff8833"
+    },
+    {
+      "name": "o3-color-palette-light-blue",
+      "value": "#00a0dd"
+    },
+    {
+      "name": "o3-color-palette-crimson",
+      "value": "#cc0000"
+    },
+    {
+      "name": "o3-color-palette-graphics-dark-blue",
+      "value": "#006f9b"
+    },
+    {
+      "name": "o3-color-palette-wheat",
+      "value": "#f2dfce"
+    },
+    {
+      "name": "o3-color-palette-candy",
+      "value": "#ff7faa"
+    },
+    {
+      "name": "o3-color-palette-wasabi",
+      "value": "#96cc28"
+    },
+    {
+      "name": "o3-color-palette-jade",
+      "value": "#00994d"
+    },
+    {
+      "name": "o3-color-palette-velvet",
+      "value": "#593380"
+    },
+    {
+      "name": "o3-color-palette-lemon",
+      "value": "#ffec1a"
+    },
+    {
+      "name": "o3-color-palette-sky",
+      "value": "#cce6ff"
+    },
+    {
+      "name": "o3-color-palette-matisse-blue",
+      "value": "#355778"
+    },
+    {
+      "name": "o3-color-palette-black-5",
+      "value": "#f2e5da"
+    },
+    {
+      "name": "o3-color-palette-black-10",
+      "value": "#e6d9ce"
+    },
+    {
+      "name": "o3-color-palette-black-20",
+      "value": "#ccc1b7"
+    },
+    {
+      "name": "o3-color-palette-black-30",
+      "value": "#b3a9a0"
+    },
+    {
+      "name": "o3-color-palette-black-40",
+      "value": "#999189"
+    },
+    {
+      "name": "o3-color-palette-black-50",
+      "value": "#807973"
+    },
+    {
+      "name": "o3-color-palette-black-60",
+      "value": "#66605c"
+    },
+    {
+      "name": "o3-color-palette-black-70",
+      "value": "#4d4845"
+    },
+    {
+      "name": "o3-color-palette-black-80",
+      "value": "#33302e"
+    },
+    {
+      "name": "o3-color-palette-black-90",
+      "value": "#1a1817"
+    },
+    {
+      "name": "o3-color-palette-white-10",
+      "value": "#fff2e8"
+    },
+    {
+      "name": "o3-color-palette-white-20",
+      "value": "#fff4ea"
+    },
+    {
+      "name": "o3-color-palette-white-40",
+      "value": "#fff7ef"
+    },
+    {
+      "name": "o3-color-palette-white-60",
+      "value": "#fff9f5"
+    },
+    {
+      "name": "o3-color-palette-white-80",
+      "value": "#fffcfa"
+    },
+    {
+      "name": "o3-color-palette-oxford-30",
+      "value": "#082a4d"
+    },
+    {
+      "name": "o3-color-palette-oxford-40",
+      "value": "#0a3866"
+    },
+    {
+      "name": "o3-color-palette-oxford-50",
+      "value": "#0d4680"
+    },
+    {
+      "name": "o3-color-palette-oxford-60",
+      "value": "#0f5499"
+    },
+    {
+      "name": "o3-color-palette-oxford-70",
+      "value": "#1262b3"
+    },
+    {
+      "name": "o3-color-palette-oxford-80",
+      "value": "#1470cc"
+    },
+    {
+      "name": "o3-color-palette-oxford-90",
+      "value": "#177ee6"
+    },
+    {
+      "name": "o3-color-palette-oxford-100",
+      "value": "#1a8cff"
+    },
+    {
+      "name": "o3-color-palette-teal-20",
+      "value": "#052f33"
+    },
+    {
+      "name": "o3-color-palette-teal-30",
+      "value": "#08474d"
+    },
+    {
+      "name": "o3-color-palette-teal-40",
+      "value": "#0a5e66"
+    },
+    {
+      "name": "o3-color-palette-teal-50",
+      "value": "#0d7680"
+    },
+    {
+      "name": "primary",
+      "value": "#ff7faa"
+    }
+  ],
+  "type": [
+    {
+      "name": "o3-font-size-10",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "5.25rem",
+      "px": 84
+    },
+    {
+      "name": "o3-font-size-9",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "o3-font-size-metric2-9",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "o3-font-size-metric2-8",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "o3-font-size-8",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "o3-type-display-lg-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "o3-font-size-7",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "o3-font-size-metric2-7",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "o3-type-display-md-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "o3-type-headline-lg-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "o3-font-size-6",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "o3-font-size-metric2-6",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "o3-type-display-sm-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "o3-type-headline-md-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "o3-font-size-5",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "o3-font-size-metric2-5",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "o3-type-title-lg-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "o3-font-size-4",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "o3-font-size-metric2-4",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "o3-type-title-md-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "o3-font-size-3",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "o3-font-size-metric2-3",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "o3-type-headline-sm-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-type-title-sm-font-size",
+      "fontFamily": "\"financier display VF\", serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-type-body-content-base-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-type-body-content-highlight-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-type-body-content-emphasis-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-font-size-2",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-font-size-metric2-2",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o3-type-body-lg-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "o3-font-size-1",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "o3-font-size-metric2-1",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "o3-type-display-lg-font-family",
+      "fontFamily": "\"financier display VF\", serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-display-md-font-family",
+      "fontFamily": "\"financier display VF\", serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-display-sm-font-family",
+      "fontFamily": "\"financier display VF\", serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-title-lg-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-title-md-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-title-sm-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-lg-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-base-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-base-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-highlight-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-highlight-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "o3-type-detail-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-label-font-family",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-content-base-font-family",
+      "fontFamily": "Georgia",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-content-highlight-font-family",
+      "fontFamily": "Georgia",
+      "px": 16
+    },
+    {
+      "name": "o3-type-body-content-emphasis-font-family",
+      "fontFamily": "Georgia",
+      "px": 16
+    },
+    {
+      "name": "o3-font-family-metric",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "o3-font-family-financier-display",
+      "fontFamily": "\"financier display VF\", serif",
+      "px": 16
+    },
+    {
+      "name": "o3-font-family-georgia",
+      "fontFamily": "georgia, serif",
+      "px": 16
+    },
+    {
+      "name": "o3-font-size-0",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "o3-font-size-metric2-0",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "o3-font-family-financier-text",
+      "fontFamily": "\"financier text VF\", serif",
+      "px": 16
+    },
+    {
+      "name": "o3-type-detail-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "o3-type-label-font-size",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "o3-font-size-negative-1",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "o3-font-size-metric2-negative-1",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "o3-font-size-negative-2",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "o3-font-size-metric2-negative-2",
+      "fontFamily": "\"metric 2 VF\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f4f4f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff7faa",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff7faa",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f4f4f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f4f4f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f4f4f5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Origami v3** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff7faa` brand accent.\n\nTypography centers cleanly on `metric 2 VF` (84px display down to 20px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f4f4f5` surface layering.\n\nMaintained by **Financial Times**. Source: published token package (https://registry.origami.ft.com/components/o3-foundation), package `@financial-times/o3-foundation`. Inventory: **91** colors, **60** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f4f4f5` cards; separate sibling sections using `#cccccc` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f4f4f5`) and `1px solid #cccccc` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff7faa` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff7faa` with `#0b0b0c` text (8.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `metric 2 VF` headings with `metric 2 VF` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f4f4f5` surface shifts and `#cccccc` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

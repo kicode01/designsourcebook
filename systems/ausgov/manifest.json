@@ -1,0 +1,43 @@
+{
+  "name": "ausgov",
+  "displayName": "Australian Government Design System",
+  "description": "Australian Government Design System — tokens imported from @gov.au/core.",
+  "style": "Australian Government Design System — tokens imported from @gov.au/core.",
+  "category": "Australian Government",
+  "org": "Australian Government",
+  "theme": "light",
+  "tags": [
+    "published",
+    "australian-government",
+    "government",
+    "light"
+  ],
+  "homepage": "https://designsystem.gov.au/components/core",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @gov.au/core@4.0.0 (1 token files, 14 colours harvested, 14 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@gov.au/core",
+    "version": "4.0.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 15,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

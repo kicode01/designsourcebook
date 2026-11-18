@@ -1,0 +1,444 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#fafafa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "color-primary-400",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-primary-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-primary-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-primary-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-primary-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-primary-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-primary-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-primary-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-primary-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-primary-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-primary-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-primary-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-secondary-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-secondary-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-secondary-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-secondary-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-secondary-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-secondary-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-secondary-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-secondary-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-secondary-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-secondary-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-secondary-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-tertiary-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-tertiary-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-tertiary-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-tertiary-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-tertiary-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-tertiary-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-tertiary-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-tertiary-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-tertiary-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-tertiary-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-tertiary-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-success-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-success-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-success-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-success-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-success-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-success-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-success-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-success-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-success-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-success-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-success-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-warning-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-warning-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-warning-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-warning-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-warning-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-warning-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-warning-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-warning-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-warning-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-warning-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-warning-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-error-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-error-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-error-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-error-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-error-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-error-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-error-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-error-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-error-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-error-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-error-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-surface-50",
+      "value": "#fafafa"
+    },
+    {
+      "name": "color-surface-100",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "color-surface-200",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "color-surface-300",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "color-surface-400",
+      "value": "#a1a1a1"
+    },
+    {
+      "name": "color-surface-500",
+      "value": "#737373"
+    },
+    {
+      "name": "color-surface-600",
+      "value": "#525252"
+    },
+    {
+      "name": "color-surface-700",
+      "value": "#404040"
+    },
+    {
+      "name": "color-surface-800",
+      "value": "#262626"
+    },
+    {
+      "name": "color-surface-900",
+      "value": "#171717"
+    },
+    {
+      "name": "color-surface-950",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "color-root-bg-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "typo-base-color-light",
+      "value": "#000000"
+    },
+    {
+      "name": "typo-base-color-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "typo-heading-color-light",
+      "value": "#000000"
+    },
+    {
+      "name": "typo-anchor-color-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "typo-heading-color-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "primary",
+      "value": "#fafafa"
+    }
+  ],
+  "type": [
+    {
+      "name": "typo-base-font-size",
+      "fontFamily": "ui-rounded, \"Hiragino Maru Gothic ProN\", Quicksand, Comfortaa, Manjari, \"Arial Rounded MT\", \"Arial Rounded MT Bold\", Calibri, source-sans-pro, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "typo-base-font-family",
+      "fontFamily": "ui-rounded, \"Hiragino Maru Gothic ProN\", Quicksand, Comfortaa, Manjari, \"Arial Rounded MT\", \"Arial Rounded MT Bold\", Calibri, source-sans-pro, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-font-family",
+      "fontFamily": "Seravek, \"Gill Sans Nova\", Ubuntu, Calibri, \"DejaVu Sans\", source-sans-pro, sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "color-primary-400",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "color-primary-400",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fafafa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Skeleton UI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `color-primary-400` brand accent.\n\nTypography centers cleanly on `ui-rounded` (18px display down to 18px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#fafafa` surface layering.\n\nMaintained by **Skeleton Labs**. Source: published token package, package `@skeletonlabs/skeleton`. Inventory: **84** colors, **3** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fafafa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#fafafa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `color-primary-400` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `color-primary-400` with `#f7f7f8` text (verified) for primary CTAs, active tabs, and focus outlines.\n- Pair `ui-rounded` headings with `ui-rounded` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fafafa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

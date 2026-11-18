@@ -1,0 +1,41 @@
+{
+  "name": "carrefour",
+  "displayName": "Marcel",
+  "description": "Carrefour Marcel — read from the rendered page in a browser, not from published tokens.",
+  "style": "Carrefour Marcel — read from the rendered page in a browser, not from published tokens.",
+  "category": "Carrefour",
+  "org": "Carrefour",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "carrefour",
+    "light"
+  ],
+  "homepage": "https://carrefour.design/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://carrefour.design/ in headless Chromium on 2026-11-18 (58 custom properties, 97 sampled elements, 3 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Welcome to Carrefour.design.",
+  "source": {
+    "url": "https://carrefour.design/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 54,
+    "typography": 13,
+    "components": 30
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 3,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

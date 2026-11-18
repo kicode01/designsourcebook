@@ -1,0 +1,459 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#F5F0EB",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#041F4A",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "cta-primary-hover",
+      "value": "#234B8A"
+    },
+    {
+      "name": "cta-secondary-hover",
+      "value": "#ACC9F7"
+    },
+    {
+      "name": "cta-tertiary-hover",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "brand-100",
+      "value": "#001536"
+    },
+    {
+      "name": "brand-300",
+      "value": "#041F4A"
+    },
+    {
+      "name": "brand-400",
+      "value": "#052962"
+    },
+    {
+      "name": "brand-500",
+      "value": "#0077B6"
+    },
+    {
+      "name": "brand-600",
+      "value": "#506991"
+    },
+    {
+      "name": "brand-800",
+      "value": "#C1D8FC"
+    },
+    {
+      "name": "brand-alt-200",
+      "value": "#F3C100"
+    },
+    {
+      "name": "brand-alt-300",
+      "value": "#FFD900"
+    },
+    {
+      "name": "brand-alt-400",
+      "value": "#FFE500"
+    },
+    {
+      "name": "culture-50",
+      "value": "#2B2625"
+    },
+    {
+      "name": "culture-100",
+      "value": "#3E3323"
+    },
+    {
+      "name": "culture-200",
+      "value": "#574835"
+    },
+    {
+      "name": "culture-300",
+      "value": "#6B5840"
+    },
+    {
+      "name": "culture-350",
+      "value": "#866D50"
+    },
+    {
+      "name": "culture-400",
+      "value": "#866D50"
+    },
+    {
+      "name": "culture-450",
+      "value": "#A1845C"
+    },
+    {
+      "name": "culture-500",
+      "value": "#EACCA0"
+    },
+    {
+      "name": "culture-600",
+      "value": "#E7D4B9"
+    },
+    {
+      "name": "culture-700",
+      "value": "#EFE8DD"
+    },
+    {
+      "name": "culture-800",
+      "value": "#FBF6EF"
+    },
+    {
+      "name": "error-400",
+      "value": "#C70000"
+    },
+    {
+      "name": "error-500",
+      "value": "#FF9081"
+    },
+    {
+      "name": "focus-400",
+      "value": "#0077B6"
+    },
+    {
+      "name": "labs-200",
+      "value": "#0C7A73"
+    },
+    {
+      "name": "labs-300",
+      "value": "#65A897"
+    },
+    {
+      "name": "labs-400",
+      "value": "#69D1CA"
+    },
+    {
+      "name": "lifestyle-100",
+      "value": "#510043"
+    },
+    {
+      "name": "lifestyle-200",
+      "value": "#650054"
+    },
+    {
+      "name": "lifestyle-300",
+      "value": "#7D0068"
+    },
+    {
+      "name": "lifestyle-400",
+      "value": "#BB3B80"
+    },
+    {
+      "name": "lifestyle-450",
+      "value": "#F37ABC"
+    },
+    {
+      "name": "lifestyle-500",
+      "value": "#FFABDB"
+    },
+    {
+      "name": "lifestyle-600",
+      "value": "#FEC8D3"
+    },
+    {
+      "name": "lifestyle-800",
+      "value": "#FEEEF7"
+    },
+    {
+      "name": "neutral-0",
+      "value": "#000000"
+    },
+    {
+      "name": "neutral-7",
+      "value": "#121212"
+    },
+    {
+      "name": "neutral-10",
+      "value": "#1A1A1A"
+    },
+    {
+      "name": "neutral-20",
+      "value": "#333333"
+    },
+    {
+      "name": "neutral-38",
+      "value": "#545454"
+    },
+    {
+      "name": "neutral-46",
+      "value": "#707070"
+    },
+    {
+      "name": "neutral-60",
+      "value": "#999999"
+    },
+    {
+      "name": "neutral-73",
+      "value": "#BABABA"
+    },
+    {
+      "name": "neutral-86",
+      "value": "#DCDCDC"
+    },
+    {
+      "name": "neutral-93",
+      "value": "#EDEDED"
+    },
+    {
+      "name": "neutral-97",
+      "value": "#F6F6F6"
+    },
+    {
+      "name": "neutral-100",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "news-100",
+      "value": "#660505"
+    },
+    {
+      "name": "news-200",
+      "value": "#8B0000"
+    },
+    {
+      "name": "news-300",
+      "value": "#AB0613"
+    },
+    {
+      "name": "news-400",
+      "value": "#C70000"
+    },
+    {
+      "name": "news-500",
+      "value": "#FF5943"
+    },
+    {
+      "name": "news-550",
+      "value": "#FF9081"
+    },
+    {
+      "name": "news-600",
+      "value": "#FFBAC8"
+    },
+    {
+      "name": "news-800",
+      "value": "#FFF4F2"
+    },
+    {
+      "name": "opinion-100",
+      "value": "#672005"
+    },
+    {
+      "name": "opinion-200",
+      "value": "#8D2700"
+    },
+    {
+      "name": "opinion-300",
+      "value": "#C74600"
+    },
+    {
+      "name": "opinion-400",
+      "value": "#C74600"
+    },
+    {
+      "name": "opinion-450",
+      "value": "#E05E00"
+    },
+    {
+      "name": "opinion-500",
+      "value": "#FF7F0F"
+    },
+    {
+      "name": "opinion-550",
+      "value": "#FF9941"
+    },
+    {
+      "name": "opinion-600",
+      "value": "#F9B376"
+    },
+    {
+      "name": "opinion-800",
+      "value": "#FEF9F5"
+    },
+    {
+      "name": "special-report-100",
+      "value": "#222527"
+    },
+    {
+      "name": "special-report-200",
+      "value": "#303538"
+    },
+    {
+      "name": "special-report-300",
+      "value": "#3F464A"
+    },
+    {
+      "name": "special-report-400",
+      "value": "#595C5F"
+    },
+    {
+      "name": "special-report-450",
+      "value": "#9DA0A2"
+    },
+    {
+      "name": "special-report-500",
+      "value": "#ABC2C9"
+    },
+    {
+      "name": "special-report-700",
+      "value": "#E4E5E8"
+    },
+    {
+      "name": "special-report-800",
+      "value": "#EFF1F2"
+    },
+    {
+      "name": "special-report-alt-100",
+      "value": "#2B2B2A"
+    },
+    {
+      "name": "special-report-alt-200",
+      "value": "#B9300A"
+    },
+    {
+      "name": "special-report-alt-300",
+      "value": "#FF663D"
+    },
+    {
+      "name": "special-report-alt-700",
+      "value": "#EBE6E1"
+    },
+    {
+      "name": "special-report-alt-800",
+      "value": "#F5F0EB"
+    },
+    {
+      "name": "sport-100",
+      "value": "#003C60"
+    },
+    {
+      "name": "sport-200",
+      "value": "#004E7C"
+    },
+    {
+      "name": "sport-300",
+      "value": "#005689"
+    },
+    {
+      "name": "sport-400",
+      "value": "#0077B6"
+    },
+    {
+      "name": "sport-500",
+      "value": "#00B2FF"
+    },
+    {
+      "name": "sport-600",
+      "value": "#90DCFF"
+    },
+    {
+      "name": "sport-800",
+      "value": "#F1F8FC"
+    },
+    {
+      "name": "success-400",
+      "value": "#22874D"
+    },
+    {
+      "name": "success-500",
+      "value": "#58D08B"
+    },
+    {
+      "name": "primary",
+      "value": "#041F4A"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size",
+      "fontFamily": "\"GH Guardian Headline\"",
+      "fontSize": "4.375rem",
+      "px": 70
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "\"GH Guardian Headline\"",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#F5F0EB",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#041F4A",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#041F4A",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F5F0EB",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#F5F0EB",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F5F0EB",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Source Design System** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#041F4A` brand accent.\n\nTypography centers cleanly on `GH Guardian Headline` (70px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#F5F0EB` surface layering.\n\nMaintained by **The Guardian**. Source: published token package, package `@guardian/source-foundations`. Inventory: **89** colors, **2** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#F5F0EB` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#F5F0EB`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#041F4A` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#041F4A` with `#f7f7f8` text (15.1:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `GH Guardian Headline` headings with `GH Guardian Headline` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F5F0EB` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

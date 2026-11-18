@@ -1,0 +1,422 @@
+{
+  "canvas": "#f2f2f2",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#e60000",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.card}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#e60000"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#25282b"
+    },
+    {
+      "name": "body",
+      "value": "#7e7e7e"
+    },
+    {
+      "name": "mute",
+      "value": "#bebebe"
+    },
+    {
+      "name": "canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-soft",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-hero",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "144px",
+      "px": 144,
+      "fontWeight": 800,
+      "lineHeight": "114px",
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "display-xxl",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "126px",
+      "px": 126,
+      "fontWeight": 800,
+      "lineHeight": "113px",
+      "letterSpacing": "-1px"
+    },
+    {
+      "name": "display-xl",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "90px",
+      "px": 90,
+      "fontWeight": 800,
+      "lineHeight": "84px"
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 300,
+      "lineHeight": "52px"
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 300,
+      "lineHeight": "44px"
+    },
+    {
+      "name": "display-sm",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 700,
+      "lineHeight": "40px"
+    },
+    {
+      "name": "display-xs",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "body-lg",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": "28px"
+    },
+    {
+      "name": "body-md-strong",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": "28px"
+    },
+    {
+      "name": "button-md",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": "28px"
+    },
+    {
+      "name": "eyebrow-uppercase",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 800,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "body-sm-strong",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": "22px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "16px"
+    },
+    {
+      "name": "caption-strong",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": "21px"
+    },
+    {
+      "name": "caption-uppercase",
+      "fontFamily": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 600,
+      "lineHeight": "16px",
+      "letterSpacing": "0.5691px"
+    }
+  ],
+  "components": [
+    {
+      "key": "nav-bar",
+      "kind": "nav",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "padding": "{spacing.lg} {spacing.3xl}"
+    },
+    {
+      "key": "nav-link",
+      "kind": "link",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.pill-lg}",
+      "padding": "{spacing.md} {spacing.2xl}"
+    },
+    {
+      "key": "button-outline-red",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.primary}",
+      "rounded": "{rounded.pill-lg}",
+      "padding": "{spacing.md} {spacing.2xl}"
+    },
+    {
+      "key": "button-outline-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill-lg}",
+      "padding": "{spacing.md} {spacing.2xl}"
+    },
+    {
+      "key": "button-icon-circular",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "badge-chip",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill-md}",
+      "padding": "{spacing.xs} {spacing.md}"
+    },
+    {
+      "key": "card-content",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "card-hero",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "hero-band-dark",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "padding": "{spacing.3xl} {spacing.3xl}"
+    },
+    {
+      "key": "hero-band-red",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "padding": "{spacing.3xl} {spacing.3xl}"
+    },
+    {
+      "key": "content-band-light",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "{spacing.3xl} {spacing.3xl}"
+    },
+    {
+      "key": "speechmark-logo-orb",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.sm}"
+    },
+    {
+      "key": "divider-on-dark",
+      "kind": "component"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-dark}",
+      "padding": "{spacing.3xl} {spacing.3xl}"
+    },
+    {
+      "key": "ex-pricing-tier",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-soft}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-pricing-tier-featured",
+      "kind": "component",
+      "backgroundColor": "{colors.ink}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-product-selector",
+      "kind": "select",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-cart-drawer",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-app-shell-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "ex-data-table-cell",
+      "kind": "table"
+    },
+    {
+      "key": "ex-auth-form-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-modal-card",
+      "kind": "modal",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.lg}"
+    },
+    {
+      "key": "ex-empty-state-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-soft}",
+      "rounded": "{rounded.card}",
+      "padding": "{spacing.3xl}"
+    },
+    {
+      "key": "ex-toast",
+      "kind": "alert",
+      "backgroundColor": "{colors.canvas}",
+      "rounded": "{rounded.sm}",
+      "padding": "{spacing.md} {spacing.lg}"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#e60000",
+      "textColor": "#ffffff",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#e60000",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f2f2f2",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Vodafone is a global telecom super-brand and its web surface delivers exactly that posture: heroic editorial photography, occasionally cropping a portrait so tight only an eye line and a phone hand are visible, with a single colossal uppercase headline floating on top in the brand's proprietary heavy display weight. The page reads like a campaign poster more than a corporate site, then breaks into a calmer content rhythm of light-canvas story cards and a single red marker (the iconic speechmark logo) drawing the eye to the brand's centre of gravity. There is no second accent colour competing — the entire decorative palette is `{colors.primary}` Vodafone red, near-black `{colors.ink}`, and the surrounding white and grayscale neutrals.\r\n\r\nType is the second decisive voice. Vodafone's custom display sans (extracted as `Vodafone`) carries every headline at impossibly heavy weight 800 in upper case for hero scale (`{typography.display-hero}` 144 px, `{typography.display-xxl}` 126 px) and at lighter weight 300 for the sub-displays that follow. Body text stays in the same family at weight 400 with neutral tracking. The contrast between display weight 800 and display weight 300 IS the brand's typographic story: a shout, then a calm sentence.\r\n\r\nEvery interactive CTA renders as a generously rounded pill (`{rounded.pill-lg}` 60 px) — Vodafone has never used a square button on its marketing surface in years, and the brand's pill scale ladder runs from 32 px (badge pills) through 60 px (CTA pills) up to 9999 px (icon circular containers). Cards stay gentler at `{rounded.card}` 6 px.\r\n\r\n**Key Characteristics:**\r\n- A single primary CTA color `{colors.primary}` (`#e60000`) — Vodafone Red. Pill-filled for primary, pill-outline for secondary. No third button variant.\r\n- Massive uppercase display weight 800 (`{typography.display-hero}` and siblings) is the brand's signature. The 300-weight headline siblings (`{typography.display-lg}` / `{typography.display-md}`) handle calmer secondary moments.\r\n- The `speechmark-logo-orb` — a red square hosting Vodafone's quotation-mark icon — is the only piece of decorative chrome that's not a CTA. It anchors the brand's centre of every page.\r\n- Pill geometry on every interactive shape — `{rounded.pill-lg}` 60 px for buttons, `{rounded.pill-md}` 32 px for inline badges. Card chrome stays at `{rounded.card}` 6 px.\r\n- A two-band page rhythm — `{colors.ink}` dark hero / `{colors.canvas}` light content. No mid-band greys; the brand uses surface contrast, not soft neutrals, for elevation.\r\n- Editorial photography (real portraits, real cities, real cabling) is the only consistent decorative system — no illustration, no atmospheric gradients.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` Vodafone Red for primary CTAs and the `speechmark-logo-orb`. Every conversion target uses the red pill.\r\n- Set hero headlines in `{typography.display-hero}` weight 800 UPPERCASE with tight `-1px` tracking. That stencil look IS the brand voice.\r\n- Use `{rounded.pill-lg}` 60 px on every interactive pill. The brand never uses square corners on CTAs.\r\n- Cycle page surfaces in `{colors.ink}` dark hero → `{colors.canvas}` light content → `{colors.ink}` footer. Surface contrast is the depth cue.\r\n- Pair editorial portrait photography with the massive display headline overlay — that combination IS the brand's signature.\r\n- Render the speechmark logo orb at consistent size relative to surrounding content — it's the brand's centre of gravity on every page.\r\n\r\n### Don't\r\n- Don't introduce a second accent colour. The brand operates with red + ink + grayscale only.\r\n- Don't render headlines in sentence case at hero scale. Hero display IS uppercase weight 800.\r\n- Don't render the primary CTA as a square rectangle. The 60 px pill is non-negotiable.\r\n- Don't drop a soft drop-shadow on cards. The brand relies on surface-colour contrast, not shadow.\r\n- Don't substitute the speechmark logo orb with a wordmark or a different shape. The orb is the iconic mark.\r\n- Don't pair the weight 800 display face with letter-spacing 0 at 144 px — the `-1px` tracking is part of the brand's calibration."
+}

@@ -1,0 +1,860 @@
+{
+  "canvas": "#FFF",
+  "surface": "#F7F7F7",
+  "text": "#3F536E",
+  "muted": "#3F536E",
+  "brand": "#6190E8",
+  "border": "#CCC",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary-color",
+      "value": "#6190E8"
+    },
+    {
+      "name": "success-color",
+      "value": "#13CE66"
+    },
+    {
+      "name": "error-color",
+      "value": "#FF4949"
+    },
+    {
+      "name": "warning-color",
+      "value": "#FFC82C"
+    },
+    {
+      "name": "info-color",
+      "value": "#78A4FA"
+    },
+    {
+      "name": "brand-color",
+      "value": "#6190E8"
+    },
+    {
+      "name": "brand-color-light",
+      "value": "#78A4F4"
+    },
+    {
+      "name": "brand-color-dark",
+      "value": "#346FC2"
+    },
+    {
+      "name": "color-primary",
+      "value": "#6190E8"
+    },
+    {
+      "name": "color-success",
+      "value": "#13CE66"
+    },
+    {
+      "name": "color-error",
+      "value": "#FF4949"
+    },
+    {
+      "name": "color-warning",
+      "value": "#FFC82C"
+    },
+    {
+      "name": "color-info",
+      "value": "#78A4FA"
+    },
+    {
+      "name": "brand-blue-50",
+      "value": "#ECF2FC"
+    },
+    {
+      "name": "brand-blue-100",
+      "value": "#D0DEF8"
+    },
+    {
+      "name": "brand-blue-200",
+      "value": "#B0C8F4"
+    },
+    {
+      "name": "brand-blue-300",
+      "value": "#90B1EF"
+    },
+    {
+      "name": "brand-blue-400",
+      "value": "#79A1EB"
+    },
+    {
+      "name": "brand-blue-500",
+      "value": "#6190E8"
+    },
+    {
+      "name": "brand-blue-600",
+      "value": "#5988E5"
+    },
+    {
+      "name": "brand-blue-700",
+      "value": "#4F7DE2"
+    },
+    {
+      "name": "brand-blue-800",
+      "value": "#4573DE"
+    },
+    {
+      "name": "brand-blue-900",
+      "value": "#3361D8"
+    },
+    {
+      "name": "text-color",
+      "value": "#3F536E"
+    },
+    {
+      "name": "border-color-gray",
+      "value": "#CCC"
+    },
+    {
+      "name": "border-color-base",
+      "value": "#C5D9E8"
+    },
+    {
+      "name": "alert-text-color-success",
+      "value": "#53664A"
+    },
+    {
+      "name": "alert-text-color-error",
+      "value": "#AD3430"
+    },
+    {
+      "name": "alert-text-color-warning",
+      "value": "#7F6128"
+    },
+    {
+      "name": "alert-text-color-info",
+      "value": "#3B688C"
+    },
+    {
+      "name": "alert-icon-color-success",
+      "value": "#7D9970"
+    },
+    {
+      "name": "alert-icon-color-error",
+      "value": "#FA4C46"
+    },
+    {
+      "name": "alert-icon-color-warning",
+      "value": "#CC9B3F"
+    },
+    {
+      "name": "alert-icon-color-info",
+      "value": "#66B3F3"
+    },
+    {
+      "name": "normal-color",
+      "value": "#6190E8"
+    },
+    {
+      "name": "color-normal",
+      "value": "#6190E8"
+    },
+    {
+      "name": "color-white",
+      "value": "#FFF"
+    },
+    {
+      "name": "green-50",
+      "value": "#E3F9ED"
+    },
+    {
+      "name": "green-100",
+      "value": "#B8F0D1"
+    },
+    {
+      "name": "green-200",
+      "value": "#89E7B3"
+    },
+    {
+      "name": "green-300",
+      "value": "#5ADD94"
+    },
+    {
+      "name": "green-400",
+      "value": "#36D57D"
+    },
+    {
+      "name": "green-500",
+      "value": "#13CE66"
+    },
+    {
+      "name": "green-600",
+      "value": "#11C95E"
+    },
+    {
+      "name": "green-700",
+      "value": "#0EC253"
+    },
+    {
+      "name": "green-800",
+      "value": "#0BBC49"
+    },
+    {
+      "name": "green-900",
+      "value": "#06B038"
+    },
+    {
+      "name": "red-50",
+      "value": "#FFE9E9"
+    },
+    {
+      "name": "red-100",
+      "value": "#FFC8C8"
+    },
+    {
+      "name": "red-200",
+      "value": "#FFA4A4"
+    },
+    {
+      "name": "red-300",
+      "value": "#FF8080"
+    },
+    {
+      "name": "red-400",
+      "value": "#FF6464"
+    },
+    {
+      "name": "red-500",
+      "value": "#FF4949"
+    },
+    {
+      "name": "red-600",
+      "value": "#FF4242"
+    },
+    {
+      "name": "red-700",
+      "value": "#FF3939"
+    },
+    {
+      "name": "red-800",
+      "value": "#FF3131"
+    },
+    {
+      "name": "red-900",
+      "value": "#FF2121"
+    },
+    {
+      "name": "yellow-50",
+      "value": "#FFF8E6"
+    },
+    {
+      "name": "yellow-100",
+      "value": "#FFEFC0"
+    },
+    {
+      "name": "yellow-200",
+      "value": "#FFE496"
+    },
+    {
+      "name": "yellow-300",
+      "value": "#FFD96B"
+    },
+    {
+      "name": "yellow-400",
+      "value": "#FFD04C"
+    },
+    {
+      "name": "yellow-500",
+      "value": "#FFC82C"
+    },
+    {
+      "name": "yellow-600",
+      "value": "#FFC227"
+    },
+    {
+      "name": "yellow-700",
+      "value": "#FFBB21"
+    },
+    {
+      "name": "yellow-800",
+      "value": "#FFB41B"
+    },
+    {
+      "name": "yellow-900",
+      "value": "#FFA710"
+    },
+    {
+      "name": "blue-50",
+      "value": "#EFF4FE"
+    },
+    {
+      "name": "blue-100",
+      "value": "#D7E4FE"
+    },
+    {
+      "name": "blue-200",
+      "value": "#BCD2FD"
+    },
+    {
+      "name": "blue-300",
+      "value": "#A1BFFC"
+    },
+    {
+      "name": "blue-400",
+      "value": "#8CB2FB"
+    },
+    {
+      "name": "blue-500",
+      "value": "#78A4FA"
+    },
+    {
+      "name": "blue-600",
+      "value": "#709CF9"
+    },
+    {
+      "name": "blue-700",
+      "value": "#6592F9"
+    },
+    {
+      "name": "blue-800",
+      "value": "#5B89F8"
+    },
+    {
+      "name": "blue-900",
+      "value": "#4878F6"
+    },
+    {
+      "name": "grey-50",
+      "value": "#F7F7F7"
+    },
+    {
+      "name": "grey-100",
+      "value": "#ECECEC"
+    },
+    {
+      "name": "grey-200",
+      "value": "#DFDFDF"
+    },
+    {
+      "name": "grey-300",
+      "value": "#D2D2D2"
+    },
+    {
+      "name": "grey-400",
+      "value": "#C9C9C9"
+    },
+    {
+      "name": "grey-500",
+      "value": "#BFBFBF"
+    },
+    {
+      "name": "grey-600",
+      "value": "#B9B9B9"
+    },
+    {
+      "name": "grey-700",
+      "value": "#B1B1B1"
+    },
+    {
+      "name": "grey-800",
+      "value": "#A9A9A9"
+    },
+    {
+      "name": "grey-900",
+      "value": "#9B9B9B"
+    },
+    {
+      "name": "black-50",
+      "value": "#E6E8EB"
+    },
+    {
+      "name": "black-100",
+      "value": "#C0C6CE"
+    },
+    {
+      "name": "black-200",
+      "value": "#96A0AD"
+    },
+    {
+      "name": "primary",
+      "value": "#6190E8"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "2em",
+      "px": 32
+    },
+    {
+      "name": "modal-icon-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "32px",
+      "px": 32
+    },
+    {
+      "name": "alert-icon-font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "notification-font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "notification-icon-font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "font-size-lger",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "rate-icon-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "h2",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "btn-font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "h3",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "input-icon-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "alert-icon-font-size",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "btn-font-size-md",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "input-font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "body",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h6",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-sm",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "at-modal-body",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "at-notification-title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "font-size-smer",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "btn-font-size-base",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "input-font-size-base",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "at-popover-title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "at-menu-item-group-title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": 1
+    },
+    {
+      "name": "at-step-title",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": "18px"
+    },
+    {
+      "name": "font-size-smest",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "btn-font-size-sm",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "input-font-size-sm",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "inputnumber-handler-font-size-lg",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "btn-font-size-smer",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "inputnumber-handler-font-size-base",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "inputnumber-handler-font-size-sm",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"微软雅黑\", Arial, sans-serif",
+      "fontSize": "9px",
+      "px": 9
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "#FFF",
+      "rounded": "4px",
+      "padding": "6px 16px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "tag",
+      "kind": "badge",
+      "backgroundColor": "#F7F7F7",
+      "textColor": "#FFF",
+      "rounded": "4px",
+      "padding": "1px 8px",
+      "border": "1px solid #DFDFDF"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#FFF",
+      "rounded": "4px"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "#3F536E"
+    },
+    {
+      "key": "alert",
+      "kind": "alert",
+      "textColor": "#53664A",
+      "rounded": "4px",
+      "padding": "8px 16px",
+      "border": "1px solid #ccc"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#FFF",
+      "rounded": "4px",
+      "border": "none"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "textColor": "#3F536E"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "textColor": "#3F536E"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "backgroundColor": "#BFBFBF",
+      "rounded": "20px",
+      "border": "1px solid #BFBFBF"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "textColor": "#3F536E"
+    },
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#C5D9E8"
+    },
+    {
+      "key": "alert-2",
+      "kind": "alert",
+      "textColor": "#7D9970"
+    },
+    {
+      "key": "modal-2",
+      "kind": "modal",
+      "backgroundColor": "rgba(0, 0, 0, 0.5)"
+    },
+    {
+      "key": "input-number-2",
+      "kind": "input",
+      "backgroundColor": "#FFF",
+      "rounded": "4px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "radio-2",
+      "kind": "radio",
+      "backgroundColor": "#FFF",
+      "rounded": "50%",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "switch-2",
+      "kind": "switch",
+      "textColor": "#FFF"
+    },
+    {
+      "key": "alert-3",
+      "kind": "alert",
+      "textColor": "#7D9970"
+    },
+    {
+      "key": "modal-3",
+      "kind": "modal",
+      "textColor": "#2C405A",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "#FF4949",
+      "textColor": "#FFF",
+      "rounded": "9px",
+      "padding": "0 6px",
+      "border": "1px solid #FFF"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "textColor": "#3F536E"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "backgroundColor": "#FFF",
+      "rounded": "4px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "input-3",
+      "kind": "input",
+      "backgroundColor": "#FFF",
+      "textColor": "#3F536E",
+      "rounded": "4px",
+      "padding": "6px 12px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "tabs-nav-2",
+      "kind": "tabs",
+      "textColor": "#79879a"
+    },
+    {
+      "key": "select-2",
+      "kind": "select",
+      "backgroundColor": "#FFF",
+      "rounded": "4px",
+      "shadow": "0 1px 6px rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "rgba(0, 0, 0, 0.75)",
+      "textColor": "#FFF",
+      "rounded": "4px",
+      "padding": "4px 8px"
+    },
+    {
+      "key": "breadcrumb",
+      "kind": "nav",
+      "textColor": "#6190E8"
+    },
+    {
+      "key": "pagination-2",
+      "kind": "nav",
+      "backgroundColor": "#FFF",
+      "textColor": "#3F536E",
+      "rounded": "4px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "pagination-3",
+      "kind": "nav",
+      "backgroundColor": "#FFF",
+      "textColor": "#3F536E",
+      "rounded": "4px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "select-3",
+      "kind": "select",
+      "backgroundColor": "#FFF",
+      "rounded": "4px",
+      "padding": "0 24px 0 8px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "radio-button-3",
+      "kind": "button",
+      "backgroundColor": "#FFF",
+      "textColor": "#3F536E",
+      "padding": "6px 16px",
+      "border": "1px solid #C5D9E8"
+    },
+    {
+      "key": "progress-bar-2",
+      "kind": "progress",
+      "backgroundColor": "#78A4F4",
+      "rounded": "50px"
+    },
+    {
+      "key": "progress-bar-3",
+      "kind": "progress",
+      "backgroundColor": "#DFDFDF",
+      "rounded": "50px"
+    },
+    {
+      "key": "btn-info",
+      "kind": "button",
+      "backgroundColor": "#78A4FA",
+      "textColor": "#FFF",
+      "border": "1px solid #78A4FA"
+    },
+    {
+      "key": "btn-text",
+      "kind": "button",
+      "textColor": "#6190E8",
+      "border": "none"
+    },
+    {
+      "key": "tag-info",
+      "kind": "badge",
+      "backgroundColor": "#78A4FA",
+      "textColor": "#FFF",
+      "border": "1px solid #78A4FA"
+    },
+    {
+      "key": "btn-error",
+      "kind": "button",
+      "backgroundColor": "#FF4949",
+      "textColor": "#FFF",
+      "border": "1px solid #FF4949"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F7F7F7",
+      "textColor": "#3F536E",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**AT UIKIT** is a light-first design system anchored on `#FFF` canvas surfaces with `#3F536E` primary ink (7.9:1 contrast) and `#6190E8` brand accent.\n\nTypography centers cleanly on `System UI` (32px display down to 14px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **AT**. Source: published token package, package `at-ui-style`. Inventory: **91** colors, **37** typography steps, and **37** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 37 component tokens with documented paddings: `6px 16px`, `1px 8px`, `8px 16px`, `12px 16px`, `0 6px`.\n- **Hierarchy**: Group controls cleanly within `#F7F7F7` cards; separate sibling sections using `#CCC` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 1px 6px rgba(0, 0, 0, 0.2)`) paired with `#CCC` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#6190E8` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFF` (light) with `#3F536E` primary text and `#3F536E` secondary labels.\n- Use `#6190E8` with `#f7f7f8` text (2.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#F7F7F7` surface shifts and `#CCC` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

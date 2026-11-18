@@ -1,0 +1,234 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#3e6ae1",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "electric-blue",
+      "value": "#3e6ae1"
+    },
+    {
+      "name": "pure-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "promo-blue",
+      "value": "#3e6ae1"
+    },
+    {
+      "name": "white-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-ash",
+      "value": "#f4f4f4"
+    },
+    {
+      "name": "carbon-dark",
+      "value": "#171a20"
+    },
+    {
+      "name": "frosted-glass",
+      "value": "rgba(255, 255, 255, 0.75)"
+    },
+    {
+      "name": "graphite",
+      "value": "#393c41"
+    },
+    {
+      "name": "pewter",
+      "value": "#5c5e62"
+    },
+    {
+      "name": "silver-fog",
+      "value": "#8e8e8e"
+    },
+    {
+      "name": "cloud-gray",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "pale-silver",
+      "value": "#d0d1d2"
+    },
+    {
+      "name": "primary",
+      "value": "#3e6ae1"
+    }
+  ],
+  "type": [
+    {
+      "name": "hero-title",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "40px",
+      "px": 40,
+      "fontWeight": 500,
+      "lineHeight": 48
+    },
+    {
+      "name": "promo-text",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 400,
+      "lineHeight": 20
+    },
+    {
+      "name": "product-name",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "17px",
+      "px": 17,
+      "fontWeight": 500,
+      "lineHeight": 20
+    },
+    {
+      "name": "category-label",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500
+    },
+    {
+      "name": "nav-item",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 16.8
+    },
+    {
+      "name": "body-text",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 20
+    },
+    {
+      "name": "button-label",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 16.8
+    },
+    {
+      "name": "sub-link",
+      "fontFamily": "Universal Sans Display",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 20
+    }
+  ],
+  "components": [
+    {
+      "key": "primary-cta",
+      "kind": "button",
+      "backgroundColor": "#3e6ae1",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "4px"
+    },
+    {
+      "key": "secondary-cta",
+      "kind": "button",
+      "backgroundColor": "#ffffff",
+      "textColor": "#393c41"
+    },
+    {
+      "key": "nav-button",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#171a20",
+      "rounded": "4px",
+      "padding": "4px 16px"
+    },
+    {
+      "key": "text-link",
+      "kind": "link",
+      "textColor": "#5c5e62"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#3e6ae1",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#3e6ae1",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Tesla's website is an exercise in radical subtraction — a digital showroom where the product is everything and the interface is almost nothing. The page opens with a full-viewport hero that fills the entire screen with cinematic car photography: three vehicles arranged on polished concrete against a hazy cityscape sky, with a single model name floating above in translucent white type. There are no decorative borders, no gradients, no patterns, no shadows. The UI exists only to provide just enough navigational structure to get out of the way. Every pixel that isn't product imagery is white space, and that restraint is the design system's most powerful statement.\r\n\r\nThe color philosophy is almost ascetic: a single blue (`#3E6AE1`) for primary calls to action, three shades of dark gray for text hierarchy, and white for everything else. The entire emotional weight is carried by photography — sprawling landscape shots, studio-lit vehicle profiles, and atmospheric environmental compositions that stretch edge-to-edge across each viewport-height section. The UI chrome dissolves into the imagery. The navigation bar floats above the hero with no visible background, border, or shadow — the TESLA wordmark and five navigation labels simply exist in the space, trusting the content beneath them to provide sufficient contrast.\r\n\r\nTypography recently transitioned from Gotham to Universal Sans — a custom family split into \"Display\" for headlines and \"Text\" for body/UI elements — unifying the website, mobile app, and in-car software into a single typographic voice. The Display variant renders hero titles at 40px weight 500, while the Text variant handles everything from navigation (14px/500) to body copy (14px/400). The font carries a geometric precision with slightly humanist terminals that feels engineered rather than designed — exactly matching Tesla's brand identity of technology that doesn't need to announce itself. There are no text shadows, no text gradients, no decorative type treatments. Every letterform earns its place through clarity alone.\r\n\r\n**Key Characteristics:**\r\n- Full-viewport hero sections (100vh) dominated by cinematic car photography with minimal overlay UI\r\n- Near-zero UI decoration: no shadows, no gradients, no borders, no patterns anywhere on the page\r\n- Single accent color — Electric Blue (`#3E6AE1`) — used exclusively for primary CTA buttons\r\n- Universal Sans font family (Display + Text) unifying web, app, and in-car interfaces\r\n- Photography-first presentation where product imagery carries all emotional weight\r\n- Frosted-glass navigation concept with transparent/white nav that floats over hero content\r\n- 0.33s cubic-bezier transitions as the universal timing for all interactive state changes\r\n- Carousel-driven hero with dot indicators and edge arrow navigation for multiple vehicle showcases\r\n- \"Ask a Question\" persistent chatbot bar anchored to the viewport bottom",
+  "dos": "### Do\r\n- Let photography dominate every screen — the product IS the design\r\n- Use Electric Blue (`#3E6AE1`) exclusively for primary CTAs — never for decorative purposes\r\n- Maintain viewport-height sections for major content blocks — one message per screen\r\n- Keep typography at weight 400-500 only — no bold, no light, no extremes\r\n- Use 4px border-radius for all interactive elements — precision over playfulness\r\n- Trust whitespace as a luxury signal — never fill available space just because it's empty\r\n- Keep all transitions at 0.33s — consistency in motion is as important as consistency in color\r\n- Use transparent PNG vehicle imagery on white backgrounds for product showcases\r\n- Center CTAs horizontally below model names — the vertical rhythm is model → subtitle → buttons\r\n- Maintain the Display/Text font split — Display for hero-scale text only, Text for everything else\r\n\r\n### Don't\r\n- Add shadows to any element — elevation through shadow contradicts the flat, gallery aesthetic\r\n- Use more than one chromatic color besides the blue CTA — the palette is intentionally monochrome-plus-one\r\n- Apply gradients, patterns, or decorative backgrounds to surfaces — white and photography are the only backgrounds\r\n- Use text larger than 40px on the web — the typography is deliberately restrained even at hero scale\r\n- Add borders to cards or containers — separation is achieved through spacing, not lines\r\n- Use uppercase text transforms — Tesla's confidence is expressed through lowercase calm\r\n- Introduce rounded-pill buttons or large border-radii — the 4px radius is deliberate and precise\r\n- Override the Universal Sans family with other typefaces — cross-platform consistency is a core brand value\r\n- Add hover animations with scale/translate transforms — Tesla's interactions are color-only (background and border transitions)\r\n- Clutter the viewport with multiple CTAs — every screen should have at most two action buttons"
+}

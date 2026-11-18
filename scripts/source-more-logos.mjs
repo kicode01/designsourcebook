@@ -141,11 +141,15 @@ async function main() {
   const rejected = { dupBrand: 0, dupGeom: 0, dupSubVariant: 0, badSvg: 0, craftGate: 0, fetchMiss: 0 };
   const extraItems = [];
 
-  const [gbList, svglList, tsMeta, tsIconsJson] = await Promise.all([
+  const [gbList, svglList, tsMeta, tsIconsJson, siMeta, siIconsJson, faBrandsJson, selfhstJson] = await Promise.all([
     fetchRetry("https://raw.githubusercontent.com/gilbarbara/logos/main/logos.json"),
     fetchRetry("https://api.svgl.app"),
     fetchRetry("https://raw.githubusercontent.com/glincker/thesvg/main/src/data/icons.json"),
     fetchRetry("https://cdn.jsdelivr.net/npm/@iconify-json/thesvg-color/icons.json"),
+    fetchRetry("https://cdn.jsdelivr.net/npm/simple-icons@latest/_data/simple-icons.json"),
+    fetchRetry("https://cdn.jsdelivr.net/npm/@iconify-json/simple-icons@latest/icons.json"),
+    fetchRetry("https://cdn.jsdelivr.net/npm/@iconify-json/fa7-brands@latest/icons.json"),
+    fetchRetry("https://cdn.jsdelivr.net/npm/@iconify-json/selfhst@latest/icons.json"),
   ]);
 
   // ------------------------------------------------------------------
@@ -324,60 +328,151 @@ async function main() {
   }
   console.log(`Tier 2 (svgl): kept ${svglKept}`);
 
-  // ------------------------------------------------------------------
-  // Tier 3: glincker/thesvg (`collection === 'brands'` ONLY)
-  // ------------------------------------------------------------------
-  const icMap = tsIconsJson?.icons || {};
-  let tsKept = 0;
-  for (const x of tsMeta || []) {
-    if (x.collection !== "brands") continue;
-    const slug = toSlug(x.slug);
-    if (!slug) continue;
+  function tryPushIconifyMark({ slug, rawSlug, title, categories = [], extraKeys = [], ic, defW = 24, defH = 24, overrideHex = null }) {
+    if (!slug) return false;
     if (/-(?:dark|grayscale|greyscale|mono|monochrome|wordmark|vertical|horizontal|old|legacy|app-icon|black|white)$/i.test(slug)) {
       rejected.dupSubVariant++;
-      continue;
+      return false;
     }
-    const keys = [slug, x.slug, x.title, ...(x.aliases || [])].map(canonicalRoot).filter(Boolean);
+    const keys = [slug, rawSlug, title, ...extraKeys].map(canonicalRoot).filter(Boolean);
     if (!keys.length || seenIds.has(slug) || keys.some((k) => seenBrands.has(k))) {
       rejected.dupBrand++;
-      continue;
+      return false;
     }
-    const ic = icMap[x.slug] || icMap[`${x.slug}-light`] || icMap[`${x.slug}-color`];
-    if (!ic?.body) { rejected.badSvg++; continue; }
-    const w = ic.width || tsIconsJson.width || 24;
-    const h = ic.height || tsIconsJson.height || 24;
-    const rawSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}">${ic.body}</svg>`;
+    if (!ic?.body) { rejected.badSvg++; return false; }
+    const w = ic.width || defW;
+    const h = ic.height || defH;
+    let body = ic.body;
+    if (overrideHex) {
+      body = body.replace(/currentColor/gi, overrideHex);
+    }
+    const rawSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}">${body}</svg>`;
     const svg = sanitizeLogoSvg(rawSvg);
-    if (!svg) { rejected.badSvg++; continue; }
+    if (!svg) { rejected.badSvg++; return false; }
     const metrics = measureLogoSvg(svg);
     const gateFail = passesCraftGate(metrics, svg, { maxAnchors: 320, maxShapes: 45, maxBytes: 18500 });
-    if (gateFail) { rejected.craftGate++; continue; }
+    if (gateFail) { rejected.craftGate++; return false; }
     const gh = computeGeomHash(svg);
-    if (seenGeom.has(gh)) { rejected.dupGeom++; continue; }
+    if (seenGeom.has(gh)) { rejected.dupGeom++; return false; }
 
     seenGeom.add(gh);
     seenIds.add(slug);
     for (const k of keys) seenBrands.set(k, { id: slug, fromBase: false, aspect: metrics.aspect });
 
-    const cls = classifyLogoMetadata({
-      id: slug,
-      variant: "main",
-      metrics,
-      categories: x.categories || [],
-      title: x.title || slug,
-    });
-    extraItems.push({
-      id: slug,
-      brand: slug,
-      variant: "main",
-      pair: null,
-      ...metrics,
-      ...cls,
-      svg,
-    });
-    tsKept++;
+    const cls = classifyLogoMetadata({ id: slug, variant: "main", metrics, categories, title: title || slug });
+    extraItems.push({ id: slug, brand: slug, variant: "main", pair: null, ...metrics, ...cls, svg });
+    return true;
   }
-  console.log(`Tier 3 (thesvg brands): kept ${tsKept}`);
+
+  // ------------------------------------------------------------------
+  // Tier 3: glincker/thesvg (`brands` + `community`)
+  // ------------------------------------------------------------------
+  const icMap = tsIconsJson?.icons || {};
+  let tsKept = 0;
+  for (const x of tsMeta || []) {
+    if (x.collection !== "brands" && x.collection !== "community") continue;
+    const slug = toSlug(x.slug);
+    const ic = icMap[x.slug] || icMap[`${x.slug}-light`] || icMap[`${x.slug}-color`];
+    if (tryPushIconifyMark({
+      slug,
+      rawSlug: x.slug,
+      title: x.title,
+      categories: x.categories || [],
+      extraKeys: x.aliases || [],
+      ic,
+      defW: tsIconsJson?.width || 24,
+      defH: tsIconsJson?.height || 24,
+    })) {
+      tsKept++;
+    }
+  }
+  console.log(`Tier 3 (thesvg brands/community): kept ${tsKept}`);
+
+  // ------------------------------------------------------------------
+  // Tier 4: simple-icons (official brand hex tinted on white-legible surface)
+  // ------------------------------------------------------------------
+  const siByRoot = new Map();
+  const siArr = Array.isArray(siMeta) ? siMeta : (siMeta?.icons || []);
+  for (const entry of siArr) {
+    const r = canonicalRoot(entry.title);
+    if (r) siByRoot.set(r, entry);
+    for (const aka of entry.aliases?.aka || []) {
+      const ar = canonicalRoot(aka);
+      if (ar && !siByRoot.has(ar)) siByRoot.set(ar, entry);
+    }
+  }
+  const readableHex = (hex) => {
+    if (!hex || !/^[0-9a-f]{6}$/i.test(hex)) return "#18181b";
+    const r = parseInt(hex.slice(0, 2), 16) / 255;
+    const g = parseInt(hex.slice(2, 4), 16) / 255;
+    const b = parseInt(hex.slice(4, 6), 16) / 255;
+    const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    return lum > 0.78 ? "#18181b" : `#${hex.toLowerCase()}`;
+  };
+
+  let siKept = 0;
+  for (const [rawSlug, ic] of Object.entries(siIconsJson?.icons || {})) {
+    const slug = toSlug(rawSlug);
+    const meta = siByRoot.get(canonicalRoot(rawSlug));
+    const fillHex = readableHex(meta?.hex);
+    if (tryPushIconifyMark({
+      slug,
+      rawSlug,
+      title: meta?.title || rawSlug,
+      categories: ["Software"],
+      extraKeys: meta?.aliases?.aka || [],
+      ic,
+      defW: siIconsJson?.width || 24,
+      defH: siIconsJson?.height || 24,
+      overrideHex: fillHex,
+    })) {
+      siKept++;
+    }
+  }
+  console.log(`Tier 4 (simple-icons): kept ${siKept}`);
+
+  // ------------------------------------------------------------------
+  // Tier 5: @iconify-json/fa7-brands & @iconify-json/selfhst
+  // ------------------------------------------------------------------
+  let faKept = 0;
+  for (const [rawSlug, ic] of Object.entries(faBrandsJson?.icons || {})) {
+    const slug = toSlug(rawSlug);
+    if (tryPushIconifyMark({
+      slug,
+      rawSlug,
+      title: rawSlug,
+      categories: ["Software"],
+      ic,
+      defW: faBrandsJson?.width || 24,
+      defH: faBrandsJson?.height || 24,
+      overrideHex: "#18181b",
+    })) {
+      faKept++;
+    }
+  }
+  console.log(`Tier 5 (fa7-brands): kept ${faKept}`);
+
+  let shKept = 0;
+  for (const [rawSlug, ic] of Object.entries(selfhstJson?.icons || {})) {
+    if (/-(?:dark|light)$/i.test(rawSlug)) {
+      rejected.dupSubVariant++;
+      continue;
+    }
+    const slug = toSlug(rawSlug);
+    if (tryPushIconifyMark({
+      slug,
+      rawSlug,
+      title: rawSlug,
+      categories: ["Software", "Self-Hosted"],
+      ic,
+      defW: selfhstJson?.width || 512,
+      defH: selfhstJson?.height || 512,
+      overrideHex: "#18181b",
+    })) {
+      shKept++;
+    }
+  }
+  console.log(`Tier 6 (selfhst): kept ${shKept}`);
 
   // ------------------------------------------------------------------
   // Final Pass: Cross-source Visual Stem + Silhouette IoU Deduplication
@@ -457,6 +552,9 @@ async function main() {
       addedGilbarbara: gbKept,
       addedSvgl: svglKept,
       addedThesvg: tsKept,
+      addedSimpleIcons: siKept,
+      addedFaBrands: faKept,
+      addedSelfhst: shKept,
       prunedVisualStem: droppedStemIds.size,
       addedTotal: cleanedItems.length,
       grandTotal: baseCatalog.length + cleanedItems.length,

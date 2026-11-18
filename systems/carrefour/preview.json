@@ -1,0 +1,536 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0970E6",
+  "border": "#E5E5E5",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "colors-blocks-callout-background-second",
+      "value": "#E8F8FF"
+    },
+    {
+      "name": "colors-blocks-callout-background-fourth",
+      "value": "#FFEFEF"
+    },
+    {
+      "name": "colors-blocks-callout-background-third",
+      "value": "#F0FAF6"
+    },
+    {
+      "name": "colors-blocks-upload-text-annotation",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-blocks-upload-background-annotation",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-footer-border-divider",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "colors-blocks-rules-background-neutral",
+      "value": "#F0F3F6"
+    },
+    {
+      "name": "colors-blocks-rules-background-caution",
+      "value": "#FFF5DD"
+    },
+    {
+      "name": "colors-blocks-rules-background-dont",
+      "value": "#FFEFEF"
+    },
+    {
+      "name": "colors-blocks-rules-background-do",
+      "value": "#B9E9CC"
+    },
+    {
+      "name": "colors-footer-text-main",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-footer-background-main",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-footer-text-links",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-blocks-callout-background-first",
+      "value": "#FFFAF0"
+    },
+    {
+      "name": "colors-sidebar-text-active",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-nav-text-active",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-blocks-content-text-styleguide-title",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-blocks-content-text-small-heading",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-blocks-content-text-smaller-heading",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-sidebar-text-primary",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-sidebar-text-secondary",
+      "value": "#454545"
+    },
+    {
+      "name": "colors-sidebar-border-main",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "colors-nav-text-main",
+      "value": "#1D345C"
+    },
+    {
+      "name": "colors-blocks-content-text-link",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-blocks-tabs-border-active",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-nav-border-active",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-styleguide-background-accent",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-blocks-content-text-large-heading",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-blocks-upload-text-label",
+      "value": "#1D345C"
+    },
+    {
+      "name": "colors-blocks-content-text-styleguide-body",
+      "value": "#454545"
+    },
+    {
+      "name": "colors-ui-element-background-action",
+      "value": "#0970E6"
+    },
+    {
+      "name": "colors-sidebar-text-icon",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-blocks-content-text-styleguide-secondary-body",
+      "value": "#575757"
+    },
+    {
+      "name": "colors-nav-border-main",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "colors-blocks-table-border-main",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "colors-ui-element-text",
+      "value": "#121212"
+    },
+    {
+      "name": "colors-ui-element-border",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "colors-ui-element-text-secondary",
+      "value": "#454545"
+    },
+    {
+      "name": "colors-blocks-rules-text-do",
+      "value": "#262626"
+    },
+    {
+      "name": "colors-blocks-rules-text-dont",
+      "value": "#262626"
+    },
+    {
+      "name": "colors-blocks-rules-text-caution",
+      "value": "#262626"
+    },
+    {
+      "name": "colors-blocks-rules-text-neutral",
+      "value": "#262626"
+    },
+    {
+      "name": "colors-ui-element-background-action-hover",
+      "value": "#8dc0fb"
+    },
+    {
+      "name": "colors-styleguide-reversed-accent",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colors-ui-element-background-main",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colors-ui-element-background-active",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "colors-ui-element-background-hover",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "rt-color-white",
+      "value": "#fff"
+    },
+    {
+      "name": "rt-color-dark",
+      "value": "#222"
+    },
+    {
+      "name": "rt-color-success",
+      "value": "#8dc572"
+    },
+    {
+      "name": "rt-color-error",
+      "value": "#be6464"
+    },
+    {
+      "name": "rt-color-warning",
+      "value": "#f0ad4e"
+    },
+    {
+      "name": "rt-color-info",
+      "value": "#337ab7"
+    },
+    {
+      "name": "primary",
+      "value": "#0970E6"
+    }
+  ],
+  "type": [
+    {
+      "name": "landing-title",
+      "fontFamily": "Ubuntu",
+      "fontSize": "4.5rem",
+      "px": 72,
+      "fontWeight": 300
+    },
+    {
+      "name": "landing-subtitle",
+      "fontFamily": "Ubuntu",
+      "fontSize": "3rem",
+      "px": 48,
+      "fontWeight": 300
+    },
+    {
+      "name": "type-landing-heading",
+      "fontFamily": "Ubuntu",
+      "fontSize": "2.5rem",
+      "px": 40,
+      "fontWeight": 800,
+      "lineHeight": "3rem"
+    },
+    {
+      "name": "landing-bottom-cta-title",
+      "fontFamily": "Ubuntu",
+      "fontSize": "2.4rem",
+      "px": 38.4,
+      "fontWeight": 400
+    },
+    {
+      "name": "h1",
+      "fontFamily": "Ubuntu",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "big-title",
+      "fontFamily": "Ubuntu",
+      "fontSize": "2rem",
+      "px": 32,
+      "fontWeight": 250
+    },
+    {
+      "name": "type-heading-large",
+      "fontFamily": "Ubuntu",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 700,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Ubuntu",
+      "fontSize": "1.3rem",
+      "px": 20.8,
+      "fontWeight": 700
+    },
+    {
+      "name": "typography-heading-small",
+      "fontFamily": "Ubuntu",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 600,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Ubuntu",
+      "px": 16
+    },
+    {
+      "name": "title-text",
+      "fontFamily": "Ubuntu",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "body",
+      "fontFamily": "\"DM sans\", \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "type-heading-xsmall",
+      "fontFamily": "Ubuntu",
+      "fontSize": ".75rem",
+      "px": 12,
+      "fontWeight": 700,
+      "lineHeight": "1rem"
+    }
+  ],
+  "components": [
+    {
+      "key": "input",
+      "kind": "input",
+      "textColor": "#262626",
+      "rounded": "4px",
+      "border": "1px solid #757575"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "backgroundColor": "#e8e8e8",
+      "rounded": "100px",
+      "padding": "2px"
+    },
+    {
+      "key": "input-2",
+      "kind": "input",
+      "textColor": "#6f8291",
+      "rounded": "4px",
+      "border": "1px solid #e2e4e7"
+    },
+    {
+      "key": "input-3",
+      "kind": "input",
+      "textColor": "#262626",
+      "rounded": "4px",
+      "border": "1px solid #757575"
+    },
+    {
+      "key": "link-text",
+      "kind": "link",
+      "textColor": "#3497ff"
+    },
+    {
+      "key": "icon-text",
+      "kind": "icon",
+      "textColor": "#6a6a6a"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "rounded": "5px",
+      "border": "1px solid #c9c8c9"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "border": "1px solid rgba(0,0,0,.15)",
+      "shadow": "0 0 10px 0 rgba(0,0,0,.1)"
+    },
+    {
+      "key": "switch-2",
+      "kind": "switch",
+      "backgroundColor": "#f6f6f6",
+      "rounded": "23px",
+      "border": "1px solid rgba(96,95,96,.15)"
+    },
+    {
+      "key": "link-3",
+      "kind": "link",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "border": "1px solid rgba(0,0,0,.15)",
+      "shadow": "0 0 10px 0 rgba(0,0,0,.1)"
+    },
+    {
+      "key": "button-2",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "rounded": "5px",
+      "border": "1px solid #c9c8c9"
+    },
+    {
+      "key": "switch-circle-3",
+      "kind": "switch",
+      "backgroundColor": "#fff",
+      "rounded": "50%",
+      "shadow": "0 1px 4px 0 rgba(0,0,0,.25)"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "backgroundColor": "#ed4179",
+      "textColor": "#fff",
+      "rounded": "2px",
+      "padding": "2px"
+    },
+    {
+      "key": "nav",
+      "kind": "nav",
+      "backgroundColor": "#f6f6f6",
+      "border": "1px solid #d3d3d3"
+    },
+    {
+      "key": "button-3",
+      "kind": "button",
+      "backgroundColor": "#ed4179",
+      "textColor": "#fff",
+      "rounded": "100px",
+      "padding": "12px 25px"
+    },
+    {
+      "key": "tab-placeholder",
+      "kind": "tabs",
+      "backgroundColor": "rgba(246,62,124,.05)",
+      "rounded": "3px",
+      "border": "1px dashed rgba(246,62,124,.5)"
+    },
+    {
+      "key": "osx-blue-button-4",
+      "kind": "button",
+      "backgroundColor": "#ed4179",
+      "textColor": "#fff",
+      "rounded": "5px",
+      "border": "1px solid #fff"
+    },
+    {
+      "key": "banner-background",
+      "kind": "alert",
+      "backgroundColor": "#e20b0b"
+    },
+    {
+      "key": "progress-view",
+      "kind": "progress",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "tab-overlay-2",
+      "kind": "tabs",
+      "backgroundColor": "rgba(246,62,124,.05)",
+      "rounded": "3px",
+      "border": "1px dashed #f63e7c"
+    },
+    {
+      "key": "callout-block_background-1-2",
+      "kind": "alert",
+      "backgroundColor": "#fffcc3"
+    },
+    {
+      "key": "callout-block_background-2-3",
+      "kind": "alert",
+      "backgroundColor": "#e2f1ff"
+    },
+    {
+      "key": "nav-page-indicator-2",
+      "kind": "nav",
+      "backgroundColor": "#6f8291",
+      "rounded": "50%"
+    },
+    {
+      "key": "nav-foreground",
+      "kind": "nav",
+      "textColor": "#212121"
+    },
+    {
+      "key": "icon-background",
+      "kind": "icon",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "border": "rgb(0, 62, 255)"
+    },
+    {
+      "key": "tab-view-name",
+      "kind": "tabs",
+      "textColor": "#605f60"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0970E6",
+      "textColor": "#ffffff",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Marcel** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#0970E6` brand accent.\n\nDisplay headlines pair `Ubuntu` with `DM sans` body copy (72px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Carrefour**. Source: live stylesheet extraction (https://carrefour.design/). Inventory: **54** colors, **13** typography steps, and **30** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 30 component tokens with documented paddings: `2px`, `12px 25px`, `8px 12px`, `10px 14px`, `6px 10px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#E5E5E5` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0 10px 0 rgba(0,0,0,.1)`, `0 0 10px 0 rgba(0,0,0,.1)`) paired with `#E5E5E5` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#0970E6` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#0970E6` with `#f7f7f8` text (4.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Ubuntu` headings with `DM sans` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#E5E5E5` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

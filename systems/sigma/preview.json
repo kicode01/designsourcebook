@@ -1,0 +1,164 @@
+{
+  "canvas": "#fff",
+  "surface": "#f5f4f2",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ff5a00",
+  "border": "#ebebeb",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "token-542f2d4c-88be-49b3-b05c-3d95ef030f89",
+      "value": "#ff5a00"
+    },
+    {
+      "name": "token-c0602cdc-e6d3-4ea2-bf0e-e3b50e6d72b6",
+      "value": "#000"
+    },
+    {
+      "name": "token-cd33177a-96ac-42f7-96c3-c4080e05d933",
+      "value": "#43424299"
+    },
+    {
+      "name": "token-36295c4d-1927-454f-a468-c4dd80360e59",
+      "value": "#807e7d1f"
+    },
+    {
+      "name": "token-c7f86029-d013-400d-a20a-2b2adfa7975d",
+      "value": "#f5f4f2"
+    },
+    {
+      "name": "token-185f756a-d06f-429f-8bf9-177ed07262aa",
+      "value": "#000"
+    },
+    {
+      "name": "token-29c07b23-9691-418f-9c52-a20accd3693d",
+      "value": "#0006"
+    },
+    {
+      "name": "token-53e2bf4e-b39e-41bb-80a1-019617510c0d",
+      "value": "#fff"
+    },
+    {
+      "name": "framer-text-color",
+      "value": "#000"
+    },
+    {
+      "name": "border-color",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "framer-link-current-text-color",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "framer-link-hover-text-color",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "framer-link-text-color",
+      "value": "#666"
+    },
+    {
+      "name": "primary",
+      "value": "#ff5a00"
+    }
+  ],
+  "type": [
+    {
+      "name": "framer-font-size",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "framer-font-family",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f5f4f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ff5a00",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ff5a00",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f5f4f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f5f4f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f5f4f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Sigma Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ff5a00` brand accent.\n\nTypography centers cleanly on `Inter` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#fff` -> `#f5f4f2` surface layering.\n\nMaintained by **Sigma**. Source: live stylesheet extraction (https://www.thesigma.co/designsystem). Inventory: **14** colors, **3** typography steps, and **8** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f5f4f2` cards; separate sibling sections using `#ebebeb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#f5f4f2`) and `1px solid #ebebeb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ff5a00` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ff5a00` with `#f7f7f8` text (2.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Inter` headings with `Inter` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f5f4f2` surface shifts and `#ebebeb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "vy-spor",
+  "displayName": "Spor",
+  "description": "Vy Group Spor — tokens imported from @vygruppen/spor-design-tokens.",
+  "style": "Vy Group Spor — tokens imported from @vygruppen/spor-design-tokens.",
+  "category": "Vy Group",
+  "org": "Vy Group",
+  "theme": "light",
+  "tags": [
+    "published",
+    "vy-group",
+    "light"
+  ],
+  "homepage": "https://github.com/nsbno/spor/tree/main/packages/spor-card-react",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @vygruppen/spor-design-tokens@8.0.1 (4 token files, 198 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@vygruppen/spor-design-tokens",
+    "version": "8.0.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 33,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

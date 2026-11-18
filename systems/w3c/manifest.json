@@ -1,0 +1,41 @@
+{
+  "name": "w3c",
+  "displayName": "W3C Design System",
+  "description": "W3C Design System — tokens read from https://github.com/w3c/w3c-website-templates-bundle.",
+  "style": "W3C Design System — tokens read from https://github.com/w3c/w3c-website-templates-bundle.",
+  "category": "W3C",
+  "org": "W3C",
+  "theme": "light",
+  "tags": [
+    "published",
+    "w3-c",
+    "light"
+  ],
+  "homepage": "https://github.com/w3c/w3c-website-templates-bundle",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/w3c/w3c-website-templates-bundle — 2 token files, 44 colours harvested, 44 selected.",
+  "source": {
+    "repo": "https://github.com/w3c/w3c-website-templates-bundle"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 45,
+    "typography": 7,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

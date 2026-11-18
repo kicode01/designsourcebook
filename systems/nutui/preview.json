@@ -1,0 +1,1571 @@
+{
+  "canvas": "#fff",
+  "surface": "rgba(245, 245, 245, 1)",
+  "text": "#0b0b0c",
+  "muted": "#808080",
+  "brand": "#f82c45",
+  "border": "rgba(204, 204, 204, 1)",
+  "radius": "21px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "tdd-color-brand-normal",
+      "value": "#f82c45"
+    },
+    {
+      "name": "tdd-color-brand-gradient-normal-2",
+      "value": "#f82c45"
+    },
+    {
+      "name": "tdd-color-warning",
+      "value": "#de6a1c"
+    },
+    {
+      "name": "text-color",
+      "value": "#808080"
+    },
+    {
+      "name": "dark-background2",
+      "value": "#1b1b1b"
+    },
+    {
+      "name": "dark-background4",
+      "value": "#323233"
+    },
+    {
+      "name": "dark-background6",
+      "value": "#380e08"
+    },
+    {
+      "name": "button-default-border-color",
+      "value": "rgba(204, 204, 204, 1)"
+    },
+    {
+      "name": "button-success-border-color",
+      "value": "rgba(38, 191, 38, 1)"
+    },
+    {
+      "name": "button-danger-background-color",
+      "value": "rgba(250, 44, 25, 1)"
+    },
+    {
+      "name": "divider-text-color",
+      "value": "#909ca4"
+    },
+    {
+      "name": "input-border-bottom",
+      "value": "#eaf0fb"
+    },
+    {
+      "name": "shortpassword-background-color",
+      "value": "rgba(245, 245, 245, 1)"
+    },
+    {
+      "name": "numberkeyboard-background-color",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "numberkeyboard-key-active-background-color",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "numberkeyboard-key-active-finsh-background-color",
+      "value": "#0570db"
+    },
+    {
+      "name": "notify-danger-background-color",
+      "value": "rgba(250, 50, 25, 1)"
+    },
+    {
+      "name": "steps-wait-icon-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "timeselect-timepannel-cur-text-color",
+      "value": "#333333"
+    },
+    {
+      "name": "tag-default-background-color",
+      "value": "#000000"
+    },
+    {
+      "name": "tag-success-background-color",
+      "value": "#4fc08d"
+    },
+    {
+      "name": "tag-warning-background-color",
+      "value": "#f3812e"
+    },
+    {
+      "name": "popover-white-background-color",
+      "value": "rgba(255, 255, 255, 1)"
+    },
+    {
+      "name": "popover-border-bottom-color",
+      "value": "rgba(229, 229, 229, 1)"
+    },
+    {
+      "name": "progress-outer-background-color",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "pagination-disable-background-color",
+      "value": "#f7f8fa"
+    },
+    {
+      "name": "menu-item-disabled-color",
+      "value": "#969799"
+    },
+    {
+      "name": "searchbar-input-background",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "skeleton-content-line-background-color",
+      "value": "#efefef"
+    },
+    {
+      "name": "grid-border-color",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "sidenavbar-sub-title-border-color",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "addresslist-border",
+      "value": "#f0f0f0"
+    },
+    {
+      "name": "circleprogress-text-color",
+      "value": "#000000"
+    },
+    {
+      "name": "primary-color-end",
+      "value": "#fa6419"
+    },
+    {
+      "name": "nut-tdd-color-brand-normal",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-tdd-color-brand-gradient-normal-2",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-tdd-color-warning",
+      "value": "#de6a1c"
+    },
+    {
+      "name": "nut-primary-color",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-primary-color-end",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-dark-background",
+      "value": "#131313"
+    },
+    {
+      "name": "nut-dark-background3",
+      "value": "#141414"
+    },
+    {
+      "name": "nut-dark-background5",
+      "value": "#646566"
+    },
+    {
+      "name": "nut-dark-background7",
+      "value": "#707070"
+    },
+    {
+      "name": "nut-button-primary-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "nut-button-info-color",
+      "value": "#fff"
+    },
+    {
+      "name": "nut-button-success-color",
+      "value": "#fff"
+    },
+    {
+      "name": "nut-button-danger-color",
+      "value": "#fff"
+    },
+    {
+      "name": "nut-button-danger-background-color",
+      "value": "rgb(250, 44, 25)"
+    },
+    {
+      "name": "nut-button-warning-border-color",
+      "value": "rgb(255, 158, 13)"
+    },
+    {
+      "name": "nut-cell-background",
+      "value": "#fff"
+    },
+    {
+      "name": "nut-divider-text-color",
+      "value": "#909ca4"
+    },
+    {
+      "name": "nut-picker-item-text-color",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "nut-input-disabled-color",
+      "value": "#c8c9cc"
+    },
+    {
+      "name": "nut-textarea-text-color",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "nut-inputnumber-input-background-color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "nut-shortpassword-border-color",
+      "value": "#ddd"
+    },
+    {
+      "name": "nut-numberkeyboard-background-color",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "nut-numberkeyboard-key-active-background-color",
+      "value": "#ebedf0"
+    },
+    {
+      "name": "nut-numberkeyboard-key-active-finsh-background-color",
+      "value": "#0570db"
+    },
+    {
+      "name": "nut-calendar-primary-color",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-notify-danger-background-color",
+      "value": "rgb(250, 50, 25)"
+    },
+    {
+      "name": "nut-steps-wait-icon-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "nut-steps-finish-line-background",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-steps-process-head-border-color",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-radio-label-button-border-color",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-timeselect-timepannel-text-color",
+      "value": "#666666"
+    },
+    {
+      "name": "nut-timeselect-timedetail-item-text-color",
+      "value": "#333333"
+    },
+    {
+      "name": "nut-timeselect-timedetail-item-cur-text-color",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-tag-primary-background-color",
+      "value": "#3460fa"
+    },
+    {
+      "name": "nut-tag-danger-background-color-plain",
+      "value": "#df3526"
+    },
+    {
+      "name": "nut-tag-plain-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "nut-popover-dark-background-color",
+      "value": "rgb(75, 76, 77)"
+    },
+    {
+      "name": "nut-popover-primary-text-color",
+      "value": "rgb(51, 51, 51)"
+    },
+    {
+      "name": "nut-pagination-item-border-color",
+      "value": "#e4e7eb"
+    },
+    {
+      "name": "nut-tabs-titles-background-color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "nut-menu-item-active-text-color",
+      "value": "#f82c45"
+    },
+    {
+      "name": "nut-menu-item-disabled-color",
+      "value": "#969799"
+    },
+    {
+      "name": "nut-collapse-wrapper-content-background-color",
+      "value": "#fff"
+    },
+    {
+      "name": "nut-searchbar-input-background",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "nut-form-item-error-message-color",
+      "value": "#fa2c19"
+    },
+    {
+      "name": "nut-skeleton-content-line-background-color",
+      "value": "#efefef"
+    },
+    {
+      "name": "nut-grid-border-color",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "nut-table-border-color",
+      "value": "#ececec"
+    },
+    {
+      "name": "nut-sidenavbar-sub-title-border-color",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "nut-elevator-list-item-bars-background-color",
+      "value": "#eeeff2"
+    },
+    {
+      "name": "nut-category-pane-border-color",
+      "value": "rgb(153, 153, 153)"
+    },
+    {
+      "name": "nut-circleprogress-text-color",
+      "value": "#000000"
+    },
+    {
+      "name": "tdd-color-auxiliary-normal",
+      "value": "#ffa41c"
+    },
+    {
+      "name": "comment-header-user-name-color",
+      "value": "rgba(51, 51, 51, 1)"
+    },
+    {
+      "name": "nut-steps-base-content-color",
+      "value": "#666"
+    },
+    {
+      "name": "primary",
+      "value": "#f82c45"
+    }
+  ],
+  "type": [
+    {
+      "name": "tdd-font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "nut-tdd-font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "numberkeyboard-key-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "nut-numberkeyboard-key-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "tdd-font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "nut-tdd-font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "tdd-font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "nut-tdd-font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "tdd-font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "address-header-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "checkbox-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "radio-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "nut-tdd-font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "nut-font-size-4",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "nut-checkbox-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "nut-radio-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "nut-cascader-bar-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "tdd-font-size-5",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "picker-bar-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "numberkeyboard-header-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "numberkeyboard-key-finish-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "toast-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "sidenavbar-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "addresslist-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-tdd-font-size-5",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-font-size-large",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-picker-bar-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-numberkeyboard-header-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-numberkeyboard-key-finish-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-toast-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-address-header-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-address-region-tab-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-tabs-titles-item-large-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-empty-description-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-card-font-size-3",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-sidenavbar-sub-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-sidenavbar-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-addresslist-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "nut-ecard-title",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15,
+      "lineHeight": 1
+    },
+    {
+      "name": "tdd-font-size-6",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "picker-bar-cancel-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "picker-bar-ok-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "picker-item-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "numberkeyboard-header-close-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "notify-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "steps-base-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "steps-base-content-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "checkbox-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "radio-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "noticebar-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "empty-description-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "form-item-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "form-item-body-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "sku-spec-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "sku-operate-btn-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "elevator-list-item-code-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "trendarrow-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "toast-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-card-right-title",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "nut-comment-follow-title",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-tdd-font-size-6",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-font-size-base",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-button-default-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-button-large-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-cell-group-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-divider-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-picker-bar-cancel-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-picker-bar-ok-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-picker-item-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-input-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-actionsheet-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-numberkeyboard-header-close-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-toast-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-notify-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-address-region-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-steps-base-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-steps-base-content-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-checkbox-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-radio-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-timeselect-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-timeselect-timepannel-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-timeselect-timedetail-item-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-pagination-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-tabs-titles-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-menu-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-collapse-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-collapse-wrapper-content-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-cascader-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-cascader-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-form-item-label-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-form-item-body-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-card-font-size-2",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-sku-spec-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-sku-spec-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-sku-operate-btn-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-elevator-list-item-code-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-trendarrow-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "nut-calendar-month-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "address-region-tab-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "steps-base-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "progress-large-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "nut-category-pane-child-title",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 500
+    },
+    {
+      "name": "nut-sku-stepper-title",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "nut-steps-base-icon-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "nut-progress-large-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "tdd-font-size-7",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "inputnumber-input-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "radio-button-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "tag-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "elevator-list-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "addresslist-addr-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-collapse-item-title-label",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-tdd-font-size-7",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-font-size-small",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-button-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-button-mini-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-cell-group-desc-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-inputnumber-input-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-actionsheet-item-subdesc-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-radio-button-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-noticebar-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-badge-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-tabs-titles-item-small-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-card-font-size-1",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-grid-item-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-elevator-list-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "nut-addresslist-addr-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "sku-spec-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "tdd-font-size-8",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "font-size-0",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "indicator-number-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "form-item-tip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "elevator-list-item-bars-inner-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-tdd-font-size-8",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-font-size-0",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-tabbar-item-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-tag-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-indicator-number-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-form-item-tip-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-card-font-size-0",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "nut-elevator-list-item-bars-inner-item-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "progress-base-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "nut-progress-base-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "9px",
+      "px": 9
+    },
+    {
+      "name": "progress-small-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "7px",
+      "px": 7
+    },
+    {
+      "name": "nut-progress-small-text-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "7px",
+      "px": 7
+    }
+  ],
+  "components": [
+    {
+      "key": "input",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "padding": "10px 25px"
+    },
+    {
+      "key": "switch",
+      "kind": "switch",
+      "backgroundColor": "#fa2c19",
+      "rounded": "21px"
+    },
+    {
+      "key": "tab-pane",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "padding": "24px 20px"
+    },
+    {
+      "key": "textarea-2",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "padding": "10px 25px"
+    },
+    {
+      "key": "input-clear-3",
+      "kind": "input",
+      "textColor": "#c8c9cc"
+    },
+    {
+      "key": "toast-cover",
+      "kind": "alert",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "key": "toast-inner-2",
+      "kind": "alert",
+      "backgroundColor": "rgba(0, 0, 0, .8)",
+      "rounded": "12px",
+      "padding": "24px 30px"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "#1d1e1e"
+    },
+    {
+      "key": "radio-2",
+      "kind": "radio",
+      "backgroundColor": "#f6f7f9",
+      "textColor": "#1d1e1e",
+      "rounded": "15px",
+      "padding": "5px 18px",
+      "border": "1px solid #f6f7f9"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "textColor": "#fa2c19"
+    },
+    {
+      "key": "dialog",
+      "kind": "modal",
+      "textColor": "rgb(38, 38, 38)"
+    },
+    {
+      "key": "nut-video-play-btn",
+      "kind": "button",
+      "backgroundColor": "#00000073",
+      "textColor": "#fff",
+      "rounded": "20%",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "pagination-prev",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "rounded": "2px",
+      "padding": "0 11px",
+      "border": "1px solid #e4e7eb"
+    },
+    {
+      "key": "pagination-item-2",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "rounded": "2px",
+      "border": "1px solid #e4e7eb"
+    },
+    {
+      "key": "pagination-next-3",
+      "kind": "nav",
+      "backgroundColor": "#fff",
+      "rounded": "2px",
+      "padding": "0 11px",
+      "border": "1px solid #e4e7eb"
+    },
+    {
+      "key": "checkbox-2",
+      "kind": "checkbox",
+      "textColor": "#1d1e1e"
+    },
+    {
+      "key": "dialog-2",
+      "kind": "modal",
+      "textColor": "#808080"
+    },
+    {
+      "key": "nut-sku-operate-btn-2",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "padding": "0 18px"
+    },
+    {
+      "key": "checkbox-3",
+      "kind": "checkbox",
+      "backgroundColor": "#f6f7f9",
+      "textColor": "#1d1e1e",
+      "rounded": "15px",
+      "padding": "5px 18px",
+      "border": "1px solid #f6f7f9"
+    },
+    {
+      "key": "nut-sku-operate-btn-item-3",
+      "kind": "button",
+      "textColor": "#fff",
+      "rounded": "21px"
+    },
+    {
+      "key": "nut-circle-progress",
+      "kind": "progress",
+      "textColor": "#000000"
+    },
+    {
+      "key": "nut-sku-select-item-skus-sku",
+      "kind": "select",
+      "backgroundColor": "rgb(242, 242, 242)",
+      "rounded": "15px",
+      "padding": "0 18px",
+      "border": "1px solid rgb(242,242,242)"
+    },
+    {
+      "key": "avatar-cropper",
+      "kind": "avatar",
+      "backgroundColor": "#0000004d",
+      "textColor": "#fff"
+    },
+    {
+      "key": "nut-time-select-2",
+      "kind": "select",
+      "backgroundColor": "#f6f7f9"
+    },
+    {
+      "key": "nut-tour-content-bottom-operate-btn-4",
+      "kind": "button",
+      "textColor": "#808080",
+      "rounded": "4px",
+      "padding": "2px 4px",
+      "border": "1px solid #cccccc"
+    },
+    {
+      "key": "tag-danger",
+      "kind": "badge",
+      "textColor": "#ffffff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "tag-default",
+      "kind": "badge",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "tag-primary",
+      "kind": "badge",
+      "backgroundColor": "#3460fa",
+      "textColor": "#ffffff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "tag-success",
+      "kind": "badge",
+      "backgroundColor": "#4fc08d",
+      "textColor": "#ffffff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "radio-disabled",
+      "kind": "radio",
+      "textColor": "#999"
+    },
+    {
+      "key": "button-danger",
+      "kind": "button",
+      "backgroundColor": "rgb(250, 44, 25)",
+      "border": "1px solid rgba(0,0,0,0)"
+    },
+    {
+      "key": "button-default",
+      "kind": "button",
+      "textColor": "rgb(102, 102, 102)",
+      "border": "1px solid rgb(204, 204, 204)"
+    },
+    {
+      "key": "radio-active",
+      "kind": "radio",
+      "backgroundColor": "rgba(0,0,0,0)"
+    },
+    {
+      "key": "nut-sku-operate-btn",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "padding": "0 18px"
+    },
+    {
+      "key": "nut-sku-operate-btn-item-2",
+      "kind": "button",
+      "textColor": "#fff",
+      "rounded": "21px"
+    },
+    {
+      "key": "popover-content-bg",
+      "kind": "modal",
+      "backgroundColor": "rgba(0,0,0,0)"
+    },
+    {
+      "key": "nut-tour-content-bottom-operate-btn",
+      "kind": "button",
+      "textColor": "#808080",
+      "rounded": "4px",
+      "padding": "2px 4px",
+      "border": "1px solid #cccccc"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgba(245, 245, 245, 1)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**NutUI** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#f82c45` brand accent.\n\nTypography centers cleanly on `System UI` (30px display down to 14px body), unified by `21px` base corner radius and stepped `#fff` -> `rgba(245, 245, 245, 1)` surface layering.\n\nMaintained by **JD.com**. Source: published token package, package `@nutui/nutui`. Inventory: **91** colors, **153** typography steps, and **40** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 40 component tokens with documented paddings: `10px 25px`, `24px 20px`, `24px 30px`, `5px 18px`, `0`.\n- **Hierarchy**: Group controls cleanly within `rgba(245, 245, 245, 1)` cards; separate sibling sections using `rgba(204, 204, 204, 1)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `rgba(245, 245, 245, 1)`) and `1px solid rgba(204, 204, 204, 1)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#f82c45` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#808080` secondary labels.\n- Use `#f82c45` with `#f7f7f8` text (3.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `21px` base geometry across inputs and buttons (21px on outer containers).\n- Separate containers via `rgba(245, 245, 245, 1)` surface shifts and `rgba(204, 204, 204, 1)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `21px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

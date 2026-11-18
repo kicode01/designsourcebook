@@ -1,0 +1,487 @@
+{
+  "canvas": "#303030",
+  "surface": "#181818",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#da291c",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "{rounded.none}",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#da291c"
+    },
+    {
+      "name": "primary-active",
+      "value": "#b01e0a"
+    },
+    {
+      "name": "primary-hover",
+      "value": "#9d2211"
+    },
+    {
+      "name": "ink",
+      "value": "#ffffff"
+    },
+    {
+      "name": "body",
+      "value": "#969696"
+    },
+    {
+      "name": "body-strong",
+      "value": "#ffffff"
+    },
+    {
+      "name": "body-on-light",
+      "value": "#181818"
+    },
+    {
+      "name": "muted",
+      "value": "#666666"
+    },
+    {
+      "name": "muted-soft",
+      "value": "#8f8f8f"
+    },
+    {
+      "name": "hairline",
+      "value": "#303030"
+    },
+    {
+      "name": "hairline-on-light",
+      "value": "#d2d2d2"
+    },
+    {
+      "name": "hairline-soft",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "canvas",
+      "value": "#181818"
+    },
+    {
+      "name": "canvas-elevated",
+      "value": "#303030"
+    },
+    {
+      "name": "canvas-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-card",
+      "value": "#303030"
+    },
+    {
+      "name": "surface-soft-light",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "surface-strong-light",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "on-light",
+      "value": "#181818"
+    },
+    {
+      "name": "accent-yellow-hypersail",
+      "value": "#fff200"
+    },
+    {
+      "name": "accent-yellow",
+      "value": "#f6e500"
+    },
+    {
+      "name": "semantic-info",
+      "value": "#4c98b9"
+    },
+    {
+      "name": "semantic-success",
+      "value": "#03904a"
+    },
+    {
+      "name": "semantic-warning",
+      "value": "#f13a2c"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-mega",
+      "fontFamily": "'FerrariSans', -apple-system, system-ui, sans-serif",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 500,
+      "lineHeight": 1.05,
+      "letterSpacing": "-1.6px"
+    },
+    {
+      "name": "number-display",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "80px",
+      "px": 80,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "-1.6px"
+    },
+    {
+      "name": "display-xl",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "56px",
+      "px": 56,
+      "fontWeight": 500,
+      "lineHeight": 1.1,
+      "letterSpacing": "-1.12px"
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.36px"
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "26px",
+      "px": 26,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.195px"
+    },
+    {
+      "name": "title-md",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    {
+      "name": "title-sm",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.08px"
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "letterSpacing": "1.4px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "0.65px"
+    },
+    {
+      "name": "caption",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption-uppercase",
+      "fontFamily": "'FerrariSans', sans-serif",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 600,
+      "lineHeight": 1.4,
+      "letterSpacing": "1.1px"
+    }
+  ],
+  "components": [
+    {
+      "key": "top-nav-on-dark",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "top-nav-on-light",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.body-on-light}"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "14px 32px"
+    },
+    {
+      "key": "button-primary-active",
+      "kind": "button",
+      "backgroundColor": "{colors.primary-active}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "button-outline-on-dark",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "13px 31px"
+    },
+    {
+      "key": "button-outline-on-light",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.body-on-light}",
+      "rounded": "{rounded.none}",
+      "padding": "13px 31px"
+    },
+    {
+      "key": "button-tertiary-text",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.ink}"
+    },
+    {
+      "key": "hero-band-cinema",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": 0
+    },
+    {
+      "key": "hero-band-light",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.body-on-light}",
+      "padding": "96px"
+    },
+    {
+      "key": "feature-card-photo",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": 0
+    },
+    {
+      "key": "feature-card-light",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.body-on-light}",
+      "rounded": "{rounded.none}",
+      "padding": "32px"
+    },
+    {
+      "key": "livery-band",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.ink}",
+      "padding": "96px"
+    },
+    {
+      "key": "preowned-listing-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.body-on-light}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "spec-cell",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.ink}",
+      "padding": "24px 0"
+    },
+    {
+      "key": "race-position-cell",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.primary}"
+    },
+    {
+      "key": "race-calendar-row",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.ink}",
+      "padding": "16px 0"
+    },
+    {
+      "key": "driver-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-elevated}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "text-input-on-dark",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "14px 16px"
+    },
+    {
+      "key": "text-input-on-light",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.body-on-light}",
+      "rounded": "{rounded.sm}",
+      "padding": "14px 16px"
+    },
+    {
+      "key": "badge-pill",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas-elevated}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "4px 12px"
+    },
+    {
+      "key": "cta-band-dark",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.ink}",
+      "padding": "96px"
+    },
+    {
+      "key": "newsletter-input-band",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas-elevated}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "32px"
+    },
+    {
+      "key": "footer-dark",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.body}",
+      "padding": "64px 48px"
+    },
+    {
+      "key": "footer-link",
+      "kind": "link",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.body}"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#181818",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#da291c",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#da291c",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#181818",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#181818",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#303030",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#303030",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#181818",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Ferrari's marketing site reads as cinematic editorial — closer to a luxury-magazine spread than a typical car-OEM site. The base canvas is **near-black** (`{colors.canvas}` — #181818) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables, dealer surfaces). The single brand voltage is **Rosso Corsa** (`{colors.primary}` — #da291c), the iconic Ferrari racing red, used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights.\r\n\r\nType runs **FerrariSans** as the single sans family at modest weights — display 500, body 400. CTA labels render in uppercase with generous tracking (1.1-1.4px). The brand never uses bold display copy.\r\n\r\nThe brand's strongest visual signature is the **full-bleed cinematic hero photograph** — top-of-page imagery shows car photography, model details, or trackside livery without any chrome competing with it. Headlines float over the bottom of the photo or sit in a tight band beneath. Spacing follows the explicit 8px token ladder: `xxxs` 4 / `xxs` 8 / `xs` 16 / `sm` 24 / `md` 32 / `lg` 48 / `xl` 64 / `xxl` 96 / `super` 128.\r\n\r\n**Key Characteristics:**\r\n- Single accent: `{colors.primary}` (Rosso Corsa #da291c) for primary CTAs, the Cavallino, F1 race-position highlights. Used scarcely.\r\n- Near-black canvas (#181818) — never pure black. White-canvas bands only inside editorial contexts.\r\n- Single sans family: FerrariSans across every text role.\r\n- Display weight stays at 500 — never bold.\r\n- CTA labels render uppercase with 1.4px tracking.\r\n- Sharp `{rounded.none}` (0px) corners on every CTA, card, and band — luxury-automotive precision.\r\n- Full-bleed cinematic hero photography is the page chrome.\r\n- Explicit 8px spacing token ladder with named scale (xxxs through super).\r\n- Hairlines + photographic depth — no drop shadow tiers.\n\n### Layout & Spacing\n### Spacing System\r\n- **Base unit:** 4px.\r\n- **Tokens:** `{spacing.xxxs}` 4px · `{spacing.xxs}` 8px · `{spacing.xs}` 16px · `{spacing.sm}` 24px · `{spacing.md}` 32px · `{spacing.lg}` 48px · `{spacing.xl}` 64px · `{spacing.xxl}` 96px · `{spacing.super}` 128px.\r\n- **Section padding:** `{spacing.xxl}` (96px) for major bands; `{spacing.super}` (128px) reserved for hero band depth.\r\n\r\n### Grid & Container\r\n- Max content width: ~1280px on editorial bands. Hero photography goes full-bleed.\r\n- Editorial body: 12-column grid.\r\n- Feature card grids: 2-up at desktop for hero splits, 3-up for benefit grids, 4-up for preowned listing tiles.\r\n- Footer: 5-column at desktop.\r\n\r\n### Whitespace Philosophy\r\nGenerous editorial pacing. Cinematic hero photography occupies generous viewport real-estate; body sections sit in tighter editorial layouts beneath. The canvas-light editorial bands (preowned, pricing) carry tighter density than the dark cinema bands.",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` (Rosso Corsa) for primary CTAs, the Cavallino mark, and F1 race-position highlights.\r\n- Set every CTA at `{rounded.none}` (0px sharp corners) — the brand's signature precision.\r\n- Render CTA labels in uppercase with 1.4px tracking via `{typography.button}`.\r\n- Pair every hero with a full-bleed cinematic photograph — the photograph IS the depth.\r\n- Use the explicit 8px spacing ladder (`xxxs` through `super`) rather than ad-hoc px values.\r\n- Keep display weight at 500 — never bold.\r\n\r\n### Don't\r\n- Don't introduce a saturated brand color other than Rosso Corsa.\r\n- Don't use rounded or pill CTAs — sharp 0px corners are the brand button.\r\n- Don't bold display copy. The cinematic photography does the visual heavy-lifting.\r\n- Don't use Hypersail yellow outside the Hypersail sailing program context.\r\n- Don't use pure black canvas. The brand canvas is `{colors.canvas}` (#181818) — slightly warm.\r\n- Don't add drop shadow tiers. Photography + brightness-step elevation carry the depth.\r\n- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA color is what appears on actual product CTAs, not on injected modals."
+}

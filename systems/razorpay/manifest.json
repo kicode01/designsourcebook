@@ -1,0 +1,41 @@
+{
+  "name": "razorpay",
+  "displayName": "Blade",
+  "description": "Razorpay Blade — tokens read from https://github.com/razorpay/blade.",
+  "style": "Razorpay Blade — tokens read from https://github.com/razorpay/blade.",
+  "category": "Razorpay",
+  "org": "Razorpay",
+  "theme": "light",
+  "tags": [
+    "published",
+    "razorpay",
+    "light"
+  ],
+  "homepage": "https://github.com/razorpay/blade",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/razorpay/blade — 8 token files, 456 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/razorpay/blade"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 90,
+    "typography": 22,
+    "components": 13
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

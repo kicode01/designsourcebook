@@ -1,0 +1,1297 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#6acb75",
+  "border": "rgb(216, 216, 216)",
+  "radius": ".25rem",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "rc-focus-color",
+      "value": "#08f"
+    },
+    {
+      "name": "theme-hover-background-color",
+      "value": "rgb(241, 241, 241)"
+    },
+    {
+      "name": "color-success-active",
+      "value": "#0f5200"
+    },
+    {
+      "name": "f-theme-settings-button-secondary-border-color",
+      "value": "rgb(216, 216, 216)"
+    },
+    {
+      "name": "color-primary-default",
+      "value": "#111110"
+    },
+    {
+      "name": "f-theme-settings-button-secondary-border-color-hover",
+      "value": "rgb(155, 155, 155)"
+    },
+    {
+      "name": "color-neutral-75",
+      "value": "#575753"
+    },
+    {
+      "name": "f-theme-settings-button-secondary-color",
+      "value": "rgb(22, 23, 24)"
+    },
+    {
+      "name": "color-disabled-on-disabled",
+      "value": "#f5f5f1"
+    },
+    {
+      "name": "color-error-50",
+      "value": "#ec603e"
+    },
+    {
+      "name": "color-neutral-100",
+      "value": "#000"
+    },
+    {
+      "name": "f-theme-settings-button-secondary-background-color",
+      "value": "rgb(241, 241, 241)"
+    },
+    {
+      "name": "color-charts-primary-default",
+      "value": "#6acb75"
+    },
+    {
+      "name": "color-neutral-45",
+      "value": "#b2b2ac"
+    },
+    {
+      "name": "color-disabled-default",
+      "value": "#bfbfb8"
+    },
+    {
+      "name": "color-charts-secondary-default",
+      "value": "#d59bff"
+    },
+    {
+      "name": "color-error-25",
+      "value": "#fbc1bf"
+    },
+    {
+      "name": "color-warning-active",
+      "value": "#78350f"
+    },
+    {
+      "name": "color-surface-active",
+      "value": "#eaeae4"
+    },
+    {
+      "name": "f-theme-settings-button-primary-background-color-hov",
+      "value": "rgb(168, 255, 204)"
+    },
+    {
+      "name": "color-neutral-85",
+      "value": "#353533"
+    },
+    {
+      "name": "color-focus-default",
+      "value": "#4196fb"
+    },
+    {
+      "name": "fc-secondary-base-color",
+      "value": "#d59bff"
+    },
+    {
+      "name": "color-success-50",
+      "value": "#1eab00"
+    },
+    {
+      "name": "color-primary-on-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "color-error-100",
+      "value": "#000"
+    },
+    {
+      "name": "f-theme-settings-button-primary-color-hover",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "f-theme-settings-button-tertiary-background-color-ho",
+      "value": "rgb(241, 242, 242)"
+    },
+    {
+      "name": "color-warning-00",
+      "value": "#fff"
+    },
+    {
+      "name": "f-theme-settings-accent-color-warning-color",
+      "value": "rgb(232, 43, 55)"
+    },
+    {
+      "name": "color-warning-40",
+      "value": "#fab815"
+    },
+    {
+      "name": "color-surface-default",
+      "value": "#fff"
+    },
+    {
+      "name": "color-container-warning-on-warning-container",
+      "value": "#482909"
+    },
+    {
+      "name": "color-warning-10",
+      "value": "#ffefbc"
+    },
+    {
+      "name": "color-neutral-10",
+      "value": "#f5f5f1"
+    },
+    {
+      "name": "color-warning-hover",
+      "value": "#92400e"
+    },
+    {
+      "name": "color-success-40",
+      "value": "#76dd64"
+    },
+    {
+      "name": "color-neutral-40",
+      "value": "#bfbfb8"
+    },
+    {
+      "name": "fc-primary-base-color",
+      "value": "#6acb75"
+    },
+    {
+      "name": "color-error-40",
+      "value": "#f17b60"
+    },
+    {
+      "name": "color-secondary-active",
+      "value": "#353533"
+    },
+    {
+      "name": "color-container-secondary-active",
+      "value": "#bfbfb8"
+    },
+    {
+      "name": "color-container-success-hover",
+      "value": "#c5f2c1"
+    },
+    {
+      "name": "f-theme-settings-button-secondary-background-color-h",
+      "value": "rgb(91, 103, 104)"
+    },
+    {
+      "name": "color-error-20",
+      "value": "#fcd1d0"
+    },
+    {
+      "name": "color-warning-on-warning",
+      "value": "#fff"
+    },
+    {
+      "name": "color-neutral-05",
+      "value": "#f8f8f5"
+    },
+    {
+      "name": "color-neutral-60",
+      "value": "#878781"
+    },
+    {
+      "name": "color-success-05",
+      "value": "#e0f7df"
+    },
+    {
+      "name": "color-error-90",
+      "value": "#460a00"
+    },
+    {
+      "name": "color-warning-default",
+      "value": "#b45309"
+    },
+    {
+      "name": "color-container-success-active",
+      "value": "#e0f7df"
+    },
+    {
+      "name": "color-container-error-hover",
+      "value": "#fbc1bf"
+    },
+    {
+      "name": "color-neutral-90",
+      "value": "#242422"
+    },
+    {
+      "name": "color-container-disabled-default",
+      "value": "#f5f5f1"
+    },
+    {
+      "name": "color-container-secondary-on-secondary-container-var",
+      "value": "#575753"
+    },
+    {
+      "name": "color-error-on-error",
+      "value": "#fff"
+    },
+    {
+      "name": "f-theme-settings-accent-color-tip-color",
+      "value": "rgb(120, 250, 174)"
+    },
+    {
+      "name": "color-warning-05",
+      "value": "#fff5d1"
+    },
+    {
+      "name": "color-neutral-50",
+      "value": "#a4a49e"
+    },
+    {
+      "name": "color-secondary-on-secondary",
+      "value": "#fff"
+    },
+    {
+      "name": "color-error-75",
+      "value": "#961b12"
+    },
+    {
+      "name": "color-container-secondary-hover",
+      "value": "#d7d7d0"
+    },
+    {
+      "name": "color-container-warning-active",
+      "value": "#ffefbc"
+    },
+    {
+      "name": "color-container-warning-hover",
+      "value": "#ffe9a3"
+    },
+    {
+      "name": "color-warning-100",
+      "value": "#000"
+    },
+    {
+      "name": "color-error-10",
+      "value": "#fddbda"
+    },
+    {
+      "name": "fc-secondary-hover-color",
+      "value": "#e5b3ff"
+    },
+    {
+      "name": "color-secondary-default",
+      "value": "#676763"
+    },
+    {
+      "name": "tw-ring-offset-color",
+      "value": "#fff"
+    },
+    {
+      "name": "f-theme-settings-heading2-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "f-theme-settings-heading4-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "f-theme-settings-custom2-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "f-theme-settings-body-color",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "theme-hover-color",
+      "value": "rgb(22, 23, 24)"
+    },
+    {
+      "name": "color-container-highlight-default",
+      "value": "#f5ccff"
+    },
+    {
+      "name": "color-marker-75",
+      "value": "#770a95"
+    },
+    {
+      "name": "color-marker-00",
+      "value": "#fff"
+    },
+    {
+      "name": "color-charts-dim-default",
+      "value": "#f8f8f5"
+    },
+    {
+      "name": "fc-negative-base-color",
+      "value": "#de2417"
+    },
+    {
+      "name": "fc-base-color",
+      "value": "#fff"
+    },
+    {
+      "name": "f-theme-settings-quote-color",
+      "value": "rgb(96, 102, 108)"
+    },
+    {
+      "name": "color-highlight-on-highlight",
+      "value": "#fff"
+    },
+    {
+      "name": "color-marker-95",
+      "value": "#1e002a"
+    },
+    {
+      "name": "fc-font-color-default",
+      "value": "#111110"
+    },
+    {
+      "name": "color-marker-50",
+      "value": "#d230fa"
+    },
+    {
+      "name": "color-container-highlight-active",
+      "value": "#eca1fe"
+    },
+    {
+      "name": "color-charts-tertiary-hover",
+      "value": "#f1bc57"
+    },
+    {
+      "name": "color-highlight-hover",
+      "value": "#880aab"
+    },
+    {
+      "name": "f-theme-settings-button-tertiary-color",
+      "value": "rgb(22, 23, 24)"
+    },
+    {
+      "name": "primary",
+      "value": "#6acb75"
+    }
+  ],
+  "type": [
+    {
+      "name": "f-theme-settings-custom1-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "64px",
+      "px": 64
+    },
+    {
+      "name": "text-display-xx-large-light-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.875rem",
+      "px": 46
+    },
+    {
+      "name": "typography-font-size-xxxxx-large",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.875rem",
+      "px": 46
+    },
+    {
+      "name": "text-display-xx-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.875rem",
+      "px": 46
+    },
+    {
+      "name": "text-display-x-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "typography-font-size-xxxx-large",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "text-display-x-large-light-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "f-theme-settings-heading1-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "38px",
+      "px": 38
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "38px",
+      "px": 38,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "typography-font-size-xxx-large",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "text-display-large-light-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "text-display-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "f-theme-settings-heading2-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "f-theme-settings-custom3-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "26px",
+      "px": 26
+    },
+    {
+      "name": "f-theme-settings-quote-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "text-heading-xx-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "text-display-medium-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "text-display-medium-light-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typography-font-size-xx-large",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "text-heading-xx-large-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "f-theme-settings-heading3-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "23px",
+      "px": 23
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "23px",
+      "px": 23,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "f-theme-settings-heading4-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 700,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "text-heading-x-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "text-heading-x-large-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "typography-font-size-x-large",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "o-library-document-category-title",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "f-theme-settings-body-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-link-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-heading1-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-heading2-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-heading3-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-heading4-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-custom1-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-custom2-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-custom3-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-body-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-link-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-quote-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "cm-setting-typostyle-preview-body",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 100,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "cm-setting-typostyle-preview-image-title",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 700,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "cm-setting-typostyle-preview-image-caption",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 100,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "m-navdocuments-mobile-category-title",
+      "fontFamily": "\"SKODA Next\", \"Space Grotesk Frontify\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16,
+      "fontWeight": 700
+    },
+    {
+      "name": "typography-font-size-large",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "text-heading-large-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "text-body-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-image-title-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-image-caption-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "text-body-large-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "text-body-large-x-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "text-heading-large-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "text-heading-category-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-large-x-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-large-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-x-small-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-medium-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-xx-large-default-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-xx-large-light-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-x-small-x-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-large-default-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-medium-light-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "fc-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-large-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-button-tertiary-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-image-caption-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-small-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-medium-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-category-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-small-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-medium-x-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-medium-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-medium-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-x-large-default-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-button-primary-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "typography-font-family-monospace",
+      "fontFamily": "Menlo, Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "text-body-large-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "typography-font-family-display",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-large-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-x-large-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-x-large-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-large-light-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-xx-large-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-main-font-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-image-title-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-medium-default-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-small-x-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-heading-xx-large-default-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "typography-font-family-primary",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-body-x-small-strong-font-family",
+      "fontFamily": "Diatype, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "text-display-x-large-light-font-family",
+      "fontFamily": "Cranny, Geist, Arial, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "f-theme-settings-button-secondary-font-family",
+      "fontFamily": "\"SKODA Next\"",
+      "px": 16
+    },
+    {
+      "name": "theme-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "theme-hover-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "theme-active-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-heading-medium-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "text-body-medium-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "text-heading-medium-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "typography-font-size-medium",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "text-body-medium-x-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "f-theme-settings-button-secondary-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-body-medium-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".875rem",
+      "px": 14
+    },
+    {
+      "name": "f-theme-settings-button-primary-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "text-body-small-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "f-theme-settings-button-tertiary-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "typography-font-size-small",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "text-body-small-x-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "text-body-small-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".8125rem",
+      "px": 13
+    },
+    {
+      "name": "f-theme-settings-custom2-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "typography-font-size-x-small",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "text-body-x-small-x-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "text-body-x-small-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "text-body-x-small-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".75rem",
+      "px": 12
+    },
+    {
+      "name": "text-heading-category-strong-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".6875rem",
+      "px": 11
+    },
+    {
+      "name": "text-heading-category-default-font-size",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".6875rem",
+      "px": 11
+    },
+    {
+      "name": "typography-font-size-xx-small",
+      "fontFamily": "\"SKODA Next\"",
+      "fontSize": ".6875rem",
+      "px": 11
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "#e1e1db",
+      "textColor": "#111110",
+      "rounded": ".25rem",
+      "padding": "7px 16px",
+      "border": "none"
+    },
+    {
+      "key": "btn-2",
+      "kind": "button",
+      "textColor": "#fffc",
+      "rounded": ".25rem",
+      "padding": "5px 15px",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "btn-3",
+      "kind": "button",
+      "backgroundColor": "#0000",
+      "rounded": ".25rem",
+      "padding": "6px 16px",
+      "border": "1px solid #0000"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#04546e"
+    },
+    {
+      "key": "link-2",
+      "kind": "link",
+      "textColor": "#111110"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": ".25rem",
+      "border": "1px solid #87878133"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#111110"
+    },
+    {
+      "key": "tooltip",
+      "kind": "tooltip",
+      "backgroundColor": "#333",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "padding": "10px"
+    },
+    {
+      "key": "table-2",
+      "kind": "table",
+      "textColor": "#111110",
+      "rounded": ".25rem",
+      "border": "1px solid #87878133"
+    },
+    {
+      "key": "avatar",
+      "kind": "avatar",
+      "backgroundColor": "#fff3",
+      "rounded": "50%",
+      "shadow": "inset 0 0 0 1px #0000001a"
+    },
+    {
+      "key": "banner",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "rounded": ".25rem",
+      "shadow": "0 3px 10px 0 #2d32321a"
+    },
+    {
+      "key": "label",
+      "kind": "label",
+      "backgroundColor": "#fff",
+      "padding": "5px 3px"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "#f8f8f8",
+      "rounded": "50%"
+    },
+    {
+      "key": "btn-danger-4",
+      "kind": "button",
+      "backgroundColor": "#1290d3",
+      "textColor": "#fff",
+      "rounded": ".25rem"
+    },
+    {
+      "key": "table-row-3",
+      "kind": "table",
+      "textColor": "#676763"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#000"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "textColor": "#676763",
+      "padding": "0 16px"
+    },
+    {
+      "key": "select-list",
+      "kind": "select",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "cm-filter-tag",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#858b92",
+      "border": "1px solid #e1e1db"
+    },
+    {
+      "key": "modal-2",
+      "kind": "modal",
+      "textColor": "#858b92"
+    },
+    {
+      "key": "icon-color-info",
+      "kind": "icon",
+      "textColor": "#b45309"
+    },
+    {
+      "key": "modal-3",
+      "kind": "modal",
+      "backgroundColor": "#fffc",
+      "textColor": "#000c",
+      "rounded": "50%",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "backgroundColor": "#fff",
+      "rounded": "50%",
+      "border": "2px solid #e1e1db"
+    },
+    {
+      "key": "progress-2",
+      "kind": "progress",
+      "textColor": "#898989"
+    },
+    {
+      "key": "icon-color-danger-2",
+      "kind": "icon",
+      "textColor": "#de2417"
+    },
+    {
+      "key": "banner-2",
+      "kind": "alert",
+      "textColor": "#111110",
+      "padding": ".75rem 1rem",
+      "border": "none"
+    },
+    {
+      "key": "icon-color-success-3",
+      "kind": "icon",
+      "textColor": "#168500"
+    },
+    {
+      "key": "banner-3",
+      "kind": "alert",
+      "textColor": "#111110"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "backgroundColor": "#fff",
+      "textColor": "#fff",
+      "rounded": ".25rem",
+      "padding": "1px",
+      "border": "2px solid #d8d9db"
+    },
+    {
+      "key": "avatar-2",
+      "kind": "avatar",
+      "textColor": "#9a9ea4"
+    },
+    {
+      "key": "select-list-2",
+      "kind": "select",
+      "textColor": "#111110",
+      "rounded": ".25rem",
+      "padding": ".5rem 1rem"
+    },
+    {
+      "key": "select-list-3",
+      "kind": "select",
+      "textColor": "#676763",
+      "padding": "1rem .75rem"
+    },
+    {
+      "key": "link-actions-3",
+      "kind": "link",
+      "textColor": "#b60ae3",
+      "border": "0"
+    },
+    {
+      "key": "cm-filter-tag-2",
+      "kind": "badge",
+      "backgroundColor": "#d7d8db",
+      "padding": "2px 4px 0 2px",
+      "border": "none"
+    },
+    {
+      "key": "avatar-simple-3",
+      "kind": "avatar",
+      "backgroundColor": "#fff",
+      "rounded": "2px",
+      "shadow": "0 25px 80px 0 #2d323266"
+    },
+    {
+      "key": "tabs-2",
+      "kind": "tabs",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#6acb75",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Flow** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#6acb75` brand accent.\n\nTypography centers cleanly on `SKODA Next` (64px display down to 20px body), unified by `.25rem` base corner radius and subtle shadow elevation.\n\nMaintained by **Skoda**. Source: live stylesheet extraction (https://flow.skoda-brand.com/d/6aQMrmD6PhWL). Inventory: **91** colors, **117** typography steps, and **37** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 37 component tokens with documented paddings: `7px 16px`, `5px 15px`, `6px 16px`, `10px`, `5px 3px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `rgb(216, 216, 216)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`inset 0 0 0 1px #0000001a`, `0 3px 10px 0 #2d32321a`) paired with `rgb(216, 216, 216)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#6acb75` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#6acb75` with `#0b0b0c` text (9.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `SKODA Next` headings with `SKODA Next` body copy using documented weights and scale steps.\n- Apply `.25rem` base geometry across inputs and buttons (.25rem on outer containers).\n- Separate containers via `#fff` surface shifts and `rgb(216, 216, 216)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.25rem` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

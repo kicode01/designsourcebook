@@ -1,0 +1,42 @@
+{
+  "name": "ubie",
+  "displayName": "Ubie Design Tokens",
+  "description": "Ubie Design Tokens — tokens imported from @ubie/design-tokens.",
+  "style": "Ubie Design Tokens — tokens imported from @ubie/design-tokens.",
+  "category": "Ubie",
+  "org": "Ubie",
+  "theme": "light",
+  "tags": [
+    "published",
+    "ubie",
+    "light"
+  ],
+  "homepage": "https://github.com/ubie-oss/design-tokens#readme",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @ubie/design-tokens@0.4.3 (2 token files, 234 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@ubie/design-tokens",
+    "version": "0.4.3"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 0,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

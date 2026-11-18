@@ -1,0 +1,455 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#EDF2F5",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#00C18C",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-link",
+      "value": "#267ABD"
+    },
+    {
+      "name": "color-link-visited",
+      "value": "#7F57B8"
+    },
+    {
+      "name": "color-link-dark-bg",
+      "value": "#ACCCE5"
+    },
+    {
+      "name": "color-disabled",
+      "value": "#C5CACD"
+    },
+    {
+      "name": "color-error-darkest",
+      "value": "#B43931"
+    },
+    {
+      "name": "color-error-darker",
+      "value": "#D5443A"
+    },
+    {
+      "name": "color-error",
+      "value": "#E1483E"
+    },
+    {
+      "name": "color-error-lighter",
+      "value": "#E7564A"
+    },
+    {
+      "name": "color-error-lightest",
+      "value": "#FBECEB"
+    },
+    {
+      "name": "color-warning-darkest",
+      "value": "#CC900D"
+    },
+    {
+      "name": "color-warning-darker",
+      "value": "#F2AB10"
+    },
+    {
+      "name": "color-warning",
+      "value": "#FFB511"
+    },
+    {
+      "name": "color-warning-lighter",
+      "value": "#FFC314"
+    },
+    {
+      "name": "color-warning-lightest",
+      "value": "#FFF7E7"
+    },
+    {
+      "name": "color-background-darker",
+      "value": "#F2F2F2"
+    },
+    {
+      "name": "color-background",
+      "value": "#F8F8F8"
+    },
+    {
+      "name": "color-secondary-darker",
+      "value": "#E0E5E8"
+    },
+    {
+      "name": "color-secondary",
+      "value": "#EDF2F5"
+    },
+    {
+      "name": "color-secondary-lighter",
+      "value": "#F6F8FA"
+    },
+    {
+      "name": "color-black",
+      "value": "#292E31"
+    },
+    {
+      "name": "color-gray-dark",
+      "value": "#505558"
+    },
+    {
+      "name": "color-gray",
+      "value": "#777C7F"
+    },
+    {
+      "name": "color-gray-light",
+      "value": "#9EA3A6"
+    },
+    {
+      "name": "color-gray-lighter",
+      "value": "#C5CACD"
+    },
+    {
+      "name": "color-gray-lightest",
+      "value": "#EDF2F5"
+    },
+    {
+      "name": "color-white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "color-blaw-blue",
+      "value": "#0D9DDB"
+    },
+    {
+      "name": "color-btax-blue",
+      "value": "#2785D6"
+    },
+    {
+      "name": "color-theme-antitrust",
+      "value": "#57534A"
+    },
+    {
+      "name": "color-theme-banking",
+      "value": "#379851"
+    },
+    {
+      "name": "color-theme-bankruptcy",
+      "value": "#C52700"
+    },
+    {
+      "name": "color-theme-benefits",
+      "value": "#EA6A02"
+    },
+    {
+      "name": "color-theme-corporate",
+      "value": "#8A5BB6"
+    },
+    {
+      "name": "color-theme-ediscovery",
+      "value": "#F64A56"
+    },
+    {
+      "name": "color-theme-environment",
+      "value": "#6DC470"
+    },
+    {
+      "name": "color-theme-health",
+      "value": "#0D3B91"
+    },
+    {
+      "name": "color-theme-ip",
+      "value": "#1E95C1"
+    },
+    {
+      "name": "color-theme-labor",
+      "value": "#00C18C"
+    },
+    {
+      "name": "color-theme-securities",
+      "value": "#45BDE9"
+    },
+    {
+      "name": "color-theme-telecom",
+      "value": "#6A8C8A"
+    },
+    {
+      "name": "color-action-darkest",
+      "value": "#30855C"
+    },
+    {
+      "name": "color-action-darker",
+      "value": "#399E6E"
+    },
+    {
+      "name": "color-action",
+      "value": "#3DA774"
+    },
+    {
+      "name": "color-action-lighter",
+      "value": "#49B88B"
+    },
+    {
+      "name": "color-action-lightest",
+      "value": "#EBF6F1"
+    },
+    {
+      "name": "color-selected-darkest",
+      "value": "#0A7DAF"
+    },
+    {
+      "name": "color-selected-darker",
+      "value": "#0D94CF"
+    },
+    {
+      "name": "color-selected",
+      "value": "#0D9DDB"
+    },
+    {
+      "name": "color-selected-lighter",
+      "value": "#0FB0E2"
+    },
+    {
+      "name": "color-selected-lightest",
+      "value": "#E7F5FB"
+    },
+    {
+      "name": "color-dataviz-1",
+      "value": "#63B995"
+    },
+    {
+      "name": "color-dataviz-2",
+      "value": "#1E4882"
+    },
+    {
+      "name": "color-dataviz-3",
+      "value": "#F87060"
+    },
+    {
+      "name": "color-dataviz-4",
+      "value": "#1AA2AF"
+    },
+    {
+      "name": "color-dataviz-5",
+      "value": "#FFB511"
+    },
+    {
+      "name": "color-dataviz-6",
+      "value": "#9357C8"
+    },
+    {
+      "name": "color-dataviz-7",
+      "value": "#F697C0"
+    },
+    {
+      "name": "color-dataviz-8",
+      "value": "#2ECC71"
+    },
+    {
+      "name": "color-dataviz-9",
+      "value": "#34495E"
+    },
+    {
+      "name": "color-dataviz-10",
+      "value": "#FF6D10"
+    },
+    {
+      "name": "color-dataviz-positive",
+      "value": "#2ECC71"
+    },
+    {
+      "name": "color-dataviz-negative",
+      "value": "#F87060"
+    },
+    {
+      "name": "color-democrat",
+      "value": "#0A54C2"
+    },
+    {
+      "name": "color-republican",
+      "value": "#D3301A"
+    },
+    {
+      "name": "color-independent",
+      "value": "#FFB00D"
+    },
+    {
+      "name": "color-notification-1",
+      "value": "#EA60A7"
+    },
+    {
+      "name": "color-notification-2",
+      "value": "#FFB511"
+    },
+    {
+      "name": "color-notification-3",
+      "value": "#0D9DDB"
+    },
+    {
+      "name": "color-highlight-1",
+      "value": "#FFF8B0"
+    },
+    {
+      "name": "color-highlight-2",
+      "value": "#E3F7FF"
+    },
+    {
+      "name": "color-highlight-3",
+      "value": "#E0FFE0"
+    },
+    {
+      "name": "color-bna-blue",
+      "value": "#17509F"
+    },
+    {
+      "name": "color-btax-orange",
+      "value": "#EA7815"
+    },
+    {
+      "name": "color-bgov-navy",
+      "value": "#0018AB"
+    },
+    {
+      "name": "color-bgov-purple",
+      "value": "#9933CC"
+    },
+    {
+      "name": "color-btax-dark-blue",
+      "value": "#17509F"
+    },
+    {
+      "name": "color-btax-light-blue",
+      "value": "#2785D6"
+    },
+    {
+      "name": "color-notification1",
+      "value": "#EA60A7"
+    },
+    {
+      "name": "color-notification2",
+      "value": "#FFB511"
+    },
+    {
+      "name": "color-notification3",
+      "value": "#0D9DDB"
+    },
+    {
+      "name": "color-highlight1",
+      "value": "#FFF8B0"
+    },
+    {
+      "name": "color-highlight2",
+      "value": "#E3F7FF"
+    },
+    {
+      "name": "color-highlight3",
+      "value": "#E0FFE0"
+    },
+    {
+      "name": "color-dataviz1",
+      "value": "#63B995"
+    },
+    {
+      "name": "color-dataviz2",
+      "value": "#1E4882"
+    },
+    {
+      "name": "color-dataviz3",
+      "value": "#F87060"
+    },
+    {
+      "name": "color-dataviz4",
+      "value": "#1AA2AF"
+    },
+    {
+      "name": "color-dataviz5",
+      "value": "#FFB511"
+    },
+    {
+      "name": "color-dataviz6",
+      "value": "#9357C8"
+    },
+    {
+      "name": "color-dataviz7",
+      "value": "#F697C0"
+    },
+    {
+      "name": "primary",
+      "value": "#00C18C"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#EDF2F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00C18C",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00C18C",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#EDF2F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#EDF2F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#EDF2F5",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Fishtank** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#00C18C` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#EDF2F5` surface layering.\n\nMaintained by **Bloomberg BNA**. Source: published token package, package `@fishtank/colors`. Inventory: **91** colors, **0** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#EDF2F5` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#EDF2F5`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00C18C` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#00C18C` with `#0b0b0c` text (8.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#EDF2F5` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

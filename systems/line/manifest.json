@@ -1,0 +1,41 @@
+{
+  "name": "line",
+  "displayName": "LINE Design System",
+  "description": "LINE Design System — read from the rendered page in a browser, not from published tokens.",
+  "style": "LINE Design System — read from the rendered page in a browser, not from published tokens.",
+  "category": "Line",
+  "org": "Line",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "line",
+    "light"
+  ],
+  "homepage": "https://designsystem.line.me/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://designsystem.line.me/ in headless Chromium on 2026-11-18 (0 custom properties, 58 sampled elements, 1 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: LINE Design System.",
+  "source": {
+    "url": "https://designsystem.line.me/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 63,
+    "typography": 8,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "databricks",
+  "displayName": "Databricks",
+  "description": "Databricks — tokens imported from @databricks/design-system.",
+  "style": "Databricks — tokens imported from @databricks/design-system.",
+  "category": "Databricks",
+  "org": "Databricks",
+  "theme": "light",
+  "tags": [
+    "published",
+    "databricks",
+    "light"
+  ],
+  "homepage": "",
+  "license": "ISC",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @databricks/design-system@2.0.16 (13 token files, 880 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@databricks/design-system",
+    "version": "2.0.16"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 40,
+    "components": 73
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 8,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

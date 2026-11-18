@@ -1,0 +1,42 @@
+{
+  "name": "quasar",
+  "displayName": "Quasar",
+  "description": "Quasar — tokens imported from quasar.",
+  "style": "Quasar — tokens imported from quasar.",
+  "category": "Quasar",
+  "org": "Quasar",
+  "theme": "light",
+  "tags": [
+    "published",
+    "quasar",
+    "light"
+  ],
+  "homepage": "https://quasar.dev",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from quasar@2.35.5 (1 token files, 11 colours harvested, 11 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "quasar",
+    "version": "2.35.5"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 12,
+    "typography": 25,
+    "components": 25
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "matcha",
+  "displayName": "Matcha.css",
+  "description": "Matcha.css — tokens imported from @lowlighter/matcha.",
+  "style": "Matcha.css — tokens imported from @lowlighter/matcha.",
+  "category": "Matcha.css",
+  "org": "Matcha.css",
+  "theme": "light",
+  "tags": [
+    "published",
+    "matcha-css",
+    "light"
+  ],
+  "homepage": "https://github.com/lowlighter/matcha",
+  "license": "MIT License",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @lowlighter/matcha@3.0.1 (1 token files, 58 colours harvested, 54 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@lowlighter/matcha",
+    "version": "3.0.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 55,
+    "typography": 6,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

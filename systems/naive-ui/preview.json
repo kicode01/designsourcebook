@@ -1,0 +1,730 @@
+{
+  "canvas": "#FFF",
+  "surface": "#fff",
+  "text": "rgb(31, 34, 37)",
+  "muted": "rgb(51, 54, 57)",
+  "brand": "#7fe7c4",
+  "border": "rgb(224, 224, 230)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background-color-default",
+      "value": "#FFF"
+    },
+    {
+      "name": "icon-background-color-default",
+      "value": "#FFF"
+    },
+    {
+      "name": "neutral-base",
+      "value": "#000"
+    },
+    {
+      "name": "neutral-invert-base",
+      "value": "#fff"
+    },
+    {
+      "name": "neutral-text-base",
+      "value": "#fff"
+    },
+    {
+      "name": "neutral-popover",
+      "value": "rgb(72, 72, 78)"
+    },
+    {
+      "name": "neutral-card",
+      "value": "rgb(24, 24, 28)"
+    },
+    {
+      "name": "neutral-modal",
+      "value": "rgb(44, 44, 50)"
+    },
+    {
+      "name": "neutral-body",
+      "value": "rgb(16, 16, 20)"
+    },
+    {
+      "name": "primary-hover",
+      "value": "#7fe7c4"
+    },
+    {
+      "name": "primary-default",
+      "value": "#63e2b7"
+    },
+    {
+      "name": "primary-active",
+      "value": "#5acea7"
+    },
+    {
+      "name": "primary-suppl",
+      "value": "rgb(42, 148, 125)"
+    },
+    {
+      "name": "info-hover",
+      "value": "#8acbec"
+    },
+    {
+      "name": "info-default",
+      "value": "#70c0e8"
+    },
+    {
+      "name": "info-active",
+      "value": "#66afd3"
+    },
+    {
+      "name": "info-suppl",
+      "value": "rgb(56, 137, 197)"
+    },
+    {
+      "name": "error-hover",
+      "value": "#e98b8b"
+    },
+    {
+      "name": "error-default",
+      "value": "#e88080"
+    },
+    {
+      "name": "error-active",
+      "value": "#e57272"
+    },
+    {
+      "name": "error-suppl",
+      "value": "rgb(208, 58, 82)"
+    },
+    {
+      "name": "warning-hover",
+      "value": "#f5d599"
+    },
+    {
+      "name": "warning-default",
+      "value": "#f2c97d"
+    },
+    {
+      "name": "warning-active",
+      "value": "#e6c260"
+    },
+    {
+      "name": "warning-suppl",
+      "value": "rgb(240, 138, 0)"
+    },
+    {
+      "name": "success-hover",
+      "value": "#7fe7c4"
+    },
+    {
+      "name": "success-default",
+      "value": "#63e2b7"
+    },
+    {
+      "name": "success-active",
+      "value": "#5acea7"
+    },
+    {
+      "name": "success-suppl",
+      "value": "rgb(42, 148, 125)"
+    },
+    {
+      "name": "text-color1",
+      "value": "rgb(31, 34, 37)"
+    },
+    {
+      "name": "text-color2",
+      "value": "rgb(51, 54, 57)"
+    },
+    {
+      "name": "text-color3",
+      "value": "rgb(118, 124, 130)"
+    },
+    {
+      "name": "border-color",
+      "value": "rgb(224, 224, 230)"
+    },
+    {
+      "name": "input-color-disabled",
+      "value": "rgb(250, 250, 252)"
+    },
+    {
+      "name": "option-text-color-inverted",
+      "value": "#BBB"
+    },
+    {
+      "name": "option-text-color-hover-inverted",
+      "value": "#FFF"
+    },
+    {
+      "name": "option-text-color-active-inverted",
+      "value": "#FFF"
+    },
+    {
+      "name": "option-text-color-child-active-inverted",
+      "value": "#FFF"
+    },
+    {
+      "name": "group-header-text-color-inverted",
+      "value": "#AAA"
+    },
+    {
+      "name": "text-color-inverted",
+      "value": "#FFF"
+    },
+    {
+      "name": "text-color-line-inner",
+      "value": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "text-color-primary",
+      "value": "#fff"
+    },
+    {
+      "name": "000000-ff",
+      "value": "#000000"
+    },
+    {
+      "name": "antiquewhite",
+      "value": "#FAEBD7"
+    },
+    {
+      "name": "azure",
+      "value": "#F0FFFF"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "blueviolet",
+      "value": "#8A2BE2"
+    },
+    {
+      "name": "cadetblue",
+      "value": "#5F9EA0"
+    },
+    {
+      "name": "coral",
+      "value": "#FF7F50"
+    },
+    {
+      "name": "crimson",
+      "value": "#DC143C"
+    },
+    {
+      "name": "darkcyan",
+      "value": "#008B8B"
+    },
+    {
+      "name": "darkgrey",
+      "value": "#A9A9A9"
+    },
+    {
+      "name": "darkmagenta",
+      "value": "#8B008B"
+    },
+    {
+      "name": "darkorchid",
+      "value": "#9932CC"
+    },
+    {
+      "name": "darkseagreen",
+      "value": "#8FBC8F"
+    },
+    {
+      "name": "darkslategrey",
+      "value": "#2F4F4F"
+    },
+    {
+      "name": "deeppink",
+      "value": "#FF1493"
+    },
+    {
+      "name": "dimgrey",
+      "value": "#696969"
+    },
+    {
+      "name": "floralwhite",
+      "value": "#FFFAF0"
+    },
+    {
+      "name": "gainsboro",
+      "value": "#DCDCDC"
+    },
+    {
+      "name": "goldenrod",
+      "value": "#DAA520"
+    },
+    {
+      "name": "green",
+      "value": "#008000"
+    },
+    {
+      "name": "hotpink",
+      "value": "#FF69B4"
+    },
+    {
+      "name": "ivory",
+      "value": "#FFFFF0"
+    },
+    {
+      "name": "lavenderblush",
+      "value": "#FFF0F5"
+    },
+    {
+      "name": "lightblue",
+      "value": "#ADD8E6"
+    },
+    {
+      "name": "lightgoldenrodyellow",
+      "value": "#FAFAD2"
+    },
+    {
+      "name": "lightgreen",
+      "value": "#90EE90"
+    },
+    {
+      "name": "lightseagreen",
+      "value": "#20B2AA"
+    },
+    {
+      "name": "lightslategrey",
+      "value": "#778899"
+    },
+    {
+      "name": "lime",
+      "value": "#0F0"
+    },
+    {
+      "name": "magenta",
+      "value": "#F0F"
+    },
+    {
+      "name": "mediumblue",
+      "value": "#0000CD"
+    },
+    {
+      "name": "mediumseagreen",
+      "value": "#3CB371"
+    },
+    {
+      "name": "mediumturquoise",
+      "value": "#48D1CC"
+    },
+    {
+      "name": "mintcream",
+      "value": "#F5FFFA"
+    },
+    {
+      "name": "navajowhite",
+      "value": "#FFDEAD"
+    },
+    {
+      "name": "olive",
+      "value": "#808000"
+    },
+    {
+      "name": "orangered",
+      "value": "#FF4500"
+    },
+    {
+      "name": "palegreen",
+      "value": "#98FB98"
+    },
+    {
+      "name": "papayawhip",
+      "value": "#FFEFD5"
+    },
+    {
+      "name": "pink",
+      "value": "#FFC0CB"
+    },
+    {
+      "name": "purple",
+      "value": "#800080"
+    },
+    {
+      "name": "rosybrown",
+      "value": "#BC8F8F"
+    },
+    {
+      "name": "salmon",
+      "value": "#FA8072"
+    },
+    {
+      "name": "seashell",
+      "value": "#FFF5EE"
+    },
+    {
+      "name": "skyblue",
+      "value": "#87CEEB"
+    },
+    {
+      "name": "slategrey",
+      "value": "#708090"
+    },
+    {
+      "name": "steelblue",
+      "value": "#4682B4"
+    },
+    {
+      "name": "thistle",
+      "value": "#D8BFD8"
+    },
+    {
+      "name": "primary",
+      "value": "#7fe7c4"
+    }
+  ],
+  "type": [
+    {
+      "name": "title-font-size-huge",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "48px",
+      "px": 48
+    },
+    {
+      "name": "header-font-size1",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "30px",
+      "px": 30
+    },
+    {
+      "name": "font-size-circle",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "28px",
+      "px": 28
+    },
+    {
+      "name": "value-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "header-font-size2",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "22px",
+      "px": 22
+    },
+    {
+      "name": "header-font-size3",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "title-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "header-font-size4",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "header-font-size5",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "header-font-size6",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-mono",
+      "fontFamily": "v-mono, SFMono-Regular, Menlo, Consolas, Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size-huge",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "title-font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "title-font-size-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "step-header-font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "indicator-index-font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "tab-font-size-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "label-font-size-left-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "title-font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "feedback-font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "feedback-font-size-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-font-size-left-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-font-size-left-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-font-size-top-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "label-font-size-top-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "step-header-font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "indicator-index-font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "tab-font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "tab-font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "extra-font-size-large",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "link-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "feedback-font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "label-font-size-top-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "font-size-mini",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "font-size-tiny",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "item-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "meta-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "description-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "extra-font-size-small",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "extra-font-size-medium",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "extra-font-size",
+      "fontFamily": "v-sans, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "rgb(31, 34, 37)",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#7fe7c4",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#7fe7c4",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "rgb(31, 34, 37)",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "rgb(31, 34, 37)",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFF",
+      "textColor": "rgb(31, 34, 37)",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "rgb(31, 34, 37)",
+      "textColor": "#FFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "rgb(31, 34, 37)",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Naive UI** is a light-first design system anchored on `#FFF` canvas surfaces with `rgb(31, 34, 37)` primary ink (16.0:1 contrast) and `#7fe7c4` brand accent.\n\nTypography centers cleanly on `v-sans` (48px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **TuSimple**. Source: published token package (https://www.naiveui.com), package `naive-ui`. Inventory: **91** colors, **46** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `rgb(224, 224, 230)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFF` -> `#fff`) and `1px solid rgb(224, 224, 230)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#7fe7c4` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFF` (light) with `rgb(31, 34, 37)` primary text and `rgb(51, 54, 57)` secondary labels.\n- Use `#7fe7c4` with `#0b0b0c` text (13.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `v-sans` headings with `v-sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fff` surface shifts and `rgb(224, 224, 230)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

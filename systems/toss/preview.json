@@ -1,0 +1,455 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#faa131",
+  "border": "#e5e8eb",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dark-background",
+      "value": "#17171c"
+    },
+    {
+      "name": "dark-float-background",
+      "value": "#2c2c35"
+    },
+    {
+      "name": "dark-grey-background",
+      "value": "#101013"
+    },
+    {
+      "name": "dark-layered-background",
+      "value": "#202027"
+    },
+    {
+      "name": "dark-theme-background",
+      "value": "#17171c"
+    },
+    {
+      "name": "dark-theme-background-level01",
+      "value": "#202027"
+    },
+    {
+      "name": "dark-theme-background-level02",
+      "value": "#2c2c35"
+    },
+    {
+      "name": "dark-theme-background-level-b01",
+      "value": "#101013"
+    },
+    {
+      "name": "dark-theme-hairline-border",
+      "value": "#3c3c47"
+    },
+    {
+      "name": "float-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "grey-background",
+      "value": "#f2f4f6"
+    },
+    {
+      "name": "layered-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-background",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-background-level01",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-background-level02",
+      "value": "#ffffff"
+    },
+    {
+      "name": "light-theme-background-level-b01",
+      "value": "#f2f4f6"
+    },
+    {
+      "name": "light-theme-hairline-border",
+      "value": "#e5e8eb"
+    },
+    {
+      "name": "adaptive-background",
+      "value": "#17171c"
+    },
+    {
+      "name": "adaptive-background-level01",
+      "value": "#202027"
+    },
+    {
+      "name": "adaptive-background-level02",
+      "value": "#2c2c35"
+    },
+    {
+      "name": "adaptive-background-level-b01",
+      "value": "#101013"
+    },
+    {
+      "name": "adaptive-float-background",
+      "value": "#2c2c35"
+    },
+    {
+      "name": "adaptive-grey-background",
+      "value": "#101013"
+    },
+    {
+      "name": "adaptive-hairline-border",
+      "value": "#3c3c47"
+    },
+    {
+      "name": "adaptive-layered-background",
+      "value": "#202027"
+    },
+    {
+      "name": "background-level01",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-level02",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-level-b01",
+      "value": "#f2f4f6"
+    },
+    {
+      "name": "disabled-blue500",
+      "value": "#c9e2ff"
+    },
+    {
+      "name": "hairline-border",
+      "value": "#e5e8eb"
+    },
+    {
+      "name": "t-radio-indicator-background-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "t-dark-fill-button-background",
+      "value": "#4e5968"
+    },
+    {
+      "name": "t-primary-weak-button-background",
+      "value": "#e8f3ff"
+    },
+    {
+      "name": "t-danger-weak-button-background",
+      "value": "#ffeeee"
+    },
+    {
+      "name": "t-dark-weak-button-background",
+      "value": "#f2f4f6"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "blue500",
+      "value": "#3182f6"
+    },
+    {
+      "name": "dark-theme-blue200",
+      "value": "#25478c"
+    },
+    {
+      "name": "dark-theme-blue700",
+      "value": "#61b0ff"
+    },
+    {
+      "name": "dark-theme-green400",
+      "value": "#13a065"
+    },
+    {
+      "name": "dark-theme-green900",
+      "value": "#ccffea"
+    },
+    {
+      "name": "dark-theme-grey500",
+      "value": "#7e7e87"
+    },
+    {
+      "name": "dark-theme-orange200",
+      "value": "#804600"
+    },
+    {
+      "name": "dark-theme-orange700",
+      "value": "#ffa861"
+    },
+    {
+      "name": "dark-theme-purple300",
+      "value": "#7b2595"
+    },
+    {
+      "name": "dark-theme-purple800",
+      "value": "#eaacfc"
+    },
+    {
+      "name": "dark-theme-red50",
+      "value": "#3c2020"
+    },
+    {
+      "name": "dark-theme-teal100",
+      "value": "#224e51"
+    },
+    {
+      "name": "dark-theme-teal600",
+      "value": "#43bec7"
+    },
+    {
+      "name": "dark-theme-yellow300",
+      "value": "#eb8b1e"
+    },
+    {
+      "name": "dark-theme-yellow800",
+      "value": "#ffe5b2"
+    },
+    {
+      "name": "green50",
+      "value": "#f0faf6"
+    },
+    {
+      "name": "grey100",
+      "value": "#f2f4f6"
+    },
+    {
+      "name": "grey600",
+      "value": "#6b7684"
+    },
+    {
+      "name": "inverse-grey300",
+      "value": "#4d4d59"
+    },
+    {
+      "name": "inverse-grey800",
+      "value": "#e4e4e5"
+    },
+    {
+      "name": "light-theme-blue50",
+      "value": "#e8f3ff"
+    },
+    {
+      "name": "light-theme-green100",
+      "value": "#aeefd5"
+    },
+    {
+      "name": "light-theme-green600",
+      "value": "#02a262"
+    },
+    {
+      "name": "light-theme-grey300",
+      "value": "#d1d6db"
+    },
+    {
+      "name": "light-theme-grey800",
+      "value": "#333d4b"
+    },
+    {
+      "name": "light-theme-orange50",
+      "value": "#fff3e0"
+    },
+    {
+      "name": "light-theme-pc-screen-bg",
+      "value": "#f6f7f9"
+    },
+    {
+      "name": "light-theme-purple500",
+      "value": "#a234c7"
+    },
+    {
+      "name": "light-theme-red200",
+      "value": "#feafb4"
+    },
+    {
+      "name": "light-theme-red700",
+      "value": "#d22030"
+    },
+    {
+      "name": "light-theme-teal400",
+      "value": "#30b6b6"
+    },
+    {
+      "name": "light-theme-teal900",
+      "value": "#076565"
+    },
+    {
+      "name": "light-theme-yellow500",
+      "value": "#ffc342"
+    },
+    {
+      "name": "orange200",
+      "value": "#ffcd80"
+    },
+    {
+      "name": "orange700",
+      "value": "#f57800"
+    },
+    {
+      "name": "purple400",
+      "value": "#b44bd7"
+    },
+    {
+      "name": "purple900",
+      "value": "#65237b"
+    },
+    {
+      "name": "red500",
+      "value": "#f04452"
+    },
+    {
+      "name": "teal200",
+      "value": "#89d8d8"
+    },
+    {
+      "name": "teal700",
+      "value": "#0c8585"
+    },
+    {
+      "name": "yellow200",
+      "value": "#ffe69b"
+    },
+    {
+      "name": "yellow700",
+      "value": "#faa131"
+    },
+    {
+      "name": "adaptive-blue400",
+      "value": "#2970d9"
+    },
+    {
+      "name": "adaptive-blue900",
+      "value": "#c8e7ff"
+    },
+    {
+      "name": "adaptive-green500",
+      "value": "#16bb76"
+    },
+    {
+      "name": "adaptive-grey200",
+      "value": "#3c3c47"
+    },
+    {
+      "name": "adaptive-grey700",
+      "value": "#c3c3c6"
+    },
+    {
+      "name": "adaptive-orange200",
+      "value": "#804600"
+    },
+    {
+      "name": "adaptive-orange700",
+      "value": "#ffa861"
+    },
+    {
+      "name": "adaptive-purple300",
+      "value": "#7b2595"
+    },
+    {
+      "name": "adaptive-purple800",
+      "value": "#eaacfc"
+    },
+    {
+      "name": "adaptive-red50",
+      "value": "#3c2020"
+    },
+    {
+      "name": "adaptive-teal100",
+      "value": "#224e51"
+    },
+    {
+      "name": "primary",
+      "value": "#faa131"
+    }
+  ],
+  "type": [],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#faa131",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#faa131",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Toss Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#faa131` brand accent.\n\nTypography centers cleanly on `System UI` (large display down to 14px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Toss**. Source: published token package, package `@toss/tds-colors`. Inventory: **91** colors, **0** typography steps, and **8** documented components (see package license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#e5e8eb` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid #e5e8eb` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#faa131` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#faa131` with `#0b0b0c` text (9.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#e5e8eb` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

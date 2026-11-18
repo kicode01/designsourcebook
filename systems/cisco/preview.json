@@ -1,0 +1,811 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#91BFFF",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "0",
+      "value": "#17181b"
+    },
+    {
+      "name": "100",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-theme-surface-neutral-0-default",
+      "value": "#17181b"
+    },
+    {
+      "name": "mds-color-theme-content-text-warning-default",
+      "value": "#f2990a"
+    },
+    {
+      "name": "mds-color-theme-content-indicator-warning-0",
+      "value": "#f2990a"
+    },
+    {
+      "name": "mds-color-theme-bg-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "mds-color-theme-text-success-active",
+      "value": "#9fedd8"
+    },
+    {
+      "name": "mds-color-theme-text-accent-hover",
+      "value": "#bfe3ff"
+    },
+    {
+      "name": "mds-color-theme-text-alert-orange-hover",
+      "value": "#fed5ac"
+    },
+    {
+      "name": "mds-color-theme-text-team-cyan-hover",
+      "value": "#22c7d6"
+    },
+    {
+      "name": "mds-color-theme-text-team-lime-hover",
+      "value": "#93c437"
+    },
+    {
+      "name": "mds-color-theme-text-team-orange-hover",
+      "value": "#fd884e"
+    },
+    {
+      "name": "mds-color-theme-text-team-purple-hover",
+      "value": "#f294f1"
+    },
+    {
+      "name": "mds-color-theme-text-team-slate-hover",
+      "value": "#b0b4d9"
+    },
+    {
+      "name": "mds-color-theme-background-solid-primary-normal",
+      "value": "#000000"
+    },
+    {
+      "name": "mds-color-theme-background-alert-default-normal",
+      "value": "#3b3b3b"
+    },
+    {
+      "name": "mds-color-theme-background-alert-warning-normal",
+      "value": "#36220c"
+    },
+    {
+      "name": "mds-color-theme-background-alert-theme-normal",
+      "value": "#0a274a"
+    },
+    {
+      "name": "mds-color-theme-background-alert-orange-normal",
+      "value": "#411b04"
+    },
+    {
+      "name": "mds-color-theme-background-label-gold-normal",
+      "value": "#30240d"
+    },
+    {
+      "name": "mds-color-theme-background-label-mint-normal",
+      "value": "#102b2a"
+    },
+    {
+      "name": "mds-color-theme-background-label-pink-normal",
+      "value": "#3b1e21"
+    },
+    {
+      "name": "mds-color-theme-background-label-slate-normal",
+      "value": "#26262b"
+    },
+    {
+      "name": "mds-color-theme-background-label-default-normal",
+      "value": "#262626"
+    },
+    {
+      "name": "mds-color-theme-background-skeleton-normal",
+      "value": "#262626"
+    },
+    {
+      "name": "mds-color-theme-background-glow-large-stop-0",
+      "value": "#B8D5FF"
+    },
+    {
+      "name": "mds-color-theme-background-glow-light-stop-2",
+      "value": "#FF9000"
+    },
+    {
+      "name": "mds-color-theme-background-glow-small-stop-0",
+      "value": "#1869ff"
+    },
+    {
+      "name": "mds-color-theme-outline-warning-normal",
+      "value": "#f2990a"
+    },
+    {
+      "name": "mds-color-theme-common-text-error-normal",
+      "value": "#fc8b98"
+    },
+    {
+      "name": "mds-color-theme-common-background-solid-dark",
+      "value": "#1a1a1a"
+    },
+    {
+      "name": "mds-color-theme-common-touchbar-background-mint-norm",
+      "value": "#148579"
+    },
+    {
+      "name": "mds-color-theme-common-touchbar-background-orange-no",
+      "value": "#c94403"
+    },
+    {
+      "name": "mds-color-theme-common-caption-background-dark-green",
+      "value": "#0e2b20"
+    },
+    {
+      "name": "mds-color-theme-common-caption-background-light-purp",
+      "value": "#fcf2fc"
+    },
+    {
+      "name": "mds-color-theme-common-caption-text-light-green",
+      "value": "#185e46"
+    },
+    {
+      "name": "mds-color-theme-illustrations-empty-secondary-0",
+      "value": "#279be8"
+    },
+    {
+      "name": "mds-color-theme-illustrations-success-0",
+      "value": "#3cc29a"
+    },
+    {
+      "name": "mds-color-theme-groupedbackground-tertiary-normal",
+      "value": "#262626"
+    },
+    {
+      "name": "mds-color-theme-ai-hint-primary-gradient-2",
+      "value": "#15337D"
+    },
+    {
+      "name": "mds-color-theme-background-gradient-primary-normal",
+      "value": "#000000"
+    },
+    {
+      "name": "mds-color-theme-gradientdivider-success-hover",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-core-brand-medium-blue-20",
+      "value": "#91BFFF"
+    },
+    {
+      "name": "mds-color-core-brand-medium-blue-80",
+      "value": "#15337D"
+    },
+    {
+      "name": "mds-color-core-brand-cisco-blue-30",
+      "value": "#7AE2FF"
+    },
+    {
+      "name": "mds-color-core-brand-cisco-blue-90",
+      "value": "#013545"
+    },
+    {
+      "name": "mds-color-core-brand-magenta-40",
+      "value": "#FF4FA4"
+    },
+    {
+      "name": "mds-color-core-brand-magenta-95",
+      "value": "#240D19"
+    },
+    {
+      "name": "mds-color-core-brand-orange-50",
+      "value": "#FF9000"
+    },
+    {
+      "name": "mds-color-core-brand-gradient-primary-0",
+      "value": "#0A60FF"
+    },
+    {
+      "name": "mds-color-core-brand-gradient-secondary-blue-1",
+      "value": "#02C8FF"
+    },
+    {
+      "name": "mds-color-mobile-indigo-light-secondary",
+      "value": "#f7f9ff"
+    },
+    {
+      "name": "mds-color-mobile-jade-dark-secondary",
+      "value": "#05201c"
+    },
+    {
+      "name": "mds-color-mobile-rose-light-secondary",
+      "value": "#fff9fd"
+    },
+    {
+      "name": "mds-color-mobile-lavender-dark-secondary",
+      "value": "#27163b"
+    },
+    {
+      "name": "mds-color-highcontrast-white-gray-text-color",
+      "value": "#600000"
+    },
+    {
+      "name": "mds-color-gradient-default-light-secondary-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-gradient-indigo-light-primary-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-gradient-indigo-dark-secondary-1",
+      "value": "#0e111a"
+    },
+    {
+      "name": "mds-color-gradient-jade-dark-primary-1",
+      "value": "#021412"
+    },
+    {
+      "name": "mds-color-gradient-bronze-light-secondary-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-gradient-rose-light-primary-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-gradient-rose-dark-secondary-1",
+      "value": "#1f0615"
+    },
+    {
+      "name": "mds-color-gradient-lavender-dark-primary-1",
+      "value": "#18082b"
+    },
+    {
+      "name": "button-text-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-theme-button-join-normal",
+      "value": "#1d805f"
+    },
+    {
+      "name": "mds-color-theme-outline-label-gold",
+      "value": "#d6b220"
+    },
+    {
+      "name": "mds-color-theme-control-indicator-inactive-normal",
+      "value": "#8f8f8f"
+    },
+    {
+      "name": "mds-color-theme-common-whiteboard-pen-red",
+      "value": "#f55868"
+    },
+    {
+      "name": "mds-color-theme-common-content-sheets",
+      "value": "#0f9d58"
+    },
+    {
+      "name": "mds-color-theme-globaltint-selected",
+      "value": "#1170cf"
+    },
+    {
+      "name": "mds-color-theme-outline-glass-normal",
+      "value": "#ffffff"
+    },
+    {
+      "name": "mds-color-theme-common-button-join-animated-gradient",
+      "value": "#1aebff"
+    },
+    {
+      "name": "mint",
+      "value": "#30c9b0"
+    },
+    {
+      "name": "cyan",
+      "value": "#22c7d6"
+    },
+    {
+      "name": "doc",
+      "value": "#4285f4"
+    },
+    {
+      "name": "mds-color-core-gray-71",
+      "value": "#5f6368"
+    },
+    {
+      "name": "mds-color-core-blue-20",
+      "value": "#bfe3ff"
+    },
+    {
+      "name": "mds-color-core-green-40",
+      "value": "#3cc29a"
+    },
+    {
+      "name": "mds-color-core-red-60",
+      "value": "#db1f2e"
+    },
+    {
+      "name": "mds-color-core-yellow-80",
+      "value": "#57330a"
+    },
+    {
+      "name": "mds-color-core-orange-95",
+      "value": "#291303"
+    },
+    {
+      "name": "mds-color-decorative-olive-30",
+      "value": "#d3db7b"
+    },
+    {
+      "name": "mds-color-decorative-lime-70",
+      "value": "#416116"
+    },
+    {
+      "name": "mds-color-decorative-cyan-10",
+      "value": "#e6f9fa"
+    },
+    {
+      "name": "mds-color-decorative-cobalt-50",
+      "value": "#279be8"
+    },
+    {
+      "name": "mds-color-decorative-slate-90",
+      "value": "#26262b"
+    },
+    {
+      "name": "mds-color-decorative-purple-30",
+      "value": "#fac3f8"
+    },
+    {
+      "name": "mds-color-decorative-pink-70",
+      "value": "#a12a3a"
+    },
+    {
+      "name": "mds-color-highcontrast-black-highlight-color",
+      "value": "#1aebff"
+    },
+    {
+      "name": "primary",
+      "value": "#91BFFF"
+    }
+  ],
+  "type": [
+    {
+      "name": "mds-font-size-headline-small",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "3.25rem",
+      "px": 52
+    },
+    {
+      "name": "mds-font-apps-headline-small-light-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "3.25rem",
+      "px": 52
+    },
+    {
+      "name": "mds-font-apps-headline-small-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "3.25rem",
+      "px": 52
+    },
+    {
+      "name": "regular",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "52px",
+      "px": 52
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "52px",
+      "px": 52
+    },
+    {
+      "name": "small",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "52px",
+      "px": 52
+    },
+    {
+      "name": "mds-font-size-heading-xlarge",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "mds-font-apps-heading-xlarge-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "mds-font-apps-heading-xlarge-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "mds-font-apps-heading-xlarge-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "medium",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "bold",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "40px",
+      "px": 40
+    },
+    {
+      "name": "mds-font-size-heading-large",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mds-font-apps-heading-large-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mds-font-apps-heading-large-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mds-font-apps-heading-large-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "mds-font-size-heading-midsize",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "mds-font-apps-heading-midsize-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "mds-font-apps-heading-midsize-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "mds-font-apps-heading-midsize-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "mds-font-size-heading-small",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mds-font-apps-heading-small-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mds-font-apps-heading-small-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mds-font-apps-heading-small-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "mds-font-size-base",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-size-body-large",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-regular-underline-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-medium-underline-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "mds-font-family-primary",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-small-regular-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-small-medium-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-small-bold-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-regular-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-medium-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-body-large-bold-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-small-regular-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-small-medium-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-small-bold-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-large-regular-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-large-medium-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-large-bold-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-xlarge-regular-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-xlarge-medium-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mds-font-apps-heading-xlarge-bold-font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "regular-underline",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "medium-underline",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "mds-font-size-body-midsize",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-apps-body-midsize-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-apps-body-midsize-regular-underline-font-si",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-apps-body-midsize-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-apps-body-midsize-medium-underline-font-siz",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-apps-body-midsize-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "mds-font-size-body-small",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mds-font-apps-body-small-regular-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mds-font-apps-body-small-regular-underline-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mds-font-apps-body-small-medium-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mds-font-apps-body-small-medium-underline-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "mds-font-apps-body-small-bold-font-size",
+      "fontFamily": "Momentum, Inter, Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#91BFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#91BFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Momentum Design** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#91BFFF` brand accent.\n\nTypography centers cleanly on `Momentum` (52px display down to 20px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Cisco**. Source: published token package, package `@momentum-design/tokens`. Inventory: **91** colors, **62** typography steps, and **8** documented components (see package license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#91BFFF` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#91BFFF` with `#0b0b0c` text (10.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Momentum` headings with `Momentum` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

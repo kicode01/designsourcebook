@@ -1,0 +1,41 @@
+{
+  "name": "hubspot",
+  "displayName": "Canvas Design System",
+  "description": "Hubspot Canvas Design System — read from canvas.hubspot.com's live stylesheets, not a published token package.",
+  "style": "Hubspot Canvas Design System — read from canvas.hubspot.com's live stylesheets, not a published token package.",
+  "category": "Hubspot",
+  "org": "Hubspot",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "hubspot",
+    "light"
+  ],
+  "homepage": "https://canvas.hubspot.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://canvas.hubspot.com/ and its 3 stylesheets on 2026-11-18. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "url": "https://canvas.hubspot.com/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 24,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

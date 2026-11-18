@@ -1,0 +1,42 @@
+{
+  "name": "trimble-modus",
+  "displayName": "Modus Design System",
+  "description": "Trimble Modus Design System — tokens imported from @trimble-oss/modus-bootstrap.",
+  "style": "Trimble Modus Design System — tokens imported from @trimble-oss/modus-bootstrap.",
+  "category": "Trimble",
+  "org": "Trimble",
+  "theme": "light",
+  "tags": [
+    "published",
+    "trimble",
+    "light"
+  ],
+  "homepage": "https://modus-bootstrap.trimble.com/",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @trimble-oss/modus-bootstrap@2.3.2 (8 token files, 256 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@trimble-oss/modus-bootstrap",
+    "version": "2.3.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 49,
+    "components": 28
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 1,
+    "verified": false
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

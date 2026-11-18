@@ -1,0 +1,42 @@
+{
+  "name": "primeui",
+  "displayName": "PrimeUI",
+  "description": "PrimeTek PrimeUI — tokens imported from @primeuix/themes.",
+  "style": "PrimeTek PrimeUI — tokens imported from @primeuix/themes.",
+  "category": "PrimeTek",
+  "org": "PrimeTek",
+  "theme": "light",
+  "tags": [
+    "published",
+    "prime-tek",
+    "light"
+  ],
+  "homepage": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @primeuix/themes@3.1.1 + primeflex (5 token files, 154 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@primeuix/themes",
+    "version": "3.1.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 1,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

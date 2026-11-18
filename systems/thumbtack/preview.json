@@ -1,0 +1,406 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#eaf6fa",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#007fad",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "tp-color-blue100",
+      "value": "#eaf6fa"
+    },
+    {
+      "name": "tp-color-blue200",
+      "value": "#b3ebff"
+    },
+    {
+      "name": "tp-color-blue300",
+      "value": "#79d2f2"
+    },
+    {
+      "name": "tp-color-blue",
+      "value": "#009fd9"
+    },
+    {
+      "name": "tp-color-blue500",
+      "value": "#007fad"
+    },
+    {
+      "name": "tp-color-blue600",
+      "value": "#005979"
+    },
+    {
+      "name": "tp-color-indigo100",
+      "value": "#e8f1fd"
+    },
+    {
+      "name": "tp-color-indigo200",
+      "value": "#cce1ff"
+    },
+    {
+      "name": "tp-color-indigo300",
+      "value": "#96c2ff"
+    },
+    {
+      "name": "tp-color-indigo",
+      "value": "#5968e2"
+    },
+    {
+      "name": "tp-color-indigo500",
+      "value": "#4f54b3"
+    },
+    {
+      "name": "tp-color-indigo600",
+      "value": "#383c80"
+    },
+    {
+      "name": "tp-color-purple100",
+      "value": "#f5efff"
+    },
+    {
+      "name": "tp-color-purple200",
+      "value": "#dfccff"
+    },
+    {
+      "name": "tp-color-purple300",
+      "value": "#c9acfd"
+    },
+    {
+      "name": "tp-color-purple",
+      "value": "#8d56eb"
+    },
+    {
+      "name": "tp-color-purple500",
+      "value": "#6637b6"
+    },
+    {
+      "name": "tp-color-purple600",
+      "value": "#492782"
+    },
+    {
+      "name": "tp-color-green100",
+      "value": "#e1fdf3"
+    },
+    {
+      "name": "tp-color-green200",
+      "value": "#c6f7da"
+    },
+    {
+      "name": "tp-color-green300",
+      "value": "#73e4a2"
+    },
+    {
+      "name": "tp-color-green",
+      "value": "#2db783"
+    },
+    {
+      "name": "tp-color-green500",
+      "value": "#16855b"
+    },
+    {
+      "name": "tp-color-green600",
+      "value": "#054e33"
+    },
+    {
+      "name": "tp-color-yellow100",
+      "value": "#fdf7e7"
+    },
+    {
+      "name": "tp-color-yellow200",
+      "value": "#ffebb3"
+    },
+    {
+      "name": "tp-color-yellow300",
+      "value": "#ffdd80"
+    },
+    {
+      "name": "tp-color-yellow",
+      "value": "#febe14"
+    },
+    {
+      "name": "tp-color-yellow500",
+      "value": "#a77005"
+    },
+    {
+      "name": "tp-color-yellow600",
+      "value": "#714601"
+    },
+    {
+      "name": "tp-color-red100",
+      "value": "#ffeff0"
+    },
+    {
+      "name": "tp-color-red200",
+      "value": "#ffd9d9"
+    },
+    {
+      "name": "tp-color-red300",
+      "value": "#ffb0b0"
+    },
+    {
+      "name": "tp-color-red",
+      "value": "#ff5a5f"
+    },
+    {
+      "name": "tp-color-red500",
+      "value": "#b22d31"
+    },
+    {
+      "name": "tp-color-red600",
+      "value": "#7d0d10"
+    },
+    {
+      "name": "tp-color-black300",
+      "value": "#676d73"
+    },
+    {
+      "name": "tp-color-black",
+      "value": "#2f3033"
+    },
+    {
+      "name": "tp-color-gray200",
+      "value": "#fafafa"
+    },
+    {
+      "name": "tp-color-gray300",
+      "value": "#e9eced"
+    },
+    {
+      "name": "tp-color-gray",
+      "value": "#d3d4d5"
+    },
+    {
+      "name": "tp-color-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "tp-color-blue-100",
+      "value": "#eaf6fa"
+    },
+    {
+      "name": "tp-color-blue-200",
+      "value": "#b3ebff"
+    },
+    {
+      "name": "tp-color-blue-300",
+      "value": "#79d2f2"
+    },
+    {
+      "name": "tp-color-blue-500",
+      "value": "#007fad"
+    },
+    {
+      "name": "tp-color-blue-600",
+      "value": "#005979"
+    },
+    {
+      "name": "tp-color-indigo-100",
+      "value": "#e8f1fd"
+    },
+    {
+      "name": "tp-color-indigo-200",
+      "value": "#cce1ff"
+    },
+    {
+      "name": "tp-color-indigo-300",
+      "value": "#96c2ff"
+    },
+    {
+      "name": "tp-color-indigo-500",
+      "value": "#4f54b3"
+    },
+    {
+      "name": "tp-color-indigo-600",
+      "value": "#383c80"
+    },
+    {
+      "name": "tp-color-purple-100",
+      "value": "#f5efff"
+    },
+    {
+      "name": "tp-color-purple-200",
+      "value": "#dfccff"
+    },
+    {
+      "name": "tp-color-purple-300",
+      "value": "#c9acfd"
+    },
+    {
+      "name": "tp-color-purple-500",
+      "value": "#6637b6"
+    },
+    {
+      "name": "tp-color-purple-600",
+      "value": "#492782"
+    },
+    {
+      "name": "tp-color-green-100",
+      "value": "#e1fdf3"
+    },
+    {
+      "name": "tp-color-green-200",
+      "value": "#c6f7da"
+    },
+    {
+      "name": "tp-color-green-300",
+      "value": "#73e4a2"
+    },
+    {
+      "name": "tp-color-green-500",
+      "value": "#16855b"
+    },
+    {
+      "name": "tp-color-green-600",
+      "value": "#054e33"
+    },
+    {
+      "name": "tp-color-yellow-100",
+      "value": "#fdf7e7"
+    },
+    {
+      "name": "tp-color-yellow-200",
+      "value": "#ffebb3"
+    },
+    {
+      "name": "tp-color-yellow-300",
+      "value": "#ffdd80"
+    },
+    {
+      "name": "tp-color-yellow-500",
+      "value": "#a77005"
+    },
+    {
+      "name": "tp-color-yellow-600",
+      "value": "#714601"
+    },
+    {
+      "name": "tp-color-red-100",
+      "value": "#ffeff0"
+    },
+    {
+      "name": "tp-color-red-200",
+      "value": "#ffd9d9"
+    },
+    {
+      "name": "tp-color-red-300",
+      "value": "#ffb0b0"
+    },
+    {
+      "name": "tp-color-red-500",
+      "value": "#b22d31"
+    },
+    {
+      "name": "tp-color-red-600",
+      "value": "#7d0d10"
+    },
+    {
+      "name": "tp-color-black-300",
+      "value": "#676d73"
+    },
+    {
+      "name": "tp-color-gray-200",
+      "value": "#fafafa"
+    },
+    {
+      "name": "tp-color-gray-300",
+      "value": "#e9eced"
+    },
+    {
+      "name": "primary",
+      "value": "#007fad"
+    }
+  ],
+  "type": [
+    {
+      "name": "tp-font-family-base",
+      "fontFamily": "Mark, Avenir, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "tp-font-family-monospace",
+      "fontFamily": "\"Source Code Pro\", monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#eaf6fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#007fad",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#007fad",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#eaf6fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#eaf6fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#eaf6fa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Thumbprint** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#007fad` brand accent.\n\nTypography centers cleanly on `Mark` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#eaf6fa` surface layering.\n\nMaintained by **Thumbtack**. Source: published token package (https://thumbprint.design/tokens), package `@thumbtack/thumbprint-tokens`. Inventory: **76** colors, **2** typography steps, and **8** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#eaf6fa` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#eaf6fa`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#007fad` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#007fad` with `#f7f7f8` text (4.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Mark` headings with `Mark` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#eaf6fa` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

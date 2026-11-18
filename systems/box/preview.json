@@ -1,0 +1,645 @@
+{
+  "canvas": "#fff",
+  "surface": "#fbfbfb",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#004eac",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "count-badge-background",
+      "value": "#e9163c"
+    },
+    {
+      "name": "primary-background-active",
+      "value": "#004eac"
+    },
+    {
+      "name": "primary-background-gradient",
+      "value": "#0055bc"
+    },
+    {
+      "name": "primary-background-hover",
+      "value": "#006ae9"
+    },
+    {
+      "name": "primary-button-background-active",
+      "value": "#004eac"
+    },
+    {
+      "name": "primary-button-background-hover",
+      "value": "#006ae9"
+    },
+    {
+      "name": "primary-button-border-active",
+      "value": "#004eac"
+    },
+    {
+      "name": "primary-button-border-hover",
+      "value": "#006ae9"
+    },
+    {
+      "name": "primary-progress-bar-background",
+      "value": "#006ae9"
+    },
+    {
+      "name": "background-active",
+      "value": "#004eac"
+    },
+    {
+      "name": "background-gradient",
+      "value": "#0055bc"
+    },
+    {
+      "name": "background-hover",
+      "value": "#006ae9"
+    },
+    {
+      "name": "button-background-active",
+      "value": "#004eac"
+    },
+    {
+      "name": "button-background-hover",
+      "value": "#006ae9"
+    },
+    {
+      "name": "button-border-active",
+      "value": "#004eac"
+    },
+    {
+      "name": "button-border-hover",
+      "value": "#006ae9"
+    },
+    {
+      "name": "progress-bar-background",
+      "value": "#006ae9"
+    },
+    {
+      "name": "cascade-policy-background",
+      "value": "#f1e2fd"
+    },
+    {
+      "name": "hover-blue-background",
+      "value": "#f6fafd"
+    },
+    {
+      "name": "hover-blue-border",
+      "value": "#d9e3e9"
+    },
+    {
+      "name": "selected-blue-background",
+      "value": "#ecf4fc"
+    },
+    {
+      "name": "selected-blue-border",
+      "value": "#bfd4df"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "bdl-box-blue",
+      "value": "#0061d5"
+    },
+    {
+      "name": "bdl-box-blue-50",
+      "value": "#7fb0ea"
+    },
+    {
+      "name": "bdl-box-blue-30",
+      "value": "#b2cff2"
+    },
+    {
+      "name": "bdl-box-blue-10",
+      "value": "#e5effa"
+    },
+    {
+      "name": "bdl-box-blue-02",
+      "value": "#fafcfe"
+    },
+    {
+      "name": "bdl-gray-80",
+      "value": "#4e4e4e"
+    },
+    {
+      "name": "bdl-gray-50",
+      "value": "#909090"
+    },
+    {
+      "name": "bdl-gray-30",
+      "value": "#bcbcbc"
+    },
+    {
+      "name": "bdl-gray-10",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "bdl-gray-02",
+      "value": "#fbfbfb"
+    },
+    {
+      "name": "bdl-dark-blue-50",
+      "value": "#7f9dc1"
+    },
+    {
+      "name": "bdl-dark-blue-10",
+      "value": "#e5ebf2"
+    },
+    {
+      "name": "bdl-dark-blue-02",
+      "value": "#fafbfd"
+    },
+    {
+      "name": "bdl-light-blue-50",
+      "value": "#91c2fd"
+    },
+    {
+      "name": "bdl-light-blue-10",
+      "value": "#e9f2fe"
+    },
+    {
+      "name": "bdl-light-blue-02",
+      "value": "#fbfdff"
+    },
+    {
+      "name": "bdl-yellorange-50",
+      "value": "#fad98d"
+    },
+    {
+      "name": "bdl-yellorange-10",
+      "value": "#fef7e8"
+    },
+    {
+      "name": "bdl-yellorange-02",
+      "value": "#fffefb"
+    },
+    {
+      "name": "bdl-yellow-50",
+      "value": "#ffeb7f"
+    },
+    {
+      "name": "bdl-yellow-10",
+      "value": "#fffbe5"
+    },
+    {
+      "name": "bdl-yellow-02",
+      "value": "#fffefa"
+    },
+    {
+      "name": "bdl-green-light-50",
+      "value": "#92e0c0"
+    },
+    {
+      "name": "bdl-green-light-10",
+      "value": "#e9f8f2"
+    },
+    {
+      "name": "bdl-green-light-02",
+      "value": "#fbfefd"
+    },
+    {
+      "name": "bdl-grimace-50",
+      "value": "#a392e0"
+    },
+    {
+      "name": "bdl-grimace-10",
+      "value": "#ece9f8"
+    },
+    {
+      "name": "bdl-grimace-02",
+      "value": "#fbfbfe"
+    },
+    {
+      "name": "bdl-orange-50",
+      "value": "#f8c08c"
+    },
+    {
+      "name": "bdl-orange-10",
+      "value": "#fdf2e8"
+    },
+    {
+      "name": "bdl-orange-02",
+      "value": "#fffdfb"
+    },
+    {
+      "name": "bdl-purple-rain-50",
+      "value": "#cf9ff6"
+    },
+    {
+      "name": "bdl-purple-rain-10",
+      "value": "#f5ebfd"
+    },
+    {
+      "name": "bdl-purple-rain-02",
+      "value": "#fdfbff"
+    },
+    {
+      "name": "bdl-watermelon-red-50",
+      "value": "#f69bab"
+    },
+    {
+      "name": "bdl-watermelon-red-10",
+      "value": "#fdebee"
+    },
+    {
+      "name": "bdl-watermelon-red-02",
+      "value": "#fffbfc"
+    },
+    {
+      "name": "seesee",
+      "value": "#ccc"
+    },
+    {
+      "name": "efs",
+      "value": "#efefef"
+    },
+    {
+      "name": "light-charcoal",
+      "value": "#5f5f5f"
+    },
+    {
+      "name": "bdl-box-blue80",
+      "value": "#3381dd"
+    },
+    {
+      "name": "bdl-box-blue40",
+      "value": "#99c0ee"
+    },
+    {
+      "name": "bdl-box-blue20",
+      "value": "#ccdff7"
+    },
+    {
+      "name": "bdl-box-blue05",
+      "value": "#f2f7fd"
+    },
+    {
+      "name": "bdl-gray80",
+      "value": "#4e4e4e"
+    },
+    {
+      "name": "bdl-gray50",
+      "value": "#909090"
+    },
+    {
+      "name": "bdl-gray30",
+      "value": "#bcbcbc"
+    },
+    {
+      "name": "bdl-gray10",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "bdl-gray02",
+      "value": "#fbfbfb"
+    },
+    {
+      "name": "bdl-dark-blue20",
+      "value": "#ccd8e6"
+    },
+    {
+      "name": "bdl-dark-blue05",
+      "value": "#f2f5f9"
+    },
+    {
+      "name": "bdl-light-blue50",
+      "value": "#91c2fd"
+    },
+    {
+      "name": "bdl-light-blue10",
+      "value": "#e9f2fe"
+    },
+    {
+      "name": "bdl-light-blue02",
+      "value": "#fbfdff"
+    },
+    {
+      "name": "bdl-yellorange20",
+      "value": "#fdf0d1"
+    },
+    {
+      "name": "bdl-yellorange05",
+      "value": "#fefbf3"
+    },
+    {
+      "name": "bdl-yellow50",
+      "value": "#ffeb7f"
+    },
+    {
+      "name": "bdl-yellow10",
+      "value": "#fffbe5"
+    },
+    {
+      "name": "bdl-yellow02",
+      "value": "#fffefa"
+    },
+    {
+      "name": "bdl-green-light20",
+      "value": "#d4f3e6"
+    },
+    {
+      "name": "bdl-green-light05",
+      "value": "#f4fcf8"
+    },
+    {
+      "name": "bdl-grimace50",
+      "value": "#a392e0"
+    },
+    {
+      "name": "bdl-grimace10",
+      "value": "#ece9f8"
+    },
+    {
+      "name": "bdl-grimace02",
+      "value": "#fbfbfe"
+    },
+    {
+      "name": "bdl-orange20",
+      "value": "#fce6d1"
+    },
+    {
+      "name": "bdl-orange05",
+      "value": "#fef8f3"
+    },
+    {
+      "name": "bdl-purple-rain50",
+      "value": "#cf9ff6"
+    },
+    {
+      "name": "primary",
+      "value": "#004eac"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "system-ui",
+      "fontSize": "30px",
+      "px": 30,
+      "lineHeight": "36px"
+    },
+    {
+      "name": "h2",
+      "fontFamily": "system-ui",
+      "fontSize": "24px",
+      "px": 24,
+      "lineHeight": "30px"
+    },
+    {
+      "name": "h3",
+      "fontFamily": "system-ui",
+      "fontSize": "20px",
+      "px": 20,
+      "lineHeight": "24px"
+    },
+    {
+      "name": "bdl-preview-title-body-two-buttons-modal-template-ti",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "message-text-content-title",
+      "fontFamily": "system-ui",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "html",
+      "fontFamily": "system-ui",
+      "fontSize": "100%",
+      "px": 16
+    },
+    {
+      "name": "h4",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "bdl-guide-tooltip-title",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "bdl-menu-header-title",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "modal-title",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "bcs-static-version-sidebar-title",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "left-nav-callout-title",
+      "fontFamily": "system-ui",
+      "fontSize": "16px",
+      "px": 16,
+      "lineHeight": 1
+    },
+    {
+      "name": "flyout-title-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "bdl-preview-title-body-two-buttons-popout-template-t",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "bdl-presence-collaborators-list-title",
+      "fontFamily": "system-ui",
+      "fontSize": "15px",
+      "px": 15
+    },
+    {
+      "name": "h5",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "bdl-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "bdl-guide-tooltip-body",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.57
+    },
+    {
+      "name": "bcs-versions-group-heading",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1
+    },
+    {
+      "name": "message-text-content-body",
+      "fontFamily": "system-ui",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "bdl-font-size-legacy",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "flyout-footer-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "lsb-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "section-title",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "reason-font-size",
+      "fontFamily": "system-ui",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "h6",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "bdl-menu-header-subtitle",
+      "fontFamily": "system-ui",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "bdl-font-size-minimum",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11
+    },
+    {
+      "name": "selector-dropdown-title",
+      "fontFamily": "system-ui",
+      "fontSize": "11px",
+      "px": 11,
+      "lineHeight": 1
+    },
+    {
+      "name": "link-group-title",
+      "fontFamily": "system-ui",
+      "fontSize": "10px",
+      "px": 10,
+      "lineHeight": "28px"
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fbfbfb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#004eac",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#004eac",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fbfbfb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fbfbfb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fbfbfb",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Box UI Elements** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#004eac` brand accent.\n\nTypography centers cleanly on `System UI` (30px display down to 18px body), unified by `8px` base corner radius and stepped `#fff` -> `#fbfbfb` surface layering.\n\nMaintained by **Box**. Source: published token package (https://github.com/box/box-ui-elements), repo https://github.com/box/box-ui-elements. Inventory: **91** colors, **30** typography steps, and **8** documented components (see repository license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fbfbfb` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fbfbfb`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#004eac` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#004eac` with `#f7f7f8` text (7.3:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System UI` headings with `System UI` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fbfbfb` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

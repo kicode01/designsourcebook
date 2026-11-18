@@ -1,0 +1,767 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f7f7f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#009af2",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "calcite-color-neutral-blk-000",
+      "value": "#ffffff"
+    },
+    {
+      "name": "calcite-color-neutral-blk-005",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "calcite-color-neutral-blk-010",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "calcite-color-neutral-blk-020",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "calcite-color-neutral-blk-030",
+      "value": "#dedede"
+    },
+    {
+      "name": "calcite-color-neutral-blk-040",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "calcite-color-neutral-blk-050",
+      "value": "#c9c9c9"
+    },
+    {
+      "name": "calcite-color-neutral-blk-060",
+      "value": "#bfbfbf"
+    },
+    {
+      "name": "calcite-color-neutral-blk-070",
+      "value": "#b5b5b5"
+    },
+    {
+      "name": "calcite-color-neutral-blk-080",
+      "value": "#ababab"
+    },
+    {
+      "name": "calcite-color-neutral-blk-090",
+      "value": "#9e9e9e"
+    },
+    {
+      "name": "calcite-color-neutral-blk-100",
+      "value": "#949494"
+    },
+    {
+      "name": "calcite-color-neutral-blk-110",
+      "value": "#8a8a8a"
+    },
+    {
+      "name": "calcite-color-neutral-blk-120",
+      "value": "#808080"
+    },
+    {
+      "name": "calcite-color-neutral-blk-130",
+      "value": "#757575"
+    },
+    {
+      "name": "calcite-color-neutral-blk-140",
+      "value": "#6b6b6b"
+    },
+    {
+      "name": "calcite-color-neutral-blk-150",
+      "value": "#616161"
+    },
+    {
+      "name": "calcite-color-neutral-blk-160",
+      "value": "#545454"
+    },
+    {
+      "name": "calcite-color-neutral-blk-170",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "calcite-color-neutral-blk-180",
+      "value": "#404040"
+    },
+    {
+      "name": "calcite-color-neutral-blk-190",
+      "value": "#363636"
+    },
+    {
+      "name": "calcite-color-neutral-blk-200",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "calcite-color-neutral-blk-210",
+      "value": "#212121"
+    },
+    {
+      "name": "calcite-color-neutral-blk-220",
+      "value": "#141414"
+    },
+    {
+      "name": "calcite-color-neutral-blk-230",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "calcite-color-neutral-blk-235",
+      "value": "#050505"
+    },
+    {
+      "name": "calcite-color-neutral-blk-240",
+      "value": "#000000"
+    },
+    {
+      "name": "calcite-color-neutral-blk000",
+      "value": "#ffffff"
+    },
+    {
+      "name": "calcite-color-neutral-blk005",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "calcite-color-neutral-blk010",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "calcite-color-neutral-blk020",
+      "value": "#ebebeb"
+    },
+    {
+      "name": "calcite-color-neutral-blk030",
+      "value": "#dedede"
+    },
+    {
+      "name": "calcite-color-neutral-blk040",
+      "value": "#d4d4d4"
+    },
+    {
+      "name": "calcite-color-neutral-blk050",
+      "value": "#c9c9c9"
+    },
+    {
+      "name": "calcite-color-neutral-blk060",
+      "value": "#bfbfbf"
+    },
+    {
+      "name": "calcite-color-neutral-blk070",
+      "value": "#b5b5b5"
+    },
+    {
+      "name": "calcite-color-neutral-blk080",
+      "value": "#ababab"
+    },
+    {
+      "name": "calcite-color-neutral-blk090",
+      "value": "#9e9e9e"
+    },
+    {
+      "name": "calcite-color-neutral-blk100",
+      "value": "#949494"
+    },
+    {
+      "name": "calcite-color-neutral-blk110",
+      "value": "#8a8a8a"
+    },
+    {
+      "name": "calcite-color-neutral-blk120",
+      "value": "#808080"
+    },
+    {
+      "name": "calcite-color-neutral-blk130",
+      "value": "#757575"
+    },
+    {
+      "name": "calcite-color-neutral-blk140",
+      "value": "#6b6b6b"
+    },
+    {
+      "name": "calcite-color-neutral-blk150",
+      "value": "#616161"
+    },
+    {
+      "name": "calcite-color-neutral-blk160",
+      "value": "#545454"
+    },
+    {
+      "name": "calcite-color-neutral-blk170",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "calcite-color-neutral-blk180",
+      "value": "#404040"
+    },
+    {
+      "name": "calcite-color-neutral-blk190",
+      "value": "#363636"
+    },
+    {
+      "name": "calcite-color-neutral-blk200",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "calcite-color-neutral-blk210",
+      "value": "#212121"
+    },
+    {
+      "name": "calcite-color-neutral-blk220",
+      "value": "#141414"
+    },
+    {
+      "name": "calcite-color-neutral-blk230",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "calcite-color-neutral-blk235",
+      "value": "#050505"
+    },
+    {
+      "name": "calcite-color-neutral-blk240",
+      "value": "#000000"
+    },
+    {
+      "name": "calcite-color-surface-1",
+      "value": "#212121"
+    },
+    {
+      "name": "calcite-color-surface-2",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "calcite-color-surface-3",
+      "value": "#363636"
+    },
+    {
+      "name": "calcite-color-surface-4",
+      "value": "#404040"
+    },
+    {
+      "name": "calcite-color-surface-highlight",
+      "value": "#2b465f"
+    },
+    {
+      "name": "calcite-color-background",
+      "value": "#212121"
+    },
+    {
+      "name": "calcite-color-text-1",
+      "value": "#ffffff"
+    },
+    {
+      "name": "calcite-color-text-2",
+      "value": "#bfbfbf"
+    },
+    {
+      "name": "calcite-color-text-3",
+      "value": "#9e9e9e"
+    },
+    {
+      "name": "calcite-color-text-inverse",
+      "value": "#141414"
+    },
+    {
+      "name": "calcite-color-text-link",
+      "value": "#00a0ff"
+    },
+    {
+      "name": "calcite-color-text-highlight",
+      "value": "#d6efff"
+    },
+    {
+      "name": "calcite-color-border-1",
+      "value": "#545454"
+    },
+    {
+      "name": "calcite-color-border-2",
+      "value": "#4a4a4a"
+    },
+    {
+      "name": "calcite-color-border-3",
+      "value": "#404040"
+    },
+    {
+      "name": "calcite-color-border-input",
+      "value": "#757575"
+    },
+    {
+      "name": "calcite-color-border-white",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "calcite-color-brand",
+      "value": "#009af2"
+    },
+    {
+      "name": "calcite-color-brand-hover",
+      "value": "#40b9ff"
+    },
+    {
+      "name": "calcite-color-brand-press",
+      "value": "#80d1ff"
+    },
+    {
+      "name": "calcite-color-status-info",
+      "value": "#00a0ff"
+    },
+    {
+      "name": "calcite-color-status-info-hover",
+      "value": "#40b9ff"
+    },
+    {
+      "name": "calcite-color-status-info-press",
+      "value": "#80d1ff"
+    },
+    {
+      "name": "calcite-color-status-success",
+      "value": "#36da43"
+    },
+    {
+      "name": "calcite-color-status-success-hover",
+      "value": "#6df278"
+    },
+    {
+      "name": "calcite-color-status-success-press",
+      "value": "#9df2a3"
+    },
+    {
+      "name": "calcite-color-status-warning",
+      "value": "#f89927"
+    },
+    {
+      "name": "calcite-color-status-warning-hover",
+      "value": "#ffaf4f"
+    },
+    {
+      "name": "calcite-color-status-warning-press",
+      "value": "#ffc47d"
+    },
+    {
+      "name": "calcite-color-status-danger",
+      "value": "#fe583e"
+    },
+    {
+      "name": "calcite-color-status-danger-hover",
+      "value": "#fe7863"
+    },
+    {
+      "name": "calcite-color-status-danger-press",
+      "value": "#fe9989"
+    },
+    {
+      "name": "calcite-color-surface1",
+      "value": "#212121"
+    },
+    {
+      "name": "calcite-color-surface2",
+      "value": "#2b2b2b"
+    },
+    {
+      "name": "calcite-color-surface3",
+      "value": "#363636"
+    },
+    {
+      "name": "calcite-color-surface4",
+      "value": "#404040"
+    },
+    {
+      "name": "primary",
+      "value": "#009af2"
+    }
+  ],
+  "type": [
+    {
+      "name": "calcite-font-size-relative-7xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "calcite-font-size-relative7xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "calcite-font-size-relative-6xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "calcite-font-size-relative6xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "calcite-font-size-relative-5xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "calcite-font-size-relative5xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "calcite-font-size-relative-4xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "calcite-font-size-relative4xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "calcite-font-size-relative-3xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "calcite-font-size-relative3xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "calcite-font-size-relative-2xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "calcite-font-size-relative2xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "calcite-typography-hierarchy-display-1",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26,
+      "fontWeight": 600,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-typography-hierarchy-heading-1",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26,
+      "fontWeight": 500,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-font-size-xxl",
+      "fontFamily": "sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "calcite-font-size-2xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "calcite-font-size2xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "24px",
+      "px": 24
+    },
+    {
+      "name": "calcite-font-size-xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "20px",
+      "px": 20
+    },
+    {
+      "name": "calcite-font-size-relative-xl",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "calcite-typography-hierarchy-display-2",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-typography-hierarchy-heading-2",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-font-size-lg",
+      "fontFamily": "sans-serif",
+      "fontSize": "18px",
+      "px": 18
+    },
+    {
+      "name": "calcite-font-size-relative-lg",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "calcite-typography-hierarchy-heading-3",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18,
+      "fontWeight": 500,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-font-family-andale-mono",
+      "fontFamily": "\"Andale Mono\"",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-avenir-next-pro",
+      "fontFamily": "\"Avenir Next LT Pro\"",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-avenir-next-world",
+      "fontFamily": "\"Avenir Next World\"",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-avenir-next",
+      "fontFamily": "\"Avenir Next\"",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-avenir",
+      "fontFamily": "Avenir",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-consolas",
+      "fontFamily": "Consolas",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-helvetica-neue",
+      "fontFamily": "\"Helvetica Neue\"",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-lucida-console",
+      "fontFamily": "\"Lucida Console\"",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-monaco",
+      "fontFamily": "Monaco",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-monospace",
+      "fontFamily": "monospace",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-sans-serif",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-size-md",
+      "fontFamily": "sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-size-relative-md",
+      "fontFamily": "sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family",
+      "fontFamily": "\"Avenir Next\", Avenir, \"Helvetica Neue\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "calcite-font-family-code",
+      "fontFamily": "Monaco, Consolas, \"Andale Mono\", \"Lucida Console\", monospace",
+      "px": 16
+    },
+    {
+      "name": "calcite-typography-hierarchy-heading-4",
+      "fontFamily": "sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 500,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-font-size",
+      "fontFamily": "sans-serif",
+      "fontSize": "14px",
+      "px": 14
+    },
+    {
+      "name": "calcite-font-size-relative-base",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "calcite-typography-hierarchy-heading-5",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-typography-hierarchy-body-snug",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-typography-hierarchy-body",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.15
+    },
+    {
+      "name": "calcite-font-size-sm",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "px": 12
+    },
+    {
+      "name": "calcite-font-size-relative-sm",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "calcite-typography-hierarchy-caption",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "lineHeight": 1.375
+    },
+    {
+      "name": "calcite-font-size-xs",
+      "fontFamily": "sans-serif",
+      "fontSize": "10px",
+      "px": 10
+    },
+    {
+      "name": "calcite-font-size-relative-xs",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#009af2",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#009af2",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Calcite Design System** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#009af2` brand accent.\n\nTypography centers cleanly on `System Sans` (64px display down to 14px body), unified by `8px` base corner radius and stepped `#ffffff` -> `#f7f7f7` surface layering.\n\nMaintained by **Esri**. Source: published token package, package `@esri/calcite-design-tokens`. Inventory: **91** colors, **51** typography steps, and **8** documented components (SEE LICENSE.md license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f7f7f7` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#f7f7f7`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#009af2` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#009af2` with `#f7f7f8` text (2.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System Sans` headings with `System Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f7f7f7` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

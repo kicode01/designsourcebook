@@ -1,0 +1,41 @@
+{
+  "name": "saas-ui",
+  "displayName": "Saas UI",
+  "description": "Saas UI — tokens read from https://github.com/saas-js/saas-ui.",
+  "style": "Saas UI — tokens read from https://github.com/saas-js/saas-ui.",
+  "category": "Saas UI",
+  "org": "Saas UI",
+  "theme": "light",
+  "tags": [
+    "published",
+    "saas-ui",
+    "light"
+  ],
+  "homepage": "https://github.com/saas-js/saas-ui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/saas-js/saas-ui — 11 token files, 230 colours harvested, 90 selected.",
+  "source": {
+    "repo": "https://github.com/saas-js/saas-ui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 5,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

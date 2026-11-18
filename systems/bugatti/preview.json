@@ -1,0 +1,381 @@
+{
+  "canvas": "#0d0d0d",
+  "surface": "#1f1f1f",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "#ffffff",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "{rounded.none}",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#ffffff"
+    },
+    {
+      "name": "body",
+      "value": "#cccccc"
+    },
+    {
+      "name": "body-strong",
+      "value": "#e6e6e6"
+    },
+    {
+      "name": "muted",
+      "value": "#999999"
+    },
+    {
+      "name": "muted-soft",
+      "value": "#666666"
+    },
+    {
+      "name": "hairline",
+      "value": "#262626"
+    },
+    {
+      "name": "hairline-strong",
+      "value": "#3a3a3a"
+    },
+    {
+      "name": "canvas",
+      "value": "#000000"
+    },
+    {
+      "name": "surface-soft",
+      "value": "#0d0d0d"
+    },
+    {
+      "name": "surface-card",
+      "value": "#141414"
+    },
+    {
+      "name": "surface-elevated",
+      "value": "#1f1f1f"
+    },
+    {
+      "name": "on-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "on-photo",
+      "value": "#ffffff"
+    },
+    {
+      "name": "link",
+      "value": "#c3d9f3"
+    },
+    {
+      "name": "warning",
+      "value": "#d4a017"
+    },
+    {
+      "name": "success",
+      "value": "#5fa657"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "Bugatti Display, sans-serif",
+      "fontSize": "64px",
+      "px": 64,
+      "fontWeight": 400,
+      "lineHeight": 1.1,
+      "letterSpacing": "4px"
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "Bugatti Display, sans-serif",
+      "fontSize": "48px",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": 1.15,
+      "letterSpacing": "3px"
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "Bugatti Display, sans-serif",
+      "fontSize": "32px",
+      "px": 32,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": "2px"
+    },
+    {
+      "name": "display-sm",
+      "fontFamily": "Bugatti Display, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "1.5px"
+    },
+    {
+      "name": "title-md",
+      "fontFamily": "Bugatti Display, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "1px"
+    },
+    {
+      "name": "title-sm",
+      "fontFamily": "Bugatti Display, sans-serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "letterSpacing": "1.5px"
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "Bugatti Text Regular, serif",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "wordmark",
+      "fontFamily": "Bugatti Display, serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "6px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "Bugatti Text Regular, serif",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button",
+      "fontFamily": "Bugatti Monospace, ui-monospace, monospace",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1,
+      "letterSpacing": "2.5px"
+    },
+    {
+      "name": "nav-link",
+      "fontFamily": "Bugatti Monospace, ui-monospace, monospace",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "2px"
+    },
+    {
+      "name": "caption-uppercase",
+      "fontFamily": "Bugatti Monospace, ui-monospace, monospace",
+      "fontSize": "11px",
+      "px": 11,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "letterSpacing": "2px"
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.pill}",
+      "padding": "14px 32px"
+    },
+    {
+      "key": "button-icon",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "text-link",
+      "kind": "link",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.link}"
+    },
+    {
+      "key": "top-nav",
+      "kind": "nav",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "wordmark-display",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "hero-photo-band",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "padding": "96px"
+    },
+    {
+      "key": "caption-overlay",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}"
+    },
+    {
+      "key": "career-callout-card",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "16px"
+    },
+    {
+      "key": "model-photo-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "newsroom-article-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "24px"
+    },
+    {
+      "key": "career-listing-row",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "padding": "24px 0"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "12px 0"
+    },
+    {
+      "key": "spec-cell",
+      "kind": "component",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "padding": "24px 0"
+    },
+    {
+      "key": "date-pill",
+      "kind": "badge",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.muted}"
+    },
+    {
+      "key": "category-tag",
+      "kind": "badge",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.muted}"
+    },
+    {
+      "key": "cta-band-photo",
+      "kind": "button",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.on-dark}",
+      "padding": "80px"
+    },
+    {
+      "key": "footer",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas}",
+      "textColor": "{colors.muted}",
+      "padding": "64px"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#1f1f1f",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#1f1f1f",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#0d0d0d",
+      "textColor": "#f7f7f8",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "#0d0d0d",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#1f1f1f",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "Bugatti's marketing surface is the most austere interface in luxury automotive: a near-pure black canvas (`{colors.canvas}` — #000000) holding white uppercase **letterspaced** display type and full-bleed automotive photography. The system has no accent color, no surface card decoration, no shadows, no gradients, no chrome — only **photography, typography, and the brand wordmark**. Every other luxury auto site in this category (BMW M, Aston Martin, Lamborghini) uses some form of accent color or signature element; Bugatti uses nothing. The empty space, the photograph, and the precisely-tracked Bugatti Display headline ARE the brand.\r\n\r\nThe system runs **three custom Bugatti typefaces**: **Bugatti Display** (display headlines, the \"BUGATTI\" wordmark, all caps with wide tracking), **Bugatti Text Regular** (body paragraphs, a serif text face), and **Bugatti Monospace** (button labels, navigation, captions, dates — anywhere precision and machined feel matters). The split is deliberate and unbreakable: never use Bugatti Text in a button, never use Bugatti Monospace in a paragraph.\r\n\r\nDisplay sizes use weight 400 (regular) — never bold. Visual emphasis comes from **size and tracking**, not weight. Letter-spacing on the wordmark is 6px; on display headlines 2-4px; on uppercase labels 2-2.5px. Tight tracking is a brand violation. The wide spacing creates the \"engineered precision\" feel that no other luxury maker matches.\r\n\r\n**Key Characteristics:**\r\n- Pure black canvas (`{colors.canvas}` — #000000) with white type. The system does not have a light mode.\r\n- Three custom Bugatti typefaces: **Display** (uppercase headlines + wordmark), **Text Regular** (body serif), **Monospace** (buttons, captions, nav).\r\n- All display headlines are UPPERCASE with wide letter-spacing (2-4px). Body copy stays sentence-case at standard tracking.\r\n- No accent color. The only non-monochrome color anywhere on the site is `{colors.link}` (#c3d9f3) — a desaturated ice-blue used on inline anchor links, and even that appears rarely.\r\n- Buttons are pill-shaped (`{rounded.pill}`) with **transparent background** and a 1px white outline. Bugatti is the only luxury-auto brand whose primary CTA is fully transparent.\r\n- Photography is the only depth element. No drop shadows. No gradients. No card surfaces. Surface cards are `{colors.surface-card}` (#141414) at most — a barely-different-from-black tone.\r\n- Section rhythm is generous — `{spacing.section}` (120px) between major bands, longer than most marketing sites because Bugatti's pages are mostly photography with minimal text density.",
+  "dos": "### Do\r\n- Anchor every page with full-bleed automotive photography. The cars are the brand voltage; chrome backs off entirely.\r\n- Keep all display headlines in UPPERCASE Bugatti Display with 2-4px letter-spacing. The wordmark gets 6px.\r\n- Use Bugatti Display for headlines, Bugatti Text Regular (serif!) for body, Bugatti Monospace for buttons + captions + nav. The trinity is unbreakable.\r\n- Keep `{components.button-primary}` transparent with a 1px white outline. The transparent pill IS the brand button.\r\n- Use weight 400 everywhere. Bold breaks the brand voice — the system has no bold weight role.\r\n- Use `{spacing.section}` (120px) between major editorial bands. The whitespace is part of the brand.\r\n- Reserve `{colors.link}` (#c3d9f3) for inline anchor links only. It's the system's only non-monochrome color.\r\n\r\n### Don't\r\n- Don't introduce any accent color outside `{colors.link}`. Bugatti's brand discipline is total monochrome + photography. Adding a brand-blue or brand-red breaks the contract.\r\n- Don't bold any type. The system has no bold weight — every typeface stays at 400.\r\n- Don't fill primary buttons. Transparent + outline only. A solid white button reads as off-brand.\r\n- Don't compress whitespace between sections. The 120px rhythm is part of the editorial pacing.\r\n- Don't use rounded corners outside buttons. Cards, photos, inputs all stay at 0px. Rounded cards read as consumer-tech, not luxury-engineered.\r\n- Don't tighten letter-spacing on display headlines. 2-4px tracking on Bugatti Display is non-negotiable.\r\n- Don't use Bugatti Display in a button (use Bugatti Monospace) or Bugatti Monospace in a paragraph (use Bugatti Text Regular). The trinity split is the brand voice."
+}

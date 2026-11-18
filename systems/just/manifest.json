@@ -1,0 +1,42 @@
+{
+  "name": "just",
+  "displayName": "PIE Design System",
+  "description": "Just PIE Design System — tokens imported from @justeat/pie-design-tokens.",
+  "style": "Just PIE Design System — tokens imported from @justeat/pie-design-tokens.",
+  "category": "Just",
+  "org": "Just",
+  "theme": "light",
+  "tags": [
+    "published",
+    "just",
+    "light"
+  ],
+  "homepage": "https://github.com/justeattakeaway/pie/packages/tools/pie-design-tokens#readme",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @justeat/pie-design-tokens@7.16.0 + @justeattakeaway/pie-css (4 token files, 828 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@justeat/pie-design-tokens",
+    "version": "7.16.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 36,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

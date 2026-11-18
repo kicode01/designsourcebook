@@ -1,0 +1,42 @@
+{
+  "name": "fremtind",
+  "displayName": "Jokul",
+  "description": "Fremtind Forsikring Jokul — tokens imported from @fremtind/jkl-core.",
+  "style": "Fremtind Forsikring Jokul — tokens imported from @fremtind/jkl-core.",
+  "category": "Fremtind Forsikring",
+  "org": "Fremtind Forsikring",
+  "theme": "light",
+  "tags": [
+    "published",
+    "fremtind-forsikring",
+    "light"
+  ],
+  "homepage": "https://github.com/fremtind/jokul/tree/pre-1.0/packages/core",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @fremtind/jkl-core@14.10.9 (8 token files, 275 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@fremtind/jkl-core",
+    "version": "14.10.9"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 87,
+    "components": 9
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "watercss",
+  "displayName": "Water.css",
+  "description": "Water.css — tokens imported from water.css.",
+  "style": "Water.css — tokens imported from water.css.",
+  "category": "Water.css",
+  "org": "Water.css",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "water-css",
+    "dark"
+  ],
+  "homepage": "https://github.com/kognise/water.css",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from water.css@2.1.1 (2 token files, 19 colours harvested, 17 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "water.css",
+    "version": "2.1.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 18,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

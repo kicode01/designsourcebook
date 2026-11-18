@@ -1,0 +1,997 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#FFFFFF",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#97144D",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "palette-common-background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-common-on-background",
+      "value": "#282828"
+    },
+    {
+      "name": "palette-primary-main",
+      "value": "#97144D"
+    },
+    {
+      "name": "palette-primary-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-primary-light",
+      "value": "rgb(171, 67, 112)"
+    },
+    {
+      "name": "palette-primary-dark",
+      "value": "rgb(105, 14, 53)"
+    },
+    {
+      "name": "palette-secondary-main",
+      "value": "#ED1164"
+    },
+    {
+      "name": "palette-secondary-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-secondary-light",
+      "value": "rgb(240, 64, 131)"
+    },
+    {
+      "name": "palette-secondary-dark",
+      "value": "rgb(165, 11, 70)"
+    },
+    {
+      "name": "palette-tertiary-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-error-main",
+      "value": "#EB0000"
+    },
+    {
+      "name": "palette-error-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-error-light",
+      "value": "rgb(239, 51, 51)"
+    },
+    {
+      "name": "palette-error-dark",
+      "value": "rgb(164, 0, 0)"
+    },
+    {
+      "name": "palette-warning-main",
+      "value": "#D84008"
+    },
+    {
+      "name": "palette-warning-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-warning-light",
+      "value": "rgb(223, 102, 57)"
+    },
+    {
+      "name": "palette-warning-dark",
+      "value": "rgb(151, 44, 5)"
+    },
+    {
+      "name": "palette-info-main",
+      "value": "#145599"
+    },
+    {
+      "name": "palette-info-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-info-light",
+      "value": "rgb(67, 119, 173)"
+    },
+    {
+      "name": "palette-info-dark",
+      "value": "rgb(14, 59, 107)"
+    },
+    {
+      "name": "palette-success-main",
+      "value": "#278829"
+    },
+    {
+      "name": "palette-success-contrast-text",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-success-light",
+      "value": "rgb(82, 159, 83)"
+    },
+    {
+      "name": "palette-success-dark",
+      "value": "rgb(27, 95, 28)"
+    },
+    {
+      "name": "palette-surface-main",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-surface-contrast-text",
+      "value": "#282828"
+    },
+    {
+      "name": "palette-text-primary",
+      "value": "#282828"
+    },
+    {
+      "name": "palette-text-secondary",
+      "value": "#575757"
+    },
+    {
+      "name": "palette-text-tertiary",
+      "value": "#6E6E6E"
+    },
+    {
+      "name": "palette-text-disabled",
+      "value": "#B4B4B4"
+    },
+    {
+      "name": "palette-background-default",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-background-paper",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette-alert-error-color",
+      "value": "rgb(95, 20, 20)"
+    },
+    {
+      "name": "palette-alert-info-color",
+      "value": "rgb(26, 47, 69)"
+    },
+    {
+      "name": "palette-alert-success-color",
+      "value": "rgb(32, 63, 33)"
+    },
+    {
+      "name": "palette-alert-warning-color",
+      "value": "rgb(89, 40, 22)"
+    },
+    {
+      "name": "palette-alert-error-filled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "palette-alert-info-filled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "palette-alert-success-filled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "palette-alert-warning-filled-color",
+      "value": "#fff"
+    },
+    {
+      "name": "palette-alert-error-standard-bg",
+      "value": "rgb(253, 234, 234)"
+    },
+    {
+      "name": "palette-alert-info-standard-bg",
+      "value": "rgb(236, 241, 246)"
+    },
+    {
+      "name": "palette-alert-success-standard-bg",
+      "value": "rgb(237, 245, 237)"
+    },
+    {
+      "name": "palette-alert-warning-standard-bg",
+      "value": "rgb(251, 239, 235)"
+    },
+    {
+      "name": "colour-action-primary",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-action-secondary",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-surface-background",
+      "value": "#282828"
+    },
+    {
+      "name": "colour-surface-primary",
+      "value": "#000000"
+    },
+    {
+      "name": "colour-surface-secondary",
+      "value": "#282828"
+    },
+    {
+      "name": "colour-surface-tertiary",
+      "value": "#F9F9F9"
+    },
+    {
+      "name": "colour-typo-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colour-typo-secondary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colour-typo-action-primary",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-typo-action-secondary",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-typo-on-surface",
+      "value": "#282828"
+    },
+    {
+      "name": "colour-typo-disabled",
+      "value": "#9D9D9D"
+    },
+    {
+      "name": "colour-typo-on-surface-dynamic",
+      "value": "#282828"
+    },
+    {
+      "name": "colour-neutral1",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-neutral2",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-neutral3",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-neutral4",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-neutral5",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-neutral6",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-icon-warning",
+      "value": "#A0E2F7"
+    },
+    {
+      "name": "colour-icon-action-primary",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-icon-action-secondary",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-icon-on-surface",
+      "value": "#282828"
+    },
+    {
+      "name": "colour-icon-disabled",
+      "value": "#9D9D9D"
+    },
+    {
+      "name": "colour-icon-on-surface-dynamic",
+      "value": "#282828"
+    },
+    {
+      "name": "colour-stroke-secondary-selected",
+      "value": "#68EBB2"
+    },
+    {
+      "name": "colour-stroke-disabled",
+      "value": "#9D9D9D"
+    },
+    {
+      "name": "colour-support-warning",
+      "value": "#A0E2F7"
+    },
+    {
+      "name": "colour-support-negative-neutral",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-support-positive-neutral",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-support-warning-neutral",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-support-typical-neutral",
+      "value": "#0C1015"
+    },
+    {
+      "name": "colour-state-selected-primary-pressed",
+      "value": "#CFFFEA"
+    },
+    {
+      "name": "colour-state-selected-secondary-hover",
+      "value": "#081919"
+    },
+    {
+      "name": "colour-state-selected-secondary-pressed",
+      "value": "#154B3F"
+    },
+    {
+      "name": "colour-state-selected-visited-text-link",
+      "value": "#780DBB"
+    },
+    {
+      "name": "colour-state-disabled-surface",
+      "value": "#404040"
+    },
+    {
+      "name": "palette-slider-secondary-track",
+      "value": "rgb(248, 164, 196)"
+    },
+    {
+      "name": "palette-linear-progress-warning-bg",
+      "value": "rgb(240, 182, 161)"
+    },
+    {
+      "name": "palette-slider-info-track",
+      "value": "rgb(165, 190, 216)"
+    },
+    {
+      "name": "palette-switch-secondary-disabled-color",
+      "value": "rgb(248, 164, 196)"
+    },
+    {
+      "name": "palette-alert-info-icon-color",
+      "value": "#145599"
+    },
+    {
+      "name": "palette-alert-warning-filled-bg",
+      "value": "#D84008"
+    },
+    {
+      "name": "primary",
+      "value": "#97144D"
+    }
+  ],
+  "type": [
+    {
+      "name": "typo-font-size-scorched",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "4.75rem",
+      "px": 76
+    },
+    {
+      "name": "typo-font-size-torrid",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "typo-display-bold-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "typo-display-bold-italic-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "3.5rem",
+      "px": 56
+    },
+    {
+      "name": "typo-display-bold-italic-medium-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "typo-font-size-blazzing",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "typo-display-bold-medium-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "typo-font-size-hot",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "2.75rem",
+      "px": 44
+    },
+    {
+      "name": "typo-display-bold-small-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "typo-font-size-tropical",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "typo-display-bold-italic-small-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "typo-heading-bold-extra-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "typo-font-size-warm",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "typo-heading-bold-italic-extra-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "typo-heading-bold-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typo-heading-bold-italic-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typo-font-size-mild",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typo-heading-bold-italic-medium-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "typo-font-size-cool",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "typo-heading-bold-medium-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "typo-heading-bold-italic-small-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "typo-heading-bold-small-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "typo-font-size-cold",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-display-bold-large",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-display-bold-medium",
+      "fontFamily": "\"700 3rem/1.125 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-display-bold-small",
+      "fontFamily": "\"700 2.5rem/1.1 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-display-bold-italic-large",
+      "fontFamily": "\"italic 700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-display-bold-italic-medium",
+      "fontFamily": "\"italic 700 3rem/1.125 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-display-bold-italic-small",
+      "fontFamily": "\"italic 700 2.5rem/1.1 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-extra-large",
+      "fontFamily": "\"700 2rem/1.3125 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-large",
+      "fontFamily": "\"700 1.5rem/1.3333333333333333 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-medium",
+      "fontFamily": "\"700 1.25rem/1.3 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-small",
+      "fontFamily": "\"700 1.125rem/1.3333333333333333 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-extra-small",
+      "fontFamily": "\"700 1rem/1.25 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-italic-extra-large",
+      "fontFamily": "\"italic 700 2rem/1.3125 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-italic-large",
+      "fontFamily": "\"italic 700 1.5rem/1.3333333333333333 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-italic-medium",
+      "fontFamily": "\"italic 700 1.25rem/1.3 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-italic-small",
+      "fontFamily": "\"italic 700 1.125rem/1.3333333333333333 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-heading-bold-italic-extra-small",
+      "fontFamily": "\"italic 700 1rem/1.25 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body-regular-large",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body-regular-medium",
+      "fontFamily": "\"400 0.875rem/1.4285714285714286 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body-regular-small",
+      "fontFamily": "\"400 0.75rem/1.5 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body-bold-large",
+      "fontFamily": "\"700 1rem/1.5 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body-bold-medium",
+      "fontFamily": "\"700 0.875rem/1.4285714285714286 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body-bold-small",
+      "fontFamily": "\"700 0.75rem/1.5 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body1",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "font-body2",
+      "fontFamily": "\"400 0.875rem/1.43 \"Lato\", Helvetica",
+      "px": 16
+    },
+    {
+      "name": "body",
+      "fontFamily": "Lato, Helvetica",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "typo-heading-bold-extra-small-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typo-body-bold-large-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-italic-extra-small-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typo-font-size-bitter-cold",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typo-body-regular-large-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typo-support-bold-text-button-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-bold-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-extra-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-subheading-semibold-default-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-bold-medium-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-support-regular-footnote-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-italic-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-support-black-product-name-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-extra-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-display-bold-medium-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-support-regular-info-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-medium-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-regular-medium-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-display-bold-italic-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-italic-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-display-bold-italic-medium-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-regular-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-display-bold-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-regular-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-subheading-semibold-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-display-bold-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-italic-extra-large-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-display-bold-italic-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-bold-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-italic-extra-small-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-support-regular-metadata-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-heading-bold-italic-medium-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-font-family",
+      "fontFamily": "Lato, Helvetica",
+      "px": 16
+    },
+    {
+      "name": "typo-body-bold-medium-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "typo-font-size-frigid",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "typo-subheading-semibold-large-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "typo-body-regular-medium-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "typo-body-regular-small-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-font-size-frostbite",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-support-black-product-name-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-support-bold-text-button-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-support-regular-metadata-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-body-bold-small-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-subheading-semibold-default-font-size",
+      "fontFamily": "\"700 3.5rem/1.1071428571428572 \"Lato\", Helvetica",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "typo-support-regular-info-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.688rem",
+      "px": 11.008
+    },
+    {
+      "name": "typo-font-size-blizzard",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.688rem",
+      "px": 11.008
+    },
+    {
+      "name": "typo-font-size-ice-age",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "typo-support-regular-footnote-font-size",
+      "fontFamily": "\"400 1rem/1.5 \"Lato\", Helvetica",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "button",
+      "kind": "button",
+      "textColor": "#282828"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#97144D",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#97144D",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**SubZero** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#97144D` brand accent.\n\nTypography centers cleanly on `400 1rem/1.5 Lato` (76px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Axis Bank**. Source: live stylesheet extraction (https://www.subzero.axis.bank.in/). Inventory: **91** colors, **98** typography steps, and **9** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#FFFFFF`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#97144D` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#97144D` with `#f7f7f8` text (7.8:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `400 1rem/1.5 Lato` headings with `400 1rem/1.5 Lato` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#FFFFFF` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

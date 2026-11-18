@@ -1,0 +1,1132 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f0f8ff",
+  "text": "#8b5a0e",
+  "muted": "#8b5a0e",
+  "brand": "#9e102c",
+  "border": "#f5f5f5",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "db-alert-border-error",
+      "value": "#fbd0d8"
+    },
+    {
+      "name": "db-slider-range-surface-disabled",
+      "value": "#e8ecf0"
+    },
+    {
+      "name": "db-banner-info-surface",
+      "value": "#8a63bf"
+    },
+    {
+      "name": "db-banner-warning-surface",
+      "value": "#facb66"
+    },
+    {
+      "name": "db-banner-warning-text-active",
+      "value": "#11171c"
+    },
+    {
+      "name": "db-tooltip-link-text-hover",
+      "value": "#8acaff"
+    },
+    {
+      "name": "db-surface-base",
+      "value": "#ffffff"
+    },
+    {
+      "name": "db-text-subtle",
+      "value": "#6f6f6f"
+    },
+    {
+      "name": "db-border-subtle",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "db-accent-surface-strong",
+      "value": "#2272b4"
+    },
+    {
+      "name": "db-accent-border",
+      "value": "#2272b4"
+    },
+    {
+      "name": "db-negative-surface-strong",
+      "value": "#c82d4c"
+    },
+    {
+      "name": "db-negative-border",
+      "value": "#c82d4c"
+    },
+    {
+      "name": "db-caution-surface-hover",
+      "value": "#be501e"
+    },
+    {
+      "name": "db-caution-border-hover",
+      "value": "#be501e"
+    },
+    {
+      "name": "db-positive-surface-active",
+      "value": "#093919"
+    },
+    {
+      "name": "db-positive-border-active",
+      "value": "#115026"
+    },
+    {
+      "name": "db-color-tag-text-lemon",
+      "value": "#4F3422"
+    },
+    {
+      "name": "db-tree-scroll-to-top-surface",
+      "value": "#f0f8ff"
+    },
+    {
+      "name": "db-color-action-danger-default-border-hover",
+      "value": "#9e102c"
+    },
+    {
+      "name": "db-color-action-danger-primary-background-hover",
+      "value": "#9e102c"
+    },
+    {
+      "name": "db-color-action-default-border-press",
+      "value": "#04355d"
+    },
+    {
+      "name": "db-color-action-disabled-text",
+      "value": "#a2a2a2"
+    },
+    {
+      "name": "db-color-action-primary-background-press",
+      "value": "#04355d"
+    },
+    {
+      "name": "db-color-action-tertiary-text-hover",
+      "value": "#0e538b"
+    },
+    {
+      "name": "db-color-background-warning",
+      "value": "#fff9eb"
+    },
+    {
+      "name": "db-color-progress-fill-primary",
+      "value": "#4299e0"
+    },
+    {
+      "name": "db-color-text-validation-danger",
+      "value": "#c82d4c"
+    },
+    {
+      "name": "dubois-neutral100",
+      "value": "#EBEBEB"
+    },
+    {
+      "name": "dubois-neutral600",
+      "value": "#525252"
+    },
+    {
+      "name": "dubois-light-action-danger-default-border-hover",
+      "value": "#9E102C"
+    },
+    {
+      "name": "dubois-light-action-danger-primary-background-hover",
+      "value": "#9E102C"
+    },
+    {
+      "name": "dubois-light-action-default-border-press",
+      "value": "#04355D"
+    },
+    {
+      "name": "dubois-light-action-disabled-text",
+      "value": "#A2A2A2"
+    },
+    {
+      "name": "dubois-light-action-primary-background-press",
+      "value": "#04355D"
+    },
+    {
+      "name": "dubois-light-action-tertiary-text-hover",
+      "value": "#0E538B"
+    },
+    {
+      "name": "dubois-light-background-warning",
+      "value": "#FFF9EB"
+    },
+    {
+      "name": "dubois-light-progress-fill-primary",
+      "value": "#4299E0"
+    },
+    {
+      "name": "dubois-light-text-validation-success",
+      "value": "#277C43"
+    },
+    {
+      "name": "dubois-light-background-validation-warning",
+      "value": "#FFF9EB"
+    },
+    {
+      "name": "dubois-dark-action-danger-default-border-default",
+      "value": "#E65B77"
+    },
+    {
+      "name": "dubois-dark-action-danger-primary-background-default",
+      "value": "#E65B77"
+    },
+    {
+      "name": "dubois-dark-action-default-border-hover",
+      "value": "#8ACAFF"
+    },
+    {
+      "name": "dubois-dark-action-disabled-border",
+      "value": "#445461"
+    },
+    {
+      "name": "dubois-dark-action-primary-background-hover",
+      "value": "#8ACAFF"
+    },
+    {
+      "name": "dubois-dark-action-tertiary-text-default",
+      "value": "#4299E0"
+    },
+    {
+      "name": "dubois-dark-border-accessible",
+      "value": "#C0CDD8"
+    },
+    {
+      "name": "dubois-dark-table-background-unselected-default",
+      "value": "#11171C"
+    },
+    {
+      "name": "dubois-dark-text-validation-warning",
+      "value": "#DE7921"
+    },
+    {
+      "name": "dubois-dark-text-validation-info",
+      "value": "#92A4B3"
+    },
+    {
+      "name": "colors-tag-text-default",
+      "value": "#2e2a24"
+    },
+    {
+      "name": "colors-tag-text-teal",
+      "value": "#0D3D38"
+    },
+    {
+      "name": "border-decorative",
+      "value": "#e4dacb"
+    },
+    {
+      "name": "action-danger-default-border-hover",
+      "value": "#c24537"
+    },
+    {
+      "name": "action-danger-primary-background-hover",
+      "value": "#c24537"
+    },
+    {
+      "name": "action-default-border-press",
+      "value": "#9e4526"
+    },
+    {
+      "name": "action-disabled-text",
+      "value": "#b9ad9d"
+    },
+    {
+      "name": "action-primary-background-press",
+      "value": "#9e4526"
+    },
+    {
+      "name": "action-tertiary-text-hover",
+      "value": "#9c5b2e"
+    },
+    {
+      "name": "border-danger",
+      "value": "#b23a2e"
+    },
+    {
+      "name": "table-background-unselected-default",
+      "value": "#f7f1e7"
+    },
+    {
+      "name": "text-validation-warning",
+      "value": "#8b5a0e"
+    },
+    {
+      "name": "neutral300",
+      "value": "#CBCBCB"
+    },
+    {
+      "name": "neutral700",
+      "value": "#262626"
+    },
+    {
+      "name": "tag-text-coral",
+      "value": "#64172B"
+    },
+    {
+      "name": "tag-text-purple",
+      "value": "#2F265F"
+    },
+    {
+      "name": "db-banner-promo-icon",
+      "value": "#8a63bf"
+    },
+    {
+      "name": "db-viz-category-2",
+      "value": "#FFD54F"
+    },
+    {
+      "name": "db-viz-sequence-3",
+      "value": "#a3e3f7"
+    },
+    {
+      "name": "db-color-tag-icon-brown",
+      "value": "#815E46"
+    },
+    {
+      "name": "db-color-action-default-icon-default",
+      "value": "#525252"
+    },
+    {
+      "name": "db-color-tag-icon-hover",
+      "value": "#525252"
+    },
+    {
+      "name": "dubois-coral",
+      "value": "#C83243"
+    },
+    {
+      "name": "dubois-grey200",
+      "value": "#D1D9E1"
+    },
+    {
+      "name": "dubois-lime",
+      "value": "#308613"
+    },
+    {
+      "name": "dubois-red800",
+      "value": "#630316"
+    },
+    {
+      "name": "dubois-yellow800",
+      "value": "#5F1B02"
+    },
+    {
+      "name": "dubois-light-icon-trending",
+      "value": "#FF3621"
+    },
+    {
+      "name": "dubois-light-tag-lemon",
+      "value": "#FACB66"
+    },
+    {
+      "name": "dubois-dark-action-icon-icon-press",
+      "value": "#D1D9E1"
+    },
+    {
+      "name": "dubois-dark-tag-icon-press",
+      "value": "#92A4B3"
+    },
+    {
+      "name": "colors-tag-icon-lemon",
+      "value": "#915830"
+    },
+    {
+      "name": "radio-interactive-press",
+      "value": "#0D4F85"
+    },
+    {
+      "name": "tag-pink",
+      "value": "#B45091"
+    },
+    {
+      "name": "action-tertiary-icon-hover",
+      "value": "#9c5b2e"
+    },
+    {
+      "name": "blue500",
+      "value": "#4299E0"
+    },
+    {
+      "name": "green600",
+      "value": "#277C43"
+    },
+    {
+      "name": "grey650",
+      "value": "#37444F"
+    },
+    {
+      "name": "red300",
+      "value": "#FBD0D8"
+    },
+    {
+      "name": "yellow300",
+      "value": "#F8D4A5"
+    },
+    {
+      "name": "primary",
+      "value": "#9e102c"
+    }
+  ],
+  "type": [
+    {
+      "name": "db-font-size-4xl",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "db-font-size-3xl",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "db-typography-h1-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "36px",
+      "px": 36,
+      "fontWeight": 600,
+      "lineHeight": 1.23
+    },
+    {
+      "name": "db-font-size-2xl",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "db-typography-h2-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 600,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "db-typography-h3-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1.4375rem",
+      "px": 23
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "23px",
+      "px": 23,
+      "fontWeight": 600,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "db-font-size-xl",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "db-typography-h4-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1.1875rem",
+      "px": 19
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "19px",
+      "px": 19,
+      "fontWeight": 600,
+      "lineHeight": 1.4
+    },
+    {
+      "name": "db-avatar-font-size-xl",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "db-font-size-lg",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "du-bois-dark-steps-item-title",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "lineHeight": "40px"
+    },
+    {
+      "name": "du-bois-light-steps-item-title",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "18px",
+      "px": 18,
+      "lineHeight": "40px"
+    },
+    {
+      "name": "db-typography-code-font-family",
+      "fontFamily": "monospace",
+      "px": 16
+    },
+    {
+      "name": "db-avatar-font-size-lg",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "db-breadcrumb-separator-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "db-font-family",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "db-numeric-font-family",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "db-mono-font-family",
+      "fontFamily": "ui-monospace, SFMono-Regular, Menlo, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "monospace",
+      "px": 16
+    },
+    {
+      "name": "db-typography-h5-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.9375rem",
+      "px": 15
+    },
+    {
+      "name": "db-btn-icon-only-font-size",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.9375rem",
+      "px": 15
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "15px",
+      "px": 15,
+      "fontWeight": 600,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "db-typography-kbd-font-size",
+      "fontFamily": "monospace",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "db-avatar-font-size-md",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "db-typography-code-font-size",
+      "fontFamily": "monospace",
+      "fontSize": "85%",
+      "px": 13.6
+    },
+    {
+      "name": "db-font-size-base",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "db-font-size-md",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.8125rem",
+      "px": 13
+    },
+    {
+      "name": "du-bois-dark-dropdown-menu-submenu-title",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": "22px"
+    },
+    {
+      "name": "du-bois-dark-menu-item-group-title",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "du-bois-dark-steps-item-subtitle",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "du-bois-light-dropdown-menu-submenu-title",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": "22px"
+    },
+    {
+      "name": "du-bois-light-menu-item-group-title",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "13px",
+      "px": 13,
+      "lineHeight": "20px"
+    },
+    {
+      "name": "du-bois-light-steps-item-subtitle",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "13px",
+      "px": 13
+    },
+    {
+      "name": "db-font-size-sm",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "db-font-size-xs",
+      "fontFamily": "\"DM Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "fontSize": "0.6875rem",
+      "px": 11
+    }
+  ],
+  "components": [
+    {
+      "key": "du-bois-light-btn",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#161616",
+      "rounded": "4px",
+      "padding": "0 16px",
+      "border": "1px solid transparent",
+      "shadow": "0 2px 0 rgba(0, 0, 0, 0.015)"
+    },
+    {
+      "key": "du-bois-light-tag",
+      "kind": "badge",
+      "backgroundColor": "#fafafa",
+      "textColor": "#161616",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "1px solid #EBEBEB"
+    },
+    {
+      "key": "du-bois-light-tabs",
+      "kind": "tabs",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-alert",
+      "kind": "alert",
+      "textColor": "#161616",
+      "rounded": "4px",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-input",
+      "kind": "input",
+      "backgroundColor": "#fff",
+      "textColor": "#161616",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "1px solid #EBEBEB"
+    },
+    {
+      "key": "du-bois-light-radio",
+      "kind": "radio",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-table",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#161616",
+      "rounded": "4px",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-select",
+      "kind": "select",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-switch",
+      "kind": "switch",
+      "backgroundColor": "rgba(0, 0, 0, 0.25)",
+      "textColor": "#161616",
+      "rounded": "100px",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "du-bois-light-tag-red-2",
+      "kind": "badge",
+      "backgroundColor": "#fff1f0",
+      "textColor": "#cf1322",
+      "border": "1px solid #ffa39e"
+    },
+    {
+      "key": "du-bois-light-tooltip",
+      "kind": "tooltip",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-btn-link-2",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#2272B4",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "du-bois-light-btn-text-3",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#161616",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "du-bois-light-checkbox",
+      "kind": "checkbox",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-tag-pink-3",
+      "kind": "badge",
+      "backgroundColor": "#fff0f6",
+      "textColor": "#c41d7f",
+      "border": "1px solid #ffadd2"
+    },
+    {
+      "key": "du-bois-light-tag-gold-4",
+      "kind": "badge",
+      "backgroundColor": "#fffbe6",
+      "textColor": "#d48806",
+      "border": "1px solid #ffe58f"
+    },
+    {
+      "key": "du-bois-light-progress",
+      "kind": "progress",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-btn-ghost-4",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#161616",
+      "border": "1px solid #EBEBEB"
+    },
+    {
+      "key": "du-bois-light-alert-info-2",
+      "kind": "alert",
+      "backgroundColor": "#F7F7F7",
+      "border": "1px solid #C0CDD8"
+    },
+    {
+      "key": "du-bois-light-pagination",
+      "kind": "nav",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-breadcrumb-2",
+      "kind": "nav",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-alert-error-3",
+      "kind": "alert",
+      "backgroundColor": "#FFF5F7",
+      "border": "1px solid #FBD0D8"
+    },
+    {
+      "key": "du-bois-light-select-item-2",
+      "kind": "select",
+      "textColor": "#161616",
+      "padding": "5px 8px"
+    },
+    {
+      "key": "du-bois-light-input-group-2",
+      "kind": "input",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-radio-group-2",
+      "kind": "radio",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-light-radio-inner-3",
+      "kind": "radio",
+      "backgroundColor": "#fff",
+      "rounded": "50%",
+      "border": "1px solid #EBEBEB"
+    },
+    {
+      "key": "du-bois-light-progress-bg-2",
+      "kind": "progress",
+      "backgroundColor": "#1890ff",
+      "rounded": "100px"
+    },
+    {
+      "key": "du-bois-light-select-arrow-3",
+      "kind": "select",
+      "textColor": "rgba(0, 0, 0, 0.25)"
+    },
+    {
+      "key": "du-bois-light-picker-panel",
+      "kind": "panel",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "border": "1px solid #f0f0f0"
+    },
+    {
+      "key": "du-bois-light-table-footer-2",
+      "kind": "table",
+      "backgroundColor": "#fafafa",
+      "textColor": "rgba(0, 0, 0, 0.85)",
+      "rounded": "0 0 4px 4px",
+      "padding": "16px 16px"
+    },
+    {
+      "key": "du-bois-light-tabs-ink-bar-2",
+      "kind": "tabs",
+      "backgroundColor": "#2272B4"
+    },
+    {
+      "key": "du-bois-light-switch-inner-2",
+      "kind": "switch",
+      "textColor": "#fff"
+    },
+    {
+      "key": "du-bois-light-tooltip-inner-2",
+      "kind": "tooltip",
+      "backgroundColor": "rgba(0, 0, 0, 0.75)",
+      "textColor": "#fff",
+      "rounded": "4px",
+      "padding": "6px 8px",
+      "shadow": "0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "key": "du-bois-light-progress-text-3",
+      "kind": "progress",
+      "textColor": "#161616"
+    },
+    {
+      "key": "du-bois-light-table-summary-3",
+      "kind": "table",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "du-bois-light-tabs-dropdown-3",
+      "kind": "select",
+      "textColor": "#161616",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-btn",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#E8ECF0",
+      "rounded": "4px",
+      "padding": "0 16px",
+      "border": "1px solid transparent",
+      "shadow": "0 2px 0 rgba(0, 0, 0, 0.015)"
+    },
+    {
+      "key": "du-bois-dark-tag",
+      "kind": "badge",
+      "backgroundColor": "rgba(255, 255, 255, 0.04)",
+      "textColor": "#E8ECF0",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "1px solid #1F272D"
+    },
+    {
+      "key": "du-bois-dark-tabs",
+      "kind": "tabs",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-alert",
+      "kind": "alert",
+      "textColor": "#E8ECF0",
+      "rounded": "4px",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-input",
+      "kind": "input",
+      "backgroundColor": "transparent",
+      "textColor": "#E8ECF0",
+      "rounded": "4px",
+      "padding": "0",
+      "border": "1px solid #1F272D"
+    },
+    {
+      "key": "du-bois-dark-radio",
+      "kind": "radio",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-table",
+      "kind": "table",
+      "backgroundColor": "#141414",
+      "textColor": "#E8ECF0",
+      "rounded": "4px",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-select",
+      "kind": "select",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-switch",
+      "kind": "switch",
+      "backgroundColor": "rgba(255, 255, 255, 0.3)",
+      "textColor": "#E8ECF0",
+      "rounded": "100px",
+      "padding": "0",
+      "border": "0"
+    },
+    {
+      "key": "du-bois-dark-tag-red-2",
+      "kind": "badge",
+      "backgroundColor": "#2a1215",
+      "textColor": "#e84749",
+      "border": "1px solid #58181c"
+    },
+    {
+      "key": "du-bois-dark-tooltip",
+      "kind": "tooltip",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-btn-link-2",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#2272B4",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "du-bois-dark-btn-text-3",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#E8ECF0",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "du-bois-dark-checkbox",
+      "kind": "checkbox",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-tag-pink-3",
+      "kind": "badge",
+      "backgroundColor": "#291321",
+      "textColor": "#e0529c",
+      "border": "1px solid #551c3b"
+    },
+    {
+      "key": "du-bois-dark-tag-gold-4",
+      "kind": "badge",
+      "backgroundColor": "#2b2111",
+      "textColor": "#e8b339",
+      "border": "1px solid #594214"
+    },
+    {
+      "key": "du-bois-dark-progress",
+      "kind": "progress",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-btn-ghost-4",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#E8ECF0",
+      "border": "1px solid #1F272D"
+    },
+    {
+      "key": "du-bois-dark-pagination",
+      "kind": "nav",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-breadcrumb-2",
+      "kind": "nav",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-select-item-2",
+      "kind": "select",
+      "textColor": "#E8ECF0",
+      "padding": "5px 8px"
+    },
+    {
+      "key": "du-bois-dark-input-group-2",
+      "kind": "input",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-radio-group-2",
+      "kind": "radio",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-progress-bg-2",
+      "kind": "progress",
+      "backgroundColor": "#177ddc",
+      "rounded": "100px"
+    },
+    {
+      "key": "du-bois-dark-select-arrow-3",
+      "kind": "select",
+      "textColor": "rgba(255, 255, 255, 0.3)"
+    },
+    {
+      "key": "du-bois-dark-picker-panel",
+      "kind": "panel",
+      "backgroundColor": "#1f1f1f",
+      "rounded": "4px",
+      "border": "1px solid #303030"
+    },
+    {
+      "key": "du-bois-dark-table-footer-2",
+      "kind": "table",
+      "backgroundColor": "rgba(255, 255, 255, 0.04)",
+      "textColor": "rgba(255, 255, 255, 0.85)",
+      "rounded": "0 0 4px 4px",
+      "padding": "16px 16px"
+    },
+    {
+      "key": "du-bois-dark-tabs-ink-bar-2",
+      "kind": "tabs",
+      "backgroundColor": "#2272B4"
+    },
+    {
+      "key": "du-bois-dark-switch-inner-2",
+      "kind": "switch",
+      "textColor": "#fff"
+    },
+    {
+      "key": "du-bois-dark-alert-success-2",
+      "kind": "alert",
+      "backgroundColor": "#162312",
+      "border": "1px solid #274916"
+    },
+    {
+      "key": "du-bois-dark-tooltip-inner-2",
+      "kind": "tooltip",
+      "backgroundColor": "#434343",
+      "textColor": "#fff",
+      "rounded": "4px",
+      "padding": "6px 8px",
+      "shadow": "0 3px 6px -4px rgba(0, 0, 0, 0.48), 0 6px 16px 0 rgba(0, 0, 0, 0.32), 0 9px 28px 8px rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "key": "du-bois-dark-radio-wrapper-3",
+      "kind": "radio",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-progress-text-3",
+      "kind": "progress",
+      "textColor": "#E8ECF0"
+    },
+    {
+      "key": "du-bois-dark-table-summary-3",
+      "kind": "table",
+      "backgroundColor": "#141414"
+    },
+    {
+      "key": "du-bois-dark-tabs-dropdown-3",
+      "kind": "select",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "du-bois-dark-tree-checkbox-2",
+      "kind": "checkbox",
+      "textColor": "#E8ECF0",
+      "padding": "0"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f0f8ff",
+      "textColor": "#8b5a0e",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Ant Design Icons",
+    "package": "@ant-design/icons",
+    "pack": "antd",
+    "style": "outline",
+    "grid": 16,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "npm",
+    "url": "https://ant.design/components/icon"
+  },
+  "overview": "**Databricks** is a light-first design system anchored on `#ffffff` canvas surfaces with `#8b5a0e` primary ink (5.9:1 contrast) and `#9e102c` brand accent.\n\nTypography centers cleanly on `DM Sans` (48px display down to 13px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nSource: published token package, package `@databricks/design-system`. Inventory: **91** colors, **40** typography steps, and **73** documented components (ISC license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 73 component tokens with documented paddings: `0 16px`, `0`, `5px 8px`, `16px 16px`, `6px 8px`.\n- **Hierarchy**: Group controls cleanly within `#f0f8ff` cards; separate sibling sections using `#f5f5f5` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 2px 0 rgba(0, 0, 0, 0.015)`, `0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05)`) paired with `#f5f5f5` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#9e102c` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#8b5a0e` primary text and `#8b5a0e` secondary labels.\n- Use `#9e102c` with `#f7f7f8` text (7.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `DM Sans` headings with `DM Sans` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#f0f8ff` surface shifts and `#f5f5f5` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `du-bois-light-input` fields and secondary buttons."
+}

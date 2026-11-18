@@ -1,0 +1,41 @@
+{
+  "name": "hudl",
+  "displayName": "Uniform",
+  "description": "Hudl Uniform — read from the rendered page in a browser, not from published tokens.",
+  "style": "Hudl Uniform — read from the rendered page in a browser, not from published tokens.",
+  "category": "Hudl",
+  "org": "Hudl",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "hudl",
+    "light"
+  ],
+  "homepage": "http://uniform.hudl.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from http://uniform.hudl.com/ in headless Chromium on 2026-11-18 (224 custom properties, 19 sampled elements, 0 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Hudl Uniform.",
+  "source": {
+    "url": "http://uniform.hudl.com/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 8,
+    "components": 10
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

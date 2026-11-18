@@ -1,0 +1,749 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ffd900",
+  "border": "#c6c6c6",
+  "radius": ".25em",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "bg-canvas",
+      "value": "#ffffff"
+    },
+    {
+      "name": "canvas-text",
+      "value": "#191919"
+    },
+    {
+      "name": "header-bg",
+      "value": "#cdebee"
+    },
+    {
+      "name": "nav-text",
+      "value": "#004fb6"
+    },
+    {
+      "name": "nav-bg",
+      "value": "#fffcf1"
+    },
+    {
+      "name": "nav-border",
+      "value": "#c6c6c6"
+    },
+    {
+      "name": "nav-text-1",
+      "value": "#1034bf"
+    },
+    {
+      "name": "main-bg",
+      "value": "#37afba"
+    },
+    {
+      "name": "main-bg-2",
+      "value": "#00251f"
+    },
+    {
+      "name": "main-bg-3",
+      "value": "#00596b"
+    },
+    {
+      "name": "main-border",
+      "value": "rgba(0, 0, 0, 0.2)"
+    },
+    {
+      "name": "h2-text",
+      "value": "#444444"
+    },
+    {
+      "name": "h3-text",
+      "value": "#5c596d"
+    },
+    {
+      "name": "body-text",
+      "value": "#ffd900"
+    },
+    {
+      "name": "button-bg",
+      "value": "#fff3c6"
+    },
+    {
+      "name": "input-border",
+      "value": "#707070"
+    },
+    {
+      "name": "checkbox-text",
+      "value": "#696969"
+    },
+    {
+      "name": "switch-bg",
+      "value": "#468254"
+    },
+    {
+      "name": "switch-bg-4",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "switch-border",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "badge-bg",
+      "value": "#1c4fd2"
+    },
+    {
+      "name": "primary",
+      "value": "#ffd900"
+    }
+  ],
+  "type": [
+    {
+      "name": "a-heading-display-xl-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "3.5em",
+      "px": 56,
+      "lineHeight": "1.14286em"
+    },
+    {
+      "name": "a-heading-display-xl-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "3.25em",
+      "px": 52,
+      "lineHeight": "1.15385em"
+    },
+    {
+      "name": "a-heading-display-xl-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "3em",
+      "px": 48,
+      "lineHeight": "1.16667em"
+    },
+    {
+      "name": "a-heading-display-lg-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "3em",
+      "px": 48,
+      "lineHeight": "1.16667em"
+    },
+    {
+      "name": "a-heading-display-lg-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.75em",
+      "px": 44,
+      "lineHeight": "1.18182em"
+    },
+    {
+      "name": "a-heading-1-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.5em",
+      "px": 40,
+      "lineHeight": "1.2em"
+    },
+    {
+      "name": "a-heading-display-lg-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.5em",
+      "px": 40,
+      "lineHeight": "1.2em"
+    },
+    {
+      "name": "a-heading-display-md-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.5em",
+      "px": 40,
+      "lineHeight": "1.2em"
+    },
+    {
+      "name": "a-heading-1-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.25em",
+      "px": 36,
+      "lineHeight": "1.22222em"
+    },
+    {
+      "name": "a-heading-display-md-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "2.25em",
+      "px": 36,
+      "lineHeight": "1.22222em"
+    },
+    {
+      "name": "a-heading-1-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "2em",
+      "px": 32,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "a-heading-display-md-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "2em",
+      "px": 32,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "a-heading-display-sm-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "2em",
+      "px": 32,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "a-heading-2-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "2em",
+      "px": 32,
+      "lineHeight": "1.25em"
+    },
+    {
+      "name": "a-heading-2-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.75em",
+      "px": 28,
+      "lineHeight": "1.28571em"
+    },
+    {
+      "name": "a-heading-display-sm-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.75em",
+      "px": 28,
+      "lineHeight": "1.28571em"
+    },
+    {
+      "name": "a-heading-3-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.75em",
+      "px": 28,
+      "lineHeight": "1.28571em"
+    },
+    {
+      "name": "ion-typescale-title1bold",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "fontWeight": 700
+    },
+    {
+      "name": "h1",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "h2",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "h3",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "h4",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "h5",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h6",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "a-heading-2-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": "1.33333em"
+    },
+    {
+      "name": "a-heading-display-sm-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": "1.33333em"
+    },
+    {
+      "name": "a-heading-3-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": "1.33333em"
+    },
+    {
+      "name": "a-heading-display-xs-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": "1.33333em"
+    },
+    {
+      "name": "a-heading-display-xs-desktop",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "lineHeight": "1.33333em"
+    },
+    {
+      "name": "ion-typescale-title1semibold",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.5em",
+      "px": 24,
+      "fontWeight": 600
+    },
+    {
+      "name": "a-heading-3-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "lineHeight": "1.4em"
+    },
+    {
+      "name": "a-heading-display-xs-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "lineHeight": "1.4em"
+    },
+    {
+      "name": "a-heading-4-tablet",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "lineHeight": "1.4em"
+    },
+    {
+      "name": "ion-typescale-title2",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "fontWeight": 600
+    },
+    {
+      "name": "ot-signature-group-title",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "m-product-navigation-heading",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "fontWeight": 600,
+      "lineHeight": "1.5em"
+    },
+    {
+      "name": "ot-go-modal-title",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.25em",
+      "px": 20,
+      "fontWeight": 700
+    },
+    {
+      "name": "ion-typescale-headingsemibold",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125em",
+      "px": 18,
+      "fontWeight": 600
+    },
+    {
+      "name": "ot-signature-subtitle",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "a-heading-4-mobile",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125em",
+      "px": 18,
+      "lineHeight": "1.33333em"
+    },
+    {
+      "name": "ion-typescale-headingbold",
+      "fontFamily": "sans-serif",
+      "fontSize": "1.125em",
+      "px": 18,
+      "fontWeight": 700
+    },
+    {
+      "name": "ion-primary-nav-sub-section-heading-version",
+      "fontFamily": "sans-serif",
+      "fontSize": "1em",
+      "px": 16
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16
+    },
+    {
+      "name": "ion-typescale-body1",
+      "fontFamily": "sans-serif",
+      "fontSize": ".875em",
+      "px": 14
+    },
+    {
+      "name": "ion-multiswatch-title",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875em",
+      "px": 14,
+      "fontWeight": 600
+    },
+    {
+      "name": "ion-typescale-body1semibold",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.875em",
+      "px": 14,
+      "fontWeight": 600
+    },
+    {
+      "name": "leg-int-title",
+      "fontFamily": "sans-serif",
+      "fontSize": "0.813em",
+      "px": 13.008
+    },
+    {
+      "name": "ion-typescale-caption",
+      "fontFamily": "sans-serif",
+      "fontSize": ".75em",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "#191919",
+      "padding": "0"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "backgroundColor": "#fff",
+      "rounded": ".25em"
+    },
+    {
+      "key": "modal",
+      "kind": "modal",
+      "backgroundColor": "#fff",
+      "rounded": "1.5em 1.5em 0 0",
+      "padding": "0 1em 1em"
+    },
+    {
+      "key": "button",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "#191d64",
+      "rounded": "10em",
+      "padding": "1em 2em",
+      "border": ".0625em solid #191d64"
+    },
+    {
+      "key": "textarea",
+      "kind": "input",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#191919",
+      "rounded": ".25em",
+      "padding": ".75em 1.25em",
+      "border": "1px solid #737373",
+      "shadow": "inset 0 2px 2px 0 hsla(0,0%,80%,.5)"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "backgroundColor": "#eee",
+      "rounded": ".25em"
+    },
+    {
+      "key": "breadcrumb",
+      "kind": "nav",
+      "textColor": "#fff",
+      "padding": ".2858em 0"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "textColor": "#191919"
+    },
+    {
+      "key": "radio-2",
+      "kind": "radio",
+      "backgroundColor": "transparent",
+      "textColor": "#191919",
+      "rounded": ".25em",
+      "padding": ".75em 1.25em .75em 3.4375em",
+      "border": "1px solid #737373",
+      "shadow": "0 2px 2px 0 hsla(0,0%,80%,.5)"
+    },
+    {
+      "key": "modal-overlay-2",
+      "kind": "modal",
+      "backgroundColor": "#191919"
+    },
+    {
+      "key": "breadcrumb-page-2",
+      "kind": "nav",
+      "textColor": "#004fb6"
+    },
+    {
+      "key": "checkbox-2",
+      "kind": "checkbox",
+      "backgroundColor": "#f9f9f9",
+      "textColor": "#191919",
+      "rounded": ".25em",
+      "padding": ".75em 1.25em .75em 3.4375em",
+      "border": "1px solid #737373",
+      "shadow": "0 2px 2px 0 hsla(0,0%,80%,.5)"
+    },
+    {
+      "key": "radio-segmented-3",
+      "kind": "radio",
+      "backgroundColor": "#f9f9f9",
+      "rounded": ".25em",
+      "border": "1px solid #737373",
+      "shadow": "0 2px 2px 0 hsla(0,0%,80%,.5)"
+    },
+    {
+      "key": "tabs",
+      "kind": "tabs",
+      "textColor": "#333"
+    },
+    {
+      "key": "a-notification-tag",
+      "kind": "badge",
+      "textColor": "#191919",
+      "rounded": ".5em",
+      "padding": ".25em .75em .25em 2.25em"
+    },
+    {
+      "key": "card-2",
+      "kind": "card",
+      "textColor": "#1034bf"
+    },
+    {
+      "key": "progress-steps",
+      "kind": "progress",
+      "backgroundColor": "#c6c6c6",
+      "rounded": ".5em",
+      "border": "none"
+    },
+    {
+      "key": "card-image-3",
+      "kind": "card",
+      "backgroundColor": "#444",
+      "textColor": "#fff",
+      "padding": ".25rem"
+    },
+    {
+      "key": "modal-3",
+      "kind": "modal",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "m-navigation-secondary-link",
+      "kind": "link",
+      "textColor": "#1034bf",
+      "rounded": "0",
+      "padding": ".625em 1em",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "card-notification-wrapper-4",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "shadow": "0 3px 4px 0 rgba(0,0,0,.15)"
+    },
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "#ffd900",
+      "textColor": "#191d64",
+      "border": ".0625em solid #ffd900"
+    },
+    {
+      "key": "button-tertiary",
+      "kind": "button",
+      "textColor": "#1034bf",
+      "rounded": "0",
+      "padding": ".9375em 0",
+      "border": "0"
+    },
+    {
+      "key": "button-livechat",
+      "kind": "button",
+      "backgroundColor": "#004fb6",
+      "textColor": "#fff",
+      "border": "1px solid #004fb6"
+    },
+    {
+      "key": "a-notification-tag-info",
+      "kind": "badge",
+      "backgroundColor": "#e6f3fe",
+      "border": "1px solid #cee6fd"
+    },
+    {
+      "key": "a-notification-tag-warn",
+      "kind": "badge",
+      "backgroundColor": "#fef5e8",
+      "border": "1px solid #fde6c6"
+    },
+    {
+      "key": "a-notification-tag-error",
+      "kind": "badge",
+      "backgroundColor": "#f7e5e5",
+      "border": "1px solid #ebbfbf"
+    },
+    {
+      "key": "badge",
+      "kind": "badge",
+      "backgroundColor": "rgb(0, 90, 108)",
+      "textColor": "rgb(255, 255, 255)",
+      "rounded": "0.25em",
+      "padding": "0px 0.25em",
+      "border": "1px solid rgb(0, 90, 108)"
+    },
+    {
+      "key": "breadcrumb-container",
+      "kind": "nav",
+      "backgroundColor": "rgb(247, 247, 247)"
+    },
+    {
+      "key": "badge-code",
+      "kind": "badge",
+      "backgroundColor": "rgb(250, 248, 248)",
+      "textColor": "rgb(0, 90, 108)",
+      "border": "1px solid rgb(234, 234, 234)"
+    },
+    {
+      "key": "badge-ready",
+      "kind": "badge",
+      "backgroundColor": "rgb(199, 214, 79)",
+      "textColor": "rgb(0, 107, 65)",
+      "rounded": "0.33em",
+      "padding": "0.1em 0.45em",
+      "border": "1px solid rgb(199, 214, 79)"
+    },
+    {
+      "key": "badge-archived",
+      "kind": "badge",
+      "backgroundColor": "rgb(199, 214, 79)",
+      "textColor": "rgb(0, 107, 65)",
+      "rounded": "0.33em",
+      "padding": "0.1em 0.45em",
+      "border": "1px solid rgb(199, 214, 79)"
+    },
+    {
+      "key": "breadcrumb-container-grey",
+      "kind": "nav",
+      "backgroundColor": "rgb(238, 239, 238)"
+    },
+    {
+      "key": "breadcrumb-container-white",
+      "kind": "nav",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    {
+      "key": "card-numeric",
+      "kind": "card",
+      "backgroundColor": "#111",
+      "textColor": "#fff"
+    },
+    {
+      "key": "card-content-2",
+      "kind": "card",
+      "textColor": "#444"
+    },
+    {
+      "key": "card-content-title-section-4",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "textColor": "#444"
+    },
+    {
+      "key": "button-transparent",
+      "kind": "button",
+      "backgroundColor": "#fff",
+      "textColor": "#444",
+      "border": "1px solid #ccc"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ffd900",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Aviva Standards** is a light-first design system anchored on `#ffffff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ffd900` brand accent.\n\nTypography centers cleanly on `System Sans` (56px display down to 14px body), unified by `.25em` base corner radius and subtle shadow elevation.\n\nMaintained by **Aviva**. Source: live stylesheet extraction (https://standards.aviva.com/). Inventory: **22** colors, **48** typography steps, and **44** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 44 component tokens with documented paddings: `0`, `0 1em 1em`, `1em 2em`, `.75em 1.25em`, `.2858em 0`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `#c6c6c6` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`inset 0 2px 2px 0 hsla(0,0%,80%,.5)`, `0 2px 2px 0 hsla(0,0%,80%,.5)`) paired with `#c6c6c6` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ffd900` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ffd900` with `#0b0b0c` text (14.2:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System Sans` headings with `System Sans` body copy using documented weights and scale steps.\n- Apply `.25em` base geometry across inputs and buttons (.25em on outer containers).\n- Separate containers via `#ffffff` surface shifts and `#c6c6c6` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `.25em` baseline.\n- Do not truncate or drop border contrast on `textarea` fields and secondary buttons."
+}

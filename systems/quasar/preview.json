@@ -1,0 +1,408 @@
+{
+  "canvas": "#fff",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#9C27B0",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "4px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "q-primary",
+      "value": "#1976D2"
+    },
+    {
+      "name": "q-secondary",
+      "value": "#26A69A"
+    },
+    {
+      "name": "q-accent",
+      "value": "#9C27B0"
+    },
+    {
+      "name": "q-positive",
+      "value": "#21BA45"
+    },
+    {
+      "name": "q-negative",
+      "value": "#C10015"
+    },
+    {
+      "name": "q-info",
+      "value": "#31CCEC"
+    },
+    {
+      "name": "q-warning",
+      "value": "#F2C037"
+    },
+    {
+      "name": "q-dark",
+      "value": "#1d1d1d"
+    },
+    {
+      "name": "q-dark-page",
+      "value": "#121212"
+    },
+    {
+      "name": "q-shadow-color",
+      "value": "#000"
+    },
+    {
+      "name": "q-dark-shadow-color",
+      "value": "#fff"
+    },
+    {
+      "name": "primary",
+      "value": "#9C27B0"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "6rem",
+      "px": 96,
+      "fontWeight": 300,
+      "lineHeight": "6rem"
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60,
+      "fontWeight": 300,
+      "lineHeight": "3.75rem"
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48,
+      "fontWeight": 400,
+      "lineHeight": "3.125rem"
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.125rem",
+      "px": 34,
+      "fontWeight": 400,
+      "lineHeight": "2.5rem"
+    },
+    {
+      "name": "q-timeline-heading",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "200%",
+      "px": 32
+    },
+    {
+      "name": "q-date-header-title-label",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "24px",
+      "px": 24,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "fontWeight": 400,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "q-toolbar-title",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "21px",
+      "px": 21
+    },
+    {
+      "name": "q-dialog-title",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "q-table-title",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "20px",
+      "px": 20,
+      "fontWeight": 400
+    },
+    {
+      "name": "h6",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20,
+      "fontWeight": 500,
+      "lineHeight": "2rem"
+    },
+    {
+      "name": "text-subtitle1",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "1.75rem"
+    },
+    {
+      "name": "text-body1",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": "1.5rem"
+    },
+    {
+      "name": "q-notification-caption",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.9em",
+      "px": 14.4
+    },
+    {
+      "name": "q-date-header-subtitle",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.75
+    },
+    {
+      "name": "q-stepper-title",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.285714
+    },
+    {
+      "name": "q-uploader-title",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.285714
+    },
+    {
+      "name": "body",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "px": 14,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-subtitle2",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 500,
+      "lineHeight": "1.375rem"
+    },
+    {
+      "name": "text-body2",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": "1.25rem"
+    },
+    {
+      "name": "q-stepper-caption",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": 1.16667
+    },
+    {
+      "name": "q-table-grid-item-title",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500
+    },
+    {
+      "name": "q-timeline-subtitle",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 700
+    },
+    {
+      "name": "q-uploader-subtitle",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "px": 12,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "text-caption",
+      "fontFamily": "Roboto, -apple-system, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12,
+      "fontWeight": 400,
+      "lineHeight": "1.25rem"
+    }
+  ],
+  "components": [
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#fff",
+      "rounded": "4px",
+      "shadow": "0 1px 5px , 0 2px 2px , 0 3px 1px -2px"
+    },
+    {
+      "key": "chip",
+      "kind": "badge",
+      "backgroundColor": "#e0e0e0",
+      "textColor": "rgba(0, 0, 0, 0.87)",
+      "rounded": "16px",
+      "padding": "0.5em 0.9em"
+    },
+    {
+      "key": "badge-2",
+      "kind": "badge",
+      "backgroundColor": "#1976D2",
+      "textColor": "#fff",
+      "rounded": "4px",
+      "padding": "2px 6px"
+    },
+    {
+      "key": "banner",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "drawer",
+      "kind": "modal",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "chip-3",
+      "kind": "badge",
+      "textColor": "rgba(0, 0, 0, 0.54)"
+    },
+    {
+      "key": "tab-panels",
+      "kind": "tabs",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "table",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#000",
+      "rounded": "4px",
+      "shadow": "0 1px 5px , 0 2px 2px , 0 3px 1px -2px"
+    },
+    {
+      "key": "radio",
+      "kind": "radio",
+      "textColor": "rgba(0, 0, 0, 0.54)",
+      "rounded": "50%"
+    },
+    {
+      "key": "q-markup-table-2",
+      "kind": "table",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "checkbox",
+      "kind": "checkbox",
+      "textColor": "#fff"
+    },
+    {
+      "key": "select",
+      "kind": "select",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "checkbox-2",
+      "kind": "checkbox",
+      "textColor": "rgba(0, 0, 0, 0.54)",
+      "rounded": "50%"
+    },
+    {
+      "key": "q-linear-progress",
+      "kind": "progress",
+      "textColor": "#1976D2"
+    },
+    {
+      "key": "dialog-2",
+      "kind": "modal",
+      "backgroundColor": "rgba(0, 0, 0, 0.4)"
+    },
+    {
+      "key": "select-2",
+      "kind": "select",
+      "backgroundColor": "transparent",
+      "textColor": "#1976D2",
+      "padding": "0 4px",
+      "border": "0"
+    },
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "rgba(255, 255, 255, 0.25)"
+    },
+    {
+      "key": "tooltip-style",
+      "kind": "tooltip",
+      "backgroundColor": "#757575",
+      "textColor": "#fafafa",
+      "rounded": "4px"
+    },
+    {
+      "key": "radio-truthy",
+      "kind": "radio",
+      "textColor": "#1976D2"
+    },
+    {
+      "key": "toggle-truthy",
+      "kind": "switch",
+      "textColor": "#1976D2"
+    },
+    {
+      "key": "checkbox-indet",
+      "kind": "checkbox",
+      "textColor": "#1976D2"
+    },
+    {
+      "key": "q-linear-progress-dark",
+      "kind": "progress",
+      "backgroundColor": "rgba(255, 255, 255, 0.6)"
+    },
+    {
+      "key": "q-linear-progress-light",
+      "kind": "progress",
+      "backgroundColor": "rgba(0, 0, 0, 0.26)"
+    },
+    {
+      "key": "badge-outline",
+      "kind": "badge",
+      "backgroundColor": "#0000",
+      "border": "1px solid"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Quasar** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#9C27B0` brand accent.\n\nTypography centers cleanly on `Roboto` (96px display down to 16px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nSource: published token package (https://quasar.dev), package `quasar`. Inventory: **12** colors, **25** typography steps, and **25** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 25 component tokens with documented paddings: `0.5em 0.9em`, `2px 6px`, `8px 16px`, `0 4px`, `8px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 1px 5px , 0 2px 2px , 0 3px 1px -2px`, `0 1px 5px , 0 2px 2px , 0 3px 1px -2px`) paired with `color-mix(in srgb, #0b0b0c 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#9C27B0` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#9C27B0` with `#f7f7f8` text (5.9:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Roboto` headings with `Roboto` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `#fff` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

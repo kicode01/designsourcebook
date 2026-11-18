@@ -1,32 +1,23 @@
 {
-  "updated": "2026-11-17T03:21:28.334Z",
+  "updated": "2026-11-18T02:19:31.433Z",
   "blocked": [
     {
-      "slug": "ariakit",
-      "name": "Ariakit",
-      "org": "Ariakit",
-      "source": "https://github.com/ariakit/ariakit",
-      "kind": "repo",
-      "reason": "only 1 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-17"
+      "slug": "adyen",
+      "name": "Adyen Design",
+      "org": "Adyen",
+      "source": "@adyen/adyen-web",
+      "kind": "npm",
+      "reason": "only 3 colour tokens extracted — below the 12 needed to represent a system",
+      "at": "2026-11-18"
     },
     {
-      "slug": "at",
-      "name": "AT UIKIT",
-      "org": "AT",
-      "source": "https://github.com/at-ui/at-ui",
-      "kind": "repo",
-      "reason": "no colour tokens found in the repository",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "axisbank",
-      "name": "SubZero",
-      "org": "Axis Bank",
-      "source": "https://www.subzero.axis.bank.in/",
-      "kind": "site",
-      "reason": "no colour values in 2 stylesheets",
-      "at": "2026-11-17"
+      "slug": "beeline",
+      "name": "Beeline Design System",
+      "org": "Beeline",
+      "source": "http://beelinedesignsystem.com/",
+      "kind": "browser",
+      "reason": "browser could not read the page: page.goto: net::ERR_CONNECTION_TIMED_OUT at http://beelinedesignsystem.com/",
+      "at": "2026-11-18"
     },
     {
       "slug": "bridgedesignsystem",
@@ -38,166 +29,292 @@
       "at": "2026-11-16"
     },
     {
-      "slug": "canvas",
-      "name": "Canvas Design System",
-      "org": "Hubspot",
-      "source": "@hubspot/canvas",
+      "slug": "brighton",
+      "name": "Brighton & Hove Pattern Library",
+      "org": "Brighton",
+      "source": "http://design.brighton-hove.gov.uk/website-pattern-library.php?p=service-icons",
+      "kind": "site",
+      "reason": "could not fetch the page: 404",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "bulb",
+      "name": "Solar Design System",
+      "org": "Bulb",
+      "source": "http://design.bulb.co.uk/",
+      "kind": "browser",
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at http://design.bulb.co.uk/",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "cashapp",
+      "name": "Cash App Design System",
+      "org": "Cash App",
+      "source": "https://design.cash.app/",
+      "kind": "site",
+      "reason": "could not fetch the page: 403",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "cbre",
+      "name": "Blocks Design System",
+      "org": "CBRE Build",
+      "source": "https://blocks.cbrebuild.com/",
+      "kind": "browser",
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at https://blocks.cbrebuild.com/",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "chota",
+      "name": "Chota",
+      "org": "Chota",
+      "source": "chota",
+      "kind": "npm",
+      "reason": "only 10 colour tokens extracted — below the 12 needed to represent a system",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "cockroach",
+      "name": "Cockroach UI",
+      "org": "Cockroach Labs",
+      "source": "@cockroachlabs/ui-components",
       "kind": "npm",
       "reason": "no colour tokens found in the package",
-      "at": "2026-11-16"
+      "at": "2026-11-18"
     },
     {
-      "slug": "coop",
-      "name": "Co-op Experience Library",
-      "org": "Co-op",
-      "source": "https://www.coop.co.uk/experience-library/",
+      "slug": "codeforamerica",
+      "name": "Code for America Style Guide",
+      "org": "Code for America",
+      "source": "http://style.codeforamerica.org/",
       "kind": "browser",
-      "reason": "HTTP 403 — site blocked automated access (no content)",
-      "at": "2026-11-16"
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at http://style.codeforamerica.org/",
+      "at": "2026-11-18"
     },
     {
-      "slug": "daisyui",
-      "name": "daisyUI",
-      "org": "daisyUI",
-      "source": "daisyui",
-      "kind": "npm",
-      "reason": "only 4 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
+      "slug": "elementary",
+      "name": "elementary HIG",
+      "org": "Elementary",
+      "source": "https://elementary.io/en/docs/human-interface-guidelines",
+      "kind": "browser",
+      "reason": "HTTP 404 — site blocked automated access (Page Not Found ⋅ elementary)",
+      "at": "2026-11-18"
     },
     {
-      "slug": "elisa",
-      "name": "Elisa Design System",
-      "org": "Elisa",
-      "source": "https://designsystem.elisa.fi/9b207b2c3/p/155e65-elisa-design-system",
-      "kind": "site",
-      "reason": "no colour values in 2 stylesheets",
-      "at": "2026-11-17"
+      "slug": "flexport",
+      "name": "Latitude",
+      "org": "Flexport",
+      "source": "https://www.flexport.com/design",
+      "kind": "browser",
+      "reason": "HTTP 404 — site blocked automated access (This page is off the grid. Your cargo never will be. | Flexport)",
+      "at": "2026-11-18"
     },
     {
       "slug": "futurelearn",
-      "name": "FutureLearn Pattern Library",
+      "name": "FutureLearn Design System",
       "org": "FutureLearn",
-      "source": "https://www.futurelearn.com/pattern-library",
+      "source": "https://design-system.futurelearn.com/",
+      "kind": "site",
+      "reason": "could not fetch the page: 403",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "generalelectric",
+      "name": "Edison Design System",
+      "org": "General Electric",
+      "source": "https://eds.gehealthcare.com/",
       "kind": "browser",
-      "reason": "HTTP 403 — site blocked automated access (Just a moment...)",
-      "at": "2026-11-16"
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at https://eds.gehealthcare.com/",
+      "at": "2026-11-18"
     },
     {
-      "slug": "heroui",
-      "name": "HeroUI",
-      "org": "HeroUI",
-      "source": "@heroui/theme",
+      "slug": "halfmoon",
+      "name": "Halfmoon",
+      "org": "Halfmoon",
+      "source": "halfmoon",
       "kind": "npm",
-      "reason": "only 9 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
+      "reason": "no colour tokens found in the package",
+      "at": "2026-11-18"
     },
     {
-      "slug": "jetbrains",
-      "name": "JetBrains Ring UI",
-      "org": "JetBrains",
-      "source": "@jetbrains/ring-ui",
-      "kind": "npm",
-      "reason": "only 9 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
+      "slug": "heartbeat",
+      "name": ".pulse",
+      "org": "Heartbeat",
+      "source": "https://pulse.heartbeat.ua/",
+      "kind": "browser",
+      "reason": "HTTP 526 — site blocked automated access (heartbeat.ua | 526: Invalid SSL certificate)",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "inclusive",
+      "name": "Inclusive Components",
+      "org": "Inclusive",
+      "source": "https://inclusive-components.design",
+      "kind": "browser",
+      "reason": "only 2 colour tokens from the rendered page — below the 12 needed",
+      "at": "2026-11-18"
     },
     {
       "slug": "jobber",
-      "name": "Jobber",
+      "name": "Atlantis",
       "org": "Jobber",
-      "source": "https://atlantis.getjobber.com",
+      "source": "https://atlantis.getjobber.com/",
+      "kind": "site",
+      "reason": "could not fetch the page: 403",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "lonelyplanet",
+      "name": "Rizzo",
+      "org": "Lonely Planet",
+      "source": "http://rizzo.lonelyplanet.com/",
       "kind": "browser",
-      "reason": "HTTP 403 — site blocked automated access (Just a moment...)",
-      "at": "2026-11-16"
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at http://rizzo.lonelyplanet.com/",
+      "at": "2026-11-18"
     },
     {
-      "slug": "justeattakeaway",
-      "name": "Just Eat Takeaway.com PIE Design System",
-      "org": "Just Eat Takeaway",
-      "source": "https://github.com/justeattakeaway/pie",
-      "kind": "repo",
-      "reason": "only 1 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
+      "slug": "maersk",
+      "name": "Maersk Design System",
+      "org": "Maersk",
+      "source": "https://designsystem.maersk.com/foundations/colour-roles/index.html",
+      "kind": "browser",
+      "reason": "browser could not read the page: page.goto: Timeout 30000ms exceeded.",
+      "at": "2026-11-18"
     },
     {
-      "slug": "kontur",
-      "name": "Kontur",
-      "org": "Kontur",
-      "source": "https://github.com/skbkontur/retail-ui/",
+      "slug": "mirror-degen",
+      "name": "Degen Design System",
+      "org": "Mirror",
+      "source": "https://github.com/mirror-xyz/degen",
       "kind": "repo",
-      "reason": "clone failed: clone failed",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "nasa",
-      "name": "NASA Web Design System",
-      "org": "NASA",
-      "source": "https://github.com/nasa/nasawds",
-      "kind": "repo",
-      "reason": "no colour tokens found in the repository",
-      "at": "2026-11-16"
+      "reason": "only 3 colour tokens extracted — below the 12 needed to represent a system",
+      "at": "2026-11-18"
     },
     {
       "slug": "nationbuilder",
       "name": "NationBuilder Radius",
       "org": "NationBuilder",
       "source": "https://www.nationbuilder.design/",
-      "kind": "browser",
-      "reason": "HTTP 403 — site blocked automated access (Just a moment...)",
-      "at": "2026-11-16"
+      "kind": "site",
+      "reason": "could not fetch the page: 403",
+      "at": "2026-11-18"
     },
     {
-      "slug": "nordnet",
-      "name": "Nordnet",
-      "org": "Nordnet",
-      "source": "https://brand.nordnet.se/",
-      "kind": "browser",
-      "reason": "HTTP 403 — site blocked automated access (no content)",
-      "at": "2026-11-16"
+      "slug": "nrk",
+      "name": "NRK Core",
+      "org": "NRK",
+      "source": "@nrk/core-css",
+      "kind": "npm",
+      "reason": "no colour tokens found in the package",
+      "at": "2026-11-18"
     },
     {
-      "slug": "red",
-      "name": "Red Hat design system",
-      "org": "Red",
-      "source": "https://github.com/RedHat-UX/red-hat-design-system/",
+      "slug": "opower",
+      "name": "OPattern",
+      "org": "OPower",
+      "source": "https://ux.opower.com/opattern/",
+      "kind": "browser",
+      "reason": "HTTP 503 — site blocked automated access (We're doing some work to update this site.)",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "purecss",
+      "name": "Pure CSS",
+      "org": "Pure.css",
+      "source": "purecss",
+      "kind": "npm",
+      "reason": "no colour tokens found in the package",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "reach",
+      "name": "Reach UI",
+      "org": "Reach",
+      "source": "https://reach.tech/",
+      "kind": "browser",
+      "reason": "HTTP 526 — site blocked automated access (reach.tech | 526: Invalid SSL certificate)",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "rippleui",
+      "name": "RippleUI",
+      "org": "RippleUI",
+      "source": "https://github.com/Siumauricio/rippleui",
       "kind": "repo",
       "reason": "only 4 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-17"
+      "at": "2026-11-18"
     },
     {
-      "slug": "sainsbury",
-      "name": "Sainsbury's Design System",
-      "org": "Sainsbury",
-      "source": "https://design-systems.sainsburys.co.uk/",
+      "slug": "ruter",
+      "name": "Ruter Components",
+      "org": "Ruter",
+      "source": "https://components.ruter.as/",
       "kind": "site",
-      "reason": "no colour values in 6 stylesheets",
-      "at": "2026-11-17"
+      "reason": "could not fetch the page: fetch failed",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "schneider",
+      "name": "Quartz",
+      "org": "Schneider Electric",
+      "source": "@quartzds/core",
+      "kind": "npm",
+      "reason": "no colour tokens found in the package",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "servicenow",
+      "name": "Horizon",
+      "org": "ServiceNow",
+      "source": "https://horizon.servicenow.com/",
+      "kind": "site",
+      "reason": "could not fetch the page: 403",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "spectre",
+      "name": "Spectre.css",
+      "org": "PicturePan2",
+      "source": "spectre.css",
+      "kind": "npm",
+      "reason": "only 10 colour tokens extracted — below the 12 needed to represent a system",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "starwind-ui",
+      "name": "Starwind UI",
+      "org": "Starwind UI",
+      "source": "https://github.com/starwind-ui/starwind-ui",
+      "kind": "repo",
+      "reason": "only 1 colour tokens extracted — below the 12 needed to represent a system",
+      "at": "2026-11-18"
+    },
+    {
+      "slug": "teamleader",
+      "name": "Ahoy",
+      "org": "Teamleader",
+      "source": "https://ahoy.teamleader.eu/",
+      "kind": "browser",
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at https://ahoy.teamleader.eu/",
+      "at": "2026-11-18"
     },
     {
       "slug": "uiverse",
       "name": "Uiverse",
       "org": "Uiverse",
-      "source": "https://github.com/uiverse-io/galaxy",
-      "kind": "repo",
-      "reason": "no colour tokens found in the repository",
-      "at": "2026-11-16"
+      "source": "https://uiverse.io/",
+      "kind": "site",
+      "reason": "could not fetch the page: 403",
+      "at": "2026-11-18"
     },
     {
-      "slug": "wanda",
-      "name": "Wanda Design System",
-      "org": "Wonderflow",
-      "source": "@wonderflow/react-components",
-      "kind": "npm",
-      "reason": "only 3 colour tokens extracted — below the 12 needed to represent a system",
-      "at": "2026-11-16"
-    },
-    {
-      "slug": "web",
-      "name": "Web Awesome",
-      "org": "Web",
-      "source": "https://github.com/shoelace-style/webawesome",
-      "kind": "repo",
-      "reason": "no colour tokens found in the repository",
-      "at": "2026-11-17"
+      "slug": "wonderbly",
+      "name": "Wonderbly Design System",
+      "org": "Wonderbly",
+      "source": "http://design-system.wonderbly.com/",
+      "kind": "browser",
+      "reason": "browser could not read the page: page.goto: net::ERR_NAME_NOT_RESOLVED at http://design-system.wonderbly.com/",
+      "at": "2026-11-18"
     }
   ]
 }

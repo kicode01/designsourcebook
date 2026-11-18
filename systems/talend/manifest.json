@@ -1,0 +1,42 @@
+{
+  "name": "talend",
+  "displayName": "Talend Design System",
+  "description": "Talend Design System — tokens imported from @talend/design-tokens.",
+  "style": "Talend Design System — tokens imported from @talend/design-tokens.",
+  "category": "Talend",
+  "org": "Talend",
+  "theme": "light",
+  "tags": [
+    "published",
+    "talend",
+    "light"
+  ],
+  "homepage": "https://github.com/Talend/ui/tree/master/packages/design-tokens#readme",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @talend/design-tokens@3.4.5 + @talend/design-system (4 token files, 608 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@talend/design-tokens",
+    "version": "3.4.5"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 2,
+    "components": 18
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

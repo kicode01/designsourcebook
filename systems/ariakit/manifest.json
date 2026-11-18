@@ -1,0 +1,41 @@
+{
+  "name": "ariakit",
+  "displayName": "Ariakit",
+  "description": "Ariakit — read from the rendered page in a browser, not from published tokens.",
+  "style": "Ariakit — read from the rendered page in a browser, not from published tokens.",
+  "category": "Ariakit",
+  "org": "Ariakit",
+  "theme": "light",
+  "tags": [
+    "observed",
+    "ariakit",
+    "light"
+  ],
+  "homepage": "https://ariakit.org/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Computed styles read from https://ariakit.org/ in headless Chromium on 2026-11-18 (31 custom properties, 43 sampled elements, 2 captured CSS sheets). A rendered snapshot is not a published token package — values can change without notice. Page title: Ariakit - Toolkit for building accessible UIs.",
+  "source": {
+    "url": "https://ariakit.org/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 16,
+    "typography": 1,
+    "components": 12
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "picocss",
+  "displayName": "Pico CSS",
+  "description": "Pico.css Pico CSS — tokens imported from @picocss/pico.",
+  "style": "Pico.css Pico CSS — tokens imported from @picocss/pico.",
+  "category": "Pico.css",
+  "org": "Pico.css",
+  "theme": "light",
+  "tags": [
+    "published",
+    "pico-css",
+    "light"
+  ],
+  "homepage": "https://picocss.com",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @picocss/pico@2.1.1 (4 token files, 846 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@picocss/pico",
+    "version": "2.1.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 5,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

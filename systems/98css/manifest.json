@@ -1,0 +1,42 @@
+{
+  "name": "98css",
+  "displayName": "98.css",
+  "description": "98.css — tokens imported from 98.css.",
+  "style": "98.css — tokens imported from 98.css.",
+  "category": "98.css",
+  "org": "98.css",
+  "theme": "light",
+  "tags": [
+    "published",
+    "98-css",
+    "light"
+  ],
+  "homepage": "https://github.com/jdan/98.css",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from 98.css@0.1.21 (1 token files, 11 colours harvested, 11 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "98.css",
+    "version": "0.1.21"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 12,
+    "typography": 5,
+    "components": 12
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

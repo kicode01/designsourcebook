@@ -216,21 +216,49 @@ code, pre, kbd, .ds-code-pre, .page-code-pre {
 
 ::selection { background: var(--studio-accent); color: var(--studio-accent-fg); }
 
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition {
+  background: var(--studio-gutter);
+}
+
+@keyframes dsVtFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes dsVtFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+::view-transition-old(root) {
+  animation: dsVtFadeOut 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+::view-transition-new(root) {
+  animation: dsVtFadeIn 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 html.ds-chameleon-enter #root {
   opacity: 0;
-  transform: scale(0.992);
 }
 
 html.ds-chameleon-revealed #root {
   opacity: 1;
-  transform: scale(1);
-  transition: opacity 280ms cubic-bezier(0.22, 1, 0.36, 1), transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 180ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
   html.ds-chameleon-enter #root,
   html.ds-chameleon-revealed #root {
-    transform: none;
     transition: opacity 120ms ease-out;
   }
 }

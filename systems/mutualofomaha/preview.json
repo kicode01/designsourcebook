@@ -1,0 +1,286 @@
+{
+  "canvas": "#f9fffa",
+  "surface": "#f7f7f7",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#33c3f0",
+  "border": "#e5e5e5",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "canvas-text",
+      "value": "#5d5d5d"
+    },
+    {
+      "name": "header-bg",
+      "value": "#003a70"
+    },
+    {
+      "name": "nav-bg",
+      "value": "#ffffff"
+    },
+    {
+      "name": "footer-bg",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "footer-border",
+      "value": "#e5e5e5"
+    },
+    {
+      "name": "link-bg",
+      "value": "#105fa8"
+    },
+    {
+      "name": "link-text",
+      "value": "#444444"
+    },
+    {
+      "name": "css-surface-8",
+      "value": "#3b8070"
+    },
+    {
+      "name": "css-surface-9",
+      "value": "#ffff00"
+    },
+    {
+      "name": "css-color-10",
+      "value": "#000000"
+    },
+    {
+      "name": "css-color-11",
+      "value": "#03746e"
+    },
+    {
+      "name": "css-border-12",
+      "value": "#bababa"
+    },
+    {
+      "name": "css-color-13",
+      "value": "#a5cff8"
+    },
+    {
+      "name": "css-surface-14",
+      "value": "#105ea6"
+    },
+    {
+      "name": "css-color-15",
+      "value": "#222222"
+    },
+    {
+      "name": "css-surface-16",
+      "value": "rgba(3, 160, 173, 0.08)"
+    },
+    {
+      "name": "css-color-17",
+      "value": "#838383"
+    },
+    {
+      "name": "css-surface-18",
+      "value": "#19517f"
+    },
+    {
+      "name": "css-surface-19",
+      "value": "rgba(25, 81, 127, 0.9)"
+    },
+    {
+      "name": "css-color-20",
+      "value": "#1f96db"
+    },
+    {
+      "name": "css-color-21",
+      "value": "#565656"
+    },
+    {
+      "name": "css-color-22",
+      "value": "#68b631"
+    },
+    {
+      "name": "css-surface-23",
+      "value": "rgba(0,0,0,.5)"
+    },
+    {
+      "name": "css-surface-24",
+      "value": "#f9fffa"
+    },
+    {
+      "name": "css-fill-25",
+      "value": "#32ae88"
+    },
+    {
+      "name": "css-color-26",
+      "value": "#555555"
+    },
+    {
+      "name": "css-color-27",
+      "value": "#333333"
+    },
+    {
+      "name": "css-border-28",
+      "value": "#888888"
+    },
+    {
+      "name": "css-surface-29",
+      "value": "#33c3f0"
+    },
+    {
+      "name": "css-surface-30",
+      "value": "#1eaedb"
+    },
+    {
+      "name": "primary",
+      "value": "#33c3f0"
+    }
+  ],
+  "type": [
+    {
+      "name": "body",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.6rem",
+      "px": 25.6,
+      "fontWeight": 400,
+      "lineHeight": "2.4rem"
+    },
+    {
+      "name": "h1",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.2
+    },
+    {
+      "name": "h2",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.25
+    },
+    {
+      "name": "h3",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.3
+    },
+    {
+      "name": "h4",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.35
+    },
+    {
+      "name": "h5",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.5
+    },
+    {
+      "name": "h6",
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24,
+      "lineHeight": 1.6
+    },
+    {
+      "name": "html",
+      "fontFamily": "sans-serif",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "rgb(16, 95, 168)"
+    },
+    {
+      "key": "progress",
+      "kind": "progress",
+      "backgroundColor": "rgb(59, 128, 112)"
+    },
+    {
+      "key": "progress-failed-2",
+      "kind": "progress",
+      "backgroundColor": "red"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#33c3f0",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#33c3f0",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f9fffa",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f9fffa",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f7f7f7",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Digital Design Guide** is a light-first design system anchored on `#f9fffa` canvas surfaces with `#0b0b0c` primary ink (19.4:1 contrast) and `#33c3f0` brand accent.\n\nDisplay headlines pair `Source Sans Pro` with `System Sans` body copy (26px display down to 16px body), unified by `8px` base corner radius and stepped `#f9fffa` -> `#f7f7f7` surface layering.\n\nMaintained by **Mutual of Omaha**. Source: live stylesheet extraction (http://design.mutualofomaha.com/digital/). Inventory: **31** colors, **8** typography steps, and **11** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#f7f7f7` cards; separate sibling sections using `#e5e5e5` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f9fffa` -> `#f7f7f7`) and `1px solid #e5e5e5` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#33c3f0` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f9fffa` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#33c3f0` with `#0b0b0c` text (9.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Source Sans Pro` headings with `System Sans` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#f7f7f7` surface shifts and `#e5e5e5` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

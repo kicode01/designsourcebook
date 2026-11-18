@@ -1,0 +1,41 @@
+{
+  "name": "a11y",
+  "displayName": "A11Y Style Guide",
+  "description": "A11Y Style Guide — tokens read from https://github.com/cehfisher/a11y-style-guide.",
+  "style": "A11Y Style Guide — tokens read from https://github.com/cehfisher/a11y-style-guide.",
+  "category": "A11Y",
+  "org": "A11Y",
+  "theme": "light",
+  "tags": [
+    "published",
+    "a11-y",
+    "light"
+  ],
+  "homepage": "https://github.com/cehfisher/a11y-style-guide",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/cehfisher/a11y-style-guide — 3 token files, 23 colours harvested, 23 selected.",
+  "source": {
+    "repo": "https://github.com/cehfisher/a11y-style-guide"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 24,
+    "typography": 15,
+    "components": 21
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

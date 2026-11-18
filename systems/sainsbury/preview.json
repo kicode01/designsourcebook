@@ -1,0 +1,821 @@
+{
+  "canvas": "#f2f2f2",
+  "surface": "#fff",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#135ca3",
+  "border": "#d8d8d8",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "color-semantic-error-base",
+      "value": "#d50000"
+    },
+    {
+      "name": "color-palette-brand-2-lowlight",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "color-semantic-warning-base",
+      "value": "#ffd600"
+    },
+    {
+      "name": "color-alias-body-background-dark",
+      "value": "#000"
+    },
+    {
+      "name": "color-alias-cta-primary-black-hover-background",
+      "value": "#262626"
+    },
+    {
+      "name": "color-semantic-success-darker",
+      "value": "#246127"
+    },
+    {
+      "name": "mode-dark-background",
+      "value": "#262626"
+    },
+    {
+      "name": "color-alias-toggletip-hover-border",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-alias-cta-primary-default-background",
+      "value": "#f06c00"
+    },
+    {
+      "name": "modifier-header-background",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-secondary-white-active-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-secondary-hover-text",
+      "value": "#e55000"
+    },
+    {
+      "name": "color-palette-brand-1-highlight",
+      "value": "#135ca3"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-2-primary-active-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-secondary-hover-border",
+      "value": "#e55000"
+    },
+    {
+      "name": "color-palette-brand-1-dark",
+      "value": "#e55000"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-1-secondary-default-bor",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-semantic-info-base",
+      "value": "#1976d2"
+    },
+    {
+      "name": "color-semantic-info-light",
+      "value": "#428fda"
+    },
+    {
+      "name": "color-semantic-success-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-toggletip-active-text",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-scheme-brand-2-lowlight",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "color-palette-brand-4",
+      "value": "#404040"
+    },
+    {
+      "name": "color-alias-cta-secondary-black-hover-border",
+      "value": "#000"
+    },
+    {
+      "name": "surface-white-highlight",
+      "value": "#000"
+    },
+    {
+      "name": "color-alias-cta-primary-black-active-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-2-secondary-hover-borde",
+      "value": "#660335"
+    },
+    {
+      "name": "color-palette-brand-2-dark",
+      "value": "#660335"
+    },
+    {
+      "name": "color-alias-cta-primary-white-hover-background",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "color-scheme-brand-1-on-lowlight",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "surface-light-background",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "color-palette-brand-4-light",
+      "value": "#737373"
+    },
+    {
+      "name": "surface-dark-border",
+      "value": "#404040"
+    },
+    {
+      "name": "color-alias-cta-tertiary-active-text",
+      "value": "#e55000"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-1-secondary-active-text",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-alias-cta-tertiary-hover-border",
+      "value": "#e55000"
+    },
+    {
+      "name": "color-alias-cta-secondary-black-active-text",
+      "value": "#000"
+    },
+    {
+      "name": "color-alias-cta-primary-hover-background",
+      "value": "#e55000"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-2-primary-hover-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-1-tertiary-hover-border",
+      "value": "#f06c00"
+    },
+    {
+      "name": "mode-dark-border",
+      "value": "#404040"
+    },
+    {
+      "name": "color-semantic-info-lighter",
+      "value": "#e8f1fb"
+    },
+    {
+      "name": "color-alias-cta-primary-active-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-text-default",
+      "value": "#404040"
+    },
+    {
+      "name": "color-alias-cta-secondary-white-default-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-component-background-light",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-secondary-black-active-border",
+      "value": "#000"
+    },
+    {
+      "name": "color-content-info-blue",
+      "value": "#1976d2"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-1-primary-default-text",
+      "value": "#fff"
+    },
+    {
+      "name": "surface-grey-background",
+      "value": "#262626"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-1-secondary-active-bord",
+      "value": "#f06c00"
+    },
+    {
+      "name": "modifier-footer-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-primary-black-active-background",
+      "value": "#404040"
+    },
+    {
+      "name": "color-alias-cta-secondary-black-default-border",
+      "value": "#000"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-2-tertiary-active-text",
+      "value": "#7f0442"
+    },
+    {
+      "name": "modifier-link-color-brand-lowlight",
+      "value": "#e8f1fb"
+    },
+    {
+      "name": "mode-default-footer-background",
+      "value": "#262626"
+    },
+    {
+      "name": "color-alias-border",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "color-alias-alert-primary-error",
+      "value": "#d50000"
+    },
+    {
+      "name": "surface-white-base",
+      "value": "#404040"
+    },
+    {
+      "name": "modifier-footer-background",
+      "value": "#404040"
+    },
+    {
+      "name": "color-alias-cta-tertiary-black-hover-text",
+      "value": "#000"
+    },
+    {
+      "name": "color-alias-alert-secondary-error",
+      "value": "#a50000"
+    },
+    {
+      "name": "color-alias-cta-secondary-default-text",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-palette-brand-1",
+      "value": "#1976d2"
+    },
+    {
+      "name": "color-alias-cta-primary-default-text",
+      "value": "#fff"
+    },
+    {
+      "name": "color-alias-cta-tertiary-default-text",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-alias-cta-scheme-brand-2-tertiary-default-text",
+      "value": "#7f0442"
+    },
+    {
+      "name": "color-content-klarna-pink",
+      "value": "#ffa8cd"
+    },
+    {
+      "name": "color-palette-purple-50",
+      "value": "#994bfb"
+    },
+    {
+      "name": "color-palette-red-90",
+      "value": "#8d0000"
+    },
+    {
+      "name": "color-alias-form-default-hover-outline",
+      "value": "#f06c00"
+    },
+    {
+      "name": "color-palette-orange-10",
+      "value": "#fef5f0"
+    },
+    {
+      "name": "color-promotion-new-base",
+      "value": "#1976d2"
+    },
+    {
+      "name": "color-palette-grey",
+      "value": "#737373"
+    },
+    {
+      "name": "modifier-button-color-on-lowlight",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "modifier-button-color-base",
+      "value": "#1976d2"
+    },
+    {
+      "name": "color-promotion-1-base",
+      "value": "#d50000"
+    },
+    {
+      "name": "color-palette-orange-80",
+      "value": "#c2410c"
+    },
+    {
+      "name": "color-palette-plum-80",
+      "value": "#4c0228"
+    },
+    {
+      "name": "color-palette-orange-30",
+      "value": "#fed7aa"
+    },
+    {
+      "name": "color-promotion-1-lighter",
+      "value": "#ec8a8a"
+    },
+    {
+      "name": "color-palette-red-70",
+      "value": "#bd0000"
+    },
+    {
+      "name": "color-palette-grey-20",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "color-promotion-sale-light",
+      "value": "#dd2e2e"
+    },
+    {
+      "name": "color-promotion-2-lighter",
+      "value": "#95c0ea"
+    },
+    {
+      "name": "color-content-paypal-off-white",
+      "value": "#faf8f5"
+    },
+    {
+      "name": "color-palette-purple-20",
+      "value": "#dcc1fe"
+    },
+    {
+      "name": "color-palette-blue-30",
+      "value": "#95c0ea"
+    },
+    {
+      "name": "color-promotion-sale-dark",
+      "value": "#bd0000"
+    },
+    {
+      "name": "primary",
+      "value": "#135ca3"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-display-6",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-stack-display-7-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "3.75rem",
+      "px": 60
+    },
+    {
+      "name": "font-stack-display-6-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-display-5",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "font-size-display-4",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "2.375rem",
+      "px": 38
+    },
+    {
+      "name": "font-stack-display-5-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "2.375rem",
+      "px": 38
+    },
+    {
+      "name": "font-size-display-3",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "font-stack-display-4-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.875rem",
+      "px": 30
+    },
+    {
+      "name": "font-size-display-2",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-stack-display-3-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-stack-display-2-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-display-1",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "font-size-label-2",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-body-2",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-stack-body-2-font-size",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-stack-display-1-font-size",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "typography-font-size-default",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-stack-label-1-font-size",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-stack-body-1-font-size",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-stack-button-font-size",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-label-1",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-font-size-rem",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-root",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "16px",
+      "px": 16
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-size-body-1",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-stack-label-2-font-size",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-label-1",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display-5",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-link",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-1-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-ios",
+      "fontFamily": "\"SF Pro\"",
+      "px": 16
+    },
+    {
+      "name": "font-family-display-3",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-body-1",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-4-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-monospace-font-family",
+      "fontFamily": "Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-7-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-body-2",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-body-2-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-brand-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display-1",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "Consolas, \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", Monaco, \"Courier New\", Courier, monospace",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-5-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-brand",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display-2",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display-4",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-base",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-label-2",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-android",
+      "fontFamily": "Roboto",
+      "px": 16
+    },
+    {
+      "name": "font-stack-label-1-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-label-2-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-body-1-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-caption-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-caption",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-display-6",
+      "fontFamily": "MaryAnn, \"Trebuchet MS\", Arial, Helvetica, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-6-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-button-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-base-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-system-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-system",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-2-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-stack-display-3-font-family",
+      "fontFamily": "system, -apple-system, \".SFNSText-Regular\", \"San Francisco\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-caption",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-stack-caption-font-size",
+      "fontFamily": "Arial, \"Helvetica Neue\", Helvetica, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    }
+  ],
+  "components": [
+    {
+      "key": "badge",
+      "kind": "badge",
+      "textColor": "#fff",
+      "rounded": "2px"
+    },
+    {
+      "key": "c-product-card",
+      "kind": "card",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "badge-tertiary",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "border": "1px solid transparent"
+    },
+    {
+      "key": "badge-secondary",
+      "kind": "badge",
+      "backgroundColor": "#fff"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#135ca3",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#135ca3",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#f2f2f2",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#f2f2f2",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Luna** is a light-first design system anchored on `#f2f2f2` canvas surfaces with `#0b0b0c` primary ink (17.6:1 contrast) and `#135ca3` brand accent.\n\nDisplay headlines pair `MaryAnn` with `Arial` body copy (60px display down to 18px body), unified by `8px` base corner radius and stepped `#f2f2f2` -> `#fff` surface layering.\n\nMaintained by **Sainsbury**. Source: live stylesheet extraction (https://design-systems.sainsburys.co.uk/). Inventory: **91** colors, **63** typography steps, and **12** documented components (all rights reserved license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 12 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fff` cards; separate sibling sections using `#d8d8d8` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#f2f2f2` -> `#fff`) and `1px solid #d8d8d8` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#135ca3` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#f2f2f2` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#135ca3` with `#f7f7f8` text (6.4:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `MaryAnn` headings with `Arial` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fff` surface shifts and `#d8d8d8` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "kendo",
+  "displayName": "Kendo UI",
+  "description": "Progress Telerik Kendo UI — tokens imported from @progress/kendo-theme-default.",
+  "style": "Progress Telerik Kendo UI — tokens imported from @progress/kendo-theme-default.",
+  "category": "Progress Telerik",
+  "org": "Progress Telerik",
+  "theme": "light",
+  "tags": [
+    "published",
+    "progress-telerik",
+    "light"
+  ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/default",
+  "license": "Apache-2.0",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @progress/kendo-theme-default@14.10.1 (9 token files, 59 colours harvested, 42 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@progress/kendo-theme-default",
+    "version": "14.10.1"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 42,
+    "typography": 31,
+    "components": 49
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

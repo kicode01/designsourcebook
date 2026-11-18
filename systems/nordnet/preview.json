@@ -1,0 +1,229 @@
+{
+  "canvas": "#FFFFFF",
+  "surface": "#F5F5F5",
+  "text": "#222222",
+  "muted": "#222222",
+  "brand": "#00D200",
+  "border": "color-mix(in srgb, #222222 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "385-e9-d",
+      "value": "#00C8F5"
+    },
+    {
+      "name": "3-a913-f",
+      "value": "#D2F500"
+    },
+    {
+      "name": "ac135-a",
+      "value": "#FF2B83"
+    },
+    {
+      "name": "complementary-blue1",
+      "value": "#385E9D"
+    },
+    {
+      "name": "complementary-blue2",
+      "value": "#131F4F"
+    },
+    {
+      "name": "complementary-green1",
+      "value": "#3A913F"
+    },
+    {
+      "name": "complementary-green2",
+      "value": "#023C00"
+    },
+    {
+      "name": "complementary-pink1",
+      "value": "#AC135A"
+    },
+    {
+      "name": "complementary-pink2",
+      "value": "#78013A"
+    },
+    {
+      "name": "complementary-turquoise1",
+      "value": "#009195"
+    },
+    {
+      "name": "complementary-turquoise2",
+      "value": "#01424C"
+    },
+    {
+      "name": "black",
+      "value": "#000000"
+    },
+    {
+      "name": "gray0",
+      "value": "#282823"
+    },
+    {
+      "name": "gray1",
+      "value": "#4B4B46"
+    },
+    {
+      "name": "gray2",
+      "value": "#6E6E69"
+    },
+    {
+      "name": "gray3",
+      "value": "#A0A09B"
+    },
+    {
+      "name": "gray4",
+      "value": "#BCBCB6"
+    },
+    {
+      "name": "gray5",
+      "value": "#D7D7D2"
+    },
+    {
+      "name": "gray6",
+      "value": "#EBEBE8"
+    },
+    {
+      "name": "gray7",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "2-d67-ff",
+      "value": "#0046FF"
+    },
+    {
+      "name": "008-a00",
+      "value": "#00D200"
+    },
+    {
+      "name": "e81700",
+      "value": "#FF1900"
+    },
+    {
+      "name": "c15700",
+      "value": "#FFCF00"
+    },
+    {
+      "name": "stroke",
+      "value": "#282823"
+    },
+    {
+      "name": "fill",
+      "value": "#fff"
+    },
+    {
+      "name": "style-fill",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "icon-color",
+      "value": "#00A9EC"
+    },
+    {
+      "name": "text-color",
+      "value": "#222222"
+    },
+    {
+      "name": "stop-color",
+      "value": "#008c44"
+    },
+    {
+      "name": "background-color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "primary",
+      "value": "#00D200"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-family",
+      "fontFamily": "monospace",
+      "px": 16
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#00D200",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#00D200",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#222222",
+      "textColor": "#FFFFFF",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#F5F5F5",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Nordnet UI Kit** is a light-first design system anchored on `#FFFFFF` canvas surfaces with `#222222` primary ink (15.9:1 contrast) and `#00D200` brand accent.\n\nTypography centers cleanly on `System Mono` (16px display down to 16px body), unified by `8px` base corner radius and stepped `#FFFFFF` -> `#F5F5F5` surface layering.\n\nMaintained by **Nordnet**. Source: published token package (https://nordnet.github.io/nordnet-ui-kit), package `nordnet-ui-kit`. Inventory: **33** colors, **1** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#F5F5F5` cards; separate sibling sections using `color-mix(in srgb, #222222 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#FFFFFF` -> `#F5F5F5`) and `1px solid color-mix(in srgb, #222222 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#00D200` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#FFFFFF` (light) with `#222222` primary text and `#222222` secondary labels.\n- Use `#00D200` with `#0b0b0c` text (9.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `System Mono` headings with `System Mono` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#F5F5F5` surface shifts and `color-mix(in srgb, #222222 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

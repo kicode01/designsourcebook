@@ -1,0 +1,571 @@
+{
+  "canvas": "hsl(0, 0%, 97.3%)",
+  "surface": "hsl(0, 0%, 97.3%)",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "hsl(46, 100%, 27%)",
+  "border": "hsl(0, 0%, 88.7%)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "bg-secondary",
+      "value": "hsl(0, 0%, 97.3%)"
+    },
+    {
+      "name": "button-primary-bg-hover",
+      "value": "hsl(45, 89%, 58%)"
+    },
+    {
+      "name": "button-danger-bg",
+      "value": "hsl(358, 75%, 59%)"
+    },
+    {
+      "name": "input-border-hover",
+      "value": "hsl(0, 0%, 78.0%)"
+    },
+    {
+      "name": "field-border-focus",
+      "value": "hsl(0, 0%, 52.3%)"
+    },
+    {
+      "name": "accent-foreground",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "notification-success-border",
+      "value": "hsl(140, 39%, 68%)"
+    },
+    {
+      "name": "menu-item-danger-text",
+      "value": "hsl(355, 64%, 49%)"
+    },
+    {
+      "name": "alert-info-text",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "alert-brand-body",
+      "value": "hsl(46, 100%, 27%)"
+    },
+    {
+      "name": "alert-success-icon",
+      "value": "hsl(155, 100%, 25%)"
+    },
+    {
+      "name": "slider-fill-disabled",
+      "value": "hsl(0, 0%, 43.5%)"
+    },
+    {
+      "name": "green-border-hover",
+      "value": "hsl(146, 39%, 55%)"
+    },
+    {
+      "name": "red-text-secondary",
+      "value": "hsl(355, 64%, 49%)"
+    },
+    {
+      "name": "yellow-text",
+      "value": "hsl(43, 32%, 21%)"
+    },
+    {
+      "name": "primary-foreground",
+      "value": "hsl(38, 65%, 10%)"
+    },
+    {
+      "name": "info-background",
+      "value": "hsl(0, 0%, 97.3%)"
+    },
+    {
+      "name": "badge-background",
+      "value": "hsl(358, 70%, 45%)"
+    },
+    {
+      "name": "info-border",
+      "value": "hsl(0, 0%, 88.7%)"
+    },
+    {
+      "name": "brand-text",
+      "value": "hsl(43, 32%, 21%)"
+    },
+    {
+      "name": "danger-text",
+      "value": "hsl(358, 62%, 24%)"
+    },
+    {
+      "name": "poster-background",
+      "value": "hsl(0, 0%, 20%)"
+    },
+    {
+      "name": "component-button-secondary-background",
+      "value": "hsl(0, 0%, 95.1%)"
+    },
+    {
+      "name": "component-button-success-background",
+      "value": "hsl(151, 55%, 41.5%)"
+    },
+    {
+      "name": "component-button-danger-background-dark",
+      "value": "hsl(358, 75%, 59%)"
+    },
+    {
+      "name": "component-button-info-background-hover",
+      "value": "hsl(0, 0%, 52.3%)"
+    },
+    {
+      "name": "component-button-default-background-hover",
+      "value": "hsl(0, 0%, 93.0%)"
+    },
+    {
+      "name": "component-input-border",
+      "value": "hsl(0, 0%, 88.7%)"
+    },
+    {
+      "name": "component-input-text",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "component-field-border",
+      "value": "hsl(0, 0%, 88.7%)"
+    },
+    {
+      "name": "component-field-text",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "component-alias-background",
+      "value": "hsl(0, 0%, 99.0%)"
+    },
+    {
+      "name": "component-alias-success-foreground",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "component-file-row-hover-background-dark",
+      "value": "hsl(0, 0%, 11.0%)"
+    },
+    {
+      "name": "component-notification-info-background-dark",
+      "value": "hsl(0, 0%, 13.6%)"
+    },
+    {
+      "name": "component-notification-border-dark",
+      "value": "hsl(0, 0%, 20.5%)"
+    },
+    {
+      "name": "component-notification-success-foreground-dark",
+      "value": "hsl(142, 71%, 82%)"
+    },
+    {
+      "name": "component-menu-background",
+      "value": "hsl(0, 0%, 95.1%)"
+    },
+    {
+      "name": "component-menu-item-text",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "component-palette-background",
+      "value": "hsl(0, 0%, 95.1%)"
+    },
+    {
+      "name": "component-sheet-background",
+      "value": "hsl(0, 0%, 95.1%)"
+    },
+    {
+      "name": "component-alert-info-border",
+      "value": "hsl(0, 0%, 88.7%)"
+    },
+    {
+      "name": "component-alert-info-icon",
+      "value": "hsl(0, 0%, 43.5%)"
+    },
+    {
+      "name": "component-alert-brand-text",
+      "value": "hsl(43, 32%, 21%)"
+    },
+    {
+      "name": "component-alert-success-background",
+      "value": "hsl(135, 53%, 93%)"
+    },
+    {
+      "name": "component-alert-success-body",
+      "value": "hsl(155, 100%, 25%)"
+    },
+    {
+      "name": "component-alert-danger-border",
+      "value": "hsl(2, 81%, 80%)"
+    },
+    {
+      "name": "component-alert-danger-icon",
+      "value": "hsl(355, 64%, 49%)"
+    },
+    {
+      "name": "component-pagination-item-text-active",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "component-pagination-item-border-active",
+      "value": "hsl(0, 0%, 85.8%)"
+    },
+    {
+      "name": "context-tv-channel-art-production-splash-background",
+      "value": "hsl(0, 0%, 8.5%)"
+    },
+    {
+      "name": "context-tv-channel-art-nightly-moon",
+      "value": "hsl(44.7, 97.9%, 63.1%)"
+    },
+    {
+      "name": "tv-video-text-on-video",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "color-brand-yellow",
+      "value": "hsl(44.7, 97.9%, 63.1%)"
+    },
+    {
+      "name": "color-neutral-light-line",
+      "value": "hsl(0, 0%, 88.7%)"
+    },
+    {
+      "name": "color-neutral-light-text",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "color-neutral-dark-line",
+      "value": "hsl(0, 0%, 20.5%)"
+    },
+    {
+      "name": "color-neutral-dark-text",
+      "value": "hsl(0, 0%, 93.0%)"
+    },
+    {
+      "name": "color-green-dark-bg-secondary",
+      "value": "hsl(149, 21%, 9%)"
+    },
+    {
+      "name": "color-red-light-border",
+      "value": "hsl(2, 81%, 80%)"
+    },
+    {
+      "name": "color-red-dark-border-hover",
+      "value": "hsl(359, 45%, 49%)"
+    },
+    {
+      "name": "color-yellow-light-text-secondary",
+      "value": "hsl(46, 100%, 27%)"
+    },
+    {
+      "name": "color-yellow-dark-text",
+      "value": "hsl(46, 89%, 86%)"
+    },
+    {
+      "name": "surface-light-list-item-bg-hover",
+      "value": "hsl(0, 0%, 97.3%)"
+    },
+    {
+      "name": "surface-light-transfer-list-item-downloading-bg",
+      "value": "hsl(85, 76.0%, 92.3%)"
+    },
+    {
+      "name": "surface-dark-app-bg",
+      "value": "hsl(0, 0%, 8.5%)"
+    },
+    {
+      "name": "surface-dark-list-item-border",
+      "value": "hsl(0, 0%, 17.9%)"
+    },
+    {
+      "name": "surface-dark-transfer-list-item-passive-bg",
+      "value": "hsl(0, 0%, 11.0%)"
+    },
+    {
+      "name": "yellow",
+      "value": "hsl(44.7, 97.9%, 63.1%)"
+    },
+    {
+      "name": "transfer-list-item-passive-bg",
+      "value": "hsl(0, 0%, 99.0%)"
+    },
+    {
+      "name": "input-placeholder",
+      "value": "hsl(0, 0%, 43.5%)"
+    },
+    {
+      "name": "card",
+      "value": "hsl(0, 0%, 95.1%)"
+    },
+    {
+      "name": "menu-item-bg-hover",
+      "value": "hsl(0, 0%, 93.0%)"
+    },
+    {
+      "name": "slider-buffer",
+      "value": "hsl(0, 0%, 85.8%)"
+    },
+    {
+      "name": "red-component-bg",
+      "value": "hsl(2, 100%, 96%)"
+    },
+    {
+      "name": "yellow-solid-hover",
+      "value": "hsl(45, 89%, 58%)"
+    },
+    {
+      "name": "lo-contrast",
+      "value": "hsl(0, 0%, 99.0%)"
+    },
+    {
+      "name": "avatar-orange",
+      "value": "hsl(28, 80%, 55%)"
+    },
+    {
+      "name": "item-icon",
+      "value": "hsl(0, 0%, 43.5%)"
+    },
+    {
+      "name": "orange",
+      "value": "hsl(28, 80%, 55%)"
+    },
+    {
+      "name": "hero-scrim-bottom",
+      "value": "hsl(30, 25%, 1.6%)"
+    },
+    {
+      "name": "component-alias-foreground",
+      "value": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "name": "component-alias-muted",
+      "value": "hsl(0, 0%, 97.3%)"
+    },
+    {
+      "name": "component-alias-popover-foreground-dark",
+      "value": "hsl(0, 0%, 93.0%)"
+    },
+    {
+      "name": "component-menu-item-shortcut",
+      "value": "hsl(0, 0%, 43.5%)"
+    },
+    {
+      "name": "component-avatar-green",
+      "value": "hsl(151, 55%, 33%)"
+    },
+    {
+      "name": "component-slider-buffer-dark",
+      "value": "hsl(0, 0%, 24.3%)"
+    },
+    {
+      "name": "color-green-light-solid-hover",
+      "value": "hsl(151, 58%, 37%)"
+    },
+    {
+      "name": "color-red-light-component-bg-active",
+      "value": "hsl(3, 100%, 89%)"
+    },
+    {
+      "name": "color-yellow-light-bg",
+      "value": "hsl(45, 60%, 99%)"
+    },
+    {
+      "name": "primary",
+      "value": "hsl(46, 100%, 27%)"
+    }
+  ],
+  "type": [
+    {
+      "name": "original-value",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "6rem",
+      "px": 96
+    },
+    {
+      "name": "typography-font-size-display",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "6rem",
+      "px": 96
+    },
+    {
+      "name": "typography-font-size-3xl",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "typography-font-size-4xl",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "typography-font-size-2xl",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "typography-font-size-xl",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "typography-font-size-lg",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "typography-font-size-title",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "typography-font-size-md",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "sans",
+      "fontFamily": "\"GT America\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "mono",
+      "fontFamily": "\"Berkeley Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-sans",
+      "fontFamily": "\"GT America\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-display",
+      "fontFamily": "\"GT America\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-mono",
+      "fontFamily": "\"Berkeley Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "display",
+      "fontFamily": "\"GT America\", sans-serif",
+      "px": 16
+    },
+    {
+      "name": "typography-font-size-base",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography-font-size-sm",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "typography-font-size-xs",
+      "fontFamily": "\"GT America\", sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "label",
+      "kind": "label",
+      "textColor": "hsl(0, 0%, 9.0%)"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "hsl(0, 0%, 97.3%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "hsl(46, 100%, 27%)",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "hsl(46, 100%, 27%)",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "hsl(0, 0%, 97.3%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "hsl(0, 0%, 97.3%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "hsl(0, 0%, 97.3%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "hsl(0, 0%, 97.3%)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "hsl(0, 0%, 97.3%)",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Phosphor Icons",
+    "package": "@phosphor-icons/react",
+    "pack": "phosphor",
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "npm",
+    "url": "https://phosphoricons.com"
+  },
+  "overview": "**Put.io Design System** is a light-first design system anchored on `hsl(0, 0%, 97.3%)` canvas surfaces with `#0b0b0c` primary ink (18.5:1 contrast) and `hsl(46, 100%, 27%)` brand accent.\n\nTypography centers cleanly on `GT America` (96px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Put.io**. Source: published token package (https://design.put.io), package `@putdotio/design`. Inventory: **91** colors, **19** typography steps, and **9** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 9 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `hsl(0, 0%, 97.3%)` cards; separate sibling sections using `hsl(0, 0%, 88.7%)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`hsl(0, 0%, 97.3%)` -> `hsl(0, 0%, 97.3%)`) and `1px solid hsl(0, 0%, 88.7%)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `hsl(46, 100%, 27%)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `hsl(0, 0%, 97.3%)` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `hsl(46, 100%, 27%)` with `#f7f7f8` text (4.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `GT America` headings with `GT America` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `hsl(0, 0%, 97.3%)` surface shifts and `hsl(0, 0%, 88.7%)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

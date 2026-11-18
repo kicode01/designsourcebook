@@ -1,0 +1,42 @@
+{
+  "name": "ft-origami",
+  "displayName": "Origami v3",
+  "description": "Financial Times Origami v3 — tokens imported from @financial-times/o3-foundation.",
+  "style": "Financial Times Origami v3 — tokens imported from @financial-times/o3-foundation.",
+  "category": "Financial Times",
+  "org": "Financial Times",
+  "theme": "light",
+  "tags": [
+    "published",
+    "financial-times",
+    "light"
+  ],
+  "homepage": "https://registry.origami.ft.com/components/o3-foundation",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @financial-times/o3-foundation@3.14.0 (7 token files, 125 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@financial-times/o3-foundation",
+    "version": "3.14.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 60,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

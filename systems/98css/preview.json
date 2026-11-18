@@ -1,0 +1,188 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#ffffff",
+  "text": "#222222",
+  "muted": "#222222",
+  "brand": "#1084d0",
+  "border": "color-mix(in srgb, #222222 14%, transparent)",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "text-color",
+      "value": "#222222"
+    },
+    {
+      "name": "surface",
+      "value": "#c0c0c0"
+    },
+    {
+      "name": "button-highlight",
+      "value": "#ffffff"
+    },
+    {
+      "name": "button-face",
+      "value": "#dfdfdf"
+    },
+    {
+      "name": "button-shadow",
+      "value": "#808080"
+    },
+    {
+      "name": "window-frame",
+      "value": "#0a0a0a"
+    },
+    {
+      "name": "dialog-blue",
+      "value": "#000080"
+    },
+    {
+      "name": "dialog-blue-light",
+      "value": "#1084d0"
+    },
+    {
+      "name": "dialog-gray",
+      "value": "#808080"
+    },
+    {
+      "name": "dialog-gray-light",
+      "value": "#b5b5b5"
+    },
+    {
+      "name": "link-blue",
+      "value": "#0000ff"
+    },
+    {
+      "name": "primary",
+      "value": "#1084d0"
+    }
+  ],
+  "type": [
+    {
+      "name": "h1",
+      "fontFamily": "Arial",
+      "fontSize": "5rem",
+      "px": 80
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Arial",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Arial",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Arial",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "body",
+      "fontFamily": "Arial",
+      "fontSize": "12px",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "panel",
+      "kind": "panel",
+      "backgroundColor": "#fff",
+      "border": "2px groove transparent"
+    },
+    {
+      "key": "tag",
+      "kind": "badge",
+      "textColor": "#00f"
+    },
+    {
+      "key": "link",
+      "kind": "link",
+      "textColor": "#00b0e8"
+    },
+    {
+      "key": "hljs-selector-tag-2",
+      "kind": "select",
+      "textColor": "#00f"
+    },
+    {
+      "key": "hljs-template-tag-3",
+      "kind": "badge",
+      "textColor": "#a31515"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1084d0",
+      "textColor": "#000000",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1084d0",
+      "textColor": "#000000",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#222222",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#ffffff",
+      "textColor": "#222222",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 16,
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**98.css** is a light-first design system anchored on `#ffffff` canvas surfaces with `#222222` primary ink (15.9:1 contrast) and `#1084d0` brand accent.\n\nTypography centers cleanly on `Arial` (80px display down to 12px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nSource: published token package (https://github.com/jdan/98.css), package `98.css`. Inventory: **12** colors, **5** typography steps, and **12** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 12 component tokens with documented paddings: `2px`, `6px 12px`, `12px 14px`, `10px 14px`, `6px 10px`.\n- **Hierarchy**: Group controls cleanly within `#ffffff` cards; separate sibling sections using `color-mix(in srgb, #222222 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#ffffff`) and `1px solid color-mix(in srgb, #222222 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1084d0` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#222222` primary text and `#222222` secondary labels.\n- Use `#1084d0` with `#f7f7f8` text (3.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Arial` headings with `Arial` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#ffffff` surface shifts and `color-mix(in srgb, #222222 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

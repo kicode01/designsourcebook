@@ -1,0 +1,42 @@
+{
+  "name": "civitai",
+  "displayName": "Civitai Design System",
+  "description": "Civitai Design System — tokens imported from @civitai/theme.",
+  "style": "Civitai Design System — tokens imported from @civitai/theme.",
+  "category": "Civitai",
+  "org": "Civitai",
+  "theme": "light",
+  "tags": [
+    "published",
+    "civitai",
+    "light"
+  ],
+  "homepage": "https://github.com/civitai/civitai-app-starters/tree/main/packages/civitai-theme#readme",
+  "license": "MIT",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @civitai/theme@0.5.2 (4 token files, 84 colours harvested, 81 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@civitai/theme",
+    "version": "0.5.2"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 81,
+    "typography": 4,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

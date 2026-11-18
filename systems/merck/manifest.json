@@ -1,0 +1,42 @@
+{
+  "name": "merck",
+  "displayName": "Liquid",
+  "description": "Merck Liquid — tokens imported from @emdgroup-liquid/liquid.",
+  "style": "Merck Liquid — tokens imported from @emdgroup-liquid/liquid.",
+  "category": "Merck",
+  "org": "Merck",
+  "theme": "dark",
+  "tags": [
+    "published",
+    "merck",
+    "dark"
+  ],
+  "homepage": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "provenance": "published",
+  "provenanceNote": "Tokens imported from @emdgroup-liquid/liquid@5.15.0 (13 token files, 288 colours harvested, 90 selected). The package publishes no prose documentation, so the prose sections are generated.",
+  "source": {
+    "package": "@emdgroup-liquid/liquid",
+    "version": "5.15.0"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 91,
+    "typography": 41,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

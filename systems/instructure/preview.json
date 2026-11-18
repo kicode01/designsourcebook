@@ -1,0 +1,615 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#FFFFFF",
+  "text": "#273540",
+  "muted": "#586874",
+  "brand": "#1D354F",
+  "border": "#E8EAEC",
+  "radius": "8px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "placeholder-background-color",
+      "value": "#707070"
+    },
+    {
+      "name": "instui-canvas-colors-ui-surface-card-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "instui-canvas-colors-ui-text-title",
+      "value": "#273540"
+    },
+    {
+      "name": "instui-canvas-colors-ui-text-timestamp",
+      "value": "#586874"
+    },
+    {
+      "name": "instui-canvas-colors-ui-text-link",
+      "value": "#0E68B3"
+    },
+    {
+      "name": "instui-canvas-colors-ui-text-warning",
+      "value": "#B34000"
+    },
+    {
+      "name": "instui-canvas-colors-ui-surface-success",
+      "value": "#03893D"
+    },
+    {
+      "name": "instui-canvas-colors-ui-surface-divider",
+      "value": "#E8EAEC"
+    },
+    {
+      "name": "instui-canvas-colors-ui-icon-warning",
+      "value": "#CF4A00"
+    },
+    {
+      "name": "surface-page-primary",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "surface-card-secondary",
+      "value": "#F2F4F4"
+    },
+    {
+      "name": "text-description",
+      "value": "#273540"
+    },
+    {
+      "name": "text-author",
+      "value": "#586874"
+    },
+    {
+      "name": "text-placeholder",
+      "value": "#9EA6AD"
+    },
+    {
+      "name": "text-error",
+      "value": "#C71F23"
+    },
+    {
+      "name": "surface-warning",
+      "value": "#CF4A00"
+    },
+    {
+      "name": "text-surface-colored",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "icon-error",
+      "value": "#E62429"
+    },
+    {
+      "name": "rose30-primary",
+      "value": "#FB5D5D"
+    },
+    {
+      "name": "rose110-primary",
+      "value": "#7F0000"
+    },
+    {
+      "name": "rose50-secondary",
+      "value": "#E00000"
+    },
+    {
+      "name": "copper12-primary",
+      "value": "#FFE5D3"
+    },
+    {
+      "name": "copper70-primary",
+      "value": "#90420D"
+    },
+    {
+      "name": "copper40-secondary",
+      "value": "#CD5E12"
+    },
+    {
+      "name": "copper90-secondary",
+      "value": "#77360B"
+    },
+    {
+      "name": "honey45-primary",
+      "value": "#996E00"
+    },
+    {
+      "name": "honey35-secondary",
+      "value": "#A57600"
+    },
+    {
+      "name": "honey57-secondary",
+      "value": "#856000"
+    },
+    {
+      "name": "forest30-primary",
+      "value": "#55A459"
+    },
+    {
+      "name": "forest110-primary",
+      "value": "#144516"
+    },
+    {
+      "name": "forest50-secondary",
+      "value": "#248029"
+    },
+    {
+      "name": "aurora12-primary",
+      "value": "#DAEEE8"
+    },
+    {
+      "name": "aurora70-primary",
+      "value": "#036549"
+    },
+    {
+      "name": "aurora40-secondary",
+      "value": "#0B9069"
+    },
+    {
+      "name": "aurora90-secondary",
+      "value": "#02533C"
+    },
+    {
+      "name": "sea45-primary",
+      "value": "#00828E"
+    },
+    {
+      "name": "sea35-secondary",
+      "value": "#1E95A0"
+    },
+    {
+      "name": "sea57-secondary",
+      "value": "#00717B"
+    },
+    {
+      "name": "sky30-primary",
+      "value": "#4E9CC0"
+    },
+    {
+      "name": "sky110-primary",
+      "value": "#0D4058"
+    },
+    {
+      "name": "sky50-secondary",
+      "value": "#1777A2"
+    },
+    {
+      "name": "ocean12-primary",
+      "value": "#DFEBFB"
+    },
+    {
+      "name": "ocean70-primary",
+      "value": "#1C57A8"
+    },
+    {
+      "name": "ocean40-secondary",
+      "value": "#317DE6"
+    },
+    {
+      "name": "ocean90-secondary",
+      "value": "#17478B"
+    },
+    {
+      "name": "violet45-primary",
+      "value": "#9E58BD"
+    },
+    {
+      "name": "violet35-secondary",
+      "value": "#AC6FC6"
+    },
+    {
+      "name": "violet57-secondary",
+      "value": "#9242B4"
+    },
+    {
+      "name": "plum30-primary",
+      "value": "#D473B1"
+    },
+    {
+      "name": "plum110-primary",
+      "value": "#70134F"
+    },
+    {
+      "name": "plum50-secondary",
+      "value": "#C1368F"
+    },
+    {
+      "name": "stone12-primary",
+      "value": "#EAEAEA"
+    },
+    {
+      "name": "stone70-primary",
+      "value": "#585858"
+    },
+    {
+      "name": "stone40-secondary",
+      "value": "#7F7F7F"
+    },
+    {
+      "name": "stone90-secondary",
+      "value": "#494949"
+    },
+    {
+      "name": "focus-outline-success-color",
+      "value": "#037D37"
+    },
+    {
+      "name": "background-base-color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "background-brand-color",
+      "value": "#1D354F"
+    },
+    {
+      "name": "background-success-color",
+      "value": "#03893D"
+    },
+    {
+      "name": "background-warning-color",
+      "value": "#F0C16C"
+    },
+    {
+      "name": "background-ai-text-color",
+      "value": "#F3E5F7"
+    },
+    {
+      "name": "background-accent-blue",
+      "value": "#2B7ABC"
+    },
+    {
+      "name": "background-accent-honey",
+      "value": "#996E00"
+    },
+    {
+      "name": "background-accent-red",
+      "value": "#E62429"
+    },
+    {
+      "name": "background-accent-stone",
+      "value": "#767676"
+    },
+    {
+      "name": "stroke-success-color",
+      "value": "#03893D"
+    },
+    {
+      "name": "stroke-info-color",
+      "value": "#2B7ABC"
+    },
+    {
+      "name": "stroke-accent-blue",
+      "value": "#2871AF"
+    },
+    {
+      "name": "stroke-accent-honey",
+      "value": "#8C6400"
+    },
+    {
+      "name": "stroke-accent-red",
+      "value": "#CF1F24"
+    },
+    {
+      "name": "stroke-accent-stone",
+      "value": "#767676"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "violet30",
+      "value": "#B57FCC"
+    },
+    {
+      "name": "forest50",
+      "value": "#248029"
+    },
+    {
+      "name": "plum110",
+      "value": "#70134F"
+    },
+    {
+      "name": "grey180",
+      "value": "#1C222B"
+    },
+    {
+      "name": "orange50",
+      "value": "#FF905A"
+    },
+    {
+      "name": "stone20",
+      "value": "#E9E9E9"
+    },
+    {
+      "name": "sea80",
+      "value": "#0394A5"
+    },
+    {
+      "name": "navy200",
+      "value": "#00152A"
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-color-blue-blue90",
+      "value": "#2D83CB"
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-color-plum-plum15",
+      "value": "#702254"
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-color-sea-sea170",
+      "value": "#023941"
+    },
+    {
+      "name": "instui-canvas-colors-primitives-green82",
+      "value": "#015B28"
+    },
+    {
+      "name": "instui-canvas-colors-additional-primitives-copper35",
+      "value": "#DB6414"
+    },
+    {
+      "name": "instui-canvas-colors-additional-primitives-sea57",
+      "value": "#00717B"
+    },
+    {
+      "name": "instui-canvas-colors-additional-primitives-stone12",
+      "value": "#EAEAEA"
+    },
+    {
+      "name": "instui-canvas-colors-data-visualization-rose45-prima",
+      "value": "#ED0000"
+    },
+    {
+      "name": "instui-canvas-colors-data-visualization-aurora40-sec",
+      "value": "#0B9069"
+    },
+    {
+      "name": "instui-canvas-colors-data-visualization-plum12-prima",
+      "value": "#F7E5F0"
+    },
+    {
+      "name": "primary",
+      "value": "#1D354F"
+    }
+  ],
+  "type": [
+    {
+      "name": "font-size-xxlarge",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.375rem",
+      "px": 38
+    },
+    {
+      "name": "large-icon-font-size",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.375rem",
+      "px": 38
+    },
+    {
+      "name": "instui-canvas-typography-font-size-xx-large",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "2.375rem",
+      "px": 38
+    },
+    {
+      "name": "font-size-xlarge",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "instui-canvas-typography-font-size-x-large",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "font-size-large",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "title-font-size",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "medium-icon-font-size",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "instui-canvas-typography-font-size-large",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "large-font-size",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-size-lg",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "Menlo, Consolas, Monaco, \"Andale Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "font-size-medium",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "small-icon-font-size",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-font-family-lato",
+      "fontFamily": "Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-font-family-inclu",
+      "fontFamily": "\"Inclusive Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-font-family-atkin",
+      "fontFamily": "\"Atkinson Hyperlegible Next\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-new-theme-primitives-font-family-menlo",
+      "fontFamily": "Menlo, Consolas, Monaco, \"Andale Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-typography-font-family",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-typography-font-family-monospace",
+      "fontFamily": "Menlo, Consolas, Monaco, \"Andale Mono\", monospace",
+      "px": 16
+    },
+    {
+      "name": "instui-canvas-typography-font-size-medium",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "typography",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "font-size-small",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "instui-canvas-typography-font-size-small",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "font-size-xsmall",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "instui-canvas-typography-font-size-x-small",
+      "fontFamily": "LatoWeb, Lato, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    }
+  ],
+  "components": [
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#273540",
+      "rounded": "8px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#1D354F",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#1D354F",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#273540",
+      "rounded": "8px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#273540",
+      "rounded": "8px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#273540",
+      "rounded": "8px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#273540",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#273540",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**InstUI** is a light-first design system anchored on `#ffffff` canvas surfaces with `#273540` primary ink (12.6:1 contrast) and `#1D354F` brand accent.\n\nTypography centers cleanly on `LatoWeb` (38px display down to 16px body), unified by `8px` base corner radius and hairline `1px` structural borders.\n\nMaintained by **Instructure**. Source: published token package (https://instructure.github.io/instructure-ui/), package `@instructure/ui-themes`. Inventory: **91** colors, **28** typography steps, and **8** documented components (MIT license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 8 component tokens with documented paddings: `8px 12px`, `2px`, `6px 12px`, `12px 14px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `#FFFFFF` cards; separate sibling sections using `#E8EAEC` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#ffffff` -> `#FFFFFF`) and `1px solid #E8EAEC` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#1D354F` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#ffffff` (light) with `#273540` primary text and `#586874` secondary labels.\n- Use `#1D354F` with `#f7f7f8` text (11.7:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `LatoWeb` headings with `LatoWeb` body copy using documented weights and scale steps.\n- Apply `8px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#FFFFFF` surface shifts and `#E8EAEC` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `8px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

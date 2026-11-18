@@ -1,0 +1,571 @@
+{
+  "canvas": "#ffffff",
+  "surface": "#f3f3f3",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#0070d1",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "{rounded.full}",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "primary",
+      "value": "#0070d1"
+    },
+    {
+      "name": "primary-pressed",
+      "value": "#0064b7"
+    },
+    {
+      "name": "primary-active",
+      "value": "#004d8d"
+    },
+    {
+      "name": "on-primary",
+      "value": "#ffffff"
+    },
+    {
+      "name": "link-light",
+      "value": "#0064b7"
+    },
+    {
+      "name": "link-dark",
+      "value": "#53b1ff"
+    },
+    {
+      "name": "commerce",
+      "value": "#d53b00"
+    },
+    {
+      "name": "commerce-pressed",
+      "value": "#aa2f00"
+    },
+    {
+      "name": "commerce-link-base",
+      "value": "#d63d00"
+    },
+    {
+      "name": "on-commerce",
+      "value": "#ffffff"
+    },
+    {
+      "name": "ink",
+      "value": "#000000"
+    },
+    {
+      "name": "ink-deep",
+      "value": "#121314"
+    },
+    {
+      "name": "ink-elevated",
+      "value": "#181818"
+    },
+    {
+      "name": "charcoal",
+      "value": "#1f2024"
+    },
+    {
+      "name": "body-light",
+      "value": "rgba(0,0,0,0.6)"
+    },
+    {
+      "name": "mute-light",
+      "value": "#6b6b6b"
+    },
+    {
+      "name": "ash-light",
+      "value": "#cccccc"
+    },
+    {
+      "name": "body-dark",
+      "value": "rgba(255,255,255,0.7)"
+    },
+    {
+      "name": "mute-dark",
+      "value": "rgba(229,229,229,0.55)"
+    },
+    {
+      "name": "ash-dark",
+      "value": "rgba(229,229,229,0.2)"
+    },
+    {
+      "name": "canvas-light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "surface-soft",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "surface-card",
+      "value": "#f5f7fa"
+    },
+    {
+      "name": "surface-filter",
+      "value": "rgba(245,247,250,0.3)"
+    },
+    {
+      "name": "canvas-dark",
+      "value": "#000000"
+    },
+    {
+      "name": "surface-dark-elevated",
+      "value": "#121314"
+    },
+    {
+      "name": "surface-dark-card",
+      "value": "#181818"
+    },
+    {
+      "name": "hairline-light",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "hairline-dark",
+      "value": "rgba(229,229,229,0.2)"
+    },
+    {
+      "name": "on-dark",
+      "value": "#ffffff"
+    },
+    {
+      "name": "on-dark-mute",
+      "value": "#cccccc"
+    },
+    {
+      "name": "warning",
+      "value": "#c81b3a"
+    },
+    {
+      "name": "ps-plus-gold-start",
+      "value": "#ffce21"
+    },
+    {
+      "name": "ps-plus-gold-mid",
+      "value": "#f5a623"
+    },
+    {
+      "name": "ps-plus-gold-end",
+      "value": "#ee8e00"
+    },
+    {
+      "name": "marathon-yellow",
+      "value": "#deff20"
+    }
+  ],
+  "type": [
+    {
+      "name": "display-xl",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "54px",
+      "px": 54,
+      "fontWeight": 300,
+      "lineHeight": 1.25,
+      "letterSpacing": "-0.1px"
+    },
+    {
+      "name": "display-lg",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "44px",
+      "px": 44,
+      "fontWeight": 300,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.1px"
+    },
+    {
+      "name": "display-md",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "35px",
+      "px": 35,
+      "fontWeight": 300,
+      "lineHeight": 1.25,
+      "letterSpacing": 0
+    },
+    {
+      "name": "heading-xl",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "28px",
+      "px": 28,
+      "fontWeight": 300,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.1px"
+    },
+    {
+      "name": "heading-lg",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "22px",
+      "px": 22,
+      "fontWeight": 300,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.1px"
+    },
+    {
+      "name": "heading-md",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 600,
+      "lineHeight": 1,
+      "letterSpacing": 0
+    },
+    {
+      "name": "body-md",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.1px"
+    },
+    {
+      "name": "body-strong",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 500,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.4px"
+    },
+    {
+      "name": "link-md",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button-lg",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "18px",
+      "px": 18,
+      "fontWeight": 700,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.45px"
+    },
+    {
+      "name": "body-sm",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "16px",
+      "px": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "caption-md",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    },
+    {
+      "name": "button-md",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "14px",
+      "px": 14,
+      "fontWeight": 700,
+      "lineHeight": 1.25,
+      "letterSpacing": "0.324px"
+    },
+    {
+      "name": "caption-sm",
+      "fontFamily": "PlayStation SST",
+      "fontSize": "12px",
+      "px": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.5,
+      "letterSpacing": 0
+    }
+  ],
+  "components": [
+    {
+      "key": "button-primary",
+      "kind": "button",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "12px 28px"
+    },
+    {
+      "key": "button-primary-pressed",
+      "kind": "button",
+      "backgroundColor": "{colors.primary-pressed}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-commerce",
+      "kind": "button",
+      "backgroundColor": "{colors.commerce}",
+      "textColor": "{colors.on-commerce}",
+      "rounded": "{rounded.full}",
+      "padding": "12px 28px"
+    },
+    {
+      "key": "button-commerce-pressed",
+      "kind": "button",
+      "backgroundColor": "{colors.commerce-pressed}",
+      "textColor": "{colors.on-commerce}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "button-secondary-light",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "12px 28px"
+    },
+    {
+      "key": "button-secondary-dark",
+      "kind": "button",
+      "backgroundColor": "transparent",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}",
+      "padding": "12px 28px"
+    },
+    {
+      "key": "button-disabled",
+      "kind": "button",
+      "backgroundColor": "{colors.surface-soft}",
+      "textColor": "{colors.ash-light}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "text-input",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}",
+      "padding": "12px 16px"
+    },
+    {
+      "key": "text-input-focused",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.sm}"
+    },
+    {
+      "key": "filter-pill",
+      "kind": "badge",
+      "backgroundColor": "{colors.surface-filter}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "8px 16px"
+    },
+    {
+      "key": "filter-pill-active",
+      "kind": "badge",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "product-card",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-card}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "24px"
+    },
+    {
+      "key": "product-card-dark",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-dark-card}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.md}",
+      "padding": "24px"
+    },
+    {
+      "key": "game-tile",
+      "kind": "card",
+      "backgroundColor": "{colors.surface-dark-elevated}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.md}",
+      "padding": "0px"
+    },
+    {
+      "key": "feature-card",
+      "kind": "card",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "padding": "32px"
+    },
+    {
+      "key": "hero-band-blue",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "96px 48px"
+    },
+    {
+      "key": "hero-band-dark",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}",
+      "padding": "96px 48px"
+    },
+    {
+      "key": "hero-band-light",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "96px 48px"
+    },
+    {
+      "key": "ps-plus-banner",
+      "kind": "alert",
+      "backgroundColor": "{colors.surface-dark-elevated}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.md}",
+      "padding": "48px 32px"
+    },
+    {
+      "key": "carousel-paddle",
+      "kind": "component",
+      "backgroundColor": "rgba(255,255,255,0.16)",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "pagination-dot",
+      "kind": "component",
+      "backgroundColor": "{colors.ash-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "pagination-dot-active",
+      "kind": "component",
+      "backgroundColor": "{colors.on-dark}",
+      "rounded": "{rounded.full}"
+    },
+    {
+      "key": "badge-info",
+      "kind": "badge",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.full}",
+      "padding": "4px 10px"
+    },
+    {
+      "key": "primary-nav",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "sub-nav",
+      "kind": "nav",
+      "backgroundColor": "{colors.canvas-dark}",
+      "textColor": "{colors.on-dark}",
+      "rounded": "{rounded.none}"
+    },
+    {
+      "key": "footer-section",
+      "kind": "component",
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.on-primary}",
+      "rounded": "{rounded.none}",
+      "padding": "48px 32px"
+    },
+    {
+      "key": "support-search-bar",
+      "kind": "input",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.full}",
+      "padding": "12px 24px"
+    },
+    {
+      "key": "support-row",
+      "kind": "component",
+      "backgroundColor": "{colors.canvas-light}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.none}",
+      "padding": "16px 0px"
+    },
+    {
+      "key": "link-inline",
+      "kind": "link",
+      "textColor": "{colors.link-light}"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#0070d1",
+      "textColor": "#f7f7f8",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#0070d1",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#ffffff",
+      "textColor": "#0b0b0c",
+      "rounded": "6px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#ffffff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#f3f3f3",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "PlayStation's marketing system reads like a console launch trailer scrolling past the viewer in chapters. Each section is a full-bleed band — pure black `{colors.canvas-dark}`, true white `{colors.canvas-light}`, or PlayStation Blue `{colors.primary}` — and each chapter owns one editorial moment: hero console photography, a games-coming-soon strip, the PlayStation Plus tier banner, the \"30 Years of PlayStation\" anniversary band, the news strip from the PlayStation Blog. There is no decorative chrome between chapters; the section background change IS the divider. Sections stack at `{spacing.section}` (96px) rhythm with the next band's color taking over the page edge-to-edge.\r\n\r\nThe system has two distinct surface modes that alternate down the page: a **dark canvas mode** for editorial product moments (hero, \"ON PLAYSTATION\" band, marathon game pages) and a **light canvas mode** for utility surfaces (PS5 games listing, support pages, news index). Both modes use the same chrome vocabulary — fully-rounded `{rounded.full}` pill buttons, 8px-radius `{rounded.md}` cards, the proprietary PlayStation SST face — only the surface and on-surface colors change. The third surface mode is the **PlayStation Blue band** (`{colors.primary}` — `#0070d1`) reserved for the highest-priority moments: the Marathon launch CTA strip, the footer, and any \"Action Required\" banner.\r\n\r\nThe typography is the system's most distinctive choice. PlayStation SST renders display headlines at **weight 300** (light) — unusual for a gaming brand that could easily reach for bold geometric display faces. The light weight gives the chrome an airy, almost editorial quality that lets the imagery speak; copy is information rather than decoration. Heading sizes drop in tight increments (54 → 44 → 35 → 28 → 22 → 18) and body settles at 18px with 1.5 line-height for comfortable long-form reading on support and games pages.\r\n\r\n**Key Characteristics:**\r\n- Three-canvas chapter system: `{colors.canvas-dark}` (black), `{colors.canvas-light}` (white), `{colors.primary}` (PlayStation Blue) alternating down the page\r\n- PlayStation Blue (`{colors.primary}` — `#0070d1`) is the universal primary CTA — fully-rounded pill at `{rounded.full}` (9999px)\r\n- Commerce orange (`{colors.commerce}` — `#d53b00`) is the secondary CTA reserved for \"Buy now\" / \"Pre-order\" / store actions\r\n- PlayStation SST display tier renders at **weight 300** with -0.1px to +0.4px tracking — the brand's signature airy editorial voice\r\n- 8px-radius (`{rounded.md}`) for product cards and feature panels; 4px-radius (`{rounded.sm}`) for inputs; pills (`{rounded.full}`) for every CTA\r\n- Game tiles, console renders, and PS Plus tier illustrations occupy 60-90% of each section — imagery does the storytelling\r\n- Color-block page rhythm (one observed band sequence): dark hero → light console showcase → dark \"Great PS4 & PS5 games\" rail → light \"Discover PlayStation Plus\" tier band → light \"30 years of PlayStation\" callout → dark \"ON PLAYSTATION\" band → light news strip → blue footer",
+  "dos": "### Do\r\n- Reserve `{colors.primary}` (PlayStation Blue) for primary CTAs and the footer surface only. The blue band is precious — at most one full-bleed blue band per page.\r\n- Reserve `{colors.commerce}` (orange) for store/buy/pre-order CTAs only. It is never used on marketing chrome or hero pills.\r\n- Use PlayStation SST at weight 300 for display headings (54 / 44 / 35 / 28 / 22). The light weight is the brand voice.\r\n- Stack content sections at `{spacing.section}` (96px) rhythm with the next band's surface color taking over the page edge-to-edge — no decorative dividers between bands.\r\n- Use `{rounded.full}` (9999px) on every CTA pill and `{rounded.md}` (8px) on every product card. The two-radius vocabulary is the entire shape system aside from inputs.\r\n- Pair full-bleed game key art and console renders inside dark or light bands; let imagery occupy 60-90% of the band's vertical height.\r\n- Use `{components.ps-plus-banner}` with the gold gradient exclusively for the PlayStation Plus tier callout — never decorate other components with the gold.\r\n\r\n### Don't\r\n- Don't introduce drop shadows on resting cards. The system is flat-on-canvas; cards lift only on press.\r\n- Don't replace `{colors.primary}` with another shade of blue. The brand blue is precise — `#0070d1` for default and `#0064b7` for pressed.\r\n- Don't use `{colors.commerce}` (orange) on marketing/hero CTAs. It's reserved exclusively for store actions.\r\n- Don't introduce a sans-serif body font, italic, or monospace style. PlayStation SST carries every text role.\r\n- Don't soften pill geometry. CTAs are always `{rounded.full}` — no medium-radius buttons.\r\n- Don't use the gold PS Plus gradient on anything that isn't the PS Plus banner. It is a tier-specific brand asset.\r\n- Don't put a gradient on chrome. The only allowed gradient is the gold PS Plus accent and the soft top-to-bottom darkening of the \"ON PLAYSTATION\" band."
+}

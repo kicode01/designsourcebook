@@ -1,0 +1,41 @@
+{
+  "name": "intentui",
+  "displayName": "Intent UI",
+  "description": "Intent UI — tokens read from https://github.com/irsyadadl/intentui.",
+  "style": "Intent UI — tokens read from https://github.com/irsyadadl/intentui.",
+  "category": "Intent UI",
+  "org": "Intent UI",
+  "theme": "light",
+  "tags": [
+    "published",
+    "intent-ui",
+    "light"
+  ],
+  "homepage": "https://github.com/irsyadadl/intentui",
+  "license": "see repository",
+  "provenance": "published",
+  "provenanceNote": "Tokens read from the repository https://github.com/irsyadadl/intentui — 5 token files, 62 colours harvested, 57 selected.",
+  "source": {
+    "repo": "https://github.com/irsyadadl/intentui"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 57,
+    "typography": 2,
+    "components": 8
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

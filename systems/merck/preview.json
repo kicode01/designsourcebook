@@ -1,0 +1,717 @@
+{
+  "canvas": "rgb(0, 0, 0)",
+  "surface": "rgb(43, 43, 59)",
+  "text": "#f7f7f8",
+  "muted": "#f7f7f8",
+  "brand": "rgb(255, 179, 184)",
+  "border": "color-mix(in srgb, #f7f7f8 14%, transparent)",
+  "radius": "4px",
+  "ink": "#f7f7f8",
+  "palette": [
+    {
+      "name": "neutral-010",
+      "value": "rgb(248, 248, 252)"
+    },
+    {
+      "name": "neutral-050",
+      "value": "rgb(236, 236, 244)"
+    },
+    {
+      "name": "neutral-100",
+      "value": "rgb(225, 225, 234)"
+    },
+    {
+      "name": "neutral-200",
+      "value": "rgb(199, 199, 209)"
+    },
+    {
+      "name": "neutral-300",
+      "value": "rgb(169, 169, 186)"
+    },
+    {
+      "name": "neutral-400",
+      "value": "rgb(139, 139, 156)"
+    },
+    {
+      "name": "neutral-500",
+      "value": "rgb(119, 119, 136)"
+    },
+    {
+      "name": "neutral-600-default",
+      "value": "rgb(94, 94, 114)"
+    },
+    {
+      "name": "neutral-700",
+      "value": "rgb(69, 69, 84)"
+    },
+    {
+      "name": "neutral-800",
+      "value": "rgb(43, 43, 59)"
+    },
+    {
+      "name": "neutral-900",
+      "value": "rgb(15, 26, 46)"
+    },
+    {
+      "name": "neutral-999",
+      "value": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "ld-col-neutral-010",
+      "value": "#f8f8fc"
+    },
+    {
+      "name": "ld-col-neutral-050",
+      "value": "#ececf4"
+    },
+    {
+      "name": "ld-col-neutral-100",
+      "value": "#e1e1ea"
+    },
+    {
+      "name": "ld-col-neutral-200",
+      "value": "#c7c7d1"
+    },
+    {
+      "name": "ld-col-neutral-300",
+      "value": "#a9a9ba"
+    },
+    {
+      "name": "ld-col-neutral-400",
+      "value": "#8b8b9c"
+    },
+    {
+      "name": "ld-col-neutral-500",
+      "value": "#778"
+    },
+    {
+      "name": "ld-col-neutral-600",
+      "value": "#5e5e72"
+    },
+    {
+      "name": "ld-col-neutral-700",
+      "value": "#454554"
+    },
+    {
+      "name": "ld-col-neutral-800",
+      "value": "#2b2b3b"
+    },
+    {
+      "name": "ld-col-neutral-900",
+      "value": "#0f1a2e"
+    },
+    {
+      "name": "ld-col-neutral-999",
+      "value": "#000"
+    },
+    {
+      "name": "ld-col-neutral",
+      "value": "#5e5e72"
+    },
+    {
+      "name": "rr-010",
+      "value": "rgb(255, 246, 248)"
+    },
+    {
+      "name": "rr-200",
+      "value": "rgb(255, 179, 184)"
+    },
+    {
+      "name": "rr-500",
+      "value": "rgb(244, 58, 102)"
+    },
+    {
+      "name": "rr-800",
+      "value": "rgb(117, 12, 36)"
+    },
+    {
+      "name": "rb-050",
+      "value": "rgb(236, 245, 252)"
+    },
+    {
+      "name": "rb-300",
+      "value": "rgb(129, 187, 233)"
+    },
+    {
+      "name": "rb-600-default",
+      "value": "rgb(15, 105, 175)"
+    },
+    {
+      "name": "rb-900",
+      "value": "rgb(0, 28, 56)"
+    },
+    {
+      "name": "vy-100",
+      "value": "rgb(253, 229, 166)"
+    },
+    {
+      "name": "vy-400",
+      "value": "rgb(191, 140, 0)"
+    },
+    {
+      "name": "vy-700",
+      "value": "rgb(97, 69, 5)"
+    },
+    {
+      "name": "rp-010",
+      "value": "rgb(250, 247, 255)"
+    },
+    {
+      "name": "rp-200",
+      "value": "rgb(212, 195, 248)"
+    },
+    {
+      "name": "rp-500",
+      "value": "rgb(138, 104, 210)"
+    },
+    {
+      "name": "rp-800",
+      "value": "rgb(60, 34, 116)"
+    },
+    {
+      "name": "vg-050",
+      "value": "rgb(233, 248, 203)"
+    },
+    {
+      "name": "vg-300-default",
+      "value": "rgb(165, 205, 80)"
+    },
+    {
+      "name": "vg-600",
+      "value": "rgb(82, 121, 0)"
+    },
+    {
+      "name": "vg-900",
+      "value": "rgb(18, 31, 0)"
+    },
+    {
+      "name": "vm-100",
+      "value": "rgb(255, 216, 229)"
+    },
+    {
+      "name": "vm-400",
+      "value": "rgb(230, 97, 166)"
+    },
+    {
+      "name": "vm-700",
+      "value": "rgb(150, 16, 91)"
+    },
+    {
+      "name": "rg-010",
+      "value": "rgb(244, 251, 248)"
+    },
+    {
+      "name": "rg-200",
+      "value": "rgb(139, 233, 154)"
+    },
+    {
+      "name": "rg-500",
+      "value": "rgb(48, 164, 90)"
+    },
+    {
+      "name": "rg-800",
+      "value": "rgb(5, 76, 32)"
+    },
+    {
+      "name": "vc-050",
+      "value": "rgb(221, 252, 255)"
+    },
+    {
+      "name": "vc-300",
+      "value": "rgb(83, 212, 225)"
+    },
+    {
+      "name": "vc-600",
+      "value": "rgb(0, 132, 144)"
+    },
+    {
+      "name": "vc-900",
+      "value": "rgb(0, 31, 35)"
+    },
+    {
+      "name": "sb-default",
+      "value": "rgb(150, 215, 210)"
+    },
+    {
+      "name": "ld-col-rb-010",
+      "value": "#f4faff"
+    },
+    {
+      "name": "ld-col-rb-200",
+      "value": "#add2f1"
+    },
+    {
+      "name": "ld-col-rb-500",
+      "value": "#2b8dd8"
+    },
+    {
+      "name": "ld-col-rb-800",
+      "value": "#0a3b61"
+    },
+    {
+      "name": "ld-col-rg-010",
+      "value": "#f4fbf8"
+    },
+    {
+      "name": "ld-col-rg-200",
+      "value": "#8be99a"
+    },
+    {
+      "name": "ld-col-rg-500",
+      "value": "#30a45a"
+    },
+    {
+      "name": "ld-col-rg-800",
+      "value": "#054c20"
+    },
+    {
+      "name": "ld-col-rp-010",
+      "value": "#faf7ff"
+    },
+    {
+      "name": "ld-col-rp-200",
+      "value": "#d4c3f8"
+    },
+    {
+      "name": "ld-col-rp-500",
+      "value": "#8a68d2"
+    },
+    {
+      "name": "ld-col-rp-800",
+      "value": "#3c2274"
+    },
+    {
+      "name": "ld-col-rr-010",
+      "value": "#fff6f8"
+    },
+    {
+      "name": "ld-col-rr-200",
+      "value": "#ffb3b8"
+    },
+    {
+      "name": "ld-col-rr-500",
+      "value": "#f43a66"
+    },
+    {
+      "name": "ld-col-rr-800",
+      "value": "#750c24"
+    },
+    {
+      "name": "ld-col-sb",
+      "value": "#96d7d2"
+    },
+    {
+      "name": "ld-col-sy",
+      "value": "#ffdcb9"
+    },
+    {
+      "name": "ld-col-vc-100",
+      "value": "#bff2f7"
+    },
+    {
+      "name": "ld-col-vc-400",
+      "value": "#2dbecd"
+    },
+    {
+      "name": "ld-col-vc-700",
+      "value": "#00636c"
+    },
+    {
+      "name": "ld-col-vc",
+      "value": "#2dbecd"
+    },
+    {
+      "name": "ld-col-vg-100",
+      "value": "#ddeeb8"
+    },
+    {
+      "name": "ld-col-vg-400",
+      "value": "#6e9f00"
+    },
+    {
+      "name": "ld-col-vg-700",
+      "value": "#3a5601"
+    },
+    {
+      "name": "ld-col-vg",
+      "value": "#a5cd50"
+    },
+    {
+      "name": "ld-col-vm-100",
+      "value": "#ffd8e5"
+    },
+    {
+      "name": "ld-col-vm-400",
+      "value": "#e661a6"
+    },
+    {
+      "name": "ld-col-vm-700",
+      "value": "#96105b"
+    },
+    {
+      "name": "ld-col-vm",
+      "value": "#eb3c96"
+    },
+    {
+      "name": "ld-col-vy-100",
+      "value": "#fde5a6"
+    },
+    {
+      "name": "ld-col-vy-400",
+      "value": "#bf8c00"
+    },
+    {
+      "name": "ld-col-vy-700",
+      "value": "#614505"
+    },
+    {
+      "name": "ld-col-vy",
+      "value": "#ffc832"
+    },
+    {
+      "name": "primary",
+      "value": "rgb(255, 179, 184)"
+    }
+  ],
+  "type": [
+    {
+      "name": "xh1",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "5.75rem",
+      "px": 92
+    },
+    {
+      "name": "xb1",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "5.75rem",
+      "px": 92
+    },
+    {
+      "name": "xh2",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "xb2",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "4.5rem",
+      "px": 72
+    },
+    {
+      "name": "xh3",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "xb3",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "4rem",
+      "px": 64
+    },
+    {
+      "name": "xh4",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "b1",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "3rem",
+      "px": 48
+    },
+    {
+      "name": "xh5",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "b2",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "xh6",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "b3",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "h1",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "b4",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "h2",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "b5",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "1.625rem",
+      "px": 26
+    },
+    {
+      "name": "h3",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "b6",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "body-xl",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.375rem",
+      "px": 22
+    },
+    {
+      "name": "cap-l",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "h4",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "body-l",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "ld-step-label-font-size-lg",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "font-family",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "h5",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "body-m",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "label-m",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "ld-font-body",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "ld-font-display",
+      "fontFamily": "MWeb, Helvetica, Arial, sans-serif",
+      "px": 16
+    },
+    {
+      "name": "ld-sidenav-navitem-icon-font-size",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "90%",
+      "px": 14.4
+    },
+    {
+      "name": "font-size",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "h6",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "body-s",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "cap-m",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "label-s",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "ld-step-description-font-size-lg",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "ld-step-label-font-size-md",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "body-xs",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "ld-step-description-font-size-md",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "ld-step-label-font-size-sm",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "ld-step-description-font-size-sm",
+      "fontFamily": "Lato, Helvetica, Arial, sans-serif",
+      "fontSize": "0.625rem",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "badge",
+      "kind": "badge",
+      "textColor": "#fff",
+      "rounded": "250rem"
+    },
+    {
+      "key": "notice",
+      "kind": "alert",
+      "backgroundColor": "#fff",
+      "textColor": "#2b2b3b",
+      "rounded": "0.5rem",
+      "padding": "1.5rem",
+      "shadow": "0 0.0625rem 0.25rem #0f1a2e26,0 0 0.0625rem #0f1a2e26"
+    },
+    {
+      "key": "notice-warning",
+      "kind": "alert",
+      "backgroundColor": "#fefbf5"
+    },
+    {
+      "key": "badge-brand-color",
+      "kind": "badge",
+      "backgroundColor": "#fff",
+      "textColor": "#0f69af"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "rgb(43, 43, 59)",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "rgb(255, 179, 184)",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "rgb(255, 179, 184)",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "rgb(43, 43, 59)",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "textColor": "#f7f7f8",
+      "rounded": "4px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#f7f7f8",
+      "textColor": "rgb(0, 0, 0)",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "rgb(43, 43, 59)",
+      "textColor": "#f7f7f8",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Repository SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 24,
+    "strokeWidth": 2,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "repo"
+  },
+  "overview": "**Liquid** is a dark-first design system anchored on `rgb(0, 0, 0)` canvas surfaces with `#f7f7f8` primary ink (19.6:1 contrast) and `rgb(255, 179, 184)` brand accent.\n\nTypography centers cleanly on `Lato` (92px display down to 18px body), unified by `4px` base corner radius and subtle shadow elevation.\n\nMaintained by **Merck**. Source: published token package, package `@emdgroup-liquid/liquid`. Inventory: **91** colors, **41** typography steps, and **11** documented components (SEE LICENSE IN LICENSE.md license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 11 component tokens with documented paddings: `1.5rem`, `8px 12px`, `2px`, `6px 12px`, `10px 14px`.\n- **Hierarchy**: Group controls cleanly within `rgb(43, 43, 59)` cards; separate sibling sections using `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Layered Shadow Model**: Uses documented shadows (`0 0.0625rem 0.25rem #0f1a2e26,0 0 0.0625rem #0f1a2e26`) paired with `color-mix(in srgb, #f7f7f8 14%, transparent)` borders for elevated overlays.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `rgb(255, 179, 184)` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `rgb(0, 0, 0)` (dark) with `#f7f7f8` primary text and `#f7f7f8` secondary labels.\n- Use `rgb(255, 179, 184)` with `#0b0b0c` text (11.6:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Lato` headings with `Lato` body copy using documented weights and scale steps.\n- Apply `4px` base geometry across inputs and buttons (4px on outer containers).\n- Separate containers via `rgb(43, 43, 59)` surface shifts and `color-mix(in srgb, #f7f7f8 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of dark polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `4px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}

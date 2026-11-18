@@ -1,0 +1,485 @@
+{
+  "canvas": "#fff",
+  "surface": "#fcfcfc",
+  "text": "#0b0b0c",
+  "muted": "#0b0b0c",
+  "brand": "#ffcc00",
+  "border": "color-mix(in srgb, #0b0b0c 14%, transparent)",
+  "radius": "12px",
+  "ink": "#0b0b0c",
+  "palette": [
+    {
+      "name": "post-core-color-brand-postyellow",
+      "value": "#ffcc00"
+    },
+    {
+      "name": "post-core-color-brand-black",
+      "value": "#000000"
+    },
+    {
+      "name": "post-core-color-brand-white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "post-core-color-notification-green",
+      "value": "#107800"
+    },
+    {
+      "name": "post-core-color-notification-red",
+      "value": "#b20000"
+    },
+    {
+      "name": "post-core-color-notification-orange",
+      "value": "#d93d00"
+    },
+    {
+      "name": "post-core-color-notification-blue",
+      "value": "#0050a1"
+    },
+    {
+      "name": "post-core-color-notification-green-light",
+      "value": "#c3ddbf"
+    },
+    {
+      "name": "post-core-color-notification-red-light",
+      "value": "#ebbfbf"
+    },
+    {
+      "name": "post-core-color-notification-orange-light",
+      "value": "#f5cebf"
+    },
+    {
+      "name": "post-core-color-notification-blue-light",
+      "value": "#bfd3e7"
+    },
+    {
+      "name": "post-core-color-notification-green-night",
+      "value": "#55e543"
+    },
+    {
+      "name": "post-core-color-notification-red-night",
+      "value": "#ff7575"
+    },
+    {
+      "name": "post-core-color-notification-blue-night",
+      "value": "#d6edff"
+    },
+    {
+      "name": "post-core-color-notification-orange-night",
+      "value": "#ff8d13"
+    },
+    {
+      "name": "post-core-color-sandgrey-100",
+      "value": "#050400"
+    },
+    {
+      "name": "post-core-color-sandgrey-000",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "post-core-color-sandgrey-002",
+      "value": "#fafafa"
+    },
+    {
+      "name": "post-core-color-sandgrey-006",
+      "value": "#f0efed"
+    },
+    {
+      "name": "post-core-color-sandgrey-012",
+      "value": "#e1e0dc"
+    },
+    {
+      "name": "post-core-color-sandgrey-020",
+      "value": "#cdccc8"
+    },
+    {
+      "name": "post-core-color-sandgrey-030",
+      "value": "#b4b3af"
+    },
+    {
+      "name": "post-core-color-sandgrey-040",
+      "value": "#9b9a96"
+    },
+    {
+      "name": "post-core-color-sandgrey-050",
+      "value": "#82817d"
+    },
+    {
+      "name": "post-core-color-sandgrey-060",
+      "value": "#696864"
+    },
+    {
+      "name": "post-core-color-sandgrey-070",
+      "value": "#504f4b"
+    },
+    {
+      "name": "post-core-color-sandgrey-080",
+      "value": "#373632"
+    },
+    {
+      "name": "post-core-color-sandgrey-090",
+      "value": "#1e1d19"
+    },
+    {
+      "name": "post-core-color-cargo-green",
+      "value": "#00411c"
+    },
+    {
+      "name": "post-core-color-cargo-blue",
+      "value": "#aadcff"
+    },
+    {
+      "name": "gray-10",
+      "value": "hsl(0, 0%, 90%)"
+    },
+    {
+      "name": "gray-20",
+      "value": "hsl(0, 0%, 80%)"
+    },
+    {
+      "name": "gray-40",
+      "value": "hsl(0, 0%, 60%)"
+    },
+    {
+      "name": "gray-60",
+      "value": "hsl(0, 0%, 40%)"
+    },
+    {
+      "name": "gray-80",
+      "value": "hsl(0, 0%, 20%)"
+    },
+    {
+      "name": "yellow",
+      "value": "#fc0"
+    },
+    {
+      "name": "white",
+      "value": "#fff"
+    },
+    {
+      "name": "lighter",
+      "value": "#fafafa"
+    },
+    {
+      "name": "light",
+      "value": "#faf9f8"
+    },
+    {
+      "name": "gray",
+      "value": "#f4f3f1"
+    },
+    {
+      "name": "black",
+      "value": "#000"
+    },
+    {
+      "name": "sandgray-80",
+      "value": "#373632"
+    },
+    {
+      "name": "focus-light",
+      "value": "#1976c8"
+    },
+    {
+      "name": "success",
+      "value": "#2c871d"
+    },
+    {
+      "name": "error",
+      "value": "#a51728"
+    },
+    {
+      "name": "warning",
+      "value": "#f49e00"
+    },
+    {
+      "name": "info",
+      "value": "#cce4ee"
+    },
+    {
+      "name": "success-background",
+      "value": "#c0debb"
+    },
+    {
+      "name": "error-background",
+      "value": "#ffdade"
+    },
+    {
+      "name": "warning-background",
+      "value": "#fce2b2"
+    },
+    {
+      "name": "outline-color",
+      "value": "#1976c8"
+    },
+    {
+      "name": "table-active-bg",
+      "value": "#fc0"
+    },
+    {
+      "name": "webkit-text-fill-color",
+      "value": "#000"
+    },
+    {
+      "name": "light-color",
+      "value": "#fff"
+    },
+    {
+      "name": "dark-color",
+      "value": "#000"
+    },
+    {
+      "name": "enabled-light",
+      "value": "#050400"
+    },
+    {
+      "name": "enabled-dark",
+      "value": "#050400"
+    },
+    {
+      "name": "hover-light",
+      "value": "#504f4b"
+    },
+    {
+      "name": "hover-dark",
+      "value": "#504f4b"
+    },
+    {
+      "name": "selected-light",
+      "value": "#050400"
+    },
+    {
+      "name": "selected-dark",
+      "value": "#050400"
+    },
+    {
+      "name": "disabled-light",
+      "value": "#696864"
+    },
+    {
+      "name": "enabled-hcm-light",
+      "value": "#050400"
+    },
+    {
+      "name": "enabled-hcm-dark",
+      "value": "#fff"
+    },
+    {
+      "name": "selected-hcm-dark",
+      "value": "#fff"
+    },
+    {
+      "name": "hover-hcm-dark",
+      "value": "#fff"
+    },
+    {
+      "name": "hover-hcm-light",
+      "value": "#050400"
+    },
+    {
+      "name": "primary",
+      "value": "#ffcc00"
+    }
+  ],
+  "type": [
+    {
+      "name": "post-core-font-size-40",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "2.5rem",
+      "px": 40
+    },
+    {
+      "name": "post-core-font-size-36",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "2.25rem",
+      "px": 36
+    },
+    {
+      "name": "post-core-font-size-32",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "2rem",
+      "px": 32
+    },
+    {
+      "name": "post-core-font-size-28",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1.75rem",
+      "px": 28
+    },
+    {
+      "name": "post-core-font-size-24",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1.5rem",
+      "px": 24
+    },
+    {
+      "name": "post-core-font-size-20",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "post-megadropdown-list-title",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1.25rem",
+      "px": 20
+    },
+    {
+      "name": "post-core-font-size-18",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1.125rem",
+      "px": 18
+    },
+    {
+      "name": "post-core-font-size-16",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "post-core-font-family-swiss-post",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "px": 16
+    },
+    {
+      "name": "post-device-font-family-default",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "px": 16
+    },
+    {
+      "name": "font-size-base",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "1rem",
+      "px": 16
+    },
+    {
+      "name": "font-family-monospace",
+      "fontFamily": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+      "px": 16
+    },
+    {
+      "name": "post-core-font-size-14",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "0.875rem",
+      "px": 14
+    },
+    {
+      "name": "post-core-font-size-12",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "badge-font-size",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "0.75rem",
+      "px": 12
+    },
+    {
+      "name": "post-core-font-size-10",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "0.625rem",
+      "px": 10
+    },
+    {
+      "name": "badge-font-size-sm",
+      "fontFamily": "\"Swiss Post Sans\"",
+      "fontSize": "10px",
+      "px": 10
+    }
+  ],
+  "components": [
+    {
+      "key": "btn",
+      "kind": "button",
+      "backgroundColor": "rgba(0,0,0,0)",
+      "rounded": "100px",
+      "padding": "0 12px",
+      "border": "1px solid rgba(0,0,0,0)"
+    },
+    {
+      "key": "card",
+      "kind": "card",
+      "backgroundColor": "#f0efed",
+      "textColor": "#000000",
+      "rounded": "8px",
+      "border": "1px solid  #b4b3af)"
+    },
+    {
+      "key": "select-default",
+      "kind": "select",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "8px 12px"
+    },
+    {
+      "key": "switch-control",
+      "kind": "switch",
+      "backgroundColor": "#ffcc00",
+      "textColor": "#0b0b0c",
+      "rounded": "999px",
+      "padding": "2px"
+    },
+    {
+      "key": "checkbox-control",
+      "kind": "checkbox",
+      "backgroundColor": "#ffcc00",
+      "textColor": "#0b0b0c",
+      "rounded": "4px",
+      "padding": "2px"
+    },
+    {
+      "key": "tabs-nav",
+      "kind": "tabs",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "6px 12px"
+    },
+    {
+      "key": "alert-info",
+      "kind": "alert",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "12px 14px"
+    },
+    {
+      "key": "table-grid",
+      "kind": "table",
+      "backgroundColor": "#fff",
+      "textColor": "#0b0b0c",
+      "rounded": "12px",
+      "padding": "10px 14px"
+    },
+    {
+      "key": "tooltip-overlay",
+      "kind": "tooltip",
+      "backgroundColor": "#0b0b0c",
+      "textColor": "#fff",
+      "rounded": "6px",
+      "padding": "6px 10px"
+    },
+    {
+      "key": "icon-glyph",
+      "kind": "icon",
+      "backgroundColor": "#fcfcfc",
+      "textColor": "#0b0b0c",
+      "rounded": "8px",
+      "padding": "8px"
+    }
+  ],
+  "icons": {
+    "library": "Inline System SVGs",
+    "package": null,
+    "style": "outline",
+    "grid": 20,
+    "strokeWidth": 1.75,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "source": "derived"
+  },
+  "overview": "**Swiss Post Design System** is a light-first design system anchored on `#fff` canvas surfaces with `#0b0b0c` primary ink (19.7:1 contrast) and `#ffcc00` brand accent.\n\nTypography centers cleanly on `Swiss Post Sans` (40px display down to 16px body), unified by `12px` base corner radius and stepped `#fff` -> `#fcfcfc` surface layering.\n\nMaintained by **Swiss Post**. Source: published token package (https://design-system.post.ch), package `@swisspost/design-system-styles`. Inventory: **68** colors, **18** typography steps, and **10** documented components (Apache-2.0 license).\n\n### Layout & Spacing\n- **Grid & Control Spacing**: Derived from 10 component tokens with documented paddings: `0 12px`, `8px 12px`, `2px`, `6px 12px`, `12px 14px`.\n- **Hierarchy**: Group controls cleanly within `#fcfcfc` cards; separate sibling sections using `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines rather than oversized whitespace.\n\n### Elevation & Depth\n- **Surface & Stroke Elevation**: Relies on crisp tonal contrast (`#fff` -> `#fcfcfc`) and `1px solid color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines instead of heavy drop shadows.\n- **Interactive Lift**: Reserve higher surface brightness or focus outlines anchored on `#ffcc00` for keyboard focus and active selection states.",
+  "dos": "### Do\n- Anchor base views on `#fff` (light) with `#0b0b0c` primary text and `#0b0b0c` secondary labels.\n- Use `#ffcc00` with `#0b0b0c` text (13.0:1) for primary CTAs, active tabs, and focus outlines.\n- Pair `Swiss Post Sans` headings with `Swiss Post Sans` body copy using documented weights and scale steps.\n- Apply `12px` base geometry across inputs and buttons (8px on outer containers).\n- Separate containers via `#fcfcfc` surface shifts and `color-mix(in srgb, #0b0b0c 14%, transparent)` hairlines cleanly.\n\n### Don't\n- Do not invert the base canvas out of light polarity without explicitly switching component text tokens.\n- Do not place low-contrast muted ink or raw white text on light accents without verifying >= 4.5:1 WCAG AA contrast.\n- Do not invent arbitrary brand colors, unverified fonts, or synthetic heavy shadows outside the palette above.\n- Do not mix conflicting corner radii that clash with the system's `12px` baseline.\n- Do not truncate or drop border contrast on `input` fields and secondary buttons."
+}
