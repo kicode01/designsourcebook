@@ -226,86 +226,71 @@ code, pre, kbd, .ds-code-pre, .page-code-pre {
   background: var(--studio-gutter);
 }
 
+@keyframes dsVtFadeOutFast {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 @keyframes dsVtFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-@keyframes dsVtOldHold {
-  from { opacity: 1; filter: brightness(1); }
-  to { opacity: 1; filter: brightness(0.9); }
+@keyframes dsVtOldFade {
+  0% { opacity: 1; filter: brightness(1); }
+  35% { opacity: 1; filter: brightness(0.94); }
+  100% { opacity: 0; filter: brightness(0.88); }
 }
 
 @keyframes dsVtEnterStudio {
-  from { opacity: 0; transform: translate3d(0, 10px, 0); }
-  to { opacity: 1; transform: translate3d(0, 0, 0); }
-}
-
-@keyframes dsVtEnterCatalog {
-  from { opacity: 0; transform: translate3d(0, -8px, 0); }
+  from { opacity: 0; transform: translate3d(0, 6px, 0); }
   to { opacity: 1; transform: translate3d(0, 0, 0); }
 }
 
 ::view-transition-group(root) {
-  animation-duration: 280ms;
+  animation-duration: 240ms;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 ::view-transition-old(root) {
-  animation: none;
-  opacity: 1;
+  animation: dsVtOldFade 210ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 ::view-transition-new(root) {
-  animation: dsVtFadeIn 240ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  mix-blend-mode: normal;
-}
-
-html[data-vt-dir='to-studio']::view-transition-old(root),
-html[data-vt-dir='to-catalog']::view-transition-old(root) {
-  animation: dsVtOldHold 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-html[data-vt-dir='to-studio']::view-transition-new(root) {
-  animation: dsVtEnterStudio 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  mix-blend-mode: normal;
-}
-
-html[data-vt-dir='to-catalog']::view-transition-new(root) {
-  animation: dsVtEnterCatalog 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: dsVtEnterStudio 240ms cubic-bezier(0.22, 1, 0.36, 1) both;
   mix-blend-mode: normal;
 }
 
 ::view-transition-group(ds-topbar) {
   z-index: 30;
-  animation-duration: 240ms;
+  background: var(--studio-header-bg);
+  animation-duration: 220ms;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 ::view-transition-old(ds-topbar) {
-  animation: none;
-  opacity: 1;
+  animation: dsVtFadeOutFast 95ms cubic-bezier(0.4, 0, 1, 1) both;
 }
 
 ::view-transition-new(ds-topbar) {
-  animation: dsVtFadeIn 220ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: dsVtFadeIn 175ms cubic-bezier(0.22, 1, 0.36, 1) 40ms both;
   mix-blend-mode: normal;
 }
 
 ::view-transition-group(ds-brand-mark) {
   z-index: 35;
-  animation-duration: 240ms;
+  animation-duration: 220ms;
   animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 ::view-transition-old(ds-brand-mark) {
   animation: none;
-  opacity: 1;
+  opacity: 0;
 }
 
 ::view-transition-new(ds-brand-mark) {
-  animation: dsVtFadeIn 180ms cubic-bezier(0.22, 1, 0.36, 1) both;
-  mix-blend-mode: normal;
+  animation: none;
+  opacity: 1;
 }
 
 html.ds-chameleon-enter .ds-shell-page,

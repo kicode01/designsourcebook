@@ -2,18 +2,7 @@ import type React from 'react';
 
 const PORTAL_ID = 'dsPortalVeil';
 const HANDOFF_KEY = 'ds_portal_handoff';
-const VT_HANDOFF_KEY = 'ds_vt_handoff';
 const TARGET_CATALOG_BG = '#09090b';
-
-interface ViewTransitionLike {
-  finished: Promise<void>;
-  types?: Set<string>;
-}
-
-interface PageSwapEventLike extends Event {
-  viewTransition?: ViewTransitionLike | null;
-  activation?: { entry?: { url?: string } } | null;
-}
 
 let launching = false;
 let leftViaPortal = false;
@@ -22,19 +11,6 @@ const warmedDocs = new Set<string>();
 
 function supportsCrossDocVT(): boolean {
   return typeof window !== 'undefined' && 'onpagereveal' in window && window.location.protocol !== 'file:';
-}
-
-function isStudioPath(pathname: string): boolean {
-  return /\/studio(?:\/|$)/.test(pathname);
-}
-
-function writeVtHandoff(dir: 'to-studio' | 'to-catalog') {
-  document.documentElement.dataset.vtDir = dir;
-  try {
-    sessionStorage.setItem(VT_HANDOFF_KEY, JSON.stringify({ dir, ts: Date.now() }));
-  } catch {
-    // ignore storage restrictions
-  }
 }
 
 export function warmPortalHref(rawHref: string) {
@@ -64,26 +40,8 @@ export function installPortalPageShowCleanup() {
   if (lifecycleBound || typeof window === 'undefined') return;
   lifecycleBound = true;
 
-  window.addEventListener('pageswap', (ev: Event) => {
-    const e = ev as PageSwapEventLike;
-    if (!e.viewTransition) return;
-    const rawDest = e.activation?.entry?.url;
-    if (rawDest) {
-      try {
-        const destUrl = new URL(rawDest, window.location.href);
-        if (!isStudioPath(destUrl.pathname)) {
-          writeVtHandoff('to-catalog');
-          e.viewTransition.types?.add('to-catalog');
-        }
-      } catch {
-        // ignore URL parse failures
-      }
-    }
-  });
-
   window.addEventListener('pageshow', (e) => {
     clearPortalOverlay();
-    delete document.documentElement.dataset.vtDir;
     if (e.persisted && leftViaPortal) {
       leftViaPortal = false;
       const root = document.getElementById('root');
@@ -111,7 +69,6 @@ export function triggerPortalNavigation(
   if (!href) return;
 
   if (supportsCrossDocVT()) {
-    writeVtHandoff('to-catalog');
     return;
   }
 

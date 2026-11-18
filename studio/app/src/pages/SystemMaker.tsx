@@ -1,26 +1,38 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { TopBar } from '../components/TopBar';
 import { Icon } from '../components/icons';
 import { DsSelect } from '../components/DsSelect';
-import { adaptSvgPaintForSurface, inspectSvgPaint } from '../engine/svgPaint';
+import { MarkPickerDialog } from '../components/Dialogs';
+import { SpecimenShowcase } from '../components/system-maker/SpecimenShowcase';
+import { ComponentKitchenSink } from '../components/system-maker/ComponentKitchenSink';
+import { OklchContrastLab } from '../components/system-maker/OklchContrastLab';
+import { TypeGeometryLab } from '../components/system-maker/TypeGeometryLab';
+import { AppleLiquidGlassStage } from '../easter-eggs/SystemEasterEggs';
+import { sanitizeSvg } from '../engine/svgAnatomy';
 import {
   FONT_OPTIONS,
   MONO_OPTIONS,
+  SYSTEM_ARCHETYPES,
   TYPE_RATIOS,
   applyCvdSimulation,
   exportDesignSystem,
-  fontStyleFor,
   harmonyPair,
+  isValidHexInput,
+  normalizeHex,
+  randomizeDesignSystem,
   resolveFontOption,
   solveReadableOnBg,
   type CvdMode,
+  type DensityMode,
+  type DesignSystemDoc,
   type ElevationStyle,
+  type ExportFormatId,
   type HarmonyMode,
+  type SurfaceContrastMode,
 } from '../engine/dsEngine';
 import { useProject } from '../state/project';
 
-type ViewTab = 'preview' | 'components' | 'contrast' | 'export';
-type ExportTab = 'css' | 'tailwind' | 'dtcg' | 'designmd';
+type ViewTab = 'preview' | 'components' | 'contrast' | 'type' | 'export';
 
 const HARMONIES: { id: HarmonyMode; label: string }[] = [
   { id: 'complementary', label: 'Complement' },
@@ -46,6 +58,75 @@ const CVD_MODES: { id: CvdMode; label: string }[] = [
   { id: 'achromatopsia', label: 'Monochromacy' },
 ];
 
+const EXPORT_FORMATS: { id: ExportFormatId; label: string; filename: string }[] = [
+  { id: 'css', label: 'CSS (:root + .dark)', filename: 'tokens.css' },
+  { id: 'shadcn', label: 'shadcn/ui', filename: 'shadcn-theme.css' },
+  { id: 'tailwind', label: 'Tailwind v4', filename: 'tailwind-theme.css' },
+  { id: 'dtcg', label: 'DTCG JSON', filename: 'tokens.json' },
+  { id: 'figma', label: 'Figma Variables', filename: 'figma-variables.json' },
+  { id: 'ts', label: 'TypeScript', filename: 'theme.ts' },
+  { id: 'designmd', label: 'DESIGN.md', filename: 'DESIGN.md' },
+];
+
+function HexColorRow({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  onChange: (hex: string) => void;
+}) {
+  const [draft, setDraft] = useState(value);
+
+  useEffect(() => {
+    setDraft(value);
+  }, [value]);
+
+  const commit = (raw: string) => {
+    if (isValidHexInput(raw)) {
+      const norm = normalizeHex(raw);
+      setDraft(norm);
+      onChange(norm);
+    } else {
+      setDraft(value);
+    }
+  };
+
+  return (
+    <div className="param-row ds-hex-row">
+      <span className="param-label">{label}</span>
+      <div className="ds-hex-controls">
+        <input
+          type="text"
+          className="ds-hex-input"
+          value={draft}
+          spellCheck={false}
+          aria-label={`${label} hex value`}
+          onChange={(e) => {
+            const v = e.target.value;
+            setDraft(v);
+            if (isValidHexInput(v)) onChange(normalizeHex(v));
+          }}
+          onBlur={() => commit(draft)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') commit(draft);
+          }}
+        />
+        <label className="ds-swatch-btn" title={`Pick ${label} color`}>
+          <span className="param-swatch" style={{ background: value }} />
+          <input
+            type="color"
+            value={normalizeHex(value)}
+            aria-label={`${label} color picker`}
+            onChange={(e) => onChange(e.target.value)}
+          />
+        </label>
+      </div>
+    </div>
+  );
+}
+
 export function SystemMaker() {
   const {
     theme,
@@ -57,10 +138,16 @@ export function SystemMaker() {
     catalogSystems,
     seedFromSystemSlug,
     activeMark,
+    setActiveMark,
   } = useProject();
 
   const [viewTab, setViewTab] = useState<ViewTab>('preview');
-  const [exportTab, setExportTab] = useState<ExportTab>('css');
+  const [exportTab, setExportTab] = useState<ExportFormatId>('css');
+  const [tokenFilter, setTokenFilter] = useState('');
+  const [importOpen, setImportOpen] = useState(false);
+  const [importText, setImportText] = useState('');
+  const [statusColorsOpen, setStatusColorsOpen] = useState(false);
+  const [markOpen, setMarkOpen] = useState(false);
   const [cvd, setCvd] = useState<CvdMode>('normal');
   const [seedQuery, setSeedQuery] = useState('');
   const [toast, setToast] = useState<string | null>(null);
@@ -71,19 +158,30 @@ export function SystemMaker() {
   };
 
   const cvdHex = (hex: string) => applyCvdSimulation(hex, cvd);
-  const { semantic, ramps, typeScale, spacingScale, radii, audits } = compiledSystem;
+  const { semantic, audits } = compiledSystem;
+  const aaPassCount = audits.filter((a) => a.aaPass).length;
 
   const filteredSeeds = useMemo(() => {
     const q = seedQuery.trim().toLowerCase();
     const list = catalogSystems.filter((s) => s.provenance !== 'listed' && s.brand);
-    if (!q) return list.slice(0, 60);
-    return list.filter((s) => s.name.toLowerCase().includes(q) || (s.org || '').toLowerCase().includes(q)).slice(0, 60);
+    if (!q) return list.slice(0, 80);
+    return list
+      .filter((s) => s.name.toLowerCase().includes(q) || (s.org || '').toLowerCase().includes(q) || s.slug.toLowerCase().includes(q))
+      .slice(0, 80);
   }, [catalogSystems, seedQuery]);
 
   const codeText = useMemo(
     () => exportDesignSystem(designSystem, compiledSystem, exportTab),
     [designSystem, compiledSystem, exportTab],
   );
+
+  const filteredCode = useMemo(() => {
+    const q = tokenFilter.trim().toLowerCase();
+    const allLines = codeText.split('\n');
+    if (!q) return { text: codeText, shown: allLines.length, total: allLines.length };
+    const matched = allLines.filter((l) => l.toLowerCase().includes(q));
+    return { text: matched.join('\n') || '// No tokens matched filter', shown: matched.length, total: allLines.length };
+  }, [codeText, tokenFilter]);
 
   const copyText = async (txt: string, label: string) => {
     try {
@@ -110,11 +208,64 @@ export function SystemMaker() {
     setDesignSystem({ harmony: mode, secondaryHex: secondary, accentHex: accent });
   };
 
-  const autoFixPrimary = () => {
-    const fixed = solveReadableOnBg(designSystem.primaryHex, semantic.canvas, 4.5);
+  const autoFixPrimary = (targetWcag = 4.5) => {
+    const fixed = solveReadableOnBg(designSystem.primaryHex, semantic.canvas, targetWcag);
     setDesignSystem({ primaryHex: fixed });
-    flash(`Adjusted Primary to ${fixed} (>= 4.5:1 AA)`);
+    flash(`Adjusted Primary to ${fixed} (≥ ${targetWcag}:1)`);
   };
+
+  const applyArchetype = (patch: Partial<DesignSystemDoc>, label: string) => {
+    setDesignSystem(patch);
+    if (patch.polarity) setTheme(patch.polarity);
+    flash(`Applied ${label}`);
+  };
+
+  const handleRandomize = () => {
+    const patch = randomizeDesignSystem(designSystem.polarity);
+    setDesignSystem(patch);
+    flash('Generated new OKLCH harmony');
+  };
+
+  const handleImportTokens = () => {
+    const raw = importText.trim();
+    if (!raw) return;
+    try {
+      const parsed = JSON.parse(raw) as Partial<DesignSystemDoc>;
+      if (parsed && typeof parsed === 'object' && parsed.primaryHex) {
+        const patch: Partial<DesignSystemDoc> = {
+          ...(parsed.name ? { name: String(parsed.name) } : {}),
+          ...(parsed.tagline ? { tagline: String(parsed.tagline) } : {}),
+          ...(parsed.handle ? { handle: String(parsed.handle) } : {}),
+          ...(parsed.polarity === 'light' || parsed.polarity === 'dark' ? { polarity: parsed.polarity } : {}),
+          primaryHex: normalizeHex(parsed.primaryHex),
+          ...(parsed.secondaryHex ? { secondaryHex: normalizeHex(parsed.secondaryHex) } : {}),
+          ...(parsed.accentHex ? { accentHex: normalizeHex(parsed.accentHex) } : {}),
+          ...(typeof parsed.baseRadiusPx === 'number' ? { baseRadiusPx: parsed.baseRadiusPx } : {}),
+        };
+        setDesignSystem(patch);
+        if (patch.polarity) setTheme(patch.polarity);
+        setImportOpen(false);
+        flash('Imported system JSON');
+        return;
+      }
+    } catch {
+      // Fall through to hex extraction
+    }
+    const hexes = Array.from(new Set((raw.match(/#[0-9a-fA-F]{3,6}\b/g) || []).map((h) => normalizeHex(h))));
+    if (hexes.length > 0) {
+      setDesignSystem({
+        primaryHex: hexes[0],
+        ...(hexes[1] ? { secondaryHex: hexes[1] } : {}),
+        ...(hexes[2] ? { accentHex: hexes[2] } : {}),
+      });
+      setImportOpen(false);
+      flash(`Imported ${hexes.length} hex color${hexes.length > 1 ? 's' : ''}`);
+      return;
+    }
+    flash('Paste valid DesignSystem JSON or #hex colors');
+  };
+
+  const activeExportFormat = EXPORT_FORMATS.find((f) => f.id === exportTab) || EXPORT_FORMATS[0];
 
   return (
     <div className="logo-studio" data-theme={theme}>
@@ -129,7 +280,7 @@ export function SystemMaker() {
               <div className="ds-title-block">
                 <h1>{designSystem.name} · Design System Maker</h1>
                 <p>
-                  Deterministic OKLCH ramps, modular fluid typography &amp; APCA/WCAG verification (zero AI)
+                  Deterministic OKLCH ramps, dual-polarity tokens, Utopia fluid typography &amp; WCAG/APCA matrix
                   {designSystem.seedSlug ? ` · seeded from "${designSystem.seedSlug}"` : ''}
                 </p>
               </div>
@@ -140,6 +291,7 @@ export function SystemMaker() {
                     ['preview', 'UI Specimen'],
                     ['components', 'Components'],
                     ['contrast', 'OKLCH & Contrast'],
+                    ['type', 'Type & Geometry'],
                     ['export', 'Tokens & Code'],
                   ] as const).map(([id, label]) => (
                     <button
@@ -156,6 +308,15 @@ export function SystemMaker() {
                 </div>
 
                 <div className="ds-subhead-actions">
+                  <button
+                    type="button"
+                    className={`ds-health-pill ${aaPassCount === audits.length ? 'is-ok' : 'is-warn'}`}
+                    onClick={() => setViewTab('contrast')}
+                    title="View contrast audit details"
+                  >
+                    <span className="ds-health-dot" />
+                    <span>{aaPassCount}/{audits.length} AA</span>
+                  </button>
                   <DsSelect
                     variant="pill"
                     ariaLabel="Color blindness vision simulator"
@@ -163,6 +324,9 @@ export function SystemMaker() {
                     onChange={(v) => setCvd(v as CvdMode)}
                     options={CVD_MODES.map((m) => ({ value: m.id, label: m.label }))}
                   />
+                  <button type="button" className="ds-action-btn" onClick={() => setMarkOpen(true)} title="Pick Brand Mark or SVG Icon">
+                    <span>Mark: {activeMark.name}</span>
+                  </button>
                   <a className="ds-action-btn" href="#/create" title="Refine mark in Logo Maker">
                     <span>Logo Maker</span>
                     <Icon name="arrowUpRight" size={13} />
@@ -176,420 +340,170 @@ export function SystemMaker() {
             </div>
 
             {viewTab === 'preview' && (
-              <div
-                className="ds-preview-frame"
-                style={{
-                  background: cvdHex(semantic.canvas),
-                  color: cvdHex(semantic.ink),
-                  ...fontStyleFor(designSystem.bodyFont, 'body'),
-                  borderColor: semantic.border,
-                  ['--sb-accent' as string]: cvdHex(semantic.accent),
-                }}
-              >
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    paddingBottom: 16,
-                    marginBottom: 20,
-                    borderBottom: `1px solid ${semantic.border}`,
-                    flexWrap: 'wrap',
-                    gap: 12,
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    {(() => {
-                      const chromatic = inspectSvgPaint(activeMark.svg).kind !== 'monochrome';
-                      return (
-                        <span
-                          className="ds-sys-mark-badge"
-                          style={{
-                            borderRadius: radii.md,
-                            background: chromatic ? cvdHex(semantic.surfaceAlt) : cvdHex(semantic.brand),
-                            border: chromatic ? `1px solid ${semantic.border}` : undefined,
-                            color: chromatic ? cvdHex(semantic.ink) : cvdHex(semantic.brandFg),
-                          }}
-                          dangerouslySetInnerHTML={{
-                            __html: adaptSvgPaintForSurface(activeMark.svg, cvdHex(semantic.brandFg), 'sm-mk-'),
-                          }}
-                        />
-                      );
-                    })()}
-                    <strong style={{ ...fontStyleFor(designSystem.displayFont, 'display'), fontSize: 15 }}>{designSystem.name}</strong>
-                    <span
-                      style={{
-                        ...fontStyleFor(designSystem.monoFont, 'mono'),
-                        fontSize: 10.5,
-                        padding: '2px 8px',
-                        borderRadius: radii.pill,
-                        background: cvdHex(semantic.surfaceAlt),
-                        color: cvdHex(semantic.muted),
-                      }}
-                    >
-                      v1.0 · OKLCH
-                    </span>
-                  </div>
-                  <div style={{ display: 'flex', gap: 8 }}>
-                    <button
-                      type="button"
-                      style={{
-                        padding: `${Math.round(designSystem.baseSpacePx * 0.9)}px ${Math.round(designSystem.baseSpacePx * 1.8)}px`,
-                        borderRadius: radii.md,
-                        background: cvdHex(semantic.surfaceAlt),
-                        color: cvdHex(semantic.ink),
-                        border: `1px solid ${semantic.border}`,
-                        fontSize: 12.5,
-                        fontWeight: 500,
-                      }}
-                    >
-                      Documentation
-                    </button>
-                    <button
-                      type="button"
-                      style={{
-                        padding: `${Math.round(designSystem.baseSpacePx * 0.9)}px ${Math.round(designSystem.baseSpacePx * 2)}px`,
-                        borderRadius: radii.md,
-                        background: cvdHex(semantic.brand),
-                        color: cvdHex(semantic.brandFg),
-                        fontSize: 12.5,
-                        fontWeight: 600,
-                        boxShadow: semantic.shadowSm,
-                      }}
-                    >
-                      Deploy System
-                    </button>
-                  </div>
-                </div>
-
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
-                  <div
-                    style={{
-                      padding: designSystem.baseSpacePx * 2.5,
-                      borderRadius: radii.lg,
-                      background: cvdHex(semantic.surface),
-                      border: `1px solid ${semantic.border}`,
-                      boxShadow: semantic.shadowMd,
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: 'inline-block',
-                        fontSize: 10.5,
-                        fontWeight: 600,
-                        padding: '3px 9px',
-                        borderRadius: radii.pill,
-                        background: `${cvdHex(semantic.secondary)}22`,
-                        color: cvdHex(semantic.secondary),
-                        marginBottom: 10,
-                      }}
-                    >
-                      Concentric Radius Check ({radii.lg} → {radii.innerNested})
-                    </span>
-                    <h2
-                      style={{
-                        ...fontStyleFor(designSystem.displayFont, 'display'),
-                        fontSize: typeScale[2].px,
-                        lineHeight: typeScale[2].lineHeight,
-                        letterSpacing: `${typeScale[2].trackingEm}em`,
-                        margin: '0 0 8px',
-                      }}
-                    >
-                      {designSystem.tagline}
-                    </h2>
-                    <p style={{ margin: '0 0 16px', fontSize: typeScale[4].px * 0.88, color: cvdHex(semantic.muted), lineHeight: 1.5 }}>
-                      Outer container radius {radii.lg} minus padding computes an exact {radii.innerNested} inner inset radius automatically.
-                    </p>
-                    <div
-                      style={{
-                        padding: designSystem.baseSpacePx * 1.5,
-                        borderRadius: radii.innerNested,
-                        background: cvdHex(semantic.surfaceAlt),
-                        border: `1px solid ${semantic.border}`,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        gap: 10,
-                      }}
-                    >
-                      <span style={{ ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11.5 }}>
-                        Ratio {designSystem.typeRatio} · Base {designSystem.baseSpacePx}px
-                      </span>
-                      <span
-                        style={{
-                          padding: '3px 8px',
-                          borderRadius: radii.sm,
-                          background: cvdHex(semantic.success),
-                          color: '#09090b',
-                          fontWeight: 600,
-                          fontSize: 11,
-                        }}
-                      >
-                        AA Pass
-                      </span>
-                    </div>
-                  </div>
-
-                  <div
-                    style={{
-                      padding: designSystem.baseSpacePx * 2.5,
-                      borderRadius: radii.lg,
-                      background: cvdHex(semantic.surface),
-                      border: `1px solid ${semantic.border}`,
-                      boxShadow: semantic.shadowMd,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: 12,
-                    }}
-                  >
-                    <div style={{ fontSize: 13, fontWeight: 600 }}>Interactive Controls &amp; States</div>
-                    <input
-                      readOnly
-                      value="design-system@sourcebook.dev"
-                      style={{
-                        padding: '9px 12px',
-                        borderRadius: radii.md,
-                        background: cvdHex(semantic.canvas),
-                        border: `1px solid ${semantic.borderStrong}`,
-                        color: cvdHex(semantic.ink),
-                        fontSize: 13,
-                        outline: 'none',
-                      }}
+              <div style={{ display: 'grid', gap: 18 }}>
+                {designSystem.seedSlug === 'apple' && (
+                  <div style={{ borderRadius: 16, overflow: 'hidden', border: `1px solid ${semantic.border}` }}>
+                    <AppleLiquidGlassStage
+                      compact
+                      systemName={designSystem.name}
+                      overview={designSystem.tagline}
+                      defaultPolarity={theme}
                     />
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                      <span style={{ padding: '5px 10px', borderRadius: radii.pill, background: `${cvdHex(semantic.success)}22`, color: cvdHex(semantic.success), fontSize: 11.5, fontWeight: 600 }}>Success 500</span>
-                      <span style={{ padding: '5px 10px', borderRadius: radii.pill, background: `${cvdHex(semantic.warning)}22`, color: cvdHex(semantic.warning), fontSize: 11.5, fontWeight: 600 }}>Warning 500</span>
-                      <span style={{ padding: '5px 10px', borderRadius: radii.pill, background: `${cvdHex(semantic.danger)}22`, color: cvdHex(semantic.danger), fontSize: 11.5, fontWeight: 600 }}>Danger 500</span>
-                    </div>
-                    <div style={{ marginTop: 'auto', display: 'flex', gap: 8 }}>
-                      <button
-                        type="button"
-                        style={{
-                          flex: 1,
-                          padding: '9px 14px',
-                          borderRadius: radii.md,
-                          background: cvdHex(semantic.brand),
-                          color: cvdHex(semantic.brandFg),
-                          fontWeight: 600,
-                          fontSize: 12.5,
-                        }}
-                      >
-                        Primary CTA
-                      </button>
-                      <button
-                        type="button"
-                        style={{
-                          flex: 1,
-                          padding: '9px 14px',
-                          borderRadius: radii.md,
-                          background: cvdHex(semantic.secondary),
-                          color: cvdHex(semantic.secondaryFg),
-                          fontWeight: 600,
-                          fontSize: 12.5,
-                        }}
-                      >
-                        Secondary CTA
-                      </button>
-                    </div>
                   </div>
-                </div>
+                )}
+                <SpecimenShowcase
+                  doc={designSystem}
+                  compiled={compiledSystem}
+                  activeMark={activeMark}
+                  cvdHex={cvdHex}
+                  onOpenMarkPicker={() => setMarkOpen(true)}
+                  onFlash={flash}
+                />
               </div>
             )}
 
             {viewTab === 'components' && (
-              <div
-                className="ds-preview-frame"
-                style={{ background: cvdHex(semantic.canvas), color: cvdHex(semantic.ink), ...fontStyleFor(designSystem.bodyFont, 'body') }}
-              >
-                <div style={{ display: 'grid', gap: 18 }}>
-                  <div>
-                    <div style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.07em', color: cvdHex(semantic.muted), marginBottom: 10 }}>
-                      Modular Type Ladder (Ratio {designSystem.typeRatio})
-                    </div>
-                    {typeScale.map((t) => (
-                      <div
-                        key={t.token}
-                        style={{
-                          display: 'grid',
-                          gridTemplateColumns: '70px 92px 1fr',
-                          alignItems: 'baseline',
-                          gap: 12,
-                          padding: '6px 0',
-                          borderBottom: `1px solid ${semantic.border}`,
-                        }}
-                      >
-                        <code style={{ ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11, color: cvdHex(semantic.brand) }}>{t.token}</code>
-                        <span style={{ ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11, color: cvdHex(semantic.muted) }}>{t.px}px</span>
-                        <span
-                          style={{
-                            ...fontStyleFor(
-                              t.token === 'display' || t.token.startsWith('h') ? designSystem.displayFont : designSystem.bodyFont,
-                              t.token === 'display' || t.token.startsWith('h') ? 'display' : 'body',
-                            ),
-                            fontSize: Math.min(t.px, 44),
-                            fontWeight: t.weight,
-                            lineHeight: t.lineHeight,
-                            letterSpacing: `${t.trackingEm}em`,
-                            whiteSpace: 'nowrap',
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis',
-                          }}
-                        >
-                          The quick brown fox jumps over the lazy dog
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div>
-                    <div style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.07em', color: cvdHex(semantic.muted), marginBottom: 10 }}>
-                      Spacing Rhythm ({designSystem.baseSpacePx}px unit)
-                    </div>
-                    <div style={{ display: 'grid', gap: 6 }}>
-                      {spacingScale.map((s) => (
-                        <div key={s.token} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                          <code style={{ width: 64, ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11, color: cvdHex(semantic.muted) }}>
-                            space-{s.token}
-                          </code>
-                          <span style={{ width: 46, ...fontStyleFor(designSystem.monoFont, 'mono'), fontSize: 11 }}>{s.px}px</span>
-                          <div style={{ height: 10, width: Math.max(4, s.px * 3), borderRadius: radii.sm, background: cvdHex(semantic.brand) }} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ComponentKitchenSink
+                doc={designSystem}
+                compiled={compiledSystem}
+                cvdHex={cvdHex}
+                onChangeDensity={(density) => setDesignSystem({ density })}
+                onFlash={flash}
+              />
             )}
 
             {viewTab === 'contrast' && (
-              <div style={{ display: 'grid', gap: 18 }}>
-                <div className="ds-card">
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-                    <strong style={{ fontSize: 13 }}>WCAG 2.2 + APCA Contrast Audit</strong>
-                    <button type="button" className="ds-action-btn" onClick={autoFixPrimary}>
-                      Auto-Fix Primary Contrast
-                    </button>
-                  </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
-                    {audits.map((a) => (
-                      <div
-                        key={a.pair}
-                        style={{
-                          padding: '10px 12px',
-                          borderRadius: 9,
-                          background: a.bg,
-                          color: a.fg,
-                          border: '1px solid rgba(127,127,127,0.22)',
-                        }}
-                      >
-                        <div style={{ fontSize: 12, fontWeight: 600 }}>{a.pair}</div>
-                        <div style={{ display: 'flex', gap: 8, marginTop: 6, fontFamily: 'var(--font-mono)', fontSize: 11 }}>
-                          <span>WCAG {a.wcag}:1</span>
-                          <span>APCA Lc {a.apca}</span>
-                          <span>{a.aaaPass ? 'AAA' : a.aaPass ? 'AA' : 'FAIL'}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <OklchContrastLab
+                compiled={compiledSystem}
+                cvdHex={cvdHex}
+                onAutoFixPrimary={autoFixPrimary}
+                onCopyText={copyText}
+              />
+            )}
 
-                <div className="ds-card">
-                  <div style={{ fontSize: 12.5, fontWeight: 600, marginBottom: 12 }}>
-                    Perceptual OKLCH 50–950 Ramps (click any chip to copy HEX)
-                  </div>
-                  {(['primary', 'secondary', 'accent', 'neutral', 'success', 'warning', 'danger'] as const).map((name) => (
-                    <div key={name} className="ds-ramp-row">
-                      <span className="ds-ramp-label">{name}</span>
-                      {ramps[name].map((s) => {
-                        const sim = cvdHex(s.hex);
-                        const fg = s.onDarkContrast > s.onLightContrast ? '#fafafa' : '#09090b';
-                        return (
-                          <button
-                            key={s.step}
-                            type="button"
-                            className="ds-ramp-chip"
-                            style={{ background: sim, color: fg }}
-                            title={`${name}-${s.step}: ${s.hex} (${s.oklch})`}
-                            onClick={() => copyText(s.hex, `${name}-${s.step} ${s.hex}`)}
-                          >
-                            <span>{s.step}</span>
-                            <span style={{ opacity: 0.78 }}>{s.hex}</span>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  ))}
-                </div>
-              </div>
+            {viewTab === 'type' && (
+              <TypeGeometryLab
+                doc={designSystem}
+                compiled={compiledSystem}
+                cvdHex={cvdHex}
+                onCopyText={copyText}
+              />
             )}
 
             {viewTab === 'export' && (
-              <div className="ds-card">
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+              <div className="ds-card" style={{ display: 'grid', gap: 12 }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 10 }}>
                   <div className="ds-pills-row">
-                    {([
-                      ['css', 'CSS Variables'],
-                      ['tailwind', 'Tailwind v4 @theme'],
-                      ['dtcg', 'DTCG tokens.json'],
-                      ['designmd', 'DESIGN.md'],
-                    ] as const).map(([id, label]) => (
+                    {EXPORT_FORMATS.map((f) => (
                       <button
-                        key={id}
+                        key={f.id}
                         type="button"
-                        className={`ds-pill-tab ${exportTab === id ? 'is-active' : ''}`}
-                        onClick={() => setExportTab(id)}
+                        className={`ds-pill-tab ${exportTab === f.id ? 'is-active' : ''}`}
+                        onClick={() => setExportTab(f.id)}
                       >
-                        {label}
+                        {f.label}
                       </button>
                     ))}
                   </div>
-                  <div style={{ display: 'flex', gap: 8 }}>
-                    <button type="button" className="ds-action-btn" onClick={() => copyText(codeText, exportTab.toUpperCase())}>
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                    <button type="button" className="ds-action-btn" onClick={() => setImportOpen((v) => !v)}>
+                      <Icon name="upload" size={13} /> Import
+                    </button>
+                    <button type="button" className="ds-action-btn" onClick={() => copyText(codeText, activeExportFormat.label)}>
                       <Icon name="copy" size={13} /> Copy
                     </button>
                     <button
                       type="button"
                       className="ds-action-btn is-primary"
-                      onClick={() => {
-                        const ext = exportTab === 'dtcg' ? 'tokens.json' : exportTab === 'designmd' ? 'DESIGN.md' : 'tokens.css';
-                        downloadFile(codeText, ext);
-                      }}
+                      onClick={() => downloadFile(codeText, activeExportFormat.filename)}
                     >
                       <Icon name="download" size={13} /> Download
                     </button>
                   </div>
                 </div>
-                <pre className="ds-code-pre">{codeText}</pre>
+
+                {importOpen && (
+                  <div className="ds-import-box">
+                    <textarea
+                      rows={3}
+                      className="ds-import-textarea"
+                      placeholder="Paste DesignSystem JSON or any hex colors (e.g. #0ea5e9 #f59e0b #10b981)…"
+                      value={importText}
+                      onChange={(e) => setImportText(e.target.value)}
+                    />
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
+                      <button type="button" className="ds-action-btn" onClick={() => setImportOpen(false)}>Cancel</button>
+                      <button type="button" className="ds-action-btn is-primary" onClick={handleImportTokens}>Apply Import</button>
+                    </div>
+                  </div>
+                )}
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                  <input
+                    type="search"
+                    className="ds-seed-input"
+                    style={{ maxWidth: 280 }}
+                    placeholder="Filter generated tokens (e.g. brand, radius, clamp)…"
+                    value={tokenFilter}
+                    onChange={(e) => setTokenFilter(e.target.value)}
+                  />
+                  <span style={{ fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--studio-muted)' }}>
+                    {filteredCode.shown} / {filteredCode.total} lines · {activeExportFormat.filename}
+                  </span>
+                </div>
+
+                <pre className="ds-code-pre">{filteredCode.text}</pre>
               </div>
             )}
           </div>
         </div>
 
         <aside className="studio-inspector" aria-label="Design System Parameters">
-          <div className="studio-tabs">
+          <div className="studio-tabs ds-inspector-tabs">
             <button type="button" className="studio-tab" aria-selected="true">
               System Controls
             </button>
-            <button
-              type="button"
-              className="studio-tab"
-              aria-selected="false"
-              onClick={() => { resetDesignSystem(); flash('Reset system defaults'); }}
-            >
-              Reset All
-            </button>
+            <div className="ds-inspector-quick">
+              <button
+                type="button"
+                className="ds-quick-btn"
+                onClick={handleRandomize}
+                title="Generate harmonious OKLCH system"
+              >
+                <Icon name="sparkle" size={12} /> Random
+              </button>
+              <button
+                type="button"
+                className="ds-quick-btn"
+                onClick={() => autoFixPrimary(4.5)}
+                title="Enforce >= 4.5:1 AA contrast on primary"
+              >
+                AA
+              </button>
+              <button
+                type="button"
+                className="ds-quick-btn"
+                onClick={() => {
+                  resetDesignSystem();
+                  setTheme('dark');
+                  flash('Reset system defaults');
+                }}
+              >
+                Reset
+              </button>
+            </div>
           </div>
 
           <div className="studio-panel-scroll">
             <div className="studio-section">
               <div className="studio-section-title">
-                <span>Seed From 208 Systems DB</span>
+                <span>Seed From {catalogSystems.length || 208} Systems DB</span>
               </div>
               <div className="ds-seed-input-wrap">
                 <input
                   className="ds-seed-input"
                   type="search"
-                  placeholder="Filter e.g. google, vercel, spotify..."
+                  placeholder="Filter e.g. apple, google, vercel, linear..."
                   value={seedQuery}
                   onChange={(e) => setSeedQuery(e.target.value)}
                 />
@@ -616,15 +530,39 @@ export function SystemMaker() {
                   ]}
                 />
               </div>
+              <div className="studio-field-label" style={{ marginTop: 10 }}>Curated Archetypes</div>
+              <div className="page-chip-row" style={{ marginTop: 0 }}>
+                {SYSTEM_ARCHETYPES.map((arch) => (
+                  <button
+                    key={arch.id}
+                    type="button"
+                    className={`page-chip ${designSystem.name === arch.patch.name && !designSystem.seedSlug ? 'is-active' : ''}`}
+                    title={arch.description}
+                    onClick={() => applyArchetype(arch.patch, arch.label)}
+                  >
+                    {arch.label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             <div className="studio-section">
-              <div className="studio-section-title"><span>Identity &amp; Polarity</span></div>
+              <div className="studio-section-title">
+                <span>Identity, Mark &amp; Polarity</span>
+                <button type="button" onClick={() => setMarkOpen(true)}>Change Mark</button>
+              </div>
               <label className="page-field">
                 <span>System Name</span>
                 <input
                   value={designSystem.name}
                   onChange={(e) => setDesignSystem({ name: e.target.value })}
+                />
+              </label>
+              <label className="page-field">
+                <span>Tagline</span>
+                <input
+                  value={designSystem.tagline}
+                  onChange={(e) => setDesignSystem({ tagline: e.target.value })}
                 />
               </label>
               <label className="page-field">
@@ -664,26 +602,51 @@ export function SystemMaker() {
             <div className="studio-section">
               <div className="studio-section-title">
                 <span>OKLCH Palette &amp; Harmony</span>
-                <button type="button" onClick={autoFixPrimary}>Auto-AA</button>
+                <button type="button" onClick={() => setStatusColorsOpen((v) => !v)}>
+                  {statusColorsOpen ? 'Hide Status' : 'Status Colors'}
+                </button>
               </div>
-              {([
-                ['Primary Seed', 'primaryHex'],
-                ['Secondary', 'secondaryHex'],
-                ['Accent', 'accentHex'],
-              ] as const).map(([label, key]) => (
-                <label key={key} className="param-row is-color">
-                  <span className="param-label">{label}</span>
-                  <span className="param-value">
-                    {designSystem[key]}
-                    <span className="param-swatch" style={{ background: designSystem[key] }} />
-                  </span>
-                  <input
-                    type="color"
-                    value={designSystem[key]}
-                    onChange={(e) => setDesignSystem({ [key]: e.target.value })}
+              <HexColorRow
+                label="Primary Seed"
+                value={designSystem.primaryHex}
+                onChange={(primaryHex) => setDesignSystem({ primaryHex })}
+              />
+              <HexColorRow
+                label="Secondary"
+                value={designSystem.secondaryHex}
+                onChange={(secondaryHex) => setDesignSystem({ secondaryHex })}
+              />
+              <HexColorRow
+                label="Accent"
+                value={designSystem.accentHex}
+                onChange={(accentHex) => setDesignSystem({ accentHex })}
+              />
+
+              {statusColorsOpen && (
+                <div style={{ marginTop: 4 }}>
+                  <HexColorRow
+                    label="Success"
+                    value={designSystem.successHex || '#10b981'}
+                    onChange={(successHex) => setDesignSystem({ successHex })}
                   />
-                </label>
-              ))}
+                  <HexColorRow
+                    label="Warning"
+                    value={designSystem.warningHex || '#f59e0b'}
+                    onChange={(warningHex) => setDesignSystem({ warningHex })}
+                  />
+                  <HexColorRow
+                    label="Danger"
+                    value={designSystem.dangerHex || '#ef4444'}
+                    onChange={(dangerHex) => setDesignSystem({ dangerHex })}
+                  />
+                  <HexColorRow
+                    label="Info"
+                    value={designSystem.infoHex || '#3b82f6'}
+                    onChange={(infoHex) => setDesignSystem({ infoHex })}
+                  />
+                </div>
+              )}
+
               <div className="page-chip-row">
                 {HARMONIES.map((h) => (
                   <button
@@ -697,6 +660,19 @@ export function SystemMaker() {
                 ))}
               </div>
               <div className="param-row" style={{ marginTop: 10 }}>
+                <span className="param-label">Chroma Boost</span>
+                <input
+                  type="range"
+                  min={0.5}
+                  max={1.35}
+                  step={0.05}
+                  value={designSystem.chromaBoost ?? 1}
+                  onChange={(e) => setDesignSystem({ chromaBoost: Number(e.target.value) })}
+                  style={{ width: 100, accentColor: 'var(--studio-accent)' }}
+                />
+                <span className="param-value">{(designSystem.chromaBoost ?? 1).toFixed(2)}x</span>
+              </div>
+              <div className="param-row">
                 <span className="param-label">Neutral Temp</span>
                 <input
                   type="range"
@@ -705,14 +681,30 @@ export function SystemMaker() {
                   step={0.05}
                   value={designSystem.neutralTemp}
                   onChange={(e) => setDesignSystem({ neutralTemp: Number(e.target.value) })}
-                  style={{ width: 110, accentColor: 'var(--studio-accent)' }}
+                  style={{ width: 100, accentColor: 'var(--studio-accent)' }}
                 />
                 <span className="param-value">{designSystem.neutralTemp > 0 ? 'Warm' : designSystem.neutralTemp < 0 ? 'Cool' : 'Pure'}</span>
+              </div>
+              <div className="param-row">
+                <span className="param-label">Contrast</span>
+                <div className="segment">
+                  {(['subtle', 'balanced', 'high'] as SurfaceContrastMode[]).map((m) => (
+                    <button
+                      key={m}
+                      type="button"
+                      aria-pressed={(designSystem.surfaceContrast || 'balanced') === m}
+                      onClick={() => setDesignSystem({ surfaceContrast: m })}
+                      style={{ textTransform: 'capitalize' }}
+                    >
+                      {m}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
             <div className="studio-section">
-              <div className="studio-section-title"><span>Typography Scale</span></div>
+              <div className="studio-section-title"><span>Fluid Typography</span></div>
               <div className="param-row">
                 <span className="param-label">Display</span>
                 <DsSelect
@@ -770,10 +762,70 @@ export function SystemMaker() {
                 />
                 <span className="param-value">{designSystem.baseFontPx}px</span>
               </div>
+              <div className="param-row">
+                <span className="param-label">Heading Wt</span>
+                <div className="segment">
+                  {[600, 700, 800].map((w) => (
+                    <button
+                      key={w}
+                      type="button"
+                      aria-pressed={(designSystem.headingWeight ?? 700) === w}
+                      onClick={() => setDesignSystem({ headingWeight: w })}
+                    >
+                      {w}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="param-row">
+                <span className="param-label">Line Height</span>
+                <input
+                  type="range"
+                  min={1.4}
+                  max={1.75}
+                  step={0.05}
+                  value={designSystem.bodyLineHeight ?? 1.55}
+                  onChange={(e) => setDesignSystem({ bodyLineHeight: Number(e.target.value) })}
+                  style={{ width: 100, accentColor: 'var(--studio-accent)' }}
+                />
+                <span className="param-value">{(designSystem.bodyLineHeight ?? 1.55).toFixed(2)}</span>
+              </div>
+              <div className="param-row">
+                <span className="param-label">Fluid Scale</span>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.1}
+                  value={designSystem.fluidStrength ?? 1}
+                  onChange={(e) => setDesignSystem({ fluidStrength: Number(e.target.value) })}
+                  style={{ width: 100, accentColor: 'var(--studio-accent)' }}
+                />
+                <span className="param-value">{Math.round((designSystem.fluidStrength ?? 1) * 100)}%</span>
+              </div>
             </div>
 
             <div className="studio-section">
-              <div className="studio-section-title"><span>Spacing, Radius &amp; Elevation</span></div>
+              <div className="studio-section-title"><span>Geometry, Density &amp; Elevation</span></div>
+              <div className="param-row">
+                <span className="param-label">UI Density</span>
+                <div className="segment">
+                  {([
+                    ['compact', 'Compact'],
+                    ['comfortable', 'Comfort'],
+                    ['spacious', 'Spacious'],
+                  ] as [DensityMode, string][]).map(([id, lbl]) => (
+                    <button
+                      key={id}
+                      type="button"
+                      aria-pressed={(designSystem.density || 'comfortable') === id}
+                      onClick={() => setDesignSystem({ density: id })}
+                    >
+                      {lbl}
+                    </button>
+                  ))}
+                </div>
+              </div>
               <div className="param-row">
                 <span className="param-label">Space Unit</span>
                 <div className="segment">
@@ -794,13 +846,28 @@ export function SystemMaker() {
                 <input
                   type="range"
                   min={0}
-                  max={20}
+                  max={24}
                   step={1}
                   value={designSystem.baseRadiusPx}
                   onChange={(e) => setDesignSystem({ baseRadiusPx: Number(e.target.value) })}
                   style={{ width: 100, accentColor: 'var(--studio-accent)' }}
                 />
                 <span className="param-value">{designSystem.baseRadiusPx}px</span>
+              </div>
+              <div className="param-row">
+                <span className="param-label">Border Width</span>
+                <div className="segment">
+                  {[1, 1.5, 2].map((bw) => (
+                    <button
+                      key={bw}
+                      type="button"
+                      aria-pressed={(designSystem.borderWidthPx ?? 1) === bw}
+                      onClick={() => setDesignSystem({ borderWidthPx: bw })}
+                    >
+                      {bw}px
+                    </button>
+                  ))}
+                </div>
               </div>
               <div className="page-chip-row">
                 {ELEVATIONS.map((el) => (
@@ -814,10 +881,51 @@ export function SystemMaker() {
                   </button>
                 ))}
               </div>
+              <div className="param-row" style={{ marginTop: 10 }}>
+                <span className="param-label">Shadow Depth</span>
+                <input
+                  type="range"
+                  min={0}
+                  max={1}
+                  step={0.05}
+                  value={designSystem.elevationStrength}
+                  onChange={(e) => setDesignSystem({ elevationStrength: Number(e.target.value) })}
+                  style={{ width: 100, accentColor: 'var(--studio-accent)' }}
+                />
+                <span className="param-value">{Math.round(designSystem.elevationStrength * 100)}%</span>
+              </div>
             </div>
           </div>
         </aside>
       </div>
+
+      <MarkPickerDialog
+        open={markOpen}
+        onClose={() => setMarkOpen(false)}
+        onSelect={(m) => {
+          setActiveMark(m);
+          flash(`Mark set to ${m.name}`);
+        }}
+        onUploadFile={() => {
+          const inp = document.createElement('input');
+          inp.type = 'file';
+          inp.accept = 'image/svg+xml,.svg';
+          inp.onchange = async () => {
+            const f = inp.files?.[0];
+            if (!f) return;
+            const text = await f.text();
+            setActiveMark({
+              id: `upload-${Date.now()}`,
+              name: f.name.replace(/\.svg$/i, ''),
+              svg: sanitizeSvg(text),
+              source: 'upload',
+            });
+            flash(`Loaded ${f.name}`);
+          };
+          inp.click();
+        }}
+      />
+
       {toast && <div className="toast" role="status">{toast}</div>}
     </div>
   );

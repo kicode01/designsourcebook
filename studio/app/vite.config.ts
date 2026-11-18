@@ -32,8 +32,14 @@ export default defineConfig({
   build: {
     target: 'es2022',
     rollupOptions: {
+      preserveEntrySignatures: 'exports-only',
+      input: {
+        main: 'index.html',
+        'easter-eggs': 'src/easter-eggs/catalogBridge.tsx',
+      },
       output: {
-        entryFileNames: 'assets/app.js',
+        entryFileNames: (chunkInfo) =>
+          chunkInfo.name === 'easter-eggs' ? 'assets/easter-eggs.js' : 'assets/app.js',
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name][extname]',
       },

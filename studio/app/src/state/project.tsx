@@ -113,6 +113,19 @@ const DEFAULT_SYSTEM: DesignSystemDoc = {
   baseRadiusPx: 8,
   elevationStyle: 'layered',
   elevationStrength: 0.75,
+  successHex: '#10b981',
+  warningHex: '#f59e0b',
+  dangerHex: '#ef4444',
+  infoHex: '#3b82f6',
+  chromaBoost: 1,
+  surfaceContrast: 'balanced',
+  density: 'comfortable',
+  borderWidthPx: 1,
+  headingWeight: 700,
+  bodyLineHeight: 1.55,
+  fluidMinVw: 360,
+  fluidMaxVw: 1440,
+  fluidStrength: 1,
 };
 
 interface ProjectContextValue {
@@ -271,23 +284,26 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const seedFromSystemSlug = useCallback(async (slug: string) => {
+    const applyPatch = (patch: Partial<DesignSystemDoc>) => {
+      setDesignSystemState((prev) => ({ ...prev, ...patch }));
+      if (patch.polarity) setTheme(patch.polarity);
+    };
     try {
       const res = await fetch(`/api/systems/${encodeURIComponent(slug)}`);
       if (!res.ok) {
         const local = catalogSystems.find((s) => s.slug === slug);
-        if (local) {
-          const patch = seedSystemFromCatalog(local as unknown as Record<string, unknown>);
-          setDesignSystemState((prev) => ({ ...prev, ...patch }));
-        }
+        if (local) applyPatch(seedSystemFromCatalog(local as unknown as Record<string, unknown>));
         return;
       }
       const data = await res.json();
       if (data.system) {
         const merged = { ...data.system, ...(data.system.preview || {}) };
-        const patch = seedSystemFromCatalog(merged);
-        setDesignSystemState((prev) => ({ ...prev, ...patch }));
+        applyPatch(seedSystemFromCatalog(merged));
       }
-    } catch { /* ignore */ }
+    } catch {
+      const local = catalogSystems.find((s) => s.slug === slug);
+      if (local) applyPatch(seedSystemFromCatalog(local as unknown as Record<string, unknown>));
+    }
   }, [catalogSystems]);
 
   const loadMarkFromLogoId = useCallback(async (logoId: string) => {

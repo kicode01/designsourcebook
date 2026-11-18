@@ -1,0 +1,1 @@
+import{c as r,j as a,S as s}from"./SystemEasterEggs.js";let t=null;function u(){if(t){try{t.unmount()}catch{}t=null}}function i(e,n){if(u(),!e||e.slug!=="apple"||!n)return;const o=n.querySelector("#sys-easter-egg-root");o&&(t=r.createRoot(o),t.render(a.jsx(s,{system:e})))}export{i as mountCatalogSystemExperience,u as unmountCatalogSystemExperience};
