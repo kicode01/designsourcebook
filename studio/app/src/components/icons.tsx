@@ -15,6 +15,7 @@ const paths: Record<string, string[]> = {
   zoomIn: ['M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z', 'm21 21-4.3-4.3', 'M11 8v6', 'M8 11h6'],
   zoomOut: ['M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z', 'm21 21-4.3-4.3', 'M8 11h6'],
   chevronDown: ['m6 9 6 6 6-6'],
+  chevronLeft: ['m15 18-6-6 6-6'],
   chevronRight: ['m9 18 6-6-6-6'],
   x: ['M18 6 6 18', 'M6 6l12 12'],
   search: ['M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z', 'm21 21-4.3-4.3'],

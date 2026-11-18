@@ -96,8 +96,8 @@ export function TopBar({
             onClick={(e) => triggerPortalNavigation(e)}
             title="Return to Design Sourcebook Catalog"
           >
+            <Icon name="chevronLeft" size={13} />
             <span>Catalog</span>
-            <Icon name="arrowUpRight" size={12} />
           </a>
           <button
             type="button"
