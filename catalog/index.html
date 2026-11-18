@@ -20,31 +20,8 @@
     if(hasCrossDocVT){
       try{
         sessionStorage.removeItem('ds_portal_handoff');
-        var vtRaw=sessionStorage.getItem('ds_vt_handoff');
-        if(vtRaw){
-          sessionStorage.removeItem('ds_vt_handoff');
-          var vtData=JSON.parse(vtRaw);
-          if(vtData&&vtData.dir==='to-catalog'&&typeof vtData.ts==='number'&&Date.now()-vtData.ts<4000){
-            root.dataset.vtDir='to-catalog';
-          }
-        }
+        sessionStorage.removeItem('ds_vt_handoff');
       }catch(_){}
-      var vtCleanT=setTimeout(function(){delete root.dataset.vtDir;},900);
-      window.addEventListener('pagereveal',function(e){
-        clearTimeout(vtCleanT);
-        if(!e.viewTransition){delete root.dataset.vtDir;return;}
-        var dir=root.dataset.vtDir;
-        if(!dir&&window.navigation&&navigation.activation&&navigation.activation.from){
-          try{
-            var fromPath=new URL(navigation.activation.from.url).pathname;
-            if(/\/studio(?:\/|$)/.test(fromPath)) dir='to-catalog';
-          }catch(_){}
-        }
-        if(dir){
-          root.dataset.vtDir=dir;
-          e.viewTransition.finished.finally(function(){delete root.dataset.vtDir;});
-        }
-      },{once:true});
       return;
     }
     try{
@@ -123,24 +100,29 @@
   html[data-vt-kind="chameleon"]{--vt-dur:.26s}
   ::view-transition{background:var(--bg)}
   @keyframes vtFadeIn{from{opacity:0}to{opacity:1}}
-  @keyframes dsVtOldHold{from{opacity:1;filter:brightness(1)}to{opacity:1;filter:brightness(.9)}}
-  @keyframes dsVtEnterStudio{from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
-  @keyframes dsVtEnterCatalog{from{opacity:0;transform:translate3d(0,-8px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
-  ::view-transition-group(root){animation-duration:var(--vt-dur,.28s);animation-timing-function:var(--ease-out)}
-  ::view-transition-old(root){animation:none;opacity:1}
-  ::view-transition-new(root){animation:vtFadeIn var(--vt-dur,.24s) var(--ease-out) both;mix-blend-mode:normal}
-  html[data-vt-dir="to-studio"]::view-transition-old(root),
-  html[data-vt-dir="to-catalog"]::view-transition-old(root){animation:dsVtOldHold .28s var(--ease-out) both}
-  html[data-vt-dir="to-studio"]::view-transition-new(root){animation:dsVtEnterStudio .28s var(--ease-out) both;mix-blend-mode:normal}
-  html[data-vt-dir="to-catalog"]::view-transition-new(root){animation:dsVtEnterCatalog .28s var(--ease-out) both;mix-blend-mode:normal}
+  @keyframes dsVtFadeOutFast{from{opacity:1}to{opacity:0}}
+  @keyframes dsVtOldFade{0%{opacity:1;filter:brightness(1)}35%{opacity:1;filter:brightness(.94)}100%{opacity:0;filter:brightness(.88)}}
+  @keyframes dsVtEnterCatalog{from{opacity:0;transform:translate3d(0,-4px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+  ::view-transition-group(root){animation-duration:240ms;animation-timing-function:var(--ease-out)}
+  ::view-transition-old(root){animation:dsVtOldFade 210ms var(--ease-out) both}
+  ::view-transition-new(root){animation:dsVtEnterCatalog 240ms var(--ease-out) both;mix-blend-mode:normal}
+  html[data-vt-kind]::view-transition-group(root){animation-duration:var(--vt-dur,.24s)}
+  html[data-vt-kind]::view-transition-old(root){animation:none;opacity:1}
+  html[data-vt-kind]::view-transition-new(root){animation:vtFadeIn var(--vt-dur,.24s) var(--ease-out) both;mix-blend-mode:normal}
   header.top{view-transition-name:ds-topbar}
   .brand .ds-mark{view-transition-name:ds-brand-mark}
-  ::view-transition-group(ds-topbar){z-index:30;animation-duration:var(--vt-dur,.24s);animation-timing-function:var(--ease-out)}
-  ::view-transition-old(ds-topbar){animation:none;opacity:1}
-  ::view-transition-new(ds-topbar){animation:vtFadeIn var(--vt-dur,.22s) var(--ease-out) both;mix-blend-mode:normal}
-  ::view-transition-group(ds-brand-mark){z-index:35;animation-duration:var(--vt-dur,.24s);animation-timing-function:var(--ease-out)}
-  ::view-transition-old(ds-brand-mark){animation:none;opacity:1}
-  ::view-transition-new(ds-brand-mark){animation:vtFadeIn var(--vt-dur,.18s) var(--ease-out) both;mix-blend-mode:normal}
+  ::view-transition-group(ds-topbar){z-index:30;background:var(--header-bg);animation-duration:220ms;animation-timing-function:var(--ease-out)}
+  ::view-transition-old(ds-topbar){animation:dsVtFadeOutFast 95ms cubic-bezier(.4,0,1,1) both}
+  ::view-transition-new(ds-topbar){animation:vtFadeIn 175ms var(--ease-out) 40ms both;mix-blend-mode:normal}
+  ::view-transition-group(ds-brand-mark){z-index:35;animation-duration:220ms;animation-timing-function:var(--ease-out)}
+  ::view-transition-old(ds-brand-mark){animation:none;opacity:0}
+  ::view-transition-new(ds-brand-mark){animation:none;opacity:1}
+  html[data-vt-kind]::view-transition-group(ds-topbar){background:transparent;animation-duration:var(--vt-dur,.24s)}
+  html[data-vt-kind]::view-transition-old(ds-topbar){animation:none;opacity:1}
+  html[data-vt-kind]::view-transition-new(ds-topbar){animation:vtFadeIn var(--vt-dur,.24s) var(--ease-out) both;mix-blend-mode:normal}
+  html[data-vt-kind]::view-transition-group(ds-brand-mark){animation-duration:var(--vt-dur,.24s)}
+  html[data-vt-kind]::view-transition-old(ds-brand-mark){animation:none;opacity:1}
+  html[data-vt-kind]::view-transition-new(ds-brand-mark){animation:vtFadeIn var(--vt-dur,.24s) var(--ease-out) both;mix-blend-mode:normal}
   @media (prefers-reduced-motion:reduce){
     *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important;scroll-behavior:auto !important}
     ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none !important}
@@ -1654,14 +1636,24 @@ function heroFor(p){
   const heroCard=pick(p,'card')[0];
 
   return '<div class="hero-wrap">'+
-    '<div class="hero" style="background:'+safeCss(p.canvas)+';color:'+safeCss(readable(p.text,p.canvas))+'">'+
-      '<h1 style="font-family:'+fontStack(d.fontFamily)+';font-size:'+Math.min(pxOf(d),44)+'px;font-weight:'+(d.fontWeight||600)+
-        ';line-height:'+(d.lineHeight||1.1)+';letter-spacing:'+safeCss(scaledTracking(d)==='normal'?'-.02em':scaledTracking(d))+'">Design with intent.</h1>'+
-      '<p style="font-family:'+fontStack(t.fontFamily)+';font-size:'+Math.min(pxOf(t),16.5)+'px;color:'+safeCss(readable(p.muted,p.canvas))+
-        ';line-height:'+(t.lineHeight||1.6)+'">'+esc(sentence(p.overview||p.style,200))+'</p>'+
-      '<div class="hero-row">'+row.join('')+(heroSw?renderSwitch(p,heroSw):'')+'</div>'+
-      '<div class="hero-row" style="margin-top:14px">'+renderInput(p,pick(p,'input')[0])+(heroCard?renderCardSpecimen(p,heroCard):renderCardBox(p))+'</div>'+
-    '</div>'+
+    (p.slug==='apple'
+      ? '<div id="sys-easter-egg-root" data-slug="apple">'+
+          '<div class="hero" style="background:'+safeCss(p.canvas)+';color:'+safeCss(readable(p.text,p.canvas))+'">'+
+            '<h1 style="font-family:'+fontStack(d.fontFamily)+';font-size:'+Math.min(pxOf(d),44)+'px;font-weight:'+(d.fontWeight||600)+
+              ';line-height:'+(d.lineHeight||1.1)+';letter-spacing:'+safeCss(scaledTracking(d)==='normal'?'-.02em':scaledTracking(d))+'">Design with intent.</h1>'+
+            '<p style="font-family:'+fontStack(t.fontFamily)+';font-size:'+Math.min(pxOf(t),16.5)+'px;color:'+safeCss(readable(p.muted,p.canvas))+
+              ';line-height:'+(t.lineHeight||1.6)+'">'+esc(sentence(p.overview||p.style,200))+'</p>'+
+          '</div>'+
+        '</div>'
+      : '<div class="hero" style="background:'+safeCss(p.canvas)+';color:'+safeCss(readable(p.text,p.canvas))+'">'+
+          '<h1 style="font-family:'+fontStack(d.fontFamily)+';font-size:'+Math.min(pxOf(d),44)+'px;font-weight:'+(d.fontWeight||600)+
+            ';line-height:'+(d.lineHeight||1.1)+';letter-spacing:'+safeCss(scaledTracking(d)==='normal'?'-.02em':scaledTracking(d))+'">Design with intent.</h1>'+
+          '<p style="font-family:'+fontStack(t.fontFamily)+';font-size:'+Math.min(pxOf(t),16.5)+'px;color:'+safeCss(readable(p.muted,p.canvas))+
+            ';line-height:'+(t.lineHeight||1.6)+'">'+esc(sentence(p.overview||p.style,200))+'</p>'+
+          '<div class="hero-row">'+row.join('')+(heroSw?renderSwitch(p,heroSw):'')+'</div>'+
+          '<div class="hero-row" style="margin-top:14px">'+renderInput(p,pick(p,'input')[0])+(heroCard?renderCardSpecimen(p,heroCard):renderCardBox(p))+'</div>'+
+        '</div>'
+    )+
     '<div class="spec-bar">'+
       '<div class="spec-cell"><small>Surface Polarity</small><b>'+esc(p.theme.toUpperCase())+' \u00b7 '+esc(p.canvas)+'</b>'+
         '<div class="spec-dots"><i style="background:'+safeCss(p.canvas)+'" title="Canvas"></i><i style="background:'+safeCss(p.surface)+'" title="Surface"></i><i style="background:'+safeCss(p.text)+'" title="Text"></i><i style="background:'+safeCss(p.brand)+'" title="Brand"></i></div>'+
@@ -2074,11 +2066,23 @@ function applySystemTheme(d){
   rootEl.style.setProperty('--ds-c2',ds2);
   rootEl.style.setProperty('--ds-c3',ds3);
   rootEl.style.setProperty('--sb-accent',readable(d.brand||ds1,d.canvas));
+  rootEl.dataset.sysSlug=d.slug;
+}
+let easterEggModPromise=null;
+function loadEasterEggModule(){
+  if(!easterEggModPromise){
+    easterEggModPromise=import('./studio/assets/easter-eggs.js').catch(()=>null);
+  }
+  return easterEggModPromise;
 }
 function resetSystemTheme(){
   const rootEl=document.documentElement;
   rootEl.classList.remove('sys-active','sys-light');
+  delete rootEl.dataset.sysSlug;
   THEME_VARS.forEach(v=>rootEl.style.removeProperty(v));
+  if(easterEggModPromise){
+    easterEggModPromise.then(m=>{ if(m&&m.unmountCatalogSystemExperience) m.unmountCatalogSystemExperience(); });
+  }
 }
 
 /* ---------- detail ---------- */
@@ -2388,6 +2392,13 @@ function bindDetailEvents(d){
     if(full&&full.tokens) base.fullTokens=full.tokens;
     copy(JSON.stringify(base,null,2));
   });
+  if(d&&d.slug==='apple'){
+    loadEasterEggModule().then(m=>{
+      if(m&&m.mountCatalogSystemExperience&&detail.classList.contains('on')){
+        m.mountCatalogSystemExperience(d,detail);
+      }
+    });
+  }
 }
 async function hydrateSystemDetail(slug){
   if(FULL_CACHE[slug]||!location.protocol.startsWith('http')) return null;
@@ -4305,12 +4316,6 @@ document.getElementById('viewBtn').addEventListener('click',()=>navigateTab('cov
       document.head.appendChild(link);
     }catch(_){}
   }
-  function writeStudioVtHandoff(){
-    document.documentElement.dataset.vtDir='to-studio';
-    try{
-      sessionStorage.setItem('ds_vt_handoff',JSON.stringify({dir:'to-studio',ts:Date.now()}));
-    }catch(_){}
-  }
   function clearPortal(){
     launching=false;
     clearTimeout(pendingLoaderT);
@@ -4324,21 +4329,14 @@ document.getElementById('viewBtn').addEventListener('click',()=>navigateTab('cov
     pendingLoaderT=0;
     stopLoader();
   });
-  window.addEventListener('pageswap',e=>{
+  window.addEventListener('pageswap',()=>{
     clearTimeout(pendingLoaderT);
     pendingLoaderT=0;
     stopLoader();
     clearVtClasses();
-    if(e&&e.viewTransition&&e.activation&&e.activation.entry&&e.activation.entry.url){
-      try{
-        const dest=new URL(e.activation.entry.url,location.href);
-        if(/\/studio(?:\/|$)/.test(dest.pathname)) writeStudioVtHandoff();
-      }catch(_){}
-    }
   });
   window.addEventListener('pageshow',e=>{
     clearPortal();
-    delete document.documentElement.dataset.vtDir;
     if(e.persisted&&leftViaPortal){
       leftViaPortal=false;
       if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches&&typeof document.body.animate==='function'){
@@ -4389,7 +4387,6 @@ document.getElementById('viewBtn').addEventListener('click',()=>navigateTab('cov
     const a=e.target&&e.target.closest?e.target.closest('a'):null;
     if(!isStudioLink(a)) return;
     if(supportsCrossDocVT){
-      writeStudioVtHandoff();
       clearTimeout(pendingLoaderT);
       pendingLoaderT=setTimeout(startLoader,320);
       return;
