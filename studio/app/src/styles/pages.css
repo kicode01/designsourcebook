@@ -30,16 +30,18 @@
 .page-workspace {
   flex: 1;
   min-height: 0;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(248px, 20vw, 276px);
-  gap: 12px;
-  padding: 12px;
+  grid-template-columns: minmax(0, 1fr) 368px;
+  gap: 18px;
+  padding: 24px;
   overflow: hidden;
 }
 
-/* CreateX runs the target's wider panel so three 98px tiles fit exactly. */
 .page-workspace.is-createx {
-  grid-template-columns: minmax(0, 1fr) clamp(320px, 26vw, 348px);
+  grid-template-columns: minmax(0, 1fr) 368px;
 }
 
 .page-canvas-area {
@@ -51,13 +53,14 @@
 }
 
 /* The sheet bleeds under the floating chrome, so the area drops its padding.
-   `inset` (not padding) keeps the measured box equal to the SVG's viewBox, so
-   1 design unit stays 1 CSS pixel and the ruling lands on whole pixels. */
+   `inset: 0` aligns the canvas border flush with the 1360px workspace column
+   and keeps the measured box equal to the SVG's viewBox. */
 .page-canvas-area.is-flush {
-  inset: 9px;
+  inset: 0;
   padding: 0;
   overflow: hidden;
-  border-radius: 18px;
+  border: 1px solid var(--studio-panel-border);
+  border-radius: var(--studio-panel-radius);
   background: var(--createx-sheet);
 }
 
@@ -800,4 +803,22 @@
   gap: 1.6cqw;
   font-size: 3.4cqw;
   opacity: 0.45;
+}
+
+@media (max-width: 1120px) {
+  .page-workspace,
+  .page-workspace.is-createx {
+    padding: 18px 16px;
+    gap: 14px;
+    grid-template-columns: minmax(0, 1fr) 332px;
+  }
+}
+
+@media (max-width: 860px) {
+  .page-workspace,
+  .page-workspace.is-createx {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(380px, 1fr) auto;
+    overflow-y: auto;
+  }
 }

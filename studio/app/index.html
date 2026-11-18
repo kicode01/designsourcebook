@@ -9,7 +9,17 @@
       content="Deterministic Design System Maker, Indexed Logo Construction Database, Logo Maker, WebGL2 LogoFX, and Brand Kit Workbench."
     />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <style>html.ds-chameleon-enter #root{opacity:0}</style>
+    <script type="speculationrules">
+      {"prefetch":[{"where":{"href_matches":["../*","../"]},"eagerness":"moderate"}]}
+    </script>
+    <style>
+      html.ds-chameleon-enter .ds-shell-page,
+      html.ds-chameleon-enter .studio-workspace,
+      html.ds-chameleon-enter .page-workspace {
+        opacity: 0;
+        transform: translate3d(0, 8px, 0);
+      }
+    </style>
     <script>
       (function () {
         var theme = 'dark';
@@ -20,13 +30,48 @@
         root.classList.toggle('dark', theme !== 'light');
         root.classList.toggle('light', theme === 'light');
         root.style.colorScheme = theme;
-        root.style.backgroundColor = theme === 'light' ? '#fafafa' : '#09090b';
+        root.style.backgroundColor = theme === 'light' ? '#f3f4f6' : '#09090b';
         var hasCrossDocVT = 'onpagereveal' in window && location.protocol !== 'file:';
         if (hasCrossDocVT) {
           try {
             sessionStorage.removeItem('ds_portal_handoff');
             sessionStorage.removeItem('ds_studio_chameleon');
+            var vtRaw = sessionStorage.getItem('ds_vt_handoff');
+            if (vtRaw) {
+              sessionStorage.removeItem('ds_vt_handoff');
+              var vtData = JSON.parse(vtRaw);
+              if (vtData && vtData.dir === 'to-studio' && typeof vtData.ts === 'number' && Date.now() - vtData.ts < 4000) {
+                root.dataset.vtDir = 'to-studio';
+              }
+            }
           } catch (e) {}
+          var vtCleanT = setTimeout(function () {
+            delete root.dataset.vtDir;
+          }, 900);
+          window.addEventListener(
+            'pagereveal',
+            function (e) {
+              clearTimeout(vtCleanT);
+              if (!e.viewTransition) {
+                delete root.dataset.vtDir;
+                return;
+              }
+              var dir = root.dataset.vtDir;
+              if (!dir && window.navigation && navigation.activation && navigation.activation.from) {
+                try {
+                  var fromPath = new URL(navigation.activation.from.url).pathname;
+                  if (!/\/studio(?:\/|$)/.test(fromPath)) dir = 'to-studio';
+                } catch (err) {}
+              }
+              if (dir) {
+                root.dataset.vtDir = dir;
+                e.viewTransition.finished.finally(function () {
+                  delete root.dataset.vtDir;
+                });
+              }
+            },
+            { once: true },
+          );
           return;
         }
         try {

@@ -3,10 +3,13 @@
 .ds-shell-page {
   flex: 1;
   min-height: 0;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(340px, 27vw, 390px);
-  gap: 12px;
-  padding: 12px;
+  grid-template-columns: minmax(0, 1fr) 368px;
+  gap: 18px;
+  padding: 24px;
   overflow: hidden;
 }
 
@@ -40,11 +43,63 @@
 
 .ds-subhead {
   display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.ds-subhead-bar {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 18px;
+  gap: 10px;
+}
+
+.ds-subhead-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Uniform 12px horizontal inset for all System Maker inspector controls */
+.ds-seed-input-wrap {
+  padding: 0 12px 8px;
+}
+
+.ds-seed-input {
+  width: 100%;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid var(--studio-panel-border);
+  background: var(--studio-panel-control);
+  color: var(--studio-ink);
+  font-size: 12px;
+}
+
+.ds-seed-input::placeholder {
+  color: var(--studio-dim2);
+}
+
+.ds-seed-input:focus-visible {
+  outline: 2px solid var(--studio-accent);
+  outline-offset: 1px;
+}
+
+.ds-shell-page .studio-inspector .page-field {
+  margin: 0 12px 8px;
+}
+
+.ds-shell-page .studio-inspector .page-field .ds-select.is-full {
+  flex: 1;
+  min-width: 0;
+  max-width: 210px;
+}
+
+.ds-shell-page .studio-inspector .page-chip-row {
+  margin: 8px 12px 0;
 }
 
 .ds-title-block h1 {
@@ -403,8 +458,11 @@
 }
 .icon-pick-cell svg { width: 22px; height: 22px; }
 
+@media (max-width: 1120px) {
+  .ds-shell-page { padding: 18px 16px; gap: 14px; grid-template-columns: minmax(0, 1fr) 332px; }
+}
+
 @media (max-width: 960px) {
   .ds-shell-page { grid-template-columns: 1fr; overflow-y: auto; }
   .ds-main-scroll { overflow: visible; padding-top: 20px; }
-  .studio-topbar { flex-wrap: wrap; height: auto; }
 }

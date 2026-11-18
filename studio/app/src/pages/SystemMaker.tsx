@@ -134,42 +134,44 @@ export function SystemMaker() {
                 </p>
               </div>
 
-              <div className="ds-pills-row" role="tablist" aria-label="System Maker Views">
-                {([
-                  ['preview', 'UI Specimen'],
-                  ['components', 'Components'],
-                  ['contrast', 'OKLCH & Contrast'],
-                  ['export', 'Tokens & Code'],
-                ] as const).map(([id, label]) => (
-                  <button
-                    key={id}
-                    type="button"
-                    role="tab"
-                    aria-selected={viewTab === id}
-                    className={`ds-pill-tab ${viewTab === id ? 'is-active' : ''}`}
-                    onClick={() => setViewTab(id)}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
+              <div className="ds-subhead-bar">
+                <div className="ds-pills-row" role="tablist" aria-label="System Maker Views">
+                  {([
+                    ['preview', 'UI Specimen'],
+                    ['components', 'Components'],
+                    ['contrast', 'OKLCH & Contrast'],
+                    ['export', 'Tokens & Code'],
+                  ] as const).map(([id, label]) => (
+                    <button
+                      key={id}
+                      type="button"
+                      role="tab"
+                      aria-selected={viewTab === id}
+                      className={`ds-pill-tab ${viewTab === id ? 'is-active' : ''}`}
+                      onClick={() => setViewTab(id)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <DsSelect
-                  variant="pill"
-                  ariaLabel="Color blindness vision simulator"
-                  value={cvd}
-                  onChange={(v) => setCvd(v as CvdMode)}
-                  options={CVD_MODES.map((m) => ({ value: m.id, label: m.label }))}
-                />
-                <a className="ds-action-btn" href="#/create" title="Refine mark in Logo Maker">
-                  <span>Logo Maker</span>
-                  <Icon name="arrowUpRight" size={13} />
-                </a>
-                <a className="ds-action-btn is-primary" href="#/brand" onClick={() => flash('Synced to Brand Maker')}>
-                  <span>Brand Maker</span>
-                  <Icon name="arrowUpRight" size={13} />
-                </a>
+                <div className="ds-subhead-actions">
+                  <DsSelect
+                    variant="pill"
+                    ariaLabel="Color blindness vision simulator"
+                    value={cvd}
+                    onChange={(v) => setCvd(v as CvdMode)}
+                    options={CVD_MODES.map((m) => ({ value: m.id, label: m.label }))}
+                  />
+                  <a className="ds-action-btn" href="#/create" title="Refine mark in Logo Maker">
+                    <span>Logo Maker</span>
+                    <Icon name="arrowUpRight" size={13} />
+                  </a>
+                  <a className="ds-action-btn is-primary" href="#/brand" onClick={() => flash('Synced to Brand Maker')}>
+                    <span>Brand Maker</span>
+                    <Icon name="arrowUpRight" size={13} />
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -583,22 +585,15 @@ export function SystemMaker() {
               <div className="studio-section-title">
                 <span>Seed From 208 Systems DB</span>
               </div>
-              <input
-                type="search"
-                placeholder="Filter e.g. google, vercel, spotify..."
-                value={seedQuery}
-                onChange={(e) => setSeedQuery(e.target.value)}
-                style={{
-                  width: '100%',
-                  height: 32,
-                  padding: '0 10px',
-                  borderRadius: 7,
-                  border: '1px solid var(--studio-panel-border)',
-                  background: 'var(--studio-panel-control)',
-                  fontSize: 12,
-                  marginBottom: 8,
-                }}
-              />
+              <div className="ds-seed-input-wrap">
+                <input
+                  className="ds-seed-input"
+                  type="search"
+                  placeholder="Filter e.g. google, vercel, spotify..."
+                  value={seedQuery}
+                  onChange={(e) => setSeedQuery(e.target.value)}
+                />
+              </div>
               <div className="page-field">
                 <span>Basis System</span>
                 <DsSelect

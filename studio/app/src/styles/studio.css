@@ -14,10 +14,13 @@
 .studio-workspace {
   flex: 1;
   min-height: 0;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(320px, 26vw, 348px);
-  gap: 12px;
-  padding: 12px;
+  grid-template-columns: minmax(0, 1fr) 368px;
+  gap: 18px;
+  padding: 24px;
   overflow: hidden;
   transition: grid-template-columns 0.22s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -93,16 +96,27 @@
 .studio-empty strong { font-size: 13px; font-weight: 600; color: var(--studio-ink); }
 .studio-empty span { font-size: 11px; letter-spacing: 0.02em; }
 
-/* ---------- top bar (full-width Studio header matching Design Sourcebook) ---------- */
+/* ---------- top bar (aligned 1:1 with Design Sourcebook Catalog header) ---------- */
 .studio-topbar {
   flex: none;
-  height: 54px;
-  padding: 10px 14px 0;
+  position: relative;
+  z-index: 20;
+  view-transition-name: ds-topbar;
+  background: var(--studio-header-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--studio-panel-border);
+}
+
+.studio-topbar-inner {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 11px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  z-index: 15;
+  gap: 14px;
 }
 
 .studio-brand {
@@ -116,34 +130,30 @@
 .ds-brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 5px 10px 5px 7px;
-  border-radius: 999px;
-  background: var(--studio-float-bg);
-  border: 1px solid var(--studio-panel-border);
-  backdrop-filter: blur(14px);
+  gap: 9px;
+  padding: 4px 2px;
   color: var(--studio-ink);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.02em;
   white-space: nowrap;
   flex-shrink: 0;
   text-decoration: none;
-  transition: border-color 0.12s ease-out, background-color 0.12s ease-out;
+  transition: opacity 0.12s ease-out;
 }
-.ds-brand-link:hover { background: var(--studio-panel-control-hover); border-color: var(--studio-panel-border-strong); }
+.ds-brand-link:hover { opacity: 0.82; }
 .ds-brand-badge {
   font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 1px 6px;
+  padding: 1.5px 6px;
   border-radius: 999px;
   background: var(--studio-accent-soft);
   color: var(--studio-muted);
 }
-.ds-mark { width: 20px; height: 20px; flex: none; color: var(--studio-ink); overflow: visible; }
+.ds-mark { width: 22px; height: 22px; flex: none; color: var(--studio-ink); overflow: visible; view-transition-name: ds-brand-mark; }
 .ds-slabs { animation: dsPrismShift 14s linear infinite; will-change: filter; }
 @keyframes dsPrismShift { from { filter: hue-rotate(0deg); } to { filter: hue-rotate(360deg); } }
 
@@ -153,9 +163,8 @@
   gap: 2px;
   padding: 3px;
   border-radius: 999px;
-  background: var(--studio-float-bg);
+  background: color-mix(in srgb, var(--studio-ink) 3.5%, transparent);
   border: 1px solid var(--studio-panel-border);
-  backdrop-filter: blur(14px);
   pointer-events: auto;
 }
 
@@ -163,34 +172,34 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 12px;
+  padding: 5px 10px;
   border-radius: 999px;
   font-size: 12px;
   font-weight: 500;
   color: var(--studio-muted);
+  border: 1px solid transparent;
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color 0.12s ease-out;
+  transition: color 0.12s ease-out, background-color 0.12s ease-out;
 }
 
-.product-switcher:hover { background: color-mix(in srgb, var(--studio-ink) 5%, transparent); color: var(--studio-ink); }
+.product-switcher:hover { background: color-mix(in srgb, var(--studio-ink) 5.5%, transparent); color: var(--studio-ink); }
 .product-switcher.is-current {
   background: var(--studio-accent);
   color: var(--studio-accent-fg);
-  font-weight: 600;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+  font-weight: 550;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .product-switcher.is-current:hover { background: var(--primary-hover); color: var(--studio-accent-fg); }
 
 .studio-top-actions {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 3px 6px;
+  gap: 2px;
+  padding: 3px;
   border-radius: 999px;
-  background: var(--studio-float-bg);
+  background: color-mix(in srgb, var(--studio-ink) 3.5%, transparent);
   border: 1px solid var(--studio-panel-border);
-  backdrop-filter: blur(14px);
   pointer-events: auto;
 }
 
@@ -198,14 +207,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 999px;
   color: var(--studio-muted);
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.12s ease-out, color 0.12s ease-out;
 }
 
-.icon-button:hover { background: var(--studio-toolbar-hover); color: var(--studio-ink); }
+.icon-button:hover { background: color-mix(in srgb, var(--studio-ink) 5.5%, transparent); color: var(--studio-ink); }
 
 .studio-corner-button {
   position: absolute;
@@ -907,9 +916,14 @@
 
 .shell-links { display: flex; gap: 10px; justify-content: center; }
 
+@media (max-width: 1120px) {
+  .studio-topbar-inner { flex-wrap: wrap; gap: 10px; padding: 10px 16px; }
+  .studio-workspace { padding: 18px 16px; gap: 14px; grid-template-columns: minmax(0, 1fr) 332px; }
+}
+
 @media (max-width: 860px) {
   .studio-workspace { grid-template-columns: minmax(0, 1fr); }
-  .studio-inspector { position: absolute; right: 12px; top: 12px; bottom: 12px; width: min(348px, calc(100vw - 24px)); z-index: 10; }
+  .studio-inspector { position: absolute; right: 16px; top: 18px; bottom: 18px; width: min(368px, calc(100vw - 32px)); z-index: 10; }
 }
 
 /* ---------- Design Sourcebook custom dropdowns ---------- */

@@ -63,6 +63,7 @@ export default function App() {
   useEffect(() => {
     installPortalPageShowCleanup();
     const root = document.documentElement;
+    root.style.removeProperty('background-color');
     let hasChameleon = root.classList.contains('ds-chameleon-enter');
     try {
       const raw = sessionStorage.getItem('ds_portal_handoff');
@@ -81,13 +82,11 @@ export default function App() {
     });
     const timer = window.setTimeout(() => {
       root.classList.remove('ds-chameleon-revealed');
-      root.style.removeProperty('background-color');
     }, 340);
     return () => {
       cancelAnimationFrame(raf);
       window.clearTimeout(timer);
       root.classList.remove('ds-chameleon-enter', 'ds-chameleon-revealed');
-      root.style.removeProperty('background-color');
     };
   }, []);
 

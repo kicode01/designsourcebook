@@ -2,14 +2,57 @@ import type React from 'react';
 
 const PORTAL_ID = 'dsPortalVeil';
 const HANDOFF_KEY = 'ds_portal_handoff';
+const VT_HANDOFF_KEY = 'ds_vt_handoff';
 const TARGET_CATALOG_BG = '#09090b';
+
+interface ViewTransitionLike {
+  finished: Promise<void>;
+  types?: Set<string>;
+}
+
+interface PageSwapEventLike extends Event {
+  viewTransition?: ViewTransitionLike | null;
+  activation?: { entry?: { url?: string } } | null;
+}
 
 let launching = false;
 let leftViaPortal = false;
-let pageShowBound = false;
+let lifecycleBound = false;
+const warmedDocs = new Set<string>();
 
 function supportsCrossDocVT(): boolean {
   return typeof window !== 'undefined' && 'onpagereveal' in window && window.location.protocol !== 'file:';
+}
+
+function isStudioPath(pathname: string): boolean {
+  return /\/studio(?:\/|$)/.test(pathname);
+}
+
+function writeVtHandoff(dir: 'to-studio' | 'to-catalog') {
+  document.documentElement.dataset.vtDir = dir;
+  try {
+    sessionStorage.setItem(VT_HANDOFF_KEY, JSON.stringify({ dir, ts: Date.now() }));
+  } catch {
+    // ignore storage restrictions
+  }
+}
+
+export function warmPortalHref(rawHref: string) {
+  if (typeof document === 'undefined' || !window.location.protocol.startsWith('http')) return;
+  try {
+    const url = new URL(rawHref, window.location.href);
+    url.hash = '';
+    const docUrl = url.toString();
+    if (warmedDocs.has(docUrl)) return;
+    warmedDocs.add(docUrl);
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.as = 'document';
+    link.href = docUrl;
+    document.head.appendChild(link);
+  } catch {
+    // ignore malformed href
+  }
 }
 
 export function clearPortalOverlay() {
@@ -18,15 +61,34 @@ export function clearPortalOverlay() {
 }
 
 export function installPortalPageShowCleanup() {
-  if (pageShowBound || typeof window === 'undefined') return;
-  pageShowBound = true;
+  if (lifecycleBound || typeof window === 'undefined') return;
+  lifecycleBound = true;
+
+  window.addEventListener('pageswap', (ev: Event) => {
+    const e = ev as PageSwapEventLike;
+    if (!e.viewTransition) return;
+    const rawDest = e.activation?.entry?.url;
+    if (rawDest) {
+      try {
+        const destUrl = new URL(rawDest, window.location.href);
+        if (!isStudioPath(destUrl.pathname)) {
+          writeVtHandoff('to-catalog');
+          e.viewTransition.types?.add('to-catalog');
+        }
+      } catch {
+        // ignore URL parse failures
+      }
+    }
+  });
+
   window.addEventListener('pageshow', (e) => {
     clearPortalOverlay();
+    delete document.documentElement.dataset.vtDir;
     if (e.persisted && leftViaPortal) {
       leftViaPortal = false;
       const root = document.getElementById('root');
       if (root && typeof root.animate === 'function' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        root.animate([{ opacity: 0.4 }, { opacity: 1 }], { duration: 160, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' });
+        root.animate([{ opacity: 0.4 }, { opacity: 1 }], { duration: 180, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' });
       }
     }
     leftViaPortal = false;
@@ -34,9 +96,9 @@ export function installPortalPageShowCleanup() {
 }
 
 /**
- * Navigates between Studio and Catalog cleanly: native links let Chromium run
- * Cross-Document View Transitions with zero dead screen, while browsers without
- * `pagereveal` get a subtle solid-surface veil fade instead of a jarring wipe.
+ * Navigates between Studio and Catalog seamlessly: Chromium/Safari run coordinated
+ * Cross-Document View Transitions with shared topbar/brand anchoring, while other
+ * browsers or file:// sessions get a synchronized surface fade.
  */
 export function triggerPortalNavigation(
   e: React.MouseEvent<HTMLAnchorElement>,
@@ -49,6 +111,7 @@ export function triggerPortalNavigation(
   if (!href) return;
 
   if (supportsCrossDocVT()) {
+    writeVtHandoff('to-catalog');
     return;
   }
 
@@ -60,7 +123,7 @@ export function triggerPortalNavigation(
   const portal = document.createElement('div');
   portal.id = PORTAL_ID;
   portal.style.cssText =
-    `position:fixed;inset:0;z-index:9999;pointer-events:all;background:${targetBg};opacity:0;transition:opacity 110ms cubic-bezier(0.22, 1, 0.36, 1);`;
+    `position:fixed;inset:0;z-index:9999;pointer-events:all;background:${targetBg};opacity:0;transition:opacity 120ms cubic-bezier(0.22, 1, 0.36, 1);`;
   portal.setAttribute('aria-hidden', 'true');
   document.body.appendChild(portal);
 
@@ -83,6 +146,6 @@ export function triggerPortalNavigation(
 
   requestAnimationFrame(() => {
     portal.style.opacity = '1';
-    window.setTimeout(finish, 120);
+    window.setTimeout(finish, 125);
   });
 }
