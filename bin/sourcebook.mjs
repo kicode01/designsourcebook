@@ -388,7 +388,7 @@ switch (cmd) {
     break;
   case "--version":
   case "-v":
-    console.log("sourcebook 0.1.0");
+    console.log("sourcebook 1.0.0");
     break;
   case undefined:
   case "help":

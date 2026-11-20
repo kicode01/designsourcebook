@@ -1,0 +1,44 @@
+name: CI — Registry Lint & Studio Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Validate 417 Design Systems & Build Studio
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install root dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Validate all 417 design systems (0 errors required)
+        run: npm run lint
+
+      - name: Verify registry index & CLI commands
+        run: |
+          node bin/sourcebook.mjs list --verified > /dev/null
+          node bin/sourcebook.mjs search "dark developer dashboard" > /dev/null
+          node bin/sourcebook.mjs export linear-app --format dtcg > /dev/null
+
+      - name: Install Studio dependencies & run TypeScript + Vite production build
+        run: |
+          npm --prefix studio/app ci --no-audit --no-fund
+          npm --prefix studio/app run build
+
+      - name: Build production Catalog & sync Studio bundle
+        run: node scripts/build-catalog.mjs

@@ -2,6 +2,7 @@ node_modules/
 .vite/
 dist/
 *.log
+*.tsbuildinfo
 .DS_Store
 Thumbs.db
 .env
@@ -12,9 +13,6 @@ Thumbs.db
 # Ingest scratch: clones and unpacked packages are recreated on demand.
 .scratch/
 tmp/
-
-.vercel
-.env*
 
 # Keep local reverse-engineering artifacts under studio/ untracked while versioning studio/app/
 studio/.workbuddy/

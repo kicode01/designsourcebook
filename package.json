@@ -1,8 +1,28 @@
 {
   "name": "designsourcebook",
-  "version": "0.1.0",
-  "description": "Design Sourcebook — a verified, installable registry of design systems for coding agents",
+  "version": "1.0.0",
+  "description": "Design Sourcebook — a provenance-tracked registry of 417 design systems, 36,641 tokens, 7,627 brand logos, CLI, MCP server, and 4-tool Design Studio",
   "type": "module",
+  "homepage": "https://designsourcebook.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kicode01/designsourcebook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kicode01/designsourcebook/issues"
+  },
+  "keywords": [
+    "design-systems",
+    "design-tokens",
+    "dtcg",
+    "mcp",
+    "oklch",
+    "tailwind",
+    "shadcn",
+    "webgl2",
+    "logo-maker",
+    "brand-guidelines"
+  ],
   "bin": {
     "sourcebook": "./bin/sourcebook.mjs"
   },
@@ -14,6 +34,10 @@
     "build": "node scripts/build-catalog.mjs",
     "build:standalone": "node scripts/build-catalog.mjs --standalone",
     "build:prod": "npm --prefix studio/app ci --no-audit --no-fund && npm --prefix studio/app run build && node scripts/build-catalog.mjs",
+    "studio:dev": "npm --prefix studio/app run dev",
+    "studio:build": "npm --prefix studio/app run build",
+    "typecheck": "npm --prefix studio/app run typecheck",
+    "verify": "node bin/sourcebook.mjs lint --all && npm --prefix studio/app run build && node scripts/build-catalog.mjs",
     "sync": "node scripts/sync-sources.mjs",
     "lint": "node bin/sourcebook.mjs lint --all",
     "mcp": "node bin/sourcebook.mjs mcp",

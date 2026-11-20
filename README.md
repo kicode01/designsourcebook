@@ -1,383 +1,237 @@
 # Design Sourcebook
 
-A verified, installable registry of design systems for coding agents. Every entry records where its tokens came from, what version, and whether it is merely listed.
+[![Live Catalog](https://img.shields.io/badge/Live_Catalog-designsourcebook.vercel.app-0ea5e9?style=flat-square)](https://designsourcebook.vercel.app)
+[![Design Studio](https://img.shields.io/badge/Studio_Suite-System_·_Logo_·_LogoFX_·_Brand-6366f1?style=flat-square)](https://designsourcebook.vercel.app/studio/)
+[![Sourced Systems](https://img.shields.io/badge/Design_Systems-417_Sourced_(0_Errors)-10b981?style=flat-square)](#registry--token-architecture)
+[![Verified Tokens](https://img.shields.io/badge/Verified_Tokens-36,641_Tokens-f59e0b?style=flat-square)](#registry--token-architecture)
+[![License: MIT](https://img.shields.io/badge/License-MIT-fafafa?style=flat-square)](./LICENSE)
 
-Not another link list. Every entry is machine-checked, ships real design tokens, and installs with one command.
+**Design Sourcebook** is a provenance-tracked registry of **417 real-world design systems**, **36,641 extracted design tokens**, **7,627 brand vector logos**, and **1,432 verified UI icons** — paired with a zero-dependency **CLI & MCP Server** for coding agents and an interactive 4-tool **Design Sourcebook Studio** (`System Maker`, `Logo Maker`, `LogoFX`, and `Brand Maker`).
+
+Every entry in the registry records where its tokens came from (`published` from official npm packages/repositories or `observed` from production CSS), passes deterministic validation, and installs into any project or AI coding agent in one command.
 
 ```bash
-# from a clone (not published to npm yet)
-node bin/sourcebook.mjs search "dark data-dense dashboard"
-node bin/sourcebook.mjs add kraken --framework tailwind-v4
-```
+# Search the registry by design intent
+node bin/sourcebook.mjs search "dark data-dense developer dashboard"
 
-Once published, every `node bin/sourcebook.mjs` below becomes `npx sourcebook`.
+# Drop DESIGN.md + W3C DTCG tokens + Tailwind v4 / CSS variables into any project
+node bin/sourcebook.mjs add linear-app --framework tailwind-v4 --dir .
+
+# Export an LLM-ready design system prompt or start the stdio MCP server
+node bin/sourcebook.mjs export stripe --format prompt
+node bin/sourcebook.mjs mcp
+```
 
 ---
 
-## Why this exists
+## Platform Overview
 
-Four projects already occupy adjacent ground. None of them close the loop.
-
-| Project | What it has | What it doesn't |
+| Pillar | Scale & Capabilities | Entry Point |
 |---|---|---|
-| `alexpate/awesome-design-systems` (26.4k★) | ~155 systems, 4 boolean columns | no JSON, no API, no install commands, no descriptions — a link list |
-| `google-labs-code/design.md` | the spec + a real CLI (`lint`, `diff`, `export`, `spec`) | no content. A format with no catalog |
-| `VoltAgent/awesome-design-md` (54 files) | rich prose per brand | zero YAML front matter, non-canonical sections — cannot lint, cannot export tokens |
-| shadcn registries | one-command install | React code only, framework-locked, no design intent |
+| **1. Design System Registry** | **417** sourced systems · **22,375** color tokens · **7,360** typography tokens · **6,906** component tokens · **0** schema errors | [`systems/*`](./systems) · [`index.json`](./index.json) |
+| **2. Interactive Web Catalog** | Live token-rendered UI specimen cards, full component/palette/type sheets, popularity leaderboard, and 7,627-logo SVG anatomy inspector | [`catalog/index.html`](./catalog/index.html) · [Live Site](https://designsourcebook.vercel.app) |
+| **3. Design System Maker** | Deterministic OKLCH 11-step perceptual ramps, dual-polarity compiler, WCAG 2.2 + APCA ($L_c$) 50-pair contrast matrix, CVD vision simulator, Utopia fluid `clamp()` type, and 7 code exporters | [`/studio/#/systems`](https://designsourcebook.vercel.app/studio/#/systems) |
+| **4. Geometric Logo Maker** | 50 construction & adaptive quadtree grids, Golden $\varphi$ / iOS / Material / Fibonacci keylines, optical center-of-mass HUD, topological path operations, monogram stamp (`A–Z`, `0–9`), lockup composer, and 6-card perceptual stress-test lab | [`/studio/#/create`](https://designsourcebook.vercel.app/studio/#/create) |
+| **5. LogoFX Shader & Video Studio** | 40+ real-time WebGL2 SDF fragment shaders (`Liquid Metal`, `3D Extrude`, `Holographic Foil`, `Neon`, `Oil Lens`, `Coin Relief`, `Wax Seal`, `Glitch`, `ASCII`), 10 3D motion choreographies, timeline scrubber, 11 post-FX filters, and phase-locked 60fps WebM video mastering | [`/studio/#/logofx`](https://designsourcebook.vercel.app/studio/#/logofx) |
+| **6. Brand Maker & BrandFx** | 5 Bento grid architectures, 16 identity modules, 8 procedural BrandFx patterns, 6-section interactive Brand Guidelines Book (with `1X` clearspace & 6 misuse guardrails), Real-World Collateral Lab, and standalone HTML Brand Book exporter | [`/studio/#/brand`](https://designsourcebook.vercel.app/studio/#/brand) |
+| **7. CLI, MCP Server & REST API** | Zero-dependency CLI, `stdio` Model Context Protocol (MCP) server, and Neon Postgres serverless API endpoints | [`bin/sourcebook.mjs`](./bin/sourcebook.mjs) · [`api/*`](./api) |
 
-The gap is the **distribution layer**: something that verifies entries, and gets them into a project in one command, without caring which agent you use.
+---
 
-## What's in the box
+## Why This Exists
 
-206 sourced systems with extracted token data (all empty/blocked `listed` inventory records have been removed from `systems/`).
+Existing design-system resources leave a gap between **inspiration** and **machine-consumable implementation**:
 
-| Provenance | Count | Where the tokens come from |
+| Project | What It Provides | What It Lacks |
 |---|---|---|
-| `observed` | 91 | read from public marketing sites or live CSS — exact values, no published source |
-| `published` | 115 | imported from the team's own npm package or repository — exact values, a version, a licence |
+| `alexpate/awesome-design-systems` | Curated directory of ~155 design system links | No tokens, no JSON, no CLI, no API — a static link list |
+| `google-labs-code/design.md` | The `DESIGN.md` specification and reference linter | Format specification only — ships without a system catalog |
+| `VoltAgent/awesome-design-md` | Rich narrative prose descriptions for 54 brands | No YAML token front matter — cannot lint or compile to CSS/DTCG |
+| `shadcn/ui` registries | 1-command component installation | React/Tailwind-coupled component code without multi-brand token provenance |
 
-`scripts/coverage.mjs` still measures these 206 sourced systems honestly against external design system lists (`data/sources/*.json`). Empty `listed` directories can be regenerated with `node scripts/add-listed.mjs` if needed, or omitted so the registry stays strictly sourced.
+**Design Sourcebook** closes the loop: every system is stored as a machine-verified bundle (`DESIGN.md` + W3C DTCG `tokens.json` + resolved `preview.json` + `manifest.json`) that works equally well as an agent context file, an MCP resource, a CSS/Tailwind build input, or a seed inside **Design Sourcebook Studio**.
+
+---
+
+## Registry & Token Architecture
+
+Every system in [`systems/`](./systems) is an isolated, self-contained package:
 
 ```text
-206 sourced systems · 10,942 colour tokens · 3,616 type tokens · 1,960 component tokens
-206 systems carry component tokens · 205 verified clean · 0 errors
-```
-
-Published entries carry `source: { package, version }` or `source: { repo }` and a real licence (`Apache-2.0` for Spectrum, `MIT` for Radix). Observed entries say so. A registry that blurs those two is lying about how much you can trust it.
-
-Every entry is a directory:
-
-```
 systems/linear-app/
-  DESIGN.md       # YAML tokens + prose: the agent reads this
-  tokens.json     # W3C DTCG, framework-neutral
-  preview.json    # resolved surfaces + component styling for the catalog
-  manifest.json   # registry metadata + check results
+├── DESIGN.md       # Canonical YAML token front matter (colors, typography, radii, spacing, components) + guidelines prose
+├── tokens.json     # W3C Design Tokens Community Group (DTCG) format ($value / $type)
+├── preview.json    # Resolved semantic surfaces, sorted type ramp, and component borders/shadows
+└── manifest.json   # Provenance metadata (published package/repo or observed URL), license, and lint results
 ```
 
-## See it, not just read it
+### Registry Metrics
 
-`catalog/index.html` is a browsable page built from the tokens — one file, no server, no build step.
-
-```bash
-node scripts/build-catalog.mjs   # → catalog/index.html (1171 KB, self-contained)
+```text
+417 sourced systems · 22,375 color tokens · 7,360 typography tokens · 6,906 component tokens
+417 / 417 passing schema validation (0 errors) · 323 zero-warning verified clean
+7,627 brand vector logos · 1,432 verified UI icons across 11 open-source icon packs
 ```
 
-Every card renders live UI on the system's own canvas: its real button tokens, its badge colours, its palette strip. Open a system and you get a specimen sheet — hero type, the full component inventory with each variant drawn at its real radius, padding, border and shadow, every colour with its token name and hex, and the type scale at actual sizes.
+### Provenance Discipline
 
-Preview data is richer than the spec allows: `DESIGN.md` stays schema-clean, while `preview.json` carries border and shadow, which the spec has no slot for. That is where a preview gets its fidelity.
+- **`published`**: Extracted directly from an organization's official npm token package (e.g., `@primer/primitives`, `@adobe/spectrum-tokens`) or public source repository — carrying exact package names, version strings, and open-source licenses.
+- **`observed`**: Harvested from public production stylesheets, CSS custom properties, and computed DOM styles where no public token package exists — explicitly tagged so provenance is never blurred.
 
-Three rules keep the previews honest:
+---
 
-- **Nothing is invented.** Where a system documents a component, its exact values are used. Where it documents none (110 of 205), four standard surfaces are composed from the palette and type scale, and the page says so.
-- **Nothing goes invisible.** If a token pair would render under 2:1 on the surface it sits on, the preview falls back to readable ink. A transparent-black button on a black canvas is a real token, but showing it as blank space teaches nothing. The caption still lists the true values.
-- **Fonts are substituted, and admitted.** Most of these brands ship proprietary typefaces (`sohne-var`, `Roobert`, `NVIDIA-EMEA`). Each is mapped to the closest freely available match — Inter, IBM Plex, Plus Jakarta, Source Serif — and declared first in the stack so the real font wins if installed.
+## Design Sourcebook Studio (`/studio`)
 
-## Coverage, measured
+The repository includes a full React 19 + TypeScript + WebGL2 creative engineering suite in [`studio/app/`](./studio/app), compiled into [`catalog/studio/`](./catalog/studio):
 
-Three external lists live in `data/sources/`, and the coverage report checks the registry against all of them:
+### 1. Design System Maker (`/studio/#/systems`)
+- **Seed from 417 Systems or 6 Curated Archetypes**: Load any registry system as an instant foundation or start from curated archetypes (`Obsidian SaaS`, `Swiss Editorial`, `Warm Consumer`, `Emerald Fintech`, `Cyber Terminal`, `Monochrome Atelier`).
+- **Perceptual OKLCH Color Engine**: Generates 8 11-step Radix-role color ramps (`50–950`) with true achromatic protection and dual-polarity (`Dark` & `Light`) semantic token compilation.
+- **WCAG 2.2 & APCA ($L_c$) Contrast Matrix**: Audits 50+ foreground/surface token pairs simultaneously, with 1-click **Auto-Fix AA** and a real-time **CVD Vision Simulator** (`Protanopia`, `Deuteranopia`, `Tritanopia`, `Achromatopsia`).
+- **Utopia Fluid Typography & Concentric Geometry**: Interactive viewport scrubber (`320px–1920px`) for fluid `clamp()` type scales, concentric inner/outer radius math ($R_{\text{inner}} = \max(0, R_{\text{outer}} - P)$), and 4-level elevation shadows.
+- **7 Production Exporters**: `CSS Custom Properties`, `shadcn/ui Registry JSON`, `Tailwind v4 @theme`, `W3C DTCG JSON`, `Figma Variables JSON`, `TypeScript Theme SDK`, and `DESIGN.md`.
 
-| Source | Held | Total |
-|---|---|---|
-| awesome-design-systems (alexpate) | 146 | 160 |
-| Design Systems Gallery (Jad Limcaco) | 56 | 104 |
-| designsystems.surf | 48 | 90 |
-| **union, distinct organisations** | **148** | **243 (61%)** |
+### 2. Geometric Logo Maker (`/studio/#/create`)
+- **50 Construction & Adaptive Grids**: Polar, isometric, hexagonal, golden-ratio compass, and dynamic quadtree/keyline grids synthesized directly from any brand logo or UI icon silhouette.
+- **Architectural Overlays & Optical Telemetry**: Real-time `Golden φ`, `iOS Squircle (R=22.5%)`, `Material`, `Fibonacci Spiral`, `6:4:3 Harmonic`, and `Safe Zone` keylines, plus an area-weighted **Optical Center-of-Gravity HUD** (`Δ(dx, dy)`) and **SVG Anchor Vertex X-Ray**.
+- **6 Precision Tools & Topological Operations**: `Toggle Facet (S)`, `Paint Brush (B)`, `Flood Bucket (G)`, `Line Ray (L)`, `Eyedropper (I)`, and `Eraser (E)` — paired with `Outline Ring`, `Expand +1`, `Contract −1`, `Invert`, `Auto-Center Optically`, `Symmetrize`, and `Randomize`.
+- **Container Badges, Constructive Monograms & Lockup Studio**: Wrap marks in `Squircle`, `Circle`, `Hexagon`, `Octagon`, or `Shield` badges with `evenodd` **Knock-Out** cutouts; stamp constructive `A–Z` / `0–9` monograms; compose **Horizontal**, **Stacked**, and **App Badge** wordmark lockups; and audit marks in a **6-Card Perceptual Stress-Test Lab** (Gaussian Squint Blur, 64px→12px Favicon Bar, Chromatic Polarity Matrix, 1-Bit Stamp, OS Mask Spin Check, and Vector Anatomy Telemetry).
 
-```bash
-node scripts/coverage.mjs   # → data/coverage.json
-```
+### 3. LogoFX Shader, Motion & Video Studio (`/studio/#/logofx`)
+- **40+ Real-Time WebGL2 SDF Shaders**: Fullscreen signed-distance-field fragment shaders across 3D (`Physical Extrude`, `Matcap`, `Glass Extrude`, `Metallic Coin Relief`, `3D Wireframe`), 2D (`Liquid Metal`, `Frosted Glass`, `Holographic Foil`, `Optical Oil Lens`, `Neon Gas`, `Thermal Heatmap`, `Gem Smoke`, `LED Matrix`, `Particles`, `CRT ASCII`, `Halftone`, `Bayer Dither`, `Broadcast Glitch`, `Architectural Plotter`), and Tactile Mockups (`Paper Cutout`, `Blind Emboss`, `Leather Stamp`, `Holo Print`, `Satin Embroidery`, `Wax Seal`, `Sticker Peel`, `App Glass`, `macOS Dock`).
+- **10 3D Motion Choreographies & 10 Easing Curves**: Phase-locked `0 → 2π` loop engine driving both internal shader harmonics and 3D perspective choreography (`3D Gyro Float`, `360° Y-Turntable`, `Harmonic Pulse`, `360° Z-Spin`, `Isometric Pendulum`, `Kinetic Pop-In`, `Magnetic Orbit`, `Coin Toss Flip`, `Cyber Micro-Jolt`, `Shader Only`) with live **Interactive Pointer 3D Tilt**.
+- **Interactive Timeline & Video Mastering Studio**: Frame-accurate scrubber (`-1f` / `+1f`), **8-Phase Loop Storyboard**, 11 post-processing filters with 6 mastering presets (`35mm Film`, `Cyber Chromatic`, `CRT Broadcast`, `Bayer Dither`, `Soft Dream`), and phase-locked **30/60fps WebM Video** & **4×4 Flipbook Sprite Sheet (`2048×2048`)** exporters.
 
-Per-source percentages flatter the result, because the lists overlap with each other as much as with us. The union is the honest headline.
+### 4. Brand Maker & BrandFx (`/studio/#/brand`)
+- **5 Bento Grid Architectures & 16 Identity Modules**: Compose interactive brand boards across `Swiss 3×2`, `Hero Bento`, `Editorial Grid`, `8-Tile Poster`, and `Masthead Split` layouts with per-tile surface polarity (`Auto`, `Accent`, `Invert`, `Glass`) and column spanning (`1×1`, `2×1 Wide`).
+- **Interactive Brand Guidelines Manual**: 6-section standards book featuring **Brand Voice & Positioning Pillars**, **Logo Polarity Matrix**, **`1X` Clearspace & Minimum Scale Diagram**, **6 Visual Logo Misuse Guardrails (`DO NOT`)**, **60-30-10 Chromatic Proportions**, and **Typographic Hierarchy**.
+- **Real-World Collateral Lab & Press Kit Exporter**: Live previews and 1-click exports for **SaaS Product Web Hero**, **`1200×630` Open Graph Card SVG**, **85×55mm Front/Back Executive Business Card SVG**, **Mobile OS Launcher & Notification Suite**, **Copyable HTML Email Signature**, **Standalone Zero-Dependency HTML Brand Guidelines Book**, and **AI Brand System Prompt (`BRAND.md`)**.
 
-The same data is browsable in the catalog — the **Coverage** toggle lists every organisation, marks the ones we hold (click through to the specimen), and tags the rest `npm`, `repo` or `docs` so the next move is obvious.
+---
 
-Of the 95 missing organisations: **2** have a verified npm package that resisted extraction, **9** have a public repo that resisted extraction, and **84** are docs-only.
+## CLI & MCP Server Usage
 
-## What we can't get
+### Command-Line Interface (`bin/sourcebook.mjs`)
 
-Three different things get called "can't get", and conflating them hides the real problem. `node scripts/report-blocked.mjs` → `data/blocked-report.md`.
+| Command | Description |
+|---|---|
+| `node bin/sourcebook.mjs list [--tag dark] [--verified] [--sort popular]` | List all 417 design systems with filtering and popularity sorting |
+| `node bin/sourcebook.mjs rank [--limit 30] [--enterprise]` | Display the live popularity leaderboard (GitHub stars, dependents, npm downloads/mo) |
+| `node bin/sourcebook.mjs search "<intent>"` | Natural-language intent search across style prose, tags, and token properties |
+| `node bin/sourcebook.mjs info <slug>` | Inspect token counts, provenance, license, and lint status for a system |
+| `node bin/sourcebook.mjs add <slug> [--framework tailwind-v4\|css-vars\|dtcg\|prompt\|json] [--dir .]` | Install a system's `DESIGN.md` and compiled theme files into a project |
+| `node bin/sourcebook.mjs export <slug> --format dtcg\|tailwind-v4\|css-vars\|prompt\|json` | Stream compiled tokens or an LLM system prompt to `stdout` |
+| `node bin/sourcebook.mjs lint [<slug> \| --all]` | Run the 8-rule structural & WCAG contrast validator |
+| `node bin/sourcebook.mjs sync [--url <url> \| --repo <url> \| --package <pkg>]` | Harvest and validate new external design systems |
+| `node bin/sourcebook.mjs mcp` | Start the `stdio` Model Context Protocol (MCP) server |
+| `node bin/sourcebook.mjs index` | Rebuild [`index.json`](./index.json) from [`systems/`](./systems) |
 
-| Bucket | Count | Meaning |
-|---|---|---|
-| Attempted and failed | **16** | Ingested and rejected (11 below token floor / missing tokens / failed clone, 5 HTTP 403 / Cloudflare). |
-| No machine-readable source | **79** | Docs only without a curated URL, or needs human review. |
-| Not yet attempted | **0** | Every reachable source has been attempted. |
+### Model Context Protocol (MCP) Integration
 
-The failures cluster into four causes, and only one is a wall:
-
-**Several were my mistakes, not the systems.** Malformed URLs (`github.com/italia`, `github.com/shadcn-ui`, a GitHub *tree* path for Grafana) and a wrong package — HeroUI ships its tokens in `@heroui/theme`, not `@heroui/react`. Fixing those, plus packages I had not probed, recovered:
-
-```
-Tencent 68c/19t · Singapore 91c/18t · Telefónica 90c/23t · Foundation 15c/6t
-Grafana 15c · Buildit Gravity · Shadcn/ui 17c · Italia Design System
-```
-
-`writeSystem` now removes the `listed` inventory record for the same organisation, so a recovered system never appears twice — once sourced, once as "not sourced".
-
-```
- 5  could not fetch the page        403 — bot protection (Co-op, FutureLearn, Jobber, NationBuilder, Nordnet)
-10  no colour values in N sheets    CSS-in-JS: the palette is applied by JS, never written as a literal
- 3  no stylesheets found            single-page app, styles injected at runtime
- 6  below the 12-colour floor       partially readable (Bolt 6, Oracle 2, Yelp 1, Wanda 3, Chakra-adjacent)
-```
-
-The first three are the same problem wearing different hats: **the colours exist but are never written down as literals.** Reading them needs a headless browser that executes the page and reads computed styles — a different tool, not a better regex.
-
-**What the live-site reader does get: 15 of 35.** Every URL came from the curated awesome-design-systems table rather than a guessed domain, and each entry records whether the page actually names the organisation, so a wrong landing shows up as a warning instead of silently importing someone else's palette.
-
-The readings are verifiable against known ground truth:
-
-```
-NHS.UK     nhsuk-blue-colour   #005eb8   ← NHS Blue, token name preserved
-Monzo      color-brand         #ff4f40   ← Monzo coral
-Adjust     ifm-color-primary   #3578e5
-```
-
-NHS.UK arrived with 88 colours and 33 component tokens, Monzo with 33 components, Intuit with 38 type steps.
-
-Failures are written to `data/blocked.json` by the ingest drivers, and a later success clears the entry — so this list can't quietly go stale. That matters because **it shrinks as the harvester improves, not as the ecosystem changes.** This pass alone:
-
-- **USWDS** — 1 colour → 28. Its palette is an SCSS *map* (`('blue-60v': #1a4480,)`), not variables, so a `$var: #hex` matcher saw nothing.
-- **Chakra UI** — 6 → 91. Panda tokens are `{ value: "#3182ce" }` nested one level under a hue, and a flat key match read only `"500"`.
-- **Aalto University** — docs-only, now 76 colours, read from its live stylesheets.
-- **Microsoft Fluent 2** — 11 → 22 once the CSS component pass landed.
-- **Astro UXDS** — cloned fine once `core.longpaths=true` got past Windows' 260-character limit.
-
-None of those was ever unavailable. They were unread.
-
-
-
-## The full sweep
-
-`scripts/parallel.mjs` runs any ingest driver across a source file with bounded concurrency; static reading is cheap, so 6 workers is fine. Browser reading is heavier, so 3.
-
-```bash
-node scripts/build-all-sources.mjs      # every missing org with a curated URL
-node scripts/parallel.mjs repo 6        # 51/72 ingested
-node scripts/parallel.mjs browser 3     # 3/20 ingested — Firefox, Foyer, Oracle
-```
-
-Browser reading (`scripts/ingest-browser.mjs`) is the last-resort driver. For sites where the palette is applied by JavaScript and never written as a literal, it loads the page in Chromium, reads every CSS custom property from the document root, serialises the CSSOM, and samples computed styles from real buttons, inputs, cards and badges.
-
-```
-Oracle   2,009 computed CSS variables  →  91 colours, 81 type steps
-Firefox    376 computed variables      →  91 colours, 15 type
-```
-
-This is what moved union coverage from 27% to **51%** in one pass. The remaining 40 failures are recorded with reasons; 17 of them still have no curated URL at all.
-
-The honest boundary: 89 organisations have no URL in any source list I hold, and guessing domains would import the wrong company's palette. Those need either a URL supplied or a search step with human review.
-
-## Discovery: can you just scan GitHub?
-
-Not all of it, and it's worth being precise about why:
-
-- `topic:design-system` alone is **9,492 repositories** (643 with ≥40 stars).
-- GitHub's search API returns **at most 1,000 results per query**, so no single sweep can enumerate even one topic.
-- The useful signal isn't the repo — it's whether it contains token files. Most repos tagged `design-system` are component libraries with no tokens at all.
-
-So `scripts/discover-github.mjs` does the bounded version: 12 overlapping queries, dedupe, a relevance filter, then **a file-tree probe per candidate** to see whether tokens actually exist.
-
-```bash
-node scripts/discover-github.mjs --pages 2 --probe 120
-```
-
-One sweep of that size:
-
-```
-3,334 query hits (overlapping) → 929 unique repos read → 638 relevant
-120 probed → 79 with token files → 2 ingested (Elastic UI, Radix Themes)
-```
-
-Two filters do the heavy lifting, and both were learned the hard way:
-
-- **Relevance, not stars.** Without it, `microsoft/playwright` and AI-agent repos outrank real design systems because "design tokens" appears somewhere in their README.
-- **`token` means auth token too.** The first run ranked `auth-token.ts` as evidence of a design system. The probe now requires token-specific paths (`tokens/`, `*.tokens.json`, `theme/`, `colors.scss`) and excludes `auth|jwt|session|tokenizer`.
-
-Output lands in `data/discovered-github.json` with a `tokenSample` per repo, so a candidate can be eyeballed before cloning.
-
-**Known noise:** star-inflated repos that name-drop design systems still slip through (`nexu-io/open-design` at 107k stars is not a design system). The `tokenSample` column is the check — a real system shows `tokens/`, not `agent-skills/`.
-
-## When there are no component tokens: read the CSS
-
-Inventing padding and radius to fill a gap produces a preview that looks plausible and is wrong. The accurate alternative is to parse the rules the library actually compiles — `.govuk-button` has a real background, radius, padding, border and shadow whether or not a token file exists.
-
-`lib/css-components.mjs` does that: it flattens `@media`, resolves `var()` against the stylesheet's own custom properties, and keeps only single-compound selectors — because `.govuk-task-list .govuk-tag` is a contextual override, not the tag's base styling, and taking it first records the wrong colour.
-
-Three rules keep it honest:
-
-- **Base rules only.** Descendant and pseudo selectors are skipped; `.X:hover` is not `.X`.
-- **Never fake a shape.** A panel is not a button. Kinds the catalog cannot draw (panel, table, label, tabs) render as the surface they are — real background, border, radius, padding — labelled with the kind, instead of being forced into a button.
-- **Transparent means the page.** A component with no `background-color` shows the canvas, not the surface token.
-
-It earned its keep by being verifiably right where memory was wrong:
-
-```
-GOV.UK 6.6.0  .govuk-button
-  extracted:   bg #0f7a52 · border 2px solid transparent · shadow 0 2px 0 #083d29
-  my assumption: #00703c
-```
-
-`#00703c` does not appear anywhere in GOV.UK Frontend 6.6.0 — it rebranded. The extractor read the shipped version; my recollection was a v4 value. That is the whole argument for reading source over recalling it.
-
-Yield: **GOV.UK 22 components**, **Clarity 19** (and 42 type tokens it never published as tokens), **Vanilla** and **Zendesk Garden** crossed the 12-colour floor. 45 of 90 systems now carry real component tokens — up from 43, with 214 tokens instead of 173.
-
-Still genuinely blocked: **USWDS** expresses everything as SCSS maps and variable references, so there are no literals to read.
-## Ingesting a published system
-
-Four drivers, one harvest core (`lib/ingest.mjs`) — because the problem is identical once the files are on disk:
-
-```bash
-# npm token package
-node scripts/ingest-npm.mjs @primer/primitives --slug primer --org GitHub --name Primer
-
-# public repository (this is how the 81 repo-only orgs get reached)
-node scripts/ingest-repo.mjs https://github.com/artsy/palette --slug artsy-palette --org Artsy --name "Artsy Palette"
-
-# live site CSS — the only route for docs-only organisations
-node scripts/ingest-site.mjs https://brand.aalto.fi/ --slug aalto --org "Aalto University" --name "Aalto University"
-
-# in bulk
-node scripts/ingest-batch.mjs          # data/published-sources.json
-node scripts/ingest-repo-batch.mjs     # data/repo-sources.json
-```
-
-It handles the token shapes that actually appear in the wild: `name`/`value` pairs (PatternFly ships one module per token), nested `sets.desktop.value` (Spectrum), DTCG `$value`/`$type`, `export const blue60 = "#0043ce"`, theme objects like `{ brand: "#7D4CDB" }`, SCSS variables (`$color-primary: #0057b8`), and `.tsx` token files — the last only when the path scores as a token/theme file, so component files full of one-off colours stay out.
-
-**Selection matters more than harvesting.** Spectrum ships 835 colours, Atlassian 1,521, Salesforce 1,307. Dumping them produces a useless swatch wall, so the ingester keeps semantic roles first (`background`, `text`, `border`, `brand`, `danger`…) and fills the remainder with a spread of the primitive scales — capped at 90.
-
-Nine sources failed and are **excluded rather than faked**: Microsoft Fluent 2 (11 colours), Zendesk Garden (minified bundle only), U.S. Web Design System (SCSS settings), Wonderflow Wanda (3 colours), Hubspot Canvas, VMware Clarity, Ubuntu Vanilla (no machine-readable tokens), Rocket Communications Astro (clone fails), AT UIKIT (1 colour). A two-colour "Carbon" would misrepresent Carbon, so any entry under 12 colours is rejected outright.
-
-## Three ways to connect it to an agent
-
-**1. File drop** — works with every agent, no protocol required.
-
-```bash
-node bin/sourcebook.mjs add linear-app --dir .
-# writes DESIGN.md, design-tokens.json, design-theme.css
-```
-
-`DESIGN.md` sits next to `AGENTS.md`: one says how to build, the other says how it should look.
-
-**2. MCP server** — one connection, whole catalog, nothing to copy.
+Connect the entire 417-system registry to Claude Code, Cursor, Antigravity, Windsurf, or any MCP-compatible client:
 
 ```json
 {
   "mcpServers": {
     "design-sourcebook": {
       "command": "node",
-      "args": ["<abs-path>/designsourcebook/bin/sourcebook.mjs", "mcp"]
+      "args": ["/absolute/path/to/designsourcebook/bin/sourcebook.mjs", "mcp"]
     }
   }
 }
 ```
 
-Swap `command`/`args` for `"command": "npx", "args": ["sourcebook", "mcp"]` after publishing.
+Exposes 5 tools (`list_design_systems`, `search_design_systems`, `get_design_system`, `apply_design_system`, `lint_design_system`) and every system as a direct URI resource at `sourcebook://systems/<slug>`.
 
-Exposes five tools (`list_design_systems`, `search_design_systems`, `get_design_system`, `apply_design_system`, `lint_design_system`) and every system as a resource at `sourcebook://systems/<slug>`.
+---
 
-**3. Direct export** — for build pipelines.
+## Serverless REST API (`/api/*`)
 
-```bash
-npx sourcebook export stripe --format dtcg > tokens.json
-npx sourcebook export stripe --format tailwind-v4 > theme.css
-```
+When deployed on Vercel (or run locally via the preview server) with Neon Postgres (`DATABASE_URL`), the following endpoints power the catalog and external integrations:
 
-## Commands
+| Endpoint | Method | Description |
+|---|---|---|
+| `/api/catalog` | `GET` | Lightweight catalog payload of all 417 design systems with resolved preview surfaces and popularity scores |
+| `/api/systems` | `GET` | Filterable list of design systems (`?q=`, `?tag=`, `?provenance=`, `?verified=1`) |
+| `/api/systems/[slug]` | `GET` | Full system record including `DESIGN.md`, `tokens.json`, `preview.json`, and `manifest.json` |
+| `/api/logos` | `GET` | Paginated search across 7,627 brand vector logos (`?q=`, `?page=`, `?limit=`, `?stats=1`) |
+| `/api/icon-packs` | `GET` | Complete vector glyph catalog across 11 verified open-source UI icon packs (1,432 glyphs) |
+| `/api/coverage` | `GET` | Cross-source coverage matrix against external design-system directories |
+| `/api/health` | `GET` | Database connectivity and registry row-count health check |
+| `/api/sync-popularity` | `GET` | Daily cron endpoint (`0 4 * * *`) refreshing GitHub stars and npm download metrics |
 
-| Command | Does |
-|---|---|
-| `sourcebook list [--tag dark] [--verified] [--sort popular]` | browse |
-| `sourcebook rank [--limit n] [--enterprise]` | internet popularity leaderboard (live GitHub stars, repos & npm/mo) |
-| `sourcebook search <intent...>` | intent search — "warm editorial serif", not brand names |
-| `sourcebook info <name>` | tokens, tags, licence, failing checks |
-| `sourcebook add <name>` | write files (`DESIGN.md`, `design-tokens.json`, plus `tailwind-v4`, `css-vars`, `dtcg`, `prompt`, or `json`) |
-| `sourcebook lint <name> \| --all` | validate against the spec |
-| `sourcebook export <name> --format dtcg\|tailwind-v4\|css-vars\|prompt\|json` | emit tokens, agent prompt, or full bundle |
-| `sourcebook mcp` | stdio MCP server (`apply_design_system` also accepts `prompt` / `json`) |
-| `sourcebook index` | rebuild `index.json` |
+---
 
-### Agent Skill
+## Local Development & Production Build
 
-`.agents/skills/design-sourcebook/SKILL.md` packages the CLI, MCP, and file-reading workflow so any compatible agent can extract all colors, typography, and component tokens cleanly (copy into `~/.gemini/config/skills/design-sourcebook/` for global use across workspaces).
+### Prerequisites
+- **Node.js** `>= 18.0.0` (Node 20 or 22 recommended)
+- **npm** `>= 9.0.0`
 
-## What "verified" means
-
-`lint` runs eight rules: duplicate sections, canonical section order, unknown top-level keys, broken `{token.ref}`s, missing `primary`, missing typography, orphaned color tokens, and WCAG AA contrast on component background/text pairs.
-
-`verified` = zero errors, zero warnings, and extracted tokens. 205 of 206 sourced systems clear it. The rest ship with their warnings visible — a badge you can't inspect is worthless.
-
-**What it does not mean.** `verified` is a *structural* claim: the file parses, references resolve, contrast passes. It says nothing about whether a value is semantically right. Repos that mix a design system with a code-syntax theme or test fixtures leak placeholder colours — Meta Astryx currently carries 6 (a `color-accent` of `#FF0000` sitting next to a real `accent` of `#0064E0`). The lint cannot catch that; only a human reading the palette can.
-
-**One deliberate divergence.** Translucent backgrounds must be composited over the system's own canvas before measuring contrast. The reference linter composites over white instead, which cuts both ways on dark systems:
-
-```
-components.button-ghost          rgba(255,255,255,0.02) on #010102
-  reference linter:  1.27:1   fails
-  sourcebook:        15.89:1   passes      <- false failure
-
-components.button-small-toolbar  rgba(255,255,255,0.05) on #010102
-  reference linter:  no finding
-  sourcebook:         3.35:1   fails       <- false pass
-```
-
-On Linear that is 5 of its 6 contrast findings being artefacts of a white backdrop, plus one genuine AA failure it misses. Both linters agree on the opaque ones — e.g. `badge-success-pill` at 2.38:1, a real miss in the source design.
-
-Interop is not asserted, it's tested: `npx @google/design.md lint systems/*/DESIGN.md` parses every file with **zero errors**.
-
-## Adding a system
-
-`scripts/import.mjs` converts a prose collection into spec format — it extracts colours from `**Name** (\`#hex\`)` patterns grouped by subsection, type scales from markdown tables, component pairs from bold-name blocks, then reorders sections canonically and measures each canvas to derive `theme`.
+### Build & Verify
 
 ```bash
-node scripts/import.mjs <sourceDir> systems/
-node bin/sourcebook.mjs lint --all
-node bin/sourcebook.mjs index
+# 1. Install root dependencies
+npm install
+
+# 2. Install Studio dependencies, typecheck, build Studio bundle, and compile catalog/index.html
+npm run build:prod
+
+# 3. Validate all 417 design systems against the 8-rule linter
+npm run lint
 ```
 
-To add a published system, drop a `DESIGN.md` into `systems/<slug>/` and set `provenance: "published"` in the manifest.
+### Working on Design Sourcebook Studio (`studio/app`)
 
-## Honest status
+```bash
+# Run the Studio Vite development server
+npm run studio:dev
 
-- Spec is `alpha`; the format will move.
-- 115 of 206 entries are `published` and 91 are `observed` from public sites. Check licences before commercial use — most of the observed brands are proprietary.
-- Published entries have strong colour data and **weak type scales**: most packages express type as DTCG aliases (`{fontStack.sansSerif}`) that cannot resolve outside the package. Those are dropped rather than emitted as broken references, so the type section is simply missing.
-- Component tokens cover buttons, inputs, cards, badges and nav — all 206 of 206 sourced systems carry component tokens (1,960 tokens total). Modals, tables and tooltips are not extracted yet.
-- Catalog previews are rendered from tokens, not screenshots. They show the visual language faithfully; they are not pixel copies of the live sites.
-- `lint` is a reimplementation, not the reference implementation. Where they disagree, both numbers are in the finding.
-
-## Layout
-
-```
-bin/sourcebook.mjs        CLI
-lib/fm.mjs               YAML front-matter parse + emit
-lib/color.mjs            colour parsing, alpha compositing, WCAG contrast
-lib/lint.mjs             the validator
-lib/emit.mjs             tailwind-v4 / css-vars / DTCG emitters
-lib/registry.mjs         load, index, intent search
-lib/preview.mjs          surface resolution shared by every importer
-lib/ingest.mjs           harvest core shared by npm + repo drivers
-lib/mcp.mjs              stdio MCP server
-scripts/import.mjs       prose → spec converter (+ preview.json)
-scripts/ingest-npm.mjs   published npm tokens → spec
-scripts/ingest-repo.mjs  public repo → spec
-scripts/ingest-site.mjs  live site CSS → spec (observed)
-scripts/ingest-site-batch.mjs  every site in data/site-sources.json
-scripts/ingest-browser.mjs     rendered CSS → spec (observed)
-scripts/parallel.mjs           run any driver with bounded concurrency
-scripts/build-site-sources.mjs  curated URLs → data/site-sources.json
-scripts/ingest-batch.mjs       every source in data/published-sources.json
-scripts/ingest-repo-batch.mjs  every repo in data/repo-sources.json
-scripts/parse-awesome.mjs      alexpate/awesome-design-systems → data/sources/awesome.json
-scripts/coverage.mjs     registry vs data/sources/*.json
-scripts/build-catalog.mjs  → catalog/index.html
-data/sources/            external lists (surf, gallery, awesome)
-data/site-sources.json   docs-only orgs with a curated URL
-scripts/add-listed.mjs   docs-only orgs → inventory records
-.agents/skills/design-sourcebook/  agent skill for extracting colors, types & components
-catalog/index.html       the browsable catalog + coverage view + copyable prompts
-systems/                 206 sourced systems (115 published + 91 observed)
+# Run TypeScript verification and build the Studio bundle into catalog/studio/
+npm run studio:build
+node scripts/build-catalog.mjs
 ```
 
-Zero dependencies. Node 18+.
+---
+
+## Repository Structure
+
+```text
+designsourcebook/
+├── .agents/skills/design-sourcebook/  # Portable Agent Skill (SKILL.md) for AI coding assistants
+├── .github/workflows/                 # Automated CI validation (ci.yml) & weekly system discovery (sync-systems.yml)
+├── api/                               # Vercel Serverless REST API endpoints (Neon Postgres + static fallback)
+├── assets/brand/                      # Official Design Sourcebook Split Codex vector brand assets
+├── bin/sourcebook.mjs                 # CLI entry point & stdio MCP server launcher
+├── catalog/                           # Compiled production web shell (index.html) + Studio assets (catalog/studio/)
+├── data/                              # External source lists, coverage matrix, and curated ingestion manifests
+├── lib/                               # Core zero-dependency engine:
+│   ├── color.mjs                      #   Color parsing, alpha compositing & WCAG contrast math
+│   ├── css-components.mjs             #   Static stylesheet & custom-property component extractor
+│   ├── db.mjs                         #   Neon Postgres serverless client & environment loader
+│   ├── emit.mjs                       #   Tailwind v4, CSS variables, W3C DTCG, prompt & JSON emitters
+│   ├── fm.mjs                         #   Canonical YAML front-matter parser & serializer
+│   ├── ingest.mjs                     #   Multi-format token harvester (npm, Git repos, CSS, DTCG)
+│   ├── lint.mjs                       #   8-rule structural & contrast validator
+│   ├── mcp.mjs                        #   Model Context Protocol (MCP) JSON-RPC stdio server
+│   ├── preview.mjs                    #   Semantic surface & component preview resolver
+│   └── registry.mjs                   #   Registry loader, indexer & intent search ranker
+├── scripts/                           # Build, ingestion, coverage & database seeding scripts
+├── studio/app/                        # Design Sourcebook Studio (React 19 + TypeScript + WebGL2):
+│   └── src/
+│       ├── components/                #   Shared chrome, WebGL2 Studio stage, brand/logo/logofx workbenches
+│       ├── data/                      #   Construction grids & WebGL2 shader effect catalog
+│       ├── engine/                    #   OKLCH DS compiler, adaptive SVG grid engine, WebGL2 SDF renderer & GLSL shaders
+│       ├── pages/                     #   SystemMaker.tsx, CreateX.tsx (Logo Maker), BrandX.tsx (Brand Maker)
+│       └── state/                     #   Cross-tool project & WebGL studio state providers
+├── systems/                           # 417 sourced design systems (DESIGN.md, tokens.json, preview.json, manifest.json)
+├── index.json                         # Compiled top-level registry index
+├── package.json                       # Package manifest, CLI bin & build scripts
+└── vercel.json                        # Vercel deployment, caching headers & daily cron configuration
+```
+
+---
+
+## License
+
+Released under the [MIT License](./LICENSE). Individual design systems in [`systems/`](./systems) carry their respective upstream licenses in `manifest.json` (`MIT`, `Apache-2.0`, `BSD-3-Clause`, or proprietary observed brand guidelines — check each entry's manifest before commercial redistribution of third-party brand marks).
