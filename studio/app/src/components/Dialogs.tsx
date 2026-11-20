@@ -4,7 +4,12 @@ import { DsSelect } from './DsSelect';
 import { CURATED_MARKS, glyphToSvg, useProject, type ActiveMark } from '../state/project';
 import { triggerPortalNavigation } from '../utils/chameleonNav';
 
-export type ExportFormat = 'png' | 'webm';
+export type ExportFormat = 'png' | 'webm' | 'spritesheet';
+
+export interface ExportVideoOptions {
+  fps?: 30 | 60;
+  loops?: 1 | 2;
+}
 
 export function ExportDialog({
   open,
@@ -12,16 +17,20 @@ export function ExportDialog({
   onExport,
   defaultSize,
   busy,
+  progressPct = 0,
 }: {
   open: boolean;
   onClose: () => void;
-  onExport: (format: ExportFormat, size: number, transparent: boolean) => void;
+  onExport: (format: ExportFormat, size: number, transparent: boolean, videoOpts?: ExportVideoOptions) => void;
   defaultSize: number;
   busy: boolean;
+  progressPct?: number;
 }) {
   const [format, setFormat] = useState<ExportFormat>('png');
   const [size, setSize] = useState(defaultSize);
-  const [transparent, setTransparent] = useState(true);
+  const [transparent, setTransparent] = useState(false);
+  const [fps, setFps] = useState<30 | 60>(60);
+  const [loops, setLoops] = useState<1 | 2>(1);
 
   useEffect(() => {
     if (open) setSize(defaultSize);
@@ -31,8 +40,8 @@ export function ExportDialog({
   return (
     <div className="modal-backdrop" onMouseDown={onClose}>
       <div className="modal" onMouseDown={(e) => e.stopPropagation()} role="dialog" aria-label="Export">
-        <h2>Export LogoFX</h2>
-        <p className="sub">Rendered offscreen by the WebGL2 SDF shader pipeline + overlay composite.</p>
+        <h2>Export LogoFX Master</h2>
+        <p className="sub">Rendered by the phase-locked WebGL2 SDF shader pipeline + 3D choreography compositor.</p>
 
         <div className="modal-row">
           <span>Format</span>
@@ -43,11 +52,14 @@ export function ExportDialog({
             <button type="button" aria-pressed={format === 'webm'} onClick={() => setFormat('webm')}>
               Video
             </button>
+            <button type="button" aria-pressed={format === 'spritesheet'} onClick={() => setFormat('spritesheet')}>
+              4×4 Sheet
+            </button>
           </div>
         </div>
 
         <div className="modal-row">
-          <span>Size</span>
+          <span>Resolution</span>
           <DsSelect
             ariaLabel="Size"
             value={String(size)}
@@ -60,21 +72,53 @@ export function ExportDialog({
           />
         </div>
 
+        {format === 'webm' && (
+          <>
+            <div className="modal-row">
+              <span>Frame rate</span>
+              <div className="segment">
+                <button type="button" aria-pressed={fps === 30} onClick={() => setFps(30)}>
+                  30 FPS
+                </button>
+                <button type="button" aria-pressed={fps === 60} onClick={() => setFps(60)}>
+                  60 FPS
+                </button>
+              </div>
+            </div>
+            <div className="modal-row">
+              <span>Loop cycles</span>
+              <div className="segment">
+                <button type="button" aria-pressed={loops === 1} onClick={() => setLoops(1)}>
+                  1× Loop
+                </button>
+                <button type="button" aria-pressed={loops === 2} onClick={() => setLoops(2)}>
+                  2× Loops
+                </button>
+              </div>
+            </div>
+          </>
+        )}
+
         <div className="modal-row">
-          <span>Transparent background</span>
+          <span>Transparent alpha</span>
           <div className="segment">
             <button type="button" aria-pressed={!transparent} onClick={() => setTransparent(false)}>
-              No
+              Studio Backdrop
             </button>
             <button type="button" aria-pressed={transparent} onClick={() => setTransparent(true)}>
-              Yes
+              Transparent
             </button>
           </div>
         </div>
 
         {format === 'webm' && (
           <p className="sub" style={{ marginTop: 12, marginBottom: 0 }}>
-            Video records one animation loop straight from the canvas at 30 fps.
+            Records a phase-locked loop from t=0.00s at {fps} fps with 3D motion choreography, studio backdrop, and post-FX filters.
+          </p>
+        )}
+        {format === 'spritesheet' && (
+          <p className="sub" style={{ marginTop: 12, marginBottom: 0 }}>
+            Renders 16 evenly spaced keyframes (0% → 93.75%) into a 4×4 flipbook sprite atlas PNG.
           </p>
         )}
 
@@ -86,9 +130,15 @@ export function ExportDialog({
             type="button"
             className="btn btn-primary"
             disabled={busy}
-            onClick={() => onExport(format, size, transparent)}
+            onClick={() => onExport(format, size, transparent, { fps, loops })}
           >
-            {busy ? 'Rendering…' : format === 'png' ? 'Download PNG' : 'Record video'}
+            {busy
+              ? `Rendering ${progressPct > 0 ? `${progressPct}%` : '…'}`
+              : format === 'png'
+                ? 'Download PNG'
+                : format === 'spritesheet'
+                  ? 'Download 4×4 Sprite Sheet'
+                  : `Record ${fps}fps Video`}
           </button>
         </div>
       </div>

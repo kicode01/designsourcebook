@@ -38,6 +38,7 @@ export interface RenderState {
   speed: number;
   startTime: number;
   duration: number;
+  loopMode?: 'loop' | 'pingpong' | 'once';
 }
 
 const SDF_SIZE = 512;
@@ -140,11 +141,36 @@ function srgbToLinear(rgb: [number, number, number]): [number, number, number] {
   return [f(rgb[0]), f(rgb[1]), f(rgb[2])];
 }
 
-function ease(kind: string, t: number): number {  switch (kind) {
-    case 'easeIn': return t * t;
-    case 'easeOut': return 1 - (1 - t) * (1 - t);
-    case 'easeInOut': return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-    default: return t;
+function ease(kind: string, rawT: number): number {
+  const t = Math.min(1, Math.max(0, rawT));
+  switch (kind) {
+    case 'easeIn':
+      return t * t;
+    case 'easeOut':
+      return 1 - (1 - t) * (1 - t);
+    case 'easeInOut':
+      return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    case 'cubic':
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    case 'expo':
+      if (t === 0 || t === 1) return t;
+      return t < 0.5 ? Math.pow(2, 20 * t - 10) / 2 : (2 - Math.pow(2, -20 * t + 10)) / 2;
+    case 'sine':
+      return -(Math.cos(Math.PI * t) - 1) / 2;
+    case 'spring': {
+      const c1 = 1.70158;
+      const c3 = c1 + 1;
+      return Math.min(1.12, Math.max(0, 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2)));
+    }
+    case 'elastic': {
+      if (t === 0 || t === 1) return t;
+      const c4 = (2 * Math.PI) / 3;
+      return Math.min(1.15, Math.max(0, Math.pow(2, -10 * t) * Math.sin((t * 10 - 0.75) * c4) + 1));
+    }
+    case 'steps8':
+      return Math.floor(t * 8) / 8;
+    default:
+      return t;
   }
 }
 
@@ -574,11 +600,22 @@ export class StudioRenderer {
     // scrubber while animation is off. `uTime` stays linear (an eased clock
     // would stutter at the loop point); `uProgress` is the eased 0..1 cycle that
     // `duration` and `easing` shape.
-    const cycle = Math.max(state.duration, 0.05);
+    const cycle = Math.max(state.duration, 0.1);
     const elapsed = state.animate ? timeSeconds * state.speed + state.startTime : state.startTime;
-    const raw = (((elapsed % cycle) + cycle) % cycle) / cycle;
+    const loopMode = state.loopMode ?? 'loop';
+    let raw = 0;
+    if (loopMode === 'once') {
+      raw = Math.min(1, Math.max(0, elapsed / cycle));
+    } else if (loopMode === 'pingpong') {
+      const d = (((elapsed % (cycle * 2)) + cycle * 2) % (cycle * 2)) / cycle;
+      raw = d <= 1 ? d : 2 - d;
+    } else {
+      raw = (((elapsed % cycle) + cycle) % cycle) / cycle;
+    }
     const progress = ease(state.easing, Math.min(Math.max(raw, 0), 1));
-    const flat = this.flatUniforms(state, elapsed);
+    // Phase-locked 0..2π clock per cycle so every shader respects duration, easing, and seamless video looping
+    const shaderTime = progress * Math.PI * 2;
+    const flat = this.flatUniforms(state, shaderTime);
 
     gl.bindFramebuffer(gl.FRAMEBUFFER, this.effectFbo.fbo);
     gl.viewport(0, 0, this.size, this.size);
@@ -614,7 +651,7 @@ export class StudioRenderer {
       uResolution: [this.size, this.size],
       uAspect: 1,
       uSdfRange: 1,
-      uTime: elapsed,
+      uTime: shaderTime,
       uProgress: progress,
       uScale: state.scale,
       uRotate: (state.rotate * Math.PI) / 180,

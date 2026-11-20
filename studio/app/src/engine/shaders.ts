@@ -165,7 +165,8 @@ uniform vec3 uColorTint;
 
 void main() {
   vec2 uv = xform(vUv);
-  float n = fbm(uv * 3.2 + vec2(uTime * 0.24, uTime * 0.17));
+  vec2 cyc = vec2(cos(uTime), sin(uTime)) * 0.42;
+  float n = fbm(uv * 3.2 + cyc);
   vec2 duv = uv + (n - 0.5) * uDistortion * 0.16;
   float d = sdAt(duv);
   float aa = 0.0012 + uSoftness * 0.03;
@@ -179,12 +180,12 @@ void main() {
 
   float ang = radians(uAngle);
   vec2 dir = vec2(cos(ang), sin(ang));
-  float bands = 0.5 + 0.5 * sin(dot(duv - 0.5, dir) * uRepetition * 3.2 + d * 4.0 + fres * 7.0 + n * 1.6);
+  float bands = 0.5 + 0.5 * sin(dot(duv - 0.5, dir) * uRepetition * 3.2 + d * 4.0 + fres * 7.0 + n * 1.6 - uTime);
   float contourAmt = smoothstep(0.0, 1.0, uContour);
 
   // chromatic reflection: each channel looks at a slightly different direction,
   // which is what puts rainbow fringes on the fast-curving edges
-  vec2 rdir = R.xy * (1.15 + uRepetition * 0.06);
+  vec2 rdir = R.xy * (1.15 + uRepetition * 0.06) + vec2(sin(uTime), cos(uTime)) * 0.15;
   float shR = uShiftRed * 0.06;
   float shB = uShiftBlue * 0.06;
   vec3 env = envSample(rdir);
@@ -204,7 +205,7 @@ void main() {
 
   // thin-film interference: hue steps along the silhouette offset contours.
   // The film flows, which is what separates liquid metal from polished chrome.
-  float t = fract(d * (16.0 + uRepetition * 5.0) + dot(duv - 0.5, dir) * 2.0 + n * 0.25 + uTime * 0.3);
+  float t = fract(d * (16.0 + uRepetition * 5.0) + dot(duv - 0.5, dir) * 2.0 + n * 0.25 - uProgress);
   vec3 hue = 0.5 + 0.5 * cos(TAU * (t + vec3(0.0, 0.33, 0.67) + vec3(uShiftRed * 0.12, 0.0, uShiftBlue * 0.12)));
   float film = (0.25 + 0.75 * contourAmt) * mix(0.5, 1.0, smoothstep(0.0, 0.8, fres));
   col = mix(col, hue * (0.5 + 0.85 * luma(col)), film * 0.95);
@@ -931,12 +932,8 @@ uniform float uRoughness;
 uniform float uLightAngle;
 
 vec3 material(vec3 N, vec3 base) {
-  // The key light drifts so the specular highlight travels across the bevel,
-  // and it lifts and falls in Z so the flat front face brightens and dims as
-  // well — an orbiting light alone leaves a flat face at a constant angle.
-  // The extrusion direction in main() stays fixed: the silhouette must not crawl.
-  float ang = radians(uLightAngle + sin(uTime * 0.5) * 14.0);
-  vec3 L = normalize(vec3(cos(ang) * 0.6, sin(ang) * 0.6, 0.55 + 0.5 * sin(uTime * 0.6)));
+  float ang = radians(uLightAngle + sin(uTime) * 28.0);
+  vec3 L = normalize(vec3(cos(ang) * 0.65, sin(ang) * 0.65, 0.55 + 0.45 * cos(uTime)));
   vec3 V = vec3(0.0, 0.0, 1.0);
   vec3 R = reflect(-V, N);
   float diff = clamp(dot(N, L), 0.0, 1.0);
@@ -1024,7 +1021,7 @@ void main() {
   vec2 uv = xform(vUv);
   float tiltX = radians(uTiltX);
   float tiltY = radians(uTiltY);
-  vec2 warp = vec2(sin(uv.y * PI + uTime * 0.35) * tiltY * 0.08, cos(uv.x * PI - uTime * 0.28) * tiltX * 0.08);
+  vec2 warp = vec2(sin(uv.y * PI + uTime) * tiltY * 0.08, cos(uv.x * PI - uTime) * tiltX * 0.08);
   float d = sdAt(uv + warp);
 
   float edge = 1.0 - smoothstep(0.0, uLineWidth * 0.0015, abs(d));
@@ -1034,7 +1031,7 @@ void main() {
   float fillMask = smoothstep(0.0, 0.002, d) * uFill;
   vec3 col = uLineColor * contourLines * 0.8 + uEdgeColor * edge;
   // A scan band travels up the mesh and lights the lines it crosses.
-  float scan = exp(-pow((uv.y - fract(uTime * 0.18)) * 11.0, 2.0));
+  float scan = exp(-pow((uv.y - uProgress) * 11.0, 2.0));
   col += uLineColor * scan * (edge * 0.9 + contourLines * 0.45);
   col += uLineColor * fillMask * 0.35;
   col += uLineColor * uGlow * 0.5 * exp(-abs(d) * 60.0);
@@ -1082,8 +1079,8 @@ void main() {
   vec2 radial = p / max(length(p), 0.0001);
   vec3 N = normalize(vec3(-g * 0.45 * relief + radial * rimBand * 1.5, 1.0));
 
-  // The key light orbits the coin, so the rim and relief catch it in turn.
-  float lightAng = radians(35.0) + uTime * 0.5;
+  // The key light orbits the coin one full revolution per cycle, so the rim and relief catch it in turn.
+  float lightAng = radians(35.0) + uTime;
   vec3 L = normalize(vec3(cos(lightAng), sin(lightAng), 0.9));
   float diff = clamp(dot(N, L), 0.0, 1.0);
   vec3 R = reflect(vec3(0.0, 0.0, -1.0), N);

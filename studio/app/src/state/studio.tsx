@@ -1,5 +1,11 @@
 import { createContext, useContext, useMemo, useReducer, type Dispatch, type ReactNode } from 'react';
 import { FILTERS, colorsFor, defaultsFor, shaderFor } from '../data/effects';
+import type {
+  LoopMode,
+  MotionPresetId,
+  StageAspectMode,
+  StageBackdropMode,
+} from '../components/logofx/logoFxUtils';
 
 export interface Transform {
   scale: number;
@@ -17,6 +23,10 @@ export interface AnimationState {
   speed: number;
   startTime: number;
   duration: number;
+  motionPreset: MotionPresetId;
+  motionIntensity: number;
+  loopMode: LoopMode;
+  interactiveTilt: boolean;
 }
 
 export interface CanvasState {
@@ -25,6 +35,8 @@ export interface CanvasState {
   fit: 'contain' | 'cover';
   background: 'transparent' | 'color';
   backgroundColor: string;
+  backdrop: StageBackdropMode;
+  aspect: StageAspectMode;
 }
 
 export interface FilterState {
@@ -45,7 +57,8 @@ export interface Doc {
 
 export interface UIState {
   theme: 'dark' | 'light';
-  tab: 'effects' | 'general';
+  tab: 'effects' | 'motion' | 'camera' | 'presets';
+  stageMode: 'stage' | 'matrix' | 'video';
   collapsed: boolean;
   zoom: number;
   logoName: string | null;
@@ -66,8 +79,26 @@ const BASE_DOC: Doc = {
   colors: { liquidMetal: colorsFor('liquidMetal') },
   filters: FILTERS.map((f) => ({ id: f.id, amount: f.initial, enabled: false })),
   transform: { scale: 100, rotateX: 0, rotateY: 0, rotateZ: 0, x: 0, y: 0, z: 0 },
-  animation: { animate: true, easing: 'linear', speed: 1, startTime: 0, duration: 4 },
-  canvas: { width: 1500, height: 1500, fit: 'contain', background: 'transparent', backgroundColor: '#09090b' },
+  animation: {
+    animate: true,
+    easing: 'sine',
+    speed: 1,
+    startTime: 0,
+    duration: 4,
+    motionPreset: 'float-3d',
+    motionIntensity: 100,
+    loopMode: 'loop',
+    interactiveTilt: true,
+  },
+  canvas: {
+    width: 1500,
+    height: 1500,
+    fit: 'contain',
+    background: 'transparent',
+    backgroundColor: '#09090b',
+    backdrop: 'spotlight',
+    aspect: '1:1',
+  },
 };
 
 export const INITIAL_STATE: StudioState = {
@@ -75,11 +106,12 @@ export const INITIAL_STATE: StudioState = {
   ui: {
     theme: 'dark',
     tab: 'effects',
+    stageMode: 'stage',
     collapsed: false,
     zoom: 100,
     logoName: null,
     toast: null,
-    showFilters: false,
+    showFilters: true,
   },
   past: [],
   future: [],
@@ -89,11 +121,13 @@ export type Action =
   | { type: 'setEffect'; id: string }
   | { type: 'setParam'; key: string; value: number | string | boolean; commit?: boolean }
   | { type: 'setColor'; index: number; value: string }
+  | { type: 'setColorsAll'; colors: string[] }
   | { type: 'resetEffect' }
   | { type: 'setTransform'; patch: Partial<Transform> }
   | { type: 'setAnimation'; patch: Partial<AnimationState> }
   | { type: 'setCanvas'; patch: Partial<CanvasState> }
   | { type: 'setFilter'; id: string; patch: Partial<FilterState> }
+  | { type: 'setFiltersList'; filters: FilterState[] }
   | { type: 'resetFilters' }
   | { type: 'setUI'; patch: Partial<UIState> }
   | { type: 'undo' }
@@ -133,6 +167,10 @@ export function reducer(state: StudioState, action: Action): StudioState {
       const colors = { ...doc.colors, [doc.effectId]: current.map((c, i) => (i === action.index ? action.value : c)) };
       return { ...state, doc: { ...doc, colors } };
     }
+    case 'setColorsAll': {
+      const colors = { ...doc.colors, [doc.effectId]: action.colors };
+      return withHistory(state, { ...doc, colors });
+    }
     case 'resetEffect': {
       const params = { ...doc.params, [doc.effectId]: defaultsFor(doc.effectId) };
       const colors = { ...doc.colors, [doc.effectId]: colorsFor(doc.effectId) };
@@ -150,6 +188,9 @@ export function reducer(state: StudioState, action: Action): StudioState {
     case 'setFilter': {
       const filters = doc.filters.map((f) => (f.id === action.id ? { ...f, ...action.patch } : f));
       return { ...state, doc: { ...doc, filters } };
+    }
+    case 'setFiltersList': {
+      return withHistory(state, { ...doc, filters: action.filters });
     }
     case 'resetFilters': {
       return withHistory(state, {
