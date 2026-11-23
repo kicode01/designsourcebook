@@ -1,0 +1,41 @@
+{
+  "name": "pegasystems",
+  "displayName": "Pega Cosmos",
+  "description": "Pegasystems Pega Cosmos — read from design.pega.com's live stylesheets, not a published token package.",
+  "style": "Pegasystems Pega Cosmos — read from design.pega.com's live stylesheets, not a published token package.",
+  "category": "Pegasystems",
+  "org": "Pegasystems",
+  "theme": "dark",
+  "tags": [
+    "observed",
+    "pegasystems",
+    "dark"
+  ],
+  "homepage": "https://design.pega.com/",
+  "license": "all rights reserved",
+  "provenance": "observed",
+  "provenanceNote": "Colours read from https://design.pega.com/ and its 3 stylesheets on 2026-11-23. A live site is a deployment snapshot, not a published token package — values can change without notice. Page names the organisation: yes.",
+  "source": {
+    "url": "https://design.pega.com/"
+  },
+  "spec": "design.md@alpha",
+  "frameworks": [
+    "tailwind-v4",
+    "css-vars",
+    "dtcg"
+  ],
+  "tokens": {
+    "colors": 42,
+    "typography": 16,
+    "components": 11
+  },
+  "checks": {
+    "errors": 0,
+    "warnings": 0,
+    "verified": true
+  },
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.json"
+  }
+}

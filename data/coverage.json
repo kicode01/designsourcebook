@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-18T02:19:13.676Z",
+  "generated": "2026-11-23T13:45:50.093Z",
   "registry": {
-    "systems": 391
+    "systems": 392
   },
   "sources": [
     {
@@ -76,8 +76,8 @@
       "id": "gallery",
       "name": "Design Systems Gallery (Jad Limcaco)",
       "total": 109,
-      "covered": 93,
-      "missing": 16,
+      "covered": 94,
+      "missing": 15,
       "missingEntries": [
         {
           "org": "Heartbeat",
@@ -117,11 +117,6 @@
         {
           "org": "OPower",
           "name": "OPattern",
-          "npm": null
-        },
-        {
-          "org": "Pegasystems",
-          "name": "Pega Cosmos",
           "npm": null
         },
         {
@@ -3486,7 +3481,7 @@
       },
       {
         "org": "Pegasystems",
-        "covered": "bolt",
+        "covered": "pegasystems",
         "npm": null,
         "repo": "https://github.com/boltdesignsystem/bolt",
         "systems": [
